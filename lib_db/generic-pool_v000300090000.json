@@ -1,0 +1,220 @@
+{
+  "Pool": {
+    "constructor": [
+      "Evictor",
+      "Deque",
+      "PriorityQueue",
+      "factory",
+      "options"
+    ],
+    "_destroy": [
+      "pooledResource"
+    ],
+    "_applyDestroyTimeout": [
+      "promise"
+    ],
+    "_testOnBorrow": [],
+    "_dispatchResource": [],
+    "_dispense": [],
+    "_dispatchPooledResourceToNextWaitingClient": [
+      "pooledResource"
+    ],
+    "_trackOperation": [
+      "operation",
+      "set"
+    ],
+    "_createResource": [],
+    "_ensureMinimum": [],
+    "_evict": [],
+    "_scheduleEvictorRun": [],
+    "_descheduleEvictorRun": [],
+    "start": [],
+    "acquire": [
+      "priority"
+    ],
+    "use": [
+      "fn",
+      "priority"
+    ],
+    "isBorrowedResource": [
+      "resource"
+    ],
+    "release": [
+      "resource"
+    ],
+    "destroy": [
+      "resource"
+    ],
+    "_addPooledResourceToAvailableObjects": [
+      "pooledResource"
+    ],
+    "drain": [],
+    "__allResourceRequestsSettled": [],
+    "__allResourcesReturned": [],
+    "clear": [],
+    "ready": [],
+    "_potentiallyAllocableResourceCount": [],
+    "_count": [],
+    "spareResourceCapacity": [],
+    "size": [],
+    "available": [],
+    "borrowed": [],
+    "pending": [],
+    "max": [],
+    "min": []
+  },
+  "DefaultEvictor": {
+    "evict": [
+      "config",
+      "pooledResource",
+      "availableObjectsCount"
+    ]
+  },
+  "Deferred": {
+    "constructor": [
+      "Promise"
+    ],
+    "state": [],
+    "promise": [],
+    "reject": [
+      "reason"
+    ],
+    "resolve": [
+      "value"
+    ]
+  },
+  "Deque": {
+    "constructor": [],
+    "shift": [],
+    "unshift": [
+      "element"
+    ],
+    "push": [
+      "element"
+    ],
+    "pop": [],
+    "iterator": [],
+    "reverseIterator": [],
+    "head": [],
+    "tail": [],
+    "length": []
+  },
+  "DequeIterator": {
+    "next": []
+  },
+  "DoublyLinkedList": {
+    "constructor": [],
+    "insertBeginning": [
+      "node"
+    ],
+    "insertEnd": [
+      "node"
+    ],
+    "insertAfter": [
+      "node",
+      "newNode"
+    ],
+    "insertBefore": [
+      "node",
+      "newNode"
+    ],
+    "remove": [
+      "node"
+    ],
+    "createNode": [
+      "data"
+    ]
+  },
+  "DoublyLinkedListIterator": {
+    "constructor": [
+      "doublyLinkedList",
+      "reverse"
+    ],
+    "_start": [],
+    "_advanceCursor": [],
+    "reset": [],
+    "remove": [],
+    "next": [],
+    "_isCursorDetached": []
+  },
+  "isReady": [],
+  "PoolDefaults": {
+    "constructor": []
+  },
+  "PoolOptions": {
+    "constructor": [
+      "opts"
+    ]
+  },
+  "PooledResource": {
+    "constructor": [
+      "resource"
+    ],
+    "allocate": [],
+    "deallocate": [],
+    "invalidate": [],
+    "test": [],
+    "idle": [],
+    "returning": []
+  },
+  "PriorityQueue": {
+    "constructor": [
+      "size"
+    ],
+    "length": [],
+    "enqueue": [
+      "obj",
+      "priority"
+    ],
+    "dequeue": [],
+    "head": [],
+    "tail": []
+  },
+  "Queue": {
+    "push": [
+      "resourceRequest"
+    ],
+    "_createTimeoutRejectionHandler": [
+      "node"
+    ]
+  },
+  "ResourceLoan": {
+    "constructor": [
+      "pooledResource",
+      "Promise"
+    ],
+    "reject": []
+  },
+  "fbind": [
+    "fn",
+    "ctx"
+  ],
+  "ResourceRequest": {
+    "constructor": [
+      "ttl",
+      "Promise"
+    ],
+    "setTimeout": [
+      "delay"
+    ],
+    "removeTimeout": [],
+    "_fireTimeout": [],
+    "reject": [
+      "reason"
+    ],
+    "resolve": [
+      "value"
+    ]
+  },
+  "ExtendableError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "TimeoutError": {
+    "constructor": [
+      "m"
+    ]
+  },
+  "noop": []
+}

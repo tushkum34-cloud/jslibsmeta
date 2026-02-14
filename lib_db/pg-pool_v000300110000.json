@@ -1,0 +1,86 @@
+{
+  "NOOP": [],
+  "removeWhere": [
+    "list",
+    "predicate"
+  ],
+  "IdleItem": {
+    "constructor": [
+      "client",
+      "idleListener",
+      "timeoutId"
+    ]
+  },
+  "PendingItem": {
+    "constructor": [
+      "callback"
+    ]
+  },
+  "throwOnDoubleRelease": [],
+  "promisify": [
+    "Promise",
+    "callback"
+  ],
+  "cb": [
+    "err",
+    "client"
+  ],
+  "makeIdleListener": [
+    "pool",
+    "client"
+  ],
+  "Pool": {
+    "constructor": [
+      "options",
+      "Client"
+    ],
+    "_isFull": [],
+    "_isAboveMin": [],
+    "_pulseQueue": [],
+    "_remove": [
+      "client",
+      "callback"
+    ],
+    "connect": [
+      "cb"
+    ],
+    "newClient": [
+      "pendingItem"
+    ],
+    "_acquireClient": [
+      "client",
+      "pendingItem",
+      "idleListener",
+      "isNew"
+    ],
+    "_releaseOnce": [
+      "client",
+      "idleListener"
+    ],
+    "_release": [
+      "client",
+      "idleListener",
+      "err"
+    ],
+    "query": [
+      "text",
+      "values",
+      "cb"
+    ],
+    "end": [
+      "cb"
+    ],
+    "waitingCount": [],
+    "idleCount": [],
+    "expiredCount": [],
+    "totalCount": []
+  },
+  "queueCallback": [
+    "err",
+    "res",
+    "done"
+  ],
+  "onError": [
+    "err"
+  ]
+}

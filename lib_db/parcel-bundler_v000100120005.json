@@ -1,0 +1,1556 @@
+{
+  "_createForOfIteratorHelper": [
+    "o",
+    "allowArrayLike"
+  ],
+  "F": [],
+  "_unsupportedIterableToArray": [
+    "o",
+    "minLen"
+  ],
+  "_arrayLikeToArray": [
+    "arr",
+    "len"
+  ],
+  "Asset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "shouldInvalidate": [],
+    "loadIfNeeded": [],
+    "parseIfNeeded": [],
+    "getDependencies": [],
+    "addDependency": [
+      "name",
+      "opts"
+    ],
+    "resolveDependency": [
+      "url",
+      "param"
+    ],
+    "addURLDependency": [
+      "url",
+      "param",
+      "opts"
+    ],
+    "package": [],
+    "getPackage": [],
+    "getConfig": [
+      "filenames",
+      "param"
+    ],
+    "mightHaveDependencies": [],
+    "load": [],
+    "parse": [],
+    "collectDependencies": [],
+    "pretransform": [],
+    "transform": [],
+    "generate": [],
+    "process": [],
+    "postProcess": [
+      "generated"
+    ],
+    "generateHash": [],
+    "invalidate": [],
+    "invalidateBundle": [],
+    "generateBundleName": [],
+    "replaceBundleNames": [
+      "bundleNameMap"
+    ],
+    "generateErrorMessage": [
+      "err"
+    ]
+  },
+  "Bundle": {
+    "constructor": [
+      "type",
+      "name",
+      "parent",
+      "param"
+    ],
+    "createWithAsset": [
+      "asset",
+      "parentBundle",
+      "options"
+    ],
+    "addAsset": [
+      "asset"
+    ],
+    "removeAsset": [
+      "asset"
+    ],
+    "addOffset": [
+      "asset",
+      "line",
+      "param"
+    ],
+    "getOffset": [
+      "asset"
+    ],
+    "getSiblingBundle": [
+      "type"
+    ],
+    "createChildBundle": [
+      "entryAsset",
+      "param"
+    ],
+    "createSiblingBundle": [
+      "entryAsset",
+      "param"
+    ],
+    "isEmpty": [],
+    "getBundleNameMap": [
+      "contentHash",
+      "param"
+    ],
+    "getHashedBundleName": [
+      "contentHash"
+    ],
+    "package": [
+      "bundler",
+      "oldHashes",
+      "param"
+    ],
+    "_package": [
+      "bundler"
+    ],
+    "_addDeps": [
+      "asset",
+      "packager",
+      "included"
+    ],
+    "addAssetSize": [
+      "asset",
+      "size"
+    ],
+    "getParents": [],
+    "findCommonAncestor": [
+      "bundle"
+    ],
+    "getHash": []
+  },
+  "Bundler": {
+    "constructor": [
+      "entryFiles",
+      "param"
+    ],
+    "normalizeEntries": [
+      "entryFiles"
+    ],
+    "findEntryFiles": [
+      "entryFiles"
+    ],
+    "normalizeOptions": [
+      "options"
+    ],
+    "addAssetType": [
+      "extension",
+      "path"
+    ],
+    "addPackager": [
+      "type",
+      "packager"
+    ],
+    "addBundleLoader": [
+      "type",
+      "paths"
+    ],
+    "loadPlugins": [],
+    "bundle": [],
+    "start": [],
+    "stop": [],
+    "getAsset": [
+      "name",
+      "parent"
+    ],
+    "resolveAsset": [
+      "name",
+      "parent"
+    ],
+    "getLoadedAsset": [
+      "path"
+    ],
+    "watch": [
+      "path",
+      "asset"
+    ],
+    "unwatch": [
+      "path",
+      "asset"
+    ],
+    "resolveDep": [
+      "asset",
+      "dep",
+      "param"
+    ],
+    "installDep": [
+      "asset",
+      "dep"
+    ],
+    "throwDepError": [
+      "asset",
+      "dep",
+      "err"
+    ],
+    "processAsset": [
+      "asset",
+      "isRebuild"
+    ],
+    "loadAsset": [
+      "asset"
+    ],
+    "createBundleTree": [
+      "asset",
+      "bundle",
+      "dep",
+      "param"
+    ],
+    "moveAssetToBundle": [
+      "asset",
+      "commonBundle"
+    ],
+    "findOrphanAssets": [],
+    "unloadOrphanedAssets": [],
+    "unloadAsset": [
+      "asset"
+    ],
+    "onAdd": [
+      "path"
+    ],
+    "onChange": [
+      "path"
+    ],
+    "onUnlink": [
+      "path"
+    ],
+    "middleware": [],
+    "serve": [
+      "param",
+      "param",
+      "host"
+    ]
+  },
+  "FSCache": {
+    "constructor": [
+      "options"
+    ],
+    "ensureDirExists": [],
+    "getCacheFile": [
+      "filename"
+    ],
+    "getLastModified": [
+      "filename"
+    ],
+    "writeDepMtimes": [
+      "data"
+    ],
+    "write": [
+      "filename",
+      "data"
+    ],
+    "checkDepMtimes": [
+      "data"
+    ],
+    "read": [
+      "filename"
+    ],
+    "invalidate": [
+      "filename"
+    ],
+    "delete": [
+      "filename"
+    ]
+  },
+  "HMRServer": {
+    "start": [
+      "param"
+    ],
+    "stop": [],
+    "emitError": [
+      "err"
+    ],
+    "emitUpdate": [
+      "assets",
+      "param"
+    ],
+    "handleSocketError": [
+      "err"
+    ],
+    "broadcast": [
+      "msg"
+    ]
+  },
+  "Parser": {
+    "constructor": [
+      "param"
+    ],
+    "registerExtension": [
+      "ext",
+      "parser"
+    ],
+    "findParser": [
+      "filename",
+      "fromPipeline"
+    ],
+    "getAsset": [
+      "filename",
+      "param"
+    ]
+  },
+  "Pipeline": {
+    "constructor": [
+      "options"
+    ],
+    "process": [
+      "path",
+      "isWarmUp"
+    ],
+    "processAsset": [
+      "asset"
+    ],
+    "iterateRenditions": [
+      "asset"
+    ]
+  },
+  "Resolver": {
+    "constructor": [
+      "param"
+    ],
+    "resolve": [
+      "input",
+      "parent"
+    ],
+    "resolveModule": [
+      "filename",
+      "parent"
+    ],
+    "getCacheKey": [
+      "filename",
+      "parent"
+    ],
+    "resolveFilename": [
+      "filename",
+      "dir"
+    ],
+    "loadRelative": [
+      "filename",
+      "extensions"
+    ],
+    "findNodeModulePath": [
+      "filename",
+      "dir"
+    ],
+    "loadNodeModules": [
+      "module",
+      "extensions"
+    ],
+    "isFile": [
+      "file"
+    ],
+    "loadDirectory": [
+      "dir",
+      "extensions",
+      "pkg"
+    ],
+    "readPackage": [
+      "dir"
+    ],
+    "getBrowserField": [
+      "pkg"
+    ],
+    "getPackageEntries": [
+      "pkg"
+    ],
+    "loadAsFile": [
+      "file",
+      "extensions",
+      "pkg"
+    ],
+    "expandFile": [
+      "file",
+      "extensions",
+      "pkg",
+      "param"
+    ],
+    "resolveAliases": [
+      "filename",
+      "pkg"
+    ],
+    "resolvePackageAliases": [
+      "filename",
+      "pkg"
+    ],
+    "getAlias": [
+      "filename",
+      "dir",
+      "aliases"
+    ],
+    "lookupAlias": [
+      "aliases",
+      "filename",
+      "dir"
+    ],
+    "findPackage": [
+      "dir"
+    ],
+    "loadAlias": [
+      "filename",
+      "dir"
+    ]
+  },
+  "setHeaders": [
+    "res"
+  ],
+  "enableCors": [
+    "res"
+  ],
+  "middleware": [
+    "bundler"
+  ],
+  "respond": [],
+  "sendIndex": [],
+  "send500": [
+    "error"
+  ],
+  "send404": [],
+  "logAccessIfVerbose": [],
+  "serve": [
+    "bundler",
+    "port",
+    "host",
+    "param"
+  ],
+  "_serve": [],
+  "SourceMap": {
+    "constructor": [
+      "mappings",
+      "sources"
+    ],
+    "purifyMappings": [
+      "mappings"
+    ],
+    "getConsumer": [
+      "map"
+    ],
+    "addMap": [
+      "map",
+      "param",
+      "param"
+    ],
+    "addMapping": [
+      "mapping",
+      "param",
+      "param"
+    ],
+    "addConsumerMapping": [
+      "mapping",
+      "param",
+      "param"
+    ],
+    "eachMapping": [
+      "callback"
+    ],
+    "generateEmptyMap": [
+      "sourceName",
+      "sourceContent"
+    ],
+    "extendSourceMap": [
+      "original",
+      "extension"
+    ],
+    "findClosestGenerated": [
+      "line",
+      "column"
+    ],
+    "findClosest": [
+      "line",
+      "column",
+      "key"
+    ],
+    "originalPositionFor": [
+      "generatedPosition"
+    ],
+    "generatedPositionFor": [
+      "originalPosition"
+    ],
+    "sourceContentFor": [
+      "fileName"
+    ],
+    "offset": [
+      "param",
+      "param"
+    ],
+    "stringify": [
+      "file",
+      "sourceRoot"
+    ]
+  },
+  "CSSAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "mightHaveDependencies": [],
+    "parse": [
+      "code"
+    ],
+    "collectDependencies": [],
+    "pretransform": [],
+    "transform": [],
+    "getCSSAst": [],
+    "generate": [],
+    "generateErrorMessage": [
+      "err"
+    ]
+  },
+  "CSSAst": {
+    "constructor": [
+      "css",
+      "root"
+    ],
+    "render": [
+      "name"
+    ]
+  },
+  "CoffeeScriptAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "generate": []
+  },
+  "ElmAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "parse": [],
+    "collectDependencies": [],
+    "createElmConfig": [
+      "options"
+    ],
+    "generate": [],
+    "generateErrorMessage": [
+      "err"
+    ]
+  },
+  "pack": [
+    "source"
+  ],
+  "GLSLAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "parse": [],
+    "collectDependencies": [],
+    "generate": []
+  },
+  "resolve": [
+    "filepath",
+    "filenames",
+    "param"
+  ],
+  "GlobAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "load": [],
+    "generate": []
+  },
+  "generate": [
+    "matches",
+    "param"
+  ],
+  "set": [
+    "obj",
+    "path",
+    "value"
+  ],
+  "GraphqlAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "traverseImports": [
+      "name",
+      "code"
+    ],
+    "collectDependencies": [],
+    "parse": [
+      "code"
+    ],
+    "generate": []
+  },
+  "HTMLAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "parse": [
+      "code"
+    ],
+    "processSingleDependency": [
+      "path",
+      "opts"
+    ],
+    "collectSrcSetDependencies": [
+      "srcset",
+      "opts"
+    ],
+    "getAttrDepHandler": [
+      "attr"
+    ],
+    "collectDependencies": [],
+    "pretransform": [],
+    "transform": [],
+    "generate": [],
+    "postProcess": [
+      "generated"
+    ]
+  },
+  "JSAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "shouldInvalidate": [
+      "cacheData"
+    ],
+    "mightHaveDependencies": [],
+    "parse": [
+      "code"
+    ],
+    "traverse": [
+      "visitor"
+    ],
+    "traverseFast": [
+      "visitor"
+    ],
+    "collectDependencies": [],
+    "pretransform": [],
+    "transform": [],
+    "generate": [],
+    "generateErrorMessage": [
+      "err"
+    ]
+  },
+  "JSONAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "parse": [
+      "code"
+    ],
+    "generate": []
+  },
+  "JSONLDAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "parse": [
+      "content"
+    ],
+    "collectDependencies": [],
+    "collectFromKey": [
+      "schema",
+      "schemaKey"
+    ],
+    "generate": []
+  },
+  "KotlinAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "generate": []
+  },
+  "LESSAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "parse": [
+      "code"
+    ],
+    "collectDependencies": [],
+    "generate": []
+  },
+  "urlPlugin": [
+    "asset"
+  ],
+  "getFileManager": [
+    "less",
+    "options"
+  ],
+  "LessFileManager": {
+    "supports": [],
+    "supportsSync": [],
+    "loadFile": [
+      "filename",
+      "currentDirectory"
+    ]
+  },
+  "MarkdownAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "generate": []
+  },
+  "PugAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "generate": []
+  },
+  "RawAsset": {
+    "load": [],
+    "generate": [],
+    "generateHash": []
+  },
+  "ReasonAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "generate": []
+  },
+  "RustAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "process": [],
+    "parse": [],
+    "installRust": [],
+    "cargoBuild": [
+      "cargoConfig",
+      "cargoDir"
+    ],
+    "rustcBuild": [],
+    "collectDependencies": [],
+    "generate": []
+  },
+  "SASSAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "parse": [
+      "code"
+    ],
+    "collectDependencies": [],
+    "generate": []
+  },
+  "getSassRuntime": [
+    "searchPath"
+  ],
+  "_getSassRuntime": [],
+  "sassToCodeFrame": [
+    "err"
+  ],
+  "normalizeError": [
+    "err"
+  ],
+  "SSSAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "generate": []
+  },
+  "StylusAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "parse": [
+      "code"
+    ],
+    "generate": [],
+    "generateErrorMessage": [
+      "err"
+    ]
+  },
+  "getDependencies": [
+    "code",
+    "filepath",
+    "asset",
+    "options",
+    "param"
+  ],
+  "_getDependencies": [],
+  "ImportVisitor": {
+    "visitImport": [
+      "imported"
+    ]
+  },
+  "createEvaluator": [
+    "code",
+    "asset",
+    "options"
+  ],
+  "_createEvaluator": [],
+  "CustomEvaluator": {
+    "visitImport": [
+      "imported"
+    ]
+  },
+  "mergeBlocks": [
+    "blocks"
+  ],
+  "TOMLAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "parse": [
+      "code"
+    ],
+    "generate": []
+  },
+  "TypeScriptAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "shouldInvalidate": [
+      "cacheData"
+    ],
+    "generate": []
+  },
+  "VueAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "parse": [
+      "code"
+    ],
+    "generate": [],
+    "postProcess": [
+      "generated"
+    ],
+    "compileTemplate": [
+      "generated",
+      "scopeId",
+      "optsVar"
+    ],
+    "compileCSSModules": [
+      "generated",
+      "optsVar"
+    ],
+    "compileStyle": [
+      "generated",
+      "scopeId"
+    ],
+    "compileHMR": [
+      "generated",
+      "optsVar"
+    ]
+  },
+  "WebManifestAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "parse": [
+      "content"
+    ],
+    "collectDependencies": [],
+    "generate": []
+  },
+  "YAMLAsset": {
+    "constructor": [
+      "name",
+      "options"
+    ],
+    "parse": [
+      "code"
+    ],
+    "generate": []
+  },
+  "loadBundlesLazy": [
+    "bundles"
+  ],
+  "loadBundles": [
+    "bundles"
+  ],
+  "registerBundleLoader": [
+    "type",
+    "loader"
+  ],
+  "loadBundle": [
+    "bundle"
+  ],
+  "LazyPromise": [
+    "executor"
+  ],
+  "getBundleURLCached": [],
+  "getBundleURL": [],
+  "getBaseURL": [
+    "url"
+  ],
+  "updateLink": [
+    "link"
+  ],
+  "reloadCSS": [],
+  "$parcel$interopDefault": [
+    "a"
+  ],
+  "$parcel$defineInteropFlag": [
+    "a"
+  ],
+  "$parcel$exportWildcard": [
+    "dest",
+    "source"
+  ],
+  "$parcel$missingModule": [
+    "name"
+  ],
+  "Module": [
+    "moduleName"
+  ],
+  "removeErrorOverlay": [],
+  "createErrorOverlay": [
+    "data"
+  ],
+  "getParents": [
+    "bundle",
+    "id"
+  ],
+  "hmrApply": [
+    "bundle",
+    "asset"
+  ],
+  "hmrAcceptCheck": [
+    "bundle",
+    "id"
+  ],
+  "hmrAcceptRun": [
+    "bundle",
+    "id"
+  ],
+  "newRequire": [
+    "name",
+    "jumped"
+  ],
+  "localRequire": [
+    "name",
+    "path",
+    "param"
+  ],
+  "f": [
+    "t",
+    "n"
+  ],
+  "p": [
+    "e"
+  ],
+  "u": [
+    "e",
+    "u"
+  ],
+  "bundle": [
+    "main",
+    "command"
+  ],
+  "_bundle": [],
+  "CSSPackager": {
+    "start": [],
+    "addAsset": [
+      "asset"
+    ],
+    "end": []
+  },
+  "_superprop_getEnd": [],
+  "HTMLPackager": {
+    "shouldAddAsset": [],
+    "addAsset": [
+      "asset"
+    ],
+    "addBundlesToTree": [
+      "bundles",
+      "tree"
+    ],
+    "insertSiblingBundles": [
+      "siblingBundles",
+      "tree"
+    ]
+  },
+  "find": [
+    "tree",
+    "tag"
+  ],
+  "findBundleInsertIndex": [
+    "content"
+  ],
+  "JSConcatPackager": {
+    "start": [],
+    "write": [
+      "string"
+    ],
+    "getSize": [],
+    "markUsedExports": [
+      "asset"
+    ],
+    "markUsed": [
+      "mod",
+      "name"
+    ],
+    "getExportIdentifier": [
+      "asset"
+    ],
+    "addAsset": [
+      "asset"
+    ],
+    "shouldWrap": [
+      "asset"
+    ],
+    "addDeps": [
+      "asset",
+      "included"
+    ],
+    "wrapModule": [
+      "asset",
+      "statements"
+    ],
+    "parse": [
+      "code",
+      "filename"
+    ],
+    "findRequires": [
+      "asset",
+      "ast"
+    ],
+    "getBundleSpecifier": [
+      "bundle"
+    ],
+    "addAssetToBundle": [
+      "asset"
+    ],
+    "addBundleLoader": [
+      "bundleType",
+      "parentAsset",
+      "dynamic"
+    ],
+    "end": [],
+    "resolveModule": [
+      "id",
+      "name"
+    ],
+    "findExportModule": [
+      "id",
+      "name",
+      "replacements"
+    ]
+  },
+  "_superprop_getWrite": [],
+  "JSPackager": {
+    "start": [],
+    "addAsset": [
+      "asset"
+    ],
+    "getBundleSpecifier": [
+      "bundle"
+    ],
+    "dedupeKey": [
+      "asset"
+    ],
+    "writeModule": [
+      "id",
+      "code",
+      "param",
+      "map"
+    ],
+    "addAssetToBundle": [
+      "asset"
+    ],
+    "writeBundleLoaders": [],
+    "end": []
+  },
+  "Packager": {
+    "constructor": [
+      "bundle",
+      "bundler"
+    ],
+    "shouldAddAsset": [],
+    "setup": [],
+    "write": [
+      "string"
+    ],
+    "start": [],
+    "addAsset": [
+      "asset"
+    ],
+    "getSize": [],
+    "end": []
+  },
+  "RawPackager": {
+    "shouldAddAsset": [],
+    "setup": [],
+    "addAsset": [
+      "asset"
+    ],
+    "getSize": [],
+    "end": []
+  },
+  "SourceMapPackager": {
+    "start": [],
+    "addAsset": [
+      "asset"
+    ],
+    "end": []
+  },
+  "PackagerRegistry": {
+    "constructor": [
+      "options"
+    ],
+    "add": [
+      "type",
+      "packager"
+    ],
+    "has": [
+      "type"
+    ],
+    "get": [
+      "type"
+    ]
+  },
+  "replaceExportNode": [
+    "module",
+    "originalName",
+    "path"
+  ],
+  "findSymbol": [
+    "path",
+    "symbol"
+  ],
+  "interop": [
+    "mod",
+    "originalName",
+    "path",
+    "node"
+  ],
+  "isUnusedValue": [
+    "path"
+  ],
+  "replace": [
+    "id",
+    "init",
+    "path"
+  ],
+  "hasSideEffects": [
+    "asset",
+    "param"
+  ],
+  "addImport": [
+    "asset",
+    "path"
+  ],
+  "addExport": [
+    "asset",
+    "path",
+    "local",
+    "exported"
+  ],
+  "hasExport": [
+    "asset",
+    "name"
+  ],
+  "safeRename": [
+    "path",
+    "asset",
+    "from",
+    "to"
+  ],
+  "getExportsIdentifier": [
+    "asset",
+    "scope"
+  ],
+  "mangleScope": [
+    "scope"
+  ],
+  "getIdentifier": [
+    "asset",
+    "type",
+    "param"
+  ],
+  "canRename": [
+    "scope",
+    "binding",
+    "newName"
+  ],
+  "rename": [
+    "scope",
+    "oldName",
+    "newName"
+  ],
+  "treeShake": [
+    "scope"
+  ],
+  "getUnusedBinding": [
+    "path",
+    "name"
+  ],
+  "isPure": [
+    "binding"
+  ],
+  "isExportAssignment": [
+    "path"
+  ],
+  "isUnusedWildcard": [
+    "path"
+  ],
+  "remove": [
+    "path"
+  ],
+  "getName": [
+    "asset",
+    "type",
+    "param"
+  ],
+  "getExportIdentifier": [
+    "asset",
+    "name"
+  ],
+  "babel7toBabel6": [
+    "ast"
+  ],
+  "babel6toBabel7": [
+    "ast"
+  ],
+  "babel6": [
+    "asset",
+    "options"
+  ],
+  "_babel": [],
+  "dynamicImport": [],
+  "babel7": [
+    "asset",
+    "options"
+  ],
+  "getBabelConfig": [
+    "asset"
+  ],
+  "_getBabelConfig": [],
+  "getBabelRc": [
+    "asset",
+    "isSource"
+  ],
+  "_getBabelRc": [],
+  "findBabelRc": [
+    "asset"
+  ],
+  "_findBabelRc": [],
+  "getIgnoreConfig": [
+    "asset"
+  ],
+  "_getIgnoreConfig": [],
+  "shouldIgnore": [
+    "asset",
+    "config"
+  ],
+  "matchesPatterns": [
+    "patterns",
+    "path"
+  ],
+  "getBabelVersion": [
+    "asset",
+    "plugins"
+  ],
+  "_getBabelVersion": [],
+  "getDependency": [
+    "pkg",
+    "dep"
+  ],
+  "inferBabelVersion": [
+    "asset",
+    "plugins"
+  ],
+  "_inferBabelVersion": [],
+  "getPluginName": [
+    "p"
+  ],
+  "getMaxMajor": [
+    "version"
+  ],
+  "installPlugins": [
+    "asset",
+    "babelrc"
+  ],
+  "_installPlugins": [],
+  "resolveModule": [
+    "type",
+    "name",
+    "path"
+  ],
+  "_resolveModule": [],
+  "standardizeName": [
+    "type",
+    "name"
+  ],
+  "mergeConfigs": [
+    "result",
+    "config"
+  ],
+  "hasPlugin": [
+    "arr",
+    "plugins"
+  ],
+  "getEnvConfig": [
+    "asset",
+    "isSourceModule"
+  ],
+  "_getEnvConfig": [],
+  "getEnvPlugins": [
+    "targets",
+    "param"
+  ],
+  "_getEnvPlugins": [],
+  "getFlowConfig": [
+    "asset"
+  ],
+  "createJSXRegexFor": [
+    "dependency"
+  ],
+  "maybeCreateFallbackPragma": [
+    "asset"
+  ],
+  "getJSXConfig": [
+    "asset",
+    "isSourceModule"
+  ],
+  "_getJSXConfig": [],
+  "babelTransform": [
+    "asset"
+  ],
+  "_babelTransform": [],
+  "getConfig": [
+    "asset"
+  ],
+  "_getConfig": [],
+  "createLoader": [
+    "asset"
+  ],
+  "parse": [
+    "code",
+    "asset"
+  ],
+  "_parse": [],
+  "transform": [
+    "asset"
+  ],
+  "_transform": [],
+  "PromiseQueue": {
+    "constructor": [
+      "callback",
+      "param"
+    ],
+    "add": [
+      "job",
+      "param"
+    ],
+    "run": [],
+    "_runJob": [
+      "job",
+      "args"
+    ],
+    "_next": [],
+    "_reset": []
+  },
+  "bundleReport": [
+    "mainBundle",
+    "param"
+  ],
+  "iterateBundles": [
+    "bundle"
+  ],
+  "prettifySize": [
+    "size",
+    "isLarge"
+  ],
+  "formatFilename": [
+    "filename",
+    "param"
+  ],
+  "_resolve": [],
+  "load": [
+    "filepath",
+    "filenames",
+    "param"
+  ],
+  "_load": [],
+  "serverErrors": [
+    "err",
+    "port"
+  ],
+  "loadEnv": [
+    "filepath"
+  ],
+  "_loadEnv": [],
+  "generateCertificate": [
+    "param"
+  ],
+  "getCertificate": [
+    "options"
+  ],
+  "_getCertificate": [],
+  "getRootDir": [
+    "files"
+  ],
+  "getTargetEngines": [
+    "asset",
+    "isTargetApp"
+  ],
+  "_getTargetEngines": [],
+  "getMinSemver": [
+    "version"
+  ],
+  "loadBrowserslist": [
+    "asset",
+    "path"
+  ],
+  "_loadBrowserslist": [],
+  "loadBabelrc": [
+    "asset",
+    "path"
+  ],
+  "_loadBabelrc": [],
+  "normalisePath": [
+    "p"
+  ],
+  "install": [
+    "modules",
+    "filepath",
+    "param"
+  ],
+  "_install": [],
+  "installPeerDependencies": [
+    "filepath",
+    "name",
+    "options"
+  ],
+  "_installPeerDependencies": [],
+  "determinePackageManager": [
+    "filepath"
+  ],
+  "_determinePackageManager": [],
+  "checkForYarnCommand": [],
+  "_checkForYarnCommand": [],
+  "isAccessedVarChanged": [
+    "cacheData"
+  ],
+  "lineCounter": [
+    "string"
+  ],
+  "loadPlugins": [
+    "_x",
+    "_x2"
+  ],
+  "loadPlugin": [
+    "plugin",
+    "relative",
+    "options"
+  ],
+  "_loadPlugin": [],
+  "loadSourceMap": [
+    "asset"
+  ],
+  "_loadSourceMap": [],
+  "_localRequire": [],
+  "localResolve": [
+    "name",
+    "path",
+    "param"
+  ],
+  "_localResolve": [],
+  "md5": [
+    "string",
+    "param"
+  ],
+  "objectHash": [
+    "object"
+  ],
+  "parseCSSImport": [
+    "url"
+  ],
+  "pipeSpawn": [
+    "cmd",
+    "params",
+    "opts"
+  ],
+  "serializeObject": [
+    "obj",
+    "param"
+  ],
+  "syncPromise": [
+    "promise"
+  ],
+  "hasBinding": [
+    "node",
+    "name"
+  ],
+  "isInFalsyBranch": [
+    "ancestors"
+  ],
+  "evaluateExpression": [
+    "node"
+  ],
+  "addDependency": [
+    "asset",
+    "node",
+    "param"
+  ],
+  "addURLDependency": [
+    "asset",
+    "node",
+    "param"
+  ],
+  "morph": [
+    "object",
+    "newProperties"
+  ],
+  "isRequire": [
+    "node",
+    "name",
+    "method"
+  ],
+  "referencesImport": [
+    "path",
+    "name",
+    "method"
+  ],
+  "getBindingPath": [
+    "path",
+    "name"
+  ],
+  "NodeNotEvaluatedError": [
+    "node"
+  ],
+  "evaluate": [
+    "path",
+    "vars"
+  ],
+  "inScope": [
+    "ancestors"
+  ],
+  "init": [
+    "options"
+  ],
+  "run": [
+    "path",
+    "isWarmUp"
+  ],
+  "_run": [],
+  "openInBrowser": [
+    "url",
+    "browser"
+  ]
+}

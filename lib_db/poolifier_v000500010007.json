@@ -1,0 +1,484 @@
+{
+  "CircularBuffer": {
+    "size": [],
+    "items": [],
+    "maxArrayIdx": [],
+    "readIdx": [],
+    "writeIdx": [],
+    "constructor": [
+      "size"
+    ],
+    "clear": [],
+    "empty": [],
+    "full": [],
+    "get": [],
+    "put": [
+      "number"
+    ],
+    "toArray": [],
+    "checkSize": []
+  },
+  "PriorityQueue": {
+    "maxSize": [],
+    "size": [],
+    "buckets": [],
+    "enablePriority": [
+      "enablePriority"
+    ],
+    "bucketSize": [],
+    "head": [],
+    "priorityEnabled": [],
+    "tail": [],
+    "constructor": [
+      "bucketSize",
+      "enablePriority"
+    ],
+    "clear": [],
+    "delete": [
+      "data"
+    ],
+    "dequeue": [
+      "bucket"
+    ],
+    "enqueue": [
+      "data",
+      "priority"
+    ],
+    "getPriorityQueueNode": [],
+    "removePriorityQueueNode": []
+  },
+  "WorkerChoiceStrategiesContext": {
+    "pool": [],
+    "defaultWorkerChoiceStrategy": [],
+    "retries": [],
+    "workerChoiceStrategies": [],
+    "workerChoiceStrategiesPolicy": [],
+    "workerChoiceStrategiesTaskStatisticsRequirements": [],
+    "constructor": [
+      "pool",
+      "workerChoiceStrategies",
+      "opts"
+    ],
+    "execute": [
+      "workerChoiceStrategy"
+    ],
+    "getPolicy": [],
+    "getStrategyRetries": [],
+    "getTaskStatisticsRequirements": [],
+    "remove": [
+      "workerNodeKey"
+    ],
+    "setDefaultWorkerChoiceStrategy": [
+      "workerChoiceStrategy",
+      "opts"
+    ],
+    "setOptions": [
+      "opts"
+    ],
+    "syncWorkerChoiceStrategies": [
+      "workerChoiceStrategies",
+      "opts"
+    ],
+    "update": [
+      "workerNodeKey"
+    ],
+    "addWorkerChoiceStrategy": [],
+    "executeStrategy": [],
+    "removeWorkerChoiceStrategy": []
+  },
+  "AbstractPool": {
+    "minimumNumberOfWorkers": [],
+    "filePath": [],
+    "opts": [],
+    "maximumNumberOfWorkers": [],
+    "emitter": [],
+    "workerNodes": [],
+    "info": [],
+    "destroying": [],
+    "promiseResponseMap": [],
+    "started": [],
+    "starting": [],
+    "workerChoiceStrategiesContext": [],
+    "backPressure": [],
+    "busy": [],
+    "type": [],
+    "worker": [],
+    "backPressureEventEmitted": [],
+    "busyEventEmitted": [],
+    "readyEventEmitted": [],
+    "startingMinimumNumberOfWorkers": [],
+    "startTimestamp": [],
+    "taskFunctions": [],
+    "ready": [],
+    "utilization": [],
+    "constructor": [
+      "minimumNumberOfWorkers",
+      "filePath",
+      "opts",
+      "maximumNumberOfWorkers"
+    ],
+    "addTaskFunction": [
+      "name",
+      "fn"
+    ],
+    "destroy": [],
+    "enableTasksQueue": [
+      "enable",
+      "tasksQueueOptions"
+    ],
+    "execute": [
+      "data",
+      "name",
+      "abortSignal",
+      "transferList"
+    ],
+    "hasTaskFunction": [
+      "name"
+    ],
+    "listTaskFunctionsProperties": [],
+    "mapExecute": [
+      "data",
+      "name",
+      "abortSignals",
+      "transferList"
+    ],
+    "removeTaskFunction": [
+      "name"
+    ],
+    "setDefaultTaskFunction": [
+      "name"
+    ],
+    "setTasksQueueOptions": [
+      "tasksQueueOptions"
+    ],
+    "setWorkerChoiceStrategy": [
+      "workerChoiceStrategy",
+      "workerChoiceStrategyOptions"
+    ],
+    "setWorkerChoiceStrategyOptions": [
+      "workerChoiceStrategyOptions"
+    ],
+    "start": [],
+    "afterTaskExecutionHook": [
+      "workerNodeKey",
+      "message"
+    ],
+    "afterWorkerNodeSetup": [
+      "workerNodeKey"
+    ],
+    "beforeTaskExecutionHook": [
+      "workerNodeKey",
+      "task"
+    ],
+    "checkAndEmitDynamicWorkerCreationEvents": [],
+    "checkAndEmitDynamicWorkerDestructionEvents": [],
+    "createAndSetupDynamicWorkerNode": [],
+    "createAndSetupWorkerNode": [],
+    "deregisterWorkerMessageListener": [
+      "workerNodeKey",
+      "listener"
+    ],
+    "destroyWorkerNode": [
+      "workerNodeKey"
+    ],
+    "flagWorkerNodeAsNotReady": [
+      "workerNodeKey"
+    ],
+    "flushTasksQueue": [
+      "workerNodeKey"
+    ],
+    "getWorkerInfo": [
+      "workerNodeKey"
+    ],
+    "internalBackPressure": [],
+    "internalBusy": [],
+    "isMain": [],
+    "registerOnceWorkerMessageListener": [
+      "workerNodeKey",
+      "listener"
+    ],
+    "registerWorkerMessageListener": [
+      "workerNodeKey",
+      "listener"
+    ],
+    "sendStartupMessageToWorker": [
+      "workerNodeKey"
+    ],
+    "sendToWorker": [
+      "workerNodeKey",
+      "message",
+      "transferList"
+    ],
+    "setupHook": [],
+    "shallCreateDynamicWorker": [],
+    "workerMessageListener": [],
+    "abortTask": [],
+    "addWorkerNode": [],
+    "buildTasksQueueOptions": [],
+    "cannotStealTask": [],
+    "checkAndEmitReadyEvent": [],
+    "checkAndEmitTaskDequeuingEvents": [],
+    "checkAndEmitTaskExecutionEvents": [],
+    "checkAndEmitTaskExecutionFinishedEvents": [],
+    "checkAndEmitTaskQueuingEvents": [],
+    "checkMessageWorkerId": [],
+    "checkMinimumNumberOfWorkers": [],
+    "checkPoolOptions": [],
+    "checkPoolType": [],
+    "checkValidWorkerChoiceStrategyOptions": [],
+    "chooseWorkerNode": [],
+    "createWorkerNode": [],
+    "dequeueTask": [],
+    "enqueueTask": [],
+    "executeTask": [],
+    "flushTasksQueues": [],
+    "getAbortError": [],
+    "getQueuedTasks": [],
+    "getStealingWorkerNodes": [],
+    "getTaskFunctionWorkerChoiceStrategy": [],
+    "getTasksQueuePriority": [],
+    "getWorkerChoiceStrategies": [],
+    "getWorkerNodeKeyByWorkerId": [],
+    "getWorkerNodeTaskFunctionPriority": [],
+    "getWorkerNodeTaskFunctionWorkerChoiceStrategy": [],
+    "handleTask": [],
+    "handleTaskExecutionResponse": [],
+    "handleWorkerError": [],
+    "handleWorkerNodeBackPressureEvent": [],
+    "handleWorkerNodeIdleEvent": [],
+    "handleWorkerReadyResponse": [],
+    "initEventEmitter": [],
+    "initWorkerNodeUsage": [],
+    "internalExecute": [],
+    "isStealingRatioReached": [],
+    "isWorkerNodeBackPressured": [],
+    "isWorkerNodeBusy": [],
+    "isWorkerNodeIdle": [],
+    "isWorkerNodeStealing": [],
+    "redistributeQueuedTasks": [],
+    "removeWorkerNode": [],
+    "resetTaskSequentiallyStolenStatisticsWorkerUsage": [],
+    "sendKillMessageToWorker": [],
+    "sendStatisticsMessageToWorker": [],
+    "sendTaskFunctionOperationToWorker": [],
+    "sendTaskFunctionOperationToWorkers": [],
+    "setTasksQueuePriority": [],
+    "setTasksQueueSize": [],
+    "setTasksStealingOnBackPressure": [],
+    "setTaskStealing": [],
+    "shallExecuteTask": [],
+    "shallUpdateTaskFunctionWorkerUsage": [],
+    "startMinimumNumberOfWorkers": [],
+    "stealTask": [],
+    "tasksQueueSize": [],
+    "unsetTasksStealingOnBackPressure": [],
+    "unsetTaskStealing": [],
+    "updateTaskSequentiallyStolenStatisticsWorkerUsage": [],
+    "updateTaskStolenStatisticsWorkerUsage": [],
+    "workerNodeStealTask": []
+  },
+  "FixedClusterPool": {
+    "backPressure": [],
+    "busy": [],
+    "type": [],
+    "worker": [],
+    "constructor": [
+      "numberOfWorkers",
+      "filePath",
+      "opts",
+      "maximumNumberOfWorkers"
+    ],
+    "checkAndEmitDynamicWorkerCreationEvents": [],
+    "checkAndEmitDynamicWorkerDestructionEvents": [],
+    "deregisterWorkerMessageListener": [
+      "workerNodeKey",
+      "listener"
+    ],
+    "isMain": [],
+    "registerOnceWorkerMessageListener": [
+      "workerNodeKey",
+      "listener"
+    ],
+    "registerWorkerMessageListener": [
+      "workerNodeKey",
+      "listener"
+    ],
+    "sendStartupMessageToWorker": [
+      "workerNodeKey"
+    ],
+    "sendToWorker": [
+      "workerNodeKey",
+      "message"
+    ],
+    "setupHook": [],
+    "shallCreateDynamicWorker": []
+  },
+  "DynamicClusterPool": {
+    "backPressure": [],
+    "busy": [],
+    "type": [],
+    "emptyEventEmitted": [],
+    "fullEventEmitted": [],
+    "empty": [],
+    "full": [],
+    "constructor": [
+      "min",
+      "max",
+      "filePath",
+      "opts"
+    ],
+    "checkAndEmitDynamicWorkerCreationEvents": [],
+    "checkAndEmitDynamicWorkerDestructionEvents": [],
+    "shallCreateDynamicWorker": []
+  },
+  "FixedThreadPool": {
+    "backPressure": [],
+    "busy": [],
+    "type": [],
+    "worker": [],
+    "constructor": [
+      "numberOfThreads",
+      "filePath",
+      "opts",
+      "maximumNumberOfThreads"
+    ],
+    "checkAndEmitDynamicWorkerCreationEvents": [],
+    "checkAndEmitDynamicWorkerDestructionEvents": [],
+    "deregisterWorkerMessageListener": [
+      "workerNodeKey",
+      "listener"
+    ],
+    "isMain": [],
+    "registerOnceWorkerMessageListener": [
+      "workerNodeKey",
+      "listener"
+    ],
+    "registerWorkerMessageListener": [
+      "workerNodeKey",
+      "listener"
+    ],
+    "sendStartupMessageToWorker": [
+      "workerNodeKey"
+    ],
+    "sendToWorker": [
+      "workerNodeKey",
+      "message",
+      "transferList"
+    ],
+    "shallCreateDynamicWorker": []
+  },
+  "DynamicThreadPool": {
+    "backPressure": [],
+    "busy": [],
+    "type": [],
+    "emptyEventEmitted": [],
+    "fullEventEmitted": [],
+    "empty": [],
+    "full": [],
+    "constructor": [
+      "min",
+      "max",
+      "filePath",
+      "opts"
+    ],
+    "checkAndEmitDynamicWorkerCreationEvents": [],
+    "checkAndEmitDynamicWorkerDestructionEvents": [],
+    "shallCreateDynamicWorker": []
+  },
+  "AbstractWorker": {
+    "isMain": [],
+    "mainWorker": [],
+    "opts": [],
+    "activeInterval": [],
+    "id": [],
+    "lastTaskTimestamp": [],
+    "statistics": [],
+    "taskAbortFunctions": [],
+    "taskFunctions": [],
+    "constructor": [
+      "isMain",
+      "mainWorker",
+      "taskFunctions",
+      "opts"
+    ],
+    "addTaskFunction": [
+      "name",
+      "fn"
+    ],
+    "hasTaskFunction": [
+      "name"
+    ],
+    "listTaskFunctionsProperties": [],
+    "removeTaskFunction": [
+      "name"
+    ],
+    "setDefaultTaskFunction": [
+      "name"
+    ],
+    "getMainWorker": [],
+    "handleError": [
+      "error"
+    ],
+    "handleKillMessage": [
+      "message"
+    ],
+    "handleReadyMessage": [
+      "message"
+    ],
+    "handleTaskFunctionOperationMessage": [
+      "message"
+    ],
+    "messageListener": [
+      "message"
+    ],
+    "run": [],
+    "runAsync": [],
+    "runSync": [],
+    "sendTaskFunctionsPropertiesToMainWorker": [],
+    "sendToMainWorker": [
+      "message"
+    ],
+    "beginTaskPerformance": [],
+    "checkActive": [],
+    "checkMessageWorkerId": [],
+    "checkTaskFunctions": [],
+    "checkWorkerOptions": [],
+    "endTaskPerformance": [],
+    "getAbortableTaskFunction": [],
+    "startCheckActive": [],
+    "stopCheckActive": [],
+    "updateLastTaskTimestamp": []
+  },
+  "ClusterWorker": {
+    "id": [],
+    "constructor": [
+      "taskFunctions",
+      "opts"
+    ],
+    "handleError": [
+      "error"
+    ],
+    "handleReadyMessage": [
+      "message"
+    ],
+    "sendToMainWorker": []
+  },
+  "ThreadWorker": {
+    "id": [],
+    "port": [],
+    "constructor": [
+      "taskFunctions",
+      "opts"
+    ],
+    "handleError": [
+      "error"
+    ],
+    "handleKillMessage": [
+      "message"
+    ],
+    "handleReadyMessage": [
+      "message"
+    ],
+    "sendToMainWorker": []
+  }
+}

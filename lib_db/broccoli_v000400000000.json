@@ -1,0 +1,242 @@
+{
+  "reParentNodes": [
+    "outputNodeWrapper"
+  ],
+  "aggregateTime": [],
+  "Builder": {
+    "BuilderError": [],
+    "InvalidNodeError": [],
+    "NodeSetupError": [],
+    "BuildError": [],
+    "NodeWrapper": [],
+    "TransformNodeWrapper": [],
+    "SourceNodeWrapper": [],
+    "constructor": [
+      "outputNode",
+      "param"
+    ],
+    "build": [],
+    "cancel": [],
+    "cleanup": [],
+    "makeNodeWrapper": [
+      "node",
+      "param"
+    ],
+    "watchedSourceNodeWrappers": [],
+    "checkInputPathsExist": [],
+    "setupTmpDirs": [],
+    "mkTmpDir": [
+      "nodeWrapper",
+      "type"
+    ],
+    "nodeWrappers": [],
+    "setupNodes": [],
+    "setupHeimdall": [],
+    "buildHeimdallTree": [
+      "outputNodeWrapper"
+    ],
+    "features": []
+  },
+  "CancelationRequest": {
+    "constructor": [
+      "pendingWork"
+    ],
+    "isCanceled": [],
+    "throwIfRequested": [],
+    "then": [],
+    "cancel": []
+  },
+  "buildBrocfileOptions": [
+    "options"
+  ],
+  "getBuilder": [
+    "options"
+  ],
+  "getWatcher": [
+    "options"
+  ],
+  "buildWatcherOptions": [
+    "options",
+    "ui"
+  ],
+  "isParentDirectory": [
+    "outputPath"
+  ],
+  "guardOutputDir": [
+    "outputDir"
+  ],
+  "cleanupAndExit": [],
+  "Watcher": {
+    "constructor": [
+      "builder",
+      "watchedNodes",
+      "param"
+    ],
+    "currentBuild": [],
+    "_updateCurrentBuild": [
+      "promise"
+    ],
+    "start": [],
+    "_change": [
+      "event",
+      "filePath",
+      "root"
+    ],
+    "_build": [
+      "filePath"
+    ],
+    "_error": [
+      "err"
+    ],
+    "quit": [],
+    "_quit": []
+  },
+  "BuildError": {
+    "constructor": [
+      "originalError",
+      "nodeWrapper"
+    ]
+  },
+  "BuilderError": {
+    "isBuilderError": [
+      "error"
+    ],
+    "constructor": [
+      "param"
+    ]
+  },
+  "Cancelation": {
+    "isCancelationError": [
+      "e"
+    ],
+    "constructor": [
+      "param"
+    ]
+  },
+  "CliError": {},
+  "NodeSetupError": {
+    "constructor": [
+      "originalError",
+      "nodeWrapper"
+    ]
+  },
+  "requireBrocfile": [
+    "brocfilePath"
+  ],
+  "handleRequest": [
+    "outputPath",
+    "request",
+    "response",
+    "next",
+    "options"
+  ],
+  "Server": {
+    "constructor": [
+      "watcher",
+      "host",
+      "port",
+      "param",
+      "ui",
+      "ssl",
+      "sslKey",
+      "sslCert"
+    ],
+    "start": [],
+    "_detachListeners": [],
+    "stop": []
+  },
+  "serve": [
+    "watcher",
+    "host",
+    "port",
+    "param",
+    "param",
+    "ui",
+    "ssl",
+    "sslKey",
+    "sslCert"
+  ],
+  "bindFileEvent": [
+    "adapter",
+    "watcher",
+    "node",
+    "event"
+  ],
+  "byTotalSelfTime": [
+    "a",
+    "b"
+  ],
+  "bySelfTime": [
+    "a",
+    "b"
+  ],
+  "normalizeSelfTime": [
+    "n"
+  ],
+  "normalizeTimes": [
+    "n"
+  ],
+  "calculateSummary": [
+    "tree"
+  ],
+  "filterMap": [
+    "iterator",
+    "cb"
+  ],
+  "ellipsize": [
+    "string",
+    "desiredLength"
+  ],
+  "pad": [
+    "str",
+    "len",
+    "char",
+    "dir"
+  ],
+  "printSlowNodes": [
+    "tree",
+    "factor",
+    "ui"
+  ],
+  "undefinedToNull": [
+    "obj"
+  ],
+  "wrapPrimitiveErrors": [
+    "err"
+  ],
+  "WatcherAdapter": {
+    "constructor": [
+      "watchedNodes",
+      "param",
+      "param"
+    ],
+    "watch": [],
+    "quit": [],
+    "optionsFor": [
+      "watchedPath"
+    ]
+  },
+  "NodeWrapper": {
+    "constructor": [],
+    "revise": [],
+    "revision": [],
+    "toJSON": [],
+    "formatInstantiationStackForTerminal": [],
+    "nodeInfoToJSON": []
+  },
+  "SourceNodeWrapper": {
+    "setup": [],
+    "build": [],
+    "toString": [],
+    "nodeInfoToJSON": []
+  },
+  "TransformNodeWrapper": {
+    "setup": [
+      "features"
+    ],
+    "shouldBuild": [],
+    "build": [],
+    "toString": [],
+    "nodeInfoToJSON": []
+  }
+}
