@@ -121,7 +121,9 @@ function buildPackage(pkg) {
   if (!version) return;
 
   const encoded = encodeVersion(version);
-  const filename = `${pkg}_${encoded}.json`;
+  const safePkgName = pkg.replace(/\//g, "__");
+  const filename = `${safePkgName}_${encoded}.json`;
+
   const outputPath = path.join(OUTPUT_DIR, filename);
 
   if (fs.existsSync(outputPath)) {
