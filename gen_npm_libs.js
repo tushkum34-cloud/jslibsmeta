@@ -1,14 +1,14 @@
-import fs from "fs";
-import path from "path";
-import tar from "tar";
-import { execSync } from "child_process";
-import parser from "@babel/parser";
-import traverse from "@babel/traverse";
+const fs = require("fs");
+const path = require("path");
+const { execSync } = require("child_process");
+const tar = require("tar");
+const parser = require("@babel/parser");
+const traverse = require("@babel/traverse").default;
 
 const OUTPUT_DIR = "lib_db";
 const PROGRESS_FILE = "progress.json";
-const BATCH_SIZE = 4000;
-const MAX_SECONDS = 5 * 60 * 60;
+const BATCH_SIZE = 200; // safer for GitHub runner
+const MAX_SECONDS = 4 * 60 * 60;
 
 if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR);
 
@@ -26,49 +26,78 @@ function loadProgress() {
 }
 
 function saveProgress(index) {
-  fs.writeFileSync(PROGRESS_FILE, JSON.stringify({ index }));
+  fs.writeFileSync(PROGRESS_FILE, JSON.stringify({ index }, null, 2));
 }
 
 function getLatestVersion(pkg) {
-  const data = JSON.parse(
-    execSync(`npm view ${pkg} version`, { encoding: "utf-8" })
-  );
-  return data.trim();
+  try {
+    const version = execSync(`npm view ${pkg} version`, {
+      encoding: "utf-8"
+    }).trim();
+    return version;
+  } catch {
+    return null;
+  }
 }
 
 function parseFile(filePath) {
-  const content = fs.readFileSync(filePath, "utf-8");
-  const ast = parser.parse(content, {
-    sourceType: "unambiguous",
-    plugins: ["typescript", "jsx"]
-  });
+  try {
+    const content = fs.readFileSync(filePath, "utf-8");
 
-  const result = {};
+    const ast = parser.parse(content, {
+      sourceType: "unambiguous",
+      plugins: ["typescript", "jsx"]
+    });
 
-  traverse.default(ast, {
-    FunctionDeclaration(path) {
-      const name = path.node.id?.name;
-      if (!name) return;
-      result[name] = path.node.params.map(p => p.name || "param");
-    },
-    ClassDeclaration(path) {
-      const className = path.node.id?.name;
-      if (!className) return;
-      result[className] = {};
-      path.node.body.body.forEach(method => {
-        if (method.key?.name) {
-          result[className][method.key.name] =
-            method.params?.map(p => p.name || "param") || [];
+    const result = {};
+
+    traverse(ast, {
+      FunctionDeclaration(path) {
+        const name = path.node.id?.name;
+        if (!name) return;
+
+        result[name] = path.node.params.map(p =>
+          p.name || "param"
+        );
+      },
+
+      VariableDeclarator(path) {
+        if (
+          path.node.init &&
+          (path.node.init.type === "ArrowFunctionExpression" ||
+            path.node.init.type === "FunctionExpression")
+        ) {
+          const name = path.node.id.name;
+          result[name] = path.node.init.params.map(p =>
+            p.name || "param"
+          );
         }
-      });
-    }
-  });
+      },
 
-  return result;
+      ClassDeclaration(path) {
+        const className = path.node.id?.name;
+        if (!className) return;
+
+        result[className] = {};
+
+        path.node.body.body.forEach(method => {
+          if (method.key && method.key.name) {
+            result[className][method.key.name] =
+              method.params?.map(p => p.name || "param") || [];
+          }
+        });
+      }
+    });
+
+    return result;
+  } catch {
+    return {};
+  }
 }
 
 function walkDir(dir, final) {
   const files = fs.readdirSync(dir);
+
   for (const file of files) {
     const full = path.join(dir, file);
     const stat = fs.statSync(full);
@@ -88,12 +117,8 @@ function buildPackage(pkg) {
 
   console.log("Processing:", pkg);
 
-  let version;
-  try {
-    version = getLatestVersion(pkg);
-  } catch {
-    return;
-  }
+  const version = getLatestVersion(pkg);
+  if (!version) return;
 
   const encoded = encodeVersion(version);
   const filename = `${pkg}_${encoded}.json`;
@@ -104,7 +129,11 @@ function buildPackage(pkg) {
     return;
   }
 
-  execSync(`npm pack ${pkg}@${version}`);
+  try {
+    execSync(`npm pack ${pkg}@${version}`, { stdio: "ignore" });
+  } catch {
+    return;
+  }
 
   const tgz = fs.readdirSync(".").find(f => f.endsWith(".tgz"));
   if (!tgz) return;
@@ -112,23 +141,32 @@ function buildPackage(pkg) {
   const extractDir = "./tmp_extract";
   if (!fs.existsSync(extractDir)) fs.mkdirSync(extractDir);
 
-  tar.x({ file: tgz, C: extractDir, sync: true });
+  try {
+    tar.x({
+      file: tgz,
+      C: extractDir,
+      sync: true
+    });
+  } catch {
+    fs.rmSync(tgz, { force: true });
+    return;
+  }
 
   const final = {};
   walkDir(extractDir, final);
 
   if (Object.keys(final).length > 0) {
     fs.writeFileSync(outputPath, JSON.stringify(final, null, 2));
+    console.log("Saved:", filename);
   }
 
-  fs.rmSync(tgz);
+  fs.rmSync(tgz, { force: true });
   fs.rmSync(extractDir, { recursive: true, force: true });
-
-  console.log("Saved:", filename);
 }
 
 const packages = fs.readFileSync("npm_list.txt", "utf-8")
   .split("\n")
+  .map(x => x.trim())
   .filter(Boolean);
 
 let startIndex = loadProgress();
@@ -136,10 +174,13 @@ let endIndex = Math.min(startIndex + BATCH_SIZE, packages.length);
 
 for (let i = startIndex; i < endIndex; i++) {
   const result = buildPackage(packages[i]);
+
   if (result === "TIME_LIMIT") break;
+
   saveProgress(i + 1);
 }
 
 if (endIndex >= packages.length) {
   saveProgress(0);
+  console.log("All packages processed. Reset progress.");
 }
