@@ -28,11 +28,10 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        run: |
-          npm install @babel/parser @babel/traverse tar
+        run: npm install
 
       - name: Run generator
-        run: node gen_npm_libs.js
+        run: node gen_npm_libs.cjs
 
       - name: Commit and Push
         run: |
