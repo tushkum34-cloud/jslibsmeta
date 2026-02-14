@@ -1,0 +1,263 @@
+{
+  "makePathAbsolute": [
+    "filePath"
+  ],
+  "getInputStream": [
+    "inputPath"
+  ],
+  "getOutputStream": [
+    "outputPath",
+    "config"
+  ],
+  "getInput": [
+    "inputPath",
+    "ndjson"
+  ],
+  "getInputFromStdin": [],
+  "processOutput": [
+    "outputPath",
+    "csv",
+    "config"
+  ],
+  "processInMemory": [
+    "config",
+    "opts"
+  ],
+  "processStream": [
+    "config",
+    "opts"
+  ],
+  "TablePrinter": {
+    "constructor": [
+      "opts"
+    ],
+    "push": [
+      "csv"
+    ],
+    "end": [
+      "csv"
+    ],
+    "printCSV": [
+      "csv"
+    ],
+    "setColumnWidths": [
+      "line"
+    ],
+    "print": [
+      "top",
+      "lines",
+      "bottom"
+    ],
+    "formatRow": [
+      "row"
+    ],
+    "formatCell": [
+      "content",
+      "heigth",
+      "width"
+    ],
+    "padCellVertically": [
+      "content",
+      "heigth",
+      "width"
+    ],
+    "padCellHorizontally": [
+      "content",
+      "width"
+    ],
+    "writeStream": []
+  },
+  "parseNdJson": [
+    "input"
+  ],
+  "JSON2CSVAsyncParser": {
+    "constructor": [
+      "opts",
+      "transformOpts"
+    ],
+    "parse": [
+      "data"
+    ]
+  },
+  "JSON2CSVBase": {
+    "constructor": [
+      "opts"
+    ],
+    "preprocessOpts": [
+      "opts"
+    ],
+    "preprocessFieldsInfo": [
+      "fields",
+      "globalDefaultValue"
+    ],
+    "getHeader": [
+      "fields"
+    ],
+    "preprocessRow": [
+      "row"
+    ],
+    "processRow": [
+      "row",
+      "fields"
+    ],
+    "processCell": [
+      "row",
+      "fieldInfo"
+    ],
+    "processValue": [
+      "value"
+    ]
+  },
+  "JSON2CSVParser": {
+    "constructor": [
+      "opts"
+    ],
+    "parse": [
+      "data"
+    ],
+    "preprocessData": [
+      "data",
+      "fields"
+    ],
+    "processData": [
+      "data",
+      "fields"
+    ]
+  },
+  "JSON2CSVStreamParser": {
+    "constructor": [
+      "opts",
+      "asyncOpts"
+    ],
+    "initTokenizer": [
+      "param",
+      "param"
+    ],
+    "getObjectModeTokenizer": [],
+    "configureCallbacks": [
+      "tokenizer",
+      "tokenParser"
+    ],
+    "getNdJsonTokenizer": [
+      "asyncOpts"
+    ],
+    "getBinaryModeTokenizer": [
+      "asyncOpts"
+    ],
+    "write": [
+      "data"
+    ],
+    "end": [],
+    "pushHeaderIfNotWritten": [],
+    "pushHeader": [],
+    "pushLine": [
+      "data"
+    ],
+    "onHeader": [
+      "header"
+    ],
+    "onLine": [
+      "line"
+    ],
+    "onData": [
+      "data"
+    ],
+    "onError": [],
+    "onEnd": []
+  },
+  "JSON2CSVTransform": {
+    "constructor": [
+      "opts",
+      "param",
+      "param"
+    ],
+    "onHeader": [
+      "header"
+    ],
+    "onLine": [
+      "line"
+    ],
+    "onData": [
+      "data"
+    ],
+    "onError": [
+      "err"
+    ],
+    "onEnd": [],
+    "_transform": [
+      "chunk",
+      "encoding",
+      "done"
+    ],
+    "_final": [
+      "done"
+    ],
+    "promise": []
+  },
+  "defaultFormatter": [
+    "value"
+  ],
+  "toFixedDecimals": [
+    "value",
+    "decimals"
+  ],
+  "replaceSeparator": [
+    "value",
+    "separator"
+  ],
+  "numberFormatter": [
+    "param"
+  ],
+  "objectFormatter": [
+    "param"
+  ],
+  "stringFormatter": [
+    "param"
+  ],
+  "stringExcel": [
+    "value"
+  ],
+  "stringQuoteOnlyIfNecessaryFormatter": [
+    "param"
+  ],
+  "symbolFormatter": [
+    "param"
+  ],
+  "flatten": [
+    "param"
+  ],
+  "step": [
+    "obj",
+    "flatDataRow",
+    "currentPath"
+  ],
+  "getUnwindablePaths": [
+    "obj",
+    "currentPath"
+  ],
+  "unwind": [
+    "param"
+  ],
+  "unwindReducer": [
+    "rows",
+    "unwindPath"
+  ],
+  "getProp": [
+    "obj",
+    "path",
+    "defaultValue"
+  ],
+  "setProp": [
+    "obj",
+    "path",
+    "value"
+  ],
+  "unsetProp": [
+    "obj",
+    "path"
+  ],
+  "fakeInherit": [
+    "inheritingObj",
+    "parentObj"
+  ]
+}

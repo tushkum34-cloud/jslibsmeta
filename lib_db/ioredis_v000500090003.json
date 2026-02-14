@@ -1,0 +1,744 @@
+{
+  "Command": {
+    "constructor": [
+      "name",
+      "param",
+      "param",
+      "callback"
+    ],
+    "checkFlag": [
+      "flagName",
+      "commandName"
+    ],
+    "setArgumentTransformer": [
+      "name",
+      "func"
+    ],
+    "setReplyTransformer": [
+      "name",
+      "func"
+    ],
+    "getFlagMap": [],
+    "getSlot": [],
+    "getKeys": [],
+    "toWritable": [
+      "_socket"
+    ],
+    "stringifyArguments": [],
+    "transformReply": [
+      "result"
+    ],
+    "setTimeout": [
+      "ms"
+    ],
+    "setBlockingTimeout": [
+      "ms"
+    ],
+    "extractBlockingTimeout": [],
+    "_clearTimers": [],
+    "initPromise": [],
+    "_iterateKeys": [
+      "param"
+    ],
+    "_convertValue": [
+      "resolve"
+    ]
+  },
+  "msetArgumentTransformer": [
+    "args"
+  ],
+  "hsetArgumentTransformer": [
+    "args"
+  ],
+  "MixedBuffers": {
+    "constructor": [],
+    "push": [
+      "x"
+    ],
+    "toBuffer": []
+  },
+  "DataHandler": {
+    "constructor": [
+      "redis",
+      "parserOptions"
+    ],
+    "returnFatalError": [
+      "err"
+    ],
+    "returnError": [
+      "err"
+    ],
+    "returnReply": [
+      "reply"
+    ],
+    "handleSubscriberReply": [
+      "reply"
+    ],
+    "handleMonitorReply": [
+      "reply"
+    ],
+    "shiftCommand": [
+      "reply"
+    ]
+  },
+  "fillSubCommand": [
+    "command",
+    "count"
+  ],
+  "fillUnsubCommand": [
+    "command",
+    "count"
+  ],
+  "Pipeline": {
+    "constructor": [
+      "redis"
+    ],
+    "fillResult": [
+      "value",
+      "position"
+    ],
+    "sendCommand": [
+      "command"
+    ],
+    "addBatch": [
+      "commands"
+    ]
+  },
+  "generateMultiWithNodes": [
+    "redis",
+    "keys"
+  ],
+  "exec": [],
+  "execPipeline": [],
+  "Redis": {
+    "constructor": [
+      "arg1",
+      "arg2",
+      "arg3"
+    ],
+    "createClient": [
+      "param"
+    ],
+    "autoPipelineQueueSize": [],
+    "connect": [
+      "callback"
+    ],
+    "disconnect": [
+      "param"
+    ],
+    "end": [],
+    "duplicate": [
+      "override"
+    ],
+    "mode": [],
+    "monitor": [
+      "callback"
+    ],
+    "sendCommand": [
+      "command",
+      "stream"
+    ],
+    "getBlockingTimeoutInMs": [
+      "command"
+    ],
+    "getConfiguredBlockingTimeout": [],
+    "setSocketTimeout": [],
+    "scanStream": [
+      "options"
+    ],
+    "scanBufferStream": [
+      "options"
+    ],
+    "sscanStream": [
+      "key",
+      "options"
+    ],
+    "sscanBufferStream": [
+      "key",
+      "options"
+    ],
+    "hscanStream": [
+      "key",
+      "options"
+    ],
+    "hscanBufferStream": [
+      "key",
+      "options"
+    ],
+    "zscanStream": [
+      "key",
+      "options"
+    ],
+    "zscanBufferStream": [
+      "key",
+      "options"
+    ],
+    "silentEmit": [
+      "eventName",
+      "arg"
+    ],
+    "recoverFromFatalError": [
+      "_commandError",
+      "err",
+      "options"
+    ],
+    "handleReconnection": [
+      "err",
+      "item"
+    ],
+    "_getDescription": [],
+    "resetCommandQueue": [],
+    "resetOfflineQueue": [],
+    "parseOptions": [
+      "param"
+    ],
+    "setStatus": [
+      "status",
+      "arg"
+    ],
+    "createScanStream": [
+      "command",
+      "param"
+    ],
+    "flushQueue": [
+      "error",
+      "options"
+    ],
+    "_readyCheck": [
+      "callback"
+    ]
+  },
+  "connectionReadyHandler": [],
+  "connectionCloseHandler": [],
+  "ScanStream": {
+    "constructor": [
+      "opt"
+    ],
+    "_read": [],
+    "close": []
+  },
+  "Script": {
+    "constructor": [
+      "lua",
+      "param",
+      "param",
+      "param"
+    ],
+    "execute": [
+      "container",
+      "args",
+      "options",
+      "callback"
+    ]
+  },
+  "SubscriptionSet": {
+    "constructor": [],
+    "add": [
+      "set",
+      "channel"
+    ],
+    "del": [
+      "set",
+      "channel"
+    ],
+    "channels": [
+      "set"
+    ],
+    "isEmpty": []
+  },
+  "mapSet": [
+    "set"
+  ],
+  "executeAutoPipeline": [
+    "client",
+    "slotKey"
+  ],
+  "shouldUseAutoPipelining": [
+    "client",
+    "functionName",
+    "commandName"
+  ],
+  "getFirstValueInFlattenedArray": [
+    "args"
+  ],
+  "executeWithAutoPipelining": [
+    "client",
+    "functionName",
+    "commandName",
+    "args",
+    "callback"
+  ],
+  "ClusterSubscriber": {
+    "constructor": [
+      "connectionPool",
+      "emitter",
+      "param"
+    ],
+    "getInstance": [],
+    "associateSlotRange": [
+      "range"
+    ],
+    "start": [],
+    "stop": [],
+    "isStarted": [],
+    "selectSubscriber": []
+  },
+  "ClusterSubscriberGroup": {
+    "constructor": [
+      "subscriberGroupEmitter"
+    ],
+    "getResponsibleSubscriber": [
+      "slot"
+    ],
+    "addChannels": [
+      "channels"
+    ],
+    "removeChannels": [
+      "channels"
+    ],
+    "stop": [],
+    "start": [],
+    "reset": [
+      "clusterSlots",
+      "clusterNodes"
+    ],
+    "_refreshSlots": [
+      "targetSlots"
+    ],
+    "_resubscribe": [],
+    "_slotsAreEqual": [
+      "other"
+    ],
+    "hasUnhealthySubscribers": []
+  },
+  "ConnectionPool": {
+    "constructor": [
+      "redisOptions"
+    ],
+    "getNodes": [
+      "param"
+    ],
+    "getInstanceByKey": [
+      "key"
+    ],
+    "getSampleInstance": [
+      "role"
+    ],
+    "addMasterNode": [
+      "node"
+    ],
+    "createRedisFromOptions": [
+      "node",
+      "readOnly"
+    ],
+    "findOrCreate": [
+      "node",
+      "param"
+    ],
+    "reset": [
+      "nodes"
+    ],
+    "removeNode": [
+      "key"
+    ]
+  },
+  "DelayQueue": {
+    "constructor": [],
+    "push": [
+      "bucket",
+      "item",
+      "options"
+    ],
+    "execute": [
+      "bucket"
+    ]
+  },
+  "ShardedSubscriber": {
+    "constructor": [
+      "emitter",
+      "options"
+    ],
+    "start": [],
+    "stop": [],
+    "isStarted": [],
+    "getInstance": [],
+    "getNodeKey": []
+  },
+  "listener": [
+    "param"
+  ],
+  "Cluster": {
+    "constructor": [
+      "startupNodes",
+      "param"
+    ],
+    "connect": [],
+    "disconnect": [
+      "param"
+    ],
+    "quit": [
+      "callback"
+    ],
+    "duplicate": [
+      "param",
+      "param"
+    ],
+    "nodes": [
+      "param"
+    ],
+    "delayUntilReady": [
+      "callback"
+    ],
+    "autoPipelineQueueSize": [],
+    "refreshSlotsCache": [
+      "callback"
+    ],
+    "sendCommand": [
+      "command",
+      "stream",
+      "node"
+    ],
+    "sscanStream": [
+      "key",
+      "options"
+    ],
+    "sscanBufferStream": [
+      "key",
+      "options"
+    ],
+    "hscanStream": [
+      "key",
+      "options"
+    ],
+    "hscanBufferStream": [
+      "key",
+      "options"
+    ],
+    "zscanStream": [
+      "key",
+      "options"
+    ],
+    "zscanBufferStream": [
+      "key",
+      "options"
+    ],
+    "handleError": [
+      "error",
+      "ttl",
+      "handlers"
+    ],
+    "resetOfflineQueue": [],
+    "clearNodesRefreshInterval": [],
+    "resetNodesRefreshInterval": [],
+    "setStatus": [
+      "status"
+    ],
+    "handleCloseEvent": [
+      "reason"
+    ],
+    "flushQueue": [
+      "error"
+    ],
+    "executeOfflineCommands": [],
+    "natMapper": [
+      "nodeKey"
+    ],
+    "getInfoFromNode": [
+      "redis",
+      "callback"
+    ],
+    "invokeReadyDelayedCallbacks": [
+      "err"
+    ],
+    "readyCheck": [
+      "callback"
+    ],
+    "resolveSrv": [
+      "hostname"
+    ],
+    "dnsLookup": [
+      "hostname"
+    ],
+    "resolveStartupNodeHostnames": [],
+    "createScanStream": [
+      "command",
+      "param"
+    ],
+    "createShardedSubscriberGroup": []
+  },
+  "readyHandler": [
+    "self"
+  ],
+  "refreshListener": [],
+  "wrapper": [
+    "error"
+  ],
+  "tryNode": [
+    "index"
+  ],
+  "tryConnection": [
+    "random",
+    "asking"
+  ],
+  "nextRound": [],
+  "tryFirstOne": [
+    "err"
+  ],
+  "refreshSlotsCacheCallback": [
+    "err"
+  ],
+  "getNodeKey": [
+    "node"
+  ],
+  "nodeKeyToRedisOptions": [
+    "nodeKey"
+  ],
+  "normalizeNodeOptions": [
+    "nodes"
+  ],
+  "getUniqueHostnamesFromOptions": [
+    "nodes"
+  ],
+  "groupSrvRecords": [
+    "records"
+  ],
+  "weightSrvRecords": [
+    "recordsGroup"
+  ],
+  "getConnectionName": [
+    "component",
+    "nodeConnectionName"
+  ],
+  "AbstractConnector": {
+    "constructor": [
+      "disconnectTimeout"
+    ],
+    "check": [
+      "info"
+    ],
+    "disconnect": []
+  },
+  "FailoverDetector": {
+    "constructor": [
+      "connector",
+      "sentinels"
+    ],
+    "cleanup": [],
+    "subscribe": [],
+    "disconnect": []
+  },
+  "SentinelIterator": {
+    "constructor": [
+      "sentinels"
+    ],
+    "next": [],
+    "reset": [
+      "moveCurrentEndpointToFirst"
+    ],
+    "add": [
+      "sentinel"
+    ],
+    "toString": []
+  },
+  "isSentinelEql": [
+    "a",
+    "b"
+  ],
+  "SentinelConnector": {
+    "constructor": [
+      "options"
+    ],
+    "check": [
+      "info"
+    ],
+    "disconnect": [],
+    "connect": [
+      "eventEmitter"
+    ],
+    "updateSentinels": [
+      "client"
+    ],
+    "resolveMaster": [
+      "client"
+    ],
+    "resolveSlave": [
+      "client"
+    ],
+    "sentinelNatResolve": [
+      "item"
+    ],
+    "connectToSentinel": [
+      "endpoint",
+      "options"
+    ],
+    "resolve": [
+      "endpoint"
+    ],
+    "initFailoverDetector": []
+  },
+  "connectToNext": [],
+  "selectPreferredSentinel": [
+    "availableSlaves",
+    "preferredSlaves"
+  ],
+  "addressResponseToAddress": [
+    "input"
+  ],
+  "noop": [],
+  "StandaloneConnector": {
+    "constructor": [
+      "options"
+    ],
+    "connect": [
+      "_"
+    ]
+  },
+  "ClusterAllFailedError": {
+    "constructor": [
+      "message",
+      "lastNodeError"
+    ],
+    "name": []
+  },
+  "MaxRetriesPerRequestError": {
+    "constructor": [
+      "maxRetriesPerRequest"
+    ],
+    "name": []
+  },
+  "print": [
+    "err",
+    "reply"
+  ],
+  "connectHandler": [
+    "self"
+  ],
+  "abortError": [
+    "command"
+  ],
+  "abortIncompletePipelines": [
+    "commandQueue"
+  ],
+  "abortTransactionFragments": [
+    "commandQueue"
+  ],
+  "closeHandler": [
+    "self"
+  ],
+  "close": [],
+  "errorHandler": [
+    "self"
+  ],
+  "addTransactionSupport": [
+    "redis"
+  ],
+  "Commander": {
+    "constructor": [],
+    "getBuiltinCommands": [],
+    "createBuiltinCommand": [
+      "commandName"
+    ],
+    "addBuiltinCommand": [
+      "commandName"
+    ],
+    "defineCommand": [
+      "name",
+      "definition"
+    ],
+    "sendCommand": [
+      "command",
+      "stream",
+      "node"
+    ]
+  },
+  "generateFunction": [
+    "functionName",
+    "_commandName",
+    "_encoding"
+  ],
+  "generateScriptingFunction": [
+    "functionName",
+    "commandName",
+    "script",
+    "encoding"
+  ],
+  "applyMixin": [
+    "derivedConstructor",
+    "mixinConstructor"
+  ],
+  "parseNumberArgument": [
+    "arg"
+  ],
+  "parseStringArgument": [
+    "arg"
+  ],
+  "parseSecondsArgument": [
+    "arg"
+  ],
+  "parseBlockOption": [
+    "args"
+  ],
+  "getStringValue": [
+    "v"
+  ],
+  "genRedactedString": [
+    "str",
+    "maxLen"
+  ],
+  "genDebugFunction": [
+    "namespace"
+  ],
+  "wrappedDebug": [
+    "param"
+  ],
+  "convertBufferToString": [
+    "value",
+    "encoding"
+  ],
+  "wrapMultiResult": [
+    "arr"
+  ],
+  "isInt": [
+    "value"
+  ],
+  "packObject": [
+    "array"
+  ],
+  "timeout": [
+    "callback",
+    "timeout"
+  ],
+  "run": [],
+  "convertObjectToArray": [
+    "obj"
+  ],
+  "convertMapToArray": [
+    "map"
+  ],
+  "toArg": [
+    "arg"
+  ],
+  "optimizeErrorStack": [
+    "error",
+    "friendlyStack",
+    "filterPath"
+  ],
+  "parseURL": [
+    "url"
+  ],
+  "resolveTLSProfile": [
+    "options"
+  ],
+  "sample": [
+    "array",
+    "param"
+  ],
+  "shuffle": [
+    "array"
+  ],
+  "zipMap": [
+    "keys",
+    "values"
+  ],
+  "getPackageMeta": []
+}

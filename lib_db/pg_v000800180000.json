@@ -1,0 +1,415 @@
+{
+  "Client": {
+    "constructor": [
+      "config"
+    ],
+    "activeQuery": [
+      "val"
+    ],
+    "_getActiveQuery": [],
+    "_errorAllQueries": [
+      "err"
+    ],
+    "_connect": [
+      "callback"
+    ],
+    "connect": [
+      "callback"
+    ],
+    "_attachListeners": [
+      "con"
+    ],
+    "_getPassword": [
+      "cb"
+    ],
+    "_handleAuthCleartextPassword": [
+      "msg"
+    ],
+    "_handleAuthMD5Password": [
+      "msg"
+    ],
+    "_handleAuthSASL": [
+      "msg"
+    ],
+    "_handleAuthSASLContinue": [
+      "msg"
+    ],
+    "_handleAuthSASLFinal": [
+      "msg"
+    ],
+    "_handleBackendKeyData": [
+      "msg"
+    ],
+    "_handleReadyForQuery": [
+      "msg"
+    ],
+    "_handleErrorWhileConnecting": [
+      "err"
+    ],
+    "_handleErrorEvent": [
+      "err"
+    ],
+    "_handleErrorMessage": [
+      "msg"
+    ],
+    "_handleRowDescription": [
+      "msg"
+    ],
+    "_handleDataRow": [
+      "msg"
+    ],
+    "_handlePortalSuspended": [
+      "msg"
+    ],
+    "_handleEmptyQuery": [
+      "msg"
+    ],
+    "_handleCommandComplete": [
+      "msg"
+    ],
+    "_handleParseComplete": [],
+    "_handleCopyInResponse": [
+      "msg"
+    ],
+    "_handleCopyData": [
+      "msg"
+    ],
+    "_handleNotification": [
+      "msg"
+    ],
+    "_handleNotice": [
+      "msg"
+    ],
+    "getStartupConf": [],
+    "cancel": [
+      "client",
+      "query"
+    ],
+    "setTypeParser": [
+      "oid",
+      "format",
+      "parseFn"
+    ],
+    "getTypeParser": [
+      "oid",
+      "format"
+    ],
+    "escapeIdentifier": [
+      "str"
+    ],
+    "escapeLiteral": [
+      "str"
+    ],
+    "_pulseQueryQueue": [],
+    "query": [
+      "config",
+      "values",
+      "callback"
+    ],
+    "ref": [],
+    "unref": [],
+    "end": [
+      "cb"
+    ],
+    "queryQueue": []
+  },
+  "enqueueError": [
+    "query"
+  ],
+  "val": [
+    "key",
+    "config",
+    "envVar"
+  ],
+  "readSSLConfigFromEnvironment": [],
+  "quoteParamValue": [
+    "value"
+  ],
+  "add": [
+    "params",
+    "config",
+    "paramName"
+  ],
+  "ConnectionParameters": {
+    "constructor": [
+      "config"
+    ],
+    "getLibpqConnectionString": [
+      "cb"
+    ]
+  },
+  "Connection": {
+    "constructor": [
+      "config"
+    ],
+    "connect": [
+      "port",
+      "host"
+    ],
+    "attachListeners": [
+      "stream"
+    ],
+    "requestSsl": [],
+    "startup": [
+      "config"
+    ],
+    "cancel": [
+      "processID",
+      "secretKey"
+    ],
+    "password": [
+      "password"
+    ],
+    "sendSASLInitialResponseMessage": [
+      "mechanism",
+      "initialResponse"
+    ],
+    "sendSCRAMClientFinalMessage": [
+      "additionalData"
+    ],
+    "_send": [
+      "buffer"
+    ],
+    "query": [
+      "text"
+    ],
+    "parse": [
+      "query"
+    ],
+    "bind": [
+      "config"
+    ],
+    "execute": [
+      "config"
+    ],
+    "flush": [],
+    "sync": [],
+    "ref": [],
+    "unref": [],
+    "end": [],
+    "close": [
+      "msg"
+    ],
+    "describe": [
+      "msg"
+    ],
+    "sendCopyFromChunk": [
+      "chunk"
+    ],
+    "endCopyFrom": [],
+    "sendCopyFail": [
+      "msg"
+    ]
+  },
+  "reportStreamError": [
+    "error"
+  ],
+  "x509Error": [
+    "msg",
+    "cert"
+  ],
+  "readASN1Length": [
+    "data",
+    "index"
+  ],
+  "readASN1OID": [
+    "data",
+    "index"
+  ],
+  "expectASN1Seq": [
+    "data",
+    "index"
+  ],
+  "signatureAlgorithmHashFromCertificate": [
+    "data",
+    "index"
+  ],
+  "startSession": [
+    "mechanisms",
+    "stream"
+  ],
+  "continueSession": [
+    "session",
+    "password",
+    "serverData",
+    "stream"
+  ],
+  "finalizeSession": [
+    "session",
+    "serverData"
+  ],
+  "isPrintableChars": [
+    "text"
+  ],
+  "isBase64": [
+    "text"
+  ],
+  "parseAttributePairs": [
+    "text"
+  ],
+  "parseServerFirstMessage": [
+    "data"
+  ],
+  "parseServerFinalMessage": [
+    "serverData"
+  ],
+  "xorBuffers": [
+    "a",
+    "b"
+  ],
+  "md5": [
+    "string"
+  ],
+  "postgresMd5PasswordHash": [
+    "user",
+    "password",
+    "salt"
+  ],
+  "sha256": [
+    "text"
+  ],
+  "hashByName": [
+    "hashName",
+    "text"
+  ],
+  "hmacSha256": [
+    "keyBuffer",
+    "msg"
+  ],
+  "deriveKey": [
+    "password",
+    "salt",
+    "iterations"
+  ],
+  "randomBytes": [
+    "length"
+  ],
+  "poolFactory": [
+    "Client"
+  ],
+  "PG": [
+    "clientConstructor"
+  ],
+  "after": [
+    "err",
+    "rows",
+    "results"
+  ],
+  "Query": {
+    "constructor": [
+      "config",
+      "values",
+      "callback"
+    ],
+    "requiresPreparation": [],
+    "_checkForMultirow": [],
+    "handleRowDescription": [
+      "msg"
+    ],
+    "handleDataRow": [
+      "msg"
+    ],
+    "handleCommandComplete": [
+      "msg",
+      "connection"
+    ],
+    "handleEmptyQuery": [
+      "connection"
+    ],
+    "handleError": [
+      "err",
+      "connection"
+    ],
+    "handleReadyForQuery": [
+      "con"
+    ],
+    "submit": [
+      "connection"
+    ],
+    "hasBeenParsed": [
+      "connection"
+    ],
+    "handlePortalSuspended": [
+      "connection"
+    ],
+    "_getRows": [
+      "connection",
+      "rows"
+    ],
+    "prepare": [
+      "connection"
+    ],
+    "handleCopyInResponse": [
+      "connection"
+    ],
+    "handleCopyData": [
+      "msg",
+      "connection"
+    ]
+  },
+  "Result": {
+    "constructor": [
+      "rowMode",
+      "types"
+    ],
+    "addCommandComplete": [
+      "msg"
+    ],
+    "_parseRowAsArray": [
+      "rowData"
+    ],
+    "parseRow": [
+      "rowData"
+    ],
+    "addRow": [
+      "row"
+    ],
+    "addFields": [
+      "fieldDescriptions"
+    ]
+  },
+  "getNodejsStreamFuncs": [],
+  "getStream": [
+    "ssl"
+  ],
+  "getSecureStream": [
+    "options"
+  ],
+  "getCloudflareStreamFuncs": [],
+  "isCloudflareRuntime": [],
+  "getStreamFuncs": [],
+  "TypeOverrides": [
+    "userTypes"
+  ],
+  "escapeElement": [
+    "elementRepresentation"
+  ],
+  "arrayString": [
+    "val"
+  ],
+  "prepareValue": [
+    "val",
+    "seen"
+  ],
+  "prepareObject": [
+    "val",
+    "seen"
+  ],
+  "dateToString": [
+    "date"
+  ],
+  "dateToStringUTC": [
+    "date"
+  ],
+  "normalizeQueryConfig": [
+    "config",
+    "values",
+    "callback"
+  ],
+  "escapeIdentifier": [
+    "str"
+  ],
+  "escapeLiteral": [
+    "str"
+  ]
+}

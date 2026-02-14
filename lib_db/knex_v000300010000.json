@@ -1,0 +1,4309 @@
+{
+  "openKnexfile": [
+    "configPath"
+  ],
+  "initKnex": [
+    "env",
+    "opts",
+    "useDefaultClientIfNotSpecified"
+  ],
+  "invoke": [],
+  "parseConfigObj": [
+    "opts"
+  ],
+  "mkConfigObj": [
+    "opts"
+  ],
+  "resolveEnvironmentConfig": [
+    "opts",
+    "allConfigs",
+    "configFilePath"
+  ],
+  "exit": [
+    "text"
+  ],
+  "success": [
+    "text"
+  ],
+  "checkLocalModule": [
+    "env"
+  ],
+  "checkConfigurationOptions": [
+    "env",
+    "opts"
+  ],
+  "getMigrationExtension": [
+    "env",
+    "opts"
+  ],
+  "getSeedExtension": [
+    "env",
+    "opts"
+  ],
+  "getStubPath": [
+    "configKey",
+    "env",
+    "opts"
+  ],
+  "findUpModulePath": [
+    "cwd",
+    "packageName"
+  ],
+  "findUpConfig": [
+    "cwd",
+    "name",
+    "extensions"
+  ],
+  "listMigrations": [
+    "completed",
+    "newMigrations"
+  ],
+  "augmentWithBuilderInterface": [
+    "Target"
+  ],
+  "Client": {
+    "constructor": [
+      "config"
+    ],
+    "config": [],
+    "dialect": [],
+    "driverName": [],
+    "connectionSettings": [],
+    "acquireRawConnection": [],
+    "destroyRawConnection": [
+      "connection"
+    ],
+    "validateConnection": [
+      "connection"
+    ],
+    "logger": [],
+    "version": [],
+    "connectionConfigProvider": [],
+    "connectionConfigExpirationChecker": [],
+    "valueForUndefined": [],
+    "formatter": [
+      "builder"
+    ],
+    "queryBuilder": [],
+    "queryCompiler": [
+      "builder"
+    ],
+    "schemaBuilder": [],
+    "schemaCompiler": [
+      "builder"
+    ],
+    "tableBuilder": [
+      "type",
+      "tableName",
+      "tableNameLike",
+      "fn"
+    ],
+    "tableCompiler": [
+      "tableBuilder"
+    ],
+    "columnBuilder": [
+      "tableBuilder",
+      "type",
+      "args"
+    ],
+    "columnCompiler": [
+      "tableBuilder",
+      "columnBuilder"
+    ],
+    "runner": [
+      "builder"
+    ],
+    "transaction": [
+      "container",
+      "config",
+      "outerTx"
+    ],
+    "raw": [
+      "param"
+    ],
+    "ref": [
+      "param"
+    ],
+    "query": [
+      "connection",
+      "obj"
+    ],
+    "stream": [
+      "connection",
+      "obj",
+      "stream",
+      "options"
+    ],
+    "prepBindings": [
+      "bindings"
+    ],
+    "positionBindings": [
+      "sql"
+    ],
+    "postProcessResponse": [
+      "resp",
+      "queryContext"
+    ],
+    "wrapIdentifier": [
+      "value",
+      "queryContext"
+    ],
+    "customWrapIdentifier": [
+      "value",
+      "origImpl",
+      "queryContext"
+    ],
+    "wrapIdentifierImpl": [
+      "value"
+    ],
+    "initializeDriver": [],
+    "driver": [],
+    "poolDefaults": [],
+    "getPoolSettings": [
+      "poolConfig"
+    ],
+    "initializePool": [
+      "config"
+    ],
+    "pool": [],
+    "acquireConnection": [],
+    "releaseConnection": [
+      "connection"
+    ],
+    "destroy": [
+      "callback"
+    ],
+    "database": [],
+    "canCancelQuery": [],
+    "assertCanCancelQuery": [],
+    "cancelQuery": []
+  },
+  "updatePoolConnectionSettingsFromProvider": [],
+  "Client_BetterSQLite3": {
+    "_driver": [],
+    "acquireRawConnection": [],
+    "destroyRawConnection": [
+      "connection"
+    ],
+    "_query": [
+      "connection",
+      "obj"
+    ],
+    "_formatBindings": [
+      "bindings"
+    ]
+  },
+  "ColumnCompiler_CRDB": {
+    "uuid": [
+      "param"
+    ]
+  },
+  "QueryCompiler_CRDB": {
+    "truncate": [],
+    "upsert": [],
+    "_upsert": [],
+    "_groupOrder": [
+      "item",
+      "type"
+    ],
+    "whereJsonPath": [
+      "statement"
+    ],
+    "_jsonExtract": [
+      "nameFunction",
+      "params"
+    ],
+    "_onJsonPathEquals": [
+      "nameJoinFunction",
+      "clause"
+    ]
+  },
+  "TableCompiler_CRDB": {
+    "constructor": [
+      "client",
+      "tableBuilder"
+    ],
+    "addColumns": [
+      "columns",
+      "prefix",
+      "colCompilers"
+    ],
+    "dropUnique": [
+      "columns",
+      "indexName"
+    ]
+  },
+  "ViewCompiler_CRDB": {
+    "renameColumn": [
+      "from",
+      "to"
+    ],
+    "defaultTo": [
+      "column",
+      "defaultValue"
+    ]
+  },
+  "Client_CockroachDB": {
+    "transaction": [],
+    "queryCompiler": [
+      "builder",
+      "formatter"
+    ],
+    "columnCompiler": [],
+    "tableCompiler": [],
+    "viewCompiler": [],
+    "queryBuilder": [],
+    "_parseVersion": [
+      "versionString"
+    ],
+    "cancelQuery": [
+      "connectionToKill"
+    ],
+    "_wrappedCancelQueryCall": [
+      "emptyConnection",
+      "connectionToKill"
+    ],
+    "toArrayPathFromJsonPath": [
+      "jsonPath",
+      "builder",
+      "bindingsHolder"
+    ]
+  },
+  "getDialectByNameOrAlias": [
+    "clientName"
+  ],
+  "Client_MSSQL": {
+    "constructor": [
+      "param"
+    ],
+    "_generateConnection": [],
+    "_driver": [],
+    "formatter": [],
+    "transaction": [],
+    "queryCompiler": [],
+    "schemaCompiler": [],
+    "tableCompiler": [],
+    "viewCompiler": [],
+    "queryBuilder": [],
+    "columnCompiler": [],
+    "wrapIdentifierImpl": [
+      "value"
+    ],
+    "acquireRawConnection": [],
+    "validateConnection": [
+      "connection"
+    ],
+    "destroyRawConnection": [
+      "connection"
+    ],
+    "positionBindings": [
+      "sql"
+    ],
+    "_chomp": [
+      "connection"
+    ],
+    "_enqueueRequest": [
+      "request",
+      "connection"
+    ],
+    "_makeRequest": [
+      "query",
+      "callback"
+    ],
+    "_stream": [
+      "connection",
+      "query",
+      "stream"
+    ],
+    "_assignBindings": [
+      "request",
+      "bindings"
+    ],
+    "_scaleForBinding": [
+      "binding"
+    ],
+    "_typeForBinding": [
+      "binding"
+    ],
+    "_query": [
+      "connection",
+      "query"
+    ],
+    "_setReqInput": [
+      "req",
+      "i",
+      "inputBinding"
+    ],
+    "processResponse": [
+      "query",
+      "runner"
+    ]
+  },
+  "MSSQL_Formatter": {
+    "columnizeWithPrefix": [
+      "prefix",
+      "target"
+    ],
+    "escapingStringDelimiters": [
+      "string"
+    ]
+  },
+  "QueryCompiler_MSSQL": {
+    "constructor": [
+      "client",
+      "builder",
+      "formatter"
+    ],
+    "with": [],
+    "select": [],
+    "insert": [],
+    "insertWithTriggers": [],
+    "_buildInsertData": [
+      "insertValues",
+      "returningSql"
+    ],
+    "standardInsert": [],
+    "update": [],
+    "updateWithTriggers": [],
+    "_formatGroupsItemValue": [
+      "value",
+      "nulls"
+    ],
+    "standardUpdate": [],
+    "del": [],
+    "deleteWithTriggers": [],
+    "standardDelete": [],
+    "columns": [],
+    "_returning": [
+      "method",
+      "value",
+      "withTrigger"
+    ],
+    "_buildTempTable": [
+      "values"
+    ],
+    "_buildReturningSelect": [
+      "values"
+    ],
+    "truncate": [],
+    "forUpdate": [],
+    "forShare": [],
+    "columnInfo": [],
+    "top": [],
+    "limit": [],
+    "offset": [],
+    "whereLike": [
+      "statement"
+    ],
+    "whereILike": [
+      "statement"
+    ],
+    "jsonExtract": [
+      "params"
+    ],
+    "jsonSet": [
+      "params"
+    ],
+    "jsonInsert": [
+      "params"
+    ],
+    "jsonRemove": [
+      "params"
+    ],
+    "whereJsonPath": [
+      "statement"
+    ],
+    "whereJsonSupersetOf": [
+      "statement"
+    ],
+    "whereJsonSubsetOf": [
+      "statement"
+    ],
+    "_getExtracts": [
+      "statement",
+      "operator"
+    ],
+    "onJsonPathEquals": [
+      "clause"
+    ]
+  },
+  "ColumnCompiler_MSSQL": {
+    "constructor": [
+      "client",
+      "tableCompiler",
+      "columnBuilder"
+    ],
+    "double": [
+      "precision",
+      "scale"
+    ],
+    "floating": [
+      "precision",
+      "scale"
+    ],
+    "integer": [],
+    "tinyint": [],
+    "varchar": [
+      "length"
+    ],
+    "timestamp": [
+      "param"
+    ],
+    "bit": [
+      "length"
+    ],
+    "binary": [
+      "length"
+    ],
+    "first": [],
+    "after": [
+      "column"
+    ],
+    "defaultTo": [
+      "value",
+      "param"
+    ],
+    "comment": [
+      "comment"
+    ],
+    "checkLength": [
+      "operator",
+      "length",
+      "constraintName"
+    ],
+    "checkRegex": [
+      "regex",
+      "constraintName"
+    ],
+    "increments": [
+      "param"
+    ],
+    "bigincrements": [
+      "param"
+    ]
+  },
+  "SchemaCompiler_MSSQL": {
+    "constructor": [
+      "client",
+      "builder"
+    ],
+    "dropTableIfExists": [
+      "tableName"
+    ],
+    "dropViewIfExists": [
+      "viewName"
+    ],
+    "renameTable": [
+      "tableName",
+      "to"
+    ],
+    "renameView": [
+      "viewTable",
+      "to"
+    ],
+    "hasTable": [
+      "tableName"
+    ],
+    "hasColumn": [
+      "tableName",
+      "column"
+    ]
+  },
+  "prefixedTableName": [
+    "prefix",
+    "table"
+  ],
+  "TableCompiler_MSSQL": {
+    "constructor": [
+      "client",
+      "tableBuilder"
+    ],
+    "createQuery": [
+      "columns",
+      "ifNot",
+      "like"
+    ],
+    "comment": [
+      "comment"
+    ],
+    "addColumns": [
+      "columns",
+      "prefix"
+    ],
+    "alterColumns": [
+      "columns",
+      "colBuilder"
+    ],
+    "dropColumn": [],
+    "changeType": [],
+    "renameColumn": [
+      "from",
+      "to"
+    ],
+    "dropFKRefs": [
+      "runner",
+      "refs"
+    ],
+    "createFKRefs": [
+      "runner",
+      "refs"
+    ],
+    "index": [
+      "columns",
+      "indexName",
+      "options"
+    ],
+    "primary": [
+      "columns",
+      "constraintName"
+    ],
+    "unique": [
+      "columns",
+      "indexName"
+    ],
+    "dropIndex": [
+      "columns",
+      "indexName"
+    ],
+    "dropForeign": [
+      "columns",
+      "indexName"
+    ],
+    "dropPrimary": [
+      "constraintName"
+    ],
+    "dropUnique": [
+      "column",
+      "indexName"
+    ]
+  },
+  "ViewCompiler_MSSQL": {
+    "constructor": [
+      "client",
+      "viewCompiler"
+    ],
+    "createQuery": [
+      "columns",
+      "selectQuery",
+      "materialized",
+      "replace"
+    ],
+    "renameColumn": [
+      "from",
+      "to"
+    ],
+    "createOrReplace": []
+  },
+  "Transaction_MSSQL": {
+    "begin": [
+      "conn"
+    ],
+    "savepoint": [
+      "conn"
+    ],
+    "commit": [
+      "conn",
+      "value"
+    ],
+    "release": [
+      "conn",
+      "value"
+    ],
+    "rollback": [
+      "conn",
+      "error"
+    ],
+    "rollbackTo": [
+      "conn",
+      "error"
+    ]
+  },
+  "nameToIsolationLevelEnum": [
+    "level"
+  ],
+  "Client_MySQL": {
+    "_driver": [],
+    "queryBuilder": [],
+    "queryCompiler": [
+      "builder",
+      "formatter"
+    ],
+    "schemaCompiler": [],
+    "tableCompiler": [],
+    "viewCompiler": [],
+    "viewBuilder": [],
+    "columnCompiler": [],
+    "transaction": [],
+    "wrapIdentifierImpl": [
+      "value"
+    ],
+    "acquireRawConnection": [],
+    "destroyRawConnection": [
+      "connection"
+    ],
+    "validateConnection": [
+      "connection"
+    ],
+    "_stream": [
+      "connection",
+      "obj",
+      "stream",
+      "options"
+    ],
+    "_query": [
+      "connection",
+      "obj"
+    ],
+    "processResponse": [
+      "obj",
+      "runner"
+    ],
+    "cancelQuery": [
+      "connectionToKill"
+    ],
+    "_wrappedCancelQueryCall": [
+      "conn",
+      "connectionToKill"
+    ]
+  },
+  "isPlainObjectOrArray": [
+    "value"
+  ],
+  "QueryCompiler_MySQL": {
+    "constructor": [
+      "client",
+      "builder",
+      "formatter"
+    ],
+    "del": [],
+    "insert": [],
+    "upsert": [],
+    "_merge": [
+      "updates",
+      "insert"
+    ],
+    "update": [],
+    "forUpdate": [],
+    "forShare": [],
+    "skipLocked": [],
+    "noWait": [],
+    "columnInfo": [],
+    "limit": [],
+    "whereBasic": [
+      "statement"
+    ],
+    "whereRaw": [
+      "statement"
+    ],
+    "whereLike": [
+      "statement"
+    ],
+    "whereILike": [
+      "statement"
+    ],
+    "jsonExtract": [
+      "params"
+    ],
+    "jsonSet": [
+      "params"
+    ],
+    "jsonInsert": [
+      "params"
+    ],
+    "jsonRemove": [
+      "params"
+    ],
+    "whereJsonObject": [
+      "statement"
+    ],
+    "whereJsonPath": [
+      "statement"
+    ],
+    "whereJsonSupersetOf": [
+      "statement"
+    ],
+    "whereJsonSubsetOf": [
+      "statement"
+    ],
+    "onJsonPathEquals": [
+      "clause"
+    ]
+  },
+  "ColumnCompiler_MySQL": {
+    "constructor": [
+      "client",
+      "tableCompiler",
+      "columnBuilder"
+    ],
+    "double": [
+      "precision",
+      "scale"
+    ],
+    "integer": [
+      "length"
+    ],
+    "tinyint": [
+      "length"
+    ],
+    "text": [
+      "column"
+    ],
+    "mediumtext": [],
+    "longtext": [],
+    "enu": [
+      "allowed"
+    ],
+    "datetime": [
+      "precision"
+    ],
+    "timestamp": [
+      "precision"
+    ],
+    "time": [
+      "precision"
+    ],
+    "bit": [
+      "length"
+    ],
+    "binary": [
+      "length"
+    ],
+    "json": [],
+    "jsonb": [],
+    "defaultTo": [
+      "value"
+    ],
+    "unsigned": [],
+    "comment": [
+      "comment"
+    ],
+    "first": [],
+    "after": [
+      "column"
+    ],
+    "collate": [
+      "collation"
+    ],
+    "checkRegex": [
+      "regex",
+      "constraintName"
+    ],
+    "increments": [
+      "param"
+    ],
+    "bigincrements": [
+      "param"
+    ]
+  },
+  "SchemaCompiler_MySQL": {
+    "constructor": [
+      "client",
+      "builder"
+    ],
+    "renameTable": [
+      "tableName",
+      "to"
+    ],
+    "renameView": [
+      "from",
+      "to"
+    ],
+    "hasTable": [
+      "tableName"
+    ],
+    "hasColumn": [
+      "tableName",
+      "column"
+    ]
+  },
+  "TableCompiler_MySQL": {
+    "constructor": [
+      "client",
+      "tableBuilder"
+    ],
+    "createQuery": [
+      "columns",
+      "ifNot",
+      "like"
+    ],
+    "comment": [
+      "comment"
+    ],
+    "changeType": [],
+    "renameColumn": [
+      "from",
+      "to"
+    ],
+    "primaryKeys": [],
+    "getFKRefs": [
+      "runner"
+    ],
+    "dropFKRefs": [
+      "runner",
+      "refs"
+    ],
+    "createFKRefs": [
+      "runner",
+      "refs"
+    ],
+    "index": [
+      "columns",
+      "indexName",
+      "options"
+    ],
+    "primary": [
+      "columns",
+      "constraintName"
+    ],
+    "unique": [
+      "columns",
+      "indexName"
+    ],
+    "dropIndex": [
+      "columns",
+      "indexName"
+    ],
+    "dropForeign": [
+      "columns",
+      "indexName"
+    ],
+    "dropPrimary": [],
+    "dropUnique": [
+      "column",
+      "indexName"
+    ]
+  },
+  "ViewBuilder_MySQL": {
+    "constructor": [],
+    "checkOption": [],
+    "localCheckOption": [],
+    "cascadedCheckOption": []
+  },
+  "ViewCompiler_MySQL": {
+    "constructor": [
+      "client",
+      "viewCompiler"
+    ],
+    "createOrReplace": []
+  },
+  "Transaction_MySQL": {
+    "query": [
+      "conn",
+      "sql",
+      "status",
+      "value"
+    ]
+  },
+  "Client_MySQL2": {
+    "transaction": [],
+    "_driver": [],
+    "initializeDriver": [],
+    "validateConnection": [
+      "connection"
+    ]
+  },
+  "Transaction_MySQL2": {
+    "query": [
+      "conn",
+      "sql",
+      "status",
+      "value"
+    ]
+  },
+  "Client_Oracle": {
+    "schemaCompiler": [],
+    "columnBuilder": [],
+    "columnCompiler": [],
+    "tableCompiler": [],
+    "database": [],
+    "positionBindings": [
+      "sql"
+    ],
+    "_stream": [
+      "connection",
+      "obj",
+      "stream",
+      "options"
+    ],
+    "alias": [
+      "first",
+      "second"
+    ],
+    "parameter": [
+      "value",
+      "builder",
+      "formatter"
+    ]
+  },
+  "QueryCompiler_Oracle": {
+    "constructor": [
+      "client",
+      "builder",
+      "formatter"
+    ],
+    "insert": [],
+    "update": [],
+    "truncate": [],
+    "forUpdate": [],
+    "forShare": [],
+    "columnInfo": [],
+    "select": [],
+    "aggregate": [
+      "stmt"
+    ],
+    "_addReturningToSqlAndConvert": [
+      "sql",
+      "returning",
+      "tableName"
+    ],
+    "_surroundQueryWithLimitAndOffset": [
+      "query"
+    ]
+  },
+  "createAutoIncrementTriggerAndSequence": [
+    "columnCompiler"
+  ],
+  "Trigger": {
+    "constructor": [
+      "oracleVersion"
+    ],
+    "renameColumnTrigger": [
+      "logger",
+      "tableName",
+      "columnName",
+      "to"
+    ],
+    "createAutoIncrementTrigger": [
+      "logger",
+      "tableName",
+      "schemaName"
+    ],
+    "renameTableAndAutoIncrementTrigger": [
+      "logger",
+      "tableName",
+      "to"
+    ]
+  },
+  "ColumnBuilder_Oracle": {
+    "constructor": [],
+    "checkIn": []
+  },
+  "ColumnCompiler_Oracle": {
+    "constructor": [],
+    "increments": [
+      "param"
+    ],
+    "bigincrements": [
+      "param"
+    ],
+    "floating": [
+      "precision"
+    ],
+    "double": [
+      "precision",
+      "scale"
+    ],
+    "decimal": [
+      "precision",
+      "scale"
+    ],
+    "integer": [
+      "length"
+    ],
+    "enu": [
+      "allowed"
+    ],
+    "datetime": [
+      "without"
+    ],
+    "timestamp": [
+      "without"
+    ],
+    "bool": [],
+    "varchar": [
+      "length"
+    ],
+    "comment": [
+      "comment"
+    ],
+    "checkIn": [
+      "value"
+    ]
+  },
+  "SchemaCompiler_Oracle": {
+    "constructor": [],
+    "renameTable": [
+      "tableName",
+      "to"
+    ],
+    "hasTable": [
+      "tableName"
+    ],
+    "hasColumn": [
+      "tableName",
+      "column"
+    ],
+    "dropSequenceIfExists": [
+      "sequenceName"
+    ],
+    "_dropRelatedSequenceIfExists": [
+      "tableName"
+    ],
+    "dropTable": [
+      "tableName"
+    ],
+    "dropTableIfExists": [
+      "tableName"
+    ],
+    "dropViewIfExists": [
+      "viewName"
+    ],
+    "dropObject": [
+      "objectName",
+      "type"
+    ],
+    "refreshMaterializedView": [
+      "viewName"
+    ],
+    "dropMaterializedView": [
+      "viewName"
+    ],
+    "dropMaterializedViewIfExists": [
+      "viewName"
+    ]
+  },
+  "TableCompiler_Oracle": {
+    "constructor": [],
+    "addColumns": [
+      "columns",
+      "prefix"
+    ],
+    "renameColumn": [
+      "from",
+      "to"
+    ],
+    "compileAdd": [
+      "builder"
+    ],
+    "createQuery": [
+      "columns",
+      "ifNot",
+      "like"
+    ],
+    "comment": [
+      "comment"
+    ],
+    "dropColumn": [],
+    "_indexCommand": [
+      "type",
+      "tableName",
+      "columns"
+    ],
+    "primary": [
+      "columns",
+      "constraintName"
+    ],
+    "dropPrimary": [
+      "constraintName"
+    ],
+    "index": [
+      "columns",
+      "indexName"
+    ],
+    "dropIndex": [
+      "columns",
+      "indexName"
+    ],
+    "unique": [
+      "columns",
+      "indexName"
+    ],
+    "dropUnique": [
+      "columns",
+      "indexName"
+    ],
+    "dropForeign": [
+      "columns",
+      "indexName"
+    ]
+  },
+  "NameHelper": {
+    "constructor": [
+      "oracleVersion"
+    ],
+    "generateCombinedName": [
+      "logger",
+      "postfix",
+      "name",
+      "subNames"
+    ]
+  },
+  "wrapSqlWithCatch": [
+    "sql",
+    "errorNumberToCatch"
+  ],
+  "ReturningHelper": [
+    "columnName"
+  ],
+  "isConnectionError": [
+    "err"
+  ],
+  "Client_Oracledb": {
+    "constructor": [
+      "config"
+    ],
+    "_driver": [],
+    "queryCompiler": [
+      "builder",
+      "formatter"
+    ],
+    "tableCompiler": [],
+    "columnCompiler": [],
+    "viewBuilder": [],
+    "viewCompiler": [],
+    "formatter": [
+      "builder"
+    ],
+    "transaction": [],
+    "prepBindings": [
+      "bindings"
+    ],
+    "parameter": [
+      "value",
+      "builder",
+      "formatter"
+    ],
+    "acquireRawConnection": [],
+    "destroyRawConnection": [
+      "connection"
+    ],
+    "acquireConnection": [],
+    "checkVersion": [
+      "connection"
+    ],
+    "_query": [
+      "connection",
+      "obj"
+    ],
+    "processResponse": [
+      "obj",
+      "runner"
+    ],
+    "processPassedConnection": [
+      "connection"
+    ]
+  },
+  "updateOutBinds": [
+    "i"
+  ],
+  "parseVersion": [
+    "versionString"
+  ],
+  "resolveConnectString": [
+    "connectionSettings"
+  ],
+  "Oracledb_Compiler": {
+    "insert": [],
+    "with": [],
+    "_addReturningToSqlAndConvert": [
+      "sql",
+      "outBinding",
+      "tableName",
+      "returning"
+    ],
+    "_prepOutbindings": [
+      "paramValues",
+      "paramReturning"
+    ],
+    "_groupOrder": [
+      "item",
+      "type"
+    ],
+    "update": [],
+    "_jsonPathWrap": [
+      "extraction"
+    ],
+    "jsonExtract": [
+      "params"
+    ],
+    "jsonSet": [
+      "params"
+    ],
+    "jsonInsert": [
+      "params"
+    ],
+    "jsonRemove": [
+      "params"
+    ],
+    "whereJsonPath": [
+      "statement"
+    ],
+    "whereJsonSupersetOf": [
+      "statement"
+    ],
+    "whereJsonSubsetOf": [
+      "statement"
+    ],
+    "onJsonPathEquals": [
+      "clause"
+    ]
+  },
+  "ColumnCompiler_Oracledb": {
+    "constructor": [],
+    "datetime": [
+      "withoutTz"
+    ],
+    "timestamp": [
+      "withoutTz"
+    ],
+    "checkRegex": [
+      "regex",
+      "constraintName"
+    ],
+    "json": [],
+    "jsonb": [],
+    "checkJson": [
+      "column"
+    ]
+  },
+  "TableCompiler_Oracledb": {
+    "constructor": [
+      "client",
+      "tableBuilder"
+    ],
+    "_setNullableState": [
+      "column",
+      "isNullable"
+    ]
+  },
+  "ViewBuilder_Oracledb": {
+    "constructor": [],
+    "checkOption": []
+  },
+  "ViewCompiler_Oracledb": {
+    "constructor": [
+      "client",
+      "viewCompiler"
+    ],
+    "createOrReplace": [],
+    "createMaterializedView": []
+  },
+  "BlobHelper": [
+    "columnName",
+    "value"
+  ],
+  "readStream": [
+    "stream",
+    "type"
+  ],
+  "lobProcessing": [
+    "stream"
+  ],
+  "monkeyPatchConnection": [
+    "connection",
+    "client"
+  ],
+  "fetchRowsFromRS": [
+    "connection",
+    "resultSet",
+    "numRows"
+  ],
+  "closeResultSet": [],
+  "Client_PgNative": {
+    "constructor": [
+      "param"
+    ],
+    "_driver": [],
+    "_stream": [
+      "connection",
+      "obj",
+      "stream",
+      "options"
+    ],
+    "cancelQuery": [
+      "connectionToKill"
+    ],
+    "_wrappedCancelQueryCall": [
+      "emptyConnection",
+      "connectionToKill"
+    ]
+  },
+  "Transaction_PG": {
+    "begin": [
+      "conn"
+    ]
+  },
+  "Client_PG": {
+    "constructor": [
+      "config"
+    ],
+    "transaction": [],
+    "queryBuilder": [],
+    "queryCompiler": [
+      "builder",
+      "formatter"
+    ],
+    "columnCompiler": [],
+    "schemaCompiler": [],
+    "tableCompiler": [],
+    "viewCompiler": [],
+    "viewBuilder": [],
+    "_driver": [],
+    "wrapIdentifierImpl": [
+      "value"
+    ],
+    "_acquireOnlyConnection": [],
+    "acquireRawConnection": [],
+    "destroyRawConnection": [
+      "connection"
+    ],
+    "checkVersion": [
+      "connection"
+    ],
+    "_parseVersion": [
+      "versionString"
+    ],
+    "positionBindings": [
+      "sql"
+    ],
+    "setSchemaSearchPath": [
+      "connection",
+      "searchPath"
+    ],
+    "_stream": [
+      "connection",
+      "obj",
+      "stream",
+      "options"
+    ],
+    "_query": [
+      "connection",
+      "obj"
+    ],
+    "processResponse": [
+      "obj",
+      "runner"
+    ],
+    "cancelQuery": [
+      "connectionToKill"
+    ],
+    "_wrappedCancelQueryCall": [
+      "conn",
+      "connectionToKill"
+    ],
+    "toPathForJson": [
+      "jsonPath"
+    ]
+  },
+  "arrayString": [
+    "arr",
+    "esc"
+  ],
+  "QueryCompiler_PG": {
+    "constructor": [
+      "client",
+      "builder",
+      "formatter"
+    ],
+    "truncate": [],
+    "insert": [],
+    "update": [],
+    "using": [],
+    "del": [],
+    "aggregate": [
+      "stmt"
+    ],
+    "_returning": [
+      "value"
+    ],
+    "_updateFrom": [
+      "name"
+    ],
+    "_ignore": [
+      "columns"
+    ],
+    "_merge": [
+      "updates",
+      "columns",
+      "insert"
+    ],
+    "_tableNames": [
+      "tables"
+    ],
+    "_lockingClause": [
+      "lockMode"
+    ],
+    "_groupOrder": [
+      "item",
+      "type"
+    ],
+    "forUpdate": [],
+    "forShare": [],
+    "forNoKeyUpdate": [],
+    "forKeyShare": [],
+    "skipLocked": [],
+    "noWait": [],
+    "columnInfo": [],
+    "_buildColumnInfoQuery": [
+      "schema",
+      "sql",
+      "bindings",
+      "column"
+    ],
+    "distinctOn": [
+      "value"
+    ],
+    "jsonExtract": [
+      "params"
+    ],
+    "jsonSet": [
+      "params"
+    ],
+    "jsonInsert": [
+      "params"
+    ],
+    "jsonRemove": [
+      "params"
+    ],
+    "whereJsonPath": [
+      "statement"
+    ],
+    "whereJsonSupersetOf": [
+      "statement"
+    ],
+    "whereJsonSubsetOf": [
+      "statement"
+    ],
+    "onJsonPathEquals": [
+      "clause"
+    ]
+  },
+  "ColumnCompiler_PG": {
+    "constructor": [
+      "client",
+      "tableCompiler",
+      "columnBuilder"
+    ],
+    "bit": [
+      "column"
+    ],
+    "enu": [
+      "allowed",
+      "options"
+    ],
+    "decimal": [
+      "precision",
+      "scale"
+    ],
+    "json": [
+      "jsonb"
+    ],
+    "jsonb": [],
+    "checkRegex": [
+      "regex",
+      "constraintName"
+    ],
+    "datetime": [
+      "param",
+      "precision"
+    ],
+    "timestamp": [
+      "param",
+      "precision"
+    ],
+    "comment": [
+      "comment"
+    ],
+    "increments": [
+      "param"
+    ],
+    "bigincrements": [
+      "param"
+    ],
+    "uuid": [
+      "param"
+    ]
+  },
+  "jsonColumn": [
+    "client",
+    "jsonb"
+  ],
+  "SchemaCompiler_PG": {
+    "constructor": [
+      "client",
+      "builder"
+    ],
+    "hasTable": [
+      "tableName"
+    ],
+    "hasColumn": [
+      "tableName",
+      "columnName"
+    ],
+    "qualifiedTableName": [
+      "tableName"
+    ],
+    "renameTable": [
+      "from",
+      "to"
+    ],
+    "createSchema": [
+      "schemaName"
+    ],
+    "createSchemaIfNotExists": [
+      "schemaName"
+    ],
+    "dropSchema": [
+      "schemaName",
+      "param"
+    ],
+    "dropSchemaIfExists": [
+      "schemaName",
+      "param"
+    ],
+    "dropExtension": [
+      "extensionName"
+    ],
+    "dropExtensionIfExists": [
+      "extensionName"
+    ],
+    "createExtension": [
+      "extensionName"
+    ],
+    "createExtensionIfNotExists": [
+      "extensionName"
+    ],
+    "renameView": [
+      "from",
+      "to"
+    ],
+    "refreshMaterializedView": [
+      "viewName",
+      "param"
+    ],
+    "dropMaterializedView": [
+      "viewName"
+    ],
+    "dropMaterializedViewIfExists": [
+      "viewName"
+    ]
+  },
+  "TableCompiler_PG": {
+    "constructor": [
+      "client",
+      "tableBuilder"
+    ],
+    "renameColumn": [
+      "from",
+      "to"
+    ],
+    "_setNullableState": [
+      "column",
+      "isNullable"
+    ],
+    "compileAdd": [
+      "builder"
+    ],
+    "createQuery": [
+      "columns",
+      "ifNot",
+      "like"
+    ],
+    "primaryKeys": [],
+    "addColumns": [
+      "columns",
+      "prefix",
+      "colCompilers"
+    ],
+    "_addColumn": [
+      "col"
+    ],
+    "comment": [
+      "comment"
+    ],
+    "primary": [
+      "columns",
+      "constraintName"
+    ],
+    "unique": [
+      "columns",
+      "indexName"
+    ],
+    "index": [
+      "columns",
+      "indexName",
+      "options"
+    ],
+    "dropPrimary": [
+      "constraintName"
+    ],
+    "dropIndex": [
+      "columns",
+      "indexName"
+    ],
+    "dropUnique": [
+      "columns",
+      "indexName"
+    ],
+    "dropForeign": [
+      "columns",
+      "indexName"
+    ]
+  },
+  "ViewBuilder_PG": {
+    "constructor": [],
+    "checkOption": [],
+    "localCheckOption": [],
+    "cascadedCheckOption": []
+  },
+  "ViewCompiler_PG": {
+    "constructor": [
+      "client",
+      "viewCompiler"
+    ],
+    "renameColumn": [
+      "from",
+      "to"
+    ],
+    "defaultTo": [
+      "column",
+      "defaultValue"
+    ],
+    "createOrReplace": [],
+    "createMaterializedView": []
+  },
+  "Client_Redshift": {
+    "transaction": [],
+    "queryCompiler": [
+      "builder",
+      "formatter"
+    ],
+    "columnBuilder": [],
+    "columnCompiler": [],
+    "tableCompiler": [],
+    "schemaCompiler": [],
+    "viewCompiler": [],
+    "_driver": [],
+    "processResponse": [
+      "obj",
+      "runner"
+    ],
+    "toPathForJson": [
+      "jsonPath",
+      "builder",
+      "bindingsHolder"
+    ]
+  },
+  "QueryCompiler_Redshift": {
+    "truncate": [],
+    "insert": [],
+    "update": [],
+    "del": [],
+    "_slightReturn": [],
+    "forUpdate": [],
+    "forShare": [],
+    "forNoKeyUpdate": [],
+    "forKeyShare": [],
+    "columnInfo": [],
+    "jsonExtract": [
+      "params"
+    ],
+    "jsonSet": [
+      "params"
+    ],
+    "jsonInsert": [
+      "params"
+    ],
+    "jsonRemove": [
+      "params"
+    ],
+    "whereJsonPath": [
+      "statement"
+    ],
+    "whereJsonSupersetOf": [
+      "statement"
+    ],
+    "whereJsonSubsetOf": [
+      "statement"
+    ],
+    "onJsonPathEquals": [
+      "clause"
+    ]
+  },
+  "ColumnBuilder_Redshift": {
+    "constructor": [],
+    "primary": [],
+    "index": []
+  },
+  "ColumnCompiler_Redshift": {
+    "constructor": [],
+    "bit": [
+      "column"
+    ],
+    "datetime": [
+      "without"
+    ],
+    "timestamp": [
+      "without"
+    ],
+    "comment": [
+      "comment"
+    ]
+  },
+  "SchemaCompiler_Redshift": {
+    "constructor": []
+  },
+  "TableCompiler_Redshift": {
+    "constructor": [],
+    "index": [
+      "columns",
+      "indexName",
+      "options"
+    ],
+    "dropIndex": [
+      "columns",
+      "indexName"
+    ],
+    "createQuery": [
+      "columns",
+      "ifNot",
+      "like"
+    ],
+    "primary": [
+      "columns",
+      "constraintName"
+    ],
+    "addColumns": [
+      "columns",
+      "prefix",
+      "colCompilers"
+    ]
+  },
+  "ViewCompiler_Redshift": {
+    "constructor": [
+      "client",
+      "viewCompiler"
+    ]
+  },
+  "Transaction_Sqlite": {
+    "begin": [
+      "conn"
+    ]
+  },
+  "Client_SQLite3": {
+    "constructor": [
+      "config"
+    ],
+    "_driver": [],
+    "schemaCompiler": [],
+    "transaction": [],
+    "queryCompiler": [
+      "builder",
+      "formatter"
+    ],
+    "queryBuilder": [],
+    "viewCompiler": [
+      "builder",
+      "formatter"
+    ],
+    "columnCompiler": [],
+    "tableCompiler": [],
+    "ddl": [
+      "compiler",
+      "pragma",
+      "connection"
+    ],
+    "wrapIdentifierImpl": [
+      "value"
+    ],
+    "acquireRawConnection": [],
+    "destroyRawConnection": [
+      "connection"
+    ],
+    "_query": [
+      "connection",
+      "obj"
+    ],
+    "_stream": [
+      "connection",
+      "obj",
+      "stream"
+    ],
+    "processResponse": [
+      "obj",
+      "runner"
+    ],
+    "poolDefaults": [],
+    "formatter": [
+      "builder"
+    ],
+    "values": [
+      "values",
+      "builder",
+      "formatter"
+    ]
+  },
+  "QueryCompiler_SQLite3": {
+    "constructor": [
+      "client",
+      "builder",
+      "formatter"
+    ],
+    "insert": [],
+    "update": [],
+    "_ignore": [
+      "columns"
+    ],
+    "_merge": [
+      "updates",
+      "columns",
+      "insert"
+    ],
+    "_returning": [
+      "value"
+    ],
+    "truncate": [],
+    "columnInfo": [],
+    "limit": [],
+    "jsonExtract": [
+      "params"
+    ],
+    "jsonSet": [
+      "params"
+    ],
+    "jsonInsert": [
+      "params"
+    ],
+    "jsonRemove": [
+      "params"
+    ],
+    "whereJsonPath": [
+      "statement"
+    ],
+    "whereJsonSupersetOf": [
+      "statement"
+    ],
+    "whereJsonSubsetOf": [
+      "statement"
+    ],
+    "onJsonPathEquals": [
+      "clause"
+    ]
+  },
+  "SQLite3_DDL": {
+    "constructor": [
+      "client",
+      "tableCompiler",
+      "pragma",
+      "connection"
+    ],
+    "tableName": [],
+    "getTableSql": [],
+    "isForeignCheckEnabled": [],
+    "setForeignCheck": [
+      "enable"
+    ],
+    "renameTable": [
+      "trx"
+    ],
+    "dropOriginal": [
+      "trx"
+    ],
+    "copyData": [
+      "trx",
+      "columns"
+    ],
+    "alterColumn": [
+      "columns"
+    ],
+    "dropColumn": [
+      "columns"
+    ],
+    "dropForeign": [
+      "columns",
+      "foreignKeyName"
+    ],
+    "dropPrimary": [
+      "constraintName"
+    ],
+    "primary": [
+      "columns",
+      "constraintName"
+    ],
+    "foreign": [
+      "foreignInfo"
+    ],
+    "setNullable": [
+      "column",
+      "isNullable"
+    ],
+    "alter": [
+      "newSql",
+      "createIndices",
+      "columns"
+    ],
+    "generateAlterCommands": [
+      "newSql",
+      "createIndices",
+      "columns"
+    ]
+  },
+  "compileCreateTable": [
+    "ast",
+    "param"
+  ],
+  "compileCreateIndex": [
+    "ast",
+    "param"
+  ],
+  "createTable": [
+    "ctx"
+  ],
+  "temporary": [
+    "ctx"
+  ],
+  "rowid": [
+    "ctx"
+  ],
+  "columnDefinitionList": [
+    "ctx"
+  ],
+  "columnDefinition": [
+    "ctx"
+  ],
+  "typeName": [
+    "ctx"
+  ],
+  "columnConstraintList": [
+    "ctx"
+  ],
+  "primaryColumnConstraint": [
+    "ctx"
+  ],
+  "autoincrement": [
+    "ctx"
+  ],
+  "notnullColumnConstraint": [
+    "ctx"
+  ],
+  "nullColumnConstraint": [
+    "ctx"
+  ],
+  "uniqueColumnConstraint": [
+    "ctx"
+  ],
+  "checkColumnConstraint": [
+    "ctx"
+  ],
+  "defaultColumnConstraint": [
+    "ctx"
+  ],
+  "collateColumnConstraint": [
+    "ctx"
+  ],
+  "referencesColumnConstraint": [
+    "ctx"
+  ],
+  "asColumnConstraint": [
+    "ctx"
+  ],
+  "tableConstraintList": [
+    "ctx"
+  ],
+  "tableConstraint": [
+    "ctx"
+  ],
+  "primaryTableConstraint": [
+    "ctx"
+  ],
+  "uniqueTableConstraint": [
+    "ctx"
+  ],
+  "conflictClause": [
+    "ctx"
+  ],
+  "checkTableConstraint": [
+    "ctx"
+  ],
+  "foreignTableConstraint": [
+    "ctx"
+  ],
+  "foreignKeyClause": [
+    "ctx"
+  ],
+  "columnNameListOptional": [
+    "ctx"
+  ],
+  "columnNameList": [
+    "ctx"
+  ],
+  "deleteUpdateMatchList": [
+    "ast",
+    "wrap"
+  ],
+  "deleteReference": [
+    "ctx"
+  ],
+  "updateReference": [
+    "ctx"
+  ],
+  "matchReference": [
+    "ctx"
+  ],
+  "deferrable": [
+    "ctx"
+  ],
+  "constraintName": [
+    "ctx"
+  ],
+  "createIndex": [
+    "ctx"
+  ],
+  "unique": [
+    "ctx"
+  ],
+  "exists": [
+    "ctx"
+  ],
+  "schema": [
+    "ctx"
+  ],
+  "index": [
+    "ctx"
+  ],
+  "table": [
+    "ctx"
+  ],
+  "where": [
+    "ctx"
+  ],
+  "indexedColumnList": [
+    "ctx"
+  ],
+  "indexedColumn": [
+    "ctx"
+  ],
+  "indexedColumnExpression": [
+    "ctx"
+  ],
+  "collation": [
+    "ctx"
+  ],
+  "order": [
+    "ctx"
+  ],
+  "indexedExpression": [
+    "ctx"
+  ],
+  "expression": [
+    "ctx"
+  ],
+  "identifier": [
+    "ctx"
+  ],
+  "s": [
+    "sequence",
+    "param"
+  ],
+  "a": [
+    "alternative",
+    "param"
+  ],
+  "m": [
+    "many",
+    "param"
+  ],
+  "o": [
+    "optional",
+    "param"
+  ],
+  "l": [
+    "lookahead",
+    "param"
+  ],
+  "n": [
+    "negative",
+    "param"
+  ],
+  "t": [
+    "token",
+    "param"
+  ],
+  "e": [
+    "param"
+  ],
+  "f": [
+    "param"
+  ],
+  "parseCreateTable": [
+    "sql"
+  ],
+  "parseCreateIndex": [
+    "sql"
+  ],
+  "columnConstraint": [
+    "ctx"
+  ],
+  "onAction": [
+    "ctx"
+  ],
+  "literalValue": [
+    "ctx"
+  ],
+  "signedNumber": [
+    "ctx"
+  ],
+  "copyData": [
+    "sourceTable",
+    "targetTable",
+    "columns"
+  ],
+  "dropOriginal": [
+    "tableName"
+  ],
+  "renameTable": [
+    "tableName",
+    "alteredName"
+  ],
+  "getTableSql": [
+    "tableName"
+  ],
+  "isForeignCheckEnabled": [],
+  "setForeignCheck": [
+    "enable"
+  ],
+  "executeForeignCheck": [],
+  "tokenize": [
+    "text",
+    "tokens"
+  ],
+  "isEqualId": [
+    "first",
+    "second"
+  ],
+  "includesId": [
+    "list",
+    "id"
+  ],
+  "ColumnCompiler_SQLite3": {
+    "constructor": [],
+    "enu": [
+      "allowed"
+    ],
+    "_pushAlterCheckQuery": [
+      "checkPredicate",
+      "constraintName"
+    ],
+    "checkRegex": [
+      "regexes",
+      "constraintName"
+    ]
+  },
+  "SchemaCompiler_SQLite3": {
+    "constructor": [
+      "client",
+      "builder"
+    ],
+    "hasTable": [
+      "tableName"
+    ],
+    "hasColumn": [
+      "tableName",
+      "column"
+    ],
+    "renameTable": [
+      "from",
+      "to"
+    ],
+    "generateDdlCommands": []
+  },
+  "TableCompiler_SQLite3": {
+    "constructor": [],
+    "createQuery": [
+      "columns",
+      "ifNot",
+      "like"
+    ],
+    "addColumns": [
+      "columns",
+      "prefix",
+      "colCompilers"
+    ],
+    "dropUnique": [
+      "columns",
+      "indexName"
+    ],
+    "dropForeign": [
+      "columns",
+      "indexName"
+    ],
+    "dropPrimary": [
+      "constraintName"
+    ],
+    "dropIndex": [
+      "columns",
+      "indexName"
+    ],
+    "unique": [
+      "columns",
+      "indexName"
+    ],
+    "index": [
+      "columns",
+      "indexName",
+      "options"
+    ],
+    "primary": [
+      "columns",
+      "constraintName"
+    ],
+    "foreign": [
+      "foreignInfo"
+    ],
+    "primaryKeys": [],
+    "foreignKeys": [],
+    "createTableBlock": [],
+    "renameColumn": [
+      "from",
+      "to"
+    ],
+    "_setNullableState": [
+      "column",
+      "isNullable"
+    ],
+    "dropColumn": []
+  },
+  "ViewCompiler_SQLite3": {
+    "constructor": [
+      "client",
+      "viewCompiler"
+    ],
+    "createOrReplace": []
+  },
+  "batchInsert": [
+    "client",
+    "tableName",
+    "batch",
+    "param"
+  ],
+  "runInTransaction": [
+    "cb"
+  ],
+  "ensureConnectionCallback": [
+    "runner"
+  ],
+  "ensureConnectionStreamCallback": [
+    "runner",
+    "params"
+  ],
+  "debugQuery": [
+    "sql",
+    "txId"
+  ],
+  "formatQuery": [
+    "sql",
+    "bindings",
+    "timeZone",
+    "client"
+  ],
+  "enrichQueryObject": [
+    "connection",
+    "queryParam",
+    "client"
+  ],
+  "executeQuery": [
+    "connection",
+    "queryObject",
+    "client"
+  ],
+  "Runner": {
+    "constructor": [
+      "client",
+      "builder"
+    ],
+    "run": [],
+    "stream": [
+      "optionsOrHandler",
+      "handlerOrNil"
+    ],
+    "pipe": [
+      "writable",
+      "options"
+    ],
+    "query": [
+      "obj"
+    ],
+    "queryArray": [
+      "queries"
+    ],
+    "ensureConnection": [
+      "cb",
+      "cbParams"
+    ]
+  },
+  "cleanSourceStream": [],
+  "DEFAULT_CONFIG": [],
+  "Transaction": {
+    "constructor": [
+      "client",
+      "container",
+      "param",
+      "param"
+    ],
+    "isCompleted": [],
+    "begin": [
+      "conn"
+    ],
+    "savepoint": [
+      "conn"
+    ],
+    "commit": [
+      "conn",
+      "value"
+    ],
+    "release": [
+      "conn",
+      "value"
+    ],
+    "setIsolationLevel": [
+      "isolationLevel"
+    ],
+    "rollback": [
+      "conn",
+      "error"
+    ],
+    "rollbackTo": [
+      "conn",
+      "error"
+    ],
+    "query": [
+      "conn",
+      "sql",
+      "status",
+      "value"
+    ],
+    "debug": [
+      "enabled"
+    ],
+    "_evaluateContainer": [
+      "config",
+      "container"
+    ],
+    "acquireConnection": [
+      "config",
+      "cb"
+    ],
+    "then": [
+      "onResolve",
+      "onReject"
+    ],
+    "catch": [
+      "param"
+    ],
+    "asCallback": [
+      "cb"
+    ]
+  },
+  "makeTransactor": [
+    "trx",
+    "connection",
+    "trxClient"
+  ],
+  "makeTxClient": [
+    "trx",
+    "client",
+    "connection"
+  ],
+  "completedError": [
+    "trx",
+    "obj"
+  ],
+  "compileCallback": [
+    "callback",
+    "method",
+    "client",
+    "bindingsHolder"
+  ],
+  "wrapAsIdentifier": [
+    "value",
+    "builder",
+    "client"
+  ],
+  "formatDefault": [
+    "value",
+    "type",
+    "client"
+  ],
+  "replaceRawArrBindings": [
+    "raw",
+    "client"
+  ],
+  "replaceKeyBindings": [
+    "raw",
+    "client"
+  ],
+  "columnize": [
+    "target",
+    "builder",
+    "client",
+    "bindingHolder"
+  ],
+  "wrap": [
+    "identifier"
+  ],
+  "unwrapRaw": [
+    "value",
+    "isParameter",
+    "builder",
+    "client",
+    "bindingsHolder"
+  ],
+  "operator": [
+    "value",
+    "builder",
+    "client",
+    "bindingsHolder"
+  ],
+  "wrapString": [
+    "value",
+    "builder",
+    "client"
+  ],
+  "parseObject": [
+    "obj",
+    "builder",
+    "client",
+    "formatter"
+  ],
+  "outputQuery": [
+    "compiled",
+    "isParameter",
+    "builder",
+    "client"
+  ],
+  "rawOrFn": [
+    "value",
+    "method",
+    "builder",
+    "client",
+    "bindingHolder"
+  ],
+  "direction": [
+    "value",
+    "builder",
+    "client",
+    "bindingsHolder"
+  ],
+  "Formatter": {
+    "constructor": [
+      "client",
+      "builder"
+    ],
+    "columnize": [
+      "target"
+    ],
+    "wrap": [
+      "value",
+      "isParameter"
+    ]
+  },
+  "FunctionHelper": {
+    "constructor": [
+      "client"
+    ],
+    "now": [
+      "precision"
+    ],
+    "uuid": [],
+    "uuidToBin": [
+      "uuid",
+      "param"
+    ],
+    "binToUuid": [
+      "bin",
+      "param"
+    ]
+  },
+  "knex": [
+    "tableName",
+    "options"
+  ],
+  "resolveConfig": [
+    "config"
+  ],
+  "tryParse": [
+    "str"
+  ],
+  "connectionObject": [
+    "parsed"
+  ],
+  "makeKnex": [
+    "client"
+  ],
+  "initContext": [
+    "knexFn"
+  ],
+  "_copyEventListeners": [
+    "eventName",
+    "sourceKnex",
+    "targetKnex"
+  ],
+  "redefineProperties": [
+    "knex",
+    "client"
+  ],
+  "_addInternalListener": [
+    "knex",
+    "eventName",
+    "listener"
+  ],
+  "createQueryBuilder": [
+    "knexContext",
+    "tableName",
+    "options"
+  ],
+  "shallowCloneFunction": [
+    "originalFunction"
+  ],
+  "knexFnWrapper": [
+    "tableName",
+    "options"
+  ],
+  "Logger": {
+    "constructor": [
+      "param"
+    ],
+    "_log": [
+      "message",
+      "userFn",
+      "colorFn"
+    ],
+    "debug": [
+      "message"
+    ],
+    "warn": [
+      "message"
+    ],
+    "error": [
+      "message"
+    ],
+    "deprecate": [
+      "method",
+      "alternative"
+    ]
+  },
+  "resolveIsEnabledColors": [
+    "enableColorsParam"
+  ],
+  "AbstractMigrationsLoader": {
+    "constructor": [
+      "migrationDirectories",
+      "sortDirsSeparately",
+      "loadExtensions"
+    ],
+    "getFile": [
+      "migrationsInfo"
+    ]
+  },
+  "MigrationGenerator": {
+    "constructor": [
+      "migrationConfig",
+      "logger"
+    ],
+    "make": [
+      "name",
+      "config",
+      "logger"
+    ],
+    "_ensureFolder": [],
+    "_getStubPath": [],
+    "_getNewMigrationName": [
+      "name"
+    ],
+    "_getNewMigrationPath": [
+      "name"
+    ],
+    "_writeNewMigration": [
+      "name"
+    ],
+    "_absoluteConfigDirs": []
+  },
+  "LockError": {
+    "constructor": [
+      "msg"
+    ]
+  },
+  "Migrator": {
+    "constructor": [
+      "knex"
+    ],
+    "latest": [
+      "config"
+    ],
+    "up": [
+      "config"
+    ],
+    "rollback": [
+      "config",
+      "param"
+    ],
+    "down": [
+      "config"
+    ],
+    "status": [
+      "config"
+    ],
+    "currentVersion": [
+      "config"
+    ],
+    "list": [
+      "config"
+    ],
+    "forceFreeMigrationsLock": [
+      "config"
+    ],
+    "make": [
+      "name",
+      "config"
+    ],
+    "_disableProcessing": [],
+    "_lockMigrations": [
+      "trx"
+    ],
+    "_getLock": [
+      "trx"
+    ],
+    "_freeLock": [
+      "param"
+    ],
+    "_runBatch": [
+      "migrations",
+      "direction",
+      "trx"
+    ],
+    "_validateMigrationStructure": [
+      "migration"
+    ],
+    "_getLastBatch": [
+      "param"
+    ],
+    "_latestBatchNumber": [
+      "param"
+    ],
+    "_useTransaction": [
+      "migrationContent",
+      "allTransactionsDisabled"
+    ],
+    "_waterfallBatch": [
+      "batchNo",
+      "migrations",
+      "direction",
+      "trx"
+    ],
+    "_transaction": [
+      "knex",
+      "migrationContent",
+      "direction",
+      "name"
+    ]
+  },
+  "getLockTable": [],
+  "validateMigrationList": [
+    "migrationSource",
+    "migrations"
+  ],
+  "getMissingMigrations": [
+    "migrationSource",
+    "completed",
+    "all"
+  ],
+  "getNewMigrations": [
+    "migrationSource",
+    "all",
+    "completed"
+  ],
+  "checkPromise": [
+    "logger",
+    "migrationPromise",
+    "name",
+    "commitFn"
+  ],
+  "noSuchMethod": [],
+  "listAll": [
+    "migrationSource",
+    "loadExtensions"
+  ],
+  "listCompleted": [
+    "tableName",
+    "schemaName",
+    "trxOrKnex"
+  ],
+  "listAllAndCompleted": [
+    "config",
+    "trxOrKnex"
+  ],
+  "getMergedConfig": [
+    "config",
+    "currentConfig",
+    "param"
+  ],
+  "FsMigrations": {
+    "getMigrations": [
+      "loadExtensions"
+    ],
+    "getMigrationName": [
+      "migration"
+    ],
+    "getMigration": [
+      "migrationInfo"
+    ]
+  },
+  "filterMigrations": [
+    "migrationSource",
+    "migrations",
+    "loadExtensions"
+  ],
+  "ensureTable": [
+    "tableName",
+    "schemaName",
+    "trxOrKnex"
+  ],
+  "_createMigrationTable": [
+    "tableName",
+    "schemaName",
+    "trxOrKnex"
+  ],
+  "_createMigrationLockTable": [
+    "tableName",
+    "schemaName",
+    "trxOrKnex"
+  ],
+  "_insertLockRowIfNeeded": [
+    "tableName",
+    "schemaName",
+    "trxOrKnex"
+  ],
+  "getSchemaBuilder": [
+    "trxOrKnex",
+    "schemaName"
+  ],
+  "getTableName": [
+    "tableName",
+    "schemaName"
+  ],
+  "getTable": [
+    "trxOrKnex",
+    "tableName",
+    "schemaName"
+  ],
+  "getLockTableName": [
+    "tableName"
+  ],
+  "getLockTableNameWithSchema": [
+    "tableName",
+    "schemaName"
+  ],
+  "Seeder": {
+    "constructor": [
+      "knex"
+    ],
+    "setConfig": [
+      "config"
+    ],
+    "run": [
+      "config"
+    ],
+    "make": [
+      "name",
+      "config"
+    ]
+  },
+  "filterByLoadExtensions": [
+    "extensions"
+  ],
+  "FsSeeds": {
+    "_getConfigDirectories": [
+      "logger"
+    ],
+    "getSeeds": [
+      "config"
+    ],
+    "getSeed": [
+      "filepath"
+    ]
+  },
+  "existsSync": [
+    "path"
+  ],
+  "createTemp": [],
+  "ensureDirectoryExists": [
+    "dir"
+  ],
+  "getFilepathsInFolder": [
+    "dir",
+    "param"
+  ],
+  "jsSourceTemplate": [
+    "content",
+    "options"
+  ],
+  "jsFileTemplate": [
+    "filePath",
+    "options"
+  ],
+  "writeJsFileUsingTemplate": [
+    "targetFilePath",
+    "sourceFilePath",
+    "options",
+    "variables"
+  ],
+  "yyyymmddhhmmss": [],
+  "Analytic": {
+    "constructor": [
+      "method",
+      "schema",
+      "alias",
+      "orderBy",
+      "partitions"
+    ],
+    "partitionBy": [
+      "column",
+      "direction"
+    ],
+    "orderBy": [
+      "column",
+      "direction"
+    ]
+  },
+  "getClauseFromArguments": [
+    "compilerType",
+    "bool",
+    "first",
+    "operator",
+    "second"
+  ],
+  "JoinClause": {
+    "constructor": [
+      "table",
+      "type",
+      "schema"
+    ],
+    "or": [],
+    "on": [
+      "first"
+    ],
+    "orOn": [
+      "first",
+      "operator",
+      "second"
+    ],
+    "onJsonPathEquals": [
+      "columnFirst",
+      "jsonPathFirst",
+      "columnSecond",
+      "jsonPathSecond"
+    ],
+    "orOnJsonPathEquals": [
+      "columnFirst",
+      "jsonPathFirst",
+      "columnSecond",
+      "jsonPathSecond"
+    ],
+    "using": [
+      "column"
+    ],
+    "onVal": [
+      "first"
+    ],
+    "andOnVal": [],
+    "orOnVal": [],
+    "onBetween": [
+      "column",
+      "values"
+    ],
+    "onNotBetween": [
+      "column",
+      "values"
+    ],
+    "orOnBetween": [
+      "column",
+      "values"
+    ],
+    "orOnNotBetween": [
+      "column",
+      "values"
+    ],
+    "onIn": [
+      "column",
+      "values"
+    ],
+    "onNotIn": [
+      "column",
+      "values"
+    ],
+    "orOnIn": [
+      "column",
+      "values"
+    ],
+    "orOnNotIn": [
+      "column",
+      "values"
+    ],
+    "onNull": [
+      "column"
+    ],
+    "orOnNull": [
+      "callback"
+    ],
+    "onNotNull": [
+      "callback"
+    ],
+    "orOnNotNull": [
+      "callback"
+    ],
+    "onExists": [
+      "callback"
+    ],
+    "orOnExists": [
+      "callback"
+    ],
+    "onNotExists": [
+      "callback"
+    ],
+    "orOnNotExists": [
+      "callback"
+    ],
+    "type": [
+      "type"
+    ],
+    "_bool": [
+      "bool"
+    ],
+    "_not": [
+      "val"
+    ]
+  },
+  "Builder": {
+    "constructor": [
+      "client"
+    ],
+    "toString": [],
+    "toSQL": [
+      "method",
+      "tz"
+    ],
+    "clone": [],
+    "timeout": [
+      "ms",
+      "param"
+    ],
+    "isValidStatementArg": [
+      "statement"
+    ],
+    "_validateWithArgs": [
+      "alias",
+      "statementOrColumnList",
+      "nothingOrStatement",
+      "method"
+    ],
+    "with": [
+      "alias",
+      "statementOrColumnList",
+      "nothingOrStatement"
+    ],
+    "withMaterialized": [
+      "alias",
+      "statementOrColumnList",
+      "nothingOrStatement"
+    ],
+    "withNotMaterialized": [
+      "alias",
+      "statementOrColumnList",
+      "nothingOrStatement"
+    ],
+    "withWrapped": [
+      "alias",
+      "statementOrColumnList",
+      "nothingOrStatement",
+      "materialized"
+    ],
+    "withRecursive": [
+      "alias",
+      "statementOrColumnList",
+      "nothingOrStatement"
+    ],
+    "withRecursiveWrapped": [
+      "alias",
+      "statementOrColumnList",
+      "nothingOrStatement"
+    ],
+    "columns": [
+      "column"
+    ],
+    "comment": [
+      "txt"
+    ],
+    "as": [
+      "column"
+    ],
+    "hintComment": [
+      "hints"
+    ],
+    "withSchema": [
+      "schemaName"
+    ],
+    "table": [
+      "tableName",
+      "param"
+    ],
+    "distinct": [
+      "param"
+    ],
+    "distinctOn": [
+      "param"
+    ],
+    "join": [
+      "table",
+      "first",
+      "param"
+    ],
+    "using": [
+      "tables"
+    ],
+    "innerJoin": [
+      "param"
+    ],
+    "leftJoin": [
+      "param"
+    ],
+    "leftOuterJoin": [
+      "param"
+    ],
+    "rightJoin": [
+      "param"
+    ],
+    "rightOuterJoin": [
+      "param"
+    ],
+    "outerJoin": [
+      "param"
+    ],
+    "fullOuterJoin": [
+      "param"
+    ],
+    "crossJoin": [
+      "param"
+    ],
+    "joinRaw": [
+      "param"
+    ],
+    "or": [],
+    "not": [],
+    "where": [
+      "column",
+      "operator",
+      "value"
+    ],
+    "whereColumn": [
+      "param"
+    ],
+    "orWhere": [
+      "column",
+      "param"
+    ],
+    "orWhereColumn": [
+      "column",
+      "param"
+    ],
+    "whereNot": [
+      "column",
+      "param"
+    ],
+    "whereNotColumn": [
+      "param"
+    ],
+    "orWhereNot": [
+      "param"
+    ],
+    "orWhereNotColumn": [
+      "param"
+    ],
+    "_objectWhere": [
+      "obj"
+    ],
+    "whereRaw": [
+      "sql",
+      "bindings"
+    ],
+    "orWhereRaw": [
+      "sql",
+      "bindings"
+    ],
+    "whereWrapped": [
+      "callback"
+    ],
+    "whereExists": [
+      "callback"
+    ],
+    "orWhereExists": [
+      "callback"
+    ],
+    "whereNotExists": [
+      "callback"
+    ],
+    "orWhereNotExists": [
+      "callback"
+    ],
+    "whereIn": [
+      "column",
+      "values"
+    ],
+    "orWhereIn": [
+      "column",
+      "values"
+    ],
+    "whereNotIn": [
+      "column",
+      "values"
+    ],
+    "orWhereNotIn": [
+      "column",
+      "values"
+    ],
+    "whereNull": [
+      "column"
+    ],
+    "orWhereNull": [
+      "column"
+    ],
+    "whereNotNull": [
+      "column"
+    ],
+    "orWhereNotNull": [
+      "column"
+    ],
+    "whereBetween": [
+      "column",
+      "values"
+    ],
+    "whereNotBetween": [
+      "column",
+      "values"
+    ],
+    "orWhereBetween": [
+      "column",
+      "values"
+    ],
+    "orWhereNotBetween": [
+      "column",
+      "values"
+    ],
+    "_whereLike": [
+      "type",
+      "column",
+      "value"
+    ],
+    "whereLike": [
+      "column",
+      "value"
+    ],
+    "orWhereLike": [
+      "column",
+      "value"
+    ],
+    "whereILike": [
+      "column",
+      "value"
+    ],
+    "orWhereILike": [
+      "column",
+      "value"
+    ],
+    "groupBy": [
+      "item"
+    ],
+    "groupByRaw": [
+      "sql",
+      "bindings"
+    ],
+    "orderBy": [
+      "column",
+      "direction",
+      "param"
+    ],
+    "_orderByArray": [
+      "columnDefs"
+    ],
+    "orderByRaw": [
+      "sql",
+      "bindings"
+    ],
+    "_union": [
+      "clause",
+      "args"
+    ],
+    "union": [
+      "param"
+    ],
+    "unionAll": [
+      "param"
+    ],
+    "intersect": [
+      "param"
+    ],
+    "except": [
+      "param"
+    ],
+    "having": [
+      "column",
+      "operator",
+      "value"
+    ],
+    "orHaving": [
+      "column",
+      "param"
+    ],
+    "havingWrapped": [
+      "callback"
+    ],
+    "havingNull": [
+      "column"
+    ],
+    "orHavingNull": [
+      "callback"
+    ],
+    "havingNotNull": [
+      "callback"
+    ],
+    "orHavingNotNull": [
+      "callback"
+    ],
+    "havingExists": [
+      "callback"
+    ],
+    "orHavingExists": [
+      "callback"
+    ],
+    "havingNotExists": [
+      "callback"
+    ],
+    "orHavingNotExists": [
+      "callback"
+    ],
+    "havingBetween": [
+      "column",
+      "values"
+    ],
+    "orHavingBetween": [
+      "column",
+      "values"
+    ],
+    "havingNotBetween": [
+      "column",
+      "values"
+    ],
+    "orHavingNotBetween": [
+      "column",
+      "values"
+    ],
+    "havingIn": [
+      "column",
+      "values"
+    ],
+    "orHavingIn": [
+      "column",
+      "values"
+    ],
+    "havingNotIn": [
+      "column",
+      "values"
+    ],
+    "orHavingNotIn": [
+      "column",
+      "values"
+    ],
+    "havingRaw": [
+      "sql",
+      "bindings"
+    ],
+    "orHavingRaw": [
+      "sql",
+      "bindings"
+    ],
+    "_setSkipBinding": [
+      "attribute",
+      "options"
+    ],
+    "offset": [
+      "value",
+      "options"
+    ],
+    "limit": [
+      "value",
+      "options"
+    ],
+    "count": [
+      "column",
+      "options"
+    ],
+    "min": [
+      "column",
+      "options"
+    ],
+    "max": [
+      "column",
+      "options"
+    ],
+    "sum": [
+      "column",
+      "options"
+    ],
+    "avg": [
+      "column",
+      "options"
+    ],
+    "countDistinct": [
+      "param"
+    ],
+    "sumDistinct": [
+      "column",
+      "options"
+    ],
+    "avgDistinct": [
+      "column",
+      "options"
+    ],
+    "increment": [
+      "column",
+      "param"
+    ],
+    "decrement": [
+      "column",
+      "param"
+    ],
+    "clearCounters": [],
+    "first": [
+      "param"
+    ],
+    "connection": [
+      "_connection"
+    ],
+    "pluck": [
+      "column"
+    ],
+    "clearSelect": [],
+    "clearWhere": [],
+    "clearGroup": [],
+    "clearOrder": [],
+    "clearHaving": [],
+    "clear": [
+      "statement"
+    ],
+    "insert": [
+      "values",
+      "returning",
+      "options"
+    ],
+    "update": [
+      "values",
+      "returning",
+      "options"
+    ],
+    "returning": [
+      "returning",
+      "options"
+    ],
+    "onConflict": [
+      "columns"
+    ],
+    "delete": [
+      "ret",
+      "options"
+    ],
+    "truncate": [
+      "tableName"
+    ],
+    "columnInfo": [
+      "column"
+    ],
+    "forUpdate": [
+      "param"
+    ],
+    "forShare": [
+      "param"
+    ],
+    "forNoKeyUpdate": [
+      "param"
+    ],
+    "forKeyShare": [
+      "param"
+    ],
+    "skipLocked": [],
+    "noWait": [],
+    "fromJS": [
+      "obj"
+    ],
+    "fromRaw": [
+      "sql",
+      "bindings"
+    ],
+    "modify": [
+      "callback"
+    ],
+    "upsert": [
+      "values",
+      "returning",
+      "options"
+    ],
+    "_json": [
+      "nameFunction",
+      "params"
+    ],
+    "jsonExtract": [],
+    "jsonSet": [
+      "column",
+      "path",
+      "value",
+      "alias"
+    ],
+    "jsonInsert": [
+      "column",
+      "path",
+      "value",
+      "alias"
+    ],
+    "jsonRemove": [
+      "column",
+      "path",
+      "alias"
+    ],
+    "_isJsonObject": [
+      "jsonValue"
+    ],
+    "_whereJsonWrappedValue": [
+      "type",
+      "column",
+      "value"
+    ],
+    "whereJsonObject": [
+      "column",
+      "value"
+    ],
+    "orWhereJsonObject": [
+      "column",
+      "value"
+    ],
+    "whereNotJsonObject": [
+      "column",
+      "value"
+    ],
+    "orWhereNotJsonObject": [
+      "column",
+      "value"
+    ],
+    "whereJsonPath": [
+      "column",
+      "path",
+      "operator",
+      "value"
+    ],
+    "orWhereJsonPath": [
+      "column",
+      "path",
+      "operator",
+      "value"
+    ],
+    "whereJsonSupersetOf": [
+      "column",
+      "value"
+    ],
+    "whereJsonNotSupersetOf": [
+      "column",
+      "value"
+    ],
+    "orWhereJsonSupersetOf": [
+      "column",
+      "value"
+    ],
+    "orWhereJsonNotSupersetOf": [
+      "column",
+      "value"
+    ],
+    "whereJsonSubsetOf": [
+      "column",
+      "value"
+    ],
+    "whereJsonNotSubsetOf": [
+      "column",
+      "value"
+    ],
+    "orWhereJsonSubsetOf": [
+      "column",
+      "value"
+    ],
+    "orWhereJsonNotSubsetOf": [
+      "column",
+      "value"
+    ],
+    "whereJsonHasNone": [
+      "column",
+      "values"
+    ],
+    "_analytic": [
+      "alias",
+      "second",
+      "third"
+    ],
+    "rank": [
+      "param"
+    ],
+    "denseRank": [
+      "param"
+    ],
+    "rowNumber": [
+      "param"
+    ],
+    "_counter": [
+      "column",
+      "amount"
+    ],
+    "_bool": [
+      "val"
+    ],
+    "_not": [
+      "val"
+    ],
+    "_joinType": [
+      "val"
+    ],
+    "_analyticMethod": [
+      "val"
+    ],
+    "_aggregate": [
+      "method",
+      "column",
+      "param"
+    ],
+    "_clearGrouping": [
+      "grouping"
+    ],
+    "_isSelectQuery": [],
+    "_hasLockMode": []
+  },
+  "OnConflictBuilder": {
+    "constructor": [
+      "builder",
+      "columns"
+    ],
+    "ignore": [],
+    "merge": [
+      "updates"
+    ],
+    "then": []
+  },
+  "QueryCompiler": {
+    "constructor": [
+      "client",
+      "builder",
+      "bindings"
+    ],
+    "toSQL": [
+      "method",
+      "tz"
+    ],
+    "select": [],
+    "pluck": [],
+    "insert": [],
+    "_onConflictClause": [
+      "columns"
+    ],
+    "_buildInsertValues": [
+      "insertData"
+    ],
+    "_insertBody": [
+      "insertValues"
+    ],
+    "update": [],
+    "_hintComments": [],
+    "columns": [],
+    "comments": [],
+    "_aggregate": [
+      "stmt",
+      "param"
+    ],
+    "aggregate": [
+      "stmt"
+    ],
+    "aggregateRaw": [
+      "stmt"
+    ],
+    "_joinTable": [
+      "join"
+    ],
+    "join": [],
+    "onBetween": [
+      "statement"
+    ],
+    "onNull": [
+      "statement"
+    ],
+    "onExists": [
+      "statement"
+    ],
+    "onIn": [
+      "statement"
+    ],
+    "multiOnIn": [
+      "statement"
+    ],
+    "where": [],
+    "group": [],
+    "order": [],
+    "having": [],
+    "havingRaw": [
+      "statement"
+    ],
+    "havingWrapped": [
+      "statement"
+    ],
+    "havingBasic": [
+      "statement"
+    ],
+    "havingNull": [
+      "statement"
+    ],
+    "havingExists": [
+      "statement"
+    ],
+    "havingBetween": [
+      "statement"
+    ],
+    "havingIn": [
+      "statement"
+    ],
+    "multiHavingIn": [
+      "statement"
+    ],
+    "union": [],
+    "onlyUnions": [],
+    "_getValueOrParameterFromAttribute": [
+      "attribute",
+      "rawValue"
+    ],
+    "onlyJson": [],
+    "limit": [],
+    "offset": [],
+    "del": [],
+    "truncate": [],
+    "lock": [],
+    "waitMode": [],
+    "skipLocked": [],
+    "noWait": [],
+    "distinctOn": [
+      "value"
+    ],
+    "onWrapped": [
+      "clause"
+    ],
+    "onBasic": [
+      "clause"
+    ],
+    "onVal": [
+      "clause"
+    ],
+    "onRaw": [
+      "clause"
+    ],
+    "onUsing": [
+      "clause"
+    ],
+    "_valueClause": [
+      "statement"
+    ],
+    "_columnClause": [
+      "statement"
+    ],
+    "whereIn": [
+      "statement"
+    ],
+    "whereLike": [
+      "statement"
+    ],
+    "whereILike": [
+      "statement"
+    ],
+    "whereNull": [
+      "statement"
+    ],
+    "whereBasic": [
+      "statement"
+    ],
+    "whereExists": [
+      "statement"
+    ],
+    "whereWrapped": [
+      "statement"
+    ],
+    "whereBetween": [
+      "statement"
+    ],
+    "whereRaw": [
+      "statement"
+    ],
+    "_jsonWrapValue": [
+      "jsonValue"
+    ],
+    "_jsonValueClause": [
+      "statement"
+    ],
+    "whereJsonObject": [
+      "statement"
+    ],
+    "wrap": [
+      "str"
+    ],
+    "json": [
+      "stmt"
+    ],
+    "analytic": [
+      "stmt"
+    ],
+    "with": [],
+    "withWrapped": [
+      "statement"
+    ],
+    "_not": [
+      "statement",
+      "str"
+    ],
+    "_prepInsert": [
+      "data"
+    ],
+    "_prepUpdate": [
+      "param"
+    ],
+    "_formatGroupsItemValue": [
+      "value",
+      "nulls"
+    ],
+    "_basicGroupOrder": [
+      "item",
+      "type"
+    ],
+    "_groupOrder": [
+      "item",
+      "type"
+    ],
+    "_groupOrderNulls": [
+      "item",
+      "type"
+    ],
+    "_groupsOrders": [
+      "type"
+    ],
+    "tableName": [],
+    "_jsonPathWrap": [
+      "extraction"
+    ],
+    "_jsonExtract": [
+      "nameFunction",
+      "params"
+    ],
+    "_jsonSet": [
+      "nameFunction",
+      "params"
+    ],
+    "_whereJsonPath": [
+      "nameFunction",
+      "statement"
+    ],
+    "_onJsonPathEquals": [
+      "nameJoinFunction",
+      "clause"
+    ]
+  },
+  "addAlias": [
+    "value",
+    "alias"
+  ],
+  "aggregateArray": [
+    "value",
+    "alias"
+  ],
+  "aggregateString": [
+    "value",
+    "alias"
+  ],
+  "Raw": {
+    "constructor": [
+      "client"
+    ],
+    "set": [
+      "sql",
+      "bindings"
+    ],
+    "timeout": [
+      "ms",
+      "param"
+    ],
+    "wrap": [
+      "before",
+      "after"
+    ],
+    "toString": [],
+    "toSQL": [
+      "method",
+      "tz"
+    ]
+  },
+  "Ref": {
+    "constructor": [
+      "client",
+      "ref"
+    ],
+    "withSchema": [
+      "schema"
+    ],
+    "as": [
+      "alias"
+    ],
+    "toSQL": []
+  },
+  "SchemaBuilder": {
+    "extend": [
+      "methodName",
+      "fn"
+    ]
+  },
+  "ColumnBuilder": {
+    "extend": [
+      "methodName",
+      "fn"
+    ]
+  },
+  "ColumnCompiler": {
+    "constructor": [
+      "client",
+      "tableCompiler",
+      "columnBuilder"
+    ],
+    "_addCheckModifiers": [],
+    "defaults": [
+      "label"
+    ],
+    "toSQL": [],
+    "compileColumn": [],
+    "getColumnName": [],
+    "getColumnType": [],
+    "getModifiers": [],
+    "varchar": [
+      "length"
+    ],
+    "floating": [
+      "precision",
+      "scale"
+    ],
+    "decimal": [
+      "precision",
+      "scale"
+    ],
+    "specifictype": [
+      "type"
+    ],
+    "nullable": [
+      "nullable"
+    ],
+    "notNullable": [],
+    "defaultTo": [
+      "value"
+    ],
+    "increments": [
+      "param"
+    ],
+    "bigincrements": [
+      "param"
+    ],
+    "_pushAlterCheckQuery": [
+      "checkPredicate",
+      "constraintName"
+    ],
+    "_checkConstraintName": [
+      "constraintName"
+    ],
+    "_check": [
+      "checkPredicate",
+      "constraintName"
+    ],
+    "checkPositive": [
+      "constraintName"
+    ],
+    "checkNegative": [
+      "constraintName"
+    ],
+    "_checkIn": [
+      "values",
+      "constraintName",
+      "not"
+    ],
+    "checkIn": [
+      "values",
+      "constraintName"
+    ],
+    "checkNotIn": [
+      "values",
+      "constraintName"
+    ],
+    "checkBetween": [
+      "intervals",
+      "constraintName"
+    ],
+    "checkLength": [
+      "operator",
+      "length",
+      "constraintName"
+    ]
+  },
+  "SchemaCompiler": {
+    "constructor": [
+      "client",
+      "builder"
+    ],
+    "createSchema": [],
+    "createSchemaIfNotExists": [],
+    "dropSchema": [],
+    "dropSchemaIfExists": [],
+    "dropTable": [
+      "tableName"
+    ],
+    "dropTableIfExists": [
+      "tableName"
+    ],
+    "dropView": [
+      "viewName"
+    ],
+    "dropViewIfExists": [
+      "viewName"
+    ],
+    "dropMaterializedView": [
+      "viewName"
+    ],
+    "dropMaterializedViewIfExists": [
+      "viewName"
+    ],
+    "renameView": [
+      "from",
+      "to"
+    ],
+    "refreshMaterializedView": [],
+    "_dropView": [
+      "viewName",
+      "ifExists",
+      "materialized"
+    ],
+    "raw": [
+      "sql",
+      "bindings"
+    ],
+    "toSQL": [],
+    "generateDdlCommands": []
+  },
+  "build": [
+    "builder"
+  ],
+  "buildTable": [
+    "type"
+  ],
+  "buildView": [
+    "type"
+  ],
+  "throwOnlyPGError": [
+    "operationName"
+  ],
+  "pushQuery": [
+    "query"
+  ],
+  "pushAdditional": [
+    "fn"
+  ],
+  "unshiftQuery": [
+    "query"
+  ],
+  "TableBuilder": {
+    "extend": [
+      "methodName",
+      "fn"
+    ]
+  },
+  "TableCompiler": {
+    "constructor": [
+      "client",
+      "tableBuilder"
+    ],
+    "toSQL": [],
+    "create": [
+      "ifNot",
+      "like"
+    ],
+    "createIfNot": [],
+    "createLike": [],
+    "createLikeIfNot": [],
+    "alter": [],
+    "foreign": [
+      "foreignData"
+    ],
+    "getColumnTypes": [
+      "columns"
+    ],
+    "columnQueries": [
+      "columns"
+    ],
+    "addColumns": [
+      "columns",
+      "prefix"
+    ],
+    "alterColumns": [
+      "columns",
+      "colBuilders"
+    ],
+    "getColumns": [
+      "method"
+    ],
+    "tableName": [],
+    "tableNameLike": [],
+    "alterTable": [],
+    "alterTableForCreate": [
+      "columnTypes"
+    ],
+    "dropIndex": [
+      "value"
+    ],
+    "dropUnique": [],
+    "dropForeign": [],
+    "dropColumn": [],
+    "_setNullableState": [
+      "column",
+      "nullable"
+    ],
+    "setNullable": [
+      "column"
+    ],
+    "dropNullable": [
+      "column"
+    ],
+    "dropChecks": [
+      "checkConstraintNames"
+    ],
+    "check": [
+      "checkPredicate",
+      "bindings",
+      "constraintName"
+    ],
+    "_addChecks": [],
+    "_indexCommand": [
+      "type",
+      "tableName",
+      "columns"
+    ],
+    "_getPrimaryKeys": [],
+    "_canBeAddPrimaryKey": [
+      "options"
+    ],
+    "_getIncrementsColumnNames": [],
+    "_getBigIncrementsColumnNames": []
+  },
+  "ViewBuilder": {
+    "extend": [
+      "methodName",
+      "fn"
+    ]
+  },
+  "ViewCompiler": {
+    "constructor": [
+      "client",
+      "viewBuilder"
+    ],
+    "toSQL": [],
+    "create": [],
+    "createOrReplace": [],
+    "createMaterializedView": [],
+    "createQuery": [
+      "columns",
+      "selectQuery",
+      "materialized",
+      "replace"
+    ],
+    "renameView": [
+      "from",
+      "to"
+    ],
+    "refreshMaterializedView": [],
+    "alter": [],
+    "alterView": [],
+    "renameColumn": [
+      "from",
+      "to"
+    ],
+    "defaultTo": [
+      "column",
+      "defaultValue"
+    ],
+    "viewName": []
+  },
+  "finallyMixin": [
+    "prototype"
+  ],
+  "normalizeArr": [
+    "param"
+  ],
+  "containsUndefined": [
+    "mixed"
+  ],
+  "getUndefinedIndices": [
+    "mixed"
+  ],
+  "addQueryContext": [
+    "Target"
+  ],
+  "resolveClientNameWithAliases": [
+    "clientName"
+  ],
+  "toNumber": [
+    "val",
+    "fallback"
+  ],
+  "isString": [
+    "value"
+  ],
+  "isNumber": [
+    "value"
+  ],
+  "isBoolean": [
+    "value"
+  ],
+  "isUndefined": [
+    "value"
+  ],
+  "isObject": [
+    "value"
+  ],
+  "isFunction": [
+    "value"
+  ],
+  "nanoid": [
+    "param"
+  ],
+  "nanonum": [
+    "param"
+  ],
+  "setHiddenProperty": [
+    "target",
+    "source",
+    "param"
+  ],
+  "wrapEscape": [
+    "escapeFn"
+  ],
+  "makeEscape": [
+    "param"
+  ],
+  "escapeFn": [
+    "val",
+    "finalEscape",
+    "ctx"
+  ],
+  "escapeObject": [
+    "val",
+    "finalEscape",
+    "ctx"
+  ],
+  "arrayToList": [
+    "array",
+    "finalEscape",
+    "ctx"
+  ],
+  "bufferToString": [
+    "buffer"
+  ],
+  "escapeString": [
+    "val",
+    "finalEscape",
+    "ctx"
+  ],
+  "dateToString": [
+    "date",
+    "finalEscape",
+    "param"
+  ],
+  "zeroPad": [
+    "number",
+    "length"
+  ],
+  "convertTimezone": [
+    "tz"
+  ],
+  "KnexTimeoutError": {},
+  "timeout": [
+    "promise",
+    "ms"
+  ],
+  "wrappedResolve": [
+    "value"
+  ],
+  "wrappedReject": [
+    "err"
+  ],
+  "exec": [
+    "cmd",
+    "args"
+  ],
+  "main": [
+    "cliCommand"
+  ],
+  "doesDirectoryExist": [
+    "p"
+  ],
+  "setQueryCounters": [
+    "instance",
+    "name"
+  ],
+  "killConnectionsPg": [
+    "client"
+  ],
+  "killConnectionsMyslq": [
+    "client"
+  ],
+  "killConnectionsMssql": [],
+  "loopQueries": [
+    "prefix",
+    "query"
+  ],
+  "queries": [],
+  "recreateProxy": [
+    "serviceName",
+    "listenPort",
+    "proxyToPort"
+  ],
+  "recreateProxies": [],
+  "stdMysqlQuery": [
+    "con",
+    "sql"
+  ],
+  "mysql2Query": [
+    "sql"
+  ],
+  "setMysqlQueryCounters": [
+    "name"
+  ],
+  "insanelyParanoidQuery": [
+    "con"
+  ],
+  "mysqlQuery": [
+    "sql"
+  ],
+  "QueryBuilder": {
+    "extend": [
+      "methodName",
+      "fn"
+    ]
+  }
+}

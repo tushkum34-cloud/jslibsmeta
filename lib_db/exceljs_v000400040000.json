@@ -1,0 +1,7294 @@
+{
+  "CSV": {
+    "constructor": [
+      "workbook"
+    ],
+    "readFile": [
+      "filename",
+      "options"
+    ],
+    "read": [
+      "stream",
+      "options"
+    ],
+    "createInputStream": [],
+    "write": [
+      "stream",
+      "options"
+    ],
+    "writeFile": [
+      "filename",
+      "options"
+    ],
+    "writeBuffer": [
+      "options"
+    ]
+  },
+  "LineBuffer": {
+    "constructor": [
+      "options"
+    ],
+    "write": [
+      "chunk"
+    ],
+    "cork": [],
+    "uncork": [],
+    "setDefaultEncoding": [],
+    "end": [],
+    "_flush": []
+  },
+  "StreamConverter": {
+    "constructor": [
+      "inner",
+      "options"
+    ],
+    "convertInwards": [
+      "data"
+    ],
+    "convertOutwards": [
+      "data"
+    ],
+    "addListener": [
+      "event",
+      "handler"
+    ],
+    "removeListener": [
+      "event",
+      "handler"
+    ],
+    "write": [
+      "data",
+      "encoding",
+      "callback"
+    ],
+    "read": [],
+    "pipe": [
+      "destination",
+      "options"
+    ],
+    "close": [],
+    "on": [
+      "type",
+      "callback"
+    ],
+    "once": [
+      "type",
+      "callback"
+    ],
+    "end": [
+      "chunk",
+      "encoding",
+      "callback"
+    ],
+    "emit": [
+      "type",
+      "value"
+    ]
+  },
+  "Anchor": {
+    "constructor": [
+      "worksheet",
+      "address",
+      "param"
+    ],
+    "asInstance": [
+      "model"
+    ],
+    "col": [
+      "v"
+    ],
+    "row": [
+      "v"
+    ],
+    "colWidth": [],
+    "rowHeight": [],
+    "model": [
+      "value"
+    ]
+  },
+  "Cell": {
+    "constructor": [
+      "row",
+      "column",
+      "address"
+    ],
+    "worksheet": [],
+    "workbook": [],
+    "destroy": [],
+    "numFmt": [
+      "value"
+    ],
+    "font": [
+      "value"
+    ],
+    "alignment": [
+      "value"
+    ],
+    "border": [
+      "value"
+    ],
+    "fill": [
+      "value"
+    ],
+    "protection": [
+      "value"
+    ],
+    "_mergeStyle": [
+      "rowStyle",
+      "colStyle",
+      "style"
+    ],
+    "address": [],
+    "row": [],
+    "col": [],
+    "$col$row": [],
+    "type": [],
+    "effectiveType": [],
+    "toCsvString": [],
+    "addMergeRef": [],
+    "releaseMergeRef": [],
+    "isMerged": [],
+    "merge": [
+      "master",
+      "ignoreStyle"
+    ],
+    "unmerge": [],
+    "isMergedTo": [
+      "master"
+    ],
+    "master": [],
+    "isHyperlink": [],
+    "hyperlink": [],
+    "value": [
+      "v"
+    ],
+    "note": [
+      "note"
+    ],
+    "text": [],
+    "html": [],
+    "toString": [],
+    "_upgradeToHyperlink": [
+      "hyperlink"
+    ],
+    "formula": [],
+    "result": [],
+    "formulaType": [],
+    "fullAddress": [],
+    "name": [
+      "value"
+    ],
+    "names": [
+      "value"
+    ],
+    "addName": [
+      "name"
+    ],
+    "removeName": [
+      "name"
+    ],
+    "removeAllNames": [],
+    "_dataValidations": [],
+    "dataValidation": [
+      "value"
+    ],
+    "model": [
+      "value"
+    ]
+  },
+  "NullValue": {
+    "constructor": [
+      "cell"
+    ],
+    "value": [
+      "value"
+    ],
+    "type": [],
+    "effectiveType": [],
+    "address": [
+      "value"
+    ],
+    "toCsvString": [],
+    "release": [],
+    "toString": []
+  },
+  "NumberValue": {
+    "constructor": [
+      "cell",
+      "value"
+    ],
+    "value": [
+      "value"
+    ],
+    "type": [],
+    "effectiveType": [],
+    "address": [
+      "value"
+    ],
+    "toCsvString": [],
+    "release": [],
+    "toString": []
+  },
+  "StringValue": {
+    "constructor": [
+      "cell",
+      "value"
+    ],
+    "value": [
+      "value"
+    ],
+    "type": [],
+    "effectiveType": [],
+    "address": [
+      "value"
+    ],
+    "toCsvString": [],
+    "release": [],
+    "toString": []
+  },
+  "RichTextValue": {
+    "constructor": [
+      "cell",
+      "value"
+    ],
+    "value": [
+      "value"
+    ],
+    "toString": [],
+    "type": [],
+    "effectiveType": [],
+    "address": [
+      "value"
+    ],
+    "toCsvString": [],
+    "release": []
+  },
+  "DateValue": {
+    "constructor": [
+      "cell",
+      "value"
+    ],
+    "value": [
+      "value"
+    ],
+    "type": [],
+    "effectiveType": [],
+    "address": [
+      "value"
+    ],
+    "toCsvString": [],
+    "release": [],
+    "toString": []
+  },
+  "HyperlinkValue": {
+    "constructor": [
+      "cell",
+      "value"
+    ],
+    "value": [
+      "value"
+    ],
+    "text": [
+      "value"
+    ],
+    "hyperlink": [
+      "value"
+    ],
+    "type": [],
+    "effectiveType": [],
+    "address": [
+      "value"
+    ],
+    "toCsvString": [],
+    "release": [],
+    "toString": []
+  },
+  "MergeValue": {
+    "constructor": [
+      "cell",
+      "master"
+    ],
+    "value": [
+      "value"
+    ],
+    "isMergedTo": [
+      "master"
+    ],
+    "master": [],
+    "type": [],
+    "effectiveType": [],
+    "address": [
+      "value"
+    ],
+    "toCsvString": [],
+    "release": [],
+    "toString": []
+  },
+  "FormulaValue": {
+    "constructor": [
+      "cell",
+      "value"
+    ],
+    "_copyModel": [
+      "model"
+    ],
+    "value": [
+      "value"
+    ],
+    "validate": [
+      "value"
+    ],
+    "dependencies": [],
+    "formula": [
+      "value"
+    ],
+    "formulaType": [],
+    "result": [
+      "value"
+    ],
+    "type": [],
+    "effectiveType": [],
+    "address": [
+      "value"
+    ],
+    "_getTranslatedFormula": [],
+    "toCsvString": [],
+    "release": [],
+    "toString": []
+  },
+  "cp": [
+    "name"
+  ],
+  "SharedStringValue": {
+    "constructor": [
+      "cell",
+      "value"
+    ],
+    "value": [
+      "value"
+    ],
+    "type": [],
+    "effectiveType": [],
+    "address": [
+      "value"
+    ],
+    "toCsvString": [],
+    "release": [],
+    "toString": []
+  },
+  "BooleanValue": {
+    "constructor": [
+      "cell",
+      "value"
+    ],
+    "value": [
+      "value"
+    ],
+    "type": [],
+    "effectiveType": [],
+    "address": [
+      "value"
+    ],
+    "toCsvString": [],
+    "release": [],
+    "toString": []
+  },
+  "ErrorValue": {
+    "constructor": [
+      "cell",
+      "value"
+    ],
+    "value": [
+      "value"
+    ],
+    "type": [],
+    "effectiveType": [],
+    "address": [
+      "value"
+    ],
+    "toCsvString": [],
+    "release": [],
+    "toString": []
+  },
+  "JSONValue": {
+    "constructor": [
+      "cell",
+      "value"
+    ],
+    "value": [
+      "value"
+    ],
+    "type": [],
+    "effectiveType": [],
+    "address": [
+      "value"
+    ],
+    "toCsvString": [],
+    "release": [],
+    "toString": []
+  },
+  "Column": {
+    "constructor": [
+      "table",
+      "column",
+      "index"
+    ],
+    "_set": [
+      "name",
+      "value"
+    ],
+    "name": [
+      "value"
+    ],
+    "filterButton": [
+      "value"
+    ],
+    "style": [
+      "value"
+    ],
+    "totalsRowLabel": [
+      "value"
+    ],
+    "totalsRowFunction": [
+      "value"
+    ],
+    "totalsRowResult": [
+      "value"
+    ],
+    "totalsRowFormula": [
+      "value"
+    ]
+  },
+  "DataValidations": {
+    "constructor": [
+      "model"
+    ],
+    "add": [
+      "address",
+      "validation"
+    ],
+    "find": [
+      "address"
+    ],
+    "remove": [
+      "address"
+    ]
+  },
+  "DefinedNames": {
+    "constructor": [],
+    "getMatrix": [
+      "name"
+    ],
+    "add": [
+      "locStr",
+      "name"
+    ],
+    "addEx": [
+      "location",
+      "name"
+    ],
+    "remove": [
+      "locStr",
+      "name"
+    ],
+    "removeEx": [
+      "location",
+      "name"
+    ],
+    "removeAllNames": [
+      "location"
+    ],
+    "forEach": [
+      "callback"
+    ],
+    "getNames": [
+      "addressStr"
+    ],
+    "getNamesEx": [
+      "address"
+    ],
+    "_explore": [
+      "matrix",
+      "cell"
+    ],
+    "getRanges": [
+      "name",
+      "matrix"
+    ],
+    "normaliseMatrix": [
+      "matrix",
+      "sheetName"
+    ],
+    "spliceRows": [
+      "sheetName",
+      "start",
+      "numDelete",
+      "numInsert"
+    ],
+    "spliceColumns": [
+      "sheetName",
+      "start",
+      "numDelete",
+      "numInsert"
+    ],
+    "model": [
+      "value"
+    ]
+  },
+  "vGrow": [
+    "yy",
+    "edge"
+  ],
+  "hGrow": [
+    "xx",
+    "edge"
+  ],
+  "Image": {
+    "constructor": [
+      "worksheet",
+      "model"
+    ],
+    "model": [
+      "param"
+    ]
+  },
+  "ModelContainer": {
+    "constructor": [
+      "model"
+    ],
+    "xlsx": []
+  },
+  "Note": {
+    "constructor": [
+      "note"
+    ],
+    "model": [
+      "value"
+    ],
+    "fromModel": [
+      "model"
+    ]
+  },
+  "Range": {
+    "constructor": [],
+    "setTLBR": [
+      "t",
+      "l",
+      "b",
+      "r",
+      "s"
+    ],
+    "decode": [
+      "argv"
+    ],
+    "top": [
+      "value"
+    ],
+    "left": [
+      "value"
+    ],
+    "bottom": [
+      "value"
+    ],
+    "right": [
+      "value"
+    ],
+    "sheetName": [
+      "value"
+    ],
+    "_serialisedSheetName": [],
+    "expand": [
+      "top",
+      "left",
+      "bottom",
+      "right"
+    ],
+    "expandRow": [
+      "row"
+    ],
+    "expandToAddress": [
+      "addressStr"
+    ],
+    "tl": [],
+    "$t$l": [],
+    "br": [],
+    "$b$r": [],
+    "range": [],
+    "$range": [],
+    "shortRange": [],
+    "$shortRange": [],
+    "count": [],
+    "toString": [],
+    "intersects": [
+      "other"
+    ],
+    "contains": [
+      "addressStr"
+    ],
+    "containsEx": [
+      "address"
+    ],
+    "forEachAddress": [
+      "cb"
+    ]
+  },
+  "Row": {
+    "constructor": [
+      "worksheet",
+      "number"
+    ],
+    "number": [],
+    "worksheet": [],
+    "commit": [],
+    "destroy": [],
+    "findCell": [
+      "colNumber"
+    ],
+    "getCellEx": [
+      "address"
+    ],
+    "getCell": [
+      "col"
+    ],
+    "splice": [
+      "start",
+      "count",
+      "param"
+    ],
+    "eachCell": [
+      "options",
+      "iteratee"
+    ],
+    "addPageBreak": [
+      "lft",
+      "rght"
+    ],
+    "values": [
+      "value"
+    ],
+    "hasValues": [],
+    "cellCount": [],
+    "actualCellCount": [],
+    "dimensions": [],
+    "_applyStyle": [
+      "name",
+      "value"
+    ],
+    "numFmt": [
+      "value"
+    ],
+    "font": [
+      "value"
+    ],
+    "alignment": [
+      "value"
+    ],
+    "protection": [
+      "value"
+    ],
+    "border": [
+      "value"
+    ],
+    "fill": [
+      "value"
+    ],
+    "hidden": [
+      "value"
+    ],
+    "outlineLevel": [
+      "value"
+    ],
+    "collapsed": [],
+    "model": [
+      "value"
+    ]
+  },
+  "Table": {
+    "constructor": [
+      "worksheet",
+      "table"
+    ],
+    "getFormula": [
+      "column"
+    ],
+    "width": [],
+    "height": [],
+    "filterHeight": [],
+    "tableHeight": [],
+    "validate": [],
+    "store": [],
+    "load": [
+      "worksheet"
+    ],
+    "model": [
+      "value"
+    ],
+    "cacheState": [],
+    "commit": [],
+    "addRow": [
+      "values",
+      "rowNumber"
+    ],
+    "removeRows": [
+      "rowIndex",
+      "param"
+    ],
+    "getColumn": [
+      "colIndex"
+    ],
+    "addColumn": [
+      "column",
+      "values",
+      "colIndex"
+    ],
+    "removeColumns": [
+      "colIndex",
+      "param"
+    ],
+    "_assign": [
+      "target",
+      "prop",
+      "value"
+    ],
+    "ref": [
+      "value"
+    ],
+    "name": [
+      "value"
+    ],
+    "displayName": [],
+    "displayNamename": [
+      "value"
+    ],
+    "headerRow": [
+      "value"
+    ],
+    "totalsRow": [
+      "value"
+    ],
+    "theme": [
+      "value"
+    ],
+    "showFirstColumn": [
+      "value"
+    ],
+    "showLastColumn": [
+      "value"
+    ],
+    "showRowStripes": [
+      "value"
+    ],
+    "showColumnStripes": [
+      "value"
+    ]
+  },
+  "assign": [
+    "definedName",
+    "attributes",
+    "name",
+    "defaultValue"
+  ],
+  "assert": [
+    "test",
+    "message"
+  ],
+  "assignStyle": [
+    "cell",
+    "style"
+  ],
+  "Workbook": {
+    "constructor": [],
+    "xlsx": [],
+    "csv": [],
+    "nextId": [],
+    "addWorksheet": [
+      "name",
+      "options"
+    ],
+    "removeWorksheetEx": [
+      "worksheet"
+    ],
+    "removeWorksheet": [
+      "id"
+    ],
+    "getWorksheet": [
+      "id"
+    ],
+    "worksheets": [],
+    "eachSheet": [
+      "iteratee"
+    ],
+    "definedNames": [],
+    "clearThemes": [],
+    "addImage": [
+      "image"
+    ],
+    "getImage": [
+      "id"
+    ],
+    "model": [
+      "value"
+    ]
+  },
+  "Worksheet": {
+    "constructor": [
+      "options"
+    ],
+    "name": [
+      "name"
+    ],
+    "workbook": [],
+    "destroy": [],
+    "dimensions": [],
+    "columns": [
+      "value"
+    ],
+    "getColumnKey": [
+      "key"
+    ],
+    "setColumnKey": [
+      "key",
+      "value"
+    ],
+    "deleteColumnKey": [
+      "key"
+    ],
+    "eachColumnKey": [
+      "f"
+    ],
+    "getColumn": [
+      "c"
+    ],
+    "spliceColumns": [
+      "start",
+      "count",
+      "param"
+    ],
+    "lastColumn": [],
+    "columnCount": [],
+    "actualColumnCount": [],
+    "_commitRow": [],
+    "_lastRowNumber": [],
+    "_nextRow": [],
+    "lastRow": [],
+    "findRow": [
+      "r"
+    ],
+    "findRows": [
+      "start",
+      "length"
+    ],
+    "rowCount": [],
+    "actualRowCount": [],
+    "getRow": [
+      "r"
+    ],
+    "getRows": [
+      "start",
+      "length"
+    ],
+    "addRow": [
+      "value",
+      "param"
+    ],
+    "addRows": [
+      "value",
+      "param"
+    ],
+    "insertRow": [
+      "pos",
+      "value",
+      "param"
+    ],
+    "insertRows": [
+      "pos",
+      "values",
+      "param"
+    ],
+    "_setStyleOption": [
+      "pos",
+      "param"
+    ],
+    "_copyStyle": [
+      "src",
+      "dest",
+      "param"
+    ],
+    "duplicateRow": [
+      "rowNum",
+      "count",
+      "param"
+    ],
+    "spliceRows": [
+      "start",
+      "count",
+      "param"
+    ],
+    "eachRow": [
+      "options",
+      "iteratee"
+    ],
+    "getSheetValues": [],
+    "findCell": [
+      "r",
+      "c"
+    ],
+    "getCell": [
+      "r",
+      "c"
+    ],
+    "mergeCells": [
+      "param"
+    ],
+    "mergeCellsWithoutStyle": [
+      "param"
+    ],
+    "_mergeCellsInternal": [
+      "dimensions",
+      "ignoreStyle"
+    ],
+    "_unMergeMaster": [
+      "master"
+    ],
+    "hasMerges": [],
+    "unMergeCells": [
+      "param"
+    ],
+    "fillFormula": [
+      "range",
+      "formula",
+      "results",
+      "param"
+    ],
+    "addImage": [
+      "imageId",
+      "range"
+    ],
+    "getImages": [],
+    "addBackgroundImage": [
+      "imageId"
+    ],
+    "getBackgroundImageId": [],
+    "protect": [
+      "password",
+      "options"
+    ],
+    "unprotect": [],
+    "addTable": [
+      "model"
+    ],
+    "getTable": [
+      "name"
+    ],
+    "removeTable": [
+      "name"
+    ],
+    "getTables": [],
+    "addConditionalFormatting": [
+      "cf"
+    ],
+    "removeConditionalFormatting": [
+      "filter"
+    ],
+    "tabColor": [
+      "value"
+    ],
+    "model": [
+      "value"
+    ],
+    "_parseRows": [
+      "model"
+    ],
+    "_parseMergeCells": [
+      "model"
+    ]
+  },
+  "HyperlinkReader": {
+    "constructor": [
+      "param"
+    ],
+    "count": [],
+    "each": [
+      "fn"
+    ],
+    "read": []
+  },
+  "SheetCommentsWriter": {
+    "constructor": [
+      "worksheet",
+      "sheetRelsWriter",
+      "options"
+    ],
+    "commentsStream": [],
+    "vmlStream": [],
+    "_addRelationships": [],
+    "_addCommentRefs": [],
+    "_writeOpen": [],
+    "_writeComment": [
+      "comment",
+      "index"
+    ],
+    "_writeClose": [],
+    "addComments": [
+      "comments"
+    ],
+    "commit": []
+  },
+  "HyperlinksProxy": {
+    "constructor": [
+      "sheetRelsWriter"
+    ],
+    "push": [
+      "hyperlink"
+    ]
+  },
+  "SheetRelsWriter": {
+    "constructor": [
+      "options"
+    ],
+    "stream": [],
+    "length": [],
+    "each": [
+      "fn"
+    ],
+    "hyperlinksProxy": [],
+    "addHyperlink": [
+      "hyperlink"
+    ],
+    "addMedia": [
+      "media"
+    ],
+    "addRelationship": [
+      "rel"
+    ],
+    "commit": [],
+    "_writeOpen": [],
+    "_writeRelationship": [
+      "relationship"
+    ],
+    "_writeClose": []
+  },
+  "WorkbookReader": {
+    "constructor": [
+      "input",
+      "param"
+    ],
+    "_getStream": [
+      "input"
+    ],
+    "read": [
+      "input",
+      "options"
+    ],
+    "parse": [
+      "input",
+      "options"
+    ],
+    "_emitEntry": [
+      "payload"
+    ],
+    "_parseRels": [
+      "entry"
+    ],
+    "_parseWorkbook": [
+      "entry"
+    ],
+    "_parseSharedStrings": [
+      "entry"
+    ],
+    "_parseStyles": [
+      "entry"
+    ],
+    "_parseWorksheet": [
+      "iterator",
+      "sheetNo"
+    ],
+    "_parseHyperlinks": [
+      "iterator",
+      "sheetNo"
+    ]
+  },
+  "WorkbookWriter": {
+    "constructor": [
+      "options"
+    ],
+    "definedNames": [],
+    "_openStream": [
+      "path"
+    ],
+    "_commitWorksheets": [],
+    "commit": [],
+    "nextId": [],
+    "addImage": [
+      "image"
+    ],
+    "getImage": [
+      "id"
+    ],
+    "addWorksheet": [
+      "name",
+      "options"
+    ],
+    "getWorksheet": [
+      "id"
+    ],
+    "addStyles": [],
+    "addThemes": [],
+    "addOfficeRels": [],
+    "addContentTypes": [],
+    "addMedia": [],
+    "addApp": [],
+    "addCore": [],
+    "addSharedStrings": [],
+    "addWorkbookRels": [],
+    "addWorkbook": [],
+    "_finalize": []
+  },
+  "commitWorksheet": [
+    "worksheet"
+  ],
+  "WorksheetReader": {
+    "constructor": [
+      "param"
+    ],
+    "destroy": [],
+    "dimensions": [],
+    "columns": [],
+    "getColumn": [
+      "c"
+    ],
+    "getColumnKey": [
+      "key"
+    ],
+    "setColumnKey": [
+      "key",
+      "value"
+    ],
+    "deleteColumnKey": [
+      "key"
+    ],
+    "eachColumnKey": [
+      "f"
+    ],
+    "read": [],
+    "parse": []
+  },
+  "WorksheetWriter": {
+    "constructor": [
+      "options"
+    ],
+    "workbook": [],
+    "stream": [],
+    "destroy": [],
+    "commit": [],
+    "dimensions": [],
+    "views": [],
+    "columns": [
+      "value"
+    ],
+    "getColumnKey": [
+      "key"
+    ],
+    "setColumnKey": [
+      "key",
+      "value"
+    ],
+    "deleteColumnKey": [
+      "key"
+    ],
+    "eachColumnKey": [
+      "f"
+    ],
+    "getColumn": [
+      "c"
+    ],
+    "_nextRow": [],
+    "eachRow": [
+      "options",
+      "iteratee"
+    ],
+    "_commitRow": [
+      "cRow"
+    ],
+    "lastRow": [],
+    "findRow": [
+      "rowNumber"
+    ],
+    "getRow": [
+      "rowNumber"
+    ],
+    "addRow": [
+      "value"
+    ],
+    "findCell": [
+      "r",
+      "c"
+    ],
+    "getCell": [
+      "r",
+      "c"
+    ],
+    "mergeCells": [
+      "param"
+    ],
+    "addConditionalFormatting": [
+      "cf"
+    ],
+    "removeConditionalFormatting": [
+      "filter"
+    ],
+    "addBackgroundImage": [
+      "imageId"
+    ],
+    "getBackgroundImageId": [],
+    "protect": [
+      "password",
+      "options"
+    ],
+    "unprotect": [],
+    "_write": [
+      "text"
+    ],
+    "_writeSheetProperties": [
+      "xmlBuf",
+      "properties",
+      "pageSetup"
+    ],
+    "_writeSheetFormatProperties": [
+      "xmlBuf",
+      "properties"
+    ],
+    "_writeOpenWorksheet": [],
+    "_writeColumns": [],
+    "_writeOpenSheetData": [],
+    "_writeRow": [
+      "row"
+    ],
+    "_writeCloseSheetData": [],
+    "_writeMergeCells": [],
+    "_writeHyperlinks": [],
+    "_writeConditionalFormatting": [],
+    "_writeRowBreaks": [],
+    "_writeDataValidations": [],
+    "_writeSheetProtection": [],
+    "_writePageMargins": [],
+    "_writePageSetup": [],
+    "_writeHeaderFooter": [],
+    "_writeAutoFilter": [],
+    "_writeBackground": [],
+    "_writeLegacyData": [],
+    "_writeDimensions": [],
+    "_writeCloseWorksheet": []
+  },
+  "AutoDrain": {
+    "write": [
+      "chunk"
+    ],
+    "end": []
+  },
+  "bufferToString": [
+    "chunk"
+  ],
+  "stringToBuffer": [
+    "str"
+  ],
+  "CellMatrix": {
+    "constructor": [
+      "template"
+    ],
+    "addCell": [
+      "addressStr"
+    ],
+    "getCell": [
+      "addressStr"
+    ],
+    "findCell": [
+      "addressStr"
+    ],
+    "findCellAt": [
+      "sheetName",
+      "rowNumber",
+      "colNumber"
+    ],
+    "addCellEx": [
+      "address"
+    ],
+    "getCellEx": [
+      "address"
+    ],
+    "findCellEx": [
+      "address",
+      "create"
+    ],
+    "getCellAt": [
+      "sheetName",
+      "rowNumber",
+      "colNumber"
+    ],
+    "removeCellEx": [
+      "address"
+    ],
+    "forEachInSheet": [
+      "sheetName",
+      "callback"
+    ],
+    "forEach": [
+      "callback"
+    ],
+    "map": [
+      "callback"
+    ],
+    "findSheet": [
+      "address",
+      "create"
+    ],
+    "findSheetRow": [
+      "sheet",
+      "address",
+      "create"
+    ],
+    "findRowCell": [
+      "row",
+      "address",
+      "create"
+    ],
+    "spliceRows": [
+      "sheetName",
+      "start",
+      "numDelete",
+      "numInsert"
+    ],
+    "spliceColumns": [
+      "sheetName",
+      "start",
+      "numDelete",
+      "numInsert"
+    ]
+  },
+  "oneDepthCopy": [
+    "obj",
+    "nestKeys"
+  ],
+  "setIfExists": [
+    "src",
+    "dst",
+    "key",
+    "param"
+  ],
+  "isEmptyObj": [
+    "obj"
+  ],
+  "copyStyle": [
+    "style"
+  ],
+  "once": [
+    "eventEmitter",
+    "type"
+  ],
+  "handler": [],
+  "slideFormula": [
+    "formula",
+    "fromCell",
+    "toCell"
+  ],
+  "SharedStrings": {
+    "constructor": [],
+    "count": [],
+    "values": [],
+    "totalRefs": [],
+    "getString": [
+      "index"
+    ],
+    "add": [
+      "value"
+    ]
+  },
+  "StreamBase64": {
+    "constructor": [],
+    "write": [],
+    "cork": [],
+    "uncork": [],
+    "end": [],
+    "read": [],
+    "setEncoding": [
+      "encoding"
+    ],
+    "pause": [],
+    "resume": [],
+    "isPaused": [],
+    "pipe": [
+      "destination"
+    ],
+    "unpipe": [
+      "destination"
+    ],
+    "unshift": [],
+    "wrap": []
+  },
+  "StringChunk": {
+    "constructor": [
+      "data",
+      "encoding"
+    ],
+    "length": [],
+    "copy": [
+      "target",
+      "targetOffset",
+      "offset",
+      "length"
+    ],
+    "toBuffer": []
+  },
+  "StringBufChunk": {
+    "constructor": [
+      "data"
+    ],
+    "length": [],
+    "copy": [
+      "target",
+      "targetOffset",
+      "offset",
+      "length"
+    ],
+    "toBuffer": []
+  },
+  "BufferChunk": {
+    "constructor": [
+      "data"
+    ],
+    "length": [],
+    "copy": [
+      "target",
+      "targetOffset",
+      "offset",
+      "length"
+    ],
+    "toBuffer": []
+  },
+  "ReadWriteBuf": {
+    "constructor": [
+      "size"
+    ],
+    "toBuffer": [],
+    "length": [],
+    "eod": [],
+    "full": [],
+    "read": [
+      "size"
+    ],
+    "write": [
+      "chunk",
+      "offset",
+      "length"
+    ]
+  },
+  "StreamBuf": [
+    "options"
+  ],
+  "write": [
+    "pipe"
+  ],
+  "writeComplete": [
+    "error"
+  ],
+  "StringBuf": {
+    "constructor": [
+      "options"
+    ],
+    "length": [],
+    "capacity": [],
+    "buffer": [],
+    "toBuffer": [],
+    "reset": [
+      "position"
+    ],
+    "_grow": [
+      "min"
+    ],
+    "addText": [
+      "text"
+    ],
+    "addStringBuf": [
+      "inBuf"
+    ]
+  },
+  "StringBuilder": {
+    "constructor": [],
+    "length": [],
+    "toString": [],
+    "reset": [
+      "position"
+    ],
+    "addText": [
+      "text"
+    ],
+    "addStringBuf": [
+      "inBuf"
+    ]
+  },
+  "StutteredPipe": {
+    "constructor": [
+      "readable",
+      "writable",
+      "options"
+    ],
+    "pause": [],
+    "resume": [],
+    "_schedule": []
+  },
+  "TypedStack": {
+    "constructor": [
+      "type"
+    ],
+    "size": [],
+    "pop": [],
+    "push": [
+      "instance"
+    ]
+  },
+  "assignValue": [
+    "val",
+    "key"
+  ],
+  "inherits": [
+    "cls",
+    "superCtor",
+    "statics",
+    "prototype"
+  ],
+  "pushAttribute": [
+    "xml",
+    "name",
+    "value"
+  ],
+  "pushAttributes": [
+    "xml",
+    "attributes"
+  ],
+  "XmlStream": {
+    "constructor": [],
+    "tos": [],
+    "cursor": [],
+    "openXml": [
+      "docAttributes"
+    ],
+    "openNode": [
+      "name",
+      "attributes"
+    ],
+    "addAttribute": [
+      "name",
+      "value"
+    ],
+    "addAttributes": [
+      "attrs"
+    ],
+    "writeText": [
+      "text"
+    ],
+    "writeXml": [
+      "xml"
+    ],
+    "closeNode": [],
+    "leafNode": [
+      "name",
+      "attributes",
+      "text"
+    ],
+    "closeAll": [],
+    "addRollback": [],
+    "commit": [],
+    "rollback": [],
+    "xml": []
+  },
+  "ZipWriter": {
+    "constructor": [
+      "options"
+    ],
+    "append": [
+      "data",
+      "options"
+    ],
+    "finalize": [],
+    "read": [
+      "size"
+    ],
+    "setEncoding": [
+      "encoding"
+    ],
+    "pause": [],
+    "resume": [],
+    "isPaused": [],
+    "pipe": [
+      "destination",
+      "options"
+    ],
+    "unpipe": [
+      "destination"
+    ],
+    "unshift": [
+      "chunk"
+    ],
+    "wrap": [
+      "stream"
+    ]
+  },
+  "BaseXform": {
+    "prepare": [],
+    "render": [],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ],
+    "reconcile": [
+      "model",
+      "options"
+    ],
+    "reset": [],
+    "mergeModel": [
+      "obj"
+    ],
+    "parse": [
+      "saxParser"
+    ],
+    "parseStream": [
+      "stream"
+    ],
+    "xml": [],
+    "toXml": [
+      "model"
+    ],
+    "toAttribute": [
+      "value",
+      "dflt",
+      "param"
+    ],
+    "toStringAttribute": [
+      "value",
+      "dflt",
+      "param"
+    ],
+    "toStringValue": [
+      "attr",
+      "dflt"
+    ],
+    "toBoolAttribute": [
+      "value",
+      "dflt",
+      "param"
+    ],
+    "toBoolValue": [
+      "attr",
+      "dflt"
+    ],
+    "toIntAttribute": [
+      "value",
+      "dflt",
+      "param"
+    ],
+    "toIntValue": [
+      "attr",
+      "dflt"
+    ],
+    "toFloatAttribute": [
+      "value",
+      "dflt",
+      "param"
+    ],
+    "toFloatValue": [
+      "attr",
+      "dflt"
+    ]
+  },
+  "DefinedNamesXform": {
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": []
+  },
+  "isValidRange": [
+    "range"
+  ],
+  "extractRanges": [
+    "parsedText"
+  ],
+  "WorksheetXform": {
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "WorkbookCalcPropertiesXform": {
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "WorksheetPropertiesXform": {
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "WorkbookViewXform": {
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "addS": [
+    "name",
+    "value",
+    "dflt"
+  ],
+  "addN": [
+    "name",
+    "value",
+    "dflt"
+  ],
+  "WorkbookXform": {
+    "constructor": [],
+    "prepare": [
+      "model"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ],
+    "reconcile": [
+      "model"
+    ]
+  },
+  "VmlPositionXform": {
+    "constructor": [
+      "model"
+    ],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model",
+      "type"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "VmlProtectionXform": {
+    "constructor": [
+      "model"
+    ],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": []
+  },
+  "VmlAnchorXform": {
+    "tag": [],
+    "getAnchorRect": [
+      "anchor"
+    ],
+    "getDefaultRect": [
+      "ref"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": []
+  },
+  "VmlClientDataXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ],
+    "normalizeModel": []
+  },
+  "VmlNotesXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ],
+    "reconcile": [
+      "model",
+      "options"
+    ]
+  },
+  "VmlShapeXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model",
+      "index"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "VmlTextboxXform": {
+    "tag": [],
+    "conversionUnit": [
+      "value",
+      "multiple",
+      "unit"
+    ],
+    "reverseConversionUnit": [
+      "inset"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "CompositeXform": {
+    "createNewModel": [
+      "node"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "onParserClose": [
+      "name",
+      "parser"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "AppHeadingPairsXform": {
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "AppTitlesOfPartsXform": {
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "AppXform": {
+    "constructor": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "ContentTypesXform": {
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [],
+    "parseText": [],
+    "parseClose": []
+  },
+  "CoreXform": {
+    "constructor": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "RelationshipXform": {
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "RelationshipsXform": {
+    "constructor": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "BaseCellAnchorXform": {
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "reconcilePicture": [
+      "model",
+      "options"
+    ]
+  },
+  "BlipFillXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "BlipXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "CNvPicPrXform": {
+    "tag": [],
+    "render": [
+      "xmlStream"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "CNvPrXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "CellPositionXform": {
+    "constructor": [
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "getAnchorType": [
+    "model"
+  ],
+  "DrawingXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "ExtLstXform": {
+    "constructor": [],
+    "tag": [],
+    "prepare": [
+      "model",
+      "options"
+    ],
+    "hasContent": [
+      "model"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "createNewModel": [],
+    "onParserClose": [
+      "name",
+      "parser"
+    ]
+  },
+  "ExtXform": {
+    "constructor": [],
+    "tag": [],
+    "hasContent": [
+      "model"
+    ],
+    "prepare": [
+      "model",
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "createNewModel": [],
+    "onParserClose": [
+      "name",
+      "parser"
+    ]
+  },
+  "HLinkClickXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "NvPicPrXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "OneCellAnchorXform": {
+    "constructor": [],
+    "tag": [],
+    "prepare": [
+      "model",
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseClose": [
+      "name"
+    ],
+    "reconcile": [
+      "model",
+      "options"
+    ]
+  },
+  "PicXform": {
+    "constructor": [],
+    "tag": [],
+    "prepare": [
+      "model",
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "TwoCellAnchorXform": {
+    "constructor": [],
+    "tag": [],
+    "prepare": [
+      "model",
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseClose": [
+      "name"
+    ],
+    "reconcile": [
+      "model",
+      "options"
+    ]
+  },
+  "ListXform": {
+    "constructor": [
+      "options"
+    ],
+    "prepare": [
+      "model",
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ],
+    "reconcile": [
+      "model",
+      "options"
+    ]
+  },
+  "AutoFilterXform": {
+    "constructor": [],
+    "tag": [],
+    "prepare": [
+      "model"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "getAddress": [
+    "addr"
+  ],
+  "getValueType": [
+    "v"
+  ],
+  "getEffectiveCellType": [
+    "cell"
+  ],
+  "CellXform": {
+    "constructor": [],
+    "tag": [],
+    "prepare": [
+      "model",
+      "options"
+    ],
+    "renderFormula": [
+      "xmlStream",
+      "model"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ],
+    "reconcile": [
+      "model",
+      "options"
+    ]
+  },
+  "getTextFormula": [
+    "model"
+  ],
+  "getTimePeriodFormula": [
+    "model"
+  ],
+  "opType": [
+    "attributes"
+  ],
+  "CfRuleXform": {
+    "constructor": [],
+    "tag": [],
+    "isPrimitive": [
+      "rule"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "renderExpression": [
+      "xmlStream",
+      "model"
+    ],
+    "renderCellIs": [
+      "xmlStream",
+      "model"
+    ],
+    "renderTop10": [
+      "xmlStream",
+      "model"
+    ],
+    "renderAboveAverage": [
+      "xmlStream",
+      "model"
+    ],
+    "renderDataBar": [
+      "xmlStream",
+      "model"
+    ],
+    "renderColorScale": [
+      "xmlStream",
+      "model"
+    ],
+    "renderIconSet": [
+      "xmlStream",
+      "model"
+    ],
+    "renderText": [
+      "xmlStream",
+      "model"
+    ],
+    "renderTimePeriod": [
+      "xmlStream",
+      "model"
+    ],
+    "createNewModel": [
+      "param"
+    ],
+    "onParserClose": [
+      "name",
+      "parser"
+    ]
+  },
+  "CfvoXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "ColorScaleXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "createNewModel": [
+      "node"
+    ],
+    "onParserClose": [
+      "name",
+      "parser"
+    ]
+  },
+  "ConditionalFormattingXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "createNewModel": [
+      "param"
+    ],
+    "onParserClose": [
+      "name",
+      "parser"
+    ]
+  },
+  "ConditionalFormattingsXform": {
+    "constructor": [],
+    "tag": [],
+    "reset": [],
+    "prepare": [
+      "model",
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ],
+    "reconcile": [
+      "model",
+      "options"
+    ]
+  },
+  "DatabarXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "createNewModel": [],
+    "onParserClose": [
+      "name",
+      "parser"
+    ]
+  },
+  "X14IdXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "ExtLstRefXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "createNewModel": [],
+    "onParserClose": [
+      "name",
+      "parser"
+    ]
+  },
+  "FormulaXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "IconSetXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "createNewModel": [
+      "param"
+    ],
+    "onParserClose": [
+      "name",
+      "parser"
+    ]
+  },
+  "CfIconExtXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "param"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "CfRuleExtXform": {
+    "constructor": [],
+    "tag": [],
+    "isExt": [
+      "rule"
+    ],
+    "prepare": [
+      "model"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "renderDataBar": [
+      "xmlStream",
+      "model"
+    ],
+    "renderIconSet": [
+      "xmlStream",
+      "model"
+    ],
+    "createNewModel": [
+      "param"
+    ],
+    "onParserClose": [
+      "name",
+      "parser"
+    ]
+  },
+  "CfvoExtXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "createNewModel": [
+      "node"
+    ],
+    "onParserClose": [
+      "name",
+      "parser"
+    ]
+  },
+  "ConditionalFormattingExtXform": {
+    "constructor": [],
+    "tag": [],
+    "prepare": [
+      "model",
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "createNewModel": [],
+    "onParserClose": [
+      "name",
+      "parser"
+    ]
+  },
+  "ConditionalFormattingsExtXform": {
+    "constructor": [],
+    "tag": [],
+    "hasContent": [
+      "model"
+    ],
+    "prepare": [
+      "model",
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "createNewModel": [],
+    "onParserClose": [
+      "name",
+      "parser"
+    ]
+  },
+  "DatabarExtXform": {
+    "constructor": [],
+    "isExt": [
+      "rule"
+    ],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "createNewModel": [
+      "param"
+    ],
+    "onParserClose": [
+      "name",
+      "parser"
+    ]
+  },
+  "FExtXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "IconSetExtXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "createNewModel": [
+      "param"
+    ],
+    "onParserClose": [
+      "name",
+      "parser"
+    ]
+  },
+  "SqrefExtXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "ColXform": {
+    "tag": [],
+    "prepare": [
+      "model",
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": [],
+    "reconcile": [
+      "model",
+      "options"
+    ]
+  },
+  "assignBool": [
+    "definedName",
+    "attributes",
+    "name",
+    "defaultValue"
+  ],
+  "optimiseDataValidations": [
+    "model"
+  ],
+  "matchCol": [
+    "addr",
+    "height",
+    "col"
+  ],
+  "DataValidationsXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "DimensionXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "HeaderFooterXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": []
+  },
+  "HyperlinkXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": [],
+    "isInternalLink": [
+      "model"
+    ]
+  },
+  "MergeCellXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "Merges": {
+    "constructor": [],
+    "add": [
+      "merge"
+    ],
+    "mergeCells": [],
+    "reconcile": [
+      "mergeCells",
+      "rows"
+    ],
+    "getMasterAddress": [
+      "address"
+    ]
+  },
+  "isDefined": [
+    "attr"
+  ],
+  "OutlinePropertiesXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "PageBreaksXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "PageMarginsXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "PageSetupPropertiesXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "booleanToXml": [
+    "model",
+    "value"
+  ],
+  "pageOrderToXml": [
+    "model"
+  ],
+  "cellCommentsToXml": [
+    "model"
+  ],
+  "errorsToXml": [
+    "model"
+  ],
+  "pageSizeToModel": [
+    "value"
+  ],
+  "PageSetupXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "PictureXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "PrintOptionsXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "RowBreaksXform": {
+    "constructor": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ]
+  },
+  "RowXform": {
+    "constructor": [
+      "options"
+    ],
+    "tag": [],
+    "prepare": [
+      "model",
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model",
+      "options"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ],
+    "reconcile": [
+      "model",
+      "options"
+    ]
+  },
+  "SheetFormatPropertiesXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "SheetPropertiesXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "xmlToBoolean": [
+    "value",
+    "equals"
+  ],
+  "SheetProtectionXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "SheetViewXform": {
+    "tag": [],
+    "prepare": [
+      "model"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": [
+      "name"
+    ],
+    "reconcile": []
+  },
+  "add": [
+    "propName",
+    "xform"
+  ],
+  "TablePartXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "mergeRule": [
+    "rule",
+    "extRule"
+  ],
+  "mergeConditionalFormattings": [
+    "model",
+    "extModel"
+  ],
+  "WorkSheetXform": {
+    "constructor": [
+      "options"
+    ],
+    "prepare": [
+      "model",
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ],
+    "reconcile": [
+      "model",
+      "options"
+    ]
+  },
+  "nextRid": [
+    "r"
+  ],
+  "BooleanXform": {
+    "constructor": [
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "DateXform": {
+    "constructor": [
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": []
+  },
+  "FloatXform": {
+    "constructor": [
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": []
+  },
+  "IntegerXform": {
+    "constructor": [
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": []
+  },
+  "StringXform": {
+    "constructor": [
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": []
+  },
+  "build": [
+    "xmlStream",
+    "model"
+  ],
+  "StaticXform": {
+    "constructor": [
+      "model"
+    ],
+    "render": [
+      "xmlStream"
+    ],
+    "parseOpen": [],
+    "parseText": [],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "PhoneticTextXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "RichTextXform": {
+    "constructor": [
+      "model"
+    ],
+    "tag": [],
+    "textXform": [],
+    "fontXform": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "SharedStringXform": {
+    "constructor": [
+      "model"
+    ],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "SharedStringsXform": {
+    "constructor": [
+      "model"
+    ],
+    "sharedStringXform": [],
+    "values": [],
+    "uniqueCount": [],
+    "count": [],
+    "getString": [
+      "index"
+    ],
+    "add": [
+      "value"
+    ],
+    "addText": [
+      "value"
+    ],
+    "addRichText": [
+      "value"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "TextXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "model": [],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": []
+  },
+  "AlignmentXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "EdgeXform": {
+    "constructor": [
+      "name"
+    ],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model",
+      "defaultColor"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ],
+    "validStyle": [
+      "value"
+    ]
+  },
+  "BorderXform": {
+    "constructor": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "ColorXform": {
+    "constructor": [
+      "name"
+    ],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "DxfXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "StopXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "PatternFillXform": {
+    "constructor": [],
+    "name": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "GradientFillXform": {
+    "constructor": [],
+    "name": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "FillXform": {
+    "constructor": [],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ],
+    "validStyle": [
+      "value"
+    ]
+  },
+  "FontXform": {
+    "constructor": [
+      "options"
+    ],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "hashDefaultFormats": [],
+  "NumFmtXform": {
+    "constructor": [
+      "id",
+      "formatCode"
+    ],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "ProtectionXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "StyleXform": {
+    "constructor": [
+      "options"
+    ],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "StylesXform": {
+    "constructor": [
+      "initialise"
+    ],
+    "initIndex": [],
+    "init": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ],
+    "addStyleModel": [
+      "model",
+      "cellType"
+    ],
+    "getStyleModel": [
+      "id"
+    ],
+    "addDxfStyle": [
+      "style"
+    ],
+    "getDxfStyle": [
+      "id"
+    ],
+    "_addStyle": [
+      "style"
+    ],
+    "_addNumFmtStr": [
+      "formatCode"
+    ],
+    "_addFont": [
+      "font"
+    ],
+    "_addBorder": [
+      "border"
+    ],
+    "_addFill": [
+      "fill"
+    ]
+  },
+  "addStyle": [
+    "name",
+    "group",
+    "styleId"
+  ],
+  "StylesXformMock": {
+    "constructor": [],
+    "parseStream": [
+      "stream"
+    ],
+    "addStyleModel": [
+      "model",
+      "cellType"
+    ],
+    "dateStyleId": [],
+    "getStyleModel": []
+  },
+  "UnderlineXform": {
+    "constructor": [
+      "model"
+    ],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "CustomFilterXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "FilterColumnXform": {
+    "constructor": [],
+    "tag": [],
+    "prepare": [
+      "model",
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": [
+      "name"
+    ]
+  },
+  "FilterXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "TableColumnXform": {
+    "tag": [],
+    "prepare": [
+      "model",
+      "options"
+    ],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "TableStyleInfoXform": {
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [],
+    "parseClose": []
+  },
+  "TableXform": {
+    "constructor": [],
+    "prepare": [
+      "model",
+      "options"
+    ],
+    "tag": [],
+    "render": [
+      "xmlStream",
+      "model"
+    ],
+    "parseOpen": [
+      "node"
+    ],
+    "parseText": [
+      "text"
+    ],
+    "parseClose": [
+      "name"
+    ],
+    "reconcile": [
+      "model",
+      "options"
+    ]
+  },
+  "fsReadFileAsync": [
+    "filename",
+    "options"
+  ],
+  "XLSX": {
+    "constructor": [
+      "workbook"
+    ],
+    "readFile": [
+      "filename",
+      "options"
+    ],
+    "parseRels": [
+      "stream"
+    ],
+    "parseWorkbook": [
+      "stream"
+    ],
+    "parseSharedStrings": [
+      "stream"
+    ],
+    "reconcile": [
+      "model",
+      "options"
+    ],
+    "_processWorksheetEntry": [
+      "stream",
+      "model",
+      "sheetNo",
+      "options",
+      "path"
+    ],
+    "_processCommentEntry": [
+      "stream",
+      "model",
+      "name"
+    ],
+    "_processTableEntry": [
+      "stream",
+      "model",
+      "name"
+    ],
+    "_processWorksheetRelsEntry": [
+      "stream",
+      "model",
+      "sheetNo"
+    ],
+    "_processMediaEntry": [
+      "entry",
+      "model",
+      "filename"
+    ],
+    "_processDrawingEntry": [
+      "entry",
+      "model",
+      "name"
+    ],
+    "_processDrawingRelsEntry": [
+      "entry",
+      "model",
+      "name"
+    ],
+    "_processVmlDrawingEntry": [
+      "entry",
+      "model",
+      "name"
+    ],
+    "_processThemeEntry": [
+      "entry",
+      "model",
+      "name"
+    ],
+    "createInputStream": [],
+    "read": [
+      "stream",
+      "options"
+    ],
+    "load": [
+      "data",
+      "options"
+    ],
+    "addMedia": [
+      "zip",
+      "model"
+    ],
+    "addDrawings": [
+      "zip",
+      "model"
+    ],
+    "addTables": [
+      "zip",
+      "model"
+    ],
+    "addContentTypes": [
+      "zip",
+      "model"
+    ],
+    "addApp": [
+      "zip",
+      "model"
+    ],
+    "addCore": [
+      "zip",
+      "model"
+    ],
+    "addThemes": [
+      "zip",
+      "model"
+    ],
+    "addOfficeRels": [
+      "zip"
+    ],
+    "addWorkbookRels": [
+      "zip",
+      "model"
+    ],
+    "addSharedStrings": [
+      "zip",
+      "model"
+    ],
+    "addStyles": [
+      "zip",
+      "model"
+    ],
+    "addWorkbook": [
+      "zip",
+      "model"
+    ],
+    "addWorksheets": [
+      "zip",
+      "model"
+    ],
+    "_finalize": [
+      "zip"
+    ],
+    "prepareModel": [
+      "model",
+      "options"
+    ],
+    "write": [
+      "stream",
+      "options"
+    ],
+    "writeFile": [
+      "filename",
+      "options"
+    ],
+    "writeBuffer": [
+      "options"
+    ]
+  },
+  "r": [],
+  "o": [
+    "e",
+    "t",
+    "r"
+  ],
+  "CsvFormatterStream": {
+    "constructor": [
+      "formatterOptions"
+    ],
+    "transform": [
+      "transformFunction"
+    ],
+    "_transform": [
+      "row",
+      "encoding",
+      "cb"
+    ],
+    "_flush": [
+      "cb"
+    ]
+  },
+  "FormatterOptions": {
+    "constructor": []
+  },
+  "FieldFormatter": {
+    "constructor": [
+      "formatterOptions"
+    ],
+    "headers": [
+      "headers"
+    ],
+    "shouldQuote": [
+      "fieldIndex",
+      "isHeader"
+    ],
+    "format": [
+      "field",
+      "fieldIndex",
+      "isHeader"
+    ],
+    "quoteField": [
+      "field"
+    ]
+  },
+  "RowFormatter": {
+    "constructor": [
+      "formatterOptions"
+    ],
+    "isRowHashArray": [
+      "row"
+    ],
+    "isRowArray": [
+      "row"
+    ],
+    "gatherHeaders": [
+      "row"
+    ],
+    "createTransform": [
+      "transformFunction"
+    ],
+    "rowTransform": [
+      "transformFunction"
+    ],
+    "format": [
+      "row",
+      "cb"
+    ],
+    "finish": [
+      "cb"
+    ],
+    "checkHeaders": [
+      "row"
+    ],
+    "gatherColumns": [
+      "row"
+    ],
+    "callTransformer": [
+      "row",
+      "cb"
+    ],
+    "formatColumns": [
+      "columns",
+      "isHeadersRow"
+    ]
+  },
+  "CsvParserStream": {
+    "constructor": [
+      "parserOptions"
+    ],
+    "hasHitRowLimit": [],
+    "shouldEmitRows": [],
+    "shouldSkipLine": [],
+    "transform": [
+      "transformFunction"
+    ],
+    "validate": [
+      "validateFunction"
+    ],
+    "emit": [
+      "event"
+    ],
+    "_transform": [
+      "data",
+      "encoding",
+      "done"
+    ],
+    "_flush": [
+      "done"
+    ],
+    "parse": [
+      "data",
+      "hasMoreData"
+    ],
+    "processRows": [
+      "rows",
+      "cb"
+    ],
+    "transformRow": [
+      "parsedRow",
+      "cb"
+    ],
+    "checkAndEmitHeaders": [],
+    "skipRow": [
+      "cb"
+    ],
+    "pushRow": [
+      "row",
+      "cb"
+    ],
+    "wrapDoneCallback": [
+      "done"
+    ]
+  },
+  "iterate": [
+    "i"
+  ],
+  "callNext": [
+    "err"
+  ],
+  "ParserOptions": {
+    "constructor": [
+      "opts"
+    ]
+  },
+  "Parser": {
+    "constructor": [
+      "parserOptions"
+    ],
+    "removeBOM": [
+      "line"
+    ],
+    "parse": [
+      "line",
+      "hasMoreData"
+    ],
+    "parseWithoutComments": [
+      "scanner"
+    ],
+    "parseWithComments": [
+      "scanner"
+    ],
+    "parseRow": [
+      "scanner",
+      "rows"
+    ]
+  },
+  "RowParser": {
+    "constructor": [
+      "parserOptions"
+    ],
+    "isEmptyRow": [
+      "row"
+    ],
+    "parse": [
+      "scanner"
+    ],
+    "getStartToken": [
+      "scanner",
+      "columns"
+    ],
+    "shouldSkipColumnParse": [
+      "scanner",
+      "currentToken",
+      "columns"
+    ]
+  },
+  "Scanner": {
+    "constructor": [
+      "args"
+    ],
+    "hasMoreCharacters": [],
+    "nextNonSpaceToken": [],
+    "nextCharacterToken": [],
+    "lineFromCursor": [],
+    "advancePastLine": [],
+    "advanceTo": [
+      "cursor"
+    ],
+    "advanceToToken": [
+      "token"
+    ],
+    "advancePastToken": [
+      "token"
+    ],
+    "truncateToCursor": []
+  },
+  "Token": {
+    "constructor": [
+      "tokenArgs"
+    ],
+    "isTokenRowDelimiter": [
+      "token"
+    ],
+    "isTokenCarriageReturn": [
+      "token",
+      "parserOptions"
+    ],
+    "isTokenComment": [
+      "token",
+      "parserOptions"
+    ],
+    "isTokenEscapeCharacter": [
+      "token",
+      "parserOptions"
+    ],
+    "isTokenQuote": [
+      "token",
+      "parserOptions"
+    ],
+    "isTokenDelimiter": [
+      "token",
+      "parserOptions"
+    ]
+  },
+  "ColumnFormatter": {
+    "constructor": [
+      "parserOptions"
+    ]
+  },
+  "ColumnParser": {
+    "constructor": [
+      "parserOptions"
+    ],
+    "parse": [
+      "scanner"
+    ]
+  },
+  "NonQuotedColumnParser": {
+    "constructor": [
+      "parserOptions"
+    ],
+    "parse": [
+      "scanner"
+    ]
+  },
+  "QuotedColumnParser": {
+    "constructor": [
+      "parserOptions"
+    ],
+    "parse": [
+      "scanner"
+    ],
+    "gatherDataBetweenQuotes": [
+      "scanner"
+    ],
+    "checkForMalformedColumn": [
+      "scanner"
+    ]
+  },
+  "HeaderTransformer": {
+    "constructor": [
+      "parserOptions"
+    ],
+    "transform": [
+      "row",
+      "cb"
+    ],
+    "shouldMapRow": [
+      "row"
+    ],
+    "processRow": [
+      "row"
+    ],
+    "mapHeaders": [
+      "row"
+    ],
+    "setHeaders": [
+      "headers"
+    ]
+  },
+  "RowTransformerValidator": {
+    "constructor": [],
+    "createTransform": [
+      "transformFunction"
+    ],
+    "createValidator": [
+      "validateFunction"
+    ],
+    "rowTransform": [
+      "transformFunction"
+    ],
+    "rowValidator": [
+      "validateFunction"
+    ],
+    "transformAndValidate": [
+      "row",
+      "cb"
+    ],
+    "callTransformer": [
+      "row",
+      "cb"
+    ],
+    "callValidator": [
+      "row",
+      "cb"
+    ]
+  },
+  "Entity": [
+    "name",
+    "body"
+  ],
+  "Generated": [
+    "entity"
+  ],
+  "DecoderBuffer": [
+    "base",
+    "options"
+  ],
+  "EncoderBuffer": [
+    "value",
+    "reporter"
+  ],
+  "Node": [
+    "enc",
+    "parent",
+    "name"
+  ],
+  "Reporter": [
+    "options"
+  ],
+  "ReporterError": [
+    "path",
+    "msg"
+  ],
+  "reverse": [
+    "map"
+  ],
+  "DERDecoder": [
+    "entity"
+  ],
+  "DERNode": [
+    "parent"
+  ],
+  "derDecodeTag": [
+    "buf",
+    "fail"
+  ],
+  "derDecodeLen": [
+    "buf",
+    "primitive",
+    "fail"
+  ],
+  "PEMDecoder": [
+    "entity"
+  ],
+  "DEREncoder": [
+    "entity"
+  ],
+  "two": [
+    "num"
+  ],
+  "encodeTag": [
+    "tag",
+    "primitive",
+    "cls",
+    "reporter"
+  ],
+  "PEMEncoder": [
+    "entity"
+  ],
+  "TempCtor": [],
+  "BN": [
+    "number",
+    "base",
+    "endian"
+  ],
+  "parseHex4Bits": [
+    "string",
+    "index"
+  ],
+  "parseHexByte": [
+    "string",
+    "lowerBound",
+    "index"
+  ],
+  "parseBase": [
+    "str",
+    "start",
+    "end",
+    "mul"
+  ],
+  "toBitArray": [
+    "num"
+  ],
+  "smallMulTo": [
+    "self",
+    "num",
+    "out"
+  ],
+  "comb10MulTo": [
+    "self",
+    "num",
+    "out"
+  ],
+  "bigMulTo": [
+    "self",
+    "num",
+    "out"
+  ],
+  "jumboMulTo": [
+    "self",
+    "num",
+    "out"
+  ],
+  "FFTM": [
+    "x",
+    "y"
+  ],
+  "MPrime": [
+    "name",
+    "p"
+  ],
+  "K256": [],
+  "P224": [],
+  "P192": [],
+  "P25519": [],
+  "Red": [
+    "m"
+  ],
+  "Mont": [
+    "m"
+  ],
+  "getLens": [
+    "b64"
+  ],
+  "byteLength": [
+    "string",
+    "encoding"
+  ],
+  "_byteLength": [
+    "b64",
+    "validLen",
+    "placeHoldersLen"
+  ],
+  "toByteArray": [
+    "b64"
+  ],
+  "tripletToBase64": [
+    "num"
+  ],
+  "encodeChunk": [
+    "uint8",
+    "start",
+    "end"
+  ],
+  "fromByteArray": [
+    "uint8"
+  ],
+  "move": [
+    "dest",
+    "src"
+  ],
+  "inspect": [
+    "obj",
+    "opts"
+  ],
+  "allocate": [
+    "ArrayType",
+    "size"
+  ],
+  "Rand": [
+    "rand"
+  ],
+  "asUInt32Array": [
+    "buf"
+  ],
+  "scrubVec": [
+    "v"
+  ],
+  "cryptBlock": [
+    "M",
+    "keySchedule",
+    "SUB_MIX",
+    "SBOX",
+    "nRounds"
+  ],
+  "AES": [
+    "key"
+  ],
+  "xorTest": [
+    "a",
+    "b"
+  ],
+  "calcIv": [
+    "self",
+    "iv",
+    "ck"
+  ],
+  "StreamCipher": [
+    "mode",
+    "key",
+    "iv",
+    "decrypt"
+  ],
+  "getCiphers": [],
+  "Decipher": [
+    "mode",
+    "key",
+    "iv"
+  ],
+  "Splitter": [],
+  "unpad": [
+    "last"
+  ],
+  "createDecipheriv": [
+    "suite",
+    "key",
+    "iv"
+  ],
+  "createDecipher": [
+    "suite",
+    "password"
+  ],
+  "Cipher": [
+    "options"
+  ],
+  "createCipheriv": [
+    "suite",
+    "key",
+    "iv"
+  ],
+  "createCipher": [
+    "suite",
+    "password"
+  ],
+  "toArray": [
+    "msg",
+    "enc"
+  ],
+  "fromArray": [
+    "out"
+  ],
+  "GHASH": [
+    "key"
+  ],
+  "incr32": [
+    "iv"
+  ],
+  "encryptStart": [
+    "self",
+    "data",
+    "decrypt"
+  ],
+  "encryptByte": [
+    "self",
+    "byteParam",
+    "decrypt"
+  ],
+  "shiftIn": [
+    "buffer",
+    "value"
+  ],
+  "getBlock": [
+    "self"
+  ],
+  "DES": [
+    "options"
+  ],
+  "blind": [
+    "priv"
+  ],
+  "getr": [
+    "priv"
+  ],
+  "crt": [
+    "msg",
+    "priv"
+  ],
+  "Sign": [
+    "algorithm"
+  ],
+  "Verify": [
+    "algorithm"
+  ],
+  "createSign": [
+    "algorithm"
+  ],
+  "createVerify": [
+    "algorithm"
+  ],
+  "sign": [
+    "hash",
+    "key",
+    "hashType",
+    "signType",
+    "tag"
+  ],
+  "ecSign": [
+    "hash",
+    "priv"
+  ],
+  "dsaSign": [
+    "hash",
+    "priv",
+    "algo"
+  ],
+  "toDER": [
+    "r",
+    "s"
+  ],
+  "getKey": [
+    "x",
+    "q",
+    "hash",
+    "algo"
+  ],
+  "bits2int": [
+    "obits",
+    "q"
+  ],
+  "bits2octets": [
+    "bits",
+    "q"
+  ],
+  "makeKey": [
+    "q",
+    "kv",
+    "algo"
+  ],
+  "makeR": [
+    "g",
+    "k",
+    "p",
+    "q"
+  ],
+  "verify": [
+    "sig",
+    "hash",
+    "key",
+    "signType",
+    "tag"
+  ],
+  "ecVerify": [
+    "sig",
+    "hash",
+    "pub"
+  ],
+  "dsaVerify": [
+    "sig",
+    "hash",
+    "pub"
+  ],
+  "checkValue": [
+    "b",
+    "q"
+  ],
+  "copyProps": [
+    "src",
+    "dst"
+  ],
+  "SafeBuffer": [
+    "arg",
+    "encodingOrOffset",
+    "length"
+  ],
+  "_normalizeEncoding": [
+    "enc"
+  ],
+  "normalizeEncoding": [
+    "enc"
+  ],
+  "StringDecoder": [
+    "encoding"
+  ],
+  "utf8CheckByte": [
+    "byte"
+  ],
+  "utf8CheckIncomplete": [
+    "self",
+    "buf",
+    "i"
+  ],
+  "utf8CheckExtraBytes": [
+    "self",
+    "buf",
+    "p"
+  ],
+  "utf8FillLast": [
+    "buf"
+  ],
+  "utf8Text": [
+    "buf",
+    "i"
+  ],
+  "utf8End": [
+    "buf"
+  ],
+  "utf16Text": [
+    "buf",
+    "i"
+  ],
+  "utf16End": [
+    "buf"
+  ],
+  "base64Text": [
+    "buf",
+    "i"
+  ],
+  "base64End": [
+    "buf"
+  ],
+  "simpleWrite": [
+    "buf"
+  ],
+  "simpleEnd": [
+    "buf"
+  ],
+  "typedArraySupport": [],
+  "createBuffer": [
+    "length"
+  ],
+  "Buffer": [
+    "arg",
+    "encodingOrOffset",
+    "length"
+  ],
+  "from": [
+    "value",
+    "encodingOrOffset",
+    "length"
+  ],
+  "assertSize": [
+    "size",
+    "offset",
+    "length"
+  ],
+  "alloc": [
+    "size",
+    "fill",
+    "encoding"
+  ],
+  "allocUnsafe": [
+    "size"
+  ],
+  "fromString": [
+    "string",
+    "encoding"
+  ],
+  "fromArrayLike": [
+    "array"
+  ],
+  "fromArrayBuffer": [
+    "array",
+    "byteOffset",
+    "length"
+  ],
+  "fromObject": [
+    "obj"
+  ],
+  "checked": [
+    "length"
+  ],
+  "SlowBuffer": [
+    "length"
+  ],
+  "slowToString": [
+    "encoding",
+    "start",
+    "end"
+  ],
+  "swap": [
+    "b",
+    "n",
+    "m"
+  ],
+  "bidirectionalIndexOf": [
+    "buffer",
+    "val",
+    "byteOffset",
+    "encoding",
+    "dir"
+  ],
+  "arrayIndexOf": [
+    "arr",
+    "val",
+    "byteOffset",
+    "encoding",
+    "dir"
+  ],
+  "read": [
+    "buf",
+    "i"
+  ],
+  "hexWrite": [
+    "buf",
+    "string",
+    "offset",
+    "length"
+  ],
+  "utf8Write": [
+    "buf",
+    "string",
+    "offset",
+    "length"
+  ],
+  "asciiWrite": [
+    "buf",
+    "string",
+    "offset",
+    "length"
+  ],
+  "latin1Write": [
+    "buf",
+    "string",
+    "offset",
+    "length"
+  ],
+  "base64Write": [
+    "buf",
+    "string",
+    "offset",
+    "length"
+  ],
+  "ucs2Write": [
+    "buf",
+    "string",
+    "offset",
+    "length"
+  ],
+  "base64Slice": [
+    "buf",
+    "start",
+    "end"
+  ],
+  "utf8Slice": [
+    "buf",
+    "start",
+    "end"
+  ],
+  "decodeCodePointsArray": [
+    "codePoints"
+  ],
+  "asciiSlice": [
+    "buf",
+    "start",
+    "end"
+  ],
+  "latin1Slice": [
+    "buf",
+    "start",
+    "end"
+  ],
+  "hexSlice": [
+    "buf",
+    "start",
+    "end"
+  ],
+  "utf16leSlice": [
+    "buf",
+    "start",
+    "end"
+  ],
+  "checkOffset": [
+    "offset",
+    "ext",
+    "length"
+  ],
+  "checkInt": [
+    "buf",
+    "value",
+    "offset",
+    "ext",
+    "max",
+    "min"
+  ],
+  "checkIEEE754": [
+    "buf",
+    "value",
+    "offset",
+    "ext",
+    "max",
+    "min"
+  ],
+  "writeFloat": [
+    "buf",
+    "value",
+    "offset",
+    "littleEndian",
+    "noAssert"
+  ],
+  "writeDouble": [
+    "buf",
+    "value",
+    "offset",
+    "littleEndian",
+    "noAssert"
+  ],
+  "base64clean": [
+    "str"
+  ],
+  "toHex": [
+    "msg"
+  ],
+  "utf8ToBytes": [
+    "string",
+    "units"
+  ],
+  "asciiToBytes": [
+    "str"
+  ],
+  "utf16leToBytes": [
+    "str",
+    "units"
+  ],
+  "base64ToBytes": [
+    "str"
+  ],
+  "blitBuffer": [
+    "src",
+    "dst",
+    "offset",
+    "length"
+  ],
+  "isInstance": [
+    "obj",
+    "type"
+  ],
+  "numberIsNaN": [
+    "obj"
+  ],
+  "CipherBase": [
+    "hashMode"
+  ],
+  "isArray": [
+    "ar"
+  ],
+  "isBoolean": [
+    "arg"
+  ],
+  "isNull": [
+    "arg"
+  ],
+  "isNullOrUndefined": [
+    "arg"
+  ],
+  "isNumber": [
+    "arg"
+  ],
+  "isString": [
+    "arg"
+  ],
+  "isSymbol": [
+    "arg"
+  ],
+  "isUndefined": [
+    "arg"
+  ],
+  "isRegExp": [
+    "re"
+  ],
+  "isObject": [
+    "arg"
+  ],
+  "isDate": [
+    "d"
+  ],
+  "isError": [
+    "e"
+  ],
+  "isFunction": [
+    "arg"
+  ],
+  "isPrimitive": [
+    "arg"
+  ],
+  "objectToString": [
+    "o"
+  ],
+  "ECDH": [
+    "curve"
+  ],
+  "formatReturnValue": [
+    "bn",
+    "enc"
+  ],
+  "Hash": [
+    "blockSize",
+    "finalSize"
+  ],
+  "Hmac": [
+    "alg",
+    "key",
+    "saltLen"
+  ],
+  "m": [
+    "e"
+  ],
+  "S": [
+    "e"
+  ],
+  "w": [
+    "e"
+  ],
+  "O": [
+    "e"
+  ],
+  "M": [
+    "e"
+  ],
+  "l": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "i",
+    "o",
+    "a"
+  ],
+  "$": [
+    "t",
+    "e"
+  ],
+  "y": [
+    "e"
+  ],
+  "h": [
+    "e"
+  ],
+  "d": [
+    "e"
+  ],
+  "D": [
+    "e",
+    "t"
+  ],
+  "s": [
+    "e"
+  ],
+  "a": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "i",
+    "o",
+    "a"
+  ],
+  "u": [
+    "e",
+    "t",
+    "r"
+  ],
+  "c": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "i",
+    "o",
+    "a"
+  ],
+  "CBCState": [
+    "iv"
+  ],
+  "instantiate": [
+    "Base"
+  ],
+  "CBC": [
+    "options"
+  ],
+  "DESState": [],
+  "EDEState": [
+    "type",
+    "key"
+  ],
+  "EDE": [
+    "options"
+  ],
+  "getDiffieHellman": [
+    "mod"
+  ],
+  "createDiffieHellman": [
+    "prime",
+    "enc",
+    "generator",
+    "genc"
+  ],
+  "setPublicKey": [
+    "pub",
+    "enc"
+  ],
+  "setPrivateKey": [
+    "priv",
+    "enc"
+  ],
+  "checkPrime": [
+    "prime",
+    "generator"
+  ],
+  "DH": [
+    "prime",
+    "generator",
+    "malleable"
+  ],
+  "_getPrimes": [],
+  "simpleSieve": [
+    "p"
+  ],
+  "fermatTest": [
+    "p"
+  ],
+  "findPrime": [
+    "bits",
+    "gen"
+  ],
+  "BaseCurve": [
+    "type",
+    "conf"
+  ],
+  "BasePoint": [
+    "curve",
+    "type"
+  ],
+  "EdwardsCurve": [
+    "conf"
+  ],
+  "Point": [
+    "curve",
+    "x",
+    "y",
+    "isRed"
+  ],
+  "MontCurve": [
+    "conf"
+  ],
+  "ShortCurve": [
+    "conf"
+  ],
+  "endoMul": [
+    "p"
+  ],
+  "obj2point": [
+    "obj"
+  ],
+  "negate": [
+    "p"
+  ],
+  "JPoint": [
+    "curve",
+    "x",
+    "y",
+    "z"
+  ],
+  "PresetCurve": [
+    "options"
+  ],
+  "defineCurve": [
+    "name",
+    "options"
+  ],
+  "EC": [
+    "options"
+  ],
+  "KeyPair": [
+    "eddsa",
+    "params"
+  ],
+  "Signature": [
+    "eddsa",
+    "sig"
+  ],
+  "Position": [],
+  "getLength": [
+    "buf",
+    "p"
+  ],
+  "rmPadding": [
+    "buf"
+  ],
+  "constructLength": [
+    "arr",
+    "len"
+  ],
+  "EDDSA": [
+    "curve"
+  ],
+  "getNAF": [
+    "num",
+    "w",
+    "bits"
+  ],
+  "getJSF": [
+    "k1",
+    "k2"
+  ],
+  "cachedProperty": [
+    "obj",
+    "name",
+    "computer"
+  ],
+  "parseBytes": [
+    "bytes"
+  ],
+  "intFromLE": [
+    "bytes"
+  ],
+  "EventEmitter": [],
+  "$getMaxListeners": [
+    "that"
+  ],
+  "emitNone": [
+    "handler",
+    "isFn",
+    "self"
+  ],
+  "emitOne": [
+    "handler",
+    "isFn",
+    "self",
+    "arg1"
+  ],
+  "emitTwo": [
+    "handler",
+    "isFn",
+    "self",
+    "arg1",
+    "arg2"
+  ],
+  "emitThree": [
+    "handler",
+    "isFn",
+    "self",
+    "arg1",
+    "arg2",
+    "arg3"
+  ],
+  "emitMany": [
+    "handler",
+    "isFn",
+    "self",
+    "args"
+  ],
+  "_addListener": [
+    "target",
+    "type",
+    "listener",
+    "prepend"
+  ],
+  "onceWrapper": [],
+  "_onceWrap": [
+    "target",
+    "type",
+    "listener"
+  ],
+  "_listeners": [
+    "target",
+    "type",
+    "unwrap"
+  ],
+  "listenerCount": [
+    "type"
+  ],
+  "spliceOne": [
+    "list",
+    "index"
+  ],
+  "arrayClone": [
+    "arr",
+    "n"
+  ],
+  "unwrapListeners": [
+    "arr"
+  ],
+  "objectCreatePolyfill": [
+    "proto"
+  ],
+  "F": [
+    "e"
+  ],
+  "objectKeysPolyfill": [
+    "obj"
+  ],
+  "functionBindPolyfill": [
+    "context"
+  ],
+  "EVP_BytesToKey": [
+    "password",
+    "salt",
+    "keyBits",
+    "ivLen"
+  ],
+  "throwIfNotStringOrBuffer": [
+    "val",
+    "prefix"
+  ],
+  "HashBase": [
+    "blockSize"
+  ],
+  "BlockHash": [],
+  "RIPEMD160": [],
+  "f": [
+    "e"
+  ],
+  "K": [
+    "e"
+  ],
+  "Kh": [
+    "j"
+  ],
+  "SHA1": [],
+  "SHA224": [],
+  "SHA256": [],
+  "SHA384": [],
+  "SHA512": [],
+  "ch64_hi": [
+    "xh",
+    "xl",
+    "yh",
+    "yl",
+    "zh"
+  ],
+  "ch64_lo": [
+    "xh",
+    "xl",
+    "yh",
+    "yl",
+    "zh",
+    "zl"
+  ],
+  "maj64_hi": [
+    "xh",
+    "xl",
+    "yh",
+    "yl",
+    "zh"
+  ],
+  "maj64_lo": [
+    "xh",
+    "xl",
+    "yh",
+    "yl",
+    "zh",
+    "zl"
+  ],
+  "s0_512_hi": [
+    "xh",
+    "xl"
+  ],
+  "s0_512_lo": [
+    "xh",
+    "xl"
+  ],
+  "s1_512_hi": [
+    "xh",
+    "xl"
+  ],
+  "s1_512_lo": [
+    "xh",
+    "xl"
+  ],
+  "g0_512_hi": [
+    "xh",
+    "xl"
+  ],
+  "g0_512_lo": [
+    "xh",
+    "xl"
+  ],
+  "g1_512_hi": [
+    "xh",
+    "xl"
+  ],
+  "g1_512_lo": [
+    "xh",
+    "xl"
+  ],
+  "ft_1": [
+    "s",
+    "x",
+    "y",
+    "z"
+  ],
+  "ch32": [
+    "x",
+    "y",
+    "z"
+  ],
+  "maj32": [
+    "x",
+    "y",
+    "z"
+  ],
+  "p32": [
+    "x",
+    "y",
+    "z"
+  ],
+  "s0_256": [
+    "x"
+  ],
+  "s1_256": [
+    "x"
+  ],
+  "g0_256": [
+    "x"
+  ],
+  "g1_256": [
+    "x"
+  ],
+  "isSurrogatePair": [
+    "msg",
+    "i"
+  ],
+  "htonl": [
+    "w"
+  ],
+  "toHex32": [
+    "msg",
+    "endian"
+  ],
+  "zero2": [
+    "word"
+  ],
+  "zero8": [
+    "word"
+  ],
+  "join32": [
+    "msg",
+    "start",
+    "end",
+    "endian"
+  ],
+  "split32": [
+    "msg",
+    "endian"
+  ],
+  "rotr32": [
+    "w",
+    "b"
+  ],
+  "rotl32": [
+    "w",
+    "b"
+  ],
+  "sum32": [
+    "a",
+    "b"
+  ],
+  "sum32_3": [
+    "a",
+    "b",
+    "c"
+  ],
+  "sum32_4": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "sum32_5": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+  ],
+  "sum64": [
+    "buf",
+    "pos",
+    "ah",
+    "al"
+  ],
+  "sum64_hi": [
+    "ah",
+    "al",
+    "bh",
+    "bl"
+  ],
+  "sum64_lo": [
+    "ah",
+    "al",
+    "bh",
+    "bl"
+  ],
+  "sum64_4_hi": [
+    "ah",
+    "al",
+    "bh",
+    "bl",
+    "ch",
+    "cl",
+    "dh",
+    "dl"
+  ],
+  "sum64_4_lo": [
+    "ah",
+    "al",
+    "bh",
+    "bl",
+    "ch",
+    "cl",
+    "dh",
+    "dl"
+  ],
+  "sum64_5_hi": [
+    "ah",
+    "al",
+    "bh",
+    "bl",
+    "ch",
+    "cl",
+    "dh",
+    "dl",
+    "eh",
+    "el"
+  ],
+  "sum64_5_lo": [
+    "ah",
+    "al",
+    "bh",
+    "bl",
+    "ch",
+    "cl",
+    "dh",
+    "dl",
+    "eh",
+    "el"
+  ],
+  "rotr64_hi": [
+    "ah",
+    "al",
+    "num"
+  ],
+  "rotr64_lo": [
+    "ah",
+    "al",
+    "num"
+  ],
+  "shr64_hi": [
+    "ah",
+    "al",
+    "num"
+  ],
+  "shr64_lo": [
+    "ah",
+    "al",
+    "num"
+  ],
+  "HmacDRBG": [
+    "options"
+  ],
+  "A": [
+    "e"
+  ],
+  "n": [
+    "e"
+  ],
+  "_": [
+    "e"
+  ],
+  "g": [
+    "e"
+  ],
+  "b": [
+    "e"
+  ],
+  "i": [
+    "e",
+    "t"
+  ],
+  "p": [
+    "e"
+  ],
+  "R": [
+    "e",
+    "t"
+  ],
+  "T": [],
+  "N": [
+    "e"
+  ],
+  "U": [
+    "e",
+    "t"
+  ],
+  "P": [
+    "e",
+    "t"
+  ],
+  "L": [
+    "e",
+    "t"
+  ],
+  "j": [
+    "e",
+    "t"
+  ],
+  "Z": [
+    "e",
+    "t",
+    "r"
+  ],
+  "W": [
+    "e",
+    "t",
+    "r"
+  ],
+  "H": [
+    "e"
+  ],
+  "G": [
+    "e",
+    "t",
+    "r"
+  ],
+  "Y": [
+    "e"
+  ],
+  "X": [
+    "e"
+  ],
+  "V": [
+    "e",
+    "t"
+  ],
+  "J": [
+    "e",
+    "t",
+    "r"
+  ],
+  "baseToString": [
+    "value"
+  ],
+  "isObjectLike": [
+    "value"
+  ],
+  "toString": [
+    "value"
+  ],
+  "escapeRegExp": [
+    "string"
+  ],
+  "arrayAggregator": [
+    "array",
+    "setter",
+    "iteratee",
+    "accumulator"
+  ],
+  "arraySome": [
+    "array",
+    "predicate"
+  ],
+  "baseProperty": [
+    "key"
+  ],
+  "baseTimes": [
+    "n",
+    "iteratee"
+  ],
+  "baseUnary": [
+    "func"
+  ],
+  "getValue": [
+    "object",
+    "key"
+  ],
+  "isHostObject": [
+    "value"
+  ],
+  "mapToArray": [
+    "map"
+  ],
+  "overArg": [
+    "func",
+    "transform"
+  ],
+  "setToArray": [
+    "set"
+  ],
+  "hashClear": [],
+  "hashDelete": [
+    "key"
+  ],
+  "hashGet": [
+    "key"
+  ],
+  "hashHas": [
+    "key"
+  ],
+  "hashSet": [
+    "key",
+    "value"
+  ],
+  "ListCache": [
+    "entries"
+  ],
+  "listCacheClear": [],
+  "listCacheDelete": [
+    "key"
+  ],
+  "listCacheGet": [
+    "key"
+  ],
+  "listCacheHas": [
+    "key"
+  ],
+  "listCacheSet": [
+    "key",
+    "value"
+  ],
+  "MapCache": [
+    "entries"
+  ],
+  "mapCacheClear": [],
+  "mapCacheDelete": [
+    "key"
+  ],
+  "mapCacheGet": [
+    "key"
+  ],
+  "mapCacheHas": [
+    "key"
+  ],
+  "mapCacheSet": [
+    "key",
+    "value"
+  ],
+  "SetCache": [
+    "values"
+  ],
+  "setCacheAdd": [
+    "value"
+  ],
+  "setCacheHas": [
+    "value"
+  ],
+  "Stack": [
+    "entries"
+  ],
+  "stackClear": [],
+  "stackDelete": [
+    "key"
+  ],
+  "stackGet": [
+    "key"
+  ],
+  "stackHas": [
+    "key"
+  ],
+  "stackSet": [
+    "key",
+    "value"
+  ],
+  "arrayLikeKeys": [
+    "value",
+    "inherited"
+  ],
+  "assocIndexOf": [
+    "array",
+    "key"
+  ],
+  "baseAggregator": [
+    "collection",
+    "setter",
+    "iteratee",
+    "accumulator"
+  ],
+  "baseForOwn": [
+    "object",
+    "iteratee"
+  ],
+  "baseGet": [
+    "object",
+    "path"
+  ],
+  "baseGetTag": [
+    "value"
+  ],
+  "baseHasIn": [
+    "object",
+    "key"
+  ],
+  "baseIsEqual": [
+    "value",
+    "other",
+    "bitmask",
+    "customizer",
+    "stack"
+  ],
+  "baseIsEqualDeep": [
+    "object",
+    "other",
+    "bitmask",
+    "customizer",
+    "equalFunc",
+    "stack"
+  ],
+  "baseIsMatch": [
+    "object",
+    "source",
+    "matchData",
+    "customizer"
+  ],
+  "baseIsNative": [
+    "value"
+  ],
+  "baseIsTypedArray": [
+    "value"
+  ],
+  "baseIteratee": [
+    "value"
+  ],
+  "baseKeys": [
+    "object"
+  ],
+  "baseMatches": [
+    "source"
+  ],
+  "baseMatchesProperty": [
+    "path",
+    "srcValue"
+  ],
+  "basePropertyDeep": [
+    "path"
+  ],
+  "castPath": [
+    "value"
+  ],
+  "createAggregator": [
+    "setter",
+    "initializer"
+  ],
+  "createBaseEach": [
+    "eachFunc",
+    "fromRight"
+  ],
+  "createBaseFor": [
+    "fromRight"
+  ],
+  "equalArrays": [
+    "array",
+    "other",
+    "bitmask",
+    "customizer",
+    "equalFunc",
+    "stack"
+  ],
+  "equalByTag": [
+    "object",
+    "other",
+    "tag",
+    "bitmask",
+    "customizer",
+    "equalFunc",
+    "stack"
+  ],
+  "equalObjects": [
+    "object",
+    "other",
+    "bitmask",
+    "customizer",
+    "equalFunc",
+    "stack"
+  ],
+  "getMapData": [
+    "map",
+    "key"
+  ],
+  "getMatchData": [
+    "object"
+  ],
+  "getNative": [
+    "object",
+    "key"
+  ],
+  "hasPath": [
+    "object",
+    "path",
+    "hasFunc"
+  ],
+  "isIndex": [
+    "value",
+    "length"
+  ],
+  "isKey": [
+    "value",
+    "object"
+  ],
+  "isKeyable": [
+    "value"
+  ],
+  "isMasked": [
+    "func"
+  ],
+  "isPrototype": [
+    "value"
+  ],
+  "isStrictComparable": [
+    "value"
+  ],
+  "matchesStrictComparable": [
+    "key",
+    "srcValue"
+  ],
+  "toKey": [
+    "value"
+  ],
+  "toSource": [
+    "func"
+  ],
+  "memoize": [
+    "func",
+    "resolver"
+  ],
+  "memoized": [],
+  "eq": [
+    "value",
+    "other"
+  ],
+  "isArguments": [
+    "value"
+  ],
+  "isArrayLike": [
+    "value"
+  ],
+  "isArrayLikeObject": [
+    "value"
+  ],
+  "isLength": [
+    "value"
+  ],
+  "get": [
+    "object",
+    "path",
+    "defaultValue"
+  ],
+  "hasIn": [
+    "object",
+    "path"
+  ],
+  "keys": [
+    "object"
+  ],
+  "identity": [
+    "value"
+  ],
+  "property": [
+    "path"
+  ],
+  "arrayFilter": [
+    "array",
+    "predicate"
+  ],
+  "arrayPush": [
+    "array",
+    "values"
+  ],
+  "cacheHas": [
+    "cache",
+    "key"
+  ],
+  "baseGetAllKeys": [
+    "object",
+    "keysFunc",
+    "symbolsFunc"
+  ],
+  "baseIsArguments": [
+    "value"
+  ],
+  "getAllKeys": [
+    "object"
+  ],
+  "getRawTag": [
+    "value"
+  ],
+  "isEqual": [
+    "value",
+    "other"
+  ],
+  "stubArray": [],
+  "stubFalse": [],
+  "isNil": [
+    "value"
+  ],
+  "arrayIncludes": [
+    "array",
+    "value"
+  ],
+  "arrayIncludesWith": [
+    "array",
+    "value",
+    "comparator"
+  ],
+  "baseFindIndex": [
+    "array",
+    "predicate",
+    "fromIndex",
+    "fromRight"
+  ],
+  "baseIndexOf": [
+    "array",
+    "value",
+    "fromIndex"
+  ],
+  "baseIsNaN": [
+    "value"
+  ],
+  "baseUniq": [
+    "array",
+    "iteratee",
+    "comparator"
+  ],
+  "uniq": [
+    "array"
+  ],
+  "noop": [
+    "err"
+  ],
+  "MD5": [],
+  "rotl": [
+    "x",
+    "n"
+  ],
+  "fnF": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "m",
+    "k",
+    "s"
+  ],
+  "fnG": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "m",
+    "k",
+    "s"
+  ],
+  "fnH": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "m",
+    "k",
+    "s"
+  ],
+  "fnI": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "m",
+    "k",
+    "s"
+  ],
+  "MillerRabin": [
+    "rand"
+  ],
+  "parseKeys": [
+    "buffer"
+  ],
+  "decrypt": [
+    "data",
+    "password"
+  ],
+  "checkNative": [
+    "algo"
+  ],
+  "getNextTick": [],
+  "browserPbkdf2": [
+    "password",
+    "salt",
+    "iterations",
+    "length",
+    "algo"
+  ],
+  "resolvePromise": [
+    "promise",
+    "callback"
+  ],
+  "getDigest": [
+    "alg"
+  ],
+  "shaFunc": [
+    "data"
+  ],
+  "rmd160Func": [
+    "data"
+  ],
+  "pbkdf2": [
+    "password",
+    "salt",
+    "iterations",
+    "keylen",
+    "digest"
+  ],
+  "nextTick": [
+    "fn",
+    "arg1",
+    "arg2",
+    "arg3"
+  ],
+  "defaultSetTimout": [],
+  "defaultClearTimeout": [],
+  "runTimeout": [
+    "fun"
+  ],
+  "runClearTimeout": [
+    "marker"
+  ],
+  "cleanUpNextTick": [],
+  "drainQueue": [],
+  "Item": [
+    "fun",
+    "array"
+  ],
+  "i2ops": [
+    "c"
+  ],
+  "oaep": [
+    "key",
+    "msg"
+  ],
+  "pkcs1": [
+    "key",
+    "msg",
+    "reverse"
+  ],
+  "compare": [
+    "a",
+    "b"
+  ],
+  "nonZero": [
+    "len"
+  ],
+  "withPublic": [
+    "paddedMsg",
+    "key"
+  ],
+  "oldBrowser": [],
+  "randomBytes": [
+    "size",
+    "cb"
+  ],
+  "assertOffset": [
+    "offset",
+    "length"
+  ],
+  "randomFill": [
+    "buf",
+    "offset",
+    "size",
+    "cb"
+  ],
+  "actualFill": [
+    "buf",
+    "offset",
+    "size",
+    "cb"
+  ],
+  "randomFillSync": [
+    "buf",
+    "offset",
+    "size"
+  ],
+  "_inheritsLoose": [
+    "subClass",
+    "superClass"
+  ],
+  "createErrorType": [
+    "code",
+    "message",
+    "Base"
+  ],
+  "getMessage": [
+    "arg1",
+    "arg2",
+    "arg3"
+  ],
+  "NodeError": [
+    "arg1",
+    "arg2",
+    "arg3"
+  ],
+  "oneOf": [
+    "expected",
+    "thing"
+  ],
+  "startsWith": [
+    "str",
+    "search",
+    "pos"
+  ],
+  "endsWith": [
+    "str",
+    "search",
+    "this_len"
+  ],
+  "includes": [
+    "str",
+    "search",
+    "start"
+  ],
+  "Duplex": [
+    "options"
+  ],
+  "onend": [],
+  "onEndNT": [
+    "self"
+  ],
+  "PassThrough": [
+    "options"
+  ],
+  "EElistenerCount": [
+    "emitter",
+    "type"
+  ],
+  "_uint8ArrayToBuffer": [
+    "chunk"
+  ],
+  "_isUint8Array": [
+    "obj"
+  ],
+  "prependListener": [
+    "emitter",
+    "event",
+    "fn"
+  ],
+  "ReadableState": [
+    "options",
+    "stream"
+  ],
+  "Readable": [
+    "options"
+  ],
+  "readableAddChunk": [
+    "stream",
+    "chunk",
+    "encoding",
+    "addToFront",
+    "skipChunkCheck"
+  ],
+  "addChunk": [
+    "stream",
+    "state",
+    "chunk",
+    "addToFront"
+  ],
+  "chunkInvalid": [
+    "state",
+    "chunk"
+  ],
+  "computeNewHighWaterMark": [
+    "n"
+  ],
+  "howMuchToRead": [
+    "n",
+    "state"
+  ],
+  "onEofChunk": [
+    "stream",
+    "state"
+  ],
+  "emitReadable": [
+    "stream"
+  ],
+  "emitReadable_": [
+    "stream"
+  ],
+  "maybeReadMore": [
+    "stream",
+    "state"
+  ],
+  "maybeReadMore_": [
+    "stream",
+    "state"
+  ],
+  "onunpipe": [
+    "readable",
+    "unpipeInfo"
+  ],
+  "cleanup": [],
+  "ondata": [
+    "chunk"
+  ],
+  "onerror": [
+    "er"
+  ],
+  "onclose": [],
+  "onfinish": [],
+  "unpipe": [],
+  "pipeOnDrain": [
+    "src"
+  ],
+  "updateReadableListening": [
+    "self"
+  ],
+  "nReadingNextTick": [
+    "self"
+  ],
+  "resume": [
+    "stream",
+    "state"
+  ],
+  "resume_": [
+    "stream",
+    "state"
+  ],
+  "flow": [
+    "stream"
+  ],
+  "fromList": [
+    "n",
+    "state"
+  ],
+  "endReadable": [
+    "stream"
+  ],
+  "endReadableNT": [
+    "state",
+    "stream"
+  ],
+  "indexOf": [
+    "xs",
+    "x"
+  ],
+  "afterTransform": [
+    "er",
+    "data"
+  ],
+  "Transform": [
+    "options"
+  ],
+  "prefinish": [
+    "stream",
+    "state"
+  ],
+  "done": [
+    "stream",
+    "er",
+    "data"
+  ],
+  "WriteReq": [
+    "chunk",
+    "encoding",
+    "cb"
+  ],
+  "CorkedRequest": [
+    "state"
+  ],
+  "nop": [],
+  "WritableState": [
+    "options",
+    "stream"
+  ],
+  "Writable": [
+    "options"
+  ],
+  "writeAfterEnd": [
+    "stream",
+    "cb"
+  ],
+  "validChunk": [
+    "stream",
+    "state",
+    "chunk",
+    "cb"
+  ],
+  "decodeChunk": [
+    "state",
+    "chunk",
+    "encoding"
+  ],
+  "writeOrBuffer": [
+    "stream",
+    "state",
+    "isBuf",
+    "chunk",
+    "encoding",
+    "cb"
+  ],
+  "doWrite": [
+    "stream",
+    "state",
+    "writev",
+    "len",
+    "chunk",
+    "encoding",
+    "cb"
+  ],
+  "onwriteError": [
+    "stream",
+    "state",
+    "sync",
+    "er",
+    "cb"
+  ],
+  "onwriteStateUpdate": [
+    "state"
+  ],
+  "onwrite": [
+    "stream",
+    "er"
+  ],
+  "afterWrite": [
+    "stream",
+    "state",
+    "finished",
+    "cb"
+  ],
+  "onwriteDrain": [
+    "stream",
+    "state"
+  ],
+  "clearBuffer": [
+    "stream",
+    "state"
+  ],
+  "needFinish": [
+    "state"
+  ],
+  "callFinal": [
+    "stream",
+    "state"
+  ],
+  "finishMaybe": [
+    "stream",
+    "state"
+  ],
+  "endWritable": [
+    "stream",
+    "state",
+    "cb"
+  ],
+  "onCorkedFinish": [
+    "corkReq",
+    "state",
+    "err"
+  ],
+  "_defineProperty": [
+    "obj",
+    "key",
+    "value"
+  ],
+  "_toPropertyKey": [
+    "arg"
+  ],
+  "_toPrimitive": [
+    "input",
+    "hint"
+  ],
+  "createIterResult": [
+    "value",
+    "done"
+  ],
+  "readAndResolve": [
+    "iter"
+  ],
+  "onReadable": [
+    "iter"
+  ],
+  "wrapForNext": [
+    "lastPromise",
+    "iter"
+  ],
+  "createReadableStreamAsyncIterator": [
+    "stream"
+  ],
+  "ownKeys": [
+    "object",
+    "enumerableOnly"
+  ],
+  "_objectSpread": [
+    "target"
+  ],
+  "_classCallCheck": [
+    "instance",
+    "Constructor"
+  ],
+  "_defineProperties": [
+    "target",
+    "props"
+  ],
+  "_createClass": [
+    "Constructor",
+    "protoProps",
+    "staticProps"
+  ],
+  "copyBuffer": [
+    "src",
+    "target",
+    "offset"
+  ],
+  "BufferList": [],
+  "destroy": [
+    "err",
+    "cb"
+  ],
+  "emitErrorAndCloseNT": [
+    "self",
+    "err"
+  ],
+  "emitCloseNT": [
+    "self"
+  ],
+  "undestroy": [],
+  "emitErrorNT": [
+    "self",
+    "err"
+  ],
+  "errorOrDestroy": [
+    "stream",
+    "err"
+  ],
+  "isRequest": [
+    "stream"
+  ],
+  "eos": [
+    "stream",
+    "opts",
+    "callback"
+  ],
+  "onlegacyfinish": [],
+  "onrequest": [],
+  "destroyer": [
+    "stream",
+    "reading",
+    "writing",
+    "callback"
+  ],
+  "call": [
+    "fn"
+  ],
+  "pipe": [
+    "from",
+    "to"
+  ],
+  "popCallback": [
+    "streams"
+  ],
+  "pipeline": [],
+  "highWaterMarkFrom": [
+    "options",
+    "isDuplex",
+    "duplexKey"
+  ],
+  "getHighWaterMark": [
+    "state",
+    "options",
+    "duplexKey",
+    "isDuplex"
+  ],
+  "fn1": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "m",
+    "k",
+    "s"
+  ],
+  "fn2": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "m",
+    "k",
+    "s"
+  ],
+  "fn3": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "m",
+    "k",
+    "s"
+  ],
+  "fn4": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "m",
+    "k",
+    "s"
+  ],
+  "fn5": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "m",
+    "k",
+    "s"
+  ],
+  "isQuote": [
+    "c"
+  ],
+  "nsPairCheck": [
+    "parser",
+    "prefix",
+    "uri"
+  ],
+  "nsMappingCheck": [
+    "parser",
+    "mapping"
+  ],
+  "isNCName": [
+    "name"
+  ],
+  "isName": [
+    "name"
+  ],
+  "SaxesParser": {
+    "constructor": [
+      "opt"
+    ],
+    "closed": [],
+    "_init": [],
+    "position": [],
+    "columnIndex": [],
+    "on": [
+      "name",
+      "handler"
+    ],
+    "off": [
+      "name"
+    ],
+    "makeError": [
+      "message"
+    ],
+    "fail": [
+      "message"
+    ],
+    "write": [
+      "chunk"
+    ],
+    "close": [],
+    "getCode10": [],
+    "getCode11": [],
+    "getCodeNorm": [],
+    "unget": [],
+    "captureTo": [
+      "chars"
+    ],
+    "captureToChar": [
+      "char"
+    ],
+    "captureNameChars": [],
+    "skipSpaces": [],
+    "setXMLVersion": [
+      "version"
+    ],
+    "sBegin": [],
+    "sBeginWhitespace": [],
+    "sDoctype": [],
+    "sDoctypeQuote": [],
+    "sDTD": [],
+    "sDTDQuoted": [],
+    "sDTDOpenWaka": [],
+    "sDTDOpenWakaBang": [],
+    "sDTDComment": [],
+    "sDTDCommentEnding": [],
+    "sDTDCommentEnded": [],
+    "sDTDPI": [],
+    "sDTDPIEnding": [],
+    "sText": [],
+    "sEntity": [],
+    "sOpenWaka": [],
+    "sOpenWakaBang": [],
+    "sComment": [],
+    "sCommentEnding": [],
+    "sCommentEnded": [],
+    "sCData": [],
+    "sCDataEnding": [],
+    "sCDataEnding2": [],
+    "sPIFirstChar": [],
+    "sPIRest": [],
+    "sPIBody": [],
+    "sPIEnding": [],
+    "sXMLDeclNameStart": [],
+    "sXMLDeclName": [],
+    "sXMLDeclEq": [],
+    "sXMLDeclValueStart": [],
+    "sXMLDeclValue": [],
+    "sXMLDeclSeparator": [],
+    "sXMLDeclEnding": [],
+    "sOpenTag": [],
+    "sOpenTagSlash": [],
+    "sAttrib": [],
+    "sAttribName": [],
+    "sAttribNameSawWhite": [],
+    "sAttribValue": [],
+    "sAttribValueQuoted": [],
+    "sAttribValueClosed": [],
+    "sAttribValueUnquoted": [],
+    "sCloseTag": [],
+    "sCloseTagSawWhite": [],
+    "handleTextInRoot": [],
+    "handleTextOutsideRoot": [],
+    "pushAttribNS": [
+      "name",
+      "value"
+    ],
+    "pushAttribPlain": [
+      "name",
+      "value"
+    ],
+    "end": [],
+    "resolve": [
+      "prefix"
+    ],
+    "qname": [
+      "name"
+    ],
+    "processAttribsNS": [],
+    "processAttribsPlain": [],
+    "openTag": [],
+    "openSelfClosingTag": [],
+    "closeTag": [],
+    "parseEntity": [
+      "entity"
+    ]
+  },
+  "Sha": [],
+  "rotl5": [
+    "num"
+  ],
+  "rotl30": [
+    "num"
+  ],
+  "ft": [
+    "s",
+    "b",
+    "c",
+    "d"
+  ],
+  "Sha1": [],
+  "rotl1": [
+    "num"
+  ],
+  "Sha224": [],
+  "Sha256": [],
+  "ch": [
+    "x",
+    "y",
+    "z"
+  ],
+  "maj": [
+    "x",
+    "y",
+    "z"
+  ],
+  "sigma0": [
+    "x",
+    "xl"
+  ],
+  "sigma1": [
+    "x",
+    "xl"
+  ],
+  "gamma0": [
+    "x"
+  ],
+  "gamma1": [
+    "x"
+  ],
+  "Sha384": [],
+  "writeInt64BE": [
+    "h",
+    "l",
+    "offset"
+  ],
+  "Sha512": [],
+  "Ch": [
+    "x",
+    "y",
+    "z"
+  ],
+  "Gamma0": [
+    "x",
+    "xl"
+  ],
+  "Gamma0l": [
+    "x",
+    "xl"
+  ],
+  "Gamma1": [
+    "x",
+    "xl"
+  ],
+  "Gamma1l": [
+    "x",
+    "xl"
+  ],
+  "getCarry": [
+    "a",
+    "b"
+  ],
+  "Stream": [],
+  "ondrain": [],
+  "needMoreData": [
+    "state"
+  ],
+  "fromListPartial": [
+    "n",
+    "list",
+    "hasStrings"
+  ],
+  "copyFromBufferString": [
+    "n",
+    "list"
+  ],
+  "copyFromBuffer": [
+    "n",
+    "list"
+  ],
+  "Timeout": [
+    "id",
+    "clearFn"
+  ],
+  "deprecate": [
+    "fn",
+    "msg"
+  ],
+  "deprecated": [],
+  "config": [
+    "name"
+  ],
+  "stylizeWithColor": [
+    "str",
+    "styleType"
+  ],
+  "stylizeNoColor": [
+    "str",
+    "styleType"
+  ],
+  "arrayToHash": [
+    "array"
+  ],
+  "formatValue": [
+    "ctx",
+    "value",
+    "recurseTimes"
+  ],
+  "formatPrimitive": [
+    "ctx",
+    "value"
+  ],
+  "formatError": [
+    "value"
+  ],
+  "formatArray": [
+    "ctx",
+    "value",
+    "recurseTimes",
+    "visibleKeys",
+    "keys"
+  ],
+  "formatProperty": [
+    "ctx",
+    "value",
+    "recurseTimes",
+    "visibleKeys",
+    "key",
+    "array"
+  ],
+  "reduceToSingleString": [
+    "output",
+    "base",
+    "braces"
+  ],
+  "pad": [
+    "n"
+  ],
+  "timestamp": [],
+  "hasOwnProperty": [
+    "obj",
+    "prop"
+  ],
+  "_interopRequireDefault": [
+    "obj"
+  ],
+  "md5": [
+    "bytes"
+  ],
+  "md5ToHexEncodedArray": [
+    "input"
+  ],
+  "getOutputLength": [
+    "inputLength8"
+  ],
+  "wordsToMd5": [
+    "x",
+    "len"
+  ],
+  "bytesToWords": [
+    "input"
+  ],
+  "safeAdd": [
+    "x",
+    "y"
+  ],
+  "bitRotateLeft": [
+    "num",
+    "cnt"
+  ],
+  "md5cmn": [
+    "q",
+    "a",
+    "b",
+    "x",
+    "s",
+    "t"
+  ],
+  "md5ff": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "x",
+    "s",
+    "t"
+  ],
+  "md5gg": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "x",
+    "s",
+    "t"
+  ],
+  "md5hh": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "x",
+    "s",
+    "t"
+  ],
+  "md5ii": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "x",
+    "s",
+    "t"
+  ],
+  "parse": [
+    "uuid"
+  ],
+  "rng": [],
+  "ROTL": [
+    "x",
+    "n"
+  ],
+  "sha1": [
+    "bytes"
+  ],
+  "stringify": [
+    "arr"
+  ],
+  "v1": [
+    "options",
+    "buf",
+    "offset"
+  ],
+  "stringToBytes": [
+    "str"
+  ],
+  "_default": [
+    "name",
+    "version",
+    "hashfunc"
+  ],
+  "generateUUID": [
+    "value",
+    "namespace",
+    "buf",
+    "offset"
+  ],
+  "v4": [
+    "options",
+    "buf",
+    "offset"
+  ],
+  "validate": [
+    "uuid"
+  ],
+  "version": [
+    "uuid"
+  ],
+  "isChar": [
+    "c"
+  ],
+  "isS": [
+    "c"
+  ],
+  "isNameStartChar": [
+    "c"
+  ],
+  "isNameChar": [
+    "c"
+  ],
+  "isRestrictedChar": [
+    "c"
+  ],
+  "isCharAndNotRestricted": [
+    "c"
+  ],
+  "isNCNameStartChar": [
+    "c"
+  ],
+  "isNCNameChar": [
+    "c"
+  ],
+  "t": [
+    "t",
+    "r",
+    "n"
+  ],
+  "e": [],
+  "I": [
+    "e",
+    "t"
+  ],
+  "v": [
+    "e"
+  ],
+  "x": [
+    "e"
+  ],
+  "k": [
+    "e"
+  ],
+  "C": [
+    "e",
+    "t"
+  ],
+  "E": [
+    "e",
+    "t"
+  ],
+  "B": [
+    "e"
+  ],
+  "ne": [
+    "e"
+  ],
+  "oe": [
+    "e"
+  ],
+  "ae": [
+    "e",
+    "t"
+  ],
+  "he": [
+    "e",
+    "t",
+    "r",
+    "a",
+    "l"
+  ],
+  "le": [
+    "e",
+    "t"
+  ],
+  "ce": [
+    "e"
+  ],
+  "ue": [
+    "e"
+  ],
+  "fe": [
+    "e"
+  ],
+  "ge": [
+    "e",
+    "t"
+  ],
+  "ye": [
+    "e",
+    "t"
+  ],
+  "ve": [
+    "e",
+    "t",
+    "r",
+    "a",
+    "l"
+  ],
+  "we": [
+    "e",
+    "t"
+  ],
+  "_e": [
+    "e"
+  ],
+  "xe": [
+    "e",
+    "t"
+  ],
+  "Se": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "i",
+    "s"
+  ],
+  "ke": [
+    "e"
+  ],
+  "Me": [
+    "e",
+    "t"
+  ],
+  "Ce": [
+    "e"
+  ],
+  "Te": [
+    "e"
+  ],
+  "Ee": [
+    "e"
+  ],
+  "Ae": [
+    "e"
+  ],
+  "Re": [
+    "e"
+  ],
+  "Oe": [
+    "e"
+  ],
+  "Ne": [
+    "e"
+  ],
+  "Pe": [
+    "e"
+  ],
+  "Fe": [
+    "e",
+    "t"
+  ],
+  "Le": [
+    "e",
+    "t"
+  ],
+  "ze": [
+    "e"
+  ],
+  "$e": [
+    "e"
+  ],
+  "He": [
+    "e"
+  ],
+  "Ve": [
+    "e"
+  ],
+  "qe": [
+    "e"
+  ],
+  "We": [
+    "e"
+  ],
+  "Xe": [
+    "e"
+  ],
+  "Ze": [
+    "e"
+  ],
+  "Ye": [
+    "e"
+  ],
+  "re": [
+    "e"
+  ],
+  "ie": [
+    "e"
+  ],
+  "se": [
+    "e"
+  ],
+  "de": [
+    "e"
+  ],
+  "pe": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "i",
+    "s"
+  ],
+  "me": [
+    "e"
+  ],
+  "be": [
+    "e",
+    "t"
+  ],
+  "z": [
+    "e",
+    "t"
+  ],
+  "createMethod": [
+    "TO_ENTRIES"
+  ],
+  "tryGet": [
+    "it",
+    "key"
+  ],
+  "aFunction": [
+    "argument"
+  ],
+  "check": [
+    "it"
+  ],
+  "enforce": [
+    "it"
+  ],
+  "getterFor": [
+    "TYPE"
+  ],
+  "isConstructorModern": [
+    "argument"
+  ],
+  "isConstructorLegacy": [
+    "argument"
+  ],
+  "isForced": [
+    "feature",
+    "detection"
+  ],
+  "Result": [
+    "stopped",
+    "result"
+  ],
+  "stop": [
+    "condition"
+  ],
+  "callFn": [
+    "value"
+  ],
+  "returnThis": [],
+  "getIterationMethod": [
+    "KIND"
+  ],
+  "flush": [],
+  "PromiseCapability": [
+    "C"
+  ],
+  "EmptyConstructor": [],
+  "scriptTag": [
+    "content"
+  ],
+  "NullProtoObjectViaActiveX": [
+    "activeXDocument"
+  ],
+  "NullProtoObjectViaIFrame": [],
+  "NullProtoObject": [],
+  "getWindowNames": [
+    "it"
+  ],
+  "FakePromise": [
+    "exec"
+  ],
+  "Queue": [],
+  "run": [
+    "id"
+  ],
+  "runner": [
+    "id"
+  ],
+  "eventListener": [
+    "event"
+  ],
+  "globalPostMessageDefer": [
+    "id"
+  ],
+  "stringifyWithSymbolsFix": [
+    "it",
+    "replacer"
+  ],
+  "fixIllFormed": [
+    "match",
+    "offset",
+    "string"
+  ],
+  "isThenable": [
+    "it"
+  ],
+  "callReaction": [
+    "reaction",
+    "state"
+  ],
+  "notify": [
+    "state",
+    "isReject"
+  ],
+  "dispatchEvent": [
+    "name",
+    "promise",
+    "reason"
+  ],
+  "onUnhandled": [
+    "state"
+  ],
+  "isUnhandled": [
+    "state"
+  ],
+  "onHandleUnhandled": [
+    "state"
+  ],
+  "bind": [
+    "fn",
+    "state",
+    "unwrap"
+  ],
+  "internalReject": [
+    "state",
+    "value",
+    "unwrap"
+  ],
+  "internalResolve": [
+    "state",
+    "value",
+    "unwrap"
+  ],
+  "fallbackDefineProperty": [
+    "O",
+    "P",
+    "Attributes"
+  ],
+  "wrap": [
+    "innerFn",
+    "outerFn",
+    "self",
+    "tryLocsList"
+  ],
+  "$defineProperty": [
+    "O",
+    "P",
+    "Attributes"
+  ],
+  "$defineProperties": [
+    "O",
+    "Properties"
+  ],
+  "$create": [
+    "O",
+    "Properties"
+  ],
+  "$propertyIsEnumerable": [
+    "V"
+  ],
+  "$getOwnPropertyDescriptor": [
+    "O",
+    "P"
+  ],
+  "$getOwnPropertyNames": [
+    "O"
+  ],
+  "$getOwnPropertySymbols": [
+    "O"
+  ],
+  "setter": [
+    "value"
+  ],
+  "define": [
+    "obj",
+    "key",
+    "value"
+  ],
+  "tryCatch": [
+    "fn",
+    "obj",
+    "arg"
+  ],
+  "Generator": [],
+  "GeneratorFunction": [],
+  "GeneratorFunctionPrototype": [],
+  "defineIteratorMethods": [
+    "prototype"
+  ],
+  "AsyncIterator": [
+    "generator",
+    "PromiseImpl"
+  ],
+  "invoke": [
+    "method",
+    "arg",
+    "resolve",
+    "reject"
+  ],
+  "enqueue": [
+    "method",
+    "arg"
+  ],
+  "callInvokeWithMethodAndArg": [],
+  "makeInvokeMethod": [
+    "innerFn",
+    "self",
+    "context"
+  ],
+  "maybeInvokeDelegate": [
+    "delegate",
+    "context"
+  ],
+  "pushTryEntry": [
+    "locs"
+  ],
+  "resetTryEntry": [
+    "entry"
+  ],
+  "Context": [
+    "tryLocsList"
+  ],
+  "values": [
+    "iterable"
+  ],
+  "next": [],
+  "doneResult": [],
+  "handle": [
+    "loc",
+    "caught"
+  ],
+  "q": [
+    "e",
+    "t"
+  ],
+  "Ie": [
+    "e"
+  ]
+}

@@ -1,0 +1,2623 @@
+{
+  "Aggregate": {
+    "options": [],
+    "addCursorFlag": [
+      "flag",
+      "value"
+    ],
+    "addFields": [
+      "arg"
+    ],
+    "allowDiskUse": [
+      "value"
+    ],
+    "append": [
+      "param"
+    ],
+    "catch": [],
+    "collation": [
+      "options"
+    ],
+    "count": [
+      "fieldName"
+    ],
+    "densify": [
+      "arg"
+    ],
+    "cursor": [
+      "options"
+    ],
+    "exec": [],
+    "explain": [],
+    "facet": [
+      "options"
+    ],
+    "fill": [
+      "arg"
+    ],
+    "finally": [],
+    "graphLookup": [
+      "options"
+    ],
+    "group": [
+      "arg"
+    ],
+    "hint": [
+      "value"
+    ],
+    "limit": [
+      "num"
+    ],
+    "lookup": [
+      "options"
+    ],
+    "match": [
+      "arg"
+    ],
+    "model": [],
+    "near": [
+      "arg"
+    ],
+    "pipeline": [],
+    "project": [
+      "arg"
+    ],
+    "read": [
+      "pref"
+    ],
+    "readConcern": [
+      "level"
+    ],
+    "redact": [
+      "expression",
+      "thenExpr",
+      "elseExpr"
+    ],
+    "replaceRoot": [
+      "newRoot"
+    ],
+    "search": [
+      "options"
+    ],
+    "option": [
+      "value"
+    ],
+    "sample": [
+      "arg"
+    ],
+    "session": [
+      "session"
+    ],
+    "skip": [
+      "num"
+    ],
+    "sort": [
+      "arg"
+    ],
+    "then": [],
+    "sortByCount": [
+      "arg"
+    ],
+    "unionWith": [
+      "options"
+    ],
+    "unwind": [
+      "param"
+    ]
+  },
+  "isOperator": [
+    "obj"
+  ],
+  "_cast": [
+    "val",
+    "numbertype",
+    "context"
+  ],
+  "getStrictQuery": [
+    "queryOptions",
+    "schemaUserProvidedOptions",
+    "schemaOptions",
+    "context"
+  ],
+  "Collection": {
+    "constructor": [
+      "name",
+      "conn",
+      "opts"
+    ],
+    "getIndexes": []
+  },
+  "Connection": {
+    "aggregate": [
+      "pipeline",
+      "options"
+    ],
+    "asPromise": [],
+    "base": [],
+    "bulkWrite": [
+      "ops",
+      "options"
+    ],
+    "close": [
+      "force"
+    ],
+    "destroy": [
+      "force"
+    ],
+    "collection": [
+      "name",
+      "options"
+    ],
+    "collections": [],
+    "config": [],
+    "db": [],
+    "createCollection": [
+      "name",
+      "options"
+    ],
+    "createCollections": [
+      "continueOnError"
+    ],
+    "deleteModel": [
+      "name"
+    ],
+    "dropCollection": [
+      "collection"
+    ],
+    "dropDatabase": [],
+    "get": [
+      "key"
+    ],
+    "getClient": [],
+    "host": [],
+    "id": [],
+    "listCollections": [],
+    "listDatabases": [],
+    "models": [],
+    "model": [
+      "name",
+      "schema",
+      "collection",
+      "options"
+    ],
+    "modelNames": [],
+    "name": [],
+    "openUri": [
+      "uri",
+      "options"
+    ],
+    "pass": [],
+    "port": [],
+    "plugin": [
+      "fn",
+      "opts"
+    ],
+    "plugins": [],
+    "readyState": [],
+    "set": [
+      "key",
+      "value"
+    ],
+    "setClient": [
+      "client"
+    ],
+    "startSession": [
+      "options"
+    ],
+    "syncIndexes": [
+      "options"
+    ],
+    "transaction": [
+      "fn",
+      "options"
+    ],
+    "useDb": [
+      "name",
+      "options"
+    ],
+    "user": [],
+    "watch": [
+      "pipeline",
+      "options"
+    ],
+    "withSession": [
+      "executor"
+    ]
+  },
+  "_wrapUserTransaction": [
+    "fn",
+    "session",
+    "mongoose"
+  ],
+  "_resetSessionDocuments": [
+    "session"
+  ],
+  "_validateArgs": [
+    "uri",
+    "options",
+    "callback"
+  ],
+  "_handleConnectionErrors": [
+    "err"
+  ],
+  "_rerunClose": [],
+  "changeStreamThunk": [
+    "cb"
+  ],
+  "AggregationCursor": [
+    "agg"
+  ],
+  "_init": [
+    "err",
+    "casted"
+  ],
+  "onPreComplete": [
+    "err"
+  ],
+  "_handlePreHookError": [
+    "queryCursor",
+    "err"
+  ],
+  "_transformForAsyncIterator": [
+    "doc"
+  ],
+  "_waitForCursor": [
+    "ctx",
+    "cb"
+  ],
+  "_next": [
+    "ctx",
+    "cb"
+  ],
+  "ChangeStream": {
+    "constructor": [
+      "changeStreamThunk",
+      "pipeline",
+      "options"
+    ],
+    "_bindEvents": [],
+    "hasNext": [
+      "cb"
+    ],
+    "next": [
+      "cb"
+    ],
+    "addListener": [
+      "event",
+      "handler"
+    ],
+    "on": [
+      "event",
+      "handler"
+    ],
+    "once": [
+      "event",
+      "handler"
+    ],
+    "_queue": [
+      "cb"
+    ],
+    "close": []
+  },
+  "QueryCursor": [
+    "query"
+  ],
+  "_getRawCursor": [
+    "query",
+    "queryCursor"
+  ],
+  "_onNext": [
+    "error",
+    "doc"
+  ],
+  "_populateBatch": [],
+  "_nextDoc": [
+    "ctx",
+    "doc",
+    "pop",
+    "callback"
+  ],
+  "Document": {
+    "constructor": [
+      "doc"
+    ],
+    "_id": [],
+    "$assertPopulated": [
+      "path",
+      "values"
+    ],
+    "$clearModifiedPaths": [],
+    "$clone": [],
+    "$createModifiedPathsSnapshot": [],
+    "$getAllSubdocs": [],
+    "$ignore": [
+      "path"
+    ],
+    "$isDefault": [
+      "path"
+    ],
+    "$isDeleted": [
+      "val"
+    ],
+    "$getPopulatedDocs": [],
+    "$inc": [
+      "path",
+      "val"
+    ],
+    "$isEmpty": [
+      "path"
+    ],
+    "$isValid": [
+      "path"
+    ],
+    "$locals": [],
+    "$markValid": [
+      "path"
+    ],
+    "$model": [],
+    "$op": [],
+    "$restoreModifiedPathsSnapshot": [
+      "snapshot"
+    ],
+    "$session": [
+      "session"
+    ],
+    "$set": [
+      "value"
+    ],
+    "$where": [],
+    "baseModelName": [],
+    "collection": [],
+    "db": [],
+    "deleteOne": [
+      "options"
+    ],
+    "depopulate": [
+      "path"
+    ],
+    "directModifiedPaths": [],
+    "equals": [
+      "doc"
+    ],
+    "errors": [],
+    "get": [
+      "path",
+      "type",
+      "options"
+    ],
+    "getChanges": [],
+    "increment": [],
+    "init": [
+      "obj",
+      "opts"
+    ],
+    "invalidate": [
+      "path",
+      "errorMsg",
+      "value",
+      "kind"
+    ],
+    "isDirectModified": [
+      "path"
+    ],
+    "isDirectSelected": [
+      "path"
+    ],
+    "isInit": [
+      "path"
+    ],
+    "isModified": [
+      "path",
+      "options"
+    ],
+    "isNew": [],
+    "isSelected": [
+      "path"
+    ],
+    "markModified": [
+      "path",
+      "scope"
+    ],
+    "model": [],
+    "modifiedPaths": [
+      "options"
+    ],
+    "overwrite": [
+      "obj"
+    ],
+    "$parent": [],
+    "populate": [
+      "path",
+      "select",
+      "model",
+      "match",
+      "options"
+    ],
+    "populated": [
+      "path"
+    ],
+    "replaceOne": [
+      "replacement",
+      "options"
+    ],
+    "save": [
+      "options"
+    ],
+    "schema": [],
+    "set": [
+      "value"
+    ],
+    "toBSON": [],
+    "toJSON": [
+      "options"
+    ],
+    "toObject": [
+      "options"
+    ],
+    "unmarkModified": [
+      "path"
+    ],
+    "updateOne": [
+      "update",
+      "options"
+    ],
+    "validate": [
+      "options"
+    ],
+    "validateSync": [
+      "pathsToValidate",
+      "options"
+    ]
+  },
+  "$applyDefaultsToNested": [
+    "val",
+    "path",
+    "doc"
+  ],
+  "init": [
+    "self",
+    "obj",
+    "doc",
+    "opts",
+    "prefix"
+  ],
+  "_isManuallyPopulatedArray": [
+    "val",
+    "ref"
+  ],
+  "_isEmpty": [
+    "v"
+  ],
+  "_evaluateRequiredFunctions": [
+    "doc"
+  ],
+  "_getPathsToValidate": [
+    "doc",
+    "pathsToValidate",
+    "pathsToSkip",
+    "isNestedValidate"
+  ],
+  "addToPaths": [
+    "p"
+  ],
+  "_addArrayPathsToValidate": [
+    "doc",
+    "paths"
+  ],
+  "_pushNestedArrayPaths": [
+    "val",
+    "paths",
+    "path"
+  ],
+  "_complete": [],
+  "validatePath": [
+    "path"
+  ],
+  "_handlePathsToValidate": [
+    "paths",
+    "pathsToValidate"
+  ],
+  "_handlePathsToSkip": [
+    "paths",
+    "pathsToSkip"
+  ],
+  "_markValidSubpaths": [
+    "doc",
+    "path"
+  ],
+  "_checkImmutableSubpaths": [
+    "subdoc",
+    "schematype",
+    "priorVal"
+  ],
+  "getSubdocs": [
+    "doc"
+  ],
+  "applyQueue": [
+    "doc"
+  ],
+  "applyVirtuals": [
+    "schema",
+    "obj",
+    "virtuals"
+  ],
+  "applyGetters": [
+    "self",
+    "json"
+  ],
+  "applySchemaTypeTransforms": [
+    "self",
+    "json"
+  ],
+  "throwErrorIfPromise": [
+    "path",
+    "transformedValue"
+  ],
+  "omitDeselectedFields": [
+    "self",
+    "json"
+  ],
+  "checkDivergentArray": [
+    "doc",
+    "path",
+    "array"
+  ],
+  "operand": [
+    "self",
+    "where",
+    "delta",
+    "data",
+    "val",
+    "op"
+  ],
+  "handleAtomics": [
+    "self",
+    "where",
+    "delta",
+    "data",
+    "value"
+  ],
+  "iter": [
+    "i"
+  ],
+  "shouldSkipVersioning": [
+    "self",
+    "path"
+  ],
+  "NativeCollection": [
+    "name",
+    "conn",
+    "options"
+  ],
+  "inspectable": [
+    "representation"
+  ],
+  "map": [
+    "o"
+  ],
+  "formatObjectId": [
+    "x",
+    "key"
+  ],
+  "formatDate": [
+    "x",
+    "key",
+    "shell"
+  ],
+  "format": [
+    "obj",
+    "sub",
+    "color",
+    "shell"
+  ],
+  "NativeConnection": [],
+  "wireup": [],
+  "_setClient": [
+    "conn",
+    "client",
+    "options",
+    "dbName"
+  ],
+  "_handleReconnect": [],
+  "MissingSchemaError": {
+    "name": []
+  },
+  "MongooseBulkSaveIncompleteError": {
+    "name": [],
+    "modelName": [],
+    "bulkWriteResult": [],
+    "numDocumentsNotUpdated": []
+  },
+  "MongooseBulkWriteError": {
+    "constructor": [
+      "validationErrors",
+      "results",
+      "rawResult",
+      "operation"
+    ]
+  },
+  "CastError": {
+    "name": [],
+    "stringValue": [],
+    "kind": [],
+    "value": [],
+    "path": [],
+    "reason": [],
+    "constructor": [
+      "type",
+      "value",
+      "path",
+      "reason",
+      "schemaType"
+    ]
+  },
+  "getStringValue": [
+    "value"
+  ],
+  "getValueType": [
+    "value"
+  ],
+  "getMessageFormat": [
+    "schemaType"
+  ],
+  "formatMessage": [
+    "msg",
+    "properties",
+    "doc"
+  ],
+  "CreateCollectionsError": {
+    "constructor": [
+      "message",
+      "errorsMap"
+    ]
+  },
+  "DivergentArrayError": {
+    "name": []
+  },
+  "EachAsyncMultiError": {
+    "constructor": [
+      "errors"
+    ]
+  },
+  "InvalidSchemaOptionError": {
+    "constructor": [
+      "name",
+      "option"
+    ]
+  },
+  "MongooseError": {
+    "constructor": [
+      "msg"
+    ],
+    "name": [],
+    "messages": [],
+    "Messages": []
+  },
+  "DocumentNotFoundError": {
+    "name": [],
+    "result": [],
+    "numAffected": [],
+    "filter": [],
+    "query": []
+  },
+  "ObjectExpectedError": {
+    "name": [],
+    "path": []
+  },
+  "ObjectParameterError": {
+    "name": []
+  },
+  "OverwriteModelError": {
+    "name": []
+  },
+  "ParallelSaveError": {
+    "name": []
+  },
+  "ParallelValidateError": {
+    "name": []
+  },
+  "MongooseServerSelectionError": {
+    "name": []
+  },
+  "SetOptionError": {
+    "constructor": [],
+    "toString": [],
+    "inspect": [],
+    "addError": [
+      "key",
+      "error"
+    ]
+  },
+  "SetOptionInnerError": {
+    "constructor": [
+      "key"
+    ]
+  },
+  "StrictModeError": {
+    "name": [],
+    "isImmutableError": [],
+    "path": []
+  },
+  "StrictPopulateError": {
+    "name": [],
+    "path": []
+  },
+  "SyncIndexesError": {
+    "name": [],
+    "errors": [],
+    "constructor": [
+      "type",
+      "value",
+      "path",
+      "reason",
+      "schemaType"
+    ]
+  },
+  "ValidationError": {
+    "name": [],
+    "errors": [],
+    "addError": [],
+    "index": [],
+    "constructor": [
+      "instance"
+    ]
+  },
+  "ValidatorError": {
+    "name": [],
+    "properties": [],
+    "kind": [],
+    "path": [],
+    "value": [],
+    "reason": [],
+    "constructor": [
+      "properties"
+    ]
+  },
+  "VersionError": {
+    "name": [],
+    "version": [],
+    "modifiedPaths": [],
+    "constructor": [
+      "doc",
+      "currentVersion",
+      "modifiedPaths"
+    ]
+  },
+  "handleAccumulator": [
+    "operator"
+  ],
+  "arrayDepth": [
+    "arr"
+  ],
+  "isBuiltInMiddleware": [
+    "hook"
+  ],
+  "buildMiddlewareFilter": [
+    "options",
+    "phase"
+  ],
+  "clone": [
+    "obj",
+    "options",
+    "isArrayChild"
+  ],
+  "cloneObject": [
+    "obj",
+    "options",
+    "isArrayChild"
+  ],
+  "cloneArray": [
+    "arr",
+    "options"
+  ],
+  "cloneRegExp": [
+    "regexp"
+  ],
+  "flatten": [
+    "item"
+  ],
+  "modifiedPaths": [
+    "update",
+    "path",
+    "result",
+    "param"
+  ],
+  "shouldFlatten": [
+    "val"
+  ],
+  "iterate": [
+    "finalCallback"
+  ],
+  "createFetch": [],
+  "fetch": [
+    "done"
+  ],
+  "handleNextResultCallBack": [
+    "err"
+  ],
+  "handleNextResult": [
+    "doc",
+    "i",
+    "callback"
+  ],
+  "asyncQueue": [],
+  "_step": [],
+  "createEachAsyncMultiError": [
+    "aggregatedErrors"
+  ],
+  "applyEmbeddedDiscriminators": [
+    "schema",
+    "param",
+    "param"
+  ],
+  "applyChangeTracking": [
+    "doc",
+    "fullPath",
+    "skipParentChangeTracking"
+  ],
+  "applyTimestamps": [
+    "schema",
+    "obj",
+    "options"
+  ],
+  "applyTimestampsToChildren": [
+    "now",
+    "update",
+    "schema"
+  ],
+  "applyTimestampsToDoc": [
+    "schema",
+    "obj",
+    "options"
+  ],
+  "applyVirtualsToChildren": [
+    "schema",
+    "res",
+    "virtuals"
+  ],
+  "applyVirtualsToDoc": [
+    "schema",
+    "obj",
+    "virtuals"
+  ],
+  "cleanParent": [
+    "doc",
+    "path",
+    "param"
+  ],
+  "compile": [
+    "tree",
+    "proto",
+    "prefix",
+    "options"
+  ],
+  "defineKey": [
+    "param"
+  ],
+  "getOwnPropertyDescriptors": [
+    "object"
+  ],
+  "getProperty": [
+    "obj",
+    "prop"
+  ],
+  "getDefaultBulkwriteResult": [],
+  "getRelatedSchemaIndexes": [
+    "model",
+    "schemaIndexes"
+  ],
+  "getRelatedDBIndexes": [
+    "model",
+    "dbIndexes"
+  ],
+  "getRelatedIndexes": [
+    "param"
+  ],
+  "getPartialFilterExpression": [
+    "index",
+    "indexesType"
+  ],
+  "isBsonType": [
+    "obj",
+    "typename"
+  ],
+  "isPromise": [
+    "val"
+  ],
+  "minimize": [
+    "obj"
+  ],
+  "applyHooks": [
+    "model",
+    "schema",
+    "options"
+  ],
+  "findChildModel": [
+    "curType"
+  ],
+  "apply": [
+    "method",
+    "schema"
+  ],
+  "_addDiscriminatorToObject": [
+    "schema",
+    "obj"
+  ],
+  "decideModelByObject": [
+    "model",
+    "object"
+  ],
+  "getTimestampsOpt": [
+    "opCommand",
+    "options"
+  ],
+  "validateDiscriminatorSchemasForEncryption": [
+    "parentSchema",
+    "childSchema"
+  ],
+  "allNestedPaths": [
+    "schema"
+  ],
+  "setIntersection": [
+    "i1",
+    "i2"
+  ],
+  "merge": [
+    "schema",
+    "baseSchema"
+  ],
+  "parallelLimit": [
+    "params",
+    "fn",
+    "limit"
+  ],
+  "clean": [],
+  "pluralize": [
+    "str"
+  ],
+  "assignRawDocsToIdStructure": [
+    "rawIds",
+    "resultDocs",
+    "resultOrder",
+    "options",
+    "recursed"
+  ],
+  "setValue": [
+    "val"
+  ],
+  "numDocs": [
+    "v"
+  ],
+  "valueFilter": [
+    "val",
+    "assignmentOpts",
+    "populateOptions",
+    "allIds"
+  ],
+  "maybeRemoveId": [
+    "subdoc",
+    "assignmentOpts"
+  ],
+  "isPopulatedObject": [
+    "obj"
+  ],
+  "_filterInvalidIds": [
+    "ids",
+    "foreignSchemaType",
+    "skipInvalidIds"
+  ],
+  "_formatMatch": [
+    "match"
+  ],
+  "_getModelNames": [
+    "doc",
+    "schema",
+    "modelNameFromQuery",
+    "model"
+  ],
+  "_virtualPopulate": [
+    "model",
+    "docs",
+    "options",
+    "_virtualRes"
+  ],
+  "addModelNamesToMap": [
+    "model",
+    "map",
+    "available",
+    "modelNames",
+    "options",
+    "data",
+    "ret",
+    "doc",
+    "schemaOptions",
+    "unpopulatedValue"
+  ],
+  "_getModelFromConn": [
+    "conn",
+    "modelName"
+  ],
+  "matchIdsToRefPaths": [
+    "ids",
+    "refPaths",
+    "refPathToFind"
+  ],
+  "handleRefFunction": [
+    "ref",
+    "doc"
+  ],
+  "_getLocalFieldValues": [
+    "doc",
+    "localField",
+    "model",
+    "options",
+    "virtual",
+    "schema"
+  ],
+  "convertTo_id": [
+    "val",
+    "schema"
+  ],
+  "_findRefPathForDiscriminators": [
+    "doc",
+    "modelSchema",
+    "data",
+    "options",
+    "normalizedRefPath",
+    "ret"
+  ],
+  "throwOn$where": [
+    "match"
+  ],
+  "search": [
+    "parts",
+    "schema"
+  ],
+  "getVirtual": [
+    "schema",
+    "name"
+  ],
+  "validateRef": [
+    "ref",
+    "path"
+  ],
+  "processConnectionOptions": [
+    "uri",
+    "options"
+  ],
+  "resolveOptsConflicts": [
+    "pref",
+    "opts"
+  ],
+  "setsIndexOptions": [
+    "opts"
+  ],
+  "setsSecondaryRead": [
+    "prefString"
+  ],
+  "getUriReadPreference": [
+    "connectionString"
+  ],
+  "defaultIndexOptsToFalse": [
+    "opts"
+  ],
+  "throwReadPreferenceError": [],
+  "applyExclusiveProjection": [
+    "doc",
+    "projection",
+    "hasIncludedChildren",
+    "projectionLimb",
+    "prefix"
+  ],
+  "applyInclusiveProjection": [
+    "doc",
+    "projection",
+    "hasIncludedChildren",
+    "projectionLimb",
+    "prefix"
+  ],
+  "applyGlobalMaxTimeMS": [
+    "options",
+    "connectionOptions",
+    "baseOptions"
+  ],
+  "applyGlobalDiskUse": [
+    "options",
+    "connectionOptions",
+    "baseOptions"
+  ],
+  "applyGlobalOption": [
+    "options",
+    "connectionOptions",
+    "baseOptions",
+    "optionName"
+  ],
+  "_castExpression": [
+    "val",
+    "schema",
+    "strictQuery"
+  ],
+  "castNumberOperator": [
+    "val"
+  ],
+  "castIn": [
+    "val",
+    "schema",
+    "strictQuery"
+  ],
+  "castArithmetic": [
+    "val"
+  ],
+  "castComparison": [
+    "val",
+    "schema",
+    "strictQuery"
+  ],
+  "isPath": [
+    "val"
+  ],
+  "isLiteral": [
+    "val"
+  ],
+  "castPipelineOperator": [
+    "op",
+    "val"
+  ],
+  "walkUpdatePath": [
+    "schema",
+    "obj",
+    "op",
+    "options",
+    "context",
+    "filter",
+    "prefix"
+  ],
+  "_appendError": [
+    "error",
+    "query",
+    "key",
+    "aggregatedError"
+  ],
+  "castUpdateVal": [
+    "schema",
+    "val",
+    "op",
+    "$conditional",
+    "context",
+    "path"
+  ],
+  "isPathInFields": [
+    "userProvidedFields",
+    "path"
+  ],
+  "collectIndexes": [
+    "schema",
+    "prefix",
+    "baseSchema"
+  ],
+  "fixSubIndexPaths": [
+    "schema",
+    "prefix"
+  ],
+  "handleTimestampOption": [
+    "arg",
+    "prop"
+  ],
+  "idGetter": [],
+  "createImmutableSetter": [
+    "path",
+    "immutable"
+  ],
+  "isModified": [
+    "castedDoc",
+    "updatedKeys",
+    "path",
+    "pathPieces",
+    "hasDollarUpdate"
+  ],
+  "pathExistsInUpdate": [
+    "update",
+    "targetPath",
+    "pathPieces"
+  ],
+  "withTimestamp": [
+    "s"
+  ],
+  "timestampsPreSave": [],
+  "_setTimestampsOnUpdate": [],
+  "_applyTimestampToUpdateOperator": [
+    "op"
+  ],
+  "applyTimestampsToDocumentArray": [
+    "arr",
+    "schematype",
+    "now"
+  ],
+  "applyTimestampsToSingleNested": [
+    "subdoc",
+    "schematype",
+    "now"
+  ],
+  "applyTimestampsToUpdateKey": [
+    "schema",
+    "key",
+    "update",
+    "now"
+  ],
+  "applyTimestampsToUpdate": [
+    "now",
+    "createdAt",
+    "updatedAt",
+    "currentUpdate",
+    "options",
+    "isReplace"
+  ],
+  "_castArrayFilters": [
+    "query"
+  ],
+  "hasKey": [
+    "obj",
+    "key"
+  ],
+  "_walkUpdatePath": [
+    "schema",
+    "op",
+    "path",
+    "update",
+    "ctx"
+  ],
+  "_checkSingleFilterKey": [
+    "arrayFilter",
+    "updateKeys"
+  ],
+  "InternalCache": [],
+  "Model": [
+    "doc",
+    "fields",
+    "skipId"
+  ],
+  "_applyCustomWhere": [
+    "doc",
+    "where"
+  ],
+  "_createSaveOptions": [
+    "doc",
+    "options"
+  ],
+  "generateVersionError": [
+    "doc",
+    "modifiedPaths",
+    "defaultPaths"
+  ],
+  "_checkContext": [
+    "ctx",
+    "fnName"
+  ],
+  "_ensureIndexes": [
+    "model",
+    "options",
+    "callback"
+  ],
+  "_createSearchIndexes": [],
+  "_createCollection": [],
+  "getIndexesToCreate": [
+    "schema",
+    "schemaIndexes",
+    "dbIndexes",
+    "toDrop",
+    "options"
+  ],
+  "getIndexesToDrop": [
+    "schema",
+    "schemaIndexes",
+    "dbIndexes"
+  ],
+  "_dropIndexes": [
+    "toDrop",
+    "model",
+    "options"
+  ],
+  "done": [
+    "err"
+  ],
+  "indexSingleDone": [
+    "err",
+    "fields",
+    "options",
+    "name"
+  ],
+  "indexSingleStart": [
+    "fields",
+    "options"
+  ],
+  "create": [],
+  "translate": [
+    "key",
+    "value"
+  ],
+  "validateDoc": [
+    "doc",
+    "index"
+  ],
+  "_setIsNew": [
+    "doc",
+    "val"
+  ],
+  "buildPreSavePromise": [
+    "document",
+    "options"
+  ],
+  "handleSuccessfulWrite": [
+    "document",
+    "options"
+  ],
+  "setDefaultOptions": [],
+  "_update": [
+    "query",
+    "op",
+    "filter",
+    "doc",
+    "options",
+    "callback"
+  ],
+  "_populatePath": [
+    "model",
+    "docs",
+    "populateOptions"
+  ],
+  "_execPopulateQuery": [
+    "mod",
+    "match",
+    "select"
+  ],
+  "_assign": [
+    "model",
+    "vals",
+    "mod",
+    "assignmentOpts"
+  ],
+  "applyQueryMethods": [
+    "model",
+    "methods"
+  ],
+  "_getContexts": [
+    "hook"
+  ],
+  "Mongoose": [
+    "options"
+  ],
+  "_createDefaultConnection": [
+    "mongoose"
+  ],
+  "PopulateOptions": {
+    "constructor": [
+      "obj"
+    ]
+  },
+  "SaveOptions": {
+    "constructor": [
+      "obj"
+    ]
+  },
+  "SchemaArrayOptions": {},
+  "SchemaBufferOptions": {},
+  "SchemaDateOptions": {},
+  "SchemaDocumentArrayOptions": {},
+  "SchemaMapOptions": {},
+  "SchemaNumberOptions": {},
+  "SchemaObjectIdOptions": {},
+  "SchemaStringOptions": {},
+  "SchemaSubdocumentOptions": {},
+  "SchemaTypeOptions": {
+    "type": [],
+    "alias": [],
+    "validate": [],
+    "cast": [],
+    "required": [],
+    "default": [],
+    "ref": [],
+    "refPath": [],
+    "select": [],
+    "index": [],
+    "unique": [],
+    "immutable": [],
+    "sparse": [],
+    "text": [],
+    "transform": [],
+    "get": [],
+    "set": [],
+    "enum": [],
+    "subtype": [],
+    "min": [],
+    "max": [],
+    "minimize": [],
+    "expires": [],
+    "excludeIndexes": [],
+    "_id": [],
+    "of": [],
+    "auto": [],
+    "match": [],
+    "lowercase": [],
+    "trim": [],
+    "uppercase": [],
+    "minlength": [],
+    "minLength": [],
+    "maxlength": [],
+    "maxLength": [],
+    "encrypt": []
+  },
+  "SchemaUnionOptions": {},
+  "VirtualOptions": {
+    "constructor": [
+      "obj"
+    ]
+  },
+  "saveSubdocsPreSave": [],
+  "saveSubdocsPostSave": [],
+  "saveSubdocsPreDeleteOne": [],
+  "saveSubdocsPostDeleteOne": [],
+  "shardingPluginPostInit": [],
+  "shardingPluginPreSave": [],
+  "shardingPluginPostSave": [],
+  "shardingPluginPreDeleteOne": [],
+  "shardingPluginPreUpdateOne": [],
+  "applyWhere": [],
+  "storeShard": [],
+  "trackTransactionPreSave": [],
+  "_getAtomics": [
+    "doc",
+    "previous"
+  ],
+  "mergeAtomics": [
+    "destination",
+    "source"
+  ],
+  "validateBeforeSavePreSave": [
+    "options"
+  ],
+  "Query": {
+    "_mongooseOptions": [],
+    "exec": [],
+    "$where": [
+      "argument"
+    ],
+    "all": [
+      "val"
+    ],
+    "allowDiskUse": [
+      "value"
+    ],
+    "and": [
+      "array"
+    ],
+    "batchSize": [
+      "val"
+    ],
+    "box": [
+      "val"
+    ],
+    "cast": [
+      "model",
+      "obj"
+    ],
+    "catch": [],
+    "finally": [],
+    "circle": [
+      "area"
+    ],
+    "clone": [],
+    "collation": [
+      "value"
+    ],
+    "comment": [
+      "val"
+    ],
+    "countDocuments": [
+      "criteria",
+      "options"
+    ],
+    "cursor": [
+      "options"
+    ],
+    "deleteMany": [],
+    "deleteOne": [],
+    "distinct": [
+      "field",
+      "filter",
+      "options"
+    ],
+    "elemMatch": [
+      "val"
+    ],
+    "error": [
+      "val"
+    ],
+    "equals": [
+      "val"
+    ],
+    "estimatedDocumentCount": [
+      "options"
+    ],
+    "exists": [
+      "val"
+    ],
+    "explain": [
+      "verbose"
+    ],
+    "find": [
+      "filter",
+      "projection",
+      "options"
+    ],
+    "findOne": [
+      "filter",
+      "projection",
+      "options"
+    ],
+    "findOneAndDelete": [
+      "filter",
+      "options"
+    ],
+    "findOneAndUpdate": [
+      "filter",
+      "update",
+      "options"
+    ],
+    "findById": [
+      "id",
+      "projection",
+      "options"
+    ],
+    "findByIdAndDelete": [
+      "id",
+      "options"
+    ],
+    "findByIdAndUpdate": [
+      "id",
+      "update",
+      "options"
+    ],
+    "geometry": [
+      "object"
+    ],
+    "get": [
+      "path"
+    ],
+    "getFilter": [],
+    "getOptions": [],
+    "getPopulatedPaths": [],
+    "getQuery": [],
+    "getUpdate": [],
+    "gt": [
+      "val"
+    ],
+    "gte": [
+      "val"
+    ],
+    "hint": [
+      "val"
+    ],
+    "in": [
+      "val"
+    ],
+    "intersects": [
+      "arg"
+    ],
+    "j": [
+      "val"
+    ],
+    "lean": [
+      "val"
+    ],
+    "limit": [
+      "val"
+    ],
+    "lt": [
+      "val"
+    ],
+    "lte": [
+      "val"
+    ],
+    "transform": [
+      "fn"
+    ],
+    "maxDistance": [
+      "val"
+    ],
+    "maxTimeMS": [
+      "ms"
+    ],
+    "merge": [
+      "source"
+    ],
+    "mod": [
+      "val"
+    ],
+    "model": [],
+    "mongooseOptions": [
+      "val"
+    ],
+    "ne": [
+      "val"
+    ],
+    "near": [
+      "val"
+    ],
+    "nin": [
+      "val"
+    ],
+    "nor": [
+      "array"
+    ],
+    "or": [
+      "array"
+    ],
+    "orFail": [
+      "err"
+    ],
+    "polygon": [
+      "param"
+    ],
+    "populate": [
+      "options"
+    ],
+    "pre": [
+      "fn"
+    ],
+    "post": [
+      "fn"
+    ],
+    "projection": [],
+    "read": [
+      "mode",
+      "tags"
+    ],
+    "readConcern": [
+      "level"
+    ],
+    "regex": [
+      "val"
+    ],
+    "replaceOne": [
+      "filter",
+      "replacement",
+      "options"
+    ],
+    "sanitizeProjection": [
+      "value"
+    ],
+    "schemaLevelProjections": [
+      "value"
+    ],
+    "select": [
+      "arg"
+    ],
+    "selected": [],
+    "selectedExclusively": [],
+    "selectedInclusively": [],
+    "session": [
+      "session"
+    ],
+    "set": [
+      "path",
+      "value"
+    ],
+    "setOptions": [
+      "options",
+      "overwrite"
+    ],
+    "setQuery": [
+      "val"
+    ],
+    "setUpdate": [
+      "update"
+    ],
+    "size": [
+      "val"
+    ],
+    "skip": [
+      "val"
+    ],
+    "slice": [
+      "val"
+    ],
+    "sort": [
+      "arg",
+      "options"
+    ],
+    "tailable": [
+      "bool",
+      "opts"
+    ],
+    "then": [],
+    "toConstructor": [],
+    "updateMany": [
+      "filter",
+      "update",
+      "options"
+    ],
+    "updateOne": [
+      "filter",
+      "update",
+      "options"
+    ],
+    "w": [
+      "val"
+    ],
+    "where": [],
+    "within": [
+      "val"
+    ],
+    "wtimeout": [
+      "ms"
+    ]
+  },
+  "isEmptyFilter": [
+    "obj"
+  ],
+  "checkRequireFilter": [
+    "filter",
+    "options"
+  ],
+  "CustomQuery": [
+    "criteria",
+    "options"
+  ],
+  "sanitizeValue": [
+    "value"
+  ],
+  "_handleSortValue": [
+    "val",
+    "key"
+  ],
+  "completeOne": [
+    "model",
+    "doc",
+    "res",
+    "options",
+    "fields",
+    "userProvidedFields",
+    "pop",
+    "callback"
+  ],
+  "prepareDiscriminatorCriteria": [
+    "query"
+  ],
+  "convertNewToReturnDocument": [
+    "options"
+  ],
+  "_getOption": [
+    "query",
+    "option",
+    "def"
+  ],
+  "_completeOneLean": [
+    "schema",
+    "doc",
+    "path",
+    "res",
+    "opts",
+    "callback"
+  ],
+  "_completeManyLean": [
+    "schema",
+    "docs",
+    "path",
+    "opts"
+  ],
+  "_previewUpdate": [
+    "update"
+  ],
+  "_updateThunk": [
+    "op"
+  ],
+  "_orFailError": [
+    "err",
+    "query"
+  ],
+  "_executePostHooks": [
+    "query",
+    "res",
+    "error",
+    "op"
+  ],
+  "_executePreHooks": [
+    "query",
+    "op"
+  ],
+  "_getPopulatedPaths": [
+    "list",
+    "arr",
+    "prefix"
+  ],
+  "canMerge": [
+    "value"
+  ],
+  "analyzeSchema": [
+    "schema",
+    "prefix"
+  ],
+  "analyzePath": [
+    "path",
+    "type"
+  ],
+  "makeLean": [
+    "val"
+  ],
+  "SchemaArray": [
+    "key",
+    "cast",
+    "options",
+    "schemaOptions",
+    "parentSchema"
+  ],
+  "defaultFn": [],
+  "cast$all": [
+    "val",
+    "context"
+  ],
+  "cast$elemMatch": [
+    "val",
+    "context"
+  ],
+  "createLogicalQueryOperatorHandler": [
+    "op"
+  ],
+  "SchemaBigInt": [
+    "path",
+    "options",
+    "_schemaOptions",
+    "parentSchema"
+  ],
+  "handleSingle": [
+    "val",
+    "context"
+  ],
+  "SchemaBoolean": [
+    "path",
+    "options",
+    "_schemaOptions",
+    "parentSchema"
+  ],
+  "SchemaBuffer": [
+    "key",
+    "options",
+    "_schemaOptions",
+    "parentSchema"
+  ],
+  "SchemaDate": [
+    "key",
+    "options",
+    "_schemaOptions",
+    "parentSchema"
+  ],
+  "SchemaDecimal128": [
+    "key",
+    "options",
+    "_schemaOptions",
+    "parentSchema"
+  ],
+  "SchemaDocumentArray": [
+    "key",
+    "schema",
+    "options",
+    "schemaOptions",
+    "parentSchema"
+  ],
+  "_createConstructor": [
+    "schema",
+    "baseClass",
+    "options"
+  ],
+  "EmbeddedDocument": [],
+  "scopePaths": [
+    "array",
+    "fields",
+    "init"
+  ],
+  "SchemaDocumentArrayElement": [
+    "path",
+    "schema",
+    "options",
+    "parentSchema"
+  ],
+  "SchemaDouble": [
+    "path",
+    "options",
+    "_schemaOptions",
+    "parentSchema"
+  ],
+  "SchemaInt32": [
+    "path",
+    "options",
+    "_schemaOptions",
+    "parentSchema"
+  ],
+  "SchemaMap": {
+    "constructor": [
+      "key",
+      "options",
+      "schemaOptions",
+      "parentSchema"
+    ],
+    "set": [
+      "option",
+      "value"
+    ],
+    "cast": [
+      "val",
+      "doc",
+      "init",
+      "prev",
+      "options"
+    ],
+    "clone": [],
+    "getEmbeddedSchemaType": [],
+    "toJSONSchema": [
+      "options"
+    ],
+    "autoEncryptionType": []
+  },
+  "SchemaMixed": [
+    "path",
+    "options",
+    "_schemaOptions",
+    "parentSchema"
+  ],
+  "SchemaNumber": [
+    "key",
+    "options",
+    "_schemaOptions",
+    "parentSchema"
+  ],
+  "handleArray": [
+    "val",
+    "context"
+  ],
+  "SchemaObjectId": [
+    "key",
+    "options",
+    "_schemaOptions",
+    "parentSchema"
+  ],
+  "defaultId": [],
+  "resetId": [
+    "v"
+  ],
+  "handleBitwiseOperator": [
+    "val"
+  ],
+  "_castNumber": [
+    "path",
+    "num"
+  ],
+  "cast$near": [
+    "val"
+  ],
+  "cast$geometry": [
+    "val",
+    "self"
+  ],
+  "cast$within": [
+    "val"
+  ],
+  "cast$geoIntersects": [
+    "val"
+  ],
+  "_castMinMaxDistance": [
+    "self",
+    "val"
+  ],
+  "castToNumber": [
+    "val"
+  ],
+  "castArraysOfNumbers": [
+    "arr",
+    "self"
+  ],
+  "SchemaString": [
+    "key",
+    "options",
+    "_schemaOptions",
+    "parentSchema"
+  ],
+  "matchValidator": [
+    "v"
+  ],
+  "handleSingleNoSetters": [
+    "val"
+  ],
+  "SchemaSubdocument": [
+    "schema",
+    "path",
+    "options",
+    "parentSchema"
+  ],
+  "_embedded": [
+    "value",
+    "path",
+    "parent"
+  ],
+  "Union": {
+    "schemaName": [],
+    "defaultOptions": []
+  },
+  "binaryToString": [
+    "uuidBin"
+  ],
+  "SchemaUUID": [
+    "key",
+    "options",
+    "_schemaOptions",
+    "parentSchema"
+  ],
+  "Schema": {
+    "constructor": [
+      "definition",
+      "options"
+    ],
+    "create": [
+      "def",
+      "options"
+    ],
+    "add": [
+      "obj",
+      "prefix"
+    ],
+    "alias": [
+      "path",
+      "alias"
+    ],
+    "childSchemas": [],
+    "clearIndexes": [],
+    "clone": [],
+    "discriminator": [
+      "name",
+      "schema",
+      "options"
+    ],
+    "pick": [
+      "paths",
+      "options"
+    ],
+    "discriminators": [],
+    "eachPath": [
+      "fn"
+    ],
+    "index": [
+      "fields",
+      "options"
+    ],
+    "searchIndex": [
+      "description"
+    ],
+    "indexes": [],
+    "get": [
+      "key"
+    ],
+    "loadClass": [
+      "model",
+      "onlyVirtuals"
+    ],
+    "method": [
+      "obj"
+    ],
+    "methods": [],
+    "obj": [],
+    "omit": [
+      "paths",
+      "options"
+    ],
+    "options": [],
+    "path": [
+      "path",
+      "constructor"
+    ],
+    "paths": [],
+    "pathType": [
+      "path"
+    ],
+    "plugin": [
+      "fn",
+      "opts"
+    ],
+    "post": [
+      "method",
+      "options",
+      "fn"
+    ],
+    "pre": [
+      "method",
+      "fn"
+    ],
+    "query": [],
+    "queue": [
+      "name",
+      "args"
+    ],
+    "remove": [
+      "paths"
+    ],
+    "removeIndex": [
+      "index"
+    ],
+    "requiredPaths": [
+      "invalidate"
+    ],
+    "set": [
+      "key",
+      "value",
+      "_tags"
+    ],
+    "static": [
+      "name",
+      "fn"
+    ],
+    "statics": [],
+    "toJSONSchema": [
+      "options"
+    ],
+    "virtual": [
+      "name",
+      "options"
+    ],
+    "virtuals": [],
+    "virtualpath": [
+      "name"
+    ],
+    "ObjectId": []
+  },
+  "aliasFields": [
+    "schema",
+    "paths"
+  ],
+  "buildNestedPath": [
+    "path",
+    "object",
+    "value"
+  ],
+  "schemaMapPropertyReducer": [
+    "accum",
+    "param"
+  ],
+  "_getPath": [
+    "schema",
+    "path",
+    "cleanPath"
+  ],
+  "_pathToPositionalSyntax": [
+    "path"
+  ],
+  "getMapPath": [
+    "schema",
+    "path"
+  ],
+  "getPositionalPathType": [
+    "self",
+    "path",
+    "cleanPath"
+  ],
+  "getPositionalPath": [
+    "self",
+    "path",
+    "cleanPath"
+  ],
+  "_propagateOptionsToImplicitlyCreatedSchemas": [
+    "baseSchema",
+    "options"
+  ],
+  "_deletePath": [
+    "schema",
+    "name"
+  ],
+  "isArrayFilter": [
+    "piece"
+  ],
+  "SchemaType": {
+    "constructor": [
+      "path",
+      "options",
+      "instance"
+    ],
+    "cast": [
+      "val",
+      "doc",
+      "init",
+      "prev",
+      "options"
+    ],
+    "checkRequired": [
+      "checkRequired"
+    ],
+    "set": [
+      "fn"
+    ],
+    "get": [
+      "fn"
+    ],
+    "setters": [],
+    "$conditionalHandlers": [],
+    "OptionsConstructor": [],
+    "default": [
+      "val"
+    ],
+    "getEmbeddedSchemaType": [],
+    "immutable": [
+      "bool"
+    ],
+    "index": [
+      "options"
+    ],
+    "instance": [],
+    "isRequired": [],
+    "options": [],
+    "path": [],
+    "ref": [
+      "ref"
+    ],
+    "required": [
+      "required",
+      "message"
+    ],
+    "schema": [],
+    "select": [
+      "val"
+    ],
+    "sparse": [
+      "bool"
+    ],
+    "text": [
+      "bool"
+    ],
+    "toJSONSchema": [
+      "options"
+    ],
+    "transform": [
+      "fn"
+    ],
+    "unique": [
+      "bool"
+    ],
+    "validators": [],
+    "validate": [
+      "obj",
+      "errorMsg",
+      "type"
+    ],
+    "validateAll": [
+      "validators"
+    ],
+    "defaultOptions": []
+  },
+  "_validate": [
+    "ok",
+    "validatorProperties"
+  ],
+  "handle$in": [
+    "val",
+    "context"
+  ],
+  "ctor": [],
+  "MongooseArray": [
+    "values",
+    "path",
+    "doc",
+    "schematype"
+  ],
+  "_isAllSubdocs": [
+    "docs",
+    "ref"
+  ],
+  "_minimizePath": [
+    "obj",
+    "parts",
+    "i"
+  ],
+  "_checkManualPopulation": [
+    "arr",
+    "docs"
+  ],
+  "_depopulateIfNecessary": [
+    "arr",
+    "docs"
+  ],
+  "ArraySubdocument": {
+    "parentArray": []
+  },
+  "MongooseBuffer": [
+    "value",
+    "encode",
+    "offset"
+  ],
+  "MongooseDocumentArray": [
+    "values",
+    "path",
+    "doc",
+    "schematype"
+  ],
+  "_updateParentPopulated": [
+    "arr"
+  ],
+  "MongooseMap": {
+    "constructor": [
+      "v",
+      "path",
+      "doc",
+      "schemaType"
+    ],
+    "$init": [
+      "key",
+      "value"
+    ],
+    "$__set": [
+      "key",
+      "value"
+    ],
+    "get": [
+      "key",
+      "options"
+    ],
+    "set": [
+      "key",
+      "value"
+    ],
+    "clear": [],
+    "delete": [
+      "key"
+    ],
+    "toBSON": [],
+    "toObject": [
+      "options"
+    ],
+    "$toObject": [],
+    "toJSON": [
+      "options"
+    ],
+    "inspect": [],
+    "$__runDeferred": []
+  },
+  "fullPath": [],
+  "checkValidKey": [
+    "key"
+  ],
+  "Subdocument": {
+    "$isSingleNested": [],
+    "ownerDocument": [],
+    "parent": [],
+    "$parent": []
+  },
+  "registerRemoveListener": [
+    "sub"
+  ],
+  "emitRemove": [],
+  "makeSingles": [
+    "arr"
+  ],
+  "_populateObj": [
+    "obj"
+  ],
+  "getValueLookup": [
+    "obj",
+    "part"
+  ],
+  "VirtualType": {
+    "applyGetters": [
+      "value",
+      "doc"
+    ],
+    "applySetters": [
+      "value",
+      "doc"
+    ],
+    "get": [
+      "fn"
+    ],
+    "set": [
+      "fn"
+    ]
+  },
+  "BaseCollection": {
+    "constructor": [
+      "name",
+      "conn",
+      "opts"
+    ],
+    "ensureIndex": [
+      "param"
+    ],
+    "findAndModify": [
+      "param"
+    ],
+    "getIndexes": [
+      "param"
+    ],
+    "$format": [
+      "arg",
+      "color",
+      "shell"
+    ],
+    "$print": [
+      "name",
+      "i",
+      "args",
+      "color",
+      "shell"
+    ],
+    "collectionName": [],
+    "conn": [],
+    "name": []
+  },
+  "BaseConnection": {},
+  "Cursor": {
+    "addCursorFlag": [
+      "flag",
+      "value"
+    ],
+    "close": [],
+    "destroy": [],
+    "rewind": [],
+    "eachAsync": [
+      "fn",
+      "options"
+    ],
+    "map": [
+      "fn"
+    ],
+    "next": [],
+    "options": []
+  },
+  "ModifiedPathsSnapshot": {},
+  "NativeError": {},
+  "Error": {},
+  "NativeDate": {},
+  "mquery": {},
+  "Array": {
+    "$pop": [],
+    "$shift": [],
+    "addToSet": [
+      "param"
+    ],
+    "isMongooseArray": [],
+    "nonAtomicPush": [
+      "param"
+    ],
+    "push": [
+      "param"
+    ],
+    "pull": [
+      "param"
+    ],
+    "remove": [
+      "param"
+    ],
+    "set": [
+      "index",
+      "val"
+    ],
+    "shift": [],
+    "toObject": [
+      "options"
+    ],
+    "unshift": [
+      "param"
+    ]
+  },
+  "BigInt": {
+    "schemaName": [],
+    "defaultOptions": []
+  },
+  "Boolean": {
+    "schemaName": [],
+    "convertToTrue": [],
+    "convertToFalse": [],
+    "defaultOptions": []
+  },
+  "Buffer": {
+    "subtype": [
+      "subtype"
+    ],
+    "toObject": [
+      "subtype"
+    ]
+  },
+  "Date": {
+    "schemaName": [],
+    "expires": [
+      "when"
+    ],
+    "max": [
+      "value",
+      "message"
+    ],
+    "min": [
+      "value",
+      "message"
+    ],
+    "defaultOptions": []
+  },
+  "Decimal128": {},
+  "Int32": {
+    "schemaName": [],
+    "defaultOptions": []
+  },
+  "DocumentArray": {
+    "constructor": [
+      "values"
+    ],
+    "isMongooseDocumentArray": [],
+    "create": [
+      "obj"
+    ],
+    "id": [
+      "id"
+    ],
+    "push": [
+      "param"
+    ],
+    "splice": [
+      "start",
+      "deleteCount",
+      "param"
+    ]
+  },
+  "DocumentArrayElement": {
+    "schemaName": [],
+    "defaultOptions": []
+  },
+  "Map": {
+    "toObject": [
+      "options"
+    ]
+  },
+  "Mixed": {
+    "schemaName": [],
+    "defaultOptions": []
+  },
+  "Number": {
+    "schemaName": [],
+    "enum": [
+      "vals"
+    ],
+    "max": [
+      "value",
+      "message"
+    ],
+    "min": [
+      "value",
+      "message"
+    ],
+    "defaultOptions": []
+  },
+  "Double": {},
+  "ObjectId": {},
+  "String": {
+    "schemaName": [],
+    "enum": [
+      "vals"
+    ],
+    "lowercase": [
+      "shouldApply"
+    ],
+    "match": [
+      "value",
+      "message"
+    ],
+    "maxlength": [
+      "value",
+      "message"
+    ],
+    "minlength": [
+      "value",
+      "message"
+    ],
+    "trim": [
+      "shouldTrim"
+    ],
+    "uppercase": [
+      "shouldApply"
+    ],
+    "defaultOptions": []
+  },
+  "UUID": {},
+  "NativeBuffer": {}
+}

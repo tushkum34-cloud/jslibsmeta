@@ -1,0 +1,375 @@
+{
+  "createID": [
+    "param",
+    "param"
+  ],
+  "log": [
+    "level",
+    "message",
+    "extra"
+  ],
+  "schedule": [
+    "expression",
+    "func",
+    "options"
+  ],
+  "createTask": [
+    "expression",
+    "func",
+    "options"
+  ],
+  "solvePath": [
+    "filePath"
+  ],
+  "validate": [
+    "pattern"
+  ],
+  "convertAsterisk": [
+    "expression",
+    "replecement"
+  ],
+  "convertAsterisksToRanges": [
+    "expressions"
+  ],
+  "appendSeccondExpression": [
+    "expressions"
+  ],
+  "removeSpaces": [
+    "str"
+  ],
+  "normalizeIntegers": [
+    "expressions"
+  ],
+  "interprete": [
+    "monthExpression"
+  ],
+  "convertMonthName": [
+    "expression",
+    "items"
+  ],
+  "replaceWithRange": [
+    "expression",
+    "text",
+    "init",
+    "end",
+    "stepTxt"
+  ],
+  "convertRange": [
+    "expression"
+  ],
+  "convertAllRanges": [
+    "expressions"
+  ],
+  "convertWeekDayName": [
+    "expression",
+    "items"
+  ],
+  "convertWeekDays": [
+    "expression"
+  ],
+  "isValidExpression": [
+    "expression",
+    "min",
+    "max"
+  ],
+  "isInvalidSecond": [
+    "expression"
+  ],
+  "isInvalidMinute": [
+    "expression"
+  ],
+  "isInvalidHour": [
+    "expression"
+  ],
+  "isInvalidDayOfMonth": [
+    "expression"
+  ],
+  "isInvalidMonth": [
+    "expression"
+  ],
+  "isInvalidWeekDay": [
+    "expression"
+  ],
+  "validateFields": [
+    "patterns",
+    "executablePatterns"
+  ],
+  "TrackedPromise": {
+    "promise": [],
+    "error": [],
+    "state": [],
+    "value": [],
+    "constructor": [
+      "executor"
+    ],
+    "getPromise": [],
+    "getState": [],
+    "isPending": [],
+    "isFulfilled": [],
+    "isRejected": [],
+    "getValue": [],
+    "getError": [],
+    "then": [
+      "onfulfilled",
+      "onrejected"
+    ],
+    "catch": [
+      "onrejected"
+    ],
+    "finally": [
+      "onfinally"
+    ]
+  },
+  "Runner": {
+    "timeMatcher": [],
+    "onMatch": [],
+    "noOverlap": [],
+    "maxExecutions": [],
+    "maxRandomDelay": [],
+    "runCount": [],
+    "running": [],
+    "heartBeatTimeout": [],
+    "onMissedExecution": [],
+    "onOverlap": [],
+    "onError": [],
+    "beforeRun": [],
+    "onFinished": [],
+    "onMaxExecutions": [],
+    "constructor": [
+      "timeMatcher",
+      "onMatch",
+      "options"
+    ],
+    "start": [],
+    "nextRun": [],
+    "stop": [],
+    "isStarted": [],
+    "isStopped": [],
+    "execute": []
+  },
+  "emptyOnFn": [],
+  "emptyHookFn": [],
+  "defaultOnError": [
+    "date",
+    "error"
+  ],
+  "scheduleNextHeartBeat": [
+    "currentDate"
+  ],
+  "runTask": [
+    "date"
+  ],
+  "checkAndRun": [
+    "date"
+  ],
+  "heartBeat": [],
+  "runAsync": [
+    "fn",
+    "date",
+    "onError"
+  ],
+  "getDelay": [
+    "timeMatcher",
+    "currentDate"
+  ],
+  "nowWithoutMs": [],
+  "TaskRegistry": {
+    "add": [
+      "task"
+    ],
+    "get": [
+      "taskId"
+    ],
+    "remove": [
+      "task"
+    ],
+    "all": [],
+    "has": [
+      "taskId"
+    ],
+    "killAll": []
+  },
+  "TaskEmitter": {},
+  "BackgroundScheduledTask": {
+    "emitter": [],
+    "id": [],
+    "name": [],
+    "cronExpression": [],
+    "taskPath": [],
+    "options": [],
+    "forkProcess": [],
+    "stateMachine": [],
+    "constructor": [
+      "cronExpression",
+      "taskPath",
+      "options"
+    ],
+    "getNextRun": [],
+    "start": [],
+    "stop": [],
+    "getStatus": [],
+    "destroy": [],
+    "execute": [],
+    "on": [
+      "event",
+      "fun"
+    ],
+    "off": [
+      "event",
+      "fun"
+    ],
+    "once": [
+      "event",
+      "fun"
+    ],
+    "createContext": [
+      "executionDate",
+      "execution"
+    ]
+  },
+  "cleanupAndResolve": [],
+  "onStopped": [],
+  "onDestroy": [],
+  "cleanupListeners": [],
+  "onFinished": [
+    "context"
+  ],
+  "onFail": [
+    "context"
+  ],
+  "deserializeError": [
+    "str"
+  ],
+  "ownKeys": [
+    "o"
+  ],
+  "startDaemon": [
+    "message"
+  ],
+  "sendEvent": [
+    "event",
+    "context"
+  ],
+  "serializeError": [
+    "err"
+  ],
+  "safelySerializeContext": [
+    "context"
+  ],
+  "bind": [],
+  "InlineScheduledTask": {
+    "emitter": [],
+    "cronExpression": [],
+    "timeMatcher": [],
+    "runner": [],
+    "id": [],
+    "name": [],
+    "stateMachine": [],
+    "timezone": [],
+    "constructor": [
+      "cronExpression",
+      "taskFn",
+      "options"
+    ],
+    "getNextRun": [],
+    "changeState": [
+      "state"
+    ],
+    "start": [],
+    "stop": [],
+    "getStatus": [],
+    "destroy": [],
+    "execute": [],
+    "on": [
+      "event",
+      "fun"
+    ],
+    "off": [
+      "event",
+      "fun"
+    ],
+    "once": [
+      "event",
+      "fun"
+    ],
+    "createContext": [
+      "executionDate",
+      "execution"
+    ]
+  },
+  "StateMachine": {
+    "state": [],
+    "constructor": [
+      "param"
+    ],
+    "changeState": [
+      "state"
+    ]
+  },
+  "LocalizedTime": {
+    "timestamp": [],
+    "parts": [],
+    "timezone": [],
+    "constructor": [
+      "date",
+      "timezone"
+    ],
+    "toDate": [],
+    "toISO": [],
+    "getParts": [],
+    "set": [
+      "field",
+      "value"
+    ]
+  },
+  "pad": [
+    "n"
+  ],
+  "buildDateParts": [
+    "date",
+    "timezone"
+  ],
+  "getTimezoneGMT": [
+    "date",
+    "timezone"
+  ],
+  "MatcherWalker": {
+    "cronExpression": [],
+    "baseDate": [],
+    "pattern": [],
+    "expressions": [],
+    "timeMatcher": [],
+    "timezone": [],
+    "constructor": [
+      "cronExpression",
+      "baseDate",
+      "timezone"
+    ],
+    "isMatching": [],
+    "matchNext": []
+  },
+  "findNextDateIgnoringWeekday": [],
+  "availableValue": [
+    "values",
+    "currentValue"
+  ],
+  "TimeMatcher": {
+    "timezone": [],
+    "pattern": [],
+    "expressions": [],
+    "constructor": [
+      "pattern",
+      "timezone"
+    ],
+    "match": [
+      "date"
+    ],
+    "getNextMatch": [
+      "date"
+    ]
+  },
+  "matchValue": [
+    "allowedValues",
+    "value"
+  ]
+}
