@@ -1,0 +1,209 @@
+{
+  "TimeoutError": [
+    "message"
+  ],
+  "ProcessTerminatedError": [
+    "message"
+  ],
+  "MaxConcurrentCallsError": [
+    "message"
+  ],
+  "WorkerNodesOptions": {
+    "constructor": [
+      "param"
+    ],
+    "hasTimeout": [],
+    "getWorkerOptions": [
+      "srcFilePath"
+    ]
+  },
+  "WorkerNodes": {
+    "constructor": [
+      "path",
+      "options"
+    ],
+    "ready": [],
+    "shutdownInProgress": [],
+    "handleWorkerExit": [
+      "worker"
+    ],
+    "emitReadyWorkersCount": [],
+    "canStartWorker": [],
+    "startWorker": [],
+    "rejectTask": [
+      "task",
+      "reason"
+    ],
+    "handleWorkerResponse": [
+      "worker",
+      "workerResponse"
+    ],
+    "handleWorkerTimeout": [
+      "worker"
+    ],
+    "dispatchTaskTo": [
+      "worker"
+    ],
+    "pickWorker": [],
+    "processQueue": [],
+    "enqueue": [
+      "task"
+    ],
+    "terminate": [],
+    "checkShutdown": [],
+    "profiler": [
+      "duration"
+    ],
+    "takeSnapshot": [],
+    "getUsedWorkers": []
+  },
+  "makeHandleFor": [
+    "method"
+  ],
+  "checkReadiness": [
+    "count"
+  ],
+  "Task": {
+    "constructor": [
+      "param"
+    ],
+    "resolve": [
+      "param"
+    ],
+    "reject": [
+      "param"
+    ],
+    "incrementRetries": [],
+    "hasReached": [
+      "retriesLimit"
+    ]
+  },
+  "Profiler": {
+    "constructor": [],
+    "start": [
+      "param"
+    ],
+    "stop": []
+  },
+  "getHeapSnapshot": [
+    "callback"
+  ],
+  "Queue": {
+    "constructor": [
+      "param"
+    ],
+    "length": [],
+    "enqueue": [
+      "item"
+    ],
+    "dequeue": [],
+    "requeue": [
+      "item"
+    ],
+    "remove": [
+      "item"
+    ],
+    "isFull": [],
+    "isEmpty": [],
+    "forEach": [
+      "predicate"
+    ],
+    "map": [
+      "predicate"
+    ],
+    "filter": [
+      "predicate"
+    ],
+    "find": [
+      "predicate"
+    ]
+  },
+  "idMaker": [
+    "param",
+    "param"
+  ],
+  "Sequence": {
+    "constructor": [
+      "param",
+      "max"
+    ],
+    "nextValue": []
+  },
+  "setupModule": [
+    "param"
+  ],
+  "callSplitter": [
+    "requestData"
+  ],
+  "handleCall": [
+    "requestData"
+  ],
+  "handleProfiler": [
+    "param"
+  ],
+  "handleHeapSnapshot": [
+    "requestData"
+  ],
+  "Request": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "Response": {
+    "constructor": [
+      "param"
+    ],
+    "setResult": [
+      "data"
+    ],
+    "from": [
+      "request"
+    ]
+  },
+  "createChannel": [
+    "workerId",
+    "onConnect"
+  ],
+  "WorkerProcess": {
+    "constructor": [
+      "modulePath",
+      "param"
+    ],
+    "exit": [],
+    "handle": [
+      "request"
+    ]
+  },
+  "Transport": {
+    "constructor": [
+      "pipe"
+    ],
+    "send": [
+      "message"
+    ]
+  },
+  "processChunk": [
+    "dataChunk"
+  ],
+  "checkBuffer": [],
+  "Worker": {
+    "constructor": [
+      "param"
+    ],
+    "handle": [
+      "task"
+    ],
+    "withdrawTasks": [],
+    "activeCalls": [],
+    "isOperational": [],
+    "isBusy": [],
+    "canAcceptWork": [],
+    "isProcessAlive": [],
+    "isExhausted": [],
+    "stop": [],
+    "profiler": [
+      "duration"
+    ],
+    "takeSnapshot": []
+  }
+}

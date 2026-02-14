@@ -1,0 +1,332 @@
+{
+  "keepAlive": [],
+  "getCallerLocation": [],
+  "warnUnsafe": [],
+  "checkMoveArgs": [
+    "args"
+  ],
+  "SharedJsonBufferImpl": {
+    "constructor": [
+      "obj",
+      "optionsOrBuffer"
+    ],
+    "initViews": [],
+    "initializeBuffer": [
+      "obj"
+    ],
+    "getRootProxy": [],
+    "alloc": [
+      "byteSize",
+      "param"
+    ],
+    "collectGarbage": [],
+    "resolvePtr": [
+      "ptr"
+    ],
+    "readString": [
+      "ptr"
+    ],
+    "readSlot": [
+      "offset"
+    ],
+    "writeValue": [
+      "value"
+    ],
+    "allocObject": [
+      "initialCap"
+    ],
+    "allocArray": [
+      "initialCap"
+    ],
+    "writeInitial": [
+      "target",
+      "data"
+    ],
+    "getProxyForPtr": [
+      "ptr"
+    ],
+    "toConsoleView": [
+      "ptr",
+      "param"
+    ],
+    "toJSON": [
+      "ptr"
+    ],
+    "objectDelete": [
+      "target",
+      "key"
+    ],
+    "objectSet": [
+      "target",
+      "key",
+      "value"
+    ],
+    "arrayEnsureCapacity": [
+      "target",
+      "minCap"
+    ],
+    "arraySpliceImpl": [
+      "target",
+      "start",
+      "deleteCount",
+      "param"
+    ],
+    "toArrayShallow": [
+      "ptr"
+    ],
+    "arraySet": [
+      "target",
+      "index",
+      "value"
+    ],
+    "toSerialized": [],
+    "toDeserialized": [
+      "data"
+    ]
+  },
+  "initConsoleHooks": [],
+  "countUtf8Bytes": [
+    "str"
+  ],
+  "flatten": [
+    "ptr",
+    "currentDepth"
+  ],
+  "allocTemp": [
+    "size"
+  ],
+  "relocate": [
+    "oldPtr",
+    "type"
+  ],
+  "fixupPointer": [
+    "target"
+  ],
+  "ArrayCursor": {
+    "constructor": [
+      "buffer",
+      "ptr"
+    ],
+    "next": []
+  },
+  "initRuntime": [
+    "config"
+  ],
+  "getPool": [],
+  "move": [
+    "param"
+  ],
+  "drop": [
+    "resource"
+  ],
+  "spawn": [
+    "arg1",
+    "arg2"
+  ],
+  "shutdown": [],
+  "patchDynamicImports": [
+    "code",
+    "callerLocation"
+  ],
+  "findArgumentBounds": [
+    "code",
+    "startIndex"
+  ],
+  "WorkerPool": {
+    "constructor": [
+      "maxThreads"
+    ],
+    "processArgs": [
+      "args"
+    ],
+    "createWorker": [
+      "index"
+    ],
+    "nukeWorker": [
+      "index"
+    ],
+    "submit": [
+      "task"
+    ],
+    "terminate": []
+  },
+  "workerOverride": [
+    "fn"
+  ],
+  "Serializable": {
+    "toDeserialized": [
+      "_obj"
+    ]
+  },
+  "register": [
+    "typeId",
+    "cls"
+  ],
+  "serialize": [
+    "arg"
+  ],
+  "deserialize": [
+    "envelope"
+  ],
+  "Barrier": {
+    "constructor": [
+      "n",
+      "_buffer"
+    ],
+    "blockingWait": [],
+    "wait": [],
+    "toDeserialized": [
+      "buffer"
+    ]
+  },
+  "Condvar": {
+    "constructor": [
+      "_buffer"
+    ],
+    "blockingWait": [
+      "guard"
+    ],
+    "wait": [
+      "guard"
+    ],
+    "notifyOne": [],
+    "notifyAll": [],
+    "toDeserialized": [
+      "obj"
+    ]
+  },
+  "ChannelInternals": {
+    "constructor": [
+      "state",
+      "items",
+      "sendLock",
+      "recvLock",
+      "itemsAvailable",
+      "slotsAvailable"
+    ],
+    "write": [
+      "value"
+    ],
+    "read": [],
+    "isClosed": [],
+    "hasReceivers": [],
+    "toSerialized": [],
+    "toDeserialized": [
+      "data"
+    ]
+  },
+  "ChannelHandle": {
+    "constructor": [
+      "internals"
+    ],
+    "checkDisposed": [],
+    "toSerialized": []
+  },
+  "Sender": {
+    "disposeError": [],
+    "clone": [],
+    "send": [
+      "value"
+    ],
+    "blockingSend": [
+      "value"
+    ],
+    "close": [],
+    "toDeserialized": [
+      "obj"
+    ]
+  },
+  "Receiver": {
+    "disposeError": [],
+    "clone": [],
+    "recv": [],
+    "blockingRecv": [],
+    "close": [],
+    "toDeserialized": [
+      "obj"
+    ]
+  },
+  "fail": [
+    "e"
+  ],
+  "next": [],
+  "channel": [
+    "param"
+  ],
+  "MutexGuard": {
+    "constructor": [
+      "data",
+      "mutex"
+    ],
+    "value": [],
+    "dispose": []
+  },
+  "Mutex": {
+    "constructor": [
+      "data",
+      "_lockBuffer"
+    ],
+    "blockingLock": [],
+    "lock": [],
+    "toDeserialized": [
+      "obj"
+    ]
+  },
+  "RwLockReadGuard": {
+    "constructor": [
+      "data",
+      "controller"
+    ],
+    "value": [],
+    "dispose": []
+  },
+  "RwLockWriteGuard": {
+    "constructor": [
+      "data",
+      "controller"
+    ],
+    "value": [],
+    "dispose": []
+  },
+  "RwLock": {
+    "constructor": [
+      "data",
+      "_stateBuffer"
+    ],
+    "blockingRead": [],
+    "read": [],
+    "blockingWrite": [],
+    "write": [],
+    "toDeserialized": [
+      "obj"
+    ]
+  },
+  "SemaphoreGuard": {
+    "constructor": [
+      "amount",
+      "controller"
+    ],
+    "amount": [],
+    "dispose": []
+  },
+  "Semaphore": {
+    "constructor": [
+      "initialCount",
+      "_buffer"
+    ],
+    "tryAcquire": [
+      "param"
+    ],
+    "blockingAcquire": [
+      "param"
+    ],
+    "acquire": [
+      "param"
+    ],
+    "toDeserialized": [
+      "buffer"
+    ]
+  },
+  "TransferableInstance": {},
+  "WorkerGlobalScope": {}
+}

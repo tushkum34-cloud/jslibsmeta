@@ -1,0 +1,490 @@
+{
+  "helper": {
+    "constructor": [
+      "k_worker",
+      "i_task",
+      "h_events"
+    ],
+    "put": [
+      "s_key",
+      "z_data"
+    ],
+    "get": [
+      "s_key"
+    ],
+    "emit": [
+      "s_key",
+      "param"
+    ]
+  },
+  "fk_message": [
+    "d_msg_receive"
+  ],
+  "armed_group": {
+    "constructor": [
+      "k_group",
+      "a_subsets"
+    ],
+    "map": [
+      "s_task",
+      "param",
+      "param",
+      "param"
+    ],
+    "event_router": [
+      "h_events",
+      "i_subset"
+    ]
+  },
+  "active_group": {
+    "constructor": [
+      "k_group",
+      "n_tasks",
+      "param"
+    ],
+    "thru": [
+      "s_task",
+      "param",
+      "param"
+    ],
+    "each": [
+      "fk_result",
+      "param"
+    ],
+    "series": [
+      "fk_result",
+      "param"
+    ],
+    "reduce": [
+      "z_task",
+      "param",
+      "param",
+      "param"
+    ],
+    "route": [],
+    "route_thru": [
+      "hp_notification",
+      "i_subset",
+      "k_worker",
+      "i_task"
+    ],
+    "route_each": [
+      "z_result",
+      "i_subset",
+      "k_worker",
+      "i_task"
+    ],
+    "route_series": [
+      "z_result",
+      "i_subset",
+      "k_worker",
+      "i_task"
+    ],
+    "route_reduce": [
+      "hp_notification",
+      "i_subset",
+      "k_worker",
+      "i_task"
+    ],
+    "reduce_result": [
+      "z_result",
+      "h_node"
+    ],
+    "force_end": [],
+    "route_end": [],
+    "completable": [],
+    "handle_result_callback": [
+      "z_result",
+      "i_subset",
+      "k_worker",
+      "i_task"
+    ],
+    "end": [
+      "param"
+    ],
+    "mk_result": [
+      "k_worker",
+      "i_subset"
+    ],
+    "lake": []
+  },
+  "fk_reduction": [
+    "z_result_reduction",
+    "i_task_reduction",
+    "k_worker_reduction"
+  ],
+  "divide": [
+    "a_things",
+    "n_workers",
+    "xm_strategy",
+    "param"
+  ],
+  "convergent_pairwise_tree": {
+    "constructor": [
+      "n_items"
+    ],
+    "ray": [
+      "i_item",
+      "z_item"
+    ],
+    "top": [
+      "h_top"
+    ],
+    "merge": [
+      "h_left",
+      "h_right"
+    ],
+    "print": [],
+    "commit": [
+      "h_node"
+    ]
+  },
+  "resolve_sources": [
+    "s_key"
+  ],
+  "lock": {
+    "constructor": [
+      "param"
+    ],
+    "wait": [
+      "fk_unlock"
+    ],
+    "unlock": []
+  },
+  "lockable": {
+    "wait": [
+      "z_key",
+      "z_unlock"
+    ],
+    "unlock": [
+      "z_key"
+    ]
+  },
+  "f_next": [],
+  "pool": {
+    "constructor": [
+      "p_source",
+      "param"
+    ],
+    "spawn_worker": [],
+    "summon": [],
+    "run": [
+      "s_task",
+      "a_args",
+      "h_events"
+    ],
+    "kill": [
+      "s_signal"
+    ],
+    "start": [],
+    "stop": []
+  },
+  "latent_subworker": {
+    "connect": [
+      "h_msg"
+    ],
+    "constructor": [],
+    "postMessage": [
+      "param"
+    ],
+    "onmessage": [],
+    "onmessageerror": [],
+    "terminate": [],
+    "webworkerify": [
+      "z_import",
+      "a_browserify",
+      "param"
+    ]
+  },
+  "readable_stream": {
+    "constructor": [],
+    "setEncoding": [
+      "s_encoding"
+    ],
+    "pause": [],
+    "resume": [],
+    "chunk": [
+      "at_chunk",
+      "b_eof"
+    ]
+  },
+  "readable_stream_via_port": {
+    "constructor": [
+      "d_port"
+    ],
+    "setEncoding": [
+      "s_encoding"
+    ],
+    "next_chunk": []
+  },
+  "readable_stream_via_object_url": {
+    "constructor": [
+      "p_object_url",
+      "param"
+    ],
+    "next_chunk": []
+  },
+  "transfer_stream": {
+    "constructor": [],
+    "send": [
+      "at_chunk",
+      "param"
+    ],
+    "chunk": [
+      "at_chunk",
+      "param"
+    ],
+    "blob": [
+      "dfb_input",
+      "param"
+    ]
+  },
+  "blob_reader": {
+    "constructor": [
+      "k_parent",
+      "dfb_input",
+      "param"
+    ],
+    "next_chunk": []
+  },
+  "Int8ArrayS": {
+    "constructor": [
+      "z_arg_0",
+      "nb_offset",
+      "nl_array"
+    ],
+    "base": [
+      "param"
+    ]
+  },
+  "Uint8ArrayS": {
+    "constructor": [
+      "z_arg_0",
+      "nb_offset",
+      "nl_array"
+    ],
+    "base": [
+      "param"
+    ]
+  },
+  "Uint8ClampedArrayS": {
+    "constructor": [
+      "z_arg_0",
+      "nb_offset",
+      "nl_array"
+    ],
+    "base": [
+      "param"
+    ]
+  },
+  "Int16ArrayS": {
+    "constructor": [
+      "z_arg_0",
+      "nb_offset",
+      "nl_array"
+    ],
+    "base": [
+      "param"
+    ]
+  },
+  "Uint16ArrayS": {
+    "constructor": [
+      "z_arg_0",
+      "nb_offset",
+      "nl_array"
+    ],
+    "base": [
+      "param"
+    ]
+  },
+  "Int32ArrayS": {
+    "constructor": [
+      "z_arg_0",
+      "nb_offset",
+      "nl_array"
+    ],
+    "base": [
+      "param"
+    ]
+  },
+  "Uint32ArrayS": {
+    "constructor": [
+      "z_arg_0",
+      "nb_offset",
+      "nl_array"
+    ],
+    "base": [
+      "param"
+    ]
+  },
+  "Float32ArrayS": {
+    "constructor": [
+      "z_arg_0",
+      "nb_offset",
+      "nl_array"
+    ],
+    "base": [
+      "param"
+    ]
+  },
+  "Float64ArrayS": {
+    "constructor": [
+      "z_arg_0",
+      "nb_offset",
+      "nl_array"
+    ],
+    "base": [
+      "param"
+    ]
+  },
+  "worker": {
+    "from_source": [
+      "p_source",
+      "param"
+    ],
+    "constructor": [
+      "h_config"
+    ],
+    "debug": [
+      "s_tag",
+      "s_type",
+      "param"
+    ],
+    "handle_close_server": [
+      "h_msg"
+    ],
+    "handle_respond": [
+      "h_msg"
+    ],
+    "handle_notify": [
+      "h_msg"
+    ],
+    "handle_event": [
+      "h_msg"
+    ],
+    "handle_error": [
+      "h_msg"
+    ],
+    "handle_spawn": [
+      "h_msg"
+    ],
+    "handle_ping": [],
+    "handle_terminate": [
+      "h_msg"
+    ],
+    "prepare": [
+      "h_task",
+      "fk_task",
+      "param"
+    ],
+    "exec": [
+      "h_task_exec",
+      "fk_task"
+    ],
+    "run": [
+      "s_task",
+      "z_args",
+      "h_events",
+      "fk_run"
+    ],
+    "receive": [
+      "d_port",
+      "h_receive",
+      "fk_task",
+      "param"
+    ],
+    "relay": [
+      "i_task_sender",
+      "d_port",
+      "s_receiver",
+      "param"
+    ],
+    "kill": [
+      "s_kill"
+    ]
+  },
+  "mk_new": [
+    "dc"
+  ],
+  "half_channel": {
+    "constructor": [
+      "kw_host",
+      "kw_client"
+    ],
+    "port_1": [],
+    "port_2": []
+  },
+  "f_process": [
+    "db_msg"
+  ],
+  "f_exit": [],
+  "thru_stream_proxy": {
+    "constructor": []
+  },
+  "thru_stream": {
+    "constructor": [],
+    "_write": [
+      "z_chunk",
+      "s_encoding",
+      "fk_write"
+    ]
+  },
+  "readable_stream_rx": {
+    "constructor": [
+      "h_serial",
+      "k_ipc"
+    ],
+    "on": [
+      "s_event",
+      "f_event"
+    ],
+    "once": [
+      "s_event",
+      "f_event"
+    ],
+    "pipe": []
+  },
+  "writable_stream_rx": {
+    "constructor": [
+      "h_serial",
+      "k_ipc"
+    ],
+    "on": [
+      "s_event",
+      "f_event"
+    ],
+    "once": [
+      "s_event",
+      "f_event"
+    ],
+    "write": [
+      "z_chunk",
+      "param",
+      "param"
+    ]
+  },
+  "handler": {
+    "constructor": [],
+    "handle_stream_on": [
+      "h_msg"
+    ],
+    "handle_stream_once": [
+      "h_msg"
+    ],
+    "handle_stream_emit": [
+      "h_msg"
+    ],
+    "handle_stream_write": [
+      "h_msg"
+    ],
+    "handle_stream_ack": [
+      "h_msg"
+    ],
+    "handle_chunks": [
+      "h_msg"
+    ]
+  },
+  "ArrayBufferS": [
+    "nt_buffer"
+  ]
+}
