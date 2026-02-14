@@ -1,0 +1,931 @@
+{
+  "VMFileSystem": {
+    "constructor": [
+      "param"
+    ],
+    "resolve": [
+      "path"
+    ],
+    "isSeparator": [
+      "char"
+    ],
+    "isAbsolute": [
+      "path"
+    ],
+    "join": [
+      "param"
+    ],
+    "basename": [
+      "path"
+    ],
+    "dirname": [
+      "path"
+    ],
+    "statSync": [
+      "path",
+      "options"
+    ],
+    "readFileSync": [
+      "path",
+      "options"
+    ]
+  },
+  "Resolver": {
+    "constructor": [
+      "fs",
+      "globalPaths",
+      "builtins"
+    ],
+    "init": [
+      "vm"
+    ],
+    "isPathAllowed": [
+      "path"
+    ],
+    "checkAccess": [
+      "mod",
+      "filename"
+    ],
+    "pathIsRelative": [
+      "path"
+    ],
+    "pathIsAbsolute": [
+      "path"
+    ],
+    "lookupPaths": [
+      "mod",
+      "id"
+    ],
+    "getBuiltinModulesList": [
+      "vm"
+    ],
+    "loadBuiltinModule": [
+      "vm",
+      "id"
+    ],
+    "makeExtensionHandler": [
+      "vm",
+      "name"
+    ],
+    "getExtensions": [
+      "vm"
+    ],
+    "loadJS": [
+      "vm",
+      "mod",
+      "filename"
+    ],
+    "loadJSON": [
+      "vm",
+      "mod",
+      "filename"
+    ],
+    "loadNode": [
+      "vm",
+      "mod",
+      "filename"
+    ],
+    "registerModule": [
+      "mod",
+      "filename",
+      "path",
+      "parent",
+      "direct"
+    ],
+    "resolve": [
+      "mod",
+      "x",
+      "options",
+      "extList",
+      "direct"
+    ],
+    "resolveFull": [
+      "mod",
+      "x",
+      "options",
+      "extList",
+      "direct"
+    ],
+    "genLookupPaths": [
+      "path"
+    ]
+  },
+  "VM": {
+    "constructor": [
+      "param"
+    ],
+    "setGlobals": [
+      "values"
+    ],
+    "setGlobal": [
+      "name",
+      "value"
+    ],
+    "getGlobal": [
+      "name"
+    ],
+    "freeze": [
+      "value",
+      "globalName"
+    ],
+    "readonly": [
+      "value",
+      "mock"
+    ],
+    "protect": [
+      "value",
+      "globalName"
+    ],
+    "run": [
+      "code",
+      "options"
+    ],
+    "runFile": [
+      "filename"
+    ]
+  },
+  "NodeVM": {
+    "constructor": [
+      "param"
+    ],
+    "_resolver": [],
+    "call": [
+      "method",
+      "param"
+    ],
+    "require": [
+      "module"
+    ],
+    "run": [
+      "code",
+      "options"
+    ],
+    "code": [
+      "script",
+      "filename",
+      "options"
+    ],
+    "file": [
+      "filename",
+      "options"
+    ]
+  },
+  "VMScript": {
+    "constructor": [
+      "code",
+      "options"
+    ],
+    "wrap": [
+      "prefix",
+      "suffix"
+    ],
+    "compile": [],
+    "getCompiledCode": [],
+    "_compile": [
+      "prefix",
+      "suffix"
+    ],
+    "_compileVM": [],
+    "_compileNodeVM": [],
+    "_compileNodeVMStrict": []
+  },
+  "VMError": {
+    "constructor": [
+      "message",
+      "code"
+    ]
+  },
+  "isDangerousCrossRealmSymbol": [
+    "key"
+  ],
+  "thisUnexpected": [],
+  "thisSafeGetOwnPropertyDescriptor": [
+    "obj",
+    "key"
+  ],
+  "thisThrowCallerCalleeArgumentsAccess": [
+    "key"
+  ],
+  "thisIdMapping": [
+    "factory",
+    "other"
+  ],
+  "SafeBase": [],
+  "SHARED_FUNCTION": [],
+  "thisIsConstructor": [
+    "obj"
+  ],
+  "thisCreateTargetObject": [
+    "obj",
+    "proto"
+  ],
+  "createBridge": [
+    "otherInit",
+    "registerProxy"
+  ],
+  "getHandlerObject": [
+    "handler"
+  ],
+  "handlerFromOtherWithContext": [
+    "handler",
+    "other"
+  ],
+  "thisAddProtoMapping": [
+    "proto",
+    "other",
+    "name"
+  ],
+  "thisAddProtoMappingFactory": [
+    "protoFactory",
+    "other",
+    "name"
+  ],
+  "thisOtherHasOwnProperty": [
+    "object",
+    "key"
+  ],
+  "thisDefaultGet": [
+    "handler",
+    "object",
+    "key",
+    "desc"
+  ],
+  "otherFromThisIfAvailable": [
+    "to",
+    "from",
+    "key"
+  ],
+  "BaseHandler": {
+    "constructor": [
+      "object"
+    ],
+    "getFactory": [],
+    "doPreventExtensions": [
+      "target",
+      "object",
+      "factory"
+    ],
+    "get": [
+      "target",
+      "key",
+      "receiver"
+    ],
+    "set": [
+      "target",
+      "key",
+      "value",
+      "receiver"
+    ],
+    "getPrototypeOf": [
+      "target"
+    ],
+    "setPrototypeOf": [
+      "target",
+      "value"
+    ],
+    "apply": [
+      "target",
+      "context",
+      "args"
+    ],
+    "construct": [
+      "target",
+      "args",
+      "newTarget"
+    ],
+    "getOwnPropertyDescriptorDesc": [
+      "target",
+      "prop",
+      "desc"
+    ],
+    "getOwnPropertyDescriptor": [
+      "target",
+      "prop"
+    ],
+    "definePropertyDesc": [
+      "target",
+      "prop",
+      "desc"
+    ],
+    "defineProperty": [
+      "target",
+      "prop",
+      "desc"
+    ],
+    "deleteProperty": [
+      "target",
+      "prop"
+    ],
+    "has": [
+      "target",
+      "key"
+    ],
+    "isExtensible": [
+      "target"
+    ],
+    "ownKeys": [
+      "target"
+    ],
+    "preventExtensions": [
+      "target"
+    ],
+    "enumerate": [
+      "target"
+    ]
+  },
+  "defaultFactory": [
+    "object"
+  ],
+  "ProtectedHandler": {
+    "getFactory": [],
+    "set": [
+      "target",
+      "key",
+      "value",
+      "receiver"
+    ],
+    "definePropertyDesc": [
+      "target",
+      "prop",
+      "desc"
+    ]
+  },
+  "protectedFactory": [
+    "object"
+  ],
+  "ReadOnlyHandler": {
+    "getFactory": [],
+    "set": [
+      "target",
+      "key",
+      "value",
+      "receiver"
+    ],
+    "setPrototypeOf": [
+      "target",
+      "value"
+    ],
+    "defineProperty": [
+      "target",
+      "prop",
+      "desc"
+    ],
+    "deleteProperty": [
+      "target",
+      "prop"
+    ],
+    "isExtensible": [
+      "target"
+    ],
+    "preventExtensions": [
+      "target"
+    ]
+  },
+  "readonlyFactory": [
+    "object"
+  ],
+  "ReadOnlyMockHandler": {
+    "constructor": [
+      "object",
+      "mock"
+    ],
+    "get": [
+      "target",
+      "key",
+      "receiver"
+    ]
+  },
+  "thisFromOther": [
+    "other"
+  ],
+  "thisProxyOther": [
+    "factory",
+    "other",
+    "proto"
+  ],
+  "thisEnsureThis": [
+    "other"
+  ],
+  "thisFromOtherForThrow": [
+    "other"
+  ],
+  "thisFromOtherWithFactory": [
+    "factory",
+    "other",
+    "proto"
+  ],
+  "thisFromOtherArguments": [
+    "args"
+  ],
+  "thisConnect": [
+    "obj",
+    "other"
+  ],
+  "defaultBuiltinLoaderEvents": [
+    "vm"
+  ],
+  "defaultBuiltinLoaderBuffer": [
+    "vm"
+  ],
+  "defaultBuiltinLoaderUtil": [
+    "vm"
+  ],
+  "EventEmitterReferencingAsyncResource": {
+    "constructor": [
+      "ee",
+      "type",
+      "options"
+    ],
+    "eventEmitter": []
+  },
+  "addDefaultBuiltin": [
+    "builtins",
+    "key",
+    "hostRequire"
+  ],
+  "makeBuiltinsFromLegacyOptions": [
+    "builtins",
+    "hostRequire",
+    "mocks",
+    "overrides"
+  ],
+  "makeBuiltins": [
+    "builtins",
+    "hostRequire"
+  ],
+  "getCoffeeScriptCompiler": [
+    "options"
+  ],
+  "getTypeScriptCompiler": [
+    "options"
+  ],
+  "removeShebang": [
+    "code"
+  ],
+  "jsCompiler": [
+    "code",
+    "filename"
+  ],
+  "lookupCompiler": [
+    "compiler",
+    "options"
+  ],
+  "uncurryThis": [
+    "func"
+  ],
+  "inspect": [
+    "obj"
+  ],
+  "spliceOne": [
+    "list",
+    "index"
+  ],
+  "assert": [
+    "what",
+    "message"
+  ],
+  "E": [
+    "key",
+    "msg",
+    "Base"
+  ],
+  "validateBoolean": [
+    "value",
+    "name"
+  ],
+  "validateFunction": [
+    "value",
+    "name"
+  ],
+  "validateString": [
+    "value",
+    "name"
+  ],
+  "nc": [
+    "cond",
+    "e"
+  ],
+  "oc": [
+    "base",
+    "key"
+  ],
+  "isEventTarget": [
+    "obj"
+  ],
+  "EventEmitter": [
+    "opts"
+  ],
+  "EventEmitterAsyncResource": {
+    "constructor": [
+      "param"
+    ],
+    "emit": [
+      "event",
+      "param"
+    ],
+    "emitDestroy": [],
+    "asyncId": [],
+    "triggerAsyncId": [],
+    "asyncResource": []
+  },
+  "checkListener": [
+    "listener"
+  ],
+  "addCatch": [
+    "that",
+    "promise",
+    "type",
+    "args"
+  ],
+  "emitUnhandledRejectionOrErr": [
+    "ee",
+    "err",
+    "type",
+    "args"
+  ],
+  "_getMaxListeners": [
+    "that"
+  ],
+  "_addListener": [
+    "target",
+    "type",
+    "listener",
+    "prepend"
+  ],
+  "onceWrapper": [],
+  "_onceWrap": [
+    "target",
+    "type",
+    "listener"
+  ],
+  "_listeners": [
+    "target",
+    "type",
+    "unwrap"
+  ],
+  "listenerCount": [
+    "type"
+  ],
+  "arrayClone": [
+    "arr"
+  ],
+  "unwrapListeners": [
+    "arr"
+  ],
+  "DefaultFileSystem": {
+    "resolve": [
+      "path"
+    ],
+    "isSeparator": [
+      "char"
+    ],
+    "isAbsolute": [
+      "path"
+    ],
+    "join": [
+      "param"
+    ],
+    "basename": [
+      "path"
+    ],
+    "dirname": [
+      "path"
+    ],
+    "statSync": [
+      "path",
+      "options"
+    ],
+    "readFileSync": [
+      "path",
+      "options"
+    ]
+  },
+  "compileScript": [
+    "filename",
+    "script"
+  ],
+  "makeCustomExtensions": [
+    "vm",
+    "resolver",
+    "sourceExtensions"
+  ],
+  "makeSafePaths": [
+    "unsafePaths"
+  ],
+  "makeSafeOptions": [
+    "unsafeOptions"
+  ],
+  "vm2NestingLoader": [
+    "vm"
+  ],
+  "defaultRequire": [
+    "moduleName"
+  ],
+  "escapeRegExp": [
+    "string"
+  ],
+  "makeExternalMatcherRegex": [
+    "obj"
+  ],
+  "makeExternalMatcher": [
+    "obj"
+  ],
+  "CustomResolver": {
+    "constructor": [
+      "fileSystem",
+      "globalPaths",
+      "builtinModules",
+      "rootPaths",
+      "pathContext",
+      "customResolver",
+      "hostRequire",
+      "compiler",
+      "strict"
+    ],
+    "isPathAllowed": [
+      "filename"
+    ],
+    "loadJS": [
+      "vm",
+      "mod",
+      "filename"
+    ],
+    "loadNode": [
+      "vm",
+      "mod",
+      "filename"
+    ],
+    "customResolve": [
+      "x",
+      "path",
+      "extList"
+    ],
+    "getCompiler": [
+      "filename"
+    ],
+    "isStrict": [
+      "filename"
+    ]
+  },
+  "LegacyResolver": {
+    "constructor": [
+      "fileSystem",
+      "globalPaths",
+      "builtinModules",
+      "rootPaths",
+      "pathContext",
+      "customResolver",
+      "hostRequire",
+      "compiler",
+      "strict",
+      "externals",
+      "allowTransitive"
+    ],
+    "isPathAllowed": [
+      "path"
+    ],
+    "isPathAllowedForModule": [
+      "path",
+      "mod"
+    ],
+    "registerModule": [
+      "mod",
+      "filename",
+      "path",
+      "parent",
+      "direct"
+    ],
+    "resolveFull": [
+      "mod",
+      "x",
+      "options",
+      "extList",
+      "direct"
+    ],
+    "checkAccess": [
+      "mod",
+      "filename"
+    ],
+    "loadJS": [
+      "vm",
+      "mod",
+      "filename"
+    ],
+    "customResolve": [
+      "x",
+      "path",
+      "extList"
+    ]
+  },
+  "makeResolverFromLegacyOptions": [
+    "options",
+    "override",
+    "compiler"
+  ],
+  "isArrayIndex": [
+    "key"
+  ],
+  "pathTestIsDirectory": [
+    "fs",
+    "path"
+  ],
+  "pathTestIsFile": [
+    "fs",
+    "path"
+  ],
+  "readFile": [
+    "fs",
+    "path"
+  ],
+  "readFileWhenExists": [
+    "fs",
+    "path"
+  ],
+  "DefaultResolver": {
+    "constructor": [
+      "fs",
+      "globalPaths",
+      "builtins"
+    ],
+    "getCompiler": [
+      "filename"
+    ],
+    "isStrict": [
+      "filename"
+    ],
+    "readScript": [
+      "filename"
+    ],
+    "loadJS": [
+      "vm",
+      "mod",
+      "filename"
+    ],
+    "loadJSON": [
+      "vm",
+      "mod",
+      "filename"
+    ],
+    "loadNode": [
+      "vm",
+      "mod",
+      "filename"
+    ],
+    "customResolve": [
+      "x",
+      "path",
+      "extList"
+    ],
+    "resolveFull": [
+      "mod",
+      "x",
+      "options",
+      "extList",
+      "direct"
+    ],
+    "loadAsFileOrDirectory": [
+      "x",
+      "extList"
+    ],
+    "tryFile": [
+      "x"
+    ],
+    "tryWithExtension": [
+      "x",
+      "extList"
+    ],
+    "readPackage": [
+      "path"
+    ],
+    "readPackageScope": [
+      "path"
+    ],
+    "loadAsFile": [
+      "x",
+      "extList"
+    ],
+    "loadIndex": [
+      "x",
+      "extList"
+    ],
+    "loadAsPackage": [
+      "x",
+      "pack",
+      "extList"
+    ],
+    "loadAsDirectory": [
+      "x",
+      "extList"
+    ],
+    "loadNodeModules": [
+      "x",
+      "dirs",
+      "extList"
+    ],
+    "loadPackageImports": [
+      "x",
+      "dir",
+      "extList"
+    ],
+    "loadPackageExports": [
+      "x",
+      "dir",
+      "extList"
+    ],
+    "loadPackageSelf": [
+      "x",
+      "dir",
+      "extList"
+    ],
+    "resolveEsmMatch": [
+      "match",
+      "x",
+      "extList"
+    ],
+    "packageExportsResolve": [
+      "packageURL",
+      "subpath",
+      "rexports",
+      "conditions",
+      "extList"
+    ],
+    "packageImportsExportsResolve": [
+      "matchKey",
+      "matchObj",
+      "packageURL",
+      "isImports",
+      "conditions",
+      "extList"
+    ],
+    "patternKeyCompare": [
+      "keyA",
+      "keyB"
+    ],
+    "packageTargetResolve": [
+      "packageURL",
+      "target",
+      "subpath",
+      "pattern",
+      "internal",
+      "conditions",
+      "extList"
+    ],
+    "packageResolve": [
+      "packageSpecifier",
+      "parentURL",
+      "conditions",
+      "extList"
+    ]
+  },
+  "assertType": [
+    "node",
+    "type"
+  ],
+  "makeNiceSyntaxError": [
+    "message",
+    "code",
+    "filename",
+    "location",
+    "tokenizer"
+  ],
+  "transformer": [
+    "args",
+    "body",
+    "isAsync",
+    "isGenerator",
+    "filename"
+  ],
+  "checkAsync": [
+    "allow"
+  ],
+  "transformAndCheck": [
+    "args",
+    "code",
+    "isAsync",
+    "isGenerator",
+    "allowAsync"
+  ],
+  "doWithTimeout": [
+    "fn",
+    "timeout"
+  ],
+  "runScript": [
+    "script"
+  ],
+  "makeReadonly": [
+    "value",
+    "mock"
+  ],
+  "makeProtected": [
+    "value"
+  ],
+  "addProtoMapping": [
+    "hostProto",
+    "sandboxProto"
+  ],
+  "addProtoMappingFactory": [
+    "hostProto",
+    "sandboxProtoFactory"
+  ],
+  "factory": []
+}

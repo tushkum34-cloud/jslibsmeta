@@ -1,0 +1,392 @@
+{
+  "NlgManager": {
+    "constructor": [
+      "param",
+      "container"
+    ],
+    "addAnswer": [
+      "locale",
+      "intent",
+      "answer",
+      "opts"
+    ],
+    "findAnswer": [
+      "locale",
+      "intent",
+      "context",
+      "settings"
+    ],
+    "removeAnswer": [
+      "locale",
+      "intent",
+      "answer",
+      "opts"
+    ],
+    "isValid": [
+      "condition",
+      "context"
+    ],
+    "findAllAnswers": [
+      "locale",
+      "intent",
+      "context"
+    ]
+  },
+  "NlpExcelReader": {
+    "constructor": [
+      "manager"
+    ],
+    "load": [
+      "filename"
+    ],
+    "loadSettings": [],
+    "loadLanguages": [],
+    "loadNamedEntities": [],
+    "loadRegexEntities": [],
+    "loadIntents": [],
+    "loadResponses": []
+  },
+  "NlpManager": {
+    "constructor": [
+      "param"
+    ],
+    "addDocument": [
+      "locale",
+      "utterance",
+      "intent"
+    ],
+    "removeDocument": [
+      "locale",
+      "utterance",
+      "intent"
+    ],
+    "addLanguage": [
+      "locale"
+    ],
+    "removeLanguage": [
+      "locale"
+    ],
+    "assignDomain": [
+      "locale",
+      "intent",
+      "domain"
+    ],
+    "getIntentDomain": [
+      "locale",
+      "intent"
+    ],
+    "getDomains": [],
+    "guessLanguage": [
+      "text"
+    ],
+    "addAction": [
+      "intent",
+      "action",
+      "parameters",
+      "fn"
+    ],
+    "getActions": [
+      "intent"
+    ],
+    "removeAction": [
+      "intent",
+      "action",
+      "parameters"
+    ],
+    "removeActions": [
+      "intent"
+    ],
+    "addAnswer": [
+      "locale",
+      "intent",
+      "answer",
+      "opts"
+    ],
+    "removeAnswer": [
+      "locale",
+      "intent",
+      "answer",
+      "opts"
+    ],
+    "findAllAnswers": [
+      "locale",
+      "intent"
+    ],
+    "getSentiment": [
+      "locale",
+      "utterance"
+    ],
+    "addNamedEntityText": [
+      "entityName",
+      "optionName",
+      "languages",
+      "texts"
+    ],
+    "removeNamedEntityText": [
+      "entityName",
+      "optionName",
+      "languages",
+      "texts"
+    ],
+    "addRegexEntity": [
+      "entityName",
+      "languages",
+      "regex"
+    ],
+    "addBetweenCondition": [
+      "locale",
+      "name",
+      "left",
+      "right",
+      "opts"
+    ],
+    "addPositionCondition": [
+      "locale",
+      "name",
+      "position",
+      "words",
+      "opts"
+    ],
+    "addAfterCondition": [
+      "locale",
+      "name",
+      "words",
+      "opts"
+    ],
+    "addAfterFirstCondition": [
+      "locale",
+      "name",
+      "words",
+      "opts"
+    ],
+    "addAfterLastCondition": [
+      "locale",
+      "name",
+      "words",
+      "opts"
+    ],
+    "addBeforeCondition": [
+      "locale",
+      "name",
+      "words",
+      "opts"
+    ],
+    "addBeforeFirstCondition": [
+      "locale",
+      "name",
+      "words",
+      "opts"
+    ],
+    "addBeforeLastCondition": [
+      "locale",
+      "name",
+      "words",
+      "opts"
+    ],
+    "describeLanguage": [
+      "locale",
+      "name"
+    ],
+    "beginEdit": [],
+    "train": [],
+    "classify": [
+      "locale",
+      "utterance",
+      "settings"
+    ],
+    "process": [
+      "locale",
+      "utterance",
+      "context",
+      "settings"
+    ],
+    "extractEntities": [
+      "locale",
+      "utterance",
+      "context",
+      "settings"
+    ],
+    "toObj": [],
+    "fromObj": [
+      "obj"
+    ],
+    "export": [
+      "param"
+    ],
+    "import": [
+      "data"
+    ],
+    "save": [
+      "srcFileName",
+      "param"
+    ],
+    "load": [
+      "srcFileName"
+    ],
+    "loadExcel": [
+      "param"
+    ],
+    "testCorpus": [
+      "corpus"
+    ],
+    "addCorpora": [
+      "corpora"
+    ],
+    "addCorpus": [
+      "corpus"
+    ],
+    "trainAndEvaluate": [
+      "fileName"
+    ]
+  },
+  "NlpUtil": {
+    "getTruncatedLocale": [
+      "locale"
+    ],
+    "getStemmer": [
+      "locale"
+    ],
+    "getTokenizer": [
+      "locale"
+    ],
+    "getCulture": [
+      "locale"
+    ]
+  },
+  "BrainNLU": {
+    "constructor": [
+      "param"
+    ],
+    "add": [
+      "utterance",
+      "intent"
+    ],
+    "train": [],
+    "getClassifications": [
+      "utterance"
+    ],
+    "getBestClassification": [
+      "utterance"
+    ]
+  },
+  "ConversationContext": {
+    "constructor": [
+      "settings"
+    ],
+    "getConversationId": [
+      "session"
+    ],
+    "getConversationContext": [],
+    "setConversationContext": []
+  },
+  "MemoryConversationContext": {
+    "constructor": [
+      "settings"
+    ],
+    "getConversationContext": [
+      "session"
+    ],
+    "setConversationContext": [
+      "session",
+      "context"
+    ]
+  },
+  "Recognizer": {
+    "constructor": [
+      "settings"
+    ],
+    "train": [],
+    "load": [
+      "filename"
+    ],
+    "save": [
+      "filename"
+    ],
+    "loadExcel": [
+      "filename"
+    ],
+    "process": [
+      "srcContext",
+      "locale",
+      "utterance"
+    ],
+    "recognizeUtterance": [
+      "utterance",
+      "model",
+      "cb"
+    ],
+    "getDialogId": [
+      "session"
+    ],
+    "innerRecognize": [
+      "session",
+      "cb"
+    ],
+    "recognize": [
+      "session",
+      "cb"
+    ],
+    "recognizeTwice": [
+      "session",
+      "cb"
+    ],
+    "defaultRouting": [
+      "bot",
+      "session",
+      "results"
+    ],
+    "executeAction": [
+      "name",
+      "parameters",
+      "context"
+    ],
+    "processActions": [
+      "session",
+      "response",
+      "cb"
+    ],
+    "processAnswer": [
+      "session",
+      "answer"
+    ],
+    "setBot": [
+      "bot",
+      "param",
+      "param"
+    ]
+  },
+  "SentimentAnalyzer": {
+    "constructor": [
+      "param",
+      "container"
+    ],
+    "getSentiment": [
+      "utterance",
+      "param",
+      "param"
+    ]
+  },
+  "SentimentManager": {
+    "constructor": [
+      "settings"
+    ],
+    "addLanguage": [],
+    "translate": [
+      "sentiment"
+    ],
+    "process": [
+      "locale",
+      "phrase"
+    ]
+  },
+  "Handlebars": {
+    "compile": [
+      "str"
+    ]
+  },
+  "SpellCheck": {
+    "constructor": [
+      "param"
+    ]
+  }
+}

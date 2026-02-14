@@ -1,0 +1,2393 @@
+{
+  "SentenceAnalyzer": {
+    "constructor": [
+      "pos",
+      "callbackFunction"
+    ],
+    "part": [
+      "callbackFunction"
+    ],
+    "prepositionPhrases": [],
+    "subjectToString": [],
+    "predicateToString": [],
+    "implicitYou": [],
+    "toString": [],
+    "type": [
+      "cbf"
+    ]
+  },
+  "RuleTemplate": {
+    "constructor": [
+      "templateName",
+      "metadata"
+    ],
+    "windowFitsSite": [
+      "sentence",
+      "i"
+    ]
+  },
+  "Predicate": {
+    "constructor": [
+      "name",
+      "parameter1",
+      "parameter2"
+    ],
+    "evaluate": [
+      "sentence",
+      "position"
+    ]
+  },
+  "TransformationRule": {
+    "constructor": [
+      "c1",
+      "c2",
+      "predicate",
+      "parameter1",
+      "parameter2"
+    ],
+    "key": [],
+    "apply": [
+      "sentence",
+      "position"
+    ],
+    "isApplicableAt": [
+      "sentence",
+      "taggedSentence",
+      "i"
+    ],
+    "prettyPrint": [],
+    "applyAt": [
+      "sentence",
+      "i"
+    ],
+    "score": []
+  },
+  "RuleSet": {
+    "constructor": [
+      "language"
+    ],
+    "addRule": [
+      "rule"
+    ],
+    "removeRule": [
+      "rule"
+    ],
+    "getRules": [],
+    "nrRules": [],
+    "hasRule": [
+      "rule"
+    ],
+    "prettyPrint": []
+  },
+  "Lexicon": {
+    "constructor": [
+      "language",
+      "defaultCategory",
+      "defaultCategoryCapitalised",
+      "extendedLexicon"
+    ],
+    "parseLexicon": [
+      "data"
+    ],
+    "tagWordWithDefaults": [
+      "word"
+    ],
+    "tagWord": [
+      "word"
+    ],
+    "addWord": [
+      "word",
+      "categories"
+    ],
+    "prettyPrint": [],
+    "nrEntries": [],
+    "size": [],
+    "setDefaultCategories": [
+      "category",
+      "categoryCapitalised"
+    ]
+  },
+  "Corpus": {
+    "constructor": [
+      "data",
+      "typeOfCorpus",
+      "SentenceClass"
+    ],
+    "parseBrownCorpus": [
+      "data",
+      "SentenceClass"
+    ],
+    "getTags": [],
+    "splitInTrainAndTest": [
+      "percentageTrain"
+    ],
+    "analyse": [],
+    "buildLexicon": [],
+    "tag": [
+      "lexicon"
+    ],
+    "nrSentences": [],
+    "nrWords": [],
+    "generateFeatures": [],
+    "prettyPrint": []
+  },
+  "Sentence": {
+    "constructor": [
+      "data"
+    ],
+    "addTaggedWord": [
+      "token",
+      "tag"
+    ],
+    "clone": []
+  },
+  "BrillPOSTagger": {
+    "constructor": [
+      "lexicon",
+      "ruleSet"
+    ],
+    "tag": [
+      "sentence"
+    ],
+    "tagWithLexicon": [
+      "sentence"
+    ],
+    "applyRules": [
+      "sentence"
+    ]
+  },
+  "BrillPOSTester": {
+    "test": [
+      "corpus",
+      "tagger"
+    ]
+  },
+  "BrillPOSTrainer": {
+    "constructor": [
+      "ruleScoreThreshold"
+    ],
+    "selectHighRule": [],
+    "mapRuleToSite": [
+      "rule",
+      "i",
+      "j"
+    ],
+    "mapSiteToRule": [
+      "i",
+      "j",
+      "rule"
+    ],
+    "associateSiteWithRule": [
+      "i",
+      "j",
+      "rule"
+    ],
+    "siteIsAssociatedWithRule": [
+      "i",
+      "j",
+      "rule"
+    ],
+    "getSites": [
+      "rule"
+    ],
+    "getRules": [
+      "i",
+      "j"
+    ],
+    "disconnectSiteFromRule": [
+      "i",
+      "j",
+      "rule"
+    ],
+    "scoreRule": [
+      "rule",
+      "i",
+      "j"
+    ],
+    "generatePositiveRules": [
+      "i",
+      "j"
+    ],
+    "scanForPositiveRules": [],
+    "scanForSites": [],
+    "neighbourhood": [
+      "i",
+      "j"
+    ],
+    "train": [
+      "corpus",
+      "templates",
+      "lexicon"
+    ],
+    "printRulesWithScores": []
+  },
+  "compareRules": [
+    "a",
+    "b"
+  ],
+  "compareByFrequency": [
+    "a",
+    "b"
+  ],
+  "nextWordIsCap": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "nextWordIs": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "nextWordParameterValues": [
+    "sentence",
+    "i"
+  ],
+  "prevWordIsCap": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "currentWordIsCap": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "currentWordParameterValues": [
+    "sentence",
+    "i"
+  ],
+  "currentWordIs": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "isNumeric": [
+    "num"
+  ],
+  "currentWordIsNumber": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "currentWordIsURL": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "currentWordAnd2TagAfterAre": [
+    "sentence",
+    "i",
+    "parameter1",
+    "parameter2"
+  ],
+  "twoTagAfterParameterValues": [
+    "sentence",
+    "i"
+  ],
+  "currentWordAndNextTagAre": [
+    "sentence",
+    "i",
+    "parameter1",
+    "parameter2"
+  ],
+  "currentWordAndPrevTagAre": [
+    "sentence",
+    "i",
+    "parameter1",
+    "parameter2"
+  ],
+  "currentWordAnd2TagBeforeAre": [
+    "sentence",
+    "i",
+    "parameter1",
+    "parameter2"
+  ],
+  "twoTagBeforeParameterValues": [
+    "sentence",
+    "i"
+  ],
+  "currentWordAnd2AfterAre": [
+    "sentence",
+    "i",
+    "parameter1",
+    "parameter2"
+  ],
+  "prevWordIs": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "prevWordParameterValues": [
+    "sentence",
+    "i"
+  ],
+  "prev1Or2WordIs": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "prev1Or2WordParameterValues": [
+    "sentence",
+    "i"
+  ],
+  "currentWordEndsWith": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "currentWordEndsWithParameterValues": [
+    "sentence",
+    "i"
+  ],
+  "rightBigramIs": [
+    "sentence",
+    "i",
+    "parameter1",
+    "parameter2"
+  ],
+  "leftBigramIs": [
+    "sentence",
+    "i",
+    "parameter1",
+    "parameter2"
+  ],
+  "nextBigramIs": [
+    "sentence",
+    "i",
+    "parameter1",
+    "parameter2"
+  ],
+  "twoWordAfterParameterValues": [
+    "sentence",
+    "i"
+  ],
+  "prevBigramIs": [
+    "sentence",
+    "i",
+    "parameter1",
+    "parameter2"
+  ],
+  "twoWordBeforeParameterValues": [
+    "sentence",
+    "i"
+  ],
+  "next1Or2WordIs": [
+    "sentence",
+    "i",
+    "parameter1",
+    "parameter2"
+  ],
+  "next1Or2WordParameterValues": [
+    "sentence",
+    "i"
+  ],
+  "nextTagIs": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "nextTagParameterValues": [
+    "sentence",
+    "i"
+  ],
+  "next2TagIs": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "next2TagParameterValues": [
+    "sentence",
+    "i"
+  ],
+  "next1Or2TagIs": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "next1Or2TagIsParameterValues": [
+    "sentence",
+    "i"
+  ],
+  "next1Or2Or3Tag": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "next1Or2Or3TagParameterValues": [
+    "sentence",
+    "i"
+  ],
+  "surroundedByTags": [
+    "sentence",
+    "i",
+    "parameter1",
+    "parameter2"
+  ],
+  "prev1Or2Or3Tag": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "prev1Or2Or3TagParameterValues": [
+    "sentence",
+    "i"
+  ],
+  "prev1Or2Tag": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "prev1Or2TagParameterValues": [
+    "sentence",
+    "i"
+  ],
+  "prevTagIs": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "prevTagParameterValues": [
+    "sentence",
+    "i"
+  ],
+  "prev2TagIs": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "defaultPredicate": [
+    "sentence",
+    "i",
+    "parameter"
+  ],
+  "peg$subclass": [
+    "child",
+    "parent"
+  ],
+  "ctor": [],
+  "peg$SyntaxError": [
+    "message",
+    "expected",
+    "found",
+    "location"
+  ],
+  "hex": [
+    "ch"
+  ],
+  "literalEscape": [
+    "s"
+  ],
+  "classEscape": [
+    "s"
+  ],
+  "describeExpectation": [
+    "expectation"
+  ],
+  "describeExpected": [
+    "expected"
+  ],
+  "describeFound": [
+    "found"
+  ],
+  "peg$parse": [
+    "input",
+    "options"
+  ],
+  "peg$c0": [
+    "c1",
+    "c2",
+    "pred",
+    "pars"
+  ],
+  "peg$c3": [
+    "characters"
+  ],
+  "peg$c6": [
+    "wc"
+  ],
+  "text": [],
+  "location": [],
+  "expected": [
+    "description",
+    "location"
+  ],
+  "error": [
+    "message",
+    "location"
+  ],
+  "peg$literalExpectation": [
+    "text",
+    "ignoreCase"
+  ],
+  "peg$classExpectation": [
+    "parts",
+    "inverted",
+    "ignoreCase"
+  ],
+  "peg$anyExpectation": [],
+  "peg$endExpectation": [],
+  "peg$otherExpectation": [
+    "description"
+  ],
+  "peg$computePosDetails": [
+    "pos"
+  ],
+  "peg$computeLocation": [
+    "startPos",
+    "endPos"
+  ],
+  "peg$fail": [
+    "expected"
+  ],
+  "peg$buildSimpleError": [
+    "message",
+    "location"
+  ],
+  "peg$buildStructuredError": [
+    "expected",
+    "found",
+    "location"
+  ],
+  "peg$parsetransformation_rule": [],
+  "peg$parsecategory1": [],
+  "peg$parseidentifier": [],
+  "peg$parsewild_card": [],
+  "peg$parseEOL": [],
+  "peg$parseComment": [],
+  "peg$parseS": [],
+  "peg$parseS_no_eol": [],
+  "peg$parseEOI": [],
+  "BayesClassifier": {
+    "classifier": [],
+    "constructor": [
+      "stemmer",
+      "smoothing"
+    ],
+    "load": [
+      "filename",
+      "stemmer",
+      "callback"
+    ],
+    "restore": [
+      "classifier",
+      "stemmer"
+    ],
+    "saveTo": [
+      "storage"
+    ],
+    "loadFrom": [
+      "storage"
+    ]
+  },
+  "Classifier": {
+    "constructor": [
+      "features",
+      "sample"
+    ],
+    "load": [
+      "filename",
+      "ElementClass",
+      "callback"
+    ],
+    "save": [
+      "filename",
+      "callback"
+    ],
+    "addElement": [
+      "x"
+    ],
+    "addDocument": [
+      "context",
+      "classification",
+      "ElementClass"
+    ],
+    "train": [
+      "maxIterations",
+      "minImprovement"
+    ],
+    "getClassifications": [
+      "b"
+    ],
+    "classify": [
+      "b"
+    ]
+  },
+  "checkThreadSupport": [],
+  "docsToFeatures": [
+    "docs"
+  ],
+  "docsToObs": [
+    "docs",
+    "lastAdded",
+    "stemmer",
+    "keepStops"
+  ],
+  "emitEvents": [
+    "self",
+    "docFeatures",
+    "totalDocs"
+  ],
+  "trainParallel": [
+    "numThreads",
+    "callback"
+  ],
+  "onFeaturesResult": [
+    "docs"
+  ],
+  "onFinished": [],
+  "trainParallelBatches": [
+    "options"
+  ],
+  "onError": [
+    "err"
+  ],
+  "sendNext": [],
+  "sendBatch": [
+    "batchJson"
+  ],
+  "retrainParallel": [
+    "numThreads",
+    "callback"
+  ],
+  "ApparatusClassifier": {
+    "addExample": [
+      "observation",
+      "label"
+    ],
+    "classify": [
+      "observation"
+    ],
+    "train": [],
+    "restore": [
+      "classifier"
+    ]
+  },
+  "ApparatusBayesClassifier": {
+    "classFeatures": [],
+    "classTotals": [],
+    "totalExamples": [],
+    "smoothing": [],
+    "constructor": [
+      "smoothing"
+    ],
+    "getClassifications": [
+      "observation"
+    ],
+    "probabilityOfClass": [
+      "observation",
+      "label"
+    ],
+    "restore": [
+      "classifier"
+    ]
+  },
+  "ApparatusLogisticRegressionClassifier": {
+    "examples": [],
+    "maxFeaturePosition": [],
+    "classifications": [],
+    "exampleCount": [],
+    "createClassifications": [],
+    "addExample": [
+      "data",
+      "classification"
+    ],
+    "getClassifications": [
+      "observation"
+    ],
+    "restore": [
+      "classifier"
+    ]
+  },
+  "ClassifierBase": {
+    "classifier": [],
+    "docs": [],
+    "features": [],
+    "stemmer": [],
+    "lastAdded": [],
+    "constructor": [
+      "classifier",
+      "stemmer"
+    ],
+    "addDocument": [
+      "text",
+      "classification"
+    ],
+    "removeDocument": [
+      "text",
+      "classification"
+    ],
+    "textToFeatures": [
+      "observation"
+    ],
+    "train": [],
+    "retrain": [],
+    "getClassifications": [
+      "observation"
+    ],
+    "classify": [
+      "observation"
+    ],
+    "setOptions": [
+      "options"
+    ],
+    "save": [
+      "filename",
+      "callback"
+    ],
+    "load": [
+      "filename",
+      "stemmer",
+      "callback"
+    ],
+    "saveTo": [
+      "storage"
+    ],
+    "loadFrom": [
+      "storage"
+    ],
+    "Threads": [],
+    "trainParallel": [
+      "numThreads",
+      "callback"
+    ],
+    "trainParallelBatches": [
+      "options"
+    ],
+    "retrainParallel": [
+      "numThreads",
+      "callback"
+    ]
+  },
+  "LogisticRegressionClassifier": {
+    "constructor": [
+      "stemmer"
+    ],
+    "restore": [
+      "classifier",
+      "stemmer"
+    ],
+    "load": [
+      "filename",
+      "stemmer",
+      "callback"
+    ],
+    "loadFrom": [
+      "key",
+      "stemmer",
+      "storageBackend"
+    ],
+    "train": []
+  },
+  "MaxEntClassifier": {
+    "sample": [],
+    "features": [],
+    "scaler": [],
+    "constructor": [
+      "features",
+      "sample"
+    ],
+    "addElement": [
+      "x"
+    ],
+    "addDocument": [
+      "context",
+      "classification",
+      "elementClass"
+    ],
+    "train": [
+      "maxIterations",
+      "minImprovement"
+    ],
+    "getClassifications": [
+      "b"
+    ],
+    "classify": [
+      "b"
+    ],
+    "save": [
+      "filename",
+      "callback"
+    ],
+    "load": [
+      "filename",
+      "elementClass",
+      "callback"
+    ]
+  },
+  "Distribution": {
+    "constructor": [
+      "alpha",
+      "featureSet",
+      "sample"
+    ],
+    "toString": [],
+    "weight": [
+      "x"
+    ],
+    "calculateAPriori": [
+      "x"
+    ],
+    "prepareWeights": [],
+    "calculateAPosteriori": [
+      "x"
+    ],
+    "aPosterioriNormalisation": [
+      "b"
+    ],
+    "prepareAPosterioris": [],
+    "prepare": [],
+    "KullbackLieblerDistance": [],
+    "logLikelihood": [],
+    "entropy": [],
+    "checkSum": []
+  },
+  "Feature": {
+    "constructor": [
+      "f",
+      "name",
+      "parameters"
+    ],
+    "apply": [
+      "x"
+    ],
+    "expectationApprox": [
+      "p",
+      "sample"
+    ],
+    "expectation": [
+      "p",
+      "A",
+      "B"
+    ],
+    "observedExpectation": [
+      "sample"
+    ]
+  },
+  "FeatureSet": {
+    "constructor": [],
+    "addFeature": [
+      "feature"
+    ],
+    "featureExists": [
+      "feature"
+    ],
+    "getFeatures": [],
+    "size": [],
+    "prettyPrint": []
+  },
+  "Sample": {
+    "constructor": [
+      "elements"
+    ],
+    "analyse": [],
+    "addElement": [
+      "x"
+    ],
+    "observedProbabilityOfContext": [
+      "context"
+    ],
+    "observedProbability": [
+      "x"
+    ],
+    "size": [],
+    "getClasses": [],
+    "generateFeatures": [
+      "featureSet"
+    ],
+    "save": [
+      "filename",
+      "callback"
+    ],
+    "load": [
+      "filename",
+      "ElementClass",
+      "callback"
+    ]
+  },
+  "Context": {
+    "constructor": [
+      "data"
+    ],
+    "toString": []
+  },
+  "Element": {
+    "constructor": [
+      "a",
+      "b"
+    ],
+    "toString": []
+  },
+  "SEElement": {
+    "generateFeatures": [
+      "featureSet"
+    ]
+  },
+  "POSElement": {
+    "generateFeatures": [
+      "featureSet"
+    ]
+  },
+  "GISScaler": {
+    "constructor": [
+      "featureSet",
+      "sample"
+    ],
+    "calculateMaxSumOfFeatures": [],
+    "addCorrectionFeature": [],
+    "run": [
+      "maxIterations",
+      "minImprovement"
+    ]
+  },
+  "MESentence": {
+    "generateSampleElements": [
+      "sample"
+    ]
+  },
+  "MECorpus": {
+    "generateSample": [],
+    "splitInTrainAndTest": [
+      "percentageTrain"
+    ]
+  },
+  "f": [
+    "x"
+  ],
+  "currentWord": [
+    "x"
+  ],
+  "prevBigram": [
+    "x"
+  ],
+  "prevWordAndCat": [
+    "x"
+  ],
+  "isZero": [
+    "x"
+  ],
+  "isOne": [
+    "x"
+  ],
+  "getBigrams": [
+    "str"
+  ],
+  "intersect": [
+    "set1",
+    "set2"
+  ],
+  "sanitize": [
+    "str"
+  ],
+  "diceCoefficient": [
+    "str1",
+    "str2"
+  ],
+  "HammingDistance": [
+    "s1",
+    "s2",
+    "ignoreCase"
+  ],
+  "distance": [
+    "s1",
+    "s2"
+  ],
+  "JaroWinklerDistance": [
+    "s1",
+    "s2",
+    "param"
+  ],
+  "_getMatchStart": [
+    "distanceMatrix",
+    "matchEnd",
+    "sourceLength"
+  ],
+  "getMinCostSubstring": [
+    "distanceMatrix",
+    "source",
+    "target"
+  ],
+  "DamerauLevenshteinDistance": [
+    "source",
+    "target",
+    "options"
+  ],
+  "DamerauLevenshteinDistanceSearch": [
+    "source",
+    "target",
+    "options"
+  ],
+  "LevenshteinDistanceSearch": [
+    "source",
+    "target",
+    "options"
+  ],
+  "LevenshteinDistance": [
+    "source",
+    "target",
+    "options"
+  ],
+  "levenshteinDistance": [
+    "source",
+    "target",
+    "options"
+  ],
+  "buildExportMap": [
+    "modules"
+  ],
+  "CountInflector": {
+    "nth": []
+  },
+  "FormSet": [],
+  "CountInflectorFr": {},
+  "NounInflector": {
+    "constructor": []
+  },
+  "SingularPluralInflector": {
+    "singularize": [
+      "token"
+    ],
+    "pluralize": [
+      "token"
+    ],
+    "addSingular": [
+      "pattern",
+      "replacement"
+    ],
+    "addPlural": [
+      "pattern",
+      "replacement"
+    ]
+  },
+  "NounInflectorFr": {},
+  "NounInflectorJa": {},
+  "PresentVerbInflector": {
+    "pluralize": [
+      "token"
+    ],
+    "singularize": [
+      "token"
+    ]
+  },
+  "VerbInflector": {
+    "constructor": []
+  },
+  "uppercaseify": [
+    "token"
+  ],
+  "capitalize": [
+    "token"
+  ],
+  "lowercaseify": [
+    "token"
+  ],
+  "TenseInflector": {
+    "addSingular": [
+      "pattern",
+      "replacement"
+    ],
+    "addPlural": [
+      "pattern",
+      "replacement"
+    ],
+    "ize": [
+      "token",
+      "formSet",
+      "customForms"
+    ],
+    "izeAbiguous": [
+      "token"
+    ],
+    "pluralize": [
+      "token"
+    ],
+    "singularize": [
+      "token"
+    ],
+    "restoreCase": [
+      "token"
+    ],
+    "izeRegulars": [
+      "token",
+      "formSet"
+    ],
+    "addForm": [
+      "singularTable",
+      "pluralTable",
+      "singular",
+      "plural"
+    ],
+    "addIrregular": [
+      "singular",
+      "plural"
+    ],
+    "izeRegExps": [
+      "token",
+      "forms"
+    ]
+  },
+  "arrayToKey": [
+    "arr"
+  ],
+  "countNgrams": [
+    "ngram"
+  ],
+  "ngrams": [
+    "sequence",
+    "n",
+    "startSymbol",
+    "endSymbol"
+  ],
+  "Converters": {
+    "alphabetFH": [
+      "str"
+    ],
+    "numbersFH": [
+      "str"
+    ],
+    "symbolFH": [
+      "str"
+    ],
+    "purePunctuationFH": [
+      "str"
+    ],
+    "punctuationFH": [
+      "str"
+    ],
+    "katakanaFH": [
+      "str"
+    ],
+    "fixFullwidthKana": [
+      "str"
+    ],
+    "normalize": [
+      "str"
+    ],
+    "alphabetHF": [
+      "str"
+    ],
+    "numbersHF": [
+      "str"
+    ],
+    "symbolHF": [
+      "str"
+    ],
+    "purePunctuationHF": [
+      "str"
+    ],
+    "punctuationHF": [
+      "str"
+    ],
+    "katakanaHF": [
+      "str"
+    ],
+    "fixCompositeSymbols": [
+      "str"
+    ],
+    "hiraganaToKatakana": [
+      "str"
+    ],
+    "katakanaToHiragana": [
+      "str"
+    ]
+  },
+  "normalizeTokens": [
+    "tokens"
+  ],
+  "normalizeJa": [
+    "str"
+  ],
+  "removeDiacritics": [
+    "text"
+  ],
+  "SoundExDM": {
+    "process": [
+      "word",
+      "codeLength"
+    ]
+  },
+  "DoubleMetaphone": {
+    "process": [
+      "token",
+      "maxLength"
+    ],
+    "isVowel": [
+      "c"
+    ]
+  },
+  "subMatch": [
+    "startOffset",
+    "stopOffset",
+    "terms"
+  ],
+  "subMatchAbsolute": [
+    "startOffset",
+    "stopOffset",
+    "terms"
+  ],
+  "truncate": [
+    "string",
+    "length"
+  ],
+  "addSecondary": [
+    "primaryAppendage",
+    "secondaryAppendage"
+  ],
+  "add": [
+    "primaryAppendage"
+  ],
+  "addCompressedDouble": [
+    "c",
+    "encoded"
+  ],
+  "handleC": [],
+  "handleD": [],
+  "handleG": [],
+  "handleH": [],
+  "handleJ": [],
+  "handleL": [],
+  "handleM": [],
+  "handleP": [],
+  "handleR": [],
+  "handleS": [],
+  "handleT": [],
+  "handleX": [],
+  "handleW": [],
+  "handleZ": [],
+  "Phonetic": {
+    "compare": [
+      "stringA",
+      "stringB"
+    ],
+    "tokenizeAndPhoneticize": [
+      "str",
+      "phoneticsProcessor",
+      "keepStops"
+    ]
+  },
+  "Metaphone": {
+    "dedup": [
+      "token"
+    ],
+    "dropInitialLetters": [
+      "token"
+    ],
+    "dropBafterMAtEnd": [
+      "token"
+    ],
+    "cTransform": [
+      "token"
+    ],
+    "dTransform": [
+      "token"
+    ],
+    "dropG": [
+      "token"
+    ],
+    "transformG": [
+      "token"
+    ],
+    "dropH": [
+      "token"
+    ],
+    "transformCK": [
+      "token"
+    ],
+    "transformPH": [
+      "token"
+    ],
+    "transformQ": [
+      "token"
+    ],
+    "transformS": [
+      "token"
+    ],
+    "transformT": [
+      "token"
+    ],
+    "dropT": [
+      "token"
+    ],
+    "transformV": [
+      "token"
+    ],
+    "transformWH": [
+      "token"
+    ],
+    "dropW": [
+      "token"
+    ],
+    "transformX": [
+      "token"
+    ],
+    "dropY": [
+      "token"
+    ],
+    "transformZ": [
+      "token"
+    ],
+    "dropVowels": [
+      "token"
+    ],
+    "process": [
+      "token",
+      "maxLength"
+    ]
+  },
+  "SoundEx": {
+    "process": [
+      "token",
+      "maxLength"
+    ],
+    "transformLipps": [
+      "token"
+    ],
+    "transformThroats": [
+      "token"
+    ],
+    "transformToungue": [
+      "token"
+    ],
+    "transformL": [
+      "token"
+    ],
+    "transformHum": [
+      "token"
+    ],
+    "transformR": [
+      "token"
+    ],
+    "condense": [
+      "token"
+    ],
+    "padRight0": [
+      "token"
+    ],
+    "transform": [
+      "token"
+    ]
+  },
+  "SentimentAnalyzer": {
+    "constructor": [
+      "language",
+      "stemmer",
+      "type"
+    ],
+    "getSentiment": [
+      "words"
+    ]
+  },
+  "Spellcheck": {
+    "constructor": [
+      "wordlist"
+    ],
+    "isCorrect": [
+      "word"
+    ],
+    "getCorrections": [
+      "word",
+      "maxDistance"
+    ],
+    "edits": [
+      "word"
+    ],
+    "editsWithMaxDistance": [
+      "word",
+      "distance"
+    ],
+    "editsWithMaxDistanceHelper": [
+      "distanceCounter",
+      "distance2edits"
+    ]
+  },
+  "getWordSize": [
+    "word"
+  ],
+  "tranform": [
+    "word",
+    "stepConf"
+  ],
+  "NodeCarry": [
+    "param"
+  ],
+  "compose": [
+    "param"
+  ],
+  "pipe": [
+    "param"
+  ],
+  "Token": [
+    "string"
+  ],
+  "loadDictionary": [],
+  "find": [
+    "searchKey",
+    "callback"
+  ],
+  "PrefixRules": [],
+  "runDisambiguator": [
+    "disambiguateRules",
+    "word"
+  ],
+  "createResultObject": [
+    "result",
+    "word",
+    "type"
+  ],
+  "disambiguateRule1A": [
+    "word"
+  ],
+  "disambiguateRule1B": [
+    "word"
+  ],
+  "disambiguateRule2": [
+    "word"
+  ],
+  "disambiguateRule3": [
+    "word"
+  ],
+  "disambiguateRule4": [
+    "word"
+  ],
+  "disambiguateRule5": [
+    "word"
+  ],
+  "disambiguateRule6a": [
+    "word"
+  ],
+  "disambiguateRule6b": [
+    "word"
+  ],
+  "disambiguateRule7": [
+    "word"
+  ],
+  "disambiguateRule8": [
+    "word"
+  ],
+  "disambiguateRule9": [
+    "word"
+  ],
+  "disambiguateRule10": [
+    "word"
+  ],
+  "disambiguateRule11": [
+    "word"
+  ],
+  "disambiguateRule12": [
+    "word"
+  ],
+  "disambiguateRule13a": [
+    "word"
+  ],
+  "disambiguateRule13b": [
+    "word"
+  ],
+  "disambiguateRule14": [
+    "word"
+  ],
+  "disambiguateRule15a": [
+    "word"
+  ],
+  "disambiguateRule15b": [
+    "word"
+  ],
+  "disambiguateRule16": [
+    "word"
+  ],
+  "disambiguateRule17a": [
+    "word"
+  ],
+  "disambiguateRule17b": [
+    "word"
+  ],
+  "disambiguateRule17c": [
+    "word"
+  ],
+  "disambiguateRule17d": [
+    "word"
+  ],
+  "disambiguateRule18a": [
+    "word"
+  ],
+  "disambiguateRule18b": [
+    "word"
+  ],
+  "disambiguateRule19": [
+    "word"
+  ],
+  "disambiguateRule20": [
+    "word"
+  ],
+  "disambiguateRule21a": [
+    "word"
+  ],
+  "disambiguateRule21b": [
+    "word"
+  ],
+  "disambiguateRule23": [
+    "word"
+  ],
+  "disambiguateRule24": [
+    "word"
+  ],
+  "disambiguateRule25": [
+    "word"
+  ],
+  "disambiguateRule26a": [
+    "word"
+  ],
+  "disambiguateRule26b": [
+    "word"
+  ],
+  "disambiguateRule27": [
+    "word"
+  ],
+  "disambiguateRule28a": [
+    "word"
+  ],
+  "disambiguateRule28b": [
+    "word"
+  ],
+  "disambiguateRule29": [
+    "word"
+  ],
+  "disambiguateRule30a": [
+    "word"
+  ],
+  "disambiguateRule30b": [
+    "word"
+  ],
+  "disambiguateRule30c": [
+    "word"
+  ],
+  "disambiguateRule31a": [
+    "word"
+  ],
+  "disambiguateRule31b": [
+    "word"
+  ],
+  "disambiguateRule32": [
+    "word"
+  ],
+  "disambiguateRule34": [
+    "word"
+  ],
+  "disambiguateRule35": [
+    "word"
+  ],
+  "disambiguateRule36": [
+    "word"
+  ],
+  "disambiguateRule37a": [
+    "word"
+  ],
+  "disambiguateRule37b": [
+    "word"
+  ],
+  "disambiguateRule38a": [
+    "word"
+  ],
+  "disambiguateRule38b": [
+    "word"
+  ],
+  "disambiguateRule39a": [
+    "word"
+  ],
+  "disambiguateRule39b": [
+    "word"
+  ],
+  "disambiguateRule40a": [
+    "word"
+  ],
+  "disambiguateRule40b": [
+    "word"
+  ],
+  "disambiguateRule41": [
+    "word"
+  ],
+  "disambiguateRule42": [
+    "word"
+  ],
+  "Removal": [
+    "originalWord",
+    "result",
+    "removedPart",
+    "affixType"
+  ],
+  "stemPluralWord": [
+    "pluralWord"
+  ],
+  "stemSingularWord": [
+    "word"
+  ],
+  "isPlural": [
+    "token"
+  ],
+  "stemmingProcess": [],
+  "removeSuffixes": [],
+  "removePrefixes": [],
+  "checkPrefixRules": [],
+  "loopRestorePrefixes": [],
+  "isSuffixRemovals": [
+    "removal"
+  ],
+  "restorePrefix": [],
+  "precedenceAdjustmentSpecification": [
+    "word"
+  ],
+  "SuffixRules": [],
+  "acceptable": [
+    "candidate"
+  ],
+  "applyRuleSection": [
+    "token",
+    "intact"
+  ],
+  "categorizeGroups": [
+    "token"
+  ],
+  "categorizeChars": [
+    "token"
+  ],
+  "measure": [
+    "token"
+  ],
+  "endsWithDoublCons": [
+    "token"
+  ],
+  "attemptReplace": [
+    "token",
+    "pattern",
+    "replacement",
+    "callback"
+  ],
+  "attemptReplacePatterns": [
+    "token",
+    "patterns"
+  ],
+  "replacePatterns": [
+    "token",
+    "replacements",
+    "measureThreshold"
+  ],
+  "replaceRegex": [
+    "token",
+    "regex",
+    "includeParts",
+    "minimumMeasure"
+  ],
+  "step1a": [
+    "str",
+    "param"
+  ],
+  "step1b": [
+    "str",
+    "param"
+  ],
+  "step1c": [
+    "token"
+  ],
+  "step2": [
+    "str",
+    "param"
+  ],
+  "step3": [
+    "str",
+    "param"
+  ],
+  "step4": [
+    "token"
+  ],
+  "step5a": [
+    "token"
+  ],
+  "step5b": [
+    "token"
+  ],
+  "stemm": [
+    "word"
+  ],
+  "PorterStemmer": {
+    "replaceAccentedCharacters": [
+      "word"
+    ],
+    "handleYI": [
+      "word"
+    ],
+    "markRegions": [
+      "token"
+    ],
+    "prelude": [
+      "word"
+    ],
+    "step1b": [
+      "word",
+      "suffixes"
+    ],
+    "step1": [
+      "word"
+    ],
+    "step2": [
+      "word"
+    ],
+    "step3a": [
+      "word"
+    ],
+    "step3b": [
+      "word"
+    ],
+    "step4": [
+      "word"
+    ],
+    "postlude": [
+      "word"
+    ],
+    "stem": [
+      "word"
+    ]
+  },
+  "stem": [
+    "_str"
+  ],
+  "regions": [
+    "token"
+  ],
+  "prelude": [
+    "token"
+  ],
+  "endsinArr": [
+    "str",
+    "suffixes"
+  ],
+  "isVowel": [
+    "x"
+  ],
+  "endsin": [
+    "str",
+    "suffix"
+  ],
+  "getNextVowelPos": [
+    "token",
+    "start"
+  ],
+  "getNextConsonantPos": [
+    "token",
+    "start"
+  ],
+  "replaceAcute": [
+    "token"
+  ],
+  "vowelMarking": [
+    "token"
+  ],
+  "replacer": [
+    "translationTable"
+  ],
+  "removeSuffix": [
+    "str",
+    "len"
+  ],
+  "undoubleEnding": [
+    "str"
+  ],
+  "getR1": [
+    "token"
+  ],
+  "step1": [
+    "str"
+  ],
+  "markRegionN": [
+    "start"
+  ],
+  "markRegionV": [],
+  "standardSuffix": [
+    "token"
+  ],
+  "verbSuffix": [
+    "token"
+  ],
+  "iPrecededByCSuffix": [
+    "token"
+  ],
+  "residualSuffix": [
+    "token"
+  ],
+  "residualForm": [
+    "token"
+  ],
+  "postlude": [
+    "token"
+  ],
+  "perfectiveGerund": [
+    "token"
+  ],
+  "adjectival": [
+    "token"
+  ],
+  "adjective": [
+    "token"
+  ],
+  "participle": [
+    "token"
+  ],
+  "reflexive": [
+    "token"
+  ],
+  "verb": [
+    "token"
+  ],
+  "noun": [
+    "token"
+  ],
+  "superlative": [
+    "token"
+  ],
+  "derivational": [
+    "token"
+  ],
+  "getRegions": [
+    "str"
+  ],
+  "Stemmer": {
+    "stem": [
+      "token"
+    ],
+    "tokenizeAndStem": [
+      "text",
+      "keepStops"
+    ]
+  },
+  "StemmerJa": [],
+  "tokenStemmer": [
+    "token"
+  ],
+  "TfIdf": {
+    "constructor": [
+      "deserialized"
+    ],
+    "tf": [
+      "term",
+      "document"
+    ],
+    "idf": [
+      "term",
+      "force"
+    ],
+    "addDocument": [
+      "document",
+      "key",
+      "restoreCache"
+    ],
+    "removeDocument": [
+      "key"
+    ],
+    "addFileSync": [
+      "path",
+      "encoding",
+      "key",
+      "restoreCache"
+    ],
+    "tfidf": [
+      "terms",
+      "d"
+    ],
+    "listTerms": [
+      "d"
+    ],
+    "tfidfs": [
+      "terms",
+      "callback"
+    ],
+    "setTokenizer": [
+      "t"
+    ],
+    "setStopwords": [
+      "customStopwords"
+    ]
+  },
+  "buildDocument": [
+    "text",
+    "key"
+  ],
+  "documentHasTerm": [
+    "term",
+    "document"
+  ],
+  "isEncoding": [
+    "encoding"
+  ],
+  "AggressiveTokenizer": {
+    "tokenize": [
+      "text"
+    ]
+  },
+  "Tokenizer": {
+    "trim": [
+      "array"
+    ]
+  },
+  "AggressiveTokenizerNl": {
+    "tokenize": [
+      "text"
+    ]
+  },
+  "AggressiveTokenizerFa": {
+    "clearEmptyString": [
+      "array"
+    ],
+    "clearText": [
+      "text"
+    ],
+    "tokenize": [
+      "text"
+    ]
+  },
+  "AggressiveTokenizerFr": {
+    "tokenize": [
+      "text"
+    ]
+  },
+  "AggressiveTokenizerDe": {
+    "tokenize": [
+      "text"
+    ]
+  },
+  "AggressiveTokenizerRu": {
+    "withoutEmpty": [
+      "array"
+    ],
+    "clearText": [
+      "text"
+    ],
+    "tokenize": [
+      "text"
+    ]
+  },
+  "AggressiveTokenizerEs": {
+    "tokenize": [
+      "text"
+    ]
+  },
+  "AggressiveTokenizerIt": {
+    "tokenize": [
+      "text"
+    ]
+  },
+  "AggressiveTokenizerPl": {
+    "withoutEmpty": [
+      "array"
+    ],
+    "clearText": [
+      "text"
+    ],
+    "tokenize": [
+      "text"
+    ]
+  },
+  "AggressiveTokenizerPt": {
+    "withoutEmpty": [
+      "array"
+    ],
+    "tokenize": [
+      "text"
+    ]
+  },
+  "AggressiveTokenizerNo": {
+    "tokenize": [
+      "text"
+    ]
+  },
+  "AggressiveTokenizerSv": {
+    "tokenize": [
+      "text"
+    ]
+  },
+  "AggressiveTokenizerVi": {
+    "tokenize": [
+      "text"
+    ]
+  },
+  "AggressiveTokenizerId": {
+    "tokenize": [
+      "text"
+    ]
+  },
+  "AggressiveTokenizerHi": {
+    "tokenize": [
+      "text"
+    ]
+  },
+  "AggressiveTokenizerUk": {
+    "tokenize": [
+      "text"
+    ]
+  },
+  "CaseTokenizer": {
+    "tokenize": [
+      "text",
+      "preserveApostrophe"
+    ]
+  },
+  "RegexpTokenizer": {
+    "constructor": [
+      "opts"
+    ],
+    "tokenize": [
+      "s"
+    ]
+  },
+  "OrthographyTokenizer": {
+    "constructor": [
+      "options"
+    ],
+    "tokenize": [
+      "text"
+    ]
+  },
+  "WordTokenizer": {
+    "constructor": [
+      "options"
+    ]
+  },
+  "WordPunctTokenizer": {
+    "constructor": [
+      "options"
+    ]
+  },
+  "TreebankWordTokenizer": [],
+  "TokenizerJa": [],
+  "SentenceTokenizer": {
+    "tokenize": [
+      "text"
+    ]
+  },
+  "generateUniqueCode": [
+    "base",
+    "index"
+  ],
+  "escapeRegExp": [
+    "string"
+  ],
+  "Trie": {
+    "constructor": [
+      "caseSensitive"
+    ],
+    "addString": [
+      "string"
+    ],
+    "addStrings": [
+      "list"
+    ],
+    "keysWithPrefix": [
+      "prefix"
+    ],
+    "contains": [
+      "string"
+    ],
+    "findMatchesOnPath": [
+      "search"
+    ],
+    "findPrefix": [
+      "search"
+    ],
+    "getSize": []
+  },
+  "isEmpty": [
+    "object"
+  ],
+  "get": [
+    "synsetOffset",
+    "pos",
+    "callback"
+  ],
+  "recurse": [
+    "node",
+    "search",
+    "stringAgg",
+    "lastWord"
+  ],
+  "Bag": {
+    "add": [
+      "element"
+    ],
+    "isEmpty": [],
+    "contains": [
+      "item"
+    ],
+    "unpack": []
+  },
+  "DirectedEdge": {
+    "constructor": [
+      "start",
+      "end",
+      "weight"
+    ],
+    "weight": [],
+    "from": [],
+    "to": [],
+    "toString": []
+  },
+  "EdgeWeightedDigraph": {
+    "edgesNum": [],
+    "adj": [],
+    "add": [
+      "start",
+      "end",
+      "weight"
+    ],
+    "addEdge": [
+      "e"
+    ],
+    "v": [],
+    "e": [],
+    "getAdj": [
+      "v"
+    ],
+    "edges": [],
+    "toString": []
+  },
+  "ShortestPathTree": {
+    "constructor": [
+      "digraph",
+      "start"
+    ],
+    "relaxEdge": [
+      "e"
+    ],
+    "relaxVertex": [
+      "digraph",
+      "vertex",
+      "tree"
+    ],
+    "getDistTo": [
+      "v"
+    ],
+    "hasPathTo": [
+      "v"
+    ],
+    "pathTo": [
+      "v"
+    ]
+  },
+  "LongestPathTree": {
+    "constructor": [
+      "digraph",
+      "start"
+    ],
+    "relaxEdge": [
+      "e"
+    ],
+    "relaxVertex": [
+      "digraph",
+      "vertex",
+      "tree"
+    ],
+    "getDistTo": [
+      "v"
+    ],
+    "hasPathTo": [
+      "v"
+    ],
+    "pathTo": [
+      "v"
+    ]
+  },
+  "Topological": {
+    "constructor": [
+      "g"
+    ],
+    "isDAG": [],
+    "order": []
+  },
+  "FilePlugin": {
+    "store": [
+      "object",
+      "options"
+    ],
+    "retrieve": [
+      "key",
+      "options"
+    ]
+  },
+  "MemcachedPlugin": {
+    "constructor": [],
+    "store": [
+      "object",
+      "options"
+    ],
+    "retrieve": [
+      "key",
+      "options"
+    ]
+  },
+  "MongoDBPlugin": {
+    "constructor": [],
+    "store": [
+      "object",
+      "options"
+    ],
+    "retrieve": [
+      "key",
+      "options"
+    ]
+  },
+  "PostgresPlugin": {
+    "constructor": [],
+    "configPostgres": [],
+    "createTableIfNotExists": [
+      "client",
+      "tableName"
+    ],
+    "store": [
+      "object",
+      "options"
+    ],
+    "retrieve": [
+      "key",
+      "options"
+    ]
+  },
+  "RedisPlugin": {
+    "constructor": [],
+    "configRedis": [],
+    "store": [
+      "object",
+      "options"
+    ],
+    "retrieve": [
+      "key",
+      "options"
+    ]
+  },
+  "StorageBackend": {
+    "storageType": [],
+    "client": [],
+    "constructor": [
+      "type"
+    ],
+    "setStorageType": [
+      "storageType"
+    ],
+    "store": [
+      "key",
+      "value"
+    ],
+    "retrieve": [
+      "key"
+    ]
+  },
+  "topoSort": [
+    "vertexs",
+    "edges"
+  ],
+  "visit": [
+    "vertex",
+    "i",
+    "predecessors"
+  ],
+  "uniqueVertexs": [
+    "edges"
+  ],
+  "flip": [
+    "obj"
+  ],
+  "merge": [
+    "varArgs"
+  ],
+  "DataFile": {
+    "constructor": [
+      "dataDir",
+      "name"
+    ],
+    "get": [
+      "location",
+      "callback"
+    ]
+  },
+  "IndexFile": [
+    "dataDir",
+    "name"
+  ],
+  "WordNet": [
+    "dataDir"
+  ],
+  "getFileSize": [
+    "path"
+  ],
+  "findPrevEOL": [
+    "fd",
+    "pos",
+    "callbackFunction"
+  ],
+  "readLine": [
+    "fd",
+    "pos",
+    "callback"
+  ],
+  "miss": [
+    "callbackFunction"
+  ],
+  "findAt": [
+    "fd",
+    "size",
+    "pos",
+    "lastPos",
+    "adjustment",
+    "searchKey",
+    "callbackFunction",
+    "lastKey"
+  ],
+  "lookupFromFile": [
+    "word",
+    "callback"
+  ],
+  "lookup": [
+    "word",
+    "callback"
+  ],
+  "pushResults": [
+    "data",
+    "results",
+    "offsets",
+    "callback"
+  ],
+  "lookupFromFiles": [
+    "files",
+    "results",
+    "word",
+    "callback"
+  ],
+  "getDataFile": [
+    "pos"
+  ],
+  "loadSynonyms": [
+    "synonyms",
+    "results",
+    "ptrs",
+    "callback"
+  ],
+  "loadResultSynonyms": [
+    "synonyms",
+    "results",
+    "callback"
+  ],
+  "lookupSynonyms": [
+    "word",
+    "callback"
+  ],
+  "getSynonyms": [],
+  "appendLineChar": [
+    "fd",
+    "pos",
+    "buffPos",
+    "buff",
+    "callbackFunction"
+  ],
+  "open": [
+    "callback"
+  ],
+  "WordNetFile": [
+    "dataDir",
+    "fileName"
+  ]
+}
