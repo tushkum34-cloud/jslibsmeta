@@ -1,0 +1,46 @@
+name: Build NPM Library Database
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+
+concurrency:
+  group: npm-lib-builder
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: |
+          npm install @babel/parser @babel/traverse tar
+
+      - name: Run generator
+        run: node gen_npm_libs.js
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "lib-bot"
+          git config --global user.email "bot@users.noreply.github.com"
+
+          git add lib_db progress.json || true
+          git commit -m "Auto update npm lib database" || echo "No changes"
+
+          git pull --rebase origin main || true
+          git push origin main
