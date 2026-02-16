@@ -1,0 +1,476 @@
+{
+  "Job": {
+    "agenda": [],
+    "byJobProcessor": [],
+    "attrs": [],
+    "canceled": [],
+    "getCanceledMessage": [],
+    "forkedChild": [],
+    "cancel": [
+      "error"
+    ],
+    "gotTimerToExecute": [],
+    "constructor": [
+      "agenda",
+      "args",
+      "param"
+    ],
+    "PROCESSOR_MANAGED_FIELDS": [],
+    "toJson": [
+      "param"
+    ],
+    "repeatEvery": [
+      "interval",
+      "param"
+    ],
+    "repeatAt": [
+      "time"
+    ],
+    "startDate": [
+      "dateInput"
+    ],
+    "endDate": [
+      "dateInput"
+    ],
+    "skipDays": [
+      "days"
+    ],
+    "forkMode": [
+      "enableForkMode"
+    ],
+    "disable": [],
+    "enable": [],
+    "unique": [
+      "unique",
+      "opts"
+    ],
+    "debounce": [
+      "delay",
+      "options"
+    ],
+    "schedule": [
+      "time"
+    ],
+    "priority": [
+      "priority"
+    ],
+    "fail": [
+      "reason"
+    ],
+    "fetchStatus": [],
+    "isRunning": [],
+    "save": [],
+    "remove": [],
+    "isDead": [],
+    "isExpired": [],
+    "touch": [
+      "progress"
+    ],
+    "computeNextRunAt": [],
+    "handleRetry": [
+      "error"
+    ],
+    "run": [],
+    "runJob": [],
+    "isPromise": [
+      "value"
+    ]
+  },
+  "JobProcessingQueue": {
+    "agenda": [],
+    "_queue": [],
+    "constructor": [
+      "agenda"
+    ],
+    "length": [],
+    "getQueue": [],
+    "pop": [],
+    "remove": [
+      "job"
+    ],
+    "insert": [
+      "job"
+    ],
+    "returnNextConcurrencyFreeJob": [
+      "jobStatus",
+      "handledJobs"
+    ]
+  },
+  "JobProcessor": {
+    "agenda": [],
+    "maxConcurrency": [],
+    "totalLockLimit": [],
+    "processEvery": [],
+    "jobStatus": [],
+    "localQueueProcessing": [],
+    "getStatus": [
+      "param"
+    ],
+    "nextScanAt": [],
+    "jobQueue": [],
+    "runningJobs": [],
+    "lockedJobs": [],
+    "isJobQueueFilling": [],
+    "isRunning": [],
+    "processInterval": [],
+    "notificationChannel": [],
+    "notificationUnsubscribe": [],
+    "constructor": [
+      "agenda",
+      "maxConcurrency",
+      "totalLockLimit",
+      "processEvery",
+      "notificationChannel"
+    ],
+    "stop": [],
+    "drain": [
+      "options"
+    ],
+    "handleNotification": [
+      "notification"
+    ],
+    "process": [],
+    "shouldLock": [
+      "name"
+    ],
+    "enqueueJob": [
+      "job"
+    ],
+    "findAndLockNextJob": [
+      "jobName",
+      "definition"
+    ],
+    "jobQueueFilling": [
+      "name"
+    ],
+    "jobProcessing": [
+      "param"
+    ],
+    "runOrRetry": [
+      "job"
+    ],
+    "updateStatus": [
+      "name",
+      "key",
+      "number"
+    ]
+  },
+  "delay": [
+    "ms"
+  ],
+  "cleanup": [],
+  "finish": [
+    "result"
+  ],
+  "checkComplete": [],
+  "completeListener": [],
+  "abortListener": [],
+  "checkIfJobIsStillAlive": [],
+  "Define": [
+    "param"
+  ],
+  "Every": [
+    "interval",
+    "param"
+  ],
+  "JobsController": [
+    "param"
+  ],
+  "getOrCreateControllerMetadata": [
+    "target"
+  ],
+  "getControllerMetadata": [
+    "target"
+  ],
+  "setControllerMetadata": [
+    "target",
+    "metadata"
+  ],
+  "isJobsController": [
+    "target"
+  ],
+  "JobsRegistrationError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "registerJobs": [
+    "agenda",
+    "instances"
+  ],
+  "registerJobsFromMetadata": [
+    "agenda",
+    "instance",
+    "metadata",
+    "pendingEveryJobs"
+  ],
+  "wrappedHandler": [
+    "job"
+  ],
+  "buildJobName": [
+    "namespace",
+    "name"
+  ],
+  "scheduleEveryJobsOnReady": [
+    "agenda",
+    "pendingJobs"
+  ],
+  "scheduleJobs": [],
+  "getRegisteredJobsInfo": [
+    "instances"
+  ],
+  "Agenda": {
+    "attrs": [],
+    "forkedWorker": [],
+    "forkHelper": [],
+    "backend": [],
+    "db": [],
+    "notificationChannel": [],
+    "stateSubscriptionUnsubscribe": [],
+    "jobLogger": [],
+    "loggingDefault": [],
+    "on": [
+      "event",
+      "listener"
+    ],
+    "definitions": [],
+    "jobProcessor": [],
+    "ready": [],
+    "isActiveJobProcessor": [],
+    "runForkedJob": [
+      "jobId"
+    ],
+    "getRunningStats": [
+      "param"
+    ],
+    "constructor": [
+      "config",
+      "cb"
+    ],
+    "cancel": [
+      "options"
+    ],
+    "disable": [
+      "options"
+    ],
+    "enable": [
+      "options"
+    ],
+    "name": [
+      "name"
+    ],
+    "processEvery": [
+      "time"
+    ],
+    "maxConcurrency": [
+      "num"
+    ],
+    "defaultConcurrency": [
+      "num"
+    ],
+    "lockLimit": [
+      "num"
+    ],
+    "defaultLockLimit": [
+      "num"
+    ],
+    "defaultLockLifetime": [
+      "ms"
+    ],
+    "notifyVia": [
+      "channel"
+    ],
+    "hasNotificationChannel": [],
+    "hasJobLogger": [],
+    "logJobEvent": [
+      "entry"
+    ],
+    "getLogs": [
+      "query"
+    ],
+    "clearLogs": [
+      "query"
+    ],
+    "publishJobNotification": [
+      "job"
+    ],
+    "publishJobStateNotification": [
+      "job",
+      "type",
+      "extra"
+    ],
+    "subscribeToStateNotifications": [],
+    "queryJobs": [
+      "options"
+    ],
+    "getJobsOverview": [],
+    "purge": [],
+    "define": [
+      "name",
+      "processor",
+      "options"
+    ],
+    "createJobs": [
+      "names",
+      "createJob"
+    ],
+    "create": [
+      "name",
+      "data"
+    ],
+    "every": [
+      "interval",
+      "names",
+      "data",
+      "options"
+    ],
+    "schedule": [
+      "when",
+      "names",
+      "data",
+      "options"
+    ],
+    "now": [
+      "name",
+      "data"
+    ],
+    "nowDebounced": [
+      "name",
+      "data",
+      "uniqueKey",
+      "debounceMs",
+      "options"
+    ],
+    "start": [],
+    "stop": [
+      "closeConnection"
+    ],
+    "drain": [
+      "options"
+    ]
+  },
+  "createJob": [
+    "name"
+  ],
+  "BaseNotificationChannel": {
+    "_state": [],
+    "handlers": [],
+    "stateHandlers": [],
+    "reconnectAttempts": [],
+    "reconnectTimeout": [],
+    "config": [],
+    "constructor": [
+      "param"
+    ],
+    "state": [],
+    "setState": [
+      "newState"
+    ],
+    "subscribe": [
+      "handler"
+    ],
+    "notifyHandlers": [
+      "notification"
+    ],
+    "notifyStateHandlers": [
+      "notification"
+    ],
+    "subscribeState": [
+      "handler"
+    ],
+    "scheduleReconnect": [],
+    "clearReconnect": []
+  },
+  "InMemoryNotificationChannel": {
+    "constructor": [
+      "param"
+    ],
+    "connect": [],
+    "disconnect": [],
+    "publish": [
+      "notification"
+    ],
+    "publishState": [
+      "notification"
+    ]
+  },
+  "toJobId": [
+    "id"
+  ],
+  "computeJobState": [
+    "job",
+    "param"
+  ],
+  "applyJitter": [
+    "delay",
+    "jitter"
+  ],
+  "constant": [
+    "param"
+  ],
+  "linear": [
+    "param"
+  ],
+  "exponential": [
+    "param"
+  ],
+  "combine": [
+    "param"
+  ],
+  "when": [
+    "condition",
+    "strategy"
+  ],
+  "shouldSkipDay": [
+    "date",
+    "skipDays",
+    "timezone"
+  ],
+  "applySkipDays": [
+    "date",
+    "skipDays",
+    "timezone"
+  ],
+  "getJsWeekday": [
+    "luxonDt"
+  ],
+  "applyDateRangeConstraints": [
+    "nextRunAt",
+    "startDate",
+    "endDate"
+  ],
+  "applyAllDateConstraints": [
+    "nextRunAt",
+    "options"
+  ],
+  "isWithinDateRange": [
+    "date",
+    "startDate",
+    "endDate"
+  ],
+  "isValidDate": [
+    "date"
+  ],
+  "dateForTimezone": [
+    "timezoneDate",
+    "timezone"
+  ],
+  "isValidHumanInterval": [
+    "value"
+  ],
+  "computeFromInterval": [
+    "attrs"
+  ],
+  "computeFromRepeatAt": [
+    "attrs"
+  ],
+  "parsePriority": [
+    "priority"
+  ],
+  "calculateProcessEvery": [
+    "param"
+  ],
+  "getCallerFilePath": [
+    "param"
+  ]
+}

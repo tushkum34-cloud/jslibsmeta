@@ -1,0 +1,1248 @@
+{
+  "sha1": [
+    "msg",
+    "msg1",
+    "msg2"
+  ],
+  "xor": [
+    "a",
+    "b"
+  ],
+  "token": [
+    "password",
+    "scramble1",
+    "scramble2"
+  ],
+  "xorRotating": [
+    "a",
+    "seed"
+  ],
+  "sha256": [
+    "msg"
+  ],
+  "calculateToken": [
+    "password",
+    "scramble"
+  ],
+  "encrypt": [
+    "password",
+    "scramble",
+    "key"
+  ],
+  "authWithKey": [
+    "serverKey"
+  ],
+  "bufferFromStr": [
+    "str"
+  ],
+  "create_mysql_clear_password_plugin": [
+    "pluginOptions"
+  ],
+  "BaseConnection": {
+    "constructor": [
+      "opts"
+    ],
+    "_addCommandClosedState": [
+      "cmd"
+    ],
+    "_handleFatalError": [
+      "err"
+    ],
+    "_handleNetworkError": [
+      "err"
+    ],
+    "_handleTimeoutError": [],
+    "_notifyError": [
+      "err"
+    ],
+    "write": [
+      "buffer"
+    ],
+    "_resetSequenceId": [],
+    "_bumpCompressedSequenceId": [
+      "numPackets"
+    ],
+    "_bumpSequenceId": [
+      "numPackets"
+    ],
+    "writePacket": [
+      "packet"
+    ],
+    "startTLS": [
+      "onSecure"
+    ],
+    "protocolError": [
+      "message",
+      "code"
+    ],
+    "state": [],
+    "fatalError": [],
+    "handlePacket": [
+      "packet"
+    ],
+    "addCommand": [
+      "cmd"
+    ],
+    "format": [
+      "sql",
+      "values"
+    ],
+    "escape": [
+      "value"
+    ],
+    "escapeId": [
+      "value"
+    ],
+    "raw": [
+      "sql"
+    ],
+    "_resolveNamedPlaceholders": [
+      "options"
+    ],
+    "query": [
+      "sql",
+      "values",
+      "cb"
+    ],
+    "pause": [],
+    "resume": [],
+    "prepare": [
+      "options",
+      "cb"
+    ],
+    "unprepare": [
+      "sql"
+    ],
+    "execute": [
+      "sql",
+      "values",
+      "cb"
+    ],
+    "changeUser": [
+      "options",
+      "callback"
+    ],
+    "beginTransaction": [
+      "cb"
+    ],
+    "commit": [
+      "cb"
+    ],
+    "rollback": [
+      "cb"
+    ],
+    "ping": [
+      "cb"
+    ],
+    "_registerSlave": [
+      "opts",
+      "cb"
+    ],
+    "_binlogDump": [
+      "opts",
+      "cb"
+    ],
+    "destroy": [],
+    "close": [],
+    "createBinlogStream": [
+      "opts"
+    ],
+    "connect": [
+      "cb"
+    ],
+    "writeColumns": [
+      "columns"
+    ],
+    "writeTextRow": [
+      "column"
+    ],
+    "writeBinaryRow": [
+      "column"
+    ],
+    "writeTextResult": [
+      "rows",
+      "columns",
+      "param"
+    ],
+    "writeEof": [
+      "warnings",
+      "statusFlags"
+    ],
+    "writeOk": [
+      "args"
+    ],
+    "writeError": [
+      "args"
+    ],
+    "serverHandshake": [
+      "args"
+    ],
+    "end": [
+      "callback"
+    ],
+    "createQuery": [
+      "sql",
+      "values",
+      "cb",
+      "config"
+    ],
+    "statementKey": [
+      "options"
+    ]
+  },
+  "callbackOnce": [
+    "isErrorHandler"
+  ],
+  "isReadOnlyError": [
+    "err"
+  ],
+  "spliceConnection": [
+    "queue",
+    "connection"
+  ],
+  "BasePool": {
+    "constructor": [
+      "options"
+    ],
+    "getConnection": [
+      "cb"
+    ],
+    "releaseConnection": [
+      "connection"
+    ],
+    "end": [
+      "cb"
+    ],
+    "query": [
+      "sql",
+      "values",
+      "cb"
+    ],
+    "execute": [
+      "sql",
+      "values",
+      "cb"
+    ],
+    "_removeConnection": [
+      "connection"
+    ],
+    "_removeIdleTimeoutConnections": [],
+    "format": [
+      "sql",
+      "values"
+    ],
+    "escape": [
+      "value"
+    ],
+    "escapeId": [
+      "value"
+    ]
+  },
+  "BasePoolConnection": {
+    "constructor": [
+      "pool",
+      "options"
+    ],
+    "release": [],
+    "end": [],
+    "destroy": [],
+    "_removeFromPool": []
+  },
+  "warnLegacyAuthSwitch": [],
+  "authSwitchPluginError": [
+    "error",
+    "command"
+  ],
+  "authSwitchRequest": [
+    "packet",
+    "connection",
+    "command"
+  ],
+  "authSwitchRequestMoreData": [
+    "packet",
+    "connection",
+    "command"
+  ],
+  "BinlogEventHeader": {
+    "constructor": [
+      "packet"
+    ]
+  },
+  "BinlogDump": {
+    "constructor": [
+      "opts"
+    ],
+    "toPacket": []
+  },
+  "RotateEvent": {
+    "constructor": [
+      "packet"
+    ]
+  },
+  "FormatDescriptionEvent": {
+    "constructor": [
+      "packet"
+    ]
+  },
+  "QueryEvent": {
+    "constructor": [
+      "packet"
+    ]
+  },
+  "XidEvent": {
+    "constructor": [
+      "packet"
+    ]
+  },
+  "ChangeUser": {
+    "constructor": [
+      "opts"
+    ],
+    "serializeToBuffer": [
+      "buffer"
+    ],
+    "toPacket": []
+  },
+  "flagNames": [
+    "flags"
+  ],
+  "ClientHandshake": {
+    "constructor": [
+      "clientFlags"
+    ],
+    "start": [],
+    "sendSSLRequest": [
+      "connection"
+    ],
+    "sendCredentials": [
+      "connection"
+    ],
+    "calculateNativePasswordAuthToken": [
+      "authPluginData"
+    ],
+    "handshakeInit": [
+      "helloPacket",
+      "connection"
+    ],
+    "handshakeResult": [
+      "packet",
+      "connection"
+    ]
+  },
+  "CloseStatement": {
+    "constructor": [
+      "id"
+    ],
+    "toPacket": []
+  },
+  "Command": {
+    "constructor": [],
+    "stateName": [],
+    "execute": [
+      "packet",
+      "connection"
+    ]
+  },
+  "Execute": {
+    "constructor": [
+      "id",
+      "parameters",
+      "charsetNumber",
+      "timezone"
+    ],
+    "fromPacket": [
+      "packet",
+      "encoding"
+    ],
+    "toPacket": []
+  },
+  "Ping": {
+    "constructor": [
+      "callback"
+    ],
+    "start": [
+      "packet",
+      "connection"
+    ],
+    "pingResponse": []
+  },
+  "PreparedStatementInfo": {
+    "constructor": [
+      "query",
+      "id",
+      "columns",
+      "parameters",
+      "connection"
+    ],
+    "close": [],
+    "execute": [
+      "parameters",
+      "callback"
+    ]
+  },
+  "Prepare": {
+    "sql": [],
+    "start": [],
+    "determinePacket": [
+      "firstByte",
+      "parser"
+    ],
+    "stream": [
+      "options"
+    ],
+    "on": [
+      "event",
+      "listener"
+    ]
+  },
+  "Query": {
+    "sql": [],
+    "start": [],
+    "determinePacket": [
+      "firstByte",
+      "parser"
+    ],
+    "stream": [
+      "options"
+    ],
+    "on": [
+      "event",
+      "listener"
+    ]
+  },
+  "onConnectionError": [],
+  "onDrain": [],
+  "onPause": [],
+  "onData": [
+    "data"
+  ],
+  "onEnd": [
+    "err"
+  ],
+  "onError": [
+    "err"
+  ],
+  "onResult": [
+    "row",
+    "index"
+  ],
+  "onFields": [
+    "fields"
+  ],
+  "Quit": {
+    "constructor": [
+      "callback"
+    ],
+    "start": [
+      "packet",
+      "connection"
+    ]
+  },
+  "RegisterSlave": {
+    "constructor": [
+      "opts"
+    ],
+    "toPacket": []
+  },
+  "ServerHandshake": {
+    "constructor": [
+      "args"
+    ],
+    "start": [
+      "packet",
+      "connection"
+    ],
+    "readClientReply": [
+      "packet",
+      "connection"
+    ],
+    "_isStatement": [
+      "query",
+      "name"
+    ],
+    "dispatchCommands": [
+      "packet",
+      "connection"
+    ]
+  },
+  "handleCompressedPacket": [
+    "packet"
+  ],
+  "writeCompressed": [
+    "buffer"
+  ],
+  "enableCompression": [
+    "connection"
+  ],
+  "Connection": {
+    "config": [],
+    "threadId": [],
+    "authorized": [],
+    "state": [],
+    "createQuery": [
+      "sql",
+      "values",
+      "callback"
+    ],
+    "beginTransaction": [
+      "callback"
+    ],
+    "connect": [
+      "callback"
+    ],
+    "commit": [
+      "callback"
+    ],
+    "changeUser": [
+      "options",
+      "callback"
+    ],
+    "end": [
+      "options",
+      "callback"
+    ],
+    "destroy": [],
+    "pause": [],
+    "resume": [],
+    "escape": [
+      "value"
+    ],
+    "escapeId": [
+      "values"
+    ],
+    "format": [
+      "sql",
+      "values"
+    ],
+    "on": [
+      "event",
+      "listener"
+    ],
+    "rollback": [
+      "callback"
+    ],
+    "prepare": [
+      "sql",
+      "callback"
+    ],
+    "unprepare": [
+      "sql"
+    ],
+    "serverHandshake": [
+      "args"
+    ],
+    "promise": [
+      "promiseImpl"
+    ],
+    "ping": [
+      "callback"
+    ],
+    "writeOk": [
+      "args"
+    ],
+    "writeError": [
+      "args"
+    ],
+    "writeEof": [
+      "warnings",
+      "statusFlags"
+    ],
+    "writeTextResult": [
+      "rows",
+      "columns"
+    ],
+    "writePacket": [
+      "packet"
+    ],
+    "sequenceId": []
+  },
+  "ConnectionConfig": {
+    "constructor": [
+      "options"
+    ],
+    "mergeFlags": [
+      "default_flags",
+      "user_flags"
+    ],
+    "getDefaultFlags": [
+      "options"
+    ],
+    "getCharsetNumber": [
+      "charset"
+    ],
+    "getSSLProfile": [
+      "name"
+    ],
+    "parseUrl": [
+      "url"
+    ]
+  },
+  "createConnection": [
+    "opts"
+  ],
+  "createPool": [
+    "config"
+  ],
+  "createPoolCluster": [
+    "config"
+  ],
+  "srcEscape": [
+    "str"
+  ],
+  "printDebugWithCode": [
+    "msg",
+    "code"
+  ],
+  "typeMatch": [
+    "type",
+    "list",
+    "Types"
+  ],
+  "fieldEscape": [
+    "field",
+    "param"
+  ],
+  "readPacketLength": [
+    "b",
+    "off"
+  ],
+  "PacketParser": {
+    "constructor": [
+      "onPacket",
+      "packetHeaderLength"
+    ],
+    "_flushLargePacket4": [],
+    "_flushLargePacket7": [],
+    "executeStart": [
+      "chunk"
+    ],
+    "executePayload": [
+      "chunk"
+    ],
+    "executeHeader2": [
+      "chunk"
+    ],
+    "executeHeader3": [
+      "chunk"
+    ]
+  },
+  "AuthNextFactor": {
+    "constructor": [
+      "opts"
+    ],
+    "toPacket": [
+      "encoding"
+    ],
+    "fromPacket": [
+      "packet",
+      "encoding"
+    ]
+  },
+  "AuthSwitchRequest": {
+    "constructor": [
+      "opts"
+    ],
+    "toPacket": [],
+    "fromPacket": [
+      "packet"
+    ]
+  },
+  "AuthSwitchRequestMoreData": {
+    "constructor": [
+      "data"
+    ],
+    "toPacket": [],
+    "fromPacket": [
+      "packet"
+    ],
+    "verifyMarker": [
+      "packet"
+    ]
+  },
+  "AuthSwitchResponse": {
+    "constructor": [
+      "data"
+    ],
+    "toPacket": [],
+    "fromPacket": [
+      "packet"
+    ]
+  },
+  "BinaryRow": {
+    "constructor": [
+      "columns"
+    ],
+    "toPacket": [
+      "columns",
+      "encoding"
+    ],
+    "fromPacket": [
+      "fields",
+      "packet"
+    ]
+  },
+  "isSet": [
+    "flag"
+  ],
+  "ColumnDefinition": {
+    "constructor": [
+      "packet",
+      "clientEncoding"
+    ],
+    "inspect": [],
+    "toPacket": [
+      "column",
+      "sequenceId"
+    ],
+    "db": []
+  },
+  "writeField": [
+    "name"
+  ],
+  "addString": [
+    "name"
+  ],
+  "isJSON": [
+    "value"
+  ],
+  "toParameter": [
+    "value",
+    "encoding",
+    "timezone"
+  ],
+  "writer": [
+    "value"
+  ],
+  "Handshake": {
+    "constructor": [
+      "args"
+    ],
+    "setScrambleData": [
+      "cb"
+    ],
+    "toPacket": [
+      "sequenceId"
+    ],
+    "fromPacket": [
+      "packet"
+    ]
+  },
+  "HandshakeResponse": {
+    "constructor": [
+      "handshake"
+    ],
+    "serializeResponse": [
+      "buffer"
+    ],
+    "toPacket": [],
+    "fromPacket": [
+      "packet"
+    ]
+  },
+  "OK": {
+    "toPacket": [
+      "args",
+      "encoding"
+    ]
+  },
+  "EOF": {
+    "toPacket": [
+      "warnings",
+      "statusFlags"
+    ]
+  },
+  "Error": {
+    "toPacket": [
+      "args",
+      "encoding"
+    ],
+    "fromPacket": [
+      "packet"
+    ]
+  },
+  "leftPad": [
+    "num",
+    "value"
+  ],
+  "Packet": {
+    "constructor": [
+      "id",
+      "buffer",
+      "start",
+      "end"
+    ],
+    "reset": [],
+    "length": [],
+    "slice": [],
+    "dump": [],
+    "haveMoreData": [],
+    "skip": [
+      "num"
+    ],
+    "readInt8": [],
+    "readInt16": [],
+    "readInt24": [],
+    "readInt32": [],
+    "readSInt8": [],
+    "readSInt16": [],
+    "readSInt32": [],
+    "readInt64JSNumber": [],
+    "readSInt64JSNumber": [],
+    "readInt64String": [],
+    "readSInt64String": [],
+    "readInt64": [],
+    "readSInt64": [],
+    "isEOF": [],
+    "eofStatusFlags": [],
+    "eofWarningCount": [],
+    "readLengthCodedNumber": [
+      "bigNumberStrings",
+      "signed"
+    ],
+    "readLengthCodedNumberSigned": [
+      "bigNumberStrings"
+    ],
+    "readLengthCodedNumberExt": [
+      "tag",
+      "bigNumberStrings",
+      "signed"
+    ],
+    "readFloat": [],
+    "readDouble": [],
+    "readBuffer": [
+      "len"
+    ],
+    "readDateTime": [
+      "timezone"
+    ],
+    "readDateTimeString": [
+      "decimals",
+      "timeSep",
+      "columnType"
+    ],
+    "readTimeString": [
+      "convertTtoMs"
+    ],
+    "readLengthCodedString": [
+      "encoding"
+    ],
+    "readLengthCodedBuffer": [],
+    "readNullTerminatedString": [
+      "encoding"
+    ],
+    "readString": [
+      "len",
+      "encoding"
+    ],
+    "parseInt": [
+      "len",
+      "supportBigNumbers"
+    ],
+    "parseIntNoBigCheck": [
+      "len"
+    ],
+    "parseGeometryValue": [],
+    "parseVector": [],
+    "parseDate": [
+      "timezone"
+    ],
+    "parseDateTime": [
+      "timezone"
+    ],
+    "parseFloat": [
+      "len"
+    ],
+    "parseLengthCodedIntNoBigCheck": [],
+    "parseLengthCodedInt": [
+      "supportBigNumbers"
+    ],
+    "parseLengthCodedIntString": [],
+    "parseLengthCodedFloat": [],
+    "peekByte": [],
+    "isAlt": [],
+    "isError": [],
+    "asError": [
+      "encoding"
+    ],
+    "writeInt32": [
+      "n"
+    ],
+    "writeInt24": [
+      "n"
+    ],
+    "writeInt16": [
+      "n"
+    ],
+    "writeInt8": [
+      "n"
+    ],
+    "writeDouble": [
+      "n"
+    ],
+    "writeBuffer": [
+      "b"
+    ],
+    "writeNull": [],
+    "writeNullTerminatedString": [
+      "s",
+      "encoding"
+    ],
+    "writeString": [
+      "s",
+      "encoding"
+    ],
+    "writeLengthCodedString": [
+      "s",
+      "encoding"
+    ],
+    "writeLengthCodedBuffer": [
+      "b"
+    ],
+    "writeLengthCodedNumber": [
+      "n"
+    ],
+    "writeDate": [
+      "d",
+      "timezone"
+    ],
+    "writeHeader": [
+      "sequenceId"
+    ],
+    "clone": [],
+    "type": [],
+    "lengthCodedNumberLength": [
+      "n"
+    ],
+    "lengthCodedStringLength": [
+      "str",
+      "encoding"
+    ],
+    "MockBuffer": []
+  },
+  "parseGeometry": [],
+  "noop": [],
+  "PrepareStatement": {
+    "constructor": [
+      "sql",
+      "charsetNumber"
+    ],
+    "toPacket": []
+  },
+  "PreparedStatementHeader": {
+    "constructor": [
+      "packet"
+    ]
+  },
+  "ResultSetHeader": {
+    "constructor": [
+      "packet",
+      "connection"
+    ],
+    "toPacket": [
+      "fieldCount",
+      "insertId"
+    ]
+  },
+  "SSLRequest": {
+    "constructor": [
+      "flags",
+      "charset"
+    ],
+    "toPacket": []
+  },
+  "TextRow": {
+    "constructor": [
+      "columns"
+    ],
+    "fromPacket": [
+      "packet"
+    ],
+    "toPacket": [
+      "columns",
+      "encoding"
+    ]
+  },
+  "readCodeFor": [
+    "type",
+    "charset",
+    "encodingExpr",
+    "config",
+    "options"
+  ],
+  "compile": [
+    "fields",
+    "options",
+    "config"
+  ],
+  "wrap": [
+    "field",
+    "_this"
+  ],
+  "getBinaryParser": [
+    "fields",
+    "_options",
+    "config"
+  ],
+  "keyFromFields": [
+    "type",
+    "fields",
+    "options",
+    "config"
+  ],
+  "getParser": [
+    "type",
+    "fields",
+    "options",
+    "config",
+    "compiler"
+  ],
+  "setMaxCache": [
+    "max"
+  ],
+  "clearCache": [],
+  "readCode": [
+    "field",
+    "config",
+    "options",
+    "fieldNum",
+    "packet"
+  ],
+  "next": [],
+  "readField": [
+    "param"
+  ],
+  "createTypecastField": [
+    "field",
+    "packet"
+  ],
+  "getTextParser": [
+    "fields",
+    "options",
+    "config"
+  ],
+  "Pool": {
+    "getConnection": [
+      "callback"
+    ],
+    "releaseConnection": [
+      "connection"
+    ],
+    "end": [
+      "callback"
+    ],
+    "on": [
+      "event",
+      "listener"
+    ],
+    "unprepare": [
+      "sql"
+    ],
+    "promise": [
+      "promiseImpl"
+    ],
+    "config": []
+  },
+  "getMonotonicMilliseconds": [],
+  "patternRegExp": [
+    "pattern"
+  ],
+  "PoolNamespace": {
+    "constructor": [
+      "cluster",
+      "pattern",
+      "selector"
+    ],
+    "getConnection": [
+      "cb"
+    ],
+    "query": [
+      "sql",
+      "values",
+      "cb"
+    ],
+    "execute": [
+      "sql",
+      "values",
+      "cb"
+    ],
+    "_getClusterNode": []
+  },
+  "PoolCluster": {
+    "config": [],
+    "add": [
+      "group",
+      "config"
+    ],
+    "remove": [
+      "pattern"
+    ],
+    "end": [
+      "callback"
+    ],
+    "getConnection": [
+      "group",
+      "selector",
+      "callback"
+    ],
+    "of": [
+      "pattern",
+      "selector"
+    ],
+    "on": [
+      "event",
+      "listener"
+    ]
+  },
+  "PoolConfig": {
+    "constructor": [
+      "options"
+    ]
+  },
+  "PoolConnection": {
+    "connection": [],
+    "release": [],
+    "promise": [
+      "promiseImpl"
+    ]
+  },
+  "PromiseConnection": {
+    "constructor": [
+      "connection",
+      "promiseImpl"
+    ],
+    "release": [],
+    "query": [
+      "query",
+      "params"
+    ],
+    "execute": [
+      "query",
+      "params"
+    ],
+    "end": [],
+    "beginTransaction": [],
+    "commit": [],
+    "rollback": [],
+    "ping": [],
+    "connect": [],
+    "prepare": [
+      "options"
+    ],
+    "changeUser": [
+      "options"
+    ],
+    "config": [],
+    "threadId": []
+  },
+  "inheritEvents": [
+    "source",
+    "target",
+    "events"
+  ],
+  "makeDoneCb": [
+    "resolve",
+    "reject",
+    "localErr"
+  ],
+  "PromisePool": {
+    "constructor": [
+      "pool",
+      "thePromise"
+    ],
+    "getConnection": [],
+    "releaseConnection": [
+      "connection"
+    ],
+    "query": [
+      "sql",
+      "args"
+    ],
+    "execute": [
+      "sql",
+      "args"
+    ],
+    "end": []
+  },
+  "PromisePoolNamespace": {
+    "constructor": [
+      "poolNamespace",
+      "thePromise"
+    ],
+    "getConnection": [],
+    "query": [
+      "sql",
+      "values"
+    ],
+    "execute": [
+      "sql",
+      "values"
+    ]
+  },
+  "PromisePoolConnection": {
+    "constructor": [
+      "connection",
+      "promiseImpl"
+    ],
+    "destroy": []
+  },
+  "PromisePreparedStatementInfo": {
+    "constructor": [
+      "statement",
+      "promiseImpl"
+    ],
+    "execute": [
+      "parameters"
+    ],
+    "close": []
+  },
+  "Server": {
+    "connections": [],
+    "listen": [
+      "port"
+    ],
+    "close": [
+      "callback"
+    ]
+  },
+  "QueryableAndExecutableBase": {},
+  "createConnectionPromise": [
+    "opts"
+  ],
+  "createPromisePool": [
+    "opts"
+  ],
+  "PromisePoolCluster": {
+    "constructor": [
+      "poolCluster",
+      "thePromise"
+    ],
+    "getConnection": [
+      "pattern",
+      "selector"
+    ],
+    "query": [
+      "sql",
+      "args"
+    ],
+    "execute": [
+      "sql",
+      "args"
+    ],
+    "of": [
+      "pattern",
+      "selector"
+    ],
+    "end": []
+  },
+  "createPromisePoolCluster": [
+    "opts"
+  ],
+  "PrepareStatementInfo": {
+    "close": [],
+    "execute": [
+      "parameters",
+      "callback"
+    ]
+  },
+  "Sequence": {}
+}
