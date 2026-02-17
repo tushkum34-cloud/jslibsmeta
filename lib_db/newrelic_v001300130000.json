@@ -1,0 +1,5405 @@
+{
+  "API": [
+    "agent"
+  ],
+  "_gracefail": [
+    "errorCode",
+    "quiet"
+  ],
+  "_generateRUMHeader": [
+    "param",
+    "metadata",
+    "loader"
+  ],
+  "validateBrowserMonitoring": [
+    "config",
+    "transaction",
+    "allowTransactionlessInjection"
+  ],
+  "startBackgroundTransaction": [
+    "name",
+    "group",
+    "callback"
+  ],
+  "_logErrorCallback": [
+    "error",
+    "phase"
+  ],
+  "_doShutdown": [
+    "api",
+    "options",
+    "callback"
+  ],
+  "afterHarvest": [
+    "error"
+  ],
+  "_checkKeyLength": [
+    "object",
+    "maxLength"
+  ],
+  "_filterAttributes": [
+    "attributes",
+    "name"
+  ],
+  "printHelp": [],
+  "run": [
+    "opts"
+  ],
+  "onAppliedRule": [
+    "rule",
+    "newValue",
+    "oldValue"
+  ],
+  "loadDefaultNormalizer": [
+    "config"
+  ],
+  "loadUserNormalizer": [
+    "config",
+    "rules"
+  ],
+  "arrayContainsAny": [
+    "array"
+  ],
+  "initApi": [
+    "param"
+  ],
+  "initialize": [
+    "agent",
+    "Q"
+  ],
+  "createAgent": [
+    "config"
+  ],
+  "addStartupSupportabilities": [
+    "agent"
+  ],
+  "recordNodeVersionMetric": [
+    "agent"
+  ],
+  "recordFeatureFlagMetrics": [
+    "agent"
+  ],
+  "recordLoaderMetric": [
+    "agent"
+  ],
+  "recordSourceMapMetric": [
+    "agent"
+  ],
+  "recordDisabledPackages": [
+    "agent"
+  ],
+  "otelBridgeAvailable": [],
+  "Agent": [
+    "config"
+  ],
+  "_addIntrinsicAttrsFromTransaction": [
+    "transaction"
+  ],
+  "generateEventHarvestSupportMetrics": [
+    "agent",
+    "harvestConfig"
+  ],
+  "Aggregator": {
+    "constructor": [
+      "opts",
+      "collector",
+      "harvester"
+    ],
+    "enabled": [
+      "condition"
+    ],
+    "start": [],
+    "stop": [],
+    "_merge": [],
+    "add": [],
+    "_toPayload": [
+      "callback"
+    ],
+    "_toPayloadSync": [],
+    "_getMergeData": [],
+    "clear": [],
+    "_afterSend": [],
+    "_runSend": [
+      "data",
+      "payload"
+    ],
+    "send": [],
+    "reconfigure": [
+      "config"
+    ]
+  },
+  "EventAggregator": {
+    "constructor": [
+      "opts",
+      "agent"
+    ],
+    "seen": [],
+    "length": [],
+    "overflow": [],
+    "events": [],
+    "_merge": [],
+    "add": [],
+    "_getMergeData": [],
+    "clear": [],
+    "getQueue": [],
+    "getEvents": [],
+    "clearEvents": [],
+    "reconfigure": [
+      "config"
+    ],
+    "addEvent": [
+      "event",
+      "priority"
+    ],
+    "mergeEvents": [
+      "events"
+    ]
+  },
+  "LogAggregator": {
+    "constructor": [
+      "opts",
+      "agent"
+    ],
+    "_toPayloadSync": [],
+    "add": [
+      "logLine"
+    ],
+    "addBatch": [
+      "logs",
+      "priority"
+    ],
+    "reconfigure": [
+      "config"
+    ]
+  },
+  "ProfilingAggregator": {
+    "constructor": [
+      "param",
+      "agent"
+    ],
+    "_toPayloadSync": [],
+    "start": [],
+    "stop": [],
+    "collectData": [],
+    "_getMergeData": [],
+    "_merge": [],
+    "clear": []
+  },
+  "TraceAggregator": {},
+  "Attributes": {
+    "SCOPE_TRANSACTION": [],
+    "SCOPE_SEGMENT": [],
+    "constructor": [
+      "param"
+    ],
+    "isValidLength": [
+      "str"
+    ],
+    "_set": [
+      "destinations",
+      "key",
+      "value",
+      "truncateExempt"
+    ],
+    "get": [
+      "dest"
+    ],
+    "has": [
+      "key"
+    ],
+    "reset": [],
+    "addAttribute": [
+      "destinations",
+      "key",
+      "value",
+      "param"
+    ],
+    "addAttributes": [
+      "destinations",
+      "attrs"
+    ],
+    "hasValidDestination": [
+      "destinations",
+      "key"
+    ]
+  },
+  "makeFilter": [
+    "scope"
+  ],
+  "dumpErrors": [
+    "errors",
+    "name"
+  ],
+  "CollectorAPI": [
+    "agent"
+  ],
+  "onShutdown": [
+    "error",
+    "response"
+  ],
+  "_handleResponseCode": [
+    "response",
+    "endpoint",
+    "cb"
+  ],
+  "logFailure": [
+    "endpoint",
+    "code",
+    "action"
+  ],
+  "facts": [
+    "agent",
+    "callback",
+    "param"
+  ],
+  "getAllIPAddresses": [],
+  "getIdentifierOverride": [
+    "appNames"
+  ],
+  "proxyOptions": [
+    "config"
+  ],
+  "getMetricName": [
+    "name"
+  ],
+  "RemoteMethod": [
+    "param"
+  ],
+  "makeRequest": [],
+  "onResponse": [
+    "response"
+  ],
+  "byteLength": [
+    "data"
+  ],
+  "CollectorResponse": {
+    "constructor": [
+      "retainData",
+      "retryAfter",
+      "agentRun",
+      "payload"
+    ],
+    "AGENT_RUN_BEHAVIOR": [],
+    "success": [
+      "payload"
+    ],
+    "discard": [
+      "payload"
+    ],
+    "error": [
+      "payload"
+    ],
+    "fatal": [
+      "payload"
+    ],
+    "retry": [
+      "delayMS",
+      "payload"
+    ],
+    "reconnect": [
+      "delayMS",
+      "payload"
+    ],
+    "shouldPreserveRun": [],
+    "shouldShutdownRun": [],
+    "shouldRestartRun": []
+  },
+  "ServerlessCollector": {
+    "constructor": [
+      "agent",
+      "pipePath"
+    ],
+    "setLambdaArn": [
+      "arn"
+    ],
+    "setLambdaFunctionVersion": [
+      "function_version"
+    ],
+    "isConnected": [],
+    "shutdown": [
+      "cb"
+    ],
+    "restart": [
+      "cb"
+    ],
+    "send": [
+      "method",
+      "payload",
+      "cb"
+    ],
+    "flushPayload": [
+      "cb"
+    ],
+    "flushPayloadSync": [],
+    "flushToPipeSync": [
+      "payload"
+    ],
+    "flushToStdOut": [
+      "serializedPayload",
+      "payloadLength",
+      "param"
+    ],
+    "_doFlush": [
+      "payload",
+      "param"
+    ]
+  },
+  "AttributeFilter": [
+    "config"
+  ],
+  "filterTransaction": [
+    "destinations",
+    "key"
+  ],
+  "_doTest": [
+    "globalInclude",
+    "globalExclude",
+    "destConfig",
+    "key"
+  ],
+  "_matchRules": [
+    "rules",
+    "key"
+  ],
+  "_importRules": [
+    "rules"
+  ],
+  "_convertRulesToRegex": [
+    "rules"
+  ],
+  "add": [
+    "c",
+    "r",
+    "i"
+  ],
+  "mapper": [
+    "p"
+  ],
+  "_updateDestinations": [
+    "destinations",
+    "id",
+    "result"
+  ],
+  "buildConfig": [
+    "definition",
+    "config",
+    "param",
+    "param"
+  ],
+  "assignConfigValue": [
+    "param"
+  ],
+  "setNestedKey": [
+    "obj",
+    "keys",
+    "value"
+  ],
+  "isValidHarvestConfig": [
+    "harvestConfig"
+  ],
+  "isValidHarvestValue": [
+    "value"
+  ],
+  "getConfigFileNames": [],
+  "getConfigFileLocations": [],
+  "_findConfigFile": [],
+  "Config": [
+    "config"
+  ],
+  "_validateThenUpdateStatusCodes": [
+    "remote",
+    "local",
+    "remoteKey",
+    "localKey"
+  ],
+  "_validateThenUpdateErrorClasses": [
+    "remote",
+    "local",
+    "remoteKey",
+    "localKey"
+  ],
+  "_validateThenUpdateErrorMessages": [
+    "remote",
+    "local",
+    "remoteKey",
+    "localKey"
+  ],
+  "_updateNestedIfChanged": [
+    "remote",
+    "local",
+    "remoteKey",
+    "localKey"
+  ],
+  "_updateNestedIfChangedRaw": [
+    "remote",
+    "local",
+    "remoteKey",
+    "localKey"
+  ],
+  "getDisplayHost": [],
+  "getHostnameSafe": [
+    "param"
+  ],
+  "deriveEnvVar": [
+    "key",
+    "paths"
+  ],
+  "setFromEnv": [
+    "param"
+  ],
+  "_parseRange": [
+    "range",
+    "parsed"
+  ],
+  "_parseCodes": [
+    "codes"
+  ],
+  "checkNode": [
+    "base",
+    "target",
+    "settings"
+  ],
+  "checkKey": [
+    "base",
+    "target",
+    "settings",
+    "key"
+  ],
+  "_laspResponse": [
+    "keys"
+  ],
+  "redactValue": [
+    "value"
+  ],
+  "createNewConfigObject": [
+    "config"
+  ],
+  "getOrCreateInstance": [],
+  "getInstance": [],
+  "createInstance": [
+    "config"
+  ],
+  "MergeServerConfig": {
+    "updateNestedIfChanged": [
+      "config",
+      "remote",
+      "local",
+      "remoteKey",
+      "localKey",
+      "logger"
+    ],
+    "updateArray": [
+      "value",
+      "local",
+      "localKey"
+    ],
+    "updateObject": [
+      "value",
+      "local",
+      "localKey"
+    ]
+  },
+  "buildSamplers": [
+    "param"
+  ],
+  "setSamplersFromEnv": [
+    "param"
+  ],
+  "handleTraceIdRatioBased": [
+    "param"
+  ],
+  "handleAdaptiveSampling": [
+    "param"
+  ],
+  "isTraceIdRatioBasedConfig": [
+    "sampler",
+    "samplerConfig"
+  ],
+  "isAdaptiveSamplingTargetConfig": [
+    "sampler",
+    "samplerConfig"
+  ],
+  "isValidDTSampler": [
+    "sampler"
+  ],
+  "isValidDTSamplerType": [
+    "samplerType"
+  ],
+  "getNestedValue": [
+    "obj",
+    "keys"
+  ],
+  "AsyncLocalContextManager": {
+    "constructor": [
+      "isOtelBridgeMode"
+    ],
+    "getContext": [],
+    "setContext": [
+      "newContext"
+    ],
+    "runInContext": [
+      "context",
+      "callback",
+      "cbThis",
+      "args"
+    ]
+  },
+  "CustomEventAggregator": {
+    "constructor": [
+      "opts",
+      "agent"
+    ],
+    "_toPayloadSync": []
+  },
+  "ParsedStatement": [
+    "type",
+    "operation",
+    "collection",
+    "raw"
+  ],
+  "queryParser": [
+    "query"
+  ],
+  "parsePath": [
+    "pathString",
+    "method"
+  ],
+  "QuerySample": [
+    "tracer",
+    "slowQuery"
+  ],
+  "respond": [
+    "data"
+  ],
+  "_getJSON": [
+    "sample",
+    "trace",
+    "transaction",
+    "data"
+  ],
+  "getQuery": [
+    "config",
+    "trace"
+  ],
+  "QueryTraceAggregator": {
+    "constructor": [
+      "opts",
+      "collector",
+      "harvester"
+    ],
+    "removeShortest": [],
+    "_merge": [
+      "samples"
+    ],
+    "add": [
+      "param"
+    ],
+    "_toPayload": [
+      "cb"
+    ],
+    "_toPayloadSync": [],
+    "_getMergeData": [],
+    "clear": [],
+    "prepareJSON": [
+      "done"
+    ],
+    "prepareJSONSync": []
+  },
+  "SlowQuery": [
+    "param"
+  ],
+  "normalizedHash": [
+    "value"
+  ],
+  "formatTrace": [
+    "trace"
+  ],
+  "notNR": [
+    "frame"
+  ],
+  "StatementMatcher": [
+    "operation",
+    "operationPattern"
+  ],
+  "getSetting": [
+    "name"
+  ],
+  "addSetting": [
+    "name",
+    "value"
+  ],
+  "clearSetting": [
+    "name"
+  ],
+  "listPackages": [
+    "root",
+    "param"
+  ],
+  "forEachDir": [
+    "dir"
+  ],
+  "listDependencies": [
+    "root",
+    "param",
+    "param"
+  ],
+  "forEachEntry": [
+    "entry"
+  ],
+  "getLocalPackages": [],
+  "getPackages": [
+    "root"
+  ],
+  "getGlobalPackages": [],
+  "flattenVersions": [
+    "packages"
+  ],
+  "remapConfigSettings": [],
+  "addMissingProcessVars": [],
+  "getOtherPackages": [],
+  "getHomePackages": [],
+  "findPackages": [],
+  "time": [
+    "fn"
+  ],
+  "gatherEnv": [],
+  "refreshSyncOnly": [],
+  "refresh": [],
+  "getJSON": [],
+  "_log": [],
+  "ErrorCollector": {
+    "constructor": [
+      "config",
+      "traceAggregator",
+      "eventAggregator",
+      "metrics"
+    ],
+    "_onSendErrorTrace": [],
+    "_haveSeen": [
+      "transaction",
+      "exception"
+    ],
+    "_getIterableProperty": [
+      "transaction",
+      "errorType"
+    ],
+    "_processErrors": [
+      "transaction",
+      "collectedErrors",
+      "expectedErrors",
+      "errorType"
+    ],
+    "onTransactionFinished": [
+      "transaction"
+    ],
+    "add": [
+      "transaction",
+      "error",
+      "customAttributes",
+      "segment"
+    ],
+    "addUserError": [
+      "transaction",
+      "error",
+      "customAttributes",
+      "expected"
+    ],
+    "collect": [
+      "transaction",
+      "param"
+    ],
+    "_isValidException": [
+      "exception",
+      "transaction"
+    ],
+    "_maybeRecordErrorMetrics": [
+      "errorTrace",
+      "transaction"
+    ],
+    "clearAll": [],
+    "_clearSeenErrors": [],
+    "_shouldCollectErrors": []
+  },
+  "ErrorEventAggregator": {
+    "constructor": [
+      "opts",
+      "agent"
+    ],
+    "_toPayloadSync": [],
+    "reconfigure": [
+      "config"
+    ]
+  },
+  "ErrorTraceAggregator": {
+    "constructor": [
+      "opts",
+      "collector",
+      "harvester"
+    ],
+    "reconfigure": [
+      "config"
+    ],
+    "add": [
+      "error"
+    ],
+    "_toPayloadSync": [],
+    "_getMergeData": [],
+    "_merge": [
+      "errors"
+    ],
+    "clear": []
+  },
+  "Exception": {
+    "constructor": [
+      "param"
+    ],
+    "getErrorDetails": [
+      "config"
+    ]
+  },
+  "createError": [
+    "transaction",
+    "exception",
+    "config"
+  ],
+  "isValidErrorGroupOutput": [
+    "output"
+  ],
+  "maybeAddAgentAttributes": [
+    "attributes",
+    "exception"
+  ],
+  "maybeAddUserAttributes": [
+    "userAttributes",
+    "exception",
+    "config"
+  ],
+  "maybeAddStackTrace": [
+    "exception",
+    "config"
+  ],
+  "createEvent": [
+    "transaction",
+    "error",
+    "timestamp",
+    "config"
+  ],
+  "_getErrorEventIntrinsicAttrs": [
+    "transaction",
+    "errorClass",
+    "message",
+    "expected",
+    "timestamp",
+    "conf"
+  ],
+  "GrpcConnection": {
+    "constructor": [
+      "infiniteTracingConfig",
+      "metrics",
+      "param"
+    ],
+    "setConnectionDetails": [
+      "licenseKey",
+      "runId",
+      "requestHeadersMap",
+      "rootCerts"
+    ],
+    "getTraceObserverEndpoint": [
+      "traceObserverConfig"
+    ],
+    "_setState": [
+      "state",
+      "param"
+    ],
+    "connectSpans": [],
+    "disconnect": [],
+    "_getMetadata": [
+      "licenseKey",
+      "runId",
+      "requestHeadersMap",
+      "env"
+    ],
+    "_setTestMetadata": [
+      "metadata",
+      "env"
+    ],
+    "_reconnect": [
+      "param"
+    ],
+    "_disconnect": [],
+    "_setupSpanStreamObservers": [
+      "stream"
+    ],
+    "_generateCredentials": [
+      "grpcApi"
+    ],
+    "_connectSpans": [],
+    "_createClient": []
+  },
+  "_setHeaderAttrNames": [
+    "dest",
+    "prefix"
+  ],
+  "_headerToCamelCase": [
+    "header"
+  ],
+  "_collectHeaders": [
+    "headers",
+    "nameMap",
+    "prefix",
+    "transaction"
+  ],
+  "collectRequestHeaders": [
+    "headers",
+    "transaction"
+  ],
+  "collectResponseHeaders": [
+    "headers",
+    "transaction"
+  ],
+  "getQueueTime": [
+    "logger",
+    "requestHeaders"
+  ],
+  "convertUnit": [
+    "time"
+  ],
+  "getContentLengthFromHeaders": [
+    "headers"
+  ],
+  "getTime": [],
+  "writeStatus": [
+    "param"
+  ],
+  "directoryAvailable": [
+    "dest"
+  ],
+  "HealthReporter": {
+    "STATUS_HEALTHY": [],
+    "STATUS_INVALID_LICENSE_KEY": [],
+    "STATUS_LICENSE_KEY_MISSING": [],
+    "STATUS_FORCED_DISCONNECT": [],
+    "STATUS_BACKEND_ERROR": [],
+    "STATUS_MISSING_APP_NAME": [],
+    "STATUS_MAXIMUM_APP_NAMES_EXCEEDED": [],
+    "STATUS_HTTP_PROXY_MISCONFIGURED": [],
+    "STATUS_AGENT_DISABLED": [],
+    "STATUS_CONNECT_ERROR": [],
+    "STATUS_CONFIG_PARSE_FAILURE": [],
+    "STATUS_AGENT_SHUTDOWN": [],
+    "STATUS_INTERNAL_UNEXPECTED_ERROR": [],
+    "constructor": [
+      "param"
+    ],
+    "enabled": [],
+    "destFile": [],
+    "setStatus": [
+      "status"
+    ],
+    "stop": [
+      "done"
+    ]
+  },
+  "wrapAzureHttpMethods": [
+    "shim",
+    "appMethod"
+  ],
+  "wrapAzureBackgroundMethods": [
+    "shim",
+    "appMethod"
+  ],
+  "addAttributes": [
+    "param"
+  ],
+  "mapTriggerType": [
+    "param"
+  ],
+  "buildCloudResourceId": [
+    "param"
+  ],
+  "serverFactoryWrapper": [
+    "shim",
+    "fn",
+    "fnName",
+    "server"
+  ],
+  "serverPostConstructor": [
+    "shim"
+  ],
+  "wrapProtoDecorate": [
+    "shim",
+    "proto"
+  ],
+  "wrappedHandler": [
+    "param"
+  ],
+  "wrapProtoRoute": [
+    "shim",
+    "proto"
+  ],
+  "_wrapRoute": [
+    "shim",
+    "route",
+    "prefix"
+  ],
+  "_wrapRouteHandler": [
+    "shim",
+    "container",
+    "path"
+  ],
+  "wrapProtoExt": [
+    "shim",
+    "proto"
+  ],
+  "wrapPreHandlers": [
+    "shim",
+    "container",
+    "path"
+  ],
+  "wrapPreHandler": [
+    "shim",
+    "container",
+    "path"
+  ],
+  "wrapRouteHandler": [
+    "shim",
+    "handler",
+    "path"
+  ],
+  "wrapMiddleware": [
+    "shim",
+    "middleware",
+    "_name",
+    "route"
+  ],
+  "wrapDecorate": [
+    "shim",
+    "decorate"
+  ],
+  "instrumentAddCommand": [
+    "param"
+  ],
+  "getRedisParams": [
+    "clientOpts"
+  ],
+  "parseConnectionString": [
+    "provider",
+    "connectionUrl"
+  ],
+  "extractQueryArgs": [
+    "args",
+    "pkgVersion"
+  ],
+  "retrieveQuery": [
+    "args",
+    "pkgVersion"
+  ],
+  "extractConnectionString": [
+    "param"
+  ],
+  "extractPrismaDatasource": [
+    "client"
+  ],
+  "grabLastUrlSegment": [
+    "param"
+  ],
+  "setDynamoParameters": [
+    "endpoint",
+    "params"
+  ],
+  "validate": [
+    "shim",
+    "AWS"
+  ],
+  "instrument": [
+    "shim",
+    "AWS"
+  ],
+  "wrapHandleRequest": [
+    "shim",
+    "handleRequest"
+  ],
+  "wrapMakeRequest": [
+    "shim",
+    "fn",
+    "name",
+    "request"
+  ],
+  "getServiceName": [
+    "service"
+  ],
+  "instrumentationSupported": [
+    "AWS"
+  ],
+  "wrapPublish": [
+    "shim",
+    "original",
+    "name",
+    "args"
+  ],
+  "getDestinationName": [
+    "param"
+  ],
+  "recordMessageApi": [
+    "shim",
+    "original",
+    "name",
+    "args"
+  ],
+  "shouldSkipInstrumentation": [
+    "config"
+  ],
+  "isStreamingEnabled": [
+    "param"
+  ],
+  "recordEvent": [
+    "param"
+  ],
+  "addLlmMeta": [
+    "param"
+  ],
+  "recordChatCompletionMessages": [
+    "param"
+  ],
+  "recordEmbeddingMessage": [
+    "param"
+  ],
+  "createBedrockResponse": [
+    "param"
+  ],
+  "getBedrockSpec": [
+    "param",
+    "shim",
+    "_original",
+    "_name",
+    "args"
+  ],
+  "handleResponse": [
+    "param"
+  ],
+  "bedrockMiddleware": [
+    "shim",
+    "config",
+    "next",
+    "context"
+  ],
+  "headerMiddleware": [
+    "shim",
+    "config",
+    "next"
+  ],
+  "attrMiddleware": [
+    "shim",
+    "config",
+    "next",
+    "context"
+  ],
+  "addAwsAttributes": [
+    "param"
+  ],
+  "getDynamoSpec": [
+    "shim",
+    "original",
+    "name",
+    "args"
+  ],
+  "getEndpoint": [
+    "config"
+  ],
+  "dynamoMiddleware": [
+    "shim",
+    "config",
+    "next",
+    "context"
+  ],
+  "resourceIdMiddlerware": [
+    "shim",
+    "config",
+    "next"
+  ],
+  "resourceIdMiddleware": [
+    "shim",
+    "config",
+    "next"
+  ],
+  "wrapSend": [
+    "shim",
+    "send"
+  ],
+  "snsMiddleware": [
+    "shim",
+    "config",
+    "next",
+    "context"
+  ],
+  "getSnsSpec": [
+    "shim",
+    "original",
+    "name",
+    "args"
+  ],
+  "sqsMiddleware": [
+    "shim",
+    "config",
+    "next",
+    "context"
+  ],
+  "getSqsSpec": [
+    "shim",
+    "original",
+    "name",
+    "args"
+  ],
+  "urlComponents": [
+    "queueUrl"
+  ],
+  "wrapConnectExport": [
+    "shim",
+    "connect",
+    "v3"
+  ],
+  "wrapChildProcessClass": [
+    "shim",
+    "childProcessClass"
+  ],
+  "makePromisifyCompatible": [
+    "shim",
+    "childProcess"
+  ],
+  "wrapEmit": [
+    "param"
+  ],
+  "recordFs": [
+    "shim",
+    "fn",
+    "name"
+  ],
+  "wrapUncaughtExceptionCallback": [
+    "shim",
+    "original"
+  ],
+  "getDefaultPort": [
+    "opts"
+  ],
+  "getPort": [
+    "opts",
+    "defaultPort"
+  ],
+  "getDefaultHostName": [
+    "opts"
+  ],
+  "extractHostPort": [
+    "opts"
+  ],
+  "extractHostPortViaProxy": [
+    "opts"
+  ],
+  "instrumentRequest": [
+    "param",
+    "segment",
+    "transaction"
+  ],
+  "maybeAddDtCatHeaders": [
+    "agent",
+    "transaction",
+    "outboundHeaders",
+    "param"
+  ],
+  "assignOutgoingHeaders": [
+    "currentHeaders",
+    "outboundHeaders"
+  ],
+  "applySegment": [
+    "func",
+    "segment",
+    "full",
+    "boundThis",
+    "args",
+    "inContextCB"
+  ],
+  "instrumentRequestEmit": [
+    "agent",
+    "host",
+    "segment",
+    "request"
+  ],
+  "handleError": [
+    "param"
+  ],
+  "_makeNonEnumerable": [
+    "obj",
+    "prop"
+  ],
+  "wrapEmitWithTransaction": [
+    "agent",
+    "emit",
+    "isHTTPS"
+  ],
+  "parsePort": [
+    "server"
+  ],
+  "instrumentedFinish": [
+    "transaction"
+  ],
+  "storeTxInfo": [
+    "transaction",
+    "request",
+    "response"
+  ],
+  "wrapResponseEnd": [
+    "agent",
+    "proto"
+  ],
+  "wrapWriteHead": [
+    "agent",
+    "writeHead"
+  ],
+  "urlToOptions": [
+    "_url"
+  ],
+  "parseRequest": [
+    "input",
+    "options",
+    "cb"
+  ],
+  "wrapRequest": [
+    "_shim",
+    "fn"
+  ],
+  "wrapConnect": [
+    "shim"
+  ],
+  "instrumentStream": [
+    "stream",
+    "segment"
+  ],
+  "parseAttrsFromHeaders": [
+    "headers",
+    "externalAttrs"
+  ],
+  "extractExternalAttrs": [
+    "param"
+  ],
+  "addDTHeaders": [
+    "param"
+  ],
+  "wrapCreate": [
+    "shim",
+    "fn",
+    "name"
+  ],
+  "wrapListen2": [
+    "shim",
+    "fn"
+  ],
+  "wrappedEmit": [
+    "ev",
+    "socket"
+  ],
+  "wrapSocket": [
+    "sock",
+    "segment"
+  ],
+  "normalizeConnectArgs": [
+    "args"
+  ],
+  "toNumber": [
+    "x"
+  ],
+  "instrumentTimerMethods": [
+    "shim",
+    "pkgs"
+  ],
+  "wrapClearTimeout": [
+    "_shim",
+    "fn"
+  ],
+  "recordAsynchronizers": [
+    "shim",
+    "_fn",
+    "name"
+  ],
+  "makeWrappedPromisifyCompatible": [
+    "shim",
+    "nodule"
+  ],
+  "copySymbols": [
+    "shim",
+    "nodule",
+    "name"
+  ],
+  "recordZLib": [
+    "shim",
+    "fn",
+    "name"
+  ],
+  "wrapNoSegment": [
+    "shim",
+    "fn"
+  ],
+  "getRequestFromFastify": [
+    "shim",
+    "fn",
+    "fnName",
+    "args"
+  ],
+  "getParamsFromFastifyRequest": [
+    "shim",
+    "fn",
+    "fnName",
+    "args"
+  ],
+  "buildMiddlewareSpecForRouteHandler": [
+    "shim",
+    "path"
+  ],
+  "setupRouteHandler": [
+    "shim",
+    "fastify"
+  ],
+  "setupExports": [
+    "original",
+    "wrappedExport"
+  ],
+  "wrapStart": [
+    "shim",
+    "original"
+  ],
+  "callStart": [
+    "param"
+  ],
+  "wrapRegister": [
+    "shim",
+    "original"
+  ],
+  "instrumentedHandler": [
+    "stream"
+  ],
+  "createTransaction": [],
+  "acceptDTHeaders": [
+    "stream",
+    "transaction"
+  ],
+  "instrumentInterceptors": [
+    "stream",
+    "transaction"
+  ],
+  "instrumentEventListeners": [
+    "stream",
+    "transaction"
+  ],
+  "shouldTrackError": [
+    "statusCode",
+    "config"
+  ],
+  "wrapConsumer": [
+    "shim",
+    "orig"
+  ],
+  "wrapRun": [
+    "shim",
+    "fn"
+  ],
+  "handler": [
+    "data"
+  ],
+  "nrProducerWrapper": [
+    "shim",
+    "orig"
+  ],
+  "nrSend": [
+    "shim",
+    "fn",
+    "name",
+    "args"
+  ],
+  "nrSendBatch": [
+    "shim",
+    "fn",
+    "name",
+    "args"
+  ],
+  "recordLinkingMetrics": [
+    "param"
+  ],
+  "recordMethodMetric": [
+    "param"
+  ],
+  "wrapCreateContext": [
+    "shim",
+    "_fn",
+    "_fnName",
+    "context"
+  ],
+  "wrapResponseBody": [
+    "shim",
+    "context"
+  ],
+  "wrapMatchedRoute": [
+    "shim",
+    "context"
+  ],
+  "wrapResponseStatus": [
+    "shim",
+    "context"
+  ],
+  "getInheritedPropertyDescriptor": [
+    "obj",
+    "property"
+  ],
+  "wrapParamware": [
+    "shim",
+    "paramware",
+    "fnName",
+    "route"
+  ],
+  "wrapAllowedMethods": [
+    "shim",
+    "fn",
+    "name",
+    "allowedMethodsMiddleware"
+  ],
+  "wrapAllowedMethodsMiddleware": [
+    "shim",
+    "original"
+  ],
+  "wrapRoutes": [
+    "shim",
+    "fn",
+    "name",
+    "dispatchMiddleware"
+  ],
+  "isLayer": [
+    "obj"
+  ],
+  "wrapKeys": [
+    "metacall"
+  ],
+  "setHostPort": [
+    "shim",
+    "connStr",
+    "db"
+  ],
+  "getInstanceAttributeParameters": [
+    "shim",
+    "mongo"
+  ],
+  "getParametersFromHosts": [
+    "hosts",
+    "database"
+  ],
+  "getParametersFromTopology": [
+    "conf",
+    "database"
+  ],
+  "cmdStartedHandler": [
+    "shim",
+    "evnt"
+  ],
+  "instrumentMongoClient": [
+    "shim",
+    "MongoClient"
+  ],
+  "assignParameters": [
+    "shim",
+    "parameters"
+  ],
+  "extractAttrs": [
+    "args",
+    "version"
+  ],
+  "extractRouteParams": [
+    "param",
+    "param"
+  ],
+  "NrTransport": {
+    "constructor": [
+      "param"
+    ],
+    "log": [
+      "logLine",
+      "callback"
+    ]
+  },
+  "reformatLogLine": [
+    "logLine",
+    "metadata"
+  ],
+  "reformatError": [
+    "logLine"
+  ],
+  "reformatTimestamp": [
+    "logLine"
+  ],
+  "wrapUninstrumented": [
+    "original",
+    "method"
+  ],
+  "registerInternalSendCommand": [
+    "shim",
+    "proto"
+  ],
+  "stringifyKeys": [
+    "shim",
+    "keys"
+  ],
+  "getInstanceParameters": [
+    "logger",
+    "queryable",
+    "query"
+  ],
+  "wrapCreateServer": [
+    "_shim",
+    "_fn",
+    "_fnName",
+    "server"
+  ],
+  "wrapServer": [
+    "serverProto"
+  ],
+  "wrapSuperAgentReq": [
+    "shim",
+    "fn",
+    "name",
+    "req"
+  ],
+  "wrapHttpReq": [
+    "shim",
+    "fn",
+    "name",
+    "req"
+  ],
+  "wrapCallback": [
+    "original",
+    "segment",
+    "wrapped"
+  ],
+  "wrapThen": [
+    "then",
+    "name"
+  ],
+  "Context": {
+    "constructor": [
+      "segment",
+      "transaction"
+    ],
+    "branch": []
+  },
+  "Contextualizer": {
+    "constructor": [
+      "idx",
+      "context"
+    ],
+    "buildContextTree": [
+      "ctxlzr"
+    ],
+    "link": [
+      "prev",
+      "next",
+      "segment",
+      "transaction"
+    ],
+    "isActive": [],
+    "getTransaction": [],
+    "getSegment": [],
+    "setSegment": [
+      "segment"
+    ],
+    "toJSON": [],
+    "continueContext": [
+      "prom"
+    ]
+  },
+  "bindChild": [
+    "ctxlzr",
+    "next"
+  ],
+  "__NR_continueContext": [],
+  "wrapPromise": [
+    "data"
+  ],
+  "wrappedPromise": [
+    "executor"
+  ],
+  "wrapPrototype": [
+    "PromiseProto"
+  ],
+  "wrapStaticMethods": [
+    "lib",
+    "name",
+    "staticSpec"
+  ],
+  "wrapExecutorContext": [
+    "context"
+  ],
+  "wrapResolver": [
+    "context",
+    "fn"
+  ],
+  "wrapCatch": [
+    "catchMethod",
+    "name"
+  ],
+  "_wrapThen": [
+    "shim",
+    "fn",
+    "_name",
+    "useAllParams"
+  ],
+  "wrapHandler": [
+    "param"
+  ],
+  "wrapCast": [
+    "cast",
+    "name"
+  ],
+  "_createSegment": [
+    "param"
+  ],
+  "_safeWrap": [
+    "obj",
+    "name",
+    "methods",
+    "wrapper"
+  ],
+  "performInstrumentation": [
+    "param"
+  ],
+  "wrapConfigure": [
+    "param"
+  ],
+  "registerFormatter": [
+    "param"
+  ],
+  "nrWinstonFormatter": [
+    "agent",
+    "winston"
+  ],
+  "isStream": [
+    "obj"
+  ],
+  "InstrumentationDescriptor": {
+    "TYPE_GENERIC": [],
+    "TYPE_CONGLOMERATE": [],
+    "TYPE_DATASTORE": [],
+    "TYPE_MESSAGE": [],
+    "TYPE_PROMISE": [],
+    "TYPE_TRANSACTION": [],
+    "TYPE_WEB_FRAMEWORK": [],
+    "type": [],
+    "module": [],
+    "moduleName": [],
+    "shimName": [],
+    "absolutePath": [],
+    "resolvedName": [],
+    "onRequire": [],
+    "onError": [],
+    "constructor": [
+      "params"
+    ],
+    "instrumentationId": []
+  },
+  "TrackedItem": {
+    "instrumentation": [],
+    "meta": [],
+    "constructor": [
+      "params"
+    ]
+  },
+  "InstrumentationTracker": {
+    "getAllByName": [
+      "moduleName"
+    ],
+    "getTrackedItem": [
+      "moduleName",
+      "instrumentation"
+    ],
+    "track": [
+      "moduleName",
+      "instrumentation"
+    ],
+    "setHookFailure": [
+      "trackedItem"
+    ],
+    "setHookSuccess": [
+      "trackedItem"
+    ],
+    "setResolvedName": [
+      "moduleName",
+      "resolvedName"
+    ],
+    "simpleNameFromPath": [
+      "modulePath"
+    ]
+  },
+  "BedrockCommand": {
+    "constructor": [
+      "input"
+    ],
+    "isConverse": [],
+    "maxTokens": [],
+    "modelId": [],
+    "modelType": [],
+    "prompt": [],
+    "temperature": [],
+    "isClaude": [],
+    "isClaude3": [],
+    "isCohere": [],
+    "isCohereEmbed": [],
+    "isLlama": [],
+    "isTitan": [],
+    "isTitanEmbed": [],
+    "isClaudeMessagesApi": [
+      "body"
+    ],
+    "isClaudeTextCompletionApi": [
+      "body"
+    ]
+  },
+  "normalizeClaude3Messages": [
+    "messages"
+  ],
+  "BedrockResponse": {
+    "constructor": [
+      "param"
+    ],
+    "parsedBody": [],
+    "inputTokenCount": [],
+    "outputTokenCount": [],
+    "totalTokenCount": [],
+    "completions": [],
+    "finishReason": [],
+    "headers": [],
+    "id": [],
+    "requestId": [],
+    "statusCode": []
+  },
+  "LlmChatCompletionMessage": {
+    "constructor": [
+      "param"
+    ],
+    "setTokenCount": [
+      "agent"
+    ]
+  },
+  "LlmChatCompletionSummary": {
+    "constructor": [
+      "param"
+    ],
+    "setTokens": [
+      "agent"
+    ]
+  },
+  "ConverseStreamHandler": {
+    "passThroughParams": [],
+    "stream": [],
+    "segment": [],
+    "observedChunks": [],
+    "stopReason": [],
+    "response": [],
+    "onComplete": [],
+    "constructor": [
+      "param"
+    ],
+    "finish": [],
+    "updateHeaders": [
+      "parsedEvent"
+    ]
+  },
+  "handleConverse": [],
+  "LlmEmbedding": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "LlmEvent": {
+    "constructionParams": [],
+    "bedrockCommand": [],
+    "bedrockResponse": [],
+    "constructor": [
+      "param"
+    ],
+    "serialize": []
+  },
+  "StreamHandler": {
+    "passThroughParams": [],
+    "stream": [],
+    "segment": [],
+    "response": [],
+    "stopReasonKey": [],
+    "decoder": [],
+    "onComplete": [],
+    "constructor": [
+      "param"
+    ],
+    "finish": [],
+    "getStopReason": [
+      "event"
+    ],
+    "parseEvent": [
+      "event"
+    ],
+    "updateHeaders": [
+      "parsedEvent"
+    ]
+  },
+  "handleClaude": [],
+  "handleClaude3": [],
+  "handleCohere": [],
+  "handleCohereEmbed": [],
+  "handleLlama": [],
+  "handleTitan": [],
+  "stringifyClaudeChunkedMessage": [
+    "chunks"
+  ],
+  "stringifyConverseChunkedMessage": [
+    "chunks"
+  ],
+  "BaseLlmEvent": {
+    "metadata": [
+      "agent"
+    ],
+    "validTokenCount": [
+      "tokenCount"
+    ],
+    "getTotalTokenCount": [],
+    "setTokensOnEmbeddingMessage": [
+      "totalTokens"
+    ],
+    "setTokensInResponse": [
+      "param"
+    ],
+    "setTokenInCompletionMessage": [
+      "param"
+    ],
+    "setTokenFromCallback": [
+      "param"
+    ],
+    "setTokenUsageFromCallback": [
+      "param"
+    ],
+    "calculateCallbackTokens": [
+      "tokenCB",
+      "model",
+      "content"
+    ]
+  },
+  "attachAttributes": [
+    "param"
+  ],
+  "LangChainLlmChatCompletionMessage": {
+    "virtual_llm": [],
+    "constructor": [
+      "param"
+    ]
+  },
+  "LangChainLlmChatCompletionSummary": {
+    "virtual_llm": [],
+    "constructor": [
+      "param"
+    ]
+  },
+  "getUsageTokens": [
+    "response"
+  ],
+  "Metrics": [
+    "apdexT",
+    "mapper",
+    "normalizer"
+  ],
+  "measureMilliseconds": [
+    "name",
+    "scope",
+    "duration",
+    "exclusive"
+  ],
+  "getOrCreateApdexMetric": [
+    "name",
+    "scope",
+    "overrideApdex"
+  ],
+  "_merge": [
+    "a",
+    "b"
+  ],
+  "MetricMapper": [
+    "raw"
+  ],
+  "MetricAggregator": {
+    "constructor": [
+      "opts",
+      "collector",
+      "harvester"
+    ],
+    "empty": [],
+    "started": [],
+    "_toPayloadSync": [],
+    "_getMergeData": [],
+    "_merge": [
+      "metrics"
+    ],
+    "merge": [
+      "metrics",
+      "adjustStartTime"
+    ],
+    "clear": [],
+    "getOrCreateMetric": [
+      "name",
+      "scope"
+    ],
+    "measureMilliseconds": [
+      "name",
+      "scope",
+      "duration",
+      "exclusive"
+    ],
+    "measureBytes": [
+      "name",
+      "size",
+      "exclusiveSize",
+      "exact"
+    ],
+    "getMetric": [
+      "name",
+      "scope"
+    ],
+    "getOrCreateApdexMetric": [
+      "name",
+      "scope",
+      "overrideApdex"
+    ],
+    "reconfigure": [
+      "config"
+    ]
+  },
+  "_isValidOrThrow": [
+    "opts"
+  ],
+  "replaceReplacer": [
+    "input"
+  ],
+  "NormalizerRule": [
+    "json"
+  ],
+  "_addRegExpFlags": [
+    "re",
+    "flags"
+  ],
+  "TxSegmentNormalizer": [],
+  "normalizeParts": [
+    "parts",
+    "currentTerm"
+  ],
+  "filterRules": [
+    "rules"
+  ],
+  "url": [
+    "normalized",
+    "path",
+    "config"
+  ],
+  "plain": [
+    "normalized",
+    "path"
+  ],
+  "MetricNormalizer": [
+    "config",
+    "type"
+  ],
+  "processNameRule": [
+    "rule",
+    "ctx"
+  ],
+  "record": [
+    "nodule",
+    "properties",
+    "recordNamer"
+  ],
+  "recordOperationMetrics": [
+    "segment",
+    "scope",
+    "transaction"
+  ],
+  "recordQueryMetrics": [
+    "segment",
+    "scope",
+    "transaction"
+  ],
+  "recordDistributedTrace": [
+    "tx",
+    "suffix",
+    "duration",
+    "exclusive"
+  ],
+  "recordWeb": [
+    "segment",
+    "scope",
+    "tx"
+  ],
+  "recordExternal": [
+    "host",
+    "library"
+  ],
+  "recordMessageTransaction": [
+    "segment",
+    "scope",
+    "tx"
+  ],
+  "makeMiddlewareRecorder": [
+    "metricName"
+  ],
+  "recordBackground": [
+    "segment",
+    "scope",
+    "tx"
+  ],
+  "ContextManager": {
+    "constructor": [
+      "agent"
+    ],
+    "active": [],
+    "bind": [
+      "context",
+      "target"
+    ],
+    "with": [
+      "context",
+      "callback",
+      "thisRef",
+      "param"
+    ],
+    "enable": [],
+    "disable": []
+  },
+  "boundContext": [
+    "param"
+  ],
+  "SetupLogs": {
+    "constructor": [
+      "param"
+    ],
+    "teardown": []
+  },
+  "nrEmitHandler": [
+    "record"
+  ],
+  "NewRelicNoOpExporter": {
+    "export": [
+      "_",
+      "done"
+    ],
+    "shutdown": []
+  },
+  "NewRelicLoggerProvider": {
+    "constructor": [
+      "param"
+    ],
+    "getLogger": [
+      "name",
+      "version",
+      "options"
+    ]
+  },
+  "severityToString": [
+    "severityNumber"
+  ],
+  "SetupMetrics": {
+    "constructor": [
+      "param"
+    ],
+    "teardown": []
+  },
+  "postReady": [],
+  "ProxyingExporter": {
+    "constructor": [
+      "param"
+    ],
+    "exporter": [
+      "value"
+    ],
+    "export": [
+      "param"
+    ],
+    "forceFlush": [],
+    "selectAggregation": [
+      "param"
+    ],
+    "selectAggregationTemporality": [
+      "param"
+    ],
+    "shutdown": []
+  },
+  "normalizeTimestamp": [
+    "input"
+  ],
+  "hrtimeToMilliseconds": [
+    "hrtime"
+  ],
+  "SetupSignal": {
+    "agent": [],
+    "logger": [],
+    "coreApi": [],
+    "constructor": [
+      "param"
+    ],
+    "teardown": []
+  },
+  "setupOtel": [
+    "agent",
+    "param"
+  ],
+  "teardownOtel": [
+    "agent",
+    "param"
+  ],
+  "TraceState": {
+    "constructor": [
+      "state"
+    ]
+  },
+  "parseTraceParent": [
+    "traceParent"
+  ],
+  "AttributeReconciler": {
+    "constructor": [
+      "param"
+    ],
+    "resolveHost": [
+      "hostname"
+    ],
+    "isHostnameKey": [
+      "key"
+    ],
+    "reconcile": [
+      "param"
+    ]
+  },
+  "SetupTraces": {
+    "constructor": [
+      "param"
+    ],
+    "teardown": []
+  },
+  "Rule": {
+    "OTEL_SPAN_KIND_SERVER": [],
+    "OTEL_SPAN_KIND_CLIENT": [],
+    "OTEL_SPAN_KIND_PRODUCER": [],
+    "OTEL_SPAN_KIND_CONSUMER": [],
+    "OTEL_SPAN_KIND_INTERNAL": [],
+    "constructor": [
+      "input"
+    ],
+    "name": [],
+    "type": [],
+    "attributes": [],
+    "txTransformation": [],
+    "segmentTransformation": [],
+    "isClientRule": [],
+    "isInternalRule": [],
+    "isProducerRule": [],
+    "isConsumerRule": [],
+    "isServerRule": [],
+    "matches": [
+      "span"
+    ]
+  },
+  "RulesEngine": {
+    "constructor": [],
+    "test": [
+      "otelSpan"
+    ]
+  },
+  "SegmentSynthesizer": {
+    "constructor": [
+      "agent",
+      "param"
+    ],
+    "synthesize": [
+      "otelSpan"
+    ]
+  },
+  "createConsumerSegment": [
+    "agent",
+    "otelSpan",
+    "rule"
+  ],
+  "getRecorder": [
+    "param"
+  ],
+  "assignHost": [
+    "otelSpan",
+    "segmentTransformation"
+  ],
+  "propagateTraceContext": [
+    "param"
+  ],
+  "transformTemplate": [
+    "template",
+    "data",
+    "param"
+  ],
+  "buildRuleMappings": [
+    "param"
+  ],
+  "processRegex": [
+    "param"
+  ],
+  "processRegexGroups": [
+    "param"
+  ],
+  "extractAttributeValue": [
+    "param"
+  ],
+  "assignToTarget": [
+    "param"
+  ],
+  "parseProcCPUInfo": [
+    "data"
+  ],
+  "collapseMultilineValues": [
+    "li"
+  ],
+  "separateProcessors": [
+    "processorData"
+  ],
+  "countProcessorStats": [
+    "processors"
+  ],
+  "parseProcMeminfo": [
+    "data"
+  ],
+  "PrioritizedAttributes": {
+    "constructor": [
+      "scope",
+      "param"
+    ],
+    "isValidLength": [
+      "str"
+    ],
+    "_set": [
+      "destinations",
+      "key",
+      "value",
+      "truncateExempt",
+      "priority"
+    ],
+    "get": [
+      "dest"
+    ],
+    "has": [
+      "key"
+    ],
+    "reset": [],
+    "addAttribute": [
+      "destinations",
+      "key",
+      "value",
+      "param",
+      "param"
+    ],
+    "addAttributes": [
+      "destinations",
+      "attrs"
+    ],
+    "hasValidDestination": [
+      "destinations",
+      "key"
+    ],
+    "_getDroppableAttributeKey": [
+      "incomingPriority"
+    ]
+  },
+  "PriorityQueue": [
+    "limit"
+  ],
+  "_getRawEvents": [
+    "head",
+    "evts"
+  ],
+  "serializeHeap": [
+    "head",
+    "arr"
+  ],
+  "ProfilingManager": {
+    "constructor": [
+      "agent",
+      "param"
+    ],
+    "register": [],
+    "start": [],
+    "stop": [],
+    "collect": []
+  },
+  "BaseProfiler": {
+    "name": [],
+    "start": [],
+    "stop": [],
+    "collect": []
+  },
+  "ProxyGrpc": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "Reservoir": [
+    "limit"
+  ],
+  "AdaptiveSampler": {
+    "constructor": [
+      "opts"
+    ],
+    "sampled": [],
+    "samplingThreshold": [],
+    "samplingTarget": [
+      "target"
+    ],
+    "samplingPeriod": [
+      "period"
+    ],
+    "maybeUpdateWindow": [
+      "transaction"
+    ],
+    "shouldSample": [
+      "roll"
+    ],
+    "applySamplingDecision": [
+      "param"
+    ],
+    "_reset": [],
+    "_incrementSampled": [],
+    "_adjustStats": [
+      "target"
+    ]
+  },
+  "AlwaysOffSampler": {
+    "applySamplingDecision": [
+      "param"
+    ]
+  },
+  "AlwaysOnSampler": {
+    "applySamplingDecision": [
+      "param"
+    ]
+  },
+  "Samplers": {
+    "constructor": [
+      "agent"
+    ],
+    "applyDefaultDecision": [
+      "param"
+    ],
+    "shouldRunPartialSampling": [
+      "transaction"
+    ],
+    "applySamplingDecision": [
+      "param"
+    ],
+    "applyDTSamplingDecision": [
+      "param"
+    ],
+    "applyLegacyDTSamplingDecision": [
+      "param"
+    ],
+    "updateAdaptiveTarget": [
+      "target"
+    ],
+    "updateAdaptivePeriod": [
+      "period"
+    ],
+    "getAdaptiveSampler": [
+      "agent"
+    ],
+    "determineSampler": [
+      "param"
+    ]
+  },
+  "TraceIdRatioBasedSampler": {
+    "constructor": [
+      "opts"
+    ],
+    "applySamplingDecision": [
+      "param"
+    ],
+    "shouldSample": [
+      "traceId"
+    ],
+    "_normalize": [
+      "ratio"
+    ],
+    "_accumulate": [
+      "traceId"
+    ]
+  },
+  "Sampler": {
+    "toString": [],
+    "applySamplingDecision": [
+      "param"
+    ],
+    "generatePriority": [],
+    "incrementPriority": [
+      "priority",
+      "partialType"
+    ]
+  },
+  "LambdaProxyWebRequest": {
+    "constructor": [
+      "event"
+    ]
+  },
+  "LambdaProxyWebResponse": {
+    "constructor": [
+      "lambdaResponse"
+    ]
+  },
+  "normalizeQueryStringParameters": [
+    "event"
+  ],
+  "normalizeHeaders": [
+    "event",
+    "param"
+  ],
+  "isLambdaProxyEvent": [
+    "event"
+  ],
+  "isGatewayV1ProxyEvent": [
+    "event"
+  ],
+  "isGatewayV2ProxyEvent": [
+    "event"
+  ],
+  "isValidLambdaProxyResponse": [
+    "response"
+  ],
+  "cleanClosure": [],
+  "AwsLambda": {
+    "constructor": [
+      "agent"
+    ],
+    "_resetModuleState": [],
+    "_detectEventType": [
+      "event"
+    ],
+    "wrapEnders": [],
+    "wrapFatal": [],
+    "propagateSymbols": [
+      "handler",
+      "nrHandler"
+    ],
+    "createSegment": [
+      "param"
+    ],
+    "patchLambdaHandler": [
+      "handler"
+    ],
+    "wrapCallbackAndCaptureError": [
+      "transaction",
+      "txnEnder",
+      "cb",
+      "processResult"
+    ],
+    "wrapStreamAndCaptureError": [
+      "transaction",
+      "txnEnder",
+      "stream"
+    ],
+    "_getAwsAgentAttributes": [
+      "event",
+      "context"
+    ]
+  },
+  "pathMatch": [
+    "obj",
+    "path"
+  ],
+  "wrappedStreamHandler": [
+    "param"
+  ],
+  "lambdaInterceptPromise": [
+    "prom",
+    "resultProcessor",
+    "cb"
+  ],
+  "setEventSourceAttributes": [
+    "event",
+    "attributes"
+  ],
+  "getApiGatewayLambdaProxyResultProcessor": [
+    "transaction"
+  ],
+  "setWebRequest": [
+    "transaction",
+    "request"
+  ],
+  "endTransaction": [],
+  "ConglomerateShim": {
+    "constructor": [
+      "agent",
+      "moduleName",
+      "resolvedName",
+      "shimName",
+      "pkgVersion"
+    ],
+    "GENERIC": [],
+    "DATASTORE": [],
+    "MESSAGE": [],
+    "PROMISE": [],
+    "TRANSACTION": [],
+    "WEB_FRAMEWORK": [],
+    "makeSpecializedShim": [
+      "type",
+      "submodule"
+    ]
+  },
+  "DatastoreShim": [
+    "agent",
+    "moduleName",
+    "resolvedName",
+    "shimName",
+    "pkgVersion"
+  ],
+  "setDatastore": [
+    "datastore"
+  ],
+  "setParser": [
+    "parser"
+  ],
+  "recordOperation": [
+    "nodule",
+    "properties",
+    "opSpec"
+  ],
+  "recordQuery": [
+    "nodule",
+    "properties",
+    "querySpec"
+  ],
+  "recordBatchQuery": [
+    "nodule",
+    "properties",
+    "querySpec"
+  ],
+  "parseQuery": [
+    "query",
+    "nodule"
+  ],
+  "bindRowCallbackSegment": [
+    "args",
+    "cbIdx",
+    "parentSegment"
+  ],
+  "captureInstanceAttributes": [
+    "host",
+    "port",
+    "database"
+  ],
+  "getDatabaseNameFromUseQuery": [],
+  "_recordQuery": [
+    "suffix",
+    "nodule",
+    "properties",
+    "querySpec"
+  ],
+  "_getSpec": [
+    "param"
+  ],
+  "_extractQueryStr": [
+    "fn",
+    "fnName",
+    "spec",
+    "ctx",
+    "args"
+  ],
+  "_normalizeParameters": [
+    "parameters"
+  ],
+  "_normalizeDatabaseName": [
+    "parameters",
+    "dsTracerConf"
+  ],
+  "_normalizeInstanceInformation": [
+    "parameters",
+    "dsTracerConf",
+    "config"
+  ],
+  "createShimFromType": [
+    "param"
+  ],
+  "updateSpecFromArgs": [
+    "param"
+  ],
+  "createRecorder": [
+    "param"
+  ],
+  "MessageShim": [
+    "agent",
+    "moduleName",
+    "resolvedName",
+    "shimName",
+    "pkgVersion"
+  ],
+  "setLibrary": [
+    "library"
+  ],
+  "recordProduce": [
+    "nodule",
+    "properties",
+    "recordNamer"
+  ],
+  "recordConsume": [
+    "nodule",
+    "properties",
+    "spec"
+  ],
+  "recordPurgeQueue": [
+    "nodule",
+    "properties",
+    "spec"
+  ],
+  "recordSubscribedConsume": [
+    "nodule",
+    "properties",
+    "spec"
+  ],
+  "_nameMessageTransaction": [
+    "shim",
+    "msgDesc"
+  ],
+  "createSubscriberWrapper": [
+    "param"
+  ],
+  "makeWrapConsumer": [
+    "param"
+  ],
+  "createConsumerWrapper": [
+    "param"
+  ],
+  "isWrapped": [
+    "nodule",
+    "property"
+  ],
+  "PromiseShim": {
+    "constructor": [
+      "agent",
+      "moduleName",
+      "resolvedName",
+      "shimName",
+      "pkgVersion"
+    ],
+    "Contextualizer": [],
+    "setClass": [
+      "clss"
+    ],
+    "isPromiseInstance": [
+      "obj"
+    ],
+    "wrapConstructor": [
+      "nodule",
+      "properties"
+    ],
+    "wrapExecutorCaller": [
+      "nodule",
+      "properties"
+    ],
+    "wrapCast": [
+      "nodule",
+      "properties"
+    ],
+    "wrapThen": [
+      "nodule",
+      "properties"
+    ],
+    "wrapCatch": [
+      "nodule",
+      "properties"
+    ],
+    "wrapPromisify": [
+      "nodule",
+      "properties"
+    ]
+  },
+  "__NR_wrappedPromisified": [],
+  "_wrapExecutorContext": [
+    "shim",
+    "args"
+  ],
+  "contextExporter": [
+    "param"
+  ],
+  "_wrapResolver": [
+    "context",
+    "fn"
+  ],
+  "Shim": [
+    "agent",
+    "moduleName",
+    "resolvedName",
+    "shimName",
+    "pkgVersion"
+  ],
+  "execute": [
+    "nodule",
+    "spec"
+  ],
+  "wrap": [
+    "nodule",
+    "properties",
+    "spec",
+    "args"
+  ],
+  "wrapReturn": [
+    "nodule",
+    "properties",
+    "spec",
+    "args"
+  ],
+  "wrapInProxy": [
+    "param"
+  ],
+  "wrapClass": [
+    "nodule",
+    "properties",
+    "spec",
+    "args"
+  ],
+  "wrapExport": [
+    "nodule",
+    "spec"
+  ],
+  "getExport": [
+    "defaultExport"
+  ],
+  "recordWrapper": [
+    "param"
+  ],
+  "_hasValidCallbackArg": [
+    "shim",
+    "args",
+    "specCallback"
+  ],
+  "_doRecord": [
+    "param"
+  ],
+  "_applyRecorderSegment": [
+    "param"
+  ],
+  "unwrap": [
+    "nodule",
+    "properties"
+  ],
+  "getOriginal": [
+    "fn"
+  ],
+  "getOriginalOnce": [
+    "nodule",
+    "property"
+  ],
+  "bindSegment": [
+    "nodule",
+    "property",
+    "segment",
+    "full"
+  ],
+  "bindContext": [
+    "param"
+  ],
+  "bindCallbackSegment": [
+    "spec",
+    "args",
+    "cbIdx",
+    "parentSegment"
+  ],
+  "getSegment": [],
+  "getActiveSegment": [
+    "obj"
+  ],
+  "setActiveSegment": [
+    "segment"
+  ],
+  "storeSegment": [
+    "obj",
+    "segment"
+  ],
+  "applyContext": [
+    "param"
+  ],
+  "runInContextCb": [],
+  "createSegment": [
+    "param"
+  ],
+  "_rawCreateSegment": [
+    "param"
+  ],
+  "getName": [
+    "obj"
+  ],
+  "isObject": [
+    "obj"
+  ],
+  "isFunction": [
+    "obj"
+  ],
+  "isString": [
+    "obj"
+  ],
+  "isNumber": [
+    "obj"
+  ],
+  "isBoolean": [
+    "obj"
+  ],
+  "isArray": [
+    "obj"
+  ],
+  "isPromise": [
+    "obj"
+  ],
+  "isAsyncFunction": [
+    "fn"
+  ],
+  "isNull": [
+    "v"
+  ],
+  "toArray": [
+    "obj"
+  ],
+  "argsToArray": [],
+  "normalizeIndex": [
+    "arrayLength",
+    "idx"
+  ],
+  "once": [
+    "fn"
+  ],
+  "defineProperty": [
+    "obj",
+    "name",
+    "value"
+  ],
+  "defineProperties": [
+    "obj",
+    "props"
+  ],
+  "setDefaults": [
+    "obj",
+    "defaults"
+  ],
+  "proxy": [
+    "source",
+    "properties",
+    "dest"
+  ],
+  "shimRequire": [
+    "filePath"
+  ],
+  "interceptPromise": [
+    "prom",
+    "cb"
+  ],
+  "bindPromise": [
+    "promise",
+    "segment"
+  ],
+  "copySegmentParameters": [
+    "segment",
+    "parameters"
+  ],
+  "enableDebug": [],
+  "unwrapAll": [],
+  "_specToFunction": [
+    "spec"
+  ],
+  "assignOriginal": [
+    "wrapped",
+    "original",
+    "forceOrig"
+  ],
+  "assignId": [
+    "shimName"
+  ],
+  "_wrap": [
+    "shim",
+    "original",
+    "name",
+    "spec",
+    "args"
+  ],
+  "_makeBindWrapper": [
+    "shim",
+    "func",
+    "context",
+    "full"
+  ],
+  "_bindAllCallbacks": [
+    "shim",
+    "fn",
+    "name",
+    "args",
+    "spec"
+  ],
+  "_bindCallback": [
+    "param"
+  ],
+  "_bindStream": [
+    "shim",
+    "stream",
+    "segment",
+    "spec"
+  ],
+  "wrapStreamEmit": [
+    "param"
+  ],
+  "wrapStreamListeners": [
+    "param"
+  ],
+  "_es6WrapClass": [
+    "shim",
+    "Base",
+    "fnName",
+    "spec",
+    "args"
+  ],
+  "_es5WrapClass": [
+    "shim",
+    "Base",
+    "fnName",
+    "spec",
+    "args"
+  ],
+  "WrappedClass": [
+    "param"
+  ],
+  "prefixRouteParameters": [
+    "params"
+  ],
+  "ClassWrapSpec": {
+    "es6": [],
+    "pre": [],
+    "post": [],
+    "constructor": [
+      "params"
+    ]
+  },
+  "MessageSubscribeSpec": {
+    "consumer": [],
+    "functions": [],
+    "constructor": [
+      "params"
+    ]
+  },
+  "MessageSpec": {
+    "destinationName": [],
+    "destinationType": [],
+    "headers": [],
+    "messageHeaders": [],
+    "messageHandler": [],
+    "queue": [],
+    "routingKey": [],
+    "constructor": [
+      "params"
+    ]
+  },
+  "MiddlewareMounterSpec": {
+    "route": [],
+    "wrapper": [],
+    "constructor": [
+      "params"
+    ]
+  },
+  "MiddlewareSpec": {
+    "appendPath": [],
+    "next": [],
+    "params": [],
+    "req": [],
+    "res": [],
+    "route": [],
+    "type": [],
+    "constructor": [
+      "constructorParams"
+    ]
+  },
+  "OperationSpec": {
+    "parameters": [],
+    "record": [],
+    "constructor": [
+      "params"
+    ]
+  },
+  "DatastoreParameters": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "QueueMessageParameters": {
+    "constructor": [
+      "params"
+    ]
+  },
+  "QuerySpec": {
+    "query": [],
+    "constructor": [
+      "params"
+    ]
+  },
+  "RecorderSpec": {
+    "after": [],
+    "callback": [],
+    "callbackRequired": [],
+    "promise": [],
+    "rowCallback": [],
+    "stream": [],
+    "constructor": [
+      "params"
+    ]
+  },
+  "RenderSpec": {
+    "view": [],
+    "constructor": [
+      "params"
+    ]
+  },
+  "SegmentSpec": {
+    "inContext": [],
+    "internal": [],
+    "name": [],
+    "opaque": [],
+    "parameters": [],
+    "parent": [],
+    "recorder": [],
+    "constructor": [
+      "params"
+    ]
+  },
+  "Spec": {},
+  "TransactionSpec": {
+    "nest": [],
+    "type": [],
+    "constructor": [
+      "params"
+    ]
+  },
+  "WrapSpec": {
+    "matchArity": [],
+    "wrapper": [],
+    "constructor": [
+      "params"
+    ]
+  },
+  "TransactionShim": [
+    "agent",
+    "moduleName",
+    "resolvedName",
+    "shimName",
+    "pkgVersion"
+  ],
+  "bindCreateTransaction": [
+    "nodule",
+    "property",
+    "spec"
+  ],
+  "pushTransactionName": [
+    "pathSegment"
+  ],
+  "popTransactionName": [
+    "pathSegment"
+  ],
+  "setTransactionName": [
+    "name"
+  ],
+  "handleMqTracingHeaders": [
+    "headers",
+    "segment",
+    "transportType",
+    "transaction"
+  ],
+  "insertCATRequestHeaders": [
+    "headers",
+    "useAlternateHeaderNames"
+  ],
+  "insertCATReplyHeader": [
+    "headers",
+    "useAlternateHeaderNames"
+  ],
+  "_makeNestedTransWrapper": [
+    "shim",
+    "func",
+    "name",
+    "spec"
+  ],
+  "_makeTransWrapper": [
+    "shim",
+    "func",
+    "name",
+    "spec"
+  ],
+  "WebFrameworkShim": [
+    "agent",
+    "moduleName",
+    "resolvedName",
+    "shimName",
+    "pkgVersion"
+  ],
+  "setRouteParser": [
+    "parser"
+  ],
+  "setFramework": [
+    "framework"
+  ],
+  "setTransactionUri": [
+    "uri"
+  ],
+  "recordRender": [
+    "nodule",
+    "properties",
+    "spec"
+  ],
+  "recordMiddleware": [
+    "nodule",
+    "properties",
+    "spec"
+  ],
+  "recordParamware": [
+    "nodule",
+    "properties",
+    "spec"
+  ],
+  "noticeError": [
+    "req",
+    "err"
+  ],
+  "errorHandled": [
+    "req",
+    "err"
+  ],
+  "setErrorPredicate": [
+    "pred"
+  ],
+  "savePossibleTransactionName": [
+    "req"
+  ],
+  "setResponsePredicate": [
+    "pred"
+  ],
+  "_defaultRouteParser": [
+    "shim",
+    "fn",
+    "fnName",
+    "route"
+  ],
+  "_defaultErrorPredicate": [],
+  "_defaultResponsePredicate": [],
+  "wrapMounter": [
+    "spec",
+    "shim",
+    "fn",
+    "fnName"
+  ],
+  "wrapAllMiddleware": [
+    "param"
+  ],
+  "getRoute": [
+    "spec",
+    "shim"
+  ],
+  "copyParams": [
+    "param"
+  ],
+  "constructRecorder": [
+    "param"
+  ],
+  "assignTxInfo": [
+    "param"
+  ],
+  "middlewareWithCallbackRecorder": [
+    "param"
+  ],
+  "middlewareWithPromiseRecorder": [
+    "param"
+  ],
+  "getSegmentName": [
+    "metricName",
+    "typeDetails",
+    "route"
+  ],
+  "getReq": [
+    "spec",
+    "shim"
+  ],
+  "wrapNextHandler": [
+    "param"
+  ],
+  "_makeNextBinder": [
+    "nextDetails",
+    "txInfo"
+  ],
+  "wrapNextFn": [
+    "param",
+    "nodule",
+    "property",
+    "isFinal"
+  ],
+  "applyDebugState": [
+    "shim",
+    "nodule",
+    "inEsm"
+  ],
+  "instrumentPostLoad": [
+    "param"
+  ],
+  "resolveNodule": [
+    "param"
+  ],
+  "loadInstrumentation": [
+    "param"
+  ],
+  "_firstPartyInstrumentation": [
+    "agent",
+    "fileName",
+    "shim",
+    "nodule",
+    "moduleName"
+  ],
+  "_postLoad": [
+    "agent",
+    "nodule",
+    "name",
+    "resolvedName",
+    "esmResolver"
+  ],
+  "hasValidRegisterOptions": [
+    "opts"
+  ],
+  "trackInstrumentationUsage": [
+    "agent",
+    "moduleName",
+    "version"
+  ],
+  "instrumentProcessMethods": [
+    "agent"
+  ],
+  "instrumentDomain": [
+    "agent"
+  ],
+  "BaseSpanStreamer": {
+    "constructor": [
+      "licenseKey",
+      "connection",
+      "metrics",
+      "queueSize"
+    ],
+    "addToQueue": [],
+    "sendQueue": [],
+    "write": [
+      "span"
+    ],
+    "send": [
+      "data"
+    ],
+    "drain": [
+      "waitDrainStart"
+    ],
+    "connect": [
+      "agentRunId",
+      "requestHeadersMap"
+    ],
+    "disconnect": [],
+    "createMetrics": []
+  },
+  "BatchSpanStreamer": {
+    "constructor": [
+      "licenseKey",
+      "connection",
+      "metrics",
+      "queueSize",
+      "batchSize"
+    ],
+    "addToQueue": [
+      "span"
+    ],
+    "write": [
+      "span"
+    ],
+    "batchReady": [
+      "currTime"
+    ],
+    "sendQueue": []
+  },
+  "createSpanEventAggregator": [
+    "config",
+    "agent"
+  ],
+  "createStreamingAggregator": [
+    "config",
+    "agent"
+  ],
+  "createStandardAggregator": [
+    "config",
+    "agent"
+  ],
+  "addSpanKind": [
+    "param"
+  ],
+  "mapToStreamingType": [
+    "value"
+  ],
+  "SpanContext": {
+    "constructor": [
+      "intrinsicAttributes",
+      "customAttributes"
+    ],
+    "addIntrinsicAttribute": [
+      "key",
+      "value"
+    ],
+    "addCustomAttribute": [
+      "key",
+      "value",
+      "priority"
+    ],
+    "setError": [
+      "details"
+    ]
+  },
+  "SpanEventAggregator": {
+    "constructor": [
+      "opts",
+      "agent"
+    ],
+    "_toPayloadSync": [],
+    "toString": [],
+    "start": [],
+    "send": [],
+    "addSegment": [
+      "param"
+    ],
+    "reconfigure": [
+      "config"
+    ],
+    "_getValidSpanConfiguration": [
+      "config"
+    ]
+  },
+  "_enforceMaxLimit": [
+    "currentLimit",
+    "maxLimit"
+  ],
+  "SpanIntrinsics": {
+    "constructor": []
+  },
+  "SpanEvent": {
+    "constructor": [
+      "attributes",
+      "customAttributes"
+    ],
+    "parentId": [],
+    "id": [],
+    "getIntrinsicAttributes": [],
+    "addIntrinsics": [
+      "param"
+    ],
+    "addIntrinsicAttribute": [
+      "key",
+      "value"
+    ],
+    "CATEGORIES": [],
+    "DatastoreSpanEvent": [],
+    "HttpSpanEvent": [],
+    "isExitSpan": [],
+    "isLlmSpan": [],
+    "errorAttrs": [],
+    "hasErrorAttrs": [],
+    "entityRelationshipAttrs": [],
+    "hasEntityRelationshipAttrs": [],
+    "filteredAttrs": [],
+    "hasSameEntityAttrs": [
+      "firstSpan"
+    ],
+    "getEntityGroup": [
+      "partialTrace"
+    ],
+    "applyPartialTraceRules": [
+      "param"
+    ],
+    "createSpan": [
+      "param"
+    ],
+    "fromSegment": [
+      "param"
+    ],
+    "toJSON": [],
+    "addCustomAttribute": [
+      "key",
+      "value",
+      "param"
+    ],
+    "addAttribute": [
+      "key",
+      "value",
+      "param"
+    ]
+  },
+  "HttpSpanEvent": {
+    "constructor": [
+      "attributes",
+      "customAttributes"
+    ],
+    "testSegment": [
+      "segment"
+    ]
+  },
+  "DatastoreSpanEvent": {
+    "constructor": [
+      "attributes",
+      "customAttributes"
+    ],
+    "testSegment": [
+      "segment"
+    ]
+  },
+  "_truncate": [
+    "val"
+  ],
+  "_filterNulls": [
+    "obj"
+  ],
+  "SpanLink": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "getIntrinsicAttributes": [],
+    "toJSON": [],
+    "removeNonIntrinsicsAttrs": []
+  },
+  "filterNulls": [
+    "inputObj"
+  ],
+  "SpanStreamer": {
+    "addToQueue": [
+      "span"
+    ],
+    "write": [
+      "span"
+    ],
+    "sendQueue": []
+  },
+  "StreamingSpanAttributes": {
+    "constructor": [
+      "attributes"
+    ],
+    "addAttribute": [
+      "key",
+      "value"
+    ],
+    "addAttributes": [
+      "attributes"
+    ]
+  },
+  "StreamingSpanEventAggregator": {
+    "constructor": [
+      "opts",
+      "agent"
+    ],
+    "toString": [],
+    "start": [],
+    "stop": [],
+    "send": [],
+    "_toPayloadSync": [],
+    "addSegment": [
+      "param"
+    ],
+    "reconfigure": [
+      "config"
+    ],
+    "createMetrics": []
+  },
+  "StreamingSpanEvent": {
+    "constructor": [
+      "traceId",
+      "param",
+      "customAttributes"
+    ],
+    "addIntrinsicAttribute": [
+      "key",
+      "value"
+    ],
+    "getIntrinsicAttributes": [],
+    "addCustomAttribute": [
+      "key",
+      "value",
+      "param"
+    ],
+    "addAgentAttribute": [
+      "key",
+      "value",
+      "param"
+    ],
+    "_checkFilter": [
+      "key"
+    ],
+    "toStreamingFormat": [],
+    "fromSegment": [
+      "param"
+    ]
+  },
+  "StreamingHttpSpanEvent": {
+    "constructor": [
+      "traceId",
+      "agentAttributes",
+      "customAttributes"
+    ],
+    "isHttpSegment": [
+      "segment"
+    ]
+  },
+  "StreamingDatastoreSpanEvent": {
+    "constructor": [
+      "traceId",
+      "agentAttributes",
+      "customAttributes"
+    ],
+    "isDatastoreSegment": [
+      "segment"
+    ]
+  },
+  "TimedEvent": {
+    "constructor": [
+      "param"
+    ],
+    "getIntrinsicAttributes": [],
+    "toJSON": []
+  },
+  "ApdexStats": [
+    "apdexT"
+  ],
+  "Stats": [],
+  "recordValueInMillis": [
+    "totalTime",
+    "exclusiveTime"
+  ],
+  "AiMonitoringSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "enabled": [],
+    "name": [],
+    "trackingPrefix": [],
+    "addLlmMeta": [
+      "param"
+    ],
+    "recordEvent": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ]
+  },
+  "AiMonitoringChatSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "streamingEnabled": [],
+    "createCompletionMessage": [
+      "param"
+    ],
+    "createCompletionSummary": [
+      "param"
+    ],
+    "getMessages": [
+      "param"
+    ],
+    "recordChatCompletionEvents": [
+      "param"
+    ]
+  },
+  "AiMonitoringEmbeddingSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "createEmbedding": [
+      "param"
+    ],
+    "recordEmbedding": [
+      "param"
+    ]
+  },
+  "AcceptMessageSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "ChannelModelSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ]
+  },
+  "ConnectSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "asyncStart": [
+      "data"
+    ],
+    "parseConnectionArgs": [
+      "param"
+    ],
+    "addAttributes": [
+      "segment"
+    ]
+  },
+  "ConsumeSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "asyncStart": [
+      "data"
+    ],
+    "getExchange": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ]
+  },
+  "GetMessageCbSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "GetMessageSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "asyncEnd": [
+      "data"
+    ],
+    "extractQueue": [
+      "args"
+    ]
+  },
+  "PurgeQueueCbSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "PurgeQueueSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "extractQueue": [
+      "args"
+    ]
+  },
+  "ChannelSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "getParameters": [
+      "param"
+    ],
+    "getExchange": [
+      "param"
+    ]
+  },
+  "SendOrEnqueueSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "getParametersFromMessage": [
+    "param"
+  ],
+  "getParameters": [
+    "param"
+  ],
+  "ApplicationLogsSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "enabled": [],
+    "isLogForwardingEnabled": [],
+    "createModuleUsageMetric": [
+      "lib"
+    ],
+    "decorateLogLine": [],
+    "incrementLinesMetric": [
+      "level"
+    ],
+    "forwardLogLine": [
+      "data"
+    ]
+  },
+  "makeCall": [
+    "fn"
+  ],
+  "Subscriber": {
+    "constructor": [
+      "param"
+    ],
+    "channels": [],
+    "enabled": [],
+    "enable": [],
+    "disable": [],
+    "subscribe": [],
+    "unsubscribe": []
+  },
+  "wrappedCallback": [
+    "err",
+    "res"
+  ],
+  "BunyanBaseSubscriber": {
+    "NAME_FROM_LEVEL": [],
+    "constructor": [
+      "param"
+    ]
+  },
+  "BunyanEmitSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ]
+  },
+  "BunyanLoggerSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "end": [
+      "data"
+    ],
+    "reformatLogLine": [
+      "logLine"
+    ]
+  },
+  "findBatchQueryArg": [
+    "args"
+  ],
+  "CassandraBatchSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "setParameters": [
+      "self"
+    ]
+  },
+  "CassandraConnectSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "setParameters": [
+      "self"
+    ]
+  },
+  "CassandraEachRowSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "setParameters": [
+      "self"
+    ]
+  },
+  "CassandraExecuteSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "setParameters": [
+      "self"
+    ]
+  },
+  "CassandraShutdownSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "setParameters": []
+  },
+  "LegacyCassandraBatchSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "LegacyCassandraConnectSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "LegacyCassandraEachRowSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "LegacyCassandraExecuteSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "LegacyCassandraShutdownSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "setParameters": []
+  },
+  "createSubscribersConfig": [
+    "param"
+  ],
+  "DbOperationSubscriber": {
+    "handler": [
+      "data",
+      "ctx"
+    ]
+  },
+  "DbQuerySubscriber": {
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "parseQueryString": [
+      "queryString"
+    ],
+    "parseQuery": [
+      "queryString"
+    ]
+  },
+  "DbSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "instanceReporting": [],
+    "dbNameReporting": [],
+    "addAttributes": [
+      "segment"
+    ]
+  },
+  "ElasticSearchSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "setParameters": [
+      "self"
+    ],
+    "parseQuery": [
+      "queryString"
+    ]
+  },
+  "OpenSearchSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "ElasticSearchTransportSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "errorHandler": [
+    "err"
+  ],
+  "ExpressSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "ExpressParamSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data"
+    ]
+  },
+  "ExpressRenderSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ]
+  },
+  "ExpressRouteSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "end": [
+      "data"
+    ],
+    "wrapRouteMethods": [
+      "route"
+    ]
+  },
+  "wrappedRoute": [
+    "param"
+  ],
+  "ExpressRouterParamSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "enabled": []
+  },
+  "ExpressRouterRouteSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "enabled": []
+  },
+  "ExpressRouterUseSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "enabled": []
+  },
+  "ExpressUseSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data"
+    ],
+    "wrapAllMiddleware": [
+      "param"
+    ],
+    "routeParser": [
+      "route"
+    ]
+  },
+  "FastifyAddHookSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data"
+    ]
+  },
+  "FastifyDecorateSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data"
+    ]
+  },
+  "FastifyInitialization": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "param"
+    ]
+  },
+  "GoogleGenAIEmbedContentSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "createEmbedding": [
+      "param"
+    ],
+    "asyncEnd": [
+      "data"
+    ]
+  },
+  "GoogleGenAIGenerateContentStreamSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "instrumentStream": [
+      "param"
+    ],
+    "asyncEnd": [
+      "data"
+    ]
+  },
+  "GoogleGenAIGenerateContentSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "asyncEnd": [
+      "data"
+    ],
+    "getMessages": [
+      "param"
+    ],
+    "createCompletionSummary": [
+      "param"
+    ],
+    "createCompletionMessage": [
+      "param"
+    ]
+  },
+  "IoRedisSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "end": [
+      "data"
+    ],
+    "setParameters": [
+      "self",
+      "command"
+    ],
+    "parseKey": [
+      "keys"
+    ]
+  },
+  "IovalkeySubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "LangchainChainCallbackManagerSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "LangchainRunnableStreamSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "asyncEnd": [
+      "data"
+    ],
+    "instrumentStream": [
+      "param"
+    ],
+    "concatResponseContent": [
+      "result",
+      "content"
+    ]
+  },
+  "LangchainRunnableSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "asyncEnd": [
+      "data"
+    ],
+    "createCompletionSummary": [
+      "param"
+    ],
+    "getMessages": [
+      "param"
+    ],
+    "createCompletionMessage": [
+      "param"
+    ],
+    "extractContentAndRole": [
+      "msg"
+    ]
+  },
+  "LangchainCallbackManagerSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "asyncEnd": [
+      "data"
+    ]
+  },
+  "LangchainToolSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "asyncEnd": [
+      "data"
+    ],
+    "mergeTags": [
+      "param",
+      "param"
+    ],
+    "mergeMetadata": [
+      "param",
+      "param"
+    ]
+  },
+  "LangchainVectorstoreSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "recordVectorSearch": [
+      "param"
+    ],
+    "asyncEnd": [
+      "data"
+    ]
+  },
+  "LangGraphStreamSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "streamingEnabled": [],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "asyncEnd": [
+      "data"
+    ],
+    "instrumentStream": [
+      "param"
+    ],
+    "recordAiAgentEvent": [
+      "param"
+    ]
+  },
+  "McpClientRequestSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "determineFunction": [
+      "args0"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ]
+  },
+  "MessageConsumerSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "addAttributes": [
+      "segment"
+    ],
+    "asyncEnd": [
+      "data"
+    ],
+    "enable": [],
+    "disable": [],
+    "asyncStart": [],
+    "addConsumeParameters": [
+      "tx"
+    ],
+    "name": []
+  },
+  "MessageProducerSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "name": [],
+    "addAttributes": [
+      "segment"
+    ]
+  },
+  "MetaSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "enabled": [],
+    "enable": [],
+    "disable": [],
+    "subscribe": [],
+    "unsubscribe": []
+  },
+  "getFunctionName": [
+    "handler"
+  ],
+  "defaultErrorHandler": [
+    "err"
+  ],
+  "MiddlewareWrapper": {
+    "constructor": [
+      "param"
+    ],
+    "wrap": [
+      "param"
+    ],
+    "extractTxInfo": [
+      "args",
+      "route"
+    ],
+    "wrapDoneHandler": [
+      "param"
+    ],
+    "storeError": [
+      "txInfo",
+      "err"
+    ],
+    "nameSegment": [
+      "param"
+    ],
+    "constructRecorder": [
+      "param"
+    ]
+  },
+  "wrappedDone": [
+    "param"
+  ],
+  "MiddlewareSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "MySQLConnectionQuerySubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "end": [
+      "data"
+    ]
+  },
+  "extractQuery": [
+    "args"
+  ],
+  "extractDatabaseChangeFromUse": [
+    "sql"
+  ],
+  "storeDatabaseName": [
+    "queryable",
+    "query"
+  ],
+  "MySQLPoolGetConnectionSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "MySQLPoolNamespaceQuerySubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "MySQLPoolQuerySubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ]
+  },
+  "MySQL2ConnectionExecuteSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "MySQL2ConnectionQuerySubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "MySQL2PoolGetConnectionSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "MySQL2PoolNamespaceQuerySubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "MySQL2PoolQuerySubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "OpenAIResponses": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "OpenAIChatCompletions": {
+    "constructor": [
+      "param"
+    ],
+    "end": [
+      "data"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "asyncEnd": [
+      "data"
+    ],
+    "instrumentStream": [
+      "param"
+    ],
+    "createCompletionSummary": [
+      "param"
+    ],
+    "getMessages": [
+      "param"
+    ],
+    "getMessagesFromRequest": [
+      "request"
+    ],
+    "getMessageFromResponse": [
+      "response"
+    ],
+    "createCompletionMessage": [
+      "param"
+    ]
+  },
+  "OpenAIClientSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "end": [
+      "data"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "asyncEnd": [
+      "data"
+    ]
+  },
+  "OpenAIEmbeddings": {
+    "constructor": [
+      "param"
+    ],
+    "end": [
+      "data"
+    ],
+    "createEmbedding": [
+      "param"
+    ],
+    "asyncEnd": [
+      "data"
+    ]
+  },
+  "PgConnectSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "end": [
+      "data"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ]
+  },
+  "PgNativeConnectSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "PgNativeQuerySubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "PgQuerySubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "end": [
+      "data"
+    ],
+    "getQuery": [
+      "args"
+    ],
+    "setParameters": [
+      "client"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ]
+  },
+  "PinoSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "handler": [
+      "data",
+      "ctx"
+    ],
+    "decorateLogLine": [
+      "data"
+    ],
+    "end": [
+      "data"
+    ],
+    "reformatLogLine": [
+      "data",
+      "ctx"
+    ]
+  },
+  "PropagationSubscriber": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "recordSupportabilityMetric": [
+    "param"
+  ],
+  "resolveModuleVersion": [
+    "moduleSpecifier",
+    "param"
+  ],
+  "UndiciSubscriber": {
+    "constructor": [
+      "param"
+    ],
+    "requestCreateHook": [
+      "param"
+    ],
+    "addDTHeaders": [
+      "param"
+    ],
+    "createExternalSegment": [
+      "param"
+    ],
+    "requestHeadersHook": [
+      "param"
+    ],
+    "endAndRestoreSegment": [
+      "param"
+    ]
+  },
+  "assignSyntheticsHeader": [
+    "header",
+    "encKey",
+    "trustedIds",
+    "transaction"
+  ],
+  "assignSyntheticsInfoHeader": [
+    "header",
+    "encKey",
+    "transaction"
+  ],
+  "parseSyntheticsInfoHeader": [
+    "header",
+    "encKey"
+  ],
+  "parseSyntheticsHeader": [
+    "header",
+    "encKey",
+    "trustedIds"
+  ],
+  "isInteger": [
+    "value"
+  ],
+  "maybeAddProcessorUtilization": [
+    "processorConfig",
+    "utilizationConfig"
+  ],
+  "maybeAddRamUtilization": [
+    "ramConfig",
+    "utilizationConfig"
+  ],
+  "maybeAddHostUtilization": [
+    "configHostname",
+    "utilizationConfig"
+  ],
+  "maybeSetProcessorStats": [
+    "processorStats",
+    "systemInfo"
+  ],
+  "maybeSetMemoryStats": [
+    "memoryStats",
+    "systemInfo"
+  ],
+  "maybeSetKernelStats": [
+    "kernelStats",
+    "systemInfo"
+  ],
+  "maybeSetVendorStats": [
+    "vendorStats",
+    "systemInfo"
+  ],
+  "maybeSetBootId": [
+    "bootId",
+    "systemInfo"
+  ],
+  "fetchSystemInfo": [
+    "agent",
+    "callback"
+  ],
+  "getKernelVersion": [],
+  "getSysctlValue": [
+    "param"
+  ],
+  "getProcInfo": [
+    "procPath"
+  ],
+  "SystemMetricsSampler": [
+    "sampler",
+    "interval"
+  ],
+  "recordQueueTime": [
+    "agent",
+    "timer"
+  ],
+  "sampleMemory": [
+    "agent"
+  ],
+  "checkEvents": [
+    "agent"
+  ],
+  "getCpuSample": [
+    "lastSample"
+  ],
+  "generateCPUMetricRecorder": [
+    "agent"
+  ],
+  "sampleCpu": [
+    "agent"
+  ],
+  "sampleLoop": [
+    "agent",
+    "nativeMetrics"
+  ],
+  "sampleGc": [
+    "agent",
+    "nativeMetrics"
+  ],
+  "recordValue": [
+    "agent",
+    "metric",
+    "value"
+  ],
+  "recordCompleteMetric": [
+    "agent",
+    "metricName",
+    "metric"
+  ],
+  "divideMetric": [
+    "metric",
+    "divisor"
+  ],
+  "hrToMillis": [
+    "hr"
+  ],
+  "Timer": [],
+  "overwriteDurationInMillis": [
+    "duration",
+    "start"
+  ],
+  "TransactionHandle": {
+    "constructor": [
+      "transaction",
+      "metrics"
+    ],
+    "end": [
+      "callback"
+    ],
+    "ignore": [],
+    "isSampled": [],
+    "acceptDistributedTraceHeaders": [
+      "param",
+      "headers"
+    ],
+    "insertDistributedTraceHeaders": [
+      "headers"
+    ]
+  },
+  "incrementApiSupportMetric": [
+    "metrics",
+    "functionName"
+  ],
+  "Transaction": [
+    "agent",
+    "traceId"
+  ],
+  "_partialNameFromUri": [],
+  "finalizeNameFromWeb": [
+    "statusCode"
+  ],
+  "forEachRouteParams": [
+    "params"
+  ],
+  "_linkExceptionToSegment": [
+    "exception",
+    "segment"
+  ],
+  "_addException": [
+    "exception",
+    "segment"
+  ],
+  "_addUserError": [
+    "exception"
+  ],
+  "acceptDistributedTraceHeaders": [
+    "transportType",
+    "headers"
+  ],
+  "insertDistributedTraceHeaders": [
+    "headers",
+    "setter",
+    "spanContext"
+  ],
+  "checkForExistingNrTraceHeaders": [
+    "headers"
+  ],
+  "acceptTraceContextPayload": [
+    "traceparentHeader",
+    "tracestateHeader",
+    "transport"
+  ],
+  "_dtPayloadTest": [
+    "payload"
+  ],
+  "_isDtTest": [],
+  "_dtConfigTest": [],
+  "_dtParseTest": [
+    "payload"
+  ],
+  "_dtVersionTest": [
+    "parsed"
+  ],
+  "_dtRequiredKeyTest": [
+    "data"
+  ],
+  "_dtSpanParentTest": [
+    "requiredKeysExist",
+    "data"
+  ],
+  "_dtDefineAttrsFromTraceData": [
+    "data",
+    "transport"
+  ],
+  "_acceptDistributedTracePayload": [
+    "payload",
+    "transport"
+  ],
+  "_createDistributedTracePayload": [],
+  "addDistributedTraceIntrinsics": [
+    "attrs"
+  ],
+  "_makeValueSet": [
+    "obj"
+  ],
+  "addRequestParameters": [
+    "requestParameters"
+  ],
+  "Logs": [
+    "agent"
+  ],
+  "NameState": [
+    "prefix",
+    "verb",
+    "delimiter",
+    "path"
+  ],
+  "_getName": [
+    "nameState",
+    "path"
+  ],
+  "_findLastIndex": [
+    "arr",
+    "pred",
+    "ctx"
+  ],
+  "TransactionTraceAggregator": {
+    "constructor": [
+      "opts",
+      "collector",
+      "harvester"
+    ],
+    "resetTimingTracker": [],
+    "add": [
+      "transaction"
+    ],
+    "addSyntheticsTrace": [
+      "trace"
+    ],
+    "clear": [],
+    "_merge": [
+      "data"
+    ],
+    "_getMergeData": [],
+    "getTraces": [],
+    "_toPayloadSync": [],
+    "_toPayload": [
+      "callback"
+    ],
+    "_afterSend": [
+      "successful"
+    ],
+    "isBetter": [
+      "name",
+      "duration",
+      "apdexT"
+    ]
+  },
+  "ExclusiveCalculator": {
+    "constructor": [
+      "root",
+      "trace"
+    ],
+    "process": [
+      "param"
+    ],
+    "finishLeaf": [
+      "childRange"
+    ]
+  },
+  "merge": [
+    "first",
+    "second"
+  ],
+  "Trace": [
+    "transaction"
+  ],
+  "shouldGenerateSpanEvents": [
+    "config",
+    "txn"
+  ],
+  "setDurationInMillis": [
+    "duration",
+    "start"
+  ],
+  "PartialTrace": {
+    "constructor": [
+      "transaction"
+    ],
+    "createMetrics": [
+      "spanKept"
+    ],
+    "generateSpanEvents": [],
+    "addSpan": [
+      "param"
+    ],
+    "reparentSpanLinks": [
+      "span",
+      "param"
+    ],
+    "maybeReparentSpan": [
+      "span"
+    ],
+    "compactionError": [
+      "meta",
+      "span"
+    ],
+    "calculateDuration": [
+      "meta",
+      "span"
+    ],
+    "applyCompaction": [
+      "span"
+    ],
+    "assignCompactAttrs": [
+      "param"
+    ],
+    "reset": [],
+    "finalize": []
+  },
+  "Node": {
+    "constructor": [
+      "segment"
+    ]
+  },
+  "SegmentTree": {
+    "constructor": [
+      "root",
+      "param"
+    ],
+    "find": [
+      "parentId",
+      "param"
+    ],
+    "add": [
+      "segment"
+    ]
+  },
+  "TraceSegment": [
+    "param",
+    "param"
+  ],
+  "_setExclusiveDurationInMillis": [
+    "duration"
+  ],
+  "getExclusiveDurationInMillis": [
+    "trace"
+  ],
+  "TraceContext": {
+    "constructor": [
+      "transaction"
+    ],
+    "createTraceparent": [
+      "spanContext"
+    ],
+    "createTracestate": [
+      "spanContext"
+    ],
+    "addTraceContextHeaders": [
+      "headers",
+      "setter",
+      "spanContext"
+    ],
+    "acceptTraceContextPayload": [
+      "traceparentHeader",
+      "tracestateHeader"
+    ],
+    "parseFlagsHex": [
+      "flags"
+    ],
+    "createFlagsHex": []
+  },
+  "Tracer": [
+    "agent"
+  ],
+  "getContext": [],
+  "getTransaction": [],
+  "setSegment": [
+    "param"
+  ],
+  "getSpanContext": [],
+  "addSegment": [
+    "name",
+    "recorder",
+    "parent",
+    "full",
+    "task"
+  ],
+  "transactionProxy": [
+    "handler"
+  ],
+  "wrapped": [],
+  "transactionNestProxy": [
+    "type",
+    "handler"
+  ],
+  "bindFunction": [
+    "handler",
+    "context",
+    "full"
+  ],
+  "_makeWrapped": [
+    "param"
+  ],
+  "bindEmitter": [
+    "emitter",
+    "segment"
+  ],
+  "argSlice": [
+    "args"
+  ],
+  "wrapFunctionFirstNoSegment": [
+    "original",
+    "name"
+  ],
+  "wrappedFunction": [],
+  "wrapFunctionLast": [
+    "name",
+    "recorder",
+    "original"
+  ],
+  "wrapFunctionFirst": [
+    "name",
+    "recorder",
+    "original"
+  ],
+  "wrapFunction": [
+    "name",
+    "recorder",
+    "original",
+    "wrapper",
+    "resp"
+  ],
+  "bind": [
+    "fn"
+  ],
+  "wrapSyncFunction": [
+    "name",
+    "recorder",
+    "original"
+  ],
+  "TransactionEventAggregator": {
+    "constructor": [
+      "opts",
+      "agent"
+    ],
+    "_toPayloadSync": [],
+    "send": [],
+    "_splitData": [
+      "data"
+    ],
+    "_rawEventsToValues": [
+      "rawEvent"
+    ],
+    "_sendMultiple": [
+      "eventPayloadPairs",
+      "sendCallback"
+    ],
+    "_sendSplitPayload": [
+      "rawData",
+      "payload",
+      "callback"
+    ]
+  },
+  "logUninstrumented": [],
+  "createMetrics": [
+    "metrics"
+  ],
+  "check": [
+    "sql"
+  ],
+  "getLogLevel": [
+    "level"
+  ],
+  "fixArity": [
+    "original",
+    "wrapper"
+  ],
+  "eachLimit": [
+    "items",
+    "fn",
+    "limit"
+  ],
+  "isValidType": [
+    "val"
+  ],
+  "maybeAddQueueAttributes": [
+    "transaction",
+    "attributes"
+  ],
+  "maybeAddExternalAttributes": [
+    "transaction",
+    "attributes"
+  ],
+  "maybeAddDatabaseAttributes": [
+    "transaction",
+    "attributes"
+  ],
+  "maybeAddParentAttributes": [
+    "transaction",
+    "attributes"
+  ],
+  "addRequiredCATAttributes": [
+    "transaction",
+    "attributes",
+    "configuration"
+  ],
+  "maybeAddExtraCATAttributes": [
+    "transaction",
+    "attributes",
+    "configuration"
+  ],
+  "calculateApdexZone": [
+    "duration",
+    "apdexT"
+  ],
+  "isValidLength": [
+    "str",
+    "limit"
+  ],
+  "compareLength": [
+    "str",
+    "limit"
+  ],
+  "truncate": [
+    "str",
+    "max"
+  ],
+  "words": [
+    "string"
+  ],
+  "setFunctionName": [
+    "name"
+  ],
+  "shallowCopy": [
+    "source",
+    "dest"
+  ],
+  "flatten": [
+    "result",
+    "prefix",
+    "obj",
+    "seen"
+  ],
+  "flatKeys": [
+    "obj",
+    "prefix",
+    "arrayIdxs"
+  ],
+  "recurse": [
+    "p",
+    "o"
+  ],
+  "getPackageVersion": [
+    "baseDir"
+  ],
+  "get": [
+    "obj",
+    "keys",
+    "defaultVal"
+  ],
+  "encode": [
+    "bytes",
+    "keyBytes"
+  ],
+  "obfuscateNameUsingKey": [
+    "name",
+    "key"
+  ],
+  "deobfuscateNameUsingKey": [
+    "name",
+    "key"
+  ],
+  "calculatePathHash": [
+    "appName",
+    "pathName",
+    "referringPathHash"
+  ],
+  "getHash": [
+    "appName",
+    "txName"
+  ],
+  "randInt32": [],
+  "int32ToByteArray": [
+    "int32"
+  ],
+  "makeId": [
+    "param"
+  ],
+  "IdGenerator": {
+    "idFor": [
+      "name"
+    ]
+  },
+  "parse": [
+    "labels",
+    "parentLogger"
+  ],
+  "fromString": [
+    "raw"
+  ],
+  "warn": [
+    "message"
+  ],
+  "fromMap": [
+    "map"
+  ],
+  "extractLlmAttributes": [
+    "context"
+  ],
+  "extractLlmContext": [
+    "agent"
+  ],
+  "Logger": [
+    "options",
+    "extra"
+  ],
+  "log": [
+    "extra"
+  ],
+  "Entry": [
+    "logger",
+    "level",
+    "msg"
+  ],
+  "getPropertiesToLog": [
+    "extra"
+  ],
+  "decorateFromErrorInstance": [
+    "toDecorate",
+    "errorInstance"
+  ],
+  "isSimpleObject": [
+    "thing"
+  ],
+  "isNotEmpty": [
+    "thing"
+  ],
+  "satisfies": [
+    "check"
+  ],
+  "prerelease": [],
+  "_logWarn": [],
+  "obfuscate": [
+    "raw",
+    "dialect"
+  ],
+  "join": [
+    "expressions",
+    "flags"
+  ],
+  "toPart": [
+    "expressions"
+  ],
+  "replacer": [
+    "regex"
+  ],
+  "replace": [
+    "sql"
+  ],
+  "unmatchedPairs": [
+    "regex"
+  ],
+  "StreamSink": [
+    "callback"
+  ],
+  "isLocalhost": [
+    "host"
+  ],
+  "isError": [
+    "config",
+    "code"
+  ],
+  "isIgnoredError": [
+    "config",
+    "code"
+  ],
+  "isExpectedError": [
+    "config",
+    "code"
+  ],
+  "scrub": [
+    "requestURL"
+  ],
+  "parseParameters": [
+    "requestURL"
+  ],
+  "scrubAndParseParameters": [
+    "requestURL"
+  ],
+  "obfuscatePath": [
+    "config",
+    "path"
+  ],
+  "overwriteParameters": [
+    "source",
+    "destination"
+  ],
+  "isIgnoredStatusCodeForErrors": [
+    "config",
+    "code"
+  ],
+  "isExpectedStatusCodeForErrors": [
+    "config",
+    "code"
+  ],
+  "fetchAWSInfo": [
+    "agent",
+    "callback"
+  ],
+  "fetchAzureInfo": [
+    "agent",
+    "callback"
+  ],
+  "fetchAzureFunctionInfo": [
+    "agent",
+    "callback"
+  ],
+  "checkValueString": [
+    "str"
+  ],
+  "abortRequest": [],
+  "readProc": [
+    "path",
+    "callback"
+  ],
+  "clearDockerVendorCache": [],
+  "getBootId": [
+    "agent",
+    "callback",
+    "param"
+  ],
+  "recordBootIdError": [
+    "agent"
+  ],
+  "readProcBootId": [
+    "param"
+  ],
+  "fetchDockerVendorInfo": [
+    "agent",
+    "callback",
+    "param"
+  ],
+  "parseCGroupsV2": [
+    "data",
+    "callback",
+    "param"
+  ],
+  "findCGroupsV1": [
+    "callback",
+    "param"
+  ],
+  "parseCGroupsV1": [
+    "info",
+    "cgroup",
+    "eachCb"
+  ],
+  "_getEcsContainerId": [
+    "param"
+  ],
+  "_hasAwsContainerApi": [],
+  "_recordIdError": [
+    "agent"
+  ],
+  "fetchGCPInfo": [
+    "agent",
+    "callback"
+  ],
+  "resolveVendor": [
+    "param"
+  ],
+  "getKubernetesInfo": [
+    "agent",
+    "callback"
+  ],
+  "fetchPCFInfo": [
+    "agent",
+    "callback"
+  ],
+  "Traceparent": {
+    "W3C_TRACEPARENT_VERSION": [],
+    "FLAG_SAMPLED": [],
+    "constructor": [
+      "param"
+    ],
+    "fromHeader": [
+      "header"
+    ],
+    "fromSpanContext": [
+      "spanContext"
+    ],
+    "isSampled": [],
+    "toString": [],
+    "trace_flags": [],
+    "parent_id": [],
+    "trace_id": []
+  },
+  "TracestateIntrinsics": {
+    "accountId": [],
+    "appId": [],
+    "spanId": [],
+    "transactionId": [],
+    "invalidReason": [],
+    "NR_TRACESTATE_VERSION": [],
+    "PARENT_TYPES": [],
+    "version": [
+      "value"
+    ],
+    "parentType": [
+      "value"
+    ],
+    "priority": [
+      "value"
+    ],
+    "sampled": [
+      "value"
+    ],
+    "timestamp": [
+      "value"
+    ],
+    "isValid": [],
+    "validate": []
+  },
+  "Tracestate": {
+    "NR_TRACESTATE_VERSION": [],
+    "constructor": [
+      "param"
+    ],
+    "fromHeader": [
+      "param"
+    ],
+    "toString": [],
+    "isSampled": [],
+    "parentAccountId": [],
+    "parentAppId": [],
+    "parentType": [],
+    "priority": [],
+    "spanId": [],
+    "timestamp": [],
+    "transactionId": [],
+    "sampled": [],
+    "parent_account_id": [],
+    "parent_application_id": [],
+    "parent_type": [],
+    "span_id": [],
+    "tenant_id": [],
+    "transaction_id": [],
+    "version": []
+  },
+  "stubFunction": [
+    "name"
+  ],
+  "Stub": [],
+  "getBrowserTimingHeader": [],
+  "setLambdaHandler": [
+    "callback"
+  ],
+  "startSegment": [
+    "name",
+    "record",
+    "handler",
+    "callback"
+  ],
+  "getLinkingMetadata": [],
+  "getTraceMetadata": [],
+  "startWebTransaction": [
+    "url",
+    "callback"
+  ],
+  "shutdown": [
+    "options",
+    "cb"
+  ]
+}
