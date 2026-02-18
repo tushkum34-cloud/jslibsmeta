@@ -1,0 +1,439 @@
+{
+  "FastGlob": [
+    "source",
+    "options"
+  ],
+  "sync": [
+    "source",
+    "options"
+  ],
+  "stream": [
+    "source",
+    "options"
+  ],
+  "generateTasks": [
+    "source",
+    "options"
+  ],
+  "isDynamicPattern": [
+    "pattern",
+    "param"
+  ],
+  "escapePath": [
+    "source"
+  ],
+  "convertPathToPattern": [
+    "source"
+  ],
+  "getWorks": [
+    "source",
+    "_Provider",
+    "options"
+  ],
+  "assertPatternsInput": [
+    "input"
+  ],
+  "generate": [
+    "input",
+    "settings"
+  ],
+  "processPatterns": [
+    "input",
+    "settings"
+  ],
+  "convertPatternsToTasks": [
+    "positive",
+    "negative",
+    "dynamic"
+  ],
+  "getPositivePatterns": [
+    "patterns"
+  ],
+  "getNegativePatternsAsPositive": [
+    "patterns",
+    "ignore"
+  ],
+  "groupPatternsByBaseDirectory": [
+    "patterns"
+  ],
+  "convertPatternGroupsToTasks": [
+    "positive",
+    "negative",
+    "dynamic"
+  ],
+  "convertPatternGroupToTask": [
+    "base",
+    "positive",
+    "negative",
+    "dynamic"
+  ],
+  "ProviderAsync": {
+    "constructor": [],
+    "read": [
+      "task"
+    ],
+    "api": [
+      "root",
+      "task",
+      "options"
+    ]
+  },
+  "DeepFilter": {
+    "constructor": [
+      "_settings",
+      "_micromatchOptions"
+    ],
+    "getFilter": [
+      "basePath",
+      "positive",
+      "negative"
+    ],
+    "_getMatcher": [
+      "patterns"
+    ],
+    "_getNegativePatternsRe": [
+      "patterns"
+    ],
+    "_filter": [
+      "basePath",
+      "entry",
+      "matcher",
+      "negativeRe"
+    ],
+    "_isSkippedByDeep": [
+      "basePath",
+      "entryPath"
+    ],
+    "_getEntryLevel": [
+      "basePath",
+      "entryPath"
+    ],
+    "_isSkippedSymbolicLink": [
+      "entry"
+    ],
+    "_isSkippedByPositivePatterns": [
+      "entryPath",
+      "matcher"
+    ],
+    "_isSkippedByNegativePatterns": [
+      "entryPath",
+      "patternsRe"
+    ]
+  },
+  "EntryFilter": {
+    "constructor": [
+      "_settings",
+      "_micromatchOptions"
+    ],
+    "getFilter": [
+      "positive",
+      "negative"
+    ],
+    "_filter": [
+      "entry",
+      "patterns"
+    ],
+    "_isDuplicateEntry": [
+      "filepath"
+    ],
+    "_createIndexRecord": [
+      "filepath"
+    ],
+    "_onlyFileFilter": [
+      "entry"
+    ],
+    "_onlyDirectoryFilter": [
+      "entry"
+    ],
+    "_isMatchToPatternsSet": [
+      "filepath",
+      "patterns",
+      "isDirectory"
+    ],
+    "_isMatchToAbsoluteNegative": [
+      "filepath",
+      "patternsRe",
+      "isDirectory"
+    ],
+    "_isMatchToPatterns": [
+      "filepath",
+      "patternsRe",
+      "isDirectory"
+    ]
+  },
+  "ErrorFilter": {
+    "constructor": [
+      "_settings"
+    ],
+    "getFilter": [],
+    "_isNonFatalError": [
+      "error"
+    ]
+  },
+  "Matcher": {
+    "constructor": [
+      "_patterns",
+      "_settings",
+      "_micromatchOptions"
+    ],
+    "_fillStorage": [],
+    "_getPatternSegments": [
+      "pattern"
+    ],
+    "_splitSegmentsIntoSections": [
+      "segments"
+    ]
+  },
+  "PartialMatcher": {
+    "match": [
+      "filepath"
+    ]
+  },
+  "Provider": {
+    "constructor": [
+      "_settings"
+    ],
+    "_getRootDirectory": [
+      "task"
+    ],
+    "_getReaderOptions": [
+      "task"
+    ],
+    "_getMicromatchOptions": []
+  },
+  "ProviderStream": {
+    "constructor": [],
+    "read": [
+      "task"
+    ],
+    "api": [
+      "root",
+      "task",
+      "options"
+    ]
+  },
+  "ProviderSync": {
+    "constructor": [],
+    "read": [
+      "task"
+    ],
+    "api": [
+      "root",
+      "task",
+      "options"
+    ]
+  },
+  "EntryTransformer": {
+    "constructor": [
+      "_settings"
+    ],
+    "getTransformer": [],
+    "_transform": [
+      "entry"
+    ]
+  },
+  "ReaderAsync": {
+    "constructor": [],
+    "dynamic": [
+      "root",
+      "options"
+    ],
+    "static": [
+      "patterns",
+      "options"
+    ]
+  },
+  "Reader": {
+    "constructor": [
+      "_settings"
+    ],
+    "_getFullEntryPath": [
+      "filepath"
+    ],
+    "_makeEntry": [
+      "stats",
+      "pattern"
+    ],
+    "_isFatalError": [
+      "error"
+    ]
+  },
+  "ReaderStream": {
+    "constructor": [],
+    "dynamic": [
+      "root",
+      "options"
+    ],
+    "static": [
+      "patterns",
+      "options"
+    ],
+    "_getEntry": [
+      "filepath",
+      "pattern",
+      "options"
+    ],
+    "_getStat": [
+      "filepath"
+    ]
+  },
+  "ReaderSync": {
+    "constructor": [],
+    "dynamic": [
+      "root",
+      "options"
+    ],
+    "static": [
+      "patterns",
+      "options"
+    ],
+    "_getEntry": [
+      "filepath",
+      "pattern",
+      "options"
+    ],
+    "_getStat": [
+      "filepath"
+    ]
+  },
+  "Settings": {
+    "constructor": [
+      "param"
+    ],
+    "_getValue": [
+      "option",
+      "value"
+    ],
+    "_getFileSystemMethods": [
+      "param"
+    ]
+  },
+  "flatten": [
+    "items"
+  ],
+  "splitWhen": [
+    "items",
+    "predicate"
+  ],
+  "isEnoentCodeError": [
+    "error"
+  ],
+  "DirentFromStats": {
+    "constructor": [
+      "name",
+      "stats"
+    ]
+  },
+  "createDirentFromStats": [
+    "name",
+    "stats"
+  ],
+  "unixify": [
+    "filepath"
+  ],
+  "makeAbsolute": [
+    "cwd",
+    "filepath"
+  ],
+  "removeLeadingDotSegment": [
+    "entry"
+  ],
+  "escapeWindowsPath": [
+    "pattern"
+  ],
+  "escapePosixPath": [
+    "pattern"
+  ],
+  "convertWindowsPathToPattern": [
+    "filepath"
+  ],
+  "convertPosixPathToPattern": [
+    "filepath"
+  ],
+  "isStaticPattern": [
+    "pattern",
+    "param"
+  ],
+  "hasBraceExpansion": [
+    "pattern"
+  ],
+  "convertToPositivePattern": [
+    "pattern"
+  ],
+  "convertToNegativePattern": [
+    "pattern"
+  ],
+  "isNegativePattern": [
+    "pattern"
+  ],
+  "isPositivePattern": [
+    "pattern"
+  ],
+  "getNegativePatterns": [
+    "patterns"
+  ],
+  "getPatternsInsideCurrentDirectory": [
+    "patterns"
+  ],
+  "getPatternsOutsideCurrentDirectory": [
+    "patterns"
+  ],
+  "isPatternRelatedToParentDirectory": [
+    "pattern"
+  ],
+  "getBaseDirectory": [
+    "pattern"
+  ],
+  "hasGlobStar": [
+    "pattern"
+  ],
+  "endsWithSlashGlobStar": [
+    "pattern"
+  ],
+  "isAffectDepthOfReadingPattern": [
+    "pattern"
+  ],
+  "expandPatternsWithBraceExpansion": [
+    "patterns"
+  ],
+  "expandBraceExpansion": [
+    "pattern"
+  ],
+  "getPatternParts": [
+    "pattern",
+    "options"
+  ],
+  "makeRe": [
+    "pattern",
+    "options"
+  ],
+  "convertPatternsToRe": [
+    "patterns",
+    "options"
+  ],
+  "matchAny": [
+    "entry",
+    "patternsRe"
+  ],
+  "removeDuplicateSlashes": [
+    "pattern"
+  ],
+  "partitionAbsoluteAndRelative": [
+    "patterns"
+  ],
+  "isAbsolute": [
+    "pattern"
+  ],
+  "merge": [
+    "streams"
+  ],
+  "propagateCloseEventToSources": [
+    "streams"
+  ],
+  "isString": [
+    "input"
+  ],
+  "isEmpty": [
+    "input"
+  ]
+}

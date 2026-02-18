@@ -1,0 +1,552 @@
+{
+  "assert": [
+    "condition",
+    "param"
+  ],
+  "Definition": {
+    "constructor": [
+      "type",
+      "name",
+      "node",
+      "parent",
+      "index",
+      "kind"
+    ]
+  },
+  "ParameterDefinition": {
+    "constructor": [
+      "name",
+      "node",
+      "index",
+      "rest"
+    ]
+  },
+  "defaultOptions": [],
+  "updateDeeply": [
+    "target",
+    "override"
+  ],
+  "isHashObject": [
+    "value"
+  ],
+  "analyze": [
+    "tree",
+    "providedOptions"
+  ],
+  "getLast": [
+    "xs"
+  ],
+  "PatternVisitor": {
+    "isPattern": [
+      "node"
+    ],
+    "constructor": [
+      "options",
+      "rootPattern",
+      "callback"
+    ],
+    "Identifier": [
+      "pattern"
+    ],
+    "Property": [
+      "property"
+    ],
+    "ArrayPattern": [
+      "pattern"
+    ],
+    "AssignmentPattern": [
+      "pattern"
+    ],
+    "RestElement": [
+      "pattern"
+    ],
+    "MemberExpression": [
+      "node"
+    ],
+    "SpreadElement": [
+      "node"
+    ],
+    "ArrayExpression": [
+      "node"
+    ],
+    "AssignmentExpression": [
+      "node"
+    ],
+    "CallExpression": [
+      "node"
+    ]
+  },
+  "Reference": {
+    "constructor": [
+      "ident",
+      "scope",
+      "flag",
+      "writeExpr",
+      "maybeImplicitGlobal",
+      "partial",
+      "init"
+    ],
+    "isStatic": [],
+    "isWrite": [],
+    "isRead": [],
+    "isReadOnly": [],
+    "isWriteOnly": [],
+    "isReadWrite": []
+  },
+  "traverseIdentifierInPattern": [
+    "options",
+    "rootPattern",
+    "referencer",
+    "callback"
+  ],
+  "Importer": {
+    "constructor": [
+      "declaration",
+      "referencer"
+    ],
+    "visitImport": [
+      "id",
+      "specifier"
+    ],
+    "ImportNamespaceSpecifier": [
+      "node"
+    ],
+    "ImportDefaultSpecifier": [
+      "node"
+    ],
+    "ImportSpecifier": [
+      "node"
+    ]
+  },
+  "Referencer": {
+    "constructor": [
+      "options",
+      "scopeManager"
+    ],
+    "currentScope": [],
+    "close": [
+      "node"
+    ],
+    "pushInnerMethodDefinition": [
+      "isInnerMethodDefinition"
+    ],
+    "popInnerMethodDefinition": [
+      "isInnerMethodDefinition"
+    ],
+    "referencingDefaultValue": [
+      "pattern",
+      "assignments",
+      "maybeImplicitGlobal",
+      "init"
+    ],
+    "visitPattern": [
+      "node",
+      "options",
+      "callback"
+    ],
+    "visitFunction": [
+      "node"
+    ],
+    "visitClass": [
+      "node"
+    ],
+    "visitProperty": [
+      "node"
+    ],
+    "visitForIn": [
+      "node"
+    ],
+    "visitVariableDeclaration": [
+      "variableTargetScope",
+      "type",
+      "node",
+      "index"
+    ],
+    "AssignmentExpression": [
+      "node"
+    ],
+    "CatchClause": [
+      "node"
+    ],
+    "Program": [
+      "node"
+    ],
+    "Identifier": [
+      "node"
+    ],
+    "PrivateIdentifier": [],
+    "UpdateExpression": [
+      "node"
+    ],
+    "MemberExpression": [
+      "node"
+    ],
+    "Property": [
+      "node"
+    ],
+    "PropertyDefinition": [
+      "node"
+    ],
+    "StaticBlock": [
+      "node"
+    ],
+    "MethodDefinition": [
+      "node"
+    ],
+    "BreakStatement": [],
+    "ContinueStatement": [],
+    "LabeledStatement": [
+      "node"
+    ],
+    "ForStatement": [
+      "node"
+    ],
+    "ClassExpression": [
+      "node"
+    ],
+    "ClassDeclaration": [
+      "node"
+    ],
+    "CallExpression": [
+      "node"
+    ],
+    "BlockStatement": [
+      "node"
+    ],
+    "ThisExpression": [],
+    "WithStatement": [
+      "node"
+    ],
+    "VariableDeclaration": [
+      "node"
+    ],
+    "SwitchStatement": [
+      "node"
+    ],
+    "FunctionDeclaration": [
+      "node"
+    ],
+    "FunctionExpression": [
+      "node"
+    ],
+    "ForOfStatement": [
+      "node"
+    ],
+    "ForInStatement": [
+      "node"
+    ],
+    "ArrowFunctionExpression": [
+      "node"
+    ],
+    "ImportDeclaration": [
+      "node"
+    ],
+    "visitExportDeclaration": [
+      "node"
+    ],
+    "ExportDeclaration": [
+      "node"
+    ],
+    "ExportAllDeclaration": [
+      "node"
+    ],
+    "ExportDefaultDeclaration": [
+      "node"
+    ],
+    "ExportNamedDeclaration": [
+      "node"
+    ],
+    "ExportSpecifier": [
+      "node"
+    ],
+    "MetaProperty": [],
+    "JSXIdentifier": [
+      "node"
+    ],
+    "JSXMemberExpression": [
+      "node"
+    ],
+    "JSXElement": [
+      "node"
+    ],
+    "JSXOpeningElement": [
+      "node"
+    ],
+    "JSXAttribute": [
+      "node"
+    ],
+    "JSXExpressionContainer": [
+      "node"
+    ],
+    "JSXNamespacedName": [
+      "node"
+    ]
+  },
+  "visitPatternCallback": [
+    "pattern",
+    "info"
+  ],
+  "ScopeManager": {
+    "constructor": [
+      "options"
+    ],
+    "__isOptimistic": [],
+    "__ignoreEval": [],
+    "__isJSXEnabled": [],
+    "isGlobalReturn": [],
+    "isModule": [],
+    "isImpliedStrict": [],
+    "isStrictModeSupported": [],
+    "__get": [
+      "node"
+    ],
+    "getDeclaredVariables": [
+      "node"
+    ],
+    "acquire": [
+      "node",
+      "inner"
+    ],
+    "acquireAll": [
+      "node"
+    ],
+    "release": [
+      "node",
+      "inner"
+    ],
+    "addGlobals": [
+      "names"
+    ],
+    "attach": [],
+    "detach": [],
+    "__nestScope": [
+      "scope"
+    ],
+    "__nestGlobalScope": [
+      "node"
+    ],
+    "__nestBlockScope": [
+      "node"
+    ],
+    "__nestFunctionScope": [
+      "node",
+      "isMethodDefinition"
+    ],
+    "__nestForScope": [
+      "node"
+    ],
+    "__nestCatchScope": [
+      "node"
+    ],
+    "__nestWithScope": [
+      "node"
+    ],
+    "__nestClassScope": [
+      "node"
+    ],
+    "__nestClassFieldInitializerScope": [
+      "node"
+    ],
+    "__nestClassStaticBlockScope": [
+      "node"
+    ],
+    "__nestSwitchScope": [
+      "node"
+    ],
+    "__nestModuleScope": [
+      "node"
+    ],
+    "__nestFunctionExpressionNameScope": [
+      "node"
+    ],
+    "__isES6": []
+  },
+  "predicate": [
+    "testScope"
+  ],
+  "isStrictScope": [
+    "scope",
+    "block",
+    "isMethodDefinition"
+  ],
+  "registerScope": [
+    "scopeManager",
+    "scope"
+  ],
+  "Scope": {
+    "constructor": [
+      "scopeManager",
+      "type",
+      "upperScope",
+      "block",
+      "isMethodDefinition"
+    ],
+    "__shouldStaticallyClose": [
+      "scopeManager"
+    ],
+    "__staticCloseRef": [
+      "ref"
+    ],
+    "__dynamicCloseRef": [
+      "ref"
+    ],
+    "__close": [
+      "scopeManager"
+    ],
+    "__isValidResolution": [
+      "ref",
+      "variable"
+    ],
+    "__resolve": [
+      "ref"
+    ],
+    "__delegateToUpperScope": [
+      "ref"
+    ],
+    "__addDeclaredVariablesOfNode": [
+      "variable",
+      "node"
+    ],
+    "__defineGeneric": [
+      "name",
+      "set",
+      "variables",
+      "node",
+      "def"
+    ],
+    "__define": [
+      "node",
+      "def"
+    ],
+    "__referencing": [
+      "node",
+      "assign",
+      "writeExpr",
+      "maybeImplicitGlobal",
+      "partial",
+      "init"
+    ],
+    "__detectEval": [],
+    "__detectThis": [],
+    "__isClosed": [],
+    "resolve": [
+      "ident"
+    ],
+    "isStatic": [],
+    "isArgumentsMaterialized": [],
+    "isThisMaterialized": [],
+    "isUsedName": [
+      "name"
+    ]
+  },
+  "GlobalScope": {
+    "constructor": [
+      "scopeManager",
+      "block"
+    ],
+    "__close": [
+      "scopeManager"
+    ],
+    "__defineImplicit": [
+      "node",
+      "def"
+    ],
+    "__addVariables": [
+      "names"
+    ]
+  },
+  "ModuleScope": {
+    "constructor": [
+      "scopeManager",
+      "upperScope",
+      "block"
+    ]
+  },
+  "FunctionExpressionNameScope": {
+    "constructor": [
+      "scopeManager",
+      "upperScope",
+      "block"
+    ]
+  },
+  "CatchScope": {
+    "constructor": [
+      "scopeManager",
+      "upperScope",
+      "block"
+    ]
+  },
+  "WithScope": {
+    "constructor": [
+      "scopeManager",
+      "upperScope",
+      "block"
+    ],
+    "__close": [
+      "scopeManager"
+    ]
+  },
+  "BlockScope": {
+    "constructor": [
+      "scopeManager",
+      "upperScope",
+      "block"
+    ]
+  },
+  "SwitchScope": {
+    "constructor": [
+      "scopeManager",
+      "upperScope",
+      "block"
+    ]
+  },
+  "FunctionScope": {
+    "constructor": [
+      "scopeManager",
+      "upperScope",
+      "block",
+      "isMethodDefinition"
+    ],
+    "isArgumentsMaterialized": [],
+    "isThisMaterialized": [],
+    "__defineArguments": [],
+    "__isValidResolution": [
+      "ref",
+      "variable"
+    ]
+  },
+  "ForScope": {
+    "constructor": [
+      "scopeManager",
+      "upperScope",
+      "block"
+    ]
+  },
+  "ClassScope": {
+    "constructor": [
+      "scopeManager",
+      "upperScope",
+      "block"
+    ]
+  },
+  "ClassFieldInitializerScope": {
+    "constructor": [
+      "scopeManager",
+      "upperScope",
+      "block"
+    ]
+  },
+  "ClassStaticBlockScope": {
+    "constructor": [
+      "scopeManager",
+      "upperScope",
+      "block"
+    ]
+  },
+  "Variable": {
+    "constructor": [
+      "name",
+      "scope"
+    ]
+  }
+}

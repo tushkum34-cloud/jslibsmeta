@@ -1,0 +1,857 @@
+{
+  "AuthClient": {
+    "apiKey": [],
+    "projectId": [],
+    "quotaProjectId": [],
+    "transporter": [],
+    "credentials": [],
+    "eagerRefreshThresholdMillis": [],
+    "forceRefreshOnFailure": [],
+    "universeDomain": [],
+    "RequestMethodNameSymbol": [],
+    "RequestLogIdSymbol": [],
+    "constructor": [
+      "param"
+    ],
+    "fetch": [
+      "param"
+    ],
+    "setCredentials": [
+      "credentials"
+    ],
+    "addSharedMetadataHeaders": [
+      "headers"
+    ],
+    "addUserProjectAndAuthHeaders": [
+      "target",
+      "source"
+    ],
+    "log": [],
+    "DEFAULT_REQUEST_INTERCEPTOR": [],
+    "DEFAULT_RESPONSE_INTERCEPTOR": [],
+    "setMethodName": [
+      "config",
+      "methodName"
+    ],
+    "RETRY_CONFIG": []
+  },
+  "AwsClient": {
+    "environmentId": [],
+    "awsSecurityCredentialsSupplier": [],
+    "regionalCredVerificationUrl": [],
+    "awsRequestSigner": [],
+    "region": [],
+    "AWS_EC2_METADATA_IPV4_ADDRESS": [],
+    "AWS_EC2_METADATA_IPV6_ADDRESS": [],
+    "constructor": [
+      "options"
+    ],
+    "validateEnvironmentId": [],
+    "retrieveSubjectToken": []
+  },
+  "AwsRequestSigner": {
+    "getCredentials": [],
+    "region": [],
+    "crypto": [],
+    "constructor": [
+      "getCredentials",
+      "region"
+    ],
+    "getRequestOptions": [
+      "amzOptions"
+    ]
+  },
+  "sign": [
+    "crypto",
+    "key",
+    "msg"
+  ],
+  "getSigningKey": [
+    "crypto",
+    "key",
+    "dateStamp",
+    "region",
+    "serviceName"
+  ],
+  "generateAuthenticationHeaderMap": [
+    "options"
+  ],
+  "BaseExternalAccountClient": {
+    "scopes": [],
+    "projectNumber": [],
+    "audience": [],
+    "subjectTokenType": [],
+    "stsCredential": [],
+    "clientAuth": [],
+    "credentialSourceType": [],
+    "cachedAccessToken": [],
+    "serviceAccountImpersonationUrl": [],
+    "serviceAccountImpersonationLifetime": [],
+    "workforcePoolUserProject": [],
+    "configLifetimeRequested": [],
+    "tokenUrl": [],
+    "cloudResourceManagerURL": [],
+    "supplierContext": [],
+    "constructor": [
+      "options"
+    ],
+    "getServiceAccountEmail": [],
+    "setCredentials": [
+      "credentials"
+    ],
+    "getAccessToken": [],
+    "getRequestHeaders": [],
+    "request": [
+      "opts",
+      "callback"
+    ],
+    "getProjectId": [],
+    "requestAsync": [
+      "opts",
+      "param"
+    ],
+    "refreshAccessTokenAsync": [],
+    "getProjectNumber": [
+      "audience"
+    ],
+    "getImpersonatedAccessToken": [
+      "token"
+    ],
+    "isExpired": [
+      "accessToken"
+    ],
+    "getScopesArray": [],
+    "getMetricsHeaderValue": [],
+    "getTokenUrl": []
+  },
+  "CertificateSourceUnavailableError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "InvalidConfigurationError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "CertificateSubjectTokenSupplier": {
+    "certificateConfigPath": [],
+    "trustChainPath": [],
+    "cert": [],
+    "key": [],
+    "constructor": [
+      "opts"
+    ],
+    "createMtlsHttpsAgent": [],
+    "getSubjectToken": []
+  },
+  "Compute": {
+    "serviceAccountEmail": [],
+    "scopes": [],
+    "constructor": [
+      "param"
+    ],
+    "refreshTokenNoCache": [],
+    "fetchIdToken": [
+      "targetAudience"
+    ],
+    "wrapError": [
+      "e"
+    ]
+  },
+  "DefaultAwsSecurityCredentialsSupplier": {
+    "regionUrl": [],
+    "securityCredentialsUrl": [],
+    "imdsV2SessionTokenUrl": [],
+    "additionalGaxiosOptions": [],
+    "constructor": [
+      "opts"
+    ],
+    "getAwsRegion": [
+      "context"
+    ],
+    "getAwsSecurityCredentials": [
+      "context"
+    ]
+  },
+  "DownscopedClient": {
+    "authClient": [],
+    "credentialAccessBoundary": [],
+    "cachedDownscopedAccessToken": [],
+    "stsCredential": [],
+    "constructor": [
+      "options",
+      "param"
+    ],
+    "setCredentials": [
+      "credentials"
+    ],
+    "getAccessToken": [],
+    "getRequestHeaders": [],
+    "request": [
+      "opts",
+      "callback"
+    ],
+    "requestAsync": [
+      "opts",
+      "param"
+    ],
+    "refreshAccessTokenAsync": [],
+    "isExpired": [
+      "downscopedAccessToken"
+    ]
+  },
+  "clear": [],
+  "getEnv": [],
+  "getEnvMemoized": [],
+  "isAppEngine": [],
+  "isCloudFunction": [],
+  "isCloudRun": [],
+  "isCloudRunJob": [],
+  "isKubernetesEngine": [],
+  "isComputeEngine": [],
+  "ExecutableResponse": {
+    "version": [],
+    "success": [],
+    "expirationTime": [],
+    "tokenType": [],
+    "errorCode": [],
+    "errorMessage": [],
+    "subjectToken": [],
+    "constructor": [
+      "responseJson"
+    ],
+    "isValid": [],
+    "isExpired": []
+  },
+  "ExecutableResponseError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "InvalidVersionFieldError": {},
+  "InvalidSuccessFieldError": {},
+  "InvalidExpirationTimeFieldError": {},
+  "InvalidTokenTypeFieldError": {},
+  "InvalidCodeFieldError": {},
+  "InvalidMessageFieldError": {},
+  "InvalidSubjectTokenError": {},
+  "ExternalAccountAuthorizedUserClient": {
+    "cachedAccessToken": [],
+    "externalAccountAuthorizedUserHandler": [],
+    "refreshToken": [],
+    "constructor": [
+      "options"
+    ],
+    "getAccessToken": [],
+    "getRequestHeaders": [],
+    "request": [
+      "opts",
+      "callback"
+    ],
+    "requestAsync": [
+      "opts",
+      "param"
+    ],
+    "refreshAccessTokenAsync": [],
+    "isExpired": [
+      "credentials"
+    ]
+  },
+  "ExternalAccountAuthorizedUserHandler": {
+    "constructor": [
+      "options"
+    ],
+    "refreshToken": [
+      "refreshToken",
+      "headers"
+    ]
+  },
+  "ExternalAccountClient": {
+    "constructor": [],
+    "fromJSON": [
+      "options"
+    ]
+  },
+  "FileSubjectTokenSupplier": {
+    "filePath": [],
+    "formatType": [],
+    "subjectTokenFieldName": [],
+    "constructor": [
+      "opts"
+    ],
+    "getSubjectToken": []
+  },
+  "GoogleAuth": {
+    "checkIsGCE": [],
+    "useJWTAccessWithScope": [],
+    "defaultServicePath": [],
+    "isGCE": [],
+    "_findProjectIdPromise": [],
+    "_cachedProjectId": [],
+    "jsonContent": [],
+    "apiKey": [],
+    "cachedCredential": [],
+    "defaultScopes": [],
+    "keyFilename": [],
+    "scopes": [],
+    "clientOptions": [],
+    "constructor": [
+      "param"
+    ],
+    "setGapicJWTValues": [
+      "client"
+    ],
+    "getProjectId": [
+      "callback"
+    ],
+    "getProjectIdOptional": [],
+    "findAndCacheProjectId": [],
+    "getProjectIdAsync": [],
+    "getUniverseDomainFromMetadataServer": [],
+    "getUniverseDomain": [],
+    "getAnyScopes": [],
+    "getApplicationDefault": [
+      "param",
+      "callback"
+    ],
+    "getApplicationDefaultAsync": [
+      "param"
+    ],
+    "_checkIsGCE": [],
+    "_tryGetApplicationCredentialsFromEnvironmentVariable": [
+      "options"
+    ],
+    "_tryGetApplicationCredentialsFromWellKnownFile": [
+      "options"
+    ],
+    "_getApplicationCredentialsFromFilePath": [
+      "filePath",
+      "param"
+    ],
+    "fromImpersonatedJSON": [
+      "json"
+    ],
+    "fromJSON": [
+      "json",
+      "param"
+    ],
+    "_cacheClientFromJSON": [
+      "json",
+      "options"
+    ],
+    "fromStream": [
+      "inputStream",
+      "param",
+      "callback"
+    ],
+    "fromStreamAsync": [
+      "inputStream",
+      "options"
+    ],
+    "fromAPIKey": [
+      "apiKey",
+      "param"
+    ],
+    "_isWindows": [],
+    "getDefaultServiceProjectId": [],
+    "getProductionProjectId": [],
+    "getFileProjectId": [],
+    "getExternalAccountClientProjectId": [],
+    "getGCEProjectId": [],
+    "getCredentials": [
+      "callback"
+    ],
+    "getCredentialsAsync": [],
+    "getClient": [],
+    "getIdTokenClient": [
+      "targetAudience"
+    ],
+    "getAccessToken": [],
+    "getRequestHeaders": [
+      "url"
+    ],
+    "authorizeRequest": [
+      "param"
+    ],
+    "fetch": [
+      "param"
+    ],
+    "request": [
+      "opts"
+    ],
+    "getEnv": [],
+    "sign": [
+      "data",
+      "endpoint"
+    ],
+    "signBlob": [
+      "crypto",
+      "emailOrUniqueId",
+      "data",
+      "endpoint"
+    ]
+  },
+  "IAMAuth": {
+    "selector": [],
+    "token": [],
+    "constructor": [
+      "selector",
+      "token"
+    ],
+    "getRequestHeaders": []
+  },
+  "IdentityPoolClient": {
+    "subjectTokenSupplier": [],
+    "constructor": [
+      "options"
+    ],
+    "retrieveSubjectToken": []
+  },
+  "IdTokenClient": {
+    "targetAudience": [],
+    "idTokenProvider": [],
+    "constructor": [
+      "options"
+    ],
+    "getRequestMetadataAsync": [],
+    "getIdTokenExpiryDate": [
+      "idToken"
+    ]
+  },
+  "Impersonated": {
+    "sourceClient": [],
+    "targetPrincipal": [],
+    "targetScopes": [],
+    "delegates": [],
+    "lifetime": [],
+    "endpoint": [],
+    "constructor": [
+      "param"
+    ],
+    "sign": [
+      "blobToSign"
+    ],
+    "getTargetPrincipal": [],
+    "refreshToken": [],
+    "fetchIdToken": [
+      "targetAudience",
+      "options"
+    ]
+  },
+  "JWTAccess": {
+    "email": [],
+    "key": [],
+    "keyId": [],
+    "projectId": [],
+    "eagerRefreshThresholdMillis": [],
+    "cache": [],
+    "constructor": [
+      "email",
+      "key",
+      "keyId",
+      "eagerRefreshThresholdMillis"
+    ],
+    "getCachedKey": [
+      "url",
+      "scopes"
+    ],
+    "getRequestHeaders": [
+      "url",
+      "additionalClaims",
+      "scopes"
+    ],
+    "getExpirationTime": [
+      "iat"
+    ],
+    "fromJSON": [
+      "json"
+    ],
+    "fromStream": [
+      "inputStream",
+      "callback"
+    ],
+    "fromStreamAsync": [
+      "inputStream"
+    ]
+  },
+  "JWT": {
+    "email": [],
+    "keyFile": [],
+    "key": [],
+    "keyId": [],
+    "defaultScopes": [],
+    "scopes": [],
+    "scope": [],
+    "subject": [],
+    "gtoken": [],
+    "additionalClaims": [],
+    "useJWTAccessWithScope": [],
+    "defaultServicePath": [],
+    "access": [],
+    "constructor": [
+      "param"
+    ],
+    "createScoped": [
+      "scopes"
+    ],
+    "getRequestMetadataAsync": [
+      "url"
+    ],
+    "fetchIdToken": [
+      "targetAudience"
+    ],
+    "hasUserScopes": [],
+    "hasAnyScopes": [],
+    "authorize": [
+      "callback"
+    ],
+    "authorizeAsync": [],
+    "refreshTokenNoCache": [],
+    "createGToken": [],
+    "fromJSON": [
+      "json"
+    ],
+    "fromStream": [
+      "inputStream",
+      "callback"
+    ],
+    "fromStreamAsync": [
+      "inputStream"
+    ],
+    "fromAPIKey": [
+      "apiKey"
+    ],
+    "getCredentials": []
+  },
+  "LoginTicket": {
+    "envelope": [],
+    "payload": [],
+    "constructor": [
+      "env",
+      "pay"
+    ],
+    "getEnvelope": [],
+    "getPayload": [],
+    "getUserId": [],
+    "getAttributes": []
+  },
+  "OAuth2Client": {
+    "redirectUri": [],
+    "certificateCache": [],
+    "certificateExpiry": [],
+    "certificateCacheFormat": [],
+    "refreshTokenPromises": [],
+    "endpoints": [],
+    "issuers": [],
+    "clientAuthentication": [],
+    "_clientId": [],
+    "_clientSecret": [],
+    "refreshHandler": [],
+    "constructor": [
+      "param",
+      "clientSecret",
+      "redirectUri"
+    ],
+    "GOOGLE_TOKEN_INFO_URL": [],
+    "CLOCK_SKEW_SECS_": [],
+    "DEFAULT_MAX_TOKEN_LIFETIME_SECS_": [],
+    "generateAuthUrl": [
+      "param"
+    ],
+    "generateCodeVerifier": [],
+    "generateCodeVerifierAsync": [],
+    "getToken": [
+      "codeOrOptions",
+      "callback"
+    ],
+    "getTokenAsync": [
+      "options"
+    ],
+    "refreshToken": [
+      "refreshToken"
+    ],
+    "refreshTokenNoCache": [
+      "refreshToken"
+    ],
+    "refreshAccessToken": [
+      "callback"
+    ],
+    "refreshAccessTokenAsync": [],
+    "getAccessToken": [
+      "callback"
+    ],
+    "getAccessTokenAsync": [],
+    "getRequestHeaders": [
+      "url"
+    ],
+    "getRequestMetadataAsync": [
+      "url"
+    ],
+    "getRevokeTokenUrl": [
+      "token"
+    ],
+    "getRevokeTokenURL": [
+      "token"
+    ],
+    "revokeToken": [
+      "token",
+      "callback"
+    ],
+    "revokeCredentials": [
+      "callback"
+    ],
+    "revokeCredentialsAsync": [],
+    "request": [
+      "opts",
+      "callback"
+    ],
+    "requestAsync": [
+      "opts",
+      "param"
+    ],
+    "verifyIdToken": [
+      "options",
+      "callback"
+    ],
+    "verifyIdTokenAsync": [
+      "options"
+    ],
+    "getTokenInfo": [
+      "accessToken"
+    ],
+    "getFederatedSignonCerts": [
+      "callback"
+    ],
+    "getFederatedSignonCertsAsync": [],
+    "getIapPublicKeys": [
+      "callback"
+    ],
+    "getIapPublicKeysAsync": [],
+    "verifySignedJwtWithCerts": [],
+    "verifySignedJwtWithCertsAsync": [
+      "jwt",
+      "certs",
+      "requiredAudience",
+      "issuers",
+      "maxExpiry"
+    ],
+    "processAndValidateRefreshHandler": [],
+    "isTokenExpiring": []
+  },
+  "OAuthClientAuthHandler": {
+    "transporter": [],
+    "constructor": [
+      "options"
+    ],
+    "applyClientAuthenticationOptions": [
+      "opts",
+      "bearerToken"
+    ],
+    "injectAuthenticatedHeaders": [
+      "opts",
+      "bearerToken"
+    ],
+    "injectAuthenticatedRequestBody": [
+      "opts"
+    ],
+    "RETRY_CONFIG": []
+  },
+  "getErrorFromOAuthErrorResponse": [
+    "resp",
+    "err"
+  ],
+  "PassThroughClient": {
+    "request": [
+      "opts"
+    ],
+    "getAccessToken": [],
+    "getRequestHeaders": []
+  },
+  "PluggableAuthClient": {
+    "command": [],
+    "timeoutMillis": [],
+    "outputFile": [],
+    "handler": [],
+    "constructor": [
+      "options"
+    ],
+    "retrieveSubjectToken": []
+  },
+  "ExecutableError": {
+    "code": [],
+    "constructor": [
+      "message",
+      "code"
+    ]
+  },
+  "PluggableAuthHandler": {
+    "commandComponents": [],
+    "timeoutMillis": [],
+    "outputFile": [],
+    "constructor": [
+      "options"
+    ],
+    "retrieveResponseFromExecutable": [
+      "envMap"
+    ],
+    "retrieveCachedResponse": [],
+    "parseCommand": [
+      "command"
+    ]
+  },
+  "UserRefreshClient": {
+    "_refreshToken": [],
+    "constructor": [
+      "optionsOrClientId",
+      "clientSecret",
+      "refreshToken",
+      "eagerRefreshThresholdMillis",
+      "forceRefreshOnFailure"
+    ],
+    "refreshTokenNoCache": [],
+    "fetchIdToken": [
+      "targetAudience"
+    ],
+    "fromJSON": [
+      "json"
+    ],
+    "fromStream": [
+      "inputStream",
+      "callback"
+    ],
+    "fromStreamAsync": [
+      "inputStream"
+    ]
+  },
+  "StsCredentials": {
+    "constructor": [
+      "param",
+      "clientAuthentication"
+    ],
+    "exchangeToken": [
+      "stsCredentialsOptions",
+      "headers",
+      "options"
+    ]
+  },
+  "UrlSubjectTokenSupplier": {
+    "url": [],
+    "headers": [],
+    "formatType": [],
+    "subjectTokenFieldName": [],
+    "additionalGaxiosOptions": [],
+    "constructor": [
+      "opts"
+    ],
+    "getSubjectToken": [
+      "context"
+    ]
+  },
+  "BrowserCrypto": {
+    "constructor": [],
+    "sha256DigestBase64": [
+      "str"
+    ],
+    "randomBytesBase64": [
+      "count"
+    ],
+    "padBase64": [
+      "base64"
+    ],
+    "verify": [
+      "pubkey",
+      "data",
+      "signature"
+    ],
+    "sign": [
+      "privateKey",
+      "data"
+    ],
+    "decodeBase64StringUtf8": [
+      "base64"
+    ],
+    "encodeBase64StringUtf8": [
+      "text"
+    ],
+    "sha256DigestHex": [
+      "str"
+    ],
+    "signWithHmacSha256": [
+      "key",
+      "msg"
+    ]
+  },
+  "createCrypto": [],
+  "hasBrowserCrypto": [],
+  "NodeCrypto": {
+    "sha256DigestBase64": [
+      "str"
+    ],
+    "randomBytesBase64": [
+      "count"
+    ],
+    "verify": [
+      "pubkey",
+      "data",
+      "signature"
+    ],
+    "sign": [
+      "privateKey",
+      "data"
+    ],
+    "decodeBase64StringUtf8": [
+      "base64"
+    ],
+    "encodeBase64StringUtf8": [
+      "text"
+    ],
+    "sha256DigestHex": [
+      "str"
+    ],
+    "signWithHmacSha256": [
+      "key",
+      "msg"
+    ]
+  },
+  "toArrayBuffer": [
+    "buffer"
+  ],
+  "toBuffer": [
+    "arrayBuffer"
+  ],
+  "fromArrayBufferToHex": [
+    "arrayBuffer"
+  ],
+  "LRUCache": {
+    "capacity": [],
+    "maxAge": [],
+    "constructor": [
+      "options"
+    ],
+    "set": [
+      "key",
+      "value"
+    ],
+    "get": [
+      "key"
+    ]
+  },
+  "snakeToCamel": [
+    "str"
+  ],
+  "originalOrCamelOptions": [
+    "obj"
+  ],
+  "get": [
+    "key"
+  ],
+  "removeUndefinedValuesInObject": [
+    "object"
+  ],
+  "isValidFile": [
+    "filePath"
+  ],
+  "getWellKnownCertificateConfigFileLocation": [],
+  "_isWindows": []
+}

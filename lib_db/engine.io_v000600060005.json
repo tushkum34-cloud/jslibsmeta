@@ -1,0 +1,501 @@
+{
+  "listen": [
+    "port",
+    "options",
+    "listenCallback"
+  ],
+  "attach": [
+    "server",
+    "options"
+  ],
+  "hasBinary": [
+    "packets"
+  ],
+  "encodePacket": [
+    "packet",
+    "supportsBinary",
+    "utf8encode",
+    "callback"
+  ],
+  "encodeBuffer": [
+    "packet",
+    "supportsBinary",
+    "callback"
+  ],
+  "encodeBase64Packet": [
+    "packet",
+    "callback"
+  ],
+  "decodePacket": [
+    "data",
+    "binaryType",
+    "utf8decode"
+  ],
+  "tryDecode": [
+    "data"
+  ],
+  "decodeBase64Packet": [
+    "msg",
+    "binaryType"
+  ],
+  "encodePayload": [
+    "packets",
+    "supportsBinary",
+    "callback"
+  ],
+  "encodeOne": [
+    "packet",
+    "doneCallback"
+  ],
+  "setLengthHeader": [
+    "message"
+  ],
+  "map": [
+    "ary",
+    "each",
+    "done"
+  ],
+  "decodePayload": [
+    "data",
+    "binaryType",
+    "callback"
+  ],
+  "bufferToString": [
+    "buffer"
+  ],
+  "stringToBuffer": [
+    "string"
+  ],
+  "arrayBufferToBuffer": [
+    "data"
+  ],
+  "encodePayloadAsBinary": [
+    "packets",
+    "callback"
+  ],
+  "encodeOneBinaryPacket": [
+    "p",
+    "doneCallback"
+  ],
+  "onBinaryPacketEncode": [
+    "packet"
+  ],
+  "decodePayloadAsBinary": [
+    "data",
+    "binaryType",
+    "callback"
+  ],
+  "ucs2decode": [
+    "string"
+  ],
+  "ucs2encode": [
+    "array"
+  ],
+  "checkScalarValue": [
+    "codePoint",
+    "strict"
+  ],
+  "createByte": [
+    "codePoint",
+    "shift"
+  ],
+  "encodeCodePoint": [
+    "codePoint",
+    "strict"
+  ],
+  "utf8encode": [
+    "string",
+    "opts"
+  ],
+  "readContinuationByte": [],
+  "decodeSymbol": [
+    "strict"
+  ],
+  "utf8decode": [
+    "byteString",
+    "opts"
+  ],
+  "BaseServer": {
+    "constructor": [
+      "param"
+    ],
+    "_computePath": [
+      "options"
+    ],
+    "upgrades": [
+      "transport"
+    ],
+    "verify": [
+      "req",
+      "upgrade",
+      "fn"
+    ],
+    "use": [
+      "fn"
+    ],
+    "_applyMiddlewares": [
+      "req",
+      "res",
+      "callback"
+    ],
+    "close": [],
+    "generateId": [
+      "req"
+    ],
+    "handshake": [
+      "transportName",
+      "req",
+      "closeConnection"
+    ],
+    "onWebTransportSession": [
+      "session"
+    ]
+  },
+  "Server": {
+    "init": [],
+    "cleanup": [],
+    "prepare": [
+      "req"
+    ],
+    "createTransport": [
+      "transportName",
+      "req"
+    ],
+    "handleRequest": [
+      "req",
+      "res"
+    ],
+    "handleUpgrade": [
+      "req",
+      "socket",
+      "upgradeHead"
+    ],
+    "onWebSocket": [
+      "req",
+      "socket",
+      "websocket"
+    ],
+    "attach": [
+      "server",
+      "param"
+    ]
+  },
+  "parseSessionId": [
+    "data"
+  ],
+  "apply": [
+    "i"
+  ],
+  "WebSocketResponse": {
+    "constructor": [
+      "req",
+      "socket"
+    ],
+    "setHeader": [
+      "name",
+      "value"
+    ],
+    "getHeader": [
+      "name"
+    ],
+    "removeHeader": [
+      "name"
+    ],
+    "write": [],
+    "writeHead": [],
+    "end": []
+  },
+  "callback": [
+    "errorCode",
+    "errorContext"
+  ],
+  "closeConnection": [
+    "errorCode",
+    "errorContext"
+  ],
+  "onUpgradeError": [],
+  "check": [],
+  "abortRequest": [
+    "res",
+    "errorCode",
+    "errorContext"
+  ],
+  "abortUpgrade": [
+    "socket",
+    "errorCode",
+    "param"
+  ],
+  "checkInvalidHeaderChar": [
+    "val"
+  ],
+  "Socket": {
+    "readyState": [
+      "state"
+    ],
+    "constructor": [
+      "id",
+      "server",
+      "transport",
+      "req",
+      "protocol"
+    ],
+    "onOpen": [],
+    "onPacket": [
+      "packet"
+    ],
+    "onError": [
+      "err"
+    ],
+    "schedulePing": [],
+    "resetPingTimeout": [],
+    "setTransport": [
+      "transport"
+    ],
+    "onDrain": [],
+    "_maybeUpgrade": [
+      "transport"
+    ],
+    "clearTransport": [],
+    "onClose": [
+      "reason",
+      "description"
+    ],
+    "send": [
+      "data",
+      "options",
+      "callback"
+    ],
+    "write": [
+      "data",
+      "options",
+      "callback"
+    ],
+    "sendPacket": [
+      "type",
+      "data",
+      "param",
+      "callback"
+    ],
+    "flush": [],
+    "getAvailableUpgrades": [],
+    "close": [
+      "discard"
+    ],
+    "closeTransport": [
+      "discard"
+    ]
+  },
+  "onReady": [],
+  "onPacket": [
+    "packet"
+  ],
+  "cleanup": [],
+  "onError": [
+    "err"
+  ],
+  "onTransportClose": [],
+  "onClose": [],
+  "Transport": {
+    "readyState": [
+      "state"
+    ],
+    "constructor": [
+      "req"
+    ],
+    "discard": [],
+    "onRequest": [
+      "req"
+    ],
+    "close": [
+      "fn"
+    ],
+    "onError": [
+      "msg",
+      "desc"
+    ],
+    "onPacket": [
+      "packet"
+    ],
+    "onData": [
+      "data"
+    ],
+    "onClose": []
+  },
+  "noop": [],
+  "polling": [
+    "req"
+  ],
+  "JSONP": {
+    "constructor": [
+      "req"
+    ],
+    "onData": [
+      "data"
+    ],
+    "doWrite": [
+      "data",
+      "options",
+      "callback"
+    ]
+  },
+  "Polling": {
+    "constructor": [
+      "req"
+    ],
+    "name": [],
+    "onRequest": [
+      "req"
+    ],
+    "onPollRequest": [
+      "req",
+      "res"
+    ],
+    "onDataRequest": [
+      "req",
+      "res"
+    ],
+    "onDataRequestCleanup": [],
+    "onData": [
+      "data"
+    ],
+    "onClose": [],
+    "send": [
+      "packets"
+    ],
+    "write": [
+      "data",
+      "options"
+    ],
+    "doWrite": [
+      "data",
+      "options",
+      "callback"
+    ],
+    "compress": [
+      "data",
+      "encoding",
+      "callback"
+    ],
+    "doClose": [
+      "fn"
+    ],
+    "headers": [
+      "req",
+      "headers"
+    ]
+  },
+  "onData": [
+    "data"
+  ],
+  "onEnd": [
+    "buffer"
+  ],
+  "doWrite": [
+    "data"
+  ],
+  "respond": [
+    "data"
+  ],
+  "WebSocket": {
+    "constructor": [
+      "req"
+    ],
+    "name": [],
+    "handlesUpgrades": [],
+    "send": [
+      "packets"
+    ],
+    "doClose": [
+      "fn"
+    ]
+  },
+  "WebTransport": {
+    "constructor": [
+      "session",
+      "stream",
+      "reader"
+    ],
+    "name": [],
+    "send": [
+      "packets"
+    ],
+    "doClose": [
+      "fn"
+    ]
+  },
+  "send": [
+    "data"
+  ],
+  "uServer": {
+    "init": [],
+    "cleanup": [],
+    "prepare": [
+      "req",
+      "res"
+    ],
+    "createTransport": [
+      "transportName",
+      "req"
+    ],
+    "attach": [
+      "app",
+      "param"
+    ],
+    "_applyMiddlewares": [
+      "req",
+      "res",
+      "callback"
+    ],
+    "handleRequest": [
+      "res",
+      "req"
+    ],
+    "handleUpgrade": [
+      "res",
+      "req",
+      "context"
+    ],
+    "abortRequest": [
+      "res",
+      "errorCode",
+      "errorContext"
+    ]
+  },
+  "ResponseWrapper": {
+    "constructor": [
+      "res"
+    ],
+    "statusCode": [
+      "status"
+    ],
+    "writeHead": [
+      "status"
+    ],
+    "setHeader": [
+      "key",
+      "value"
+    ],
+    "removeHeader": [],
+    "getHeader": [],
+    "writeStatus": [
+      "status"
+    ],
+    "writeHeader": [
+      "key",
+      "value"
+    ],
+    "writeBufferedHeaders": [],
+    "end": [
+      "data"
+    ],
+    "onData": [
+      "fn"
+    ],
+    "onAborted": [
+      "fn"
+    ],
+    "cork": [
+      "fn"
+    ]
+  }
+}

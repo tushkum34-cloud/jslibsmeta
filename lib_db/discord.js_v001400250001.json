@@ -1,0 +1,4719 @@
+{
+  "BaseClient": {
+    "constructor": [
+      "param"
+    ],
+    "destroy": [],
+    "deleteWebhook": [
+      "id",
+      "param"
+    ],
+    "incrementMaxListeners": [],
+    "decrementMaxListeners": [],
+    "toJSON": [
+      "param"
+    ]
+  },
+  "Client": {
+    "constructor": [
+      "options"
+    ],
+    "emojis": [],
+    "readyAt": [],
+    "uptime": [],
+    "login": [
+      "param"
+    ],
+    "isReady": [],
+    "destroy": [],
+    "fetchInvite": [
+      "invite",
+      "options"
+    ],
+    "fetchGuildTemplate": [
+      "template"
+    ],
+    "fetchWebhook": [
+      "id",
+      "token"
+    ],
+    "fetchVoiceRegions": [],
+    "fetchSticker": [
+      "id"
+    ],
+    "fetchStickerPacks": [
+      "param"
+    ],
+    "fetchPremiumStickerPacks": [],
+    "fetchDefaultSoundboardSounds": [],
+    "fetchGuildPreview": [
+      "guild"
+    ],
+    "fetchGuildWidget": [
+      "guild"
+    ],
+    "generateInvite": [
+      "param"
+    ],
+    "toJSON": [],
+    "_censoredToken": [],
+    "_eval": [
+      "script"
+    ],
+    "_validateOptions": [
+      "param"
+    ]
+  },
+  "WebhookClient": {
+    "constructor": [
+      "data",
+      "options"
+    ],
+    "send": [],
+    "fetchMessage": [],
+    "editMessage": [],
+    "sendSlackMessage": [],
+    "edit": [],
+    "delete": [],
+    "deleteMessage": [],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "url": []
+  },
+  "GenericAction": {
+    "constructor": [
+      "client"
+    ],
+    "handle": [
+      "data"
+    ],
+    "getPayload": [
+      "data",
+      "manager",
+      "id",
+      "partialType",
+      "cache"
+    ],
+    "getChannel": [
+      "data"
+    ],
+    "getMessage": [
+      "data",
+      "channel",
+      "cache"
+    ],
+    "getPoll": [
+      "data",
+      "message",
+      "channel"
+    ],
+    "getReaction": [
+      "data",
+      "message",
+      "user"
+    ],
+    "getMember": [
+      "data",
+      "guild"
+    ],
+    "getUser": [
+      "data"
+    ],
+    "getUserFromMember": [
+      "data"
+    ],
+    "getScheduledEvent": [
+      "data",
+      "guild"
+    ],
+    "getThreadMember": [
+      "id",
+      "manager"
+    ],
+    "getSoundboardSound": [
+      "data",
+      "guild"
+    ],
+    "spreadInjectedData": [
+      "data"
+    ]
+  },
+  "ActionsManager": {
+    "injectedUser": [],
+    "injectedChannel": [],
+    "injectedMessage": [],
+    "constructor": [
+      "client"
+    ],
+    "load": [
+      "Action"
+    ]
+  },
+  "ApplicationCommandPermissionsUpdateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "AutoModerationActionExecutionAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "AutoModerationRuleCreateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "AutoModerationRuleDeleteAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "AutoModerationRuleUpdateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "ChannelCreateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "ChannelDeleteAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "ChannelUpdateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "EntitlementCreateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "EntitlementDeleteAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "EntitlementUpdateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildAuditLogEntryCreateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildBanAdd": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildBanRemove": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildChannelsPositionUpdate": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildDeleteAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildEmojiCreateAction": {
+    "handle": [
+      "guild",
+      "createdEmoji"
+    ]
+  },
+  "GuildEmojiDeleteAction": {
+    "handle": [
+      "emoji"
+    ]
+  },
+  "GuildEmojiUpdateAction": {
+    "handle": [
+      "current",
+      "data"
+    ]
+  },
+  "GuildEmojisUpdateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildIntegrationsUpdate": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildMemberRemoveAction": {
+    "handle": [
+      "data",
+      "shard"
+    ]
+  },
+  "GuildMemberUpdateAction": {
+    "handle": [
+      "data",
+      "shard"
+    ]
+  },
+  "GuildRoleCreate": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildRoleDeleteAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildRoleUpdateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildRolesPositionUpdate": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildScheduledEventCreateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildScheduledEventDeleteAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildScheduledEventUpdateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildScheduledEventUserAddAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildScheduledEventUserRemoveAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildSoundboardSoundDeleteAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildStickerCreateAction": {
+    "handle": [
+      "guild",
+      "createdSticker"
+    ]
+  },
+  "GuildStickerDeleteAction": {
+    "handle": [
+      "sticker"
+    ]
+  },
+  "GuildStickerUpdateAction": {
+    "handle": [
+      "current",
+      "data"
+    ]
+  },
+  "GuildStickersUpdateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "GuildUpdateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "InteractionCreateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "InviteCreateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "InviteDeleteAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "MessageCreateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "MessageDeleteAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "MessageDeleteBulkAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "MessagePollVoteAddAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "MessagePollVoteRemoveAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "MessageReactionAdd": {
+    "handle": [
+      "data",
+      "param"
+    ]
+  },
+  "MessageReactionRemove": {
+    "handle": [
+      "data"
+    ]
+  },
+  "MessageReactionRemoveAll": {
+    "handle": [
+      "data"
+    ]
+  },
+  "MessageReactionRemoveEmoji": {
+    "handle": [
+      "data"
+    ]
+  },
+  "MessageUpdateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "PresenceUpdateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "StageInstanceCreateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "StageInstanceDeleteAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "StageInstanceUpdateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "ThreadCreateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "ThreadDeleteAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "ThreadListSyncAction": {
+    "handle": [
+      "data"
+    ],
+    "removeStale": [
+      "channel"
+    ]
+  },
+  "ThreadMemberUpdateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "ThreadMembersUpdateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "TypingStart": {
+    "handle": [
+      "data"
+    ]
+  },
+  "UserUpdateAction": {
+    "handle": [
+      "data"
+    ]
+  },
+  "VoiceStateUpdate": {
+    "handle": [
+      "data"
+    ]
+  },
+  "WebhooksUpdate": {
+    "handle": [
+      "data"
+    ]
+  },
+  "ClientVoiceManager": {
+    "constructor": [
+      "client"
+    ],
+    "onVoiceServer": [
+      "payload"
+    ],
+    "onVoiceStateUpdate": [
+      "payload"
+    ]
+  },
+  "WebSocketManager": {
+    "constructor": [
+      "client"
+    ],
+    "ping": [],
+    "debug": [
+      "messages",
+      "shardId"
+    ],
+    "connect": [],
+    "attachEvents": [],
+    "broadcast": [
+      "packet"
+    ],
+    "destroy": [],
+    "handlePacket": [
+      "packet",
+      "shard"
+    ],
+    "checkShardsReady": [],
+    "triggerClientReady": []
+  },
+  "WebSocketShard": {
+    "constructor": [
+      "manager",
+      "id"
+    ],
+    "debug": [
+      "messages"
+    ],
+    "emitClose": [
+      "param"
+    ],
+    "onReadyPacket": [
+      "packet"
+    ],
+    "gotGuild": [
+      "guildId"
+    ],
+    "checkReady": [],
+    "send": [
+      "data",
+      "param"
+    ]
+  },
+  "makeDiscordjsError": [
+    "Base"
+  ],
+  "message": [
+    "code",
+    "args"
+  ],
+  "ApplicationCommandManager": {
+    "constructor": [
+      "client",
+      "iterable"
+    ],
+    "_add": [
+      "data",
+      "cache",
+      "guildId"
+    ],
+    "commandPath": [
+      "param"
+    ],
+    "fetch": [
+      "id",
+      "param"
+    ],
+    "create": [
+      "command",
+      "guildId"
+    ],
+    "set": [
+      "commands",
+      "guildId"
+    ],
+    "edit": [
+      "command",
+      "data",
+      "guildId"
+    ],
+    "delete": [
+      "command",
+      "guildId"
+    ],
+    "transformCommand": [
+      "command"
+    ]
+  },
+  "ApplicationCommandPermissionsManager": {
+    "constructor": [
+      "manager"
+    ],
+    "permissionsPath": [
+      "guildId",
+      "commandId"
+    ],
+    "fetch": [
+      "param"
+    ],
+    "set": [
+      "param"
+    ],
+    "add": [
+      "param"
+    ],
+    "remove": [
+      "param"
+    ],
+    "has": [
+      "param"
+    ],
+    "_validateOptions": [
+      "guild",
+      "command"
+    ]
+  },
+  "ApplicationEmojiManager": {
+    "constructor": [
+      "application",
+      "iterable"
+    ],
+    "_add": [
+      "data",
+      "cache"
+    ],
+    "create": [
+      "param"
+    ],
+    "fetch": [
+      "id",
+      "param"
+    ],
+    "delete": [
+      "emoji"
+    ],
+    "edit": [
+      "emoji",
+      "options"
+    ],
+    "fetchAuthor": [
+      "emoji"
+    ]
+  },
+  "AutoModerationRuleManager": {
+    "constructor": [
+      "guild",
+      "iterable"
+    ],
+    "_add": [
+      "data",
+      "cache"
+    ],
+    "create": [
+      "param"
+    ],
+    "edit": [
+      "autoModerationRule",
+      "param"
+    ],
+    "fetch": [
+      "options"
+    ],
+    "_fetchSingle": [
+      "param"
+    ],
+    "_fetchMany": [
+      "param"
+    ],
+    "delete": [
+      "autoModerationRule",
+      "reason"
+    ]
+  },
+  "BaseGuildEmojiManager": {
+    "constructor": [
+      "client",
+      "iterable"
+    ],
+    "resolve": [
+      "emoji"
+    ],
+    "resolveId": [
+      "emoji"
+    ],
+    "resolveIdentifier": [
+      "emoji"
+    ]
+  },
+  "BaseManager": {
+    "constructor": [
+      "client"
+    ]
+  },
+  "CachedManager": {
+    "constructor": [
+      "client",
+      "holds",
+      "iterable"
+    ],
+    "cache": [],
+    "_add": [
+      "data",
+      "param",
+      "param"
+    ]
+  },
+  "CategoryChannelChildManager": {
+    "constructor": [
+      "channel"
+    ],
+    "cache": [],
+    "guild": [],
+    "create": [
+      "options"
+    ]
+  },
+  "ChannelManager": {
+    "constructor": [
+      "client",
+      "iterable"
+    ],
+    "_add": [
+      "data",
+      "guild",
+      "param"
+    ],
+    "_remove": [
+      "id"
+    ],
+    "fetch": [
+      "id",
+      "param"
+    ]
+  },
+  "DMMessageManager": {},
+  "DataManager": {
+    "constructor": [
+      "client",
+      "holds"
+    ],
+    "cache": [],
+    "resolve": [
+      "idOrInstance"
+    ],
+    "resolveId": [
+      "idOrInstance"
+    ],
+    "valueOf": []
+  },
+  "EntitlementManager": {
+    "constructor": [
+      "client",
+      "iterable"
+    ],
+    "fetch": [
+      "options"
+    ],
+    "_fetchSingle": [
+      "param"
+    ],
+    "_fetchMany": [
+      "param"
+    ],
+    "createTest": [
+      "param"
+    ],
+    "deleteTest": [
+      "entitlement"
+    ],
+    "consume": [
+      "entitlementId"
+    ]
+  },
+  "GuildApplicationCommandManager": {
+    "constructor": [
+      "guild",
+      "iterable"
+    ]
+  },
+  "GuildBanManager": {
+    "constructor": [
+      "guild",
+      "iterable"
+    ],
+    "_add": [
+      "data",
+      "cache"
+    ],
+    "resolve": [
+      "ban"
+    ],
+    "fetch": [
+      "options"
+    ],
+    "_fetchSingle": [
+      "param"
+    ],
+    "_fetchMany": [
+      "param"
+    ],
+    "create": [
+      "user",
+      "param"
+    ],
+    "remove": [
+      "user",
+      "reason"
+    ],
+    "bulkCreate": [
+      "users",
+      "param"
+    ]
+  },
+  "GuildChannelManager": {
+    "constructor": [
+      "guild",
+      "iterable"
+    ],
+    "channelCountWithoutThreads": [],
+    "_add": [
+      "channel"
+    ],
+    "resolve": [
+      "channel"
+    ],
+    "resolveId": [
+      "channel"
+    ],
+    "addFollower": [
+      "channel",
+      "targetChannel",
+      "reason"
+    ],
+    "create": [
+      "param"
+    ],
+    "createWebhook": [
+      "param"
+    ],
+    "edit": [
+      "channel",
+      "options"
+    ],
+    "setPosition": [
+      "channel",
+      "position",
+      "param"
+    ],
+    "fetch": [
+      "id",
+      "param"
+    ],
+    "fetchWebhooks": [
+      "channel"
+    ],
+    "setPositions": [
+      "channelPositions"
+    ],
+    "fetchActiveThreads": [
+      "param"
+    ],
+    "rawFetchGuildActiveThreads": [],
+    "delete": [
+      "channel",
+      "reason"
+    ]
+  },
+  "GuildEmojiManager": {
+    "constructor": [
+      "guild",
+      "iterable"
+    ],
+    "_add": [
+      "data",
+      "cache"
+    ],
+    "create": [
+      "param"
+    ],
+    "fetch": [
+      "id",
+      "param"
+    ],
+    "delete": [
+      "emoji",
+      "reason"
+    ],
+    "edit": [
+      "emoji",
+      "options"
+    ],
+    "fetchAuthor": [
+      "emoji"
+    ]
+  },
+  "GuildEmojiRoleManager": {
+    "constructor": [
+      "emoji"
+    ],
+    "cache": [],
+    "add": [
+      "roleOrRoles"
+    ],
+    "remove": [
+      "roleOrRoles"
+    ],
+    "set": [
+      "roles"
+    ],
+    "clone": [],
+    "_patch": [
+      "roles"
+    ],
+    "valueOf": []
+  },
+  "GuildForumThreadManager": {
+    "create": [
+      "param"
+    ]
+  },
+  "GuildInviteManager": {
+    "constructor": [
+      "guild",
+      "iterable"
+    ],
+    "_add": [
+      "data",
+      "cache"
+    ],
+    "fetch": [
+      "options"
+    ],
+    "_fetchSingle": [
+      "param"
+    ],
+    "_fetchMany": [
+      "cache"
+    ],
+    "_fetchChannelMany": [
+      "channelId",
+      "cache"
+    ],
+    "create": [
+      "channel",
+      "param"
+    ],
+    "delete": [
+      "invite",
+      "reason"
+    ]
+  },
+  "GuildManager": {
+    "constructor": [
+      "client",
+      "iterable"
+    ],
+    "resolve": [
+      "guild"
+    ],
+    "resolveId": [
+      "guild"
+    ],
+    "create": [
+      "param"
+    ],
+    "fetch": [
+      "param"
+    ],
+    "fetchSoundboardSounds": [
+      "param"
+    ],
+    "setIncidentActions": [
+      "guild",
+      "param"
+    ],
+    "widgetImageURL": [
+      "guild",
+      "style"
+    ]
+  },
+  "handleGuild": [
+    "guild"
+  ],
+  "handler": [
+    "members",
+    "_",
+    "chunk"
+  ],
+  "GuildMemberManager": {
+    "constructor": [
+      "guild",
+      "iterable"
+    ],
+    "_add": [
+      "data",
+      "param"
+    ],
+    "resolve": [
+      "member"
+    ],
+    "resolveId": [
+      "member"
+    ],
+    "add": [
+      "user",
+      "options"
+    ],
+    "me": [],
+    "fetch": [
+      "options"
+    ],
+    "_fetchSingle": [
+      "param"
+    ],
+    "_fetchMany": [
+      "param"
+    ],
+    "fetchMe": [
+      "options"
+    ],
+    "search": [
+      "param"
+    ],
+    "list": [
+      "param"
+    ],
+    "edit": [
+      "user",
+      "param"
+    ],
+    "editMe": [
+      "param"
+    ],
+    "prune": [
+      "param"
+    ],
+    "kick": [
+      "user",
+      "reason"
+    ],
+    "ban": [
+      "user",
+      "options"
+    ],
+    "unban": [
+      "user",
+      "reason"
+    ],
+    "bulkBan": [
+      "users",
+      "param"
+    ],
+    "addRole": [
+      "options"
+    ],
+    "removeRole": [
+      "options"
+    ]
+  },
+  "cleanup": [],
+  "rateLimitHandler": [
+    "payload"
+  ],
+  "GuildMemberRoleManager": {
+    "constructor": [
+      "member"
+    ],
+    "cache": [],
+    "hoist": [],
+    "icon": [],
+    "color": [],
+    "highest": [],
+    "premiumSubscriberRole": [],
+    "botRole": [],
+    "add": [
+      "roleOrRoles",
+      "reason"
+    ],
+    "remove": [
+      "roleOrRoles",
+      "reason"
+    ],
+    "set": [
+      "roles",
+      "reason"
+    ],
+    "clone": []
+  },
+  "GuildMessageManager": {},
+  "GuildScheduledEventManager": {
+    "constructor": [
+      "guild",
+      "iterable"
+    ],
+    "create": [
+      "options"
+    ],
+    "fetch": [
+      "param"
+    ],
+    "edit": [
+      "guildScheduledEvent",
+      "options"
+    ],
+    "delete": [
+      "guildScheduledEvent"
+    ],
+    "fetchSubscribers": [
+      "guildScheduledEvent",
+      "param"
+    ]
+  },
+  "GuildSoundboardSoundManager": {
+    "constructor": [
+      "guild",
+      "iterable"
+    ],
+    "_add": [
+      "data",
+      "cache"
+    ],
+    "resolveId": [
+      "soundboardSound"
+    ],
+    "create": [
+      "param"
+    ],
+    "edit": [
+      "soundboardSound",
+      "param"
+    ],
+    "delete": [
+      "soundboardSound",
+      "reason"
+    ],
+    "fetch": [
+      "options"
+    ],
+    "_fetchSingle": [
+      "param"
+    ],
+    "_fetchMany": [
+      "param"
+    ]
+  },
+  "GuildStickerManager": {
+    "constructor": [
+      "guild",
+      "iterable"
+    ],
+    "_add": [
+      "data",
+      "cache"
+    ],
+    "create": [
+      "param"
+    ],
+    "edit": [
+      "sticker",
+      "param"
+    ],
+    "delete": [
+      "sticker",
+      "reason"
+    ],
+    "fetch": [
+      "id",
+      "param"
+    ],
+    "fetchUser": [
+      "sticker"
+    ]
+  },
+  "GuildTextThreadManager": {
+    "create": [
+      "param"
+    ]
+  },
+  "MessageManager": {
+    "MakeCacheOverrideSymbol": [],
+    "constructor": [
+      "channel",
+      "iterable"
+    ],
+    "_add": [
+      "data",
+      "cache"
+    ],
+    "fetch": [
+      "options"
+    ],
+    "_fetchSingle": [
+      "param"
+    ],
+    "_fetchMany": [
+      "param"
+    ],
+    "fetchPins": [
+      "param"
+    ],
+    "fetchPinned": [
+      "param"
+    ],
+    "edit": [
+      "message",
+      "options"
+    ],
+    "crosspost": [
+      "message"
+    ],
+    "pin": [
+      "message",
+      "reason"
+    ],
+    "unpin": [
+      "message",
+      "reason"
+    ],
+    "react": [
+      "message",
+      "emoji"
+    ],
+    "delete": [
+      "message"
+    ],
+    "endPoll": [
+      "messageId"
+    ],
+    "fetchPollAnswerVoters": [
+      "param"
+    ]
+  },
+  "PartialGroupDMMessageManager": {},
+  "PermissionOverwriteManager": {
+    "constructor": [
+      "channel",
+      "iterable"
+    ],
+    "_add": [
+      "data",
+      "cache"
+    ],
+    "set": [
+      "overwrites",
+      "reason"
+    ],
+    "upsert": [
+      "userOrRole",
+      "options",
+      "param",
+      "existing"
+    ],
+    "create": [
+      "userOrRole",
+      "options",
+      "overwriteOptions"
+    ],
+    "edit": [
+      "userOrRole",
+      "options",
+      "overwriteOptions"
+    ],
+    "delete": [
+      "userOrRole",
+      "reason"
+    ]
+  },
+  "PollAnswerVoterManager": {
+    "constructor": [
+      "answer"
+    ],
+    "fetch": [
+      "param"
+    ]
+  },
+  "PresenceManager": {
+    "constructor": [
+      "client",
+      "iterable"
+    ],
+    "_add": [
+      "data",
+      "cache"
+    ],
+    "resolve": [
+      "presence"
+    ],
+    "resolveId": [
+      "presence"
+    ]
+  },
+  "ReactionManager": {
+    "constructor": [
+      "message",
+      "iterable"
+    ],
+    "_add": [
+      "data",
+      "cache"
+    ],
+    "removeAll": []
+  },
+  "ReactionUserManager": {
+    "constructor": [
+      "reaction",
+      "iterable"
+    ],
+    "fetch": [
+      "param"
+    ],
+    "remove": [
+      "param"
+    ]
+  },
+  "RoleManager": {
+    "constructor": [
+      "guild",
+      "iterable"
+    ],
+    "_add": [
+      "data",
+      "cache"
+    ],
+    "fetch": [
+      "id",
+      "param"
+    ],
+    "create": [
+      "param"
+    ],
+    "edit": [
+      "role",
+      "options"
+    ],
+    "delete": [
+      "role",
+      "reason"
+    ],
+    "setPosition": [
+      "role",
+      "position",
+      "param"
+    ],
+    "setPositions": [
+      "rolePositions"
+    ],
+    "comparePositions": [
+      "role1",
+      "role2"
+    ],
+    "botRoleFor": [
+      "user"
+    ],
+    "everyone": [],
+    "premiumSubscriberRole": [],
+    "highest": []
+  },
+  "StageInstanceManager": {
+    "constructor": [
+      "guild",
+      "iterable"
+    ],
+    "create": [
+      "channel",
+      "options"
+    ],
+    "fetch": [
+      "channel",
+      "param"
+    ],
+    "edit": [
+      "channel",
+      "options"
+    ],
+    "delete": [
+      "channel"
+    ]
+  },
+  "SubscriptionManager": {
+    "constructor": [
+      "client",
+      "iterable"
+    ],
+    "fetch": [
+      "param"
+    ]
+  },
+  "ThreadManager": {
+    "MakeCacheOverrideSymbol": [],
+    "constructor": [
+      "channel",
+      "iterable"
+    ],
+    "_add": [
+      "thread"
+    ],
+    "fetch": [
+      "options",
+      "param"
+    ],
+    "fetchArchived": [
+      "param",
+      "param"
+    ],
+    "fetchActive": [
+      "param"
+    ],
+    "_mapThreads": [
+      "rawThreads",
+      "client",
+      "param"
+    ]
+  },
+  "ThreadMemberManager": {
+    "constructor": [
+      "thread",
+      "iterable"
+    ],
+    "_add": [
+      "data",
+      "param"
+    ],
+    "fetchMe": [
+      "options"
+    ],
+    "me": [],
+    "resolve": [
+      "member"
+    ],
+    "resolveId": [
+      "member"
+    ],
+    "add": [
+      "member",
+      "reason"
+    ],
+    "remove": [
+      "member",
+      "reason"
+    ],
+    "fetch": [
+      "options"
+    ],
+    "_fetchSingle": [
+      "param"
+    ],
+    "_fetchMany": [
+      "param"
+    ]
+  },
+  "UserManager": {
+    "constructor": [
+      "client",
+      "iterable"
+    ],
+    "dmChannel": [
+      "userId"
+    ],
+    "createDM": [
+      "user",
+      "param"
+    ],
+    "deleteDM": [
+      "user"
+    ],
+    "fetch": [
+      "user",
+      "param"
+    ],
+    "fetchFlags": [
+      "user",
+      "options"
+    ],
+    "send": [
+      "user",
+      "options"
+    ],
+    "resolve": [
+      "user"
+    ],
+    "resolveId": [
+      "user"
+    ]
+  },
+  "VoiceStateManager": {
+    "constructor": [
+      "guild",
+      "iterable"
+    ],
+    "_add": [
+      "data",
+      "param"
+    ],
+    "fetch": [
+      "member",
+      "param"
+    ]
+  },
+  "Shard": {
+    "constructor": [
+      "manager",
+      "id"
+    ],
+    "spawn": [
+      "param"
+    ],
+    "kill": [],
+    "respawn": [
+      "param"
+    ],
+    "send": [
+      "message"
+    ],
+    "fetchClientValue": [
+      "prop"
+    ],
+    "eval": [
+      "script",
+      "context"
+    ],
+    "_handleMessage": [
+      "message"
+    ],
+    "_handleExit": [
+      "param",
+      "timeout"
+    ],
+    "incrementMaxListeners": [
+      "emitter"
+    ],
+    "decrementMaxListeners": [
+      "emitter"
+    ]
+  },
+  "onReady": [],
+  "onDisconnect": [],
+  "onDeath": [],
+  "onTimeout": [],
+  "listener": [
+    "message"
+  ],
+  "ShardClientUtil": {
+    "constructor": [
+      "client",
+      "mode"
+    ],
+    "ids": [],
+    "count": [],
+    "send": [
+      "message"
+    ],
+    "fetchClientValues": [
+      "prop",
+      "shard"
+    ],
+    "broadcastEval": [
+      "script",
+      "param"
+    ],
+    "respawnAll": [
+      "param"
+    ],
+    "_handleMessage": [
+      "message"
+    ],
+    "_respond": [
+      "type",
+      "message"
+    ],
+    "singleton": [
+      "client",
+      "mode"
+    ],
+    "shardIdForGuildId": [
+      "guildId",
+      "shardCount"
+    ],
+    "incrementMaxListeners": [
+      "emitter"
+    ],
+    "decrementMaxListeners": [
+      "emitter"
+    ]
+  },
+  "ShardingManager": {
+    "constructor": [
+      "file",
+      "options"
+    ],
+    "createShard": [
+      "param"
+    ],
+    "spawn": [
+      "param"
+    ],
+    "broadcast": [
+      "message"
+    ],
+    "broadcastEval": [
+      "script",
+      "param"
+    ],
+    "fetchClientValues": [
+      "prop",
+      "shard"
+    ],
+    "_performOnShards": [
+      "method",
+      "args",
+      "shard"
+    ],
+    "respawnAll": [
+      "param"
+    ]
+  },
+  "ActionRow": {
+    "constructor": [
+      "param"
+    ],
+    "from": [],
+    "toJSON": []
+  },
+  "ActionRowBuilder": {
+    "constructor": [
+      "param"
+    ],
+    "from": [
+      "other"
+    ]
+  },
+  "AnonymousGuild": {
+    "constructor": [
+      "client",
+      "data",
+      "param"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "bannerURL": [
+      "param"
+    ],
+    "splashURL": [
+      "param"
+    ]
+  },
+  "ApplicationCommand": {
+    "constructor": [
+      "client",
+      "data",
+      "guild",
+      "guildId"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "manager": [],
+    "edit": [
+      "data"
+    ],
+    "setName": [
+      "name"
+    ],
+    "setNameLocalizations": [
+      "nameLocalizations"
+    ],
+    "setDescription": [
+      "description"
+    ],
+    "setDescriptionLocalizations": [
+      "descriptionLocalizations"
+    ],
+    "setDefaultMemberPermissions": [
+      "defaultMemberPermissions"
+    ],
+    "setDMPermission": [
+      "param"
+    ],
+    "setOptions": [
+      "options"
+    ],
+    "delete": [],
+    "equals": [
+      "command",
+      "param"
+    ],
+    "optionsEqual": [
+      "existing",
+      "options",
+      "param"
+    ],
+    "_optionEquals": [
+      "existing",
+      "option",
+      "param"
+    ],
+    "transformOption": [
+      "option",
+      "received"
+    ]
+  },
+  "ApplicationEmoji": {
+    "constructor": [
+      "client",
+      "data",
+      "application"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "fetchAuthor": [],
+    "edit": [
+      "options"
+    ],
+    "setName": [
+      "name"
+    ],
+    "delete": [],
+    "equals": [
+      "other"
+    ]
+  },
+  "ApplicationRoleConnectionMetadata": {
+    "constructor": [
+      "data"
+    ]
+  },
+  "Attachment": {
+    "constructor": [
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "spoiler": [],
+    "toJSON": []
+  },
+  "AttachmentBuilder": {
+    "constructor": [
+      "attachment",
+      "param"
+    ],
+    "setDescription": [
+      "description"
+    ],
+    "setFile": [
+      "attachment"
+    ],
+    "setName": [
+      "name"
+    ],
+    "setSpoiler": [
+      "param"
+    ],
+    "spoiler": [],
+    "toJSON": [],
+    "from": [
+      "other"
+    ]
+  },
+  "AutoModerationActionExecution": {
+    "constructor": [
+      "data",
+      "guild"
+    ],
+    "autoModerationRule": [],
+    "channel": [],
+    "user": [],
+    "member": []
+  },
+  "AutoModerationRule": {
+    "constructor": [
+      "client",
+      "data",
+      "guild"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "edit": [
+      "options"
+    ],
+    "delete": [
+      "reason"
+    ],
+    "setName": [
+      "name",
+      "reason"
+    ],
+    "setEventType": [
+      "eventType",
+      "reason"
+    ],
+    "setKeywordFilter": [
+      "keywordFilter",
+      "reason"
+    ],
+    "setRegexPatterns": [
+      "regexPatterns",
+      "reason"
+    ],
+    "setPresets": [
+      "presets",
+      "reason"
+    ],
+    "setAllowList": [
+      "allowList",
+      "reason"
+    ],
+    "setMentionTotalLimit": [
+      "mentionTotalLimit",
+      "reason"
+    ],
+    "setMentionRaidProtectionEnabled": [
+      "mentionRaidProtectionEnabled",
+      "reason"
+    ],
+    "setActions": [
+      "actions",
+      "reason"
+    ],
+    "setEnabled": [
+      "param",
+      "reason"
+    ],
+    "setExemptRoles": [
+      "exemptRoles",
+      "reason"
+    ],
+    "setExemptChannels": [
+      "exemptChannels",
+      "reason"
+    ]
+  },
+  "AutocompleteInteraction": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "command": [],
+    "respond": [
+      "options"
+    ]
+  },
+  "Base": {
+    "constructor": [
+      "client"
+    ],
+    "_clone": [],
+    "_patch": [
+      "data"
+    ],
+    "_update": [
+      "data"
+    ],
+    "toJSON": [
+      "param"
+    ],
+    "valueOf": []
+  },
+  "BaseChannel": {
+    "constructor": [
+      "client",
+      "data",
+      "param"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "url": [],
+    "partial": [],
+    "toString": [],
+    "delete": [],
+    "fetch": [
+      "param"
+    ],
+    "isThread": [],
+    "isTextBased": [],
+    "isDMBased": [],
+    "isVoiceBased": [],
+    "isThreadOnly": [],
+    "isSendable": [],
+    "toJSON": [
+      "param"
+    ]
+  },
+  "BaseGuild": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "nameAcronym": [],
+    "partnered": [],
+    "verified": [],
+    "iconURL": [
+      "param"
+    ],
+    "fetch": [],
+    "toString": []
+  },
+  "BaseGuildEmoji": {
+    "constructor": [
+      "client",
+      "data",
+      "guild"
+    ],
+    "_patch": [
+      "data"
+    ]
+  },
+  "BaseGuildTextChannel": {
+    "constructor": [
+      "guild",
+      "data",
+      "client"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "setDefaultAutoArchiveDuration": [
+      "defaultAutoArchiveDuration",
+      "reason"
+    ],
+    "setType": [
+      "type",
+      "reason"
+    ],
+    "setTopic": [
+      "topic",
+      "reason"
+    ],
+    "createInvite": [
+      "options"
+    ],
+    "fetchInvites": [
+      "param"
+    ],
+    "lastMessage": [],
+    "lastPinAt": [],
+    "send": [],
+    "sendTyping": [],
+    "createMessageCollector": [],
+    "awaitMessages": [],
+    "createMessageComponentCollector": [],
+    "awaitMessageComponent": [],
+    "bulkDelete": [],
+    "fetchWebhooks": [],
+    "createWebhook": [],
+    "setRateLimitPerUser": [],
+    "setNSFW": []
+  },
+  "BaseGuildVoiceChannel": {
+    "constructor": [
+      "guild",
+      "data",
+      "client"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "members": [],
+    "full": [],
+    "joinable": [],
+    "createInvite": [
+      "options"
+    ],
+    "fetchInvites": [
+      "param"
+    ],
+    "setBitrate": [
+      "bitrate",
+      "reason"
+    ],
+    "setRTCRegion": [
+      "rtcRegion",
+      "reason"
+    ],
+    "setUserLimit": [
+      "userLimit",
+      "reason"
+    ],
+    "setVideoQualityMode": [
+      "videoQualityMode",
+      "reason"
+    ],
+    "lastMessage": [],
+    "send": [],
+    "sendTyping": [],
+    "createMessageCollector": [],
+    "awaitMessages": [],
+    "createMessageComponentCollector": [],
+    "awaitMessageComponent": [],
+    "bulkDelete": [],
+    "fetchWebhooks": [],
+    "createWebhook": [],
+    "setRateLimitPerUser": [],
+    "setNSFW": []
+  },
+  "BaseInteraction": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "channel": [],
+    "guild": [],
+    "inGuild": [],
+    "inCachedGuild": [],
+    "inRawGuild": [],
+    "isAutocomplete": [],
+    "isCommand": [],
+    "isChatInputCommand": [],
+    "isContextMenuCommand": [],
+    "isPrimaryEntryPointCommand": [],
+    "isMessageComponent": [],
+    "isModalSubmit": [],
+    "isUserContextMenuCommand": [],
+    "isMessageContextMenuCommand": [],
+    "isButton": [],
+    "isSelectMenu": [],
+    "isAnySelectMenu": [],
+    "isStringSelectMenu": [],
+    "isUserSelectMenu": [],
+    "isRoleSelectMenu": [],
+    "isChannelSelectMenu": [],
+    "isMentionableSelectMenu": [],
+    "isRepliable": []
+  },
+  "BaseSelectMenuComponent": {
+    "placeholder": [],
+    "maxValues": [],
+    "minValues": [],
+    "customId": [],
+    "disabled": []
+  },
+  "ButtonBuilder": {
+    "constructor": [
+      "param"
+    ],
+    "setEmoji": [
+      "emoji"
+    ],
+    "from": [
+      "other"
+    ]
+  },
+  "ButtonComponent": {
+    "style": [],
+    "label": [],
+    "emoji": [],
+    "disabled": [],
+    "customId": [],
+    "url": []
+  },
+  "ButtonInteraction": {},
+  "CategoryChannel": {
+    "children": []
+  },
+  "ChannelSelectMenuBuilder": {
+    "constructor": [
+      "param"
+    ],
+    "from": [
+      "other"
+    ]
+  },
+  "ChannelSelectMenuComponent": {
+    "channelTypes": []
+  },
+  "ChannelSelectMenuInteraction": {
+    "constructor": [
+      "client",
+      "data"
+    ]
+  },
+  "ChatInputCommandInteraction": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "toString": []
+  },
+  "ClientApplication": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "guild": [],
+    "partial": [],
+    "edit": [
+      "param"
+    ],
+    "fetch": [],
+    "fetchRoleConnectionMetadataRecords": [],
+    "editRoleConnectionMetadataRecords": [
+      "records"
+    ],
+    "fetchSKUs": []
+  },
+  "ClientPresence": {
+    "constructor": [
+      "client",
+      "param"
+    ],
+    "set": [
+      "presence"
+    ],
+    "_parse": [
+      "param"
+    ]
+  },
+  "ClientUser": {
+    "_patch": [
+      "data"
+    ],
+    "presence": [],
+    "edit": [
+      "param"
+    ],
+    "setUsername": [
+      "username"
+    ],
+    "setAvatar": [
+      "avatar"
+    ],
+    "setBanner": [
+      "banner"
+    ],
+    "setPresence": [
+      "data"
+    ],
+    "setStatus": [
+      "status",
+      "shardId"
+    ],
+    "setActivity": [
+      "name",
+      "param"
+    ],
+    "setAFK": [
+      "param",
+      "shardId"
+    ]
+  },
+  "CommandInteraction": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "command": [],
+    "transformOption": [
+      "option",
+      "resolved"
+    ],
+    "deferReply": [],
+    "reply": [],
+    "fetchReply": [],
+    "editReply": [],
+    "deleteReply": [],
+    "followUp": [],
+    "launchActivity": [],
+    "showModal": [],
+    "sendPremiumRequired": [],
+    "awaitModalSubmit": []
+  },
+  "CommandInteractionOptionResolver": {
+    "constructor": [
+      "client",
+      "options",
+      "resolved"
+    ],
+    "get": [
+      "name",
+      "param"
+    ],
+    "_getTypedOption": [
+      "name",
+      "allowedTypes",
+      "properties",
+      "required"
+    ],
+    "getSubcommand": [
+      "param"
+    ],
+    "getSubcommandGroup": [
+      "param"
+    ],
+    "getBoolean": [
+      "name",
+      "param"
+    ],
+    "getChannel": [
+      "name",
+      "param",
+      "param"
+    ],
+    "getString": [
+      "name",
+      "param"
+    ],
+    "getInteger": [
+      "name",
+      "param"
+    ],
+    "getNumber": [
+      "name",
+      "param"
+    ],
+    "getUser": [
+      "name",
+      "param"
+    ],
+    "getMember": [
+      "name"
+    ],
+    "getRole": [
+      "name",
+      "param"
+    ],
+    "getAttachment": [
+      "name",
+      "param"
+    ],
+    "getMentionable": [
+      "name",
+      "param"
+    ],
+    "getMessage": [
+      "name",
+      "param"
+    ],
+    "getFocused": [
+      "param"
+    ]
+  },
+  "Component": {
+    "constructor": [
+      "data"
+    ],
+    "id": [],
+    "type": [],
+    "equals": [
+      "other"
+    ],
+    "toJSON": []
+  },
+  "ContainerComponent": {
+    "constructor": [
+      "param"
+    ],
+    "accentColor": [],
+    "hexAccentColor": [],
+    "spoiler": [],
+    "toJSON": []
+  },
+  "ContextMenuCommandInteraction": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "resolveContextMenuOptions": [
+      "param"
+    ]
+  },
+  "DMChannel": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "partial": [],
+    "recipient": [],
+    "fetch": [
+      "param"
+    ],
+    "toString": [],
+    "lastMessage": [],
+    "lastPinAt": [],
+    "send": [],
+    "sendTyping": [],
+    "createMessageCollector": [],
+    "awaitMessages": [],
+    "createMessageComponentCollector": [],
+    "awaitMessageComponent": []
+  },
+  "DirectoryChannel": {
+    "constructor": [
+      "guild",
+      "data",
+      "client"
+    ],
+    "_patch": [
+      "data"
+    ]
+  },
+  "Embed": {
+    "constructor": [
+      "data"
+    ],
+    "fields": [],
+    "title": [],
+    "description": [],
+    "url": [],
+    "color": [],
+    "timestamp": [],
+    "thumbnail": [],
+    "image": [],
+    "video": [],
+    "author": [],
+    "provider": [],
+    "footer": [],
+    "length": [],
+    "hexColor": [],
+    "toJSON": [],
+    "equals": [
+      "other"
+    ]
+  },
+  "EmbedBuilder": {
+    "constructor": [
+      "data"
+    ],
+    "setColor": [
+      "color"
+    ],
+    "from": [
+      "other"
+    ],
+    "length": []
+  },
+  "Emoji": {
+    "constructor": [
+      "client",
+      "emoji"
+    ],
+    "identifier": [],
+    "imageURL": [
+      "options"
+    ],
+    "url": [],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "toString": [],
+    "toJSON": []
+  },
+  "Entitlement": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "guild": [],
+    "startsAt": [],
+    "endsAt": [],
+    "isActive": [],
+    "isTest": [],
+    "isUserSubscription": [],
+    "isGuildSubscription": [],
+    "fetchUser": [],
+    "consume": []
+  },
+  "FileComponent": {
+    "constructor": [
+      "param"
+    ],
+    "spoiler": [],
+    "toJSON": []
+  },
+  "ForumChannel": {
+    "_patch": [
+      "data"
+    ],
+    "setDefaultForumLayout": [
+      "defaultForumLayout",
+      "reason"
+    ]
+  },
+  "Guild": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "shard": [],
+    "_patch": [
+      "data"
+    ],
+    "joinedAt": [],
+    "discoverySplashURL": [
+      "param"
+    ],
+    "fetchOwner": [
+      "options"
+    ],
+    "afkChannel": [],
+    "systemChannel": [],
+    "widgetChannel": [],
+    "rulesChannel": [],
+    "publicUpdatesChannel": [],
+    "safetyAlertsChannel": [],
+    "maximumBitrate": [],
+    "fetchIntegrations": [],
+    "fetchTemplates": [],
+    "fetchWelcomeScreen": [],
+    "createTemplate": [
+      "name",
+      "description"
+    ],
+    "fetchPreview": [],
+    "fetchVanityData": [],
+    "fetchWebhooks": [],
+    "fetchWidget": [],
+    "fetchWidgetSettings": [],
+    "widgetImageURL": [
+      "style"
+    ],
+    "fetchAuditLogs": [
+      "param"
+    ],
+    "fetchOnboarding": [],
+    "edit": [
+      "param"
+    ],
+    "editOnboarding": [
+      "options"
+    ],
+    "editWelcomeScreen": [
+      "options"
+    ],
+    "setExplicitContentFilter": [
+      "explicitContentFilter",
+      "reason"
+    ],
+    "setDefaultMessageNotifications": [
+      "defaultMessageNotifications",
+      "reason"
+    ],
+    "setSystemChannelFlags": [
+      "systemChannelFlags",
+      "reason"
+    ],
+    "setName": [
+      "name",
+      "reason"
+    ],
+    "setVerificationLevel": [
+      "verificationLevel",
+      "reason"
+    ],
+    "setAFKChannel": [
+      "afkChannel",
+      "reason"
+    ],
+    "setSystemChannel": [
+      "systemChannel",
+      "reason"
+    ],
+    "setAFKTimeout": [
+      "afkTimeout",
+      "reason"
+    ],
+    "setIcon": [
+      "icon",
+      "reason"
+    ],
+    "setOwner": [
+      "owner",
+      "reason"
+    ],
+    "setSplash": [
+      "splash",
+      "reason"
+    ],
+    "setDiscoverySplash": [
+      "discoverySplash",
+      "reason"
+    ],
+    "setBanner": [
+      "banner",
+      "reason"
+    ],
+    "setRulesChannel": [
+      "rulesChannel",
+      "reason"
+    ],
+    "setPublicUpdatesChannel": [
+      "publicUpdatesChannel",
+      "reason"
+    ],
+    "setPreferredLocale": [
+      "preferredLocale",
+      "reason"
+    ],
+    "setPremiumProgressBarEnabled": [
+      "param",
+      "reason"
+    ],
+    "setSafetyAlertsChannel": [
+      "safetyAlertsChannel",
+      "reason"
+    ],
+    "setWidgetSettings": [
+      "settings",
+      "reason"
+    ],
+    "setMFALevel": [
+      "level",
+      "reason"
+    ],
+    "leave": [],
+    "delete": [],
+    "disableInvites": [
+      "param"
+    ],
+    "setIncidentActions": [
+      "incidentActions"
+    ],
+    "equals": [
+      "guild"
+    ],
+    "toJSON": [],
+    "voiceAdapterCreator": [],
+    "_sortedRoles": [],
+    "_sortedChannels": [
+      "channel"
+    ]
+  },
+  "GuildAuditLogs": {
+    "constructor": [
+      "guild",
+      "data"
+    ],
+    "toJSON": []
+  },
+  "changesReduce": [
+    "changes",
+    "param"
+  ],
+  "GuildAuditLogsEntry": {
+    "Targets": [],
+    "constructor": [
+      "guild",
+      "data",
+      "logs"
+    ],
+    "targetType": [
+      "target"
+    ],
+    "actionType": [
+      "action"
+    ],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "toJSON": []
+  },
+  "GuildBan": {
+    "constructor": [
+      "client",
+      "data",
+      "guild"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "partial": [],
+    "fetch": [
+      "param"
+    ]
+  },
+  "GuildChannel": {
+    "constructor": [
+      "guild",
+      "data",
+      "client",
+      "param"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "_clone": [],
+    "parent": [],
+    "permissionsLocked": [],
+    "position": [],
+    "permissionsFor": [
+      "memberOrRole",
+      "param"
+    ],
+    "overwritesFor": [
+      "member",
+      "param",
+      "param"
+    ],
+    "memberPermissions": [
+      "member",
+      "checkAdmin"
+    ],
+    "rolePermissions": [
+      "role",
+      "checkAdmin"
+    ],
+    "lockPermissions": [],
+    "members": [],
+    "edit": [
+      "options"
+    ],
+    "setName": [
+      "name",
+      "reason"
+    ],
+    "setParent": [
+      "channel",
+      "param"
+    ],
+    "setPosition": [
+      "position",
+      "param"
+    ],
+    "clone": [
+      "param"
+    ],
+    "equals": [
+      "channel"
+    ],
+    "deletable": [],
+    "manageable": [],
+    "viewable": [],
+    "delete": [
+      "reason"
+    ]
+  },
+  "GuildEmoji": {
+    "constructor": [
+      "client",
+      "data",
+      "guild"
+    ],
+    "_clone": [],
+    "_patch": [
+      "data"
+    ],
+    "deletable": [],
+    "roles": [],
+    "fetchAuthor": [],
+    "edit": [
+      "options"
+    ],
+    "setName": [
+      "name",
+      "reason"
+    ],
+    "delete": [
+      "reason"
+    ],
+    "equals": [
+      "other"
+    ]
+  },
+  "GuildMember": {
+    "constructor": [
+      "client",
+      "data",
+      "guild"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "_clone": [],
+    "partial": [],
+    "roles": [],
+    "voice": [],
+    "avatarURL": [
+      "param"
+    ],
+    "avatarDecorationURL": [],
+    "bannerURL": [
+      "param"
+    ],
+    "displayAvatarURL": [
+      "options"
+    ],
+    "displayBannerURL": [
+      "options"
+    ],
+    "displayAvatarDecorationURL": [],
+    "joinedAt": [],
+    "communicationDisabledUntil": [],
+    "premiumSince": [],
+    "presence": [],
+    "displayColor": [],
+    "displayHexColor": [],
+    "id": [],
+    "dmChannel": [],
+    "displayName": [],
+    "permissions": [],
+    "manageable": [],
+    "kickable": [],
+    "bannable": [],
+    "moderatable": [],
+    "isCommunicationDisabled": [],
+    "permissionsIn": [
+      "channel"
+    ],
+    "edit": [
+      "options"
+    ],
+    "setFlags": [
+      "flags",
+      "reason"
+    ],
+    "setNickname": [
+      "nick",
+      "reason"
+    ],
+    "createDM": [
+      "param"
+    ],
+    "deleteDM": [],
+    "kick": [
+      "reason"
+    ],
+    "ban": [
+      "options"
+    ],
+    "disableCommunicationUntil": [
+      "communicationDisabledUntil",
+      "reason"
+    ],
+    "timeout": [
+      "timeout",
+      "reason"
+    ],
+    "fetch": [
+      "param"
+    ],
+    "equals": [
+      "member"
+    ],
+    "toString": [],
+    "toJSON": []
+  },
+  "GuildOnboarding": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "guild": []
+  },
+  "GuildOnboardingPrompt": {
+    "constructor": [
+      "client",
+      "data",
+      "guildId"
+    ],
+    "guild": []
+  },
+  "GuildOnboardingPromptOption": {
+    "constructor": [
+      "client",
+      "data",
+      "guildId"
+    ],
+    "guild": [],
+    "emoji": []
+  },
+  "GuildPreview": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "splashURL": [
+      "param"
+    ],
+    "discoverySplashURL": [
+      "param"
+    ],
+    "iconURL": [
+      "param"
+    ],
+    "fetch": [],
+    "toString": [],
+    "toJSON": []
+  },
+  "GuildPreviewEmoji": {
+    "constructor": [
+      "client",
+      "data",
+      "guild"
+    ]
+  },
+  "GuildScheduledEvent": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "partial": [],
+    "coverImageURL": [
+      "param"
+    ],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "scheduledStartAt": [],
+    "scheduledEndAt": [],
+    "channel": [],
+    "guild": [],
+    "url": [],
+    "createInviteURL": [
+      "options"
+    ],
+    "edit": [
+      "options"
+    ],
+    "fetch": [
+      "param"
+    ],
+    "delete": [],
+    "setName": [
+      "name",
+      "reason"
+    ],
+    "setScheduledStartTime": [
+      "scheduledStartTime",
+      "reason"
+    ],
+    "setScheduledEndTime": [
+      "scheduledEndTime",
+      "reason"
+    ],
+    "setDescription": [
+      "description",
+      "reason"
+    ],
+    "setStatus": [
+      "status",
+      "reason"
+    ],
+    "setLocation": [
+      "location",
+      "reason"
+    ],
+    "fetchSubscribers": [
+      "options"
+    ],
+    "toString": [],
+    "isActive": [],
+    "isCanceled": [],
+    "isCompleted": [],
+    "isScheduled": []
+  },
+  "GuildTemplate": {
+    "GuildTemplatesPattern": [],
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "createGuild": [
+      "name",
+      "icon"
+    ],
+    "edit": [
+      "param"
+    ],
+    "delete": [],
+    "sync": [],
+    "createdAt": [],
+    "updatedAt": [],
+    "guild": [],
+    "url": [],
+    "toString": []
+  },
+  "resolveGuild": [
+    "guild"
+  ],
+  "Integration": {
+    "constructor": [
+      "client",
+      "data",
+      "guild"
+    ],
+    "syncedAt": [],
+    "roles": [],
+    "_patch": [
+      "data"
+    ],
+    "delete": [
+      "reason"
+    ],
+    "toJSON": []
+  },
+  "IntegrationApplication": {
+    "_patch": [
+      "data"
+    ]
+  },
+  "InteractionCallback": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "createdTimestamp": [],
+    "createdAt": []
+  },
+  "InteractionCallbackResource": {
+    "constructor": [
+      "client",
+      "data"
+    ]
+  },
+  "InteractionCallbackResponse": {
+    "constructor": [
+      "client",
+      "data"
+    ]
+  },
+  "InteractionCollector": {
+    "constructor": [
+      "client",
+      "param"
+    ],
+    "collect": [
+      "interaction"
+    ],
+    "dispose": [
+      "interaction"
+    ],
+    "empty": [],
+    "endReason": [],
+    "_handleMessageDeletion": [
+      "message"
+    ],
+    "_handleChannelDeletion": [
+      "channel"
+    ],
+    "_handleThreadDeletion": [
+      "thread"
+    ],
+    "_handleGuildDeletion": [
+      "guild"
+    ]
+  },
+  "bulkDeleteListener": [
+    "messages"
+  ],
+  "InteractionResponse": {
+    "constructor": [
+      "interaction",
+      "id"
+    ],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "awaitMessageComponent": [
+      "param"
+    ],
+    "createMessageComponentCollector": [
+      "param"
+    ],
+    "fetch": [],
+    "delete": [],
+    "edit": [
+      "options"
+    ]
+  },
+  "InteractionWebhook": {
+    "constructor": [
+      "client",
+      "id",
+      "token"
+    ],
+    "send": [],
+    "fetchMessage": [],
+    "editMessage": [],
+    "deleteMessage": [],
+    "url": []
+  },
+  "Invite": {
+    "InvitesPattern": [],
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "createdAt": [],
+    "deletable": [],
+    "expiresTimestamp": [],
+    "expiresAt": [],
+    "inviter": [],
+    "url": [],
+    "delete": [
+      "reason"
+    ],
+    "toString": [],
+    "toJSON": [],
+    "valueOf": []
+  },
+  "InviteGuild": {
+    "constructor": [
+      "client",
+      "data"
+    ]
+  },
+  "InviteStageInstance": {
+    "constructor": [
+      "client",
+      "data",
+      "channelId",
+      "guildId"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "channel": [],
+    "guild": []
+  },
+  "LabelComponent": {
+    "constructor": [
+      "param"
+    ],
+    "label": [],
+    "description": [],
+    "toJSON": []
+  },
+  "MediaChannel": {},
+  "MediaGalleryComponent": {
+    "constructor": [
+      "param"
+    ],
+    "toJSON": []
+  },
+  "MediaGalleryItem": {
+    "constructor": [
+      "param"
+    ],
+    "description": [],
+    "spoiler": [],
+    "toJSON": []
+  },
+  "MentionableSelectMenuBuilder": {
+    "constructor": [
+      "param"
+    ],
+    "from": [
+      "other"
+    ]
+  },
+  "MentionableSelectMenuComponent": {},
+  "MentionableSelectMenuInteraction": {
+    "constructor": [
+      "client",
+      "data"
+    ]
+  },
+  "Message": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "channel": [],
+    "partial": [],
+    "member": [],
+    "createdAt": [],
+    "editedAt": [],
+    "guild": [],
+    "hasThread": [],
+    "thread": [],
+    "url": [],
+    "cleanContent": [],
+    "createReactionCollector": [
+      "param"
+    ],
+    "awaitReactions": [
+      "param"
+    ],
+    "createMessageComponentCollector": [
+      "param"
+    ],
+    "awaitMessageComponent": [
+      "param"
+    ],
+    "editable": [],
+    "deletable": [],
+    "bulkDeletable": [],
+    "pinnable": [],
+    "fetchReference": [],
+    "crosspostable": [],
+    "edit": [
+      "options"
+    ],
+    "crosspost": [],
+    "pin": [
+      "reason"
+    ],
+    "unpin": [
+      "reason"
+    ],
+    "react": [
+      "emoji"
+    ],
+    "delete": [],
+    "reply": [
+      "options"
+    ],
+    "forward": [
+      "channel"
+    ],
+    "startThread": [
+      "param"
+    ],
+    "fetch": [
+      "param"
+    ],
+    "fetchWebhook": [],
+    "suppressEmbeds": [
+      "param"
+    ],
+    "removeAttachments": [],
+    "resolveComponent": [
+      "customId"
+    ],
+    "equals": [
+      "message",
+      "rawData"
+    ],
+    "inGuild": [],
+    "toString": [],
+    "toJSON": []
+  },
+  "MessageCollector": {
+    "constructor": [
+      "channel",
+      "param"
+    ],
+    "collect": [
+      "message"
+    ],
+    "dispose": [
+      "message"
+    ],
+    "endReason": [],
+    "_handleChannelDeletion": [
+      "channel"
+    ],
+    "_handleThreadDeletion": [
+      "thread"
+    ],
+    "_handleGuildDeletion": [
+      "guild"
+    ]
+  },
+  "MessageComponentInteraction": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "component": [],
+    "deferReply": [],
+    "reply": [],
+    "fetchReply": [],
+    "editReply": [],
+    "deleteReply": [],
+    "followUp": [],
+    "deferUpdate": [],
+    "update": [],
+    "launchActivity": [],
+    "showModal": [],
+    "sendPremiumRequired": [],
+    "awaitModalSubmit": []
+  },
+  "MessageContextMenuCommandInteraction": {
+    "targetMessage": []
+  },
+  "MessageMentions": {
+    "EveryonePattern": [],
+    "UsersPattern": [],
+    "RolesPattern": [],
+    "ChannelsPattern": [],
+    "GlobalChannelsPattern": [],
+    "GlobalUsersPattern": [],
+    "constructor": [
+      "message",
+      "users",
+      "roles",
+      "everyone",
+      "crosspostedChannels",
+      "repliedUser"
+    ],
+    "members": [],
+    "channels": [],
+    "parsedUsers": [],
+    "has": [
+      "data",
+      "param"
+    ],
+    "toJSON": []
+  },
+  "MessagePayload": {
+    "constructor": [
+      "target",
+      "options"
+    ],
+    "isWebhook": [],
+    "isUser": [],
+    "isMessage": [],
+    "isMessageManager": [],
+    "isInteraction": [],
+    "makeContent": [],
+    "resolveBody": [],
+    "resolveFiles": [],
+    "resolveFile": [
+      "fileLike"
+    ],
+    "create": [
+      "target",
+      "options",
+      "param"
+    ]
+  },
+  "findName": [
+    "thing"
+  ],
+  "MessageReaction": {
+    "constructor": [
+      "client",
+      "data",
+      "message"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "react": [],
+    "remove": [],
+    "emoji": [],
+    "partial": [],
+    "fetch": [],
+    "toJSON": [],
+    "valueOf": [],
+    "_add": [
+      "user",
+      "burst"
+    ],
+    "_remove": [
+      "user",
+      "burst"
+    ]
+  },
+  "ModalBuilder": {
+    "constructor": [
+      "param"
+    ],
+    "from": [
+      "other"
+    ]
+  },
+  "ModalSubmitFields": {
+    "constructor": [
+      "components",
+      "resolved"
+    ],
+    "getField": [
+      "customId",
+      "type"
+    ],
+    "_getTypedComponent": [
+      "customId",
+      "allowedTypes",
+      "properties",
+      "required"
+    ],
+    "getTextInputValue": [
+      "customId"
+    ],
+    "getStringSelectValues": [
+      "customId"
+    ],
+    "getSelectedUsers": [
+      "customId",
+      "param"
+    ],
+    "getSelectedRoles": [
+      "customId",
+      "param"
+    ],
+    "getSelectedChannels": [
+      "customId",
+      "param",
+      "param"
+    ],
+    "getSelectedMembers": [
+      "customId"
+    ],
+    "getSelectedMentionables": [
+      "customId",
+      "param"
+    ],
+    "getUploadedFiles": [
+      "customId",
+      "param"
+    ]
+  },
+  "ModalSubmitInteraction": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "transformComponent": [
+      "rawComponent",
+      "resolved",
+      "param"
+    ],
+    "isFromMessage": [],
+    "deferReply": [],
+    "reply": [],
+    "fetchReply": [],
+    "editReply": [],
+    "deleteReply": [],
+    "followUp": [],
+    "deferUpdate": [],
+    "update": [],
+    "sendPremiumRequired": [],
+    "launchActivity": []
+  },
+  "NewsChannel": {
+    "addFollower": [
+      "channel",
+      "reason"
+    ]
+  },
+  "OAuth2Guild": {
+    "constructor": [
+      "client",
+      "data"
+    ]
+  },
+  "PartialGroupDMChannel": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "iconURL": [
+      "param"
+    ],
+    "fetchOwner": [
+      "options"
+    ],
+    "delete": [],
+    "fetch": [],
+    "lastMessage": [],
+    "lastPinAt": [],
+    "createMessageComponentCollector": [],
+    "awaitMessageComponent": []
+  },
+  "PermissionOverwrites": {
+    "constructor": [
+      "client",
+      "data",
+      "channel"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "edit": [
+      "options",
+      "reason"
+    ],
+    "delete": [
+      "reason"
+    ],
+    "toJSON": [],
+    "resolveOverwriteOptions": [
+      "options",
+      "param"
+    ],
+    "resolve": [
+      "overwrite",
+      "guild"
+    ]
+  },
+  "Poll": {
+    "constructor": [
+      "client",
+      "data",
+      "message",
+      "channel"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "expiresAt": [],
+    "partial": [],
+    "fetch": [],
+    "end": []
+  },
+  "PollAnswer": {
+    "constructor": [
+      "client",
+      "data",
+      "poll"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "emoji": [],
+    "partial": [],
+    "fetchVoters": [
+      "param"
+    ]
+  },
+  "Presence": {
+    "constructor": [
+      "client",
+      "param"
+    ],
+    "user": [],
+    "member": [],
+    "_patch": [
+      "data"
+    ],
+    "_clone": [],
+    "equals": [
+      "presence"
+    ],
+    "toJSON": []
+  },
+  "Activity": {
+    "constructor": [
+      "presence",
+      "data"
+    ],
+    "equals": [
+      "activity"
+    ],
+    "createdAt": [],
+    "toString": [],
+    "_clone": []
+  },
+  "RichPresenceAssets": {
+    "constructor": [
+      "activity",
+      "assets"
+    ],
+    "smallImageURL": [
+      "param"
+    ],
+    "largeImageURL": [
+      "param"
+    ]
+  },
+  "PrimaryEntryPointCommandInteraction": {},
+  "ReactionCollector": {
+    "constructor": [
+      "message",
+      "param"
+    ],
+    "collect": [
+      "reaction"
+    ],
+    "dispose": [
+      "reaction",
+      "user"
+    ],
+    "empty": [],
+    "endReason": [],
+    "_handleMessageDeletion": [
+      "message"
+    ],
+    "_handleChannelDeletion": [
+      "channel"
+    ],
+    "_handleThreadDeletion": [
+      "thread"
+    ],
+    "_handleGuildDeletion": [
+      "guild"
+    ],
+    "key": [
+      "reaction"
+    ]
+  },
+  "ReactionEmoji": {
+    "constructor": [
+      "reaction",
+      "emoji"
+    ],
+    "toJSON": [],
+    "valueOf": []
+  },
+  "Role": {
+    "constructor": [
+      "client",
+      "data",
+      "guild"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "hexColor": [],
+    "members": [],
+    "editable": [],
+    "position": [],
+    "comparePositionTo": [
+      "role"
+    ],
+    "edit": [
+      "options"
+    ],
+    "permissionsIn": [
+      "channel",
+      "param"
+    ],
+    "setName": [
+      "name",
+      "reason"
+    ],
+    "setColor": [
+      "color",
+      "reason"
+    ],
+    "setColors": [
+      "colors",
+      "reason"
+    ],
+    "setHoist": [
+      "param",
+      "reason"
+    ],
+    "setPermissions": [
+      "permissions",
+      "reason"
+    ],
+    "setMentionable": [
+      "param",
+      "reason"
+    ],
+    "setIcon": [
+      "icon",
+      "reason"
+    ],
+    "setUnicodeEmoji": [
+      "unicodeEmoji",
+      "reason"
+    ],
+    "setPosition": [
+      "position",
+      "param"
+    ],
+    "delete": [
+      "reason"
+    ],
+    "iconURL": [
+      "param"
+    ],
+    "equals": [
+      "role"
+    ],
+    "toString": [],
+    "toJSON": []
+  },
+  "RoleSelectMenuBuilder": {
+    "constructor": [
+      "param"
+    ],
+    "from": [
+      "other"
+    ]
+  },
+  "RoleSelectMenuComponent": {},
+  "RoleSelectMenuInteraction": {
+    "constructor": [
+      "client",
+      "data"
+    ]
+  },
+  "SKU": {
+    "constructor": [
+      "client",
+      "data"
+    ]
+  },
+  "SectionComponent": {
+    "constructor": [
+      "param"
+    ],
+    "toJSON": []
+  },
+  "SelectMenuBuilder": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "SelectMenuComponent": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "SelectMenuInteraction": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "SelectMenuOptionBuilder": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "SeparatorComponent": {
+    "spacing": [],
+    "divider": []
+  },
+  "SoundboardSound": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "emoji": [],
+    "guild": [],
+    "url": [],
+    "edit": [
+      "options"
+    ],
+    "delete": [
+      "reason"
+    ],
+    "equals": [
+      "other"
+    ]
+  },
+  "StageChannel": {
+    "_patch": [
+      "data"
+    ],
+    "stageInstance": [],
+    "createStageInstance": [
+      "options"
+    ],
+    "setTopic": [
+      "topic",
+      "reason"
+    ]
+  },
+  "StageInstance": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "channel": [],
+    "guild": [],
+    "guildScheduledEvent": [],
+    "edit": [
+      "options"
+    ],
+    "delete": [],
+    "setTopic": [
+      "topic"
+    ],
+    "createdTimestamp": [],
+    "createdAt": []
+  },
+  "Sticker": {
+    "constructor": [
+      "client",
+      "sticker"
+    ],
+    "_patch": [
+      "sticker"
+    ],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "partial": [],
+    "guild": [],
+    "url": [],
+    "fetch": [],
+    "fetchPack": [],
+    "fetchUser": [],
+    "edit": [
+      "options"
+    ],
+    "delete": [
+      "reason"
+    ],
+    "equals": [
+      "other"
+    ]
+  },
+  "StickerPack": {
+    "constructor": [
+      "client",
+      "pack"
+    ],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "coverSticker": [],
+    "bannerURL": [
+      "param"
+    ]
+  },
+  "StringSelectMenuBuilder": {
+    "constructor": [
+      "param"
+    ],
+    "normalizeEmoji": [
+      "selectMenuOption"
+    ],
+    "addOptions": [
+      "param"
+    ],
+    "setOptions": [
+      "param"
+    ],
+    "from": [
+      "other"
+    ]
+  },
+  "StringSelectMenuComponent": {
+    "options": []
+  },
+  "StringSelectMenuInteraction": {
+    "constructor": [
+      "client",
+      "data"
+    ]
+  },
+  "StringSelectMenuOptionBuilder": {
+    "constructor": [
+      "param"
+    ],
+    "setEmoji": [
+      "emoji"
+    ],
+    "from": [
+      "other"
+    ]
+  },
+  "Subscription": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "canceledAt": [],
+    "currentPeriodStartAt": [],
+    "currentPeriodEndAt": []
+  },
+  "Team": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "owner": [],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "iconURL": [
+      "param"
+    ],
+    "toString": [],
+    "toJSON": []
+  },
+  "TeamMember": {
+    "constructor": [
+      "team",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "id": [],
+    "toString": []
+  },
+  "TextChannel": {
+    "_patch": [
+      "data"
+    ],
+    "setRateLimitPerUser": [
+      "rateLimitPerUser",
+      "reason"
+    ]
+  },
+  "TextDisplayComponent": {
+    "content": []
+  },
+  "TextInputBuilder": {
+    "constructor": [
+      "data"
+    ],
+    "from": [
+      "other"
+    ]
+  },
+  "TextInputComponent": {
+    "customId": [],
+    "value": []
+  },
+  "ThreadChannel": {
+    "constructor": [
+      "guild",
+      "data",
+      "client"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "createdTimestamp": [],
+    "guildMembers": [],
+    "archivedAt": [],
+    "createdAt": [],
+    "parent": [],
+    "join": [],
+    "leave": [],
+    "permissionsFor": [
+      "memberOrRole",
+      "checkAdmin"
+    ],
+    "fetchOwner": [
+      "options"
+    ],
+    "fetchStarterMessage": [
+      "options"
+    ],
+    "edit": [
+      "options"
+    ],
+    "setArchived": [
+      "param",
+      "reason"
+    ],
+    "setAutoArchiveDuration": [
+      "autoArchiveDuration",
+      "reason"
+    ],
+    "setInvitable": [
+      "param",
+      "reason"
+    ],
+    "setLocked": [
+      "param",
+      "reason"
+    ],
+    "setName": [
+      "name",
+      "reason"
+    ],
+    "setRateLimitPerUser": [
+      "rateLimitPerUser",
+      "reason"
+    ],
+    "setAppliedTags": [
+      "appliedTags",
+      "reason"
+    ],
+    "pin": [
+      "reason"
+    ],
+    "unpin": [
+      "reason"
+    ],
+    "joined": [],
+    "editable": [],
+    "joinable": [],
+    "manageable": [],
+    "viewable": [],
+    "sendable": [],
+    "unarchivable": [],
+    "delete": [
+      "reason"
+    ],
+    "lastMessage": [],
+    "lastPinAt": [],
+    "send": [],
+    "sendTyping": [],
+    "createMessageCollector": [],
+    "awaitMessages": [],
+    "createMessageComponentCollector": [],
+    "awaitMessageComponent": [],
+    "bulkDelete": []
+  },
+  "ThreadMember": {
+    "constructor": [
+      "thread",
+      "data",
+      "param"
+    ],
+    "_patch": [
+      "data",
+      "param"
+    ],
+    "partial": [],
+    "guildMember": [],
+    "joinedAt": [],
+    "user": [],
+    "manageable": [],
+    "remove": [
+      "reason"
+    ]
+  },
+  "ThreadOnlyChannel": {
+    "constructor": [
+      "guild",
+      "data",
+      "client"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "setAvailableTags": [
+      "availableTags",
+      "reason"
+    ],
+    "setDefaultReactionEmoji": [
+      "defaultReactionEmoji",
+      "reason"
+    ],
+    "setDefaultThreadRateLimitPerUser": [
+      "defaultThreadRateLimitPerUser",
+      "reason"
+    ],
+    "createInvite": [
+      "options"
+    ],
+    "fetchInvites": [
+      "cache"
+    ],
+    "setDefaultAutoArchiveDuration": [
+      "defaultAutoArchiveDuration",
+      "reason"
+    ],
+    "setTopic": [
+      "topic",
+      "reason"
+    ],
+    "setDefaultSortOrder": [
+      "defaultSortOrder",
+      "reason"
+    ],
+    "createWebhook": [],
+    "fetchWebhooks": [],
+    "setNSFW": [],
+    "setRateLimitPerUser": []
+  },
+  "ThumbnailComponent": {
+    "constructor": [
+      "param"
+    ],
+    "description": [],
+    "spoiler": [],
+    "toJSON": []
+  },
+  "Typing": {
+    "constructor": [
+      "channel",
+      "user",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "inGuild": [],
+    "startedAt": [],
+    "guild": [],
+    "member": []
+  },
+  "UnfurledMediaItem": {
+    "constructor": [
+      "data"
+    ],
+    "url": [],
+    "toJSON": []
+  },
+  "User": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "partial": [],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "avatarURL": [
+      "param"
+    ],
+    "avatarDecorationURL": [
+      "param"
+    ],
+    "defaultAvatarURL": [],
+    "displayAvatarURL": [
+      "options"
+    ],
+    "hexAccentColor": [],
+    "bannerURL": [
+      "param"
+    ],
+    "guildTagBadgeURL": [
+      "param"
+    ],
+    "tag": [],
+    "displayName": [],
+    "dmChannel": [],
+    "createDM": [
+      "param"
+    ],
+    "deleteDM": [],
+    "equals": [
+      "user"
+    ],
+    "_equals": [
+      "user"
+    ],
+    "fetchFlags": [
+      "param"
+    ],
+    "fetch": [
+      "param"
+    ],
+    "toString": [],
+    "toJSON": [
+      "param"
+    ]
+  },
+  "UserContextMenuCommandInteraction": {
+    "targetUser": [],
+    "targetMember": []
+  },
+  "UserSelectMenuBuilder": {
+    "constructor": [
+      "param"
+    ],
+    "from": [
+      "other"
+    ]
+  },
+  "UserSelectMenuComponent": {},
+  "UserSelectMenuInteraction": {
+    "constructor": [
+      "client",
+      "data"
+    ]
+  },
+  "VoiceChannel": {
+    "joinable": [],
+    "speakable": [],
+    "sendSoundboardSound": [
+      "sound"
+    ]
+  },
+  "VoiceChannelEffect": {
+    "constructor": [
+      "data",
+      "guild"
+    ],
+    "channel": [],
+    "soundboardSound": []
+  },
+  "VoiceRegion": {
+    "constructor": [
+      "data"
+    ],
+    "toJSON": []
+  },
+  "VoiceState": {
+    "constructor": [
+      "guild",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "member": [],
+    "channel": [],
+    "deaf": [],
+    "mute": [],
+    "setMute": [
+      "param",
+      "reason"
+    ],
+    "setDeaf": [
+      "param",
+      "reason"
+    ],
+    "disconnect": [
+      "reason"
+    ],
+    "setChannel": [
+      "channel",
+      "reason"
+    ],
+    "edit": [
+      "options"
+    ],
+    "fetch": [
+      "param"
+    ],
+    "setRequestToSpeak": [
+      "param"
+    ],
+    "setSuppressed": [
+      "param"
+    ],
+    "toJSON": []
+  },
+  "Webhook": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "channel": [],
+    "send": [
+      "options"
+    ],
+    "sendSlackMessage": [
+      "body"
+    ],
+    "edit": [
+      "param"
+    ],
+    "fetchMessage": [
+      "message",
+      "param"
+    ],
+    "editMessage": [
+      "message",
+      "options"
+    ],
+    "delete": [
+      "reason"
+    ],
+    "deleteMessage": [
+      "message",
+      "threadId"
+    ],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "url": [],
+    "avatarURL": [
+      "param"
+    ],
+    "isUserCreated": [],
+    "isApplicationCreated": [],
+    "isChannelFollower": [],
+    "isIncoming": [],
+    "applyToClass": [
+      "structure",
+      "param"
+    ]
+  },
+  "WelcomeChannel": {
+    "constructor": [
+      "guild",
+      "data"
+    ],
+    "channel": [],
+    "emoji": []
+  },
+  "WelcomeScreen": {
+    "constructor": [
+      "guild",
+      "data"
+    ],
+    "enabled": []
+  },
+  "Widget": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "fetch": [],
+    "imageURL": [
+      "style"
+    ]
+  },
+  "WidgetMember": {
+    "constructor": [
+      "client",
+      "data"
+    ]
+  },
+  "Application": {
+    "constructor": [
+      "client",
+      "data"
+    ],
+    "_patch": [
+      "data"
+    ],
+    "createdTimestamp": [],
+    "createdAt": [],
+    "iconURL": [
+      "param"
+    ],
+    "coverURL": [
+      "param"
+    ],
+    "toString": [],
+    "toJSON": []
+  },
+  "Collector": {
+    "constructor": [
+      "client",
+      "param"
+    ],
+    "lastCollectedAt": [],
+    "handleCollect": [
+      "param"
+    ],
+    "handleDispose": [
+      "param"
+    ],
+    "next": [],
+    "stop": [
+      "param"
+    ],
+    "resetTimer": [
+      "param"
+    ],
+    "checkEnd": [],
+    "toJSON": [],
+    "endReason": [],
+    "collect": [],
+    "dispose": []
+  },
+  "onCollect": [
+    "param"
+  ],
+  "onEnd": [],
+  "tick": [],
+  "InteractionResponses": {
+    "deferReply": [
+      "param"
+    ],
+    "reply": [
+      "options"
+    ],
+    "fetchReply": [
+      "param"
+    ],
+    "editReply": [
+      "options"
+    ],
+    "deleteReply": [
+      "param"
+    ],
+    "followUp": [
+      "options"
+    ],
+    "deferUpdate": [
+      "param"
+    ],
+    "update": [
+      "options"
+    ],
+    "launchActivity": [
+      "param"
+    ],
+    "showModal": [
+      "modal",
+      "param"
+    ],
+    "sendPremiumRequired": [],
+    "awaitModalSubmit": [
+      "options"
+    ],
+    "applyToClass": [
+      "structure",
+      "param"
+    ]
+  },
+  "TextBasedChannel": {
+    "constructor": [],
+    "lastMessage": [],
+    "lastPinAt": [],
+    "send": [
+      "options"
+    ],
+    "sendTyping": [],
+    "createMessageCollector": [
+      "param"
+    ],
+    "awaitMessages": [
+      "param"
+    ],
+    "createMessageComponentCollector": [
+      "param"
+    ],
+    "awaitMessageComponent": [
+      "param"
+    ],
+    "bulkDelete": [
+      "messages",
+      "param"
+    ],
+    "fetchWebhooks": [],
+    "createWebhook": [
+      "options"
+    ],
+    "setRateLimitPerUser": [
+      "rateLimitPerUser",
+      "reason"
+    ],
+    "setNSFW": [
+      "param",
+      "reason"
+    ],
+    "applyToClass": [
+      "structure",
+      "param",
+      "param"
+    ]
+  },
+  "ActivityFlagsBitField": {
+    "Flags": []
+  },
+  "ApplicationFlagsBitField": {
+    "Flags": []
+  },
+  "AttachmentFlagsBitField": {
+    "Flags": []
+  },
+  "BitField": {
+    "Flags": [],
+    "DefaultBit": [],
+    "constructor": [
+      "param"
+    ],
+    "any": [
+      "bit"
+    ],
+    "equals": [
+      "bit"
+    ],
+    "has": [
+      "bit"
+    ],
+    "missing": [
+      "bits",
+      "param"
+    ],
+    "freeze": [],
+    "add": [
+      "param"
+    ],
+    "remove": [
+      "param"
+    ],
+    "serialize": [
+      "param"
+    ],
+    "toArray": [
+      "param"
+    ],
+    "toJSON": [],
+    "valueOf": [],
+    "resolve": [
+      "bit"
+    ]
+  },
+  "ChannelFlagsBitField": {
+    "Flags": []
+  },
+  "createChannel": [
+    "client",
+    "data",
+    "guild",
+    "param"
+  ],
+  "transformAPIGuildForumTag": [
+    "tag"
+  ],
+  "transformGuildForumTag": [
+    "tag"
+  ],
+  "transformAPIGuildDefaultReaction": [
+    "defaultReaction"
+  ],
+  "transformGuildDefaultReaction": [
+    "defaultReaction"
+  ],
+  "createComponent": [
+    "data"
+  ],
+  "createComponentBuilder": [
+    "data"
+  ],
+  "extractInteractiveComponents": [
+    "component"
+  ],
+  "findComponentByCustomId": [
+    "components",
+    "customId"
+  ],
+  "resolveCode": [
+    "data",
+    "regex"
+  ],
+  "resolveInviteCode": [
+    "data"
+  ],
+  "resolveGuildTemplateCode": [
+    "data"
+  ],
+  "resolveFile": [
+    "resource"
+  ],
+  "resolveBase64": [
+    "data",
+    "param"
+  ],
+  "resolveImage": [
+    "image"
+  ],
+  "createEnum": [
+    "keys"
+  ],
+  "Formatters": {
+    "blockQuote": [],
+    "bold": [],
+    "channelMention": [],
+    "codeBlock": [],
+    "formatEmoji": [],
+    "hideLinkEmbed": [],
+    "hyperlink": [],
+    "inlineCode": [],
+    "italic": [],
+    "quote": [],
+    "roleMention": [],
+    "spoiler": [],
+    "strikethrough": [],
+    "time": [],
+    "TimestampStyles": [],
+    "underscore": [],
+    "userMention": []
+  },
+  "GuildMemberFlagsBitField": {
+    "Flags": []
+  },
+  "IntentsBitField": {
+    "Flags": []
+  },
+  "InviteFlagsBitField": {
+    "Flags": []
+  },
+  "LimitedCollection": {
+    "constructor": [
+      "param",
+      "iterable"
+    ],
+    "set": [
+      "key",
+      "value"
+    ]
+  },
+  "MessageFlagsBitField": {
+    "Flags": []
+  },
+  "Options": {
+    "userAgentAppendix": [],
+    "createDefault": [],
+    "cacheWithLimits": [
+      "param"
+    ],
+    "cacheEverything": [],
+    "DefaultMakeCacheSettings": [],
+    "DefaultSweeperSettings": []
+  },
+  "PermissionsBitField": {
+    "Flags": [],
+    "All": [],
+    "Default": [],
+    "StageModerator": [],
+    "DefaultBit": [],
+    "missing": [
+      "bits",
+      "param"
+    ],
+    "any": [
+      "permission",
+      "param"
+    ],
+    "has": [
+      "permission",
+      "param"
+    ],
+    "toArray": []
+  },
+  "RoleFlagsBitField": {
+    "Flags": []
+  },
+  "SKUFlagsBitField": {
+    "Flags": []
+  },
+  "Sweepers": {
+    "constructor": [
+      "client",
+      "options"
+    ],
+    "sweepApplicationCommands": [
+      "filter"
+    ],
+    "sweepAutoModerationRules": [
+      "filter"
+    ],
+    "sweepBans": [
+      "filter"
+    ],
+    "sweepEmojis": [
+      "filter"
+    ],
+    "sweepEntitlements": [
+      "filter"
+    ],
+    "sweepInvites": [
+      "filter"
+    ],
+    "sweepGuildMembers": [
+      "filter"
+    ],
+    "sweepMessages": [
+      "filter"
+    ],
+    "sweepPresences": [
+      "filter"
+    ],
+    "sweepReactions": [
+      "filter"
+    ],
+    "sweepStageInstances": [
+      "filter"
+    ],
+    "sweepStickers": [
+      "filter"
+    ],
+    "sweepThreadMembers": [
+      "filter"
+    ],
+    "sweepThreads": [
+      "filter"
+    ],
+    "sweepUsers": [
+      "filter"
+    ],
+    "sweepVoiceStates": [
+      "filter"
+    ],
+    "destroy": [],
+    "filterByLifetime": [
+      "param"
+    ],
+    "archivedThreadSweepFilter": [
+      "param"
+    ],
+    "expiredInviteSweepFilter": [
+      "param"
+    ],
+    "outdatedMessageSweepFilter": [
+      "param"
+    ],
+    "_sweepGuildDirectProp": [
+      "key",
+      "filter",
+      "param"
+    ],
+    "_validateProperties": [
+      "key"
+    ],
+    "_initInterval": [
+      "intervalKey",
+      "sweepKey",
+      "opts"
+    ]
+  },
+  "SystemChannelFlagsBitField": {
+    "Flags": []
+  },
+  "ThreadMemberFlagsBitField": {
+    "Flags": []
+  },
+  "toSnakeCase": [
+    "obj"
+  ],
+  "_transformAPIAutoModerationAction": [
+    "autoModerationAction"
+  ],
+  "_transformAPIMessageInteractionMetadata": [
+    "client",
+    "messageInteractionMetadata"
+  ],
+  "_transformGuildScheduledEventRecurrenceRule": [
+    "recurrenceRule"
+  ],
+  "_transformAPIIncidentsData": [
+    "data"
+  ],
+  "_transformCollectibles": [
+    "collectibles"
+  ],
+  "UserFlagsBitField": {
+    "Flags": []
+  },
+  "isObject": [
+    "d"
+  ],
+  "flatten": [
+    "obj",
+    "param"
+  ],
+  "fetchRecommendedShardCount": [
+    "token",
+    "param"
+  ],
+  "parseEmoji": [
+    "text"
+  ],
+  "resolvePartialEmoji": [
+    "emoji"
+  ],
+  "makeError": [
+    "obj"
+  ],
+  "makePlainError": [
+    "err"
+  ],
+  "getSortableGroupTypes": [
+    "type"
+  ],
+  "moveElementInArray": [
+    "array",
+    "element",
+    "newIndex",
+    "param"
+  ],
+  "verifyString": [
+    "data",
+    "param",
+    "param",
+    "param"
+  ],
+  "resolveColor": [
+    "color"
+  ],
+  "discordSort": [
+    "collection"
+  ],
+  "setPosition": [
+    "item",
+    "position",
+    "relative",
+    "sorted",
+    "client",
+    "route",
+    "reason"
+  ],
+  "basename": [
+    "path",
+    "ext"
+  ],
+  "cleanContent": [
+    "str",
+    "channel"
+  ],
+  "cleanCodeBlockContent": [
+    "text"
+  ],
+  "parseWebhookURL": [
+    "url"
+  ],
+  "transformResolved": [
+    "param",
+    "param"
+  ],
+  "resolveSKUId": [
+    "resolvable"
+  ],
+  "emitDeprecationWarningForUserFetchFlags": [
+    "name"
+  ],
+  "emitDeprecationWarningForRemoveThreadMember": [
+    "name"
+  ]
+}

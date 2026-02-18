@@ -1,0 +1,756 @@
+{
+  "findClosestParentOfType": [
+    "node",
+    "types"
+  ],
+  "containsOnlyIdentifiers": [
+    "node"
+  ],
+  "isCallback": [
+    "node"
+  ],
+  "isCallbackExpression": [
+    "node",
+    "parentNode"
+  ],
+  "getStaticPropertyName": [
+    "node"
+  ],
+  "isAssignee": [
+    "node"
+  ],
+  "getTopAssignment": [
+    "leafNode"
+  ],
+  "createAssignmentList": [
+    "nodes"
+  ],
+  "getModuleExportsNodes": [
+    "scope"
+  ],
+  "getExportsNodes": [
+    "scope"
+  ],
+  "getReplacementForProperty": [
+    "property",
+    "sourceCode"
+  ],
+  "isModuleExportsObjectAssignment": [
+    "node"
+  ],
+  "isModuleExportsReference": [
+    "node"
+  ],
+  "fixModuleExports": [
+    "node",
+    "sourceCode",
+    "fixer"
+  ],
+  "getLocation": [
+    "node"
+  ],
+  "enforceModuleExports": [
+    "globalScope"
+  ],
+  "enforceExports": [
+    "globalScope"
+  ],
+  "getExistingExtensions": [
+    "filePath",
+    "basename"
+  ],
+  "getIndexExtension": [
+    "directoryPath",
+    "tryExtensions"
+  ],
+  "verify": [
+    "param"
+  ],
+  "findReference": [
+    "scope",
+    "node"
+  ],
+  "isShadowed": [
+    "scope",
+    "node"
+  ],
+  "isPattern": [
+    "stringToCheck"
+  ],
+  "matchesConfiguredErrorName": [
+    "name"
+  ],
+  "getParameters": [
+    "scope"
+  ],
+  "checkForError": [
+    "node"
+  ],
+  "isNodeShebang": [
+    "shebang",
+    "executableName"
+  ],
+  "getExpectedExecutableName": [
+    "context"
+  ],
+  "getShebangInfo": [
+    "sourceCode"
+  ],
+  "couldBeError": [
+    "node"
+  ],
+  "toReplaceMessage": [
+    "replacedBy",
+    "version"
+  ],
+  "toName": [
+    "type",
+    "path"
+  ],
+  "parseOptions": [
+    "context"
+  ],
+  "reportItem": [
+    "node",
+    "name",
+    "info"
+  ],
+  "isExports": [
+    "node",
+    "scope"
+  ],
+  "isModuleExports": [
+    "node",
+    "scope"
+  ],
+  "getDeclarationType": [
+    "initExpression"
+  ],
+  "inferModuleType": [
+    "initExpression"
+  ],
+  "isMixed": [
+    "declarations"
+  ],
+  "isGrouped": [
+    "declarations"
+  ],
+  "collectFirstCharsOfTemplateElement": [
+    "node",
+    "i",
+    "sepNodes",
+    "globalScope",
+    "outNextChars"
+  ],
+  "collectFirstChars": [
+    "node",
+    "sepNodes",
+    "globalScope",
+    "outNextChars"
+  ],
+  "isPathSeparator": [
+    "c"
+  ],
+  "isConcat": [
+    "node",
+    "sepNodes",
+    "globalScope"
+  ],
+  "isMemberExpresion": [
+    "node"
+  ],
+  "hasHashbang": [
+    "context"
+  ],
+  "ignore": [
+    "context"
+  ],
+  "firstMatchToUpper": [
+    "_match",
+    "first"
+  ],
+  "normalizeScope": [
+    "initialScope",
+    "node"
+  ],
+  "isStrict": [
+    "context",
+    "node"
+  ],
+  "defineVisitor": [
+    "context",
+    "options"
+  ],
+  "isBuiltin": [
+    "name"
+  ],
+  "isStringLiteral": [
+    "node"
+  ],
+  "isEnablingThisRule": [
+    "context",
+    "moduleStyle"
+  ],
+  "isValidRequireArgument": [
+    "node"
+  ],
+  "validate": [
+    "node",
+    "context",
+    "moduleStyle"
+  ],
+  "isProcess": [
+    "node"
+  ],
+  "safeRequire": [
+    "param"
+  ],
+  "forwardCurrentToHead": [
+    "analyzer",
+    "node"
+  ],
+  "isProcessExit": [
+    "node"
+  ],
+  "overrideLeaveNode": [
+    "node"
+  ],
+  "CodePathAnalyzer": {
+    "constructor": [
+      "eventGenerator"
+    ],
+    "original": [],
+    "emitter": [],
+    "codePath": [],
+    "idGenerator": [],
+    "currentNode": [],
+    "onLooped": [
+      "fromSegment",
+      "toSegment"
+    ],
+    "enterNode": [
+      "node"
+    ],
+    "leaveNode": [
+      "node"
+    ]
+  },
+  "CodePathSegment": {
+    "newRoot": [
+      "id"
+    ],
+    "newNext": [
+      "id",
+      "allPrevSegments"
+    ],
+    "newUnreachable": [
+      "id",
+      "allPrevSegments"
+    ],
+    "newDisconnected": [
+      "id",
+      "allPrevSegments"
+    ],
+    "markUsed": [
+      "segment"
+    ],
+    "markPrevSegmentAsLooped": [
+      "segment",
+      "prevSegment"
+    ],
+    "flattenUnusedSegments": [
+      "segments"
+    ],
+    "constructor": [
+      "id",
+      "allPrevSegments",
+      "reachable"
+    ],
+    "id": [],
+    "nextSegments": [],
+    "prevSegments": [],
+    "allNextSegments": [],
+    "allPrevSegments": [],
+    "reachable": [],
+    "isLoopedPrevSegment": [
+      "segment"
+    ]
+  },
+  "CodePathState": {
+    "constructor": [
+      "idGenerator",
+      "onLooped"
+    ],
+    "idGenerator": [],
+    "notifyLooped": [],
+    "forkContext": [],
+    "choiceContext": [],
+    "switchContext": [],
+    "tryContext": [],
+    "loopContext": [],
+    "breakContext": [],
+    "chainContext": [],
+    "currentSegments": [],
+    "initialSegment": [],
+    "finalSegments": [],
+    "returnedForkContext": [],
+    "thrownForkContext": [],
+    "headSegments": [],
+    "parentForkContext": [],
+    "pushForkContext": [
+      "forkLeavingPath"
+    ],
+    "popForkContext": [],
+    "forkPath": [],
+    "forkBypassPath": [],
+    "pushChoiceContext": [
+      "kind",
+      "isForkingAsResult"
+    ],
+    "popChoiceContext": [],
+    "makeLogicalRight": [],
+    "makeIfConsequent": [],
+    "makeIfAlternate": [],
+    "pushChainContext": [],
+    "popChainContext": [],
+    "makeOptionalNode": [],
+    "makeOptionalRight": [],
+    "pushSwitchContext": [
+      "hasCase",
+      "label"
+    ],
+    "popSwitchContext": [],
+    "makeSwitchCaseBody": [
+      "isCaseBodyEmpty",
+      "isDefaultCase"
+    ],
+    "pushTryContext": [
+      "hasFinalizer"
+    ],
+    "popTryContext": [],
+    "makeCatchBlock": [],
+    "makeFinallyBlock": [],
+    "makeFirstThrowablePathInTryBlock": [],
+    "pushLoopContext": [
+      "type",
+      "label"
+    ],
+    "popLoopContext": [],
+    "makeWhileTest": [
+      "test"
+    ],
+    "makeWhileBody": [],
+    "makeDoWhileBody": [],
+    "makeDoWhileTest": [
+      "test"
+    ],
+    "makeForTest": [
+      "test"
+    ],
+    "makeForUpdate": [],
+    "makeForBody": [],
+    "makeForInOfLeft": [],
+    "makeForInOfRight": [],
+    "makeForInOfBody": [],
+    "pushBreakContext": [
+      "breakable",
+      "label"
+    ],
+    "popBreakContext": [],
+    "makeBreak": [
+      "label"
+    ],
+    "makeContinue": [
+      "label"
+    ],
+    "makeReturn": [],
+    "makeThrow": [],
+    "makeFinal": []
+  },
+  "ChoiceContext": {
+    "constructor": [
+      "upperContext",
+      "kind",
+      "isForkingAsResult",
+      "forkContext"
+    ],
+    "upper": [],
+    "kind": [],
+    "isForkingAsResult": [],
+    "trueForkContext": [],
+    "falseForkContext": [],
+    "nullishForkContext": [],
+    "processed": []
+  },
+  "SwitchContext": {
+    "constructor": [
+      "upperContext",
+      "hasCase"
+    ],
+    "upper": [],
+    "hasCase": [],
+    "defaultSegments": [],
+    "defaultBodySegments": [],
+    "foundEmptyDefault": [],
+    "lastIsDefault": [],
+    "forkCount": []
+  },
+  "TryContext": {
+    "constructor": [
+      "upperContext",
+      "hasFinalizer",
+      "forkContext"
+    ],
+    "upper": [],
+    "hasFinalizer": [],
+    "position": [],
+    "returnedForkContext": [],
+    "thrownForkContext": [],
+    "lastOfTryIsReachable": [],
+    "lastOfCatchIsReachable": []
+  },
+  "BreakContext": {
+    "constructor": [
+      "upperContext",
+      "breakable",
+      "label",
+      "forkContext"
+    ],
+    "upper": [],
+    "breakable": [],
+    "label": [],
+    "brokenForkContext": []
+  },
+  "ChainContext": {
+    "constructor": [
+      "upperContext"
+    ],
+    "upper": [],
+    "choiceContextCount": []
+  },
+  "WhileLoopContext": {
+    "constructor": [
+      "upperContext",
+      "label",
+      "breakContext"
+    ],
+    "continueDestSegments": []
+  },
+  "DoWhileLoopContext": {
+    "constructor": [
+      "upperContext",
+      "label",
+      "breakContext",
+      "forkContext"
+    ],
+    "entrySegments": [],
+    "continueForkContext": []
+  },
+  "ForLoopContext": {
+    "constructor": [
+      "upperContext",
+      "label",
+      "breakContext"
+    ],
+    "endOfInitSegments": [],
+    "testSegments": [],
+    "endOfTestSegments": [],
+    "updateSegments": [],
+    "endOfUpdateSegments": [],
+    "continueDestSegments": []
+  },
+  "ForInLoopContext": {
+    "constructor": [
+      "upperContext",
+      "label",
+      "breakContext"
+    ],
+    "prevSegments": [],
+    "leftSegments": [],
+    "endOfLeftSegments": [],
+    "continueDestSegments": []
+  },
+  "ForOfLoopContext": {
+    "constructor": [
+      "upperContext",
+      "label",
+      "breakContext"
+    ],
+    "prevSegments": [],
+    "leftSegments": [],
+    "endOfLeftSegments": [],
+    "continueDestSegments": []
+  },
+  "LoopContextBase": {
+    "constructor": [
+      "upperContext",
+      "type",
+      "label",
+      "breakContext"
+    ],
+    "upper": [],
+    "type": [],
+    "label": [],
+    "brokenForkContext": []
+  },
+  "CodePath": {
+    "getState": [
+      "codePath"
+    ],
+    "constructor": [
+      "param"
+    ],
+    "id": [],
+    "origin": [],
+    "upper": [],
+    "childCodePaths": [],
+    "initialSegment": [],
+    "finalSegments": [],
+    "returnedSegments": [],
+    "thrownSegments": [],
+    "traverseSegments": [
+      "optionsOrCallback",
+      "callback"
+    ]
+  },
+  "ForkContext": {
+    "newRoot": [
+      "idGenerator"
+    ],
+    "newEmpty": [
+      "parentContext",
+      "shouldForkLeavingPath"
+    ],
+    "constructor": [
+      "idGenerator",
+      "upper",
+      "count"
+    ],
+    "idGenerator": [],
+    "upper": [],
+    "count": [],
+    "segmentsList": [],
+    "head": [],
+    "empty": [],
+    "reachable": [],
+    "makeNext": [
+      "startIndex",
+      "endIndex"
+    ],
+    "makeUnreachable": [
+      "startIndex",
+      "endIndex"
+    ],
+    "makeDisconnected": [
+      "startIndex",
+      "endIndex"
+    ],
+    "add": [
+      "segments"
+    ],
+    "replaceHead": [
+      "replacementHeadSegments"
+    ],
+    "addAll": [
+      "otherForkContext"
+    ],
+    "clear": []
+  },
+  "IdGenerator": {
+    "constructor": [
+      "prefix"
+    ],
+    "prefix": [],
+    "n": [],
+    "next": []
+  },
+  "markMissing": [
+    "context",
+    "target"
+  ],
+  "Verifier": {
+    "constructor": [
+      "context",
+      "traceMap"
+    ],
+    "verifyToPreferGlobals": [],
+    "verifyToPreferModules": []
+  },
+  "toRelative": [
+    "fullPath"
+  ],
+  "isPrivateFile": [],
+  "isDevPackage": [],
+  "match": [
+    "matcher",
+    "absolute",
+    "param"
+  ],
+  "Restriction": {
+    "constructor": [
+      "param"
+    ],
+    "match": [
+      "importee"
+    ]
+  },
+  "createRestriction": [
+    "def"
+  ],
+  "createRestrictions": [
+    "defs"
+  ],
+  "isInRange": [
+    "featureRange",
+    "requestedRange"
+  ],
+  "versionsToString": [
+    "versions"
+  ],
+  "checkUnsupportedBuiltinReferences": [
+    "context",
+    "references"
+  ],
+  "enumeratePropertyNames": [
+    "traceMap",
+    "param",
+    "param"
+  ],
+  "existsCaseSensitive": [
+    "filePath"
+  ],
+  "get": [
+    "option"
+  ],
+  "getVersionRange": [
+    "option"
+  ],
+  "getEnginesNode": [
+    "context"
+  ],
+  "identity": [
+    "x"
+  ],
+  "toStringArray": [
+    "x"
+  ],
+  "normalizeValue": [
+    "x"
+  ],
+  "makeMatcher": [
+    "pattern"
+  ],
+  "createMatch": [
+    "includePatterns",
+    "excludePatterns"
+  ],
+  "defineConvert": [
+    "fromRegexp",
+    "toStr"
+  ],
+  "combine": [
+    "converters"
+  ],
+  "parse": [
+    "option"
+  ],
+  "isAncestorFiles": [
+    "filePath"
+  ],
+  "and": [
+    "f",
+    "g"
+  ],
+  "or": [
+    "f",
+    "g",
+    "h"
+  ],
+  "not": [
+    "f"
+  ],
+  "filterNeverIgnoredFiles": [
+    "packageJson"
+  ],
+  "parseWhiteList": [
+    "files"
+  ],
+  "parseNpmignore": [
+    "basedir",
+    "filesFieldExists"
+  ],
+  "readPackageJson": [
+    "dir"
+  ],
+  "getPackageJson": [
+    "param"
+  ],
+  "parserSeemsToBeTSESLint": [
+    "parser"
+  ],
+  "throwError": [
+    "parser"
+  ],
+  "getTSConfig": [
+    "filename"
+  ],
+  "getTSConfigForFile": [
+    "filename"
+  ],
+  "getTSConfigForContext": [
+    "context"
+  ],
+  "normalise": [
+    "typescriptExtensionMap"
+  ],
+  "getMappingFromTSConfig": [
+    "tsconfig"
+  ],
+  "getFromTSConfigFromFile": [
+    "context"
+  ],
+  "hasParentNode": [
+    "node"
+  ],
+  "removeTrailWildcard": [
+    "input"
+  ],
+  "getTSConfigAliases": [
+    "context"
+  ],
+  "trimAfter": [
+    "string",
+    "matcher",
+    "param"
+  ],
+  "simulateNodeResolutionAlgorithm": [
+    "filePath",
+    "binField"
+  ],
+  "isBinFile": [
+    "filePath",
+    "binField",
+    "basedir"
+  ],
+  "iterateProcessGetBuiltinModuleReferences": [
+    "tracker",
+    "traceMap"
+  ],
+  "convertTsExtensionToJs": [
+    "context",
+    "filePath",
+    "fallbackExtension"
+  ],
+  "convertJsExtensionToTs": [
+    "context",
+    "filePath",
+    "fallbackExtension"
+  ],
+  "dispatch": [
+    "handlers",
+    "node"
+  ],
+  "addTarget": [
+    "node"
+  ]
+}

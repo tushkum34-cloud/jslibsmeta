@@ -1,0 +1,381 @@
+{
+  "aliasResolveHandler": [
+    "resolver",
+    "options",
+    "target",
+    "request",
+    "resolveContext",
+    "callback"
+  ],
+  "getAbsolutePathWithSlashEnding": [
+    "maybeAbsolutePath"
+  ],
+  "isSubPath": [
+    "parentPath",
+    "childPath"
+  ],
+  "resolveWithAlias": [
+    "alias",
+    "callback"
+  ],
+  "stoppingCallback": [
+    "err",
+    "result"
+  ],
+  "dirname": [
+    "maybePath"
+  ],
+  "runCallbacks": [
+    "callbacks",
+    "err",
+    "result"
+  ],
+  "OperationMergerBackend": {
+    "constructor": [
+      "provider",
+      "syncProvider",
+      "providerContext"
+    ],
+    "purge": [],
+    "purgeParent": []
+  },
+  "CacheBackend": {
+    "constructor": [
+      "duration",
+      "provider",
+      "syncProvider",
+      "providerContext"
+    ],
+    "provide": [
+      "path",
+      "options",
+      "callback"
+    ],
+    "provideSync": [
+      "path",
+      "options"
+    ],
+    "purge": [
+      "what"
+    ],
+    "purgeParent": [
+      "what"
+    ],
+    "_storeResult": [
+      "path",
+      "err",
+      "result"
+    ],
+    "_decayLevel": [],
+    "_runDecays": [],
+    "_enterAsyncMode": [],
+    "_enterSyncModeWhenIdle": [],
+    "_enterIdleMode": []
+  },
+  "createBackend": [
+    "duration",
+    "provider",
+    "syncProvider",
+    "providerContext"
+  ],
+  "cdUp": [
+    "directory"
+  ],
+  "loadDescriptionFile": [
+    "resolver",
+    "directory",
+    "filenames",
+    "oldInfo",
+    "resolveContext",
+    "callback"
+  ],
+  "onJson": [
+    "err",
+    "resolvedContent"
+  ],
+  "getField": [
+    "content",
+    "field"
+  ],
+  "resolve": [
+    "context",
+    "path",
+    "request",
+    "resolveContext",
+    "callback"
+  ],
+  "modulesResolveHandler": [
+    "resolver",
+    "directories",
+    "target",
+    "request",
+    "resolveContext",
+    "callback"
+  ],
+  "toCamelCase": [
+    "str"
+  ],
+  "Resolver": {
+    "fileSystem": [],
+    "options": [],
+    "hooks": [],
+    "ensureHook": [
+      "name"
+    ],
+    "getHook": [
+      "name"
+    ],
+    "resolveSync": [
+      "context",
+      "path",
+      "request"
+    ],
+    "resolve": [
+      "context",
+      "path",
+      "request",
+      "resolveContext",
+      "callback"
+    ],
+    "doResolve": [
+      "hook",
+      "request",
+      "message",
+      "resolveContext",
+      "callback"
+    ],
+    "parse": [
+      "identifier"
+    ],
+    "isModule": [
+      "path"
+    ],
+    "isPrivate": [
+      "path"
+    ],
+    "isDirectory": [
+      "path"
+    ],
+    "join": [
+      "path",
+      "request"
+    ],
+    "normalize": [
+      "path"
+    ]
+  },
+  "finishResolved": [
+    "result"
+  ],
+  "finishWithoutResolve": [
+    "log"
+  ],
+  "processPnpApiOption": [
+    "option"
+  ],
+  "normalizeAlias": [
+    "alias"
+  ],
+  "mergeFilteredToArray": [
+    "array",
+    "filter"
+  ],
+  "createOptions": [
+    "options"
+  ],
+  "isInside": [
+    "path",
+    "parent"
+  ],
+  "RootsPlugin": {
+    "constructor": [
+      "source",
+      "roots",
+      "target"
+    ],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "SyncAsyncFileSystemDecorator": [
+    "fs"
+  ],
+  "getPrefixLength": [
+    "pattern"
+  ],
+  "sortByLongestPrefix": [
+    "arr"
+  ],
+  "mergeTsconfigs": [
+    "base",
+    "config"
+  ],
+  "substituteConfigDir": [
+    "pathValue",
+    "configDir"
+  ],
+  "tsconfigPathsToResolveOptions": [
+    "configDir",
+    "paths",
+    "baseUrl"
+  ],
+  "getAbsoluteBaseUrl": [
+    "context",
+    "baseUrl"
+  ],
+  "getCacheId": [
+    "type",
+    "request",
+    "withContext"
+  ],
+  "next": [],
+  "resolveSync": [
+    "context",
+    "path",
+    "request"
+  ],
+  "create": [
+    "options"
+  ],
+  "createSync": [
+    "options"
+  ],
+  "mergeExports": [
+    "obj",
+    "exports"
+  ],
+  "patternKeyCompare": [
+    "a",
+    "b"
+  ],
+  "findMatch": [
+    "request",
+    "field"
+  ],
+  "isConditionalMapping": [
+    "mapping"
+  ],
+  "conditionalMapping": [
+    "conditionalMapping_",
+    "conditionNames"
+  ],
+  "targetMapping": [
+    "remainingRequest",
+    "isPattern",
+    "isSubpathMapping",
+    "mappingTarget",
+    "assert"
+  ],
+  "directMapping": [
+    "remainingRequest",
+    "isPattern",
+    "isSubpathMapping",
+    "mappingTarget",
+    "conditionNames",
+    "assert"
+  ],
+  "createFieldProcessor": [
+    "field",
+    "normalizeRequest",
+    "assertRequest",
+    "assertTarget"
+  ],
+  "assertExportsFieldRequest": [
+    "request"
+  ],
+  "buildExportsField": [
+    "field"
+  ],
+  "assertExportTarget": [
+    "exp",
+    "expectFolder"
+  ],
+  "assertImportsFieldRequest": [
+    "request"
+  ],
+  "assertImportTarget": [
+    "imp",
+    "expectFolder"
+  ],
+  "readJson": [
+    "fileSystem",
+    "jsonFilePath"
+  ],
+  "parseIdentifier": [
+    "identifier"
+  ],
+  "memoize": [
+    "fn"
+  ],
+  "getType": [
+    "maybePath"
+  ],
+  "normalize": [
+    "maybePath"
+  ],
+  "join": [
+    "rootPath",
+    "request"
+  ],
+  "cachedJoin": [
+    "rootPath",
+    "request"
+  ],
+  "cachedDirname": [
+    "maybePath"
+  ],
+  "CachedInputFileSystem": {
+    "constructor": [
+      "fileSystem",
+      "duration"
+    ],
+    "fileSystem": [],
+    "lstat": [],
+    "lstatSync": [],
+    "stat": [],
+    "statSync": [],
+    "readdir": [],
+    "readdirSync": [],
+    "readFile": [],
+    "readFileSync": [],
+    "readJson": [],
+    "readJsonSync": [],
+    "readlink": [],
+    "readlinkSync": [],
+    "realpath": [],
+    "realpathSync": [],
+    "purge": [
+      "what"
+    ]
+  },
+  "CloneBasenamePlugin": {
+    "constructor": [
+      "source",
+      "target"
+    ],
+    "source": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "LogInfoPlugin": {
+    "constructor": [
+      "source"
+    ],
+    "source": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "TsconfigPathsPlugin": {
+    "constructor": [
+      "configFileOrOptions"
+    ],
+    "configFile": [],
+    "references": [],
+    "apply": [
+      "resolver"
+    ]
+  }
+}

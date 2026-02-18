@@ -1,0 +1,280 @@
+{
+  "union": [
+    "a",
+    "b"
+  ],
+  "addAll": [
+    "a",
+    "b"
+  ],
+  "equal": [
+    "a",
+    "b"
+  ],
+  "Node": {
+    "constructor": [],
+    "calcFollowpos": []
+  },
+  "Variable": {
+    "constructor": [
+      "name"
+    ],
+    "copy": []
+  },
+  "Comment": {
+    "constructor": [
+      "value"
+    ]
+  },
+  "Assignment": {
+    "constructor": [
+      "variable",
+      "expression"
+    ]
+  },
+  "Alternation": {
+    "constructor": [
+      "a",
+      "b"
+    ],
+    "nullable": [],
+    "firstpos": [],
+    "lastpos": [],
+    "copy": []
+  },
+  "Concatenation": {
+    "constructor": [
+      "a",
+      "b"
+    ],
+    "nullable": [],
+    "firstpos": [],
+    "lastpos": [],
+    "calcFollowpos": [],
+    "copy": []
+  },
+  "Repeat": {
+    "constructor": [
+      "expression",
+      "op"
+    ],
+    "nullable": [],
+    "firstpos": [],
+    "lastpos": [],
+    "calcFollowpos": [],
+    "copy": []
+  },
+  "buildRepetition": [
+    "expression",
+    "param",
+    "param"
+  ],
+  "concat": [
+    "a",
+    "b"
+  ],
+  "Leaf": {
+    "nullable": [],
+    "firstpos": [],
+    "lastpos": []
+  },
+  "Literal": {
+    "constructor": [
+      "value"
+    ],
+    "copy": []
+  },
+  "EndMarker": {},
+  "Tag": {
+    "constructor": [
+      "name"
+    ],
+    "nullable": [],
+    "copy": []
+  },
+  "peg$subclass": [
+    "child",
+    "parent"
+  ],
+  "ctor": [],
+  "peg$SyntaxError": [
+    "message",
+    "expected",
+    "found",
+    "location"
+  ],
+  "hex": [
+    "ch"
+  ],
+  "literalEscape": [
+    "s"
+  ],
+  "classEscape": [
+    "s"
+  ],
+  "describeExpectation": [
+    "expectation"
+  ],
+  "describeExpected": [
+    "expected"
+  ],
+  "describeFound": [
+    "found"
+  ],
+  "peg$parse": [
+    "input",
+    "options"
+  ],
+  "peg$c0": [
+    "s"
+  ],
+  "peg$c7": [
+    "v"
+  ],
+  "peg$c12": [
+    "v",
+    "e"
+  ],
+  "peg$c13": [
+    "v"
+  ],
+  "peg$c16": [
+    "a",
+    "b"
+  ],
+  "peg$c17": [
+    "a",
+    "b"
+  ],
+  "peg$c20": [
+    "t",
+    "e"
+  ],
+  "peg$c23": [
+    "t"
+  ],
+  "peg$c26": [
+    "t"
+  ],
+  "peg$c29": [
+    "t"
+  ],
+  "peg$c34": [
+    "t",
+    "m"
+  ],
+  "peg$c37": [
+    "t",
+    "min"
+  ],
+  "peg$c38": [
+    "t",
+    "max"
+  ],
+  "peg$c39": [
+    "t",
+    "min",
+    "max"
+  ],
+  "peg$c40": [
+    "x"
+  ],
+  "peg$c45": [
+    "e"
+  ],
+  "peg$c47": [
+    "a",
+    "b"
+  ],
+  "peg$c54": [
+    "num"
+  ],
+  "peg$literalExpectation": [
+    "text",
+    "ignoreCase"
+  ],
+  "peg$classExpectation": [
+    "parts",
+    "inverted",
+    "ignoreCase"
+  ],
+  "peg$endExpectation": [],
+  "peg$computePosDetails": [
+    "pos"
+  ],
+  "peg$computeLocation": [
+    "startPos",
+    "endPos"
+  ],
+  "peg$fail": [
+    "expected"
+  ],
+  "peg$buildStructuredError": [
+    "expected",
+    "found",
+    "location"
+  ],
+  "peg$parserules": [],
+  "peg$parsestatement": [],
+  "peg$parsestatement_type": [],
+  "peg$parsecomment": [],
+  "peg$parseassignment": [],
+  "peg$parsevariable": [],
+  "peg$parsealternation": [],
+  "peg$parseconcatenation": [],
+  "peg$parserepeat": [],
+  "peg$parseterm": [],
+  "peg$parsename": [],
+  "peg$parsename_start_char": [],
+  "peg$parsename_char": [],
+  "peg$parsenumber": [],
+  "peg$parse_": [],
+  "SymbolTable": {
+    "constructor": [
+      "statements",
+      "param"
+    ],
+    "addExternalSymbols": [
+      "externalSymbols"
+    ],
+    "process": [
+      "statements"
+    ],
+    "processExpression": [
+      "expr"
+    ]
+  },
+  "buildDFA": [
+    "root",
+    "numSymbols"
+  ],
+  "State": {
+    "constructor": [
+      "positions",
+      "len"
+    ]
+  },
+  "StateMachine": {
+    "constructor": [
+      "dfa"
+    ],
+    "match": [
+      "str"
+    ],
+    "apply": [
+      "str",
+      "actions"
+    ]
+  },
+  "parse": [
+    "string",
+    "externalSymbols"
+  ],
+  "build": [
+    "symbolTable"
+  ],
+  "compile": [
+    "string",
+    "externalSymbols"
+  ]
+}

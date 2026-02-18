@@ -1,0 +1,2798 @@
+{
+  "toAdapterValue": [
+    "rawValue",
+    "adapter"
+  ],
+  "AdapterArbitrary": {
+    "constructor": [
+      "sourceArb",
+      "adapter"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "value",
+      "context"
+    ]
+  },
+  "adapter": [
+    "sourceArb",
+    "adapter"
+  ],
+  "AlwaysShrinkableArbitrary": {
+    "constructor": [
+      "arb"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "value",
+      "context"
+    ]
+  },
+  "biasedMaxLength": [
+    "minLength",
+    "maxLength"
+  ],
+  "ArrayArbitrary": {
+    "constructor": [
+      "arb",
+      "minLength",
+      "maxGeneratedLength",
+      "maxLength",
+      "depthIdentifier",
+      "setBuilder",
+      "customSlices"
+    ],
+    "preFilter": [
+      "tab"
+    ],
+    "makeItCloneable": [
+      "vs",
+      "shrinkables"
+    ],
+    "generateNItemsNoDuplicates": [
+      "setBuilder",
+      "N",
+      "mrng",
+      "biasFactorItems"
+    ],
+    "safeGenerateNItemsNoDuplicates": [
+      "setBuilder",
+      "N",
+      "mrng",
+      "biasFactorItems"
+    ],
+    "generateNItems": [
+      "N",
+      "mrng",
+      "biasFactorItems"
+    ],
+    "safeGenerateNItems": [
+      "N",
+      "mrng",
+      "biasFactorItems"
+    ],
+    "wrapper": [
+      "itemsRaw",
+      "shrunkOnce",
+      "itemsRawLengthContext",
+      "startIndex"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "applyBias": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrinkItemByItem": [
+      "value",
+      "safeContext",
+      "endIndex"
+    ],
+    "shrinkImpl": [
+      "value",
+      "context"
+    ],
+    "shrink": [
+      "value",
+      "context"
+    ]
+  },
+  "BigIntArbitrary": {
+    "constructor": [
+      "min",
+      "max"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "computeGenerateRange": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "current",
+      "context"
+    ],
+    "defaultTarget": [],
+    "isLastChanceTry": [
+      "current",
+      "context"
+    ],
+    "isValidContext": [
+      "current",
+      "context"
+    ]
+  },
+  "CloneArbitrary": {
+    "constructor": [
+      "arb",
+      "numValues"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "value",
+      "context"
+    ],
+    "shrinkImpl": [
+      "value",
+      "contexts"
+    ],
+    "makeItCloneable": [
+      "vs",
+      "shrinkables"
+    ],
+    "wrapper": [
+      "items"
+    ]
+  },
+  "CommandsArbitrary": {
+    "constructor": [
+      "commandArbs",
+      "maxGeneratedCommands",
+      "maxCommands",
+      "sourceReplayPath",
+      "disableReplayLog"
+    ],
+    "metadataForReplay": [],
+    "buildValueFor": [
+      "items",
+      "shrunkOnce"
+    ],
+    "generate": [
+      "mrng"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "filterOnExecution": [
+      "itemsRaw"
+    ],
+    "filterOnReplay": [
+      "itemsRaw"
+    ],
+    "filterForShrinkImpl": [
+      "itemsRaw"
+    ],
+    "shrink": [
+      "_value",
+      "context"
+    ]
+  },
+  "FastConstantValuesLookup": {
+    "constructor": [
+      "values"
+    ],
+    "has": [
+      "value"
+    ]
+  },
+  "ConstantArbitrary": {
+    "constructor": [
+      "values"
+    ],
+    "generate": [
+      "mrng",
+      "_biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "value",
+      "context"
+    ]
+  },
+  "FrequencyArbitrary": {
+    "from": [
+      "warbs",
+      "constraints",
+      "label"
+    ],
+    "constructor": [
+      "warbs",
+      "constraints",
+      "context"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "value",
+      "context"
+    ],
+    "defaultShrinkForFirst": [
+      "selectedIndex"
+    ],
+    "canShrinkWithoutContextIndex": [
+      "value"
+    ],
+    "mapIntoValue": [
+      "idx",
+      "value",
+      "clonedMrngForFallbackFirst",
+      "biasFactor"
+    ],
+    "safeGenerateForIndex": [
+      "mrng",
+      "idx",
+      "biasFactor"
+    ],
+    "mustGenerateFirst": [],
+    "mustFallbackToFirstInShrink": [
+      "idx"
+    ],
+    "computeNegDepthBenefit": []
+  },
+  "GeneratorArbitrary": {
+    "arbitraryCache": [],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "_value",
+      "context"
+    ]
+  },
+  "computePreBuiltValues": [],
+  "canHaveAtLeastOneItem": [
+    "keys",
+    "constraints"
+  ],
+  "initialPoolForEntityGraph": [
+    "keys",
+    "constraints"
+  ],
+  "IntegerArbitrary": {
+    "constructor": [
+      "min",
+      "max"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "current",
+      "context"
+    ],
+    "defaultTarget": [],
+    "computeGenerateRange": [
+      "mrng",
+      "biasFactor"
+    ],
+    "isLastChanceTry": [
+      "current",
+      "context"
+    ],
+    "isValidContext": [
+      "current",
+      "context"
+    ]
+  },
+  "LazyArbitrary": {
+    "constructor": [
+      "name"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "value",
+      "context"
+    ]
+  },
+  "iotaFrom": [
+    "startValue"
+  ],
+  "LimitedShrinkArbitrary": {
+    "constructor": [
+      "arb",
+      "maxShrinks"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "value",
+      "context"
+    ],
+    "safeShrink": [
+      "value",
+      "originalContext",
+      "currentLength"
+    ],
+    "valueMapper": [
+      "v",
+      "newLength"
+    ],
+    "isSafeContext": [
+      "context"
+    ]
+  },
+  "MixedCaseArbitrary": {
+    "constructor": [
+      "stringArb",
+      "toggleCase",
+      "untoggleAll"
+    ],
+    "buildContextFor": [
+      "rawStringValue",
+      "flagsValue"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "value",
+      "context"
+    ]
+  },
+  "produceLinkUnitaryIndexArbitrary": [
+    "strategy",
+    "currentIndexIfSameType",
+    "countInTargetType"
+  ],
+  "computeLinkIndex": [
+    "arity",
+    "strategy",
+    "currentIndexIfSameType",
+    "countInTargetType",
+    "currentEntityDepth",
+    "mrng",
+    "biasFactor"
+  ],
+  "OnTheFlyLinksForEntityGraphArbitrary": {
+    "constructor": [
+      "relations",
+      "defaultEntities"
+    ],
+    "createEmptyLinksInstanceFor": [
+      "targetType"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "_value",
+      "_context"
+    ]
+  },
+  "onTheFlyLinksForEntityGraph": [
+    "relations",
+    "defaultEntities"
+  ],
+  "buildNextTaskIndex": [
+    "ordering"
+  ],
+  "SchedulerArbitrary": {
+    "constructor": [
+      "act"
+    ],
+    "generate": [
+      "mrng",
+      "_biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "_value",
+      "_context"
+    ]
+  },
+  "prettyPrint": [
+    "stringifiedOuts"
+  ],
+  "StreamArbitrary": {
+    "constructor": [
+      "arb",
+      "history"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "_value",
+      "_context"
+    ]
+  },
+  "enrichedProducer": [],
+  "g": [
+    "arb",
+    "clonedMrng"
+  ],
+  "getAlphabetRanges": [
+    "alphabet"
+  ],
+  "getOrCreateStringUnitInstance": [
+    "type",
+    "alphabet"
+  ],
+  "stringUnit": [
+    "type",
+    "alphabet"
+  ],
+  "SubarrayArbitrary": {
+    "constructor": [
+      "originalArray",
+      "isOrdered",
+      "minLength",
+      "maxLength"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "value",
+      "context"
+    ]
+  },
+  "tupleMakeItCloneable": [
+    "vs",
+    "values"
+  ],
+  "tupleWrapper": [
+    "values"
+  ],
+  "tupleShrink": [
+    "arbs",
+    "value",
+    "context"
+  ],
+  "TupleArbitrary": {
+    "constructor": [
+      "arbs"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "value",
+      "context"
+    ]
+  },
+  "unlinkedEntitiesForEntityGraph": [
+    "arbitraries",
+    "countFor",
+    "unicityConstraintsFor",
+    "constraints"
+  ],
+  "isSafeContext": [
+    "context"
+  ],
+  "toGeneratorValue": [
+    "value"
+  ],
+  "toShrinkerValue": [
+    "value"
+  ],
+  "WithShrinkFromOtherArbitrary": {
+    "constructor": [
+      "generatorArbitrary",
+      "shrinkerArbitrary"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "value",
+      "context"
+    ]
+  },
+  "dictOf": [
+    "ka",
+    "va",
+    "maxKeys",
+    "size",
+    "depthIdentifier",
+    "withNullPrototype"
+  ],
+  "typedArray": [
+    "constraints"
+  ],
+  "anyArbitraryBuilder": [
+    "constraints"
+  ],
+  "boxedArbitraryBuilder": [
+    "arb"
+  ],
+  "percentCharArbMapper": [
+    "c"
+  ],
+  "percentCharArbUnmapper": [
+    "value"
+  ],
+  "percentCharArb": [],
+  "getOrCreateLowerAlphaArbitrary": [],
+  "getOrCreateLowerAlphaNumericArbitrary": [
+    "others"
+  ],
+  "buildAlphaNumericArbitrary": [
+    "others"
+  ],
+  "getOrCreateAlphaNumericPercentArbitrary": [
+    "others"
+  ],
+  "buildCompareFunctionArbitrary": [
+    "cmp"
+  ],
+  "producer": [],
+  "f": [
+    "param"
+  ],
+  "buildGeneratorValue": [
+    "mrng",
+    "biasFactor",
+    "computePreBuiltValues",
+    "arbitraryCache"
+  ],
+  "valueFunction": [
+    "arb"
+  ],
+  "memoedValueFunction": [
+    "arb",
+    "param"
+  ],
+  "buildPaddedNumberArbitrary": [
+    "min",
+    "max"
+  ],
+  "buildPartialRecordArbitrary": [
+    "recordModel",
+    "requiredKeys",
+    "noNullPrototype"
+  ],
+  "restrictedIntegerArbitraryBuilder": [
+    "min",
+    "maxGenerated",
+    "max"
+  ],
+  "buildStableArbitraryGeneratorCache": [
+    "isEqual"
+  ],
+  "naiveIsEqual": [
+    "v1",
+    "v2"
+  ],
+  "buildStringifiedNatArbitrary": [
+    "maxValue"
+  ],
+  "typedIntArrayArbitraryArbitraryBuilder": [
+    "constraints",
+    "defaultMin",
+    "defaultMax",
+    "TypedArrayClass",
+    "arbitraryBuilder"
+  ],
+  "sqrtSize": [
+    "size"
+  ],
+  "buildUriPathArbitraryInternal": [
+    "segmentSize",
+    "numSegmentSize"
+  ],
+  "buildUriPathArbitrary": [
+    "resolvedSize"
+  ],
+  "buildUriQueryOrFragmentArbitrary": [
+    "size"
+  ],
+  "integerLogLike": [
+    "v"
+  ],
+  "bigIntLogLike": [
+    "v"
+  ],
+  "biasNumericRange": [
+    "min",
+    "max",
+    "logLike"
+  ],
+  "buildInversedRelationsMapping": [
+    "relations"
+  ],
+  "buildSchedulerFor": [
+    "act",
+    "ordering"
+  ],
+  "buildSlicedGenerator": [
+    "arb",
+    "mrng",
+    "slices",
+    "biasFactor"
+  ],
+  "CustomEqualSet": {
+    "constructor": [
+      "isEqual"
+    ],
+    "tryAdd": [
+      "value"
+    ],
+    "size": [],
+    "getData": []
+  },
+  "getDepthContextFor": [
+    "contextMeta"
+  ],
+  "createDepthIdentifier": [],
+  "bitCastDoubleToUInt64": [
+    "f"
+  ],
+  "decomposeDouble": [
+    "d"
+  ],
+  "indexInDoubleFromDecomp": [
+    "exponent",
+    "significand"
+  ],
+  "doubleToIndex": [
+    "d"
+  ],
+  "indexToDouble": [
+    "index"
+  ],
+  "refineConstraintsForDoubleOnly": [
+    "constraints"
+  ],
+  "doubleOnlyMapper": [
+    "value"
+  ],
+  "doubleOnlyUnmapper": [
+    "value"
+  ],
+  "extractEnumerableKeys": [
+    "instance"
+  ],
+  "bitCastFloatToUInt32": [
+    "f"
+  ],
+  "decomposeFloat": [
+    "f"
+  ],
+  "indexInFloatFromDecomp": [
+    "exponent",
+    "significand"
+  ],
+  "floatToIndex": [
+    "f"
+  ],
+  "indexToFloat": [
+    "index"
+  ],
+  "refineConstraintsForFloatOnly": [
+    "constraints"
+  ],
+  "floatOnlyMapper": [
+    "value"
+  ],
+  "floatOnlyUnmapper": [
+    "value"
+  ],
+  "refineConstraintsForFloatingOnly": [
+    "constraints",
+    "maxValue",
+    "maxNonIntegerValue",
+    "onlyIntegersAfterThisValue"
+  ],
+  "convertGraphemeRangeToMapToConstantEntry": [
+    "range"
+  ],
+  "intersectGraphemeRanges": [
+    "rangesA",
+    "rangesB"
+  ],
+  "filterInvalidSubdomainLabel": [
+    "subdomainLabel"
+  ],
+  "isSubarrayOf": [
+    "source",
+    "small"
+  ],
+  "jsonConstraintsBuilder": [
+    "stringArbitrary",
+    "constraints"
+  ],
+  "maxLengthFromMinLength": [
+    "minLength",
+    "size"
+  ],
+  "relativeSizeToSize": [
+    "size",
+    "defaultSize"
+  ],
+  "maxGeneratedLengthFromSizeForArbitrary": [
+    "size",
+    "minLength",
+    "maxLength",
+    "specifiedMaxLength"
+  ],
+  "depthBiasFromSizeForArbitrary": [
+    "depthSizeOrSize",
+    "specifiedMaxDepth"
+  ],
+  "resolveSize": [
+    "size"
+  ],
+  "invertSize": [
+    "size"
+  ],
+  "noUndefinedAsContext": [
+    "value"
+  ],
+  "defaultValues": [
+    "constraints",
+    "stringArbitrary"
+  ],
+  "boxArbitraries": [
+    "arbs"
+  ],
+  "boxArbitrariesIfNeeded": [
+    "arbs",
+    "boxEnabled"
+  ],
+  "toQualifiedObjectConstraints": [
+    "param"
+  ],
+  "charSizeAt": [
+    "text",
+    "pos"
+  ],
+  "isHexaDigit": [
+    "char"
+  ],
+  "isDigit": [
+    "char"
+  ],
+  "squaredBracketBlockContentEndFrom": [
+    "text",
+    "from"
+  ],
+  "parenthesisBlockContentEndFrom": [
+    "text",
+    "from"
+  ],
+  "curlyBracketBlockContentEndFrom": [
+    "text",
+    "from"
+  ],
+  "blockEndFrom": [
+    "text",
+    "from",
+    "unicodeMode",
+    "mode"
+  ],
+  "readFrom": [
+    "text",
+    "from",
+    "unicodeMode",
+    "mode"
+  ],
+  "SameValueSet": {
+    "constructor": [
+      "selector"
+    ],
+    "tryAdd": [
+      "value"
+    ],
+    "size": [],
+    "getData": []
+  },
+  "SameValueZeroSet": {
+    "constructor": [
+      "selector"
+    ],
+    "tryAdd": [
+      "value"
+    ],
+    "size": [],
+    "getData": []
+  },
+  "raiseUnsupportedASTNode": [
+    "astNode"
+  ],
+  "addMissingDotStarTraversalAddMissing": [
+    "astNode",
+    "isFirst",
+    "isLast"
+  ],
+  "addMissingDotStarTraversal": [
+    "astNode",
+    "isFirst",
+    "isLast",
+    "traversalResults"
+  ],
+  "addMissingDotStar": [
+    "astNode"
+  ],
+  "halveBigInt": [
+    "n"
+  ],
+  "shrinkBigInt": [
+    "current",
+    "target",
+    "tryTargetAsap"
+  ],
+  "shrinkDecr": [],
+  "shrinkIncr": [],
+  "halvePosInteger": [
+    "n"
+  ],
+  "halveNegInteger": [
+    "n"
+  ],
+  "shrinkInteger": [
+    "current",
+    "target",
+    "tryTargetAsap"
+  ],
+  "computeCandidateStringLegacy": [
+    "dangerous",
+    "charArbitrary",
+    "stringSplitter"
+  ],
+  "createSlicesForStringLegacy": [
+    "charArbitrary",
+    "stringSplitter"
+  ],
+  "createSlicesForStringNoConstraints": [
+    "charArbitrary"
+  ],
+  "createSlicesForString": [
+    "charArbitrary",
+    "constraints"
+  ],
+  "StrictlyEqualSet": {
+    "constructor": [
+      "selector"
+    ],
+    "tryAdd": [
+      "value"
+    ],
+    "size": [],
+    "getData": []
+  },
+  "escapeForTemplateString": [
+    "originalText"
+  ],
+  "escapeForMultilineComments": [
+    "originalText"
+  ],
+  "countToggledBits": [
+    "n"
+  ],
+  "computeNextFlags": [
+    "flags",
+    "nextSize"
+  ],
+  "computeTogglePositions": [
+    "chars",
+    "toggleCase"
+  ],
+  "computeFlagsFromChars": [
+    "untoggledChars",
+    "toggledChars",
+    "togglePositions"
+  ],
+  "applyFlagsOnChars": [
+    "chars",
+    "flags",
+    "togglePositions",
+    "toggleCase"
+  ],
+  "safePop": [
+    "instance"
+  ],
+  "simpleChar": [
+    "char",
+    "escaped"
+  ],
+  "metaEscapedChar": [
+    "block",
+    "symbol"
+  ],
+  "toSingleToken": [
+    "tokens",
+    "allowEmpty"
+  ],
+  "blockToCharToken": [
+    "block"
+  ],
+  "pushTokens": [
+    "tokens",
+    "regexSource",
+    "unicodeMode",
+    "groups"
+  ],
+  "tokenizeRegex": [
+    "regex"
+  ],
+  "tokenizeString": [
+    "patternsArb",
+    "value",
+    "minLength",
+    "maxLength"
+  ],
+  "initZippedValues": [
+    "its"
+  ],
+  "nextZippedValues": [
+    "its",
+    "vs"
+  ],
+  "isDoneZippedValues": [
+    "vs"
+  ],
+  "zipIterableIterators": [
+    "param"
+  ],
+  "NoopSlicedGenerator": {
+    "constructor": [
+      "arb",
+      "mrng",
+      "biasFactor"
+    ],
+    "attemptExact": [],
+    "next": []
+  },
+  "defaultSchedulerAct": [
+    "f"
+  ],
+  "SchedulerImplem": {
+    "constructor": [
+      "act",
+      "taskSelector"
+    ],
+    "buildLog": [
+      "reportItem"
+    ],
+    "log": [
+      "schedulingType",
+      "taskId",
+      "label",
+      "metadata",
+      "status",
+      "data"
+    ],
+    "scheduleInternal": [
+      "schedulingType",
+      "label",
+      "task",
+      "metadata",
+      "customAct",
+      "thenTaskToBeAwaited"
+    ],
+    "schedule": [
+      "task",
+      "label",
+      "metadata",
+      "customAct"
+    ],
+    "scheduleFunction": [
+      "asyncFunction",
+      "customAct"
+    ],
+    "scheduleSequence": [
+      "sequenceBuilders",
+      "customAct"
+    ],
+    "count": [],
+    "internalWaitOne": [],
+    "waitOne": [
+      "customAct"
+    ],
+    "waitAll": [
+      "customAct"
+    ],
+    "internalWaitFor": [
+      "unscheduledTask",
+      "options"
+    ],
+    "waitNext": [
+      "count",
+      "customAct"
+    ],
+    "waitIdle": [
+      "customAct"
+    ],
+    "waitFor": [
+      "unscheduledTask",
+      "customAct"
+    ],
+    "report": [],
+    "toString": []
+  },
+  "resolveSequenceTask": [],
+  "onFaultyItemNoThrow": [],
+  "onDone": [],
+  "registerNextBuilder": [
+    "index",
+    "previous"
+  ],
+  "awaiter": [],
+  "handleNotified": [],
+  "clearAndReplaceWatcher": [],
+  "SlicedBasedGenerator": {
+    "constructor": [
+      "arb",
+      "mrng",
+      "slices",
+      "biasFactor"
+    ],
+    "attemptExact": [
+      "targetLength"
+    ],
+    "next": []
+  },
+  "arrayToMapMapper": [
+    "data"
+  ],
+  "arrayToMapUnmapper": [
+    "value"
+  ],
+  "arrayToSetMapper": [
+    "data"
+  ],
+  "arrayToSetUnmapper": [
+    "value"
+  ],
+  "charsToStringMapper": [
+    "tab"
+  ],
+  "charsToStringUnmapper": [
+    "value"
+  ],
+  "codePointsToStringMapper": [
+    "tab"
+  ],
+  "codePointsToStringUnmapper": [
+    "value"
+  ],
+  "readBh": [
+    "value"
+  ],
+  "extractEhAndL": [
+    "value"
+  ],
+  "fullySpecifiedMapper": [
+    "data"
+  ],
+  "fullySpecifiedUnmapper": [
+    "value"
+  ],
+  "onlyTrailingMapper": [
+    "data"
+  ],
+  "onlyTrailingUnmapper": [
+    "value"
+  ],
+  "multiTrailingMapper": [
+    "data"
+  ],
+  "multiTrailingUnmapper": [
+    "value"
+  ],
+  "multiTrailingMapperOne": [
+    "data"
+  ],
+  "multiTrailingUnmapperOne": [
+    "value"
+  ],
+  "singleTrailingMapper": [
+    "data"
+  ],
+  "singleTrailingUnmapper": [
+    "value"
+  ],
+  "noTrailingMapper": [
+    "data"
+  ],
+  "noTrailingUnmapper": [
+    "value"
+  ],
+  "buildDichotomyEntries": [
+    "entries"
+  ],
+  "findDichotomyEntry": [
+    "dichotomyEntries",
+    "choiceIndex"
+  ],
+  "indexToMappedConstantMapperFor": [
+    "entries"
+  ],
+  "buildReverseMapping": [
+    "entries"
+  ],
+  "indexToMappedConstantUnmapperFor": [
+    "entries"
+  ],
+  "indexToPrintableIndexMapper": [
+    "v"
+  ],
+  "indexToPrintableIndexUnmapper": [
+    "v"
+  ],
+  "keyValuePairsToObjectMapper": [
+    "definition"
+  ],
+  "isValidPropertyNameFilter": [
+    "descriptor"
+  ],
+  "keyValuePairsToObjectUnmapper": [
+    "value"
+  ],
+  "natToStringifiedNatMapper": [
+    "options"
+  ],
+  "tryParseStringifiedNat": [
+    "stringValue",
+    "radix"
+  ],
+  "natToStringifiedNatUnmapper": [
+    "value"
+  ],
+  "numberToPaddedEightMapper": [
+    "n"
+  ],
+  "numberToPaddedEightUnmapper": [
+    "value"
+  ],
+  "paddedEightsToUuidMapper": [
+    "t"
+  ],
+  "paddedEightsToUuidUnmapper": [
+    "value"
+  ],
+  "partsToUrlMapper": [
+    "data"
+  ],
+  "partsToUrlUnmapper": [
+    "value"
+  ],
+  "patternsToStringMapper": [
+    "tab"
+  ],
+  "minLengthFrom": [
+    "constraints"
+  ],
+  "maxLengthFrom": [
+    "constraints"
+  ],
+  "patternsToStringUnmapperIsValidLength": [
+    "tokens",
+    "constraints"
+  ],
+  "patternsToStringUnmapperFor": [
+    "patternsArb",
+    "constraints"
+  ],
+  "segmentsToPathMapper": [
+    "segments"
+  ],
+  "segmentsToPathUnmapper": [
+    "value"
+  ],
+  "stringToBase64Mapper": [
+    "s"
+  ],
+  "stringToBase64Unmapper": [
+    "value"
+  ],
+  "timeToDateMapper": [
+    "time"
+  ],
+  "timeToDateUnmapper": [
+    "value"
+  ],
+  "timeToDateMapperWithNaN": [
+    "valueForNaN"
+  ],
+  "timeToDateUnmapperWithNaN": [
+    "valueForNaN"
+  ],
+  "encodeSymbol": [
+    "symbol"
+  ],
+  "pad": [
+    "value",
+    "paddingLength"
+  ],
+  "smallUintToBase32StringMapper": [
+    "num"
+  ],
+  "uintToBase32StringMapper": [
+    "num",
+    "paddingLength"
+  ],
+  "paddedUintToBase32StringMapper": [
+    "paddingLength"
+  ],
+  "uintToBase32StringUnmapper": [
+    "value"
+  ],
+  "unboxedToBoxedMapper": [
+    "value"
+  ],
+  "unboxedToBoxedUnmapper": [
+    "value"
+  ],
+  "withTargetStringifiedValue": [
+    "stringifiedValue"
+  ],
+  "withReferenceStringifiedValue": [
+    "type",
+    "index"
+  ],
+  "unlinkedToLinkedEntitiesMapper": [
+    "unlinkedEntities",
+    "producedLinks"
+  ],
+  "buildValuesAndSeparateKeysToObjectMapper": [
+    "keys",
+    "noKeyValue"
+  ],
+  "buildValuesAndSeparateKeysToObjectUnmapper": [
+    "keys",
+    "noKeyValue"
+  ],
+  "buildVersionsAppliersForUuid": [
+    "versions"
+  ],
+  "versionsApplierMapper": [
+    "value"
+  ],
+  "versionsApplierUnmapper": [
+    "value"
+  ],
+  "wordsToJoinedStringMapper": [
+    "words"
+  ],
+  "wordsToJoinedStringUnmapperFor": [
+    "wordsArbitrary"
+  ],
+  "wordsToSentenceMapper": [
+    "words"
+  ],
+  "wordsToSentenceUnmapperFor": [
+    "wordsArbitrary"
+  ],
+  "sentencesToParagraphMapper": [
+    "sentences"
+  ],
+  "sentencesToParagraphUnmapper": [
+    "value"
+  ],
+  "anything": [
+    "constraints"
+  ],
+  "array": [
+    "arb",
+    "param"
+  ],
+  "base64Mapper": [
+    "v"
+  ],
+  "base64Unmapper": [
+    "s"
+  ],
+  "base64": [],
+  "base64String": [
+    "param"
+  ],
+  "buildCompleteBigIntConstraints": [
+    "constraints"
+  ],
+  "extractBigIntConstraints": [
+    "args"
+  ],
+  "bigInt": [
+    "param"
+  ],
+  "bigInt64Array": [
+    "param"
+  ],
+  "bigUint64Array": [
+    "param"
+  ],
+  "booleanMapper": [
+    "v"
+  ],
+  "booleanUnmapper": [
+    "v"
+  ],
+  "boolean": [],
+  "clone": [
+    "arb",
+    "numValues"
+  ],
+  "commands": [
+    "commandArbs",
+    "param"
+  ],
+  "compareBooleanFunc": [],
+  "compareFunc": [],
+  "constant": [
+    "value"
+  ],
+  "constantFrom": [
+    "param"
+  ],
+  "ContextImplem": {
+    "constructor": [],
+    "log": [
+      "data"
+    ],
+    "size": [],
+    "toString": []
+  },
+  "context": [],
+  "date": [
+    "param"
+  ],
+  "dictionaryKeyExtractor": [
+    "entry"
+  ],
+  "dictionary": [
+    "keyArb",
+    "valueArb",
+    "param"
+  ],
+  "toSubdomainLabelMapper": [
+    "param"
+  ],
+  "toSubdomainLabelUnmapper": [
+    "value"
+  ],
+  "subdomainLabel": [
+    "size"
+  ],
+  "labelsMapper": [
+    "elements"
+  ],
+  "labelsUnmapper": [
+    "value"
+  ],
+  "labelsAdapter": [
+    "labels"
+  ],
+  "domain": [
+    "param"
+  ],
+  "safeDoubleToIndex": [
+    "d",
+    "constraintsLabel"
+  ],
+  "unmapperDoubleToIndex": [
+    "value"
+  ],
+  "numberIsNotInteger": [
+    "value"
+  ],
+  "anyDouble": [
+    "constraints"
+  ],
+  "double": [
+    "param"
+  ],
+  "dotAdapter": [
+    "a"
+  ],
+  "dotMapper": [
+    "a"
+  ],
+  "dotUnmapper": [
+    "value"
+  ],
+  "atMapper": [
+    "data"
+  ],
+  "atUnmapper": [
+    "value"
+  ],
+  "emailAddress": [
+    "param"
+  ],
+  "entityGraph": [
+    "arbitraries",
+    "relations",
+    "param"
+  ],
+  "falsy": [
+    "constraints"
+  ],
+  "safeFloatToIndex": [
+    "f",
+    "constraintsLabel"
+  ],
+  "unmapperFloatToIndex": [
+    "value"
+  ],
+  "anyFloat": [
+    "constraints"
+  ],
+  "float": [
+    "param"
+  ],
+  "toTypedMapper": [
+    "data"
+  ],
+  "fromTypedUnmapper": [
+    "value"
+  ],
+  "float32Array": [
+    "param"
+  ],
+  "float64Array": [
+    "param"
+  ],
+  "func": [
+    "arb"
+  ],
+  "gen": [],
+  "infiniteStream": [
+    "arb",
+    "constraints"
+  ],
+  "int16Array": [
+    "param"
+  ],
+  "int32Array": [
+    "param"
+  ],
+  "int8Array": [
+    "param"
+  ],
+  "buildCompleteIntegerConstraints": [
+    "constraints"
+  ],
+  "integer": [
+    "param"
+  ],
+  "dotJoinerMapper": [
+    "data"
+  ],
+  "dotJoinerUnmapper": [
+    "value"
+  ],
+  "ipV4": [],
+  "ipV4Extended": [],
+  "h16sTol32Mapper": [
+    "param"
+  ],
+  "h16sTol32Unmapper": [
+    "value"
+  ],
+  "hexa": [],
+  "ipV6": [],
+  "json": [
+    "param"
+  ],
+  "jsonValue": [
+    "param"
+  ],
+  "createLazyArbsPool": [],
+  "getLazyFromPool": [
+    "key"
+  ],
+  "letrec": [
+    "builder"
+  ],
+  "limitShrink": [
+    "arbitrary",
+    "maxShrinks"
+  ],
+  "h": [
+    "v",
+    "w"
+  ],
+  "loremWord": [],
+  "lorem": [
+    "param"
+  ],
+  "mapKeyExtractor": [
+    "entry"
+  ],
+  "map": [
+    "keyArb",
+    "valueArb",
+    "param"
+  ],
+  "computeNumChoices": [
+    "options"
+  ],
+  "mapToConstant": [
+    "param"
+  ],
+  "maxSafeInteger": [],
+  "maxSafeNat": [],
+  "memo": [
+    "builder"
+  ],
+  "defaultToggleCase": [
+    "rawChar"
+  ],
+  "mixedCase": [
+    "stringArb",
+    "constraints"
+  ],
+  "nat": [
+    "arg"
+  ],
+  "NoBiasArbitrary": {
+    "constructor": [
+      "arb"
+    ],
+    "generate": [
+      "mrng",
+      "_biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "value",
+      "context"
+    ]
+  },
+  "noBias": [
+    "arb"
+  ],
+  "NoShrinkArbitrary": {
+    "constructor": [
+      "arb"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "_value",
+      "_context"
+    ]
+  },
+  "noShrink": [
+    "arb"
+  ],
+  "objectInternal": [
+    "constraints"
+  ],
+  "object": [
+    "constraints"
+  ],
+  "isOneOfContraints": [
+    "param"
+  ],
+  "toWeightedArbitrary": [
+    "maybeWeightedArbitrary"
+  ],
+  "oneof": [
+    "param"
+  ],
+  "option": [
+    "arb",
+    "param"
+  ],
+  "record": [
+    "recordModel",
+    "constraints"
+  ],
+  "scheduler": [
+    "constraints"
+  ],
+  "schedulerFor": [
+    "customOrderingOrConstraints",
+    "constraintsOrUndefined"
+  ],
+  "set": [
+    "arb",
+    "param"
+  ],
+  "shuffledSubarray": [
+    "originalArray",
+    "param"
+  ],
+  "extractMaxIndex": [
+    "indexesAndValues"
+  ],
+  "arrayFromItems": [
+    "length",
+    "indexesAndValues"
+  ],
+  "sparseArray": [
+    "arb",
+    "param"
+  ],
+  "extractUnitArbitrary": [
+    "constraints"
+  ],
+  "string": [
+    "param"
+  ],
+  "defaultChar": [],
+  "toMatchingArbitrary": [
+    "astNode",
+    "constraints",
+    "flags"
+  ],
+  "stringMatching": [
+    "regex",
+    "param"
+  ],
+  "subarray": [
+    "originalArray",
+    "param"
+  ],
+  "tuple": [
+    "param"
+  ],
+  "uint16Array": [
+    "param"
+  ],
+  "uint32Array": [
+    "param"
+  ],
+  "uint8Array": [
+    "param"
+  ],
+  "uint8ClampedArray": [
+    "param"
+  ],
+  "ulidMapper": [
+    "parts"
+  ],
+  "ulidUnmapper": [
+    "value"
+  ],
+  "ulid": [],
+  "buildUniqueArraySetBuilder": [
+    "constraints"
+  ],
+  "isEqualForBuilder": [
+    "nextA",
+    "nextB"
+  ],
+  "refinedSelector": [
+    "next"
+  ],
+  "uniqueArray": [
+    "arb",
+    "param"
+  ],
+  "assertValidVersions": [
+    "versions"
+  ],
+  "uuid": [
+    "param"
+  ],
+  "hostUserInfo": [
+    "size"
+  ],
+  "userHostPortMapper": [
+    "param"
+  ],
+  "userHostPortUnmapper": [
+    "value"
+  ],
+  "bracketedMapper": [
+    "s"
+  ],
+  "bracketedUnmapper": [
+    "value"
+  ],
+  "webAuthority": [
+    "constraints"
+  ],
+  "webFragments": [
+    "param"
+  ],
+  "webPath": [
+    "constraints"
+  ],
+  "webQueryParameters": [
+    "param"
+  ],
+  "webSegment": [
+    "param"
+  ],
+  "webUrl": [
+    "constraints"
+  ],
+  "Arbitrary": {
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "value",
+      "context"
+    ],
+    "filter": [
+      "predicate"
+    ],
+    "map": [
+      "mapper",
+      "unmapper"
+    ],
+    "chain": [
+      "chainer"
+    ]
+  },
+  "ChainArbitrary": {
+    "constructor": [
+      "arb",
+      "chainer"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "value",
+      "context"
+    ],
+    "valueChainer": [
+      "v",
+      "generateMrng",
+      "clonedMrng",
+      "biasFactor"
+    ],
+    "isSafeContext": [
+      "context"
+    ]
+  },
+  "MapArbitrary": {
+    "constructor": [
+      "arb",
+      "mapper",
+      "unmapper"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "value",
+      "context"
+    ],
+    "mapperWithCloneIfNeeded": [
+      "v"
+    ],
+    "valueMapper": [
+      "v"
+    ],
+    "isSafeContext": [
+      "context"
+    ]
+  },
+  "FilterArbitrary": {
+    "constructor": [
+      "arb",
+      "refinement"
+    ],
+    "generate": [
+      "mrng",
+      "biasFactor"
+    ],
+    "canShrinkWithoutContext": [
+      "value"
+    ],
+    "shrink": [
+      "value",
+      "context"
+    ],
+    "refinementOnValue": [
+      "v"
+    ]
+  },
+  "isArbitrary": [
+    "instance"
+  ],
+  "assertIsArbitrary": [
+    "instance"
+  ],
+  "Value": {
+    "hasToBeCloned": [],
+    "value": [],
+    "value_": [],
+    "context": [],
+    "constructor": [
+      "value_",
+      "context",
+      "customGetValue"
+    ]
+  },
+  "genericModelRun": [
+    "s",
+    "cmds",
+    "initialValue",
+    "runCmd",
+    "then"
+  ],
+  "internalModelRun": [
+    "s",
+    "cmds"
+  ],
+  "then": [
+    "p",
+    "c"
+  ],
+  "runSync": [
+    "cmd",
+    "m",
+    "r"
+  ],
+  "isAsyncSetup": [
+    "s"
+  ],
+  "internalAsyncModelRun": [
+    "s",
+    "cmds",
+    "param"
+  ],
+  "runAsync": [
+    "cmd",
+    "m",
+    "r"
+  ],
+  "modelRun": [
+    "s",
+    "cmds"
+  ],
+  "asyncModelRun": [
+    "s",
+    "cmds"
+  ],
+  "scheduledModelRun": [
+    "scheduler",
+    "s",
+    "cmds"
+  ],
+  "ReplayPath": {
+    "parse": [
+      "replayPathStr"
+    ],
+    "stringify": [
+      "replayPath"
+    ],
+    "intToB64": [
+      "n"
+    ],
+    "b64ToInt": [
+      "c"
+    ],
+    "countOccurences": [
+      "replayPath"
+    ],
+    "parseOccurences": [
+      "counts",
+      "changes"
+    ],
+    "stringifyChanges": [
+      "occurences"
+    ],
+    "parseChanges": [
+      "serializedChanges"
+    ],
+    "stringifyCounts": [
+      "occurences"
+    ],
+    "parseCounts": [
+      "serializedCount"
+    ]
+  },
+  "CommandWrapper": {
+    "cmd": [],
+    "hasRan": [],
+    "constructor": [
+      "cmd"
+    ],
+    "check": [
+      "m"
+    ],
+    "run": [
+      "m",
+      "r"
+    ],
+    "clone": [],
+    "toString": []
+  },
+  "CommandsIterable": {
+    "commands": [],
+    "metadataForReplay": [],
+    "constructor": [
+      "commands",
+      "metadataForReplay"
+    ],
+    "toString": []
+  },
+  "ScheduledCommand": {
+    "constructor": [
+      "s",
+      "cmd"
+    ],
+    "check": [
+      "m"
+    ],
+    "run": [
+      "m",
+      "r"
+    ]
+  },
+  "scheduleCommands": [
+    "s",
+    "cmds"
+  ],
+  "pre": [
+    "expectTruthy"
+  ],
+  "PreconditionFailure": {
+    "interruptExecution": [],
+    "constructor": [
+      "interruptExecution"
+    ],
+    "isFailure": [
+      "err"
+    ]
+  },
+  "AsyncProperty": {
+    "constructor": [
+      "arb",
+      "predicate"
+    ],
+    "isAsync": [],
+    "generate": [
+      "mrng",
+      "runId"
+    ],
+    "shrink": [
+      "value"
+    ],
+    "runBeforeEach": [],
+    "runAfterEach": [],
+    "run": [
+      "v"
+    ],
+    "beforeEach": [
+      "hookFunction"
+    ],
+    "afterEach": [
+      "hookFunction"
+    ]
+  },
+  "asyncProperty": [
+    "param"
+  ],
+  "runIdToFrequency": [
+    "runId"
+  ],
+  "fromSyncCached": [
+    "cachedValue"
+  ],
+  "fromCached": [
+    "param"
+  ],
+  "fromCachedUnsafe": [
+    "cachedValue",
+    "isAsync"
+  ],
+  "IgnoreEqualValuesProperty": {
+    "constructor": [
+      "property",
+      "skipRuns"
+    ],
+    "isAsync": [],
+    "generate": [
+      "mrng",
+      "runId"
+    ],
+    "shrink": [
+      "value"
+    ],
+    "run": [
+      "v"
+    ],
+    "runBeforeEach": [],
+    "runAfterEach": []
+  },
+  "Property": {
+    "constructor": [
+      "arb",
+      "predicate"
+    ],
+    "isAsync": [],
+    "generate": [
+      "mrng",
+      "runId"
+    ],
+    "shrink": [
+      "value"
+    ],
+    "runBeforeEach": [],
+    "runAfterEach": [],
+    "run": [
+      "v"
+    ],
+    "beforeEach": [
+      "hookFunction"
+    ],
+    "afterEach": [
+      "hookFunction"
+    ]
+  },
+  "property": [
+    "param"
+  ],
+  "interruptAfter": [
+    "timeMs",
+    "setTimeoutSafe",
+    "clearTimeoutSafe"
+  ],
+  "SkipAfterProperty": {
+    "constructor": [
+      "property",
+      "getTime",
+      "timeLimit",
+      "interruptExecution",
+      "setTimeoutSafe",
+      "clearTimeoutSafe"
+    ],
+    "isAsync": [],
+    "generate": [
+      "mrng",
+      "runId"
+    ],
+    "shrink": [
+      "value"
+    ],
+    "run": [
+      "v"
+    ],
+    "runBeforeEach": [],
+    "runAfterEach": []
+  },
+  "timeoutAfter": [
+    "timeMs",
+    "setTimeoutSafe",
+    "clearTimeoutSafe"
+  ],
+  "TimeoutProperty": {
+    "constructor": [
+      "property",
+      "timeMs",
+      "setTimeoutSafe",
+      "clearTimeoutSafe"
+    ],
+    "isAsync": [],
+    "generate": [
+      "mrng",
+      "runId"
+    ],
+    "shrink": [
+      "value"
+    ],
+    "run": [
+      "v"
+    ],
+    "runBeforeEach": [],
+    "runAfterEach": []
+  },
+  "UnbiasedProperty": {
+    "constructor": [
+      "property"
+    ],
+    "isAsync": [],
+    "generate": [
+      "mrng",
+      "_runId"
+    ],
+    "shrink": [
+      "value"
+    ],
+    "run": [
+      "v"
+    ],
+    "runBeforeEach": [],
+    "runAfterEach": []
+  },
+  "decorateProperty": [
+    "rawProperty",
+    "qParams"
+  ],
+  "runIt": [
+    "property",
+    "shrink",
+    "sourceValues",
+    "verbose",
+    "interruptedAsFailure"
+  ],
+  "asyncRunIt": [
+    "property",
+    "shrink",
+    "sourceValues",
+    "verbose",
+    "interruptedAsFailure"
+  ],
+  "check": [
+    "rawProperty",
+    "params"
+  ],
+  "shrink": [
+    "param"
+  ],
+  "assert": [
+    "property",
+    "params"
+  ],
+  "RunnerIterator": {
+    "constructor": [
+      "sourceValues",
+      "shrink",
+      "verbose",
+      "interruptedAsFailure"
+    ],
+    "next": [],
+    "handleResult": [
+      "result"
+    ]
+  },
+  "toProperty": [
+    "generator",
+    "qParams"
+  ],
+  "streamSample": [
+    "generator",
+    "params"
+  ],
+  "sample": [
+    "generator",
+    "params"
+  ],
+  "round2": [
+    "n"
+  ],
+  "statistics": [
+    "generator",
+    "classify",
+    "params"
+  ],
+  "SourceValuesIterator": {
+    "constructor": [
+      "initialValues",
+      "maxInitialIterations",
+      "remainingSkips"
+    ],
+    "next": [],
+    "skippedOne": []
+  },
+  "tossNext": [
+    "generator",
+    "rng",
+    "index"
+  ],
+  "toss": [
+    "generator",
+    "seed",
+    "random",
+    "examples"
+  ],
+  "lazyGenerate": [
+    "generator",
+    "rng",
+    "idx"
+  ],
+  "lazyToss": [
+    "generator",
+    "seed",
+    "random",
+    "examples"
+  ],
+  "configureGlobal": [
+    "parameters"
+  ],
+  "readConfigureGlobal": [],
+  "resetConfigureGlobal": [],
+  "QualifiedParameters": {
+    "constructor": [
+      "op"
+    ],
+    "toParameters": [],
+    "read": [
+      "op"
+    ]
+  },
+  "RunExecution": {
+    "constructor": [
+      "verbosity",
+      "interruptedAsFailure"
+    ],
+    "appendExecutionTree": [
+      "status",
+      "value"
+    ],
+    "fail": [
+      "value",
+      "id",
+      "failure"
+    ],
+    "skip": [
+      "value"
+    ],
+    "success": [
+      "value"
+    ],
+    "interrupt": [],
+    "extractFailures": [],
+    "toRunDetails": [
+      "seed",
+      "basePath",
+      "maxSkips",
+      "qParams"
+    ]
+  },
+  "produce": [
+    "producer"
+  ],
+  "pathWalk": [
+    "path",
+    "initialProducers",
+    "shrink"
+  ],
+  "formatHints": [
+    "hints"
+  ],
+  "formatFailures": [
+    "failures",
+    "stringifyOne"
+  ],
+  "formatExecutionSummary": [
+    "executionTrees",
+    "stringifyOne"
+  ],
+  "preFormatTooManySkipped": [
+    "out",
+    "stringifyOne"
+  ],
+  "prettyError": [
+    "errorInstance"
+  ],
+  "preFormatFailure": [
+    "out",
+    "stringifyOne"
+  ],
+  "preFormatEarlyInterrupted": [
+    "out",
+    "stringifyOne"
+  ],
+  "defaultReportMessageInternal": [
+    "out",
+    "stringifyOne"
+  ],
+  "defaultReportMessage": [
+    "out"
+  ],
+  "asyncDefaultReportMessage": [
+    "out"
+  ],
+  "stringifyOne": [
+    "value"
+  ],
+  "stringifySecond": [
+    "value"
+  ],
+  "buildError": [
+    "errorMessage",
+    "out"
+  ],
+  "throwIfFailed": [
+    "out"
+  ],
+  "asyncThrowIfFailed": [
+    "out"
+  ],
+  "reportRunDetails": [
+    "out"
+  ],
+  "asyncReportRunDetails": [
+    "out"
+  ],
+  "hasCloneMethod": [
+    "instance"
+  ],
+  "cloneIfNeeded": [
+    "instance"
+  ],
+  "Random": {
+    "MIN_INT": [],
+    "MAX_INT": [],
+    "DBL_FACTOR": [],
+    "DBL_DIVISOR": [],
+    "constructor": [
+      "sourceRng"
+    ],
+    "clone": [],
+    "next": [
+      "bits"
+    ],
+    "nextBoolean": [],
+    "nextInt": [
+      "min",
+      "max"
+    ],
+    "nextBigInt": [
+      "min",
+      "max"
+    ],
+    "nextDouble": [],
+    "getState": []
+  },
+  "LazyIterableIterator": {
+    "constructor": [
+      "producer"
+    ],
+    "next": []
+  },
+  "makeLazy": [
+    "producer"
+  ],
+  "Stream": {
+    "nil": [],
+    "of": [
+      "param"
+    ],
+    "constructor": [
+      "g"
+    ],
+    "next": [],
+    "map": [
+      "f"
+    ],
+    "flatMap": [
+      "f"
+    ],
+    "dropWhile": [
+      "f"
+    ],
+    "drop": [
+      "n"
+    ],
+    "takeWhile": [
+      "f"
+    ],
+    "take": [
+      "n"
+    ],
+    "filter": [
+      "f"
+    ],
+    "every": [
+      "f"
+    ],
+    "has": [
+      "f"
+    ],
+    "join": [
+      "param"
+    ],
+    "getNthOrLast": [
+      "nth"
+    ]
+  },
+  "helper": [],
+  "stream": [
+    "g"
+  ],
+  "Nil": {
+    "next": [
+      "value"
+    ]
+  },
+  "nilHelper": [],
+  "mapHelper": [
+    "g",
+    "f"
+  ],
+  "flatMapHelper": [
+    "g",
+    "f"
+  ],
+  "filterHelper": [
+    "g",
+    "f"
+  ],
+  "takeNHelper": [
+    "g",
+    "n"
+  ],
+  "takeWhileHelper": [
+    "g",
+    "f"
+  ],
+  "joinHelper": [
+    "g",
+    "others"
+  ],
+  "safeExtractApply": [
+    "f"
+  ],
+  "safeApplyHacky": [
+    "f",
+    "instance",
+    "args"
+  ],
+  "safeApply": [
+    "f",
+    "instance",
+    "args"
+  ],
+  "extractForEach": [
+    "instance"
+  ],
+  "extractIndexOf": [
+    "instance"
+  ],
+  "extractJoin": [
+    "instance"
+  ],
+  "extractMap": [
+    "instance"
+  ],
+  "extractFlat": [
+    "instance"
+  ],
+  "extractFilter": [
+    "instance"
+  ],
+  "extractPush": [
+    "instance"
+  ],
+  "extractPop": [
+    "instance"
+  ],
+  "extractSplice": [
+    "instance"
+  ],
+  "extractSlice": [
+    "instance"
+  ],
+  "extractSort": [
+    "instance"
+  ],
+  "extractEvery": [
+    "instance"
+  ],
+  "safeForEach": [
+    "instance",
+    "fn"
+  ],
+  "safeIndexOf": [
+    "instance",
+    "param"
+  ],
+  "safeJoin": [
+    "instance",
+    "param"
+  ],
+  "safeMap": [
+    "instance",
+    "fn"
+  ],
+  "safeFlat": [
+    "instance",
+    "depth"
+  ],
+  "safeFilter": [
+    "instance",
+    "predicate"
+  ],
+  "safePush": [
+    "instance",
+    "param"
+  ],
+  "safeSplice": [
+    "instance",
+    "param"
+  ],
+  "safeSlice": [
+    "instance",
+    "param"
+  ],
+  "safeSort": [
+    "instance",
+    "param"
+  ],
+  "safeEvery": [
+    "instance",
+    "param"
+  ],
+  "extractGetTime": [
+    "instance"
+  ],
+  "extractToISOString": [
+    "instance"
+  ],
+  "safeGetTime": [
+    "instance"
+  ],
+  "safeToISOString": [
+    "instance"
+  ],
+  "extractAdd": [
+    "instance"
+  ],
+  "extractHas": [
+    "instance"
+  ],
+  "safeAdd": [
+    "instance",
+    "value"
+  ],
+  "safeHas": [
+    "instance",
+    "value"
+  ],
+  "extractSet": [
+    "instance"
+  ],
+  "extractGet": [
+    "instance"
+  ],
+  "safeSet": [
+    "instance",
+    "key",
+    "value"
+  ],
+  "safeGet": [
+    "instance",
+    "key"
+  ],
+  "extractMapSet": [
+    "instance"
+  ],
+  "extractMapGet": [
+    "instance"
+  ],
+  "extractMapHas": [
+    "instance"
+  ],
+  "safeMapSet": [
+    "instance",
+    "key",
+    "value"
+  ],
+  "safeMapGet": [
+    "instance",
+    "key"
+  ],
+  "safeMapHas": [
+    "instance",
+    "key"
+  ],
+  "extractSplit": [
+    "instance"
+  ],
+  "extractStartsWith": [
+    "instance"
+  ],
+  "extractEndsWith": [
+    "instance"
+  ],
+  "extractSubstring": [
+    "instance"
+  ],
+  "extractToLowerCase": [
+    "instance"
+  ],
+  "extractToUpperCase": [
+    "instance"
+  ],
+  "extractPadStart": [
+    "instance"
+  ],
+  "extractCharCodeAt": [
+    "instance"
+  ],
+  "extractNormalize": [
+    "instance"
+  ],
+  "extractReplace": [
+    "instance"
+  ],
+  "safeSplit": [
+    "instance",
+    "param"
+  ],
+  "safeStartsWith": [
+    "instance",
+    "param"
+  ],
+  "safeEndsWith": [
+    "instance",
+    "param"
+  ],
+  "safeSubstring": [
+    "instance",
+    "param"
+  ],
+  "safeToLowerCase": [
+    "instance"
+  ],
+  "safeToUpperCase": [
+    "instance"
+  ],
+  "safePadStart": [
+    "instance",
+    "param"
+  ],
+  "safeCharCodeAt": [
+    "instance",
+    "index"
+  ],
+  "safeNormalize": [
+    "instance",
+    "form"
+  ],
+  "safeReplace": [
+    "instance",
+    "pattern",
+    "replacement"
+  ],
+  "extractNumberToString": [
+    "instance"
+  ],
+  "safeNumberToString": [
+    "instance",
+    "param"
+  ],
+  "safeHasOwnProperty": [
+    "instance",
+    "v"
+  ],
+  "safeToString": [
+    "instance"
+  ],
+  "safeErrorToString": [
+    "instance"
+  ],
+  "hash": [
+    "repr"
+  ],
+  "hasToStringMethod": [
+    "instance"
+  ],
+  "hasAsyncToStringMethod": [
+    "instance"
+  ],
+  "getSymbolDescription": [
+    "s"
+  ],
+  "stringifyNumber": [
+    "numValue"
+  ],
+  "isSparseArray": [
+    "arr"
+  ],
+  "stringifyInternal": [
+    "value",
+    "previousValues",
+    "getAsyncContent"
+  ],
+  "mapper": [
+    "k"
+  ],
+  "stringify": [
+    "value"
+  ],
+  "possiblyAsyncStringify": [
+    "value"
+  ],
+  "createDelay0": [],
+  "cancel": [],
+  "getAsyncContent": [
+    "data"
+  ],
+  "loop": [],
+  "asyncStringify": [
+    "value"
+  ]
+}

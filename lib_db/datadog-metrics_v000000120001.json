@@ -1,0 +1,205 @@
+{
+  "Aggregator": {
+    "constructor": [
+      "defaultTags"
+    ],
+    "makeBufferKey": [
+      "key",
+      "tags"
+    ],
+    "addPoint": [
+      "Type",
+      "key",
+      "value",
+      "tags",
+      "host",
+      "timestampInMillis",
+      "options"
+    ],
+    "flush": []
+  },
+  "AuthorizationError": {
+    "constructor": [
+      "message",
+      "param"
+    ]
+  },
+  "BufferedMetricsLogger": {
+    "constructor": [
+      "opts"
+    ],
+    "addPoint": [
+      "Type",
+      "key",
+      "value",
+      "tags",
+      "timestampInMillis",
+      "options"
+    ],
+    "gauge": [
+      "key",
+      "value",
+      "tags",
+      "timestampInMillis"
+    ],
+    "increment": [
+      "key",
+      "value",
+      "tags",
+      "timestampInMillis"
+    ],
+    "histogram": [
+      "key",
+      "value",
+      "tags",
+      "timestampInMillis",
+      "param"
+    ],
+    "distribution": [
+      "key",
+      "value",
+      "tags",
+      "timestampInMillis"
+    ],
+    "flush": [
+      "onSuccess",
+      "onError"
+    ],
+    "start": [],
+    "stop": [
+      "options"
+    ],
+    "performAutoFlush": [],
+    "handleProcessExit": []
+  },
+  "Metric": {
+    "constructor": [
+      "key",
+      "tags",
+      "host"
+    ],
+    "addPoint": [],
+    "flush": [],
+    "posixTimestamp": [
+      "timestampInMillis"
+    ],
+    "updateTimestamp": [
+      "timestampInMillis"
+    ],
+    "serializeMetric": [
+      "value",
+      "type",
+      "key"
+    ]
+  },
+  "Gauge": {
+    "constructor": [
+      "key",
+      "tags",
+      "host"
+    ],
+    "addPoint": [
+      "val",
+      "timestampInMillis"
+    ],
+    "flush": []
+  },
+  "Counter": {
+    "constructor": [
+      "key",
+      "tags",
+      "host"
+    ],
+    "addPoint": [
+      "val",
+      "timestampInMillis"
+    ],
+    "flush": []
+  },
+  "Histogram": {
+    "constructor": [
+      "key",
+      "tags",
+      "host",
+      "param"
+    ],
+    "addPoint": [
+      "val",
+      "timestampInMillis"
+    ],
+    "flush": [],
+    "average": [],
+    "median": [
+      "sortedSamples"
+    ]
+  },
+  "Distribution": {
+    "constructor": [
+      "key",
+      "tags",
+      "host"
+    ],
+    "addPoint": [
+      "val",
+      "timestampInMillis"
+    ],
+    "flush": [],
+    "serializeMetric": [
+      "points",
+      "type",
+      "key"
+    ]
+  },
+  "NullReporter": {
+    "report": [
+      "_series"
+    ]
+  },
+  "DatadogReporter": {
+    "constructor": [
+      "param"
+    ],
+    "report": [
+      "series"
+    ]
+  },
+  "DataDogReporter": {
+    "constructor": [
+      "apiKey",
+      "appKey",
+      "site"
+    ]
+  },
+  "init": [
+    "opts"
+  ],
+  "callOnSharedLogger": [
+    "func"
+  ],
+  "logError": [
+    "error",
+    "param"
+  ],
+  "logDeprecation": [
+    "message"
+  ],
+  "sleep": [
+    "milliseconds"
+  ],
+  "RetryHttp": {
+    "constructor": [
+      "param"
+    ],
+    "send": [
+      "request"
+    ],
+    "isRetryable": [
+      "response",
+      "tryCount"
+    ],
+    "retryDelay": [
+      "response",
+      "tryCount"
+    ]
+  }
+}
