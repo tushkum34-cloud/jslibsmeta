@@ -1,0 +1,454 @@
+{
+  "bundle": [
+    "parser",
+    "options"
+  ],
+  "crawl": [
+    "obj",
+    "path",
+    "$refs",
+    "options",
+    "seen",
+    "external"
+  ],
+  "inventory$Ref": [
+    "$refParent",
+    "$refKey",
+    "path",
+    "pathFromRoot",
+    "indirections",
+    "inventory",
+    "$refs",
+    "options"
+  ],
+  "remap": [
+    "inventory",
+    "options"
+  ],
+  "findInInventory": [
+    "inventory",
+    "$refParent",
+    "$refKey"
+  ],
+  "removeFromInventory": [
+    "inventory",
+    "entry"
+  ],
+  "dereference": [
+    "parser",
+    "options"
+  ],
+  "dereference$Ref": [
+    "$ref",
+    "path",
+    "pathFromRoot",
+    "parents",
+    "processedObjects",
+    "dereferencedCache",
+    "$refs",
+    "options",
+    "startTime"
+  ],
+  "checkDereferenceTimeout": [
+    "startTime",
+    "options"
+  ],
+  "foundCircularReference": [
+    "keyPath",
+    "$refs",
+    "options"
+  ],
+  "$RefParser": {
+    "schema": [],
+    "$refs": [],
+    "parse": [],
+    "resolve": [],
+    "bundle": [],
+    "dereference": []
+  },
+  "finalize": [
+    "parser"
+  ],
+  "normalizeArgs": [
+    "_args"
+  ],
+  "getJsonSchemaRefParserDefaultOptions": [],
+  "getNewOptions": [
+    "options"
+  ],
+  "merge": [
+    "target",
+    "source"
+  ],
+  "isMergeable": [
+    "val"
+  ],
+  "parse": [
+    "u"
+  ],
+  "readFile": [
+    "file",
+    "options",
+    "$refs"
+  ],
+  "parseFile": [
+    "file",
+    "options",
+    "$refs"
+  ],
+  "isEmpty": [
+    "value"
+  ],
+  "Pointer": {
+    "$ref": [],
+    "path": [],
+    "originalPath": [],
+    "value": [],
+    "circular": [],
+    "indirections": [],
+    "constructor": [
+      "$ref",
+      "path",
+      "friendlyPath"
+    ],
+    "resolve": [
+      "obj",
+      "options",
+      "pathFromRoot"
+    ],
+    "set": [
+      "obj",
+      "value",
+      "options"
+    ],
+    "parse": [
+      "path",
+      "originalPath"
+    ],
+    "join": [
+      "base",
+      "tokens"
+    ]
+  },
+  "resolveIf$Ref": [
+    "pointer",
+    "options",
+    "pathFromRoot"
+  ],
+  "setValue": [
+    "pointer",
+    "token",
+    "value"
+  ],
+  "unwrapOrThrow": [
+    "value"
+  ],
+  "isRootPath": [
+    "pathFromRoot"
+  ],
+  "$Ref": {
+    "path": [],
+    "value": [],
+    "$refs": [],
+    "pathType": [],
+    "errors": [],
+    "constructor": [
+      "$refs"
+    ],
+    "addError": [
+      "err"
+    ],
+    "exists": [
+      "path",
+      "options"
+    ],
+    "get": [
+      "path",
+      "options"
+    ],
+    "resolve": [
+      "path",
+      "options",
+      "friendlyPath",
+      "pathFromRoot"
+    ],
+    "set": [
+      "path",
+      "value"
+    ],
+    "is$Ref": [
+      "value"
+    ],
+    "isExternal$Ref": [
+      "value"
+    ],
+    "isAllowed$Ref": [
+      "value",
+      "options"
+    ],
+    "isExtended$Ref": [
+      "value"
+    ],
+    "dereference": [
+      "$ref",
+      "resolvedValue",
+      "options"
+    ]
+  },
+  "deepMerge": [
+    "target",
+    "source"
+  ],
+  "$Refs": {
+    "circular": [],
+    "paths": [
+      "param"
+    ],
+    "values": [
+      "param"
+    ],
+    "exists": [
+      "path",
+      "options"
+    ],
+    "get": [
+      "path",
+      "options"
+    ],
+    "set": [
+      "path",
+      "value"
+    ],
+    "_get$Ref": [
+      "path"
+    ],
+    "_add": [
+      "path"
+    ],
+    "_resolve": [
+      "path",
+      "pathFromRoot",
+      "options"
+    ],
+    "_$refs": [],
+    "_root$Ref": [],
+    "constructor": [],
+    "toJSON": []
+  },
+  "getPaths": [
+    "$refs",
+    "types"
+  ],
+  "resolveExternal": [
+    "parser",
+    "options"
+  ],
+  "resolve$Ref": [
+    "$ref",
+    "path",
+    "$refs",
+    "options"
+  ],
+  "download": [
+    "u",
+    "httpOptions",
+    "_redirects"
+  ],
+  "get": [
+    "u",
+    "httpOptions"
+  ],
+  "convertPathToPosix": [
+    "filePath"
+  ],
+  "JSONParserError": {
+    "name": [],
+    "message": [],
+    "source": [],
+    "path": [],
+    "code": [],
+    "constructor": [
+      "message",
+      "source"
+    ],
+    "toJSON": [],
+    "footprint": []
+  },
+  "JSONParserErrorGroup": {
+    "files": [],
+    "constructor": [
+      "parser"
+    ],
+    "toJSON": [],
+    "getParserErrors": [
+      "parser"
+    ],
+    "errors": []
+  },
+  "ParserError": {
+    "code": [],
+    "name": [],
+    "constructor": [
+      "message",
+      "source"
+    ]
+  },
+  "UnmatchedParserError": {
+    "code": [],
+    "name": [],
+    "constructor": [
+      "source"
+    ]
+  },
+  "ResolverError": {
+    "code": [],
+    "name": [],
+    "ioErrorCode": [],
+    "constructor": [
+      "ex",
+      "source"
+    ]
+  },
+  "UnmatchedResolverError": {
+    "code": [],
+    "name": [],
+    "constructor": [
+      "source"
+    ]
+  },
+  "MissingPointerError": {
+    "code": [],
+    "name": [],
+    "targetToken": [],
+    "targetRef": [],
+    "targetFound": [],
+    "parentPath": [],
+    "constructor": [
+      "token",
+      "path",
+      "targetRef",
+      "targetFound",
+      "parentPath"
+    ]
+  },
+  "TimeoutError": {
+    "code": [],
+    "name": [],
+    "constructor": [
+      "timeout"
+    ]
+  },
+  "InvalidPointerError": {
+    "code": [],
+    "name": [],
+    "constructor": [
+      "pointer",
+      "path"
+    ]
+  },
+  "toJSON": [
+    "this"
+  ],
+  "getDeepKeys": [
+    "obj",
+    "param"
+  ],
+  "isHandledError": [
+    "err"
+  ],
+  "normalizeError": [
+    "err"
+  ],
+  "isWindows": [],
+  "maybe": [
+    "cb",
+    "promise"
+  ],
+  "makeNext": [],
+  "all": [
+    "plugins"
+  ],
+  "filter": [
+    "plugins",
+    "method",
+    "file",
+    "callback",
+    "$refs"
+  ],
+  "sort": [
+    "plugins"
+  ],
+  "run": [
+    "plugins",
+    "method",
+    "file",
+    "$refs"
+  ],
+  "runNextPlugin": [],
+  "callback": [
+    "err",
+    "result"
+  ],
+  "onSuccess": [
+    "result"
+  ],
+  "onError": [
+    "error"
+  ],
+  "getResult": [
+    "obj",
+    "prop",
+    "file",
+    "callback",
+    "$refs"
+  ],
+  "resolve": [
+    "from",
+    "to"
+  ],
+  "cwd": [],
+  "getProtocol": [
+    "path"
+  ],
+  "getExtension": [
+    "path"
+  ],
+  "stripQuery": [
+    "path"
+  ],
+  "getHash": [
+    "path"
+  ],
+  "stripHash": [
+    "path"
+  ],
+  "isHttp": [
+    "path"
+  ],
+  "isUnsafeUrl": [
+    "path"
+  ],
+  "isPrivateIP": [
+    "ip"
+  ],
+  "isInternalPort": [
+    "port"
+  ],
+  "isFileSystemPath": [
+    "path"
+  ],
+  "fromFileSystemPath": [
+    "path"
+  ],
+  "join": [
+    "a",
+    "b"
+  ],
+  "toFileSystemPath": [
+    "path",
+    "keepFileProtocol"
+  ],
+  "safePointerToPath": [
+    "pointer"
+  ]
+}

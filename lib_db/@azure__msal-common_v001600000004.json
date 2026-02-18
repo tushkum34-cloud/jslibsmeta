@@ -1,0 +1,1744 @@
+{
+  "Authority": {
+    "_canonicalAuthority": [],
+    "_canonicalAuthorityUrlComponents": [],
+    "networkInterface": [],
+    "cacheManager": [],
+    "authorityOptions": [],
+    "metadata": [],
+    "regionDiscovery": [],
+    "regionDiscoveryMetadata": [],
+    "logger": [],
+    "performanceClient": [],
+    "correlationId": [],
+    "managedIdentity": [],
+    "reservedTenantDomains": [],
+    "constructor": [
+      "authority",
+      "networkInterface",
+      "cacheManager",
+      "authorityOptions",
+      "logger",
+      "correlationId",
+      "performanceClient",
+      "managedIdentity"
+    ],
+    "getAuthorityType": [
+      "authorityUri"
+    ],
+    "authorityType": [],
+    "protocolMode": [],
+    "options": [],
+    "canonicalAuthority": [
+      "url"
+    ],
+    "canonicalAuthorityUrlComponents": [],
+    "hostnameAndPort": [],
+    "tenant": [],
+    "authorizationEndpoint": [],
+    "tokenEndpoint": [],
+    "deviceCodeEndpoint": [],
+    "endSessionEndpoint": [],
+    "selfSignedJwtAudience": [],
+    "jwksUri": [],
+    "canReplaceTenant": [
+      "authorityUri"
+    ],
+    "replaceTenant": [
+      "urlString"
+    ],
+    "replacePath": [
+      "urlString"
+    ],
+    "defaultOpenIdConfigurationEndpoint": [],
+    "discoveryComplete": [],
+    "resolveEndpointsAsync": [],
+    "getCurrentMetadataEntity": [],
+    "updateCachedMetadata": [
+      "metadataEntity",
+      "cloudDiscoverySource",
+      "endpointMetadataResult"
+    ],
+    "updateEndpointMetadata": [
+      "metadataEntity"
+    ],
+    "updateEndpointMetadataFromLocalSources": [
+      "metadataEntity"
+    ],
+    "isAuthoritySameType": [
+      "metadataEntity"
+    ],
+    "getEndpointMetadataFromConfig": [],
+    "getEndpointMetadataFromNetwork": [],
+    "getEndpointMetadataFromHardcodedValues": [],
+    "updateMetadataWithRegionalInformation": [
+      "metadata"
+    ],
+    "updateCloudDiscoveryMetadata": [
+      "metadataEntity"
+    ],
+    "updateCloudDiscoveryMetadataFromLocalSources": [
+      "metadataEntity"
+    ],
+    "getCloudDiscoveryMetadataFromConfig": [],
+    "getCloudDiscoveryMetadataFromNetwork": [],
+    "isInKnownAuthorities": [],
+    "generateAuthority": [
+      "authorityString",
+      "azureCloudOptions"
+    ],
+    "createCloudDiscoveryMetadataFromHost": [
+      "host"
+    ],
+    "getPreferredCache": [],
+    "isAlias": [
+      "host"
+    ],
+    "isAliasOfKnownMicrosoftAuthority": [
+      "host"
+    ],
+    "isPublicCloudAuthority": [
+      "host"
+    ],
+    "buildRegionalAuthorityString": [
+      "host",
+      "region",
+      "queryString"
+    ],
+    "replaceWithRegionalInformation": [
+      "metadata",
+      "azureRegion"
+    ],
+    "transformCIAMAuthority": [
+      "authority"
+    ]
+  },
+  "RegionDiscovery": {
+    "networkInterface": [],
+    "logger": [],
+    "performanceClient": [],
+    "correlationId": [],
+    "IMDS_OPTIONS": [],
+    "constructor": [
+      "networkInterface",
+      "logger",
+      "performanceClient",
+      "correlationId"
+    ],
+    "detectRegion": [
+      "environmentRegion",
+      "regionDiscoveryMetadata"
+    ],
+    "getRegionFromIMDS": [
+      "version",
+      "options"
+    ],
+    "getCurrentVersion": [
+      "options"
+    ]
+  },
+  "CacheManager": {
+    "clientId": [],
+    "cryptoImpl": [],
+    "commonLogger": [],
+    "staticAuthorityOptions": [],
+    "performanceClient": [],
+    "constructor": [
+      "clientId",
+      "cryptoImpl",
+      "logger",
+      "performanceClient",
+      "staticAuthorityOptions"
+    ],
+    "getAccount": [
+      "accountKey",
+      "correlationId"
+    ],
+    "setAccount": [
+      "account",
+      "correlationId",
+      "kmsi",
+      "apiId"
+    ],
+    "getIdTokenCredential": [
+      "idTokenKey",
+      "correlationId"
+    ],
+    "setIdTokenCredential": [
+      "idToken",
+      "correlationId",
+      "kmsi"
+    ],
+    "getAccessTokenCredential": [
+      "accessTokenKey",
+      "correlationId"
+    ],
+    "setAccessTokenCredential": [
+      "accessToken",
+      "correlationId",
+      "kmsi"
+    ],
+    "getRefreshTokenCredential": [
+      "refreshTokenKey",
+      "correlationId"
+    ],
+    "setRefreshTokenCredential": [
+      "refreshToken",
+      "correlationId",
+      "kmsi"
+    ],
+    "getAppMetadata": [
+      "appMetadataKey",
+      "correlationId"
+    ],
+    "setAppMetadata": [
+      "appMetadata",
+      "correlationId"
+    ],
+    "getServerTelemetry": [
+      "serverTelemetryKey",
+      "correlationId"
+    ],
+    "setServerTelemetry": [
+      "serverTelemetryKey",
+      "serverTelemetry",
+      "correlationId"
+    ],
+    "getAuthorityMetadata": [
+      "key",
+      "correlationId"
+    ],
+    "getAuthorityMetadataKeys": [],
+    "setAuthorityMetadata": [
+      "key",
+      "value",
+      "correlationId"
+    ],
+    "getThrottlingCache": [
+      "throttlingCacheKey",
+      "correlationId"
+    ],
+    "setThrottlingCache": [
+      "throttlingCacheKey",
+      "throttlingCache",
+      "correlationId"
+    ],
+    "removeItem": [
+      "key",
+      "correlationId"
+    ],
+    "getKeys": [],
+    "getAccountKeys": [],
+    "getTokenKeys": [],
+    "generateCredentialKey": [
+      "credential"
+    ],
+    "generateAccountKey": [
+      "account"
+    ],
+    "getAllAccounts": [
+      "param",
+      "correlationId"
+    ],
+    "getAccountInfoFilteredBy": [
+      "accountFilter",
+      "correlationId"
+    ],
+    "getBaseAccountInfo": [
+      "accountFilter",
+      "correlationId"
+    ],
+    "buildTenantProfiles": [
+      "cachedAccounts",
+      "correlationId",
+      "accountFilter"
+    ],
+    "getTenantedAccountInfoByFilter": [
+      "accountInfo",
+      "tokenKeys",
+      "tenantProfile",
+      "correlationId",
+      "tenantProfileFilter"
+    ],
+    "getTenantProfilesFromAccountEntity": [
+      "accountEntity",
+      "correlationId",
+      "targetTenantId",
+      "tenantProfileFilter"
+    ],
+    "tenantProfileMatchesFilter": [
+      "tenantProfile",
+      "tenantProfileFilter"
+    ],
+    "idTokenClaimsMatchTenantProfileFilter": [
+      "idTokenClaims",
+      "tenantProfileFilter"
+    ],
+    "saveCacheRecord": [
+      "cacheRecord",
+      "correlationId",
+      "kmsi",
+      "apiId",
+      "storeInCache"
+    ],
+    "saveAccessToken": [
+      "credential",
+      "correlationId",
+      "kmsi"
+    ],
+    "getAccountsFilteredBy": [
+      "accountFilter",
+      "correlationId"
+    ],
+    "credentialMatchesFilter": [
+      "entity",
+      "filter",
+      "correlationId"
+    ],
+    "getAppMetadataFilteredBy": [
+      "filter",
+      "correlationId"
+    ],
+    "getAuthorityMetadataByAlias": [
+      "host",
+      "correlationId"
+    ],
+    "removeAllAccounts": [
+      "correlationId"
+    ],
+    "removeAccount": [
+      "account",
+      "correlationId"
+    ],
+    "removeAccountContext": [
+      "account",
+      "correlationId"
+    ],
+    "removeAccessToken": [
+      "key",
+      "correlationId"
+    ],
+    "removeAppMetadata": [
+      "correlationId"
+    ],
+    "getIdToken": [
+      "account",
+      "correlationId",
+      "tokenKeys",
+      "targetRealm"
+    ],
+    "getIdTokensByFilter": [
+      "filter",
+      "correlationId",
+      "tokenKeys"
+    ],
+    "idTokenKeyMatchesFilter": [
+      "inputKey",
+      "filter"
+    ],
+    "removeIdToken": [
+      "key",
+      "correlationId"
+    ],
+    "removeRefreshToken": [
+      "key",
+      "correlationId"
+    ],
+    "getAccessToken": [
+      "account",
+      "request",
+      "tokenKeys",
+      "targetRealm"
+    ],
+    "accessTokenKeyMatchesFilter": [
+      "inputKey",
+      "filter",
+      "keyMustContainAllScopes"
+    ],
+    "getAccessTokensByFilter": [
+      "filter",
+      "correlationId"
+    ],
+    "getRefreshToken": [
+      "account",
+      "familyRT",
+      "correlationId",
+      "tokenKeys"
+    ],
+    "refreshTokenKeyMatchesFilter": [
+      "inputKey",
+      "filter"
+    ],
+    "readAppMetadataFromCache": [
+      "environment",
+      "correlationId"
+    ],
+    "isAppMetadataFOCI": [
+      "environment",
+      "correlationId"
+    ],
+    "matchHomeAccountId": [
+      "entity",
+      "homeAccountId"
+    ],
+    "matchLocalAccountIdFromTokenClaims": [
+      "tokenClaims",
+      "localAccountId"
+    ],
+    "matchLocalAccountIdFromTenantProfile": [
+      "tenantProfile",
+      "localAccountId"
+    ],
+    "matchName": [
+      "claims",
+      "name"
+    ],
+    "matchUsername": [
+      "cachedUsername",
+      "filterUsername"
+    ],
+    "matchUserAssertionHash": [
+      "entity",
+      "userAssertionHash"
+    ],
+    "matchEnvironment": [
+      "entity",
+      "environment",
+      "correlationId"
+    ],
+    "matchCredentialType": [
+      "entity",
+      "credentialType"
+    ],
+    "matchClientId": [
+      "entity",
+      "clientId"
+    ],
+    "matchFamilyId": [
+      "entity",
+      "familyId"
+    ],
+    "matchRealm": [
+      "entity",
+      "realm"
+    ],
+    "matchNativeAccountId": [
+      "entity",
+      "nativeAccountId"
+    ],
+    "matchLoginHintFromTokenClaims": [
+      "tokenClaims",
+      "loginHint"
+    ],
+    "matchSid": [
+      "idTokenClaims",
+      "sid"
+    ],
+    "matchAuthorityType": [
+      "entity",
+      "authorityType"
+    ],
+    "matchTarget": [
+      "entity",
+      "target"
+    ],
+    "matchTokenType": [
+      "entity",
+      "tokenType"
+    ],
+    "matchKeyId": [
+      "entity",
+      "keyId"
+    ],
+    "isAppMetadata": [
+      "key"
+    ],
+    "isAuthorityMetadata": [
+      "key"
+    ],
+    "generateAuthorityMetadataCacheKey": [
+      "authority"
+    ],
+    "toObject": [
+      "obj",
+      "json"
+    ]
+  },
+  "DefaultStorageClass": {
+    "setAccount": [],
+    "getAccount": [],
+    "setIdTokenCredential": [],
+    "getIdTokenCredential": [],
+    "setAccessTokenCredential": [],
+    "getAccessTokenCredential": [],
+    "setRefreshTokenCredential": [],
+    "getRefreshTokenCredential": [],
+    "setAppMetadata": [],
+    "getAppMetadata": [],
+    "setServerTelemetry": [],
+    "getServerTelemetry": [],
+    "setAuthorityMetadata": [],
+    "getAuthorityMetadata": [],
+    "getAuthorityMetadataKeys": [],
+    "setThrottlingCache": [],
+    "getThrottlingCache": [],
+    "removeItem": [],
+    "getKeys": [],
+    "getAccountKeys": [],
+    "getTokenKeys": [],
+    "generateCredentialKey": [],
+    "generateAccountKey": []
+  },
+  "TokenCacheContext": {
+    "hasChanged": [],
+    "cache": [],
+    "constructor": [
+      "tokenCache",
+      "hasChanged"
+    ],
+    "cacheHasChanged": [],
+    "tokenCache": []
+  },
+  "AuthorizationCodeClient": {
+    "includeRedirectUri": [],
+    "oidcDefaultScopes": [],
+    "logger": [],
+    "config": [],
+    "cryptoUtils": [],
+    "cacheManager": [],
+    "networkClient": [],
+    "serverTelemetryManager": [],
+    "authority": [],
+    "performanceClient": [],
+    "constructor": [
+      "configuration",
+      "performanceClient"
+    ],
+    "acquireToken": [
+      "request",
+      "apiId",
+      "authCodePayload"
+    ],
+    "getLogoutUri": [
+      "logoutRequest"
+    ],
+    "executeTokenRequest": [
+      "authority",
+      "request",
+      "serverTelemetryManager"
+    ],
+    "createTokenRequestBody": [
+      "request"
+    ],
+    "createLogoutUrlQueryString": [
+      "request"
+    ],
+    "updateTokenEndpointAuthority": [
+      "cloudInstanceHostName",
+      "correlationId"
+    ]
+  },
+  "RefreshTokenClient": {
+    "logger": [],
+    "config": [],
+    "cryptoUtils": [],
+    "cacheManager": [],
+    "networkClient": [],
+    "serverTelemetryManager": [],
+    "authority": [],
+    "performanceClient": [],
+    "constructor": [
+      "configuration",
+      "performanceClient"
+    ],
+    "acquireToken": [
+      "request",
+      "apiId"
+    ],
+    "acquireTokenByRefreshToken": [
+      "request",
+      "apiId"
+    ],
+    "acquireTokenWithCachedRefreshToken": [
+      "request",
+      "foci",
+      "apiId"
+    ],
+    "executeTokenRequest": [
+      "request",
+      "authority"
+    ],
+    "createTokenRequestBody": [
+      "request"
+    ]
+  },
+  "SilentFlowClient": {
+    "logger": [],
+    "config": [],
+    "cryptoUtils": [],
+    "cacheManager": [],
+    "networkClient": [],
+    "serverTelemetryManager": [],
+    "authority": [],
+    "performanceClient": [],
+    "constructor": [
+      "configuration",
+      "performanceClient"
+    ],
+    "acquireCachedToken": [
+      "request"
+    ],
+    "setCacheOutcome": [
+      "cacheOutcome",
+      "correlationId"
+    ],
+    "generateResultFromCacheRecord": [
+      "cacheRecord",
+      "request"
+    ]
+  },
+  "JoseHeader": {
+    "typ": [],
+    "alg": [],
+    "kid": [],
+    "constructor": [
+      "options"
+    ],
+    "getShrHeaderString": [
+      "shrHeaderOptions"
+    ]
+  },
+  "PopTokenGenerator": {
+    "cryptoUtils": [],
+    "performanceClient": [],
+    "constructor": [
+      "cryptoUtils",
+      "performanceClient"
+    ],
+    "generateCnf": [
+      "request",
+      "logger"
+    ],
+    "generateKid": [
+      "request"
+    ],
+    "signPopToken": [
+      "accessToken",
+      "keyId",
+      "request"
+    ],
+    "signPayload": [
+      "payload",
+      "keyId",
+      "request",
+      "claims"
+    ]
+  },
+  "AuthError": {
+    "errorCode": [],
+    "errorMessage": [],
+    "subError": [],
+    "correlationId": [],
+    "platformBrokerError": [],
+    "constructor": [
+      "errorCode",
+      "errorMessage",
+      "suberror"
+    ],
+    "setCorrelationId": [
+      "correlationId"
+    ]
+  },
+  "CacheError": {
+    "errorCode": [],
+    "errorMessage": [],
+    "constructor": [
+      "errorCode",
+      "errorMessage"
+    ]
+  },
+  "ClientAuthError": {
+    "constructor": [
+      "errorCode",
+      "additionalMessage"
+    ]
+  },
+  "ClientConfigurationError": {
+    "constructor": [
+      "errorCode"
+    ]
+  },
+  "InteractionRequiredAuthError": {
+    "timestamp": [],
+    "traceId": [],
+    "claims": [],
+    "errorNo": [],
+    "constructor": [
+      "errorCode",
+      "errorMessage",
+      "subError",
+      "timestamp",
+      "traceId",
+      "correlationId",
+      "claims",
+      "errorNo"
+    ]
+  },
+  "JoseHeaderError": {
+    "constructor": [
+      "errorCode",
+      "errorMessage"
+    ]
+  },
+  "NetworkError": {
+    "error": [],
+    "httpStatus": [],
+    "responseHeaders": [],
+    "constructor": [
+      "error",
+      "httpStatus",
+      "responseHeaders"
+    ]
+  },
+  "PlatformBrokerError": {
+    "statusCode": [],
+    "tag": [],
+    "constructor": [
+      "errorStatus",
+      "errorContext",
+      "errorCode",
+      "errorTag"
+    ]
+  },
+  "ServerError": {
+    "errorNo": [],
+    "status": [],
+    "constructor": [
+      "errorCode",
+      "errorMessage",
+      "subError",
+      "errorNo",
+      "status"
+    ]
+  },
+  "Logger": {
+    "level": [],
+    "piiLoggingEnabled": [],
+    "localCallback": [],
+    "packageName": [],
+    "packageVersion": [],
+    "constructor": [
+      "loggerOptions",
+      "packageName",
+      "packageVersion"
+    ],
+    "createDefaultLoggerOptions": [],
+    "clone": [
+      "packageName",
+      "packageVersion"
+    ],
+    "logMessage": [
+      "logMessage",
+      "options"
+    ],
+    "executeCallback": [
+      "level",
+      "message",
+      "containsPii"
+    ],
+    "error": [
+      "message",
+      "correlationId"
+    ],
+    "errorPii": [
+      "message",
+      "correlationId"
+    ],
+    "warning": [
+      "message",
+      "correlationId"
+    ],
+    "warningPii": [
+      "message",
+      "correlationId"
+    ],
+    "info": [
+      "message",
+      "correlationId"
+    ],
+    "infoPii": [
+      "message",
+      "correlationId"
+    ],
+    "verbose": [
+      "message",
+      "correlationId"
+    ],
+    "verbosePii": [
+      "message",
+      "correlationId"
+    ],
+    "trace": [
+      "message",
+      "correlationId"
+    ],
+    "tracePii": [
+      "message",
+      "correlationId"
+    ],
+    "isPiiLoggingEnabled": []
+  },
+  "ThrottlingUtils": {
+    "generateThrottlingStorageKey": [
+      "thumbprint"
+    ],
+    "preProcess": [
+      "cacheManager",
+      "thumbprint",
+      "correlationId"
+    ],
+    "postProcess": [
+      "cacheManager",
+      "thumbprint",
+      "response",
+      "correlationId"
+    ],
+    "checkResponseStatus": [
+      "response"
+    ],
+    "checkResponseForRetryAfter": [
+      "response"
+    ],
+    "calculateThrottleTime": [
+      "throttleTime"
+    ],
+    "removeThrottle": [
+      "cacheManager",
+      "clientId",
+      "request",
+      "homeAccountIdentifier"
+    ]
+  },
+  "AuthenticationHeaderParser": {
+    "headers": [],
+    "constructor": [
+      "headers"
+    ],
+    "getShrNonce": [],
+    "parseChallenges": [
+      "header"
+    ]
+  },
+  "ScopeSet": {
+    "scopes": [],
+    "constructor": [
+      "inputScopes"
+    ],
+    "fromString": [
+      "inputScopeString"
+    ],
+    "createSearchScopes": [
+      "inputScopeString"
+    ],
+    "containsScope": [
+      "scope"
+    ],
+    "containsScopeSet": [
+      "scopeSet"
+    ],
+    "containsOnlyOIDCScopes": [],
+    "appendScope": [
+      "newScope"
+    ],
+    "appendScopes": [
+      "newScopes"
+    ],
+    "removeScope": [
+      "scope"
+    ],
+    "removeOIDCScopes": [],
+    "unionScopeSets": [
+      "otherScopes"
+    ],
+    "intersectingScopeSets": [
+      "otherScopes"
+    ],
+    "getScopeCount": [],
+    "asArray": [],
+    "printScopes": [],
+    "printScopesLowerCase": []
+  },
+  "ResponseHandler": {
+    "clientId": [],
+    "cacheStorage": [],
+    "cryptoObj": [],
+    "logger": [],
+    "homeAccountIdentifier": [],
+    "performanceClient": [],
+    "serializableCache": [],
+    "persistencePlugin": [],
+    "constructor": [
+      "clientId",
+      "cacheStorage",
+      "cryptoObj",
+      "logger",
+      "performanceClient",
+      "serializableCache",
+      "persistencePlugin"
+    ],
+    "validateTokenResponse": [
+      "serverResponse",
+      "correlationId",
+      "refreshAccessToken"
+    ],
+    "handleServerTokenResponse": [
+      "serverTokenResponse",
+      "authority",
+      "reqTimestamp",
+      "request",
+      "apiId",
+      "authCodePayload",
+      "userAssertionHash",
+      "handlingRefreshTokenResponse",
+      "forceCacheRefreshTokenResponse",
+      "serverRequestId"
+    ],
+    "generateCacheRecord": [
+      "serverTokenResponse",
+      "authority",
+      "reqTimestamp",
+      "request",
+      "idTokenClaims",
+      "userAssertionHash",
+      "authCodePayload"
+    ],
+    "generateAuthenticationResult": [
+      "cryptoObj",
+      "authority",
+      "cacheRecord",
+      "fromTokenCache",
+      "request",
+      "performanceClient",
+      "idTokenClaims",
+      "requestState",
+      "serverTokenResponse",
+      "requestId"
+    ]
+  },
+  "PerformanceClient": {
+    "authority": [],
+    "libraryName": [],
+    "libraryVersion": [],
+    "applicationTelemetry": [],
+    "clientId": [],
+    "logger": [],
+    "callbacks": [],
+    "eventsByCorrelationId": [],
+    "intFields": [],
+    "eventStack": [],
+    "constructor": [
+      "clientId",
+      "authority",
+      "logger",
+      "libraryName",
+      "libraryVersion",
+      "applicationTelemetry",
+      "intFields"
+    ],
+    "generateId": [],
+    "startMeasurement": [
+      "measureName",
+      "correlationId"
+    ],
+    "endMeasurement": [
+      "event",
+      "error",
+      "account"
+    ],
+    "addFields": [
+      "fields",
+      "correlationId"
+    ],
+    "incrementFields": [
+      "fields",
+      "correlationId"
+    ],
+    "cacheEventByCorrelationId": [
+      "event"
+    ],
+    "discardMeasurements": [
+      "correlationId"
+    ],
+    "addPerformanceCallback": [
+      "callback"
+    ],
+    "removePerformanceCallback": [
+      "callbackId"
+    ],
+    "emitEvents": [
+      "events",
+      "correlationId"
+    ],
+    "truncateIntegralFields": [
+      "event"
+    ],
+    "getDurationMs": [
+      "startTimeMs"
+    ]
+  },
+  "StubPerformanceMeasurement": {
+    "startMeasurement": [],
+    "endMeasurement": [],
+    "flushMeasurement": []
+  },
+  "StubPerformanceClient": {
+    "generateId": [],
+    "startMeasurement": [
+      "measureName",
+      "correlationId"
+    ],
+    "endMeasurement": [],
+    "discardMeasurements": [],
+    "removePerformanceCallback": [],
+    "addPerformanceCallback": [],
+    "emitEvents": [],
+    "addFields": [],
+    "incrementFields": [],
+    "cacheEventByCorrelationId": []
+  },
+  "ServerTelemetryManager": {
+    "cacheManager": [],
+    "apiId": [],
+    "correlationId": [],
+    "telemetryCacheKey": [],
+    "wrapperSKU": [],
+    "wrapperVer": [],
+    "regionUsed": [],
+    "regionSource": [],
+    "regionOutcome": [],
+    "cacheOutcome": [],
+    "constructor": [
+      "telemetryRequest",
+      "cacheManager"
+    ],
+    "generateCurrentRequestHeaderValue": [],
+    "generateLastRequestHeaderValue": [],
+    "cacheFailedRequest": [
+      "error"
+    ],
+    "incrementCacheHits": [],
+    "getLastRequests": [],
+    "clearTelemetryCache": [],
+    "maxErrorsToSend": [
+      "serverTelemetryEntity"
+    ],
+    "getRegionDiscoveryFields": [],
+    "updateRegionDiscoveryMetadata": [
+      "regionDiscoveryMetadata"
+    ],
+    "setCacheOutcome": [
+      "cacheOutcome"
+    ],
+    "setNativeBrokerErrorCode": [
+      "errorCode"
+    ],
+    "getNativeBrokerErrorCode": [],
+    "clearNativeBrokerErrorCode": [],
+    "makeExtraSkuString": [
+      "params"
+    ]
+  },
+  "UrlString": {
+    "_urlString": [],
+    "urlString": [],
+    "constructor": [
+      "url"
+    ],
+    "canonicalizeUri": [
+      "url"
+    ],
+    "validateAsUri": [],
+    "appendQueryString": [
+      "url",
+      "queryString"
+    ],
+    "removeHashFromUrl": [
+      "url"
+    ],
+    "replaceTenantPath": [
+      "tenantId"
+    ],
+    "getUrlComponents": [],
+    "getDomainFromUrl": [
+      "url"
+    ],
+    "getAbsoluteUrl": [
+      "relativeUrl",
+      "baseUrl"
+    ],
+    "constructAuthorityUriFromObject": [
+      "urlObject"
+    ]
+  },
+  "StringUtils": {
+    "isEmptyObj": [
+      "strObj"
+    ],
+    "startsWith": [
+      "str",
+      "search"
+    ],
+    "endsWith": [
+      "str",
+      "search"
+    ],
+    "queryStringToObject": [
+      "query"
+    ],
+    "trimArrayEntries": [
+      "arr"
+    ],
+    "removeEmptyStringsFromArray": [
+      "arr"
+    ],
+    "jsonParseHelper": [
+      "str"
+    ],
+    "matchPattern": [
+      "pattern",
+      "input"
+    ]
+  },
+  "getDefaultErrorMessage": [
+    "code"
+  ],
+  "createAuthError": [
+    "code",
+    "additionalMessage"
+  ],
+  "createClientAuthError": [
+    "errorCode",
+    "additionalMessage"
+  ],
+  "extractTokenClaims": [
+    "encodedToken",
+    "base64Decode"
+  ],
+  "isKmsi": [
+    "idTokenClaims"
+  ],
+  "getJWSPayload": [
+    "authToken"
+  ],
+  "checkMaxAge": [
+    "authTime",
+    "maxAge"
+  ],
+  "isOpenIdConfigResponse": [
+    "response"
+  ],
+  "createClientConfigurationError": [
+    "errorCode"
+  ],
+  "decode": [
+    "s"
+  ],
+  "buildOpenIdConfig": [
+    "host",
+    "issuerHost"
+  ],
+  "getAliasesFromStaticSources": [
+    "staticAuthorityOptions",
+    "logger",
+    "correlationId"
+  ],
+  "getAliasesFromMetadata": [
+    "logger",
+    "correlationId",
+    "authorityHost",
+    "cloudDiscoveryMetadata",
+    "source"
+  ],
+  "getCloudDiscoveryMetadataFromHardcodedValues": [
+    "authorityHost"
+  ],
+  "getCloudDiscoveryMetadataFromNetworkResponse": [
+    "response",
+    "authorityHost"
+  ],
+  "isCloudInstanceDiscoveryResponse": [
+    "response"
+  ],
+  "isCloudInstanceDiscoveryErrorResponse": [
+    "response"
+  ],
+  "invoke": [
+    "callback",
+    "eventName",
+    "logger",
+    "telemetryClient",
+    "correlationId"
+  ],
+  "invokeAsync": [
+    "callback",
+    "eventName",
+    "logger",
+    "telemetryClient",
+    "correlationId"
+  ],
+  "nowSeconds": [],
+  "toSecondsFromDate": [
+    "date"
+  ],
+  "toDateFromSeconds": [
+    "seconds"
+  ],
+  "isTokenExpired": [
+    "expiresOn",
+    "offset"
+  ],
+  "isCacheExpired": [
+    "lastUpdatedAt",
+    "cacheRetentionDays"
+  ],
+  "wasClockTurnedBack": [
+    "cachedAt"
+  ],
+  "delay": [
+    "t",
+    "value"
+  ],
+  "createIdTokenEntity": [
+    "homeAccountId",
+    "environment",
+    "idToken",
+    "clientId",
+    "tenantId"
+  ],
+  "createAccessTokenEntity": [
+    "homeAccountId",
+    "environment",
+    "accessToken",
+    "clientId",
+    "tenantId",
+    "scopes",
+    "expiresOn",
+    "extExpiresOn",
+    "base64Decode",
+    "refreshOn",
+    "tokenType",
+    "userAssertionHash",
+    "keyId"
+  ],
+  "createRefreshTokenEntity": [
+    "homeAccountId",
+    "environment",
+    "refreshToken",
+    "clientId",
+    "familyId",
+    "userAssertionHash",
+    "expiresOn"
+  ],
+  "isCredentialEntity": [
+    "entity"
+  ],
+  "isAccessTokenEntity": [
+    "entity"
+  ],
+  "isIdTokenEntity": [
+    "entity"
+  ],
+  "isRefreshTokenEntity": [
+    "entity"
+  ],
+  "isServerTelemetryEntity": [
+    "key",
+    "entity"
+  ],
+  "isThrottlingEntity": [
+    "key",
+    "entity"
+  ],
+  "generateAppMetadataKey": [
+    "param"
+  ],
+  "isAppMetadataEntity": [
+    "key",
+    "entity"
+  ],
+  "isAuthorityMetadataEntity": [
+    "key",
+    "entity"
+  ],
+  "generateAuthorityMetadataExpiresAt": [],
+  "updateAuthorityEndpointMetadata": [
+    "authorityMetadata",
+    "updatedValues",
+    "fromNetwork"
+  ],
+  "updateCloudDiscoveryMetadata": [
+    "authorityMetadata",
+    "updatedValues",
+    "fromNetwork"
+  ],
+  "isAuthorityMetadataExpired": [
+    "metadata"
+  ],
+  "getTenantFromAuthorityString": [
+    "authority"
+  ],
+  "formatAuthorityUri": [
+    "authorityUri"
+  ],
+  "buildStaticAuthorityOptions": [
+    "authOptions"
+  ],
+  "createDiscoveredInstance": [
+    "authorityUri",
+    "networkClient",
+    "cacheManager",
+    "authorityOptions",
+    "logger",
+    "correlationId",
+    "performanceClient"
+  ],
+  "canonicalizeUrl": [
+    "url"
+  ],
+  "stripLeadingHashOrQuery": [
+    "responseString"
+  ],
+  "getDeserializedResponse": [
+    "responseString"
+  ],
+  "mapToQueryString": [
+    "parameters"
+  ],
+  "normalizeUrlForComparison": [
+    "url"
+  ],
+  "buildClientInfo": [
+    "rawClientInfo",
+    "base64Decode"
+  ],
+  "buildClientInfoFromHomeAccountId": [
+    "homeAccountId"
+  ],
+  "tenantIdMatchesHomeTenant": [
+    "tenantId",
+    "homeAccountId"
+  ],
+  "buildTenantProfile": [
+    "homeAccountId",
+    "localAccountId",
+    "tenantId",
+    "idTokenClaims"
+  ],
+  "updateAccountTenantProfileData": [
+    "baseAccountInfo",
+    "tenantProfile",
+    "idTokenClaims",
+    "idTokenSecret"
+  ],
+  "getTenantIdFromIdTokenClaims": [
+    "idTokenClaims"
+  ],
+  "generateAccountId": [
+    "accountEntity"
+  ],
+  "getAccountInfo": [
+    "accountEntity"
+  ],
+  "isSingleTenant": [
+    "accountEntity"
+  ],
+  "createAccountEntity": [
+    "accountDetails",
+    "authority",
+    "base64Decode"
+  ],
+  "createAccountEntityFromAccountInfo": [
+    "accountInfo",
+    "cloudGraphHostName",
+    "msGraphHost"
+  ],
+  "generateHomeAccountId": [
+    "serverClientInfo",
+    "authType",
+    "logger",
+    "cryptoObj",
+    "correlationId",
+    "idTokenClaims"
+  ],
+  "isAccountEntity": [
+    "entity"
+  ],
+  "instrumentBrokerParams": [
+    "parameters",
+    "correlationId",
+    "performanceClient"
+  ],
+  "addResponseType": [
+    "parameters",
+    "responseType"
+  ],
+  "addResponseMode": [
+    "parameters",
+    "responseMode"
+  ],
+  "addNativeBroker": [
+    "parameters"
+  ],
+  "addScopes": [
+    "parameters",
+    "scopes",
+    "param",
+    "param"
+  ],
+  "addClientId": [
+    "parameters",
+    "clientId"
+  ],
+  "addRedirectUri": [
+    "parameters",
+    "redirectUri"
+  ],
+  "addPostLogoutRedirectUri": [
+    "parameters",
+    "redirectUri"
+  ],
+  "addIdTokenHint": [
+    "parameters",
+    "idTokenHint"
+  ],
+  "addDomainHint": [
+    "parameters",
+    "domainHint"
+  ],
+  "addLoginHint": [
+    "parameters",
+    "loginHint"
+  ],
+  "addCcsUpn": [
+    "parameters",
+    "loginHint"
+  ],
+  "addCcsOid": [
+    "parameters",
+    "clientInfo"
+  ],
+  "addSid": [
+    "parameters",
+    "sid"
+  ],
+  "addClaims": [
+    "parameters",
+    "claims",
+    "clientCapabilities"
+  ],
+  "addCorrelationId": [
+    "parameters",
+    "correlationId"
+  ],
+  "addLibraryInfo": [
+    "parameters",
+    "libraryInfo"
+  ],
+  "addApplicationTelemetry": [
+    "parameters",
+    "appTelemetry"
+  ],
+  "addPrompt": [
+    "parameters",
+    "prompt"
+  ],
+  "addState": [
+    "parameters",
+    "state"
+  ],
+  "addNonce": [
+    "parameters",
+    "nonce"
+  ],
+  "addCodeChallengeParams": [
+    "parameters",
+    "codeChallenge",
+    "codeChallengeMethod"
+  ],
+  "addAuthorizationCode": [
+    "parameters",
+    "code"
+  ],
+  "addDeviceCode": [
+    "parameters",
+    "code"
+  ],
+  "addRefreshToken": [
+    "parameters",
+    "refreshToken"
+  ],
+  "addCodeVerifier": [
+    "parameters",
+    "codeVerifier"
+  ],
+  "addClientSecret": [
+    "parameters",
+    "clientSecret"
+  ],
+  "addClientAssertion": [
+    "parameters",
+    "clientAssertion"
+  ],
+  "addClientAssertionType": [
+    "parameters",
+    "clientAssertionType"
+  ],
+  "addOboAssertion": [
+    "parameters",
+    "oboAssertion"
+  ],
+  "addRequestTokenUse": [
+    "parameters",
+    "tokenUse"
+  ],
+  "addGrantType": [
+    "parameters",
+    "grantType"
+  ],
+  "addClientInfo": [
+    "parameters"
+  ],
+  "addInstanceAware": [
+    "parameters"
+  ],
+  "addExtraParameters": [
+    "parameters",
+    "extraParams"
+  ],
+  "addClientCapabilitiesToClaims": [
+    "claims",
+    "clientCapabilities"
+  ],
+  "addUsername": [
+    "parameters",
+    "username"
+  ],
+  "addPassword": [
+    "parameters",
+    "password"
+  ],
+  "addPopToken": [
+    "parameters",
+    "cnfString"
+  ],
+  "addSshJwk": [
+    "parameters",
+    "sshJwkString"
+  ],
+  "addServerTelemetry": [
+    "parameters",
+    "serverTelemetryManager"
+  ],
+  "addThrottling": [
+    "parameters"
+  ],
+  "addLogoutHint": [
+    "parameters",
+    "logoutHint"
+  ],
+  "addBrokerParameters": [
+    "parameters",
+    "brokerClientId",
+    "brokerRedirectUri"
+  ],
+  "addEARParameters": [
+    "parameters",
+    "jwk"
+  ],
+  "markAsRecentlyUsed": [
+    "correlationId",
+    "data"
+  ],
+  "addLogToCache": [
+    "correlationId",
+    "loggedMessage"
+  ],
+  "getAndFlushLogsFromCache": [
+    "correlationId"
+  ],
+  "isHashedString": [
+    "str"
+  ],
+  "defaultLoggerCallback": [],
+  "createCacheError": [
+    "e"
+  ],
+  "keyFilter": [
+    "key"
+  ],
+  "buildClientConfiguration": [
+    "param"
+  ],
+  "buildAuthOptions": [
+    "authOptions"
+  ],
+  "isOidcProtocolMode": [
+    "config"
+  ],
+  "isInteractionRequiredError": [
+    "errorCode",
+    "errorString",
+    "subError"
+  ],
+  "createInteractionRequiredAuthError": [
+    "errorCode",
+    "errorMessage"
+  ],
+  "setRequestState": [
+    "cryptoObj",
+    "userState",
+    "meta"
+  ],
+  "generateLibraryState": [
+    "cryptoObj",
+    "meta"
+  ],
+  "parseRequestState": [
+    "base64Decode",
+    "state"
+  ],
+  "buildAccountToCache": [
+    "cacheStorage",
+    "authority",
+    "homeAccountId",
+    "base64Decode",
+    "correlationId",
+    "idTokenClaims",
+    "clientInfo",
+    "environment",
+    "claimsTenantId",
+    "authCodePayload",
+    "nativeAccountId",
+    "logger"
+  ],
+  "getClientAssertion": [
+    "clientAssertion",
+    "clientId",
+    "tokenEndpoint"
+  ],
+  "getRequestThumbprint": [
+    "clientId",
+    "request",
+    "homeAccountId"
+  ],
+  "createNetworkError": [
+    "error",
+    "httpStatus",
+    "responseHeaders",
+    "additionalError"
+  ],
+  "createTokenRequestHeaders": [
+    "logger",
+    "preventCorsPreflight",
+    "ccsCred"
+  ],
+  "createTokenQueryParameters": [
+    "request",
+    "clientId",
+    "redirectUri",
+    "performanceClient"
+  ],
+  "executePostToTokenEndpoint": [
+    "tokenEndpoint",
+    "queryString",
+    "headers",
+    "thumbprint",
+    "correlationId",
+    "cacheManager",
+    "networkClient",
+    "logger",
+    "performanceClient",
+    "serverTelemetryManager"
+  ],
+  "sendPostRequest": [
+    "thumbprint",
+    "tokenEndpoint",
+    "options",
+    "correlationId",
+    "cacheManager",
+    "networkClient",
+    "logger",
+    "performanceClient"
+  ],
+  "getStandardAuthorizeRequestParameters": [
+    "authOptions",
+    "request",
+    "logger",
+    "performanceClient"
+  ],
+  "getAuthorizeUrl": [
+    "authority",
+    "requestParameters"
+  ],
+  "getAuthorizationCodePayload": [
+    "serverParams",
+    "cachedState"
+  ],
+  "validateAuthorizationResponse": [
+    "serverResponse",
+    "requestState"
+  ],
+  "parseServerErrorNo": [
+    "serverResponse"
+  ],
+  "extractAccountSid": [
+    "account"
+  ],
+  "extractLoginHint": [
+    "account"
+  ],
+  "tagToString": [
+    "tag"
+  ],
+  "makeExtraSkuString": [
+    "params"
+  ],
+  "setSku": [
+    "params"
+  ],
+  "createJoseHeaderError": [
+    "code"
+  ],
+  "getLogsFromCache": [
+    "correlationId"
+  ],
+  "getCachedCorrelationIds": [],
+  "startContext": [
+    "event",
+    "stack"
+  ],
+  "endContext": [
+    "event",
+    "stack",
+    "error"
+  ],
+  "peek": [
+    "stack"
+  ],
+  "addError": [
+    "error",
+    "logger",
+    "event",
+    "param"
+  ],
+  "compactStack": [
+    "stack",
+    "stackMaxSize"
+  ],
+  "compactStackLine": [
+    "line"
+  ],
+  "getAccountType": [
+    "account"
+  ]
+}

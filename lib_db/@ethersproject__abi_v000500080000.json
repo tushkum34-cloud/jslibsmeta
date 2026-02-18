@@ -1,0 +1,566 @@
+{
+  "AbiCoder": {
+    "coerceFunc": [],
+    "constructor": [
+      "coerceFunc"
+    ],
+    "_getCoder": [
+      "param"
+    ],
+    "_getWordSize": [],
+    "_getReader": [
+      "data",
+      "allowLoose"
+    ],
+    "_getWriter": [],
+    "getDefaultValue": [
+      "types"
+    ],
+    "encode": [
+      "types",
+      "values"
+    ],
+    "decode": [
+      "types",
+      "data",
+      "loose"
+    ]
+  },
+  "Coder": {
+    "name": [],
+    "type": [],
+    "localName": [],
+    "dynamic": [],
+    "constructor": [
+      "name",
+      "type",
+      "localName",
+      "dynamic"
+    ],
+    "_throwError": [
+      "message",
+      "value"
+    ],
+    "encode": [
+      "writer",
+      "value"
+    ],
+    "decode": [
+      "reader"
+    ],
+    "defaultValue": []
+  },
+  "Writer": {
+    "wordSize": [],
+    "_data": [],
+    "_dataLength": [],
+    "_padding": [],
+    "constructor": [
+      "wordSize"
+    ],
+    "data": [],
+    "length": [],
+    "_writeData": [
+      "data"
+    ],
+    "appendWriter": [
+      "writer"
+    ],
+    "writeBytes": [
+      "value"
+    ],
+    "_getValue": [
+      "value"
+    ],
+    "writeValue": [
+      "value"
+    ],
+    "writeUpdatableValue": []
+  },
+  "Reader": {
+    "wordSize": [],
+    "allowLoose": [],
+    "_data": [],
+    "_coerceFunc": [],
+    "_offset": [],
+    "constructor": [
+      "data",
+      "wordSize",
+      "coerceFunc",
+      "allowLoose"
+    ],
+    "data": [],
+    "consumed": [],
+    "coerce": [
+      "name",
+      "value"
+    ],
+    "_peekBytes": [
+      "offset",
+      "length",
+      "loose"
+    ],
+    "subReader": [
+      "offset"
+    ],
+    "readBytes": [
+      "length",
+      "loose"
+    ],
+    "readValue": []
+  },
+  "checkResultErrors": [
+    "result"
+  ],
+  "checkErrors": [
+    "path",
+    "object"
+  ],
+  "AddressCoder": {
+    "constructor": [
+      "localName"
+    ],
+    "defaultValue": [],
+    "encode": [
+      "writer",
+      "value"
+    ],
+    "decode": [
+      "reader"
+    ]
+  },
+  "extendStatics": [
+    "d",
+    "b"
+  ],
+  "__": [],
+  "AnonymousCoder": {
+    "coder": [],
+    "constructor": [
+      "coder"
+    ],
+    "defaultValue": [],
+    "encode": [
+      "writer",
+      "value"
+    ],
+    "decode": [
+      "reader"
+    ]
+  },
+  "ArrayCoder": {
+    "constructor": [
+      "coder",
+      "length",
+      "localName"
+    ],
+    "defaultValue": [],
+    "encode": [
+      "writer",
+      "value"
+    ],
+    "decode": [
+      "reader"
+    ]
+  },
+  "pack": [
+    "writer",
+    "coders",
+    "values"
+  ],
+  "unpack": [
+    "reader",
+    "coders"
+  ],
+  "_loop_1": [
+    "i"
+  ],
+  "BooleanCoder": {
+    "constructor": [
+      "localName"
+    ],
+    "defaultValue": [],
+    "encode": [
+      "writer",
+      "value"
+    ],
+    "decode": [
+      "reader"
+    ]
+  },
+  "DynamicBytesCoder": {
+    "constructor": [
+      "type",
+      "localName"
+    ],
+    "defaultValue": [],
+    "encode": [
+      "writer",
+      "value"
+    ],
+    "decode": [
+      "reader"
+    ]
+  },
+  "BytesCoder": {
+    "constructor": [
+      "localName"
+    ],
+    "decode": [
+      "reader"
+    ]
+  },
+  "FixedBytesCoder": {
+    "size": [],
+    "constructor": [
+      "size",
+      "localName"
+    ],
+    "defaultValue": [],
+    "encode": [
+      "writer",
+      "value"
+    ],
+    "decode": [
+      "reader"
+    ]
+  },
+  "NullCoder": {
+    "constructor": [
+      "localName"
+    ],
+    "defaultValue": [],
+    "encode": [
+      "writer",
+      "value"
+    ],
+    "decode": [
+      "reader"
+    ]
+  },
+  "NumberCoder": {
+    "size": [],
+    "signed": [],
+    "constructor": [
+      "size",
+      "signed",
+      "localName"
+    ],
+    "defaultValue": [],
+    "encode": [
+      "writer",
+      "value"
+    ],
+    "decode": [
+      "reader"
+    ]
+  },
+  "StringCoder": {
+    "constructor": [
+      "localName"
+    ],
+    "defaultValue": [],
+    "encode": [
+      "writer",
+      "value"
+    ],
+    "decode": [
+      "reader"
+    ]
+  },
+  "TupleCoder": {
+    "constructor": [
+      "coders",
+      "localName"
+    ],
+    "defaultValue": [],
+    "encode": [
+      "writer",
+      "value"
+    ],
+    "decode": [
+      "reader"
+    ]
+  },
+  "ParamType": {
+    "name": [],
+    "type": [],
+    "baseType": [],
+    "indexed": [],
+    "components": [],
+    "arrayLength": [],
+    "arrayChildren": [],
+    "_isParamType": [],
+    "constructor": [
+      "constructorGuard",
+      "params"
+    ],
+    "format": [
+      "format"
+    ],
+    "from": [
+      "value",
+      "allowIndexed"
+    ],
+    "fromObject": [
+      "value"
+    ],
+    "fromString": [
+      "value",
+      "allowIndexed"
+    ],
+    "isParamType": [
+      "value"
+    ]
+  },
+  "Fragment": {
+    "type": [],
+    "name": [],
+    "inputs": [],
+    "_isFragment": [],
+    "constructor": [
+      "constructorGuard",
+      "params"
+    ],
+    "format": [
+      "format"
+    ],
+    "from": [
+      "value"
+    ],
+    "fromObject": [
+      "value"
+    ],
+    "fromString": [
+      "value"
+    ],
+    "isFragment": [
+      "value"
+    ]
+  },
+  "EventFragment": {
+    "anonymous": [],
+    "format": [
+      "format"
+    ],
+    "from": [
+      "value"
+    ],
+    "fromObject": [
+      "value"
+    ],
+    "fromString": [
+      "value"
+    ],
+    "isEventFragment": [
+      "value"
+    ]
+  },
+  "ConstructorFragment": {
+    "stateMutability": [],
+    "payable": [],
+    "gas": [],
+    "format": [
+      "format"
+    ],
+    "from": [
+      "value"
+    ],
+    "fromObject": [
+      "value"
+    ],
+    "fromString": [
+      "value"
+    ],
+    "isConstructorFragment": [
+      "value"
+    ]
+  },
+  "FunctionFragment": {
+    "constant": [],
+    "outputs": [],
+    "format": [
+      "format"
+    ],
+    "from": [
+      "value"
+    ],
+    "fromObject": [
+      "value"
+    ],
+    "fromString": [
+      "value"
+    ],
+    "isFunctionFragment": [
+      "value"
+    ]
+  },
+  "ErrorFragment": {
+    "format": [
+      "format"
+    ],
+    "from": [
+      "value"
+    ],
+    "fromObject": [
+      "value"
+    ],
+    "fromString": [
+      "value"
+    ],
+    "isErrorFragment": [
+      "value"
+    ]
+  },
+  "checkModifier": [
+    "type",
+    "name"
+  ],
+  "parseParamType": [
+    "param",
+    "allowIndexed"
+  ],
+  "throwError": [
+    "i"
+  ],
+  "newNode": [
+    "parent"
+  ],
+  "populate": [
+    "object",
+    "params"
+  ],
+  "ParamTypify": [
+    "node"
+  ],
+  "parseParams": [
+    "value",
+    "allowIndex"
+  ],
+  "parseGas": [
+    "value",
+    "params"
+  ],
+  "parseModifiers": [
+    "value",
+    "params"
+  ],
+  "verifyState": [
+    "value"
+  ],
+  "checkForbidden": [
+    "fragment"
+  ],
+  "verifyType": [
+    "type"
+  ],
+  "verifyIdentifier": [
+    "value"
+  ],
+  "splitNesting": [
+    "value"
+  ],
+  "LogDescription": {},
+  "TransactionDescription": {},
+  "ErrorDescription": {},
+  "Indexed": {
+    "isIndexed": [
+      "value"
+    ]
+  },
+  "Interface": {
+    "constructor": [
+      "fragments"
+    ],
+    "format": [
+      "format"
+    ],
+    "getAbiCoder": [],
+    "getAddress": [
+      "address"
+    ],
+    "getSighash": [
+      "fragment"
+    ],
+    "getEventTopic": [
+      "eventFragment"
+    ],
+    "getFunction": [
+      "nameOrSignatureOrSighash"
+    ],
+    "getEvent": [
+      "nameOrSignatureOrTopic"
+    ],
+    "getError": [
+      "nameOrSignatureOrSighash"
+    ],
+    "_decodeParams": [
+      "params",
+      "data"
+    ],
+    "_encodeParams": [
+      "params",
+      "values"
+    ],
+    "encodeDeploy": [
+      "values"
+    ],
+    "decodeErrorResult": [
+      "fragment",
+      "data"
+    ],
+    "encodeErrorResult": [
+      "fragment",
+      "values"
+    ],
+    "decodeFunctionData": [
+      "functionFragment",
+      "data"
+    ],
+    "encodeFunctionData": [
+      "functionFragment",
+      "values"
+    ],
+    "decodeFunctionResult": [
+      "functionFragment",
+      "data"
+    ],
+    "encodeFunctionResult": [
+      "functionFragment",
+      "values"
+    ],
+    "encodeFilterTopics": [
+      "eventFragment",
+      "values"
+    ],
+    "encodeEventLog": [
+      "eventFragment",
+      "values"
+    ],
+    "decodeEventLog": [
+      "eventFragment",
+      "data",
+      "topics"
+    ],
+    "parseTransaction": [
+      "tx"
+    ],
+    "parseLog": [
+      "log"
+    ],
+    "parseError": [
+      "data"
+    ],
+    "isInterface": [
+      "value"
+    ]
+  },
+  "wrapAccessError": [
+    "property",
+    "error"
+  ],
+  "encodeTopic": [
+    "param",
+    "value"
+  ]
+}

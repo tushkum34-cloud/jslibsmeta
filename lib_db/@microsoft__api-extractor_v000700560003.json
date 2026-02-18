@@ -1,0 +1,1239 @@
+{
+  "CompilerState": {
+    "constructor": [
+      "properties"
+    ],
+    "create": [
+      "extractorConfig",
+      "options"
+    ],
+    "_generateFilePathsForAnalysis": [
+      "inputFilePaths"
+    ],
+    "_createCompilerHost": [
+      "commandLine",
+      "options"
+    ]
+  },
+  "Extractor": {
+    "version": [],
+    "packageName": [],
+    "_getPackageJson": [],
+    "loadConfigAndInvoke": [
+      "configFilePath",
+      "options"
+    ],
+    "invoke": [
+      "extractorConfig",
+      "options"
+    ],
+    "_writeApiReport": [
+      "collector",
+      "extractorConfig",
+      "messageRouter",
+      "reportTempDirectoryPath",
+      "reportDirectoryPath",
+      "reportConfig",
+      "localBuild",
+      "printApiReportDiff"
+    ],
+    "_checkCompilerCompatibility": [
+      "extractorConfig",
+      "messageRouter"
+    ],
+    "_generateRollupDtsFile": [
+      "collector",
+      "outputPath",
+      "dtsKind",
+      "newlineKind"
+    ]
+  },
+  "ExtractorConfig": {
+    "reportFilePath": [],
+    "reportTempFilePath": [],
+    "constructor": [
+      "param"
+    ],
+    "getDiagnosticDump": [],
+    "_getShortFilePath": [
+      "absolutePath"
+    ],
+    "tryLoadForFolder": [
+      "options"
+    ],
+    "loadFileAndPrepare": [
+      "configJsonFilePath"
+    ],
+    "loadFile": [
+      "jsonFilePath"
+    ],
+    "_resolveConfigFileRelativePaths": [
+      "configFile",
+      "currentConfigFolderPath"
+    ],
+    "_resolveConfigFileRelativePath": [
+      "fieldName",
+      "fieldValue",
+      "currentConfigFolderPath"
+    ],
+    "prepare": [
+      "options"
+    ],
+    "_getCompleteReportConfig": [],
+    "_resolvePathWithTokens": [
+      "fieldName",
+      "value",
+      "tokenContext"
+    ],
+    "_expandStringWithTokens": [
+      "fieldName",
+      "value",
+      "tokenContext"
+    ],
+    "hasDtsFileExtension": [
+      "filePath"
+    ],
+    "_rejectAnyTokensInPath": [
+      "value",
+      "fieldName"
+    ]
+  },
+  "ExtractorMessage": {
+    "constructor": [
+      "options"
+    ],
+    "handled": [
+      "value"
+    ],
+    "logLevel": [
+      "value"
+    ],
+    "formatMessageWithLocation": [
+      "workingPackageFolderPath"
+    ],
+    "formatMessageWithoutLocation": []
+  },
+  "ExtractorResult": {
+    "constructor": [
+      "properties"
+    ]
+  },
+  "PackageDocComment": {
+    "tryFindInSourceFile": [
+      "sourceFile",
+      "collector"
+    ]
+  },
+  "ownKeys": [
+    "o"
+  ],
+  "AstDeclaration": {
+    "constructor": [
+      "options"
+    ],
+    "children": [],
+    "referencedAstEntities": [],
+    "_notifyChildAttach": [
+      "child"
+    ],
+    "getDump": [
+      "param"
+    ],
+    "getSpanDump": [
+      "param"
+    ],
+    "_notifyReferencedAstEntity": [
+      "referencedAstEntity"
+    ],
+    "forEachDeclarationRecursive": [
+      "action"
+    ],
+    "findChildrenWithName": [
+      "name"
+    ],
+    "isSupportedSyntaxKind": [
+      "kind"
+    ]
+  },
+  "AstEntity": {},
+  "AstSyntheticEntity": {},
+  "AstImport": {
+    "constructor": [
+      "options"
+    ],
+    "localName": [],
+    "getKey": [
+      "options"
+    ]
+  },
+  "AstModule": {
+    "constructor": [
+      "options"
+    ],
+    "isExternal": []
+  },
+  "AstNamespaceExport": {
+    "constructor": [
+      "options"
+    ]
+  },
+  "AstNamespaceImport": {
+    "constructor": [
+      "options"
+    ],
+    "localName": [],
+    "fetchAstModuleExportInfo": [
+      "collector"
+    ]
+  },
+  "ResolverFailure": {
+    "constructor": [
+      "reason"
+    ]
+  },
+  "AstReferenceResolver": {
+    "constructor": [
+      "collector"
+    ],
+    "resolve": [
+      "declarationReference"
+    ],
+    "_getMemberReferenceIdentifier": [
+      "memberReference"
+    ],
+    "_selectDeclaration": [
+      "astDeclarations",
+      "memberReference",
+      "astSymbolName"
+    ],
+    "_selectUsingSystemSelector": [
+      "astDeclarations",
+      "memberSelector",
+      "astSymbolName"
+    ],
+    "_selectUsingIndexSelector": [
+      "astDeclarations",
+      "memberSelector",
+      "astSymbolName"
+    ],
+    "_tryDisambiguateAncillaryMatches": [
+      "matches"
+    ]
+  },
+  "AstSymbol": {
+    "constructor": [
+      "options"
+    ],
+    "astDeclarations": [],
+    "analyzed": [],
+    "_notifyDeclarationAttach": [
+      "astDeclaration"
+    ],
+    "_notifyAnalyzed": [],
+    "forEachDeclarationRecursive": [
+      "action"
+    ]
+  },
+  "AstSymbolTable": {
+    "constructor": [
+      "program",
+      "typeChecker",
+      "packageJsonLookup",
+      "bundledPackageNames",
+      "messageRouter"
+    ],
+    "fetchAstModuleFromWorkingPackage": [
+      "sourceFile"
+    ],
+    "fetchAstModuleExportInfo": [
+      "astModule"
+    ],
+    "tryGetExportOfAstModule": [
+      "exportName",
+      "astModule"
+    ],
+    "analyze": [
+      "astEntity"
+    ],
+    "getChildAstDeclarationByNode": [
+      "node",
+      "parentAstDeclaration"
+    ],
+    "tryGetEntityForNode": [
+      "identifier"
+    ],
+    "getLocalNameForSymbol": [
+      "symbol"
+    ],
+    "_analyzeAstNamespaceImport": [
+      "astNamespaceImport"
+    ],
+    "_analyzeAstSymbol": [
+      "astSymbol"
+    ],
+    "_analyzeChildTree": [
+      "node",
+      "governingAstDeclaration"
+    ],
+    "_fetchEntityForNode": [
+      "node",
+      "governingAstDeclaration"
+    ],
+    "_fetchAstDeclaration": [
+      "node",
+      "isExternal"
+    ],
+    "_fetchAstSymbol": [
+      "options"
+    ],
+    "_tryFindFirstAstDeclarationParent": [
+      "node"
+    ]
+  },
+  "ExportAnalyzer": {
+    "constructor": [
+      "program",
+      "typeChecker",
+      "bundledPackageNames",
+      "astSymbolTable"
+    ],
+    "fetchAstModuleFromSourceFile": [
+      "sourceFile",
+      "moduleReference",
+      "isExternal"
+    ],
+    "_getModuleSymbolFromSourceFile": [
+      "sourceFile",
+      "moduleReference"
+    ],
+    "fetchAstModuleExportInfo": [
+      "entryPointAstModule"
+    ],
+    "_isExternalModulePath": [
+      "importOrExportDeclaration",
+      "moduleSpecifier"
+    ],
+    "isImportableAmbientSourceFile": [
+      "sourceFile"
+    ],
+    "_collectAllExportsRecursive": [
+      "astModuleExportInfo",
+      "astModule"
+    ],
+    "fetchReferencedAstEntity": [
+      "symbol",
+      "referringModuleIsExternal"
+    ],
+    "fetchReferencedAstEntityFromImportTypeNode": [
+      "node",
+      "referringModuleIsExternal"
+    ],
+    "_tryMatchExportDeclaration": [
+      "declaration",
+      "declarationSymbol"
+    ],
+    "_getAstNamespaceExport": [
+      "astModule",
+      "declarationSymbol",
+      "declaration"
+    ],
+    "_tryMatchImportDeclaration": [
+      "declaration",
+      "declarationSymbol"
+    ],
+    "_getAstNamespaceImport": [
+      "astModule",
+      "declarationSymbol",
+      "declaration"
+    ],
+    "_getIsTypeOnly": [
+      "importDeclaration"
+    ],
+    "_getExportOfSpecifierAstModule": [
+      "exportName",
+      "importOrExportDeclaration",
+      "exportSymbol"
+    ],
+    "_getExportOfAstModule": [
+      "exportName",
+      "astModule"
+    ],
+    "tryGetExportOfAstModule": [
+      "exportName",
+      "astModule"
+    ],
+    "_tryGetExportOfAstModule": [
+      "exportName",
+      "astModule",
+      "visitedAstModules"
+    ],
+    "_tryGetExternalModulePath": [
+      "importOrExportDeclaration"
+    ],
+    "_fetchSpecifierAstModule": [
+      "importOrExportDeclaration",
+      "exportSymbol"
+    ],
+    "_fetchAstImport": [
+      "importSymbol",
+      "options"
+    ],
+    "_getModuleSpecifier": [
+      "importOrExportDeclaration"
+    ]
+  },
+  "PackageMetadata": {
+    "constructor": [
+      "packageJsonPath",
+      "packageJson",
+      "aedocSupported"
+    ]
+  },
+  "PackageMetadataManager": {
+    "constructor": [
+      "packageJsonLookup",
+      "messageRouter"
+    ],
+    "_resolveTsdocMetadataPathFromPackageJson": [
+      "packageFolder",
+      "packageJson"
+    ],
+    "resolveTsdocMetadataPath": [
+      "packageFolder",
+      "packageJson",
+      "tsdocMetadataPath"
+    ],
+    "writeTsdocMetadataFile": [
+      "tsdocMetadataPath",
+      "newlineKind"
+    ],
+    "tryFetchPackageMetadata": [
+      "sourceFilePath"
+    ],
+    "isAedocSupportedFor": [
+      "sourceFilePath"
+    ]
+  },
+  "_tryResolveTsdocMetadataFromTsdocMetadataField": [
+    "param"
+  ],
+  "_tryResolveTsdocMetadataFromExportsField": [
+    "param"
+  ],
+  "_tryResolveTsdocMetadataFromTypesVersionsField": [
+    "param"
+  ],
+  "_tryResolveTsdocMetadataFromTypesOrTypingsFields": [
+    "param"
+  ],
+  "_tryResolveTsdocMetadataFromMainField": [
+    "param"
+  ],
+  "SourceFileLocationFormatter": {
+    "formatDeclaration": [
+      "node",
+      "workingPackageFolderPath"
+    ],
+    "formatPath": [
+      "sourceFilePath",
+      "options"
+    ]
+  },
+  "SpanModification": {
+    "constructor": [
+      "span"
+    ],
+    "prefix": [
+      "value"
+    ],
+    "suffix": [
+      "value"
+    ],
+    "reset": [],
+    "skipAll": []
+  },
+  "Span": {
+    "constructor": [
+      "node"
+    ],
+    "kind": [],
+    "parent": [],
+    "previousSibling": [],
+    "nextSibling": [],
+    "prefix": [],
+    "suffix": [],
+    "separator": [],
+    "getLastInnerSeparator": [],
+    "findFirstParent": [
+      "kindToMatch"
+    ],
+    "forEach": [
+      "callback"
+    ],
+    "getText": [],
+    "getModifiedText": [],
+    "writeModifiedText": [
+      "output"
+    ],
+    "getDump": [
+      "param"
+    ],
+    "getModifiedDump": [
+      "param"
+    ],
+    "_writeModifiedText": [
+      "options"
+    ],
+    "_beginIndentDocComment": [
+      "options"
+    ],
+    "_endIndentDocComment": [
+      "options"
+    ],
+    "_write": [
+      "text",
+      "options"
+    ],
+    "_getTrimmed": [
+      "text"
+    ],
+    "_getSubstring": [
+      "startIndex",
+      "endIndex"
+    ]
+  },
+  "SyntaxHelpers": {
+    "isSafeUnquotedMemberIdentifier": [
+      "identifier"
+    ],
+    "makeCamelCaseIdentifier": [
+      "input"
+    ]
+  },
+  "TypeScriptHelpers": {
+    "followAliases": [
+      "symbol",
+      "typeChecker"
+    ],
+    "isFollowableAlias": [
+      "symbol",
+      "typeChecker"
+    ],
+    "tryGetADeclaration": [
+      "symbol"
+    ],
+    "isAmbient": [
+      "symbol",
+      "typeChecker"
+    ],
+    "getSymbolForDeclaration": [
+      "declaration",
+      "checker"
+    ],
+    "getModuleSpecifier": [
+      "nodeWithModuleSpecifier"
+    ],
+    "matchAncestor": [
+      "node",
+      "kindsToMatch"
+    ],
+    "findFirstChildNode": [
+      "node",
+      "kindToMatch"
+    ],
+    "findFirstParent": [
+      "node",
+      "kindToMatch"
+    ],
+    "findHighestParent": [
+      "node",
+      "kindToMatch"
+    ],
+    "tryDecodeWellKnownSymbolName": [
+      "name"
+    ],
+    "isUniqueSymbolName": [
+      "name"
+    ],
+    "tryGetLateBoundName": [
+      "declarationName"
+    ]
+  },
+  "TypeScriptInternals": {
+    "getImmediateAliasedSymbol": [
+      "symbol",
+      "typeChecker"
+    ],
+    "tryGetSymbolForDeclaration": [
+      "declaration",
+      "checker"
+    ],
+    "isLateBoundSymbol": [
+      "symbol"
+    ],
+    "getJSDocCommentRanges": [
+      "node",
+      "text"
+    ],
+    "getTextOfIdentifierOrLiteral": [
+      "node"
+    ],
+    "getResolvedModule": [
+      "program",
+      "sourceFile",
+      "moduleNameText",
+      "mode"
+    ],
+    "getModeForUsageLocation": [
+      "file",
+      "usage",
+      "compilerOptions"
+    ],
+    "getSymbolParent": [
+      "symbol"
+    ],
+    "tryGetLocalSymbol": [
+      "declaration"
+    ],
+    "getGlobalVariableAnalyzer": [
+      "program"
+    ],
+    "isVarConst": [
+      "node"
+    ]
+  },
+  "writeApiReport": [
+    "reportConfig"
+  ],
+  "mergeCustomizer": [
+    "objValue",
+    "srcValue"
+  ],
+  "_validateTagsToReport": [
+    "tagsToReport"
+  ],
+  "ApiExtractorCommandLine": {
+    "constructor": [],
+    "onExecuteAsync": [],
+    "_populateActions": []
+  },
+  "InitAction": {
+    "constructor": [
+      "parser"
+    ],
+    "onExecuteAsync": []
+  },
+  "RunAction": {
+    "constructor": [
+      "parser"
+    ],
+    "onExecuteAsync": []
+  },
+  "ApiItemMetadata": {
+    "constructor": [
+      "options"
+    ]
+  },
+  "Collector": {
+    "constructor": [
+      "options"
+    ],
+    "_resolveBundledPackagePatterns": [
+      "bundledPackages",
+      "packageJson"
+    ],
+    "dtsTypeReferenceDirectives": [],
+    "dtsLibReferenceDirectives": [],
+    "entities": [],
+    "starExportedExternalModulePaths": [],
+    "analyze": [],
+    "tryGetEntityForNode": [
+      "identifier"
+    ],
+    "tryGetEntityForSymbol": [
+      "symbol"
+    ],
+    "tryGetCollectorEntity": [
+      "astEntity"
+    ],
+    "fetchSymbolMetadata": [
+      "astSymbol"
+    ],
+    "fetchDeclarationMetadata": [
+      "astDeclaration"
+    ],
+    "fetchApiItemMetadata": [
+      "astDeclaration"
+    ],
+    "tryFetchMetadataForAstEntity": [
+      "astEntity"
+    ],
+    "isAncillaryDeclaration": [
+      "astDeclaration"
+    ],
+    "getNonAncillaryDeclarations": [
+      "astSymbol"
+    ],
+    "getSortKeyIgnoringUnderscore": [
+      "identifier"
+    ],
+    "getOverloadIndex": [
+      "astDeclaration"
+    ],
+    "_createCollectorEntity": [
+      "astEntity",
+      "exportName",
+      "parent"
+    ],
+    "_recursivelyCreateEntities": [
+      "astEntity",
+      "alreadySeenAstEntities"
+    ],
+    "_makeUniqueNames": [],
+    "_fetchSymbolMetadata": [
+      "astSymbol"
+    ],
+    "_calculateDeclarationMetadataForDeclarations": [
+      "astSymbol"
+    ],
+    "_addAncillaryDeclaration": [
+      "mainAstDeclaration",
+      "ancillaryAstDeclaration"
+    ],
+    "_calculateApiItemMetadata": [
+      "astDeclaration"
+    ],
+    "_parseTsdocForAstDeclaration": [
+      "astDeclaration"
+    ],
+    "_collectReferenceDirectives": [
+      "astEntity"
+    ],
+    "_collectReferenceDirectivesFromSourceFiles": [
+      "sourceFiles",
+      "onlyIncludeExplicitlyPreserved"
+    ],
+    "_getReferenceDirectiveFromSourceFile": [
+      "sourceFileText",
+      "param",
+      "onlyIncludeExplicitlyPreserved"
+    ]
+  },
+  "CollectorEntity": {
+    "constructor": [
+      "astEntity"
+    ],
+    "nameForEmit": [
+      "value"
+    ],
+    "exportNames": [],
+    "singleExportName": [],
+    "shouldInlineExport": [],
+    "exportedFromEntryPoint": [],
+    "exported": [],
+    "consumable": [],
+    "getFirstExportingConsumableParent": [],
+    "addExportName": [
+      "exportName"
+    ],
+    "addLocalExportName": [
+      "localExportName",
+      "parent"
+    ],
+    "getSortKey": []
+  },
+  "DeclarationMetadata": {},
+  "InternalDeclarationMetadata": {
+    "constructor": []
+  },
+  "MessageRouter": {
+    "constructor": [
+      "options"
+    ],
+    "_applyMessagesConfig": [
+      "messagesConfig"
+    ],
+    "_getNormalizedRule": [
+      "rule"
+    ],
+    "messages": [],
+    "addCompilerDiagnostic": [
+      "diagnostic"
+    ],
+    "addAnalyzerIssue": [
+      "messageId",
+      "messageText",
+      "astDeclarationOrSymbol",
+      "properties"
+    ],
+    "addTsdocMessages": [
+      "parserContext",
+      "sourceFile",
+      "astDeclaration"
+    ],
+    "buildJsonDumpObject": [
+      "input",
+      "options"
+    ],
+    "_buildJsonDumpObject": [
+      "input",
+      "keyNamesToOmit"
+    ],
+    "_associateMessageWithAstDeclaration": [
+      "extractorMessage",
+      "astDeclaration"
+    ],
+    "addAnalyzerIssueForPosition": [
+      "messageId",
+      "messageText",
+      "sourceFile",
+      "pos",
+      "properties"
+    ],
+    "fetchAssociatedMessagesForReviewFile": [
+      "astDeclaration"
+    ],
+    "fetchUnassociatedMessagesForReviewFile": [],
+    "handleRemainingNonConsoleMessages": [],
+    "logError": [
+      "messageId",
+      "message",
+      "properties"
+    ],
+    "logWarning": [
+      "messageId",
+      "message",
+      "properties"
+    ],
+    "logInfo": [
+      "messageId",
+      "message",
+      "properties"
+    ],
+    "logVerbose": [
+      "messageId",
+      "message",
+      "properties"
+    ],
+    "logDiagnosticHeader": [
+      "title"
+    ],
+    "logDiagnosticFooter": [],
+    "logDiagnostic": [
+      "message"
+    ],
+    "_handleMessage": [
+      "message"
+    ],
+    "_getRuleForMessage": [
+      "message"
+    ],
+    "_sortMessagesForOutput": [
+      "messages"
+    ]
+  },
+  "SourceMapper": {
+    "constructor": [],
+    "getSourceLocation": [
+      "options"
+    ],
+    "_getMappedSourceLocation": [
+      "sourceLocation"
+    ],
+    "_getSourceMap": [
+      "sourceFilePath"
+    ],
+    "_findNearestMappingItem": [
+      "mappingItems",
+      "position"
+    ],
+    "_compareMappingItem": [
+      "mappingItem",
+      "position"
+    ]
+  },
+  "SymbolMetadata": {
+    "constructor": [
+      "options"
+    ]
+  },
+  "WorkingPackage": {
+    "constructor": [
+      "options"
+    ],
+    "name": []
+  },
+  "DocCommentEnhancer": {
+    "constructor": [
+      "collector"
+    ],
+    "analyze": [],
+    "_analyzeApiItem": [
+      "astDeclaration"
+    ],
+    "_analyzeNeedsDocumentation": [
+      "astDeclaration",
+      "metadata"
+    ],
+    "_checkForBrokenLinks": [
+      "astDeclaration",
+      "metadata"
+    ],
+    "_checkForBrokenLinksRecursive": [
+      "astDeclaration",
+      "node"
+    ],
+    "_applyInheritDoc": [
+      "astDeclaration",
+      "docComment",
+      "inheritDocTag"
+    ],
+    "_copyInheritedDocs": [
+      "targetDocComment",
+      "sourceDocComment"
+    ],
+    "_refersToDeclarationInWorkingPackage": [
+      "declarationReference"
+    ]
+  },
+  "ValidationEnhancer": {
+    "analyze": [
+      "collector"
+    ],
+    "_checkForInternalUnderscore": [
+      "collector",
+      "collectorEntity",
+      "astSymbol",
+      "symbolMetadata"
+    ],
+    "_checkForInconsistentReleaseTags": [
+      "collector",
+      "astSymbol",
+      "symbolMetadata"
+    ],
+    "_checkReferences": [
+      "collector",
+      "astDeclaration",
+      "alreadyWarnedEntities"
+    ],
+    "_isEcmaScriptSymbol": [
+      "astSymbol"
+    ]
+  },
+  "ApiModelGenerator": {
+    "constructor": [
+      "collector",
+      "extractorConfig"
+    ],
+    "apiModel": [],
+    "buildApiPackage": [],
+    "_processAstEntity": [
+      "astEntity",
+      "context"
+    ],
+    "_processAstNamespaceImport": [
+      "astNamespaceImport",
+      "context"
+    ],
+    "_processDeclaration": [
+      "astDeclaration",
+      "context"
+    ],
+    "_tryFindFunctionDeclaration": [
+      "astDeclaration"
+    ],
+    "_processChildDeclarations": [
+      "astDeclaration",
+      "context"
+    ],
+    "_processApiCallSignature": [
+      "astDeclaration",
+      "context"
+    ],
+    "_processApiConstructor": [
+      "astDeclaration",
+      "context"
+    ],
+    "_processApiClass": [
+      "astDeclaration",
+      "context"
+    ],
+    "_processApiConstructSignature": [
+      "astDeclaration",
+      "context"
+    ],
+    "_processApiEnum": [
+      "astDeclaration",
+      "context"
+    ],
+    "_processApiEnumMember": [
+      "astDeclaration",
+      "context"
+    ],
+    "_processApiFunction": [
+      "astDeclaration",
+      "context",
+      "altFunctionDeclaration"
+    ],
+    "_processApiIndexSignature": [
+      "astDeclaration",
+      "context"
+    ],
+    "_processApiInterface": [
+      "astDeclaration",
+      "context"
+    ],
+    "_processApiMethod": [
+      "astDeclaration",
+      "context"
+    ],
+    "_processApiMethodSignature": [
+      "astDeclaration",
+      "context"
+    ],
+    "_processApiNamespace": [
+      "astDeclaration",
+      "context"
+    ],
+    "_processApiProperty": [
+      "astDeclaration",
+      "context"
+    ],
+    "_processApiPropertySignature": [
+      "astDeclaration",
+      "context"
+    ],
+    "_processApiTypeAlias": [
+      "astDeclaration",
+      "context"
+    ],
+    "_processApiVariable": [
+      "astDeclaration",
+      "context"
+    ],
+    "_buildExcerptTokens": [
+      "astDeclaration",
+      "nodeTransforms"
+    ],
+    "_captureTypeParameters": [
+      "nodeTransforms",
+      "typeParameterNodes"
+    ],
+    "_captureParameters": [
+      "nodeTransforms",
+      "parameterNodes"
+    ],
+    "_isReadonly": [
+      "astDeclaration"
+    ],
+    "_getFileUrlPath": [
+      "declaration"
+    ]
+  },
+  "ApiReportGenerator": {
+    "areEquivalentApiFileContents": [
+      "actualFileContent",
+      "expectedFileContent"
+    ],
+    "generateReviewFileContent": [
+      "collector",
+      "reportVariant"
+    ],
+    "_modifySpan": [
+      "span",
+      "entity",
+      "astDeclaration",
+      "insideTypeLiteral",
+      "context"
+    ],
+    "_shouldIncludeDeclaration": [
+      "collector",
+      "astDeclaration",
+      "reportVariant"
+    ],
+    "_shouldIncludeReleaseTag": [
+      "releaseTag",
+      "reportVariant"
+    ],
+    "_modifySpanForPreapproved": [
+      "span"
+    ],
+    "_getAedocSynopsis": [
+      "collector",
+      "astDeclaration",
+      "messagesToReport"
+    ],
+    "_writeLineAsComments": [
+      "writer",
+      "line"
+    ]
+  },
+  "capitalizeFirstLetter": [
+    "input"
+  ],
+  "DeclarationReferenceGenerator": {
+    "constructor": [
+      "collector"
+    ],
+    "getDeclarationReferenceForIdentifier": [
+      "node"
+    ],
+    "getDeclarationReferenceForSymbol": [
+      "symbol",
+      "meaning"
+    ],
+    "_isInExpressionContext": [
+      "node"
+    ],
+    "_isExternalModuleSymbol": [
+      "symbol"
+    ],
+    "_isSameSymbol": [
+      "left",
+      "right"
+    ],
+    "_getNavigationToSymbol": [
+      "symbol"
+    ],
+    "_getMeaningOfSymbol": [
+      "symbol",
+      "meaning"
+    ],
+    "_symbolToDeclarationReference": [
+      "symbol",
+      "meaning",
+      "includeModuleSymbols"
+    ],
+    "_getParentReference": [
+      "symbol"
+    ],
+    "_getPackageName": [
+      "sourceFile"
+    ],
+    "_sourceFileToModuleSource": [
+      "sourceFile"
+    ]
+  },
+  "DtsEmitHelpers": {
+    "emitImport": [
+      "writer",
+      "collectorEntity",
+      "astImport"
+    ],
+    "emitNamedExport": [
+      "writer",
+      "exportName",
+      "collectorEntity"
+    ],
+    "emitStarExports": [
+      "writer",
+      "collector"
+    ],
+    "modifyImportTypeSpan": [
+      "collector",
+      "span",
+      "astDeclaration",
+      "modifyNestedSpan"
+    ],
+    "isExportKeywordInNamespaceExportDeclaration": [
+      "node"
+    ],
+    "forEachParameterToNormalize": [
+      "nodes",
+      "action"
+    ],
+    "normalizeParameterNames": [
+      "signatureSpan"
+    ]
+  },
+  "DtsRollupGenerator": {
+    "writeTypingsFile": [
+      "collector",
+      "dtsFilename",
+      "dtsKind",
+      "newlineKind"
+    ],
+    "_generateTypingsFileContent": [
+      "collector",
+      "writer",
+      "dtsKind"
+    ],
+    "_modifySpan": [
+      "collector",
+      "span",
+      "entity",
+      "astDeclaration",
+      "dtsKind"
+    ],
+    "_shouldIncludeReleaseTag": [
+      "releaseTag",
+      "dtsKind"
+    ]
+  },
+  "ExcerptBuilder": {
+    "addBlankLine": [
+      "excerptTokens"
+    ],
+    "addDeclaration": [
+      "excerptTokens",
+      "astDeclaration",
+      "nodeTransforms",
+      "referenceGenerator"
+    ],
+    "createEmptyTokenRange": [],
+    "_buildSpan": [
+      "excerptTokens",
+      "span",
+      "state"
+    ],
+    "_appendToken": [
+      "excerptTokens",
+      "excerptTokenKind",
+      "text",
+      "canonicalReference"
+    ],
+    "_condenseTokens": [
+      "excerptTokens",
+      "tokenRanges"
+    ],
+    "_isDeclarationName": [
+      "name"
+    ],
+    "_isDeclaration": [
+      "node"
+    ]
+  },
+  "IndentedWriter": {
+    "constructor": [
+      "builder"
+    ],
+    "getText": [],
+    "toString": [],
+    "increaseIndent": [
+      "indentPrefix"
+    ],
+    "decreaseIndent": [],
+    "indentScope": [
+      "scope",
+      "indentPrefix"
+    ],
+    "ensureNewLine": [],
+    "ensureSkippedLine": [],
+    "peekLastCharacter": [],
+    "peekSecondLastCharacter": [],
+    "write": [
+      "message"
+    ],
+    "writeLine": [
+      "param"
+    ],
+    "_writeLinePart": [
+      "message"
+    ],
+    "_writeNewLine": [],
+    "_write": [
+      "s"
+    ],
+    "_updateIndentText": []
+  }
+}

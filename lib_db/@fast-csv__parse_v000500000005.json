@@ -1,0 +1,318 @@
+{
+  "CsvParserStream": {
+    "parserOptions": [],
+    "decoder": [],
+    "parser": [],
+    "headerTransformer": [],
+    "rowTransformerValidator": [],
+    "lines": [],
+    "rowCount": [],
+    "parsedRowCount": [],
+    "parsedLineCount": [],
+    "endEmitted": [],
+    "headersEmitted": [],
+    "constructor": [
+      "parserOptions"
+    ],
+    "hasHitRowLimit": [],
+    "shouldEmitRows": [],
+    "shouldSkipLine": [],
+    "transform": [
+      "transformFunction"
+    ],
+    "validate": [
+      "validateFunction"
+    ],
+    "emit": [
+      "event",
+      "param"
+    ],
+    "_transform": [
+      "data",
+      "encoding",
+      "done"
+    ],
+    "_flush": [
+      "done"
+    ],
+    "parse": [
+      "data",
+      "hasMoreData"
+    ],
+    "processRows": [
+      "rows",
+      "cb"
+    ],
+    "transformRow": [
+      "parsedRow",
+      "cb"
+    ],
+    "checkAndEmitHeaders": [],
+    "skipRow": [
+      "cb"
+    ],
+    "pushRow": [
+      "row",
+      "cb"
+    ],
+    "wrapDoneCallback": [
+      "done"
+    ]
+  },
+  "iterate": [
+    "i"
+  ],
+  "callNext": [
+    "err"
+  ],
+  "ParserOptions": {
+    "escapedDelimiter": [],
+    "objectMode": [],
+    "delimiter": [],
+    "ignoreEmpty": [],
+    "quote": [],
+    "escape": [],
+    "escapeChar": [],
+    "comment": [],
+    "supportsComments": [],
+    "ltrim": [],
+    "rtrim": [],
+    "trim": [],
+    "headers": [],
+    "renameHeaders": [],
+    "strictColumnHandling": [],
+    "discardUnmappedColumns": [],
+    "carriageReturn": [],
+    "NEXT_TOKEN_REGEXP": [],
+    "encoding": [],
+    "limitRows": [],
+    "maxRows": [],
+    "skipLines": [],
+    "skipRows": [],
+    "constructor": [
+      "opts"
+    ]
+  },
+  "parse": [
+    "args"
+  ],
+  "parseStream": [
+    "stream",
+    "options"
+  ],
+  "parseFile": [
+    "location",
+    "param"
+  ],
+  "parseString": [
+    "string",
+    "options"
+  ],
+  "Parser": {
+    "removeBOM": [
+      "line"
+    ],
+    "parserOptions": [],
+    "rowParser": [],
+    "constructor": [
+      "parserOptions"
+    ],
+    "parse": [
+      "line",
+      "hasMoreData"
+    ],
+    "parseWithoutComments": [
+      "scanner"
+    ],
+    "parseWithComments": [
+      "scanner"
+    ],
+    "parseRow": [
+      "scanner",
+      "rows"
+    ]
+  },
+  "RowParser": {
+    "isEmptyRow": [
+      "row"
+    ],
+    "parserOptions": [],
+    "columnParser": [],
+    "constructor": [
+      "parserOptions"
+    ],
+    "parse": [
+      "scanner"
+    ],
+    "getStartToken": [
+      "scanner",
+      "columns"
+    ],
+    "shouldSkipColumnParse": [
+      "scanner",
+      "currentToken",
+      "columns"
+    ]
+  },
+  "Scanner": {
+    "line": [],
+    "parserOptions": [],
+    "lineLength": [],
+    "hasMoreData": [],
+    "cursor": [],
+    "constructor": [
+      "args"
+    ],
+    "hasMoreCharacters": [],
+    "nextNonSpaceToken": [],
+    "nextCharacterToken": [],
+    "lineFromCursor": [],
+    "advancePastLine": [],
+    "advanceTo": [
+      "cursor"
+    ],
+    "advanceToToken": [
+      "token"
+    ],
+    "advancePastToken": [
+      "token"
+    ],
+    "truncateToCursor": []
+  },
+  "Token": {
+    "isTokenRowDelimiter": [
+      "token"
+    ],
+    "isTokenCarriageReturn": [
+      "token",
+      "parserOptions"
+    ],
+    "isTokenComment": [
+      "token",
+      "parserOptions"
+    ],
+    "isTokenEscapeCharacter": [
+      "token",
+      "parserOptions"
+    ],
+    "isTokenQuote": [
+      "token",
+      "parserOptions"
+    ],
+    "isTokenDelimiter": [
+      "token",
+      "parserOptions"
+    ],
+    "token": [],
+    "startCursor": [],
+    "endCursor": [],
+    "constructor": [
+      "tokenArgs"
+    ]
+  },
+  "ColumnFormatter": {
+    "format": [],
+    "constructor": [
+      "parserOptions"
+    ]
+  },
+  "ColumnParser": {
+    "parserOptions": [],
+    "nonQuotedColumnParser": [],
+    "quotedColumnParser": [],
+    "constructor": [
+      "parserOptions"
+    ],
+    "parse": [
+      "scanner"
+    ]
+  },
+  "NonQuotedColumnParser": {
+    "parserOptions": [],
+    "columnFormatter": [],
+    "constructor": [
+      "parserOptions"
+    ],
+    "parse": [
+      "scanner"
+    ]
+  },
+  "QuotedColumnParser": {
+    "parserOptions": [],
+    "columnFormatter": [],
+    "constructor": [
+      "parserOptions"
+    ],
+    "parse": [
+      "scanner"
+    ],
+    "gatherDataBetweenQuotes": [
+      "scanner"
+    ],
+    "checkForMalformedColumn": [
+      "scanner"
+    ]
+  },
+  "HeaderTransformer": {
+    "parserOptions": [],
+    "headers": [],
+    "receivedHeaders": [],
+    "shouldUseFirstRow": [],
+    "processedFirstRow": [],
+    "headersLength": [],
+    "headersTransform": [],
+    "constructor": [
+      "parserOptions"
+    ],
+    "transform": [
+      "row",
+      "cb"
+    ],
+    "shouldMapRow": [
+      "row"
+    ],
+    "processRow": [
+      "row"
+    ],
+    "mapHeaders": [
+      "row"
+    ],
+    "setHeaders": [
+      "headers"
+    ]
+  },
+  "RowTransformerValidator": {
+    "createTransform": [
+      "transformFunction"
+    ],
+    "createValidator": [
+      "validateFunction"
+    ],
+    "_rowTransform": [],
+    "_rowValidator": [],
+    "rowTransform": [
+      "transformFunction"
+    ],
+    "rowValidator": [
+      "validateFunction"
+    ],
+    "transformAndValidate": [
+      "row",
+      "cb"
+    ],
+    "callTransformer": [
+      "row",
+      "cb"
+    ],
+    "callValidator": [
+      "row",
+      "cb"
+    ]
+  },
+  "isSyncTransform": [
+    "transform"
+  ],
+  "isSyncValidate": [
+    "validate"
+  ]
+}

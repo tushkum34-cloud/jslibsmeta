@@ -1,0 +1,3347 @@
+{
+  "setSDKVersion": [
+    "version"
+  ],
+  "DOMStorageWrapper": {
+    "domStorage_": [],
+    "prefix_": [],
+    "constructor": [
+      "domStorage_"
+    ],
+    "set": [
+      "key",
+      "value"
+    ],
+    "get": [
+      "key"
+    ],
+    "remove": [
+      "key"
+    ],
+    "isInMemoryStorage": [],
+    "prefixedName_": [
+      "name"
+    ],
+    "toString": []
+  },
+  "MemoryStorage": {
+    "cache_": [],
+    "set": [
+      "key",
+      "value"
+    ],
+    "get": [
+      "key"
+    ],
+    "remove": [
+      "key"
+    ],
+    "isInMemoryStorage": []
+  },
+  "createStoragefor": [
+    "domStorageName"
+  ],
+  "sha1": [
+    "str"
+  ],
+  "buildLogMessage_": [
+    "param"
+  ],
+  "enableLogging$1": [
+    "logger_",
+    "persistent"
+  ],
+  "log": [
+    "param"
+  ],
+  "logWrapper": [
+    "prefix"
+  ],
+  "error": [
+    "param"
+  ],
+  "fatal": [
+    "param"
+  ],
+  "warn": [
+    "param"
+  ],
+  "warnIfPageIsSecure": [],
+  "isInvalidJSONNumber": [
+    "data"
+  ],
+  "executeWhenDOMReady": [
+    "fn"
+  ],
+  "wrappedFn": [],
+  "nameCompare": [
+    "a",
+    "b"
+  ],
+  "stringCompare": [
+    "a",
+    "b"
+  ],
+  "requireKey": [
+    "key",
+    "obj"
+  ],
+  "ObjectToUniqueKey": [
+    "obj"
+  ],
+  "splitStringBySize": [
+    "str",
+    "segsize"
+  ],
+  "each": [
+    "obj",
+    "fn"
+  ],
+  "doubleToIEEE754String": [
+    "v"
+  ],
+  "isChromeExtensionContentScript": [],
+  "isWindowsStoreApp": [],
+  "errorForServerCode": [
+    "code",
+    "query"
+  ],
+  "tryParseInt": [
+    "str"
+  ],
+  "exceptionGuard": [
+    "fn"
+  ],
+  "beingCrawled": [],
+  "setTimeoutNonBlocking": [
+    "fn",
+    "time"
+  ],
+  "AppCheckTokenProvider": {
+    "appCheckProvider": [],
+    "appCheck": [],
+    "serverAppAppCheckToken": [],
+    "appName": [],
+    "constructor": [
+      "app",
+      "appCheckProvider"
+    ],
+    "getToken": [
+      "forceRefresh"
+    ],
+    "addTokenChangeListener": [
+      "listener"
+    ],
+    "notifyForInvalidToken": []
+  },
+  "FirebaseAuthTokenProvider": {
+    "appName_": [],
+    "firebaseOptions_": [],
+    "authProvider_": [],
+    "auth_": [],
+    "constructor": [
+      "appName_",
+      "firebaseOptions_",
+      "authProvider_"
+    ],
+    "getToken": [
+      "forceRefresh"
+    ],
+    "addTokenChangeListener": [
+      "listener"
+    ],
+    "removeTokenChangeListener": [
+      "listener"
+    ],
+    "notifyForInvalidToken": []
+  },
+  "EmulatorTokenProvider": {
+    "accessToken": [],
+    "OWNER": [],
+    "constructor": [
+      "accessToken"
+    ],
+    "getToken": [
+      "forceRefresh"
+    ],
+    "addTokenChangeListener": [
+      "listener"
+    ],
+    "removeTokenChangeListener": [
+      "listener"
+    ],
+    "notifyForInvalidToken": []
+  },
+  "RepoInfo": {
+    "secure": [],
+    "namespace": [],
+    "webSocketOnly": [],
+    "nodeAdmin": [],
+    "persistenceKey": [],
+    "includeNamespaceInQueryParams": [],
+    "isUsingEmulator": [],
+    "emulatorOptions": [],
+    "_host": [],
+    "_domain": [],
+    "internalHost": [],
+    "constructor": [
+      "host",
+      "secure",
+      "namespace",
+      "webSocketOnly",
+      "nodeAdmin",
+      "persistenceKey",
+      "includeNamespaceInQueryParams",
+      "isUsingEmulator",
+      "emulatorOptions"
+    ],
+    "isCacheableHost": [],
+    "isCustomHost": [],
+    "host": [
+      "newHost"
+    ],
+    "toString": [],
+    "toURLString": []
+  },
+  "repoInfoNeedsQueryParam": [
+    "repoInfo"
+  ],
+  "repoInfoConnectionURL": [
+    "repoInfo",
+    "type",
+    "params"
+  ],
+  "StatsCollection": {
+    "counters_": [],
+    "incrementCounter": [
+      "name",
+      "amount"
+    ],
+    "get": []
+  },
+  "statsManagerGetCollection": [
+    "repoInfo"
+  ],
+  "statsManagerGetOrCreateReporter": [
+    "repoInfo",
+    "creatorFunction"
+  ],
+  "PacketReceiver": {
+    "onMessage_": [],
+    "pendingResponses": [],
+    "currentResponseNum": [],
+    "closeAfterResponse": [],
+    "onClose": [],
+    "constructor": [
+      "onMessage_"
+    ],
+    "closeAfter": [
+      "responseNum",
+      "callback"
+    ],
+    "handleResponse": [
+      "requestNum",
+      "data"
+    ]
+  },
+  "BrowserPollConnection": {
+    "connId": [],
+    "repoInfo": [],
+    "applicationId": [],
+    "appCheckToken": [],
+    "authToken": [],
+    "transportSessionId": [],
+    "lastSessionId": [],
+    "bytesSent": [],
+    "bytesReceived": [],
+    "urlFn": [],
+    "scriptTagHolder": [],
+    "myDisconnFrame": [],
+    "curSegmentNum": [],
+    "myPacketOrderer": [],
+    "id": [],
+    "password": [],
+    "log_": [],
+    "stats_": [],
+    "everConnected_": [],
+    "isClosed_": [],
+    "connectTimeoutTimer_": [],
+    "onDisconnect_": [],
+    "constructor": [
+      "connId",
+      "repoInfo",
+      "applicationId",
+      "appCheckToken",
+      "authToken",
+      "transportSessionId",
+      "lastSessionId"
+    ],
+    "open": [
+      "onMessage",
+      "onDisconnect"
+    ],
+    "start": [],
+    "forceAllow_": [],
+    "forceAllow": [],
+    "forceDisallow_": [],
+    "forceDisallow": [],
+    "isAvailable": [],
+    "markConnectionHealthy": [],
+    "shutdown_": [],
+    "onClosed_": [],
+    "close": [],
+    "send": [
+      "data"
+    ],
+    "addDisconnectPingFrame": [
+      "id",
+      "pw"
+    ],
+    "incrementIncomingBytes_": []
+  },
+  "FirebaseIFrameScriptHolder": {
+    "onDisconnect": [],
+    "urlFn": [],
+    "outstandingRequests": [],
+    "pendingSegs": [],
+    "currentSerial": [],
+    "sendNewPolls": [],
+    "uniqueCallbackIdentifier": [],
+    "myIFrame": [],
+    "alive": [],
+    "myID": [],
+    "myPW": [],
+    "commandCB": [],
+    "onMessageCB": [],
+    "constructor": [
+      "commandCB",
+      "onMessageCB",
+      "onDisconnect",
+      "urlFn"
+    ],
+    "createIFrame_": [],
+    "close": [],
+    "startLongPoll": [
+      "id",
+      "pw"
+    ],
+    "newRequest_": [],
+    "enqueueSegment": [
+      "segnum",
+      "totalsegs",
+      "data"
+    ],
+    "addLongPollTag_": [],
+    "addTag": [
+      "url",
+      "loadCB"
+    ]
+  },
+  "doNewRequest": [],
+  "readyStateCB": [],
+  "WebSocketConnection": {
+    "connId": [],
+    "applicationId": [],
+    "appCheckToken": [],
+    "authToken": [],
+    "keepaliveTimer": [],
+    "frames": [],
+    "totalFrames": [],
+    "bytesSent": [],
+    "bytesReceived": [],
+    "connURL": [],
+    "onDisconnect": [],
+    "onMessage": [],
+    "mySock": [],
+    "log_": [],
+    "stats_": [],
+    "everConnected_": [],
+    "isClosed_": [],
+    "nodeAdmin": [],
+    "constructor": [
+      "connId",
+      "repoInfo",
+      "applicationId",
+      "appCheckToken",
+      "authToken",
+      "transportSessionId",
+      "lastSessionId"
+    ],
+    "connectionURL_": [],
+    "open": [
+      "onMessage",
+      "onDisconnect"
+    ],
+    "start": [],
+    "forceDisallow_": [],
+    "forceDisallow": [],
+    "isAvailable": [],
+    "responsesRequiredToBeHealthy": [],
+    "healthyTimeout": [],
+    "previouslyFailed": [],
+    "markConnectionHealthy": [],
+    "appendFrame_": [],
+    "handleNewFrameCount_": [],
+    "extractFrameCount_": [],
+    "handleIncomingFrame": [
+      "mess"
+    ],
+    "send": [
+      "data"
+    ],
+    "shutdown_": [],
+    "onClosed_": [],
+    "close": [],
+    "resetKeepAlive": [],
+    "sendString_": []
+  },
+  "TransportManager": {
+    "transports_": [],
+    "globalTransportInitialized_": [],
+    "ALL_TRANSPORTS": [],
+    "IS_TRANSPORT_INITIALIZED": [],
+    "constructor": [
+      "repoInfo"
+    ],
+    "initTransports_": [],
+    "initialTransport": [],
+    "upgradeTransport": []
+  },
+  "Connection": {
+    "id": [],
+    "repoInfo_": [],
+    "applicationId_": [],
+    "appCheckToken_": [],
+    "authToken_": [],
+    "onMessage_": [],
+    "onReady_": [],
+    "onDisconnect_": [],
+    "onKill_": [],
+    "lastSessionId": [],
+    "connectionCount": [],
+    "pendingDataMessages": [],
+    "sessionId": [],
+    "conn_": [],
+    "healthyTimeout_": [],
+    "isHealthy_": [],
+    "log_": [],
+    "primaryResponsesRequired_": [],
+    "rx_": [],
+    "secondaryConn_": [],
+    "secondaryResponsesRequired_": [],
+    "state_": [],
+    "transportManager_": [],
+    "tx_": [],
+    "constructor": [
+      "id",
+      "repoInfo_",
+      "applicationId_",
+      "appCheckToken_",
+      "authToken_",
+      "onMessage_",
+      "onReady_",
+      "onDisconnect_",
+      "onKill_",
+      "lastSessionId"
+    ],
+    "start_": [],
+    "nextTransportId_": [],
+    "disconnReceiver_": [],
+    "connReceiver_": [],
+    "sendRequest": [
+      "dataMsg"
+    ],
+    "tryCleanupConnection": [],
+    "onSecondaryControl_": [],
+    "onSecondaryMessageReceived_": [],
+    "upgradeIfSecondaryHealthy_": [],
+    "proceedWithUpgrade_": [],
+    "onPrimaryMessageReceived_": [],
+    "onDataMessage_": [],
+    "onPrimaryResponse_": [],
+    "onControl_": [],
+    "onHandshake_": [],
+    "tryStartUpgrade_": [],
+    "startUpgrade_": [],
+    "onReset_": [],
+    "onConnectionEstablished_": [],
+    "sendPingOnPrimaryIfNecessary_": [],
+    "onSecondaryConnectionLost_": [],
+    "onConnectionLost_": [],
+    "onConnectionShutdown_": [],
+    "sendData_": [],
+    "close": [],
+    "closeConnections_": []
+  },
+  "ServerActions": {
+    "listen": [
+      "query",
+      "currentHashFn",
+      "tag",
+      "onComplete"
+    ],
+    "unlisten": [
+      "query",
+      "tag"
+    ],
+    "get": [
+      "query"
+    ],
+    "put": [
+      "pathString",
+      "data",
+      "onComplete",
+      "hash"
+    ],
+    "merge": [
+      "pathString",
+      "data",
+      "onComplete",
+      "hash"
+    ],
+    "refreshAuthToken": [
+      "token"
+    ],
+    "refreshAppCheckToken": [
+      "token"
+    ],
+    "onDisconnectPut": [
+      "pathString",
+      "data",
+      "onComplete"
+    ],
+    "onDisconnectMerge": [
+      "pathString",
+      "data",
+      "onComplete"
+    ],
+    "onDisconnectCancel": [
+      "pathString",
+      "onComplete"
+    ],
+    "reportStats": [
+      "stats"
+    ]
+  },
+  "EventEmitter": {
+    "allowedEvents_": [],
+    "listeners_": [],
+    "constructor": [
+      "allowedEvents_"
+    ],
+    "getInitialEvent": [
+      "eventType"
+    ],
+    "trigger": [
+      "eventType",
+      "param"
+    ],
+    "on": [
+      "eventType",
+      "callback",
+      "context"
+    ],
+    "off": [
+      "eventType",
+      "callback",
+      "context"
+    ],
+    "validateEventType_": []
+  },
+  "OnlineMonitor": {
+    "online_": [],
+    "getInstance": [],
+    "constructor": [],
+    "getInitialEvent": [
+      "eventType"
+    ],
+    "currentlyOnline": []
+  },
+  "Path": {
+    "pieces_": [],
+    "pieceNum_": [],
+    "constructor": [
+      "pathOrString",
+      "pieceNum"
+    ],
+    "toString": []
+  },
+  "newEmptyPath": [],
+  "pathGetFront": [
+    "path"
+  ],
+  "pathGetLength": [
+    "path"
+  ],
+  "pathPopFront": [
+    "path"
+  ],
+  "pathGetBack": [
+    "path"
+  ],
+  "pathToUrlEncodedString": [
+    "path"
+  ],
+  "pathSlice": [
+    "path",
+    "param"
+  ],
+  "pathParent": [
+    "path"
+  ],
+  "pathChild": [
+    "path",
+    "childPathObj"
+  ],
+  "pathIsEmpty": [
+    "path"
+  ],
+  "newRelativePath": [
+    "outerPath",
+    "innerPath"
+  ],
+  "pathCompare": [
+    "left",
+    "right"
+  ],
+  "pathEquals": [
+    "path",
+    "other"
+  ],
+  "pathContains": [
+    "path",
+    "other"
+  ],
+  "ValidationPath": {
+    "errorPrefix_": [],
+    "parts_": [],
+    "byteLength_": [],
+    "constructor": [
+      "path",
+      "errorPrefix_"
+    ]
+  },
+  "validationPathPush": [
+    "validationPath",
+    "child"
+  ],
+  "validationPathPop": [
+    "validationPath"
+  ],
+  "validationPathCheckValid": [
+    "validationPath"
+  ],
+  "validationPathToErrorString": [
+    "validationPath"
+  ],
+  "VisibilityMonitor": {
+    "visible_": [],
+    "getInstance": [],
+    "constructor": [],
+    "getInitialEvent": [
+      "eventType"
+    ]
+  },
+  "PersistentConnection": {
+    "repoInfo_": [],
+    "applicationId_": [],
+    "onDataUpdate_": [],
+    "onConnectStatus_": [],
+    "onServerInfoUpdate_": [],
+    "authTokenProvider_": [],
+    "appCheckTokenProvider_": [],
+    "authOverride_": [],
+    "id": [],
+    "log_": [],
+    "interruptReasons_": [],
+    "listens": [],
+    "outstandingPuts_": [],
+    "outstandingGets_": [],
+    "outstandingPutCount_": [],
+    "outstandingGetCount_": [],
+    "onDisconnectRequestQueue_": [],
+    "connected_": [],
+    "reconnectDelay_": [],
+    "maxReconnectDelay_": [],
+    "securityDebugCallback_": [],
+    "lastSessionId": [],
+    "establishConnectionTimer_": [],
+    "visible_": [],
+    "requestCBHash_": [],
+    "requestNumber_": [],
+    "realtime_": [],
+    "authToken_": [],
+    "appCheckToken_": [],
+    "forceTokenRefresh_": [],
+    "invalidAuthTokenCount_": [],
+    "invalidAppCheckTokenCount_": [],
+    "firstConnection_": [],
+    "lastConnectionAttemptTime_": [],
+    "lastConnectionEstablishedTime_": [],
+    "nextPersistentConnectionId_": [],
+    "nextConnectionId_": [],
+    "constructor": [
+      "repoInfo_",
+      "applicationId_",
+      "onDataUpdate_",
+      "onConnectStatus_",
+      "onServerInfoUpdate_",
+      "authTokenProvider_",
+      "appCheckTokenProvider_",
+      "authOverride_"
+    ],
+    "sendRequest": [
+      "action",
+      "body",
+      "onResponse"
+    ],
+    "get": [
+      "query"
+    ],
+    "listen": [
+      "query",
+      "currentHashFn",
+      "tag",
+      "onComplete"
+    ],
+    "sendGet_": [],
+    "sendListen_": [],
+    "warnOnListenWarnings_": [],
+    "refreshAuthToken": [
+      "token"
+    ],
+    "reduceReconnectDelayIfAdminCredential_": [],
+    "refreshAppCheckToken": [
+      "token"
+    ],
+    "tryAuth": [],
+    "tryAppCheck": [],
+    "unlisten": [
+      "query",
+      "tag"
+    ],
+    "sendUnlisten_": [],
+    "onDisconnectPut": [
+      "pathString",
+      "data",
+      "onComplete"
+    ],
+    "onDisconnectMerge": [
+      "pathString",
+      "data",
+      "onComplete"
+    ],
+    "onDisconnectCancel": [
+      "pathString",
+      "onComplete"
+    ],
+    "sendOnDisconnect_": [],
+    "put": [
+      "pathString",
+      "data",
+      "onComplete",
+      "hash"
+    ],
+    "merge": [
+      "pathString",
+      "data",
+      "onComplete",
+      "hash"
+    ],
+    "putInternal": [
+      "action",
+      "pathString",
+      "data",
+      "onComplete",
+      "hash"
+    ],
+    "sendPut_": [],
+    "reportStats": [
+      "stats"
+    ],
+    "onDataMessage_": [],
+    "onDataPush_": [],
+    "onReady_": [],
+    "scheduleConnect_": [],
+    "initConnection_": [],
+    "onVisible_": [],
+    "onOnline_": [],
+    "onRealtimeDisconnect_": [],
+    "establishConnection_": [],
+    "interrupt": [
+      "reason"
+    ],
+    "resume": [
+      "reason"
+    ],
+    "handleTimestamp_": [],
+    "cancelSentTransactions_": [],
+    "onListenRevoked_": [],
+    "removeListen_": [],
+    "onAuthRevoked_": [],
+    "onAppCheckRevoked_": [],
+    "onSecurityDebugPacket_": [],
+    "restoreState_": [],
+    "sendConnectStats_": [],
+    "shouldReconnect_": []
+  },
+  "closeFn": [],
+  "sendRequestFn": [
+    "msg"
+  ],
+  "NamedNode": {
+    "name": [],
+    "node": [],
+    "constructor": [
+      "name",
+      "node"
+    ],
+    "Wrap": [
+      "name",
+      "node"
+    ]
+  },
+  "Index": {
+    "compare": [
+      "a",
+      "b"
+    ],
+    "isDefinedOn": [
+      "node"
+    ],
+    "getCompare": [],
+    "indexedValueChanged": [
+      "oldNode",
+      "newNode"
+    ],
+    "minPost": [],
+    "maxPost": [],
+    "makePost": [
+      "indexValue",
+      "name"
+    ],
+    "toString": []
+  },
+  "KeyIndex": {
+    "__EMPTY_NODE": [
+      "val"
+    ],
+    "compare": [
+      "a",
+      "b"
+    ],
+    "isDefinedOn": [
+      "node"
+    ],
+    "indexedValueChanged": [
+      "oldNode",
+      "newNode"
+    ],
+    "minPost": [],
+    "maxPost": [],
+    "makePost": [
+      "indexValue",
+      "name"
+    ],
+    "toString": []
+  },
+  "SortedMapIterator": {
+    "isReverse_": [],
+    "resultGenerator_": [],
+    "nodeStack_": [],
+    "constructor": [
+      "node",
+      "startKey",
+      "comparator",
+      "isReverse_",
+      "resultGenerator_"
+    ],
+    "getNext": [],
+    "hasNext": [],
+    "peek": []
+  },
+  "LLRBNode": {
+    "key": [],
+    "value": [],
+    "color": [],
+    "left": [],
+    "right": [],
+    "constructor": [
+      "key",
+      "value",
+      "color",
+      "left",
+      "right"
+    ],
+    "RED": [],
+    "BLACK": [],
+    "copy": [
+      "key",
+      "value",
+      "color",
+      "left",
+      "right"
+    ],
+    "count": [],
+    "isEmpty": [],
+    "inorderTraversal": [
+      "action"
+    ],
+    "reverseTraversal": [
+      "action"
+    ],
+    "min_": [],
+    "minKey": [],
+    "maxKey": [],
+    "insert": [
+      "key",
+      "value",
+      "comparator"
+    ],
+    "removeMin_": [],
+    "remove": [
+      "key",
+      "comparator"
+    ],
+    "isRed_": [],
+    "fixUp_": [],
+    "moveRedLeft_": [],
+    "moveRedRight_": [],
+    "rotateLeft_": [],
+    "rotateRight_": [],
+    "colorFlip_": [],
+    "checkMaxDepth_": [],
+    "check_": []
+  },
+  "LLRBEmptyNode": {
+    "key": [],
+    "value": [],
+    "left": [],
+    "right": [],
+    "color": [],
+    "copy": [
+      "key",
+      "value",
+      "color",
+      "left",
+      "right"
+    ],
+    "insert": [
+      "key",
+      "value",
+      "comparator"
+    ],
+    "remove": [
+      "key",
+      "comparator"
+    ],
+    "count": [],
+    "isEmpty": [],
+    "inorderTraversal": [
+      "action"
+    ],
+    "reverseTraversal": [
+      "action"
+    ],
+    "minKey": [],
+    "maxKey": [],
+    "check_": [],
+    "isRed_": []
+  },
+  "SortedMap": {
+    "comparator_": [],
+    "root_": [],
+    "EMPTY_NODE": [],
+    "constructor": [
+      "comparator_",
+      "root_"
+    ],
+    "insert": [
+      "key",
+      "value"
+    ],
+    "remove": [
+      "key"
+    ],
+    "get": [
+      "key"
+    ],
+    "getPredecessorKey": [
+      "key"
+    ],
+    "isEmpty": [],
+    "count": [],
+    "minKey": [],
+    "maxKey": [],
+    "inorderTraversal": [
+      "action"
+    ],
+    "reverseTraversal": [
+      "action"
+    ],
+    "getIterator": [
+      "resultGenerator"
+    ],
+    "getIteratorFrom": [
+      "key",
+      "resultGenerator"
+    ],
+    "getReverseIteratorFrom": [
+      "key",
+      "resultGenerator"
+    ],
+    "getReverseIterator": [
+      "resultGenerator"
+    ]
+  },
+  "NAME_ONLY_COMPARATOR": [
+    "left",
+    "right"
+  ],
+  "NAME_COMPARATOR": [
+    "left",
+    "right"
+  ],
+  "setMaxNode$1": [
+    "val"
+  ],
+  "priorityHashText": [
+    "priority"
+  ],
+  "validatePriorityNode": [
+    "priorityNode"
+  ],
+  "LeafNode": {
+    "value_": [],
+    "priorityNode_": [],
+    "__childrenNodeConstructor": [],
+    "VALUE_TYPE_ORDER": [],
+    "lazyHash_": [],
+    "constructor": [
+      "value_",
+      "priorityNode_"
+    ],
+    "isLeafNode": [],
+    "getPriority": [],
+    "updatePriority": [
+      "newPriorityNode"
+    ],
+    "getImmediateChild": [
+      "childName"
+    ],
+    "getChild": [
+      "path"
+    ],
+    "hasChild": [],
+    "getPredecessorChildName": [
+      "childName",
+      "childNode"
+    ],
+    "updateImmediateChild": [
+      "childName",
+      "newChildNode"
+    ],
+    "updateChild": [
+      "path",
+      "newChildNode"
+    ],
+    "isEmpty": [],
+    "numChildren": [],
+    "forEachChild": [
+      "index",
+      "action"
+    ],
+    "val": [
+      "exportFormat"
+    ],
+    "hash": [],
+    "getValue": [],
+    "compareTo": [
+      "other"
+    ],
+    "compareToLeafNode_": [],
+    "withIndex": [],
+    "isIndexed": [],
+    "equals": [
+      "other"
+    ]
+  },
+  "setNodeFromJSON": [
+    "val"
+  ],
+  "setMaxNode": [
+    "val"
+  ],
+  "PriorityIndex": {
+    "compare": [
+      "a",
+      "b"
+    ],
+    "isDefinedOn": [
+      "node"
+    ],
+    "indexedValueChanged": [
+      "oldNode",
+      "newNode"
+    ],
+    "minPost": [],
+    "maxPost": [],
+    "makePost": [
+      "indexValue",
+      "name"
+    ],
+    "toString": []
+  },
+  "Base12Num": {
+    "constructor": [
+      "length"
+    ],
+    "nextBitIsOne": []
+  },
+  "logBase2": [
+    "num"
+  ],
+  "bitMask": [
+    "bits"
+  ],
+  "buildChildSet": [
+    "childList",
+    "cmp",
+    "keyFn",
+    "mapSortFn"
+  ],
+  "buildBalancedTree": [
+    "low",
+    "high"
+  ],
+  "buildFrom12Array": [
+    "base12"
+  ],
+  "buildPennant": [
+    "chunkSize",
+    "color"
+  ],
+  "attachPennant": [
+    "pennant"
+  ],
+  "IndexMap": {
+    "indexes_": [],
+    "indexSet_": [],
+    "Default": [],
+    "constructor": [
+      "indexes_",
+      "indexSet_"
+    ],
+    "get": [
+      "indexKey"
+    ],
+    "hasIndex": [
+      "indexDefinition"
+    ],
+    "addIndex": [
+      "indexDefinition",
+      "existingChildren"
+    ],
+    "addToIndexes": [
+      "namedNode",
+      "existingChildren"
+    ],
+    "removeFromIndexes": [
+      "namedNode",
+      "existingChildren"
+    ]
+  },
+  "ChildrenNode": {
+    "children_": [],
+    "priorityNode_": [],
+    "indexMap_": [],
+    "lazyHash_": [],
+    "EMPTY_NODE": [],
+    "constructor": [
+      "children_",
+      "priorityNode_",
+      "indexMap_"
+    ],
+    "isLeafNode": [],
+    "getPriority": [],
+    "updatePriority": [
+      "newPriorityNode"
+    ],
+    "getImmediateChild": [
+      "childName"
+    ],
+    "getChild": [
+      "path"
+    ],
+    "hasChild": [
+      "childName"
+    ],
+    "updateImmediateChild": [
+      "childName",
+      "newChildNode"
+    ],
+    "updateChild": [
+      "path",
+      "newChildNode"
+    ],
+    "isEmpty": [],
+    "numChildren": [],
+    "INTEGER_REGEXP_": [],
+    "val": [
+      "exportFormat"
+    ],
+    "hash": [],
+    "getPredecessorChildName": [
+      "childName",
+      "childNode",
+      "index"
+    ],
+    "getFirstChildName": [
+      "indexDefinition"
+    ],
+    "getFirstChild": [
+      "indexDefinition"
+    ],
+    "getLastChildName": [
+      "indexDefinition"
+    ],
+    "getLastChild": [
+      "indexDefinition"
+    ],
+    "forEachChild": [
+      "index",
+      "action"
+    ],
+    "getIterator": [
+      "indexDefinition"
+    ],
+    "getIteratorFrom": [
+      "startPost",
+      "indexDefinition"
+    ],
+    "getReverseIterator": [
+      "indexDefinition"
+    ],
+    "getReverseIteratorFrom": [
+      "endPost",
+      "indexDefinition"
+    ],
+    "compareTo": [
+      "other"
+    ],
+    "withIndex": [
+      "indexDefinition"
+    ],
+    "isIndexed": [
+      "index"
+    ],
+    "equals": [
+      "other"
+    ],
+    "resolveIndex_": []
+  },
+  "MaxNode": {
+    "constructor": [],
+    "compareTo": [
+      "other"
+    ],
+    "equals": [
+      "other"
+    ],
+    "getPriority": [],
+    "getImmediateChild": [
+      "childName"
+    ],
+    "isEmpty": []
+  },
+  "nodeFromJSON": [
+    "json",
+    "param"
+  ],
+  "PathIndex": {
+    "indexPath_": [],
+    "constructor": [
+      "indexPath_"
+    ],
+    "extractChild": [
+      "snap"
+    ],
+    "isDefinedOn": [
+      "node"
+    ],
+    "compare": [
+      "a",
+      "b"
+    ],
+    "makePost": [
+      "indexValue",
+      "name"
+    ],
+    "maxPost": [],
+    "toString": []
+  },
+  "ValueIndex": {
+    "compare": [
+      "a",
+      "b"
+    ],
+    "isDefinedOn": [
+      "node"
+    ],
+    "indexedValueChanged": [
+      "oldNode",
+      "newNode"
+    ],
+    "minPost": [],
+    "maxPost": [],
+    "makePost": [
+      "indexValue",
+      "name"
+    ],
+    "toString": []
+  },
+  "changeValue": [
+    "snapshotNode"
+  ],
+  "changeChildAdded": [
+    "childName",
+    "snapshotNode"
+  ],
+  "changeChildRemoved": [
+    "childName",
+    "snapshotNode"
+  ],
+  "changeChildChanged": [
+    "childName",
+    "snapshotNode",
+    "oldSnap"
+  ],
+  "changeChildMoved": [
+    "childName",
+    "snapshotNode"
+  ],
+  "IndexedFilter": {
+    "index_": [],
+    "constructor": [
+      "index_"
+    ],
+    "updateChild": [
+      "snap",
+      "key",
+      "newChild",
+      "affectedPath",
+      "source",
+      "optChangeAccumulator"
+    ],
+    "updateFullNode": [
+      "oldSnap",
+      "newSnap",
+      "optChangeAccumulator"
+    ],
+    "updatePriority": [
+      "oldSnap",
+      "newPriority"
+    ],
+    "filtersNodes": [],
+    "getIndexedFilter": [],
+    "getIndex": []
+  },
+  "RangedFilter": {
+    "indexedFilter_": [],
+    "index_": [],
+    "startPost_": [],
+    "endPost_": [],
+    "startIsInclusive_": [],
+    "endIsInclusive_": [],
+    "constructor": [
+      "params"
+    ],
+    "getStartPost": [],
+    "getEndPost": [],
+    "matches": [
+      "node"
+    ],
+    "updateChild": [
+      "snap",
+      "key",
+      "newChild",
+      "affectedPath",
+      "source",
+      "optChangeAccumulator"
+    ],
+    "updateFullNode": [
+      "oldSnap",
+      "newSnap",
+      "optChangeAccumulator"
+    ],
+    "updatePriority": [
+      "oldSnap",
+      "newPriority"
+    ],
+    "filtersNodes": [],
+    "getIndexedFilter": [],
+    "getIndex": [],
+    "getStartPost_": [],
+    "getEndPost_": []
+  },
+  "LimitedFilter": {
+    "rangedFilter_": [],
+    "index_": [],
+    "limit_": [],
+    "reverse_": [],
+    "startIsInclusive_": [],
+    "endIsInclusive_": [],
+    "constructor": [
+      "params"
+    ],
+    "updateChild": [
+      "snap",
+      "key",
+      "newChild",
+      "affectedPath",
+      "source",
+      "optChangeAccumulator"
+    ],
+    "updateFullNode": [
+      "oldSnap",
+      "newSnap",
+      "optChangeAccumulator"
+    ],
+    "updatePriority": [
+      "oldSnap",
+      "newPriority"
+    ],
+    "filtersNodes": [],
+    "getIndexedFilter": [],
+    "getIndex": [],
+    "fullLimitUpdateChild_": [],
+    "withinDirectionalStart": [],
+    "withinDirectionalEnd": [],
+    "withinStartPost": [],
+    "withinEndPost": []
+  },
+  "QueryParams": {
+    "limitSet_": [],
+    "startSet_": [],
+    "startNameSet_": [],
+    "startAfterSet_": [],
+    "endSet_": [],
+    "endNameSet_": [],
+    "endBeforeSet_": [],
+    "limit_": [],
+    "viewFrom_": [],
+    "indexStartValue_": [],
+    "indexStartName_": [],
+    "indexEndValue_": [],
+    "indexEndName_": [],
+    "index_": [],
+    "hasStart": [],
+    "isViewFromLeft": [],
+    "getIndexStartValue": [],
+    "getIndexStartName": [],
+    "hasEnd": [],
+    "getIndexEndValue": [],
+    "getIndexEndName": [],
+    "hasLimit": [],
+    "hasAnchoredLimit": [],
+    "getLimit": [],
+    "getIndex": [],
+    "loadsAllData": [],
+    "isDefault": [],
+    "copy": []
+  },
+  "queryParamsGetNodeFilter": [
+    "queryParams"
+  ],
+  "queryParamsLimitToFirst": [
+    "queryParams",
+    "newLimit"
+  ],
+  "queryParamsLimitToLast": [
+    "queryParams",
+    "newLimit"
+  ],
+  "queryParamsStartAt": [
+    "queryParams",
+    "indexValue",
+    "key"
+  ],
+  "queryParamsStartAfter": [
+    "queryParams",
+    "indexValue",
+    "key"
+  ],
+  "queryParamsEndAt": [
+    "queryParams",
+    "indexValue",
+    "key"
+  ],
+  "queryParamsEndBefore": [
+    "queryParams",
+    "indexValue",
+    "key"
+  ],
+  "queryParamsOrderBy": [
+    "queryParams",
+    "index"
+  ],
+  "queryParamsToRestQueryStringParameters": [
+    "queryParams"
+  ],
+  "queryParamsGetQueryObject": [
+    "queryParams"
+  ],
+  "ReadonlyRestClient": {
+    "repoInfo_": [],
+    "onDataUpdate_": [],
+    "authTokenProvider_": [],
+    "appCheckTokenProvider_": [],
+    "reportStats": [
+      "stats"
+    ],
+    "log_": [],
+    "listens_": [],
+    "getListenId_": [
+      "query",
+      "tag"
+    ],
+    "constructor": [
+      "repoInfo_",
+      "onDataUpdate_",
+      "authTokenProvider_",
+      "appCheckTokenProvider_"
+    ],
+    "listen": [
+      "query",
+      "currentHashFn",
+      "tag",
+      "onComplete"
+    ],
+    "unlisten": [
+      "query",
+      "tag"
+    ],
+    "get": [
+      "query"
+    ],
+    "refreshAuthToken": [
+      "token"
+    ],
+    "restRequest_": []
+  },
+  "SnapshotHolder": {
+    "rootNode_": [],
+    "getNode": [
+      "path"
+    ],
+    "updateSnapshot": [
+      "path",
+      "newSnapshotNode"
+    ]
+  },
+  "newSparseSnapshotTree": [],
+  "sparseSnapshotTreeRemember": [
+    "sparseSnapshotTree",
+    "path",
+    "data"
+  ],
+  "sparseSnapshotTreeForget": [
+    "sparseSnapshotTree",
+    "path"
+  ],
+  "sparseSnapshotTreeForEachTree": [
+    "sparseSnapshotTree",
+    "prefixPath",
+    "func"
+  ],
+  "sparseSnapshotTreeForEachChild": [
+    "sparseSnapshotTree",
+    "func"
+  ],
+  "StatsListener": {
+    "collection_": [],
+    "last_": [],
+    "constructor": [
+      "collection_"
+    ],
+    "get": []
+  },
+  "StatsReporter": {
+    "server_": [],
+    "statsListener_": [],
+    "statsToReport_": [],
+    "constructor": [
+      "collection",
+      "server_"
+    ],
+    "reportStats_": []
+  },
+  "newOperationSourceUser": [],
+  "newOperationSourceServer": [],
+  "newOperationSourceServerTaggedQuery": [
+    "queryId"
+  ],
+  "AckUserWrite": {
+    "path": [],
+    "affectedTree": [],
+    "revert": [],
+    "type": [],
+    "source": [],
+    "constructor": [
+      "path",
+      "affectedTree",
+      "revert"
+    ],
+    "operationForChild": [
+      "childName"
+    ]
+  },
+  "ListenComplete": {
+    "source": [],
+    "path": [],
+    "type": [],
+    "constructor": [
+      "source",
+      "path"
+    ],
+    "operationForChild": [
+      "childName"
+    ]
+  },
+  "Overwrite": {
+    "source": [],
+    "path": [],
+    "snap": [],
+    "type": [],
+    "constructor": [
+      "source",
+      "path",
+      "snap"
+    ],
+    "operationForChild": [
+      "childName"
+    ]
+  },
+  "Merge": {
+    "source": [],
+    "path": [],
+    "children": [],
+    "type": [],
+    "constructor": [
+      "source",
+      "path",
+      "children"
+    ],
+    "operationForChild": [
+      "childName"
+    ],
+    "toString": []
+  },
+  "CacheNode": {
+    "node_": [],
+    "fullyInitialized_": [],
+    "filtered_": [],
+    "constructor": [
+      "node_",
+      "fullyInitialized_",
+      "filtered_"
+    ],
+    "isFullyInitialized": [],
+    "isFiltered": [],
+    "isCompleteForPath": [
+      "path"
+    ],
+    "isCompleteForChild": [
+      "key"
+    ],
+    "getNode": []
+  },
+  "EventGenerator": {
+    "query_": [],
+    "index_": [],
+    "constructor": [
+      "query_"
+    ]
+  },
+  "eventGeneratorGenerateEventsForChanges": [
+    "eventGenerator",
+    "changes",
+    "eventCache",
+    "eventRegistrations"
+  ],
+  "eventGeneratorGenerateEventsForType": [
+    "eventGenerator",
+    "events",
+    "eventType",
+    "changes",
+    "registrations",
+    "eventCache"
+  ],
+  "eventGeneratorMaterializeSingleChange": [
+    "eventGenerator",
+    "change",
+    "eventCache"
+  ],
+  "eventGeneratorCompareChanges": [
+    "eventGenerator",
+    "a",
+    "b"
+  ],
+  "newViewCache": [
+    "eventCache",
+    "serverCache"
+  ],
+  "viewCacheUpdateEventSnap": [
+    "viewCache",
+    "eventSnap",
+    "complete",
+    "filtered"
+  ],
+  "viewCacheUpdateServerSnap": [
+    "viewCache",
+    "serverSnap",
+    "complete",
+    "filtered"
+  ],
+  "viewCacheGetCompleteEventSnap": [
+    "viewCache"
+  ],
+  "viewCacheGetCompleteServerSnap": [
+    "viewCache"
+  ],
+  "EmptyChildren": [],
+  "ImmutableTree": {
+    "value": [],
+    "children": [],
+    "fromObject": [
+      "obj"
+    ],
+    "constructor": [
+      "value",
+      "children"
+    ],
+    "isEmpty": [],
+    "findRootMostMatchingPathAndValue": [
+      "relativePath",
+      "predicate"
+    ],
+    "findRootMostValueAndPath": [
+      "relativePath"
+    ],
+    "subtree": [
+      "relativePath"
+    ],
+    "set": [
+      "relativePath",
+      "toSet"
+    ],
+    "remove": [
+      "relativePath"
+    ],
+    "get": [
+      "relativePath"
+    ],
+    "setTree": [
+      "relativePath",
+      "newTree"
+    ],
+    "fold": [
+      "fn"
+    ],
+    "fold_": [],
+    "findOnPath": [
+      "path",
+      "f"
+    ],
+    "findOnPath_": [],
+    "foreachOnPath": [
+      "path",
+      "f"
+    ],
+    "foreachOnPath_": [],
+    "foreach": [
+      "f"
+    ],
+    "foreach_": [],
+    "foreachChild": [
+      "f"
+    ]
+  },
+  "CompoundWrite": {
+    "writeTree_": [],
+    "constructor": [
+      "writeTree_"
+    ],
+    "empty": []
+  },
+  "compoundWriteAddWrite": [
+    "compoundWrite",
+    "path",
+    "node"
+  ],
+  "compoundWriteAddWrites": [
+    "compoundWrite",
+    "path",
+    "updates"
+  ],
+  "compoundWriteRemoveWrite": [
+    "compoundWrite",
+    "path"
+  ],
+  "compoundWriteHasCompleteWrite": [
+    "compoundWrite",
+    "path"
+  ],
+  "compoundWriteGetCompleteNode": [
+    "compoundWrite",
+    "path"
+  ],
+  "compoundWriteGetCompleteChildren": [
+    "compoundWrite"
+  ],
+  "compoundWriteChildCompoundWrite": [
+    "compoundWrite",
+    "path"
+  ],
+  "compoundWriteIsEmpty": [
+    "compoundWrite"
+  ],
+  "compoundWriteApply": [
+    "compoundWrite",
+    "node"
+  ],
+  "applySubtreeWrite": [
+    "relativePath",
+    "writeTree",
+    "node"
+  ],
+  "writeTreeChildWrites": [
+    "writeTree",
+    "path"
+  ],
+  "writeTreeAddOverwrite": [
+    "writeTree",
+    "path",
+    "snap",
+    "writeId",
+    "visible"
+  ],
+  "writeTreeAddMerge": [
+    "writeTree",
+    "path",
+    "changedChildren",
+    "writeId"
+  ],
+  "writeTreeGetWrite": [
+    "writeTree",
+    "writeId"
+  ],
+  "writeTreeRemoveWrite": [
+    "writeTree",
+    "writeId"
+  ],
+  "writeTreeRecordContainsPath_": [
+    "writeRecord",
+    "path"
+  ],
+  "writeTreeResetTree_": [
+    "writeTree"
+  ],
+  "writeTreeDefaultFilter_": [
+    "write"
+  ],
+  "writeTreeLayerTree_": [
+    "writes",
+    "filter",
+    "treeRoot"
+  ],
+  "writeTreeCalcCompleteEventCache": [
+    "writeTree",
+    "treePath",
+    "completeServerCache",
+    "writeIdsToExclude",
+    "includeHiddenWrites"
+  ],
+  "filter": [
+    "write"
+  ],
+  "writeTreeCalcCompleteEventChildren": [
+    "writeTree",
+    "treePath",
+    "completeServerChildren"
+  ],
+  "writeTreeCalcEventCacheAfterServerOverwrite": [
+    "writeTree",
+    "treePath",
+    "childPath",
+    "existingEventSnap",
+    "existingServerSnap"
+  ],
+  "writeTreeCalcCompleteChild": [
+    "writeTree",
+    "treePath",
+    "childKey",
+    "existingServerSnap"
+  ],
+  "writeTreeShadowingWrite": [
+    "writeTree",
+    "path"
+  ],
+  "writeTreeCalcIndexedSlice": [
+    "writeTree",
+    "treePath",
+    "completeServerData",
+    "startPost",
+    "count",
+    "reverse",
+    "index"
+  ],
+  "newWriteTree": [],
+  "writeTreeRefCalcCompleteEventCache": [
+    "writeTreeRef",
+    "completeServerCache",
+    "writeIdsToExclude",
+    "includeHiddenWrites"
+  ],
+  "writeTreeRefCalcCompleteEventChildren": [
+    "writeTreeRef",
+    "completeServerChildren"
+  ],
+  "writeTreeRefCalcEventCacheAfterServerOverwrite": [
+    "writeTreeRef",
+    "path",
+    "existingEventSnap",
+    "existingServerSnap"
+  ],
+  "writeTreeRefShadowingWrite": [
+    "writeTreeRef",
+    "path"
+  ],
+  "writeTreeRefCalcIndexedSlice": [
+    "writeTreeRef",
+    "completeServerData",
+    "startPost",
+    "count",
+    "reverse",
+    "index"
+  ],
+  "writeTreeRefCalcCompleteChild": [
+    "writeTreeRef",
+    "childKey",
+    "existingServerCache"
+  ],
+  "writeTreeRefChild": [
+    "writeTreeRef",
+    "childName"
+  ],
+  "newWriteTreeRef": [
+    "path",
+    "writeTree"
+  ],
+  "ChildChangeAccumulator": {
+    "changeMap": [],
+    "trackChildChange": [
+      "change"
+    ],
+    "getChanges": []
+  },
+  "NoCompleteChildSource_": {
+    "getCompleteChild": [
+      "childKey"
+    ],
+    "getChildAfterChild": [
+      "index",
+      "child",
+      "reverse"
+    ]
+  },
+  "WriteTreeCompleteChildSource": {
+    "writes_": [],
+    "viewCache_": [],
+    "optCompleteServerCache_": [],
+    "constructor": [
+      "writes_",
+      "viewCache_",
+      "optCompleteServerCache_"
+    ],
+    "getCompleteChild": [
+      "childKey"
+    ],
+    "getChildAfterChild": [
+      "index",
+      "child",
+      "reverse"
+    ]
+  },
+  "newViewProcessor": [
+    "filter"
+  ],
+  "viewProcessorAssertIndexed": [
+    "viewProcessor",
+    "viewCache"
+  ],
+  "viewProcessorApplyOperation": [
+    "viewProcessor",
+    "oldViewCache",
+    "operation",
+    "writesCache",
+    "completeCache"
+  ],
+  "viewProcessorMaybeAddValueEvent": [
+    "oldViewCache",
+    "newViewCache",
+    "accumulator"
+  ],
+  "viewProcessorGenerateEventCacheAfterServerEvent": [
+    "viewProcessor",
+    "viewCache",
+    "changePath",
+    "writesCache",
+    "source",
+    "accumulator"
+  ],
+  "viewProcessorApplyServerOverwrite": [
+    "viewProcessor",
+    "oldViewCache",
+    "changePath",
+    "changedSnap",
+    "writesCache",
+    "completeCache",
+    "filterServerNode",
+    "accumulator"
+  ],
+  "viewProcessorApplyUserOverwrite": [
+    "viewProcessor",
+    "oldViewCache",
+    "changePath",
+    "changedSnap",
+    "writesCache",
+    "completeCache",
+    "accumulator"
+  ],
+  "viewProcessorCacheHasChild": [
+    "viewCache",
+    "childKey"
+  ],
+  "viewProcessorApplyUserMerge": [
+    "viewProcessor",
+    "viewCache",
+    "path",
+    "changedChildren",
+    "writesCache",
+    "serverCache",
+    "accumulator"
+  ],
+  "viewProcessorApplyMerge": [
+    "viewProcessor",
+    "node",
+    "merge"
+  ],
+  "viewProcessorApplyServerMerge": [
+    "viewProcessor",
+    "viewCache",
+    "path",
+    "changedChildren",
+    "writesCache",
+    "serverCache",
+    "filterServerNode",
+    "accumulator"
+  ],
+  "viewProcessorAckUserWrite": [
+    "viewProcessor",
+    "viewCache",
+    "ackPath",
+    "affectedTree",
+    "writesCache",
+    "completeCache",
+    "accumulator"
+  ],
+  "viewProcessorListenComplete": [
+    "viewProcessor",
+    "viewCache",
+    "path",
+    "writesCache",
+    "accumulator"
+  ],
+  "viewProcessorRevertUserWrite": [
+    "viewProcessor",
+    "viewCache",
+    "path",
+    "writesCache",
+    "completeServerCache",
+    "accumulator"
+  ],
+  "View": {
+    "query_": [],
+    "processor_": [],
+    "viewCache_": [],
+    "eventRegistrations_": [],
+    "eventGenerator_": [],
+    "constructor": [
+      "query_",
+      "initialViewCache"
+    ],
+    "query": []
+  },
+  "viewGetServerCache": [
+    "view"
+  ],
+  "viewGetCompleteNode": [
+    "view"
+  ],
+  "viewGetCompleteServerCache": [
+    "view",
+    "path"
+  ],
+  "viewIsEmpty": [
+    "view"
+  ],
+  "viewAddEventRegistration": [
+    "view",
+    "eventRegistration"
+  ],
+  "viewRemoveEventRegistration": [
+    "view",
+    "eventRegistration",
+    "cancelError"
+  ],
+  "viewApplyOperation": [
+    "view",
+    "operation",
+    "writesCache",
+    "completeServerCache"
+  ],
+  "viewGetInitialEvents": [
+    "view",
+    "registration"
+  ],
+  "viewGenerateEventsForChanges_": [
+    "view",
+    "changes",
+    "eventCache",
+    "eventRegistration"
+  ],
+  "SyncPoint": {
+    "views": []
+  },
+  "syncPointSetReferenceConstructor": [
+    "val"
+  ],
+  "syncPointGetReferenceConstructor": [],
+  "syncPointIsEmpty": [
+    "syncPoint"
+  ],
+  "syncPointApplyOperation": [
+    "syncPoint",
+    "operation",
+    "writesCache",
+    "optCompleteServerCache"
+  ],
+  "syncPointGetView": [
+    "syncPoint",
+    "query",
+    "writesCache",
+    "serverCache",
+    "serverCacheComplete"
+  ],
+  "syncPointAddEventRegistration": [
+    "syncPoint",
+    "query",
+    "eventRegistration",
+    "writesCache",
+    "serverCache",
+    "serverCacheComplete"
+  ],
+  "syncPointRemoveEventRegistration": [
+    "syncPoint",
+    "query",
+    "eventRegistration",
+    "cancelError"
+  ],
+  "syncPointGetQueryViews": [
+    "syncPoint"
+  ],
+  "syncPointGetCompleteServerCache": [
+    "syncPoint",
+    "path"
+  ],
+  "syncPointViewForQuery": [
+    "syncPoint",
+    "query"
+  ],
+  "syncPointViewExistsForQuery": [
+    "syncPoint",
+    "query"
+  ],
+  "syncPointHasCompleteView": [
+    "syncPoint"
+  ],
+  "syncPointGetCompleteView": [
+    "syncPoint"
+  ],
+  "syncTreeSetReferenceConstructor": [
+    "val"
+  ],
+  "syncTreeGetReferenceConstructor": [],
+  "SyncTree": {
+    "listenProvider_": [],
+    "syncPointTree_": [],
+    "pendingWriteTree_": [],
+    "tagToQueryMap": [],
+    "queryToTagMap": [],
+    "constructor": [
+      "listenProvider_"
+    ]
+  },
+  "syncTreeApplyUserOverwrite": [
+    "syncTree",
+    "path",
+    "newData",
+    "writeId",
+    "visible"
+  ],
+  "syncTreeApplyUserMerge": [
+    "syncTree",
+    "path",
+    "changedChildren",
+    "writeId"
+  ],
+  "syncTreeAckUserWrite": [
+    "syncTree",
+    "writeId",
+    "param"
+  ],
+  "syncTreeApplyServerOverwrite": [
+    "syncTree",
+    "path",
+    "newData"
+  ],
+  "syncTreeApplyServerMerge": [
+    "syncTree",
+    "path",
+    "changedChildren"
+  ],
+  "syncTreeApplyListenComplete": [
+    "syncTree",
+    "path"
+  ],
+  "syncTreeApplyTaggedListenComplete": [
+    "syncTree",
+    "path",
+    "tag"
+  ],
+  "syncTreeRemoveEventRegistration": [
+    "syncTree",
+    "query",
+    "eventRegistration",
+    "cancelError",
+    "param"
+  ],
+  "syncTreeApplyTaggedQueryOverwrite": [
+    "syncTree",
+    "path",
+    "snap",
+    "tag"
+  ],
+  "syncTreeApplyTaggedQueryMerge": [
+    "syncTree",
+    "path",
+    "changedChildren",
+    "tag"
+  ],
+  "syncTreeAddEventRegistration": [
+    "syncTree",
+    "query",
+    "eventRegistration",
+    "param"
+  ],
+  "syncTreeCalcCompleteEventCache": [
+    "syncTree",
+    "path",
+    "writeIdsToExclude"
+  ],
+  "syncTreeGetServerValue": [
+    "syncTree",
+    "query"
+  ],
+  "syncTreeApplyOperationToSyncPoints_": [
+    "syncTree",
+    "operation"
+  ],
+  "syncTreeApplyOperationHelper_": [
+    "operation",
+    "syncPointTree",
+    "serverCache",
+    "writesCache"
+  ],
+  "syncTreeApplyOperationDescendantsHelper_": [
+    "operation",
+    "syncPointTree",
+    "serverCache",
+    "writesCache"
+  ],
+  "syncTreeCreateListenerForView_": [
+    "syncTree",
+    "view"
+  ],
+  "syncTreeTagForQuery": [
+    "syncTree",
+    "query"
+  ],
+  "syncTreeMakeQueryKey_": [
+    "query"
+  ],
+  "syncTreeQueryKeyForTag_": [
+    "syncTree",
+    "tag"
+  ],
+  "syncTreeParseQueryKey_": [
+    "queryKey"
+  ],
+  "syncTreeApplyTaggedOperation_": [
+    "syncTree",
+    "queryPath",
+    "operation"
+  ],
+  "syncTreeCollectDistinctViewsForSubTree_": [
+    "subtree"
+  ],
+  "syncTreeQueryForListening_": [
+    "query"
+  ],
+  "syncTreeRemoveTags_": [
+    "syncTree",
+    "queries"
+  ],
+  "syncTreeGetNextQueryTag_": [],
+  "syncTreeSetupListener_": [
+    "syncTree",
+    "query",
+    "view"
+  ],
+  "ExistingValueProvider": {
+    "constructor": [
+      "node_"
+    ],
+    "getImmediateChild": [
+      "childName"
+    ],
+    "node": []
+  },
+  "DeferredValueProvider": {
+    "constructor": [
+      "syncTree",
+      "path"
+    ],
+    "getImmediateChild": [
+      "childName"
+    ],
+    "node": []
+  },
+  "generateWithValues": [
+    "values"
+  ],
+  "resolveDeferredLeafValue": [
+    "value",
+    "existingVal",
+    "serverValues"
+  ],
+  "resolveScalarDeferredValue": [
+    "op",
+    "existing",
+    "serverValues"
+  ],
+  "resolveComplexDeferredValue": [
+    "op",
+    "existing",
+    "unused"
+  ],
+  "resolveDeferredValueTree": [
+    "path",
+    "node",
+    "syncTree",
+    "serverValues"
+  ],
+  "resolveDeferredValueSnapshot": [
+    "node",
+    "existing",
+    "serverValues"
+  ],
+  "resolveDeferredValue": [
+    "node",
+    "existingVal",
+    "serverValues"
+  ],
+  "Tree": {
+    "name": [],
+    "parent": [],
+    "node": [],
+    "constructor": [
+      "name",
+      "parent",
+      "node"
+    ]
+  },
+  "treeSubTree": [
+    "tree",
+    "pathObj"
+  ],
+  "treeGetValue": [
+    "tree"
+  ],
+  "treeSetValue": [
+    "tree",
+    "value"
+  ],
+  "treeHasChildren": [
+    "tree"
+  ],
+  "treeIsEmpty": [
+    "tree"
+  ],
+  "treeForEachChild": [
+    "tree",
+    "action"
+  ],
+  "treeForEachDescendant": [
+    "tree",
+    "action",
+    "includeSelf",
+    "childrenFirst"
+  ],
+  "treeForEachAncestor": [
+    "tree",
+    "action",
+    "includeSelf"
+  ],
+  "treeGetPath": [
+    "tree"
+  ],
+  "treeUpdateParents": [
+    "tree"
+  ],
+  "treeUpdateChild": [
+    "tree",
+    "childName",
+    "child"
+  ],
+  "isValidKey": [
+    "key"
+  ],
+  "isValidPathString": [
+    "pathString"
+  ],
+  "isValidRootPathString": [
+    "pathString"
+  ],
+  "isValidPriority": [
+    "priority"
+  ],
+  "validateFirebaseDataArg": [
+    "fnName",
+    "value",
+    "path",
+    "optional"
+  ],
+  "validateFirebaseData": [
+    "errorPrefix",
+    "data",
+    "path_"
+  ],
+  "validateFirebaseMergePaths": [
+    "errorPrefix",
+    "mergePaths"
+  ],
+  "validateFirebaseMergeDataArg": [
+    "fnName",
+    "data",
+    "path",
+    "optional"
+  ],
+  "validatePriority": [
+    "fnName",
+    "priority",
+    "optional"
+  ],
+  "validateKey": [
+    "fnName",
+    "argumentName",
+    "key",
+    "optional"
+  ],
+  "validatePathString": [
+    "fnName",
+    "argumentName",
+    "pathString",
+    "optional"
+  ],
+  "validateRootPathString": [
+    "fnName",
+    "argumentName",
+    "pathString",
+    "optional"
+  ],
+  "validateWritablePath": [
+    "fnName",
+    "path"
+  ],
+  "validateUrl": [
+    "fnName",
+    "parsedUrl"
+  ],
+  "EventQueue": {
+    "eventLists_": [],
+    "recursionDepth_": []
+  },
+  "eventQueueQueueEvents": [
+    "eventQueue",
+    "eventDataList"
+  ],
+  "eventQueueRaiseEventsAtPath": [
+    "eventQueue",
+    "path",
+    "eventDataList"
+  ],
+  "eventQueueRaiseEventsForChangedPath": [
+    "eventQueue",
+    "changedPath",
+    "eventDataList"
+  ],
+  "eventQueueRaiseQueuedEventsMatchingPredicate": [
+    "eventQueue",
+    "predicate"
+  ],
+  "eventListRaise": [
+    "eventList"
+  ],
+  "Repo": {
+    "repoInfo_": [],
+    "forceRestClient_": [],
+    "authTokenProvider_": [],
+    "appCheckProvider_": [],
+    "key": [],
+    "dataUpdateCount": [],
+    "infoSyncTree_": [],
+    "serverSyncTree_": [],
+    "stats_": [],
+    "statsListener_": [],
+    "eventQueue_": [],
+    "nextWriteId_": [],
+    "server_": [],
+    "statsReporter_": [],
+    "infoData_": [],
+    "interceptServerDataCallback_": [],
+    "onDisconnect_": [],
+    "transactionQueueTree_": [],
+    "persistentConnection_": [],
+    "constructor": [
+      "repoInfo_",
+      "forceRestClient_",
+      "authTokenProvider_",
+      "appCheckProvider_"
+    ],
+    "toString": []
+  },
+  "repoStart": [
+    "repo",
+    "appId",
+    "authOverride"
+  ],
+  "repoServerTime": [
+    "repo"
+  ],
+  "repoGenerateServerValues": [
+    "repo"
+  ],
+  "repoOnDataUpdate": [
+    "repo",
+    "pathString",
+    "data",
+    "isMerge",
+    "tag"
+  ],
+  "repoOnConnectStatus": [
+    "repo",
+    "connectStatus"
+  ],
+  "repoOnServerInfoUpdate": [
+    "repo",
+    "updates"
+  ],
+  "repoUpdateInfo": [
+    "repo",
+    "pathString",
+    "value"
+  ],
+  "repoGetNextWriteId": [
+    "repo"
+  ],
+  "repoGetValue": [
+    "repo",
+    "query",
+    "eventRegistration"
+  ],
+  "repoSetWithPriority": [
+    "repo",
+    "path",
+    "newVal",
+    "newPriority",
+    "onComplete"
+  ],
+  "repoUpdate": [
+    "repo",
+    "path",
+    "childrenToMerge",
+    "onComplete"
+  ],
+  "repoRunOnDisconnectEvents": [
+    "repo"
+  ],
+  "repoOnDisconnectCancel": [
+    "repo",
+    "path",
+    "onComplete"
+  ],
+  "repoOnDisconnectSet": [
+    "repo",
+    "path",
+    "value",
+    "onComplete"
+  ],
+  "repoOnDisconnectSetWithPriority": [
+    "repo",
+    "path",
+    "value",
+    "priority",
+    "onComplete"
+  ],
+  "repoOnDisconnectUpdate": [
+    "repo",
+    "path",
+    "childrenToMerge",
+    "onComplete"
+  ],
+  "repoAddEventCallbackForQuery": [
+    "repo",
+    "query",
+    "eventRegistration"
+  ],
+  "repoRemoveEventCallbackForQuery": [
+    "repo",
+    "query",
+    "eventRegistration"
+  ],
+  "repoInterrupt": [
+    "repo"
+  ],
+  "repoResume": [
+    "repo"
+  ],
+  "repoLog": [
+    "repo",
+    "param"
+  ],
+  "repoCallOnCompleteCallback": [
+    "repo",
+    "callback",
+    "status",
+    "errorReason"
+  ],
+  "repoStartTransaction": [
+    "repo",
+    "path",
+    "transactionUpdate",
+    "onComplete",
+    "unwatcher",
+    "applyLocally"
+  ],
+  "repoGetLatestState": [
+    "repo",
+    "path",
+    "excludeSets"
+  ],
+  "repoSendReadyTransactions": [
+    "repo",
+    "param"
+  ],
+  "repoSendTransactionQueue": [
+    "repo",
+    "path",
+    "queue"
+  ],
+  "repoRerunTransactions": [
+    "repo",
+    "changedPath"
+  ],
+  "repoRerunTransactionQueue": [
+    "repo",
+    "queue",
+    "path"
+  ],
+  "repoGetAncestorTransactionNode": [
+    "repo",
+    "path"
+  ],
+  "repoBuildTransactionQueue": [
+    "repo",
+    "transactionNode"
+  ],
+  "repoAggregateTransactionQueuesForNode": [
+    "repo",
+    "node",
+    "queue"
+  ],
+  "repoPruneCompletedTransactionsBelowNode": [
+    "repo",
+    "node"
+  ],
+  "repoAbortTransactions": [
+    "repo",
+    "path"
+  ],
+  "repoAbortTransactionsOnNode": [
+    "repo",
+    "node"
+  ],
+  "decodePath": [
+    "pathString"
+  ],
+  "decodeQuery": [
+    "queryString"
+  ],
+  "parseRepoInfo": [
+    "dataURL",
+    "nodeAdmin"
+  ],
+  "parseDatabaseURL": [
+    "dataURL"
+  ],
+  "DataEvent": {
+    "eventType": [],
+    "eventRegistration": [],
+    "snapshot": [],
+    "prevName": [],
+    "constructor": [
+      "eventType",
+      "eventRegistration",
+      "snapshot",
+      "prevName"
+    ],
+    "getPath": [],
+    "getEventType": [],
+    "getEventRunner": [],
+    "toString": []
+  },
+  "CancelEvent": {
+    "eventRegistration": [],
+    "error": [],
+    "path": [],
+    "constructor": [
+      "eventRegistration",
+      "error",
+      "path"
+    ],
+    "getPath": [],
+    "getEventType": [],
+    "getEventRunner": [],
+    "toString": []
+  },
+  "CallbackContext": {
+    "snapshotCallback": [],
+    "cancelCallback": [],
+    "constructor": [
+      "snapshotCallback",
+      "cancelCallback"
+    ],
+    "onValue": [
+      "expDataSnapshot",
+      "previousChildName"
+    ],
+    "onCancel": [
+      "error"
+    ],
+    "hasCancelCallback": [],
+    "matches": [
+      "other"
+    ]
+  },
+  "OnDisconnect": {
+    "_repo": [],
+    "_path": [],
+    "constructor": [
+      "_repo",
+      "_path"
+    ],
+    "cancel": [],
+    "remove": [],
+    "set": [
+      "value"
+    ],
+    "setWithPriority": [
+      "value",
+      "priority"
+    ],
+    "update": [
+      "values"
+    ]
+  },
+  "QueryImpl": {
+    "_repo": [],
+    "_path": [],
+    "_queryParams": [],
+    "_orderByCalled": [],
+    "constructor": [
+      "_repo",
+      "_path",
+      "_queryParams",
+      "_orderByCalled"
+    ],
+    "key": [],
+    "ref": [],
+    "_queryIdentifier": [],
+    "_queryObject": [],
+    "isEqual": [
+      "other"
+    ],
+    "toJSON": [],
+    "toString": []
+  },
+  "validateNoPreviousOrderByCall": [
+    "query",
+    "fnName"
+  ],
+  "validateQueryEndpoints": [
+    "params"
+  ],
+  "validateLimit": [
+    "params"
+  ],
+  "ReferenceImpl": {
+    "constructor": [
+      "repo",
+      "path"
+    ],
+    "parent": [],
+    "root": []
+  },
+  "DataSnapshot": {
+    "_node": [],
+    "ref": [],
+    "_index": [],
+    "constructor": [
+      "_node",
+      "ref",
+      "_index"
+    ],
+    "priority": [],
+    "key": [],
+    "size": [],
+    "child": [
+      "path"
+    ],
+    "exists": [],
+    "exportVal": [],
+    "forEach": [
+      "action"
+    ],
+    "hasChild": [
+      "path"
+    ],
+    "hasChildren": [],
+    "toJSON": [],
+    "val": []
+  },
+  "ref": [
+    "db",
+    "path"
+  ],
+  "refFromURL": [
+    "db",
+    "url"
+  ],
+  "child": [
+    "parent",
+    "path"
+  ],
+  "onDisconnect": [
+    "ref"
+  ],
+  "push": [
+    "parent",
+    "value"
+  ],
+  "remove": [
+    "ref"
+  ],
+  "set": [
+    "ref",
+    "value"
+  ],
+  "setPriority": [
+    "ref",
+    "priority"
+  ],
+  "setWithPriority": [
+    "ref",
+    "value",
+    "priority"
+  ],
+  "update": [
+    "ref",
+    "values"
+  ],
+  "get": [
+    "query"
+  ],
+  "ValueEventRegistration": {
+    "callbackContext": [],
+    "constructor": [
+      "callbackContext"
+    ],
+    "respondsTo": [
+      "eventType"
+    ],
+    "createEvent": [
+      "change",
+      "query"
+    ],
+    "getEventRunner": [
+      "eventData"
+    ],
+    "createCancelEvent": [
+      "error",
+      "path"
+    ],
+    "matches": [
+      "other"
+    ],
+    "hasAnyCallback": []
+  },
+  "ChildEventRegistration": {
+    "eventType": [],
+    "callbackContext": [],
+    "constructor": [
+      "eventType",
+      "callbackContext"
+    ],
+    "respondsTo": [
+      "eventType"
+    ],
+    "createCancelEvent": [
+      "error",
+      "path"
+    ],
+    "createEvent": [
+      "change",
+      "query"
+    ],
+    "getEventRunner": [
+      "eventData"
+    ],
+    "matches": [
+      "other"
+    ],
+    "hasAnyCallback": []
+  },
+  "addEventListener": [
+    "query",
+    "eventType",
+    "callback",
+    "cancelCallbackOrListenOptions",
+    "options"
+  ],
+  "onceCallback": [
+    "dataSnapshot",
+    "previousChildName"
+  ],
+  "onValue": [
+    "query",
+    "callback",
+    "cancelCallbackOrListenOptions",
+    "options"
+  ],
+  "onChildAdded": [
+    "query",
+    "callback",
+    "cancelCallbackOrListenOptions",
+    "options"
+  ],
+  "onChildChanged": [
+    "query",
+    "callback",
+    "cancelCallbackOrListenOptions",
+    "options"
+  ],
+  "onChildMoved": [
+    "query",
+    "callback",
+    "cancelCallbackOrListenOptions",
+    "options"
+  ],
+  "onChildRemoved": [
+    "query",
+    "callback",
+    "cancelCallbackOrListenOptions",
+    "options"
+  ],
+  "off": [
+    "query",
+    "eventType",
+    "callback"
+  ],
+  "QueryConstraint": {
+    "type": [],
+    "_apply": [
+      "query"
+    ]
+  },
+  "QueryEndAtConstraint": {
+    "constructor": [
+      "_value",
+      "_key"
+    ],
+    "_apply": [
+      "query"
+    ]
+  },
+  "endAt": [
+    "value",
+    "key"
+  ],
+  "QueryEndBeforeConstraint": {
+    "constructor": [
+      "_value",
+      "_key"
+    ],
+    "_apply": [
+      "query"
+    ]
+  },
+  "endBefore": [
+    "value",
+    "key"
+  ],
+  "QueryStartAtConstraint": {
+    "constructor": [
+      "_value",
+      "_key"
+    ],
+    "_apply": [
+      "query"
+    ]
+  },
+  "startAt": [
+    "param",
+    "key"
+  ],
+  "QueryStartAfterConstraint": {
+    "constructor": [
+      "_value",
+      "_key"
+    ],
+    "_apply": [
+      "query"
+    ]
+  },
+  "startAfter": [
+    "value",
+    "key"
+  ],
+  "QueryLimitToFirstConstraint": {
+    "constructor": [
+      "_limit"
+    ],
+    "_apply": [
+      "query"
+    ]
+  },
+  "limitToFirst": [
+    "limit"
+  ],
+  "QueryLimitToLastConstraint": {
+    "constructor": [
+      "_limit"
+    ],
+    "_apply": [
+      "query"
+    ]
+  },
+  "limitToLast": [
+    "limit"
+  ],
+  "QueryOrderByChildConstraint": {
+    "constructor": [
+      "_path"
+    ],
+    "_apply": [
+      "query"
+    ]
+  },
+  "orderByChild": [
+    "path"
+  ],
+  "QueryOrderByKeyConstraint": {
+    "constructor": [],
+    "_apply": [
+      "query"
+    ]
+  },
+  "orderByKey": [],
+  "QueryOrderByPriorityConstraint": {
+    "constructor": [],
+    "_apply": [
+      "query"
+    ]
+  },
+  "orderByPriority": [],
+  "QueryOrderByValueConstraint": {
+    "constructor": [],
+    "_apply": [
+      "query"
+    ]
+  },
+  "orderByValue": [],
+  "QueryEqualToValueConstraint": {
+    "constructor": [
+      "_value",
+      "_key"
+    ],
+    "_apply": [
+      "query"
+    ]
+  },
+  "equalTo": [
+    "value",
+    "key"
+  ],
+  "query": [
+    "query",
+    "param"
+  ],
+  "repoManagerApplyEmulatorSettings": [
+    "repo",
+    "hostAndPort",
+    "emulatorOptions",
+    "tokenProvider"
+  ],
+  "repoManagerDatabaseFromApp": [
+    "app",
+    "authProvider",
+    "appCheckProvider",
+    "url",
+    "nodeAdmin"
+  ],
+  "repoManagerDeleteRepo": [
+    "repo",
+    "appName"
+  ],
+  "repoManagerCreateRepo": [
+    "repoInfo",
+    "app",
+    "authTokenProvider",
+    "appCheckProvider"
+  ],
+  "repoManagerForceRestClient": [
+    "forceRestClient"
+  ],
+  "Database": {
+    "_repoInternal": [],
+    "app": [],
+    "_instanceStarted": [],
+    "_rootInternal": [],
+    "constructor": [
+      "_repoInternal",
+      "app"
+    ],
+    "_repo": [],
+    "_root": [],
+    "_delete": [],
+    "_checkNotDeleted": [
+      "apiName"
+    ]
+  },
+  "checkTransportInit": [],
+  "forceWebSockets": [],
+  "forceLongPolling": [],
+  "getDatabase": [
+    "param",
+    "url"
+  ],
+  "connectDatabaseEmulator": [
+    "db",
+    "host",
+    "port",
+    "param"
+  ],
+  "goOffline": [
+    "db"
+  ],
+  "goOnline": [
+    "db"
+  ],
+  "enableLogging": [
+    "logger",
+    "persistent"
+  ],
+  "registerDatabase": [
+    "variant"
+  ],
+  "serverTimestamp": [],
+  "increment": [
+    "delta"
+  ],
+  "TransactionResult": {
+    "committed": [],
+    "snapshot": [],
+    "constructor": [
+      "committed",
+      "snapshot"
+    ],
+    "toJSON": []
+  },
+  "runTransaction": [
+    "ref",
+    "transactionUpdate",
+    "options"
+  ],
+  "promiseComplete": [
+    "error",
+    "committed",
+    "node"
+  ],
+  "hijackHash": [
+    "newHash"
+  ],
+  "forceRestClient": [
+    "forceRestClient"
+  ],
+  "_initStandalone": [
+    "param"
+  ],
+  "_interopDefaultLegacy": [
+    "e"
+  ],
+  "setWebSocketImpl": [
+    "impl"
+  ],
+  "_QueryImpl": {
+    "_repo": [],
+    "_path": [],
+    "_queryParams": [],
+    "_orderByCalled": [],
+    "constructor": [
+      "_repo",
+      "_path",
+      "_queryParams",
+      "_orderByCalled"
+    ],
+    "key": [],
+    "ref": [],
+    "_queryIdentifier": [],
+    "_queryObject": [],
+    "isEqual": [
+      "other"
+    ],
+    "toJSON": [],
+    "toString": []
+  },
+  "_QueryParams": {
+    "limitSet_": [],
+    "startSet_": [],
+    "startNameSet_": [],
+    "startAfterSet_": [],
+    "endSet_": [],
+    "endNameSet_": [],
+    "endBeforeSet_": [],
+    "limit_": [],
+    "viewFrom_": [],
+    "indexStartValue_": [],
+    "indexStartName_": [],
+    "indexEndValue_": [],
+    "indexEndName_": [],
+    "index_": [],
+    "hasStart": [],
+    "isViewFromLeft": [],
+    "getIndexStartValue": [],
+    "getIndexStartName": [],
+    "hasEnd": [],
+    "getIndexEndValue": [],
+    "getIndexEndName": [],
+    "hasLimit": [],
+    "hasAnchoredLimit": [],
+    "getLimit": [],
+    "getIndex": [],
+    "loadsAllData": [],
+    "isDefault": [],
+    "copy": []
+  },
+  "_ReferenceImpl": {
+    "constructor": [
+      "repo",
+      "path"
+    ],
+    "parent": [],
+    "root": []
+  },
+  "Transport": {
+    "bytesReceived": [],
+    "bytesSent": [],
+    "connId": [],
+    "constructor": [
+      "connId",
+      "repoInfo",
+      "transportSessionId",
+      "lastSessionId"
+    ],
+    "open": [
+      "onMessage",
+      "onDisconnect"
+    ],
+    "start": [],
+    "close": [],
+    "send": [
+      "data"
+    ],
+    "markConnectionHealthy": []
+  },
+  "EventAccumulator": {
+    "condition": [],
+    "eventData": [],
+    "promise": [],
+    "resolve": [],
+    "reject": [],
+    "onResetFxn": [],
+    "onEventFxn": [],
+    "constructor": [
+      "condition"
+    ],
+    "addEvent": [
+      "eventData"
+    ],
+    "reset": [
+      "condition"
+    ],
+    "onEvent": [
+      "cb"
+    ],
+    "onReset": [
+      "cb"
+    ],
+    "_testCondition": []
+  },
+  "SyncPointTestParser": {
+    "app": [],
+    "listens_": [],
+    "listenProvider_": [],
+    "syncTree_": [],
+    "constructor": [],
+    "getTestPath": [
+      "optBasePath",
+      "path"
+    ],
+    "testRunner": [],
+    "defineTest": [
+      "spec"
+    ]
+  }
+}

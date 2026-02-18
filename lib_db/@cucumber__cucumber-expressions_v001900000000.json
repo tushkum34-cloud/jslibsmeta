@@ -1,0 +1,509 @@
+{
+  "Argument": {
+    "build": [
+      "group",
+      "parameterTypes"
+    ],
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "getValue": [
+      "thisObj"
+    ],
+    "getParameterType": []
+  },
+  "Node": {
+    "constructor": [
+      "param",
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "text": []
+  },
+  "Token": {
+    "type": [],
+    "text": [],
+    "start": [],
+    "end": [],
+    "constructor": [
+      "type",
+      "text",
+      "start",
+      "end"
+    ],
+    "isEscapeCharacter": [
+      "codePoint"
+    ],
+    "canEscape": [
+      "codePoint"
+    ],
+    "typeOf": [
+      "codePoint"
+    ]
+  },
+  "symbolOf": [
+    "token"
+  ],
+  "purposeOf": [
+    "token"
+  ],
+  "CombinatorialGeneratedExpressionFactory": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "generateExpressions": [],
+    "generatePermutations": [
+      "generatedExpressions",
+      "depth",
+      "currentParameterTypes"
+    ]
+  },
+  "CucumberExpression": {
+    "parameterTypes": [],
+    "treeRegexp": [],
+    "ast": [],
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "rewriteToRegex": [
+      "node"
+    ],
+    "escapeRegex": [
+      "expression"
+    ],
+    "rewriteOptional": [
+      "node"
+    ],
+    "rewriteAlternation": [
+      "node"
+    ],
+    "rewriteAlternative": [
+      "node"
+    ],
+    "rewriteParameter": [
+      "node"
+    ],
+    "rewriteExpression": [
+      "node"
+    ],
+    "assertNotEmpty": [
+      "node",
+      "createNodeWasNotEmptyException"
+    ],
+    "assertNoParameters": [
+      "node",
+      "createNodeContainedAParameterError"
+    ],
+    "assertNoOptionals": [
+      "node",
+      "createNodeContainedAnOptionalError"
+    ],
+    "match": [
+      "text"
+    ],
+    "regexp": [],
+    "source": []
+  },
+  "ESCAPE_PATTERN": [],
+  "CucumberExpressionError": {},
+  "CucumberExpressionGenerator": {
+    "constructor": [
+      "param"
+    ],
+    "generateExpressions": [
+      "text"
+    ],
+    "createParameterTypeMatchers": [
+      "text"
+    ],
+    "createParameterTypeMatchers2": [
+      "parameterType",
+      "text"
+    ]
+  },
+  "escape": [
+    "s"
+  ],
+  "CucumberExpressionParser": {
+    "parse": [
+      "expression"
+    ]
+  },
+  "parseText": [
+    "expression",
+    "tokens",
+    "current"
+  ],
+  "parseName": [
+    "expression",
+    "tokens",
+    "current"
+  ],
+  "parseAlternativeSeparator": [
+    "expression",
+    "tokens",
+    "current"
+  ],
+  "parseAlternation": [
+    "expression",
+    "tokens",
+    "current"
+  ],
+  "parseBetween": [
+    "type",
+    "beginToken",
+    "endToken",
+    "parsers"
+  ],
+  "parseToken": [
+    "expression",
+    "parsers",
+    "tokens",
+    "startAt"
+  ],
+  "parseTokensUntil": [
+    "expression",
+    "parsers",
+    "tokens",
+    "startAt",
+    "endTokens"
+  ],
+  "lookingAtAny": [
+    "tokens",
+    "at",
+    "tokenTypes"
+  ],
+  "lookingAt": [
+    "tokens",
+    "at",
+    "token"
+  ],
+  "splitAlternatives": [
+    "start",
+    "end",
+    "alternation"
+  ],
+  "createAlternativeNodes": [
+    "start",
+    "end",
+    "separators",
+    "alternatives"
+  ],
+  "CucumberExpressionTokenizer": {
+    "tokenize": [
+      "expression"
+    ]
+  },
+  "convertBufferToToken": [
+    "tokenType"
+  ],
+  "tokenTypeOf": [
+    "codePoint",
+    "treatAsText"
+  ],
+  "shouldCreateNewToken": [
+    "previousTokenType",
+    "currentTokenType"
+  ],
+  "AmbiguousParameterTypeError": {
+    "forRegExp": [
+      "parameterTypeRegexp",
+      "expressionRegexp",
+      "parameterTypes",
+      "generatedExpressions"
+    ],
+    "_parameterTypeNames": [
+      "parameterTypes"
+    ],
+    "_expressions": [
+      "generatedExpressions"
+    ]
+  },
+  "UndefinedParameterTypeError": {
+    "constructor": [
+      "param",
+      "message"
+    ]
+  },
+  "createAlternativeMayNotExclusivelyContainOptionals": [
+    "node",
+    "expression"
+  ],
+  "createAlternativeMayNotBeEmpty": [
+    "node",
+    "expression"
+  ],
+  "createOptionalMayNotBeEmpty": [
+    "node",
+    "expression"
+  ],
+  "createParameterIsNotAllowedInOptional": [
+    "node",
+    "expression"
+  ],
+  "createOptionalIsNotAllowedInOptional": [
+    "node",
+    "expression"
+  ],
+  "createTheEndOfLIneCanNotBeEscaped": [
+    "expression"
+  ],
+  "createMissingEndToken": [
+    "expression",
+    "beginToken",
+    "endToken",
+    "current"
+  ],
+  "createAlternationNotAllowedInOptional": [
+    "expression",
+    "current"
+  ],
+  "createCantEscaped": [
+    "expression",
+    "index"
+  ],
+  "createInvalidParameterTypeNameInNode": [
+    "token",
+    "expression"
+  ],
+  "message": [
+    "index",
+    "expression",
+    "pointer",
+    "problem",
+    "solution"
+  ],
+  "pointAt": [
+    "index"
+  ],
+  "pointAtLocated": [
+    "node"
+  ],
+  "createUndefinedParameterType": [
+    "node",
+    "expression",
+    "undefinedParameterTypeName"
+  ],
+  "ExpressionFactory": {
+    "constructor": [
+      "param"
+    ],
+    "createExpression": [
+      "expression"
+    ]
+  },
+  "GeneratedExpression": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "source": [],
+    "parameterNames": [],
+    "parameterInfos": []
+  },
+  "getParameterInfo": [
+    "parameterType",
+    "usageByName"
+  ],
+  "format": [
+    "pattern",
+    "param"
+  ],
+  "Group": {
+    "constructor": [
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "values": []
+  },
+  "GroupBuilder": {
+    "source": [],
+    "capturing": [],
+    "groupBuilders": [],
+    "add": [
+      "groupBuilder"
+    ],
+    "build": [
+      "match",
+      "nextGroupIndex"
+    ],
+    "setNonCapturing": [],
+    "children": [],
+    "moveChildrenTo": [
+      "groupBuilder"
+    ]
+  },
+  "ParameterType": {
+    "transformFn": [],
+    "compare": [
+      "pt1",
+      "pt2"
+    ],
+    "checkParameterTypeName": [
+      "typeName"
+    ],
+    "isValidParameterTypeName": [
+      "typeName"
+    ],
+    "regexpStrings": [],
+    "constructor": [
+      "param",
+      "regexps",
+      "param",
+      "transform",
+      "param",
+      "param",
+      "param"
+    ],
+    "transform": [
+      "thisObj",
+      "groupValues"
+    ]
+  },
+  "UNESCAPE_PATTERN": [],
+  "stringArray": [
+    "regexps"
+  ],
+  "regexpSource": [
+    "regexp"
+  ],
+  "regexpFlags": [
+    "regexp"
+  ],
+  "ParameterTypeMatcher": {
+    "match": [],
+    "constructor": [
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "advanceTo": [
+      "newMatchPosition"
+    ],
+    "find": [],
+    "start": [],
+    "fullWord": [],
+    "matchStartWord": [],
+    "matchEndWord": [],
+    "group": [],
+    "compare": [
+      "a",
+      "b"
+    ]
+  },
+  "ParameterTypeRegistry": {
+    "parameterTypeByName": [],
+    "parameterTypesByRegexp": [],
+    "constructor": [],
+    "parameterTypes": [],
+    "lookupByTypeName": [
+      "typeName"
+    ],
+    "lookupByRegexp": [
+      "parameterTypeRegexp",
+      "expressionRegexp",
+      "text"
+    ],
+    "defineParameterType": [
+      "parameterType"
+    ]
+  },
+  "RegularExpression": {
+    "treeRegexp": [],
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "match": [
+      "text"
+    ],
+    "source": []
+  },
+  "TreeRegexp": {
+    "regexp": [],
+    "groupBuilder": [],
+    "constructor": [
+      "regexp"
+    ],
+    "createGroupBuilder": [
+      "regexp"
+    ],
+    "isNonCapturing": [
+      "source",
+      "i"
+    ],
+    "match": [
+      "s"
+    ]
+  },
+  "nextGroupIndex": [],
+  "defineDefaultParameterTypes": [
+    "registry"
+  ],
+  "ownKeys": [
+    "o"
+  ],
+  "Currency": {
+    "s": [],
+    "constructor": [
+      "s"
+    ]
+  },
+  "assertExpression": [
+    "expectedExpression",
+    "expectedParameterInfo",
+    "text"
+  ],
+  "match": [
+    "regexp",
+    "text"
+  ],
+  "Color": {
+    "name": [],
+    "constructor": [
+      "name"
+    ]
+  },
+  "CssColor": {
+    "name": [],
+    "constructor": [
+      "name"
+    ]
+  },
+  "Coordinate": {
+    "x": [],
+    "y": [],
+    "z": [],
+    "constructor": [
+      "x",
+      "y",
+      "z"
+    ]
+  },
+  "Name": {
+    "name": [],
+    "constructor": [
+      "name"
+    ]
+  },
+  "Person": {
+    "name": [],
+    "constructor": [
+      "name"
+    ]
+  },
+  "Place": {
+    "name": [],
+    "constructor": [
+      "name"
+    ]
+  }
+}

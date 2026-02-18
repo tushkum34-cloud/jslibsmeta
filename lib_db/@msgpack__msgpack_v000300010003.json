@@ -1,0 +1,696 @@
+{
+  "CachedKeyDecoder": {
+    "hit": [],
+    "miss": [],
+    "caches": [],
+    "maxKeyLength": [],
+    "maxLengthPerKey": [],
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "canBeCached": [
+      "byteLength"
+    ],
+    "find": [
+      "bytes",
+      "inputOffset",
+      "byteLength"
+    ],
+    "store": [
+      "bytes",
+      "value"
+    ],
+    "decode": [
+      "bytes",
+      "inputOffset",
+      "byteLength"
+    ]
+  },
+  "DecodeError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "Decoder": {
+    "extensionCodec": [],
+    "context": [],
+    "useBigInt64": [],
+    "rawStrings": [],
+    "maxStrLength": [],
+    "maxBinLength": [],
+    "maxArrayLength": [],
+    "maxMapLength": [],
+    "maxExtLength": [],
+    "keyDecoder": [],
+    "mapKeyConverter": [],
+    "totalPos": [],
+    "pos": [],
+    "view": [],
+    "bytes": [],
+    "headByte": [],
+    "stack": [],
+    "entered": [],
+    "constructor": [
+      "options"
+    ],
+    "clone": [],
+    "reinitializeState": [],
+    "setBuffer": [
+      "buffer"
+    ],
+    "appendBuffer": [
+      "buffer"
+    ],
+    "hasRemaining": [
+      "size"
+    ],
+    "createExtraByteError": [
+      "posToShow"
+    ],
+    "decode": [
+      "buffer"
+    ],
+    "decodeMulti": [
+      "buffer"
+    ],
+    "decodeAsync": [
+      "stream"
+    ],
+    "decodeArrayStream": [
+      "stream"
+    ],
+    "decodeStream": [
+      "stream"
+    ],
+    "decodeMultiAsync": [
+      "stream",
+      "isArray"
+    ],
+    "doDecodeSync": [],
+    "readHeadByte": [],
+    "complete": [],
+    "readArraySize": [],
+    "pushMapState": [
+      "size"
+    ],
+    "pushArrayState": [
+      "size"
+    ],
+    "decodeString": [
+      "byteLength",
+      "headerOffset"
+    ],
+    "decodeUtf8String": [
+      "byteLength",
+      "headerOffset"
+    ],
+    "stateIsMapKey": [],
+    "decodeBinary": [
+      "byteLength",
+      "headOffset"
+    ],
+    "decodeExtension": [
+      "size",
+      "headOffset"
+    ],
+    "lookU8": [],
+    "lookU16": [],
+    "lookU32": [],
+    "readU8": [],
+    "readI8": [],
+    "readU16": [],
+    "readI16": [],
+    "readU32": [],
+    "readI32": [],
+    "readU64": [],
+    "readI64": [],
+    "readU64AsBigInt": [],
+    "readI64AsBigInt": [],
+    "readF32": [],
+    "readF64": []
+  },
+  "Encoder": {
+    "extensionCodec": [],
+    "context": [],
+    "useBigInt64": [],
+    "maxDepth": [],
+    "initialBufferSize": [],
+    "sortKeys": [],
+    "forceFloat32": [],
+    "ignoreUndefined": [],
+    "forceIntegerToFloat": [],
+    "pos": [],
+    "view": [],
+    "bytes": [],
+    "entered": [],
+    "constructor": [
+      "options"
+    ],
+    "clone": [],
+    "reinitializeState": [],
+    "encodeSharedRef": [
+      "object"
+    ],
+    "encode": [
+      "object"
+    ],
+    "doEncode": [
+      "object",
+      "depth"
+    ],
+    "ensureBufferSizeToWrite": [
+      "sizeToWrite"
+    ],
+    "resizeBuffer": [
+      "newSize"
+    ],
+    "encodeNil": [],
+    "encodeBoolean": [
+      "object"
+    ],
+    "encodeNumber": [
+      "object"
+    ],
+    "encodeNumberAsFloat": [
+      "object"
+    ],
+    "encodeBigInt64": [
+      "object"
+    ],
+    "writeStringHeader": [
+      "byteLength"
+    ],
+    "encodeString": [
+      "object"
+    ],
+    "encodeObject": [
+      "object",
+      "depth"
+    ],
+    "encodeBinary": [
+      "object"
+    ],
+    "encodeArray": [
+      "object",
+      "depth"
+    ],
+    "countWithoutUndefined": [
+      "object",
+      "keys"
+    ],
+    "encodeMap": [
+      "object",
+      "depth"
+    ],
+    "encodeExtension": [
+      "ext"
+    ],
+    "writeU8": [
+      "value"
+    ],
+    "writeU8a": [
+      "values"
+    ],
+    "writeI8": [
+      "value"
+    ],
+    "writeU16": [
+      "value"
+    ],
+    "writeI16": [
+      "value"
+    ],
+    "writeU32": [
+      "value"
+    ],
+    "writeI32": [
+      "value"
+    ],
+    "writeF32": [
+      "value"
+    ],
+    "writeF64": [
+      "value"
+    ],
+    "writeU64": [
+      "value"
+    ],
+    "writeI64": [
+      "value"
+    ],
+    "writeBigUint64": [
+      "value"
+    ],
+    "writeBigInt64": [
+      "value"
+    ]
+  },
+  "ExtData": {
+    "type": [],
+    "data": [],
+    "constructor": [
+      "type",
+      "data"
+    ]
+  },
+  "ExtensionCodec": {
+    "defaultCodec": [],
+    "__brand": [],
+    "builtInEncoders": [],
+    "builtInDecoders": [],
+    "encoders": [],
+    "decoders": [],
+    "constructor": [],
+    "register": [
+      "param"
+    ],
+    "tryToEncode": [
+      "object",
+      "context"
+    ],
+    "decode": [
+      "data",
+      "type",
+      "context"
+    ]
+  },
+  "utf8Count": [
+    "str"
+  ],
+  "utf8EncodeJs": [
+    "str",
+    "output",
+    "outputOffset"
+  ],
+  "utf8EncodeTE": [
+    "str",
+    "output",
+    "outputOffset"
+  ],
+  "utf8Encode": [
+    "str",
+    "output",
+    "outputOffset"
+  ],
+  "utf8DecodeJs": [
+    "bytes",
+    "inputOffset",
+    "byteLength"
+  ],
+  "utf8DecodeTD": [
+    "bytes",
+    "inputOffset",
+    "byteLength"
+  ],
+  "utf8Decode": [
+    "bytes",
+    "inputOffset",
+    "byteLength"
+  ],
+  "setUint64": [
+    "view",
+    "offset",
+    "value"
+  ],
+  "setInt64": [
+    "view",
+    "offset",
+    "value"
+  ],
+  "getInt64": [
+    "view",
+    "offset"
+  ],
+  "getUint64": [
+    "view",
+    "offset"
+  ],
+  "encodeTimeSpecToTimestamp": [
+    "param"
+  ],
+  "encodeDateToTimeSpec": [
+    "date"
+  ],
+  "encodeTimestampExtension": [
+    "object"
+  ],
+  "decodeTimestampToTimeSpec": [
+    "data"
+  ],
+  "decodeTimestampExtension": [
+    "data"
+  ],
+  "isArrayBufferLike": [
+    "buffer"
+  ],
+  "ensureUint8Array": [
+    "buffer"
+  ],
+  "encode": [
+    "value",
+    "options"
+  ],
+  "prettyByte": [
+    "byte"
+  ],
+  "mapKeyConverter": [
+    "key"
+  ],
+  "StackPool": {
+    "stack": [],
+    "stackHeadPosition": [],
+    "length": [],
+    "top": [],
+    "pushArrayState": [
+      "size"
+    ],
+    "pushMapState": [
+      "size"
+    ],
+    "getUninitializedStateFromPool": [],
+    "release": [
+      "state"
+    ],
+    "reset": []
+  },
+  "decode": [
+    "buffer",
+    "options"
+  ],
+  "decodeMulti": [
+    "buffer",
+    "options"
+  ],
+  "isAsyncIterable": [
+    "object"
+  ],
+  "asyncIterableFromStream": [
+    "stream"
+  ],
+  "ensureAsyncIterable": [
+    "streamLike"
+  ],
+  "decodeAsync": [
+    "streamLike",
+    "options"
+  ],
+  "decodeArrayStream": [
+    "streamLike",
+    "options"
+  ],
+  "decodeMultiStream": [
+    "streamLike",
+    "options"
+  ],
+  "s": [
+    "e",
+    "t",
+    "i"
+  ],
+  "r": {
+    "constructor": [
+      "e",
+      "t"
+    ]
+  },
+  "o": {
+    "constructor": [
+      "e"
+    ]
+  },
+  "a": [
+    "e",
+    "t",
+    "i"
+  ],
+  "c": [
+    "e",
+    "t"
+  ],
+  "l": [
+    "param"
+  ],
+  "y": [
+    "e"
+  ],
+  "w": [
+    "e"
+  ],
+  "p": [
+    "e"
+  ],
+  "g": [
+    "e"
+  ],
+  "m": {
+    "constructor": [],
+    "register": [
+      "param"
+    ],
+    "tryToEncode": [
+      "e",
+      "t"
+    ],
+    "decode": [
+      "e",
+      "t",
+      "i"
+    ]
+  },
+  "x": [
+    "e"
+  ],
+  "b": {
+    "constructor": [
+      "e"
+    ],
+    "clone": [],
+    "reinitializeState": [],
+    "encodeSharedRef": [
+      "e"
+    ],
+    "encode": [
+      "e"
+    ],
+    "doEncode": [
+      "e",
+      "t"
+    ],
+    "ensureBufferSizeToWrite": [
+      "e"
+    ],
+    "resizeBuffer": [
+      "e"
+    ],
+    "encodeNil": [],
+    "encodeBoolean": [
+      "e"
+    ],
+    "encodeNumber": [
+      "e"
+    ],
+    "encodeNumberAsFloat": [
+      "e"
+    ],
+    "encodeBigInt64": [
+      "e"
+    ],
+    "writeStringHeader": [
+      "e"
+    ],
+    "encodeString": [
+      "e"
+    ],
+    "encodeObject": [
+      "e",
+      "t"
+    ],
+    "encodeBinary": [
+      "e"
+    ],
+    "encodeArray": [
+      "e",
+      "t"
+    ],
+    "countWithoutUndefined": [
+      "e",
+      "t"
+    ],
+    "encodeMap": [
+      "e",
+      "t"
+    ],
+    "encodeExtension": [
+      "e"
+    ],
+    "writeU8": [
+      "e"
+    ],
+    "writeU8a": [
+      "e"
+    ],
+    "writeI8": [
+      "e"
+    ],
+    "writeU16": [
+      "e"
+    ],
+    "writeI16": [
+      "e"
+    ],
+    "writeU32": [
+      "e"
+    ],
+    "writeI32": [
+      "e"
+    ],
+    "writeF32": [
+      "e"
+    ],
+    "writeF64": [
+      "e"
+    ],
+    "writeU64": [
+      "e"
+    ],
+    "writeI64": [
+      "e"
+    ],
+    "writeBigUint64": [
+      "e"
+    ],
+    "writeBigInt64": [
+      "e"
+    ]
+  },
+  "B": [
+    "e",
+    "t"
+  ],
+  "S": [
+    "e"
+  ],
+  "v": [
+    "e"
+  ],
+  "k": {
+    "constructor": [],
+    "length": [],
+    "top": [],
+    "pushArrayState": [
+      "e"
+    ],
+    "pushMapState": [
+      "e"
+    ],
+    "getUninitializedStateFromPool": [],
+    "release": [
+      "e"
+    ],
+    "reset": []
+  },
+  "D": {
+    "constructor": [
+      "e"
+    ],
+    "clone": [],
+    "reinitializeState": [],
+    "setBuffer": [
+      "e"
+    ],
+    "appendBuffer": [
+      "e"
+    ],
+    "hasRemaining": [
+      "e"
+    ],
+    "createExtraByteError": [
+      "e"
+    ],
+    "decode": [
+      "e"
+    ],
+    "decodeMulti": [
+      "e"
+    ],
+    "decodeAsync": [
+      "e"
+    ],
+    "decodeArrayStream": [
+      "e"
+    ],
+    "decodeStream": [
+      "e"
+    ],
+    "decodeMultiAsync": [
+      "e",
+      "t"
+    ],
+    "doDecodeSync": [],
+    "readHeadByte": [],
+    "complete": [],
+    "readArraySize": [],
+    "pushMapState": [
+      "e"
+    ],
+    "pushArrayState": [
+      "e"
+    ],
+    "decodeString": [
+      "e",
+      "t"
+    ],
+    "decodeUtf8String": [
+      "e",
+      "t"
+    ],
+    "stateIsMapKey": [],
+    "decodeBinary": [
+      "e",
+      "t"
+    ],
+    "decodeExtension": [
+      "e",
+      "t"
+    ],
+    "lookU8": [],
+    "lookU16": [],
+    "lookU32": [],
+    "readU8": [],
+    "readI8": [],
+    "readU16": [],
+    "readI16": [],
+    "readU32": [],
+    "readI32": [],
+    "readU64": [],
+    "readI64": [],
+    "readU64AsBigInt": [],
+    "readI64AsBigInt": [],
+    "readF32": [],
+    "readF64": []
+  },
+  "F": [
+    "e",
+    "t"
+  ],
+  "C": [
+    "e",
+    "t"
+  ],
+  "P": [
+    "e"
+  ],
+  "$": [
+    "e",
+    "t"
+  ],
+  "j": [
+    "e",
+    "t"
+  ],
+  "R": [
+    "e",
+    "t"
+  ]
+}

@@ -1,0 +1,1132 @@
+{
+  "AesCryptographyProvider": {
+    "constructor": [
+      "key"
+    ],
+    "encrypt": [
+      "encryptParameters",
+      "_options"
+    ],
+    "decrypt": [
+      "decryptParameters",
+      "_options"
+    ],
+    "isSupported": [
+      "algorithm",
+      "operation"
+    ],
+    "wrapKey": [
+      "_algorithm",
+      "_keyToWrap",
+      "_options"
+    ],
+    "unwrapKey": [
+      "_algorithm",
+      "_encryptedKey",
+      "_options"
+    ],
+    "sign": [
+      "_algorithm",
+      "_digest",
+      "_options"
+    ],
+    "signData": [
+      "_algorithm",
+      "_data",
+      "_options"
+    ],
+    "verify": [
+      "_algorithm",
+      "_digest",
+      "_signature",
+      "_options"
+    ],
+    "verifyData": [
+      "_algorithm",
+      "_data",
+      "_signature",
+      "_updatedOptions"
+    ],
+    "ensureValid": [
+      "keySizeInBytes"
+    ]
+  },
+  "encodeLength": [
+    "length"
+  ],
+  "encodeBuffer": [
+    "buffer",
+    "bufferId"
+  ],
+  "makeSequence": [
+    "encodedParts"
+  ],
+  "formatBase64Sequence": [
+    "base64Sequence"
+  ],
+  "convertJWKtoPEM": [
+    "key"
+  ],
+  "createHash": [
+    "algorithm",
+    "data"
+  ],
+  "createVerify": [
+    "algorithm",
+    "data"
+  ],
+  "randomBytes": [
+    "length"
+  ],
+  "LocalCryptographyUnsupportedError": {},
+  "RemoteCryptographyProvider": {
+    "constructor": [
+      "key",
+      "credential",
+      "param"
+    ],
+    "isSupported": [
+      "_algorithm",
+      "_operation"
+    ],
+    "encrypt": [
+      "encryptParameters",
+      "param"
+    ],
+    "decrypt": [
+      "decryptParameters",
+      "param"
+    ],
+    "wrapKey": [
+      "algorithm",
+      "keyToWrap",
+      "param"
+    ],
+    "unwrapKey": [
+      "algorithm",
+      "encryptedKey",
+      "param"
+    ],
+    "sign": [
+      "algorithm",
+      "digest",
+      "param"
+    ],
+    "verifyData": [
+      "algorithm",
+      "data",
+      "signature",
+      "param"
+    ],
+    "verify": [
+      "algorithm",
+      "digest",
+      "signature",
+      "param"
+    ],
+    "signData": [
+      "algorithm",
+      "data",
+      "param"
+    ],
+    "keyId": [],
+    "getKey": [
+      "param"
+    ],
+    "getKeyID": []
+  },
+  "getOrInitializeClient": [
+    "vaultUrl",
+    "credential",
+    "options"
+  ],
+  "RsaCryptographyProvider": {
+    "constructor": [
+      "key"
+    ],
+    "isSupported": [
+      "algorithm",
+      "operation"
+    ],
+    "encrypt": [
+      "encryptParameters",
+      "_options"
+    ],
+    "decrypt": [
+      "_decryptParameters",
+      "_options"
+    ],
+    "wrapKey": [
+      "algorithm",
+      "keyToWrap",
+      "_options"
+    ],
+    "unwrapKey": [
+      "_algorithm",
+      "_encryptedKey",
+      "_options"
+    ],
+    "sign": [
+      "_algorithm",
+      "_digest",
+      "_options"
+    ],
+    "signData": [
+      "_algorithm",
+      "_data",
+      "_options"
+    ],
+    "verify": [
+      "_algorithm",
+      "_digest",
+      "_signature",
+      "_options"
+    ],
+    "verifyData": [
+      "algorithm",
+      "data",
+      "signature",
+      "_options"
+    ],
+    "ensureValid": []
+  },
+  "CryptographyClient": {
+    "constructor": [
+      "key",
+      "credential",
+      "param"
+    ],
+    "vaultUrl": [],
+    "keyID": [],
+    "encrypt": [
+      "param"
+    ],
+    "initializeIV": [
+      "parameters"
+    ],
+    "disambiguateEncryptArguments": [
+      "args"
+    ],
+    "decrypt": [
+      "param"
+    ],
+    "disambiguateDecryptArguments": [
+      "args"
+    ],
+    "wrapKey": [
+      "algorithm",
+      "key",
+      "param"
+    ],
+    "unwrapKey": [
+      "algorithm",
+      "encryptedKey",
+      "param"
+    ],
+    "sign": [
+      "algorithm",
+      "digest",
+      "param"
+    ],
+    "verify": [
+      "algorithm",
+      "digest",
+      "signature",
+      "param"
+    ],
+    "signData": [
+      "algorithm",
+      "data",
+      "param"
+    ],
+    "verifyData": [
+      "algorithm",
+      "data",
+      "signature",
+      "param"
+    ],
+    "getKeyMaterial": [
+      "options"
+    ],
+    "fetchKey": [
+      "options"
+    ],
+    "getProvider": [
+      "operation",
+      "algorithm",
+      "options"
+    ],
+    "ensureValid": [
+      "key",
+      "operation"
+    ]
+  },
+  "createKeyVault": [
+    "endpointParam",
+    "credential",
+    "param"
+  ],
+  "_getKeyAttestationSend": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "param"
+  ],
+  "_getKeyAttestationDeserialize": [
+    "result"
+  ],
+  "getKeyAttestation": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "param"
+  ],
+  "_getRandomBytesSend": [
+    "context",
+    "parameters",
+    "param"
+  ],
+  "_getRandomBytesDeserialize": [
+    "result"
+  ],
+  "getRandomBytes": [
+    "context",
+    "parameters",
+    "param"
+  ],
+  "_updateKeyRotationPolicySend": [
+    "context",
+    "keyName",
+    "keyRotationPolicy",
+    "param"
+  ],
+  "_updateKeyRotationPolicyDeserialize": [
+    "result"
+  ],
+  "updateKeyRotationPolicy": [
+    "context",
+    "keyName",
+    "keyRotationPolicy",
+    "param"
+  ],
+  "_getKeyRotationPolicySend": [
+    "context",
+    "keyName",
+    "param"
+  ],
+  "_getKeyRotationPolicyDeserialize": [
+    "result"
+  ],
+  "getKeyRotationPolicy": [
+    "context",
+    "keyName",
+    "param"
+  ],
+  "_recoverDeletedKeySend": [
+    "context",
+    "keyName",
+    "param"
+  ],
+  "_recoverDeletedKeyDeserialize": [
+    "result"
+  ],
+  "recoverDeletedKey": [
+    "context",
+    "keyName",
+    "param"
+  ],
+  "_purgeDeletedKeySend": [
+    "context",
+    "keyName",
+    "param"
+  ],
+  "_purgeDeletedKeyDeserialize": [
+    "result"
+  ],
+  "purgeDeletedKey": [
+    "context",
+    "keyName",
+    "param"
+  ],
+  "_getDeletedKeySend": [
+    "context",
+    "keyName",
+    "param"
+  ],
+  "_getDeletedKeyDeserialize": [
+    "result"
+  ],
+  "getDeletedKey": [
+    "context",
+    "keyName",
+    "param"
+  ],
+  "_getDeletedKeysSend": [
+    "context",
+    "param"
+  ],
+  "_getDeletedKeysDeserialize": [
+    "result"
+  ],
+  "getDeletedKeys": [
+    "context",
+    "param"
+  ],
+  "_releaseSend": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "parameters",
+    "param"
+  ],
+  "_releaseDeserialize": [
+    "result"
+  ],
+  "release": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "parameters",
+    "param"
+  ],
+  "_unwrapKeySend": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "parameters",
+    "param"
+  ],
+  "_unwrapKeyDeserialize": [
+    "result"
+  ],
+  "unwrapKey": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "parameters",
+    "param"
+  ],
+  "_wrapKeySend": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "parameters",
+    "param"
+  ],
+  "_wrapKeyDeserialize": [
+    "result"
+  ],
+  "wrapKey": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "parameters",
+    "param"
+  ],
+  "_verifySend": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "parameters",
+    "param"
+  ],
+  "_verifyDeserialize": [
+    "result"
+  ],
+  "verify": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "parameters",
+    "param"
+  ],
+  "_signSend": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "parameters",
+    "param"
+  ],
+  "_signDeserialize": [
+    "result"
+  ],
+  "sign": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "parameters",
+    "param"
+  ],
+  "_decryptSend": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "parameters",
+    "param"
+  ],
+  "_decryptDeserialize": [
+    "result"
+  ],
+  "decrypt": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "parameters",
+    "param"
+  ],
+  "_encryptSend": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "parameters",
+    "param"
+  ],
+  "_encryptDeserialize": [
+    "result"
+  ],
+  "encrypt": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "parameters",
+    "param"
+  ],
+  "_restoreKeySend": [
+    "context",
+    "parameters",
+    "param"
+  ],
+  "_restoreKeyDeserialize": [
+    "result"
+  ],
+  "restoreKey": [
+    "context",
+    "parameters",
+    "param"
+  ],
+  "_backupKeySend": [
+    "context",
+    "keyName",
+    "param"
+  ],
+  "_backupKeyDeserialize": [
+    "result"
+  ],
+  "backupKey": [
+    "context",
+    "keyName",
+    "param"
+  ],
+  "_getKeysSend": [
+    "context",
+    "param"
+  ],
+  "_getKeysDeserialize": [
+    "result"
+  ],
+  "getKeys": [
+    "context",
+    "param"
+  ],
+  "_getKeyVersionsSend": [
+    "context",
+    "keyName",
+    "param"
+  ],
+  "_getKeyVersionsDeserialize": [
+    "result"
+  ],
+  "getKeyVersions": [
+    "context",
+    "keyName",
+    "param"
+  ],
+  "_getKeySend": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "param"
+  ],
+  "_getKeyDeserialize": [
+    "result"
+  ],
+  "getKey": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "param"
+  ],
+  "_updateKeySend": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "parameters",
+    "param"
+  ],
+  "_updateKeyDeserialize": [
+    "result"
+  ],
+  "updateKey": [
+    "context",
+    "keyName",
+    "keyVersion",
+    "parameters",
+    "param"
+  ],
+  "_deleteKeySend": [
+    "context",
+    "keyName",
+    "param"
+  ],
+  "_deleteKeyDeserialize": [
+    "result"
+  ],
+  "deleteKey": [
+    "context",
+    "keyName",
+    "param"
+  ],
+  "_importKeySend": [
+    "context",
+    "keyName",
+    "parameters",
+    "param"
+  ],
+  "_importKeyDeserialize": [
+    "result"
+  ],
+  "importKey": [
+    "context",
+    "keyName",
+    "parameters",
+    "param"
+  ],
+  "_rotateKeySend": [
+    "context",
+    "keyName",
+    "param"
+  ],
+  "_rotateKeyDeserialize": [
+    "result"
+  ],
+  "rotateKey": [
+    "context",
+    "keyName",
+    "param"
+  ],
+  "_createKeySend": [
+    "context",
+    "keyName",
+    "parameters",
+    "param"
+  ],
+  "_createKeyDeserialize": [
+    "result"
+  ],
+  "createKey": [
+    "context",
+    "keyName",
+    "parameters",
+    "param"
+  ],
+  "KeyVaultClient": {
+    "constructor": [
+      "endpointParam",
+      "credential",
+      "param"
+    ],
+    "getKeyAttestation": [
+      "keyName",
+      "keyVersion",
+      "param"
+    ],
+    "getRandomBytes": [
+      "parameters",
+      "param"
+    ],
+    "updateKeyRotationPolicy": [
+      "keyName",
+      "keyRotationPolicy",
+      "param"
+    ],
+    "getKeyRotationPolicy": [
+      "keyName",
+      "param"
+    ],
+    "recoverDeletedKey": [
+      "keyName",
+      "param"
+    ],
+    "purgeDeletedKey": [
+      "keyName",
+      "param"
+    ],
+    "getDeletedKey": [
+      "keyName",
+      "param"
+    ],
+    "getDeletedKeys": [
+      "param"
+    ],
+    "release": [
+      "keyName",
+      "keyVersion",
+      "parameters",
+      "param"
+    ],
+    "unwrapKey": [
+      "keyName",
+      "keyVersion",
+      "parameters",
+      "param"
+    ],
+    "wrapKey": [
+      "keyName",
+      "keyVersion",
+      "parameters",
+      "param"
+    ],
+    "verify": [
+      "keyName",
+      "keyVersion",
+      "parameters",
+      "param"
+    ],
+    "sign": [
+      "keyName",
+      "keyVersion",
+      "parameters",
+      "param"
+    ],
+    "decrypt": [
+      "keyName",
+      "keyVersion",
+      "parameters",
+      "param"
+    ],
+    "encrypt": [
+      "keyName",
+      "keyVersion",
+      "parameters",
+      "param"
+    ],
+    "restoreKey": [
+      "parameters",
+      "param"
+    ],
+    "backupKey": [
+      "keyName",
+      "param"
+    ],
+    "getKeys": [
+      "param"
+    ],
+    "getKeyVersions": [
+      "keyName",
+      "param"
+    ],
+    "getKey": [
+      "keyName",
+      "keyVersion",
+      "param"
+    ],
+    "updateKey": [
+      "keyName",
+      "keyVersion",
+      "parameters",
+      "param"
+    ],
+    "deleteKey": [
+      "keyName",
+      "param"
+    ],
+    "importKey": [
+      "keyName",
+      "parameters",
+      "param"
+    ],
+    "rotateKey": [
+      "keyName",
+      "param"
+    ],
+    "createKey": [
+      "keyName",
+      "parameters",
+      "param"
+    ]
+  },
+  "keyCreateParametersSerializer": [
+    "item"
+  ],
+  "keyAttributesSerializer": [
+    "item"
+  ],
+  "keyAttributesDeserializer": [
+    "item"
+  ],
+  "keyAttestationDeserializer": [
+    "item"
+  ],
+  "keyReleasePolicySerializer": [
+    "item"
+  ],
+  "keyReleasePolicyDeserializer": [
+    "item"
+  ],
+  "keyBundleDeserializer": [
+    "item"
+  ],
+  "jsonWebKeySerializer": [
+    "item"
+  ],
+  "jsonWebKeyDeserializer": [
+    "item"
+  ],
+  "keyVaultErrorDeserializer": [
+    "item"
+  ],
+  "_keyVaultErrorErrorDeserializer": [
+    "item"
+  ],
+  "keyImportParametersSerializer": [
+    "item"
+  ],
+  "deletedKeyBundleDeserializer": [
+    "item"
+  ],
+  "keyUpdateParametersSerializer": [
+    "item"
+  ],
+  "_keyListResultDeserializer": [
+    "item"
+  ],
+  "keyItemArrayDeserializer": [
+    "result"
+  ],
+  "keyItemDeserializer": [
+    "item"
+  ],
+  "backupKeyResultDeserializer": [
+    "item"
+  ],
+  "keyRestoreParametersSerializer": [
+    "item"
+  ],
+  "keyOperationsParametersSerializer": [
+    "item"
+  ],
+  "keyOperationResultDeserializer": [
+    "item"
+  ],
+  "keySignParametersSerializer": [
+    "item"
+  ],
+  "keyVerifyParametersSerializer": [
+    "item"
+  ],
+  "keyVerifyResultDeserializer": [
+    "item"
+  ],
+  "keyReleaseParametersSerializer": [
+    "item"
+  ],
+  "keyReleaseResultDeserializer": [
+    "item"
+  ],
+  "_deletedKeyListResultDeserializer": [
+    "item"
+  ],
+  "deletedKeyItemArrayDeserializer": [
+    "result"
+  ],
+  "deletedKeyItemDeserializer": [
+    "item"
+  ],
+  "keyRotationPolicySerializer": [
+    "item"
+  ],
+  "keyRotationPolicyDeserializer": [
+    "item"
+  ],
+  "lifetimeActionsArraySerializer": [
+    "result"
+  ],
+  "lifetimeActionsArrayDeserializer": [
+    "result"
+  ],
+  "lifetimeActionsSerializer": [
+    "item"
+  ],
+  "lifetimeActionsDeserializer": [
+    "item"
+  ],
+  "lifetimeActionsTriggerSerializer": [
+    "item"
+  ],
+  "lifetimeActionsTriggerDeserializer": [
+    "item"
+  ],
+  "lifetimeActionsTypeSerializer": [
+    "item"
+  ],
+  "lifetimeActionsTypeDeserializer": [
+    "item"
+  ],
+  "keyRotationPolicyAttributesSerializer": [
+    "item"
+  ],
+  "keyRotationPolicyAttributesDeserializer": [
+    "item"
+  ],
+  "getRandomBytesRequestSerializer": [
+    "item"
+  ],
+  "randomBytesDeserializer": [
+    "item"
+  ],
+  "buildPagedAsyncIterator": [
+    "client",
+    "getInitialResponse",
+    "processResponseBody",
+    "expectedStatuses",
+    "param"
+  ],
+  "getPagedAsyncIterator": [
+    "pagedResult"
+  ],
+  "getItemAsyncIterator": [
+    "pagedResult"
+  ],
+  "getPageAsyncIterator": [
+    "pagedResult_1"
+  ],
+  "getNextLink": [
+    "body",
+    "nextLinkName"
+  ],
+  "getElements": [
+    "body",
+    "itemName"
+  ],
+  "checkPagingRequest": [
+    "response",
+    "expectedStatuses"
+  ],
+  "encodeComponent": [
+    "val",
+    "reserved",
+    "op"
+  ],
+  "encodeReservedComponent": [
+    "str"
+  ],
+  "encodeRFC3986URIComponent": [
+    "str"
+  ],
+  "isDefined": [
+    "val"
+  ],
+  "getNamedAndIfEmpty": [
+    "op"
+  ],
+  "getFirstOrSep": [
+    "op",
+    "param"
+  ],
+  "getExpandedValue": [
+    "option"
+  ],
+  "getNonExpandedValue": [
+    "option"
+  ],
+  "getVarValue": [
+    "option"
+  ],
+  "expandUrlTemplate": [
+    "template",
+    "context",
+    "option"
+  ],
+  "parseKeyVaultKeyIdentifier": [
+    "id"
+  ],
+  "KeyClient": {
+    "constructor": [
+      "vaultUrl",
+      "credential",
+      "param"
+    ],
+    "createKey": [
+      "name",
+      "keyType",
+      "param"
+    ],
+    "createEcKey": [
+      "name",
+      "options"
+    ],
+    "createRsaKey": [
+      "name",
+      "options"
+    ],
+    "createOctKey": [
+      "name",
+      "options"
+    ],
+    "importKey": [
+      "name",
+      "key",
+      "param"
+    ],
+    "getCryptographyClient": [
+      "keyName",
+      "options"
+    ],
+    "beginDeleteKey": [
+      "name",
+      "param"
+    ],
+    "updateKeyProperties": [
+      "param"
+    ],
+    "disambiguateUpdateKeyPropertiesArgs": [
+      "args"
+    ],
+    "getKey": [
+      "name",
+      "param"
+    ],
+    "getKeyAttestation": [
+      "name",
+      "param"
+    ],
+    "getDeletedKey": [
+      "name",
+      "param"
+    ],
+    "purgeDeletedKey": [
+      "name",
+      "param"
+    ],
+    "beginRecoverDeletedKey": [
+      "name",
+      "param"
+    ],
+    "backupKey": [
+      "name",
+      "param"
+    ],
+    "restoreKeyBackup": [
+      "backup",
+      "param"
+    ],
+    "getRandomBytes": [
+      "count",
+      "param"
+    ],
+    "rotateKey": [
+      "name",
+      "param"
+    ],
+    "releaseKey": [
+      "name",
+      "targetAttestationToken",
+      "param"
+    ],
+    "getKeyRotationPolicy": [
+      "keyName",
+      "param"
+    ],
+    "updateKeyRotationPolicy": [
+      "keyName",
+      "policy",
+      "param"
+    ],
+    "listPropertiesOfKeyVersions": [
+      "name",
+      "param"
+    ],
+    "listPropertiesOfKeys": [
+      "param"
+    ],
+    "listDeletedKeys": [
+      "param"
+    ]
+  },
+  "DeleteKeyPollOperation": {
+    "constructor": [
+      "state",
+      "client",
+      "param"
+    ],
+    "deleteKey": [
+      "name",
+      "param"
+    ],
+    "getDeletedKey": [
+      "name",
+      "param"
+    ],
+    "update": [
+      "param"
+    ]
+  },
+  "DeleteKeyPoller": {
+    "constructor": [
+      "options"
+    ]
+  },
+  "KeyVaultKeyPoller": {
+    "constructor": [],
+    "delay": []
+  },
+  "KeyVaultKeyPollOperation": {
+    "constructor": [
+      "state",
+      "param"
+    ],
+    "update": [],
+    "cancel": [],
+    "toString": []
+  },
+  "RecoverDeletedKeyPollOperation": {
+    "constructor": [
+      "state",
+      "client",
+      "param"
+    ],
+    "getKey": [
+      "name",
+      "param"
+    ],
+    "recoverDeletedKey": [
+      "name",
+      "param"
+    ],
+    "update": [
+      "param"
+    ]
+  },
+  "RecoverDeletedKeyPoller": {
+    "constructor": [
+      "options"
+    ]
+  },
+  "getKeyFromKeyBundle": [
+    "bundle"
+  ],
+  "getDeletedKeyFromDeletedKeyItem": [
+    "keyItem"
+  ],
+  "getKeyPropertiesFromKeyItem": [
+    "keyItem"
+  ],
+  "getNormalizedActionType": [
+    "caseInsensitiveActionType"
+  ],
+  "mapPagedAsyncIterable": [
+    "options",
+    "operation",
+    "mapper"
+  ]
+}

@@ -1,0 +1,603 @@
+{
+  "PointerDragging": {
+    "constructor": [
+      "containerEl"
+    ],
+    "destroy": [],
+    "tryStart": [
+      "ev"
+    ],
+    "cleanup": [],
+    "querySubjectEl": [
+      "ev"
+    ],
+    "shouldIgnoreMouse": [],
+    "cancelTouchScroll": [],
+    "initScrollWatch": [
+      "ev"
+    ],
+    "recordCoords": [
+      "ev"
+    ],
+    "destroyScrollWatch": [],
+    "createEventFromMouse": [
+      "ev",
+      "isFirst"
+    ],
+    "createEventFromTouch": [
+      "ev",
+      "isFirst"
+    ]
+  },
+  "ElementMirror": {
+    "constructor": [],
+    "start": [
+      "sourceEl",
+      "pageX",
+      "pageY"
+    ],
+    "handleMove": [
+      "pageX",
+      "pageY"
+    ],
+    "setIsVisible": [
+      "bool"
+    ],
+    "stop": [
+      "needsRevertAnimation",
+      "callback"
+    ],
+    "doRevertAnimation": [
+      "callback",
+      "revertDuration"
+    ],
+    "cleanup": [],
+    "updateElPosition": [],
+    "getMirrorEl": []
+  },
+  "ScrollGeomCache": {
+    "constructor": [
+      "scrollController",
+      "doesListening"
+    ],
+    "destroy": [],
+    "getScrollTop": [],
+    "getScrollLeft": [],
+    "setScrollTop": [
+      "top"
+    ],
+    "setScrollLeft": [
+      "top"
+    ],
+    "getClientWidth": [],
+    "getClientHeight": [],
+    "getScrollWidth": [],
+    "getScrollHeight": [],
+    "handleScrollChange": []
+  },
+  "AutoScroller": {
+    "constructor": [],
+    "start": [
+      "pageX",
+      "pageY",
+      "scrollStartEl"
+    ],
+    "handleMove": [
+      "pageX",
+      "pageY"
+    ],
+    "stop": [],
+    "requestAnimation": [
+      "now"
+    ],
+    "handleSide": [
+      "edge",
+      "seconds"
+    ],
+    "computeBestEdge": [
+      "left",
+      "top"
+    ],
+    "buildCaches": [
+      "scrollStartEl"
+    ],
+    "queryScrollEls": [
+      "scrollStartEl"
+    ]
+  },
+  "FeaturefulElementDragging": {
+    "constructor": [
+      "containerEl",
+      "selector"
+    ],
+    "destroy": [],
+    "startDelay": [
+      "ev"
+    ],
+    "handleDelayEnd": [
+      "ev"
+    ],
+    "handleDistanceSurpassed": [
+      "ev"
+    ],
+    "tryStartDrag": [
+      "ev"
+    ],
+    "tryStopDrag": [
+      "ev"
+    ],
+    "stopDrag": [
+      "ev"
+    ],
+    "setIgnoreMove": [
+      "bool"
+    ],
+    "setMirrorIsVisible": [
+      "bool"
+    ],
+    "setMirrorNeedsRevert": [
+      "bool"
+    ],
+    "setAutoScrollEnabled": [
+      "bool"
+    ]
+  },
+  "ExternalDraggable": {
+    "constructor": [
+      "el",
+      "param"
+    ],
+    "destroy": []
+  },
+  "InferredElementDragging": {
+    "constructor": [
+      "containerEl"
+    ],
+    "destroy": [],
+    "setIgnoreMove": [
+      "bool"
+    ],
+    "setMirrorIsVisible": [
+      "bool"
+    ]
+  },
+  "ThirdPartyDraggable": {
+    "constructor": [
+      "containerOrSettings",
+      "settings"
+    ],
+    "destroy": []
+  },
+  "isPrimaryMouseButton": [
+    "ev"
+  ],
+  "startIgnoringMouse": [],
+  "listenerCreated": [],
+  "listenerDestroyed": [],
+  "onWindowTouchMove": [
+    "ev"
+  ],
+  "done": [],
+  "ElementScrollGeomCache": {
+    "constructor": [
+      "el",
+      "doesListening"
+    ],
+    "getEventTarget": [],
+    "computeClientRect": []
+  },
+  "WindowScrollGeomCache": {
+    "constructor": [
+      "doesListening"
+    ],
+    "getEventTarget": [],
+    "computeClientRect": [],
+    "handleScrollChange": []
+  },
+  "OffsetTracker": {
+    "constructor": [
+      "el"
+    ],
+    "destroy": [],
+    "computeLeft": [],
+    "computeTop": [],
+    "isWithinClipping": [
+      "pageX",
+      "pageY"
+    ]
+  },
+  "isIgnoredClipping": [
+    "node"
+  ],
+  "HitDragging": {
+    "constructor": [
+      "dragging",
+      "droppableStore"
+    ],
+    "processFirstCoord": [
+      "ev"
+    ],
+    "handleMove": [
+      "ev",
+      "forceHandle"
+    ],
+    "prepareHits": [],
+    "releaseHits": [],
+    "queryHitForOffset": [
+      "offsetLeft",
+      "offsetTop"
+    ]
+  },
+  "isHitsEqual": [
+    "hit0",
+    "hit1"
+  ],
+  "buildDatePointApiWithContext": [
+    "dateSpan",
+    "context"
+  ],
+  "buildDatePointApi": [
+    "span",
+    "dateEnv"
+  ],
+  "DateClicking": {
+    "constructor": [
+      "settings"
+    ],
+    "destroy": []
+  },
+  "DateSelecting": {
+    "constructor": [
+      "settings"
+    ],
+    "destroy": []
+  },
+  "getComponentTouchDelay$1": [
+    "component"
+  ],
+  "joinHitsIntoSelection": [
+    "hit0",
+    "hit1",
+    "dateSelectionTransformers"
+  ],
+  "EventDragging": {
+    "constructor": [
+      "settings"
+    ],
+    "destroy": [],
+    "displayDrag": [
+      "nextContext",
+      "state"
+    ],
+    "clearDrag": [],
+    "cleanup": []
+  },
+  "computeEventMutation": [
+    "hit0",
+    "hit1",
+    "eventInstanceStart",
+    "massagers"
+  ],
+  "getComponentTouchDelay": [
+    "component"
+  ],
+  "EventResizing": {
+    "constructor": [
+      "settings"
+    ],
+    "destroy": [],
+    "querySegEl": [
+      "ev"
+    ]
+  },
+  "computeMutation": [
+    "hit0",
+    "hit1",
+    "isFromStart",
+    "instanceRange"
+  ],
+  "UnselectAuto": {
+    "constructor": [
+      "context"
+    ],
+    "destroy": []
+  },
+  "ExternalElementDragging": {
+    "constructor": [
+      "dragging",
+      "suppliedDragMeta"
+    ],
+    "buildDragMeta": [
+      "subjectEl"
+    ],
+    "displayDrag": [
+      "nextContext",
+      "state"
+    ],
+    "clearDrag": [],
+    "canDropElOnCalendar": [
+      "el",
+      "receivingContext"
+    ]
+  },
+  "computeEventForDateSpan": [
+    "dateSpan",
+    "dragMeta",
+    "context"
+  ],
+  "getDragMetaFromEl": [
+    "el"
+  ],
+  "getEmbeddedElData": [
+    "el",
+    "name"
+  ],
+  "o": {
+    "constructor": [
+      "t"
+    ],
+    "destroy": [],
+    "tryStart": [
+      "t"
+    ],
+    "cleanup": [],
+    "querySubjectEl": [
+      "t"
+    ],
+    "shouldIgnoreMouse": [],
+    "cancelTouchScroll": [],
+    "initScrollWatch": [
+      "t"
+    ],
+    "recordCoords": [
+      "t"
+    ],
+    "destroyScrollWatch": [],
+    "createEventFromMouse": [
+      "t",
+      "e"
+    ],
+    "createEventFromTouch": [
+      "t",
+      "e"
+    ]
+  },
+  "l": [
+    "t"
+  ],
+  "a": {
+    "constructor": [],
+    "start": [
+      "t",
+      "e",
+      "i"
+    ],
+    "handleMove": [
+      "t",
+      "e"
+    ],
+    "setIsVisible": [
+      "t"
+    ],
+    "stop": [
+      "t",
+      "e"
+    ],
+    "doRevertAnimation": [
+      "t",
+      "e"
+    ],
+    "cleanup": [],
+    "updateElPosition": [],
+    "getMirrorEl": []
+  },
+  "i": [],
+  "h": {
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "destroy": [],
+    "getScrollTop": [],
+    "getScrollLeft": [],
+    "setScrollTop": [
+      "t"
+    ],
+    "setScrollLeft": [
+      "t"
+    ],
+    "getClientWidth": [],
+    "getClientHeight": [],
+    "getScrollWidth": [],
+    "getScrollHeight": [],
+    "handleScrollChange": []
+  },
+  "c": {
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "getEventTarget": [],
+    "computeClientRect": []
+  },
+  "d": {
+    "constructor": [
+      "t"
+    ],
+    "getEventTarget": [],
+    "computeClientRect": [],
+    "handleScrollChange": []
+  },
+  "u": {
+    "constructor": [],
+    "start": [
+      "t",
+      "e",
+      "i"
+    ],
+    "handleMove": [
+      "t",
+      "e"
+    ],
+    "stop": [],
+    "requestAnimation": [
+      "t"
+    ],
+    "handleSide": [
+      "t",
+      "e"
+    ],
+    "computeBestEdge": [
+      "t",
+      "e"
+    ],
+    "buildCaches": [
+      "t"
+    ],
+    "queryScrollEls": [
+      "t"
+    ]
+  },
+  "p": {
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "destroy": [],
+    "startDelay": [
+      "t"
+    ],
+    "handleDelayEnd": [
+      "t"
+    ],
+    "handleDistanceSurpassed": [
+      "t"
+    ],
+    "tryStartDrag": [
+      "t"
+    ],
+    "tryStopDrag": [
+      "t"
+    ],
+    "stopDrag": [
+      "t"
+    ],
+    "setIgnoreMove": [
+      "t"
+    ],
+    "setMirrorIsVisible": [
+      "t"
+    ],
+    "setMirrorNeedsRevert": [
+      "t"
+    ],
+    "setAutoScrollEnabled": [
+      "t"
+    ]
+  },
+  "v": {
+    "constructor": [
+      "t"
+    ],
+    "destroy": [],
+    "computeLeft": [],
+    "computeTop": [],
+    "isWithinClipping": [
+      "t",
+      "e"
+    ]
+  },
+  "E": [
+    "t"
+  ],
+  "m": {
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "processFirstCoord": [
+      "t"
+    ],
+    "handleMove": [
+      "t",
+      "e"
+    ],
+    "prepareHits": [],
+    "releaseHits": [],
+    "queryHitForOffset": [
+      "t",
+      "e"
+    ]
+  },
+  "S": [
+    "t",
+    "e"
+  ],
+  "D": [
+    "t",
+    "e"
+  ],
+  "f": {
+    "constructor": [
+      "t"
+    ],
+    "destroy": []
+  },
+  "y": {
+    "constructor": [
+      "t"
+    ],
+    "destroy": []
+  },
+  "w": {
+    "constructor": [
+      "t"
+    ],
+    "destroy": [],
+    "displayDrag": [
+      "t",
+      "e"
+    ],
+    "clearDrag": [],
+    "cleanup": []
+  },
+  "T": {
+    "constructor": [
+      "t"
+    ],
+    "destroy": [],
+    "querySegEl": [
+      "t"
+    ]
+  },
+  "C": {
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "buildDragMeta": [
+      "t"
+    ],
+    "displayDrag": [
+      "t",
+      "e"
+    ],
+    "clearDrag": [],
+    "canDropElOnCalendar": [
+      "t",
+      "e"
+    ]
+  },
+  "R": {
+    "constructor": [
+      "t"
+    ],
+    "destroy": [],
+    "setIgnoreMove": [
+      "t"
+    ],
+    "setMirrorIsVisible": [
+      "t"
+    ]
+  }
+}

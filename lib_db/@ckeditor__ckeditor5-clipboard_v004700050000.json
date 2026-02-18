@@ -1,0 +1,262 @@
+{
+  "ClipboardObserver": {
+    "domEventType": [],
+    "constructor": [
+      "view"
+    ],
+    "onDomEvent": [
+      "domEvent"
+    ]
+  },
+  "handleInput": [
+    "type"
+  ],
+  "plainTextToHtml": [
+    "text"
+  ],
+  "normalizeClipboardData": [
+    "data"
+  ],
+  "viewToPlainText": [
+    "converter",
+    "viewItem"
+  ],
+  "domElementToPlainText": [
+    "element"
+  ],
+  "newLinePadding": [
+    "element",
+    "previous"
+  ],
+  "ClipboardMarkersUtils": {
+    "_markersToCopy": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "_registerMarkerToCopy": [
+      "markerName",
+      "config"
+    ],
+    "_copySelectedFragmentWithMarkers": [
+      "action",
+      "selection",
+      "param"
+    ],
+    "_pasteMarkersIntoTransformedElement": [
+      "markers",
+      "getPastedDocumentElement"
+    ],
+    "_pasteFragmentWithMarkers": [
+      "fragment"
+    ],
+    "_forceMarkersCopy": [
+      "markerName",
+      "executor",
+      "param"
+    ],
+    "_isMarkerCopyable": [
+      "markerName",
+      "action"
+    ],
+    "_hasMarkerConfiguration": [
+      "markerName"
+    ],
+    "_getMarkerClipboardConfig": [
+      "markerName"
+    ],
+    "_insertFakeMarkersIntoSelection": [
+      "writer",
+      "selection",
+      "action"
+    ],
+    "_getCopyableMarkersFromSelection": [
+      "writer",
+      "selection",
+      "action"
+    ],
+    "_getPasteMarkersFromRangeMap": [
+      "markers",
+      "param"
+    ],
+    "_insertFakeMarkersElements": [
+      "writer",
+      "markers"
+    ],
+    "_removeFakeMarkersInsideElement": [
+      "writer",
+      "rootElement"
+    ],
+    "_getAllFakeMarkersFromElement": [
+      "writer",
+      "rootElement"
+    ],
+    "_getUniqueMarkerName": [
+      "name"
+    ]
+  },
+  "isSelectionMarkerCopyable": [
+    "marker"
+  ],
+  "ClipboardPipeline": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "init": [],
+    "_fireOutputTransformationEvent": [
+      "dataTransfer",
+      "selection",
+      "method"
+    ],
+    "_setupPasteDrop": [],
+    "_setupCopyCut": []
+  },
+  "onCopyCut": [
+    "evt",
+    "data"
+  ],
+  "LineView": {
+    "constructor": []
+  },
+  "DragDropTarget": {
+    "removeDropMarkerDelayed": [],
+    "_updateDropMarkerThrottled": [],
+    "_reconvertMarkerThrottled": [],
+    "_dropTargetLineView": [],
+    "_domEmitter": [],
+    "_scrollables": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "init": [],
+    "destroy": [],
+    "updateDropMarker": [
+      "targetViewElement",
+      "targetViewRanges",
+      "clientX",
+      "clientY",
+      "blockMode",
+      "draggedRange"
+    ],
+    "getFinalDropRange": [
+      "targetViewElement",
+      "targetViewRanges",
+      "clientX",
+      "clientY",
+      "blockMode",
+      "draggedRange"
+    ],
+    "removeDropMarker": [],
+    "_setupDropMarker": [],
+    "_updateDropMarker": [
+      "targetRange"
+    ],
+    "_createDropTargetPosition": [
+      "writer"
+    ],
+    "_updateDropTargetLine": [
+      "range"
+    ],
+    "_getScrollableRect": [
+      "viewElement"
+    ]
+  },
+  "findDropTargetRange": [
+    "editor",
+    "targetViewElement",
+    "targetViewRanges",
+    "clientX",
+    "clientY",
+    "blockMode",
+    "draggedRange"
+  ],
+  "shouldIgnoreElement": [
+    "editor",
+    "modelElement"
+  ],
+  "findDropTargetRangeForElement": [
+    "editor",
+    "modelElement",
+    "clientX",
+    "clientY"
+  ],
+  "findElementSide": [
+    "editor",
+    "modelElement",
+    "clientX",
+    "clientY"
+  ],
+  "getClosestMappedModelElement": [
+    "editor",
+    "element"
+  ],
+  "findScrollableElement": [
+    "domNode"
+  ],
+  "DragDropBlockToolbar": {
+    "_isBlockDragging": [],
+    "_domEmitter": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "init": [],
+    "destroy": [],
+    "_handleBlockDragStart": [
+      "domEvent"
+    ],
+    "_handleBlockDragging": [
+      "domEvent"
+    ],
+    "_handleBlockDragEnd": []
+  },
+  "DragDrop": {
+    "_draggedRange": [],
+    "_draggingUid": [],
+    "_draggableElement": [],
+    "_clearDraggableAttributesDelayed": [],
+    "_blockMode": [],
+    "_domEmitter": [],
+    "_previewContainer": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "init": [],
+    "destroy": [],
+    "_setupDragging": [],
+    "_setupClipboardInputIntegration": [],
+    "_setupContentInsertionIntegration": [],
+    "_setupDraggableAttributeHandling": [],
+    "_clearDraggableAttributes": [],
+    "_finalizeDragging": [
+      "moved"
+    ],
+    "_prepareDraggedRange": [
+      "target"
+    ],
+    "_updatePreview": [
+      "param"
+    ]
+  },
+  "getFinalDropEffect": [
+    "dataTransfer"
+  ],
+  "findDraggableWidget": [
+    "target"
+  ],
+  "getRangeIncludingFullySelectedParents": [
+    "model",
+    "elements"
+  ],
+  "PastePlainText": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "init": []
+  },
+  "isUnformattedInlineContent": [
+    "documentFragment",
+    "model"
+  ],
+  "Clipboard": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "init": []
+  }
+}

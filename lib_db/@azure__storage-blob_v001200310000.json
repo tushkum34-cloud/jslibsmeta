@@ -1,0 +1,1822 @@
+{
+  "BatchResponseParser": {
+    "batchResponse": [],
+    "responseBatchBoundary": [],
+    "perResponsePrefix": [],
+    "batchResponseEnding": [],
+    "subRequests": [],
+    "constructor": [
+      "batchResponse",
+      "subRequests"
+    ],
+    "parseBatchResponse": []
+  },
+  "getBodyAsText": [
+    "batchResponse"
+  ],
+  "utf8ByteLength": [
+    "str"
+  ],
+  "BlobBatch": {
+    "batchRequest": [],
+    "batch": [],
+    "batchType": [],
+    "constructor": [],
+    "getMultiPartContentType": [],
+    "getHttpRequestBody": [],
+    "getSubRequests": [],
+    "addSubRequestInternal": [
+      "subRequest",
+      "assembleSubRequestFunc"
+    ],
+    "setBatchType": [
+      "batchType"
+    ],
+    "deleteBlob": [
+      "urlOrBlobClient",
+      "credentialOrOptions",
+      "options"
+    ],
+    "setBlobAccessTier": [
+      "urlOrBlobClient",
+      "credentialOrTier",
+      "tierOrOptions",
+      "options"
+    ]
+  },
+  "InnerBatchRequest": {
+    "operationCount": [],
+    "body": [],
+    "subRequests": [],
+    "boundary": [],
+    "subRequestPrefix": [],
+    "multipartContentType": [],
+    "batchRequestEnding": [],
+    "constructor": [],
+    "createPipeline": [
+      "credential"
+    ],
+    "appendSubRequestToBody": [
+      "request"
+    ],
+    "preAddSubRequest": [
+      "subRequest"
+    ],
+    "postAddSubRequest": [
+      "subRequest"
+    ],
+    "getHttpRequestBody": [],
+    "getMultipartContentType": [],
+    "getSubRequests": []
+  },
+  "batchRequestAssemblePolicy": [
+    "batchRequest"
+  ],
+  "batchHeaderFilterPolicy": [],
+  "BlobBatchClient": {
+    "serviceOrContainerContext": [],
+    "constructor": [
+      "url",
+      "credentialOrPipeline",
+      "options"
+    ],
+    "createBatch": [],
+    "deleteBlobs": [
+      "urlsOrBlobClients",
+      "credentialOrOptions",
+      "options"
+    ],
+    "setBlobsAccessTier": [
+      "urlsOrBlobClients",
+      "credentialOrTier",
+      "tierOrOptions",
+      "options"
+    ],
+    "submitBatch": [
+      "batchRequest",
+      "param"
+    ]
+  },
+  "BlobLeaseClient": {
+    "_leaseId": [],
+    "_url": [],
+    "_containerOrBlobOperation": [],
+    "_isContainer": [],
+    "leaseId": [],
+    "url": [],
+    "constructor": [
+      "client",
+      "leaseId"
+    ],
+    "acquireLease": [
+      "duration",
+      "param"
+    ],
+    "changeLease": [
+      "proposedLeaseId",
+      "param"
+    ],
+    "releaseLease": [
+      "param"
+    ],
+    "renewLease": [
+      "param"
+    ],
+    "breakLease": [
+      "breakPeriod",
+      "param"
+    ]
+  },
+  "BlobQueryResponse": {
+    "acceptRanges": [],
+    "cacheControl": [],
+    "contentDisposition": [],
+    "contentEncoding": [],
+    "contentLanguage": [],
+    "blobSequenceNumber": [],
+    "blobType": [],
+    "contentLength": [],
+    "contentMD5": [],
+    "contentRange": [],
+    "contentType": [],
+    "copyCompletedOn": [],
+    "copyId": [],
+    "copyProgress": [],
+    "copySource": [],
+    "copyStatus": [],
+    "copyStatusDescription": [],
+    "leaseDuration": [],
+    "leaseState": [],
+    "leaseStatus": [],
+    "date": [],
+    "blobCommittedBlockCount": [],
+    "etag": [],
+    "errorCode": [],
+    "isServerEncrypted": [],
+    "blobContentMD5": [],
+    "lastModified": [],
+    "metadata": [],
+    "requestId": [],
+    "clientRequestId": [],
+    "version": [],
+    "encryptionKeySha256": [],
+    "contentCrc64": [],
+    "blobBody": [],
+    "readableStreamBody": [],
+    "_response": [],
+    "originalResponse": [],
+    "constructor": [
+      "originalResponse",
+      "param"
+    ]
+  },
+  "BlobServiceClient": {
+    "serviceContext": [],
+    "fromConnectionString": [
+      "connectionString",
+      "options"
+    ],
+    "constructor": [
+      "url",
+      "credentialOrPipeline",
+      "options"
+    ],
+    "getContainerClient": [
+      "containerName"
+    ],
+    "createContainer": [
+      "containerName",
+      "param"
+    ],
+    "deleteContainer": [
+      "containerName",
+      "param"
+    ],
+    "undeleteContainer": [
+      "deletedContainerName",
+      "deletedContainerVersion",
+      "param"
+    ],
+    "getProperties": [
+      "param"
+    ],
+    "setProperties": [
+      "properties",
+      "param"
+    ],
+    "getStatistics": [
+      "param"
+    ],
+    "getAccountInfo": [
+      "param"
+    ],
+    "listContainersSegment": [
+      "marker",
+      "param"
+    ],
+    "findBlobsByTagsSegment": [
+      "tagFilterSqlExpression",
+      "marker",
+      "param"
+    ],
+    "findBlobsByTagsSegments": [
+      "tagFilterSqlExpression",
+      "marker",
+      "param"
+    ],
+    "findBlobsByTagsItems": [
+      "tagFilterSqlExpression",
+      "param"
+    ],
+    "findBlobsByTags": [
+      "tagFilterSqlExpression",
+      "param"
+    ],
+    "listSegments": [
+      "marker",
+      "param"
+    ],
+    "listItems": [
+      "param"
+    ],
+    "listContainers": [
+      "param"
+    ],
+    "getUserDelegationKey": [
+      "startsOn",
+      "expiresOn",
+      "param"
+    ],
+    "getBlobBatchClient": [],
+    "generateAccountSasUrl": [
+      "expiresOn",
+      "param",
+      "param",
+      "param"
+    ],
+    "generateSasStringToSign": [
+      "expiresOn",
+      "param",
+      "param",
+      "param"
+    ]
+  },
+  "BlobClient": {
+    "blobContext": [],
+    "_name": [],
+    "_containerName": [],
+    "_versionId": [],
+    "_snapshot": [],
+    "name": [],
+    "containerName": [],
+    "constructor": [
+      "urlOrConnectionString",
+      "credentialOrPipelineOrContainerName",
+      "blobNameOrOptions",
+      "options"
+    ],
+    "withSnapshot": [
+      "snapshot"
+    ],
+    "withVersion": [
+      "versionId"
+    ],
+    "getAppendBlobClient": [],
+    "getBlockBlobClient": [],
+    "getPageBlobClient": [],
+    "download": [
+      "param",
+      "count",
+      "param"
+    ],
+    "exists": [
+      "param"
+    ],
+    "getProperties": [
+      "param"
+    ],
+    "delete": [
+      "param"
+    ],
+    "deleteIfExists": [
+      "param"
+    ],
+    "undelete": [
+      "param"
+    ],
+    "setHTTPHeaders": [
+      "blobHTTPHeaders",
+      "param"
+    ],
+    "setMetadata": [
+      "metadata",
+      "param"
+    ],
+    "setTags": [
+      "tags",
+      "param"
+    ],
+    "getTags": [
+      "param"
+    ],
+    "getBlobLeaseClient": [
+      "proposeLeaseId"
+    ],
+    "createSnapshot": [
+      "param"
+    ],
+    "beginCopyFromURL": [
+      "copySource",
+      "param"
+    ],
+    "abortCopyFromURL": [
+      "copyId",
+      "param"
+    ],
+    "syncCopyFromURL": [
+      "copySource",
+      "param"
+    ],
+    "setAccessTier": [
+      "tier",
+      "param"
+    ],
+    "downloadToBuffer": [
+      "param1",
+      "param2",
+      "param3",
+      "param"
+    ],
+    "downloadToFile": [
+      "filePath",
+      "param",
+      "count",
+      "param"
+    ],
+    "getBlobAndContainerNamesFromUrl": [],
+    "startCopyFromURL": [
+      "copySource",
+      "param"
+    ],
+    "generateSasUrl": [
+      "options"
+    ],
+    "generateSasStringToSign": [
+      "options"
+    ],
+    "generateUserDelegationSasUrl": [
+      "options",
+      "userDelegationKey"
+    ],
+    "generateUserDelegationSasStringToSign": [
+      "options",
+      "userDelegationKey"
+    ],
+    "deleteImmutabilityPolicy": [
+      "param"
+    ],
+    "setImmutabilityPolicy": [
+      "immutabilityPolicy",
+      "param"
+    ],
+    "setLegalHold": [
+      "legalHoldEnabled",
+      "param"
+    ],
+    "getAccountInfo": [
+      "param"
+    ]
+  },
+  "AppendBlobClient": {
+    "appendBlobContext": [],
+    "constructor": [
+      "urlOrConnectionString",
+      "credentialOrPipelineOrContainerName",
+      "blobNameOrOptions",
+      "options"
+    ],
+    "withSnapshot": [
+      "snapshot"
+    ],
+    "create": [
+      "param"
+    ],
+    "createIfNotExists": [
+      "param"
+    ],
+    "seal": [
+      "param"
+    ],
+    "appendBlock": [
+      "body",
+      "contentLength",
+      "param"
+    ],
+    "appendBlockFromURL": [
+      "sourceURL",
+      "sourceOffset",
+      "count",
+      "param"
+    ]
+  },
+  "BlockBlobClient": {
+    "_blobContext": [],
+    "blockBlobContext": [],
+    "constructor": [
+      "urlOrConnectionString",
+      "credentialOrPipelineOrContainerName",
+      "blobNameOrOptions",
+      "options"
+    ],
+    "withSnapshot": [
+      "snapshot"
+    ],
+    "query": [
+      "query",
+      "param"
+    ],
+    "upload": [
+      "body",
+      "contentLength",
+      "param"
+    ],
+    "syncUploadFromURL": [
+      "sourceURL",
+      "param"
+    ],
+    "stageBlock": [
+      "blockId",
+      "body",
+      "contentLength",
+      "param"
+    ],
+    "stageBlockFromURL": [
+      "blockId",
+      "sourceURL",
+      "param",
+      "count",
+      "param"
+    ],
+    "commitBlockList": [
+      "blocks",
+      "param"
+    ],
+    "getBlockList": [
+      "listType",
+      "param"
+    ],
+    "uploadData": [
+      "data",
+      "param"
+    ],
+    "uploadBrowserData": [
+      "browserData",
+      "param"
+    ],
+    "uploadSeekableInternal": [
+      "bodyFactory",
+      "size",
+      "param"
+    ],
+    "uploadFile": [
+      "filePath",
+      "param"
+    ],
+    "uploadStream": [
+      "stream",
+      "param",
+      "param",
+      "param"
+    ]
+  },
+  "PageBlobClient": {
+    "pageBlobContext": [],
+    "constructor": [
+      "urlOrConnectionString",
+      "credentialOrPipelineOrContainerName",
+      "blobNameOrOptions",
+      "options"
+    ],
+    "withSnapshot": [
+      "snapshot"
+    ],
+    "create": [
+      "size",
+      "param"
+    ],
+    "createIfNotExists": [
+      "size",
+      "param"
+    ],
+    "uploadPages": [
+      "body",
+      "offset",
+      "count",
+      "param"
+    ],
+    "uploadPagesFromURL": [
+      "sourceURL",
+      "sourceOffset",
+      "destOffset",
+      "count",
+      "param"
+    ],
+    "clearPages": [
+      "param",
+      "count",
+      "param"
+    ],
+    "getPageRanges": [
+      "param",
+      "count",
+      "param"
+    ],
+    "listPageRangesSegment": [
+      "param",
+      "count",
+      "marker",
+      "param"
+    ],
+    "listPageRangeItemSegments": [
+      "param",
+      "count",
+      "marker",
+      "param"
+    ],
+    "listPageRangeItems": [
+      "param",
+      "count",
+      "param"
+    ],
+    "listPageRanges": [
+      "param",
+      "count",
+      "param"
+    ],
+    "getPageRangesDiff": [
+      "offset",
+      "count",
+      "prevSnapshot",
+      "param"
+    ],
+    "listPageRangesDiffSegment": [
+      "offset",
+      "count",
+      "prevSnapshotOrUrl",
+      "marker",
+      "param"
+    ],
+    "listPageRangeDiffItemSegments": [
+      "offset",
+      "count",
+      "prevSnapshotOrUrl",
+      "marker",
+      "options"
+    ],
+    "listPageRangeDiffItems": [
+      "offset",
+      "count",
+      "prevSnapshotOrUrl",
+      "options"
+    ],
+    "listPageRangesDiff": [
+      "offset",
+      "count",
+      "prevSnapshot",
+      "param"
+    ],
+    "getPageRangesDiffForManagedDisks": [
+      "offset",
+      "count",
+      "prevSnapshotUrl",
+      "param"
+    ],
+    "resize": [
+      "size",
+      "param"
+    ],
+    "updateSequenceNumber": [
+      "sequenceNumberAction",
+      "sequenceNumber",
+      "param"
+    ],
+    "startCopyIncremental": [
+      "copySource",
+      "param"
+    ]
+  },
+  "ContainerClient": {
+    "containerContext": [],
+    "_containerName": [],
+    "containerName": [],
+    "constructor": [
+      "urlOrConnectionString",
+      "credentialOrPipelineOrContainerName",
+      "options"
+    ],
+    "create": [
+      "param"
+    ],
+    "createIfNotExists": [
+      "param"
+    ],
+    "exists": [
+      "param"
+    ],
+    "getBlobClient": [
+      "blobName"
+    ],
+    "getAppendBlobClient": [
+      "blobName"
+    ],
+    "getBlockBlobClient": [
+      "blobName"
+    ],
+    "getPageBlobClient": [
+      "blobName"
+    ],
+    "getProperties": [
+      "param"
+    ],
+    "delete": [
+      "param"
+    ],
+    "deleteIfExists": [
+      "param"
+    ],
+    "setMetadata": [
+      "metadata",
+      "param"
+    ],
+    "getAccessPolicy": [
+      "param"
+    ],
+    "setAccessPolicy": [
+      "access",
+      "containerAcl",
+      "param"
+    ],
+    "getBlobLeaseClient": [
+      "proposeLeaseId"
+    ],
+    "uploadBlockBlob": [
+      "blobName",
+      "body",
+      "contentLength",
+      "param"
+    ],
+    "deleteBlob": [
+      "blobName",
+      "param"
+    ],
+    "listBlobFlatSegment": [
+      "marker",
+      "param"
+    ],
+    "listBlobHierarchySegment": [
+      "delimiter",
+      "marker",
+      "param"
+    ],
+    "listSegments": [
+      "marker",
+      "param"
+    ],
+    "listItems": [
+      "param"
+    ],
+    "listBlobsFlat": [
+      "param"
+    ],
+    "listHierarchySegments": [
+      "delimiter",
+      "marker",
+      "param"
+    ],
+    "listItemsByHierarchy": [
+      "delimiter",
+      "param"
+    ],
+    "listBlobsByHierarchy": [
+      "delimiter",
+      "param"
+    ],
+    "findBlobsByTagsSegment": [
+      "tagFilterSqlExpression",
+      "marker",
+      "param"
+    ],
+    "findBlobsByTagsSegments": [
+      "tagFilterSqlExpression",
+      "marker",
+      "param"
+    ],
+    "findBlobsByTagsItems": [
+      "tagFilterSqlExpression",
+      "param"
+    ],
+    "findBlobsByTags": [
+      "tagFilterSqlExpression",
+      "param"
+    ],
+    "getAccountInfo": [
+      "param"
+    ],
+    "getContainerNameFromUrl": [],
+    "generateSasUrl": [
+      "options"
+    ],
+    "generateSasStringToSign": [
+      "options"
+    ],
+    "generateUserDelegationSasUrl": [
+      "options",
+      "userDelegationKey"
+    ],
+    "generateUserDelegationSasStringToSign": [
+      "options",
+      "userDelegationKey"
+    ],
+    "getBlobBatchClient": []
+  },
+  "rangeResponseFromModel": [
+    "response"
+  ],
+  "Pipeline": {
+    "factories": [],
+    "options": [],
+    "constructor": [
+      "factories",
+      "param"
+    ],
+    "toServiceClientOptions": []
+  },
+  "isPipelineLike": [
+    "pipeline"
+  ],
+  "newPipeline": [
+    "credential",
+    "param"
+  ],
+  "processDownlevelPipeline": [
+    "pipeline"
+  ],
+  "getCoreClientOptions": [
+    "pipeline"
+  ],
+  "getCredentialFromPipeline": [
+    "pipeline"
+  ],
+  "isStorageSharedKeyCredential": [
+    "factory"
+  ],
+  "isAnonymousCredential": [
+    "factory"
+  ],
+  "isCoreHttpBearerTokenFactory": [
+    "factory"
+  ],
+  "isStorageBrowserPolicyFactory": [
+    "factory"
+  ],
+  "isStorageRetryPolicyFactory": [
+    "factory"
+  ],
+  "isStorageTelemetryPolicyFactory": [
+    "factory"
+  ],
+  "isInjectorPolicyFactory": [
+    "factory"
+  ],
+  "isCoreHttpPolicyFactory": [
+    "factory"
+  ],
+  "rangeToString": [
+    "iRange"
+  ],
+  "StorageClient": {
+    "url": [],
+    "version": [],
+    "constructor": [
+      "url",
+      "options"
+    ],
+    "service": [],
+    "container": [],
+    "blob": [],
+    "pageBlob": [],
+    "appendBlob": [],
+    "blockBlob": []
+  },
+  "StorageContextClient": {
+    "sendOperationRequest": [
+      "operationArguments",
+      "operationSpec"
+    ]
+  },
+  "AppendBlobImpl": {
+    "client": [],
+    "constructor": [
+      "client"
+    ],
+    "create": [
+      "contentLength",
+      "options"
+    ],
+    "appendBlock": [
+      "contentLength",
+      "body",
+      "options"
+    ],
+    "appendBlockFromUrl": [
+      "sourceUrl",
+      "contentLength",
+      "options"
+    ],
+    "seal": [
+      "options"
+    ]
+  },
+  "BlobImpl": {
+    "client": [],
+    "constructor": [
+      "client"
+    ],
+    "download": [
+      "options"
+    ],
+    "getProperties": [
+      "options"
+    ],
+    "delete": [
+      "options"
+    ],
+    "undelete": [
+      "options"
+    ],
+    "setExpiry": [
+      "expiryOptions",
+      "options"
+    ],
+    "setHttpHeaders": [
+      "options"
+    ],
+    "setImmutabilityPolicy": [
+      "options"
+    ],
+    "deleteImmutabilityPolicy": [
+      "options"
+    ],
+    "setLegalHold": [
+      "legalHold",
+      "options"
+    ],
+    "setMetadata": [
+      "options"
+    ],
+    "acquireLease": [
+      "options"
+    ],
+    "releaseLease": [
+      "leaseId",
+      "options"
+    ],
+    "renewLease": [
+      "leaseId",
+      "options"
+    ],
+    "changeLease": [
+      "leaseId",
+      "proposedLeaseId",
+      "options"
+    ],
+    "breakLease": [
+      "options"
+    ],
+    "createSnapshot": [
+      "options"
+    ],
+    "startCopyFromURL": [
+      "copySource",
+      "options"
+    ],
+    "copyFromURL": [
+      "copySource",
+      "options"
+    ],
+    "abortCopyFromURL": [
+      "copyId",
+      "options"
+    ],
+    "setTier": [
+      "tier",
+      "options"
+    ],
+    "getAccountInfo": [
+      "options"
+    ],
+    "query": [
+      "options"
+    ],
+    "getTags": [
+      "options"
+    ],
+    "setTags": [
+      "options"
+    ]
+  },
+  "BlockBlobImpl": {
+    "client": [],
+    "constructor": [
+      "client"
+    ],
+    "upload": [
+      "contentLength",
+      "body",
+      "options"
+    ],
+    "putBlobFromUrl": [
+      "contentLength",
+      "copySource",
+      "options"
+    ],
+    "stageBlock": [
+      "blockId",
+      "contentLength",
+      "body",
+      "options"
+    ],
+    "stageBlockFromURL": [
+      "blockId",
+      "contentLength",
+      "sourceUrl",
+      "options"
+    ],
+    "commitBlockList": [
+      "blocks",
+      "options"
+    ],
+    "getBlockList": [
+      "listType",
+      "options"
+    ]
+  },
+  "ContainerImpl": {
+    "client": [],
+    "constructor": [
+      "client"
+    ],
+    "create": [
+      "options"
+    ],
+    "getProperties": [
+      "options"
+    ],
+    "delete": [
+      "options"
+    ],
+    "setMetadata": [
+      "options"
+    ],
+    "getAccessPolicy": [
+      "options"
+    ],
+    "setAccessPolicy": [
+      "options"
+    ],
+    "restore": [
+      "options"
+    ],
+    "rename": [
+      "sourceContainerName",
+      "options"
+    ],
+    "submitBatch": [
+      "contentLength",
+      "multipartContentType",
+      "body",
+      "options"
+    ],
+    "filterBlobs": [
+      "options"
+    ],
+    "acquireLease": [
+      "options"
+    ],
+    "releaseLease": [
+      "leaseId",
+      "options"
+    ],
+    "renewLease": [
+      "leaseId",
+      "options"
+    ],
+    "breakLease": [
+      "options"
+    ],
+    "changeLease": [
+      "leaseId",
+      "proposedLeaseId",
+      "options"
+    ],
+    "listBlobFlatSegment": [
+      "options"
+    ],
+    "listBlobHierarchySegment": [
+      "delimiter",
+      "options"
+    ],
+    "getAccountInfo": [
+      "options"
+    ]
+  },
+  "PageBlobImpl": {
+    "client": [],
+    "constructor": [
+      "client"
+    ],
+    "create": [
+      "contentLength",
+      "blobContentLength",
+      "options"
+    ],
+    "uploadPages": [
+      "contentLength",
+      "body",
+      "options"
+    ],
+    "clearPages": [
+      "contentLength",
+      "options"
+    ],
+    "uploadPagesFromURL": [
+      "sourceUrl",
+      "sourceRange",
+      "contentLength",
+      "range",
+      "options"
+    ],
+    "getPageRanges": [
+      "options"
+    ],
+    "getPageRangesDiff": [
+      "options"
+    ],
+    "resize": [
+      "blobContentLength",
+      "options"
+    ],
+    "updateSequenceNumber": [
+      "sequenceNumberAction",
+      "options"
+    ],
+    "copyIncremental": [
+      "copySource",
+      "options"
+    ]
+  },
+  "ServiceImpl": {
+    "client": [],
+    "constructor": [
+      "client"
+    ],
+    "setProperties": [
+      "blobServiceProperties",
+      "options"
+    ],
+    "getProperties": [
+      "options"
+    ],
+    "getStatistics": [
+      "options"
+    ],
+    "listContainersSegment": [
+      "options"
+    ],
+    "getUserDelegationKey": [
+      "keyInfo",
+      "options"
+    ],
+    "getAccountInfo": [
+      "options"
+    ],
+    "submitBatch": [
+      "contentLength",
+      "multipartContentType",
+      "body",
+      "options"
+    ],
+    "filterBlobs": [
+      "options"
+    ]
+  },
+  "AvroParser": {
+    "readFixedBytes": [
+      "stream",
+      "length",
+      "param"
+    ],
+    "readByte": [
+      "stream",
+      "param"
+    ],
+    "readZigZagLong": [
+      "stream",
+      "param"
+    ],
+    "readLong": [
+      "stream",
+      "param"
+    ],
+    "readInt": [
+      "stream",
+      "param"
+    ],
+    "readNull": [],
+    "readBoolean": [
+      "stream",
+      "param"
+    ],
+    "readFloat": [
+      "stream",
+      "param"
+    ],
+    "readDouble": [
+      "stream",
+      "param"
+    ],
+    "readBytes": [
+      "stream",
+      "param"
+    ],
+    "readString": [
+      "stream",
+      "param"
+    ],
+    "readMapPair": [
+      "stream",
+      "readItemMethod",
+      "param"
+    ],
+    "readMap": [
+      "stream",
+      "readItemMethod",
+      "param"
+    ],
+    "readArray": [
+      "stream",
+      "readItemMethod",
+      "param"
+    ]
+  },
+  "AvroType": {
+    "fromSchema": [
+      "schema"
+    ],
+    "fromStringSchema": [
+      "schema"
+    ],
+    "fromArraySchema": [
+      "schema"
+    ],
+    "fromObjectSchema": [
+      "schema"
+    ]
+  },
+  "readPairMethod": [
+    "s",
+    "param"
+  ],
+  "AvroPrimitiveType": {
+    "_primitive": [],
+    "constructor": [
+      "primitive"
+    ],
+    "read": [
+      "stream",
+      "param"
+    ]
+  },
+  "AvroEnumType": {
+    "_symbols": [],
+    "constructor": [
+      "symbols"
+    ],
+    "read": [
+      "stream",
+      "param"
+    ]
+  },
+  "AvroUnionType": {
+    "_types": [],
+    "constructor": [
+      "types"
+    ],
+    "read": [
+      "stream",
+      "param"
+    ]
+  },
+  "AvroMapType": {
+    "_itemType": [],
+    "constructor": [
+      "itemType"
+    ],
+    "read": [
+      "stream",
+      "param"
+    ]
+  },
+  "readItemMethod": [
+    "s",
+    "opts"
+  ],
+  "AvroRecordType": {
+    "_name": [],
+    "_fields": [],
+    "constructor": [
+      "fields",
+      "name"
+    ],
+    "read": [
+      "stream",
+      "param"
+    ]
+  },
+  "AvroReadable": {},
+  "AvroReadableFromBlob": {
+    "_position": [],
+    "_blob": [],
+    "constructor": [
+      "blob"
+    ],
+    "position": [],
+    "read": [
+      "size",
+      "param"
+    ]
+  },
+  "cleanUp": [],
+  "abortHandler": [],
+  "AvroReadableFromStream": {
+    "_position": [],
+    "_readable": [],
+    "toUint8Array": [
+      "data"
+    ],
+    "constructor": [
+      "readable"
+    ],
+    "position": [],
+    "read": [
+      "size",
+      "param"
+    ]
+  },
+  "readableCallback": [],
+  "rejectCallback": [],
+  "AvroReader": {
+    "_dataStream": [],
+    "_headerStream": [],
+    "_syncMarker": [],
+    "_metadata": [],
+    "_itemType": [],
+    "_itemsRemainingInBlock": [],
+    "_initialBlockOffset": [],
+    "_blockOffset": [],
+    "blockOffset": [],
+    "_objectIndex": [],
+    "objectIndex": [],
+    "_initialized": [],
+    "constructor": [
+      "dataStream",
+      "headerStream",
+      "currentBlockOffset",
+      "indexWithinCurrentBlock"
+    ],
+    "initialize": [
+      "param"
+    ],
+    "hasNext": [],
+    "parseObjects": [
+      "param"
+    ]
+  },
+  "arraysEqual": [
+    "a",
+    "b"
+  ],
+  "toAccessTier": [
+    "tier"
+  ],
+  "ensureCpkIfSpecified": [
+    "cpk",
+    "isHttps"
+  ],
+  "getBlobServiceAccountAudience": [
+    "storageAccountName"
+  ],
+  "BlobBeginCopyFromUrlPoller": {
+    "intervalInMs": [],
+    "constructor": [
+      "options"
+    ],
+    "delay": []
+  },
+  "cancel": [
+    "param"
+  ],
+  "update": [
+    "param"
+  ],
+  "toString": [],
+  "makeBlobBeginCopyFromURLPollOperation": [
+    "state"
+  ],
+  "AccountSASPermissions": {
+    "parse": [
+      "permissions"
+    ],
+    "from": [
+      "permissionLike"
+    ],
+    "read": [],
+    "write": [],
+    "delete": [],
+    "deleteVersion": [],
+    "list": [],
+    "add": [],
+    "create": [],
+    "update": [],
+    "process": [],
+    "tag": [],
+    "filter": [],
+    "setImmutabilityPolicy": [],
+    "permanentDelete": [],
+    "toString": []
+  },
+  "AccountSASResourceTypes": {
+    "parse": [
+      "resourceTypes"
+    ],
+    "service": [],
+    "container": [],
+    "object": [],
+    "toString": []
+  },
+  "AccountSASServices": {
+    "parse": [
+      "services"
+    ],
+    "blob": [],
+    "file": [],
+    "queue": [],
+    "table": [],
+    "toString": []
+  },
+  "generateAccountSASQueryParameters": [
+    "accountSASSignatureValues",
+    "sharedKeyCredential"
+  ],
+  "generateAccountSASQueryParametersInternal": [
+    "accountSASSignatureValues",
+    "sharedKeyCredential"
+  ],
+  "BlobSASPermissions": {
+    "parse": [
+      "permissions"
+    ],
+    "from": [
+      "permissionLike"
+    ],
+    "read": [],
+    "add": [],
+    "create": [],
+    "write": [],
+    "delete": [],
+    "deleteVersion": [],
+    "tag": [],
+    "move": [],
+    "execute": [],
+    "setImmutabilityPolicy": [],
+    "permanentDelete": [],
+    "toString": []
+  },
+  "generateBlobSASQueryParameters": [
+    "blobSASSignatureValues",
+    "sharedKeyCredentialOrUserDelegationKey",
+    "accountName"
+  ],
+  "generateBlobSASQueryParametersInternal": [
+    "blobSASSignatureValues",
+    "sharedKeyCredentialOrUserDelegationKey",
+    "accountName"
+  ],
+  "generateBlobSASQueryParameters20150405": [
+    "blobSASSignatureValues",
+    "sharedKeyCredential"
+  ],
+  "generateBlobSASQueryParameters20181109": [
+    "blobSASSignatureValues",
+    "sharedKeyCredential"
+  ],
+  "generateBlobSASQueryParameters20201206": [
+    "blobSASSignatureValues",
+    "sharedKeyCredential"
+  ],
+  "generateBlobSASQueryParametersUDK20181109": [
+    "blobSASSignatureValues",
+    "userDelegationKeyCredential"
+  ],
+  "generateBlobSASQueryParametersUDK20200210": [
+    "blobSASSignatureValues",
+    "userDelegationKeyCredential"
+  ],
+  "generateBlobSASQueryParametersUDK20201206": [
+    "blobSASSignatureValues",
+    "userDelegationKeyCredential"
+  ],
+  "generateBlobSASQueryParametersUDK20250705": [
+    "blobSASSignatureValues",
+    "userDelegationKeyCredential"
+  ],
+  "getCanonicalName": [
+    "accountName",
+    "containerName",
+    "blobName"
+  ],
+  "SASSignatureValuesSanityCheckAndAutofill": [
+    "blobSASSignatureValues"
+  ],
+  "ContainerSASPermissions": {
+    "parse": [
+      "permissions"
+    ],
+    "from": [
+      "permissionLike"
+    ],
+    "read": [],
+    "add": [],
+    "create": [],
+    "write": [],
+    "delete": [],
+    "deleteVersion": [],
+    "list": [],
+    "tag": [],
+    "move": [],
+    "execute": [],
+    "setImmutabilityPolicy": [],
+    "permanentDelete": [],
+    "filterByTags": [],
+    "toString": []
+  },
+  "SASQueryParameters": {
+    "version": [],
+    "protocol": [],
+    "startsOn": [],
+    "expiresOn": [],
+    "permissions": [],
+    "services": [],
+    "resourceTypes": [],
+    "identifier": [],
+    "delegatedUserObjectId": [],
+    "encryptionScope": [],
+    "resource": [],
+    "signature": [],
+    "cacheControl": [],
+    "contentDisposition": [],
+    "contentEncoding": [],
+    "contentLanguage": [],
+    "contentType": [],
+    "ipRangeInner": [],
+    "signedOid": [],
+    "signedTenantId": [],
+    "signedStartsOn": [],
+    "signedExpiresOn": [],
+    "signedService": [],
+    "signedVersion": [],
+    "preauthorizedAgentObjectId": [],
+    "correlationId": [],
+    "ipRange": [],
+    "constructor": [
+      "version",
+      "signature",
+      "permissionsOrOptions",
+      "services",
+      "resourceTypes",
+      "protocol",
+      "startsOn",
+      "expiresOn",
+      "ipRange",
+      "identifier",
+      "resource",
+      "cacheControl",
+      "contentDisposition",
+      "contentEncoding",
+      "contentLanguage",
+      "contentType",
+      "userDelegationKey",
+      "preauthorizedAgentObjectId",
+      "correlationId",
+      "encryptionScope",
+      "delegatedUserObjectId"
+    ],
+    "toString": [],
+    "tryAppendQueryParameter": [
+      "queries",
+      "key",
+      "value"
+    ]
+  },
+  "ipRangeToString": [
+    "ipRange"
+  ],
+  "Batch": {
+    "concurrency": [],
+    "actives": [],
+    "completed": [],
+    "offset": [],
+    "operations": [],
+    "state": [],
+    "emitter": [],
+    "constructor": [
+      "param"
+    ],
+    "addOperation": [
+      "operation"
+    ],
+    "do": [],
+    "nextOperation": [],
+    "parallelExecute": []
+  },
+  "BlobQuickQueryStream": {
+    "source": [],
+    "avroReader": [],
+    "avroIter": [],
+    "avroPaused": [],
+    "onProgress": [],
+    "onError": [],
+    "constructor": [
+      "source",
+      "param"
+    ],
+    "_read": [],
+    "readInternal": []
+  },
+  "Mutex": {
+    "lock": [
+      "key"
+    ],
+    "unlock": [
+      "key"
+    ],
+    "keys": [],
+    "listeners": [],
+    "onUnlockEvent": [
+      "key",
+      "handler"
+    ],
+    "emitUnlockEvent": [
+      "key"
+    ]
+  },
+  "RetriableReadableStream": {
+    "start": [],
+    "offset": [],
+    "end": [],
+    "getter": [],
+    "source": [],
+    "retries": [],
+    "maxRetryRequests": [],
+    "onProgress": [],
+    "options": [],
+    "constructor": [
+      "source",
+      "getter",
+      "offset",
+      "count",
+      "param"
+    ],
+    "_read": [],
+    "setSourceEventHandlers": [],
+    "removeSourceEventHandlers": [],
+    "sourceDataHandler": [],
+    "sourceAbortedHandler": [],
+    "sourceErrorOrEndHandler": [],
+    "_destroy": [
+      "error",
+      "callback"
+    ]
+  },
+  "compareHeader": [
+    "lhs",
+    "rhs"
+  ],
+  "isLessThan": [
+    "lhs",
+    "rhs"
+  ],
+  "escapeURLPath": [
+    "url"
+  ],
+  "getProxyUriFromDevConnString": [
+    "connectionString"
+  ],
+  "getValueInConnString": [
+    "connectionString",
+    "argument"
+  ],
+  "extractConnectionStringParts": [
+    "connectionString"
+  ],
+  "escape": [
+    "text"
+  ],
+  "appendToURLPath": [
+    "url",
+    "name"
+  ],
+  "setURLParameter": [
+    "url",
+    "name",
+    "value"
+  ],
+  "getURLParameter": [
+    "url",
+    "name"
+  ],
+  "setURLHost": [
+    "url",
+    "host"
+  ],
+  "getURLPath": [
+    "url"
+  ],
+  "getURLScheme": [
+    "url"
+  ],
+  "getURLPathAndQuery": [
+    "url"
+  ],
+  "getURLQueries": [
+    "url"
+  ],
+  "appendToURLQuery": [
+    "url",
+    "queryParts"
+  ],
+  "truncatedISO8061Date": [
+    "date",
+    "param"
+  ],
+  "base64encode": [
+    "content"
+  ],
+  "base64decode": [
+    "encodedString"
+  ],
+  "generateBlockID": [
+    "blockIDPrefix",
+    "blockIndex"
+  ],
+  "delay": [
+    "timeInMs",
+    "aborter",
+    "abortError"
+  ],
+  "resolveHandler": [],
+  "padStart": [
+    "currentString",
+    "targetLength",
+    "param"
+  ],
+  "sanitizeURL": [
+    "url"
+  ],
+  "sanitizeHeaders": [
+    "originalHeader"
+  ],
+  "iEqual": [
+    "str1",
+    "str2"
+  ],
+  "getAccountNameFromUrl": [
+    "url"
+  ],
+  "isIpEndpointStyle": [
+    "parsedUrl"
+  ],
+  "toBlobTagsString": [
+    "tags"
+  ],
+  "toBlobTags": [
+    "tags"
+  ],
+  "toTags": [
+    "tags"
+  ],
+  "toQuerySerialization": [
+    "textConfiguration"
+  ],
+  "parseObjectReplicationRecord": [
+    "objectReplicationRecord"
+  ],
+  "attachCredential": [
+    "thing",
+    "credential"
+  ],
+  "httpAuthorizationToString": [
+    "httpAuthorization"
+  ],
+  "BlobNameToString": [
+    "name"
+  ],
+  "ConvertInternalResponseOfListBlobFlat": [
+    "internalResponse"
+  ],
+  "ConvertInternalResponseOfListBlobHierarchy": [
+    "internalResponse"
+  ],
+  "ExtractPageRangeInfoItems": [
+    "getPageRangesSegment"
+  ],
+  "EscapePath": [
+    "blobName"
+  ],
+  "assertResponse": [
+    "response"
+  ],
+  "blobToArrayBuffer": [
+    "blob"
+  ],
+  "blobToString": [
+    "blob"
+  ],
+  "streamToBuffer": [],
+  "streamToBuffer2": [],
+  "readStreamToLocalFile": [],
+  "fsStat": [],
+  "fsCreateReadStream": [],
+  "BlobDownloadResponse": {
+    "acceptRanges": [],
+    "cacheControl": [],
+    "contentDisposition": [],
+    "contentEncoding": [],
+    "contentLanguage": [],
+    "blobSequenceNumber": [],
+    "blobType": [],
+    "contentLength": [],
+    "contentMD5": [],
+    "contentRange": [],
+    "contentType": [],
+    "copyCompletedOn": [],
+    "copyId": [],
+    "copyProgress": [],
+    "copySource": [],
+    "copyStatus": [],
+    "copyStatusDescription": [],
+    "leaseDuration": [],
+    "leaseState": [],
+    "leaseStatus": [],
+    "date": [],
+    "blobCommittedBlockCount": [],
+    "etag": [],
+    "tagCount": [],
+    "errorCode": [],
+    "isServerEncrypted": [],
+    "blobContentMD5": [],
+    "lastModified": [],
+    "lastAccessed": [],
+    "createdOn": [],
+    "metadata": [],
+    "requestId": [],
+    "clientRequestId": [],
+    "version": [],
+    "versionId": [],
+    "isCurrentVersion": [],
+    "encryptionKeySha256": [],
+    "contentCrc64": [],
+    "objectReplicationDestinationPolicyId": [],
+    "objectReplicationSourceProperties": [],
+    "isSealed": [],
+    "immutabilityPolicyExpiresOn": [],
+    "immutabilityPolicyMode": [],
+    "legalHold": [],
+    "contentAsBlob": [],
+    "readableStreamBody": [],
+    "_response": [],
+    "originalResponse": [],
+    "blobDownloadStream": [],
+    "constructor": [
+      "originalResponse",
+      "getter",
+      "offset",
+      "count",
+      "param"
+    ]
+  },
+  "streamToBuffer3": [
+    "readableStream",
+    "encoding"
+  ]
+}

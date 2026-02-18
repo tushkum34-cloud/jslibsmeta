@@ -1,0 +1,1022 @@
+{
+  "Text": {
+    "lineAt": [
+      "pos"
+    ],
+    "line": [
+      "n"
+    ],
+    "replace": [
+      "from",
+      "to",
+      "text"
+    ],
+    "append": [
+      "other"
+    ],
+    "slice": [
+      "from",
+      "param"
+    ],
+    "eq": [
+      "other"
+    ],
+    "iter": [
+      "param"
+    ],
+    "iterRange": [
+      "from",
+      "param"
+    ],
+    "iterLines": [
+      "from",
+      "to"
+    ],
+    "toString": [],
+    "toJSON": [],
+    "constructor": [],
+    "of": [
+      "text"
+    ]
+  },
+  "Line": {
+    "constructor": [
+      "from",
+      "to",
+      "number",
+      "text"
+    ],
+    "length": []
+  },
+  "ChangeDesc": {
+    "constructor": [
+      "sections"
+    ],
+    "length": [],
+    "newLength": [],
+    "empty": [],
+    "iterGaps": [
+      "f"
+    ],
+    "iterChangedRanges": [
+      "f",
+      "param"
+    ],
+    "invertedDesc": [],
+    "composeDesc": [
+      "other"
+    ],
+    "mapDesc": [
+      "other",
+      "param"
+    ],
+    "mapPos": [
+      "pos",
+      "param",
+      "param"
+    ],
+    "touchesRange": [
+      "from",
+      "param"
+    ],
+    "toString": [],
+    "toJSON": [],
+    "fromJSON": [
+      "json"
+    ],
+    "create": [
+      "sections"
+    ]
+  },
+  "ChangeSet": {
+    "constructor": [
+      "sections",
+      "inserted"
+    ],
+    "apply": [
+      "doc"
+    ],
+    "mapDesc": [
+      "other",
+      "param"
+    ],
+    "invert": [
+      "doc"
+    ],
+    "compose": [
+      "other"
+    ],
+    "map": [
+      "other",
+      "param"
+    ],
+    "iterChanges": [
+      "f",
+      "param"
+    ],
+    "desc": [],
+    "filter": [
+      "ranges"
+    ],
+    "toJSON": [],
+    "of": [
+      "changes",
+      "length",
+      "lineSep"
+    ],
+    "empty": [
+      "length"
+    ],
+    "fromJSON": [
+      "json"
+    ],
+    "createSet": [
+      "sections",
+      "inserted"
+    ]
+  },
+  "SelectionRange": {
+    "constructor": [
+      "from",
+      "to",
+      "flags"
+    ],
+    "anchor": [],
+    "head": [],
+    "empty": [],
+    "assoc": [],
+    "bidiLevel": [],
+    "goalColumn": [],
+    "map": [
+      "change",
+      "param"
+    ],
+    "extend": [
+      "from",
+      "param"
+    ],
+    "eq": [
+      "other",
+      "param"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "json"
+    ],
+    "create": [
+      "from",
+      "to",
+      "flags"
+    ]
+  },
+  "EditorSelection": {
+    "constructor": [
+      "ranges",
+      "mainIndex"
+    ],
+    "map": [
+      "change",
+      "param"
+    ],
+    "eq": [
+      "other",
+      "param"
+    ],
+    "main": [],
+    "asSingle": [],
+    "addRange": [
+      "range",
+      "param"
+    ],
+    "replaceRange": [
+      "range",
+      "param"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "json"
+    ],
+    "single": [
+      "anchor",
+      "param"
+    ],
+    "create": [
+      "ranges",
+      "param"
+    ],
+    "cursor": [
+      "pos",
+      "param",
+      "bidiLevel",
+      "goalColumn"
+    ],
+    "range": [
+      "anchor",
+      "head",
+      "goalColumn",
+      "bidiLevel"
+    ],
+    "normalized": [
+      "ranges",
+      "param"
+    ]
+  },
+  "Facet": {
+    "constructor": [
+      "combine",
+      "compareInput",
+      "compare",
+      "isStatic",
+      "enables"
+    ],
+    "reader": [],
+    "define": [
+      "param"
+    ],
+    "of": [
+      "value"
+    ],
+    "compute": [
+      "deps",
+      "get"
+    ],
+    "computeN": [
+      "deps",
+      "get"
+    ],
+    "from": [
+      "field",
+      "get"
+    ]
+  },
+  "StateField": {
+    "constructor": [
+      "id",
+      "createF",
+      "updateF",
+      "compareF",
+      "spec"
+    ],
+    "define": [
+      "config"
+    ],
+    "create": [
+      "state"
+    ],
+    "slot": [
+      "addresses"
+    ],
+    "init": [
+      "create"
+    ],
+    "extension": []
+  },
+  "Compartment": {
+    "of": [
+      "ext"
+    ],
+    "reconfigure": [
+      "content"
+    ],
+    "get": [
+      "state"
+    ]
+  },
+  "Annotation": {
+    "constructor": [
+      "type",
+      "value"
+    ],
+    "define": []
+  },
+  "AnnotationType": {
+    "of": [
+      "value"
+    ]
+  },
+  "StateEffectType": {
+    "constructor": [
+      "map"
+    ],
+    "of": [
+      "value"
+    ]
+  },
+  "StateEffect": {
+    "constructor": [
+      "type",
+      "value"
+    ],
+    "map": [
+      "mapping"
+    ],
+    "is": [
+      "type"
+    ],
+    "define": [
+      "param"
+    ],
+    "mapEffects": [
+      "effects",
+      "mapping"
+    ]
+  },
+  "Transaction": {
+    "constructor": [
+      "startState",
+      "changes",
+      "selection",
+      "effects",
+      "annotations",
+      "scrollIntoView"
+    ],
+    "create": [
+      "startState",
+      "changes",
+      "selection",
+      "effects",
+      "annotations",
+      "scrollIntoView"
+    ],
+    "newDoc": [],
+    "newSelection": [],
+    "state": [],
+    "annotation": [
+      "type"
+    ],
+    "docChanged": [],
+    "reconfigured": [],
+    "isUserEvent": [
+      "event"
+    ]
+  },
+  "EditorState": {
+    "constructor": [
+      "config",
+      "doc",
+      "selection",
+      "values",
+      "computeSlot",
+      "tr"
+    ],
+    "field": [
+      "field",
+      "param"
+    ],
+    "update": [
+      "param"
+    ],
+    "applyTransaction": [
+      "tr"
+    ],
+    "replaceSelection": [
+      "text"
+    ],
+    "changeByRange": [
+      "f"
+    ],
+    "changes": [
+      "param"
+    ],
+    "toText": [
+      "string"
+    ],
+    "sliceDoc": [
+      "param",
+      "param"
+    ],
+    "facet": [
+      "facet"
+    ],
+    "toJSON": [
+      "fields"
+    ],
+    "fromJSON": [
+      "json",
+      "param",
+      "fields"
+    ],
+    "create": [
+      "param"
+    ],
+    "tabSize": [],
+    "lineBreak": [],
+    "readOnly": [],
+    "phrase": [
+      "phrase",
+      "param"
+    ],
+    "languageDataAt": [
+      "name",
+      "pos",
+      "param"
+    ],
+    "charCategorizer": [
+      "at"
+    ],
+    "wordAt": [
+      "pos"
+    ]
+  },
+  "RangeValue": {
+    "eq": [
+      "other"
+    ],
+    "range": [
+      "from",
+      "param"
+    ]
+  },
+  "Range": {
+    "constructor": [
+      "from",
+      "to",
+      "value"
+    ],
+    "create": [
+      "from",
+      "to",
+      "value"
+    ]
+  },
+  "RangeSet": {
+    "constructor": [
+      "chunkPos",
+      "chunk",
+      "nextLayer",
+      "maxPoint"
+    ],
+    "create": [
+      "chunkPos",
+      "chunk",
+      "nextLayer",
+      "maxPoint"
+    ],
+    "length": [],
+    "size": [],
+    "chunkEnd": [
+      "index"
+    ],
+    "update": [
+      "updateSpec"
+    ],
+    "map": [
+      "changes"
+    ],
+    "between": [
+      "from",
+      "to",
+      "f"
+    ],
+    "iter": [
+      "sets",
+      "param"
+    ],
+    "isEmpty": [],
+    "compare": [
+      "oldSets",
+      "newSets",
+      "textDiff",
+      "comparator",
+      "param"
+    ],
+    "eq": [
+      "oldSets",
+      "newSets",
+      "param",
+      "to"
+    ],
+    "spans": [
+      "sets",
+      "from",
+      "to",
+      "iterator",
+      "param"
+    ],
+    "of": [
+      "ranges",
+      "param"
+    ],
+    "join": [
+      "sets"
+    ]
+  },
+  "RangeSetBuilder": {
+    "finishChunk": [
+      "newArrays"
+    ],
+    "constructor": [],
+    "add": [
+      "from",
+      "to",
+      "value"
+    ],
+    "addInner": [
+      "from",
+      "to",
+      "value"
+    ],
+    "addChunk": [
+      "from",
+      "chunk"
+    ],
+    "finish": [],
+    "finishInner": [
+      "next"
+    ]
+  },
+  "TextLeaf": {
+    "constructor": [
+      "text",
+      "param"
+    ],
+    "lines": [],
+    "children": [],
+    "lineInner": [
+      "target",
+      "isLine",
+      "line",
+      "offset"
+    ],
+    "decompose": [
+      "from",
+      "to",
+      "target",
+      "open"
+    ],
+    "replace": [
+      "from",
+      "to",
+      "text"
+    ],
+    "sliceString": [
+      "from",
+      "param",
+      "param"
+    ],
+    "flatten": [
+      "target"
+    ],
+    "scanIdentical": [],
+    "split": [
+      "text",
+      "target"
+    ]
+  },
+  "TextNode": {
+    "constructor": [
+      "children",
+      "length"
+    ],
+    "lineInner": [
+      "target",
+      "isLine",
+      "line",
+      "offset"
+    ],
+    "decompose": [
+      "from",
+      "to",
+      "target",
+      "open"
+    ],
+    "replace": [
+      "from",
+      "to",
+      "text"
+    ],
+    "sliceString": [
+      "from",
+      "param",
+      "param"
+    ],
+    "flatten": [
+      "target"
+    ],
+    "scanIdentical": [
+      "other",
+      "dir"
+    ],
+    "from": [
+      "children",
+      "param"
+    ]
+  },
+  "add": [
+    "child"
+  ],
+  "flush": [
+    "param"
+  ],
+  "textLength": [
+    "text"
+  ],
+  "appendText": [
+    "text",
+    "target",
+    "param",
+    "param"
+  ],
+  "sliceText": [
+    "text",
+    "from",
+    "to"
+  ],
+  "RawTextCursor": {
+    "constructor": [
+      "text",
+      "param"
+    ],
+    "nextInner": [
+      "skip",
+      "dir"
+    ],
+    "next": [
+      "param"
+    ]
+  },
+  "PartialTextCursor": {
+    "constructor": [
+      "text",
+      "start",
+      "end"
+    ],
+    "nextInner": [
+      "skip",
+      "dir"
+    ],
+    "next": [
+      "param"
+    ],
+    "lineBreak": []
+  },
+  "LineCursor": {
+    "constructor": [
+      "inner"
+    ],
+    "next": [
+      "param"
+    ],
+    "lineBreak": []
+  },
+  "clip": [
+    "text",
+    "from",
+    "to"
+  ],
+  "findClusterBreak": [
+    "str",
+    "pos",
+    "param",
+    "param"
+  ],
+  "surrogateLow": [
+    "ch"
+  ],
+  "surrogateHigh": [
+    "ch"
+  ],
+  "codePointAt": [
+    "str",
+    "pos"
+  ],
+  "fromCodePoint": [
+    "code"
+  ],
+  "codePointSize": [
+    "code"
+  ],
+  "process": [
+    "spec"
+  ],
+  "addSection": [
+    "sections",
+    "len",
+    "ins",
+    "param"
+  ],
+  "addInsert": [
+    "values",
+    "sections",
+    "value"
+  ],
+  "iterChanges": [
+    "desc",
+    "f",
+    "individual"
+  ],
+  "mapSet": [
+    "setA",
+    "setB",
+    "before",
+    "param"
+  ],
+  "composeSets": [
+    "setA",
+    "setB",
+    "param"
+  ],
+  "SectionIter": {
+    "constructor": [
+      "set"
+    ],
+    "next": [],
+    "done": [],
+    "len2": [],
+    "text": [],
+    "textBit": [
+      "len"
+    ],
+    "forward": [
+      "len"
+    ],
+    "forward2": [
+      "len"
+    ]
+  },
+  "checkSelection": [
+    "selection",
+    "docLength"
+  ],
+  "sameArray": [
+    "a",
+    "b"
+  ],
+  "FacetProvider": {
+    "constructor": [
+      "dependencies",
+      "facet",
+      "type",
+      "value"
+    ],
+    "dynamicSlot": [
+      "addresses"
+    ]
+  },
+  "compareArray": [
+    "a",
+    "b",
+    "compare"
+  ],
+  "ensureAll": [
+    "state",
+    "addrs"
+  ],
+  "dynamicFacetSlot": [
+    "addresses",
+    "facet",
+    "providers"
+  ],
+  "get": [
+    "state"
+  ],
+  "prec": [
+    "value"
+  ],
+  "PrecExtension": {
+    "constructor": [
+      "inner",
+      "prec"
+    ]
+  },
+  "CompartmentInstance": {
+    "constructor": [
+      "compartment",
+      "inner"
+    ]
+  },
+  "Configuration": {
+    "constructor": [
+      "base",
+      "compartments",
+      "dynamicSlots",
+      "address",
+      "staticValues",
+      "facets"
+    ],
+    "staticFacet": [
+      "facet"
+    ],
+    "resolve": [
+      "base",
+      "compartments",
+      "oldState"
+    ]
+  },
+  "flatten": [
+    "extension",
+    "compartments",
+    "newCompartments"
+  ],
+  "inner": [
+    "ext",
+    "prec"
+  ],
+  "ensureAddr": [
+    "state",
+    "addr"
+  ],
+  "getAddr": [
+    "state",
+    "addr"
+  ],
+  "joinRanges": [
+    "a",
+    "b"
+  ],
+  "mergeTransaction": [
+    "a",
+    "b",
+    "sequential"
+  ],
+  "resolveTransactionInner": [
+    "state",
+    "spec",
+    "docSize"
+  ],
+  "resolveTransaction": [
+    "state",
+    "specs",
+    "filter"
+  ],
+  "filterTransaction": [
+    "tr"
+  ],
+  "extendTransaction": [
+    "tr"
+  ],
+  "asArray": [
+    "value"
+  ],
+  "hasWordChar": [
+    "str"
+  ],
+  "makeCategorizer": [
+    "wordChars"
+  ],
+  "combineConfig": [
+    "configs",
+    "defaults",
+    "param"
+  ],
+  "cmpVal": [
+    "a",
+    "b"
+  ],
+  "cmpRange": [
+    "a",
+    "b"
+  ],
+  "Chunk": {
+    "constructor": [
+      "from",
+      "to",
+      "value",
+      "maxPoint"
+    ],
+    "length": [],
+    "findIndex": [
+      "pos",
+      "side",
+      "end",
+      "param"
+    ],
+    "between": [
+      "offset",
+      "from",
+      "to",
+      "f"
+    ],
+    "map": [
+      "offset",
+      "changes"
+    ]
+  },
+  "lazySort": [
+    "ranges"
+  ],
+  "findSharedChunks": [
+    "a",
+    "b",
+    "textDiff"
+  ],
+  "LayerCursor": {
+    "constructor": [
+      "layer",
+      "skip",
+      "minPoint",
+      "param"
+    ],
+    "startSide": [],
+    "endSide": [],
+    "goto": [
+      "pos",
+      "param"
+    ],
+    "gotoInner": [
+      "pos",
+      "side",
+      "forward"
+    ],
+    "forward": [
+      "pos",
+      "side"
+    ],
+    "next": [],
+    "setRangeIndex": [
+      "index"
+    ],
+    "nextChunk": [],
+    "compare": [
+      "other"
+    ]
+  },
+  "HeapCursor": {
+    "constructor": [
+      "heap"
+    ],
+    "from": [
+      "sets",
+      "param",
+      "param"
+    ],
+    "startSide": [],
+    "goto": [
+      "pos",
+      "param"
+    ],
+    "forward": [
+      "pos",
+      "side"
+    ],
+    "next": []
+  },
+  "heapBubble": [
+    "heap",
+    "index"
+  ],
+  "SpanCursor": {
+    "constructor": [
+      "sets",
+      "skip",
+      "minPoint"
+    ],
+    "goto": [
+      "pos",
+      "param"
+    ],
+    "forward": [
+      "pos",
+      "side"
+    ],
+    "removeActive": [
+      "index"
+    ],
+    "addActive": [
+      "trackOpen"
+    ],
+    "next": [],
+    "activeForPoint": [
+      "to"
+    ],
+    "openEnd": [
+      "to"
+    ]
+  },
+  "compare": [
+    "a",
+    "startA",
+    "b",
+    "startB",
+    "length",
+    "comparator"
+  ],
+  "sameValues": [
+    "a",
+    "b"
+  ],
+  "remove": [
+    "array",
+    "index"
+  ],
+  "insert": [
+    "array",
+    "index",
+    "value"
+  ],
+  "findMinIndex": [
+    "value",
+    "array"
+  ],
+  "countColumn": [
+    "string",
+    "tabSize",
+    "param"
+  ],
+  "findColumn": [
+    "string",
+    "col",
+    "tabSize",
+    "strict"
+  ]
+}

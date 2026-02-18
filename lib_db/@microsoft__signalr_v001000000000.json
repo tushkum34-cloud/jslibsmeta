@@ -1,0 +1,1372 @@
+{
+  "HttpError": {
+    "statusCode": [],
+    "constructor": [
+      "errorMessage",
+      "statusCode"
+    ]
+  },
+  "TimeoutError": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "AbortError": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "UnsupportedTransportError": {
+    "transport": [],
+    "errorType": [],
+    "constructor": [
+      "message",
+      "transport"
+    ]
+  },
+  "DisabledTransportError": {
+    "transport": [],
+    "errorType": [],
+    "constructor": [
+      "message",
+      "transport"
+    ]
+  },
+  "FailedToStartTransportError": {
+    "transport": [],
+    "errorType": [],
+    "constructor": [
+      "message",
+      "transport"
+    ]
+  },
+  "FailedToNegotiateWithServerError": {
+    "errorType": [],
+    "constructor": [
+      "message"
+    ]
+  },
+  "AggregateErrors": {
+    "innerErrors": [],
+    "constructor": [
+      "message",
+      "innerErrors"
+    ]
+  },
+  "HttpResponse": {
+    "constructor": [
+      "param",
+      "param",
+      "param"
+    ]
+  },
+  "HttpClient": {
+    "get": [
+      "url",
+      "options"
+    ],
+    "post": [
+      "url",
+      "options"
+    ],
+    "delete": [
+      "url",
+      "options"
+    ],
+    "send": [
+      "request"
+    ],
+    "getCookieString": [
+      "url"
+    ]
+  },
+  "NullLogger": {
+    "instance": [],
+    "constructor": [],
+    "log": [
+      "_logLevel",
+      "_message"
+    ]
+  },
+  "Arg": {
+    "isRequired": [
+      "val",
+      "name"
+    ],
+    "isNotEmpty": [
+      "val",
+      "name"
+    ],
+    "isIn": [
+      "val",
+      "values",
+      "name"
+    ]
+  },
+  "Platform": {
+    "isBrowser": [],
+    "isWebWorker": [],
+    "isReactNative": [],
+    "isNode": []
+  },
+  "getDataDetail": [
+    "data",
+    "includeContent"
+  ],
+  "formatArrayBuffer": [
+    "data"
+  ],
+  "isArrayBuffer": [
+    "val"
+  ],
+  "sendMessage": [
+    "logger",
+    "transportName",
+    "httpClient",
+    "url",
+    "content",
+    "options"
+  ],
+  "createLogger": [
+    "logger"
+  ],
+  "SubjectSubscription": {
+    "_subject": [],
+    "_observer": [],
+    "constructor": [
+      "subject",
+      "observer"
+    ],
+    "dispose": []
+  },
+  "ConsoleLogger": {
+    "_minLevel": [],
+    "out": [],
+    "constructor": [
+      "minimumLogLevel"
+    ],
+    "log": [
+      "logLevel",
+      "message"
+    ]
+  },
+  "getUserAgentHeader": [],
+  "constructUserAgent": [
+    "version",
+    "os",
+    "runtime",
+    "runtimeVersion"
+  ],
+  "getOsName": [],
+  "getRuntimeVersion": [],
+  "getRuntime": [],
+  "getErrorString": [
+    "e"
+  ],
+  "getGlobalThis": [],
+  "FetchHttpClient": {
+    "_abortControllerType": [],
+    "_fetchType": [],
+    "_jar": [],
+    "_logger": [],
+    "constructor": [
+      "logger"
+    ],
+    "send": [
+      "request"
+    ],
+    "getCookieString": [
+      "url"
+    ]
+  },
+  "deserializeContent": [
+    "response",
+    "responseType"
+  ],
+  "XhrHttpClient": {
+    "_logger": [],
+    "constructor": [
+      "logger"
+    ],
+    "send": [
+      "request"
+    ]
+  },
+  "DefaultHttpClient": {
+    "_httpClient": [],
+    "constructor": [
+      "logger"
+    ],
+    "send": [
+      "request"
+    ],
+    "getCookieString": [
+      "url"
+    ]
+  },
+  "TextMessageFormat": {
+    "RecordSeparatorCode": [],
+    "RecordSeparator": [],
+    "write": [
+      "output"
+    ],
+    "parse": [
+      "input"
+    ]
+  },
+  "HandshakeProtocol": {
+    "writeHandshakeRequest": [
+      "handshakeRequest"
+    ],
+    "parseHandshakeResponse": [
+      "data"
+    ]
+  },
+  "Subject": {
+    "observers": [],
+    "cancelCallback": [],
+    "constructor": [],
+    "next": [
+      "item"
+    ],
+    "error": [
+      "err"
+    ],
+    "complete": [],
+    "subscribe": [
+      "observer"
+    ]
+  },
+  "MessageBuffer": {
+    "_protocol": [],
+    "_connection": [],
+    "_bufferSize": [],
+    "_messages": [],
+    "_totalMessageCount": [],
+    "_waitForSequenceMessage": [],
+    "_nextReceivingSequenceId": [],
+    "_latestReceivedSequenceId": [],
+    "_bufferedByteCount": [],
+    "_reconnectInProgress": [],
+    "_ackTimerHandle": [],
+    "constructor": [
+      "protocol",
+      "connection",
+      "bufferSize"
+    ],
+    "_send": [
+      "message"
+    ],
+    "_ack": [
+      "ackMessage"
+    ],
+    "_shouldProcessMessage": [
+      "message"
+    ],
+    "_resetSequence": [
+      "message"
+    ],
+    "_disconnected": [],
+    "_resend": [],
+    "_dispose": [
+      "error"
+    ],
+    "_isInvocationMessage": [
+      "message"
+    ],
+    "_ackTimer": []
+  },
+  "backpressurePromiseResolver": [],
+  "backpressurePromiseRejector": [],
+  "BufferedItem": {
+    "constructor": [
+      "message",
+      "id",
+      "resolver",
+      "rejector"
+    ],
+    "_message": [],
+    "_id": [],
+    "_resolver": [],
+    "_rejector": []
+  },
+  "HubConnection": {
+    "_cachedPingMessage": [],
+    "connection": [],
+    "_logger": [],
+    "_reconnectPolicy": [],
+    "_statefulReconnectBufferSize": [],
+    "_protocol": [],
+    "_handshakeProtocol": [],
+    "_callbacks": [],
+    "_methods": [],
+    "_invocationId": [],
+    "_messageBuffer": [],
+    "_closedCallbacks": [],
+    "_reconnectingCallbacks": [],
+    "_reconnectedCallbacks": [],
+    "_receivedHandshakeResponse": [],
+    "_handshakeResolver": [],
+    "_handshakeRejecter": [],
+    "_stopDuringStartError": [],
+    "_connectionState": [],
+    "_connectionStarted": [],
+    "_startPromise": [],
+    "_stopPromise": [],
+    "_nextKeepAlive": [],
+    "_reconnectDelayHandle": [],
+    "_timeoutHandle": [],
+    "_pingServerHandle": [],
+    "_freezeEventListener": [],
+    "serverTimeoutInMilliseconds": [],
+    "keepAliveIntervalInMilliseconds": [],
+    "create": [
+      "connection",
+      "logger",
+      "protocol",
+      "reconnectPolicy",
+      "serverTimeoutInMilliseconds",
+      "keepAliveIntervalInMilliseconds",
+      "statefulReconnectBufferSize"
+    ],
+    "constructor": [
+      "connection",
+      "logger",
+      "protocol",
+      "reconnectPolicy",
+      "serverTimeoutInMilliseconds",
+      "keepAliveIntervalInMilliseconds",
+      "statefulReconnectBufferSize"
+    ],
+    "state": [],
+    "connectionId": [],
+    "baseUrl": [
+      "url"
+    ],
+    "start": [],
+    "_startWithStateTransitions": [],
+    "_startInternal": [],
+    "stop": [],
+    "_stopInternal": [
+      "error"
+    ],
+    "_sendCloseMessage": [],
+    "stream": [
+      "methodName",
+      "param"
+    ],
+    "_sendMessage": [
+      "message"
+    ],
+    "_sendWithProtocol": [
+      "message"
+    ],
+    "send": [
+      "methodName",
+      "param"
+    ],
+    "invoke": [
+      "methodName",
+      "param"
+    ],
+    "on": [
+      "methodName",
+      "newMethod"
+    ],
+    "off": [
+      "methodName",
+      "method"
+    ],
+    "onclose": [
+      "callback"
+    ],
+    "onreconnecting": [
+      "callback"
+    ],
+    "onreconnected": [
+      "callback"
+    ],
+    "_processIncomingData": [
+      "data"
+    ],
+    "_processHandshakeResponse": [
+      "data"
+    ],
+    "_resetKeepAliveInterval": [],
+    "_resetTimeoutPeriod": [],
+    "serverTimeout": [],
+    "_invokeClientMethod": [
+      "invocationMessage"
+    ],
+    "_connectionClosed": [
+      "error"
+    ],
+    "_completeClose": [
+      "error"
+    ],
+    "_reconnect": [
+      "error"
+    ],
+    "_getNextRetryDelay": [
+      "previousRetryCount",
+      "elapsedMilliseconds",
+      "retryReason"
+    ],
+    "_cancelCallbacksWithError": [
+      "error"
+    ],
+    "_cleanupPingTimer": [],
+    "_cleanupTimeout": [],
+    "_createInvocation": [
+      "methodName",
+      "args",
+      "nonblocking",
+      "streamIds"
+    ],
+    "_launchStreams": [
+      "streams",
+      "promiseQueue"
+    ],
+    "_replaceStreamingParams": [
+      "args"
+    ],
+    "_isObservable": [
+      "arg"
+    ],
+    "_createStreamInvocation": [
+      "methodName",
+      "args",
+      "streamIds"
+    ],
+    "_createCancelInvocation": [
+      "id"
+    ],
+    "_createStreamItemMessage": [
+      "id",
+      "item"
+    ],
+    "_createCompletionMessage": [
+      "id",
+      "error",
+      "result"
+    ],
+    "_createCloseMessage": [],
+    "_trySendPingMessage": []
+  },
+  "DefaultReconnectPolicy": {
+    "_retryDelays": [],
+    "constructor": [
+      "retryDelays"
+    ],
+    "nextRetryDelayInMilliseconds": [
+      "retryContext"
+    ]
+  },
+  "HeaderNames": {
+    "Authorization": [],
+    "Cookie": []
+  },
+  "AccessTokenHttpClient": {
+    "_innerClient": [],
+    "_accessToken": [],
+    "_accessTokenFactory": [],
+    "constructor": [
+      "innerClient",
+      "accessTokenFactory"
+    ],
+    "send": [
+      "request"
+    ],
+    "_setAuthorizationHeader": [
+      "request"
+    ],
+    "getCookieString": [
+      "url"
+    ]
+  },
+  "AbortController_AbortController": {
+    "constructor": [],
+    "abort": [],
+    "signal": [],
+    "aborted": []
+  },
+  "LongPollingTransport": {
+    "_httpClient": [],
+    "_logger": [],
+    "_options": [],
+    "_pollAbort": [],
+    "_url": [],
+    "_running": [],
+    "_receiving": [],
+    "_closeError": [],
+    "onreceive": [],
+    "onclose": [],
+    "pollAborted": [],
+    "constructor": [
+      "httpClient",
+      "logger",
+      "options"
+    ],
+    "connect": [
+      "url",
+      "transferFormat"
+    ],
+    "_poll": [
+      "url",
+      "pollOptions"
+    ],
+    "send": [
+      "data"
+    ],
+    "stop": [],
+    "_raiseOnClose": []
+  },
+  "ServerSentEventsTransport": {
+    "_httpClient": [],
+    "_accessToken": [],
+    "_logger": [],
+    "_options": [],
+    "_eventSource": [],
+    "_url": [],
+    "onreceive": [],
+    "onclose": [],
+    "constructor": [
+      "httpClient",
+      "accessToken",
+      "logger",
+      "options"
+    ],
+    "connect": [
+      "url",
+      "transferFormat"
+    ],
+    "send": [
+      "data"
+    ],
+    "stop": [],
+    "_close": [
+      "e"
+    ]
+  },
+  "WebSocketTransport": {
+    "_logger": [],
+    "_accessTokenFactory": [],
+    "_logMessageContent": [],
+    "_webSocketConstructor": [],
+    "_httpClient": [],
+    "_webSocket": [],
+    "_headers": [],
+    "onreceive": [],
+    "onclose": [],
+    "constructor": [
+      "httpClient",
+      "accessTokenFactory",
+      "logger",
+      "logMessageContent",
+      "webSocketConstructor",
+      "headers"
+    ],
+    "connect": [
+      "url",
+      "transferFormat"
+    ],
+    "send": [
+      "data"
+    ],
+    "stop": [],
+    "_close": [
+      "event"
+    ],
+    "_isCloseEvent": [
+      "event"
+    ]
+  },
+  "HttpConnection": {
+    "_connectionState": [],
+    "_connectionStarted": [],
+    "_httpClient": [],
+    "_logger": [],
+    "_options": [],
+    "transport": [],
+    "_startInternalPromise": [],
+    "_stopPromise": [],
+    "_stopPromiseResolver": [],
+    "_stopError": [],
+    "_accessTokenFactory": [],
+    "_sendQueue": [],
+    "features": [],
+    "baseUrl": [],
+    "connectionId": [],
+    "onreceive": [],
+    "onclose": [],
+    "_negotiateVersion": [],
+    "constructor": [
+      "url",
+      "param"
+    ],
+    "start": [
+      "transferFormat"
+    ],
+    "send": [
+      "data"
+    ],
+    "stop": [
+      "error"
+    ],
+    "_stopInternal": [
+      "error"
+    ],
+    "_startInternal": [
+      "transferFormat"
+    ],
+    "_getNegotiationResponse": [
+      "url"
+    ],
+    "_createConnectUrl": [
+      "url",
+      "connectionToken"
+    ],
+    "_createTransport": [
+      "url",
+      "requestedTransport",
+      "negotiateResponse",
+      "requestedTransferFormat"
+    ],
+    "_constructTransport": [
+      "transport"
+    ],
+    "_startTransport": [
+      "url",
+      "transferFormat"
+    ],
+    "_resolveTransportOrError": [
+      "endpoint",
+      "requestedTransport",
+      "requestedTransferFormat",
+      "useStatefulReconnect"
+    ],
+    "_isITransport": [
+      "transport"
+    ],
+    "_stopConnection": [
+      "error"
+    ],
+    "_resolveUrl": [
+      "url"
+    ],
+    "_resolveNegotiateUrl": [
+      "url"
+    ]
+  },
+  "transportMatches": [
+    "requestedTransport",
+    "actualTransport"
+  ],
+  "TransportSendQueue": {
+    "_buffer": [],
+    "_sendBufferedData": [],
+    "_executing": [],
+    "_transportResult": [],
+    "_sendLoopPromise": [],
+    "constructor": [
+      "param"
+    ],
+    "send": [
+      "data"
+    ],
+    "stop": [],
+    "_bufferData": [
+      "data"
+    ],
+    "_sendLoop": [],
+    "_concatBuffers": [
+      "arrayBuffers"
+    ]
+  },
+  "PromiseSource": {
+    "_resolver": [],
+    "_rejecter": [],
+    "promise": [],
+    "constructor": [],
+    "resolve": [],
+    "reject": [
+      "reason"
+    ]
+  },
+  "JsonHubProtocol": {
+    "name": [],
+    "version": [],
+    "transferFormat": [],
+    "parseMessages": [
+      "input",
+      "logger"
+    ],
+    "writeMessage": [
+      "message"
+    ],
+    "_isInvocationMessage": [
+      "message"
+    ],
+    "_isStreamItemMessage": [
+      "message"
+    ],
+    "_isCompletionMessage": [
+      "message"
+    ],
+    "_isAckMessage": [
+      "message"
+    ],
+    "_isSequenceMessage": [
+      "message"
+    ],
+    "_assertNotEmptyString": [
+      "value",
+      "errorMessage"
+    ]
+  },
+  "parseLogLevel": [
+    "name"
+  ],
+  "HubConnectionBuilder": {
+    "_serverTimeoutInMilliseconds": [],
+    "_keepAliveIntervalInMilliseconds": [],
+    "protocol": [],
+    "httpConnectionOptions": [],
+    "url": [],
+    "logger": [],
+    "reconnectPolicy": [],
+    "_statefulReconnectBufferSize": [],
+    "configureLogging": [
+      "logging"
+    ],
+    "withUrl": [
+      "url",
+      "transportTypeOrOptions"
+    ],
+    "withHubProtocol": [
+      "protocol"
+    ],
+    "withAutomaticReconnect": [
+      "retryDelaysOrReconnectPolicy"
+    ],
+    "withServerTimeout": [
+      "milliseconds"
+    ],
+    "withKeepAliveInterval": [
+      "milliseconds"
+    ],
+    "withStatefulReconnect": [
+      "options"
+    ],
+    "build": []
+  },
+  "isLogger": [
+    "logger"
+  ],
+  "i": [],
+  "n": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "r": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "o": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "h": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "c": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "a": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "l": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "u": {
+    "constructor": [
+      "t",
+      "e",
+      "s"
+    ]
+  },
+  "d": {
+    "get": [
+      "t",
+      "e"
+    ],
+    "post": [
+      "t",
+      "e"
+    ],
+    "delete": [
+      "t",
+      "e"
+    ],
+    "getCookieString": [
+      "t"
+    ]
+  },
+  "f": {
+    "constructor": [],
+    "log": [
+      "t",
+      "e"
+    ]
+  },
+  "w": {
+    "isRequired": [
+      "t",
+      "e"
+    ],
+    "isNotEmpty": [
+      "t",
+      "e"
+    ],
+    "isIn": [
+      "t",
+      "e",
+      "s"
+    ]
+  },
+  "g": {
+    "isBrowser": [],
+    "isWebWorker": [],
+    "isReactNative": [],
+    "isNode": []
+  },
+  "m": [
+    "t",
+    "e"
+  ],
+  "y": [
+    "t"
+  ],
+  "v": [
+    "t",
+    "s",
+    "i",
+    "n",
+    "r",
+    "o"
+  ],
+  "b": {
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "dispose": []
+  },
+  "E": {
+    "constructor": [
+      "t"
+    ],
+    "log": [
+      "t",
+      "s"
+    ]
+  },
+  "$": [],
+  "C": [
+    "t",
+    "e",
+    "s",
+    "i"
+  ],
+  "S": [],
+  "k": [],
+  "P": [
+    "t"
+  ],
+  "T": {
+    "constructor": [
+      "e"
+    ],
+    "send": [
+      "t"
+    ],
+    "getCookieString": [
+      "t"
+    ]
+  },
+  "I": [
+    "t",
+    "e"
+  ],
+  "_": {
+    "constructor": [
+      "t"
+    ],
+    "send": [
+      "t"
+    ]
+  },
+  "H": {
+    "constructor": [
+      "t"
+    ],
+    "send": [
+      "t"
+    ],
+    "getCookieString": [
+      "t"
+    ]
+  },
+  "D": {
+    "write": [
+      "t"
+    ],
+    "parse": [
+      "t"
+    ]
+  },
+  "R": {
+    "writeHandshakeRequest": [
+      "t"
+    ],
+    "parseHandshakeResponse": [
+      "t"
+    ]
+  },
+  "U": {
+    "constructor": [],
+    "next": [
+      "t"
+    ],
+    "error": [
+      "t"
+    ],
+    "complete": [],
+    "subscribe": [
+      "t"
+    ]
+  },
+  "L": {
+    "constructor": [
+      "t",
+      "e",
+      "s"
+    ],
+    "A": [
+      "t"
+    ],
+    "N": [
+      "t"
+    ],
+    "W": [
+      "t"
+    ],
+    "F": [
+      "t"
+    ],
+    "L": [],
+    "B": [],
+    "X": [
+      "t"
+    ],
+    "U": [
+      "t"
+    ],
+    "O": []
+  },
+  "t": [],
+  "N": {
+    "constructor": [
+      "t",
+      "e",
+      "s",
+      "i"
+    ]
+  },
+  "q": {
+    "create": [
+      "t",
+      "e",
+      "s",
+      "i",
+      "n",
+      "r",
+      "o"
+    ],
+    "constructor": [
+      "t",
+      "s",
+      "i",
+      "n",
+      "r",
+      "o",
+      "h"
+    ],
+    "state": [],
+    "connectionId": [],
+    "baseUrl": [
+      "t"
+    ],
+    "start": [],
+    "gt": [],
+    "yt": [],
+    "stop": [],
+    "_t": [
+      "t"
+    ],
+    "Rt": [],
+    "stream": [
+      "t",
+      "param"
+    ],
+    "$t": [
+      "t"
+    ],
+    "xt": [
+      "t"
+    ],
+    "send": [
+      "t",
+      "param"
+    ],
+    "invoke": [
+      "t",
+      "param"
+    ],
+    "on": [
+      "t",
+      "e"
+    ],
+    "off": [
+      "t",
+      "e"
+    ],
+    "onclose": [
+      "t"
+    ],
+    "onreconnecting": [
+      "t"
+    ],
+    "onreconnected": [
+      "t"
+    ],
+    "et": [
+      "t"
+    ],
+    "jt": [
+      "t"
+    ],
+    "kt": [],
+    "St": [],
+    "serverTimeout": [],
+    "Wt": [
+      "t"
+    ],
+    "st": [
+      "t"
+    ],
+    "Dt": [
+      "t"
+    ],
+    "zt": [
+      "t"
+    ],
+    "Vt": [
+      "t",
+      "s",
+      "i"
+    ],
+    "Jt": [
+      "t"
+    ],
+    "Tt": [],
+    "Ct": [],
+    "Mt": [
+      "t",
+      "e",
+      "s",
+      "i"
+    ],
+    "qt": [
+      "t",
+      "e"
+    ],
+    "Ut": [
+      "t"
+    ],
+    "Gt": [
+      "t"
+    ],
+    "Lt": [
+      "t",
+      "e",
+      "s"
+    ],
+    "Nt": [
+      "t"
+    ],
+    "Kt": [
+      "t",
+      "e"
+    ],
+    "Xt": [
+      "t",
+      "e",
+      "s"
+    ],
+    "At": [],
+    "Ft": []
+  },
+  "j": {
+    "constructor": [
+      "t"
+    ],
+    "nextRetryDelayInMilliseconds": [
+      "t"
+    ]
+  },
+  "W": {},
+  "O": {
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "send": [
+      "t"
+    ],
+    "ee": [
+      "t"
+    ],
+    "getCookieString": [
+      "t"
+    ]
+  },
+  "X": {
+    "constructor": [],
+    "abort": [],
+    "signal": [],
+    "aborted": []
+  },
+  "J": {
+    "pollAborted": [],
+    "constructor": [
+      "t",
+      "e",
+      "s"
+    ],
+    "connect": [
+      "t",
+      "s"
+    ],
+    "ae": [
+      "t",
+      "s"
+    ],
+    "send": [
+      "t"
+    ],
+    "stop": [],
+    "le": []
+  },
+  "z": {
+    "constructor": [
+      "t",
+      "e",
+      "s",
+      "i"
+    ],
+    "connect": [
+      "t",
+      "s"
+    ],
+    "send": [
+      "t"
+    ],
+    "stop": [],
+    "ue": [
+      "t"
+    ]
+  },
+  "V": {
+    "constructor": [
+      "t",
+      "e",
+      "s",
+      "i",
+      "n",
+      "r"
+    ],
+    "connect": [
+      "t",
+      "s"
+    ],
+    "send": [
+      "t"
+    ],
+    "stop": [],
+    "ue": [
+      "t"
+    ],
+    "me": [
+      "t"
+    ]
+  },
+  "K": {
+    "constructor": [
+      "t",
+      "param"
+    ],
+    "start": [
+      "t"
+    ],
+    "send": [
+      "t"
+    ],
+    "stop": [
+      "t"
+    ],
+    "_t": [
+      "t"
+    ],
+    "yt": [
+      "t"
+    ],
+    "Te": [
+      "t"
+    ],
+    "De": [
+      "t",
+      "e"
+    ],
+    "Ie": [
+      "t",
+      "s",
+      "i",
+      "n"
+    ],
+    "ke": [
+      "t"
+    ],
+    "Pe": [
+      "t",
+      "e"
+    ],
+    "xe": [
+      "t",
+      "s",
+      "i",
+      "n"
+    ],
+    "Re": [
+      "t"
+    ],
+    "Se": [
+      "t"
+    ],
+    "be": [
+      "t"
+    ],
+    "_e": [
+      "t"
+    ]
+  },
+  "G": {
+    "constructor": [
+      "t"
+    ],
+    "send": [
+      "t"
+    ],
+    "stop": [],
+    "We": [
+      "t"
+    ],
+    "je": [],
+    "Oe": [
+      "t"
+    ]
+  },
+  "Q": {
+    "constructor": [],
+    "resolve": [],
+    "reject": [
+      "t"
+    ]
+  },
+  "Y": {
+    "constructor": [],
+    "parseMessages": [
+      "t",
+      "s"
+    ],
+    "writeMessage": [
+      "t"
+    ],
+    "U": [
+      "t"
+    ],
+    "Be": [
+      "t"
+    ],
+    "Xe": [
+      "t"
+    ],
+    "Je": [
+      "t"
+    ],
+    "ze": [
+      "t"
+    ],
+    "Ve": [
+      "t",
+      "e"
+    ]
+  },
+  "tt": {
+    "configureLogging": [
+      "t"
+    ],
+    "withUrl": [
+      "t",
+      "e"
+    ],
+    "withHubProtocol": [
+      "t"
+    ],
+    "withAutomaticReconnect": [
+      "t"
+    ],
+    "withServerTimeout": [
+      "t"
+    ],
+    "withKeepAliveInterval": [
+      "t"
+    ],
+    "withStatefulReconnect": [
+      "t"
+    ],
+    "build": []
+  },
+  "AbortController": {
+    "_isAborted": [],
+    "onabort": [],
+    "abort": [],
+    "signal": [],
+    "aborted": []
+  }
+}

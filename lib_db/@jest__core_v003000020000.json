@@ -1,0 +1,597 @@
+{
+  "SearchSource": {
+    "_context": [],
+    "_dependencyResolver": [],
+    "_testPathCases": [],
+    "constructor": [
+      "context"
+    ],
+    "_getOrBuildDependencyResolver": [],
+    "_filterTestPathsWithStats": [
+      "allPaths",
+      "testPathPatternsExecutor"
+    ],
+    "_getAllTestPaths": [
+      "testPathPatternsExecutor"
+    ],
+    "isTestFilePath": [
+      "path"
+    ],
+    "findMatchingTests": [
+      "testPathPatternsExecutor"
+    ],
+    "findRelatedTests": [
+      "allPaths",
+      "collectCoverage"
+    ],
+    "findTestsByPaths": [
+      "paths"
+    ],
+    "findRelatedTestsFromPattern": [
+      "paths",
+      "collectCoverage"
+    ],
+    "findTestRelatedToChangedFiles": [
+      "changedFilesInfo",
+      "collectCoverage"
+    ],
+    "_getTestPaths": [
+      "globalConfig",
+      "projectConfig",
+      "changedFiles"
+    ],
+    "filterPathsWin32": [
+      "paths"
+    ],
+    "getTestPaths": [
+      "globalConfig",
+      "projectConfig",
+      "changedFiles",
+      "filter"
+    ],
+    "findRelatedSourcesFromTestsInChangedFiles": [
+      "changedFilesInfo"
+    ]
+  },
+  "TestScheduler": {
+    "_context": [],
+    "_dispatcher": [],
+    "_globalConfig": [],
+    "constructor": [
+      "globalConfig",
+      "context"
+    ],
+    "addReporter": [
+      "reporter"
+    ],
+    "removeReporter": [
+      "reporterConstructor"
+    ],
+    "scheduleTests": [
+      "tests",
+      "watcher"
+    ],
+    "_partitionTests": [
+      "testRunners",
+      "tests"
+    ],
+    "_setupReporters": [],
+    "_addCustomReporter": [
+      "reporter",
+      "options"
+    ],
+    "_bailIfNeeded": [
+      "testContexts",
+      "aggregatedResults",
+      "watcher",
+      "allTests"
+    ]
+  },
+  "FailedTestsCache": {
+    "_enabledTestsMap": [],
+    "filterTests": [
+      "tests"
+    ],
+    "setTestResults": [
+      "testResults"
+    ]
+  },
+  "_ansiEscapes": [],
+  "_chalk": [],
+  "_jestUtil": [],
+  "_jestWatcher": [],
+  "_interopRequireDefault": [
+    "e"
+  ],
+  "describeKey": [
+    "key",
+    "description"
+  ],
+  "FailedTestsInteractiveMode": {
+    "_isActive": [],
+    "_countPaths": [],
+    "_skippedNum": [],
+    "_testAssertions": [],
+    "_updateTestRunnerConfig": [],
+    "constructor": [
+      "_pipe"
+    ],
+    "isActive": [],
+    "put": [
+      "key"
+    ],
+    "run": [
+      "failedTestAssertions",
+      "updateConfig"
+    ],
+    "updateWithResults": [
+      "results"
+    ],
+    "_clearTestSummary": [],
+    "_drawUIDone": [],
+    "_drawUIDoneWithSkipped": [],
+    "_drawUIProgress": [],
+    "_drawUIOverlay": [],
+    "_run": [],
+    "abort": [],
+    "restart": []
+  },
+  "ReporterDispatcher": {
+    "_reporters": [],
+    "constructor": [],
+    "register": [
+      "reporter"
+    ],
+    "unregister": [
+      "reporterConstructor"
+    ],
+    "onTestFileResult": [
+      "test",
+      "testResult",
+      "results"
+    ],
+    "onTestFileStart": [
+      "test"
+    ],
+    "onRunStart": [
+      "results",
+      "options"
+    ],
+    "onTestCaseStart": [
+      "test",
+      "testCaseStartInfo"
+    ],
+    "onTestCaseResult": [
+      "test",
+      "testCaseResult"
+    ],
+    "onRunComplete": [
+      "testContexts",
+      "results"
+    ],
+    "getErrors": [],
+    "hasErrors": []
+  },
+  "os": [],
+  "path": [],
+  "_micromatch": [],
+  "_jestConfig": [],
+  "_jestRegexUtil": [],
+  "_jestResolveDependencies": [],
+  "_jestSnapshot": [],
+  "_interopRequireWildcard": [
+    "e",
+    "t"
+  ],
+  "regexToMatcher": [
+    "testRegex"
+  ],
+  "toTests": [
+    "context",
+    "tests"
+  ],
+  "hasSCM": [
+    "changedFilesInfo"
+  ],
+  "normalizePosix": [
+    "filePath"
+  ],
+  "SnapshotInteractiveMode": {
+    "_pipe": [],
+    "_isActive": [],
+    "_updateTestRunnerConfig": [],
+    "_testAssertions": [],
+    "_countPaths": [],
+    "_skippedNum": [],
+    "constructor": [
+      "pipe"
+    ],
+    "isActive": [],
+    "getSkippedNum": [],
+    "_clearTestSummary": [],
+    "_drawUIProgress": [],
+    "_drawUIDoneWithSkipped": [],
+    "_drawUIDone": [],
+    "_drawUIOverlay": [],
+    "put": [
+      "key"
+    ],
+    "abort": [],
+    "restart": [],
+    "updateWithResults": [
+      "results"
+    ],
+    "_run": [
+      "shouldUpdateSnapshot"
+    ],
+    "run": [
+      "failedSnapshotTestAssertions",
+      "onConfigChange"
+    ]
+  },
+  "TestNamePatternPrompt": {
+    "constructor": [
+      "pipe",
+      "prompt"
+    ],
+    "_onChange": [
+      "pattern",
+      "options"
+    ],
+    "_printPrompt": [
+      "pattern"
+    ]
+  },
+  "TestPathPatternPrompt": {
+    "constructor": [
+      "pipe",
+      "prompt"
+    ],
+    "_onChange": [
+      "pattern",
+      "options"
+    ],
+    "_printPrompt": [
+      "pattern"
+    ]
+  },
+  "_ciInfo": [],
+  "_exitX": [],
+  "_reporters": [],
+  "_testResult": [],
+  "_transform": [],
+  "_jestMessageUtil": [],
+  "createTestScheduler": [
+    "globalConfig",
+    "context"
+  ],
+  "onResult": [
+    "test",
+    "testResult"
+  ],
+  "onFailure": [
+    "test",
+    "error"
+  ],
+  "updateSnapshotState": [],
+  "createAggregatedResults": [
+    "numTotalTestSuites"
+  ],
+  "getEstimatedTime": [
+    "timings",
+    "workers"
+  ],
+  "strToError": [
+    "errString"
+  ],
+  "buildExecError": [
+    "err"
+  ],
+  "_perf_hooks": [],
+  "fs": [],
+  "_console": [],
+  "_jestRuntime": [],
+  "runCLI": [
+    "argv",
+    "projects"
+  ],
+  "buildContextsAndHasteMaps": [
+    "configs",
+    "globalConfig",
+    "outputStream"
+  ],
+  "_run10000": [
+    "globalConfig",
+    "configs",
+    "hasDeprecationWarnings",
+    "outputStream",
+    "onComplete"
+  ],
+  "runWatch": [
+    "contexts",
+    "_configs",
+    "hasDeprecationWarnings",
+    "globalConfig",
+    "outputStream",
+    "hasteMapInstances",
+    "filter"
+  ],
+  "runWithoutWatch": [
+    "globalConfig",
+    "contexts",
+    "outputStream",
+    "onComplete",
+    "changedFilesPromise",
+    "filter"
+  ],
+  "startRun": [
+    "globalConfig"
+  ],
+  "asyncHooks": [],
+  "_util": [],
+  "v8": [],
+  "vm": [],
+  "stackIsFromUser": [
+    "stack"
+  ],
+  "alwaysActive": [],
+  "runGC": [],
+  "collectHandles": [],
+  "formatHandleErrors": [
+    "errors",
+    "config"
+  ],
+  "_jestChangedFiles": [],
+  "getChangedFilesPromise": [
+    "globalConfig",
+    "configs"
+  ],
+  "getConfigsOfProjectsToRun": [
+    "projectConfigs",
+    "opts"
+  ],
+  "always": [],
+  "createProjectFilter": [
+    "opts"
+  ],
+  "test": [
+    "name"
+  ],
+  "getNoTestFound": [
+    "testRunData",
+    "globalConfig",
+    "willExitWith0"
+  ],
+  "getNoTestFoundFailed": [
+    "globalConfig"
+  ],
+  "getNoTestFoundPassWithNoTests": [],
+  "getNoTestFoundRelatedToChangedFiles": [
+    "globalConfig"
+  ],
+  "getNoTestFoundVerbose": [
+    "testRunData",
+    "globalConfig",
+    "willExitWith0"
+  ],
+  "getNoTestsFoundMessage": [
+    "testRunData",
+    "globalConfig"
+  ],
+  "getProjectDisplayName": [
+    "projectConfig"
+  ],
+  "getProjectNamesMissingWarning": [
+    "projectConfigs",
+    "opts"
+  ],
+  "getSelectProjectsMessage": [
+    "projectConfigs",
+    "opts"
+  ],
+  "getNoSelectionWarning": [
+    "opts"
+  ],
+  "getProjectsRunningMessage": [
+    "projectConfigs"
+  ],
+  "getProjectNameListElement": [
+    "projectConfig"
+  ],
+  "activeFilters": [
+    "globalConfig"
+  ],
+  "createContext": [
+    "config",
+    "param"
+  ],
+  "handleDeprecationWarnings": [
+    "pipe",
+    "param"
+  ],
+  "isValidPath": [
+    "globalConfig",
+    "filePath"
+  ],
+  "logDebugMessages": [
+    "globalConfig",
+    "configs",
+    "outputStream"
+  ],
+  "_types": [],
+  "serializeToJSON": [
+    "value",
+    "space"
+  ],
+  "_pattern": [],
+  "updateGlobalConfig": [
+    "globalConfig",
+    "param"
+  ],
+  "filterInteractivePlugins": [
+    "watchPlugins",
+    "globalConfig"
+  ],
+  "getSortedUsageRows": [
+    "watchPlugins",
+    "globalConfig"
+  ],
+  "FailedTestsInteractivePlugin": {
+    "_failedTestAssertions": [],
+    "_manager": [],
+    "apply": [
+      "hooks"
+    ],
+    "getUsageInfo": [],
+    "onKey": [
+      "key"
+    ],
+    "run": [
+      "_",
+      "updateConfigAndRun"
+    ],
+    "getFailedTestAssertions": [
+      "results"
+    ]
+  },
+  "QuitPlugin": {
+    "isInternal": [],
+    "constructor": [
+      "options"
+    ],
+    "run": [],
+    "getUsageInfo": []
+  },
+  "TestNamePatternPlugin": {
+    "_prompt": [],
+    "isInternal": [],
+    "constructor": [
+      "options"
+    ],
+    "getUsageInfo": [],
+    "onKey": [
+      "key"
+    ],
+    "run": [
+      "globalConfig",
+      "updateConfigAndRun"
+    ]
+  },
+  "TestPathPatternPlugin": {
+    "_prompt": [],
+    "isInternal": [],
+    "constructor": [
+      "options"
+    ],
+    "getUsageInfo": [],
+    "onKey": [
+      "key"
+    ],
+    "run": [
+      "globalConfig",
+      "updateConfigAndRun"
+    ]
+  },
+  "UpdateSnapshotsPlugin": {
+    "_hasSnapshotFailure": [],
+    "isInternal": [],
+    "constructor": [
+      "options"
+    ],
+    "run": [
+      "_globalConfig",
+      "updateConfigAndRun"
+    ],
+    "apply": [
+      "hooks"
+    ],
+    "getUsageInfo": []
+  },
+  "UpdateSnapshotInteractivePlugin": {
+    "_snapshotInteractiveMode": [],
+    "_failedSnapshotTestAssertions": [],
+    "isInternal": [],
+    "getFailedSnapshotTestAssertions": [
+      "testResults"
+    ],
+    "apply": [
+      "hooks"
+    ],
+    "onKey": [
+      "key"
+    ],
+    "run": [
+      "_globalConfig",
+      "updateConfigAndRun"
+    ],
+    "getUsageInfo": []
+  },
+  "util": [],
+  "_prettyFormat": [],
+  "runGlobalHook": [
+    "param"
+  ],
+  "_jestResolve": [],
+  "getTestPaths": [
+    "globalConfig",
+    "projectConfig",
+    "source",
+    "outputStream",
+    "changedFiles",
+    "jestHooks",
+    "filter"
+  ],
+  "processResults": [
+    "runResults",
+    "options"
+  ],
+  "runJest": [
+    "param"
+  ],
+  "shouldRunInBand": [
+    "tests",
+    "timings",
+    "param"
+  ],
+  "getVersion": [],
+  "_slash": [],
+  "_jestValidate": [],
+  "watch": [
+    "initialGlobalConfig",
+    "contexts",
+    "outputStream",
+    "hasteMapInstances",
+    "param",
+    "param",
+    "filter"
+  ],
+  "updateConfigAndRun": [
+    "param"
+  ],
+  "emitFileChange": [],
+  "onKeypress": [
+    "key"
+  ],
+  "onCancelPatternPrompt": [],
+  "checkForConflicts": [
+    "watchPluginKeys",
+    "plugin",
+    "globalConfig"
+  ],
+  "getPluginIdentifier": [
+    "plugin"
+  ],
+  "getPluginKey": [
+    "plugin",
+    "globalConfig"
+  ],
+  "usage": [
+    "globalConfig",
+    "watchPlugins",
+    "param"
+  ],
+  "showToggleUsagePrompt": [],
+  "__webpack_require__": [
+    "moduleId"
+  ]
+}

@@ -1,0 +1,8118 @@
+{
+  "PublicClientApplication": {
+    "controller": [],
+    "constructor": [
+      "configuration",
+      "controller"
+    ],
+    "initialize": [
+      "request"
+    ],
+    "acquireTokenPopup": [
+      "request"
+    ],
+    "acquireTokenRedirect": [
+      "request"
+    ],
+    "acquireTokenSilent": [
+      "silentRequest"
+    ],
+    "acquireTokenByCode": [
+      "request"
+    ],
+    "addEventCallback": [
+      "callback",
+      "eventTypes"
+    ],
+    "removeEventCallback": [
+      "callbackId"
+    ],
+    "addPerformanceCallback": [
+      "callback"
+    ],
+    "removePerformanceCallback": [
+      "callbackId"
+    ],
+    "getAccount": [
+      "accountFilter"
+    ],
+    "getAllAccounts": [
+      "accountFilter"
+    ],
+    "handleRedirectPromise": [
+      "options"
+    ],
+    "loginPopup": [
+      "request"
+    ],
+    "loginRedirect": [
+      "request"
+    ],
+    "logoutRedirect": [
+      "logoutRequest"
+    ],
+    "logoutPopup": [
+      "logoutRequest"
+    ],
+    "ssoSilent": [
+      "request"
+    ],
+    "getLogger": [],
+    "setLogger": [
+      "logger"
+    ],
+    "setActiveAccount": [
+      "account"
+    ],
+    "getActiveAccount": [],
+    "initializeWrapperLibrary": [
+      "sku",
+      "version"
+    ],
+    "setNavigationClient": [
+      "navigationClient"
+    ],
+    "getConfiguration": [],
+    "hydrateCache": [
+      "result",
+      "request"
+    ],
+    "clearCache": [
+      "logoutRequest"
+    ]
+  },
+  "PlatformAuthDOMHandler": {
+    "logger": [],
+    "performanceClient": [],
+    "correlationId": [],
+    "platformAuthType": [],
+    "constructor": [
+      "logger",
+      "performanceClient",
+      "correlationId"
+    ],
+    "createProvider": [
+      "logger",
+      "performanceClient",
+      "correlationId"
+    ],
+    "getExtensionId": [],
+    "getExtensionVersion": [],
+    "getExtensionName": [],
+    "sendMessage": [
+      "request"
+    ],
+    "initializePlatformDOMRequest": [
+      "request"
+    ],
+    "validatePlatformBrokerResponse": [
+      "response",
+      "correlationId"
+    ],
+    "convertToPlatformBrokerResponse": [
+      "response",
+      "correlationId"
+    ],
+    "getDOMExtraParams": [
+      "extraParameters"
+    ]
+  },
+  "PlatformAuthExtensionHandler": {
+    "extensionId": [],
+    "extensionVersion": [],
+    "logger": [],
+    "handshakeTimeoutMs": [],
+    "timeoutId": [],
+    "resolvers": [],
+    "handshakeResolvers": [],
+    "messageChannel": [],
+    "windowListener": [],
+    "performanceClient": [],
+    "handshakeEvent": [],
+    "platformAuthType": [],
+    "constructor": [
+      "logger",
+      "handshakeTimeoutMs",
+      "performanceClient",
+      "extensionId"
+    ],
+    "sendMessage": [
+      "request"
+    ],
+    "createProvider": [
+      "logger",
+      "handshakeTimeoutMs",
+      "performanceClient",
+      "correlationId"
+    ],
+    "sendHandshakeRequest": [
+      "correlationId"
+    ],
+    "onWindowMessage": [
+      "event"
+    ],
+    "onChannelMessage": [
+      "event"
+    ],
+    "validatePlatformBrokerResponse": [
+      "response"
+    ],
+    "getExtensionId": [],
+    "getExtensionVersion": [],
+    "getExtensionName": []
+  },
+  "AsyncMemoryStorage": {
+    "inMemoryCache": [],
+    "indexedDBCache": [],
+    "logger": [],
+    "constructor": [
+      "logger"
+    ],
+    "handleDatabaseAccessError": [
+      "error",
+      "correlationId"
+    ],
+    "getItem": [
+      "key",
+      "correlationId"
+    ],
+    "setItem": [
+      "key",
+      "value",
+      "correlationId"
+    ],
+    "removeItem": [
+      "key",
+      "correlationId"
+    ],
+    "getKeys": [
+      "correlationId"
+    ],
+    "containsKey": [
+      "key",
+      "correlationId"
+    ],
+    "clearInMemory": [
+      "correlationId"
+    ],
+    "clearPersistent": [
+      "correlationId"
+    ]
+  },
+  "BrowserCacheManager": {
+    "cacheConfig": [],
+    "browserStorage": [],
+    "internalStorage": [],
+    "temporaryCacheStorage": [],
+    "cookieStorage": [],
+    "logger": [],
+    "eventHandler": [],
+    "constructor": [
+      "clientId",
+      "cacheConfig",
+      "cryptoImpl",
+      "logger",
+      "performanceClient",
+      "eventHandler",
+      "staticAuthorityOptions"
+    ],
+    "initialize": [
+      "correlationId"
+    ],
+    "migrateExistingCache": [
+      "correlationId"
+    ],
+    "updateOldEntry": [
+      "key",
+      "correlationId"
+    ],
+    "removeStaleAccounts": [
+      "accountSchema",
+      "credentialSchema",
+      "correlationId"
+    ],
+    "removeAccountOldSchema": [
+      "accountKey",
+      "rawObject",
+      "credentialSchema",
+      "correlationId"
+    ],
+    "getKMSIValues": [],
+    "migrateIdTokens": [
+      "credentialSchema",
+      "accountSchema",
+      "correlationId"
+    ],
+    "migrateAccessTokens": [
+      "credentialSchema",
+      "kmsiMap",
+      "correlationId"
+    ],
+    "migrateRefreshTokens": [
+      "credentialSchema",
+      "kmsiMap",
+      "correlationId"
+    ],
+    "trackVersionChanges": [
+      "correlationId"
+    ],
+    "validateAndParseJson": [
+      "jsonValue"
+    ],
+    "setItem": [
+      "key",
+      "value",
+      "correlationId"
+    ],
+    "setUserData": [
+      "key",
+      "value",
+      "correlationId",
+      "timestamp",
+      "kmsi"
+    ],
+    "getAccount": [
+      "accountKey",
+      "correlationId"
+    ],
+    "setAccount": [
+      "account",
+      "correlationId",
+      "kmsi",
+      "apiId"
+    ],
+    "setAccountKeys": [
+      "accountKeys",
+      "correlationId",
+      "param"
+    ],
+    "getAccountKeys": [],
+    "addAccountKeyToMap": [
+      "key",
+      "correlationId"
+    ],
+    "removeAccountKeyFromMap": [
+      "key",
+      "correlationId"
+    ],
+    "removeAccount": [
+      "account",
+      "correlationId"
+    ],
+    "removeIdToken": [
+      "key",
+      "correlationId"
+    ],
+    "removeAccessToken": [
+      "key",
+      "correlationId",
+      "param"
+    ],
+    "removeAccessTokenKeys": [
+      "keys",
+      "correlationId",
+      "param"
+    ],
+    "removeRefreshToken": [
+      "key",
+      "correlationId"
+    ],
+    "getTokenKeys": [
+      "param"
+    ],
+    "setTokenKeys": [
+      "tokenKeys",
+      "correlationId",
+      "param"
+    ],
+    "getIdTokenCredential": [
+      "idTokenKey",
+      "correlationId"
+    ],
+    "setIdTokenCredential": [
+      "idToken",
+      "correlationId",
+      "kmsi"
+    ],
+    "getAccessTokenCredential": [
+      "accessTokenKey",
+      "correlationId"
+    ],
+    "setAccessTokenCredential": [
+      "accessToken",
+      "correlationId",
+      "kmsi"
+    ],
+    "getRefreshTokenCredential": [
+      "refreshTokenKey",
+      "correlationId"
+    ],
+    "setRefreshTokenCredential": [
+      "refreshToken",
+      "correlationId",
+      "kmsi"
+    ],
+    "getAppMetadata": [
+      "appMetadataKey",
+      "correlationId"
+    ],
+    "setAppMetadata": [
+      "appMetadata",
+      "correlationId"
+    ],
+    "getServerTelemetry": [
+      "serverTelemetryKey",
+      "correlationId"
+    ],
+    "setServerTelemetry": [
+      "serverTelemetryKey",
+      "serverTelemetry",
+      "correlationId"
+    ],
+    "getAuthorityMetadata": [
+      "key",
+      "correlationId"
+    ],
+    "getAuthorityMetadataKeys": [],
+    "setWrapperMetadata": [
+      "wrapperSKU",
+      "wrapperVersion"
+    ],
+    "getWrapperMetadata": [],
+    "setAuthorityMetadata": [
+      "key",
+      "entity",
+      "correlationId"
+    ],
+    "getActiveAccount": [
+      "correlationId"
+    ],
+    "setActiveAccount": [
+      "account",
+      "correlationId"
+    ],
+    "getThrottlingCache": [
+      "throttlingCacheKey",
+      "correlationId"
+    ],
+    "setThrottlingCache": [
+      "throttlingCacheKey",
+      "throttlingCache",
+      "correlationId"
+    ],
+    "getTemporaryCache": [
+      "cacheKey",
+      "correlationId",
+      "generateKey"
+    ],
+    "setTemporaryCache": [
+      "cacheKey",
+      "value",
+      "generateKey"
+    ],
+    "removeItem": [
+      "key"
+    ],
+    "removeTemporaryItem": [
+      "key"
+    ],
+    "getKeys": [],
+    "clear": [
+      "correlationId"
+    ],
+    "generateCacheKey": [
+      "key"
+    ],
+    "generateCredentialKey": [
+      "credential"
+    ],
+    "generateAccountKey": [
+      "account"
+    ],
+    "resetRequestCache": [
+      "correlationId"
+    ],
+    "cacheAuthorizeRequest": [
+      "authCodeRequest",
+      "correlationId",
+      "codeVerifier"
+    ],
+    "getCachedRequest": [
+      "correlationId"
+    ],
+    "getCachedNativeRequest": [],
+    "isInteractionInProgress": [
+      "matchClientId"
+    ],
+    "getInteractionInProgress": [],
+    "setInteractionInProgress": [
+      "inProgress",
+      "param",
+      "param",
+      "param"
+    ],
+    "hydrateCache": [
+      "result",
+      "request"
+    ],
+    "saveCacheRecord": [
+      "cacheRecord",
+      "correlationId",
+      "kmsi",
+      "apiId",
+      "storeInCache"
+    ]
+  },
+  "CookieStorage": {
+    "initialize": [],
+    "getItem": [
+      "key"
+    ],
+    "getUserData": [],
+    "setItem": [
+      "key",
+      "value",
+      "cookieLifeDays",
+      "param",
+      "param"
+    ],
+    "setUserData": [],
+    "removeItem": [
+      "key"
+    ],
+    "getKeys": [],
+    "containsKey": [
+      "key"
+    ],
+    "decryptData": []
+  },
+  "DatabaseStorage": {
+    "db": [],
+    "dbName": [],
+    "tableName": [],
+    "version": [],
+    "dbOpen": [],
+    "constructor": [],
+    "open": [],
+    "closeConnection": [],
+    "validateDbIsOpen": [],
+    "getItem": [
+      "key"
+    ],
+    "setItem": [
+      "key",
+      "payload"
+    ],
+    "removeItem": [
+      "key"
+    ],
+    "getKeys": [],
+    "containsKey": [
+      "key"
+    ],
+    "deleteDatabase": []
+  },
+  "LocalStorage": {
+    "clientId": [],
+    "initialized": [],
+    "memoryStorage": [],
+    "performanceClient": [],
+    "logger": [],
+    "encryptionCookie": [],
+    "broadcast": [],
+    "constructor": [
+      "clientId",
+      "logger",
+      "performanceClient"
+    ],
+    "initialize": [
+      "correlationId"
+    ],
+    "getItem": [
+      "key"
+    ],
+    "getUserData": [
+      "key"
+    ],
+    "decryptData": [
+      "key",
+      "data",
+      "correlationId"
+    ],
+    "setItem": [
+      "key",
+      "value"
+    ],
+    "setUserData": [
+      "key",
+      "value",
+      "correlationId",
+      "timestamp",
+      "kmsi"
+    ],
+    "removeItem": [
+      "key"
+    ],
+    "getKeys": [],
+    "containsKey": [
+      "key"
+    ],
+    "clear": [],
+    "importExistingCache": [
+      "correlationId"
+    ],
+    "getItemFromEncryptedCache": [
+      "key",
+      "correlationId"
+    ],
+    "importArray": [
+      "arr",
+      "correlationId"
+    ],
+    "getContext": [
+      "key"
+    ],
+    "updateCache": [
+      "event",
+      "correlationId"
+    ]
+  },
+  "MemoryStorage": {
+    "cache": [],
+    "constructor": [],
+    "initialize": [],
+    "getItem": [
+      "key"
+    ],
+    "getUserData": [
+      "key"
+    ],
+    "setItem": [
+      "key",
+      "value"
+    ],
+    "setUserData": [
+      "key",
+      "value"
+    ],
+    "removeItem": [
+      "key"
+    ],
+    "getKeys": [],
+    "containsKey": [
+      "key"
+    ],
+    "clear": [],
+    "decryptData": []
+  },
+  "SessionStorage": {
+    "constructor": [],
+    "initialize": [],
+    "getItem": [
+      "key"
+    ],
+    "getUserData": [
+      "key"
+    ],
+    "setItem": [
+      "key",
+      "value"
+    ],
+    "setUserData": [
+      "key",
+      "value"
+    ],
+    "removeItem": [
+      "key"
+    ],
+    "getKeys": [],
+    "containsKey": [
+      "key"
+    ],
+    "decryptData": []
+  },
+  "NestedAppAuthController": {
+    "operatingContext": [],
+    "bridgeProxy": [],
+    "browserCrypto": [],
+    "config": [],
+    "browserStorage": [],
+    "logger": [],
+    "performanceClient": [],
+    "eventHandler": [],
+    "nestedAppAuthAdapter": [],
+    "currentAccountContext": [],
+    "constructor": [
+      "operatingContext"
+    ],
+    "createController": [
+      "operatingContext"
+    ],
+    "initialize": [
+      "request",
+      "isBroker"
+    ],
+    "ensureValidRequest": [
+      "request"
+    ],
+    "acquireTokenInteractive": [
+      "request"
+    ],
+    "acquireTokenSilentInternal": [
+      "request"
+    ],
+    "acquireTokenFromCache": [
+      "request"
+    ],
+    "acquireTokenFromCacheInternal": [
+      "request"
+    ],
+    "acquireTokenPopup": [
+      "request"
+    ],
+    "acquireTokenRedirect": [
+      "request"
+    ],
+    "acquireTokenSilent": [
+      "silentRequest"
+    ],
+    "acquireTokenByCode": [
+      "request"
+    ],
+    "addEventCallback": [
+      "callback",
+      "eventTypes"
+    ],
+    "removeEventCallback": [
+      "callbackId"
+    ],
+    "addPerformanceCallback": [
+      "callback"
+    ],
+    "removePerformanceCallback": [
+      "callbackId"
+    ],
+    "getAllAccounts": [
+      "accountFilter"
+    ],
+    "getAccount": [
+      "accountFilter"
+    ],
+    "setActiveAccount": [
+      "account"
+    ],
+    "getActiveAccount": [],
+    "handleRedirectPromise": [
+      "options"
+    ],
+    "loginPopup": [
+      "request"
+    ],
+    "loginRedirect": [
+      "request"
+    ],
+    "logoutRedirect": [
+      "logoutRequest"
+    ],
+    "logoutPopup": [
+      "logoutRequest"
+    ],
+    "ssoSilent": [
+      "request"
+    ],
+    "getLogger": [],
+    "setLogger": [
+      "logger"
+    ],
+    "initializeWrapperLibrary": [
+      "sku",
+      "version"
+    ],
+    "setNavigationClient": [
+      "navigationClient"
+    ],
+    "getConfiguration": [],
+    "isBrowserEnv": [],
+    "getBrowserCrypto": [],
+    "getPerformanceClient": [],
+    "getRedirectResponse": [],
+    "clearCache": [
+      "logoutRequest"
+    ],
+    "hydrateCache": [
+      "result",
+      "request"
+    ]
+  },
+  "StandardController": {
+    "operatingContext": [],
+    "browserCrypto": [],
+    "browserStorage": [],
+    "nativeInternalStorage": [],
+    "networkClient": [],
+    "navigationClient": [],
+    "config": [],
+    "logger": [],
+    "isBrowserEnvironment": [],
+    "eventHandler": [],
+    "redirectResponse": [],
+    "platformAuthProvider": [],
+    "hybridAuthCodeResponses": [],
+    "performanceClient": [],
+    "initialized": [],
+    "activeSilentTokenRequests": [],
+    "activeIframeRequest": [],
+    "ssoSilentMeasurement": [],
+    "acquireTokenByCodeAsyncMeasurement": [],
+    "pkceCode": [],
+    "constructor": [
+      "operatingContext"
+    ],
+    "createController": [
+      "operatingContext",
+      "request"
+    ],
+    "trackPageVisibility": [
+      "correlationId"
+    ],
+    "initialize": [
+      "request"
+    ],
+    "handleRedirectPromise": [
+      "options"
+    ],
+    "handleRedirectPromiseInternal": [
+      "options"
+    ],
+    "acquireTokenRedirect": [
+      "request"
+    ],
+    "acquireTokenPopup": [
+      "request"
+    ],
+    "trackPageVisibilityWithMeasurement": [],
+    "ssoSilent": [
+      "request"
+    ],
+    "acquireTokenByCode": [
+      "request"
+    ],
+    "acquireTokenByCodeAsync": [
+      "request"
+    ],
+    "acquireTokenFromCache": [
+      "commonRequest",
+      "cacheLookupPolicy"
+    ],
+    "acquireTokenByRefreshToken": [
+      "commonRequest",
+      "cacheLookupPolicy"
+    ],
+    "acquireTokenBySilentIframe": [
+      "request"
+    ],
+    "logoutRedirect": [
+      "logoutRequest"
+    ],
+    "logoutPopup": [
+      "logoutRequest"
+    ],
+    "clearCache": [
+      "logoutRequest"
+    ],
+    "getAllAccounts": [
+      "accountFilter"
+    ],
+    "getAccount": [
+      "accountFilter"
+    ],
+    "setActiveAccount": [
+      "account"
+    ],
+    "getActiveAccount": [],
+    "hydrateCache": [
+      "result",
+      "request"
+    ],
+    "acquireTokenNative": [
+      "request",
+      "apiId",
+      "accountId",
+      "cacheLookupPolicy"
+    ],
+    "canUsePlatformBroker": [
+      "request",
+      "accountId"
+    ],
+    "getNativeAccountId": [
+      "request"
+    ],
+    "createPopupClient": [
+      "correlationId"
+    ],
+    "createRedirectClient": [
+      "correlationId"
+    ],
+    "createSilentIframeClient": [
+      "correlationId"
+    ],
+    "createSilentCacheClient": [
+      "correlationId"
+    ],
+    "createSilentRefreshClient": [
+      "correlationId"
+    ],
+    "createSilentAuthCodeClient": [
+      "correlationId"
+    ],
+    "addEventCallback": [
+      "callback",
+      "eventTypes"
+    ],
+    "removeEventCallback": [
+      "callbackId"
+    ],
+    "addPerformanceCallback": [
+      "callback"
+    ],
+    "removePerformanceCallback": [
+      "callbackId"
+    ],
+    "getLogger": [],
+    "setLogger": [
+      "logger"
+    ],
+    "initializeWrapperLibrary": [
+      "sku",
+      "version"
+    ],
+    "setNavigationClient": [
+      "navigationClient"
+    ],
+    "getConfiguration": [],
+    "getPerformanceClient": [],
+    "isBrowserEnv": [],
+    "getRequestCorrelationId": [
+      "request"
+    ],
+    "loginRedirect": [
+      "request"
+    ],
+    "loginPopup": [
+      "request"
+    ],
+    "acquireTokenSilent": [
+      "request"
+    ],
+    "acquireTokenSilentDeduped": [
+      "request",
+      "account",
+      "correlationId"
+    ],
+    "acquireTokenSilentAsync": [
+      "request",
+      "account"
+    ],
+    "acquireTokenSilentNoIframe": [
+      "silentRequest",
+      "cacheLookupPolicy"
+    ],
+    "preGeneratePkceCodes": [
+      "correlationId"
+    ],
+    "getPreGeneratedPkceCodes": [
+      "correlationId"
+    ],
+    "logMultipleInstances": [
+      "performanceEvent",
+      "correlationId"
+    ]
+  },
+  "UnknownOperatingContextController": {
+    "operatingContext": [],
+    "logger": [],
+    "browserStorage": [],
+    "config": [],
+    "performanceClient": [],
+    "eventHandler": [],
+    "browserCrypto": [],
+    "isBrowserEnvironment": [],
+    "initialized": [],
+    "constructor": [
+      "operatingContext"
+    ],
+    "getAccount": [
+      "accountFilter"
+    ],
+    "getAllAccounts": [],
+    "initialize": [],
+    "acquireTokenPopup": [
+      "request"
+    ],
+    "acquireTokenRedirect": [
+      "request"
+    ],
+    "acquireTokenSilent": [
+      "silentRequest"
+    ],
+    "acquireTokenByCode": [
+      "request"
+    ],
+    "addEventCallback": [
+      "callback",
+      "eventTypes"
+    ],
+    "removeEventCallback": [
+      "callbackId"
+    ],
+    "addPerformanceCallback": [
+      "callback"
+    ],
+    "removePerformanceCallback": [
+      "callbackId"
+    ],
+    "handleRedirectPromise": [
+      "options"
+    ],
+    "loginPopup": [
+      "request"
+    ],
+    "loginRedirect": [
+      "request"
+    ],
+    "logout": [
+      "logoutRequest"
+    ],
+    "logoutRedirect": [
+      "logoutRequest"
+    ],
+    "logoutPopup": [
+      "logoutRequest"
+    ],
+    "ssoSilent": [
+      "request"
+    ],
+    "getLogger": [],
+    "setLogger": [
+      "logger"
+    ],
+    "setActiveAccount": [
+      "account"
+    ],
+    "getActiveAccount": [],
+    "initializeWrapperLibrary": [
+      "sku",
+      "version"
+    ],
+    "setNavigationClient": [
+      "navigationClient"
+    ],
+    "getConfiguration": [],
+    "clearCache": [
+      "logoutRequest"
+    ],
+    "hydrateCache": [
+      "result",
+      "request"
+    ]
+  },
+  "CryptoOps": {
+    "logger": [],
+    "performanceClient": [],
+    "POP_KEY_USAGES": [],
+    "EXTRACTABLE": [],
+    "cache": [],
+    "constructor": [
+      "logger",
+      "performanceClient",
+      "skipValidateSubtleCrypto"
+    ],
+    "createNewGuid": [],
+    "base64Encode": [
+      "input"
+    ],
+    "base64Decode": [
+      "input"
+    ],
+    "base64UrlEncode": [
+      "input"
+    ],
+    "encodeKid": [
+      "inputKid"
+    ],
+    "getPublicKeyThumbprint": [
+      "request"
+    ],
+    "removeTokenBindingKey": [
+      "kid",
+      "correlationId"
+    ],
+    "clearKeystore": [
+      "correlationId"
+    ],
+    "signJwt": [
+      "payload",
+      "kid",
+      "shrOptions",
+      "correlationId"
+    ],
+    "hashString": [
+      "plainText"
+    ]
+  },
+  "SignedHttpRequest": {
+    "popTokenGenerator": [],
+    "cryptoOps": [],
+    "shrParameters": [],
+    "logger": [],
+    "constructor": [
+      "shrParameters",
+      "shrOptions"
+    ],
+    "generatePublicKeyThumbprint": [],
+    "signRequest": [
+      "payload",
+      "publicKeyThumbprint",
+      "claims"
+    ],
+    "removeKeys": [
+      "publicKeyThumbprint",
+      "correlationId"
+    ]
+  },
+  "CustomAuthPublicClientApplication": {
+    "customAuthController": [],
+    "create": [
+      "config"
+    ],
+    "constructor": [
+      "config",
+      "controller"
+    ],
+    "getCurrentAccount": [
+      "accountRetrievalInputs"
+    ],
+    "signIn": [
+      "signInInputs"
+    ],
+    "signUp": [
+      "signUpInputs"
+    ],
+    "resetPassword": [
+      "resetPasswordInputs"
+    ],
+    "validateConfig": [
+      "config"
+    ]
+  },
+  "CustomAuthStandardController": {
+    "signInClient": [],
+    "signUpClient": [],
+    "resetPasswordClient": [],
+    "jitClient": [],
+    "mfaClient": [],
+    "cacheClient": [],
+    "customAuthConfig": [],
+    "authority": [],
+    "constructor": [
+      "operatingContext",
+      "customAuthApiClient"
+    ],
+    "getCurrentAccount": [
+      "accountRetrievalInputs"
+    ],
+    "signIn": [
+      "signInInputs"
+    ],
+    "signUp": [
+      "signUpInputs"
+    ],
+    "resetPassword": [
+      "resetPasswordInputs"
+    ],
+    "getCorrelationId": [
+      "actionInputs"
+    ],
+    "ensureUserNotSignedIn": [
+      "correlationId"
+    ]
+  },
+  "CustomAuthAuthority": {
+    "constructor": [
+      "authority",
+      "config",
+      "networkInterface",
+      "cacheManager",
+      "logger",
+      "performanceClient",
+      "param"
+    ],
+    "getCustomAuthApiDomain": [],
+    "getPreferredCache": [],
+    "tokenEndpoint": []
+  },
+  "AuthFlowErrorBase": {
+    "constructor": [
+      "param"
+    ],
+    "isUserNotFoundError": [],
+    "isUserInvalidError": [],
+    "isUnsupportedChallengeTypeError": [],
+    "isPasswordIncorrectError": [],
+    "isInvalidCodeError": [],
+    "isRedirectError": [],
+    "isInvalidNewPasswordError": [],
+    "isUserAlreadyExistsError": [],
+    "isAttributeRequiredError": [],
+    "isAttributeValidationFailedError": [],
+    "isNoCachedAccountFoundError": [],
+    "isTokenExpiredError": [],
+    "isPasswordResetRequiredError": [],
+    "isInvalidInputError": [],
+    "isVerificationContactBlockedError": []
+  },
+  "AuthActionErrorBase": {
+    "isTokenExpired": [],
+    "isRedirectRequired": []
+  },
+  "AuthFlowResultBase": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "error": [],
+    "createErrorData": [
+      "error"
+    ]
+  },
+  "AuthFlowStateBase": {
+    "stateType": []
+  },
+  "AuthFlowActionRequiredStateBase": {
+    "constructor": [
+      "param"
+    ],
+    "ensureCodeIsValid": [
+      "code",
+      "codeLength"
+    ],
+    "ensurePasswordIsNotEmpty": [
+      "password"
+    ]
+  },
+  "AuthMethodRegistrationChallengeMethodError": {
+    "isInvalidInput": [],
+    "isVerificationContactBlocked": []
+  },
+  "AuthMethodRegistrationSubmitChallengeError": {
+    "isIncorrectChallenge": []
+  },
+  "AuthMethodRegistrationChallengeMethodResult": {
+    "createWithError": [
+      "error"
+    ],
+    "isVerificationRequired": [],
+    "isCompleted": [],
+    "isFailed": []
+  },
+  "AuthMethodRegistrationSubmitChallengeResult": {
+    "createWithError": [
+      "error"
+    ],
+    "isCompleted": [],
+    "isFailed": []
+  },
+  "AuthMethodRegistrationCompletedState": {
+    "stateType": []
+  },
+  "AuthMethodRegistrationFailedState": {
+    "stateType": []
+  },
+  "AuthMethodRegistrationState": {
+    "challengeAuthMethodInternal": [
+      "authMethodDetails"
+    ]
+  },
+  "AuthMethodRegistrationRequiredState": {
+    "stateType": [],
+    "getAuthMethods": [],
+    "challengeAuthMethod": [
+      "authMethodDetails"
+    ]
+  },
+  "AuthMethodVerificationRequiredState": {
+    "stateType": [],
+    "getCodeLength": [],
+    "getChannel": [],
+    "getSentTo": [],
+    "submitChallenge": [
+      "code"
+    ],
+    "challengeAuthMethod": [
+      "authMethodDetails"
+    ]
+  },
+  "MfaRequestChallengeError": {
+    "isInvalidInput": [],
+    "isVerificationContactBlocked": []
+  },
+  "MfaSubmitChallengeError": {
+    "isIncorrectChallenge": []
+  },
+  "MfaRequestChallengeResult": {
+    "createWithError": [
+      "error"
+    ],
+    "isVerificationRequired": [],
+    "isFailed": []
+  },
+  "MfaSubmitChallengeResult": {
+    "createWithError": [
+      "error"
+    ],
+    "isCompleted": [],
+    "isFailed": []
+  },
+  "MfaCompletedState": {
+    "stateType": []
+  },
+  "MfaFailedState": {
+    "stateType": []
+  },
+  "MfaState": {
+    "requestChallenge": [
+      "authMethodId"
+    ]
+  },
+  "MfaAwaitingState": {
+    "stateType": [],
+    "getAuthMethods": []
+  },
+  "MfaVerificationRequiredState": {
+    "stateType": [],
+    "getCodeLength": [],
+    "getChannel": [],
+    "getSentTo": [],
+    "submitChallenge": [
+      "challenge"
+    ]
+  },
+  "RedirectError": {
+    "constructor": [
+      "correlationId",
+      "param"
+    ]
+  },
+  "CustomAuthApiError": {
+    "constructor": [
+      "error",
+      "errorDescription",
+      "correlationId",
+      "errorCodes",
+      "subError",
+      "param",
+      "param",
+      "param",
+      "param"
+    ]
+  },
+  "CustomAuthError": {
+    "constructor": [
+      "param",
+      "param",
+      "param",
+      "param",
+      "param"
+    ]
+  },
+  "HttpError": {
+    "constructor": [
+      "error",
+      "message",
+      "correlationId"
+    ]
+  },
+  "InvalidArgumentError": {
+    "constructor": [
+      "argName",
+      "correlationId"
+    ]
+  },
+  "InvalidConfigurationError": {
+    "constructor": [
+      "error",
+      "message",
+      "correlationId"
+    ]
+  },
+  "MethodNotImplementedError": {
+    "constructor": [
+      "method",
+      "correlationId"
+    ]
+  },
+  "MsalCustomAuthError": {
+    "constructor": [
+      "error",
+      "errorDescription",
+      "subError",
+      "errorCodes",
+      "correlationId"
+    ]
+  },
+  "NoCachedAccountFoundError": {
+    "constructor": [
+      "correlationId"
+    ]
+  },
+  "ParsedUrlError": {
+    "constructor": [
+      "error",
+      "message",
+      "correlationId"
+    ]
+  },
+  "UnexpectedError": {
+    "constructor": [
+      "errorData",
+      "correlationId"
+    ]
+  },
+  "UnsupportedEnvironmentError": {
+    "constructor": [
+      "correlationId"
+    ]
+  },
+  "UserAccountAttributeError": {
+    "constructor": [
+      "error",
+      "attributeName",
+      "attributeValue"
+    ]
+  },
+  "UserAlreadySignedInError": {
+    "constructor": [
+      "correlationId"
+    ]
+  },
+  "CustomAuthInteractionClientBase": {
+    "tokenResponseHandler": [],
+    "constructor": [
+      "config",
+      "storageImpl",
+      "browserCrypto",
+      "logger",
+      "eventHandler",
+      "navigationClient",
+      "performanceClient",
+      "param",
+      "param"
+    ],
+    "getChallengeTypes": [
+      "configuredChallengeTypes"
+    ],
+    "getScopes": [
+      "scopes"
+    ],
+    "handleTokenResponse": [
+      "tokenResponse",
+      "requestScopes",
+      "correlationId",
+      "apiId"
+    ],
+    "acquireToken": [
+      "request"
+    ],
+    "logout": [
+      "request"
+    ]
+  },
+  "CustomAuthInterationClientFactory": {
+    "constructor": [
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "create": [
+      "clientConstructor"
+    ]
+  },
+  "JitClient": {
+    "challengeAuthMethod": [
+      "parameters"
+    ],
+    "submitChallenge": [
+      "parameters"
+    ]
+  },
+  "MfaClient": {
+    "requestChallenge": [
+      "parameters"
+    ],
+    "submitChallenge": [
+      "parameters"
+    ]
+  },
+  "BaseApiClient": {
+    "baseRequestUrl": [],
+    "constructor": [
+      "baseUrl",
+      "param",
+      "param",
+      "param"
+    ],
+    "request": [
+      "endpoint",
+      "data",
+      "telemetryManager",
+      "correlationId"
+    ],
+    "ensureContinuationTokenIsValid": [
+      "continuationToken",
+      "correlationId"
+    ],
+    "readResponseCorrelationId": [
+      "response",
+      "requestCorrelationId"
+    ],
+    "getCommonHeaders": [
+      "correlationId",
+      "telemetryManager"
+    ],
+    "handleApiResponse": [
+      "response",
+      "requestCorrelationId"
+    ]
+  },
+  "CustomAuthApiClient": {
+    "signInApi": [],
+    "signUpApi": [],
+    "resetPasswordApi": [],
+    "registerApi": [],
+    "constructor": [
+      "customAuthApiBaseUrl",
+      "clientId",
+      "httpClient",
+      "capabilities",
+      "customAuthApiQueryParams"
+    ]
+  },
+  "RegisterApiClient": {
+    "introspect": [
+      "params"
+    ],
+    "challenge": [
+      "params"
+    ],
+    "continue": [
+      "params"
+    ]
+  },
+  "ResetPasswordApiClient": {
+    "capabilities": [],
+    "constructor": [
+      "customAuthApiBaseUrl",
+      "clientId",
+      "httpClient",
+      "capabilities",
+      "customAuthApiQueryParams"
+    ],
+    "start": [
+      "params"
+    ],
+    "requestChallenge": [
+      "params"
+    ],
+    "continueWithCode": [
+      "params"
+    ],
+    "submitNewPassword": [
+      "params"
+    ],
+    "pollCompletion": [
+      "params"
+    ],
+    "ensurePollStatusIsValid": [
+      "status",
+      "correlationId"
+    ]
+  },
+  "SignInApiClient": {
+    "capabilities": [],
+    "constructor": [
+      "customAuthApiBaseUrl",
+      "clientId",
+      "httpClient",
+      "capabilities",
+      "customAuthApiQueryParams"
+    ],
+    "initiate": [
+      "params"
+    ],
+    "requestChallenge": [
+      "params"
+    ],
+    "requestTokensWithPassword": [
+      "params"
+    ],
+    "requestTokensWithOob": [
+      "params"
+    ],
+    "requestTokenWithContinuationToken": [
+      "params"
+    ],
+    "requestAuthMethods": [
+      "params"
+    ],
+    "requestTokens": [
+      "requestData",
+      "telemetryManager",
+      "correlationId"
+    ],
+    "ensureTokenResponseIsValid": [
+      "tokenResponse"
+    ]
+  },
+  "SignupApiClient": {
+    "capabilities": [],
+    "constructor": [
+      "customAuthApiBaseUrl",
+      "clientId",
+      "httpClient",
+      "capabilities",
+      "customAuthApiQueryParams"
+    ],
+    "start": [
+      "params"
+    ],
+    "requestChallenge": [
+      "params"
+    ],
+    "continueWithCode": [
+      "params"
+    ],
+    "continueWithPassword": [
+      "params"
+    ],
+    "continueWithAttributes": [
+      "params"
+    ]
+  },
+  "FetchHttpClient": {
+    "constructor": [
+      "param"
+    ],
+    "sendAsync": [
+      "url",
+      "options"
+    ],
+    "post": [
+      "url",
+      "body",
+      "param"
+    ],
+    "get": [
+      "url",
+      "param"
+    ]
+  },
+  "CustomAuthAccountData": {
+    "constructor": [
+      "param",
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "signOut": [],
+    "getAccount": [],
+    "getIdToken": [],
+    "getClaims": [],
+    "getAccessToken": [
+      "accessTokenRetrievalInputs"
+    ],
+    "createCommonSilentFlowRequest": [
+      "accountInfo",
+      "param",
+      "requestScopes",
+      "claims"
+    ]
+  },
+  "GetAccountError": {
+    "isCurrentAccountNotFound": []
+  },
+  "SignOutError": {
+    "isUserNotSignedIn": []
+  },
+  "GetCurrentAccountAccessTokenError": {
+    "isCurrentAccountNotFound": []
+  },
+  "GetAccessTokenResult": {
+    "constructor": [
+      "resultData"
+    ],
+    "createWithError": [
+      "error"
+    ],
+    "isCompleted": [],
+    "isFailed": []
+  },
+  "GetAccountResult": {
+    "constructor": [
+      "resultData"
+    ],
+    "createWithError": [
+      "error"
+    ],
+    "isCompleted": [],
+    "isFailed": []
+  },
+  "SignOutResult": {
+    "constructor": [],
+    "createWithError": [
+      "error"
+    ],
+    "isCompleted": [],
+    "isFailed": []
+  },
+  "GetAccessTokenCompletedState": {
+    "stateType": []
+  },
+  "GetAccessTokenFailedState": {
+    "stateType": []
+  },
+  "GetAccountCompletedState": {
+    "stateType": []
+  },
+  "GetAccountFailedState": {
+    "stateType": []
+  },
+  "SignOutCompletedState": {
+    "stateType": []
+  },
+  "SignOutFailedState": {
+    "stateType": []
+  },
+  "CustomAuthSilentCacheClient": {
+    "acquireToken": [
+      "silentRequest"
+    ],
+    "logout": [
+      "logoutRequest"
+    ],
+    "getCurrentAccount": [
+      "correlationId"
+    ],
+    "getCustomAuthClientConfiguration": [
+      "serverTelemetryManager",
+      "customAuthAuthority",
+      "correlationId"
+    ]
+  },
+  "CustomAuthOperatingContext": {
+    "customAuthOptions": [],
+    "MODULE_NAME": [],
+    "ID": [],
+    "constructor": [
+      "configuration"
+    ],
+    "getModuleName": [],
+    "getId": [],
+    "getCustomAuthConfig": [],
+    "initialize": []
+  },
+  "ResetPasswordError": {
+    "isUserNotFound": [],
+    "isInvalidUsername": [],
+    "isUnsupportedChallengeType": []
+  },
+  "ResetPasswordSubmitPasswordError": {
+    "isInvalidPassword": [],
+    "isPasswordResetFailed": []
+  },
+  "ResetPasswordSubmitCodeError": {
+    "isInvalidCode": []
+  },
+  "ResetPasswordResendCodeError": {},
+  "ResetPasswordResendCodeResult": {
+    "constructor": [
+      "state"
+    ],
+    "createWithError": [
+      "error"
+    ],
+    "isFailed": [],
+    "isCodeRequired": []
+  },
+  "ResetPasswordStartResult": {
+    "constructor": [
+      "state"
+    ],
+    "createWithError": [
+      "error"
+    ],
+    "isFailed": [],
+    "isCodeRequired": []
+  },
+  "ResetPasswordSubmitCodeResult": {
+    "constructor": [
+      "state"
+    ],
+    "createWithError": [
+      "error"
+    ],
+    "isFailed": [],
+    "isPasswordRequired": []
+  },
+  "ResetPasswordSubmitPasswordResult": {
+    "constructor": [
+      "state"
+    ],
+    "createWithError": [
+      "error"
+    ],
+    "isFailed": [],
+    "isCompleted": []
+  },
+  "ResetPasswordCodeRequiredState": {
+    "stateType": [],
+    "submitCode": [
+      "code"
+    ],
+    "resendCode": [],
+    "getCodeLength": []
+  },
+  "ResetPasswordCompletedState": {
+    "stateType": []
+  },
+  "ResetPasswordFailedState": {
+    "stateType": []
+  },
+  "ResetPasswordPasswordRequiredState": {
+    "stateType": [],
+    "submitNewPassword": [
+      "password"
+    ]
+  },
+  "ResetPasswordState": {
+    "constructor": [
+      "stateParameters"
+    ]
+  },
+  "ResetPasswordClient": {
+    "start": [
+      "parameters"
+    ],
+    "submitCode": [
+      "parameters"
+    ],
+    "resendCode": [
+      "parameters"
+    ],
+    "submitNewPassword": [
+      "parameters"
+    ],
+    "performChallengeRequest": [
+      "request"
+    ],
+    "performPollCompletionRequest": [
+      "continuationToken",
+      "pollInterval",
+      "correlationId",
+      "telemetryManager"
+    ],
+    "delay": [
+      "ms"
+    ]
+  },
+  "SignInError": {
+    "isUserNotFound": [],
+    "isInvalidUsername": [],
+    "isPasswordIncorrect": [],
+    "isPasswordResetRequired": [],
+    "isUnsupportedChallengeType": []
+  },
+  "SignInSubmitPasswordError": {
+    "isInvalidPassword": []
+  },
+  "SignInSubmitCodeError": {
+    "isInvalidCode": []
+  },
+  "SignInResendCodeError": {},
+  "SignInResendCodeResult": {
+    "constructor": [
+      "state"
+    ],
+    "createWithError": [
+      "error"
+    ],
+    "isFailed": [],
+    "isCodeRequired": []
+  },
+  "SignInResult": {
+    "constructor": [
+      "state",
+      "resultData"
+    ],
+    "createWithError": [
+      "error"
+    ],
+    "isFailed": [],
+    "isCodeRequired": [],
+    "isPasswordRequired": [],
+    "isCompleted": [],
+    "isAuthMethodRegistrationRequired": [],
+    "isMfaRequired": []
+  },
+  "SignInSubmitCodeResult": {
+    "createWithError": [
+      "error"
+    ],
+    "isFailed": [],
+    "isCompleted": [],
+    "isAuthMethodRegistrationRequired": [],
+    "isMfaRequired": []
+  },
+  "SignInSubmitPasswordResult": {
+    "createWithError": [
+      "error"
+    ],
+    "isFailed": [],
+    "isCompleted": [],
+    "isAuthMethodRegistrationRequired": [],
+    "isMfaRequired": []
+  },
+  "SignInCodeRequiredState": {
+    "stateType": [],
+    "submitCode": [
+      "code"
+    ],
+    "resendCode": [],
+    "getCodeLength": [],
+    "getScopes": []
+  },
+  "SignInCompletedState": {
+    "stateType": []
+  },
+  "SignInContinuationState": {
+    "stateType": [],
+    "signIn": [
+      "signInWithContinuationTokenInputs"
+    ]
+  },
+  "SignInFailedState": {
+    "stateType": []
+  },
+  "SignInPasswordRequiredState": {
+    "stateType": [],
+    "submitPassword": [
+      "password"
+    ],
+    "getScopes": []
+  },
+  "SignInState": {
+    "constructor": [
+      "stateParameters"
+    ],
+    "handleSignInResult": [
+      "result",
+      "scopes"
+    ]
+  },
+  "SignInClient": {
+    "start": [
+      "parameters"
+    ],
+    "resendCode": [
+      "parameters"
+    ],
+    "submitCode": [
+      "parameters"
+    ],
+    "submitPassword": [
+      "parameters"
+    ],
+    "signInWithContinuationToken": [
+      "parameters"
+    ],
+    "performTokenRequest": [
+      "tokenEndpointCaller",
+      "scopes",
+      "correlationId",
+      "telemetryManager",
+      "apiId"
+    ],
+    "performChallengeRequest": [
+      "request"
+    ],
+    "getPublicApiIdBySignInScenario": [
+      "scenario",
+      "correlationId"
+    ],
+    "handleJitRequiredError": [
+      "error",
+      "telemetryManager",
+      "correlationId"
+    ],
+    "handleMfaRequiredError": [
+      "error",
+      "telemetryManager",
+      "correlationId"
+    ]
+  },
+  "SignUpError": {
+    "isUserAlreadyExists": [],
+    "isInvalidUsername": [],
+    "isInvalidPassword": [],
+    "isMissingRequiredAttributes": [],
+    "isAttributesValidationFailed": [],
+    "isUnsupportedChallengeType": []
+  },
+  "SignUpSubmitPasswordError": {
+    "isInvalidPassword": []
+  },
+  "SignUpSubmitCodeError": {
+    "isInvalidCode": []
+  },
+  "SignUpSubmitAttributesError": {
+    "isMissingRequiredAttributes": [],
+    "isAttributesValidationFailed": []
+  },
+  "SignUpResendCodeError": {},
+  "SignUpResendCodeResult": {
+    "constructor": [
+      "state"
+    ],
+    "createWithError": [
+      "error"
+    ],
+    "isFailed": [],
+    "isCodeRequired": []
+  },
+  "SignUpResult": {
+    "constructor": [
+      "state"
+    ],
+    "createWithError": [
+      "error"
+    ],
+    "isFailed": [],
+    "isCodeRequired": [],
+    "isPasswordRequired": [],
+    "isAttributesRequired": []
+  },
+  "SignUpSubmitAttributesResult": {
+    "constructor": [
+      "state"
+    ],
+    "createWithError": [
+      "error"
+    ],
+    "isFailed": [],
+    "isCompleted": []
+  },
+  "SignUpSubmitCodeResult": {
+    "constructor": [
+      "state"
+    ],
+    "createWithError": [
+      "error"
+    ],
+    "isFailed": [],
+    "isPasswordRequired": [],
+    "isAttributesRequired": [],
+    "isCompleted": []
+  },
+  "SignUpSubmitPasswordResult": {
+    "constructor": [
+      "state"
+    ],
+    "createWithError": [
+      "error"
+    ],
+    "isFailed": [],
+    "isAttributesRequired": [],
+    "isCompleted": []
+  },
+  "SignUpAttributesRequiredState": {
+    "stateType": [],
+    "submitAttributes": [
+      "attributes"
+    ],
+    "getRequiredAttributes": []
+  },
+  "SignUpCodeRequiredState": {
+    "stateType": [],
+    "submitCode": [
+      "code"
+    ],
+    "resendCode": [],
+    "getCodeLength": [],
+    "getCodeResendInterval": []
+  },
+  "SignUpCompletedState": {
+    "stateType": []
+  },
+  "SignUpFailedState": {
+    "stateType": []
+  },
+  "SignUpPasswordRequiredState": {
+    "stateType": [],
+    "submitPassword": [
+      "password"
+    ]
+  },
+  "SignUpState": {
+    "constructor": [
+      "stateParameters"
+    ]
+  },
+  "SignUpClient": {
+    "start": [
+      "parameters"
+    ],
+    "submitCode": [
+      "parameters"
+    ],
+    "submitPassword": [
+      "parameters"
+    ],
+    "submitAttributes": [
+      "parameters"
+    ],
+    "resendCode": [
+      "parameters"
+    ],
+    "performChallengeRequest": [
+      "request"
+    ],
+    "performContinueRequest": [
+      "callerName",
+      "requestParams",
+      "telemetryManager",
+      "responseGetter",
+      "requestCorrelationId"
+    ],
+    "handleContinueResponseError": [
+      "responseError",
+      "correlationId",
+      "requestParams",
+      "telemetryManager"
+    ],
+    "isAttributesRequiredError": [
+      "responseError",
+      "correlationId"
+    ],
+    "readContinuationTokenFromResponeError": [
+      "responseError",
+      "correlationId"
+    ]
+  },
+  "BrowserAuthError": {
+    "constructor": [
+      "errorCode",
+      "subError"
+    ]
+  },
+  "BrowserConfigurationAuthError": {
+    "constructor": [
+      "errorCode",
+      "errorMessage"
+    ]
+  },
+  "NativeAuthError": {
+    "ext": [],
+    "constructor": [
+      "errorCode",
+      "description",
+      "ext"
+    ]
+  },
+  "NestedAppAuthError": {
+    "constructor": [
+      "errorCode",
+      "errorMessage"
+    ],
+    "createUnsupportedError": []
+  },
+  "EventHandler": {
+    "eventCallbacks": [],
+    "logger": [],
+    "broadcastChannel": [],
+    "constructor": [
+      "logger"
+    ],
+    "addEventCallback": [
+      "callback",
+      "eventTypes",
+      "callbackId"
+    ],
+    "removeEventCallback": [
+      "callbackId"
+    ],
+    "emitEvent": [
+      "eventType",
+      "correlationId",
+      "interactionType",
+      "payload",
+      "error"
+    ],
+    "invokeCallbacks": [
+      "message"
+    ],
+    "invokeCrossTabCallbacks": [
+      "event"
+    ],
+    "subscribeCrossTab": [],
+    "unsubscribeCrossTab": []
+  },
+  "EventMessageUtils": {
+    "getInteractionStatusFromEvent": [
+      "message",
+      "currentStatus"
+    ]
+  },
+  "BaseInteractionClient": {
+    "config": [],
+    "browserStorage": [],
+    "browserCrypto": [],
+    "networkClient": [],
+    "logger": [],
+    "eventHandler": [],
+    "navigationClient": [],
+    "platformAuthProvider": [],
+    "correlationId": [],
+    "performanceClient": [],
+    "constructor": [
+      "config",
+      "storageImpl",
+      "browserCrypto",
+      "logger",
+      "eventHandler",
+      "navigationClient",
+      "performanceClient",
+      "correlationId",
+      "platformAuthProvider"
+    ],
+    "acquireToken": [
+      "request"
+    ],
+    "logout": [
+      "request"
+    ]
+  },
+  "HybridSpaAuthorizationCodeClient": {
+    "constructor": [
+      "config",
+      "performanceClient"
+    ]
+  },
+  "PlatformAuthInteractionClient": {
+    "apiId": [],
+    "accountId": [],
+    "platformAuthProvider": [],
+    "silentCacheClient": [],
+    "nativeStorageManager": [],
+    "skus": [],
+    "constructor": [
+      "config",
+      "browserStorage",
+      "browserCrypto",
+      "logger",
+      "eventHandler",
+      "navigationClient",
+      "apiId",
+      "performanceClient",
+      "provider",
+      "accountId",
+      "nativeStorageImpl",
+      "correlationId"
+    ],
+    "addRequestSKUs": [
+      "request"
+    ],
+    "acquireToken": [
+      "request",
+      "cacheLookupPolicy"
+    ],
+    "createSilentCacheRequest": [
+      "request",
+      "cachedAccount"
+    ],
+    "acquireTokensFromCache": [
+      "nativeAccountId",
+      "request"
+    ],
+    "acquireTokenRedirect": [
+      "request",
+      "rootMeasurement",
+      "options"
+    ],
+    "handleRedirectPromise": [
+      "performanceClient",
+      "correlationId"
+    ],
+    "logout": [],
+    "handleNativeResponse": [
+      "response",
+      "request",
+      "reqTimestamp"
+    ],
+    "createHomeAccountIdentifier": [
+      "response",
+      "idTokenClaims"
+    ],
+    "generateScopes": [
+      "requestScopes",
+      "responseScopes"
+    ],
+    "generatePopAccessToken": [
+      "response",
+      "request"
+    ],
+    "generateAuthenticationResult": [
+      "response",
+      "request",
+      "idTokenClaims",
+      "accountEntity",
+      "authority",
+      "reqTimestamp"
+    ],
+    "cacheAccount": [
+      "accountEntity",
+      "kmsi"
+    ],
+    "cacheNativeTokens": [
+      "response",
+      "request",
+      "homeAccountIdentifier",
+      "idTokenClaims",
+      "responseAccessToken",
+      "tenantId",
+      "reqTimestamp"
+    ],
+    "getExpiresInValue": [
+      "tokenType",
+      "expiresIn"
+    ],
+    "addTelemetryFromNativeResponse": [
+      "matsResponse"
+    ],
+    "getMATSFromResponse": [
+      "matsResponse"
+    ],
+    "isResponseFromCache": [
+      "mats"
+    ],
+    "initializeNativeRequest": [
+      "request"
+    ],
+    "getCanonicalAuthority": [
+      "request"
+    ],
+    "getPrompt": [
+      "prompt"
+    ],
+    "handleExtraBrokerParams": [
+      "request"
+    ]
+  },
+  "PopupClient": {
+    "currentWindow": [],
+    "nativeStorage": [],
+    "constructor": [
+      "config",
+      "storageImpl",
+      "browserCrypto",
+      "logger",
+      "eventHandler",
+      "navigationClient",
+      "performanceClient",
+      "nativeStorageImpl",
+      "correlationId",
+      "platformAuthHandler"
+    ],
+    "acquireToken": [
+      "request",
+      "pkceCodes"
+    ],
+    "logout": [
+      "logoutRequest"
+    ],
+    "acquireTokenPopupAsync": [
+      "request",
+      "popupParams",
+      "pkceCodes"
+    ],
+    "executeCodeFlow": [
+      "request",
+      "popupParams",
+      "pkceCodes"
+    ],
+    "executeEarFlow": [
+      "request",
+      "popupParams",
+      "pkceCodes"
+    ],
+    "executeCodeFlowWithPost": [
+      "request",
+      "popupParams",
+      "authClient",
+      "pkceVerifier"
+    ],
+    "logoutPopupAsync": [
+      "validRequest",
+      "popupParams",
+      "requestAuthority",
+      "mainWindowRedirectUri"
+    ],
+    "initiateAuthRequest": [
+      "requestUrl",
+      "params"
+    ],
+    "openPopup": [
+      "urlNavigate",
+      "popupParams"
+    ],
+    "openSizedPopup": [
+      "urlNavigate",
+      "param"
+    ],
+    "generatePopupName": [
+      "scopes",
+      "authority"
+    ],
+    "generateLogoutPopupName": [
+      "request"
+    ]
+  },
+  "RedirectClient": {
+    "nativeStorage": [],
+    "constructor": [
+      "config",
+      "storageImpl",
+      "browserCrypto",
+      "logger",
+      "eventHandler",
+      "navigationClient",
+      "performanceClient",
+      "nativeStorageImpl",
+      "correlationId",
+      "platformAuthHandler"
+    ],
+    "acquireToken": [
+      "request"
+    ],
+    "executeCodeFlow": [
+      "request"
+    ],
+    "executeEarFlow": [
+      "request"
+    ],
+    "executeCodeFlowWithPost": [
+      "request"
+    ],
+    "handleRedirectPromise": [
+      "request",
+      "pkceVerifier",
+      "parentMeasurement",
+      "options"
+    ],
+    "getRedirectResponse": [
+      "userProvidedResponse"
+    ],
+    "handleResponse": [
+      "serverParams",
+      "request",
+      "codeVerifier",
+      "serverTelemetryManager"
+    ],
+    "initiateAuthRequest": [
+      "requestUrl"
+    ],
+    "logout": [
+      "logoutRequest"
+    ],
+    "getRedirectStartPage": [
+      "requestStartPage"
+    ]
+  },
+  "SilentAuthCodeClient": {
+    "apiId": [],
+    "constructor": [
+      "config",
+      "storageImpl",
+      "browserCrypto",
+      "logger",
+      "eventHandler",
+      "navigationClient",
+      "apiId",
+      "performanceClient",
+      "correlationId",
+      "platformAuthProvider"
+    ],
+    "acquireToken": [
+      "request"
+    ],
+    "logout": []
+  },
+  "SilentCacheClient": {
+    "acquireToken": [
+      "silentRequest"
+    ],
+    "logout": [
+      "logoutRequest"
+    ]
+  },
+  "SilentIframeClient": {
+    "apiId": [],
+    "nativeStorage": [],
+    "constructor": [
+      "config",
+      "storageImpl",
+      "browserCrypto",
+      "logger",
+      "eventHandler",
+      "navigationClient",
+      "apiId",
+      "performanceClient",
+      "nativeStorageImpl",
+      "correlationId",
+      "platformAuthProvider"
+    ],
+    "acquireToken": [
+      "request"
+    ],
+    "executeCodeFlow": [
+      "request"
+    ],
+    "executeEarFlow": [
+      "request"
+    ],
+    "logout": [],
+    "silentTokenHelper": [
+      "authClient",
+      "request"
+    ]
+  },
+  "SilentRefreshClient": {
+    "acquireToken": [
+      "request"
+    ],
+    "logout": [],
+    "createRefreshTokenClient": [
+      "params"
+    ]
+  },
+  "StandardInteractionClient": {
+    "initializeLogoutRequest": [
+      "logoutRequest"
+    ],
+    "getLogoutHintFromIdTokenClaims": [
+      "account"
+    ],
+    "createAuthCodeClient": [
+      "params"
+    ],
+    "getClientConfiguration": [
+      "params"
+    ]
+  },
+  "InteractionHandler": {
+    "authModule": [],
+    "browserStorage": [],
+    "authCodeRequest": [],
+    "logger": [],
+    "performanceClient": [],
+    "constructor": [
+      "authCodeModule",
+      "storageImpl",
+      "authCodeRequest",
+      "logger",
+      "performanceClient"
+    ],
+    "handleCodeResponse": [
+      "response",
+      "request",
+      "apiId"
+    ],
+    "handleCodeResponseFromServer": [
+      "authCodeResponse",
+      "request",
+      "apiId",
+      "param"
+    ],
+    "createCcsCredentials": [
+      "request"
+    ]
+  },
+  "BridgeProxy": {
+    "bridgeRequests": [],
+    "sdkName": [],
+    "sdkVersion": [],
+    "capabilities": [],
+    "accountContext": [],
+    "initializeNestedAppAuthBridge": [],
+    "getTokenInteractive": [
+      "request"
+    ],
+    "getTokenSilent": [
+      "request"
+    ],
+    "getToken": [
+      "requestType",
+      "request"
+    ],
+    "getHostCapabilities": [],
+    "getAccountContext": [],
+    "buildRequest": [
+      "method",
+      "requestParams"
+    ],
+    "sendRequest": [
+      "method",
+      "requestParams"
+    ],
+    "validateBridgeResultOrThrow": [
+      "input"
+    ],
+    "constructor": [
+      "sdkName",
+      "sdkVersion",
+      "accountContext",
+      "capabilities"
+    ],
+    "create": []
+  },
+  "NestedAppAuthAdapter": {
+    "crypto": [],
+    "logger": [],
+    "clientId": [],
+    "clientCapabilities": [],
+    "constructor": [
+      "clientId",
+      "clientCapabilities",
+      "crypto",
+      "logger"
+    ],
+    "toNaaTokenRequest": [
+      "request"
+    ],
+    "fromNaaTokenResponse": [
+      "request",
+      "response",
+      "reqTimestamp"
+    ],
+    "fromNaaAccountInfo": [
+      "fromAccount",
+      "idToken",
+      "idTokenClaims"
+    ],
+    "fromBridgeError": [
+      "error"
+    ],
+    "toAuthenticationResultFromCache": [
+      "account",
+      "idToken",
+      "accessToken",
+      "request",
+      "correlationId"
+    ]
+  },
+  "NavigationClient": {
+    "navigateInternal": [
+      "url",
+      "options"
+    ],
+    "navigateExternal": [
+      "url",
+      "options"
+    ],
+    "defaultNavigateWindow": [
+      "url",
+      "options"
+    ]
+  },
+  "FetchClient": {
+    "sendGetRequestAsync": [
+      "url",
+      "options"
+    ],
+    "sendPostRequestAsync": [
+      "url",
+      "options"
+    ]
+  },
+  "BaseOperatingContext": {
+    "logger": [],
+    "config": [],
+    "available": [],
+    "browserEnvironment": [],
+    "loggerCallback": [
+      "level",
+      "message"
+    ],
+    "constructor": [
+      "config"
+    ],
+    "getModuleName": [],
+    "getId": [],
+    "initialize": [
+      "correlationId"
+    ],
+    "getConfig": [],
+    "getLogger": [],
+    "isAvailable": [],
+    "isBrowserEnvironment": []
+  },
+  "NestedAppOperatingContext": {
+    "bridgeProxy": [],
+    "accountContext": [],
+    "MODULE_NAME": [],
+    "ID": [],
+    "getModuleName": [],
+    "getId": [],
+    "getBridgeProxy": [],
+    "initialize": [
+      "correlationId"
+    ]
+  },
+  "StandardOperatingContext": {
+    "MODULE_NAME": [],
+    "ID": [],
+    "getModuleName": [],
+    "getId": [],
+    "initialize": [
+      "correlationId"
+    ]
+  },
+  "UnknownOperatingContext": {
+    "MODULE_NAME": [],
+    "ID": [],
+    "getId": [],
+    "getModuleName": [],
+    "initialize": []
+  },
+  "BrowserPerformanceClient": {
+    "constructor": [
+      "configuration",
+      "intFields"
+    ],
+    "generateId": [],
+    "getPageVisibility": [],
+    "deleteIncompleteSubMeasurements": [
+      "inProgressEvent"
+    ],
+    "startMeasurement": [
+      "measureName",
+      "correlationId"
+    ]
+  },
+  "BrowserPerformanceMeasurement": {
+    "measureName": [],
+    "correlationId": [],
+    "startMark": [],
+    "endMark": [],
+    "constructor": [
+      "name",
+      "correlationId"
+    ],
+    "makeMeasureName": [
+      "name",
+      "correlationId"
+    ],
+    "makeStartMark": [
+      "name",
+      "correlationId"
+    ],
+    "makeEndMark": [
+      "name",
+      "correlationId"
+    ],
+    "supportsBrowserPerformance": [],
+    "flushMeasurements": [
+      "correlationId",
+      "measurements"
+    ],
+    "startMeasurement": [],
+    "endMeasurement": [],
+    "flushMeasurement": []
+  },
+  "getDefaultErrorMessage$1": [
+    "code"
+  ],
+  "AuthError": {
+    "constructor": [
+      "errorCode",
+      "errorMessage",
+      "suberror"
+    ],
+    "setCorrelationId": [
+      "correlationId"
+    ]
+  },
+  "createAuthError": [
+    "code",
+    "additionalMessage"
+  ],
+  "ClientConfigurationError": {
+    "constructor": [
+      "errorCode"
+    ]
+  },
+  "createClientConfigurationError": [
+    "errorCode"
+  ],
+  "StringUtils": {
+    "isEmptyObj": [
+      "strObj"
+    ],
+    "startsWith": [
+      "str",
+      "search"
+    ],
+    "endsWith": [
+      "str",
+      "search"
+    ],
+    "queryStringToObject": [
+      "query"
+    ],
+    "trimArrayEntries": [
+      "arr"
+    ],
+    "removeEmptyStringsFromArray": [
+      "arr"
+    ],
+    "jsonParseHelper": [
+      "str"
+    ],
+    "matchPattern": [
+      "pattern",
+      "input"
+    ]
+  },
+  "decode": [
+    "s"
+  ],
+  "ClientAuthError": {
+    "constructor": [
+      "errorCode",
+      "additionalMessage"
+    ]
+  },
+  "createClientAuthError": [
+    "errorCode",
+    "additionalMessage"
+  ],
+  "ScopeSet": {
+    "constructor": [
+      "inputScopes"
+    ],
+    "fromString": [
+      "inputScopeString"
+    ],
+    "createSearchScopes": [
+      "inputScopeString"
+    ],
+    "containsScope": [
+      "scope"
+    ],
+    "containsScopeSet": [
+      "scopeSet"
+    ],
+    "containsOnlyOIDCScopes": [],
+    "appendScope": [
+      "newScope"
+    ],
+    "appendScopes": [
+      "newScopes"
+    ],
+    "removeScope": [
+      "scope"
+    ],
+    "removeOIDCScopes": [],
+    "unionScopeSets": [
+      "otherScopes"
+    ],
+    "intersectingScopeSets": [
+      "otherScopes"
+    ],
+    "getScopeCount": [],
+    "asArray": [],
+    "printScopes": [],
+    "printScopesLowerCase": []
+  },
+  "instrumentBrokerParams": [
+    "parameters",
+    "correlationId",
+    "performanceClient"
+  ],
+  "addResponseType": [
+    "parameters",
+    "responseType"
+  ],
+  "addResponseMode": [
+    "parameters",
+    "responseMode"
+  ],
+  "addNativeBroker": [
+    "parameters"
+  ],
+  "addScopes": [
+    "parameters",
+    "scopes",
+    "param",
+    "param"
+  ],
+  "addClientId": [
+    "parameters",
+    "clientId"
+  ],
+  "addRedirectUri": [
+    "parameters",
+    "redirectUri"
+  ],
+  "addPostLogoutRedirectUri": [
+    "parameters",
+    "redirectUri"
+  ],
+  "addIdTokenHint": [
+    "parameters",
+    "idTokenHint"
+  ],
+  "addDomainHint": [
+    "parameters",
+    "domainHint"
+  ],
+  "addLoginHint": [
+    "parameters",
+    "loginHint"
+  ],
+  "addCcsUpn": [
+    "parameters",
+    "loginHint"
+  ],
+  "addCcsOid": [
+    "parameters",
+    "clientInfo"
+  ],
+  "addSid": [
+    "parameters",
+    "sid"
+  ],
+  "addClaims": [
+    "parameters",
+    "claims",
+    "clientCapabilities"
+  ],
+  "addCorrelationId": [
+    "parameters",
+    "correlationId"
+  ],
+  "addLibraryInfo": [
+    "parameters",
+    "libraryInfo"
+  ],
+  "addApplicationTelemetry": [
+    "parameters",
+    "appTelemetry"
+  ],
+  "addPrompt": [
+    "parameters",
+    "prompt"
+  ],
+  "addState": [
+    "parameters",
+    "state"
+  ],
+  "addNonce": [
+    "parameters",
+    "nonce"
+  ],
+  "addCodeChallengeParams": [
+    "parameters",
+    "codeChallenge",
+    "codeChallengeMethod"
+  ],
+  "addAuthorizationCode": [
+    "parameters",
+    "code"
+  ],
+  "addRefreshToken": [
+    "parameters",
+    "refreshToken"
+  ],
+  "addCodeVerifier": [
+    "parameters",
+    "codeVerifier"
+  ],
+  "addClientSecret": [
+    "parameters",
+    "clientSecret"
+  ],
+  "addClientAssertion": [
+    "parameters",
+    "clientAssertion"
+  ],
+  "addClientAssertionType": [
+    "parameters",
+    "clientAssertionType"
+  ],
+  "addGrantType": [
+    "parameters",
+    "grantType"
+  ],
+  "addClientInfo": [
+    "parameters"
+  ],
+  "addInstanceAware": [
+    "parameters"
+  ],
+  "addExtraParameters": [
+    "parameters",
+    "extraParams"
+  ],
+  "addClientCapabilitiesToClaims$1": [
+    "claims",
+    "clientCapabilities"
+  ],
+  "addPopToken": [
+    "parameters",
+    "cnfString"
+  ],
+  "addSshJwk": [
+    "parameters",
+    "sshJwkString"
+  ],
+  "addServerTelemetry": [
+    "parameters",
+    "serverTelemetryManager"
+  ],
+  "addThrottling": [
+    "parameters"
+  ],
+  "addLogoutHint": [
+    "parameters",
+    "logoutHint"
+  ],
+  "addBrokerParameters": [
+    "parameters",
+    "brokerClientId",
+    "brokerRedirectUri"
+  ],
+  "addEARParameters": [
+    "parameters",
+    "jwk"
+  ],
+  "canonicalizeUrl": [
+    "url"
+  ],
+  "stripLeadingHashOrQuery": [
+    "responseString"
+  ],
+  "getDeserializedResponse": [
+    "responseString"
+  ],
+  "mapToQueryString": [
+    "parameters"
+  ],
+  "normalizeUrlForComparison": [
+    "url"
+  ],
+  "markAsRecentlyUsed": [
+    "correlationId",
+    "data"
+  ],
+  "addLogToCache": [
+    "correlationId",
+    "loggedMessage"
+  ],
+  "getAndFlushLogsFromCache": [
+    "correlationId"
+  ],
+  "isHashedString": [
+    "str"
+  ],
+  "Logger": {
+    "constructor": [
+      "loggerOptions",
+      "packageName",
+      "packageVersion"
+    ],
+    "createDefaultLoggerOptions": [],
+    "clone": [
+      "packageName",
+      "packageVersion"
+    ],
+    "logMessage": [
+      "logMessage",
+      "options"
+    ],
+    "executeCallback": [
+      "level",
+      "message",
+      "containsPii"
+    ],
+    "error": [
+      "message",
+      "correlationId"
+    ],
+    "errorPii": [
+      "message",
+      "correlationId"
+    ],
+    "warning": [
+      "message",
+      "correlationId"
+    ],
+    "warningPii": [
+      "message",
+      "correlationId"
+    ],
+    "info": [
+      "message",
+      "correlationId"
+    ],
+    "infoPii": [
+      "message",
+      "correlationId"
+    ],
+    "verbose": [
+      "message",
+      "correlationId"
+    ],
+    "verbosePii": [
+      "message",
+      "correlationId"
+    ],
+    "trace": [
+      "message",
+      "correlationId"
+    ],
+    "tracePii": [
+      "message",
+      "correlationId"
+    ],
+    "isPiiLoggingEnabled": []
+  },
+  "defaultLoggerCallback": [],
+  "tenantIdMatchesHomeTenant": [
+    "tenantId",
+    "homeAccountId"
+  ],
+  "buildTenantProfile": [
+    "homeAccountId",
+    "localAccountId",
+    "tenantId",
+    "idTokenClaims"
+  ],
+  "updateAccountTenantProfileData": [
+    "baseAccountInfo",
+    "tenantProfile",
+    "idTokenClaims",
+    "idTokenSecret"
+  ],
+  "extractTokenClaims": [
+    "encodedToken",
+    "base64Decode"
+  ],
+  "isKmsi": [
+    "idTokenClaims"
+  ],
+  "getJWSPayload": [
+    "authToken"
+  ],
+  "checkMaxAge": [
+    "authTime",
+    "maxAge"
+  ],
+  "UrlString": {
+    "urlString": [],
+    "constructor": [
+      "url"
+    ],
+    "canonicalizeUri": [
+      "url"
+    ],
+    "validateAsUri": [],
+    "appendQueryString": [
+      "url",
+      "queryString"
+    ],
+    "removeHashFromUrl": [
+      "url"
+    ],
+    "replaceTenantPath": [
+      "tenantId"
+    ],
+    "getUrlComponents": [],
+    "getDomainFromUrl": [
+      "url"
+    ],
+    "getAbsoluteUrl": [
+      "relativeUrl",
+      "baseUrl"
+    ],
+    "constructAuthorityUriFromObject": [
+      "urlObject"
+    ]
+  },
+  "buildOpenIdConfig": [
+    "host",
+    "issuerHost"
+  ],
+  "getAliasesFromStaticSources": [
+    "staticAuthorityOptions",
+    "logger",
+    "correlationId"
+  ],
+  "getAliasesFromMetadata": [
+    "logger",
+    "correlationId",
+    "authorityHost",
+    "cloudDiscoveryMetadata",
+    "source"
+  ],
+  "getCloudDiscoveryMetadataFromHardcodedValues": [
+    "authorityHost"
+  ],
+  "getCloudDiscoveryMetadataFromNetworkResponse": [
+    "response",
+    "authorityHost"
+  ],
+  "CacheError": {
+    "constructor": [
+      "errorCode",
+      "errorMessage"
+    ]
+  },
+  "createCacheError": [
+    "e"
+  ],
+  "buildClientInfo": [
+    "rawClientInfo",
+    "base64Decode"
+  ],
+  "buildClientInfoFromHomeAccountId": [
+    "homeAccountId"
+  ],
+  "getTenantIdFromIdTokenClaims": [
+    "idTokenClaims"
+  ],
+  "getAccountInfo": [
+    "accountEntity"
+  ],
+  "createAccountEntity": [
+    "accountDetails",
+    "authority",
+    "base64Decode"
+  ],
+  "createAccountEntityFromAccountInfo": [
+    "accountInfo",
+    "cloudGraphHostName",
+    "msGraphHost"
+  ],
+  "generateHomeAccountId": [
+    "serverClientInfo",
+    "authType",
+    "logger",
+    "cryptoObj",
+    "correlationId",
+    "idTokenClaims"
+  ],
+  "isAccountEntity": [
+    "entity"
+  ],
+  "CacheManager": {
+    "constructor": [
+      "clientId",
+      "cryptoImpl",
+      "logger",
+      "performanceClient",
+      "staticAuthorityOptions"
+    ],
+    "getAllAccounts": [
+      "param",
+      "correlationId"
+    ],
+    "getAccountInfoFilteredBy": [
+      "accountFilter",
+      "correlationId"
+    ],
+    "getBaseAccountInfo": [
+      "accountFilter",
+      "correlationId"
+    ],
+    "buildTenantProfiles": [
+      "cachedAccounts",
+      "correlationId",
+      "accountFilter"
+    ],
+    "getTenantedAccountInfoByFilter": [
+      "accountInfo",
+      "tokenKeys",
+      "tenantProfile",
+      "correlationId",
+      "tenantProfileFilter"
+    ],
+    "getTenantProfilesFromAccountEntity": [
+      "accountEntity",
+      "correlationId",
+      "targetTenantId",
+      "tenantProfileFilter"
+    ],
+    "tenantProfileMatchesFilter": [
+      "tenantProfile",
+      "tenantProfileFilter"
+    ],
+    "idTokenClaimsMatchTenantProfileFilter": [
+      "idTokenClaims",
+      "tenantProfileFilter"
+    ],
+    "saveCacheRecord": [
+      "cacheRecord",
+      "correlationId",
+      "kmsi",
+      "apiId",
+      "storeInCache"
+    ],
+    "saveAccessToken": [
+      "credential",
+      "correlationId",
+      "kmsi"
+    ],
+    "getAccountsFilteredBy": [
+      "accountFilter",
+      "correlationId"
+    ],
+    "credentialMatchesFilter": [
+      "entity",
+      "filter",
+      "correlationId"
+    ],
+    "getAppMetadataFilteredBy": [
+      "filter",
+      "correlationId"
+    ],
+    "getAuthorityMetadataByAlias": [
+      "host",
+      "correlationId"
+    ],
+    "removeAllAccounts": [
+      "correlationId"
+    ],
+    "removeAccount": [
+      "account",
+      "correlationId"
+    ],
+    "removeAccountContext": [
+      "account",
+      "correlationId"
+    ],
+    "removeAccessToken": [
+      "key",
+      "correlationId"
+    ],
+    "removeAppMetadata": [
+      "correlationId"
+    ],
+    "getIdToken": [
+      "account",
+      "correlationId",
+      "tokenKeys",
+      "targetRealm"
+    ],
+    "getIdTokensByFilter": [
+      "filter",
+      "correlationId",
+      "tokenKeys"
+    ],
+    "idTokenKeyMatchesFilter": [
+      "inputKey",
+      "filter"
+    ],
+    "removeIdToken": [
+      "key",
+      "correlationId"
+    ],
+    "removeRefreshToken": [
+      "key",
+      "correlationId"
+    ],
+    "getAccessToken": [
+      "account",
+      "request",
+      "tokenKeys",
+      "targetRealm"
+    ],
+    "accessTokenKeyMatchesFilter": [
+      "inputKey",
+      "filter",
+      "keyMustContainAllScopes"
+    ],
+    "getAccessTokensByFilter": [
+      "filter",
+      "correlationId"
+    ],
+    "getRefreshToken": [
+      "account",
+      "familyRT",
+      "correlationId",
+      "tokenKeys"
+    ],
+    "refreshTokenKeyMatchesFilter": [
+      "inputKey",
+      "filter"
+    ],
+    "readAppMetadataFromCache": [
+      "environment",
+      "correlationId"
+    ],
+    "isAppMetadataFOCI": [
+      "environment",
+      "correlationId"
+    ],
+    "matchHomeAccountId": [
+      "entity",
+      "homeAccountId"
+    ],
+    "matchLocalAccountIdFromTokenClaims": [
+      "tokenClaims",
+      "localAccountId"
+    ],
+    "matchLocalAccountIdFromTenantProfile": [
+      "tenantProfile",
+      "localAccountId"
+    ],
+    "matchName": [
+      "claims",
+      "name"
+    ],
+    "matchUsername": [
+      "cachedUsername",
+      "filterUsername"
+    ],
+    "matchUserAssertionHash": [
+      "entity",
+      "userAssertionHash"
+    ],
+    "matchEnvironment": [
+      "entity",
+      "environment",
+      "correlationId"
+    ],
+    "matchCredentialType": [
+      "entity",
+      "credentialType"
+    ],
+    "matchClientId": [
+      "entity",
+      "clientId"
+    ],
+    "matchFamilyId": [
+      "entity",
+      "familyId"
+    ],
+    "matchRealm": [
+      "entity",
+      "realm"
+    ],
+    "matchNativeAccountId": [
+      "entity",
+      "nativeAccountId"
+    ],
+    "matchLoginHintFromTokenClaims": [
+      "tokenClaims",
+      "loginHint"
+    ],
+    "matchSid": [
+      "idTokenClaims",
+      "sid"
+    ],
+    "matchAuthorityType": [
+      "entity",
+      "authorityType"
+    ],
+    "matchTarget": [
+      "entity",
+      "target"
+    ],
+    "matchTokenType": [
+      "entity",
+      "tokenType"
+    ],
+    "matchKeyId": [
+      "entity",
+      "keyId"
+    ],
+    "isAppMetadata": [
+      "key"
+    ],
+    "isAuthorityMetadata": [
+      "key"
+    ],
+    "generateAuthorityMetadataCacheKey": [
+      "authority"
+    ],
+    "toObject": [
+      "obj",
+      "json"
+    ]
+  },
+  "keyFilter": [
+    "key"
+  ],
+  "DefaultStorageClass": {
+    "setAccount": [],
+    "getAccount": [],
+    "setIdTokenCredential": [],
+    "getIdTokenCredential": [],
+    "setAccessTokenCredential": [],
+    "getAccessTokenCredential": [],
+    "setRefreshTokenCredential": [],
+    "getRefreshTokenCredential": [],
+    "setAppMetadata": [],
+    "getAppMetadata": [],
+    "setServerTelemetry": [],
+    "getServerTelemetry": [],
+    "setAuthorityMetadata": [],
+    "getAuthorityMetadata": [],
+    "getAuthorityMetadataKeys": [],
+    "setThrottlingCache": [],
+    "getThrottlingCache": [],
+    "removeItem": [],
+    "getKeys": [],
+    "getAccountKeys": [],
+    "getTokenKeys": [],
+    "generateCredentialKey": [],
+    "generateAccountKey": []
+  },
+  "StubPerformanceClient": {
+    "generateId": [],
+    "startMeasurement": [
+      "measureName",
+      "correlationId"
+    ],
+    "endMeasurement": [],
+    "discardMeasurements": [],
+    "removePerformanceCallback": [],
+    "addPerformanceCallback": [],
+    "emitEvents": [],
+    "addFields": [],
+    "incrementFields": [],
+    "cacheEventByCorrelationId": []
+  },
+  "buildClientConfiguration": [
+    "param"
+  ],
+  "buildAuthOptions": [
+    "authOptions"
+  ],
+  "isOidcProtocolMode": [
+    "config"
+  ],
+  "ServerError": {
+    "constructor": [
+      "errorCode",
+      "errorMessage",
+      "subError",
+      "errorNo",
+      "status"
+    ]
+  },
+  "InteractionRequiredAuthError": {
+    "constructor": [
+      "errorCode",
+      "errorMessage",
+      "subError",
+      "timestamp",
+      "traceId",
+      "correlationId",
+      "claims",
+      "errorNo"
+    ]
+  },
+  "isInteractionRequiredError": [
+    "errorCode",
+    "errorString",
+    "subError"
+  ],
+  "createInteractionRequiredAuthError": [
+    "errorCode",
+    "errorMessage"
+  ],
+  "setRequestState": [
+    "cryptoObj",
+    "userState",
+    "meta"
+  ],
+  "generateLibraryState": [
+    "cryptoObj",
+    "meta"
+  ],
+  "parseRequestState": [
+    "base64Decode",
+    "state"
+  ],
+  "nowSeconds": [],
+  "toSecondsFromDate": [
+    "date"
+  ],
+  "toDateFromSeconds": [
+    "seconds"
+  ],
+  "isTokenExpired": [
+    "expiresOn",
+    "offset"
+  ],
+  "isCacheExpired": [
+    "lastUpdatedAt",
+    "cacheRetentionDays"
+  ],
+  "wasClockTurnedBack": [
+    "cachedAt"
+  ],
+  "invoke": [
+    "callback",
+    "eventName",
+    "logger",
+    "telemetryClient",
+    "correlationId"
+  ],
+  "invokeAsync": [
+    "callback",
+    "eventName",
+    "logger",
+    "telemetryClient",
+    "correlationId"
+  ],
+  "PopTokenGenerator": {
+    "constructor": [
+      "cryptoUtils",
+      "performanceClient"
+    ],
+    "generateCnf": [
+      "request",
+      "logger"
+    ],
+    "generateKid": [
+      "request"
+    ],
+    "signPopToken": [
+      "accessToken",
+      "keyId",
+      "request"
+    ],
+    "signPayload": [
+      "payload",
+      "keyId",
+      "request",
+      "claims"
+    ]
+  },
+  "TokenCacheContext": {
+    "constructor": [
+      "tokenCache",
+      "hasChanged"
+    ],
+    "cacheHasChanged": [],
+    "tokenCache": []
+  },
+  "createIdTokenEntity": [
+    "homeAccountId",
+    "environment",
+    "idToken",
+    "clientId",
+    "tenantId"
+  ],
+  "createAccessTokenEntity": [
+    "homeAccountId",
+    "environment",
+    "accessToken",
+    "clientId",
+    "tenantId",
+    "scopes",
+    "expiresOn",
+    "extExpiresOn",
+    "base64Decode",
+    "refreshOn",
+    "tokenType",
+    "userAssertionHash",
+    "keyId"
+  ],
+  "createRefreshTokenEntity": [
+    "homeAccountId",
+    "environment",
+    "refreshToken",
+    "clientId",
+    "familyId",
+    "userAssertionHash",
+    "expiresOn"
+  ],
+  "isCredentialEntity": [
+    "entity"
+  ],
+  "isAccessTokenEntity": [
+    "entity"
+  ],
+  "isIdTokenEntity": [
+    "entity"
+  ],
+  "isRefreshTokenEntity": [
+    "entity"
+  ],
+  "isServerTelemetryEntity": [
+    "key",
+    "entity"
+  ],
+  "isThrottlingEntity": [
+    "key",
+    "entity"
+  ],
+  "generateAppMetadataKey": [
+    "param"
+  ],
+  "isAppMetadataEntity": [
+    "key",
+    "entity"
+  ],
+  "isAuthorityMetadataEntity": [
+    "key",
+    "entity"
+  ],
+  "generateAuthorityMetadataExpiresAt": [],
+  "updateAuthorityEndpointMetadata": [
+    "authorityMetadata",
+    "updatedValues",
+    "fromNetwork"
+  ],
+  "updateCloudDiscoveryMetadata": [
+    "authorityMetadata",
+    "updatedValues",
+    "fromNetwork"
+  ],
+  "isAuthorityMetadataExpired": [
+    "metadata"
+  ],
+  "ResponseHandler": {
+    "constructor": [
+      "clientId",
+      "cacheStorage",
+      "cryptoObj",
+      "logger",
+      "performanceClient",
+      "serializableCache",
+      "persistencePlugin"
+    ],
+    "validateTokenResponse": [
+      "serverResponse",
+      "correlationId",
+      "refreshAccessToken"
+    ],
+    "handleServerTokenResponse": [
+      "serverTokenResponse",
+      "authority",
+      "reqTimestamp",
+      "request",
+      "apiId",
+      "authCodePayload",
+      "userAssertionHash",
+      "handlingRefreshTokenResponse",
+      "forceCacheRefreshTokenResponse",
+      "serverRequestId"
+    ],
+    "generateCacheRecord": [
+      "serverTokenResponse",
+      "authority",
+      "reqTimestamp",
+      "request",
+      "idTokenClaims",
+      "userAssertionHash",
+      "authCodePayload"
+    ],
+    "generateAuthenticationResult": [
+      "cryptoObj",
+      "authority",
+      "cacheRecord",
+      "fromTokenCache",
+      "request",
+      "performanceClient",
+      "idTokenClaims",
+      "requestState",
+      "serverTokenResponse",
+      "requestId"
+    ]
+  },
+  "buildAccountToCache": [
+    "cacheStorage",
+    "authority",
+    "homeAccountId",
+    "base64Decode",
+    "correlationId",
+    "idTokenClaims",
+    "clientInfo",
+    "environment",
+    "claimsTenantId",
+    "authCodePayload",
+    "nativeAccountId",
+    "logger"
+  ],
+  "getClientAssertion": [
+    "clientAssertion",
+    "clientId",
+    "tokenEndpoint"
+  ],
+  "getRequestThumbprint": [
+    "clientId",
+    "request",
+    "homeAccountId"
+  ],
+  "ThrottlingUtils": {
+    "generateThrottlingStorageKey": [
+      "thumbprint"
+    ],
+    "preProcess": [
+      "cacheManager",
+      "thumbprint",
+      "correlationId"
+    ],
+    "postProcess": [
+      "cacheManager",
+      "thumbprint",
+      "response",
+      "correlationId"
+    ],
+    "checkResponseStatus": [
+      "response"
+    ],
+    "checkResponseForRetryAfter": [
+      "response"
+    ],
+    "calculateThrottleTime": [
+      "throttleTime"
+    ],
+    "removeThrottle": [
+      "cacheManager",
+      "clientId",
+      "request",
+      "homeAccountIdentifier"
+    ]
+  },
+  "NetworkError": {
+    "constructor": [
+      "error",
+      "httpStatus",
+      "responseHeaders"
+    ]
+  },
+  "createNetworkError": [
+    "error",
+    "httpStatus",
+    "responseHeaders",
+    "additionalError"
+  ],
+  "createTokenRequestHeaders": [
+    "logger",
+    "preventCorsPreflight",
+    "ccsCred"
+  ],
+  "createTokenQueryParameters": [
+    "request",
+    "clientId",
+    "redirectUri",
+    "performanceClient"
+  ],
+  "executePostToTokenEndpoint": [
+    "tokenEndpoint",
+    "queryString",
+    "headers",
+    "thumbprint",
+    "correlationId",
+    "cacheManager",
+    "networkClient",
+    "logger",
+    "performanceClient",
+    "serverTelemetryManager"
+  ],
+  "sendPostRequest": [
+    "thumbprint",
+    "tokenEndpoint",
+    "options",
+    "correlationId",
+    "cacheManager",
+    "networkClient",
+    "logger",
+    "performanceClient"
+  ],
+  "isOpenIdConfigResponse": [
+    "response"
+  ],
+  "isCloudInstanceDiscoveryResponse": [
+    "response"
+  ],
+  "isCloudInstanceDiscoveryErrorResponse": [
+    "response"
+  ],
+  "RegionDiscovery": {
+    "constructor": [
+      "networkInterface",
+      "logger",
+      "performanceClient",
+      "correlationId"
+    ],
+    "detectRegion": [
+      "environmentRegion",
+      "regionDiscoveryMetadata"
+    ],
+    "getRegionFromIMDS": [
+      "version",
+      "options"
+    ],
+    "getCurrentVersion": [
+      "options"
+    ]
+  },
+  "Authority": {
+    "constructor": [
+      "authority",
+      "networkInterface",
+      "cacheManager",
+      "authorityOptions",
+      "logger",
+      "correlationId",
+      "performanceClient",
+      "managedIdentity"
+    ],
+    "getAuthorityType": [
+      "authorityUri"
+    ],
+    "authorityType": [],
+    "protocolMode": [],
+    "options": [],
+    "canonicalAuthority": [
+      "url"
+    ],
+    "canonicalAuthorityUrlComponents": [],
+    "hostnameAndPort": [],
+    "tenant": [],
+    "authorizationEndpoint": [],
+    "tokenEndpoint": [],
+    "deviceCodeEndpoint": [],
+    "endSessionEndpoint": [],
+    "selfSignedJwtAudience": [],
+    "jwksUri": [],
+    "canReplaceTenant": [
+      "authorityUri"
+    ],
+    "replaceTenant": [
+      "urlString"
+    ],
+    "replacePath": [
+      "urlString"
+    ],
+    "defaultOpenIdConfigurationEndpoint": [],
+    "discoveryComplete": [],
+    "resolveEndpointsAsync": [],
+    "getCurrentMetadataEntity": [],
+    "updateCachedMetadata": [
+      "metadataEntity",
+      "cloudDiscoverySource",
+      "endpointMetadataResult"
+    ],
+    "updateEndpointMetadata": [
+      "metadataEntity"
+    ],
+    "updateEndpointMetadataFromLocalSources": [
+      "metadataEntity"
+    ],
+    "isAuthoritySameType": [
+      "metadataEntity"
+    ],
+    "getEndpointMetadataFromConfig": [],
+    "getEndpointMetadataFromNetwork": [],
+    "getEndpointMetadataFromHardcodedValues": [],
+    "updateMetadataWithRegionalInformation": [
+      "metadata"
+    ],
+    "updateCloudDiscoveryMetadata": [
+      "metadataEntity"
+    ],
+    "updateCloudDiscoveryMetadataFromLocalSources": [
+      "metadataEntity"
+    ],
+    "getCloudDiscoveryMetadataFromConfig": [],
+    "getCloudDiscoveryMetadataFromNetwork": [],
+    "isInKnownAuthorities": [],
+    "generateAuthority": [
+      "authorityString",
+      "azureCloudOptions"
+    ],
+    "createCloudDiscoveryMetadataFromHost": [
+      "host"
+    ],
+    "getPreferredCache": [],
+    "isAlias": [
+      "host"
+    ],
+    "isAliasOfKnownMicrosoftAuthority": [
+      "host"
+    ],
+    "isPublicCloudAuthority": [
+      "host"
+    ],
+    "buildRegionalAuthorityString": [
+      "host",
+      "region",
+      "queryString"
+    ],
+    "replaceWithRegionalInformation": [
+      "metadata",
+      "azureRegion"
+    ],
+    "transformCIAMAuthority": [
+      "authority"
+    ]
+  },
+  "getTenantFromAuthorityString": [
+    "authority"
+  ],
+  "formatAuthorityUri": [
+    "authorityUri"
+  ],
+  "buildStaticAuthorityOptions": [
+    "authOptions"
+  ],
+  "createDiscoveredInstance": [
+    "authorityUri",
+    "networkClient",
+    "cacheManager",
+    "authorityOptions",
+    "logger",
+    "correlationId",
+    "performanceClient"
+  ],
+  "AuthorizationCodeClient": {
+    "constructor": [
+      "configuration",
+      "performanceClient"
+    ],
+    "acquireToken": [
+      "request",
+      "apiId",
+      "authCodePayload"
+    ],
+    "getLogoutUri": [
+      "logoutRequest"
+    ],
+    "executeTokenRequest": [
+      "authority",
+      "request",
+      "serverTelemetryManager"
+    ],
+    "createTokenRequestBody": [
+      "request"
+    ],
+    "createLogoutUrlQueryString": [
+      "request"
+    ],
+    "updateTokenEndpointAuthority": [
+      "cloudInstanceHostName",
+      "correlationId"
+    ]
+  },
+  "RefreshTokenClient": {
+    "constructor": [
+      "configuration",
+      "performanceClient"
+    ],
+    "acquireToken": [
+      "request",
+      "apiId"
+    ],
+    "acquireTokenByRefreshToken": [
+      "request",
+      "apiId"
+    ],
+    "acquireTokenWithCachedRefreshToken": [
+      "request",
+      "foci",
+      "apiId"
+    ],
+    "executeTokenRequest": [
+      "request",
+      "authority"
+    ],
+    "createTokenRequestBody": [
+      "request"
+    ]
+  },
+  "SilentFlowClient": {
+    "constructor": [
+      "configuration",
+      "performanceClient"
+    ],
+    "acquireCachedToken": [
+      "request"
+    ],
+    "setCacheOutcome": [
+      "cacheOutcome",
+      "correlationId"
+    ],
+    "generateResultFromCacheRecord": [
+      "cacheRecord",
+      "request"
+    ]
+  },
+  "getStandardAuthorizeRequestParameters": [
+    "authOptions",
+    "request",
+    "logger",
+    "performanceClient"
+  ],
+  "getAuthorizeUrl": [
+    "authority",
+    "requestParameters"
+  ],
+  "getAuthorizationCodePayload": [
+    "serverParams",
+    "cachedState"
+  ],
+  "validateAuthorizationResponse": [
+    "serverResponse",
+    "requestState"
+  ],
+  "parseServerErrorNo": [
+    "serverResponse"
+  ],
+  "extractAccountSid": [
+    "account"
+  ],
+  "extractLoginHint": [
+    "account"
+  ],
+  "AuthenticationHeaderParser": {
+    "constructor": [
+      "headers"
+    ],
+    "getShrNonce": [],
+    "parseChallenges": [
+      "header"
+    ]
+  },
+  "makeExtraSkuString": [
+    "params"
+  ],
+  "setSku": [
+    "params"
+  ],
+  "ServerTelemetryManager": {
+    "constructor": [
+      "telemetryRequest",
+      "cacheManager"
+    ],
+    "generateCurrentRequestHeaderValue": [],
+    "generateLastRequestHeaderValue": [],
+    "cacheFailedRequest": [
+      "error"
+    ],
+    "incrementCacheHits": [],
+    "getLastRequests": [],
+    "clearTelemetryCache": [],
+    "maxErrorsToSend": [
+      "serverTelemetryEntity"
+    ],
+    "getRegionDiscoveryFields": [],
+    "updateRegionDiscoveryMetadata": [
+      "regionDiscoveryMetadata"
+    ],
+    "setCacheOutcome": [
+      "cacheOutcome"
+    ],
+    "setNativeBrokerErrorCode": [
+      "errorCode"
+    ],
+    "getNativeBrokerErrorCode": [],
+    "clearNativeBrokerErrorCode": [],
+    "makeExtraSkuString": [
+      "params"
+    ]
+  },
+  "JoseHeaderError": {
+    "constructor": [
+      "errorCode",
+      "errorMessage"
+    ]
+  },
+  "createJoseHeaderError": [
+    "code"
+  ],
+  "JoseHeader": {
+    "constructor": [
+      "options"
+    ],
+    "getShrHeaderString": [
+      "shrHeaderOptions"
+    ]
+  },
+  "startContext": [
+    "event",
+    "stack"
+  ],
+  "endContext": [
+    "event",
+    "stack",
+    "error"
+  ],
+  "peek": [
+    "stack"
+  ],
+  "addError": [
+    "error",
+    "logger",
+    "event",
+    "param"
+  ],
+  "compactStack": [
+    "stack",
+    "stackMaxSize"
+  ],
+  "compactStackLine": [
+    "line"
+  ],
+  "getAccountType": [
+    "account"
+  ],
+  "PerformanceClient": {
+    "constructor": [
+      "clientId",
+      "authority",
+      "logger",
+      "libraryName",
+      "libraryVersion",
+      "applicationTelemetry",
+      "intFields"
+    ],
+    "startMeasurement": [
+      "measureName",
+      "correlationId"
+    ],
+    "endMeasurement": [
+      "event",
+      "error",
+      "account"
+    ],
+    "addFields": [
+      "fields",
+      "correlationId"
+    ],
+    "incrementFields": [
+      "fields",
+      "correlationId"
+    ],
+    "cacheEventByCorrelationId": [
+      "event"
+    ],
+    "discardMeasurements": [
+      "correlationId"
+    ],
+    "addPerformanceCallback": [
+      "callback"
+    ],
+    "removePerformanceCallback": [
+      "callbackId"
+    ],
+    "emitEvents": [
+      "events",
+      "correlationId"
+    ],
+    "truncateIntegralFields": [
+      "event"
+    ],
+    "getDurationMs": [
+      "startTimeMs"
+    ]
+  },
+  "getDefaultErrorMessage": [
+    "code"
+  ],
+  "createBrowserAuthError": [
+    "errorCode",
+    "subError"
+  ],
+  "apiIdToName": [
+    "id"
+  ],
+  "urlEncode": [
+    "input"
+  ],
+  "urlEncodeArr": [
+    "inputArr"
+  ],
+  "base64Encode": [
+    "input"
+  ],
+  "base64EncArr": [
+    "aBytes"
+  ],
+  "base64Decode": [
+    "input"
+  ],
+  "base64DecToArr": [
+    "base64String"
+  ],
+  "validateCryptoAvailable": [
+    "skipValidateSubtleCrypto"
+  ],
+  "sha256Digest": [
+    "dataString"
+  ],
+  "getRandomValues": [
+    "dataBuffer"
+  ],
+  "getRandomUint32": [],
+  "createNewGuid": [],
+  "generateKeyPair": [
+    "extractable",
+    "usages"
+  ],
+  "exportJwk": [
+    "key"
+  ],
+  "importJwk": [
+    "key",
+    "extractable",
+    "usages"
+  ],
+  "sign": [
+    "key",
+    "data"
+  ],
+  "generateEarKey": [],
+  "importEarKey": [
+    "earJwk"
+  ],
+  "decryptEarResponse": [
+    "earJwk",
+    "earJwe"
+  ],
+  "generateBaseKey": [],
+  "generateHKDF": [
+    "baseKey"
+  ],
+  "deriveKey": [
+    "baseKey",
+    "nonce",
+    "context"
+  ],
+  "encrypt": [
+    "baseKey",
+    "rawData",
+    "context"
+  ],
+  "decrypt": [
+    "baseKey",
+    "nonce",
+    "context",
+    "encryptedData"
+  ],
+  "hashString": [
+    "plainText"
+  ],
+  "createBrowserConfigurationAuthError": [
+    "errorCode"
+  ],
+  "parseAuthResponseFromUrl": [],
+  "clearHash": [
+    "contentWindow"
+  ],
+  "replaceHash": [
+    "url"
+  ],
+  "isInIframe": [],
+  "isInPopup": [],
+  "cancelPendingBridgeResponse": [
+    "logger",
+    "correlationId"
+  ],
+  "waitForBridgeResponse": [
+    "timeoutMs",
+    "logger",
+    "browserCrypto",
+    "request"
+  ],
+  "getCurrentUri": [],
+  "getHomepage": [],
+  "blockReloadInHiddenIframes": [],
+  "blockRedirectInIframe": [
+    "allowRedirectInIframe"
+  ],
+  "blockAcquireTokenInPopups": [],
+  "blockNonBrowserEnvironment": [],
+  "blockAPICallsBeforeInitialize": [
+    "initialized"
+  ],
+  "preflightCheck$1": [
+    "initialized"
+  ],
+  "redirectPreflightCheck": [
+    "initialized",
+    "config"
+  ],
+  "preconnect": [
+    "authority"
+  ],
+  "createGuid": [],
+  "getSortedObjectString": [
+    "obj"
+  ],
+  "getAccountKeysCacheKey": [
+    "param"
+  ],
+  "getTokenKeysCacheKey": [
+    "clientId",
+    "param"
+  ],
+  "getCookieExpirationTime": [
+    "cookieLifeDays"
+  ],
+  "getAccountKeys": [
+    "storage",
+    "schemaVersion"
+  ],
+  "getTokenKeys": [
+    "clientId",
+    "storage",
+    "schemaVersion"
+  ],
+  "isEncrypted": [
+    "data"
+  ],
+  "removeElementFromArray": [
+    "array",
+    "element"
+  ],
+  "getStorageImplementation": [
+    "clientId",
+    "cacheLocation",
+    "logger",
+    "performanceClient"
+  ],
+  "DEFAULT_BROWSER_CACHE_MANAGER": [
+    "clientId",
+    "logger",
+    "performanceClient",
+    "eventHandler"
+  ],
+  "getAllAccounts": [
+    "logger",
+    "browserStorage",
+    "isInBrowser",
+    "correlationId",
+    "accountFilter"
+  ],
+  "getAccount": [
+    "accountFilter",
+    "logger",
+    "browserStorage",
+    "correlationId"
+  ],
+  "setActiveAccount": [
+    "account",
+    "browserStorage",
+    "correlationId"
+  ],
+  "getActiveAccount": [
+    "browserStorage",
+    "correlationId"
+  ],
+  "getRedirectUri": [
+    "requestRedirectUri",
+    "clientConfigRedirectUri",
+    "logger",
+    "correlationId"
+  ],
+  "initializeServerTelemetryManager": [
+    "apiId",
+    "clientId",
+    "correlationId",
+    "browserStorage",
+    "logger",
+    "forceRefresh"
+  ],
+  "getDiscoveredAuthority": [
+    "config",
+    "correlationId",
+    "performanceClient",
+    "browserStorage",
+    "logger",
+    "requestAuthority",
+    "requestAzureCloudOptions",
+    "requestExtraQueryParameters",
+    "account"
+  ],
+  "clearCacheOnLogout": [
+    "browserStorage",
+    "browserCrypto",
+    "logger",
+    "correlationId",
+    "account"
+  ],
+  "initializeBaseRequest": [
+    "request",
+    "config",
+    "performanceClient",
+    "logger",
+    "correlationId"
+  ],
+  "initializeSilentRequest": [
+    "request",
+    "account",
+    "config",
+    "performanceClient",
+    "logger"
+  ],
+  "validateRequestMethod": [
+    "interactionRequest",
+    "protocolMode"
+  ],
+  "initializeAuthorizationRequest": [
+    "request",
+    "interactionType",
+    "config",
+    "browserCrypto",
+    "browserStorage",
+    "logger",
+    "performanceClient",
+    "correlationId"
+  ],
+  "extractBrowserRequestState": [
+    "browserCrypto",
+    "state"
+  ],
+  "deserializeResponse": [
+    "responseString",
+    "responseLocation",
+    "logger",
+    "correlationId"
+  ],
+  "validateInteractionType": [
+    "response",
+    "browserCrypto",
+    "interactionType"
+  ],
+  "isFatalNativeAuthError": [
+    "error"
+  ],
+  "createNativeAuthError": [
+    "code",
+    "description",
+    "ext"
+  ],
+  "getStandardParameters": [
+    "config",
+    "authority",
+    "request",
+    "logger",
+    "performanceClient"
+  ],
+  "getAuthCodeRequestUrl": [
+    "config",
+    "authority",
+    "request",
+    "logger",
+    "performanceClient"
+  ],
+  "getEARForm": [
+    "frame",
+    "config",
+    "authority",
+    "request",
+    "logger",
+    "performanceClient"
+  ],
+  "getCodeForm": [
+    "frame",
+    "config",
+    "authority",
+    "request",
+    "logger",
+    "performanceClient"
+  ],
+  "createForm": [
+    "frame",
+    "authorizeUrl",
+    "parameters"
+  ],
+  "handleResponsePlatformBroker": [
+    "request",
+    "accountId",
+    "apiId",
+    "config",
+    "browserStorage",
+    "nativeStorage",
+    "eventHandler",
+    "logger",
+    "performanceClient",
+    "platformAuthProvider"
+  ],
+  "handleResponseCode": [
+    "request",
+    "response",
+    "codeVerifier",
+    "apiId",
+    "config",
+    "authClient",
+    "browserStorage",
+    "nativeStorage",
+    "eventHandler",
+    "logger",
+    "performanceClient",
+    "platformAuthProvider"
+  ],
+  "handleResponseEAR": [
+    "request",
+    "response",
+    "apiId",
+    "config",
+    "authority",
+    "browserStorage",
+    "nativeStorage",
+    "eventHandler",
+    "logger",
+    "performanceClient",
+    "platformAuthProvider"
+  ],
+  "generatePkceCodes": [
+    "performanceClient",
+    "logger",
+    "correlationId"
+  ],
+  "generateCodeVerifier": [
+    "performanceClient",
+    "logger",
+    "correlationId"
+  ],
+  "generateCodeChallengeFromVerifier": [
+    "pkceCodeVerifier",
+    "performanceClient",
+    "logger",
+    "correlationId"
+  ],
+  "getFetchHeaders": [
+    "options"
+  ],
+  "getHeaderDict": [
+    "headers"
+  ],
+  "buildConfiguration": [
+    "param",
+    "isBrowserEnvironment"
+  ],
+  "isPlatformBrokerAvailable": [
+    "loggerOptions",
+    "perfClient",
+    "correlationId"
+  ],
+  "getPlatformAuthProvider": [
+    "logger",
+    "performanceClient",
+    "correlationId",
+    "nativeBrokerHandshakeTimeout"
+  ],
+  "isDomEnabledForPlatformAuth": [],
+  "isPlatformAuthAllowed": [
+    "config",
+    "logger",
+    "correlationId",
+    "platformAuthProvider",
+    "authenticationScheme"
+  ],
+  "getNavigationType": [],
+  "handleBackButton": [
+    "event"
+  ],
+  "initiateCodeRequest": [
+    "requestUrl",
+    "performanceClient",
+    "logger",
+    "correlationId"
+  ],
+  "initiateCodeFlowWithPost": [
+    "config",
+    "authority",
+    "request",
+    "logger",
+    "performanceClient"
+  ],
+  "initiateEarRequest": [
+    "config",
+    "authority",
+    "request",
+    "logger",
+    "performanceClient"
+  ],
+  "loadFrameSync": [
+    "urlNavigate"
+  ],
+  "createHiddenIframe": [],
+  "collectInstanceStats": [
+    "currentClientId",
+    "performanceEvent",
+    "logger",
+    "correlationId"
+  ],
+  "preflightCheck": [
+    "initialized"
+  ],
+  "trackPageVisibility": [],
+  "checkIfRefreshTokenErrorCanBeResolvedSilently": [
+    "refreshTokenError",
+    "cacheLookupPolicy"
+  ],
+  "isBridgeError": [
+    "error"
+  ],
+  "createNestablePublicClientApplication": [
+    "configuration",
+    "correlationId",
+    "pcaFactory"
+  ],
+  "createStandardPublicClientApplication": [
+    "configuration"
+  ],
+  "loadExternalTokens": [
+    "config",
+    "request",
+    "response",
+    "options",
+    "param"
+  ],
+  "loadAccount": [
+    "request",
+    "clientInfo",
+    "correlationId",
+    "storage",
+    "logger",
+    "cryptoObj",
+    "authority",
+    "idTokenClaims"
+  ],
+  "loadIdToken": [
+    "response",
+    "homeAccountId",
+    "environment",
+    "tenantId",
+    "kmsi",
+    "correlationId",
+    "storage",
+    "logger",
+    "clientId"
+  ],
+  "loadAccessToken": [
+    "request",
+    "response",
+    "homeAccountId",
+    "environment",
+    "tenantId",
+    "kmsi",
+    "options",
+    "correlationId",
+    "storage",
+    "logger",
+    "clientId"
+  ],
+  "loadRefreshToken": [
+    "response",
+    "homeAccountId",
+    "environment",
+    "kmsi",
+    "correlationId",
+    "storage",
+    "logger",
+    "clientId",
+    "performanceClient"
+  ],
+  "generateAuthenticationResult": [
+    "request",
+    "cacheRecord",
+    "authority",
+    "idTokenClaims"
+  ],
+  "getPerfMeasurementModule": [],
+  "supportsBrowserPerformanceNow": [],
+  "getPerfDurationMs": [
+    "startTime"
+  ],
+  "ye": [
+    "e"
+  ],
+  "we": {
+    "constructor": [
+      "e",
+      "t",
+      "r"
+    ],
+    "setCorrelationId": [
+      "e"
+    ]
+  },
+  "Ie": [
+    "e",
+    "t"
+  ],
+  "Ce": {
+    "constructor": [
+      "e"
+    ]
+  },
+  "ve": [
+    "e"
+  ],
+  "ke": {
+    "isEmptyObj": [
+      "e"
+    ],
+    "startsWith": [
+      "e",
+      "t"
+    ],
+    "endsWith": [
+      "e",
+      "t"
+    ],
+    "queryStringToObject": [
+      "e"
+    ],
+    "trimArrayEntries": [
+      "e"
+    ],
+    "removeEmptyStringsFromArray": [
+      "e"
+    ],
+    "jsonParseHelper": [
+      "e"
+    ],
+    "matchPattern": [
+      "e",
+      "t"
+    ]
+  },
+  "n": [
+    "t"
+  ],
+  "Te": {
+    "constructor": [
+      "e",
+      "t"
+    ]
+  },
+  "be": [
+    "e",
+    "t"
+  ],
+  "_t": {
+    "constructor": [
+      "e"
+    ],
+    "fromString": [
+      "e"
+    ],
+    "createSearchScopes": [
+      "e"
+    ],
+    "containsScope": [
+      "e"
+    ],
+    "containsScopeSet": [
+      "e"
+    ],
+    "containsOnlyOIDCScopes": [],
+    "appendScope": [
+      "e"
+    ],
+    "appendScopes": [
+      "e"
+    ],
+    "removeScope": [
+      "e"
+    ],
+    "removeOIDCScopes": [],
+    "unionScopeSets": [
+      "e"
+    ],
+    "intersectingScopeSets": [
+      "e"
+    ],
+    "getScopeCount": [],
+    "asArray": [],
+    "printScopes": [],
+    "printScopesLowerCase": []
+  },
+  "Et": [
+    "e",
+    "t",
+    "r"
+  ],
+  "Pt": [
+    "e",
+    "t"
+  ],
+  "Rt": [
+    "e",
+    "t",
+    "param",
+    "param"
+  ],
+  "Ot": [
+    "e",
+    "t"
+  ],
+  "Mt": [
+    "e",
+    "t"
+  ],
+  "xt": [
+    "e",
+    "t"
+  ],
+  "qt": [
+    "e",
+    "t"
+  ],
+  "Nt": [
+    "e",
+    "t"
+  ],
+  "Ut": [
+    "e",
+    "t"
+  ],
+  "Lt": [
+    "e",
+    "t",
+    "r"
+  ],
+  "Ht": [
+    "e",
+    "t"
+  ],
+  "Dt": [
+    "e",
+    "t"
+  ],
+  "Ft": [
+    "e",
+    "t"
+  ],
+  "Kt": [
+    "e",
+    "t"
+  ],
+  "Bt": [
+    "e",
+    "t",
+    "r"
+  ],
+  "zt": [
+    "e",
+    "t"
+  ],
+  "jt": [
+    "e",
+    "t"
+  ],
+  "$t": [
+    "e",
+    "t"
+  ],
+  "Jt": [
+    "e",
+    "t"
+  ],
+  "Wt": [
+    "e"
+  ],
+  "Gt": [
+    "e"
+  ],
+  "Qt": [
+    "e",
+    "t"
+  ],
+  "Vt": [
+    "e",
+    "t"
+  ],
+  "Xt": [
+    "e",
+    "t"
+  ],
+  "Yt": [
+    "e",
+    "t"
+  ],
+  "Zt": [
+    "e",
+    "t"
+  ],
+  "er": [
+    "e"
+  ],
+  "tr": [
+    "e",
+    "t",
+    "r"
+  ],
+  "rr": [
+    "e"
+  ],
+  "nr": [
+    "e"
+  ],
+  "or": [
+    "e"
+  ],
+  "ir": [
+    "e"
+  ],
+  "sr": [
+    "e"
+  ],
+  "lr": [
+    "e",
+    "t"
+  ],
+  "dr": {
+    "constructor": [
+      "t",
+      "r",
+      "n"
+    ],
+    "createDefaultLoggerOptions": [],
+    "clone": [
+      "e",
+      "t"
+    ],
+    "logMessage": [
+      "t",
+      "r"
+    ],
+    "executeCallback": [
+      "e",
+      "t",
+      "r"
+    ],
+    "error": [
+      "t",
+      "r"
+    ],
+    "errorPii": [
+      "t",
+      "r"
+    ],
+    "warning": [
+      "t",
+      "r"
+    ],
+    "warningPii": [
+      "t",
+      "r"
+    ],
+    "info": [
+      "t",
+      "r"
+    ],
+    "infoPii": [
+      "t",
+      "r"
+    ],
+    "verbose": [
+      "t",
+      "r"
+    ],
+    "verbosePii": [
+      "t",
+      "r"
+    ],
+    "trace": [
+      "t",
+      "r"
+    ],
+    "tracePii": [
+      "t",
+      "r"
+    ],
+    "isPiiLoggingEnabled": []
+  },
+  "mr": [
+    "e",
+    "t"
+  ],
+  "fr": [
+    "e",
+    "t",
+    "r",
+    "n"
+  ],
+  "yr": [
+    "e",
+    "t",
+    "r",
+    "n"
+  ],
+  "wr": [
+    "e",
+    "t"
+  ],
+  "Ir": [
+    "e"
+  ],
+  "Cr": [
+    "e",
+    "t"
+  ],
+  "vr": {
+    "urlString": [],
+    "constructor": [
+      "e"
+    ],
+    "canonicalizeUri": [
+      "e"
+    ],
+    "validateAsUri": [],
+    "appendQueryString": [
+      "e",
+      "t"
+    ],
+    "removeHashFromUrl": [
+      "e"
+    ],
+    "replaceTenantPath": [
+      "e"
+    ],
+    "getUrlComponents": [],
+    "getDomainFromUrl": [
+      "e"
+    ],
+    "getAbsoluteUrl": [
+      "e",
+      "t"
+    ],
+    "constructAuthorityUriFromObject": [
+      "e"
+    ]
+  },
+  "Sr": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o"
+  ],
+  "_r": [
+    "e",
+    "t"
+  ],
+  "Pr": {
+    "constructor": [
+      "e",
+      "t"
+    ]
+  },
+  "Rr": [
+    "e"
+  ],
+  "Or": [
+    "e",
+    "t"
+  ],
+  "Mr": [
+    "e"
+  ],
+  "Lr": [
+    "e"
+  ],
+  "Dr": [
+    "e"
+  ],
+  "Fr": [
+    "e",
+    "t",
+    "r"
+  ],
+  "Kr": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i"
+  ],
+  "Br": {
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o"
+    ],
+    "getAllAccounts": [
+      "param",
+      "t"
+    ],
+    "getAccountInfoFilteredBy": [
+      "e",
+      "t"
+    ],
+    "getBaseAccountInfo": [
+      "e",
+      "t"
+    ],
+    "buildTenantProfiles": [
+      "e",
+      "t",
+      "r"
+    ],
+    "getTenantedAccountInfoByFilter": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o"
+    ],
+    "getTenantProfilesFromAccountEntity": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ],
+    "tenantProfileMatchesFilter": [
+      "e",
+      "t"
+    ],
+    "idTokenClaimsMatchTenantProfileFilter": [
+      "e",
+      "t"
+    ],
+    "saveCacheRecord": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o"
+    ],
+    "saveAccessToken": [
+      "e",
+      "t",
+      "r"
+    ],
+    "getAccountsFilteredBy": [
+      "e",
+      "t"
+    ],
+    "credentialMatchesFilter": [
+      "e",
+      "t",
+      "r"
+    ],
+    "getAppMetadataFilteredBy": [
+      "e",
+      "t"
+    ],
+    "getAuthorityMetadataByAlias": [
+      "e",
+      "t"
+    ],
+    "removeAllAccounts": [
+      "e"
+    ],
+    "removeAccount": [
+      "e",
+      "t"
+    ],
+    "removeAccountContext": [
+      "e",
+      "t"
+    ],
+    "removeAccessToken": [
+      "e",
+      "t"
+    ],
+    "removeAppMetadata": [
+      "e"
+    ],
+    "getIdToken": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ],
+    "getIdTokensByFilter": [
+      "e",
+      "t",
+      "r"
+    ],
+    "idTokenKeyMatchesFilter": [
+      "e",
+      "t"
+    ],
+    "removeIdToken": [
+      "e",
+      "t"
+    ],
+    "removeRefreshToken": [
+      "e",
+      "t"
+    ],
+    "getAccessToken": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ],
+    "accessTokenKeyMatchesFilter": [
+      "e",
+      "t",
+      "r"
+    ],
+    "getAccessTokensByFilter": [
+      "e",
+      "t"
+    ],
+    "getRefreshToken": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ],
+    "refreshTokenKeyMatchesFilter": [
+      "e",
+      "t"
+    ],
+    "readAppMetadataFromCache": [
+      "e",
+      "t"
+    ],
+    "isAppMetadataFOCI": [
+      "e",
+      "t"
+    ],
+    "matchHomeAccountId": [
+      "e",
+      "t"
+    ],
+    "matchLocalAccountIdFromTokenClaims": [
+      "e",
+      "t"
+    ],
+    "matchLocalAccountIdFromTenantProfile": [
+      "e",
+      "t"
+    ],
+    "matchName": [
+      "e",
+      "t"
+    ],
+    "matchUsername": [
+      "e",
+      "t"
+    ],
+    "matchUserAssertionHash": [
+      "e",
+      "t"
+    ],
+    "matchEnvironment": [
+      "e",
+      "t",
+      "r"
+    ],
+    "matchCredentialType": [
+      "e",
+      "t"
+    ],
+    "matchClientId": [
+      "e",
+      "t"
+    ],
+    "matchFamilyId": [
+      "e",
+      "t"
+    ],
+    "matchRealm": [
+      "e",
+      "t"
+    ],
+    "matchNativeAccountId": [
+      "e",
+      "t"
+    ],
+    "matchLoginHintFromTokenClaims": [
+      "e",
+      "t"
+    ],
+    "matchSid": [
+      "e",
+      "t"
+    ],
+    "matchAuthorityType": [
+      "e",
+      "t"
+    ],
+    "matchTarget": [
+      "e",
+      "t"
+    ],
+    "matchTokenType": [
+      "e",
+      "t"
+    ],
+    "matchKeyId": [
+      "e",
+      "t"
+    ],
+    "isAppMetadata": [
+      "e"
+    ],
+    "isAuthorityMetadata": [
+      "e"
+    ],
+    "generateAuthorityMetadataCacheKey": [
+      "e"
+    ],
+    "toObject": [
+      "e",
+      "t"
+    ]
+  },
+  "zr": {
+    "setAccount": [],
+    "getAccount": [],
+    "setIdTokenCredential": [],
+    "getIdTokenCredential": [],
+    "setAccessTokenCredential": [],
+    "getAccessTokenCredential": [],
+    "setRefreshTokenCredential": [],
+    "getRefreshTokenCredential": [],
+    "setAppMetadata": [],
+    "getAppMetadata": [],
+    "setServerTelemetry": [],
+    "getServerTelemetry": [],
+    "setAuthorityMetadata": [],
+    "getAuthorityMetadata": [],
+    "getAuthorityMetadataKeys": [],
+    "setThrottlingCache": [],
+    "getThrottlingCache": [],
+    "removeItem": [],
+    "getKeys": [],
+    "getAccountKeys": [],
+    "getTokenKeys": [],
+    "generateCredentialKey": [],
+    "generateAccountKey": []
+  },
+  "Wr": {
+    "generateId": [],
+    "startMeasurement": [
+      "e",
+      "t"
+    ],
+    "endMeasurement": [],
+    "discardMeasurements": [],
+    "removePerformanceCallback": [],
+    "addPerformanceCallback": [],
+    "emitEvents": [],
+    "addFields": [],
+    "incrementFields": [],
+    "cacheEventByCorrelationId": []
+  },
+  "tn": [
+    "param"
+  ],
+  "rn": [
+    "e"
+  ],
+  "nn": {
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o"
+    ]
+  },
+  "fn": {
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o",
+      "i",
+      "s",
+      "a"
+    ]
+  },
+  "yn": [
+    "e",
+    "t",
+    "r"
+  ],
+  "wn": [
+    "e",
+    "t"
+  ],
+  "In": [
+    "e",
+    "t",
+    "r"
+  ],
+  "Cn": [
+    "e",
+    "t"
+  ],
+  "vn": [],
+  "kn": [
+    "e"
+  ],
+  "Tn": [
+    "e"
+  ],
+  "bn": [
+    "e",
+    "t"
+  ],
+  "An": [
+    "e",
+    "t"
+  ],
+  "Sn": [
+    "e"
+  ],
+  "Nn": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o"
+  ],
+  "Un": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o"
+  ],
+  "Hn": {
+    "constructor": [
+      "e",
+      "t"
+    ],
+    "generateCnf": [
+      "e",
+      "t"
+    ],
+    "generateKid": [
+      "e"
+    ],
+    "signPopToken": [
+      "e",
+      "t",
+      "r"
+    ],
+    "signPayload": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ]
+  },
+  "Dn": {
+    "constructor": [
+      "e",
+      "t"
+    ],
+    "cacheHasChanged": [],
+    "tokenCache": []
+  },
+  "Fn": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o"
+  ],
+  "Kn": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i",
+    "s",
+    "a",
+    "c",
+    "h",
+    "l",
+    "d",
+    "u"
+  ],
+  "Bn": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i",
+    "s"
+  ],
+  "zn": [
+    "e"
+  ],
+  "jn": [
+    "e"
+  ],
+  "$n": [
+    "e"
+  ],
+  "Jn": [],
+  "Wn": [
+    "e",
+    "t",
+    "r"
+  ],
+  "Gn": [
+    "e",
+    "t",
+    "r"
+  ],
+  "Qn": [
+    "e"
+  ],
+  "Vn": {
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o",
+      "i",
+      "s"
+    ],
+    "validateTokenResponse": [
+      "e",
+      "t",
+      "r"
+    ],
+    "handleServerTokenResponse": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o",
+      "i",
+      "s",
+      "a",
+      "c",
+      "h"
+    ],
+    "generateCacheRecord": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o",
+      "i",
+      "s"
+    ],
+    "generateAuthenticationResult": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o",
+      "i",
+      "s",
+      "a",
+      "c",
+      "h"
+    ]
+  },
+  "Xn": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i",
+    "s",
+    "a",
+    "c",
+    "h",
+    "l",
+    "d"
+  ],
+  "eo": [
+    "e",
+    "t",
+    "r"
+  ],
+  "to": [
+    "e",
+    "t",
+    "r"
+  ],
+  "ro": {
+    "generateThrottlingStorageKey": [
+      "e"
+    ],
+    "preProcess": [
+      "e",
+      "t",
+      "r"
+    ],
+    "postProcess": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ],
+    "checkResponseStatus": [
+      "e"
+    ],
+    "checkResponseForRetryAfter": [
+      "e"
+    ],
+    "calculateThrottleTime": [
+      "e"
+    ],
+    "removeThrottle": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ]
+  },
+  "no": {
+    "constructor": [
+      "e",
+      "t",
+      "r"
+    ]
+  },
+  "oo": [
+    "e",
+    "t",
+    "r",
+    "n"
+  ],
+  "io": [
+    "e",
+    "t",
+    "r"
+  ],
+  "so": [
+    "e",
+    "t",
+    "r",
+    "n"
+  ],
+  "ao": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i",
+    "s",
+    "a",
+    "c",
+    "h"
+  ],
+  "co": {
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ],
+    "detectRegion": [
+      "e",
+      "t"
+    ],
+    "getRegionFromIMDS": [
+      "e",
+      "t"
+    ],
+    "getCurrentVersion": [
+      "e"
+    ]
+  },
+  "ho": {
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o",
+      "i",
+      "s",
+      "a"
+    ],
+    "getAuthorityType": [
+      "e"
+    ],
+    "authorityType": [],
+    "protocolMode": [],
+    "options": [],
+    "canonicalAuthority": [
+      "e"
+    ],
+    "canonicalAuthorityUrlComponents": [],
+    "hostnameAndPort": [],
+    "tenant": [],
+    "authorizationEndpoint": [],
+    "tokenEndpoint": [],
+    "deviceCodeEndpoint": [],
+    "endSessionEndpoint": [],
+    "selfSignedJwtAudience": [],
+    "jwksUri": [],
+    "canReplaceTenant": [
+      "e"
+    ],
+    "replaceTenant": [
+      "e"
+    ],
+    "replacePath": [
+      "e"
+    ],
+    "defaultOpenIdConfigurationEndpoint": [],
+    "discoveryComplete": [],
+    "resolveEndpointsAsync": [],
+    "getCurrentMetadataEntity": [],
+    "updateCachedMetadata": [
+      "e",
+      "t",
+      "r"
+    ],
+    "updateEndpointMetadata": [
+      "e"
+    ],
+    "updateEndpointMetadataFromLocalSources": [
+      "e"
+    ],
+    "isAuthoritySameType": [
+      "e"
+    ],
+    "getEndpointMetadataFromConfig": [],
+    "getEndpointMetadataFromNetwork": [],
+    "getEndpointMetadataFromHardcodedValues": [],
+    "updateMetadataWithRegionalInformation": [
+      "e"
+    ],
+    "updateCloudDiscoveryMetadata": [
+      "e"
+    ],
+    "updateCloudDiscoveryMetadataFromLocalSources": [
+      "e"
+    ],
+    "getCloudDiscoveryMetadataFromConfig": [],
+    "getCloudDiscoveryMetadataFromNetwork": [],
+    "isInKnownAuthorities": [],
+    "generateAuthority": [
+      "e",
+      "t"
+    ],
+    "createCloudDiscoveryMetadataFromHost": [
+      "e"
+    ],
+    "getPreferredCache": [],
+    "isAlias": [
+      "e"
+    ],
+    "isAliasOfKnownMicrosoftAuthority": [
+      "e"
+    ],
+    "isPublicCloudAuthority": [
+      "e"
+    ],
+    "buildRegionalAuthorityString": [
+      "e",
+      "t",
+      "r"
+    ],
+    "replaceWithRegionalInformation": [
+      "e",
+      "t"
+    ],
+    "transformCIAMAuthority": [
+      "e"
+    ]
+  },
+  "lo": [
+    "e"
+  ],
+  "uo": [
+    "e"
+  ],
+  "go": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i",
+    "s"
+  ],
+  "po": {
+    "constructor": [
+      "e",
+      "t"
+    ],
+    "acquireToken": [
+      "e",
+      "t",
+      "r"
+    ],
+    "getLogoutUri": [
+      "e"
+    ],
+    "executeTokenRequest": [
+      "e",
+      "t",
+      "r"
+    ],
+    "createTokenRequestBody": [
+      "e"
+    ],
+    "createLogoutUrlQueryString": [
+      "e"
+    ],
+    "updateTokenEndpointAuthority": [
+      "e",
+      "t"
+    ]
+  },
+  "mo": {
+    "constructor": [
+      "e",
+      "t"
+    ],
+    "acquireToken": [
+      "e",
+      "t"
+    ],
+    "acquireTokenByRefreshToken": [
+      "e",
+      "t"
+    ],
+    "acquireTokenWithCachedRefreshToken": [
+      "e",
+      "t",
+      "r"
+    ],
+    "executeTokenRequest": [
+      "e",
+      "t"
+    ],
+    "createTokenRequestBody": [
+      "e"
+    ]
+  },
+  "fo": {
+    "constructor": [
+      "e",
+      "t"
+    ],
+    "acquireCachedToken": [
+      "e"
+    ],
+    "setCacheOutcome": [
+      "e",
+      "t"
+    ],
+    "generateResultFromCacheRecord": [
+      "e",
+      "t"
+    ]
+  },
+  "wo": [
+    "e",
+    "t",
+    "r",
+    "n"
+  ],
+  "Io": [
+    "e",
+    "t"
+  ],
+  "Co": [
+    "e",
+    "t"
+  ],
+  "To": [
+    "e"
+  ],
+  "bo": {
+    "constructor": [
+      "e",
+      "t"
+    ],
+    "generateCurrentRequestHeaderValue": [],
+    "generateLastRequestHeaderValue": [],
+    "cacheFailedRequest": [
+      "e"
+    ],
+    "incrementCacheHits": [],
+    "getLastRequests": [],
+    "clearTelemetryCache": [],
+    "maxErrorsToSend": [
+      "e"
+    ],
+    "getRegionDiscoveryFields": [],
+    "updateRegionDiscoveryMetadata": [
+      "e"
+    ],
+    "setCacheOutcome": [
+      "e"
+    ],
+    "setNativeBrokerErrorCode": [
+      "e"
+    ],
+    "getNativeBrokerErrorCode": [],
+    "clearNativeBrokerErrorCode": [],
+    "makeExtraSkuString": [
+      "e"
+    ]
+  },
+  "Ao": {
+    "constructor": [
+      "e",
+      "t"
+    ]
+  },
+  "So": [
+    "e"
+  ],
+  "_o": {
+    "constructor": [
+      "e"
+    ],
+    "getShrHeaderString": [
+      "e"
+    ]
+  },
+  "Eo": [
+    "e",
+    "t",
+    "r",
+    "param"
+  ],
+  "Po": [
+    "e"
+  ],
+  "Ro": {
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o",
+      "i",
+      "s"
+    ],
+    "startMeasurement": [
+      "e",
+      "t"
+    ],
+    "endMeasurement": [
+      "e",
+      "t",
+      "r"
+    ],
+    "addFields": [
+      "e",
+      "t"
+    ],
+    "incrementFields": [
+      "e",
+      "t"
+    ],
+    "cacheEventByCorrelationId": [
+      "e"
+    ],
+    "discardMeasurements": [
+      "e"
+    ],
+    "addPerformanceCallback": [
+      "e"
+    ],
+    "removePerformanceCallback": [
+      "e"
+    ],
+    "emitEvents": [
+      "e",
+      "t"
+    ],
+    "truncateIntegralFields": [
+      "e"
+    ],
+    "getDurationMs": [
+      "e"
+    ]
+  },
+  "Si": [
+    "e"
+  ],
+  "_i": {
+    "constructor": [
+      "e",
+      "t"
+    ]
+  },
+  "Ei": [
+    "e",
+    "t"
+  ],
+  "ps": [
+    "e"
+  ],
+  "ms": [
+    "e"
+  ],
+  "fs": [
+    "e"
+  ],
+  "ys": [
+    "e"
+  ],
+  "ws": [
+    "e"
+  ],
+  "Is": [
+    "e"
+  ],
+  "Rs": [
+    "e"
+  ],
+  "Os": [
+    "e"
+  ],
+  "Ms": [],
+  "xs": [],
+  "qs": [
+    "e"
+  ],
+  "Ns": [],
+  "Us": [
+    "e",
+    "t"
+  ],
+  "Ls": [],
+  "Hs": [
+    "e"
+  ],
+  "Ds": [
+    "e",
+    "t",
+    "r"
+  ],
+  "Fs": [
+    "e",
+    "t",
+    "r"
+  ],
+  "Ks": [
+    "e",
+    "t",
+    "r",
+    "n"
+  ],
+  "Js": {
+    "constructor": [
+      "e",
+      "t"
+    ]
+  },
+  "Ws": [
+    "e"
+  ],
+  "Gs": [],
+  "Qs": [
+    "e"
+  ],
+  "Vs": [
+    "e"
+  ],
+  "Xs": [],
+  "Ys": [],
+  "ea": [
+    "e",
+    "t"
+  ],
+  "ta": [
+    "e",
+    "t",
+    "r",
+    "n"
+  ],
+  "ra": [],
+  "na": [],
+  "oa": [],
+  "ia": [
+    "e"
+  ],
+  "sa": [],
+  "aa": [],
+  "ca": [
+    "e"
+  ],
+  "ha": [
+    "e"
+  ],
+  "la": [
+    "e",
+    "t"
+  ],
+  "da": [
+    "e"
+  ],
+  "ua": [],
+  "xa": {
+    "constructor": [],
+    "open": [],
+    "closeConnection": [],
+    "validateDbIsOpen": [],
+    "getItem": [
+      "e"
+    ],
+    "setItem": [
+      "e",
+      "t"
+    ],
+    "removeItem": [
+      "e"
+    ],
+    "getKeys": [],
+    "containsKey": [
+      "e"
+    ],
+    "deleteDatabase": []
+  },
+  "qa": {
+    "constructor": [],
+    "initialize": [],
+    "getItem": [
+      "e"
+    ],
+    "getUserData": [
+      "e"
+    ],
+    "setItem": [
+      "e",
+      "t"
+    ],
+    "setUserData": [
+      "e",
+      "t"
+    ],
+    "removeItem": [
+      "e"
+    ],
+    "getKeys": [],
+    "containsKey": [
+      "e"
+    ],
+    "clear": [],
+    "decryptData": []
+  },
+  "Na": {
+    "constructor": [
+      "e"
+    ],
+    "handleDatabaseAccessError": [
+      "e",
+      "t"
+    ],
+    "getItem": [
+      "e",
+      "t"
+    ],
+    "setItem": [
+      "e",
+      "t",
+      "r"
+    ],
+    "removeItem": [
+      "e",
+      "t"
+    ],
+    "getKeys": [
+      "e"
+    ],
+    "containsKey": [
+      "e",
+      "t"
+    ],
+    "clearInMemory": [
+      "e"
+    ],
+    "clearPersistent": [
+      "e"
+    ]
+  },
+  "Ua": {
+    "constructor": [
+      "e",
+      "t",
+      "r"
+    ],
+    "createNewGuid": [],
+    "base64Encode": [
+      "e"
+    ],
+    "base64Decode": [
+      "e"
+    ],
+    "base64UrlEncode": [
+      "e"
+    ],
+    "encodeKid": [
+      "e"
+    ],
+    "getPublicKeyThumbprint": [
+      "e"
+    ],
+    "removeTokenBindingKey": [
+      "e",
+      "t"
+    ],
+    "clearKeystore": [
+      "e"
+    ],
+    "signJwt": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ],
+    "hashString": [
+      "e"
+    ]
+  },
+  "La": [
+    "e"
+  ],
+  "nc": [
+    "param"
+  ],
+  "oc": [
+    "e",
+    "param"
+  ],
+  "cc": {
+    "initialize": [],
+    "getItem": [
+      "e"
+    ],
+    "getUserData": [],
+    "setItem": [
+      "e",
+      "t",
+      "r",
+      "param",
+      "param"
+    ],
+    "setUserData": [],
+    "removeItem": [
+      "e"
+    ],
+    "getKeys": [],
+    "containsKey": [
+      "e"
+    ],
+    "decryptData": []
+  },
+  "hc": [
+    "e",
+    "t"
+  ],
+  "lc": [
+    "e",
+    "t",
+    "r"
+  ],
+  "dc": [
+    "e"
+  ],
+  "gc": {
+    "constructor": [
+      "e",
+      "t",
+      "r"
+    ],
+    "initialize": [
+      "e"
+    ],
+    "getItem": [
+      "e"
+    ],
+    "getUserData": [
+      "e"
+    ],
+    "decryptData": [
+      "e",
+      "t",
+      "r"
+    ],
+    "setItem": [
+      "e",
+      "t"
+    ],
+    "setUserData": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o"
+    ],
+    "removeItem": [
+      "e"
+    ],
+    "getKeys": [],
+    "containsKey": [
+      "e"
+    ],
+    "clear": [],
+    "importExistingCache": [
+      "e"
+    ],
+    "getItemFromEncryptedCache": [
+      "e",
+      "t"
+    ],
+    "importArray": [
+      "e",
+      "t"
+    ],
+    "getContext": [
+      "e"
+    ],
+    "updateCache": [
+      "e",
+      "t"
+    ]
+  },
+  "pc": {
+    "constructor": [],
+    "initialize": [],
+    "getItem": [
+      "e"
+    ],
+    "getUserData": [
+      "e"
+    ],
+    "setItem": [
+      "e",
+      "t"
+    ],
+    "setUserData": [
+      "e",
+      "t"
+    ],
+    "removeItem": [
+      "e"
+    ],
+    "getKeys": [],
+    "containsKey": [
+      "e"
+    ],
+    "decryptData": []
+  },
+  "wc": [
+    "e",
+    "t"
+  ],
+  "Ic": {
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o",
+      "i",
+      "s"
+    ],
+    "initialize": [
+      "e"
+    ],
+    "migrateExistingCache": [
+      "e"
+    ],
+    "updateOldEntry": [
+      "e",
+      "t"
+    ],
+    "removeStaleAccounts": [
+      "e",
+      "t",
+      "r"
+    ],
+    "removeAccountOldSchema": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ],
+    "getKMSIValues": [],
+    "migrateIdTokens": [
+      "e",
+      "t",
+      "r"
+    ],
+    "migrateAccessTokens": [
+      "e",
+      "t",
+      "r"
+    ],
+    "migrateRefreshTokens": [
+      "e",
+      "t",
+      "r"
+    ],
+    "trackVersionChanges": [
+      "e"
+    ],
+    "validateAndParseJson": [
+      "e"
+    ],
+    "setItem": [
+      "e",
+      "t",
+      "r"
+    ],
+    "setUserData": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o"
+    ],
+    "getAccount": [
+      "e",
+      "t"
+    ],
+    "setAccount": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ],
+    "setAccountKeys": [
+      "e",
+      "t",
+      "param"
+    ],
+    "getAccountKeys": [],
+    "addAccountKeyToMap": [
+      "e",
+      "t"
+    ],
+    "removeAccountKeyFromMap": [
+      "e",
+      "t"
+    ],
+    "removeAccount": [
+      "e",
+      "t"
+    ],
+    "removeIdToken": [
+      "e",
+      "t"
+    ],
+    "removeAccessToken": [
+      "e",
+      "t",
+      "param"
+    ],
+    "removeAccessTokenKeys": [
+      "e",
+      "t",
+      "param"
+    ],
+    "removeRefreshToken": [
+      "e",
+      "t"
+    ],
+    "getTokenKeys": [
+      "param"
+    ],
+    "setTokenKeys": [
+      "e",
+      "t",
+      "param"
+    ],
+    "getIdTokenCredential": [
+      "e",
+      "t"
+    ],
+    "setIdTokenCredential": [
+      "e",
+      "t",
+      "r"
+    ],
+    "getAccessTokenCredential": [
+      "e",
+      "t"
+    ],
+    "setAccessTokenCredential": [
+      "e",
+      "t",
+      "r"
+    ],
+    "getRefreshTokenCredential": [
+      "e",
+      "t"
+    ],
+    "setRefreshTokenCredential": [
+      "e",
+      "t",
+      "r"
+    ],
+    "getAppMetadata": [
+      "e",
+      "t"
+    ],
+    "setAppMetadata": [
+      "e",
+      "t"
+    ],
+    "getServerTelemetry": [
+      "e",
+      "t"
+    ],
+    "setServerTelemetry": [
+      "e",
+      "t",
+      "r"
+    ],
+    "getAuthorityMetadata": [
+      "e",
+      "t"
+    ],
+    "getAuthorityMetadataKeys": [],
+    "setWrapperMetadata": [
+      "e",
+      "t"
+    ],
+    "getWrapperMetadata": [],
+    "setAuthorityMetadata": [
+      "e",
+      "t",
+      "r"
+    ],
+    "getActiveAccount": [
+      "e"
+    ],
+    "setActiveAccount": [
+      "e",
+      "t"
+    ],
+    "getThrottlingCache": [
+      "e",
+      "t"
+    ],
+    "setThrottlingCache": [
+      "e",
+      "t",
+      "r"
+    ],
+    "getTemporaryCache": [
+      "e",
+      "t",
+      "r"
+    ],
+    "setTemporaryCache": [
+      "e",
+      "t",
+      "r"
+    ],
+    "removeItem": [
+      "e"
+    ],
+    "removeTemporaryItem": [
+      "e"
+    ],
+    "getKeys": [],
+    "clear": [
+      "e"
+    ],
+    "generateCacheKey": [
+      "e"
+    ],
+    "generateCredentialKey": [
+      "e"
+    ],
+    "generateAccountKey": [
+      "e"
+    ],
+    "resetRequestCache": [
+      "e"
+    ],
+    "cacheAuthorizeRequest": [
+      "e",
+      "t",
+      "r"
+    ],
+    "getCachedRequest": [
+      "e"
+    ],
+    "getCachedNativeRequest": [],
+    "isInteractionInProgress": [
+      "e"
+    ],
+    "getInteractionInProgress": [],
+    "setInteractionInProgress": [
+      "e",
+      "param",
+      "param",
+      "param"
+    ],
+    "hydrateCache": [
+      "e",
+      "t"
+    ],
+    "saveCacheRecord": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o"
+    ]
+  },
+  "Cc": [
+    "e",
+    "t",
+    "r",
+    "n"
+  ],
+  "vc": [
+    "e",
+    "t",
+    "r",
+    "n"
+  ],
+  "kc": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o"
+  ],
+  "Tc": [
+    "e",
+    "t",
+    "r",
+    "n"
+  ],
+  "bc": [
+    "e",
+    "t",
+    "r"
+  ],
+  "Ac": [
+    "e",
+    "t"
+  ],
+  "Sc": {
+    "constructor": [
+      "e"
+    ],
+    "addEventCallback": [
+      "e",
+      "t",
+      "r"
+    ],
+    "removeEventCallback": [
+      "e"
+    ],
+    "emitEvent": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o"
+    ],
+    "invokeCallbacks": [
+      "e"
+    ],
+    "invokeCrossTabCallbacks": [
+      "e"
+    ],
+    "subscribeCrossTab": [],
+    "unsubscribeCrossTab": []
+  },
+  "_c": {
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o",
+      "i",
+      "s",
+      "a",
+      "c"
+    ]
+  },
+  "Ec": [
+    "e",
+    "t",
+    "r",
+    "n"
+  ],
+  "Pc": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i"
+  ],
+  "Rc": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i",
+    "s",
+    "a",
+    "c"
+  ],
+  "Oc": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o"
+  ],
+  "Mc": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o"
+  ],
+  "xc": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o"
+  ],
+  "qc": [
+    "e",
+    "t"
+  ],
+  "Nc": {
+    "initializeLogoutRequest": [
+      "e"
+    ],
+    "getLogoutHintFromIdTokenClaims": [
+      "e"
+    ],
+    "createAuthCodeClient": [
+      "e"
+    ],
+    "getClientConfiguration": [
+      "e"
+    ]
+  },
+  "Uc": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i",
+    "s",
+    "a"
+  ],
+  "Lc": [
+    "e",
+    "t",
+    "r",
+    "n"
+  ],
+  "Hc": [
+    "e",
+    "t",
+    "r"
+  ],
+  "Dc": {
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o"
+    ],
+    "handleCodeResponse": [
+      "e",
+      "t",
+      "r"
+    ],
+    "handleCodeResponseFromServer": [
+      "e",
+      "t",
+      "r",
+      "param"
+    ],
+    "createCcsCredentials": [
+      "e"
+    ]
+  },
+  "Fc": {
+    "constructor": [
+      "e",
+      "t",
+      "r"
+    ]
+  },
+  "Kc": [
+    "e"
+  ],
+  "Bc": [
+    "e",
+    "t",
+    "r"
+  ],
+  "zc": {
+    "acquireToken": [
+      "e"
+    ],
+    "logout": [
+      "e"
+    ]
+  },
+  "jc": {
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o",
+      "i",
+      "s",
+      "a",
+      "c",
+      "h",
+      "l",
+      "d"
+    ],
+    "addRequestSKUs": [
+      "e"
+    ],
+    "acquireToken": [
+      "e",
+      "t"
+    ],
+    "createSilentCacheRequest": [
+      "e",
+      "t"
+    ],
+    "acquireTokensFromCache": [
+      "e",
+      "t"
+    ],
+    "acquireTokenRedirect": [
+      "e",
+      "t",
+      "r"
+    ],
+    "handleRedirectPromise": [
+      "e",
+      "t"
+    ],
+    "logout": [],
+    "handleNativeResponse": [
+      "e",
+      "t",
+      "r"
+    ],
+    "createHomeAccountIdentifier": [
+      "e",
+      "t"
+    ],
+    "generateScopes": [
+      "e",
+      "t"
+    ],
+    "generatePopAccessToken": [
+      "e",
+      "t"
+    ],
+    "generateAuthenticationResult": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o",
+      "i"
+    ],
+    "cacheAccount": [
+      "e",
+      "t"
+    ],
+    "cacheNativeTokens": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o",
+      "i",
+      "s"
+    ],
+    "getExpiresInValue": [
+      "e",
+      "t"
+    ],
+    "addTelemetryFromNativeResponse": [
+      "e"
+    ],
+    "getMATSFromResponse": [
+      "e"
+    ],
+    "isResponseFromCache": [
+      "e"
+    ],
+    "initializeNativeRequest": [
+      "e"
+    ],
+    "getCanonicalAuthority": [
+      "e"
+    ],
+    "getPrompt": [
+      "e"
+    ],
+    "handleExtraBrokerParams": [
+      "e"
+    ]
+  },
+  "$c": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o"
+  ],
+  "Jc": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o"
+  ],
+  "Wc": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i"
+  ],
+  "Gc": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i"
+  ],
+  "Qc": [
+    "e",
+    "t",
+    "r"
+  ],
+  "Vc": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i",
+    "s",
+    "a",
+    "c",
+    "h"
+  ],
+  "Xc": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i",
+    "s",
+    "a",
+    "c",
+    "h",
+    "l",
+    "d"
+  ],
+  "Yc": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i",
+    "s",
+    "a",
+    "c",
+    "h",
+    "l"
+  ],
+  "Zc": [
+    "e",
+    "t",
+    "r"
+  ],
+  "eh": [
+    "e",
+    "t",
+    "r"
+  ],
+  "th": [
+    "e",
+    "t",
+    "r",
+    "n"
+  ],
+  "rh": {
+    "navigateInternal": [
+      "e",
+      "t"
+    ],
+    "navigateExternal": [
+      "e",
+      "t"
+    ],
+    "defaultNavigateWindow": [
+      "e",
+      "t"
+    ]
+  },
+  "nh": {
+    "sendGetRequestAsync": [
+      "e",
+      "t"
+    ],
+    "sendPostRequestAsync": [
+      "e",
+      "t"
+    ]
+  },
+  "oh": [
+    "e"
+  ],
+  "ih": [
+    "e"
+  ],
+  "sh": [
+    "param",
+    "h"
+  ],
+  "ah": {
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ],
+    "sendMessage": [
+      "e"
+    ],
+    "createProvider": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ],
+    "sendHandshakeRequest": [
+      "e"
+    ],
+    "onWindowMessage": [
+      "e"
+    ],
+    "onChannelMessage": [
+      "e"
+    ],
+    "validatePlatformBrokerResponse": [
+      "e"
+    ],
+    "getExtensionId": [],
+    "getExtensionVersion": [],
+    "getExtensionName": []
+  },
+  "ch": {
+    "constructor": [
+      "e",
+      "t",
+      "r"
+    ],
+    "createProvider": [
+      "e",
+      "t",
+      "r"
+    ],
+    "getExtensionId": [],
+    "getExtensionVersion": [],
+    "getExtensionName": [],
+    "sendMessage": [
+      "e"
+    ],
+    "initializePlatformDOMRequest": [
+      "e"
+    ],
+    "validatePlatformBrokerResponse": [
+      "e",
+      "t"
+    ],
+    "convertToPlatformBrokerResponse": [
+      "e",
+      "t"
+    ],
+    "getDOMExtraParams": [
+      "e"
+    ]
+  },
+  "hh": [
+    "e",
+    "t",
+    "r",
+    "n"
+  ],
+  "lh": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o"
+  ],
+  "dh": {
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o",
+      "i",
+      "s",
+      "a",
+      "c",
+      "h"
+    ],
+    "acquireToken": [
+      "e",
+      "t"
+    ],
+    "logout": [
+      "e"
+    ],
+    "acquireTokenPopupAsync": [
+      "t",
+      "r",
+      "n"
+    ],
+    "executeCodeFlow": [
+      "t",
+      "r",
+      "n"
+    ],
+    "executeEarFlow": [
+      "e",
+      "t",
+      "r"
+    ],
+    "executeCodeFlowWithPost": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ],
+    "logoutPopupAsync": [
+      "t",
+      "r",
+      "n",
+      "o"
+    ],
+    "initiateAuthRequest": [
+      "e",
+      "t"
+    ],
+    "openPopup": [
+      "e",
+      "t"
+    ],
+    "openSizedPopup": [
+      "e",
+      "param"
+    ],
+    "generatePopupName": [
+      "e",
+      "t"
+    ],
+    "generateLogoutPopupName": [
+      "e"
+    ]
+  },
+  "uh": {
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o",
+      "i",
+      "s",
+      "a",
+      "c",
+      "h"
+    ],
+    "acquireToken": [
+      "t"
+    ],
+    "executeCodeFlow": [
+      "e"
+    ],
+    "executeEarFlow": [
+      "e"
+    ],
+    "executeCodeFlowWithPost": [
+      "e"
+    ],
+    "handleRedirectPromise": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ],
+    "getRedirectResponse": [
+      "t"
+    ],
+    "handleResponse": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ],
+    "initiateAuthRequest": [
+      "e"
+    ],
+    "logout": [
+      "t"
+    ],
+    "getRedirectStartPage": [
+      "e"
+    ]
+  },
+  "gh": [
+    "e",
+    "t",
+    "r",
+    "n"
+  ],
+  "ph": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o"
+  ],
+  "mh": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o"
+  ],
+  "fh": [
+    "e"
+  ],
+  "yh": [],
+  "wh": {
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o",
+      "i",
+      "s",
+      "a",
+      "c",
+      "h",
+      "l"
+    ],
+    "acquireToken": [
+      "t"
+    ],
+    "executeCodeFlow": [
+      "e"
+    ],
+    "executeEarFlow": [
+      "e"
+    ],
+    "logout": [],
+    "silentTokenHelper": [
+      "e",
+      "t"
+    ]
+  },
+  "Ih": {
+    "acquireToken": [
+      "e"
+    ],
+    "logout": [],
+    "createRefreshTokenClient": [
+      "e"
+    ]
+  },
+  "Ch": {
+    "constructor": [
+      "e",
+      "t"
+    ]
+  },
+  "vh": {
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o",
+      "i",
+      "s",
+      "a",
+      "c",
+      "h"
+    ],
+    "acquireToken": [
+      "t"
+    ],
+    "logout": []
+  },
+  "kh": [
+    "e",
+    "t",
+    "r"
+  ],
+  "Th": {
+    "constructor": [
+      "e"
+    ],
+    "createController": [
+      "e",
+      "t"
+    ],
+    "trackPageVisibility": [
+      "e"
+    ],
+    "initialize": [
+      "e"
+    ],
+    "handleRedirectPromise": [
+      "e"
+    ],
+    "handleRedirectPromiseInternal": [
+      "t"
+    ],
+    "acquireTokenRedirect": [
+      "t"
+    ],
+    "acquireTokenPopup": [
+      "t"
+    ],
+    "trackPageVisibilityWithMeasurement": [],
+    "ssoSilent": [
+      "t"
+    ],
+    "acquireTokenByCode": [
+      "t"
+    ],
+    "acquireTokenByCodeAsync": [
+      "e"
+    ],
+    "acquireTokenFromCache": [
+      "e",
+      "t"
+    ],
+    "acquireTokenByRefreshToken": [
+      "e",
+      "t"
+    ],
+    "acquireTokenBySilentIframe": [
+      "e"
+    ],
+    "logoutRedirect": [
+      "e"
+    ],
+    "logoutPopup": [
+      "e"
+    ],
+    "clearCache": [
+      "e"
+    ],
+    "getAllAccounts": [
+      "e"
+    ],
+    "getAccount": [
+      "e"
+    ],
+    "setActiveAccount": [
+      "e"
+    ],
+    "getActiveAccount": [],
+    "hydrateCache": [
+      "e",
+      "t"
+    ],
+    "acquireTokenNative": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ],
+    "canUsePlatformBroker": [
+      "e",
+      "t"
+    ],
+    "getNativeAccountId": [
+      "e"
+    ],
+    "createPopupClient": [
+      "e"
+    ],
+    "createRedirectClient": [
+      "e"
+    ],
+    "createSilentIframeClient": [
+      "e"
+    ],
+    "createSilentCacheClient": [
+      "e"
+    ],
+    "createSilentRefreshClient": [
+      "e"
+    ],
+    "createSilentAuthCodeClient": [
+      "e"
+    ],
+    "addEventCallback": [
+      "e",
+      "t"
+    ],
+    "removeEventCallback": [
+      "e"
+    ],
+    "addPerformanceCallback": [
+      "e"
+    ],
+    "removePerformanceCallback": [
+      "e"
+    ],
+    "getLogger": [],
+    "setLogger": [
+      "e"
+    ],
+    "initializeWrapperLibrary": [
+      "e",
+      "t"
+    ],
+    "setNavigationClient": [
+      "e"
+    ],
+    "getConfiguration": [],
+    "getPerformanceClient": [],
+    "isBrowserEnv": [],
+    "getRequestCorrelationId": [
+      "e"
+    ],
+    "loginRedirect": [
+      "e"
+    ],
+    "loginPopup": [
+      "e"
+    ],
+    "acquireTokenSilent": [
+      "e"
+    ],
+    "acquireTokenSilentDeduped": [
+      "e",
+      "t",
+      "r"
+    ],
+    "acquireTokenSilentAsync": [
+      "t",
+      "r"
+    ],
+    "acquireTokenSilentNoIframe": [
+      "t",
+      "r"
+    ],
+    "preGeneratePkceCodes": [
+      "e"
+    ],
+    "getPreGeneratedPkceCodes": [
+      "e"
+    ],
+    "logMultipleInstances": [
+      "e",
+      "t"
+    ]
+  },
+  "bh": {
+    "loggerCallback": [
+      "t",
+      "r"
+    ],
+    "constructor": [
+      "t"
+    ],
+    "getConfig": [],
+    "getLogger": [],
+    "isAvailable": [],
+    "isBrowserEnvironment": []
+  },
+  "Ah": {
+    "getModuleName": [],
+    "getId": [],
+    "initialize": [
+      "e"
+    ]
+  },
+  "qh": {
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ],
+    "toNaaTokenRequest": [
+      "e"
+    ],
+    "fromNaaTokenResponse": [
+      "e",
+      "t",
+      "r"
+    ],
+    "fromNaaAccountInfo": [
+      "e",
+      "t",
+      "r"
+    ],
+    "fromBridgeError": [
+      "e"
+    ],
+    "toAuthenticationResultFromCache": [
+      "e",
+      "t",
+      "r",
+      "n",
+      "o"
+    ]
+  },
+  "Nh": {
+    "constructor": [
+      "e",
+      "t"
+    ],
+    "createUnsupportedError": []
+  },
+  "Uh": {
+    "constructor": [
+      "e"
+    ],
+    "createController": [
+      "e"
+    ],
+    "initialize": [
+      "e",
+      "t"
+    ],
+    "ensureValidRequest": [
+      "e"
+    ],
+    "acquireTokenInteractive": [
+      "t"
+    ],
+    "acquireTokenSilentInternal": [
+      "t"
+    ],
+    "acquireTokenFromCache": [
+      "t"
+    ],
+    "acquireTokenFromCacheInternal": [
+      "e"
+    ],
+    "acquireTokenPopup": [
+      "e"
+    ],
+    "acquireTokenRedirect": [
+      "e"
+    ],
+    "acquireTokenSilent": [
+      "e"
+    ],
+    "acquireTokenByCode": [
+      "e"
+    ],
+    "addEventCallback": [
+      "e",
+      "t"
+    ],
+    "removeEventCallback": [
+      "e"
+    ],
+    "addPerformanceCallback": [
+      "e"
+    ],
+    "removePerformanceCallback": [
+      "e"
+    ],
+    "getAllAccounts": [
+      "e"
+    ],
+    "getAccount": [
+      "e"
+    ],
+    "setActiveAccount": [
+      "e"
+    ],
+    "getActiveAccount": [],
+    "handleRedirectPromise": [
+      "e"
+    ],
+    "loginPopup": [
+      "e"
+    ],
+    "loginRedirect": [
+      "e"
+    ],
+    "logoutRedirect": [
+      "e"
+    ],
+    "logoutPopup": [
+      "e"
+    ],
+    "ssoSilent": [
+      "e"
+    ],
+    "getLogger": [],
+    "setLogger": [
+      "e"
+    ],
+    "initializeWrapperLibrary": [
+      "e",
+      "t"
+    ],
+    "setNavigationClient": [
+      "e"
+    ],
+    "getConfiguration": [],
+    "isBrowserEnv": [],
+    "getBrowserCrypto": [],
+    "getPerformanceClient": [],
+    "getRedirectResponse": [],
+    "clearCache": [
+      "e"
+    ],
+    "hydrateCache": [
+      "e",
+      "t"
+    ]
+  },
+  "Lh": {
+    "initializeNestedAppAuthBridge": [],
+    "getTokenInteractive": [
+      "e"
+    ],
+    "getTokenSilent": [
+      "e"
+    ],
+    "getToken": [
+      "e",
+      "t"
+    ],
+    "getHostCapabilities": [],
+    "getAccountContext": [],
+    "buildRequest": [
+      "e",
+      "t"
+    ],
+    "sendRequest": [
+      "e",
+      "t"
+    ],
+    "validateBridgeResultOrThrow": [
+      "e"
+    ],
+    "constructor": [
+      "e",
+      "t",
+      "r",
+      "n"
+    ],
+    "create": []
+  },
+  "Hh": {
+    "constructor": [],
+    "getModuleName": [],
+    "getId": [],
+    "getBridgeProxy": [],
+    "initialize": [
+      "e"
+    ]
+  },
+  "Dh": {
+    "constructor": [
+      "e",
+      "t"
+    ],
+    "initialize": [
+      "e"
+    ],
+    "acquireTokenPopup": [
+      "e"
+    ],
+    "acquireTokenRedirect": [
+      "e"
+    ],
+    "acquireTokenSilent": [
+      "e"
+    ],
+    "acquireTokenByCode": [
+      "e"
+    ],
+    "addEventCallback": [
+      "e",
+      "t"
+    ],
+    "removeEventCallback": [
+      "e"
+    ],
+    "addPerformanceCallback": [
+      "e"
+    ],
+    "removePerformanceCallback": [
+      "e"
+    ],
+    "getAccount": [
+      "e"
+    ],
+    "getAllAccounts": [
+      "e"
+    ],
+    "handleRedirectPromise": [
+      "e"
+    ],
+    "loginPopup": [
+      "e"
+    ],
+    "loginRedirect": [
+      "e"
+    ],
+    "logoutRedirect": [
+      "e"
+    ],
+    "logoutPopup": [
+      "e"
+    ],
+    "ssoSilent": [
+      "e"
+    ],
+    "getLogger": [],
+    "setLogger": [
+      "e"
+    ],
+    "setActiveAccount": [
+      "e"
+    ],
+    "getActiveAccount": [],
+    "initializeWrapperLibrary": [
+      "e",
+      "t"
+    ],
+    "setNavigationClient": [
+      "e"
+    ],
+    "getConfiguration": [],
+    "hydrateCache": [
+      "e",
+      "t"
+    ],
+    "clearCache": [
+      "e"
+    ]
+  },
+  "Fh": [
+    "e"
+  ],
+  "Bh": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i",
+    "s",
+    "a"
+  ],
+  "zh": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i",
+    "s",
+    "a",
+    "c"
+  ],
+  "jh": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i",
+    "s",
+    "a",
+    "c",
+    "h",
+    "l"
+  ],
+  "$h": [
+    "e",
+    "t",
+    "r",
+    "n",
+    "o",
+    "i",
+    "s",
+    "a",
+    "c"
+  ],
+  "Jh": [],
+  "Wh": [],
+  "Gh": [
+    "e"
+  ],
+  "Qh": {
+    "constructor": [
+      "e",
+      "t"
+    ],
+    "makeMeasureName": [
+      "e",
+      "t"
+    ],
+    "makeStartMark": [
+      "e",
+      "t"
+    ],
+    "makeEndMark": [
+      "e",
+      "t"
+    ],
+    "supportsBrowserPerformance": [],
+    "flushMeasurements": [
+      "e",
+      "t"
+    ],
+    "startMeasurement": [],
+    "endMeasurement": [],
+    "flushMeasurement": []
+  },
+  "broadcastResponseToMainFrame": [
+    "navigationClient"
+  ],
+  "o": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "s": [
+    "t"
+  ],
+  "i": {
+    "isEmptyObj": [
+      "t"
+    ],
+    "startsWith": [
+      "t",
+      "e"
+    ],
+    "endsWith": [
+      "t",
+      "e"
+    ],
+    "queryStringToObject": [
+      "t"
+    ],
+    "trimArrayEntries": [
+      "t"
+    ],
+    "removeEmptyStringsFromArray": [
+      "t"
+    ],
+    "jsonParseHelper": [
+      "t"
+    ],
+    "matchPattern": [
+      "t",
+      "e"
+    ]
+  },
+  "a": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "c": [
+    "t",
+    "e"
+  ],
+  "h": {
+    "urlString": [],
+    "constructor": [
+      "t"
+    ],
+    "canonicalizeUri": [
+      "t"
+    ],
+    "validateAsUri": [],
+    "appendQueryString": [
+      "t",
+      "e"
+    ],
+    "removeHashFromUrl": [
+      "t"
+    ],
+    "replaceTenantPath": [
+      "t"
+    ],
+    "getUrlComponents": [],
+    "getDomainFromUrl": [
+      "t"
+    ],
+    "getAbsoluteUrl": [
+      "t",
+      "e"
+    ],
+    "constructAuthorityUriFromObject": [
+      "t"
+    ]
+  },
+  "d": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "g": [
+    "t",
+    "e"
+  ],
+  "S": [
+    "t"
+  ],
+  "b": [],
+  "P": {
+    "navigateInternal": [
+      "t",
+      "e"
+    ],
+    "navigateExternal": [
+      "t",
+      "e"
+    ],
+    "defaultNavigateWindow": [
+      "t",
+      "e"
+    ]
+  },
+  "createJitVerificationRequiredResult": [
+    "input"
+  ],
+  "createJitCompletedResult": [
+    "input"
+  ],
+  "createMfaVerificationRequiredResult": [
+    "input"
+  ],
+  "createMfaCompletedResult": [
+    "input"
+  ],
+  "ensureArgumentIsNotNullOrUndefined": [
+    "argName",
+    "argValue",
+    "correlationId"
+  ],
+  "ensureArgumentIsNotEmptyString": [
+    "argName",
+    "argValue",
+    "correlationId"
+  ],
+  "ensureArgumentIsJSONString": [
+    "argName",
+    "argValue",
+    "correlationId"
+  ],
+  "parseUrl": [
+    "url"
+  ],
+  "buildUrl": [
+    "baseUrl",
+    "path",
+    "queryParams"
+  ],
+  "createSignInCompleteResult": [
+    "input"
+  ],
+  "createSignInPasswordRequiredResult": [
+    "input"
+  ],
+  "createSignInCodeSendResult": [
+    "input"
+  ],
+  "createSignInJitRequiredResult": [
+    "input"
+  ],
+  "createSignInMfaRequiredResult": [
+    "input"
+  ],
+  "createSignUpCompletedResult": [
+    "input"
+  ],
+  "createSignUpPasswordRequiredResult": [
+    "input"
+  ],
+  "createSignUpCodeRequiredResult": [
+    "input"
+  ],
+  "createSignUpAttributesRequiredResult": [
+    "input"
+  ],
+  "isBridgeRequestEnvelope": [
+    "obj"
+  ]
+}

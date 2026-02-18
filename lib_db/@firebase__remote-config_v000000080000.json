@@ -1,0 +1,437 @@
+{
+  "RemoteConfigAbortSignal": {
+    "listeners": [],
+    "addEventListener": [
+      "listener"
+    ],
+    "abort": []
+  },
+  "hasErrorCode": [
+    "e",
+    "errorCode"
+  ],
+  "Value": {
+    "_source": [],
+    "_value": [],
+    "constructor": [
+      "_source",
+      "_value"
+    ],
+    "asString": [],
+    "asBoolean": [],
+    "asNumber": [],
+    "getSource": []
+  },
+  "Experiment": {
+    "storage": [],
+    "logger": [],
+    "analyticsProvider": [],
+    "constructor": [
+      "rc"
+    ],
+    "updateActiveExperiments": [
+      "latestExperiments"
+    ],
+    "createExperimentInfoMap": [],
+    "addActiveExperiments": [],
+    "removeInactiveExperiments": [],
+    "addExperimentToAnalytics": []
+  },
+  "getRemoteConfig": [
+    "param",
+    "param"
+  ],
+  "activate": [
+    "remoteConfig"
+  ],
+  "ensureInitialized": [
+    "remoteConfig"
+  ],
+  "fetchConfig": [
+    "remoteConfig"
+  ],
+  "getAll": [
+    "remoteConfig"
+  ],
+  "getBoolean": [
+    "remoteConfig",
+    "key"
+  ],
+  "getNumber": [
+    "remoteConfig",
+    "key"
+  ],
+  "getString": [
+    "remoteConfig",
+    "key"
+  ],
+  "getValue": [
+    "remoteConfig",
+    "key"
+  ],
+  "setLogLevel": [
+    "remoteConfig",
+    "logLevel"
+  ],
+  "getAllKeys": [
+    "param",
+    "param"
+  ],
+  "setCustomSignals": [
+    "remoteConfig",
+    "customSignals"
+  ],
+  "onConfigUpdate": [
+    "remoteConfig",
+    "observer"
+  ],
+  "CachingClient": {
+    "client": [],
+    "storage": [],
+    "storageCache": [],
+    "logger": [],
+    "constructor": [
+      "client",
+      "storage",
+      "storageCache",
+      "logger"
+    ],
+    "isCachedDataFresh": [
+      "cacheMaxAgeMillis",
+      "lastSuccessfulFetchTimestampMillis"
+    ],
+    "fetch": [
+      "request"
+    ]
+  },
+  "getUserLanguage": [
+    "param"
+  ],
+  "RestClient": {
+    "firebaseInstallations": [],
+    "sdkVersion": [],
+    "namespace": [],
+    "projectId": [],
+    "apiKey": [],
+    "appId": [],
+    "constructor": [
+      "firebaseInstallations",
+      "sdkVersion",
+      "namespace",
+      "projectId",
+      "apiKey",
+      "appId"
+    ],
+    "fetch": [
+      "request"
+    ]
+  },
+  "setAbortableTimeout": [
+    "signal",
+    "throttleEndTimeMillis"
+  ],
+  "isRetriableError": [
+    "e"
+  ],
+  "RetryingClient": {
+    "client": [],
+    "storage": [],
+    "constructor": [
+      "client",
+      "storage"
+    ],
+    "fetch": [
+      "request"
+    ],
+    "attemptFetch": [
+      "request",
+      "param"
+    ]
+  },
+  "RemoteConfig": {
+    "app": [],
+    "_client": [],
+    "_storageCache": [],
+    "_storage": [],
+    "_logger": [],
+    "_realtimeHandler": [],
+    "_analyticsProvider": [],
+    "_isInitializationComplete": [],
+    "_initializePromise": [],
+    "settings": [],
+    "defaultConfig": [],
+    "fetchTimeMillis": [],
+    "lastFetchStatus": [],
+    "constructor": [
+      "app",
+      "_client",
+      "_storageCache",
+      "_storage",
+      "_logger",
+      "_realtimeHandler",
+      "_analyticsProvider"
+    ]
+  },
+  "toFirebaseError": [
+    "event",
+    "errorCode"
+  ],
+  "openDatabase": [],
+  "Storage": {
+    "getLastFetchStatus": [],
+    "setLastFetchStatus": [
+      "status"
+    ],
+    "getLastSuccessfulFetchTimestampMillis": [],
+    "setLastSuccessfulFetchTimestampMillis": [
+      "timestamp"
+    ],
+    "getLastSuccessfulFetchResponse": [],
+    "setLastSuccessfulFetchResponse": [
+      "response"
+    ],
+    "getActiveConfig": [],
+    "setActiveConfig": [
+      "config"
+    ],
+    "getActiveConfigEtag": [],
+    "setActiveConfigEtag": [
+      "etag"
+    ],
+    "getActiveExperiments": [],
+    "setActiveExperiments": [
+      "experiments"
+    ],
+    "getThrottleMetadata": [],
+    "setThrottleMetadata": [
+      "metadata"
+    ],
+    "deleteThrottleMetadata": [],
+    "getCustomSignals": [],
+    "setCustomSignals": [
+      "customSignals"
+    ],
+    "get": [
+      "key"
+    ],
+    "set": [
+      "key",
+      "value"
+    ],
+    "delete": [
+      "key"
+    ],
+    "getRealtimeBackoffMetadata": [],
+    "setRealtimeBackoffMetadata": [
+      "realtimeMetadata"
+    ],
+    "getActiveConfigTemplateVersion": [],
+    "setActiveConfigTemplateVersion": [
+      "version"
+    ]
+  },
+  "IndexedDbStorage": {
+    "appId": [],
+    "appName": [],
+    "namespace": [],
+    "openDbPromise": [],
+    "constructor": [
+      "appId",
+      "appName",
+      "namespace",
+      "openDbPromise"
+    ],
+    "setCustomSignals": [
+      "customSignals"
+    ],
+    "getWithTransaction": [
+      "key",
+      "transaction"
+    ],
+    "setWithTransaction": [
+      "key",
+      "value",
+      "transaction"
+    ],
+    "get": [
+      "key"
+    ],
+    "set": [
+      "key",
+      "value"
+    ],
+    "delete": [
+      "key"
+    ],
+    "createCompositeKey": [
+      "key"
+    ]
+  },
+  "InMemoryStorage": {
+    "storage": [],
+    "get": [
+      "key"
+    ],
+    "set": [
+      "key",
+      "value"
+    ],
+    "delete": [
+      "key"
+    ],
+    "setCustomSignals": [
+      "customSignals"
+    ]
+  },
+  "mergeCustomSignals": [
+    "customSignals",
+    "storedSignals"
+  ],
+  "StorageCache": {
+    "storage": [],
+    "constructor": [
+      "storage"
+    ],
+    "lastFetchStatus": [],
+    "lastSuccessfulFetchTimestampMillis": [],
+    "activeConfig": [],
+    "customSignals": [],
+    "getLastFetchStatus": [],
+    "getLastSuccessfulFetchTimestampMillis": [],
+    "getActiveConfig": [],
+    "getCustomSignals": [],
+    "loadFromStorage": [],
+    "setLastFetchStatus": [
+      "status"
+    ],
+    "setLastSuccessfulFetchTimestampMillis": [
+      "timestampMillis"
+    ],
+    "setActiveConfig": [
+      "activeConfig"
+    ],
+    "setCustomSignals": [
+      "customSignals"
+    ]
+  },
+  "EventEmitter": {
+    "allowedEvents_": [],
+    "listeners_": [],
+    "constructor": [
+      "allowedEvents_"
+    ],
+    "getInitialEvent": [
+      "eventType"
+    ],
+    "trigger": [
+      "eventType",
+      "param"
+    ],
+    "on": [
+      "eventType",
+      "callback",
+      "context"
+    ],
+    "off": [
+      "eventType",
+      "callback",
+      "context"
+    ],
+    "validateEventType_": []
+  },
+  "VisibilityMonitor": {
+    "visible_": [],
+    "getInstance": [],
+    "constructor": [],
+    "getInitialEvent": [
+      "eventType"
+    ]
+  },
+  "RealtimeHandler": {
+    "firebaseInstallations": [],
+    "storage": [],
+    "sdkVersion": [],
+    "namespace": [],
+    "projectId": [],
+    "apiKey": [],
+    "appId": [],
+    "logger": [],
+    "storageCache": [],
+    "cachingClient": [],
+    "constructor": [
+      "firebaseInstallations",
+      "storage",
+      "sdkVersion",
+      "namespace",
+      "projectId",
+      "apiKey",
+      "appId",
+      "logger",
+      "storageCache",
+      "cachingClient"
+    ],
+    "observers": [],
+    "isConnectionActive": [],
+    "isRealtimeDisabled": [],
+    "controller": [],
+    "reader": [],
+    "httpRetriesRemaining": [],
+    "isInBackground": [],
+    "decoder": [],
+    "isClosingConnection": [],
+    "setRetriesRemaining": [],
+    "propagateError": [],
+    "updateBackoffMetadataWithLastFailedStreamConnectionTime": [],
+    "updateBackoffMetadataWithRetryInterval": [],
+    "isStatusCodeRetryable": [],
+    "closeRealtimeHttpConnection": [],
+    "resetRealtimeBackoff": [],
+    "resetRetryCount": [],
+    "establishRealtimeConnection": [],
+    "getRealtimeUrl": [],
+    "createRealtimeConnection": [],
+    "retryHttpConnectionWhenBackoffEnds": [],
+    "setIsHttpConnectionRunning": [],
+    "checkAndSetHttpConnectionFlagIfNotRunning": [],
+    "fetchResponseIsUpToDate": [],
+    "parseAndValidateConfigUpdateMessage": [],
+    "isEventListenersEmpty": [],
+    "getRandomInt": [],
+    "executeAllListenerCallbacks": [],
+    "getChangedParams": [],
+    "fetchLatestConfig": [],
+    "autoFetch": [],
+    "handleNotifications": [],
+    "listenForNotifications": [],
+    "prepareAndBeginRealtimeHttpStream": [],
+    "canEstablishStreamConnection": [],
+    "makeRealtimeHttpConnection": [],
+    "beginRealtime": [],
+    "addObserver": [
+      "observer"
+    ],
+    "removeObserver": [
+      "observer"
+    ],
+    "onVisibilityChange": []
+  },
+  "registerRemoteConfig": [],
+  "remoteConfigFactory": [
+    "container",
+    "param"
+  ],
+  "fetchAndActivate": [
+    "remoteConfig"
+  ],
+  "isSupported": [],
+  "FirebaseError": {
+    "code": [],
+    "customData": [],
+    "name": [],
+    "constructor": [
+      "code",
+      "message",
+      "customData"
+    ]
+  }
+}

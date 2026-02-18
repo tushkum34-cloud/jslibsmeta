@@ -1,0 +1,1129 @@
+{
+  "DeclarationReference": {
+    "constructor": [
+      "source",
+      "navigation",
+      "symbol"
+    ],
+    "source": [],
+    "navigation": [],
+    "symbol": [],
+    "isEmpty": [],
+    "parse": [
+      "text"
+    ],
+    "parseComponent": [
+      "text"
+    ],
+    "isWellFormedComponentString": [
+      "text"
+    ],
+    "escapeComponentString": [
+      "text"
+    ],
+    "unescapeComponentString": [
+      "text"
+    ],
+    "isWellFormedModuleSourceString": [
+      "text"
+    ],
+    "escapeModuleSourceString": [
+      "text"
+    ],
+    "unescapeModuleSourceString": [
+      "text"
+    ],
+    "empty": [],
+    "package": [
+      "packageName",
+      "importPath"
+    ],
+    "module": [
+      "path",
+      "userEscaped"
+    ],
+    "global": [],
+    "from": [
+      "base"
+    ],
+    "withSource": [
+      "source"
+    ],
+    "withNavigation": [
+      "navigation"
+    ],
+    "withSymbol": [
+      "symbol"
+    ],
+    "withComponentPath": [
+      "componentPath"
+    ],
+    "withMeaning": [
+      "meaning"
+    ],
+    "withOverloadIndex": [
+      "overloadIndex"
+    ],
+    "addNavigationStep": [
+      "navigation",
+      "component"
+    ],
+    "toString": []
+  },
+  "ModuleSource": {
+    "constructor": [
+      "path",
+      "param"
+    ],
+    "path": [],
+    "packageName": [],
+    "scopeName": [],
+    "unscopedPackageName": [],
+    "importPath": [],
+    "fromScopedPackage": [
+      "scopeName",
+      "unscopedPackageName",
+      "importPath"
+    ],
+    "fromPackage": [
+      "packageName",
+      "importPath"
+    ],
+    "_fromPackageName": [
+      "parsed",
+      "packageName",
+      "importPath"
+    ],
+    "toString": [],
+    "_getOrParsePathComponents": []
+  },
+  "GlobalSource": {
+    "constructor": [],
+    "toString": []
+  },
+  "ComponentString": {
+    "constructor": [
+      "text",
+      "userEscaped"
+    ],
+    "toString": []
+  },
+  "ComponentReference": {
+    "constructor": [
+      "reference"
+    ],
+    "parse": [
+      "text"
+    ],
+    "withReference": [
+      "reference"
+    ],
+    "toString": []
+  },
+  "ComponentPathBase": {
+    "constructor": [
+      "component"
+    ],
+    "addNavigationStep": [
+      "navigation",
+      "component"
+    ]
+  },
+  "ComponentRoot": {
+    "withComponent": [
+      "component"
+    ],
+    "toString": []
+  },
+  "ComponentNavigation": {
+    "constructor": [
+      "parent",
+      "navigation",
+      "component"
+    ],
+    "withParent": [
+      "parent"
+    ],
+    "withNavigation": [
+      "navigation"
+    ],
+    "withComponent": [
+      "component"
+    ],
+    "toString": []
+  },
+  "SymbolReference": {
+    "constructor": [
+      "component",
+      "param"
+    ],
+    "empty": [],
+    "withComponentPath": [
+      "componentPath"
+    ],
+    "withMeaning": [
+      "meaning"
+    ],
+    "withOverloadIndex": [
+      "overloadIndex"
+    ],
+    "addNavigationStep": [
+      "navigation",
+      "component"
+    ],
+    "toString": []
+  },
+  "ParsedModuleSource": {},
+  "parsePackageName": [
+    "text"
+  ],
+  "from": [
+    "value"
+  ],
+  "ParsedComponentString": {},
+  "tokenToString": [
+    "token"
+  ],
+  "Scanner": {
+    "constructor": [
+      "text"
+    ],
+    "stringIsUnterminated": [],
+    "text": [],
+    "tokenText": [],
+    "eof": [],
+    "token": [],
+    "speculate": [
+      "cb"
+    ],
+    "scan": [],
+    "rescanModuleSource": [],
+    "rescanMeaning": [],
+    "rescanDecimalDigits": [],
+    "scanString": [],
+    "scanEscapeSequence": [],
+    "scanText": []
+  },
+  "accept": [],
+  "Parser": {
+    "constructor": [
+      "text"
+    ],
+    "eof": [],
+    "errors": [],
+    "parseDeclarationReference": [],
+    "parseModuleSourceString": [],
+    "parseComponentString": [],
+    "token": [],
+    "parseModuleSource": [],
+    "parseSymbol": [],
+    "parseSymbolRest": [
+      "component"
+    ],
+    "parseRootComponent": [],
+    "parseComponentRest": [
+      "component"
+    ],
+    "parseNavigation": [],
+    "tryParseMeaning": [],
+    "tryParseOverloadIndex": [
+      "hasMeaning"
+    ],
+    "parseDecimalDigits": [],
+    "isStartOfComponent": [],
+    "parseComponentCharacters": [],
+    "parseTokenString": [
+      "token",
+      "tokenString"
+    ],
+    "parseText": [],
+    "parseString": [],
+    "parseComponent": [],
+    "parseBracketedComponent": [],
+    "optionalToken": [
+      "token"
+    ],
+    "expectToken": [
+      "token",
+      "message"
+    ],
+    "fail": [
+      "message",
+      "fallback"
+    ]
+  },
+  "formatNavigation": [
+    "navigation"
+  ],
+  "isCharacterEscapeSequence": [
+    "ch"
+  ],
+  "isSingleEscapeCharacter": [
+    "ch"
+  ],
+  "isNonEscapeCharacter": [
+    "ch"
+  ],
+  "isEscapeCharacter": [
+    "ch"
+  ],
+  "isLineTerminator": [
+    "ch"
+  ],
+  "isDecimalDigit": [
+    "ch"
+  ],
+  "isHexDigit": [
+    "ch"
+  ],
+  "isPunctuator": [
+    "ch"
+  ],
+  "escapeComponentIfNeeded": [
+    "text",
+    "userEscaped"
+  ],
+  "escapeModuleSourceIfNeeded": [
+    "text",
+    "userEscaped"
+  ],
+  "DocNodeManager": {
+    "constructor": [],
+    "registerDocNodes": [
+      "packageName",
+      "definitions"
+    ],
+    "throwIfNotRegisteredKind": [
+      "docNodeKind"
+    ],
+    "registerAllowableChildren": [
+      "parentKind",
+      "childKinds"
+    ],
+    "isAllowedChild": [
+      "parentKind",
+      "childKind"
+    ],
+    "_getDefinition": [
+      "docNodeKind"
+    ]
+  },
+  "TSDocConfiguration": {
+    "constructor": [],
+    "clear": [
+      "param"
+    ],
+    "tagDefinitions": [],
+    "supportedTagDefinitions": [],
+    "validation": [],
+    "supportedHtmlElements": [],
+    "docNodeManager": [],
+    "tryGetTagDefinition": [
+      "tagName"
+    ],
+    "tryGetTagDefinitionWithUpperCase": [
+      "alreadyUpperCaseTagName"
+    ],
+    "addTagDefinition": [
+      "tagDefinition"
+    ],
+    "addTagDefinitions": [
+      "tagDefinitions",
+      "supported"
+    ],
+    "isTagSupported": [
+      "tagDefinition"
+    ],
+    "setSupportForTag": [
+      "tagDefinition",
+      "supported"
+    ],
+    "setSupportForTags": [
+      "tagDefinitions",
+      "supported"
+    ],
+    "setSupportedHtmlElements": [
+      "htmlTags"
+    ],
+    "isHtmlElementSupported": [
+      "htmlTag"
+    ],
+    "isKnownMessageId": [
+      "messageId"
+    ],
+    "allTsdocMessageIds": [],
+    "_requireTagToBeDefined": [
+      "tagDefinition"
+    ]
+  },
+  "TSDocTagDefinition": {
+    "constructor": [
+      "parameters"
+    ],
+    "validateTSDocTagName": [
+      "tagName"
+    ]
+  },
+  "TSDocValidationConfiguration": {
+    "constructor": []
+  },
+  "ModifierTagSet": {
+    "constructor": [],
+    "nodes": [],
+    "hasTagName": [
+      "modifierTagName"
+    ],
+    "hasTag": [
+      "modifierTagDefinition"
+    ],
+    "tryGetTag": [
+      "modifierTagDefinition"
+    ],
+    "addTag": [
+      "blockTag"
+    ]
+  },
+  "StandardModifierTagSet": {
+    "isAlpha": [],
+    "isBeta": [],
+    "isEventProperty": [],
+    "isExperimental": [],
+    "isInternal": [],
+    "isOverride": [],
+    "isPackageDocumentation": [],
+    "isPublic": [],
+    "isReadonly": [],
+    "isSealed": [],
+    "isVirtual": []
+  },
+  "StandardTags": {
+    "_defineTag": [
+      "parameters"
+    ]
+  },
+  "PlainTextEmitter": {
+    "hasAnyTextContent": [
+      "nodeOrNodes",
+      "requiredCharacters"
+    ],
+    "_scanTextContent": [
+      "nodes",
+      "requiredCharacters",
+      "foundCharacters"
+    ],
+    "_countNonSpaceCharacters": [
+      "s"
+    ]
+  },
+  "StringBuilder": {
+    "constructor": [],
+    "append": [
+      "text"
+    ],
+    "toString": []
+  },
+  "TSDocEmitter": {
+    "constructor": [],
+    "renderComment": [
+      "output",
+      "docComment"
+    ],
+    "renderHtmlTag": [
+      "output",
+      "htmlTag"
+    ],
+    "renderDeclarationReference": [
+      "output",
+      "declarationReference"
+    ],
+    "_renderCompleteObject": [
+      "output",
+      "docNode"
+    ],
+    "_renderNode": [
+      "docNode"
+    ],
+    "_renderInlineTag": [
+      "docInlineTagBase",
+      "writeInlineTagContent"
+    ],
+    "_renderNodes": [
+      "docNodes"
+    ],
+    "_ensureAtStartOfLine": [],
+    "_ensureLineSkipped": [],
+    "_writeContent": [
+      "content"
+    ],
+    "_writeNewline": [],
+    "_writeEnd": []
+  },
+  "BuiltInDocNodes": {
+    "register": [
+      "configuration"
+    ]
+  },
+  "DocBlock": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "blockTag": [],
+    "content": [],
+    "onGetChildNodes": []
+  },
+  "DocBlockTag": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "tagName": [],
+    "tagNameWithUpperCase": [],
+    "onGetChildNodes": [],
+    "getTokenSequence": []
+  },
+  "DocCodeSpan": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "code": [],
+    "onGetChildNodes": []
+  },
+  "DocComment": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "seeBlocks": [],
+    "customBlocks": [],
+    "_appendSeeBlock": [
+      "block"
+    ],
+    "appendCustomBlock": [
+      "block"
+    ],
+    "onGetChildNodes": [],
+    "emitAsTsdoc": []
+  },
+  "DocDeclarationReference": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "packageName": [],
+    "importPath": [],
+    "memberReferences": [],
+    "emitAsTsdoc": [],
+    "onGetChildNodes": []
+  },
+  "DocErrorText": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "text": [],
+    "textExcerpt": [],
+    "messageId": [],
+    "errorMessage": [],
+    "errorLocation": [],
+    "onGetChildNodes": []
+  },
+  "DocEscapedText": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "escapeStyle": [],
+    "encodedText": [],
+    "decodedText": [],
+    "onGetChildNodes": []
+  },
+  "DocExcerpt": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "excerptKind": [],
+    "content": []
+  },
+  "DocFencedCode": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "language": [],
+    "code": [],
+    "onGetChildNodes": []
+  },
+  "DocHtmlAttribute": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "name": [],
+    "spacingAfterName": [],
+    "spacingAfterEquals": [],
+    "value": [],
+    "spacingAfterValue": [],
+    "onGetChildNodes": []
+  },
+  "DocHtmlEndTag": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "name": [],
+    "emitAsHtml": [],
+    "onGetChildNodes": []
+  },
+  "DocHtmlStartTag": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "name": [],
+    "htmlAttributes": [],
+    "selfClosingTag": [],
+    "spacingAfterName": [],
+    "emitAsHtml": [],
+    "onGetChildNodes": []
+  },
+  "DocInheritDocTag": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "declarationReference": [],
+    "getChildNodesForContent": []
+  },
+  "DocInlineTag": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "tagContent": [],
+    "getChildNodesForContent": []
+  },
+  "DocInlineTagBase": {
+    "constructor": [
+      "parameters"
+    ],
+    "tagName": [],
+    "tagNameWithUpperCase": [],
+    "onGetChildNodes": []
+  },
+  "DocLinkTag": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "codeDestination": [],
+    "urlDestination": [],
+    "linkText": [],
+    "getChildNodesForContent": []
+  },
+  "DocMemberIdentifier": {
+    "constructor": [
+      "parameters"
+    ],
+    "isValidIdentifier": [
+      "identifier"
+    ],
+    "kind": [],
+    "identifier": [],
+    "hasQuotes": [],
+    "onGetChildNodes": []
+  },
+  "DocMemberReference": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "hasDot": [],
+    "memberIdentifier": [],
+    "memberSymbol": [],
+    "selector": [],
+    "onGetChildNodes": []
+  },
+  "DocMemberSelector": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "selector": [],
+    "selectorKind": [],
+    "errorMessage": [],
+    "onGetChildNodes": []
+  },
+  "DocMemberSymbol": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "symbolReference": [],
+    "onGetChildNodes": []
+  },
+  "DocNode": {
+    "constructor": [
+      "parameters"
+    ],
+    "getChildNodes": [],
+    "onGetChildNodes": [],
+    "isParsedParameters": [
+      "parameters"
+    ]
+  },
+  "DocNodeContainer": {
+    "constructor": [
+      "parameters",
+      "childNodes"
+    ],
+    "nodes": [],
+    "appendNode": [
+      "docNode"
+    ],
+    "appendNodes": [
+      "docNodes"
+    ],
+    "clearNodes": [],
+    "onGetChildNodes": []
+  },
+  "DocParagraph": {
+    "constructor": [
+      "parameters",
+      "childNodes"
+    ],
+    "kind": []
+  },
+  "DocParamBlock": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "parameterName": [],
+    "onGetChildNodes": []
+  },
+  "DocParamCollection": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "blocks": [],
+    "count": [],
+    "add": [
+      "docParamBlock"
+    ],
+    "clear": [],
+    "tryGetBlockByName": [
+      "parameterName"
+    ],
+    "onGetChildNodes": []
+  },
+  "DocPlainText": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "text": [],
+    "textExcerpt": [],
+    "onGetChildNodes": []
+  },
+  "DocSection": {
+    "constructor": [
+      "parameters",
+      "childNodes"
+    ],
+    "kind": [],
+    "appendNodeInParagraph": [
+      "docNode"
+    ],
+    "appendNodesInParagraph": [
+      "docNodes"
+    ]
+  },
+  "DocSoftBreak": {
+    "constructor": [
+      "parameters"
+    ],
+    "kind": [],
+    "onGetChildNodes": []
+  },
+  "LineExtractor": {
+    "extract": [
+      "parserContext"
+    ]
+  },
+  "NodeParser": {
+    "constructor": [
+      "parserContext"
+    ],
+    "parse": [],
+    "_performValidationChecks": [],
+    "_validateTagDefinition": [
+      "tagDefinition",
+      "tagName",
+      "expectingInlineTag",
+      "tokenSequenceForErrorContext",
+      "nodeForErrorContext"
+    ],
+    "_pushAccumulatedPlainText": [
+      "tokenReader"
+    ],
+    "_parseAndPushBlock": [
+      "tokenReader"
+    ],
+    "_addBlockToDocComment": [
+      "block"
+    ],
+    "_tryParseJSDocTypeOrValueRest": [
+      "tokenReader",
+      "openKind",
+      "closeKind",
+      "startMarker"
+    ],
+    "_tryParseUnsupportedJSDocType": [
+      "tokenReader",
+      "docBlockTag",
+      "tagName"
+    ],
+    "_tryParseJSDocOptionalNameRest": [
+      "tokenReader"
+    ],
+    "_parseParamBlock": [
+      "tokenReader",
+      "docBlockTag",
+      "tagName"
+    ],
+    "_pushNode": [
+      "docNode"
+    ],
+    "_parseBackslashEscape": [
+      "tokenReader"
+    ],
+    "_parseBlockTag": [
+      "tokenReader"
+    ],
+    "_parseInlineTag": [
+      "tokenReader"
+    ],
+    "_parseInheritDocTag": [
+      "docInlineTagParsedParameters",
+      "embeddedTokenReader"
+    ],
+    "_parseLinkTag": [
+      "docInlineTagParsedParameters",
+      "embeddedTokenReader"
+    ],
+    "_parseLinkTagUrlDestination": [
+      "embeddedTokenReader",
+      "parameters",
+      "tokenSequenceForErrorContext",
+      "nodeForErrorContext"
+    ],
+    "_parseLinkTagCodeDestination": [
+      "embeddedTokenReader",
+      "parameters",
+      "tokenSequenceForErrorContext",
+      "nodeForErrorContext"
+    ],
+    "_parseDeclarationReference": [
+      "tokenReader",
+      "tokenSequenceForErrorContext",
+      "nodeForErrorContext"
+    ],
+    "_parseMemberReference": [
+      "tokenReader",
+      "expectingDot",
+      "tokenSequenceForErrorContext",
+      "nodeForErrorContext"
+    ],
+    "_parseMemberSymbol": [
+      "tokenReader",
+      "nodeForErrorContext"
+    ],
+    "_parseMemberIdentifier": [
+      "tokenReader",
+      "tokenSequenceForErrorContext",
+      "nodeForErrorContext"
+    ],
+    "_parseMemberSelector": [
+      "tokenReader",
+      "tokenSequenceForErrorContext",
+      "nodeForErrorContext"
+    ],
+    "_parseHtmlStartTag": [
+      "tokenReader"
+    ],
+    "_parseHtmlAttribute": [
+      "tokenReader"
+    ],
+    "_parseHtmlString": [
+      "tokenReader"
+    ],
+    "_parseHtmlEndTag": [
+      "tokenReader"
+    ],
+    "_parseHtmlName": [
+      "tokenReader"
+    ],
+    "_parseFencedCode": [
+      "tokenReader"
+    ],
+    "_parseCodeSpan": [
+      "tokenReader"
+    ],
+    "_tryReadSpacingAndNewlines": [
+      "tokenReader"
+    ],
+    "_createError": [
+      "tokenReader",
+      "messageId",
+      "errorMessage"
+    ],
+    "_backtrackAndCreateError": [
+      "tokenReader",
+      "marker",
+      "messageId",
+      "errorMessage"
+    ],
+    "_backtrackAndCreateErrorRange": [
+      "tokenReader",
+      "errorStartMarker",
+      "errorInclusiveEndMarker",
+      "messageId",
+      "errorMessage"
+    ],
+    "_backtrackAndCreateErrorForFailure": [
+      "tokenReader",
+      "marker",
+      "errorMessagePrefix",
+      "failure"
+    ],
+    "_backtrackAndCreateErrorRangeForFailure": [
+      "tokenReader",
+      "errorStartMarker",
+      "errorInclusiveEndMarker",
+      "errorMessagePrefix",
+      "failure"
+    ],
+    "_createFailureForToken": [
+      "tokenReader",
+      "failureMessageId",
+      "failureMessage",
+      "tokenMarker"
+    ],
+    "_createFailureForTokensSince": [
+      "tokenReader",
+      "failureMessageId",
+      "failureMessage",
+      "startMarker"
+    ]
+  },
+  "isFailure": [
+    "resultOrFailure"
+  ],
+  "ParagraphSplitter": {
+    "splitParagraphs": [
+      "node"
+    ],
+    "splitParagraphsForSection": [
+      "docSection"
+    ],
+    "_splitParagraph": [
+      "oldParagraph",
+      "outputNodes"
+    ],
+    "_isWhitespace": [
+      "node"
+    ]
+  },
+  "ParserContext": {
+    "constructor": [
+      "configuration",
+      "sourceRange"
+    ]
+  },
+  "ParserMessage": {
+    "constructor": [
+      "parameters"
+    ],
+    "_formatMessageText": [
+      "message",
+      "range"
+    ],
+    "text": [],
+    "toString": []
+  },
+  "ParserMessageLog": {
+    "constructor": [],
+    "messages": [],
+    "addMessage": [
+      "parserMessage"
+    ],
+    "addMessageForTextRange": [
+      "messageId",
+      "messageText",
+      "textRange"
+    ],
+    "addMessageForTokenSequence": [
+      "messageId",
+      "messageText",
+      "tokenSequence",
+      "docNode"
+    ],
+    "addMessageForDocErrorText": [
+      "docErrorText"
+    ]
+  },
+  "StringChecks": {
+    "explainIfInvalidTSDocTagName": [
+      "tagName"
+    ],
+    "validateTSDocTagName": [
+      "tagName"
+    ],
+    "explainIfInvalidLinkUrl": [
+      "url"
+    ],
+    "explainIfInvalidHtmlName": [
+      "htmlName"
+    ],
+    "validateHtmlName": [
+      "htmlName"
+    ],
+    "explainIfInvalidPackageName": [
+      "packageName"
+    ],
+    "explainIfInvalidImportPath": [
+      "importPath",
+      "prefixedByPackageName"
+    ],
+    "isSystemSelector": [
+      "selector"
+    ],
+    "explainIfInvalidUnquotedIdentifier": [
+      "identifier"
+    ],
+    "explainIfInvalidUnquotedMemberIdentifier": [
+      "identifier"
+    ]
+  },
+  "TSDocParser": {
+    "constructor": [
+      "configuration"
+    ],
+    "parseString": [
+      "text"
+    ],
+    "parseRange": [
+      "range"
+    ]
+  },
+  "TextRange": {
+    "constructor": [
+      "buffer",
+      "pos",
+      "end"
+    ],
+    "fromString": [
+      "buffer"
+    ],
+    "fromStringRange": [
+      "buffer",
+      "pos",
+      "end"
+    ],
+    "length": [],
+    "getNewRange": [
+      "pos",
+      "end"
+    ],
+    "isEmpty": [],
+    "toString": [],
+    "getDebugDump": [
+      "posDelimiter",
+      "endDelimiter"
+    ],
+    "getLocation": [
+      "index"
+    ],
+    "_validateBounds": []
+  },
+  "Token": {
+    "constructor": [
+      "kind",
+      "range",
+      "line"
+    ],
+    "toString": []
+  },
+  "TokenReader": {
+    "constructor": [
+      "parserContext",
+      "embeddedTokenSequence"
+    ],
+    "extractAccumulatedSequence": [],
+    "isAccumulatedSequenceEmpty": [],
+    "tryExtractAccumulatedSequence": [],
+    "assertAccumulatedSequenceIsEmpty": [],
+    "peekToken": [],
+    "peekTokenKind": [],
+    "peekTokenAfterKind": [],
+    "peekTokenAfterAfterKind": [],
+    "readToken": [],
+    "peekPreviousTokenKind": [],
+    "createMarker": [],
+    "backtrackToMarker": [
+      "marker"
+    ]
+  },
+  "TokenSequence": {
+    "constructor": [
+      "parameters"
+    ],
+    "createEmpty": [
+      "parserContext"
+    ],
+    "startIndex": [],
+    "endIndex": [],
+    "tokens": [],
+    "getNewSequence": [
+      "startIndex",
+      "endIndex"
+    ],
+    "getContainingTextRange": [],
+    "isEmpty": [],
+    "toString": [],
+    "_validateBounds": []
+  },
+  "Tokenizer": {
+    "readTokens": [
+      "lines"
+    ],
+    "isPunctuation": [
+      "tokenKind"
+    ],
+    "_pushTokensForLine": [
+      "tokens",
+      "line"
+    ],
+    "_isMultiCharacterToken": [
+      "kind"
+    ],
+    "_ensureInitialized": []
+  },
+  "DocNodeTransforms": {
+    "trimSpacesInParagraph": [
+      "docParagraph"
+    ]
+  },
+  "TrimSpacesTransform": {
+    "transform": [
+      "docParagraph"
+    ]
+  },
+  "ownKeys": [
+    "o"
+  ]
+}

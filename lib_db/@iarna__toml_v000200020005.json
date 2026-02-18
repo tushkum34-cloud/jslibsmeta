@@ -1,0 +1,424 @@
+{
+  "Date": {
+    "constructor": [
+      "value"
+    ],
+    "toISOString": []
+  },
+  "FloatingDateTime": {
+    "constructor": [
+      "value"
+    ],
+    "toISOString": []
+  },
+  "Time": {
+    "constructor": [
+      "value"
+    ],
+    "toISOString": []
+  },
+  "dump": [
+    "_"
+  ],
+  "DebugParser": {
+    "stateName": [
+      "state"
+    ],
+    "runOne": [],
+    "finish": [],
+    "callStack": [],
+    "next": [
+      "fn"
+    ],
+    "goto": [
+      "fn"
+    ],
+    "call": [
+      "fn",
+      "returnWith"
+    ],
+    "callNow": [
+      "fn",
+      "returnWith"
+    ],
+    "return": [
+      "value"
+    ],
+    "returnNow": [
+      "value"
+    ]
+  },
+  "ParserError": {
+    "constructor": [
+      "msg",
+      "filename",
+      "linenumber"
+    ]
+  },
+  "State": {
+    "constructor": [
+      "parser"
+    ]
+  },
+  "Parser": {
+    "constructor": [],
+    "parse": [
+      "str"
+    ],
+    "nextChar": [],
+    "haveBuffer": [],
+    "runOne": [],
+    "finish": [],
+    "next": [
+      "fn"
+    ],
+    "goto": [
+      "fn"
+    ],
+    "call": [
+      "fn",
+      "returnWith"
+    ],
+    "callNow": [
+      "fn",
+      "returnWith"
+    ],
+    "return": [
+      "value"
+    ],
+    "returnNow": [
+      "value"
+    ],
+    "consume": [],
+    "error": [
+      "err"
+    ],
+    "parseStart": []
+  },
+  "TomlError": {
+    "constructor": [
+      "msg"
+    ]
+  },
+  "isDigit": [
+    "cp"
+  ],
+  "isHexit": [
+    "cp"
+  ],
+  "isBit": [
+    "cp"
+  ],
+  "isOctit": [
+    "cp"
+  ],
+  "isAlphaNumQuoteHyphen": [
+    "cp"
+  ],
+  "isAlphaNumHyphen": [
+    "cp"
+  ],
+  "hasKey": [
+    "obj",
+    "key"
+  ],
+  "InlineTable": [],
+  "isInlineTable": [
+    "obj"
+  ],
+  "Table": [],
+  "isTable": [
+    "obj"
+  ],
+  "InlineList": [
+    "type"
+  ],
+  "isInlineList": [
+    "obj"
+  ],
+  "List": [],
+  "isList": [
+    "obj"
+  ],
+  "BoxedBigInt": {
+    "constructor": [
+      "value"
+    ],
+    "isNaN": [],
+    "toString": [],
+    "_inspect": [],
+    "valueOf": []
+  },
+  "Integer": [
+    "value"
+  ],
+  "isInteger": [
+    "obj"
+  ],
+  "Float": [
+    "value"
+  ],
+  "isFloat": [
+    "obj"
+  ],
+  "tomlType": [
+    "value"
+  ],
+  "makeParserClass": [
+    "Parser"
+  ],
+  "TOMLParser": {
+    "constructor": [],
+    "atEndOfWord": [],
+    "atEndOfLine": [],
+    "parseStart": [],
+    "parseWhitespaceToEOL": [],
+    "parseAssignStatement": [],
+    "recordAssignStatement": [
+      "kv"
+    ],
+    "parseAssign": [],
+    "recordAssignKeyword": [
+      "key"
+    ],
+    "parseAssignKeywordPreDot": [],
+    "parseAssignKeywordPostDot": [],
+    "parseAssignEqual": [],
+    "parseAssignPreValue": [],
+    "recordAssignValue": [
+      "value"
+    ],
+    "parseComment": [],
+    "parseTableOrList": [],
+    "parseTable": [],
+    "parseTableNext": [],
+    "parseTableMore": [
+      "keyword"
+    ],
+    "parseList": [],
+    "parseListNext": [],
+    "parseListMore": [
+      "keyword"
+    ],
+    "parseListEnd": [
+      "keyword"
+    ],
+    "parseValue": [],
+    "recordValue": [
+      "value"
+    ],
+    "parseInf": [],
+    "parseInf2": [],
+    "parseNan": [],
+    "parseNan2": [],
+    "parseKeyword": [],
+    "parseBareKey": [],
+    "parseSingleString": [],
+    "parseLiteralString": [],
+    "parseLiteralMultiStringMaybe": [],
+    "parseLiteralMultiString": [],
+    "parseLiteralMultiStringContent": [],
+    "parseLiteralMultiEnd": [],
+    "parseLiteralMultiEnd2": [],
+    "parseDoubleString": [],
+    "parseBasicString": [],
+    "recordEscapeReplacement": [
+      "replacement"
+    ],
+    "parseMultiStringMaybe": [],
+    "parseMultiString": [],
+    "parseMultiStringContent": [],
+    "errorControlCharInString": [],
+    "recordMultiEscapeReplacement": [
+      "replacement"
+    ],
+    "parseMultiEnd": [],
+    "parseMultiEnd2": [],
+    "parseMultiEscape": [],
+    "parsePreMultiTrim": [],
+    "parseMultiTrim": [],
+    "parseEscape": [],
+    "parseUnicodeReturn": [
+      "char"
+    ],
+    "parseSmallUnicode": [],
+    "parseLargeUnicode": [],
+    "parseNumberSign": [],
+    "parseMaybeSignedInfOrNan": [],
+    "parseNumberIntegerStart": [],
+    "parseNumberIntegerExponentOrDecimal": [],
+    "parseNumberInteger": [],
+    "parseNoUnder": [],
+    "parseNoUnderHexOctBinLiteral": [],
+    "parseNumberFloat": [],
+    "parseNumberExponentSign": [],
+    "parseNumberExponent": [],
+    "parseNumberOrDateTime": [],
+    "parseNumberOrDateTimeOnly": [],
+    "parseDateTimeOnly": [],
+    "parseNumberBaseOrDateTime": [],
+    "parseIntegerHex": [],
+    "parseIntegerOct": [],
+    "parseIntegerBin": [],
+    "parseDateTime": [],
+    "parseDateMonth": [],
+    "parseDateDay": [],
+    "parseStartTimeHour": [],
+    "parseTimeHour": [],
+    "parseTimeMin": [],
+    "parseTimeSec": [],
+    "parseOnlyTimeHour": [],
+    "parseOnlyTimeMin": [],
+    "parseOnlyTimeSec": [],
+    "parseOnlyTimeFractionMaybe": [],
+    "parseOnlyTimeFraction": [],
+    "parseTimeZoneOrFraction": [],
+    "parseDateTimeFraction": [],
+    "parseTimeZoneHour": [],
+    "parseTimeZoneSep": [],
+    "parseTimeZoneMin": [],
+    "parseBoolean": [],
+    "parseTrue_r": [],
+    "parseTrue_u": [],
+    "parseTrue_e": [],
+    "parseFalse_a": [],
+    "parseFalse_l": [],
+    "parseFalse_s": [],
+    "parseFalse_e": [],
+    "parseInlineList": [],
+    "recordInlineListValue": [
+      "value"
+    ],
+    "parseInlineListNext": [],
+    "parseInlineTable": [],
+    "recordInlineTableValue": [
+      "kv"
+    ],
+    "parseInlineTableNext": []
+  },
+  "parseAsync": [
+    "str",
+    "opts"
+  ],
+  "parseAsyncNext": [
+    "index",
+    "blocksize",
+    "resolve",
+    "reject"
+  ],
+  "prettyError": [
+    "err",
+    "buf"
+  ],
+  "parseStream": [
+    "stm"
+  ],
+  "parseReadable": [
+    "stm"
+  ],
+  "finish": [],
+  "error": [
+    "err"
+  ],
+  "readNext": [],
+  "parseTransform": [],
+  "parseString": [
+    "str"
+  ],
+  "stringify": [
+    "obj"
+  ],
+  "typeError": [
+    "type"
+  ],
+  "arrayOneTypeError": [],
+  "getInlineKeys": [
+    "obj"
+  ],
+  "getComplexKeys": [
+    "obj"
+  ],
+  "toJSON": [
+    "obj"
+  ],
+  "stringifyObject": [
+    "prefix",
+    "indent",
+    "obj"
+  ],
+  "isInline": [
+    "value"
+  ],
+  "stringifyKey": [
+    "key"
+  ],
+  "stringifyBasicString": [
+    "str"
+  ],
+  "stringifyLiteralString": [
+    "str"
+  ],
+  "numpad": [
+    "num",
+    "str"
+  ],
+  "escapeString": [
+    "str"
+  ],
+  "stringifyMultilineString": [
+    "str"
+  ],
+  "stringifyAnyInline": [
+    "value",
+    "multilineOk"
+  ],
+  "stringifyInline": [
+    "value",
+    "type"
+  ],
+  "stringifyInteger": [
+    "value"
+  ],
+  "stringifyFloat": [
+    "value"
+  ],
+  "stringifyBoolean": [
+    "value"
+  ],
+  "stringifyDatetime": [
+    "value"
+  ],
+  "isNumber": [
+    "type"
+  ],
+  "arrayType": [
+    "values"
+  ],
+  "validateArray": [
+    "values"
+  ],
+  "stringifyInlineArray": [
+    "values"
+  ],
+  "stringifyInlineTable": [
+    "value"
+  ],
+  "stringifyComplex": [
+    "prefix",
+    "indent",
+    "key",
+    "value"
+  ],
+  "stringifyArrayOfTables": [
+    "prefix",
+    "indent",
+    "key",
+    "values"
+  ],
+  "stringifyComplexTable": [
+    "prefix",
+    "indent",
+    "key",
+    "value"
+  ]
+}

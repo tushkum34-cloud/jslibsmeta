@@ -1,0 +1,134 @@
+{
+  "checkContentLengthHeader": [],
+  "getCheckContentLengthHeaderPlugin": [
+    "unused"
+  ],
+  "regionRedirectEndpointMiddleware": [
+    "config"
+  ],
+  "unlock": [],
+  "regionRedirectMiddleware": [
+    "clientConfig"
+  ],
+  "getRegionRedirectMiddlewarePlugin": [
+    "clientConfig"
+  ],
+  "s3ExpiresMiddleware": [
+    "config"
+  ],
+  "getS3ExpiresMiddlewarePlugin": [
+    "clientConfig"
+  ],
+  "S3ExpressIdentityCache": {
+    "data": [],
+    "lastPurgeTime": [],
+    "EXPIRED_CREDENTIAL_PURGE_INTERVAL_MS": [],
+    "constructor": [
+      "data"
+    ],
+    "get": [
+      "key"
+    ],
+    "set": [
+      "key",
+      "entry"
+    ],
+    "delete": [
+      "key"
+    ],
+    "purgeExpired": []
+  },
+  "S3ExpressIdentityCacheEntry": {
+    "_identity": [],
+    "isRefreshing": [],
+    "accessed": [],
+    "constructor": [
+      "_identity",
+      "isRefreshing",
+      "accessed"
+    ],
+    "identity": []
+  },
+  "S3ExpressIdentityProviderImpl": {
+    "createSessionFn": [],
+    "cache": [],
+    "REFRESH_WINDOW_MS": [],
+    "constructor": [
+      "createSessionFn",
+      "cache"
+    ],
+    "getS3ExpressIdentity": [
+      "awsIdentity",
+      "identityProperties"
+    ],
+    "getIdentity": []
+  },
+  "SignatureV4S3Express": {
+    "signWithCredentials": [
+      "requestToSign",
+      "credentials",
+      "options"
+    ],
+    "presignWithCredentials": [
+      "requestToSign",
+      "credentials",
+      "options"
+    ]
+  },
+  "getCredentialsWithoutSessionToken": [
+    "credentials"
+  ],
+  "setSingleOverride": [
+    "privateAccess",
+    "credentialsWithoutSessionToken"
+  ],
+  "overrideCredentialsProviderOnce": [],
+  "s3ExpressMiddleware": [
+    "options"
+  ],
+  "getS3ExpressPlugin": [
+    "options"
+  ],
+  "signS3Express": [
+    "s3ExpressIdentity",
+    "signingOptions",
+    "request",
+    "sigV4MultiRegionSigner"
+  ],
+  "defaultErrorHandler": [
+    "signingProperties"
+  ],
+  "defaultSuccessHandler": [
+    "httpResponse",
+    "signingProperties"
+  ],
+  "s3ExpressHttpSigningMiddleware": [
+    "config"
+  ],
+  "getS3ExpressHttpSigningPlugin": [
+    "config"
+  ],
+  "resolveS3Config": [
+    "input",
+    "param"
+  ],
+  "throw200ExceptionsMiddleware": [
+    "config"
+  ],
+  "collectBody": [
+    "param",
+    "context"
+  ],
+  "getThrow200ExceptionsPlugin": [
+    "config"
+  ],
+  "bucketEndpointMiddleware": [
+    "options"
+  ],
+  "validateBucketNameMiddleware": [
+    "param"
+  ],
+  "getValidateBucketNamePlugin": [
+    "options"
+  ]
+}

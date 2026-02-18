@@ -1,0 +1,5294 @@
+{
+  "enableViewPlaceholder": [
+    "param"
+  ],
+  "setPlaceholder": [
+    "text"
+  ],
+  "disableViewPlaceholder": [
+    "view",
+    "element"
+  ],
+  "showViewPlaceholder": [
+    "writer",
+    "element"
+  ],
+  "hideViewPlaceholder": [
+    "writer",
+    "element"
+  ],
+  "needsViewPlaceholder": [
+    "element",
+    "keepOnFocus"
+  ],
+  "hasContent": [
+    "element"
+  ],
+  "updateDocumentPlaceholders": [
+    "placeholders",
+    "writer"
+  ],
+  "updatePlaceholder": [
+    "writer",
+    "element",
+    "config"
+  ],
+  "getChildPlaceholderHostSubstitute": [
+    "parent"
+  ],
+  "showViewPlaceholderTextDeprecationWarning": [],
+  "ViewTypeCheckable": {
+    "is": []
+  },
+  "ViewNode": {
+    "document": [],
+    "parent": [],
+    "constructor": [
+      "document"
+    ],
+    "index": [],
+    "nextSibling": [],
+    "previousSibling": [],
+    "root": [],
+    "isAttached": [],
+    "getPath": [],
+    "getAncestors": [
+      "param"
+    ],
+    "getCommonAncestor": [
+      "node",
+      "param"
+    ],
+    "isBefore": [
+      "node"
+    ],
+    "isAfter": [
+      "node"
+    ],
+    "_remove": [],
+    "_fireChange": [
+      "type",
+      "node",
+      "data"
+    ],
+    "toJSON": []
+  },
+  "ViewText": {
+    "_textData": [],
+    "constructor": [
+      "document",
+      "data"
+    ],
+    "data": [],
+    "_data": [
+      "data"
+    ],
+    "isSimilar": [
+      "otherNode"
+    ],
+    "toJSON": [],
+    "_clone": []
+  },
+  "ViewTextProxy": {
+    "textNode": [],
+    "data": [],
+    "offsetInText": [],
+    "constructor": [
+      "textNode",
+      "offsetInText",
+      "length"
+    ],
+    "offsetSize": [],
+    "isPartial": [],
+    "parent": [],
+    "root": [],
+    "document": [],
+    "getAncestors": [
+      "param"
+    ]
+  },
+  "ViewConsumable": {
+    "_consumables": [],
+    "add": [
+      "element",
+      "consumables"
+    ],
+    "test": [
+      "element",
+      "consumables"
+    ],
+    "consume": [
+      "element",
+      "consumables"
+    ],
+    "revert": [
+      "element",
+      "consumables"
+    ],
+    "createFrom": [
+      "from",
+      "instance"
+    ]
+  },
+  "ViewElementConsumables": {
+    "element": [],
+    "_canConsumeName": [],
+    "_attributes": [],
+    "constructor": [
+      "from"
+    ],
+    "add": [
+      "consumables"
+    ],
+    "test": [
+      "consumables"
+    ],
+    "consume": [
+      "consumables"
+    ],
+    "revert": [
+      "consumables"
+    ]
+  },
+  "normalizeConsumables": [
+    "consumables"
+  ],
+  "normalizeConsumablePart": [
+    "attributes",
+    "items",
+    "prefix"
+  ],
+  "Matcher": {
+    "_patterns": [],
+    "constructor": [
+      "param"
+    ],
+    "add": [
+      "param"
+    ],
+    "match": [
+      "param"
+    ],
+    "matchAll": [
+      "param"
+    ],
+    "getElementName": [],
+    "_isElementMatching": [
+      "element",
+      "pattern"
+    ]
+  },
+  "isPatternMatched": [
+    "pattern",
+    "item"
+  ],
+  "matchName": [
+    "pattern",
+    "name"
+  ],
+  "normalizePatterns": [
+    "patterns",
+    "prefix"
+  ],
+  "matchAttributes": [
+    "patterns",
+    "element",
+    "match"
+  ],
+  "matchClasses": [
+    "patterns",
+    "element",
+    "match"
+  ],
+  "matchStyles": [
+    "patterns",
+    "element",
+    "match"
+  ],
+  "StylesMap": {
+    "_styles": [],
+    "_cachedStyleNames": [],
+    "_cachedExpandedStyleNames": [],
+    "_styleProcessor": [],
+    "constructor": [
+      "styleProcessor"
+    ],
+    "isEmpty": [],
+    "size": [],
+    "setTo": [
+      "inlineStyle"
+    ],
+    "has": [
+      "name"
+    ],
+    "set": [
+      "nameOrObject",
+      "valueOrObject"
+    ],
+    "remove": [
+      "names"
+    ],
+    "getNormalized": [
+      "name"
+    ],
+    "toString": [],
+    "getAsString": [
+      "propertyName"
+    ],
+    "getStyleNames": [
+      "param"
+    ],
+    "keys": [],
+    "clear": [],
+    "isSimilar": [
+      "other"
+    ],
+    "getStylesEntries": [],
+    "_clone": [],
+    "_getTokensMatch": [
+      "tokenPattern",
+      "valuePattern"
+    ],
+    "_getConsumables": [
+      "name"
+    ],
+    "_canMergeFrom": [
+      "other"
+    ],
+    "_mergeFrom": [
+      "other"
+    ],
+    "_isMatching": [
+      "other"
+    ]
+  },
+  "StylesProcessor": {
+    "_normalizers": [],
+    "_extractors": [],
+    "_reducers": [],
+    "_consumables": [],
+    "constructor": [],
+    "toNormalizedForm": [
+      "name",
+      "propertyValue",
+      "styles"
+    ],
+    "getNormalized": [
+      "name",
+      "styles"
+    ],
+    "getReducedForm": [
+      "name",
+      "styles"
+    ],
+    "getStyleNames": [
+      "styles"
+    ],
+    "getRelatedStyles": [
+      "name"
+    ],
+    "setNormalizer": [
+      "name",
+      "callback"
+    ],
+    "setExtractor": [
+      "name",
+      "callbackOrPath"
+    ],
+    "setReducer": [
+      "name",
+      "callback"
+    ],
+    "setStyleRelation": [
+      "shorthandName",
+      "styleNames"
+    ],
+    "_mapStyleNames": [
+      "name",
+      "styleNames"
+    ]
+  },
+  "parseInlineStyles": [
+    "stylesString"
+  ],
+  "toPath": [
+    "name"
+  ],
+  "appendStyleValue": [
+    "stylesObject",
+    "nameOrPath",
+    "valueOrObject"
+  ],
+  "removeStyles": [
+    "styles",
+    "toRemove"
+  ],
+  "ViewTokenList": {
+    "_set": [],
+    "isEmpty": [],
+    "size": [],
+    "has": [
+      "name"
+    ],
+    "keys": [],
+    "setTo": [
+      "value"
+    ],
+    "set": [
+      "tokens"
+    ],
+    "remove": [
+      "tokens"
+    ],
+    "clear": [],
+    "toString": [],
+    "isSimilar": [
+      "other"
+    ],
+    "_clone": [],
+    "_getTokensMatch": [
+      "tokenPattern"
+    ],
+    "_getConsumables": [
+      "name"
+    ],
+    "_canMergeFrom": [],
+    "_mergeFrom": [
+      "other"
+    ],
+    "_isMatching": [
+      "other"
+    ]
+  },
+  "ViewElement": {
+    "name": [],
+    "_unsafeAttributesToRender": [],
+    "_attrs": [],
+    "_children": [],
+    "_customProperties": [],
+    "_classes": [],
+    "_styles": [],
+    "constructor": [
+      "document",
+      "name",
+      "attrs",
+      "children"
+    ],
+    "childCount": [],
+    "isEmpty": [],
+    "getChild": [
+      "index"
+    ],
+    "getChildIndex": [
+      "node"
+    ],
+    "getChildren": [],
+    "getAttributeKeys": [],
+    "getAttributes": [],
+    "getAttribute": [
+      "key"
+    ],
+    "hasAttribute": [
+      "key",
+      "token"
+    ],
+    "isSimilar": [
+      "otherElement"
+    ],
+    "hasClass": [
+      "param"
+    ],
+    "getClassNames": [],
+    "getStyle": [
+      "property"
+    ],
+    "getNormalizedStyle": [
+      "property"
+    ],
+    "getStyleNames": [
+      "expand"
+    ],
+    "hasStyle": [
+      "param"
+    ],
+    "findAncestor": [
+      "param"
+    ],
+    "getCustomProperty": [
+      "key"
+    ],
+    "getCustomProperties": [],
+    "getIdentity": [],
+    "shouldRenderUnsafeAttribute": [
+      "attributeName"
+    ],
+    "toJSON": [],
+    "_clone": [
+      "param"
+    ],
+    "_appendChild": [
+      "items"
+    ],
+    "_insertChild": [
+      "index",
+      "items"
+    ],
+    "_removeChildren": [
+      "index",
+      "param"
+    ],
+    "_setAttribute": [
+      "key",
+      "value",
+      "param"
+    ],
+    "_removeAttribute": [
+      "key",
+      "tokens"
+    ],
+    "_addClass": [
+      "className"
+    ],
+    "_removeClass": [
+      "className"
+    ],
+    "_setStyle": [
+      "property",
+      "value"
+    ],
+    "_removeStyle": [
+      "property"
+    ],
+    "_collectAttributesMatch": [
+      "patterns",
+      "match",
+      "exclude"
+    ],
+    "_getConsumables": [
+      "key",
+      "token"
+    ],
+    "_canMergeAttributesFrom": [
+      "otherElement"
+    ],
+    "_mergeAttributesFrom": [
+      "otherElement"
+    ],
+    "_canSubtractAttributesOf": [
+      "otherElement"
+    ],
+    "_subtractAttributesOf": [
+      "otherElement"
+    ],
+    "_setCustomProperty": [
+      "key",
+      "value"
+    ],
+    "_removeCustomProperty": [
+      "key"
+    ],
+    "_parseAttributes": [
+      "attrs"
+    ]
+  },
+  "normalize$3": [
+    "document",
+    "nodes"
+  ],
+  "usesTokenList": [
+    "elementName",
+    "key"
+  ],
+  "usesStylesMap": [
+    "elementName",
+    "key"
+  ],
+  "ViewContainerElement": {
+    "constructor": [
+      "document",
+      "name",
+      "attrs",
+      "children"
+    ],
+    "toJSON": []
+  },
+  "getViewFillerOffset": [],
+  "ViewEditableElement": {
+    "constructor": [
+      "document",
+      "name",
+      "attributes",
+      "children"
+    ],
+    "destroy": [],
+    "toJSON": []
+  },
+  "ViewRootEditableElement": {
+    "constructor": [
+      "document",
+      "name"
+    ],
+    "rootName": [
+      "rootName"
+    ],
+    "toJSON": [],
+    "_name": [
+      "name"
+    ]
+  },
+  "ViewTreeWalker": {
+    "direction": [],
+    "boundaries": [],
+    "singleCharacters": [],
+    "shallow": [],
+    "ignoreElementEnd": [],
+    "_position": [],
+    "_boundaryStartParent": [],
+    "_boundaryEndParent": [],
+    "constructor": [
+      "param"
+    ],
+    "position": [],
+    "skip": [
+      "skip"
+    ],
+    "jumpTo": [
+      "position"
+    ],
+    "next": [],
+    "_next": [],
+    "_previous": [],
+    "_formatReturnValue": [
+      "type",
+      "item",
+      "previousPosition",
+      "nextPosition",
+      "length"
+    ]
+  },
+  "ViewPosition": {
+    "parent": [],
+    "offset": [],
+    "constructor": [
+      "parent",
+      "offset"
+    ],
+    "nodeAfter": [],
+    "nodeBefore": [],
+    "isAtStart": [],
+    "isAtEnd": [],
+    "root": [],
+    "editableElement": [],
+    "getShiftedBy": [
+      "shift"
+    ],
+    "getLastMatchingPosition": [
+      "skip",
+      "param"
+    ],
+    "getAncestors": [],
+    "getCommonAncestor": [
+      "position"
+    ],
+    "isEqual": [
+      "otherPosition"
+    ],
+    "isBefore": [
+      "otherPosition"
+    ],
+    "isAfter": [
+      "otherPosition"
+    ],
+    "compareWith": [
+      "otherPosition"
+    ],
+    "getWalker": [
+      "param"
+    ],
+    "clone": [],
+    "toJSON": [],
+    "_createAt": [
+      "itemOrPosition",
+      "offset"
+    ],
+    "_createAfter": [
+      "item"
+    ],
+    "_createBefore": [
+      "item"
+    ]
+  },
+  "ViewRange": {
+    "start": [],
+    "end": [],
+    "constructor": [
+      "start",
+      "param"
+    ],
+    "isCollapsed": [],
+    "isFlat": [],
+    "root": [],
+    "getEnlarged": [],
+    "getTrimmed": [],
+    "isEqual": [
+      "otherRange"
+    ],
+    "containsPosition": [
+      "position"
+    ],
+    "containsRange": [
+      "otherRange",
+      "param"
+    ],
+    "getDifference": [
+      "otherRange"
+    ],
+    "getIntersection": [
+      "otherRange"
+    ],
+    "getWalker": [
+      "param"
+    ],
+    "getCommonAncestor": [],
+    "getContainedElement": [],
+    "clone": [],
+    "getItems": [
+      "param"
+    ],
+    "getPositions": [
+      "param"
+    ],
+    "isIntersecting": [
+      "otherRange"
+    ],
+    "toJSON": [],
+    "_createFromParentsAndOffsets": [
+      "startElement",
+      "startOffset",
+      "endElement",
+      "endOffset"
+    ],
+    "_createFromPositionAndShift": [
+      "position",
+      "shift"
+    ],
+    "_createIn": [
+      "element"
+    ],
+    "_createOn": [
+      "item"
+    ]
+  },
+  "enlargeTrimSkip": [
+    "value"
+  ],
+  "ViewSelection": {
+    "_ranges": [],
+    "_lastRangeBackward": [],
+    "_isFake": [],
+    "_fakeSelectionLabel": [],
+    "constructor": [
+      "param"
+    ],
+    "isFake": [],
+    "fakeSelectionLabel": [],
+    "anchor": [],
+    "focus": [],
+    "isCollapsed": [],
+    "rangeCount": [],
+    "isBackward": [],
+    "editableElement": [],
+    "getRanges": [],
+    "getFirstRange": [],
+    "getLastRange": [],
+    "getFirstPosition": [],
+    "getLastPosition": [],
+    "isEqual": [
+      "otherSelection"
+    ],
+    "isSimilar": [
+      "otherSelection"
+    ],
+    "getSelectedElement": [],
+    "setTo": [
+      "param"
+    ],
+    "setFocus": [
+      "itemOrPosition",
+      "offset"
+    ],
+    "toJSON": [],
+    "_setRanges": [
+      "newRanges",
+      "param"
+    ],
+    "_setFakeOptions": [
+      "param"
+    ],
+    "_addRange": [
+      "range",
+      "param"
+    ],
+    "_pushRange": [
+      "range"
+    ]
+  },
+  "ViewDocumentSelection": {
+    "_selection": [],
+    "constructor": [
+      "param"
+    ],
+    "isFake": [],
+    "fakeSelectionLabel": [],
+    "anchor": [],
+    "focus": [],
+    "isCollapsed": [],
+    "rangeCount": [],
+    "isBackward": [],
+    "editableElement": [],
+    "_ranges": [],
+    "getRanges": [],
+    "getFirstRange": [],
+    "getLastRange": [],
+    "getFirstPosition": [],
+    "getLastPosition": [],
+    "getSelectedElement": [],
+    "isEqual": [
+      "otherSelection"
+    ],
+    "isSimilar": [
+      "otherSelection"
+    ],
+    "toJSON": [],
+    "_setTo": [
+      "param"
+    ],
+    "_setFocus": [
+      "itemOrPosition",
+      "offset"
+    ]
+  },
+  "BubblingEventInfo": {
+    "startRange": [],
+    "_eventPhase": [],
+    "_currentTarget": [],
+    "constructor": [
+      "source",
+      "name",
+      "startRange"
+    ],
+    "eventPhase": [],
+    "currentTarget": []
+  },
+  "BubblingEmitterMixin": [
+    "base"
+  ],
+  "Mixin": {
+    "fire": [
+      "eventOrInfo",
+      "param"
+    ],
+    "_addEventListener": [
+      "event",
+      "callback",
+      "options"
+    ],
+    "_removeEventListener": [
+      "event",
+      "callback"
+    ]
+  },
+  "updateEventInfo": [
+    "eventInfo",
+    "eventPhase",
+    "currentTarget"
+  ],
+  "fireListenerFor": [
+    "emitter",
+    "currentTarget",
+    "eventInfo",
+    "param"
+  ],
+  "wrapCallback": [
+    "emitter",
+    "contexts",
+    "callback"
+  ],
+  "getBubblingEmitter": [
+    "source"
+  ],
+  "getCallbackMap": [
+    "source"
+  ],
+  "getCustomContexts": [
+    "source"
+  ],
+  "hasMatchingCustomContext": [
+    "customContexts",
+    "element"
+  ],
+  "getDeeperRangeParent": [
+    "range"
+  ],
+  "ViewDocument": {
+    "selection": [],
+    "roots": [],
+    "stylesProcessor": [],
+    "_postFixers": [],
+    "constructor": [
+      "stylesProcessor"
+    ],
+    "getRoot": [
+      "param"
+    ],
+    "registerPostFixer": [
+      "postFixer"
+    ],
+    "destroy": [],
+    "_callPostFixers": [
+      "writer"
+    ]
+  },
+  "ViewAttributeElement": {
+    "DEFAULT_PRIORITY": [],
+    "_priority": [],
+    "_id": [],
+    "_clonesGroup": [],
+    "constructor": [
+      "document",
+      "name",
+      "attrs",
+      "children"
+    ],
+    "priority": [],
+    "id": [],
+    "getElementsWithSameId": [],
+    "isSimilar": [
+      "otherElement"
+    ],
+    "toJSON": [],
+    "_clone": [
+      "param"
+    ],
+    "_canMergeAttributesFrom": [
+      "otherElement"
+    ],
+    "_canSubtractAttributesOf": [
+      "otherElement"
+    ]
+  },
+  "getFillerOffset$3": [],
+  "nonUiChildrenCount": [
+    "element"
+  ],
+  "ViewEmptyElement": {
+    "constructor": [
+      "document",
+      "name",
+      "attributes",
+      "children"
+    ],
+    "toJSON": [],
+    "_insertChild": [
+      "index",
+      "items"
+    ]
+  },
+  "getFillerOffset$2": [],
+  "ViewUIElement": {
+    "constructor": [
+      "document",
+      "name",
+      "attrs",
+      "children"
+    ],
+    "_insertChild": [
+      "index",
+      "items"
+    ],
+    "render": [
+      "domDocument",
+      "domConverter"
+    ],
+    "toDomElement": [
+      "domDocument"
+    ],
+    "toJSON": []
+  },
+  "injectUiElementHandling": [
+    "view"
+  ],
+  "getFillerOffset$1": [],
+  "jumpOverUiElement": [
+    "evt",
+    "data",
+    "domConverter"
+  ],
+  "ViewRawElement": {
+    "constructor": [
+      "document",
+      "name",
+      "attrs",
+      "children"
+    ],
+    "toJSON": [],
+    "_insertChild": [
+      "index",
+      "items"
+    ],
+    "render": [
+      "domElement",
+      "domConverter"
+    ]
+  },
+  "getFillerOffset": [],
+  "ViewDocumentFragment": {
+    "document": [],
+    "_children": [],
+    "_customProperties": [],
+    "constructor": [
+      "document",
+      "children"
+    ],
+    "childCount": [],
+    "isEmpty": [],
+    "root": [],
+    "parent": [],
+    "name": [],
+    "getFillerOffset": [],
+    "getCustomProperty": [
+      "key"
+    ],
+    "getCustomProperties": [],
+    "toJSON": [],
+    "_appendChild": [
+      "items"
+    ],
+    "getChild": [
+      "index"
+    ],
+    "getChildIndex": [
+      "node"
+    ],
+    "getChildren": [],
+    "_insertChild": [
+      "index",
+      "items"
+    ],
+    "_removeChildren": [
+      "index",
+      "param"
+    ],
+    "_fireChange": [
+      "type",
+      "node",
+      "data"
+    ],
+    "_setCustomProperty": [
+      "key",
+      "value"
+    ],
+    "_removeCustomProperty": [
+      "key"
+    ]
+  },
+  "normalize$2": [
+    "document",
+    "nodes"
+  ],
+  "ViewDowncastWriter": {
+    "document": [],
+    "_cloneGroups": [],
+    "_slotFactory": [],
+    "constructor": [
+      "document"
+    ],
+    "setSelection": [
+      "param"
+    ],
+    "setSelectionFocus": [
+      "itemOrPosition",
+      "offset"
+    ],
+    "createDocumentFragment": [
+      "children"
+    ],
+    "createText": [
+      "data"
+    ],
+    "createAttributeElement": [
+      "name",
+      "attributes",
+      "param"
+    ],
+    "createContainerElement": [
+      "name",
+      "attributes",
+      "param",
+      "param"
+    ],
+    "createEditableElement": [
+      "name",
+      "attributes",
+      "param"
+    ],
+    "createEmptyElement": [
+      "name",
+      "attributes",
+      "param"
+    ],
+    "createUIElement": [
+      "name",
+      "attributes",
+      "renderFunction"
+    ],
+    "createRawElement": [
+      "name",
+      "attributes",
+      "renderFunction",
+      "param"
+    ],
+    "setAttribute": [
+      "key",
+      "value",
+      "elementOrOverwrite",
+      "element"
+    ],
+    "removeAttribute": [
+      "key",
+      "elementOrTokens",
+      "element"
+    ],
+    "addClass": [
+      "className",
+      "element"
+    ],
+    "removeClass": [
+      "className",
+      "element"
+    ],
+    "setStyle": [
+      "property",
+      "value",
+      "element"
+    ],
+    "removeStyle": [
+      "property",
+      "element"
+    ],
+    "setCustomProperty": [
+      "key",
+      "value",
+      "element"
+    ],
+    "removeCustomProperty": [
+      "key",
+      "element"
+    ],
+    "breakAttributes": [
+      "positionOrRange"
+    ],
+    "breakContainer": [
+      "position"
+    ],
+    "mergeAttributes": [
+      "position"
+    ],
+    "mergeContainers": [
+      "position"
+    ],
+    "insert": [
+      "position",
+      "nodes"
+    ],
+    "remove": [
+      "rangeOrItem"
+    ],
+    "clear": [
+      "range",
+      "element"
+    ],
+    "move": [
+      "sourceRange",
+      "targetPosition"
+    ],
+    "wrap": [
+      "range",
+      "attribute"
+    ],
+    "unwrap": [
+      "range",
+      "attribute"
+    ],
+    "rename": [
+      "newName",
+      "viewElement"
+    ],
+    "clearClonedElementsGroup": [
+      "groupName"
+    ],
+    "createPositionAt": [
+      "itemOrPosition",
+      "offset"
+    ],
+    "createPositionAfter": [
+      "item"
+    ],
+    "createPositionBefore": [
+      "item"
+    ],
+    "createRange": [
+      "start",
+      "end"
+    ],
+    "createRangeOn": [
+      "item"
+    ],
+    "createRangeIn": [
+      "element"
+    ],
+    "createSelection": [
+      "param"
+    ],
+    "createSlot": [
+      "param"
+    ],
+    "_registerSlotFactory": [
+      "slotFactory"
+    ],
+    "_clearSlotFactory": [],
+    "_insertNodes": [
+      "position",
+      "nodes",
+      "breakAttributes"
+    ],
+    "_wrapChildren": [
+      "parent",
+      "startOffset",
+      "endOffset",
+      "wrapElement"
+    ],
+    "_unwrapChildren": [
+      "parent",
+      "startOffset",
+      "endOffset",
+      "unwrapElement"
+    ],
+    "_wrapRange": [
+      "range",
+      "attribute"
+    ],
+    "_wrapPosition": [
+      "position",
+      "attribute"
+    ],
+    "_breakAttributesRange": [
+      "range",
+      "param"
+    ],
+    "_breakAttributes": [
+      "position",
+      "param"
+    ],
+    "_addToClonedElementsGroup": [
+      "element"
+    ],
+    "_removeFromClonedElementsGroup": [
+      "element"
+    ]
+  },
+  "_hasNonUiChildren": [
+    "parent"
+  ],
+  "getParentContainer": [
+    "position"
+  ],
+  "shouldABeOutsideB": [
+    "a",
+    "b"
+  ],
+  "movePositionToTextNode": [
+    "position"
+  ],
+  "breakTextNode": [
+    "position"
+  ],
+  "mergeTextNodes": [
+    "t1",
+    "t2"
+  ],
+  "validateNodesToInsert": [
+    "nodes",
+    "errorContext"
+  ],
+  "isContainerOrFragment": [
+    "node"
+  ],
+  "validateRangeContainer": [
+    "range",
+    "errorContext"
+  ],
+  "isContainerOptions": [
+    "childrenOrOptions"
+  ],
+  "NBSP_FILLER": [
+    "domDocument"
+  ],
+  "MARKED_NBSP_FILLER": [
+    "domDocument"
+  ],
+  "BR_FILLER": [
+    "domDocument"
+  ],
+  "startsWithFiller": [
+    "domNode"
+  ],
+  "isInlineFiller": [
+    "domText"
+  ],
+  "getDataWithoutFiller": [
+    "domText"
+  ],
+  "injectQuirksHandling": [
+    "view"
+  ],
+  "jumpOverInlineFiller": [
+    "evt",
+    "data"
+  ],
+  "ViewRenderer": {
+    "domDocuments": [],
+    "domConverter": [],
+    "markedAttributes": [],
+    "markedChildren": [],
+    "markedTexts": [],
+    "selection": [],
+    "_inlineFiller": [],
+    "_fakeSelectionContainer": [],
+    "constructor": [
+      "domConverter",
+      "selection"
+    ],
+    "markToSync": [
+      "type",
+      "node"
+    ],
+    "render": [],
+    "_updateChildrenMappings": [
+      "viewElement"
+    ],
+    "_updateElementMappings": [
+      "viewElement",
+      "domElement"
+    ],
+    "_getInlineFillerPosition": [],
+    "_isSelectionInInlineFiller": [],
+    "_removeInlineFiller": [],
+    "_needsInlineFillerAtSelection": [],
+    "_updateText": [
+      "viewText",
+      "options"
+    ],
+    "_updateAttrs": [
+      "viewElement"
+    ],
+    "_updateChildren": [
+      "viewElement",
+      "options"
+    ],
+    "_diffNodeLists": [
+      "actualDomChildren",
+      "expectedDomChildren"
+    ],
+    "_findUpdateActions": [
+      "actions",
+      "actualDom",
+      "expectedDom",
+      "comparator"
+    ],
+    "_updateTextNode": [
+      "domText",
+      "expectedText"
+    ],
+    "_updateTextNodeInternal": [
+      "domText",
+      "expectedText"
+    ],
+    "_markDescendantTextToSync": [
+      "viewNode"
+    ],
+    "_updateSelection": [],
+    "_updateFakeSelection": [
+      "domEditable"
+    ],
+    "_updateDomSelection": [
+      "domEditable"
+    ],
+    "_domSelectionNeedsUpdate": [
+      "domSelection"
+    ],
+    "_fakeSelectionNeedsUpdate": [
+      "domEditable"
+    ],
+    "_removeDomSelection": [],
+    "_removeFakeSelection": [],
+    "_updateFocus": []
+  },
+  "isEditable": [
+    "element"
+  ],
+  "addInlineFiller": [
+    "domDocument",
+    "domParentOrArray",
+    "offset"
+  ],
+  "areSimilarElements": [
+    "node1",
+    "node2"
+  ],
+  "areTextNodes": [
+    "node1",
+    "node2"
+  ],
+  "sameNodes$1": [
+    "domConverter",
+    "actualDomChild",
+    "expectedDomChild"
+  ],
+  "fixGeckoSelectionAfterBr": [
+    "focus",
+    "domSelection"
+  ],
+  "filterOutFakeSelectionContainer": [
+    "domChildList",
+    "fakeSelectionContainer"
+  ],
+  "createFakeSelectionContainer": [
+    "domDocument"
+  ],
+  "ViewDomConverter": {
+    "document": [],
+    "renderingMode": [],
+    "blockFillerMode": [],
+    "preElements": [],
+    "blockElements": [],
+    "inlineObjectElements": [],
+    "unsafeElements": [],
+    "_domDocument": [],
+    "_domToViewMapping": [],
+    "_viewToDomMapping": [],
+    "_fakeSelectionMapping": [],
+    "_rawContentElementMatcher": [],
+    "_inlineObjectElementMatcher": [],
+    "_elementsWithTemporaryCustomProperties": [],
+    "constructor": [
+      "document",
+      "param"
+    ],
+    "domDocument": [],
+    "bindFakeSelection": [
+      "domElement",
+      "viewDocumentSelection"
+    ],
+    "fakeSelectionToView": [
+      "domElement"
+    ],
+    "bindElements": [
+      "domElement",
+      "viewElement"
+    ],
+    "unbindDomElement": [
+      "domElement"
+    ],
+    "bindDocumentFragments": [
+      "domFragment",
+      "viewFragment"
+    ],
+    "shouldRenderAttribute": [
+      "attributeKey",
+      "attributeValue",
+      "elementName"
+    ],
+    "setContentOf": [
+      "domElement",
+      "html"
+    ],
+    "viewToDom": [
+      "viewNode",
+      "param"
+    ],
+    "setDomElementAttribute": [
+      "domElement",
+      "key",
+      "value",
+      "relatedViewElement"
+    ],
+    "removeDomElementAttribute": [
+      "domElement",
+      "key"
+    ],
+    "viewChildrenToDom": [
+      "viewElement",
+      "param"
+    ],
+    "viewRangeToDom": [
+      "viewRange"
+    ],
+    "viewPositionToDom": [
+      "viewPosition"
+    ],
+    "domToView": [
+      "domNode",
+      "param"
+    ],
+    "domChildrenToView": [
+      "domElement",
+      "param",
+      "param"
+    ],
+    "domSelectionToView": [
+      "domSelection"
+    ],
+    "domRangeToView": [
+      "domRange"
+    ],
+    "domPositionToView": [
+      "domParent",
+      "param"
+    ],
+    "mapDomToView": [
+      "domElementOrDocumentFragment"
+    ],
+    "findCorrespondingViewText": [
+      "domText"
+    ],
+    "mapViewToDom": [
+      "documentFragmentOrElement"
+    ],
+    "findCorrespondingDomText": [
+      "viewText"
+    ],
+    "focus": [
+      "viewEditable"
+    ],
+    "_clearDomSelection": [],
+    "isElement": [
+      "node"
+    ],
+    "isDocumentFragment": [
+      "node"
+    ],
+    "isBlockFiller": [
+      "domNode"
+    ],
+    "isDomSelectionBackward": [
+      "selection"
+    ],
+    "getHostViewElement": [
+      "domNode"
+    ],
+    "isDomSelectionCorrect": [
+      "domSelection"
+    ],
+    "registerRawContentMatcher": [
+      "pattern"
+    ],
+    "registerInlineObjectMatcher": [
+      "pattern"
+    ],
+    "_clearTemporaryCustomProperties": [],
+    "_getBlockFiller": [],
+    "_isDomSelectionPositionCorrect": [
+      "domParent",
+      "offset"
+    ],
+    "_domToView": [
+      "domNode",
+      "options",
+      "inlineNodes"
+    ],
+    "_processDomInlineNodes": [
+      "domParent",
+      "inlineNodes",
+      "options"
+    ],
+    "_processDataFromViewText": [
+      "node"
+    ],
+    "_nodeEndsWithSpace": [
+      "node"
+    ],
+    "_isPreFormatted": [
+      "node"
+    ],
+    "_getTouchingInlineViewNode": [
+      "node",
+      "getNext"
+    ],
+    "_isBlockDomElement": [
+      "node"
+    ],
+    "_isBlockViewElement": [
+      "node"
+    ],
+    "_isInlineObjectElement": [
+      "node"
+    ],
+    "_createViewElement": [
+      "node",
+      "options"
+    ],
+    "_isViewElementWithRawContent": [
+      "viewElement",
+      "options"
+    ],
+    "_shouldRenameElement": [
+      "elementName"
+    ],
+    "_createReplacementDomElement": [
+      "elementName",
+      "originalDomElement"
+    ]
+  },
+  "_hasViewParentOfType": [
+    "node",
+    "types"
+  ],
+  "forEachDomElementAncestor": [
+    "element",
+    "callback"
+  ],
+  "isNbspBlockFiller": [
+    "domNode",
+    "blockElements"
+  ],
+  "hasBlockParent": [
+    "domNode",
+    "blockElements"
+  ],
+  "isViewNbspFiller": [
+    "parent",
+    "data",
+    "blockElements"
+  ],
+  "isViewMarkedNbspFiller": [
+    "parent",
+    "data"
+  ],
+  "isViewBrFiller": [
+    "node"
+  ],
+  "isOnlyBrInBlock": [
+    "domNode",
+    "blockElements"
+  ],
+  "_logUnsafeElement": [
+    "elementName"
+  ],
+  "isGeckoRestrictedDomSelection": [
+    "domSelection"
+  ],
+  "Observer": {
+    "view": [],
+    "document": [],
+    "_isEnabled": [],
+    "constructor": [
+      "view"
+    ],
+    "isEnabled": [],
+    "enable": [],
+    "disable": [],
+    "destroy": [],
+    "checkShouldIgnoreEventFromTarget": [
+      "domTarget"
+    ]
+  },
+  "ViewDocumentDomEventData": {
+    "view": [],
+    "document": [],
+    "domEvent": [],
+    "domTarget": [],
+    "constructor": [
+      "view",
+      "domEvent",
+      "additionalData"
+    ],
+    "target": [],
+    "preventDefault": [],
+    "stopPropagation": []
+  },
+  "DomEventObserver": {
+    "useCapture": [],
+    "usePassive": [],
+    "observe": [
+      "domElement"
+    ],
+    "stopObserving": [
+      "domElement"
+    ],
+    "fire": [
+      "eventType",
+      "domEvent",
+      "additionalData"
+    ]
+  },
+  "KeyObserver": {
+    "domEventType": [],
+    "onDomEvent": [
+      "domEvt"
+    ]
+  },
+  "FakeSelectionObserver": {
+    "_fireSelectionChangeDoneDebounced": [],
+    "constructor": [
+      "view"
+    ],
+    "observe": [],
+    "stopObserving": [],
+    "destroy": [],
+    "_handleSelectionMove": [
+      "keyCode"
+    ]
+  },
+  "MutationObserver": {
+    "domConverter": [],
+    "_config": [],
+    "_domElements": [],
+    "_mutationObserver": [],
+    "constructor": [
+      "view"
+    ],
+    "flush": [],
+    "observe": [
+      "domElement"
+    ],
+    "stopObserving": [
+      "domElement"
+    ],
+    "enable": [],
+    "disable": [],
+    "destroy": [],
+    "_onMutations": [
+      "domMutations"
+    ],
+    "_isBogusBrMutation": [
+      "mutation"
+    ]
+  },
+  "sameNodes": [
+    "domConverter",
+    "actualDomChild",
+    "expectedDomChild"
+  ],
+  "FocusObserver": {
+    "_renderTimeoutId": [],
+    "_isFocusChanging": [],
+    "domEventType": [],
+    "constructor": [
+      "view"
+    ],
+    "flush": [],
+    "onDomEvent": [
+      "domEvent"
+    ],
+    "destroy": [],
+    "_handleFocus": [],
+    "_handleBlur": [
+      "data"
+    ],
+    "_clearTimeout": []
+  },
+  "SelectionObserver": {
+    "mutationObserver": [],
+    "focusObserver": [],
+    "selection": [],
+    "domConverter": [],
+    "_documents": [],
+    "_fireSelectionChangeDoneDebounced": [],
+    "_clearInfiniteLoopInterval": [],
+    "_documentIsSelectingInactivityTimeoutDebounced": [],
+    "_loopbackCounter": [],
+    "_pendingSelectionChange": [],
+    "constructor": [
+      "view"
+    ],
+    "observe": [
+      "domElement"
+    ],
+    "stopObserving": [
+      "domElement"
+    ],
+    "destroy": [],
+    "_reportInfiniteLoop": [],
+    "_handleSelectionChange": [
+      "domDocument"
+    ],
+    "_clearInfiniteLoop": []
+  },
+  "startDocumentIsSelecting": [],
+  "endDocumentIsSelecting": [],
+  "isSelectionWithinRootElements": [
+    "selection"
+  ],
+  "CompositionObserver": {
+    "domEventType": [],
+    "constructor": [
+      "view"
+    ],
+    "onDomEvent": [
+      "domEvent"
+    ]
+  },
+  "ViewDataTransfer": {
+    "_files": [],
+    "_native": [],
+    "constructor": [
+      "nativeDataTransfer",
+      "param"
+    ],
+    "files": [],
+    "types": [],
+    "getData": [
+      "type"
+    ],
+    "setData": [
+      "type",
+      "data"
+    ],
+    "effectAllowed": [],
+    "dropEffect": [],
+    "setDragImage": [
+      "image",
+      "x",
+      "y"
+    ],
+    "isCanceled": []
+  },
+  "getFiles": [
+    "nativeDataTransfer"
+  ],
+  "InputObserver": {
+    "domEventType": [],
+    "onDomEvent": [
+      "domEvent"
+    ]
+  },
+  "isFollowedByInlineFiller": [
+    "node",
+    "offset"
+  ],
+  "ArrowKeysObserver": {
+    "constructor": [
+      "view"
+    ],
+    "observe": [],
+    "stopObserving": []
+  },
+  "TabObserver": {
+    "constructor": [
+      "view"
+    ],
+    "observe": [],
+    "stopObserving": []
+  },
+  "EditingView": {
+    "document": [],
+    "domConverter": [],
+    "domRoots": [],
+    "_renderer": [],
+    "_initialDomRootAttributes": [],
+    "_observers": [],
+    "_writer": [],
+    "_ongoingChange": [],
+    "_postFixersInProgress": [],
+    "_renderingDisabled": [],
+    "_hasChangedSinceTheLastRendering": [],
+    "constructor": [
+      "stylesProcessor"
+    ],
+    "attachDomRoot": [
+      "domRoot",
+      "param"
+    ],
+    "detachDomRoot": [
+      "name"
+    ],
+    "getDomRoot": [
+      "param"
+    ],
+    "addObserver": [
+      "ObserverConstructor"
+    ],
+    "getObserver": [
+      "ObserverConstructor"
+    ],
+    "disableObservers": [],
+    "enableObservers": [],
+    "scrollToTheSelection": [
+      "param"
+    ],
+    "focus": [],
+    "change": [
+      "callback"
+    ],
+    "forceRender": [],
+    "destroy": [],
+    "createPositionAt": [
+      "itemOrPosition",
+      "offset"
+    ],
+    "createPositionAfter": [
+      "item"
+    ],
+    "createPositionBefore": [
+      "item"
+    ],
+    "createRange": [
+      "start",
+      "end"
+    ],
+    "createRangeOn": [
+      "item"
+    ],
+    "createRangeIn": [
+      "element"
+    ],
+    "createSelection": [
+      "param"
+    ],
+    "_disableRendering": [
+      "flag"
+    ],
+    "_render": []
+  },
+  "updateContenteditableAttribute": [],
+  "ModelTypeCheckable": {
+    "is": []
+  },
+  "ModelTextProxy": {
+    "textNode": [],
+    "data": [],
+    "offsetInText": [],
+    "constructor": [
+      "textNode",
+      "offsetInText",
+      "length"
+    ],
+    "startOffset": [],
+    "offsetSize": [],
+    "endOffset": [],
+    "isPartial": [],
+    "parent": [],
+    "root": [],
+    "getPath": [],
+    "getAncestors": [
+      "param"
+    ],
+    "hasAttribute": [
+      "key"
+    ],
+    "getAttribute": [
+      "key"
+    ],
+    "getAttributes": [],
+    "getAttributeKeys": []
+  },
+  "ModelTreeWalker": {
+    "direction": [],
+    "boundaries": [],
+    "singleCharacters": [],
+    "shallow": [],
+    "ignoreElementEnd": [],
+    "_position": [],
+    "_boundaryStartParent": [],
+    "_boundaryEndParent": [],
+    "_visitedParent": [],
+    "constructor": [
+      "options"
+    ],
+    "position": [],
+    "skip": [
+      "skip"
+    ],
+    "jumpTo": [
+      "position"
+    ],
+    "next": [],
+    "_next": [],
+    "_previous": []
+  },
+  "formatReturnValue": [
+    "type",
+    "item",
+    "previousPosition",
+    "nextPosition",
+    "length"
+  ],
+  "ModelPosition": {
+    "root": [],
+    "path": [],
+    "stickiness": [],
+    "constructor": [
+      "root",
+      "path",
+      "param"
+    ],
+    "offset": [
+      "newOffset"
+    ],
+    "parent": [],
+    "index": [],
+    "textNode": [],
+    "nodeAfter": [],
+    "nodeBefore": [],
+    "isAtStart": [],
+    "isAtEnd": [],
+    "isValid": [],
+    "compareWith": [
+      "otherPosition"
+    ],
+    "getLastMatchingPosition": [
+      "skip",
+      "param"
+    ],
+    "getParentPath": [],
+    "getAncestors": [],
+    "findAncestor": [
+      "parentName"
+    ],
+    "getCommonPath": [
+      "position"
+    ],
+    "getCommonAncestor": [
+      "position"
+    ],
+    "getShiftedBy": [
+      "shift"
+    ],
+    "isAfter": [
+      "otherPosition"
+    ],
+    "isBefore": [
+      "otherPosition"
+    ],
+    "isEqual": [
+      "otherPosition"
+    ],
+    "isTouching": [
+      "otherPosition"
+    ],
+    "hasSameParentAs": [
+      "position"
+    ],
+    "getTransformedByOperation": [
+      "operation"
+    ],
+    "_getTransformedByInsertOperation": [
+      "operation"
+    ],
+    "_getTransformedByMoveOperation": [
+      "operation"
+    ],
+    "_getTransformedBySplitOperation": [
+      "operation"
+    ],
+    "_getTransformedByMergeOperation": [
+      "operation"
+    ],
+    "_getTransformedByDeletion": [
+      "deletePosition",
+      "howMany"
+    ],
+    "_getTransformedByInsertion": [
+      "insertPosition",
+      "howMany"
+    ],
+    "_getTransformedByMove": [
+      "sourcePosition",
+      "targetPosition",
+      "howMany"
+    ],
+    "_getCombined": [
+      "source",
+      "target"
+    ],
+    "toJSON": [],
+    "clone": [],
+    "_createAt": [
+      "itemOrPosition",
+      "offset",
+      "param"
+    ],
+    "_createAfter": [
+      "item",
+      "stickiness"
+    ],
+    "_createBefore": [
+      "item",
+      "stickiness"
+    ],
+    "fromJSON": [
+      "json",
+      "doc"
+    ]
+  },
+  "getTextNodeAtPosition": [
+    "position",
+    "positionParent"
+  ],
+  "getNodeAfterPosition": [
+    "position",
+    "positionParent",
+    "textNode"
+  ],
+  "getNodeBeforePosition": [
+    "position",
+    "positionParent",
+    "textNode"
+  ],
+  "checkTouchingBranch": [
+    "left",
+    "right",
+    "level"
+  ],
+  "checkOnlyZeroes": [
+    "arr",
+    "idx"
+  ],
+  "checkOnlyMaxOffset": [
+    "pos",
+    "level"
+  ],
+  "ModelRange": {
+    "start": [],
+    "end": [],
+    "constructor": [
+      "start",
+      "end"
+    ],
+    "isCollapsed": [],
+    "isFlat": [],
+    "root": [],
+    "containsPosition": [
+      "position"
+    ],
+    "containsRange": [
+      "otherRange",
+      "param"
+    ],
+    "containsItem": [
+      "item"
+    ],
+    "isEqual": [
+      "otherRange"
+    ],
+    "isIntersecting": [
+      "otherRange"
+    ],
+    "getDifference": [
+      "otherRange"
+    ],
+    "getIntersection": [
+      "otherRange"
+    ],
+    "getJoined": [
+      "otherRange",
+      "param"
+    ],
+    "getMinimalFlatRanges": [],
+    "getWalker": [
+      "param"
+    ],
+    "getItems": [
+      "param"
+    ],
+    "getPositions": [
+      "param"
+    ],
+    "getTransformedByOperation": [
+      "operation"
+    ],
+    "getTransformedByOperations": [
+      "operations"
+    ],
+    "getCommonAncestor": [],
+    "getContainedElement": [],
+    "toJSON": [],
+    "clone": [],
+    "_getTransformedByInsertOperation": [
+      "operation",
+      "param"
+    ],
+    "_getTransformedByMoveOperation": [
+      "operation",
+      "param"
+    ],
+    "_getTransformedBySplitOperation": [
+      "operation"
+    ],
+    "_getTransformedByMergeOperation": [
+      "operation"
+    ],
+    "_getTransformedByInsertion": [
+      "insertPosition",
+      "howMany",
+      "param"
+    ],
+    "_getTransformedByMove": [
+      "sourcePosition",
+      "targetPosition",
+      "howMany",
+      "param"
+    ],
+    "_getTransformedByDeletion": [
+      "deletePosition",
+      "howMany"
+    ],
+    "_createFromPositionAndShift": [
+      "position",
+      "shift"
+    ],
+    "_createIn": [
+      "element"
+    ],
+    "_createOn": [
+      "item"
+    ],
+    "_createFromRanges": [
+      "ranges"
+    ],
+    "fromJSON": [
+      "json",
+      "doc"
+    ]
+  },
+  "Mapper": {
+    "_modelToViewMapping": [],
+    "_viewToModelMapping": [],
+    "_viewToModelLengthCallbacks": [],
+    "_markerNameToElements": [],
+    "_elementToMarkerNames": [],
+    "_deferredBindingRemovals": [],
+    "_unboundMarkerNames": [],
+    "_cache": [],
+    "constructor": [],
+    "bindElements": [
+      "modelElement",
+      "viewElement"
+    ],
+    "unbindViewElement": [
+      "viewElement",
+      "param"
+    ],
+    "unbindModelElement": [
+      "modelElement"
+    ],
+    "bindElementToMarker": [
+      "element",
+      "name"
+    ],
+    "unbindElementFromMarkerName": [
+      "element",
+      "name"
+    ],
+    "flushUnboundMarkerNames": [],
+    "flushDeferredBindings": [],
+    "clearBindings": [],
+    "toModelElement": [
+      "viewElement"
+    ],
+    "toViewElement": [
+      "modelElement"
+    ],
+    "toModelRange": [
+      "viewRange"
+    ],
+    "toViewRange": [
+      "modelRange"
+    ],
+    "toModelPosition": [
+      "viewPosition"
+    ],
+    "toViewPosition": [
+      "modelPosition",
+      "param"
+    ],
+    "markerNameToElements": [
+      "name"
+    ],
+    "registerViewToModelLength": [
+      "viewElementName",
+      "lengthCallback"
+    ],
+    "findMappedViewAncestor": [
+      "viewPosition"
+    ],
+    "_toModelOffset": [
+      "viewParent",
+      "viewOffset",
+      "viewBlock"
+    ],
+    "getModelLength": [
+      "viewNode"
+    ],
+    "findPositionIn": [
+      "viewContainer",
+      "modelOffset"
+    ],
+    "_findPositionStartingFrom": [
+      "startViewPosition",
+      "startModelOffset",
+      "targetModelOffset",
+      "viewContainer",
+      "useCache"
+    ],
+    "_getModelLengthAndCache": [
+      "viewNode",
+      "viewContainer",
+      "modelOffset"
+    ],
+    "_moveViewPositionToTextNode": [
+      "viewPosition"
+    ]
+  },
+  "MapperCache": {
+    "_cachedMapping": [],
+    "_nodeToCacheListIndex": [],
+    "_invalidateOnChildrenChangeCallback": [],
+    "_invalidateOnTextChangeCallback": [],
+    "save": [
+      "viewParent",
+      "viewOffset",
+      "viewContainer",
+      "modelOffset"
+    ],
+    "getClosest": [
+      "viewContainer",
+      "modelOffset"
+    ],
+    "startTracking": [
+      "viewContainer"
+    ],
+    "stopTracking": [
+      "viewContainer"
+    ],
+    "_clearCacheInsideParent": [
+      "viewParent",
+      "index"
+    ],
+    "_clearCacheAll": [
+      "viewContainer"
+    ],
+    "_clearCacheAfter": [
+      "viewNode"
+    ],
+    "_clearCacheFromCacheIndex": [
+      "viewContainer",
+      "index"
+    ],
+    "_findInCacheList": [
+      "cacheList",
+      "offset"
+    ]
+  },
+  "ModelConsumable": {
+    "_consumable": [],
+    "_textProxyRegistry": [],
+    "add": [
+      "item",
+      "type"
+    ],
+    "consume": [
+      "item",
+      "type"
+    ],
+    "test": [
+      "item",
+      "type"
+    ],
+    "revert": [
+      "item",
+      "type"
+    ],
+    "verifyAllConsumed": [
+      "eventGroup"
+    ],
+    "_getSymbolForTextProxy": [
+      "textProxy"
+    ],
+    "_addSymbolForTextProxy": [
+      "textProxy"
+    ]
+  },
+  "_normalizeConsumableType": [
+    "type"
+  ],
+  "DowncastDispatcher": {
+    "_conversionApi": [],
+    "_firedEventsMap": [],
+    "constructor": [
+      "conversionApi"
+    ],
+    "convertChanges": [
+      "differ",
+      "markers",
+      "writer"
+    ],
+    "convert": [
+      "range",
+      "markers",
+      "writer",
+      "param"
+    ],
+    "convertSelection": [
+      "selection",
+      "markers",
+      "writer"
+    ],
+    "_convertInsert": [
+      "range",
+      "conversionApi",
+      "param"
+    ],
+    "_convertRemove": [
+      "position",
+      "length",
+      "name",
+      "conversionApi"
+    ],
+    "_convertAttribute": [
+      "range",
+      "key",
+      "oldValue",
+      "newValue",
+      "conversionApi"
+    ],
+    "_convertReinsert": [
+      "range",
+      "conversionApi"
+    ],
+    "_convertMarkerAdd": [
+      "markerName",
+      "markerRange",
+      "conversionApi"
+    ],
+    "_convertMarkerRemove": [
+      "markerName",
+      "markerRange",
+      "conversionApi"
+    ],
+    "_reduceChanges": [
+      "changes",
+      "refreshedItems"
+    ],
+    "_addConsumablesForInsert": [
+      "consumable",
+      "walkerValues"
+    ],
+    "_addConsumablesForRange": [
+      "consumable",
+      "range",
+      "type"
+    ],
+    "_addConsumablesForSelection": [
+      "consumable",
+      "selection",
+      "markers"
+    ],
+    "_testAndFire": [
+      "type",
+      "data",
+      "conversionApi"
+    ],
+    "_testAndFireAddAttributes": [
+      "item",
+      "conversionApi"
+    ],
+    "_createConversionApi": [
+      "writer",
+      "param",
+      "param"
+    ]
+  },
+  "shouldMarkerChangeBeConverted": [
+    "modelPosition",
+    "marker",
+    "mapper"
+  ],
+  "getEventName": [
+    "type",
+    "data"
+  ],
+  "walkerValueToEventData": [
+    "value"
+  ],
+  "ModelNode": {
+    "parent": [],
+    "_attrs": [],
+    "_index": [],
+    "_startOffset": [],
+    "constructor": [
+      "attrs"
+    ],
+    "document": [],
+    "index": [],
+    "startOffset": [],
+    "offsetSize": [],
+    "endOffset": [],
+    "nextSibling": [],
+    "previousSibling": [],
+    "root": [],
+    "isAttached": [],
+    "getPath": [],
+    "getAncestors": [
+      "param"
+    ],
+    "getCommonAncestor": [
+      "node",
+      "param"
+    ],
+    "isBefore": [
+      "node"
+    ],
+    "isAfter": [
+      "node"
+    ],
+    "hasAttribute": [
+      "key"
+    ],
+    "getAttribute": [
+      "key"
+    ],
+    "getAttributes": [],
+    "getAttributeKeys": [],
+    "toJSON": [],
+    "_clone": [
+      "_deep"
+    ],
+    "_remove": [],
+    "_setAttribute": [
+      "key",
+      "value"
+    ],
+    "_setAttributesTo": [
+      "attrs"
+    ],
+    "_removeAttribute": [
+      "key"
+    ],
+    "_clearAttributes": []
+  },
+  "ModelSelection": {
+    "_lastRangeBackward": [],
+    "_attrs": [],
+    "_ranges": [],
+    "constructor": [
+      "param"
+    ],
+    "anchor": [],
+    "focus": [],
+    "isCollapsed": [],
+    "rangeCount": [],
+    "isBackward": [],
+    "isEqual": [
+      "otherSelection"
+    ],
+    "getRanges": [],
+    "getFirstRange": [],
+    "getLastRange": [],
+    "getFirstPosition": [],
+    "getLastPosition": [],
+    "setTo": [
+      "param"
+    ],
+    "_setRanges": [
+      "newRanges",
+      "param"
+    ],
+    "setFocus": [
+      "itemOrPosition",
+      "offset"
+    ],
+    "getAttribute": [
+      "key"
+    ],
+    "getAttributes": [],
+    "getAttributeKeys": [],
+    "hasAttribute": [
+      "key"
+    ],
+    "removeAttribute": [
+      "key"
+    ],
+    "setAttribute": [
+      "key",
+      "value"
+    ],
+    "getSelectedElement": [],
+    "getSelectedBlocks": [],
+    "containsEntireContent": [
+      "param"
+    ],
+    "toJSON": [],
+    "_pushRange": [
+      "range"
+    ],
+    "_checkRange": [
+      "range"
+    ],
+    "_replaceAllRanges": [
+      "ranges"
+    ],
+    "_removeAllRanges": [],
+    "_popRange": []
+  },
+  "isUnvisitedBlock": [
+    "element",
+    "visited"
+  ],
+  "isUnvisitedTopBlock": [
+    "element",
+    "visited",
+    "range"
+  ],
+  "getParentBlock$1": [
+    "position",
+    "visited"
+  ],
+  "isTopBlockInRange": [
+    "block",
+    "range"
+  ],
+  "isStartBlockSelected": [
+    "startBlock",
+    "range"
+  ],
+  "isEndBlockSelected": [
+    "endBlock",
+    "range"
+  ],
+  "findAncestorBlock": [
+    "node"
+  ],
+  "ModelLiveRange": {
+    "constructor": [
+      "start",
+      "end"
+    ],
+    "detach": [],
+    "toRange": [],
+    "fromRange": [
+      "range"
+    ]
+  },
+  "bindWithDocument$1": [],
+  "transform$2": [
+    "operation"
+  ],
+  "doesOperationChangeRangeContent": [
+    "range",
+    "operation"
+  ],
+  "ModelText": {
+    "_data": [],
+    "constructor": [
+      "data",
+      "attrs"
+    ],
+    "offsetSize": [],
+    "data": [],
+    "toJSON": [],
+    "_clone": [],
+    "fromJSON": [
+      "json"
+    ]
+  },
+  "ModelDocumentSelection": {
+    "_selection": [],
+    "constructor": [
+      "doc"
+    ],
+    "isCollapsed": [],
+    "anchor": [],
+    "focus": [],
+    "rangeCount": [],
+    "hasOwnRange": [],
+    "isBackward": [],
+    "isGravityOverridden": [],
+    "markers": [],
+    "_ranges": [],
+    "getRanges": [],
+    "getFirstPosition": [],
+    "getLastPosition": [],
+    "getFirstRange": [],
+    "getLastRange": [],
+    "getSelectedBlocks": [],
+    "getSelectedElement": [],
+    "containsEntireContent": [
+      "element"
+    ],
+    "destroy": [],
+    "getAttributeKeys": [],
+    "getAttributes": [],
+    "getAttribute": [
+      "key"
+    ],
+    "hasAttribute": [
+      "key"
+    ],
+    "refresh": [],
+    "observeMarkers": [
+      "prefixOrName"
+    ],
+    "toJSON": [],
+    "_setFocus": [
+      "itemOrPosition",
+      "offset"
+    ],
+    "_setTo": [
+      "param"
+    ],
+    "_setAttribute": [
+      "key",
+      "value"
+    ],
+    "_removeAttribute": [
+      "key"
+    ],
+    "_getStoredAttributes": [],
+    "_overrideGravity": [],
+    "_restoreGravity": [
+      "uid"
+    ],
+    "_getStoreAttributeKey": [
+      "key"
+    ],
+    "_isStoreAttributeKey": [
+      "key"
+    ]
+  },
+  "LiveSelection": {
+    "markers": [],
+    "_model": [],
+    "_document": [],
+    "_attributePriority": [],
+    "_selectionRestorePosition": [],
+    "_hasChangedRange": [],
+    "_overriddenGravityRegister": [],
+    "_observedMarkers": [],
+    "constructor": [
+      "doc"
+    ],
+    "isCollapsed": [],
+    "anchor": [],
+    "focus": [],
+    "rangeCount": [],
+    "hasOwnRange": [],
+    "isGravityOverridden": [],
+    "destroy": [],
+    "getRanges": [],
+    "getFirstRange": [],
+    "getLastRange": [],
+    "setTo": [
+      "param"
+    ],
+    "setFocus": [
+      "itemOrPosition",
+      "offset"
+    ],
+    "setAttribute": [
+      "key",
+      "value"
+    ],
+    "removeAttribute": [
+      "key"
+    ],
+    "overrideGravity": [],
+    "restoreGravity": [
+      "uid"
+    ],
+    "observeMarkers": [
+      "prefixOrName"
+    ],
+    "_replaceAllRanges": [
+      "ranges"
+    ],
+    "_popRange": [],
+    "_pushRange": [
+      "range"
+    ],
+    "toJSON": [],
+    "_validateSelectionRanges": [
+      "ranges"
+    ],
+    "_prepareRange": [
+      "range"
+    ],
+    "updateMarkers": [],
+    "_updateMarker": [
+      "marker",
+      "markerRange"
+    ],
+    "_updateAttributes": [
+      "clearAll"
+    ],
+    "_setAttribute": [
+      "key",
+      "value",
+      "param"
+    ],
+    "_removeAttribute": [
+      "key",
+      "param"
+    ],
+    "_setAttributesTo": [
+      "attrs"
+    ],
+    "getStoredAttributes": [],
+    "_getSurroundingAttributes": [],
+    "_fixGraveyardSelection": [
+      "deletionPosition"
+    ]
+  },
+  "getTextAttributes": [
+    "node",
+    "schema"
+  ],
+  "clearAttributesStoredInElement": [
+    "model",
+    "batch"
+  ],
+  "ModelNodeList": {
+    "_nodes": [],
+    "_offsetToNode": [],
+    "constructor": [
+      "nodes"
+    ],
+    "length": [],
+    "maxOffset": [],
+    "getNode": [
+      "index"
+    ],
+    "getNodeAtOffset": [
+      "offset"
+    ],
+    "getNodeIndex": [
+      "node"
+    ],
+    "getNodeStartOffset": [
+      "node"
+    ],
+    "indexToOffset": [
+      "index"
+    ],
+    "offsetToIndex": [
+      "offset"
+    ],
+    "_insertNodes": [
+      "index",
+      "nodes"
+    ],
+    "_removeNodes": [
+      "indexStart",
+      "param"
+    ],
+    "_removeNodesArray": [
+      "nodes"
+    ],
+    "toJSON": []
+  },
+  "makeOffsetsArray": [
+    "nodes"
+  ],
+  "ModelElement": {
+    "name": [],
+    "_children": [],
+    "constructor": [
+      "name",
+      "attrs",
+      "children"
+    ],
+    "childCount": [],
+    "maxOffset": [],
+    "isEmpty": [],
+    "getChild": [
+      "index"
+    ],
+    "getChildAtOffset": [
+      "offset"
+    ],
+    "getChildren": [],
+    "getChildIndex": [
+      "node"
+    ],
+    "getChildStartOffset": [
+      "node"
+    ],
+    "offsetToIndex": [
+      "offset"
+    ],
+    "getNodeByPath": [
+      "relativePath"
+    ],
+    "findAncestor": [
+      "parentName",
+      "param"
+    ],
+    "toJSON": [],
+    "_clone": [
+      "param"
+    ],
+    "_appendChild": [
+      "nodes"
+    ],
+    "_insertChild": [
+      "index",
+      "items"
+    ],
+    "_removeChildren": [
+      "index",
+      "param"
+    ],
+    "_removeChildrenArray": [
+      "nodes"
+    ],
+    "fromJSON": [
+      "json"
+    ]
+  },
+  "normalize$1": [
+    "nodes"
+  ],
+  "cloneNodes": [
+    "nodes"
+  ],
+  "ConversionHelpers": {
+    "_dispatchers": [],
+    "constructor": [
+      "dispatchers"
+    ],
+    "add": [
+      "conversionHelper"
+    ]
+  },
+  "DowncastHelpers": {
+    "elementToElement": [
+      "config"
+    ],
+    "elementToStructure": [
+      "config"
+    ],
+    "attributeToElement": [
+      "config"
+    ],
+    "attributeToAttribute": [
+      "config"
+    ],
+    "markerToElement": [
+      "config"
+    ],
+    "markerToHighlight": [
+      "config"
+    ],
+    "markerToData": [
+      "config"
+    ]
+  },
+  "insertText": [],
+  "insertAttributesAndChildren": [],
+  "remove": [],
+  "createViewElementFromDowncastHighlightDescriptor": [
+    "writer",
+    "descriptor"
+  ],
+  "convertRangeSelection": [],
+  "convertCollapsedSelection": [],
+  "cleanSelection": [],
+  "wrap": [
+    "elementCreator"
+  ],
+  "insertElement": [
+    "elementCreator",
+    "param"
+  ],
+  "insertStructure": [
+    "elementCreator",
+    "consumer"
+  ],
+  "insertUIElement": [
+    "elementCreator"
+  ],
+  "removeRangeAndUnbind": [
+    "viewRange",
+    "conversionApi"
+  ],
+  "removeElementAndUnbind": [
+    "modelElement",
+    "conversionApi"
+  ],
+  "removeUIElement": [],
+  "insertMarkerData": [
+    "viewCreator"
+  ],
+  "handleMarkerBoundary": [
+    "range",
+    "isStart",
+    "conversionApi",
+    "data",
+    "viewMarkerData"
+  ],
+  "insertMarkerAsAttribute": [
+    "viewElement",
+    "isStart",
+    "isBefore",
+    "conversionApi",
+    "data",
+    "viewMarkerData"
+  ],
+  "insertMarkerAsElement": [
+    "position",
+    "isStart",
+    "conversionApi",
+    "data",
+    "viewMarkerData"
+  ],
+  "removeMarkerData": [
+    "viewCreator"
+  ],
+  "removeMarkerFromAttribute": [
+    "attributeName",
+    "element"
+  ],
+  "changeAttribute": [
+    "attributeCreator"
+  ],
+  "highlightText": [
+    "highlightDescriptor"
+  ],
+  "highlightElement": [
+    "highlightDescriptor"
+  ],
+  "removeHighlight": [
+    "highlightDescriptor"
+  ],
+  "downcastElementToElement": [
+    "config"
+  ],
+  "downcastElementToStructure": [
+    "config"
+  ],
+  "downcastAttributeToElement": [
+    "config"
+  ],
+  "downcastAttributeToAttribute": [
+    "config"
+  ],
+  "downcastMarkerToElement": [
+    "config"
+  ],
+  "downcastMarkerToData": [
+    "config"
+  ],
+  "downcastMarkerToHighlight": [
+    "config"
+  ],
+  "normalizeModelElementConfig": [
+    "model"
+  ],
+  "normalizeToElementConfig": [
+    "view",
+    "viewElementType"
+  ],
+  "createViewElementFromDefinition": [
+    "viewElementDefinition",
+    "conversionApi",
+    "viewElementType"
+  ],
+  "getFromAttributeCreator": [
+    "config"
+  ],
+  "normalizeToAttributeConfig": [
+    "view"
+  ],
+  "prepareDescriptor": [
+    "highlightDescriptor",
+    "data",
+    "conversionApi"
+  ],
+  "createChangeReducerCallback": [
+    "model"
+  ],
+  "createChangeReducer": [
+    "model"
+  ],
+  "createConsumer": [
+    "model"
+  ],
+  "createSlotFactory": [
+    "element",
+    "slotsMap",
+    "conversionApi"
+  ],
+  "validateSlotsChildren": [
+    "element",
+    "slotsMap",
+    "conversionApi"
+  ],
+  "fillSlots": [
+    "viewElement",
+    "slotsMap",
+    "conversionApi",
+    "options"
+  ],
+  "toViewPositionMapping": [
+    "evt",
+    "data"
+  ],
+  "reinsertOrConvertNodes": [
+    "viewElement",
+    "modelNodes",
+    "conversionApi",
+    "options"
+  ],
+  "reinsertNode": [
+    "viewRoot",
+    "modelNode",
+    "conversionApi",
+    "options"
+  ],
+  "defaultConsumer": [
+    "item",
+    "consumable",
+    "param"
+  ],
+  "autoParagraphEmptyRoots": [
+    "writer"
+  ],
+  "isParagraphable": [
+    "position",
+    "nodeOrType",
+    "schema"
+  ],
+  "wrapInParagraph": [
+    "position",
+    "writer"
+  ],
+  "UpcastHelpers": {
+    "elementToElement": [
+      "config"
+    ],
+    "elementToAttribute": [
+      "config"
+    ],
+    "attributeToAttribute": [
+      "config"
+    ],
+    "elementToMarker": [
+      "config"
+    ],
+    "dataToMarker": [
+      "config"
+    ]
+  },
+  "convertToModelFragment$1": [],
+  "convertText": [],
+  "convertSelectionChange": [
+    "model",
+    "mapper"
+  ],
+  "upcastElementToElement": [
+    "config"
+  ],
+  "upcastElementToAttribute": [
+    "config"
+  ],
+  "upcastAttributeToAttribute": [
+    "config"
+  ],
+  "upcastElementToMarker": [
+    "config"
+  ],
+  "upcastDataToMarker": [
+    "config"
+  ],
+  "upcastAttributeToMarker": [
+    "config"
+  ],
+  "addMarkerElements": [
+    "position",
+    "markerViewNames"
+  ],
+  "getViewElementNameFromConfig": [
+    "viewConfig"
+  ],
+  "prepareToElementConverter": [
+    "config"
+  ],
+  "getModelElement": [
+    "model",
+    "input",
+    "conversionApi"
+  ],
+  "normalizeViewAttributeKeyValueConfig": [
+    "config"
+  ],
+  "normalizeModelAttributeConfig": [
+    "config",
+    "param"
+  ],
+  "prepareToAttributeConverter": [
+    "config",
+    "shallow"
+  ],
+  "onlyViewNameIsDefined": [
+    "viewConfig",
+    "viewItem"
+  ],
+  "setAttributeOn": [
+    "modelRange",
+    "modelAttribute",
+    "shallow",
+    "conversionApi"
+  ],
+  "normalizeElementToMarkerModelConfig": [
+    "model"
+  ],
+  "normalizeDataToMarkerConfig": [
+    "config",
+    "type"
+  ],
+  "elementCreatorFunction": [
+    "viewElement",
+    "conversionApi"
+  ],
+  "EditingController": {
+    "model": [],
+    "view": [],
+    "mapper": [],
+    "downcastDispatcher": [],
+    "constructor": [
+      "model",
+      "stylesProcessor"
+    ],
+    "destroy": [],
+    "reconvertMarker": [
+      "markerOrName"
+    ],
+    "reconvertItem": [
+      "item"
+    ]
+  },
+  "ModelSchema": {
+    "_sourceDefinitions": [],
+    "_attributeProperties": [],
+    "_customChildChecks": [],
+    "_customAttributeChecks": [],
+    "_genericCheckSymbol": [],
+    "_compiledDefinitions": [],
+    "constructor": [],
+    "register": [
+      "itemName",
+      "definition"
+    ],
+    "extend": [
+      "itemName",
+      "definition"
+    ],
+    "getDefinitions": [],
+    "getDefinition": [
+      "item"
+    ],
+    "isRegistered": [
+      "item"
+    ],
+    "isBlock": [
+      "item"
+    ],
+    "isLimit": [
+      "item"
+    ],
+    "isObject": [
+      "item"
+    ],
+    "isInline": [
+      "item"
+    ],
+    "isSelectable": [
+      "item"
+    ],
+    "isContent": [
+      "item"
+    ],
+    "checkChild": [
+      "context",
+      "def"
+    ],
+    "checkAttribute": [
+      "context",
+      "attributeName"
+    ],
+    "checkMerge": [
+      "positionOrBaseElement",
+      "elementToMerge"
+    ],
+    "addChildCheck": [
+      "callback",
+      "itemName"
+    ],
+    "addAttributeCheck": [
+      "callback",
+      "attributeName"
+    ],
+    "setAttributeProperties": [
+      "attributeName",
+      "properties"
+    ],
+    "getAttributeProperties": [
+      "attributeName"
+    ],
+    "getLimitElement": [
+      "selectionOrRangeOrPosition"
+    ],
+    "checkAttributeInSelection": [
+      "selection",
+      "attribute"
+    ],
+    "getValidRanges": [
+      "ranges",
+      "attribute",
+      "param"
+    ],
+    "getNearestSelectionRange": [
+      "position",
+      "param"
+    ],
+    "findAllowedParent": [
+      "position",
+      "node"
+    ],
+    "setAllowedAttributes": [
+      "node",
+      "attributes",
+      "writer"
+    ],
+    "removeDisallowedAttributes": [
+      "nodes",
+      "writer"
+    ],
+    "getAttributesWithProperty": [
+      "node",
+      "propertyName",
+      "propertyValue"
+    ],
+    "createContext": [
+      "context"
+    ],
+    "_clearCache": [],
+    "_compile": [],
+    "_checkContextMatch": [
+      "context",
+      "def"
+    ],
+    "_evaluateChildChecks": [
+      "context",
+      "def"
+    ],
+    "_evaluateAttributeChecks": [
+      "context",
+      "attributeName"
+    ],
+    "_getValidRangesForRange": [
+      "range",
+      "attribute",
+      "options"
+    ],
+    "findOptimalInsertionRange": [
+      "selection",
+      "place"
+    ]
+  },
+  "ModelSchemaContext": {
+    "_items": [],
+    "constructor": [
+      "context"
+    ],
+    "length": [],
+    "last": [],
+    "push": [
+      "item"
+    ],
+    "trimLast": [],
+    "getItem": [
+      "index"
+    ],
+    "getNames": [],
+    "endsWith": [
+      "query"
+    ],
+    "startsWith": [
+      "query"
+    ]
+  },
+  "compileBaseItemRule": [
+    "sourceItemRules",
+    "itemName"
+  ],
+  "propagateAllowIn": [
+    "definitions",
+    "item"
+  ],
+  "propagateAllowChildren": [
+    "definitions",
+    "item"
+  ],
+  "propagateDisallowIn": [
+    "definitions",
+    "item"
+  ],
+  "propagateDisallowChildren": [
+    "definitions",
+    "item"
+  ],
+  "resolveDisallows": [
+    "definitions",
+    "item"
+  ],
+  "compileAllowContentOf": [
+    "definitions",
+    "item"
+  ],
+  "compileAllowWhere": [
+    "definitions",
+    "item"
+  ],
+  "compileDefinitions": [
+    "definitions"
+  ],
+  "compileAllowAttributesOf": [
+    "definitions",
+    "item"
+  ],
+  "compileInheritPropertiesFrom": [
+    "definitions",
+    "item"
+  ],
+  "copyTypes": [
+    "sourceItemRules",
+    "itemRule"
+  ],
+  "copyProperty": [
+    "sourceItemRules",
+    "itemRule",
+    "propertyName"
+  ],
+  "resolveInheritAll": [
+    "sourceItemRules",
+    "itemRule"
+  ],
+  "mapContextItem": [
+    "ctxItem"
+  ],
+  "combineWalkers": [
+    "backward",
+    "forward"
+  ],
+  "convertToMinimalFlatRanges": [
+    "ranges"
+  ],
+  "removeDisallowedAttributeFromNode": [
+    "schema",
+    "node",
+    "writer"
+  ],
+  "UpcastDispatcher": {
+    "conversionApi": [],
+    "_splitParts": [],
+    "_cursorParents": [],
+    "_modelCursor": [],
+    "_emptyElementsToKeep": [],
+    "constructor": [
+      "conversionApi"
+    ],
+    "convert": [
+      "viewElement",
+      "writer",
+      "param"
+    ],
+    "_convertItem": [
+      "viewItem",
+      "modelCursor"
+    ],
+    "_convertChildren": [
+      "viewItem",
+      "elementOrModelCursor"
+    ],
+    "_safeInsert": [
+      "modelNode",
+      "position"
+    ],
+    "_updateConversionResult": [
+      "modelElement",
+      "data"
+    ],
+    "_splitToAllowedParent": [
+      "node",
+      "modelCursor"
+    ],
+    "_registerSplitPair": [
+      "originalPart",
+      "splitPart"
+    ],
+    "_getSplitParts": [
+      "element"
+    ],
+    "_keepEmptyElement": [
+      "element"
+    ],
+    "_removeEmptyElements": []
+  },
+  "extractMarkersFromModelFragment": [
+    "modelItem",
+    "writer"
+  ],
+  "createContextTree": [
+    "contextDefinition",
+    "writer"
+  ],
+  "BasicHtmlWriter": {
+    "getHtml": [
+      "fragment"
+    ]
+  },
+  "HtmlDataProcessor": {
+    "domParser": [],
+    "domConverter": [],
+    "htmlWriter": [],
+    "skipComments": [],
+    "constructor": [
+      "document"
+    ],
+    "toData": [
+      "viewFragment"
+    ],
+    "toView": [
+      "data"
+    ],
+    "registerRawContentMatcher": [
+      "pattern"
+    ],
+    "useFillerType": [
+      "type"
+    ],
+    "_toDom": [
+      "data"
+    ]
+  },
+  "DataController": {
+    "model": [],
+    "mapper": [],
+    "downcastDispatcher": [],
+    "upcastDispatcher": [],
+    "viewDocument": [],
+    "stylesProcessor": [],
+    "htmlProcessor": [],
+    "processor": [],
+    "_viewWriter": [],
+    "constructor": [
+      "model",
+      "stylesProcessor"
+    ],
+    "get": [
+      "param"
+    ],
+    "stringify": [
+      "modelElementOrFragment",
+      "param"
+    ],
+    "toView": [
+      "modelElementOrFragment",
+      "param"
+    ],
+    "init": [
+      "data"
+    ],
+    "set": [
+      "data",
+      "param"
+    ],
+    "parse": [
+      "data",
+      "param"
+    ],
+    "toModel": [
+      "viewElementOrFragment",
+      "param"
+    ],
+    "addStyleProcessorRules": [
+      "callback"
+    ],
+    "registerRawContentMatcher": [
+      "pattern"
+    ],
+    "destroy": [],
+    "_checkIfRootsExists": [
+      "rootNames"
+    ]
+  },
+  "_getMarkersRelativeToElement": [
+    "element"
+  ],
+  "Conversion": {
+    "_helpers": [],
+    "_downcast": [],
+    "_upcast": [],
+    "constructor": [
+      "downcastDispatchers",
+      "upcastDispatchers"
+    ],
+    "addAlias": [
+      "alias",
+      "dispatcher"
+    ],
+    "for": [
+      "groupName"
+    ],
+    "elementToElement": [
+      "definition"
+    ],
+    "attributeToElement": [
+      "definition"
+    ],
+    "attributeToAttribute": [
+      "definition"
+    ],
+    "_createConversionHelpers": [
+      "param"
+    ]
+  },
+  "_getAllUpcastDefinitions": [
+    "definition"
+  ],
+  "_getUpcastDefinition": [
+    "model",
+    "view",
+    "upcastAlso"
+  ],
+  "XmlDataProcessor": {
+    "namespaces": [],
+    "domParser": [],
+    "domConverter": [],
+    "htmlWriter": [],
+    "skipComments": [],
+    "constructor": [
+      "document",
+      "param"
+    ],
+    "toData": [
+      "viewFragment"
+    ],
+    "toView": [
+      "data"
+    ],
+    "registerRawContentMatcher": [
+      "pattern"
+    ],
+    "useFillerType": [
+      "type"
+    ],
+    "_toDom": [
+      "data"
+    ]
+  },
+  "Operation": {
+    "baseVersion": [],
+    "isDocumentOperation": [],
+    "batch": [],
+    "constructor": [
+      "baseVersion"
+    ],
+    "_validate": [],
+    "toJSON": [],
+    "className": [],
+    "fromJSON": [
+      "json",
+      "document"
+    ]
+  },
+  "_insert": [
+    "position",
+    "nodes"
+  ],
+  "_remove": [
+    "range"
+  ],
+  "_move": [
+    "sourceRange",
+    "targetPosition"
+  ],
+  "_setAttribute": [
+    "range",
+    "key",
+    "value"
+  ],
+  "_normalizeNodes": [
+    "nodes"
+  ],
+  "convert": [
+    "nodes"
+  ],
+  "_mergeNodesAtIndex": [
+    "element",
+    "index"
+  ],
+  "_splitNodeAtPosition": [
+    "position"
+  ],
+  "_haveSameAttributes": [
+    "nodeA",
+    "nodeB"
+  ],
+  "MoveOperation": {
+    "sourcePosition": [],
+    "howMany": [],
+    "targetPosition": [],
+    "constructor": [
+      "sourcePosition",
+      "howMany",
+      "targetPosition",
+      "baseVersion"
+    ],
+    "type": [],
+    "affectedSelectable": [],
+    "clone": [],
+    "getMovedRangeStart": [],
+    "getReversed": [],
+    "_validate": [],
+    "_execute": [],
+    "toJSON": [],
+    "className": [],
+    "fromJSON": [
+      "json",
+      "document"
+    ]
+  },
+  "InsertOperation": {
+    "position": [],
+    "nodes": [],
+    "shouldReceiveAttributes": [],
+    "constructor": [
+      "position",
+      "nodes",
+      "baseVersion"
+    ],
+    "type": [],
+    "howMany": [],
+    "affectedSelectable": [],
+    "clone": [],
+    "getReversed": [],
+    "_validate": [],
+    "_execute": [],
+    "toJSON": [],
+    "className": [],
+    "fromJSON": [
+      "json",
+      "document"
+    ]
+  },
+  "SplitOperation": {
+    "splitPosition": [],
+    "howMany": [],
+    "insertionPosition": [],
+    "graveyardPosition": [],
+    "constructor": [
+      "splitPosition",
+      "howMany",
+      "insertionPosition",
+      "graveyardPosition",
+      "baseVersion"
+    ],
+    "type": [],
+    "moveTargetPosition": [],
+    "movedRange": [],
+    "affectedSelectable": [],
+    "clone": [],
+    "getReversed": [],
+    "_validate": [],
+    "_execute": [],
+    "toJSON": [],
+    "className": [],
+    "getInsertionPosition": [
+      "splitPosition"
+    ],
+    "fromJSON": [
+      "json",
+      "document"
+    ]
+  },
+  "MergeOperation": {
+    "sourcePosition": [],
+    "howMany": [],
+    "targetPosition": [],
+    "graveyardPosition": [],
+    "constructor": [
+      "sourcePosition",
+      "howMany",
+      "targetPosition",
+      "graveyardPosition",
+      "baseVersion"
+    ],
+    "type": [],
+    "deletionPosition": [],
+    "movedRange": [],
+    "affectedSelectable": [],
+    "clone": [],
+    "getReversed": [],
+    "_validate": [],
+    "_execute": [],
+    "toJSON": [],
+    "className": [],
+    "fromJSON": [
+      "json",
+      "document"
+    ]
+  },
+  "MarkerOperation": {
+    "name": [],
+    "oldRange": [],
+    "newRange": [],
+    "affectsData": [],
+    "_markers": [],
+    "constructor": [
+      "name",
+      "oldRange",
+      "newRange",
+      "markers",
+      "affectsData",
+      "baseVersion"
+    ],
+    "type": [],
+    "affectedSelectable": [],
+    "clone": [],
+    "getReversed": [],
+    "_execute": [],
+    "toJSON": [],
+    "className": [],
+    "fromJSON": [
+      "json",
+      "document"
+    ]
+  },
+  "AttributeOperation": {
+    "range": [],
+    "key": [],
+    "oldValue": [],
+    "newValue": [],
+    "constructor": [
+      "range",
+      "key",
+      "oldValue",
+      "newValue",
+      "baseVersion"
+    ],
+    "type": [],
+    "affectedSelectable": [],
+    "clone": [],
+    "getReversed": [],
+    "toJSON": [],
+    "_validate": [],
+    "_execute": [],
+    "className": [],
+    "fromJSON": [
+      "json",
+      "document"
+    ]
+  },
+  "NoOperation": {
+    "type": [],
+    "affectedSelectable": [],
+    "clone": [],
+    "getReversed": [],
+    "_execute": [],
+    "className": []
+  },
+  "RenameOperation": {
+    "position": [],
+    "oldName": [],
+    "newName": [],
+    "constructor": [
+      "position",
+      "oldName",
+      "newName",
+      "baseVersion"
+    ],
+    "type": [],
+    "affectedSelectable": [],
+    "clone": [],
+    "getReversed": [],
+    "_validate": [],
+    "_execute": [],
+    "toJSON": [],
+    "className": [],
+    "fromJSON": [
+      "json",
+      "document"
+    ]
+  },
+  "RootAttributeOperation": {
+    "root": [],
+    "key": [],
+    "oldValue": [],
+    "newValue": [],
+    "constructor": [
+      "root",
+      "key",
+      "oldValue",
+      "newValue",
+      "baseVersion"
+    ],
+    "type": [],
+    "affectedSelectable": [],
+    "clone": [],
+    "getReversed": [],
+    "_validate": [],
+    "_execute": [],
+    "toJSON": [],
+    "className": [],
+    "fromJSON": [
+      "json",
+      "document"
+    ]
+  },
+  "RootOperation": {
+    "rootName": [],
+    "elementName": [],
+    "isAdd": [],
+    "_document": [],
+    "constructor": [
+      "rootName",
+      "elementName",
+      "isAdd",
+      "document",
+      "baseVersion"
+    ],
+    "type": [],
+    "affectedSelectable": [],
+    "clone": [],
+    "getReversed": [],
+    "_execute": [],
+    "toJSON": [],
+    "className": [],
+    "fromJSON": [
+      "json",
+      "document"
+    ]
+  },
+  "OperationFactory": {
+    "fromJSON": [
+      "json",
+      "document"
+    ]
+  },
+  "setTransformation": [
+    "OperationA",
+    "OperationB",
+    "transformationFunction"
+  ],
+  "getTransformation": [
+    "OperationA",
+    "OperationB"
+  ],
+  "noUpdateTransformation": [
+    "a"
+  ],
+  "transform$1": [
+    "a",
+    "b",
+    "param"
+  ],
+  "transformOperationSets": [
+    "operationsA",
+    "operationsB",
+    "options"
+  ],
+  "ContextFactory": {
+    "originalOperations": [],
+    "_history": [],
+    "_useRelations": [],
+    "_forceWeakRemove": [],
+    "_relations": [],
+    "constructor": [
+      "document",
+      "useRelations",
+      "param"
+    ],
+    "setOriginalOperations": [
+      "operations",
+      "param"
+    ],
+    "updateRelation": [
+      "opA",
+      "opB"
+    ],
+    "getContext": [
+      "opA",
+      "opB",
+      "aIsStrong"
+    ],
+    "_wasUndone": [
+      "op"
+    ],
+    "_getRelation": [
+      "opA",
+      "opB"
+    ],
+    "_setRelation": [
+      "opA",
+      "opB",
+      "relation"
+    ]
+  },
+  "updateBaseVersions": [
+    "operations",
+    "baseVersion"
+  ],
+  "padWithNoOps": [
+    "operations",
+    "howMany"
+  ],
+  "handlePartialMarkerOperations": [
+    "operations"
+  ],
+  "_getComplementaryAttributeOperations": [
+    "insertOperation",
+    "key",
+    "newValue"
+  ],
+  "_breakRangeByMoveOperation": [
+    "range",
+    "moveOp"
+  ],
+  "_moveTargetIntoMovedRange": [
+    "a",
+    "b"
+  ],
+  "_makeMoveOperationsFromRanges": [
+    "ranges",
+    "targetPosition"
+  ],
+  "ModelLivePosition": {
+    "constructor": [
+      "root",
+      "path",
+      "param"
+    ],
+    "detach": [],
+    "toPosition": [],
+    "fromPosition": [
+      "position",
+      "stickiness"
+    ]
+  },
+  "bindWithDocument": [],
+  "transform": [
+    "a",
+    "b",
+    "param"
+  ],
+  "Batch": {
+    "operations": [],
+    "isUndoable": [],
+    "isLocal": [],
+    "isUndo": [],
+    "isTyping": [],
+    "constructor": [
+      "param"
+    ],
+    "baseVersion": [],
+    "addOperation": [
+      "operation"
+    ]
+  },
+  "Differ": {
+    "_statesPriority": [],
+    "_markerCollection": [],
+    "_changesInElement": [],
+    "_elementsSnapshots": [],
+    "_elementChildrenSnapshots": [],
+    "_elementState": [],
+    "_changedMarkers": [],
+    "_changedRoots": [],
+    "_changeCount": [],
+    "_cachedChanges": [],
+    "_cachedChangesWithGraveyard": [],
+    "_refreshedItems": [],
+    "constructor": [
+      "markerCollection"
+    ],
+    "isEmpty": [],
+    "bufferOperation": [
+      "operationToBuffer"
+    ],
+    "bufferMarkerChange": [
+      "markerName",
+      "oldMarkerData",
+      "newMarkerData"
+    ],
+    "getMarkersToRemove": [],
+    "getMarkersToAdd": [],
+    "getChangedMarkers": [],
+    "hasDataChanges": [],
+    "getChanges": [
+      "param"
+    ],
+    "getChangedRoots": [],
+    "getRefreshedItems": [],
+    "reset": [],
+    "_refreshItem": [
+      "item"
+    ],
+    "_bufferRootLoad": [
+      "root"
+    ],
+    "_bufferRootStateChange": [
+      "rootName",
+      "isAttached"
+    ],
+    "_bufferRootAttributeChange": [
+      "rootName",
+      "key",
+      "oldValue",
+      "newValue"
+    ],
+    "_markInsert": [
+      "parent",
+      "offset",
+      "howMany"
+    ],
+    "_markRemove": [
+      "parent",
+      "offset",
+      "howMany"
+    ],
+    "_markAttribute": [
+      "item"
+    ],
+    "_markChange": [
+      "parent",
+      "changeItem"
+    ],
+    "_setElementState": [
+      "node",
+      "state"
+    ],
+    "_getDiffActionForNode": [
+      "node",
+      "diffItemType"
+    ],
+    "_getChangesForElement": [
+      "element"
+    ],
+    "_makeSnapshots": [
+      "element"
+    ],
+    "_handleChange": [
+      "inc",
+      "changes"
+    ],
+    "_getInsertDiff": [
+      "parent",
+      "offset",
+      "action",
+      "elementSnapshot",
+      "elementSnapshotBefore"
+    ],
+    "_getRemoveDiff": [
+      "parent",
+      "offset",
+      "action",
+      "elementSnapshot"
+    ],
+    "_getAttributesDiff": [
+      "range",
+      "oldAttributes",
+      "newAttributes"
+    ],
+    "_isInInsertedElement": [
+      "element"
+    ],
+    "_removeAllNestedChanges": [
+      "parent",
+      "offset",
+      "howMany"
+    ]
+  },
+  "_getSingleNodeSnapshot": [
+    "node"
+  ],
+  "_getChildrenSnapshots": [
+    "children"
+  ],
+  "_generateDiffInstructionsFromChanges": [
+    "oldChildrenLength",
+    "changes"
+  ],
+  "_changesInGraveyardFilter": [
+    "entry"
+  ],
+  "History": {
+    "_operations": [],
+    "_undoPairs": [],
+    "_undoneOperations": [],
+    "_baseVersionToOperationIndex": [],
+    "_version": [],
+    "_gaps": [],
+    "version": [
+      "version"
+    ],
+    "lastOperation": [],
+    "addOperation": [
+      "operation"
+    ],
+    "getOperations": [
+      "fromBaseVersion",
+      "param"
+    ],
+    "getOperation": [
+      "baseVersion"
+    ],
+    "setOperationAsUndone": [
+      "undoneOperation",
+      "undoingOperation"
+    ],
+    "isUndoingOperation": [
+      "operation"
+    ],
+    "isUndoneOperation": [
+      "operation"
+    ],
+    "getUndoneOperation": [
+      "undoingOperation"
+    ],
+    "reset": []
+  },
+  "ModelRootElement": {
+    "rootName": [],
+    "_document": [],
+    "_isAttached": [],
+    "_isLoaded": [],
+    "constructor": [
+      "document",
+      "name",
+      "param"
+    ],
+    "document": [],
+    "isAttached": [],
+    "toJSON": []
+  },
+  "ModelDocument": {
+    "model": [],
+    "history": [],
+    "selection": [],
+    "roots": [],
+    "differ": [],
+    "isReadOnly": [],
+    "_postFixers": [],
+    "_hasSelectionChangedFromTheLastChangeBlock": [],
+    "constructor": [
+      "model"
+    ],
+    "version": [
+      "version"
+    ],
+    "graveyard": [],
+    "createRoot": [
+      "param",
+      "param"
+    ],
+    "destroy": [],
+    "getRoot": [
+      "param"
+    ],
+    "getRootNames": [
+      "param"
+    ],
+    "getRoots": [
+      "param"
+    ],
+    "registerPostFixer": [
+      "postFixer"
+    ],
+    "toJSON": [],
+    "_handleChangeBlock": [
+      "writer"
+    ],
+    "_hasDocumentChangedFromTheLastChangeBlock": [],
+    "_getDefaultRoot": [],
+    "_getDefaultRange": [],
+    "_validateSelectionRange": [
+      "range"
+    ],
+    "_callPostFixers": [
+      "writer"
+    ]
+  },
+  "validateTextNodePosition": [
+    "rangeBoundary"
+  ],
+  "MarkerCollection": {
+    "_markers": [],
+    "has": [
+      "markerOrName"
+    ],
+    "get": [
+      "markerName"
+    ],
+    "_set": [
+      "markerOrName",
+      "range",
+      "param",
+      "param"
+    ],
+    "_remove": [
+      "markerOrName"
+    ],
+    "_refresh": [
+      "markerOrName"
+    ],
+    "getMarkersAtPosition": [
+      "position"
+    ],
+    "getMarkersIntersectingRange": [
+      "range"
+    ],
+    "destroy": [],
+    "getMarkersGroup": [
+      "prefix"
+    ],
+    "_destroyMarker": [
+      "marker"
+    ]
+  },
+  "Marker": {
+    "name": [],
+    "_managedUsingOperations": [],
+    "_affectsData": [],
+    "_liveRange": [],
+    "constructor": [
+      "name",
+      "liveRange",
+      "managedUsingOperations",
+      "affectsData"
+    ],
+    "managedUsingOperations": [],
+    "affectsData": [],
+    "getData": [],
+    "getStart": [],
+    "getEnd": [],
+    "getRange": [],
+    "toJSON": [],
+    "_attachLiveRange": [
+      "liveRange"
+    ],
+    "_detachLiveRange": []
+  },
+  "DetachOperation": {
+    "sourcePosition": [],
+    "howMany": [],
+    "constructor": [
+      "sourcePosition",
+      "howMany"
+    ],
+    "type": [],
+    "affectedSelectable": [],
+    "toJSON": [],
+    "_validate": [],
+    "_execute": [],
+    "className": []
+  },
+  "ModelDocumentFragment": {
+    "markers": [],
+    "_children": [],
+    "constructor": [
+      "children"
+    ],
+    "childCount": [],
+    "maxOffset": [],
+    "isEmpty": [],
+    "nextSibling": [],
+    "previousSibling": [],
+    "root": [],
+    "parent": [],
+    "document": [],
+    "isAttached": [],
+    "getAncestors": [],
+    "getChild": [
+      "index"
+    ],
+    "getChildAtOffset": [
+      "offset"
+    ],
+    "getChildren": [],
+    "getChildIndex": [
+      "node"
+    ],
+    "getChildStartOffset": [
+      "node"
+    ],
+    "getPath": [],
+    "getNodeByPath": [
+      "relativePath"
+    ],
+    "offsetToIndex": [
+      "offset"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "json"
+    ],
+    "_appendChild": [
+      "items"
+    ],
+    "_insertChild": [
+      "index",
+      "items"
+    ],
+    "_removeChildren": [
+      "index",
+      "param"
+    ],
+    "_removeChildrenArray": [
+      "nodes"
+    ]
+  },
+  "normalize": [
+    "document",
+    "nodes"
+  ],
+  "ModelWriter": {
+    "model": [],
+    "batch": [],
+    "constructor": [
+      "model",
+      "batch"
+    ],
+    "createText": [
+      "data",
+      "attributes"
+    ],
+    "createElement": [
+      "name",
+      "attributes"
+    ],
+    "createDocumentFragment": [],
+    "cloneElement": [
+      "element",
+      "param"
+    ],
+    "insert": [
+      "item",
+      "itemOrPosition",
+      "param"
+    ],
+    "insertText": [
+      "text",
+      "attributes",
+      "itemOrPosition",
+      "offset"
+    ],
+    "insertElement": [
+      "name",
+      "attributes",
+      "itemOrPositionOrOffset",
+      "offset"
+    ],
+    "append": [
+      "item",
+      "parent"
+    ],
+    "appendText": [
+      "text",
+      "attributes",
+      "parent"
+    ],
+    "appendElement": [
+      "name",
+      "attributes",
+      "parent"
+    ],
+    "setAttribute": [
+      "key",
+      "value",
+      "itemOrRange"
+    ],
+    "setAttributes": [
+      "attributes",
+      "itemOrRange"
+    ],
+    "removeAttribute": [
+      "key",
+      "itemOrRange"
+    ],
+    "clearAttributes": [
+      "itemOrRange"
+    ],
+    "move": [
+      "range",
+      "itemOrPosition",
+      "offset"
+    ],
+    "remove": [
+      "itemOrRange"
+    ],
+    "merge": [
+      "position"
+    ],
+    "createPositionFromPath": [
+      "root",
+      "path",
+      "stickiness"
+    ],
+    "createPositionAt": [
+      "itemOrPosition",
+      "offset"
+    ],
+    "createPositionAfter": [
+      "item"
+    ],
+    "createPositionBefore": [
+      "item"
+    ],
+    "createRange": [
+      "start",
+      "end"
+    ],
+    "createRangeIn": [
+      "element"
+    ],
+    "createRangeOn": [
+      "element"
+    ],
+    "createSelection": [
+      "param"
+    ],
+    "_mergeDetached": [
+      "position"
+    ],
+    "_merge": [
+      "position"
+    ],
+    "rename": [
+      "element",
+      "newName"
+    ],
+    "split": [
+      "position",
+      "limitElement"
+    ],
+    "wrap": [
+      "range",
+      "elementOrString"
+    ],
+    "unwrap": [
+      "element"
+    ],
+    "addMarker": [
+      "name",
+      "options"
+    ],
+    "updateMarker": [
+      "markerOrName",
+      "options"
+    ],
+    "removeMarker": [
+      "markerOrName"
+    ],
+    "addRoot": [
+      "rootName",
+      "param"
+    ],
+    "detachRoot": [
+      "rootOrName"
+    ],
+    "setSelection": [
+      "param"
+    ],
+    "setSelectionFocus": [
+      "itemOrPosition",
+      "offset"
+    ],
+    "setSelectionAttribute": [
+      "keyOrObjectOrIterable",
+      "value"
+    ],
+    "removeSelectionAttribute": [
+      "keyOrIterableOfKeys"
+    ],
+    "overrideSelectionGravity": [],
+    "restoreSelectionGravity": [
+      "uid"
+    ],
+    "_setSelectionAttribute": [
+      "key",
+      "value"
+    ],
+    "_removeSelectionAttribute": [
+      "key"
+    ],
+    "_assertWriterUsedCorrectly": [],
+    "_addOperationForAffectedMarkers": [
+      "type",
+      "positionOrRange"
+    ]
+  },
+  "removeAttributesFromItem": [
+    "item"
+  ],
+  "setAttributeOnRange": [
+    "writer",
+    "key",
+    "value",
+    "range"
+  ],
+  "addOperation": [],
+  "setAttributeOnItem": [
+    "writer",
+    "key",
+    "value",
+    "item"
+  ],
+  "applyMarkerOperation": [
+    "writer",
+    "name",
+    "oldRange",
+    "newRange",
+    "affectsData"
+  ],
+  "applyRemoveOperation": [
+    "position",
+    "howMany",
+    "batch",
+    "model"
+  ],
+  "isSameTree": [
+    "rootA",
+    "rootB"
+  ],
+  "injectSelectionPostFixer": [
+    "model"
+  ],
+  "selectionPostFixer": [
+    "writer",
+    "model"
+  ],
+  "tryFixingRange": [
+    "range",
+    "schema"
+  ],
+  "tryFixingCollapsedRange": [
+    "range",
+    "schema"
+  ],
+  "tryFixingNonCollapsedRage": [
+    "range",
+    "schema"
+  ],
+  "findOutermostLimitAncestor": [
+    "startingNode",
+    "schema"
+  ],
+  "checkSelectionOnNonLimitElements": [
+    "start",
+    "end",
+    "schema"
+  ],
+  "mergeIntersectingRanges": [
+    "ranges"
+  ],
+  "isSelectable": [
+    "node",
+    "schema"
+  ],
+  "deleteContent": [
+    "model",
+    "selection",
+    "param"
+  ],
+  "getLivePositionsForSelectedBlocks": [
+    "range"
+  ],
+  "getParentBlock": [
+    "position"
+  ],
+  "mergeBranches": [
+    "writer",
+    "startPosition",
+    "endPosition"
+  ],
+  "mergeBranchesLeft": [
+    "writer",
+    "startPosition",
+    "endPosition",
+    "commonAncestor"
+  ],
+  "mergeBranchesRight": [
+    "writer",
+    "startPosition",
+    "endPosition",
+    "commonAncestor"
+  ],
+  "mergeRight": [
+    "writer",
+    "position"
+  ],
+  "checkShouldMerge": [
+    "schema",
+    "startPosition",
+    "endPosition"
+  ],
+  "getAncestorsJustBelowCommonAncestor": [
+    "positionA",
+    "positionB"
+  ],
+  "shouldAutoparagraph": [
+    "schema",
+    "position"
+  ],
+  "isCrossingLimitElement": [
+    "leftPos",
+    "rightPos",
+    "schema"
+  ],
+  "insertParagraph": [
+    "writer",
+    "position",
+    "selection",
+    "param"
+  ],
+  "replaceEntireContentWithParagraph": [
+    "writer",
+    "selection"
+  ],
+  "shouldEntireContentBeReplacedWithParagraph": [
+    "schema",
+    "selection"
+  ],
+  "collapseSelectionAt": [
+    "writer",
+    "selection",
+    "positionOrRange"
+  ],
+  "getSelectedContent": [
+    "model",
+    "selection"
+  ],
+  "removeRangeContent": [
+    "range",
+    "writer"
+  ],
+  "insertContent": [
+    "model",
+    "content",
+    "selectable"
+  ],
+  "Insertion": {
+    "model": [],
+    "writer": [],
+    "position": [],
+    "canMergeWith": [],
+    "schema": [],
+    "_documentFragment": [],
+    "_documentFragmentPosition": [],
+    "_firstNode": [],
+    "_lastNode": [],
+    "_lastAutoParagraph": [],
+    "_filterAttributesAndChildrenOf": [],
+    "_affectedStart": [],
+    "_affectedEnd": [],
+    "_nodeToSelect": [],
+    "constructor": [
+      "model",
+      "writer",
+      "position"
+    ],
+    "handleNodes": [
+      "nodes"
+    ],
+    "_removeDisallowedChildren": [
+      "nodes"
+    ],
+    "_updateLastNodeFromAutoParagraph": [
+      "node"
+    ],
+    "getSelectionRange": [],
+    "getAffectedRange": [],
+    "destroy": [],
+    "_handleNode": [
+      "node"
+    ],
+    "_insertPartialFragment": [],
+    "_handleDisallowedNode": [
+      "node"
+    ],
+    "_appendToFragment": [
+      "node"
+    ],
+    "_setAffectedBoundaries": [
+      "position"
+    ],
+    "_mergeOnLeft": [],
+    "_mergeOnRight": [],
+    "_canMergeLeft": [
+      "node"
+    ],
+    "_canMergeRight": [
+      "node"
+    ],
+    "_insertAutoParagraph": [],
+    "_checkAndSplitToAllowedPosition": [
+      "node"
+    ],
+    "_getAllowedIn": [
+      "contextElement",
+      "childNode"
+    ]
+  },
+  "insertObject": [
+    "model",
+    "object",
+    "selectable",
+    "param"
+  ],
+  "updateSelection": [
+    "writer",
+    "contextElement",
+    "place",
+    "paragraphAttributes"
+  ],
+  "modifySelection": [
+    "model",
+    "selection",
+    "param"
+  ],
+  "tryExtendingTo": [
+    "data",
+    "value"
+  ],
+  "getCorrectPosition": [
+    "walker",
+    "unit",
+    "treatEmojiAsSingleUnit"
+  ],
+  "getCorrectWordBreakPosition": [
+    "walker",
+    "isForward"
+  ],
+  "getSearchRange": [
+    "start",
+    "isForward"
+  ],
+  "isAtWordBoundary": [
+    "data",
+    "offset",
+    "isForward"
+  ],
+  "isAtNodeBoundary": [
+    "textNode",
+    "offset",
+    "isForward"
+  ],
+  "Model": {
+    "markers": [],
+    "document": [],
+    "schema": [],
+    "_config": [],
+    "_pendingChanges": [],
+    "_currentWriter": [],
+    "constructor": [
+      "config"
+    ],
+    "change": [
+      "callback"
+    ],
+    "enqueueChange": [
+      "batchOrType",
+      "callback"
+    ],
+    "applyOperation": [
+      "operation"
+    ],
+    "insertContent": [
+      "content",
+      "selectable",
+      "placeOrOffset",
+      "param"
+    ],
+    "insertObject": [
+      "element",
+      "selectable",
+      "placeOrOffset",
+      "options",
+      "param"
+    ],
+    "deleteContent": [
+      "selection",
+      "options"
+    ],
+    "modifySelection": [
+      "selection",
+      "options"
+    ],
+    "getSelectedContent": [
+      "selection"
+    ],
+    "hasContent": [
+      "rangeOrElement",
+      "param"
+    ],
+    "canEditAt": [
+      "selectable"
+    ],
+    "createPositionFromPath": [
+      "root",
+      "path",
+      "stickiness"
+    ],
+    "createPositionAt": [
+      "itemOrPosition",
+      "offset"
+    ],
+    "createPositionAfter": [
+      "item"
+    ],
+    "createPositionBefore": [
+      "item"
+    ],
+    "createRange": [
+      "start",
+      "end"
+    ],
+    "createRangeIn": [
+      "element"
+    ],
+    "createRangeOn": [
+      "item"
+    ],
+    "createSelection": [
+      "param"
+    ],
+    "createBatch": [
+      "type"
+    ],
+    "createOperationFromJSON": [
+      "json"
+    ],
+    "destroy": [],
+    "_runPendingChanges": []
+  },
+  "normalizeSelectable": [
+    "selectable",
+    "placeOrOffset"
+  ],
+  "ClickObserver": {
+    "domEventType": [],
+    "onDomEvent": [
+      "domEvent"
+    ]
+  },
+  "MouseObserver": {
+    "domEventType": [],
+    "onDomEvent": [
+      "domEvent"
+    ]
+  },
+  "TouchObserver": {
+    "domEventType": [],
+    "onDomEvent": [
+      "domEvent"
+    ]
+  },
+  "PointerObserver": {
+    "domEventType": [],
+    "onDomEvent": [
+      "domEvent"
+    ]
+  },
+  "ViewUpcastWriter": {
+    "document": [],
+    "constructor": [
+      "document"
+    ],
+    "createDocumentFragment": [
+      "children"
+    ],
+    "createElement": [
+      "name",
+      "attrs",
+      "children"
+    ],
+    "createText": [
+      "data"
+    ],
+    "clone": [
+      "element",
+      "param"
+    ],
+    "appendChild": [
+      "items",
+      "element"
+    ],
+    "insertChild": [
+      "index",
+      "items",
+      "element"
+    ],
+    "removeChildren": [
+      "index",
+      "howMany",
+      "element"
+    ],
+    "remove": [
+      "element"
+    ],
+    "replace": [
+      "oldElement",
+      "newElement"
+    ],
+    "unwrapElement": [
+      "element"
+    ],
+    "rename": [
+      "newName",
+      "element"
+    ],
+    "setAttribute": [
+      "key",
+      "value",
+      "element"
+    ],
+    "removeAttribute": [
+      "key",
+      "element"
+    ],
+    "addClass": [
+      "className",
+      "element"
+    ],
+    "removeClass": [
+      "className",
+      "element"
+    ],
+    "setStyle": [
+      "property",
+      "valueOrElement",
+      "element"
+    ],
+    "removeStyle": [
+      "property",
+      "element"
+    ],
+    "setCustomProperty": [
+      "key",
+      "value",
+      "element"
+    ],
+    "removeCustomProperty": [
+      "key",
+      "element"
+    ],
+    "createPositionAt": [
+      "itemOrPosition",
+      "offset"
+    ],
+    "createPositionAfter": [
+      "item"
+    ],
+    "createPositionBefore": [
+      "item"
+    ],
+    "createRange": [
+      "start",
+      "end"
+    ],
+    "createRangeOn": [
+      "item"
+    ],
+    "createRangeIn": [
+      "element"
+    ],
+    "createSelection": [
+      "param"
+    ]
+  },
+  "isColorStyleValue": [
+    "string"
+  ],
+  "isLineStyleValue": [
+    "string"
+  ],
+  "isLengthStyleValue": [
+    "string"
+  ],
+  "isPercentageStyleValue": [
+    "string"
+  ],
+  "isRepeatStyleValue": [
+    "string"
+  ],
+  "isPositionStyleValue": [
+    "string"
+  ],
+  "isAttachmentStyleValue": [
+    "string"
+  ],
+  "isURLStyleValue": [
+    "string"
+  ],
+  "getBoxSidesStyleValues": [
+    "param"
+  ],
+  "getBoxSidesStyleValueReducer": [
+    "styleShorthand"
+  ],
+  "getBoxSidesStyleShorthandValue": [
+    "param"
+  ],
+  "getPositionStyleShorthandNormalizer": [
+    "shorthand"
+  ],
+  "getShorthandStylesValues": [
+    "string"
+  ],
+  "addBackgroundStylesRules": [
+    "stylesProcessor"
+  ],
+  "getBackgroundNormalizer": [],
+  "getBackgroundColorNormalizer": [],
+  "getBackgroundReducer": [],
+  "addBorderStylesRules": [
+    "stylesProcessor"
+  ],
+  "getBorderNormalizer": [],
+  "getBorderPositionNormalizer": [
+    "side"
+  ],
+  "getBorderPropertyNormalizer": [
+    "propertyName"
+  ],
+  "toBorderPropertyShorthand": [
+    "value",
+    "property"
+  ],
+  "getBorderPropertyPositionNormalizer": [
+    "property",
+    "side"
+  ],
+  "getBorderPositionExtractor": [
+    "which"
+  ],
+  "extractBorderPosition": [
+    "border",
+    "which"
+  ],
+  "normalizeBorderShorthand": [
+    "string"
+  ],
+  "getBorderReducer": [],
+  "getReducedStyleValueForType": [
+    "styles",
+    "type"
+  ],
+  "getBorderPositionReducer": [
+    "which"
+  ],
+  "reduceBorderPosition": [
+    "value",
+    "which"
+  ],
+  "addMarginStylesRules": [
+    "stylesProcessor"
+  ],
+  "addPaddingStylesRules": [
+    "stylesProcessor"
+  ],
+  "_getViewData": [
+    "view",
+    "param"
+  ],
+  "_setViewData": [
+    "view",
+    "data",
+    "param"
+  ],
+  "_stringifyView": [
+    "node",
+    "param",
+    "param"
+  ],
+  "_parseView": [
+    "data",
+    "param"
+  ],
+  "RangeParser": {
+    "sameSelectionCharacters": [],
+    "_positions": [],
+    "constructor": [
+      "options"
+    ],
+    "_parseView": [
+      "node",
+      "order"
+    ],
+    "_getPositions": [
+      "node"
+    ],
+    "_sortRanges": [
+      "ranges",
+      "rangesOrder"
+    ],
+    "_createRanges": []
+  },
+  "ViewStringify": {
+    "root": [],
+    "selection": [],
+    "ranges": [],
+    "showType": [],
+    "showPriority": [],
+    "showAttributeElementId": [],
+    "ignoreRoot": [],
+    "sameSelectionCharacters": [],
+    "renderUIElements": [],
+    "renderRawElements": [],
+    "domConverter": [],
+    "skipListItemIds": [],
+    "constructor": [
+      "root",
+      "selection",
+      "options"
+    ],
+    "stringify": [],
+    "_walkView": [
+      "root",
+      "callback"
+    ],
+    "_stringifyElementRanges": [
+      "element",
+      "offset"
+    ],
+    "_stringifyTextRanges": [
+      "node"
+    ],
+    "_stringifyElementOpen": [
+      "element"
+    ],
+    "_stringifyElementClose": [
+      "element"
+    ],
+    "_stringifyElementType": [
+      "element"
+    ],
+    "_stringifyElementPriority": [
+      "element"
+    ],
+    "_stringifyElementId": [
+      "element"
+    ],
+    "_stringifyElementAttributes": [
+      "element"
+    ]
+  },
+  "_convertViewElements": [
+    "rootNode"
+  ],
+  "_convertElement": [
+    "viewDocument",
+    "viewElement"
+  ],
+  "_convertElementNameAndInfo": [
+    "viewElement"
+  ],
+  "_convertType": [
+    "type"
+  ],
+  "_convertPriority": [
+    "priorityString"
+  ],
+  "_getModelData": [
+    "model",
+    "param"
+  ],
+  "_setModelData": [
+    "model",
+    "data",
+    "param"
+  ],
+  "writeToModel": [
+    "writer"
+  ],
+  "_stringifyModel": [
+    "node",
+    "param",
+    "param"
+  ],
+  "_parseModel": [
+    "data",
+    "schema",
+    "param"
+  ],
+  "convertToModelFragment": [
+    "mapper"
+  ],
+  "convertToModelElement": [
+    "mapper"
+  ],
+  "convertToModelText": [],
+  "parseAttributeValue": [
+    "attribute"
+  ],
+  "stringifyAttributeValue": [
+    "data"
+  ],
+  "convertAttributes": [
+    "attributes",
+    "converter"
+  ],
+  "convertMapToTags": [
+    "map"
+  ],
+  "convertMapToStringifiedObject": [
+    "map"
+  ],
+  "dumpTrees": [
+    "document",
+    "version"
+  ],
+  "initDocumentDumping": [
+    "document"
+  ],
+  "logDocument": [
+    "document",
+    "version"
+  ],
+  "OperationReplayer": {
+    "_model": [],
+    "_logSeparator": [],
+    "_operationsToReplay": [],
+    "constructor": [
+      "model",
+      "logSeparator",
+      "stringifiedOperations"
+    ],
+    "setStringifiedOperations": [
+      "stringifiedOperations"
+    ],
+    "getOperationsToReplay": [],
+    "play": [
+      "param"
+    ],
+    "applyOperations": [
+      "numberOfOperations"
+    ],
+    "applyAllOperations": [],
+    "applyNextOperation": []
+  },
+  "play": []
+}

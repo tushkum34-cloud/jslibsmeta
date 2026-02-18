@@ -1,0 +1,598 @@
+{
+  "Account": {
+    "_nonce": [],
+    "_balance": [],
+    "_storageRoot": [],
+    "_codeHash": [],
+    "_codeSize": [],
+    "_version": [],
+    "version": [
+      "_version"
+    ],
+    "nonce": [
+      "_nonce"
+    ],
+    "balance": [
+      "_balance"
+    ],
+    "storageRoot": [
+      "_storageRoot"
+    ],
+    "codeHash": [
+      "_codeHash"
+    ],
+    "codeSize": [
+      "_codeSize"
+    ],
+    "constructor": [
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "_validate": [],
+    "raw": [],
+    "serialize": [],
+    "serializeWithPartialInfo": [],
+    "isContract": [],
+    "isEmpty": []
+  },
+  "handleNullIndicator": [
+    "values"
+  ],
+  "createAccount": [
+    "accountData"
+  ],
+  "createAccountFromBytesArray": [
+    "values"
+  ],
+  "createPartialAccount": [
+    "partialAccountData"
+  ],
+  "createAccountFromRLP": [
+    "serialized"
+  ],
+  "createPartialAccountFromRLP": [
+    "serialized"
+  ],
+  "isValidAddress": [
+    "hexAddress"
+  ],
+  "toChecksumAddress": [
+    "hexAddress",
+    "eip1191ChainId"
+  ],
+  "isValidChecksumAddress": [
+    "hexAddress",
+    "eip1191ChainId"
+  ],
+  "generateAddress": [
+    "from",
+    "nonce"
+  ],
+  "generateAddress2": [
+    "from",
+    "salt",
+    "initCode"
+  ],
+  "isValidPrivate": [
+    "privateKey"
+  ],
+  "isValidPublic": [
+    "publicKey",
+    "param"
+  ],
+  "pubToAddress": [
+    "pubKey",
+    "param"
+  ],
+  "privateToPublic": [
+    "privateKey"
+  ],
+  "privateToAddress": [
+    "privateKey"
+  ],
+  "importPublic": [
+    "publicKey"
+  ],
+  "zeroAddress": [],
+  "isZeroAddress": [
+    "hexAddress"
+  ],
+  "accountBodyFromSlim": [
+    "body"
+  ],
+  "accountBodyToSlim": [
+    "body"
+  ],
+  "accountBodyToRLP": [
+    "body",
+    "param"
+  ],
+  "Address": {
+    "bytes": [],
+    "constructor": [
+      "bytes"
+    ],
+    "equals": [
+      "address"
+    ],
+    "isZero": [],
+    "isPrecompileOrSystemAddress": [],
+    "toString": [],
+    "toBytes": []
+  },
+  "createZeroAddress": [],
+  "createAddressFromBigInt": [
+    "value"
+  ],
+  "createAddressFromString": [
+    "str"
+  ],
+  "createAddressFromPublicKey": [
+    "pubKey"
+  ],
+  "createAddressFromPrivateKey": [
+    "privateKey"
+  ],
+  "createContractAddress": [
+    "from",
+    "nonce"
+  ],
+  "createContractAddress2": [
+    "from",
+    "salt",
+    "initCode"
+  ],
+  "eoaCode7702AuthorizationListBytesItemToJSON": [
+    "authorizationList"
+  ],
+  "eoaCode7702AuthorizationListJSONItemToBytes": [
+    "authorizationList"
+  ],
+  "unsignedAuthorizationListToBytes": [
+    "input"
+  ],
+  "eoaCode7702AuthorizationMessageToSign": [
+    "input"
+  ],
+  "eoaCode7702AuthorizationHashedMessageToSign": [
+    "input"
+  ],
+  "eoaCode7702SignAuthorization": [
+    "input",
+    "privateKey",
+    "ecSign"
+  ],
+  "secp256k1Sign": [
+    "msgHash",
+    "pk"
+  ],
+  "eoaCode7702RecoverAuthority": [
+    "input"
+  ],
+  "getBinaryTreeStem": [
+    "hashFunction",
+    "address",
+    "param"
+  ],
+  "getBinaryTreeKey": [
+    "stem",
+    "leaf"
+  ],
+  "getBinaryTreeIndicesForStorageSlot": [
+    "storageKey"
+  ],
+  "getBinaryTreeIndicesForCodeChunk": [
+    "chunkId"
+  ],
+  "getBinaryTreeKeyForCodeChunk": [
+    "address",
+    "chunkId",
+    "hashFunction"
+  ],
+  "chunkifyBinaryTreeCode": [
+    "code"
+  ],
+  "getBinaryTreeKeyForStorageSlot": [
+    "address",
+    "storageKey",
+    "hashFunction"
+  ],
+  "decodeBinaryTreeLeafBasicData": [
+    "encodedBasicData"
+  ],
+  "encodeBinaryTreeLeafBasicData": [
+    "account"
+  ],
+  "generateBinaryTreeChunkSuffixes": [
+    "numChunks"
+  ],
+  "generateBinaryTreeCodeStems": [
+    "numChunks",
+    "address",
+    "hashFunction"
+  ],
+  "getPadded": [
+    "data",
+    "blobs_len"
+  ],
+  "getBlob": [
+    "data"
+  ],
+  "getBlobs": [
+    "input"
+  ],
+  "blobsToCommitments": [
+    "kzg",
+    "blobs"
+  ],
+  "blobsToProofs": [
+    "kzg",
+    "blobs",
+    "commitments"
+  ],
+  "computeVersionedHash": [
+    "commitment",
+    "blobCommitmentVersion"
+  ],
+  "commitmentsToVersionedHashes": [
+    "commitments"
+  ],
+  "blobsToCells": [
+    "kzg",
+    "blobs"
+  ],
+  "blobsToCellsAndProofs": [
+    "kzg",
+    "blobs"
+  ],
+  "blobsToCellProofs": [
+    "kzg",
+    "blobs"
+  ],
+  "hexToBytes": [
+    "hex"
+  ],
+  "unprefixedHexToBytes": [
+    "hex"
+  ],
+  "bytesToHex": [
+    "bytes"
+  ],
+  "bytesToBigInt": [
+    "bytes",
+    "param"
+  ],
+  "bytesToInt": [
+    "bytes"
+  ],
+  "intToHex": [
+    "i"
+  ],
+  "intToBytes": [
+    "i"
+  ],
+  "bigIntToBytes": [
+    "num",
+    "param"
+  ],
+  "setLength": [
+    "msg",
+    "length",
+    "right",
+    "allowTruncate"
+  ],
+  "setLengthLeft": [
+    "msg",
+    "length",
+    "param"
+  ],
+  "setLengthRight": [
+    "msg",
+    "length",
+    "param"
+  ],
+  "stripZeros": [
+    "a"
+  ],
+  "unpadBytes": [
+    "a"
+  ],
+  "unpadArray": [
+    "a"
+  ],
+  "unpadHex": [
+    "a"
+  ],
+  "toBytes": [
+    "v"
+  ],
+  "fromSigned": [
+    "num"
+  ],
+  "toUnsigned": [
+    "num"
+  ],
+  "addHexPrefix": [
+    "str"
+  ],
+  "short": [
+    "bytes",
+    "param"
+  ],
+  "validateNoLeadingZeroes": [
+    "values"
+  ],
+  "bigIntToHex": [
+    "num"
+  ],
+  "bigIntMax": [
+    "param"
+  ],
+  "bigIntMin": [
+    "param"
+  ],
+  "bigIntToUnpaddedBytes": [
+    "value"
+  ],
+  "bigIntToAddressBytes": [
+    "value",
+    "param"
+  ],
+  "intToUnpaddedBytes": [
+    "value"
+  ],
+  "compareBytes": [
+    "value1",
+    "value2"
+  ],
+  "randomBytes": [
+    "length"
+  ],
+  "concatBytes": [
+    "param"
+  ],
+  "bytesToInt32": [
+    "bytes",
+    "param"
+  ],
+  "bytesToBigInt64": [
+    "bytes",
+    "param"
+  ],
+  "int32ToBytes": [
+    "value",
+    "param"
+  ],
+  "bigInt64ToBytes": [
+    "value",
+    "param"
+  ],
+  "bytesToUtf8": [
+    "bytes"
+  ],
+  "equalsBytes": [
+    "a",
+    "b"
+  ],
+  "hexToBigInt": [
+    "input"
+  ],
+  "bytesToBits": [
+    "bytes",
+    "bitLength"
+  ],
+  "bitsToBytes": [
+    "bits"
+  ],
+  "matchingBytesLength": [
+    "bytes1",
+    "bytes2"
+  ],
+  "matchingBitsLength": [
+    "bits1",
+    "bits2"
+  ],
+  "equalsBits": [
+    "bits1",
+    "bits2"
+  ],
+  "assertIsHexString": [
+    "input"
+  ],
+  "assertIsBytes": [
+    "input"
+  ],
+  "assertIsArray": [
+    "input"
+  ],
+  "assertIsString": [
+    "input"
+  ],
+  "isHexString": [
+    "value",
+    "length"
+  ],
+  "stripHexPrefix": [
+    "str"
+  ],
+  "padToEven": [
+    "value"
+  ],
+  "getBinarySize": [
+    "str"
+  ],
+  "arrayContainsArray": [
+    "superset",
+    "subset",
+    "some"
+  ],
+  "toAscii": [
+    "hex"
+  ],
+  "fromUtf8": [
+    "stringValue"
+  ],
+  "fromAscii": [
+    "stringValue"
+  ],
+  "getKeys": [
+    "params",
+    "key",
+    "allowEmpty"
+  ],
+  "Lock": {
+    "permits": [],
+    "promiseResolverQueue": [],
+    "acquire": [],
+    "release": []
+  },
+  "MapDB": {
+    "_database": [],
+    "constructor": [
+      "database"
+    ],
+    "get": [
+      "key"
+    ],
+    "put": [
+      "key",
+      "val"
+    ],
+    "del": [
+      "key"
+    ],
+    "batch": [
+      "opStack"
+    ],
+    "shallowCopy": [],
+    "open": []
+  },
+  "fetchFromProvider": [
+    "url",
+    "params"
+  ],
+  "getProvider": [
+    "provider"
+  ],
+  "CLRequest": {
+    "bytes": [],
+    "type": [],
+    "data": [],
+    "constructor": [
+      "requestType",
+      "requestData"
+    ]
+  },
+  "createCLRequest": [
+    "bytes"
+  ],
+  "calculateSigRecovery": [
+    "v",
+    "chainId"
+  ],
+  "isValidSigRecovery": [
+    "recovery"
+  ],
+  "ecrecover": [
+    "msgHash",
+    "v",
+    "r",
+    "s",
+    "chainId"
+  ],
+  "toRPCSig": [
+    "v",
+    "r",
+    "s",
+    "chainId"
+  ],
+  "toCompactSig": [
+    "v",
+    "r",
+    "s",
+    "chainId"
+  ],
+  "fromRPCSig": [
+    "sig"
+  ],
+  "isValidSignature": [
+    "v",
+    "r",
+    "s",
+    "param",
+    "chainId"
+  ],
+  "hashPersonalMessage": [
+    "message"
+  ],
+  "PrioritizedTaskExecutor": {
+    "maxPoolSize": [],
+    "currentPoolSize": [],
+    "queue": [],
+    "constructor": [
+      "maxPoolSize"
+    ],
+    "executeOrQueue": [
+      "priority",
+      "fn"
+    ],
+    "finished": []
+  },
+  "isNestedUint8Array": [
+    "value"
+  ],
+  "toType": [
+    "input",
+    "outputType"
+  ],
+  "isEOACode7702AuthorizationListBytes": [
+    "input"
+  ],
+  "isEOACode7702AuthorizationList": [
+    "input"
+  ],
+  "Units": {
+    "validateInput": [
+      "amount"
+    ],
+    "ether": [
+      "amount"
+    ],
+    "gwei": [
+      "amount"
+    ]
+  },
+  "formatBigDecimal": [
+    "numerator",
+    "denominator",
+    "maxDecimalFactor"
+  ],
+  "Withdrawal": {
+    "index": [],
+    "validatorIndex": [],
+    "address": [],
+    "amount": [],
+    "constructor": [
+      "index",
+      "validatorIndex",
+      "address",
+      "amount"
+    ],
+    "raw": [],
+    "toValue": [],
+    "toJSON": []
+  },
+  "withdrawalToBytesArray": [
+    "withdrawal"
+  ],
+  "createWithdrawal": [
+    "withdrawalData"
+  ],
+  "createWithdrawalFromBytesArray": [
+    "withdrawalArray"
+  ]
+}

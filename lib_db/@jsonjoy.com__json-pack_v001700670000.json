@@ -1,0 +1,6553 @@
+{
+  "JsonPackExtension": {
+    "constructor": [
+      "tag",
+      "val"
+    ]
+  },
+  "JsonPackMpint": {
+    "constructor": [
+      "data"
+    ],
+    "fromBigInt": [
+      "value"
+    ],
+    "toBigInt": [],
+    "fromNumber": [
+      "value"
+    ],
+    "toNumber": []
+  },
+  "JsonPackValue": {
+    "constructor": [
+      "val"
+    ]
+  },
+  "AvroDecoder": {
+    "constructor": [],
+    "read": [
+      "uint8"
+    ],
+    "decode": [
+      "uint8"
+    ],
+    "readAny": [],
+    "readNull": [],
+    "readBoolean": [],
+    "readInt": [],
+    "readLong": [],
+    "readFloat": [],
+    "readDouble": [],
+    "readBytes": [],
+    "readString": [],
+    "readArray": [
+      "itemReader"
+    ],
+    "readMap": [
+      "valueReader"
+    ],
+    "readUnion": [
+      "schemaReaders"
+    ],
+    "readEnum": [],
+    "readFixed": [
+      "size"
+    ],
+    "readRecord": [
+      "fieldReaders"
+    ],
+    "readVarIntUnsigned": [],
+    "readVarLong": [],
+    "decodeZigZag32": [
+      "value"
+    ],
+    "decodeZigZag64": [
+      "value"
+    ]
+  },
+  "AvroEncoder": {
+    "constructor": [
+      "writer"
+    ],
+    "encode": [
+      "value"
+    ],
+    "writeUnknown": [
+      "value"
+    ],
+    "writeAny": [
+      "value"
+    ],
+    "writeNull": [],
+    "writeBoolean": [
+      "bool"
+    ],
+    "writeInt": [
+      "int"
+    ],
+    "writeLong": [
+      "long"
+    ],
+    "writeFloatAvro": [
+      "float"
+    ],
+    "writeDouble": [
+      "double"
+    ],
+    "writeBin": [
+      "bytes"
+    ],
+    "writeStr": [
+      "str"
+    ],
+    "writeArr": [
+      "arr"
+    ],
+    "writeObj": [
+      "obj"
+    ],
+    "writeNumber": [
+      "num"
+    ],
+    "writeInteger": [
+      "int"
+    ],
+    "writeUInteger": [
+      "uint"
+    ],
+    "writeFloat": [
+      "float"
+    ],
+    "writeFloatValue": [
+      "float"
+    ],
+    "writeAsciiStr": [
+      "str"
+    ],
+    "writeVarIntSigned": [
+      "value"
+    ],
+    "writeVarIntUnsigned": [
+      "value"
+    ],
+    "writeVarLong": [
+      "value"
+    ],
+    "encodeZigZag32": [
+      "value"
+    ],
+    "encodeZigZag64": [
+      "value"
+    ]
+  },
+  "AvroSchemaDecoder": {
+    "constructor": [
+      "param"
+    ],
+    "decode": [
+      "data",
+      "schema"
+    ],
+    "readValue": [
+      "schema"
+    ],
+    "readRecord": [
+      "schema"
+    ],
+    "readEnum": [
+      "schema"
+    ],
+    "readArray": [
+      "schema"
+    ],
+    "readMap": [
+      "schema"
+    ],
+    "readUnion": [
+      "schema"
+    ],
+    "readFixed": [
+      "schema"
+    ],
+    "readNull": [
+      "schema"
+    ],
+    "readBoolean": [
+      "schema"
+    ],
+    "readInt": [
+      "schema"
+    ],
+    "readLong": [
+      "schema"
+    ],
+    "readFloat": [
+      "schema"
+    ],
+    "readDouble": [
+      "schema"
+    ],
+    "readBytes": [
+      "schema"
+    ],
+    "readString": [
+      "schema"
+    ],
+    "validateSchemaType": [
+      "schema",
+      "expectedType"
+    ],
+    "resolveSchema": [
+      "schema"
+    ],
+    "collectNamedSchemas": [
+      "schema"
+    ],
+    "getFullName": [
+      "name",
+      "namespace"
+    ]
+  },
+  "AvroSchemaEncoder": {
+    "constructor": [
+      "writer"
+    ],
+    "encode": [
+      "value",
+      "schema",
+      "selectedIndex"
+    ],
+    "writeNull": [
+      "schema"
+    ],
+    "writeBoolean": [
+      "value",
+      "schema"
+    ],
+    "writeInt": [
+      "value",
+      "schema"
+    ],
+    "writeLong": [
+      "value",
+      "schema"
+    ],
+    "writeFloat": [
+      "value",
+      "schema"
+    ],
+    "writeDouble": [
+      "value",
+      "schema"
+    ],
+    "writeBytes": [
+      "value",
+      "schema"
+    ],
+    "writeString": [
+      "value",
+      "schema"
+    ],
+    "writeRecord": [
+      "value",
+      "schema"
+    ],
+    "writeEnum": [
+      "value",
+      "schema"
+    ],
+    "writeArray": [
+      "value",
+      "schema"
+    ],
+    "writeMap": [
+      "value",
+      "schema"
+    ],
+    "writeUnion": [
+      "value",
+      "schema",
+      "selectedIndex"
+    ],
+    "writeFixed": [
+      "value",
+      "schema"
+    ],
+    "writeNumber": [
+      "value",
+      "schema"
+    ],
+    "writeValue": [
+      "value",
+      "schema"
+    ],
+    "validateSchemaType": [
+      "schema",
+      "expectedType"
+    ],
+    "resolveSchema": [
+      "schema"
+    ],
+    "collectNamedSchemas": [
+      "schema"
+    ],
+    "getFullName": [
+      "name",
+      "namespace"
+    ],
+    "writeVarIntUnsigned": [
+      "value"
+    ],
+    "writeVarIntSigned": [
+      "value"
+    ],
+    "encodeZigZag32": [
+      "value"
+    ]
+  },
+  "AvroSchemaValidator": {
+    "constructor": [],
+    "validateSchema": [
+      "schema"
+    ],
+    "validateValue": [
+      "value",
+      "schema"
+    ],
+    "validateSchemaInternal": [
+      "schema"
+    ],
+    "validateStringSchema": [
+      "schema"
+    ],
+    "validateUnionSchema": [
+      "schema"
+    ],
+    "validateNullSchema": [
+      "schema"
+    ],
+    "validateBooleanSchema": [
+      "schema"
+    ],
+    "validateIntSchema": [
+      "schema"
+    ],
+    "validateLongSchema": [
+      "schema"
+    ],
+    "validateFloatSchema": [
+      "schema"
+    ],
+    "validateDoubleSchema": [
+      "schema"
+    ],
+    "validateBytesSchema": [
+      "schema"
+    ],
+    "validateStringTypeSchema": [
+      "schema"
+    ],
+    "validateRecordSchema": [
+      "schema"
+    ],
+    "validateRecordField": [
+      "field"
+    ],
+    "validateEnumSchema": [
+      "schema"
+    ],
+    "validateArraySchema": [
+      "schema"
+    ],
+    "validateMapSchema": [
+      "schema"
+    ],
+    "validateFixedSchema": [
+      "schema"
+    ],
+    "validateValueAgainstSchema": [
+      "value",
+      "schema"
+    ],
+    "validateValueAgainstStringSchema": [
+      "value",
+      "schema"
+    ],
+    "validateValueAgainstRecord": [
+      "value",
+      "schema"
+    ],
+    "validateValueAgainstEnum": [
+      "value",
+      "schema"
+    ],
+    "validateValueAgainstArray": [
+      "value",
+      "schema"
+    ],
+    "validateValueAgainstMap": [
+      "value",
+      "schema"
+    ],
+    "validateValueAgainstFixed": [
+      "value",
+      "schema"
+    ],
+    "getSchemaTypeName": [
+      "schema"
+    ],
+    "getFullName": [
+      "name",
+      "namespace"
+    ]
+  },
+  "BencodeDecoder": {
+    "constructor": [],
+    "read": [
+      "uint8"
+    ],
+    "decode": [
+      "uint8"
+    ],
+    "readAny": [],
+    "readNull": [],
+    "readUndef": [],
+    "readTrue": [],
+    "readFalse": [],
+    "readBool": [],
+    "readNum": [],
+    "readStr": [],
+    "readBin": [],
+    "readArr": [],
+    "readObj": []
+  },
+  "BencodeEncoder": {
+    "constructor": [
+      "writer"
+    ],
+    "encode": [
+      "value"
+    ],
+    "writeUnknown": [
+      "value"
+    ],
+    "writeAny": [
+      "value"
+    ],
+    "writeNull": [],
+    "writeUndef": [],
+    "writeBoolean": [
+      "bool"
+    ],
+    "writeNumber": [
+      "num"
+    ],
+    "writeInteger": [
+      "int"
+    ],
+    "writeUInteger": [
+      "uint"
+    ],
+    "writeFloat": [
+      "float"
+    ],
+    "writeBigint": [
+      "int"
+    ],
+    "writeBin": [
+      "buf"
+    ],
+    "writeStr": [
+      "str"
+    ],
+    "writeAsciiStr": [
+      "str"
+    ],
+    "writeArr": [
+      "arr"
+    ],
+    "writeObj": [
+      "obj"
+    ],
+    "writeMap": [
+      "obj"
+    ],
+    "writeSet": [
+      "set"
+    ]
+  },
+  "BsonDecoder": {
+    "constructor": [
+      "param"
+    ],
+    "read": [
+      "uint8"
+    ],
+    "decode": [
+      "uint8"
+    ],
+    "readAny": [],
+    "readDocument": [],
+    "readCString": [],
+    "readString": [],
+    "readElementValue": [
+      "type"
+    ],
+    "readArray": [],
+    "readBinary": [],
+    "readObjectId": [],
+    "readRegex": [],
+    "readDbPointer": [],
+    "readCodeWithScope": [],
+    "readTimestamp": [],
+    "readDecimal128": []
+  },
+  "BsonEncoder": {
+    "constructor": [
+      "writer"
+    ],
+    "encode": [
+      "value"
+    ],
+    "writeAny": [
+      "value"
+    ],
+    "writeNull": [],
+    "writeUndef": [],
+    "writeBoolean": [
+      "bool"
+    ],
+    "writeNumber": [
+      "num"
+    ],
+    "writeInteger": [
+      "int"
+    ],
+    "writeUInteger": [
+      "uint"
+    ],
+    "writeInt32": [
+      "int"
+    ],
+    "writeInt64": [
+      "int"
+    ],
+    "writeFloat": [
+      "float"
+    ],
+    "writeBigInt": [
+      "int"
+    ],
+    "writeBin": [
+      "buf"
+    ],
+    "writeStr": [
+      "str"
+    ],
+    "writeAsciiStr": [
+      "str"
+    ],
+    "writeArr": [
+      "arr"
+    ],
+    "writeObj": [
+      "obj"
+    ],
+    "writeCString": [
+      "str"
+    ],
+    "writeObjectId": [
+      "id"
+    ],
+    "writeKey": [
+      "key",
+      "value"
+    ]
+  },
+  "BsonObjectId": {
+    "constructor": [
+      "timestamp",
+      "process",
+      "counter"
+    ]
+  },
+  "BsonDbPointer": {
+    "constructor": [
+      "name",
+      "id"
+    ]
+  },
+  "BsonJavascriptCode": {
+    "constructor": [
+      "code"
+    ]
+  },
+  "BsonSymbol": {
+    "constructor": [
+      "symbol"
+    ]
+  },
+  "BsonJavascriptCodeWithScope": {
+    "constructor": [
+      "code",
+      "scope"
+    ]
+  },
+  "BsonInt32": {
+    "constructor": [
+      "value"
+    ]
+  },
+  "BsonInt64": {
+    "constructor": [
+      "value"
+    ]
+  },
+  "BsonFloat": {
+    "constructor": [
+      "value"
+    ]
+  },
+  "BsonTimestamp": {
+    "constructor": [
+      "increment",
+      "timestamp"
+    ]
+  },
+  "BsonDecimal128": {
+    "constructor": [
+      "data"
+    ]
+  },
+  "BsonMinKey": {},
+  "BsonMaxKey": {},
+  "BsonBinary": {
+    "constructor": [
+      "subtype",
+      "data"
+    ]
+  },
+  "CborDecoder": {
+    "readAsMap": [],
+    "readMap": [
+      "minor"
+    ],
+    "readMapRaw": [
+      "length"
+    ],
+    "readMapIndef": [],
+    "skipN": [
+      "n"
+    ],
+    "skipAny": [],
+    "skipAnyRaw": [
+      "octet"
+    ],
+    "skipMinorLen": [
+      "minor"
+    ],
+    "skipUNint": [
+      "minor"
+    ],
+    "skipBin": [
+      "minor"
+    ],
+    "skipBinChunk": [],
+    "skipStr": [
+      "minor"
+    ],
+    "skipStrChunk": [],
+    "skipArr": [
+      "minor"
+    ],
+    "skipObj": [
+      "minor"
+    ],
+    "skipTag": [
+      "minor"
+    ],
+    "skipTkn": [
+      "minor"
+    ],
+    "validate": [
+      "value",
+      "param",
+      "param"
+    ],
+    "decodeLevel": [
+      "value"
+    ],
+    "readLevel": [],
+    "readPrimitiveOrVal": [],
+    "readAsValue": [],
+    "readObjLevel": [
+      "minor"
+    ],
+    "readObjRawLevel": [
+      "length"
+    ],
+    "readObjIndefLevel": [],
+    "readArrLevel": [
+      "minor"
+    ],
+    "readArrRawLevel": [
+      "length"
+    ],
+    "readArrIndefLevel": [],
+    "readHdr": [
+      "expectedMajor"
+    ],
+    "readStrHdr": [],
+    "readObjHdr": [],
+    "readArrHdr": [],
+    "findKey": [
+      "key"
+    ],
+    "findIndex": [
+      "index"
+    ],
+    "find": [
+      "path"
+    ]
+  },
+  "CborDecoderBase": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "read": [
+      "uint8"
+    ],
+    "decode": [
+      "uint8"
+    ],
+    "val": [],
+    "readAny": [],
+    "readAnyRaw": [
+      "octet"
+    ],
+    "readMinorLen": [
+      "minor"
+    ],
+    "readUint": [
+      "minor"
+    ],
+    "readNint": [
+      "minor"
+    ],
+    "readBin": [
+      "minor"
+    ],
+    "readBinChunk": [],
+    "readAsStr": [],
+    "readStr": [
+      "minor"
+    ],
+    "readStrLen": [
+      "minor"
+    ],
+    "readStrChunk": [],
+    "readArr": [
+      "minor"
+    ],
+    "readArrRaw": [
+      "length"
+    ],
+    "readArrIndef": [],
+    "readObj": [
+      "minor"
+    ],
+    "readObjRaw": [
+      "length"
+    ],
+    "readObjIndef": [],
+    "key": [],
+    "readTag": [
+      "minor"
+    ],
+    "readTagRaw": [
+      "tag"
+    ],
+    "readTkn": [
+      "minor"
+    ],
+    "f16": []
+  },
+  "CborDecoderDag": {
+    "readTagRaw": [
+      "tag"
+    ]
+  },
+  "CborEncoder": {
+    "writeUnknown": [
+      "value"
+    ],
+    "writeAny": [
+      "value"
+    ],
+    "writeFloat": [
+      "float"
+    ],
+    "writeMap": [
+      "map"
+    ],
+    "writeUndef": []
+  },
+  "CborEncoderDag": {
+    "writeUndef": [],
+    "writeFloat": [
+      "float"
+    ],
+    "writeTag": [
+      "tag",
+      "value"
+    ]
+  },
+  "CborEncoderFast": {
+    "constructor": [
+      "param"
+    ],
+    "encode": [
+      "value"
+    ],
+    "writeAny": [
+      "value"
+    ],
+    "writeCbor": [],
+    "writeEnd": [],
+    "writeNull": [],
+    "writeBoolean": [
+      "bool"
+    ],
+    "writeNumber": [
+      "num"
+    ],
+    "writeBigInt": [
+      "int"
+    ],
+    "writeBigUint": [
+      "uint"
+    ],
+    "writeBigSint": [
+      "int"
+    ],
+    "writeInteger": [
+      "int"
+    ],
+    "writeUInteger": [
+      "uint"
+    ],
+    "encodeNumber": [
+      "num"
+    ],
+    "encodeInteger": [
+      "int"
+    ],
+    "encodeUint": [
+      "uint"
+    ],
+    "encodeNint": [
+      "int"
+    ],
+    "writeFloat": [
+      "float"
+    ],
+    "writeBin": [
+      "buf"
+    ],
+    "writeBinHdr": [
+      "length"
+    ],
+    "writeStr": [
+      "str"
+    ],
+    "writeStrHdr": [
+      "length"
+    ],
+    "writeAsciiStr": [
+      "str"
+    ],
+    "writeArr": [
+      "arr"
+    ],
+    "writeArrHdr": [
+      "length"
+    ],
+    "writeObj": [
+      "obj"
+    ],
+    "writeObjHdr": [
+      "length"
+    ],
+    "writeMapHdr": [
+      "length"
+    ],
+    "writeStartMap": [],
+    "writeTag": [
+      "tag",
+      "value"
+    ],
+    "writeTagHdr": [
+      "tag"
+    ],
+    "writeTkn": [
+      "value"
+    ],
+    "writeStartStr": [],
+    "writeStrChunk": [
+      "str"
+    ],
+    "writeEndStr": [],
+    "writeStartBin": [],
+    "writeBinChunk": [
+      "buf"
+    ],
+    "writeEndBin": [],
+    "writeStartArr": [],
+    "writeArrChunk": [
+      "item"
+    ],
+    "writeEndArr": [],
+    "writeStartObj": [],
+    "writeObjChunk": [
+      "key",
+      "value"
+    ],
+    "writeEndObj": []
+  },
+  "CborEncoderStable": {
+    "writeObj": [
+      "obj"
+    ],
+    "writeStr": [
+      "str"
+    ],
+    "writeUndef": []
+  },
+  "strHeaderLength": [
+    "strSize"
+  ],
+  "encode": [
+    "data"
+  ],
+  "decode": [
+    "blob"
+  ],
+  "Codecs": {
+    "constructor": [
+      "writer"
+    ]
+  },
+  "CborJsonValueCodec": {
+    "constructor": [
+      "writer"
+    ]
+  },
+  "JsonJsonValueCodec": {
+    "constructor": [
+      "writer"
+    ]
+  },
+  "MsgPackJsonValueCodec": {
+    "constructor": [
+      "writer"
+    ]
+  },
+  "EjsonDecoder": {
+    "constructor": [
+      "param"
+    ],
+    "decodeFromString": [
+      "json"
+    ],
+    "readAny": [],
+    "readArr": [],
+    "readObjWithEjsonSupport": [],
+    "readValue": [],
+    "readRawObj": [],
+    "transformEjsonObject": [
+      "obj"
+    ],
+    "parseObjectId": [
+      "hex"
+    ],
+    "base64ToUint8Array": [
+      "base64"
+    ],
+    "isValidUuid": [
+      "uuid"
+    ],
+    "uuidToBytes": [
+      "uuid"
+    ]
+  },
+  "hasExactKeys": [
+    "expectedKeys"
+  ],
+  "EjsonEncoder": {
+    "constructor": [
+      "writer",
+      "param"
+    ],
+    "encodeToString": [
+      "value"
+    ],
+    "writeUnknown": [
+      "value"
+    ],
+    "writeAny": [
+      "value"
+    ],
+    "writeBin": [
+      "buf"
+    ],
+    "writeStr": [
+      "str"
+    ],
+    "writeAsciiStr": [
+      "str"
+    ],
+    "writeArr": [
+      "arr"
+    ],
+    "writeObj": [
+      "obj"
+    ],
+    "writeUndefinedWrapper": [],
+    "writeNumberAsEjson": [
+      "value"
+    ],
+    "writeNumberIntWrapper": [
+      "value"
+    ],
+    "writeNumberLongWrapper": [
+      "value"
+    ],
+    "writeNumberDoubleWrapper": [
+      "value"
+    ],
+    "writeDateAsEjson": [
+      "value"
+    ],
+    "writeRegExpAsEjson": [
+      "value"
+    ],
+    "writeObjectIdAsEjson": [
+      "value"
+    ],
+    "writeBsonInt32AsEjson": [
+      "value"
+    ],
+    "writeBsonInt64AsEjson": [
+      "value"
+    ],
+    "writeBsonFloatAsEjson": [
+      "value"
+    ],
+    "writeBsonDecimal128AsEjson": [
+      "value"
+    ],
+    "writeBsonBinaryAsEjson": [
+      "value"
+    ],
+    "writeBsonCodeAsEjson": [
+      "value"
+    ],
+    "writeBsonCodeWScopeAsEjson": [
+      "value"
+    ],
+    "writeBsonSymbolAsEjson": [
+      "value"
+    ],
+    "writeBsonTimestampAsEjson": [
+      "value"
+    ],
+    "writeBsonDbPointerAsEjson": [
+      "value"
+    ],
+    "writeBsonMinKeyAsEjson": [],
+    "writeBsonMaxKeyAsEjson": [],
+    "formatNonFinite": [
+      "value"
+    ],
+    "objectIdToHex": [
+      "objectId"
+    ],
+    "uint8ArrayToBase64": [
+      "data"
+    ],
+    "decimal128ToString": [
+      "data"
+    ]
+  },
+  "Import": {
+    "constructor": [
+      "parent",
+      "symbols"
+    ],
+    "getId": [
+      "symbol"
+    ],
+    "getText": [
+      "id"
+    ],
+    "add": [
+      "symbol"
+    ],
+    "toAst": []
+  },
+  "IonDecoder": {
+    "decode": [
+      "data"
+    ],
+    "read": []
+  },
+  "IonDecoderBase": {
+    "constructor": [
+      "reader"
+    ],
+    "val": [],
+    "readNull": [
+      "length"
+    ],
+    "readBool": [
+      "length"
+    ],
+    "readUint": [
+      "length"
+    ],
+    "readNint": [
+      "length"
+    ],
+    "readFloat": [
+      "length"
+    ],
+    "readString": [
+      "length"
+    ],
+    "readBinary": [
+      "length"
+    ],
+    "readList": [
+      "length"
+    ],
+    "readStruct": [
+      "length"
+    ],
+    "readAnnotation": [
+      "length"
+    ],
+    "readVUint": [],
+    "readVInt": [],
+    "getSymbolText": [
+      "symbolId"
+    ],
+    "validateBVM": [],
+    "readSymbolTable": []
+  },
+  "IonEncoderFast": {
+    "constructor": [
+      "param"
+    ],
+    "encode": [
+      "value"
+    ],
+    "writeAny": [
+      "value"
+    ],
+    "writeIvm": [],
+    "writeSymbolTable": [],
+    "writeAnnotations": [
+      "node"
+    ],
+    "writeBool": [
+      "node"
+    ],
+    "encodeUint": [
+      "node"
+    ],
+    "encodeNint": [
+      "node"
+    ],
+    "writeFloat": [
+      "node"
+    ],
+    "writeVUint": [
+      "num"
+    ],
+    "writeStr": [
+      "node"
+    ],
+    "writeBin": [
+      "node"
+    ],
+    "writeArr": [
+      "node"
+    ],
+    "writeObj": [
+      "node"
+    ]
+  },
+  "NullAstNode": {
+    "constructor": [],
+    "byteLength": []
+  },
+  "BoolAstNode": {
+    "constructor": [
+      "val"
+    ],
+    "byteLength": []
+  },
+  "UintAstNode": {
+    "constructor": [
+      "val"
+    ],
+    "byteLength": []
+  },
+  "NintAstNode": {
+    "constructor": [
+      "val"
+    ],
+    "byteLength": []
+  },
+  "FloatAstNode": {
+    "constructor": [
+      "val"
+    ],
+    "byteLength": []
+  },
+  "StrAstNode": {
+    "constructor": [
+      "val"
+    ],
+    "byteLength": []
+  },
+  "BinAstNode": {
+    "constructor": [
+      "val"
+    ],
+    "byteLength": []
+  },
+  "ArrAstNode": {
+    "constructor": [
+      "val"
+    ],
+    "byteLength": []
+  },
+  "ObjAstNode": {
+    "constructor": [
+      "val"
+    ],
+    "byteLength": []
+  },
+  "AnnotationAstNode": {
+    "constructor": [
+      "val",
+      "annotations"
+    ],
+    "byteLength": []
+  },
+  "vUintLen": [
+    "num"
+  ],
+  "toAst": [
+    "val",
+    "symbols"
+  ],
+  "JsonDecoder": {
+    "constructor": [],
+    "read": [
+      "uint8"
+    ],
+    "decode": [
+      "uint8"
+    ],
+    "readAny": [],
+    "skipWhitespace": [],
+    "readNull": [],
+    "readTrue": [],
+    "readFalse": [],
+    "readBool": [],
+    "readNum": [],
+    "readStr": [],
+    "tryReadBin": [],
+    "readBin": [],
+    "readArr": [],
+    "readObj": []
+  },
+  "escapedCharReplacer": [
+    "char"
+  ],
+  "hasBinaryPrefix": [
+    "u8",
+    "x"
+  ],
+  "isUndefined": [
+    "u8",
+    "x"
+  ],
+  "readKey": [
+    "reader"
+  ],
+  "JsonDecoderDag": {
+    "readObj": [],
+    "tryReadBytes": [],
+    "tryReadCid": [],
+    "readCid": [
+      "cid"
+    ]
+  },
+  "DecodeFinishError": {
+    "constructor": [
+      "value"
+    ]
+  },
+  "JsonDecoderPartial": {
+    "readAny": [],
+    "readArr": [],
+    "readObj": []
+  },
+  "JsonEncoder": {
+    "constructor": [
+      "writer"
+    ],
+    "encode": [
+      "value"
+    ],
+    "writeUnknown": [
+      "value"
+    ],
+    "writeAny": [
+      "value"
+    ],
+    "writeNull": [],
+    "writeUndef": [],
+    "writeBoolean": [
+      "bool"
+    ],
+    "writeNumber": [
+      "num"
+    ],
+    "writeInteger": [
+      "int"
+    ],
+    "writeUInteger": [
+      "uint"
+    ],
+    "writeFloat": [
+      "float"
+    ],
+    "writeBin": [
+      "buf"
+    ],
+    "writeStr": [
+      "str"
+    ],
+    "writeAsciiStr": [
+      "str"
+    ],
+    "writeArr": [
+      "arr"
+    ],
+    "writeArrSeparator": [],
+    "writeObj": [
+      "obj"
+    ],
+    "writeObjSeparator": [],
+    "writeObjKeySeparator": [],
+    "writeStartStr": [],
+    "writeStrChunk": [
+      "str"
+    ],
+    "writeEndStr": [],
+    "writeStartBin": [],
+    "writeBinChunk": [
+      "buf"
+    ],
+    "writeEndBin": [],
+    "writeStartArr": [],
+    "writeArrChunk": [
+      "item"
+    ],
+    "writeEndArr": [],
+    "writeStartObj": [],
+    "writeObjChunk": [
+      "key",
+      "value"
+    ],
+    "writeEndObj": []
+  },
+  "JsonEncoderDag": {
+    "writeBin": [
+      "buf"
+    ],
+    "writeCid": [
+      "cid"
+    ]
+  },
+  "JsonEncoderStable": {
+    "writeObj": [
+      "obj"
+    ]
+  },
+  "findEndingQuote": [
+    "uint8",
+    "x"
+  ],
+  "parseExtDataUri": [
+    "uri"
+  ],
+  "unwrapBinary": [
+    "value"
+  ],
+  "parse": [
+    "json"
+  ],
+  "stringifyBinary": [
+    "value"
+  ],
+  "wrapBinary": [
+    "value"
+  ],
+  "stringify": [
+    "value",
+    "replacer",
+    "space"
+  ],
+  "MsgPackDecoder": {
+    "skipAny": [],
+    "skipArr": [
+      "size"
+    ],
+    "skipObj": [
+      "size"
+    ],
+    "readLevel": [
+      "uint8"
+    ],
+    "valOneLevel": [],
+    "primitive": [],
+    "skip": [
+      "length"
+    ],
+    "validate": [
+      "value",
+      "param",
+      "param"
+    ],
+    "readObjHdr": [],
+    "readStrHdr": [],
+    "findKey": [
+      "key"
+    ],
+    "readArrHdr": [],
+    "findIndex": [
+      "index"
+    ],
+    "find": [
+      "path"
+    ]
+  },
+  "MsgPackDecoderFast": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "decode": [
+      "uint8"
+    ],
+    "read": [
+      "uint8"
+    ],
+    "val": [],
+    "readAny": [],
+    "str": [],
+    "obj": [
+      "size"
+    ],
+    "key": [],
+    "arr": [
+      "size"
+    ],
+    "ext": [
+      "size"
+    ],
+    "back": [
+      "bytes"
+    ]
+  },
+  "MsgPackEncoder": {
+    "writeAny": [
+      "value"
+    ]
+  },
+  "MsgPackEncoderFast": {
+    "constructor": [
+      "param"
+    ],
+    "encode": [
+      "json"
+    ],
+    "encodeAny": [
+      "json"
+    ],
+    "writeAny": [
+      "value"
+    ],
+    "encodeFloat64": [
+      "num"
+    ],
+    "writeNull": [],
+    "writeFloat": [
+      "float"
+    ],
+    "u32": [
+      "num"
+    ],
+    "n32": [
+      "num"
+    ],
+    "encodeNumber": [
+      "num"
+    ],
+    "writeNumber": [
+      "num"
+    ],
+    "writeInteger": [
+      "int"
+    ],
+    "writeUInteger": [
+      "uint"
+    ],
+    "encodeNull": [],
+    "encodeTrue": [],
+    "encodeFalse": [],
+    "encodeBoolean": [
+      "bool"
+    ],
+    "writeBoolean": [
+      "bool"
+    ],
+    "encodeStringHeader": [
+      "length"
+    ],
+    "writeStrHdr": [
+      "length"
+    ],
+    "encodeString": [
+      "str"
+    ],
+    "writeStr": [
+      "str"
+    ],
+    "encodeAsciiString": [
+      "str"
+    ],
+    "writeAsciiStr": [
+      "str"
+    ],
+    "encodeArrayHeader": [
+      "length"
+    ],
+    "encodeArray": [
+      "arr"
+    ],
+    "writeArrHdr": [
+      "length"
+    ],
+    "writeArr": [
+      "arr"
+    ],
+    "encodeObjectHeader": [
+      "length"
+    ],
+    "encodeObject": [
+      "obj"
+    ],
+    "writeObjHdr": [
+      "length"
+    ],
+    "writeObj": [
+      "obj"
+    ],
+    "encodeExtHeader": [
+      "type",
+      "length"
+    ],
+    "encodeExt": [
+      "ext"
+    ],
+    "encodeBinaryHeader": [
+      "length"
+    ],
+    "encodeBinary": [
+      "buf"
+    ],
+    "writeBinHdr": [
+      "length"
+    ],
+    "writeBin": [
+      "buf"
+    ]
+  },
+  "MsgPackEncoderStable": {
+    "writeObj": [
+      "obj"
+    ]
+  },
+  "MsgPackToJsonConverter": {
+    "constructor": [],
+    "reset": [
+      "uint8"
+    ],
+    "convert": [
+      "uint8"
+    ],
+    "val": [],
+    "str": [
+      "size"
+    ],
+    "obj": [
+      "size"
+    ],
+    "key": [],
+    "arr": [
+      "size"
+    ],
+    "bin": [
+      "size"
+    ],
+    "ext": [
+      "size"
+    ],
+    "u8": [],
+    "u16": [],
+    "u32": [],
+    "i8": [],
+    "i16": [],
+    "i32": [],
+    "f32": [],
+    "f64": []
+  },
+  "toUtf8": [
+    "str"
+  ],
+  "genShallowReader": [
+    "path"
+  ],
+  "encodeFull": [
+    "data"
+  ],
+  "FullNfsv3Encoder": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "encodeCall": [
+      "xid",
+      "proc",
+      "cred",
+      "verf",
+      "request"
+    ],
+    "writeCall": [
+      "xid",
+      "proc",
+      "cred",
+      "verf",
+      "request"
+    ],
+    "encodeAcceptedReply": [
+      "xid",
+      "proc",
+      "verf",
+      "response"
+    ],
+    "writeAcceptedReply": [
+      "xid",
+      "proc",
+      "verf",
+      "response"
+    ],
+    "encodeRejectedReply": [
+      "xid",
+      "rejectStat",
+      "mismatchInfo",
+      "authStat"
+    ],
+    "writeRejectedReply": [
+      "xid",
+      "rejectStat",
+      "mismatchInfo",
+      "authStat"
+    ],
+    "writeRmHeader": [
+      "rmHeaderPosition",
+      "endPosition"
+    ]
+  },
+  "Nfsv3Decoder": {
+    "constructor": [
+      "param"
+    ],
+    "decodeMessage": [
+      "reader",
+      "proc",
+      "isRequest"
+    ],
+    "decodeRequest": [
+      "proc"
+    ],
+    "decodeResponse": [
+      "proc"
+    ],
+    "readFh": [],
+    "readFilename": [],
+    "readTime": [],
+    "readSpecData": [],
+    "readFattr": [],
+    "readPostOpAttr": [],
+    "readWccAttr": [],
+    "readPreOpAttr": [],
+    "readWccData": [],
+    "readPostOpFh": [],
+    "readSetMode": [],
+    "readSetUid": [],
+    "readSetGid": [],
+    "readSetSize": [],
+    "readSetAtime": [],
+    "readSetMtime": [],
+    "readSattr": [],
+    "readSattrGuard": [],
+    "readDirOpArgs": [],
+    "readCreateHow": [],
+    "readMknodData": [],
+    "readEntry": [],
+    "readEntryPlus": [],
+    "readDirList": [],
+    "readDirListPlus": [],
+    "decodeGetattrRequest": [],
+    "decodeGetattrResponse": [],
+    "decodeSetattrRequest": [],
+    "decodeSetattrResponse": [],
+    "decodeLookupRequest": [],
+    "decodeLookupResponse": [],
+    "decodeAccessRequest": [],
+    "decodeAccessResponse": [],
+    "decodeReadlinkRequest": [],
+    "decodeReadlinkResponse": [],
+    "decodeReadRequest": [],
+    "decodeReadResponse": [],
+    "decodeWriteRequest": [],
+    "decodeWriteResponse": [],
+    "decodeCreateRequest": [],
+    "decodeCreateResponse": [],
+    "decodeMkdirRequest": [],
+    "decodeMkdirResponse": [],
+    "decodeSymlinkRequest": [],
+    "decodeSymlinkResponse": [],
+    "decodeMknodRequest": [],
+    "decodeMknodResponse": [],
+    "decodeRemoveRequest": [],
+    "decodeRemoveResponse": [],
+    "decodeRmdirRequest": [],
+    "decodeRmdirResponse": [],
+    "decodeRenameRequest": [],
+    "decodeRenameResponse": [],
+    "decodeLinkRequest": [],
+    "decodeLinkResponse": [],
+    "decodeReaddirRequest": [],
+    "decodeReaddirResponse": [],
+    "decodeReaddirplusRequest": [],
+    "decodeReaddirplusResponse": [],
+    "decodeFsstatRequest": [],
+    "decodeFsstatResponse": [],
+    "decodeFsinfoRequest": [],
+    "decodeFsinfoResponse": [],
+    "decodePathconfRequest": [],
+    "decodePathconfResponse": [],
+    "decodeCommitRequest": [],
+    "decodeCommitResponse": []
+  },
+  "Nfsv3Encoder": {
+    "constructor": [
+      "param"
+    ],
+    "encodeMessage": [
+      "message",
+      "proc",
+      "isRequest"
+    ],
+    "writeMessage": [
+      "message",
+      "proc",
+      "isRequest"
+    ],
+    "writeRequest": [
+      "request",
+      "proc"
+    ],
+    "writeResponse": [
+      "response",
+      "proc"
+    ],
+    "writeFh": [
+      "fh"
+    ],
+    "writeFilename": [
+      "filename"
+    ],
+    "writeTime": [
+      "time"
+    ],
+    "writeSpecData": [
+      "spec"
+    ],
+    "writeFattr": [
+      "attr"
+    ],
+    "writePostOpAttr": [
+      "attr"
+    ],
+    "writeWccAttr": [
+      "attr"
+    ],
+    "writePreOpAttr": [
+      "attr"
+    ],
+    "writeWccData": [
+      "wcc"
+    ],
+    "writePostOpFh": [
+      "fh"
+    ],
+    "writeSetMode": [
+      "setMode"
+    ],
+    "writeSetUid": [
+      "setUid"
+    ],
+    "writeSetGid": [
+      "setGid"
+    ],
+    "writeSetSize": [
+      "setSize"
+    ],
+    "writeSetAtime": [
+      "setAtime"
+    ],
+    "writeSetMtime": [
+      "setMtime"
+    ],
+    "writeSattr": [
+      "sattr"
+    ],
+    "writeSattrGuard": [
+      "guard"
+    ],
+    "writeDirOpArgs": [
+      "args"
+    ],
+    "writeCreateHow": [
+      "how"
+    ],
+    "writeMknodData": [
+      "data"
+    ],
+    "writeEntry": [
+      "entry"
+    ],
+    "writeEntryPlus": [
+      "entry"
+    ],
+    "writeDirList": [
+      "dirList"
+    ],
+    "writeDirListPlus": [
+      "dirList"
+    ],
+    "writeGetattrRequest": [
+      "req"
+    ],
+    "writeGetattrResponse": [
+      "res"
+    ],
+    "writeSetattrRequest": [
+      "req"
+    ],
+    "writeSetattrResponse": [
+      "res"
+    ],
+    "writeLookupRequest": [
+      "req"
+    ],
+    "writeLookupResponse": [
+      "res"
+    ],
+    "writeAccessRequest": [
+      "req"
+    ],
+    "writeAccessResponse": [
+      "res"
+    ],
+    "writeReadlinkRequest": [
+      "req"
+    ],
+    "writeReadlinkResponse": [
+      "res"
+    ],
+    "writeReadRequest": [
+      "req"
+    ],
+    "writeReadResponse": [
+      "res"
+    ],
+    "writeWriteRequest": [
+      "req"
+    ],
+    "writeWriteResponse": [
+      "res"
+    ],
+    "writeCreateRequest": [
+      "req"
+    ],
+    "writeCreateResponse": [
+      "res"
+    ],
+    "writeMkdirRequest": [
+      "req"
+    ],
+    "writeMkdirResponse": [
+      "res"
+    ],
+    "writeSymlinkRequest": [
+      "req"
+    ],
+    "writeSymlinkResponse": [
+      "res"
+    ],
+    "writeMknodRequest": [
+      "req"
+    ],
+    "writeMknodResponse": [
+      "res"
+    ],
+    "writeRemoveRequest": [
+      "req"
+    ],
+    "writeRemoveResponse": [
+      "res"
+    ],
+    "writeRmdirRequest": [
+      "req"
+    ],
+    "writeRmdirResponse": [
+      "res"
+    ],
+    "writeRenameRequest": [
+      "req"
+    ],
+    "writeRenameResponse": [
+      "res"
+    ],
+    "writeLinkRequest": [
+      "req"
+    ],
+    "writeLinkResponse": [
+      "res"
+    ],
+    "writeReaddirRequest": [
+      "req"
+    ],
+    "writeReaddirResponse": [
+      "res"
+    ],
+    "writeReaddirplusRequest": [
+      "req"
+    ],
+    "writeReaddirplusResponse": [
+      "res"
+    ],
+    "writeFsstatRequest": [
+      "req"
+    ],
+    "writeFsstatResponse": [
+      "res"
+    ],
+    "writeFsinfoRequest": [
+      "req"
+    ],
+    "writeFsinfoResponse": [
+      "res"
+    ],
+    "writePathconfRequest": [
+      "req"
+    ],
+    "writePathconfResponse": [
+      "res"
+    ],
+    "writeCommitRequest": [
+      "req"
+    ],
+    "writeCommitResponse": [
+      "res"
+    ]
+  },
+  "Nfsv3DecodingError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "Nfsv3EncodingError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "NlmDecoder": {
+    "constructor": [
+      "param"
+    ],
+    "decodeMessage": [
+      "reader",
+      "proc",
+      "isRequest"
+    ],
+    "decodeRequest": [
+      "proc"
+    ],
+    "decodeResponse": [
+      "proc"
+    ],
+    "readCookie": [],
+    "readNetobj": [],
+    "readNlm4Holder": [],
+    "readNlm4Lock": [],
+    "readNlm4Share": [],
+    "readTestArgs": [],
+    "readLockArgs": [],
+    "readCancelArgs": [],
+    "readUnlockArgs": [],
+    "readShareArgs": [],
+    "decodeTestRequest": [],
+    "decodeTestResponse": [],
+    "decodeLockRequest": [],
+    "decodeResponse4": [],
+    "decodeCancelRequest": [],
+    "decodeUnlockRequest": [],
+    "decodeGrantedRequest": [],
+    "decodeShareRequest": [],
+    "decodeShareResponse": [],
+    "decodeUnshareRequest": [],
+    "decodeNmLockRequest": [],
+    "decodeFreeAllRequest": []
+  },
+  "NlmEncoder": {
+    "constructor": [
+      "param"
+    ],
+    "encodeMessage": [
+      "message",
+      "proc",
+      "isRequest"
+    ],
+    "writeMessage": [
+      "message",
+      "proc",
+      "isRequest"
+    ],
+    "writeRequest": [
+      "request",
+      "proc"
+    ],
+    "writeResponse": [
+      "response",
+      "proc"
+    ],
+    "writeCookie": [
+      "cookie"
+    ],
+    "writeNetobj": [
+      "obj"
+    ],
+    "writeNlm4Holder": [
+      "holder"
+    ],
+    "writeNlm4Lock": [
+      "lock"
+    ],
+    "writeNlm4Share": [
+      "share"
+    ],
+    "writeTestArgs": [
+      "args"
+    ],
+    "writeLockArgs": [
+      "args"
+    ],
+    "writeCancelArgs": [
+      "args"
+    ],
+    "writeUnlockArgs": [
+      "args"
+    ],
+    "writeShareArgs": [
+      "args"
+    ],
+    "writeTestRequest": [
+      "req"
+    ],
+    "writeTestResponse": [
+      "res"
+    ],
+    "writeLockRequest": [
+      "req"
+    ],
+    "writeResponse4": [
+      "res"
+    ],
+    "writeCancelRequest": [
+      "req"
+    ],
+    "writeUnlockRequest": [
+      "req"
+    ],
+    "writeGrantedRequest": [
+      "req"
+    ],
+    "writeShareRequest": [
+      "req"
+    ],
+    "writeShareResponse": [
+      "res"
+    ],
+    "writeUnshareRequest": [
+      "req"
+    ],
+    "writeNmLockRequest": [
+      "req"
+    ],
+    "writeFreeAllRequest": [
+      "req"
+    ]
+  },
+  "Nlm4TestArgs": {
+    "constructor": [
+      "cookie",
+      "exclusive",
+      "lock"
+    ]
+  },
+  "Nlm4TestRequest": {
+    "constructor": [
+      "args"
+    ]
+  },
+  "Nlm4TestDenied": {
+    "constructor": [
+      "holder"
+    ]
+  },
+  "Nlm4TestResponse": {
+    "constructor": [
+      "cookie",
+      "stat",
+      "holder"
+    ]
+  },
+  "Nlm4LockArgs": {
+    "constructor": [
+      "cookie",
+      "block",
+      "exclusive",
+      "lock",
+      "reclaim",
+      "state"
+    ]
+  },
+  "Nlm4LockRequest": {
+    "constructor": [
+      "args"
+    ]
+  },
+  "Nlm4Response": {
+    "constructor": [
+      "cookie",
+      "stat"
+    ]
+  },
+  "Nlm4CancelArgs": {
+    "constructor": [
+      "cookie",
+      "block",
+      "exclusive",
+      "lock"
+    ]
+  },
+  "Nlm4CancelRequest": {
+    "constructor": [
+      "args"
+    ]
+  },
+  "Nlm4UnlockArgs": {
+    "constructor": [
+      "cookie",
+      "lock"
+    ]
+  },
+  "Nlm4UnlockRequest": {
+    "constructor": [
+      "args"
+    ]
+  },
+  "Nlm4GrantedRequest": {
+    "constructor": [
+      "args"
+    ]
+  },
+  "Nlm4ShareArgs": {
+    "constructor": [
+      "cookie",
+      "share",
+      "reclaim"
+    ]
+  },
+  "Nlm4ShareRequest": {
+    "constructor": [
+      "args"
+    ]
+  },
+  "Nlm4ShareResponse": {
+    "constructor": [
+      "cookie",
+      "stat",
+      "sequence"
+    ]
+  },
+  "Nlm4UnshareRequest": {
+    "constructor": [
+      "args"
+    ]
+  },
+  "Nlm4NmLockRequest": {
+    "constructor": [
+      "args"
+    ]
+  },
+  "Nlm4FreeAllRequest": {
+    "constructor": [
+      "notify"
+    ]
+  },
+  "Nlm4Holder": {
+    "constructor": [
+      "exclusive",
+      "svid",
+      "oh",
+      "offset",
+      "length"
+    ]
+  },
+  "Nlm4Lock": {
+    "constructor": [
+      "callerName",
+      "fh",
+      "oh",
+      "svid",
+      "offset",
+      "length"
+    ]
+  },
+  "Nlm4Share": {
+    "constructor": [
+      "callerName",
+      "fh",
+      "oh",
+      "mode",
+      "access"
+    ]
+  },
+  "Nlm4Notify": {
+    "constructor": [
+      "name",
+      "state"
+    ]
+  },
+  "Nfsv3GetattrRequest": {
+    "constructor": [
+      "object"
+    ]
+  },
+  "Nfsv3GetattrResOk": {
+    "constructor": [
+      "objAttributes"
+    ]
+  },
+  "Nfsv3GetattrResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ]
+  },
+  "Nfsv3SetattrRequest": {
+    "constructor": [
+      "object",
+      "newAttributes",
+      "guard"
+    ]
+  },
+  "Nfsv3SetattrResOk": {
+    "constructor": [
+      "objWcc"
+    ]
+  },
+  "Nfsv3SetattrResFail": {
+    "constructor": [
+      "objWcc"
+    ]
+  },
+  "Nfsv3SetattrResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3LookupRequest": {
+    "constructor": [
+      "what"
+    ]
+  },
+  "Nfsv3LookupResOk": {
+    "constructor": [
+      "object",
+      "objAttributes",
+      "dirAttributes"
+    ]
+  },
+  "Nfsv3LookupResFail": {
+    "constructor": [
+      "dirAttributes"
+    ]
+  },
+  "Nfsv3LookupResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3AccessRequest": {
+    "constructor": [
+      "object",
+      "access"
+    ]
+  },
+  "Nfsv3AccessResOk": {
+    "constructor": [
+      "objAttributes",
+      "access"
+    ]
+  },
+  "Nfsv3AccessResFail": {
+    "constructor": [
+      "objAttributes"
+    ]
+  },
+  "Nfsv3AccessResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3ReadlinkRequest": {
+    "constructor": [
+      "symlink"
+    ]
+  },
+  "Nfsv3ReadlinkResOk": {
+    "constructor": [
+      "symlinkAttributes",
+      "data"
+    ]
+  },
+  "Nfsv3ReadlinkResFail": {
+    "constructor": [
+      "symlinkAttributes"
+    ]
+  },
+  "Nfsv3ReadlinkResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3ReadRequest": {
+    "constructor": [
+      "file",
+      "offset",
+      "count"
+    ]
+  },
+  "Nfsv3ReadResOk": {
+    "constructor": [
+      "fileAttributes",
+      "count",
+      "eof",
+      "data"
+    ]
+  },
+  "Nfsv3ReadResFail": {
+    "constructor": [
+      "fileAttributes"
+    ]
+  },
+  "Nfsv3ReadResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3WriteRequest": {
+    "constructor": [
+      "file",
+      "offset",
+      "count",
+      "stable",
+      "data"
+    ]
+  },
+  "Nfsv3WriteResOk": {
+    "constructor": [
+      "fileWcc",
+      "count",
+      "committed",
+      "verf"
+    ]
+  },
+  "Nfsv3WriteResFail": {
+    "constructor": [
+      "fileWcc"
+    ]
+  },
+  "Nfsv3WriteResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3CreateRequest": {
+    "constructor": [
+      "where",
+      "how"
+    ]
+  },
+  "Nfsv3CreateResOk": {
+    "constructor": [
+      "obj",
+      "objAttributes",
+      "dirWcc"
+    ]
+  },
+  "Nfsv3CreateResFail": {
+    "constructor": [
+      "dirWcc"
+    ]
+  },
+  "Nfsv3CreateResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3MkdirRequest": {
+    "constructor": [
+      "where",
+      "attributes"
+    ]
+  },
+  "Nfsv3MkdirResOk": {
+    "constructor": [
+      "obj",
+      "objAttributes",
+      "dirWcc"
+    ]
+  },
+  "Nfsv3MkdirResFail": {
+    "constructor": [
+      "dirWcc"
+    ]
+  },
+  "Nfsv3MkdirResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3SymlinkRequest": {
+    "constructor": [
+      "where",
+      "symlinkAttributes",
+      "symlinkData"
+    ]
+  },
+  "Nfsv3SymlinkResOk": {
+    "constructor": [
+      "obj",
+      "objAttributes",
+      "dirWcc"
+    ]
+  },
+  "Nfsv3SymlinkResFail": {
+    "constructor": [
+      "dirWcc"
+    ]
+  },
+  "Nfsv3SymlinkResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3MknodRequest": {
+    "constructor": [
+      "where",
+      "what"
+    ]
+  },
+  "Nfsv3MknodResOk": {
+    "constructor": [
+      "obj",
+      "objAttributes",
+      "dirWcc"
+    ]
+  },
+  "Nfsv3MknodResFail": {
+    "constructor": [
+      "dirWcc"
+    ]
+  },
+  "Nfsv3MknodResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3RemoveRequest": {
+    "constructor": [
+      "object"
+    ]
+  },
+  "Nfsv3RemoveResOk": {
+    "constructor": [
+      "dirWcc"
+    ]
+  },
+  "Nfsv3RemoveResFail": {
+    "constructor": [
+      "dirWcc"
+    ]
+  },
+  "Nfsv3RemoveResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3RmdirRequest": {
+    "constructor": [
+      "object"
+    ]
+  },
+  "Nfsv3RmdirResOk": {
+    "constructor": [
+      "dirWcc"
+    ]
+  },
+  "Nfsv3RmdirResFail": {
+    "constructor": [
+      "dirWcc"
+    ]
+  },
+  "Nfsv3RmdirResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3RenameRequest": {
+    "constructor": [
+      "from",
+      "to"
+    ]
+  },
+  "Nfsv3RenameResOk": {
+    "constructor": [
+      "fromDirWcc",
+      "toDirWcc"
+    ]
+  },
+  "Nfsv3RenameResFail": {
+    "constructor": [
+      "fromDirWcc",
+      "toDirWcc"
+    ]
+  },
+  "Nfsv3RenameResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3LinkRequest": {
+    "constructor": [
+      "file",
+      "link"
+    ]
+  },
+  "Nfsv3LinkResOk": {
+    "constructor": [
+      "fileAttributes",
+      "linkDirWcc"
+    ]
+  },
+  "Nfsv3LinkResFail": {
+    "constructor": [
+      "fileAttributes",
+      "linkDirWcc"
+    ]
+  },
+  "Nfsv3LinkResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3ReaddirRequest": {
+    "constructor": [
+      "dir",
+      "cookie",
+      "cookieverf",
+      "count"
+    ]
+  },
+  "Nfsv3ReaddirResOk": {
+    "constructor": [
+      "dirAttributes",
+      "cookieverf",
+      "reply"
+    ]
+  },
+  "Nfsv3ReaddirResFail": {
+    "constructor": [
+      "dirAttributes"
+    ]
+  },
+  "Nfsv3ReaddirResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3ReaddirplusRequest": {
+    "constructor": [
+      "dir",
+      "cookie",
+      "cookieverf",
+      "dircount",
+      "maxcount"
+    ]
+  },
+  "Nfsv3ReaddirplusResOk": {
+    "constructor": [
+      "dirAttributes",
+      "cookieverf",
+      "reply"
+    ]
+  },
+  "Nfsv3ReaddirplusResFail": {
+    "constructor": [
+      "dirAttributes"
+    ]
+  },
+  "Nfsv3ReaddirplusResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3FsstatRequest": {
+    "constructor": [
+      "fsroot"
+    ]
+  },
+  "Nfsv3FsstatResOk": {
+    "constructor": [
+      "objAttributes",
+      "tbytes",
+      "fbytes",
+      "abytes",
+      "tfiles",
+      "ffiles",
+      "afiles",
+      "invarsec"
+    ]
+  },
+  "Nfsv3FsstatResFail": {
+    "constructor": [
+      "objAttributes"
+    ]
+  },
+  "Nfsv3FsstatResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3FsinfoRequest": {
+    "constructor": [
+      "fsroot"
+    ]
+  },
+  "Nfsv3FsinfoResOk": {
+    "constructor": [
+      "objAttributes",
+      "rtmax",
+      "rtpref",
+      "rtmult",
+      "wtmax",
+      "wtpref",
+      "wtmult",
+      "dtpref",
+      "maxfilesize",
+      "timeDelta",
+      "properties"
+    ]
+  },
+  "Nfsv3FsinfoResFail": {
+    "constructor": [
+      "objAttributes"
+    ]
+  },
+  "Nfsv3FsinfoResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3PathconfRequest": {
+    "constructor": [
+      "object"
+    ]
+  },
+  "Nfsv3PathconfResOk": {
+    "constructor": [
+      "objAttributes",
+      "linkmax",
+      "namemax",
+      "noTrunc",
+      "chownRestricted",
+      "caseInsensitive",
+      "casePreserving"
+    ]
+  },
+  "Nfsv3PathconfResFail": {
+    "constructor": [
+      "objAttributes"
+    ]
+  },
+  "Nfsv3PathconfResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "Nfsv3CommitRequest": {
+    "constructor": [
+      "file",
+      "offset",
+      "count"
+    ]
+  },
+  "Nfsv3CommitResOk": {
+    "constructor": [
+      "fileWcc",
+      "verf"
+    ]
+  },
+  "Nfsv3CommitResFail": {
+    "constructor": [
+      "fileWcc"
+    ]
+  },
+  "Nfsv3CommitResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "resfail"
+    ]
+  },
+  "MountDecoder": {
+    "constructor": [
+      "param"
+    ],
+    "decodeMessage": [
+      "reader",
+      "proc",
+      "isRequest"
+    ],
+    "decodeRequest": [
+      "proc"
+    ],
+    "decodeResponse": [
+      "proc"
+    ],
+    "readFhandle3": [],
+    "readDirpath": [],
+    "readMountBody": [],
+    "readGroupNode": [],
+    "readExportNode": [],
+    "decodeMntRequest": [],
+    "decodeMntResponse": [],
+    "decodeDumpResponse": [],
+    "decodeUmntRequest": [],
+    "decodeExportResponse": []
+  },
+  "MountEncoder": {
+    "constructor": [
+      "param"
+    ],
+    "encodeMessage": [
+      "message",
+      "proc",
+      "isRequest"
+    ],
+    "writeMessage": [
+      "message",
+      "proc",
+      "isRequest"
+    ],
+    "writeRequest": [
+      "request",
+      "proc"
+    ],
+    "writeResponse": [
+      "response",
+      "proc"
+    ],
+    "writeFhandle3": [
+      "fh"
+    ],
+    "writeDirpath": [
+      "path"
+    ],
+    "writeMountBody": [
+      "body"
+    ],
+    "writeGroupNode": [
+      "group"
+    ],
+    "writeExportNode": [
+      "exportNode"
+    ],
+    "writeMntRequest": [
+      "req"
+    ],
+    "writeMntResponse": [
+      "res"
+    ],
+    "writeDumpResponse": [
+      "res"
+    ],
+    "writeUmntRequest": [
+      "req"
+    ],
+    "writeExportResponse": [
+      "res"
+    ]
+  },
+  "MountMntRequest": {
+    "constructor": [
+      "dirpath"
+    ]
+  },
+  "MountMntResOk": {
+    "constructor": [
+      "fhandle",
+      "authFlavors"
+    ]
+  },
+  "MountMntResponse": {
+    "constructor": [
+      "status",
+      "mountinfo"
+    ]
+  },
+  "MountDumpRequest": {},
+  "MountDumpResponse": {
+    "constructor": [
+      "mountlist"
+    ]
+  },
+  "MountUmntRequest": {
+    "constructor": [
+      "dirpath"
+    ]
+  },
+  "MountUmntallRequest": {},
+  "MountExportRequest": {},
+  "MountExportResponse": {
+    "constructor": [
+      "exports"
+    ]
+  },
+  "MountFhandle3": {
+    "constructor": [
+      "data"
+    ]
+  },
+  "MountBody": {
+    "constructor": [
+      "hostname",
+      "directory",
+      "next"
+    ]
+  },
+  "MountGroupNode": {
+    "constructor": [
+      "name",
+      "next"
+    ]
+  },
+  "MountExportNode": {
+    "constructor": [
+      "dir",
+      "groups",
+      "next"
+    ]
+  },
+  "Nfsv3Time": {
+    "constructor": [
+      "seconds",
+      "nseconds"
+    ]
+  },
+  "Nfsv3SpecData": {
+    "constructor": [
+      "specdata1",
+      "specdata2"
+    ]
+  },
+  "Nfsv3Fh": {
+    "constructor": [
+      "data"
+    ]
+  },
+  "Nfsv3SetMode": {
+    "constructor": [
+      "set",
+      "mode"
+    ]
+  },
+  "Nfsv3SetUid": {
+    "constructor": [
+      "set",
+      "uid"
+    ]
+  },
+  "Nfsv3SetGid": {
+    "constructor": [
+      "set",
+      "gid"
+    ]
+  },
+  "Nfsv3SetSize": {
+    "constructor": [
+      "set",
+      "size"
+    ]
+  },
+  "Nfsv3SetAtime": {
+    "constructor": [
+      "how",
+      "atime"
+    ]
+  },
+  "Nfsv3SetMtime": {
+    "constructor": [
+      "how",
+      "mtime"
+    ]
+  },
+  "Nfsv3Sattr": {
+    "constructor": [
+      "mode",
+      "uid",
+      "gid",
+      "size",
+      "atime",
+      "mtime"
+    ]
+  },
+  "Nfsv3SattrGuard": {
+    "constructor": [
+      "check",
+      "objCtime"
+    ]
+  },
+  "Nfsv3DirOpArgs": {
+    "constructor": [
+      "dir",
+      "name"
+    ]
+  },
+  "Nfsv3WccAttr": {
+    "constructor": [
+      "size",
+      "mtime",
+      "ctime"
+    ]
+  },
+  "Nfsv3PreOpAttr": {
+    "constructor": [
+      "attributesFollow",
+      "attributes"
+    ]
+  },
+  "Nfsv3PostOpAttr": {
+    "constructor": [
+      "attributesFollow",
+      "attributes"
+    ]
+  },
+  "Nfsv3PostOpFh": {
+    "constructor": [
+      "handleFollows",
+      "handle"
+    ]
+  },
+  "Nfsv3WccData": {
+    "constructor": [
+      "before",
+      "after"
+    ]
+  },
+  "Nfsv3Fattr": {
+    "constructor": [
+      "type",
+      "mode",
+      "nlink",
+      "uid",
+      "gid",
+      "size",
+      "used",
+      "rdev",
+      "fsid",
+      "fileid",
+      "atime",
+      "mtime",
+      "ctime"
+    ]
+  },
+  "Nfsv3DeviceData": {
+    "constructor": [
+      "devAttributes",
+      "spec"
+    ]
+  },
+  "Nfsv3MknodData": {
+    "constructor": [
+      "type",
+      "chr",
+      "blk",
+      "sock",
+      "pipe"
+    ]
+  },
+  "Nfsv3CreateHow": {
+    "constructor": [
+      "mode",
+      "objAttributes",
+      "verf"
+    ]
+  },
+  "Nfsv3WriteHow": {
+    "constructor": [
+      "stable"
+    ]
+  },
+  "Nfsv3Entry": {
+    "constructor": [
+      "fileid",
+      "name",
+      "cookie",
+      "nextentry"
+    ]
+  },
+  "Nfsv3EntryPlus": {
+    "constructor": [
+      "fileid",
+      "name",
+      "cookie",
+      "nameAttributes",
+      "nameHandle",
+      "nextentry"
+    ]
+  },
+  "Nfsv3DirList": {
+    "constructor": [
+      "eof",
+      "entries"
+    ]
+  },
+  "Nfsv3DirListPlus": {
+    "constructor": [
+      "eof",
+      "entries"
+    ]
+  },
+  "Nfsv4Decoder": {
+    "constructor": [
+      "param"
+    ],
+    "decodeCompound": [
+      "reader",
+      "isRequest"
+    ],
+    "decodeCompoundRequest": [
+      "reader"
+    ],
+    "decodeCompoundResponse": [
+      "reader"
+    ],
+    "decodeRequest": [
+      "op"
+    ],
+    "decodeResponse": [
+      "op"
+    ],
+    "readFh": [],
+    "readVerifier": [],
+    "readStateid": [],
+    "readBitmap": [],
+    "readFattr": [],
+    "readChangeInfo": [],
+    "readClientAddr": [],
+    "readCbClient": [],
+    "readClientId": [],
+    "readOpenOwner": [],
+    "readLockOwner": [],
+    "readOpenToLockOwner": [],
+    "readLockOwnerInfo": [],
+    "readOpenClaim": [],
+    "readOpenHow": [],
+    "readOpenDelegation": [],
+    "readAce": [],
+    "readSecInfoFlavor": [],
+    "decodeAccessResponse": [],
+    "decodeCloseResponse": [],
+    "decodeCommitResponse": [],
+    "decodeCreateRequest": [],
+    "decodeCreateResponse": [],
+    "decodeDelegpurgeResponse": [],
+    "decodeDelegreturnResponse": [],
+    "decodeGetattrRequest": [],
+    "decodeGetattrResponse": [],
+    "decodeGetfhRequest": [],
+    "decodeGetfhResponse": [],
+    "decodeLinkRequest": [],
+    "decodeLinkResponse": [],
+    "decodeLockRequest": [],
+    "decodeLockResponse": [],
+    "decodeLocktRequest": [],
+    "decodeLocktResponse": [],
+    "decodeLockuRequest": [],
+    "decodeLockuResponse": [],
+    "decodeLookupRequest": [],
+    "decodeLookupResponse": [],
+    "decodeLookuppRequest": [],
+    "decodeLookuppResponse": [],
+    "decodeNverifyRequest": [],
+    "decodeNverifyResponse": [],
+    "decodeOpenRequest": [],
+    "decodeOpenResponse": [],
+    "decodeOpenattrRequest": [],
+    "decodeOpenattrResponse": [],
+    "decodeOpenConfirmRequest": [],
+    "decodeOpenConfirmResponse": [],
+    "decodeOpenDowngradeRequest": [],
+    "decodeOpenDowngradeResponse": [],
+    "decodePutfhRequest": [],
+    "decodePutfhResponse": [],
+    "decodePutrootfhResponse": [],
+    "decodeReadRequest": [],
+    "decodeReadResponse": [],
+    "decodeReaddirRequest": [],
+    "decodeReaddirResponse": [],
+    "decodeReadlinkRequest": [],
+    "decodeReadlinkResponse": [],
+    "decodeRemoveRequest": [],
+    "decodeRemoveResponse": [],
+    "decodeRenameRequest": [],
+    "decodeRenameResponse": [],
+    "decodeRenewRequest": [],
+    "decodeRenewResponse": [],
+    "decodeRestorefhRequest": [],
+    "decodeRestorefhResponse": [],
+    "decodeSavefhResponse": [],
+    "decodeSecinfoRequest": [],
+    "decodeSecinfoResponse": [],
+    "decodeSetattrRequest": [],
+    "decodeSetattrResponse": [],
+    "decodeSetclientidRequest": [],
+    "decodeSetclientidResponse": [],
+    "decodeSetclientidConfirmRequest": [],
+    "decodeSetclientidConfirmResponse": [],
+    "decodeVerifyRequest": [],
+    "decodeVerifyResponse": [],
+    "decodeWriteRequest": [],
+    "decodeWriteResponse": [],
+    "decodeReleaseLockOwnerRequest": [],
+    "decodeReleaseLockOwnerResponse": [],
+    "decodeIllegalRequest": [],
+    "decodeIllegalResponse": [],
+    "decodeCbCompound": [
+      "reader",
+      "isRequest"
+    ],
+    "decodeCbCompoundRequest": [],
+    "decodeCbCompoundResponse": [],
+    "decodeCbRequest": [
+      "op"
+    ],
+    "decodeCbResponse": [
+      "op"
+    ],
+    "decodeCbGetattrRequest": [],
+    "decodeCbGetattrResponse": [],
+    "decodeCbRecallRequest": [],
+    "decodeCbRecallResponse": [],
+    "decodeCbIllegalRequest": [],
+    "decodeCbIllegalResponse": []
+  },
+  "Nfsv4Encoder": {
+    "constructor": [
+      "param"
+    ],
+    "encodeCompound": [
+      "compound",
+      "isRequest"
+    ],
+    "writeCompound": [
+      "compound",
+      "isRequest"
+    ],
+    "encodeCbCompound": [
+      "compound",
+      "isRequest"
+    ],
+    "writeCbCompound": [
+      "compound",
+      "isRequest"
+    ]
+  },
+  "Nfsv4FullEncoder": {
+    "constructor": [
+      "param"
+    ],
+    "encodeCall": [
+      "xid",
+      "proc",
+      "cred",
+      "verf",
+      "request"
+    ],
+    "writeCall": [
+      "xid",
+      "proc",
+      "cred",
+      "verf",
+      "request"
+    ],
+    "encodeAcceptedCompoundReply": [
+      "xid",
+      "proc",
+      "verf",
+      "response"
+    ],
+    "writeAcceptedCompoundReply": [
+      "xid",
+      "verf",
+      "compound"
+    ],
+    "encodeRejectedReply": [
+      "xid",
+      "rejectStat",
+      "mismatchInfo",
+      "authStat"
+    ],
+    "writeRejectedReply": [
+      "xid",
+      "rejectStat",
+      "mismatchInfo",
+      "authStat"
+    ],
+    "encodeCbCall": [
+      "xid",
+      "cbProgram",
+      "proc",
+      "cred",
+      "verf",
+      "request"
+    ],
+    "writeCbCall": [
+      "xid",
+      "cbProgram",
+      "proc",
+      "cred",
+      "verf",
+      "request"
+    ],
+    "encodeCbAcceptedReply": [
+      "xid",
+      "proc",
+      "verf",
+      "response"
+    ],
+    "writeCbAcceptedReply": [
+      "xid",
+      "proc",
+      "verf",
+      "response"
+    ]
+  },
+  "parseBitmask": [
+    "mask"
+  ],
+  "overlaps": [
+    "a",
+    "b"
+  ],
+  "containsSetOnlyAttr": [
+    "requestedAttrs"
+  ],
+  "requiresLstat": [
+    "requestedAttrs"
+  ],
+  "requiresFsStats": [
+    "requestedAttrs"
+  ],
+  "setBit": [
+    "mask",
+    "attrNum"
+  ],
+  "attrNumsToBitmap": [
+    "attrNums"
+  ],
+  "NfsFsDir": {
+    "constructor": [
+      "path",
+      "nfs",
+      "operations"
+    ],
+    "ensureLoaded": [],
+    "close": [
+      "callback"
+    ],
+    "closeSync": [],
+    "read": [
+      "callback"
+    ],
+    "readSync": []
+  },
+  "NfsFsDirent": {
+    "constructor": [
+      "name",
+      "type"
+    ],
+    "isDirectory": [],
+    "isFile": [],
+    "isBlockDevice": [],
+    "isCharacterDevice": [],
+    "isSymbolicLink": [],
+    "isFIFO": [],
+    "isSocket": []
+  },
+  "NfsFsFileHandle": {
+    "constructor": [
+      "fd",
+      "path",
+      "client",
+      "stateid",
+      "openOwner"
+    ],
+    "getAsyncId": [],
+    "close": [],
+    "stat": [
+      "options"
+    ],
+    "appendFile": [
+      "data",
+      "options"
+    ],
+    "chmod": [
+      "mode"
+    ],
+    "chown": [
+      "uid",
+      "gid"
+    ],
+    "datasync": [],
+    "read": [
+      "buffer",
+      "offset",
+      "length",
+      "position"
+    ],
+    "readFile": [
+      "options"
+    ],
+    "truncate": [
+      "len"
+    ],
+    "utimes": [
+      "atime",
+      "mtime"
+    ],
+    "write": [
+      "buffer",
+      "offset",
+      "length",
+      "position"
+    ],
+    "writeFile": [
+      "data",
+      "options"
+    ],
+    "readv": [
+      "buffers",
+      "position"
+    ],
+    "writev": [
+      "buffers",
+      "position"
+    ],
+    "readableWebStream": [
+      "options"
+    ],
+    "createReadStream": [
+      "options"
+    ],
+    "createWriteStream": [
+      "options"
+    ]
+  },
+  "NfsFsStats": {
+    "constructor": [
+      "uid",
+      "gid",
+      "rdev",
+      "blksize",
+      "ino",
+      "size",
+      "blocks",
+      "atime",
+      "mtime",
+      "ctime",
+      "birthtime",
+      "atimeMs",
+      "mtimeMs",
+      "ctimeMs",
+      "birthtimeMs",
+      "dev",
+      "mode",
+      "nlink",
+      "type"
+    ],
+    "isDirectory": [],
+    "isFile": [],
+    "isBlockDevice": [],
+    "isCharacterDevice": [],
+    "isSymbolicLink": [],
+    "isFIFO": [],
+    "isSocket": []
+  },
+  "Nfsv4FsClient": {
+    "constructor": [
+      "fs"
+    ],
+    "makeOpenOwnerKey": [
+      "owner"
+    ],
+    "nextOpenOwnerSeqid": [
+      "owner"
+    ],
+    "createDefaultOpenOwner": [],
+    "attrNumsToBitmap": [
+      "attrNums"
+    ],
+    "parsePath": [
+      "path"
+    ],
+    "navigateToParent": [
+      "parts"
+    ],
+    "navigateToPath": [
+      "parts"
+    ],
+    "encodeData": [
+      "data"
+    ],
+    "decodeData": [
+      "data",
+      "encoding"
+    ]
+  },
+  "Nfsv4TcpClient": {
+    "fromDuplex": [
+      "duplex",
+      "param"
+    ],
+    "constructor": [
+      "param"
+    ],
+    "nextXid": [],
+    "connect": [],
+    "setSocket": [
+      "socket"
+    ],
+    "onData": [
+      "data"
+    ],
+    "onRpcMessage": [
+      "msg"
+    ],
+    "onClose": [],
+    "compound": [
+      "requestOrOps",
+      "param",
+      "param"
+    ],
+    "null": [],
+    "close": [],
+    "isConnected": []
+  },
+  "onError": [
+    "err"
+  ],
+  "Nfsv4DecodingError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "Nfsv4EncodingError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "formatNfsv4Stat": [
+    "stat"
+  ],
+  "formatNfsv4Op": [
+    "op"
+  ],
+  "formatNfsv4Attr": [
+    "attr"
+  ],
+  "formatNfsv4FType": [
+    "ftype"
+  ],
+  "formatNfsv4TimeHow": [
+    "how"
+  ],
+  "formatNfsv4StableHow": [
+    "stable"
+  ],
+  "formatNfsv4CreateMode": [
+    "mode"
+  ],
+  "formatNfsv4OpenFlags": [
+    "flags"
+  ],
+  "formatNfsv4OpenAccess": [
+    "access"
+  ],
+  "formatNfsv4OpenDeny": [
+    "deny"
+  ],
+  "formatNfsv4OpenClaimType": [
+    "claim"
+  ],
+  "formatNfsv4DelegType": [
+    "deleg"
+  ],
+  "formatNfsv4LockType": [
+    "locktype"
+  ],
+  "formatNfsv4Access": [
+    "access"
+  ],
+  "formatNfsv4Mode": [
+    "mode"
+  ],
+  "formatNfsv4Bitmap": [
+    "bitmap"
+  ],
+  "formatBytes": [
+    "data",
+    "param"
+  ],
+  "formatStateid": [
+    "stateid",
+    "param"
+  ],
+  "formatFileHandle": [
+    "fh"
+  ],
+  "formatNfsv4Request": [
+    "req",
+    "param"
+  ],
+  "formatNfsv4Response": [
+    "res",
+    "param"
+  ],
+  "formatNfsv4CompoundRequest": [
+    "req",
+    "param"
+  ],
+  "formatNfsv4CompoundResponse": [
+    "res",
+    "param"
+  ],
+  "Nfsv4AccessRequest": {
+    "decode": [
+      "xdr"
+    ],
+    "constructor": [
+      "access"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4AccessResOk": {
+    "constructor": [
+      "supported",
+      "access"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4AccessResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CloseRequest": {
+    "decode": [
+      "xdr"
+    ],
+    "constructor": [
+      "seqid",
+      "openStateid"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CloseResOk": {
+    "constructor": [
+      "openStateid"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CloseResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CommitRequest": {
+    "decode": [
+      "xdr"
+    ],
+    "constructor": [
+      "offset",
+      "count"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CommitResOk": {
+    "constructor": [
+      "writeverf"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CommitResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CreateRequest": {
+    "constructor": [
+      "objtype",
+      "objname",
+      "createattrs"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CreateResOk": {
+    "constructor": [
+      "cinfo",
+      "attrset"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CreateResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4DelegpurgeRequest": {
+    "decode": [
+      "xdr"
+    ],
+    "constructor": [
+      "clientid"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4DelegpurgeResponse": {
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4DelegreturnRequest": {
+    "decode": [
+      "xdr"
+    ],
+    "constructor": [
+      "delegStateid"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4DelegreturnResponse": {
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4GetattrRequest": {
+    "constructor": [
+      "attrRequest"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4GetattrResOk": {
+    "constructor": [
+      "objAttributes"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4GetattrResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4GetfhRequest": {
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4GetfhResOk": {
+    "constructor": [
+      "object"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4GetfhResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LinkRequest": {
+    "constructor": [
+      "newname"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LinkResOk": {
+    "constructor": [
+      "cinfo"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LinkResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LockRequest": {
+    "constructor": [
+      "locktype",
+      "reclaim",
+      "offset",
+      "length",
+      "locker"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LockResOk": {
+    "constructor": [
+      "lockStateid"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LockResDenied": {
+    "constructor": [
+      "offset",
+      "length",
+      "locktype",
+      "owner"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LockResponse": {
+    "constructor": [
+      "status",
+      "resok",
+      "denied"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LocktRequest": {
+    "constructor": [
+      "locktype",
+      "offset",
+      "length",
+      "owner"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LocktResDenied": {
+    "constructor": [
+      "offset",
+      "length",
+      "locktype",
+      "owner"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LocktResponse": {
+    "constructor": [
+      "status",
+      "denied"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LockuRequest": {
+    "constructor": [
+      "locktype",
+      "seqid",
+      "lockStateid",
+      "offset",
+      "length"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LockuResOk": {
+    "constructor": [
+      "lockStateid"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LockuResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LookupRequest": {
+    "constructor": [
+      "objname"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LookupResponse": {
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LookuppRequest": {
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LookuppResponse": {
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4NverifyRequest": {
+    "constructor": [
+      "objAttributes"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4NverifyResponse": {
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenRequest": {
+    "constructor": [
+      "seqid",
+      "shareAccess",
+      "shareDeny",
+      "owner",
+      "openhow",
+      "claim"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenResOk": {
+    "constructor": [
+      "stateid",
+      "cinfo",
+      "rflags",
+      "attrset",
+      "delegation"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenattrRequest": {
+    "constructor": [
+      "createdir"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenattrResponse": {
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenConfirmRequest": {
+    "constructor": [
+      "openStateid",
+      "seqid"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenConfirmResOk": {
+    "constructor": [
+      "openStateid"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenConfirmResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenDowngradeRequest": {
+    "constructor": [
+      "openStateid",
+      "seqid",
+      "shareAccess",
+      "shareDeny"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenDowngradeResOk": {
+    "constructor": [
+      "openStateid"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenDowngradeResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4PutfhRequest": {
+    "constructor": [
+      "object"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4PutfhResponse": {
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4PutpubfhRequest": {
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4PutpubfhResponse": {
+    "decode": [
+      "xdr"
+    ],
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4PutrootfhRequest": {
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4PutrootfhResponse": {
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4ReadRequest": {
+    "constructor": [
+      "stateid",
+      "offset",
+      "count"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4ReadResOk": {
+    "constructor": [
+      "eof",
+      "data"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4ReadResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4ReaddirRequest": {
+    "constructor": [
+      "cookie",
+      "cookieverf",
+      "dircount",
+      "maxcount",
+      "attrRequest"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4ReaddirResOk": {
+    "constructor": [
+      "cookieverf",
+      "entries",
+      "eof"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4ReaddirResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4ReadlinkRequest": {
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4ReadlinkResOk": {
+    "constructor": [
+      "link"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4ReadlinkResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4RemoveRequest": {
+    "constructor": [
+      "target"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4RemoveResOk": {
+    "constructor": [
+      "cinfo"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4RemoveResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4RenameRequest": {
+    "constructor": [
+      "oldname",
+      "newname"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4RenameResOk": {
+    "constructor": [
+      "sourceCinfo",
+      "targetCinfo"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4RenameResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4RenewRequest": {
+    "constructor": [
+      "clientid"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4RenewResponse": {
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4RestorefhRequest": {
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4RestorefhResponse": {
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4SavefhRequest": {
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4SavefhResponse": {
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4SecinfoRequest": {
+    "constructor": [
+      "name"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4SecinfoResOk": {
+    "constructor": [
+      "flavors"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4SecinfoResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4SetattrRequest": {
+    "constructor": [
+      "stateid",
+      "objAttributes"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4SetattrResOk": {
+    "constructor": [
+      "attrsset"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4SetattrResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4SetclientidRequest": {
+    "constructor": [
+      "client",
+      "callback",
+      "callbackIdent"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4SetclientidResOk": {
+    "constructor": [
+      "clientid",
+      "setclientidConfirm"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4SetclientidResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4SetclientidConfirmRequest": {
+    "constructor": [
+      "clientid",
+      "setclientidConfirm"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4SetclientidConfirmResponse": {
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4VerifyRequest": {
+    "constructor": [
+      "objAttributes"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4VerifyResponse": {
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4WriteRequest": {
+    "constructor": [
+      "stateid",
+      "offset",
+      "stable",
+      "data"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4WriteResOk": {
+    "constructor": [
+      "count",
+      "committed",
+      "writeverf"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4WriteResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4ReleaseLockOwnerRequest": {
+    "constructor": [
+      "lockOwner"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4ReleaseLockOwnerResponse": {
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4IllegalRequest": {
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4IllegalResponse": {
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CompoundRequest": {
+    "constructor": [
+      "tag",
+      "minorversion",
+      "argarray"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CompoundResponse": {
+    "constructor": [
+      "status",
+      "tag",
+      "resarray"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CbGetattrRequest": {
+    "constructor": [
+      "fh",
+      "attrRequest"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CbGetattrResOk": {
+    "constructor": [
+      "objAttributes"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CbGetattrResponse": {
+    "constructor": [
+      "status",
+      "resok"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CbRecallRequest": {
+    "constructor": [
+      "stateid",
+      "truncate",
+      "fh"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CbRecallResponse": {
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CbIllegalRequest": {
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CbIllegalResponse": {
+    "constructor": [
+      "status"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CbCompoundRequest": {
+    "constructor": [
+      "tag",
+      "minorversion",
+      "callbackIdent",
+      "argarray"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CbCompoundResponse": {
+    "constructor": [
+      "status",
+      "tag",
+      "resarray"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CompoundProcCtx": {
+    "constructor": [
+      "connection",
+      "req"
+    ],
+    "getPrincipal": [],
+    "exec": []
+  },
+  "Nfsv4Connection": {
+    "constructor": [
+      "opts"
+    ],
+    "onData": [
+      "data"
+    ],
+    "onRpcMessage": [
+      "msg"
+    ],
+    "onRpcCallMessage": [
+      "procedure"
+    ],
+    "closeWithError": [
+      "error"
+    ],
+    "close": [],
+    "write": [
+      "buf"
+    ],
+    "send": []
+  },
+  "Nfsv4TcpServer": {
+    "start": [
+      "param",
+      "param"
+    ],
+    "constructor": [
+      "opts"
+    ],
+    "cleanup": [],
+    "stop": []
+  },
+  "ByteRangeLock": {
+    "constructor": [
+      "stateid",
+      "path",
+      "locktype",
+      "offset",
+      "length",
+      "lockOwnerKey"
+    ],
+    "overlaps": [
+      "offset",
+      "length"
+    ]
+  },
+  "ClientRecord": {
+    "constructor": [
+      "principal",
+      "verifier",
+      "clientIdString",
+      "callback",
+      "callbackIdent",
+      "setclientidConfirm",
+      "param",
+      "param"
+    ]
+  },
+  "FilesystemStats": {
+    "constructor": [
+      "spaceAvail",
+      "spaceFree",
+      "spaceTotal",
+      "filesAvail",
+      "filesFree",
+      "filesTotal"
+    ]
+  },
+  "LockOwnerState": {
+    "constructor": [
+      "clientid",
+      "owner",
+      "seqid",
+      "param",
+      "lastResponse",
+      "lastRequestKey"
+    ]
+  },
+  "LockStateid": {
+    "constructor": [
+      "other",
+      "seqid",
+      "lockOwnerKey",
+      "path"
+    ],
+    "toStateid": [],
+    "incrementAndGetStateid": []
+  },
+  "Nfsv4OperationsNotImpl": {
+    "ACCESS": [
+      "request",
+      "ctx"
+    ],
+    "CLOSE": [
+      "request",
+      "ctx"
+    ],
+    "COMMIT": [
+      "request",
+      "ctx"
+    ],
+    "CREATE": [
+      "request",
+      "ctx"
+    ],
+    "DELEGPURGE": [
+      "request",
+      "ctx"
+    ],
+    "DELEGRETURN": [
+      "request",
+      "ctx"
+    ],
+    "GETATTR": [
+      "request",
+      "ctx"
+    ],
+    "GETFH": [
+      "request",
+      "ctx"
+    ],
+    "LINK": [
+      "request",
+      "ctx"
+    ],
+    "LOCK": [
+      "request",
+      "ctx"
+    ],
+    "LOCKT": [
+      "request",
+      "ctx"
+    ],
+    "LOCKU": [
+      "request",
+      "ctx"
+    ],
+    "LOOKUP": [
+      "request",
+      "ctx"
+    ],
+    "LOOKUPP": [
+      "request",
+      "ctx"
+    ],
+    "NVERIFY": [
+      "request",
+      "ctx"
+    ],
+    "OPEN": [
+      "request",
+      "ctx"
+    ],
+    "OPENATTR": [
+      "request",
+      "ctx"
+    ],
+    "OPEN_CONFIRM": [
+      "request",
+      "ctx"
+    ],
+    "OPEN_DOWNGRADE": [
+      "request",
+      "ctx"
+    ],
+    "PUTFH": [
+      "request",
+      "ctx"
+    ],
+    "PUTPUBFH": [
+      "request",
+      "ctx"
+    ],
+    "PUTROOTFH": [
+      "request",
+      "ctx"
+    ],
+    "READ": [
+      "request",
+      "ctx"
+    ],
+    "READDIR": [
+      "request",
+      "ctx"
+    ],
+    "READLINK": [
+      "request",
+      "ctx"
+    ],
+    "REMOVE": [
+      "request",
+      "ctx"
+    ],
+    "RENAME": [
+      "request",
+      "ctx"
+    ],
+    "RENEW": [
+      "request",
+      "ctx"
+    ],
+    "RESTOREFH": [
+      "request",
+      "ctx"
+    ],
+    "SAVEFH": [
+      "request",
+      "ctx"
+    ],
+    "SECINFO": [
+      "request",
+      "ctx"
+    ],
+    "SETATTR": [
+      "request",
+      "ctx"
+    ],
+    "SETCLIENTID": [
+      "request",
+      "ctx"
+    ],
+    "SETCLIENTID_CONFIRM": [
+      "request",
+      "ctx"
+    ],
+    "VERIFY": [
+      "request",
+      "ctx"
+    ],
+    "WRITE": [
+      "request",
+      "ctx"
+    ],
+    "RELEASE_LOCKOWNER": [
+      "request",
+      "ctx"
+    ],
+    "ILLEGAL": [
+      "request",
+      "ctx"
+    ]
+  },
+  "OpenFileState": {
+    "constructor": [
+      "stateid",
+      "path",
+      "fd",
+      "shareAccess",
+      "shareDeny",
+      "openOwnerKey",
+      "seqid",
+      "confirmed"
+    ]
+  },
+  "OpenOwnerState": {
+    "constructor": [
+      "clientid",
+      "owner",
+      "seqid",
+      "param",
+      "lastResponse",
+      "lastRequestKey"
+    ]
+  },
+  "Nfsv4OperationsNode": {
+    "constructor": [
+      "opts"
+    ],
+    "findClientByIdString": [
+      "map",
+      "clientIdString"
+    ],
+    "enforceClientLimit": [],
+    "enforcePendingClientLimit": [],
+    "makeOpenOwnerKey": [
+      "clientid",
+      "owner"
+    ],
+    "validateSeqid": [
+      "requestSeqid",
+      "ownerSeqid"
+    ],
+    "renewClientLease": [
+      "clientid"
+    ],
+    "makeStateidKey": [
+      "stateid"
+    ],
+    "createStateid": [],
+    "canAccessFile": [
+      "path",
+      "shareAccess",
+      "shareDeny"
+    ],
+    "makeLockOwnerKey": [
+      "clientid",
+      "owner"
+    ],
+    "makeOpenRequestKey": [
+      "ownerKey",
+      "currentPath",
+      "request"
+    ],
+    "makeLockRequestKey": [
+      "lockOwnerKey",
+      "filePath",
+      "locktype",
+      "offset",
+      "length",
+      "seqid"
+    ],
+    "makeLockuRequestKey": [
+      "lockOwnerKey",
+      "stateid",
+      "offset",
+      "length",
+      "seqid"
+    ],
+    "makeLockKey": [
+      "stateid",
+      "offset",
+      "length"
+    ],
+    "makeLockStateidKey": [
+      "lockOwnerKey",
+      "path"
+    ],
+    "getOrCreateLockStateid": [
+      "lockOwnerKey",
+      "path"
+    ],
+    "findLockStateidByOther": [
+      "other"
+    ],
+    "hasConflictingLock": [
+      "path",
+      "locktype",
+      "offset",
+      "length",
+      "ownerKey"
+    ],
+    "SETCLIENTID": [
+      "request",
+      "ctx"
+    ],
+    "SETCLIENTID_CONFIRM": [
+      "request",
+      "ctx"
+    ],
+    "ILLEGAL": [
+      "request",
+      "ctx"
+    ],
+    "PUTROOTFH": [
+      "request",
+      "ctx"
+    ],
+    "PUTPUBFH": [
+      "request",
+      "ctx"
+    ],
+    "PUTFH": [
+      "request",
+      "ctx"
+    ],
+    "GETFH": [
+      "request",
+      "ctx"
+    ],
+    "RESTOREFH": [
+      "request",
+      "ctx"
+    ],
+    "SAVEFH": [
+      "request",
+      "ctx"
+    ],
+    "absolutePath": [
+      "path"
+    ],
+    "LOOKUP": [
+      "request",
+      "ctx"
+    ],
+    "LOOKUPP": [
+      "request",
+      "ctx"
+    ],
+    "GETATTR": [
+      "request",
+      "ctx"
+    ],
+    "ACCESS": [
+      "request",
+      "ctx"
+    ],
+    "READDIR": [
+      "request",
+      "ctx"
+    ],
+    "OPEN": [
+      "request",
+      "ctx"
+    ],
+    "OPENATTR": [
+      "request",
+      "ctx"
+    ],
+    "OPEN_CONFIRM": [
+      "request",
+      "ctx"
+    ],
+    "OPEN_DOWNGRADE": [
+      "request",
+      "ctx"
+    ],
+    "CLOSE": [
+      "request",
+      "ctx"
+    ],
+    "SECINFO": [
+      "request",
+      "ctx"
+    ],
+    "LOCK": [
+      "request",
+      "ctx"
+    ],
+    "LOCKT": [
+      "request",
+      "ctx"
+    ],
+    "LOCKU": [
+      "request",
+      "ctx"
+    ],
+    "RELEASE_LOCKOWNER": [
+      "request",
+      "ctx"
+    ],
+    "RENEW": [
+      "request",
+      "ctx"
+    ],
+    "READ": [
+      "request",
+      "ctx"
+    ],
+    "READLINK": [
+      "request",
+      "ctx"
+    ],
+    "REMOVE": [
+      "request",
+      "ctx"
+    ],
+    "RENAME": [
+      "request",
+      "ctx"
+    ],
+    "WRITE": [
+      "request",
+      "ctx"
+    ],
+    "DELEGPURGE": [
+      "request",
+      "ctx"
+    ],
+    "DELEGRETURN": [
+      "request",
+      "ctx"
+    ],
+    "COMMIT": [
+      "request",
+      "ctx"
+    ],
+    "CREATE": [
+      "request",
+      "ctx"
+    ],
+    "LINK": [
+      "request",
+      "ctx"
+    ],
+    "NVERIFY": [
+      "request",
+      "ctx"
+    ],
+    "SETATTR": [
+      "request",
+      "ctx"
+    ],
+    "VERIFY": [
+      "request",
+      "ctx"
+    ]
+  },
+  "encodeAttrs": [
+    "requestedAttrs",
+    "stats",
+    "path",
+    "fh",
+    "leaseTime",
+    "fsStats"
+  ],
+  "FileHandleMapper": {
+    "constructor": [
+      "stamp",
+      "dir"
+    ],
+    "decode": [
+      "fh"
+    ],
+    "encode": [
+      "path"
+    ],
+    "validate": [
+      "fh"
+    ],
+    "currentPath": [
+      "ctx"
+    ],
+    "savedPath": [
+      "ctx"
+    ],
+    "setCfh": [
+      "ctx",
+      "path"
+    ],
+    "remove": [
+      "path"
+    ],
+    "rename": [
+      "oldPath",
+      "newPath"
+    ]
+  },
+  "encodePathFh": [
+    "absolutePath"
+  ],
+  "decodePathFh": [
+    "fh"
+  ],
+  "isErrCode": [
+    "code",
+    "error"
+  ],
+  "normalizeNodeFsError": [
+    "err",
+    "logger"
+  ],
+  "toHex": [
+    "buffer"
+  ],
+  "getProcName": [
+    "proc"
+  ],
+  "getOpName": [
+    "op"
+  ],
+  "getOpNameFromRequest": [
+    "op"
+  ],
+  "Nfsv4Time": {
+    "constructor": [
+      "seconds",
+      "nseconds"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4SpecData": {
+    "constructor": [
+      "specdata1",
+      "specdata2"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4Fh": {
+    "constructor": [
+      "data"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4Verifier": {
+    "constructor": [
+      "data"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4Fsid": {
+    "constructor": [
+      "major",
+      "minor"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4Stateid": {
+    "decode": [
+      "xdr"
+    ],
+    "constructor": [
+      "seqid",
+      "other"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4ChangeInfo": {
+    "constructor": [
+      "atomic",
+      "before",
+      "after"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4SetTime": {
+    "constructor": [
+      "how",
+      "time"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4Bitmap": {
+    "constructor": [
+      "mask"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4Fattr": {
+    "constructor": [
+      "attrmask",
+      "attrVals"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4ClientAddr": {
+    "constructor": [
+      "rNetid",
+      "rAddr"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CbClient": {
+    "constructor": [
+      "cbProgram",
+      "cbLocation"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4ClientId": {
+    "constructor": [
+      "verifier",
+      "id"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenOwner": {
+    "constructor": [
+      "clientid",
+      "owner"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LockOwner": {
+    "constructor": [
+      "clientid",
+      "owner"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenToLockOwner": {
+    "constructor": [
+      "openSeqid",
+      "openStateid",
+      "lockSeqid",
+      "lockOwner"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4FsLocation": {
+    "constructor": [
+      "server",
+      "rootpath"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4FsLocations": {
+    "constructor": [
+      "fsRoot",
+      "locations"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4Ace": {
+    "constructor": [
+      "type",
+      "flag",
+      "accessMask",
+      "who"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4Acl": {
+    "constructor": [
+      "aces"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4SecInfo": {
+    "constructor": [
+      "flavor",
+      "flavorInfo"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CreateAttrs": {
+    "constructor": [
+      "createattrs"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CreateVerf": {
+    "constructor": [
+      "createverf"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CreateHow": {
+    "constructor": [
+      "mode",
+      "how"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenHow": {
+    "constructor": [
+      "opentype",
+      "how"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenClaimNull": {
+    "constructor": [
+      "file"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenClaimPrevious": {
+    "constructor": [
+      "delegateType"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenClaimDelegateCur": {
+    "constructor": [
+      "delegateStateid",
+      "file"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenClaimDelegatePrev": {
+    "constructor": [
+      "file"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenClaim": {
+    "constructor": [
+      "claimType",
+      "claim"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenReadDelegation": {
+    "constructor": [
+      "stateid",
+      "recall",
+      "permissions"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenWriteDelegation": {
+    "constructor": [
+      "stateid",
+      "recall",
+      "spaceLimit",
+      "permissions"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4OpenDelegation": {
+    "constructor": [
+      "delegationType",
+      "delegation"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4Entry": {
+    "constructor": [
+      "cookie",
+      "name",
+      "attrs",
+      "nextEntry"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LockNewOwner": {
+    "constructor": [
+      "openToLockOwner"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LockExistingOwner": {
+    "constructor": [
+      "lockStateid",
+      "lockSeqid"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4LockOwnerInfo": {
+    "constructor": [
+      "newLockOwner",
+      "owner"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CreateTypeLink": {
+    "constructor": [
+      "linkdata"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CreateTypeDevice": {
+    "constructor": [
+      "devdata"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CreateTypeVoid": {
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4CreateType": {
+    "constructor": [
+      "type",
+      "objtype"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4RpcSecGssInfo": {
+    "constructor": [
+      "oid",
+      "qop",
+      "service"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "Nfsv4SecInfoFlavor": {
+    "constructor": [
+      "flavor",
+      "flavorInfo"
+    ],
+    "encode": [
+      "xdr"
+    ]
+  },
+  "RespDecoder": {
+    "constructor": [
+      "param"
+    ],
+    "read": [
+      "uint8"
+    ],
+    "decode": [
+      "uint8"
+    ],
+    "val": [],
+    "readAny": [],
+    "readLength": [],
+    "readCmd": [],
+    "readBool": [],
+    "readInt": [],
+    "readFloat": [],
+    "readBigint": [],
+    "readStrSimple": [],
+    "readStrBulk": [],
+    "readAsciiAsStrBulk": [],
+    "readStrVerbatim": [],
+    "readErrSimple": [],
+    "readErrBulk": [],
+    "readArr": [],
+    "readSet": [],
+    "readObj": [],
+    "skipN": [
+      "n"
+    ],
+    "skipAny": [],
+    "skipBool": [],
+    "skipInt": [],
+    "skipFloat": [],
+    "skipBigint": [],
+    "skipStrSimple": [],
+    "skipStrBulk": [],
+    "skipStrVerbatim": [],
+    "skipErrSimple": [],
+    "skipErrBulk": [],
+    "skipArr": [],
+    "skipSet": [],
+    "skipObj": []
+  },
+  "RespEncoder": {
+    "constructor": [
+      "param"
+    ],
+    "encode": [
+      "value"
+    ],
+    "encodeToSlice": [
+      "value"
+    ],
+    "writeAny": [
+      "value"
+    ],
+    "writeLength": [
+      "length"
+    ],
+    "encodeCmd": [
+      "args"
+    ],
+    "writeCmd": [
+      "args"
+    ],
+    "encodeCmdUtf8": [
+      "args"
+    ],
+    "writeCmdUtf8": [
+      "args"
+    ],
+    "writeArgUtf8": [
+      "arg"
+    ],
+    "writeNull": [],
+    "writeNullStr": [],
+    "writeNullArr": [],
+    "writeBoolean": [
+      "bool"
+    ],
+    "writeNumber": [
+      "num"
+    ],
+    "writeBigInt": [
+      "int"
+    ],
+    "writeInteger": [
+      "int"
+    ],
+    "writeUInteger": [
+      "uint"
+    ],
+    "writeFloat": [
+      "float"
+    ],
+    "writeBin": [
+      "buf"
+    ],
+    "writeBinHdr": [
+      "length"
+    ],
+    "writeStr": [
+      "str"
+    ],
+    "writeStrHdr": [
+      "length"
+    ],
+    "writeSimpleStr": [
+      "str"
+    ],
+    "writeSimpleStrAscii": [
+      "str"
+    ],
+    "writeBulkStr": [
+      "str"
+    ],
+    "writeBulkStrAscii": [
+      "str"
+    ],
+    "writeAsciiStr": [
+      "str"
+    ],
+    "writeVerbatimStr": [
+      "encoding",
+      "str"
+    ],
+    "writeErr": [
+      "str"
+    ],
+    "writeSimpleErr": [
+      "str"
+    ],
+    "writeBulkErr": [
+      "str"
+    ],
+    "writeArr": [
+      "arr"
+    ],
+    "writeArrHdr": [
+      "length"
+    ],
+    "writeObj": [
+      "obj"
+    ],
+    "writeObjHdr": [
+      "length"
+    ],
+    "writeAttr": [
+      "obj"
+    ],
+    "writeSet": [
+      "set"
+    ],
+    "writePush": [
+      "elements"
+    ],
+    "writeUnknown": [
+      "value"
+    ],
+    "writeUndef": [],
+    "writeRn": [],
+    "writeStartStr": [],
+    "writeStrChunk": [
+      "str"
+    ],
+    "writeEndStr": [],
+    "writeStartBin": [],
+    "writeBinChunk": [
+      "buf"
+    ],
+    "writeEndBin": [],
+    "writeStartArr": [],
+    "writeArrChunk": [
+      "item"
+    ],
+    "writeEndArr": [],
+    "writeStartObj": [],
+    "writeObjChunk": [
+      "key",
+      "value"
+    ],
+    "writeEndObj": []
+  },
+  "RespEncoderLegacy": {
+    "writeAny": [
+      "value"
+    ],
+    "writeNumber": [
+      "num"
+    ],
+    "writeStr": [
+      "str"
+    ],
+    "writeNull": [],
+    "writeErr": [
+      "str"
+    ],
+    "writeSet": [
+      "set"
+    ],
+    "writeArr": [
+      "arr"
+    ],
+    "writeObj": [
+      "obj"
+    ]
+  },
+  "RespStreamingDecoder": {
+    "constructor": [],
+    "tryUtf8": [
+      "value"
+    ],
+    "push": [
+      "uint8"
+    ],
+    "read": [],
+    "readCmd": [],
+    "skip": []
+  },
+  "RespPush": {
+    "constructor": [
+      "val"
+    ]
+  },
+  "RespAttributes": {
+    "constructor": [
+      "val"
+    ]
+  },
+  "RespVerbatimString": {
+    "constructor": [
+      "val"
+    ]
+  },
+  "RmRecordDecoder": {
+    "constructor": [],
+    "push": [
+      "uint8"
+    ],
+    "readRecord": []
+  },
+  "RmRecordEncoder": {
+    "constructor": [
+      "param"
+    ],
+    "encodeHdr": [
+      "fin",
+      "length"
+    ],
+    "encodeRecord": [
+      "record"
+    ],
+    "writeHdr": [
+      "fin",
+      "length"
+    ],
+    "writeRecord": [
+      "record"
+    ],
+    "writeFragment": [
+      "record",
+      "offset",
+      "length",
+      "fin"
+    ],
+    "startRecord": [],
+    "endRecord": [
+      "rmHeaderPosition"
+    ]
+  },
+  "RpcMessageDecoder": {
+    "decodeMessage": [
+      "reader"
+    ],
+    "readOpaqueAuth": [
+      "reader"
+    ]
+  },
+  "RpcMessageEncoder": {
+    "constructor": [
+      "param"
+    ],
+    "encodeCall": [
+      "xid",
+      "prog",
+      "vers",
+      "proc",
+      "cred",
+      "verf",
+      "params"
+    ],
+    "encodeAcceptedReply": [
+      "xid",
+      "verf",
+      "acceptStat",
+      "mismatchInfo",
+      "results"
+    ],
+    "encodeRejectedReply": [
+      "xid",
+      "rejectStat",
+      "mismatchInfo",
+      "authStat"
+    ],
+    "encodeMessage": [
+      "msg"
+    ],
+    "writeMessage": [
+      "msg"
+    ],
+    "writeCall": [
+      "xid",
+      "prog",
+      "vers",
+      "proc",
+      "cred",
+      "verf",
+      "params"
+    ],
+    "writeAcceptedReply": [
+      "xid",
+      "verf",
+      "acceptStat",
+      "mismatchInfo",
+      "results"
+    ],
+    "writeRejectedReply": [
+      "xid",
+      "rejectStat",
+      "mismatchInfo",
+      "authStat"
+    ],
+    "writeOpaqueAuth": [
+      "auth"
+    ]
+  },
+  "RpcDecodingError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "RpcEncodingError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "RpcOpaqueAuth": {
+    "constructor": [
+      "flavor",
+      "body"
+    ]
+  },
+  "RpcMismatchInfo": {
+    "constructor": [
+      "low",
+      "high"
+    ]
+  },
+  "RpcCallMessage": {
+    "constructor": [
+      "xid",
+      "rpcvers",
+      "prog",
+      "vers",
+      "proc",
+      "cred",
+      "verf",
+      "param"
+    ]
+  },
+  "RpcAcceptedReplyMessage": {
+    "constructor": [
+      "xid",
+      "verf",
+      "stat",
+      "mismatchInfo",
+      "param"
+    ]
+  },
+  "RpcRejectedReplyMessage": {
+    "constructor": [
+      "xid",
+      "stat",
+      "mismatchInfo",
+      "authStat"
+    ]
+  },
+  "SshDecoder": {
+    "constructor": [
+      "param"
+    ],
+    "read": [
+      "uint8"
+    ],
+    "decode": [
+      "uint8"
+    ],
+    "readAny": [],
+    "readBoolean": [],
+    "readByte": [],
+    "readUint32": [],
+    "readUint64": [],
+    "readBinStr": [],
+    "readStr": [],
+    "readAsciiStr": [],
+    "readMpint": [],
+    "readNameList": [],
+    "readBin": []
+  },
+  "SshEncoder": {
+    "constructor": [
+      "writer"
+    ],
+    "encode": [
+      "value"
+    ],
+    "writeUnknown": [
+      "value"
+    ],
+    "writeAny": [
+      "value"
+    ],
+    "writeNull": [],
+    "writeBoolean": [
+      "bool"
+    ],
+    "writeByte": [
+      "byte"
+    ],
+    "writeUint32": [
+      "uint"
+    ],
+    "writeUint64": [
+      "uint"
+    ],
+    "writeBinStr": [
+      "data"
+    ],
+    "writeStr": [
+      "str"
+    ],
+    "writeAsciiStr": [
+      "str"
+    ],
+    "writeMpint": [
+      "mpint"
+    ],
+    "writeNameList": [
+      "names"
+    ],
+    "writeNumber": [
+      "num"
+    ],
+    "writeInteger": [
+      "int"
+    ],
+    "writeUInteger": [
+      "uint"
+    ],
+    "writeFloat": [
+      "float"
+    ],
+    "writeBin": [
+      "buf"
+    ],
+    "writeArr": [
+      "arr"
+    ],
+    "writeObj": [
+      "obj"
+    ]
+  },
+  "UbjsonDecoder": {
+    "constructor": [],
+    "read": [
+      "uint8"
+    ],
+    "decode": [
+      "uint8"
+    ],
+    "readAny": []
+  },
+  "UbjsonEncoder": {
+    "constructor": [
+      "writer"
+    ],
+    "encode": [
+      "value"
+    ],
+    "writeAny": [
+      "value"
+    ],
+    "writeNull": [],
+    "writeUndef": [],
+    "writeBoolean": [
+      "bool"
+    ],
+    "writeNumber": [
+      "num"
+    ],
+    "writeInteger": [
+      "int"
+    ],
+    "writeUInteger": [
+      "uint"
+    ],
+    "writeFloat": [
+      "float"
+    ],
+    "writeBigInt": [
+      "int"
+    ],
+    "writeBin": [
+      "buf"
+    ],
+    "writeStr": [
+      "str"
+    ],
+    "writeAsciiStr": [
+      "str"
+    ],
+    "writeArr": [
+      "arr"
+    ],
+    "writeObj": [
+      "obj"
+    ],
+    "writeKey": [
+      "str"
+    ],
+    "writeStartStr": [],
+    "writeStrChunk": [
+      "str"
+    ],
+    "writeEndStr": [],
+    "writeStartBin": [],
+    "writeBinChunk": [
+      "buf"
+    ],
+    "writeEndBin": [],
+    "writeStartArr": [],
+    "writeArrChunk": [
+      "item"
+    ],
+    "writeEndArr": [],
+    "writeStartObj": [],
+    "writeObjChunk": [
+      "key",
+      "value"
+    ],
+    "writeEndObj": []
+  },
+  "CompressionTable": {
+    "constructor": [],
+    "create": [
+      "value"
+    ],
+    "addInteger": [
+      "int"
+    ],
+    "addLiteral": [
+      "value"
+    ],
+    "walk": [
+      "value"
+    ],
+    "finalize": [],
+    "getIndex": [
+      "value"
+    ],
+    "getTable": [],
+    "compress": [
+      "value"
+    ]
+  },
+  "DecompressionTable": {
+    "constructor": [],
+    "importTable": [
+      "rleTable"
+    ],
+    "getLiteral": [
+      "index"
+    ],
+    "decompress": [
+      "value"
+    ]
+  },
+  "toDataUri": [
+    "buf",
+    "params"
+  ],
+  "WsFrameDecoder": {
+    "constructor": [],
+    "push": [
+      "uint8"
+    ],
+    "readFrameHeader": [],
+    "readFrameData": [
+      "frame",
+      "remaining",
+      "dst",
+      "pos"
+    ],
+    "copyFrameData": [
+      "frame",
+      "dst",
+      "pos"
+    ],
+    "readCloseFrameData": [
+      "frame"
+    ]
+  },
+  "WsFrameEncoder": {
+    "constructor": [
+      "param"
+    ],
+    "encodePing": [
+      "data"
+    ],
+    "encodePong": [
+      "data"
+    ],
+    "encodeClose": [
+      "reason",
+      "param"
+    ],
+    "encodeHdr": [
+      "fin",
+      "opcode",
+      "length",
+      "mask"
+    ],
+    "encodeDataMsgHdrFast": [
+      "length"
+    ],
+    "writePing": [
+      "data"
+    ],
+    "writePong": [
+      "data"
+    ],
+    "writeClose": [
+      "reason",
+      "param"
+    ],
+    "writeHdr": [
+      "fin",
+      "opcode",
+      "length",
+      "mask"
+    ],
+    "writeDataMsgHdrFast": [
+      "length"
+    ],
+    "writeBufXor": [
+      "buf",
+      "mask"
+    ]
+  },
+  "WsFrameDecodingError": {
+    "constructor": []
+  },
+  "WsFrameEncodingError": {
+    "constructor": []
+  },
+  "WsFrameHeader": {
+    "constructor": [
+      "fin",
+      "opcode",
+      "length",
+      "mask"
+    ]
+  },
+  "WsPingFrame": {
+    "constructor": [
+      "fin",
+      "opcode",
+      "length",
+      "mask",
+      "data"
+    ]
+  },
+  "WsPongFrame": {
+    "constructor": [
+      "fin",
+      "opcode",
+      "length",
+      "mask",
+      "data"
+    ]
+  },
+  "WsCloseFrame": {
+    "constructor": [
+      "fin",
+      "opcode",
+      "length",
+      "mask",
+      "code",
+      "reason"
+    ]
+  },
+  "XdrDecoder": {
+    "constructor": [
+      "param"
+    ],
+    "read": [
+      "uint8"
+    ],
+    "decode": [
+      "uint8"
+    ],
+    "readAny": [],
+    "readVoid": [],
+    "readBoolean": [],
+    "readInt": [],
+    "readUnsignedInt": [],
+    "readHyper": [],
+    "readUnsignedHyper": [],
+    "readFloat": [],
+    "readDouble": [],
+    "readQuadruple": [],
+    "readOpaque": [
+      "size"
+    ],
+    "readVarlenOpaque": [],
+    "readString": [],
+    "readEnum": [],
+    "readArray": [
+      "size",
+      "elementReader"
+    ],
+    "readVarlenArray": [
+      "elementReader"
+    ]
+  },
+  "XdrEncoder": {
+    "constructor": [
+      "writer"
+    ],
+    "encode": [
+      "value"
+    ],
+    "writeUnknown": [
+      "value"
+    ],
+    "writeAny": [
+      "value"
+    ],
+    "writeVoid": [],
+    "writeNull": [],
+    "writeBoolean": [
+      "bool"
+    ],
+    "writeInt": [
+      "int"
+    ],
+    "writeUnsignedInt": [
+      "uint"
+    ],
+    "writeHyper": [
+      "hyper"
+    ],
+    "writeUnsignedHyper": [
+      "uhyper"
+    ],
+    "writeFloat": [
+      "float"
+    ],
+    "writeDouble": [
+      "double"
+    ],
+    "writeQuadruple": [
+      "quad"
+    ],
+    "writeOpaque": [
+      "data"
+    ],
+    "writeVarlenOpaque": [
+      "data"
+    ],
+    "writeStr": [
+      "str"
+    ],
+    "writeArr": [
+      "arr"
+    ],
+    "writeObj": [
+      "obj"
+    ],
+    "writeNumber": [
+      "num"
+    ],
+    "writeInteger": [
+      "int"
+    ],
+    "writeUInteger": [
+      "uint"
+    ],
+    "writeBin": [
+      "buf"
+    ],
+    "writeAsciiStr": [
+      "str"
+    ]
+  },
+  "XdrSchemaDecoder": {
+    "constructor": [
+      "param"
+    ],
+    "decode": [
+      "data",
+      "schema"
+    ],
+    "readValue": [
+      "schema"
+    ],
+    "readEnum": [
+      "schema"
+    ],
+    "readOpaque": [
+      "schema"
+    ],
+    "readVarlenOpaque": [
+      "schema"
+    ],
+    "readString": [
+      "schema"
+    ],
+    "readArray": [
+      "schema"
+    ],
+    "readVarlenArray": [
+      "schema"
+    ],
+    "readStruct": [
+      "schema"
+    ],
+    "readUnion": [
+      "schema"
+    ],
+    "readOptional": [
+      "schema"
+    ]
+  },
+  "XdrSchemaEncoder": {
+    "constructor": [
+      "writer"
+    ],
+    "encode": [
+      "value",
+      "schema"
+    ],
+    "writeVoid": [
+      "schema"
+    ],
+    "writeInt": [
+      "value",
+      "schema"
+    ],
+    "writeUnsignedInt": [
+      "value",
+      "schema"
+    ],
+    "writeBoolean": [
+      "value",
+      "schema"
+    ],
+    "writeHyper": [
+      "value",
+      "schema"
+    ],
+    "writeUnsignedHyper": [
+      "value",
+      "schema"
+    ],
+    "writeFloat": [
+      "value",
+      "schema"
+    ],
+    "writeDouble": [
+      "value",
+      "schema"
+    ],
+    "writeQuadruple": [
+      "value",
+      "schema"
+    ],
+    "writeEnum": [
+      "value",
+      "schema"
+    ],
+    "writeOpaque": [
+      "value",
+      "schema"
+    ],
+    "writeVarlenOpaque": [
+      "value",
+      "schema"
+    ],
+    "writeString": [
+      "value",
+      "schema"
+    ],
+    "writeArray": [
+      "value",
+      "schema"
+    ],
+    "writeVarlenArray": [
+      "value",
+      "schema"
+    ],
+    "writeStruct": [
+      "value",
+      "schema"
+    ],
+    "writeUnion": [
+      "value",
+      "schema",
+      "discriminant"
+    ],
+    "writeOptional": [
+      "value",
+      "schema"
+    ],
+    "writeNumber": [
+      "value",
+      "schema"
+    ],
+    "writeValue": [
+      "value",
+      "schema"
+    ],
+    "validateSchemaType": [
+      "schema",
+      "expectedType"
+    ],
+    "writeDiscriminant": [
+      "discriminant"
+    ]
+  },
+  "XdrSchemaValidator": {
+    "validateSchema": [
+      "schema"
+    ],
+    "validateValue": [
+      "value",
+      "schema"
+    ],
+    "validateSchemaInternal": [
+      "schema"
+    ],
+    "validateEnumSchema": [
+      "schema"
+    ],
+    "validateOpaqueSchema": [
+      "schema"
+    ],
+    "validateVarlenOpaqueSchema": [
+      "schema"
+    ],
+    "validateStringSchema": [
+      "schema"
+    ],
+    "validateArraySchema": [
+      "schema"
+    ],
+    "validateVarlenArraySchema": [
+      "schema"
+    ],
+    "validateStructSchema": [
+      "schema"
+    ],
+    "validateUnionSchema": [
+      "schema"
+    ],
+    "validateOptionalSchema": [
+      "schema"
+    ],
+    "validateConstantSchema": [
+      "schema"
+    ],
+    "validateValueInternal": [
+      "value",
+      "schema"
+    ]
+  },
+  "XdrUnion": {
+    "constructor": [
+      "discriminant",
+      "value"
+    ]
+  }
+}

@@ -1,0 +1,627 @@
+{
+  "Language": {
+    "constructor": [
+      "data",
+      "parser",
+      "param",
+      "param"
+    ],
+    "isActiveAt": [
+      "state",
+      "pos",
+      "param"
+    ],
+    "findRegions": [
+      "state"
+    ],
+    "allowsNesting": []
+  },
+  "LRLanguage": {
+    "constructor": [
+      "data",
+      "parser",
+      "name"
+    ],
+    "define": [
+      "spec"
+    ],
+    "configure": [
+      "options",
+      "name"
+    ],
+    "allowsNesting": []
+  },
+  "DocInput": {
+    "constructor": [
+      "doc"
+    ],
+    "length": [],
+    "syncTo": [
+      "pos"
+    ],
+    "chunk": [
+      "pos"
+    ],
+    "lineChunks": [],
+    "read": [
+      "from",
+      "to"
+    ]
+  },
+  "ParseContext": {
+    "constructor": [
+      "parser",
+      "state",
+      "param",
+      "tree",
+      "treeLen",
+      "viewport",
+      "skipped",
+      "scheduleOn"
+    ],
+    "create": [
+      "parser",
+      "state",
+      "viewport"
+    ],
+    "startParse": [],
+    "work": [
+      "until",
+      "upto"
+    ],
+    "takeTree": [],
+    "withContext": [
+      "f"
+    ],
+    "withoutTempSkipped": [
+      "fragments"
+    ],
+    "changes": [
+      "changes",
+      "newState"
+    ],
+    "updateViewport": [
+      "viewport"
+    ],
+    "reset": [],
+    "skipUntilInView": [
+      "from",
+      "to"
+    ],
+    "getSkippingParser": [
+      "until"
+    ],
+    "isDone": [
+      "upto"
+    ],
+    "get": []
+  },
+  "LanguageSupport": {
+    "constructor": [
+      "language",
+      "param"
+    ]
+  },
+  "LanguageDescription": {
+    "constructor": [
+      "name",
+      "alias",
+      "extensions",
+      "filename",
+      "loadFunc",
+      "param"
+    ],
+    "load": [],
+    "of": [
+      "spec"
+    ],
+    "matchFilename": [
+      "descs",
+      "filename"
+    ],
+    "matchLanguageName": [
+      "descs",
+      "name",
+      "param"
+    ]
+  },
+  "IndentContext": {
+    "constructor": [
+      "state",
+      "param"
+    ],
+    "lineAt": [
+      "pos",
+      "param"
+    ],
+    "textAfterPos": [
+      "pos",
+      "param"
+    ],
+    "column": [
+      "pos",
+      "param"
+    ],
+    "countColumn": [
+      "line",
+      "param"
+    ],
+    "lineIndent": [
+      "pos",
+      "param"
+    ],
+    "simulatedBreak": []
+  },
+  "TreeIndentContext": {
+    "constructor": [
+      "base",
+      "pos",
+      "context"
+    ],
+    "node": [],
+    "create": [
+      "base",
+      "pos",
+      "context"
+    ],
+    "textAfter": [],
+    "baseIndent": [],
+    "baseIndentFor": [
+      "node"
+    ],
+    "continue": []
+  },
+  "HighlightStyle": {
+    "constructor": [
+      "specs",
+      "options"
+    ],
+    "define": [
+      "specs",
+      "options"
+    ]
+  },
+  "StringStream": {
+    "constructor": [
+      "string",
+      "tabSize",
+      "indentUnit",
+      "overrideIndent"
+    ],
+    "eol": [],
+    "sol": [],
+    "peek": [],
+    "next": [],
+    "eat": [
+      "match"
+    ],
+    "eatWhile": [
+      "match"
+    ],
+    "eatSpace": [],
+    "skipToEnd": [],
+    "skipTo": [
+      "ch"
+    ],
+    "backUp": [
+      "n"
+    ],
+    "column": [],
+    "indentation": [],
+    "match": [
+      "pattern",
+      "consume",
+      "caseInsensitive"
+    ],
+    "current": []
+  },
+  "StreamLanguage": {
+    "constructor": [
+      "parser"
+    ],
+    "define": [
+      "spec"
+    ],
+    "getIndent": [
+      "cx"
+    ],
+    "allowsNesting": []
+  },
+  "defineLanguageFacet": [
+    "baseData"
+  ],
+  "explore": [
+    "tree",
+    "from"
+  ],
+  "topNodeAt": [
+    "state",
+    "pos",
+    "side"
+  ],
+  "syntaxTree": [
+    "state"
+  ],
+  "ensureSyntaxTree": [
+    "state",
+    "upto",
+    "param"
+  ],
+  "syntaxTreeAvailable": [
+    "state",
+    "param"
+  ],
+  "forceParsing": [
+    "view",
+    "param",
+    "param"
+  ],
+  "syntaxParserRunning": [
+    "view"
+  ],
+  "cutFragments": [
+    "fragments",
+    "from",
+    "to"
+  ],
+  "LanguageState": {
+    "constructor": [
+      "context"
+    ],
+    "apply": [
+      "tr"
+    ],
+    "init": [
+      "state"
+    ]
+  },
+  "requestIdle": [
+    "callback"
+  ],
+  "getIndentUnit": [
+    "state"
+  ],
+  "indentString": [
+    "state",
+    "cols"
+  ],
+  "getIndentation": [
+    "context",
+    "pos"
+  ],
+  "indentRange": [
+    "state",
+    "from",
+    "to"
+  ],
+  "syntaxIndentation": [
+    "cx",
+    "ast",
+    "pos"
+  ],
+  "indentFor": [
+    "stack",
+    "cx",
+    "pos"
+  ],
+  "ignoreClosed": [
+    "cx"
+  ],
+  "indentStrategy": [
+    "tree"
+  ],
+  "topIndent": [],
+  "isParent": [
+    "parent",
+    "of"
+  ],
+  "bracketedAligned": [
+    "context"
+  ],
+  "delimitedIndent": [
+    "param"
+  ],
+  "delimitedStrategy": [
+    "context",
+    "align",
+    "units",
+    "closing",
+    "closedAt"
+  ],
+  "flatIndent": [
+    "context"
+  ],
+  "continuedIndent": [
+    "param"
+  ],
+  "indentOnInput": [],
+  "foldInside": [
+    "node"
+  ],
+  "syntaxFolding": [
+    "state",
+    "start",
+    "end"
+  ],
+  "isUnfinished": [
+    "node"
+  ],
+  "foldable": [
+    "state",
+    "lineStart",
+    "lineEnd"
+  ],
+  "mapRange": [
+    "range",
+    "mapping"
+  ],
+  "selectedLines": [
+    "view"
+  ],
+  "clearTouchedFolds": [
+    "folded",
+    "from",
+    "param"
+  ],
+  "foldedRanges": [
+    "state"
+  ],
+  "findFold": [
+    "state",
+    "from",
+    "to"
+  ],
+  "foldExists": [
+    "folded",
+    "from",
+    "to"
+  ],
+  "maybeEnable": [
+    "state",
+    "other"
+  ],
+  "foldCode": [
+    "view"
+  ],
+  "unfoldCode": [
+    "view"
+  ],
+  "announceFold": [
+    "view",
+    "range",
+    "param"
+  ],
+  "foldAll": [
+    "view"
+  ],
+  "unfoldAll": [
+    "view"
+  ],
+  "foldableContainer": [
+    "view",
+    "lineBlock"
+  ],
+  "toggleFold": [
+    "view"
+  ],
+  "codeFolding": [
+    "config"
+  ],
+  "widgetToDOM": [
+    "view",
+    "prepared"
+  ],
+  "onclick": [
+    "event"
+  ],
+  "PreparedFoldWidget": {
+    "constructor": [
+      "value"
+    ],
+    "eq": [
+      "other"
+    ],
+    "toDOM": [
+      "view"
+    ]
+  },
+  "FoldMarker": {
+    "constructor": [
+      "config",
+      "open"
+    ],
+    "eq": [
+      "other"
+    ],
+    "toDOM": [
+      "view"
+    ]
+  },
+  "foldGutter": [
+    "param"
+  ],
+  "def": [
+    "spec"
+  ],
+  "getHighlighters": [
+    "state"
+  ],
+  "syntaxHighlighting": [
+    "highlighter",
+    "options"
+  ],
+  "highlightingFor": [
+    "state",
+    "tags",
+    "scope"
+  ],
+  "TreeHighlighter": {
+    "constructor": [
+      "view"
+    ],
+    "update": [
+      "update"
+    ],
+    "buildDeco": [
+      "view",
+      "highlighters"
+    ]
+  },
+  "defaultRenderMatch": [
+    "match"
+  ],
+  "bracketMatching": [
+    "param"
+  ],
+  "matchingNodes": [
+    "node",
+    "dir",
+    "brackets"
+  ],
+  "findHandle": [
+    "node"
+  ],
+  "matchBrackets": [
+    "state",
+    "pos",
+    "dir",
+    "param"
+  ],
+  "matchMarkedBrackets": [
+    "_state",
+    "_pos",
+    "dir",
+    "token",
+    "handle",
+    "matching",
+    "brackets"
+  ],
+  "matchPlainBrackets": [
+    "state",
+    "pos",
+    "dir",
+    "tree",
+    "tokenType",
+    "maxScanDistance",
+    "brackets"
+  ],
+  "countCol": [
+    "string",
+    "end",
+    "tabSize",
+    "param",
+    "param"
+  ],
+  "cased": [
+    "str"
+  ],
+  "fullParser": [
+    "spec"
+  ],
+  "defaultCopyState": [
+    "state"
+  ],
+  "findState": [
+    "lang",
+    "tree",
+    "off",
+    "startPos",
+    "before"
+  ],
+  "cutTree": [
+    "lang",
+    "tree",
+    "from",
+    "to",
+    "inside"
+  ],
+  "findStartInFragments": [
+    "lang",
+    "fragments",
+    "startPos",
+    "endPos",
+    "editorState"
+  ],
+  "Parse": {
+    "constructor": [
+      "lang",
+      "input",
+      "fragments",
+      "ranges"
+    ],
+    "advance": [],
+    "stopAt": [
+      "pos"
+    ],
+    "lineAfter": [
+      "pos"
+    ],
+    "nextLine": [],
+    "skipGapsTo": [
+      "pos",
+      "offset",
+      "side"
+    ],
+    "moveRangeIndex": [],
+    "emitToken": [
+      "id",
+      "from",
+      "to",
+      "offset"
+    ],
+    "parseLine": [
+      "context"
+    ],
+    "finishChunk": [],
+    "finish": []
+  },
+  "readToken": [
+    "token",
+    "stream",
+    "state"
+  ],
+  "TokenTable": {
+    "constructor": [
+      "extra"
+    ],
+    "resolve": [
+      "tag"
+    ]
+  },
+  "warnForPart": [
+    "part",
+    "msg"
+  ],
+  "createTokenType": [
+    "extra",
+    "tagStr"
+  ],
+  "docID": [
+    "data",
+    "lang"
+  ],
+  "buildForLine": [
+    "line"
+  ],
+  "textHasRTL": [
+    "text"
+  ],
+  "changeAddsRTL": [
+    "change"
+  ],
+  "bidiIsolates": [
+    "param"
+  ],
+  "access": [
+    "view"
+  ],
+  "buildDeco": [
+    "view",
+    "tree",
+    "always"
+  ],
+  "clipRTLLines": [
+    "ranges",
+    "doc"
+  ]
+}
