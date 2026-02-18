@@ -7,7 +7,7 @@ const traverse = require("@babel/traverse").default;
 
 const OUTPUT_DIR = "lib_db";
 const PROGRESS_FILE = "progress.json";
-const BATCH_SIZE = 200; // safer for GitHub runner
+const BATCH_SIZE = 700; // safer for GitHub runner
 const MAX_SECONDS = 4 * 60 * 60;
 
 if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR);
