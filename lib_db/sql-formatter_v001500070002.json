@@ -1,0 +1,604 @@
+{
+  "createDialect": [
+    "options"
+  ],
+  "dialectFromOptions": [
+    "dialectOptions"
+  ],
+  "processDialectFormatOptions": [
+    "options"
+  ],
+  "expandPhrases": [
+    "phrases"
+  ],
+  "expandSinglePhrase": [
+    "phrase"
+  ],
+  "stripExtraWhitespace": [
+    "text"
+  ],
+  "parsePhrase": [
+    "text"
+  ],
+  "parseAlteration": [
+    "text",
+    "index",
+    "expectClosing"
+  ],
+  "parseConcatenation": [
+    "text",
+    "index"
+  ],
+  "parseTerm": [
+    "text",
+    "index"
+  ],
+  "parseMandatoryBlock": [
+    "text",
+    "index"
+  ],
+  "parseOptionalBlock": [
+    "text",
+    "index"
+  ],
+  "buildCombinations": [
+    "node"
+  ],
+  "stringCombinations": [
+    "xs",
+    "ys"
+  ],
+  "ExpressionFormatter": {
+    "constructor": [
+      "param"
+    ],
+    "format": [
+      "nodes"
+    ],
+    "formatNode": [
+      "node"
+    ],
+    "formatNodeWithoutComments": [
+      "node"
+    ],
+    "formatFunctionCall": [
+      "node"
+    ],
+    "formatParameterizedDataType": [
+      "node"
+    ],
+    "formatArraySubscript": [
+      "node"
+    ],
+    "formatPropertyAccess": [
+      "node"
+    ],
+    "formatParenthesis": [
+      "node"
+    ],
+    "formatBetweenPredicate": [
+      "node"
+    ],
+    "formatCaseExpression": [
+      "node"
+    ],
+    "formatCaseWhen": [
+      "node"
+    ],
+    "formatCaseElse": [
+      "node"
+    ],
+    "formatClause": [
+      "node"
+    ],
+    "isOnelineClause": [
+      "node"
+    ],
+    "formatClauseInIndentedStyle": [
+      "node"
+    ],
+    "formatClauseInOnelineStyle": [
+      "node"
+    ],
+    "formatClauseInTabularStyle": [
+      "node"
+    ],
+    "formatSetOperation": [
+      "node"
+    ],
+    "formatLimitClause": [
+      "node"
+    ],
+    "formatAllColumnsAsterisk": [
+      "_node"
+    ],
+    "formatLiteral": [
+      "node"
+    ],
+    "formatIdentifier": [
+      "node"
+    ],
+    "formatParameter": [
+      "node"
+    ],
+    "formatOperator": [
+      "param"
+    ],
+    "formatComma": [
+      "_node"
+    ],
+    "withComments": [
+      "node",
+      "fn"
+    ],
+    "formatComments": [
+      "comments"
+    ],
+    "formatLineComment": [
+      "node"
+    ],
+    "formatBlockComment": [
+      "node"
+    ],
+    "isMultilineBlockComment": [
+      "node"
+    ],
+    "isDocComment": [
+      "comment"
+    ],
+    "splitBlockComment": [
+      "comment"
+    ],
+    "formatSubExpression": [
+      "nodes"
+    ],
+    "formatInlineExpression": [
+      "nodes"
+    ],
+    "formatKeywordNode": [
+      "node"
+    ],
+    "formatJoin": [
+      "node"
+    ],
+    "formatKeyword": [
+      "node"
+    ],
+    "formatLogicalOperator": [
+      "node"
+    ],
+    "formatDataType": [
+      "node"
+    ],
+    "showKw": [
+      "node"
+    ],
+    "showNonTabularKw": [
+      "node"
+    ],
+    "showFunctionKw": [
+      "node"
+    ],
+    "showNonTabularFunctionKw": [
+      "node"
+    ],
+    "showIdentifier": [
+      "node"
+    ],
+    "showDataType": [
+      "node"
+    ]
+  },
+  "Formatter": {
+    "constructor": [
+      "dialect",
+      "cfg"
+    ],
+    "format": [
+      "query"
+    ],
+    "parse": [
+      "query"
+    ],
+    "formatAst": [
+      "statements"
+    ],
+    "formatStatement": [
+      "statement"
+    ]
+  },
+  "Indentation": {
+    "constructor": [
+      "indent"
+    ],
+    "getSingleIndent": [],
+    "getLevel": [],
+    "increaseTopLevel": [],
+    "increaseBlockLevel": [],
+    "decreaseTopLevel": [],
+    "decreaseBlockLevel": []
+  },
+  "InlineLayout": {
+    "constructor": [
+      "expressionWidth"
+    ],
+    "add": [
+      "param"
+    ],
+    "addToLength": [
+      "item"
+    ]
+  },
+  "InlineLayoutError": {},
+  "Layout": {
+    "constructor": [
+      "indentation"
+    ],
+    "add": [
+      "param"
+    ],
+    "trimHorizontalWhitespace": [],
+    "trimWhitespace": [],
+    "addNewline": [
+      "newline"
+    ],
+    "addIndentation": [],
+    "toString": [],
+    "getLayoutItems": [],
+    "itemToString": [
+      "item"
+    ]
+  },
+  "isHorizontalWhitespace": [
+    "item"
+  ],
+  "isRemovableWhitespace": [
+    "item"
+  ],
+  "Params": {
+    "constructor": [
+      "params"
+    ],
+    "get": [
+      "param"
+    ],
+    "getPositionalParameterIndex": [],
+    "setPositionalParameterIndex": [
+      "i"
+    ]
+  },
+  "indentString": [
+    "cfg"
+  ],
+  "isTabularStyle": [
+    "cfg"
+  ],
+  "toTabularFormat": [
+    "tokenText",
+    "indentStyle"
+  ],
+  "isTabularToken": [
+    "type"
+  ],
+  "postProcess": [
+    "tokens"
+  ],
+  "detectArraySubscripts": [
+    "tokens"
+  ],
+  "combineParameterizedTypes": [
+    "tokens"
+  ],
+  "formatTypeDefToken": [
+    "key"
+  ],
+  "findClosingAngleBracketIndex": [
+    "tokens",
+    "startIndex"
+  ],
+  "NestedComment": {
+    "constructor": [],
+    "exec": [
+      "input"
+    ],
+    "matchSection": [
+      "regex",
+      "input"
+    ]
+  },
+  "Tokenizer": {
+    "constructor": [
+      "cfg",
+      "dialectName"
+    ],
+    "tokenize": [
+      "input",
+      "paramTypesOverrides"
+    ],
+    "buildRulesBeforeParams": [
+      "cfg"
+    ],
+    "buildRulesAfterParams": [
+      "cfg"
+    ],
+    "buildParamRules": [
+      "cfg",
+      "paramTypesOverrides"
+    ],
+    "validRules": [
+      "rules"
+    ]
+  },
+  "toCanonical": [
+    "v"
+  ],
+  "TokenizerEngine": {
+    "constructor": [
+      "rules",
+      "dialectName"
+    ],
+    "tokenize": [
+      "input"
+    ],
+    "createParseError": [],
+    "dialectInfo": [],
+    "getWhitespace": [],
+    "getNextToken": [],
+    "match": [
+      "rule"
+    ]
+  },
+  "disambiguateTokens": [
+    "tokens"
+  ],
+  "propertyNameKeywordToIdent": [
+    "token",
+    "i",
+    "tokens"
+  ],
+  "funcNameToIdent": [
+    "token",
+    "i",
+    "tokens"
+  ],
+  "dataTypeToParameterizedDataType": [
+    "token",
+    "i",
+    "tokens"
+  ],
+  "identToArrayIdent": [
+    "token",
+    "i",
+    "tokens"
+  ],
+  "dataTypeToArrayKeyword": [
+    "token",
+    "i",
+    "tokens"
+  ],
+  "prevNonCommentToken": [
+    "tokens",
+    "index"
+  ],
+  "nextNonCommentToken": [
+    "tokens",
+    "index",
+    "param"
+  ],
+  "isOpenParen": [
+    "t"
+  ],
+  "isOpenBracket": [
+    "t"
+  ],
+  "isComment": [
+    "t"
+  ],
+  "lineColFromIndex": [
+    "source",
+    "index"
+  ],
+  "lineComment": [
+    "lineCommentTypes"
+  ],
+  "parenthesis": [
+    "kind",
+    "param"
+  ],
+  "operator": [
+    "operators"
+  ],
+  "rejectIdentCharsPattern": [
+    "param"
+  ],
+  "reservedWord": [
+    "reservedKeywords",
+    "param"
+  ],
+  "parameter": [
+    "paramTypes",
+    "pattern"
+  ],
+  "buildQStringPatterns": [],
+  "singleQuotePattern": [
+    "quoteTypes"
+  ],
+  "variable": [
+    "varTypes"
+  ],
+  "stringPattern": [
+    "quoteTypes"
+  ],
+  "string": [
+    "quoteTypes"
+  ],
+  "identifier": [
+    "param"
+  ],
+  "identifierPattern": [
+    "param"
+  ],
+  "escapeRegExp": [
+    "string"
+  ],
+  "patternToRegex": [
+    "pattern"
+  ],
+  "toCaseInsensitivePattern": [
+    "prefix"
+  ],
+  "withDashes": [
+    "pattern"
+  ],
+  "prefixesPattern": [
+    "param"
+  ],
+  "createEofToken": [
+    "index"
+  ],
+  "testToken": [
+    "compareToken"
+  ],
+  "isReserved": [
+    "type"
+  ],
+  "isLogicalOperator": [
+    "type"
+  ],
+  "LexerAdapter": {
+    "constructor": [
+      "tokenize"
+    ],
+    "reset": [
+      "chunk",
+      "_info"
+    ],
+    "next": [],
+    "save": [],
+    "formatError": [
+      "token"
+    ],
+    "has": [
+      "name"
+    ]
+  },
+  "createParser": [
+    "tokenizer"
+  ],
+  "id": [
+    "d"
+  ],
+  "unwrap": [
+    "param"
+  ],
+  "toKeywordNode": [
+    "token"
+  ],
+  "toDataTypeNode": [
+    "token"
+  ],
+  "addComments": [
+    "node",
+    "param"
+  ],
+  "addCommentsToArray": [
+    "nodes",
+    "param"
+  ],
+  "format": [
+    "query",
+    "param"
+  ],
+  "formatDialect": [
+    "query",
+    "_a"
+  ],
+  "dedupe": [
+    "arr"
+  ],
+  "last": [
+    "arr"
+  ],
+  "sortByLengthDesc": [
+    "strings"
+  ],
+  "maxLength": [
+    "strings"
+  ],
+  "equalizeWhitespace": [
+    "s"
+  ],
+  "isMultiline": [
+    "text"
+  ],
+  "ConfigError": {},
+  "validateConfig": [
+    "cfg"
+  ],
+  "validateParams": [
+    "params"
+  ],
+  "validateParamTypes": [
+    "paramTypes"
+  ],
+  "I": [
+    "E"
+  ],
+  "O": [
+    "E",
+    "T"
+  ],
+  "R": [
+    "A"
+  ],
+  "A": [
+    "E",
+    "T"
+  ],
+  "e": [],
+  "S": [
+    "E",
+    "T",
+    "S"
+  ],
+  "N": [
+    "E",
+    "T",
+    "R"
+  ],
+  "t": [
+    "param"
+  ],
+  "L": [
+    "E"
+  ],
+  "s": [
+    "E",
+    "param"
+  ],
+  "a": [
+    "E"
+  ],
+  "D": [
+    "E",
+    "T"
+  ],
+  "C": [
+    "E"
+  ],
+  "_": [
+    "E",
+    "param"
+  ],
+  "E": [
+    "T",
+    "R",
+    "A"
+  ],
+  "T": [
+    "E",
+    "T",
+    "R",
+    "A"
+  ]
+}

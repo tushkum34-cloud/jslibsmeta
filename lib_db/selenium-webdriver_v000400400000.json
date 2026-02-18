@@ -1,0 +1,3298 @@
+{
+  "AddInterceptParameters": {
+    "constructor": [
+      "phases"
+    ],
+    "urlPattern": [
+      "pattern"
+    ],
+    "urlPatterns": [
+      "patterns"
+    ],
+    "urlStringPattern": [
+      "pattern"
+    ],
+    "urlStringPatterns": [
+      "patterns"
+    ],
+    "asMap": []
+  },
+  "ArgumentValue": {
+    "constructor": [
+      "value"
+    ],
+    "asMap": []
+  },
+  "Browser": {
+    "constructor": [
+      "driver"
+    ],
+    "init": [],
+    "createUserContext": [],
+    "getUserContexts": [],
+    "removeUserContext": [
+      "userContext"
+    ],
+    "getClientWindows": []
+  },
+  "getBrowserInstance": [
+    "driver"
+  ],
+  "Locator": {
+    "Type": [],
+    "constructor": [
+      "type",
+      "value",
+      "param",
+      "param",
+      "param"
+    ],
+    "css": [
+      "value"
+    ],
+    "xpath": [
+      "value"
+    ],
+    "innerText": [
+      "value",
+      "param",
+      "param",
+      "param"
+    ],
+    "toMap": []
+  },
+  "BrowsingContext": {
+    "constructor": [
+      "driver"
+    ],
+    "id": [],
+    "init": [
+      "param"
+    ],
+    "create": [
+      "type",
+      "param"
+    ],
+    "navigate": [
+      "url",
+      "param"
+    ],
+    "getTree": [
+      "param"
+    ],
+    "getTopLevelContexts": [],
+    "close": [],
+    "printPage": [
+      "param"
+    ],
+    "captureScreenshot": [
+      "param"
+    ],
+    "captureBoxScreenshot": [
+      "x",
+      "y",
+      "width",
+      "height"
+    ],
+    "captureElementScreenshot": [
+      "sharedId",
+      "param"
+    ],
+    "checkErrorInScreenshot": [
+      "response"
+    ],
+    "activate": [],
+    "handleUserPrompt": [
+      "param",
+      "param"
+    ],
+    "reload": [
+      "param",
+      "param"
+    ],
+    "setViewport": [
+      "width",
+      "height",
+      "param"
+    ],
+    "traverseHistory": [
+      "delta"
+    ],
+    "forward": [],
+    "back": [],
+    "locateNodes": [
+      "locator",
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "locateNode": [
+      "locator",
+      "param",
+      "param",
+      "param"
+    ],
+    "locateElement": [
+      "locator"
+    ],
+    "locateElements": [
+      "locator"
+    ]
+  },
+  "NavigateResult": {
+    "constructor": [
+      "url",
+      "navigationId"
+    ],
+    "url": [],
+    "navigationId": []
+  },
+  "PrintResult": {
+    "constructor": [
+      "data"
+    ],
+    "data": []
+  },
+  "getBrowsingContextInstance": [
+    "driver",
+    "param"
+  ],
+  "BrowsingContextInspector": {
+    "constructor": [
+      "driver",
+      "browsingContextIds"
+    ],
+    "init": [],
+    "onBrowsingContextCreated": [
+      "callback"
+    ],
+    "onBrowsingContextDestroyed": [
+      "callback"
+    ],
+    "onNavigationStarted": [
+      "callback"
+    ],
+    "onFragmentNavigated": [
+      "callback"
+    ],
+    "onUserPromptClosed": [
+      "callback"
+    ],
+    "onUserPromptOpened": [
+      "callback"
+    ],
+    "onDomContentLoaded": [
+      "callback"
+    ],
+    "onBrowsingContextLoaded": [
+      "callback"
+    ],
+    "subscribeAndHandleEvent": [
+      "eventType",
+      "callback"
+    ],
+    "_on": [
+      "callback"
+    ],
+    "close": []
+  },
+  "BrowsingContextInfo": {
+    "constructor": [
+      "id",
+      "url",
+      "children",
+      "parentBrowsingContext"
+    ],
+    "id": [],
+    "url": [],
+    "children": [],
+    "parentBrowsingContext": []
+  },
+  "NavigationInfo": {
+    "constructor": [
+      "browsingContextId",
+      "navigationId",
+      "timestamp",
+      "url"
+    ]
+  },
+  "UserPromptOpened": {
+    "constructor": [
+      "browsingContextId",
+      "type",
+      "message"
+    ]
+  },
+  "UserPromptClosed": {
+    "constructor": [
+      "browsingContextId",
+      "accepted",
+      "param"
+    ]
+  },
+  "CaptureScreenshotParameters": {
+    "origin": [
+      "origin"
+    ],
+    "imageFormat": [
+      "type",
+      "param"
+    ],
+    "clipRectangle": [
+      "clipRectangle"
+    ],
+    "asMap": []
+  },
+  "ClientWindowInfo": {
+    "constructor": [
+      "param"
+    ],
+    "fromJson": [
+      "json"
+    ]
+  },
+  "ClipRectangle": {
+    "clipType": [],
+    "constructor": [
+      "type"
+    ],
+    "type": [],
+    "asMap": []
+  },
+  "ElementClipRectangle": {
+    "constructor": [
+      "sharedId",
+      "param"
+    ],
+    "asMap": []
+  },
+  "BoxClipRectangle": {
+    "constructor": [
+      "x",
+      "y",
+      "width",
+      "height"
+    ],
+    "asMap": []
+  },
+  "ContinueRequestParameters": {
+    "constructor": [
+      "request"
+    ],
+    "body": [
+      "value"
+    ],
+    "cookies": [
+      "cookieHeaders"
+    ],
+    "headers": [
+      "headers"
+    ],
+    "method": [
+      "method"
+    ],
+    "url": [
+      "url"
+    ],
+    "asMap": []
+  },
+  "ContinueResponseParameters": {
+    "constructor": [
+      "request"
+    ],
+    "cookies": [
+      "cookieHeaders"
+    ],
+    "credentials": [
+      "username",
+      "password"
+    ],
+    "headers": [
+      "headers"
+    ],
+    "reasonPhrase": [
+      "reasonPhrase"
+    ],
+    "statusCode": [
+      "statusCode"
+    ],
+    "asMap": []
+  },
+  "CookieFilter": {
+    "name": [
+      "name"
+    ],
+    "value": [
+      "value"
+    ],
+    "domain": [
+      "domain"
+    ],
+    "path": [
+      "path"
+    ],
+    "size": [
+      "size"
+    ],
+    "httpOnly": [
+      "httpOnly"
+    ],
+    "secure": [
+      "secure"
+    ],
+    "sameSite": [
+      "sameSite"
+    ],
+    "expiry": [
+      "expiry"
+    ],
+    "asMap": []
+  },
+  "CreateContextParameters": {
+    "referenceContext": [
+      "id"
+    ],
+    "background": [
+      "background"
+    ],
+    "userContext": [
+      "userContext"
+    ],
+    "asMap": []
+  },
+  "EvaluateResultSuccess": {
+    "constructor": [
+      "realmId",
+      "value"
+    ]
+  },
+  "EvaluateResultException": {
+    "constructor": [
+      "realmId",
+      "exceptionDetails"
+    ]
+  },
+  "ExceptionDetails": {
+    "constructor": [
+      "exceptionDetails"
+    ]
+  },
+  "Permission": {
+    "constructor": [
+      "driver"
+    ],
+    "init": [],
+    "setPermission": [
+      "permissionDescriptor",
+      "state",
+      "origin",
+      "param"
+    ]
+  },
+  "getPermissionInstance": [
+    "driver"
+  ],
+  "FilterBy": {
+    "constructor": [
+      "level"
+    ],
+    "logLevel": [
+      "level"
+    ],
+    "getLevel": []
+  },
+  "Index": {
+    "id": [],
+    "connected": [],
+    "events": [],
+    "browsingContexts": [],
+    "constructor": [
+      "_webSocketUrl"
+    ],
+    "socket": [],
+    "isConnected": [],
+    "status": [],
+    "waitForConnection": [],
+    "send": [
+      "params"
+    ],
+    "subscribe": [
+      "events",
+      "browsingContexts"
+    ],
+    "unsubscribe": [
+      "events",
+      "browsingContexts"
+    ],
+    "close": []
+  },
+  "listener": [
+    "data"
+  ],
+  "toArray": [
+    "arg"
+  ],
+  "closeWebSocket": [
+    "callback"
+  ],
+  "Input": {
+    "constructor": [
+      "driver"
+    ],
+    "init": [],
+    "perform": [
+      "browsingContextId",
+      "actions"
+    ],
+    "release": [
+      "browsingContextId"
+    ],
+    "setFiles": [
+      "browsingContextId",
+      "element",
+      "files"
+    ]
+  },
+  "updateActions": [
+    "actions"
+  ],
+  "getInputInstance": [
+    "driver"
+  ],
+  "BaseLogEntry": {
+    "constructor": [
+      "level",
+      "source",
+      "text",
+      "timeStamp",
+      "stackTrace"
+    ],
+    "level": [],
+    "text": [],
+    "timeStamp": [],
+    "stackTrace": [],
+    "source": []
+  },
+  "GenericLogEntry": {
+    "constructor": [
+      "level",
+      "source",
+      "text",
+      "timeStamp",
+      "type",
+      "stackTrace"
+    ],
+    "type": []
+  },
+  "ConsoleLogEntry": {
+    "constructor": [
+      "level",
+      "source",
+      "text",
+      "timeStamp",
+      "type",
+      "method",
+      "args",
+      "stackTrace"
+    ],
+    "method": [],
+    "args": []
+  },
+  "JavascriptLogEntry": {
+    "constructor": [
+      "level",
+      "source",
+      "text",
+      "timeStamp",
+      "type",
+      "stackTrace"
+    ]
+  },
+  "LogInspector": {
+    "bidi": [],
+    "ws": [],
+    "constructor": [
+      "driver",
+      "browsingContextIds"
+    ],
+    "init": [],
+    "addCallback": [
+      "eventType",
+      "callback"
+    ],
+    "removeCallback": [
+      "id"
+    ],
+    "invokeCallbacks": [
+      "eventType",
+      "data"
+    ],
+    "invokeCallbacksWithFilter": [
+      "eventType",
+      "data",
+      "filterLevel"
+    ],
+    "onConsoleEntry": [
+      "callback",
+      "param"
+    ],
+    "onJavascriptLog": [
+      "callback",
+      "param"
+    ],
+    "onJavascriptException": [
+      "callback"
+    ],
+    "onLog": [
+      "callback",
+      "param"
+    ],
+    "close": []
+  },
+  "getLogInspectorInstance": [
+    "driver",
+    "browsingContextIds"
+  ],
+  "Network": {
+    "constructor": [
+      "driver"
+    ],
+    "getAuthCredentials": [
+      "uri"
+    ],
+    "addAuthenticationHandler": [
+      "username",
+      "password",
+      "param"
+    ],
+    "removeAuthenticationHandler": [
+      "id"
+    ],
+    "clearAuthenticationHandlers": []
+  },
+  "getNetworkInstance": [
+    "driver",
+    "param"
+  ],
+  "NetworkInspector": {
+    "constructor": [
+      "driver",
+      "browsingContextIds"
+    ],
+    "init": [],
+    "beforeRequestSent": [
+      "callback"
+    ],
+    "responseStarted": [
+      "callback"
+    ],
+    "responseCompleted": [
+      "callback"
+    ],
+    "authRequired": [
+      "callback"
+    ],
+    "subscribeAndHandleEvent": [
+      "eventType",
+      "callback"
+    ],
+    "_on": [
+      "callback"
+    ]
+  },
+  "getNetworkInspectorInstance": [
+    "driver",
+    "param"
+  ],
+  "BytesValue": {
+    "Type": [],
+    "constructor": [
+      "type",
+      "value"
+    ],
+    "type": [],
+    "value": [],
+    "asMap": []
+  },
+  "Header": {
+    "constructor": [
+      "name",
+      "value"
+    ],
+    "name": [],
+    "value": [],
+    "asMap": []
+  },
+  "Cookie": {
+    "constructor": [
+      "name",
+      "value",
+      "domain",
+      "path",
+      "size",
+      "httpOnly",
+      "secure",
+      "sameSite",
+      "expires"
+    ],
+    "name": [],
+    "value": [],
+    "domain": [],
+    "path": [],
+    "expires": [],
+    "size": [],
+    "httpOnly": [],
+    "secure": [],
+    "sameSite": []
+  },
+  "FetchTimingInfo": {
+    "constructor": [
+      "originTime",
+      "requestTime",
+      "redirectStart",
+      "redirectEnd",
+      "fetchStart",
+      "dnsStart",
+      "dnsEnd",
+      "connectStart",
+      "connectEnd",
+      "tlsStart",
+      "requestStart",
+      "responseStart",
+      "responseEnd"
+    ],
+    "originTime": [],
+    "requestTime": [],
+    "redirectStart": [],
+    "redirectEnd": [],
+    "fetchStart": [],
+    "dnsStart": [],
+    "dnsEnd": [],
+    "connectStart": [],
+    "connectEnd": [],
+    "tlsStart": [],
+    "requestStart": [],
+    "responseStart": [],
+    "responseEnd": []
+  },
+  "RequestData": {
+    "constructor": [
+      "request",
+      "url",
+      "method",
+      "headers",
+      "cookies",
+      "headersSize",
+      "bodySize",
+      "timings"
+    ],
+    "request": [],
+    "url": [],
+    "method": [],
+    "headers": [],
+    "cookies": [],
+    "headersSize": [],
+    "bodySize": [],
+    "timings": []
+  },
+  "BaseParameters": {
+    "constructor": [
+      "id",
+      "navigation",
+      "redirectCount",
+      "request",
+      "timestamp"
+    ],
+    "id": [],
+    "navigation": [],
+    "redirectCount": [],
+    "request": [],
+    "timestamp": []
+  },
+  "Initiator": {
+    "constructor": [
+      "type",
+      "columnNumber",
+      "lineNumber",
+      "stackTrace",
+      "request"
+    ],
+    "type": [],
+    "columnNumber": [],
+    "lineNumber": [],
+    "stackTrace": [],
+    "request": []
+  },
+  "BeforeRequestSent": {
+    "constructor": [
+      "id",
+      "navigation",
+      "redirectCount",
+      "request",
+      "timestamp",
+      "initiator"
+    ],
+    "initiator": []
+  },
+  "FetchError": {
+    "constructor": [
+      "id",
+      "navigation",
+      "redirectCount",
+      "request",
+      "timestamp",
+      "errorText"
+    ],
+    "errorText": []
+  },
+  "ResponseData": {
+    "constructor": [
+      "url",
+      "protocol",
+      "status",
+      "statusText",
+      "fromCache",
+      "headers",
+      "mimeType",
+      "bytesReceived",
+      "headersSize",
+      "bodySize",
+      "content"
+    ],
+    "url": [],
+    "protocol": [],
+    "status": [],
+    "statusText": [],
+    "fromCache": [],
+    "headers": [],
+    "mimeType": [],
+    "bytesReceived": [],
+    "headerSize": [],
+    "bodySize": [],
+    "content": []
+  },
+  "ResponseStarted": {
+    "constructor": [
+      "id",
+      "navigation",
+      "redirectCount",
+      "request",
+      "timestamp",
+      "response"
+    ],
+    "response": []
+  },
+  "PartialCookie": {
+    "constructor": [
+      "name",
+      "value",
+      "domain"
+    ],
+    "path": [
+      "path"
+    ],
+    "size": [
+      "size"
+    ],
+    "httpOnly": [
+      "httpOnly"
+    ],
+    "secure": [
+      "secure"
+    ],
+    "sameSite": [
+      "sameSite"
+    ],
+    "expiry": [
+      "expiry"
+    ],
+    "asMap": []
+  },
+  "PartitionDescriptor": {
+    "constructor": [
+      "type"
+    ]
+  },
+  "BrowsingContextPartitionDescriptor": {
+    "constructor": [
+      "context"
+    ],
+    "asMap": []
+  },
+  "StorageKeyPartitionDescriptor": {
+    "constructor": [],
+    "userContext": [
+      "userContext"
+    ],
+    "sourceOrigin": [
+      "sourceOrigin"
+    ],
+    "asMap": []
+  },
+  "PartitionKey": {
+    "constructor": [
+      "userContext",
+      "sourceOrigin"
+    ],
+    "userContext": [],
+    "sourceOrigin": []
+  },
+  "LocalValue": {
+    "constructor": [
+      "type",
+      "param"
+    ],
+    "createStringValue": [
+      "value"
+    ],
+    "createNumberValue": [
+      "value"
+    ],
+    "createSpecialNumberValue": [
+      "value"
+    ],
+    "createUndefinedValue": [],
+    "createNullValue": [],
+    "createBooleanValue": [
+      "value"
+    ],
+    "createBigIntValue": [
+      "value"
+    ],
+    "createArrayValue": [
+      "value"
+    ],
+    "createDateValue": [
+      "value"
+    ],
+    "createMapValue": [
+      "map"
+    ],
+    "createObjectValue": [
+      "object"
+    ],
+    "createRegularExpressionValue": [
+      "value"
+    ],
+    "createSetValue": [
+      "value"
+    ],
+    "createChannelValue": [
+      "value"
+    ],
+    "createReferenceValue": [
+      "handle",
+      "sharedId"
+    ],
+    "getArgument": [
+      "argument"
+    ],
+    "asMap": []
+  },
+  "RemoteValue": {
+    "constructor": [
+      "remoteValue"
+    ],
+    "deserializeValue": [
+      "value",
+      "type"
+    ]
+  },
+  "ReferenceValue": {
+    "constructor": [
+      "handle",
+      "sharedId"
+    ],
+    "asMap": []
+  },
+  "RegExpValue": {
+    "constructor": [
+      "pattern",
+      "param"
+    ]
+  },
+  "SerializationOptions": {
+    "constructor": [
+      "param",
+      "param",
+      "param"
+    ]
+  },
+  "ChannelValue": {
+    "constructor": [
+      "channel",
+      "param",
+      "param"
+    ]
+  },
+  "ProvideResponseParameters": {
+    "constructor": [
+      "request"
+    ],
+    "body": [
+      "value"
+    ],
+    "cookies": [
+      "cookieHeaders"
+    ],
+    "headers": [
+      "headers"
+    ],
+    "reasonPhrase": [
+      "reasonPhrase"
+    ],
+    "statusCode": [
+      "statusCode"
+    ],
+    "asMap": []
+  },
+  "RealmInfo": {
+    "constructor": [
+      "realmId",
+      "origin",
+      "realmType"
+    ],
+    "fromJson": [
+      "input"
+    ]
+  },
+  "WindowRealmInfo": {
+    "constructor": [
+      "realmId",
+      "origin",
+      "realmType",
+      "browsingContext",
+      "param"
+    ]
+  },
+  "ScriptManager": {
+    "constructor": [
+      "driver"
+    ],
+    "addCallback": [
+      "eventType",
+      "callback"
+    ],
+    "removeCallback": [
+      "id"
+    ],
+    "invokeCallbacks": [
+      "eventType",
+      "data"
+    ],
+    "init": [
+      "browsingContextIds"
+    ],
+    "disownRealmScript": [
+      "realmId",
+      "handles"
+    ],
+    "disownBrowsingContextScript": [
+      "browsingContextId",
+      "handles",
+      "param"
+    ],
+    "callFunctionInRealm": [
+      "realmId",
+      "functionDeclaration",
+      "awaitPromise",
+      "param",
+      "param",
+      "param"
+    ],
+    "callFunctionInBrowsingContext": [
+      "browsingContextId",
+      "functionDeclaration",
+      "awaitPromise",
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "evaluateFunctionInRealm": [
+      "realmId",
+      "expression",
+      "awaitPromise",
+      "param"
+    ],
+    "evaluateFunctionInBrowsingContext": [
+      "browsingContextId",
+      "expression",
+      "awaitPromise",
+      "param",
+      "param"
+    ],
+    "addPreloadScript": [
+      "functionDeclaration",
+      "param",
+      "param"
+    ],
+    "removePreloadScript": [
+      "script"
+    ],
+    "getCallFunctionParams": [
+      "targetType",
+      "id",
+      "sandbox",
+      "functionDeclaration",
+      "awaitPromise",
+      "param",
+      "param",
+      "param"
+    ],
+    "getEvaluateParams": [
+      "targetType",
+      "id",
+      "sandbox",
+      "expression",
+      "awaitPromise",
+      "param"
+    ],
+    "createEvaluateResult": [
+      "response"
+    ],
+    "realmInfoMapper": [
+      "realms"
+    ],
+    "getAllRealms": [],
+    "getRealmsByType": [
+      "type"
+    ],
+    "getRealmsInBrowsingContext": [
+      "browsingContext"
+    ],
+    "getRealmsInBrowsingContextByType": [
+      "browsingContext",
+      "type"
+    ],
+    "onMessage": [
+      "callback"
+    ],
+    "onRealmCreated": [
+      "callback"
+    ],
+    "onRealmDestroyed": [
+      "callback"
+    ],
+    "subscribeAndHandleEvent": [
+      "eventType",
+      "callback"
+    ],
+    "close": []
+  },
+  "getScriptManagerInstance": [
+    "browsingContextId",
+    "driver"
+  ],
+  "Message": {
+    "constructor": [
+      "channel",
+      "data",
+      "source"
+    ],
+    "channel": [],
+    "data": [],
+    "source": []
+  },
+  "Source": {
+    "constructor": [
+      "source"
+    ],
+    "browsingContextId": [],
+    "realmId": []
+  },
+  "Storage": {
+    "constructor": [
+      "driver"
+    ],
+    "init": [],
+    "getCookies": [
+      "param",
+      "param"
+    ],
+    "setCookie": [
+      "cookie",
+      "param"
+    ],
+    "deleteCookies": [
+      "param",
+      "param"
+    ]
+  },
+  "getStorageInstance": [
+    "driver"
+  ],
+  "UrlPattern": {
+    "protocol": [
+      "protocol"
+    ],
+    "hostname": [
+      "hostname"
+    ],
+    "port": [
+      "port"
+    ],
+    "pathname": [
+      "pathname"
+    ],
+    "search": [
+      "search"
+    ],
+    "asMap": []
+  },
+  "ServiceBuilder": {
+    "constructor": [
+      "opt_exe"
+    ]
+  },
+  "Options": {
+    "constructor": [
+      "param"
+    ],
+    "setTechnologyPreview": [
+      "useTechnologyPreview"
+    ],
+    "enableLogging": []
+  },
+  "Driver": {
+    "createSession": [
+      "options"
+    ]
+  },
+  "createExecutor": [
+    "serverUrl"
+  ],
+  "configureExecutor": [
+    "executor"
+  ],
+  "checkArg": [
+    "arg"
+  ],
+  "Extensions": {
+    "constructor": [],
+    "length": [],
+    "add": [
+      "param"
+    ]
+  },
+  "getBinaryPaths": [
+    "capabilities"
+  ],
+  "getArgs": [
+    "options"
+  ],
+  "getBinary": [],
+  "binaryPaths": [
+    "args"
+  ],
+  "logOutput": [
+    "output"
+  ],
+  "CDPConnection": {
+    "constructor": [
+      "wsConnection"
+    ],
+    "execute": [
+      "method",
+      "params",
+      "callback"
+    ],
+    "send": [
+      "method",
+      "params"
+    ]
+  },
+  "HttpResponse": {
+    "constructor": [
+      "param"
+    ],
+    "addHeaders": [
+      "header",
+      "value"
+    ],
+    "headers": [],
+    "status": [],
+    "body": [],
+    "method": []
+  },
+  "AddonFormatError": {
+    "constructor": [
+      "msg"
+    ]
+  },
+  "installExtension": [
+    "extension",
+    "dir"
+  ],
+  "Profile": {
+    "constructor": [],
+    "addExtensions": [
+      "paths"
+    ]
+  },
+  "buildProfile": [
+    "template",
+    "extensions"
+  ],
+  "findInProgramFiles": [
+    "file"
+  ],
+  "Channel": {
+    "constructor": [
+      "darwin",
+      "win32"
+    ],
+    "locate": []
+  },
+  "getRequestOptions": [
+    "aUrl"
+  ],
+  "HttpClient": {
+    "constructor": [
+      "serverUrl",
+      "opt_agent",
+      "opt_proxy",
+      "param"
+    ],
+    "keepAlive": [
+      "value"
+    ],
+    "send": [
+      "httpRequest"
+    ]
+  },
+  "sendRequest": [
+    "options",
+    "onOk",
+    "onError",
+    "opt_data",
+    "opt_proxy",
+    "opt_retries"
+  ],
+  "shouldRetryRequest": [
+    "retries",
+    "err"
+  ],
+  "isRetryableNetworkError": [
+    "err"
+  ],
+  "getStatus": [
+    "url"
+  ],
+  "CancellationError": {},
+  "waitForServer": [
+    "url",
+    "timeout",
+    "opt_cancelToken"
+  ],
+  "resolve": [],
+  "reject": [
+    "err"
+  ],
+  "checkServerStatus": [],
+  "onError": [],
+  "waitForUrl": [
+    "url",
+    "timeout",
+    "opt_cancelToken"
+  ],
+  "testUrl": [],
+  "onResponse": [
+    "response"
+  ],
+  "createServiceFromCapabilities": [
+    "capabilities"
+  ],
+  "startSeleniumServer": [
+    "jar"
+  ],
+  "ensureFileDetectorsAreEnabled": [
+    "ctor"
+  ],
+  "ThenableWebDriver": {
+    "createSession": [
+      "param"
+    ]
+  },
+  "createDriver": [
+    "ctor",
+    "param"
+  ],
+  "Builder": {
+    "constructor": [],
+    "disableEnvironmentOverrides": [],
+    "usingServer": [
+      "url"
+    ],
+    "getServerUrl": [],
+    "usingWebDriverProxy": [
+      "proxy"
+    ],
+    "getWebDriverProxy": [],
+    "usingHttpAgent": [
+      "agent"
+    ],
+    "getHttpAgent": [],
+    "withCapabilities": [
+      "capabilities"
+    ],
+    "getCapabilities": [],
+    "setCapability": [
+      "key",
+      "value"
+    ],
+    "forBrowser": [
+      "name",
+      "opt_version",
+      "opt_platform"
+    ],
+    "setProxy": [
+      "config"
+    ],
+    "setLoggingPrefs": [
+      "prefs"
+    ],
+    "setAlertBehavior": [
+      "behavior"
+    ],
+    "setChromeOptions": [
+      "options"
+    ],
+    "getChromeOptions": [],
+    "setChromeService": [
+      "service"
+    ],
+    "setFirefoxOptions": [
+      "options"
+    ],
+    "getFirefoxOptions": [],
+    "setFirefoxService": [
+      "service"
+    ],
+    "setIeOptions": [
+      "options"
+    ],
+    "setIeService": [
+      "service"
+    ],
+    "setEdgeOptions": [
+      "options"
+    ],
+    "setEdgeService": [
+      "service"
+    ],
+    "setSafariOptions": [
+      "options"
+    ],
+    "getSafariOptions": [],
+    "build": []
+  },
+  "checkOptions": [
+    "caps",
+    "key",
+    "optionType",
+    "setMethod"
+  ],
+  "Result": {
+    "constructor": [
+      "code",
+      "signal"
+    ],
+    "toString": []
+  },
+  "Command": {
+    "constructor": [
+      "name"
+    ],
+    "getName": [],
+    "setParameter": [
+      "name",
+      "value"
+    ],
+    "setParameters": [
+      "parameters"
+    ],
+    "getParameter": [
+      "key"
+    ],
+    "getParameters": []
+  },
+  "exec": [
+    "command",
+    "opt_options"
+  ],
+  "onProcessExit": [],
+  "killCommand": [
+    "signal"
+  ],
+  "checkedCall": [
+    "fn"
+  ],
+  "rmDir": [
+    "dirPath"
+  ],
+  "copy": [
+    "src",
+    "dst"
+  ],
+  "copyDir": [
+    "src",
+    "dst",
+    "opt_exclude"
+  ],
+  "exists": [
+    "aPath"
+  ],
+  "stat": [
+    "aPath"
+  ],
+  "unlink": [
+    "aPath"
+  ],
+  "tmpDir": [],
+  "tmpFile": [
+    "opt_options"
+  ],
+  "findInPath": [
+    "file",
+    "opt_checkCwd"
+  ],
+  "read": [
+    "aPath"
+  ],
+  "write": [
+    "aPath",
+    "data"
+  ],
+  "mkdir": [
+    "aPath"
+  ],
+  "mkdirp": [
+    "dir"
+  ],
+  "walkDir": [
+    "rootPath"
+  ],
+  "Zip": {
+    "constructor": [],
+    "addFile": [
+      "filePath",
+      "param"
+    ],
+    "addDir": [
+      "dirPath",
+      "param"
+    ],
+    "has": [
+      "path"
+    ],
+    "getFile": [
+      "path"
+    ],
+    "toBuffer": [
+      "param"
+    ]
+  },
+  "load": [
+    "path"
+  ],
+  "unzip": [
+    "src",
+    "dst"
+  ],
+  "createDir": [
+    "dir"
+  ],
+  "writeFile": [
+    "relPath",
+    "file"
+  ],
+  "observeMutations": [
+    "channel"
+  ],
+  "k": [
+    "a",
+    "b"
+  ],
+  "ca": [
+    "a"
+  ],
+  "n": [],
+  "a": [],
+  "ka": [
+    "a",
+    "b"
+  ],
+  "la": [
+    "a",
+    "b"
+  ],
+  "ma": [
+    "a"
+  ],
+  "na": [
+    "a"
+  ],
+  "oa": [
+    "a",
+    "b"
+  ],
+  "pa": [
+    "a",
+    "b"
+  ],
+  "z": [],
+  "A": [],
+  "qa": [],
+  "ra": [
+    "a"
+  ],
+  "C": [],
+  "sa": [
+    "a",
+    "b"
+  ],
+  "za": [],
+  "Da": [
+    "a"
+  ],
+  "G": [
+    "a",
+    "b"
+  ],
+  "H": [
+    "a",
+    "b"
+  ],
+  "Ga": [
+    "a"
+  ],
+  "I": [
+    "a"
+  ],
+  "Ia": [
+    "a",
+    "b"
+  ],
+  "Ja": [
+    "a"
+  ],
+  "Ka": [
+    "a",
+    "b"
+  ],
+  "K": [
+    "a"
+  ],
+  "La": [
+    "a",
+    "b"
+  ],
+  "Ha": [
+    "a"
+  ],
+  "L": [
+    "a",
+    "b"
+  ],
+  "M": [
+    "a",
+    "b"
+  ],
+  "O": [
+    "a",
+    "b"
+  ],
+  "cb": [
+    "a"
+  ],
+  "P": [
+    "a",
+    "b"
+  ],
+  "eb": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Q": [
+    "a",
+    "b",
+    "c",
+    "e"
+  ],
+  "gb": [
+    "a"
+  ],
+  "R": [
+    "a",
+    "b",
+    "c",
+    "e"
+  ],
+  "hb": [
+    "a",
+    "b"
+  ],
+  "ib": [
+    "a",
+    "b",
+    "c"
+  ],
+  "d": [
+    "h"
+  ],
+  "e": [
+    "k"
+  ],
+  "mb": [
+    "a"
+  ],
+  "b": [
+    "k"
+  ],
+  "jb": [
+    "a"
+  ],
+  "p": [
+    "a"
+  ],
+  "c": [
+    "e"
+  ],
+  "S": [
+    "a"
+  ],
+  "kb": [
+    "a"
+  ],
+  "ob": [
+    "a"
+  ],
+  "nb": [
+    "a"
+  ],
+  "pb": [
+    "a"
+  ],
+  "qb": [
+    "a"
+  ],
+  "tb": [
+    "a",
+    "b",
+    "c"
+  ],
+  "sb": [
+    "a",
+    "b"
+  ],
+  "vb": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "lb": [
+    "a"
+  ],
+  "wb": [
+    "a"
+  ],
+  "xb": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+  ],
+  "rb": [
+    "a",
+    "b"
+  ],
+  "Ab": [
+    "a"
+  ],
+  "Cb": [
+    "a",
+    "b"
+  ],
+  "q": [],
+  "r": [],
+  "t": [],
+  "U": [
+    "a",
+    "b",
+    "c"
+  ],
+  "T": [
+    "a",
+    "b"
+  ],
+  "V": [
+    "a"
+  ],
+  "W": [
+    "a",
+    "b"
+  ],
+  "m": [
+    "a",
+    "b"
+  ],
+  "w": [
+    "a",
+    "b"
+  ],
+  "x": [],
+  "y": [
+    "a"
+  ],
+  "B": [],
+  "xa": [],
+  "ya": [],
+  "J": [
+    "a"
+  ],
+  "N": [
+    "a"
+  ],
+  "Ma": [
+    "a"
+  ],
+  "l": [
+    "ba"
+  ],
+  "Na": [
+    "a"
+  ],
+  "Qa": [
+    "a"
+  ],
+  "Pa": [
+    "a"
+  ],
+  "Oa": [
+    "a"
+  ],
+  "Ra": [
+    "a"
+  ],
+  "Sa": [
+    "a",
+    "b"
+  ],
+  "InvalidCharacterError": {
+    "constructor": []
+  },
+  "escapeCss": [
+    "css"
+  ],
+  "By": {
+    "constructor": [
+      "using",
+      "value"
+    ],
+    "className": [
+      "name"
+    ],
+    "css": [
+      "selector"
+    ],
+    "id": [
+      "id"
+    ],
+    "linkText": [
+      "text"
+    ],
+    "js": [
+      "script",
+      "param"
+    ],
+    "name": [
+      "name"
+    ],
+    "partialLinkText": [
+      "text"
+    ],
+    "tagName": [
+      "name"
+    ],
+    "xpath": [
+      "xpath"
+    ],
+    "toString": [],
+    "toObject": []
+  },
+  "withTagName": [
+    "tagName"
+  ],
+  "locateWith": [
+    "by"
+  ],
+  "getLocator": [
+    "locatorOrElement"
+  ],
+  "RelativeBy": {
+    "constructor": [
+      "findDetails",
+      "param"
+    ],
+    "above": [
+      "locatorOrElement"
+    ],
+    "below": [
+      "locatorOrElement"
+    ],
+    "toLeftOf": [
+      "locatorOrElement"
+    ],
+    "toRightOf": [
+      "locatorOrElement"
+    ],
+    "straightAbove": [
+      "locatorOrElement"
+    ],
+    "straightBelow": [
+      "locatorOrElement"
+    ],
+    "straightToLeftOf": [
+      "locatorOrElement"
+    ],
+    "straightToRightOf": [
+      "locatorOrElement"
+    ],
+    "near": [
+      "locatorOrElement"
+    ],
+    "marshall": [],
+    "toString": []
+  },
+  "check": [
+    "locator"
+  ],
+  "Timeouts": [],
+  "toMap": [
+    "hash"
+  ],
+  "Capabilities": {
+    "constructor": [
+      "param"
+    ],
+    "size": [],
+    "chrome": [],
+    "edge": [],
+    "firefox": [],
+    "ie": [],
+    "safari": [],
+    "get": [
+      "key"
+    ],
+    "has": [
+      "key"
+    ],
+    "keys": [],
+    "merge": [
+      "other"
+    ],
+    "delete": [
+      "key"
+    ],
+    "set": [
+      "key",
+      "value"
+    ],
+    "setAcceptInsecureCerts": [
+      "accept"
+    ],
+    "getAcceptInsecureCerts": [],
+    "setBrowserName": [
+      "name"
+    ],
+    "getBrowserName": [],
+    "setBrowserVersion": [
+      "version"
+    ],
+    "getBrowserVersion": [],
+    "setPageLoadStrategy": [
+      "strategy"
+    ],
+    "getPageLoadStrategy": [],
+    "setPlatform": [
+      "platform"
+    ],
+    "getPlatform": [],
+    "setLoggingPrefs": [
+      "prefs"
+    ],
+    "setProxy": [
+      "proxy"
+    ],
+    "getProxy": [],
+    "setAlertBehavior": [
+      "behavior"
+    ],
+    "getAlertBehavior": [],
+    "setStrictFileInteractability": [
+      "strictFileInteractability"
+    ],
+    "enableDownloads": []
+  },
+  "serialize": [
+    "caps"
+  ],
+  "Executor": {
+    "constructor": [
+      "client"
+    ],
+    "defineCommand": [
+      "name",
+      "method",
+      "path"
+    ],
+    "execute": [
+      "command"
+    ]
+  },
+  "WebDriverError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "DetachedShadowRootError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "ElementClickInterceptedError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "ElementNotSelectableError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "ElementNotInteractableError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "InsecureCertificateError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "InvalidArgumentError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "InvalidCookieDomainError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "InvalidCoordinatesError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "InvalidElementStateError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "InvalidSelectorError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "NoSuchSessionError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "JavascriptError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "MoveTargetOutOfBoundsError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "NoSuchAlertError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "NoSuchCookieError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "NoSuchElementError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "NoSuchShadowRootError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "NoSuchFrameError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "NoSuchWindowError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "ScriptTimeoutError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "SessionNotCreatedError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "StaleElementReferenceError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "TimeoutError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "UnableToSetCookieError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "UnableToCaptureScreenError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "UnexpectedAlertOpenError": {
+    "constructor": [
+      "opt_error",
+      "opt_text"
+    ],
+    "getAlertText": []
+  },
+  "UnknownCommandError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "UnknownMethodError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "UnsupportedOperationError": {
+    "constructor": [
+      "opt_error"
+    ]
+  },
+  "encodeError": [
+    "err"
+  ],
+  "isErrorResponse": [
+    "data"
+  ],
+  "throwDecodedError": [
+    "data"
+  ],
+  "checkLegacyResponse": [
+    "responseObj"
+  ],
+  "Account": {
+    "constructor": [
+      "accountId",
+      "email",
+      "name",
+      "givenName",
+      "pictureUrl",
+      "idpConfigUrl",
+      "loginState",
+      "termsOfServiceUrl",
+      "privacyPolicyUrl"
+    ],
+    "accountId": [],
+    "email": [],
+    "name": [],
+    "givenName": [],
+    "pictureUrl": [],
+    "idpConfigUrl": [],
+    "loginState": [],
+    "termsOfServiceUrl": [],
+    "privacyPolicyUrl": []
+  },
+  "Dialog": {
+    "constructor": [
+      "driver"
+    ],
+    "title": [],
+    "subtitle": [],
+    "type": [],
+    "accounts": [],
+    "selectAccount": [
+      "index"
+    ],
+    "accept": [],
+    "dismiss": []
+  },
+  "requireAtom": [
+    "module",
+    "bazelTarget"
+  ],
+  "headersToString": [
+    "headers"
+  ],
+  "Request": {
+    "constructor": [
+      "method",
+      "path",
+      "opt_data"
+    ],
+    "toString": []
+  },
+  "Response": {
+    "constructor": [
+      "status",
+      "headers",
+      "body"
+    ],
+    "toString": []
+  },
+  "post": [
+    "path"
+  ],
+  "del": [
+    "path"
+  ],
+  "get": [
+    "path"
+  ],
+  "resource": [
+    "method",
+    "path"
+  ],
+  "InternalTypeError": {},
+  "toExecuteAtomCommand": [
+    "command",
+    "atom",
+    "name",
+    "param"
+  ],
+  "Client": {
+    "send": [
+      "httpRequest"
+    ]
+  },
+  "buildRequest": [
+    "customCommands",
+    "command"
+  ],
+  "toHttpRequest": [
+    "resource"
+  ],
+  "tryParse": [
+    "str"
+  ],
+  "parseHttpResponse": [
+    "command",
+    "httpResponse"
+  ],
+  "buildPath": [
+    "path",
+    "parameters"
+  ],
+  "FileDetector": {
+    "handleFile": [
+      "driver",
+      "file"
+    ]
+  },
+  "Action": {
+    "constructor": []
+  },
+  "Device": {
+    "constructor": [
+      "type",
+      "id"
+    ],
+    "toJSON": []
+  },
+  "checkCodePoint": [
+    "key"
+  ],
+  "Keyboard": {
+    "constructor": [
+      "id"
+    ],
+    "keyDown": [
+      "key"
+    ],
+    "keyUp": [
+      "key"
+    ]
+  },
+  "Pointer": {
+    "constructor": [
+      "id",
+      "type"
+    ],
+    "toJSON": [],
+    "cancel": [],
+    "press": [
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "release": [
+      "param"
+    ],
+    "move": [
+      "param"
+    ]
+  },
+  "Wheel": {
+    "constructor": [
+      "id"
+    ],
+    "scroll": [
+      "x",
+      "y",
+      "deltaX",
+      "deltaY",
+      "origin",
+      "duration"
+    ]
+  },
+  "Actions": {
+    "constructor": [
+      "executor",
+      "param"
+    ],
+    "keyboard": [],
+    "mouse": [],
+    "wheel": [],
+    "sequence_": [
+      "device"
+    ],
+    "insert": [
+      "device",
+      "param"
+    ],
+    "synchronize": [
+      "param"
+    ],
+    "pause": [
+      "duration",
+      "param"
+    ],
+    "keyDown": [
+      "key"
+    ],
+    "keyUp": [
+      "key"
+    ],
+    "sendKeys": [
+      "param"
+    ],
+    "press": [
+      "param"
+    ],
+    "release": [
+      "param"
+    ],
+    "scroll": [
+      "x",
+      "y",
+      "targetDeltaX",
+      "targetDeltaY",
+      "origin",
+      "duration"
+    ],
+    "move": [
+      "param"
+    ],
+    "click": [
+      "element"
+    ],
+    "contextClick": [
+      "element"
+    ],
+    "doubleClick": [
+      "element"
+    ],
+    "dragAndDrop": [
+      "from",
+      "to"
+    ],
+    "clear": [],
+    "perform": [],
+    "getSequences": []
+  },
+  "isIdle": [
+    "actions"
+  ],
+  "Level": {
+    "constructor": [
+      "name",
+      "level"
+    ],
+    "name": [],
+    "value": [],
+    "toString": []
+  },
+  "getLevel": [
+    "nameOrValue"
+  ],
+  "Entry": {
+    "constructor": [
+      "level",
+      "message",
+      "opt_timestamp",
+      "opt_type"
+    ],
+    "toJSON": []
+  },
+  "Logger": {
+    "constructor": [
+      "name",
+      "opt_level"
+    ],
+    "getName": [],
+    "setLevel": [
+      "level"
+    ],
+    "getLevel": [],
+    "getEffectiveLevel": [],
+    "isLoggable": [
+      "level"
+    ],
+    "addHandler": [
+      "handler"
+    ],
+    "removeHandler": [
+      "handler"
+    ],
+    "log": [
+      "level",
+      "loggable"
+    ],
+    "severe": [
+      "loggable"
+    ],
+    "warning": [
+      "loggable"
+    ],
+    "info": [
+      "loggable"
+    ],
+    "debug": [
+      "loggable"
+    ],
+    "fine": [
+      "loggable"
+    ],
+    "finer": [
+      "loggable"
+    ],
+    "finest": [
+      "loggable"
+    ]
+  },
+  "LogManager": {
+    "constructor": [],
+    "getLogger": [
+      "name"
+    ],
+    "createLogger_": [
+      "name",
+      "parent"
+    ]
+  },
+  "getLogger": [
+    "name"
+  ],
+  "pad": [
+    "n"
+  ],
+  "consoleHandler": [
+    "entry"
+  ],
+  "addConsoleHandler": [
+    "opt_logger"
+  ],
+  "removeConsoleHandler": [
+    "opt_logger"
+  ],
+  "installConsoleHandler": [],
+  "Preferences": {
+    "constructor": [],
+    "setLevel": [
+      "type",
+      "level"
+    ],
+    "toJSON": []
+  },
+  "PinnedScript": {
+    "constructor": [
+      "script"
+    ],
+    "handle": [],
+    "source": [],
+    "scriptId": [
+      "id"
+    ],
+    "creationScript": [],
+    "executionScript": [],
+    "removalScript": []
+  },
+  "delayed": [
+    "ms"
+  ],
+  "checkedNodeCall": [
+    "fn",
+    "param"
+  ],
+  "thenFinally": [
+    "promise",
+    "callback"
+  ],
+  "map": [
+    "array",
+    "fn",
+    "param"
+  ],
+  "filter": [
+    "array",
+    "fn",
+    "param"
+  ],
+  "fullyResolved": [
+    "value"
+  ],
+  "fullyResolveKeys": [
+    "obj"
+  ],
+  "forEachProperty": [
+    "obj",
+    "fn"
+  ],
+  "forEachElement": [
+    "arr",
+    "fn"
+  ],
+  "Config": [],
+  "PacConfig": [],
+  "ManualConfig": [],
+  "direct": [],
+  "manual": [
+    "param"
+  ],
+  "socks": [
+    "socksProxy",
+    "param"
+  ],
+  "pac": [
+    "proxyAutoconfigUrl"
+  ],
+  "system": [],
+  "Script": {
+    "constructor": [
+      "driver"
+    ],
+    "addJavaScriptErrorHandler": [
+      "callback"
+    ],
+    "removeJavaScriptErrorHandler": [
+      "id"
+    ],
+    "addConsoleMessageHandler": [
+      "callback"
+    ],
+    "removeConsoleMessageHandler": [
+      "id"
+    ],
+    "addDomMutationHandler": [
+      "callback"
+    ],
+    "removeDomMutationHandler": [
+      "id"
+    ],
+    "pin": [
+      "script"
+    ],
+    "unpin": [
+      "id"
+    ],
+    "execute": [
+      "script",
+      "param"
+    ]
+  },
+  "ISelect": {
+    "isMultiple": [],
+    "getOptions": [],
+    "getAllSelectedOptions": [],
+    "getFirstSelectedOption": [],
+    "selectByVisibleText": [
+      "text"
+    ],
+    "selectByValue": [
+      "value"
+    ],
+    "selectByIndex": [
+      "index"
+    ],
+    "deselectAll": [],
+    "deselectByVisibleText": [
+      "text"
+    ],
+    "deselectByValue": [
+      "value"
+    ],
+    "deselectByIndex": [
+      "index"
+    ]
+  },
+  "Select": {
+    "constructor": [
+      "element"
+    ],
+    "selectByIndex": [
+      "index"
+    ],
+    "selectByValue": [
+      "value"
+    ],
+    "selectByVisibleText": [
+      "text"
+    ],
+    "getOptions": [],
+    "isMultiple": [],
+    "getAllSelectedOptions": [],
+    "getFirstSelectedOption": [],
+    "deselectAll": [],
+    "deselectByVisibleText": [
+      "text"
+    ],
+    "deselectByIndex": [
+      "index"
+    ],
+    "deselectByValue": [
+      "value"
+    ],
+    "setSelected": [
+      "option"
+    ]
+  },
+  "escapeQuotes": [
+    "toEscape"
+  ],
+  "getLongestSubstringWithoutSpace": [
+    "text"
+  ],
+  "Session": {
+    "constructor": [
+      "id",
+      "capabilities"
+    ],
+    "getId": [],
+    "getCapabilities": [],
+    "getCapability": [
+      "key"
+    ],
+    "toJSON": []
+  },
+  "ableToSwitchToFrame": [
+    "frame"
+  ],
+  "attemptToSwitchFrames": [
+    "driver",
+    "frame"
+  ],
+  "alertIsPresent": [],
+  "titleIs": [
+    "title"
+  ],
+  "titleContains": [
+    "substr"
+  ],
+  "titleMatches": [
+    "regex"
+  ],
+  "urlIs": [
+    "url"
+  ],
+  "urlContains": [
+    "substrUrl"
+  ],
+  "urlMatches": [
+    "regex"
+  ],
+  "elementLocated": [
+    "locator"
+  ],
+  "elementsLocated": [
+    "locator"
+  ],
+  "stalenessOf": [
+    "element"
+  ],
+  "elementIsVisible": [
+    "element"
+  ],
+  "elementIsNotVisible": [
+    "element"
+  ],
+  "elementIsEnabled": [
+    "element"
+  ],
+  "elementIsDisabled": [
+    "element"
+  ],
+  "elementIsSelected": [
+    "element"
+  ],
+  "elementIsNotSelected": [
+    "element"
+  ],
+  "elementTextIs": [
+    "element",
+    "text"
+  ],
+  "elementTextContains": [
+    "element",
+    "substr"
+  ],
+  "elementTextMatches": [
+    "element",
+    "regex"
+  ],
+  "isObject": [
+    "value"
+  ],
+  "isPromise": [
+    "value"
+  ],
+  "VirtualAuthenticatorOptions": {
+    "constructor": [],
+    "getProtocol": [],
+    "setProtocol": [
+      "protocol"
+    ],
+    "getTransport": [],
+    "setTransport": [
+      "transport"
+    ],
+    "getHasResidentKey": [],
+    "setHasResidentKey": [
+      "value"
+    ],
+    "getHasUserVerification": [],
+    "setHasUserVerification": [
+      "value"
+    ],
+    "getIsUserConsenting": [],
+    "setIsUserConsenting": [
+      "value"
+    ],
+    "getIsUserVerified": [],
+    "setIsUserVerified": [
+      "value"
+    ],
+    "toDict": []
+  },
+  "Credential": {
+    "constructor": [
+      "credentialId",
+      "isResidentCredential",
+      "rpId",
+      "userHandle",
+      "privateKey",
+      "signCount"
+    ],
+    "createResidentCredential": [
+      "id",
+      "rpId",
+      "userHandle",
+      "privateKey",
+      "signCount"
+    ],
+    "createNonResidentCredential": [
+      "id",
+      "rpId",
+      "privateKey",
+      "signCount"
+    ],
+    "id": [],
+    "isResidentCredential": [],
+    "rpId": [],
+    "userHandle": [],
+    "privateKey": [],
+    "signCount": [],
+    "toDict": [],
+    "fromDict": [
+      "data"
+    ]
+  },
+  "Condition": {
+    "constructor": [
+      "message",
+      "fn"
+    ],
+    "description": []
+  },
+  "WebElementCondition": {
+    "constructor": [
+      "message",
+      "fn"
+    ]
+  },
+  "executeCommand": [
+    "executor",
+    "command"
+  ],
+  "toWireValue": [
+    "obj"
+  ],
+  "convertKeys": [
+    "obj"
+  ],
+  "forEachKey": [
+    "obj",
+    "fn"
+  ],
+  "fromWireValue": [
+    "driver",
+    "value"
+  ],
+  "resolveWaitMessage": [
+    "message"
+  ],
+  "IWebDriver": {
+    "execute": [
+      "command"
+    ],
+    "setFileDetector": [
+      "detector"
+    ],
+    "getExecutor": [],
+    "getSession": [],
+    "getCapabilities": [],
+    "quit": [],
+    "actions": [
+      "options"
+    ],
+    "executeScript": [
+      "script",
+      "param"
+    ],
+    "executeAsyncScript": [
+      "script",
+      "param"
+    ],
+    "wait": [
+      "condition",
+      "param",
+      "param",
+      "param"
+    ],
+    "sleep": [
+      "ms"
+    ],
+    "getWindowHandle": [],
+    "getAllWindowHandles": [],
+    "getPageSource": [],
+    "close": [],
+    "get": [
+      "url"
+    ],
+    "getCurrentUrl": [],
+    "getTitle": [],
+    "findElement": [
+      "locator"
+    ],
+    "findElements": [
+      "locator"
+    ],
+    "takeScreenshot": [],
+    "manage": [],
+    "navigate": [],
+    "switchTo": [],
+    "printPage": [
+      "options"
+    ]
+  },
+  "filterNonW3CCaps": [
+    "capabilities"
+  ],
+  "WebDriver": {
+    "constructor": [
+      "session",
+      "executor",
+      "param"
+    ],
+    "createSession": [
+      "executor",
+      "capabilities",
+      "param"
+    ],
+    "execute": [
+      "command"
+    ],
+    "setFileDetector": [
+      "detector"
+    ],
+    "getExecutor": [],
+    "getSession": [],
+    "getCapabilities": [],
+    "quit": [],
+    "actions": [
+      "options"
+    ],
+    "executeScript": [
+      "script",
+      "param"
+    ],
+    "executeAsyncScript": [
+      "script",
+      "param"
+    ],
+    "wait": [
+      "condition",
+      "param",
+      "param",
+      "param"
+    ],
+    "sleep": [
+      "ms"
+    ],
+    "getWindowHandle": [],
+    "getAllWindowHandles": [],
+    "getPageSource": [],
+    "close": [],
+    "get": [
+      "url"
+    ],
+    "getCurrentUrl": [],
+    "getTitle": [],
+    "findElement": [
+      "locator"
+    ],
+    "normalize_": [
+      "webElementPromise"
+    ],
+    "findElementInternal_": [
+      "locatorFn",
+      "context"
+    ],
+    "findElements": [
+      "locator"
+    ],
+    "findElementsInternal_": [
+      "locatorFn",
+      "context"
+    ],
+    "takeScreenshot": [],
+    "setDelayEnabled": [
+      "enabled"
+    ],
+    "resetCooldown": [],
+    "getFederalCredentialManagementDialog": [],
+    "manage": [],
+    "navigate": [],
+    "switchTo": [],
+    "script": [],
+    "network": [],
+    "validatePrintPageParams": [
+      "keys",
+      "object"
+    ],
+    "printPage": [
+      "param"
+    ],
+    "createCDPConnection": [
+      "target"
+    ],
+    "getCdpTargets": [],
+    "getBidi": [],
+    "getWsUrl": [
+      "debuggerAddress",
+      "target",
+      "caps"
+    ],
+    "register": [
+      "username",
+      "password",
+      "connection"
+    ],
+    "onIntercept": [
+      "connection",
+      "httpResponse",
+      "callback"
+    ],
+    "onLogEvent": [
+      "connection",
+      "callback"
+    ],
+    "onLogException": [
+      "connection",
+      "callback"
+    ],
+    "logMutationEvents": [
+      "connection",
+      "callback"
+    ],
+    "pinScript": [
+      "script"
+    ],
+    "unpinScript": [
+      "script"
+    ],
+    "virtualAuthenticatorId": [],
+    "addVirtualAuthenticator": [
+      "options"
+    ],
+    "removeVirtualAuthenticator": [],
+    "addCredential": [
+      "credential"
+    ],
+    "getCredentials": [],
+    "removeCredential": [
+      "credential_id"
+    ],
+    "removeAllCredentials": [],
+    "setUserVerified": [
+      "verified"
+    ],
+    "getDownloadableFiles": [],
+    "downloadFile": [
+      "fileName",
+      "targetDirectory"
+    ],
+    "deleteDownloadableFiles": []
+  },
+  "clearTimer": [],
+  "evaluateCondition": [],
+  "pollCondition": [],
+  "Navigation": {
+    "constructor": [
+      "driver"
+    ],
+    "to": [
+      "url"
+    ],
+    "back": [],
+    "forward": [],
+    "refresh": []
+  },
+  "setParam": [
+    "key",
+    "value"
+  ],
+  "legacyTimeout": [
+    "driver",
+    "type",
+    "ms"
+  ],
+  "Window": {
+    "constructor": [
+      "driver"
+    ],
+    "getRect": [],
+    "setRect": [
+      "param"
+    ],
+    "maximize": [],
+    "minimize": [],
+    "fullscreen": [],
+    "getSize": [
+      "param"
+    ],
+    "setSize": [
+      "param",
+      "param"
+    ]
+  },
+  "Logs": {
+    "constructor": [
+      "driver"
+    ],
+    "get": [
+      "type"
+    ],
+    "getAvailableLogTypes": []
+  },
+  "TargetLocator": {
+    "constructor": [
+      "driver"
+    ],
+    "activeElement": [],
+    "defaultContent": [],
+    "frame": [
+      "id"
+    ],
+    "parentFrame": [],
+    "window": [
+      "nameOrHandle"
+    ],
+    "newWindow": [
+      "typeHint"
+    ],
+    "alert": []
+  },
+  "WebElement": {
+    "constructor": [
+      "driver",
+      "id"
+    ],
+    "buildId": [
+      "id",
+      "param"
+    ],
+    "extractId": [
+      "obj"
+    ],
+    "isId": [
+      "obj"
+    ],
+    "equals": [
+      "a",
+      "b"
+    ],
+    "getDriver": [],
+    "getId": [],
+    "execute_": [
+      "command"
+    ],
+    "findElement": [
+      "locator"
+    ],
+    "findElements": [
+      "locator"
+    ],
+    "click": [],
+    "sendKeys": [
+      "param"
+    ],
+    "getTagName": [],
+    "getCssValue": [
+      "cssStyleProperty"
+    ],
+    "getAttribute": [
+      "attributeName"
+    ],
+    "getDomAttribute": [
+      "attributeName"
+    ],
+    "getProperty": [
+      "propertyName"
+    ],
+    "getShadowRoot": [],
+    "getText": [],
+    "getAriaRole": [],
+    "getAccessibleName": [],
+    "getRect": [],
+    "isEnabled": [],
+    "isSelected": [],
+    "submit": [],
+    "clear": [],
+    "isDisplayed": [],
+    "takeScreenshot": []
+  },
+  "WebElementPromise": {
+    "constructor": [
+      "driver",
+      "el"
+    ]
+  },
+  "ShadowRoot": {
+    "constructor": [
+      "driver",
+      "id"
+    ],
+    "extractId": [
+      "obj"
+    ],
+    "isId": [
+      "obj"
+    ],
+    "execute_": [
+      "command"
+    ],
+    "findElement": [
+      "locator"
+    ],
+    "findElements": [
+      "locator"
+    ],
+    "getId": []
+  },
+  "ShadowRootPromise": {
+    "constructor": [
+      "driver",
+      "shadow"
+    ]
+  },
+  "Alert": {
+    "constructor": [
+      "driver",
+      "text"
+    ],
+    "getText": [],
+    "accept": [],
+    "dismiss": [],
+    "sendKeys": [
+      "text"
+    ]
+  },
+  "AlertPromise": {
+    "constructor": [
+      "driver",
+      "alert"
+    ]
+  },
+  "isId": [
+    "obj"
+  ],
+  "extractId": [
+    "obj"
+  ],
+  "getLoInterface": [],
+  "getIPAddress": [
+    "loopback",
+    "family"
+  ],
+  "getAddress": [
+    "param"
+  ],
+  "getLoopbackAddress": [
+    "param"
+  ],
+  "splitHostAndPort": [
+    "hostport"
+  ],
+  "isFree": [
+    "port",
+    "opt_host"
+  ],
+  "findFreePort": [
+    "opt_host"
+  ],
+  "ServiceOptions": [],
+  "DriverService": {
+    "constructor": [
+      "executable",
+      "options"
+    ],
+    "getExecutable": [],
+    "setExecutable": [
+      "value"
+    ],
+    "address": [],
+    "isRunning": [],
+    "start": [
+      "opt_timeoutMs"
+    ],
+    "kill": []
+  },
+  "resolveCommandLineFlags": [
+    "args"
+  ],
+  "SeleniumServer": {
+    "constructor": [
+      "jar",
+      "opt_options"
+    ]
+  },
+  "getJavaPath": [],
+  "isSelenium3x": [
+    "seleniumStandalonePath"
+  ],
+  "formatSpawnArgs": [
+    "seleniumStandalonePath",
+    "args"
+  ],
+  "useTechnologyPreview": [
+    "o"
+  ],
+  "TargetBrowser": [],
+  "color": [
+    "c",
+    "s"
+  ],
+  "green": [
+    "s"
+  ],
+  "cyan": [
+    "s"
+  ],
+  "info": [
+    "msg"
+  ],
+  "warn": [
+    "msg"
+  ],
+  "getBrowsersToTestFromEnv": [],
+  "getAvailableBrowsers": [],
+  "init": [
+    "param"
+  ],
+  "Environment": {
+    "constructor": [
+      "browser",
+      "param"
+    ],
+    "browser": [],
+    "browsers": [
+      "param"
+    ],
+    "builder": []
+  },
+  "SuiteOptions": [],
+  "suite": [
+    "fn",
+    "param"
+  ],
+  "startSelenium": [],
+  "ignore": [
+    "predicateFn"
+  ],
+  "wrap": [
+    "onSkip",
+    "onRun"
+  ],
+  "getTestHook": [
+    "name"
+  ],
+  "locate": [
+    "fileLike"
+  ]
+}

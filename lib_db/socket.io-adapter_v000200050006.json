@@ -1,0 +1,198 @@
+{
+  "ClusterAdapter": {
+    "constructor": [
+      "nsp"
+    ],
+    "onMessage": [
+      "message",
+      "offset"
+    ],
+    "onResponse": [
+      "response"
+    ],
+    "broadcast": [
+      "packet",
+      "opts"
+    ],
+    "addOffsetIfNecessary": [
+      "packet",
+      "opts",
+      "offset"
+    ],
+    "broadcastWithAck": [
+      "packet",
+      "opts",
+      "clientCountCallback",
+      "ack"
+    ],
+    "addSockets": [
+      "opts",
+      "rooms"
+    ],
+    "delSockets": [
+      "opts",
+      "rooms"
+    ],
+    "disconnectSockets": [
+      "opts",
+      "close"
+    ],
+    "fetchSockets": [
+      "opts"
+    ],
+    "serverSideEmit": [
+      "packet"
+    ],
+    "publish": [
+      "message"
+    ],
+    "publishAndReturnOffset": [
+      "message"
+    ],
+    "publishResponse": [
+      "requesterUid",
+      "response"
+    ]
+  },
+  "ClusterAdapterWithHeartbeat": {
+    "constructor": [
+      "nsp",
+      "opts"
+    ],
+    "init": [],
+    "scheduleHeartbeat": [],
+    "close": [],
+    "onMessage": [
+      "message",
+      "offset"
+    ],
+    "serverCount": [],
+    "publish": [
+      "message"
+    ],
+    "serverSideEmit": [
+      "packet"
+    ],
+    "fetchSockets": [
+      "opts"
+    ],
+    "onResponse": [
+      "response"
+    ],
+    "removeNode": [
+      "uid"
+    ]
+  },
+  "randomId": [],
+  "encodeOptions": [
+    "opts"
+  ],
+  "decodeOptions": [
+    "opts"
+  ],
+  "callback": [
+    "arg"
+  ],
+  "encode": [
+    "num"
+  ],
+  "decode": [
+    "str"
+  ],
+  "yeast": [],
+  "Adapter": {
+    "constructor": [
+      "nsp"
+    ],
+    "init": [],
+    "close": [],
+    "serverCount": [],
+    "addAll": [
+      "id",
+      "rooms"
+    ],
+    "del": [
+      "id",
+      "room"
+    ],
+    "_del": [
+      "room",
+      "id"
+    ],
+    "delAll": [
+      "id"
+    ],
+    "broadcast": [
+      "packet",
+      "opts"
+    ],
+    "broadcastWithAck": [
+      "packet",
+      "opts",
+      "clientCountCallback",
+      "ack"
+    ],
+    "_encode": [
+      "packet",
+      "packetOpts"
+    ],
+    "sockets": [
+      "rooms"
+    ],
+    "socketRooms": [
+      "id"
+    ],
+    "fetchSockets": [
+      "opts"
+    ],
+    "addSockets": [
+      "opts",
+      "rooms"
+    ],
+    "delSockets": [
+      "opts",
+      "rooms"
+    ],
+    "disconnectSockets": [
+      "opts",
+      "close"
+    ],
+    "apply": [
+      "opts",
+      "callback"
+    ],
+    "computeExceptSids": [
+      "exceptRooms"
+    ],
+    "serverSideEmit": [
+      "packet"
+    ],
+    "persistSession": [
+      "session"
+    ],
+    "restoreSession": [
+      "pid",
+      "offset"
+    ]
+  },
+  "SessionAwareAdapter": {
+    "constructor": [
+      "nsp"
+    ],
+    "persistSession": [
+      "session"
+    ],
+    "restoreSession": [
+      "pid",
+      "offset"
+    ],
+    "broadcast": [
+      "packet",
+      "opts"
+    ]
+  },
+  "shouldIncludePacket": [
+    "sessionRooms",
+    "opts"
+  ]
+}

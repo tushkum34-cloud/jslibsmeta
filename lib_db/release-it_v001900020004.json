@@ -1,0 +1,672 @@
+{
+  "parseCliArguments": [
+    "args"
+  ],
+  "version": [],
+  "help": [],
+  "Config": {
+    "constructor": [
+      "param"
+    ],
+    "init": [],
+    "getContext": [
+      "path"
+    ],
+    "setContext": [
+      "options"
+    ],
+    "setCI": [
+      "param"
+    ],
+    "defaultConfig": [],
+    "isDryRun": [],
+    "isIncrement": [],
+    "isVerbose": [],
+    "verbosityLevel": [],
+    "isDebug": [],
+    "isCI": [],
+    "isPromptOnlyVersion": [],
+    "isReleaseVersion": [],
+    "isChangelog": [],
+    "options": [],
+    "localConfig": []
+  },
+  "loadOptions": [
+    "constructorConfig"
+  ],
+  "expandPreReleaseShorthand": [
+    "options"
+  ],
+  "loadLocalConfig": [
+    "constructorConfig"
+  ],
+  "resolveFile": [],
+  "resolveDir": [],
+  "resolveExtend": [],
+  "resolveDefaultConfig": [],
+  "runTasks": [
+    "plugin"
+  ],
+  "runHook": [
+    "param"
+  ],
+  "task": [],
+  "runLifeCycleHook": [
+    "plugin",
+    "name",
+    "param"
+  ],
+  "Logger": {
+    "constructor": [
+      "param"
+    ],
+    "shouldLog": [
+      "isExternal"
+    ],
+    "log": [
+      "param"
+    ],
+    "error": [
+      "param"
+    ],
+    "info": [
+      "param"
+    ],
+    "warn": [
+      "param"
+    ],
+    "verbose": [
+      "param"
+    ],
+    "exec": [
+      "param"
+    ],
+    "obtrusive": [
+      "param"
+    ],
+    "preview": [
+      "param"
+    ]
+  },
+  "GitBase": {
+    "init": [],
+    "getName": [],
+    "getLatestVersion": [],
+    "getCommitsSinceLatestTag": [
+      "param"
+    ],
+    "getChangelog": [],
+    "bump": [
+      "version"
+    ],
+    "isRemoteName": [
+      "remoteUrlOrName"
+    ],
+    "getRemoteUrl": [],
+    "getRemote": [],
+    "getBranchName": [],
+    "getRemoteForBranch": [
+      "branch"
+    ],
+    "fetch": [
+      "remoteUrl"
+    ],
+    "getLatestTagName": [],
+    "getSecondLatestTagName": [
+      "latestTag"
+    ]
+  },
+  "GitRelease": {
+    "isEnabled": [
+      "options"
+    ],
+    "getInitialOptions": [
+      "options"
+    ],
+    "token": [],
+    "beforeRelease": [],
+    "processReleaseNotes": [
+      "script"
+    ],
+    "afterRelease": []
+  },
+  "Plugin": {
+    "isEnabled": [],
+    "disablePlugin": [],
+    "constructor": [
+      "param"
+    ],
+    "getInitialOptions": [
+      "options",
+      "namespace"
+    ],
+    "init": [],
+    "getName": [],
+    "getLatestVersion": [],
+    "getChangelog": [],
+    "getIncrement": [],
+    "getIncrementedVersionCI": [],
+    "getIncrementedVersion": [],
+    "beforeBump": [],
+    "bump": [],
+    "beforeRelease": [],
+    "release": [],
+    "afterRelease": [],
+    "getContext": [
+      "path"
+    ],
+    "setContext": [
+      "context"
+    ],
+    "exec": [
+      "command",
+      "param"
+    ],
+    "registerPrompts": [
+      "prompts"
+    ],
+    "showPrompt": [
+      "options"
+    ],
+    "step": [
+      "options"
+    ]
+  },
+  "load": [
+    "pluginName"
+  ],
+  "getPluginName": [
+    "pluginName"
+  ],
+  "getPlugins": [
+    "config",
+    "container"
+  ],
+  "isGitRepo": [],
+  "Git": {
+    "constructor": [
+      "param"
+    ],
+    "isEnabled": [
+      "options"
+    ],
+    "init": [],
+    "rollback": [],
+    "enableRollback": [],
+    "disableRollback": [],
+    "beforeRelease": [],
+    "release": [],
+    "isRequiredBranch": [],
+    "hasUpstreamBranch": [],
+    "tagExists": [
+      "tag"
+    ],
+    "isWorkingDirClean": [],
+    "getUpstreamArgs": [
+      "pushRepo"
+    ],
+    "stage": [
+      "file"
+    ],
+    "stageDir": [
+      "param"
+    ],
+    "reset": [
+      "file"
+    ],
+    "status": [],
+    "commit": [
+      "param"
+    ],
+    "tag": [
+      "param"
+    ],
+    "push": [
+      "param"
+    ],
+    "rollbackTagPush": [],
+    "afterRelease": []
+  },
+  "parseErrormsg": [
+    "err"
+  ],
+  "truncateBody": [
+    "body"
+  ],
+  "GitHub": {
+    "constructor": [
+      "param"
+    ],
+    "init": [],
+    "isAuthenticated": [],
+    "isCollaborator": [],
+    "release": [],
+    "handleError": [
+      "err",
+      "bail"
+    ],
+    "client": [],
+    "getLatestRelease": [],
+    "getOctokitReleaseOptions": [
+      "param"
+    ],
+    "retry": [
+      "fn"
+    ],
+    "createRelease": [],
+    "uploadAsset": [
+      "filePath"
+    ],
+    "uploadAssets": [],
+    "getReleaseUrlFallback": [
+      "tagName"
+    ],
+    "generateWebUrl": [],
+    "createWebRelease": [],
+    "updateRelease": [],
+    "commentOnResolvedItems": [],
+    "getCommits": [],
+    "renderReleaseNotes": [
+      "releaseNotes"
+    ]
+  },
+  "release": [],
+  "message": [
+    "context"
+  ],
+  "getSearchQueries": [
+    "base",
+    "commits",
+    "param"
+  ],
+  "searchQueries": [
+    "client",
+    "owner",
+    "repo",
+    "shas"
+  ],
+  "getCommitsFromChangelog": [
+    "changelog"
+  ],
+  "getResolvedIssuesFromChangelog": [
+    "host",
+    "owner",
+    "repo",
+    "changelog"
+  ],
+  "GitLab": {
+    "constructor": [
+      "param"
+    ],
+    "init": [],
+    "isAuthenticated": [],
+    "isCollaborator": [],
+    "beforeRelease": [],
+    "checkReleaseMilestones": [],
+    "getReleaseMilestones": [],
+    "release": [],
+    "request": [
+      "endpoint",
+      "options"
+    ],
+    "createRelease": [],
+    "uploadAsset": [
+      "filePath"
+    ],
+    "uploadAssets": []
+  },
+  "glRelease": [],
+  "glUploadAssets": [],
+  "getOptions": [],
+  "npm": {
+    "isEnabled": [
+      "options"
+    ],
+    "constructor": [
+      "param"
+    ],
+    "init": [],
+    "getName": [],
+    "getLatestVersion": [],
+    "bump": [
+      "version"
+    ],
+    "release": [],
+    "isRegistryUp": [],
+    "isAuthenticated": [],
+    "isCollaborator": [],
+    "getLatestRegistryVersion": [],
+    "getRegistryPreReleaseTags": [],
+    "getPackageUrl": [],
+    "getRegistry": [],
+    "getPublicPath": [],
+    "guessPreReleaseTag": [],
+    "resolveTag": [
+      "version"
+    ],
+    "publish": [
+      "param"
+    ],
+    "afterRelease": []
+  },
+  "publish": [],
+  "getIncrementChoices": [
+    "context"
+  ],
+  "versionTransformer": [
+    "context"
+  ],
+  "Version": {
+    "constructor": [
+      "param"
+    ],
+    "getIncrement": [
+      "options"
+    ],
+    "getIncrementedVersionCI": [
+      "options"
+    ],
+    "getIncrementedVersion": [
+      "options"
+    ],
+    "promptIncrementVersion": [
+      "options"
+    ],
+    "isPreRelease": [
+      "version"
+    ],
+    "isValid": [
+      "version"
+    ],
+    "incrementVersion": [
+      "param"
+    ]
+  },
+  "Prompt": {
+    "constructor": [
+      "param"
+    ],
+    "register": [
+      "pluginPrompts",
+      "param"
+    ],
+    "show": [
+      "param"
+    ]
+  },
+  "Shell": {
+    "constructor": [
+      "param"
+    ],
+    "exec": [
+      "command",
+      "param",
+      "param"
+    ],
+    "execFormattedCommand": [
+      "command",
+      "param"
+    ],
+    "execStringCommand": [
+      "command",
+      "options",
+      "param"
+    ],
+    "execWithArguments": [
+      "command",
+      "param",
+      "param"
+    ]
+  },
+  "Spinner": {
+    "constructor": [
+      "param"
+    ],
+    "show": [
+      "param"
+    ]
+  },
+  "wait": [
+    "ms"
+  ],
+  "before": [
+    "n",
+    "func"
+  ],
+  "tryStatFile": [
+    "filePath"
+  ],
+  "readJSON": [
+    "file"
+  ],
+  "getSystemInfo": [],
+  "format": [
+    "param",
+    "param"
+  ],
+  "truncateLines": [
+    "input",
+    "param",
+    "param"
+  ],
+  "rejectAfter": [
+    "ms",
+    "error"
+  ],
+  "parseGitUrl": [
+    "remoteUrl"
+  ],
+  "reduceUntil": [
+    "collection",
+    "fn"
+  ],
+  "hasAccess": [
+    "path"
+  ],
+  "parseVersion": [
+    "raw"
+  ],
+  "e": [
+    "message",
+    "docs",
+    "param"
+  ],
+  "touch": [
+    "path",
+    "callback"
+  ],
+  "fixArgs": [
+    "args"
+  ],
+  "getNpmEnv": [],
+  "upperFirst": [
+    "string"
+  ],
+  "castArray": [
+    "arr"
+  ],
+  "once": [
+    "fn"
+  ],
+  "pick": [
+    "object",
+    "keys"
+  ],
+  "parsePath": [
+    "path"
+  ],
+  "get": [
+    "obj",
+    "path",
+    "param"
+  ],
+  "generateCommit": [],
+  "getContainer": [
+    "options"
+  ],
+  "yes": [
+    "param"
+  ],
+  "no": [
+    "param"
+  ],
+  "exec": [
+    "command",
+    "param"
+  ],
+  "getConfig": [
+    "options"
+  ],
+  "interceptAuthentication": [
+    "server",
+    "param"
+  ],
+  "interceptCollaborator": [
+    "server",
+    "param",
+    "param"
+  ],
+  "interceptListReleases": [
+    "server",
+    "param"
+  ],
+  "interceptCreate": [
+    "server",
+    "param"
+  ],
+  "interceptUpdate": [
+    "server",
+    "param"
+  ],
+  "interceptAsset": [
+    "server",
+    "param"
+  ],
+  "interceptMembers": [
+    "server",
+    "param"
+  ],
+  "interceptUser": [
+    "server",
+    "param",
+    "param"
+  ],
+  "interceptPublish": [
+    "server",
+    "param"
+  ],
+  "interceptMilestones": [
+    "server",
+    "param"
+  ],
+  "interceptAssetGeneric": [
+    "server",
+    "param"
+  ],
+  "ContextPlugin": {
+    "init": [],
+    "beforeBump": [],
+    "bump": [
+      "version"
+    ],
+    "beforeRelease": [],
+    "release": [],
+    "afterRelease": []
+  },
+  "ReplacePlugin": {
+    "disablePlugin": []
+  },
+  "MyPlugin": {
+    "init": [],
+    "getName": [],
+    "getLatestVersion": [],
+    "getIncrement": [],
+    "getIncrementedVersionCI": [],
+    "beforeBump": [],
+    "bump": [
+      "version"
+    ],
+    "beforeRelease": [],
+    "release": [],
+    "afterRelease": []
+  },
+  "ShellStub": {
+    "exec": [
+      "command"
+    ]
+  },
+  "getHooks": [
+    "plugins"
+  ],
+  "createTarBlob": [
+    "dir"
+  ],
+  "createTarBlobByRawContents": [
+    "contents"
+  ],
+  "mkTmpDir": [],
+  "readFile": [
+    "file"
+  ],
+  "gitAdd": [
+    "content",
+    "filePath",
+    "message"
+  ],
+  "getArgs": [
+    "fn",
+    "prefix"
+  ],
+  "appendFile": [
+    "content",
+    "filePath",
+    "cwd"
+  ],
+  "GitlabTestServer": {
+    "constructor": [],
+    "run": [
+      "param",
+      "host"
+    ],
+    "stop": [],
+    "_requestHandler": [
+      "req",
+      "res"
+    ],
+    "_json": [
+      "res",
+      "payload"
+    ],
+    "_text": [
+      "res",
+      "message"
+    ]
+  },
+  "getDirname": [],
+  "LogStub": {
+    "constructor": [],
+    "resetCalls": []
+  },
+  "SpinnerStub": {
+    "show": [
+      "param"
+    ]
+  },
+  "factory": [
+    "Definition",
+    "param"
+  ],
+  "getIncrement": [
+    "plugin"
+  ],
+  "getVersion": [
+    "plugin",
+    "options"
+  ],
+  "mockFetch": [
+    "baseUrls"
+  ],
+  "getCommandAndArgs": [
+    "input"
+  ]
+}
