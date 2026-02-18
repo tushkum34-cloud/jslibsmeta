@@ -1,0 +1,83 @@
+{
+  "divmod32": [
+    "uint32Array",
+    "divisor"
+  ],
+  "encodeBufferToBase": [
+    "buffer",
+    "base",
+    "length"
+  ],
+  "getHashDigest": [
+    "buffer",
+    "algorithm",
+    "digestType",
+    "maxLength"
+  ],
+  "BatchedHash": {
+    "constructor": [
+      "hash"
+    ],
+    "update": [
+      "data",
+      "inputEncoding"
+    ],
+    "digest": [
+      "encoding"
+    ]
+  },
+  "BulkUpdateDecorator": {
+    "constructor": [
+      "hashOrFactory",
+      "hashKey"
+    ],
+    "update": [
+      "data",
+      "inputEncoding"
+    ],
+    "digest": [
+      "encoding"
+    ]
+  },
+  "WasmHash": {
+    "constructor": [
+      "instance",
+      "instancesPool",
+      "chunkSize",
+      "digestSize"
+    ],
+    "reset": [],
+    "update": [
+      "data",
+      "encoding"
+    ],
+    "_updateWithShortString": [
+      "data",
+      "encoding"
+    ],
+    "_updateWithBuffer": [
+      "data"
+    ],
+    "digest": [
+      "type"
+    ]
+  },
+  "create": [
+    "wasmModule",
+    "instancesPool",
+    "chunkSize",
+    "digestSize"
+  ],
+  "interpolateName": [
+    "loaderContext",
+    "name",
+    "param"
+  ],
+  "isUrlRequest": [
+    "url"
+  ],
+  "urlToRequest": [
+    "url",
+    "root"
+  ]
+}

@@ -1,0 +1,909 @@
+{
+  "retryOnLeaderNotAvailable": [
+    "fn",
+    "param"
+  ],
+  "callback": [],
+  "isConsumerGroupRunning": [
+    "description"
+  ],
+  "findTopicPartitions": [
+    "cluster",
+    "topic"
+  ],
+  "indexByPartition": [
+    "array"
+  ],
+  "connect": [],
+  "disconnect": [],
+  "listTopics": [],
+  "createTopics": [
+    "param"
+  ],
+  "createPartitions": [
+    "param"
+  ],
+  "deleteTopics": [
+    "param"
+  ],
+  "fetchTopicOffsets": [
+    "topic"
+  ],
+  "fetchTopicOffsetsByTimestamp": [
+    "topic",
+    "timestamp"
+  ],
+  "fetchOffsets": [
+    "param"
+  ],
+  "resetOffsets": [
+    "param"
+  ],
+  "setOffsets": [
+    "param"
+  ],
+  "isBrokerConfig": [
+    "type"
+  ],
+  "groupResourcesByBroker": [
+    "param"
+  ],
+  "describeConfigs": [
+    "param"
+  ],
+  "describeConfigsAction": [
+    "broker"
+  ],
+  "alterConfigs": [
+    "param"
+  ],
+  "alterConfigsAction": [
+    "broker"
+  ],
+  "fetchTopicMetadata": [
+    "param"
+  ],
+  "describeCluster": [],
+  "listGroups": [],
+  "describeGroups": [
+    "groupIds"
+  ],
+  "deleteGroups": [
+    "groupIds"
+  ],
+  "deleteTopicRecords": [
+    "param"
+  ],
+  "createAcls": [
+    "param"
+  ],
+  "describeAcls": [
+    "param"
+  ],
+  "deleteAcls": [
+    "param"
+  ],
+  "alterPartitionReassignments": [
+    "param"
+  ],
+  "listPartitionReassignments": [
+    "param"
+  ],
+  "on": [
+    "eventName",
+    "listener"
+  ],
+  "getLogger": [],
+  "unwrap": [
+    "eventName"
+  ],
+  "wrap": [
+    "eventName"
+  ],
+  "notInitializedLookup": [],
+  "makeRequest": [
+    "param"
+  ],
+  "awsIAMAuthenticatorProvider": [
+    "sasl"
+  ],
+  "saslAuthenticate": [
+    "param"
+  ],
+  "oauthBearerAuthenticatorProvider": [
+    "sasl"
+  ],
+  "plainAuthenticatorProvider": [
+    "sasl"
+  ],
+  "encode64": [
+    "str"
+  ],
+  "SCRAM": {
+    "sanitizeString": [
+      "str"
+    ],
+    "nonce": [],
+    "hi": [
+      "password",
+      "salt",
+      "iterations",
+      "digestDefinition"
+    ],
+    "xor": [
+      "left",
+      "right"
+    ],
+    "constructor": [
+      "sasl",
+      "host",
+      "port",
+      "logger",
+      "saslAuthenticate",
+      "digestDefinition"
+    ],
+    "authenticate": [],
+    "sendClientFirstMessage": [],
+    "sendClientFinalMessage": [
+      "clientMessageResponse"
+    ],
+    "clientProof": [
+      "clientMessageResponse"
+    ],
+    "clientKey": [
+      "clientMessageResponse"
+    ],
+    "serverKey": [
+      "clientMessageResponse"
+    ],
+    "clientSignature": [
+      "storedKey",
+      "clientMessageResponse"
+    ],
+    "serverSignature": [
+      "serverKey",
+      "clientMessageResponse"
+    ],
+    "authMessage": [
+      "clientMessageResponse"
+    ],
+    "saltPassword": [
+      "clientMessageResponse"
+    ],
+    "firstMessageBare": [],
+    "finalMessageWithoutProof": [
+      "clientMessageResponse"
+    ],
+    "encodedUsername": [],
+    "encodedPassword": [],
+    "H": [
+      "data"
+    ],
+    "HMAC": [
+      "key",
+      "data"
+    ]
+  },
+  "scram256AuthenticatorProvider": [
+    "sasl"
+  ],
+  "scram512AuthenticatorProvider": [
+    "sasl"
+  ],
+  "hasBrokerBeenReplaced": [
+    "broker",
+    "param"
+  ],
+  "isValidBroker": [
+    "broker"
+  ],
+  "validateBrokers": [
+    "brokers"
+  ],
+  "getBrokers": [],
+  "mergeTopics": [
+    "obj",
+    "param"
+  ],
+  "addDefaultOffset": [
+    "topic"
+  ],
+  "decodePartitions": [
+    "decoder"
+  ],
+  "decodeAssignment": [
+    "d"
+  ],
+  "indexAssignment": [
+    "obj",
+    "param"
+  ],
+  "createFetchManager": [
+    "param"
+  ],
+  "getFetchers": [],
+  "createFetchers": [],
+  "validateShouldRebalance": [],
+  "start": [
+    "onCrash"
+  ],
+  "stop": [],
+  "createFetcher": [
+    "param"
+  ],
+  "getWorkerQueue": [],
+  "assignmentKey": [
+    "param"
+  ],
+  "getAssignedFetcher": [
+    "batch"
+  ],
+  "assignTopicPartition": [
+    "batch"
+  ],
+  "unassignTopicPartition": [
+    "batch"
+  ],
+  "filterUnassignedBatches": [
+    "batches"
+  ],
+  "isAbortMarker": [
+    "param"
+  ],
+  "subscribe": [
+    "param"
+  ],
+  "run": [
+    "param"
+  ],
+  "onCrash": [
+    "e"
+  ],
+  "getOriginalCause": [
+    "error"
+  ],
+  "commitOffsets": [
+    "param"
+  ],
+  "seek": [
+    "param"
+  ],
+  "describeGroup": [],
+  "pause": [],
+  "paused": [],
+  "resume": [
+    "param"
+  ],
+  "indexTopics": [
+    "obj",
+    "param"
+  ],
+  "subtractOffsets": [
+    "resolvedOffset",
+    "committedOffset"
+  ],
+  "subtractPartitionOffsets": [
+    "resolvedTopicOffsets",
+    "committedTopicOffsets"
+  ],
+  "subtractTopicOffsets": [
+    "topic"
+  ],
+  "offsets": [
+    "topic"
+  ],
+  "emptyPartitions": [
+    "param"
+  ],
+  "toPartitions": [
+    "topic"
+  ],
+  "changedOffsets": [
+    "topic"
+  ],
+  "invalidOffset": [
+    "topic"
+  ],
+  "indexPartitions": [
+    "obj",
+    "param"
+  ],
+  "hasUnresolvedPartitions": [],
+  "isSameOffset": [
+    "offsetA",
+    "offsetB"
+  ],
+  "onBatch": [
+    "batch"
+  ],
+  "createState": [
+    "topic"
+  ],
+  "createWorker": [
+    "param"
+  ],
+  "createWorkerQueue": [
+    "param"
+  ],
+  "getWorkers": [],
+  "push": [
+    "param"
+  ],
+  "KafkaJSError": {
+    "constructor": [
+      "e",
+      "param"
+    ]
+  },
+  "KafkaJSNonRetriableError": {
+    "constructor": [
+      "e",
+      "param"
+    ]
+  },
+  "KafkaJSProtocolError": {
+    "constructor": [
+      "e",
+      "param"
+    ]
+  },
+  "KafkaJSOffsetOutOfRange": {
+    "constructor": [
+      "e",
+      "param"
+    ]
+  },
+  "KafkaJSMemberIdRequired": {
+    "constructor": [
+      "e",
+      "param"
+    ]
+  },
+  "KafkaJSNumberOfRetriesExceeded": {
+    "constructor": [
+      "e",
+      "param"
+    ]
+  },
+  "KafkaJSConnectionError": {
+    "constructor": [
+      "e",
+      "param"
+    ]
+  },
+  "KafkaJSConnectionClosedError": {
+    "constructor": [
+      "e",
+      "param"
+    ]
+  },
+  "KafkaJSRequestTimeoutError": {
+    "constructor": [
+      "e",
+      "param"
+    ]
+  },
+  "KafkaJSMetadataNotLoaded": {
+    "constructor": []
+  },
+  "KafkaJSTopicMetadataNotLoaded": {
+    "constructor": [
+      "e",
+      "param"
+    ]
+  },
+  "KafkaJSStaleTopicMetadataAssignment": {
+    "constructor": [
+      "e",
+      "param"
+    ]
+  },
+  "KafkaJSDeleteGroupsError": {
+    "constructor": [
+      "e",
+      "param"
+    ]
+  },
+  "KafkaJSServerDoesNotSupportApiKey": {
+    "constructor": [
+      "e",
+      "param"
+    ]
+  },
+  "KafkaJSBrokerNotFound": {
+    "constructor": []
+  },
+  "KafkaJSPartialMessageError": {
+    "constructor": []
+  },
+  "KafkaJSSASLAuthenticationError": {
+    "constructor": []
+  },
+  "KafkaJSGroupCoordinatorNotFound": {
+    "constructor": []
+  },
+  "KafkaJSNotImplemented": {
+    "constructor": []
+  },
+  "KafkaJSTimeout": {
+    "constructor": []
+  },
+  "KafkaJSLockTimeout": {
+    "constructor": []
+  },
+  "KafkaJSUnsupportedMagicByteInMessageSet": {
+    "constructor": []
+  },
+  "KafkaJSDeleteTopicRecordsError": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "KafkaJSInvariantViolation": {
+    "constructor": [
+      "e"
+    ]
+  },
+  "KafkaJSInvalidVarIntError": {
+    "constructor": []
+  },
+  "KafkaJSInvalidLongError": {
+    "constructor": []
+  },
+  "KafkaJSCreateTopicError": {
+    "constructor": [
+      "e",
+      "topicName"
+    ]
+  },
+  "KafkaJSAlterPartitionReassignmentsError": {
+    "constructor": [
+      "e",
+      "topicName",
+      "partition"
+    ]
+  },
+  "KafkaJSAggregateError": {
+    "constructor": [
+      "message",
+      "errors"
+    ]
+  },
+  "KafkaJSFetcherRebalanceError": {},
+  "KafkaJSNoBrokerAvailableError": {
+    "constructor": []
+  },
+  "isRebalancing": [
+    "e"
+  ],
+  "isKafkaJSError": [
+    "e"
+  ],
+  "nextId": [],
+  "InstrumentationEvent": {
+    "constructor": [
+      "type",
+      "payload"
+    ]
+  },
+  "createLevel": [
+    "label",
+    "level",
+    "currentLevel",
+    "namespace",
+    "logFunction"
+  ],
+  "evaluateLogLevel": [
+    "logLevel"
+  ],
+  "createLogger": [
+    "param"
+  ],
+  "createNamespace": [
+    "namespace",
+    "param"
+  ],
+  "createLogFunctions": [
+    "namespace",
+    "param"
+  ],
+  "currentLogLevel": [],
+  "requestInfo": [
+    "param"
+  ],
+  "isAuthenticatedRequest": [
+    "request"
+  ],
+  "log": [
+    "level"
+  ],
+  "onConnect": [],
+  "onData": [
+    "data"
+  ],
+  "onEnd": [],
+  "onError": [
+    "e"
+  ],
+  "onTimeout": [],
+  "sendRequest": [],
+  "findTransactionCoordinator": [],
+  "transactionalGuard": [],
+  "isOngoing": [],
+  "guard": [
+    "object",
+    "method",
+    "param"
+  ],
+  "transaction": [],
+  "isActive": [],
+  "transactionGuard": [
+    "fn"
+  ],
+  "validateConnectionStatus": [],
+  "sendBatch": [
+    "param"
+  ],
+  "send": [
+    "param"
+  ],
+  "toPositive": [
+    "x"
+  ],
+  "toNodeCompatible": [
+    "crypto"
+  ],
+  "createProducerRequests": [
+    "responsePerBroker"
+  ],
+  "unknownErrorCode": [
+    "errorCode"
+  ],
+  "failure": [
+    "code"
+  ],
+  "createErrorFromCode": [
+    "code"
+  ],
+  "failIfVersionNotSupported": [
+    "code"
+  ],
+  "staleMetadata": [
+    "e"
+  ],
+  "lookupCodec": [
+    "type"
+  ],
+  "lookupCodecByAttributes": [
+    "attributes"
+  ],
+  "decodeMessage": [
+    "decoder",
+    "magicByte"
+  ],
+  "EntriesDecoder": [
+    "decoder",
+    "compressedMessage"
+  ],
+  "EntryDecoder": [
+    "decoder"
+  ],
+  "crc32C": [
+    "buffer"
+  ],
+  "unsigned": [
+    "value"
+  ],
+  "sizeOfHeaders": [
+    "headersArray"
+  ],
+  "decodeRecords": [
+    "codec",
+    "recordsDecoder",
+    "recordContext"
+  ],
+  "decodeRecord": [
+    "decoder",
+    "recordContext"
+  ],
+  "RecordBatch": [
+    "param"
+  ],
+  "compressRecords": [
+    "compression",
+    "records"
+  ],
+  "decode": [
+    "rawData"
+  ],
+  "parse": [
+    "data"
+  ],
+  "encodeTopic": [
+    "param"
+  ],
+  "encodePartition": [
+    "param"
+  ],
+  "decodeError": [
+    "decoder"
+  ],
+  "decodePartitionError": [
+    "decoder"
+  ],
+  "encodeResource": [
+    "param"
+  ],
+  "encodeConfigEntries": [
+    "param"
+  ],
+  "decodeResources": [
+    "decoder"
+  ],
+  "encodeTopics": [
+    "param"
+  ],
+  "encodePartitionAssignment": [
+    "param"
+  ],
+  "encodeReplicas": [
+    "replica"
+  ],
+  "decodeResponses": [
+    "decoder"
+  ],
+  "apiVersion": [
+    "decoder"
+  ],
+  "encodeCreations": [
+    "param"
+  ],
+  "decodeCreationResponse": [
+    "decoder"
+  ],
+  "encodeTopicPartitions": [
+    "param"
+  ],
+  "encodeAssignments": [
+    "brokerIds"
+  ],
+  "topicNameComparator": [
+    "a",
+    "b"
+  ],
+  "topicErrors": [
+    "decoder"
+  ],
+  "encodeReplicaAssignment": [
+    "param"
+  ],
+  "encodeFilters": [
+    "param"
+  ],
+  "decodeMatchingAcls": [
+    "decoder"
+  ],
+  "decodeFilterResponse": [
+    "decoder"
+  ],
+  "encodeGroups": [
+    "group"
+  ],
+  "decodeGroup": [
+    "decoder"
+  ],
+  "decodeAcls": [
+    "decoder"
+  ],
+  "decodeConfigEntries": [
+    "decoder"
+  ],
+  "decodeSynonyms": [
+    "decoder"
+  ],
+  "decoderMember": [
+    "decoder"
+  ],
+  "requestTimeout": [
+    "param"
+  ],
+  "decodePartition": [
+    "decoder"
+  ],
+  "decodeResponse": [
+    "decoder"
+  ],
+  "encodeForgottenTopics": [
+    "param"
+  ],
+  "decodeAbortedTransactions": [
+    "decoder"
+  ],
+  "decodeMessages": [
+    "decoder"
+  ],
+  "findApiName": [
+    "apiKey"
+  ],
+  "lookup": [
+    "versions"
+  ],
+  "logResponseError": [
+    "memberId"
+  ],
+  "encodeGroupProtocols": [
+    "param"
+  ],
+  "encodeMember": [
+    "param"
+  ],
+  "decodeMembers": [
+    "decoder"
+  ],
+  "decodeOffsets": [
+    "decoder"
+  ],
+  "encodePartitions": [
+    "param"
+  ],
+  "decodeReplicas": [
+    "decoder"
+  ],
+  "decodeTopics": [
+    "decoder"
+  ],
+  "broker": [
+    "decoder"
+  ],
+  "topicMetadata": [
+    "decoder"
+  ],
+  "partitionMetadata": [
+    "decoder"
+  ],
+  "partition": [
+    "decoder"
+  ],
+  "topicEncoder": [
+    "compression"
+  ],
+  "partitionsEncoder": [
+    "compression"
+  ],
+  "encodeGroupAssignment": [
+    "param"
+  ],
+  "decodeTopic": [
+    "decoder"
+  ],
+  "formatExtensions": [
+    "extensions"
+  ],
+  "random": [
+    "min",
+    "max"
+  ],
+  "randomFromRetryTime": [
+    "factor",
+    "retryTime"
+  ],
+  "isErrorUnrecoverable": [
+    "e"
+  ],
+  "isErrorRetriable": [
+    "error"
+  ],
+  "createRetriable": [
+    "configs",
+    "resolve",
+    "reject",
+    "fn"
+  ],
+  "bail": [
+    "error"
+  ],
+  "calculateExponentialRetryTime": [
+    "retryTime"
+  ],
+  "retry": [
+    "retryTime",
+    "param"
+  ],
+  "scheduleRetry": [],
+  "tryToAcquire": [],
+  "Long": {
+    "constructor": [
+      "value"
+    ],
+    "isLong": [
+      "obj"
+    ],
+    "fromBits": [
+      "value"
+    ],
+    "fromInt": [
+      "value"
+    ],
+    "fromNumber": [
+      "value"
+    ],
+    "fromValue": [
+      "val"
+    ],
+    "fromString": [
+      "str"
+    ],
+    "isZero": [],
+    "isNegative": [],
+    "toString": [],
+    "toNumber": [],
+    "toInt": [],
+    "toJSON": [],
+    "shiftLeft": [
+      "numBits"
+    ],
+    "shiftRight": [
+      "numBits"
+    ],
+    "or": [
+      "other"
+    ],
+    "xor": [
+      "other"
+    ],
+    "and": [
+      "other"
+    ],
+    "not": [],
+    "shiftRightUnsigned": [
+      "numBits"
+    ],
+    "equals": [
+      "other"
+    ],
+    "greaterThanOrEqual": [
+      "other"
+    ],
+    "gte": [
+      "other"
+    ],
+    "notEquals": [
+      "other"
+    ],
+    "add": [
+      "addend"
+    ],
+    "subtract": [
+      "subtrahend"
+    ],
+    "multiply": [
+      "multiplier"
+    ],
+    "divide": [
+      "divisor"
+    ],
+    "compare": [
+      "other"
+    ],
+    "lessThan": [
+      "other"
+    ],
+    "negate": [],
+    "getHighBits": [],
+    "getLowBits": []
+  },
+  "seq": [
+    "count",
+    "param"
+  ],
+  "uniq": [
+    "arr"
+  ],
+  "checkCondition": [
+    "resolve",
+    "reject"
+  ],
+  "stripLeading": [
+    "char"
+  ]
+}

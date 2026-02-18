@@ -1,0 +1,677 @@
+{
+  "usage": [],
+  "createInstance": [],
+  "printDiff": [
+    "delta"
+  ],
+  "getJson": [
+    "path"
+  ],
+  "assertNonEmptyArray": [
+    "arr",
+    "message"
+  ],
+  "assertArrayHasExactly2": [
+    "arr",
+    "message"
+  ],
+  "assertArrayHasExactly1": [
+    "arr",
+    "message"
+  ],
+  "assertArrayHasAtLeast2": [
+    "arr",
+    "message"
+  ],
+  "isNonEmptyArray": [
+    "arr"
+  ],
+  "isArrayWithAtLeast2": [
+    "arr"
+  ],
+  "isArrayWithAtLeast3": [
+    "arr"
+  ],
+  "isArrayWithExactly1": [
+    "arr"
+  ],
+  "isArrayWithExactly2": [
+    "arr"
+  ],
+  "isArrayWithExactly3": [
+    "arr"
+  ],
+  "lastNonEmpty": [
+    "arr"
+  ],
+  "cloneRegExp": [
+    "re"
+  ],
+  "clone": [
+    "value"
+  ],
+  "Context": {
+    "setResult": [
+      "result"
+    ],
+    "exit": [],
+    "push": [
+      "child",
+      "name"
+    ]
+  },
+  "DiffContext": {
+    "constructor": [
+      "left",
+      "right"
+    ],
+    "prepareDeltaResult": [
+      "result"
+    ],
+    "setResult": [
+      "result"
+    ]
+  },
+  "PatchContext": {
+    "constructor": [
+      "left",
+      "delta"
+    ]
+  },
+  "ReverseContext": {
+    "constructor": [
+      "delta"
+    ]
+  },
+  "dateReviver": [
+    "_key",
+    "value"
+  ],
+  "DiffPatcher": {
+    "constructor": [
+      "options"
+    ],
+    "options": [
+      "options"
+    ],
+    "diff": [
+      "left",
+      "right"
+    ],
+    "patch": [
+      "left",
+      "delta"
+    ],
+    "reverse": [
+      "delta"
+    ],
+    "unpatch": [
+      "right",
+      "delta"
+    ],
+    "clone": [
+      "value"
+    ]
+  },
+  "arraysHaveMatchByRef": [
+    "array1",
+    "array2",
+    "len1",
+    "len2"
+  ],
+  "matchItems": [
+    "array1",
+    "array2",
+    "index1",
+    "index2",
+    "context"
+  ],
+  "diffFilter": [
+    "context"
+  ],
+  "patchFilter": [
+    "context"
+  ],
+  "collectChildrenPatchFilter": [
+    "context"
+  ],
+  "reverseFilter": [
+    "context"
+  ],
+  "reverseArrayDeltaIndex": [
+    "delta",
+    "index",
+    "itemDelta"
+  ],
+  "collectChildrenReverseFilter": [
+    "context"
+  ],
+  "defaultMatch": [
+    "array1",
+    "array2",
+    "index1",
+    "index2"
+  ],
+  "lengthMatrix": [
+    "array1",
+    "array2",
+    "match",
+    "context"
+  ],
+  "backtrack": [
+    "matrix",
+    "array1",
+    "array2",
+    "context"
+  ],
+  "get": [
+    "obj",
+    "path"
+  ],
+  "collectChildrenDiffFilter": [
+    "context"
+  ],
+  "objectsDiffFilter": [
+    "context"
+  ],
+  "getDiffMatchPatch": [
+    "options",
+    "required"
+  ],
+  "textDeltaReverse": [
+    "delta"
+  ],
+  "AnnotatedFormatter": {
+    "constructor": [],
+    "prepareContext": [
+      "context"
+    ],
+    "typeFormattterErrorFormatter": [
+      "context",
+      "err"
+    ],
+    "formatTextDiffString": [
+      "context",
+      "value"
+    ],
+    "rootBegin": [
+      "context",
+      "type",
+      "nodeType"
+    ],
+    "rootEnd": [
+      "context",
+      "type"
+    ],
+    "nodeBegin": [
+      "context",
+      "key",
+      "_leftKey",
+      "type",
+      "nodeType"
+    ],
+    "nodeEnd": [
+      "context",
+      "_key",
+      "_leftKey",
+      "type",
+      "_nodeType",
+      "isLast"
+    ],
+    "format_unchanged": [],
+    "format_movedestination": [],
+    "format_node": [
+      "context",
+      "delta",
+      "left"
+    ],
+    "format_added": [
+      "context",
+      "delta",
+      "left",
+      "key",
+      "leftKey"
+    ],
+    "format_modified": [
+      "context",
+      "delta",
+      "left",
+      "key",
+      "leftKey"
+    ],
+    "format_deleted": [
+      "context",
+      "delta",
+      "left",
+      "key",
+      "leftKey"
+    ],
+    "format_moved": [
+      "context",
+      "delta",
+      "left",
+      "key",
+      "leftKey"
+    ],
+    "format_textdiff": [
+      "context",
+      "delta",
+      "left",
+      "key",
+      "leftKey"
+    ]
+  },
+  "wrapPropertyName": [
+    "name"
+  ],
+  "formatAnyChange": [
+    "context",
+    "delta",
+    "left",
+    "key",
+    "leftKey"
+  ],
+  "format": [
+    "delta"
+  ],
+  "BaseFormatter": {
+    "format": [
+      "delta",
+      "left"
+    ],
+    "prepareContext": [
+      "context"
+    ],
+    "typeFormattterNotFound": [
+      "_context",
+      "deltaType"
+    ],
+    "typeFormattterErrorFormatter": [
+      "_context",
+      "_err",
+      "_delta",
+      "_leftValue",
+      "_key",
+      "_leftKey",
+      "_movedFrom"
+    ],
+    "finalize": [
+      "param"
+    ],
+    "recurse": [
+      "context",
+      "delta",
+      "left",
+      "key",
+      "leftKey",
+      "movedFrom",
+      "isLast"
+    ],
+    "formatDeltaChildren": [
+      "context",
+      "delta",
+      "left"
+    ],
+    "forEachDeltaKey": [
+      "delta",
+      "left",
+      "fn"
+    ],
+    "getDeltaType": [
+      "delta",
+      "movedFrom"
+    ],
+    "parseTextDiff": [
+      "value"
+    ]
+  },
+  "addKey": [
+    "param"
+  ],
+  "flushLastKey": [],
+  "ConsoleFormatter": {
+    "constructor": [],
+    "prepareContext": [
+      "context"
+    ],
+    "typeFormattterErrorFormatter": [
+      "context",
+      "err"
+    ],
+    "formatValue": [
+      "context",
+      "value"
+    ],
+    "formatTextDiffString": [
+      "context",
+      "value"
+    ],
+    "rootBegin": [
+      "context",
+      "type",
+      "nodeType"
+    ],
+    "rootEnd": [
+      "context",
+      "type",
+      "nodeType"
+    ],
+    "nodeBegin": [
+      "context",
+      "key",
+      "leftKey",
+      "type",
+      "nodeType"
+    ],
+    "nodeEnd": [
+      "context",
+      "_key",
+      "_leftKey",
+      "type",
+      "nodeType",
+      "isLast"
+    ],
+    "format_unchanged": [
+      "context",
+      "_delta",
+      "left"
+    ],
+    "format_movedestination": [
+      "context",
+      "_delta",
+      "left"
+    ],
+    "format_node": [
+      "context",
+      "delta",
+      "left"
+    ],
+    "format_added": [
+      "context",
+      "delta"
+    ],
+    "format_modified": [
+      "context",
+      "delta"
+    ],
+    "format_deleted": [
+      "context",
+      "delta"
+    ],
+    "format_moved": [
+      "context",
+      "delta"
+    ],
+    "format_textdiff": [
+      "context",
+      "delta"
+    ]
+  },
+  "log": [
+    "delta"
+  ],
+  "getBrushes": [],
+  "replaceClose": [
+    "text",
+    "close",
+    "replace",
+    "index"
+  ],
+  "brush": [
+    "open",
+    "close",
+    "param"
+  ],
+  "combineBrushes": [
+    "param"
+  ],
+  "HtmlFormatter": {
+    "typeFormattterErrorFormatter": [
+      "context",
+      "err"
+    ],
+    "formatValue": [
+      "context",
+      "value"
+    ],
+    "formatTextDiffString": [
+      "context",
+      "value"
+    ],
+    "rootBegin": [
+      "context",
+      "type",
+      "nodeType"
+    ],
+    "rootEnd": [
+      "context"
+    ],
+    "nodeBegin": [
+      "context",
+      "key",
+      "leftKey",
+      "type",
+      "nodeType"
+    ],
+    "nodeEnd": [
+      "context"
+    ],
+    "format_unchanged": [
+      "context",
+      "_delta",
+      "left"
+    ],
+    "format_movedestination": [
+      "context",
+      "_delta",
+      "left"
+    ],
+    "format_node": [
+      "context",
+      "delta",
+      "left"
+    ],
+    "format_added": [
+      "context",
+      "delta"
+    ],
+    "format_modified": [
+      "context",
+      "delta"
+    ],
+    "format_deleted": [
+      "context",
+      "delta"
+    ],
+    "format_moved": [
+      "context",
+      "delta"
+    ],
+    "format_textdiff": [
+      "context",
+      "delta"
+    ]
+  },
+  "htmlEscape": [
+    "value"
+  ],
+  "adjustArrows": [
+    "nodeArg"
+  ],
+  "getElementText": [
+    "param"
+  ],
+  "eachByQuery": [
+    "el",
+    "query",
+    "fn"
+  ],
+  "eachChildren": [
+    "param",
+    "fn"
+  ],
+  "showUnchanged": [
+    "show",
+    "node",
+    "delay"
+  ],
+  "hideUnchanged": [
+    "node",
+    "delay"
+  ],
+  "applyJsonPatchRFC6902": [
+    "target",
+    "patch"
+  ],
+  "rollback": [
+    "target",
+    "log",
+    "patchError"
+  ],
+  "parsePathFromRFC6902": [
+    "path"
+  ],
+  "add": [
+    "obj",
+    "path",
+    "value"
+  ],
+  "remove": [
+    "obj",
+    "path"
+  ],
+  "unadd": [
+    "obj",
+    "path",
+    "previousValue"
+  ],
+  "replace": [
+    "obj",
+    "path",
+    "value"
+  ],
+  "move": [
+    "obj",
+    "path",
+    "from"
+  ],
+  "copy": [
+    "obj",
+    "path",
+    "from"
+  ],
+  "test": [
+    "obj",
+    "path",
+    "value"
+  ],
+  "JSONFormatter": {
+    "format": [
+      "delta"
+    ]
+  },
+  "formatPropertyNameForRFC6902": [
+    "path"
+  ],
+  "create": [
+    "options"
+  ],
+  "diff": [
+    "left",
+    "right"
+  ],
+  "patch": [
+    "left",
+    "delta"
+  ],
+  "unpatch": [
+    "right",
+    "delta"
+  ],
+  "reverse": [
+    "delta"
+  ],
+  "moveOpsFromPositionDeltas": [
+    "indexDelta"
+  ],
+  "pickNextMove": [
+    "deltas"
+  ],
+  "Pipe": {
+    "constructor": [
+      "name"
+    ],
+    "process": [
+      "input"
+    ],
+    "log": [
+      "msg"
+    ],
+    "append": [
+      "param"
+    ],
+    "prepend": [
+      "param"
+    ],
+    "indexOf": [
+      "filterName"
+    ],
+    "list": [],
+    "after": [
+      "filterName",
+      "param"
+    ],
+    "before": [
+      "filterName",
+      "param"
+    ],
+    "replace": [
+      "filterName",
+      "param"
+    ],
+    "remove": [
+      "filterName"
+    ],
+    "clear": [],
+    "shouldHaveResult": [
+      "should"
+    ]
+  },
+  "Processor": {
+    "constructor": [
+      "options"
+    ],
+    "options": [
+      "options"
+    ],
+    "pipe": [
+      "name",
+      "pipeArg"
+    ],
+    "process": [
+      "input",
+      "pipe"
+    ]
+  },
+  "isAddedDelta": [
+    "delta"
+  ],
+  "isModifiedDelta": [
+    "delta"
+  ],
+  "isDeletedDelta": [
+    "delta"
+  ],
+  "isObjectDelta": [
+    "delta"
+  ],
+  "isArrayDelta": [
+    "delta"
+  ],
+  "isMovedDelta": [
+    "delta"
+  ],
+  "isTextDiffDelta": [
+    "delta"
+  ]
+}

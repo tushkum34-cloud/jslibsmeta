@@ -1,0 +1,354 @@
+{
+  "FifoQueue": {
+    "_workerQueues": [],
+    "_sharedQueue": [],
+    "enqueue": [
+      "task",
+      "workerId"
+    ],
+    "dequeue": [
+      "workerId"
+    ]
+  },
+  "MinHeap": {
+    "_heap": [],
+    "peek": [],
+    "add": [
+      "item"
+    ],
+    "poll": []
+  },
+  "PriorityQueue": {
+    "_queue": [],
+    "_sharedQueue": [],
+    "constructor": [
+      "_computePriority"
+    ],
+    "enqueue": [
+      "task",
+      "workerId"
+    ],
+    "_enqueue": [
+      "task",
+      "queue"
+    ],
+    "dequeue": [
+      "workerId"
+    ],
+    "_getWorkerQueue": [
+      "workerId"
+    ]
+  },
+  "Worker_2": {
+    "_ending": [],
+    "_farm": [],
+    "_options": [],
+    "_workerPool": [],
+    "constructor": [
+      "workerPath",
+      "options"
+    ],
+    "_bindExposedWorkerMethods": [],
+    "_callFunctionWithArgs": [],
+    "getStderr": [],
+    "getStdout": [],
+    "start": [],
+    "end": []
+  },
+  "_interopRequireDefault": [
+    "e"
+  ],
+  "Farm": {
+    "_computeWorkerKey": [],
+    "_workerSchedulingPolicy": [],
+    "_cacheKeys": [],
+    "_locks": [],
+    "_offset": [],
+    "_taskQueue": [],
+    "constructor": [
+      "_numOfWorkers",
+      "_callback",
+      "param"
+    ],
+    "doWork": [
+      "method",
+      "param"
+    ],
+    "_process": [
+      "workerId"
+    ],
+    "_push": [
+      "task"
+    ],
+    "_getNextWorkerOffset": [],
+    "_lock": [
+      "workerId"
+    ],
+    "_unlock": [
+      "workerId"
+    ],
+    "_isLocked": [
+      "workerId"
+    ]
+  },
+  "addCustomMessageListener": [
+    "listener"
+  ],
+  "onCustomMessage": [
+    "message"
+  ],
+  "onStart": [
+    "worker"
+  ],
+  "onEnd": [
+    "error",
+    "result"
+  ],
+  "InternalQueue": {
+    "_head": [],
+    "_last": [],
+    "enqueue": [
+      "value"
+    ],
+    "dequeue": [],
+    "peek": [],
+    "peekLast": []
+  },
+  "WorkerPool": {
+    "send": [
+      "workerId",
+      "request",
+      "onStart",
+      "onEnd",
+      "onCustomMessage"
+    ],
+    "createWorker": [
+      "workerOptions"
+    ]
+  },
+  "_mergeStream": [],
+  "emptyMethod": [],
+  "BaseWorkerPool": {
+    "_stderr": [],
+    "_stdout": [],
+    "_options": [],
+    "_workers": [],
+    "_workerPath": [],
+    "constructor": [
+      "workerPath",
+      "options"
+    ],
+    "getStderr": [],
+    "getStdout": [],
+    "getWorkers": [],
+    "getWorkerById": [
+      "workerId"
+    ],
+    "restartWorkerIfShutDown": [
+      "workerId"
+    ],
+    "createWorker": [
+      "_workerOptions"
+    ],
+    "start": [],
+    "end": []
+  },
+  "_child_process": [],
+  "_os": [],
+  "_supportsColor": [],
+  "ChildProcessWorker": {
+    "_child": [],
+    "_options": [],
+    "_request": [],
+    "_retries": [],
+    "_onProcessEnd": [],
+    "_onCustomMessage": [],
+    "_stdout": [],
+    "_stderr": [],
+    "_stderrBuffer": [],
+    "_memoryUsagePromise": [],
+    "_resolveMemoryUsage": [],
+    "_childIdleMemoryUsage": [],
+    "_childIdleMemoryUsageLimit": [],
+    "_memoryUsageCheck": [],
+    "_childWorkerPath": [],
+    "constructor": [
+      "options"
+    ],
+    "initialize": [],
+    "stderrDataHandler": [
+      "chunk"
+    ],
+    "_detectOutOfMemoryCrash": [],
+    "_onDisconnect": [],
+    "_onMessage": [
+      "response"
+    ],
+    "_performRestartIfRequired": [],
+    "_restart": [],
+    "_onExit": [
+      "exitCode",
+      "signal"
+    ],
+    "send": [
+      "request",
+      "onProcessStart",
+      "onProcessEnd",
+      "onCustomMessage"
+    ],
+    "waitForExit": [],
+    "killChild": [],
+    "forceExit": [],
+    "getWorkerId": [],
+    "getWorkerSystemId": [],
+    "getStdout": [],
+    "getStderr": [],
+    "getMemoryUsage": [],
+    "checkMemoryUsage": [],
+    "isWorkerRunning": []
+  },
+  "_worker_threads": [],
+  "ExperimentalWorker": {
+    "_worker": [],
+    "_options": [],
+    "_request": [],
+    "_retries": [],
+    "_onProcessEnd": [],
+    "_onCustomMessage": [],
+    "_stdout": [],
+    "_stderr": [],
+    "_memoryUsagePromise": [],
+    "_resolveMemoryUsage": [],
+    "_childWorkerPath": [],
+    "_childIdleMemoryUsage": [],
+    "_childIdleMemoryUsageLimit": [],
+    "_memoryUsageCheck": [],
+    "constructor": [
+      "options"
+    ],
+    "initialize": [],
+    "_onError": [
+      "error"
+    ],
+    "_onMessage": [
+      "response"
+    ],
+    "_onExit": [
+      "exitCode"
+    ],
+    "waitForExit": [],
+    "forceExit": [],
+    "send": [
+      "request",
+      "onProcessStart",
+      "onProcessEnd",
+      "onCustomMessage"
+    ],
+    "getWorkerId": [],
+    "getStdout": [],
+    "getStderr": [],
+    "_performRestartIfRequired": [],
+    "getMemoryUsage": [],
+    "checkMemoryUsage": [],
+    "getWorkerSystemId": [],
+    "isWorkerRunning": []
+  },
+  "_stream": [],
+  "WorkerAbstract": {
+    "_fakeStream": [],
+    "_exitPromise": [],
+    "_resolveExitPromise": [],
+    "_workerReadyPromise": [],
+    "_resolveWorkerReady": [],
+    "state": [
+      "value"
+    ],
+    "constructor": [
+      "options"
+    ],
+    "waitForWorkerReady": [],
+    "_shutdown": [],
+    "_getFakeStream": []
+  },
+  "isDataCloneError": [
+    "error"
+  ],
+  "_nodeUtil": [],
+  "messageParent": [
+    "message",
+    "param"
+  ],
+  "_structuredClone": [],
+  "packMessage": [
+    "message"
+  ],
+  "isTransferringContainer": [
+    "message"
+  ],
+  "unpackMessage": [
+    "message"
+  ],
+  "__webpack_require__": [
+    "moduleId"
+  ],
+  "_path": [],
+  "_url": [],
+  "getExposedMethods": [
+    "workerPath",
+    "options"
+  ],
+  "Worker": {
+    "_ending": [],
+    "_farm": [],
+    "_options": [],
+    "_workerPool": [],
+    "constructor": [
+      "workerPath",
+      "options"
+    ],
+    "_bindExposedWorkerMethods": [
+      "workerPath",
+      "options"
+    ],
+    "_callFunctionWithArgs": [
+      "method",
+      "param"
+    ],
+    "getStderr": [],
+    "getStdout": [],
+    "start": [],
+    "end": []
+  },
+  "_jestUtil": [],
+  "messageListener": [
+    "request"
+  ],
+  "reportSuccess": [
+    "result"
+  ],
+  "reportClientError": [
+    "error"
+  ],
+  "reportInitializeError": [
+    "error"
+  ],
+  "reportMemoryUsage": [],
+  "reportError": [
+    "error",
+    "type"
+  ],
+  "end": [],
+  "exitProcess": [],
+  "execMethod": [
+    "method",
+    "args"
+  ],
+  "execHelper": [],
+  "execFunction": [
+    "fn",
+    "ctx",
+    "args",
+    "onResult",
+    "onError"
+  ]
+}

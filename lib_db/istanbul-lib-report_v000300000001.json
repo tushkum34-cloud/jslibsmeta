@@ -1,0 +1,236 @@
+{
+  "defaultSourceLookup": [
+    "path"
+  ],
+  "normalizeWatermarks": [
+    "param"
+  ],
+  "Context": {
+    "constructor": [
+      "opts"
+    ],
+    "getWriter": [],
+    "getSource": [
+      "filePath"
+    ],
+    "classForPercent": [
+      "type",
+      "value"
+    ],
+    "getXMLWriter": [
+      "contentWriter"
+    ],
+    "getVisitor": [
+      "partialVisitor"
+    ],
+    "getTree": [
+      "param"
+    ]
+  },
+  "ContentWriter": {
+    "colorize": [
+      "str"
+    ],
+    "println": [
+      "str"
+    ],
+    "close": []
+  },
+  "FileContentWriter": {
+    "constructor": [
+      "fd"
+    ],
+    "write": [
+      "str"
+    ],
+    "close": []
+  },
+  "ConsoleWriter": {
+    "write": [
+      "str"
+    ],
+    "colorize": [
+      "str",
+      "clazz"
+    ]
+  },
+  "FileWriter": {
+    "constructor": [
+      "baseDir"
+    ],
+    "startCapture": [],
+    "stopCapture": [],
+    "getOutput": [],
+    "resetOutput": [],
+    "writerForDir": [
+      "subdir"
+    ],
+    "copyFile": [
+      "source",
+      "dest",
+      "header"
+    ],
+    "writeFile": [
+      "file"
+    ]
+  },
+  "makeRelativeNormalizedPath": [
+    "str",
+    "sep"
+  ],
+  "Path": {
+    "constructor": [
+      "strOrArray"
+    ],
+    "toString": [],
+    "hasParent": [],
+    "parent": [],
+    "elements": [],
+    "name": [],
+    "contains": [
+      "other"
+    ],
+    "ancestorOf": [
+      "other"
+    ],
+    "descendantOf": [
+      "other"
+    ],
+    "commonPrefixPath": [
+      "other"
+    ],
+    "compare": [
+      "a",
+      "b"
+    ]
+  },
+  "ReportBase": {
+    "constructor": [
+      "param"
+    ],
+    "execute": [
+      "context"
+    ]
+  },
+  "ReportNode": {
+    "constructor": [
+      "path",
+      "fileCoverage"
+    ],
+    "createRoot": [
+      "children"
+    ],
+    "addChild": [
+      "child"
+    ],
+    "asRelative": [
+      "p"
+    ],
+    "getQualifiedName": [],
+    "getRelativeName": [],
+    "getParent": [],
+    "getChildren": [],
+    "isSummary": [],
+    "getFileCoverage": [],
+    "getCoverageSummary": [
+      "filesOnly"
+    ]
+  },
+  "ReportTree": {
+    "constructor": [
+      "root",
+      "childPrefix"
+    ]
+  },
+  "maybePrefix": [
+    "node"
+  ],
+  "findCommonParent": [
+    "paths"
+  ],
+  "findOrCreateParent": [
+    "parentPath",
+    "nodeMap",
+    "param"
+  ],
+  "toDirParents": [
+    "list"
+  ],
+  "addAllPaths": [
+    "topPaths",
+    "nodeMap",
+    "path",
+    "node"
+  ],
+  "foldIntoOneDir": [
+    "node",
+    "parent"
+  ],
+  "pkgSummaryPrefix": [
+    "dirParents",
+    "commonParent"
+  ],
+  "SummarizerFactory": {
+    "constructor": [
+      "coverageMap",
+      "param"
+    ],
+    "defaultSummarizer": [],
+    "flat": [],
+    "_createPkg": [],
+    "pkg": [],
+    "_createNested": [],
+    "nested": []
+  },
+  "Visitor": {
+    "constructor": [
+      "delegate"
+    ]
+  },
+  "CompositeVisitor": {
+    "constructor": [
+      "visitors"
+    ]
+  },
+  "BaseNode": {
+    "isRoot": [],
+    "visit": [
+      "visitor",
+      "state"
+    ]
+  },
+  "BaseTree": {
+    "constructor": [
+      "root"
+    ],
+    "getRoot": [],
+    "visit": [
+      "visitor",
+      "state"
+    ]
+  },
+  "attrString": [
+    "attrs"
+  ],
+  "XMLWriter": {
+    "constructor": [
+      "contentWriter"
+    ],
+    "indent": [
+      "str"
+    ],
+    "openTag": [
+      "name",
+      "attrs"
+    ],
+    "closeTag": [
+      "name"
+    ],
+    "inlineTag": [
+      "name",
+      "attrs",
+      "content"
+    ],
+    "closeAll": []
+  }
+}

@@ -1,0 +1,962 @@
+{
+  "CompactEncrypt": {
+    "constructor": [
+      "plaintext"
+    ],
+    "setContentEncryptionKey": [
+      "cek"
+    ],
+    "setInitializationVector": [
+      "iv"
+    ],
+    "setProtectedHeader": [
+      "protectedHeader"
+    ],
+    "setKeyManagementParameters": [
+      "parameters"
+    ],
+    "encrypt": [
+      "key",
+      "options"
+    ]
+  },
+  "FlattenedEncrypt": {
+    "constructor": [
+      "plaintext"
+    ],
+    "setKeyManagementParameters": [
+      "parameters"
+    ],
+    "setProtectedHeader": [
+      "protectedHeader"
+    ],
+    "setSharedUnprotectedHeader": [
+      "sharedUnprotectedHeader"
+    ],
+    "setUnprotectedHeader": [
+      "unprotectedHeader"
+    ],
+    "setAdditionalAuthenticatedData": [
+      "aad"
+    ],
+    "setContentEncryptionKey": [
+      "cek"
+    ],
+    "setInitializationVector": [
+      "iv"
+    ],
+    "encrypt": [
+      "key",
+      "options"
+    ]
+  },
+  "GeneralEncrypt": {
+    "constructor": [
+      "plaintext"
+    ],
+    "addRecipient": [
+      "key",
+      "options"
+    ],
+    "setProtectedHeader": [
+      "protectedHeader"
+    ],
+    "setSharedUnprotectedHeader": [
+      "sharedUnprotectedHeader"
+    ],
+    "setAdditionalAuthenticatedData": [
+      "aad"
+    ],
+    "encrypt": []
+  },
+  "CompactSign": {
+    "constructor": [
+      "payload"
+    ],
+    "setProtectedHeader": [
+      "protectedHeader"
+    ],
+    "sign": [
+      "key",
+      "options"
+    ]
+  },
+  "FlattenedSign": {
+    "constructor": [
+      "payload"
+    ],
+    "setProtectedHeader": [
+      "protectedHeader"
+    ],
+    "setUnprotectedHeader": [
+      "unprotectedHeader"
+    ],
+    "sign": [
+      "key",
+      "options"
+    ]
+  },
+  "GeneralSign": {
+    "constructor": [
+      "payload"
+    ],
+    "addSignature": [
+      "key",
+      "options"
+    ],
+    "sign": []
+  },
+  "EncryptJWT": {
+    "constructor": [
+      "param"
+    ],
+    "setIssuer": [
+      "issuer"
+    ],
+    "setSubject": [
+      "subject"
+    ],
+    "setAudience": [
+      "audience"
+    ],
+    "setJti": [
+      "jwtId"
+    ],
+    "setNotBefore": [
+      "input"
+    ],
+    "setExpirationTime": [
+      "input"
+    ],
+    "setIssuedAt": [
+      "input"
+    ],
+    "setProtectedHeader": [
+      "protectedHeader"
+    ],
+    "setKeyManagementParameters": [
+      "parameters"
+    ],
+    "setContentEncryptionKey": [
+      "cek"
+    ],
+    "setInitializationVector": [
+      "iv"
+    ],
+    "replicateIssuerAsHeader": [],
+    "replicateSubjectAsHeader": [],
+    "replicateAudienceAsHeader": [],
+    "encrypt": [
+      "key",
+      "options"
+    ]
+  },
+  "SignJWT": {
+    "constructor": [
+      "param"
+    ],
+    "setIssuer": [
+      "issuer"
+    ],
+    "setSubject": [
+      "subject"
+    ],
+    "setAudience": [
+      "audience"
+    ],
+    "setJti": [
+      "jwtId"
+    ],
+    "setNotBefore": [
+      "input"
+    ],
+    "setExpirationTime": [
+      "input"
+    ],
+    "setIssuedAt": [
+      "input"
+    ],
+    "setProtectedHeader": [
+      "protectedHeader"
+    ],
+    "sign": [
+      "key",
+      "options"
+    ]
+  },
+  "UnsecuredJWT": {
+    "constructor": [
+      "param"
+    ],
+    "encode": [],
+    "setIssuer": [
+      "issuer"
+    ],
+    "setSubject": [
+      "subject"
+    ],
+    "setAudience": [
+      "audience"
+    ],
+    "setJti": [
+      "jwtId"
+    ],
+    "setNotBefore": [
+      "input"
+    ],
+    "setExpirationTime": [
+      "input"
+    ],
+    "setIssuedAt": [
+      "input"
+    ],
+    "decode": [
+      "jwt",
+      "options"
+    ]
+  },
+  "JOSEError": {
+    "code": [],
+    "constructor": [
+      "message",
+      "options"
+    ]
+  },
+  "JWTClaimValidationFailed": {
+    "code": [],
+    "claim": [],
+    "reason": [],
+    "payload": [],
+    "constructor": [
+      "message",
+      "payload",
+      "param",
+      "param"
+    ]
+  },
+  "JWTExpired": {
+    "code": [],
+    "claim": [],
+    "reason": [],
+    "payload": [],
+    "constructor": [
+      "message",
+      "payload",
+      "param",
+      "param"
+    ]
+  },
+  "JOSEAlgNotAllowed": {
+    "code": []
+  },
+  "JOSENotSupported": {
+    "code": []
+  },
+  "JWEDecryptionFailed": {
+    "code": [],
+    "constructor": [
+      "param",
+      "options"
+    ]
+  },
+  "JWEInvalid": {
+    "code": []
+  },
+  "JWSInvalid": {
+    "code": []
+  },
+  "JWTInvalid": {
+    "code": []
+  },
+  "JWKInvalid": {
+    "code": []
+  },
+  "JWKSInvalid": {
+    "code": []
+  },
+  "JWKSNoMatchingKey": {
+    "code": [],
+    "constructor": [
+      "param",
+      "options"
+    ]
+  },
+  "JWKSMultipleMatchingKeys": {
+    "code": [],
+    "constructor": [
+      "param",
+      "options"
+    ]
+  },
+  "JWKSTimeout": {
+    "code": [],
+    "constructor": [
+      "param",
+      "options"
+    ]
+  },
+  "JWSSignatureVerificationFailed": {
+    "code": [],
+    "constructor": [
+      "param",
+      "options"
+    ]
+  },
+  "compactDecrypt": [
+    "jwe",
+    "key",
+    "options"
+  ],
+  "flattenedDecrypt": [
+    "jwe",
+    "key",
+    "options"
+  ],
+  "generalDecrypt": [
+    "jwe",
+    "key",
+    "options"
+  ],
+  "IndividualRecipient": {
+    "unprotectedHeader": [],
+    "keyManagementParameters": [],
+    "key": [],
+    "options": [],
+    "constructor": [
+      "enc",
+      "key",
+      "options"
+    ],
+    "setUnprotectedHeader": [
+      "unprotectedHeader"
+    ],
+    "setKeyManagementParameters": [
+      "parameters"
+    ],
+    "addRecipient": [
+      "param"
+    ],
+    "encrypt": [
+      "param"
+    ],
+    "done": []
+  },
+  "EmbeddedJWK": [
+    "protectedHeader",
+    "token"
+  ],
+  "check": [
+    "value",
+    "description"
+  ],
+  "calculateJwkThumbprint": [
+    "key",
+    "digestAlgorithm"
+  ],
+  "calculateJwkThumbprintUri": [
+    "key",
+    "digestAlgorithm"
+  ],
+  "getKtyFromAlg": [
+    "alg"
+  ],
+  "isJWKSLike": [
+    "jwks"
+  ],
+  "isJWKLike": [
+    "key"
+  ],
+  "LocalJWKSet": {
+    "constructor": [
+      "jwks"
+    ],
+    "jwks": [],
+    "getKey": [
+      "protectedHeader",
+      "token"
+    ]
+  },
+  "importWithAlgCache": [
+    "cache",
+    "jwk",
+    "alg"
+  ],
+  "createLocalJWKSet": [
+    "jwks"
+  ],
+  "localJWKSet": [
+    "protectedHeader",
+    "token"
+  ],
+  "isCloudflareWorkers": [],
+  "fetchJwks": [
+    "url",
+    "headers",
+    "signal",
+    "param"
+  ],
+  "isFreshJwksCache": [
+    "input",
+    "cacheMaxAge"
+  ],
+  "RemoteJWKSet": {
+    "constructor": [
+      "url",
+      "options"
+    ],
+    "pendingFetch": [],
+    "coolingDown": [],
+    "fresh": [],
+    "jwks": [],
+    "getKey": [
+      "protectedHeader",
+      "token"
+    ],
+    "reload": []
+  },
+  "createRemoteJWKSet": [
+    "url",
+    "options"
+  ],
+  "remoteJWKSet": [
+    "protectedHeader",
+    "token"
+  ],
+  "compactVerify": [
+    "jws",
+    "key",
+    "options"
+  ],
+  "flattenedVerify": [
+    "jws",
+    "key",
+    "options"
+  ],
+  "IndividualSignature": {
+    "protectedHeader": [],
+    "unprotectedHeader": [],
+    "options": [],
+    "key": [],
+    "constructor": [
+      "sig",
+      "key",
+      "options"
+    ],
+    "setProtectedHeader": [
+      "protectedHeader"
+    ],
+    "setUnprotectedHeader": [
+      "unprotectedHeader"
+    ],
+    "addSignature": [
+      "param"
+    ],
+    "sign": [
+      "param"
+    ],
+    "done": []
+  },
+  "generalVerify": [
+    "jws",
+    "key",
+    "options"
+  ],
+  "jwtDecrypt": [
+    "jwt",
+    "key",
+    "options"
+  ],
+  "jwtVerify": [
+    "jwt",
+    "key",
+    "options"
+  ],
+  "exportSPKI": [
+    "key"
+  ],
+  "exportPKCS8": [
+    "key"
+  ],
+  "exportJWK": [
+    "key"
+  ],
+  "getModulusLengthOption": [
+    "options"
+  ],
+  "generateKeyPair": [
+    "alg",
+    "options"
+  ],
+  "generateSecret": [
+    "alg",
+    "options"
+  ],
+  "importSPKI": [
+    "spki",
+    "alg",
+    "options"
+  ],
+  "importX509": [
+    "x509",
+    "alg",
+    "options"
+  ],
+  "importPKCS8": [
+    "pkcs8",
+    "alg",
+    "options"
+  ],
+  "importJWK": [
+    "jwk",
+    "alg",
+    "options"
+  ],
+  "wrap": [
+    "alg",
+    "key",
+    "cek",
+    "param",
+    "param"
+  ],
+  "unwrap": [
+    "alg",
+    "key",
+    "encryptedKey",
+    "p2c",
+    "p2s"
+  ],
+  "checkKeySize": [
+    "key",
+    "alg"
+  ],
+  "getCryptoKey": [
+    "key",
+    "alg"
+  ],
+  "formatPEM": [
+    "b64",
+    "descriptor"
+  ],
+  "genericExport": [
+    "keyType",
+    "keyFormat",
+    "key"
+  ],
+  "toSPKI": [
+    "key"
+  ],
+  "toPKCS8": [
+    "key"
+  ],
+  "bytesEqual": [
+    "a",
+    "b"
+  ],
+  "createASN1State": [
+    "data"
+  ],
+  "parseLength": [
+    "state"
+  ],
+  "skipElement": [
+    "state",
+    "param"
+  ],
+  "expectTag": [
+    "state",
+    "expectedTag",
+    "errorMessage"
+  ],
+  "getSubarray": [
+    "state",
+    "length"
+  ],
+  "parseAlgorithmOID": [
+    "state"
+  ],
+  "parsePKCS8Header": [
+    "state"
+  ],
+  "parseSPKIHeader": [
+    "state"
+  ],
+  "parseECAlgorithmIdentifier": [
+    "state"
+  ],
+  "genericImport": [
+    "keyFormat",
+    "keyData",
+    "alg",
+    "options"
+  ],
+  "getSigUsages": [],
+  "getEncUsages": [],
+  "processPEMData": [
+    "pem",
+    "pattern"
+  ],
+  "fromPKCS8": [
+    "pem",
+    "alg",
+    "options"
+  ],
+  "fromSPKI": [
+    "pem",
+    "alg",
+    "options"
+  ],
+  "spkiFromX509": [
+    "buf"
+  ],
+  "extractX509SPKI": [
+    "x509"
+  ],
+  "fromX509": [
+    "pem",
+    "alg",
+    "options"
+  ],
+  "encodeBase64": [
+    "input"
+  ],
+  "decodeBase64": [
+    "encoded"
+  ],
+  "concat": [
+    "param"
+  ],
+  "writeUInt32BE": [
+    "buf",
+    "value",
+    "offset"
+  ],
+  "uint64be": [
+    "value"
+  ],
+  "uint32be": [
+    "value"
+  ],
+  "encode": [
+    "input"
+  ],
+  "cekLength": [
+    "alg"
+  ],
+  "generateCek": [
+    "alg"
+  ],
+  "checkCekLength": [
+    "cek",
+    "expected"
+  ],
+  "checkIvLength": [
+    "enc",
+    "iv"
+  ],
+  "checkKeyLength": [
+    "alg",
+    "key"
+  ],
+  "tag": [
+    "key"
+  ],
+  "jwkMatchesOp": [
+    "alg",
+    "key",
+    "usage"
+  ],
+  "symmetricTypeCheck": [
+    "alg",
+    "key",
+    "usage"
+  ],
+  "asymmetricTypeCheck": [
+    "alg",
+    "key",
+    "usage"
+  ],
+  "checkKeyType": [
+    "alg",
+    "key",
+    "usage"
+  ],
+  "unusable": [
+    "name",
+    "param"
+  ],
+  "isAlgorithm": [
+    "algorithm",
+    "name"
+  ],
+  "getHashLength": [
+    "hash"
+  ],
+  "getNamedCurve": [
+    "alg"
+  ],
+  "checkUsage": [
+    "key",
+    "usage"
+  ],
+  "checkSigCryptoKey": [
+    "key",
+    "alg",
+    "usage"
+  ],
+  "checkEncCryptoKey": [
+    "key",
+    "alg",
+    "usage"
+  ],
+  "timingSafeEqual": [
+    "a",
+    "b"
+  ],
+  "cbcDecrypt": [
+    "enc",
+    "cek",
+    "ciphertext",
+    "iv",
+    "tag",
+    "aad"
+  ],
+  "gcmDecrypt": [
+    "enc",
+    "cek",
+    "ciphertext",
+    "iv",
+    "tag",
+    "aad"
+  ],
+  "decrypt": [
+    "alg",
+    "key",
+    "encryptedKey"
+  ],
+  "decryptKeyManagement": [
+    "alg",
+    "key",
+    "encryptedKey",
+    "joseHeader",
+    "options"
+  ],
+  "digest": [
+    "algorithm",
+    "data"
+  ],
+  "lengthAndInput": [
+    "input"
+  ],
+  "concatKdf": [
+    "Z",
+    "L",
+    "OtherInfo"
+  ],
+  "deriveKey": [
+    "p2s",
+    "alg",
+    "p2c",
+    "key"
+  ],
+  "getEcdhBitLength": [
+    "publicKey"
+  ],
+  "allowed": [
+    "key"
+  ],
+  "cbcEncrypt": [
+    "enc",
+    "plaintext",
+    "cek",
+    "iv",
+    "aad"
+  ],
+  "gcmEncrypt": [
+    "enc",
+    "plaintext",
+    "cek",
+    "iv",
+    "aad"
+  ],
+  "encrypt": [
+    "alg",
+    "key",
+    "cek"
+  ],
+  "encryptKeyManagement": [
+    "alg",
+    "enc",
+    "key",
+    "providedCek",
+    "param"
+  ],
+  "getSigKey": [
+    "alg",
+    "key",
+    "usage"
+  ],
+  "message": [
+    "msg",
+    "actual",
+    "param"
+  ],
+  "invalidKeyInput": [
+    "actual",
+    "param"
+  ],
+  "withAlg": [
+    "alg",
+    "actual",
+    "param"
+  ],
+  "isDisjoint": [
+    "param"
+  ],
+  "isJWK": [
+    "key"
+  ],
+  "isPrivateJWK": [
+    "key"
+  ],
+  "isPublicJWK": [
+    "key"
+  ],
+  "isSecretJWK": [
+    "key"
+  ],
+  "assertCryptoKey": [
+    "key"
+  ],
+  "isCryptoKey": [
+    "key"
+  ],
+  "isKeyObject": [
+    "key"
+  ],
+  "isKeyLike": [
+    "key"
+  ],
+  "isObjectLike": [
+    "value"
+  ],
+  "isObject": [
+    "input"
+  ],
+  "bitLength": [
+    "alg"
+  ],
+  "generateIv": [
+    "alg"
+  ],
+  "subtleMapping": [
+    "jwk"
+  ],
+  "jwkToKey": [
+    "jwk"
+  ],
+  "epoch": [
+    "date"
+  ],
+  "secs": [
+    "str"
+  ],
+  "validateInput": [
+    "label",
+    "input"
+  ],
+  "normalizeTyp": [
+    "value"
+  ],
+  "checkAudiencePresence": [
+    "audPayload",
+    "audOption"
+  ],
+  "validateClaimsSet": [
+    "protectedHeader",
+    "encodedPayload",
+    "param"
+  ],
+  "JWTClaimsBuilder": {
+    "constructor": [
+      "payload"
+    ],
+    "data": [],
+    "iss": [
+      "value"
+    ],
+    "sub": [
+      "value"
+    ],
+    "aud": [
+      "value"
+    ],
+    "jti": [
+      "value"
+    ],
+    "nbf": [
+      "value"
+    ],
+    "exp": [
+      "value"
+    ],
+    "iat": [
+      "value"
+    ]
+  },
+  "keyToJWK": [
+    "key"
+  ],
+  "handleJWK": [
+    "key",
+    "jwk",
+    "alg",
+    "param"
+  ],
+  "handleKeyObject": [
+    "keyObject",
+    "alg"
+  ],
+  "normalizeKey": [
+    "key",
+    "alg"
+  ],
+  "concatSalt": [
+    "alg",
+    "p2sInput"
+  ],
+  "subtleAlgorithm": [
+    "alg",
+    "algorithm"
+  ],
+  "sign": [
+    "alg",
+    "key",
+    "data"
+  ],
+  "validateAlgorithms": [
+    "option",
+    "algorithms"
+  ],
+  "validateCrit": [
+    "Err",
+    "recognizedDefault",
+    "recognizedOption",
+    "protectedHeader",
+    "joseHeader"
+  ],
+  "verify": [
+    "alg",
+    "key",
+    "signature",
+    "data"
+  ],
+  "decode": [
+    "input"
+  ],
+  "decodeJwt": [
+    "jwt"
+  ],
+  "decodeProtectedHeader": [
+    "token"
+  ]
+}

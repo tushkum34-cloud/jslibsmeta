@@ -1,0 +1,4457 @@
+{
+  "formatDevErrorMessage": [
+    "message"
+  ],
+  "$garbageCollectDetachedDecorators": [
+    "editor",
+    "pendingEditorState"
+  ],
+  "$garbageCollectDetachedDeepChildNodes": [
+    "node",
+    "parentKey",
+    "prevNodeMap",
+    "nodeMap",
+    "nodeMapDelete",
+    "dirtyNodes"
+  ],
+  "$garbageCollectDetachedNodes": [
+    "prevEditorState",
+    "editorState",
+    "dirtyLeaves",
+    "dirtyElements"
+  ],
+  "getIsProcessingMutations": [],
+  "updateTimeStamp": [
+    "event"
+  ],
+  "initTextEntryListener": [
+    "editor"
+  ],
+  "isManagedLineBreak": [
+    "dom",
+    "target",
+    "editor"
+  ],
+  "getLastSelection": [
+    "editor"
+  ],
+  "$handleTextMutation": [
+    "target",
+    "node",
+    "editor"
+  ],
+  "shouldUpdateTextNodeFromMutation": [
+    "selection",
+    "targetDOM",
+    "targetNode"
+  ],
+  "$getNearestManagedNodePairFromDOMNode": [
+    "startingDOM",
+    "editor",
+    "editorState",
+    "rootElement"
+  ],
+  "flushMutations": [
+    "editor",
+    "mutations",
+    "observer"
+  ],
+  "flushRootMutations": [
+    "editor"
+  ],
+  "initMutationObserver": [
+    "editor"
+  ],
+  "StateConfig": {
+    "key": [],
+    "parse": [],
+    "unparse": [],
+    "isEqual": [],
+    "defaultValue": [],
+    "constructor": [
+      "key",
+      "stateValueConfig"
+    ]
+  },
+  "createState": [
+    "key",
+    "valueConfig"
+  ],
+  "$getState": [
+    "node",
+    "stateConfig",
+    "param"
+  ],
+  "$getStateChange": [
+    "node",
+    "prevNode",
+    "stateConfig"
+  ],
+  "$setState": [
+    "node",
+    "stateConfig",
+    "valueOrUpdater"
+  ],
+  "$checkCollision": [
+    "node",
+    "stateConfig",
+    "state"
+  ],
+  "createSharedNodeState": [
+    "nodeConfig"
+  ],
+  "NodeState": {
+    "node": [],
+    "knownState": [],
+    "unknownState": [],
+    "sharedNodeState": [],
+    "size": [],
+    "constructor": [
+      "node",
+      "sharedNodeState",
+      "unknownState",
+      "knownState",
+      "size"
+    ],
+    "getValue": [
+      "stateConfig"
+    ],
+    "getInternalState": [],
+    "toJSON": [],
+    "getWritable": [
+      "node"
+    ],
+    "updateFromKnown": [
+      "stateConfig",
+      "value"
+    ],
+    "updateFromUnknown": [
+      "k",
+      "v"
+    ],
+    "updateFromJSON": [
+      "unknownState"
+    ]
+  },
+  "$getWritableNodeState": [
+    "node"
+  ],
+  "$getSharedNodeState": [
+    "node"
+  ],
+  "$updateStateFromJSON": [
+    "node",
+    "serialized"
+  ],
+  "nodeStatesAreEquivalent": [
+    "a",
+    "b"
+  ],
+  "computeSize": [
+    "sharedConfigMap",
+    "unknownState",
+    "knownState"
+  ],
+  "undefinedIfEmpty": [
+    "obj"
+  ],
+  "coerceToJSON": [
+    "v"
+  ],
+  "parseAndPruneNextUnknownState": [
+    "sharedConfigMap",
+    "nextKnownState",
+    "unknownState"
+  ],
+  "hasUnequalMapEntry": [
+    "keys",
+    "sourceState",
+    "otherState"
+  ],
+  "hasUnequalRecordEntry": [
+    "keys",
+    "sourceState",
+    "otherState"
+  ],
+  "$cloneNodeState": [
+    "from",
+    "to"
+  ],
+  "$canSimpleTextNodesBeMerged": [
+    "node1",
+    "node2"
+  ],
+  "$mergeTextNodes": [
+    "node1",
+    "node2"
+  ],
+  "$normalizeTextNode": [
+    "textNode"
+  ],
+  "$normalizeSelection": [
+    "selection"
+  ],
+  "$normalizePoint": [
+    "point"
+  ],
+  "destroyNode": [
+    "key",
+    "parentDOM"
+  ],
+  "destroyChildren": [
+    "children",
+    "_startIndex",
+    "endIndex",
+    "dom"
+  ],
+  "setTextAlign": [
+    "domStyle",
+    "value"
+  ],
+  "setElementIndent": [
+    "dom",
+    "indent"
+  ],
+  "setElementFormat": [
+    "dom",
+    "format"
+  ],
+  "$getReconciledDirection": [
+    "node"
+  ],
+  "$setElementDirection": [
+    "dom",
+    "node"
+  ],
+  "$createNode": [
+    "key",
+    "slot"
+  ],
+  "$createChildren": [
+    "children",
+    "element",
+    "_startIndex",
+    "endIndex",
+    "slot"
+  ],
+  "isLastChildLineBreakOrDecorator": [
+    "element",
+    "nodeMap"
+  ],
+  "reconcileElementTerminatingLineBreak": [
+    "prevElement",
+    "nextElement",
+    "dom"
+  ],
+  "reconcileTextFormat": [
+    "element"
+  ],
+  "reconcileTextStyle": [
+    "element"
+  ],
+  "$reconcileChildrenWithDirection": [
+    "prevElement",
+    "nextElement",
+    "dom"
+  ],
+  "createChildrenArray": [
+    "element",
+    "nodeMap"
+  ],
+  "$reconcileChildren": [
+    "prevElement",
+    "nextElement",
+    "slot"
+  ],
+  "$reconcileNode": [
+    "key",
+    "parentDOM"
+  ],
+  "reconcileDecorator": [
+    "key",
+    "decorator"
+  ],
+  "getNextSibling": [
+    "element"
+  ],
+  "childrenSet": [
+    "children",
+    "start"
+  ],
+  "$reconcileNodeChildren": [
+    "nextElement",
+    "prevChildren",
+    "nextChildren",
+    "prevChildrenLength",
+    "nextChildrenLength",
+    "slot"
+  ],
+  "$reconcileRoot": [
+    "prevEditorState",
+    "nextEditorState",
+    "editor",
+    "dirtyType",
+    "dirtyElements",
+    "dirtyLeaves"
+  ],
+  "storeDOMWithKey": [
+    "key",
+    "dom",
+    "editor"
+  ],
+  "getPrevElementByKeyOrThrow": [
+    "key"
+  ],
+  "warnOnlyOnce": [
+    "message"
+  ],
+  "createCommand": [
+    "type"
+  ],
+  "$shouldPreventDefaultAndInsertText": [
+    "selection",
+    "domTargetRange",
+    "text",
+    "timeStamp",
+    "isBeforeInput"
+  ],
+  "shouldSkipSelectionChange": [
+    "domNode",
+    "offset"
+  ],
+  "onSelectionChange": [
+    "domSelection",
+    "editor",
+    "isActive"
+  ],
+  "$updateSelectionFormatStyle": [
+    "selection",
+    "format",
+    "style"
+  ],
+  "$updateSelectionFormatStyleFromTextNode": [
+    "selection",
+    "node"
+  ],
+  "$updateSelectionFormatStyleFromElementNode": [
+    "selection",
+    "node"
+  ],
+  "onClick": [
+    "event",
+    "editor"
+  ],
+  "onPointerDown": [
+    "event",
+    "editor"
+  ],
+  "getTargetRange": [
+    "event"
+  ],
+  "$canRemoveText": [
+    "anchorNode",
+    "focusNode"
+  ],
+  "isPossiblyAndroidKeyPress": [
+    "timeStamp"
+  ],
+  "registerDefaultCommandHandlers": [
+    "editor"
+  ],
+  "onBeforeInput": [
+    "event",
+    "editor"
+  ],
+  "$handleBeforeInput": [
+    "event"
+  ],
+  "onInput": [
+    "event",
+    "editor"
+  ],
+  "$handleInput": [
+    "event"
+  ],
+  "onCompositionStart": [
+    "event",
+    "editor"
+  ],
+  "$handleCompositionStart": [
+    "event"
+  ],
+  "$handleCompositionEnd": [
+    "event"
+  ],
+  "$onCompositionEndImpl": [
+    "editor",
+    "data"
+  ],
+  "onCompositionEnd": [
+    "event",
+    "editor"
+  ],
+  "onKeyDown": [
+    "event",
+    "editor"
+  ],
+  "$handleKeyDown": [
+    "event"
+  ],
+  "getRootElementRemoveHandles": [
+    "rootElement"
+  ],
+  "onDocumentSelectionChange": [
+    "event"
+  ],
+  "stopLexicalPropagation": [
+    "event"
+  ],
+  "hasStoppedLexicalPropagation": [
+    "event"
+  ],
+  "addRootElementEvents": [
+    "rootElement",
+    "editor"
+  ],
+  "removeRootElementEvents": [
+    "rootElement"
+  ],
+  "cleanActiveNestedEditorsMap": [
+    "editor"
+  ],
+  "markSelectionChangeFromDOMUpdate": [],
+  "markCollapsedSelectionFormat": [
+    "format",
+    "style",
+    "offset",
+    "key",
+    "timeStamp"
+  ],
+  "$removeNode": [
+    "nodeToRemove",
+    "restoreSelection",
+    "preserveEmptyParent"
+  ],
+  "buildImportMap": [
+    "importMap"
+  ],
+  "$isEphemeral": [
+    "node"
+  ],
+  "$markEphemeral": [
+    "node"
+  ],
+  "LexicalNode": {
+    "__type": [],
+    "__key": [],
+    "__parent": [],
+    "__prev": [],
+    "__next": [],
+    "__state": [],
+    "getType": [],
+    "clone": [
+      "_data"
+    ],
+    "$config": [],
+    "config": [
+      "type",
+      "config"
+    ],
+    "afterCloneFrom": [
+      "prevNode"
+    ],
+    "importDOM": [],
+    "constructor": [
+      "key"
+    ],
+    "isInline": [],
+    "isAttached": [],
+    "isSelected": [
+      "selection"
+    ],
+    "getKey": [],
+    "getIndexWithinParent": [],
+    "getParent": [],
+    "getParentOrThrow": [],
+    "getTopLevelElement": [],
+    "getTopLevelElementOrThrow": [],
+    "getParents": [],
+    "getParentKeys": [],
+    "getPreviousSibling": [],
+    "getPreviousSiblings": [],
+    "getNextSibling": [],
+    "getNextSiblings": [],
+    "getCommonAncestor": [
+      "node"
+    ],
+    "is": [
+      "object"
+    ],
+    "isBefore": [
+      "targetNode"
+    ],
+    "isParentOf": [
+      "targetNode"
+    ],
+    "getNodesBetween": [
+      "targetNode"
+    ],
+    "isDirty": [],
+    "getLatest": [],
+    "getWritable": [],
+    "getTextContent": [],
+    "getTextContentSize": [],
+    "createDOM": [
+      "_config",
+      "_editor"
+    ],
+    "updateDOM": [
+      "_prevNode",
+      "_dom",
+      "_config"
+    ],
+    "exportDOM": [
+      "editor"
+    ],
+    "exportJSON": [],
+    "importJSON": [
+      "_serializedNode"
+    ],
+    "updateFromJSON": [
+      "serializedNode"
+    ],
+    "transform": [],
+    "remove": [
+      "preserveEmptyParent"
+    ],
+    "replace": [
+      "replaceWith",
+      "includeChildren"
+    ],
+    "insertAfter": [
+      "nodeToInsert",
+      "restoreSelection"
+    ],
+    "insertBefore": [
+      "nodeToInsert",
+      "restoreSelection"
+    ],
+    "isParentRequired": [],
+    "createParentElementNode": [],
+    "selectStart": [],
+    "selectEnd": [],
+    "selectPrevious": [
+      "anchorOffset",
+      "focusOffset"
+    ],
+    "selectNext": [
+      "anchorOffset",
+      "focusOffset"
+    ],
+    "markDirty": [],
+    "reconcileObservedMutation": [
+      "dom",
+      "editor"
+    ]
+  },
+  "errorOnTypeKlassMismatch": [
+    "type",
+    "klass"
+  ],
+  "insertRangeAfter": [
+    "node",
+    "firstToInsert",
+    "lastToInsert"
+  ],
+  "LineBreakNode": {
+    "getType": [],
+    "clone": [
+      "node"
+    ],
+    "constructor": [
+      "key"
+    ],
+    "getTextContent": [],
+    "createDOM": [],
+    "updateDOM": [],
+    "isInline": [],
+    "importDOM": [],
+    "importJSON": [
+      "serializedLineBreakNode"
+    ]
+  },
+  "$convertLineBreakElement": [
+    "node"
+  ],
+  "$createLineBreakNode": [],
+  "$isLineBreakNode": [
+    "node"
+  ],
+  "isOnlyChildInBlockNode": [
+    "node"
+  ],
+  "isLastChildInBlockNode": [
+    "node"
+  ],
+  "isWhitespaceDomTextNode": [
+    "node"
+  ],
+  "getElementOuterTag": [
+    "node",
+    "format"
+  ],
+  "getElementInnerTag": [
+    "node",
+    "format"
+  ],
+  "setTextThemeClassNames": [
+    "tag",
+    "prevFormat",
+    "nextFormat",
+    "dom",
+    "textClassNames"
+  ],
+  "diffComposedText": [
+    "a",
+    "b"
+  ],
+  "setTextContent": [
+    "nextText",
+    "dom",
+    "node"
+  ],
+  "createTextInnerDOM": [
+    "innerDOM",
+    "node",
+    "innerTag",
+    "format",
+    "text",
+    "config"
+  ],
+  "wrapElementWith": [
+    "element",
+    "tag"
+  ],
+  "TextNode": {
+    "__text": [],
+    "__format": [],
+    "__style": [],
+    "__mode": [],
+    "__detail": [],
+    "getType": [],
+    "clone": [
+      "node"
+    ],
+    "afterCloneFrom": [
+      "prevNode"
+    ],
+    "constructor": [
+      "text",
+      "key"
+    ],
+    "getFormat": [],
+    "getDetail": [],
+    "getMode": [],
+    "getStyle": [],
+    "isToken": [],
+    "isComposing": [],
+    "isSegmented": [],
+    "isDirectionless": [],
+    "isUnmergeable": [],
+    "hasFormat": [
+      "type"
+    ],
+    "isSimpleText": [],
+    "getTextContent": [],
+    "getFormatFlags": [
+      "type",
+      "alignWithFormat"
+    ],
+    "canHaveFormat": [],
+    "isInline": [],
+    "createDOM": [
+      "config",
+      "editor"
+    ],
+    "updateDOM": [
+      "prevNode",
+      "dom",
+      "config"
+    ],
+    "importDOM": [],
+    "importJSON": [
+      "serializedNode"
+    ],
+    "updateFromJSON": [
+      "serializedNode"
+    ],
+    "exportDOM": [
+      "editor"
+    ],
+    "exportJSON": [],
+    "selectionTransform": [
+      "prevSelection",
+      "nextSelection"
+    ],
+    "setFormat": [
+      "format"
+    ],
+    "setDetail": [
+      "detail"
+    ],
+    "setStyle": [
+      "style"
+    ],
+    "toggleFormat": [
+      "type"
+    ],
+    "toggleDirectionless": [],
+    "toggleUnmergeable": [],
+    "setMode": [
+      "type"
+    ],
+    "setTextContent": [
+      "text"
+    ],
+    "select": [
+      "_anchorOffset",
+      "_focusOffset"
+    ],
+    "selectStart": [],
+    "selectEnd": [],
+    "spliceText": [
+      "offset",
+      "delCount",
+      "newText",
+      "moveSelection"
+    ],
+    "canInsertTextBefore": [],
+    "canInsertTextAfter": [],
+    "splitText": [
+      "param"
+    ],
+    "mergeWithSibling": [
+      "target"
+    ],
+    "isTextEntity": []
+  },
+  "convertSpanElement": [
+    "domNode"
+  ],
+  "convertBringAttentionToElement": [
+    "domNode"
+  ],
+  "isNodePre": [
+    "node"
+  ],
+  "findParentPreDOMNode": [
+    "node"
+  ],
+  "$convertTextDOMNode": [
+    "domNode"
+  ],
+  "findTextInLine": [
+    "text",
+    "forward"
+  ],
+  "convertTextFormatElement": [
+    "domNode"
+  ],
+  "$createTextNode": [
+    "param"
+  ],
+  "$isTextNode": [
+    "node"
+  ],
+  "applyTextFormatFromStyle": [
+    "style",
+    "shouldApply"
+  ],
+  "TabNode": {
+    "getType": [],
+    "clone": [
+      "node"
+    ],
+    "constructor": [
+      "key"
+    ],
+    "importDOM": [],
+    "createDOM": [
+      "config"
+    ],
+    "importJSON": [
+      "serializedTabNode"
+    ],
+    "setTextContent": [
+      "text"
+    ],
+    "spliceText": [
+      "offset",
+      "delCount",
+      "newText",
+      "moveSelection"
+    ],
+    "setDetail": [
+      "detail"
+    ],
+    "setMode": [
+      "type"
+    ],
+    "canInsertTextBefore": [],
+    "canInsertTextAfter": []
+  },
+  "$createTabNode": [],
+  "$isTabNode": [
+    "node"
+  ],
+  "Point": {
+    "key": [],
+    "offset": [],
+    "type": [],
+    "_selection": [],
+    "constructor": [
+      "key",
+      "offset",
+      "type"
+    ],
+    "is": [
+      "point"
+    ],
+    "isBefore": [
+      "b"
+    ],
+    "getNode": [],
+    "set": [
+      "key",
+      "offset",
+      "type",
+      "onlyIfChanged"
+    ]
+  },
+  "$createPoint": [
+    "key",
+    "offset",
+    "type"
+  ],
+  "selectPointOnNode": [
+    "point",
+    "node"
+  ],
+  "$moveSelectionPointToEnd": [
+    "point",
+    "node"
+  ],
+  "$transferStartingElementPointToTextPoint": [
+    "start",
+    "end",
+    "format",
+    "style"
+  ],
+  "NodeSelection": {
+    "_nodes": [],
+    "_cachedNodes": [],
+    "dirty": [],
+    "constructor": [
+      "objects"
+    ],
+    "getCachedNodes": [],
+    "setCachedNodes": [
+      "nodes"
+    ],
+    "is": [
+      "selection"
+    ],
+    "isCollapsed": [],
+    "isBackward": [],
+    "getStartEndPoints": [],
+    "add": [
+      "key"
+    ],
+    "delete": [
+      "key"
+    ],
+    "clear": [],
+    "has": [
+      "key"
+    ],
+    "clone": [],
+    "extract": [],
+    "insertRawText": [
+      "text"
+    ],
+    "insertText": [],
+    "insertNodes": [
+      "nodes"
+    ],
+    "getNodes": [],
+    "getTextContent": [],
+    "deleteNodes": []
+  },
+  "$isRangeSelection": [
+    "x"
+  ],
+  "RangeSelection": {
+    "format": [],
+    "style": [],
+    "anchor": [],
+    "focus": [],
+    "_cachedNodes": [],
+    "dirty": [],
+    "constructor": [
+      "anchor",
+      "focus",
+      "format",
+      "style"
+    ],
+    "getCachedNodes": [],
+    "setCachedNodes": [
+      "nodes"
+    ],
+    "is": [
+      "selection"
+    ],
+    "isCollapsed": [],
+    "getNodes": [],
+    "setTextNodeRange": [
+      "anchorNode",
+      "anchorOffset",
+      "focusNode",
+      "focusOffset"
+    ],
+    "getTextContent": [],
+    "applyDOMRange": [
+      "range"
+    ],
+    "clone": [],
+    "toggleFormat": [
+      "format"
+    ],
+    "setFormat": [
+      "format"
+    ],
+    "setStyle": [
+      "style"
+    ],
+    "hasFormat": [
+      "type"
+    ],
+    "insertRawText": [
+      "text"
+    ],
+    "insertText": [
+      "text"
+    ],
+    "removeText": [],
+    "formatText": [
+      "formatType",
+      "alignWithFormat"
+    ],
+    "insertNodes": [
+      "nodes"
+    ],
+    "insertParagraph": [],
+    "insertLineBreak": [
+      "selectStart"
+    ],
+    "extract": [],
+    "modify": [
+      "alter",
+      "isBackward",
+      "granularity"
+    ],
+    "forwardDeletion": [
+      "anchor",
+      "anchorNode",
+      "isBackward"
+    ],
+    "deleteCharacter": [
+      "isBackward"
+    ],
+    "deleteLine": [
+      "isBackward"
+    ],
+    "deleteWord": [
+      "isBackward"
+    ],
+    "isBackward": [],
+    "getStartEndPoints": []
+  },
+  "applyFormatToElements": [
+    "alignWith"
+  ],
+  "notInline": [
+    "node"
+  ],
+  "isMergeable": [
+    "node"
+  ],
+  "$isNodeSelection": [
+    "x"
+  ],
+  "getCharacterOffset": [
+    "point"
+  ],
+  "$getCharacterOffsets": [
+    "selection"
+  ],
+  "$collapseAtStart": [
+    "selection",
+    "startNode"
+  ],
+  "$swapPoints": [
+    "selection"
+  ],
+  "moveNativeSelection": [
+    "domSelection",
+    "alter",
+    "direction",
+    "granularity"
+  ],
+  "$updateCaretSelectionForUnicodeCharacter": [
+    "selection",
+    "isBackward"
+  ],
+  "shouldDeleteExactlyOneCodeUnit": [
+    "text"
+  ],
+  "$removeSegment": [
+    "node",
+    "isBackward",
+    "offset"
+  ],
+  "shouldResolveAncestor": [
+    "resolvedElement",
+    "resolvedOffset",
+    "lastPoint"
+  ],
+  "$internalResolveSelectionPoint": [
+    "dom",
+    "offset",
+    "lastPoint",
+    "editor"
+  ],
+  "resolveSelectionPointOnBoundary": [
+    "point",
+    "isBackward",
+    "isCollapsed"
+  ],
+  "$normalizeSelectionPointsForBoundaries": [
+    "anchor",
+    "focus",
+    "lastSelection"
+  ],
+  "$internalResolveSelectionPoints": [
+    "anchorDOM",
+    "anchorOffset",
+    "focusDOM",
+    "focusOffset",
+    "editor",
+    "lastSelection"
+  ],
+  "$isBlockElementNode": [
+    "node"
+  ],
+  "$internalMakeRangeSelection": [
+    "anchorKey",
+    "anchorOffset",
+    "focusKey",
+    "focusOffset",
+    "anchorType",
+    "focusType"
+  ],
+  "$createRangeSelection": [],
+  "$createNodeSelection": [],
+  "$internalCreateSelection": [
+    "editor",
+    "event"
+  ],
+  "$createRangeSelectionFromDom": [
+    "domSelection",
+    "editor"
+  ],
+  "$internalCreateRangeSelection": [
+    "lastSelection",
+    "domSelection",
+    "editor",
+    "event"
+  ],
+  "$validatePoint": [
+    "name",
+    "point"
+  ],
+  "$getSelection": [],
+  "$getPreviousSelection": [],
+  "$updateElementSelectionOnCreateDeleteNode": [
+    "selection",
+    "parentNode",
+    "nodeOffset",
+    "param"
+  ],
+  "$updateSelectionResolveTextNodes": [
+    "selection"
+  ],
+  "applySelectionTransforms": [
+    "nextEditorState",
+    "editor"
+  ],
+  "moveSelectionPointToSibling": [
+    "point",
+    "node",
+    "parent",
+    "prevSibling",
+    "nextSibling"
+  ],
+  "adjustPointOffsetForMergedSibling": [
+    "point",
+    "isBefore",
+    "key",
+    "target",
+    "textLength"
+  ],
+  "setDOMSelectionBaseAndExtent": [
+    "domSelection",
+    "nextAnchorDOM",
+    "nextAnchorOffset",
+    "nextFocusDOM",
+    "nextFocusOffset"
+  ],
+  "updateDOMSelection": [
+    "prevSelection",
+    "nextSelection",
+    "editor",
+    "domSelection",
+    "tags",
+    "rootElement",
+    "nodeCount"
+  ],
+  "$insertNodes": [
+    "nodes"
+  ],
+  "$getTextContent": [],
+  "$removeTextAndSplitBlock": [
+    "selection"
+  ],
+  "$splitNodeAtPoint": [
+    "node",
+    "offset"
+  ],
+  "$wrapInlineNodes": [
+    "nodes"
+  ],
+  "$getNodesFromCaretRangeCompat": [
+    "range"
+  ],
+  "$getCandidate": [
+    "caret"
+  ],
+  "$modifySelectionAroundDecoratorsAndBlocks": [
+    "selection",
+    "alter",
+    "isBackward",
+    "granularity",
+    "param"
+  ],
+  "isCurrentlyReadOnlyMode": [],
+  "errorOnReadOnly": [],
+  "errorOnInfiniteTransforms": [],
+  "getActiveEditorState": [],
+  "getActiveEditor": [],
+  "collectBuildInformation": [],
+  "internalGetActiveEditor": [],
+  "internalGetActiveEditorState": [],
+  "$applyTransforms": [
+    "editor",
+    "node",
+    "transformsCache"
+  ],
+  "$isNodeValidForTransform": [
+    "node",
+    "compositionKey"
+  ],
+  "$normalizeAllDirtyTextNodes": [
+    "editorState",
+    "editor"
+  ],
+  "addTags": [
+    "editor",
+    "tags"
+  ],
+  "$applyAllTransforms": [
+    "editorState",
+    "editor"
+  ],
+  "$parseSerializedNode": [
+    "serializedNode"
+  ],
+  "$parseSerializedNodeImpl": [
+    "serializedNode",
+    "registeredNodes"
+  ],
+  "parseEditorState": [
+    "serializedEditorState",
+    "editor",
+    "updateFn"
+  ],
+  "readEditorState": [
+    "editor",
+    "editorState",
+    "callbackFn"
+  ],
+  "handleDEVOnlyPendingUpdateGuarantees": [
+    "pendingEditorState"
+  ],
+  "$commitPendingUpdates": [
+    "editor",
+    "recoveryEditorState"
+  ],
+  "triggerTextContentListeners": [
+    "editor",
+    "currentEditorState",
+    "pendingEditorState"
+  ],
+  "triggerMutationListeners": [
+    "editor",
+    "mutatedNodes",
+    "updateTags",
+    "dirtyLeaves",
+    "prevEditorState"
+  ],
+  "triggerListeners": [
+    "type",
+    "editor",
+    "isCurrentlyEnqueuingUpdates",
+    "param"
+  ],
+  "triggerCommandListeners": [
+    "editor",
+    "type",
+    "payload"
+  ],
+  "$triggerEnqueuedUpdates": [
+    "editor"
+  ],
+  "triggerDeferredUpdateCallbacks": [
+    "editor",
+    "deferred"
+  ],
+  "$processNestedUpdates": [
+    "editor",
+    "initialSkipTransforms"
+  ],
+  "$beginUpdate": [
+    "editor",
+    "updateFn",
+    "options"
+  ],
+  "updateEditorSync": [
+    "editor",
+    "updateFn",
+    "options"
+  ],
+  "updateEditor": [
+    "editor",
+    "updateFn",
+    "options"
+  ],
+  "ElementDOMSlot": {
+    "element": [],
+    "before": [],
+    "after": [],
+    "constructor": [
+      "element",
+      "before",
+      "after"
+    ],
+    "withBefore": [
+      "before"
+    ],
+    "withAfter": [
+      "after"
+    ],
+    "withElement": [
+      "element"
+    ],
+    "insertChild": [
+      "dom"
+    ],
+    "removeChild": [
+      "dom"
+    ],
+    "replaceChild": [
+      "dom",
+      "prevDom"
+    ],
+    "getFirstChild": [],
+    "getManagedLineBreak": [],
+    "setManagedLineBreak": [
+      "lineBreakType"
+    ],
+    "removeManagedLineBreak": [],
+    "insertManagedLineBreak": [
+      "webkitHack"
+    ],
+    "getFirstChildOffset": [],
+    "resolveChildIndex": [
+      "element",
+      "elementDOM",
+      "initialDOM",
+      "initialOffset"
+    ]
+  },
+  "indexPath": [
+    "root",
+    "child"
+  ],
+  "ElementNode": {
+    "__first": [],
+    "__last": [],
+    "__size": [],
+    "__format": [],
+    "__style": [],
+    "__indent": [],
+    "__dir": [],
+    "__textFormat": [],
+    "__textStyle": [],
+    "constructor": [
+      "key"
+    ],
+    "afterCloneFrom": [
+      "prevNode"
+    ],
+    "getFormat": [],
+    "getFormatType": [],
+    "getStyle": [],
+    "getIndent": [],
+    "getChildren": [],
+    "getChildrenKeys": [],
+    "getChildrenSize": [],
+    "isEmpty": [],
+    "isDirty": [],
+    "isLastChild": [],
+    "getAllTextNodes": [],
+    "getFirstDescendant": [],
+    "getLastDescendant": [],
+    "getDescendantByIndex": [
+      "index"
+    ],
+    "getFirstChild": [],
+    "getFirstChildOrThrow": [],
+    "getLastChild": [],
+    "getLastChildOrThrow": [],
+    "getChildAtIndex": [
+      "index"
+    ],
+    "getTextContent": [],
+    "getTextContentSize": [],
+    "getDirection": [],
+    "getTextFormat": [],
+    "hasFormat": [
+      "type"
+    ],
+    "hasTextFormat": [
+      "type"
+    ],
+    "getFormatFlags": [
+      "type",
+      "alignWithFormat"
+    ],
+    "getTextStyle": [],
+    "select": [
+      "_anchorOffset",
+      "_focusOffset"
+    ],
+    "selectStart": [],
+    "selectEnd": [],
+    "clear": [],
+    "append": [
+      "param"
+    ],
+    "setDirection": [
+      "direction"
+    ],
+    "setFormat": [
+      "type"
+    ],
+    "setStyle": [
+      "style"
+    ],
+    "setTextFormat": [
+      "type"
+    ],
+    "setTextStyle": [
+      "style"
+    ],
+    "setIndent": [
+      "indentLevel"
+    ],
+    "splice": [
+      "start",
+      "deleteCount",
+      "nodesToInsert"
+    ],
+    "getDOMSlot": [
+      "element"
+    ],
+    "exportDOM": [
+      "editor"
+    ],
+    "exportJSON": [],
+    "updateFromJSON": [
+      "serializedNode"
+    ],
+    "insertNewAfter": [
+      "selection",
+      "restoreSelection"
+    ],
+    "canIndent": [],
+    "collapseAtStart": [
+      "selection"
+    ],
+    "excludeFromCopy": [
+      "destination"
+    ],
+    "canReplaceWith": [
+      "replacement"
+    ],
+    "canInsertAfter": [
+      "node"
+    ],
+    "canBeEmpty": [],
+    "canInsertTextBefore": [],
+    "canInsertTextAfter": [],
+    "isInline": [],
+    "isShadowRoot": [],
+    "canMergeWith": [
+      "node"
+    ],
+    "extractWithChild": [
+      "child",
+      "selection",
+      "destination"
+    ],
+    "canMergeWhenEmpty": [],
+    "reconcileObservedMutation": [
+      "dom",
+      "editor"
+    ]
+  },
+  "$isElementNode": [
+    "node"
+  ],
+  "isPointRemoved": [
+    "point",
+    "nodesToRemoveKeySet",
+    "nodesToInsertKeySet"
+  ],
+  "DecoratorNode": {
+    "decorate": [
+      "editor",
+      "config"
+    ],
+    "isIsolated": [],
+    "isInline": [],
+    "isKeyboardSelectable": []
+  },
+  "$isDecoratorNode": [
+    "node"
+  ],
+  "RootNode": {
+    "__cachedText": [],
+    "getType": [],
+    "clone": [],
+    "constructor": [],
+    "getTopLevelElementOrThrow": [],
+    "getTextContent": [],
+    "remove": [],
+    "replace": [
+      "node"
+    ],
+    "insertBefore": [
+      "nodeToInsert"
+    ],
+    "insertAfter": [
+      "nodeToInsert"
+    ],
+    "updateDOM": [
+      "prevNode",
+      "dom"
+    ],
+    "splice": [
+      "start",
+      "deleteCount",
+      "nodesToInsert"
+    ],
+    "importJSON": [
+      "serializedNode"
+    ],
+    "collapseAtStart": []
+  },
+  "$createRootNode": [],
+  "$isRootNode": [
+    "node"
+  ],
+  "editorStateHasDirtySelection": [
+    "editorState",
+    "editor"
+  ],
+  "cloneEditorState": [
+    "current"
+  ],
+  "createEmptyEditorState": [],
+  "exportNodeToJSON": [
+    "node"
+  ],
+  "$isEditorState": [
+    "x"
+  ],
+  "EditorState": {
+    "_nodeMap": [],
+    "_selection": [],
+    "_flushSync": [],
+    "_readOnly": [],
+    "constructor": [
+      "nodeMap",
+      "selection"
+    ],
+    "isEmpty": [],
+    "read": [
+      "callbackFn",
+      "options"
+    ],
+    "clone": [
+      "selection"
+    ],
+    "toJSON": []
+  },
+  "ArtificialNode__DO_NOT_USE": {
+    "getType": [],
+    "createDOM": [
+      "config"
+    ]
+  },
+  "ParagraphNode": {
+    "getType": [],
+    "clone": [
+      "node"
+    ],
+    "createDOM": [
+      "config"
+    ],
+    "updateDOM": [
+      "prevNode",
+      "dom",
+      "config"
+    ],
+    "importDOM": [],
+    "exportDOM": [
+      "editor"
+    ],
+    "importJSON": [
+      "serializedNode"
+    ],
+    "exportJSON": [],
+    "insertNewAfter": [
+      "rangeSelection",
+      "restoreSelection"
+    ],
+    "collapseAtStart": []
+  },
+  "$convertParagraphElement": [
+    "element"
+  ],
+  "$createParagraphNode": [],
+  "$isParagraphNode": [
+    "node"
+  ],
+  "resetEditor": [
+    "editor",
+    "prevRootElement",
+    "nextRootElement",
+    "pendingEditorState"
+  ],
+  "initializeConversionCache": [
+    "nodes",
+    "additionalConversions"
+  ],
+  "addConversionsToCache": [
+    "map"
+  ],
+  "getTransformSetFromKlass": [
+    "klass"
+  ],
+  "createEditor": [
+    "editorConfig"
+  ],
+  "LexicalEditor": {
+    "version": [],
+    "_headless": [],
+    "_parentEditor": [],
+    "_rootElement": [],
+    "_editorState": [],
+    "_pendingEditorState": [],
+    "_compositionKey": [],
+    "_deferred": [],
+    "_keyToDOMMap": [],
+    "_updates": [],
+    "_updating": [],
+    "_listeners": [],
+    "_commands": [],
+    "_nodes": [],
+    "_decorators": [],
+    "_pendingDecorators": [],
+    "_config": [],
+    "_dirtyType": [],
+    "_cloneNotNeeded": [],
+    "_dirtyLeaves": [],
+    "_dirtyElements": [],
+    "_normalizedNodes": [],
+    "_updateTags": [],
+    "_observer": [],
+    "_key": [],
+    "_onError": [],
+    "_htmlConversions": [],
+    "_window": [],
+    "_editable": [],
+    "_blockCursorElement": [],
+    "_createEditorArgs": [],
+    "constructor": [
+      "editorState",
+      "parentEditor",
+      "nodes",
+      "config",
+      "onError",
+      "htmlConversions",
+      "editable",
+      "createEditorArgs"
+    ],
+    "isComposing": [],
+    "registerUpdateListener": [
+      "listener"
+    ],
+    "registerEditableListener": [
+      "listener"
+    ],
+    "registerDecoratorListener": [
+      "listener"
+    ],
+    "registerTextContentListener": [
+      "listener"
+    ],
+    "registerRootListener": [
+      "listener"
+    ],
+    "registerCommand": [
+      "command",
+      "listener",
+      "priority"
+    ],
+    "registerMutationListener": [
+      "klass",
+      "listener",
+      "options"
+    ],
+    "getRegisteredNode": [
+      "klass"
+    ],
+    "resolveRegisteredNodeAfterReplacements": [
+      "registeredNode"
+    ],
+    "initializeMutationListener": [],
+    "registerNodeTransformToKlass": [],
+    "registerNodeTransform": [
+      "klass",
+      "listener"
+    ],
+    "hasNode": [
+      "node"
+    ],
+    "hasNodes": [
+      "nodes"
+    ],
+    "dispatchCommand": [
+      "type",
+      "payload"
+    ],
+    "getDecorators": [],
+    "getRootElement": [],
+    "getKey": [],
+    "setRootElement": [
+      "nextRootElement"
+    ],
+    "getElementByKey": [
+      "key"
+    ],
+    "getEditorState": [],
+    "setEditorState": [
+      "editorState",
+      "options"
+    ],
+    "parseEditorState": [
+      "maybeStringifiedEditorState",
+      "updateFn"
+    ],
+    "read": [
+      "callbackFn"
+    ],
+    "update": [
+      "updateFn",
+      "options"
+    ],
+    "focus": [
+      "callbackFn",
+      "options"
+    ],
+    "blur": [],
+    "isEditable": [],
+    "setEditable": [
+      "editable"
+    ],
+    "toJSON": []
+  },
+  "setPendingNodeToClone": [
+    "pendingNode"
+  ],
+  "getPendingNodeToClone": [],
+  "resetRandomKey": [],
+  "generateRandomKey": [],
+  "getRegisteredNodeOrThrow": [
+    "editor",
+    "nodeType"
+  ],
+  "getRegisteredNode": [
+    "editor",
+    "nodeType"
+  ],
+  "$isSelectionCapturedInDecorator": [
+    "node"
+  ],
+  "isSelectionCapturedInDecoratorInput": [
+    "anchorDOM"
+  ],
+  "isSelectionWithinEditor": [
+    "editor",
+    "anchorDOM",
+    "focusDOM"
+  ],
+  "isLexicalEditor": [
+    "editor"
+  ],
+  "getNearestEditorFromDOMNode": [
+    "node"
+  ],
+  "getEditorPropertyFromDOMNode": [
+    "node"
+  ],
+  "getTextDirection": [
+    "text"
+  ],
+  "$isTokenOrTab": [
+    "node"
+  ],
+  "$isTokenOrSegmented": [
+    "node"
+  ],
+  "isDOMTextNode": [
+    "node"
+  ],
+  "isDOMDocumentNode": [
+    "node"
+  ],
+  "getDOMTextNode": [
+    "element"
+  ],
+  "toggleTextFormatType": [
+    "format",
+    "type",
+    "alignWithFormat"
+  ],
+  "$isLeafNode": [
+    "node"
+  ],
+  "$setNodeKey": [
+    "node",
+    "existingKey"
+  ],
+  "errorOnNodeKeyConstructorMismatch": [
+    "node",
+    "existingKey",
+    "pendingNode"
+  ],
+  "internalMarkParentElementsAsDirty": [
+    "parentKey",
+    "nodeMap",
+    "dirtyElements"
+  ],
+  "removeFromParent": [
+    "node"
+  ],
+  "internalMarkNodeAsDirty": [
+    "node"
+  ],
+  "internalMarkSiblingsAsDirty": [
+    "node"
+  ],
+  "$setCompositionKey": [
+    "compositionKey"
+  ],
+  "$getCompositionKey": [],
+  "$getNodeByKey": [
+    "key",
+    "_editorState"
+  ],
+  "$getNodeFromDOMNode": [
+    "dom",
+    "editorState"
+  ],
+  "setNodeKeyOnDOMNode": [
+    "dom",
+    "editor",
+    "key"
+  ],
+  "getNodeKeyFromDOMNode": [
+    "dom",
+    "editor"
+  ],
+  "$getNearestNodeFromDOMNode": [
+    "startingDOM",
+    "editorState"
+  ],
+  "cloneDecorators": [
+    "editor"
+  ],
+  "getEditorStateTextContent": [
+    "editorState"
+  ],
+  "markNodesWithTypesAsDirty": [
+    "editor",
+    "types"
+  ],
+  "$getRoot": [],
+  "internalGetRoot": [
+    "editorState"
+  ],
+  "$setSelection": [
+    "selection"
+  ],
+  "$flushMutations": [],
+  "$getNodeFromDOM": [
+    "dom"
+  ],
+  "getNodeKeyFromDOMTree": [
+    "dom",
+    "editor"
+  ],
+  "doesContainSurrogatePair": [
+    "str"
+  ],
+  "getEditorsToPropagate": [
+    "editor"
+  ],
+  "createUID": [],
+  "getAnchorTextFromDOM": [
+    "anchorNode"
+  ],
+  "$updateSelectedTextFromDOM": [
+    "isCompositionEnd",
+    "editor",
+    "data"
+  ],
+  "$updateTextNodeFromDOMContent": [
+    "textNode",
+    "textContent",
+    "anchorOffset",
+    "focusOffset",
+    "compositionEnd"
+  ],
+  "$setTextContentWithSelection": [
+    "node",
+    "textContent",
+    "selection"
+  ],
+  "$previousSiblingDoesNotAcceptText": [
+    "node"
+  ],
+  "$shouldInsertTextAfterOrBeforeTextNode": [
+    "selection",
+    "node"
+  ],
+  "matchModifier": [
+    "event",
+    "mask",
+    "prop"
+  ],
+  "isModifierMatch": [
+    "event",
+    "mask"
+  ],
+  "isExactShortcutMatch": [
+    "event",
+    "expectedKey",
+    "mask"
+  ],
+  "isTab": [
+    "event"
+  ],
+  "isBold": [
+    "event"
+  ],
+  "isItalic": [
+    "event"
+  ],
+  "isUnderline": [
+    "event"
+  ],
+  "isParagraph": [
+    "event"
+  ],
+  "isLineBreak": [
+    "event"
+  ],
+  "isOpenLineBreak": [
+    "event"
+  ],
+  "isDeleteWordBackward": [
+    "event"
+  ],
+  "isDeleteWordForward": [
+    "event"
+  ],
+  "isDeleteLineBackward": [
+    "event"
+  ],
+  "isDeleteLineForward": [
+    "event"
+  ],
+  "isDeleteBackward": [
+    "event"
+  ],
+  "isDeleteForward": [
+    "event"
+  ],
+  "isUndo": [
+    "event"
+  ],
+  "isRedo": [
+    "event"
+  ],
+  "isCopy": [
+    "event"
+  ],
+  "isCut": [
+    "event"
+  ],
+  "isMoveBackward": [
+    "event"
+  ],
+  "isMoveToStart": [
+    "event"
+  ],
+  "isMoveForward": [
+    "event"
+  ],
+  "isMoveToEnd": [
+    "event"
+  ],
+  "isMoveUp": [
+    "event"
+  ],
+  "isMoveDown": [
+    "event"
+  ],
+  "isModifier": [
+    "event"
+  ],
+  "isSpace": [
+    "event"
+  ],
+  "isBackspace": [
+    "event"
+  ],
+  "isEscape": [
+    "event"
+  ],
+  "isDelete": [
+    "event"
+  ],
+  "isSelectAll": [
+    "event"
+  ],
+  "$selectAll": [
+    "selection"
+  ],
+  "getCachedClassNameArray": [
+    "classNamesTheme",
+    "classNameThemeType"
+  ],
+  "setMutatedNode": [
+    "mutatedNodes",
+    "registeredNodes",
+    "mutationListeners",
+    "node",
+    "mutation"
+  ],
+  "$nodesOfType": [
+    "klass"
+  ],
+  "resolveElement": [
+    "element",
+    "isBackward",
+    "focusOffset"
+  ],
+  "$getAdjacentNode": [
+    "focus",
+    "isBackward"
+  ],
+  "isFirefoxClipboardEvents": [
+    "editor"
+  ],
+  "dispatchCommand": [
+    "editor",
+    "command",
+    "payload"
+  ],
+  "getElementByKeyOrThrow": [
+    "editor",
+    "key"
+  ],
+  "getParentElement": [
+    "node"
+  ],
+  "getDOMOwnerDocument": [
+    "target"
+  ],
+  "scrollIntoViewIfNeeded": [
+    "editor",
+    "selectionRect",
+    "rootElement"
+  ],
+  "$hasUpdateTag": [
+    "tag"
+  ],
+  "$addUpdateTag": [
+    "tag"
+  ],
+  "$onUpdate": [
+    "updateFn"
+  ],
+  "$maybeMoveChildrenSelectionToParent": [
+    "parentNode"
+  ],
+  "$hasAncestor": [
+    "child",
+    "targetNode"
+  ],
+  "getDefaultView": [
+    "domElem"
+  ],
+  "getWindow": [
+    "editor"
+  ],
+  "$isInlineElementOrDecoratorNode": [
+    "node"
+  ],
+  "$getNearestRootOrShadowRoot": [
+    "node"
+  ],
+  "$isRootOrShadowRoot": [
+    "node"
+  ],
+  "$copyNode": [
+    "node"
+  ],
+  "$applyNodeReplacement": [
+    "node"
+  ],
+  "errorOnInsertTextNodeOnRoot": [
+    "node",
+    "insertNode"
+  ],
+  "$getNodeByKeyOrThrow": [
+    "key"
+  ],
+  "createBlockCursorElement": [
+    "editorConfig"
+  ],
+  "needsBlockCursor": [
+    "node"
+  ],
+  "removeDOMBlockCursorElement": [
+    "blockCursorElement",
+    "editor",
+    "rootElement"
+  ],
+  "updateDOMBlockCursorElement": [
+    "editor",
+    "rootElement",
+    "nextSelection"
+  ],
+  "getDOMSelection": [
+    "targetWindow"
+  ],
+  "getDOMSelectionFromTarget": [
+    "eventTarget"
+  ],
+  "$splitNode": [
+    "node",
+    "offset"
+  ],
+  "recurse": [
+    "currentNode"
+  ],
+  "isHTMLAnchorElement": [
+    "x"
+  ],
+  "isHTMLElement": [
+    "x"
+  ],
+  "isDOMNode": [
+    "x"
+  ],
+  "isDocumentFragment": [
+    "x"
+  ],
+  "isInlineDomNode": [
+    "node"
+  ],
+  "isBlockDomNode": [
+    "node"
+  ],
+  "INTERNAL_$isBlock": [
+    "node"
+  ],
+  "$getEditor": [],
+  "getCachedTypeToNodeMap": [
+    "editorState"
+  ],
+  "computeTypeToNodeMap": [
+    "editorState"
+  ],
+  "$cloneWithProperties": [
+    "latestNode"
+  ],
+  "$cloneWithPropertiesEphemeral": [
+    "latestNode"
+  ],
+  "setNodeIndentFromDOM": [
+    "elementDom",
+    "elementNode"
+  ],
+  "setDOMUnmanaged": [
+    "elementDom"
+  ],
+  "isDOMUnmanaged": [
+    "elementDom"
+  ],
+  "hasOwn": [
+    "o",
+    "k"
+  ],
+  "hasOwnStaticMethod": [
+    "klass",
+    "k"
+  ],
+  "hasOwnExportDOM": [
+    "klass"
+  ],
+  "isAbstractNodeClass": [
+    "klass"
+  ],
+  "getStaticNodeConfig": [
+    "klass"
+  ],
+  "$create": [
+    "klass"
+  ],
+  "$findMatchingParent": [
+    "startingNode",
+    "findFn"
+  ],
+  "AbstractCaret": {
+    "origin": [],
+    "constructor": [
+      "origin"
+    ],
+    "getAdjacentCaret": [],
+    "getSiblingCaret": [],
+    "remove": [],
+    "replaceOrInsert": [
+      "node",
+      "includeChildren"
+    ],
+    "splice": [
+      "deleteCount",
+      "nodes",
+      "param"
+    ]
+  },
+  "AbstractChildCaret": {
+    "type": [],
+    "getLatest": [],
+    "getParentCaret": [
+      "param"
+    ],
+    "getFlipped": [],
+    "getParentAtCaret": [],
+    "getChildCaret": [],
+    "isSameNodeCaret": [
+      "other"
+    ],
+    "isSamePointCaret": [
+      "other"
+    ]
+  },
+  "ChildCaretFirst": {
+    "direction": [],
+    "getNodeAtCaret": [],
+    "insert": [
+      "node"
+    ]
+  },
+  "ChildCaretLast": {
+    "direction": [],
+    "getNodeAtCaret": [],
+    "insert": [
+      "node"
+    ]
+  },
+  "flipDirection": [
+    "direction"
+  ],
+  "$filterByMode": [
+    "node",
+    "param"
+  ],
+  "AbstractSiblingCaret": {
+    "type": [],
+    "getLatest": [],
+    "getSiblingCaret": [],
+    "getParentAtCaret": [],
+    "getChildCaret": [],
+    "getParentCaret": [
+      "param"
+    ],
+    "getFlipped": [],
+    "isSamePointCaret": [
+      "other"
+    ],
+    "isSameNodeCaret": [
+      "other"
+    ]
+  },
+  "AbstractTextPointCaret": {
+    "type": [],
+    "offset": [],
+    "constructor": [
+      "origin",
+      "offset"
+    ],
+    "getLatest": [],
+    "getParentAtCaret": [],
+    "getChildCaret": [],
+    "getParentCaret": [
+      "param"
+    ],
+    "getFlipped": [],
+    "isSamePointCaret": [
+      "other"
+    ],
+    "isSameNodeCaret": [
+      "other"
+    ],
+    "getSiblingCaret": []
+  },
+  "$isTextPointCaret": [
+    "caret"
+  ],
+  "$isNodeCaret": [
+    "caret"
+  ],
+  "$isSiblingCaret": [
+    "caret"
+  ],
+  "$isChildCaret": [
+    "caret"
+  ],
+  "SiblingCaretNext": {
+    "direction": [],
+    "getNodeAtCaret": [],
+    "insert": [
+      "node"
+    ]
+  },
+  "SiblingCaretPrevious": {
+    "direction": [],
+    "getNodeAtCaret": [],
+    "insert": [
+      "node"
+    ]
+  },
+  "TextPointCaretNext": {
+    "direction": [],
+    "getNodeAtCaret": [],
+    "insert": [
+      "node"
+    ]
+  },
+  "TextPointCaretPrevious": {
+    "direction": [],
+    "getNodeAtCaret": [],
+    "insert": [
+      "node"
+    ]
+  },
+  "$getSiblingCaret": [
+    "origin",
+    "direction"
+  ],
+  "$getTextPointCaret": [
+    "origin",
+    "direction",
+    "offset"
+  ],
+  "$getTextNodeOffset": [
+    "origin",
+    "offset",
+    "param"
+  ],
+  "$getTextPointCaretSlice": [
+    "caret",
+    "distance"
+  ],
+  "$getChildCaret": [
+    "origin",
+    "direction"
+  ],
+  "$getChildCaretOrSelf": [
+    "caret"
+  ],
+  "$getAdjacentChildCaret": [
+    "caret"
+  ],
+  "CaretRangeImpl": {
+    "type": [],
+    "direction": [],
+    "anchor": [],
+    "focus": [],
+    "constructor": [
+      "anchor",
+      "focus",
+      "direction"
+    ],
+    "getLatest": [],
+    "isCollapsed": [],
+    "getTextSlices": [],
+    "iterNodeCarets": [
+      "param"
+    ]
+  },
+  "getSlice": [
+    "k"
+  ],
+  "step": [
+    "state"
+  ],
+  "TextPointCaretSliceImpl": {
+    "type": [],
+    "caret": [],
+    "distance": [],
+    "constructor": [
+      "caret",
+      "distance"
+    ],
+    "getSliceIndices": [],
+    "getTextContent": [],
+    "getTextContentSize": [],
+    "removeTextSlice": []
+  },
+  "$getSliceFromTextPointCaret": [
+    "caret",
+    "anchorOrFocus"
+  ],
+  "$isTextPointCaretSlice": [
+    "caretOrSlice"
+  ],
+  "$extendCaretToRange": [
+    "anchor"
+  ],
+  "$getCollapsedCaretRange": [
+    "anchor"
+  ],
+  "$getCaretRange": [
+    "anchor",
+    "focus"
+  ],
+  "makeStepwiseIterator": [
+    "config"
+  ],
+  "compareNumber": [
+    "a",
+    "b"
+  ],
+  "$comparePointCaretNext": [
+    "a",
+    "b"
+  ],
+  "$getCommonAncestorResultBranchOrder": [
+    "compare"
+  ],
+  "$isSameNode": [
+    "reference",
+    "other"
+  ],
+  "$initialElementTuple": [
+    "node"
+  ],
+  "$getCommonAncestor": [
+    "a",
+    "b"
+  ],
+  "$caretFromPoint": [
+    "point",
+    "direction"
+  ],
+  "$setPointFromCaret": [
+    "point",
+    "caret"
+  ],
+  "$setSelectionFromCaretRange": [
+    "caretRange"
+  ],
+  "$updateRangeSelectionFromCaretRange": [
+    "selection",
+    "caretRange"
+  ],
+  "$caretRangeFromSelection": [
+    "selection"
+  ],
+  "$rewindSiblingCaret": [
+    "caret"
+  ],
+  "$getAnchorCandidates": [
+    "anchor",
+    "param"
+  ],
+  "$isCaretAttached": [
+    "caret"
+  ],
+  "$removeTextFromCaretRange": [
+    "initialRange",
+    "param"
+  ],
+  "$getBlockMergeTargets": [
+    "anchor",
+    "focus",
+    "seenStart"
+  ],
+  "$getBlock": [
+    "arr",
+    "predicate"
+  ],
+  "$getDeepestChildOrSelf": [
+    "initialCaret"
+  ],
+  "$normalizeCaret": [
+    "initialCaret"
+  ],
+  "$isExtendableTextPointCaret": [
+    "caret"
+  ],
+  "$getCaretInDirection": [
+    "caret",
+    "direction"
+  ],
+  "$getCaretRangeInDirection": [
+    "range",
+    "direction"
+  ],
+  "$getChildCaretAtIndex": [
+    "parent",
+    "index",
+    "direction"
+  ],
+  "$getAdjacentSiblingOrParentSiblingCaret": [
+    "startCaret",
+    "param"
+  ],
+  "$getAdjacentNodes": [
+    "initialCaret"
+  ],
+  "$splitTextPointCaret": [
+    "textPointCaret"
+  ],
+  "$alwaysSplit": [
+    "_node",
+    "_edge"
+  ],
+  "$splitAtPointCaretNext": [
+    "pointCaret",
+    "param"
+  ],
+  "defineExtension": [
+    "extension"
+  ],
+  "configExtension": [
+    "param"
+  ],
+  "declarePeerDependency": [
+    "name",
+    "config"
+  ],
+  "safeCast": [
+    "value"
+  ],
+  "shallowMergeConfig": [
+    "config",
+    "overrides"
+  ],
+  "normalizeClassNames": [
+    "param"
+  ],
+  "addClassNamesToElement": [
+    "element",
+    "param"
+  ],
+  "removeClassNamesFromElement": [
+    "element",
+    "param"
+  ],
+  "mergeRegister": [
+    "param"
+  ],
+  "t": [
+    "t"
+  ],
+  "e": [
+    "t",
+    "param"
+  ],
+  "R": [
+    "t",
+    "e",
+    "n",
+    "r",
+    "o",
+    "i"
+  ],
+  "z": [
+    "t"
+  ],
+  "W": [
+    "t",
+    "e",
+    "n"
+  ],
+  "$": [
+    "t",
+    "e",
+    "n"
+  ],
+  "U": [
+    "t",
+    "e",
+    "n"
+  ],
+  "J": [
+    "t",
+    "e",
+    "n",
+    "r"
+  ],
+  "Y": [
+    "t",
+    "e",
+    "n"
+  ],
+  "j": [
+    "t"
+  ],
+  "H": [
+    "t"
+  ],
+  "V": {
+    "key": [],
+    "parse": [],
+    "unparse": [],
+    "isEqual": [],
+    "defaultValue": [],
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "G": [
+    "t",
+    "e",
+    "param"
+  ],
+  "q": [
+    "t"
+  ],
+  "X": {
+    "node": [],
+    "knownState": [],
+    "unknownState": [],
+    "sharedNodeState": [],
+    "size": [],
+    "constructor": [
+      "t",
+      "e",
+      "param",
+      "param",
+      "param"
+    ],
+    "getValue": [
+      "t"
+    ],
+    "getInternalState": [],
+    "toJSON": [],
+    "getWritable": [
+      "t"
+    ],
+    "updateFromKnown": [
+      "t",
+      "e"
+    ],
+    "updateFromUnknown": [
+      "t",
+      "e"
+    ],
+    "updateFromJSON": [
+      "t"
+    ]
+  },
+  "Q": [
+    "t"
+  ],
+  "Z": [
+    "t"
+  ],
+  "tt": [
+    "t"
+  ],
+  "et": [
+    "t"
+  ],
+  "nt": [
+    "t",
+    "e",
+    "n"
+  ],
+  "rt": [
+    "t",
+    "e",
+    "n"
+  ],
+  "ot": [
+    "t",
+    "e"
+  ],
+  "it": [
+    "t",
+    "e"
+  ],
+  "st": [
+    "t",
+    "e"
+  ],
+  "lt": [
+    "t"
+  ],
+  "ct": [
+    "t"
+  ],
+  "at": [
+    "t"
+  ],
+  "kt": [
+    "t",
+    "e"
+  ],
+  "Et": [
+    "t",
+    "e",
+    "n",
+    "r"
+  ],
+  "Ot": [
+    "t",
+    "e"
+  ],
+  "Mt": [
+    "t",
+    "e"
+  ],
+  "At": [
+    "t",
+    "e"
+  ],
+  "wt": [
+    "t",
+    "e"
+  ],
+  "Dt": [
+    "e",
+    "n"
+  ],
+  "Pt": [
+    "t",
+    "e",
+    "n",
+    "r",
+    "o"
+  ],
+  "It": [
+    "t",
+    "e"
+  ],
+  "Lt": [
+    "t",
+    "e",
+    "n"
+  ],
+  "Ft": [
+    "e",
+    "n",
+    "r"
+  ],
+  "Rt": [
+    "e",
+    "n"
+  ],
+  "Kt": [
+    "e",
+    "n"
+  ],
+  "Bt": [
+    "t",
+    "e"
+  ],
+  "zt": [
+    "t"
+  ],
+  "Wt": [
+    "t",
+    "e"
+  ],
+  "$t": [
+    "t",
+    "e",
+    "n",
+    "r",
+    "o",
+    "i"
+  ],
+  "Ut": [
+    "e"
+  ],
+  "Jt": [
+    "t"
+  ],
+  "nn": [
+    "t",
+    "e",
+    "n",
+    "r",
+    "o"
+  ],
+  "rn": [
+    "t",
+    "e"
+  ],
+  "on": [
+    "e",
+    "n",
+    "r"
+  ],
+  "sn": [
+    "t",
+    "e",
+    "n"
+  ],
+  "ln": [
+    "t",
+    "e"
+  ],
+  "cn": [
+    "t"
+  ],
+  "an": [
+    "e"
+  ],
+  "un": [
+    "t"
+  ],
+  "fn": [
+    "t"
+  ],
+  "dn": [
+    "t"
+  ],
+  "hn": [
+    "t",
+    "e"
+  ],
+  "gn": [
+    "t"
+  ],
+  "_n": [
+    "t"
+  ],
+  "yn": [
+    "t"
+  ],
+  "mn": [
+    "t"
+  ],
+  "xn": [
+    "t"
+  ],
+  "Cn": [],
+  "Sn": [
+    "e"
+  ],
+  "Nn": [
+    "t",
+    "e",
+    "n"
+  ],
+  "vn": [
+    "t"
+  ],
+  "kn": {
+    "__type": [],
+    "__key": [],
+    "__parent": [],
+    "__prev": [],
+    "__next": [],
+    "__state": [],
+    "getType": [],
+    "clone": [
+      "e"
+    ],
+    "$config": [],
+    "config": [
+      "t",
+      "e"
+    ],
+    "afterCloneFrom": [
+      "t"
+    ],
+    "importDOM": [],
+    "constructor": [
+      "t"
+    ],
+    "isInline": [],
+    "isAttached": [],
+    "isSelected": [
+      "t"
+    ],
+    "getKey": [],
+    "getIndexWithinParent": [],
+    "getParent": [],
+    "getParentOrThrow": [],
+    "getTopLevelElement": [],
+    "getTopLevelElementOrThrow": [],
+    "getParents": [],
+    "getParentKeys": [],
+    "getPreviousSibling": [],
+    "getPreviousSiblings": [],
+    "getNextSibling": [],
+    "getNextSiblings": [],
+    "getCommonAncestor": [
+      "t"
+    ],
+    "is": [
+      "t"
+    ],
+    "isBefore": [
+      "e"
+    ],
+    "isParentOf": [
+      "t"
+    ],
+    "getNodesBetween": [
+      "e"
+    ],
+    "isDirty": [],
+    "getLatest": [],
+    "getWritable": [],
+    "getTextContent": [],
+    "getTextContentSize": [],
+    "createDOM": [
+      "e",
+      "n"
+    ],
+    "updateDOM": [
+      "e",
+      "n",
+      "r"
+    ],
+    "exportDOM": [
+      "t"
+    ],
+    "exportJSON": [],
+    "importJSON": [
+      "e"
+    ],
+    "updateFromJSON": [
+      "t"
+    ],
+    "transform": [],
+    "remove": [
+      "t"
+    ],
+    "replace": [
+      "e",
+      "n"
+    ],
+    "insertAfter": [
+      "t",
+      "param"
+    ],
+    "insertBefore": [
+      "t",
+      "param"
+    ],
+    "isParentRequired": [],
+    "createParentElementNode": [],
+    "selectStart": [],
+    "selectEnd": [],
+    "selectPrevious": [
+      "t",
+      "e"
+    ],
+    "selectNext": [
+      "t",
+      "e"
+    ],
+    "markDirty": [],
+    "reconcileObservedMutation": [
+      "t",
+      "e"
+    ]
+  },
+  "wn": {
+    "getType": [],
+    "clone": [
+      "t"
+    ],
+    "constructor": [
+      "t"
+    ],
+    "getTextContent": [],
+    "createDOM": [],
+    "updateDOM": [],
+    "isInline": [],
+    "importDOM": [],
+    "importJSON": [
+      "t"
+    ]
+  },
+  "Dn": [
+    "t"
+  ],
+  "Pn": [],
+  "In": [
+    "t"
+  ],
+  "Ln": [
+    "t"
+  ],
+  "Fn": [
+    "t",
+    "e"
+  ],
+  "Rn": [
+    "t",
+    "e"
+  ],
+  "Kn": [
+    "t",
+    "e",
+    "n",
+    "r",
+    "o"
+  ],
+  "Bn": [
+    "t",
+    "e",
+    "n"
+  ],
+  "zn": [
+    "t",
+    "e",
+    "n",
+    "r",
+    "o",
+    "i"
+  ],
+  "Wn": [
+    "t",
+    "e"
+  ],
+  "$n": {
+    "__text": [],
+    "__format": [],
+    "__style": [],
+    "__mode": [],
+    "__detail": [],
+    "getType": [],
+    "clone": [
+      "t"
+    ],
+    "afterCloneFrom": [
+      "t"
+    ],
+    "constructor": [
+      "param",
+      "e"
+    ],
+    "getFormat": [],
+    "getDetail": [],
+    "getMode": [],
+    "getStyle": [],
+    "isToken": [],
+    "isComposing": [],
+    "isSegmented": [],
+    "isDirectionless": [],
+    "isUnmergeable": [],
+    "hasFormat": [
+      "t"
+    ],
+    "isSimpleText": [],
+    "getTextContent": [],
+    "getFormatFlags": [
+      "t",
+      "e"
+    ],
+    "canHaveFormat": [],
+    "isInline": [],
+    "createDOM": [
+      "t",
+      "e"
+    ],
+    "updateDOM": [
+      "e",
+      "n",
+      "r"
+    ],
+    "importDOM": [],
+    "importJSON": [
+      "t"
+    ],
+    "updateFromJSON": [
+      "t"
+    ],
+    "exportDOM": [
+      "e"
+    ],
+    "exportJSON": [],
+    "selectionTransform": [
+      "t",
+      "e"
+    ],
+    "setFormat": [
+      "t"
+    ],
+    "setDetail": [
+      "t"
+    ],
+    "setStyle": [
+      "t"
+    ],
+    "toggleFormat": [
+      "t"
+    ],
+    "toggleDirectionless": [],
+    "toggleUnmergeable": [],
+    "setMode": [
+      "t"
+    ],
+    "setTextContent": [
+      "t"
+    ],
+    "select": [
+      "t",
+      "e"
+    ],
+    "selectStart": [],
+    "selectEnd": [],
+    "spliceText": [
+      "t",
+      "e",
+      "n",
+      "r"
+    ],
+    "canInsertTextBefore": [],
+    "canInsertTextAfter": [],
+    "splitText": [
+      "param"
+    ],
+    "mergeWithSibling": [
+      "e"
+    ],
+    "isTextEntity": []
+  },
+  "Un": [
+    "t"
+  ],
+  "Jn": [
+    "t"
+  ],
+  "jn": [
+    "t"
+  ],
+  "Hn": [
+    "e"
+  ],
+  "Vn": [
+    "t",
+    "e"
+  ],
+  "qn": [
+    "t"
+  ],
+  "Xn": [
+    "param"
+  ],
+  "Qn": [
+    "t"
+  ],
+  "Zn": [
+    "t",
+    "e"
+  ],
+  "tr": {
+    "getType": [],
+    "clone": [
+      "t"
+    ],
+    "constructor": [
+      "t"
+    ],
+    "importDOM": [],
+    "createDOM": [
+      "t"
+    ],
+    "importJSON": [
+      "t"
+    ],
+    "setTextContent": [
+      "t"
+    ],
+    "spliceText": [
+      "e",
+      "n",
+      "r",
+      "o"
+    ],
+    "setDetail": [
+      "e"
+    ],
+    "setMode": [
+      "e"
+    ],
+    "canInsertTextBefore": [],
+    "canInsertTextAfter": []
+  },
+  "er": [],
+  "nr": [
+    "t"
+  ],
+  "rr": {
+    "key": [],
+    "offset": [],
+    "type": [],
+    "_selection": [],
+    "constructor": [
+      "t",
+      "e",
+      "n"
+    ],
+    "is": [
+      "t"
+    ],
+    "isBefore": [
+      "t"
+    ],
+    "getNode": [],
+    "set": [
+      "t",
+      "e",
+      "n",
+      "r"
+    ]
+  },
+  "or": [
+    "t",
+    "e",
+    "n"
+  ],
+  "ir": [
+    "t",
+    "e"
+  ],
+  "sr": [
+    "t",
+    "e"
+  ],
+  "lr": {
+    "_nodes": [],
+    "_cachedNodes": [],
+    "dirty": [],
+    "constructor": [
+      "t"
+    ],
+    "getCachedNodes": [],
+    "setCachedNodes": [
+      "t"
+    ],
+    "is": [
+      "t"
+    ],
+    "isCollapsed": [],
+    "isBackward": [],
+    "getStartEndPoints": [],
+    "add": [
+      "t"
+    ],
+    "delete": [
+      "t"
+    ],
+    "clear": [],
+    "has": [
+      "t"
+    ],
+    "clone": [],
+    "extract": [],
+    "insertRawText": [
+      "t"
+    ],
+    "insertText": [],
+    "insertNodes": [
+      "t"
+    ],
+    "getNodes": [],
+    "getTextContent": [],
+    "deleteNodes": []
+  },
+  "cr": [
+    "t"
+  ],
+  "ar": {
+    "format": [],
+    "style": [],
+    "anchor": [],
+    "focus": [],
+    "_cachedNodes": [],
+    "dirty": [],
+    "constructor": [
+      "t",
+      "e",
+      "n",
+      "r"
+    ],
+    "getCachedNodes": [],
+    "setCachedNodes": [
+      "t"
+    ],
+    "is": [
+      "t"
+    ],
+    "isCollapsed": [],
+    "getNodes": [],
+    "setTextNodeRange": [
+      "t",
+      "e",
+      "n",
+      "r"
+    ],
+    "getTextContent": [],
+    "applyDOMRange": [
+      "t"
+    ],
+    "clone": [],
+    "toggleFormat": [
+      "t"
+    ],
+    "setFormat": [
+      "t"
+    ],
+    "setStyle": [
+      "t"
+    ],
+    "hasFormat": [
+      "t"
+    ],
+    "insertRawText": [
+      "t"
+    ],
+    "insertText": [
+      "e"
+    ],
+    "removeText": [],
+    "formatText": [
+      "t",
+      "param"
+    ],
+    "insertNodes": [
+      "e"
+    ],
+    "insertParagraph": [],
+    "insertLineBreak": [
+      "t"
+    ],
+    "extract": [],
+    "modify": [
+      "t",
+      "e",
+      "n"
+    ],
+    "forwardDeletion": [
+      "t",
+      "e",
+      "n"
+    ],
+    "deleteCharacter": [
+      "t"
+    ],
+    "deleteLine": [
+      "t"
+    ],
+    "deleteWord": [
+      "t"
+    ],
+    "isBackward": [],
+    "getStartEndPoints": []
+  },
+  "o": [
+    "t"
+  ],
+  "ur": [
+    "t"
+  ],
+  "fr": [
+    "t"
+  ],
+  "dr": [
+    "t"
+  ],
+  "hr": [
+    "t",
+    "e"
+  ],
+  "_r": [
+    "t",
+    "e",
+    "n"
+  ],
+  "pr": [
+    "e",
+    "n",
+    "r",
+    "o"
+  ],
+  "yr": [
+    "t",
+    "e",
+    "n"
+  ],
+  "mr": [
+    "t",
+    "e",
+    "n"
+  ],
+  "xr": [
+    "t",
+    "e",
+    "n",
+    "r",
+    "o",
+    "i"
+  ],
+  "Cr": [
+    "t",
+    "e",
+    "n",
+    "r",
+    "o",
+    "i"
+  ],
+  "Sr": [],
+  "Nr": [],
+  "Tr": [
+    "t",
+    "e",
+    "n",
+    "r"
+  ],
+  "vr": [],
+  "kr": [],
+  "Er": [
+    "t",
+    "e",
+    "n",
+    "param"
+  ],
+  "Or": [
+    "t"
+  ],
+  "br": [
+    "t",
+    "e",
+    "n",
+    "r",
+    "o"
+  ],
+  "Mr": [
+    "t",
+    "e",
+    "n",
+    "r",
+    "o"
+  ],
+  "Ar": [
+    "t",
+    "e",
+    "n",
+    "r",
+    "o"
+  ],
+  "wr": [
+    "t",
+    "e",
+    "n",
+    "r",
+    "o",
+    "s",
+    "l"
+  ],
+  "Dr": [
+    "e"
+  ],
+  "Pr": [
+    "t",
+    "e"
+  ],
+  "Ir": [
+    "t",
+    "e",
+    "n",
+    "r",
+    "param"
+  ],
+  "Wr": [],
+  "$r": [],
+  "Ur": [],
+  "Jr": [],
+  "Yr": [],
+  "jr": [],
+  "Hr": [],
+  "Vr": [
+    "t",
+    "e",
+    "n"
+  ],
+  "Gr": [
+    "t",
+    "e"
+  ],
+  "qr": [
+    "t",
+    "e"
+  ],
+  "Xr": [
+    "e",
+    "n"
+  ],
+  "Qr": [
+    "t",
+    "e",
+    "n"
+  ],
+  "Zr": [
+    "t",
+    "e"
+  ],
+  "to": [
+    "t",
+    "e",
+    "n",
+    "param"
+  ],
+  "eo": [
+    "e",
+    "n"
+  ],
+  "no": [
+    "e",
+    "n",
+    "r"
+  ],
+  "ro": [
+    "t",
+    "e",
+    "n"
+  ],
+  "oo": {
+    "element": [],
+    "before": [],
+    "after": [],
+    "constructor": [
+      "t",
+      "e",
+      "n"
+    ],
+    "withBefore": [
+      "t"
+    ],
+    "withAfter": [
+      "t"
+    ],
+    "withElement": [
+      "t"
+    ],
+    "insertChild": [
+      "e"
+    ],
+    "removeChild": [
+      "e"
+    ],
+    "replaceChild": [
+      "e",
+      "n"
+    ],
+    "getFirstChild": [],
+    "getManagedLineBreak": [],
+    "setManagedLineBreak": [
+      "t"
+    ],
+    "removeManagedLineBreak": [],
+    "insertManagedLineBreak": [
+      "t"
+    ],
+    "getFirstChildOffset": [],
+    "resolveChildIndex": [
+      "t",
+      "e",
+      "n",
+      "r"
+    ]
+  },
+  "io": [
+    "e",
+    "n"
+  ],
+  "so": {
+    "__first": [],
+    "__last": [],
+    "__size": [],
+    "__format": [],
+    "__style": [],
+    "__indent": [],
+    "__dir": [],
+    "__textFormat": [],
+    "__textStyle": [],
+    "constructor": [
+      "t"
+    ],
+    "afterCloneFrom": [
+      "t"
+    ],
+    "getFormat": [],
+    "getFormatType": [],
+    "getStyle": [],
+    "getIndent": [],
+    "getChildren": [],
+    "getChildrenKeys": [],
+    "getChildrenSize": [],
+    "isEmpty": [],
+    "isDirty": [],
+    "isLastChild": [],
+    "getAllTextNodes": [],
+    "getFirstDescendant": [],
+    "getLastDescendant": [],
+    "getDescendantByIndex": [
+      "t"
+    ],
+    "getFirstChild": [],
+    "getFirstChildOrThrow": [],
+    "getLastChild": [],
+    "getLastChildOrThrow": [],
+    "getChildAtIndex": [
+      "t"
+    ],
+    "getTextContent": [],
+    "getTextContentSize": [],
+    "getDirection": [],
+    "getTextFormat": [],
+    "hasFormat": [
+      "t"
+    ],
+    "hasTextFormat": [
+      "t"
+    ],
+    "getFormatFlags": [
+      "t",
+      "e"
+    ],
+    "getTextStyle": [],
+    "select": [
+      "t",
+      "e"
+    ],
+    "selectStart": [],
+    "selectEnd": [],
+    "clear": [],
+    "append": [
+      "param"
+    ],
+    "setDirection": [
+      "t"
+    ],
+    "setFormat": [
+      "t"
+    ],
+    "setStyle": [
+      "t"
+    ],
+    "setTextFormat": [
+      "t"
+    ],
+    "setTextStyle": [
+      "t"
+    ],
+    "setIndent": [
+      "t"
+    ],
+    "splice": [
+      "e",
+      "n",
+      "r"
+    ],
+    "getDOMSlot": [
+      "t"
+    ],
+    "exportDOM": [
+      "t"
+    ],
+    "exportJSON": [],
+    "updateFromJSON": [
+      "t"
+    ],
+    "insertNewAfter": [
+      "t",
+      "e"
+    ],
+    "canIndent": [],
+    "collapseAtStart": [
+      "t"
+    ],
+    "excludeFromCopy": [
+      "t"
+    ],
+    "canReplaceWith": [
+      "t"
+    ],
+    "canInsertAfter": [
+      "t"
+    ],
+    "canBeEmpty": [],
+    "canInsertTextBefore": [],
+    "canInsertTextAfter": [],
+    "isInline": [],
+    "isShadowRoot": [],
+    "canMergeWith": [
+      "t"
+    ],
+    "extractWithChild": [
+      "t",
+      "e",
+      "n"
+    ],
+    "canMergeWhenEmpty": [],
+    "reconcileObservedMutation": [
+      "t",
+      "e"
+    ]
+  },
+  "lo": [
+    "t"
+  ],
+  "co": [
+    "t",
+    "e",
+    "n"
+  ],
+  "ao": {
+    "decorate": [
+      "t",
+      "e"
+    ],
+    "isIsolated": [],
+    "isInline": [],
+    "isKeyboardSelectable": []
+  },
+  "uo": [
+    "t"
+  ],
+  "fo": {
+    "__cachedText": [],
+    "getType": [],
+    "clone": [],
+    "constructor": [],
+    "getTopLevelElementOrThrow": [],
+    "getTextContent": [],
+    "remove": [],
+    "replace": [
+      "e"
+    ],
+    "insertBefore": [
+      "e"
+    ],
+    "insertAfter": [
+      "e"
+    ],
+    "updateDOM": [
+      "t",
+      "e"
+    ],
+    "splice": [
+      "e",
+      "n",
+      "r"
+    ],
+    "importJSON": [
+      "t"
+    ],
+    "collapseAtStart": []
+  },
+  "ho": [
+    "t"
+  ],
+  "go": [
+    "t"
+  ],
+  "_o": [],
+  "po": [
+    "e"
+  ],
+  "yo": {
+    "_nodeMap": [],
+    "_selection": [],
+    "_flushSync": [],
+    "_readOnly": [],
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "isEmpty": [],
+    "read": [
+      "t",
+      "e"
+    ],
+    "clone": [
+      "t"
+    ],
+    "toJSON": []
+  },
+  "mo": {
+    "getType": [],
+    "createDOM": [
+      "t"
+    ]
+  },
+  "xo": {
+    "getType": [],
+    "clone": [
+      "t"
+    ],
+    "createDOM": [
+      "t"
+    ],
+    "updateDOM": [
+      "t",
+      "e",
+      "n"
+    ],
+    "importDOM": [],
+    "exportDOM": [
+      "t"
+    ],
+    "importJSON": [
+      "t"
+    ],
+    "exportJSON": [],
+    "insertNewAfter": [
+      "t",
+      "e"
+    ],
+    "collapseAtStart": []
+  },
+  "Co": [
+    "t"
+  ],
+  "So": [],
+  "No": [
+    "t"
+  ],
+  "vo": [
+    "t",
+    "e",
+    "n",
+    "r"
+  ],
+  "ko": [
+    "t"
+  ],
+  "Eo": {
+    "version": [],
+    "_headless": [],
+    "_parentEditor": [],
+    "_rootElement": [],
+    "_editorState": [],
+    "_pendingEditorState": [],
+    "_compositionKey": [],
+    "_deferred": [],
+    "_keyToDOMMap": [],
+    "_updates": [],
+    "_updating": [],
+    "_listeners": [],
+    "_commands": [],
+    "_nodes": [],
+    "_decorators": [],
+    "_pendingDecorators": [],
+    "_config": [],
+    "_dirtyType": [],
+    "_cloneNotNeeded": [],
+    "_dirtyLeaves": [],
+    "_dirtyElements": [],
+    "_normalizedNodes": [],
+    "_updateTags": [],
+    "_observer": [],
+    "_key": [],
+    "_onError": [],
+    "_htmlConversions": [],
+    "_window": [],
+    "_editable": [],
+    "_blockCursorElement": [],
+    "_createEditorArgs": [],
+    "constructor": [
+      "t",
+      "e",
+      "n",
+      "r",
+      "o",
+      "i",
+      "s",
+      "l"
+    ],
+    "isComposing": [],
+    "registerUpdateListener": [
+      "t"
+    ],
+    "registerEditableListener": [
+      "t"
+    ],
+    "registerDecoratorListener": [
+      "t"
+    ],
+    "registerTextContentListener": [
+      "t"
+    ],
+    "registerRootListener": [
+      "t"
+    ],
+    "registerCommand": [
+      "e",
+      "n",
+      "r"
+    ],
+    "registerMutationListener": [
+      "t",
+      "e",
+      "n"
+    ],
+    "getRegisteredNode": [
+      "e"
+    ],
+    "resolveRegisteredNodeAfterReplacements": [
+      "t"
+    ],
+    "initializeMutationListener": [
+      "t",
+      "e"
+    ],
+    "registerNodeTransformToKlass": [
+      "t",
+      "e"
+    ],
+    "registerNodeTransform": [
+      "t",
+      "e"
+    ],
+    "hasNode": [
+      "t"
+    ],
+    "hasNodes": [
+      "t"
+    ],
+    "dispatchCommand": [
+      "t",
+      "e"
+    ],
+    "getDecorators": [],
+    "getRootElement": [],
+    "getKey": [],
+    "setRootElement": [
+      "t"
+    ],
+    "getElementByKey": [
+      "t"
+    ],
+    "getEditorState": [],
+    "setEditorState": [
+      "e",
+      "n"
+    ],
+    "parseEditorState": [
+      "t",
+      "e"
+    ],
+    "read": [
+      "t"
+    ],
+    "update": [
+      "t",
+      "e"
+    ],
+    "focus": [
+      "t",
+      "param"
+    ],
+    "blur": [],
+    "isEditable": [],
+    "setEditable": [
+      "t"
+    ],
+    "toJSON": []
+  },
+  "bo": [
+    "t"
+  ],
+  "Ao": [
+    "e",
+    "n"
+  ],
+  "wo": [
+    "t",
+    "e"
+  ],
+  "Po": [
+    "t"
+  ],
+  "Io": [
+    "t"
+  ],
+  "Lo": [
+    "t",
+    "e",
+    "n"
+  ],
+  "Fo": [
+    "t"
+  ],
+  "Ro": [
+    "t"
+  ],
+  "Ko": [
+    "t"
+  ],
+  "Bo": [
+    "t"
+  ],
+  "zo": [
+    "t"
+  ],
+  "Wo": [
+    "t"
+  ],
+  "$o": [
+    "t"
+  ],
+  "Uo": [
+    "t"
+  ],
+  "Jo": [
+    "t",
+    "e",
+    "n"
+  ],
+  "Yo": [
+    "t",
+    "e"
+  ],
+  "jo": [
+    "t"
+  ],
+  "Ho": [
+    "e"
+  ],
+  "Vo": [
+    "t"
+  ],
+  "Go": [],
+  "qo": [
+    "t",
+    "e"
+  ],
+  "Xo": [
+    "t",
+    "e"
+  ],
+  "Qo": [
+    "t",
+    "e"
+  ],
+  "Zo": [
+    "t",
+    "e"
+  ],
+  "ti": [
+    "t"
+  ],
+  "ei": [
+    "t"
+  ],
+  "ni": [],
+  "ri": [
+    "t"
+  ],
+  "oi": [
+    "t"
+  ],
+  "ii": [
+    "t"
+  ],
+  "si": [
+    "t"
+  ],
+  "li": [
+    "t"
+  ],
+  "ci": [],
+  "ai": [
+    "t"
+  ],
+  "ui": [
+    "t",
+    "e",
+    "n"
+  ],
+  "fi": [
+    "t",
+    "e",
+    "n",
+    "r",
+    "o"
+  ],
+  "di": [
+    "t",
+    "e",
+    "n"
+  ],
+  "hi": [
+    "t",
+    "e",
+    "n"
+  ],
+  "gi": [
+    "t",
+    "e"
+  ],
+  "_i": [
+    "t",
+    "e",
+    "n"
+  ],
+  "mi": [
+    "t"
+  ],
+  "xi": [
+    "t"
+  ],
+  "Ci": [
+    "t",
+    "e"
+  ],
+  "Si": [
+    "e",
+    "n",
+    "r",
+    "o",
+    "i"
+  ],
+  "Ni": [
+    "t",
+    "e",
+    "n"
+  ],
+  "Ti": [
+    "t",
+    "e"
+  ],
+  "vi": [
+    "t"
+  ],
+  "ki": [
+    "t",
+    "e",
+    "n"
+  ],
+  "Ei": [
+    "e",
+    "n"
+  ],
+  "Oi": [
+    "t"
+  ],
+  "bi": [
+    "t"
+  ],
+  "Mi": [
+    "t"
+  ],
+  "Ai": [
+    "t"
+  ],
+  "wi": [
+    "t",
+    "e"
+  ],
+  "Di": [
+    "t"
+  ],
+  "Pi": [
+    "e"
+  ],
+  "Ii": [
+    "t"
+  ],
+  "Li": [
+    "t"
+  ],
+  "Fi": [
+    "t"
+  ],
+  "Ri": [
+    "e"
+  ],
+  "Ki": [
+    "e",
+    "n"
+  ],
+  "Bi": [
+    "e"
+  ],
+  "zi": [
+    "t"
+  ],
+  "Wi": [
+    "t",
+    "e",
+    "n"
+  ],
+  "$i": [
+    "t"
+  ],
+  "Ui": [
+    "t"
+  ],
+  "Ji": [
+    "t"
+  ],
+  "Yi": [
+    "t"
+  ],
+  "ji": [
+    "t"
+  ],
+  "Hi": [
+    "t"
+  ],
+  "Vi": [
+    "t"
+  ],
+  "Gi": [
+    "t"
+  ],
+  "qi": [],
+  "Zi": [
+    "e"
+  ],
+  "ts": [
+    "t"
+  ],
+  "es": [
+    "t",
+    "e"
+  ],
+  "ns": [
+    "t"
+  ],
+  "rs": [
+    "t",
+    "e"
+  ],
+  "os": [
+    "e"
+  ],
+  "is": [
+    "t",
+    "e"
+  ],
+  "ls": {
+    "origin": [],
+    "constructor": [
+      "t"
+    ],
+    "getAdjacentCaret": [],
+    "getSiblingCaret": [],
+    "remove": [],
+    "replaceOrInsert": [
+      "t",
+      "e"
+    ],
+    "splice": [
+      "e",
+      "n",
+      "param"
+    ]
+  },
+  "cs": {
+    "type": [],
+    "getLatest": [],
+    "getParentCaret": [
+      "param"
+    ],
+    "getFlipped": [],
+    "getParentAtCaret": [],
+    "getChildCaret": [],
+    "isSameNodeCaret": [
+      "t"
+    ],
+    "isSamePointCaret": [
+      "t"
+    ]
+  },
+  "us": [
+    "t"
+  ],
+  "fs": [
+    "t",
+    "param"
+  ],
+  "ds": {
+    "type": [],
+    "getLatest": [],
+    "getSiblingCaret": [],
+    "getParentAtCaret": [],
+    "getChildCaret": [],
+    "getParentCaret": [
+      "param"
+    ],
+    "getFlipped": [],
+    "isSamePointCaret": [
+      "t"
+    ],
+    "isSameNodeCaret": [
+      "t"
+    ]
+  },
+  "hs": {
+    "type": [],
+    "offset": [],
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "getLatest": [],
+    "getParentAtCaret": [],
+    "getChildCaret": [],
+    "getParentCaret": [
+      "param"
+    ],
+    "getFlipped": [],
+    "isSamePointCaret": [
+      "t"
+    ],
+    "isSameNodeCaret": [
+      "t"
+    ],
+    "getSiblingCaret": []
+  },
+  "gs": [
+    "t"
+  ],
+  "_s": [
+    "t"
+  ],
+  "ps": [
+    "t"
+  ],
+  "Cs": [
+    "t",
+    "e"
+  ],
+  "Ss": [
+    "t",
+    "e",
+    "n"
+  ],
+  "Ns": [
+    "t",
+    "n",
+    "param"
+  ],
+  "Ts": [
+    "t",
+    "e"
+  ],
+  "vs": [
+    "t",
+    "e"
+  ],
+  "ks": [
+    "t"
+  ],
+  "Es": [
+    "t"
+  ],
+  "Os": {
+    "type": [],
+    "direction": [],
+    "anchor": [],
+    "focus": [],
+    "constructor": [
+      "t",
+      "e",
+      "n"
+    ],
+    "getLatest": [],
+    "isCollapsed": [],
+    "getTextSlices": [],
+    "iterNodeCarets": [
+      "param"
+    ]
+  },
+  "bs": {
+    "type": [],
+    "caret": [],
+    "distance": [],
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "getSliceIndices": [],
+    "getTextContent": [],
+    "getTextContentSize": [],
+    "removeTextSlice": []
+  },
+  "Ms": [
+    "t"
+  ],
+  "As": [
+    "t"
+  ],
+  "ws": [
+    "e",
+    "n"
+  ],
+  "Ds": [
+    "t"
+  ],
+  "Ps": [
+    "e",
+    "n"
+  ],
+  "Is": [
+    "t"
+  ],
+  "Ls": [
+    "t",
+    "e"
+  ],
+  "Fs": [
+    "t"
+  ],
+  "Rs": [
+    "e",
+    "n"
+  ],
+  "Ks": [
+    "e",
+    "n"
+  ],
+  "Bs": [
+    "e",
+    "n"
+  ],
+  "zs": [
+    "t"
+  ],
+  "Ws": [
+    "t",
+    "e"
+  ],
+  "$s": [
+    "t"
+  ],
+  "Us": [
+    "t"
+  ],
+  "Js": [
+    "t",
+    "param"
+  ],
+  "Ys": [
+    "t"
+  ],
+  "js": [
+    "e",
+    "param"
+  ],
+  "a": [
+    "t",
+    "e"
+  ],
+  "Hs": [
+    "t"
+  ],
+  "Vs": [
+    "t"
+  ],
+  "Gs": [
+    "t",
+    "e"
+  ],
+  "qs": [
+    "t",
+    "e"
+  ],
+  "Xs": [
+    "t",
+    "e",
+    "n"
+  ],
+  "Qs": [
+    "e"
+  ],
+  "Zs": [
+    "t",
+    "e"
+  ],
+  "tl": [
+    "param"
+  ]
+}
