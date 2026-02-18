@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/npm-Integrated-red?logo=npm" />
   <img src="https://img.shields.io/badge/GitHub%20Actions-Automated-success?logo=githubactions" />
   <img src="https://img.shields.io/badge/License-MIT-green" />
-  <img src="https://img.shields.io/badge/Scale-10k%2B%20Libraries-orange" />
+  <img src="https://img.shields.io/badge/Scale-5k%2B%20Libraries-orange" />
 </p>
 
 <p align="center">
