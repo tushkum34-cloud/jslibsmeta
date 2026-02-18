@@ -1,0 +1,297 @@
+{
+  "_interopRequireDefault": [
+    "e"
+  ],
+  "ChromeHeapSnapshotProcessor": {
+    "constructor": [
+      "snapshotData"
+    ],
+    "traceFunctionInfos": [],
+    "locations": [],
+    "nodes": [],
+    "edges": [],
+    "traceTree": []
+  },
+  "ChromeHeapSnapshotStringTable": {
+    "constructor": [
+      "strings"
+    ],
+    "add": [
+      "value"
+    ],
+    "get": [
+      "index"
+    ],
+    "_syncIndexCache": []
+  },
+  "ChromeHeapSnapshotRecordAccessor": {
+    "constructor": [
+      "buffer",
+      "recordFields",
+      "recordTypes",
+      "globalStringTable",
+      "position",
+      "parent"
+    ],
+    "getString": [
+      "field"
+    ],
+    "getNumber": [
+      "field"
+    ],
+    "getChildren": [
+      "field"
+    ],
+    "setString": [
+      "field",
+      "value"
+    ],
+    "setNumber": [
+      "field",
+      "value"
+    ],
+    "moveToRecord": [
+      "recordIndex"
+    ],
+    "append": [
+      "record"
+    ],
+    "moveAndInsert": [
+      "recordIndex",
+      "record"
+    ],
+    "protectedHasNext": [],
+    "protectedTryMoveNext": [],
+    "_getRaw": [
+      "field"
+    ],
+    "_getScalar": [
+      "field"
+    ],
+    "_setRaw": [
+      "field",
+      "rawValue"
+    ],
+    "_set": [
+      "field",
+      "value"
+    ],
+    "_setChildren": [
+      "field",
+      "value"
+    ],
+    "_encodeString": [
+      "field",
+      "value"
+    ],
+    "_validatePosition": [
+      "param",
+      "param"
+    ],
+    "_moveToPosition": [
+      "nextPosition",
+      "param"
+    ]
+  },
+  "ChromeHeapSnapshotRecordIterator": {
+    "constructor": [
+      "buffer",
+      "recordFields",
+      "recordTypes",
+      "globalStringTable",
+      "param",
+      "parent"
+    ],
+    "next": []
+  },
+  "GoogleIgnoreListConsumer": {
+    "constructor": [
+      "map",
+      "param"
+    ],
+    "isIgnored": [
+      "param"
+    ],
+    "toArray": [
+      "sources"
+    ],
+    "_getIgnoredSourceSet": [],
+    "_buildIgnoredSourceSet": [
+      "map",
+      "ignoredSourceSet"
+    ]
+  },
+  "_getRequireWildcardCache": [
+    "e"
+  ],
+  "_interopRequireWildcard": [
+    "e",
+    "r"
+  ],
+  "SourceMetadataMapConsumer": {
+    "constructor": [
+      "map",
+      "param"
+    ],
+    "functionNameFor": [
+      "param"
+    ],
+    "toArray": [
+      "sources"
+    ],
+    "_getMetadataBySource": [],
+    "_getFunctionMappings": [
+      "source"
+    ],
+    "_getMetadataObjectsBySourceNames": [
+      "map"
+    ]
+  },
+  "decodeFunctionMap": [
+    "functionMap"
+  ],
+  "findEnclosingMapping": [
+    "mappings",
+    "target"
+  ],
+  "comparePositions": [
+    "a",
+    "b"
+  ],
+  "SymbolicationContext": {
+    "constructor": [
+      "options"
+    ],
+    "symbolicate": [
+      "stackTrace"
+    ],
+    "symbolicateProfilerMap": [
+      "mapFile"
+    ],
+    "symbolicateAttribution": [
+      "obj"
+    ],
+    "symbolicateChromeTrace": [
+      "traceFile",
+      "param"
+    ],
+    "getOriginalPositionFor": [
+      "lineNumber",
+      "columnNumber",
+      "moduleIds"
+    ],
+    "symbolicateHermesMinidumpTrace": [
+      "crashInfo"
+    ],
+    "symbolicateHeapSnapshot": [
+      "snapshotContents"
+    ],
+    "symbolicateHermesCoverageTrace": [
+      "coverageInfo"
+    ],
+    "getOriginalPositionDetailsFor": [
+      "lineNumber",
+      "columnNumber",
+      "moduleIds"
+    ],
+    "parseFileName": [
+      "str"
+    ]
+  },
+  "SingleMapSymbolicationContext": {
+    "constructor": [
+      "SourceMapConsumer",
+      "sourceMapContent",
+      "param"
+    ],
+    "_initSegment": [
+      "map"
+    ],
+    "symbolicateHermesMinidumpTrace": [
+      "crashInfo"
+    ],
+    "symbolicateHermesCoverageTrace": [
+      "coverageInfo"
+    ],
+    "getOriginalPositionDetailsFor": [
+      "lineNumber",
+      "columnNumber",
+      "moduleIds"
+    ],
+    "parseFileName": [
+      "str"
+    ]
+  },
+  "DirectorySymbolicationContext": {
+    "constructor": [
+      "SourceMapConsumer",
+      "rootDir",
+      "param"
+    ],
+    "_loadMap": [
+      "mapFilename"
+    ],
+    "getOriginalPositionDetailsFor": [
+      "lineNumber",
+      "columnNumber",
+      "filename"
+    ],
+    "parseFileName": [
+      "str"
+    ]
+  },
+  "parseSingleMapFileName": [
+    "str"
+  ],
+  "createContext": [
+    "SourceMapConsumer",
+    "sourceMapContent",
+    "param"
+  ],
+  "unstable_createDirectoryContext": [
+    "SourceMapConsumer",
+    "rootDir",
+    "param"
+  ],
+  "getOriginalPositionFor": [
+    "lineNumber",
+    "columnNumber",
+    "moduleIds",
+    "context"
+  ],
+  "symbolicate": [
+    "stackTrace",
+    "context"
+  ],
+  "symbolicateProfilerMap": [
+    "mapFile",
+    "context"
+  ],
+  "symbolicateAttribution": [
+    "obj",
+    "context"
+  ],
+  "symbolicateChromeTrace": [
+    "traceFile",
+    "param",
+    "context"
+  ],
+  "printHelp": [],
+  "main": [
+    "param",
+    "param"
+  ],
+  "checkAndRemoveArg": [
+    "arg",
+    "param"
+  ],
+  "checkAndRemoveArgWithValue": [
+    "arg"
+  ],
+  "readAll": [
+    "stream"
+  ],
+  "waitForStream": [
+    "stream"
+  ]
+}

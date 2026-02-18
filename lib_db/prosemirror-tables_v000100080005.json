@@ -1,0 +1,598 @@
+{
+  "TableMap": {
+    "width": [],
+    "height": [],
+    "map": [],
+    "problems": [],
+    "constructor": [
+      "width",
+      "height",
+      "map",
+      "problems"
+    ],
+    "findCell": [
+      "pos"
+    ],
+    "colCount": [
+      "pos"
+    ],
+    "nextCell": [
+      "pos",
+      "axis",
+      "dir"
+    ],
+    "rectBetween": [
+      "a",
+      "b"
+    ],
+    "cellsInRect": [
+      "rect"
+    ],
+    "positionAt": [
+      "row",
+      "col",
+      "table"
+    ],
+    "get": [
+      "table"
+    ]
+  },
+  "CellSelection": {
+    "$anchorCell": [],
+    "$headCell": [],
+    "constructor": [
+      "$anchorCell",
+      "$headCell"
+    ],
+    "map": [
+      "doc",
+      "mapping"
+    ],
+    "content": [],
+    "replace": [
+      "tr",
+      "content"
+    ],
+    "replaceWith": [
+      "tr",
+      "node"
+    ],
+    "forEachCell": [
+      "f"
+    ],
+    "isColSelection": [],
+    "colSelection": [
+      "$anchorCell",
+      "$headCell"
+    ],
+    "isRowSelection": [],
+    "eq": [
+      "other"
+    ],
+    "rowSelection": [
+      "$anchorCell",
+      "$headCell"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "doc",
+      "json"
+    ],
+    "create": [
+      "doc",
+      "anchorCell",
+      "headCell"
+    ],
+    "getBookmark": []
+  },
+  "CellBookmark": {
+    "anchor": [],
+    "head": [],
+    "constructor": [
+      "anchor",
+      "head"
+    ],
+    "map": [
+      "mapping"
+    ],
+    "resolve": [
+      "doc"
+    ]
+  },
+  "ResizeState": {
+    "activeHandle": [],
+    "dragging": [],
+    "constructor": [
+      "activeHandle",
+      "dragging"
+    ],
+    "apply": [
+      "tr"
+    ]
+  },
+  "TableView": {
+    "node": [],
+    "defaultCellMinWidth": [],
+    "dom": [],
+    "table": [],
+    "colgroup": [],
+    "contentDOM": [],
+    "constructor": [
+      "node",
+      "defaultCellMinWidth"
+    ],
+    "update": [
+      "node"
+    ],
+    "ignoreMutation": [
+      "record"
+    ]
+  },
+  "computeMap": [
+    "table"
+  ],
+  "findWidth": [
+    "table"
+  ],
+  "findBadColWidths": [
+    "map",
+    "colWidths",
+    "table"
+  ],
+  "freshColWidth": [
+    "attrs"
+  ],
+  "getCellAttrs": [
+    "dom",
+    "extraAttrs"
+  ],
+  "setCellAttrs": [
+    "node",
+    "extraAttrs"
+  ],
+  "validateColwidth": [
+    "value"
+  ],
+  "tableNodes": [
+    "options"
+  ],
+  "tableNodeTypes": [
+    "schema"
+  ],
+  "cellAround": [
+    "$pos"
+  ],
+  "cellWrapping": [
+    "$pos"
+  ],
+  "isInTable": [
+    "state"
+  ],
+  "selectionCell": [
+    "state"
+  ],
+  "cellNear": [
+    "$pos"
+  ],
+  "pointsAtCell": [
+    "$pos"
+  ],
+  "moveCellForward": [
+    "$pos"
+  ],
+  "inSameTable": [
+    "$cellA",
+    "$cellB"
+  ],
+  "findCell": [
+    "$pos"
+  ],
+  "colCount": [
+    "$pos"
+  ],
+  "nextCell": [
+    "$pos",
+    "axis",
+    "dir"
+  ],
+  "removeColSpan": [
+    "attrs",
+    "pos",
+    "param"
+  ],
+  "addColSpan": [
+    "attrs",
+    "pos",
+    "param"
+  ],
+  "columnIsHeader": [
+    "map",
+    "table",
+    "col"
+  ],
+  "drawCellSelection": [
+    "state"
+  ],
+  "isCellBoundarySelection": [
+    "param"
+  ],
+  "isTextSelectionAcrossCells": [
+    "param"
+  ],
+  "normalizeSelection": [
+    "state",
+    "tr",
+    "allowTableNodeSelection"
+  ],
+  "changedDescendants": [
+    "old",
+    "cur",
+    "offset",
+    "f"
+  ],
+  "fixTables": [
+    "state",
+    "oldState"
+  ],
+  "check": [
+    "node",
+    "pos"
+  ],
+  "fixTable": [
+    "state",
+    "table",
+    "tablePos",
+    "tr"
+  ],
+  "convertTableNodeToArrayOfRows": [
+    "tableNode"
+  ],
+  "convertArrayOfRowsToTableNode": [
+    "tableNode",
+    "arrayOfNodes"
+  ],
+  "moveRowInArrayOfRows": [
+    "rows",
+    "indexesOrigin",
+    "indexesTarget",
+    "directionOverride"
+  ],
+  "isCellSelection": [
+    "value"
+  ],
+  "findTable": [
+    "$pos"
+  ],
+  "findCellRange": [
+    "selection",
+    "anchorHit",
+    "headHit"
+  ],
+  "findCellPos": [
+    "doc",
+    "pos"
+  ],
+  "findParentNode": [
+    "predicate",
+    "$pos"
+  ],
+  "getCellsInColumn": [
+    "columnIndex",
+    "selection"
+  ],
+  "getCellsInRow": [
+    "rowIndex",
+    "selection"
+  ],
+  "getSelectionRangeInColumn": [
+    "tr",
+    "startColIndex",
+    "param"
+  ],
+  "getSelectionRangeInRow": [
+    "tr",
+    "startRowIndex",
+    "param"
+  ],
+  "transpose": [
+    "array"
+  ],
+  "moveColumn": [
+    "moveColParams"
+  ],
+  "moveTableColumn$1": [
+    "table",
+    "indexesOrigin",
+    "indexesTarget",
+    "direction"
+  ],
+  "moveRow": [
+    "moveRowParams"
+  ],
+  "moveTableRow$1": [
+    "table",
+    "indexesOrigin",
+    "indexesTarget",
+    "direction"
+  ],
+  "selectedRect": [
+    "state"
+  ],
+  "addColumn": [
+    "tr",
+    "param",
+    "col"
+  ],
+  "addColumnBefore": [
+    "state",
+    "dispatch"
+  ],
+  "addColumnAfter": [
+    "state",
+    "dispatch"
+  ],
+  "removeColumn": [
+    "tr",
+    "param",
+    "col"
+  ],
+  "deleteColumn": [
+    "state",
+    "dispatch"
+  ],
+  "rowIsHeader": [
+    "map",
+    "table",
+    "row"
+  ],
+  "addRow": [
+    "tr",
+    "param",
+    "row"
+  ],
+  "addRowBefore": [
+    "state",
+    "dispatch"
+  ],
+  "addRowAfter": [
+    "state",
+    "dispatch"
+  ],
+  "removeRow": [
+    "tr",
+    "param",
+    "row"
+  ],
+  "deleteRow": [
+    "state",
+    "dispatch"
+  ],
+  "isEmpty": [
+    "cell"
+  ],
+  "cellsOverlapRectangle": [
+    "param",
+    "rect"
+  ],
+  "mergeCells": [
+    "state",
+    "dispatch"
+  ],
+  "splitCell": [
+    "state",
+    "dispatch"
+  ],
+  "splitCellWithType": [
+    "getCellType"
+  ],
+  "setCellAttr": [
+    "name",
+    "value"
+  ],
+  "deprecated_toggleHeader": [
+    "type"
+  ],
+  "isHeaderEnabledByType": [
+    "type",
+    "rect",
+    "types"
+  ],
+  "toggleHeader": [
+    "type",
+    "options"
+  ],
+  "findNextCell": [
+    "$cell",
+    "dir"
+  ],
+  "goToNextCell": [
+    "direction"
+  ],
+  "deleteTable": [
+    "state",
+    "dispatch"
+  ],
+  "deleteCellSelection": [
+    "state",
+    "dispatch"
+  ],
+  "moveTableRow": [
+    "options"
+  ],
+  "moveTableColumn": [
+    "options"
+  ],
+  "pastedCells": [
+    "slice"
+  ],
+  "ensureRectangular": [
+    "schema",
+    "rows"
+  ],
+  "fitSlice": [
+    "nodeType",
+    "slice"
+  ],
+  "clipCells": [
+    "param",
+    "newWidth",
+    "newHeight"
+  ],
+  "growTable": [
+    "tr",
+    "map",
+    "table",
+    "start",
+    "width",
+    "height",
+    "mapFrom"
+  ],
+  "isolateHorizontal": [
+    "tr",
+    "map",
+    "table",
+    "start",
+    "left",
+    "right",
+    "top",
+    "mapFrom"
+  ],
+  "isolateVertical": [
+    "tr",
+    "map",
+    "table",
+    "start",
+    "top",
+    "bottom",
+    "left",
+    "mapFrom"
+  ],
+  "insertCells": [
+    "state",
+    "dispatch",
+    "tableStart",
+    "rect",
+    "cells"
+  ],
+  "recomp": [],
+  "maybeSetSelection": [
+    "state",
+    "dispatch",
+    "selection"
+  ],
+  "arrow": [
+    "axis",
+    "dir"
+  ],
+  "shiftArrow": [
+    "axis",
+    "dir"
+  ],
+  "handleTripleClick": [
+    "view",
+    "pos"
+  ],
+  "handlePaste": [
+    "view",
+    "_",
+    "slice"
+  ],
+  "handleMouseDown$1": [
+    "view",
+    "startEvent"
+  ],
+  "setCellSelection": [
+    "$anchor$1",
+    "event"
+  ],
+  "stop": [],
+  "move": [
+    "event$1"
+  ],
+  "atEndOfCell": [
+    "view",
+    "axis",
+    "dir"
+  ],
+  "domInCell": [
+    "view",
+    "dom"
+  ],
+  "cellUnderMouse": [
+    "view",
+    "event"
+  ],
+  "updateColumnsOnResize": [
+    "node",
+    "colgroup",
+    "table",
+    "defaultCellMinWidth",
+    "overrideCol",
+    "overrideValue"
+  ],
+  "columnResizing": [
+    "param"
+  ],
+  "handleMouseMove": [
+    "view",
+    "event",
+    "handleWidth",
+    "lastColumnResizable"
+  ],
+  "handleMouseLeave": [
+    "view"
+  ],
+  "handleMouseDown": [
+    "view",
+    "event",
+    "cellMinWidth",
+    "defaultCellMinWidth"
+  ],
+  "finish": [
+    "event$1"
+  ],
+  "currentColWidth": [
+    "view",
+    "cellPos",
+    "param"
+  ],
+  "domCellAround": [
+    "target"
+  ],
+  "edgeCell": [
+    "view",
+    "event",
+    "side",
+    "handleWidth"
+  ],
+  "draggedWidth": [
+    "dragging",
+    "event",
+    "resizeMinWidth"
+  ],
+  "updateHandle": [
+    "view",
+    "value"
+  ],
+  "updateColumnWidth": [
+    "view",
+    "cell",
+    "width"
+  ],
+  "displayColumnWidth": [
+    "view",
+    "cell",
+    "width",
+    "defaultCellMinWidth"
+  ],
+  "zeroes": [
+    "n"
+  ],
+  "handleDecorations": [
+    "state",
+    "cell"
+  ],
+  "tableEditing": [
+    "param"
+  ]
+}

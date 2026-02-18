@@ -1,0 +1,359 @@
+{
+  "cluster": [],
+  "AggregatorRegistry": {
+    "constructor": [
+      "param"
+    ],
+    "clusterMetrics": [],
+    "contentType": [],
+    "aggregate": [
+      "metricsArr",
+      "param"
+    ],
+    "setRegistries": [
+      "regs"
+    ]
+  },
+  "done": [
+    "err",
+    "result"
+  ],
+  "addListeners": [],
+  "Counter": {
+    "constructor": [
+      "config"
+    ],
+    "incWithoutExemplar": [
+      "labels",
+      "value"
+    ],
+    "incWithExemplar": [
+      "param"
+    ],
+    "updateExemplar": [
+      "exemplarLabels",
+      "value",
+      "hash"
+    ],
+    "reset": [],
+    "get": [],
+    "labels": [
+      "param"
+    ],
+    "remove": [
+      "param"
+    ]
+  },
+  "setValue": [
+    "hashMap",
+    "value",
+    "param",
+    "param"
+  ],
+  "Exemplar": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "validateExemplarLabelSet": [
+      "labelSet"
+    ]
+  },
+  "Gauge": {
+    "constructor": [
+      "config"
+    ],
+    "set": [
+      "labels",
+      "value"
+    ],
+    "reset": [],
+    "inc": [
+      "labels",
+      "value"
+    ],
+    "dec": [
+      "labels",
+      "value"
+    ],
+    "setToCurrentTime": [
+      "labels"
+    ],
+    "startTimer": [
+      "labels"
+    ],
+    "get": [],
+    "_getValue": [
+      "labels"
+    ],
+    "labels": [
+      "param"
+    ],
+    "remove": [
+      "param"
+    ]
+  },
+  "set": [
+    "gauge",
+    "labels",
+    "value"
+  ],
+  "setDelta": [
+    "gauge",
+    "labels",
+    "delta"
+  ],
+  "getLabelArg": [
+    "labels"
+  ],
+  "getValueArg": [
+    "labels",
+    "value"
+  ],
+  "Histogram": {
+    "constructor": [
+      "config"
+    ],
+    "observeWithoutExemplar": [
+      "labels",
+      "value"
+    ],
+    "observeWithExemplar": [
+      "param"
+    ],
+    "updateExemplar": [
+      "labels",
+      "value",
+      "exemplarLabels"
+    ],
+    "get": [],
+    "getForPromString": [],
+    "reset": [],
+    "zero": [
+      "labels"
+    ],
+    "startTimer": [
+      "labels",
+      "exemplarLabels"
+    ],
+    "labels": [
+      "param"
+    ],
+    "remove": [
+      "param"
+    ]
+  },
+  "startTimer": [
+    "startLabels"
+  ],
+  "startTimerWithExemplar": [
+    "startLabels",
+    "startExemplarLabels"
+  ],
+  "setValuePair": [
+    "labels",
+    "value",
+    "metricName",
+    "exemplar",
+    "param"
+  ],
+  "findBound": [
+    "upperBounds",
+    "value"
+  ],
+  "observe": [
+    "labels"
+  ],
+  "createBaseValues": [
+    "labels",
+    "bucketValues",
+    "bucketExemplars"
+  ],
+  "convertLabelsAndValues": [
+    "labels",
+    "value"
+  ],
+  "extractBucketValuesForExport": [
+    "histogram"
+  ],
+  "addSumAndCountForExport": [
+    "histogram"
+  ],
+  "splayLabels": [
+    "bucket"
+  ],
+  "Metric": {
+    "constructor": [
+      "config",
+      "param"
+    ],
+    "reset": []
+  },
+  "AggregatorFactory": [
+    "aggregatorFn"
+  ],
+  "reportEventloopLag": [
+    "start",
+    "gauge",
+    "labels"
+  ],
+  "collect": [],
+  "aggregateByObjectName": [
+    "list"
+  ],
+  "updateMetrics": [
+    "gauge",
+    "data",
+    "labels"
+  ],
+  "safeMemoryUsage": [],
+  "notLinuxVariant": [
+    "registry",
+    "param"
+  ],
+  "structureOutput": [
+    "input"
+  ],
+  "Pushgateway": {
+    "constructor": [
+      "gatewayUrl",
+      "options",
+      "registry"
+    ],
+    "pushAdd": [
+      "param"
+    ],
+    "push": [
+      "param"
+    ],
+    "delete": [
+      "param"
+    ]
+  },
+  "useGateway": [
+    "method",
+    "job",
+    "groupings"
+  ],
+  "generateGroupings": [
+    "groupings"
+  ],
+  "isHttps": [
+    "href"
+  ],
+  "Registry": {
+    "PROMETHEUS_CONTENT_TYPE": [],
+    "OPENMETRICS_CONTENT_TYPE": [],
+    "constructor": [
+      "param"
+    ],
+    "getMetricsAsArray": [],
+    "getMetricsAsString": [
+      "metrics"
+    ],
+    "metrics": [],
+    "registerMetric": [
+      "metric"
+    ],
+    "clear": [],
+    "getMetricsAsJSON": [],
+    "removeSingleMetric": [
+      "name"
+    ],
+    "getSingleMetricAsString": [
+      "name"
+    ],
+    "getSingleMetric": [
+      "name"
+    ],
+    "setDefaultLabels": [
+      "labels"
+    ],
+    "resetMetrics": [],
+    "contentType": [],
+    "setContentType": [
+      "metricsContentType"
+    ],
+    "merge": [
+      "registers"
+    ]
+  },
+  "formatLabels": [
+    "labels",
+    "exclude"
+  ],
+  "flattenSharedLabels": [
+    "labels"
+  ],
+  "escapeLabelValue": [
+    "str"
+  ],
+  "escapeString": [
+    "str"
+  ],
+  "standardizeCounterName": [
+    "name"
+  ],
+  "Summary": {
+    "constructor": [
+      "config"
+    ],
+    "observe": [
+      "labels",
+      "value"
+    ],
+    "get": [],
+    "reset": [],
+    "startTimer": [
+      "labels"
+    ],
+    "labels": [
+      "param"
+    ],
+    "remove": [
+      "param"
+    ]
+  },
+  "extractSummariesForExport": [
+    "summaryOfLabels",
+    "percentiles"
+  ],
+  "getCountForExport": [
+    "value",
+    "summary"
+  ],
+  "getSumForExport": [
+    "value",
+    "summary"
+  ],
+  "TimeWindowQuantiles": {
+    "constructor": [
+      "maxAgeSeconds",
+      "ageBuckets"
+    ],
+    "size": [],
+    "percentile": [
+      "quantile"
+    ],
+    "push": [
+      "value"
+    ],
+    "reset": [],
+    "compress": []
+  },
+  "rotate": [],
+  "fastHashObject": [
+    "keys",
+    "labels"
+  ],
+  "hashObject": [
+    "labels",
+    "labelNames"
+  ],
+  "Grouper": {
+    "add": [
+      "key",
+      "value"
+    ]
+  }
+}

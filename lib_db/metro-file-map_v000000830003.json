@@ -1,0 +1,622 @@
+{
+  "_getRequireWildcardCache": [
+    "e"
+  ],
+  "_interopRequireWildcard": [
+    "e",
+    "r"
+  ],
+  "_interopRequireDefault": [
+    "e"
+  ],
+  "Watcher": {
+    "_backends": [],
+    "_nextHealthCheckId": [],
+    "_pendingHealthChecks": [],
+    "constructor": [
+      "options"
+    ],
+    "crawl": [],
+    "watch": [
+      "onChange"
+    ],
+    "_handleHealthCheckObservation": [
+      "basename"
+    ],
+    "close": [],
+    "checkHealth": [
+      "timeout"
+    ]
+  },
+  "ignoreForCrawl": [
+    "filePath"
+  ],
+  "retry": [
+    "error"
+  ],
+  "logEnd": [
+    "delta"
+  ],
+  "createWatcherBackend": [
+    "root"
+  ],
+  "DiskCacheManager": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "getCacheFilePath": [],
+    "read": [],
+    "write": [
+      "getSnapshot",
+      "param"
+    ],
+    "end": []
+  },
+  "hasNativeFindSupport": [],
+  "find": [
+    "roots",
+    "extensions",
+    "ignore",
+    "includeSymlinks",
+    "rootDir",
+    "console",
+    "callback"
+  ],
+  "search": [
+    "directory"
+  ],
+  "findNative": [
+    "roots",
+    "extensions",
+    "ignore",
+    "includeSymlinks",
+    "rootDir",
+    "console",
+    "callback"
+  ],
+  "nodeCrawl": [
+    "options"
+  ],
+  "callback": [
+    "fileData"
+  ],
+  "makeWatchmanError": [
+    "error"
+  ],
+  "watchmanCrawl": [
+    "param"
+  ],
+  "cmd": [
+    "command",
+    "param"
+  ],
+  "logWatchmanWaitMessage": [],
+  "getWatchmanRoots": [
+    "roots"
+  ],
+  "queryWatchmanForDirs": [
+    "rootProjectDirMappings"
+  ],
+  "planQuery": [
+    "param"
+  ],
+  "FileMap": {
+    "create": [
+      "options"
+    ],
+    "constructor": [
+      "options"
+    ],
+    "build": [],
+    "read": [],
+    "_buildFileDelta": [
+      "previousState"
+    ],
+    "_maybeReadLink": [
+      "filePath",
+      "fileMetadata"
+    ],
+    "_applyFileDelta": [
+      "fileSystem",
+      "plugins",
+      "delta"
+    ],
+    "_takeSnapshotAndPersist": [
+      "fileSystem",
+      "clocks",
+      "plugins",
+      "changed",
+      "removed"
+    ],
+    "_watch": [
+      "fileSystem",
+      "clocks",
+      "plugins"
+    ],
+    "end": [],
+    "_shouldUseWatchman": [],
+    "_getNextChangeID": [],
+    "_updateClock": [
+      "clocks",
+      "newClock"
+    ],
+    "H": []
+  },
+  "HasteConflictsError": {
+    "constructor": [
+      "conflicts"
+    ],
+    "getDetailedMessage": [
+      "pathsRelativeToRoot"
+    ]
+  },
+  "processFile": [
+    "data"
+  ],
+  "hasWatchedExtension": [
+    "filePath"
+  ],
+  "emitChange": [],
+  "onChange": [
+    "change"
+  ],
+  "enqueueEvent": [
+    "metadata"
+  ],
+  "performHealthCheck": [],
+  "DuplicateHasteCandidatesError": {
+    "constructor": [
+      "name",
+      "platform",
+      "supportsNativePlatform",
+      "duplicatesSet"
+    ]
+  },
+  "FileProcessor": {
+    "constructor": [
+      "opts"
+    ],
+    "processBatch": [
+      "files",
+      "req"
+    ],
+    "processRegularFile": [
+      "absolutePath",
+      "fileMetadata",
+      "req"
+    ],
+    "end": []
+  },
+  "processWorkerReply": [
+    "metadata",
+    "fileMetadata"
+  ],
+  "normalizeWorkerError": [
+    "mixedError"
+  ],
+  "RootPathUtils": {
+    "constructor": [
+      "rootDir"
+    ],
+    "getBasenameOfNthAncestor": [
+      "n"
+    ],
+    "getParts": [],
+    "absoluteToNormal": [
+      "absolutePath"
+    ],
+    "normalToAbsolute": [
+      "normalPath"
+    ],
+    "relativeToNormal": [
+      "relativePath"
+    ],
+    "getAncestorOfRootIdx": [
+      "normalPath"
+    ],
+    "joinNormalToRelative": [
+      "normalPath",
+      "relativePath"
+    ],
+    "relative": [
+      "from",
+      "to"
+    ]
+  },
+  "isDirectory": [
+    "node"
+  ],
+  "isRegularFile": [
+    "node"
+  ],
+  "TreeFS": {
+    "constructor": [
+      "param"
+    ],
+    "getSerializableSnapshot": [],
+    "fromDeserializedSnapshot": [
+      "param"
+    ],
+    "getModuleName": [
+      "mixedPath"
+    ],
+    "getSize": [
+      "mixedPath"
+    ],
+    "getDependencies": [
+      "mixedPath"
+    ],
+    "getDifference": [
+      "files"
+    ],
+    "getSha1": [
+      "mixedPath"
+    ],
+    "getOrComputeSha1": [
+      "mixedPath"
+    ],
+    "exists": [
+      "mixedPath"
+    ],
+    "lookup": [
+      "mixedPath"
+    ],
+    "getAllFiles": [],
+    "linkStats": [
+      "mixedPath"
+    ],
+    "matchFiles": [
+      "param"
+    ],
+    "addOrModify": [
+      "mixedPath",
+      "metadata"
+    ],
+    "bulkAddOrModify": [
+      "addedOrModifiedFiles"
+    ],
+    "remove": [
+      "mixedPath"
+    ],
+    "_lookupByNormalPath": [
+      "requestedNormalPath",
+      "param"
+    ],
+    "hierarchicalLookup": [
+      "mixedStartPath",
+      "subpath",
+      "opts"
+    ],
+    "metadataIterator": [
+      "opts"
+    ],
+    "_metadataIterator": [
+      "rootNode",
+      "opts",
+      "param"
+    ],
+    "_normalizePath": [
+      "relativeOrAbsolutePath"
+    ],
+    "_pathIterator": [
+      "iterationRootNode",
+      "iterationRootParentNode",
+      "ancestorOfRootIdx",
+      "opts",
+      "param",
+      "param"
+    ],
+    "_resolveSymlinkTargetToNormalPath": [
+      "symlinkNode",
+      "canonicalPathOfSymlink"
+    ],
+    "_getFileData": [
+      "filePath",
+      "param"
+    ],
+    "_cloneTree": [
+      "root"
+    ]
+  },
+  "checkWatchmanCapabilities": [
+    "requiredCapabilities"
+  ],
+  "CAPTURE_STRING_LITERAL": [
+    "pos"
+  ],
+  "createRegExp": [
+    "parts",
+    "flags"
+  ],
+  "alternatives": [
+    "param"
+  ],
+  "functionCallStart": [
+    "param"
+  ],
+  "extract": [
+    "code"
+  ],
+  "addDependency": [
+    "match",
+    "_",
+    "dep"
+  ],
+  "moduleCacheKey": [
+    "modulePath"
+  ],
+  "rootRelativeCacheKeys": [
+    "buildParameters"
+  ],
+  "compareStrings": [
+    "a",
+    "b"
+  ],
+  "chainComparators": [
+    "param"
+  ],
+  "HastePlugin": {
+    "name": [],
+    "constructor": [
+      "options"
+    ],
+    "initialize": [
+      "param"
+    ],
+    "getSerializableSnapshot": [],
+    "getModule": [
+      "name",
+      "platform",
+      "supportsNativePlatform",
+      "type"
+    ],
+    "getPackage": [
+      "name",
+      "platform",
+      "_supportsNativePlatform"
+    ],
+    "_getModuleMetadata": [
+      "name",
+      "platform",
+      "supportsNativePlatform"
+    ],
+    "_assertNoDuplicates": [
+      "name",
+      "platform",
+      "supportsNativePlatform",
+      "relativePathSet"
+    ],
+    "bulkUpdate": [
+      "delta"
+    ],
+    "onNewOrModifiedFile": [
+      "relativeFilePath",
+      "fileMetadata"
+    ],
+    "setModule": [
+      "id",
+      "module"
+    ],
+    "onRemovedFile": [
+      "relativeFilePath",
+      "fileMetadata"
+    ],
+    "assertValid": [],
+    "_recoverDuplicates": [
+      "moduleName",
+      "relativeFilePath"
+    ],
+    "computeConflicts": [],
+    "getCacheKey": []
+  },
+  "MockPlugin": {
+    "name": [],
+    "constructor": [
+      "param"
+    ],
+    "initialize": [
+      "param"
+    ],
+    "getMockModule": [
+      "name"
+    ],
+    "bulkUpdate": [
+      "delta"
+    ],
+    "onNewOrModifiedFile": [
+      "relativeFilePath"
+    ],
+    "onRemovedFile": [
+      "relativeFilePath"
+    ],
+    "getSerializableSnapshot": [],
+    "assertValid": [],
+    "getCacheKey": []
+  },
+  "getPlatformMessage": [
+    "platform"
+  ],
+  "getTypeMessage": [
+    "type"
+  ],
+  "computeHasteConflicts": [
+    "param"
+  ],
+  "getPlatformExtension": [
+    "file",
+    "platforms"
+  ],
+  "getMockName": [
+    "filePath"
+  ],
+  "AbstractWatcher": {
+    "constructor": [
+      "dir",
+      "param"
+    ],
+    "onFileEvent": [
+      "listener"
+    ],
+    "onError": [
+      "listener"
+    ],
+    "startWatching": [],
+    "stopWatching": [],
+    "emitFileEvent": [
+      "event"
+    ],
+    "emitError": [
+      "error"
+    ],
+    "getPauseReason": []
+  },
+  "FallbackWatcher": {
+    "_changeTimers": [],
+    "_dirRegistry": [],
+    "watched": [],
+    "startWatching": [],
+    "_register": [
+      "filepath",
+      "type"
+    ],
+    "_unregister": [
+      "filepath"
+    ],
+    "_unregisterDir": [
+      "dirpath"
+    ],
+    "_registered": [
+      "fullpath"
+    ],
+    "_checkedEmitError": [],
+    "_watchdir": [],
+    "_stopWatching": [
+      "dir"
+    ],
+    "stopWatching": [],
+    "_detectChangedFile": [
+      "dir",
+      "event",
+      "callback"
+    ],
+    "_normalizeChange": [
+      "dir",
+      "event",
+      "file"
+    ],
+    "_processChange": [
+      "dir",
+      "event",
+      "file"
+    ],
+    "_emitEvent": [
+      "change"
+    ],
+    "getPauseReason": []
+  },
+  "isIgnorableFileError": [
+    "error"
+  ],
+  "recReaddir": [
+    "dir",
+    "dirCallback",
+    "fileCallback",
+    "symlinkCallback",
+    "endCallback",
+    "errorCallback",
+    "ignored"
+  ],
+  "normalizeProxy": [
+    "callback"
+  ],
+  "NativeWatcher": {
+    "isSupported": [],
+    "constructor": [
+      "dir",
+      "opts"
+    ],
+    "startWatching": [],
+    "stopWatching": [],
+    "_handleEvent": [
+      "relativePath"
+    ]
+  },
+  "RecrawlWarning": {
+    "RECRAWL_WARNINGS": [],
+    "REGEXP": [],
+    "constructor": [
+      "root",
+      "count"
+    ],
+    "findByRoot": [
+      "root"
+    ],
+    "isRecrawlWarningDupe": [
+      "warningMessage"
+    ]
+  },
+  "WatchmanWatcher": {
+    "constructor": [
+      "dir",
+      "param"
+    ],
+    "startWatching": [],
+    "_init": [
+      "onReady",
+      "onError"
+    ],
+    "_handleChangeEvent": [
+      "resp"
+    ],
+    "_handleFileChange": [
+      "changeDescriptor",
+      "rawClock"
+    ],
+    "stopWatching": [],
+    "getPauseReason": []
+  },
+  "getWatchRoot": [],
+  "onWatchProject": [
+    "error",
+    "resp"
+  ],
+  "onClock": [
+    "error",
+    "resp"
+  ],
+  "onSubscribe": [
+    "error",
+    "resp"
+  ],
+  "handleWarning": [
+    "resp"
+  ],
+  "includedByGlob": [
+    "type",
+    "globs",
+    "dot",
+    "relativePath"
+  ],
+  "typeFromStat": [
+    "stat"
+  ],
+  "getHasteImpl": [
+    "requestedModulePath"
+  ],
+  "sha1hex": [
+    "content"
+  ],
+  "Worker": {
+    "constructor": [
+      "args"
+    ],
+    "processFile": [
+      "data"
+    ]
+  },
+  "getContent": [],
+  "setup": [
+    "args"
+  ]
+}

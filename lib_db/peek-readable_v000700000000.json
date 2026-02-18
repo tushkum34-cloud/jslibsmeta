@@ -1,0 +1,79 @@
+{
+  "AbstractStreamReader": {
+    "constructor": [],
+    "peek": [
+      "uint8Array",
+      "param"
+    ],
+    "read": [
+      "buffer",
+      "param"
+    ],
+    "readFromPeekBuffer": [
+      "buffer"
+    ],
+    "readRemainderFromStream": [
+      "buffer",
+      "mayBeLess"
+    ]
+  },
+  "Deferred": {
+    "constructor": []
+  },
+  "EndOfStreamError": {
+    "constructor": []
+  },
+  "AbortError": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "StreamReader": {
+    "constructor": [
+      "s"
+    ],
+    "readFromStream": [
+      "buffer",
+      "mayBeLess"
+    ],
+    "readDeferred": [
+      "request"
+    ],
+    "reject": [
+      "err"
+    ],
+    "abort": [],
+    "close": []
+  },
+  "WebStreamByobReader": {
+    "readFromStream": [
+      "buffer",
+      "mayBeLess"
+    ]
+  },
+  "WebStreamDefaultReader": {
+    "constructor": [
+      "reader"
+    ],
+    "writeChunk": [
+      "target",
+      "chunk"
+    ],
+    "readFromStream": [
+      "buffer",
+      "mayBeLess"
+    ],
+    "abort": [],
+    "close": []
+  },
+  "WebStreamReader": {
+    "constructor": [
+      "reader"
+    ],
+    "abort": [],
+    "close": []
+  },
+  "makeWebStreamReader": [
+    "stream"
+  ]
+}

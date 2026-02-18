@@ -1,0 +1,1264 @@
+{
+  "hasPrefix": [
+    "publicId",
+    "prefixes"
+  ],
+  "isConforming": [
+    "token"
+  ],
+  "getDocumentMode": [
+    "token"
+  ],
+  "causesExit": [
+    "startTagToken"
+  ],
+  "adjustTokenMathMLAttrs": [
+    "token"
+  ],
+  "adjustTokenSVGAttrs": [
+    "token"
+  ],
+  "adjustTokenXMLAttrs": [
+    "token"
+  ],
+  "adjustTokenSVGTagName": [
+    "token"
+  ],
+  "isMathMLTextIntegrationPoint": [
+    "tn",
+    "ns"
+  ],
+  "isHtmlIntegrationPoint": [
+    "tn",
+    "ns",
+    "attrs"
+  ],
+  "isIntegrationPoint": [
+    "tn",
+    "ns",
+    "attrs",
+    "foreignNS"
+  ],
+  "getTagID": [
+    "tagName"
+  ],
+  "hasUnescapedText": [
+    "tn",
+    "scriptingEnabled"
+  ],
+  "getTokenAttr": [
+    "token",
+    "attrName"
+  ],
+  "isSurrogate": [
+    "cp"
+  ],
+  "isSurrogatePair": [
+    "cp"
+  ],
+  "getSurrogatePairCodePoint": [
+    "cp1",
+    "cp2"
+  ],
+  "isControlCodePoint": [
+    "cp"
+  ],
+  "isUndefinedCodePoint": [
+    "cp"
+  ],
+  "parse": [
+    "html",
+    "options"
+  ],
+  "parseFragment": [
+    "fragmentContext",
+    "html",
+    "options"
+  ],
+  "FormattingElementList": {
+    "constructor": [
+      "treeAdapter"
+    ],
+    "_getNoahArkConditionCandidates": [
+      "newElement",
+      "neAttrs"
+    ],
+    "_ensureNoahArkCondition": [
+      "newElement"
+    ],
+    "insertMarker": [],
+    "pushElement": [
+      "element",
+      "token"
+    ],
+    "insertElementAfterBookmark": [
+      "element",
+      "token"
+    ],
+    "removeEntry": [
+      "entry"
+    ],
+    "clearToLastMarker": [],
+    "getElementEntryInScopeWithTagName": [
+      "tagName"
+    ],
+    "getElementEntry": [
+      "element"
+    ]
+  },
+  "Parser": {
+    "constructor": [
+      "options",
+      "document",
+      "param",
+      "param"
+    ],
+    "parse": [
+      "html",
+      "options"
+    ],
+    "getFragmentParser": [
+      "fragmentContext",
+      "options"
+    ],
+    "getFragment": [],
+    "_err": [
+      "token",
+      "code",
+      "beforeToken"
+    ],
+    "onItemPush": [
+      "node",
+      "tid",
+      "isTop"
+    ],
+    "onItemPop": [
+      "node",
+      "isTop"
+    ],
+    "_setContextModes": [
+      "current",
+      "tid"
+    ],
+    "_switchToTextParsing": [
+      "currentToken",
+      "nextTokenizerState"
+    ],
+    "switchToPlaintextParsing": [],
+    "_getAdjustedCurrentElement": [],
+    "_findFormInFragmentContext": [],
+    "_initTokenizerForFragmentParsing": [],
+    "_setDocumentType": [
+      "token"
+    ],
+    "_attachElementToTree": [
+      "element",
+      "location"
+    ],
+    "_appendElement": [
+      "token",
+      "namespaceURI"
+    ],
+    "_insertElement": [
+      "token",
+      "namespaceURI"
+    ],
+    "_insertFakeElement": [
+      "tagName",
+      "tagID"
+    ],
+    "_insertTemplate": [
+      "token"
+    ],
+    "_insertFakeRootElement": [],
+    "_appendCommentNode": [
+      "token",
+      "parent"
+    ],
+    "_insertCharacters": [
+      "token"
+    ],
+    "_adoptNodes": [
+      "donor",
+      "recipient"
+    ],
+    "_setEndLocation": [
+      "element",
+      "closingToken"
+    ],
+    "shouldProcessStartTagTokenInForeignContent": [
+      "token"
+    ],
+    "_processToken": [
+      "token"
+    ],
+    "_isIntegrationPoint": [
+      "tid",
+      "element",
+      "foreignNS"
+    ],
+    "_reconstructActiveFormattingElements": [],
+    "_closeTableCell": [],
+    "_closePElement": [],
+    "_resetInsertionMode": [],
+    "_resetInsertionModeForSelect": [
+      "selectIdx"
+    ],
+    "_isElementCausesFosterParenting": [
+      "tn"
+    ],
+    "_shouldFosterParentOnInsertion": [],
+    "_findFosterParentingLocation": [],
+    "_fosterParentElement": [
+      "element"
+    ],
+    "_isSpecialElement": [
+      "element",
+      "id"
+    ],
+    "onCharacter": [
+      "token"
+    ],
+    "onNullCharacter": [
+      "token"
+    ],
+    "onComment": [
+      "token"
+    ],
+    "onDoctype": [
+      "token"
+    ],
+    "onStartTag": [
+      "token"
+    ],
+    "_processStartTag": [
+      "token"
+    ],
+    "_startTagOutsideForeignContent": [
+      "token"
+    ],
+    "onEndTag": [
+      "token"
+    ],
+    "_endTagOutsideForeignContent": [
+      "token"
+    ],
+    "onEof": [
+      "token"
+    ],
+    "onWhitespaceCharacter": [
+      "token"
+    ]
+  },
+  "aaObtainFormattingElementEntry": [
+    "p",
+    "token"
+  ],
+  "aaObtainFurthestBlock": [
+    "p",
+    "formattingElementEntry"
+  ],
+  "aaInnerLoop": [
+    "p",
+    "furthestBlock",
+    "formattingElement"
+  ],
+  "aaRecreateElementFromEntry": [
+    "p",
+    "elementEntry"
+  ],
+  "aaInsertLastNodeInCommonAncestor": [
+    "p",
+    "commonAncestor",
+    "lastElement"
+  ],
+  "aaReplaceFormattingElement": [
+    "p",
+    "furthestBlock",
+    "formattingElementEntry"
+  ],
+  "callAdoptionAgency": [
+    "p",
+    "token"
+  ],
+  "appendComment": [
+    "p",
+    "token"
+  ],
+  "appendCommentToRootHtmlElement": [
+    "p",
+    "token"
+  ],
+  "appendCommentToDocument": [
+    "p",
+    "token"
+  ],
+  "stopParsing": [
+    "p",
+    "token"
+  ],
+  "doctypeInInitialMode": [
+    "p",
+    "token"
+  ],
+  "tokenInInitialMode": [
+    "p",
+    "token"
+  ],
+  "startTagBeforeHtml": [
+    "p",
+    "token"
+  ],
+  "endTagBeforeHtml": [
+    "p",
+    "token"
+  ],
+  "tokenBeforeHtml": [
+    "p",
+    "token"
+  ],
+  "startTagBeforeHead": [
+    "p",
+    "token"
+  ],
+  "endTagBeforeHead": [
+    "p",
+    "token"
+  ],
+  "tokenBeforeHead": [
+    "p",
+    "token"
+  ],
+  "startTagInHead": [
+    "p",
+    "token"
+  ],
+  "endTagInHead": [
+    "p",
+    "token"
+  ],
+  "templateEndTagInHead": [
+    "p",
+    "token"
+  ],
+  "tokenInHead": [
+    "p",
+    "token"
+  ],
+  "startTagInHeadNoScript": [
+    "p",
+    "token"
+  ],
+  "endTagInHeadNoScript": [
+    "p",
+    "token"
+  ],
+  "tokenInHeadNoScript": [
+    "p",
+    "token"
+  ],
+  "startTagAfterHead": [
+    "p",
+    "token"
+  ],
+  "endTagAfterHead": [
+    "p",
+    "token"
+  ],
+  "tokenAfterHead": [
+    "p",
+    "token"
+  ],
+  "modeInBody": [
+    "p",
+    "token"
+  ],
+  "whitespaceCharacterInBody": [
+    "p",
+    "token"
+  ],
+  "characterInBody": [
+    "p",
+    "token"
+  ],
+  "htmlStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "bodyStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "framesetStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "addressStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "numberedHeaderStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "preStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "formStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "listItemStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "plaintextStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "buttonStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "aStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "bStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "nobrStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "appletStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "tableStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "areaStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "isHiddenInput": [
+    "token"
+  ],
+  "inputStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "paramStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "hrStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "imageStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "textareaStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "xmpStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "iframeStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "rawTextStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "selectStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "optgroupStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "rbStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "rtStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "mathStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "svgStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "genericStartTagInBody": [
+    "p",
+    "token"
+  ],
+  "startTagInBody": [
+    "p",
+    "token"
+  ],
+  "bodyEndTagInBody": [
+    "p",
+    "token"
+  ],
+  "htmlEndTagInBody": [
+    "p",
+    "token"
+  ],
+  "addressEndTagInBody": [
+    "p",
+    "token"
+  ],
+  "formEndTagInBody": [
+    "p"
+  ],
+  "pEndTagInBody": [
+    "p"
+  ],
+  "liEndTagInBody": [
+    "p"
+  ],
+  "ddEndTagInBody": [
+    "p",
+    "token"
+  ],
+  "numberedHeaderEndTagInBody": [
+    "p"
+  ],
+  "appletEndTagInBody": [
+    "p",
+    "token"
+  ],
+  "brEndTagInBody": [
+    "p"
+  ],
+  "genericEndTagInBody": [
+    "p",
+    "token"
+  ],
+  "endTagInBody": [
+    "p",
+    "token"
+  ],
+  "eofInBody": [
+    "p",
+    "token"
+  ],
+  "endTagInText": [
+    "p",
+    "token"
+  ],
+  "eofInText": [
+    "p",
+    "token"
+  ],
+  "characterInTable": [
+    "p",
+    "token"
+  ],
+  "captionStartTagInTable": [
+    "p",
+    "token"
+  ],
+  "colgroupStartTagInTable": [
+    "p",
+    "token"
+  ],
+  "colStartTagInTable": [
+    "p",
+    "token"
+  ],
+  "tbodyStartTagInTable": [
+    "p",
+    "token"
+  ],
+  "tdStartTagInTable": [
+    "p",
+    "token"
+  ],
+  "tableStartTagInTable": [
+    "p",
+    "token"
+  ],
+  "inputStartTagInTable": [
+    "p",
+    "token"
+  ],
+  "formStartTagInTable": [
+    "p",
+    "token"
+  ],
+  "startTagInTable": [
+    "p",
+    "token"
+  ],
+  "endTagInTable": [
+    "p",
+    "token"
+  ],
+  "tokenInTable": [
+    "p",
+    "token"
+  ],
+  "whitespaceCharacterInTableText": [
+    "p",
+    "token"
+  ],
+  "characterInTableText": [
+    "p",
+    "token"
+  ],
+  "tokenInTableText": [
+    "p",
+    "token"
+  ],
+  "startTagInCaption": [
+    "p",
+    "token"
+  ],
+  "endTagInCaption": [
+    "p",
+    "token"
+  ],
+  "startTagInColumnGroup": [
+    "p",
+    "token"
+  ],
+  "endTagInColumnGroup": [
+    "p",
+    "token"
+  ],
+  "tokenInColumnGroup": [
+    "p",
+    "token"
+  ],
+  "startTagInTableBody": [
+    "p",
+    "token"
+  ],
+  "endTagInTableBody": [
+    "p",
+    "token"
+  ],
+  "startTagInRow": [
+    "p",
+    "token"
+  ],
+  "endTagInRow": [
+    "p",
+    "token"
+  ],
+  "startTagInCell": [
+    "p",
+    "token"
+  ],
+  "endTagInCell": [
+    "p",
+    "token"
+  ],
+  "startTagInSelect": [
+    "p",
+    "token"
+  ],
+  "endTagInSelect": [
+    "p",
+    "token"
+  ],
+  "startTagInSelectInTable": [
+    "p",
+    "token"
+  ],
+  "endTagInSelectInTable": [
+    "p",
+    "token"
+  ],
+  "startTagInTemplate": [
+    "p",
+    "token"
+  ],
+  "endTagInTemplate": [
+    "p",
+    "token"
+  ],
+  "eofInTemplate": [
+    "p",
+    "token"
+  ],
+  "startTagAfterBody": [
+    "p",
+    "token"
+  ],
+  "endTagAfterBody": [
+    "p",
+    "token"
+  ],
+  "tokenAfterBody": [
+    "p",
+    "token"
+  ],
+  "startTagInFrameset": [
+    "p",
+    "token"
+  ],
+  "endTagInFrameset": [
+    "p",
+    "token"
+  ],
+  "startTagAfterFrameset": [
+    "p",
+    "token"
+  ],
+  "endTagAfterFrameset": [
+    "p",
+    "token"
+  ],
+  "startTagAfterAfterBody": [
+    "p",
+    "token"
+  ],
+  "tokenAfterAfterBody": [
+    "p",
+    "token"
+  ],
+  "startTagAfterAfterFrameset": [
+    "p",
+    "token"
+  ],
+  "nullCharacterInForeignContent": [
+    "p",
+    "token"
+  ],
+  "characterInForeignContent": [
+    "p",
+    "token"
+  ],
+  "popUntilHtmlOrIntegrationPoint": [
+    "p"
+  ],
+  "startTagInForeignContent": [
+    "p",
+    "token"
+  ],
+  "endTagInForeignContent": [
+    "p",
+    "token"
+  ],
+  "OpenElementStack": {
+    "currentTmplContentOrNode": [],
+    "constructor": [
+      "document",
+      "treeAdapter",
+      "handler"
+    ],
+    "_indexOf": [
+      "element"
+    ],
+    "_isInTemplate": [],
+    "_updateCurrentElement": [],
+    "push": [
+      "element",
+      "tagID"
+    ],
+    "pop": [],
+    "replace": [
+      "oldElement",
+      "newElement"
+    ],
+    "insertAfter": [
+      "referenceElement",
+      "newElement",
+      "newElementID"
+    ],
+    "popUntilTagNamePopped": [
+      "tagName"
+    ],
+    "shortenToLength": [
+      "idx"
+    ],
+    "popUntilElementPopped": [
+      "element"
+    ],
+    "popUntilPopped": [
+      "tagNames",
+      "targetNS"
+    ],
+    "popUntilNumberedHeaderPopped": [],
+    "popUntilTableCellPopped": [],
+    "popAllUpToHtmlElement": [],
+    "_indexOfTagNames": [
+      "tagNames",
+      "namespace"
+    ],
+    "clearBackTo": [
+      "tagNames",
+      "targetNS"
+    ],
+    "clearBackToTableContext": [],
+    "clearBackToTableBodyContext": [],
+    "clearBackToTableRowContext": [],
+    "remove": [
+      "element"
+    ],
+    "tryPeekProperlyNestedBodyElement": [],
+    "contains": [
+      "element"
+    ],
+    "getCommonAncestor": [
+      "element"
+    ],
+    "isRootHtmlElementCurrent": [],
+    "hasInDynamicScope": [
+      "tagName",
+      "htmlScope"
+    ],
+    "hasInScope": [
+      "tagName"
+    ],
+    "hasInListItemScope": [
+      "tagName"
+    ],
+    "hasInButtonScope": [
+      "tagName"
+    ],
+    "hasNumberedHeaderInScope": [],
+    "hasInTableScope": [
+      "tagName"
+    ],
+    "hasTableBodyContextInTableScope": [],
+    "hasInSelectScope": [
+      "tagName"
+    ],
+    "generateImpliedEndTags": [],
+    "generateImpliedEndTagsThoroughly": [],
+    "generateImpliedEndTagsWithExclusion": [
+      "exclusionId"
+    ]
+  },
+  "isVoidElement": [
+    "node",
+    "options"
+  ],
+  "serialize": [
+    "node",
+    "options"
+  ],
+  "serializeOuter": [
+    "node",
+    "options"
+  ],
+  "serializeChildNodes": [
+    "parentNode",
+    "options"
+  ],
+  "serializeNode": [
+    "node",
+    "options"
+  ],
+  "serializeElement": [
+    "node",
+    "options"
+  ],
+  "serializeAttributes": [
+    "node",
+    "param"
+  ],
+  "serializeTextNode": [
+    "node",
+    "options"
+  ],
+  "serializeCommentNode": [
+    "node",
+    "param"
+  ],
+  "serializeDocumentTypeNode": [
+    "node",
+    "param"
+  ],
+  "Tokenizer": {
+    "constructor": [
+      "options",
+      "handler"
+    ],
+    "_err": [
+      "code",
+      "param"
+    ],
+    "getCurrentLocation": [
+      "offset"
+    ],
+    "_runParsingLoop": [],
+    "pause": [],
+    "resume": [
+      "writeCallback"
+    ],
+    "write": [
+      "chunk",
+      "isLastChunk",
+      "writeCallback"
+    ],
+    "insertHtmlAtCurrentPos": [
+      "chunk"
+    ],
+    "_ensureHibernation": [],
+    "_consume": [],
+    "_advanceBy": [
+      "count"
+    ],
+    "_consumeSequenceIfMatch": [
+      "pattern",
+      "caseSensitive"
+    ],
+    "_createStartTagToken": [],
+    "_createEndTagToken": [],
+    "_createCommentToken": [
+      "offset"
+    ],
+    "_createDoctypeToken": [
+      "initialName"
+    ],
+    "_createCharacterToken": [
+      "type",
+      "chars"
+    ],
+    "_createAttr": [
+      "attrNameFirstCh"
+    ],
+    "_leaveAttrName": [],
+    "_leaveAttrValue": [],
+    "prepareToken": [
+      "ct"
+    ],
+    "emitCurrentTagToken": [],
+    "emitCurrentComment": [
+      "ct"
+    ],
+    "emitCurrentDoctype": [
+      "ct"
+    ],
+    "_emitCurrentCharacterToken": [
+      "nextLocation"
+    ],
+    "_emitEOFToken": [],
+    "_appendCharToCurrentCharacterToken": [
+      "type",
+      "ch"
+    ],
+    "_emitCodePoint": [
+      "cp"
+    ],
+    "_emitChars": [
+      "ch"
+    ],
+    "_startCharacterReference": [],
+    "_isCharacterReferenceInAttribute": [],
+    "_flushCodePointConsumedAsCharacterReference": [
+      "cp"
+    ],
+    "_callState": [
+      "cp"
+    ],
+    "_stateData": [
+      "cp"
+    ],
+    "_stateRcdata": [
+      "cp"
+    ],
+    "_stateRawtext": [
+      "cp"
+    ],
+    "_stateScriptData": [
+      "cp"
+    ],
+    "_statePlaintext": [
+      "cp"
+    ],
+    "_stateTagOpen": [
+      "cp"
+    ],
+    "_stateEndTagOpen": [
+      "cp"
+    ],
+    "_stateTagName": [
+      "cp"
+    ],
+    "_stateRcdataLessThanSign": [
+      "cp"
+    ],
+    "_stateRcdataEndTagOpen": [
+      "cp"
+    ],
+    "handleSpecialEndTag": [
+      "_cp"
+    ],
+    "_stateRcdataEndTagName": [
+      "cp"
+    ],
+    "_stateRawtextLessThanSign": [
+      "cp"
+    ],
+    "_stateRawtextEndTagOpen": [
+      "cp"
+    ],
+    "_stateRawtextEndTagName": [
+      "cp"
+    ],
+    "_stateScriptDataLessThanSign": [
+      "cp"
+    ],
+    "_stateScriptDataEndTagOpen": [
+      "cp"
+    ],
+    "_stateScriptDataEndTagName": [
+      "cp"
+    ],
+    "_stateScriptDataEscapeStart": [
+      "cp"
+    ],
+    "_stateScriptDataEscapeStartDash": [
+      "cp"
+    ],
+    "_stateScriptDataEscaped": [
+      "cp"
+    ],
+    "_stateScriptDataEscapedDash": [
+      "cp"
+    ],
+    "_stateScriptDataEscapedDashDash": [
+      "cp"
+    ],
+    "_stateScriptDataEscapedLessThanSign": [
+      "cp"
+    ],
+    "_stateScriptDataEscapedEndTagOpen": [
+      "cp"
+    ],
+    "_stateScriptDataEscapedEndTagName": [
+      "cp"
+    ],
+    "_stateScriptDataDoubleEscapeStart": [
+      "cp"
+    ],
+    "_stateScriptDataDoubleEscaped": [
+      "cp"
+    ],
+    "_stateScriptDataDoubleEscapedDash": [
+      "cp"
+    ],
+    "_stateScriptDataDoubleEscapedDashDash": [
+      "cp"
+    ],
+    "_stateScriptDataDoubleEscapedLessThanSign": [
+      "cp"
+    ],
+    "_stateScriptDataDoubleEscapeEnd": [
+      "cp"
+    ],
+    "_stateBeforeAttributeName": [
+      "cp"
+    ],
+    "_stateAttributeName": [
+      "cp"
+    ],
+    "_stateAfterAttributeName": [
+      "cp"
+    ],
+    "_stateBeforeAttributeValue": [
+      "cp"
+    ],
+    "_stateAttributeValueDoubleQuoted": [
+      "cp"
+    ],
+    "_stateAttributeValueSingleQuoted": [
+      "cp"
+    ],
+    "_stateAttributeValueUnquoted": [
+      "cp"
+    ],
+    "_stateAfterAttributeValueQuoted": [
+      "cp"
+    ],
+    "_stateSelfClosingStartTag": [
+      "cp"
+    ],
+    "_stateBogusComment": [
+      "cp"
+    ],
+    "_stateMarkupDeclarationOpen": [
+      "cp"
+    ],
+    "_stateCommentStart": [
+      "cp"
+    ],
+    "_stateCommentStartDash": [
+      "cp"
+    ],
+    "_stateComment": [
+      "cp"
+    ],
+    "_stateCommentLessThanSign": [
+      "cp"
+    ],
+    "_stateCommentLessThanSignBang": [
+      "cp"
+    ],
+    "_stateCommentLessThanSignBangDash": [
+      "cp"
+    ],
+    "_stateCommentLessThanSignBangDashDash": [
+      "cp"
+    ],
+    "_stateCommentEndDash": [
+      "cp"
+    ],
+    "_stateCommentEnd": [
+      "cp"
+    ],
+    "_stateCommentEndBang": [
+      "cp"
+    ],
+    "_stateDoctype": [
+      "cp"
+    ],
+    "_stateBeforeDoctypeName": [
+      "cp"
+    ],
+    "_stateDoctypeName": [
+      "cp"
+    ],
+    "_stateAfterDoctypeName": [
+      "cp"
+    ],
+    "_stateAfterDoctypePublicKeyword": [
+      "cp"
+    ],
+    "_stateBeforeDoctypePublicIdentifier": [
+      "cp"
+    ],
+    "_stateDoctypePublicIdentifierDoubleQuoted": [
+      "cp"
+    ],
+    "_stateDoctypePublicIdentifierSingleQuoted": [
+      "cp"
+    ],
+    "_stateAfterDoctypePublicIdentifier": [
+      "cp"
+    ],
+    "_stateBetweenDoctypePublicAndSystemIdentifiers": [
+      "cp"
+    ],
+    "_stateAfterDoctypeSystemKeyword": [
+      "cp"
+    ],
+    "_stateBeforeDoctypeSystemIdentifier": [
+      "cp"
+    ],
+    "_stateDoctypeSystemIdentifierDoubleQuoted": [
+      "cp"
+    ],
+    "_stateDoctypeSystemIdentifierSingleQuoted": [
+      "cp"
+    ],
+    "_stateAfterDoctypeSystemIdentifier": [
+      "cp"
+    ],
+    "_stateBogusDoctype": [
+      "cp"
+    ],
+    "_stateCdataSection": [
+      "cp"
+    ],
+    "_stateCdataSectionBracket": [
+      "cp"
+    ],
+    "_stateCdataSectionEnd": [
+      "cp"
+    ],
+    "_stateCharacterReference": [],
+    "_stateAmbiguousAmpersand": [
+      "cp"
+    ]
+  },
+  "isAsciiDigit": [
+    "cp"
+  ],
+  "isAsciiUpper": [
+    "cp"
+  ],
+  "isAsciiLower": [
+    "cp"
+  ],
+  "isAsciiLetter": [
+    "cp"
+  ],
+  "isAsciiAlphaNumeric": [
+    "cp"
+  ],
+  "toAsciiLower": [
+    "cp"
+  ],
+  "isWhitespace": [
+    "cp"
+  ],
+  "isScriptDataDoubleEscapeSequenceEnd": [
+    "cp"
+  ],
+  "getErrorForNumericCharacterReference": [
+    "code"
+  ],
+  "Preprocessor": {
+    "constructor": [
+      "handler"
+    ],
+    "col": [],
+    "offset": [],
+    "getError": [
+      "code",
+      "cpOffset"
+    ],
+    "_err": [
+      "code"
+    ],
+    "_addGap": [],
+    "_processSurrogate": [
+      "cp"
+    ],
+    "willDropParsedChunk": [],
+    "dropParsedChunk": [],
+    "write": [
+      "chunk",
+      "isLastChunk"
+    ],
+    "insertHtmlAtCurrentPos": [
+      "chunk"
+    ],
+    "startsWith": [
+      "pattern",
+      "caseSensitive"
+    ],
+    "peek": [
+      "offset"
+    ],
+    "advance": [],
+    "_checkForProblematicCharacters": [
+      "cp"
+    ],
+    "retreat": [
+      "count"
+    ]
+  }
+}

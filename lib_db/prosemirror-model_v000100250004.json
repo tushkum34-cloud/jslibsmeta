@@ -1,0 +1,1005 @@
+{
+  "Mark": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "addToSet": [
+      "set"
+    ],
+    "removeFromSet": [
+      "set"
+    ],
+    "isInSet": [
+      "set"
+    ],
+    "eq": [
+      "other"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "schema",
+      "json"
+    ],
+    "sameSet": [
+      "a",
+      "b"
+    ],
+    "setFrom": [
+      "marks"
+    ],
+    "none": []
+  },
+  "DOMSerializer": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "serializeFragment": [
+      "fragment",
+      "param",
+      "target"
+    ],
+    "serializeNodeInner": [
+      "node",
+      "options"
+    ],
+    "serializeNode": [
+      "node",
+      "param"
+    ],
+    "serializeMark": [
+      "mark",
+      "inline",
+      "param"
+    ],
+    "renderSpec": [
+      "doc",
+      "structure",
+      "param",
+      "blockArraysIn"
+    ],
+    "fromSchema": [
+      "schema"
+    ],
+    "nodesFromSchema": [
+      "schema"
+    ],
+    "marksFromSchema": [
+      "schema"
+    ]
+  },
+  "ResolvedPos": {
+    "depth": [],
+    "constructor": [
+      "param",
+      "param",
+      "param"
+    ],
+    "resolveDepth": [
+      "val"
+    ],
+    "parent": [],
+    "doc": [],
+    "node": [
+      "depth"
+    ],
+    "index": [
+      "depth"
+    ],
+    "indexAfter": [
+      "depth"
+    ],
+    "start": [
+      "depth"
+    ],
+    "end": [
+      "depth"
+    ],
+    "before": [
+      "depth"
+    ],
+    "after": [
+      "depth"
+    ],
+    "textOffset": [],
+    "nodeAfter": [],
+    "nodeBefore": [],
+    "posAtIndex": [
+      "index",
+      "depth"
+    ],
+    "marks": [],
+    "marksAcross": [
+      "$end"
+    ],
+    "sharedDepth": [
+      "pos"
+    ],
+    "blockRange": [
+      "param",
+      "pred"
+    ],
+    "sameParent": [
+      "other"
+    ],
+    "max": [
+      "other"
+    ],
+    "min": [
+      "other"
+    ],
+    "toString": [],
+    "resolve": [
+      "doc",
+      "pos"
+    ],
+    "resolveCached": [
+      "doc",
+      "pos"
+    ]
+  },
+  "NodeRange": {
+    "constructor": [
+      "param",
+      "param",
+      "param"
+    ],
+    "start": [],
+    "end": [],
+    "parent": [],
+    "startIndex": [],
+    "endIndex": []
+  },
+  "ReplaceError": {},
+  "Slice": {
+    "constructor": [
+      "param",
+      "param",
+      "param"
+    ],
+    "size": [],
+    "insertAt": [
+      "pos",
+      "fragment"
+    ],
+    "removeBetween": [
+      "from",
+      "to"
+    ],
+    "eq": [
+      "other"
+    ],
+    "toString": [],
+    "toJSON": [],
+    "fromJSON": [
+      "schema",
+      "json"
+    ],
+    "maxOpen": [
+      "fragment",
+      "param"
+    ],
+    "empty": []
+  },
+  "DOMParser": {
+    "tags": [],
+    "styles": [],
+    "matchedStyles": [],
+    "normalizeLists": [],
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "parse": [
+      "dom",
+      "param"
+    ],
+    "parseSlice": [
+      "dom",
+      "param"
+    ],
+    "matchTag": [
+      "dom",
+      "context",
+      "after"
+    ],
+    "matchStyle": [
+      "prop",
+      "value",
+      "context",
+      "after"
+    ],
+    "schemaRules": [
+      "schema"
+    ],
+    "fromSchema": [
+      "schema"
+    ]
+  },
+  "NodeType": {
+    "groups": [],
+    "attrs": [],
+    "defaultAttrs": [],
+    "constructor": [
+      "param",
+      "param",
+      "param"
+    ],
+    "inlineContent": [],
+    "isBlock": [],
+    "isText": [],
+    "isInline": [],
+    "isTextblock": [],
+    "isLeaf": [],
+    "isAtom": [],
+    "isInGroup": [
+      "group"
+    ],
+    "contentMatch": [],
+    "markSet": [],
+    "whitespace": [],
+    "hasRequiredAttrs": [],
+    "compatibleContent": [
+      "other"
+    ],
+    "computeAttrs": [
+      "attrs"
+    ],
+    "create": [
+      "param",
+      "content",
+      "marks"
+    ],
+    "createChecked": [
+      "param",
+      "content",
+      "marks"
+    ],
+    "createAndFill": [
+      "param",
+      "content",
+      "marks"
+    ],
+    "validContent": [
+      "content"
+    ],
+    "checkContent": [
+      "content"
+    ],
+    "checkAttrs": [
+      "attrs"
+    ],
+    "allowsMarkType": [
+      "markType"
+    ],
+    "allowsMarks": [
+      "marks"
+    ],
+    "allowedMarks": [
+      "marks"
+    ],
+    "compile": [
+      "nodes",
+      "schema"
+    ]
+  },
+  "MarkType": {
+    "attrs": [],
+    "excluded": [],
+    "instance": [],
+    "constructor": [
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "create": [
+      "param"
+    ],
+    "compile": [
+      "marks",
+      "schema"
+    ],
+    "removeFromSet": [
+      "set"
+    ],
+    "isInSet": [
+      "set"
+    ],
+    "checkAttrs": [
+      "attrs"
+    ],
+    "excludes": [
+      "other"
+    ]
+  },
+  "Schema": {
+    "spec": [],
+    "nodes": [],
+    "marks": [],
+    "linebreakReplacement": [],
+    "constructor": [
+      "spec"
+    ],
+    "topNodeType": [],
+    "cached": [],
+    "node": [
+      "type",
+      "param",
+      "content",
+      "marks"
+    ],
+    "text": [
+      "text",
+      "marks"
+    ],
+    "mark": [
+      "type",
+      "attrs"
+    ],
+    "nodeFromJSON": [],
+    "markFromJSON": [],
+    "nodeType": [
+      "name"
+    ]
+  },
+  "Fragment": {
+    "size": [],
+    "constructor": [
+      "param",
+      "size"
+    ],
+    "nodesBetween": [
+      "from",
+      "to",
+      "f",
+      "param",
+      "parent"
+    ],
+    "descendants": [
+      "f"
+    ],
+    "textBetween": [
+      "from",
+      "to",
+      "blockSeparator",
+      "leafText"
+    ],
+    "append": [
+      "other"
+    ],
+    "cut": [
+      "from",
+      "param"
+    ],
+    "cutByIndex": [
+      "from",
+      "to"
+    ],
+    "replaceChild": [
+      "index",
+      "node"
+    ],
+    "addToStart": [
+      "node"
+    ],
+    "addToEnd": [
+      "node"
+    ],
+    "eq": [
+      "other"
+    ],
+    "firstChild": [],
+    "lastChild": [],
+    "childCount": [],
+    "child": [
+      "index"
+    ],
+    "maybeChild": [
+      "index"
+    ],
+    "forEach": [
+      "f"
+    ],
+    "findDiffStart": [
+      "other",
+      "param"
+    ],
+    "findDiffEnd": [
+      "other",
+      "param",
+      "param"
+    ],
+    "findIndex": [
+      "pos"
+    ],
+    "toString": [],
+    "toStringInner": [],
+    "toJSON": [],
+    "fromJSON": [
+      "schema",
+      "value"
+    ],
+    "fromArray": [
+      "array"
+    ],
+    "from": [
+      "nodes"
+    ],
+    "empty": []
+  },
+  "ContentMatch": {
+    "next": [],
+    "wrapCache": [],
+    "constructor": [
+      "param"
+    ],
+    "parse": [
+      "string",
+      "nodeTypes"
+    ],
+    "matchType": [
+      "type"
+    ],
+    "matchFragment": [
+      "frag",
+      "param",
+      "param"
+    ],
+    "inlineContent": [],
+    "defaultType": [],
+    "compatible": [
+      "other"
+    ],
+    "fillBefore": [
+      "after",
+      "param",
+      "param"
+    ],
+    "findWrapping": [
+      "target"
+    ],
+    "computeWrapping": [
+      "target"
+    ],
+    "edgeCount": [],
+    "edge": [
+      "n"
+    ],
+    "toString": [],
+    "empty": []
+  },
+  "Node": {
+    "constructor": [
+      "param",
+      "param",
+      "content",
+      "param"
+    ],
+    "content": [],
+    "children": [],
+    "text": [],
+    "nodeSize": [],
+    "childCount": [],
+    "child": [
+      "index"
+    ],
+    "maybeChild": [
+      "index"
+    ],
+    "forEach": [
+      "f"
+    ],
+    "nodesBetween": [
+      "from",
+      "to",
+      "f",
+      "param"
+    ],
+    "descendants": [
+      "f"
+    ],
+    "textContent": [],
+    "textBetween": [
+      "from",
+      "to",
+      "blockSeparator",
+      "leafText"
+    ],
+    "firstChild": [],
+    "lastChild": [],
+    "eq": [
+      "other"
+    ],
+    "sameMarkup": [
+      "other"
+    ],
+    "hasMarkup": [
+      "type",
+      "attrs",
+      "marks"
+    ],
+    "copy": [
+      "param"
+    ],
+    "mark": [
+      "marks"
+    ],
+    "cut": [
+      "from",
+      "param"
+    ],
+    "slice": [
+      "from",
+      "param",
+      "param"
+    ],
+    "replace": [
+      "from",
+      "to",
+      "slice"
+    ],
+    "nodeAt": [
+      "pos"
+    ],
+    "childAfter": [
+      "pos"
+    ],
+    "childBefore": [
+      "pos"
+    ],
+    "resolve": [
+      "pos"
+    ],
+    "resolveNoCache": [
+      "pos"
+    ],
+    "rangeHasMark": [
+      "from",
+      "to",
+      "type"
+    ],
+    "isBlock": [],
+    "isTextblock": [],
+    "inlineContent": [],
+    "isInline": [],
+    "isText": [],
+    "isLeaf": [],
+    "isAtom": [],
+    "toString": [],
+    "contentMatchAt": [
+      "index"
+    ],
+    "canReplace": [
+      "from",
+      "to",
+      "param",
+      "param",
+      "param"
+    ],
+    "canReplaceWith": [
+      "from",
+      "to",
+      "type",
+      "marks"
+    ],
+    "canAppend": [
+      "other"
+    ],
+    "check": [],
+    "toJSON": [],
+    "fromJSON": [
+      "schema",
+      "json"
+    ]
+  },
+  "findDiffStart": [
+    "a",
+    "b",
+    "pos"
+  ],
+  "findDiffEnd": [
+    "a",
+    "b",
+    "posA",
+    "posB"
+  ],
+  "retIndex": [
+    "index",
+    "offset"
+  ],
+  "compareDeep": [
+    "a",
+    "b"
+  ],
+  "removeRange": [
+    "content",
+    "from",
+    "to"
+  ],
+  "insertInto": [
+    "content",
+    "dist",
+    "insert",
+    "parent"
+  ],
+  "replace": [
+    "$from",
+    "$to",
+    "slice"
+  ],
+  "replaceOuter": [
+    "$from",
+    "$to",
+    "slice",
+    "depth"
+  ],
+  "checkJoin": [
+    "main",
+    "sub"
+  ],
+  "joinable": [
+    "$before",
+    "$after",
+    "depth"
+  ],
+  "addNode": [
+    "child",
+    "target"
+  ],
+  "addRange": [
+    "$start",
+    "$end",
+    "depth",
+    "target"
+  ],
+  "close": [
+    "node",
+    "content"
+  ],
+  "replaceThreeWay": [
+    "$from",
+    "$start",
+    "$end",
+    "$to",
+    "depth"
+  ],
+  "replaceTwoWay": [
+    "$from",
+    "$to",
+    "depth"
+  ],
+  "prepareSliceForReplace": [
+    "slice",
+    "$along"
+  ],
+  "ResolveCache": {
+    "elts": [],
+    "i": []
+  },
+  "TextNode": {
+    "text": [],
+    "constructor": [
+      "type",
+      "attrs",
+      "content",
+      "marks"
+    ],
+    "toString": [],
+    "textContent": [],
+    "textBetween": [
+      "from",
+      "to"
+    ],
+    "nodeSize": [],
+    "mark": [
+      "marks"
+    ],
+    "withText": [
+      "text"
+    ],
+    "cut": [
+      "param",
+      "param"
+    ],
+    "eq": [
+      "other"
+    ],
+    "toJSON": []
+  },
+  "wrapMarks": [
+    "marks",
+    "str"
+  ],
+  "search": [
+    "match",
+    "types"
+  ],
+  "scan": [
+    "value"
+  ],
+  "TokenStream": {
+    "inline": [],
+    "pos": [],
+    "tokens": [],
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "next": [],
+    "eat": [
+      "tok"
+    ],
+    "err": [
+      "str"
+    ]
+  },
+  "parseExpr": [
+    "stream"
+  ],
+  "parseExprSeq": [
+    "stream"
+  ],
+  "parseExprSubscript": [
+    "stream"
+  ],
+  "parseNum": [
+    "stream"
+  ],
+  "parseExprRange": [
+    "stream",
+    "expr"
+  ],
+  "resolveName": [
+    "stream",
+    "name"
+  ],
+  "parseExprAtom": [
+    "stream"
+  ],
+  "nfa": [
+    "expr"
+  ],
+  "node": [],
+  "edge": [
+    "from",
+    "to",
+    "term"
+  ],
+  "connect": [
+    "edges",
+    "to"
+  ],
+  "compile": [
+    "expr",
+    "from"
+  ],
+  "cmp": [
+    "a",
+    "b"
+  ],
+  "nullFrom": [
+    "nfa",
+    "node"
+  ],
+  "dfa": [
+    "nfa"
+  ],
+  "explore": [
+    "states"
+  ],
+  "checkForDeadEnds": [
+    "match",
+    "stream"
+  ],
+  "defaultAttrs": [
+    "attrs"
+  ],
+  "computeAttrs": [
+    "attrs",
+    "value"
+  ],
+  "checkAttrs": [
+    "attrs",
+    "values",
+    "type",
+    "name"
+  ],
+  "initAttrs": [
+    "typeName",
+    "attrs"
+  ],
+  "validateType": [
+    "typeName",
+    "attrName",
+    "type"
+  ],
+  "Attribute": {
+    "hasDefault": [],
+    "default": [],
+    "validate": [],
+    "constructor": [
+      "typeName",
+      "attrName",
+      "options"
+    ],
+    "isRequired": []
+  },
+  "gatherMarks": [
+    "schema",
+    "marks"
+  ],
+  "isTagRule": [
+    "rule"
+  ],
+  "isStyleRule": [
+    "rule"
+  ],
+  "insert": [
+    "rule"
+  ],
+  "wsOptionsFor": [
+    "type",
+    "preserveWhitespace",
+    "base"
+  ],
+  "NodeContext": {
+    "match": [],
+    "content": [],
+    "activeMarks": [],
+    "constructor": [
+      "param",
+      "param",
+      "param",
+      "param",
+      "match",
+      "param"
+    ],
+    "findWrapping": [
+      "node"
+    ],
+    "finish": [
+      "openEnd"
+    ],
+    "inlineContext": [
+      "node"
+    ]
+  },
+  "ParseContext": {
+    "open": [],
+    "find": [],
+    "needsBlock": [],
+    "nodes": [],
+    "localPreserveWS": [],
+    "constructor": [
+      "param",
+      "param",
+      "param"
+    ],
+    "top": [],
+    "addDOM": [
+      "dom",
+      "marks"
+    ],
+    "addTextNode": [
+      "dom",
+      "marks"
+    ],
+    "addElement": [
+      "dom",
+      "marks",
+      "matchAfter"
+    ],
+    "leafFallback": [
+      "dom",
+      "marks"
+    ],
+    "ignoreFallback": [
+      "dom",
+      "marks"
+    ],
+    "readStyles": [
+      "dom",
+      "marks"
+    ],
+    "addElementByRule": [
+      "dom",
+      "rule",
+      "marks",
+      "continueAfter"
+    ],
+    "addAll": [
+      "parent",
+      "marks",
+      "startIndex",
+      "endIndex"
+    ],
+    "findPlace": [
+      "node",
+      "marks",
+      "cautious"
+    ],
+    "insertNode": [
+      "node",
+      "marks",
+      "cautious"
+    ],
+    "enter": [
+      "type",
+      "attrs",
+      "marks",
+      "preserveWS"
+    ],
+    "enterInner": [
+      "type",
+      "attrs",
+      "marks",
+      "param",
+      "preserveWS"
+    ],
+    "closeExtra": [
+      "param"
+    ],
+    "finish": [],
+    "sync": [
+      "to"
+    ],
+    "currentPos": [],
+    "findAtPoint": [
+      "parent",
+      "offset"
+    ],
+    "findInside": [
+      "parent"
+    ],
+    "findAround": [
+      "parent",
+      "content",
+      "before"
+    ],
+    "findInText": [
+      "textNode"
+    ],
+    "matchesContext": [
+      "context"
+    ],
+    "textblockFromContext": []
+  },
+  "match": [
+    "i",
+    "depth"
+  ],
+  "normalizeList": [
+    "dom"
+  ],
+  "matches": [
+    "dom",
+    "selector"
+  ],
+  "copy": [
+    "obj"
+  ],
+  "markMayApply": [
+    "markType",
+    "nodeType"
+  ],
+  "gatherToDOM": [
+    "obj"
+  ],
+  "doc": [
+    "options"
+  ],
+  "suspiciousAttributes": [
+    "attrs"
+  ],
+  "suspiciousAttributesInner": [
+    "attrs"
+  ],
+  "renderSpec": [
+    "doc",
+    "structure",
+    "xmlNS",
+    "blockArraysIn"
+  ]
+}

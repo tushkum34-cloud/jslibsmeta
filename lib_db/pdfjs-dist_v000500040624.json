@@ -1,0 +1,5589 @@
+{
+  "AnnotationLayer": {
+    "_defaultBorderStyle": [],
+    "constructor": [
+      "param"
+    ],
+    "div": [],
+    "page": [],
+    "viewport": [],
+    "zIndex": [],
+    "_annotationEditorUIManager": [],
+    "_commentManager": [],
+    "popupShow": [],
+    "hasEditableAnnotations": [],
+    "render": [
+      "params"
+    ],
+    "addLinkAnnotations": [
+      "annotations"
+    ],
+    "update": [
+      "param"
+    ],
+    "getEditableAnnotations": [],
+    "getEditableAnnotation": [
+      "id"
+    ],
+    "addFakeAnnotation": [
+      "editor"
+    ],
+    "removeAnnotation": [
+      "id"
+    ],
+    "updateFakeAnnotations": [
+      "editors"
+    ],
+    "togglePointerEvents": [
+      "enabled"
+    ]
+  },
+  "FreeTextAnnotationElement": {
+    "constructor": [
+      "parameters"
+    ],
+    "textContent": [],
+    "textPosition": [],
+    "annotationEditorType": [],
+    "render": []
+  },
+  "HighlightAnnotationElement": {
+    "constructor": [
+      "parameters"
+    ],
+    "annotationEditorType": [],
+    "render": []
+  },
+  "InkAnnotationElement": {
+    "constructor": [
+      "parameters"
+    ],
+    "containerClassName": [],
+    "svgElementName": [],
+    "annotationEditorType": [],
+    "render": [],
+    "getElementsToTriggerPopup": []
+  },
+  "StampAnnotationElement": {
+    "constructor": [
+      "parameters"
+    ],
+    "annotationEditorType": [],
+    "render": []
+  },
+  "EditorAnnotationElement": {
+    "constructor": [
+      "parameters"
+    ],
+    "editor": [],
+    "render": [],
+    "createOrUpdatePopup": [],
+    "remove": []
+  },
+  "AnnotationElement": {
+    "_hasPopupData": [
+      "param"
+    ],
+    "constructor": [
+      "parameters",
+      "param"
+    ],
+    "isRenderable": [],
+    "data": [],
+    "layer": [],
+    "linkService": [],
+    "downloadManager": [],
+    "imageResourcesPath": [],
+    "renderForms": [],
+    "svgFactory": [],
+    "annotationStorage": [],
+    "enableComment": [],
+    "enableScripting": [],
+    "hasJSActions": [],
+    "_fieldObjects": [],
+    "parent": [],
+    "hasOwnCommentButton": [],
+    "contentElement": [],
+    "container": [],
+    "_isEditable": [],
+    "hasPopupData": [],
+    "commentData": [],
+    "hasCommentButton": [],
+    "commentButtonPosition": [],
+    "_normalizePoint": [
+      "point"
+    ],
+    "commentText": [],
+    "removePopup": [],
+    "popup": [],
+    "updateEdited": [
+      "params"
+    ],
+    "resetEdited": [],
+    "_createContainer": [],
+    "setRotation": [
+      "angle",
+      "container"
+    ],
+    "_commonActions": [],
+    "_dispatchEventFromSandbox": [
+      "actions",
+      "jsEvent"
+    ],
+    "_setDefaultPropertiesFromJS": [
+      "element"
+    ],
+    "_createQuadrilaterals": [],
+    "_createPopup": [],
+    "hasPopupElement": [],
+    "extraPopupElement": [],
+    "render": [],
+    "_getElementsByName": [],
+    "show": [],
+    "hide": [],
+    "getElementsToTriggerPopup": [],
+    "addHighlightArea": [],
+    "_editOnDoubleClick": [],
+    "width": [],
+    "height": []
+  },
+  "CanvasGraphics": {
+    "constructor": [
+      "canvasCtx",
+      "commonObjs",
+      "objs",
+      "canvasFactory",
+      "filterFactory",
+      "param",
+      "annotationCanvasMap",
+      "pageColors",
+      "dependencyTracker"
+    ],
+    "ctx": [],
+    "current": [],
+    "stateStack": [],
+    "pendingClip": [],
+    "pendingEOFill": [],
+    "res": [],
+    "xobjs": [],
+    "commonObjs": [],
+    "objs": [],
+    "canvasFactory": [],
+    "filterFactory": [],
+    "groupStack": [],
+    "baseTransform": [],
+    "baseTransformStack": [],
+    "groupLevel": [],
+    "smaskStack": [],
+    "smaskCounter": [],
+    "tempSMask": [],
+    "suspendedCtx": [],
+    "contentVisible": [],
+    "markedContentStack": [],
+    "optionalContentConfig": [],
+    "cachedCanvases": [],
+    "cachedPatterns": [],
+    "annotationCanvasMap": [],
+    "viewportScale": [],
+    "outputScaleX": [],
+    "outputScaleY": [],
+    "pageColors": [],
+    "_cachedScaleForStroking": [],
+    "_cachedGetSinglePixelWidth": [],
+    "_cachedBitmapsMap": [],
+    "dependencyTracker": [],
+    "getObject": [
+      "opIdx",
+      "data",
+      "fallback"
+    ],
+    "beginDrawing": [
+      "param"
+    ],
+    "compositeCtx": [],
+    "transparentCanvas": [],
+    "executeOperatorList": [
+      "operatorList",
+      "executionStartIdx",
+      "continueCallback",
+      "stepper",
+      "operationsFilter"
+    ],
+    "endDrawing": [],
+    "_scaleImage": [
+      "img",
+      "inverseTransform"
+    ],
+    "_createMaskCanvas": [
+      "opIdx",
+      "img"
+    ],
+    "setLineWidth": [
+      "opIdx",
+      "width"
+    ],
+    "setLineCap": [
+      "opIdx",
+      "style"
+    ],
+    "setLineJoin": [
+      "opIdx",
+      "style"
+    ],
+    "setMiterLimit": [
+      "opIdx",
+      "limit"
+    ],
+    "setDash": [
+      "opIdx",
+      "dashArray",
+      "dashPhase"
+    ],
+    "setRenderingIntent": [
+      "opIdx",
+      "intent"
+    ],
+    "setFlatness": [
+      "opIdx",
+      "flatness"
+    ],
+    "setGState": [
+      "opIdx",
+      "states"
+    ],
+    "inSMaskMode": [],
+    "checkSMaskState": [],
+    "beginSMaskMode": [
+      "opIdx"
+    ],
+    "endSMaskMode": [],
+    "compose": [
+      "dirtyBox"
+    ],
+    "composeSMask": [
+      "ctx",
+      "smask",
+      "layerCtx",
+      "layerBox"
+    ],
+    "genericComposeSMask": [
+      "maskCtx",
+      "layerCtx",
+      "width",
+      "height",
+      "subtype",
+      "backdrop",
+      "transferMap",
+      "layerOffsetX",
+      "layerOffsetY",
+      "maskOffsetX",
+      "maskOffsetY"
+    ],
+    "save": [
+      "opIdx"
+    ],
+    "restore": [
+      "opIdx"
+    ],
+    "transform": [
+      "opIdx",
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "constructPath": [
+      "opIdx",
+      "op",
+      "data",
+      "minMax"
+    ],
+    "_pathStartIdx": [],
+    "closePath": [
+      "opIdx"
+    ],
+    "stroke": [
+      "opIdx",
+      "path",
+      "consumePath"
+    ],
+    "closeStroke": [
+      "opIdx",
+      "path"
+    ],
+    "fill": [
+      "opIdx",
+      "path",
+      "consumePath"
+    ],
+    "eoFill": [
+      "opIdx",
+      "path"
+    ],
+    "fillStroke": [
+      "opIdx",
+      "path"
+    ],
+    "eoFillStroke": [
+      "opIdx",
+      "path"
+    ],
+    "closeFillStroke": [
+      "opIdx",
+      "path"
+    ],
+    "closeEOFillStroke": [
+      "opIdx",
+      "path"
+    ],
+    "endPath": [
+      "opIdx",
+      "path"
+    ],
+    "rawFillPath": [
+      "opIdx",
+      "path"
+    ],
+    "clip": [
+      "opIdx"
+    ],
+    "eoClip": [
+      "opIdx"
+    ],
+    "beginText": [
+      "opIdx"
+    ],
+    "endText": [
+      "opIdx"
+    ],
+    "setCharSpacing": [
+      "opIdx",
+      "spacing"
+    ],
+    "setWordSpacing": [
+      "opIdx",
+      "spacing"
+    ],
+    "setHScale": [
+      "opIdx",
+      "scale"
+    ],
+    "setLeading": [
+      "opIdx",
+      "leading"
+    ],
+    "setFont": [
+      "opIdx",
+      "fontRefName",
+      "size"
+    ],
+    "setTextRenderingMode": [
+      "opIdx",
+      "mode"
+    ],
+    "setTextRise": [
+      "opIdx",
+      "rise"
+    ],
+    "moveText": [
+      "opIdx",
+      "x",
+      "y"
+    ],
+    "setLeadingMoveText": [
+      "opIdx",
+      "x",
+      "y"
+    ],
+    "setTextMatrix": [
+      "opIdx",
+      "matrix"
+    ],
+    "nextLine": [
+      "opIdx"
+    ],
+    "paintChar": [
+      "opIdx",
+      "character",
+      "x",
+      "y",
+      "patternFillTransform",
+      "patternStrokeTransform"
+    ],
+    "isFontSubpixelAAEnabled": [],
+    "showText": [
+      "opIdx",
+      "glyphs"
+    ],
+    "showType3Text": [
+      "opIdx",
+      "glyphs"
+    ],
+    "setCharWidth": [
+      "opIdx",
+      "xWidth",
+      "yWidth"
+    ],
+    "setCharWidthAndBounds": [
+      "opIdx",
+      "xWidth",
+      "yWidth",
+      "llx",
+      "lly",
+      "urx",
+      "ury"
+    ],
+    "getColorN_Pattern": [
+      "opIdx",
+      "IR"
+    ],
+    "setStrokeColorN": [
+      "opIdx",
+      "param"
+    ],
+    "setFillColorN": [
+      "opIdx",
+      "param"
+    ],
+    "setStrokeRGBColor": [
+      "opIdx",
+      "color"
+    ],
+    "setStrokeTransparent": [
+      "opIdx"
+    ],
+    "setFillRGBColor": [
+      "opIdx",
+      "color"
+    ],
+    "setFillTransparent": [
+      "opIdx"
+    ],
+    "_getPattern": [
+      "opIdx",
+      "objId",
+      "matrix"
+    ],
+    "shadingFill": [
+      "opIdx",
+      "objId"
+    ],
+    "beginInlineImage": [],
+    "beginImageData": [],
+    "paintFormXObjectBegin": [
+      "opIdx",
+      "matrix",
+      "bbox"
+    ],
+    "paintFormXObjectEnd": [
+      "opIdx"
+    ],
+    "beginGroup": [
+      "opIdx",
+      "group"
+    ],
+    "endGroup": [
+      "opIdx",
+      "group"
+    ],
+    "beginAnnotation": [
+      "opIdx",
+      "id",
+      "rect",
+      "transform",
+      "matrix",
+      "hasOwnCanvas"
+    ],
+    "annotationCanvas": [],
+    "endAnnotation": [
+      "opIdx"
+    ],
+    "paintImageMaskXObject": [
+      "opIdx",
+      "img"
+    ],
+    "paintImageMaskXObjectRepeat": [
+      "opIdx",
+      "img",
+      "scaleX",
+      "skewX",
+      "skewY",
+      "scaleY",
+      "positions"
+    ],
+    "paintImageMaskXObjectGroup": [
+      "opIdx",
+      "images"
+    ],
+    "paintImageXObject": [
+      "opIdx",
+      "objId"
+    ],
+    "paintImageXObjectRepeat": [
+      "opIdx",
+      "objId",
+      "scaleX",
+      "scaleY",
+      "positions"
+    ],
+    "applyTransferMapsToCanvas": [
+      "ctx"
+    ],
+    "applyTransferMapsToBitmap": [
+      "imgData"
+    ],
+    "paintInlineImageXObject": [
+      "opIdx",
+      "imgData"
+    ],
+    "paintInlineImageXObjectGroup": [
+      "opIdx",
+      "imgData",
+      "map"
+    ],
+    "paintSolidColorImageMask": [
+      "opIdx"
+    ],
+    "markPoint": [
+      "opIdx",
+      "tag"
+    ],
+    "markPointProps": [
+      "opIdx",
+      "tag",
+      "properties"
+    ],
+    "beginMarkedContent": [
+      "opIdx",
+      "tag"
+    ],
+    "beginMarkedContentProps": [
+      "opIdx",
+      "tag",
+      "properties"
+    ],
+    "endMarkedContent": [
+      "opIdx"
+    ],
+    "beginCompat": [
+      "opIdx"
+    ],
+    "endCompat": [
+      "opIdx"
+    ],
+    "consumePath": [
+      "opIdx",
+      "path",
+      "clipBox"
+    ],
+    "getSinglePixelWidth": [],
+    "getScaleForStroking": [],
+    "rescaleAndStroke": [
+      "path",
+      "saveRestore"
+    ],
+    "isContentVisible": []
+  },
+  "CanvasExtraState": {
+    "constructor": [
+      "width",
+      "height",
+      "preInit"
+    ],
+    "alphaIsShape": [],
+    "fontSize": [],
+    "fontSizeScale": [],
+    "textMatrix": [],
+    "textMatrixScale": [],
+    "fontMatrix": [],
+    "leading": [],
+    "x": [],
+    "y": [],
+    "lineX": [],
+    "lineY": [],
+    "charSpacing": [],
+    "wordSpacing": [],
+    "textHScale": [],
+    "textRenderingMode": [],
+    "textRise": [],
+    "fillColor": [],
+    "strokeColor": [],
+    "patternFill": [],
+    "patternStroke": [],
+    "fillAlpha": [],
+    "strokeAlpha": [],
+    "lineWidth": [],
+    "activeSMask": [],
+    "transferMaps": [],
+    "clipBox": [],
+    "minMax": [],
+    "clone": [],
+    "getPathBoundingBox": [
+      "pathType",
+      "transform"
+    ],
+    "updateClipFromPath": [],
+    "isEmptyClip": [],
+    "startNewPathAndClipBox": [
+      "box"
+    ],
+    "getClippedPathBoundingBox": [
+      "pathType",
+      "transform"
+    ]
+  },
+  "CachedCanvases": {
+    "constructor": [
+      "canvasFactory"
+    ],
+    "canvasFactory": [],
+    "cache": [],
+    "getCanvas": [
+      "id",
+      "width",
+      "height"
+    ],
+    "delete": [
+      "id"
+    ],
+    "clear": []
+  },
+  "CanvasDependencyTracker": {
+    "constructor": [
+      "canvas",
+      "operationsCount",
+      "recordDebugMetadata"
+    ],
+    "growOperationsCount": [
+      "operationsCount"
+    ],
+    "save": [
+      "opIdx"
+    ],
+    "restore": [
+      "opIdx"
+    ],
+    "recordOpenMarker": [
+      "idx"
+    ],
+    "getOpenMarker": [],
+    "recordCloseMarker": [
+      "opIdx"
+    ],
+    "beginMarkedContent": [
+      "opIdx"
+    ],
+    "endMarkedContent": [
+      "opIdx"
+    ],
+    "pushBaseTransform": [
+      "ctx"
+    ],
+    "popBaseTransform": [],
+    "recordSimpleData": [
+      "name",
+      "idx"
+    ],
+    "recordIncrementalData": [
+      "name",
+      "idx"
+    ],
+    "resetIncrementalData": [
+      "name",
+      "idx"
+    ],
+    "recordNamedData": [
+      "name",
+      "idx"
+    ],
+    "recordSimpleDataFromNamed": [
+      "name",
+      "depName",
+      "fallbackIdx"
+    ],
+    "recordFutureForcedDependency": [
+      "name",
+      "idx"
+    ],
+    "inheritSimpleDataAsFutureForcedDependencies": [
+      "names"
+    ],
+    "inheritPendingDependenciesAsFutureForcedDependencies": [],
+    "resetBBox": [
+      "idx"
+    ],
+    "recordClipBox": [
+      "idx",
+      "ctx",
+      "minX",
+      "maxX",
+      "minY",
+      "maxY"
+    ],
+    "recordBBox": [
+      "idx",
+      "ctx",
+      "minX",
+      "maxX",
+      "minY",
+      "maxY"
+    ],
+    "recordCharacterBBox": [
+      "idx",
+      "ctx",
+      "font",
+      "scale",
+      "x",
+      "y",
+      "getMeasure"
+    ],
+    "recordFullPageBBox": [
+      "idx"
+    ],
+    "getSimpleIndex": [
+      "dependencyName"
+    ],
+    "recordDependencies": [
+      "idx",
+      "dependencyNames"
+    ],
+    "recordNamedDependency": [
+      "idx",
+      "name"
+    ],
+    "recordOperation": [
+      "idx",
+      "preserve"
+    ],
+    "recordShowTextOperation": [
+      "idx",
+      "preserve"
+    ],
+    "bboxToClipBoxDropOperation": [
+      "idx",
+      "preserve"
+    ],
+    "_takePendingDependencies": [],
+    "_extractOperation": [
+      "idx"
+    ],
+    "_pushPendingDependencies": [
+      "dependencies"
+    ],
+    "take": [],
+    "takeDebugMetadata": []
+  },
+  "CanvasNestedDependencyTracker": {
+    "constructor": [
+      "dependencyTracker",
+      "opIdx",
+      "ignoreBBoxes"
+    ],
+    "growOperationsCount": [],
+    "save": [
+      "opIdx"
+    ],
+    "restore": [
+      "opIdx"
+    ],
+    "recordOpenMarker": [
+      "idx"
+    ],
+    "getOpenMarker": [],
+    "recordCloseMarker": [
+      "idx"
+    ],
+    "beginMarkedContent": [
+      "opIdx"
+    ],
+    "endMarkedContent": [
+      "opIdx"
+    ],
+    "pushBaseTransform": [
+      "ctx"
+    ],
+    "popBaseTransform": [],
+    "recordSimpleData": [
+      "name",
+      "idx"
+    ],
+    "recordIncrementalData": [
+      "name",
+      "idx"
+    ],
+    "resetIncrementalData": [
+      "name",
+      "idx"
+    ],
+    "recordNamedData": [
+      "name",
+      "idx"
+    ],
+    "recordSimpleDataFromNamed": [
+      "name",
+      "depName",
+      "fallbackIdx"
+    ],
+    "recordFutureForcedDependency": [
+      "name",
+      "idx"
+    ],
+    "inheritSimpleDataAsFutureForcedDependencies": [
+      "names"
+    ],
+    "inheritPendingDependenciesAsFutureForcedDependencies": [],
+    "resetBBox": [
+      "idx"
+    ],
+    "recordClipBox": [
+      "idx",
+      "ctx",
+      "minX",
+      "maxX",
+      "minY",
+      "maxY"
+    ],
+    "recordBBox": [
+      "idx",
+      "ctx",
+      "minX",
+      "maxX",
+      "minY",
+      "maxY"
+    ],
+    "recordCharacterBBox": [
+      "idx",
+      "ctx",
+      "font",
+      "scale",
+      "x",
+      "y",
+      "getMeasure"
+    ],
+    "recordFullPageBBox": [
+      "idx"
+    ],
+    "getSimpleIndex": [
+      "dependencyName"
+    ],
+    "recordDependencies": [
+      "idx",
+      "dependencyNames"
+    ],
+    "recordNamedDependency": [
+      "idx",
+      "name"
+    ],
+    "recordOperation": [
+      "idx"
+    ],
+    "recordShowTextOperation": [
+      "idx"
+    ],
+    "bboxToClipBoxDropOperation": [
+      "idx"
+    ],
+    "take": [],
+    "takeDebugMetadata": []
+  },
+  "BBoxReader": {
+    "constructor": [
+      "bboxes",
+      "coords"
+    ],
+    "length": [],
+    "isEmpty": [
+      "i"
+    ],
+    "minX": [
+      "i"
+    ],
+    "minY": [
+      "i"
+    ],
+    "maxX": [
+      "i"
+    ],
+    "maxY": [
+      "i"
+    ]
+  },
+  "BaseCanvasFactory": {
+    "constructor": [
+      "param"
+    ],
+    "create": [
+      "width",
+      "height"
+    ],
+    "reset": [
+      "canvasAndContext",
+      "width",
+      "height"
+    ],
+    "destroy": [
+      "canvasAndContext"
+    ],
+    "_createCanvas": [
+      "width",
+      "height"
+    ]
+  },
+  "DOMCanvasFactory": {
+    "constructor": [
+      "param"
+    ],
+    "_document": [],
+    "_createCanvas": [
+      "width",
+      "height"
+    ]
+  },
+  "BaseCMapReaderFactory": {
+    "constructor": [
+      "param"
+    ],
+    "baseUrl": [],
+    "isCompressed": [],
+    "fetch": [
+      "param"
+    ],
+    "_fetch": [
+      "url"
+    ]
+  },
+  "DOMCMapReaderFactory": {
+    "_fetch": [
+      "url"
+    ]
+  },
+  "DrawLayer": {
+    "_svgFactory": [],
+    "setParent": [
+      "parent"
+    ],
+    "draw": [
+      "properties",
+      "isPathUpdatable",
+      "hasClip"
+    ],
+    "drawOutline": [
+      "properties",
+      "mustRemoveSelfIntersections"
+    ],
+    "finalizeDraw": [
+      "id",
+      "properties"
+    ],
+    "updateProperties": [
+      "elementOrId",
+      "properties"
+    ],
+    "updateParent": [
+      "id",
+      "layer"
+    ],
+    "remove": [
+      "id"
+    ],
+    "destroy": []
+  },
+  "AltText": {
+    "_l10n": [],
+    "initialize": [
+      "l10n"
+    ],
+    "constructor": [
+      "editor"
+    ],
+    "render": [],
+    "finish": [],
+    "isEmpty": [],
+    "hasData": [],
+    "guessedText": [],
+    "setGuessedText": [
+      "guessedText"
+    ],
+    "toggleAltTextBadge": [
+      "visibility"
+    ],
+    "serialize": [
+      "isForCopying"
+    ],
+    "data": [],
+    "toggle": [
+      "enabled"
+    ],
+    "shown": [],
+    "destroy": []
+  },
+  "AnnotationEditorLayer": {
+    "_initialized": [],
+    "constructor": [
+      "param"
+    ],
+    "pageIndex": [],
+    "div": [],
+    "viewport": [],
+    "drawLayer": [],
+    "_structTree": [],
+    "updatePageIndex": [
+      "newPageIndex"
+    ],
+    "isEmpty": [],
+    "isInvisible": [],
+    "updateToolbar": [
+      "options"
+    ],
+    "updateMode": [
+      "mode"
+    ],
+    "hasTextLayer": [
+      "textLayer"
+    ],
+    "setEditingState": [
+      "isEditing"
+    ],
+    "addCommands": [
+      "params"
+    ],
+    "cleanUndoStack": [
+      "type"
+    ],
+    "toggleDrawing": [
+      "enabled"
+    ],
+    "togglePointerEvents": [
+      "enabled"
+    ],
+    "toggleAnnotationLayerPointerEvents": [
+      "enabled"
+    ],
+    "enable": [],
+    "disable": [],
+    "getEditableAnnotation": [
+      "id"
+    ],
+    "setActiveEditor": [
+      "editor"
+    ],
+    "enableTextSelection": [],
+    "disableTextSelection": [],
+    "enableClick": [],
+    "disableClick": [],
+    "attach": [
+      "editor"
+    ],
+    "detach": [
+      "editor"
+    ],
+    "remove": [
+      "editor"
+    ],
+    "changeParent": [
+      "editor"
+    ],
+    "add": [
+      "editor"
+    ],
+    "moveEditorInDOM": [
+      "editor"
+    ],
+    "addOrRebuild": [
+      "editor"
+    ],
+    "addUndoableEditor": [
+      "editor"
+    ],
+    "getEditorByUID": [
+      "uid"
+    ],
+    "getNextId": [],
+    "combinedSignal": [
+      "ac"
+    ],
+    "canCreateNewEmptyEditor": [],
+    "pasteEditor": [
+      "options",
+      "params"
+    ],
+    "deserialize": [
+      "data"
+    ],
+    "createAndAddNewEditor": [
+      "event",
+      "isCentered",
+      "data"
+    ],
+    "boundingClientRect": [],
+    "addNewEditor": [
+      "data"
+    ],
+    "setSelected": [
+      "editor"
+    ],
+    "toggleSelected": [
+      "editor"
+    ],
+    "unselect": [
+      "editor"
+    ],
+    "pointerup": [
+      "event"
+    ],
+    "pointerdown": [
+      "event"
+    ],
+    "startDrawingSession": [
+      "event"
+    ],
+    "pause": [
+      "on"
+    ],
+    "endDrawingSession": [
+      "isAborted"
+    ],
+    "findNewParent": [
+      "editor",
+      "x",
+      "y"
+    ],
+    "commitOrRemove": [],
+    "onScaleChanging": [],
+    "destroy": [],
+    "render": [
+      "param"
+    ],
+    "update": [
+      "param"
+    ],
+    "pageDimensions": [],
+    "scale": []
+  },
+  "BasicColorPicker": {
+    "constructor": [
+      "editor"
+    ],
+    "renderButton": [],
+    "update": [
+      "value"
+    ],
+    "destroy": [],
+    "hideDropdown": []
+  },
+  "ColorPicker": {
+    "_keyboardManager": [],
+    "constructor": [
+      "param"
+    ],
+    "renderButton": [],
+    "renderMainDropdown": [],
+    "_colorSelectFromKeyboard": [
+      "event"
+    ],
+    "_moveToNext": [
+      "event"
+    ],
+    "_moveToPrevious": [
+      "event"
+    ],
+    "_moveToBeginning": [
+      "event"
+    ],
+    "_moveToEnd": [
+      "event"
+    ],
+    "hideDropdown": [],
+    "_hideDropdownFromKeyboard": [],
+    "updateColor": [
+      "color"
+    ],
+    "destroy": []
+  },
+  "Comment": {
+    "constructor": [
+      "editor"
+    ],
+    "renderForToolbar": [],
+    "renderForStandalone": [],
+    "focusButton": [],
+    "onUpdatedColor": [],
+    "commentButtonWidth": [],
+    "commentPopupPositionInLayer": [],
+    "hasDefaultPopupPosition": [],
+    "removeStandaloneCommentButton": [],
+    "removeToolbarCommentButton": [],
+    "setCommentButtonStates": [
+      "param"
+    ],
+    "edit": [
+      "options"
+    ],
+    "finish": [],
+    "isDeleted": [],
+    "isEmpty": [],
+    "hasBeenEdited": [],
+    "serialize": [],
+    "data": [],
+    "restoreData": [
+      "param"
+    ],
+    "setInitialText": [
+      "text",
+      "richText"
+    ],
+    "shown": [],
+    "destroy": []
+  },
+  "DrawingEditor": {
+    "_currentDrawId": [],
+    "_currentParent": [],
+    "_INNER_MARGIN": [],
+    "_mergeSVGProperties": [
+      "p1",
+      "p2"
+    ],
+    "getDefaultDrawingOptions": [
+      "_options"
+    ],
+    "typesMap": [],
+    "supportMultipleDrawings": [],
+    "updateDefaultParams": [
+      "type",
+      "value"
+    ],
+    "defaultPropertiesToUpdate": [],
+    "onScaleChangingWhenDrawing": [],
+    "createDrawerInstance": [
+      "_x",
+      "_y",
+      "_parentWidth",
+      "_parentHeight",
+      "_rotation"
+    ],
+    "startDrawing": [
+      "parent",
+      "uiManager",
+      "_isLTR",
+      "event"
+    ],
+    "_drawMove": [
+      "event"
+    ],
+    "_cleanup": [
+      "all"
+    ],
+    "_endDraw": [
+      "event"
+    ],
+    "endDrawing": [
+      "isAborted"
+    ],
+    "deserializeDraw": [
+      "_pageX",
+      "_pageY",
+      "_pageWidth",
+      "_pageHeight",
+      "_innerWidth",
+      "_data"
+    ],
+    "deserialize": [
+      "data",
+      "parent",
+      "uiManager"
+    ],
+    "constructor": [
+      "params"
+    ],
+    "_colorPicker": [],
+    "_drawId": [],
+    "_addOutlines": [
+      "params"
+    ],
+    "updateParams": [
+      "type",
+      "value"
+    ],
+    "propertiesToUpdate": [],
+    "_updateProperty": [
+      "type",
+      "name",
+      "value"
+    ],
+    "_onTranslating": [
+      "_x",
+      "_y"
+    ],
+    "_onTranslated": [],
+    "onceAdded": [
+      "focus"
+    ],
+    "rotate": [],
+    "onScaleChanging": [],
+    "createDrawingOptions": [
+      "_data"
+    ],
+    "serializeDraw": [
+      "isForCopying"
+    ],
+    "renderAnnotationElement": [
+      "annotation"
+    ]
+  },
+  "DrawingOptions": {
+    "updateProperty": [
+      "name",
+      "value"
+    ],
+    "updateProperties": [
+      "properties"
+    ],
+    "updateSVGProperty": [
+      "name",
+      "value"
+    ],
+    "toSVGProperties": [],
+    "reset": [],
+    "updateAll": [
+      "options"
+    ],
+    "clone": []
+  },
+  "ContourDrawOutline": {},
+  "FreeDrawOutline": {
+    "constructor": [
+      "outline",
+      "points",
+      "box",
+      "scaleFactor",
+      "innerMargin",
+      "isLTR"
+    ],
+    "firstPoint": [],
+    "lastPoint": [],
+    "serialize": [
+      "param",
+      "rotation"
+    ],
+    "box": [],
+    "newOutliner": [
+      "point",
+      "box",
+      "scaleFactor",
+      "thickness",
+      "isLTR",
+      "innerMargin"
+    ],
+    "getNewOutline": [
+      "thickness",
+      "innerMargin"
+    ]
+  },
+  "FreeDrawOutliner": {
+    "constructor": [
+      "param",
+      "box",
+      "scaleFactor",
+      "thickness",
+      "isLTR",
+      "innerMargin"
+    ],
+    "isEmpty": [],
+    "add": [
+      "param"
+    ],
+    "toSVGPath": [],
+    "newFreeDrawOutline": [
+      "outline",
+      "points",
+      "box",
+      "scaleFactor",
+      "innerMargin",
+      "isLTR"
+    ],
+    "getOutlines": []
+  },
+  "FreeHighlightOutliner": {},
+  "HighlightOutliner": {
+    "constructor": [
+      "boxes",
+      "borderWidth",
+      "innerMargin",
+      "isLTR"
+    ],
+    "getOutlines": []
+  },
+  "HighlightOutline": {
+    "constructor": [
+      "outlines",
+      "box",
+      "firstPoint",
+      "lastPoint"
+    ],
+    "firstPoint": [],
+    "lastPoint": [],
+    "serialize": [
+      "param",
+      "_rotation"
+    ],
+    "box": [],
+    "classNamesForOutlining": []
+  },
+  "InkDrawOutline": {
+    "deserialize": [
+      "pageX",
+      "pageY",
+      "pageWidth",
+      "pageHeight",
+      "innerMargin",
+      "param"
+    ],
+    "build": [
+      "lines",
+      "parentWidth",
+      "parentHeight",
+      "parentScale",
+      "rotation",
+      "thickness",
+      "innerMargin"
+    ],
+    "thickness": [],
+    "setLastElement": [
+      "element"
+    ],
+    "removeLastElement": [],
+    "serialize": [
+      "param",
+      "isForCopying"
+    ],
+    "box": [],
+    "updateProperty": [
+      "name",
+      "value"
+    ],
+    "updateParentDimensions": [
+      "param",
+      "scale"
+    ],
+    "updateRotation": [
+      "rotation"
+    ],
+    "viewBox": [],
+    "defaultProperties": [],
+    "rotationTransform": [],
+    "getPathResizingSVGProperties": [
+      "param"
+    ],
+    "getPathResizedSVGProperties": [
+      "param"
+    ],
+    "getPathTranslatedSVGProperties": [
+      "param",
+      "parentDimensions"
+    ],
+    "defaultSVGProperties": []
+  },
+  "InkDrawOutliner": {
+    "constructor": [
+      "x",
+      "y",
+      "parentWidth",
+      "parentHeight",
+      "rotation",
+      "thickness"
+    ],
+    "updateProperty": [
+      "name",
+      "value"
+    ],
+    "isEmpty": [],
+    "isCancellable": [],
+    "add": [
+      "x",
+      "y"
+    ],
+    "end": [
+      "x",
+      "y"
+    ],
+    "startNew": [
+      "x",
+      "y",
+      "parentWidth",
+      "parentHeight",
+      "rotation"
+    ],
+    "getLastElement": [],
+    "setLastElement": [
+      "element"
+    ],
+    "removeLastElement": [],
+    "toSVGPath": [],
+    "getOutlines": [
+      "parentWidth",
+      "parentHeight",
+      "scale",
+      "innerMargin"
+    ],
+    "defaultSVGProperties": []
+  },
+  "Outline": {
+    "PRECISION": [],
+    "_rescale": [
+      "src",
+      "tx",
+      "ty",
+      "sx",
+      "sy",
+      "dest"
+    ],
+    "_rescaleAndSwap": [
+      "src",
+      "tx",
+      "ty",
+      "sx",
+      "sy",
+      "dest"
+    ],
+    "_translate": [
+      "src",
+      "tx",
+      "ty",
+      "dest"
+    ],
+    "svgRound": [
+      "x"
+    ],
+    "_normalizePoint": [
+      "x",
+      "y",
+      "parentWidth",
+      "parentHeight",
+      "rotation"
+    ],
+    "_normalizePagePoint": [
+      "x",
+      "y",
+      "rotation"
+    ],
+    "createBezierPoints": [
+      "x1",
+      "y1",
+      "x2",
+      "y2",
+      "x3",
+      "y3"
+    ],
+    "toSVGPath": [],
+    "box": [],
+    "serialize": [
+      "_bbox",
+      "_rotation"
+    ]
+  },
+  "SignatureExtractor": {
+    "extractContoursFromText": [
+      "text",
+      "param",
+      "pageWidth",
+      "pageHeight",
+      "rotation",
+      "innerMargin"
+    ],
+    "process": [
+      "bitmap",
+      "pageWidth",
+      "pageHeight",
+      "rotation",
+      "innerMargin"
+    ],
+    "processDrawnLines": [
+      "param"
+    ],
+    "compressSignature": [
+      "param"
+    ],
+    "decompressSignature": [
+      "signatureData"
+    ]
+  },
+  "AnnotationEditor": {
+    "_l10n": [],
+    "_l10nResizer": [],
+    "_borderLineWidth": [],
+    "_colorManager": [],
+    "_zIndex": [],
+    "_telemetryTimeout": [],
+    "_resizerKeyboardManager": [],
+    "isDrawer": [],
+    "_defaultLineColor": [],
+    "deleteAnnotationElement": [
+      "editor"
+    ],
+    "initialize": [
+      "l10n",
+      "_uiManager"
+    ],
+    "updateDefaultParams": [
+      "_type",
+      "_value"
+    ],
+    "defaultPropertiesToUpdate": [],
+    "isHandlingMimeForPasting": [
+      "mime"
+    ],
+    "paste": [
+      "item",
+      "parent"
+    ],
+    "_round": [
+      "x"
+    ],
+    "deserialize": [
+      "data",
+      "parent",
+      "uiManager"
+    ],
+    "MIN_SIZE": [],
+    "canCreateNewEmptyEditor": [],
+    "constructor": [
+      "parameters"
+    ],
+    "isSelected": [],
+    "_isCopy": [],
+    "_editToolbar": [],
+    "_initialOptions": [],
+    "_initialData": [],
+    "_isVisible": [],
+    "_uiManager": [],
+    "_focusEventsAllowed": [],
+    "parent": [],
+    "id": [],
+    "width": [],
+    "height": [],
+    "pageIndex": [],
+    "name": [],
+    "div": [],
+    "annotationElementId": [],
+    "_willKeepAspectRatio": [],
+    "_structTreeParentId": [],
+    "creationDate": [],
+    "modificationDate": [],
+    "canAddComment": [],
+    "rotation": [],
+    "pageRotation": [],
+    "pageDimensions": [],
+    "pageTranslation": [],
+    "x": [],
+    "y": [],
+    "isAttachedToDOM": [],
+    "deleted": [],
+    "updatePageIndex": [
+      "newPageIndex"
+    ],
+    "editorType": [],
+    "mode": [],
+    "propertiesToUpdate": [],
+    "_isDraggable": [],
+    "uid": [],
+    "isEnterHandled": [],
+    "center": [],
+    "addCommands": [
+      "params"
+    ],
+    "currentLayer": [],
+    "setInBackground": [],
+    "setInForeground": [],
+    "setParent": [
+      "parent"
+    ],
+    "focusin": [
+      "event"
+    ],
+    "focusout": [
+      "event"
+    ],
+    "commitOrRemove": [],
+    "commit": [],
+    "addToAnnotationStorage": [],
+    "setAt": [
+      "x",
+      "y",
+      "tx",
+      "ty"
+    ],
+    "_moveAfterPaste": [
+      "baseX",
+      "baseY"
+    ],
+    "translate": [
+      "x",
+      "y"
+    ],
+    "translateInPage": [
+      "x",
+      "y"
+    ],
+    "translationDone": [],
+    "drag": [
+      "tx",
+      "ty"
+    ],
+    "_onTranslating": [
+      "x",
+      "y"
+    ],
+    "_onTranslated": [
+      "x",
+      "y"
+    ],
+    "_hasBeenMoved": [],
+    "_hasBeenResized": [],
+    "getBaseTranslation": [],
+    "_mustFixPosition": [],
+    "fixAndSetPosition": [
+      "rotation"
+    ],
+    "screenToPageTranslation": [
+      "x",
+      "y"
+    ],
+    "pageTranslationToScreen": [
+      "x",
+      "y"
+    ],
+    "parentScale": [],
+    "parentRotation": [],
+    "parentDimensions": [],
+    "setDims": [],
+    "getInitialTranslation": [],
+    "_onResized": [],
+    "_onResizing": [],
+    "altTextFinish": [],
+    "toolbarButtons": [],
+    "addEditToolbar": [],
+    "addCommentButtonInToolbar": [],
+    "removeCommentButtonFromToolbar": [],
+    "removeEditToolbar": [],
+    "addContainer": [
+      "container"
+    ],
+    "getClientDimensions": [],
+    "createAltText": [],
+    "altTextData": [],
+    "guessedAltText": [],
+    "setGuessedAltText": [
+      "text"
+    ],
+    "serializeAltText": [
+      "isForCopying"
+    ],
+    "hasAltText": [],
+    "hasAltTextData": [],
+    "focusCommentButton": [],
+    "addCommentButton": [],
+    "addStandaloneCommentButton": [],
+    "removeStandaloneCommentButton": [],
+    "hideStandaloneCommentButton": [],
+    "comment": [],
+    "setCommentData": [
+      "param"
+    ],
+    "hasEditedComment": [],
+    "hasDeletedComment": [],
+    "hasComment": [],
+    "editComment": [
+      "options"
+    ],
+    "toggleComment": [
+      "isSelected",
+      "visibility"
+    ],
+    "setSelectedCommentButton": [
+      "selected"
+    ],
+    "addComment": [
+      "serialized"
+    ],
+    "updateFromAnnotationLayer": [
+      "param"
+    ],
+    "parentBoundingClientRect": [],
+    "render": [],
+    "pointerdown": [
+      "event"
+    ],
+    "_onStartDragging": [],
+    "_onStopDragging": [],
+    "moveInDOM": [],
+    "_setParentAndPosition": [
+      "parent",
+      "x",
+      "y"
+    ],
+    "getRect": [
+      "tx",
+      "ty",
+      "rotation"
+    ],
+    "getRectInCurrentCoords": [
+      "rect",
+      "pageHeight"
+    ],
+    "getPDFRect": [],
+    "getNonHCMColor": [],
+    "onUpdatedColor": [],
+    "getData": [],
+    "onceAdded": [
+      "focus"
+    ],
+    "isEmpty": [],
+    "enableEditMode": [],
+    "disableEditMode": [],
+    "isInEditMode": [],
+    "shouldGetKeyboardEvents": [],
+    "needsToBeRebuilt": [],
+    "isOnScreen": [],
+    "rebuild": [],
+    "rotate": [
+      "_angle"
+    ],
+    "resize": [],
+    "serializeDeleted": [],
+    "serialize": [
+      "isForCopying",
+      "context"
+    ],
+    "hasBeenModified": [],
+    "remove": [],
+    "isResizable": [],
+    "makeResizable": [],
+    "toolbarPosition": [],
+    "commentButtonPosition": [],
+    "commentButtonPositionInPage": [],
+    "commentButtonColor": [],
+    "commentPopupPosition": [],
+    "hasDefaultPopupPosition": [],
+    "commentButtonWidth": [],
+    "elementBeforePopup": [],
+    "setCommentButtonStates": [
+      "options"
+    ],
+    "keydown": [
+      "event"
+    ],
+    "_resizeWithKeyboard": [
+      "x",
+      "y"
+    ],
+    "_stopResizingWithKeyboard": [],
+    "select": [],
+    "focus": [],
+    "unselect": [],
+    "hideCommentPopup": [],
+    "updateParams": [
+      "type",
+      "value"
+    ],
+    "disableEditing": [],
+    "enableEditing": [],
+    "canChangeContent": [],
+    "enterInEditMode": [],
+    "dblclick": [
+      "event"
+    ],
+    "getElementForAltText": [],
+    "contentDiv": [],
+    "isEditing": [],
+    "telemetryInitialData": [],
+    "telemetryFinalData": [],
+    "_reportTelemetry": [
+      "data",
+      "mustWait"
+    ],
+    "show": [
+      "visible"
+    ],
+    "enable": [],
+    "disable": [],
+    "updateFakeAnnotationElement": [
+      "annotationLayer"
+    ],
+    "renderAnnotationElement": [
+      "annotation"
+    ],
+    "resetAnnotationElement": [
+      "annotation"
+    ]
+  },
+  "FreeTextEditor": {
+    "_freeTextDefaultContent": [],
+    "_internalPadding": [],
+    "_defaultColor": [],
+    "_defaultFontSize": [],
+    "_keyboardManager": [],
+    "_type": [],
+    "_editorType": [],
+    "initialize": [
+      "l10n",
+      "uiManager"
+    ],
+    "updateDefaultParams": [
+      "type",
+      "value"
+    ],
+    "defaultPropertiesToUpdate": [],
+    "deserialize": [
+      "data",
+      "parent",
+      "uiManager"
+    ],
+    "constructor": [
+      "params"
+    ],
+    "_colorPicker": [],
+    "color": [],
+    "updateParams": [
+      "type",
+      "value"
+    ],
+    "propertiesToUpdate": [],
+    "toolbarButtons": [],
+    "colorType": [],
+    "_translateEmpty": [
+      "x",
+      "y"
+    ],
+    "onceAdded": [
+      "focus"
+    ],
+    "commit": [],
+    "keydown": [
+      "event"
+    ],
+    "editorDivKeydown": [
+      "event"
+    ],
+    "editorDivFocus": [
+      "event"
+    ],
+    "editorDivBlur": [
+      "event"
+    ],
+    "editorDivInput": [
+      "event"
+    ],
+    "editorDiv": [],
+    "overlayDiv": [],
+    "editorDivPaste": [
+      "event"
+    ],
+    "getPDFRect": [],
+    "serialize": [
+      "isForCopying"
+    ],
+    "renderAnnotationElement": [
+      "annotation"
+    ]
+  },
+  "HighlightEditor": {
+    "_defaultColor": [],
+    "_defaultOpacity": [],
+    "_defaultThickness": [],
+    "_type": [],
+    "_editorType": [],
+    "_freeHighlightId": [],
+    "_freeHighlight": [],
+    "_freeHighlightClipId": [],
+    "_keyboardManager": [],
+    "computeTelemetryFinalData": [
+      "data"
+    ],
+    "initialize": [
+      "l10n",
+      "uiManager"
+    ],
+    "updateDefaultParams": [
+      "type",
+      "value"
+    ],
+    "defaultPropertiesToUpdate": [],
+    "startHighlighting": [
+      "parent",
+      "isLTR",
+      "param"
+    ],
+    "deserialize": [
+      "data",
+      "parent",
+      "uiManager"
+    ],
+    "constructor": [
+      "params"
+    ],
+    "color": [],
+    "opacity": [],
+    "defaultL10nId": [],
+    "telemetryInitialData": [],
+    "telemetryFinalData": [],
+    "translateInPage": [
+      "x",
+      "y"
+    ],
+    "commentButtonPosition": [],
+    "updateParams": [
+      "type",
+      "value"
+    ],
+    "propertiesToUpdate": [],
+    "toolbarButtons": [],
+    "fixAndSetPosition": [],
+    "getRect": [
+      "tx",
+      "ty"
+    ],
+    "onceAdded": [
+      "focus"
+    ],
+    "rotate": [
+      "angle"
+    ],
+    "pointerover": [],
+    "pointerleave": [],
+    "_moveCaret": [
+      "direction"
+    ],
+    "serialize": [
+      "isForCopying"
+    ],
+    "renderAnnotationElement": [
+      "annotation"
+    ]
+  },
+  "InkDrawingOptions": {
+    "constructor": [
+      "viewerParameters"
+    ],
+    "_viewParameters": [],
+    "clone": []
+  },
+  "InkEditor": {
+    "_type": [],
+    "_editorType": [],
+    "_defaultDrawingOptions": [],
+    "initialize": [
+      "l10n",
+      "uiManager"
+    ],
+    "getDefaultDrawingOptions": [
+      "options"
+    ],
+    "typesMap": [],
+    "createDrawerInstance": [
+      "x",
+      "y",
+      "parentWidth",
+      "parentHeight",
+      "rotation"
+    ],
+    "deserializeDraw": [
+      "pageX",
+      "pageY",
+      "pageWidth",
+      "pageHeight",
+      "innerMargin",
+      "data"
+    ],
+    "defaultL10nId": [],
+    "toolbarButtons": [],
+    "colorType": [],
+    "color": [],
+    "opacity": [],
+    "createDrawingOptions": [
+      "param"
+    ],
+    "_drawingOptions": [],
+    "serialize": [
+      "isForCopying"
+    ]
+  },
+  "SignatureEditor": {
+    "_type": [],
+    "_editorType": [],
+    "_defaultDrawingOptions": [],
+    "initialize": [
+      "l10n",
+      "uiManager"
+    ],
+    "getDefaultDrawingOptions": [
+      "options"
+    ],
+    "typesMap": [],
+    "computeTelemetryFinalData": [
+      "data"
+    ],
+    "deserializeDraw": [
+      "pageX",
+      "pageY",
+      "pageWidth",
+      "pageHeight",
+      "innerMargin",
+      "data"
+    ],
+    "defaultL10nId": [],
+    "telemetryFinalData": [],
+    "setUuid": [
+      "uuid"
+    ],
+    "getUuid": [],
+    "description": [],
+    "getSignaturePreview": [],
+    "toolbarButtons": [],
+    "addSignature": [
+      "data",
+      "heightInPage",
+      "description",
+      "uuid"
+    ],
+    "getFromImage": [
+      "bitmap"
+    ],
+    "getFromText": [
+      "text",
+      "fontInfo"
+    ],
+    "getDrawnSignature": [
+      "curves"
+    ],
+    "createDrawingOptions": [
+      "param"
+    ],
+    "_drawingOptions": [],
+    "serialize": [
+      "isForCopying"
+    ]
+  },
+  "StampEditor": {
+    "_type": [],
+    "_editorType": [],
+    "initialize": [
+      "l10n",
+      "uiManager"
+    ],
+    "isHandlingMimeForPasting": [
+      "mime"
+    ],
+    "paste": [
+      "item",
+      "parent"
+    ],
+    "computeTelemetryFinalData": [
+      "data"
+    ],
+    "deserialize": [
+      "data",
+      "parent",
+      "uiManager"
+    ],
+    "constructor": [
+      "params"
+    ],
+    "defaultL10nId": [],
+    "telemetryFinalData": [],
+    "mlGuessAltText": [
+      "imageData",
+      "updateAltTextData"
+    ],
+    "onceAdded": [
+      "focus"
+    ],
+    "toolbarButtons": [],
+    "setCanvas": [
+      "annotationElementId",
+      "canvas"
+    ],
+    "onScaleChanging": [],
+    "copyCanvas": [
+      "maxDataDimension",
+      "maxPreviewDimension",
+      "createImageData"
+    ],
+    "serialize": [
+      "isForCopying",
+      "context"
+    ],
+    "renderAnnotationElement": [
+      "annotation"
+    ]
+  },
+  "EditorToolbar": {
+    "constructor": [
+      "editor"
+    ],
+    "render": [],
+    "div": [],
+    "hide": [],
+    "show": [],
+    "addDeleteButton": [],
+    "addAltText": [
+      "altText"
+    ],
+    "addComment": [
+      "comment",
+      "beforeElement"
+    ],
+    "addColorPicker": [
+      "colorPicker"
+    ],
+    "addEditSignatureButton": [
+      "signatureManager"
+    ],
+    "removeButton": [
+      "name"
+    ],
+    "addButton": [
+      "name",
+      "tool"
+    ],
+    "addButtonBefore": [
+      "name",
+      "tool",
+      "beforeSelector"
+    ],
+    "updateEditSignatureButton": [
+      "description"
+    ],
+    "remove": []
+  },
+  "FloatingToolbar": {
+    "constructor": [
+      "uiManager"
+    ],
+    "show": [
+      "parent",
+      "boxes",
+      "isLTR"
+    ],
+    "hide": []
+  },
+  "AnnotationEditorUIManager": {
+    "TRANSLATE_SMALL": [],
+    "TRANSLATE_BIG": [],
+    "_keyboardManager": [],
+    "constructor": [
+      "container",
+      "viewer",
+      "viewerAlert",
+      "altTextManager",
+      "commentManager",
+      "signatureManager",
+      "eventBus",
+      "pdfDocument",
+      "pageColors",
+      "highlightColors",
+      "enableHighlightFloatingButton",
+      "enableUpdatedAddImage",
+      "enableNewAltTextWhenAddingImage",
+      "mlManager",
+      "editorUndoBar",
+      "supportsPinchToZoom"
+    ],
+    "_editorUndoBar": [],
+    "_signal": [],
+    "_eventBus": [],
+    "viewParameters": [],
+    "isShiftKeyDown": [],
+    "_supportsPinchToZoom": [],
+    "destroy": [],
+    "combinedSignal": [
+      "ac"
+    ],
+    "mlManager": [],
+    "useNewAltTextFlow": [],
+    "useNewAltTextWhenAddingImage": [],
+    "hcmFilter": [],
+    "direction": [],
+    "_highlightColors": [],
+    "highlightColors": [],
+    "highlightColorNames": [],
+    "getNonHCMColor": [
+      "color"
+    ],
+    "getNonHCMColorName": [
+      "color"
+    ],
+    "setCurrentDrawingSession": [
+      "layer"
+    ],
+    "setMainHighlightColorPicker": [
+      "colorPicker"
+    ],
+    "editAltText": [
+      "editor",
+      "firstTime"
+    ],
+    "hasCommentManager": [],
+    "editComment": [
+      "editor",
+      "posX",
+      "posY",
+      "options"
+    ],
+    "selectComment": [
+      "pageIndex",
+      "uid"
+    ],
+    "updateComment": [
+      "editor"
+    ],
+    "updatePopupColor": [
+      "editor"
+    ],
+    "removeComment": [
+      "editor"
+    ],
+    "deleteComment": [
+      "editor",
+      "savedData"
+    ],
+    "toggleComment": [
+      "editor",
+      "isSelected",
+      "visibility"
+    ],
+    "makeCommentColor": [
+      "color",
+      "opacity"
+    ],
+    "getCommentDialogElement": [],
+    "waitForEditorsRendered": [
+      "pageNumber"
+    ],
+    "getSignature": [
+      "editor"
+    ],
+    "signatureManager": [],
+    "switchToMode": [
+      "mode",
+      "callback"
+    ],
+    "setPreference": [
+      "name",
+      "value"
+    ],
+    "onSetPreference": [
+      "param"
+    ],
+    "onPagesEdited": [
+      "param"
+    ],
+    "onPageChanging": [
+      "param"
+    ],
+    "focusMainContainer": [],
+    "findParent": [
+      "x",
+      "y"
+    ],
+    "disableUserSelect": [
+      "value"
+    ],
+    "addShouldRescale": [
+      "editor"
+    ],
+    "removeShouldRescale": [
+      "editor"
+    ],
+    "onScaleChanging": [
+      "param"
+    ],
+    "onRotationChanging": [
+      "param"
+    ],
+    "highlightSelection": [
+      "methodOfCreation",
+      "comment"
+    ],
+    "commentSelection": [
+      "methodOfCreation"
+    ],
+    "getAndRemoveDataFromAnnotationStorage": [
+      "annotationId"
+    ],
+    "addToAnnotationStorage": [
+      "editor"
+    ],
+    "a11yAlert": [
+      "messageId",
+      "args"
+    ],
+    "blur": [],
+    "focus": [],
+    "addEditListeners": [],
+    "removeEditListeners": [],
+    "dragOver": [
+      "event"
+    ],
+    "drop": [
+      "event"
+    ],
+    "copy": [
+      "event"
+    ],
+    "cut": [
+      "event"
+    ],
+    "paste": [
+      "event"
+    ],
+    "keydown": [
+      "event"
+    ],
+    "keyup": [
+      "event"
+    ],
+    "onEditingAction": [
+      "param"
+    ],
+    "setEditingState": [
+      "isEditing"
+    ],
+    "registerEditorTypes": [
+      "types"
+    ],
+    "getId": [],
+    "currentLayer": [],
+    "getLayer": [
+      "pageIndex"
+    ],
+    "currentPageIndex": [],
+    "addLayer": [
+      "layer"
+    ],
+    "removeLayer": [
+      "layer"
+    ],
+    "updateMode": [
+      "mode",
+      "editId",
+      "isFromUser",
+      "isFromKeyboard",
+      "mustEnterInEditMode",
+      "editComment"
+    ],
+    "addNewEditorFromKeyboard": [],
+    "updateToolbar": [
+      "options"
+    ],
+    "updateParams": [
+      "type",
+      "value"
+    ],
+    "showAllEditors": [
+      "type",
+      "visible",
+      "updateButton"
+    ],
+    "enableWaiting": [
+      "mustWait"
+    ],
+    "getEditors": [
+      "pageIndex"
+    ],
+    "getEditor": [
+      "id"
+    ],
+    "addEditor": [
+      "editor"
+    ],
+    "removeEditor": [
+      "editor"
+    ],
+    "addDeletedAnnotationElement": [
+      "editor"
+    ],
+    "isDeletedAnnotationElement": [
+      "annotationElementId"
+    ],
+    "removeDeletedAnnotationElement": [
+      "editor"
+    ],
+    "setActiveEditor": [
+      "editor"
+    ],
+    "updateUI": [
+      "editor"
+    ],
+    "updateUIForDefaultProperties": [
+      "editorType"
+    ],
+    "toggleSelected": [
+      "editor"
+    ],
+    "setSelected": [
+      "editor"
+    ],
+    "isSelected": [
+      "editor"
+    ],
+    "firstSelectedEditor": [],
+    "unselect": [
+      "editor"
+    ],
+    "hasSelection": [],
+    "isEnterHandled": [],
+    "undo": [],
+    "redo": [],
+    "addCommands": [
+      "params"
+    ],
+    "cleanUndoStack": [
+      "type"
+    ],
+    "delete": [],
+    "commitOrRemove": [],
+    "hasSomethingToControl": [],
+    "selectAll": [],
+    "unselectAll": [],
+    "translateSelectedEditors": [
+      "x",
+      "y",
+      "noCommit"
+    ],
+    "setUpDragSession": [],
+    "endDragSession": [],
+    "dragSelectedEditors": [
+      "tx",
+      "ty"
+    ],
+    "rebuild": [
+      "editor"
+    ],
+    "isEditorHandlingKeyboard": [],
+    "isActive": [
+      "editor"
+    ],
+    "getActive": [],
+    "getMode": [],
+    "isEditingMode": [],
+    "imageManager": [],
+    "getSelectionBoxes": [
+      "textLayer"
+    ],
+    "addChangedExistingAnnotation": [
+      "param"
+    ],
+    "removeChangedExistingAnnotation": [
+      "param"
+    ],
+    "renderAnnotationElement": [
+      "annotation"
+    ],
+    "setMissingCanvas": [
+      "annotationId",
+      "annotationElementId",
+      "canvas"
+    ],
+    "addMissingCanvas": [
+      "annotationId",
+      "editor"
+    ]
+  },
+  "ColorManager": {
+    "_colorsMapping": [],
+    "_colors": [],
+    "convert": [
+      "color"
+    ],
+    "getHexCode": [
+      "name"
+    ]
+  },
+  "CommandManager": {
+    "constructor": [
+      "maxSize"
+    ],
+    "add": [
+      "param"
+    ],
+    "undo": [],
+    "redo": [],
+    "hasSomethingToUndo": [],
+    "hasSomethingToRedo": [],
+    "cleanType": [
+      "type"
+    ],
+    "destroy": []
+  },
+  "CurrentPointers": {
+    "initializeAndAddPointerId": [
+      "pointerId"
+    ],
+    "setPointer": [
+      "pointerType",
+      "pointerId"
+    ],
+    "setTimeStamp": [
+      "timeStamp"
+    ],
+    "isSamePointerId": [
+      "pointerId"
+    ],
+    "isSamePointerIdOrRemove": [
+      "pointerId"
+    ],
+    "isSamePointerType": [
+      "pointerType"
+    ],
+    "isInitializedAndDifferentPointerType": [
+      "pointerType"
+    ],
+    "isSameTimeStamp": [
+      "timeStamp"
+    ],
+    "isUsingMultiplePointers": [],
+    "clearPointerType": [],
+    "clearPointerIds": [],
+    "clearTimeStamp": []
+  },
+  "KeyboardManager": {
+    "constructor": [
+      "callbacks"
+    ],
+    "buffer": [],
+    "callbacks": [],
+    "allKeys": [],
+    "exec": [
+      "self",
+      "event"
+    ]
+  },
+  "PDFFetchStream": {
+    "constructor": [
+      "source"
+    ],
+    "_responseOrigin": [],
+    "isHttp": [],
+    "headers": []
+  },
+  "BaseFilterFactory": {
+    "addFilter": [
+      "maps"
+    ],
+    "addHCMFilter": [
+      "fgColor",
+      "bgColor"
+    ],
+    "addAlphaFilter": [
+      "map"
+    ],
+    "addLuminosityFilter": [
+      "map"
+    ],
+    "addHighlightHCMFilter": [
+      "filterName",
+      "fgColor",
+      "bgColor",
+      "newFgColor",
+      "newBgColor"
+    ],
+    "destroy": [
+      "keepHCM"
+    ]
+  },
+  "DOMFilterFactory": {
+    "constructor": [
+      "param"
+    ],
+    "addFilter": [
+      "maps"
+    ],
+    "addHCMFilter": [
+      "fgColor",
+      "bgColor"
+    ],
+    "addAlphaFilter": [
+      "map"
+    ],
+    "addLuminosityFilter": [
+      "map"
+    ],
+    "addHighlightHCMFilter": [
+      "filterName",
+      "fgColor",
+      "bgColor",
+      "newFgColor",
+      "newBgColor"
+    ]
+  },
+  "FontFaceObject": {
+    "constructor": [
+      "translatedData",
+      "inspectFont",
+      "extra",
+      "charProcOperatorList"
+    ],
+    "compiledGlyphs": [],
+    "_inspectFont": [],
+    "charProcOperatorList": [],
+    "createNativeFontFace": [],
+    "createFontFaceRule": [],
+    "getPathGenerator": [
+      "objs",
+      "character"
+    ],
+    "black": [],
+    "bold": [],
+    "disableFontFace": [],
+    "fontExtraProperties": [],
+    "isInvalidPDFjsFont": [],
+    "isType3Font": [],
+    "italic": [],
+    "missingFile": [],
+    "remeasure": [],
+    "vertical": [],
+    "ascent": [],
+    "defaultWidth": [],
+    "descent": [],
+    "bbox": [],
+    "fontMatrix": [],
+    "fallbackName": [],
+    "loadedName": [],
+    "mimetype": [],
+    "name": [],
+    "data": [],
+    "clearData": [],
+    "cssFontInfo": [],
+    "systemFontInfo": [],
+    "defaultVMetrics": []
+  },
+  "FontLoader": {
+    "constructor": [
+      "param"
+    ],
+    "_document": [],
+    "nativeFontFaces": [],
+    "styleElement": [],
+    "loadingRequests": [],
+    "loadTestFontId": [],
+    "addNativeFontFace": [
+      "nativeFontFace"
+    ],
+    "removeNativeFontFace": [
+      "nativeFontFace"
+    ],
+    "insertRule": [
+      "rule"
+    ],
+    "clear": [],
+    "loadSystemFont": [
+      "param"
+    ],
+    "bind": [
+      "font"
+    ],
+    "isFontLoadingAPISupported": [],
+    "isSyncFontLoadingSupported": [],
+    "_queueLoadingCallback": [
+      "callback"
+    ],
+    "_loadTestFont": [],
+    "_prepareFontLoadEvent": [
+      "font",
+      "request"
+    ]
+  },
+  "Metadata": {
+    "constructor": [
+      "param"
+    ],
+    "getRaw": [],
+    "get": [
+      "name"
+    ]
+  },
+  "PDFNetworkStream": {
+    "constructor": [
+      "source"
+    ],
+    "_responseOrigin": [],
+    "url": [],
+    "isHttp": [],
+    "headers": [],
+    "_request": [
+      "args"
+    ],
+    "_abortRequest": [
+      "xhr"
+    ],
+    "getRangeReader": [
+      "begin",
+      "end"
+    ]
+  },
+  "PDFNodeStream": {
+    "constructor": [
+      "source"
+    ],
+    "url": []
+  },
+  "NodeCanvasFactory": {
+    "_createCanvas": [
+      "width",
+      "height"
+    ]
+  },
+  "NodeCMapReaderFactory": {
+    "_fetch": [
+      "url"
+    ]
+  },
+  "NodeFilterFactory": {},
+  "NodeStandardFontDataFactory": {
+    "_fetch": [
+      "url"
+    ]
+  },
+  "NodeWasmFactory": {
+    "_fetch": [
+      "url"
+    ]
+  },
+  "OptionalContentConfig": {
+    "constructor": [
+      "data",
+      "renderingIntent"
+    ],
+    "renderingIntent": [],
+    "name": [],
+    "creator": [],
+    "isVisible": [
+      "group"
+    ],
+    "setVisibility": [
+      "id",
+      "visible",
+      "preserveRB"
+    ],
+    "setOCGState": [
+      "param"
+    ],
+    "hasInitialVisibility": [],
+    "getOrder": [],
+    "getGroup": [
+      "id"
+    ],
+    "getHash": []
+  },
+  "TilingPattern": {
+    "MAX_PATTERN_SIZE": [],
+    "constructor": [
+      "IR",
+      "ctx",
+      "canvasGraphicsFactory",
+      "baseTransform"
+    ],
+    "color": [],
+    "operatorList": [],
+    "matrix": [],
+    "bbox": [],
+    "xstep": [],
+    "ystep": [],
+    "paintType": [],
+    "tilingType": [],
+    "ctx": [],
+    "canvasGraphicsFactory": [],
+    "baseTransform": [],
+    "createPatternCanvas": [
+      "owner",
+      "opIdx"
+    ],
+    "getSizeAndScale": [
+      "step",
+      "realOutputSize",
+      "scale"
+    ],
+    "clipBbox": [
+      "graphics",
+      "x0",
+      "y0",
+      "x1",
+      "y1"
+    ],
+    "setFillAndStrokeStyleToContext": [
+      "graphics",
+      "paintType",
+      "color"
+    ],
+    "isModifyingCurrentTransform": [],
+    "getPattern": [
+      "ctx",
+      "owner",
+      "inverse",
+      "pathType",
+      "opIdx"
+    ]
+  },
+  "RadialAxialShadingPattern": {
+    "constructor": [
+      "IR"
+    ],
+    "_type": [],
+    "_bbox": [],
+    "_colorStops": [],
+    "_p0": [],
+    "_p1": [],
+    "_r0": [],
+    "_r1": [],
+    "matrix": [],
+    "isOriginBased": [],
+    "isRadial": [],
+    "_createGradient": [
+      "ctx",
+      "transform"
+    ],
+    "getPattern": [
+      "ctx",
+      "owner",
+      "inverse",
+      "pathType"
+    ]
+  },
+  "MeshShadingPattern": {
+    "constructor": [
+      "IR"
+    ],
+    "_coords": [],
+    "_colors": [],
+    "_figures": [],
+    "_bounds": [],
+    "_bbox": [],
+    "_background": [],
+    "matrix": [],
+    "_createMeshCanvas": [
+      "combinedScale",
+      "backgroundColor",
+      "cachedCanvases"
+    ],
+    "getPattern": [
+      "ctx",
+      "owner",
+      "inverse",
+      "pathType"
+    ]
+  },
+  "DummyShadingPattern": {
+    "getPattern": []
+  },
+  "BaseShadingPattern": {
+    "isModifyingCurrentTransform": [],
+    "getPattern": []
+  },
+  "PDFObjects": {
+    "get": [
+      "objId",
+      "callback"
+    ],
+    "has": [
+      "objId"
+    ],
+    "delete": [
+      "objId"
+    ],
+    "resolve": [
+      "objId",
+      "data"
+    ],
+    "clear": []
+  },
+  "BaseStandardFontDataFactory": {
+    "constructor": [
+      "param"
+    ],
+    "baseUrl": [],
+    "fetch": [
+      "param"
+    ],
+    "_fetch": [
+      "url"
+    ]
+  },
+  "DOMStandardFontDataFactory": {
+    "_fetch": [
+      "url"
+    ]
+  },
+  "BaseSVGFactory": {
+    "create": [
+      "width",
+      "height",
+      "skipDimensions"
+    ],
+    "createElement": [
+      "type"
+    ],
+    "_createSVG": [
+      "type"
+    ]
+  },
+  "DOMSVGFactory": {
+    "_createSVG": [
+      "type"
+    ]
+  },
+  "TextLayer": {
+    "fontFamilyMap": [],
+    "cleanup": [],
+    "constructor": [
+      "param"
+    ],
+    "render": [],
+    "update": [
+      "param"
+    ],
+    "cancel": [],
+    "textDivs": [],
+    "textContentItemsStr": []
+  },
+  "TouchManager": {
+    "constructor": [
+      "param"
+    ],
+    "MIN_TOUCH_DISTANCE_TO_PINCH": [],
+    "destroy": []
+  },
+  "PDFDataTransportStream": {
+    "constructor": [
+      "source"
+    ],
+    "_progressiveDone": [],
+    "_queuedChunks": [],
+    "getRangeReader": [
+      "begin",
+      "end"
+    ],
+    "cancelAllRequests": [
+      "reason"
+    ]
+  },
+  "BaseWasmFactory": {
+    "constructor": [
+      "param"
+    ],
+    "baseUrl": [],
+    "fetch": [
+      "param"
+    ],
+    "_fetch": [
+      "url"
+    ]
+  },
+  "DOMWasmFactory": {
+    "_fetch": [
+      "url"
+    ]
+  },
+  "GlobalWorkerOptions": {
+    "workerPort": [],
+    "workerSrc": []
+  },
+  "XfaLayer": {
+    "setupStorage": [
+      "html",
+      "id",
+      "element",
+      "storage",
+      "intent"
+    ],
+    "setAttributes": [
+      "param"
+    ],
+    "render": [
+      "parameters"
+    ],
+    "update": [
+      "parameters"
+    ]
+  },
+  "XfaText": {
+    "textContent": [
+      "xfa"
+    ],
+    "shouldBuildText": [
+      "name"
+    ]
+  },
+  "BasePDFStream": {
+    "constructor": [
+      "source",
+      "PDFStreamReader",
+      "PDFStreamRangeReader"
+    ],
+    "_fullReader": [],
+    "_rangeReaders": [],
+    "_source": [],
+    "_progressiveDataLength": [],
+    "getFullReader": [],
+    "getRangeReader": [
+      "begin",
+      "end"
+    ],
+    "cancelAllRequests": [
+      "reason"
+    ]
+  },
+  "BasePDFStreamRangeReader": {
+    "constructor": [
+      "stream",
+      "begin",
+      "end"
+    ],
+    "_stream": [],
+    "read": [],
+    "cancel": [
+      "reason"
+    ]
+  },
+  "BasePDFStreamReader": {
+    "constructor": [
+      "stream"
+    ],
+    "onProgress": [],
+    "_contentLength": [],
+    "_filename": [],
+    "_headersCapability": [],
+    "_isRangeSupported": [],
+    "_isStreamingSupported": [],
+    "_loaded": [],
+    "_stream": [],
+    "headersReady": [],
+    "filename": [],
+    "contentLength": [],
+    "isRangeSupported": [],
+    "isStreamingSupported": [],
+    "read": [],
+    "cancel": [
+      "reason"
+    ]
+  },
+  "MessageHandler": {
+    "constructor": [
+      "sourceName",
+      "targetName",
+      "comObj"
+    ],
+    "sourceName": [],
+    "targetName": [],
+    "comObj": [],
+    "callbackId": [],
+    "streamId": [],
+    "streamSinks": [],
+    "streamControllers": [],
+    "callbackCapabilities": [],
+    "actionHandler": [],
+    "on": [
+      "actionName",
+      "handler"
+    ],
+    "send": [
+      "actionName",
+      "data",
+      "transfers"
+    ],
+    "sendWithPromise": [
+      "actionName",
+      "data",
+      "transfers"
+    ],
+    "sendWithStream": [
+      "actionName",
+      "data",
+      "queueingStrategy",
+      "transfers"
+    ],
+    "destroy": []
+  },
+  "MurmurHash3_64": {
+    "constructor": [
+      "seed"
+    ],
+    "h1": [],
+    "h2": [],
+    "update": [
+      "input"
+    ],
+    "hexdigest": []
+  },
+  "CssFontInfo": {
+    "strings": [],
+    "write": [
+      "info"
+    ],
+    "constructor": [
+      "buffer"
+    ],
+    "fontFamily": [],
+    "fontWeight": [],
+    "italicAngle": []
+  },
+  "FontInfo": {
+    "bools": [],
+    "numbers": [],
+    "strings": [],
+    "write": [
+      "font"
+    ],
+    "constructor": [
+      "param"
+    ],
+    "black": [],
+    "bold": [],
+    "disableFontFace": [],
+    "fontExtraProperties": [],
+    "isInvalidPDFjsFont": [],
+    "isType3Font": [],
+    "italic": [],
+    "missingFile": [],
+    "remeasure": [],
+    "vertical": [],
+    "ascent": [],
+    "defaultWidth": [],
+    "descent": [],
+    "bbox": [],
+    "fontMatrix": [],
+    "defaultVMetrics": [],
+    "fallbackName": [],
+    "loadedName": [],
+    "mimetype": [],
+    "name": [],
+    "data": [],
+    "clearData": [],
+    "cssFontInfo": [],
+    "systemFontInfo": []
+  },
+  "FontPathInfo": {
+    "write": [
+      "path"
+    ],
+    "constructor": [
+      "buffer"
+    ],
+    "path": []
+  },
+  "PatternInfo": {
+    "write": [
+      "ir"
+    ],
+    "constructor": [
+      "buffer"
+    ],
+    "buffer": [],
+    "view": [],
+    "data": [],
+    "getIR": []
+  },
+  "SystemFontInfo": {
+    "strings": [],
+    "write": [
+      "info"
+    ],
+    "constructor": [
+      "buffer"
+    ],
+    "guessFallback": [],
+    "css": [],
+    "loadedName": [],
+    "baseFontName": [],
+    "src": [],
+    "style": []
+  },
+  "AnnotationEditorLayerBuilder": {
+    "constructor": [
+      "options"
+    ],
+    "pdfPage": [],
+    "accessibilityManager": [],
+    "l10n": [],
+    "annotationEditorLayer": [],
+    "div": [],
+    "_cancelled": [],
+    "render": [
+      "param"
+    ],
+    "cancel": [],
+    "hide": [],
+    "show": []
+  },
+  "AnnotationLayerBuilder": {
+    "constructor": [
+      "param"
+    ],
+    "pdfPage": [],
+    "linkService": [],
+    "downloadManager": [],
+    "imageResourcesPath": [],
+    "renderForms": [],
+    "annotationStorage": [],
+    "enableComment": [],
+    "enableScripting": [],
+    "_hasJSActionsPromise": [],
+    "_fieldObjectsPromise": [],
+    "_annotationCanvasMap": [],
+    "_accessibilityManager": [],
+    "_annotationEditorUIManager": [],
+    "annotationLayer": [],
+    "div": [],
+    "_cancelled": [],
+    "_eventBus": [],
+    "render": [
+      "param"
+    ],
+    "cancel": [],
+    "hide": [
+      "internal"
+    ],
+    "hasEditableAnnotations": [],
+    "injectLinkAnnotations": [
+      "inferredLinks"
+    ]
+  },
+  "AppOptions": {
+    "eventBus": [],
+    "get": [
+      "name"
+    ],
+    "getAll": [
+      "kind",
+      "defaultOnly"
+    ],
+    "set": [
+      "name",
+      "value"
+    ],
+    "setAll": [
+      "options",
+      "prefs"
+    ]
+  },
+  "Autolinker": {
+    "findLinks": [
+      "text"
+    ],
+    "processLinks": [
+      "pdfPageView"
+    ]
+  },
+  "BasePDFPageView": {
+    "constructor": [
+      "options"
+    ],
+    "canvas": [],
+    "div": [],
+    "enableOptimizedPartialRendering": [],
+    "eventBus": [],
+    "id": [],
+    "pageColors": [],
+    "recordedBBoxes": [],
+    "renderingQueue": [],
+    "renderTask": [],
+    "resume": [],
+    "renderingState": [],
+    "_createCanvas": [
+      "onShow",
+      "hideUntilComplete"
+    ],
+    "_resetCanvas": [],
+    "_drawCanvas": [
+      "options",
+      "onCancel",
+      "onFinish"
+    ],
+    "cancelRendering": [
+      "param"
+    ],
+    "dispatchPageRender": [],
+    "dispatchPageRendered": [
+      "cssTransform",
+      "isDetailView"
+    ]
+  },
+  "CommentManager": {
+    "_makeCommentColor": [
+      "color",
+      "opacity"
+    ],
+    "constructor": [
+      "commentDialog",
+      "sidebar",
+      "eventBus",
+      "linkService",
+      "overlayManager",
+      "ltr",
+      "hasForcedColors"
+    ],
+    "dialogElement": [],
+    "setSidebarUiManager": [
+      "uiManager"
+    ],
+    "showSidebar": [
+      "annotations"
+    ],
+    "hideSidebar": [],
+    "removeComments": [
+      "ids"
+    ],
+    "selectComment": [
+      "id"
+    ],
+    "addComment": [
+      "annotation"
+    ],
+    "updateComment": [
+      "annotation"
+    ],
+    "toggleCommentPopup": [
+      "editor",
+      "isSelected",
+      "visibility",
+      "isEditable"
+    ],
+    "destroyPopup": [],
+    "updatePopupColor": [
+      "editor"
+    ],
+    "showDialog": [
+      "uiManager",
+      "editor",
+      "posX",
+      "posY",
+      "options"
+    ],
+    "makeCommentColor": [
+      "color",
+      "opacity"
+    ],
+    "destroy": []
+  },
+  "DownloadManager": {
+    "downloadData": [
+      "data",
+      "filename",
+      "contentType"
+    ],
+    "openOrDownloadData": [
+      "data",
+      "filename",
+      "dest"
+    ],
+    "download": [
+      "data",
+      "url",
+      "filename"
+    ]
+  },
+  "DrawLayerBuilder": {
+    "render": [
+      "param"
+    ],
+    "cancel": [],
+    "_cancelled": [],
+    "setParent": [
+      "parent"
+    ],
+    "getDrawLayer": []
+  },
+  "EventBus": {
+    "on": [
+      "eventName",
+      "listener",
+      "options"
+    ],
+    "off": [
+      "eventName",
+      "listener",
+      "options"
+    ],
+    "dispatch": [
+      "eventName",
+      "data"
+    ],
+    "_on": [
+      "eventName",
+      "listener",
+      "options"
+    ],
+    "_off": [
+      "eventName",
+      "listener",
+      "options"
+    ]
+  },
+  "FirefoxEventBus": {
+    "constructor": [
+      "globalEventNames",
+      "externalServices",
+      "isInAutomation"
+    ],
+    "dispatch": [
+      "eventName",
+      "data"
+    ]
+  },
+  "GenericScripting": {
+    "constructor": [
+      "sandboxBundleSrc"
+    ],
+    "_ready": [],
+    "createSandbox": [
+      "data"
+    ],
+    "dispatchEventInSandbox": [
+      "event"
+    ],
+    "destroySandbox": []
+  },
+  "GenericL10n": {
+    "constructor": [
+      "lang"
+    ]
+  },
+  "IDownloadManager": {
+    "downloadData": [
+      "data",
+      "filename",
+      "contentType"
+    ],
+    "openOrDownloadData": [
+      "data",
+      "filename",
+      "dest"
+    ],
+    "download": [
+      "data",
+      "url",
+      "filename"
+    ]
+  },
+  "IL10n": {
+    "getLanguage": [],
+    "getDirection": [],
+    "get": [
+      "ids",
+      "args",
+      "fallback"
+    ],
+    "translate": [
+      "element"
+    ],
+    "pause": [],
+    "resume": []
+  },
+  "IPDFLinkService": {
+    "pagesCount": [],
+    "page": [],
+    "rotation": [],
+    "isInPresentationMode": [],
+    "externalLinkEnabled": [],
+    "goToDestination": [
+      "dest"
+    ],
+    "goToPage": [
+      "val"
+    ],
+    "goToXY": [
+      "pageNumber",
+      "x",
+      "y"
+    ],
+    "addLinkAttributes": [
+      "link",
+      "url",
+      "newWindow"
+    ],
+    "getDestinationHash": [
+      "dest"
+    ],
+    "getAnchorUrl": [
+      "hash"
+    ],
+    "setHash": [
+      "hash"
+    ],
+    "executeNamedAction": [
+      "action"
+    ],
+    "executeSetOCGState": [
+      "action"
+    ]
+  },
+  "IPDFPrintServiceFactory": {
+    "initGlobals": [],
+    "supportsPrinting": [],
+    "createPrintService": []
+  },
+  "IRenderableView": {
+    "resume": [],
+    "renderingId": [],
+    "renderingState": [],
+    "draw": []
+  },
+  "Menu": {
+    "constructor": [
+      "menuContainer",
+      "triggeringButton",
+      "menuItems"
+    ],
+    "destroy": []
+  },
+  "PDFFindController": {
+    "constructor": [
+      "param"
+    ],
+    "_linkService": [],
+    "_eventBus": [],
+    "onIsPageVisible": [],
+    "highlightMatches": [],
+    "pageMatches": [],
+    "pageMatchesLength": [],
+    "selected": [],
+    "state": [],
+    "setDocument": [
+      "pdfDocument"
+    ],
+    "_pdfDocument": [],
+    "_dirtyMatch": [],
+    "_findTimeout": [],
+    "_highlightMatches": [],
+    "scrollMatchIntoView": [
+      "param"
+    ],
+    "_scrollMatches": [],
+    "_pageMatches": [],
+    "_pageMatchesLength": [],
+    "_selected": [],
+    "_offset": [],
+    "_extractTextPromises": [],
+    "_pageContents": [],
+    "_pageDiffs": [],
+    "_hasDiacritics": [],
+    "_matchesCountTotal": [],
+    "_pagesToSearch": [],
+    "_pendingFindMatches": [],
+    "_resumePageIdx": [],
+    "_firstPageCapability": [],
+    "_rawQuery": [],
+    "match": [
+      "query",
+      "pageContent",
+      "pageIndex"
+    ]
+  },
+  "PDFHistory": {
+    "constructor": [
+      "param"
+    ],
+    "linkService": [],
+    "eventBus": [],
+    "_initialized": [],
+    "_fingerprint": [],
+    "_isPagesLoaded": [],
+    "initialize": [
+      "param"
+    ],
+    "_updateUrl": [],
+    "_popStateInProgress": [],
+    "_blockHashChange": [],
+    "_currentHash": [],
+    "_numPositionUpdates": [],
+    "_uid": [],
+    "_maxUid": [],
+    "_destination": [],
+    "_position": [],
+    "_initialRotation": [],
+    "_initialBookmark": [],
+    "reset": [],
+    "_updateViewareaTimeout": [],
+    "push": [
+      "param"
+    ],
+    "pushPage": [
+      "pageNumber"
+    ],
+    "pushCurrentPosition": [],
+    "back": [],
+    "forward": [],
+    "popStateInProgress": [],
+    "initialBookmark": [],
+    "initialRotation": []
+  },
+  "PDFLinkService": {
+    "constructor": [
+      "param"
+    ],
+    "externalLinkEnabled": [],
+    "eventBus": [],
+    "externalLinkTarget": [],
+    "externalLinkRel": [],
+    "_ignoreDestinationZoom": [],
+    "baseUrl": [],
+    "pdfDocument": [],
+    "pdfViewer": [],
+    "pdfHistory": [],
+    "setDocument": [
+      "pdfDocument",
+      "baseUrl"
+    ],
+    "setViewer": [
+      "pdfViewer"
+    ],
+    "setHistory": [
+      "pdfHistory"
+    ],
+    "pagesCount": [],
+    "page": [],
+    "rotation": [],
+    "isInPresentationMode": [],
+    "goToDestination": [
+      "dest"
+    ],
+    "goToPage": [
+      "val"
+    ],
+    "goToXY": [
+      "pageNumber",
+      "x",
+      "y",
+      "options"
+    ],
+    "addLinkAttributes": [
+      "link",
+      "url",
+      "newWindow"
+    ],
+    "getDestinationHash": [
+      "dest"
+    ],
+    "getAnchorUrl": [
+      "anchor"
+    ],
+    "setHash": [
+      "hash"
+    ],
+    "executeNamedAction": [
+      "action"
+    ],
+    "executeSetOCGState": [
+      "action"
+    ]
+  },
+  "SimpleLinkService": {},
+  "PDFPageDetailView": {
+    "constructor": [
+      "param"
+    ],
+    "renderingCancelled": [],
+    "pageView": [],
+    "renderingId": [],
+    "div": [],
+    "setPdfPage": [
+      "pdfPage"
+    ],
+    "pdfPage": [],
+    "reset": [
+      "param"
+    ],
+    "update": [
+      "param"
+    ],
+    "_getRenderingContext": [
+      "canvas",
+      "transform"
+    ],
+    "draw": []
+  },
+  "PDFPageView": {
+    "constructor": [
+      "options"
+    ],
+    "renderingId": [],
+    "pdfPage": [],
+    "pageLabel": [],
+    "rotation": [],
+    "scale": [],
+    "viewport": [],
+    "pdfPageRotate": [],
+    "_optionalContentConfigPromise": [],
+    "imageResourcesPath": [],
+    "enableDetailCanvas": [],
+    "maxCanvasPixels": [],
+    "maxCanvasDim": [],
+    "capCanvasAreaFactor": [],
+    "l10n": [],
+    "_isStandalone": [],
+    "_container": [],
+    "_annotationCanvasMap": [],
+    "annotationLayer": [],
+    "annotationEditorLayer": [],
+    "textLayer": [],
+    "xfaLayer": [],
+    "structTreeLayer": [],
+    "drawLayer": [],
+    "detailView": [],
+    "div": [],
+    "updatePageNumber": [
+      "newPageNumber"
+    ],
+    "setPdfPage": [
+      "pdfPage"
+    ],
+    "destroy": [],
+    "hasEditableAnnotations": [],
+    "_textHighlighter": [],
+    "reset": [
+      "param"
+    ],
+    "toggleEditingMode": [
+      "isEditing"
+    ],
+    "updateVisibleArea": [
+      "visibleArea"
+    ],
+    "update": [
+      "param"
+    ],
+    "outputScale": [],
+    "cancelRendering": [
+      "param"
+    ],
+    "cssTransform": [
+      "param"
+    ],
+    "width": [],
+    "height": [],
+    "getPagePoint": [
+      "x",
+      "y"
+    ],
+    "_ensureCanvasWrapper": [],
+    "_getRenderingContext": [
+      "canvas",
+      "transform",
+      "recordOperations"
+    ],
+    "draw": [],
+    "setPageLabel": [
+      "label"
+    ],
+    "thumbnailCanvas": []
+  },
+  "PDFRenderingQueue": {
+    "pdfViewer": [],
+    "pdfThumbnailViewer": [],
+    "onIdle": [],
+    "highestPriorityPage": [],
+    "idleTimeout": [],
+    "printing": [],
+    "isThumbnailViewEnabled": [],
+    "setViewer": [
+      "pdfViewer"
+    ],
+    "setThumbnailViewer": [
+      "pdfThumbnailViewer"
+    ],
+    "isHighestPriority": [
+      "view"
+    ],
+    "renderHighestPriority": [
+      "currentlyVisiblePages"
+    ],
+    "getHighestPriority": [
+      "visible",
+      "views",
+      "scrolledDown",
+      "preRenderExtra",
+      "ignoreDetailViews"
+    ],
+    "isViewFinished": [
+      "view"
+    ],
+    "renderView": [
+      "view"
+    ]
+  },
+  "PDFScriptingManagerComponents": {
+    "constructor": [
+      "options"
+    ]
+  },
+  "PDFScriptingManager": {
+    "constructor": [
+      "param"
+    ],
+    "setViewer": [
+      "pdfViewer"
+    ],
+    "setDocument": [
+      "pdfDocument"
+    ],
+    "dispatchWillSave": [],
+    "dispatchDidSave": [],
+    "dispatchWillPrint": [],
+    "dispatchDidPrint": [],
+    "destroyPromise": [],
+    "ready": [],
+    "_pageOpenPending": [],
+    "_visitedPages": []
+  },
+  "PDFSinglePageViewer": {
+    "scrollMode": [
+      "mode"
+    ],
+    "_updateScrollMode": [],
+    "spreadMode": [
+      "mode"
+    ],
+    "_updateSpreadMode": []
+  },
+  "PDFThumbnailView": {
+    "constructor": [
+      "param"
+    ],
+    "id": [],
+    "renderingId": [],
+    "pageLabel": [],
+    "pdfPage": [],
+    "rotation": [],
+    "viewport": [],
+    "pdfPageRotate": [],
+    "_optionalContentConfigPromise": [],
+    "maxCanvasPixels": [],
+    "maxCanvasDim": [],
+    "pageColors": [],
+    "eventBus": [],
+    "linkService": [],
+    "renderingQueue": [],
+    "renderTask": [],
+    "renderingState": [],
+    "resume": [],
+    "placeholder": [],
+    "div": [],
+    "checkbox": [],
+    "image": [],
+    "updateId": [
+      "newId"
+    ],
+    "canvasWidth": [],
+    "canvasHeight": [],
+    "scale": [],
+    "setPdfPage": [
+      "pdfPage"
+    ],
+    "reset": [],
+    "update": [
+      "param"
+    ],
+    "toggleCurrent": [
+      "isCurrent"
+    ],
+    "cancelRendering": [],
+    "draw": [],
+    "setImage": [
+      "pageView"
+    ],
+    "setPageLabel": [
+      "label"
+    ]
+  },
+  "PDFThumbnailViewer": {
+    "constructor": [
+      "param"
+    ],
+    "scrollableContainer": [],
+    "container": [],
+    "eventBus": [],
+    "linkService": [],
+    "renderingQueue": [],
+    "maxCanvasPixels": [],
+    "maxCanvasDim": [],
+    "pageColors": [],
+    "enableHWA": [],
+    "_manageMenu": [],
+    "scroll": [],
+    "getThumbnail": [
+      "index"
+    ],
+    "scrollThumbnailIntoView": [
+      "pageNumber"
+    ],
+    "_currentPageNumber": [],
+    "pagesRotation": [],
+    "_pagesRotation": [],
+    "cleanup": [],
+    "_thumbnails": [],
+    "_pageLabels": [],
+    "setDocument": [
+      "pdfDocument"
+    ],
+    "pdfDocument": [],
+    "setPageLabels": [
+      "labels"
+    ],
+    "forceRendering": []
+  },
+  "PDFPageViewBuffer": {
+    "constructor": [
+      "size"
+    ],
+    "push": [
+      "view"
+    ],
+    "resize": [
+      "newSize",
+      "idsToKeep"
+    ],
+    "has": [
+      "view"
+    ]
+  },
+  "PDFViewer": {
+    "constructor": [
+      "options"
+    ],
+    "pagesMapper": [],
+    "container": [],
+    "viewer": [],
+    "eventBus": [],
+    "linkService": [],
+    "downloadManager": [],
+    "findController": [],
+    "_scriptingManager": [],
+    "imageResourcesPath": [],
+    "enablePrintAutoRotate": [],
+    "removePageBorders": [],
+    "maxCanvasPixels": [],
+    "maxCanvasDim": [],
+    "capCanvasAreaFactor": [],
+    "enableDetailCanvas": [],
+    "enableOptimizedPartialRendering": [],
+    "l10n": [],
+    "pageColors": [],
+    "defaultRenderingQueue": [],
+    "renderingQueue": [],
+    "scroll": [],
+    "presentationModeState": [],
+    "printingAllowed": [],
+    "pagesCount": [],
+    "getPageView": [
+      "index"
+    ],
+    "getCachedPageViews": [],
+    "pageViewsReady": [],
+    "renderForms": [],
+    "enableScripting": [],
+    "currentPageNumber": [],
+    "_setCurrentPageNumber": [],
+    "_currentPageNumber": [],
+    "currentPageLabel": [],
+    "currentScale": [],
+    "currentScaleValue": [],
+    "pagesRotation": [],
+    "_pagesRotation": [],
+    "firstPagePromise": [],
+    "onePageRendered": [],
+    "pagesPromise": [],
+    "_layerProperties": [],
+    "getAllText": [],
+    "setDocument": [
+      "pdfDocument"
+    ],
+    "pdfDocument": [],
+    "_scrollMode": [],
+    "_optionalContentConfigPromise": [],
+    "onBeforePagesEdited": [
+      "param"
+    ],
+    "_currentPageId": [],
+    "onPagesEdited": [
+      "param"
+    ],
+    "_pages": [],
+    "setPageLabels": [
+      "labels"
+    ],
+    "_pageLabels": [],
+    "_resetView": [],
+    "_currentScale": [],
+    "_currentScaleValue": [],
+    "_location": [],
+    "_firstPageCapability": [],
+    "_onePageRenderedCapability": [],
+    "_pagesCapability": [],
+    "_previousScrollMode": [],
+    "_spreadMode": [],
+    "_scrollUpdate": [],
+    "pageLabelToPageNumber": [
+      "label"
+    ],
+    "scrollPageIntoView": [
+      "param"
+    ],
+    "_updateLocation": [
+      "firstPage"
+    ],
+    "update": [],
+    "containsElement": [
+      "element"
+    ],
+    "focus": [],
+    "_isContainerRtl": [],
+    "isInPresentationMode": [],
+    "isChangingPresentationMode": [],
+    "isHorizontalScrollbarEnabled": [],
+    "isVerticalScrollbarEnabled": [],
+    "_getVisiblePages": [],
+    "cleanup": [],
+    "_cancelRendering": [],
+    "forceRendering": [
+      "currentlyVisiblePages"
+    ],
+    "hasEqualPageSizes": [],
+    "getPagesOverview": [],
+    "optionalContentConfigPromise": [],
+    "scrollMode": [],
+    "_updateScrollMode": [
+      "pageNumber"
+    ],
+    "spreadMode": [],
+    "_updateSpreadMode": [
+      "pageNumber"
+    ],
+    "_getPageAdvance": [],
+    "nextPage": [],
+    "previousPage": [],
+    "updateScale": [
+      "param"
+    ],
+    "increaseScale": [
+      "options"
+    ],
+    "decreaseScale": [
+      "options"
+    ],
+    "containerTopLeft": [],
+    "annotationEditorMode": [],
+    "refresh": [
+      "noUpdate",
+      "updateArgs"
+    ]
+  },
+  "Sidebar": {
+    "constructor": [
+      "param",
+      "ltr",
+      "isResizerOnTheLeft"
+    ],
+    "_sidebar": [],
+    "_isOpen": [],
+    "width": [],
+    "onStartResizing": [],
+    "onStopResizing": [],
+    "onResizing": [
+      "_newWidth"
+    ],
+    "toggle": [
+      "visibility"
+    ],
+    "destroy": []
+  },
+  "StructTreeLayerBuilder": {
+    "constructor": [
+      "pdfPage",
+      "rawDims"
+    ],
+    "render": [],
+    "getAriaAttributes": [
+      "annotationId"
+    ],
+    "hide": [],
+    "show": [],
+    "updateTextLayer": []
+  },
+  "TextAccessibilityManager": {
+    "setTextMapping": [
+      "textDivs"
+    ],
+    "enable": [],
+    "disable": [],
+    "removePointerInTextLayer": [
+      "element"
+    ],
+    "addPointerInTextLayer": [
+      "element",
+      "isRemovable"
+    ],
+    "moveElementInDOM": [
+      "container",
+      "element",
+      "contentElement",
+      "isRemovable"
+    ]
+  },
+  "TextHighlighter": {
+    "constructor": [
+      "param"
+    ],
+    "findController": [],
+    "matches": [],
+    "eventBus": [],
+    "pageIdx": [],
+    "textDivs": [],
+    "textContentItemsStr": [],
+    "enabled": [],
+    "setTextMapping": [
+      "divs",
+      "texts"
+    ],
+    "enable": [],
+    "disable": [],
+    "_convertMatches": [
+      "matches",
+      "matchesLength"
+    ],
+    "_renderMatches": [
+      "matches"
+    ],
+    "_updateMatches": [
+      "reset"
+    ]
+  },
+  "TextLayerBuilder": {
+    "constructor": [
+      "param"
+    ],
+    "pdfPage": [],
+    "highlighter": [],
+    "accessibilityManager": [],
+    "div": [],
+    "render": [
+      "param"
+    ],
+    "hide": [],
+    "show": [],
+    "cancel": []
+  },
+  "XfaLayerBuilder": {
+    "constructor": [
+      "param"
+    ],
+    "pdfPage": [],
+    "annotationStorage": [],
+    "linkService": [],
+    "xfaHtml": [],
+    "div": [],
+    "_cancelled": [],
+    "render": [
+      "param"
+    ],
+    "cancel": [],
+    "hide": []
+  },
+  "OpenJPEG": [
+    "param"
+  ],
+  "quit_": [
+    "status",
+    "toThrow"
+  ],
+  "i": [
+    "j",
+    "k",
+    "l"
+  ],
+  "m": [
+    "n"
+  ],
+  "s": [
+    "t"
+  ],
+  "u": [
+    "t",
+    "v"
+  ],
+  "w": [],
+  "x": [
+    "v"
+  ],
+  "y": [
+    "z",
+    "v",
+    "A"
+  ],
+  "B": [
+    "z",
+    "C",
+    "A"
+  ],
+  "D": [],
+  "za": [
+    "n"
+  ],
+  "_c": [
+    "a",
+    "b"
+  ],
+  "jb": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f"
+  ],
+  "db": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k"
+  ],
+  "Xb": [
+    "a"
+  ],
+  "pd": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f"
+  ],
+  "cc": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i"
+  ],
+  "Qd": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Uc": [
+    "a",
+    "b",
+    "c"
+  ],
+  "ie": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "uc": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g"
+  ],
+  "jd": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f"
+  ],
+  "Qc": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Za": [
+    "a"
+  ],
+  "Wb": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i"
+  ],
+  "Ib": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Ab": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Kb": [
+    "a",
+    "b",
+    "c"
+  ],
+  "qe": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "ob": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Zb": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g"
+  ],
+  "Yb": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f"
+  ],
+  "Md": [
+    "a",
+    "b",
+    "c"
+  ],
+  "_d": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "$c": [
+    "a",
+    "b"
+  ],
+  "id": [
+    "a",
+    "b"
+  ],
+  "Ic": [
+    "a",
+    "b"
+  ],
+  "xb": [
+    "a"
+  ],
+  "Zd": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "yb": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h"
+  ],
+  "gc": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "mb": [
+    "a"
+  ],
+  "Tc": [
+    "a",
+    "b",
+    "c"
+  ],
+  "re": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Ma": [
+    "a"
+  ],
+  "Mc": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+  ],
+  "$b": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Ha": [
+    "a",
+    "b"
+  ],
+  "pe": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "ic": [
+    "a",
+    "b",
+    "c"
+  ],
+  "hb": [
+    "a",
+    "b"
+  ],
+  "wd": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Ad": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Ja": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Ua": [
+    "a"
+  ],
+  "ac": [
+    "a",
+    "b"
+  ],
+  "be": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Vb": [
+    "a"
+  ],
+  "bc": [
+    "a",
+    "b"
+  ],
+  "Tb": [
+    "a",
+    "b"
+  ],
+  "Jb": [
+    "a",
+    "b",
+    "c"
+  ],
+  "ue": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Lc": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+  ],
+  "he": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Cd": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Ld": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Bc": [
+    "a"
+  ],
+  "Fc": [
+    "a",
+    "b"
+  ],
+  "Ob": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "nb": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f"
+  ],
+  "yd": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "ad": [
+    "a",
+    "b"
+  ],
+  "qd": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "zc": [
+    "a"
+  ],
+  "de": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Db": [
+    "a",
+    "b",
+    "c"
+  ],
+  "je": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "kb": [
+    "a"
+  ],
+  "Bd": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "sc": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "ee": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "ld": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Ca": [
+    "a"
+  ],
+  "vd": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Nb": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Gc": [
+    "a"
+  ],
+  "Lb": [],
+  "ub": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f"
+  ],
+  "vc": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+  ],
+  "oe": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Hc": [
+    "a",
+    "b"
+  ],
+  "xd": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "$d": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "le": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "fc": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Gd": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Ba": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Dd": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "me": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "hc": [
+    "a"
+  ],
+  "Nd": [
+    "a",
+    "b",
+    "c"
+  ],
+  "ne": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "qc": [
+    "a",
+    "b"
+  ],
+  "se": [],
+  "Eb": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Ae": [
+    "a",
+    "b",
+    "c"
+  ],
+  "fb": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Nc": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Cc": [
+    "a"
+  ],
+  "Ka": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h"
+  ],
+  "zb": [
+    "a",
+    "b"
+  ],
+  "hd": [
+    "a",
+    "b",
+    "c"
+  ],
+  "td": [
+    "a",
+    "b",
+    "c"
+  ],
+  "_b": [
+    "a"
+  ],
+  "Sa": [
+    "a",
+    "b"
+  ],
+  "zd": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Da": [
+    "a",
+    "b",
+    "c"
+  ],
+  "fe": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "dc": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Cb": [
+    "a",
+    "b",
+    "c"
+  ],
+  "xc": [
+    "a",
+    "b"
+  ],
+  "Xc": [
+    "a"
+  ],
+  "Yc": [
+    "a"
+  ],
+  "ab": [
+    "a",
+    "b",
+    "c"
+  ],
+  "bd": [
+    "a",
+    "b"
+  ],
+  "Ed": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Xa": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Dc": [
+    "a"
+  ],
+  "tc": [
+    "a"
+  ],
+  "rc": [
+    "a",
+    "b"
+  ],
+  "Sd": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Va": [
+    "a"
+  ],
+  "Rd": [
+    "a",
+    "b",
+    "c"
+  ],
+  "sd": [
+    "a",
+    "b",
+    "c"
+  ],
+  "we": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Wa": [
+    "a"
+  ],
+  "ec": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "cb": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Na": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+  ],
+  "te": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Fb": [
+    "a"
+  ],
+  "jc": [
+    "a"
+  ],
+  "ud": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Wd": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Vd": [
+    "a",
+    "b",
+    "c"
+  ],
+  "cd": [
+    "a",
+    "b"
+  ],
+  "gd": [
+    "a",
+    "b"
+  ],
+  "Jc": [
+    "a",
+    "b"
+  ],
+  "md": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "oc": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "nc": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Mb": [
+    "a",
+    "b"
+  ],
+  "Ra": [
+    "a"
+  ],
+  "mc": [
+    "a",
+    "b"
+  ],
+  "Zc": [
+    "a"
+  ],
+  "tb": [
+    "a",
+    "b"
+  ],
+  "vb": [
+    "a",
+    "b"
+  ],
+  "ce": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "lc": [],
+  "Rb": [
+    "a",
+    "b"
+  ],
+  "rb": [],
+  "Kd": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k"
+  ],
+  "gb": [
+    "a"
+  ],
+  "Qb": [
+    "a",
+    "b"
+  ],
+  "rd": [
+    "a",
+    "b",
+    "c"
+  ],
+  "ge": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "lb": [
+    "a"
+  ],
+  "Vc": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Ta": [
+    "a"
+  ],
+  "Oc": [
+    "a",
+    "b"
+  ],
+  "ib": [
+    "a"
+  ],
+  "Pd": [
+    "a",
+    "b"
+  ],
+  "Ea": [
+    "a",
+    "b"
+  ],
+  "Ga": [
+    "a",
+    "b",
+    "c"
+  ],
+  "ze": [
+    "a"
+  ],
+  "$a": [
+    "a"
+  ],
+  "Sc": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g"
+  ],
+  "Oa": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Id": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Jd": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f"
+  ],
+  "yc": [
+    "a",
+    "b"
+  ],
+  "Sb": [
+    "a"
+  ],
+  "Fd": [
+    "a",
+    "b",
+    "c"
+  ],
+  "wc": [
+    "a"
+  ],
+  "qb": [
+    "a"
+  ],
+  "kd": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "_a": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h"
+  ],
+  "Pc": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+  ],
+  "pc": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Ya": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Hb": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Hd": [
+    "a",
+    "b",
+    "c"
+  ],
+  "ve": [
+    "a"
+  ],
+  "sb": [
+    "a",
+    "b",
+    "c"
+  ],
+  "ae": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Pa": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h"
+  ],
+  "Ac": [
+    "a"
+  ],
+  "Yd": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Xd": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Ud": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Td": [
+    "a",
+    "b",
+    "c"
+  ],
+  "ye": [
+    "a",
+    "b",
+    "c"
+  ],
+  "La": [
+    "a",
+    "b",
+    "c"
+  ],
+  "ke": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Pb": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Kc": [
+    "a",
+    "b",
+    "c"
+  ],
+  "xe": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "Fa": [
+    "a"
+  ],
+  "Od": [
+    "a",
+    "b"
+  ],
+  "Ec": [
+    "a",
+    "b",
+    "c"
+  ],
+  "kc": [
+    "a"
+  ],
+  "ed": [
+    "a"
+  ],
+  "wb": [
+    "a"
+  ],
+  "od": [
+    "a",
+    "b"
+  ],
+  "nd": [
+    "a",
+    "b"
+  ],
+  "Bb": [
+    "a"
+  ],
+  "bb": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Wc": [
+    "a",
+    "b"
+  ],
+  "pb": [
+    "a"
+  ],
+  "Ia": [
+    "a"
+  ],
+  "fd": [
+    "a"
+  ],
+  "Gb": [],
+  "Ub": [
+    "a",
+    "b"
+  ],
+  "eb": [
+    "a"
+  ],
+  "Rc": [
+    "a"
+  ],
+  "Qa": [
+    "a"
+  ],
+  "dd": [],
+  "sa": [],
+  "xa": [
+    "ya"
+  ],
+  "updateMemoryViews": [],
+  "preRun": [],
+  "initRuntime": [],
+  "postRun": [],
+  "abort": [
+    "what"
+  ],
+  "findWasmBinary": [
+    "file"
+  ],
+  "getBinarySync": [
+    "file"
+  ],
+  "instantiateSync": [
+    "file",
+    "info"
+  ],
+  "getWasmImports": [],
+  "createWasm": [],
+  "receiveInstance": [
+    "instance",
+    "module"
+  ],
+  "ExitStatus": {
+    "name": [],
+    "constructor": [
+      "status"
+    ]
+  },
+  "callRuntimeCallbacks": [
+    "callbacks"
+  ],
+  "addOnPostRun": [
+    "cb"
+  ],
+  "addOnPreRun": [
+    "cb"
+  ],
+  "__abort_js": [],
+  "__emscripten_runtime_keepalive_clear": [],
+  "handleException": [
+    "e"
+  ],
+  "keepRuntimeAlive": [],
+  "_proc_exit": [
+    "code"
+  ],
+  "exitJS": [
+    "status",
+    "implicit"
+  ],
+  "maybeExit": [],
+  "callUserCallback": [
+    "func"
+  ],
+  "_emscripten_get_now": [],
+  "__setitimer_js": [
+    "which",
+    "timeout_ms"
+  ],
+  "_copy_pixels_1": [
+    "compG_ptr",
+    "nb_pixels"
+  ],
+  "_copy_pixels_3": [
+    "compR_ptr",
+    "compG_ptr",
+    "compB_ptr",
+    "nb_pixels"
+  ],
+  "_copy_pixels_4": [
+    "compR_ptr",
+    "compG_ptr",
+    "compB_ptr",
+    "compA_ptr",
+    "nb_pixels"
+  ],
+  "getHeapMax": [],
+  "alignMemory": [
+    "size",
+    "alignment"
+  ],
+  "growMemory": [
+    "size"
+  ],
+  "_emscripten_resize_heap": [
+    "requestedSize"
+  ],
+  "getExecutableName": [],
+  "getEnvStrings": [],
+  "stringToUTF8Array": [
+    "str",
+    "heap",
+    "outIdx",
+    "maxBytesToWrite"
+  ],
+  "stringToUTF8": [
+    "str",
+    "outPtr",
+    "maxBytesToWrite"
+  ],
+  "_environ_get": [
+    "__environ",
+    "environ_buf"
+  ],
+  "lengthBytesUTF8": [
+    "str"
+  ],
+  "_environ_sizes_get": [
+    "penviron_count",
+    "penviron_buf_size"
+  ],
+  "convertI32PairToI53Checked": [
+    "lo",
+    "hi"
+  ],
+  "_fd_seek": [
+    "fd",
+    "offset_low",
+    "offset_high",
+    "whence",
+    "newOffset"
+  ],
+  "findStringEnd": [
+    "heapOrArray",
+    "idx",
+    "maxBytesToRead",
+    "ignoreNul"
+  ],
+  "UTF8ArrayToString": [
+    "heapOrArray",
+    "param",
+    "maxBytesToRead",
+    "ignoreNul"
+  ],
+  "printChar": [
+    "stream",
+    "curr"
+  ],
+  "UTF8ToString": [
+    "ptr",
+    "maxBytesToRead",
+    "ignoreNul"
+  ],
+  "_fd_write": [
+    "fd",
+    "iov",
+    "iovcnt",
+    "pnum"
+  ],
+  "_gray_to_rgba": [
+    "compG_ptr",
+    "nb_pixels"
+  ],
+  "_graya_to_rgba": [
+    "compG_ptr",
+    "compA_ptr",
+    "nb_pixels"
+  ],
+  "_jsPrintWarning": [
+    "message_ptr"
+  ],
+  "_rgb_to_rgba": [
+    "compR_ptr",
+    "compG_ptr",
+    "compB_ptr",
+    "nb_pixels"
+  ],
+  "_storeErrorMessage": [
+    "message_ptr"
+  ],
+  "writeArrayToMemory": [
+    "array",
+    "buffer"
+  ],
+  "assignWasmExports": [
+    "wasmExports"
+  ],
+  "run": [],
+  "doRun": []
+}

@@ -1,0 +1,334 @@
+{
+  "EditorState": {
+    "constructor": [
+      "param"
+    ],
+    "doc": [],
+    "selection": [],
+    "storedMarks": [],
+    "schema": [],
+    "plugins": [],
+    "apply": [
+      "tr"
+    ],
+    "filterTransaction": [
+      "tr",
+      "param"
+    ],
+    "applyTransaction": [
+      "rootTr"
+    ],
+    "applyInner": [
+      "tr"
+    ],
+    "tr": [],
+    "create": [
+      "config"
+    ],
+    "reconfigure": [
+      "config"
+    ],
+    "toJSON": [
+      "pluginFields"
+    ],
+    "fromJSON": [
+      "config",
+      "json",
+      "pluginFields"
+    ]
+  },
+  "Plugin": {
+    "constructor": [
+      "param"
+    ],
+    "props": [],
+    "key": [],
+    "getState": [
+      "state"
+    ]
+  },
+  "PluginKey": {
+    "key": [],
+    "constructor": [
+      "param"
+    ],
+    "get": [
+      "state"
+    ],
+    "getState": [
+      "state"
+    ]
+  },
+  "Transaction": {
+    "time": [],
+    "curSelection": [],
+    "curSelectionFor": [],
+    "updated": [],
+    "meta": [],
+    "storedMarks": [],
+    "constructor": [
+      "state"
+    ],
+    "selection": [],
+    "setSelection": [
+      "selection"
+    ],
+    "selectionSet": [],
+    "setStoredMarks": [
+      "marks"
+    ],
+    "ensureMarks": [
+      "marks"
+    ],
+    "addStoredMark": [
+      "mark"
+    ],
+    "removeStoredMark": [
+      "mark"
+    ],
+    "storedMarksSet": [],
+    "addStep": [
+      "step",
+      "doc"
+    ],
+    "setTime": [
+      "time"
+    ],
+    "replaceSelection": [
+      "slice"
+    ],
+    "replaceSelectionWith": [
+      "node",
+      "param"
+    ],
+    "deleteSelection": [],
+    "insertText": [
+      "text",
+      "from",
+      "to"
+    ],
+    "setMeta": [
+      "key",
+      "value"
+    ],
+    "getMeta": [
+      "key"
+    ],
+    "isGeneric": [],
+    "scrollIntoView": [],
+    "scrolledIntoView": []
+  },
+  "Selection": {
+    "constructor": [
+      "param",
+      "param",
+      "ranges"
+    ],
+    "ranges": [],
+    "anchor": [],
+    "head": [],
+    "from": [],
+    "to": [],
+    "$from": [],
+    "$to": [],
+    "empty": [],
+    "eq": [
+      "selection"
+    ],
+    "map": [
+      "doc",
+      "mapping"
+    ],
+    "content": [],
+    "replace": [
+      "tr",
+      "param"
+    ],
+    "replaceWith": [
+      "tr",
+      "node"
+    ],
+    "toJSON": [],
+    "findFrom": [
+      "$pos",
+      "dir",
+      "param"
+    ],
+    "near": [
+      "$pos",
+      "param"
+    ],
+    "atStart": [
+      "doc"
+    ],
+    "atEnd": [
+      "doc"
+    ],
+    "fromJSON": [
+      "doc",
+      "json"
+    ],
+    "jsonID": [
+      "id",
+      "selectionClass"
+    ],
+    "getBookmark": [],
+    "visible": []
+  },
+  "SelectionRange": {
+    "constructor": [
+      "param",
+      "param"
+    ]
+  },
+  "TextSelection": {
+    "constructor": [
+      "$anchor",
+      "param"
+    ],
+    "$cursor": [],
+    "map": [
+      "doc",
+      "mapping"
+    ],
+    "replace": [
+      "tr",
+      "param"
+    ],
+    "eq": [
+      "other"
+    ],
+    "getBookmark": [],
+    "toJSON": [],
+    "fromJSON": [
+      "doc",
+      "json"
+    ],
+    "create": [
+      "doc",
+      "anchor",
+      "param"
+    ],
+    "between": [
+      "$anchor",
+      "$head",
+      "bias"
+    ]
+  },
+  "TextBookmark": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "map": [
+      "mapping"
+    ],
+    "resolve": [
+      "doc"
+    ]
+  },
+  "NodeSelection": {
+    "constructor": [
+      "$pos"
+    ],
+    "node": [],
+    "map": [
+      "doc",
+      "mapping"
+    ],
+    "content": [],
+    "eq": [
+      "other"
+    ],
+    "toJSON": [],
+    "getBookmark": [],
+    "fromJSON": [
+      "doc",
+      "json"
+    ],
+    "create": [
+      "doc",
+      "from"
+    ],
+    "isSelectable": [
+      "node"
+    ]
+  },
+  "NodeBookmark": {
+    "constructor": [
+      "param"
+    ],
+    "map": [
+      "mapping"
+    ],
+    "resolve": [
+      "doc"
+    ]
+  },
+  "AllSelection": {
+    "constructor": [
+      "doc"
+    ],
+    "replace": [
+      "tr",
+      "param"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "doc"
+    ],
+    "map": [
+      "doc"
+    ],
+    "eq": [
+      "other"
+    ],
+    "getBookmark": []
+  },
+  "checkTextSelection": [
+    "$pos"
+  ],
+  "findSelectionIn": [
+    "doc",
+    "node",
+    "pos",
+    "index",
+    "dir",
+    "param"
+  ],
+  "selectionToInsertionEnd": [
+    "tr",
+    "startLen",
+    "bias"
+  ],
+  "bind": [
+    "f",
+    "self"
+  ],
+  "FieldDesc": {
+    "init": [],
+    "apply": [],
+    "constructor": [
+      "param",
+      "desc",
+      "self"
+    ]
+  },
+  "Configuration": {
+    "fields": [],
+    "plugins": [],
+    "pluginsByKey": [],
+    "constructor": [
+      "param",
+      "plugins"
+    ]
+  },
+  "bindProps": [
+    "obj",
+    "self",
+    "target"
+  ],
+  "createKey": [
+    "name"
+  ]
+}

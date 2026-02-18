@@ -1,0 +1,681 @@
+{
+  "MapResult": {
+    "constructor": [
+      "param",
+      "param",
+      "param"
+    ],
+    "deleted": [],
+    "deletedBefore": [],
+    "deletedAfter": [],
+    "deletedAcross": []
+  },
+  "StepMap": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "recover": [
+      "value"
+    ],
+    "mapResult": [
+      "pos",
+      "param"
+    ],
+    "map": [
+      "pos",
+      "param"
+    ],
+    "_map": [
+      "pos",
+      "assoc",
+      "simple"
+    ],
+    "touches": [
+      "pos",
+      "recover"
+    ],
+    "forEach": [
+      "f"
+    ],
+    "invert": [],
+    "toString": [],
+    "offset": [
+      "n"
+    ],
+    "empty": []
+  },
+  "Mapping": {
+    "constructor": [
+      "maps",
+      "param",
+      "param",
+      "param"
+    ],
+    "maps": [],
+    "_maps": [],
+    "ownData": [],
+    "slice": [
+      "param",
+      "param"
+    ],
+    "appendMap": [
+      "map",
+      "mirrors"
+    ],
+    "appendMapping": [
+      "mapping"
+    ],
+    "getMirror": [
+      "n"
+    ],
+    "setMirror": [
+      "n",
+      "m"
+    ],
+    "appendMappingInverted": [
+      "mapping"
+    ],
+    "invert": [],
+    "map": [
+      "pos",
+      "param"
+    ],
+    "mapResult": [
+      "pos",
+      "param"
+    ],
+    "_map": [
+      "pos",
+      "assoc",
+      "simple"
+    ]
+  },
+  "Step": {
+    "apply": [
+      "doc"
+    ],
+    "getMap": [],
+    "invert": [
+      "doc"
+    ],
+    "map": [
+      "mapping"
+    ],
+    "merge": [
+      "other"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "schema",
+      "json"
+    ],
+    "jsonID": [
+      "id",
+      "stepClass"
+    ]
+  },
+  "StepResult": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "ok": [
+      "doc"
+    ],
+    "fail": [
+      "message"
+    ],
+    "fromReplace": [
+      "doc",
+      "from",
+      "to",
+      "slice"
+    ]
+  },
+  "Transform": {
+    "steps": [],
+    "docs": [],
+    "mapping": [],
+    "constructor": [
+      "param"
+    ],
+    "before": [],
+    "step": [
+      "step"
+    ],
+    "maybeStep": [
+      "step"
+    ],
+    "docChanged": [],
+    "changedRange": [],
+    "addStep": [
+      "step",
+      "doc"
+    ],
+    "replace": [
+      "from",
+      "param",
+      "param"
+    ],
+    "replaceWith": [
+      "from",
+      "to",
+      "content"
+    ],
+    "delete": [
+      "from",
+      "to"
+    ],
+    "insert": [
+      "pos",
+      "content"
+    ],
+    "replaceRange": [
+      "from",
+      "to",
+      "slice"
+    ],
+    "replaceRangeWith": [
+      "from",
+      "to",
+      "node"
+    ],
+    "deleteRange": [
+      "from",
+      "to"
+    ],
+    "lift": [
+      "range",
+      "target"
+    ],
+    "join": [
+      "pos",
+      "param"
+    ],
+    "wrap": [
+      "range",
+      "wrappers"
+    ],
+    "setBlockType": [
+      "from",
+      "param",
+      "type",
+      "param"
+    ],
+    "setNodeMarkup": [
+      "pos",
+      "type",
+      "param",
+      "marks"
+    ],
+    "setNodeAttribute": [
+      "pos",
+      "attr",
+      "value"
+    ],
+    "setDocAttribute": [
+      "attr",
+      "value"
+    ],
+    "addNodeMark": [
+      "pos",
+      "mark"
+    ],
+    "removeNodeMark": [
+      "pos",
+      "mark"
+    ],
+    "split": [
+      "pos",
+      "param",
+      "typesAfter"
+    ],
+    "addMark": [
+      "from",
+      "to",
+      "mark"
+    ],
+    "removeMark": [
+      "from",
+      "to",
+      "mark"
+    ],
+    "clearIncompatible": [
+      "pos",
+      "parentType",
+      "match"
+    ]
+  },
+  "AddMarkStep": {
+    "constructor": [
+      "param",
+      "param",
+      "param"
+    ],
+    "apply": [
+      "doc"
+    ],
+    "invert": [],
+    "map": [
+      "mapping"
+    ],
+    "merge": [
+      "other"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "schema",
+      "json"
+    ]
+  },
+  "RemoveMarkStep": {
+    "constructor": [
+      "param",
+      "param",
+      "param"
+    ],
+    "apply": [
+      "doc"
+    ],
+    "invert": [],
+    "map": [
+      "mapping"
+    ],
+    "merge": [
+      "other"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "schema",
+      "json"
+    ]
+  },
+  "AddNodeMarkStep": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "apply": [
+      "doc"
+    ],
+    "invert": [
+      "doc"
+    ],
+    "map": [
+      "mapping"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "schema",
+      "json"
+    ]
+  },
+  "RemoveNodeMarkStep": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "apply": [
+      "doc"
+    ],
+    "invert": [
+      "doc"
+    ],
+    "map": [
+      "mapping"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "schema",
+      "json"
+    ]
+  },
+  "ReplaceStep": {
+    "constructor": [
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "apply": [
+      "doc"
+    ],
+    "getMap": [],
+    "invert": [
+      "doc"
+    ],
+    "map": [
+      "mapping"
+    ],
+    "merge": [
+      "other"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "schema",
+      "json"
+    ]
+  },
+  "ReplaceAroundStep": {
+    "constructor": [
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "apply": [
+      "doc"
+    ],
+    "getMap": [],
+    "invert": [
+      "doc"
+    ],
+    "map": [
+      "mapping"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "schema",
+      "json"
+    ]
+  },
+  "AttrStep": {
+    "constructor": [
+      "param",
+      "param",
+      "param"
+    ],
+    "apply": [
+      "doc"
+    ],
+    "getMap": [],
+    "invert": [
+      "doc"
+    ],
+    "map": [
+      "mapping"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "schema",
+      "json"
+    ]
+  },
+  "DocAttrStep": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "apply": [
+      "doc"
+    ],
+    "getMap": [],
+    "invert": [
+      "doc"
+    ],
+    "map": [
+      "mapping"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "schema",
+      "json"
+    ]
+  },
+  "makeRecover": [
+    "index",
+    "offset"
+  ],
+  "recoverIndex": [
+    "value"
+  ],
+  "recoverOffset": [
+    "value"
+  ],
+  "mapFragment": [
+    "fragment",
+    "f",
+    "parent"
+  ],
+  "contentBetween": [
+    "doc",
+    "from",
+    "to"
+  ],
+  "addMark": [
+    "tr",
+    "from",
+    "to",
+    "mark"
+  ],
+  "removeMark": [
+    "tr",
+    "from",
+    "to",
+    "mark"
+  ],
+  "clearIncompatible": [
+    "tr",
+    "pos",
+    "parentType",
+    "param",
+    "param"
+  ],
+  "canCut": [
+    "node",
+    "start",
+    "end"
+  ],
+  "liftTarget": [
+    "range"
+  ],
+  "lift": [
+    "tr",
+    "range",
+    "target"
+  ],
+  "findWrapping": [
+    "range",
+    "nodeType",
+    "param",
+    "param"
+  ],
+  "withAttrs": [
+    "type"
+  ],
+  "findWrappingOutside": [
+    "range",
+    "type"
+  ],
+  "findWrappingInside": [
+    "range",
+    "type"
+  ],
+  "wrap": [
+    "tr",
+    "range",
+    "wrappers"
+  ],
+  "setBlockType": [
+    "tr",
+    "from",
+    "to",
+    "type",
+    "attrs"
+  ],
+  "replaceNewlines": [
+    "tr",
+    "node",
+    "pos",
+    "mapFrom"
+  ],
+  "replaceLinebreaks": [
+    "tr",
+    "node",
+    "pos",
+    "mapFrom"
+  ],
+  "canChangeType": [
+    "doc",
+    "pos",
+    "type"
+  ],
+  "setNodeMarkup": [
+    "tr",
+    "pos",
+    "type",
+    "attrs",
+    "marks"
+  ],
+  "canSplit": [
+    "doc",
+    "pos",
+    "param",
+    "typesAfter"
+  ],
+  "split": [
+    "tr",
+    "pos",
+    "param",
+    "typesAfter"
+  ],
+  "canJoin": [
+    "doc",
+    "pos"
+  ],
+  "canAppendWithSubstitutedLinebreaks": [
+    "a",
+    "b"
+  ],
+  "joinable": [
+    "a",
+    "b"
+  ],
+  "joinPoint": [
+    "doc",
+    "pos",
+    "param"
+  ],
+  "join": [
+    "tr",
+    "pos",
+    "depth"
+  ],
+  "insertPoint": [
+    "doc",
+    "pos",
+    "nodeType"
+  ],
+  "dropPoint": [
+    "doc",
+    "pos",
+    "slice"
+  ],
+  "replaceStep": [
+    "doc",
+    "from",
+    "param",
+    "param"
+  ],
+  "fitsTrivially": [
+    "$from",
+    "$to",
+    "slice"
+  ],
+  "Fitter": {
+    "frontier": [],
+    "placed": [],
+    "constructor": [
+      "param",
+      "param",
+      "param"
+    ],
+    "depth": [],
+    "fit": [],
+    "findFittable": [],
+    "openMore": [],
+    "dropNode": [],
+    "placeNodes": [
+      "param"
+    ],
+    "mustMoveInline": [],
+    "findCloseLevel": [
+      "$to"
+    ],
+    "close": [
+      "$to"
+    ],
+    "openFrontierNode": [
+      "type",
+      "param",
+      "content"
+    ],
+    "closeFrontierNode": []
+  },
+  "dropFromFragment": [
+    "fragment",
+    "depth",
+    "count"
+  ],
+  "addToFragment": [
+    "fragment",
+    "depth",
+    "content"
+  ],
+  "contentAt": [
+    "fragment",
+    "depth"
+  ],
+  "closeNodeStart": [
+    "node",
+    "openStart",
+    "openEnd"
+  ],
+  "contentAfterFits": [
+    "$to",
+    "depth",
+    "type",
+    "match",
+    "open"
+  ],
+  "invalidMarks": [
+    "type",
+    "fragment",
+    "start"
+  ],
+  "definesContent": [
+    "type"
+  ],
+  "replaceRange": [
+    "tr",
+    "from",
+    "to",
+    "slice"
+  ],
+  "closeFragment": [
+    "fragment",
+    "depth",
+    "oldOpen",
+    "newOpen",
+    "parent"
+  ],
+  "replaceRangeWith": [
+    "tr",
+    "from",
+    "to",
+    "node"
+  ],
+  "deleteRange": [
+    "tr",
+    "from",
+    "to"
+  ],
+  "coveredDepths": [
+    "$from",
+    "$to"
+  ]
+}

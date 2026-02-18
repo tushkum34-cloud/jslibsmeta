@@ -1,0 +1,767 @@
+{
+  "_handleAddress": [
+    "tokens",
+    "depth"
+  ],
+  "_regexHandler": [
+    "address"
+  ],
+  "Tokenizer": {
+    "constructor": [
+      "str"
+    ],
+    "tokenize": [],
+    "checkChar": [
+      "chr",
+      "nextChr"
+    ]
+  },
+  "addressparser": [
+    "str",
+    "options"
+  ],
+  "walkAddressList": [
+    "list"
+  ],
+  "encode": [
+    "buffer"
+  ],
+  "wrap": [
+    "str",
+    "lineLength"
+  ],
+  "Encoder": {
+    "constructor": [
+      "options"
+    ],
+    "_transform": [
+      "chunk",
+      "encoding",
+      "done"
+    ],
+    "_flush": [
+      "done"
+    ]
+  },
+  "DKIMSigner": {
+    "constructor": [
+      "options",
+      "keys",
+      "input",
+      "output"
+    ],
+    "cleanup": [],
+    "createReadCache": [],
+    "sendNextChunk": [],
+    "sendSignedOutput": [],
+    "createWriteCache": [],
+    "signStream": []
+  },
+  "signNextKey": [],
+  "DKIM": {
+    "constructor": [
+      "options"
+    ],
+    "sign": [
+      "input",
+      "extraOptions"
+    ]
+  },
+  "MessageParser": {
+    "constructor": [
+      "options"
+    ],
+    "updateLastBytes": [
+      "data"
+    ],
+    "checkHeaders": [
+      "data"
+    ],
+    "_transform": [
+      "chunk",
+      "encoding",
+      "callback"
+    ],
+    "_flush": [
+      "callback"
+    ],
+    "parseHeaders": []
+  },
+  "RelaxedBody": {
+    "constructor": [
+      "options"
+    ],
+    "updateHash": [
+      "chunk"
+    ],
+    "_transform": [
+      "chunk",
+      "encoding",
+      "callback"
+    ],
+    "_flush": [
+      "callback"
+    ]
+  },
+  "generateDKIMHeader": [
+    "domainName",
+    "keySelector",
+    "fieldNames",
+    "hashAlgo",
+    "bodyHash"
+  ],
+  "relaxedHeaders": [
+    "headers",
+    "fieldNames",
+    "skipFields"
+  ],
+  "relaxedHeaderLine": [
+    "line"
+  ],
+  "Cookies": {
+    "constructor": [
+      "options"
+    ],
+    "set": [
+      "cookieStr",
+      "url"
+    ],
+    "get": [
+      "url"
+    ],
+    "list": [
+      "url"
+    ],
+    "parse": [
+      "cookieStr"
+    ],
+    "match": [
+      "cookie",
+      "url"
+    ],
+    "add": [
+      "cookie"
+    ],
+    "compare": [
+      "a",
+      "b"
+    ],
+    "isExpired": [
+      "cookie"
+    ],
+    "getPath": [
+      "pathname"
+    ]
+  },
+  "nmfetch": [
+    "url",
+    "options"
+  ],
+  "JSONTransport": {
+    "constructor": [
+      "options"
+    ],
+    "send": [
+      "mail",
+      "done"
+    ]
+  },
+  "MailComposer": {
+    "constructor": [
+      "mail"
+    ],
+    "compile": [],
+    "getAttachments": [
+      "findRelated"
+    ],
+    "getAlternatives": [],
+    "_createMixed": [
+      "parentNode"
+    ],
+    "_createAlternative": [
+      "parentNode"
+    ],
+    "_createRelated": [
+      "parentNode"
+    ],
+    "_createContentNode": [
+      "parentNode",
+      "element"
+    ],
+    "_processDataUrl": [
+      "element"
+    ]
+  },
+  "Mail": {
+    "constructor": [
+      "transporter",
+      "options",
+      "defaults"
+    ],
+    "use": [
+      "step",
+      "plugin"
+    ],
+    "sendMail": [
+      "data",
+      "param"
+    ],
+    "getVersionString": [],
+    "_processPlugins": [
+      "step",
+      "mail",
+      "callback"
+    ],
+    "setupProxy": [
+      "proxyUrl"
+    ],
+    "_convertDataImages": [
+      "mail",
+      "callback"
+    ],
+    "set": [
+      "key",
+      "value"
+    ],
+    "get": [
+      "key"
+    ]
+  },
+  "processPlugins": [],
+  "connect": [
+    "ipaddress"
+  ],
+  "MailMessage": {
+    "constructor": [
+      "mailer",
+      "data"
+    ],
+    "resolveContent": [
+      "param"
+    ],
+    "resolveAll": [
+      "callback"
+    ],
+    "normalize": [
+      "callback"
+    ],
+    "setMailerHeader": [],
+    "setPriorityHeaders": [],
+    "setListHeaders": [],
+    "_getListHeaders": [
+      "listData"
+    ],
+    "_formatListUrl": [
+      "url"
+    ]
+  },
+  "resolveNext": [],
+  "MimeNode": {
+    "constructor": [
+      "contentType",
+      "options"
+    ],
+    "createChild": [
+      "contentType",
+      "options"
+    ],
+    "appendChild": [
+      "childNode"
+    ],
+    "replace": [
+      "node"
+    ],
+    "remove": [],
+    "setHeader": [
+      "key",
+      "value"
+    ],
+    "addHeader": [
+      "key",
+      "value"
+    ],
+    "getHeader": [
+      "key"
+    ],
+    "setContent": [
+      "content"
+    ],
+    "build": [
+      "callback"
+    ],
+    "getTransferEncoding": [],
+    "buildHeaders": [],
+    "createReadStream": [
+      "options"
+    ],
+    "transform": [
+      "transform"
+    ],
+    "processFunc": [
+      "processFunc"
+    ],
+    "stream": [
+      "outputStream",
+      "options",
+      "done"
+    ],
+    "setEnvelope": [
+      "envelope"
+    ],
+    "getAddresses": [],
+    "getEnvelope": [],
+    "messageId": [],
+    "setRaw": [
+      "raw"
+    ],
+    "_getStream": [
+      "content"
+    ],
+    "_parseAddresses": [
+      "addresses"
+    ],
+    "_normalizeHeaderKey": [
+      "key"
+    ],
+    "_handleContentType": [
+      "structured"
+    ],
+    "_generateBoundary": [],
+    "_encodeHeaderValue": [
+      "key",
+      "value"
+    ],
+    "_convertAddresses": [
+      "addresses",
+      "uniqueList"
+    ],
+    "_normalizeAddress": [
+      "address"
+    ],
+    "_encodeAddressName": [
+      "name"
+    ],
+    "_encodeWords": [
+      "value"
+    ],
+    "_getTextEncoding": [
+      "value"
+    ],
+    "_generateMessageId": []
+  },
+  "callback": [],
+  "finalize": [],
+  "processChildNode": [],
+  "sendContent": [],
+  "createStream": [],
+  "LastNewline": {
+    "constructor": [],
+    "_transform": [
+      "chunk",
+      "encoding",
+      "done"
+    ],
+    "_flush": [
+      "done"
+    ]
+  },
+  "LeWindows": {
+    "constructor": [
+      "options"
+    ],
+    "_transform": [
+      "chunk",
+      "encoding",
+      "done"
+    ]
+  },
+  "error": [
+    "type"
+  ],
+  "map": [
+    "array",
+    "callback"
+  ],
+  "mapDomain": [
+    "domain",
+    "callback"
+  ],
+  "ucs2decode": [
+    "string"
+  ],
+  "ucs2encode": [
+    "codePoints"
+  ],
+  "basicToDigit": [
+    "codePoint"
+  ],
+  "digitToBasic": [
+    "digit",
+    "flag"
+  ],
+  "adapt": [
+    "delta",
+    "numPoints",
+    "firstTime"
+  ],
+  "decode": [
+    "input"
+  ],
+  "toUnicode": [
+    "input"
+  ],
+  "toASCII": [
+    "input"
+  ],
+  "checkRanges": [
+    "nr",
+    "ranges"
+  ],
+  "SendmailTransport": {
+    "constructor": [
+      "options"
+    ],
+    "send": [
+      "mail",
+      "done"
+    ]
+  },
+  "SESTransport": {
+    "constructor": [
+      "options"
+    ],
+    "getRegion": [
+      "cb"
+    ],
+    "send": [
+      "mail",
+      "callback"
+    ],
+    "verify": [
+      "callback"
+    ]
+  },
+  "getRawMessage": [
+    "next"
+  ],
+  "cb": [
+    "err"
+  ],
+  "isFamilySupported": [
+    "family",
+    "allowInternal"
+  ],
+  "resolver": [
+    "family",
+    "hostname",
+    "options",
+    "callback"
+  ],
+  "formatDNSValue": [
+    "value",
+    "extra"
+  ],
+  "resolveStream": [
+    "stream",
+    "callback"
+  ],
+  "createDefaultLogger": [
+    "levels"
+  ],
+  "print": [
+    "level",
+    "entry",
+    "message",
+    "param"
+  ],
+  "DataStream": {
+    "constructor": [
+      "options"
+    ],
+    "_transform": [
+      "chunk",
+      "encoding",
+      "done"
+    ],
+    "_flush": [
+      "done"
+    ]
+  },
+  "httpProxyClient": [
+    "proxyUrl",
+    "destinationPort",
+    "destinationHost",
+    "callback"
+  ],
+  "tempSocketErr": [
+    "err"
+  ],
+  "timeoutErr": [],
+  "onSocketData": [
+    "chunk"
+  ],
+  "TEARDOWN_NOOP": [],
+  "SMTPConnection": {
+    "constructor": [
+      "options"
+    ],
+    "connect": [
+      "connectCallback"
+    ],
+    "_connectToHost": [
+      "opts",
+      "secure"
+    ],
+    "_setupConnectionHandlers": [],
+    "_onConnectionError": [
+      "err",
+      "code"
+    ],
+    "quit": [],
+    "close": [],
+    "login": [
+      "authData",
+      "callback"
+    ],
+    "send": [
+      "envelope",
+      "message",
+      "done"
+    ],
+    "reset": [
+      "callback"
+    ],
+    "_onConnect": [],
+    "_onData": [
+      "chunk"
+    ],
+    "_onError": [
+      "err",
+      "type",
+      "data",
+      "command"
+    ],
+    "_formatError": [
+      "message",
+      "type",
+      "response",
+      "command"
+    ],
+    "_onClose": [],
+    "_onEnd": [],
+    "_onTimeout": [],
+    "_destroy": [],
+    "_upgradeConnection": [
+      "callback"
+    ],
+    "_processResponse": [],
+    "_sendCommand": [
+      "str",
+      "logStr"
+    ],
+    "_setEnvelope": [
+      "envelope",
+      "callback"
+    ],
+    "_setDsnEnvelope": [
+      "params"
+    ],
+    "_getDsnRcptToArgs": [],
+    "_createSendStream": [
+      "callback"
+    ],
+    "_actionGreeting": [
+      "str"
+    ],
+    "_actionLHLO": [
+      "str"
+    ],
+    "_actionEHLO": [
+      "str"
+    ],
+    "_actionHELO": [
+      "str"
+    ],
+    "_actionSTARTTLS": [
+      "str"
+    ],
+    "_actionAUTH_LOGIN_USER": [
+      "str",
+      "callback"
+    ],
+    "_actionAUTH_CRAM_MD5": [
+      "str",
+      "callback"
+    ],
+    "_actionAUTH_CRAM_MD5_PASS": [
+      "str",
+      "callback"
+    ],
+    "_actionAUTH_LOGIN_PASS": [
+      "str",
+      "callback"
+    ],
+    "_actionAUTHComplete": [
+      "str",
+      "isRetry",
+      "callback"
+    ],
+    "_actionMAIL": [
+      "str",
+      "callback"
+    ],
+    "_actionRCPT": [
+      "str",
+      "callback"
+    ],
+    "_actionDATA": [
+      "str",
+      "callback"
+    ],
+    "_actionSMTPStream": [
+      "str",
+      "callback"
+    ],
+    "_actionLMTPStream": [
+      "recipient",
+      "final",
+      "str",
+      "callback"
+    ],
+    "_handleXOauth2Token": [
+      "isRetry",
+      "callback"
+    ],
+    "_isDestroyedMessage": [
+      "command"
+    ],
+    "_getHostname": []
+  },
+  "resolve": [],
+  "reject": [
+    "err"
+  ],
+  "SMTPPool": {
+    "constructor": [
+      "options"
+    ],
+    "getSocket": [
+      "options",
+      "callback"
+    ],
+    "send": [
+      "mail",
+      "callback"
+    ],
+    "close": [],
+    "_processMessages": [],
+    "_createConnection": [],
+    "_shouldRequeuOnConnectionClose": [
+      "queueEntry"
+    ],
+    "_failDeliveryOnConnectionClose": [
+      "connection"
+    ],
+    "_requeueEntryOnConnectionClose": [
+      "connection"
+    ],
+    "_continueProcessing": [],
+    "_removeConnection": [
+      "connection"
+    ],
+    "_checkRateLimit": [
+      "callback"
+    ],
+    "_clearRateLimit": [],
+    "isIdle": [],
+    "verify": [
+      "callback"
+    ]
+  },
+  "invokeCallbacks": [],
+  "PoolResource": {
+    "constructor": [
+      "pool"
+    ],
+    "connect": [
+      "callback"
+    ],
+    "send": [
+      "mail",
+      "callback"
+    ],
+    "close": []
+  },
+  "SMTPTransport": {
+    "constructor": [
+      "options"
+    ],
+    "getSocket": [
+      "options",
+      "callback"
+    ],
+    "getAuth": [
+      "authOpts"
+    ],
+    "send": [
+      "mail",
+      "callback"
+    ],
+    "verify": [
+      "callback"
+    ],
+    "close": []
+  },
+  "sendMessage": [],
+  "StreamTransport": {
+    "constructor": [
+      "options"
+    ],
+    "send": [
+      "mail",
+      "done"
+    ]
+  },
+  "normalizeKey": [
+    "key"
+  ],
+  "normalizeService": [
+    "service"
+  ],
+  "XOAuth2": {
+    "constructor": [
+      "options",
+      "logger"
+    ],
+    "getToken": [
+      "renew",
+      "callback"
+    ],
+    "updateToken": [
+      "accessToken",
+      "timeout"
+    ],
+    "generateToken": [
+      "callback"
+    ],
+    "buildXOAuth2Token": [
+      "accessToken"
+    ],
+    "postRequest": [
+      "url",
+      "payload",
+      "params",
+      "callback"
+    ],
+    "toBase64URL": [
+      "data"
+    ],
+    "jwtSignRS256": [
+      "payload"
+    ]
+  },
+  "generateCallback": [
+    "err",
+    "accessToken"
+  ]
+}
