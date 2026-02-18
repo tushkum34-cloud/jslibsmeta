@@ -1,0 +1,719 @@
+{
+  "__typeError": [
+    "msg"
+  ],
+  "__accessCheck": [
+    "obj",
+    "member",
+    "msg"
+  ],
+  "__privateGet": [
+    "obj",
+    "member",
+    "getter"
+  ],
+  "__privateAdd": [
+    "obj",
+    "member",
+    "value"
+  ],
+  "__privateSet": [
+    "obj",
+    "member",
+    "value",
+    "setter"
+  ],
+  "__privateMethod": [
+    "obj",
+    "member",
+    "method"
+  ],
+  "__privateWrapper": [
+    "obj",
+    "member",
+    "setter",
+    "getter"
+  ],
+  "FocusManager": {
+    "constructor": [],
+    "onSubscribe": [],
+    "onUnsubscribe": [],
+    "setEventListener": [
+      "setup"
+    ],
+    "setFocused": [
+      "focused"
+    ],
+    "onFocus": [],
+    "isFocused": []
+  },
+  "listener": [],
+  "QueryObserver": {
+    "constructor": [
+      "client",
+      "param"
+    ],
+    "bindMethods": [],
+    "onSubscribe": [],
+    "onUnsubscribe": [],
+    "shouldFetchOnReconnect": [],
+    "shouldFetchOnWindowFocus": [],
+    "destroy": [],
+    "setOptions": [
+      "options"
+    ],
+    "getOptimisticResult": [
+      "options"
+    ],
+    "getCurrentResult": [],
+    "trackResult": [
+      "result",
+      "onPropTracked"
+    ],
+    "trackProp": [
+      "key"
+    ],
+    "getCurrentQuery": [],
+    "refetch": [
+      "param"
+    ],
+    "fetchOptimistic": [
+      "options"
+    ],
+    "fetch": [
+      "fetchOptions"
+    ],
+    "createResult": [
+      "query",
+      "options"
+    ],
+    "updateResult": [],
+    "onQueryUpdate": []
+  },
+  "Query": {
+    "queryKey": [],
+    "queryHash": [],
+    "options": [],
+    "state": [],
+    "observers": [],
+    "constructor": [
+      "config"
+    ],
+    "meta": [],
+    "promise": [],
+    "setOptions": [
+      "options"
+    ],
+    "optionalRemove": [],
+    "setData": [
+      "newData",
+      "options"
+    ],
+    "setState": [
+      "state",
+      "setStateOptions"
+    ],
+    "cancel": [
+      "options"
+    ],
+    "destroy": [],
+    "reset": [],
+    "isActive": [],
+    "isDisabled": [],
+    "isStatic": [],
+    "isStale": [],
+    "isStaleByTime": [
+      "param"
+    ],
+    "onFocus": [],
+    "onOnline": [],
+    "addObserver": [
+      "observer"
+    ],
+    "removeObserver": [
+      "observer"
+    ],
+    "getObserversCount": [],
+    "invalidate": [],
+    "fetch": [
+      "options",
+      "fetchOptions"
+    ]
+  },
+  "MutationObserver": {
+    "options": [],
+    "constructor": [
+      "client",
+      "options"
+    ],
+    "bindMethods": [],
+    "setOptions": [
+      "options"
+    ],
+    "onUnsubscribe": [],
+    "onMutationUpdate": [
+      "action"
+    ],
+    "getCurrentResult": [],
+    "reset": [],
+    "mutate": [
+      "variables",
+      "options"
+    ]
+  },
+  "MutationCache": {
+    "constructor": [
+      "param"
+    ],
+    "build": [
+      "client",
+      "options",
+      "state"
+    ],
+    "add": [
+      "mutation"
+    ],
+    "remove": [
+      "mutation"
+    ],
+    "canRun": [
+      "mutation"
+    ],
+    "runNext": [
+      "mutation"
+    ],
+    "clear": [],
+    "getAll": [],
+    "find": [
+      "filters"
+    ],
+    "findAll": [
+      "param"
+    ],
+    "notify": [
+      "event"
+    ],
+    "resumePausedMutations": []
+  },
+  "Mutation": {
+    "state": [],
+    "options": [],
+    "mutationId": [],
+    "constructor": [
+      "config"
+    ],
+    "setOptions": [
+      "options"
+    ],
+    "meta": [],
+    "addObserver": [
+      "observer"
+    ],
+    "removeObserver": [
+      "observer"
+    ],
+    "optionalRemove": [],
+    "continue": [],
+    "execute": [
+      "variables"
+    ]
+  },
+  "QueryCache": {
+    "constructor": [
+      "param"
+    ],
+    "build": [
+      "client",
+      "options",
+      "state"
+    ],
+    "add": [
+      "query"
+    ],
+    "remove": [
+      "query"
+    ],
+    "clear": [],
+    "get": [
+      "queryHash"
+    ],
+    "getAll": [],
+    "find": [
+      "filters"
+    ],
+    "findAll": [
+      "param"
+    ],
+    "notify": [
+      "event"
+    ],
+    "onFocus": [],
+    "onOnline": []
+  },
+  "QueryClient": {
+    "constructor": [
+      "param"
+    ],
+    "mount": [],
+    "unmount": [],
+    "isFetching": [
+      "filters"
+    ],
+    "isMutating": [
+      "filters"
+    ],
+    "getQueryData": [
+      "queryKey"
+    ],
+    "ensureQueryData": [
+      "options"
+    ],
+    "getQueriesData": [
+      "filters"
+    ],
+    "setQueryData": [
+      "queryKey",
+      "updater",
+      "options"
+    ],
+    "setQueriesData": [
+      "filters",
+      "updater",
+      "options"
+    ],
+    "getQueryState": [
+      "queryKey"
+    ],
+    "removeQueries": [
+      "filters"
+    ],
+    "resetQueries": [
+      "filters",
+      "options"
+    ],
+    "cancelQueries": [
+      "filters",
+      "param"
+    ],
+    "invalidateQueries": [
+      "filters",
+      "param"
+    ],
+    "refetchQueries": [
+      "filters",
+      "param"
+    ],
+    "fetchQuery": [
+      "options"
+    ],
+    "prefetchQuery": [
+      "options"
+    ],
+    "fetchInfiniteQuery": [
+      "options"
+    ],
+    "prefetchInfiniteQuery": [
+      "options"
+    ],
+    "ensureInfiniteQueryData": [
+      "options"
+    ],
+    "resumePausedMutations": [],
+    "getQueryCache": [],
+    "getMutationCache": [],
+    "getDefaultOptions": [],
+    "setDefaultOptions": [
+      "options"
+    ],
+    "setQueryDefaults": [
+      "queryKey",
+      "options"
+    ],
+    "getQueryDefaults": [
+      "queryKey"
+    ],
+    "setMutationDefaults": [
+      "mutationKey",
+      "options"
+    ],
+    "getMutationDefaults": [
+      "mutationKey"
+    ],
+    "defaultQueryOptions": [
+      "options"
+    ],
+    "defaultMutationOptions": [
+      "options"
+    ],
+    "clear": []
+  },
+  "CancelledError": {
+    "revert": [],
+    "silent": [],
+    "constructor": [
+      "options"
+    ]
+  },
+  "defaultTransformerFn": [
+    "data"
+  ],
+  "dehydrateMutation": [
+    "mutation"
+  ],
+  "dehydrateQuery": [
+    "query",
+    "serializeData",
+    "shouldRedactErrors"
+  ],
+  "dehydratePromise": [],
+  "defaultShouldDehydrateMutation": [
+    "mutation"
+  ],
+  "defaultShouldDehydrateQuery": [
+    "query"
+  ],
+  "defaultShouldRedactErrors": [
+    "_"
+  ],
+  "dehydrate": [
+    "client",
+    "param"
+  ],
+  "hydrate": [
+    "client",
+    "dehydratedState",
+    "options"
+  ],
+  "infiniteQueryBehavior": [
+    "pages"
+  ],
+  "fetchFn": [],
+  "addSignalProperty": [
+    "object"
+  ],
+  "fetchPage": [
+    "data",
+    "param",
+    "previous"
+  ],
+  "createQueryFnContext": [],
+  "getNextPageParam": [
+    "options",
+    "param"
+  ],
+  "getPreviousPageParam": [
+    "options",
+    "param"
+  ],
+  "hasNextPage": [
+    "options",
+    "data"
+  ],
+  "hasPreviousPage": [
+    "options",
+    "data"
+  ],
+  "InfiniteQueryObserver": {
+    "subscribe": [],
+    "getCurrentResult": [],
+    "fetch": [],
+    "constructor": [
+      "client",
+      "options"
+    ],
+    "bindMethods": [],
+    "setOptions": [
+      "options"
+    ],
+    "getOptimisticResult": [
+      "options"
+    ],
+    "fetchNextPage": [
+      "options"
+    ],
+    "fetchPreviousPage": [
+      "options"
+    ],
+    "createResult": [
+      "query",
+      "options"
+    ]
+  },
+  "onContinue": [],
+  "reducer": [
+    "state"
+  ],
+  "getDefaultState": [
+    "options"
+  ],
+  "scopeFor": [
+    "mutation"
+  ],
+  "createNotifyManager": [],
+  "notifyFn": [
+    "callback"
+  ],
+  "batchNotifyFn": [
+    "callback"
+  ],
+  "schedule": [
+    "callback"
+  ],
+  "flush": [],
+  "OnlineManager": {
+    "constructor": [],
+    "onSubscribe": [],
+    "onUnsubscribe": [],
+    "setEventListener": [
+      "setup"
+    ],
+    "setOnline": [
+      "online"
+    ],
+    "isOnline": []
+  },
+  "onlineListener": [],
+  "offlineListener": [],
+  "QueriesObserver": {
+    "constructor": [
+      "client",
+      "queries",
+      "options"
+    ],
+    "onSubscribe": [],
+    "onUnsubscribe": [],
+    "destroy": [],
+    "setQueries": [
+      "queries",
+      "options"
+    ],
+    "getCurrentResult": [],
+    "getQueries": [],
+    "getObservers": [],
+    "getOptimisticResult": [
+      "queries",
+      "combine"
+    ]
+  },
+  "difference": [
+    "array1",
+    "array2"
+  ],
+  "replaceAt": [
+    "array",
+    "index",
+    "value"
+  ],
+  "createFetchContext": [],
+  "fetchState": [
+    "data",
+    "options"
+  ],
+  "successState": [
+    "data",
+    "dataUpdatedAt"
+  ],
+  "finalizeThenableIfPossible": [
+    "thenable"
+  ],
+  "recreateThenable": [],
+  "shouldNotifyListeners": [],
+  "shouldLoadOnMount": [
+    "query",
+    "options"
+  ],
+  "shouldFetchOnMount": [
+    "query",
+    "options"
+  ],
+  "shouldFetchOn": [
+    "query",
+    "options",
+    "field"
+  ],
+  "shouldFetchOptionally": [
+    "query",
+    "prevQuery",
+    "options",
+    "prevOptions"
+  ],
+  "isStale": [
+    "query",
+    "options"
+  ],
+  "shouldAssignObserverCurrentProperties": [
+    "observer",
+    "optimisticResult"
+  ],
+  "Removable": {
+    "gcTime": [],
+    "destroy": [],
+    "scheduleGc": [],
+    "updateGcTime": [
+      "newGcTime"
+    ],
+    "clearGcTimeout": [],
+    "optionalRemove": []
+  },
+  "defaultRetryDelay": [
+    "failureCount"
+  ],
+  "canFetch": [
+    "networkMode"
+  ],
+  "isCancelledError": [
+    "value"
+  ],
+  "createRetryer": [
+    "config"
+  ],
+  "isResolved": [],
+  "cancel": [
+    "cancelOptions"
+  ],
+  "cancelRetry": [],
+  "continueRetry": [],
+  "canContinue": [],
+  "canStart": [],
+  "resolve": [
+    "value"
+  ],
+  "reject": [
+    "value"
+  ],
+  "pause": [],
+  "run": [],
+  "streamedQuery": [
+    "param"
+  ],
+  "Subscribable": {
+    "listeners": [],
+    "constructor": [],
+    "subscribe": [
+      "listener"
+    ],
+    "hasListeners": [],
+    "onSubscribe": [],
+    "onUnsubscribe": []
+  },
+  "pendingThenable": [],
+  "finalize": [
+    "data"
+  ],
+  "tryResolveSync": [
+    "promise"
+  ],
+  "TimeoutManager": {
+    "setTimeoutProvider": [
+      "provider"
+    ],
+    "setTimeout": [
+      "callback",
+      "delay"
+    ],
+    "clearTimeout": [
+      "timeoutId"
+    ],
+    "setInterval": [
+      "callback",
+      "delay"
+    ],
+    "clearInterval": [
+      "intervalId"
+    ]
+  },
+  "systemSetTimeoutZero": [
+    "callback"
+  ],
+  "noop": [],
+  "functionalUpdate": [
+    "updater",
+    "input"
+  ],
+  "isValidTimeout": [
+    "value"
+  ],
+  "timeUntilStale": [
+    "updatedAt",
+    "staleTime"
+  ],
+  "resolveStaleTime": [
+    "staleTime",
+    "query"
+  ],
+  "resolveEnabled": [
+    "enabled",
+    "query"
+  ],
+  "matchQuery": [
+    "filters",
+    "query"
+  ],
+  "matchMutation": [
+    "filters",
+    "mutation"
+  ],
+  "hashQueryKeyByOptions": [
+    "queryKey",
+    "options"
+  ],
+  "hashKey": [
+    "queryKey"
+  ],
+  "partialMatchKey": [
+    "a",
+    "b"
+  ],
+  "replaceEqualDeep": [
+    "a",
+    "b",
+    "param"
+  ],
+  "shallowEqualObjects": [
+    "a",
+    "b"
+  ],
+  "isPlainArray": [
+    "value"
+  ],
+  "isPlainObject": [
+    "o"
+  ],
+  "hasObjectPrototype": [
+    "o"
+  ],
+  "sleep": [
+    "timeout"
+  ],
+  "replaceData": [
+    "prevData",
+    "data",
+    "options"
+  ],
+  "keepPreviousData": [
+    "previousData"
+  ],
+  "addToEnd": [
+    "items",
+    "item",
+    "param"
+  ],
+  "addToStart": [
+    "items",
+    "item",
+    "param"
+  ],
+  "ensureQueryFn": [
+    "options",
+    "fetchOptions"
+  ],
+  "shouldThrowError": [
+    "throwOnError",
+    "params"
+  ],
+  "addConsumeAwareSignal": [
+    "object",
+    "getSignal",
+    "onCancelled"
+  ]
+}

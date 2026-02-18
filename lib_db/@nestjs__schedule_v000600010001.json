@@ -1,0 +1,162 @@
+{
+  "Cron": [
+    "cronTime",
+    "param"
+  ],
+  "Interval": [
+    "nameOrTimeout",
+    "timeout"
+  ],
+  "Timeout": [
+    "nameOrTimeout",
+    "timeout"
+  ],
+  "SchedulerMetadataAccessor": {
+    "reflector": [],
+    "constructor": [
+      "reflector"
+    ],
+    "getSchedulerType": [
+      "target"
+    ],
+    "getSchedulerName": [
+      "target"
+    ],
+    "getTimeoutMetadata": [
+      "target"
+    ],
+    "getIntervalMetadata": [
+      "target"
+    ],
+    "getCronMetadata": [
+      "target"
+    ],
+    "getMetadata": []
+  },
+  "ScheduleExplorer": {
+    "moduleOptions": [],
+    "schedulerOrchestrator": [],
+    "discoveryService": [],
+    "metadataAccessor": [],
+    "metadataScanner": [],
+    "logger": [],
+    "constructor": [
+      "moduleOptions",
+      "schedulerOrchestrator",
+      "discoveryService",
+      "metadataAccessor",
+      "metadataScanner"
+    ],
+    "onModuleInit": [],
+    "explore": [],
+    "lookupSchedulers": [
+      "instance",
+      "key"
+    ],
+    "warnForNonStaticProviders": [
+      "wrapper",
+      "instance",
+      "key"
+    ],
+    "wrapFunctionInTryCatchBlocks": []
+  },
+  "processMethod": [
+    "name"
+  ],
+  "NO_SCHEDULER_FOUND": [
+    "schedulerName",
+    "name"
+  ],
+  "DUPLICATE_SCHEDULER": [
+    "schedulerName",
+    "name"
+  ],
+  "ScheduleModule": {
+    "forRoot": [
+      "options"
+    ],
+    "forRootAsync": [
+      "options"
+    ],
+    "createAsyncProviders": [],
+    "createAsyncOptionsProvider": []
+  },
+  "SchedulerOrchestrator": {
+    "schedulerRegistry": [],
+    "cronJobs": [],
+    "timeouts": [],
+    "intervals": [],
+    "constructor": [
+      "schedulerRegistry"
+    ],
+    "onApplicationBootstrap": [],
+    "beforeApplicationShutdown": [],
+    "mountIntervals": [],
+    "mountTimeouts": [],
+    "mountCron": [],
+    "clearTimeouts": [],
+    "clearIntervals": [],
+    "closeCronJobs": [],
+    "addTimeout": [
+      "methodRef",
+      "timeout",
+      "name"
+    ],
+    "addInterval": [
+      "methodRef",
+      "timeout",
+      "name"
+    ],
+    "addCron": [
+      "methodRef",
+      "options"
+    ]
+  },
+  "SchedulerRegistry": {
+    "logger": [],
+    "cronJobs": [],
+    "timeouts": [],
+    "intervals": [],
+    "doesExist": [
+      "type",
+      "name"
+    ],
+    "getCronJob": [
+      "name"
+    ],
+    "getInterval": [
+      "name"
+    ],
+    "getTimeout": [
+      "name"
+    ],
+    "addCronJob": [
+      "name",
+      "job"
+    ],
+    "addInterval": [
+      "name",
+      "intervalId"
+    ],
+    "addTimeout": [
+      "name",
+      "timeoutId"
+    ],
+    "getCronJobs": [],
+    "deleteCronJob": [
+      "name"
+    ],
+    "getIntervals": [],
+    "deleteInterval": [
+      "name"
+    ],
+    "getTimeouts": [],
+    "deleteTimeout": [
+      "name"
+    ],
+    "wrapFunctionInTryCatchBlocks": []
+  },
+  "__export": [
+    "m"
+  ]
+}

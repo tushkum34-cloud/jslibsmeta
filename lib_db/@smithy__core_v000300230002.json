@@ -1,0 +1,904 @@
+{
+  "getSmithyContext": [
+    "context"
+  ],
+  "resolveAuthOptions": [
+    "candidateAuthOptions",
+    "authSchemePreference"
+  ],
+  "convertHttpAuthSchemesToMap": [
+    "httpAuthSchemes"
+  ],
+  "httpAuthSchemeMiddleware": [
+    "config",
+    "mwOptions"
+  ],
+  "getHttpAuthSchemeEndpointRuleSetPlugin": [
+    "config",
+    "param"
+  ],
+  "getHttpAuthSchemePlugin": [
+    "config",
+    "param"
+  ],
+  "defaultErrorHandler": [
+    "signingProperties"
+  ],
+  "defaultSuccessHandler": [
+    "httpResponse",
+    "signingProperties"
+  ],
+  "httpSigningMiddleware": [
+    "config"
+  ],
+  "getHttpSigningPlugin": [
+    "config"
+  ],
+  "normalizeProvider": [
+    "input"
+  ],
+  "makePagedClientRequest": [
+    "CommandCtor",
+    "client",
+    "input",
+    "param",
+    "param"
+  ],
+  "createPaginator": [
+    "ClientCtor",
+    "CommandCtor",
+    "inputTokenName",
+    "outputTokenName",
+    "pageSizeTokenName"
+  ],
+  "get": [
+    "fromObject",
+    "path"
+  ],
+  "setFeature": [
+    "context",
+    "feature",
+    "value"
+  ],
+  "DefaultIdentityProviderConfig": {
+    "authSchemes": [],
+    "constructor": [
+      "config"
+    ],
+    "getIdentityProvider": [
+      "schemeId"
+    ]
+  },
+  "HttpApiKeyAuthSigner": {
+    "sign": [
+      "httpRequest",
+      "identity",
+      "signingProperties"
+    ]
+  },
+  "HttpBearerAuthSigner": {
+    "sign": [
+      "httpRequest",
+      "identity",
+      "signingProperties"
+    ]
+  },
+  "NoAuthSigner": {
+    "sign": [
+      "httpRequest",
+      "identity",
+      "signingProperties"
+    ]
+  },
+  "createIsIdentityExpiredFunction": [
+    "expirationMs"
+  ],
+  "doesIdentityRequireRefresh": [
+    "identity"
+  ],
+  "memoizeIdentityProvider": [
+    "provider",
+    "isExpired",
+    "requiresRefresh"
+  ],
+  "coalesceProvider": [
+    "options"
+  ],
+  "alloc": [
+    "size"
+  ],
+  "tag": [
+    "data"
+  ],
+  "setPayload": [
+    "bytes"
+  ],
+  "decode": [
+    "at",
+    "to"
+  ],
+  "bytesToUtf8": [
+    "bytes",
+    "at",
+    "to"
+  ],
+  "demote": [
+    "bigInteger"
+  ],
+  "bytesToFloat16": [
+    "a",
+    "b"
+  ],
+  "decodeCount": [
+    "at",
+    "to"
+  ],
+  "decodeUtf8String": [
+    "at",
+    "to"
+  ],
+  "decodeUtf8StringIndefinite": [
+    "at",
+    "to"
+  ],
+  "decodeUnstructuredByteString": [
+    "at",
+    "to"
+  ],
+  "decodeUnstructuredByteStringIndefinite": [
+    "at",
+    "to"
+  ],
+  "decodeList": [
+    "at",
+    "to"
+  ],
+  "decodeListIndefinite": [
+    "at",
+    "to"
+  ],
+  "decodeMap": [
+    "at",
+    "to"
+  ],
+  "decodeMapIndefinite": [
+    "at",
+    "to"
+  ],
+  "decodeSpecial": [
+    "at",
+    "to"
+  ],
+  "castBigInt": [
+    "bigInt"
+  ],
+  "ensureSpace": [
+    "bytes"
+  ],
+  "toUint8Array": [],
+  "resize": [
+    "size"
+  ],
+  "encodeHeader": [
+    "major",
+    "value"
+  ],
+  "encode": [
+    "_input"
+  ],
+  "parseCborBody": [
+    "streamBody",
+    "context"
+  ],
+  "dateToTag": [
+    "date"
+  ],
+  "parseCborErrorBody": [
+    "errorBody",
+    "context"
+  ],
+  "loadSmithyRpcV2CborErrorCode": [
+    "output",
+    "data"
+  ],
+  "sanitizeErrorCode": [
+    "rawValue"
+  ],
+  "checkCborResponse": [
+    "response"
+  ],
+  "buildHttpRpcRequest": [
+    "context",
+    "headers",
+    "path",
+    "resolvedHostname",
+    "body"
+  ],
+  "CborCodec": {
+    "createSerializer": [],
+    "createDeserializer": []
+  },
+  "CborShapeSerializer": {
+    "value": [],
+    "write": [
+      "schema",
+      "value"
+    ],
+    "serialize": [
+      "schema",
+      "source"
+    ],
+    "flush": []
+  },
+  "CborShapeDeserializer": {
+    "read": [
+      "schema",
+      "bytes"
+    ],
+    "readValue": [
+      "_schema",
+      "value"
+    ]
+  },
+  "SmithyRpcV2CborProtocol": {
+    "compositeErrorRegistry": [],
+    "codec": [],
+    "serializer": [],
+    "deserializer": [],
+    "constructor": [
+      "param"
+    ],
+    "getShapeId": [],
+    "getPayloadCodec": [],
+    "serializeRequest": [
+      "operationSchema",
+      "input",
+      "context"
+    ],
+    "deserializeResponse": [
+      "operationSchema",
+      "context",
+      "response"
+    ],
+    "handleError": [
+      "operationSchema",
+      "context",
+      "response",
+      "dataObject",
+      "metadata"
+    ],
+    "getDefaultContentType": []
+  },
+  "EventStreamSerde": {
+    "marshaller": [],
+    "serializer": [],
+    "deserializer": [],
+    "serdeContext": [],
+    "defaultContentType": [],
+    "constructor": [
+      "param"
+    ],
+    "serializeEventStream": [
+      "param"
+    ],
+    "deserializeEventStream": [
+      "param"
+    ],
+    "writeEventBody": []
+  },
+  "collectBody": [
+    "param",
+    "context"
+  ],
+  "extendedEncodeURIComponent": [
+    "str"
+  ],
+  "SerdeContext": {
+    "serdeContext": [],
+    "setSerdeContext": [
+      "serdeContext"
+    ]
+  },
+  "HttpProtocol": {
+    "options": [],
+    "compositeErrorRegistry": [],
+    "serializer": [],
+    "deserializer": [],
+    "constructor": [
+      "options"
+    ],
+    "getShapeId": [],
+    "getPayloadCodec": [],
+    "getRequestType": [],
+    "getResponseType": [],
+    "setSerdeContext": [
+      "serdeContext"
+    ],
+    "serializeRequest": [
+      "operationSchema",
+      "input",
+      "context"
+    ],
+    "updateServiceEndpoint": [
+      "request",
+      "endpoint"
+    ],
+    "deserializeResponse": [
+      "operationSchema",
+      "context",
+      "response"
+    ],
+    "setHostPrefix": [
+      "request",
+      "operationSchema",
+      "input"
+    ],
+    "handleError": [
+      "operationSchema",
+      "context",
+      "response",
+      "dataObject",
+      "metadata"
+    ],
+    "deserializeMetadata": [
+      "output"
+    ],
+    "serializeEventStream": [
+      "param"
+    ],
+    "deserializeEventStream": [
+      "param"
+    ],
+    "loadEventStreamCapability": [],
+    "getDefaultContentType": [],
+    "deserializeHttpMessage": [
+      "schema",
+      "context",
+      "response",
+      "dataObject"
+    ],
+    "getEventStreamMarshaller": []
+  },
+  "HttpBindingProtocol": {
+    "compositeErrorRegistry": [],
+    "serializeRequest": [
+      "operationSchema",
+      "_input",
+      "context"
+    ],
+    "serializeQuery": [
+      "ns",
+      "data",
+      "query"
+    ],
+    "deserializeResponse": [
+      "operationSchema",
+      "context",
+      "response"
+    ],
+    "deserializeHttpMessage": [
+      "schema",
+      "context",
+      "response",
+      "dataObject"
+    ]
+  },
+  "RpcProtocol": {
+    "compositeErrorRegistry": [],
+    "serializeRequest": [
+      "operationSchema",
+      "input",
+      "context"
+    ],
+    "deserializeResponse": [
+      "operationSchema",
+      "context",
+      "response"
+    ]
+  },
+  "resolvedPath": [
+    "resolvedPath",
+    "input",
+    "memberName",
+    "labelValueProvider",
+    "uriLabel",
+    "isGreedyLabel"
+  ],
+  "requestBuilder": [
+    "input",
+    "context"
+  ],
+  "RequestBuilder": {
+    "input": [],
+    "context": [],
+    "query": [],
+    "method": [],
+    "headers": [],
+    "path": [],
+    "body": [],
+    "hostname": [],
+    "resolvePathStack": [],
+    "constructor": [
+      "input",
+      "context"
+    ],
+    "build": [],
+    "hn": [
+      "hostname"
+    ],
+    "bp": [
+      "uriLabel"
+    ],
+    "p": [
+      "memberName",
+      "labelValueProvider",
+      "uriLabel",
+      "isGreedyLabel"
+    ],
+    "h": [
+      "headers"
+    ],
+    "q": [
+      "query"
+    ],
+    "b": [
+      "body"
+    ],
+    "m": [
+      "method"
+    ]
+  },
+  "determineTimestampFormat": [
+    "ns",
+    "settings"
+  ],
+  "FromStringShapeDeserializer": {
+    "settings": [],
+    "constructor": [
+      "settings"
+    ],
+    "read": [
+      "_schema",
+      "data"
+    ],
+    "base64ToUtf8": []
+  },
+  "HttpInterceptingShapeDeserializer": {
+    "codecDeserializer": [],
+    "stringDeserializer": [],
+    "constructor": [
+      "codecDeserializer",
+      "codecSettings"
+    ],
+    "setSerdeContext": [
+      "serdeContext"
+    ],
+    "read": [
+      "schema",
+      "data"
+    ]
+  },
+  "ToStringShapeSerializer": {
+    "settings": [],
+    "stringBuffer": [],
+    "constructor": [
+      "settings"
+    ],
+    "write": [
+      "schema",
+      "value"
+    ],
+    "flush": []
+  },
+  "HttpInterceptingShapeSerializer": {
+    "codecSerializer": [],
+    "stringSerializer": [],
+    "buffer": [],
+    "constructor": [
+      "codecSerializer",
+      "codecSettings",
+      "stringSerializer"
+    ],
+    "setSerdeContext": [
+      "serdeContext"
+    ],
+    "write": [
+      "schema",
+      "value"
+    ],
+    "flush": []
+  },
+  "deref": [
+    "schemaRef"
+  ],
+  "operation": [
+    "namespace",
+    "name",
+    "traits",
+    "input",
+    "output"
+  ],
+  "schemaDeserializationMiddleware": [
+    "config"
+  ],
+  "findHeader": [
+    "pattern",
+    "headers"
+  ],
+  "schemaSerializationMiddleware": [
+    "config"
+  ],
+  "getSchemaSerdePlugin": [
+    "config"
+  ],
+  "Schema": {
+    "name": [],
+    "namespace": [],
+    "traits": [],
+    "symbol": [],
+    "assign": [
+      "instance",
+      "values"
+    ],
+    "getName": []
+  },
+  "ListSchema": {
+    "symbol": [],
+    "name": [],
+    "traits": [],
+    "valueSchema": []
+  },
+  "list": [
+    "namespace",
+    "name",
+    "traits",
+    "valueSchema"
+  ],
+  "MapSchema": {
+    "symbol": [],
+    "name": [],
+    "traits": [],
+    "keySchema": [],
+    "valueSchema": []
+  },
+  "map": [
+    "namespace",
+    "name",
+    "traits",
+    "keySchema",
+    "valueSchema"
+  ],
+  "OperationSchema": {
+    "symbol": [],
+    "name": [],
+    "traits": [],
+    "input": [],
+    "output": []
+  },
+  "op": [
+    "namespace",
+    "name",
+    "traits",
+    "input",
+    "output"
+  ],
+  "StructureSchema": {
+    "symbol": [],
+    "name": [],
+    "traits": [],
+    "memberNames": [],
+    "memberList": []
+  },
+  "struct": [
+    "namespace",
+    "name",
+    "traits",
+    "memberNames",
+    "memberList"
+  ],
+  "ErrorSchema": {
+    "symbol": [],
+    "ctor": []
+  },
+  "error": [
+    "namespace",
+    "name",
+    "traits",
+    "memberNames",
+    "memberList",
+    "ctor"
+  ],
+  "translateTraits": [
+    "indicator"
+  ],
+  "NormalizedSchema": {
+    "ref": [],
+    "memberName": [],
+    "symbol": [],
+    "name": [],
+    "schema": [],
+    "_isMemberSchema": [],
+    "traits": [],
+    "memberTraits": [],
+    "normalizedTraits": [],
+    "constructor": [],
+    "of": [
+      "ref"
+    ],
+    "getSchema": [],
+    "getName": [
+      "withNamespace"
+    ],
+    "getMemberName": [],
+    "isMemberSchema": [],
+    "isListSchema": [],
+    "isMapSchema": [],
+    "isStructSchema": [],
+    "isUnionSchema": [],
+    "isBlobSchema": [],
+    "isTimestampSchema": [],
+    "isUnitSchema": [],
+    "isDocumentSchema": [],
+    "isStringSchema": [],
+    "isBooleanSchema": [],
+    "isNumericSchema": [],
+    "isBigIntegerSchema": [],
+    "isBigDecimalSchema": [],
+    "isStreaming": [],
+    "isIdempotencyToken": [],
+    "getMergedTraits": [],
+    "getMemberTraits": [],
+    "getOwnTraits": [],
+    "getKeySchema": [],
+    "getValueSchema": [],
+    "getMemberSchema": [
+      "memberName"
+    ],
+    "getMemberSchemas": [],
+    "getEventStreamMember": [],
+    "structIterator": []
+  },
+  "member": [
+    "memberSchema",
+    "memberName"
+  ],
+  "isMemberSchema": [
+    "sc"
+  ],
+  "isStaticSchema": [
+    "sc"
+  ],
+  "SimpleSchema": {
+    "symbol": [],
+    "name": [],
+    "schemaRef": [],
+    "traits": []
+  },
+  "sim": [
+    "namespace",
+    "name",
+    "schemaRef",
+    "traits"
+  ],
+  "simAdapter": [
+    "namespace",
+    "name",
+    "traits",
+    "schemaRef"
+  ],
+  "TypeRegistry": {
+    "namespace": [],
+    "schemas": [],
+    "exceptions": [],
+    "registries": [],
+    "constructor": [],
+    "for": [
+      "namespace"
+    ],
+    "copyFrom": [
+      "other"
+    ],
+    "register": [
+      "shapeId",
+      "schema"
+    ],
+    "getSchema": [
+      "shapeId"
+    ],
+    "registerError": [
+      "es",
+      "ctor"
+    ],
+    "getErrorCtor": [
+      "es"
+    ],
+    "getBaseException": [],
+    "find": [
+      "predicate"
+    ],
+    "clear": [],
+    "normalizeShapeId": []
+  },
+  "copyDocumentWithTransform": [
+    "source",
+    "schemaRef",
+    "param"
+  ],
+  "parseBoolean": [
+    "value"
+  ],
+  "expectBoolean": [
+    "value"
+  ],
+  "expectNumber": [
+    "value"
+  ],
+  "expectFloat32": [
+    "value"
+  ],
+  "expectLong": [
+    "value"
+  ],
+  "expectInt32": [
+    "value"
+  ],
+  "expectShort": [
+    "value"
+  ],
+  "expectByte": [
+    "value"
+  ],
+  "expectSizedInt": [
+    "value",
+    "size"
+  ],
+  "castInt": [
+    "value",
+    "size"
+  ],
+  "expectNonNull": [
+    "value",
+    "location"
+  ],
+  "expectObject": [
+    "value"
+  ],
+  "expectString": [
+    "value"
+  ],
+  "expectUnion": [
+    "value"
+  ],
+  "strictParseDouble": [
+    "value"
+  ],
+  "strictParseFloat32": [
+    "value"
+  ],
+  "parseNumber": [
+    "value"
+  ],
+  "limitedParseDouble": [
+    "value"
+  ],
+  "limitedParseFloat32": [
+    "value"
+  ],
+  "parseFloatString": [
+    "value"
+  ],
+  "strictParseLong": [
+    "value"
+  ],
+  "strictParseInt32": [
+    "value"
+  ],
+  "strictParseShort": [
+    "value"
+  ],
+  "strictParseByte": [
+    "value"
+  ],
+  "stackTraceWarning": [
+    "message"
+  ],
+  "dateToUtcString": [
+    "date"
+  ],
+  "parseRfc3339DateTime": [
+    "value"
+  ],
+  "parseRfc3339DateTimeWithOffset": [
+    "value"
+  ],
+  "parseRfc7231DateTime": [
+    "value"
+  ],
+  "parseEpochTimestamp": [
+    "value"
+  ],
+  "buildDate": [
+    "year",
+    "month",
+    "day",
+    "time"
+  ],
+  "parseTwoDigitYear": [
+    "value"
+  ],
+  "adjustRfc850Year": [
+    "input"
+  ],
+  "parseMonthByShortName": [
+    "value"
+  ],
+  "validateDayOfMonth": [
+    "year",
+    "month",
+    "day"
+  ],
+  "isLeapYear": [
+    "year"
+  ],
+  "parseDateValue": [
+    "value",
+    "type",
+    "lower",
+    "upper"
+  ],
+  "parseMilliseconds": [
+    "value"
+  ],
+  "parseOffsetToMilliseconds": [
+    "value"
+  ],
+  "stripLeadingZeroes": [
+    "value"
+  ],
+  "LazyJsonString": [
+    "val"
+  ],
+  "quoteHeader": [
+    "part"
+  ],
+  "_parseEpochTimestamp": [
+    "value"
+  ],
+  "_parseRfc3339DateTimeWithOffset": [
+    "value"
+  ],
+  "_parseRfc7231DateTime": [
+    "value"
+  ],
+  "range": [
+    "v",
+    "min",
+    "max"
+  ],
+  "splitEvery": [
+    "value",
+    "delimiter",
+    "numDelimiters"
+  ],
+  "splitHeader": [
+    "value"
+  ],
+  "NumericValue": {
+    "string": [],
+    "type": [],
+    "constructor": [
+      "string",
+      "type"
+    ],
+    "toString": []
+  },
+  "nv": [
+    "input"
+  ],
+  "printBytes": [
+    "bytes"
+  ],
+  "pad": [
+    "num"
+  ]
+}

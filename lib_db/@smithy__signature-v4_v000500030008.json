@@ -1,0 +1,132 @@
+{
+  "createScope": [
+    "shortDate",
+    "region",
+    "service"
+  ],
+  "getSigningKey": [
+    "sha256Constructor",
+    "credentials",
+    "shortDate",
+    "region",
+    "service"
+  ],
+  "clearCredentialCache": [],
+  "hmac": [
+    "ctor",
+    "secret",
+    "data"
+  ],
+  "getCanonicalHeaders": [
+    "param",
+    "unsignableHeaders",
+    "signableHeaders"
+  ],
+  "getPayloadHash": [
+    "param",
+    "hashConstructor"
+  ],
+  "HeaderFormatter": {
+    "format": [
+      "headers"
+    ],
+    "formatHeaderValue": []
+  },
+  "Int64": {
+    "bytes": [],
+    "constructor": [
+      "bytes"
+    ],
+    "fromNumber": [
+      "number"
+    ],
+    "valueOf": [],
+    "toString": []
+  },
+  "negate": [
+    "bytes"
+  ],
+  "hasHeader": [
+    "soughtHeader",
+    "headers"
+  ],
+  "moveHeadersToQuery": [
+    "request",
+    "param"
+  ],
+  "prepareRequest": [
+    "request"
+  ],
+  "getCanonicalQuery": [
+    "param"
+  ],
+  "iso8601": [
+    "time"
+  ],
+  "toDate": [
+    "time"
+  ],
+  "SignatureV4Base": {
+    "service": [],
+    "regionProvider": [],
+    "credentialProvider": [],
+    "sha256": [],
+    "uriEscapePath": [],
+    "applyChecksum": [],
+    "constructor": [
+      "param"
+    ],
+    "createCanonicalRequest": [
+      "request",
+      "canonicalHeaders",
+      "payloadHash"
+    ],
+    "createStringToSign": [
+      "longDate",
+      "credentialScope",
+      "canonicalRequest",
+      "algorithmIdentifier"
+    ],
+    "getCanonicalPath": [],
+    "validateResolvedCredentials": [
+      "credentials"
+    ],
+    "formatDate": [
+      "now"
+    ],
+    "getCanonicalHeaderList": [
+      "headers"
+    ]
+  },
+  "SignatureV4": {
+    "headerFormatter": [],
+    "constructor": [
+      "param"
+    ],
+    "presign": [
+      "originalRequest",
+      "options"
+    ],
+    "sign": [
+      "requestToSign",
+      "options"
+    ],
+    "signEvent": [],
+    "signMessage": [
+      "signableMessage",
+      "param"
+    ],
+    "signString": [],
+    "signRequest": [],
+    "getSignature": [],
+    "getSigningKey": []
+  },
+  "getHeaderValue": [
+    "soughtHeader",
+    "headers"
+  ],
+  "deleteHeader": [
+    "soughtHeader",
+    "headers"
+  ]
+}

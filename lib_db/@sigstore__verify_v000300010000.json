@@ -1,0 +1,320 @@
+{
+  "DSSESignatureContent": {
+    "env": [],
+    "constructor": [
+      "env"
+    ],
+    "compareDigest": [
+      "digest"
+    ],
+    "compareSignature": [
+      "signature"
+    ],
+    "verifySignature": [
+      "key"
+    ],
+    "signature": [],
+    "preAuthEncoding": []
+  },
+  "toSignedEntity": [
+    "bundle",
+    "artifact"
+  ],
+  "signatureContent": [
+    "bundle",
+    "artifact"
+  ],
+  "key": [
+    "bundle"
+  ],
+  "MessageSignatureContent": {
+    "signature": [],
+    "messageDigest": [],
+    "artifact": [],
+    "hashAlgorithm": [],
+    "constructor": [
+      "messageSignature",
+      "artifact"
+    ],
+    "compareSignature": [
+      "signature"
+    ],
+    "compareDigest": [
+      "digest"
+    ],
+    "verifySignature": [
+      "key"
+    ]
+  },
+  "BaseError": {
+    "code": [],
+    "cause": [],
+    "constructor": [
+      "param"
+    ]
+  },
+  "VerificationError": {},
+  "PolicyError": {},
+  "CertificateChainVerifier": {
+    "untrustedCert": [],
+    "trustedCerts": [],
+    "localCerts": [],
+    "timestamp": [],
+    "constructor": [
+      "opts"
+    ],
+    "verify": [],
+    "sort": [],
+    "buildPaths": [
+      "certificate"
+    ],
+    "findIssuer": [
+      "certificate"
+    ],
+    "checkPath": [
+      "path"
+    ]
+  },
+  "verifyCertificateChain": [
+    "timestamp",
+    "leaf",
+    "certificateAuthorities"
+  ],
+  "dedupeCertificates": [
+    "certs"
+  ],
+  "verifyPublicKey": [
+    "hint",
+    "timestamps",
+    "trustMaterial"
+  ],
+  "verifyCertificate": [
+    "leaf",
+    "timestamps",
+    "trustMaterial"
+  ],
+  "getSigner": [
+    "cert"
+  ],
+  "verifySCTs": [
+    "cert",
+    "issuer",
+    "ctlogs"
+  ],
+  "verifySubjectAlternativeName": [
+    "policyIdentity",
+    "signerIdentity"
+  ],
+  "verifyExtensions": [
+    "policyExtensions",
+    "param"
+  ],
+  "getTSATimestamp": [
+    "timestamp",
+    "data",
+    "timestampAuthorities"
+  ],
+  "getTLogTimestamp": [
+    "entry"
+  ],
+  "verifyRFC3161Timestamp": [
+    "timestamp",
+    "data",
+    "timestampAuthorities"
+  ],
+  "verifyTimestampForCA": [
+    "timestamp",
+    "data",
+    "ca"
+  ],
+  "filterCAsBySerialAndIssuer": [
+    "timestampAuthorities",
+    "criteria"
+  ],
+  "LogCheckpoint": {
+    "origin": [],
+    "logSize": [],
+    "logHash": [],
+    "rest": [],
+    "constructor": [
+      "origin",
+      "logSize",
+      "logHash",
+      "rest"
+    ],
+    "fromString": [
+      "note"
+    ]
+  },
+  "verifyCheckpoint": [
+    "entry",
+    "tlogs"
+  ],
+  "verifySignedNote": [
+    "signedNote",
+    "tlogs"
+  ],
+  "SignedNote": {
+    "note": [],
+    "signatures": [],
+    "constructor": [
+      "note",
+      "signatures"
+    ],
+    "fromString": [
+      "envelope"
+    ]
+  },
+  "verifyDSSETLogBody": [
+    "tlogEntry",
+    "content"
+  ],
+  "verifyDSSETLogBodyV2": [
+    "tlogEntry",
+    "content"
+  ],
+  "verifyDSSE001TLogBody": [
+    "tlogEntry",
+    "content"
+  ],
+  "verifyDSSE002TLogBody": [
+    "spec",
+    "content"
+  ],
+  "verifyHashedRekordTLogBody": [
+    "tlogEntry",
+    "content"
+  ],
+  "verifyHashedRekordTLogBodyV2": [
+    "tlogEntry",
+    "content"
+  ],
+  "verifyHashedrekord001TLogBody": [
+    "tlogEntry",
+    "content"
+  ],
+  "verifyHashedrekord002TLogBody": [
+    "spec",
+    "content"
+  ],
+  "verifyTLogBody": [
+    "entry",
+    "sigContent"
+  ],
+  "verifyTLogInclusion": [
+    "entry",
+    "tlogAuthorities"
+  ],
+  "isTLogEntryWithInclusionPromise": [
+    "entry"
+  ],
+  "isTLogEntryWithInclusionProof": [
+    "entry"
+  ],
+  "verifyIntotoTLogBody": [
+    "tlogEntry",
+    "content"
+  ],
+  "verifyIntoto002TLogBody": [
+    "tlogEntry",
+    "content"
+  ],
+  "base64Decode": [
+    "str"
+  ],
+  "verifyMerkleInclusion": [
+    "entry",
+    "checkpoint"
+  ],
+  "decompInclProof": [
+    "index",
+    "size"
+  ],
+  "chainInner": [
+    "seed",
+    "hashes",
+    "index"
+  ],
+  "chainBorderRight": [
+    "seed",
+    "hashes"
+  ],
+  "innerProofSize": [
+    "index",
+    "size"
+  ],
+  "onesCount": [
+    "num"
+  ],
+  "bitLength": [
+    "n"
+  ],
+  "hashChildren": [
+    "left",
+    "right"
+  ],
+  "hashLeaf": [
+    "leaf"
+  ],
+  "verifyTLogSET": [
+    "entry",
+    "tlogs"
+  ],
+  "toVerificationPayload": [
+    "entry"
+  ],
+  "filterCertAuthorities": [
+    "certAuthorities",
+    "timestamp"
+  ],
+  "filterTLogAuthorities": [
+    "tlogAuthorities",
+    "criteria"
+  ],
+  "toTrustMaterial": [
+    "root",
+    "keys"
+  ],
+  "createTLogAuthority": [
+    "tlogInstance"
+  ],
+  "createCertAuthority": [
+    "ca"
+  ],
+  "keyLocator": [
+    "keys"
+  ],
+  "Verifier": {
+    "trustMaterial": [],
+    "options": [],
+    "constructor": [
+      "trustMaterial",
+      "param"
+    ],
+    "verify": [
+      "entity",
+      "policy"
+    ],
+    "verifyTimestamps": [
+      "entity"
+    ],
+    "verifySigningKey": [
+      "param",
+      "timestamps"
+    ],
+    "verifyTLogs": [
+      "param"
+    ],
+    "verifySignature": [
+      "entity",
+      "signer"
+    ],
+    "verifyPolicy": [
+      "policy",
+      "identity"
+    ]
+  },
+  "containsDupes": [
+    "arr"
+  ]
+}

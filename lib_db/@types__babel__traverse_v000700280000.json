@@ -1,0 +1,2335 @@
+{
+  "Scope": {
+    "constructor": [
+      "path",
+      "parentScope"
+    ],
+    "uid": [],
+    "path": [],
+    "block": [],
+    "labels": [],
+    "parentBlock": [],
+    "parent": [],
+    "hub": [],
+    "bindings": [],
+    "references": [],
+    "globals": [],
+    "uids": [],
+    "data": [],
+    "crawling": [],
+    "contextVariables": [],
+    "traverse": [
+      "node",
+      "opts",
+      "state"
+    ],
+    "generateDeclaredUidIdentifier": [
+      "name"
+    ],
+    "generateUidIdentifier": [
+      "name"
+    ],
+    "generateUid": [
+      "name"
+    ],
+    "generateUidIdentifierBasedOnNode": [
+      "parent",
+      "defaultName"
+    ],
+    "isStatic": [
+      "node"
+    ],
+    "maybeGenerateMemoised": [
+      "node",
+      "dontPush"
+    ],
+    "checkBlockScopedCollisions": [
+      "local",
+      "kind",
+      "name",
+      "id"
+    ],
+    "rename": [
+      "oldName",
+      "newName",
+      "block"
+    ],
+    "dump": [],
+    "toArray": [
+      "node",
+      "i",
+      "arrayLikeIsIterable"
+    ],
+    "hasLabel": [
+      "name"
+    ],
+    "getLabel": [
+      "name"
+    ],
+    "registerLabel": [
+      "path"
+    ],
+    "registerDeclaration": [
+      "path"
+    ],
+    "buildUndefinedNode": [],
+    "registerConstantViolation": [
+      "path"
+    ],
+    "registerBinding": [
+      "kind",
+      "path",
+      "bindingPath"
+    ],
+    "addGlobal": [
+      "node"
+    ],
+    "hasUid": [
+      "name"
+    ],
+    "hasGlobal": [
+      "name"
+    ],
+    "hasReference": [
+      "name"
+    ],
+    "isPure": [
+      "node",
+      "constantsOnly"
+    ],
+    "setData": [
+      "key",
+      "val"
+    ],
+    "getData": [
+      "key"
+    ],
+    "removeData": [
+      "key"
+    ],
+    "crawl": [],
+    "push": [
+      "opts"
+    ],
+    "getProgramParent": [],
+    "getFunctionParent": [],
+    "getBlockParent": [],
+    "getPatternParent": [],
+    "getAllBindings": [],
+    "getAllBindingsOfKind": [
+      "param"
+    ],
+    "bindingIdentifierEquals": [
+      "name",
+      "node"
+    ],
+    "getBinding": [
+      "name"
+    ],
+    "getOwnBinding": [
+      "name"
+    ],
+    "getBindingIdentifier": [
+      "name"
+    ],
+    "getOwnBindingIdentifier": [
+      "name"
+    ],
+    "hasOwnBinding": [
+      "name"
+    ],
+    "hasBinding": [
+      "name",
+      "optsOrNoGlobals"
+    ],
+    "parentHasBinding": [
+      "name",
+      "opts"
+    ],
+    "moveBindingTo": [
+      "name",
+      "scope"
+    ],
+    "removeOwnBinding": [
+      "name"
+    ],
+    "removeBinding": [
+      "name"
+    ]
+  },
+  "Binding": {
+    "constructor": [
+      "opts"
+    ],
+    "identifier": [],
+    "scope": [],
+    "path": [],
+    "kind": [],
+    "referenced": [],
+    "references": [],
+    "referencePaths": [],
+    "constant": [],
+    "constantViolations": [],
+    "hasDeoptedValue": [],
+    "hasValue": [],
+    "value": [],
+    "deopValue": [],
+    "setValue": [
+      "value"
+    ],
+    "clearValue": [],
+    "reassign": [
+      "path"
+    ],
+    "reference": [
+      "path"
+    ],
+    "dereference": []
+  },
+  "NodePath": {
+    "constructor": [
+      "hub",
+      "parent"
+    ],
+    "parent": [],
+    "hub": [],
+    "data": [],
+    "context": [],
+    "scope": [],
+    "contexts": [],
+    "state": [],
+    "opts": [],
+    "skipKeys": [],
+    "parentPath": [],
+    "container": [],
+    "listKey": [],
+    "key": [],
+    "node": [],
+    "type": [],
+    "shouldSkip": [],
+    "shouldStop": [],
+    "removed": [],
+    "inList": [],
+    "parentKey": [],
+    "typeAnnotation": [],
+    "get": [
+      "key",
+      "context"
+    ],
+    "getScope": [
+      "scope"
+    ],
+    "setData": [
+      "key",
+      "val"
+    ],
+    "getData": [
+      "key",
+      "def"
+    ],
+    "hasNode": [],
+    "buildCodeFrameError": [
+      "msg",
+      "Error"
+    ],
+    "traverse": [
+      "visitor"
+    ],
+    "set": [
+      "key",
+      "node"
+    ],
+    "getPathLocation": [],
+    "debug": [
+      "buildMessage"
+    ],
+    "findParent": [
+      "callback"
+    ],
+    "find": [
+      "callback"
+    ],
+    "getFunctionParent": [],
+    "getStatementParent": [],
+    "getEarliestCommonAncestorFrom": [
+      "paths"
+    ],
+    "getDeepestCommonAncestorFrom": [
+      "paths",
+      "filter"
+    ],
+    "getAncestry": [],
+    "isAncestor": [
+      "maybeDescendant"
+    ],
+    "isDescendant": [
+      "maybeAncestor"
+    ],
+    "inType": [
+      "param"
+    ],
+    "getTypeAnnotation": [],
+    "isBaseType": [
+      "baseName",
+      "soft"
+    ],
+    "couldBeBaseType": [
+      "name"
+    ],
+    "baseTypeStrictlyMatches": [
+      "rightArg"
+    ],
+    "isGenericType": [
+      "genericName"
+    ],
+    "replaceWithMultiple": [
+      "nodes"
+    ],
+    "replaceWithSourceString": [
+      "replacement"
+    ],
+    "replaceWith": [
+      "replacementPath"
+    ],
+    "replaceExpressionWithStatements": [
+      "nodes"
+    ],
+    "replaceInline": [
+      "nodes"
+    ],
+    "evaluateTruthy": [],
+    "evaluate": [],
+    "matchesPattern": [
+      "pattern",
+      "allowPartial"
+    ],
+    "has": [
+      "key"
+    ],
+    "isStatic": [],
+    "is": [
+      "key"
+    ],
+    "isnt": [
+      "key"
+    ],
+    "equals": [
+      "key",
+      "value"
+    ],
+    "isNodeType": [
+      "type"
+    ],
+    "canHaveVariableDeclarationOrExpression": [],
+    "canSwapBetweenExpressionAndStatement": [
+      "replacement"
+    ],
+    "isCompletionRecord": [
+      "allowInsideFunction"
+    ],
+    "isStatementOrBlock": [],
+    "referencesImport": [
+      "moduleSource",
+      "importName"
+    ],
+    "getSource": [],
+    "willIMaybeExecuteBefore": [
+      "target"
+    ],
+    "resolve": [
+      "dangerous",
+      "resolved"
+    ],
+    "isConstantExpression": [],
+    "isInStrictMode": [],
+    "call": [
+      "key"
+    ],
+    "isDenylisted": [],
+    "isBlacklisted": [],
+    "visit": [],
+    "skip": [],
+    "skipKey": [
+      "key"
+    ],
+    "stop": [],
+    "setScope": [],
+    "setContext": [
+      "context"
+    ],
+    "resync": [],
+    "popContext": [],
+    "pushContext": [
+      "context"
+    ],
+    "requeue": [
+      "pathToQueue"
+    ],
+    "remove": [],
+    "toComputedKey": [],
+    "arrowFunctionToShadowed": [],
+    "unwrapFunctionEnvironment": [],
+    "arrowFunctionToExpression": [
+      "param"
+    ],
+    "ensureBlock": [
+      "this"
+    ],
+    "insertBefore": [
+      "nodes"
+    ],
+    "insertAfter": [
+      "nodes"
+    ],
+    "updateSiblingKeys": [
+      "fromIndex",
+      "incrementBy"
+    ],
+    "unshiftContainer": [
+      "this",
+      "listKey",
+      "nodes"
+    ],
+    "pushContainer": [
+      "this",
+      "listKey",
+      "nodes"
+    ],
+    "hoist": [
+      "scope"
+    ],
+    "getOpposite": [],
+    "getCompletionRecords": [],
+    "getSibling": [
+      "key"
+    ],
+    "getPrevSibling": [],
+    "getNextSibling": [],
+    "getAllPrevSiblings": [],
+    "getAllNextSiblings": [],
+    "getBindingIdentifiers": [
+      "duplicates"
+    ],
+    "getOuterBindingIdentifiers": [
+      "duplicates"
+    ],
+    "getBindingIdentifierPaths": [
+      "duplicates",
+      "outerOnly"
+    ],
+    "getOuterBindingIdentifierPaths": [
+      "duplicates",
+      "outerOnly"
+    ],
+    "shareCommentsWithSiblings": [],
+    "addComment": [
+      "type",
+      "content",
+      "line"
+    ],
+    "addComments": [
+      "type",
+      "comments"
+    ],
+    "isAccessor": [
+      "opts"
+    ],
+    "isAnyTypeAnnotation": [
+      "opts"
+    ],
+    "isArgumentPlaceholder": [
+      "opts"
+    ],
+    "isArrayExpression": [
+      "opts"
+    ],
+    "isArrayPattern": [
+      "opts"
+    ],
+    "isArrayTypeAnnotation": [
+      "opts"
+    ],
+    "isArrowFunctionExpression": [
+      "opts"
+    ],
+    "isAssignmentExpression": [
+      "opts"
+    ],
+    "isAssignmentPattern": [
+      "opts"
+    ],
+    "isAwaitExpression": [
+      "opts"
+    ],
+    "isBigIntLiteral": [
+      "opts"
+    ],
+    "isBinary": [
+      "opts"
+    ],
+    "isBinaryExpression": [
+      "opts"
+    ],
+    "isBindExpression": [
+      "opts"
+    ],
+    "isBlock": [
+      "opts"
+    ],
+    "isBlockParent": [
+      "opts"
+    ],
+    "isBlockStatement": [
+      "opts"
+    ],
+    "isBooleanLiteral": [
+      "opts"
+    ],
+    "isBooleanLiteralTypeAnnotation": [
+      "opts"
+    ],
+    "isBooleanTypeAnnotation": [
+      "opts"
+    ],
+    "isBreakStatement": [
+      "opts"
+    ],
+    "isCallExpression": [
+      "opts"
+    ],
+    "isCatchClause": [
+      "opts"
+    ],
+    "isClass": [
+      "opts"
+    ],
+    "isClassAccessorProperty": [
+      "opts"
+    ],
+    "isClassBody": [
+      "opts"
+    ],
+    "isClassDeclaration": [
+      "opts"
+    ],
+    "isClassExpression": [
+      "opts"
+    ],
+    "isClassImplements": [
+      "opts"
+    ],
+    "isClassMethod": [
+      "opts"
+    ],
+    "isClassPrivateMethod": [
+      "opts"
+    ],
+    "isClassPrivateProperty": [
+      "opts"
+    ],
+    "isClassProperty": [
+      "opts"
+    ],
+    "isCompletionStatement": [
+      "opts"
+    ],
+    "isConditional": [
+      "opts"
+    ],
+    "isConditionalExpression": [
+      "opts"
+    ],
+    "isContinueStatement": [
+      "opts"
+    ],
+    "isDebuggerStatement": [
+      "opts"
+    ],
+    "isDecimalLiteral": [
+      "opts"
+    ],
+    "isDeclaration": [
+      "opts"
+    ],
+    "isDeclareClass": [
+      "opts"
+    ],
+    "isDeclareExportAllDeclaration": [
+      "opts"
+    ],
+    "isDeclareExportDeclaration": [
+      "opts"
+    ],
+    "isDeclareFunction": [
+      "opts"
+    ],
+    "isDeclareInterface": [
+      "opts"
+    ],
+    "isDeclareModule": [
+      "opts"
+    ],
+    "isDeclareModuleExports": [
+      "opts"
+    ],
+    "isDeclareOpaqueType": [
+      "opts"
+    ],
+    "isDeclareTypeAlias": [
+      "opts"
+    ],
+    "isDeclareVariable": [
+      "opts"
+    ],
+    "isDeclaredPredicate": [
+      "opts"
+    ],
+    "isDecorator": [
+      "opts"
+    ],
+    "isDirective": [
+      "opts"
+    ],
+    "isDirectiveLiteral": [
+      "opts"
+    ],
+    "isDoExpression": [
+      "opts"
+    ],
+    "isDoWhileStatement": [
+      "opts"
+    ],
+    "isEmptyStatement": [
+      "opts"
+    ],
+    "isEmptyTypeAnnotation": [
+      "opts"
+    ],
+    "isEnumBody": [
+      "opts"
+    ],
+    "isEnumBooleanBody": [
+      "opts"
+    ],
+    "isEnumBooleanMember": [
+      "opts"
+    ],
+    "isEnumDeclaration": [
+      "opts"
+    ],
+    "isEnumDefaultedMember": [
+      "opts"
+    ],
+    "isEnumMember": [
+      "opts"
+    ],
+    "isEnumNumberBody": [
+      "opts"
+    ],
+    "isEnumNumberMember": [
+      "opts"
+    ],
+    "isEnumStringBody": [
+      "opts"
+    ],
+    "isEnumStringMember": [
+      "opts"
+    ],
+    "isEnumSymbolBody": [
+      "opts"
+    ],
+    "isExistsTypeAnnotation": [
+      "opts"
+    ],
+    "isExportAllDeclaration": [
+      "opts"
+    ],
+    "isExportDeclaration": [
+      "opts"
+    ],
+    "isExportDefaultDeclaration": [
+      "opts"
+    ],
+    "isExportDefaultSpecifier": [
+      "opts"
+    ],
+    "isExportNamedDeclaration": [
+      "opts"
+    ],
+    "isExportNamespaceSpecifier": [
+      "opts"
+    ],
+    "isExportSpecifier": [
+      "opts"
+    ],
+    "isExpression": [
+      "opts"
+    ],
+    "isExpressionStatement": [
+      "opts"
+    ],
+    "isExpressionWrapper": [
+      "opts"
+    ],
+    "isFile": [
+      "opts"
+    ],
+    "isFlow": [
+      "opts"
+    ],
+    "isFlowBaseAnnotation": [
+      "opts"
+    ],
+    "isFlowDeclaration": [
+      "opts"
+    ],
+    "isFlowPredicate": [
+      "opts"
+    ],
+    "isFlowType": [
+      "opts"
+    ],
+    "isFor": [
+      "opts"
+    ],
+    "isForInStatement": [
+      "opts"
+    ],
+    "isForOfStatement": [
+      "opts"
+    ],
+    "isForStatement": [
+      "opts"
+    ],
+    "isForXStatement": [
+      "opts"
+    ],
+    "isFunction": [
+      "opts"
+    ],
+    "isFunctionDeclaration": [
+      "opts"
+    ],
+    "isFunctionExpression": [
+      "opts"
+    ],
+    "isFunctionParameter": [
+      "opts"
+    ],
+    "isFunctionParent": [
+      "opts"
+    ],
+    "isFunctionTypeAnnotation": [
+      "opts"
+    ],
+    "isFunctionTypeParam": [
+      "opts"
+    ],
+    "isGenericTypeAnnotation": [
+      "opts"
+    ],
+    "isIdentifier": [
+      "opts"
+    ],
+    "isIfStatement": [
+      "opts"
+    ],
+    "isImmutable": [
+      "opts"
+    ],
+    "isImport": [
+      "opts"
+    ],
+    "isImportAttribute": [
+      "opts"
+    ],
+    "isImportDeclaration": [
+      "opts"
+    ],
+    "isImportExpression": [
+      "opts"
+    ],
+    "isImportDefaultSpecifier": [
+      "opts"
+    ],
+    "isImportNamespaceSpecifier": [
+      "opts"
+    ],
+    "isImportOrExportDeclaration": [
+      "opts"
+    ],
+    "isImportSpecifier": [
+      "opts"
+    ],
+    "isIndexedAccessType": [
+      "opts"
+    ],
+    "isInferredPredicate": [
+      "opts"
+    ],
+    "isInterfaceDeclaration": [
+      "opts"
+    ],
+    "isInterfaceExtends": [
+      "opts"
+    ],
+    "isInterfaceTypeAnnotation": [
+      "opts"
+    ],
+    "isInterpreterDirective": [
+      "opts"
+    ],
+    "isIntersectionTypeAnnotation": [
+      "opts"
+    ],
+    "isJSX": [
+      "opts"
+    ],
+    "isJSXAttribute": [
+      "opts"
+    ],
+    "isJSXClosingElement": [
+      "opts"
+    ],
+    "isJSXClosingFragment": [
+      "opts"
+    ],
+    "isJSXElement": [
+      "opts"
+    ],
+    "isJSXEmptyExpression": [
+      "opts"
+    ],
+    "isJSXExpressionContainer": [
+      "opts"
+    ],
+    "isJSXFragment": [
+      "opts"
+    ],
+    "isJSXIdentifier": [
+      "opts"
+    ],
+    "isJSXMemberExpression": [
+      "opts"
+    ],
+    "isJSXNamespacedName": [
+      "opts"
+    ],
+    "isJSXOpeningElement": [
+      "opts"
+    ],
+    "isJSXOpeningFragment": [
+      "opts"
+    ],
+    "isJSXSpreadAttribute": [
+      "opts"
+    ],
+    "isJSXSpreadChild": [
+      "opts"
+    ],
+    "isJSXText": [
+      "opts"
+    ],
+    "isLVal": [
+      "opts"
+    ],
+    "isLabeledStatement": [
+      "opts"
+    ],
+    "isLiteral": [
+      "opts"
+    ],
+    "isLogicalExpression": [
+      "opts"
+    ],
+    "isLoop": [
+      "opts"
+    ],
+    "isMemberExpression": [
+      "opts"
+    ],
+    "isMetaProperty": [
+      "opts"
+    ],
+    "isMethod": [
+      "opts"
+    ],
+    "isMiscellaneous": [
+      "opts"
+    ],
+    "isMixedTypeAnnotation": [
+      "opts"
+    ],
+    "isModuleDeclaration": [
+      "opts"
+    ],
+    "isModuleExpression": [
+      "opts"
+    ],
+    "isModuleSpecifier": [
+      "opts"
+    ],
+    "isNewExpression": [
+      "opts"
+    ],
+    "isNoop": [
+      "opts"
+    ],
+    "isNullLiteral": [
+      "opts"
+    ],
+    "isNullLiteralTypeAnnotation": [
+      "opts"
+    ],
+    "isNullableTypeAnnotation": [
+      "opts"
+    ],
+    "isNumberLiteral": [
+      "opts"
+    ],
+    "isNumberLiteralTypeAnnotation": [
+      "opts"
+    ],
+    "isNumberTypeAnnotation": [
+      "opts"
+    ],
+    "isNumericLiteral": [
+      "opts"
+    ],
+    "isObjectExpression": [
+      "opts"
+    ],
+    "isObjectMember": [
+      "opts"
+    ],
+    "isObjectMethod": [
+      "opts"
+    ],
+    "isObjectPattern": [
+      "opts"
+    ],
+    "isObjectProperty": [
+      "opts"
+    ],
+    "isObjectTypeAnnotation": [
+      "opts"
+    ],
+    "isObjectTypeCallProperty": [
+      "opts"
+    ],
+    "isObjectTypeIndexer": [
+      "opts"
+    ],
+    "isObjectTypeInternalSlot": [
+      "opts"
+    ],
+    "isObjectTypeProperty": [
+      "opts"
+    ],
+    "isObjectTypeSpreadProperty": [
+      "opts"
+    ],
+    "isOpaqueType": [
+      "opts"
+    ],
+    "isOptionalCallExpression": [
+      "opts"
+    ],
+    "isOptionalIndexedAccessType": [
+      "opts"
+    ],
+    "isOptionalMemberExpression": [
+      "opts"
+    ],
+    "isParenthesizedExpression": [
+      "opts"
+    ],
+    "isPattern": [
+      "opts"
+    ],
+    "isPatternLike": [
+      "opts"
+    ],
+    "isPipelineBareFunction": [
+      "opts"
+    ],
+    "isPipelinePrimaryTopicReference": [
+      "opts"
+    ],
+    "isPipelineTopicExpression": [
+      "opts"
+    ],
+    "isPlaceholder": [
+      "opts"
+    ],
+    "isPrivate": [
+      "opts"
+    ],
+    "isPrivateName": [
+      "opts"
+    ],
+    "isProgram": [
+      "opts"
+    ],
+    "isProperty": [
+      "opts"
+    ],
+    "isPureish": [
+      "opts"
+    ],
+    "isQualifiedTypeIdentifier": [
+      "opts"
+    ],
+    "isRecordExpression": [
+      "opts"
+    ],
+    "isRegExpLiteral": [
+      "opts"
+    ],
+    "isRegexLiteral": [
+      "opts"
+    ],
+    "isRestElement": [
+      "opts"
+    ],
+    "isRestProperty": [
+      "opts"
+    ],
+    "isReturnStatement": [
+      "opts"
+    ],
+    "isScopable": [
+      "opts"
+    ],
+    "isSequenceExpression": [
+      "opts"
+    ],
+    "isSpreadElement": [
+      "opts"
+    ],
+    "isSpreadProperty": [
+      "opts"
+    ],
+    "isStandardized": [
+      "opts"
+    ],
+    "isStatement": [
+      "opts"
+    ],
+    "isStaticBlock": [
+      "opts"
+    ],
+    "isStringLiteral": [
+      "opts"
+    ],
+    "isStringLiteralTypeAnnotation": [
+      "opts"
+    ],
+    "isStringTypeAnnotation": [
+      "opts"
+    ],
+    "isSuper": [
+      "opts"
+    ],
+    "isSwitchCase": [
+      "opts"
+    ],
+    "isSwitchStatement": [
+      "opts"
+    ],
+    "isSymbolTypeAnnotation": [
+      "opts"
+    ],
+    "isTSAnyKeyword": [
+      "opts"
+    ],
+    "isTSArrayType": [
+      "opts"
+    ],
+    "isTSAsExpression": [
+      "opts"
+    ],
+    "isTSBaseType": [
+      "opts"
+    ],
+    "isTSBigIntKeyword": [
+      "opts"
+    ],
+    "isTSBooleanKeyword": [
+      "opts"
+    ],
+    "isTSCallSignatureDeclaration": [
+      "opts"
+    ],
+    "isTSConditionalType": [
+      "opts"
+    ],
+    "isTSConstructSignatureDeclaration": [
+      "opts"
+    ],
+    "isTSConstructorType": [
+      "opts"
+    ],
+    "isTSDeclareFunction": [
+      "opts"
+    ],
+    "isTSDeclareMethod": [
+      "opts"
+    ],
+    "isTSEntityName": [
+      "opts"
+    ],
+    "isTSEnumBody": [
+      "opts"
+    ],
+    "isTSEnumDeclaration": [
+      "opts"
+    ],
+    "isTSEnumMember": [
+      "opts"
+    ],
+    "isTSExportAssignment": [
+      "opts"
+    ],
+    "isTSExpressionWithTypeArguments": [
+      "opts"
+    ],
+    "isTSExternalModuleReference": [
+      "opts"
+    ],
+    "isTSFunctionType": [
+      "opts"
+    ],
+    "isTSImportEqualsDeclaration": [
+      "opts"
+    ],
+    "isTSImportType": [
+      "opts"
+    ],
+    "isTSIndexSignature": [
+      "opts"
+    ],
+    "isTSIndexedAccessType": [
+      "opts"
+    ],
+    "isTSInferType": [
+      "opts"
+    ],
+    "isTSInstantiationExpression": [
+      "opts"
+    ],
+    "isTSInterfaceBody": [
+      "opts"
+    ],
+    "isTSInterfaceDeclaration": [
+      "opts"
+    ],
+    "isTSIntersectionType": [
+      "opts"
+    ],
+    "isTSIntrinsicKeyword": [
+      "opts"
+    ],
+    "isTSLiteralType": [
+      "opts"
+    ],
+    "isTSMappedType": [
+      "opts"
+    ],
+    "isTSMethodSignature": [
+      "opts"
+    ],
+    "isTSModuleBlock": [
+      "opts"
+    ],
+    "isTSModuleDeclaration": [
+      "opts"
+    ],
+    "isTSNamedTupleMember": [
+      "opts"
+    ],
+    "isTSNamespaceExportDeclaration": [
+      "opts"
+    ],
+    "isTSNeverKeyword": [
+      "opts"
+    ],
+    "isTSNonNullExpression": [
+      "opts"
+    ],
+    "isTSNullKeyword": [
+      "opts"
+    ],
+    "isTSNumberKeyword": [
+      "opts"
+    ],
+    "isTSObjectKeyword": [
+      "opts"
+    ],
+    "isTSOptionalType": [
+      "opts"
+    ],
+    "isTSParameterProperty": [
+      "opts"
+    ],
+    "isTSParenthesizedType": [
+      "opts"
+    ],
+    "isTSPropertySignature": [
+      "opts"
+    ],
+    "isTSQualifiedName": [
+      "opts"
+    ],
+    "isTSRestType": [
+      "opts"
+    ],
+    "isTSSatisfiesExpression": [
+      "opts"
+    ],
+    "isTSStringKeyword": [
+      "opts"
+    ],
+    "isTSSymbolKeyword": [
+      "opts"
+    ],
+    "isTSTemplateLiteralType": [
+      "opts"
+    ],
+    "isTSThisType": [
+      "opts"
+    ],
+    "isTSTupleType": [
+      "opts"
+    ],
+    "isTSType": [
+      "opts"
+    ],
+    "isTSTypeAliasDeclaration": [
+      "opts"
+    ],
+    "isTSTypeAnnotation": [
+      "opts"
+    ],
+    "isTSTypeAssertion": [
+      "opts"
+    ],
+    "isTSTypeElement": [
+      "opts"
+    ],
+    "isTSTypeLiteral": [
+      "opts"
+    ],
+    "isTSTypeOperator": [
+      "opts"
+    ],
+    "isTSTypeParameter": [
+      "opts"
+    ],
+    "isTSTypeParameterDeclaration": [
+      "opts"
+    ],
+    "isTSTypeParameterInstantiation": [
+      "opts"
+    ],
+    "isTSTypePredicate": [
+      "opts"
+    ],
+    "isTSTypeQuery": [
+      "opts"
+    ],
+    "isTSTypeReference": [
+      "opts"
+    ],
+    "isTSUndefinedKeyword": [
+      "opts"
+    ],
+    "isTSUnionType": [
+      "opts"
+    ],
+    "isTSUnknownKeyword": [
+      "opts"
+    ],
+    "isTSVoidKeyword": [
+      "opts"
+    ],
+    "isTaggedTemplateExpression": [
+      "opts"
+    ],
+    "isTemplateElement": [
+      "opts"
+    ],
+    "isTemplateLiteral": [
+      "opts"
+    ],
+    "isTerminatorless": [
+      "opts"
+    ],
+    "isThisExpression": [
+      "opts"
+    ],
+    "isThisTypeAnnotation": [
+      "opts"
+    ],
+    "isThrowStatement": [
+      "opts"
+    ],
+    "isTopicReference": [
+      "opts"
+    ],
+    "isTryStatement": [
+      "opts"
+    ],
+    "isTupleExpression": [
+      "opts"
+    ],
+    "isTupleTypeAnnotation": [
+      "opts"
+    ],
+    "isTypeAlias": [
+      "opts"
+    ],
+    "isTypeAnnotation": [
+      "opts"
+    ],
+    "isTypeCastExpression": [
+      "opts"
+    ],
+    "isTypeParameter": [
+      "opts"
+    ],
+    "isTypeParameterDeclaration": [
+      "opts"
+    ],
+    "isTypeParameterInstantiation": [
+      "opts"
+    ],
+    "isTypeScript": [
+      "opts"
+    ],
+    "isTypeofTypeAnnotation": [
+      "opts"
+    ],
+    "isUnaryExpression": [
+      "opts"
+    ],
+    "isUnaryLike": [
+      "opts"
+    ],
+    "isUnionTypeAnnotation": [
+      "opts"
+    ],
+    "isUpdateExpression": [
+      "opts"
+    ],
+    "isUserWhitespacable": [
+      "opts"
+    ],
+    "isV8IntrinsicIdentifier": [
+      "opts"
+    ],
+    "isVariableDeclaration": [
+      "opts"
+    ],
+    "isVariableDeclarator": [
+      "opts"
+    ],
+    "isVariance": [
+      "opts"
+    ],
+    "isVoidPattern": [
+      "opts"
+    ],
+    "isVoidTypeAnnotation": [
+      "opts"
+    ],
+    "isWhile": [
+      "opts"
+    ],
+    "isWhileStatement": [
+      "opts"
+    ],
+    "isWithStatement": [
+      "opts"
+    ],
+    "isYieldExpression": [
+      "opts"
+    ],
+    "isBindingIdentifier": [
+      "opts"
+    ],
+    "isBlockScoped": [
+      "opts"
+    ],
+    "isExistentialTypeParam": [
+      "opts"
+    ],
+    "isForAwaitStatement": [
+      "opts"
+    ],
+    "isGenerated": [
+      "opts"
+    ],
+    "isNumericLiteralTypeAnnotation": [
+      "opts"
+    ],
+    "isPure": [
+      "opts"
+    ],
+    "isReferenced": [
+      "opts"
+    ],
+    "isReferencedIdentifier": [
+      "opts"
+    ],
+    "isReferencedMemberExpression": [
+      "opts"
+    ],
+    "isScope": [
+      "opts"
+    ],
+    "isUser": [
+      "opts"
+    ],
+    "isVar": [
+      "opts"
+    ],
+    "assertAccessor": [
+      "opts"
+    ],
+    "assertAnyTypeAnnotation": [
+      "opts"
+    ],
+    "assertArgumentPlaceholder": [
+      "opts"
+    ],
+    "assertArrayExpression": [
+      "opts"
+    ],
+    "assertArrayPattern": [
+      "opts"
+    ],
+    "assertArrayTypeAnnotation": [
+      "opts"
+    ],
+    "assertArrowFunctionExpression": [
+      "opts"
+    ],
+    "assertAssignmentExpression": [
+      "opts"
+    ],
+    "assertAssignmentPattern": [
+      "opts"
+    ],
+    "assertAwaitExpression": [
+      "opts"
+    ],
+    "assertBigIntLiteral": [
+      "opts"
+    ],
+    "assertBinary": [
+      "opts"
+    ],
+    "assertBinaryExpression": [
+      "opts"
+    ],
+    "assertBindExpression": [
+      "opts"
+    ],
+    "assertBlock": [
+      "opts"
+    ],
+    "assertBlockParent": [
+      "opts"
+    ],
+    "assertBlockStatement": [
+      "opts"
+    ],
+    "assertBooleanLiteral": [
+      "opts"
+    ],
+    "assertBooleanLiteralTypeAnnotation": [
+      "opts"
+    ],
+    "assertBooleanTypeAnnotation": [
+      "opts"
+    ],
+    "assertBreakStatement": [
+      "opts"
+    ],
+    "assertCallExpression": [
+      "opts"
+    ],
+    "assertCatchClause": [
+      "opts"
+    ],
+    "assertClass": [
+      "opts"
+    ],
+    "assertClassAccessorProperty": [
+      "opts"
+    ],
+    "assertClassBody": [
+      "opts"
+    ],
+    "assertClassDeclaration": [
+      "opts"
+    ],
+    "assertClassExpression": [
+      "opts"
+    ],
+    "assertClassImplements": [
+      "opts"
+    ],
+    "assertClassMethod": [
+      "opts"
+    ],
+    "assertClassPrivateMethod": [
+      "opts"
+    ],
+    "assertClassPrivateProperty": [
+      "opts"
+    ],
+    "assertClassProperty": [
+      "opts"
+    ],
+    "assertCompletionStatement": [
+      "opts"
+    ],
+    "assertConditional": [
+      "opts"
+    ],
+    "assertConditionalExpression": [
+      "opts"
+    ],
+    "assertContinueStatement": [
+      "opts"
+    ],
+    "assertDebuggerStatement": [
+      "opts"
+    ],
+    "assertDecimalLiteral": [
+      "opts"
+    ],
+    "assertDeclaration": [
+      "opts"
+    ],
+    "assertDeclareClass": [
+      "opts"
+    ],
+    "assertDeclareExportAllDeclaration": [
+      "opts"
+    ],
+    "assertDeclareExportDeclaration": [
+      "opts"
+    ],
+    "assertDeclareFunction": [
+      "opts"
+    ],
+    "assertDeclareInterface": [
+      "opts"
+    ],
+    "assertDeclareModule": [
+      "opts"
+    ],
+    "assertDeclareModuleExports": [
+      "opts"
+    ],
+    "assertDeclareOpaqueType": [
+      "opts"
+    ],
+    "assertDeclareTypeAlias": [
+      "opts"
+    ],
+    "assertDeclareVariable": [
+      "opts"
+    ],
+    "assertDeclaredPredicate": [
+      "opts"
+    ],
+    "assertDecorator": [
+      "opts"
+    ],
+    "assertDirective": [
+      "opts"
+    ],
+    "assertDirectiveLiteral": [
+      "opts"
+    ],
+    "assertDoExpression": [
+      "opts"
+    ],
+    "assertDoWhileStatement": [
+      "opts"
+    ],
+    "assertEmptyStatement": [
+      "opts"
+    ],
+    "assertEmptyTypeAnnotation": [
+      "opts"
+    ],
+    "assertEnumBody": [
+      "opts"
+    ],
+    "assertEnumBooleanBody": [
+      "opts"
+    ],
+    "assertEnumBooleanMember": [
+      "opts"
+    ],
+    "assertEnumDeclaration": [
+      "opts"
+    ],
+    "assertEnumDefaultedMember": [
+      "opts"
+    ],
+    "assertEnumMember": [
+      "opts"
+    ],
+    "assertEnumNumberBody": [
+      "opts"
+    ],
+    "assertEnumNumberMember": [
+      "opts"
+    ],
+    "assertEnumStringBody": [
+      "opts"
+    ],
+    "assertEnumStringMember": [
+      "opts"
+    ],
+    "assertEnumSymbolBody": [
+      "opts"
+    ],
+    "assertExistsTypeAnnotation": [
+      "opts"
+    ],
+    "assertExportAllDeclaration": [
+      "opts"
+    ],
+    "assertExportDeclaration": [
+      "opts"
+    ],
+    "assertExportDefaultDeclaration": [
+      "opts"
+    ],
+    "assertExportDefaultSpecifier": [
+      "opts"
+    ],
+    "assertExportNamedDeclaration": [
+      "opts"
+    ],
+    "assertExportNamespaceSpecifier": [
+      "opts"
+    ],
+    "assertExportSpecifier": [
+      "opts"
+    ],
+    "assertExpression": [
+      "opts"
+    ],
+    "assertExpressionStatement": [
+      "opts"
+    ],
+    "assertExpressionWrapper": [
+      "opts"
+    ],
+    "assertFile": [
+      "opts"
+    ],
+    "assertFlow": [
+      "opts"
+    ],
+    "assertFlowBaseAnnotation": [
+      "opts"
+    ],
+    "assertFlowDeclaration": [
+      "opts"
+    ],
+    "assertFlowPredicate": [
+      "opts"
+    ],
+    "assertFlowType": [
+      "opts"
+    ],
+    "assertFor": [
+      "opts"
+    ],
+    "assertForInStatement": [
+      "opts"
+    ],
+    "assertForOfStatement": [
+      "opts"
+    ],
+    "assertForStatement": [
+      "opts"
+    ],
+    "assertForXStatement": [
+      "opts"
+    ],
+    "assertFunction": [
+      "opts"
+    ],
+    "assertFunctionDeclaration": [
+      "opts"
+    ],
+    "assertFunctionExpression": [
+      "opts"
+    ],
+    "assertFunctionParameter": [
+      "opts"
+    ],
+    "assertFunctionParent": [
+      "opts"
+    ],
+    "assertFunctionTypeAnnotation": [
+      "opts"
+    ],
+    "assertFunctionTypeParam": [
+      "opts"
+    ],
+    "assertGenericTypeAnnotation": [
+      "opts"
+    ],
+    "assertIdentifier": [
+      "opts"
+    ],
+    "assertIfStatement": [
+      "opts"
+    ],
+    "assertImmutable": [
+      "opts"
+    ],
+    "assertImport": [
+      "opts"
+    ],
+    "assertImportAttribute": [
+      "opts"
+    ],
+    "assertImportDeclaration": [
+      "opts"
+    ],
+    "assertImportExpression": [
+      "opts"
+    ],
+    "assertImportDefaultSpecifier": [
+      "opts"
+    ],
+    "assertImportNamespaceSpecifier": [
+      "opts"
+    ],
+    "assertImportOrExportDeclaration": [
+      "opts"
+    ],
+    "assertImportSpecifier": [
+      "opts"
+    ],
+    "assertIndexedAccessType": [
+      "opts"
+    ],
+    "assertInferredPredicate": [
+      "opts"
+    ],
+    "assertInterfaceDeclaration": [
+      "opts"
+    ],
+    "assertInterfaceExtends": [
+      "opts"
+    ],
+    "assertInterfaceTypeAnnotation": [
+      "opts"
+    ],
+    "assertInterpreterDirective": [
+      "opts"
+    ],
+    "assertIntersectionTypeAnnotation": [
+      "opts"
+    ],
+    "assertJSX": [
+      "opts"
+    ],
+    "assertJSXAttribute": [
+      "opts"
+    ],
+    "assertJSXClosingElement": [
+      "opts"
+    ],
+    "assertJSXClosingFragment": [
+      "opts"
+    ],
+    "assertJSXElement": [
+      "opts"
+    ],
+    "assertJSXEmptyExpression": [
+      "opts"
+    ],
+    "assertJSXExpressionContainer": [
+      "opts"
+    ],
+    "assertJSXFragment": [
+      "opts"
+    ],
+    "assertJSXIdentifier": [
+      "opts"
+    ],
+    "assertJSXMemberExpression": [
+      "opts"
+    ],
+    "assertJSXNamespacedName": [
+      "opts"
+    ],
+    "assertJSXOpeningElement": [
+      "opts"
+    ],
+    "assertJSXOpeningFragment": [
+      "opts"
+    ],
+    "assertJSXSpreadAttribute": [
+      "opts"
+    ],
+    "assertJSXSpreadChild": [
+      "opts"
+    ],
+    "assertJSXText": [
+      "opts"
+    ],
+    "assertLVal": [
+      "opts"
+    ],
+    "assertLabeledStatement": [
+      "opts"
+    ],
+    "assertLiteral": [
+      "opts"
+    ],
+    "assertLogicalExpression": [
+      "opts"
+    ],
+    "assertLoop": [
+      "opts"
+    ],
+    "assertMemberExpression": [
+      "opts"
+    ],
+    "assertMetaProperty": [
+      "opts"
+    ],
+    "assertMethod": [
+      "opts"
+    ],
+    "assertMiscellaneous": [
+      "opts"
+    ],
+    "assertMixedTypeAnnotation": [
+      "opts"
+    ],
+    "assertModuleDeclaration": [
+      "opts"
+    ],
+    "assertModuleExpression": [
+      "opts"
+    ],
+    "assertModuleSpecifier": [
+      "opts"
+    ],
+    "assertNewExpression": [
+      "opts"
+    ],
+    "assertNoop": [
+      "opts"
+    ],
+    "assertNullLiteral": [
+      "opts"
+    ],
+    "assertNullLiteralTypeAnnotation": [
+      "opts"
+    ],
+    "assertNullableTypeAnnotation": [
+      "opts"
+    ],
+    "assertNumberLiteral": [
+      "opts"
+    ],
+    "assertNumberLiteralTypeAnnotation": [
+      "opts"
+    ],
+    "assertNumberTypeAnnotation": [
+      "opts"
+    ],
+    "assertNumericLiteral": [
+      "opts"
+    ],
+    "assertObjectExpression": [
+      "opts"
+    ],
+    "assertObjectMember": [
+      "opts"
+    ],
+    "assertObjectMethod": [
+      "opts"
+    ],
+    "assertObjectPattern": [
+      "opts"
+    ],
+    "assertObjectProperty": [
+      "opts"
+    ],
+    "assertObjectTypeAnnotation": [
+      "opts"
+    ],
+    "assertObjectTypeCallProperty": [
+      "opts"
+    ],
+    "assertObjectTypeIndexer": [
+      "opts"
+    ],
+    "assertObjectTypeInternalSlot": [
+      "opts"
+    ],
+    "assertObjectTypeProperty": [
+      "opts"
+    ],
+    "assertObjectTypeSpreadProperty": [
+      "opts"
+    ],
+    "assertOpaqueType": [
+      "opts"
+    ],
+    "assertOptionalCallExpression": [
+      "opts"
+    ],
+    "assertOptionalIndexedAccessType": [
+      "opts"
+    ],
+    "assertOptionalMemberExpression": [
+      "opts"
+    ],
+    "assertParenthesizedExpression": [
+      "opts"
+    ],
+    "assertPattern": [
+      "opts"
+    ],
+    "assertPatternLike": [
+      "opts"
+    ],
+    "assertPipelineBareFunction": [
+      "opts"
+    ],
+    "assertPipelinePrimaryTopicReference": [
+      "opts"
+    ],
+    "assertPipelineTopicExpression": [
+      "opts"
+    ],
+    "assertPlaceholder": [
+      "opts"
+    ],
+    "assertPrivate": [
+      "opts"
+    ],
+    "assertPrivateName": [
+      "opts"
+    ],
+    "assertProgram": [
+      "opts"
+    ],
+    "assertProperty": [
+      "opts"
+    ],
+    "assertPureish": [
+      "opts"
+    ],
+    "assertQualifiedTypeIdentifier": [
+      "opts"
+    ],
+    "assertRecordExpression": [
+      "opts"
+    ],
+    "assertRegExpLiteral": [
+      "opts"
+    ],
+    "assertRegexLiteral": [
+      "opts"
+    ],
+    "assertRestElement": [
+      "opts"
+    ],
+    "assertRestProperty": [
+      "opts"
+    ],
+    "assertReturnStatement": [
+      "opts"
+    ],
+    "assertScopable": [
+      "opts"
+    ],
+    "assertSequenceExpression": [
+      "opts"
+    ],
+    "assertSpreadElement": [
+      "opts"
+    ],
+    "assertSpreadProperty": [
+      "opts"
+    ],
+    "assertStandardized": [
+      "opts"
+    ],
+    "assertStatement": [
+      "opts"
+    ],
+    "assertStaticBlock": [
+      "opts"
+    ],
+    "assertStringLiteral": [
+      "opts"
+    ],
+    "assertStringLiteralTypeAnnotation": [
+      "opts"
+    ],
+    "assertStringTypeAnnotation": [
+      "opts"
+    ],
+    "assertSuper": [
+      "opts"
+    ],
+    "assertSwitchCase": [
+      "opts"
+    ],
+    "assertSwitchStatement": [
+      "opts"
+    ],
+    "assertSymbolTypeAnnotation": [
+      "opts"
+    ],
+    "assertTSAnyKeyword": [
+      "opts"
+    ],
+    "assertTSArrayType": [
+      "opts"
+    ],
+    "assertTSAsExpression": [
+      "opts"
+    ],
+    "assertTSBaseType": [
+      "opts"
+    ],
+    "assertTSBigIntKeyword": [
+      "opts"
+    ],
+    "assertTSBooleanKeyword": [
+      "opts"
+    ],
+    "assertTSCallSignatureDeclaration": [
+      "opts"
+    ],
+    "assertTSConditionalType": [
+      "opts"
+    ],
+    "assertTSConstructSignatureDeclaration": [
+      "opts"
+    ],
+    "assertTSConstructorType": [
+      "opts"
+    ],
+    "assertTSDeclareFunction": [
+      "opts"
+    ],
+    "assertTSDeclareMethod": [
+      "opts"
+    ],
+    "assertTSEntityName": [
+      "opts"
+    ],
+    "assertTSEnumBody": [
+      "opts"
+    ],
+    "assertTSEnumDeclaration": [
+      "opts"
+    ],
+    "assertTSEnumMember": [
+      "opts"
+    ],
+    "assertTSExportAssignment": [
+      "opts"
+    ],
+    "assertTSExpressionWithTypeArguments": [
+      "opts"
+    ],
+    "assertTSExternalModuleReference": [
+      "opts"
+    ],
+    "assertTSFunctionType": [
+      "opts"
+    ],
+    "assertTSImportEqualsDeclaration": [
+      "opts"
+    ],
+    "assertTSImportType": [
+      "opts"
+    ],
+    "assertTSIndexSignature": [
+      "opts"
+    ],
+    "assertTSIndexedAccessType": [
+      "opts"
+    ],
+    "assertTSInferType": [
+      "opts"
+    ],
+    "assertTSInstantiationExpression": [
+      "opts"
+    ],
+    "assertTSInterfaceBody": [
+      "opts"
+    ],
+    "assertTSInterfaceDeclaration": [
+      "opts"
+    ],
+    "assertTSIntersectionType": [
+      "opts"
+    ],
+    "assertTSIntrinsicKeyword": [
+      "opts"
+    ],
+    "assertTSLiteralType": [
+      "opts"
+    ],
+    "assertTSMappedType": [
+      "opts"
+    ],
+    "assertTSMethodSignature": [
+      "opts"
+    ],
+    "assertTSModuleBlock": [
+      "opts"
+    ],
+    "assertTSModuleDeclaration": [
+      "opts"
+    ],
+    "assertTSNamedTupleMember": [
+      "opts"
+    ],
+    "assertTSNamespaceExportDeclaration": [
+      "opts"
+    ],
+    "assertTSNeverKeyword": [
+      "opts"
+    ],
+    "assertTSNonNullExpression": [
+      "opts"
+    ],
+    "assertTSNullKeyword": [
+      "opts"
+    ],
+    "assertTSNumberKeyword": [
+      "opts"
+    ],
+    "assertTSObjectKeyword": [
+      "opts"
+    ],
+    "assertTSOptionalType": [
+      "opts"
+    ],
+    "assertTSParameterProperty": [
+      "opts"
+    ],
+    "assertTSParenthesizedType": [
+      "opts"
+    ],
+    "assertTSPropertySignature": [
+      "opts"
+    ],
+    "assertTSQualifiedName": [
+      "opts"
+    ],
+    "assertTSRestType": [
+      "opts"
+    ],
+    "assertTSSatisfiesExpression": [
+      "opts"
+    ],
+    "assertTSStringKeyword": [
+      "opts"
+    ],
+    "assertTSSymbolKeyword": [
+      "opts"
+    ],
+    "assertTSTemplateLiteralType": [
+      "opts"
+    ],
+    "assertTSThisType": [
+      "opts"
+    ],
+    "assertTSTupleType": [
+      "opts"
+    ],
+    "assertTSType": [
+      "opts"
+    ],
+    "assertTSTypeAliasDeclaration": [
+      "opts"
+    ],
+    "assertTSTypeAnnotation": [
+      "opts"
+    ],
+    "assertTSTypeAssertion": [
+      "opts"
+    ],
+    "assertTSTypeElement": [
+      "opts"
+    ],
+    "assertTSTypeLiteral": [
+      "opts"
+    ],
+    "assertTSTypeOperator": [
+      "opts"
+    ],
+    "assertTSTypeParameter": [
+      "opts"
+    ],
+    "assertTSTypeParameterDeclaration": [
+      "opts"
+    ],
+    "assertTSTypeParameterInstantiation": [
+      "opts"
+    ],
+    "assertTSTypePredicate": [
+      "opts"
+    ],
+    "assertTSTypeQuery": [
+      "opts"
+    ],
+    "assertTSTypeReference": [
+      "opts"
+    ],
+    "assertTSUndefinedKeyword": [
+      "opts"
+    ],
+    "assertTSUnionType": [
+      "opts"
+    ],
+    "assertTSUnknownKeyword": [
+      "opts"
+    ],
+    "assertTSVoidKeyword": [
+      "opts"
+    ],
+    "assertTaggedTemplateExpression": [
+      "opts"
+    ],
+    "assertTemplateElement": [
+      "opts"
+    ],
+    "assertTemplateLiteral": [
+      "opts"
+    ],
+    "assertTerminatorless": [
+      "opts"
+    ],
+    "assertThisExpression": [
+      "opts"
+    ],
+    "assertThisTypeAnnotation": [
+      "opts"
+    ],
+    "assertThrowStatement": [
+      "opts"
+    ],
+    "assertTopicReference": [
+      "opts"
+    ],
+    "assertTryStatement": [
+      "opts"
+    ],
+    "assertTupleExpression": [
+      "opts"
+    ],
+    "assertTupleTypeAnnotation": [
+      "opts"
+    ],
+    "assertTypeAlias": [
+      "opts"
+    ],
+    "assertTypeAnnotation": [
+      "opts"
+    ],
+    "assertTypeCastExpression": [
+      "opts"
+    ],
+    "assertTypeParameter": [
+      "opts"
+    ],
+    "assertTypeParameterDeclaration": [
+      "opts"
+    ],
+    "assertTypeParameterInstantiation": [
+      "opts"
+    ],
+    "assertTypeScript": [
+      "opts"
+    ],
+    "assertTypeofTypeAnnotation": [
+      "opts"
+    ],
+    "assertUnaryExpression": [
+      "opts"
+    ],
+    "assertUnaryLike": [
+      "opts"
+    ],
+    "assertUnionTypeAnnotation": [
+      "opts"
+    ],
+    "assertUpdateExpression": [
+      "opts"
+    ],
+    "assertUserWhitespacable": [
+      "opts"
+    ],
+    "assertV8IntrinsicIdentifier": [
+      "opts"
+    ],
+    "assertVariableDeclaration": [
+      "opts"
+    ],
+    "assertVariableDeclarator": [
+      "opts"
+    ],
+    "assertVariance": [
+      "opts"
+    ],
+    "assertVoidPattern": [
+      "opts"
+    ],
+    "assertVoidTypeAnnotation": [
+      "opts"
+    ],
+    "assertWhile": [
+      "opts"
+    ],
+    "assertWhileStatement": [
+      "opts"
+    ],
+    "assertWithStatement": [
+      "opts"
+    ],
+    "assertYieldExpression": [
+      "opts"
+    ]
+  },
+  "Hub": {
+    "constructor": [],
+    "getCode": [],
+    "getScope": [],
+    "addHelper": [
+      "name"
+    ],
+    "buildError": [
+      "node",
+      "msg",
+      "Error"
+    ]
+  }
+}

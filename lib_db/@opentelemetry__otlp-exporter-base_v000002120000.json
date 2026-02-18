@@ -1,0 +1,303 @@
+{
+  "OTLPExporterBase": {
+    "_delegate": [],
+    "constructor": [
+      "delegate"
+    ],
+    "export": [
+      "items",
+      "resultCallback"
+    ],
+    "forceFlush": [],
+    "shutdown": []
+  },
+  "BoundedQueueExportPromiseHandler": {
+    "_concurrencyLimit": [],
+    "_sendingPromises": [],
+    "constructor": [
+      "concurrencyLimit"
+    ],
+    "pushPromise": [
+      "promise"
+    ],
+    "hasReachedLimit": [],
+    "awaitAll": []
+  },
+  "popPromise": [],
+  "createBoundedQueueExportPromiseHandler": [
+    "options"
+  ],
+  "convertLegacyBrowserHttpOptions": [
+    "config",
+    "signalResourcePath",
+    "requiredHeaders"
+  ],
+  "convertLegacyHeaders": [
+    "config"
+  ],
+  "convertLegacyAgentOptions": [
+    "config"
+  ],
+  "convertLegacyHttpOptions": [
+    "config",
+    "signalIdentifier",
+    "signalResourcePath",
+    "requiredHeaders"
+  ],
+  "createLegacyOtlpBrowserExportDelegate": [
+    "config",
+    "serializer",
+    "signalResourcePath",
+    "requiredHeaders"
+  ],
+  "inferExportDelegateToUse": [
+    "configHeaders"
+  ],
+  "mergeHeaders": [
+    "userProvidedHeaders",
+    "fallbackHeaders",
+    "defaultHeaders"
+  ],
+  "validateUserProvidedUrl": [
+    "url"
+  ],
+  "mergeOtlpHttpConfigurationWithDefaults": [
+    "userProvidedConfiguration",
+    "fallbackConfiguration",
+    "defaultConfiguration"
+  ],
+  "getHttpConfigurationDefaults": [
+    "requiredHeaders",
+    "signalResourcePath"
+  ],
+  "httpAgentFactoryFromOptions": [
+    "options"
+  ],
+  "mergeOtlpNodeHttpConfigurationWithDefaults": [
+    "userProvidedConfiguration",
+    "fallbackConfiguration",
+    "defaultConfiguration"
+  ],
+  "getNodeHttpConfigurationDefaults": [
+    "requiredHeaders",
+    "signalResourcePath"
+  ],
+  "getStaticHeadersFromEnv": [
+    "signalIdentifier"
+  ],
+  "appendRootPathToUrlIfNeeded": [
+    "url"
+  ],
+  "appendResourcePathToUrl": [
+    "url",
+    "path"
+  ],
+  "getNonSpecificUrlFromEnv": [
+    "signalResourcePath"
+  ],
+  "getSpecificUrlFromEnv": [
+    "signalIdentifier"
+  ],
+  "readFileFromEnv": [
+    "signalSpecificEnvVar",
+    "nonSignalSpecificEnvVar",
+    "warningMessage"
+  ],
+  "getClientCertificateFromEnv": [
+    "signalIdentifier"
+  ],
+  "getClientKeyFromEnv": [
+    "signalIdentifier"
+  ],
+  "getRootCertificateFromEnv": [
+    "signalIdentifier"
+  ],
+  "getNodeHttpConfigurationFromEnvironment": [
+    "signalIdentifier",
+    "signalResourcePath"
+  ],
+  "validateTimeoutMillis": [
+    "timeoutMillis"
+  ],
+  "wrapStaticHeadersInFunction": [
+    "headers"
+  ],
+  "mergeOtlpSharedConfigurationWithDefaults": [
+    "userProvidedConfiguration",
+    "fallbackConfiguration",
+    "defaultConfiguration"
+  ],
+  "getSharedConfigurationDefaults": [],
+  "parseAndValidateTimeoutFromEnv": [
+    "timeoutEnvVar"
+  ],
+  "getTimeoutFromEnv": [
+    "signalIdentifier"
+  ],
+  "parseAndValidateCompressionFromEnv": [
+    "compressionEnvVar"
+  ],
+  "getCompressionFromEnv": [
+    "signalIdentifier"
+  ],
+  "getSharedConfigurationFromEnvironment": [
+    "signalIdentifier"
+  ],
+  "isExportHTTPErrorRetryable": [
+    "statusCode"
+  ],
+  "parseRetryAfterToMills": [
+    "retryAfter"
+  ],
+  "isPartialSuccessResponse": [
+    "response"
+  ],
+  "createLoggingPartialSuccessResponseHandler": [],
+  "createOtlpFetchExportDelegate": [
+    "options",
+    "serializer"
+  ],
+  "createOtlpSendBeaconExportDelegate": [
+    "options",
+    "serializer"
+  ],
+  "OTLPExportDelegate": {
+    "_diagLogger": [],
+    "_transport": [],
+    "_serializer": [],
+    "_responseHandler": [],
+    "_promiseQueue": [],
+    "_timeout": [],
+    "constructor": [
+      "transport",
+      "serializer",
+      "responseHandler",
+      "promiseQueue",
+      "timeout"
+    ],
+    "export": [
+      "internalRepresentation",
+      "resultCallback"
+    ],
+    "forceFlush": [],
+    "shutdown": []
+  },
+  "createOtlpExportDelegate": [
+    "components",
+    "settings"
+  ],
+  "createOtlpHttpExportDelegate": [
+    "options",
+    "serializer"
+  ],
+  "createOtlpNetworkExportDelegate": [
+    "options",
+    "serializer",
+    "transport"
+  ],
+  "getJitter": [],
+  "RetryingTransport": {
+    "_transport": [],
+    "constructor": [
+      "transport"
+    ],
+    "retry": [
+      "data",
+      "timeoutMillis",
+      "inMillis"
+    ],
+    "send": [
+      "data",
+      "timeoutMillis"
+    ],
+    "shutdown": []
+  },
+  "createRetryingTransport": [
+    "options"
+  ],
+  "FetchTransport": {
+    "_parameters": [],
+    "constructor": [
+      "parameters"
+    ],
+    "send": [
+      "data",
+      "timeoutMillis"
+    ],
+    "shutdown": []
+  },
+  "createFetchTransport": [
+    "parameters"
+  ],
+  "isFetchNetworkErrorRetryable": [
+    "error"
+  ],
+  "HttpExporterTransport": {
+    "_utils": [],
+    "_parameters": [],
+    "constructor": [
+      "parameters"
+    ],
+    "send": [
+      "data",
+      "timeoutMillis"
+    ],
+    "shutdown": [],
+    "_loadUtils": []
+  },
+  "requestFunctionFactory": [
+    "protocol"
+  ],
+  "createHttpExporterTransport": [
+    "parameters"
+  ],
+  "sendWithHttp": [
+    "request",
+    "url",
+    "headers",
+    "compression",
+    "userAgent",
+    "agent",
+    "data",
+    "onDone",
+    "timeoutMillis"
+  ],
+  "compressAndSend": [
+    "req",
+    "compression",
+    "data",
+    "onError"
+  ],
+  "readableFromUint8Array": [
+    "buff"
+  ],
+  "isHttpTransportNetworkErrorRetryable": [
+    "error"
+  ],
+  "SendBeaconTransport": {
+    "_params": [],
+    "constructor": [
+      "params"
+    ],
+    "send": [
+      "data"
+    ],
+    "shutdown": []
+  },
+  "createSendBeaconTransport": [
+    "parameters"
+  ],
+  "OTLPExporterError": {
+    "code": [],
+    "name": [],
+    "data": [],
+    "constructor": [
+      "message",
+      "code",
+      "data"
+    ]
+  },
+  "validateAndNormalizeHeaders": [
+    "partialHeaders"
+  ]
+}

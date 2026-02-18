@@ -1,0 +1,306 @@
+{
+  "BasicTracerProvider": {
+    "_config": [],
+    "_tracers": [],
+    "_resource": [],
+    "_activeSpanProcessor": [],
+    "constructor": [
+      "param"
+    ],
+    "getTracer": [
+      "name",
+      "version",
+      "options"
+    ],
+    "forceFlush": [],
+    "shutdown": []
+  },
+  "MultiSpanProcessor": {
+    "_spanProcessors": [],
+    "constructor": [
+      "spanProcessors"
+    ],
+    "forceFlush": [],
+    "onStart": [
+      "span",
+      "context"
+    ],
+    "onEnding": [
+      "span"
+    ],
+    "onEnd": [
+      "span"
+    ],
+    "shutdown": []
+  },
+  "SpanImpl": {
+    "_spanContext": [],
+    "kind": [],
+    "parentSpanContext": [],
+    "attributes": [],
+    "links": [],
+    "events": [],
+    "startTime": [],
+    "resource": [],
+    "instrumentationScope": [],
+    "_droppedAttributesCount": [],
+    "_droppedEventsCount": [],
+    "_droppedLinksCount": [],
+    "_attributesCount": [],
+    "name": [],
+    "status": [],
+    "endTime": [],
+    "_ended": [],
+    "_duration": [],
+    "_spanProcessor": [],
+    "_spanLimits": [],
+    "_attributeValueLengthLimit": [],
+    "_performanceStartTime": [],
+    "_performanceOffset": [],
+    "_startTimeProvided": [],
+    "constructor": [
+      "opts"
+    ],
+    "spanContext": [],
+    "setAttribute": [
+      "key",
+      "value"
+    ],
+    "setAttributes": [
+      "attributes"
+    ],
+    "addEvent": [
+      "name",
+      "attributesOrStartTime",
+      "timeStamp"
+    ],
+    "addLink": [
+      "link"
+    ],
+    "addLinks": [
+      "links"
+    ],
+    "setStatus": [
+      "status"
+    ],
+    "updateName": [
+      "name"
+    ],
+    "end": [
+      "endTime"
+    ],
+    "_getTime": [
+      "inp"
+    ],
+    "isRecording": [],
+    "recordException": [
+      "exception",
+      "time"
+    ],
+    "duration": [],
+    "ended": [],
+    "droppedAttributesCount": [],
+    "droppedEventsCount": [],
+    "droppedLinksCount": [],
+    "_isSpanEnded": [],
+    "_truncateToLimitUtil": [
+      "value",
+      "limit"
+    ],
+    "_truncateToSize": [
+      "value"
+    ]
+  },
+  "Tracer": {
+    "_sampler": [],
+    "_generalLimits": [],
+    "_spanLimits": [],
+    "_idGenerator": [],
+    "instrumentationScope": [],
+    "_resource": [],
+    "_spanProcessor": [],
+    "constructor": [
+      "instrumentationScope",
+      "config",
+      "resource",
+      "spanProcessor"
+    ],
+    "startSpan": [
+      "name",
+      "param",
+      "param"
+    ],
+    "startActiveSpan": [
+      "name",
+      "arg2",
+      "arg3",
+      "arg4"
+    ],
+    "getGeneralLimits": [],
+    "getSpanLimits": []
+  },
+  "loadDefaultConfig": [],
+  "buildSamplerFromEnv": [],
+  "getSamplerProbabilityFromEnv": [],
+  "BatchSpanProcessorBase": {
+    "_maxExportBatchSize": [],
+    "_maxQueueSize": [],
+    "_scheduledDelayMillis": [],
+    "_exportTimeoutMillis": [],
+    "_exporter": [],
+    "_isExporting": [],
+    "_finishedSpans": [],
+    "_timer": [],
+    "_shutdownOnce": [],
+    "_droppedSpansCount": [],
+    "constructor": [
+      "exporter",
+      "config"
+    ],
+    "forceFlush": [],
+    "onStart": [
+      "_span",
+      "_parentContext"
+    ],
+    "onEnd": [
+      "span"
+    ],
+    "shutdown": [],
+    "_shutdown": [],
+    "_addToBuffer": [
+      "span"
+    ],
+    "_flushAll": [],
+    "_flushOneBatch": [],
+    "_maybeStartTimer": [],
+    "_clearTimer": []
+  },
+  "doExport": [],
+  "flush": [],
+  "ConsoleSpanExporter": {
+    "export": [
+      "spans",
+      "resultCallback"
+    ],
+    "shutdown": [],
+    "forceFlush": [],
+    "_exportInfo": [
+      "span"
+    ],
+    "_sendSpans": [
+      "spans",
+      "done"
+    ]
+  },
+  "InMemorySpanExporter": {
+    "_finishedSpans": [],
+    "_stopped": [],
+    "export": [
+      "spans",
+      "resultCallback"
+    ],
+    "shutdown": [],
+    "forceFlush": [],
+    "reset": [],
+    "getFinishedSpans": []
+  },
+  "NoopSpanProcessor": {
+    "onStart": [
+      "_span",
+      "_context"
+    ],
+    "onEnd": [
+      "_span"
+    ],
+    "shutdown": [],
+    "forceFlush": []
+  },
+  "SimpleSpanProcessor": {
+    "_exporter": [],
+    "_shutdownOnce": [],
+    "_pendingExports": [],
+    "constructor": [
+      "exporter"
+    ],
+    "forceFlush": [],
+    "onStart": [
+      "_span",
+      "_parentContext"
+    ],
+    "onEnd": [
+      "span"
+    ],
+    "_doExport": [
+      "span"
+    ],
+    "shutdown": [],
+    "_shutdown": []
+  },
+  "RandomIdGenerator": {
+    "generateTraceId": [],
+    "generateSpanId": []
+  },
+  "randomFill": [
+    "buf"
+  ],
+  "toHex": [
+    "buf"
+  ],
+  "BatchSpanProcessor": {
+    "onShutdown": []
+  },
+  "getIdGenerator": [
+    "bytes"
+  ],
+  "AlwaysOffSampler": {
+    "shouldSample": [],
+    "toString": []
+  },
+  "AlwaysOnSampler": {
+    "shouldSample": [],
+    "toString": []
+  },
+  "ParentBasedSampler": {
+    "_root": [],
+    "_remoteParentSampled": [],
+    "_remoteParentNotSampled": [],
+    "_localParentSampled": [],
+    "_localParentNotSampled": [],
+    "constructor": [
+      "config"
+    ],
+    "shouldSample": [
+      "context",
+      "traceId",
+      "spanName",
+      "spanKind",
+      "attributes",
+      "links"
+    ],
+    "toString": []
+  },
+  "TraceIdRatioBasedSampler": {
+    "_ratio": [],
+    "_upperBound": [],
+    "constructor": [
+      "param"
+    ],
+    "shouldSample": [
+      "context",
+      "traceId"
+    ],
+    "toString": [],
+    "_normalize": [
+      "ratio"
+    ],
+    "_accumulate": [
+      "traceId"
+    ]
+  },
+  "mergeConfig": [
+    "userConfig"
+  ],
+  "reconfigureLimits": [
+    "userConfig"
+  ]
+}

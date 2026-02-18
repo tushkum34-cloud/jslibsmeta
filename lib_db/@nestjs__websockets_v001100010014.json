@@ -1,0 +1,352 @@
+{
+  "AbstractWsAdapter": {
+    "forceCloseConnections": [],
+    "constructor": [
+      "appOrHttpServer"
+    ],
+    "bindClientConnect": [
+      "server",
+      "callback"
+    ],
+    "bindClientDisconnect": [
+      "client",
+      "callback"
+    ],
+    "close": [
+      "server"
+    ],
+    "dispose": []
+  },
+  "ExceptionFiltersContext": {
+    "constructor": [
+      "container"
+    ],
+    "create": [
+      "instance",
+      "callback",
+      "moduleKey"
+    ],
+    "getGlobalMetadata": []
+  },
+  "WsContextCreator": {
+    "constructor": [
+      "wsProxy",
+      "exceptionFiltersContext",
+      "pipesContextCreator",
+      "pipesConsumer",
+      "guardsContextCreator",
+      "guardsConsumer",
+      "interceptorsContextCreator",
+      "interceptorsConsumer"
+    ],
+    "create": [
+      "instance",
+      "callback",
+      "moduleKey",
+      "methodName"
+    ],
+    "reflectCallbackParamtypes": [
+      "instance",
+      "callback"
+    ],
+    "reflectCallbackPattern": [
+      "callback"
+    ],
+    "createGuardsFn": [
+      "guards",
+      "instance",
+      "callback",
+      "contextType"
+    ],
+    "getMetadata": [
+      "instance",
+      "methodName",
+      "contextType"
+    ],
+    "exchangeKeysForValues": [
+      "keys",
+      "metadata",
+      "moduleContext",
+      "paramsFactory",
+      "contextFactory"
+    ],
+    "createPipesFn": [
+      "pipes",
+      "paramsOptions"
+    ],
+    "getParamValue": [
+      "value",
+      "param",
+      "pipes"
+    ]
+  },
+  "handler": [
+    "initialArgs",
+    "args"
+  ],
+  "canActivateFn": [
+    "args"
+  ],
+  "getParamsMetadata": [
+    "moduleKey"
+  ],
+  "extractValue": [
+    "param"
+  ],
+  "pipesFn": [
+    "args",
+    "param"
+  ],
+  "resolveParamValue": [
+    "param"
+  ],
+  "WsProxy": {
+    "create": [
+      "targetCallback",
+      "exceptionsHandler",
+      "targetPattern"
+    ],
+    "handleError": [
+      "exceptionsHandler",
+      "args",
+      "error"
+    ]
+  },
+  "Ack": [],
+  "WebSocketServer": [],
+  "MessageBody": [
+    "propertyOrPipe",
+    "param"
+  ],
+  "WebSocketGateway": [
+    "portOrOptions",
+    "options"
+  ],
+  "SubscribeMessage": [
+    "message"
+  ],
+  "InvalidSocketPortException": {
+    "constructor": [
+      "port",
+      "type"
+    ]
+  },
+  "WsException": {
+    "constructor": [
+      "error"
+    ],
+    "initMessage": [],
+    "getError": []
+  },
+  "BaseWsExceptionFilter": {
+    "constructor": [
+      "param"
+    ],
+    "catch": [
+      "exception",
+      "host"
+    ],
+    "handleError": [
+      "client",
+      "exception",
+      "cause"
+    ],
+    "handleUnknownError": [
+      "exception",
+      "client",
+      "data"
+    ],
+    "isExceptionObject": [
+      "err"
+    ]
+  },
+  "WsExceptionsHandler": {
+    "constructor": [],
+    "handle": [
+      "exception",
+      "host"
+    ],
+    "setCustomFilters": [
+      "filters"
+    ],
+    "invokeCustomFilters": [
+      "exception",
+      "args"
+    ]
+  },
+  "ServerAndEventStreamsFactory": {
+    "create": [
+      "server"
+    ]
+  },
+  "WsParamsFactory": {
+    "exchangeKeyForValue": [
+      "type",
+      "data",
+      "args"
+    ]
+  },
+  "GatewayMetadataExplorer": {
+    "constructor": [
+      "metadataScanner"
+    ],
+    "explore": [
+      "instance"
+    ],
+    "exploreMethodMetadata": [
+      "instancePrototype",
+      "methodName"
+    ],
+    "hasAckDecorator": [
+      "instancePrototype",
+      "methodName"
+    ],
+    "scanForServerHooks": [
+      "instance"
+    ]
+  },
+  "SocketModule": {
+    "constructor": [],
+    "register": [
+      "container",
+      "applicationConfig",
+      "graphInspector",
+      "appOptions",
+      "httpServer"
+    ],
+    "connectAllGateways": [
+      "providers",
+      "moduleName"
+    ],
+    "connectGatewayToServer": [
+      "wrapper",
+      "moduleName"
+    ],
+    "close": [],
+    "initializeAdapter": [],
+    "getContextCreator": [
+      "container"
+    ]
+  },
+  "SocketServerProvider": {
+    "constructor": [
+      "socketsContainer",
+      "applicationConfig"
+    ],
+    "scanForSocketServer": [
+      "options",
+      "port"
+    ],
+    "createSocketServer": [
+      "options",
+      "port"
+    ],
+    "decorateWithNamespace": [
+      "options",
+      "port",
+      "targetServer"
+    ],
+    "getServerOfNamespace": [
+      "options",
+      "port",
+      "server"
+    ],
+    "validateNamespace": [
+      "namespace"
+    ]
+  },
+  "SocketsContainer": {
+    "constructor": [],
+    "getAll": [],
+    "getOneByConfig": [
+      "options"
+    ],
+    "addOne": [
+      "options",
+      "host"
+    ],
+    "clear": [],
+    "generateHashByOptions": [
+      "options"
+    ]
+  },
+  "compareElementAt": [
+    "prev",
+    "curr",
+    "index"
+  ],
+  "createWsParamDecorator": [
+    "paramtype"
+  ],
+  "createPipesWsParamDecorator": [
+    "paramtype"
+  ],
+  "WebSocketsController": {
+    "constructor": [
+      "socketServerProvider",
+      "config",
+      "contextCreator",
+      "graphInspector",
+      "param"
+    ],
+    "connectGatewayToServer": [
+      "instance",
+      "metatype",
+      "moduleKey",
+      "instanceWrapperId"
+    ],
+    "subscribeToServerEvents": [
+      "instance",
+      "options",
+      "port",
+      "moduleKey",
+      "instanceWrapperId"
+    ],
+    "subscribeEvents": [
+      "instance",
+      "subscribersMap",
+      "observableServer"
+    ],
+    "getConnectionHandler": [
+      "context",
+      "instance",
+      "subscribersMap",
+      "disconnect",
+      "connection"
+    ],
+    "subscribeInitEvent": [
+      "instance",
+      "event"
+    ],
+    "subscribeConnectionEvent": [
+      "instance",
+      "event"
+    ],
+    "subscribeDisconnectEvent": [
+      "instance",
+      "event"
+    ],
+    "subscribeMessages": [
+      "subscribersMap",
+      "client",
+      "instance"
+    ],
+    "pickResult": [
+      "deferredResult"
+    ],
+    "inspectEntrypointDefinitions": [
+      "instance",
+      "port",
+      "messageHandlers",
+      "instanceWrapperId"
+    ],
+    "assignServerToProperties": [
+      "instance",
+      "server"
+    ],
+    "printSubscriptionLogs": [
+      "instance",
+      "subscribersMap"
+    ]
+  }
+}

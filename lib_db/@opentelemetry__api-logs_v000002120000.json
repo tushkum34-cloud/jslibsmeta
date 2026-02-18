@@ -1,0 +1,61 @@
+{
+  "NoopLogger": {
+    "emit": [
+      "_logRecord"
+    ]
+  },
+  "NoopLoggerProvider": {
+    "getLogger": [
+      "_name",
+      "_version",
+      "_options"
+    ]
+  },
+  "ProxyLogger": {
+    "constructor": [
+      "provider",
+      "name",
+      "version",
+      "options"
+    ],
+    "emit": [
+      "logRecord"
+    ],
+    "_getLogger": []
+  },
+  "ProxyLoggerProvider": {
+    "getLogger": [
+      "name",
+      "version",
+      "options"
+    ],
+    "_getDelegate": [],
+    "_setDelegate": [
+      "delegate"
+    ],
+    "_getDelegateLogger": [
+      "name",
+      "version",
+      "options"
+    ]
+  },
+  "LogsAPI": {
+    "constructor": [],
+    "getInstance": [],
+    "setGlobalLoggerProvider": [
+      "provider"
+    ],
+    "getLoggerProvider": [],
+    "getLogger": [
+      "name",
+      "version",
+      "options"
+    ],
+    "disable": []
+  },
+  "makeGetter": [
+    "requiredVersion",
+    "instance",
+    "fallback"
+  ]
+}

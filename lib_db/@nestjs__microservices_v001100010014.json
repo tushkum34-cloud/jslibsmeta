@@ -1,0 +1,1800 @@
+{
+  "ClientGrpcProxy": {
+    "status": [],
+    "constructor": [
+      "options"
+    ],
+    "getService": [
+      "name"
+    ],
+    "getClientByServiceName": [
+      "name"
+    ],
+    "createClientByServiceName": [
+      "name"
+    ],
+    "getKeepaliveOptions": [],
+    "createServiceMethod": [
+      "client",
+      "methodName"
+    ],
+    "createStreamServiceMethod": [
+      "client",
+      "methodName"
+    ],
+    "createUnaryServiceMethod": [
+      "client",
+      "methodName"
+    ],
+    "createClients": [],
+    "loadProto": [],
+    "lookupPackage": [
+      "root",
+      "packageName"
+    ],
+    "close": [],
+    "connect": [],
+    "send": [
+      "pattern",
+      "data"
+    ],
+    "getClient": [
+      "name"
+    ],
+    "publish": [
+      "packet",
+      "callback"
+    ],
+    "dispatchEvent": [
+      "packet"
+    ],
+    "on": [
+      "event",
+      "callback"
+    ],
+    "unwrap": []
+  },
+  "ClientKafka": {
+    "consumer": [],
+    "producer": [],
+    "constructor": [
+      "options"
+    ],
+    "subscribeToResponseOf": [
+      "pattern"
+    ],
+    "close": [],
+    "connect": [],
+    "bindTopics": [],
+    "createClient": [],
+    "createResponseCallback": [],
+    "getConsumerAssignments": [],
+    "emitBatch": [
+      "pattern",
+      "data"
+    ],
+    "commitOffsets": [
+      "topicPartitions"
+    ],
+    "unwrap": [],
+    "on": [
+      "event",
+      "callback"
+    ],
+    "registerConsumerEventListeners": [],
+    "registerProducerEventListeners": [],
+    "dispatchBatchEvent": [
+      "packets"
+    ],
+    "dispatchEvent": [
+      "packet"
+    ],
+    "getReplyTopicPartition": [
+      "topic"
+    ],
+    "publish": [
+      "partialPacket",
+      "callback"
+    ],
+    "getResponsePatternName": [
+      "pattern"
+    ],
+    "setConsumerAssignments": [
+      "data"
+    ],
+    "initializeSerializer": [
+      "options"
+    ],
+    "initializeDeserializer": [
+      "options"
+    ]
+  },
+  "cleanup": [],
+  "errorCallback": [
+    "err"
+  ],
+  "ClientMqtt": {
+    "constructor": [
+      "options"
+    ],
+    "getRequestPattern": [
+      "pattern"
+    ],
+    "getResponsePattern": [
+      "pattern"
+    ],
+    "close": [],
+    "connect": [],
+    "mergeCloseEvent": [
+      "instance",
+      "source$"
+    ],
+    "createClient": [],
+    "registerErrorListener": [
+      "client"
+    ],
+    "registerOfflineListener": [
+      "client"
+    ],
+    "registerReconnectListener": [
+      "client"
+    ],
+    "registerDisconnectListener": [
+      "client"
+    ],
+    "registerCloseListener": [
+      "client"
+    ],
+    "registerConnectListener": [
+      "client"
+    ],
+    "on": [
+      "event",
+      "callback"
+    ],
+    "unwrap": [],
+    "createResponseCallback": [],
+    "publish": [
+      "partialPacket",
+      "callback"
+    ],
+    "dispatchEvent": [
+      "packet"
+    ],
+    "unsubscribeFromChannel": [
+      "channel"
+    ],
+    "initializeSerializer": [
+      "options"
+    ],
+    "mergePacketOptions": [
+      "requestOptions"
+    ]
+  },
+  "publishPacket": [],
+  "ClientNats": {
+    "constructor": [
+      "options"
+    ],
+    "close": [],
+    "connect": [],
+    "createClient": [],
+    "handleStatusUpdates": [
+      "client"
+    ],
+    "on": [
+      "event",
+      "callback"
+    ],
+    "unwrap": [],
+    "createSubscriptionHandler": [
+      "packet",
+      "callback"
+    ],
+    "publish": [
+      "partialPacket",
+      "callback"
+    ],
+    "dispatchEvent": [
+      "packet"
+    ],
+    "initializeSerializer": [
+      "options"
+    ],
+    "initializeDeserializer": [
+      "options"
+    ],
+    "mergeHeaders": [
+      "requestHeaders"
+    ]
+  },
+  "ClientProxyFactory": {
+    "create": [
+      "clientOptions"
+    ],
+    "isCustomClientOptions": [
+      "options"
+    ]
+  },
+  "ClientProxy": {
+    "constructor": [],
+    "status": [],
+    "on": [
+      "event",
+      "callback"
+    ],
+    "send": [
+      "pattern",
+      "data"
+    ],
+    "emit": [
+      "pattern",
+      "data"
+    ],
+    "createObserver": [
+      "observer"
+    ],
+    "serializeError": [
+      "err"
+    ],
+    "serializeResponse": [
+      "response"
+    ],
+    "assignPacketId": [
+      "packet"
+    ],
+    "connect$": [
+      "instance",
+      "param",
+      "param"
+    ],
+    "getOptionsProp": [
+      "obj",
+      "prop",
+      "param"
+    ],
+    "normalizePattern": [
+      "pattern"
+    ],
+    "initializeSerializer": [
+      "options"
+    ],
+    "initializeDeserializer": [
+      "options"
+    ]
+  },
+  "ClientRedis": {
+    "constructor": [
+      "options"
+    ],
+    "getRequestPattern": [
+      "pattern"
+    ],
+    "getReplyPattern": [
+      "pattern"
+    ],
+    "close": [],
+    "connect": [],
+    "createClient": [],
+    "registerErrorListener": [
+      "client"
+    ],
+    "registerReconnectListener": [
+      "client"
+    ],
+    "registerReadyListener": [
+      "client"
+    ],
+    "registerEndListener": [
+      "client"
+    ],
+    "getClientOptions": [],
+    "on": [
+      "event",
+      "callback"
+    ],
+    "unwrap": [],
+    "createRetryStrategy": [
+      "times"
+    ],
+    "createResponseCallback": [],
+    "publish": [
+      "partialPacket",
+      "callback"
+    ],
+    "dispatchEvent": [
+      "packet"
+    ],
+    "unsubscribeFromChannel": [
+      "channel"
+    ]
+  },
+  "retryStrategy": [
+    "times"
+  ],
+  "ClientRMQ": {
+    "constructor": [
+      "options"
+    ],
+    "close": [],
+    "connect": [],
+    "createChannel": [],
+    "createClient": [],
+    "mergeDisconnectEvent": [
+      "instance",
+      "source$"
+    ],
+    "convertConnectionToPromise": [],
+    "setupChannel": [
+      "channel",
+      "resolve"
+    ],
+    "consumeChannel": [
+      "channel"
+    ],
+    "registerErrorListener": [
+      "client"
+    ],
+    "registerDisconnectListener": [
+      "client"
+    ],
+    "registerConnectListener": [
+      "client"
+    ],
+    "on": [
+      "event",
+      "callback"
+    ],
+    "unwrap": [],
+    "handleMessage": [
+      "packet",
+      "options",
+      "callback"
+    ],
+    "publish": [
+      "message",
+      "callback"
+    ],
+    "dispatchEvent": [
+      "packet"
+    ],
+    "initializeSerializer": [
+      "options"
+    ],
+    "mergeHeaders": [
+      "requestHeaders"
+    ],
+    "parseMessageContent": [
+      "content"
+    ]
+  },
+  "eventToError": [
+    "eventType"
+  ],
+  "listener": [
+    "param"
+  ],
+  "ClientTCP": {
+    "constructor": [
+      "options"
+    ],
+    "connect": [],
+    "handleResponse": [
+      "buffer"
+    ],
+    "createSocket": [],
+    "close": [],
+    "registerConnectListener": [
+      "socket"
+    ],
+    "registerErrorListener": [
+      "socket"
+    ],
+    "registerCloseListener": [
+      "socket"
+    ],
+    "handleError": [
+      "err"
+    ],
+    "handleClose": [],
+    "on": [
+      "event",
+      "callback"
+    ],
+    "unwrap": [],
+    "publish": [
+      "partialPacket",
+      "callback"
+    ],
+    "dispatchEvent": [
+      "packet"
+    ]
+  },
+  "RQM_NO_EVENT_HANDLER": [
+    "text",
+    "pattern"
+  ],
+  "RQM_NO_MESSAGE_HANDLER": [
+    "text",
+    "pattern"
+  ],
+  "NO_EVENT_HANDLER": [
+    "text",
+    "pattern"
+  ],
+  "ClientsContainer": {
+    "constructor": [],
+    "getAllClients": [],
+    "addClient": [
+      "client"
+    ],
+    "clear": []
+  },
+  "ExceptionFiltersContext": {
+    "constructor": [
+      "container",
+      "config"
+    ],
+    "create": [
+      "instance",
+      "callback",
+      "module",
+      "param",
+      "inquirerId"
+    ],
+    "getGlobalMetadata": [
+      "param",
+      "inquirerId"
+    ]
+  },
+  "RequestContextHost": {
+    "constructor": [
+      "pattern",
+      "data",
+      "context"
+    ],
+    "create": [
+      "pattern",
+      "data",
+      "context"
+    ],
+    "getData": [],
+    "getPattern": [],
+    "getContext": []
+  },
+  "RpcContextCreator": {
+    "constructor": [
+      "rpcProxy",
+      "exceptionFiltersContext",
+      "pipesContextCreator",
+      "pipesConsumer",
+      "guardsContextCreator",
+      "guardsConsumer",
+      "interceptorsContextCreator",
+      "interceptorsConsumer"
+    ],
+    "create": [
+      "instance",
+      "callback",
+      "moduleKey",
+      "methodName",
+      "param",
+      "inquirerId",
+      "param"
+    ],
+    "reflectCallbackParamtypes": [
+      "instance",
+      "callback"
+    ],
+    "createGuardsFn": [
+      "guards",
+      "instance",
+      "callback",
+      "contextType"
+    ],
+    "getMetadata": [
+      "instance",
+      "methodName",
+      "defaultCallMetadata",
+      "contextType"
+    ],
+    "exchangeKeysForValues": [
+      "keys",
+      "metadata",
+      "moduleContext",
+      "paramsFactory",
+      "contextFactory"
+    ],
+    "createPipesFn": [
+      "pipes",
+      "paramsOptions"
+    ],
+    "getParamValue": [
+      "value",
+      "param",
+      "pipes"
+    ]
+  },
+  "handler": [
+    "initialArgs",
+    "args"
+  ],
+  "canActivateFn": [
+    "args"
+  ],
+  "getParamsMetadata": [
+    "moduleKey"
+  ],
+  "extractValue": [
+    "param"
+  ],
+  "pipesFn": [
+    "args",
+    "param"
+  ],
+  "resolveParamValue": [
+    "param"
+  ],
+  "RpcProxy": {
+    "create": [
+      "targetCallback",
+      "exceptionsHandler"
+    ],
+    "handleError": [
+      "exceptionsHandler",
+      "args",
+      "error"
+    ]
+  },
+  "BaseRpcContext": {
+    "constructor": [
+      "args"
+    ],
+    "getArgs": [],
+    "getArgByIndex": [
+      "index"
+    ]
+  },
+  "KafkaContext": {
+    "constructor": [
+      "args"
+    ],
+    "getMessage": [],
+    "getPartition": [],
+    "getTopic": [],
+    "getConsumer": [],
+    "getHeartbeat": [],
+    "getProducer": []
+  },
+  "MqttContext": {
+    "constructor": [
+      "args"
+    ],
+    "getTopic": [],
+    "getPacket": []
+  },
+  "NatsContext": {
+    "constructor": [
+      "args"
+    ],
+    "getSubject": [],
+    "getHeaders": []
+  },
+  "RedisContext": {
+    "constructor": [
+      "args"
+    ],
+    "getChannel": []
+  },
+  "RmqContext": {
+    "constructor": [
+      "args"
+    ],
+    "getMessage": [],
+    "getChannelRef": [],
+    "getPattern": []
+  },
+  "TcpContext": {
+    "constructor": [
+      "args"
+    ],
+    "getSocketRef": [],
+    "getPattern": []
+  },
+  "Client": [
+    "metadata"
+  ],
+  "EventPattern": [
+    "metadata",
+    "transportOrExtras",
+    "maybeExtras"
+  ],
+  "MessagePattern": [
+    "metadata",
+    "transportOrExtras",
+    "maybeExtras"
+  ],
+  "GrpcMethod": [
+    "service",
+    "method"
+  ],
+  "GrpcStreamMethod": [
+    "service",
+    "method"
+  ],
+  "GrpcStreamCall": [
+    "service",
+    "method"
+  ],
+  "createGrpcMethodMetadata": [
+    "target",
+    "key",
+    "service",
+    "method",
+    "param"
+  ],
+  "capitalizeFirstLetter": [
+    "str"
+  ],
+  "Payload": [
+    "propertyOrPipe",
+    "param"
+  ],
+  "IdentityDeserializer": {
+    "deserialize": [
+      "value"
+    ]
+  },
+  "IncomingRequestDeserializer": {
+    "deserialize": [
+      "value",
+      "options"
+    ],
+    "isExternal": [
+      "value"
+    ],
+    "mapToSchema": [
+      "value",
+      "options"
+    ]
+  },
+  "IncomingResponseDeserializer": {
+    "deserialize": [
+      "value",
+      "options"
+    ],
+    "isExternal": [
+      "value"
+    ],
+    "mapToSchema": [
+      "value"
+    ]
+  },
+  "KafkaRequestDeserializer": {
+    "mapToSchema": [
+      "data",
+      "options"
+    ]
+  },
+  "KafkaResponseDeserializer": {
+    "deserialize": [
+      "message",
+      "options"
+    ]
+  },
+  "NatsRequestJSONDeserializer": {
+    "constructor": [],
+    "deserialize": [
+      "value",
+      "options"
+    ]
+  },
+  "NatsResponseJSONDeserializer": {
+    "constructor": [],
+    "deserialize": [
+      "value",
+      "options"
+    ]
+  },
+  "CorruptedPacketLengthException": {
+    "constructor": [
+      "rawContentLength"
+    ]
+  },
+  "EmptyResponseException": {
+    "constructor": [
+      "pattern"
+    ]
+  },
+  "InvalidGrpcDecoratorException": {
+    "constructor": [
+      "metadata"
+    ]
+  },
+  "InvalidGrpcPackageDefinitionMissingPackageDefinitionException": {
+    "constructor": []
+  },
+  "InvalidGrpcPackageDefinitionMutexException": {
+    "constructor": []
+  },
+  "InvalidGrpcPackageException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "InvalidGrpcServiceException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "InvalidJSONFormatException": {
+    "constructor": [
+      "err",
+      "data"
+    ]
+  },
+  "InvalidKafkaClientTopicException": {
+    "constructor": [
+      "topic"
+    ]
+  },
+  "InvalidMessageException": {
+    "constructor": []
+  },
+  "InvalidProtoDefinitionException": {
+    "constructor": [
+      "path"
+    ]
+  },
+  "InvalidTcpDataReceptionException": {
+    "constructor": [
+      "err"
+    ]
+  },
+  "MaxPacketLengthExceededException": {
+    "constructor": [
+      "length"
+    ]
+  },
+  "NetSocketClosedException": {
+    "constructor": []
+  },
+  "BaseRpcExceptionFilter": {
+    "catch": [
+      "exception",
+      "host"
+    ],
+    "handleUnknownError": [
+      "exception",
+      "status"
+    ],
+    "isError": [
+      "exception"
+    ]
+  },
+  "KafkaRetriableException": {
+    "getError": []
+  },
+  "RpcException": {
+    "constructor": [
+      "error"
+    ],
+    "initMessage": [],
+    "getError": []
+  },
+  "RpcExceptionsHandler": {
+    "constructor": [],
+    "handle": [
+      "exception",
+      "host"
+    ],
+    "setCustomFilters": [
+      "filters"
+    ],
+    "invokeCustomFilters": [
+      "exception",
+      "host"
+    ]
+  },
+  "Kafka": {
+    "constructor": [
+      "config"
+    ],
+    "producer": [
+      "config"
+    ],
+    "consumer": [
+      "config"
+    ],
+    "admin": [
+      "config"
+    ],
+    "logger": []
+  },
+  "KafkaJSError": {
+    "message": [],
+    "name": [],
+    "retriable": [],
+    "helpUrl": [],
+    "cause": [],
+    "constructor": [
+      "e",
+      "metadata"
+    ]
+  },
+  "KafkaJSNonRetriableError": {
+    "constructor": [
+      "e"
+    ]
+  },
+  "KafkaJSProtocolError": {
+    "code": [],
+    "type": [],
+    "constructor": [
+      "e"
+    ]
+  },
+  "KafkaJSOffsetOutOfRange": {
+    "topic": [],
+    "partition": [],
+    "constructor": [
+      "e",
+      "metadata"
+    ]
+  },
+  "KafkaJSNumberOfRetriesExceeded": {
+    "stack": [],
+    "retryCount": [],
+    "retryTime": [],
+    "constructor": [
+      "e",
+      "metadata"
+    ]
+  },
+  "KafkaJSConnectionError": {
+    "broker": [],
+    "constructor": [
+      "e",
+      "metadata"
+    ]
+  },
+  "KafkaJSRequestTimeoutError": {
+    "broker": [],
+    "correlationId": [],
+    "createdAt": [],
+    "sentAt": [],
+    "pendingDuration": [],
+    "constructor": [
+      "e",
+      "metadata"
+    ]
+  },
+  "KafkaJSMetadataNotLoaded": {
+    "constructor": []
+  },
+  "KafkaJSTopicMetadataNotLoaded": {
+    "topic": [],
+    "constructor": [
+      "e",
+      "metadata"
+    ]
+  },
+  "KafkaJSStaleTopicMetadataAssignment": {
+    "topic": [],
+    "unknownPartitions": [],
+    "constructor": [
+      "e",
+      "metadata"
+    ]
+  },
+  "KafkaJSServerDoesNotSupportApiKey": {
+    "apiKey": [],
+    "apiName": [],
+    "constructor": [
+      "e",
+      "metadata"
+    ]
+  },
+  "KafkaJSBrokerNotFound": {
+    "constructor": []
+  },
+  "KafkaJSPartialMessageError": {
+    "constructor": []
+  },
+  "KafkaJSSASLAuthenticationError": {
+    "constructor": []
+  },
+  "KafkaJSGroupCoordinatorNotFound": {
+    "constructor": []
+  },
+  "KafkaJSNotImplemented": {
+    "constructor": []
+  },
+  "KafkaJSTimeout": {
+    "constructor": []
+  },
+  "KafkaJSLockTimeout": {
+    "constructor": []
+  },
+  "KafkaJSUnsupportedMagicByteInMessageSet": {
+    "constructor": []
+  },
+  "KafkaJSDeleteGroupsError": {
+    "groups": [],
+    "constructor": [
+      "e",
+      "groups"
+    ]
+  },
+  "KafkaJSDeleteTopicRecordsError": {
+    "constructor": [
+      "metadata"
+    ]
+  },
+  "RpcParamsFactory": {
+    "exchangeKeyForValue": [
+      "type",
+      "data",
+      "args"
+    ]
+  },
+  "getGrpcPackageDefinition": [
+    "options",
+    "grpcProtoLoaderPackage"
+  ],
+  "JsonSocket": {
+    "constructor": [
+      "socket",
+      "options"
+    ],
+    "handleSend": [
+      "message",
+      "callback"
+    ],
+    "handleData": [
+      "dataRaw"
+    ],
+    "handleMessage": [
+      "message"
+    ],
+    "formatMessageData": [
+      "message"
+    ]
+  },
+  "KafkaLogger": [
+    "logger"
+  ],
+  "KafkaParser": {
+    "constructor": [
+      "config"
+    ],
+    "parse": [
+      "data"
+    ],
+    "decode": [
+      "value"
+    ]
+  },
+  "decodeHeaderByKey": [
+    "key"
+  ],
+  "KafkaReplyPartitionAssigner": {
+    "constructor": [
+      "clientKafka",
+      "config"
+    ],
+    "assign": [
+      "group"
+    ],
+    "protocol": [
+      "subscription"
+    ],
+    "getPreviousAssignment": [],
+    "decodeMember": [
+      "member"
+    ]
+  },
+  "insertAssignmentsByTopic": [
+    "topicPartition",
+    "i"
+  ],
+  "TcpSocket": {
+    "netSocket": [],
+    "constructor": [
+      "socket"
+    ],
+    "connect": [
+      "port",
+      "host"
+    ],
+    "on": [
+      "event",
+      "callback"
+    ],
+    "once": [
+      "event",
+      "callback"
+    ],
+    "end": [],
+    "sendMessage": [
+      "message",
+      "callback"
+    ],
+    "onData": [
+      "data"
+    ],
+    "emitMessage": [
+      "data"
+    ]
+  },
+  "ListenerMetadataExplorer": {
+    "constructor": [
+      "metadataScanner"
+    ],
+    "explore": [
+      "instance"
+    ],
+    "exploreMethodMetadata": [
+      "instance",
+      "instancePrototype",
+      "methodKey"
+    ],
+    "scanForClientHooks": [
+      "instance"
+    ]
+  },
+  "ListenersController": {
+    "constructor": [
+      "clientsContainer",
+      "contextCreator",
+      "container",
+      "injector",
+      "clientFactory",
+      "exceptionFiltersContext",
+      "graphInspector"
+    ],
+    "registerPatternHandlers": [
+      "instanceWrapper",
+      "serverInstance",
+      "moduleKey"
+    ],
+    "insertEntrypointDefinition": [
+      "instanceWrapper",
+      "definition",
+      "transportId"
+    ],
+    "forkJoinHandlersIfAttached": [
+      "currentReturnValue",
+      "originalArgs",
+      "handlerRef"
+    ],
+    "assignClientsToProperties": [
+      "instance"
+    ],
+    "assignClientToInstance": [
+      "instance",
+      "property",
+      "client"
+    ],
+    "createRequestScopedHandler": [
+      "wrapper",
+      "pattern",
+      "moduleRef",
+      "moduleKey",
+      "methodKey",
+      "param",
+      "param"
+    ],
+    "getContextId": [
+      "request",
+      "isTreeDurable"
+    ],
+    "transformToObservable": [
+      "resultOrDeferred"
+    ]
+  },
+  "eventHandler": [
+    "param"
+  ],
+  "requestScopedHandler": [
+    "param"
+  ],
+  "MicroservicesModule": {
+    "constructor": [],
+    "register": [
+      "container",
+      "graphInspector",
+      "config",
+      "options"
+    ],
+    "setupListeners": [
+      "container",
+      "serverInstance"
+    ],
+    "setupClients": [
+      "container"
+    ],
+    "bindListeners": [
+      "controllers",
+      "serverInstance",
+      "moduleName"
+    ],
+    "bindClients": [
+      "items"
+    ],
+    "close": []
+  },
+  "ClientsModule": {
+    "register": [
+      "options"
+    ],
+    "registerAsync": [
+      "options"
+    ],
+    "createAsyncProviders": [],
+    "createAsyncOptionsProvider": [],
+    "createFactoryWrapper": [],
+    "assignOnAppShutdownHook": []
+  },
+  "NestMicroservice": {
+    "status": [],
+    "constructor": [
+      "container",
+      "param",
+      "graphInspector",
+      "applicationConfig"
+    ],
+    "createServer": [
+      "config"
+    ],
+    "registerModules": [],
+    "registerListeners": [],
+    "useWebSocketAdapter": [
+      "adapter"
+    ],
+    "useGlobalFilters": [
+      "param"
+    ],
+    "useGlobalPipes": [
+      "param"
+    ],
+    "useGlobalInterceptors": [
+      "param"
+    ],
+    "useGlobalGuards": [
+      "param"
+    ],
+    "init": [],
+    "listen": [],
+    "close": [],
+    "setIsInitialized": [
+      "isInitialized"
+    ],
+    "setIsTerminated": [
+      "isTerminated"
+    ],
+    "setIsInitHookCalled": [
+      "isInitHookCalled"
+    ],
+    "on": [
+      "event",
+      "callback"
+    ],
+    "unwrap": [],
+    "closeApplication": [],
+    "dispose": [],
+    "resolveAsyncOptions": [
+      "config"
+    ],
+    "applyInstanceDecoratorIfRegistered": [
+      "param"
+    ]
+  },
+  "MqttRecord": {
+    "constructor": [
+      "data",
+      "options"
+    ]
+  },
+  "MqttRecordBuilder": {
+    "constructor": [
+      "data"
+    ],
+    "setData": [
+      "data"
+    ],
+    "setQoS": [
+      "qos"
+    ],
+    "setRetain": [
+      "retain"
+    ],
+    "setDup": [
+      "dup"
+    ],
+    "setProperties": [
+      "properties"
+    ],
+    "build": []
+  },
+  "NatsRecord": {
+    "constructor": [
+      "data",
+      "headers"
+    ]
+  },
+  "NatsRecordBuilder": {
+    "constructor": [
+      "data"
+    ],
+    "setHeaders": [
+      "headers"
+    ],
+    "setData": [
+      "data"
+    ],
+    "build": []
+  },
+  "RmqRecord": {
+    "constructor": [
+      "data",
+      "options"
+    ]
+  },
+  "RmqRecordBuilder": {
+    "constructor": [
+      "data"
+    ],
+    "setOptions": [
+      "options"
+    ],
+    "setData": [
+      "data"
+    ],
+    "build": []
+  },
+  "IdentitySerializer": {
+    "serialize": [
+      "value"
+    ]
+  },
+  "KafkaRequestSerializer": {
+    "serialize": [
+      "value"
+    ],
+    "encode": [
+      "value"
+    ]
+  },
+  "MqttRecordSerializer": {
+    "serialize": [
+      "packet"
+    ]
+  },
+  "NatsRecordSerializer": {
+    "constructor": [],
+    "serialize": [
+      "packet"
+    ]
+  },
+  "RmqRecordSerializer": {
+    "serialize": [
+      "packet"
+    ]
+  },
+  "ServerFactory": {
+    "create": [
+      "microserviceOptions"
+    ]
+  },
+  "ServerGrpc": {
+    "status": [],
+    "constructor": [
+      "options"
+    ],
+    "listen": [
+      "callback"
+    ],
+    "start": [
+      "callback"
+    ],
+    "bindEvents": [],
+    "getServiceNames": [
+      "grpcPkg"
+    ],
+    "getKeepaliveOptions": [],
+    "createService": [
+      "grpcService",
+      "name"
+    ],
+    "getMessageHandler": [
+      "serviceName",
+      "methodName",
+      "streaming",
+      "grpcMethod"
+    ],
+    "createPattern": [
+      "service",
+      "methodName",
+      "streaming"
+    ],
+    "createServiceMethod": [
+      "methodHandler",
+      "protoNativeHandler",
+      "streamType"
+    ],
+    "createUnaryServiceMethod": [
+      "methodHandler"
+    ],
+    "createStreamServiceMethod": [
+      "methodHandler"
+    ],
+    "unwrap": [],
+    "on": [
+      "event",
+      "callback"
+    ],
+    "writeObservableToGrpc": [
+      "source",
+      "call"
+    ],
+    "createRequestStreamMethod": [
+      "methodHandler",
+      "isResponseStream"
+    ],
+    "createStreamCallMethod": [
+      "methodHandler",
+      "isResponseStream"
+    ],
+    "close": [],
+    "deserialize": [
+      "obj"
+    ],
+    "addHandler": [
+      "pattern",
+      "callback",
+      "param"
+    ],
+    "createClient": [],
+    "lookupPackage": [
+      "root",
+      "packageName"
+    ],
+    "loadProto": [],
+    "collectDeepServices": [
+      "name",
+      "grpcDefinition",
+      "accumulator"
+    ],
+    "parseDeepServiceName": [
+      "name",
+      "key"
+    ],
+    "createServices": [
+      "grpcPkg",
+      "packageName"
+    ],
+    "bufferUntilDrained": []
+  },
+  "cancelHandler": [],
+  "drain": [],
+  "drainBuffer": [],
+  "ServerKafka": {
+    "constructor": [
+      "options"
+    ],
+    "listen": [
+      "callback"
+    ],
+    "close": [],
+    "start": [
+      "callback"
+    ],
+    "registerConsumerEventListeners": [],
+    "registerProducerEventListeners": [],
+    "createClient": [],
+    "bindEvents": [
+      "consumer"
+    ],
+    "getMessageHandler": [],
+    "getPublisher": [
+      "replyTopic",
+      "replyPartition",
+      "correlationId",
+      "context"
+    ],
+    "handleMessage": [
+      "payload"
+    ],
+    "unwrap": [],
+    "on": [
+      "event",
+      "callback"
+    ],
+    "combineStreamsAndThrowIfRetriable": [
+      "response$",
+      "replayStream$"
+    ],
+    "sendMessage": [
+      "message",
+      "replyTopic",
+      "replyPartition",
+      "correlationId",
+      "context"
+    ],
+    "assignIsDisposedHeader": [
+      "outgoingResponse",
+      "outgoingMessage"
+    ],
+    "assignErrorHeader": [
+      "outgoingResponse",
+      "outgoingMessage"
+    ],
+    "assignCorrelationIdHeader": [
+      "correlationId",
+      "outgoingMessage"
+    ],
+    "assignReplyPartition": [
+      "replyPartition",
+      "outgoingMessage"
+    ],
+    "handleEvent": [
+      "pattern",
+      "packet",
+      "context"
+    ],
+    "initializeSerializer": [
+      "options"
+    ],
+    "initializeDeserializer": [
+      "options"
+    ]
+  },
+  "ServerMqtt": {
+    "constructor": [
+      "options"
+    ],
+    "listen": [
+      "callback"
+    ],
+    "start": [
+      "callback"
+    ],
+    "bindEvents": [
+      "mqttClient"
+    ],
+    "close": [],
+    "createMqttClient": [],
+    "getMessageHandler": [
+      "pub"
+    ],
+    "handleMessage": [
+      "channel",
+      "buffer",
+      "pub",
+      "originalPacket"
+    ],
+    "getPublisher": [
+      "client",
+      "context",
+      "id"
+    ],
+    "parseMessage": [
+      "content"
+    ],
+    "matchMqttPattern": [
+      "pattern",
+      "topic"
+    ],
+    "getHandlerByPattern": [
+      "pattern"
+    ],
+    "removeHandlerKeySharedPrefix": [
+      "handlerKey"
+    ],
+    "getRequestPattern": [
+      "pattern"
+    ],
+    "getReplyPattern": [
+      "pattern"
+    ],
+    "registerErrorListener": [
+      "client"
+    ],
+    "registerReconnectListener": [
+      "client"
+    ],
+    "registerDisconnectListener": [
+      "client"
+    ],
+    "registerCloseListener": [
+      "client"
+    ],
+    "registerConnectListener": [
+      "client"
+    ],
+    "unwrap": [],
+    "on": [
+      "event",
+      "callback"
+    ],
+    "initializeSerializer": [
+      "options"
+    ]
+  },
+  "ServerNats": {
+    "constructor": [
+      "options"
+    ],
+    "listen": [
+      "callback"
+    ],
+    "start": [
+      "callback"
+    ],
+    "bindEvents": [
+      "client"
+    ],
+    "waitForGracePeriod": [],
+    "close": [],
+    "createNatsClient": [],
+    "getMessageHandler": [
+      "channel"
+    ],
+    "handleMessage": [
+      "channel",
+      "natsMsg"
+    ],
+    "getPublisher": [
+      "natsMsg",
+      "id",
+      "ctx"
+    ],
+    "handleStatusUpdates": [
+      "client"
+    ],
+    "unwrap": [],
+    "on": [
+      "event",
+      "callback"
+    ],
+    "initializeSerializer": [
+      "options"
+    ],
+    "initializeDeserializer": [
+      "options"
+    ]
+  },
+  "subscribe": [
+    "channel",
+    "queue"
+  ],
+  "ServerRedis": {
+    "constructor": [
+      "options"
+    ],
+    "listen": [
+      "callback"
+    ],
+    "start": [
+      "callback"
+    ],
+    "bindEvents": [
+      "subClient",
+      "pubClient"
+    ],
+    "close": [],
+    "createRedisClient": [],
+    "getMessageHandler": [
+      "pub"
+    ],
+    "handleMessage": [
+      "channel",
+      "buffer",
+      "pub",
+      "pattern"
+    ],
+    "getPublisher": [
+      "pub",
+      "pattern",
+      "id",
+      "ctx"
+    ],
+    "parseMessage": [
+      "content"
+    ],
+    "getRequestPattern": [
+      "pattern"
+    ],
+    "getReplyPattern": [
+      "pattern"
+    ],
+    "registerErrorListener": [
+      "client"
+    ],
+    "registerReconnectListener": [
+      "client"
+    ],
+    "registerReadyListener": [
+      "client"
+    ],
+    "registerEndListener": [
+      "client"
+    ],
+    "getClientOptions": [],
+    "createRetryStrategy": [
+      "times"
+    ],
+    "unwrap": [],
+    "on": [
+      "event",
+      "callback"
+    ]
+  },
+  "ServerRMQ": {
+    "constructor": [
+      "options"
+    ],
+    "listen": [
+      "callback"
+    ],
+    "close": [],
+    "start": [
+      "callback"
+    ],
+    "createClient": [],
+    "registerConnectListener": [],
+    "registerDisconnectListener": [],
+    "setupChannel": [
+      "channel",
+      "callback"
+    ],
+    "handleMessage": [
+      "message",
+      "channel"
+    ],
+    "handleEvent": [
+      "pattern",
+      "packet",
+      "context"
+    ],
+    "sendMessage": [
+      "message",
+      "replyTo",
+      "correlationId",
+      "context"
+    ],
+    "unwrap": [],
+    "on": [
+      "event",
+      "callback"
+    ],
+    "getHandlerByPattern": [
+      "pattern"
+    ],
+    "initializeSerializer": [
+      "options"
+    ],
+    "parseMessageContent": [
+      "content"
+    ],
+    "initializeWildcardHandlersIfExist": [],
+    "matchRmqPattern": [
+      "pattern",
+      "routingKey"
+    ]
+  },
+  "publish": [
+    "data"
+  ],
+  "ServerTCP": {
+    "constructor": [
+      "options"
+    ],
+    "listen": [
+      "callback"
+    ],
+    "close": [],
+    "bindHandler": [
+      "socket"
+    ],
+    "handleMessage": [
+      "socket",
+      "rawMessage"
+    ],
+    "handleClose": [],
+    "unwrap": [],
+    "on": [
+      "event",
+      "callback"
+    ],
+    "init": [],
+    "registerListeningListener": [
+      "socket"
+    ],
+    "registerErrorListener": [
+      "socket"
+    ],
+    "registerCloseListener": [
+      "socket"
+    ],
+    "getSocketInstance": [
+      "socket"
+    ]
+  },
+  "Server": {
+    "constructor": [],
+    "status": [],
+    "setTransportId": [
+      "transportId"
+    ],
+    "setOnProcessingStartHook": [
+      "hook"
+    ],
+    "setOnProcessingEndHook": [
+      "hook"
+    ],
+    "addHandler": [
+      "pattern",
+      "callback",
+      "param",
+      "param"
+    ],
+    "getHandlers": [],
+    "getHandlerByPattern": [
+      "pattern"
+    ],
+    "send": [
+      "stream$",
+      "respond"
+    ],
+    "handleEvent": [
+      "pattern",
+      "packet",
+      "context"
+    ],
+    "transformToObservable": [
+      "resultOrDeferred"
+    ],
+    "getOptionsProp": [
+      "obj",
+      "prop",
+      "param"
+    ],
+    "handleError": [
+      "error"
+    ],
+    "loadPackage": [
+      "name",
+      "ctx",
+      "loader"
+    ],
+    "initializeSerializer": [
+      "options"
+    ],
+    "initializeDeserializer": [
+      "options"
+    ],
+    "getRouteFromPattern": [
+      "pattern"
+    ],
+    "normalizePattern": [
+      "pattern"
+    ]
+  },
+  "getTail": [
+    "handler"
+  ],
+  "scheduleOnNextTick": [
+    "data"
+  ],
+  "createRpcParamDecorator": [
+    "paramtype"
+  ],
+  "createPipesRpcParamDecorator": [
+    "paramtype"
+  ],
+  "transformPatternToRoute": [
+    "pattern"
+  ]
+}

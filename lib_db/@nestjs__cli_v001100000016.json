@@ -1,0 +1,834 @@
+{
+  "AbstractAction": {},
+  "AddAction": {
+    "handle": [
+      "inputs",
+      "options",
+      "extraFlags"
+    ],
+    "getSourceRoot": [
+      "inputs"
+    ],
+    "installPackage": [
+      "collectionName",
+      "tagName"
+    ],
+    "addLibrary": [
+      "collectionName",
+      "options",
+      "extraFlags"
+    ],
+    "getLibraryName": [
+      "inputs"
+    ],
+    "getPackageName": [
+      "library"
+    ],
+    "getCollectionName": [
+      "library",
+      "packageName"
+    ],
+    "getTagName": [
+      "packageName"
+    ]
+  },
+  "BuildAction": {
+    "constructor": [],
+    "handle": [
+      "commandInputs",
+      "commandOptions"
+    ],
+    "runBuild": [
+      "commandInputs",
+      "commandOptions",
+      "watchMode",
+      "watchAssetsMode",
+      "param",
+      "onSuccess"
+    ],
+    "runSwc": [
+      "configuration",
+      "appName",
+      "pathToTsconfig",
+      "watchMode",
+      "options",
+      "tsOptions",
+      "onSuccess"
+    ],
+    "runWebpack": [
+      "configuration",
+      "appName",
+      "commandOptions",
+      "pathToTsconfig",
+      "debug",
+      "watchMode",
+      "onSuccess"
+    ],
+    "runTsc": [
+      "watchMode",
+      "options",
+      "configuration",
+      "pathToTsconfig",
+      "appName",
+      "onSuccess"
+    ],
+    "getWebpackConfigFactoryByPath": [
+      "webpackPath",
+      "defaultPath"
+    ]
+  },
+  "GenerateAction": {
+    "handle": [
+      "inputs",
+      "options"
+    ]
+  },
+  "generateFiles": [
+    "inputs"
+  ],
+  "mapSchematicOptions": [
+    "options"
+  ],
+  "InfoAction": {
+    "constructor": [],
+    "handle": [],
+    "displayBanner": [],
+    "displaySystemInformation": [],
+    "displayPackageManagerVersion": [],
+    "displayNestInformation": [],
+    "displayNestInformationFromPackage": [],
+    "displayCliVersion": [],
+    "readProjectPackageDependencies": [],
+    "displayNestVersions": [
+      "dependencies"
+    ],
+    "displayWarningMessage": [
+      "nestDependencies"
+    ],
+    "buildNestVersionsWarningMessage": [
+      "nestDependencies"
+    ],
+    "buildNestVersionsMessage": [
+      "dependencies"
+    ],
+    "collectNestDependencies": [
+      "dependencies"
+    ],
+    "format": [
+      "dependencies"
+    ],
+    "rightPad": [
+      "name",
+      "length"
+    ]
+  },
+  "NewAction": {
+    "handle": [
+      "inputs",
+      "options"
+    ]
+  },
+  "getApplicationNameInput": [
+    "inputs"
+  ],
+  "getPackageManagerInput": [
+    "inputs"
+  ],
+  "getProjectDirectory": [
+    "applicationName",
+    "directoryOption"
+  ],
+  "askForMissingInformation": [
+    "inputs",
+    "options"
+  ],
+  "replaceInputMissingInformation": [
+    "inputs",
+    "answer"
+  ],
+  "generateApplicationFiles": [
+    "args",
+    "options"
+  ],
+  "installPackages": [
+    "options",
+    "dryRunMode",
+    "installDirectory"
+  ],
+  "askForPackageManager": [],
+  "initializeGitRepository": [
+    "dir"
+  ],
+  "createGitIgnoreFile": [
+    "dir",
+    "content"
+  ],
+  "printCollective": [],
+  "print": [
+    "param"
+  ],
+  "retrieveCols": [],
+  "fileExists": [
+    "path"
+  ],
+  "exit": [],
+  "StartAction": {
+    "handle": [
+      "commandInputs",
+      "commandOptions"
+    ],
+    "createOnSuccessHook": [
+      "entryFile",
+      "sourceRoot",
+      "debugFlag",
+      "outDirName",
+      "binaryToRun",
+      "options"
+    ],
+    "spawnChildProcess": [
+      "entryFile",
+      "sourceRoot",
+      "debug",
+      "outDirName",
+      "binaryToRun",
+      "options"
+    ]
+  },
+  "bootstrap": [],
+  "AbstractCommand": {
+    "constructor": [
+      "action"
+    ]
+  },
+  "AddCommand": {
+    "load": [
+      "program"
+    ]
+  },
+  "BuildCommand": {
+    "load": [
+      "program"
+    ]
+  },
+  "CommandLoader": {
+    "load": [
+      "program"
+    ],
+    "handleInvalidCommand": [
+      "program"
+    ]
+  },
+  "GenerateCommand": {
+    "load": [
+      "program"
+    ],
+    "buildDescription": [],
+    "buildSchematicsListAsTable": [
+      "schematics"
+    ],
+    "getCollection": [],
+    "getSchematics": [
+      "collection"
+    ]
+  },
+  "InfoCommand": {
+    "load": [
+      "program"
+    ]
+  },
+  "NewCommand": {
+    "load": [
+      "program"
+    ]
+  },
+  "StartCommand": {
+    "load": [
+      "program"
+    ]
+  },
+  "collect": [
+    "value",
+    "previous"
+  ],
+  "AssetsManager": {
+    "constructor": [],
+    "closeWatchers": [],
+    "copyAssets": [
+      "configuration",
+      "appName",
+      "outDir",
+      "watchAssetsMode"
+    ],
+    "actionOnFile": [
+      "option"
+    ]
+  },
+  "closeFn": [],
+  "BaseCompiler": {
+    "constructor": [
+      "pluginsLoader"
+    ],
+    "loadPlugins": [
+      "configuration",
+      "tsConfigPath",
+      "appName"
+    ],
+    "getPathToSource": [
+      "configuration",
+      "tsConfigPath",
+      "appName"
+    ]
+  },
+  "Compiler": {
+    "constructor": [
+      "pluginsLoader",
+      "tsConfigProvider",
+      "typescriptLoader"
+    ],
+    "run": [
+      "configuration",
+      "tsConfigPath",
+      "appName",
+      "_extras",
+      "onSuccess"
+    ],
+    "reportAfterCompilationDiagnostic": [
+      "program",
+      "emitResult",
+      "tsBinary",
+      "formatHost"
+    ]
+  },
+  "swcDefaultsFactory": [
+    "tsOptions",
+    "configuration"
+  ],
+  "convertPath": [
+    "windowsPath"
+  ],
+  "webpackDefaultsFactory": [
+    "sourceRoot",
+    "relativeSourceRoot",
+    "entryFilename",
+    "param",
+    "param",
+    "plugins"
+  ],
+  "isAnyPluginRegistered": [
+    "plugins"
+  ],
+  "appendTsExtension": [
+    "path"
+  ],
+  "copyPathResolve": [
+    "filePath",
+    "outDir",
+    "up"
+  ],
+  "dealWith": [
+    "inPath",
+    "up"
+  ],
+  "depth": [
+    "string"
+  ],
+  "deleteOutDirIfEnabled": [
+    "configuration",
+    "appName",
+    "dirPath"
+  ],
+  "getBuilder": [
+    "configuration",
+    "cmdOptions",
+    "appName"
+  ],
+  "getTscConfigPath": [
+    "configuration",
+    "cmdOptions",
+    "appName"
+  ],
+  "getValueOrDefault": [
+    "configuration",
+    "propertyPath",
+    "appName",
+    "key",
+    "param",
+    "defaultValue"
+  ],
+  "getValueOfPath": [
+    "object",
+    "propertyPath"
+  ],
+  "stripDoubleQuotes": [
+    "text"
+  ],
+  "getWebpackConfigPath": [
+    "configuration",
+    "cmdOptions",
+    "appName"
+  ],
+  "listenForManualRestart": [
+    "callback"
+  ],
+  "stdinListener": [
+    "data"
+  ],
+  "displayManualRestartTip": [],
+  "TsConfigProvider": {
+    "constructor": [
+      "typescriptLoader"
+    ],
+    "getByConfigFilename": [
+      "configFilename"
+    ]
+  },
+  "tsconfigPathsBeforeHookFactory": [
+    "compilerOptions"
+  ],
+  "visitNode": [
+    "node"
+  ],
+  "getNotAliasedPath": [
+    "sf",
+    "matcher",
+    "text"
+  ],
+  "PluginMetadataGenerator": {
+    "constructor": [],
+    "generate": [
+      "options"
+    ],
+    "traverseAndPrintMetadata": [
+      "programRef",
+      "visitors",
+      "outputDir",
+      "filename"
+    ]
+  },
+  "onTypeCheckOrProgramInit": [
+    "program"
+  ],
+  "PluginMetadataPrinter": {
+    "print": [
+      "metadata",
+      "typeImports",
+      "options",
+      "tsBinary"
+    ],
+    "recursivelyCreatePropertyAssignment": [
+      "identifier",
+      "meta",
+      "tsBinary"
+    ],
+    "createTypeImportVariableStatement": [
+      "typeImports",
+      "tsBinary"
+    ],
+    "createPropertyAssignment": [
+      "identifier",
+      "target",
+      "tsBinary"
+    ]
+  },
+  "PluginsLoader": {
+    "load": [
+      "param",
+      "param"
+    ],
+    "resolvePluginReferences": [
+      "pluginNames"
+    ]
+  },
+  "ForkedTypeChecker": {
+    "constructor": [],
+    "run": [
+      "configuration",
+      "tsConfigPath",
+      "appName",
+      "extras"
+    ]
+  },
+  "SwcCompiler": {
+    "constructor": [
+      "pluginsLoader"
+    ],
+    "run": [
+      "configuration",
+      "tsConfigPath",
+      "appName",
+      "extras",
+      "onSuccess"
+    ],
+    "runTypeChecker": [
+      "configuration",
+      "tsConfigPath",
+      "appName",
+      "extras"
+    ],
+    "runSwc": [
+      "options",
+      "extras",
+      "swcrcFilePath"
+    ],
+    "loadSwcCliBinary": [],
+    "getSwcRcFileContentIfExists": [
+      "swcrcFilePath"
+    ],
+    "deepMerge": [
+      "target",
+      "source"
+    ],
+    "debounce": [
+      "callback",
+      "wait"
+    ],
+    "watchFilesInSrcDir": [
+      "options",
+      "onFileAdded"
+    ],
+    "watchFilesInOutDir": [
+      "options",
+      "onChange"
+    ]
+  },
+  "TypeCheckerHost": {
+    "constructor": [],
+    "run": [
+      "tsconfigPath",
+      "options"
+    ],
+    "runInWatchMode": [
+      "tsconfigPath",
+      "tsBinary",
+      "options"
+    ],
+    "runOnce": [
+      "tsconfigPath",
+      "tsBinary",
+      "options"
+    ],
+    "createWatchCompilerHost": [
+      "tsBinary",
+      "tsConfigPath",
+      "options",
+      "reportWatchStatusCallback"
+    ]
+  },
+  "reportWatchStatusCallback": [
+    "diagnostic"
+  ],
+  "TypeScriptBinaryLoader": {
+    "load": [],
+    "getModulePaths": []
+  },
+  "WatchCompiler": {
+    "constructor": [
+      "pluginsLoader",
+      "tsConfigProvider",
+      "typescriptLoader"
+    ],
+    "run": [
+      "configuration",
+      "tsConfigPath",
+      "appName",
+      "extras",
+      "onSuccess"
+    ],
+    "overrideCreateProgramFn": [
+      "host",
+      "manualRestart",
+      "projectReferences",
+      "plugins"
+    ],
+    "createDiagnosticReporter": [
+      "diagnosticReporter"
+    ],
+    "createWatchStatusChanged": [
+      "watchStatusReporter",
+      "onSuccess"
+    ]
+  },
+  "WebpackCompiler": {
+    "constructor": [
+      "pluginsLoader"
+    ],
+    "run": [
+      "configuration",
+      "tsConfigPath",
+      "appName",
+      "extras",
+      "onSuccess"
+    ],
+    "createAfterCallback": [
+      "onSuccess",
+      "assetsManager",
+      "watchMode",
+      "watch"
+    ]
+  },
+  "NestConfigurationLoader": {
+    "constructor": [
+      "reader"
+    ],
+    "load": [
+      "name"
+    ]
+  },
+  "AbstractPackageManager": {
+    "constructor": [
+      "runner"
+    ],
+    "install": [
+      "directory",
+      "packageManager"
+    ],
+    "version": [],
+    "addProduction": [
+      "dependencies",
+      "tag"
+    ],
+    "addDevelopment": [
+      "dependencies",
+      "tag"
+    ],
+    "add": [
+      "commandArguments"
+    ],
+    "getProduction": [],
+    "getDevelopment": [],
+    "readPackageJson": [],
+    "updateProduction": [
+      "dependencies"
+    ],
+    "updateDevelopment": [
+      "dependencies"
+    ],
+    "update": [
+      "commandArguments"
+    ],
+    "upgradeProduction": [
+      "dependencies",
+      "tag"
+    ],
+    "upgradeDevelopment": [
+      "dependencies",
+      "tag"
+    ],
+    "deleteProduction": [
+      "dependencies"
+    ],
+    "deleteDevelopment": [
+      "dependencies"
+    ],
+    "delete": [
+      "commandArguments"
+    ]
+  },
+  "NpmPackageManager": {
+    "constructor": [],
+    "name": [],
+    "cli": []
+  },
+  "PackageManagerFactory": {
+    "create": [
+      "name"
+    ],
+    "find": []
+  },
+  "PnpmPackageManager": {
+    "constructor": [],
+    "name": [],
+    "cli": []
+  },
+  "YarnPackageManager": {
+    "constructor": [],
+    "name": [],
+    "cli": []
+  },
+  "generateInput": [
+    "name",
+    "message"
+  ],
+  "generateSelect": [
+    "name"
+  ],
+  "FileSystemReader": {
+    "constructor": [
+      "directory"
+    ],
+    "list": [],
+    "read": [
+      "name"
+    ],
+    "readAnyOf": [
+      "filenames"
+    ]
+  },
+  "ReaderFileLackPermissionsError": {
+    "constructor": [
+      "filePath",
+      "fsErrorCode"
+    ]
+  },
+  "AbstractRunner": {
+    "constructor": [
+      "binary",
+      "param"
+    ],
+    "run": [
+      "command",
+      "param",
+      "param"
+    ],
+    "rawFullCommand": [
+      "command"
+    ]
+  },
+  "GitRunner": {
+    "constructor": []
+  },
+  "NpmRunner": {
+    "constructor": []
+  },
+  "PnpmRunner": {
+    "constructor": []
+  },
+  "RunnerFactory": {
+    "create": [
+      "runner"
+    ]
+  },
+  "SchematicRunner": {
+    "constructor": [],
+    "getModulePaths": [],
+    "findClosestSchematicsBinary": []
+  },
+  "YarnRunner": {
+    "constructor": []
+  },
+  "AbstractCollection": {
+    "constructor": [
+      "collection",
+      "runner"
+    ],
+    "execute": [
+      "name",
+      "options",
+      "extraFlags"
+    ],
+    "buildCommandLine": [
+      "name",
+      "options"
+    ],
+    "buildOptions": [
+      "options"
+    ]
+  },
+  "CollectionFactory": {
+    "create": [
+      "collection"
+    ]
+  },
+  "CustomCollection": {
+    "getSchematics": []
+  },
+  "NestCollection": {
+    "constructor": [
+      "runner"
+    ],
+    "execute": [
+      "name",
+      "options"
+    ],
+    "getSchematics": [],
+    "validate": [
+      "name"
+    ]
+  },
+  "SchematicOption": {
+    "constructor": [
+      "name",
+      "value"
+    ],
+    "normalizedName": [],
+    "toCommandString": [],
+    "format": []
+  },
+  "normalizeToKebabOrSnakeCase": [
+    "str"
+  ],
+  "getDefaultTsconfigPath": [],
+  "gracefullyExitOnPromptError": [
+    "err"
+  ],
+  "isModuleAvailable": [
+    "path"
+  ],
+  "loadConfiguration": [],
+  "localBinExists": [],
+  "loadLocalBinCommandLoader": [],
+  "osName": [
+    "platform",
+    "release"
+  ],
+  "shouldAskForProject": [
+    "schematic",
+    "configurationProjects",
+    "appName"
+  ],
+  "shouldGenerateSpec": [
+    "configuration",
+    "schematic",
+    "appName",
+    "specValue",
+    "specPassedAsInput"
+  ],
+  "shouldGenerateFlat": [
+    "configuration",
+    "appName",
+    "flatValue"
+  ],
+  "getSpecFileSuffix": [
+    "configuration",
+    "appName",
+    "specFileSuffixValue"
+  ],
+  "askForProjectName": [
+    "promptQuestion",
+    "projects"
+  ],
+  "moveDefaultProjectToStart": [
+    "configuration",
+    "defaultProjectName",
+    "defaultLabel"
+  ],
+  "hasValidOptionFlag": [
+    "queriedOptionName",
+    "options",
+    "param"
+  ],
+  "getRemainingFlags": [
+    "cli"
+  ],
+  "camelCase": [
+    "flag"
+  ],
+  "treeKillSync": [
+    "pid",
+    "signal"
+  ],
+  "getAllPid": [],
+  "getAllChilds": [
+    "pid"
+  ],
+  "find": [
+    "pid"
+  ],
+  "killPid": [
+    "pid",
+    "signal"
+  ],
+  "assertNonArray": [
+    "value"
+  ]
+}

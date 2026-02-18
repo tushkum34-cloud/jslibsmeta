@@ -1,0 +1,48 @@
+{
+  "RedisInstrumentation": {
+    "COMPONENT": [],
+    "constructor": [
+      "param"
+    ],
+    "setConfig": [
+      "param"
+    ],
+    "init": [],
+    "_getInstrumentationNodeModuleDefinition": [
+      "basePackageName"
+    ],
+    "_getPatchExtendWithCommands": [
+      "transformCommandArguments"
+    ],
+    "_getPatchMultiCommandsExec": [],
+    "_getPatchMultiCommandsAddCommand": [],
+    "_getPatchRedisClientMulti": [],
+    "_getPatchRedisClientSendCommand": [],
+    "_getPatchedClientConnect": [],
+    "_traceClientCommand": [
+      "origFunction",
+      "origThis",
+      "origArguments",
+      "redisCommandArguments"
+    ],
+    "_endSpansWithRedisReplies": [
+      "openSpans",
+      "replies"
+    ],
+    "_endSpanWithResponse": [
+      "span",
+      "commandName",
+      "commandArgs",
+      "response",
+      "error"
+    ]
+  },
+  "getClientAttributes": [
+    "diag",
+    "options"
+  ],
+  "removeCredentialsFromDBConnectionStringAttribute": [
+    "diag",
+    "url"
+  ]
+}

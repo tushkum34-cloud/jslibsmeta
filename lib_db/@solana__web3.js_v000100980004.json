@@ -1,0 +1,3719 @@
+{
+  "_interopDefaultCompat": [
+    "e"
+  ],
+  "_interopNamespaceCompat": [
+    "e"
+  ],
+  "generateKeypair": [],
+  "isOnCurve": [
+    "publicKey"
+  ],
+  "sign": [
+    "message",
+    "secretKey"
+  ],
+  "toBuffer": [
+    "arr"
+  ],
+  "Struct": {
+    "constructor": [
+      "properties"
+    ],
+    "encode": [],
+    "decode": [
+      "data"
+    ],
+    "decodeUnchecked": [
+      "data"
+    ]
+  },
+  "Enum": {
+    "enum": [],
+    "constructor": [
+      "properties"
+    ]
+  },
+  "isPublicKeyData": [
+    "value"
+  ],
+  "PublicKey": {
+    "_bn": [],
+    "constructor": [
+      "value"
+    ],
+    "unique": [],
+    "default": [],
+    "equals": [
+      "publicKey"
+    ],
+    "toBase58": [],
+    "toJSON": [],
+    "toBytes": [],
+    "toBuffer": [],
+    "toString": [],
+    "createWithSeed": [
+      "fromPublicKey",
+      "seed",
+      "programId"
+    ],
+    "createProgramAddressSync": [
+      "seeds",
+      "programId"
+    ],
+    "createProgramAddress": [
+      "seeds",
+      "programId"
+    ],
+    "findProgramAddressSync": [
+      "seeds",
+      "programId"
+    ],
+    "findProgramAddress": [
+      "seeds",
+      "programId"
+    ],
+    "isOnCurve": [
+      "pubkeyData"
+    ]
+  },
+  "Account": {
+    "_publicKey": [],
+    "_secretKey": [],
+    "constructor": [
+      "secretKey"
+    ],
+    "publicKey": [],
+    "secretKey": []
+  },
+  "TransactionExpiredBlockheightExceededError": {
+    "signature": [],
+    "constructor": [
+      "signature"
+    ]
+  },
+  "TransactionExpiredTimeoutError": {
+    "signature": [],
+    "constructor": [
+      "signature",
+      "timeoutSeconds"
+    ]
+  },
+  "TransactionExpiredNonceInvalidError": {
+    "signature": [],
+    "constructor": [
+      "signature"
+    ]
+  },
+  "MessageAccountKeys": {
+    "staticAccountKeys": [],
+    "accountKeysFromLookups": [],
+    "constructor": [
+      "staticAccountKeys",
+      "accountKeysFromLookups"
+    ],
+    "keySegments": [],
+    "get": [
+      "index"
+    ],
+    "length": [],
+    "compileInstructions": [
+      "instructions"
+    ]
+  },
+  "findKeyIndex": [
+    "key"
+  ],
+  "publicKey": [
+    "param"
+  ],
+  "signature": [
+    "param"
+  ],
+  "rustString": [
+    "param"
+  ],
+  "authorized": [
+    "param"
+  ],
+  "lockup": [
+    "param"
+  ],
+  "voteInit": [
+    "param"
+  ],
+  "voteAuthorizeWithSeedArgs": [
+    "param"
+  ],
+  "getAlloc": [
+    "type",
+    "fields"
+  ],
+  "getItemAlloc": [
+    "item"
+  ],
+  "decodeLength": [
+    "bytes"
+  ],
+  "encodeLength": [
+    "bytes",
+    "len"
+  ],
+  "assert": [
+    "condition",
+    "message"
+  ],
+  "CompiledKeys": {
+    "payer": [],
+    "keyMetaMap": [],
+    "constructor": [
+      "payer",
+      "keyMetaMap"
+    ],
+    "compile": [
+      "instructions",
+      "payer"
+    ],
+    "getMessageComponents": [],
+    "extractTableLookup": [
+      "lookupTable"
+    ],
+    "drainKeysFoundInLookupTable": [
+      "lookupTableEntries",
+      "keyMetaFilter"
+    ]
+  },
+  "getOrInsertDefault": [
+    "pubkey"
+  ],
+  "guardedShift": [
+    "byteArray"
+  ],
+  "guardedSplice": [
+    "byteArray",
+    "param"
+  ],
+  "Message": {
+    "header": [],
+    "accountKeys": [],
+    "recentBlockhash": [],
+    "instructions": [],
+    "indexToProgramIds": [],
+    "constructor": [
+      "args"
+    ],
+    "version": [],
+    "staticAccountKeys": [],
+    "compiledInstructions": [],
+    "addressTableLookups": [],
+    "getAccountKeys": [],
+    "compile": [
+      "args"
+    ],
+    "isAccountSigner": [
+      "index"
+    ],
+    "isAccountWritable": [
+      "index"
+    ],
+    "isProgramId": [
+      "index"
+    ],
+    "programIds": [],
+    "nonProgramIds": [],
+    "serialize": [],
+    "from": [
+      "buffer"
+    ]
+  },
+  "MessageV0": {
+    "header": [],
+    "staticAccountKeys": [],
+    "recentBlockhash": [],
+    "compiledInstructions": [],
+    "addressTableLookups": [],
+    "constructor": [
+      "args"
+    ],
+    "version": [],
+    "numAccountKeysFromLookups": [],
+    "getAccountKeys": [
+      "args"
+    ],
+    "isAccountSigner": [
+      "index"
+    ],
+    "isAccountWritable": [
+      "index"
+    ],
+    "resolveAddressTableLookups": [
+      "addressLookupTableAccounts"
+    ],
+    "compile": [
+      "args"
+    ],
+    "serialize": [],
+    "serializeInstructions": [],
+    "serializeAddressTableLookups": [],
+    "deserialize": [
+      "serializedMessage"
+    ]
+  },
+  "TransactionInstruction": {
+    "keys": [],
+    "programId": [],
+    "data": [],
+    "constructor": [
+      "opts"
+    ],
+    "toJSON": []
+  },
+  "Transaction": {
+    "signatures": [],
+    "signature": [],
+    "feePayer": [],
+    "instructions": [],
+    "recentBlockhash": [],
+    "lastValidBlockHeight": [],
+    "nonceInfo": [],
+    "minNonceContextSlot": [],
+    "_message": [],
+    "_json": [],
+    "constructor": [
+      "opts"
+    ],
+    "toJSON": [],
+    "add": [
+      "param"
+    ],
+    "compileMessage": [],
+    "_compile": [],
+    "serializeMessage": [],
+    "getEstimatedFee": [
+      "connection"
+    ],
+    "setSigners": [
+      "param"
+    ],
+    "sign": [
+      "param"
+    ],
+    "partialSign": [
+      "param"
+    ],
+    "_partialSign": [
+      "message",
+      "param"
+    ],
+    "addSignature": [
+      "pubkey",
+      "signature"
+    ],
+    "_addSignature": [
+      "pubkey",
+      "signature"
+    ],
+    "verifySignatures": [
+      "param"
+    ],
+    "_getMessageSignednessErrors": [
+      "message",
+      "requireAllSignatures"
+    ],
+    "serialize": [
+      "config"
+    ],
+    "_serialize": [
+      "signData"
+    ],
+    "keys": [],
+    "programId": [],
+    "data": [],
+    "from": [
+      "buffer"
+    ],
+    "populate": [
+      "message",
+      "param"
+    ]
+  },
+  "TransactionMessage": {
+    "payerKey": [],
+    "instructions": [],
+    "recentBlockhash": [],
+    "constructor": [
+      "args"
+    ],
+    "decompile": [
+      "message",
+      "args"
+    ],
+    "compileToLegacyMessage": [],
+    "compileToV0Message": [
+      "addressLookupTableAccounts"
+    ]
+  },
+  "VersionedTransaction": {
+    "signatures": [],
+    "message": [],
+    "version": [],
+    "constructor": [
+      "message",
+      "signatures"
+    ],
+    "serialize": [],
+    "deserialize": [
+      "serializedTransaction"
+    ],
+    "sign": [
+      "signers"
+    ],
+    "addSignature": [
+      "publicKey",
+      "signature"
+    ]
+  },
+  "SendTransactionError": {
+    "signature": [],
+    "transactionMessage": [],
+    "transactionLogs": [],
+    "constructor": [
+      "param"
+    ],
+    "transactionError": [],
+    "logs": [],
+    "getLogs": [
+      "connection"
+    ]
+  },
+  "SolanaJSONRPCError": {
+    "code": [],
+    "data": [],
+    "constructor": [
+      "param",
+      "customMessage"
+    ]
+  },
+  "sendAndConfirmTransaction": [
+    "connection",
+    "transaction",
+    "signers",
+    "options"
+  ],
+  "sleep": [
+    "ms"
+  ],
+  "encodeData": [
+    "type",
+    "fields"
+  ],
+  "decodeData$1": [
+    "type",
+    "buffer"
+  ],
+  "NonceAccount": {
+    "authorizedPubkey": [],
+    "nonce": [],
+    "feeCalculator": [],
+    "constructor": [
+      "args"
+    ],
+    "fromAccountData": [
+      "buffer"
+    ]
+  },
+  "u64": [
+    "property"
+  ],
+  "SystemInstruction": {
+    "constructor": [],
+    "decodeInstructionType": [
+      "instruction"
+    ],
+    "decodeCreateAccount": [
+      "instruction"
+    ],
+    "decodeTransfer": [
+      "instruction"
+    ],
+    "decodeTransferWithSeed": [
+      "instruction"
+    ],
+    "decodeAllocate": [
+      "instruction"
+    ],
+    "decodeAllocateWithSeed": [
+      "instruction"
+    ],
+    "decodeAssign": [
+      "instruction"
+    ],
+    "decodeAssignWithSeed": [
+      "instruction"
+    ],
+    "decodeCreateWithSeed": [
+      "instruction"
+    ],
+    "decodeNonceInitialize": [
+      "instruction"
+    ],
+    "decodeNonceAdvance": [
+      "instruction"
+    ],
+    "decodeNonceWithdraw": [
+      "instruction"
+    ],
+    "decodeNonceAuthorize": [
+      "instruction"
+    ],
+    "checkProgramId": [
+      "programId"
+    ],
+    "checkKeyLength": [
+      "keys",
+      "expectedLength"
+    ]
+  },
+  "SystemProgram": {
+    "constructor": [],
+    "programId": [],
+    "createAccount": [
+      "params"
+    ],
+    "transfer": [
+      "params"
+    ],
+    "assign": [
+      "params"
+    ],
+    "createAccountWithSeed": [
+      "params"
+    ],
+    "createNonceAccount": [
+      "params"
+    ],
+    "nonceInitialize": [
+      "params"
+    ],
+    "nonceAdvance": [
+      "params"
+    ],
+    "nonceWithdraw": [
+      "params"
+    ],
+    "nonceAuthorize": [
+      "params"
+    ],
+    "allocate": [
+      "params"
+    ]
+  },
+  "Loader": {
+    "constructor": [],
+    "chunkSize": [],
+    "getMinNumSignatures": [
+      "dataLength"
+    ],
+    "load": [
+      "connection",
+      "payer",
+      "program",
+      "programId",
+      "data"
+    ]
+  },
+  "BpfLoader": {
+    "getMinNumSignatures": [
+      "dataLength"
+    ],
+    "load": [
+      "connection",
+      "payer",
+      "program",
+      "elf",
+      "loaderProgramId"
+    ]
+  },
+  "getDefaultExportFromCjs": [
+    "x"
+  ],
+  "requireFastStableStringify": [],
+  "stringify": [
+    "val",
+    "isArrayProp"
+  ],
+  "trailingZeros": [
+    "n"
+  ],
+  "nextPowerOfTwo": [
+    "n"
+  ],
+  "EpochSchedule": {
+    "slotsPerEpoch": [],
+    "leaderScheduleSlotOffset": [],
+    "warmup": [],
+    "firstNormalEpoch": [],
+    "firstNormalSlot": [],
+    "constructor": [
+      "slotsPerEpoch",
+      "leaderScheduleSlotOffset",
+      "warmup",
+      "firstNormalEpoch",
+      "firstNormalSlot"
+    ],
+    "getEpoch": [
+      "slot"
+    ],
+    "getEpochAndSlotIndex": [
+      "slot"
+    ],
+    "getFirstSlotInEpoch": [
+      "epoch"
+    ],
+    "getLastSlotInEpoch": [
+      "epoch"
+    ],
+    "getSlotsInEpoch": [
+      "epoch"
+    ]
+  },
+  "RpcWebSocketClient": {
+    "underlyingSocket": [],
+    "constructor": [
+      "address",
+      "options",
+      "generate_request_id"
+    ],
+    "call": [
+      "param"
+    ],
+    "notify": [
+      "param"
+    ]
+  },
+  "webSocketFactory": [
+    "url"
+  ],
+  "decodeData": [
+    "type",
+    "buffer"
+  ],
+  "AddressLookupTableAccount": {
+    "key": [],
+    "state": [],
+    "constructor": [
+      "args"
+    ],
+    "isActive": [],
+    "deserialize": [
+      "accountData"
+    ]
+  },
+  "makeWebsocketUrl": [
+    "endpoint"
+  ],
+  "assertEndpointUrl": [
+    "putativeUrl"
+  ],
+  "extractCommitmentFromConfig": [
+    "commitmentOrConfig"
+  ],
+  "applyDefaultMemcmpEncodingToFilters": [
+    "filters"
+  ],
+  "createRpcResult": [
+    "result"
+  ],
+  "jsonRpcResult": [
+    "schema"
+  ],
+  "jsonRpcResultAndContext": [
+    "value"
+  ],
+  "notificationResultAndContext": [
+    "value"
+  ],
+  "versionedMessageFromResponse": [
+    "version",
+    "response"
+  ],
+  "createRpcClient": [
+    "url",
+    "httpHeaders",
+    "customFetch",
+    "fetchMiddleware",
+    "disableRetryOnRateLimit",
+    "httpAgent"
+  ],
+  "createRpcRequest": [
+    "client"
+  ],
+  "createRpcBatchRequest": [
+    "client"
+  ],
+  "Connection": {
+    "_commitment": [],
+    "_confirmTransactionInitialTimeout": [],
+    "_rpcEndpoint": [],
+    "_rpcWsEndpoint": [],
+    "_rpcClient": [],
+    "_rpcRequest": [],
+    "_rpcBatchRequest": [],
+    "_rpcWebSocket": [],
+    "_rpcWebSocketConnected": [],
+    "_rpcWebSocketHeartbeat": [],
+    "_rpcWebSocketIdleTimeout": [],
+    "_rpcWebSocketGeneration": [],
+    "_disableBlockhashCaching": [],
+    "_pollingBlockhash": [],
+    "_blockhashInfo": [],
+    "_nextClientSubscriptionId": [],
+    "_subscriptionDisposeFunctionsByClientSubscriptionId": [],
+    "_subscriptionHashByClientSubscriptionId": [],
+    "_subscriptionStateChangeCallbacksByHash": [],
+    "_subscriptionCallbacksByServerSubscriptionId": [],
+    "_subscriptionsByHash": [],
+    "_subscriptionsAutoDisposedByRpc": [],
+    "constructor": [
+      "endpoint",
+      "commitmentOrConfig"
+    ],
+    "commitment": [],
+    "rpcEndpoint": [],
+    "getBalanceAndContext": [
+      "publicKey",
+      "commitmentOrConfig"
+    ],
+    "getBalance": [
+      "publicKey",
+      "commitmentOrConfig"
+    ],
+    "getBlockTime": [
+      "slot"
+    ],
+    "getMinimumLedgerSlot": [],
+    "getFirstAvailableBlock": [],
+    "getSupply": [
+      "config"
+    ],
+    "getTokenSupply": [
+      "tokenMintAddress",
+      "commitment"
+    ],
+    "getTokenAccountBalance": [
+      "tokenAddress",
+      "commitment"
+    ],
+    "getTokenAccountsByOwner": [
+      "ownerAddress",
+      "filter",
+      "commitmentOrConfig"
+    ],
+    "getParsedTokenAccountsByOwner": [
+      "ownerAddress",
+      "filter",
+      "commitment"
+    ],
+    "getLargestAccounts": [
+      "config"
+    ],
+    "getTokenLargestAccounts": [
+      "mintAddress",
+      "commitment"
+    ],
+    "getAccountInfoAndContext": [
+      "publicKey",
+      "commitmentOrConfig"
+    ],
+    "getParsedAccountInfo": [
+      "publicKey",
+      "commitmentOrConfig"
+    ],
+    "getAccountInfo": [
+      "publicKey",
+      "commitmentOrConfig"
+    ],
+    "getMultipleParsedAccounts": [
+      "publicKeys",
+      "rawConfig"
+    ],
+    "getMultipleAccountsInfoAndContext": [
+      "publicKeys",
+      "commitmentOrConfig"
+    ],
+    "getMultipleAccountsInfo": [
+      "publicKeys",
+      "commitmentOrConfig"
+    ],
+    "getStakeActivation": [
+      "publicKey",
+      "commitmentOrConfig",
+      "epoch"
+    ],
+    "getProgramAccounts": [
+      "programId",
+      "configOrCommitment"
+    ],
+    "getParsedProgramAccounts": [
+      "programId",
+      "configOrCommitment"
+    ],
+    "confirmTransaction": [
+      "strategy",
+      "commitment"
+    ],
+    "getCancellationPromise": [
+      "signal"
+    ],
+    "getTransactionConfirmationPromise": [
+      "param"
+    ],
+    "confirmTransactionUsingBlockHeightExceedanceStrategy": [
+      "param"
+    ],
+    "confirmTransactionUsingDurableNonceStrategy": [
+      "param"
+    ],
+    "confirmTransactionUsingLegacyTimeoutStrategy": [
+      "param"
+    ],
+    "getClusterNodes": [],
+    "getVoteAccounts": [
+      "commitment"
+    ],
+    "getSlot": [
+      "commitmentOrConfig"
+    ],
+    "getSlotLeader": [
+      "commitmentOrConfig"
+    ],
+    "getSlotLeaders": [
+      "startSlot",
+      "limit"
+    ],
+    "getSignatureStatus": [
+      "signature",
+      "config"
+    ],
+    "getSignatureStatuses": [
+      "signatures",
+      "config"
+    ],
+    "getTransactionCount": [
+      "commitmentOrConfig"
+    ],
+    "getTotalSupply": [
+      "commitment"
+    ],
+    "getInflationGovernor": [
+      "commitment"
+    ],
+    "getInflationReward": [
+      "addresses",
+      "epoch",
+      "commitmentOrConfig"
+    ],
+    "getInflationRate": [],
+    "getEpochInfo": [
+      "commitmentOrConfig"
+    ],
+    "getEpochSchedule": [],
+    "getLeaderSchedule": [],
+    "getMinimumBalanceForRentExemption": [
+      "dataLength",
+      "commitment"
+    ],
+    "getRecentBlockhashAndContext": [
+      "commitment"
+    ],
+    "getRecentPerformanceSamples": [
+      "limit"
+    ],
+    "getFeeCalculatorForBlockhash": [
+      "blockhash",
+      "commitment"
+    ],
+    "getFeeForMessage": [
+      "message",
+      "commitment"
+    ],
+    "getRecentPrioritizationFees": [
+      "config"
+    ],
+    "getRecentBlockhash": [
+      "commitment"
+    ],
+    "getLatestBlockhash": [
+      "commitmentOrConfig"
+    ],
+    "getLatestBlockhashAndContext": [
+      "commitmentOrConfig"
+    ],
+    "isBlockhashValid": [
+      "blockhash",
+      "rawConfig"
+    ],
+    "getVersion": [],
+    "getGenesisHash": [],
+    "getBlock": [
+      "slot",
+      "rawConfig"
+    ],
+    "getParsedBlock": [
+      "slot",
+      "rawConfig"
+    ],
+    "getBlockHeight": [],
+    "getBlockProduction": [
+      "configOrCommitment"
+    ],
+    "getTransaction": [
+      "signature",
+      "rawConfig"
+    ],
+    "getParsedTransaction": [
+      "signature",
+      "commitmentOrConfig"
+    ],
+    "getParsedTransactions": [
+      "signatures",
+      "commitmentOrConfig"
+    ],
+    "getTransactions": [
+      "signatures",
+      "commitmentOrConfig"
+    ],
+    "getConfirmedBlock": [
+      "slot",
+      "commitment"
+    ],
+    "getBlocks": [
+      "startSlot",
+      "endSlot",
+      "commitment"
+    ],
+    "getBlockSignatures": [
+      "slot",
+      "commitment"
+    ],
+    "getConfirmedBlockSignatures": [
+      "slot",
+      "commitment"
+    ],
+    "getConfirmedTransaction": [
+      "signature",
+      "commitment"
+    ],
+    "getParsedConfirmedTransaction": [
+      "signature",
+      "commitment"
+    ],
+    "getParsedConfirmedTransactions": [
+      "signatures",
+      "commitment"
+    ],
+    "getConfirmedSignaturesForAddress": [
+      "address",
+      "startSlot",
+      "endSlot"
+    ],
+    "getConfirmedSignaturesForAddress2": [
+      "address",
+      "options",
+      "commitment"
+    ],
+    "getSignaturesForAddress": [
+      "address",
+      "options",
+      "commitment"
+    ],
+    "getAddressLookupTable": [
+      "accountKey",
+      "config"
+    ],
+    "getNonceAndContext": [
+      "nonceAccount",
+      "commitmentOrConfig"
+    ],
+    "getNonce": [
+      "nonceAccount",
+      "commitmentOrConfig"
+    ],
+    "requestAirdrop": [
+      "to",
+      "lamports"
+    ],
+    "_blockhashWithExpiryBlockHeight": [
+      "disableCache"
+    ],
+    "_pollNewBlockhash": [],
+    "getStakeMinimumDelegation": [
+      "config"
+    ],
+    "simulateTransaction": [
+      "transactionOrMessage",
+      "configOrSigners",
+      "includeAccounts"
+    ],
+    "sendTransaction": [
+      "transaction",
+      "signersOrOptions",
+      "options"
+    ],
+    "sendRawTransaction": [
+      "rawTransaction",
+      "options"
+    ],
+    "sendEncodedTransaction": [
+      "encodedTransaction",
+      "options"
+    ],
+    "_wsOnOpen": [],
+    "_wsOnError": [
+      "err"
+    ],
+    "_wsOnClose": [
+      "code"
+    ],
+    "_setSubscription": [
+      "hash",
+      "nextSubscription"
+    ],
+    "_onSubscriptionStateChange": [
+      "clientSubscriptionId",
+      "callback"
+    ],
+    "_updateSubscriptions": [],
+    "_handleServerNotification": [
+      "serverSubscriptionId",
+      "callbackArgs"
+    ],
+    "_wsOnAccountNotification": [
+      "notification"
+    ],
+    "_makeSubscription": [
+      "subscriptionConfig",
+      "args"
+    ],
+    "onAccountChange": [
+      "publicKey",
+      "callback",
+      "commitmentOrConfig"
+    ],
+    "removeAccountChangeListener": [
+      "clientSubscriptionId"
+    ],
+    "_wsOnProgramAccountNotification": [
+      "notification"
+    ],
+    "onProgramAccountChange": [
+      "programId",
+      "callback",
+      "commitmentOrConfig",
+      "maybeFilters"
+    ],
+    "removeProgramAccountChangeListener": [
+      "clientSubscriptionId"
+    ],
+    "onLogs": [
+      "filter",
+      "callback",
+      "commitment"
+    ],
+    "removeOnLogsListener": [
+      "clientSubscriptionId"
+    ],
+    "_wsOnLogsNotification": [
+      "notification"
+    ],
+    "_wsOnSlotNotification": [
+      "notification"
+    ],
+    "onSlotChange": [
+      "callback"
+    ],
+    "removeSlotChangeListener": [
+      "clientSubscriptionId"
+    ],
+    "_wsOnSlotUpdatesNotification": [
+      "notification"
+    ],
+    "onSlotUpdate": [
+      "callback"
+    ],
+    "removeSlotUpdateListener": [
+      "clientSubscriptionId"
+    ],
+    "_unsubscribeClientSubscription": [
+      "clientSubscriptionId",
+      "subscriptionName"
+    ],
+    "_buildArgs": [
+      "args",
+      "override",
+      "encoding",
+      "extra"
+    ],
+    "_buildArgsAtLeastConfirmed": [
+      "args",
+      "override",
+      "encoding",
+      "extra"
+    ],
+    "_wsOnSignatureNotification": [
+      "notification"
+    ],
+    "onSignature": [
+      "signature",
+      "callback",
+      "commitment"
+    ],
+    "onSignatureWithOptions": [
+      "signature",
+      "callback",
+      "options"
+    ],
+    "removeSignatureListener": [
+      "clientSubscriptionId"
+    ],
+    "_wsOnRootNotification": [
+      "notification"
+    ],
+    "onRootChange": [
+      "callback"
+    ],
+    "removeRootChangeListener": [
+      "clientSubscriptionId"
+    ]
+  },
+  "abortConfirmation": [],
+  "checkBlockHeight": [],
+  "getCurrentNonceValue": [],
+  "isCurrentConnectionStillActive": [],
+  "Keypair": {
+    "_keypair": [],
+    "constructor": [
+      "keypair"
+    ],
+    "generate": [],
+    "fromSecretKey": [
+      "secretKey",
+      "options"
+    ],
+    "fromSeed": [
+      "seed"
+    ],
+    "publicKey": [],
+    "secretKey": []
+  },
+  "AddressLookupTableInstruction": {
+    "constructor": [],
+    "decodeInstructionType": [
+      "instruction"
+    ],
+    "decodeCreateLookupTable": [
+      "instruction"
+    ],
+    "decodeExtendLookupTable": [
+      "instruction"
+    ],
+    "decodeCloseLookupTable": [
+      "instruction"
+    ],
+    "decodeFreezeLookupTable": [
+      "instruction"
+    ],
+    "decodeDeactivateLookupTable": [
+      "instruction"
+    ],
+    "checkProgramId": [
+      "programId"
+    ],
+    "checkKeysLength": [
+      "keys",
+      "expectedLength"
+    ]
+  },
+  "AddressLookupTableProgram": {
+    "constructor": [],
+    "programId": [],
+    "createLookupTable": [
+      "params"
+    ],
+    "freezeLookupTable": [
+      "params"
+    ],
+    "extendLookupTable": [
+      "params"
+    ],
+    "deactivateLookupTable": [
+      "params"
+    ],
+    "closeLookupTable": [
+      "params"
+    ]
+  },
+  "ComputeBudgetInstruction": {
+    "constructor": [],
+    "decodeInstructionType": [
+      "instruction"
+    ],
+    "decodeRequestUnits": [
+      "instruction"
+    ],
+    "decodeRequestHeapFrame": [
+      "instruction"
+    ],
+    "decodeSetComputeUnitLimit": [
+      "instruction"
+    ],
+    "decodeSetComputeUnitPrice": [
+      "instruction"
+    ],
+    "checkProgramId": [
+      "programId"
+    ]
+  },
+  "ComputeBudgetProgram": {
+    "constructor": [],
+    "programId": [],
+    "requestUnits": [
+      "params"
+    ],
+    "requestHeapFrame": [
+      "params"
+    ],
+    "setComputeUnitLimit": [
+      "params"
+    ],
+    "setComputeUnitPrice": [
+      "params"
+    ]
+  },
+  "Ed25519Program": {
+    "constructor": [],
+    "programId": [],
+    "createInstructionWithPublicKey": [
+      "params"
+    ],
+    "createInstructionWithPrivateKey": [
+      "params"
+    ]
+  },
+  "ecdsaSign": [
+    "msgHash",
+    "privKey"
+  ],
+  "Secp256k1Program": {
+    "constructor": [],
+    "programId": [],
+    "publicKeyToEthAddress": [
+      "publicKey"
+    ],
+    "createInstructionWithPublicKey": [
+      "params"
+    ],
+    "createInstructionWithEthAddress": [
+      "params"
+    ],
+    "createInstructionWithPrivateKey": [
+      "params"
+    ]
+  },
+  "Authorized": {
+    "staker": [],
+    "withdrawer": [],
+    "constructor": [
+      "staker",
+      "withdrawer"
+    ]
+  },
+  "Lockup": {
+    "unixTimestamp": [],
+    "epoch": [],
+    "custodian": [],
+    "constructor": [
+      "unixTimestamp",
+      "epoch",
+      "custodian"
+    ],
+    "default": []
+  },
+  "StakeInstruction": {
+    "constructor": [],
+    "decodeInstructionType": [
+      "instruction"
+    ],
+    "decodeInitialize": [
+      "instruction"
+    ],
+    "decodeDelegate": [
+      "instruction"
+    ],
+    "decodeAuthorize": [
+      "instruction"
+    ],
+    "decodeAuthorizeWithSeed": [
+      "instruction"
+    ],
+    "decodeSplit": [
+      "instruction"
+    ],
+    "decodeMerge": [
+      "instruction"
+    ],
+    "decodeWithdraw": [
+      "instruction"
+    ],
+    "decodeDeactivate": [
+      "instruction"
+    ],
+    "checkProgramId": [
+      "programId"
+    ],
+    "checkKeyLength": [
+      "keys",
+      "expectedLength"
+    ]
+  },
+  "StakeProgram": {
+    "constructor": [],
+    "programId": [],
+    "space": [],
+    "initialize": [
+      "params"
+    ],
+    "createAccountWithSeed": [
+      "params"
+    ],
+    "createAccount": [
+      "params"
+    ],
+    "delegate": [
+      "params"
+    ],
+    "authorize": [
+      "params"
+    ],
+    "authorizeWithSeed": [
+      "params"
+    ],
+    "splitInstruction": [
+      "params"
+    ],
+    "split": [
+      "params",
+      "rentExemptReserve"
+    ],
+    "splitWithSeed": [
+      "params",
+      "rentExemptReserve"
+    ],
+    "merge": [
+      "params"
+    ],
+    "withdraw": [
+      "params"
+    ],
+    "deactivate": [
+      "params"
+    ]
+  },
+  "VoteInit": {
+    "nodePubkey": [],
+    "authorizedVoter": [],
+    "authorizedWithdrawer": [],
+    "commission": [],
+    "constructor": [
+      "nodePubkey",
+      "authorizedVoter",
+      "authorizedWithdrawer",
+      "commission"
+    ]
+  },
+  "VoteInstruction": {
+    "constructor": [],
+    "decodeInstructionType": [
+      "instruction"
+    ],
+    "decodeInitializeAccount": [
+      "instruction"
+    ],
+    "decodeAuthorize": [
+      "instruction"
+    ],
+    "decodeAuthorizeWithSeed": [
+      "instruction"
+    ],
+    "decodeWithdraw": [
+      "instruction"
+    ],
+    "checkProgramId": [
+      "programId"
+    ],
+    "checkKeyLength": [
+      "keys",
+      "expectedLength"
+    ]
+  },
+  "VoteProgram": {
+    "constructor": [],
+    "programId": [],
+    "space": [],
+    "initializeAccount": [
+      "params"
+    ],
+    "createAccount": [
+      "params"
+    ],
+    "authorize": [
+      "params"
+    ],
+    "authorizeWithSeed": [
+      "params"
+    ],
+    "withdraw": [
+      "params"
+    ],
+    "safeWithdraw": [
+      "params",
+      "currentVoteAccountBalance",
+      "rentExemptMinimum"
+    ],
+    "updateValidatorIdentity": [
+      "params"
+    ]
+  },
+  "ValidatorInfo": {
+    "key": [],
+    "info": [],
+    "constructor": [
+      "key",
+      "info"
+    ],
+    "fromConfigData": [
+      "buffer"
+    ]
+  },
+  "VoteAccount": {
+    "nodePubkey": [],
+    "authorizedWithdrawer": [],
+    "commission": [],
+    "rootSlot": [],
+    "votes": [],
+    "authorizedVoters": [],
+    "priorVoters": [],
+    "epochCredits": [],
+    "lastTimestamp": [],
+    "constructor": [
+      "args"
+    ],
+    "fromAccountData": [
+      "buffer"
+    ]
+  },
+  "parseAuthorizedVoter": [
+    "param"
+  ],
+  "parsePriorVoters": [
+    "param"
+  ],
+  "getPriorVoters": [
+    "param"
+  ],
+  "clusterApiUrl": [
+    "cluster",
+    "tls"
+  ],
+  "sendAndConfirmRawTransaction": [
+    "connection",
+    "rawTransaction",
+    "confirmationStrategyOrConfirmOptions",
+    "maybeConfirmOptions"
+  ],
+  "requireMs": [],
+  "parse": [
+    "uuid"
+  ],
+  "fmtShort": [
+    "ms"
+  ],
+  "fmtLong": [
+    "ms"
+  ],
+  "plural": [
+    "ms",
+    "msAbs",
+    "n",
+    "name"
+  ],
+  "requireHumanizeMs": [],
+  "requireConstants": [],
+  "requireAgent": [],
+  "deprecate": [
+    "message"
+  ],
+  "Agent": {
+    "constructor": [
+      "options"
+    ],
+    "freeSocketKeepAliveTimeout": [],
+    "timeout": [],
+    "socketActiveTTL": [],
+    "calcSocketTimeout": [
+      "socket"
+    ],
+    "keepSocketAlive": [
+      "socket"
+    ],
+    "reuseSocket": [
+      "param"
+    ],
+    "CREATE_ID": [],
+    "INIT_SOCKET": [
+      "socket",
+      "options"
+    ],
+    "createConnection": [
+      "options",
+      "oncreate"
+    ],
+    "statusChanged": [],
+    "getCurrentStatus": []
+  },
+  "onNewCreate": [
+    "err",
+    "socket"
+  ],
+  "getSocketTimeout": [
+    "socket"
+  ],
+  "installListeners": [
+    "agent",
+    "socket",
+    "options"
+  ],
+  "onFree": [],
+  "onClose": [
+    "isError"
+  ],
+  "onTimeout": [],
+  "onError": [
+    "err"
+  ],
+  "onRemove": [],
+  "inspect": [],
+  "requireHttps_agent": [],
+  "HttpsAgent": {
+    "constructor": [
+      "options"
+    ],
+    "createConnection": [
+      "options",
+      "oncreate"
+    ]
+  },
+  "requireAgentkeepalive": [],
+  "getAugmentedNamespace": [
+    "n"
+  ],
+  "a": [],
+  "requireBase64Js": [],
+  "getLens": [
+    "b64"
+  ],
+  "byteLength": [
+    "string",
+    "encoding"
+  ],
+  "_byteLength": [
+    "b64",
+    "validLen",
+    "placeHoldersLen"
+  ],
+  "toByteArray": [
+    "b64"
+  ],
+  "tripletToBase64": [
+    "num"
+  ],
+  "encodeChunk": [
+    "uint8",
+    "start",
+    "end"
+  ],
+  "fromByteArray": [
+    "uint8"
+  ],
+  "requireIeee754": [],
+  "requireBuffer": [],
+  "typedArraySupport": [],
+  "createBuffer": [
+    "length"
+  ],
+  "Buffer": [
+    "arg",
+    "encodingOrOffset",
+    "length"
+  ],
+  "from": [
+    "value",
+    "encodingOrOffset",
+    "length"
+  ],
+  "assertSize": [
+    "size"
+  ],
+  "alloc": [
+    "size",
+    "fill",
+    "encoding"
+  ],
+  "allocUnsafe": [
+    "size"
+  ],
+  "fromString": [
+    "string",
+    "encoding"
+  ],
+  "fromArrayLike": [
+    "array"
+  ],
+  "fromArrayView": [
+    "arrayView"
+  ],
+  "fromArrayBuffer": [
+    "array",
+    "byteOffset",
+    "length"
+  ],
+  "fromObject": [
+    "obj"
+  ],
+  "checked": [
+    "length"
+  ],
+  "SlowBuffer": [
+    "length"
+  ],
+  "slowToString": [
+    "encoding",
+    "start",
+    "end"
+  ],
+  "swap": [
+    "b",
+    "n",
+    "m"
+  ],
+  "bidirectionalIndexOf": [
+    "buffer",
+    "val",
+    "byteOffset",
+    "encoding",
+    "dir"
+  ],
+  "arrayIndexOf": [
+    "arr",
+    "val",
+    "byteOffset",
+    "encoding",
+    "dir"
+  ],
+  "read": [
+    "buf",
+    "i"
+  ],
+  "hexWrite": [
+    "buf",
+    "string",
+    "offset",
+    "length"
+  ],
+  "utf8Write": [
+    "buf",
+    "string",
+    "offset",
+    "length"
+  ],
+  "asciiWrite": [
+    "buf",
+    "string",
+    "offset",
+    "length"
+  ],
+  "base64Write": [
+    "buf",
+    "string",
+    "offset",
+    "length"
+  ],
+  "ucs2Write": [
+    "buf",
+    "string",
+    "offset",
+    "length"
+  ],
+  "base64Slice": [
+    "buf",
+    "start",
+    "end"
+  ],
+  "utf8Slice": [
+    "buf",
+    "start",
+    "end"
+  ],
+  "decodeCodePointsArray": [
+    "codePoints"
+  ],
+  "asciiSlice": [
+    "buf",
+    "start",
+    "end"
+  ],
+  "latin1Slice": [
+    "buf",
+    "start",
+    "end"
+  ],
+  "hexSlice": [
+    "buf",
+    "start",
+    "end"
+  ],
+  "utf16leSlice": [
+    "buf",
+    "start",
+    "end"
+  ],
+  "checkOffset": [
+    "offset",
+    "ext",
+    "length"
+  ],
+  "checkInt": [
+    "buf",
+    "value",
+    "offset",
+    "ext",
+    "max",
+    "min"
+  ],
+  "wrtBigUInt64LE": [
+    "buf",
+    "value",
+    "offset",
+    "min",
+    "max"
+  ],
+  "wrtBigUInt64BE": [
+    "buf",
+    "value",
+    "offset",
+    "min",
+    "max"
+  ],
+  "checkIEEE754": [
+    "buf",
+    "value",
+    "offset",
+    "ext",
+    "max",
+    "min"
+  ],
+  "writeFloat": [
+    "buf",
+    "value",
+    "offset",
+    "littleEndian",
+    "noAssert"
+  ],
+  "writeDouble": [
+    "buf",
+    "value",
+    "offset",
+    "littleEndian",
+    "noAssert"
+  ],
+  "E": [
+    "sym",
+    "getMessage",
+    "Base"
+  ],
+  "addNumericalSeparator": [
+    "val"
+  ],
+  "checkBounds": [
+    "buf",
+    "offset",
+    "byteLength"
+  ],
+  "checkIntBI": [
+    "value",
+    "min",
+    "max",
+    "buf",
+    "offset",
+    "byteLength"
+  ],
+  "validateNumber": [
+    "value",
+    "name"
+  ],
+  "boundsError": [
+    "value",
+    "length",
+    "type"
+  ],
+  "base64clean": [
+    "str"
+  ],
+  "utf8ToBytes": [
+    "str"
+  ],
+  "asciiToBytes": [
+    "str"
+  ],
+  "utf16leToBytes": [
+    "str",
+    "units"
+  ],
+  "base64ToBytes": [
+    "str"
+  ],
+  "blitBuffer": [
+    "src",
+    "dst",
+    "offset",
+    "length"
+  ],
+  "isInstance": [
+    "obj",
+    "type"
+  ],
+  "numberIsNaN": [
+    "obj"
+  ],
+  "defineBigIntMethod": [
+    "fn"
+  ],
+  "BufferBigIntNotDefined": [],
+  "anumber$1": [
+    "n"
+  ],
+  "isBytes$2": [
+    "a"
+  ],
+  "abytes$2": [
+    "b",
+    "param"
+  ],
+  "ahash": [
+    "h"
+  ],
+  "aexists$1": [
+    "instance",
+    "param"
+  ],
+  "aoutput$1": [
+    "out",
+    "instance"
+  ],
+  "createView$1": [
+    "arr"
+  ],
+  "rotr$1": [
+    "word",
+    "shift"
+  ],
+  "utf8ToBytes$2": [
+    "str"
+  ],
+  "toBytes$1": [
+    "data"
+  ],
+  "concatBytes$1": [
+    "param"
+  ],
+  "wrapConstructor$1": [
+    "hashCons"
+  ],
+  "hashC": [
+    "msg"
+  ],
+  "randomBytes": [
+    "param"
+  ],
+  "setBigUint64$1": [
+    "view",
+    "byteOffset",
+    "value",
+    "isLE"
+  ],
+  "Chi$1": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Maj$1": [
+    "a",
+    "b",
+    "c"
+  ],
+  "fromBig$1": [
+    "n",
+    "param"
+  ],
+  "split$1": [
+    "lst",
+    "param"
+  ],
+  "toBig": [
+    "h",
+    "l"
+  ],
+  "shrSH": [
+    "h",
+    "_l",
+    "s"
+  ],
+  "shrSL": [
+    "h",
+    "l",
+    "s"
+  ],
+  "rotrSH": [
+    "h",
+    "l",
+    "s"
+  ],
+  "rotrSL": [
+    "h",
+    "l",
+    "s"
+  ],
+  "rotrBH": [
+    "h",
+    "l",
+    "s"
+  ],
+  "rotrBL": [
+    "h",
+    "l",
+    "s"
+  ],
+  "rotr32H": [
+    "_h",
+    "l"
+  ],
+  "rotr32L": [
+    "h",
+    "_l"
+  ],
+  "rotlSH$1": [
+    "h",
+    "l",
+    "s"
+  ],
+  "rotlSL$1": [
+    "h",
+    "l",
+    "s"
+  ],
+  "rotlBH$1": [
+    "h",
+    "l",
+    "s"
+  ],
+  "rotlBL$1": [
+    "h",
+    "l",
+    "s"
+  ],
+  "add": [
+    "Ah",
+    "Al",
+    "Bh",
+    "Bl"
+  ],
+  "add3L": [
+    "Al",
+    "Bl",
+    "Cl"
+  ],
+  "add3H": [
+    "low",
+    "Ah",
+    "Bh",
+    "Ch"
+  ],
+  "add4L": [
+    "Al",
+    "Bl",
+    "Cl",
+    "Dl"
+  ],
+  "add4H": [
+    "low",
+    "Ah",
+    "Bh",
+    "Ch",
+    "Dh"
+  ],
+  "add5L": [
+    "Al",
+    "Bl",
+    "Cl",
+    "Dl",
+    "El"
+  ],
+  "add5H": [
+    "low",
+    "Ah",
+    "Bh",
+    "Ch",
+    "Dh",
+    "Eh"
+  ],
+  "SHA512": {
+    "constructor": [],
+    "get": [],
+    "set": [
+      "Ah",
+      "Al",
+      "Bh",
+      "Bl",
+      "Ch",
+      "Cl",
+      "Dh",
+      "Dl",
+      "Eh",
+      "El",
+      "Fh",
+      "Fl",
+      "Gh",
+      "Gl",
+      "Hh",
+      "Hl"
+    ],
+    "process": [
+      "view",
+      "offset"
+    ],
+    "roundClean": [],
+    "destroy": []
+  },
+  "isBytes$1": [
+    "a"
+  ],
+  "abytes$1": [
+    "item"
+  ],
+  "abool": [
+    "title",
+    "value"
+  ],
+  "bytesToHex": [
+    "bytes"
+  ],
+  "numberToHexUnpadded": [
+    "num"
+  ],
+  "hexToNumber": [
+    "hex"
+  ],
+  "asciiToBase16": [
+    "ch"
+  ],
+  "hexToBytes": [
+    "hex"
+  ],
+  "bytesToNumberBE": [
+    "bytes"
+  ],
+  "bytesToNumberLE": [
+    "bytes"
+  ],
+  "numberToBytesBE": [
+    "n",
+    "len"
+  ],
+  "numberToBytesLE": [
+    "n",
+    "len"
+  ],
+  "numberToVarBytesBE": [
+    "n"
+  ],
+  "ensureBytes": [
+    "title",
+    "hex",
+    "expectedLength"
+  ],
+  "concatBytes": [
+    "param"
+  ],
+  "equalBytes": [
+    "a",
+    "b"
+  ],
+  "utf8ToBytes$1": [
+    "str"
+  ],
+  "isPosBig": [
+    "n"
+  ],
+  "inRange": [
+    "a",
+    "min",
+    "max"
+  ],
+  "aInRange": [
+    "title",
+    "n",
+    "min",
+    "max"
+  ],
+  "bitLen": [
+    "n"
+  ],
+  "bitGet": [
+    "n",
+    "pos"
+  ],
+  "bitSet": [
+    "n",
+    "pos",
+    "value"
+  ],
+  "bitMask": [
+    "n"
+  ],
+  "u8n": [
+    "data"
+  ],
+  "u8fr": [
+    "arr"
+  ],
+  "createHmacDrbg": [
+    "hashLen",
+    "qByteLen",
+    "hmacFn"
+  ],
+  "reset": [],
+  "h": [
+    "param"
+  ],
+  "reseed": [
+    "param"
+  ],
+  "gen": [
+    "suffix",
+    "blockLen",
+    "outputLen"
+  ],
+  "genUntil": [
+    "seed",
+    "pred"
+  ],
+  "validateObject": [
+    "object",
+    "validators",
+    "param"
+  ],
+  "checkField": [
+    "fieldName",
+    "type",
+    "isOptional"
+  ],
+  "notImplemented": [],
+  "memoized": [
+    "fn"
+  ],
+  "mod": [
+    "a",
+    "b"
+  ],
+  "pow": [
+    "num",
+    "power",
+    "modulo"
+  ],
+  "pow2": [
+    "x",
+    "power",
+    "modulo"
+  ],
+  "invert": [
+    "number",
+    "modulo"
+  ],
+  "tonelliShanks": [
+    "P"
+  ],
+  "FpSqrt": [
+    "P"
+  ],
+  "isNegativeLE": [
+    "num",
+    "modulo"
+  ],
+  "validateField": [
+    "field"
+  ],
+  "FpPow": [
+    "f",
+    "num",
+    "power"
+  ],
+  "FpInvertBatch": [
+    "f",
+    "nums"
+  ],
+  "nLength": [
+    "n",
+    "nBitLength"
+  ],
+  "Field": [
+    "ORDER",
+    "bitLen",
+    "param",
+    "param"
+  ],
+  "getFieldBytesLength": [
+    "fieldOrder"
+  ],
+  "getMinHashLength": [
+    "fieldOrder"
+  ],
+  "mapHashToField": [
+    "key",
+    "fieldOrder",
+    "param"
+  ],
+  "constTimeNegate": [
+    "condition",
+    "item"
+  ],
+  "validateW": [
+    "W",
+    "bits"
+  ],
+  "calcWOpts": [
+    "W",
+    "bits"
+  ],
+  "validateMSMPoints": [
+    "points",
+    "c"
+  ],
+  "validateMSMScalars": [
+    "scalars",
+    "field"
+  ],
+  "getW": [
+    "P"
+  ],
+  "wNAF": [
+    "c",
+    "bits"
+  ],
+  "pippenger": [
+    "c",
+    "fieldN",
+    "points",
+    "scalars"
+  ],
+  "validateBasic": [
+    "curve"
+  ],
+  "validateOpts$1": [
+    "curve"
+  ],
+  "twistedEdwards": [
+    "curveDef"
+  ],
+  "aCoordinate": [
+    "title",
+    "n"
+  ],
+  "assertPoint": [
+    "other"
+  ],
+  "Point": {
+    "constructor": [
+      "px",
+      "py",
+      "pz"
+    ],
+    "fromAffine": [
+      "p"
+    ],
+    "x": [],
+    "y": [],
+    "normalizeZ": [
+      "points"
+    ],
+    "fromHex": [
+      "hex"
+    ],
+    "fromPrivateKey": [
+      "privateKey"
+    ],
+    "msm": [
+      "points",
+      "scalars"
+    ],
+    "_setWindowSize": [
+      "windowSize"
+    ],
+    "assertValidity": [],
+    "hasEvenY": [],
+    "equals": [
+      "other"
+    ],
+    "negate": [],
+    "double": [],
+    "add": [
+      "other"
+    ],
+    "subtract": [
+      "other"
+    ],
+    "is0": [],
+    "wNAF": [
+      "n"
+    ],
+    "multiplyUnsafe": [
+      "sc"
+    ],
+    "multiply": [
+      "scalar"
+    ],
+    "multiplyAndAddUnsafe": [
+      "Q",
+      "a",
+      "b"
+    ],
+    "toAffine": [
+      "iz"
+    ],
+    "isTorsionFree": [],
+    "clearCofactor": [],
+    "toRawBytes": [
+      "param"
+    ],
+    "toHex": [
+      "param"
+    ]
+  },
+  "modN": [
+    "a"
+  ],
+  "modN_LE": [
+    "hash"
+  ],
+  "getExtendedPublicKey": [
+    "key"
+  ],
+  "getPublicKey": [
+    "privateKey",
+    "param"
+  ],
+  "hashDomainToScalar": [
+    "param",
+    "param"
+  ],
+  "verify": [
+    "signature",
+    "msgHash",
+    "publicKey",
+    "param"
+  ],
+  "ed25519_pow_2_252_3": [
+    "x"
+  ],
+  "adjustScalarBytes": [
+    "bytes"
+  ],
+  "uvRatio": [
+    "u",
+    "v"
+  ],
+  "requireBn": [],
+  "inherits": [
+    "ctor",
+    "superCtor"
+  ],
+  "TempCtor": [],
+  "BN": [
+    "number",
+    "base",
+    "endian"
+  ],
+  "parseHex4Bits": [
+    "string",
+    "index"
+  ],
+  "parseHexByte": [
+    "string",
+    "lowerBound",
+    "index"
+  ],
+  "parseBase": [
+    "str",
+    "start",
+    "end",
+    "mul"
+  ],
+  "move": [
+    "dest",
+    "src"
+  ],
+  "allocate": [
+    "ArrayType",
+    "size"
+  ],
+  "toBitArray": [
+    "num"
+  ],
+  "smallMulTo": [
+    "self",
+    "num",
+    "out"
+  ],
+  "comb10MulTo": [
+    "self",
+    "num",
+    "out"
+  ],
+  "bigMulTo": [
+    "self",
+    "num",
+    "out"
+  ],
+  "jumboMulTo": [
+    "self",
+    "num",
+    "out"
+  ],
+  "MPrime": [
+    "name",
+    "p"
+  ],
+  "K256": [],
+  "P224": [],
+  "P192": [],
+  "P25519": [],
+  "Red": [
+    "m"
+  ],
+  "Mont": [
+    "m"
+  ],
+  "requireSafeBuffer": [],
+  "copyProps": [
+    "src",
+    "dst"
+  ],
+  "SafeBuffer": [
+    "arg",
+    "encodingOrOffset",
+    "length"
+  ],
+  "requireSrc": [],
+  "base": [
+    "ALPHABET"
+  ],
+  "encode": [
+    "source"
+  ],
+  "decodeUnsafe": [
+    "source"
+  ],
+  "decode": [
+    "string"
+  ],
+  "requireBs58": [],
+  "anumber": [
+    "n"
+  ],
+  "isBytes": [
+    "a"
+  ],
+  "abytes": [
+    "b",
+    "param"
+  ],
+  "aexists": [
+    "instance",
+    "param"
+  ],
+  "aoutput": [
+    "out",
+    "instance"
+  ],
+  "u32": [
+    "arr"
+  ],
+  "createView": [
+    "arr"
+  ],
+  "rotr": [
+    "word",
+    "shift"
+  ],
+  "byteSwap": [
+    "word"
+  ],
+  "byteSwap32": [
+    "arr"
+  ],
+  "toBytes": [
+    "data"
+  ],
+  "Hash": {
+    "clone": []
+  },
+  "wrapConstructor": [
+    "hashCons"
+  ],
+  "setBigUint64": [
+    "view",
+    "byteOffset",
+    "value",
+    "isLE"
+  ],
+  "Chi": [
+    "a",
+    "b",
+    "c"
+  ],
+  "Maj": [
+    "a",
+    "b",
+    "c"
+  ],
+  "HashMD": {
+    "constructor": [
+      "blockLen",
+      "outputLen",
+      "padOffset",
+      "isLE"
+    ],
+    "update": [
+      "data"
+    ],
+    "digestInto": [
+      "out"
+    ],
+    "digest": [],
+    "_cloneInto": [
+      "to"
+    ]
+  },
+  "requireEncoding_lib": [],
+  "ToDictionary": [
+    "o"
+  ],
+  "stringToCodePoints": [
+    "string"
+  ],
+  "codePointsToString": [
+    "code_points"
+  ],
+  "Stream": [
+    "tokens"
+  ],
+  "decoderError": [
+    "fatal",
+    "opt_code_point"
+  ],
+  "TextDecoder": [
+    "encoding",
+    "options"
+  ],
+  "TextEncoder": [
+    "encoding",
+    "options"
+  ],
+  "UTF8Decoder": [
+    "options"
+  ],
+  "UTF8Encoder": [
+    "options"
+  ],
+  "requireLib": [],
+  "baseEncode": [
+    "value"
+  ],
+  "baseDecode": [
+    "value"
+  ],
+  "BorshError": {
+    "constructor": [
+      "message"
+    ],
+    "addToFieldPath": [
+      "fieldName"
+    ]
+  },
+  "BinaryWriter": {
+    "constructor": [],
+    "maybeResize": [],
+    "writeU8": [
+      "value"
+    ],
+    "writeU16": [
+      "value"
+    ],
+    "writeU32": [
+      "value"
+    ],
+    "writeU64": [
+      "value"
+    ],
+    "writeU128": [
+      "value"
+    ],
+    "writeU256": [
+      "value"
+    ],
+    "writeU512": [
+      "value"
+    ],
+    "writeBuffer": [
+      "buffer"
+    ],
+    "writeString": [
+      "str"
+    ],
+    "writeFixedArray": [
+      "array"
+    ],
+    "writeArray": [
+      "array",
+      "fn"
+    ],
+    "toArray": []
+  },
+  "handlingRangeError": [
+    "target",
+    "propertyKey",
+    "propertyDescriptor"
+  ],
+  "BinaryReader": {
+    "constructor": [
+      "buf"
+    ],
+    "readU8": [],
+    "readU16": [],
+    "readU32": [],
+    "readU64": [],
+    "readU128": [],
+    "readU256": [],
+    "readU512": [],
+    "readBuffer": [
+      "len"
+    ],
+    "readString": [],
+    "readFixedArray": [
+      "len"
+    ],
+    "readArray": [
+      "fn"
+    ]
+  },
+  "capitalizeFirstLetter": [
+    "string"
+  ],
+  "serializeField": [
+    "schema",
+    "fieldName",
+    "value",
+    "fieldType",
+    "writer"
+  ],
+  "serializeStruct": [
+    "schema",
+    "obj",
+    "writer"
+  ],
+  "serialize": [
+    "schema",
+    "obj",
+    "param"
+  ],
+  "deserializeField": [
+    "schema",
+    "fieldName",
+    "fieldType",
+    "reader"
+  ],
+  "deserializeStruct": [
+    "schema",
+    "classType",
+    "reader"
+  ],
+  "deserialize": [
+    "schema",
+    "classType",
+    "buffer",
+    "param"
+  ],
+  "deserializeUnchecked": [
+    "schema",
+    "classType",
+    "buffer",
+    "param"
+  ],
+  "requireLayout": [],
+  "checkUint8Array": [
+    "b"
+  ],
+  "uint8ArrayToBuffer": [
+    "b"
+  ],
+  "nameWithProperty": [
+    "name",
+    "lo"
+  ],
+  "bindConstructorLayout": [
+    "Class",
+    "layout"
+  ],
+  "ExternalLayout": {
+    "isCount": []
+  },
+  "GreedyCount": {
+    "constructor": [
+      "param",
+      "property"
+    ],
+    "isCount": [],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "offset"
+    ]
+  },
+  "OffsetLayout": {
+    "constructor": [
+      "layout",
+      "param",
+      "property"
+    ],
+    "isCount": [],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ]
+  },
+  "UInt": {
+    "constructor": [
+      "span",
+      "property"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ]
+  },
+  "UIntBE": {
+    "constructor": [
+      "span",
+      "property"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ]
+  },
+  "Int": {
+    "constructor": [
+      "span",
+      "property"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ]
+  },
+  "IntBE": {
+    "constructor": [
+      "span",
+      "property"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ]
+  },
+  "divmodInt64": [
+    "src"
+  ],
+  "roundedInt64": [
+    "hi32",
+    "lo32"
+  ],
+  "NearUInt64": {
+    "constructor": [
+      "property"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ]
+  },
+  "NearUInt64BE": {
+    "constructor": [
+      "property"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ]
+  },
+  "NearInt64": {
+    "constructor": [
+      "property"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ]
+  },
+  "NearInt64BE": {
+    "constructor": [
+      "property"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ]
+  },
+  "Float": {
+    "constructor": [
+      "property"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ]
+  },
+  "FloatBE": {
+    "constructor": [
+      "property"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ]
+  },
+  "Double": {
+    "constructor": [
+      "property"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ]
+  },
+  "DoubleBE": {
+    "constructor": [
+      "property"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ]
+  },
+  "Sequence": {
+    "constructor": [
+      "elementLayout",
+      "count",
+      "property"
+    ],
+    "getSpan": [
+      "b",
+      "param"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ]
+  },
+  "Structure": {
+    "constructor": [
+      "fields",
+      "property",
+      "decodePrefixes"
+    ],
+    "getSpan": [
+      "b",
+      "param"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ],
+    "fromArray": [
+      "values"
+    ],
+    "layoutFor": [
+      "property"
+    ],
+    "offsetOf": [
+      "property"
+    ]
+  },
+  "UnionDiscriminator": {
+    "constructor": [
+      "property"
+    ],
+    "decode": [
+      "b",
+      "offset"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "offset"
+    ]
+  },
+  "UnionLayoutDiscriminator": {
+    "constructor": [
+      "layout",
+      "property"
+    ],
+    "decode": [
+      "b",
+      "offset"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "offset"
+    ]
+  },
+  "Union": {
+    "constructor": [
+      "discr",
+      "defaultLayout",
+      "property"
+    ],
+    "getSpan": [
+      "b",
+      "param"
+    ],
+    "defaultGetSourceVariant": [
+      "src"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ],
+    "addVariant": [
+      "variant",
+      "layout",
+      "property"
+    ],
+    "getVariant": [
+      "vb",
+      "param"
+    ]
+  },
+  "VariantLayout": {
+    "constructor": [
+      "union",
+      "variant",
+      "layout",
+      "property"
+    ],
+    "getSpan": [
+      "b",
+      "param"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ],
+    "fromArray": [
+      "values"
+    ]
+  },
+  "fixBitwiseResult": [
+    "v"
+  ],
+  "BitStructure": {
+    "constructor": [
+      "word",
+      "msb",
+      "property"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ],
+    "addField": [
+      "bits",
+      "property"
+    ],
+    "addBoolean": [
+      "property"
+    ],
+    "fieldFor": [
+      "property"
+    ]
+  },
+  "BitField": {
+    "constructor": [
+      "container",
+      "bits",
+      "property"
+    ],
+    "decode": [
+      "b",
+      "offset"
+    ],
+    "encode": [
+      "value"
+    ]
+  },
+  "Boolean": {
+    "constructor": [
+      "container",
+      "property"
+    ],
+    "decode": [
+      "b",
+      "offset"
+    ],
+    "encode": [
+      "value"
+    ]
+  },
+  "Blob": {
+    "constructor": [
+      "length",
+      "property"
+    ],
+    "getSpan": [
+      "b",
+      "offset"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "offset"
+    ]
+  },
+  "CString": {
+    "constructor": [
+      "property"
+    ],
+    "getSpan": [
+      "b",
+      "param"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ]
+  },
+  "UTF8": {
+    "constructor": [
+      "maxSpan",
+      "property"
+    ],
+    "getSpan": [
+      "b",
+      "param"
+    ],
+    "decode": [
+      "b",
+      "param"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "param"
+    ]
+  },
+  "Constant": {
+    "constructor": [
+      "value",
+      "property"
+    ],
+    "decode": [
+      "b",
+      "offset"
+    ],
+    "encode": [
+      "src",
+      "b",
+      "offset"
+    ]
+  },
+  "assert$1": [
+    "condition",
+    "message"
+  ],
+  "encodeValue": [
+    "value"
+  ],
+  "encodeObjectContextEntry": [
+    "param"
+  ],
+  "encodeContextObject": [
+    "context"
+  ],
+  "getErrorMessage": [
+    "code",
+    "param"
+  ],
+  "getEncodedSize": [
+    "value",
+    "encoder"
+  ],
+  "createEncoder": [
+    "encoder"
+  ],
+  "createDecoder": [
+    "decoder"
+  ],
+  "isFixedSize": [
+    "codec"
+  ],
+  "combineCodec": [
+    "encoder",
+    "decoder"
+  ],
+  "assertByteArrayIsNotEmptyForCodec": [
+    "codecDescription",
+    "bytes",
+    "param"
+  ],
+  "assertByteArrayHasEnoughBytesForCodec": [
+    "codecDescription",
+    "expected",
+    "bytes",
+    "param"
+  ],
+  "assertNumberIsBetweenForCodec": [
+    "codecDescription",
+    "min",
+    "max",
+    "value"
+  ],
+  "isLittleEndian": [
+    "config"
+  ],
+  "numberEncoderFactory": [
+    "input"
+  ],
+  "numberDecoderFactory": [
+    "input"
+  ],
+  "toArrayBuffer": [
+    "bytes",
+    "offset",
+    "length"
+  ],
+  "getU64Encoder": [
+    "param"
+  ],
+  "getU64Decoder": [
+    "param"
+  ],
+  "getU64Codec": [
+    "param"
+  ],
+  "StructError": {
+    "constructor": [
+      "failure",
+      "failures"
+    ]
+  },
+  "isIterable": [
+    "x"
+  ],
+  "isObject": [
+    "x"
+  ],
+  "isNonArrayObject": [
+    "x"
+  ],
+  "print": [
+    "value"
+  ],
+  "shiftIterator": [
+    "input"
+  ],
+  "toFailure": [
+    "result",
+    "context",
+    "struct",
+    "value"
+  ],
+  "toFailures": [
+    "result",
+    "context",
+    "struct",
+    "value"
+  ],
+  "run": [
+    "value",
+    "struct",
+    "param"
+  ],
+  "create": [
+    "hash"
+  ],
+  "mask": [
+    "value",
+    "struct",
+    "message"
+  ],
+  "is": [
+    "value",
+    "struct"
+  ],
+  "validate$1": [
+    "value",
+    "struct",
+    "param"
+  ],
+  "define": [
+    "name",
+    "validator"
+  ],
+  "any": [],
+  "array": [
+    "Element"
+  ],
+  "boolean": [],
+  "instance": [
+    "Class"
+  ],
+  "literal": [
+    "constant"
+  ],
+  "never": [],
+  "nullable": [
+    "struct"
+  ],
+  "number": [],
+  "optional": [
+    "struct"
+  ],
+  "record": [
+    "Key",
+    "Value"
+  ],
+  "string": [],
+  "tuple": [
+    "Structs"
+  ],
+  "type": [
+    "schema"
+  ],
+  "union": [
+    "Structs"
+  ],
+  "unknown": [],
+  "coerce": [
+    "struct",
+    "condition",
+    "coercer"
+  ],
+  "rng": [],
+  "validate": [
+    "uuid"
+  ],
+  "v1": [
+    "options",
+    "buf",
+    "offset"
+  ],
+  "stringToBytes": [
+    "str"
+  ],
+  "v35": [
+    "name",
+    "version",
+    "hashfunc"
+  ],
+  "generateUUID": [
+    "value",
+    "namespace",
+    "buf",
+    "offset"
+  ],
+  "md5": [
+    "bytes"
+  ],
+  "md5ToHexEncodedArray": [
+    "input"
+  ],
+  "getOutputLength": [
+    "inputLength8"
+  ],
+  "wordsToMd5": [
+    "x",
+    "len"
+  ],
+  "bytesToWords": [
+    "input"
+  ],
+  "safeAdd": [
+    "x",
+    "y"
+  ],
+  "bitRotateLeft": [
+    "num",
+    "cnt"
+  ],
+  "md5cmn": [
+    "q",
+    "a",
+    "b",
+    "x",
+    "s",
+    "t"
+  ],
+  "md5ff": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "x",
+    "s",
+    "t"
+  ],
+  "md5gg": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "x",
+    "s",
+    "t"
+  ],
+  "md5hh": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "x",
+    "s",
+    "t"
+  ],
+  "md5ii": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "x",
+    "s",
+    "t"
+  ],
+  "v4": [
+    "options",
+    "buf",
+    "offset"
+  ],
+  "f": [
+    "s",
+    "x",
+    "y",
+    "z"
+  ],
+  "ROTL": [
+    "x",
+    "n"
+  ],
+  "sha1": [
+    "bytes"
+  ],
+  "version": [
+    "uuid"
+  ],
+  "requireGenerateRequest": [],
+  "generateRequest": [
+    "method",
+    "params",
+    "id",
+    "options"
+  ],
+  "requireBrowser": [],
+  "ClientBrowser": [
+    "callServer",
+    "options"
+  ],
+  "isError": [
+    "res"
+  ],
+  "isNotError": [
+    "res"
+  ],
+  "requireEventemitter3": [],
+  "Events": [],
+  "EE": [
+    "fn",
+    "context",
+    "once"
+  ],
+  "addListener": [
+    "emitter",
+    "event",
+    "fn",
+    "context",
+    "once"
+  ],
+  "clearEvent": [
+    "emitter",
+    "evt"
+  ],
+  "EventEmitter": [],
+  "WebSocket": [
+    "address",
+    "options"
+  ],
+  "fromBig": [
+    "n",
+    "param"
+  ],
+  "split": [
+    "lst",
+    "param"
+  ],
+  "rotlSH": [
+    "h",
+    "l",
+    "s"
+  ],
+  "rotlSL": [
+    "h",
+    "l",
+    "s"
+  ],
+  "rotlBH": [
+    "h",
+    "l",
+    "s"
+  ],
+  "rotlBL": [
+    "h",
+    "l",
+    "s"
+  ],
+  "rotlH": [
+    "h",
+    "l",
+    "s"
+  ],
+  "rotlL": [
+    "h",
+    "l",
+    "s"
+  ],
+  "keccakP": [
+    "s",
+    "param"
+  ],
+  "Keccak": {
+    "constructor": [
+      "blockLen",
+      "suffix",
+      "outputLen",
+      "param",
+      "param"
+    ],
+    "keccak": [],
+    "update": [
+      "data"
+    ],
+    "finish": [],
+    "writeInto": [
+      "out"
+    ],
+    "xofInto": [
+      "out"
+    ],
+    "xof": [
+      "bytes"
+    ],
+    "digestInto": [
+      "out"
+    ],
+    "digest": [],
+    "destroy": [],
+    "_cloneInto": [
+      "to"
+    ]
+  },
+  "SHA256": {
+    "constructor": [],
+    "get": [],
+    "set": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "process": [
+      "view",
+      "offset"
+    ],
+    "roundClean": [],
+    "destroy": []
+  },
+  "HMAC": {
+    "constructor": [
+      "hash",
+      "_key"
+    ],
+    "update": [
+      "buf"
+    ],
+    "digestInto": [
+      "out"
+    ],
+    "digest": [],
+    "_cloneInto": [
+      "to"
+    ],
+    "destroy": []
+  },
+  "hmac": [
+    "hash",
+    "key",
+    "message"
+  ],
+  "validateSigVerOpts": [
+    "opts"
+  ],
+  "validatePointOpts": [
+    "curve"
+  ],
+  "weierstrassPoints": [
+    "opts"
+  ],
+  "weierstrassEquation": [
+    "x"
+  ],
+  "isWithinCurveOrder": [
+    "num"
+  ],
+  "normPrivateKeyToScalar": [
+    "key"
+  ],
+  "assertPrjPoint": [
+    "other"
+  ],
+  "is0": [
+    "i"
+  ],
+  "mul": [
+    "P",
+    "a"
+  ],
+  "validateOpts": [
+    "curve"
+  ],
+  "weierstrass": [
+    "curveDef"
+  ],
+  "invN": [
+    "a"
+  ],
+  "numToNByteStr": [
+    "num"
+  ],
+  "isBiggerThanHalfOrder": [
+    "number"
+  ],
+  "normalizeS": [
+    "s"
+  ],
+  "slcNum": [
+    "b",
+    "from",
+    "to"
+  ],
+  "Signature": {
+    "constructor": [
+      "r",
+      "s",
+      "recovery"
+    ],
+    "fromCompact": [
+      "hex"
+    ],
+    "fromDER": [
+      "hex"
+    ],
+    "assertValidity": [],
+    "addRecoveryBit": [
+      "recovery"
+    ],
+    "recoverPublicKey": [
+      "msgHash"
+    ],
+    "hasHighS": [],
+    "normalizeS": [],
+    "toDERRawBytes": [],
+    "toDERHex": [],
+    "toCompactRawBytes": [],
+    "toCompactHex": []
+  },
+  "isProbPub": [
+    "item"
+  ],
+  "getSharedSecret": [
+    "privateA",
+    "publicB",
+    "param"
+  ],
+  "int2octets": [
+    "num"
+  ],
+  "prepSig": [
+    "msgHash",
+    "privateKey",
+    "param"
+  ],
+  "k2sig": [
+    "kBytes"
+  ],
+  "getHash": [
+    "hash"
+  ],
+  "createCurve": [
+    "curveDef",
+    "defHash"
+  ],
+  "divNearest": [
+    "a",
+    "b"
+  ],
+  "sqrtMod": [
+    "y"
+  ],
+  "uint64": [
+    "param"
+  ],
+  "promiseTimeout": [
+    "promise",
+    "timeoutMs"
+  ]
+}

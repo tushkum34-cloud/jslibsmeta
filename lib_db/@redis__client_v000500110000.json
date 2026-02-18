@@ -1,0 +1,1762 @@
+{
+  "Decoder": {
+    "onReply": [],
+    "onErrorReply": [],
+    "onPush": [],
+    "getTypeMapping": [],
+    "constructor": [
+      "config"
+    ],
+    "reset": [],
+    "write": [
+      "chunk"
+    ]
+  },
+  "encodeCommand": [
+    "args"
+  ],
+  "VerbatimString": {
+    "format": [],
+    "constructor": [
+      "format",
+      "value"
+    ]
+  },
+  "CredentialsError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "UnableToObtainNewCredentialsError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "IDPError": {
+    "message": [],
+    "isRetryable": [],
+    "constructor": [
+      "message",
+      "isRetryable"
+    ]
+  },
+  "TokenManager": {
+    "identityProvider": [],
+    "config": [],
+    "currentToken": [],
+    "refreshTimeout": [],
+    "listener": [],
+    "retryAttempt": [],
+    "constructor": [
+      "identityProvider",
+      "config"
+    ],
+    "start": [
+      "listener",
+      "param"
+    ],
+    "calculateRetryDelay": [],
+    "shouldRetry": [
+      "error"
+    ],
+    "isRunning": [],
+    "refresh": [],
+    "handleNewToken": [],
+    "wrapAndSetCurrentToken": [
+      "nativeToken",
+      "ttlMs"
+    ],
+    "scheduleNextRefresh": [
+      "delayMs"
+    ],
+    "calculateRefreshTime": [
+      "token",
+      "param"
+    ],
+    "stop": [],
+    "getCurrentToken": [],
+    "notifyError": [
+      "error",
+      "isRetryable"
+    ]
+  },
+  "Token": {
+    "value": [],
+    "expiresAtMs": [],
+    "receivedAtMs": [],
+    "constructor": [
+      "value",
+      "expiresAtMs",
+      "receivedAtMs"
+    ],
+    "getTtlMs": [
+      "now"
+    ]
+  },
+  "CacheStats": {
+    "hitCount": [],
+    "missCount": [],
+    "loadSuccessCount": [],
+    "loadFailureCount": [],
+    "totalLoadTime": [],
+    "evictionCount": [],
+    "constructor": [
+      "hitCount",
+      "missCount",
+      "loadSuccessCount",
+      "loadFailureCount",
+      "totalLoadTime",
+      "evictionCount"
+    ],
+    "of": [
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "empty": [],
+    "EMPTY_STATS": [],
+    "requestCount": [],
+    "hitRate": [],
+    "missRate": [],
+    "loadCount": [],
+    "loadFailureRate": [],
+    "averageLoadPenalty": [],
+    "minus": [
+      "other"
+    ],
+    "plus": [
+      "other"
+    ]
+  },
+  "ClientSideCacheEntryBase": {
+    "constructor": [
+      "ttl"
+    ],
+    "invalidate": [],
+    "validate": []
+  },
+  "ClientSideCacheEntryValue": {
+    "value": [],
+    "constructor": [
+      "ttl",
+      "value"
+    ]
+  },
+  "ClientSideCacheEntryPromise": {
+    "promise": [],
+    "constructor": [
+      "ttl",
+      "sendCommandPromise"
+    ]
+  },
+  "ClientSideCacheProvider": {},
+  "BasicClientSideCache": {
+    "ttl": [],
+    "maxEntries": [],
+    "lru": [],
+    "recordEvictions": [
+      "count"
+    ],
+    "recordHits": [
+      "count"
+    ],
+    "recordMisses": [
+      "count"
+    ],
+    "constructor": [
+      "config"
+    ],
+    "handleCache": [
+      "client",
+      "parser",
+      "fn",
+      "transformReply",
+      "typeMapping"
+    ],
+    "trackingOn": [],
+    "invalidate": [
+      "key"
+    ],
+    "clear": [
+      "param"
+    ],
+    "get": [
+      "cacheKey"
+    ],
+    "delete": [
+      "cacheKey"
+    ],
+    "has": [
+      "cacheKey"
+    ],
+    "set": [
+      "cacheKey",
+      "cacheEntry",
+      "keys"
+    ],
+    "size": [],
+    "createValueEntry": [
+      "client",
+      "value"
+    ],
+    "createPromiseEntry": [
+      "client",
+      "sendCommandPromise"
+    ],
+    "stats": [],
+    "onError": [],
+    "onClose": [],
+    "deleteOldest": [],
+    "entryEntries": [],
+    "keySetEntries": []
+  },
+  "PooledClientSideCacheProvider": {
+    "disable": [],
+    "enable": [],
+    "get": [
+      "cacheKey"
+    ],
+    "has": [
+      "cacheKey"
+    ],
+    "onPoolClose": []
+  },
+  "BasicPooledClientSideCache": {
+    "onError": [],
+    "onClose": []
+  },
+  "PooledNoRedirectClientSideCache": {
+    "createValueEntry": [
+      "client",
+      "value"
+    ],
+    "createPromiseEntry": [
+      "client",
+      "sendCommandPromise"
+    ],
+    "onError": [],
+    "onClose": []
+  },
+  "DisabledStatsCounter": {
+    "INSTANCE": [],
+    "constructor": [],
+    "recordHits": [
+      "count"
+    ],
+    "recordMisses": [
+      "count"
+    ],
+    "recordLoadSuccess": [
+      "loadTime"
+    ],
+    "recordLoadFailure": [
+      "loadTime"
+    ],
+    "recordEvictions": [
+      "count"
+    ],
+    "snapshot": []
+  },
+  "disabledStatsCounter": [],
+  "DefaultStatsCounter": {
+    "recordHits": [
+      "count"
+    ],
+    "recordMisses": [
+      "count"
+    ],
+    "recordLoadSuccess": [
+      "loadTime"
+    ],
+    "recordLoadFailure": [
+      "loadTime"
+    ],
+    "recordEvictions": [
+      "count"
+    ],
+    "snapshot": [],
+    "create": []
+  },
+  "generateCacheKey": [
+    "redisArgs"
+  ],
+  "PooledClientSideCacheEntryValue": {
+    "constructor": [
+      "ttl",
+      "creator",
+      "value"
+    ],
+    "validate": []
+  },
+  "PooledClientSideCacheEntryPromise": {
+    "constructor": [
+      "ttl",
+      "creator",
+      "sendCommandPromise"
+    ],
+    "validate": []
+  },
+  "RedisCommandsQueue": {
+    "decoder": [],
+    "setMaintenanceCommandTimeout": [
+      "ms"
+    ],
+    "isPubSubActive": [],
+    "constructor": [
+      "respVersion",
+      "maxLength",
+      "onShardedChannelMoved"
+    ],
+    "addPushHandler": [
+      "handler"
+    ],
+    "waitForInflightCommandsToComplete": [
+      "options"
+    ],
+    "addCommand": [
+      "args",
+      "options"
+    ],
+    "subscribe": [
+      "type",
+      "channels",
+      "listener",
+      "returnBuffers"
+    ],
+    "unsubscribe": [
+      "type",
+      "channels",
+      "listener",
+      "returnBuffers"
+    ],
+    "removeAllPubSubListeners": [],
+    "removeShardedPubSubListenersForSlots": [
+      "slots"
+    ],
+    "resubscribe": [
+      "chainId"
+    ],
+    "extendPubSubChannelListeners": [
+      "type",
+      "channel",
+      "listeners"
+    ],
+    "extendPubSubListeners": [
+      "type",
+      "listeners"
+    ],
+    "getPubSubListeners": [
+      "type"
+    ],
+    "monitor": [
+      "callback",
+      "options"
+    ],
+    "resetDecoder": [],
+    "reset": [
+      "chainId",
+      "typeMapping"
+    ],
+    "isWaitingToWrite": [],
+    "commandsToWrite": [],
+    "flushWaitingForReply": [
+      "err"
+    ],
+    "flushAll": [
+      "err"
+    ],
+    "isEmpty": [],
+    "extractCommandsForSlots": [
+      "slots"
+    ],
+    "extractAllCommands": [],
+    "prependCommandsToWrite": [
+      "commands"
+    ]
+  },
+  "onEmpty": [],
+  "EnterpriseMaintenanceManager": {
+    "setupDefaultMaintOptions": [
+      "options"
+    ],
+    "getHandshakeCommand": [
+      "options"
+    ],
+    "constructor": [
+      "commandsQueue",
+      "client",
+      "options"
+    ],
+    "parseSMigratedPush": [
+      "push"
+    ]
+  },
+  "dbgMaintenance": [
+    "param"
+  ],
+  "emitDiagnostics": [
+    "event"
+  ],
+  "isPrivateIP": [
+    "ip"
+  ],
+  "determineEndpoint": [
+    "tlsEnabled",
+    "host",
+    "options"
+  ],
+  "RedisClient": {
+    "factory": [
+      "config"
+    ],
+    "create": [
+      "options"
+    ],
+    "parseOptions": [
+      "options"
+    ],
+    "parseURL": [
+      "url"
+    ],
+    "_self": [],
+    "_commandOptions": [],
+    "clientSideCache": [],
+    "options": [],
+    "isOpen": [],
+    "isReady": [],
+    "isPubSubActive": [],
+    "socketEpoch": [],
+    "isWatching": [],
+    "isDirtyWatch": [],
+    "setDirtyWatch": [
+      "msg"
+    ],
+    "constructor": [
+      "options"
+    ],
+    "reAuthenticate": [],
+    "withCommandOptions": [
+      "options"
+    ],
+    "_commandOptionsProxy": [
+      "key",
+      "value"
+    ],
+    "withTypeMapping": [
+      "typeMapping"
+    ],
+    "withAbortSignal": [
+      "abortSignal"
+    ],
+    "asap": [],
+    "legacy": [],
+    "createPool": [
+      "options"
+    ],
+    "duplicate": [
+      "overrides"
+    ],
+    "connect": [],
+    "_ejectSocket": [],
+    "_insertSocket": [
+      "socket"
+    ],
+    "_maintenanceUpdate": [
+      "update"
+    ],
+    "_pause": [],
+    "_unpause": [],
+    "_handleSmigrated": [
+      "smigratedEvent"
+    ],
+    "_getQueue": [],
+    "_executeCommand": [
+      "command",
+      "parser",
+      "commandOptions",
+      "transformReply"
+    ],
+    "_executeScript": [
+      "script",
+      "parser",
+      "options",
+      "transformReply"
+    ],
+    "sendCommand": [
+      "args",
+      "options"
+    ],
+    "SELECT": [
+      "db"
+    ],
+    "select": [],
+    "SUBSCRIBE": [
+      "channels",
+      "listener",
+      "bufferMode"
+    ],
+    "subscribe": [],
+    "UNSUBSCRIBE": [
+      "channels",
+      "listener",
+      "bufferMode"
+    ],
+    "unsubscribe": [],
+    "PSUBSCRIBE": [
+      "patterns",
+      "listener",
+      "bufferMode"
+    ],
+    "pSubscribe": [],
+    "PUNSUBSCRIBE": [
+      "patterns",
+      "listener",
+      "bufferMode"
+    ],
+    "pUnsubscribe": [],
+    "SSUBSCRIBE": [
+      "channels",
+      "listener",
+      "bufferMode"
+    ],
+    "sSubscribe": [],
+    "SUNSUBSCRIBE": [
+      "channels",
+      "listener",
+      "bufferMode"
+    ],
+    "sUnsubscribe": [],
+    "WATCH": [
+      "key"
+    ],
+    "watch": [],
+    "UNWATCH": [],
+    "unwatch": [],
+    "getPubSubListeners": [
+      "type"
+    ],
+    "extendPubSubChannelListeners": [
+      "type",
+      "channel",
+      "listeners"
+    ],
+    "extendPubSubListeners": [
+      "type",
+      "listeners"
+    ],
+    "_executePipeline": [
+      "commands",
+      "selectedDB"
+    ],
+    "_executeMulti": [
+      "commands",
+      "selectedDB"
+    ],
+    "MULTI": [],
+    "multi": [],
+    "scanIterator": [
+      "options"
+    ],
+    "hScanIterator": [
+      "key",
+      "options"
+    ],
+    "hScanValuesIterator": [
+      "key",
+      "options"
+    ],
+    "hScanNoValuesIterator": [
+      "key",
+      "options"
+    ],
+    "sScanIterator": [
+      "key",
+      "options"
+    ],
+    "zScanIterator": [
+      "key",
+      "options"
+    ],
+    "MONITOR": [
+      "callback"
+    ],
+    "monitor": [],
+    "reset": [],
+    "resetIfDirty": [],
+    "QUIT": [],
+    "quit": [],
+    "disconnect": [],
+    "close": [],
+    "destroy": [],
+    "ref": [],
+    "unref": []
+  },
+  "socketInitiator": [],
+  "fn": [],
+  "maybeClose": [],
+  "RedisLegacyClient": {
+    "pushArguments": [
+      "redisArgs",
+      "args"
+    ],
+    "getTransformReply": [
+      "command",
+      "resp"
+    ],
+    "constructor": [
+      "client"
+    ],
+    "sendCommand": [
+      "param"
+    ],
+    "multi": []
+  },
+  "LegacyMultiCommand": {
+    "factory": [
+      "resp"
+    ],
+    "constructor": [
+      "client"
+    ],
+    "sendCommand": [
+      "param"
+    ],
+    "exec": [
+      "cb"
+    ]
+  },
+  "DoublyLinkedList": {
+    "length": [],
+    "head": [],
+    "tail": [],
+    "push": [
+      "value"
+    ],
+    "unshift": [
+      "value"
+    ],
+    "add": [
+      "value",
+      "param"
+    ],
+    "shift": [],
+    "remove": [
+      "node"
+    ],
+    "reset": [],
+    "nodes": []
+  },
+  "SinglyLinkedList": {
+    "length": [],
+    "head": [],
+    "tail": [],
+    "push": [
+      "value"
+    ],
+    "remove": [
+      "node",
+      "parent"
+    ],
+    "shift": [],
+    "reset": []
+  },
+  "EmptyAwareSinglyLinkedList": {
+    "events": [],
+    "reset": [],
+    "shift": [],
+    "remove": [
+      "node",
+      "parent"
+    ]
+  },
+  "RedisClientMultiCommand": {
+    "extend": [
+      "config"
+    ],
+    "constructor": [
+      "executeMulti",
+      "executePipeline",
+      "typeMapping"
+    ],
+    "SELECT": [
+      "db",
+      "transformReply"
+    ],
+    "select": [],
+    "addCommand": [
+      "args",
+      "transformReply"
+    ],
+    "exec": [
+      "param"
+    ],
+    "EXEC": [],
+    "execTyped": [
+      "param"
+    ],
+    "execAsPipeline": [],
+    "execAsPipelineTyped": []
+  },
+  "BasicCommandParser": {
+    "preserve": [],
+    "redisArgs": [],
+    "keys": [],
+    "firstKey": [],
+    "cacheKey": [],
+    "push": [
+      "param"
+    ],
+    "pushVariadic": [
+      "vals"
+    ],
+    "pushVariadicWithLength": [
+      "vals"
+    ],
+    "pushVariadicNumber": [
+      "vals"
+    ],
+    "pushKey": [
+      "key"
+    ],
+    "pushKeysLength": [
+      "keys"
+    ],
+    "pushKeys": [
+      "keys"
+    ]
+  },
+  "RedisClientPool": {
+    "create": [
+      "clientOptions",
+      "options"
+    ],
+    "idleClients": [],
+    "clientsInUse": [],
+    "totalClients": [],
+    "tasksQueueLength": [],
+    "isOpen": [],
+    "isClosing": [],
+    "clientSideCache": [],
+    "constructor": [
+      "clientOptions",
+      "options"
+    ],
+    "_self": [],
+    "_commandOptions": [],
+    "withCommandOptions": [
+      "options"
+    ],
+    "withTypeMapping": [
+      "typeMapping"
+    ],
+    "withAbortSignal": [
+      "abortSignal"
+    ],
+    "asap": [],
+    "connect": [],
+    "execute": [
+      "fn"
+    ],
+    "cleanupTimeout": [],
+    "sendCommand": [
+      "args",
+      "options"
+    ],
+    "MULTI": [],
+    "multi": [],
+    "close": [],
+    "destroy": []
+  },
+  "PubSub": {
+    "isStatusReply": [
+      "reply"
+    ],
+    "isShardedUnsubscribe": [
+      "reply"
+    ],
+    "isActive": [],
+    "listeners": [],
+    "subscribe": [
+      "type",
+      "channels",
+      "listener",
+      "returnBuffers"
+    ],
+    "extendChannelListeners": [
+      "type",
+      "channel",
+      "listeners"
+    ],
+    "extendTypeListeners": [
+      "type",
+      "listeners"
+    ],
+    "unsubscribe": [
+      "type",
+      "channels",
+      "listener",
+      "returnBuffers"
+    ],
+    "reset": [],
+    "resubscribe": [],
+    "handleMessageReply": [
+      "reply"
+    ],
+    "removeShardedListeners": [
+      "channel"
+    ],
+    "removeAllListeners": [],
+    "removeShardedPubSubListenersForSlots": [
+      "slots"
+    ]
+  },
+  "callback": [],
+  "RedisSocket": {
+    "isOpen": [],
+    "isReady": [],
+    "socketEpoch": [],
+    "constructor": [
+      "initiator",
+      "options"
+    ],
+    "connect": [],
+    "setMaintenanceTimeout": [
+      "ms"
+    ],
+    "write": [
+      "iterable"
+    ],
+    "quit": [
+      "fn"
+    ],
+    "close": [],
+    "destroy": [],
+    "destroySocket": [],
+    "ref": [],
+    "unref": [],
+    "defaultReconnectStrategy": [
+      "retries",
+      "cause"
+    ]
+  },
+  "RedisClusterSlots": {
+    "slots": [],
+    "masters": [],
+    "replicas": [],
+    "nodeByAddress": [],
+    "pubSubNode": [],
+    "clientSideCache": [],
+    "smigratedSeqIdsSeen": [],
+    "isOpen": [],
+    "constructor": [
+      "options",
+      "emit"
+    ],
+    "connect": [],
+    "nodeClient": [
+      "node"
+    ],
+    "rediscover": [
+      "startWith"
+    ],
+    "quit": [],
+    "disconnect": [],
+    "close": [],
+    "destroy": [],
+    "getClientAndSlotNumber": [
+      "firstKey",
+      "isReadonly"
+    ],
+    "_randomNodeIterator": [],
+    "getRandomNode": [],
+    "getSlotRandomNode": [
+      "slotNumber"
+    ],
+    "getMasterByAddress": [
+      "address"
+    ],
+    "getPubSubClient": [],
+    "executeUnsubscribeCommand": [
+      "unsubscribe"
+    ],
+    "getShardedPubSubClient": [
+      "channel"
+    ],
+    "executeShardedUnsubscribeCommand": [
+      "channel",
+      "unsubscribe"
+    ]
+  },
+  "RedisCluster": {
+    "factory": [
+      "config"
+    ],
+    "create": [
+      "options"
+    ],
+    "_options": [],
+    "_slots": [],
+    "_self": [],
+    "_commandOptions": [],
+    "slots": [],
+    "clientSideCache": [],
+    "masters": [],
+    "replicas": [],
+    "nodeByAddress": [],
+    "pubSubNode": [],
+    "isOpen": [],
+    "constructor": [
+      "options"
+    ],
+    "duplicate": [
+      "overrides"
+    ],
+    "connect": [],
+    "withCommandOptions": [
+      "options"
+    ],
+    "_commandOptionsProxy": [
+      "key",
+      "value"
+    ],
+    "withTypeMapping": [
+      "typeMapping"
+    ],
+    "_handleAsk": [
+      "fn"
+    ],
+    "_execute": [
+      "firstKey",
+      "isReadonly",
+      "options",
+      "fn"
+    ],
+    "sendCommand": [
+      "firstKey",
+      "isReadonly",
+      "args",
+      "options"
+    ],
+    "MULTI": [
+      "routing"
+    ],
+    "multi": [],
+    "SUBSCRIBE": [
+      "channels",
+      "listener",
+      "bufferMode"
+    ],
+    "subscribe": [],
+    "UNSUBSCRIBE": [
+      "channels",
+      "listener",
+      "bufferMode"
+    ],
+    "unsubscribe": [],
+    "PSUBSCRIBE": [
+      "patterns",
+      "listener",
+      "bufferMode"
+    ],
+    "pSubscribe": [],
+    "PUNSUBSCRIBE": [
+      "patterns",
+      "listener",
+      "bufferMode"
+    ],
+    "pUnsubscribe": [],
+    "SSUBSCRIBE": [
+      "channels",
+      "listener",
+      "bufferMode"
+    ],
+    "sSubscribe": [],
+    "SUNSUBSCRIBE": [
+      "channels",
+      "listener",
+      "bufferMode"
+    ],
+    "resubscribeAllPubSubListeners": [
+      "allListeners"
+    ],
+    "sUnsubscribe": [],
+    "quit": [],
+    "disconnect": [],
+    "close": [],
+    "destroy": [],
+    "nodeClient": [
+      "node"
+    ],
+    "getRandomNode": [],
+    "getSlotRandomNode": [
+      "slot"
+    ],
+    "getMasters": [],
+    "getSlotMaster": [
+      "slot"
+    ]
+  },
+  "RedisClusterMultiCommand": {
+    "extend": [
+      "config"
+    ],
+    "constructor": [
+      "executeMulti",
+      "executePipeline",
+      "routing",
+      "typeMapping"
+    ],
+    "addCommand": [
+      "firstKey",
+      "isReadonly",
+      "args",
+      "transformReply"
+    ],
+    "exec": [
+      "param"
+    ],
+    "EXEC": [],
+    "execTyped": [
+      "param"
+    ],
+    "execAsPipeline": [],
+    "execAsPipelineTyped": []
+  },
+  "throwResp3SearchModuleUnstableError": [],
+  "attachConfig": [
+    "param"
+  ],
+  "attachNamespace": [
+    "prototype",
+    "name",
+    "fns"
+  ],
+  "getTransformReply": [
+    "command",
+    "resp"
+  ],
+  "functionArgumentsPrefix": [
+    "name",
+    "fn"
+  ],
+  "scriptArgumentsPrefix": [
+    "script"
+  ],
+  "pushFilter": [
+    "parser",
+    "filter"
+  ],
+  "isBroadcast": [
+    "options"
+  ],
+  "isOptIn": [
+    "options"
+  ],
+  "isOptOut": [
+    "options"
+  ],
+  "transformNode": [
+    "node"
+  ],
+  "parseEvalArguments": [
+    "parser",
+    "script",
+    "options"
+  ],
+  "transformRunningScript": [
+    "reply"
+  ],
+  "transformEngines": [
+    "reply"
+  ],
+  "pushMember": [
+    "parser",
+    "member"
+  ],
+  "parseGeoRadiusArguments": [
+    "parser",
+    "key",
+    "from",
+    "radius",
+    "unit",
+    "options"
+  ],
+  "parseGeoRadiusByMemberArguments": [
+    "parser",
+    "key",
+    "from",
+    "radius",
+    "unit",
+    "options"
+  ],
+  "parseGeoRadiusByMemberWithArguments": [
+    "parser",
+    "key",
+    "from",
+    "radius",
+    "unit",
+    "replyWith",
+    "options"
+  ],
+  "parseGeoRadiusWithArguments": [
+    "parser",
+    "key",
+    "from",
+    "radius",
+    "unit",
+    "replyWith",
+    "options"
+  ],
+  "parseGeoSearchArguments": [
+    "parser",
+    "key",
+    "from",
+    "by",
+    "options"
+  ],
+  "parseGeoSearchOptions": [
+    "parser",
+    "options"
+  ],
+  "parseHotkeysList": [
+    "arr"
+  ],
+  "parseSlotRanges": [
+    "arr"
+  ],
+  "transformHotkeysGetReply": [
+    "reply"
+  ],
+  "pushMap": [
+    "parser",
+    "map"
+  ],
+  "pushTuples": [
+    "parser",
+    "tuples"
+  ],
+  "pushObject": [
+    "parser",
+    "object"
+  ],
+  "convertValue": [
+    "value"
+  ],
+  "_pushTuples": [
+    "parser",
+    "tuples"
+  ],
+  "id": [
+    "n"
+  ],
+  "parseLMPopArguments": [
+    "parser",
+    "keys",
+    "side",
+    "options"
+  ],
+  "parseMSetArguments": [
+    "parser",
+    "toSet"
+  ],
+  "parseMSetExArguments": [
+    "parser",
+    "keyValuePairs"
+  ],
+  "parseScanArguments": [
+    "parser",
+    "cursor",
+    "options"
+  ],
+  "pushScanArguments": [
+    "args",
+    "cursor",
+    "options"
+  ],
+  "parseSortArguments": [
+    "parser",
+    "key",
+    "options"
+  ],
+  "transformVLinksWithScoresReply": [
+    "reply"
+  ],
+  "parseXAddArguments": [
+    "optional",
+    "parser",
+    "key",
+    "id",
+    "message",
+    "options"
+  ],
+  "transformEntry": [
+    "entry"
+  ],
+  "xRangeArguments": [
+    "start",
+    "end",
+    "options"
+  ],
+  "pushXReadStreams": [
+    "parser",
+    "streams"
+  ],
+  "pushMembers": [
+    "parser",
+    "members"
+  ],
+  "parseZInterArguments": [
+    "parser",
+    "keys",
+    "options"
+  ],
+  "parseZMPopArguments": [
+    "parser",
+    "keys",
+    "side",
+    "options"
+  ],
+  "zRangeArgument": [
+    "min",
+    "max",
+    "options"
+  ],
+  "isNullReply": [
+    "reply"
+  ],
+  "isArrayReply": [
+    "reply"
+  ],
+  "transformDoubleArgument": [
+    "num"
+  ],
+  "transformStringDoubleArgument": [
+    "num"
+  ],
+  "createTransformDoubleReplyResp2Func": [
+    "preserve",
+    "typeMapping"
+  ],
+  "createTransformNullableDoubleReplyResp2Func": [
+    "preserve",
+    "typeMapping"
+  ],
+  "transformTuplesToMap": [
+    "reply",
+    "func"
+  ],
+  "createTransformTuplesReplyFunc": [
+    "preserve",
+    "typeMapping"
+  ],
+  "transformTuplesReply": [
+    "reply",
+    "preserve",
+    "typeMapping"
+  ],
+  "transformEXAT": [
+    "EXAT"
+  ],
+  "transformPXAT": [
+    "PXAT"
+  ],
+  "evalFirstKeyIndex": [
+    "options"
+  ],
+  "pushEvalArguments": [
+    "args",
+    "options"
+  ],
+  "pushVariadicArguments": [
+    "args",
+    "value"
+  ],
+  "pushVariadicNumberArguments": [
+    "args",
+    "value"
+  ],
+  "pushVariadicArgument": [
+    "args",
+    "value"
+  ],
+  "parseOptionalVariadicArgument": [
+    "parser",
+    "name",
+    "value"
+  ],
+  "transformCommandReply": [
+    "param"
+  ],
+  "transformFunctionListItemReply": [
+    "reply"
+  ],
+  "parseSlotRangeArguments": [
+    "parser",
+    "range"
+  ],
+  "parseSlotRangesArguments": [
+    "parser",
+    "ranges"
+  ],
+  "transformRangeReply": [
+    "param"
+  ],
+  "parseZKeysArguments": [
+    "parser",
+    "keys"
+  ],
+  "isPlainKey": [
+    "key"
+  ],
+  "isPlainKeys": [
+    "keys"
+  ],
+  "parseArgs": [
+    "command",
+    "param"
+  ],
+  "transformStreamMessageReply": [
+    "typeMapping",
+    "reply"
+  ],
+  "transformStreamMessageNullReply": [
+    "typeMapping",
+    "reply"
+  ],
+  "transformStreamMessagesReply": [
+    "r",
+    "typeMapping"
+  ],
+  "transformStreamsMessagesReplyResp2": [
+    "reply",
+    "preserve",
+    "typeMapping"
+  ],
+  "transformStreamsMessagesReplyResp3": [
+    "reply"
+  ],
+  "transformRedisJsonArgument": [
+    "json"
+  ],
+  "transformRedisJsonReply": [
+    "json"
+  ],
+  "transformRedisJsonNullReply": [
+    "json"
+  ],
+  "AbortError": {
+    "constructor": []
+  },
+  "WatchError": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "ConnectionTimeoutError": {
+    "constructor": []
+  },
+  "SocketTimeoutError": {
+    "constructor": [
+      "timeout"
+    ]
+  },
+  "ClientClosedError": {
+    "constructor": []
+  },
+  "ClientOfflineError": {
+    "constructor": []
+  },
+  "DisconnectsClientError": {
+    "constructor": []
+  },
+  "SocketClosedUnexpectedlyError": {
+    "constructor": []
+  },
+  "RootNodesUnavailableError": {
+    "constructor": []
+  },
+  "ReconnectStrategyError": {
+    "originalError": [],
+    "socketError": [],
+    "constructor": [
+      "originalError",
+      "socketError"
+    ]
+  },
+  "ErrorReply": {},
+  "SimpleError": {},
+  "BlobError": {},
+  "TimeoutError": {},
+  "SocketTimeoutDuringMaintenanceError": {
+    "constructor": [
+      "timeout"
+    ]
+  },
+  "CommandTimeoutDuringMaintenanceError": {
+    "constructor": [
+      "timeout"
+    ]
+  },
+  "MultiErrorReply": {
+    "replies": [],
+    "errorIndexes": [],
+    "constructor": [
+      "replies",
+      "errorIndexes"
+    ],
+    "errors": []
+  },
+  "defineScript": [
+    "script"
+  ],
+  "scriptSha1": [
+    "script"
+  ],
+  "RedisMultiCommand": {
+    "typeMapping": [],
+    "constructor": [
+      "typeMapping"
+    ],
+    "queue": [],
+    "scriptsInUse": [],
+    "addCommand": [
+      "args",
+      "transformReply"
+    ],
+    "addScript": [
+      "script",
+      "args",
+      "transformReply"
+    ],
+    "transformReplies": [
+      "rawReplies"
+    ]
+  },
+  "RedisSentinelClient": {
+    "_self": [],
+    "isOpen": [],
+    "isReady": [],
+    "commandOptions": [],
+    "constructor": [
+      "internal",
+      "clientInfo",
+      "commandOptions"
+    ],
+    "factory": [
+      "config"
+    ],
+    "create": [
+      "options",
+      "internal",
+      "clientInfo",
+      "commandOptions"
+    ],
+    "withCommandOptions": [
+      "options"
+    ],
+    "_commandOptionsProxy": [
+      "key",
+      "value"
+    ],
+    "withTypeMapping": [
+      "typeMapping"
+    ],
+    "_execute": [
+      "isReadonly",
+      "fn"
+    ],
+    "sendCommand": [
+      "isReadonly",
+      "args",
+      "options"
+    ],
+    "_executePipeline": [
+      "isReadonly",
+      "commands"
+    ],
+    "_executeMulti": [
+      "isReadonly",
+      "commands"
+    ],
+    "MULTI": [],
+    "multi": [],
+    "WATCH": [
+      "key"
+    ],
+    "watch": [],
+    "UNWATCH": [],
+    "unwatch": [],
+    "release": []
+  },
+  "RedisSentinel": {
+    "_self": [],
+    "isOpen": [],
+    "isReady": [],
+    "commandOptions": [],
+    "clientSideCache": [],
+    "constructor": [
+      "options"
+    ],
+    "factory": [
+      "config"
+    ],
+    "create": [
+      "options"
+    ],
+    "withCommandOptions": [
+      "options"
+    ],
+    "_commandOptionsProxy": [
+      "key",
+      "value"
+    ],
+    "withTypeMapping": [
+      "typeMapping"
+    ],
+    "connect": [],
+    "_execute": [
+      "isReadonly",
+      "fn"
+    ],
+    "use": [
+      "fn"
+    ],
+    "sendCommand": [
+      "isReadonly",
+      "args",
+      "options"
+    ],
+    "_executePipeline": [
+      "isReadonly",
+      "commands"
+    ],
+    "_executeMulti": [
+      "isReadonly",
+      "commands"
+    ],
+    "MULTI": [],
+    "multi": [],
+    "close": [],
+    "destroy": [],
+    "SUBSCRIBE": [
+      "channels",
+      "listener",
+      "bufferMode"
+    ],
+    "subscribe": [],
+    "UNSUBSCRIBE": [
+      "channels",
+      "listener",
+      "bufferMode"
+    ],
+    "unsubscribe": [],
+    "PSUBSCRIBE": [
+      "patterns",
+      "listener",
+      "bufferMode"
+    ],
+    "pSubscribe": [],
+    "PUNSUBSCRIBE": [
+      "patterns",
+      "listener",
+      "bufferMode"
+    ],
+    "pUnsubscribe": [],
+    "acquire": [],
+    "getSentinelNode": [],
+    "getMasterNode": [],
+    "getReplicaNodes": [],
+    "setTracer": [
+      "tracer"
+    ]
+  },
+  "RedisSentinelInternal": {
+    "isOpen": [],
+    "isReady": [],
+    "useReplicas": [],
+    "clientSideCache": [],
+    "constructor": [
+      "options"
+    ],
+    "getClientLease": [],
+    "releaseClientLease": [
+      "clientInfo"
+    ],
+    "connect": [],
+    "execute": [
+      "fn",
+      "clientInfo"
+    ],
+    "close": [],
+    "destroy": [],
+    "subscribe": [
+      "channels",
+      "listener",
+      "bufferMode"
+    ],
+    "unsubscribe": [
+      "channels",
+      "listener",
+      "bufferMode"
+    ],
+    "pSubscribe": [
+      "patterns",
+      "listener",
+      "bufferMode"
+    ],
+    "pUnsubscribe": [
+      "patterns",
+      "listener",
+      "bufferMode"
+    ],
+    "observe": [],
+    "analyze": [
+      "observed"
+    ],
+    "transform": [
+      "analyzed"
+    ],
+    "getMasterNode": [],
+    "getSentinelNode": [],
+    "getReplicaNodes": [],
+    "setTracer": [
+      "tracer"
+    ]
+  },
+  "RedisSentinelFactory": {
+    "options": [],
+    "constructor": [
+      "options"
+    ],
+    "updateSentinelRootNodes": [],
+    "getMasterNode": [],
+    "getMasterClient": [],
+    "getReplicaNodes": [],
+    "getReplicaClient": []
+  },
+  "RedisSentinelMultiCommand": {
+    "_createCommand": [
+      "command",
+      "resp"
+    ],
+    "_createModuleCommand": [
+      "command",
+      "resp"
+    ],
+    "_createFunctionCommand": [
+      "name",
+      "fn",
+      "resp"
+    ],
+    "_createScriptCommand": [
+      "script",
+      "resp"
+    ],
+    "extend": [
+      "config"
+    ],
+    "constructor": [
+      "sentinel",
+      "typeMapping"
+    ],
+    "addCommand": [
+      "isReadonly",
+      "args",
+      "transformReply"
+    ],
+    "exec": [
+      "param"
+    ],
+    "EXEC": [],
+    "execTyped": [
+      "param"
+    ],
+    "execAsPipeline": [],
+    "execAsPipelineTyped": []
+  },
+  "PubSubProxy": {
+    "constructor": [
+      "clientOptions",
+      "onError"
+    ],
+    "changeNode": [
+      "node"
+    ],
+    "subscribe": [
+      "channels",
+      "listener",
+      "bufferMode"
+    ],
+    "unsubscribe": [
+      "channels",
+      "listener",
+      "bufferMode"
+    ],
+    "pSubscribe": [
+      "patterns",
+      "listener",
+      "bufferMode"
+    ],
+    "pUnsubscribe": [
+      "patterns",
+      "listener",
+      "bufferMode"
+    ],
+    "destroy": []
+  },
+  "parseNode": [
+    "node"
+  ],
+  "createNodeList": [
+    "nodes"
+  ],
+  "clientSocketToNode": [
+    "socket"
+  ],
+  "createCommand": [
+    "command",
+    "resp"
+  ],
+  "createFunctionCommand": [
+    "name",
+    "fn",
+    "resp"
+  ],
+  "createModuleCommand": [
+    "command",
+    "resp"
+  ],
+  "createScriptCommand": [
+    "script",
+    "resp"
+  ],
+  "getMappedNode": [
+    "host",
+    "port",
+    "nodeAddressMap"
+  ],
+  "WaitQueue": {
+    "push": [
+      "value"
+    ],
+    "shift": [],
+    "wait": []
+  },
+  "SingleEntryCache": {
+    "get": [
+      "keyObj"
+    ],
+    "set": [
+      "keyObj",
+      "obj"
+    ]
+  },
+  "makeCircularReplacer": [],
+  "getXxh3": [],
+  "digest": [
+    "value"
+  ]
+}

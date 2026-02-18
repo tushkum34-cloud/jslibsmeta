@@ -1,0 +1,33 @@
+{
+  "HMAC": {
+    "create": [
+      "hasher",
+      "key"
+    ],
+    "reset": [],
+    "update": [
+      "messageUpdate"
+    ],
+    "finalize": [
+      "messageUpdate"
+    ]
+  },
+  "PBKDF2": {
+    "create": [
+      "cfg"
+    ],
+    "compute": [
+      "password",
+      "salt"
+    ]
+  },
+  "EvpKDF": {
+    "create": [
+      "cfg"
+    ],
+    "compute": [
+      "password",
+      "salt"
+    ]
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "BaseBundleBuilder": {
+    "signer": [],
+    "witnesses": [],
+    "constructor": [
+      "options"
+    ],
+    "create": [
+      "artifact"
+    ],
+    "prepare": [
+      "artifact"
+    ]
+  },
+  "publicKey": [
+    "key"
+  ],
+  "ownKeys": [
+    "o"
+  ],
+  "toMessageSignatureBundle": [
+    "artifact",
+    "signature"
+  ],
+  "toDSSEBundle": [
+    "artifact",
+    "signature",
+    "certificateChain"
+  ],
+  "DSSEBundleBuilder": {
+    "certificateChain": [],
+    "constructor": [
+      "options"
+    ],
+    "prepare": [
+      "artifact"
+    ],
+    "package": [
+      "artifact",
+      "signature"
+    ]
+  },
+  "artifactDefaults": [
+    "artifact"
+  ],
+  "MessageSignatureBundleBuilder": {
+    "constructor": [
+      "options"
+    ],
+    "package": [
+      "artifact",
+      "signature"
+    ]
+  },
+  "bundleBuilderFromSigningConfig": [
+    "options"
+  ],
+  "fulcioSignerFromConfig": [
+    "signingConfig",
+    "identityProvider",
+    "fetchOptions"
+  ],
+  "witnessesFromConfig": [
+    "signingConfig",
+    "fetchOptions"
+  ],
+  "certAuthorityService": [
+    "signingConfig"
+  ],
+  "tlogService": [
+    "signingConfig"
+  ],
+  "tsaService": [
+    "signingConfig"
+  ],
+  "sortServicesByStartDate": [
+    "services"
+  ],
+  "filterServicesByMaxAPIVersion": [
+    "services",
+    "apiVersion"
+  ],
+  "InternalError": {
+    "code": [],
+    "cause": [],
+    "constructor": [
+      "param"
+    ]
+  },
+  "internalError": [
+    "err",
+    "code",
+    "message"
+  ],
+  "HTTPError": {
+    "statusCode": [],
+    "location": [],
+    "constructor": [
+      "param"
+    ]
+  },
+  "fetchWithRetry": [
+    "url",
+    "options"
+  ],
+  "errorFromResponse": [
+    "response"
+  ],
+  "retryable": [
+    "status"
+  ],
+  "retryOpts": [
+    "retry"
+  ],
+  "Fulcio": {
+    "options": [],
+    "constructor": [
+      "options"
+    ],
+    "createSigningCertificate": [
+      "request"
+    ]
+  },
+  "RekorV2": {
+    "options": [],
+    "constructor": [
+      "options"
+    ],
+    "createEntry": [
+      "proposedEntry"
+    ]
+  },
+  "Rekor": {
+    "options": [],
+    "constructor": [
+      "options"
+    ],
+    "createEntry": [
+      "propsedEntry"
+    ],
+    "getEntry": [
+      "uuid"
+    ]
+  },
+  "entryFromResponse": [
+    "data"
+  ],
+  "TimestampAuthority": {
+    "options": [],
+    "constructor": [
+      "options"
+    ],
+    "createTimestamp": [
+      "request"
+    ]
+  },
+  "CIContextProvider": {
+    "audience": [],
+    "constructor": [
+      "param"
+    ],
+    "getToken": []
+  },
+  "getGHAToken": [
+    "audience"
+  ],
+  "getEnv": [],
+  "CAClient": {
+    "fulcio": [],
+    "constructor": [
+      "options"
+    ],
+    "createSigningCertificate": [
+      "identityToken",
+      "publicKey",
+      "challenge"
+    ]
+  },
+  "toCertificateRequest": [
+    "identityToken",
+    "publicKey",
+    "challenge"
+  ],
+  "EphemeralSigner": {
+    "keypair": [],
+    "constructor": [],
+    "sign": [
+      "data"
+    ]
+  },
+  "FulcioSigner": {
+    "ca": [],
+    "identityProvider": [],
+    "keyHolder": [],
+    "constructor": [
+      "options"
+    ],
+    "sign": [
+      "data"
+    ],
+    "getIdentityToken": []
+  },
+  "extractJWTSubject": [
+    "jwt"
+  ],
+  "getUserAgent": [],
+  "TLogClient": {
+    "rekor": [],
+    "fetchOnConflict": [],
+    "constructor": [
+      "options"
+    ],
+    "createEntry": [
+      "proposedEntry"
+    ]
+  },
+  "TLogV2Client": {
+    "rekor": [],
+    "constructor": [
+      "options"
+    ],
+    "createEntry": [
+      "createEntryRequest"
+    ]
+  },
+  "entryExistsError": [
+    "value"
+  ],
+  "toProposedEntry": [
+    "content",
+    "publicKey",
+    "param"
+  ],
+  "toProposedHashedRekordEntry": [
+    "messageSignature",
+    "publicKey"
+  ],
+  "toProposedDSSEEntry": [
+    "envelope",
+    "publicKey"
+  ],
+  "toProposedIntotoEntry": [
+    "envelope",
+    "publicKey"
+  ],
+  "calculateDSSEHash": [
+    "envelope",
+    "publicKey"
+  ],
+  "toCreateEntryRequest": [
+    "content",
+    "publicKey"
+  ],
+  "toCreateEntryRequestDSSE": [
+    "envelope",
+    "publicKey"
+  ],
+  "toCreateEntryRequestMessageSignature": [
+    "messageSignature",
+    "publicKey"
+  ],
+  "RekorWitness": {
+    "tlogV1": [],
+    "tlogV2": [],
+    "entryType": [],
+    "majorApiVersion": [],
+    "constructor": [
+      "options"
+    ],
+    "testify": [
+      "content",
+      "publicKey"
+    ]
+  },
+  "toTransparencyLogEntry": [
+    "entry"
+  ],
+  "inclusionPromise": [
+    "promise"
+  ],
+  "inclusionProof": [
+    "proof"
+  ],
+  "TSAClient": {
+    "tsa": [],
+    "constructor": [
+      "options"
+    ],
+    "createTimestamp": [
+      "signature"
+    ]
+  },
+  "TSAWitness": {
+    "tsa": [],
+    "constructor": [
+      "options"
+    ],
+    "testify": [
+      "content"
+    ]
+  },
+  "extractSignature": [
+    "content"
+  ]
+}

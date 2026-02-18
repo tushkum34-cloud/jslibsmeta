@@ -1,0 +1,494 @@
+{
+  "ContextAPI": {
+    "constructor": [],
+    "getInstance": [],
+    "setGlobalContextManager": [
+      "contextManager"
+    ],
+    "active": [],
+    "with": [
+      "context",
+      "fn",
+      "thisArg",
+      "param"
+    ],
+    "bind": [
+      "context",
+      "target"
+    ],
+    "_getContextManager": [],
+    "disable": []
+  },
+  "DiagAPI": {
+    "constructor": [],
+    "instance": []
+  },
+  "_logProxy": [
+    "funcName"
+  ],
+  "setLogger": [
+    "logger",
+    "param"
+  ],
+  "MetricsAPI": {
+    "constructor": [],
+    "getInstance": [],
+    "setGlobalMeterProvider": [
+      "provider"
+    ],
+    "getMeterProvider": [],
+    "getMeter": [
+      "name",
+      "version",
+      "options"
+    ],
+    "disable": []
+  },
+  "PropagationAPI": {
+    "constructor": [],
+    "getInstance": [],
+    "setGlobalPropagator": [
+      "propagator"
+    ],
+    "inject": [
+      "context",
+      "carrier",
+      "param"
+    ],
+    "extract": [
+      "context",
+      "carrier",
+      "param"
+    ],
+    "fields": [],
+    "disable": [],
+    "_getGlobalPropagator": []
+  },
+  "TraceAPI": {
+    "constructor": [],
+    "getInstance": [],
+    "setGlobalTracerProvider": [
+      "provider"
+    ],
+    "getTracerProvider": [],
+    "getTracer": [
+      "name",
+      "version"
+    ],
+    "disable": []
+  },
+  "getBaggage": [
+    "context"
+  ],
+  "getActiveBaggage": [],
+  "setBaggage": [
+    "context",
+    "baggage"
+  ],
+  "deleteBaggage": [
+    "context"
+  ],
+  "BaggageImpl": {
+    "constructor": [
+      "entries"
+    ],
+    "getEntry": [
+      "key"
+    ],
+    "getAllEntries": [],
+    "setEntry": [
+      "key",
+      "entry"
+    ],
+    "removeEntry": [
+      "key"
+    ],
+    "removeEntries": [
+      "param"
+    ],
+    "clear": []
+  },
+  "createBaggage": [
+    "param"
+  ],
+  "baggageEntryMetadataFromString": [
+    "str"
+  ],
+  "NoopContextManager": {
+    "active": [],
+    "with": [
+      "_context",
+      "fn",
+      "thisArg",
+      "param"
+    ],
+    "bind": [
+      "_context",
+      "target"
+    ],
+    "enable": [],
+    "disable": []
+  },
+  "createContextKey": [
+    "description"
+  ],
+  "BaseContext": {
+    "constructor": [
+      "parentContext"
+    ]
+  },
+  "DiagComponentLogger": {
+    "constructor": [
+      "props"
+    ],
+    "debug": [
+      "param"
+    ],
+    "error": [
+      "param"
+    ],
+    "info": [
+      "param"
+    ],
+    "warn": [
+      "param"
+    ],
+    "verbose": [
+      "param"
+    ]
+  },
+  "logProxy": [
+    "funcName",
+    "namespace",
+    "args"
+  ],
+  "DiagConsoleLogger": {
+    "constructor": []
+  },
+  "_consoleFunc": [
+    "funcName"
+  ],
+  "createLogLevelDiagLogger": [
+    "maxLevel",
+    "logger"
+  ],
+  "_filterFunc": [
+    "funcName",
+    "theLevel"
+  ],
+  "noopLogFunction": [],
+  "createNoopDiagLogger": [],
+  "SugaredTracer": {
+    "constructor": [
+      "tracer"
+    ],
+    "withActiveSpan": [
+      "name",
+      "arg2",
+      "arg3",
+      "arg4"
+    ],
+    "withSpan": [
+      "name",
+      "arg2",
+      "arg3",
+      "arg4"
+    ]
+  },
+  "defaultOnException": [
+    "e",
+    "span"
+  ],
+  "wrapTracer": [
+    "tracer"
+  ],
+  "massageParams": [
+    "arg",
+    "arg2",
+    "arg3"
+  ],
+  "handleFn": [
+    "span",
+    "opts",
+    "fn"
+  ],
+  "errorHandler": [
+    "e"
+  ],
+  "registerGlobal": [
+    "type",
+    "instance",
+    "diag",
+    "param"
+  ],
+  "getGlobal": [
+    "type"
+  ],
+  "unregisterGlobal": [
+    "type",
+    "diag"
+  ],
+  "_makeCompatibilityCheck": [
+    "ownVersion"
+  ],
+  "_reject": [
+    "v"
+  ],
+  "_accept": [
+    "v"
+  ],
+  "NoopMeter": {
+    "constructor": [],
+    "createGauge": [
+      "_name",
+      "_options"
+    ],
+    "createHistogram": [
+      "_name",
+      "_options"
+    ],
+    "createCounter": [
+      "_name",
+      "_options"
+    ],
+    "createUpDownCounter": [
+      "_name",
+      "_options"
+    ],
+    "createObservableGauge": [
+      "_name",
+      "_options"
+    ],
+    "createObservableCounter": [
+      "_name",
+      "_options"
+    ],
+    "createObservableUpDownCounter": [
+      "_name",
+      "_options"
+    ],
+    "addBatchObservableCallback": [
+      "_callback",
+      "_observables"
+    ],
+    "removeBatchObservableCallback": [
+      "_callback"
+    ]
+  },
+  "NoopMetric": {},
+  "NoopCounterMetric": {
+    "add": [
+      "_value",
+      "_attributes"
+    ]
+  },
+  "NoopUpDownCounterMetric": {
+    "add": [
+      "_value",
+      "_attributes"
+    ]
+  },
+  "NoopGaugeMetric": {
+    "record": [
+      "_value",
+      "_attributes"
+    ]
+  },
+  "NoopHistogramMetric": {
+    "record": [
+      "_value",
+      "_attributes"
+    ]
+  },
+  "NoopObservableMetric": {
+    "addCallback": [
+      "_callback"
+    ],
+    "removeCallback": [
+      "_callback"
+    ]
+  },
+  "NoopObservableCounterMetric": {},
+  "NoopObservableGaugeMetric": {},
+  "NoopObservableUpDownCounterMetric": {},
+  "extendStatics": [
+    "d",
+    "b"
+  ],
+  "__": [],
+  "createNoopMeter": [],
+  "NoopMeterProvider": {
+    "getMeter": [
+      "_name",
+      "_version",
+      "_options"
+    ]
+  },
+  "NoopTextMapPropagator": {
+    "inject": [
+      "_context",
+      "_carrier"
+    ],
+    "extract": [
+      "context",
+      "_carrier"
+    ],
+    "fields": []
+  },
+  "NonRecordingSpan": {
+    "constructor": [
+      "param"
+    ],
+    "spanContext": [],
+    "setAttribute": [
+      "_key",
+      "_value"
+    ],
+    "setAttributes": [
+      "_attributes"
+    ],
+    "addEvent": [
+      "_name",
+      "_attributes"
+    ],
+    "addLink": [
+      "_link"
+    ],
+    "addLinks": [
+      "_links"
+    ],
+    "setStatus": [
+      "_status"
+    ],
+    "updateName": [
+      "_name"
+    ],
+    "end": [
+      "_endTime"
+    ],
+    "isRecording": [],
+    "recordException": [
+      "_exception",
+      "_time"
+    ]
+  },
+  "NoopTracer": {
+    "startSpan": [
+      "name",
+      "options",
+      "param"
+    ],
+    "startActiveSpan": [
+      "name",
+      "arg2",
+      "arg3",
+      "arg4"
+    ]
+  },
+  "isSpanContext": [
+    "spanContext"
+  ],
+  "NoopTracerProvider": {
+    "getTracer": [
+      "_name",
+      "_version",
+      "_options"
+    ]
+  },
+  "ProxyTracer": {
+    "constructor": [
+      "_provider",
+      "name",
+      "version",
+      "options"
+    ],
+    "startSpan": [
+      "name",
+      "options",
+      "context"
+    ],
+    "startActiveSpan": [
+      "_name",
+      "_options",
+      "_context",
+      "_fn"
+    ],
+    "_getTracer": []
+  },
+  "ProxyTracerProvider": {
+    "getTracer": [
+      "name",
+      "version",
+      "options"
+    ],
+    "getDelegate": [],
+    "setDelegate": [
+      "delegate"
+    ],
+    "getDelegateTracer": [
+      "name",
+      "version",
+      "options"
+    ]
+  },
+  "getSpan": [
+    "context"
+  ],
+  "getActiveSpan": [],
+  "setSpan": [
+    "context",
+    "span"
+  ],
+  "deleteSpan": [
+    "context"
+  ],
+  "setSpanContext": [
+    "context",
+    "spanContext"
+  ],
+  "getSpanContext": [
+    "context"
+  ],
+  "TraceStateImpl": {
+    "constructor": [
+      "rawTraceState"
+    ],
+    "set": [
+      "key",
+      "value"
+    ],
+    "unset": [
+      "key"
+    ],
+    "get": [
+      "key"
+    ],
+    "serialize": [],
+    "_parse": [
+      "rawTraceState"
+    ],
+    "_keys": [],
+    "_clone": []
+  },
+  "validateKey": [
+    "key"
+  ],
+  "validateValue": [
+    "value"
+  ],
+  "createTraceState": [
+    "rawTraceState"
+  ],
+  "isValidTraceId": [
+    "traceId"
+  ],
+  "isValidSpanId": [
+    "spanId"
+  ],
+  "isSpanContextValid": [
+    "spanContext"
+  ],
+  "wrapSpanContext": [
+    "spanContext"
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "HttpInstrumentation": {
+    "_spanNotEnded": [],
+    "_headerCapture": [],
+    "_semconvStability": [],
+    "constructor": [
+      "param"
+    ],
+    "_updateMetricInstruments": [],
+    "_recordServerDuration": [
+      "durationMs",
+      "oldAttributes",
+      "stableAttributes"
+    ],
+    "_recordClientDuration": [
+      "durationMs",
+      "oldAttributes",
+      "stableAttributes"
+    ],
+    "setConfig": [
+      "param"
+    ],
+    "init": [],
+    "_getHttpInstrumentation": [],
+    "_getHttpsInstrumentation": [],
+    "_getPatchIncomingRequestFunction": [
+      "component"
+    ],
+    "_getPatchOutgoingRequestFunction": [
+      "component"
+    ],
+    "_getPatchOutgoingGetFunction": [
+      "clientRequest"
+    ],
+    "_getPatchHttpsOutgoingRequestFunction": [
+      "component"
+    ],
+    "_setDefaultOptions": [
+      "options"
+    ],
+    "_getPatchHttpsOutgoingGetFunction": [
+      "clientRequest"
+    ],
+    "_traceClientRequest": [
+      "request",
+      "span",
+      "startTime",
+      "oldMetricAttributes",
+      "stableMetricAttributes"
+    ],
+    "_incomingRequestFunction": [
+      "component",
+      "original"
+    ],
+    "_outgoingRequestFunction": [
+      "component",
+      "original"
+    ],
+    "_onServerResponseFinish": [
+      "request",
+      "response",
+      "span",
+      "oldMetricAttributes",
+      "stableMetricAttributes",
+      "startTime"
+    ],
+    "_onOutgoingRequestError": [
+      "span",
+      "oldMetricAttributes",
+      "stableMetricAttributes",
+      "startTime",
+      "error"
+    ],
+    "_onServerResponseError": [
+      "span",
+      "oldMetricAttributes",
+      "stableMetricAttributes",
+      "startTime",
+      "error"
+    ],
+    "_startHttpSpan": [
+      "name",
+      "options",
+      "param"
+    ],
+    "_closeHttpSpan": [
+      "span",
+      "spanKind",
+      "startTime",
+      "oldMetricAttributes",
+      "stableMetricAttributes"
+    ],
+    "_callResponseHook": [
+      "span",
+      "response"
+    ],
+    "_callRequestHook": [
+      "span",
+      "request"
+    ],
+    "_callStartSpanHook": [
+      "request",
+      "hookFunc"
+    ],
+    "_createHeaderCapture": []
+  },
+  "endHandler": [],
+  "getAbsoluteUrl": [
+    "requestUrl",
+    "headers",
+    "param",
+    "param"
+  ],
+  "parseResponseStatus": [
+    "kind",
+    "statusCode"
+  ],
+  "satisfiesPattern": [
+    "constant",
+    "pattern"
+  ],
+  "setSpanWithError": [
+    "span",
+    "error",
+    "semconvStability"
+  ],
+  "setRequestContentLengthAttribute": [
+    "request",
+    "attributes"
+  ],
+  "setResponseContentLengthAttribute": [
+    "response",
+    "attributes"
+  ],
+  "getContentLength": [
+    "headers"
+  ],
+  "isCompressed": [
+    "headers"
+  ],
+  "stringUrlToHttpOptions": [
+    "stringUrl"
+  ],
+  "getRequestInfo": [
+    "logger",
+    "options",
+    "extraOptions"
+  ],
+  "isValidOptionsType": [
+    "options"
+  ],
+  "extractHostnameAndPort": [
+    "requestOptions"
+  ],
+  "getOutgoingRequestAttributes": [
+    "requestOptions",
+    "options",
+    "semconvStability",
+    "enableSyntheticSourceDetection"
+  ],
+  "getOutgoingRequestMetricAttributes": [
+    "spanAttributes"
+  ],
+  "setAttributesFromHttpKind": [
+    "kind",
+    "attributes"
+  ],
+  "getSyntheticType": [
+    "userAgent"
+  ],
+  "getOutgoingRequestAttributesOnResponse": [
+    "response",
+    "semconvStability"
+  ],
+  "getOutgoingRequestMetricAttributesOnResponse": [
+    "spanAttributes"
+  ],
+  "getOutgoingStableRequestMetricAttributesOnResponse": [
+    "spanAttributes"
+  ],
+  "parseHostHeader": [
+    "hostHeader",
+    "proto"
+  ],
+  "getServerAddress": [
+    "request",
+    "component"
+  ],
+  "getRemoteClientAddress": [
+    "request"
+  ],
+  "removePortFromAddress": [
+    "input"
+  ],
+  "getInfoFromIncomingMessage": [
+    "component",
+    "request",
+    "logger"
+  ],
+  "getIncomingRequestAttributes": [
+    "request",
+    "options",
+    "logger"
+  ],
+  "getIncomingRequestMetricAttributes": [
+    "spanAttributes"
+  ],
+  "getIncomingRequestAttributesOnResponse": [
+    "request",
+    "response",
+    "semconvStability"
+  ],
+  "getIncomingRequestMetricAttributesOnResponse": [
+    "spanAttributes"
+  ],
+  "getIncomingStableRequestMetricAttributesOnResponse": [
+    "spanAttributes"
+  ],
+  "headerCapture": [
+    "type",
+    "headers"
+  ],
+  "normalizeMethod": [
+    "method"
+  ],
+  "parseForwardedHeader": [
+    "header"
+  ]
+}

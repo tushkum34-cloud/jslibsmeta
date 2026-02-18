@@ -1,0 +1,1684 @@
+{
+  "ArgsType": [],
+  "Args": [
+    "propertyOrOptionsOrPipe",
+    "optionsOrPipe",
+    "param"
+  ],
+  "getArgsOptions": [
+    "propertyOrOptionsOrPipe",
+    "optionsOrPipe",
+    "pipes"
+  ],
+  "Context": [
+    "property",
+    "param"
+  ],
+  "Directive": [
+    "sdl"
+  ],
+  "validateDirective": [
+    "sdl"
+  ],
+  "Extensions": [
+    "value"
+  ],
+  "Field": [
+    "typeOrOptions",
+    "fieldOptions"
+  ],
+  "addFieldMetadata": [
+    "typeOrOptions",
+    "fieldOptions",
+    "prototype",
+    "propertyKey",
+    "descriptor",
+    "loadEagerly"
+  ],
+  "applyMetadataFn": [],
+  "HideField": [],
+  "Info": [
+    "param"
+  ],
+  "InputType": [
+    "nameOrOptions",
+    "inputTypeOptions"
+  ],
+  "InterfaceType": [
+    "nameOrOptions",
+    "interfaceOptions"
+  ],
+  "addInterfaceMetadata": [],
+  "Mutation": [
+    "nameOrType",
+    "param"
+  ],
+  "ObjectType": [
+    "nameOrOptions",
+    "objectTypeOptions"
+  ],
+  "addObjectTypeMetadata": [],
+  "assignMetadata": [
+    "args",
+    "paramtype",
+    "index",
+    "data",
+    "param"
+  ],
+  "createGqlParamDecorator": [
+    "paramtype"
+  ],
+  "addPipesMetadata": [
+    "paramtype",
+    "data",
+    "pipes",
+    "target",
+    "key",
+    "index"
+  ],
+  "createGqlPipesParamDecorator": [
+    "paramtype"
+  ],
+  "Query": [
+    "nameOrType",
+    "param"
+  ],
+  "ResolveField": [
+    "propertyNameOrFunc",
+    "typeFuncOrOptions",
+    "resolveFieldOptions"
+  ],
+  "ResolveProperty": [
+    "propertyNameOrFunc",
+    "typeFuncOrOptions",
+    "options"
+  ],
+  "ResolveReference": [],
+  "getObjectOrInterfaceTypeNameIfExists": [
+    "nameOrType"
+  ],
+  "Resolver": [
+    "nameOrTypeOrOptions",
+    "options"
+  ],
+  "addResolverMetadata": [
+    "resolver",
+    "name",
+    "target",
+    "key",
+    "descriptor"
+  ],
+  "getClassName": [
+    "nameOrType"
+  ],
+  "getResolverTypeFn": [
+    "nameOrType",
+    "target"
+  ],
+  "getClassOrUndefined": [
+    "typeOrFunc"
+  ],
+  "isConstructor": [
+    "obj"
+  ],
+  "Scalar": [
+    "name",
+    "typeFunc"
+  ],
+  "Subscription": [
+    "nameOrType",
+    "param"
+  ],
+  "AbstractGraphQLDriver": {
+    "mergeDefaultOptions": [
+      "options",
+      "param"
+    ],
+    "generateSchema": [
+      "options"
+    ],
+    "subscriptionWithFilter": [
+      "instanceRef",
+      "filterFn",
+      "createSubscribeContext"
+    ],
+    "getNormalizedPath": [
+      "options"
+    ]
+  },
+  "GraphQLException": {
+    "constructor": [
+      "message",
+      "options"
+    ]
+  },
+  "dummyFn": [],
+  "GqlParamsFactory": {
+    "exchangeKeyForValue": [
+      "type",
+      "data",
+      "args"
+    ]
+  },
+  "GraphQLFederationDefinitionsFactory": {
+    "exploreAndEmit": [
+      "typePaths",
+      "path",
+      "outputAs",
+      "isDebugEnabled",
+      "definitionsGeneratorOptions",
+      "typeDefs"
+    ]
+  },
+  "GraphQLFederationFactory": {
+    "resolversExplorerService": [],
+    "scalarsExplorerService": [],
+    "gqlSchemaBuilder": [],
+    "typeDefsDecoratorFactory": [],
+    "constructor": [
+      "resolversExplorerService",
+      "scalarsExplorerService",
+      "gqlSchemaBuilder",
+      "typeDefsDecoratorFactory"
+    ],
+    "generateSchema": [
+      "options",
+      "buildFederatedSchema"
+    ],
+    "buildSchemaFromTypeDefs": [],
+    "generateSchemaFromCodeFirst": [],
+    "getResolvers": [],
+    "extendResolvers": [],
+    "overrideOrExtendResolvers": [],
+    "overrideFederatedResolveType": [],
+    "buildFederatedSchema": [
+      "autoSchemaFile",
+      "options",
+      "resolvers"
+    ],
+    "getFederationVersionAndConfig": [],
+    "loadFederationDirectives": []
+  },
+  "TypeDefsDecoratorFactory": {
+    "logger": [],
+    "create": [
+      "federationVersion",
+      "apolloSubgraphVersion"
+    ]
+  },
+  "TypeDefsFederation2Decorator": {
+    "decorate": [
+      "typeDefs",
+      "param"
+    ]
+  },
+  "GraphQLAstExplorer": {
+    "root": [],
+    "explore": [
+      "documentNode",
+      "outputPath",
+      "mode",
+      "options"
+    ],
+    "toDefinitionStructures": [
+      "item",
+      "mode",
+      "options"
+    ],
+    "toRootSchemaDefinitionStructure": [
+      "operationTypes",
+      "mode"
+    ],
+    "toObjectTypeDefinitionStructure": [
+      "item",
+      "mode",
+      "options"
+    ],
+    "toPropertyDeclarationStructure": [
+      "item",
+      "options"
+    ],
+    "toMethodDeclarationStructure": [
+      "item",
+      "mode",
+      "options"
+    ],
+    "getFieldTypeDefinition": [
+      "typeNode",
+      "options"
+    ],
+    "unwrapTypeIfNonNull": [
+      "type"
+    ],
+    "getType": [
+      "typeName",
+      "options"
+    ],
+    "getDefaultTypes": [
+      "options"
+    ],
+    "getFunctionParameters": [
+      "inputs",
+      "options"
+    ],
+    "toScalarDefinitionStructure": [
+      "item",
+      "options"
+    ],
+    "toEnumDefinitionStructure": [
+      "item",
+      "options"
+    ],
+    "toUnionDefinitionStructure": [
+      "item",
+      "options"
+    ],
+    "addSymbolIfRoot": [
+      "name"
+    ],
+    "isRoot": [
+      "name"
+    ],
+    "getTransformedTypeName": []
+  },
+  "stringifyType": [
+    "typeNode"
+  ],
+  "GraphQLDefinitionsFactory": {
+    "constructor": [],
+    "generate": [
+      "options"
+    ],
+    "exploreAndEmit": [
+      "typePaths",
+      "path",
+      "outputAs",
+      "isDebugEnabled",
+      "definitionsGeneratorOptions",
+      "typeDefs"
+    ],
+    "printMessage": [
+      "text",
+      "isEnabled"
+    ]
+  },
+  "GraphQLSchemaBuilder": {
+    "scalarsExplorerService": [],
+    "gqlSchemaFactory": [],
+    "fileSystemHelper": [],
+    "constructor": [
+      "scalarsExplorerService",
+      "gqlSchemaFactory",
+      "fileSystemHelper"
+    ],
+    "build": [
+      "autoSchemaFile",
+      "options",
+      "resolvers"
+    ],
+    "generateSchema": [
+      "resolvers",
+      "autoSchemaFile",
+      "options",
+      "sortSchema",
+      "transformSchema"
+    ]
+  },
+  "GraphQLSchemaHost": {
+    "_schema": [],
+    "schema": []
+  },
+  "GraphQLTypesLoader": {
+    "mergeTypesByPaths": [
+      "paths"
+    ],
+    "getTypesFromPaths": [],
+    "includeNodeModules": []
+  },
+  "GraphQLFactory": {
+    "resolversExplorerService": [],
+    "scalarsExplorerService": [],
+    "graphqlAstExplorer": [],
+    "gqlSchemaBuilder": [],
+    "constructor": [
+      "resolversExplorerService",
+      "scalarsExplorerService",
+      "graphqlAstExplorer",
+      "gqlSchemaBuilder"
+    ],
+    "generateSchema": [
+      "options"
+    ],
+    "overrideOrExtendResolvers": [],
+    "generateDefinitions": [
+      "typeDefs",
+      "options"
+    ]
+  },
+  "transformSchema": [
+    "schema",
+    "transformType"
+  ],
+  "getAutoGeneratedTypeByName": [
+    "name"
+  ],
+  "GraphQLModule": {
+    "httpAdapterHost": [],
+    "options": [],
+    "_graphQlAdapter": [],
+    "graphQlTypesLoader": [],
+    "gqlSchemaHost": [],
+    "completeOptions": [],
+    "logger": [],
+    "metadataLoader": [],
+    "graphQlAdapter": [],
+    "constructor": [
+      "httpAdapterHost",
+      "options",
+      "_graphQlAdapter",
+      "graphQlTypesLoader",
+      "gqlSchemaHost"
+    ],
+    "onModuleDestroy": [],
+    "forRoot": [
+      "options"
+    ],
+    "forRootAsync": [
+      "options"
+    ],
+    "createAsyncProviders": [],
+    "createAsyncOptionsProvider": [],
+    "onModuleInit": [],
+    "assertDriver": []
+  },
+  "before": [
+    "options",
+    "program"
+  ],
+  "mergePluginOptions": [
+    "param"
+  ],
+  "MetadataLoader": {
+    "addRefreshHook": [
+      "hook"
+    ],
+    "load": [
+      "metadata"
+    ],
+    "runHooks": [],
+    "applyMetadata": [
+      "meta"
+    ]
+  },
+  "PluginDebugLogger": {},
+  "getDecorators": [
+    "node"
+  ],
+  "getModifiers": [
+    "node"
+  ],
+  "isArray": [
+    "type"
+  ],
+  "getTypeArguments": [
+    "type"
+  ],
+  "isBoolean": [
+    "type"
+  ],
+  "isString": [
+    "type"
+  ],
+  "isStringLiteral": [
+    "type"
+  ],
+  "isBigInt": [
+    "type"
+  ],
+  "isNumber": [
+    "type"
+  ],
+  "isInterface": [
+    "type"
+  ],
+  "isEnum": [
+    "type"
+  ],
+  "isEnumLiteral": [
+    "type"
+  ],
+  "isNull": [
+    "type"
+  ],
+  "isUndefined": [
+    "type"
+  ],
+  "hasFlag": [
+    "type",
+    "flag"
+  ],
+  "hasObjectFlag": [
+    "type",
+    "flag"
+  ],
+  "getText": [
+    "type",
+    "typeChecker",
+    "enclosingNode",
+    "typeFormatFlags"
+  ],
+  "getDefaultTypeFormatFlags": [
+    "enclosingNode"
+  ],
+  "getDecoratorArguments": [
+    "decorator"
+  ],
+  "getDecoratorName": [
+    "decorator"
+  ],
+  "getIdentifierFromName": [
+    "expression"
+  ],
+  "getNameFromExpression": [
+    "expression"
+  ],
+  "getJSDocDescription": [
+    "node"
+  ],
+  "hasJSDocTags": [
+    "node",
+    "tagName"
+  ],
+  "getJsDocDeprecation": [
+    "node"
+  ],
+  "findNullableTypeFromUnion": [
+    "typeNode",
+    "typeChecker"
+  ],
+  "hasModifiers": [
+    "modifiers",
+    "toCheck"
+  ],
+  "hasDecorators": [
+    "decorators",
+    "toCheck"
+  ],
+  "hasImport": [
+    "sf",
+    "what"
+  ],
+  "createImportEquals": [
+    "f",
+    "identifier",
+    "from"
+  ],
+  "createNamedImport": [
+    "f",
+    "what",
+    "from"
+  ],
+  "isCallExpressionOf": [
+    "name",
+    "node"
+  ],
+  "isNode": [
+    "value"
+  ],
+  "serializePrimitiveObjectToAst": [
+    "f",
+    "object"
+  ],
+  "safelyMergeObjects": [
+    "f",
+    "a",
+    "b"
+  ],
+  "updateDecoratorArguments": [
+    "f",
+    "node",
+    "decoratorName",
+    "replaceFn"
+  ],
+  "isFilenameMatched": [
+    "patterns",
+    "filename"
+  ],
+  "getTypeReferenceAsString": [
+    "type",
+    "typeChecker",
+    "param"
+  ],
+  "isPromiseOrObservable": [
+    "type"
+  ],
+  "replaceImportPath": [
+    "typeReference",
+    "fileName",
+    "options"
+  ],
+  "convertToAsyncImport": [
+    "typeReference"
+  ],
+  "insertAt": [
+    "string",
+    "index",
+    "substring"
+  ],
+  "isDynamicallyAdded": [
+    "identifier"
+  ],
+  "isAutoGeneratedEnumUnion": [
+    "type",
+    "typeChecker"
+  ],
+  "isAutoGeneratedTypeUnion": [
+    "type"
+  ],
+  "isOptionalBoolean": [
+    "text"
+  ],
+  "convertPath": [
+    "windowsPath"
+  ],
+  "typeReferenceToIdentifier": [
+    "typeReferenceDescriptor",
+    "hostFilename",
+    "options",
+    "factory",
+    "type",
+    "typeImports",
+    "importsToAdd"
+  ],
+  "wrapTypeInArray": [
+    "typeRef",
+    "arrayDepth"
+  ],
+  "assertReferenceableType": [
+    "type",
+    "parsedTypeName",
+    "hostFilename",
+    "options"
+  ],
+  "ModelClassVisitor": {
+    "constructor": [],
+    "typeImports": [],
+    "collectedMetadata": [],
+    "visit": [
+      "sourceFile",
+      "ctx",
+      "program",
+      "pluginOptions"
+    ],
+    "addDescriptionToClassDecorators": [
+      "f",
+      "node"
+    ],
+    "amendFieldsDecorators": [
+      "f",
+      "members",
+      "pluginOptions",
+      "hostFilename",
+      "typeChecker"
+    ],
+    "collectMetadataFromClassMembers": [
+      "f",
+      "members",
+      "pluginOptions",
+      "hostFilename",
+      "typeChecker"
+    ],
+    "updateClassDeclaration": [
+      "f",
+      "node",
+      "members",
+      "propsMetadata",
+      "pluginOptions"
+    ],
+    "getOptionsFromFieldDecoratorOrUndefined": [
+      "decoratorArguments"
+    ],
+    "getTypeFromFieldDecoratorOrUndefined": [
+      "decoratorArguments"
+    ],
+    "createFieldMetadata": [
+      "f",
+      "node",
+      "typeChecker",
+      "param",
+      "param",
+      "typeArrowFunction"
+    ],
+    "getTypeUsingTypeChecker": [
+      "f",
+      "node",
+      "typeChecker",
+      "hostFilename",
+      "options"
+    ],
+    "createEagerImports": [
+      "f"
+    ],
+    "normalizeImportPath": [
+      "pathToSource",
+      "path"
+    ]
+  },
+  "visitNode": [
+    "node"
+  ],
+  "ReadonlyVisitor": {
+    "typeImports": [],
+    "constructor": [
+      "options"
+    ],
+    "visit": [
+      "program",
+      "sf"
+    ],
+    "collect": []
+  },
+  "ArrayWithGlobalCacheCollection": {
+    "constructor": [
+      "globalArray"
+    ],
+    "getAll": [],
+    "push": [
+      "param"
+    ],
+    "unshift": [
+      "param"
+    ],
+    "reverse": [],
+    "reduce": [
+      "callbackfn",
+      "initialValue"
+    ]
+  },
+  "FieldDirectiveCollection": {
+    "constructor": [],
+    "add": [
+      "value"
+    ]
+  },
+  "MetadataByNameCollection": {
+    "constructor": [],
+    "getAll": [],
+    "getByName": [
+      "name"
+    ],
+    "add": [
+      "value",
+      "name"
+    ],
+    "unshift": [
+      "value",
+      "name"
+    ]
+  },
+  "MetadataByTargetCollection": {
+    "constructor": [],
+    "get": [
+      "target"
+    ],
+    "compile": [],
+    "reversePredicate": [
+      "predicate"
+    ]
+  },
+  "MetadataListByNameCollection": {
+    "constructor": [
+      "param"
+    ],
+    "getByName": [
+      "name"
+    ],
+    "add": [
+      "value",
+      "name"
+    ],
+    "unshift": [
+      "value",
+      "name"
+    ]
+  },
+  "TargetMetadataCollection": {
+    "constructor": [
+      "all"
+    ],
+    "argumentType": [],
+    "interface": [],
+    "inputType": [],
+    "objectType": [],
+    "resolver": []
+  },
+  "CannotDetermineArgTypeError": {
+    "constructor": [
+      "hostType",
+      "param"
+    ]
+  },
+  "CannotDetermineHostTypeError": {
+    "constructor": [
+      "externalField",
+      "hostType"
+    ]
+  },
+  "CannotDetermineInputTypeError": {
+    "constructor": [
+      "hostType",
+      "typeRef"
+    ]
+  },
+  "CannotDetermineOutputTypeError": {
+    "constructor": [
+      "hostType"
+    ]
+  },
+  "DefaultNullableConflictError": {
+    "constructor": [
+      "hostTypeName",
+      "defaultVal",
+      "isNullable"
+    ]
+  },
+  "DefaultValuesConflictError": {
+    "constructor": [
+      "hostTypeName",
+      "fieldName",
+      "decoratorDefaultVal",
+      "initializerDefaultVal"
+    ]
+  },
+  "DirectiveParsingError": {
+    "constructor": [
+      "sdl"
+    ]
+  },
+  "InvalidNullableOptionError": {
+    "constructor": [
+      "name",
+      "nullable"
+    ]
+  },
+  "MultipleFieldsWithSameNameError": {
+    "constructor": [
+      "field",
+      "objectTypeName"
+    ]
+  },
+  "ReturnTypeCannotBeResolvedError": {
+    "constructor": [
+      "hostTypeName"
+    ]
+  },
+  "SchemaGenerationError": {
+    "constructor": [
+      "details"
+    ]
+  },
+  "UnableToFindFieldsError": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "UndefinedResolverTypeError": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "UndefinedReturnTypeError": {
+    "constructor": [
+      "decoratorName",
+      "methodKey"
+    ]
+  },
+  "UndefinedTypeError": {
+    "constructor": [
+      "name",
+      "key",
+      "index"
+    ]
+  },
+  "ArgsFactory": {
+    "inputTypeFactory": [],
+    "astDefinitionNodeFactory": [],
+    "constructor": [
+      "inputTypeFactory",
+      "astDefinitionNodeFactory"
+    ],
+    "create": [
+      "args",
+      "options"
+    ],
+    "inheritParentArgs": []
+  },
+  "AstDefinitionNodeFactory": {
+    "createObjectTypeNode": [
+      "name",
+      "directiveMetadata"
+    ],
+    "createInputObjectTypeNode": [
+      "name",
+      "directiveMetadata"
+    ],
+    "createInterfaceTypeNode": [
+      "name",
+      "directiveMetadata"
+    ],
+    "createFieldNode": [
+      "name",
+      "type",
+      "directiveMetadata"
+    ],
+    "createInputValueNode": [
+      "name",
+      "type",
+      "directiveMetadata"
+    ],
+    "createArgNode": [
+      "name",
+      "type",
+      "directiveMetadata"
+    ],
+    "createDirectiveNode": []
+  },
+  "EnumDefinitionFactory": {
+    "create": [
+      "metadata"
+    ],
+    "getEnumValues": []
+  },
+  "InputTypeDefinitionFactory": {
+    "typeDefinitionsStorage": [],
+    "inputTypeFactory": [],
+    "typeFieldsAccessor": [],
+    "astDefinitionNodeFactory": [],
+    "constructor": [
+      "typeDefinitionsStorage",
+      "inputTypeFactory",
+      "typeFieldsAccessor",
+      "astDefinitionNodeFactory"
+    ],
+    "create": [
+      "metadata",
+      "options"
+    ],
+    "generateFields": []
+  },
+  "getParentType": [],
+  "InputTypeFactory": {
+    "typeDefinitionsStorage": [],
+    "typeMapperService": [],
+    "constructor": [
+      "typeDefinitionsStorage",
+      "typeMapperService"
+    ],
+    "create": [
+      "hostType",
+      "typeRef",
+      "buildOptions",
+      "typeOptions"
+    ]
+  },
+  "InterfaceDefinitionFactory": {
+    "resolveTypeFactory": [],
+    "typeDefinitionsStorage": [],
+    "outputTypeFactory": [],
+    "orphanedReferenceRegistry": [],
+    "typeFieldsAccessor": [],
+    "argsFactory": [],
+    "astDefinitionNodeFactory": [],
+    "constructor": [
+      "resolveTypeFactory",
+      "typeDefinitionsStorage",
+      "outputTypeFactory",
+      "orphanedReferenceRegistry",
+      "typeFieldsAccessor",
+      "argsFactory",
+      "astDefinitionNodeFactory"
+    ],
+    "create": [
+      "metadata",
+      "options"
+    ],
+    "createResolveTypeFn": [],
+    "generateFields": [],
+    "generateInterfaces": []
+  },
+  "MutationTypeFactory": {
+    "rootTypeFactory": [],
+    "constructor": [
+      "rootTypeFactory"
+    ],
+    "create": [
+      "typeRefs",
+      "options"
+    ]
+  },
+  "ObjectTypeDefinitionFactory": {
+    "typeDefinitionsStorage": [],
+    "outputTypeFactory": [],
+    "typeFieldsAccessor": [],
+    "astDefinitionNodeFactory": [],
+    "orphanedReferenceRegistry": [],
+    "argsFactory": [],
+    "constructor": [
+      "typeDefinitionsStorage",
+      "outputTypeFactory",
+      "typeFieldsAccessor",
+      "astDefinitionNodeFactory",
+      "orphanedReferenceRegistry",
+      "argsFactory"
+    ],
+    "create": [
+      "metadata",
+      "options"
+    ],
+    "generateInterfaces": [],
+    "generateFields": [],
+    "getRecursiveInterfaces": [],
+    "createFieldResolver": []
+  },
+  "rootFieldResolver": [
+    "root"
+  ],
+  "rootResolveFnFactory": [
+    "root"
+  ],
+  "OrphanedTypesFactory": {
+    "typeDefinitionsStorage": [],
+    "orphanedReferenceRegistry": [],
+    "constructor": [
+      "typeDefinitionsStorage",
+      "orphanedReferenceRegistry"
+    ],
+    "create": [
+      "types"
+    ]
+  },
+  "OutputTypeFactory": {
+    "typeDefinitionsStorage": [],
+    "typeMapperService": [],
+    "constructor": [
+      "typeDefinitionsStorage",
+      "typeMapperService"
+    ],
+    "create": [
+      "hostType",
+      "typeRef",
+      "buildOptions",
+      "typeOptions"
+    ]
+  },
+  "QueryTypeFactory": {
+    "rootTypeFactory": [],
+    "constructor": [
+      "rootTypeFactory"
+    ],
+    "create": [
+      "typeRefs",
+      "options"
+    ]
+  },
+  "ResolveTypeFactory": {
+    "typeDefinitionsStorage": [],
+    "constructor": [
+      "typeDefinitionsStorage"
+    ],
+    "getResolveTypeFunction": [
+      "resolveType"
+    ]
+  },
+  "typeToString": [
+    "resolvedType"
+  ],
+  "RootTypeFactory": {
+    "outputTypeFactory": [],
+    "argsFactory": [],
+    "astDefinitionNodeFactory": [],
+    "orphanedReferenceRegistry": [],
+    "constructor": [
+      "outputTypeFactory",
+      "argsFactory",
+      "astDefinitionNodeFactory",
+      "orphanedReferenceRegistry"
+    ],
+    "create": [
+      "typeRefs",
+      "resolversMetadata",
+      "objectTypeName",
+      "options",
+      "fieldsFactory"
+    ],
+    "generateFields": [
+      "handlers",
+      "options",
+      "objectTypeName"
+    ]
+  },
+  "SubscriptionTypeFactory": {
+    "rootTypeFactory": [],
+    "constructor": [
+      "rootTypeFactory"
+    ],
+    "create": [
+      "typeRefs",
+      "options"
+    ]
+  },
+  "UnionDefinitionFactory": {
+    "resolveTypeFactory": [],
+    "typeDefinitionsStorage": [],
+    "constructor": [
+      "resolveTypeFactory",
+      "typeDefinitionsStorage"
+    ],
+    "create": [
+      "metadata"
+    ],
+    "createResolveTypeFn": []
+  },
+  "getObjectType": [
+    "item"
+  ],
+  "types": [],
+  "GraphQLSchemaFactory": {
+    "queryTypeFactory": [],
+    "mutationTypeFactory": [],
+    "subscriptionTypeFactory": [],
+    "orphanedTypesFactory": [],
+    "typeDefinitionsGenerator": [],
+    "logger": [],
+    "constructor": [
+      "queryTypeFactory",
+      "mutationTypeFactory",
+      "subscriptionTypeFactory",
+      "orphanedTypesFactory",
+      "typeDefinitionsGenerator"
+    ],
+    "create": [
+      "resolvers",
+      "scalarClasses",
+      "options"
+    ],
+    "assignScalarObjects": [],
+    "addScalarTypeByClassRef": []
+  },
+  "FileSystemHelper": {
+    "writeFile": [
+      "path",
+      "content"
+    ],
+    "mkdirRecursive": [
+      "path"
+    ],
+    "getDirs": [
+      "path"
+    ]
+  },
+  "getDefaultValue": [
+    "instance",
+    "options",
+    "key",
+    "typeName"
+  ],
+  "GraphQLSchemaBuilderModule": {},
+  "OrphanedReferenceRegistry": {
+    "registry": [],
+    "addToRegistryIfOrphaned": [
+      "typeRef"
+    ],
+    "getAll": []
+  },
+  "TypeFieldsAccessor": {
+    "extractFromInputType": [
+      "gqlType"
+    ],
+    "extractFromInterfaceOrObjectType": [
+      "type"
+    ]
+  },
+  "TypeMapperService": {
+    "mapToScalarType": [
+      "typeRef",
+      "scalarsMap",
+      "dateScalarMode",
+      "numberScalarMode"
+    ],
+    "mapToGqlType": [
+      "hostType",
+      "typeRef",
+      "options"
+    ],
+    "validateTypeOptions": [],
+    "mapToGqlList": [],
+    "hasArrayOptions": []
+  },
+  "LazyMetadataStorageHost": {
+    "constructor": [],
+    "store": [
+      "targetOrFn",
+      "func",
+      "options"
+    ],
+    "load": [
+      "param",
+      "param"
+    ],
+    "concatPrototypes": [
+      "types"
+    ],
+    "updateStorage": [
+      "key",
+      "func"
+    ]
+  },
+  "singleCallFunctionWrapper": [],
+  "TypeDefinitionsStorage": {
+    "interfaceTypeDefinitions": [],
+    "enumTypeDefinitions": [],
+    "unionTypeDefinitions": [],
+    "objectTypeDefinitions": [],
+    "inputTypeDefinitions": [],
+    "inputTypeDefinitionsLinks": [],
+    "outputTypeDefinitionsLinks": [],
+    "addEnums": [
+      "enumDefs"
+    ],
+    "getEnumByObject": [
+      "obj"
+    ],
+    "getAllEnumTypeDefinitions": [],
+    "addUnions": [
+      "unionDefs"
+    ],
+    "getUnionBySymbol": [
+      "key"
+    ],
+    "getAllUnionDefinitions": [],
+    "addInterfaces": [
+      "interfaceDefs"
+    ],
+    "getInterfaceByTarget": [
+      "type"
+    ],
+    "getAllInterfaceDefinitions": [],
+    "addInputTypes": [
+      "inputDefs"
+    ],
+    "getInputTypeByTarget": [
+      "type"
+    ],
+    "getAllInputTypeDefinitions": [],
+    "addObjectTypes": [
+      "objectDefs"
+    ],
+    "getObjectTypeByTarget": [
+      "type"
+    ],
+    "getAllObjectTypeDefinitions": [],
+    "getInputTypeAndExtract": [
+      "key"
+    ],
+    "getOutputTypeAndExtract": [
+      "key"
+    ]
+  },
+  "TypeMetadataStorageHost": {
+    "constructor": [],
+    "addMutationMetadata": [
+      "metadata"
+    ],
+    "getMutationsMetadata": [],
+    "addQueryMetadata": [
+      "metadata"
+    ],
+    "getQueriesMetadata": [],
+    "addSubscriptionMetadata": [
+      "metadata"
+    ],
+    "getSubscriptionsMetadata": [],
+    "addResolverPropertyMetadata": [
+      "metadata"
+    ],
+    "addArgsMetadata": [
+      "metadata"
+    ],
+    "getArgumentsMetadata": [],
+    "getArgumentsMetadataByTarget": [
+      "target"
+    ],
+    "addInterfaceMetadata": [
+      "metadata"
+    ],
+    "getInterfacesMetadata": [],
+    "getInterfaceMetadataByTarget": [
+      "target"
+    ],
+    "addInputTypeMetadata": [
+      "metadata"
+    ],
+    "getInputTypesMetadata": [],
+    "getInputTypeMetadataByTarget": [
+      "target"
+    ],
+    "addObjectTypeMetadata": [
+      "metadata"
+    ],
+    "getObjectTypesMetadata": [],
+    "getObjectTypeMetadataByTarget": [
+      "target"
+    ],
+    "addEnumMetadata": [
+      "metadata"
+    ],
+    "getEnumsMetadata": [],
+    "addUnionMetadata": [
+      "metadata"
+    ],
+    "getUnionsMetadata": [],
+    "addDirectiveMetadata": [
+      "metadata"
+    ],
+    "addDirectivePropertyMetadata": [
+      "metadata"
+    ],
+    "addExtensionsMetadata": [
+      "metadata"
+    ],
+    "addExtensionsPropertyMetadata": [
+      "metadata"
+    ],
+    "addResolverMetadata": [
+      "metadata"
+    ],
+    "addClassFieldMetadata": [
+      "metadata"
+    ],
+    "addMethodParamMetadata": [
+      "metadata"
+    ],
+    "compile": [
+      "param"
+    ],
+    "loadClassPluginMetadata": [
+      "metadata"
+    ],
+    "applyPluginMetadata": [
+      "prototype",
+      "param"
+    ],
+    "compileClassMetadata": [
+      "metadata",
+      "options"
+    ],
+    "clear": [],
+    "getClassFieldsByPredicate": [
+      "item"
+    ],
+    "compileResolversMetadata": [
+      "metadata"
+    ],
+    "compileFieldResolverMetadata": [
+      "metadata"
+    ],
+    "compileExternalFieldResolverMetadata": [
+      "item"
+    ],
+    "findModelFieldMetadata": [
+      "item"
+    ],
+    "compileExtendedResolversMetadata": [],
+    "mergeParentResolverHandlers": [
+      "metadata",
+      "parentClass",
+      "classMetadata"
+    ],
+    "mergeParentFieldHandlers": [
+      "metadata",
+      "parentClass",
+      "classMetadata"
+    ]
+  },
+  "isEmpty": [
+    "arr"
+  ],
+  "getTypeMetadata": [
+    "target"
+  ],
+  "TypeDefinitionsGenerator": {
+    "typeDefinitionsStorage": [],
+    "enumDefinitionFactory": [],
+    "inputTypeDefinitionFactory": [],
+    "objectTypeDefinitionFactory": [],
+    "interfaceDefinitionFactory": [],
+    "unionDefinitionFactory": [],
+    "constructor": [
+      "typeDefinitionsStorage",
+      "enumDefinitionFactory",
+      "inputTypeDefinitionFactory",
+      "objectTypeDefinitionFactory",
+      "interfaceDefinitionFactory",
+      "unionDefinitionFactory"
+    ],
+    "generate": [
+      "options"
+    ],
+    "generateInputTypeDefs": [],
+    "generateObjectTypeDefs": [],
+    "generateInterfaceDefs": [],
+    "generateEnumDefs": [],
+    "generateUnionDefs": []
+  },
+  "getFieldsAndDecoratorForType": [
+    "objType",
+    "options"
+  ],
+  "getClassMetadataAndFactoryByTargetAndType": [
+    "classType",
+    "objType"
+  ],
+  "inheritClassFields": [
+    "objType",
+    "fields",
+    "options"
+  ],
+  "isNativeClass": [
+    "fn"
+  ],
+  "getInterfacesArray": [
+    "interfaces"
+  ],
+  "isTargetEqual": [
+    "a",
+    "b"
+  ],
+  "isThrowing": [
+    "func"
+  ],
+  "BaseExplorerService": {
+    "getModules": [
+      "modulesContainer",
+      "include"
+    ],
+    "includeWhitelisted": [
+      "modulesContainer",
+      "include"
+    ],
+    "flatMap": [
+      "modules",
+      "callback"
+    ],
+    "groupMetadata": [
+      "resolvers"
+    ]
+  },
+  "invokeMap": [],
+  "GqlArgumentsHost": {
+    "create": [
+      "context"
+    ],
+    "getRoot": [],
+    "getArgs": [],
+    "getContext": [],
+    "getInfo": []
+  },
+  "GqlExecutionContext": {
+    "create": [
+      "context"
+    ],
+    "getType": [],
+    "getRoot": [],
+    "getArgs": [],
+    "getContext": [],
+    "getInfo": []
+  },
+  "GqlSubscriptionService": {
+    "constructor": [
+      "options",
+      "httpServer"
+    ],
+    "initialize": [],
+    "stop": []
+  },
+  "ResolversExplorerService": {
+    "modulesContainer": [],
+    "metadataScanner": [],
+    "externalContextCreator": [],
+    "gqlOptions": [],
+    "moduleRef": [],
+    "serializedGraph": [],
+    "logger": [],
+    "gqlParamsFactory": [],
+    "injector": [],
+    "coreModuleRef": [],
+    "constructor": [
+      "modulesContainer",
+      "metadataScanner",
+      "externalContextCreator",
+      "gqlOptions",
+      "moduleRef",
+      "serializedGraph"
+    ],
+    "explore": [],
+    "filterResolvers": [
+      "gqlAdapter",
+      "wrapper",
+      "moduleRef"
+    ],
+    "createContextCallback": [
+      "instance",
+      "prototype",
+      "wrapper",
+      "moduleRef",
+      "resolver",
+      "isRequestScoped",
+      "transform"
+    ],
+    "createSubscriptionMetadata": [
+      "gqlAdapter",
+      "createSubscribeContext",
+      "subscriptionOptions",
+      "resolverMetadata",
+      "instanceRef"
+    ],
+    "getAllCtors": [],
+    "mapToCtor": [],
+    "registerContextProvider": [],
+    "registerFieldMiddlewareIfExists": [],
+    "getContextId": [],
+    "assignResolverConstructorUniqueId": []
+  },
+  "predicate": [
+    "resolverType",
+    "isReferenceResolver",
+    "isPropertyResolver"
+  ],
+  "createContext": [
+    "transform"
+  ],
+  "resolverCallback": [
+    "param"
+  ],
+  "originalResolveFnFactory": [
+    "param"
+  ],
+  "ScalarsExplorerService": {
+    "modulesContainer": [],
+    "gqlOptions": [],
+    "constructor": [
+      "modulesContainer",
+      "gqlOptions"
+    ],
+    "explore": [],
+    "filterSchemaFirstScalar": [
+      "wrapper"
+    ],
+    "getScalarsMap": [],
+    "filterCodeFirstScalar": [
+      "wrapper"
+    ]
+  },
+  "createUnionType": [
+    "options"
+  ],
+  "registerEnumType": [
+    "enumRef",
+    "options"
+  ],
+  "IntersectionType": [
+    "classARef",
+    "classBRef",
+    "decorator"
+  ],
+  "IntersectionObjectType": {
+    "constructor": []
+  },
+  "applyFields": [
+    "fields"
+  ],
+  "OmitType": [
+    "classRef",
+    "keys",
+    "decorator"
+  ],
+  "isInheritedPredicate": [
+    "propertyKey"
+  ],
+  "OmitObjectType": {
+    "constructor": []
+  },
+  "isPartialTypeOptions": [
+    "optionsOrDecorator"
+  ],
+  "PartialType": [
+    "classRef",
+    "optionsOrDecorator"
+  ],
+  "PartialObjectType": {
+    "constructor": []
+  },
+  "PickType": [
+    "classRef",
+    "keys",
+    "decorator"
+  ],
+  "PickObjectType": {
+    "constructor": []
+  },
+  "applyFieldDecorators": [
+    "targetClass",
+    "item"
+  ],
+  "addClassTypeMetadata": [
+    "target",
+    "classType"
+  ],
+  "createAsyncIterator": [
+    "lazyFactory",
+    "filterFn"
+  ],
+  "getNextValue": [],
+  "getPathForAutoSchemaFile": [
+    "autoSchemaFile"
+  ],
+  "decorateFieldResolverWithMiddleware": [
+    "originalResolveFnFactory",
+    "param"
+  ],
+  "run": [
+    "currentIndex"
+  ],
+  "extend": [
+    "obj1",
+    "obj2"
+  ],
+  "extractMetadata": [
+    "instance",
+    "prototype",
+    "methodName",
+    "filterPredicate"
+  ],
+  "generateString": [],
+  "getNumberOfArguments": [
+    "fn"
+  ],
+  "functionHasOneOrMoreArguments": [
+    "functionRegexMatchArray"
+  ],
+  "isPipe": [
+    "value"
+  ],
+  "normalizeResolverArgs": [
+    "args"
+  ],
+  "addStartingSlash": [
+    "text"
+  ],
+  "stripEndingSlash": [
+    "text"
+  ],
+  "normalizeRoutePath": [
+    "path"
+  ],
+  "reflectTypeFromMetadata": [
+    "reflectOptions"
+  ],
+  "extractTypeIfArray": [
+    "metadataKey",
+    "reflectedType",
+    "index"
+  ],
+  "getTypeReferenceAndArrayDepth": [
+    "param",
+    "param"
+  ],
+  "createWrappedExplicitTypeFn": [
+    "explicitTypeFn",
+    "options"
+  ],
+  "removeTempField": [
+    "schema"
+  ],
+  "bindInstanceContext": [
+    "instance",
+    "funcKey"
+  ],
+  "createScalarType": [
+    "name",
+    "instance"
+  ],
+  "stringifyWithoutQuotes": [
+    "obj",
+    "includeSpaces"
+  ],
+  "recreateNamedType": [
+    "type"
+  ],
+  "replaceType": [
+    "type"
+  ],
+  "replaceNamedType": [
+    "type"
+  ],
+  "replaceMaybeType": [
+    "type"
+  ],
+  "replaceFields": [
+    "fieldsMap"
+  ],
+  "replaceInputFields": [
+    "fieldsMap"
+  ],
+  "replaceArgs": [
+    "args"
+  ],
+  "replaceDirectives": [
+    "directives"
+  ],
+  "mapValues": [
+    "object",
+    "callback"
+  ]
+}

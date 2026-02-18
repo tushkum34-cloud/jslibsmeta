@@ -1,0 +1,626 @@
+{
+  "browserTracingIntegration": [
+    "param"
+  ],
+  "init": [
+    "options"
+  ],
+  "filterTransactions": [
+    "event"
+  ],
+  "filterIncompleteNavigationTransactions": [
+    "event"
+  ],
+  "filterNextRedirectError": [
+    "event",
+    "hint"
+  ],
+  "getDefaultIntegrations": [
+    "options"
+  ],
+  "withSentryConfig": [
+    "exportedUserNextConfig"
+  ],
+  "appRouterInstrumentPageLoad": [
+    "client"
+  ],
+  "appRouterInstrumentNavigation": [
+    "client"
+  ],
+  "transactionNameifyRouterArgument": [
+    "target"
+  ],
+  "patchRouter": [
+    "client",
+    "router",
+    "currentNavigationSpanRef"
+  ],
+  "captureRouterTransitionStart": [
+    "href",
+    "navigationType"
+  ],
+  "isIsrSsgRoute": [
+    "pathname"
+  ],
+  "removeIsrSsgTraceMetaTags": [],
+  "removeMetaTag": [
+    "metaName"
+  ],
+  "nextRouterInstrumentPageLoad": [
+    "client"
+  ],
+  "nextRouterInstrumentNavigation": [
+    "client"
+  ],
+  "extractNextDataTagInformation": [],
+  "pagesRouterInstrumentPageLoad": [
+    "client"
+  ],
+  "pagesRouterInstrumentNavigation": [
+    "client"
+  ],
+  "getNextRouteFromPathname": [
+    "pathname"
+  ],
+  "convertNextRouteToRegExp": [
+    "route"
+  ],
+  "getRouteSpecificity": [
+    "routePath"
+  ],
+  "getCompiledRegex": [
+    "regexString"
+  ],
+  "getManifest": [],
+  "findMatchingRoutes": [
+    "route",
+    "staticRoutes",
+    "dynamicRoutes"
+  ],
+  "maybeParameterizeRoute": [
+    "route"
+  ],
+  "applyTunnelRouteOption": [
+    "options"
+  ],
+  "captureRequestError": [
+    "error",
+    "request",
+    "errorContext"
+  ],
+  "getDevServerBaseUrl": [],
+  "fetchWithTimeout": [
+    "url",
+    "param"
+  ],
+  "devErrorSymbolicationEventProcessor": [
+    "event",
+    "hint"
+  ],
+  "resolveStackFrame": [
+    "frame",
+    "error"
+  ],
+  "resolveStackFrames": [
+    "frames"
+  ],
+  "parseOriginalCodeFrame": [
+    "codeFrame"
+  ],
+  "stripWebpackInternalPrefix": [
+    "filename"
+  ],
+  "getVercelEnv": [
+    "isClient"
+  ],
+  "isNotFoundNavigationError": [
+    "subject"
+  ],
+  "isRedirectNavigationError": [
+    "subject"
+  ],
+  "captureUnderscoreErrorException": [
+    "contextOrProps"
+  ],
+  "wrapApiHandlerWithSentry": [
+    "handler",
+    "parameterizedRoute"
+  ],
+  "wrapApiHandlerWithSentryVercelCrons": [
+    "handler",
+    "vercelCronsConfig"
+  ],
+  "handleErrorCase": [],
+  "wrapAppGetInitialPropsWithSentry": [
+    "origAppGetInitialProps"
+  ],
+  "wrapDocumentGetInitialPropsWithSentry": [
+    "origDocumentGetInitialProps"
+  ],
+  "wrapErrorGetInitialPropsWithSentry": [
+    "origErrorGetInitialProps"
+  ],
+  "wrapGetInitialPropsWithSentry": [
+    "origGetInitialProps"
+  ],
+  "wrapGetServerSidePropsWithSentry": [
+    "origGetServerSideProps",
+    "parameterizedRoute"
+  ],
+  "wrapGetStaticPropsWithSentry": [
+    "origGetStaticPropsa",
+    "_parameterizedRoute"
+  ],
+  "isReactClassComponent": [
+    "target"
+  ],
+  "wrapPageComponentWithSentry": [
+    "pageComponent"
+  ],
+  "addHeadersAsAttributes": [
+    "headers",
+    "span"
+  ],
+  "dropMiddlewareTunnelRequests": [
+    "span",
+    "attrs"
+  ],
+  "isTunnelRouteSpan": [
+    "spanAttributes"
+  ],
+  "isBuild": [],
+  "extractInfoFromServerReferenceId": [
+    "id"
+  ],
+  "isServerReference": [
+    "value"
+  ],
+  "isUseCacheFunction": [
+    "value"
+  ],
+  "shouldNoopSpan": [
+    "callback"
+  ],
+  "createNonRecordingSpan": [],
+  "startSpan": [
+    "options",
+    "callback"
+  ],
+  "startSpanManual": [
+    "options",
+    "callback"
+  ],
+  "startInactiveSpan": [
+    "options"
+  ],
+  "flushSafelyWithTimeout": [],
+  "waitUntil": [
+    "task"
+  ],
+  "_getOpenNextCloudflareContext": [],
+  "cloudflareWaitUntil": [
+    "task"
+  ],
+  "isCloudflareWaitUntilAvailable": [],
+  "setUrlProcessingMetadata": [
+    "event"
+  ],
+  "commonObjectToIsolationScope": [
+    "commonObject"
+  ],
+  "escapeNextjsTracing": [
+    "cb"
+  ],
+  "dropNextjsRootContext": [],
+  "isResolveSegmentSpan": [
+    "spanAttributes"
+  ],
+  "getEnhancedResolveSegmentSpanName": [
+    "param"
+  ],
+  "maybeEnhanceServerComponentSpanName": [
+    "activeSpan",
+    "spanAttributes",
+    "rootSpanAttributes"
+  ],
+  "substituteRouteParams": [
+    "path",
+    "params"
+  ],
+  "sanitizeRoutePath": [
+    "path"
+  ],
+  "buildUrlFromComponentRoute": [
+    "componentRoute",
+    "params",
+    "headersDict",
+    "pathname"
+  ],
+  "extractSanitizedUrlFromRefererHeader": [
+    "headersDict"
+  ],
+  "getSanitizedRequestUrl": [
+    "componentRoute",
+    "params",
+    "headersDict",
+    "pathname"
+  ],
+  "withErrorInstrumentation": [
+    "origFunction"
+  ],
+  "withTracedServerSideDataFetcher": [
+    "origDataFetcher",
+    "req",
+    "res",
+    "options"
+  ],
+  "callDataFetcherTraced": [
+    "origFunction",
+    "origFunctionArgs"
+  ],
+  "withServerActionInstrumentation": [
+    "param"
+  ],
+  "withServerActionInstrumentationImplementation": [
+    "serverActionName",
+    "options",
+    "callback"
+  ],
+  "wrapGenerationFunctionWithSentry": [
+    "generationFunction",
+    "context"
+  ],
+  "wrapMiddlewareWithSentry": [
+    "middleware"
+  ],
+  "wrapRouteHandlerWithSentry": [
+    "routeHandler",
+    "context"
+  ],
+  "wrapServerComponentWithSentry": [
+    "appDirComponent",
+    "context"
+  ],
+  "normalizePathForGlob": [
+    "distPath"
+  ],
+  "getServerPattern": [
+    "param"
+  ],
+  "getStaticChunksPattern": [
+    "param"
+  ],
+  "getStaticChunksPagesPattern": [
+    "param"
+  ],
+  "getStaticChunksAppPattern": [
+    "param"
+  ],
+  "createSourcemapUploadAssetPatterns": [
+    "normalizedDistPath",
+    "buildTool",
+    "param"
+  ],
+  "createSourcemapUploadIgnorePattern": [
+    "normalizedDistPath",
+    "param"
+  ],
+  "createFilesToDeleteAfterUploadPattern": [
+    "normalizedDistPath",
+    "buildTool",
+    "deleteSourcemapsAfterUpload",
+    "param"
+  ],
+  "shouldSkipSourcemapUpload": [
+    "buildTool",
+    "param"
+  ],
+  "rewriteWebpackSources": [
+    "source"
+  ],
+  "createReleaseConfig": [
+    "releaseName",
+    "sentryBuildOptions"
+  ],
+  "mergeIgnorePatterns": [
+    "defaultPatterns",
+    "userPatterns"
+  ],
+  "getBuildPluginOptions": [
+    "param"
+  ],
+  "handleRunAfterProductionCompile": [
+    "param",
+    "sentryBuildOptions"
+  ],
+  "prefixLoader": [
+    "userCode"
+  ],
+  "valueInjectionLoader": [
+    "userCode"
+  ],
+  "wrappingLoader": [
+    "userCode",
+    "userModuleSourceMap"
+  ],
+  "wrapUserCode": [
+    "wrapperCode",
+    "userModuleCode",
+    "userModuleSourceMap",
+    "isDev",
+    "userModulePath"
+  ],
+  "wrap": [
+    "withDefaultExport"
+  ],
+  "isPageFile": [
+    "filename"
+  ],
+  "isRouteGroup": [
+    "name"
+  ],
+  "normalizeRouteGroupPath": [
+    "routePath"
+  ],
+  "getDynamicRouteSegment": [
+    "name"
+  ],
+  "buildRegexForDynamicRoute": [
+    "routePath"
+  ],
+  "hasOptionalPrefix": [
+    "paramNames"
+  ],
+  "checkForGenerateStaticParams": [
+    "pageFilePath"
+  ],
+  "scanAppDirectory": [
+    "dir",
+    "param",
+    "param"
+  ],
+  "createRouteManifest": [
+    "options"
+  ],
+  "wrapHandler": [
+    "handler",
+    "method"
+  ],
+  "constructTurbopackConfig": [
+    "param"
+  ],
+  "safelyAddTurbopackRule": [
+    "existingRules",
+    "param"
+  ],
+  "generateValueInjectionRules": [
+    "param"
+  ],
+  "getNextjsVersion": [],
+  "resolveNextjsPackageJson": [],
+  "supportsProductionCompileHook": [
+    "version"
+  ],
+  "supportsNativeDebugIds": [
+    "version"
+  ],
+  "requiresInstrumentationHook": [
+    "version"
+  ],
+  "detectActiveBundler": [],
+  "getPackageModules": [
+    "projectDir"
+  ],
+  "constructWebpackConfigFunction": [
+    "param"
+  ],
+  "normalizeLoaderResourcePath": [
+    "resourcePath"
+  ],
+  "isPageResource": [
+    "resourcePath"
+  ],
+  "isApiRouteResource": [
+    "resourcePath"
+  ],
+  "isMiddlewareResource": [
+    "resourcePath"
+  ],
+  "isServerComponentResource": [
+    "resourcePath"
+  ],
+  "isRouteHandlerResource": [
+    "resourcePath"
+  ],
+  "addSentryToClientEntryProperty": [
+    "currentEntryProperty",
+    "buildContext"
+  ],
+  "getInstrumentationFile": [
+    "projectDir",
+    "dotPrefixedExtensions"
+  ],
+  "warnAboutMissingOnRequestErrorHandler": [
+    "instrumentationFile"
+  ],
+  "warnAboutDeprecatedConfigFiles": [
+    "projectDir",
+    "instrumentationFile",
+    "platform"
+  ],
+  "getClientSentryConfigFile": [
+    "projectDir"
+  ],
+  "getInstrumentationClientFile": [
+    "projectDir"
+  ],
+  "addFilesToWebpackEntryPoint": [
+    "entryProperty",
+    "entryPointName",
+    "filesToInsert",
+    "isDevMode"
+  ],
+  "setUpModuleRules": [
+    "newConfig"
+  ],
+  "addValueInjectionLoader": [
+    "param"
+  ],
+  "resolveNextPackageDirFromDirectory": [
+    "basedir"
+  ],
+  "getRequestAsyncStorageModuleLocation": [
+    "webpackContextDir",
+    "webpackResolvableModuleLocations"
+  ],
+  "addOtelWarningIgnoreRule": [
+    "newConfig"
+  ],
+  "addEdgeRuntimePolyfills": [
+    "newConfig",
+    "buildContext"
+  ],
+  "setupTreeshakingFromConfig": [
+    "userSentryOptions",
+    "newConfig",
+    "buildContext"
+  ],
+  "setUpBuildTimeVariables": [
+    "userNextConfig",
+    "userSentryOptions",
+    "releaseName"
+  ],
+  "getGitRevision": [],
+  "getInstrumentationClientFileContents": [],
+  "migrateDeprecatedWebpackOptions": [
+    "userSentryOptions"
+  ],
+  "withDeprecatedFallback": [
+    "newValue",
+    "deprecatedValue",
+    "message"
+  ],
+  "deprecatedMessage": [
+    "deprecatedPath",
+    "newPath"
+  ],
+  "getFinalConfigObject": [
+    "incomingUserNextConfigObject",
+    "userSentryOptions"
+  ],
+  "getBundlerInfo": [
+    "nextJsVersion"
+  ],
+  "maybeWarnAboutUnsupportedTurbopack": [
+    "nextJsVersion",
+    "bundlerInfo"
+  ],
+  "maybeWarnAboutUnsupportedRunAfterProductionCompileHook": [
+    "nextJsVersion",
+    "userSentryOptions",
+    "bundlerInfo"
+  ],
+  "maybeConstructTurbopackConfig": [
+    "incomingUserNextConfigObject",
+    "userSentryOptions",
+    "routeManifest",
+    "nextJsVersion",
+    "bundlerInfo",
+    "vercelCronsConfigResult"
+  ],
+  "resolveUseRunAfterProductionCompileHookOption": [
+    "userSentryOptions",
+    "bundlerInfo"
+  ],
+  "maybeSetUpRunAfterProductionCompileHook": [
+    "param"
+  ],
+  "maybeEnableTurbopackSourcemaps": [
+    "incomingUserNextConfigObject",
+    "userSentryOptions",
+    "bundlerInfo"
+  ],
+  "getServerExternalPackagesPatch": [
+    "incomingUserNextConfigObject",
+    "nextMajor"
+  ],
+  "getWebpackPatch": [
+    "param"
+  ],
+  "getTurbopackPatch": [
+    "bundlerInfo",
+    "turboPackConfig"
+  ],
+  "resolveReleaseName": [
+    "userSentryOptions"
+  ],
+  "maybeSetUpTunnelRouteRewriteRules": [
+    "incomingUserNextConfigObject",
+    "userSentryOptions"
+  ],
+  "shouldReturnEarlyInExperimentalBuildMode": [],
+  "maybeCreateRouteManifest": [
+    "incomingUserNextConfigObject",
+    "userSentryOptions"
+  ],
+  "filterRouteManifest": [
+    "manifest",
+    "excludeFilter"
+  ],
+  "shouldExclude": [
+    "route"
+  ],
+  "maybeSetClientTraceMetadataOption": [
+    "incomingUserNextConfigObject",
+    "nextJsVersion"
+  ],
+  "maybeSetInstrumentationHookOption": [
+    "incomingUserNextConfigObject",
+    "nextJsVersion"
+  ],
+  "warnIfMissingOnRouterTransitionStartHook": [
+    "userSentryOptions"
+  ],
+  "getNextMajor": [
+    "nextJsVersion"
+  ],
+  "readVercelCronsConfig": [],
+  "maybeGetVercelCronsConfig": [
+    "userSentryOptions"
+  ],
+  "generateRandomTunnelRoute": [],
+  "resolveTunnelRoute": [
+    "tunnelRoute"
+  ],
+  "setUpTunnelRewriteRules": [
+    "userNextConfig",
+    "tunnelPath"
+  ],
+  "handleOnSpanStart": [
+    "span"
+  ],
+  "ErrorBoundary": [
+    "props"
+  ],
+  "createReduxEnhancer": [],
+  "withErrorBoundary": [
+    "WrappedComponent"
+  ],
+  "showReportDialog": [],
+  "getCloudflareRuntimeConfig": [],
+  "sdkAlreadyInitialized": [],
+  "prepareSafeIdGeneratorContext": [],
+  "getAsyncLocalStorage": [],
+  "getAsyncLocalStorageSnapshot": [],
+  "isAsyncLocalStorageError": [
+    "error"
+  ],
+  "getVercelCronsConfig": [],
+  "maybeStartCronCheckIn": [
+    "span",
+    "route"
+  ],
+  "maybeCompleteCronCheckIn": [
+    "span"
+  ]
+}
