@@ -1,0 +1,197 @@
+{
+  "Bonjour": {
+    "constructor": [
+      "param",
+      "errorCallback"
+    ],
+    "publish": [
+      "opts"
+    ],
+    "unpublishAll": [
+      "callback"
+    ],
+    "find": [
+      "param",
+      "onup"
+    ],
+    "findOne": [
+      "param",
+      "param",
+      "callback"
+    ],
+    "destroy": [
+      "callback"
+    ]
+  },
+  "Browser": {
+    "constructor": [
+      "mdns",
+      "opts",
+      "onup"
+    ],
+    "start": [],
+    "stop": [],
+    "update": [],
+    "services": [],
+    "addService": [
+      "service"
+    ],
+    "updateService": [
+      "service"
+    ],
+    "removeService": [
+      "fqdn"
+    ],
+    "goodbyes": [
+      "name",
+      "packet"
+    ],
+    "buildServicesFor": [
+      "name",
+      "packet",
+      "txt",
+      "referer"
+    ]
+  },
+  "DnsTxt": {
+    "constructor": [
+      "param"
+    ],
+    "encode": [
+      "param"
+    ],
+    "decode": [
+      "buffer"
+    ],
+    "decodeAll": [
+      "buffer"
+    ]
+  },
+  "Server": {
+    "constructor": [
+      "opts",
+      "errorCallback"
+    ],
+    "register": [
+      "records"
+    ],
+    "unregister": [
+      "records"
+    ],
+    "respondToQuery": [
+      "query"
+    ],
+    "recordsFor": [
+      "name",
+      "type"
+    ],
+    "isDuplicateRecord": [
+      "a"
+    ],
+    "unique": []
+  },
+  "shouldRegister": [
+    "record"
+  ],
+  "shouldUnregister": [
+    "record"
+  ],
+  "Registry": {
+    "constructor": [
+      "server"
+    ],
+    "publish": [
+      "config"
+    ],
+    "unpublishAll": [
+      "callback"
+    ],
+    "destroy": [],
+    "probe": [
+      "mdns",
+      "service",
+      "callback"
+    ],
+    "announce": [
+      "server",
+      "service"
+    ],
+    "teardown": [
+      "server",
+      "services",
+      "callback"
+    ]
+  },
+  "noop": [],
+  "start": [
+    "service",
+    "registry",
+    "opts"
+  ],
+  "stop": [
+    "service",
+    "registry",
+    "callback"
+  ],
+  "send": [],
+  "onresponse": [
+    "packet"
+  ],
+  "matchRR": [
+    "rr"
+  ],
+  "done": [
+    "exists"
+  ],
+  "broadcast": [],
+  "Prefix": [
+    "name"
+  ],
+  "AllowedProp": [
+    "key"
+  ],
+  "toString": [
+    "data"
+  ],
+  "toType": [
+    "string"
+  ],
+  "Service": {
+    "constructor": [
+      "config"
+    ],
+    "records": [],
+    "RecordPTR": [
+      "service"
+    ],
+    "RecordSubtypePTR": [
+      "service",
+      "subtype"
+    ],
+    "RecordSRV": [
+      "service"
+    ],
+    "RecordTXT": [
+      "service"
+    ],
+    "RecordA": [
+      "service",
+      "ip"
+    ],
+    "RecordAAAA": [
+      "service",
+      "ip"
+    ]
+  },
+  "toLowerCase": [
+    "input"
+  ],
+  "dnsEqual": [
+    "a",
+    "b"
+  ],
+  "equalTxt": [
+    "a",
+    "b"
+  ]
+}

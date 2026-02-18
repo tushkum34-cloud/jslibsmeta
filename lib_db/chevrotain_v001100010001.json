@@ -1,0 +1,1968 @@
+{
+  "initDiagramsBehavior": [
+    "scrollingEnabled"
+  ],
+  "toggleTerminalUsage": [
+    "mouseEvent"
+  ],
+  "toggleNonTerminalUsageAndDef_fromNoneTerminal": [
+    "mouseEvent"
+  ],
+  "jumpToNoneTerminalDef": [
+    "mouseEvent"
+  ],
+  "toggleNonTerminalUsageAndDef_fromHeader": [
+    "mouseEvent"
+  ],
+  "getUsageSvgRect": [
+    "definitionName",
+    "className",
+    "attributeName"
+  ],
+  "findHeader": [
+    "headerName"
+  ],
+  "getUsageRectAndDefHeader": [
+    "target"
+  ],
+  "toggleClass": [
+    "domNode",
+    "className"
+  ],
+  "toggleClassForNodes": [
+    "domNodes",
+    "className"
+  ],
+  "toArr": [
+    "htmlCollection"
+  ],
+  "scrollToY": [
+    "scrollTargetY",
+    "speed",
+    "easing"
+  ],
+  "tick": [],
+  "findDomChildrenByTagName": [
+    "domElements",
+    "tagName"
+  ],
+  "buildSyntaxDiagramsText": [
+    "topRules"
+  ],
+  "definitionsToSubDiagrams": [
+    "definitions",
+    "topRuleName"
+  ],
+  "createTerminalFromSerializedGast": [
+    "prod",
+    "topRuleName",
+    "dslRuleName"
+  ],
+  "convertProductionToDiagram": [
+    "prod",
+    "topRuleName"
+  ],
+  "getNonTerminalName": [
+    "prod"
+  ],
+  "serializeGrammarToFile": [
+    "targetFilePath",
+    "varName",
+    "parserInstance"
+  ],
+  "subclassOf": [
+    "baseClass",
+    "superClass"
+  ],
+  "unnull": [],
+  "determineGaps": [
+    "outer",
+    "inner"
+  ],
+  "wrapString": [
+    "value"
+  ],
+  "stackAtIllegalPosition": [
+    "items"
+  ],
+  "SVG": [
+    "name",
+    "attrs",
+    "text"
+  ],
+  "FakeSVG": [
+    "tagName",
+    "attrs",
+    "text"
+  ],
+  "Path": [
+    "x",
+    "y"
+  ],
+  "Diagram": [
+    "items"
+  ],
+  "ComplexDiagram": [],
+  "Sequence": [
+    "items"
+  ],
+  "Stack": [
+    "items"
+  ],
+  "Choice": [
+    "normal",
+    "items"
+  ],
+  "Optional": [
+    "item",
+    "skip"
+  ],
+  "OneOrMore": [
+    "item",
+    "rep"
+  ],
+  "ZeroOrMore": [
+    "item",
+    "rep",
+    "skip"
+  ],
+  "Start": [
+    "simpleType"
+  ],
+  "End": [
+    "simpleType"
+  ],
+  "Terminal": [
+    "text",
+    "href",
+    "title",
+    "occurrenceIdx",
+    "topRuleName",
+    "dslRuleName",
+    "tokenName"
+  ],
+  "NonTerminal": [
+    "text",
+    "href",
+    "occurrenceIdx",
+    "topRuleName"
+  ],
+  "Comment": [
+    "text"
+  ],
+  "Skip": [],
+  "clearCache": [],
+  "Parser": {
+    "DEFER_DEFINITION_ERRORS_HANDLING": [],
+    "performSelfAnalysis": [
+      "this"
+    ],
+    "definitionErrors": [],
+    "selfAnalysisDone": [],
+    "skipValidations": [],
+    "constructor": [
+      "tokenVocabulary",
+      "config"
+    ]
+  },
+  "createSyntaxDiagramsCode": [
+    "grammar",
+    "param"
+  ],
+  "defineNameProp": [
+    "obj",
+    "nameValue"
+  ],
+  "setNodeLocationOnlyOffset": [
+    "currNodeLocation",
+    "newLocationInfo"
+  ],
+  "setNodeLocationFull": [
+    "currNodeLocation",
+    "newLocationInfo"
+  ],
+  "addTerminalToCst": [
+    "node",
+    "token",
+    "tokenTypeName"
+  ],
+  "addNoneTerminalToCst": [
+    "node",
+    "ruleName",
+    "ruleResult"
+  ],
+  "defaultVisit": [
+    "ctx",
+    "param"
+  ],
+  "createBaseSemanticVisitorConstructor": [
+    "grammarName",
+    "ruleNames"
+  ],
+  "derivedConstructor": [],
+  "createBaseVisitorConstructorWithDefaults": [
+    "grammarName",
+    "ruleNames",
+    "baseConstructor"
+  ],
+  "validateVisitor": [
+    "visitorInstance",
+    "ruleNames"
+  ],
+  "validateMissingCstMethods": [
+    "visitorInstance",
+    "ruleNames"
+  ],
+  "getExtraProductionArgument": [
+    "prod"
+  ],
+  "isRecognitionException": [
+    "error"
+  ],
+  "RecognitionException": {
+    "context": [],
+    "resyncedTokens": [],
+    "constructor": [
+      "message",
+      "param"
+    ]
+  },
+  "MismatchedTokenException": {
+    "constructor": [
+      "message",
+      "token",
+      "param"
+    ]
+  },
+  "NoViableAltException": {
+    "constructor": [
+      "message",
+      "token",
+      "param"
+    ]
+  },
+  "NotAllInputParsedException": {
+    "constructor": [
+      "message",
+      "token"
+    ]
+  },
+  "EarlyExitException": {
+    "constructor": [
+      "message",
+      "token",
+      "param"
+    ]
+  },
+  "validateLookahead": [
+    "options"
+  ],
+  "validateGrammar": [
+    "options"
+  ],
+  "validateDuplicateProductions": [
+    "topLevelRule",
+    "errMsgProvider"
+  ],
+  "identifyProductionForDuplicates": [
+    "prod"
+  ],
+  "OccurrenceValidationCollector": {
+    "constructor": [],
+    "visitNonTerminal": [
+      "subrule"
+    ],
+    "visitOption": [
+      "option"
+    ],
+    "visitRepetitionWithSeparator": [
+      "manySep"
+    ],
+    "visitRepetitionMandatory": [
+      "atLeastOne"
+    ],
+    "visitRepetitionMandatoryWithSeparator": [
+      "atLeastOneSep"
+    ],
+    "visitRepetition": [
+      "many"
+    ],
+    "visitAlternation": [
+      "or"
+    ],
+    "visitTerminal": [
+      "terminal"
+    ]
+  },
+  "validateRuleDoesNotAlreadyExist": [
+    "rule",
+    "allRules",
+    "className",
+    "errMsgProvider"
+  ],
+  "validateRuleIsOverridden": [
+    "ruleName",
+    "definedRulesNames",
+    "className"
+  ],
+  "validateNoLeftRecursion": [
+    "topRule",
+    "currRule",
+    "errMsgProvider",
+    "param"
+  ],
+  "getFirstNoneTerminal": [
+    "definition"
+  ],
+  "OrCollector": {
+    "constructor": [],
+    "visitAlternation": [
+      "node"
+    ]
+  },
+  "validateEmptyOrAlternative": [
+    "topLevelRule",
+    "errMsgProvider"
+  ],
+  "validateAmbiguousAlternationAlternatives": [
+    "topLevelRule",
+    "globalMaxLookahead",
+    "errMsgProvider"
+  ],
+  "RepetitionCollector": {
+    "constructor": [],
+    "visitRepetitionWithSeparator": [
+      "manySep"
+    ],
+    "visitRepetitionMandatory": [
+      "atLeastOne"
+    ],
+    "visitRepetitionMandatoryWithSeparator": [
+      "atLeastOneSep"
+    ],
+    "visitRepetition": [
+      "many"
+    ]
+  },
+  "validateTooManyAlts": [
+    "topLevelRule",
+    "errMsgProvider"
+  ],
+  "validateSomeNonEmptyLookaheadPath": [
+    "topLevelRules",
+    "maxLookahead",
+    "errMsgProvider"
+  ],
+  "checkAlternativesAmbiguities": [
+    "alternatives",
+    "alternation",
+    "rule",
+    "errMsgProvider"
+  ],
+  "checkPrefixAlternativesAmbiguities": [
+    "alternatives",
+    "alternation",
+    "rule",
+    "errMsgProvider"
+  ],
+  "checkTerminalAndNoneTerminalsNameSpace": [
+    "topLevels",
+    "tokenTypes",
+    "errMsgProvider"
+  ],
+  "first": [
+    "prod"
+  ],
+  "firstForSequence": [
+    "prod"
+  ],
+  "firstForBranching": [
+    "prod"
+  ],
+  "firstForTerminal": [
+    "terminal"
+  ],
+  "ResyncFollowsWalker": {
+    "follows": [],
+    "constructor": [
+      "param"
+    ],
+    "startWalking": [],
+    "walkTerminal": [
+      "terminal",
+      "currRest",
+      "prevRest"
+    ],
+    "walkProdRef": [
+      "refProd",
+      "currRest",
+      "prevRest"
+    ]
+  },
+  "computeAllProdsFollows": [
+    "topProductions"
+  ],
+  "buildBetweenProdsFollowPrefix": [
+    "inner",
+    "occurenceInParent"
+  ],
+  "buildInProdFollowPrefix": [
+    "terminal"
+  ],
+  "resolveGrammar": [
+    "topLevels",
+    "errMsgProvider"
+  ],
+  "AbstractNextPossibleTokensWalker": {
+    "constructor": [
+      "topProd",
+      "path"
+    ],
+    "startWalking": [],
+    "walk": [
+      "prod",
+      "param"
+    ],
+    "walkProdRef": [
+      "refProd",
+      "currRest",
+      "prevRest"
+    ],
+    "updateExpectedNext": []
+  },
+  "NextAfterTokenWalker": {
+    "constructor": [
+      "topProd",
+      "path"
+    ],
+    "walkTerminal": [
+      "terminal",
+      "currRest",
+      "prevRest"
+    ]
+  },
+  "AbstractNextTerminalAfterProductionWalker": {
+    "constructor": [
+      "topRule",
+      "occurrence"
+    ],
+    "startWalking": []
+  },
+  "NextTerminalAfterManyWalker": {
+    "walkMany": [
+      "manyProd",
+      "currRest",
+      "prevRest"
+    ]
+  },
+  "NextTerminalAfterManySepWalker": {
+    "walkManySep": [
+      "manySepProd",
+      "currRest",
+      "prevRest"
+    ]
+  },
+  "NextTerminalAfterAtLeastOneWalker": {
+    "walkAtLeastOne": [
+      "atLeastOneProd",
+      "currRest",
+      "prevRest"
+    ]
+  },
+  "NextTerminalAfterAtLeastOneSepWalker": {
+    "walkAtLeastOneSep": [
+      "atleastOneSepProd",
+      "currRest",
+      "prevRest"
+    ]
+  },
+  "possiblePathsFrom": [
+    "targetDef",
+    "maxLength",
+    "param"
+  ],
+  "remainingPathWith": [
+    "nextDef"
+  ],
+  "getAlternativesForProd": [
+    "definition"
+  ],
+  "nextPossibleTokensAfter": [
+    "initialDef",
+    "tokenVector",
+    "tokMatcher",
+    "maxLookAhead"
+  ],
+  "expandTopLevelRule": [
+    "topRule",
+    "currIdx",
+    "currRuleStack",
+    "currOccurrenceStack"
+  ],
+  "getKeyForAutomaticLookahead": [
+    "ruleIdx",
+    "dslMethodIdx",
+    "occurrence"
+  ],
+  "LLkLookaheadStrategy": {
+    "maxLookahead": [],
+    "constructor": [
+      "options"
+    ],
+    "validate": [
+      "options"
+    ],
+    "validateNoLeftRecursion": [
+      "rules"
+    ],
+    "validateEmptyOrAlternatives": [
+      "rules"
+    ],
+    "validateAmbiguousAlternationAlternatives": [
+      "rules",
+      "maxLookahead"
+    ],
+    "validateSomeNonEmptyLookaheadPath": [
+      "rules",
+      "maxLookahead"
+    ],
+    "buildLookaheadForAlternation": [
+      "options"
+    ],
+    "buildLookaheadForOptional": [
+      "options"
+    ]
+  },
+  "getProdType": [
+    "prod"
+  ],
+  "getLookaheadPaths": [
+    "options"
+  ],
+  "buildLookaheadFuncForOr": [
+    "occurrence",
+    "ruleGrammar",
+    "maxLookahead",
+    "hasPredicates",
+    "dynamicTokensEnabled",
+    "laFuncBuilder"
+  ],
+  "buildLookaheadFuncForOptionalProd": [
+    "occurrence",
+    "ruleGrammar",
+    "k",
+    "dynamicTokensEnabled",
+    "prodType",
+    "lookaheadBuilder"
+  ],
+  "buildAlternativesLookAheadFunc": [
+    "alts",
+    "hasPredicates",
+    "tokenMatcher",
+    "dynamicTokensEnabled"
+  ],
+  "buildSingleAlternativeLookaheadFunction": [
+    "alt",
+    "tokenMatcher",
+    "dynamicTokensEnabled"
+  ],
+  "RestDefinitionFinderWalker": {
+    "constructor": [
+      "topProd",
+      "targetOccurrence",
+      "targetProdType"
+    ],
+    "startWalking": [],
+    "checkIsTarget": [
+      "node",
+      "expectedProdType",
+      "currRest",
+      "prevRest"
+    ],
+    "walkOption": [
+      "optionProd",
+      "currRest",
+      "prevRest"
+    ],
+    "walkAtLeastOne": [
+      "atLeastOneProd",
+      "currRest",
+      "prevRest"
+    ],
+    "walkAtLeastOneSep": [
+      "atLeastOneSepProd",
+      "currRest",
+      "prevRest"
+    ],
+    "walkMany": [
+      "manyProd",
+      "currRest",
+      "prevRest"
+    ],
+    "walkManySep": [
+      "manySepProd",
+      "currRest",
+      "prevRest"
+    ]
+  },
+  "InsideDefinitionFinderVisitor": {
+    "constructor": [
+      "targetOccurrence",
+      "targetProdType",
+      "targetRef"
+    ],
+    "checkIsTarget": [
+      "node",
+      "expectedProdName"
+    ],
+    "visitOption": [
+      "node"
+    ],
+    "visitRepetition": [
+      "node"
+    ],
+    "visitRepetitionMandatory": [
+      "node"
+    ],
+    "visitRepetitionMandatoryWithSeparator": [
+      "node"
+    ],
+    "visitRepetitionWithSeparator": [
+      "node"
+    ],
+    "visitAlternation": [
+      "node"
+    ]
+  },
+  "initializeArrayOfArrays": [
+    "size"
+  ],
+  "pathToHashKeys": [
+    "path"
+  ],
+  "isUniquePrefixHash": [
+    "altKnownPathsKeys",
+    "searchPathKeys",
+    "idx"
+  ],
+  "lookAheadSequenceFromAlternatives": [
+    "altsDefs",
+    "k"
+  ],
+  "getLookaheadPathsForOr": [
+    "occurrence",
+    "ruleGrammar",
+    "k",
+    "orProd"
+  ],
+  "getLookaheadPathsForOptionalProd": [
+    "occurrence",
+    "ruleGrammar",
+    "prodType",
+    "k"
+  ],
+  "containsPath": [
+    "alternative",
+    "searchPath"
+  ],
+  "isStrictPrefixOfPath": [
+    "prefix",
+    "other"
+  ],
+  "areTokenCategoriesNotUsed": [
+    "lookAheadPaths"
+  ],
+  "GastRefResolverVisitor": {
+    "errors": [],
+    "currTopLevel": [],
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "resolveRefs": [],
+    "visitNonTerminal": [
+      "node"
+    ]
+  },
+  "RestWalker": {
+    "walk": [
+      "prod",
+      "param"
+    ],
+    "walkTerminal": [
+      "terminal",
+      "currRest",
+      "prevRest"
+    ],
+    "walkProdRef": [
+      "refProd",
+      "currRest",
+      "prevRest"
+    ],
+    "walkFlat": [
+      "flatProd",
+      "currRest",
+      "prevRest"
+    ],
+    "walkOption": [
+      "optionProd",
+      "currRest",
+      "prevRest"
+    ],
+    "walkAtLeastOne": [
+      "atLeastOneProd",
+      "currRest",
+      "prevRest"
+    ],
+    "walkAtLeastOneSep": [
+      "atLeastOneSepProd",
+      "currRest",
+      "prevRest"
+    ],
+    "walkMany": [
+      "manyProd",
+      "currRest",
+      "prevRest"
+    ],
+    "walkManySep": [
+      "manySepProd",
+      "currRest",
+      "prevRest"
+    ],
+    "walkOr": [
+      "orProd",
+      "currRest",
+      "prevRest"
+    ]
+  },
+  "restForRepetitionWithSeparator": [
+    "repSepProd",
+    "currRest",
+    "prevRest"
+  ],
+  "EMPTY_ALT": [
+    "param"
+  ],
+  "CstParser": {
+    "constructor": [
+      "tokenVocabulary",
+      "param"
+    ]
+  },
+  "EmbeddedActionsParser": {
+    "constructor": [
+      "tokenVocabulary",
+      "param"
+    ]
+  },
+  "ContentAssist": {
+    "initContentAssist": [],
+    "computeContentAssist": [
+      "this",
+      "startRuleName",
+      "precedingInput"
+    ],
+    "getNextPossibleTokenTypes": [
+      "this",
+      "grammarPath"
+    ]
+  },
+  "ErrorHandler": {
+    "_errors": [],
+    "errorMessageProvider": [],
+    "initErrorHandler": [
+      "config"
+    ],
+    "SAVE_ERROR": [
+      "this",
+      "error"
+    ],
+    "errors": [
+      "newErrors"
+    ],
+    "raiseEarlyExitException": [
+      "this",
+      "occurrence",
+      "prodType",
+      "userDefinedErrMsg"
+    ],
+    "raiseNoAltException": [
+      "this",
+      "occurrence",
+      "errMsgTypes"
+    ]
+  },
+  "GastRecorder": {
+    "initGastRecorder": [
+      "config"
+    ],
+    "enableRecording": [],
+    "disableRecording": [],
+    "ACTION_RECORD": [
+      "impl"
+    ],
+    "BACKTRACK_RECORD": [
+      "grammarRule",
+      "args"
+    ],
+    "LA_RECORD": [
+      "howMuch"
+    ],
+    "topLevelRuleRecord": [
+      "name",
+      "def"
+    ],
+    "optionInternalRecord": [
+      "actionORMethodDef",
+      "occurrence"
+    ],
+    "atLeastOneInternalRecord": [
+      "occurrence",
+      "actionORMethodDef"
+    ],
+    "atLeastOneSepFirstInternalRecord": [
+      "occurrence",
+      "options"
+    ],
+    "manyInternalRecord": [
+      "occurrence",
+      "actionORMethodDef"
+    ],
+    "manySepFirstInternalRecord": [
+      "occurrence",
+      "options"
+    ],
+    "orInternalRecord": [
+      "altsOrOpts",
+      "occurrence"
+    ],
+    "subruleInternalRecord": [
+      "ruleToCall",
+      "occurrence",
+      "options"
+    ],
+    "consumeInternalRecord": [
+      "tokType",
+      "occurrence",
+      "options"
+    ]
+  },
+  "recordProd": [
+    "prodConstructor",
+    "mainProdArg",
+    "occurrence",
+    "param"
+  ],
+  "recordOrProd": [
+    "mainProdArg",
+    "occurrence"
+  ],
+  "getIdxSuffix": [
+    "idx"
+  ],
+  "assertMethodIdxIsValid": [
+    "idx"
+  ],
+  "LexerAdapter": {
+    "tokVector": [],
+    "tokVectorLength": [],
+    "currIdx": [],
+    "initLexerAdapter": [],
+    "input": [],
+    "SKIP_TOKEN": [
+      "this"
+    ],
+    "LA": [
+      "this",
+      "howMuch"
+    ],
+    "consumeToken": [
+      "this"
+    ],
+    "exportLexerState": [
+      "this"
+    ],
+    "importLexerState": [
+      "this",
+      "newState"
+    ],
+    "resetLexerState": [
+      "this"
+    ],
+    "moveToTerminatedState": [
+      "this"
+    ],
+    "getLexerPosition": [
+      "this"
+    ]
+  },
+  "LooksAhead": {
+    "initLooksAhead": [
+      "config"
+    ],
+    "preComputeLookaheadFunctions": [
+      "rules"
+    ],
+    "computeLookaheadFunc": [
+      "rule",
+      "prodOccurrence",
+      "prodKey",
+      "prodType",
+      "prodMaxLookahead",
+      "dslMethodName"
+    ],
+    "getKeyForAutomaticLookahead": [
+      "dslMethodIdx",
+      "occurrence"
+    ],
+    "getLaFuncFromCache": [
+      "key"
+    ],
+    "setLaFuncCache": [
+      "key",
+      "value"
+    ]
+  },
+  "DslMethodsCollectorVisitor": {
+    "constructor": [],
+    "reset": [],
+    "visitOption": [
+      "option"
+    ],
+    "visitRepetitionWithSeparator": [
+      "manySep"
+    ],
+    "visitRepetitionMandatory": [
+      "atLeastOne"
+    ],
+    "visitRepetitionMandatoryWithSeparator": [
+      "atLeastOneSep"
+    ],
+    "visitRepetition": [
+      "many"
+    ],
+    "visitAlternation": [
+      "or"
+    ]
+  },
+  "collectMethods": [
+    "rule"
+  ],
+  "PerformanceTracer": {
+    "initPerformanceTracer": [
+      "config"
+    ],
+    "TRACE_INIT": [
+      "phaseDesc",
+      "phaseImpl"
+    ]
+  },
+  "RecognizerApi": {
+    "ACTION": [
+      "this",
+      "impl"
+    ],
+    "consume": [
+      "this",
+      "idx",
+      "tokType",
+      "options"
+    ],
+    "subrule": [
+      "this",
+      "idx",
+      "ruleToCall",
+      "options"
+    ],
+    "option": [
+      "this",
+      "idx",
+      "actionORMethodDef"
+    ],
+    "or": [
+      "this",
+      "idx",
+      "altsOrOpts"
+    ],
+    "many": [
+      "this",
+      "idx",
+      "actionORMethodDef"
+    ],
+    "atLeastOne": [
+      "this",
+      "idx",
+      "actionORMethodDef"
+    ],
+    "CONSUME": [
+      "this",
+      "tokType",
+      "options"
+    ],
+    "CONSUME1": [
+      "this",
+      "tokType",
+      "options"
+    ],
+    "CONSUME2": [
+      "this",
+      "tokType",
+      "options"
+    ],
+    "CONSUME3": [
+      "this",
+      "tokType",
+      "options"
+    ],
+    "CONSUME4": [
+      "this",
+      "tokType",
+      "options"
+    ],
+    "CONSUME5": [
+      "this",
+      "tokType",
+      "options"
+    ],
+    "CONSUME6": [
+      "this",
+      "tokType",
+      "options"
+    ],
+    "CONSUME7": [
+      "this",
+      "tokType",
+      "options"
+    ],
+    "CONSUME8": [
+      "this",
+      "tokType",
+      "options"
+    ],
+    "CONSUME9": [
+      "this",
+      "tokType",
+      "options"
+    ],
+    "SUBRULE": [
+      "this",
+      "ruleToCall",
+      "options"
+    ],
+    "SUBRULE1": [
+      "this",
+      "ruleToCall",
+      "options"
+    ],
+    "SUBRULE2": [
+      "this",
+      "ruleToCall",
+      "options"
+    ],
+    "SUBRULE3": [
+      "this",
+      "ruleToCall",
+      "options"
+    ],
+    "SUBRULE4": [
+      "this",
+      "ruleToCall",
+      "options"
+    ],
+    "SUBRULE5": [
+      "this",
+      "ruleToCall",
+      "options"
+    ],
+    "SUBRULE6": [
+      "this",
+      "ruleToCall",
+      "options"
+    ],
+    "SUBRULE7": [
+      "this",
+      "ruleToCall",
+      "options"
+    ],
+    "SUBRULE8": [
+      "this",
+      "ruleToCall",
+      "options"
+    ],
+    "SUBRULE9": [
+      "this",
+      "ruleToCall",
+      "options"
+    ],
+    "OPTION": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "OPTION1": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "OPTION2": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "OPTION3": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "OPTION4": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "OPTION5": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "OPTION6": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "OPTION7": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "OPTION8": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "OPTION9": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "OR": [
+      "this",
+      "altsOrOpts"
+    ],
+    "OR1": [
+      "this",
+      "altsOrOpts"
+    ],
+    "OR2": [
+      "this",
+      "altsOrOpts"
+    ],
+    "OR3": [
+      "this",
+      "altsOrOpts"
+    ],
+    "OR4": [
+      "this",
+      "altsOrOpts"
+    ],
+    "OR5": [
+      "this",
+      "altsOrOpts"
+    ],
+    "OR6": [
+      "this",
+      "altsOrOpts"
+    ],
+    "OR7": [
+      "this",
+      "altsOrOpts"
+    ],
+    "OR8": [
+      "this",
+      "altsOrOpts"
+    ],
+    "OR9": [
+      "this",
+      "altsOrOpts"
+    ],
+    "MANY": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "MANY1": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "MANY2": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "MANY3": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "MANY4": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "MANY5": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "MANY6": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "MANY7": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "MANY8": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "MANY9": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "MANY_SEP": [
+      "this",
+      "options"
+    ],
+    "MANY_SEP1": [
+      "this",
+      "options"
+    ],
+    "MANY_SEP2": [
+      "this",
+      "options"
+    ],
+    "MANY_SEP3": [
+      "this",
+      "options"
+    ],
+    "MANY_SEP4": [
+      "this",
+      "options"
+    ],
+    "MANY_SEP5": [
+      "this",
+      "options"
+    ],
+    "MANY_SEP6": [
+      "this",
+      "options"
+    ],
+    "MANY_SEP7": [
+      "this",
+      "options"
+    ],
+    "MANY_SEP8": [
+      "this",
+      "options"
+    ],
+    "MANY_SEP9": [
+      "this",
+      "options"
+    ],
+    "AT_LEAST_ONE": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "AT_LEAST_ONE1": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "AT_LEAST_ONE2": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "AT_LEAST_ONE3": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "AT_LEAST_ONE4": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "AT_LEAST_ONE5": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "AT_LEAST_ONE6": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "AT_LEAST_ONE7": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "AT_LEAST_ONE8": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "AT_LEAST_ONE9": [
+      "this",
+      "actionORMethodDef"
+    ],
+    "AT_LEAST_ONE_SEP": [
+      "this",
+      "options"
+    ],
+    "AT_LEAST_ONE_SEP1": [
+      "this",
+      "options"
+    ],
+    "AT_LEAST_ONE_SEP2": [
+      "this",
+      "options"
+    ],
+    "AT_LEAST_ONE_SEP3": [
+      "this",
+      "options"
+    ],
+    "AT_LEAST_ONE_SEP4": [
+      "this",
+      "options"
+    ],
+    "AT_LEAST_ONE_SEP5": [
+      "this",
+      "options"
+    ],
+    "AT_LEAST_ONE_SEP6": [
+      "this",
+      "options"
+    ],
+    "AT_LEAST_ONE_SEP7": [
+      "this",
+      "options"
+    ],
+    "AT_LEAST_ONE_SEP8": [
+      "this",
+      "options"
+    ],
+    "AT_LEAST_ONE_SEP9": [
+      "this",
+      "options"
+    ],
+    "RULE": [
+      "this",
+      "name",
+      "implementation",
+      "param"
+    ],
+    "OVERRIDE_RULE": [
+      "this",
+      "name",
+      "impl",
+      "param"
+    ],
+    "BACKTRACK": [
+      "this",
+      "grammarRule",
+      "args"
+    ],
+    "getGAstProductions": [
+      "this"
+    ],
+    "getSerializedGastProductions": [
+      "this"
+    ]
+  },
+  "RecognizerEngine": {
+    "initRecognizerEngine": [
+      "tokenVocabulary",
+      "config"
+    ],
+    "defineRule": [
+      "ruleName",
+      "impl",
+      "config"
+    ],
+    "invokeRuleCatch": [
+      "e",
+      "resyncEnabledConfig",
+      "recoveryValueFunc"
+    ],
+    "optionInternal": [
+      "actionORMethodDef",
+      "occurrence"
+    ],
+    "optionInternalLogic": [
+      "actionORMethodDef",
+      "occurrence",
+      "key"
+    ],
+    "atLeastOneInternal": [
+      "prodOccurrence",
+      "actionORMethodDef"
+    ],
+    "atLeastOneInternalLogic": [
+      "prodOccurrence",
+      "actionORMethodDef",
+      "key"
+    ],
+    "atLeastOneSepFirstInternal": [
+      "prodOccurrence",
+      "options"
+    ],
+    "atLeastOneSepFirstInternalLogic": [
+      "prodOccurrence",
+      "options",
+      "key"
+    ],
+    "manyInternal": [
+      "prodOccurrence",
+      "actionORMethodDef"
+    ],
+    "manyInternalLogic": [
+      "prodOccurrence",
+      "actionORMethodDef",
+      "key"
+    ],
+    "manySepFirstInternal": [
+      "prodOccurrence",
+      "options"
+    ],
+    "manySepFirstInternalLogic": [
+      "prodOccurrence",
+      "options",
+      "key"
+    ],
+    "repetitionSepSecondInternal": [
+      "prodOccurrence",
+      "separator",
+      "separatorLookAheadFunc",
+      "action",
+      "nextTerminalAfterWalker"
+    ],
+    "doSingleRepetition": [
+      "action"
+    ],
+    "orInternal": [
+      "altsOrOpts",
+      "occurrence"
+    ],
+    "ruleFinallyStateUpdate": [],
+    "subruleInternal": [
+      "ruleToCall",
+      "idx",
+      "options"
+    ],
+    "subruleInternalError": [
+      "e",
+      "options",
+      "ruleName"
+    ],
+    "consumeInternal": [
+      "tokType",
+      "idx",
+      "options"
+    ],
+    "consumeInternalError": [
+      "tokType",
+      "nextToken",
+      "options"
+    ],
+    "consumeInternalRecovery": [
+      "tokType",
+      "idx",
+      "eFromConsumption"
+    ],
+    "saveRecogState": [],
+    "reloadRecogState": [
+      "newState"
+    ],
+    "ruleInvocationStateUpdate": [
+      "shortName",
+      "fullName",
+      "idxInCallingRule"
+    ],
+    "isBackTracking": [],
+    "getCurrRuleFullName": [],
+    "shortRuleNameToFullName": [
+      "shortName"
+    ],
+    "isAtEndOfInput": [],
+    "reset": []
+  },
+  "separatorLookAheadFunc": [],
+  "InRuleRecoveryException": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "Recoverable": {
+    "initRecoverable": [
+      "config"
+    ],
+    "getTokenToInsert": [
+      "tokType"
+    ],
+    "canTokenTypeBeInsertedInRecovery": [
+      "tokType"
+    ],
+    "canTokenTypeBeDeletedInRecovery": [
+      "tokType"
+    ],
+    "tryInRepetitionRecovery": [
+      "grammarRule",
+      "grammarRuleArgs",
+      "lookAheadFunc",
+      "expectedTokType"
+    ],
+    "shouldInRepetitionRecoveryBeTried": [
+      "expectTokAfterLastMatch",
+      "nextTokIdx",
+      "notStuck"
+    ],
+    "getFollowsForInRuleRecovery": [
+      "tokType",
+      "tokIdxInRule"
+    ],
+    "tryInRuleRecovery": [
+      "expectedTokType",
+      "follows"
+    ],
+    "canPerformInRuleRecovery": [
+      "expectedToken",
+      "follows"
+    ],
+    "canRecoverWithSingleTokenInsertion": [
+      "expectedTokType",
+      "follows"
+    ],
+    "canRecoverWithSingleTokenDeletion": [
+      "expectedTokType"
+    ],
+    "isInCurrentRuleReSyncSet": [
+      "tokenTypeIdx"
+    ],
+    "findReSyncTokenType": [],
+    "getCurrFollowKey": [],
+    "buildFullFollowKeyStack": [],
+    "flattenFollowSet": [],
+    "getFollowSetFromFollowKey": [
+      "followKey"
+    ],
+    "addToResyncTokens": [
+      "token",
+      "resyncTokens"
+    ],
+    "reSyncTo": [
+      "tokType"
+    ],
+    "attemptInRepetitionRecovery": [
+      "prodFunc",
+      "args",
+      "lookaheadFunc",
+      "dslMethodIdx",
+      "prodOccurrence",
+      "nextToksWalker",
+      "notStuck"
+    ],
+    "getCurrentGrammarPath": [
+      "tokType",
+      "tokIdxInRule"
+    ],
+    "getHumanReadableRuleStack": []
+  },
+  "generateErrorMessage": [],
+  "attemptInRepetitionRecovery": [
+    "prodFunc",
+    "args",
+    "lookaheadFunc",
+    "dslMethodIdx",
+    "prodOccurrence",
+    "nextToksWalker",
+    "notStuck"
+  ],
+  "TreeBuilder": {
+    "initTreeBuilder": [
+      "config"
+    ],
+    "setInitialNodeLocationOnlyOffsetRecovery": [
+      "cstNode"
+    ],
+    "setInitialNodeLocationOnlyOffsetRegular": [
+      "cstNode"
+    ],
+    "setInitialNodeLocationFullRecovery": [
+      "cstNode"
+    ],
+    "setInitialNodeLocationFullRegular": [
+      "cstNode"
+    ],
+    "cstInvocationStateUpdate": [
+      "fullRuleName"
+    ],
+    "cstFinallyStateUpdate": [],
+    "cstPostRuleFull": [
+      "ruleCstNode"
+    ],
+    "cstPostRuleOnlyOffset": [
+      "ruleCstNode"
+    ],
+    "cstPostTerminal": [
+      "key",
+      "consumedToken"
+    ],
+    "cstPostNonTerminal": [
+      "ruleCstResult",
+      "ruleName"
+    ],
+    "getBaseCstVisitorConstructor": [],
+    "getBaseCstVisitorConstructorWithDefaults": [],
+    "getLastExplicitRuleShortName": [],
+    "getPreviousExplicitRuleShortName": [],
+    "getLastExplicitRuleOccurrenceIndex": []
+  },
+  "applyMixins": [
+    "derivedCtor",
+    "baseCtors"
+  ],
+  "disableSticky": [],
+  "enableSticky": [],
+  "analyzeTokenTypes": [
+    "tokenTypes",
+    "options"
+  ],
+  "validatePatterns": [
+    "tokenTypes",
+    "validModesNames"
+  ],
+  "validateRegExpPattern": [
+    "tokenTypes"
+  ],
+  "findMissingPatterns": [
+    "tokenTypes"
+  ],
+  "findInvalidPatterns": [
+    "tokenTypes"
+  ],
+  "findEndOfInputAnchor": [
+    "tokenTypes"
+  ],
+  "EndAnchorFinder": {
+    "constructor": [],
+    "visitEndAnchor": [
+      "node"
+    ]
+  },
+  "findEmptyMatchRegExps": [
+    "tokenTypes"
+  ],
+  "findStartOfInputAnchor": [
+    "tokenTypes"
+  ],
+  "StartAnchorFinder": {
+    "constructor": [],
+    "visitStartAnchor": [
+      "node"
+    ]
+  },
+  "findUnsupportedFlags": [
+    "tokenTypes"
+  ],
+  "findDuplicatePatterns": [
+    "tokenTypes"
+  ],
+  "findInvalidGroupType": [
+    "tokenTypes"
+  ],
+  "findModesThatDoNotExist": [
+    "tokenTypes",
+    "validModes"
+  ],
+  "findUnreachablePatterns": [
+    "tokenTypes"
+  ],
+  "tryToMatchStrToPattern": [
+    "str",
+    "pattern"
+  ],
+  "noMetaChar": [
+    "regExp"
+  ],
+  "usesLookAheadOrBehind": [
+    "regExp"
+  ],
+  "addStartOfInput": [
+    "pattern"
+  ],
+  "addStickyFlag": [
+    "pattern"
+  ],
+  "performRuntimeChecks": [
+    "lexerDefinition",
+    "trackLines",
+    "lineTerminatorCharacters"
+  ],
+  "performWarningRuntimeChecks": [
+    "lexerDefinition",
+    "trackLines",
+    "lineTerminatorCharacters"
+  ],
+  "cloneEmptyGroups": [
+    "emptyGroups"
+  ],
+  "isCustomPattern": [
+    "tokenType"
+  ],
+  "isShortPattern": [
+    "pattern"
+  ],
+  "checkLineBreaksIssues": [
+    "tokType",
+    "lineTerminatorCharCodes"
+  ],
+  "buildLineBreakIssueMessage": [
+    "tokType",
+    "details"
+  ],
+  "getCharCodes": [
+    "charsOrCodes"
+  ],
+  "addToMapOfArrays": [
+    "map",
+    "key",
+    "value"
+  ],
+  "charCodeToOptimizedIndex": [
+    "charCode"
+  ],
+  "initCharCodeToOptimizedIndexMap": [],
+  "Lexer": {
+    "constructor": [
+      "lexerDefinition",
+      "param"
+    ],
+    "tokenize": [
+      "text",
+      "param"
+    ],
+    "tokenizeInternal": [
+      "text",
+      "initialMode"
+    ],
+    "handleModes": [
+      "config",
+      "pop_mode",
+      "push_mode",
+      "newToken"
+    ],
+    "chopInput": [
+      "text",
+      "length"
+    ],
+    "updateLastIndex": [
+      "regExp",
+      "newLastIndex"
+    ],
+    "updateTokenEndLineColumnLocation": [
+      "newToken",
+      "group",
+      "lastLTIdx",
+      "numOfLTsInMatch",
+      "line",
+      "column",
+      "imageLength"
+    ],
+    "computeNewColumn": [
+      "oldColumn",
+      "imageLength"
+    ],
+    "createOffsetOnlyToken": [
+      "image",
+      "startOffset",
+      "tokenTypeIdx",
+      "tokenType"
+    ],
+    "createStartOnlyToken": [
+      "image",
+      "startOffset",
+      "tokenTypeIdx",
+      "tokenType",
+      "startLine",
+      "startColumn"
+    ],
+    "createFullToken": [
+      "image",
+      "startOffset",
+      "tokenTypeIdx",
+      "tokenType",
+      "startLine",
+      "startColumn",
+      "imageLength"
+    ],
+    "addTokenUsingPush": [
+      "tokenVector",
+      "index",
+      "tokenToAdd"
+    ],
+    "addTokenUsingMemberAccess": [
+      "tokenVector",
+      "index",
+      "tokenToAdd"
+    ],
+    "handlePayloadNoCustom": [
+      "token",
+      "payload"
+    ],
+    "handlePayloadWithCustom": [
+      "token",
+      "payload"
+    ],
+    "matchWithTest": [
+      "pattern",
+      "text",
+      "offset"
+    ],
+    "matchWithExec": [
+      "pattern",
+      "text"
+    ]
+  },
+  "getPossiblePatternsSlow": [],
+  "getPossiblePatternsOptimized": [
+    "charCode"
+  ],
+  "pop_mode": [
+    "popToken"
+  ],
+  "push_mode": [
+    "newMode"
+  ],
+  "getOptimizedStartCodesIndices": [
+    "regExp",
+    "param"
+  ],
+  "firstCharOptimizedIndices": [
+    "ast",
+    "result",
+    "ignoreCase"
+  ],
+  "addOptimizedIdxToResult": [
+    "code",
+    "result",
+    "ignoreCase"
+  ],
+  "handleIgnoreCase": [
+    "code",
+    "result"
+  ],
+  "findCode": [
+    "setNode",
+    "targetCharCodes"
+  ],
+  "isWholeOptional": [
+    "ast"
+  ],
+  "CharCodeFinder": {
+    "constructor": [
+      "targetCharCodes"
+    ],
+    "visitChildren": [
+      "node"
+    ],
+    "visitCharacter": [
+      "node"
+    ],
+    "visitSet": [
+      "node"
+    ]
+  },
+  "canMatchCharCode": [
+    "charCodes",
+    "pattern"
+  ],
+  "getRegExpAst": [
+    "regExp"
+  ],
+  "clearRegExpParserCache": [],
+  "tokenStructuredMatcher": [
+    "tokInstance",
+    "tokConstructor"
+  ],
+  "tokenStructuredMatcherNoCategories": [
+    "token",
+    "tokType"
+  ],
+  "augmentTokenTypes": [
+    "tokenTypes"
+  ],
+  "expandCategories": [
+    "tokenTypes"
+  ],
+  "assignTokenDefaultProps": [
+    "tokenTypes"
+  ],
+  "assignCategoriesTokensProp": [
+    "tokenTypes"
+  ],
+  "assignCategoriesMapProp": [
+    "tokenTypes"
+  ],
+  "singleAssignCategoriesToksMap": [
+    "path",
+    "nextNode"
+  ],
+  "hasShortKeyProperty": [
+    "tokType"
+  ],
+  "hasCategoriesProperty": [
+    "tokType"
+  ],
+  "hasExtendingTokensTypesProperty": [
+    "tokType"
+  ],
+  "hasExtendingTokensTypesMapProperty": [
+    "tokType"
+  ],
+  "isTokenType": [
+    "tokType"
+  ],
+  "tokenLabel": [
+    "tokType"
+  ],
+  "tokenName": [
+    "tokType"
+  ],
+  "hasTokenLabel": [
+    "obj"
+  ],
+  "createToken": [
+    "config"
+  ],
+  "createTokenInternal": [
+    "config"
+  ],
+  "createTokenInstance": [
+    "tokType",
+    "image",
+    "startOffset",
+    "endOffset",
+    "startLine",
+    "endLine",
+    "startColumn",
+    "endColumn"
+  ],
+  "tokenMatcher": [
+    "token",
+    "tokType"
+  ],
+  "Range": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "contains": [
+      "num"
+    ],
+    "containsRange": [
+      "other"
+    ],
+    "isContainedInRange": [
+      "other"
+    ],
+    "strictlyContainsRange": [
+      "other"
+    ],
+    "isStrictlyContainedInRange": [
+      "other"
+    ]
+  },
+  "isValidRange": [
+    "start",
+    "end"
+  ]
+}

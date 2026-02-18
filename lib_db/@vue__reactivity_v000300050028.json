@@ -1,0 +1,912 @@
+{
+  "warn": [
+    "msg",
+    "param"
+  ],
+  "EffectScope": {
+    "constructor": [
+      "param"
+    ],
+    "active": [],
+    "pause": [],
+    "resume": [],
+    "run": [
+      "fn"
+    ],
+    "on": [],
+    "off": [],
+    "stop": [
+      "fromParent"
+    ]
+  },
+  "effectScope": [
+    "detached"
+  ],
+  "getCurrentScope": [],
+  "onScopeDispose": [
+    "fn",
+    "param"
+  ],
+  "ReactiveEffect": {
+    "constructor": [
+      "fn"
+    ],
+    "pause": [],
+    "resume": [],
+    "notify": [],
+    "run": [],
+    "stop": [],
+    "trigger": [],
+    "runIfDirty": [],
+    "dirty": []
+  },
+  "batch": [
+    "sub",
+    "param"
+  ],
+  "startBatch": [],
+  "endBatch": [],
+  "prepareDeps": [
+    "sub"
+  ],
+  "cleanupDeps": [
+    "sub"
+  ],
+  "isDirty": [
+    "sub"
+  ],
+  "refreshComputed": [
+    "computed"
+  ],
+  "removeSub": [
+    "link",
+    "param"
+  ],
+  "removeDep": [
+    "link"
+  ],
+  "effect": [
+    "fn",
+    "options"
+  ],
+  "stop": [
+    "runner"
+  ],
+  "pauseTracking": [],
+  "enableTracking": [],
+  "resetTracking": [],
+  "onEffectCleanup": [
+    "fn",
+    "param"
+  ],
+  "cleanupEffect": [
+    "e"
+  ],
+  "Link": {
+    "constructor": [
+      "sub",
+      "dep"
+    ]
+  },
+  "Dep": {
+    "constructor": [
+      "computed"
+    ],
+    "track": [
+      "debugInfo"
+    ],
+    "trigger": [
+      "debugInfo"
+    ],
+    "notify": [
+      "debugInfo"
+    ]
+  },
+  "addSub": [
+    "link"
+  ],
+  "track": [
+    "target",
+    "type",
+    "key"
+  ],
+  "trigger": [
+    "target",
+    "type",
+    "key",
+    "newValue",
+    "oldValue",
+    "oldTarget"
+  ],
+  "run": [
+    "dep"
+  ],
+  "getDepFromReactive": [
+    "object",
+    "key"
+  ],
+  "reactiveReadArray": [
+    "array"
+  ],
+  "shallowReadArray": [
+    "arr"
+  ],
+  "toWrapped": [
+    "target",
+    "item"
+  ],
+  "iterator": [
+    "self",
+    "method",
+    "wrapValue"
+  ],
+  "apply": [
+    "self",
+    "method",
+    "fn",
+    "thisArg",
+    "wrappedRetFn",
+    "args"
+  ],
+  "reduce": [
+    "self",
+    "method",
+    "fn",
+    "args"
+  ],
+  "searchProxy": [
+    "self",
+    "method",
+    "args"
+  ],
+  "noTracking": [
+    "self",
+    "method",
+    "param"
+  ],
+  "hasOwnProperty": [
+    "key"
+  ],
+  "BaseReactiveHandler": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "get": [
+      "target",
+      "key",
+      "receiver"
+    ]
+  },
+  "MutableReactiveHandler": {
+    "constructor": [
+      "param"
+    ],
+    "set": [
+      "target",
+      "key",
+      "value",
+      "receiver"
+    ],
+    "deleteProperty": [
+      "target",
+      "key"
+    ],
+    "has": [
+      "target",
+      "key"
+    ],
+    "ownKeys": [
+      "target"
+    ]
+  },
+  "ReadonlyReactiveHandler": {
+    "constructor": [
+      "param"
+    ],
+    "set": [
+      "target",
+      "key"
+    ],
+    "deleteProperty": [
+      "target",
+      "key"
+    ]
+  },
+  "toShallow": [
+    "value"
+  ],
+  "getProto": [
+    "v"
+  ],
+  "createIterableMethod": [
+    "method",
+    "isReadonly2",
+    "isShallow2"
+  ],
+  "createReadonlyMethod": [
+    "type"
+  ],
+  "createInstrumentations": [
+    "readonly",
+    "shallow"
+  ],
+  "createInstrumentationGetter": [
+    "isReadonly2",
+    "shallow"
+  ],
+  "checkIdentityKeys": [
+    "target",
+    "has",
+    "key"
+  ],
+  "targetTypeMap": [
+    "rawType"
+  ],
+  "getTargetType": [
+    "value"
+  ],
+  "reactive": [
+    "target"
+  ],
+  "shallowReactive": [
+    "target"
+  ],
+  "readonly": [
+    "target"
+  ],
+  "shallowReadonly": [
+    "target"
+  ],
+  "createReactiveObject": [
+    "target",
+    "isReadonly2",
+    "baseHandlers",
+    "collectionHandlers",
+    "proxyMap"
+  ],
+  "isReactive": [
+    "value"
+  ],
+  "isReadonly": [
+    "value"
+  ],
+  "isShallow": [
+    "value"
+  ],
+  "isProxy": [
+    "value"
+  ],
+  "toRaw": [
+    "observed"
+  ],
+  "markRaw": [
+    "value"
+  ],
+  "toReactive": [
+    "value"
+  ],
+  "toReadonly": [
+    "value"
+  ],
+  "isRef": [
+    "r"
+  ],
+  "ref": [
+    "value"
+  ],
+  "shallowRef": [
+    "value"
+  ],
+  "createRef": [
+    "rawValue",
+    "shallow"
+  ],
+  "RefImpl": {
+    "constructor": [
+      "value",
+      "isShallow2"
+    ],
+    "value": [
+      "newValue"
+    ]
+  },
+  "triggerRef": [
+    "ref2"
+  ],
+  "unref": [
+    "ref2"
+  ],
+  "toValue": [
+    "source"
+  ],
+  "proxyRefs": [
+    "objectWithRefs"
+  ],
+  "CustomRefImpl": {
+    "constructor": [
+      "factory"
+    ],
+    "value": [
+      "newVal"
+    ]
+  },
+  "customRef": [
+    "factory"
+  ],
+  "toRefs": [
+    "object"
+  ],
+  "ObjectRefImpl": {
+    "constructor": [
+      "_object",
+      "_key",
+      "_defaultValue"
+    ],
+    "value": [
+      "newVal"
+    ],
+    "dep": []
+  },
+  "GetterRefImpl": {
+    "constructor": [
+      "_getter"
+    ],
+    "value": []
+  },
+  "toRef": [
+    "source",
+    "key",
+    "defaultValue"
+  ],
+  "propertyToRef": [
+    "source",
+    "key",
+    "defaultValue"
+  ],
+  "ComputedRefImpl": {
+    "constructor": [
+      "fn",
+      "setter",
+      "isSSR"
+    ],
+    "notify": [],
+    "value": [
+      "newValue"
+    ]
+  },
+  "computed": [
+    "getterOrOptions",
+    "debugOptions",
+    "param"
+  ],
+  "getCurrentWatcher": [],
+  "onWatcherCleanup": [
+    "cleanupFn",
+    "param",
+    "param"
+  ],
+  "watch": [
+    "source",
+    "cb",
+    "param"
+  ],
+  "warnInvalidSource": [
+    "s"
+  ],
+  "reactiveGetter": [
+    "source2"
+  ],
+  "watchHandle": [],
+  "job": [
+    "immediateFirstRun"
+  ],
+  "traverse": [
+    "value",
+    "param",
+    "seen"
+  ],
+  "makeMap": [
+    "str"
+  ],
+  "NOOP": [],
+  "remove": [
+    "arr",
+    "el"
+  ],
+  "hasOwn": [
+    "val",
+    "key"
+  ],
+  "isMap": [
+    "val"
+  ],
+  "isSet": [
+    "val"
+  ],
+  "isFunction": [
+    "val"
+  ],
+  "isString": [
+    "val"
+  ],
+  "isSymbol": [
+    "val"
+  ],
+  "isObject": [
+    "val"
+  ],
+  "toTypeString": [
+    "value"
+  ],
+  "toRawType": [
+    "value"
+  ],
+  "isPlainObject": [
+    "val"
+  ],
+  "isIntegerKey": [
+    "key"
+  ],
+  "cacheStringFunction": [
+    "fn"
+  ],
+  "hasChanged": [
+    "value",
+    "oldValue"
+  ],
+  "def": [
+    "obj",
+    "key",
+    "value",
+    "param"
+  ],
+  "l": [],
+  "c": [
+    "e"
+  ],
+  "h": [
+    "e"
+  ],
+  "p": [
+    "e"
+  ],
+  "_": [
+    "e"
+  ],
+  "d": {
+    "constructor": [
+      "param"
+    ],
+    "active": [],
+    "pause": [],
+    "resume": [],
+    "run": [
+      "e"
+    ],
+    "on": [],
+    "off": [],
+    "stop": [
+      "e"
+    ]
+  },
+  "v": [],
+  "g": {
+    "constructor": [
+      "e"
+    ],
+    "pause": [],
+    "resume": [],
+    "notify": [],
+    "run": [],
+    "stop": [],
+    "trigger": [],
+    "runIfDirty": [],
+    "dirty": []
+  },
+  "w": [],
+  "S": [
+    "e"
+  ],
+  "E": [],
+  "x": [
+    "e"
+  ],
+  "k": [
+    "e"
+  ],
+  "T": [
+    "e"
+  ],
+  "A": [
+    "e"
+  ],
+  "m": [],
+  "O": [],
+  "D": [
+    "e"
+  ],
+  "L": {
+    "constructor": [
+      "e"
+    ],
+    "track": [
+      "e"
+    ],
+    "trigger": [
+      "e"
+    ],
+    "notify": [
+      "e"
+    ]
+  },
+  "P": [],
+  "C": [],
+  "W": [
+    "e",
+    "param"
+  ],
+  "N": [
+    "e"
+  ],
+  "V": [
+    "e",
+    "t",
+    "i",
+    "s",
+    "r",
+    "n"
+  ],
+  "K": [
+    "e"
+  ],
+  "F": [
+    "e",
+    "i",
+    "s"
+  ],
+  "z": [
+    "e",
+    "t",
+    "i",
+    "s",
+    "r",
+    "n"
+  ],
+  "o": [
+    "e"
+  ],
+  "B": [
+    "e",
+    "t",
+    "i",
+    "s"
+  ],
+  "q": [
+    "e",
+    "t",
+    "i"
+  ],
+  "J": [
+    "e",
+    "t",
+    "param"
+  ],
+  "X": [
+    "e",
+    "t",
+    "i"
+  ],
+  "$": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "get": [
+      "e",
+      "t",
+      "i"
+    ]
+  },
+  "ee": {
+    "constructor": [
+      "param"
+    ],
+    "set": [
+      "e",
+      "t",
+      "i",
+      "s"
+    ],
+    "deleteProperty": [
+      "e",
+      "t"
+    ],
+    "has": [
+      "e",
+      "t"
+    ],
+    "ownKeys": [
+      "e"
+    ]
+  },
+  "et": {
+    "constructor": [
+      "param"
+    ],
+    "set": [
+      "e",
+      "t"
+    ],
+    "deleteProperty": [
+      "e",
+      "t"
+    ]
+  },
+  "ei": [
+    "e",
+    "t",
+    "param"
+  ],
+  "en": [
+    "e"
+  ],
+  "el": [
+    "e"
+  ],
+  "eo": [
+    "e"
+  ],
+  "ea": [
+    "e",
+    "t"
+  ],
+  "ep": [
+    "e"
+  ],
+  "e_": [
+    "e"
+  ],
+  "ed": [
+    "e",
+    "t"
+  ],
+  "ex": [
+    "e"
+  ],
+  "ek": [
+    "e"
+  ],
+  "eT": [
+    "e"
+  ],
+  "eA": [
+    "e"
+  ],
+  "em": [
+    "e"
+  ],
+  "eO": [
+    "e",
+    "t"
+  ],
+  "eD": {
+    "constructor": [
+      "e",
+      "t"
+    ],
+    "value": [
+      "e"
+    ]
+  },
+  "ej": [
+    "e"
+  ],
+  "eI": [
+    "e"
+  ],
+  "eL": {
+    "constructor": [
+      "e"
+    ],
+    "value": [
+      "e"
+    ]
+  },
+  "eP": {
+    "constructor": [
+      "e",
+      "t",
+      "i"
+    ],
+    "value": [
+      "e"
+    ],
+    "dep": []
+  },
+  "eC": {
+    "constructor": [
+      "e"
+    ],
+    "value": []
+  },
+  "eW": {
+    "constructor": [
+      "e",
+      "t",
+      "i"
+    ],
+    "notify": [],
+    "value": [
+      "e"
+    ]
+  },
+  "eN": [
+    "e"
+  ],
+  "eM": [
+    "e"
+  ],
+  "eV": [
+    "e",
+    "param",
+    "param"
+  ],
+  "eK": [
+    "e",
+    "param",
+    "i"
+  ],
+  "eU": {
+    "constructor": [
+      "e",
+      "t"
+    ],
+    "value": [
+      "e"
+    ]
+  },
+  "eH": [
+    "e"
+  ],
+  "eY": [
+    "e"
+  ],
+  "eG": [
+    "e"
+  ],
+  "ez": [
+    "e"
+  ],
+  "eB": {
+    "constructor": [
+      "e"
+    ],
+    "value": [
+      "e"
+    ]
+  },
+  "eq": [
+    "e"
+  ],
+  "eJ": [
+    "e"
+  ],
+  "eQ": {
+    "constructor": [
+      "e",
+      "t",
+      "i"
+    ],
+    "value": [
+      "e"
+    ],
+    "dep": []
+  },
+  "eX": {
+    "constructor": [
+      "e"
+    ],
+    "value": []
+  },
+  "eZ": [
+    "e",
+    "t",
+    "i"
+  ],
+  "e$": {
+    "constructor": [
+      "e",
+      "t",
+      "i"
+    ],
+    "notify": [],
+    "value": [
+      "e"
+    ]
+  },
+  "e0": [
+    "e",
+    "t",
+    "param"
+  ],
+  "e5": [],
+  "e9": [
+    "e",
+    "param",
+    "param"
+  ],
+  "e7": [
+    "e",
+    "t",
+    "param"
+  ],
+  "y": [
+    "e"
+  ],
+  "te": [
+    "e",
+    "param",
+    "i"
+  ],
+  "f": [
+    "e"
+  ],
+  "b": [
+    "e"
+  ],
+  "R": [
+    "e"
+  ],
+  "I": {
+    "constructor": [
+      "e",
+      "t"
+    ]
+  },
+  "M": [
+    "e",
+    "t",
+    "s"
+  ],
+  "U": [
+    "e"
+  ],
+  "H": [
+    "e",
+    "t"
+  ],
+  "G": [
+    "e",
+    "t",
+    "i"
+  ],
+  "Z": [
+    "e"
+  ],
+  "eg": [
+    "e"
+  ],
+  "ey": [
+    "e"
+  ],
+  "eb": [
+    "e",
+    "t",
+    "i",
+    "s",
+    "r"
+  ],
+  "ew": [
+    "e"
+  ],
+  "eR": [
+    "e"
+  ],
+  "eS": [
+    "e"
+  ],
+  "eE": [
+    "e"
+  ]
+}

@@ -1,0 +1,5991 @@
+{
+  "Animator": {
+    "listen": [
+      "chart",
+      "event",
+      "cb"
+    ],
+    "add": [
+      "chart",
+      "items"
+    ],
+    "has": [
+      "chart"
+    ],
+    "start": [
+      "chart"
+    ],
+    "running": [
+      "chart"
+    ],
+    "stop": [
+      "chart"
+    ],
+    "remove": [
+      "chart"
+    ]
+  },
+  "Animation": {
+    "constructor": [
+      "cfg",
+      "target",
+      "prop",
+      "to"
+    ],
+    "active": [],
+    "update": [
+      "cfg",
+      "to",
+      "date"
+    ],
+    "cancel": [],
+    "tick": [
+      "date"
+    ],
+    "_to": []
+  },
+  "Animations": {
+    "constructor": [
+      "chart",
+      "animations"
+    ],
+    "configure": [
+      "animations"
+    ],
+    "update": [
+      "target",
+      "values"
+    ]
+  },
+  "awaitAll": [
+    "animations",
+    "properties"
+  ],
+  "resolveTargetOptions": [
+    "target",
+    "newOptions"
+  ],
+  "scaleClip": [
+    "scale",
+    "allowedOverflow"
+  ],
+  "defaultClip": [
+    "xScale",
+    "yScale",
+    "allowedOverflow"
+  ],
+  "toClip": [
+    "value"
+  ],
+  "getSortedDatasetIndices": [
+    "chart",
+    "filterVisible"
+  ],
+  "applyStack": [
+    "stack",
+    "value",
+    "dsIndex",
+    "param"
+  ],
+  "convertObjectDataToArray": [
+    "data",
+    "meta"
+  ],
+  "isStacked": [
+    "scale",
+    "meta"
+  ],
+  "getStackKey": [
+    "indexScale",
+    "valueScale",
+    "meta"
+  ],
+  "getUserBounds": [
+    "scale"
+  ],
+  "getOrCreateStack": [
+    "stacks",
+    "stackKey",
+    "indexValue"
+  ],
+  "getLastIndexInStack": [
+    "stack",
+    "vScale",
+    "positive",
+    "type"
+  ],
+  "updateStacks": [
+    "controller",
+    "parsed"
+  ],
+  "getFirstScaleId": [
+    "chart",
+    "axis"
+  ],
+  "createDatasetContext": [
+    "parent",
+    "index"
+  ],
+  "createDataContext": [
+    "parent",
+    "index",
+    "element"
+  ],
+  "clearStacks": [
+    "meta",
+    "items"
+  ],
+  "isDirectUpdateMode": [
+    "mode"
+  ],
+  "cloneIfNotShared": [
+    "cached",
+    "shared"
+  ],
+  "createStack": [
+    "canStack",
+    "meta",
+    "chart"
+  ],
+  "DatasetController": {
+    "constructor": [
+      "chart",
+      "datasetIndex"
+    ],
+    "chart": [],
+    "index": [],
+    "_cachedMeta": [],
+    "enableOptionSharing": [],
+    "supportsDecimation": [],
+    "linkScales": [],
+    "getAllParsedValues": [
+      "scale"
+    ],
+    "getLabelAndValue": [
+      "index"
+    ],
+    "updateElements": [
+      "elements",
+      "start",
+      "count",
+      "mode"
+    ],
+    "update": [
+      "mode"
+    ],
+    "updateIndex": [
+      "datasetIndex"
+    ],
+    "getMaxOverflow": [],
+    "draw": [],
+    "reset": [],
+    "getDataset": [],
+    "getMeta": [],
+    "getScaleForId": [
+      "scaleID"
+    ],
+    "configure": [],
+    "initialize": [],
+    "addElements": [],
+    "buildOrUpdateElements": [
+      "resetNewElements"
+    ],
+    "getStyle": [
+      "index",
+      "active"
+    ],
+    "resolveDatasetElementOptions": [
+      "mode"
+    ],
+    "resolveDataElementOptions": [
+      "index",
+      "mode"
+    ],
+    "getSharedOptions": [
+      "options"
+    ],
+    "includeOptions": [
+      "mode",
+      "sharedOptions"
+    ],
+    "updateElement": [
+      "element",
+      "index",
+      "properties",
+      "mode"
+    ],
+    "updateSharedOptions": [
+      "sharedOptions",
+      "mode",
+      "newOptions"
+    ],
+    "removeHoverStyle": [
+      "element",
+      "datasetIndex",
+      "index"
+    ],
+    "setHoverStyle": [
+      "element",
+      "datasetIndex",
+      "index"
+    ],
+    "parse": [
+      "start",
+      "count"
+    ],
+    "parsePrimitiveData": [
+      "meta",
+      "data",
+      "start",
+      "count"
+    ],
+    "parseArrayData": [
+      "meta",
+      "data",
+      "start",
+      "count"
+    ],
+    "parseObjectData": [
+      "meta",
+      "data",
+      "start",
+      "count"
+    ],
+    "getParsed": [
+      "index"
+    ],
+    "applyStack": [
+      "scale",
+      "parsed"
+    ],
+    "updateRangeFromParsed": [
+      "range",
+      "scale",
+      "parsed",
+      "stack"
+    ],
+    "getMinMax": [
+      "scale",
+      "canStack"
+    ]
+  },
+  "chooseId": [
+    "axis",
+    "x",
+    "y",
+    "r"
+  ],
+  "isNotInOrderComparedToPrev": [],
+  "_skip": [],
+  "context": [],
+  "move": [
+    "arr"
+  ],
+  "getAllScaleValues": [
+    "scale",
+    "type"
+  ],
+  "computeMinSampleSize": [
+    "meta"
+  ],
+  "updateMinAndPrev": [],
+  "computeFitCategoryTraits": [
+    "index",
+    "ruler",
+    "options",
+    "stackCount"
+  ],
+  "computeFlexCategoryTraits": [
+    "index",
+    "ruler",
+    "options",
+    "stackCount"
+  ],
+  "parseFloatBar": [
+    "entry",
+    "item",
+    "vScale",
+    "i"
+  ],
+  "parseValue": [
+    "entry",
+    "item",
+    "vScale",
+    "i"
+  ],
+  "parseArrayOrPrimitive": [
+    "meta",
+    "data",
+    "start",
+    "count"
+  ],
+  "isFloatBar": [
+    "custom"
+  ],
+  "barSign": [
+    "size",
+    "vScale",
+    "actualBase"
+  ],
+  "borderProps": [
+    "properties"
+  ],
+  "setBorderSkipped": [
+    "properties",
+    "options",
+    "stack",
+    "index"
+  ],
+  "parseEdge": [
+    "edge",
+    "a",
+    "b",
+    "reverse"
+  ],
+  "swap": [
+    "orig",
+    "v1",
+    "v2"
+  ],
+  "startEnd": [
+    "v",
+    "start",
+    "end"
+  ],
+  "setInflateAmount": [
+    "properties",
+    "param",
+    "ratio"
+  ],
+  "BarController": {
+    "id": [],
+    "overrides": [],
+    "parsePrimitiveData": [
+      "meta",
+      "data",
+      "start",
+      "count"
+    ],
+    "parseArrayData": [
+      "meta",
+      "data",
+      "start",
+      "count"
+    ],
+    "parseObjectData": [
+      "meta",
+      "data",
+      "start",
+      "count"
+    ],
+    "update": [
+      "mode"
+    ],
+    "_getStacks": [],
+    "_getStackCount": [],
+    "_getAxisCount": [],
+    "getFirstScaleIdForIndexAxis": [],
+    "_getAxis": [],
+    "_getStackIndex": [],
+    "_getRuler": [],
+    "_calculateBarValuePixels": [],
+    "_calculateBarIndexPixels": []
+  },
+  "skipNull": [
+    "meta"
+  ],
+  "BubbleController": {
+    "id": [],
+    "overrides": [],
+    "parsePrimitiveData": [
+      "meta",
+      "data",
+      "start",
+      "count"
+    ],
+    "parseArrayData": [
+      "meta",
+      "data",
+      "start",
+      "count"
+    ],
+    "parseObjectData": [
+      "meta",
+      "data",
+      "start",
+      "count"
+    ],
+    "getMaxOverflow": [],
+    "getLabelAndValue": [
+      "index"
+    ],
+    "update": [
+      "mode"
+    ]
+  },
+  "getRatioAndOffset": [
+    "rotation",
+    "circumference",
+    "cutout"
+  ],
+  "calcMax": [
+    "angle",
+    "a",
+    "b"
+  ],
+  "calcMin": [
+    "angle",
+    "a",
+    "b"
+  ],
+  "DoughnutController": {
+    "id": [],
+    "descriptors": [],
+    "overrides": [],
+    "constructor": [
+      "chart",
+      "datasetIndex"
+    ],
+    "innerRadius": [],
+    "outerRadius": [],
+    "offsetX": [],
+    "offsetY": [],
+    "parse": [
+      "start",
+      "count"
+    ],
+    "_getRotation": [],
+    "_getCircumference": [],
+    "_getRotationExtents": [],
+    "_circumference": [],
+    "calculateTotal": [],
+    "calculateCircumference": [
+      "value"
+    ],
+    "getLabelAndValue": [
+      "index"
+    ],
+    "getMaxBorderWidth": [
+      "arcs"
+    ],
+    "getMaxOffset": [
+      "arcs"
+    ],
+    "_getRingWeightOffset": [],
+    "_getRingWeight": [],
+    "_getVisibleDatasetWeightTotal": []
+  },
+  "getter": [
+    "i"
+  ],
+  "LineController": {
+    "id": [],
+    "overrides": [],
+    "update": [
+      "mode"
+    ],
+    "getMaxOverflow": []
+  },
+  "PolarAreaController": {
+    "id": [],
+    "overrides": [],
+    "constructor": [
+      "chart",
+      "datasetIndex"
+    ],
+    "innerRadius": [],
+    "outerRadius": [],
+    "getLabelAndValue": [
+      "index"
+    ],
+    "parseObjectData": [
+      "meta",
+      "data",
+      "start",
+      "count"
+    ],
+    "update": [
+      "mode"
+    ],
+    "getMinMax": [],
+    "_updateRadius": [],
+    "countVisibleElements": [],
+    "_computeAngle": []
+  },
+  "PieController": {},
+  "RadarController": {
+    "id": [],
+    "overrides": [],
+    "getLabelAndValue": [
+      "index"
+    ],
+    "parseObjectData": [
+      "meta",
+      "data",
+      "start",
+      "count"
+    ],
+    "update": [
+      "mode"
+    ]
+  },
+  "ScatterController": {
+    "id": [],
+    "overrides": [],
+    "getLabelAndValue": [
+      "index"
+    ],
+    "update": [
+      "mode"
+    ],
+    "getMaxOverflow": []
+  },
+  "abstract": [],
+  "DateAdapterBase": {
+    "override": [
+      "members"
+    ],
+    "options": [],
+    "constructor": [
+      "options"
+    ],
+    "init": [],
+    "formats": [],
+    "parse": [],
+    "format": [],
+    "add": [],
+    "diff": [],
+    "startOf": [],
+    "endOf": []
+  },
+  "binarySearch": [
+    "metaset",
+    "axis",
+    "value",
+    "intersect"
+  ],
+  "evaluateInteractionItems": [
+    "chart",
+    "axis",
+    "position",
+    "handler",
+    "intersect"
+  ],
+  "getDistanceMetricForAxis": [
+    "axis"
+  ],
+  "getIntersectItems": [
+    "chart",
+    "position",
+    "axis",
+    "useFinalPosition",
+    "includeInvisible"
+  ],
+  "evaluationFunc": [
+    "element",
+    "datasetIndex",
+    "index"
+  ],
+  "getNearestRadialItems": [
+    "chart",
+    "position",
+    "axis",
+    "useFinalPosition"
+  ],
+  "getNearestCartesianItems": [
+    "chart",
+    "position",
+    "axis",
+    "intersect",
+    "useFinalPosition",
+    "includeInvisible"
+  ],
+  "getNearestItems": [
+    "chart",
+    "position",
+    "axis",
+    "intersect",
+    "useFinalPosition",
+    "includeInvisible"
+  ],
+  "getAxisItems": [
+    "chart",
+    "position",
+    "axis",
+    "intersect",
+    "useFinalPosition"
+  ],
+  "filterByPosition": [
+    "array",
+    "position"
+  ],
+  "filterDynamicPositionByAxis": [
+    "array",
+    "axis"
+  ],
+  "sortByWeight": [
+    "array",
+    "reverse"
+  ],
+  "wrapBoxes": [
+    "boxes"
+  ],
+  "buildStacks": [
+    "layouts"
+  ],
+  "setLayoutDims": [
+    "layouts",
+    "params"
+  ],
+  "buildLayoutBoxes": [
+    "boxes"
+  ],
+  "getCombinedMax": [
+    "maxPadding",
+    "chartArea",
+    "a",
+    "b"
+  ],
+  "updateMaxPadding": [
+    "maxPadding",
+    "boxPadding"
+  ],
+  "updateDims": [
+    "chartArea",
+    "params",
+    "layout",
+    "stacks"
+  ],
+  "handleMaxPadding": [
+    "chartArea"
+  ],
+  "updatePos": [
+    "pos"
+  ],
+  "getMargins": [
+    "horizontal",
+    "chartArea"
+  ],
+  "marginForPositions": [
+    "positions"
+  ],
+  "fitBoxes": [
+    "boxes",
+    "chartArea",
+    "params",
+    "stacks"
+  ],
+  "setBoxDims": [
+    "box",
+    "left",
+    "top",
+    "width",
+    "height"
+  ],
+  "placeBoxes": [
+    "boxes",
+    "chartArea",
+    "params",
+    "stacks"
+  ],
+  "BasePlatform": {
+    "acquireContext": [
+      "canvas",
+      "options"
+    ],
+    "releaseContext": [
+      "context"
+    ],
+    "addEventListener": [
+      "chart",
+      "type",
+      "listener"
+    ],
+    "removeEventListener": [
+      "chart",
+      "type",
+      "listener"
+    ],
+    "getDevicePixelRatio": [],
+    "getMaximumSize": [
+      "canvas",
+      "width",
+      "height",
+      "aspectRatio"
+    ],
+    "isAttached": [
+      "canvas"
+    ],
+    "updateConfig": [
+      "config"
+    ]
+  },
+  "BasicPlatform": {},
+  "isNullOrEmpty": [
+    "value"
+  ],
+  "initCanvas": [
+    "canvas",
+    "aspectRatio"
+  ],
+  "addListener": [
+    "node",
+    "type",
+    "listener"
+  ],
+  "removeListener": [
+    "chart",
+    "type",
+    "listener"
+  ],
+  "fromNativeEvent": [
+    "event",
+    "chart"
+  ],
+  "nodeListContains": [
+    "nodeList",
+    "canvas"
+  ],
+  "createAttachObserver": [
+    "chart",
+    "type",
+    "listener"
+  ],
+  "createDetachObserver": [
+    "chart",
+    "type",
+    "listener"
+  ],
+  "onWindowResize": [],
+  "listenDevicePixelRatioChanges": [
+    "chart",
+    "resize"
+  ],
+  "unlistenDevicePixelRatioChanges": [
+    "chart"
+  ],
+  "createResizeObserver": [
+    "chart",
+    "type",
+    "listener"
+  ],
+  "releaseObserver": [
+    "chart",
+    "type",
+    "observer"
+  ],
+  "createProxyAndListen": [
+    "chart",
+    "type",
+    "listener"
+  ],
+  "DomPlatform": {},
+  "_detectPlatform": [
+    "canvas"
+  ],
+  "Element": {
+    "defaults": [],
+    "defaultRoutes": [],
+    "x": [],
+    "y": [],
+    "active": [],
+    "options": [],
+    "$animations": [],
+    "tooltipPosition": [
+      "useFinalPosition"
+    ],
+    "hasValue": [],
+    "getProps": [
+      "props",
+      "final"
+    ]
+  },
+  "autoSkip": [
+    "scale",
+    "ticks"
+  ],
+  "determineMaxTicks": [
+    "scale"
+  ],
+  "calculateSpacing": [
+    "majorIndices",
+    "ticks",
+    "ticksLimit"
+  ],
+  "getMajorIndices": [
+    "ticks"
+  ],
+  "skipMajors": [
+    "ticks",
+    "newTicks",
+    "majorIndices",
+    "spacing"
+  ],
+  "skip": [
+    "ticks",
+    "newTicks",
+    "spacing",
+    "majorStart",
+    "majorEnd"
+  ],
+  "getEvenSpacing": [
+    "arr"
+  ],
+  "reverseAlign": [
+    "align"
+  ],
+  "offsetFromEdge": [
+    "scale",
+    "edge",
+    "offset"
+  ],
+  "getTicksLimit": [
+    "ticksLength",
+    "maxTicksLimit"
+  ],
+  "sample": [
+    "arr",
+    "numItems"
+  ],
+  "getPixelForGridLine": [
+    "scale",
+    "index",
+    "offsetGridLines"
+  ],
+  "garbageCollect": [
+    "caches",
+    "length"
+  ],
+  "getTickMarkLength": [
+    "options"
+  ],
+  "getTitleHeight": [
+    "options",
+    "fallback"
+  ],
+  "createScaleContext": [
+    "parent",
+    "scale"
+  ],
+  "createTickContext": [
+    "parent",
+    "index",
+    "tick"
+  ],
+  "titleAlign": [
+    "align",
+    "position",
+    "reverse"
+  ],
+  "titleArgs": [
+    "scale",
+    "offset",
+    "position",
+    "align"
+  ],
+  "Scale": {
+    "constructor": [
+      "cfg"
+    ]
+  },
+  "valueAt": [
+    "idx"
+  ],
+  "alignBorderValue": [
+    "pixel"
+  ],
+  "drawLine": [
+    "p1",
+    "p2",
+    "style"
+  ],
+  "TypedRegistry": {
+    "constructor": [
+      "type",
+      "scope",
+      "override"
+    ],
+    "type": [],
+    "scope": [],
+    "override": [],
+    "items": [],
+    "isForType": [
+      "type"
+    ],
+    "register": [
+      "item"
+    ],
+    "get": [
+      "id"
+    ],
+    "unregister": [
+      "item"
+    ]
+  },
+  "registerDefaults": [
+    "item",
+    "scope",
+    "parentScope"
+  ],
+  "routeDefaults": [
+    "scope",
+    "routes"
+  ],
+  "isIChartComponent": [
+    "proto"
+  ],
+  "Registry": {
+    "controllers": [],
+    "elements": [],
+    "plugins": [],
+    "scales": [],
+    "_typedRegistries": [],
+    "add": [
+      "param"
+    ],
+    "remove": [
+      "param"
+    ],
+    "addControllers": [
+      "param"
+    ],
+    "addElements": [
+      "param"
+    ],
+    "addPlugins": [
+      "param"
+    ],
+    "addScales": [
+      "param"
+    ],
+    "getController": [
+      "id"
+    ],
+    "getElement": [
+      "id"
+    ],
+    "getPlugin": [
+      "id"
+    ],
+    "getScale": [
+      "id"
+    ],
+    "removeControllers": [
+      "param"
+    ],
+    "removeElements": [
+      "param"
+    ],
+    "removePlugins": [
+      "param"
+    ],
+    "removeScales": [
+      "param"
+    ],
+    "_each": [],
+    "_exec": [],
+    "_getRegistryForType": [],
+    "_get": []
+  },
+  "PluginService": {
+    "_init": [],
+    "notify": [
+      "chart",
+      "hook",
+      "args",
+      "filter"
+    ],
+    "_notify": [],
+    "invalidate": [],
+    "_oldCache": [],
+    "_cache": [],
+    "_descriptors": [],
+    "_createDescriptors": [
+      "chart",
+      "all"
+    ],
+    "_notifyStateChanges": []
+  },
+  "diff": [
+    "a",
+    "b"
+  ],
+  "allPlugins": [
+    "config"
+  ],
+  "getOpts": [
+    "options",
+    "all"
+  ],
+  "createDescriptors": [
+    "chart",
+    "param",
+    "options",
+    "all"
+  ],
+  "pluginOpts": [
+    "config",
+    "param",
+    "opts",
+    "context"
+  ],
+  "getIndexAxis": [
+    "type",
+    "options"
+  ],
+  "getAxisFromDefaultScaleID": [
+    "id",
+    "indexAxis"
+  ],
+  "getDefaultScaleIDFromAxis": [
+    "axis",
+    "indexAxis"
+  ],
+  "idMatchesAxis": [
+    "id"
+  ],
+  "axisFromPosition": [
+    "position"
+  ],
+  "determineAxis": [
+    "id",
+    "param"
+  ],
+  "getAxisFromDataset": [
+    "id",
+    "axis",
+    "dataset"
+  ],
+  "retrieveAxisFromDatasets": [
+    "id",
+    "config"
+  ],
+  "mergeScaleConfig": [
+    "config",
+    "options"
+  ],
+  "initOptions": [
+    "config"
+  ],
+  "initData": [
+    "data"
+  ],
+  "initConfig": [
+    "config"
+  ],
+  "cachedKeys": [
+    "cacheKey",
+    "generate"
+  ],
+  "addIfFound": [
+    "set",
+    "obj",
+    "key"
+  ],
+  "Config": {
+    "constructor": [
+      "config"
+    ],
+    "_config": [],
+    "_scopeCache": [],
+    "_resolverCache": [],
+    "platform": [],
+    "type": [],
+    "data": [],
+    "options": [],
+    "plugins": [],
+    "update": [],
+    "clearCache": [],
+    "datasetScopeKeys": [
+      "datasetType"
+    ],
+    "datasetAnimationScopeKeys": [
+      "datasetType",
+      "transition"
+    ],
+    "datasetElementScopeKeys": [
+      "datasetType",
+      "elementType"
+    ],
+    "pluginScopeKeys": [
+      "plugin"
+    ],
+    "_cachedScopes": [],
+    "getOptionScopes": [
+      "mainScope",
+      "keyLists",
+      "resetCache"
+    ],
+    "chartOptionScopes": [],
+    "resolveNamedOptions": [
+      "scopes",
+      "names",
+      "context",
+      "prefixes"
+    ],
+    "createResolver": [
+      "scopes",
+      "context",
+      "prefixes",
+      "descriptorDefaults"
+    ]
+  },
+  "getResolver": [
+    "resolverCache",
+    "scopes",
+    "prefixes"
+  ],
+  "hasFunction": [
+    "value"
+  ],
+  "needContext": [
+    "proxy",
+    "names"
+  ],
+  "positionIsHorizontal": [
+    "position",
+    "axis"
+  ],
+  "compare2Level": [
+    "l1",
+    "l2"
+  ],
+  "onAnimationsComplete": [
+    "context"
+  ],
+  "onAnimationProgress": [
+    "context"
+  ],
+  "getCanvas": [
+    "item"
+  ],
+  "getChart": [
+    "key"
+  ],
+  "moveNumericKeys": [
+    "obj",
+    "start",
+    "move"
+  ],
+  "determineLastEvent": [
+    "e",
+    "lastEvent",
+    "inChartArea",
+    "isClick"
+  ],
+  "Chart": {
+    "platform": [],
+    "id": [],
+    "canvas": [],
+    "ctx": [],
+    "config": [],
+    "width": [],
+    "height": [],
+    "aspectRatio": [],
+    "boxes": [],
+    "currentDevicePixelRatio": [],
+    "chartArea": [],
+    "scales": [],
+    "attached": [],
+    "legend": [],
+    "tooltip": [],
+    "data": [],
+    "options": [],
+    "constructor": [
+      "item",
+      "config"
+    ],
+    "clear": [],
+    "stop": [],
+    "resize": [
+      "width",
+      "height"
+    ],
+    "ensureScalesHaveIDs": [],
+    "buildOrUpdateScales": [],
+    "buildOrUpdateControllers": [],
+    "reset": [],
+    "update": [
+      "mode"
+    ],
+    "render": [],
+    "draw": [],
+    "isPointInArea": [
+      "point"
+    ],
+    "getElementsAtEventForMode": [
+      "e",
+      "mode",
+      "options",
+      "useFinalPosition"
+    ],
+    "getSortedVisibleDatasetMetas": [],
+    "getDatasetMeta": [
+      "datasetIndex"
+    ],
+    "getVisibleDatasetCount": [],
+    "isDatasetVisible": [
+      "datasetIndex"
+    ],
+    "setDatasetVisibility": [
+      "datasetIndex",
+      "visible"
+    ],
+    "toggleDataVisibility": [
+      "index"
+    ],
+    "getDataVisibility": [
+      "index"
+    ],
+    "hide": [
+      "datasetIndex",
+      "dataIndex"
+    ],
+    "show": [
+      "datasetIndex",
+      "dataIndex"
+    ],
+    "getActiveElements": [],
+    "setActiveElements": [
+      "active"
+    ],
+    "destroy": [],
+    "toBase64Image": [
+      "type",
+      "quality"
+    ],
+    "bindEvents": [],
+    "unbindEvents": [],
+    "updateHoverStyle": [
+      "items",
+      "mode",
+      "enabled"
+    ],
+    "notifyPlugins": [
+      "hook",
+      "args"
+    ],
+    "isPluginEnabled": [
+      "pluginId"
+    ],
+    "getContext": [],
+    "defaults": [],
+    "overrides": [],
+    "version": [],
+    "instances": [],
+    "registry": [],
+    "getChart": [
+      "key"
+    ],
+    "register": [
+      "param"
+    ],
+    "unregister": [
+      "param"
+    ]
+  },
+  "makeSet": [
+    "idx"
+  ],
+  "_add": [
+    "type",
+    "listener"
+  ],
+  "listener": [
+    "width",
+    "height"
+  ],
+  "_remove": [
+    "type",
+    "listener"
+  ],
+  "attached": [],
+  "eventFilter": [
+    "plugin"
+  ],
+  "invalidatePlugins": [],
+  "clipSelf": [
+    "ctx",
+    "element",
+    "endAngle"
+  ],
+  "clipArc": [
+    "ctx",
+    "element",
+    "endAngle"
+  ],
+  "toRadiusCorners": [
+    "value"
+  ],
+  "parseBorderRadius$1": [
+    "arc",
+    "innerRadius",
+    "outerRadius",
+    "angleDelta"
+  ],
+  "computeOuterLimit": [
+    "val"
+  ],
+  "rThetaToXY": [
+    "r",
+    "theta",
+    "x",
+    "y"
+  ],
+  "pathArc": [
+    "ctx",
+    "element",
+    "offset",
+    "spacing",
+    "end",
+    "circular"
+  ],
+  "drawArc": [
+    "ctx",
+    "element",
+    "offset",
+    "spacing",
+    "circular"
+  ],
+  "drawBorder": [
+    "ctx",
+    "element",
+    "offset",
+    "spacing",
+    "circular"
+  ],
+  "ArcElement": {
+    "id": [],
+    "defaults": [],
+    "defaultRoutes": [],
+    "descriptors": [],
+    "circumference": [],
+    "endAngle": [],
+    "fullCircles": [],
+    "innerRadius": [],
+    "outerRadius": [],
+    "pixelMargin": [],
+    "startAngle": [],
+    "constructor": [
+      "cfg"
+    ],
+    "inRange": [
+      "chartX",
+      "chartY",
+      "useFinalPosition"
+    ],
+    "getCenterPoint": [
+      "useFinalPosition"
+    ],
+    "tooltipPosition": [
+      "useFinalPosition"
+    ],
+    "draw": [
+      "ctx"
+    ]
+  },
+  "setStyle": [
+    "ctx",
+    "options",
+    "param"
+  ],
+  "lineTo": [
+    "ctx",
+    "previous",
+    "target"
+  ],
+  "getLineMethod": [
+    "options"
+  ],
+  "pathVars": [
+    "points",
+    "segment",
+    "param"
+  ],
+  "pathSegment": [
+    "ctx",
+    "line",
+    "segment",
+    "params"
+  ],
+  "fastPathSegment": [
+    "ctx",
+    "line",
+    "segment",
+    "params"
+  ],
+  "pointIndex": [
+    "index"
+  ],
+  "drawX": [],
+  "_getSegmentMethod": [
+    "line"
+  ],
+  "_getInterpolationMethod": [
+    "options"
+  ],
+  "strokePathWithCache": [
+    "ctx",
+    "line",
+    "start",
+    "count"
+  ],
+  "strokePathDirect": [
+    "ctx",
+    "line",
+    "start",
+    "count"
+  ],
+  "draw": [
+    "ctx",
+    "line",
+    "start",
+    "count"
+  ],
+  "LineElement": {
+    "id": [],
+    "defaults": [],
+    "descriptors": [],
+    "constructor": [
+      "cfg"
+    ],
+    "animated": [],
+    "options": [],
+    "_chart": [],
+    "_loop": [],
+    "_fullLoop": [],
+    "_path": [],
+    "_points": [],
+    "_segments": [],
+    "_decimated": [],
+    "_pointsUpdated": [],
+    "_datasetIndex": [],
+    "updateControlPoints": [
+      "chartArea",
+      "indexAxis"
+    ],
+    "points": [],
+    "segments": [],
+    "first": [],
+    "last": [],
+    "interpolate": [
+      "point",
+      "property"
+    ],
+    "pathSegment": [
+      "ctx",
+      "segment",
+      "params"
+    ],
+    "path": [
+      "ctx",
+      "start",
+      "count"
+    ],
+    "draw": [
+      "ctx",
+      "chartArea",
+      "start",
+      "count"
+    ]
+  },
+  "inRange$1": [
+    "el",
+    "pos",
+    "axis",
+    "useFinalPosition"
+  ],
+  "PointElement": {
+    "id": [],
+    "parsed": [],
+    "skip": [],
+    "stop": [],
+    "defaults": [],
+    "defaultRoutes": [],
+    "constructor": [
+      "cfg"
+    ],
+    "inRange": [
+      "mouseX",
+      "mouseY",
+      "useFinalPosition"
+    ],
+    "inXRange": [
+      "mouseX",
+      "useFinalPosition"
+    ],
+    "inYRange": [
+      "mouseY",
+      "useFinalPosition"
+    ],
+    "getCenterPoint": [
+      "useFinalPosition"
+    ],
+    "size": [
+      "options"
+    ],
+    "draw": [
+      "ctx",
+      "area"
+    ],
+    "getRange": []
+  },
+  "getBarBounds": [
+    "bar",
+    "useFinalPosition"
+  ],
+  "skipOrLimit": [
+    "skip",
+    "value",
+    "min",
+    "max"
+  ],
+  "parseBorderWidth": [
+    "bar",
+    "maxW",
+    "maxH"
+  ],
+  "parseBorderRadius": [
+    "bar",
+    "maxW",
+    "maxH"
+  ],
+  "boundingRects": [
+    "bar"
+  ],
+  "inRange": [
+    "bar",
+    "x",
+    "y",
+    "useFinalPosition"
+  ],
+  "hasRadius": [
+    "radius"
+  ],
+  "addNormalRectPath": [
+    "ctx",
+    "rect"
+  ],
+  "inflateRect": [
+    "rect",
+    "amount",
+    "param"
+  ],
+  "BarElement": {
+    "id": [],
+    "defaults": [],
+    "constructor": [
+      "cfg"
+    ],
+    "options": [],
+    "horizontal": [],
+    "base": [],
+    "width": [],
+    "height": [],
+    "inflateAmount": [],
+    "draw": [
+      "ctx"
+    ],
+    "inRange": [
+      "mouseX",
+      "mouseY",
+      "useFinalPosition"
+    ],
+    "inXRange": [
+      "mouseX",
+      "useFinalPosition"
+    ],
+    "inYRange": [
+      "mouseY",
+      "useFinalPosition"
+    ],
+    "getCenterPoint": [
+      "useFinalPosition"
+    ],
+    "getRange": [
+      "axis"
+    ]
+  },
+  "getBorderColor": [
+    "i"
+  ],
+  "getBackgroundColor": [
+    "i"
+  ],
+  "colorizeDefaultDataset": [
+    "dataset",
+    "i"
+  ],
+  "colorizeDoughnutDataset": [
+    "dataset",
+    "i"
+  ],
+  "colorizePolarAreaDataset": [
+    "dataset",
+    "i"
+  ],
+  "getColorizer": [
+    "chart"
+  ],
+  "containsColorsDefinitions": [
+    "descriptors"
+  ],
+  "containsColorsDefinition": [
+    "descriptor"
+  ],
+  "containsDefaultColorsDefenitions": [],
+  "lttbDecimation": [
+    "data",
+    "start",
+    "count",
+    "availableWidth",
+    "options"
+  ],
+  "minMaxDecimation": [
+    "data",
+    "start",
+    "count",
+    "availableWidth"
+  ],
+  "cleanDecimatedDataset": [
+    "dataset"
+  ],
+  "cleanDecimatedData": [
+    "chart"
+  ],
+  "getStartAndCountOfVisiblePointsSimplified": [
+    "meta",
+    "points"
+  ],
+  "_segments": [
+    "line",
+    "target",
+    "property"
+  ],
+  "_getBounds": [
+    "property",
+    "first",
+    "last",
+    "loop"
+  ],
+  "_pointsFromSegments": [
+    "boundary",
+    "line"
+  ],
+  "_findSegmentEnd": [
+    "start",
+    "end",
+    "points"
+  ],
+  "_getEdge": [
+    "a",
+    "b",
+    "prop",
+    "fn"
+  ],
+  "_createBoundaryLine": [
+    "boundary",
+    "line"
+  ],
+  "_shouldApplyFill": [
+    "source"
+  ],
+  "_resolveTarget": [
+    "sources",
+    "index",
+    "propagate"
+  ],
+  "_decodeFill": [
+    "line",
+    "index",
+    "count"
+  ],
+  "decodeTargetIndex": [
+    "firstCh",
+    "index",
+    "target",
+    "count"
+  ],
+  "_getTargetPixel": [
+    "fill",
+    "scale"
+  ],
+  "_getTargetValue": [
+    "fill",
+    "scale",
+    "startValue"
+  ],
+  "parseFillOption": [
+    "line"
+  ],
+  "_buildStackLine": [
+    "source"
+  ],
+  "getLinesBelow": [
+    "scale",
+    "index"
+  ],
+  "addPointsBelow": [
+    "points",
+    "sourcePoint",
+    "linesBelow"
+  ],
+  "findPoint": [
+    "line",
+    "sourcePoint",
+    "property"
+  ],
+  "simpleArc": {
+    "constructor": [
+      "opts"
+    ],
+    "x": [],
+    "y": [],
+    "radius": [],
+    "pathSegment": [
+      "ctx",
+      "bounds",
+      "opts"
+    ],
+    "interpolate": [
+      "point"
+    ]
+  },
+  "_getTarget": [
+    "source"
+  ],
+  "getLineByIndex": [
+    "chart",
+    "index"
+  ],
+  "computeBoundary": [
+    "source"
+  ],
+  "computeLinearBoundary": [
+    "source"
+  ],
+  "computeCircularBoundary": [
+    "source"
+  ],
+  "_drawfill": [
+    "ctx",
+    "source",
+    "area"
+  ],
+  "doFill": [
+    "ctx",
+    "cfg"
+  ],
+  "clipVertical": [
+    "ctx",
+    "target",
+    "clipY"
+  ],
+  "clipHorizontal": [
+    "ctx",
+    "target",
+    "clipX"
+  ],
+  "fill": [
+    "ctx",
+    "cfg"
+  ],
+  "clipBounds": [
+    "ctx",
+    "scale",
+    "clip",
+    "bounds"
+  ],
+  "interpolatedLineTo": [
+    "ctx",
+    "target",
+    "point",
+    "property"
+  ],
+  "getBoxSize": [
+    "labelOpts",
+    "fontSize"
+  ],
+  "itemsEqual": [
+    "a",
+    "b"
+  ],
+  "Legend": {
+    "constructor": [
+      "config"
+    ],
+    "update": [
+      "maxWidth",
+      "maxHeight",
+      "margins"
+    ],
+    "setDimensions": [],
+    "buildLabels": [],
+    "fit": [],
+    "_fitRows": [
+      "titleHeight",
+      "fontSize",
+      "boxWidth",
+      "itemHeight"
+    ],
+    "_fitCols": [
+      "titleHeight",
+      "labelFont",
+      "boxWidth",
+      "_itemHeight"
+    ],
+    "adjustHitBoxes": [],
+    "isHorizontal": [],
+    "draw": [],
+    "_draw": [],
+    "drawTitle": [],
+    "_computeTitleHeight": [],
+    "_getLegendItemAt": [
+      "x",
+      "y"
+    ],
+    "handleEvent": [
+      "e"
+    ]
+  },
+  "drawLegendBox": [
+    "x",
+    "y",
+    "legendItem"
+  ],
+  "fillText": [
+    "x",
+    "y",
+    "legendItem"
+  ],
+  "calculateItemSize": [
+    "boxWidth",
+    "labelFont",
+    "ctx",
+    "legendItem",
+    "_itemHeight"
+  ],
+  "calculateItemWidth": [
+    "legendItem",
+    "boxWidth",
+    "labelFont",
+    "ctx"
+  ],
+  "calculateItemHeight": [
+    "_itemHeight",
+    "legendItem",
+    "fontLineHeight"
+  ],
+  "calculateLegendItemHeight": [
+    "legendItem",
+    "fontLineHeight"
+  ],
+  "isListened": [
+    "type",
+    "opts"
+  ],
+  "Title": {
+    "constructor": [
+      "config"
+    ],
+    "update": [
+      "maxWidth",
+      "maxHeight"
+    ],
+    "isHorizontal": [],
+    "_drawArgs": [
+      "offset"
+    ],
+    "draw": []
+  },
+  "createTitle": [
+    "chart",
+    "titleOpts"
+  ],
+  "pushOrConcat": [
+    "base",
+    "toPush"
+  ],
+  "splitNewlines": [
+    "str"
+  ],
+  "createTooltipItem": [
+    "chart",
+    "item"
+  ],
+  "getTooltipSize": [
+    "tooltip",
+    "options"
+  ],
+  "maxLineWidth": [
+    "line"
+  ],
+  "determineYAlign": [
+    "chart",
+    "size"
+  ],
+  "doesNotFitWithAlign": [
+    "xAlign",
+    "chart",
+    "options",
+    "size"
+  ],
+  "determineXAlign": [
+    "chart",
+    "options",
+    "size",
+    "yAlign"
+  ],
+  "determineAlignment": [
+    "chart",
+    "options",
+    "size"
+  ],
+  "alignX": [
+    "size",
+    "xAlign"
+  ],
+  "alignY": [
+    "size",
+    "yAlign",
+    "paddingAndSize"
+  ],
+  "getBackgroundPoint": [
+    "options",
+    "size",
+    "alignment",
+    "chart"
+  ],
+  "getAlignedX": [
+    "tooltip",
+    "align",
+    "options"
+  ],
+  "getBeforeAfterBodyLines": [
+    "callback"
+  ],
+  "createTooltipContext": [
+    "parent",
+    "tooltip",
+    "tooltipItems"
+  ],
+  "overrideCallbacks": [
+    "callbacks",
+    "context"
+  ],
+  "invokeCallbackWithFallback": [
+    "callbacks",
+    "name",
+    "ctx",
+    "arg"
+  ],
+  "Tooltip": {
+    "positioners": [],
+    "constructor": [
+      "config"
+    ],
+    "initialize": [
+      "options"
+    ],
+    "_resolveAnimations": [],
+    "getContext": [],
+    "getTitle": [
+      "context",
+      "options"
+    ],
+    "getBeforeBody": [
+      "tooltipItems",
+      "options"
+    ],
+    "getBody": [
+      "tooltipItems",
+      "options"
+    ],
+    "getAfterBody": [
+      "tooltipItems",
+      "options"
+    ],
+    "getFooter": [
+      "tooltipItems",
+      "options"
+    ],
+    "_createItems": [
+      "options"
+    ],
+    "update": [
+      "changed",
+      "replay"
+    ],
+    "drawCaret": [
+      "tooltipPoint",
+      "ctx",
+      "size",
+      "options"
+    ],
+    "getCaretPosition": [
+      "tooltipPoint",
+      "size",
+      "options"
+    ],
+    "drawTitle": [
+      "pt",
+      "ctx",
+      "options"
+    ],
+    "_drawColorBox": [
+      "ctx",
+      "pt",
+      "i",
+      "rtlHelper",
+      "options"
+    ],
+    "drawBody": [
+      "pt",
+      "ctx",
+      "options"
+    ],
+    "drawFooter": [
+      "pt",
+      "ctx",
+      "options"
+    ],
+    "drawBackground": [
+      "pt",
+      "ctx",
+      "tooltipSize",
+      "options"
+    ],
+    "_updateAnimationTarget": [
+      "options"
+    ],
+    "_willRender": [],
+    "draw": [
+      "ctx"
+    ],
+    "getActiveElements": [],
+    "setActiveElements": [
+      "activeElements",
+      "eventPosition"
+    ],
+    "handleEvent": [
+      "e",
+      "replay",
+      "param"
+    ],
+    "_getActiveElements": [
+      "e",
+      "lastActive",
+      "replay",
+      "inChartArea"
+    ],
+    "_positionChanged": [
+      "active",
+      "e"
+    ]
+  },
+  "fillLineOfText": [
+    "line"
+  ],
+  "addIfString": [
+    "labels",
+    "raw",
+    "index",
+    "addedLabels"
+  ],
+  "findOrAddLabel": [
+    "labels",
+    "raw",
+    "index",
+    "addedLabels"
+  ],
+  "validIndex": [
+    "index",
+    "max"
+  ],
+  "_getLabelForValue": [
+    "value"
+  ],
+  "CategoryScale": {
+    "id": [],
+    "defaults": [],
+    "_startValue": [],
+    "_valueRange": [],
+    "_addedLabels": [],
+    "init": [
+      "scaleOptions"
+    ],
+    "parse": [
+      "raw",
+      "index"
+    ],
+    "buildTicks": [],
+    "getLabelForValue": [
+      "value"
+    ],
+    "getPixelForValue": [
+      "value"
+    ],
+    "getPixelForTick": [
+      "index"
+    ],
+    "getValueForPixel": [
+      "pixel"
+    ]
+  },
+  "generateTicks$1": [
+    "generationOptions",
+    "dataRange"
+  ],
+  "relativeLabelSize": [
+    "value",
+    "minSpacing",
+    "param"
+  ],
+  "LinearScaleBase": {
+    "start": [],
+    "end": [],
+    "_startValue": [],
+    "_endValue": [],
+    "_valueRange": [],
+    "parse": [
+      "raw",
+      "index"
+    ],
+    "handleTickRangeOptions": [],
+    "getTickLimit": [],
+    "computeTickLimit": [],
+    "getLabelForValue": [
+      "value"
+    ]
+  },
+  "setMin": [
+    "v"
+  ],
+  "setMax": [
+    "v"
+  ],
+  "LinearScale": {
+    "id": [],
+    "defaults": [],
+    "getPixelForValue": [
+      "value"
+    ],
+    "getValueForPixel": [
+      "pixel"
+    ]
+  },
+  "log10Floor": [
+    "v"
+  ],
+  "changeExponent": [
+    "v",
+    "m"
+  ],
+  "isMajor": [
+    "tickVal"
+  ],
+  "steps": [
+    "min",
+    "max",
+    "rangeExp"
+  ],
+  "startExp": [
+    "min",
+    "max"
+  ],
+  "generateTicks": [
+    "generationOptions",
+    "param"
+  ],
+  "LogarithmicScale": {
+    "id": [],
+    "defaults": [],
+    "start": [],
+    "end": [],
+    "_startValue": [],
+    "_valueRange": [],
+    "parse": [
+      "raw",
+      "index"
+    ],
+    "_zero": [],
+    "handleTickRangeOptions": [],
+    "getLabelForValue": [
+      "value"
+    ],
+    "getPixelForValue": [
+      "value"
+    ],
+    "getValueForPixel": [
+      "pixel"
+    ]
+  },
+  "getTickBackdropHeight": [
+    "opts"
+  ],
+  "measureLabelSize": [
+    "ctx",
+    "font",
+    "label"
+  ],
+  "determineLimits": [
+    "angle",
+    "pos",
+    "size",
+    "min",
+    "max"
+  ],
+  "fitWithPointLabels": [
+    "scale"
+  ],
+  "updateLimits": [
+    "limits",
+    "orig",
+    "angle",
+    "hLimits",
+    "vLimits"
+  ],
+  "createPointLabelItem": [
+    "scale",
+    "index",
+    "itemOpts"
+  ],
+  "isNotOverlapped": [
+    "item",
+    "area"
+  ],
+  "buildPointLabelItems": [
+    "scale",
+    "labelSizes",
+    "padding"
+  ],
+  "getTextAlignForAngle": [
+    "angle"
+  ],
+  "leftForTextAlign": [
+    "x",
+    "w",
+    "align"
+  ],
+  "yForAngle": [
+    "y",
+    "h",
+    "angle"
+  ],
+  "drawPointLabelBox": [
+    "ctx",
+    "opts",
+    "item"
+  ],
+  "drawPointLabels": [
+    "scale",
+    "labelCount"
+  ],
+  "pathRadiusLine": [
+    "scale",
+    "radius",
+    "circular",
+    "labelCount"
+  ],
+  "drawRadiusLine": [
+    "scale",
+    "gridLineOpts",
+    "radius",
+    "labelCount",
+    "borderOpts"
+  ],
+  "createPointLabelContext": [
+    "parent",
+    "index",
+    "label"
+  ],
+  "RadialLinearScale": {
+    "id": [],
+    "defaults": [],
+    "defaultRoutes": [],
+    "descriptors": [],
+    "xCenter": [],
+    "yCenter": [],
+    "drawingArea": [],
+    "_pointLabels": [],
+    "_pointLabelItems": [],
+    "_padding": [],
+    "generateTickLabels": [
+      "ticks"
+    ],
+    "setCenterPoint": [
+      "leftMovement",
+      "rightMovement",
+      "topMovement",
+      "bottomMovement"
+    ],
+    "getIndexAngle": [
+      "index"
+    ],
+    "getDistanceFromCenterForValue": [
+      "value"
+    ],
+    "getValueForDistanceFromCenter": [
+      "distance"
+    ],
+    "getPointLabelContext": [
+      "index"
+    ],
+    "getPointPosition": [
+      "index",
+      "distanceFromCenter",
+      "additionalAngle"
+    ],
+    "getPointPositionForValue": [
+      "index",
+      "value"
+    ],
+    "getBasePosition": [
+      "index"
+    ],
+    "getPointLabelPosition": [
+      "index"
+    ],
+    "drawGrid": [],
+    "drawLabels": []
+  },
+  "sorter": [
+    "a",
+    "b"
+  ],
+  "parse": [
+    "scale",
+    "input"
+  ],
+  "determineUnitForAutoTicks": [
+    "minUnit",
+    "min",
+    "max",
+    "capacity"
+  ],
+  "determineUnitForFormatting": [
+    "scale",
+    "numTicks",
+    "minUnit",
+    "min",
+    "max"
+  ],
+  "determineMajorUnit": [
+    "unit"
+  ],
+  "addTick": [
+    "ticks",
+    "time",
+    "timestamps"
+  ],
+  "setMajorTicks": [
+    "scale",
+    "ticks",
+    "map",
+    "majorUnit"
+  ],
+  "ticksFromTimestamps": [
+    "scale",
+    "values",
+    "majorUnit"
+  ],
+  "TimeScale": {
+    "id": [],
+    "defaults": [],
+    "constructor": [
+      "props"
+    ],
+    "_cache": [],
+    "_unit": [],
+    "_majorUnit": [],
+    "_offsets": [],
+    "_normalized": [],
+    "_parseOpts": [],
+    "init": [
+      "scaleOpts",
+      "opts"
+    ],
+    "_adapter": [],
+    "parse": [
+      "raw",
+      "index"
+    ],
+    "_getLabelBounds": [],
+    "initOffsets": [
+      "timestamps"
+    ],
+    "_generate": [],
+    "getLabelForValue": [
+      "value"
+    ],
+    "format": [
+      "value",
+      "format"
+    ],
+    "_tickFormatFunction": [],
+    "generateTickLabels": [
+      "ticks"
+    ],
+    "getDecimalForValue": [
+      "value"
+    ],
+    "getPixelForValue": [
+      "value"
+    ],
+    "getValueForPixel": [
+      "pixel"
+    ],
+    "_getLabelSize": [],
+    "_getLabelCapacity": [],
+    "getDataTimestamps": [],
+    "getLabelTimestamps": [],
+    "normalize": [
+      "values"
+    ]
+  },
+  "_applyBounds": [
+    "bounds"
+  ],
+  "interpolate": [
+    "table",
+    "val",
+    "reverse"
+  ],
+  "TimeSeriesScale": {
+    "_table": [],
+    "_minPos": [],
+    "_tableRange": [],
+    "initOffsets": [],
+    "buildLookupTable": [
+      "timestamps"
+    ],
+    "_generate": [],
+    "_getTimestampsForTable": []
+  },
+  "e": [],
+  "s": [
+    "e"
+  ],
+  "n": [
+    "e"
+  ],
+  "o": [
+    "t"
+  ],
+  "a": [
+    "t"
+  ],
+  "r": [
+    "t"
+  ],
+  "l": [
+    "t"
+  ],
+  "h": [
+    "t"
+  ],
+  "c": [
+    "t",
+    "e"
+  ],
+  "d": [
+    "t",
+    "e",
+    "i"
+  ],
+  "u": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "f": [
+    "t",
+    "e",
+    "s"
+  ],
+  "g": [
+    "t",
+    "e",
+    "s"
+  ],
+  "p": [
+    "i"
+  ],
+  "m": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "x": [
+    "t"
+  ],
+  "b": [
+    "t"
+  ],
+  "_": [],
+  "v": [],
+  "M": [
+    "t",
+    "e"
+  ],
+  "w": [
+    "t"
+  ],
+  "k": [
+    "t"
+  ],
+  "S": [
+    "t"
+  ],
+  "P": [
+    "t"
+  ],
+  "D": [
+    "t"
+  ],
+  "V": [
+    "t",
+    "e",
+    "i"
+  ],
+  "B": [
+    "t"
+  ],
+  "W": [
+    "t"
+  ],
+  "N": [
+    "t"
+  ],
+  "H": [
+    "t",
+    "e"
+  ],
+  "j": [
+    "t",
+    "e",
+    "i"
+  ],
+  "$": [
+    "t"
+  ],
+  "Y": [
+    "t"
+  ],
+  "U": [
+    "t"
+  ],
+  "X": [
+    "t",
+    "e"
+  ],
+  "q": [
+    "t",
+    "e"
+  ],
+  "K": [
+    "t",
+    "e"
+  ],
+  "G": [
+    "t"
+  ],
+  "J": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Z": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Q": [
+    "t"
+  ],
+  "tt": [
+    "t",
+    "e",
+    "i",
+    "param"
+  ],
+  "et": [
+    "t",
+    "e",
+    "i"
+  ],
+  "it": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "st": [
+    "t",
+    "e",
+    "i"
+  ],
+  "nt": [
+    "t",
+    "e",
+    "i"
+  ],
+  "at": [
+    "t",
+    "e"
+  ],
+  "rt": [
+    "t",
+    "e"
+  ],
+  "lt": [
+    "t"
+  ],
+  "ct": [
+    "t",
+    "e"
+  ],
+  "dt": [
+    "t",
+    "e"
+  ],
+  "ut": [
+    "t"
+  ],
+  "ft": [
+    "t",
+    "e",
+    "i"
+  ],
+  "gt": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "pt": [
+    "t",
+    "e",
+    "i"
+  ],
+  "mt": [
+    "t"
+  ],
+  "xt": {
+    "constructor": [],
+    "_notify": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "_refresh": [],
+    "_update": [
+      "param"
+    ],
+    "_getAnims": [
+      "t"
+    ],
+    "listen": [
+      "t",
+      "e",
+      "i"
+    ],
+    "add": [
+      "t",
+      "e"
+    ],
+    "has": [
+      "t"
+    ],
+    "start": [
+      "t"
+    ],
+    "running": [
+      "t"
+    ],
+    "stop": [
+      "t"
+    ],
+    "remove": [
+      "t"
+    ]
+  },
+  "_t": [
+    "t"
+  ],
+  "yt": [
+    "t",
+    "e",
+    "i"
+  ],
+  "vt": [
+    "t"
+  ],
+  "Mt": [
+    "t"
+  ],
+  "wt": [
+    "t"
+  ],
+  "kt": [
+    "t"
+  ],
+  "Dt": [
+    "t"
+  ],
+  "Ct": [
+    "t"
+  ],
+  "Ot": [
+    "t"
+  ],
+  "At": [
+    "t"
+  ],
+  "Lt": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Et": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Rt": [
+    "t",
+    "e",
+    "i"
+  ],
+  "It": [
+    "t"
+  ],
+  "zt": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Ft": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Vt": [
+    "t"
+  ],
+  "Bt": [
+    "t"
+  ],
+  "jt": [
+    "t"
+  ],
+  "Yt": [
+    "t"
+  ],
+  "Ut": [
+    "t"
+  ],
+  "Xt": [
+    "t",
+    "e",
+    "i"
+  ],
+  "qt": [
+    "t",
+    "e"
+  ],
+  "Kt": [
+    "t"
+  ],
+  "Gt": [
+    "t"
+  ],
+  "Jt": {
+    "constructor": [
+      "t"
+    ],
+    "valid": [],
+    "rgb": [
+      "t"
+    ],
+    "rgbString": [],
+    "hexString": [],
+    "hslString": [],
+    "mix": [
+      "t",
+      "e"
+    ],
+    "interpolate": [
+      "t",
+      "e"
+    ],
+    "clone": [],
+    "alpha": [
+      "t"
+    ],
+    "clearer": [
+      "t"
+    ],
+    "greyscale": [],
+    "opaquer": [
+      "t"
+    ],
+    "negate": [],
+    "lighten": [
+      "t"
+    ],
+    "darken": [
+      "t"
+    ],
+    "saturate": [
+      "t"
+    ],
+    "desaturate": [
+      "t"
+    ],
+    "rotate": [
+      "t"
+    ]
+  },
+  "Zt": [
+    "t"
+  ],
+  "Qt": [
+    "t"
+  ],
+  "te": [
+    "t"
+  ],
+  "ne": [
+    "t",
+    "e",
+    "i"
+  ],
+  "he": [
+    "t",
+    "e"
+  ],
+  "ce": [
+    "t",
+    "e",
+    "i"
+  ],
+  "de": {
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "set": [
+      "t",
+      "e"
+    ],
+    "get": [
+      "t"
+    ],
+    "describe": [
+      "t",
+      "e"
+    ],
+    "override": [
+      "t",
+      "e"
+    ],
+    "route": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "apply": [
+      "t"
+    ]
+  },
+  "fe": [],
+  "ge": [
+    "t"
+  ],
+  "pe": [
+    "t",
+    "e",
+    "i"
+  ],
+  "me": [
+    "t"
+  ],
+  "xe": [
+    "t",
+    "e"
+  ],
+  "_e": [
+    "t",
+    "e",
+    "i"
+  ],
+  "ye": [
+    "t",
+    "e",
+    "i"
+  ],
+  "ve": [
+    "t",
+    "e"
+  ],
+  "Me": [
+    "t"
+  ],
+  "we": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "ke": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Pe": [
+    "t",
+    "e"
+  ],
+  "De": [
+    "t"
+  ],
+  "Ce": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n"
+  ],
+  "Oe": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Ae": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Te": [
+    "t",
+    "e"
+  ],
+  "Le": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Ee": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n"
+  ],
+  "Re": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Ie": [
+    "t",
+    "e"
+  ],
+  "ze": [
+    "t"
+  ],
+  "Fe": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n"
+  ],
+  "Ve": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Be": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n"
+  ],
+  "We": [
+    "t",
+    "e"
+  ],
+  "Ne": [
+    "t",
+    "e",
+    "i",
+    "o",
+    "a",
+    "param"
+  ],
+  "He": [
+    "t",
+    "e"
+  ],
+  "je": [
+    "t",
+    "param",
+    "i",
+    "s",
+    "param"
+  ],
+  "$e": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Ye": [
+    "t",
+    "param"
+  ],
+  "Ue": [
+    "t",
+    "e"
+  ],
+  "Xe": [
+    "t",
+    "e"
+  ],
+  "qe": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Ke": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Ge": [
+    "t",
+    "e"
+  ],
+  "Je": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n"
+  ],
+  "Ze": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Qe": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n"
+  ],
+  "ti": [
+    "t",
+    "e"
+  ],
+  "ei": [
+    "t"
+  ],
+  "ii": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "ni": [
+    "t",
+    "e"
+  ],
+  "oi": [
+    "t"
+  ],
+  "ai": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "ri": [
+    "t",
+    "param"
+  ],
+  "li": [
+    "t",
+    "e",
+    "i"
+  ],
+  "hi": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n"
+  ],
+  "ci": [
+    "t"
+  ],
+  "di": [
+    "t",
+    "e",
+    "i"
+  ],
+  "ui": [
+    "t",
+    "e",
+    "i"
+  ],
+  "gi": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "pi": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "mi": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "_i": [
+    "t",
+    "e"
+  ],
+  "yi": [
+    "t"
+  ],
+  "vi": [
+    "t",
+    "e"
+  ],
+  "Mi": [
+    "t"
+  ],
+  "wi": [
+    "t"
+  ],
+  "ki": [
+    "t"
+  ],
+  "Si": [
+    "t",
+    "e"
+  ],
+  "Pi": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Di": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Ci": [
+    "t",
+    "e"
+  ],
+  "Oi": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Ai": [
+    "t",
+    "e"
+  ],
+  "Ti": [
+    "t",
+    "e"
+  ],
+  "Li": [
+    "t"
+  ],
+  "Ei": [
+    "param"
+  ],
+  "Ri": [
+    "t",
+    "e",
+    "i"
+  ],
+  "y": [
+    "t"
+  ],
+  "Ii": [
+    "t",
+    "e"
+  ],
+  "zi": [
+    "t",
+    "e"
+  ],
+  "Fi": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Vi": [
+    "t"
+  ],
+  "Bi": [
+    "t",
+    "e"
+  ],
+  "Wi": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Ni": [
+    "t",
+    "e"
+  ],
+  "ji": [
+    "t",
+    "e",
+    "i",
+    "n"
+  ],
+  "$i": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n"
+  ],
+  "Yi": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n"
+  ],
+  "Ui": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n",
+    "o"
+  ],
+  "Xi": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n",
+    "o"
+  ],
+  "qi": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n"
+  ],
+  "Ji": [
+    "t",
+    "e"
+  ],
+  "Zi": [
+    "t",
+    "e"
+  ],
+  "Qi": [
+    "t",
+    "e"
+  ],
+  "ts": [
+    "t",
+    "e"
+  ],
+  "es": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "is": [
+    "t",
+    "e"
+  ],
+  "ss": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "ns": [
+    "t",
+    "e"
+  ],
+  "os": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "as": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n"
+  ],
+  "rs": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "i": [
+    "i",
+    "s"
+  ],
+  "hs": {
+    "acquireContext": [
+      "t",
+      "e"
+    ],
+    "releaseContext": [
+      "t"
+    ],
+    "addEventListener": [
+      "t",
+      "e",
+      "i"
+    ],
+    "removeEventListener": [
+      "t",
+      "e",
+      "i"
+    ],
+    "getDevicePixelRatio": [],
+    "getMaximumSize": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "isAttached": [
+      "t"
+    ],
+    "updateConfig": [
+      "t"
+    ]
+  },
+  "cs": {
+    "acquireContext": [
+      "t"
+    ],
+    "updateConfig": [
+      "t"
+    ]
+  },
+  "fs": [
+    "t"
+  ],
+  "ps": [
+    "t",
+    "e",
+    "i"
+  ],
+  "ms": [
+    "t",
+    "e"
+  ],
+  "xs": [
+    "t",
+    "e",
+    "i"
+  ],
+  "bs": [
+    "t",
+    "e",
+    "i"
+  ],
+  "vs": [],
+  "Ms": [
+    "t",
+    "e",
+    "i"
+  ],
+  "ws": [
+    "t",
+    "e",
+    "i"
+  ],
+  "ks": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Ss": {
+    "acquireContext": [
+      "t",
+      "e"
+    ],
+    "releaseContext": [
+      "t"
+    ],
+    "addEventListener": [
+      "t",
+      "e",
+      "i"
+    ],
+    "removeEventListener": [
+      "t",
+      "e"
+    ],
+    "getDevicePixelRatio": [],
+    "getMaximumSize": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "isAttached": [
+      "t"
+    ]
+  },
+  "Ps": [
+    "t"
+  ],
+  "As": {
+    "constructor": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "active": [],
+    "update": [
+      "t",
+      "e",
+      "i"
+    ],
+    "cancel": [],
+    "tick": [
+      "t"
+    ],
+    "wait": [],
+    "_notify": [
+      "t"
+    ]
+  },
+  "Ts": {
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "configure": [
+      "t"
+    ],
+    "_animateOptions": [
+      "t",
+      "e"
+    ],
+    "_createAnimations": [
+      "t",
+      "e"
+    ],
+    "update": [
+      "t",
+      "e"
+    ]
+  },
+  "Ls": [
+    "t",
+    "e"
+  ],
+  "Es": [
+    "t",
+    "e"
+  ],
+  "Rs": [
+    "t",
+    "e",
+    "i",
+    "param"
+  ],
+  "Is": [
+    "t",
+    "e"
+  ],
+  "zs": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Fs": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Vs": [
+    "t",
+    "e"
+  ],
+  "Bs": [
+    "t",
+    "e"
+  ],
+  "Ws": [
+    "t",
+    "e"
+  ],
+  "Ns": [
+    "t"
+  ],
+  "Hs": [
+    "t",
+    "e"
+  ],
+  "js": {
+    "defaults": [],
+    "datasetElementType": [],
+    "dataElementType": [],
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "initialize": [],
+    "updateIndex": [
+      "t"
+    ],
+    "linkScales": [],
+    "getDataset": [],
+    "getMeta": [],
+    "getScaleForId": [
+      "t"
+    ],
+    "_getOtherScale": [
+      "t"
+    ],
+    "reset": [],
+    "_destroy": [],
+    "_dataCheck": [],
+    "addElements": [],
+    "buildOrUpdateElements": [
+      "t"
+    ],
+    "configure": [],
+    "parse": [
+      "t",
+      "e"
+    ],
+    "parsePrimitiveData": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "parseArrayData": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "parseObjectData": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "getParsed": [
+      "t"
+    ],
+    "getDataElement": [
+      "t"
+    ],
+    "applyStack": [
+      "t",
+      "e",
+      "i"
+    ],
+    "updateRangeFromParsed": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "getMinMax": [
+      "t",
+      "e"
+    ],
+    "getAllParsedValues": [
+      "t"
+    ],
+    "getMaxOverflow": [],
+    "getLabelAndValue": [
+      "t"
+    ],
+    "_update": [
+      "t"
+    ],
+    "update": [
+      "t"
+    ],
+    "draw": [],
+    "getStyle": [
+      "t",
+      "e"
+    ],
+    "getContext": [
+      "t",
+      "e",
+      "i"
+    ],
+    "resolveDatasetElementOptions": [
+      "t"
+    ],
+    "resolveDataElementOptions": [
+      "t",
+      "e"
+    ],
+    "_resolveElementOptions": [
+      "t",
+      "param",
+      "i"
+    ],
+    "_resolveAnimations": [
+      "t",
+      "e",
+      "i"
+    ],
+    "getSharedOptions": [
+      "t"
+    ],
+    "includeOptions": [
+      "t",
+      "e"
+    ],
+    "_getSharedOptions": [
+      "t",
+      "e"
+    ],
+    "updateElement": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "updateSharedOptions": [
+      "t",
+      "e",
+      "i"
+    ],
+    "_setStyle": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "removeHoverStyle": [
+      "t",
+      "e",
+      "i"
+    ],
+    "setHoverStyle": [
+      "t",
+      "e",
+      "i"
+    ],
+    "_removeDatasetHoverStyle": [],
+    "_setDatasetHoverStyle": [],
+    "_resyncElements": [
+      "t"
+    ],
+    "_insertElements": [
+      "t",
+      "e",
+      "param"
+    ],
+    "updateElements": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "_removeElements": [
+      "t",
+      "e"
+    ],
+    "_sync": [
+      "t"
+    ],
+    "_onDataPush": [],
+    "_onDataPop": [],
+    "_onDataShift": [],
+    "_onDataSplice": [
+      "t",
+      "e"
+    ],
+    "_onDataUnshift": []
+  },
+  "$s": {
+    "defaults": [],
+    "defaultRoutes": [],
+    "x": [],
+    "y": [],
+    "active": [],
+    "options": [],
+    "$animations": [],
+    "tooltipPosition": [
+      "t"
+    ],
+    "hasValue": [],
+    "getProps": [
+      "t",
+      "e"
+    ]
+  },
+  "Ys": [
+    "t",
+    "e"
+  ],
+  "Us": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n"
+  ],
+  "Xs": [
+    "t",
+    "e",
+    "i"
+  ],
+  "qs": [
+    "t",
+    "e"
+  ],
+  "Ks": [
+    "t",
+    "e"
+  ],
+  "Gs": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Js": [
+    "t"
+  ],
+  "Zs": [
+    "t",
+    "e"
+  ],
+  "Qs": [
+    "t",
+    "e",
+    "i"
+  ],
+  "tn": {
+    "constructor": [
+      "t"
+    ],
+    "init": [
+      "t"
+    ],
+    "parse": [
+      "t",
+      "e"
+    ],
+    "getUserBounds": [],
+    "getMinMax": [
+      "t"
+    ],
+    "getPadding": [],
+    "getTicks": [],
+    "getLabels": [],
+    "getLabelItems": [
+      "param"
+    ],
+    "beforeLayout": [],
+    "beforeUpdate": [],
+    "update": [
+      "t",
+      "e",
+      "i"
+    ],
+    "configure": [],
+    "afterUpdate": [],
+    "beforeSetDimensions": [],
+    "setDimensions": [],
+    "afterSetDimensions": [],
+    "_callHooks": [
+      "t"
+    ],
+    "beforeDataLimits": [],
+    "determineDataLimits": [],
+    "afterDataLimits": [],
+    "beforeBuildTicks": [],
+    "buildTicks": [],
+    "afterBuildTicks": [],
+    "beforeTickToLabelConversion": [],
+    "generateTickLabels": [
+      "t"
+    ],
+    "afterTickToLabelConversion": [],
+    "beforeCalculateLabelRotation": [],
+    "calculateLabelRotation": [],
+    "afterCalculateLabelRotation": [],
+    "afterAutoSkip": [],
+    "beforeFit": [],
+    "fit": [],
+    "_calculatePadding": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "_handleMargins": [],
+    "afterFit": [],
+    "isHorizontal": [],
+    "isFullSize": [],
+    "_convertTicksToLabels": [
+      "t"
+    ],
+    "_getLabelSizes": [],
+    "_computeLabelSizes": [
+      "t",
+      "e",
+      "i"
+    ],
+    "getLabelForValue": [
+      "t"
+    ],
+    "getPixelForValue": [
+      "t",
+      "e"
+    ],
+    "getValueForPixel": [
+      "t"
+    ],
+    "getPixelForTick": [
+      "t"
+    ],
+    "getPixelForDecimal": [
+      "t"
+    ],
+    "getDecimalForPixel": [
+      "t"
+    ],
+    "getBasePixel": [],
+    "getBaseValue": [],
+    "getContext": [
+      "t"
+    ],
+    "_tickSize": [],
+    "_isVisible": [],
+    "_computeGridLineItems": [
+      "t"
+    ],
+    "_computeLabelItems": [
+      "t"
+    ],
+    "_getXAxisLabelAlignment": [],
+    "_getYAxisLabelAlignment": [
+      "t"
+    ],
+    "_computeLabelArea": [],
+    "drawBackground": [],
+    "getLineWidthForValue": [
+      "t"
+    ],
+    "drawGrid": [
+      "t"
+    ],
+    "drawBorder": [],
+    "drawLabels": [
+      "t"
+    ],
+    "drawTitle": [],
+    "draw": [
+      "t"
+    ],
+    "_layers": [],
+    "getMatchingVisibleMetas": [
+      "t"
+    ],
+    "_resolveTickFontOptions": [
+      "t"
+    ],
+    "_maxDigits": []
+  },
+  "en": {
+    "constructor": [
+      "t",
+      "e",
+      "i"
+    ],
+    "isForType": [
+      "t"
+    ],
+    "register": [
+      "t"
+    ],
+    "get": [
+      "t"
+    ],
+    "unregister": [
+      "t"
+    ]
+  },
+  "sn": {
+    "constructor": [],
+    "add": [
+      "param"
+    ],
+    "remove": [
+      "param"
+    ],
+    "addControllers": [
+      "param"
+    ],
+    "addElements": [
+      "param"
+    ],
+    "addPlugins": [
+      "param"
+    ],
+    "addScales": [
+      "param"
+    ],
+    "getController": [
+      "t"
+    ],
+    "getElement": [
+      "t"
+    ],
+    "getPlugin": [
+      "t"
+    ],
+    "getScale": [
+      "t"
+    ],
+    "removeControllers": [
+      "param"
+    ],
+    "removeElements": [
+      "param"
+    ],
+    "removePlugins": [
+      "param"
+    ],
+    "removeScales": [
+      "param"
+    ],
+    "_each": [
+      "t",
+      "e",
+      "i"
+    ],
+    "_exec": [
+      "t",
+      "e",
+      "i"
+    ],
+    "_getRegistryForType": [
+      "t"
+    ],
+    "_get": [
+      "t",
+      "e",
+      "i"
+    ]
+  },
+  "on": {
+    "constructor": [],
+    "notify": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "_notify": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "invalidate": [],
+    "_descriptors": [
+      "t"
+    ],
+    "_createDescriptors": [
+      "t",
+      "e"
+    ],
+    "_notifyStateChanges": [
+      "t"
+    ]
+  },
+  "an": [
+    "t",
+    "e"
+  ],
+  "rn": [
+    "t",
+    "param",
+    "s",
+    "n"
+  ],
+  "ln": [
+    "t",
+    "e"
+  ],
+  "hn": [
+    "t"
+  ],
+  "cn": [
+    "t",
+    "param"
+  ],
+  "dn": [
+    "t",
+    "e",
+    "i"
+  ],
+  "un": [
+    "t",
+    "e"
+  ],
+  "fn": [
+    "t"
+  ],
+  "gn": [
+    "t"
+  ],
+  "xn": [
+    "t",
+    "e"
+  ],
+  "bn": [
+    "t",
+    "e",
+    "i"
+  ],
+  "_n": {
+    "constructor": [
+      "t"
+    ],
+    "platform": [],
+    "type": [
+      "t"
+    ],
+    "data": [
+      "t"
+    ],
+    "options": [
+      "t"
+    ],
+    "plugins": [],
+    "update": [],
+    "clearCache": [],
+    "datasetScopeKeys": [
+      "t"
+    ],
+    "datasetAnimationScopeKeys": [
+      "t",
+      "e"
+    ],
+    "datasetElementScopeKeys": [
+      "t",
+      "e"
+    ],
+    "pluginScopeKeys": [
+      "t"
+    ],
+    "_cachedScopes": [
+      "t",
+      "e"
+    ],
+    "getOptionScopes": [
+      "t",
+      "e",
+      "i"
+    ],
+    "chartOptionScopes": [],
+    "resolveNamedOptions": [
+      "t",
+      "e",
+      "i",
+      "param"
+    ],
+    "createResolver": [
+      "t",
+      "e",
+      "param",
+      "s"
+    ]
+  },
+  "yn": [
+    "t",
+    "e",
+    "i"
+  ],
+  "vn": [
+    "t"
+  ],
+  "wn": [
+    "t",
+    "e"
+  ],
+  "kn": [
+    "t",
+    "e"
+  ],
+  "Sn": [
+    "t"
+  ],
+  "Pn": [
+    "t"
+  ],
+  "Dn": [
+    "t"
+  ],
+  "On": [
+    "t"
+  ],
+  "An": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Tn": {
+    "defaults": [],
+    "instances": [],
+    "overrides": [],
+    "registry": [],
+    "version": [],
+    "getChart": [],
+    "register": [
+      "param"
+    ],
+    "unregister": [
+      "param"
+    ],
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "aspectRatio": [],
+    "data": [
+      "t"
+    ],
+    "options": [
+      "t"
+    ],
+    "_initialize": [],
+    "clear": [],
+    "stop": [],
+    "resize": [
+      "t",
+      "e"
+    ],
+    "_resize": [
+      "t",
+      "e"
+    ],
+    "ensureScalesHaveIDs": [],
+    "buildOrUpdateScales": [],
+    "_updateMetasets": [],
+    "_removeUnreferencedMetasets": [],
+    "buildOrUpdateControllers": [],
+    "_resetElements": [],
+    "reset": [],
+    "update": [
+      "t"
+    ],
+    "_updateScales": [],
+    "_checkEventBindings": [],
+    "_updateHiddenIndices": [],
+    "_getUniformDataChanges": [],
+    "_updateLayout": [
+      "t"
+    ],
+    "_updateDatasets": [
+      "t"
+    ],
+    "_updateDataset": [
+      "t",
+      "e"
+    ],
+    "render": [],
+    "draw": [],
+    "_getSortedDatasetMetas": [
+      "t"
+    ],
+    "getSortedVisibleDatasetMetas": [],
+    "_drawDatasets": [],
+    "_drawDataset": [
+      "t"
+    ],
+    "isPointInArea": [
+      "t"
+    ],
+    "getElementsAtEventForMode": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "getDatasetMeta": [
+      "t"
+    ],
+    "getContext": [],
+    "getVisibleDatasetCount": [],
+    "isDatasetVisible": [
+      "t"
+    ],
+    "setDatasetVisibility": [
+      "t",
+      "e"
+    ],
+    "toggleDataVisibility": [
+      "t"
+    ],
+    "getDataVisibility": [
+      "t"
+    ],
+    "_updateVisibility": [
+      "t",
+      "e",
+      "i"
+    ],
+    "hide": [
+      "t",
+      "e"
+    ],
+    "show": [
+      "t",
+      "e"
+    ],
+    "_destroyDatasetMeta": [
+      "t"
+    ],
+    "_stop": [],
+    "destroy": [],
+    "toBase64Image": [
+      "param"
+    ],
+    "bindEvents": [],
+    "bindUserEvents": [],
+    "bindResponsiveEvents": [],
+    "unbindEvents": [],
+    "updateHoverStyle": [
+      "t",
+      "e",
+      "i"
+    ],
+    "getActiveElements": [],
+    "setActiveElements": [
+      "t"
+    ],
+    "notifyPlugins": [
+      "t",
+      "e",
+      "i"
+    ],
+    "isPluginEnabled": [
+      "t"
+    ],
+    "_updateHoverStyles": [
+      "t",
+      "e",
+      "i"
+    ],
+    "_eventHandler": [
+      "t",
+      "e"
+    ],
+    "_handleEvent": [
+      "t",
+      "e",
+      "i"
+    ],
+    "_getActiveElements": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ]
+  },
+  "Ln": [],
+  "En": [],
+  "Rn": {
+    "override": [
+      "t"
+    ],
+    "options": [],
+    "constructor": [
+      "t"
+    ],
+    "init": [],
+    "formats": [],
+    "parse": [],
+    "format": [],
+    "add": [],
+    "diff": [],
+    "startOf": [],
+    "endOf": []
+  },
+  "zn": [
+    "t"
+  ],
+  "Fn": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Vn": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Bn": [
+    "t"
+  ],
+  "Wn": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Nn": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Hn": [
+    "t",
+    "e",
+    "i"
+  ],
+  "jn": [
+    "t",
+    "param",
+    "i"
+  ],
+  "$n": {
+    "id": [],
+    "defaults": [],
+    "descriptors": [],
+    "overrides": [],
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "linkScales": [],
+    "parse": [
+      "t",
+      "e"
+    ],
+    "_getRotation": [],
+    "_getCircumference": [],
+    "_getRotationExtents": [],
+    "update": [
+      "t"
+    ],
+    "_circumference": [
+      "t",
+      "e"
+    ],
+    "updateElements": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "calculateTotal": [],
+    "calculateCircumference": [
+      "t"
+    ],
+    "getLabelAndValue": [
+      "t"
+    ],
+    "getMaxBorderWidth": [
+      "t"
+    ],
+    "getMaxOffset": [
+      "t"
+    ],
+    "_getRingWeightOffset": [
+      "t"
+    ],
+    "_getRingWeight": [
+      "t"
+    ],
+    "_getVisibleDatasetWeightTotal": []
+  },
+  "Yn": {
+    "id": [],
+    "defaults": [],
+    "overrides": [],
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "getLabelAndValue": [
+      "t"
+    ],
+    "parseObjectData": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "update": [
+      "t"
+    ],
+    "getMinMax": [],
+    "_updateRadius": [],
+    "updateElements": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "countVisibleElements": [],
+    "_computeAngle": [
+      "t",
+      "e",
+      "i"
+    ]
+  },
+  "Xn": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "qn": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Kn": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n",
+    "o"
+  ],
+  "Gn": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n"
+  ],
+  "Jn": [
+    "t",
+    "e",
+    "param"
+  ],
+  "Zn": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Qn": [
+    "t",
+    "e",
+    "param"
+  ],
+  "to": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "eo": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "io": [
+    "t"
+  ],
+  "no": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "oo": {
+    "id": [],
+    "defaults": [],
+    "defaultRoutes": [],
+    "descriptors": [],
+    "constructor": [
+      "t"
+    ],
+    "updateControlPoints": [
+      "t",
+      "e"
+    ],
+    "points": [],
+    "segments": [],
+    "first": [],
+    "last": [],
+    "interpolate": [
+      "t",
+      "e"
+    ],
+    "pathSegment": [
+      "t",
+      "e",
+      "i"
+    ],
+    "path": [
+      "t",
+      "e",
+      "i"
+    ],
+    "draw": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ]
+  },
+  "ao": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "ro": [
+    "t",
+    "e"
+  ],
+  "lo": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "ho": [
+    "t"
+  ],
+  "co": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "uo": [
+    "t",
+    "e"
+  ],
+  "fo": [
+    "t",
+    "e",
+    "param"
+  ],
+  "po": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "mo": [
+    "t"
+  ],
+  "xo": [
+    "t",
+    "e",
+    "param"
+  ],
+  "bo": {
+    "constructor": [
+      "t"
+    ],
+    "parse": [
+      "t",
+      "e"
+    ],
+    "handleTickRangeOptions": [],
+    "getTickLimit": [],
+    "computeTickLimit": [],
+    "buildTicks": [],
+    "configure": [],
+    "getLabelForValue": [
+      "t"
+    ]
+  },
+  "_o": {
+    "id": [],
+    "defaults": [],
+    "determineDataLimits": [],
+    "computeTickLimit": [],
+    "getPixelForValue": [
+      "t"
+    ],
+    "getValueForPixel": [
+      "t"
+    ]
+  },
+  "yo": [
+    "t"
+  ],
+  "vo": [
+    "t",
+    "e"
+  ],
+  "Mo": [
+    "t"
+  ],
+  "wo": [
+    "t",
+    "e",
+    "i"
+  ],
+  "ko": [
+    "t",
+    "param"
+  ],
+  "So": {
+    "id": [],
+    "defaults": [],
+    "constructor": [
+      "t"
+    ],
+    "parse": [
+      "t",
+      "e"
+    ],
+    "determineDataLimits": [],
+    "handleTickRangeOptions": [],
+    "buildTicks": [],
+    "getLabelForValue": [
+      "t"
+    ],
+    "configure": [],
+    "getPixelForValue": [
+      "t"
+    ],
+    "getValueForPixel": [
+      "t"
+    ]
+  },
+  "Po": [
+    "t"
+  ],
+  "Do": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n"
+  ],
+  "Co": [
+    "t"
+  ],
+  "Oo": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n"
+  ],
+  "Ao": [
+    "t",
+    "e",
+    "i"
+  ],
+  "To": [
+    "t",
+    "e"
+  ],
+  "Lo": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Eo": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Ro": {
+    "id": [],
+    "defaults": [],
+    "defaultRoutes": [],
+    "descriptors": [],
+    "constructor": [
+      "t"
+    ],
+    "setDimensions": [],
+    "determineDataLimits": [],
+    "computeTickLimit": [],
+    "generateTickLabels": [
+      "t"
+    ],
+    "fit": [],
+    "setCenterPoint": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "getIndexAngle": [
+      "t"
+    ],
+    "getDistanceFromCenterForValue": [
+      "t"
+    ],
+    "getValueForDistanceFromCenter": [
+      "t"
+    ],
+    "getPointLabelContext": [
+      "t"
+    ],
+    "getPointPosition": [
+      "t",
+      "e",
+      "param"
+    ],
+    "getPointPositionForValue": [
+      "t",
+      "e"
+    ],
+    "getBasePosition": [
+      "t"
+    ],
+    "getPointLabelPosition": [
+      "t"
+    ],
+    "drawBackground": [],
+    "drawGrid": [],
+    "drawBorder": [],
+    "drawLabels": [],
+    "drawTitle": []
+  },
+  "Fo": [
+    "t",
+    "e"
+  ],
+  "Vo": [
+    "t",
+    "e"
+  ],
+  "Bo": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Wo": [
+    "t",
+    "e",
+    "i"
+  ],
+  "No": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Ho": {
+    "id": [],
+    "defaults": [],
+    "constructor": [
+      "t"
+    ],
+    "init": [
+      "t",
+      "param"
+    ],
+    "parse": [
+      "t",
+      "e"
+    ],
+    "beforeLayout": [],
+    "determineDataLimits": [],
+    "_getLabelBounds": [],
+    "buildTicks": [],
+    "afterAutoSkip": [],
+    "initOffsets": [
+      "param"
+    ],
+    "_generate": [],
+    "getLabelForValue": [
+      "t"
+    ],
+    "format": [
+      "t",
+      "e"
+    ],
+    "_tickFormatFunction": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "generateTickLabels": [
+      "t"
+    ],
+    "getDecimalForValue": [
+      "t"
+    ],
+    "getPixelForValue": [
+      "t"
+    ],
+    "getValueForPixel": [
+      "t"
+    ],
+    "_getLabelSize": [
+      "t"
+    ],
+    "_getLabelCapacity": [
+      "t"
+    ],
+    "getDataTimestamps": [],
+    "getLabelTimestamps": [],
+    "normalize": [
+      "t"
+    ]
+  },
+  "jo": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Xo": [
+    "t"
+  ],
+  "qo": [
+    "t"
+  ],
+  "Ko": [
+    "t"
+  ],
+  "Go": [
+    "t"
+  ],
+  "Zo": [
+    "t"
+  ],
+  "Qo": [
+    "t"
+  ],
+  "ea": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "ia": [
+    "t",
+    "e",
+    "i"
+  ],
+  "sa": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "na": [
+    "t",
+    "e"
+  ],
+  "oa": [
+    "t"
+  ],
+  "aa": [
+    "t",
+    "e",
+    "i"
+  ],
+  "ra": [
+    "t",
+    "e",
+    "i"
+  ],
+  "la": [
+    "t",
+    "e",
+    "i"
+  ],
+  "ha": [
+    "t",
+    "e",
+    "i"
+  ],
+  "ca": {
+    "constructor": [
+      "t"
+    ],
+    "pathSegment": [
+      "t",
+      "e",
+      "i"
+    ],
+    "interpolate": [
+      "t"
+    ]
+  },
+  "da": [
+    "t"
+  ],
+  "ua": [
+    "t",
+    "e",
+    "i"
+  ],
+  "fa": [
+    "t",
+    "e",
+    "i"
+  ],
+  "ga": [
+    "t",
+    "e",
+    "i"
+  ],
+  "pa": [
+    "t",
+    "e"
+  ],
+  "ma": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "xa": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "_a": [
+    "t",
+    "e"
+  ],
+  "ya": {
+    "constructor": [
+      "t"
+    ],
+    "update": [
+      "t",
+      "e",
+      "i"
+    ],
+    "setDimensions": [],
+    "buildLabels": [],
+    "fit": [],
+    "_fitRows": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "_fitCols": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "adjustHitBoxes": [],
+    "isHorizontal": [],
+    "draw": [],
+    "_draw": [],
+    "drawTitle": [],
+    "_computeTitleHeight": [],
+    "_getLegendItemAt": [
+      "t",
+      "e"
+    ],
+    "handleEvent": [
+      "t"
+    ]
+  },
+  "va": [
+    "t",
+    "e"
+  ],
+  "wa": {
+    "constructor": [
+      "t"
+    ],
+    "update": [
+      "t",
+      "e"
+    ],
+    "isHorizontal": [],
+    "_drawArgs": [
+      "t"
+    ],
+    "draw": []
+  },
+  "Ca": [
+    "t",
+    "e"
+  ],
+  "Oa": [
+    "t"
+  ],
+  "Aa": [
+    "t",
+    "e"
+  ],
+  "Ta": [
+    "t",
+    "e"
+  ],
+  "La": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Ea": [
+    "t",
+    "e",
+    "i"
+  ],
+  "Ra": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Ia": [
+    "t",
+    "e",
+    "i"
+  ],
+  "za": [
+    "t"
+  ],
+  "Fa": [
+    "t",
+    "e"
+  ],
+  "Ba": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "Wa": {
+    "positioners": [],
+    "constructor": [
+      "t"
+    ],
+    "initialize": [
+      "t"
+    ],
+    "_resolveAnimations": [],
+    "getContext": [],
+    "getTitle": [
+      "t",
+      "e"
+    ],
+    "getBeforeBody": [
+      "t",
+      "e"
+    ],
+    "getBody": [
+      "t",
+      "e"
+    ],
+    "getAfterBody": [
+      "t",
+      "e"
+    ],
+    "getFooter": [
+      "t",
+      "e"
+    ],
+    "_createItems": [
+      "t"
+    ],
+    "update": [
+      "t",
+      "e"
+    ],
+    "drawCaret": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "getCaretPosition": [
+      "t",
+      "e",
+      "i"
+    ],
+    "drawTitle": [
+      "t",
+      "e",
+      "i"
+    ],
+    "_drawColorBox": [
+      "t",
+      "e",
+      "i",
+      "s",
+      "n"
+    ],
+    "drawBody": [
+      "t",
+      "e",
+      "i"
+    ],
+    "drawFooter": [
+      "t",
+      "e",
+      "i"
+    ],
+    "drawBackground": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "_updateAnimationTarget": [
+      "t"
+    ],
+    "_willRender": [],
+    "draw": [
+      "t"
+    ],
+    "getActiveElements": [],
+    "setActiveElements": [
+      "t",
+      "e"
+    ],
+    "handleEvent": [
+      "t",
+      "e",
+      "param"
+    ],
+    "_getActiveElements": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "_positionChanged": [
+      "t",
+      "e"
+    ]
+  },
+  "noop": [],
+  "isNullOrUndef": [
+    "value"
+  ],
+  "isArray": [
+    "value"
+  ],
+  "isObject": [
+    "value"
+  ],
+  "isNumberFinite": [
+    "value"
+  ],
+  "finiteOrDefault": [
+    "value",
+    "defaultValue"
+  ],
+  "valueOrDefault": [
+    "value",
+    "defaultValue"
+  ],
+  "toPercentage": [
+    "value",
+    "dimension"
+  ],
+  "toDimension": [
+    "value",
+    "dimension"
+  ],
+  "callback": [
+    "fn",
+    "args",
+    "thisArg"
+  ],
+  "each": [
+    "loopable",
+    "fn",
+    "thisArg",
+    "reverse"
+  ],
+  "_elementsEqual": [
+    "a0",
+    "a1"
+  ],
+  "clone": [
+    "source"
+  ],
+  "isValidKey": [
+    "key"
+  ],
+  "_merger": [
+    "key",
+    "target",
+    "source",
+    "options"
+  ],
+  "merge": [
+    "target",
+    "source",
+    "options"
+  ],
+  "mergeIf": [
+    "target",
+    "source"
+  ],
+  "_mergerIf": [
+    "key",
+    "target",
+    "source"
+  ],
+  "_deprecated": [
+    "scope",
+    "value",
+    "previous",
+    "current"
+  ],
+  "_splitKey": [
+    "key"
+  ],
+  "_getKeyResolver": [
+    "key"
+  ],
+  "resolveObjectKey": [
+    "obj",
+    "key"
+  ],
+  "_capitalize": [
+    "str"
+  ],
+  "defined": [
+    "value"
+  ],
+  "isFunction": [
+    "value"
+  ],
+  "setsEqual": [
+    "a",
+    "b"
+  ],
+  "_isClickEvent": [
+    "e"
+  ],
+  "almostEquals": [
+    "x",
+    "y",
+    "epsilon"
+  ],
+  "niceNum": [
+    "range"
+  ],
+  "_factorize": [
+    "value"
+  ],
+  "isNonPrimitive": [
+    "n"
+  ],
+  "isNumber": [
+    "n"
+  ],
+  "almostWhole": [
+    "x",
+    "epsilon"
+  ],
+  "_setMinAndMaxByKey": [
+    "array",
+    "target",
+    "property"
+  ],
+  "toRadians": [
+    "degrees"
+  ],
+  "toDegrees": [
+    "radians"
+  ],
+  "_decimalPlaces": [
+    "x"
+  ],
+  "getAngleFromPoint": [
+    "centrePoint",
+    "anglePoint"
+  ],
+  "distanceBetweenPoints": [
+    "pt1",
+    "pt2"
+  ],
+  "_angleDiff": [
+    "a",
+    "b"
+  ],
+  "_normalizeAngle": [
+    "a"
+  ],
+  "_angleBetween": [
+    "angle",
+    "start",
+    "end",
+    "sameAngleIsFullCircle"
+  ],
+  "_limitValue": [
+    "value",
+    "min",
+    "max"
+  ],
+  "_int16Range": [
+    "value"
+  ],
+  "_isBetween": [
+    "value",
+    "start",
+    "end",
+    "param"
+  ],
+  "_lookup": [
+    "table",
+    "value",
+    "cmp"
+  ],
+  "_lookupByKey": [
+    "table",
+    "key",
+    "value",
+    "last"
+  ],
+  "_rlookupByKey": [
+    "table",
+    "key",
+    "value"
+  ],
+  "_filterBetween": [
+    "values",
+    "min",
+    "max"
+  ],
+  "listenArrayEvents": [
+    "array",
+    "listener"
+  ],
+  "unlistenArrayEvents": [
+    "array",
+    "listener"
+  ],
+  "_arrayUnique": [
+    "items"
+  ],
+  "fontString": [
+    "pixelSize",
+    "fontStyle",
+    "fontFamily"
+  ],
+  "throttled": [
+    "fn",
+    "thisArg"
+  ],
+  "debounce": [
+    "fn",
+    "delay"
+  ],
+  "_toLeftRightCenter": [
+    "align"
+  ],
+  "_alignStartEnd": [
+    "align",
+    "start",
+    "end"
+  ],
+  "_textX": [
+    "align",
+    "left",
+    "right",
+    "rtl"
+  ],
+  "_getStartAndCountOfVisiblePoints": [
+    "meta",
+    "points",
+    "animationsDisabled"
+  ],
+  "_scaleRangesChanged": [
+    "meta"
+  ],
+  "atEdge": [
+    "t"
+  ],
+  "elasticIn": [
+    "t",
+    "s",
+    "p"
+  ],
+  "elasticOut": [
+    "t",
+    "s",
+    "p"
+  ],
+  "isPatternOrGradient": [
+    "value"
+  ],
+  "color": [
+    "value"
+  ],
+  "getHoverColor": [
+    "value"
+  ],
+  "applyAnimationsDefaults": [
+    "defaults"
+  ],
+  "applyLayoutsDefaults": [
+    "defaults"
+  ],
+  "getNumberFormat": [
+    "locale",
+    "options"
+  ],
+  "formatNumber": [
+    "num",
+    "locale",
+    "options"
+  ],
+  "calculateDelta": [
+    "tickValue",
+    "ticks"
+  ],
+  "applyScaleDefaults": [
+    "defaults"
+  ],
+  "getScope$1": [
+    "node",
+    "key"
+  ],
+  "set": [
+    "root",
+    "scope",
+    "values"
+  ],
+  "Defaults": {
+    "constructor": [
+      "_descriptors",
+      "_appliers"
+    ],
+    "set": [
+      "scope",
+      "values"
+    ],
+    "get": [
+      "scope"
+    ],
+    "describe": [
+      "scope",
+      "values"
+    ],
+    "override": [
+      "scope",
+      "values"
+    ],
+    "route": [
+      "scope",
+      "name",
+      "targetScope",
+      "targetName"
+    ],
+    "apply": [
+      "appliers"
+    ]
+  },
+  "toFontString": [
+    "font"
+  ],
+  "_measureText": [
+    "ctx",
+    "data",
+    "gc",
+    "longest",
+    "string"
+  ],
+  "_longestText": [
+    "ctx",
+    "font",
+    "arrayOfThings",
+    "cache"
+  ],
+  "_alignPixel": [
+    "chart",
+    "pixel",
+    "width"
+  ],
+  "clearCanvas": [
+    "canvas",
+    "ctx"
+  ],
+  "drawPoint": [
+    "ctx",
+    "options",
+    "x",
+    "y"
+  ],
+  "drawPointLegend": [
+    "ctx",
+    "options",
+    "x",
+    "y",
+    "w"
+  ],
+  "_isPointInArea": [
+    "point",
+    "area",
+    "margin"
+  ],
+  "clipArea": [
+    "ctx",
+    "area"
+  ],
+  "unclipArea": [
+    "ctx"
+  ],
+  "_steppedLineTo": [
+    "ctx",
+    "previous",
+    "target",
+    "flip",
+    "mode"
+  ],
+  "_bezierCurveTo": [
+    "ctx",
+    "previous",
+    "target",
+    "flip"
+  ],
+  "setRenderOpts": [
+    "ctx",
+    "opts"
+  ],
+  "decorateText": [
+    "ctx",
+    "x",
+    "y",
+    "line",
+    "opts"
+  ],
+  "drawBackdrop": [
+    "ctx",
+    "opts"
+  ],
+  "renderText": [
+    "ctx",
+    "text",
+    "x",
+    "y",
+    "font",
+    "param"
+  ],
+  "addRoundedRectPath": [
+    "ctx",
+    "rect"
+  ],
+  "toLineHeight": [
+    "value",
+    "size"
+  ],
+  "numberOrZero": [
+    "v"
+  ],
+  "_readValueToProps": [
+    "value",
+    "props"
+  ],
+  "toTRBL": [
+    "value"
+  ],
+  "toTRBLCorners": [
+    "value"
+  ],
+  "toPadding": [
+    "value"
+  ],
+  "toFont": [
+    "options",
+    "fallback"
+  ],
+  "resolve": [
+    "inputs",
+    "context",
+    "index",
+    "info"
+  ],
+  "_addGrace": [
+    "minmax",
+    "grace",
+    "beginAtZero"
+  ],
+  "keepZero": [
+    "value",
+    "add"
+  ],
+  "createContext": [
+    "parentContext",
+    "context"
+  ],
+  "_createResolver": [
+    "scopes",
+    "param",
+    "rootScopes",
+    "fallback",
+    "param"
+  ],
+  "_attachContext": [
+    "proxy",
+    "context",
+    "subProxy",
+    "descriptorDefaults"
+  ],
+  "_descriptors": [
+    "proxy",
+    "param"
+  ],
+  "readKey": [
+    "prefix",
+    "name"
+  ],
+  "needsSubResolver": [
+    "prop",
+    "value"
+  ],
+  "_cached": [
+    "target",
+    "prop",
+    "resolve"
+  ],
+  "_resolveWithContext": [
+    "target",
+    "prop",
+    "receiver"
+  ],
+  "_resolveScriptable": [
+    "prop",
+    "getValue",
+    "target",
+    "receiver"
+  ],
+  "_resolveArray": [
+    "prop",
+    "value",
+    "target",
+    "isIndexable"
+  ],
+  "resolveFallback": [
+    "fallback",
+    "prop",
+    "value"
+  ],
+  "getScope": [
+    "key",
+    "parent"
+  ],
+  "addScopes": [
+    "set",
+    "parentScopes",
+    "key",
+    "parentFallback",
+    "value"
+  ],
+  "createSubResolver": [
+    "parentScopes",
+    "resolver",
+    "prop",
+    "value"
+  ],
+  "addScopesFromKey": [
+    "set",
+    "allScopes",
+    "key",
+    "fallback",
+    "item"
+  ],
+  "subGetTarget": [
+    "resolver",
+    "prop",
+    "value"
+  ],
+  "_resolveWithPrefixes": [
+    "prop",
+    "prefixes",
+    "scopes",
+    "proxy"
+  ],
+  "_resolve": [
+    "key",
+    "scopes"
+  ],
+  "getKeysFromAllScopes": [
+    "target"
+  ],
+  "resolveKeysFromAllScopes": [
+    "scopes"
+  ],
+  "_parseObjectDataRadialScale": [
+    "meta",
+    "data",
+    "start",
+    "count"
+  ],
+  "getPoint": [
+    "points",
+    "i"
+  ],
+  "getValueAxis": [
+    "indexAxis"
+  ],
+  "splineCurve": [
+    "firstPoint",
+    "middlePoint",
+    "afterPoint",
+    "t"
+  ],
+  "monotoneAdjust": [
+    "points",
+    "deltaK",
+    "mK"
+  ],
+  "monotoneCompute": [
+    "points",
+    "mK",
+    "param"
+  ],
+  "splineCurveMonotone": [
+    "points",
+    "param"
+  ],
+  "capControlPoint": [
+    "pt",
+    "min",
+    "max"
+  ],
+  "capBezierPoints": [
+    "points",
+    "area"
+  ],
+  "_updateBezierControlPoints": [
+    "points",
+    "options",
+    "area",
+    "loop",
+    "indexAxis"
+  ],
+  "_isDomSupported": [],
+  "_getParentNode": [
+    "domNode"
+  ],
+  "parseMaxStyle": [
+    "styleValue",
+    "node",
+    "parentProperty"
+  ],
+  "getComputedStyle": [
+    "element"
+  ],
+  "getStyle": [
+    "el",
+    "property"
+  ],
+  "getPositionedStyle": [
+    "styles",
+    "style",
+    "suffix"
+  ],
+  "useOffsetPos": [
+    "x",
+    "y",
+    "target"
+  ],
+  "getCanvasPosition": [
+    "e",
+    "canvas"
+  ],
+  "getRelativePosition": [
+    "event",
+    "chart"
+  ],
+  "getContainerSize": [
+    "canvas",
+    "width",
+    "height"
+  ],
+  "round1": [
+    "v"
+  ],
+  "getMaximumSize": [
+    "canvas",
+    "bbWidth",
+    "bbHeight",
+    "aspectRatio"
+  ],
+  "retinaScale": [
+    "chart",
+    "forceRatio",
+    "forceStyle"
+  ],
+  "readUsedSize": [
+    "element",
+    "property"
+  ],
+  "_pointInLine": [
+    "p1",
+    "p2",
+    "t",
+    "mode"
+  ],
+  "_steppedInterpolation": [
+    "p1",
+    "p2",
+    "t",
+    "mode"
+  ],
+  "_bezierInterpolation": [
+    "p1",
+    "p2",
+    "t",
+    "mode"
+  ],
+  "getRightToLeftAdapter": [
+    "rectX",
+    "width"
+  ],
+  "getLeftToRightAdapter": [],
+  "getRtlAdapter": [
+    "rtl",
+    "rectX",
+    "width"
+  ],
+  "overrideTextDirection": [
+    "ctx",
+    "direction"
+  ],
+  "restoreTextDirection": [
+    "ctx",
+    "original"
+  ],
+  "propertyFn": [
+    "property"
+  ],
+  "normalizeSegment": [
+    "param"
+  ],
+  "getSegment": [
+    "segment",
+    "points",
+    "bounds"
+  ],
+  "_boundSegment": [
+    "segment",
+    "points",
+    "bounds"
+  ],
+  "startIsBefore": [],
+  "endIsBefore": [],
+  "shouldStart": [],
+  "shouldStop": [],
+  "_boundSegments": [
+    "line",
+    "bounds"
+  ],
+  "findStartAndEnd": [
+    "points",
+    "count",
+    "loop",
+    "spanGaps"
+  ],
+  "solidSegments": [
+    "points",
+    "start",
+    "max",
+    "loop"
+  ],
+  "_computeSegments": [
+    "line",
+    "segmentOptions"
+  ],
+  "splitByStyles": [
+    "line",
+    "segments",
+    "points",
+    "segmentOptions"
+  ],
+  "doSplitByStyles": [
+    "line",
+    "segments",
+    "points",
+    "segmentOptions"
+  ],
+  "addStyle": [
+    "s",
+    "e",
+    "l",
+    "st"
+  ],
+  "readStyle": [
+    "options"
+  ],
+  "styleChanged": [
+    "style",
+    "prevStyle"
+  ],
+  "replacer": [
+    "key",
+    "value"
+  ],
+  "getSizeForArea": [
+    "scale",
+    "chartArea",
+    "field"
+  ],
+  "getDatasetArea": [
+    "meta",
+    "chartArea"
+  ],
+  "getDatasetClipArea": [
+    "chart",
+    "meta"
+  ]
+}

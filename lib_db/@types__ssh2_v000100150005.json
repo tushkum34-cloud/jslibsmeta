@@ -1,0 +1,160 @@
+{
+  "Client": {
+    "on": [
+      "event",
+      "listener"
+    ],
+    "once": [
+      "event",
+      "listener"
+    ],
+    "connect": [
+      "config"
+    ],
+    "exec": [
+      "command",
+      "callback"
+    ],
+    "shell": [
+      "callback"
+    ],
+    "forwardIn": [
+      "remoteAddr",
+      "remotePort",
+      "callback"
+    ],
+    "unforwardIn": [
+      "remoteAddr",
+      "remotePort",
+      "callback"
+    ],
+    "forwardOut": [
+      "srcIP",
+      "srcPort",
+      "dstIP",
+      "dstPort",
+      "callback"
+    ],
+    "sftp": [
+      "callback"
+    ],
+    "subsys": [
+      "subsystem",
+      "callback"
+    ],
+    "end": [],
+    "destroy": [],
+    "openssh_noMoreSessions": [
+      "cb"
+    ],
+    "openssh_forwardInStreamLocal": [
+      "socketPath",
+      "cb"
+    ],
+    "openssh_unforwardInStreamLocal": [
+      "socketPath",
+      "cb"
+    ],
+    "openssh_forwardOutStreamLocal": [
+      "socketPath",
+      "cb"
+    ],
+    "setNoDelay": [
+      "noDelay"
+    ]
+  },
+  "Server": {
+    "KEEPALIVE_CLIENT_INTERVAL": [],
+    "KEEPALIVE_CLIENT_COUNT_MAX": [],
+    "constructor": [
+      "cfg",
+      "listener"
+    ],
+    "injectSocket": [
+      "socket"
+    ],
+    "on": [
+      "event",
+      "listener"
+    ],
+    "once": [
+      "event",
+      "listener"
+    ]
+  },
+  "AgentProtocol": {
+    "constructor": [
+      "isClient"
+    ],
+    "failureReply": [
+      "request"
+    ],
+    "getIdentities": [
+      "callback"
+    ],
+    "getIdentitiesReply": [
+      "request",
+      "keys"
+    ],
+    "sign": [
+      "pubKey",
+      "data",
+      "callback"
+    ],
+    "signReply": [
+      "request",
+      "signature"
+    ],
+    "on": [
+      "event",
+      "listener"
+    ],
+    "once": [
+      "event",
+      "listener"
+    ]
+  },
+  "BaseAgent": {
+    "getIdentities": [
+      "cb"
+    ],
+    "sign": [
+      "pubKey",
+      "data",
+      "cb"
+    ],
+    "getStream": [
+      "cb"
+    ]
+  },
+  "OpenSSHAgent": {
+    "constructor": [
+      "socketPath"
+    ],
+    "getIdentities": [
+      "cb"
+    ],
+    "sign": [
+      "pubKey",
+      "data",
+      "cb"
+    ],
+    "getStream": [
+      "cb"
+    ]
+  },
+  "CygwinAgent": {},
+  "PageantAgent": {},
+  "HTTPAgent": {
+    "constructor": [
+      "connectCfg",
+      "agentOptions"
+    ]
+  },
+  "HTTPSAgent": {
+    "constructor": [
+      "connectCfg",
+      "agentOptions"
+    ]
+  }
+}

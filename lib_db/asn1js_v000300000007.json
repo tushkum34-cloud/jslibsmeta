@@ -1,0 +1,636 @@
+{
+  "ViewWriter": {
+    "constructor": [],
+    "write": [
+      "buf"
+    ],
+    "final": []
+  },
+  "LocalBaseBlock": {
+    "blockName": [],
+    "valueBeforeDecode": [
+      "value"
+    ],
+    "constructor": [
+      "param"
+    ],
+    "toJSON": []
+  },
+  "ValueBlock": {
+    "fromBER": [
+      "_inputBuffer",
+      "_inputOffset",
+      "_inputLength"
+    ],
+    "toBER": [
+      "_sizeOnly",
+      "_writer"
+    ]
+  },
+  "LocalIdentificationBlock": {
+    "constructor": [
+      "param"
+    ],
+    "toBER": [
+      "param"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "toJSON": []
+  },
+  "LocalLengthBlock": {
+    "constructor": [
+      "param"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "toBER": [
+      "param"
+    ],
+    "toJSON": []
+  },
+  "BaseBlock": {
+    "constructor": [
+      "param",
+      "valueBlockType"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "toBER": [
+      "sizeOnly",
+      "writer"
+    ],
+    "toJSON": [],
+    "toString": [
+      "param"
+    ],
+    "onAsciiEncoding": [],
+    "isEqual": [
+      "other"
+    ]
+  },
+  "LocalSimpleStringValueBlock": {},
+  "LocalSimpleStringBlock": {
+    "constructor": [
+      "param"
+    ],
+    "fromBuffer": [
+      "inputBuffer"
+    ],
+    "fromString": [
+      "inputString"
+    ]
+  },
+  "LocalUtf8StringValueBlock": {
+    "fromBuffer": [
+      "inputBuffer"
+    ],
+    "fromString": [
+      "inputString"
+    ]
+  },
+  "LocalStringValueBlock": {
+    "constructor": [
+      "param"
+    ],
+    "toJSON": []
+  },
+  "BaseStringBlock": {
+    "getValue": [],
+    "setValue": [
+      "value"
+    ],
+    "constructor": [
+      "param",
+      "stringValueBlockType"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "onAsciiEncoding": []
+  },
+  "LocalPrimitiveValueBlock": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "Primitive": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "Any": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "LocalConstructedValueBlock": {
+    "constructor": [
+      "param"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "toBER": [
+      "sizeOnly",
+      "writer"
+    ],
+    "toJSON": []
+  },
+  "Constructed": {
+    "constructor": [
+      "param"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "onAsciiEncoding": []
+  },
+  "LocalEndOfContentValueBlock": {
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "_inputLength"
+    ],
+    "toBER": [
+      "_sizeOnly"
+    ]
+  },
+  "EndOfContent": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "Null": {
+    "constructor": [
+      "param"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "toBER": [
+      "sizeOnly",
+      "writer"
+    ],
+    "onAsciiEncoding": []
+  },
+  "LocalBooleanValueBlock": {
+    "value": [
+      "value"
+    ],
+    "constructor": [
+      "param"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "toBER": [],
+    "toJSON": []
+  },
+  "Boolean": {
+    "getValue": [],
+    "setValue": [
+      "value"
+    ],
+    "constructor": [
+      "param"
+    ],
+    "onAsciiEncoding": []
+  },
+  "LocalOctetStringValueBlock": {
+    "constructor": [
+      "param"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "toBER": [
+      "sizeOnly",
+      "writer"
+    ],
+    "toJSON": []
+  },
+  "OctetString": {
+    "constructor": [
+      "param"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "onAsciiEncoding": [],
+    "getValue": []
+  },
+  "LocalBitStringValueBlock": {
+    "constructor": [
+      "param"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "toBER": [
+      "sizeOnly",
+      "writer"
+    ],
+    "toJSON": []
+  },
+  "BitString": {
+    "constructor": [
+      "param"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "onAsciiEncoding": []
+  },
+  "LocalIntegerValueBlock": {
+    "setValueHex": [],
+    "constructor": [
+      "param"
+    ],
+    "valueDec": [],
+    "fromDER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength",
+      "param"
+    ],
+    "toDER": [
+      "param"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "toBER": [
+      "sizeOnly"
+    ],
+    "toJSON": [],
+    "toString": []
+  },
+  "Integer": {
+    "constructor": [
+      "param"
+    ],
+    "toBigInt": [],
+    "fromBigInt": [
+      "value"
+    ],
+    "convertToDER": [],
+    "convertFromDER": [],
+    "onAsciiEncoding": []
+  },
+  "Enumerated": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "LocalSidValueBlock": {
+    "constructor": [
+      "param"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "valueBigInt": [
+      "value"
+    ],
+    "toBER": [
+      "sizeOnly"
+    ],
+    "toString": [],
+    "toJSON": []
+  },
+  "LocalObjectIdentifierValueBlock": {
+    "constructor": [
+      "param"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "toBER": [
+      "sizeOnly"
+    ],
+    "fromString": [
+      "string"
+    ],
+    "toString": [],
+    "toJSON": []
+  },
+  "ObjectIdentifier": {
+    "getValue": [],
+    "setValue": [
+      "value"
+    ],
+    "constructor": [
+      "param"
+    ],
+    "onAsciiEncoding": [],
+    "toJSON": []
+  },
+  "LocalRelativeSidValueBlock": {
+    "constructor": [
+      "param"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "toBER": [
+      "sizeOnly"
+    ],
+    "toString": [],
+    "toJSON": []
+  },
+  "LocalRelativeObjectIdentifierValueBlock": {
+    "constructor": [
+      "param"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "toBER": [
+      "sizeOnly",
+      "_writer"
+    ],
+    "fromString": [
+      "string"
+    ],
+    "toString": [],
+    "toJSON": []
+  },
+  "RelativeObjectIdentifier": {
+    "getValue": [],
+    "setValue": [
+      "value"
+    ],
+    "constructor": [
+      "param"
+    ],
+    "onAsciiEncoding": [],
+    "toJSON": []
+  },
+  "Sequence": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "Set": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "Utf8String": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "LocalBmpStringValueBlock": {
+    "fromBuffer": [
+      "inputBuffer"
+    ],
+    "fromString": [
+      "inputString"
+    ]
+  },
+  "BmpString": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "LocalUniversalStringValueBlock": {
+    "fromBuffer": [
+      "inputBuffer"
+    ],
+    "fromString": [
+      "inputString"
+    ]
+  },
+  "UniversalString": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "NumericString": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "PrintableString": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "TeletexString": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "VideotexString": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "IA5String": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "GraphicString": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "VisibleString": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "GeneralString": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "CharacterString": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "UTCTime": {
+    "constructor": [
+      "param"
+    ],
+    "fromBuffer": [
+      "inputBuffer"
+    ],
+    "toBuffer": [],
+    "fromDate": [
+      "inputDate"
+    ],
+    "toDate": [],
+    "fromString": [
+      "inputString"
+    ],
+    "toString": [
+      "param"
+    ],
+    "onAsciiEncoding": [],
+    "toJSON": []
+  },
+  "GeneralizedTime": {
+    "constructor": [
+      "param"
+    ],
+    "fromDate": [
+      "inputDate"
+    ],
+    "toDate": [],
+    "fromString": [
+      "inputString"
+    ],
+    "toString": [
+      "param"
+    ],
+    "toJSON": []
+  },
+  "DATE": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "TimeOfDay": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "DateTime": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "Duration": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "TIME": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "Choice": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "Repeated": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "RawData": {
+    "data": [
+      "value"
+    ],
+    "constructor": [
+      "param"
+    ],
+    "fromBER": [
+      "inputBuffer",
+      "inputOffset",
+      "inputLength"
+    ],
+    "toBER": [
+      "_sizeOnly"
+    ]
+  },
+  "assertBigInt": [],
+  "concat": [
+    "buffers"
+  ],
+  "checkBufferParams": [
+    "baseBlock",
+    "inputBuffer",
+    "inputOffset",
+    "inputLength"
+  ],
+  "HexBlock": [
+    "BaseClass"
+  ],
+  "prepareIndefiniteForm": [
+    "baseBlock"
+  ],
+  "localChangeType": [
+    "inputObject",
+    "newType"
+  ],
+  "localFromBER": [
+    "inputBuffer",
+    "param",
+    "param"
+  ],
+  "fromBER": [
+    "inputBuffer"
+  ],
+  "checkLen": [
+    "indefiniteLength",
+    "length"
+  ],
+  "viewAdd": [
+    "first",
+    "second"
+  ],
+  "power2": [
+    "n"
+  ],
+  "viewSub": [
+    "first",
+    "second"
+  ],
+  "compareSchema": [
+    "root",
+    "inputData",
+    "inputSchema"
+  ],
+  "verifySchema": [
+    "inputBuffer",
+    "inputSchema"
+  ],
+  "_interopNamespaceDefault": [
+    "e"
+  ]
+}

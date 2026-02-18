@@ -1,0 +1,1262 @@
+{
+  "printf": [],
+  "nl": [],
+  "println": [],
+  "isEmptyObject": [
+    "val"
+  ],
+  "stringifyValue": [
+    "val"
+  ],
+  "constantName": [
+    "def"
+  ],
+  "methodName": [
+    "clazz",
+    "method"
+  ],
+  "propertyName": [
+    "dashed"
+  ],
+  "initial": [
+    "part"
+  ],
+  "argument": [
+    "a"
+  ],
+  "methodId": [
+    "clazz",
+    "method"
+  ],
+  "propertiesName": [
+    "clazz"
+  ],
+  "valTypeTest": [
+    "arg"
+  ],
+  "typeDesc": [
+    "t"
+  ],
+  "defaultValueRepr": [
+    "arg"
+  ],
+  "assignArg": [
+    "a"
+  ],
+  "assignOrDefault": [
+    "a"
+  ],
+  "checkAssignArg": [
+    "a"
+  ],
+  "assignTable": [
+    "a"
+  ],
+  "tableVar": [
+    "a"
+  ],
+  "stringLenVar": [
+    "a"
+  ],
+  "assignStringLen": [
+    "a"
+  ],
+  "encoderFn": [
+    "method"
+  ],
+  "fieldsDecl": [
+    "args"
+  ],
+  "decoderFn": [
+    "method"
+  ],
+  "infoObj": [
+    "thing"
+  ],
+  "flagAt": [
+    "index"
+  ],
+  "encodePropsFn": [
+    "props"
+  ],
+  "incVarying": [
+    "by"
+  ],
+  "decodePropsFn": [
+    "props"
+  ],
+  "connect": [],
+  "myConsumer": [
+    "msg"
+  ],
+  "bail": [
+    "err"
+  ],
+  "subscribeAll": [
+    "channel",
+    "queue",
+    "bindingKeys",
+    "cb"
+  ],
+  "fib": [
+    "n"
+  ],
+  "setIfDefined": [
+    "obj",
+    "prop",
+    "value"
+  ],
+  "convertCC": [
+    "cc"
+  ],
+  "BitSet": {
+    "constructor": [
+      "size"
+    ],
+    "ensureSize": [
+      "numWords"
+    ],
+    "set": [
+      "bitIndex"
+    ],
+    "clear": [
+      "bitIndex"
+    ],
+    "get": [
+      "bitIndex"
+    ],
+    "nextSetBit": [
+      "fromIndex"
+    ],
+    "nextClearBit": [
+      "fromIndex"
+    ]
+  },
+  "wordIndex": [
+    "bitIndex"
+  ],
+  "trailingZeros": [
+    "i"
+  ],
+  "CallbackModel": {
+    "constructor": [
+      "connection"
+    ],
+    "close": [
+      "cb"
+    ],
+    "updateSecret": [
+      "newSecret",
+      "reason",
+      "cb"
+    ],
+    "createChannel": [
+      "options",
+      "cb"
+    ],
+    "createConfirmChannel": [
+      "options",
+      "cb"
+    ]
+  },
+  "Channel": {
+    "constructor": [
+      "connection"
+    ],
+    "rpc": [
+      "method",
+      "fields",
+      "expect"
+    ],
+    "open": [],
+    "close": [],
+    "assertQueue": [
+      "queue",
+      "options"
+    ],
+    "checkQueue": [
+      "queue"
+    ],
+    "deleteQueue": [
+      "queue",
+      "options"
+    ],
+    "purgeQueue": [
+      "queue"
+    ],
+    "bindQueue": [
+      "queue",
+      "source",
+      "pattern",
+      "argt"
+    ],
+    "unbindQueue": [
+      "queue",
+      "source",
+      "pattern",
+      "argt"
+    ],
+    "assertExchange": [
+      "exchange",
+      "type",
+      "options"
+    ],
+    "checkExchange": [
+      "exchange"
+    ],
+    "deleteExchange": [
+      "name",
+      "options"
+    ],
+    "bindExchange": [
+      "dest",
+      "source",
+      "pattern",
+      "argt"
+    ],
+    "unbindExchange": [
+      "dest",
+      "source",
+      "pattern",
+      "argt"
+    ],
+    "publish": [
+      "exchange",
+      "routingKey",
+      "content",
+      "options"
+    ],
+    "sendToQueue": [
+      "queue",
+      "content",
+      "options"
+    ],
+    "consume": [
+      "queue",
+      "callback",
+      "options"
+    ],
+    "cancel": [
+      "consumerTag"
+    ],
+    "get": [
+      "queue",
+      "options"
+    ],
+    "ack": [
+      "message",
+      "allUpTo"
+    ],
+    "ackAll": [],
+    "nack": [
+      "message",
+      "allUpTo",
+      "requeue"
+    ],
+    "nackAll": [
+      "requeue"
+    ],
+    "reject": [
+      "message",
+      "requeue"
+    ],
+    "recover": [],
+    "qos": [
+      "count",
+      "global"
+    ]
+  },
+  "callbackWrapper": [
+    "ch",
+    "cb"
+  ],
+  "ConfirmChannel": {
+    "publish": [
+      "exchange",
+      "routingKey",
+      "content",
+      "options",
+      "cb"
+    ],
+    "sendToQueue": [
+      "queue",
+      "content",
+      "options",
+      "cb"
+    ],
+    "waitForConfirms": []
+  },
+  "reply": [
+    "err",
+    "f"
+  ],
+  "rej": [
+    "r"
+  ],
+  "invalidOp": [
+    "msg",
+    "stack"
+  ],
+  "invalidateSend": [
+    "conn",
+    "msg",
+    "stack"
+  ],
+  "acceptDeliveryOrReturn": [
+    "f"
+  ],
+  "acceptMessage": [
+    "continuation"
+  ],
+  "headers": [
+    "f"
+  ],
+  "content": [
+    "f"
+  ],
+  "BaseChannel": {
+    "constructor": [
+      "connection"
+    ],
+    "registerConsumer": [
+      "tag",
+      "callback"
+    ],
+    "unregisterConsumer": [
+      "tag"
+    ],
+    "dispatchMessage": [
+      "fields",
+      "message"
+    ],
+    "handleDelivery": [
+      "message"
+    ],
+    "handleCancel": [
+      "fields"
+    ]
+  },
+  "ChannelModel": {
+    "constructor": [
+      "connection"
+    ],
+    "close": [],
+    "updateSecret": [
+      "newSecret",
+      "reason"
+    ],
+    "createChannel": [
+      "options"
+    ],
+    "createConfirmChannel": [
+      "options"
+    ]
+  },
+  "isFloatingPoint": [
+    "n"
+  ],
+  "encodeTable": [
+    "buffer",
+    "val",
+    "offset"
+  ],
+  "encodeArray": [
+    "buffer",
+    "val",
+    "offset"
+  ],
+  "encodeFieldValue": [
+    "buffer",
+    "value",
+    "offset"
+  ],
+  "tag": [
+    "t"
+  ],
+  "decodeFields": [
+    "slice"
+  ],
+  "decodeFieldValue": [],
+  "decodeArray": [
+    "until"
+  ],
+  "copyInto": [
+    "obj",
+    "target"
+  ],
+  "clone": [
+    "obj"
+  ],
+  "openFrames": [
+    "vhost",
+    "query",
+    "credentials",
+    "extraClientProperties"
+  ],
+  "intOrDefault": [
+    "val",
+    "def"
+  ],
+  "credentialsFromUrl": [
+    "parts"
+  ],
+  "onConnect": [],
+  "Connection": {
+    "constructor": [
+      "underlying"
+    ],
+    "sendProtocolHeader": [],
+    "open": [
+      "allFields",
+      "openCallback0"
+    ],
+    "close": [
+      "closeCallback"
+    ],
+    "closeBecause": [
+      "reason",
+      "code",
+      "k"
+    ],
+    "closeWithError": [
+      "reason",
+      "code",
+      "error"
+    ],
+    "onSocketError": [
+      "err"
+    ],
+    "toClosing": [
+      "capturedStack",
+      "k"
+    ],
+    "_closeChannels": [
+      "capturedStack"
+    ],
+    "toClosed": [
+      "capturedStack",
+      "maybeErr"
+    ],
+    "_updateSecret": [
+      "newSecret",
+      "reason",
+      "cb"
+    ],
+    "startHeartbeater": [],
+    "freshChannel": [
+      "channel",
+      "options"
+    ],
+    "releaseChannel": [
+      "channel"
+    ],
+    "acceptLoop": [],
+    "step": [
+      "cb"
+    ],
+    "checkSend": [],
+    "checkRecv": [],
+    "sendBytes": [
+      "bytes"
+    ],
+    "sendHeartbeat": [],
+    "sendMethod": [
+      "channel",
+      "Method",
+      "fields"
+    ],
+    "sendMessage": [
+      "channel",
+      "Method",
+      "fields",
+      "Properties",
+      "props",
+      "content"
+    ],
+    "sendContent": [
+      "channel",
+      "body"
+    ],
+    "recvFrame": []
+  },
+  "wait": [
+    "method"
+  ],
+  "expect": [
+    "Method",
+    "k"
+  ],
+  "send": [
+    "id",
+    "fields",
+    "channel",
+    "content"
+  ],
+  "negotiate": [
+    "server",
+    "desired"
+  ],
+  "onStart": [
+    "start"
+  ],
+  "afterStartOk": [
+    "reply"
+  ],
+  "onOpenOk": [
+    "openOk"
+  ],
+  "endWhileOpening": [
+    "err"
+  ],
+  "succeed": [
+    "done"
+  ],
+  "go": [],
+  "recv": [],
+  "mainAccept": [
+    "frame"
+  ],
+  "channel0": [
+    "connection"
+  ],
+  "wrapStream": [
+    "s"
+  ],
+  "isFatalError": [
+    "error"
+  ],
+  "decodeBasicQos": [
+    "buffer"
+  ],
+  "encodeBasicQos": [
+    "channel",
+    "fields"
+  ],
+  "decodeBasicQosOk": [
+    "buffer"
+  ],
+  "encodeBasicQosOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeBasicConsume": [
+    "buffer"
+  ],
+  "encodeBasicConsume": [
+    "channel",
+    "fields"
+  ],
+  "decodeBasicConsumeOk": [
+    "buffer"
+  ],
+  "encodeBasicConsumeOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeBasicCancel": [
+    "buffer"
+  ],
+  "encodeBasicCancel": [
+    "channel",
+    "fields"
+  ],
+  "decodeBasicCancelOk": [
+    "buffer"
+  ],
+  "encodeBasicCancelOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeBasicPublish": [
+    "buffer"
+  ],
+  "encodeBasicPublish": [
+    "channel",
+    "fields"
+  ],
+  "decodeBasicReturn": [
+    "buffer"
+  ],
+  "encodeBasicReturn": [
+    "channel",
+    "fields"
+  ],
+  "decodeBasicDeliver": [
+    "buffer"
+  ],
+  "encodeBasicDeliver": [
+    "channel",
+    "fields"
+  ],
+  "decodeBasicGet": [
+    "buffer"
+  ],
+  "encodeBasicGet": [
+    "channel",
+    "fields"
+  ],
+  "decodeBasicGetOk": [
+    "buffer"
+  ],
+  "encodeBasicGetOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeBasicGetEmpty": [
+    "buffer"
+  ],
+  "encodeBasicGetEmpty": [
+    "channel",
+    "fields"
+  ],
+  "decodeBasicAck": [
+    "buffer"
+  ],
+  "encodeBasicAck": [
+    "channel",
+    "fields"
+  ],
+  "decodeBasicReject": [
+    "buffer"
+  ],
+  "encodeBasicReject": [
+    "channel",
+    "fields"
+  ],
+  "decodeBasicRecoverAsync": [
+    "buffer"
+  ],
+  "encodeBasicRecoverAsync": [
+    "channel",
+    "fields"
+  ],
+  "decodeBasicRecover": [
+    "buffer"
+  ],
+  "encodeBasicRecover": [
+    "channel",
+    "fields"
+  ],
+  "decodeBasicRecoverOk": [
+    "buffer"
+  ],
+  "encodeBasicRecoverOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeBasicNack": [
+    "buffer"
+  ],
+  "encodeBasicNack": [
+    "channel",
+    "fields"
+  ],
+  "decodeConnectionStart": [
+    "buffer"
+  ],
+  "encodeConnectionStart": [
+    "channel",
+    "fields"
+  ],
+  "decodeConnectionStartOk": [
+    "buffer"
+  ],
+  "encodeConnectionStartOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeConnectionSecure": [
+    "buffer"
+  ],
+  "encodeConnectionSecure": [
+    "channel",
+    "fields"
+  ],
+  "decodeConnectionSecureOk": [
+    "buffer"
+  ],
+  "encodeConnectionSecureOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeConnectionTune": [
+    "buffer"
+  ],
+  "encodeConnectionTune": [
+    "channel",
+    "fields"
+  ],
+  "decodeConnectionTuneOk": [
+    "buffer"
+  ],
+  "encodeConnectionTuneOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeConnectionOpen": [
+    "buffer"
+  ],
+  "encodeConnectionOpen": [
+    "channel",
+    "fields"
+  ],
+  "decodeConnectionOpenOk": [
+    "buffer"
+  ],
+  "encodeConnectionOpenOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeConnectionClose": [
+    "buffer"
+  ],
+  "encodeConnectionClose": [
+    "channel",
+    "fields"
+  ],
+  "decodeConnectionCloseOk": [
+    "buffer"
+  ],
+  "encodeConnectionCloseOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeConnectionBlocked": [
+    "buffer"
+  ],
+  "encodeConnectionBlocked": [
+    "channel",
+    "fields"
+  ],
+  "decodeConnectionUnblocked": [
+    "buffer"
+  ],
+  "encodeConnectionUnblocked": [
+    "channel",
+    "fields"
+  ],
+  "decodeConnectionUpdateSecret": [
+    "buffer"
+  ],
+  "encodeConnectionUpdateSecret": [
+    "channel",
+    "fields"
+  ],
+  "decodeConnectionUpdateSecretOk": [
+    "buffer"
+  ],
+  "encodeConnectionUpdateSecretOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeChannelOpen": [
+    "buffer"
+  ],
+  "encodeChannelOpen": [
+    "channel",
+    "fields"
+  ],
+  "decodeChannelOpenOk": [
+    "buffer"
+  ],
+  "encodeChannelOpenOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeChannelFlow": [
+    "buffer"
+  ],
+  "encodeChannelFlow": [
+    "channel",
+    "fields"
+  ],
+  "decodeChannelFlowOk": [
+    "buffer"
+  ],
+  "encodeChannelFlowOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeChannelClose": [
+    "buffer"
+  ],
+  "encodeChannelClose": [
+    "channel",
+    "fields"
+  ],
+  "decodeChannelCloseOk": [
+    "buffer"
+  ],
+  "encodeChannelCloseOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeAccessRequest": [
+    "buffer"
+  ],
+  "encodeAccessRequest": [
+    "channel",
+    "fields"
+  ],
+  "decodeAccessRequestOk": [
+    "buffer"
+  ],
+  "encodeAccessRequestOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeExchangeDeclare": [
+    "buffer"
+  ],
+  "encodeExchangeDeclare": [
+    "channel",
+    "fields"
+  ],
+  "decodeExchangeDeclareOk": [
+    "buffer"
+  ],
+  "encodeExchangeDeclareOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeExchangeDelete": [
+    "buffer"
+  ],
+  "encodeExchangeDelete": [
+    "channel",
+    "fields"
+  ],
+  "decodeExchangeDeleteOk": [
+    "buffer"
+  ],
+  "encodeExchangeDeleteOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeExchangeBind": [
+    "buffer"
+  ],
+  "encodeExchangeBind": [
+    "channel",
+    "fields"
+  ],
+  "decodeExchangeBindOk": [
+    "buffer"
+  ],
+  "encodeExchangeBindOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeExchangeUnbind": [
+    "buffer"
+  ],
+  "encodeExchangeUnbind": [
+    "channel",
+    "fields"
+  ],
+  "decodeExchangeUnbindOk": [
+    "buffer"
+  ],
+  "encodeExchangeUnbindOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeQueueDeclare": [
+    "buffer"
+  ],
+  "encodeQueueDeclare": [
+    "channel",
+    "fields"
+  ],
+  "decodeQueueDeclareOk": [
+    "buffer"
+  ],
+  "encodeQueueDeclareOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeQueueBind": [
+    "buffer"
+  ],
+  "encodeQueueBind": [
+    "channel",
+    "fields"
+  ],
+  "decodeQueueBindOk": [
+    "buffer"
+  ],
+  "encodeQueueBindOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeQueuePurge": [
+    "buffer"
+  ],
+  "encodeQueuePurge": [
+    "channel",
+    "fields"
+  ],
+  "decodeQueuePurgeOk": [
+    "buffer"
+  ],
+  "encodeQueuePurgeOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeQueueDelete": [
+    "buffer"
+  ],
+  "encodeQueueDelete": [
+    "channel",
+    "fields"
+  ],
+  "decodeQueueDeleteOk": [
+    "buffer"
+  ],
+  "encodeQueueDeleteOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeQueueUnbind": [
+    "buffer"
+  ],
+  "encodeQueueUnbind": [
+    "channel",
+    "fields"
+  ],
+  "decodeQueueUnbindOk": [
+    "buffer"
+  ],
+  "encodeQueueUnbindOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeTxSelect": [
+    "buffer"
+  ],
+  "encodeTxSelect": [
+    "channel",
+    "fields"
+  ],
+  "decodeTxSelectOk": [
+    "buffer"
+  ],
+  "encodeTxSelectOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeTxCommit": [
+    "buffer"
+  ],
+  "encodeTxCommit": [
+    "channel",
+    "fields"
+  ],
+  "decodeTxCommitOk": [
+    "buffer"
+  ],
+  "encodeTxCommitOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeTxRollback": [
+    "buffer"
+  ],
+  "encodeTxRollback": [
+    "channel",
+    "fields"
+  ],
+  "decodeTxRollbackOk": [
+    "buffer"
+  ],
+  "encodeTxRollbackOk": [
+    "channel",
+    "fields"
+  ],
+  "decodeConfirmSelect": [
+    "buffer"
+  ],
+  "encodeConfirmSelect": [
+    "channel",
+    "fields"
+  ],
+  "decodeConfirmSelectOk": [
+    "buffer"
+  ],
+  "encodeConfirmSelectOk": [
+    "channel",
+    "fields"
+  ],
+  "encodeBasicProperties": [
+    "channel",
+    "size",
+    "fields"
+  ],
+  "decodeBasicProperties": [
+    "buffer"
+  ],
+  "trimStack": [
+    "stack",
+    "num"
+  ],
+  "IllegalOperationError": [
+    "msg",
+    "stack"
+  ],
+  "stackCapture": [
+    "reason"
+  ],
+  "readInt64BE": [
+    "buffer",
+    "offset"
+  ],
+  "parseFrame": [
+    "bin"
+  ],
+  "Heart": {
+    "constructor": [
+      "interval",
+      "checkSend",
+      "checkRecv"
+    ],
+    "clear": [],
+    "runHeartbeat": [
+      "check",
+      "fail"
+    ]
+  },
+  "missedTwo": [],
+  "Mux": {
+    "constructor": [
+      "downstream"
+    ],
+    "_readIncoming": [],
+    "_scheduleRead": [],
+    "pipeFrom": [
+      "readable"
+    ],
+    "unpipeFrom": [
+      "readable"
+    ]
+  },
+  "roundrobin": [
+    "streams"
+  ],
+  "enqueue": [],
+  "cleanup": [],
+  "cleanupIfMe": [
+    "dest"
+  ],
+  "doneCallback": [
+    "done"
+  ],
+  "ignore": [],
+  "twice": [
+    "done"
+  ],
+  "first": [
+    "err"
+  ],
+  "second": [
+    "err"
+  ],
+  "failCallback": [
+    "done"
+  ],
+  "waitForMessages": [
+    "q",
+    "num"
+  ],
+  "channel_test_fn": [
+    "method"
+  ],
+  "error_test": [
+    "name",
+    "fun"
+  ],
+  "baseChannelTest": [
+    "client",
+    "server"
+  ],
+  "channelTest": [
+    "client",
+    "server"
+  ],
+  "channel_handshake": [
+    "send",
+    "wait"
+  ],
+  "open": [
+    "ch"
+  ],
+  "wheeboom": [
+    "err",
+    "f"
+  ],
+  "sendOk": [
+    "f"
+  ],
+  "failureCb": [
+    "resolve",
+    "reject"
+  ],
+  "confirmTest": [
+    "variety",
+    "Method"
+  ],
+  "expectFail": [
+    "promise"
+  ],
+  "ignoreErrors": [
+    "c"
+  ],
+  "logErrors": [
+    "c"
+  ],
+  "channel_test": [
+    "chmethod",
+    "name",
+    "chfun"
+  ],
+  "waitForQueue": [
+    "q",
+    "condition"
+  ],
+  "check": [],
+  "delivery": [
+    "m"
+  ],
+  "receive": [
+    "msg"
+  ],
+  "prod": [
+    "num"
+  ],
+  "sendAndPushPromise": [],
+  "bufferToArray": [
+    "b"
+  ],
+  "roundtrip_table": [
+    "t"
+  ],
+  "roundtrips": [
+    "T"
+  ],
+  "removeExplicitTypes": [
+    "input"
+  ],
+  "assertEqualModuloDefaults": [
+    "original",
+    "decodedFields"
+  ],
+  "roundtripMethod": [
+    "Method"
+  ],
+  "roundtripProperties": [
+    "Properties"
+  ],
+  "checkCreds": [
+    "creds",
+    "user",
+    "pass",
+    "done"
+  ],
+  "happy_open": [
+    "send",
+    "wait"
+  ],
+  "connectionTest": [
+    "client",
+    "server"
+  ],
+  "choose": [
+    "a",
+    "b"
+  ],
+  "chooseInt": [
+    "a",
+    "b"
+  ],
+  "rangeInt": [
+    "name",
+    "a",
+    "b"
+  ],
+  "toFloat32": [
+    "i"
+  ],
+  "floatChooser": [
+    "maxExp"
+  ],
+  "explicitType": [
+    "t",
+    "underlying"
+  ],
+  "argtype": [
+    "thing"
+  ],
+  "zipObject": [
+    "vals",
+    "names"
+  ],
+  "name": [
+    "arg"
+  ],
+  "method": [
+    "info"
+  ],
+  "properties": [
+    "info"
+  ],
+  "inputs": [],
+  "testBogusFrame": [
+    "name",
+    "bytes"
+  ],
+  "testPartitioning": [
+    "partition"
+  ],
+  "stream": [],
+  "readAllObjects": [
+    "s",
+    "cb"
+  ],
+  "read": [],
+  "randomString": [],
+  "socketPair": [],
+  "end": [
+    "chunk",
+    "encoding"
+  ],
+  "runServer": [
+    "socket",
+    "run"
+  ],
+  "succeedIfAttributeEquals": [
+    "attribute",
+    "value",
+    "done"
+  ],
+  "fail": [
+    "done"
+  ],
+  "latch": [
+    "count",
+    "done"
+  ],
+  "completes": [
+    "thunk",
+    "done"
+  ],
+  "kCallback": [
+    "k",
+    "ek"
+  ],
+  "versionGreaterThan": [
+    "actual",
+    "spec"
+  ],
+  "int": [
+    "e"
+  ]
+}

@@ -1,0 +1,634 @@
+{
+  "BufferedTokenStream": {
+    "tokenSource": []
+  },
+  "CharStream": {
+    "index": [],
+    "size": [],
+    "constructor": [
+      "data",
+      "decodeToUnicodeCodePoints"
+    ],
+    "reset": [],
+    "consume": [],
+    "LA": [
+      "offset"
+    ],
+    "LT": [
+      "offset"
+    ],
+    "mark": [],
+    "release": [
+      "marker"
+    ],
+    "seek": [
+      "index"
+    ],
+    "getText": [
+      "start",
+      "stop"
+    ],
+    "toString": []
+  },
+  "CharStreams": {
+    "fromString": [
+      "data",
+      "decodeToUnicodeCodePoints"
+    ],
+    "fromBuffer": [
+      "buffer",
+      "encoding"
+    ],
+    "fromBlob": [
+      "blob",
+      "encoding",
+      "onLoad",
+      "onError"
+    ],
+    "fromPath": [
+      "path",
+      "encoding",
+      "callback"
+    ],
+    "fromPathSync": [
+      "path",
+      "encoding"
+    ]
+  },
+  "CommonToken": {
+    "constructor": [
+      "source",
+      "type",
+      "channel",
+      "start",
+      "stop"
+    ],
+    "clone": [],
+    "cloneWithType": [
+      "type"
+    ],
+    "toString": []
+  },
+  "CommonTokenStream": {
+    "tokens": [],
+    "constructor": [
+      "lexer",
+      "channel"
+    ],
+    "fill": []
+  },
+  "FileStream": {
+    "fileName": [],
+    "constructor": [
+      "fileName",
+      "encoding",
+      "decodeToUnicodeCodePoints"
+    ]
+  },
+  "InputStream": {
+    "constructor": [
+      "data",
+      "decodeToUnicodeCodePoints"
+    ]
+  },
+  "Lexer": {
+    "DEFAULT_MODE": [],
+    "_input": [],
+    "_interp": [],
+    "text": [],
+    "line": [],
+    "column": [],
+    "_tokenStartCharIndex": [],
+    "_tokenStartLine": [],
+    "_tokenStartColumn": [],
+    "_type": [],
+    "constructor": [
+      "input"
+    ],
+    "reset": [],
+    "nextToken": [],
+    "skip": [],
+    "more": [],
+    "setMode": [
+      "m"
+    ],
+    "getMode": [],
+    "getModeStack": [],
+    "pushMode": [
+      "m"
+    ],
+    "popMode": [],
+    "emitToken": [
+      "token"
+    ],
+    "emit": [],
+    "emitEOF": [],
+    "getAllTokens": []
+  },
+  "Parser": {
+    "EOF": [],
+    "_input": [],
+    "_ctx": [],
+    "_interp": [],
+    "_errHandler": [],
+    "_parseListeners": [],
+    "matchedEOF": [],
+    "buildParseTrees": [],
+    "printer": [],
+    "syntaxErrorsCount": [],
+    "constructor": [
+      "input"
+    ],
+    "match": [
+      "ttype"
+    ],
+    "matchWildcard": [],
+    "getParseListeners": [],
+    "addParseListener": [
+      "listener"
+    ],
+    "removeParseListener": [
+      "listener"
+    ],
+    "removeParseListeners": [],
+    "consume": [],
+    "enterRule": [
+      "localctx",
+      "state",
+      "ruleIndex"
+    ],
+    "exitRule": [],
+    "triggerExitRuleEvent": [],
+    "enterOuterAlt": [
+      "localctx",
+      "altNum"
+    ],
+    "enterRecursionRule": [
+      "localctx",
+      "state",
+      "ruleIndex",
+      "precedence"
+    ],
+    "pushNewRecursionContext": [
+      "localctx",
+      "state",
+      "ruleIndex"
+    ],
+    "unrollRecursionContexts": [
+      "parentCtx"
+    ],
+    "precpred": [
+      "localctx",
+      "precedence"
+    ],
+    "getRuleInvocationStack": [],
+    "dumpDFA": [],
+    "getExpectedTokens": [],
+    "getTokenStream": [],
+    "reset": [],
+    "setTokenStream": [
+      "input"
+    ],
+    "notifyErrorListeners": [
+      "msg",
+      "offendingToken",
+      "err"
+    ],
+    "getCurrentToken": []
+  },
+  "Recognizer": {
+    "state": [],
+    "removeErrorListeners": [],
+    "addErrorListener": [
+      "listener"
+    ],
+    "getErrorListener": [],
+    "getLiteralNames": [],
+    "getSymbolicNames": []
+  },
+  "Token": {
+    "INVALID_TYPE": [],
+    "EOF": [],
+    "DEFAULT_CHANNEL": [],
+    "HIDDEN_CHANNEL": [],
+    "tokenIndex": [],
+    "line": [],
+    "column": [],
+    "channel": [],
+    "text": [],
+    "type": [],
+    "start": [],
+    "stop": [],
+    "clone": [],
+    "cloneWithType": [
+      "type"
+    ],
+    "getTokenSource": [],
+    "getInputStream": []
+  },
+  "TokenSource": {},
+  "TokenStream": {
+    "index": [],
+    "size": [],
+    "LA": [
+      "i"
+    ],
+    "LT": [
+      "k"
+    ],
+    "getText": [
+      "interval"
+    ],
+    "getHiddenTokensToLeft": [
+      "tokenIndex",
+      "channelIndex"
+    ],
+    "getHiddenTokensToRight": [
+      "tokenIndex",
+      "channelIndex"
+    ],
+    "get": [
+      "idx"
+    ]
+  },
+  "TokenStreamRewriter": {
+    "DEFAULT_PROGRAM_NAME": [],
+    "constructor": [
+      "tokens"
+    ],
+    "getTokenStream": [],
+    "insertAfter": [
+      "index",
+      "text",
+      "programName"
+    ],
+    "insertBefore": [
+      "index",
+      "text",
+      "programName"
+    ],
+    "replaceSingle": [
+      "index",
+      "text",
+      "programName"
+    ],
+    "replace": [
+      "from",
+      "to",
+      "text",
+      "programName"
+    ],
+    "delete": [
+      "from",
+      "to",
+      "programName"
+    ],
+    "getProgram": [
+      "name"
+    ],
+    "initializeProgram": [
+      "name"
+    ],
+    "getText": [
+      "interval",
+      "programName"
+    ],
+    "reduceToSingleOperationPerIndex": [
+      "rewrites"
+    ],
+    "catOpText": [
+      "a",
+      "b"
+    ],
+    "getKindOfOps": [
+      "rewrites",
+      "kind",
+      "before"
+    ]
+  },
+  "RewriteOperation": {
+    "constructor": [
+      "tokens",
+      "index",
+      "instructionIndex",
+      "text"
+    ],
+    "tokens": [],
+    "instructionIndex": [],
+    "index": [],
+    "text": [],
+    "toString": []
+  },
+  "ATN": {
+    "INVALID_ALT_NUMBER": [],
+    "states": [],
+    "decisionToState": [],
+    "ruleToStartState": [],
+    "ruleToStopState": [],
+    "getExpectedTokens": [
+      "stateNumber",
+      "ctx"
+    ],
+    "nextTokens": [
+      "atnState",
+      "ctx"
+    ]
+  },
+  "ATNConfig": {
+    "state": []
+  },
+  "ATNConfigSet": {
+    "configs": []
+  },
+  "ATNDeserializationOptions": {
+    "readOnly": [],
+    "verifyATN": [],
+    "generateRuleBypassTransitions": []
+  },
+  "ATNDeserializer": {
+    "constructor": [
+      "options"
+    ],
+    "deserialize": [
+      "data"
+    ]
+  },
+  "ATNSimulator": {},
+  "LexerATNSimulator": {
+    "decisionToDFA": [],
+    "constructor": [
+      "recog",
+      "atn",
+      "decisionToDFA",
+      "sharedContextCache"
+    ],
+    "consume": [
+      "input"
+    ]
+  },
+  "ParserATNSimulator": {
+    "predictionMode": [],
+    "decisionToDFA": [],
+    "atn": [],
+    "debug": [],
+    "trace_atn_sim": [],
+    "constructor": [
+      "recog",
+      "atn",
+      "decisionToDFA",
+      "sharedContextCache"
+    ],
+    "adaptivePredict": [
+      "input",
+      "decision",
+      "outerContext"
+    ]
+  },
+  "PredictionContextCache": {},
+  "PredictionMode": {
+    "SLL": [],
+    "LL": [],
+    "LL_EXACT_AMBIG_DETECTION": []
+  },
+  "ParserRuleContext": {
+    "start": [],
+    "stop": [],
+    "children": [],
+    "parentCtx": [],
+    "exception": [],
+    "parser": [],
+    "constructor": [
+      "parent",
+      "invokingStateNumber"
+    ],
+    "copyFrom": [
+      "ctx"
+    ],
+    "getChildCount": [],
+    "getChild": [
+      "i"
+    ],
+    "getToken": [
+      "ttype",
+      "i"
+    ],
+    "getTokens": [
+      "ttype"
+    ],
+    "getTypedRuleContext": [
+      "ctxType",
+      "i"
+    ],
+    "getTypedRuleContexts": [
+      "ctxType"
+    ]
+  },
+  "RuleContext": {
+    "parentCtx": [],
+    "invokingState": [],
+    "ruleContext": [],
+    "toStringTree": [
+      "ruleNames",
+      "recog"
+    ]
+  },
+  "DFA": {
+    "constructor": [
+      "ds",
+      "index"
+    ],
+    "toLexerString": []
+  },
+  "BailErrorStrategy": {
+    "constructor": []
+  },
+  "DefaultErrorStrategy": {
+    "recover": [
+      "recognizer",
+      "e"
+    ],
+    "recoverInline": [
+      "recognizer"
+    ],
+    "reportError": [
+      "recognizer",
+      "e"
+    ],
+    "reportMatch": [
+      "recognizer"
+    ],
+    "reset": [
+      "recognizer"
+    ],
+    "sync": [
+      "recognizer"
+    ],
+    "inErrorRecoveryMode": [
+      "recognizer"
+    ],
+    "beginErrorCondition": [
+      "recognizer"
+    ],
+    "getMissingSymbol": [
+      "recognizer"
+    ]
+  },
+  "DiagnosticErrorListener": {
+    "syntaxError": [
+      "recognizer",
+      "offendingSymbol",
+      "line",
+      "column",
+      "msg",
+      "e"
+    ]
+  },
+  "ErrorListener": {
+    "syntaxError": [
+      "recognizer",
+      "offendingSymbol",
+      "line",
+      "column",
+      "msg",
+      "e"
+    ]
+  },
+  "ErrorStrategy": {
+    "reset": [
+      "recognizer"
+    ],
+    "sync": [
+      "recognizer"
+    ],
+    "recover": [
+      "recognizer",
+      "e"
+    ],
+    "recoverInline": [
+      "recognizer"
+    ],
+    "reportMatch": [
+      "recognizer"
+    ],
+    "reportError": [
+      "recognizer",
+      "e"
+    ]
+  },
+  "FailedPredicateException": {
+    "constructor": [
+      "recognizer",
+      "predicate",
+      "message"
+    ]
+  },
+  "InputMismatchException": {
+    "constructor": [
+      "recognizer"
+    ]
+  },
+  "NoViableAltException": {
+    "deadEndConfigs": [],
+    "constructor": [
+      "recognizer"
+    ],
+    "startToken": []
+  },
+  "RecognitionException": {
+    "ctx": [],
+    "offendingToken": [],
+    "constructor": [
+      "params"
+    ]
+  },
+  "Interval": {
+    "start": [],
+    "stop": [],
+    "constructor": [
+      "start",
+      "stop"
+    ]
+  },
+  "IntervalSet": {
+    "isNil": [],
+    "size": [],
+    "minElement": [],
+    "maxElement": [],
+    "intervals": [],
+    "contains": [
+      "i"
+    ],
+    "toString": [
+      "literalNames",
+      "symbolicNames",
+      "elemsAreChar"
+    ]
+  },
+  "ATNState": {
+    "atn": [],
+    "stateNumber": []
+  },
+  "DecisionState": {
+    "decision": [],
+    "nonGreedy": []
+  },
+  "RuleStartState": {
+    "stopState": [],
+    "isLeftRecursiveRule": []
+  },
+  "RuleStopState": {},
+  "ErrorNode": {},
+  "ParseTree": {
+    "getText": []
+  },
+  "ParseTreeListener": {
+    "visitTerminal": [
+      "node"
+    ],
+    "visitErrorNode": [
+      "node"
+    ],
+    "enterEveryRule": [
+      "ctx"
+    ],
+    "exitEveryRule": [
+      "ctx"
+    ]
+  },
+  "ParseTreeVisitor": {
+    "visit": [
+      "tree"
+    ],
+    "visitChildren": [
+      "node"
+    ],
+    "visitTerminal": [
+      "node"
+    ],
+    "visitErrorNode": [
+      "node"
+    ]
+  },
+  "ParseTreeWalker": {
+    "DEFAULT": [],
+    "walk": [
+      "listener",
+      "t"
+    ]
+  },
+  "RuleNode": {},
+  "SyntaxTree": {},
+  "TerminalNode": {
+    "symbol": [],
+    "parentCtx": []
+  },
+  "Tree": {},
+  "Printer": {
+    "print": [
+      "s"
+    ],
+    "println": [
+      "s"
+    ]
+  }
+}

@@ -1,0 +1,416 @@
+{
+  "NodeSnapshotEnvironment": {
+    "constructor": [
+      "param"
+    ],
+    "getVersion": [],
+    "getHeader": [],
+    "resolveRawPath": [
+      "testPath",
+      "rawPath"
+    ],
+    "resolvePath": [
+      "filepath"
+    ],
+    "prepareDirectory": [
+      "dirPath"
+    ],
+    "saveSnapshotFile": [
+      "filepath",
+      "snapshot"
+    ],
+    "readSnapshotFile": [
+      "filepath"
+    ],
+    "removeSnapshotFile": [
+      "filepath"
+    ]
+  },
+  "DefaultMap": {
+    "constructor": [
+      "defaultFn",
+      "entries"
+    ],
+    "get": [
+      "key"
+    ]
+  },
+  "CounterMap": {
+    "constructor": [],
+    "_total": [],
+    "valueOf": [],
+    "increment": [
+      "key"
+    ],
+    "total": []
+  },
+  "SnapshotState": {
+    "_counters": [],
+    "_dirty": [],
+    "_updateSnapshot": [],
+    "_snapshotData": [],
+    "_initialData": [],
+    "_inlineSnapshots": [],
+    "_inlineSnapshotStacks": [],
+    "_testIdToKeys": [],
+    "_rawSnapshots": [],
+    "_uncheckedKeys": [],
+    "_snapshotFormat": [],
+    "_environment": [],
+    "_fileExists": [],
+    "expand": [],
+    "_added": [],
+    "_matched": [],
+    "_unmatched": [],
+    "_updated": [],
+    "added": [
+      "value"
+    ],
+    "matched": [
+      "value"
+    ],
+    "unmatched": [
+      "value"
+    ],
+    "updated": [
+      "value"
+    ],
+    "constructor": [
+      "testFilePath",
+      "snapshotPath",
+      "snapshotContent",
+      "options"
+    ],
+    "create": [
+      "testFilePath",
+      "options"
+    ],
+    "environment": [],
+    "markSnapshotsAsCheckedForTest": [
+      "testName"
+    ],
+    "clearTest": [
+      "testId"
+    ],
+    "_inferInlineSnapshotStack": [
+      "stacks"
+    ],
+    "_addSnapshot": [
+      "key",
+      "receivedSerialized",
+      "options"
+    ],
+    "save": [],
+    "getUncheckedCount": [],
+    "getUncheckedKeys": [],
+    "removeUncheckedKeys": [],
+    "match": [
+      "param"
+    ],
+    "pack": []
+  },
+  "SnapshotClient": {
+    "snapshotStateMap": [],
+    "constructor": [
+      "param"
+    ],
+    "setup": [
+      "filepath",
+      "options"
+    ],
+    "finish": [
+      "filepath"
+    ],
+    "skipTest": [
+      "filepath",
+      "testName"
+    ],
+    "clearTest": [
+      "filepath",
+      "testId"
+    ],
+    "getSnapshotState": [
+      "filepath"
+    ],
+    "assert": [
+      "options"
+    ],
+    "assertRaw": [
+      "options"
+    ],
+    "clear": []
+  },
+  "decodeInteger": [
+    "reader",
+    "relative"
+  ],
+  "hasMoreVlq": [
+    "reader",
+    "max"
+  ],
+  "decode": [
+    "mappings"
+  ],
+  "sort": [
+    "line"
+  ],
+  "sortComparator": [
+    "a",
+    "b"
+  ],
+  "binarySearch": [
+    "haystack",
+    "needle",
+    "low",
+    "high"
+  ],
+  "upperBound": [
+    "haystack",
+    "needle",
+    "index"
+  ],
+  "lowerBound": [
+    "haystack",
+    "needle",
+    "index"
+  ],
+  "memoizedBinarySearch": [
+    "haystack",
+    "needle",
+    "state",
+    "key"
+  ],
+  "cast": [
+    "map"
+  ],
+  "decodedMappings": [
+    "map"
+  ],
+  "originalPositionFor": [
+    "map",
+    "needle"
+  ],
+  "OMapping": [
+    "source",
+    "line",
+    "column",
+    "name"
+  ],
+  "traceSegmentInternal": [
+    "segments",
+    "memo",
+    "line",
+    "column",
+    "bias"
+  ],
+  "notNullish": [
+    "v"
+  ],
+  "isPrimitive": [
+    "value"
+  ],
+  "isObject": [
+    "item"
+  ],
+  "getCallLastIndex": [
+    "code"
+  ],
+  "extractLocation": [
+    "urlLike"
+  ],
+  "parseSingleFFOrSafariStack": [
+    "raw"
+  ],
+  "parseSingleV8Stack": [
+    "raw"
+  ],
+  "parseStacktrace": [
+    "stack",
+    "param"
+  ],
+  "shouldFilter": [
+    "ignoreStackEntries",
+    "file"
+  ],
+  "parseFFOrSafariStackTrace": [
+    "stack"
+  ],
+  "parseV8Stacktrace": [
+    "stack"
+  ],
+  "parseErrorStacktrace": [
+    "e",
+    "param"
+  ],
+  "DecodedMap": {
+    "_encoded": [],
+    "_decoded": [],
+    "_decodedMemo": [],
+    "url": [],
+    "version": [],
+    "names": [],
+    "resolvedSources": [],
+    "constructor": [
+      "map",
+      "from"
+    ]
+  },
+  "memoizedState": [],
+  "getOriginalPosition": [
+    "map",
+    "needle"
+  ],
+  "positionToOffset": [
+    "source",
+    "lineNumber",
+    "columnNumber"
+  ],
+  "offsetToLineNumber": [
+    "source",
+    "offset"
+  ],
+  "saveInlineSnapshots": [
+    "environment",
+    "snapshots"
+  ],
+  "replaceObjectSnap": [
+    "code",
+    "s",
+    "index",
+    "newSnap"
+  ],
+  "getObjectShapeEndIndex": [
+    "code",
+    "index"
+  ],
+  "prepareSnapString": [
+    "snap",
+    "source",
+    "index"
+  ],
+  "getCodeStartingAtIndex": [
+    "code",
+    "index"
+  ],
+  "replaceInlineSnap": [
+    "code",
+    "s",
+    "currentIndex",
+    "newSnap"
+  ],
+  "stripSnapshotIndentation": [
+    "inlineSnapshot"
+  ],
+  "saveRawSnapshots": [
+    "environment",
+    "snapshots"
+  ],
+  "getDefaultExportFromCjs": [
+    "x"
+  ],
+  "requireNaturalCompare": [],
+  "naturalCompare": [
+    "a",
+    "b"
+  ],
+  "getCode": [
+    "str",
+    "pos",
+    "code"
+  ],
+  "serialize$1": [
+    "val",
+    "config",
+    "indentation",
+    "depth",
+    "refs",
+    "printer"
+  ],
+  "test": [
+    "val"
+  ],
+  "addSerializer": [
+    "plugin"
+  ],
+  "getSerializers": [],
+  "testNameToKey": [
+    "testName",
+    "count"
+  ],
+  "keyToTestName": [
+    "key"
+  ],
+  "getSnapshotData": [
+    "content",
+    "options"
+  ],
+  "addExtraLineBreaks": [
+    "string"
+  ],
+  "removeExtraLineBreaks": [
+    "string"
+  ],
+  "serialize": [
+    "val",
+    "param",
+    "param"
+  ],
+  "escapeBacktickString": [
+    "str"
+  ],
+  "printBacktickString": [
+    "str"
+  ],
+  "normalizeNewlines": [
+    "string"
+  ],
+  "saveSnapshotFile": [
+    "environment",
+    "snapshotData",
+    "snapshotPath"
+  ],
+  "deepMergeArray": [
+    "param",
+    "param"
+  ],
+  "deepMergeSnapshot": [
+    "target",
+    "source"
+  ],
+  "isSameStackPosition": [
+    "x",
+    "y"
+  ],
+  "createMismatchError": [
+    "message",
+    "expand",
+    "actual",
+    "expected"
+  ],
+  "SnapshotManager": {
+    "summary": [],
+    "extension": [],
+    "constructor": [
+      "options"
+    ],
+    "clear": [],
+    "add": [
+      "result"
+    ],
+    "resolvePath": [
+      "testPath",
+      "context"
+    ],
+    "resolveRawPath": [
+      "testPath",
+      "rawPath"
+    ]
+  },
+  "emptySummary": [
+    "options"
+  ],
+  "addSnapshotResult": [
+    "summary",
+    "result"
+  ]
+}

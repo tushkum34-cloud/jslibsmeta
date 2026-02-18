@@ -1,0 +1,497 @@
+{
+  "Dir": {
+    "constructor": [
+      "path",
+      "handle",
+      "param"
+    ],
+    "read": [
+      "cb"
+    ],
+    "readSync": [],
+    "close": [
+      "cb"
+    ],
+    "closeSync": []
+  },
+  "Dirent": {
+    "constructor": [
+      "parentPath",
+      "name",
+      "type"
+    ],
+    "isFile": [],
+    "isDirectory": [],
+    "isSymbolicLink": [],
+    "isFIFO": [],
+    "isSocket": [],
+    "isCharacterDevice": [],
+    "isBlockDevice": []
+  },
+  "Stats": {
+    "constructor": [
+      "dev",
+      "mode",
+      "nlink",
+      "uid",
+      "gid",
+      "rdev",
+      "blksize",
+      "ino",
+      "size",
+      "blocks",
+      "atimeMs",
+      "mtimeMs",
+      "ctimeMs",
+      "birthtimeMs"
+    ],
+    "isDirectory": [],
+    "isFile": [],
+    "isBlockDevice": [],
+    "isCharacterDevice": [],
+    "isFIFO": [],
+    "isSymbolicLink": [],
+    "isSocket": []
+  },
+  "ReadStream": {
+    "constructor": [
+      "path",
+      "opts"
+    ]
+  },
+  "WriteStream": {
+    "constructor": [
+      "path",
+      "opts"
+    ]
+  },
+  "Watcher": {
+    "constructor": [
+      "path",
+      "opts",
+      "onchange"
+    ],
+    "close": [],
+    "ref": [],
+    "unref": [],
+    "_onevent": [
+      "err",
+      "events",
+      "filename"
+    ],
+    "_onclose": []
+  },
+  "FileRequest": {
+    "_free": [],
+    "borrow": [],
+    "return": [],
+    "constructor": [],
+    "handle": [],
+    "retain": [
+      "value"
+    ],
+    "reset": [],
+    "destroy": [],
+    "then": [
+      "resolve",
+      "reject"
+    ],
+    "_reset": [],
+    "_onresult": [
+      "err",
+      "status"
+    ]
+  },
+  "ok": [
+    "result",
+    "cb"
+  ],
+  "fail": [
+    "err",
+    "cb"
+  ],
+  "done": [
+    "err",
+    "result",
+    "cb"
+  ],
+  "open": [
+    "filepath",
+    "param",
+    "param",
+    "cb"
+  ],
+  "openSync": [
+    "filepath",
+    "param",
+    "param"
+  ],
+  "close": [
+    "fd",
+    "cb"
+  ],
+  "closeSync": [
+    "fd"
+  ],
+  "access": [
+    "filepath",
+    "param",
+    "cb"
+  ],
+  "accessSync": [
+    "filepath",
+    "param"
+  ],
+  "exists": [
+    "filepath",
+    "cb"
+  ],
+  "existsSync": [
+    "filepath"
+  ],
+  "read": [
+    "fd",
+    "buffer",
+    "param",
+    "param",
+    "param",
+    "cb"
+  ],
+  "readSync": [
+    "fd",
+    "buffer",
+    "param",
+    "param",
+    "param"
+  ],
+  "readv": [
+    "fd",
+    "buffers",
+    "param",
+    "cb"
+  ],
+  "readvSync": [
+    "fd",
+    "buffers",
+    "param"
+  ],
+  "write": [
+    "fd",
+    "data",
+    "offset",
+    "len",
+    "param",
+    "cb"
+  ],
+  "writeSync": [
+    "fd",
+    "data",
+    "offset",
+    "len",
+    "param"
+  ],
+  "writev": [
+    "fd",
+    "buffers",
+    "param",
+    "cb"
+  ],
+  "writevSync": [
+    "fd",
+    "buffers",
+    "param"
+  ],
+  "stat": [
+    "filepath",
+    "cb"
+  ],
+  "statSync": [
+    "filepath"
+  ],
+  "lstat": [
+    "filepath",
+    "cb"
+  ],
+  "lstatSync": [
+    "filepath"
+  ],
+  "fstat": [
+    "fd",
+    "cb"
+  ],
+  "fstatSync": [
+    "fd"
+  ],
+  "ftruncate": [
+    "fd",
+    "param",
+    "cb"
+  ],
+  "ftruncateSync": [
+    "fd",
+    "param"
+  ],
+  "chmod": [
+    "filepath",
+    "mode",
+    "cb"
+  ],
+  "chmodSync": [
+    "filepath",
+    "mode"
+  ],
+  "fchmod": [
+    "fd",
+    "mode",
+    "cb"
+  ],
+  "fchmodSync": [
+    "fd",
+    "mode"
+  ],
+  "utimes": [
+    "filepath",
+    "atime",
+    "mtime",
+    "cb"
+  ],
+  "utimesSync": [
+    "filepath",
+    "atime",
+    "mtime"
+  ],
+  "mkdir": [
+    "filepath",
+    "opts",
+    "cb"
+  ],
+  "mkdirSync": [
+    "filepath",
+    "opts"
+  ],
+  "rmdir": [
+    "filepath",
+    "cb"
+  ],
+  "rmdirSync": [
+    "filepath"
+  ],
+  "rm": [
+    "filepath",
+    "opts",
+    "cb"
+  ],
+  "rmSync": [
+    "filepath",
+    "opts"
+  ],
+  "unlink": [
+    "filepath",
+    "cb"
+  ],
+  "unlinkSync": [
+    "filepath"
+  ],
+  "rename": [
+    "src",
+    "dst",
+    "cb"
+  ],
+  "renameSync": [
+    "src",
+    "dst"
+  ],
+  "copyFile": [
+    "src",
+    "dst",
+    "param",
+    "cb"
+  ],
+  "copyFileSync": [
+    "src",
+    "dst",
+    "param"
+  ],
+  "cp": [
+    "src",
+    "dst",
+    "opts",
+    "cb"
+  ],
+  "realpath": [
+    "filepath",
+    "opts",
+    "cb"
+  ],
+  "realpathSync": [
+    "filepath",
+    "opts"
+  ],
+  "readlink": [
+    "filepath",
+    "opts",
+    "cb"
+  ],
+  "readlinkSync": [
+    "filepath",
+    "opts"
+  ],
+  "normalizeSymlinkTarget": [
+    "target",
+    "type",
+    "filepath"
+  ],
+  "symlink": [
+    "target",
+    "filepath",
+    "type",
+    "cb"
+  ],
+  "symlinkSync": [
+    "target",
+    "filepath",
+    "type"
+  ],
+  "opendir": [
+    "filepath",
+    "opts",
+    "cb"
+  ],
+  "opendirSync": [
+    "filepath",
+    "opts"
+  ],
+  "readdir": [
+    "filepath",
+    "opts",
+    "cb"
+  ],
+  "readdirSync": [
+    "filepath",
+    "opts"
+  ],
+  "readFile": [
+    "filepath",
+    "opts",
+    "cb"
+  ],
+  "readFileSync": [
+    "filepath",
+    "opts"
+  ],
+  "writeFile": [
+    "filepath",
+    "data",
+    "opts",
+    "cb"
+  ],
+  "writeFileSync": [
+    "filepath",
+    "data",
+    "opts"
+  ],
+  "appendFile": [
+    "filepath",
+    "data",
+    "opts",
+    "cb"
+  ],
+  "appendFileSync": [
+    "filepath",
+    "data",
+    "opts"
+  ],
+  "watch": [
+    "filepath",
+    "opts",
+    "cb"
+  ],
+  "FileReadStream": {
+    "constructor": [
+      "path",
+      "param"
+    ],
+    "_open": [
+      "cb"
+    ],
+    "_read": [
+      "size"
+    ],
+    "_destroy": [
+      "err",
+      "cb"
+    ]
+  },
+  "FileWriteStream": {
+    "constructor": [
+      "path",
+      "param"
+    ],
+    "_open": [
+      "cb"
+    ],
+    "_writev": [
+      "batch",
+      "cb"
+    ],
+    "_destroy": [
+      "err",
+      "cb"
+    ]
+  },
+  "toNamespacedPath": [
+    "filepath"
+  ],
+  "toFlags": [
+    "flags"
+  ],
+  "toMode": [
+    "mode"
+  ],
+  "FileError": {
+    "constructor": [
+      "msg"
+    ],
+    "code": [],
+    "operation": [],
+    "path": [],
+    "destination": [],
+    "fd": []
+  },
+  "describe": [
+    "operation",
+    "opts"
+  ],
+  "FileHandle": {
+    "constructor": [
+      "fd"
+    ],
+    "close": [],
+    "read": [
+      "buffer",
+      "param"
+    ],
+    "readv": [
+      "buffers",
+      "param"
+    ],
+    "write": [
+      "buffer",
+      "param"
+    ],
+    "writev": [
+      "buffers",
+      "param"
+    ],
+    "stat": [],
+    "chmod": [
+      "mode"
+    ],
+    "createReadStream": [
+      "opts"
+    ],
+    "createWriteStream": [
+      "opts"
+    ]
+  }
+}

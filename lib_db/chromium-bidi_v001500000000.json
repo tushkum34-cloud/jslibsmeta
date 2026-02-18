@@ -1,0 +1,3494 @@
+{
+  "BidiNoOpParser": {
+    "parseDisableSimulationParameters": [
+      "params"
+    ],
+    "parseHandleRequestDevicePromptParams": [
+      "params"
+    ],
+    "parseSimulateAdapterParameters": [
+      "params"
+    ],
+    "parseSimulateAdvertisementParameters": [
+      "params"
+    ],
+    "parseSimulateCharacteristicParameters": [
+      "params"
+    ],
+    "parseSimulateCharacteristicResponseParameters": [
+      "params"
+    ],
+    "parseSimulateDescriptorParameters": [
+      "params"
+    ],
+    "parseSimulateDescriptorResponseParameters": [
+      "params"
+    ],
+    "parseSimulateGattConnectionResponseParameters": [
+      "params"
+    ],
+    "parseSimulateGattDisconnectionParameters": [
+      "params"
+    ],
+    "parseSimulatePreconnectedPeripheralParameters": [
+      "params"
+    ],
+    "parseSimulateServiceParameters": [
+      "params"
+    ],
+    "parseCreateUserContextParameters": [
+      "params"
+    ],
+    "parseRemoveUserContextParameters": [
+      "params"
+    ],
+    "parseSetClientWindowStateParameters": [
+      "params"
+    ],
+    "parseSetDownloadBehaviorParameters": [
+      "params"
+    ],
+    "parseActivateParams": [
+      "params"
+    ],
+    "parseCaptureScreenshotParams": [
+      "params"
+    ],
+    "parseCloseParams": [
+      "params"
+    ],
+    "parseCreateParams": [
+      "params"
+    ],
+    "parseGetTreeParams": [
+      "params"
+    ],
+    "parseHandleUserPromptParams": [
+      "params"
+    ],
+    "parseLocateNodesParams": [
+      "params"
+    ],
+    "parseNavigateParams": [
+      "params"
+    ],
+    "parsePrintParams": [
+      "params"
+    ],
+    "parseReloadParams": [
+      "params"
+    ],
+    "parseSetViewportParams": [
+      "params"
+    ],
+    "parseTraverseHistoryParams": [
+      "params"
+    ],
+    "parseGetSessionParams": [
+      "params"
+    ],
+    "parseResolveRealmParams": [
+      "params"
+    ],
+    "parseSendCommandParams": [
+      "params"
+    ],
+    "parseSetClientHintsOverrideParams": [
+      "params"
+    ],
+    "parseSetForcedColorsModeThemeOverrideParams": [
+      "params"
+    ],
+    "parseSetGeolocationOverrideParams": [
+      "params"
+    ],
+    "parseSetLocaleOverrideParams": [
+      "params"
+    ],
+    "parseSetNetworkConditionsParams": [
+      "params"
+    ],
+    "parseSetScreenOrientationOverrideParams": [
+      "params"
+    ],
+    "parseSetScreenSettingsOverrideParams": [
+      "params"
+    ],
+    "parseSetScriptingEnabledParams": [
+      "params"
+    ],
+    "parseSetTimezoneOverrideParams": [
+      "params"
+    ],
+    "parseSetTouchOverrideParams": [
+      "params"
+    ],
+    "parseSetUserAgentOverrideParams": [
+      "params"
+    ],
+    "parseAddPreloadScriptParams": [
+      "params"
+    ],
+    "parseCallFunctionParams": [
+      "params"
+    ],
+    "parseDisownParams": [
+      "params"
+    ],
+    "parseEvaluateParams": [
+      "params"
+    ],
+    "parseGetRealmsParams": [
+      "params"
+    ],
+    "parseRemovePreloadScriptParams": [
+      "params"
+    ],
+    "parsePerformActionsParams": [
+      "params"
+    ],
+    "parseReleaseActionsParams": [
+      "params"
+    ],
+    "parseSetFilesParams": [
+      "params"
+    ],
+    "parseAddDataCollectorParams": [
+      "params"
+    ],
+    "parseAddInterceptParams": [
+      "params"
+    ],
+    "parseContinueRequestParams": [
+      "params"
+    ],
+    "parseContinueResponseParams": [
+      "params"
+    ],
+    "parseContinueWithAuthParams": [
+      "params"
+    ],
+    "parseDisownDataParams": [
+      "params"
+    ],
+    "parseFailRequestParams": [
+      "params"
+    ],
+    "parseGetDataParams": [
+      "params"
+    ],
+    "parseProvideResponseParams": [
+      "params"
+    ],
+    "parseRemoveDataCollectorParams": [
+      "params"
+    ],
+    "parseRemoveInterceptParams": [
+      "params"
+    ],
+    "parseSetCacheBehaviorParams": [
+      "params"
+    ],
+    "parseSetExtraHeadersParams": [
+      "params"
+    ],
+    "parseSetPermissionsParams": [
+      "params"
+    ],
+    "parseSubscribeParams": [
+      "params"
+    ],
+    "parseUnsubscribeParams": [
+      "params"
+    ],
+    "parseDeleteCookiesParams": [
+      "params"
+    ],
+    "parseGetCookiesParams": [
+      "params"
+    ],
+    "parseSetCookieParams": [
+      "params"
+    ],
+    "parseInstallParams": [
+      "params"
+    ],
+    "parseUninstallParams": [
+      "params"
+    ]
+  },
+  "BidiServer": {
+    "constructor": [
+      "bidiTransport",
+      "cdpConnection",
+      "browserCdpClient",
+      "selfTargetId",
+      "defaultUserContextId",
+      "defaultUserAgent",
+      "parser",
+      "logger"
+    ],
+    "createAndStart": [
+      "bidiTransport",
+      "cdpConnection",
+      "browserCdpClient",
+      "selfTargetId",
+      "parser",
+      "logger"
+    ],
+    "emitOutgoingMessage": [
+      "messageEntry",
+      "event"
+    ],
+    "close": []
+  },
+  "CommandProcessor": {
+    "constructor": [
+      "cdpConnection",
+      "browserCdpClient",
+      "eventManager",
+      "browsingContextStorage",
+      "realmStorage",
+      "preloadScriptStorage",
+      "networkStorage",
+      "contextConfigStorage",
+      "bluetoothProcessor",
+      "userContextStorage",
+      "param",
+      "initConnection",
+      "logger"
+    ],
+    "processCommand": [
+      "command"
+    ]
+  },
+  "OutgoingMessage": {
+    "constructor": [
+      "message",
+      "param"
+    ],
+    "createFromPromise": [
+      "messagePromise",
+      "googChannel"
+    ],
+    "createResolved": [
+      "message",
+      "param"
+    ],
+    "message": [],
+    "googChannel": []
+  },
+  "BluetoothProcessor": {
+    "constructor": [
+      "eventManager",
+      "browsingContextStorage"
+    ],
+    "simulateAdapter": [
+      "params"
+    ],
+    "disableSimulation": [
+      "params"
+    ],
+    "simulatePreconnectedPeripheral": [
+      "params"
+    ],
+    "simulateAdvertisement": [
+      "params"
+    ],
+    "simulateCharacteristic": [
+      "params"
+    ],
+    "simulateCharacteristicResponse": [
+      "params"
+    ],
+    "simulateDescriptor": [
+      "params"
+    ],
+    "simulateDescriptorResponse": [
+      "params"
+    ],
+    "simulateGattConnectionResponse": [
+      "params"
+    ],
+    "simulateGattDisconnection": [
+      "params"
+    ],
+    "simulateService": [
+      "params"
+    ],
+    "onCdpTargetCreated": [
+      "cdpTarget"
+    ],
+    "handleRequestDevicePrompt": [
+      "params"
+    ]
+  },
+  "BluetoothGattItem": {
+    "id": [],
+    "uuid": [],
+    "constructor": [
+      "id",
+      "uuid"
+    ]
+  },
+  "BluetoothDescriptor": {
+    "characteristic": [],
+    "constructor": [
+      "id",
+      "uuid",
+      "characteristic"
+    ]
+  },
+  "BluetoothCharacteristic": {
+    "descriptors": [],
+    "service": [],
+    "constructor": [
+      "id",
+      "uuid",
+      "service"
+    ]
+  },
+  "BluetoothService": {
+    "characteristics": [],
+    "device": [],
+    "constructor": [
+      "id",
+      "uuid",
+      "device"
+    ]
+  },
+  "BluetoothDevice": {
+    "address": [],
+    "services": [],
+    "constructor": [
+      "address"
+    ]
+  },
+  "BrowserProcessor": {
+    "constructor": [
+      "browserCdpClient",
+      "browsingContextStorage",
+      "configStorage",
+      "userContextStorage"
+    ],
+    "close": [],
+    "createUserContext": [
+      "params"
+    ],
+    "removeUserContext": [
+      "params"
+    ],
+    "getUserContexts": [],
+    "setClientWindowState": [
+      "params"
+    ],
+    "getClientWindows": [],
+    "setDownloadBehavior": [
+      "params"
+    ]
+  },
+  "getProxyStr": [
+    "proxyConfig"
+  ],
+  "ContextConfig": {
+    "acceptInsecureCerts": [],
+    "clientHints": [],
+    "devicePixelRatio": [],
+    "disableNetworkDurableMessages": [],
+    "downloadBehavior": [],
+    "emulatedNetworkConditions": [],
+    "extraHeaders": [],
+    "geolocation": [],
+    "locale": [],
+    "maxTouchPoints": [],
+    "prerenderingDisabled": [],
+    "screenArea": [],
+    "screenOrientation": [],
+    "scriptingEnabled": [],
+    "timezone": [],
+    "userAgent": [],
+    "userPromptHandler": [],
+    "viewport": [],
+    "merge": [
+      "param"
+    ]
+  },
+  "ContextConfigStorage": {
+    "updateGlobalConfig": [
+      "config"
+    ],
+    "updateBrowsingContextConfig": [
+      "browsingContextId",
+      "config"
+    ],
+    "updateUserContextConfig": [
+      "userContext",
+      "config"
+    ],
+    "getGlobalConfig": [],
+    "getActiveConfig": [
+      "topLevelBrowsingContextId",
+      "userContext"
+    ]
+  },
+  "UserContextStorage": {
+    "constructor": [
+      "browserClient"
+    ],
+    "getUserContexts": [],
+    "verifyUserContextIdList": [
+      "userContextIds"
+    ]
+  },
+  "CdpProcessor": {
+    "constructor": [
+      "browsingContextStorage",
+      "realmStorage",
+      "cdpConnection",
+      "browserCdpClient"
+    ],
+    "getSession": [
+      "params"
+    ],
+    "resolveRealm": [
+      "params"
+    ],
+    "sendCommand": [
+      "params"
+    ]
+  },
+  "CdpTarget": {
+    "userContext": [],
+    "contextConfigStorage": [],
+    "create": [
+      "targetId",
+      "cdpClient",
+      "browserCdpClient",
+      "parentCdpClient",
+      "realmStorage",
+      "eventManager",
+      "preloadScriptStorage",
+      "browsingContextStorage",
+      "networkStorage",
+      "configStorage",
+      "userContext",
+      "defaultUserAgent",
+      "logger"
+    ],
+    "constructor": [
+      "targetId",
+      "cdpClient",
+      "browserCdpClient",
+      "parentCdpClient",
+      "eventManager",
+      "realmStorage",
+      "preloadScriptStorage",
+      "browsingContextStorage",
+      "configStorage",
+      "networkStorage",
+      "userContext",
+      "defaultUserAgent",
+      "logger"
+    ],
+    "unblocked": [],
+    "id": [],
+    "cdpClient": [],
+    "parentCdpClient": [],
+    "browserCdpClient": [],
+    "cdpSessionId": [],
+    "windowId": [],
+    "toggleFetchIfNeeded": [],
+    "toggleNetworkIfNeeded": [],
+    "toggleSetCacheDisabled": [
+      "disable"
+    ],
+    "toggleDeviceAccessIfNeeded": [],
+    "togglePreloadIfNeeded": [],
+    "toggleNetwork": [],
+    "getChannels": [],
+    "setDeviceMetricsOverride": [
+      "viewport",
+      "devicePixelRatio",
+      "screenOrientation",
+      "screenArea"
+    ],
+    "topLevelId": [],
+    "isSubscribedTo": [
+      "moduleOrEvent"
+    ],
+    "setGeolocationOverride": [
+      "geolocation"
+    ],
+    "setTouchOverride": [
+      "maxTouchPoints"
+    ],
+    "setLocaleOverride": [
+      "locale"
+    ],
+    "setScriptingEnabled": [
+      "scriptingEnabled"
+    ],
+    "setTimezoneOverride": [
+      "timezone"
+    ],
+    "setExtraHeaders": [
+      "headers"
+    ],
+    "setUserAgentAndAcceptLanguage": [
+      "userAgent",
+      "acceptLanguage",
+      "clientHints"
+    ],
+    "setEmulatedNetworkConditions": [
+      "networkConditions"
+    ]
+  },
+  "CdpTargetManager": {
+    "constructor": [
+      "cdpConnection",
+      "browserCdpClient",
+      "selfTargetId",
+      "eventManager",
+      "browsingContextStorage",
+      "realmStorage",
+      "networkStorage",
+      "configStorage",
+      "bluetoothProcessor",
+      "speculationProcessor",
+      "preloadScriptStorage",
+      "defaultUserContextId",
+      "defaultUserAgent",
+      "logger"
+    ]
+  },
+  "detach": [],
+  "BrowsingContextImpl": {
+    "LOGGER_PREFIX": [],
+    "userContext": [],
+    "constructor": [
+      "id",
+      "parentId",
+      "userContext",
+      "cdpTarget",
+      "eventManager",
+      "browsingContextStorage",
+      "realmStorage",
+      "configStorage",
+      "url",
+      "originalOpener",
+      "logger"
+    ],
+    "create": [
+      "id",
+      "parentId",
+      "userContext",
+      "cdpTarget",
+      "eventManager",
+      "browsingContextStorage",
+      "realmStorage",
+      "configStorage",
+      "url",
+      "originalOpener",
+      "logger"
+    ],
+    "navigableId": [],
+    "navigationId": [],
+    "dispose": [
+      "emitContextDestroyed"
+    ],
+    "id": [],
+    "parentId": [
+      "parentId"
+    ],
+    "parent": [],
+    "directChildren": [],
+    "allChildren": [],
+    "isTopLevelContext": [],
+    "top": [],
+    "addChild": [
+      "childId"
+    ],
+    "cdpTarget": [],
+    "updateCdpTarget": [
+      "cdpTarget"
+    ],
+    "url": [],
+    "lifecycleLoaded": [],
+    "targetUnblockedOrThrow": [],
+    "getOrCreateHiddenSandbox": [],
+    "getOrCreateUserSandbox": [
+      "sandbox"
+    ],
+    "serializeToBidiValue": [
+      "param",
+      "param"
+    ],
+    "onTargetInfoChanged": [
+      "params"
+    ],
+    "navigate": [
+      "url",
+      "wait"
+    ],
+    "reload": [
+      "ignoreCache",
+      "wait"
+    ],
+    "setViewport": [
+      "viewport",
+      "devicePixelRatio",
+      "screenOrientation"
+    ],
+    "handleUserPrompt": [
+      "accept",
+      "userText"
+    ],
+    "activate": [],
+    "captureScreenshot": [
+      "params"
+    ],
+    "print": [
+      "params"
+    ],
+    "close": [],
+    "traverseHistory": [
+      "delta"
+    ],
+    "toggleModulesIfNeeded": [],
+    "locateNodes": [
+      "params"
+    ],
+    "setTimezoneOverride": [
+      "timezone"
+    ],
+    "setLocaleOverride": [
+      "locale"
+    ],
+    "setGeolocationOverride": [
+      "geolocation"
+    ],
+    "setScriptingEnabled": [
+      "scriptingEnabled"
+    ],
+    "setUserAgentAndAcceptLanguage": [
+      "userAgent",
+      "acceptLanguage",
+      "clientHints"
+    ],
+    "setEmulatedNetworkConditions": [
+      "networkConditions"
+    ],
+    "setTouchOverride": [
+      "maxTouchPoints"
+    ],
+    "setExtraHeaders": [
+      "cdpExtraHeaders"
+    ]
+  },
+  "locateNodesUsingCss": [
+    "element"
+  ],
+  "locateNodesUsingXpath": [
+    "element"
+  ],
+  "locateNodesUsingInnerText": [
+    "node",
+    "currentMaxDepth"
+  ],
+  "serializeOrigin": [
+    "origin"
+  ],
+  "getImageFormatParameters": [
+    "params"
+  ],
+  "deserializeDOMRect": [
+    "result"
+  ],
+  "normalizeRect": [
+    "box"
+  ],
+  "getIntersectionRect": [
+    "first",
+    "second"
+  ],
+  "parseInteger": [
+    "value"
+  ],
+  "BrowsingContextProcessor": {
+    "constructor": [
+      "browserCdpClient",
+      "browsingContextStorage",
+      "userContextStorage",
+      "contextConfigStorage",
+      "eventManager"
+    ],
+    "getTree": [
+      "params"
+    ],
+    "create": [
+      "params"
+    ],
+    "navigate": [
+      "params"
+    ],
+    "reload": [
+      "params"
+    ],
+    "activate": [
+      "params"
+    ],
+    "captureScreenshot": [
+      "params"
+    ],
+    "print": [
+      "params"
+    ],
+    "setViewport": [
+      "params"
+    ],
+    "traverseHistory": [
+      "params"
+    ],
+    "handleUserPrompt": [
+      "params"
+    ],
+    "close": [
+      "params"
+    ],
+    "locateNodes": [
+      "params"
+    ]
+  },
+  "onContextDestroyed": [
+    "event"
+  ],
+  "BrowsingContextStorage": {
+    "getTopLevelContexts": [],
+    "getAllContexts": [],
+    "deleteContextById": [
+      "id"
+    ],
+    "deleteContext": [
+      "context"
+    ],
+    "addContext": [
+      "context"
+    ],
+    "waitForContext": [
+      "browsingContextId"
+    ],
+    "hasContext": [
+      "id"
+    ],
+    "findContext": [
+      "id"
+    ],
+    "findTopLevelContextId": [
+      "id"
+    ],
+    "findContextBySession": [
+      "sessionId"
+    ],
+    "getContext": [
+      "id"
+    ],
+    "verifyTopLevelContextsList": [
+      "contexts"
+    ],
+    "verifyContextsList": [
+      "contexts"
+    ]
+  },
+  "listener": [
+    "event"
+  ],
+  "NavigationResult": {
+    "eventName": [],
+    "message": [],
+    "constructor": [
+      "eventName",
+      "message"
+    ]
+  },
+  "NavigationState": {
+    "navigationId": [],
+    "url": [],
+    "loaderId": [],
+    "committed": [],
+    "isFragmentNavigation": [],
+    "finished": [],
+    "constructor": [
+      "url",
+      "browsingContextId",
+      "isInitial",
+      "eventManager"
+    ],
+    "navigationInfo": [],
+    "start": [],
+    "frameNavigated": [],
+    "fragmentNavigated": [],
+    "load": [],
+    "fail": [
+      "message"
+    ]
+  },
+  "NavigationTracker": {
+    "constructor": [
+      "url",
+      "browsingContextId",
+      "eventManager",
+      "logger"
+    ],
+    "currentNavigationId": [],
+    "isInitialNavigation": [],
+    "url": [],
+    "createPendingNavigation": [
+      "url",
+      "param"
+    ],
+    "dispose": [],
+    "onTargetInfoChanged": [
+      "url"
+    ],
+    "frameNavigated": [
+      "url",
+      "loaderId",
+      "unreachableUrl"
+    ],
+    "navigatedWithinDocument": [
+      "url",
+      "navigationType"
+    ],
+    "loadPageEvent": [
+      "loaderId"
+    ],
+    "failNavigation": [
+      "navigation",
+      "errorText"
+    ],
+    "navigationCommandFinished": [
+      "navigation",
+      "loaderId"
+    ],
+    "frameStartedNavigating": [
+      "url",
+      "loaderId",
+      "navigationType"
+    ],
+    "networkLoadingFailed": [
+      "loaderId",
+      "errorText"
+    ]
+  },
+  "EmulationProcessor": {
+    "constructor": [
+      "browsingContextStorage",
+      "userContextStorage",
+      "contextConfigStorage"
+    ],
+    "setGeolocationOverride": [
+      "params"
+    ],
+    "setLocaleOverride": [
+      "params"
+    ],
+    "setScriptingEnabled": [
+      "params"
+    ],
+    "setScreenOrientationOverride": [
+      "params"
+    ],
+    "setScreenSettingsOverride": [
+      "params"
+    ],
+    "setTimezoneOverride": [
+      "params"
+    ],
+    "setTouchOverride": [
+      "params"
+    ],
+    "setUserAgentOverrideParams": [
+      "params"
+    ],
+    "setClientHintsOverride": [
+      "params"
+    ],
+    "setNetworkConditions": [
+      "params"
+    ]
+  },
+  "isValidLocale": [
+    "locale"
+  ],
+  "isValidTimezone": [
+    "timezone"
+  ],
+  "isTimeZoneOffsetString": [
+    "timezone"
+  ],
+  "ActionDispatcher": {
+    "isMacOS": [],
+    "constructor": [
+      "inputState",
+      "browsingContextStorage",
+      "contextId",
+      "isMacOS"
+    ],
+    "dispatchActions": [
+      "optionsByTick"
+    ],
+    "dispatchTickActions": [
+      "options"
+    ]
+  },
+  "getElementCenter": [
+    "context",
+    "element"
+  ],
+  "getKeyEventUnmodifiedText": [
+    "key",
+    "source",
+    "isGrapheme"
+  ],
+  "getKeyEventText": [
+    "code",
+    "source"
+  ],
+  "getCdpButton": [
+    "button"
+  ],
+  "getTilt": [
+    "action"
+  ],
+  "getRadii": [
+    "width",
+    "height"
+  ],
+  "InputProcessor": {
+    "constructor": [
+      "browsingContextStorage"
+    ],
+    "performActions": [
+      "params"
+    ],
+    "releaseActions": [
+      "params"
+    ],
+    "setFiles": [
+      "params"
+    ]
+  },
+  "NoneSource": {
+    "type": []
+  },
+  "KeySource": {
+    "type": [],
+    "pressed": [],
+    "modifiers": [],
+    "alt": [
+      "value"
+    ],
+    "ctrl": [
+      "value"
+    ],
+    "meta": [
+      "value"
+    ],
+    "shift": [
+      "value"
+    ]
+  },
+  "PointerSource": {
+    "type": [],
+    "subtype": [],
+    "pointerId": [],
+    "pressed": [],
+    "x": [],
+    "y": [],
+    "radiusX": [],
+    "radiusY": [],
+    "force": [],
+    "constructor": [
+      "id",
+      "subtype"
+    ],
+    "buttons": [],
+    "ClickContext": [],
+    "setClickCount": [
+      "button",
+      "context"
+    ],
+    "getClickCount": [
+      "button"
+    ],
+    "resetClickCount": []
+  },
+  "WheelSource": {
+    "type": []
+  },
+  "InputState": {
+    "cancelList": [],
+    "getOrCreate": [
+      "id",
+      "type",
+      "subtype"
+    ],
+    "get": [
+      "id"
+    ],
+    "getGlobalKeyState": [],
+    "queue": []
+  },
+  "InputStateManager": {
+    "get": [
+      "context"
+    ]
+  },
+  "getNormalizedKey": [
+    "value"
+  ],
+  "getKeyCode": [
+    "key"
+  ],
+  "getKeyLocation": [
+    "key"
+  ],
+  "LogManager": {
+    "constructor": [
+      "cdpTarget",
+      "realmStorage",
+      "eventManager",
+      "logger"
+    ],
+    "create": [
+      "cdpTarget",
+      "realmStorage",
+      "eventManager",
+      "logger"
+    ]
+  },
+  "getBidiStackTrace": [
+    "cdpStackTrace"
+  ],
+  "getLogLevel": [
+    "consoleApiType"
+  ],
+  "getLogMethod": [
+    "consoleApiType"
+  ],
+  "isFormatSpecifier": [
+    "str"
+  ],
+  "logMessageFormatter": [
+    "args"
+  ],
+  "toJson": [
+    "arg"
+  ],
+  "stringFromArg": [
+    "arg"
+  ],
+  "getRemoteValuesText": [
+    "args",
+    "formatText"
+  ],
+  "CollectorsStorage": {
+    "constructor": [
+      "maxEncodedDataSize",
+      "logger"
+    ],
+    "addDataCollector": [
+      "params"
+    ],
+    "isCollected": [
+      "requestId",
+      "dataType",
+      "collectorId"
+    ],
+    "disownData": [
+      "requestId",
+      "dataType",
+      "collectorId"
+    ],
+    "collectIfNeeded": [
+      "request",
+      "dataType",
+      "topLevelBrowsingContext",
+      "userContext"
+    ],
+    "removeDataCollector": [
+      "collectorId"
+    ]
+  },
+  "NetworkProcessor": {
+    "constructor": [
+      "browsingContextStorage",
+      "networkStorage",
+      "userContextStorage",
+      "contextConfigStorage"
+    ],
+    "addIntercept": [
+      "params"
+    ],
+    "continueRequest": [
+      "params"
+    ],
+    "continueResponse": [
+      "params"
+    ],
+    "continueWithAuth": [
+      "params"
+    ],
+    "failRequest": [
+      "param"
+    ],
+    "provideResponse": [
+      "params"
+    ],
+    "removeIntercept": [
+      "params"
+    ],
+    "setCacheBehavior": [
+      "params"
+    ],
+    "validateHeaders": [
+      "headers"
+    ],
+    "isMethodValid": [
+      "method"
+    ],
+    "parseUrlString": [
+      "url"
+    ],
+    "parseUrlPatterns": [
+      "urlPatterns"
+    ],
+    "wrapInterceptionError": [
+      "error"
+    ],
+    "addDataCollector": [
+      "params"
+    ],
+    "getData": [
+      "params"
+    ],
+    "removeDataCollector": [
+      "params"
+    ],
+    "disownData": [
+      "params"
+    ],
+    "setExtraHeaders": [
+      "params"
+    ]
+  },
+  "serializePort": [
+    "url"
+  ],
+  "unescapeURLPattern": [
+    "pattern"
+  ],
+  "includesChar": [
+    "str",
+    "chars"
+  ],
+  "parseBiDiHeaders": [
+    "headers"
+  ],
+  "NetworkRequest": {
+    "unknownParameter": [],
+    "waitNextPhase": [],
+    "constructor": [
+      "id",
+      "eventManager",
+      "networkStorage",
+      "cdpTarget",
+      "param",
+      "logger"
+    ],
+    "id": [],
+    "fetchId": [],
+    "interceptPhase": [],
+    "url": [],
+    "redirectCount": [],
+    "cdpTarget": [],
+    "updateCdpTarget": [
+      "cdpTarget"
+    ],
+    "cdpClient": [],
+    "isRedirecting": [],
+    "bodySize": [],
+    "handleRedirect": [
+      "event"
+    ],
+    "onRequestWillBeSentEvent": [
+      "event"
+    ],
+    "onRequestWillBeSentExtraInfoEvent": [
+      "event"
+    ],
+    "onResponseReceivedExtraInfoEvent": [
+      "event"
+    ],
+    "onResponseReceivedEvent": [
+      "event"
+    ],
+    "onServedFromCache": [],
+    "onLoadingFinishedEvent": [
+      "event"
+    ],
+    "onDataReceivedEvent": [
+      "event"
+    ],
+    "onLoadingFailedEvent": [
+      "event"
+    ],
+    "failRequest": [
+      "errorReason"
+    ],
+    "onRequestPaused": [
+      "event"
+    ],
+    "onAuthRequired": [
+      "event"
+    ],
+    "continueRequest": [
+      "param"
+    ],
+    "continueResponse": [
+      "param"
+    ],
+    "continueWithAuth": [
+      "authChallenge"
+    ],
+    "provideResponse": [
+      "overrides"
+    ],
+    "dispose": [],
+    "encodedResponseBodySize": []
+  },
+  "getCdpBodyFromBiDiBytesValue": [
+    "body"
+  ],
+  "getSizeFromBiDiBytesValue": [
+    "body"
+  ],
+  "NetworkStorage": {
+    "constructor": [
+      "eventManager",
+      "browsingContextStorage",
+      "browserClient",
+      "logger"
+    ],
+    "onCdpTargetCreated": [
+      "cdpTarget"
+    ],
+    "getCollectedData": [
+      "params"
+    ],
+    "collectIfNeeded": [
+      "request",
+      "dataType"
+    ],
+    "getInterceptionStages": [
+      "browsingContextId"
+    ],
+    "getInterceptsForPhase": [
+      "request",
+      "phase"
+    ],
+    "disposeRequestMap": [
+      "sessionId"
+    ],
+    "addIntercept": [
+      "value"
+    ],
+    "removeIntercept": [
+      "intercept"
+    ],
+    "getRequestsByTarget": [
+      "target"
+    ],
+    "getRequestById": [
+      "id"
+    ],
+    "getRequestByFetchId": [
+      "fetchId"
+    ],
+    "addRequest": [
+      "request"
+    ],
+    "disposeRequest": [
+      "id"
+    ],
+    "getNavigationId": [
+      "contextId"
+    ],
+    "defaultCacheBehavior": [],
+    "addDataCollector": [
+      "params"
+    ],
+    "removeDataCollector": [
+      "params"
+    ],
+    "disownData": [
+      "params"
+    ]
+  },
+  "computeHeadersSize": [
+    "headers"
+  ],
+  "stringToBase64": [
+    "str"
+  ],
+  "typedArrayToBase64": [
+    "typedArray"
+  ],
+  "bidiNetworkHeadersFromCdpNetworkHeaders": [
+    "headers"
+  ],
+  "bidiNetworkHeadersFromCdpNetworkHeadersEntries": [
+    "headers"
+  ],
+  "cdpNetworkHeadersFromBidiNetworkHeaders": [
+    "headers"
+  ],
+  "bidiNetworkHeadersFromCdpFetchHeaders": [
+    "headers"
+  ],
+  "cdpFetchHeadersFromBidiNetworkHeaders": [
+    "headers"
+  ],
+  "networkHeaderFromCookieHeaders": [
+    "headers"
+  ],
+  "cdpAuthChallengeResponseFromBidiAuthContinueWithAuthAction": [
+    "action"
+  ],
+  "cdpToBiDiCookie": [
+    "cookie"
+  ],
+  "deserializeByteValue": [
+    "value"
+  ],
+  "bidiToCdpCookie": [
+    "params",
+    "partitionKey"
+  ],
+  "sameSiteCdpToBiDi": [
+    "sameSite"
+  ],
+  "sameSiteBiDiToCdp": [
+    "sameSite"
+  ],
+  "isSpecialScheme": [
+    "protocol"
+  ],
+  "getScheme": [
+    "url"
+  ],
+  "matchUrlPattern": [
+    "pattern",
+    "url"
+  ],
+  "bidiBodySizeFromCdpPostDataEntries": [
+    "entries"
+  ],
+  "getTiming": [
+    "timing",
+    "param"
+  ],
+  "PermissionsProcessor": {
+    "constructor": [
+      "browserCdpClient"
+    ],
+    "setPermissions": [
+      "params"
+    ]
+  },
+  "ChannelProxy": {
+    "constructor": [
+      "channel",
+      "logger"
+    ],
+    "init": [
+      "realm",
+      "eventManager"
+    ],
+    "startListenerFromWindow": [
+      "realm",
+      "eventManager"
+    ],
+    "getEvalInWindowStr": []
+  },
+  "PreloadScript": {
+    "id": [],
+    "targetIds": [],
+    "constructor": [
+      "params",
+      "logger"
+    ],
+    "channels": [],
+    "contexts": [],
+    "userContexts": [],
+    "initInTargets": [
+      "cdpTargets",
+      "runImmediately"
+    ],
+    "initInTarget": [
+      "cdpTarget",
+      "runImmediately"
+    ],
+    "remove": [],
+    "dispose": [
+      "cdpTargetId"
+    ]
+  },
+  "PreloadScriptStorage": {
+    "find": [
+      "filter"
+    ],
+    "add": [
+      "preloadScript"
+    ],
+    "remove": [
+      "id"
+    ],
+    "getPreloadScript": [
+      "id"
+    ],
+    "onCdpTargetCreated": [
+      "targetId",
+      "userContext"
+    ]
+  },
+  "Realm": {
+    "realmStorage": [],
+    "constructor": [
+      "cdpClient",
+      "eventManager",
+      "executionContextId",
+      "logger",
+      "origin",
+      "realmId",
+      "realmStorage"
+    ],
+    "cdpToBidiValue": [
+      "cdpValue",
+      "resultOwnership"
+    ],
+    "isHidden": [],
+    "serializeForBiDi": [
+      "deepSerializedValue",
+      "internalIdMap"
+    ],
+    "realmId": [],
+    "executionContextId": [],
+    "origin": [],
+    "source": [],
+    "cdpClient": [],
+    "baseInfo": [],
+    "evaluate": [
+      "expression",
+      "awaitPromise",
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "initialize": [],
+    "serializeCdpObject": [
+      "cdpRemoteObject",
+      "resultOwnership"
+    ],
+    "stringifyObject": [
+      "cdpRemoteObject"
+    ],
+    "callFunction": [
+      "functionDeclaration",
+      "awaitPromise",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "deserializeForCdp": [
+      "localValue"
+    ],
+    "disown": [
+      "handle"
+    ],
+    "dispose": []
+  },
+  "RealmStorage": {
+    "hiddenSandboxes": [],
+    "knownHandlesToRealmMap": [],
+    "addRealm": [
+      "realm"
+    ],
+    "findRealms": [
+      "filter"
+    ],
+    "findRealm": [
+      "filter"
+    ],
+    "getRealm": [
+      "filter"
+    ],
+    "deleteRealms": [
+      "filter"
+    ]
+  },
+  "ScriptProcessor": {
+    "constructor": [
+      "eventManager",
+      "browsingContextStorage",
+      "realmStorage",
+      "preloadScriptStorage",
+      "userContextStorage",
+      "logger"
+    ],
+    "addPreloadScript": [
+      "params"
+    ],
+    "removePreloadScript": [
+      "params"
+    ],
+    "callFunction": [
+      "params"
+    ],
+    "evaluate": [
+      "params"
+    ],
+    "disown": [
+      "params"
+    ],
+    "getRealms": [
+      "params"
+    ]
+  },
+  "getSharedId": [
+    "frameId",
+    "documentId",
+    "backendNodeId"
+  ],
+  "parseLegacySharedId": [
+    "sharedId"
+  ],
+  "parseSharedId": [
+    "sharedId"
+  ],
+  "WindowRealm": {
+    "sandbox": [],
+    "constructor": [
+      "browsingContextId",
+      "browsingContextStorage",
+      "cdpClient",
+      "eventManager",
+      "executionContextId",
+      "logger",
+      "origin",
+      "realmId",
+      "realmStorage",
+      "sandbox"
+    ],
+    "browsingContext": [],
+    "isHidden": [],
+    "associatedBrowsingContexts": [],
+    "realmType": [],
+    "realmInfo": [],
+    "source": [],
+    "serializeForBiDi": [
+      "deepSerializedValue",
+      "internalIdMap"
+    ],
+    "deserializeForCdp": [
+      "localValue"
+    ],
+    "evaluate": [
+      "expression",
+      "awaitPromise",
+      "resultOwnership",
+      "serializationOptions",
+      "userActivation",
+      "includeCommandLineApi"
+    ],
+    "callFunction": [
+      "functionDeclaration",
+      "awaitPromise",
+      "thisLocalValue",
+      "argumentsLocalValues",
+      "resultOwnership",
+      "serializationOptions",
+      "userActivation"
+    ]
+  },
+  "WorkerRealm": {
+    "constructor": [
+      "cdpClient",
+      "eventManager",
+      "executionContextId",
+      "logger",
+      "origin",
+      "ownerRealms",
+      "realmId",
+      "realmStorage",
+      "realmType"
+    ],
+    "associatedBrowsingContexts": [],
+    "realmType": [],
+    "source": [],
+    "realmInfo": []
+  },
+  "EventManager": {
+    "constructor": [
+      "browsingContextStorage",
+      "userContextStorage"
+    ],
+    "subscriptionManager": [],
+    "addSubscribeHook": [
+      "event",
+      "hook"
+    ],
+    "registerEvent": [
+      "event",
+      "contextId"
+    ],
+    "registerGlobalEvent": [
+      "event"
+    ],
+    "registerPromiseEvent": [
+      "event",
+      "contextId",
+      "eventName"
+    ],
+    "registerGlobalPromiseEvent": [
+      "event",
+      "eventName"
+    ],
+    "subscribe": [
+      "eventNames",
+      "contextIds",
+      "userContextIds",
+      "googChannel"
+    ],
+    "unsubscribe": [
+      "eventNames",
+      "googChannel"
+    ],
+    "unsubscribeByIds": [
+      "subscriptionIds"
+    ],
+    "toggleModulesIfNeeded": [],
+    "clearBufferedEvents": [
+      "contextId"
+    ]
+  },
+  "EventWrapper": {
+    "constructor": [
+      "event",
+      "contextId"
+    ],
+    "id": [],
+    "contextId": [],
+    "event": []
+  },
+  "SessionProcessor": {
+    "constructor": [
+      "eventManager",
+      "browserCdpClient",
+      "initConnection"
+    ],
+    "status": [],
+    "new": [
+      "params"
+    ],
+    "subscribe": [
+      "params",
+      "param"
+    ],
+    "unsubscribe": [
+      "params",
+      "param"
+    ]
+  },
+  "SubscriptionManager": {
+    "constructor": [
+      "browsingContextStorage"
+    ],
+    "getGoogChannelsSubscribedToEvent": [
+      "eventName",
+      "contextId"
+    ],
+    "getGoogChannelsSubscribedToEventGlobally": [
+      "eventName"
+    ],
+    "isSubscribedTo": [
+      "moduleOrEvent",
+      "contextId"
+    ],
+    "subscribe": [
+      "eventNames",
+      "contextIds",
+      "userContextIds",
+      "googChannel"
+    ],
+    "unsubscribe": [
+      "inputEventNames",
+      "googChannel"
+    ],
+    "unsubscribeById": [
+      "subscriptionIds"
+    ]
+  },
+  "cartesianProduct": [
+    "param"
+  ],
+  "unrollEvents": [
+    "events"
+  ],
+  "addEvents": [
+    "events"
+  ],
+  "intersection": [
+    "setA",
+    "setB"
+  ],
+  "difference": [
+    "setA",
+    "setB"
+  ],
+  "equal": [
+    "setA",
+    "setB"
+  ],
+  "isCdpEvent": [
+    "name"
+  ],
+  "assertSupportedEvent": [
+    "name"
+  ],
+  "SpeculationProcessor": {
+    "constructor": [
+      "eventManager",
+      "logger"
+    ],
+    "onCdpTargetCreated": [
+      "cdpTarget"
+    ]
+  },
+  "StorageProcessor": {
+    "constructor": [
+      "browserCdpClient",
+      "browsingContextStorage",
+      "logger"
+    ],
+    "deleteCookies": [
+      "params"
+    ],
+    "getCookies": [
+      "params"
+    ],
+    "setCookie": [
+      "params"
+    ]
+  },
+  "WebExtensionProcessor": {
+    "constructor": [
+      "browserCdpClient"
+    ],
+    "install": [
+      "params"
+    ],
+    "uninstall": [
+      "params"
+    ]
+  },
+  "BidiParser": {
+    "parseDisableSimulationParameters": [
+      "params"
+    ],
+    "parseHandleRequestDevicePromptParams": [
+      "params"
+    ],
+    "parseSimulateAdapterParameters": [
+      "params"
+    ],
+    "parseSimulateAdvertisementParameters": [
+      "params"
+    ],
+    "parseSimulateCharacteristicParameters": [
+      "params"
+    ],
+    "parseSimulateCharacteristicResponseParameters": [
+      "params"
+    ],
+    "parseSimulateDescriptorParameters": [
+      "params"
+    ],
+    "parseSimulateDescriptorResponseParameters": [
+      "params"
+    ],
+    "parseSimulateGattConnectionResponseParameters": [
+      "params"
+    ],
+    "parseSimulateGattDisconnectionParameters": [
+      "params"
+    ],
+    "parseSimulatePreconnectedPeripheralParameters": [
+      "params"
+    ],
+    "parseSimulateServiceParameters": [
+      "params"
+    ],
+    "parseCreateUserContextParameters": [
+      "params"
+    ],
+    "parseRemoveUserContextParameters": [
+      "params"
+    ],
+    "parseSetClientWindowStateParameters": [
+      "params"
+    ],
+    "parseSetDownloadBehaviorParameters": [
+      "params"
+    ],
+    "parseActivateParams": [
+      "params"
+    ],
+    "parseCaptureScreenshotParams": [
+      "params"
+    ],
+    "parseCloseParams": [
+      "params"
+    ],
+    "parseCreateParams": [
+      "params"
+    ],
+    "parseGetTreeParams": [
+      "params"
+    ],
+    "parseHandleUserPromptParams": [
+      "params"
+    ],
+    "parseLocateNodesParams": [
+      "params"
+    ],
+    "parseNavigateParams": [
+      "params"
+    ],
+    "parsePrintParams": [
+      "params"
+    ],
+    "parseReloadParams": [
+      "params"
+    ],
+    "parseSetViewportParams": [
+      "params"
+    ],
+    "parseTraverseHistoryParams": [
+      "params"
+    ],
+    "parseGetSessionParams": [
+      "params"
+    ],
+    "parseResolveRealmParams": [
+      "params"
+    ],
+    "parseSendCommandParams": [
+      "params"
+    ],
+    "parseSetClientHintsOverrideParams": [
+      "params"
+    ],
+    "parseSetForcedColorsModeThemeOverrideParams": [
+      "params"
+    ],
+    "parseSetGeolocationOverrideParams": [
+      "params"
+    ],
+    "parseSetLocaleOverrideParams": [
+      "params"
+    ],
+    "parseSetNetworkConditionsParams": [
+      "params"
+    ],
+    "parseSetScreenOrientationOverrideParams": [
+      "params"
+    ],
+    "parseSetScreenSettingsOverrideParams": [
+      "params"
+    ],
+    "parseSetScriptingEnabledParams": [
+      "params"
+    ],
+    "parseSetTimezoneOverrideParams": [
+      "params"
+    ],
+    "parseSetTouchOverrideParams": [
+      "params"
+    ],
+    "parseSetUserAgentOverrideParams": [
+      "params"
+    ],
+    "parsePerformActionsParams": [
+      "params"
+    ],
+    "parseReleaseActionsParams": [
+      "params"
+    ],
+    "parseSetFilesParams": [
+      "params"
+    ],
+    "parseAddDataCollectorParams": [
+      "params"
+    ],
+    "parseAddInterceptParams": [
+      "params"
+    ],
+    "parseContinueRequestParams": [
+      "params"
+    ],
+    "parseContinueResponseParams": [
+      "params"
+    ],
+    "parseContinueWithAuthParams": [
+      "params"
+    ],
+    "parseDisownDataParams": [
+      "params"
+    ],
+    "parseFailRequestParams": [
+      "params"
+    ],
+    "parseGetDataParams": [
+      "params"
+    ],
+    "parseProvideResponseParams": [
+      "params"
+    ],
+    "parseRemoveDataCollectorParams": [
+      "params"
+    ],
+    "parseRemoveInterceptParams": [
+      "params"
+    ],
+    "parseSetCacheBehaviorParams": [
+      "params"
+    ],
+    "parseSetExtraHeadersParams": [
+      "params"
+    ],
+    "parseSetPermissionsParams": [
+      "params"
+    ],
+    "parseAddPreloadScriptParams": [
+      "params"
+    ],
+    "parseCallFunctionParams": [
+      "params"
+    ],
+    "parseDisownParams": [
+      "params"
+    ],
+    "parseEvaluateParams": [
+      "params"
+    ],
+    "parseGetRealmsParams": [
+      "params"
+    ],
+    "parseRemovePreloadScriptParams": [
+      "params"
+    ],
+    "parseSubscribeParams": [
+      "params"
+    ],
+    "parseUnsubscribeParams": [
+      "params"
+    ],
+    "parseDeleteCookiesParams": [
+      "params"
+    ],
+    "parseGetCookiesParams": [
+      "params"
+    ],
+    "parseSetCookieParams": [
+      "params"
+    ],
+    "parseInstallParams": [
+      "params"
+    ],
+    "parseUninstallParams": [
+      "params"
+    ]
+  },
+  "ownKeys": [
+    "o"
+  ],
+  "WindowBidiTransport": {
+    "LOGGER_PREFIX_RECV": [],
+    "LOGGER_PREFIX_SEND": [],
+    "LOGGER_PREFIX_WARN": [],
+    "constructor": [],
+    "setOnMessage": [
+      "onMessage"
+    ],
+    "sendMessage": [
+      "message"
+    ],
+    "close": []
+  },
+  "WindowCdpTransport": {
+    "constructor": [],
+    "setOnMessage": [
+      "onMessage"
+    ],
+    "sendMessage": [
+      "message"
+    ],
+    "close": []
+  },
+  "runMapperInstance": [
+    "selfTargetId"
+  ],
+  "generatePage": [],
+  "stringify": [
+    "message"
+  ],
+  "log": [
+    "logPrefix",
+    "param"
+  ],
+  "CloseError": {},
+  "MapperCdpClient": {
+    "constructor": [
+      "cdpConnection",
+      "sessionId"
+    ],
+    "sessionId": [],
+    "sendCommand": [
+      "method",
+      "param"
+    ],
+    "isCloseError": [
+      "error"
+    ]
+  },
+  "MapperCdpConnection": {
+    "LOGGER_PREFIX_RECV": [],
+    "LOGGER_PREFIX_SEND": [],
+    "constructor": [
+      "transport",
+      "logger"
+    ],
+    "close": [],
+    "createBrowserSession": [],
+    "getCdpClient": [
+      "sessionId"
+    ],
+    "sendCommand": [
+      "method",
+      "params",
+      "sessionId"
+    ]
+  },
+  "Exception": {
+    "error": [],
+    "message": [],
+    "stacktrace": [],
+    "constructor": [
+      "error",
+      "message",
+      "stacktrace"
+    ],
+    "toErrorResponse": [
+      "commandId"
+    ]
+  },
+  "InvalidArgumentException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "InvalidSelectorException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "InvalidSessionIdException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "MoveTargetOutOfBoundsException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "NoSuchAlertException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "NoSuchElementException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "NoSuchFrameException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "NoSuchHandleException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "NoSuchHistoryEntryException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "NoSuchInterceptException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "NoSuchNodeException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "NoSuchRequestException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "NoSuchScriptException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "NoSuchUserContextException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "SessionNotCreatedException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "UnknownCommandException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "UnknownErrorException": {
+    "constructor": [
+      "message",
+      "param"
+    ]
+  },
+  "UnableToCaptureScreenException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "UnableToCloseBrowserException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "UnsupportedOperationException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "NoSuchStoragePartitionException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "UnableToSetCookieException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "UnableToSetFileInputException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "UnderspecifiedStoragePartitionException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "InvalidWebExtensionException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "NoSuchWebExtensionException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "NoSuchNetworkCollectorException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "NoSuchNetworkDataException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "UnavailableNetworkDataException": {
+    "constructor": [
+      "message",
+      "stacktrace"
+    ]
+  },
+  "parseObject": [
+    "obj",
+    "schema"
+  ],
+  "parseCreateUserContextParameters": [
+    "params"
+  ],
+  "parseRemoveUserContextParameters": [
+    "params"
+  ],
+  "parseSetClientWindowStateParameters": [
+    "params"
+  ],
+  "parseSetDownloadBehaviorParameters": [
+    "params"
+  ],
+  "parseAddDataCollectorParameters": [
+    "params"
+  ],
+  "parseAddInterceptParameters": [
+    "params"
+  ],
+  "parseContinueRequestParameters": [
+    "params"
+  ],
+  "parseContinueResponseParameters": [
+    "params"
+  ],
+  "parseContinueWithAuthParameters": [
+    "params"
+  ],
+  "parseDisownDataParameters": [
+    "params"
+  ],
+  "parseFailRequestParameters": [
+    "params"
+  ],
+  "parseGetDataParameters": [
+    "params"
+  ],
+  "parseProvideResponseParameters": [
+    "params"
+  ],
+  "parseRemoveDataCollectorParameters": [
+    "params"
+  ],
+  "parseRemoveInterceptParameters": [
+    "params"
+  ],
+  "parseSetCacheBehaviorParameters": [
+    "params"
+  ],
+  "parseSetExtraHeadersParameters": [
+    "params"
+  ],
+  "parseAddPreloadScriptParams": [
+    "params"
+  ],
+  "parseCallFunctionParams": [
+    "params"
+  ],
+  "parseDisownParams": [
+    "params"
+  ],
+  "parseEvaluateParams": [
+    "params"
+  ],
+  "parseGetRealmsParams": [
+    "params"
+  ],
+  "parseRemovePreloadScriptParams": [
+    "params"
+  ],
+  "parseActivateParams": [
+    "params"
+  ],
+  "parseCaptureScreenshotParams": [
+    "params"
+  ],
+  "parseCloseParams": [
+    "params"
+  ],
+  "parseCreateParams": [
+    "params"
+  ],
+  "parseGetTreeParams": [
+    "params"
+  ],
+  "parseHandleUserPromptParameters": [
+    "params"
+  ],
+  "parseLocateNodesParams": [
+    "params"
+  ],
+  "parseNavigateParams": [
+    "params"
+  ],
+  "parsePrintParams": [
+    "params"
+  ],
+  "parseReloadParams": [
+    "params"
+  ],
+  "parseSetViewportParams": [
+    "params"
+  ],
+  "parseTraverseHistoryParams": [
+    "params"
+  ],
+  "parseSubscribeParams": [
+    "params"
+  ],
+  "parseUnsubscribeParams": [
+    "params"
+  ],
+  "parseSetClientHintsOverrideParams": [
+    "params"
+  ],
+  "parseSetForcedColorsModeThemeOverrideParams": [
+    "params"
+  ],
+  "parseSetGeolocationOverrideParams": [
+    "params"
+  ],
+  "parseSetLocaleOverrideParams": [
+    "params"
+  ],
+  "parseSetNetworkConditionsParams": [
+    "params"
+  ],
+  "parseSetScreenOrientationOverrideParams": [
+    "params"
+  ],
+  "parseSetScreenSettingsOverrideParams": [
+    "params"
+  ],
+  "parseSetScriptingEnabledParams": [
+    "params"
+  ],
+  "parseSetTimezoneOverrideParams": [
+    "params"
+  ],
+  "parseSetTouchOverrideParams": [
+    "params"
+  ],
+  "parseSetUserAgentOverrideParams": [
+    "params"
+  ],
+  "parsePerformActionsParams": [
+    "params"
+  ],
+  "parseReleaseActionsParams": [
+    "params"
+  ],
+  "parseSetFilesParams": [
+    "params"
+  ],
+  "parseDeleteCookiesParams": [
+    "params"
+  ],
+  "parseGetCookiesParams": [
+    "params"
+  ],
+  "parseSetCookieParams": [
+    "params"
+  ],
+  "parseGetSessionRequest": [
+    "params"
+  ],
+  "parseResolveRealmRequest": [
+    "params"
+  ],
+  "parseSendCommandRequest": [
+    "params"
+  ],
+  "parseSetPermissionsParams": [
+    "params"
+  ],
+  "parseDisableSimulationParameters": [
+    "params"
+  ],
+  "parseHandleRequestDevicePromptParams": [
+    "params"
+  ],
+  "parseSimulateAdapterParams": [
+    "params"
+  ],
+  "parseSimulateAdvertisementParams": [
+    "params"
+  ],
+  "parseSimulateCharacteristicParams": [
+    "params"
+  ],
+  "parseSimulateCharacteristicResponseParams": [
+    "params"
+  ],
+  "parseSimulateDescriptorParams": [
+    "params"
+  ],
+  "parseSimulateDescriptorResponseParams": [
+    "params"
+  ],
+  "parseSimulateGattConnectionResponseParams": [
+    "params"
+  ],
+  "parseSimulateGattDisconnectionParams": [
+    "params"
+  ],
+  "parseSimulatePreconnectedPeripheralParams": [
+    "params"
+  ],
+  "parseSimulateServiceParams": [
+    "params"
+  ],
+  "parseInstallParams": [
+    "params"
+  ],
+  "parseUninstallParams": [
+    "params"
+  ],
+  "Buffer": {
+    "constructor": [
+      "capacity",
+      "onItemRemoved"
+    ],
+    "get": [],
+    "add": [
+      "value"
+    ]
+  },
+  "DefaultMap": {
+    "constructor": [
+      "getDefaultValue",
+      "entries"
+    ],
+    "get": [
+      "key"
+    ]
+  },
+  "Deferred": {
+    "isFinished": [],
+    "result": [],
+    "constructor": [],
+    "then": [
+      "onFulfilled",
+      "onRejected"
+    ],
+    "catch": [
+      "onRejected"
+    ],
+    "resolve": [
+      "value"
+    ],
+    "reject": [
+      "reason"
+    ],
+    "finally": [
+      "onFinally"
+    ]
+  },
+  "EventEmitter": {
+    "on": [
+      "type",
+      "handler"
+    ],
+    "once": [
+      "event",
+      "handler"
+    ],
+    "off": [
+      "type",
+      "handler"
+    ],
+    "emit": [
+      "event",
+      "eventData"
+    ],
+    "removeAllListeners": [
+      "event"
+    ]
+  },
+  "onceHandler": [
+    "eventData"
+  ],
+  "IdWrapper": {
+    "constructor": [],
+    "id": []
+  },
+  "Mutex": {
+    "acquire": [],
+    "run": [
+      "action"
+    ]
+  },
+  "ProcessingQueue": {
+    "LOGGER_PREFIX": [],
+    "constructor": [
+      "processor",
+      "logger"
+    ],
+    "add": [
+      "entry",
+      "name"
+    ]
+  },
+  "assert": [
+    "predicate",
+    "message"
+  ],
+  "base64ToString": [
+    "base64Str"
+  ],
+  "isSingleComplexGrapheme": [
+    "value"
+  ],
+  "isSingleGrapheme": [
+    "value"
+  ],
+  "getTimestamp": [],
+  "inchesFromCm": [
+    "cm"
+  ],
+  "urlMatchesAboutBlank": [
+    "url"
+  ],
+  "bytesToHex": [
+    "bytes"
+  ],
+  "uuidv4": [],
+  "BrowserInstance": {
+    "run": [
+      "chromeOptions",
+      "verbose"
+    ],
+    "constructor": [
+      "mapperCdpConnection",
+      "browserProcess"
+    ],
+    "close": [],
+    "bidiSession": []
+  },
+  "MapperServerCdpConnection": {
+    "create": [
+      "cdpConnection",
+      "mapperTabSource",
+      "verbose"
+    ],
+    "constructor": [
+      "cdpConnection",
+      "bidiSession"
+    ],
+    "close": [],
+    "bidiSession": []
+  },
+  "getLogger": [
+    "type"
+  ],
+  "PipeTransport": {
+    "constructor": [
+      "pipeWrite",
+      "pipeRead"
+    ],
+    "setOnMessage": [
+      "onMessage"
+    ],
+    "sendMessage": [
+      "message"
+    ],
+    "close": []
+  },
+  "SimpleTransport": {
+    "constructor": [
+      "sendCommandDelegate"
+    ],
+    "sendCommand": [
+      "plainCommand"
+    ]
+  },
+  "WebSocketServer": {
+    "constructor": [
+      "port",
+      "verbose"
+    ]
+  },
+  "sessionResponseListener": [
+    "message"
+  ],
+  "parseCommandLineArgs": [],
+  "getMapperTabSource": [],
+  "mitt": [
+    "n"
+  ],
+  "assertIs": [
+    "_arg"
+  ],
+  "assertNever": [
+    "_x"
+  ],
+  "joinValues": [
+    "array",
+    "param"
+  ],
+  "getParsedType": [
+    "data"
+  ],
+  "quotelessJson": [
+    "obj"
+  ],
+  "ZodError": {
+    "errors": [],
+    "constructor": [
+      "issues"
+    ],
+    "format": [
+      "_mapper"
+    ],
+    "assert": [
+      "value"
+    ],
+    "toString": [],
+    "message": [],
+    "isEmpty": [],
+    "flatten": [
+      "param"
+    ],
+    "formErrors": []
+  },
+  "processError": [
+    "error"
+  ],
+  "errorMap": [
+    "issue",
+    "_ctx"
+  ],
+  "setErrorMap": [
+    "map"
+  ],
+  "getErrorMap": [],
+  "makeIssue": [
+    "params"
+  ],
+  "addIssueToContext": [
+    "ctx",
+    "issueData"
+  ],
+  "ParseStatus": {
+    "constructor": [],
+    "dirty": [],
+    "abort": [],
+    "mergeArray": [
+      "status",
+      "results"
+    ],
+    "mergeObjectAsync": [
+      "status",
+      "pairs"
+    ],
+    "mergeObjectSync": [
+      "status",
+      "pairs"
+    ]
+  },
+  "DIRTY": [
+    "value"
+  ],
+  "OK": [
+    "value"
+  ],
+  "isAborted": [
+    "x"
+  ],
+  "isDirty": [
+    "x"
+  ],
+  "isValid": [
+    "x"
+  ],
+  "isAsync": [
+    "x"
+  ],
+  "ParseInputLazyPath": {
+    "constructor": [
+      "parent",
+      "value",
+      "path",
+      "key"
+    ],
+    "path": []
+  },
+  "handleResult": [
+    "ctx",
+    "result"
+  ],
+  "processCreateParams": [
+    "params"
+  ],
+  "customMap": [
+    "iss",
+    "ctx"
+  ],
+  "ZodType": {
+    "description": [],
+    "_getType": [
+      "input"
+    ],
+    "_getOrReturnCtx": [
+      "input",
+      "ctx"
+    ],
+    "_processInputParams": [
+      "input"
+    ],
+    "_parseSync": [
+      "input"
+    ],
+    "_parseAsync": [
+      "input"
+    ],
+    "parse": [
+      "data",
+      "params"
+    ],
+    "safeParse": [
+      "data",
+      "params"
+    ],
+    "parseAsync": [
+      "data",
+      "params"
+    ],
+    "safeParseAsync": [
+      "data",
+      "params"
+    ],
+    "refine": [
+      "check",
+      "message"
+    ],
+    "refinement": [
+      "check",
+      "refinementData"
+    ],
+    "_refinement": [
+      "refinement"
+    ],
+    "superRefine": [
+      "refinement"
+    ],
+    "constructor": [
+      "def"
+    ],
+    "optional": [],
+    "nullable": [],
+    "nullish": [],
+    "array": [],
+    "promise": [],
+    "or": [
+      "option"
+    ],
+    "and": [
+      "incoming"
+    ],
+    "transform": [
+      "transform"
+    ],
+    "default": [
+      "def"
+    ],
+    "brand": [],
+    "catch": [
+      "def"
+    ],
+    "describe": [
+      "description"
+    ],
+    "pipe": [
+      "target"
+    ],
+    "readonly": [],
+    "isOptional": [],
+    "isNullable": []
+  },
+  "getIssueProperties": [
+    "val"
+  ],
+  "setError": [],
+  "timeRegexSource": [
+    "args"
+  ],
+  "timeRegex": [
+    "args"
+  ],
+  "datetimeRegex": [
+    "args"
+  ],
+  "isValidIP": [
+    "ip",
+    "version"
+  ],
+  "isValidJWT": [
+    "jwt",
+    "alg"
+  ],
+  "isValidCidr": [
+    "ip",
+    "version"
+  ],
+  "ZodString": {
+    "_parse": [
+      "input"
+    ],
+    "_regex": [
+      "regex",
+      "validation",
+      "message"
+    ],
+    "_addCheck": [
+      "check"
+    ],
+    "email": [
+      "message"
+    ],
+    "url": [
+      "message"
+    ],
+    "emoji": [
+      "message"
+    ],
+    "uuid": [
+      "message"
+    ],
+    "nanoid": [
+      "message"
+    ],
+    "cuid": [
+      "message"
+    ],
+    "cuid2": [
+      "message"
+    ],
+    "ulid": [
+      "message"
+    ],
+    "base64": [
+      "message"
+    ],
+    "base64url": [
+      "message"
+    ],
+    "jwt": [
+      "options"
+    ],
+    "ip": [
+      "options"
+    ],
+    "cidr": [
+      "options"
+    ],
+    "datetime": [
+      "options"
+    ],
+    "date": [
+      "message"
+    ],
+    "time": [
+      "options"
+    ],
+    "duration": [
+      "message"
+    ],
+    "regex": [
+      "regex",
+      "message"
+    ],
+    "includes": [
+      "value",
+      "options"
+    ],
+    "startsWith": [
+      "value",
+      "message"
+    ],
+    "endsWith": [
+      "value",
+      "message"
+    ],
+    "min": [
+      "minLength",
+      "message"
+    ],
+    "max": [
+      "maxLength",
+      "message"
+    ],
+    "length": [
+      "len",
+      "message"
+    ],
+    "nonempty": [
+      "message"
+    ],
+    "trim": [],
+    "toLowerCase": [],
+    "toUpperCase": [],
+    "isDatetime": [],
+    "isDate": [],
+    "isTime": [],
+    "isDuration": [],
+    "isEmail": [],
+    "isURL": [],
+    "isEmoji": [],
+    "isUUID": [],
+    "isNANOID": [],
+    "isCUID": [],
+    "isCUID2": [],
+    "isULID": [],
+    "isIP": [],
+    "isCIDR": [],
+    "isBase64": [],
+    "isBase64url": [],
+    "minLength": [],
+    "maxLength": []
+  },
+  "floatSafeRemainder": [
+    "val",
+    "step"
+  ],
+  "ZodNumber": {
+    "constructor": [],
+    "_parse": [
+      "input"
+    ],
+    "gte": [
+      "value",
+      "message"
+    ],
+    "gt": [
+      "value",
+      "message"
+    ],
+    "lte": [
+      "value",
+      "message"
+    ],
+    "lt": [
+      "value",
+      "message"
+    ],
+    "setLimit": [
+      "kind",
+      "value",
+      "inclusive",
+      "message"
+    ],
+    "_addCheck": [
+      "check"
+    ],
+    "int": [
+      "message"
+    ],
+    "positive": [
+      "message"
+    ],
+    "negative": [
+      "message"
+    ],
+    "nonpositive": [
+      "message"
+    ],
+    "nonnegative": [
+      "message"
+    ],
+    "multipleOf": [
+      "value",
+      "message"
+    ],
+    "finite": [
+      "message"
+    ],
+    "safe": [
+      "message"
+    ],
+    "minValue": [],
+    "maxValue": [],
+    "isInt": [],
+    "isFinite": []
+  },
+  "ZodBigInt": {
+    "constructor": [],
+    "_parse": [
+      "input"
+    ],
+    "_getInvalidInput": [
+      "input"
+    ],
+    "gte": [
+      "value",
+      "message"
+    ],
+    "gt": [
+      "value",
+      "message"
+    ],
+    "lte": [
+      "value",
+      "message"
+    ],
+    "lt": [
+      "value",
+      "message"
+    ],
+    "setLimit": [
+      "kind",
+      "value",
+      "inclusive",
+      "message"
+    ],
+    "_addCheck": [
+      "check"
+    ],
+    "positive": [
+      "message"
+    ],
+    "negative": [
+      "message"
+    ],
+    "nonpositive": [
+      "message"
+    ],
+    "nonnegative": [
+      "message"
+    ],
+    "multipleOf": [
+      "value",
+      "message"
+    ],
+    "minValue": [],
+    "maxValue": []
+  },
+  "ZodBoolean": {
+    "_parse": [
+      "input"
+    ]
+  },
+  "ZodDate": {
+    "_parse": [
+      "input"
+    ],
+    "_addCheck": [
+      "check"
+    ],
+    "min": [
+      "minDate",
+      "message"
+    ],
+    "max": [
+      "maxDate",
+      "message"
+    ],
+    "minDate": [],
+    "maxDate": []
+  },
+  "ZodSymbol": {
+    "_parse": [
+      "input"
+    ]
+  },
+  "ZodUndefined": {
+    "_parse": [
+      "input"
+    ]
+  },
+  "ZodNull": {
+    "_parse": [
+      "input"
+    ]
+  },
+  "ZodAny": {
+    "constructor": [],
+    "_parse": [
+      "input"
+    ]
+  },
+  "ZodUnknown": {
+    "constructor": [],
+    "_parse": [
+      "input"
+    ]
+  },
+  "ZodNever": {
+    "_parse": [
+      "input"
+    ]
+  },
+  "ZodVoid": {
+    "_parse": [
+      "input"
+    ]
+  },
+  "ZodArray": {
+    "_parse": [
+      "input"
+    ],
+    "element": [],
+    "min": [
+      "minLength",
+      "message"
+    ],
+    "max": [
+      "maxLength",
+      "message"
+    ],
+    "length": [
+      "len",
+      "message"
+    ],
+    "nonempty": [
+      "message"
+    ]
+  },
+  "deepPartialify": [
+    "schema"
+  ],
+  "ZodObject": {
+    "constructor": [],
+    "_getCached": [],
+    "_parse": [
+      "input"
+    ],
+    "shape": [],
+    "strict": [
+      "message"
+    ],
+    "strip": [],
+    "passthrough": [],
+    "extend": [
+      "augmentation"
+    ],
+    "merge": [
+      "merging"
+    ],
+    "setKey": [
+      "key",
+      "schema"
+    ],
+    "catchall": [
+      "index"
+    ],
+    "pick": [
+      "mask"
+    ],
+    "omit": [
+      "mask"
+    ],
+    "deepPartial": [],
+    "partial": [
+      "mask"
+    ],
+    "required": [
+      "mask"
+    ],
+    "keyof": []
+  },
+  "ZodUnion": {
+    "_parse": [
+      "input"
+    ],
+    "options": []
+  },
+  "handleResults": [
+    "results"
+  ],
+  "getDiscriminator": [
+    "type"
+  ],
+  "ZodDiscriminatedUnion": {
+    "_parse": [
+      "input"
+    ],
+    "discriminator": [],
+    "options": [],
+    "optionsMap": [],
+    "create": [
+      "discriminator",
+      "options",
+      "params"
+    ]
+  },
+  "mergeValues": [
+    "a",
+    "b"
+  ],
+  "ZodIntersection": {
+    "_parse": [
+      "input"
+    ]
+  },
+  "handleParsed": [
+    "parsedLeft",
+    "parsedRight"
+  ],
+  "ZodTuple": {
+    "_parse": [
+      "input"
+    ],
+    "items": [],
+    "rest": [
+      "rest"
+    ]
+  },
+  "ZodRecord": {
+    "keySchema": [],
+    "valueSchema": [],
+    "_parse": [
+      "input"
+    ],
+    "element": [],
+    "create": [
+      "first",
+      "second",
+      "third"
+    ]
+  },
+  "ZodMap": {
+    "keySchema": [],
+    "valueSchema": [],
+    "_parse": [
+      "input"
+    ]
+  },
+  "ZodSet": {
+    "_parse": [
+      "input"
+    ],
+    "min": [
+      "minSize",
+      "message"
+    ],
+    "max": [
+      "maxSize",
+      "message"
+    ],
+    "size": [
+      "size",
+      "message"
+    ],
+    "nonempty": [
+      "message"
+    ]
+  },
+  "finalizeSet": [
+    "elements"
+  ],
+  "ZodFunction": {
+    "constructor": [],
+    "_parse": [
+      "input"
+    ],
+    "parameters": [],
+    "returnType": [],
+    "args": [
+      "param"
+    ],
+    "returns": [
+      "returnType"
+    ],
+    "implement": [
+      "func"
+    ],
+    "strictImplement": [
+      "func"
+    ],
+    "create": [
+      "args",
+      "returns",
+      "params"
+    ]
+  },
+  "makeArgsIssue": [
+    "args",
+    "error"
+  ],
+  "makeReturnsIssue": [
+    "returns",
+    "error"
+  ],
+  "ZodLazy": {
+    "schema": [],
+    "_parse": [
+      "input"
+    ]
+  },
+  "ZodLiteral": {
+    "_parse": [
+      "input"
+    ],
+    "value": []
+  },
+  "createZodEnum": [
+    "values",
+    "params"
+  ],
+  "ZodEnum": {
+    "_parse": [
+      "input"
+    ],
+    "options": [],
+    "enum": [],
+    "Values": [],
+    "Enum": [],
+    "extract": [
+      "values",
+      "param"
+    ],
+    "exclude": [
+      "values",
+      "param"
+    ]
+  },
+  "ZodNativeEnum": {
+    "_parse": [
+      "input"
+    ],
+    "enum": []
+  },
+  "ZodPromise": {
+    "unwrap": [],
+    "_parse": [
+      "input"
+    ]
+  },
+  "ZodEffects": {
+    "innerType": [],
+    "sourceType": [],
+    "_parse": [
+      "input"
+    ]
+  },
+  "executeRefinement": [
+    "acc"
+  ],
+  "ZodOptional": {
+    "_parse": [
+      "input"
+    ],
+    "unwrap": []
+  },
+  "ZodNullable": {
+    "_parse": [
+      "input"
+    ],
+    "unwrap": []
+  },
+  "ZodDefault": {
+    "_parse": [
+      "input"
+    ],
+    "removeDefault": []
+  },
+  "ZodCatch": {
+    "_parse": [
+      "input"
+    ],
+    "removeCatch": []
+  },
+  "ZodNaN": {
+    "_parse": [
+      "input"
+    ]
+  },
+  "ZodBranded": {
+    "_parse": [
+      "input"
+    ],
+    "unwrap": []
+  },
+  "ZodPipeline": {
+    "_parse": [
+      "input"
+    ],
+    "create": [
+      "a",
+      "b"
+    ]
+  },
+  "handleAsync": [],
+  "ZodReadonly": {
+    "_parse": [
+      "input"
+    ],
+    "unwrap": []
+  },
+  "freeze": [
+    "data"
+  ],
+  "cleanParams": [
+    "params",
+    "data"
+  ],
+  "custom": [
+    "check",
+    "param",
+    "fatal"
+  ],
+  "instanceOfType": [
+    "cls",
+    "param"
+  ],
+  "ostring": [],
+  "onumber": [],
+  "oboolean": []
+}
