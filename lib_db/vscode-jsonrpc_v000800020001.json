@@ -1,0 +1,743 @@
+{
+  "BrowserMessageReader": {
+    "constructor": [
+      "port"
+    ],
+    "listen": [
+      "callback"
+    ]
+  },
+  "BrowserMessageWriter": {
+    "constructor": [
+      "port"
+    ],
+    "write": [
+      "msg"
+    ],
+    "handleError": [
+      "error",
+      "msg"
+    ],
+    "end": []
+  },
+  "createMessageConnection": [
+    "input",
+    "output",
+    "logger",
+    "options"
+  ],
+  "MessageBuffer": {
+    "constructor": [
+      "param"
+    ],
+    "emptyBuffer": [],
+    "fromString": [
+      "value",
+      "encoding"
+    ],
+    "toString": [
+      "value",
+      "encoding"
+    ],
+    "asNative": [
+      "buffer",
+      "length"
+    ],
+    "allocNative": [
+      "length"
+    ]
+  },
+  "ReadableStreamWrapper": {
+    "constructor": [
+      "stream"
+    ],
+    "onClose": [
+      "listener"
+    ],
+    "onError": [
+      "listener"
+    ],
+    "onEnd": [
+      "listener"
+    ],
+    "onData": [
+      "listener"
+    ]
+  },
+  "WritableStreamWrapper": {
+    "constructor": [
+      "stream"
+    ],
+    "onClose": [
+      "listener"
+    ],
+    "onError": [
+      "listener"
+    ],
+    "onEnd": [
+      "listener"
+    ],
+    "write": [
+      "data",
+      "encoding"
+    ],
+    "end": []
+  },
+  "RIL": [],
+  "install": [],
+  "CancellationTokenSource": {
+    "token": [],
+    "cancel": [],
+    "dispose": []
+  },
+  "is": [
+    "value"
+  ],
+  "MutableToken": {
+    "constructor": [],
+    "cancel": [],
+    "isCancellationRequested": [],
+    "onCancellationRequested": [],
+    "dispose": []
+  },
+  "ProgressType": {
+    "constructor": []
+  },
+  "ConnectionError": {
+    "constructor": [
+      "code",
+      "message"
+    ]
+  },
+  "fromString": [
+    "value"
+  ],
+  "toString": [
+    "value"
+  ],
+  "createRequestQueueKey": [
+    "id"
+  ],
+  "createResponseQueueKey": [
+    "id"
+  ],
+  "createNotificationQueueKey": [],
+  "addMessageToQueue": [
+    "queue",
+    "message"
+  ],
+  "cancelUndispatched": [
+    "_message"
+  ],
+  "isListening": [],
+  "isClosed": [],
+  "isDisposed": [],
+  "closeHandler": [],
+  "readErrorHandler": [
+    "error"
+  ],
+  "writeErrorHandler": [
+    "data"
+  ],
+  "triggerMessageQueue": [],
+  "handleMessage": [
+    "message"
+  ],
+  "processMessageQueue": [],
+  "callback": [
+    "error"
+  ],
+  "handleRequest": [
+    "requestMessage"
+  ],
+  "reply": [
+    "resultOrError",
+    "method",
+    "startTime"
+  ],
+  "replyError": [
+    "error",
+    "method",
+    "startTime"
+  ],
+  "replySuccess": [
+    "result",
+    "method",
+    "startTime"
+  ],
+  "handleResponse": [
+    "responseMessage"
+  ],
+  "handleNotification": [
+    "message"
+  ],
+  "handleInvalidMessage": [
+    "message"
+  ],
+  "stringifyTrace": [
+    "params"
+  ],
+  "traceSendingRequest": [
+    "message"
+  ],
+  "traceSendingNotification": [
+    "message"
+  ],
+  "traceSendingResponse": [
+    "message",
+    "method",
+    "startTime"
+  ],
+  "traceReceivedRequest": [
+    "message"
+  ],
+  "traceReceivedNotification": [
+    "message"
+  ],
+  "traceReceivedResponse": [
+    "message",
+    "responsePromise"
+  ],
+  "logLSPMessage": [
+    "type",
+    "message"
+  ],
+  "throwIfClosedOrDisposed": [],
+  "throwIfListening": [],
+  "throwIfNotListening": [],
+  "undefinedToNull": [
+    "param"
+  ],
+  "nullToUndefined": [
+    "param"
+  ],
+  "isNamedParam": [
+    "param"
+  ],
+  "computeSingleParam": [
+    "parameterStructures",
+    "param"
+  ],
+  "computeMessageParams": [
+    "type",
+    "params"
+  ],
+  "resolveWithCleanup": [
+    "r"
+  ],
+  "rejectWithCleanup": [
+    "r"
+  ],
+  "create": [
+    "func"
+  ],
+  "getEncodingHeaderValue": [
+    "encodings"
+  ],
+  "parseEncodingHeaderValue": [
+    "value"
+  ],
+  "parseEncoding": [
+    "value"
+  ],
+  "Emitter": {
+    "constructor": [
+      "_options"
+    ],
+    "event": [],
+    "fire": [
+      "event"
+    ],
+    "dispose": []
+  },
+  "CallbackList": {
+    "add": [
+      "callback",
+      "param",
+      "bucket"
+    ],
+    "remove": [
+      "callback",
+      "param"
+    ],
+    "invoke": [
+      "param"
+    ],
+    "isEmpty": [],
+    "dispose": []
+  },
+  "boolean": [
+    "value"
+  ],
+  "string": [
+    "value"
+  ],
+  "number": [
+    "value"
+  ],
+  "error": [
+    "value"
+  ],
+  "func": [
+    "value"
+  ],
+  "array": [
+    "value"
+  ],
+  "stringArray": [
+    "value"
+  ],
+  "LinkedMap": {
+    "constructor": [],
+    "clear": [],
+    "isEmpty": [],
+    "size": [],
+    "first": [],
+    "last": [],
+    "has": [
+      "key"
+    ],
+    "get": [
+      "key",
+      "param"
+    ],
+    "set": [
+      "key",
+      "value",
+      "param"
+    ],
+    "delete": [
+      "key"
+    ],
+    "remove": [
+      "key"
+    ],
+    "shift": [],
+    "forEach": [
+      "callbackfn",
+      "thisArg"
+    ],
+    "keys": [],
+    "values": [],
+    "entries": [],
+    "trimOld": [
+      "newSize"
+    ],
+    "addItemFirst": [
+      "item"
+    ],
+    "addItemLast": [
+      "item"
+    ],
+    "removeItem": [
+      "item"
+    ],
+    "touch": [
+      "item",
+      "touch"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "data"
+    ]
+  },
+  "LRUCache": {
+    "constructor": [
+      "limit",
+      "param"
+    ],
+    "limit": [
+      "limit"
+    ],
+    "ratio": [
+      "ratio"
+    ],
+    "get": [
+      "key",
+      "param"
+    ],
+    "peek": [
+      "key"
+    ],
+    "set": [
+      "key",
+      "value"
+    ],
+    "checkTrim": []
+  },
+  "AbstractMessageBuffer": {
+    "constructor": [
+      "param"
+    ],
+    "encoding": [],
+    "append": [
+      "chunk"
+    ],
+    "tryReadHeaders": [
+      "param"
+    ],
+    "tryReadBody": [
+      "length"
+    ],
+    "numberOfBytes": [],
+    "_read": [
+      "byteCount"
+    ]
+  },
+  "AbstractMessageReader": {
+    "constructor": [],
+    "dispose": [],
+    "onError": [],
+    "fireError": [
+      "error"
+    ],
+    "onClose": [],
+    "fireClose": [],
+    "onPartialMessage": [],
+    "firePartialMessage": [
+      "info"
+    ],
+    "asError": [
+      "error"
+    ]
+  },
+  "ReadableStreamMessageReader": {
+    "constructor": [
+      "readable",
+      "options"
+    ],
+    "partialMessageTimeout": [],
+    "listen": [
+      "callback"
+    ],
+    "onData": [
+      "data"
+    ],
+    "clearPartialMessageTimer": [],
+    "setPartialMessageTimer": []
+  },
+  "fromOptions": [
+    "options"
+  ],
+  "AbstractMessageWriter": {
+    "constructor": [],
+    "dispose": [],
+    "onError": [],
+    "fireError": [
+      "error",
+      "message",
+      "count"
+    ],
+    "onClose": [],
+    "fireClose": [],
+    "asError": [
+      "error"
+    ]
+  },
+  "WriteableStreamMessageWriter": {
+    "constructor": [
+      "writable",
+      "options"
+    ],
+    "write": [
+      "msg"
+    ],
+    "doWrite": [
+      "msg",
+      "headers",
+      "data"
+    ],
+    "handleError": [
+      "error",
+      "msg"
+    ],
+    "end": []
+  },
+  "ResponseError": {
+    "constructor": [
+      "code",
+      "message",
+      "data"
+    ],
+    "toJson": []
+  },
+  "ParameterStructures": {
+    "constructor": [
+      "kind"
+    ],
+    "is": [
+      "value"
+    ],
+    "toString": []
+  },
+  "AbstractMessageSignature": {
+    "constructor": [
+      "method",
+      "numberOfParams"
+    ],
+    "parameterStructures": []
+  },
+  "RequestType0": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "RequestType": {
+    "constructor": [
+      "method",
+      "param"
+    ],
+    "parameterStructures": []
+  },
+  "RequestType1": {
+    "constructor": [
+      "method",
+      "param"
+    ],
+    "parameterStructures": []
+  },
+  "RequestType2": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "RequestType3": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "RequestType4": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "RequestType5": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "RequestType6": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "RequestType7": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "RequestType8": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "RequestType9": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType": {
+    "constructor": [
+      "method",
+      "param"
+    ],
+    "parameterStructures": []
+  },
+  "NotificationType0": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType1": {
+    "constructor": [
+      "method",
+      "param"
+    ],
+    "parameterStructures": []
+  },
+  "NotificationType2": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType3": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType4": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType5": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType6": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType7": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType8": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType9": {
+    "constructor": [
+      "method"
+    ]
+  },
+  "isRequest": [
+    "message"
+  ],
+  "isNotification": [
+    "message"
+  ],
+  "isResponse": [
+    "message"
+  ],
+  "RAL": [],
+  "Semaphore": {
+    "constructor": [
+      "param"
+    ],
+    "lock": [
+      "thunk"
+    ],
+    "active": [],
+    "runNext": [],
+    "doRunNext": []
+  },
+  "SharedArraySenderStrategy": {
+    "constructor": [],
+    "enableCancellation": [
+      "request"
+    ],
+    "sendCancellation": [
+      "_conn",
+      "id"
+    ],
+    "cleanup": [
+      "id"
+    ],
+    "dispose": []
+  },
+  "SharedArrayReceiverStrategy": {
+    "constructor": [],
+    "createCancellationTokenSource": [
+      "request"
+    ]
+  },
+  "SharedArrayBufferCancellationToken": {
+    "constructor": [
+      "buffer"
+    ],
+    "isCancellationRequested": [],
+    "onCancellationRequested": []
+  },
+  "SharedArrayBufferCancellationTokenSource": {
+    "constructor": [
+      "buffer"
+    ],
+    "cancel": [],
+    "dispose": []
+  },
+  "IPCMessageReader": {
+    "constructor": [
+      "process"
+    ],
+    "listen": [
+      "callback"
+    ]
+  },
+  "IPCMessageWriter": {
+    "constructor": [
+      "process"
+    ],
+    "write": [
+      "msg"
+    ],
+    "handleError": [
+      "error",
+      "msg"
+    ],
+    "end": []
+  },
+  "PortMessageReader": {
+    "constructor": [
+      "port"
+    ],
+    "listen": [
+      "callback"
+    ]
+  },
+  "PortMessageWriter": {
+    "constructor": [
+      "port"
+    ],
+    "write": [
+      "msg"
+    ],
+    "handleError": [
+      "error",
+      "msg"
+    ],
+    "end": []
+  },
+  "SocketMessageReader": {
+    "constructor": [
+      "socket",
+      "param"
+    ]
+  },
+  "SocketMessageWriter": {
+    "constructor": [
+      "socket",
+      "options"
+    ],
+    "dispose": []
+  },
+  "StreamMessageReader": {
+    "constructor": [
+      "readable",
+      "encoding"
+    ]
+  },
+  "StreamMessageWriter": {
+    "constructor": [
+      "writable",
+      "options"
+    ]
+  },
+  "generateRandomPipeName": [],
+  "createClientPipeTransport": [
+    "pipeName",
+    "param"
+  ],
+  "createServerPipeTransport": [
+    "pipeName",
+    "param"
+  ],
+  "createClientSocketTransport": [
+    "port",
+    "param"
+  ],
+  "createServerSocketTransport": [
+    "port",
+    "param"
+  ],
+  "isReadableStream": [
+    "value"
+  ],
+  "isWritableStream": [
+    "value"
+  ]
+}

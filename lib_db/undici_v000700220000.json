@@ -1,0 +1,2957 @@
+{
+  "appendFetchStackTrace": [
+    "err",
+    "filename"
+  ],
+  "makeDispatcher": [
+    "fn"
+  ],
+  "install": [],
+  "abort": [],
+  "addSignal": [
+    "self",
+    "signal"
+  ],
+  "removeSignal": [
+    "self"
+  ],
+  "ConnectHandler": {
+    "constructor": [
+      "opts",
+      "callback"
+    ],
+    "onConnect": [
+      "abort",
+      "context"
+    ],
+    "onHeaders": [],
+    "onUpgrade": [
+      "statusCode",
+      "rawHeaders",
+      "socket"
+    ],
+    "onError": [
+      "err"
+    ]
+  },
+  "connect": [
+    "client"
+  ],
+  "noop": [],
+  "PipelineRequest": {
+    "constructor": [],
+    "_read": [],
+    "_destroy": [
+      "err",
+      "callback"
+    ]
+  },
+  "PipelineResponse": {
+    "constructor": [
+      "resume"
+    ],
+    "_read": [],
+    "_destroy": [
+      "err",
+      "callback"
+    ]
+  },
+  "PipelineHandler": {
+    "constructor": [
+      "opts",
+      "handler"
+    ],
+    "onConnect": [
+      "abort",
+      "context"
+    ],
+    "onHeaders": [
+      "statusCode",
+      "rawHeaders",
+      "resume"
+    ],
+    "onData": [
+      "chunk"
+    ],
+    "onComplete": [
+      "trailers"
+    ],
+    "onError": [
+      "err"
+    ]
+  },
+  "pipeline": [
+    "opts",
+    "handler"
+  ],
+  "RequestHandler": {
+    "constructor": [
+      "opts",
+      "callback"
+    ],
+    "onConnect": [
+      "abort",
+      "context"
+    ],
+    "onHeaders": [
+      "statusCode",
+      "rawHeaders",
+      "resume",
+      "statusMessage"
+    ],
+    "onData": [
+      "chunk"
+    ],
+    "onComplete": [
+      "trailers"
+    ],
+    "onError": [
+      "err"
+    ]
+  },
+  "request": [
+    "opts",
+    "callback"
+  ],
+  "StreamHandler": {
+    "constructor": [
+      "opts",
+      "factory",
+      "callback"
+    ],
+    "onConnect": [
+      "abort",
+      "context"
+    ],
+    "onHeaders": [
+      "statusCode",
+      "rawHeaders",
+      "resume",
+      "statusMessage"
+    ],
+    "onData": [
+      "chunk"
+    ],
+    "onComplete": [
+      "trailers"
+    ],
+    "onError": [
+      "err"
+    ]
+  },
+  "stream": [
+    "opts",
+    "factory",
+    "callback"
+  ],
+  "UpgradeHandler": {
+    "constructor": [
+      "opts",
+      "callback"
+    ],
+    "onConnect": [
+      "abort",
+      "context"
+    ],
+    "onHeaders": [],
+    "onUpgrade": [
+      "statusCode",
+      "rawHeaders",
+      "socket"
+    ],
+    "onError": [
+      "err"
+    ]
+  },
+  "upgrade": [
+    "opts",
+    "callback"
+  ],
+  "BodyReadable": {
+    "constructor": [
+      "opts"
+    ],
+    "text": [],
+    "json": [],
+    "blob": [],
+    "bytes": [],
+    "arrayBuffer": [],
+    "formData": [],
+    "bodyUsed": [],
+    "body": [],
+    "dump": [
+      "opts"
+    ]
+  },
+  "onAbort": [],
+  "isLocked": [
+    "bodyReadable"
+  ],
+  "isUnusable": [
+    "bodyReadable"
+  ],
+  "consume": [
+    "stream",
+    "type"
+  ],
+  "consumeStart": [
+    "consume"
+  ],
+  "chunksDecode": [
+    "chunks",
+    "length",
+    "encoding"
+  ],
+  "chunksConcat": [
+    "chunks",
+    "length"
+  ],
+  "consumeEnd": [
+    "consume",
+    "encoding"
+  ],
+  "consumePush": [
+    "consume",
+    "chunk"
+  ],
+  "consumeFinish": [
+    "consume",
+    "err"
+  ],
+  "MemoryCacheStore": {
+    "constructor": [
+      "opts"
+    ],
+    "get": [
+      "key"
+    ],
+    "createWriteStream": [
+      "key",
+      "value"
+    ],
+    "delete": [
+      "key"
+    ]
+  },
+  "findEntry": [
+    "key",
+    "entries",
+    "now"
+  ],
+  "headerValueEquals": [
+    "lhs",
+    "rhs"
+  ],
+  "buildConnector": [
+    "param"
+  ],
+  "getHeaderNameAsBuffer": [
+    "header"
+  ],
+  "trackClientEvents": [
+    "param"
+  ],
+  "trackRequestEvents": [
+    "param"
+  ],
+  "trackWebSocketEvents": [
+    "param"
+  ],
+  "UndiciError": {
+    "name": [],
+    "code": []
+  },
+  "ConnectTimeoutError": {
+    "name": [],
+    "code": []
+  },
+  "HeadersTimeoutError": {
+    "name": [],
+    "code": []
+  },
+  "HeadersOverflowError": {
+    "name": [],
+    "code": []
+  },
+  "BodyTimeoutError": {
+    "name": [],
+    "code": []
+  },
+  "InvalidArgumentError": {
+    "name": [],
+    "code": []
+  },
+  "InvalidReturnValueError": {
+    "name": [],
+    "code": []
+  },
+  "AbortError": {
+    "constructor": [
+      "message"
+    ],
+    "kAbortError": []
+  },
+  "RequestAbortedError": {
+    "name": [],
+    "code": []
+  },
+  "InformationalError": {
+    "name": [],
+    "code": []
+  },
+  "RequestContentLengthMismatchError": {
+    "name": [],
+    "code": []
+  },
+  "ResponseContentLengthMismatchError": {
+    "name": [],
+    "code": []
+  },
+  "ClientDestroyedError": {
+    "name": [],
+    "code": []
+  },
+  "ClientClosedError": {
+    "name": [],
+    "code": []
+  },
+  "SocketError": {
+    "name": [],
+    "code": [],
+    "socket": []
+  },
+  "NotSupportedError": {
+    "name": [],
+    "code": []
+  },
+  "BalancedPoolMissingUpstreamError": {
+    "name": [],
+    "code": []
+  },
+  "HTTPParserError": {
+    "name": [],
+    "code": []
+  },
+  "ResponseExceededMaxSizeError": {
+    "name": [],
+    "code": []
+  },
+  "RequestRetryError": {
+    "constructor": [
+      "message",
+      "statusCode",
+      "headers",
+      "body"
+    ],
+    "name": [],
+    "code": [],
+    "statusCode": [],
+    "data": [],
+    "headers": []
+  },
+  "ResponseError": {
+    "constructor": [
+      "message",
+      "code",
+      "options"
+    ],
+    "name": [],
+    "code": [],
+    "statusCode": [],
+    "body": [],
+    "headers": []
+  },
+  "SecureProxyConnectionError": {
+    "constructor": [
+      "cause",
+      "message",
+      "options"
+    ],
+    "name": [],
+    "code": []
+  },
+  "MaxOriginsReachedError": {
+    "name": [],
+    "code": []
+  },
+  "Request": {
+    "constructor": [
+      "input",
+      "init"
+    ],
+    "cache": [],
+    "credentials": [],
+    "destination": [],
+    "headers": [],
+    "integrity": [],
+    "method": [],
+    "mode": [],
+    "redirect": [],
+    "referrer": [],
+    "referrerPolicy": [],
+    "url": [],
+    "keepalive": [],
+    "signal": [],
+    "duplex": [],
+    "clone": []
+  },
+  "processHeader": [
+    "request",
+    "key",
+    "val"
+  ],
+  "TstNode": {
+    "value": [],
+    "left": [],
+    "middle": [],
+    "right": [],
+    "code": [],
+    "constructor": [
+      "key",
+      "value",
+      "index"
+    ],
+    "add": [
+      "key",
+      "value"
+    ],
+    "search": [
+      "key"
+    ]
+  },
+  "TernarySearchTree": {
+    "node": [],
+    "insert": [
+      "key",
+      "value"
+    ],
+    "lookup": [
+      "key"
+    ]
+  },
+  "BodyAsyncIterable": {
+    "constructor": [
+      "body"
+    ]
+  },
+  "wrapRequestBody": [
+    "body"
+  ],
+  "isStream": [
+    "obj"
+  ],
+  "isBlobLike": [
+    "object"
+  ],
+  "pathHasQueryOrFragment": [
+    "url"
+  ],
+  "serializePathWithQuery": [
+    "url",
+    "queryParams"
+  ],
+  "isValidPort": [
+    "port"
+  ],
+  "isHttpOrHttpsPrefixed": [
+    "value"
+  ],
+  "parseURL": [
+    "url"
+  ],
+  "parseOrigin": [
+    "url"
+  ],
+  "getHostname": [
+    "host"
+  ],
+  "getServerName": [
+    "host"
+  ],
+  "deepClone": [
+    "obj"
+  ],
+  "isAsyncIterable": [
+    "obj"
+  ],
+  "isIterable": [
+    "obj"
+  ],
+  "bodyLength": [
+    "body"
+  ],
+  "isDestroyed": [
+    "body"
+  ],
+  "destroy": [
+    "stream",
+    "err"
+  ],
+  "parseKeepAliveTimeout": [
+    "val"
+  ],
+  "headerNameToString": [
+    "value"
+  ],
+  "bufferToLowerCasedHeaderName": [
+    "value"
+  ],
+  "parseHeaders": [
+    "headers",
+    "obj"
+  ],
+  "parseRawHeaders": [
+    "headers"
+  ],
+  "encodeRawHeaders": [
+    "headers"
+  ],
+  "isBuffer": [
+    "buffer"
+  ],
+  "assertRequestHandler": [
+    "handler",
+    "method",
+    "upgrade"
+  ],
+  "isDisturbed": [
+    "body"
+  ],
+  "getSocketInfo": [
+    "socket"
+  ],
+  "ReadableStreamFrom": [
+    "iterable"
+  ],
+  "isFormDataLike": [
+    "object"
+  ],
+  "addAbortListener": [
+    "signal",
+    "listener"
+  ],
+  "isTokenCharCode": [
+    "c"
+  ],
+  "isValidHTTPToken": [
+    "characters"
+  ],
+  "isValidHeaderValue": [
+    "potentialValue"
+  ],
+  "parseRangeHeader": [
+    "range"
+  ],
+  "addListener": [
+    "obj",
+    "name",
+    "listener"
+  ],
+  "removeAllListeners": [
+    "obj"
+  ],
+  "errorRequest": [
+    "client",
+    "request",
+    "err"
+  ],
+  "onConnectTimeout": [
+    "socket",
+    "opts"
+  ],
+  "getProtocolFromUrlString": [
+    "urlString"
+  ],
+  "defaultFactory": [
+    "origin",
+    "opts"
+  ],
+  "Agent": {
+    "constructor": [
+      "opts"
+    ],
+    "closed": [],
+    "destroyed": [],
+    "dispatch": [
+      "options",
+      "handler"
+    ],
+    "stats": []
+  },
+  "closeClientIfUnused": [
+    "connected"
+  ],
+  "getGreatestCommonDivisor": [
+    "a",
+    "b"
+  ],
+  "BalancedPool": {
+    "constructor": [
+      "url",
+      "options"
+    ],
+    "addUpstream": [
+      "upstream"
+    ],
+    "removeUpstream": [
+      "upstream"
+    ],
+    "getUpstream": [
+      "upstream"
+    ],
+    "upstreams": [],
+    "closed": [],
+    "destroyed": [],
+    "connect": [
+      "options",
+      "callback"
+    ]
+  },
+  "lazyllhttp": [],
+  "Parser": {
+    "constructor": [
+      "client",
+      "socket",
+      "param"
+    ],
+    "setTimeout": [
+      "delay",
+      "type"
+    ],
+    "resume": [],
+    "readMore": [],
+    "execute": [
+      "chunk"
+    ],
+    "destroy": [],
+    "onStatus": [
+      "buf"
+    ],
+    "onMessageBegin": [],
+    "onHeaderField": [
+      "buf"
+    ],
+    "onHeaderValue": [
+      "buf"
+    ],
+    "trackHeader": [
+      "len"
+    ],
+    "onUpgrade": [
+      "head"
+    ],
+    "onHeadersComplete": [
+      "statusCode",
+      "upgrade",
+      "shouldKeepAlive"
+    ],
+    "onBody": [
+      "buf"
+    ],
+    "onMessageComplete": []
+  },
+  "onParserTimeout": [
+    "parserWeakRef"
+  ],
+  "connectH1": [
+    "client",
+    "socket"
+  ],
+  "onHttpSocketError": [
+    "err"
+  ],
+  "onHttpSocketReadable": [],
+  "onHttpSocketEnd": [],
+  "onHttpSocketClose": [],
+  "onSocketClose": [],
+  "resumeH1": [
+    "client"
+  ],
+  "shouldSendContentLength": [
+    "method"
+  ],
+  "writeH1": [
+    "client",
+    "request"
+  ],
+  "writeStream": [
+    "abort",
+    "socket",
+    "expectsPayload",
+    "h2stream",
+    "body",
+    "client",
+    "request",
+    "contentLength"
+  ],
+  "onData": [
+    "chunk"
+  ],
+  "onDrain": [],
+  "onClose": [],
+  "onFinished": [
+    "err"
+  ],
+  "writeBuffer": [
+    "abort",
+    "h2stream",
+    "body",
+    "client",
+    "request",
+    "socket",
+    "contentLength",
+    "expectsPayload"
+  ],
+  "writeBlob": [
+    "abort",
+    "h2stream",
+    "body",
+    "client",
+    "request",
+    "socket",
+    "contentLength",
+    "expectsPayload"
+  ],
+  "writeIterable": [
+    "abort",
+    "h2stream",
+    "body",
+    "client",
+    "request",
+    "socket",
+    "contentLength",
+    "expectsPayload"
+  ],
+  "waitForDrain": [],
+  "AsyncWriter": {
+    "constructor": [
+      "param"
+    ],
+    "write": [
+      "chunk"
+    ],
+    "end": [],
+    "destroy": [
+      "err"
+    ]
+  },
+  "parseH2Headers": [
+    "headers"
+  ],
+  "connectH2": [
+    "client",
+    "socket"
+  ],
+  "resumeH2": [
+    "client"
+  ],
+  "applyConnectionWindowSize": [
+    "connectionWindowSize"
+  ],
+  "onHttp2RemoteSettings": [
+    "settings"
+  ],
+  "onHttp2SendPing": [
+    "session"
+  ],
+  "onPing": [
+    "err",
+    "duration"
+  ],
+  "onHttp2SessionError": [
+    "err"
+  ],
+  "onHttp2FrameError": [
+    "type",
+    "code",
+    "id"
+  ],
+  "onHttp2SessionEnd": [],
+  "onHttp2SessionGoAway": [
+    "errorCode"
+  ],
+  "onHttp2SessionClose": [],
+  "onHttp2SocketClose": [],
+  "onHttp2SocketError": [
+    "err"
+  ],
+  "onHttp2SocketEnd": [],
+  "writeH2": [
+    "client",
+    "request"
+  ],
+  "writeBodyH2": [],
+  "onPipeData": [
+    "chunk"
+  ],
+  "getPipelining": [
+    "client"
+  ],
+  "Client": {
+    "constructor": [
+      "url",
+      "options"
+    ],
+    "pipelining": [],
+    "closed": [],
+    "destroyed": [],
+    "stats": [],
+    "connect": [
+      "options",
+      "callback"
+    ]
+  },
+  "callback": [],
+  "onError": [
+    "client",
+    "err"
+  ],
+  "handleConnectError": [
+    "client",
+    "err",
+    "param"
+  ],
+  "emitDrain": [
+    "client"
+  ],
+  "resume": [],
+  "_resume": [
+    "client",
+    "sync"
+  ],
+  "DispatcherBase": {
+    "kDestroyed": [],
+    "kOnDestroyed": [],
+    "kClosed": [],
+    "kOnClosed": [],
+    "destroyed": [],
+    "closed": [],
+    "close": [
+      "callback"
+    ],
+    "destroy": [
+      "err",
+      "callback"
+    ],
+    "dispatch": [
+      "opts",
+      "handler"
+    ]
+  },
+  "onClosed": [],
+  "onDestroyed": [],
+  "wrapInterceptor": [
+    "dispatch"
+  ],
+  "Dispatcher": {
+    "dispatch": [
+      "options",
+      "handler"
+    ],
+    "connect": [
+      "options"
+    ],
+    "compose": [
+      "param"
+    ],
+    "request": [
+      "options"
+    ],
+    "pipeline": [
+      "options",
+      "handler"
+    ],
+    "stream": [
+      "options",
+      "factory"
+    ],
+    "upgrade": [
+      "options"
+    ],
+    "close": [],
+    "destroy": [],
+    "on": [
+      "eventName",
+      "callback"
+    ],
+    "once": [
+      "eventName",
+      "callback"
+    ],
+    "off": [
+      "eventName",
+      "callback"
+    ],
+    "addListener": [
+      "eventName",
+      "callback"
+    ],
+    "removeListener": [
+      "eventName",
+      "callback"
+    ],
+    "prependListener": [
+      "eventName",
+      "callback"
+    ],
+    "prependOnceListener": [
+      "eventName",
+      "callback"
+    ],
+    "listeners": [
+      "eventName"
+    ],
+    "rawListeners": [
+      "eventName"
+    ],
+    "emit": [
+      "eventName",
+      "origin"
+    ]
+  },
+  "EnvHttpProxyAgent": {
+    "constructor": [
+      "opts"
+    ],
+    "dispatch": [
+      "options",
+      "handler"
+    ]
+  },
+  "FixedCircularBuffer": {
+    "bottom": [],
+    "top": [],
+    "list": [],
+    "next": [],
+    "isEmpty": [],
+    "isFull": [],
+    "push": [
+      "data"
+    ],
+    "shift": []
+  },
+  "H2CClient": {
+    "constructor": [
+      "url",
+      "options"
+    ],
+    "pipelining": [],
+    "closed": [],
+    "destroyed": [],
+    "connect": [
+      "options",
+      "callback"
+    ]
+  },
+  "PoolBase": {
+    "kQueue": [],
+    "kQueued": [],
+    "kClients": [],
+    "kNeedDrain": [],
+    "kOnDrain": [
+      "client",
+      "origin",
+      "targets"
+    ],
+    "kOnConnect": [],
+    "kOnDisconnect": [],
+    "kOnConnectionError": [],
+    "kBusy": [],
+    "kConnected": [],
+    "kFree": [],
+    "kPending": [],
+    "kRunning": [],
+    "kSize": [],
+    "stats": [],
+    "kClose": [],
+    "kDestroy": [
+      "err"
+    ],
+    "kDispatch": [
+      "opts",
+      "handler"
+    ],
+    "kAddClient": [
+      "client"
+    ],
+    "kRemoveClient": [
+      "client"
+    ]
+  },
+  "Pool": {
+    "constructor": [
+      "url",
+      "options"
+    ],
+    "closed": [],
+    "destroyed": [],
+    "stats": [],
+    "connect": [
+      "options",
+      "callback"
+    ]
+  },
+  "defaultProtocolPort": [
+    "protocol"
+  ],
+  "defaultAgentFactory": [
+    "origin",
+    "opts"
+  ],
+  "Http1ProxyWrapper": {
+    "constructor": [
+      "proxyUrl",
+      "param"
+    ],
+    "kDispatch": [
+      "opts",
+      "handler"
+    ],
+    "kClose": [],
+    "kDestroy": [
+      "err"
+    ]
+  },
+  "ProxyAgent": {
+    "constructor": [
+      "options"
+    ],
+    "dispatch": [
+      "options",
+      "handler"
+    ],
+    "close": []
+  },
+  "factory": [
+    "origin",
+    "options"
+  ],
+  "buildHeaders": [
+    "headers"
+  ],
+  "throwIfProxyAuthIsSent": [
+    "headers"
+  ],
+  "RetryAgent": {
+    "constructor": [
+      "dispatcher",
+      "options"
+    ]
+  },
+  "RoundRobinPool": {
+    "constructor": [
+      "url",
+      "options"
+    ],
+    "closed": [],
+    "destroyed": [],
+    "stats": [],
+    "connect": [
+      "options",
+      "callback"
+    ]
+  },
+  "utf8DecodeBytes": [
+    "buffer"
+  ],
+  "setGlobalDispatcher": [
+    "agent"
+  ],
+  "getGlobalDispatcher": [],
+  "CacheHandler": {
+    "constructor": [
+      "param",
+      "cacheKey",
+      "handler"
+    ],
+    "onRequestStart": [
+      "controller",
+      "context"
+    ],
+    "onRequestUpgrade": [
+      "controller",
+      "statusCode",
+      "headers",
+      "socket"
+    ],
+    "onResponseStart": [
+      "controller",
+      "statusCode",
+      "resHeaders",
+      "statusMessage"
+    ],
+    "onResponseData": [
+      "controller",
+      "chunk"
+    ],
+    "onResponseEnd": [
+      "controller",
+      "trailers"
+    ],
+    "onResponseError": [
+      "controller",
+      "err"
+    ]
+  },
+  "downstreamOnHeaders": [],
+  "handle304": [
+    "cachedValue"
+  ],
+  "streamCachedBody": [],
+  "canCacheResponse": [
+    "cacheType",
+    "statusCode",
+    "resHeaders",
+    "cacheControlDirectives"
+  ],
+  "getAge": [
+    "ageHeader"
+  ],
+  "determineStaleAt": [
+    "cacheType",
+    "now",
+    "age",
+    "resHeaders",
+    "responseDate",
+    "cacheControlDirectives"
+  ],
+  "determineDeleteAt": [
+    "now",
+    "cacheControlDirectives",
+    "staleAt"
+  ],
+  "stripNecessaryHeaders": [
+    "resHeaders",
+    "cacheControlDirectives"
+  ],
+  "isValidDate": [
+    "date"
+  ],
+  "CacheRevalidationHandler": {
+    "constructor": [
+      "callback",
+      "handler",
+      "allowErrorStatusCodes"
+    ],
+    "onRequestStart": [
+      "_",
+      "context"
+    ],
+    "onRequestUpgrade": [
+      "controller",
+      "statusCode",
+      "headers",
+      "socket"
+    ],
+    "onResponseStart": [
+      "controller",
+      "statusCode",
+      "headers",
+      "statusMessage"
+    ],
+    "onResponseData": [
+      "controller",
+      "chunk"
+    ],
+    "onResponseEnd": [
+      "controller",
+      "trailers"
+    ],
+    "onResponseError": [
+      "controller",
+      "err"
+    ]
+  },
+  "DeduplicationHandler": {
+    "constructor": [
+      "primaryHandler",
+      "onComplete"
+    ],
+    "addWaitingHandler": [
+      "handler"
+    ],
+    "onRequestStart": [
+      "controller",
+      "context"
+    ],
+    "onRequestUpgrade": [
+      "controller",
+      "statusCode",
+      "headers",
+      "socket"
+    ],
+    "onResponseStart": [
+      "controller",
+      "statusCode",
+      "headers",
+      "statusMessage"
+    ],
+    "onResponseData": [
+      "controller",
+      "chunk"
+    ],
+    "onResponseEnd": [
+      "controller",
+      "trailers"
+    ],
+    "onResponseError": [
+      "controller",
+      "err"
+    ]
+  },
+  "RedirectHandler": {
+    "constructor": [
+      "dispatch",
+      "maxRedirections",
+      "opts",
+      "handler",
+      "redirectionLimitReached"
+    ]
+  },
+  "shouldRemoveHeader": [
+    "header",
+    "removeContent",
+    "unknownOrigin"
+  ],
+  "cleanRequestHeaders": [
+    "headers",
+    "removeContent",
+    "unknownOrigin"
+  ],
+  "calculateRetryAfterHeader": [
+    "retryAfter"
+  ],
+  "RetryHandler": {
+    "constructor": [
+      "options",
+      "retryHandlers"
+    ]
+  },
+  "shouldRetry": [
+    "returnedErr"
+  ],
+  "UnwrapController": {
+    "kResume": [],
+    "constructor": [
+      "abort"
+    ],
+    "pause": [],
+    "resume": [],
+    "abort": [
+      "reason"
+    ],
+    "aborted": [],
+    "reason": [],
+    "paused": []
+  },
+  "assertCacheOrigins": [
+    "origins",
+    "name"
+  ],
+  "nop": [],
+  "needsRevalidation": [
+    "result",
+    "cacheControlDirectives",
+    "param"
+  ],
+  "isStale": [
+    "result",
+    "cacheControlDirectives"
+  ],
+  "withinStaleWhileRevalidateWindow": [
+    "result"
+  ],
+  "handleUncachedResponse": [
+    "dispatch",
+    "globalOpts",
+    "cacheKey",
+    "handler",
+    "opts",
+    "reqCacheControl"
+  ],
+  "sendCachedValue": [
+    "handler",
+    "opts",
+    "result",
+    "age",
+    "context",
+    "isStale"
+  ],
+  "handleResult": [
+    "dispatch",
+    "globalOpts",
+    "cacheKey",
+    "handler",
+    "opts",
+    "reqCacheControl",
+    "result"
+  ],
+  "DecompressHandler": {
+    "constructor": [
+      "handler",
+      "param"
+    ],
+    "onResponseStart": [
+      "controller",
+      "statusCode",
+      "headers",
+      "statusMessage"
+    ],
+    "onResponseData": [
+      "controller",
+      "chunk"
+    ],
+    "onResponseEnd": [
+      "controller",
+      "trailers"
+    ],
+    "onResponseError": [
+      "controller",
+      "err"
+    ]
+  },
+  "createDecompressInterceptor": [
+    "param"
+  ],
+  "DNSStorage": {
+    "constructor": [
+      "opts"
+    ],
+    "size": [],
+    "get": [
+      "hostname"
+    ],
+    "set": [
+      "hostname",
+      "records"
+    ],
+    "delete": [
+      "hostname"
+    ],
+    "full": []
+  },
+  "DNSInstance": {
+    "dualStack": [],
+    "affinity": [],
+    "lookup": [],
+    "pick": [],
+    "storage": [],
+    "constructor": [
+      "opts"
+    ],
+    "runLookup": [
+      "origin",
+      "opts",
+      "cb"
+    ],
+    "pickFamily": [
+      "origin",
+      "ipFamily"
+    ],
+    "setRecords": [
+      "origin",
+      "addresses"
+    ],
+    "deleteRecords": [
+      "origin"
+    ],
+    "getHandler": [
+      "meta",
+      "opts"
+    ]
+  },
+  "DNSDispatchHandler": {
+    "constructor": [
+      "state",
+      "param",
+      "opts"
+    ],
+    "onResponseError": [
+      "controller",
+      "err"
+    ]
+  },
+  "DumpHandler": {
+    "aborted": [],
+    "reason": [],
+    "constructor": [
+      "param",
+      "handler"
+    ],
+    "onRequestStart": [
+      "controller",
+      "context"
+    ],
+    "onResponseStart": [
+      "controller",
+      "statusCode",
+      "headers",
+      "statusMessage"
+    ],
+    "onResponseError": [
+      "controller",
+      "err"
+    ],
+    "onResponseData": [
+      "controller",
+      "chunk"
+    ],
+    "onResponseEnd": [
+      "controller",
+      "trailers"
+    ]
+  },
+  "createDumpInterceptor": [
+    "param"
+  ],
+  "createRedirectInterceptor": [
+    "param"
+  ],
+  "ResponseErrorHandler": {
+    "constructor": [
+      "_opts",
+      "param"
+    ],
+    "onRequestStart": [
+      "controller",
+      "context"
+    ],
+    "onResponseStart": [
+      "controller",
+      "statusCode",
+      "headers",
+      "statusMessage"
+    ],
+    "onResponseData": [
+      "controller",
+      "chunk"
+    ],
+    "onResponseEnd": [
+      "controller",
+      "trailers"
+    ],
+    "onResponseError": [
+      "controller",
+      "err"
+    ]
+  },
+  "enumToMap": [
+    "obj",
+    "param",
+    "param"
+  ],
+  "MockAgent": {
+    "constructor": [
+      "options"
+    ],
+    "get": [
+      "origin"
+    ],
+    "dispatch": [
+      "options",
+      "handler"
+    ],
+    "close": [],
+    "deactivate": [],
+    "activate": [],
+    "enableNetConnect": [
+      "host"
+    ],
+    "disableNetConnect": [],
+    "getCallHistory": [],
+    "clearCallHistory": [],
+    "enableCallHistory": [],
+    "disableCallHistory": [],
+    "pendingInterceptors": [],
+    "assertNoPendingInterceptors": [
+      "options"
+    ]
+  },
+  "handleFilterCallsWithOptions": [
+    "criteria",
+    "options",
+    "handler",
+    "store"
+  ],
+  "buildAndValidateFilterCallsOptions": [
+    "param"
+  ],
+  "makeFilterCalls": [
+    "parameterName"
+  ],
+  "computeUrlWithMaybeSearchParameters": [
+    "requestInit"
+  ],
+  "MockCallHistoryLog": {
+    "constructor": [
+      "requestInit"
+    ],
+    "protocol": [],
+    "host": [],
+    "port": [],
+    "origin": [],
+    "path": [],
+    "hash": [],
+    "fullUrl": [],
+    "method": [],
+    "searchParams": [],
+    "body": [],
+    "headers": [],
+    "toMap": [],
+    "toString": []
+  },
+  "MockCallHistory": {
+    "constructor": [
+      "name"
+    ],
+    "calls": [],
+    "firstCall": [],
+    "lastCall": [],
+    "nthCall": [
+      "position"
+    ],
+    "filterCalls": [
+      "criteria",
+      "options"
+    ],
+    "filterCallsByProtocol": [
+      "protocol"
+    ],
+    "filterCallsByHost": [
+      "host"
+    ],
+    "filterCallsByPort": [
+      "port"
+    ],
+    "filterCallsByOrigin": [
+      "origin"
+    ],
+    "filterCallsByPath": [
+      "path"
+    ],
+    "filterCallsByHash": [
+      "hash"
+    ],
+    "filterCallsByFullUrl": [
+      "fullUrl"
+    ],
+    "filterCallsByMethod": [
+      "method"
+    ],
+    "clear": []
+  },
+  "MockClient": {
+    "constructor": [
+      "origin",
+      "options"
+    ],
+    "intercept": [
+      "options"
+    ],
+    "dispatch": [
+      "options",
+      "handlers"
+    ],
+    "close": [],
+    "cleanMocks": []
+  },
+  "MockNotMatchedError": {
+    "constructor": [
+      "message"
+    ],
+    "name": [],
+    "code": []
+  },
+  "MockScope": {
+    "constructor": [
+      "mockDispatch"
+    ],
+    "delay": [
+      "waitInMs"
+    ],
+    "persist": [],
+    "times": [
+      "repeatTimes"
+    ]
+  },
+  "MockInterceptor": {
+    "constructor": [
+      "options",
+      "mockDispatches"
+    ],
+    "reply": [
+      "statusCode",
+      "data",
+      "responseOptions"
+    ],
+    "replyWithError": [
+      "error"
+    ],
+    "defaultReplyHeaders": [
+      "headers"
+    ],
+    "defaultReplyTrailers": [
+      "trailers"
+    ],
+    "replyContentLength": []
+  },
+  "wrappedDefaultsCallback": [
+    "opts"
+  ],
+  "MockPool": {
+    "constructor": [
+      "origin",
+      "options"
+    ],
+    "intercept": [
+      "options"
+    ],
+    "dispatch": [
+      "options",
+      "handlers"
+    ],
+    "close": [],
+    "cleanMocks": []
+  },
+  "matchValue": [
+    "match",
+    "value"
+  ],
+  "lowerCaseEntries": [
+    "headers"
+  ],
+  "getHeaderByName": [
+    "headers",
+    "key"
+  ],
+  "buildHeadersFromArray": [
+    "headers"
+  ],
+  "matchHeaders": [
+    "mockDispatch",
+    "headers"
+  ],
+  "normalizeSearchParams": [
+    "query"
+  ],
+  "safeUrl": [
+    "path"
+  ],
+  "matchKey": [
+    "mockDispatch",
+    "param"
+  ],
+  "getResponseData": [
+    "data"
+  ],
+  "getMockDispatch": [
+    "mockDispatches",
+    "key"
+  ],
+  "addMockDispatch": [
+    "mockDispatches",
+    "key",
+    "data",
+    "opts"
+  ],
+  "deleteMockDispatch": [
+    "mockDispatches",
+    "key"
+  ],
+  "removeTrailingSlash": [
+    "path"
+  ],
+  "buildKey": [
+    "opts"
+  ],
+  "generateKeyValues": [
+    "data"
+  ],
+  "getStatusText": [
+    "statusCode"
+  ],
+  "getResponse": [
+    "body"
+  ],
+  "mockDispatch": [
+    "opts",
+    "handler"
+  ],
+  "handleReply": [
+    "mockDispatches",
+    "param"
+  ],
+  "buildMockDispatch": [],
+  "checkNetConnect": [
+    "netConnect",
+    "origin"
+  ],
+  "normalizeOrigin": [
+    "origin"
+  ],
+  "buildAndValidateMockOptions": [
+    "opts"
+  ],
+  "SnapshotAgent": {
+    "constructor": [
+      "options"
+    ],
+    "saveSnapshots": [
+      "filePath"
+    ],
+    "loadSnapshots": [
+      "filePath"
+    ],
+    "getRecorder": [],
+    "getMode": [],
+    "clearSnapshots": [],
+    "resetCallCounts": [],
+    "deleteSnapshot": [
+      "requestOpts"
+    ],
+    "getSnapshotInfo": [
+      "requestOpts"
+    ],
+    "replaceSnapshots": [
+      "snapshotData"
+    ]
+  },
+  "formatRequestKey": [
+    "opts",
+    "headerFilters",
+    "param"
+  ],
+  "filterHeadersForMatching": [
+    "headers",
+    "headerFilters",
+    "param"
+  ],
+  "filterHeadersForStorage": [
+    "headers",
+    "headerFilters",
+    "param"
+  ],
+  "createRequestHash": [
+    "formattedRequest"
+  ],
+  "SnapshotRecorder": {
+    "constructor": [
+      "options"
+    ],
+    "record": [
+      "requestOpts",
+      "response"
+    ],
+    "findSnapshot": [
+      "requestOpts"
+    ],
+    "loadSnapshots": [
+      "filePath"
+    ],
+    "saveSnapshots": [
+      "filePath"
+    ],
+    "clear": [],
+    "getSnapshots": [],
+    "size": [],
+    "resetCallCounts": [],
+    "deleteSnapshot": [
+      "requestOpts"
+    ],
+    "getSnapshotInfo": [
+      "requestOpts"
+    ],
+    "replaceSnapshots": [
+      "snapshotData"
+    ],
+    "destroy": []
+  },
+  "createHeaderFilters": [
+    "param"
+  ],
+  "isUndiciHeaders": [
+    "headers"
+  ],
+  "isUrlExcludedFactory": [
+    "param"
+  ],
+  "normalizeHeaders": [
+    "opts"
+  ],
+  "validateSnapshotMode": [
+    "mode"
+  ],
+  "makeCacheKey": [
+    "opts"
+  ],
+  "assertCacheKey": [
+    "key"
+  ],
+  "assertCacheValue": [
+    "value"
+  ],
+  "parseCacheControlHeader": [
+    "header"
+  ],
+  "parseVaryHeader": [
+    "varyHeader",
+    "headers"
+  ],
+  "isEtagUsable": [
+    "etag"
+  ],
+  "assertCacheStore": [
+    "store",
+    "param"
+  ],
+  "assertCacheMethods": [
+    "methods",
+    "param"
+  ],
+  "makeDeduplicationKey": [
+    "cacheKey",
+    "excludeHeaders"
+  ],
+  "parseHttpDate": [
+    "date"
+  ],
+  "parseImfDate": [
+    "date"
+  ],
+  "parseAscTimeDate": [
+    "date"
+  ],
+  "parseRfc850Date": [
+    "date"
+  ],
+  "createDeferredPromise": [],
+  "detectRuntimeFeatureByNodeModule": [
+    "moduleName"
+  ],
+  "detectRuntimeFeatureByExportedProperty": [
+    "moduleName",
+    "property"
+  ],
+  "detectRuntimeFeature": [
+    "feature"
+  ],
+  "RuntimeFeatures": {
+    "clear": [],
+    "has": [
+      "feature"
+    ],
+    "set": [
+      "feature",
+      "value"
+    ]
+  },
+  "ClientStats": {
+    "constructor": [
+      "pool"
+    ],
+    "connected": [],
+    "pending": [],
+    "running": [],
+    "size": []
+  },
+  "PoolStats": {
+    "constructor": [
+      "pool"
+    ],
+    "connected": [],
+    "free": [],
+    "pending": [],
+    "queued": [],
+    "running": [],
+    "size": []
+  },
+  "onTick": [],
+  "refreshTimeout": [],
+  "FastTimer": {
+    "kFastTimer": [],
+    "_state": [],
+    "_idleTimeout": [],
+    "_idleStart": [],
+    "_onTimeout": [],
+    "_timerArg": [],
+    "constructor": [
+      "callback",
+      "delay",
+      "arg"
+    ],
+    "refresh": [],
+    "clear": []
+  },
+  "Cache": {
+    "constructor": [],
+    "match": [
+      "request",
+      "param"
+    ],
+    "matchAll": [
+      "param",
+      "param"
+    ],
+    "add": [
+      "request"
+    ],
+    "addAll": [
+      "requests"
+    ],
+    "put": [
+      "request",
+      "response"
+    ],
+    "delete": [
+      "request",
+      "param"
+    ],
+    "keys": [
+      "param",
+      "param"
+    ]
+  },
+  "CacheStorage": {
+    "constructor": [],
+    "match": [
+      "request",
+      "param"
+    ],
+    "has": [
+      "cacheName"
+    ],
+    "open": [
+      "cacheName"
+    ],
+    "delete": [
+      "cacheName"
+    ],
+    "keys": []
+  },
+  "urlEquals": [
+    "A",
+    "B",
+    "param"
+  ],
+  "getFieldValues": [
+    "header"
+  ],
+  "getCookies": [
+    "headers"
+  ],
+  "deleteCookie": [
+    "headers",
+    "name",
+    "attributes"
+  ],
+  "getSetCookies": [
+    "headers"
+  ],
+  "parseCookie": [
+    "cookie"
+  ],
+  "setCookie": [
+    "headers",
+    "cookie"
+  ],
+  "parseSetCookie": [
+    "header"
+  ],
+  "parseUnparsedAttributes": [
+    "unparsedAttributes",
+    "param"
+  ],
+  "isCTLExcludingHtab": [
+    "value"
+  ],
+  "validateCookieName": [
+    "name"
+  ],
+  "validateCookieValue": [
+    "value"
+  ],
+  "validateCookiePath": [
+    "path"
+  ],
+  "validateCookieDomain": [
+    "domain"
+  ],
+  "toIMFDate": [
+    "date"
+  ],
+  "validateCookieMaxAge": [
+    "maxAge"
+  ],
+  "stringify": [
+    "cookie"
+  ],
+  "EventSourceStream": {
+    "state": [],
+    "checkBOM": [],
+    "crlfCheck": [],
+    "eventEndCheck": [],
+    "buffer": [],
+    "pos": [],
+    "event": [],
+    "constructor": [
+      "param"
+    ],
+    "_transform": [
+      "chunk",
+      "_encoding",
+      "callback"
+    ],
+    "parseLine": [
+      "line",
+      "event"
+    ],
+    "processEvent": [
+      "event"
+    ],
+    "clearEvent": []
+  },
+  "EventSource": {
+    "constructor": [
+      "url",
+      "param"
+    ],
+    "readyState": [],
+    "url": [],
+    "withCredentials": [],
+    "close": [],
+    "onopen": [
+      "fn"
+    ],
+    "onmessage": [
+      "fn"
+    ],
+    "onerror": [
+      "fn"
+    ]
+  },
+  "processEventSourceEndOfBody": [
+    "response"
+  ],
+  "isValidLastEventId": [
+    "value"
+  ],
+  "isASCIINumber": [
+    "value"
+  ],
+  "extractBody": [
+    "object",
+    "param"
+  ],
+  "formdataEscape": [
+    "str"
+  ],
+  "normalizeLinefeeds": [
+    "value"
+  ],
+  "safelyExtractBody": [
+    "object",
+    "param"
+  ],
+  "cloneBody": [
+    "body"
+  ],
+  "bodyMixinMethods": [
+    "instance",
+    "getInternalState"
+  ],
+  "mixinBody": [
+    "prototype",
+    "getInternalState"
+  ],
+  "consumeBody": [
+    "object",
+    "convertBytesToJSValue",
+    "instance",
+    "getInternalState"
+  ],
+  "successSteps": [
+    "data"
+  ],
+  "bodyUnusable": [
+    "object"
+  ],
+  "bodyMimeType": [
+    "requestOrResponse"
+  ],
+  "dataURLProcessor": [
+    "dataURL"
+  ],
+  "URLSerializer": [
+    "url",
+    "param"
+  ],
+  "stringPercentDecode": [
+    "input"
+  ],
+  "isHexCharByte": [
+    "byte"
+  ],
+  "hexByteToNumber": [
+    "byte"
+  ],
+  "percentDecode": [
+    "input"
+  ],
+  "parseMIMEType": [
+    "input"
+  ],
+  "collectAnHTTPQuotedString": [
+    "input",
+    "position",
+    "param"
+  ],
+  "serializeAMimeType": [
+    "mimeType"
+  ],
+  "isHTTPWhiteSpace": [
+    "char"
+  ],
+  "removeHTTPWhitespace": [
+    "str",
+    "param",
+    "param"
+  ],
+  "minimizeSupportedMimeType": [
+    "mimeType"
+  ],
+  "isAsciiString": [
+    "chars"
+  ],
+  "validateBoundary": [
+    "boundary"
+  ],
+  "multipartFormDataParser": [
+    "input",
+    "mimeType"
+  ],
+  "parseContentDispositionAttribute": [
+    "input",
+    "position"
+  ],
+  "parseMultipartFormDataHeaders": [
+    "input",
+    "position"
+  ],
+  "collectASequenceOfBytes": [
+    "condition",
+    "input",
+    "position"
+  ],
+  "removeChars": [
+    "str",
+    "leading",
+    "trailing",
+    "predicate"
+  ],
+  "bufferStartsWith": [
+    "buffer",
+    "start",
+    "position"
+  ],
+  "parsingError": [
+    "cause"
+  ],
+  "isCTL": [
+    "char"
+  ],
+  "isTSpecial": [
+    "char"
+  ],
+  "isToken": [
+    "char"
+  ],
+  "FormData": {
+    "append": [
+      "name",
+      "value",
+      "fileName"
+    ],
+    "set": [
+      "name",
+      "value",
+      "fileName"
+    ],
+    "get": [
+      "name"
+    ],
+    "getAll": [
+      "name"
+    ],
+    "has": [
+      "name"
+    ],
+    "delete": [
+      "name"
+    ],
+    "forEach": [],
+    "keys": [],
+    "values": [],
+    "entries": []
+  },
+  "makeEntry": [
+    "name",
+    "value",
+    "filename"
+  ],
+  "getGlobalOrigin": [],
+  "setGlobalOrigin": [
+    "newOrigin"
+  ],
+  "isHTTPWhiteSpaceCharCode": [
+    "code"
+  ],
+  "headerValueNormalize": [
+    "potentialValue"
+  ],
+  "fill": [
+    "headers",
+    "object"
+  ],
+  "appendHeader": [
+    "headers",
+    "name",
+    "value"
+  ],
+  "headersListSortAndCombine": [
+    "target"
+  ],
+  "compareHeaderName": [
+    "a",
+    "b"
+  ],
+  "HeadersList": {
+    "cookies": [],
+    "sortedMap": [],
+    "headersMap": [],
+    "constructor": [
+      "init"
+    ],
+    "contains": [
+      "name",
+      "isLowerCase"
+    ],
+    "clear": [],
+    "append": [
+      "name",
+      "value",
+      "isLowerCase"
+    ],
+    "set": [
+      "name",
+      "value",
+      "isLowerCase"
+    ],
+    "delete": [
+      "name",
+      "isLowerCase"
+    ],
+    "get": [
+      "name",
+      "isLowerCase"
+    ],
+    "entries": [],
+    "rawValues": [],
+    "entriesList": [],
+    "toSortedArray": []
+  },
+  "Headers": {
+    "constructor": [
+      "init"
+    ],
+    "append": [],
+    "delete": [],
+    "get": [],
+    "has": [],
+    "set": [],
+    "getSetCookie": [],
+    "forEach": [],
+    "keys": [],
+    "values": [],
+    "entries": []
+  },
+  "Fetch": {
+    "constructor": [
+      "dispatcher"
+    ],
+    "terminate": [
+      "reason"
+    ],
+    "abort": [
+      "error"
+    ]
+  },
+  "handleFetchDone": [
+    "response"
+  ],
+  "fetch": [
+    "input",
+    "param"
+  ],
+  "processResponse": [
+    "response"
+  ],
+  "finalizeAndReportTiming": [
+    "response",
+    "param"
+  ],
+  "abortFetch": [
+    "p",
+    "request",
+    "responseObject",
+    "error",
+    "controller"
+  ],
+  "fetching": [
+    "param"
+  ],
+  "mainFetch": [
+    "fetchParams",
+    "recursive"
+  ],
+  "processBodyError": [
+    "e"
+  ],
+  "processBody": [
+    "bytes"
+  ],
+  "schemeFetch": [
+    "fetchParams"
+  ],
+  "finalizeResponse": [
+    "fetchParams",
+    "response"
+  ],
+  "fetchFinale": [
+    "fetchParams",
+    "response"
+  ],
+  "processResponseEndOfBody": [],
+  "processResponseEndOfBodyTask": [],
+  "httpFetch": [
+    "fetchParams"
+  ],
+  "httpRedirectFetch": [
+    "fetchParams",
+    "response"
+  ],
+  "httpNetworkOrCacheFetch": [
+    "fetchParams",
+    "param",
+    "param"
+  ],
+  "httpNetworkFetch": [
+    "fetchParams",
+    "param",
+    "param"
+  ],
+  "processBodyChunk": [
+    "bytes"
+  ],
+  "processEndOfBody": [],
+  "pullAlgorithm": [],
+  "cancelAlgorithm": [
+    "reason"
+  ],
+  "onAborted": [
+    "reason"
+  ],
+  "dispatch": [
+    "param"
+  ],
+  "buildAbort": [
+    "acRef"
+  ],
+  "makeRequest": [
+    "init"
+  ],
+  "cloneRequest": [
+    "request"
+  ],
+  "fromInnerRequest": [
+    "innerRequest",
+    "dispatcher",
+    "signal",
+    "guard"
+  ],
+  "Response": {
+    "constructor": [
+      "body",
+      "init"
+    ],
+    "headers": [],
+    "ok": [],
+    "status": [],
+    "statusText": [],
+    "type": [],
+    "url": [],
+    "redirected": [],
+    "clone": [],
+    "error": [],
+    "json": [
+      "data",
+      "init"
+    ],
+    "redirect": [
+      "url",
+      "status"
+    ]
+  },
+  "cloneResponse": [
+    "response"
+  ],
+  "makeResponse": [
+    "init"
+  ],
+  "makeNetworkError": [
+    "reason"
+  ],
+  "isNetworkError": [
+    "response"
+  ],
+  "makeFilteredResponse": [
+    "response",
+    "state"
+  ],
+  "filterResponse": [
+    "response",
+    "type"
+  ],
+  "makeAppropriateNetworkError": [
+    "fetchParams",
+    "param"
+  ],
+  "initializeResponse": [
+    "response",
+    "init",
+    "body"
+  ],
+  "fromInnerResponse": [
+    "innerResponse",
+    "guard"
+  ],
+  "responseURL": [
+    "response"
+  ],
+  "responseLocationURL": [
+    "response",
+    "requestFragment"
+  ],
+  "isValidEncodedURL": [
+    "url"
+  ],
+  "normalizeBinaryStringToUtf8": [
+    "value"
+  ],
+  "requestCurrentURL": [
+    "request"
+  ],
+  "requestBadPort": [
+    "request"
+  ],
+  "isErrorLike": [
+    "object"
+  ],
+  "isValidReasonPhrase": [
+    "statusText"
+  ],
+  "parseReferrerPolicy": [
+    "actualResponse"
+  ],
+  "setRequestReferrerPolicyOnRedirect": [
+    "request",
+    "actualResponse"
+  ],
+  "crossOriginResourcePolicyCheck": [],
+  "corsCheck": [],
+  "TAOCheck": [],
+  "appendFetchMetadata": [
+    "httpRequest"
+  ],
+  "appendRequestOriginHeader": [
+    "request"
+  ],
+  "coarsenTime": [
+    "timestamp",
+    "crossOriginIsolatedCapability"
+  ],
+  "clampAndCoarsenConnectionTimingInfo": [
+    "connectionTimingInfo",
+    "defaultStartTime",
+    "crossOriginIsolatedCapability"
+  ],
+  "coarsenedSharedCurrentTime": [
+    "crossOriginIsolatedCapability"
+  ],
+  "createOpaqueTimingInfo": [
+    "timingInfo"
+  ],
+  "makePolicyContainer": [],
+  "clonePolicyContainer": [
+    "policyContainer"
+  ],
+  "determineRequestsReferrer": [
+    "request"
+  ],
+  "stripURLForReferrer": [
+    "url",
+    "param"
+  ],
+  "isOriginIPPotentiallyTrustworthy": [
+    "origin"
+  ],
+  "isOriginPotentiallyTrustworthy": [
+    "origin"
+  ],
+  "isURLPotentiallyTrustworthy": [
+    "url"
+  ],
+  "tryUpgradeRequestToAPotentiallyTrustworthyURL": [
+    "request"
+  ],
+  "sameOrigin": [
+    "A",
+    "B"
+  ],
+  "isAborted": [
+    "fetchParams"
+  ],
+  "isCancelled": [
+    "fetchParams"
+  ],
+  "normalizeMethod": [
+    "method"
+  ],
+  "createIterator": [
+    "name",
+    "kInternalIterator",
+    "param",
+    "param"
+  ],
+  "FastIterableIterator": {
+    "constructor": [
+      "target",
+      "kind"
+    ],
+    "next": []
+  },
+  "iteratorMixin": [
+    "name",
+    "object",
+    "kInternalIterator",
+    "param",
+    "param"
+  ],
+  "fullyReadBody": [
+    "body",
+    "processBody",
+    "processBodyError"
+  ],
+  "readableStreamClose": [
+    "controller"
+  ],
+  "readAllBytes": [
+    "reader",
+    "successSteps",
+    "failureSteps"
+  ],
+  "urlIsLocal": [
+    "url"
+  ],
+  "urlHasHttpsScheme": [
+    "url"
+  ],
+  "urlIsHttpHttpsScheme": [
+    "url"
+  ],
+  "simpleRangeHeaderValue": [
+    "value",
+    "allowWhitespace"
+  ],
+  "buildContentRange": [
+    "rangeStart",
+    "rangeEnd",
+    "fullLength"
+  ],
+  "InflateStream": {
+    "constructor": [
+      "zlibOptions"
+    ],
+    "_transform": [
+      "chunk",
+      "encoding",
+      "callback"
+    ],
+    "_final": [
+      "callback"
+    ]
+  },
+  "createInflate": [
+    "zlibOptions"
+  ],
+  "extractMimeType": [
+    "headers"
+  ],
+  "gettingDecodingSplitting": [
+    "value"
+  ],
+  "getDecodeSplit": [
+    "name",
+    "list"
+  ],
+  "hasAuthenticationEntry": [
+    "request"
+  ],
+  "includesCredentials": [
+    "url"
+  ],
+  "isTraversableNavigable": [
+    "navigable"
+  ],
+  "EnvironmentSettingsObjectBase": {
+    "baseUrl": [],
+    "origin": [],
+    "policyContainer": []
+  },
+  "EnvironmentSettingsObject": {
+    "settingsObject": []
+  },
+  "collectASequenceOfCodePoints": [
+    "condition",
+    "input",
+    "position"
+  ],
+  "collectASequenceOfCodePointsFast": [
+    "char",
+    "input",
+    "position"
+  ],
+  "forgivingBase64": [
+    "data"
+  ],
+  "isASCIIWhitespace": [
+    "char"
+  ],
+  "isomorphicDecode": [
+    "input"
+  ],
+  "isomorphicEncode": [
+    "input"
+  ],
+  "parseJSONFromBytes": [
+    "bytes"
+  ],
+  "removeASCIIWhitespace": [
+    "str",
+    "param",
+    "param"
+  ],
+  "serializeJavascriptValueToJSONString": [
+    "value"
+  ],
+  "getStrongestMetadata": [
+    "metadataList"
+  ],
+  "parseMetadata": [
+    "metadata"
+  ],
+  "applyAlgorithmToBytes": [
+    "algorithm",
+    "bytes"
+  ],
+  "caseSensitiveMatch": [
+    "actualValue",
+    "expectedValue"
+  ],
+  "establishWebSocketConnection": [
+    "url",
+    "protocols",
+    "client",
+    "handler",
+    "options"
+  ],
+  "closeWebSocketConnection": [
+    "object",
+    "code",
+    "reason",
+    "param"
+  ],
+  "failWebsocketConnection": [
+    "handler",
+    "code",
+    "reason",
+    "cause"
+  ],
+  "MessageEvent": {
+    "constructor": [
+      "type",
+      "param"
+    ],
+    "data": [],
+    "origin": [],
+    "lastEventId": [],
+    "source": [],
+    "ports": [],
+    "initMessageEvent": [
+      "type",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "createFastMessageEvent": [
+      "type",
+      "init"
+    ]
+  },
+  "CloseEvent": {
+    "constructor": [
+      "type",
+      "param"
+    ],
+    "wasClean": [],
+    "code": [],
+    "reason": []
+  },
+  "ErrorEvent": {
+    "constructor": [
+      "type",
+      "eventInitDict"
+    ],
+    "message": [],
+    "filename": [],
+    "lineno": [],
+    "colno": [],
+    "error": []
+  },
+  "generateMask": [],
+  "WebsocketFrameSend": {
+    "constructor": [
+      "data"
+    ],
+    "createFrame": [
+      "opcode"
+    ],
+    "createFastTextFrame": [
+      "buffer"
+    ]
+  },
+  "PerMessageDeflate": {
+    "constructor": [
+      "extensions"
+    ],
+    "decompress": [
+      "chunk",
+      "fin",
+      "callback"
+    ]
+  },
+  "ByteParser": {
+    "constructor": [
+      "handler",
+      "extensions"
+    ],
+    "_write": [
+      "chunk",
+      "_",
+      "callback"
+    ],
+    "run": [
+      "callback"
+    ],
+    "consume": [
+      "n"
+    ],
+    "writeFragments": [
+      "fragment"
+    ],
+    "consumeFragments": [],
+    "parseCloseBody": [
+      "data"
+    ],
+    "parseControlFrame": [
+      "body"
+    ],
+    "closingInfo": []
+  },
+  "SendQueue": {
+    "constructor": [
+      "socket"
+    ],
+    "add": [
+      "item",
+      "cb",
+      "hint"
+    ]
+  },
+  "createFrame": [
+    "data",
+    "hint"
+  ],
+  "toBuffer": [
+    "data",
+    "hint"
+  ],
+  "createInheritableDOMException": [],
+  "Test": {
+    "reason": []
+  },
+  "WebSocketError": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "closeCode": [],
+    "reason": [],
+    "createUnvalidatedWebSocketError": [
+      "message",
+      "code",
+      "reason"
+    ]
+  },
+  "WebSocketStream": {
+    "constructor": [
+      "url",
+      "param"
+    ],
+    "url": [],
+    "opened": [],
+    "closed": [],
+    "close": [
+      "param"
+    ]
+  },
+  "isConnecting": [
+    "readyState"
+  ],
+  "isEstablished": [
+    "readyState"
+  ],
+  "isClosing": [
+    "readyState"
+  ],
+  "isClosed": [
+    "readyState"
+  ],
+  "fireEvent": [
+    "e",
+    "target",
+    "param",
+    "param"
+  ],
+  "websocketMessageReceived": [
+    "handler",
+    "type",
+    "data"
+  ],
+  "toArrayBuffer": [
+    "buffer"
+  ],
+  "isValidSubprotocol": [
+    "protocol"
+  ],
+  "isValidStatusCode": [
+    "code"
+  ],
+  "isControlFrame": [
+    "opcode"
+  ],
+  "isContinuationFrame": [
+    "opcode"
+  ],
+  "isTextBinaryFrame": [
+    "opcode"
+  ],
+  "isValidOpcode": [
+    "opcode"
+  ],
+  "parseExtensions": [
+    "extensions"
+  ],
+  "isValidClientWindowBits": [
+    "value"
+  ],
+  "getURLRecord": [
+    "url",
+    "baseURL"
+  ],
+  "validateCloseCodeAndReason": [
+    "code",
+    "reason"
+  ],
+  "WebSocket": {
+    "constructor": [
+      "url",
+      "param"
+    ],
+    "close": [
+      "param",
+      "param"
+    ],
+    "send": [
+      "data"
+    ],
+    "readyState": [],
+    "bufferedAmount": [],
+    "url": [],
+    "extensions": [],
+    "protocol": [],
+    "onopen": [
+      "fn"
+    ],
+    "onerror": [
+      "fn"
+    ],
+    "onclose": [
+      "fn"
+    ],
+    "onmessage": [
+      "fn"
+    ],
+    "binaryType": [
+      "type"
+    ],
+    "ping": [
+      "ws",
+      "buffer"
+    ]
+  },
+  "SqliteCacheStore": {
+    "constructor": [
+      "opts"
+    ],
+    "close": [],
+    "get": [
+      "key"
+    ],
+    "createWriteStream": [
+      "key",
+      "value"
+    ],
+    "delete": [
+      "key"
+    ]
+  },
+  "BodyMixin": {
+    "body": [],
+    "bodyUsed": [],
+    "arrayBuffer": [],
+    "blob": [],
+    "bytes": [],
+    "formData": [],
+    "json": [],
+    "text": []
+  },
+  "DecoratorHandler": {
+    "constructor": [
+      "handler"
+    ]
+  }
+}

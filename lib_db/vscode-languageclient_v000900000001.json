@@ -1,0 +1,2652 @@
+{
+  "LanguageClient": {
+    "constructor": [
+      "arg1",
+      "arg2",
+      "arg3",
+      "arg4",
+      "arg5"
+    ],
+    "checkVersion": [],
+    "isInDebugMode": [],
+    "restart": [],
+    "stop": [
+      "param"
+    ],
+    "checkProcessDied": [
+      "childProcess"
+    ],
+    "handleConnectionClosed": [],
+    "fillInitializeParams": [
+      "params"
+    ],
+    "createMessageTransports": [
+      "encoding"
+    ],
+    "_getRuntimePath": [
+      "runtime",
+      "serverWorkingDirectory"
+    ],
+    "_mainGetRootPath": [],
+    "_getServerWorkingDir": [
+      "options"
+    ]
+  },
+  "CallHierarchyProvider": {
+    "constructor": [
+      "client"
+    ],
+    "prepareCallHierarchy": [
+      "document",
+      "position",
+      "token"
+    ],
+    "provideCallHierarchyIncomingCalls": [
+      "item",
+      "token"
+    ],
+    "provideCallHierarchyOutgoingCalls": [
+      "item",
+      "token"
+    ]
+  },
+  "CallHierarchyFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "cap"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ]
+  },
+  "prepareCallHierarchy": [
+    "document",
+    "position",
+    "token"
+  ],
+  "provideCallHierarchyIncomingCalls": [
+    "item",
+    "token"
+  ],
+  "provideCallHierarchyOutgoingCalls": [
+    "item",
+    "token"
+  ],
+  "BaseLanguageClient": {
+    "constructor": [
+      "id",
+      "name",
+      "clientOptions"
+    ],
+    "name": [],
+    "middleware": [],
+    "clientOptions": [],
+    "protocol2CodeConverter": [],
+    "code2ProtocolConverter": [],
+    "onTelemetry": [],
+    "onDidChangeState": [],
+    "outputChannel": [],
+    "traceOutputChannel": [],
+    "diagnostics": [],
+    "state": [],
+    "$state": [
+      "value"
+    ],
+    "getPublicState": [],
+    "initializeResult": [],
+    "sendRequest": [
+      "type",
+      "param"
+    ],
+    "onRequest": [
+      "type",
+      "handler"
+    ],
+    "sendNotification": [
+      "type",
+      "params"
+    ],
+    "onNotification": [
+      "type",
+      "handler"
+    ],
+    "sendProgress": [
+      "type",
+      "token",
+      "value"
+    ],
+    "onProgress": [
+      "type",
+      "token",
+      "handler"
+    ],
+    "createDefaultErrorHandler": [
+      "maxRestartCount"
+    ],
+    "setTrace": [
+      "value"
+    ],
+    "data2String": [
+      "data"
+    ],
+    "debug": [
+      "message",
+      "data",
+      "param"
+    ],
+    "info": [
+      "message",
+      "data",
+      "param"
+    ],
+    "warn": [
+      "message",
+      "data",
+      "param"
+    ],
+    "error": [
+      "message",
+      "data",
+      "param"
+    ],
+    "logOutputMessage": [
+      "type",
+      "reveal",
+      "name",
+      "message",
+      "data",
+      "showNotification"
+    ],
+    "showNotificationMessage": [
+      "type",
+      "message"
+    ],
+    "logTrace": [
+      "message",
+      "data"
+    ],
+    "logObjectTrace": [
+      "data"
+    ],
+    "needsStart": [],
+    "needsStop": [],
+    "activeConnection": [],
+    "isRunning": [],
+    "start": [],
+    "createOnStartPromise": [],
+    "initialize": [
+      "connection"
+    ],
+    "doInitialize": [
+      "connection",
+      "initParams"
+    ],
+    "_clientGetRootPath": [],
+    "stop": [
+      "param"
+    ],
+    "dispose": [
+      "param"
+    ],
+    "shutdown": [
+      "mode",
+      "timeout"
+    ],
+    "cleanUp": [
+      "mode"
+    ],
+    "cleanUpChannel": [],
+    "notifyFileEvent": [
+      "event"
+    ],
+    "sendPendingFullTextDocumentChanges": [
+      "connection"
+    ],
+    "triggerPendingChangeDelivery": [],
+    "handleDiagnostics": [
+      "params"
+    ],
+    "triggerDiagnosticQueue": [],
+    "workDiagnosticQueue": [],
+    "setDiagnostics": [
+      "uri",
+      "diagnostics"
+    ],
+    "getLocale": [],
+    "$start": [],
+    "createConnection": [],
+    "handleConnectionClosed": [],
+    "handleConnectionError": [
+      "error",
+      "message",
+      "count"
+    ],
+    "hookConfigurationChanged": [
+      "connection"
+    ],
+    "refreshTrace": [
+      "connection",
+      "param"
+    ],
+    "hookFileEvents": [
+      "_connection"
+    ],
+    "registerFeatures": [
+      "features"
+    ],
+    "registerFeature": [
+      "feature"
+    ],
+    "getFeature": [
+      "request"
+    ],
+    "hasDedicatedTextSynchronizationFeature": [
+      "textDocument"
+    ],
+    "registerBuiltinFeatures": [],
+    "registerProposedFeatures": [],
+    "fillInitializeParams": [
+      "params"
+    ],
+    "computeClientCapabilities": [],
+    "initializeFeatures": [
+      "_connection"
+    ],
+    "handleRegistrationRequest": [
+      "params"
+    ],
+    "doRegisterCapability": [
+      "params"
+    ],
+    "handleUnregistrationRequest": [
+      "params"
+    ],
+    "doUnregisterCapability": [
+      "params"
+    ],
+    "handleApplyWorkspaceEdit": [
+      "params"
+    ],
+    "handleFailedRequest": [
+      "type",
+      "token",
+      "error",
+      "defaultValue",
+      "param"
+    ]
+  },
+  "sanitizeIsTrusted": [
+    "isTrusted"
+  ],
+  "DefaultErrorHandler": {
+    "constructor": [
+      "client",
+      "maxRestartCount"
+    ],
+    "error": [
+      "_error",
+      "_message",
+      "count"
+    ],
+    "closed": []
+  },
+  "is": [
+    "value"
+  ],
+  "showDocument": [
+    "params"
+  ],
+  "didChangeWatchedFile": [
+    "event"
+  ],
+  "errorHandler": [
+    "error",
+    "message",
+    "count"
+  ],
+  "closeHandler": [],
+  "ConsoleLogger": {
+    "error": [
+      "message"
+    ],
+    "warn": [
+      "message"
+    ],
+    "info": [
+      "message"
+    ],
+    "log": [
+      "message"
+    ]
+  },
+  "createConnection": [
+    "input",
+    "output",
+    "errorHandler",
+    "closeHandler",
+    "options"
+  ],
+  "createAll": [
+    "_client"
+  ],
+  "CodeActionFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ]
+  },
+  "_provideCodeActions": [
+    "document",
+    "range",
+    "context",
+    "token"
+  ],
+  "resolveCodeAction": [
+    "item",
+    "token"
+  ],
+  "createConverter": [
+    "uriConverter",
+    "trustMarkdown",
+    "supportHtml"
+  ],
+  "nullConverter": [
+    "value"
+  ],
+  "asUri": [
+    "value"
+  ],
+  "asTextDocumentIdentifier": [
+    "textDocument"
+  ],
+  "asTextDocumentItem": [
+    "textDocument"
+  ],
+  "asVersionedTextDocumentIdentifier": [
+    "textDocument"
+  ],
+  "asOpenTextDocumentParams": [
+    "textDocument"
+  ],
+  "isTextDocumentChangeEvent": [
+    "value"
+  ],
+  "isTextDocument": [
+    "value"
+  ],
+  "asChangeTextDocumentParams": [
+    "arg0",
+    "arg1",
+    "arg2"
+  ],
+  "asCloseTextDocumentParams": [
+    "textDocument"
+  ],
+  "asSaveTextDocumentParams": [
+    "textDocument",
+    "param"
+  ],
+  "asTextDocumentSaveReason": [
+    "reason"
+  ],
+  "asWillSaveTextDocumentParams": [
+    "event"
+  ],
+  "asDidCreateFilesParams": [
+    "event"
+  ],
+  "asDidRenameFilesParams": [
+    "event"
+  ],
+  "asDidDeleteFilesParams": [
+    "event"
+  ],
+  "asWillCreateFilesParams": [
+    "event"
+  ],
+  "asWillRenameFilesParams": [
+    "event"
+  ],
+  "asWillDeleteFilesParams": [
+    "event"
+  ],
+  "asTextDocumentPositionParams": [
+    "textDocument",
+    "position"
+  ],
+  "asCompletionTriggerKind": [
+    "triggerKind"
+  ],
+  "asCompletionParams": [
+    "textDocument",
+    "position",
+    "context"
+  ],
+  "asSignatureHelpTriggerKind": [
+    "triggerKind"
+  ],
+  "asParameterInformation": [
+    "item"
+  ],
+  "asParameterInformations": [
+    "items",
+    "token"
+  ],
+  "asSignatureInformation": [
+    "item",
+    "token"
+  ],
+  "asSignatureInformations": [
+    "items",
+    "token"
+  ],
+  "asSignatureHelp": [
+    "item",
+    "token"
+  ],
+  "asSignatureHelpParams": [
+    "textDocument",
+    "position",
+    "context"
+  ],
+  "asWorkerPosition": [
+    "position"
+  ],
+  "asPosition": [
+    "value"
+  ],
+  "asPositions": [
+    "values",
+    "token"
+  ],
+  "asPositionsSync": [
+    "values"
+  ],
+  "asRange": [
+    "value"
+  ],
+  "asRanges": [
+    "items",
+    "token"
+  ],
+  "asLocation": [
+    "item"
+  ],
+  "asDiagnosticSeverity": [
+    "value"
+  ],
+  "asDiagnosticTags": [
+    "tags"
+  ],
+  "asDiagnosticTag": [
+    "tag"
+  ],
+  "asRelatedInformation": [
+    "relatedInformation"
+  ],
+  "asRelatedInformations": [
+    "items"
+  ],
+  "asDiagnosticCode": [
+    "value"
+  ],
+  "asDiagnostic": [
+    "diagnostic"
+  ],
+  "asDiagnostics": [
+    "diagnostics",
+    "token"
+  ],
+  "asDiagnosticsSync": [
+    "diagnostics"
+  ],
+  "asDocumentation": [
+    "value"
+  ],
+  "asCompletionItemTag": [
+    "tag"
+  ],
+  "asCompletionItemTags": [
+    "tags"
+  ],
+  "asCompletionItemKind": [
+    "value"
+  ],
+  "asCompletionItem": [
+    "item",
+    "defaultCommitCharacters",
+    "defaultRange",
+    "defaultInsertTextMode",
+    "defaultInsertTextFormat",
+    "defaultData"
+  ],
+  "fillPrimaryInsertText": [
+    "target",
+    "source"
+  ],
+  "asCompletionTextEdit": [
+    "newText",
+    "range"
+  ],
+  "asTextEdit": [
+    "edit"
+  ],
+  "asTextEdits": [
+    "items",
+    "token"
+  ],
+  "asSymbolKind": [
+    "item"
+  ],
+  "asSymbolTag": [
+    "value"
+  ],
+  "asSymbolTags": [
+    "items"
+  ],
+  "asReferenceParams": [
+    "textDocument",
+    "position",
+    "options"
+  ],
+  "asCodeAction": [
+    "item",
+    "token"
+  ],
+  "asCodeActionSync": [
+    "item"
+  ],
+  "asCodeActionContext": [
+    "context",
+    "token"
+  ],
+  "asCodeActionContextSync": [
+    "context"
+  ],
+  "asCodeActionTriggerKind": [
+    "kind"
+  ],
+  "asCodeActionKind": [
+    "item"
+  ],
+  "asInlineValueContext": [
+    "context"
+  ],
+  "asInlineCompletionParams": [
+    "document",
+    "position",
+    "context"
+  ],
+  "asCommand": [
+    "item"
+  ],
+  "asCodeLens": [
+    "item"
+  ],
+  "asFormattingOptions": [
+    "options",
+    "fileOptions"
+  ],
+  "asDocumentSymbolParams": [
+    "textDocument"
+  ],
+  "asCodeLensParams": [
+    "textDocument"
+  ],
+  "asDocumentLink": [
+    "item"
+  ],
+  "asDocumentLinkParams": [
+    "textDocument"
+  ],
+  "asCallHierarchyItem": [
+    "item"
+  ],
+  "asTypeHierarchyItem": [
+    "item"
+  ],
+  "asWorkspaceSymbol": [
+    "item"
+  ],
+  "asInlayHint": [
+    "value",
+    "token"
+  ],
+  "asInlayHintLabelPart": [
+    "part"
+  ],
+  "asTooltip": [
+    "value"
+  ],
+  "CodeLensFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ]
+  },
+  "provideCodeLenses": [
+    "document",
+    "token"
+  ],
+  "resolveCodeLens": [
+    "codeLens",
+    "token"
+  ],
+  "ColorProviderFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ]
+  },
+  "provideColorPresentations": [
+    "color",
+    "context",
+    "token"
+  ],
+  "provideDocumentColors": [
+    "document",
+    "token"
+  ],
+  "CompletionItemFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options",
+      "id"
+    ]
+  },
+  "provideCompletionItems": [
+    "document",
+    "position",
+    "context",
+    "token"
+  ],
+  "resolveCompletionItem": [
+    "item",
+    "token"
+  ],
+  "ConfigurationFeature": {
+    "constructor": [
+      "client"
+    ],
+    "getState": [],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [],
+    "getConfiguration": [
+      "resource",
+      "section"
+    ],
+    "clear": []
+  },
+  "SyncConfigurationFeature": {
+    "constructor": [
+      "_client"
+    ],
+    "getState": [],
+    "registrationType": [],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [],
+    "register": [
+      "data"
+    ],
+    "unregister": [
+      "id"
+    ],
+    "clear": [],
+    "onDidChangeConfiguration": [
+      "configurationSection",
+      "event"
+    ],
+    "extractSettingsInformation": [
+      "keys"
+    ]
+  },
+  "configuration": [
+    "params"
+  ],
+  "toJSONObject": [
+    "obj"
+  ],
+  "didChangeConfiguration": [
+    "sections"
+  ],
+  "ensurePath": [
+    "config",
+    "path"
+  ],
+  "DeclarationFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ],
+    "registerProvider": [
+      "selector",
+      "provider"
+    ]
+  },
+  "provideDeclaration": [
+    "document",
+    "position",
+    "token"
+  ],
+  "DefinitionFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ],
+    "registerProvider": [
+      "selector",
+      "provider"
+    ]
+  },
+  "provideDefinition": [
+    "document",
+    "position",
+    "token"
+  ],
+  "DiagnosticFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "clear": [],
+    "registerLanguageProvider": [
+      "options"
+    ]
+  },
+  "ensure": [
+    "target",
+    "key"
+  ],
+  "Tabs": {
+    "constructor": [],
+    "onClose": [],
+    "onOpen": [],
+    "dispose": [],
+    "isActive": [
+      "document"
+    ],
+    "isVisible": [
+      "document"
+    ],
+    "getTabResources": [],
+    "fillTabResources": [
+      "strings",
+      "uris"
+    ]
+  },
+  "openTabsHandler": [
+    "event"
+  ],
+  "asKey": [
+    "document"
+  ],
+  "DocumentPullStateTracker": {
+    "constructor": [],
+    "track": [
+      "kind",
+      "document",
+      "arg1"
+    ],
+    "update": [
+      "kind",
+      "document",
+      "arg1",
+      "arg2"
+    ],
+    "unTrack": [
+      "kind",
+      "document"
+    ],
+    "tracks": [
+      "kind",
+      "document"
+    ],
+    "getResultId": [
+      "kind",
+      "document"
+    ],
+    "getAllResultIds": []
+  },
+  "DiagnosticRequestor": {
+    "constructor": [
+      "client",
+      "tabs",
+      "options"
+    ],
+    "knows": [
+      "kind",
+      "document"
+    ],
+    "forget": [
+      "kind",
+      "document"
+    ],
+    "pull": [
+      "document",
+      "cb"
+    ],
+    "pullAsync": [
+      "document",
+      "version"
+    ],
+    "forgetDocument": [
+      "document"
+    ],
+    "pullWorkspace": [],
+    "pullWorkspaceAsync": [],
+    "createProvider": [],
+    "dispose": []
+  },
+  "provideDiagnostics": [
+    "resultIds",
+    "token"
+  ],
+  "convertReport": [
+    "report"
+  ],
+  "convertPreviousResultIds": [
+    "resultIds"
+  ],
+  "BackgroundScheduler": {
+    "constructor": [
+      "diagnosticRequestor"
+    ],
+    "add": [
+      "document"
+    ],
+    "remove": [
+      "document"
+    ],
+    "trigger": [],
+    "dispose": [],
+    "stop": [],
+    "endDocumentKey": []
+  },
+  "DiagnosticFeatureProviderImpl": {
+    "constructor": [
+      "client",
+      "tabs",
+      "options"
+    ],
+    "onDidChangeDiagnosticsEmitter": [],
+    "diagnostics": [],
+    "cleanUpDocument": [
+      "document"
+    ]
+  },
+  "matchResource": [
+    "resource"
+  ],
+  "matches": [
+    "document"
+  ],
+  "isActiveDocument": [
+    "document"
+  ],
+  "addToBackgroundIfNeeded": [
+    "document"
+  ],
+  "DocumentHighlightFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ]
+  },
+  "_provideDocumentHighlights": [
+    "document",
+    "position",
+    "token"
+  ],
+  "DocumentLinkFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ]
+  },
+  "provideDocumentLinks": [
+    "document",
+    "token"
+  ],
+  "resolveDocumentLink": [
+    "link",
+    "token"
+  ],
+  "DocumentSymbolFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ]
+  },
+  "_provideDocumentSymbols": [
+    "document",
+    "token"
+  ],
+  "ExecuteCommandFeature": {
+    "constructor": [
+      "client"
+    ],
+    "getState": [],
+    "registrationType": [],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities"
+    ],
+    "register": [
+      "data"
+    ],
+    "unregister": [
+      "id"
+    ],
+    "clear": []
+  },
+  "executeCommand": [
+    "command",
+    "args"
+  ],
+  "LSPCancellationError": {
+    "constructor": [
+      "data"
+    ]
+  },
+  "DynamicDocumentFeature": {
+    "constructor": [
+      "client"
+    ],
+    "getState": []
+  },
+  "TextDocumentEventFeature": {
+    "textDocumentFilter": [
+      "selectors",
+      "textDocument"
+    ],
+    "constructor": [
+      "client",
+      "event",
+      "type",
+      "middleware",
+      "createParams",
+      "textDocument",
+      "selectorFilter"
+    ],
+    "getStateInfo": [],
+    "getDocumentSelectors": [],
+    "register": [
+      "data"
+    ],
+    "callback": [
+      "data"
+    ],
+    "matches": [
+      "data"
+    ],
+    "onNotificationSent": [],
+    "notificationSent": [
+      "textDocument",
+      "type",
+      "params"
+    ],
+    "unregister": [
+      "id"
+    ],
+    "clear": [],
+    "getProvider": [
+      "document"
+    ]
+  },
+  "TextDocumentLanguageFeature": {
+    "constructor": [
+      "client",
+      "registrationType"
+    ],
+    "getDocumentSelectors": [],
+    "registrationType": [],
+    "register": [
+      "data"
+    ],
+    "unregister": [
+      "id"
+    ],
+    "clear": [],
+    "getRegistration": [
+      "documentSelector",
+      "capability"
+    ],
+    "getRegistrationOptions": [
+      "documentSelector",
+      "capability"
+    ],
+    "getProvider": [
+      "textDocument"
+    ],
+    "getAllProviders": []
+  },
+  "WorkspaceFeature": {
+    "constructor": [
+      "client",
+      "registrationType"
+    ],
+    "getState": [],
+    "registrationType": [],
+    "register": [
+      "data"
+    ],
+    "unregister": [
+      "id"
+    ],
+    "clear": [],
+    "getProviders": []
+  },
+  "doSend": [
+    "data"
+  ],
+  "FileOperationFeature": {
+    "constructor": [
+      "client",
+      "event",
+      "registrationType",
+      "clientCapability",
+      "serverCapability"
+    ],
+    "getState": [],
+    "filterSize": [],
+    "registrationType": [],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities"
+    ],
+    "register": [
+      "data"
+    ],
+    "unregister": [
+      "id"
+    ],
+    "clear": [],
+    "getFileType": [
+      "uri"
+    ],
+    "filter": [
+      "event",
+      "prop"
+    ],
+    "asMinimatchOptions": [
+      "options"
+    ]
+  },
+  "NotificationFileOperationFeature": {
+    "constructor": [
+      "client",
+      "event",
+      "notificationType",
+      "clientCapability",
+      "serverCapability",
+      "accessUri",
+      "createParams"
+    ],
+    "send": [
+      "originalEvent"
+    ]
+  },
+  "CachingNotificationFileOperationFeature": {
+    "constructor": [],
+    "getFileType": [
+      "uri"
+    ],
+    "cacheFileTypes": [
+      "event",
+      "prop"
+    ],
+    "clearFileTypeCache": [],
+    "unregister": [
+      "id"
+    ],
+    "clear": []
+  },
+  "DidCreateFilesFeature": {
+    "constructor": [
+      "client"
+    ],
+    "doSend": [
+      "event",
+      "next"
+    ]
+  },
+  "DidRenameFilesFeature": {
+    "constructor": [
+      "client"
+    ],
+    "register": [
+      "data"
+    ],
+    "willRename": [
+      "e"
+    ],
+    "doSend": [
+      "event",
+      "next"
+    ]
+  },
+  "DidDeleteFilesFeature": {
+    "constructor": [
+      "client"
+    ],
+    "register": [
+      "data"
+    ],
+    "willDelete": [
+      "e"
+    ],
+    "doSend": [
+      "event",
+      "next"
+    ]
+  },
+  "RequestFileOperationFeature": {
+    "constructor": [
+      "client",
+      "event",
+      "requestType",
+      "clientCapability",
+      "serverCapability",
+      "accessUri",
+      "createParams"
+    ],
+    "send": [
+      "originalEvent"
+    ],
+    "waitUntil": [
+      "originalEvent"
+    ]
+  },
+  "WillCreateFilesFeature": {
+    "constructor": [
+      "client"
+    ],
+    "doSend": [
+      "event",
+      "next"
+    ]
+  },
+  "WillRenameFilesFeature": {
+    "constructor": [
+      "client"
+    ],
+    "doSend": [
+      "event",
+      "next"
+    ]
+  },
+  "WillDeleteFilesFeature": {
+    "constructor": [
+      "client"
+    ],
+    "doSend": [
+      "event",
+      "next"
+    ]
+  },
+  "access": [
+    "target",
+    "key"
+  ],
+  "assign": [
+    "target",
+    "key",
+    "value"
+  ],
+  "next": [
+    "event"
+  ],
+  "FileSystemWatcherFeature": {
+    "constructor": [
+      "client",
+      "notifyFileEvent"
+    ],
+    "getState": [],
+    "registrationType": [],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "_capabilities",
+      "_documentSelector"
+    ],
+    "register": [
+      "data"
+    ],
+    "registerRaw": [
+      "id",
+      "fileSystemWatchers"
+    ],
+    "hookListeners": [
+      "fileSystemWatcher",
+      "watchCreate",
+      "watchChange",
+      "watchDelete",
+      "listeners"
+    ],
+    "unregister": [
+      "id"
+    ],
+    "clear": []
+  },
+  "FoldingRangeFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ]
+  },
+  "provideFoldingRanges": [
+    "document",
+    "_",
+    "token"
+  ],
+  "DocumentFormattingFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ]
+  },
+  "DocumentRangeFormattingFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ]
+  },
+  "DocumentOnTypeFormattingFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ]
+  },
+  "fromConfiguration": [
+    "document"
+  ],
+  "provideDocumentFormattingEdits": [
+    "document",
+    "options",
+    "token"
+  ],
+  "provideDocumentRangeFormattingEdits": [
+    "document",
+    "range",
+    "options",
+    "token"
+  ],
+  "provideDocumentRangesFormattingEdits": [
+    "document",
+    "ranges",
+    "options",
+    "token"
+  ],
+  "provideOnTypeFormattingEdits": [
+    "document",
+    "position",
+    "ch",
+    "options",
+    "token"
+  ],
+  "HoverFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ],
+    "registerProvider": [
+      "selector",
+      "provider"
+    ]
+  },
+  "provideHover": [
+    "document",
+    "position",
+    "token"
+  ],
+  "ImplementationFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ],
+    "registerProvider": [
+      "selector",
+      "provider"
+    ]
+  },
+  "provideImplementation": [
+    "document",
+    "position",
+    "token"
+  ],
+  "InlayHintsFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ],
+    "registerProvider": [
+      "selector",
+      "provider"
+    ]
+  },
+  "provideInlayHints": [
+    "document",
+    "viewPort",
+    "token"
+  ],
+  "resolveInlayHint": [
+    "item",
+    "token"
+  ],
+  "InlineCompletionItemFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ]
+  },
+  "provideInlineCompletionItems": [
+    "document",
+    "position",
+    "context",
+    "token"
+  ],
+  "InlineValueFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ],
+    "registerProvider": [
+      "selector",
+      "provider"
+    ]
+  },
+  "provideInlineValues": [
+    "document",
+    "viewPort",
+    "context",
+    "token"
+  ],
+  "LinkedEditingFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ],
+    "registerProvider": [
+      "selector",
+      "provider"
+    ]
+  },
+  "provideLinkedEditing": [
+    "document",
+    "position",
+    "token"
+  ],
+  "NotebookDocumentSyncFeature": {
+    "constructor": [
+      "client"
+    ],
+    "getState": [],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "preInitialize": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities"
+    ],
+    "register": [
+      "data"
+    ],
+    "unregister": [
+      "id"
+    ],
+    "clear": [],
+    "handles": [
+      "textDocument"
+    ],
+    "getProvider": [
+      "notebookCell"
+    ],
+    "findNotebookDocumentAndCell": [
+      "textDocument"
+    ]
+  },
+  "asVersionedNotebookDocumentIdentifier": [
+    "notebookDocument",
+    "base"
+  ],
+  "asNotebookDocument": [
+    "notebookDocument",
+    "cells",
+    "base"
+  ],
+  "asNotebookCells": [
+    "cells",
+    "base"
+  ],
+  "asMetadata": [
+    "annotation"
+  ],
+  "asNotebookCell": [
+    "cell",
+    "base"
+  ],
+  "asNotebookCellKind": [
+    "kind"
+  ],
+  "deepCopy": [
+    "seen",
+    "value"
+  ],
+  "asTextContentChange": [
+    "event",
+    "base"
+  ],
+  "asNotebookDocumentChangeEvent": [
+    "event",
+    "base"
+  ],
+  "computeDiff": [
+    "originalCells",
+    "modifiedCells",
+    "compareMetadata"
+  ],
+  "equals": [
+    "one",
+    "other",
+    "param"
+  ],
+  "equalsExecution": [
+    "one",
+    "other"
+  ],
+  "equalsTiming": [
+    "one",
+    "other"
+  ],
+  "equalsMetadata": [
+    "one",
+    "other"
+  ],
+  "isObjectLiteral": [
+    "value"
+  ],
+  "matchNotebook": [
+    "filter",
+    "notebookDocument"
+  ],
+  "asDocumentSelector": [
+    "selector"
+  ],
+  "asDocumentFilter": [
+    "notebookType",
+    "scheme",
+    "pattern",
+    "language"
+  ],
+  "create": [
+    "cells"
+  ],
+  "NotebookDocumentSyncFeatureProvider": {
+    "constructor": [
+      "client",
+      "options"
+    ],
+    "getState": [],
+    "mode": [],
+    "handles": [
+      "textDocument"
+    ],
+    "didOpenNotebookCellTextDocument": [
+      "notebookDocument",
+      "cell"
+    ],
+    "didChangeNotebookCellTextDocument": [
+      "notebookDocument",
+      "event"
+    ],
+    "didCloseNotebookCellTextDocument": [
+      "notebookDocument",
+      "cell"
+    ],
+    "dispose": [],
+    "didOpen": [
+      "notebookDocument",
+      "param",
+      "param"
+    ],
+    "didChangeNotebookDocument": [
+      "event"
+    ],
+    "didSave": [
+      "notebookDocument"
+    ],
+    "didClose": [
+      "notebookDocument",
+      "param"
+    ],
+    "sendDidOpenNotebookDocument": [
+      "notebookDocument"
+    ],
+    "doSendOpen": [
+      "notebookDocument",
+      "cells"
+    ],
+    "sendDidChangeNotebookDocument": [
+      "event"
+    ],
+    "doSendChange": [
+      "event",
+      "param"
+    ],
+    "sendDidSaveNotebookDocument": [
+      "notebookDocument"
+    ],
+    "doSendSave": [
+      "notebookDocument"
+    ],
+    "sendDidCloseNotebookDocument": [
+      "notebookDocument"
+    ],
+    "doSendClose": [
+      "notebookDocument",
+      "cells"
+    ],
+    "asNotebookDocumentChangeEvent": [
+      "notebook",
+      "event",
+      "syncInfo",
+      "matchingCells"
+    ],
+    "getMatchingCells": [
+      "notebookDocument",
+      "param"
+    ],
+    "cellMatches": [
+      "notebookDocument",
+      "cell"
+    ],
+    "filterCells": [
+      "notebookDocument",
+      "cells",
+      "cellSelector"
+    ]
+  },
+  "send": [
+    "notebookDocument",
+    "cells"
+  ],
+  "ProgressFeature": {
+    "constructor": [
+      "_client"
+    ],
+    "getState": [],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [],
+    "clear": []
+  },
+  "deleteHandler": [
+    "part"
+  ],
+  "createHandler": [
+    "params"
+  ],
+  "ProgressPart": {
+    "constructor": [
+      "_client",
+      "_token",
+      "done"
+    ],
+    "begin": [
+      "params"
+    ],
+    "report": [
+      "params"
+    ],
+    "cancel": [],
+    "done": [],
+    "cleanup": []
+  },
+  "ProtocolCallHierarchyItem": {
+    "constructor": [
+      "kind",
+      "name",
+      "detail",
+      "uri",
+      "range",
+      "selectionRange",
+      "data"
+    ]
+  },
+  "ProtocolCodeAction": {
+    "constructor": [
+      "title",
+      "data"
+    ]
+  },
+  "ProtocolCodeLens": {
+    "constructor": [
+      "range"
+    ]
+  },
+  "ProtocolCompletionItem": {
+    "constructor": [
+      "label"
+    ]
+  },
+  "asHoverContent": [
+    "value"
+  ],
+  "asMarkdownString": [
+    "value"
+  ],
+  "asHover": [
+    "hover"
+  ],
+  "asCompletionResult": [
+    "value",
+    "allCommitCharacters",
+    "token"
+  ],
+  "getCompletionItemDefaults": [
+    "list",
+    "allCommitCharacters"
+  ],
+  "asCompletionItemLabel": [
+    "item"
+  ],
+  "asCompletionInsertText": [
+    "item",
+    "defaultRange",
+    "defaultInsertTextFormat"
+  ],
+  "getCompletionRangeAndText": [
+    "value"
+  ],
+  "asTextEditsSync": [
+    "items"
+  ],
+  "asDeclarationResult": [
+    "item",
+    "token"
+  ],
+  "asDefinitionResult": [
+    "item",
+    "token"
+  ],
+  "asLocationLink": [
+    "item"
+  ],
+  "asLocationResult": [
+    "item",
+    "token"
+  ],
+  "asReferences": [
+    "values",
+    "token"
+  ],
+  "asDocumentHighlights": [
+    "values",
+    "token"
+  ],
+  "asDocumentHighlight": [
+    "item"
+  ],
+  "asDocumentHighlightKind": [
+    "item"
+  ],
+  "asSymbolInformations": [
+    "values",
+    "token"
+  ],
+  "asSymbolInformation": [
+    "item"
+  ],
+  "asDocumentSymbols": [
+    "values",
+    "token"
+  ],
+  "asDocumentSymbol": [
+    "value"
+  ],
+  "fillTags": [
+    "result",
+    "value"
+  ],
+  "asCommands": [
+    "items",
+    "token"
+  ],
+  "asCodeActionKinds": [
+    "items"
+  ],
+  "asCodeActionResult": [
+    "items",
+    "token"
+  ],
+  "asCodeLenses": [
+    "items",
+    "token"
+  ],
+  "asWorkspaceEdit": [
+    "item",
+    "token"
+  ],
+  "asWorkspaceEditEntryMetadata": [
+    "annotation"
+  ],
+  "asDocumentLinks": [
+    "items",
+    "token"
+  ],
+  "asColor": [
+    "color"
+  ],
+  "asColorInformation": [
+    "ci"
+  ],
+  "asColorInformations": [
+    "colorInformation",
+    "token"
+  ],
+  "asColorPresentation": [
+    "cp"
+  ],
+  "asColorPresentations": [
+    "colorPresentations",
+    "token"
+  ],
+  "asFoldingRangeKind": [
+    "kind"
+  ],
+  "asFoldingRange": [
+    "r"
+  ],
+  "asFoldingRanges": [
+    "foldingRanges",
+    "token"
+  ],
+  "asSelectionRange": [
+    "selectionRange"
+  ],
+  "asSelectionRanges": [
+    "selectionRanges",
+    "token"
+  ],
+  "asInlineValue": [
+    "inlineValue"
+  ],
+  "asInlineValues": [
+    "inlineValues",
+    "token"
+  ],
+  "asInlayHints": [
+    "values",
+    "token"
+  ],
+  "asCallHierarchyItems": [
+    "items",
+    "token"
+  ],
+  "asCallHierarchyIncomingCall": [
+    "item",
+    "token"
+  ],
+  "asCallHierarchyIncomingCalls": [
+    "items",
+    "token"
+  ],
+  "asCallHierarchyOutgoingCall": [
+    "item",
+    "token"
+  ],
+  "asCallHierarchyOutgoingCalls": [
+    "items",
+    "token"
+  ],
+  "asSemanticTokens": [
+    "value",
+    "_token"
+  ],
+  "asSemanticTokensEdit": [
+    "value"
+  ],
+  "asSemanticTokensEdits": [
+    "value",
+    "_token"
+  ],
+  "asSemanticTokensLegend": [
+    "value"
+  ],
+  "asLinkedEditingRanges": [
+    "value",
+    "token"
+  ],
+  "asRegularExpression": [
+    "value"
+  ],
+  "asTypeHierarchyItems": [
+    "items",
+    "token"
+  ],
+  "asGlobPattern": [
+    "pattern"
+  ],
+  "asInlineCompletionResult": [
+    "value",
+    "token"
+  ],
+  "asInlineCompletionItem": [
+    "item"
+  ],
+  "ProtocolDiagnostic": {
+    "constructor": [
+      "range",
+      "message",
+      "severity",
+      "data"
+    ]
+  },
+  "ProtocolDocumentLink": {
+    "constructor": [
+      "range",
+      "target"
+    ]
+  },
+  "ProtocolInlayHint": {
+    "constructor": [
+      "position",
+      "label",
+      "kind"
+    ]
+  },
+  "ProtocolTypeHierarchyItem": {
+    "constructor": [
+      "kind",
+      "name",
+      "detail",
+      "uri",
+      "range",
+      "selectionRange",
+      "data"
+    ]
+  },
+  "WorkspaceSymbol": {
+    "constructor": [
+      "name",
+      "kind",
+      "containerName",
+      "locationOrUri",
+      "data"
+    ]
+  },
+  "ReferencesFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ],
+    "registerProvider": [
+      "selector",
+      "provider"
+    ]
+  },
+  "_providerReferences": [
+    "document",
+    "position",
+    "options",
+    "token"
+  ],
+  "RenameFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ],
+    "registerProvider": [
+      "selector",
+      "provider"
+    ],
+    "isDefaultBehavior": [
+      "value"
+    ]
+  },
+  "provideRenameEdits": [
+    "document",
+    "position",
+    "newName",
+    "token"
+  ],
+  "prepareRename": [
+    "document",
+    "position",
+    "token"
+  ],
+  "SelectionRangeFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ],
+    "registerProvider": [
+      "selector",
+      "provider"
+    ]
+  },
+  "provideSelectionRanges": [
+    "document",
+    "positions",
+    "token"
+  ],
+  "SemanticTokensFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ]
+  },
+  "provideDocumentSemanticTokens": [
+    "document",
+    "token"
+  ],
+  "provideDocumentSemanticTokensEdits": [
+    "document",
+    "previousResultId",
+    "token"
+  ],
+  "provideDocumentRangeSemanticTokens": [
+    "document",
+    "range",
+    "token"
+  ],
+  "SignatureHelpFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ],
+    "registerProvider": [
+      "options",
+      "provider"
+    ]
+  },
+  "providerSignatureHelp": [
+    "document",
+    "position",
+    "context",
+    "token"
+  ],
+  "DidOpenTextDocumentFeature": {
+    "constructor": [
+      "client",
+      "syncedDocuments"
+    ],
+    "openDocuments": [],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registrationType": [],
+    "register": [
+      "data"
+    ],
+    "getTextDocument": [
+      "data"
+    ],
+    "notificationSent": [
+      "textDocument",
+      "type",
+      "params"
+    ]
+  },
+  "DidCloseTextDocumentFeature": {
+    "constructor": [
+      "client",
+      "syncedDocuments",
+      "pendingTextDocumentChanges"
+    ],
+    "registrationType": [],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "callback": [
+      "data"
+    ],
+    "getTextDocument": [
+      "data"
+    ],
+    "notificationSent": [
+      "textDocument",
+      "type",
+      "params"
+    ],
+    "unregister": [
+      "id"
+    ]
+  },
+  "DidChangeTextDocumentFeature": {
+    "constructor": [
+      "client",
+      "pendingTextDocumentChanges"
+    ],
+    "onNotificationSent": [],
+    "onPendingChangeAdded": [],
+    "syncKind": [],
+    "registrationType": [],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "register": [
+      "data"
+    ],
+    "getDocumentSelectors": [],
+    "callback": [
+      "event"
+    ],
+    "notificationSent": [
+      "textDocument",
+      "type",
+      "params"
+    ],
+    "unregister": [
+      "id"
+    ],
+    "clear": [],
+    "getPendingDocumentChanges": [
+      "excludes"
+    ],
+    "getProvider": [
+      "document"
+    ],
+    "updateSyncKind": [
+      "syncKind"
+    ]
+  },
+  "WillSaveFeature": {
+    "constructor": [
+      "client"
+    ],
+    "registrationType": [],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "getTextDocument": [
+      "data"
+    ]
+  },
+  "WillSaveWaitUntilFeature": {
+    "constructor": [
+      "client"
+    ],
+    "getDocumentSelectors": [],
+    "registrationType": [],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "register": [
+      "data"
+    ],
+    "callback": [
+      "event"
+    ],
+    "unregister": [
+      "id"
+    ],
+    "clear": []
+  },
+  "DidSaveTextDocumentFeature": {
+    "constructor": [
+      "client"
+    ],
+    "registrationType": [],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "register": [
+      "data"
+    ],
+    "getTextDocument": [
+      "data"
+    ]
+  },
+  "didOpen": [
+    "textDocument"
+  ],
+  "didClose": [
+    "textDocument"
+  ],
+  "didChange": [
+    "event"
+  ],
+  "willSaveWaitUntil": [
+    "event"
+  ],
+  "TypeDefinitionFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ],
+    "registerProvider": [
+      "selector",
+      "provider"
+    ]
+  },
+  "provideTypeDefinition": [
+    "document",
+    "position",
+    "token"
+  ],
+  "TypeHierarchyProvider": {
+    "constructor": [
+      "client"
+    ],
+    "prepareTypeHierarchy": [
+      "document",
+      "position",
+      "token"
+    ],
+    "provideTypeHierarchySupertypes": [
+      "item",
+      "token"
+    ],
+    "provideTypeHierarchySubtypes": [
+      "item",
+      "token"
+    ]
+  },
+  "TypeHierarchyFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities",
+      "documentSelector"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ]
+  },
+  "prepareTypeHierarchy": [
+    "document",
+    "position",
+    "token"
+  ],
+  "provideTypeHierarchySupertypes": [
+    "item",
+    "token"
+  ],
+  "provideTypeHierarchySubtypes": [
+    "item",
+    "token"
+  ],
+  "Delayer": {
+    "constructor": [
+      "defaultDelay"
+    ],
+    "trigger": [
+      "task",
+      "param"
+    ],
+    "forceDelivery": [],
+    "isTriggered": [],
+    "cancel": [],
+    "cancelTimeout": []
+  },
+  "Semaphore": {
+    "constructor": [
+      "param"
+    ],
+    "lock": [
+      "thunk"
+    ],
+    "active": [],
+    "runNext": [],
+    "doRunNext": []
+  },
+  "setTestMode": [],
+  "clearTestMode": [],
+  "Timer": {
+    "constructor": [
+      "param"
+    ],
+    "start": [],
+    "shouldYield": []
+  },
+  "map": [
+    "items",
+    "func",
+    "token",
+    "options"
+  ],
+  "convertBatch": [
+    "start"
+  ],
+  "mapAsync": [
+    "items",
+    "func",
+    "token",
+    "options"
+  ],
+  "forEach": [
+    "items",
+    "func",
+    "token",
+    "options"
+  ],
+  "runBatch": [
+    "start"
+  ],
+  "boolean": [
+    "value"
+  ],
+  "string": [
+    "value"
+  ],
+  "number": [
+    "value"
+  ],
+  "error": [
+    "value"
+  ],
+  "func": [
+    "value"
+  ],
+  "array": [
+    "value"
+  ],
+  "stringArray": [
+    "value"
+  ],
+  "typedArray": [
+    "value",
+    "check"
+  ],
+  "thenable": [
+    "value"
+  ],
+  "asPromise": [
+    "value"
+  ],
+  "ValueUUID": {
+    "constructor": [
+      "_value"
+    ],
+    "asHex": [],
+    "equals": [
+      "other"
+    ]
+  },
+  "V4UUID": {
+    "_oneOf": [
+      "array"
+    ],
+    "_randomHex": [],
+    "constructor": []
+  },
+  "v4": [],
+  "isUUID": [
+    "value"
+  ],
+  "parse": [
+    "value"
+  ],
+  "generateUuid": [],
+  "WorkspaceFoldersFeature": {
+    "constructor": [
+      "client"
+    ],
+    "getState": [],
+    "registrationType": [],
+    "fillInitializeParams": [
+      "params"
+    ],
+    "initializeWithFolders": [
+      "currentWorkspaceFolders"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities"
+    ],
+    "sendInitialEvent": [
+      "currentWorkspaceFolders"
+    ],
+    "doSendEvent": [
+      "addedFolders",
+      "removedFolders"
+    ],
+    "register": [
+      "data"
+    ],
+    "unregister": [
+      "id"
+    ],
+    "clear": [],
+    "asProtocol": [
+      "workspaceFolder"
+    ]
+  },
+  "arrayDiff": [
+    "left",
+    "right"
+  ],
+  "workspaceFolders": [],
+  "didChangeWorkspaceFolders": [
+    "event"
+  ],
+  "WorkspaceSymbolFeature": {
+    "constructor": [
+      "client"
+    ],
+    "fillClientCapabilities": [
+      "capabilities"
+    ],
+    "initialize": [
+      "capabilities"
+    ],
+    "registerLanguageProvider": [
+      "options"
+    ]
+  },
+  "provideWorkspaceSymbols": [
+    "query",
+    "token"
+  ],
+  "resolveWorkspaceSymbol": [
+    "item",
+    "token"
+  ],
+  "SettingMonitor": {
+    "constructor": [
+      "_client",
+      "_setting"
+    ],
+    "start": [],
+    "onDidChangeConfiguration": []
+  },
+  "isSocket": [
+    "value"
+  ],
+  "getEnvironment": [
+    "env",
+    "fork"
+  ],
+  "startedInDebugMode": [],
+  "assertStdio": [
+    "process"
+  ],
+  "handleChildProcessStartError": [
+    "process",
+    "message"
+  ],
+  "terminate": [
+    "process",
+    "cwd"
+  ]
+}

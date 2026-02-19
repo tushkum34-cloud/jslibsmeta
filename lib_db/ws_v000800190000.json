@@ -1,0 +1,410 @@
+{
+  "concat": [
+    "list",
+    "totalLength"
+  ],
+  "_mask": [
+    "source",
+    "mask",
+    "output",
+    "offset",
+    "length"
+  ],
+  "_unmask": [
+    "buffer",
+    "mask"
+  ],
+  "toArrayBuffer": [
+    "buf"
+  ],
+  "toBuffer": [
+    "data"
+  ],
+  "Event": {
+    "constructor": [
+      "type"
+    ],
+    "target": [],
+    "type": []
+  },
+  "CloseEvent": {
+    "constructor": [
+      "type",
+      "param"
+    ],
+    "code": [],
+    "reason": [],
+    "wasClean": []
+  },
+  "ErrorEvent": {
+    "constructor": [
+      "type",
+      "param"
+    ],
+    "error": [],
+    "message": []
+  },
+  "MessageEvent": {
+    "constructor": [
+      "type",
+      "param"
+    ],
+    "data": []
+  },
+  "callListener": [
+    "listener",
+    "thisArg",
+    "event"
+  ],
+  "push": [
+    "dest",
+    "name",
+    "elem"
+  ],
+  "parse": [
+    "header"
+  ],
+  "format": [
+    "extensions"
+  ],
+  "Limiter": {
+    "constructor": [
+      "concurrency"
+    ],
+    "add": [
+      "job"
+    ],
+    "kRun": []
+  },
+  "PerMessageDeflate": {
+    "constructor": [
+      "options",
+      "isServer",
+      "maxPayload"
+    ],
+    "extensionName": [],
+    "offer": [],
+    "accept": [
+      "configurations"
+    ],
+    "cleanup": [],
+    "acceptAsServer": [
+      "offers"
+    ],
+    "acceptAsClient": [
+      "response"
+    ],
+    "normalizeParams": [
+      "configurations"
+    ],
+    "decompress": [
+      "data",
+      "fin",
+      "callback"
+    ],
+    "compress": [
+      "data",
+      "fin",
+      "callback"
+    ],
+    "_decompress": [
+      "data",
+      "fin",
+      "callback"
+    ],
+    "_compress": [
+      "data",
+      "fin",
+      "callback"
+    ]
+  },
+  "deflateOnData": [
+    "chunk"
+  ],
+  "inflateOnData": [
+    "chunk"
+  ],
+  "inflateOnError": [
+    "err"
+  ],
+  "Receiver": {
+    "constructor": [
+      "param"
+    ],
+    "_write": [
+      "chunk",
+      "encoding",
+      "cb"
+    ],
+    "consume": [
+      "n"
+    ],
+    "startLoop": [
+      "cb"
+    ],
+    "getInfo": [
+      "cb"
+    ],
+    "getPayloadLength16": [
+      "cb"
+    ],
+    "getPayloadLength64": [
+      "cb"
+    ],
+    "haveLength": [
+      "cb"
+    ],
+    "getMask": [],
+    "getData": [
+      "cb"
+    ],
+    "decompress": [
+      "data",
+      "cb"
+    ],
+    "dataMessage": [
+      "cb"
+    ],
+    "controlMessage": [
+      "data",
+      "cb"
+    ],
+    "createError": [
+      "ErrorCtor",
+      "message",
+      "prefix",
+      "statusCode",
+      "errorCode"
+    ]
+  },
+  "Sender": {
+    "constructor": [
+      "socket",
+      "extensions",
+      "generateMask"
+    ],
+    "frame": [
+      "data",
+      "options"
+    ],
+    "close": [
+      "code",
+      "data",
+      "mask",
+      "cb"
+    ],
+    "ping": [
+      "data",
+      "mask",
+      "cb"
+    ],
+    "pong": [
+      "data",
+      "mask",
+      "cb"
+    ],
+    "send": [
+      "data",
+      "options",
+      "cb"
+    ],
+    "getBlobData": [
+      "blob",
+      "compress",
+      "options",
+      "cb"
+    ],
+    "dispatch": [
+      "data",
+      "compress",
+      "options",
+      "cb"
+    ],
+    "dequeue": [],
+    "enqueue": [
+      "params"
+    ],
+    "sendFrame": [
+      "list",
+      "cb"
+    ]
+  },
+  "callCallbacks": [
+    "sender",
+    "err",
+    "cb"
+  ],
+  "onError": [
+    "sender",
+    "err",
+    "cb"
+  ],
+  "emitClose": [
+    "server"
+  ],
+  "duplexOnEnd": [],
+  "duplexOnError": [
+    "err"
+  ],
+  "createWebSocketStream": [
+    "ws",
+    "options"
+  ],
+  "isValidStatusCode": [
+    "code"
+  ],
+  "_isValidUTF8": [
+    "buf"
+  ],
+  "isBlob": [
+    "value"
+  ],
+  "WebSocketServer": {
+    "constructor": [
+      "options",
+      "callback"
+    ],
+    "address": [],
+    "close": [
+      "cb"
+    ],
+    "shouldHandle": [
+      "req"
+    ],
+    "handleUpgrade": [
+      "req",
+      "socket",
+      "head",
+      "cb"
+    ],
+    "completeUpgrade": [
+      "extensions",
+      "key",
+      "protocols",
+      "req",
+      "socket",
+      "head",
+      "cb"
+    ]
+  },
+  "addListeners": [
+    "server",
+    "map"
+  ],
+  "socketOnError": [],
+  "abortHandshake": [
+    "websocket",
+    "stream",
+    "message"
+  ],
+  "abortHandshakeOrEmitwsClientError": [
+    "server",
+    "req",
+    "socket",
+    "code",
+    "message",
+    "headers"
+  ],
+  "WebSocket": {
+    "constructor": [
+      "address",
+      "protocols",
+      "options"
+    ],
+    "binaryType": [
+      "type"
+    ],
+    "bufferedAmount": [],
+    "extensions": [],
+    "isPaused": [],
+    "onclose": [],
+    "onerror": [],
+    "onopen": [],
+    "onmessage": [],
+    "protocol": [],
+    "readyState": [],
+    "url": [],
+    "setSocket": [
+      "socket",
+      "head",
+      "options"
+    ],
+    "emitClose": [],
+    "close": [
+      "code",
+      "data"
+    ],
+    "pause": [],
+    "ping": [
+      "data",
+      "mask",
+      "cb"
+    ],
+    "pong": [
+      "data",
+      "mask",
+      "cb"
+    ],
+    "resume": [],
+    "send": [
+      "data",
+      "options",
+      "cb"
+    ],
+    "terminate": []
+  },
+  "initAsClient": [
+    "websocket",
+    "address",
+    "protocols",
+    "options"
+  ],
+  "emitErrorAndClose": [
+    "websocket",
+    "err"
+  ],
+  "netConnect": [
+    "options"
+  ],
+  "tlsConnect": [
+    "options"
+  ],
+  "sendAfterClose": [
+    "websocket",
+    "data",
+    "cb"
+  ],
+  "receiverOnConclude": [
+    "code",
+    "reason"
+  ],
+  "receiverOnDrain": [],
+  "receiverOnError": [
+    "err"
+  ],
+  "receiverOnFinish": [],
+  "receiverOnMessage": [
+    "data",
+    "isBinary"
+  ],
+  "receiverOnPing": [
+    "data"
+  ],
+  "receiverOnPong": [
+    "data"
+  ],
+  "resume": [
+    "stream"
+  ],
+  "senderOnError": [
+    "err"
+  ],
+  "setCloseTimer": [
+    "websocket"
+  ],
+  "socketOnClose": [],
+  "socketOnData": [
+    "chunk"
+  ],
+  "socketOnEnd": []
+}

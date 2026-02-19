@@ -1,0 +1,416 @@
+{
+  "ChunkResponseParser": {
+    "lastChunk": [],
+    "lastChunkTimeout": [],
+    "_clearQueues": [],
+    "eventEmitter": [],
+    "autoReconnect": [],
+    "chunkTimeout": [],
+    "constructor": [
+      "eventEmitter",
+      "autoReconnect"
+    ],
+    "clearQueues": [],
+    "onError": [
+      "clearQueues"
+    ],
+    "parseResponse": [
+      "data"
+    ]
+  },
+  "bytesToUint8Array": [
+    "data"
+  ],
+  "bytesToHex": [
+    "bytes"
+  ],
+  "hexToBytes": [
+    "bytes"
+  ],
+  "hexToNumber": [
+    "value"
+  ],
+  "numberToHex": [
+    "value",
+    "hexstrict"
+  ],
+  "hexToNumberString": [
+    "data"
+  ],
+  "utf8ToHex": [
+    "str"
+  ],
+  "hexToUtf8": [
+    "str"
+  ],
+  "toUtf8": [
+    "input"
+  ],
+  "asciiToHex": [
+    "str"
+  ],
+  "hexToAscii": [
+    "str"
+  ],
+  "toHex": [
+    "value",
+    "returnType"
+  ],
+  "toNumber": [
+    "value"
+  ],
+  "toBigInt": [
+    "value"
+  ],
+  "fromWei": [
+    "number",
+    "unit"
+  ],
+  "toWei": [
+    "number",
+    "unit"
+  ],
+  "toChecksumAddress": [
+    "address"
+  ],
+  "toBool": [
+    "value"
+  ],
+  "EventEmitter": {
+    "maxListeners": [],
+    "setMaxListeners": [
+      "maxListeners"
+    ],
+    "getMaxListeners": []
+  },
+  "isDataFormat": [
+    "dataFormat"
+  ],
+  "findSchemaByDataPath": [
+    "schema",
+    "dataPath",
+    "param"
+  ],
+  "convertScalarValue": [
+    "value",
+    "ethType",
+    "format"
+  ],
+  "convertArray": [
+    "param"
+  ],
+  "convert": [
+    "data",
+    "schema",
+    "dataPath",
+    "format",
+    "param"
+  ],
+  "format": [
+    "schema",
+    "data",
+    "param"
+  ],
+  "keccak256Wrapper": [
+    "data"
+  ],
+  "sha3": [
+    "data"
+  ],
+  "sha3Raw": [
+    "data"
+  ],
+  "getType": [
+    "arg"
+  ],
+  "elementaryName": [
+    "name"
+  ],
+  "parseTypeN": [
+    "value",
+    "typeLength"
+  ],
+  "bitLength": [
+    "value"
+  ],
+  "solidityPack": [
+    "type",
+    "val"
+  ],
+  "processSolidityEncodePackedArgs": [
+    "arg"
+  ],
+  "encodePacked": [
+    "param"
+  ],
+  "soliditySha3": [
+    "param"
+  ],
+  "soliditySha3Raw": [
+    "param"
+  ],
+  "getStorageSlotNumForLongString": [
+    "mainSlotNumber"
+  ],
+  "isResponseRpcError": [
+    "rpcError"
+  ],
+  "isResponseWithResult": [
+    "response"
+  ],
+  "isResponseWithError": [
+    "response"
+  ],
+  "isResponseWithNotification": [
+    "response"
+  ],
+  "isSubscriptionResult": [
+    "response"
+  ],
+  "validateResponse": [
+    "response"
+  ],
+  "isValidResponse": [
+    "response"
+  ],
+  "isBatchResponse": [
+    "response"
+  ],
+  "setRequestIdStart": [
+    "start"
+  ],
+  "toPayload": [
+    "request"
+  ],
+  "toBatchPayload": [
+    "requests"
+  ],
+  "isBatchRequest": [
+    "request"
+  ],
+  "isIterable": [
+    "item"
+  ],
+  "mergeDeep": [
+    "destination",
+    "param"
+  ],
+  "adopt": [
+    "value"
+  ],
+  "fulfilled": [
+    "value"
+  ],
+  "rejected": [
+    "value"
+  ],
+  "step": [
+    "result"
+  ],
+  "isPromise": [
+    "object"
+  ],
+  "waitWithTimeout": [
+    "awaitable",
+    "timeout",
+    "error"
+  ],
+  "pollTillDefinedAndReturnIntervalId": [
+    "func",
+    "interval"
+  ],
+  "pollTillDefined": [
+    "func",
+    "interval"
+  ],
+  "rejectIfTimeout": [
+    "timeout",
+    "error"
+  ],
+  "rejectIfConditionAtInterval": [
+    "cond",
+    "interval"
+  ],
+  "randomBytes": [
+    "size"
+  ],
+  "randomHex": [
+    "byteSize"
+  ],
+  "SocketProvider": {
+    "isReconnecting": [],
+    "_socketPath": [],
+    "chunkResponseParser": [],
+    "_pendingRequestsQueue": [],
+    "_sentRequestsQueue": [],
+    "_reconnectAttempts": [],
+    "_socketOptions": [],
+    "_reconnectOptions": [],
+    "_socketConnection": [],
+    "SocketConnection": [],
+    "_connectionStatus": [],
+    "_onMessageHandler": [],
+    "_onOpenHandler": [],
+    "_onCloseHandler": [],
+    "_onErrorHandler": [],
+    "constructor": [
+      "socketPath",
+      "socketOptions",
+      "reconnectOptions"
+    ],
+    "_init": [],
+    "connect": [],
+    "_openSocketConnection": [],
+    "_addSocketListeners": [],
+    "_removeSocketListeners": [],
+    "_onCloseEvent": [
+      "_event"
+    ],
+    "_sendToSocket": [
+      "_payload"
+    ],
+    "_parseResponses": [
+      "_event"
+    ],
+    "_closeSocketConnection": [
+      "_code",
+      "_data"
+    ],
+    "_validateProviderPath": [
+      "path"
+    ],
+    "getPendingRequestQueueSize": [],
+    "getSentRequestsQueueSize": [],
+    "supportsSubscriptions": [],
+    "on": [
+      "type",
+      "listener"
+    ],
+    "once": [
+      "type",
+      "listener"
+    ],
+    "removeListener": [
+      "type",
+      "listener"
+    ],
+    "_onDisconnect": [
+      "code",
+      "data"
+    ],
+    "disconnect": [
+      "code",
+      "data"
+    ],
+    "safeDisconnect": [
+      "code",
+      "data",
+      "param",
+      "param"
+    ],
+    "removeAllListeners": [
+      "type"
+    ],
+    "_onError": [
+      "event"
+    ],
+    "reset": [],
+    "_reconnect": [],
+    "request": [
+      "request"
+    ],
+    "_onConnect": [],
+    "_sendPendingRequests": [],
+    "_onMessage": [
+      "event"
+    ],
+    "clearQueues": [
+      "event"
+    ],
+    "_clearQueues": [
+      "event"
+    ]
+  },
+  "checkQueue": [],
+  "padLeft": [
+    "value",
+    "characterAmount",
+    "param"
+  ],
+  "padRight": [
+    "value",
+    "characterAmount",
+    "param"
+  ],
+  "toTwosComplement": [
+    "value",
+    "param"
+  ],
+  "fromTwosComplement": [
+    "value",
+    "param"
+  ],
+  "isUint8Array": [
+    "data"
+  ],
+  "uint8ArrayConcat": [
+    "param"
+  ],
+  "uint8ArrayEquals": [
+    "a",
+    "b"
+  ],
+  "uuidV4": [],
+  "compareBlockNumbers": [
+    "blockA",
+    "blockB"
+  ],
+  "isContractInitOptions": [
+    "options"
+  ],
+  "Web3DeferredPromise": {
+    "_promise": [],
+    "_resolve": [],
+    "_reject": [],
+    "_state": [],
+    "_timeoutId": [],
+    "_timeoutInterval": [],
+    "_timeoutMessage": [],
+    "constructor": [
+      "param"
+    ],
+    "state": [],
+    "then": [
+      "onfulfilled",
+      "onrejected"
+    ],
+    "catch": [
+      "onrejected"
+    ],
+    "finally": [
+      "onfinally"
+    ],
+    "resolve": [
+      "value"
+    ],
+    "reject": [
+      "reason"
+    ],
+    "startTimer": [],
+    "_checkTimeout": [],
+    "_clearTimeout": []
+  },
+  "Eip1193Provider": {
+    "_eventEmitter": [],
+    "_chainId": [],
+    "_accounts": [],
+    "_getChainId": [],
+    "_getAccounts": [],
+    "_onConnect": [],
+    "_onDisconnect": [
+      "code",
+      "data"
+    ],
+    "_onAccountsChanged": []
+  }
+}

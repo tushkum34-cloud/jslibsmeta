@@ -1,0 +1,578 @@
+{
+  "createConnection": [
+    "arg1",
+    "arg2",
+    "arg3",
+    "arg4"
+  ],
+  "connectionFactory": [
+    "logger"
+  ],
+  "CallHierarchyFeature": [
+    "Base"
+  ],
+  "ConfigurationFeature": [
+    "Base"
+  ],
+  "DiagnosticFeature": [
+    "Base"
+  ],
+  "FileOperationsFeature": [
+    "Base"
+  ],
+  "FoldingRangeFeature": [
+    "Base"
+  ],
+  "InlayHintFeature": [
+    "Base"
+  ],
+  "InlineCompletionFeature": [
+    "Base"
+  ],
+  "InlineValueFeature": [
+    "Base"
+  ],
+  "LinkedEditingRangeFeature": [
+    "Base"
+  ],
+  "MonikerFeature": [
+    "Base"
+  ],
+  "NotebookDocuments": {
+    "constructor": [
+      "configurationOrTextDocuments"
+    ],
+    "cellTextDocuments": [],
+    "getCellTextDocument": [
+      "cell"
+    ],
+    "getNotebookDocument": [
+      "uri"
+    ],
+    "getNotebookCell": [
+      "uri"
+    ],
+    "findNotebookDocumentForCell": [
+      "cell"
+    ],
+    "onDidOpen": [],
+    "onDidSave": [],
+    "onDidChange": [],
+    "onDidClose": [],
+    "listen": [
+      "connection"
+    ],
+    "updateCellMap": [
+      "notebookDocument"
+    ]
+  },
+  "NotebookSyncFeature": [
+    "Base"
+  ],
+  "CellTextDocumentConnection": {
+    "onDidOpenTextDocument": [
+      "handler"
+    ],
+    "openTextDocument": [
+      "params"
+    ],
+    "onDidChangeTextDocument": [
+      "handler"
+    ],
+    "changeTextDocument": [
+      "params"
+    ],
+    "onDidCloseTextDocument": [
+      "handler"
+    ],
+    "closeTextDocument": [
+      "params"
+    ],
+    "onWillSaveTextDocument": [],
+    "onWillSaveTextDocumentWaitUntil": [],
+    "onDidSaveTextDocument": []
+  },
+  "WorkDoneProgressReporterImpl": {
+    "constructor": [
+      "_connection",
+      "_token"
+    ],
+    "begin": [
+      "title",
+      "percentage",
+      "message",
+      "cancellable"
+    ],
+    "report": [
+      "arg0",
+      "arg1"
+    ],
+    "done": []
+  },
+  "WorkDoneProgressServerReporterImpl": {
+    "constructor": [
+      "connection",
+      "token"
+    ],
+    "token": [],
+    "done": [],
+    "cancel": []
+  },
+  "NullProgressReporter": {
+    "constructor": [],
+    "begin": [],
+    "report": [],
+    "done": []
+  },
+  "NullProgressServerReporter": {
+    "constructor": [],
+    "token": [],
+    "done": [],
+    "cancel": []
+  },
+  "attachWorkDone": [
+    "connection",
+    "params"
+  ],
+  "ProgressFeature": [
+    "Base"
+  ],
+  "ResultProgressReporterImpl": {
+    "constructor": [
+      "_connection",
+      "_token"
+    ],
+    "report": [
+      "data"
+    ]
+  },
+  "attachPartialResult": [
+    "connection",
+    "params"
+  ],
+  "SemanticTokensDiff": {
+    "constructor": [
+      "originalSequence",
+      "modifiedSequence"
+    ],
+    "computeDiff": []
+  },
+  "SemanticTokensBuilder": {
+    "constructor": [],
+    "initialize": [],
+    "push": [
+      "line",
+      "char",
+      "length",
+      "tokenType",
+      "tokenModifiers"
+    ],
+    "id": [],
+    "previousResult": [
+      "id"
+    ],
+    "build": [],
+    "canBuildEdits": [],
+    "buildEdits": []
+  },
+  "SemanticTokensFeature": [
+    "Base"
+  ],
+  "ErrorMessageTracker": {
+    "constructor": [],
+    "add": [
+      "message"
+    ],
+    "sendErrors": [
+      "connection"
+    ]
+  },
+  "_LanguagesImpl": {
+    "constructor": [],
+    "attach": [
+      "connection"
+    ],
+    "connection": [],
+    "initialize": [
+      "_capabilities"
+    ],
+    "fillServerCapabilities": [
+      "_capabilities"
+    ],
+    "attachWorkDoneProgress": [
+      "params"
+    ],
+    "attachPartialResultProgress": [
+      "_type",
+      "params"
+    ]
+  },
+  "_NotebooksImpl": {
+    "constructor": [],
+    "attach": [
+      "connection"
+    ],
+    "connection": [],
+    "initialize": [
+      "_capabilities"
+    ],
+    "fillServerCapabilities": [
+      "_capabilities"
+    ],
+    "attachWorkDoneProgress": [
+      "params"
+    ],
+    "attachPartialResultProgress": [
+      "_type",
+      "params"
+    ]
+  },
+  "null2Undefined": [
+    "value"
+  ],
+  "RemoteConsoleImpl": {
+    "constructor": [],
+    "rawAttach": [
+      "connection"
+    ],
+    "attach": [
+      "connection"
+    ],
+    "connection": [],
+    "fillServerCapabilities": [
+      "_capabilities"
+    ],
+    "initialize": [
+      "_capabilities"
+    ],
+    "error": [
+      "message"
+    ],
+    "warn": [
+      "message"
+    ],
+    "info": [
+      "message"
+    ],
+    "log": [
+      "message"
+    ],
+    "debug": [
+      "message"
+    ],
+    "send": [
+      "type",
+      "message"
+    ]
+  },
+  "_RemoteWindowImpl": {
+    "constructor": [],
+    "attach": [
+      "connection"
+    ],
+    "connection": [],
+    "initialize": [
+      "_capabilities"
+    ],
+    "fillServerCapabilities": [
+      "_capabilities"
+    ],
+    "showErrorMessage": [
+      "message",
+      "param"
+    ],
+    "showWarningMessage": [
+      "message",
+      "param"
+    ],
+    "showInformationMessage": [
+      "message",
+      "param"
+    ]
+  },
+  "create": [],
+  "BulkRegistrationImpl": {
+    "constructor": [],
+    "add": [
+      "type",
+      "registerOptions"
+    ],
+    "asRegistrationParams": []
+  },
+  "BulkUnregistrationImpl": {
+    "constructor": [
+      "_connection",
+      "unregistrations"
+    ],
+    "isAttached": [],
+    "attach": [
+      "connection"
+    ],
+    "add": [
+      "unregistration"
+    ],
+    "dispose": [],
+    "disposeSingle": [
+      "arg"
+    ]
+  },
+  "RemoteClientImpl": {
+    "attach": [
+      "connection"
+    ],
+    "connection": [],
+    "initialize": [
+      "_capabilities"
+    ],
+    "fillServerCapabilities": [
+      "_capabilities"
+    ],
+    "register": [
+      "typeOrRegistrations",
+      "registerOptionsOrType",
+      "registerOptions"
+    ],
+    "registerSingle1": [
+      "unregistration",
+      "type",
+      "registerOptions"
+    ],
+    "registerSingle2": [
+      "type",
+      "registerOptions"
+    ],
+    "unregisterSingle": [
+      "id",
+      "method"
+    ],
+    "registerMany": [
+      "registrations"
+    ]
+  },
+  "_RemoteWorkspaceImpl": {
+    "constructor": [],
+    "attach": [
+      "connection"
+    ],
+    "connection": [],
+    "initialize": [
+      "_capabilities"
+    ],
+    "fillServerCapabilities": [
+      "_capabilities"
+    ],
+    "applyEdit": [
+      "paramOrEdit"
+    ]
+  },
+  "isApplyWorkspaceEditParams": [
+    "value"
+  ],
+  "TracerImpl": {
+    "constructor": [],
+    "attach": [
+      "connection"
+    ],
+    "connection": [],
+    "initialize": [
+      "_capabilities"
+    ],
+    "fillServerCapabilities": [
+      "_capabilities"
+    ],
+    "trace": [
+      "value"
+    ],
+    "log": [
+      "message",
+      "verbose"
+    ]
+  },
+  "TelemetryImpl": {
+    "constructor": [],
+    "attach": [
+      "connection"
+    ],
+    "connection": [],
+    "initialize": [
+      "_capabilities"
+    ],
+    "fillServerCapabilities": [
+      "_capabilities"
+    ],
+    "logEvent": [
+      "data"
+    ]
+  },
+  "combineConsoleFeatures": [
+    "one",
+    "two"
+  ],
+  "combineTelemetryFeatures": [
+    "one",
+    "two"
+  ],
+  "combineTracerFeatures": [
+    "one",
+    "two"
+  ],
+  "combineClientFeatures": [
+    "one",
+    "two"
+  ],
+  "combineWindowFeatures": [
+    "one",
+    "two"
+  ],
+  "combineWorkspaceFeatures": [
+    "one",
+    "two"
+  ],
+  "combineLanguagesFeatures": [
+    "one",
+    "two"
+  ],
+  "combineNotebooksFeatures": [
+    "one",
+    "two"
+  ],
+  "combineFeatures": [
+    "one",
+    "two"
+  ],
+  "combine": [
+    "one",
+    "two",
+    "func"
+  ],
+  "asPromise": [
+    "value"
+  ],
+  "ShowDocumentFeature": [
+    "Base"
+  ],
+  "TextDocuments": {
+    "constructor": [
+      "configuration"
+    ],
+    "onDidOpen": [],
+    "onDidChangeContent": [],
+    "onWillSave": [],
+    "onWillSaveWaitUntil": [
+      "handler"
+    ],
+    "onDidSave": [],
+    "onDidClose": [],
+    "get": [
+      "uri"
+    ],
+    "all": [],
+    "keys": [],
+    "listen": [
+      "connection"
+    ]
+  },
+  "TypeHierarchyFeature": [
+    "Base"
+  ],
+  "boolean": [
+    "value"
+  ],
+  "string": [
+    "value"
+  ],
+  "number": [
+    "value"
+  ],
+  "error": [
+    "value"
+  ],
+  "func": [
+    "value"
+  ],
+  "array": [
+    "value"
+  ],
+  "stringArray": [
+    "value"
+  ],
+  "typedArray": [
+    "value",
+    "check"
+  ],
+  "thenable": [
+    "value"
+  ],
+  "ValueUUID": {
+    "constructor": [
+      "_value"
+    ],
+    "asHex": [],
+    "equals": [
+      "other"
+    ]
+  },
+  "V4UUID": {
+    "_oneOf": [
+      "array"
+    ],
+    "_randomHex": [],
+    "constructor": []
+  },
+  "v4": [],
+  "isUUID": [
+    "value"
+  ],
+  "parse": [
+    "value"
+  ],
+  "generateUuid": [],
+  "WorkspaceFoldersFeature": [
+    "Base"
+  ],
+  "uriToFilePath": [
+    "uri"
+  ],
+  "isWindows": [],
+  "resolve": [
+    "moduleName",
+    "nodePath",
+    "cwd",
+    "tracer"
+  ],
+  "resolveGlobalNodePath": [
+    "tracer"
+  ],
+  "handler": [],
+  "resolveGlobalYarnPath": [
+    "tracer"
+  ],
+  "isCaseSensitive": [],
+  "isParent": [
+    "parent",
+    "child"
+  ],
+  "resolveModulePath": [
+    "workspaceRoot",
+    "moduleName",
+    "nodePath",
+    "tracer"
+  ],
+  "endProtocolConnection": [],
+  "setupExitTimer": [],
+  "runTimer": [
+    "value"
+  ],
+  "_createConnection": [
+    "input",
+    "output",
+    "options",
+    "factories"
+  ],
+  "patchConsole": [
+    "logger"
+  ],
+  "serialize": [
+    "args"
+  ]
+}

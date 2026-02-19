@@ -1,0 +1,1875 @@
+{
+  "AbstractStruct": {
+    "constructor": [
+      "id",
+      "length"
+    ],
+    "deleted": [],
+    "mergeWith": [
+      "right"
+    ],
+    "write": [
+      "encoder",
+      "offset",
+      "encodingRef"
+    ],
+    "integrate": [
+      "transaction",
+      "offset"
+    ]
+  },
+  "ContentAny": {
+    "constructor": [
+      "arr"
+    ],
+    "getLength": [],
+    "getContent": [],
+    "isCountable": [],
+    "copy": [],
+    "splice": [
+      "offset"
+    ],
+    "mergeWith": [
+      "right"
+    ],
+    "integrate": [
+      "transaction",
+      "item"
+    ],
+    "delete": [
+      "transaction"
+    ],
+    "gc": [
+      "store"
+    ],
+    "write": [
+      "encoder",
+      "offset"
+    ],
+    "getRef": []
+  },
+  "ContentBinary": {
+    "constructor": [
+      "content"
+    ],
+    "getLength": [],
+    "getContent": [],
+    "isCountable": [],
+    "copy": [],
+    "splice": [
+      "offset"
+    ],
+    "mergeWith": [
+      "right"
+    ],
+    "integrate": [
+      "transaction",
+      "item"
+    ],
+    "delete": [
+      "transaction"
+    ],
+    "gc": [
+      "store"
+    ],
+    "write": [
+      "encoder",
+      "offset"
+    ],
+    "getRef": []
+  },
+  "ContentDeleted": {
+    "constructor": [
+      "len"
+    ],
+    "getLength": [],
+    "getContent": [],
+    "isCountable": [],
+    "copy": [],
+    "splice": [
+      "offset"
+    ],
+    "mergeWith": [
+      "right"
+    ],
+    "integrate": [
+      "transaction",
+      "item"
+    ],
+    "delete": [
+      "transaction"
+    ],
+    "gc": [
+      "store"
+    ],
+    "write": [
+      "encoder",
+      "offset"
+    ],
+    "getRef": []
+  },
+  "ContentDoc": {
+    "constructor": [
+      "doc"
+    ],
+    "getLength": [],
+    "getContent": [],
+    "isCountable": [],
+    "copy": [],
+    "splice": [
+      "offset"
+    ],
+    "mergeWith": [
+      "right"
+    ],
+    "integrate": [
+      "transaction",
+      "item"
+    ],
+    "delete": [
+      "transaction"
+    ],
+    "gc": [
+      "store"
+    ],
+    "write": [
+      "encoder",
+      "offset"
+    ],
+    "getRef": []
+  },
+  "ContentEmbed": {
+    "constructor": [
+      "embed"
+    ],
+    "getLength": [],
+    "getContent": [],
+    "isCountable": [],
+    "copy": [],
+    "splice": [
+      "offset"
+    ],
+    "mergeWith": [
+      "right"
+    ],
+    "integrate": [
+      "transaction",
+      "item"
+    ],
+    "delete": [
+      "transaction"
+    ],
+    "gc": [
+      "store"
+    ],
+    "write": [
+      "encoder",
+      "offset"
+    ],
+    "getRef": []
+  },
+  "ContentFormat": {
+    "constructor": [
+      "key",
+      "value"
+    ],
+    "getLength": [],
+    "getContent": [],
+    "isCountable": [],
+    "copy": [],
+    "splice": [
+      "_offset"
+    ],
+    "mergeWith": [
+      "_right"
+    ],
+    "integrate": [
+      "_transaction",
+      "item"
+    ],
+    "delete": [
+      "transaction"
+    ],
+    "gc": [
+      "store"
+    ],
+    "write": [
+      "encoder",
+      "offset"
+    ],
+    "getRef": []
+  },
+  "ContentJSON": {
+    "constructor": [
+      "arr"
+    ],
+    "getLength": [],
+    "getContent": [],
+    "isCountable": [],
+    "copy": [],
+    "splice": [
+      "offset"
+    ],
+    "mergeWith": [
+      "right"
+    ],
+    "integrate": [
+      "transaction",
+      "item"
+    ],
+    "delete": [
+      "transaction"
+    ],
+    "gc": [
+      "store"
+    ],
+    "write": [
+      "encoder",
+      "offset"
+    ],
+    "getRef": []
+  },
+  "ContentString": {
+    "constructor": [
+      "str"
+    ],
+    "getLength": [],
+    "getContent": [],
+    "isCountable": [],
+    "copy": [],
+    "splice": [
+      "offset"
+    ],
+    "mergeWith": [
+      "right"
+    ],
+    "integrate": [
+      "transaction",
+      "item"
+    ],
+    "delete": [
+      "transaction"
+    ],
+    "gc": [
+      "store"
+    ],
+    "write": [
+      "encoder",
+      "offset"
+    ],
+    "getRef": []
+  },
+  "ArraySearchMarker": {
+    "constructor": [
+      "p",
+      "index"
+    ]
+  },
+  "AbstractType": {
+    "constructor": [],
+    "parent": [],
+    "_integrate": [
+      "y",
+      "item"
+    ],
+    "_copy": [],
+    "clone": [],
+    "_write": [
+      "_encoder"
+    ],
+    "_first": [],
+    "_callObserver": [
+      "transaction",
+      "_parentSubs"
+    ],
+    "observe": [
+      "f"
+    ],
+    "observeDeep": [
+      "f"
+    ],
+    "unobserve": [
+      "f"
+    ],
+    "unobserveDeep": [
+      "f"
+    ],
+    "toJSON": []
+  },
+  "YArrayEvent": {},
+  "YArray": {
+    "constructor": [],
+    "from": [
+      "items"
+    ],
+    "_integrate": [
+      "y",
+      "item"
+    ],
+    "_copy": [],
+    "clone": [],
+    "length": [],
+    "_callObserver": [
+      "transaction",
+      "parentSubs"
+    ],
+    "insert": [
+      "index",
+      "content"
+    ],
+    "push": [
+      "content"
+    ],
+    "unshift": [
+      "content"
+    ],
+    "delete": [
+      "index",
+      "param"
+    ],
+    "get": [
+      "index"
+    ],
+    "toArray": [],
+    "slice": [
+      "param",
+      "param"
+    ],
+    "toJSON": [],
+    "map": [
+      "f"
+    ],
+    "forEach": [
+      "f"
+    ],
+    "_write": [
+      "encoder"
+    ]
+  },
+  "YMapEvent": {
+    "constructor": [
+      "ymap",
+      "transaction",
+      "subs"
+    ]
+  },
+  "YMap": {
+    "constructor": [
+      "entries"
+    ],
+    "_integrate": [
+      "y",
+      "item"
+    ],
+    "_copy": [],
+    "clone": [],
+    "_callObserver": [
+      "transaction",
+      "parentSubs"
+    ],
+    "toJSON": [],
+    "size": [],
+    "keys": [],
+    "values": [],
+    "entries": [],
+    "forEach": [
+      "f"
+    ],
+    "delete": [
+      "key"
+    ],
+    "set": [
+      "key",
+      "value"
+    ],
+    "get": [
+      "key"
+    ],
+    "has": [
+      "key"
+    ],
+    "clear": [],
+    "_write": [
+      "encoder"
+    ]
+  },
+  "ItemTextListPosition": {
+    "constructor": [
+      "left",
+      "right",
+      "index",
+      "currentAttributes"
+    ],
+    "forward": []
+  },
+  "YTextEvent": {
+    "constructor": [
+      "ytext",
+      "transaction",
+      "subs"
+    ],
+    "changes": [],
+    "delta": []
+  },
+  "YText": {
+    "constructor": [
+      "string"
+    ],
+    "length": [],
+    "_integrate": [
+      "y",
+      "item"
+    ],
+    "_copy": [],
+    "clone": [],
+    "_callObserver": [
+      "transaction",
+      "parentSubs"
+    ],
+    "toString": [],
+    "toJSON": [],
+    "applyDelta": [
+      "delta",
+      "param"
+    ],
+    "toDelta": [
+      "snapshot",
+      "prevSnapshot",
+      "computeYChange"
+    ],
+    "insert": [
+      "index",
+      "text",
+      "attributes"
+    ],
+    "insertEmbed": [
+      "index",
+      "embed",
+      "attributes"
+    ],
+    "delete": [
+      "index",
+      "length"
+    ],
+    "format": [
+      "index",
+      "length",
+      "attributes"
+    ],
+    "removeAttribute": [
+      "attributeName"
+    ],
+    "setAttribute": [
+      "attributeName",
+      "attributeValue"
+    ],
+    "getAttribute": [
+      "attributeName"
+    ],
+    "getAttributes": [],
+    "_write": [
+      "encoder"
+    ]
+  },
+  "YXmlElement": {
+    "constructor": [
+      "param"
+    ],
+    "nextSibling": [],
+    "prevSibling": [],
+    "_integrate": [
+      "y",
+      "item"
+    ],
+    "_copy": [],
+    "clone": [],
+    "toString": [],
+    "removeAttribute": [
+      "attributeName"
+    ],
+    "setAttribute": [
+      "attributeName",
+      "attributeValue"
+    ],
+    "getAttribute": [
+      "attributeName"
+    ],
+    "hasAttribute": [
+      "attributeName"
+    ],
+    "getAttributes": [
+      "snapshot"
+    ],
+    "toDOM": [
+      "param",
+      "param",
+      "binding"
+    ],
+    "_write": [
+      "encoder"
+    ]
+  },
+  "YXmlEvent": {
+    "constructor": [
+      "target",
+      "subs",
+      "transaction"
+    ]
+  },
+  "YXmlTreeWalker": {
+    "constructor": [
+      "root",
+      "param"
+    ],
+    "next": []
+  },
+  "YXmlFragment": {
+    "constructor": [],
+    "firstChild": [],
+    "_integrate": [
+      "y",
+      "item"
+    ],
+    "_copy": [],
+    "clone": [],
+    "length": [],
+    "createTreeWalker": [
+      "filter"
+    ],
+    "querySelector": [
+      "query"
+    ],
+    "querySelectorAll": [
+      "query"
+    ],
+    "_callObserver": [
+      "transaction",
+      "parentSubs"
+    ],
+    "toString": [],
+    "toJSON": [],
+    "toDOM": [
+      "param",
+      "param",
+      "binding"
+    ],
+    "insert": [
+      "index",
+      "content"
+    ],
+    "insertAfter": [
+      "ref",
+      "content"
+    ],
+    "delete": [
+      "index",
+      "param"
+    ],
+    "toArray": [],
+    "push": [
+      "content"
+    ],
+    "unshift": [
+      "content"
+    ],
+    "get": [
+      "index"
+    ],
+    "slice": [
+      "param",
+      "param"
+    ],
+    "forEach": [
+      "f"
+    ],
+    "_write": [
+      "encoder"
+    ]
+  },
+  "YXmlHook": {
+    "constructor": [
+      "hookName"
+    ],
+    "_copy": [],
+    "clone": [],
+    "toDOM": [
+      "param",
+      "param",
+      "binding"
+    ],
+    "_write": [
+      "encoder"
+    ]
+  },
+  "YXmlText": {
+    "nextSibling": [],
+    "prevSibling": [],
+    "_copy": [],
+    "clone": [],
+    "toDOM": [
+      "param",
+      "hooks",
+      "binding"
+    ],
+    "toString": [],
+    "toJSON": [],
+    "_write": [
+      "encoder"
+    ]
+  },
+  "AbstractConnector": {
+    "constructor": [
+      "ydoc",
+      "awareness"
+    ]
+  },
+  "DeleteItem": {
+    "constructor": [
+      "clock",
+      "len"
+    ]
+  },
+  "DeleteSet": {
+    "constructor": []
+  },
+  "EventHandler": {
+    "constructor": []
+  },
+  "ID": {
+    "constructor": [
+      "client",
+      "clock"
+    ]
+  },
+  "PermanentUserData": {
+    "constructor": [
+      "doc",
+      "param"
+    ],
+    "setUserMapping": [
+      "doc",
+      "clientid",
+      "userDescription",
+      "param"
+    ],
+    "getUserByClientId": [
+      "clientid"
+    ],
+    "getUserByDeletedId": [
+      "id"
+    ]
+  },
+  "RelativePosition": {
+    "constructor": [
+      "type",
+      "tname",
+      "item",
+      "param"
+    ]
+  },
+  "AbsolutePosition": {
+    "constructor": [
+      "type",
+      "index",
+      "param"
+    ]
+  },
+  "StructStore": {
+    "constructor": []
+  },
+  "Transaction": {
+    "constructor": [
+      "doc",
+      "origin",
+      "local"
+    ]
+  },
+  "StackItem": {
+    "constructor": [
+      "deletions",
+      "insertions"
+    ]
+  },
+  "UndoManager": {
+    "constructor": [
+      "typeScope",
+      "param"
+    ],
+    "addToScope": [
+      "ytypes"
+    ],
+    "addTrackedOrigin": [
+      "origin"
+    ],
+    "removeTrackedOrigin": [
+      "origin"
+    ],
+    "clear": [
+      "param",
+      "param"
+    ],
+    "stopCapturing": [],
+    "undo": [],
+    "redo": [],
+    "canUndo": [],
+    "canRedo": [],
+    "destroy": []
+  },
+  "DSDecoderV1": {
+    "constructor": [
+      "decoder"
+    ],
+    "resetDsCurVal": [],
+    "readDsClock": [],
+    "readDsLen": []
+  },
+  "UpdateDecoderV1": {
+    "readLeftID": [],
+    "readRightID": [],
+    "readClient": [],
+    "readInfo": [],
+    "readString": [],
+    "readParentInfo": [],
+    "readTypeRef": [],
+    "readLen": [],
+    "readAny": [],
+    "readBuf": [],
+    "readJSON": [],
+    "readKey": []
+  },
+  "DSDecoderV2": {
+    "constructor": [
+      "decoder"
+    ],
+    "resetDsCurVal": [],
+    "readDsClock": [],
+    "readDsLen": []
+  },
+  "UpdateDecoderV2": {
+    "constructor": [
+      "decoder"
+    ],
+    "readLeftID": [],
+    "readRightID": [],
+    "readClient": [],
+    "readInfo": [],
+    "readString": [],
+    "readParentInfo": [],
+    "readTypeRef": [],
+    "readLen": [],
+    "readAny": [],
+    "readBuf": [],
+    "readJSON": [],
+    "readKey": []
+  },
+  "DSEncoderV1": {
+    "constructor": [],
+    "toUint8Array": [],
+    "resetDsCurVal": [],
+    "writeDsClock": [
+      "clock"
+    ],
+    "writeDsLen": [
+      "len"
+    ]
+  },
+  "UpdateEncoderV1": {
+    "writeLeftID": [
+      "id"
+    ],
+    "writeRightID": [
+      "id"
+    ],
+    "writeClient": [
+      "client"
+    ],
+    "writeInfo": [
+      "info"
+    ],
+    "writeString": [
+      "s"
+    ],
+    "writeParentInfo": [
+      "isYKey"
+    ],
+    "writeTypeRef": [
+      "info"
+    ],
+    "writeLen": [
+      "len"
+    ],
+    "writeAny": [
+      "any"
+    ],
+    "writeBuf": [
+      "buf"
+    ],
+    "writeJSON": [
+      "embed"
+    ],
+    "writeKey": [
+      "key"
+    ]
+  },
+  "DSEncoderV2": {
+    "constructor": [],
+    "toUint8Array": [],
+    "resetDsCurVal": [],
+    "writeDsClock": [
+      "clock"
+    ],
+    "writeDsLen": [
+      "len"
+    ]
+  },
+  "UpdateEncoderV2": {
+    "constructor": [],
+    "toUint8Array": [],
+    "writeLeftID": [
+      "id"
+    ],
+    "writeRightID": [
+      "id"
+    ],
+    "writeClient": [
+      "client"
+    ],
+    "writeInfo": [
+      "info"
+    ],
+    "writeString": [
+      "s"
+    ],
+    "writeParentInfo": [
+      "isYKey"
+    ],
+    "writeTypeRef": [
+      "info"
+    ],
+    "writeLen": [
+      "len"
+    ],
+    "writeAny": [
+      "any"
+    ],
+    "writeBuf": [
+      "buf"
+    ],
+    "writeJSON": [
+      "embed"
+    ],
+    "writeKey": [
+      "key"
+    ]
+  },
+  "YEvent": {
+    "constructor": [
+      "target",
+      "transaction"
+    ],
+    "path": [],
+    "deletes": [
+      "struct"
+    ],
+    "keys": [],
+    "delta": [],
+    "adds": [
+      "struct"
+    ],
+    "changes": []
+  },
+  "LazyStructReader": {
+    "constructor": [
+      "decoder",
+      "filterSkips"
+    ],
+    "next": []
+  },
+  "LazyStructWriter": {
+    "constructor": [
+      "encoder"
+    ]
+  },
+  "readContentAny": [
+    "decoder"
+  ],
+  "readContentBinary": [
+    "decoder"
+  ],
+  "readContentDeleted": [
+    "decoder"
+  ],
+  "createDocFromOpts": [
+    "guid",
+    "opts"
+  ],
+  "readContentDoc": [
+    "decoder"
+  ],
+  "readContentEmbed": [
+    "decoder"
+  ],
+  "readContentFormat": [
+    "decoder"
+  ],
+  "readContentJSON": [
+    "decoder"
+  ],
+  "readContentString": [
+    "decoder"
+  ],
+  "ContentType": {
+    "constructor": [
+      "type"
+    ],
+    "getLength": [],
+    "getContent": [],
+    "isCountable": [],
+    "copy": [],
+    "splice": [
+      "offset"
+    ],
+    "mergeWith": [
+      "right"
+    ],
+    "integrate": [
+      "transaction",
+      "item"
+    ],
+    "delete": [
+      "transaction"
+    ],
+    "gc": [
+      "store"
+    ],
+    "write": [
+      "encoder",
+      "offset"
+    ],
+    "getRef": []
+  },
+  "readContentType": [
+    "decoder"
+  ],
+  "GC": {
+    "deleted": [],
+    "delete": [],
+    "mergeWith": [
+      "right"
+    ],
+    "integrate": [
+      "transaction",
+      "offset"
+    ],
+    "write": [
+      "encoder",
+      "offset"
+    ],
+    "getMissing": [
+      "transaction",
+      "store"
+    ]
+  },
+  "followRedone": [
+    "store",
+    "id"
+  ],
+  "keepItem": [
+    "item",
+    "keep"
+  ],
+  "splitItem": [
+    "transaction",
+    "leftItem",
+    "diff"
+  ],
+  "isDeletedByUndoStack": [
+    "stack",
+    "id"
+  ],
+  "redoItem": [
+    "transaction",
+    "item",
+    "redoitems",
+    "itemsToDelete",
+    "ignoreRemoteMapChanges",
+    "um"
+  ],
+  "Item": {
+    "constructor": [
+      "id",
+      "left",
+      "origin",
+      "right",
+      "rightOrigin",
+      "parent",
+      "parentSub",
+      "content"
+    ],
+    "marker": [],
+    "keep": [
+      "doKeep"
+    ],
+    "countable": [],
+    "deleted": [
+      "doDelete"
+    ],
+    "markDeleted": [],
+    "getMissing": [
+      "transaction",
+      "store"
+    ],
+    "integrate": [
+      "transaction",
+      "offset"
+    ],
+    "next": [],
+    "prev": [],
+    "lastId": [],
+    "mergeWith": [
+      "right"
+    ],
+    "delete": [
+      "transaction"
+    ],
+    "gc": [
+      "store",
+      "parentGCd"
+    ],
+    "write": [
+      "encoder",
+      "offset"
+    ]
+  },
+  "readItemContent": [
+    "decoder",
+    "info"
+  ],
+  "AbstractContent": {
+    "getLength": [],
+    "getContent": [],
+    "isCountable": [],
+    "copy": [],
+    "splice": [
+      "_offset"
+    ],
+    "mergeWith": [
+      "_right"
+    ],
+    "integrate": [
+      "_transaction",
+      "_item"
+    ],
+    "delete": [
+      "_transaction"
+    ],
+    "gc": [
+      "_store"
+    ],
+    "write": [
+      "_encoder",
+      "_offset"
+    ],
+    "getRef": []
+  },
+  "Skip": {
+    "deleted": [],
+    "delete": [],
+    "mergeWith": [
+      "right"
+    ],
+    "integrate": [
+      "transaction",
+      "offset"
+    ],
+    "write": [
+      "encoder",
+      "offset"
+    ],
+    "getMissing": [
+      "transaction",
+      "store"
+    ]
+  },
+  "warnPrematureAccess": [],
+  "refreshMarkerTimestamp": [
+    "marker"
+  ],
+  "overwriteMarker": [
+    "marker",
+    "p",
+    "index"
+  ],
+  "markPosition": [
+    "searchMarker",
+    "p",
+    "index"
+  ],
+  "findMarker": [
+    "yarray",
+    "index"
+  ],
+  "updateMarkerChanges": [
+    "searchMarker",
+    "index",
+    "len"
+  ],
+  "getTypeChildren": [
+    "t"
+  ],
+  "callTypeObservers": [
+    "type",
+    "transaction",
+    "event"
+  ],
+  "typeListSlice": [
+    "type",
+    "start",
+    "end"
+  ],
+  "typeListToArray": [
+    "type"
+  ],
+  "typeListToArraySnapshot": [
+    "type",
+    "snapshot"
+  ],
+  "typeListForEach": [
+    "type",
+    "f"
+  ],
+  "typeListMap": [
+    "type",
+    "f"
+  ],
+  "typeListCreateIterator": [
+    "type"
+  ],
+  "typeListForEachSnapshot": [
+    "type",
+    "f",
+    "snapshot"
+  ],
+  "typeListGet": [
+    "type",
+    "index"
+  ],
+  "typeListInsertGenericsAfter": [
+    "transaction",
+    "parent",
+    "referenceItem",
+    "content"
+  ],
+  "packJsonContent": [],
+  "lengthExceeded": [],
+  "typeListInsertGenerics": [
+    "transaction",
+    "parent",
+    "index",
+    "content"
+  ],
+  "typeListPushGenerics": [
+    "transaction",
+    "parent",
+    "content"
+  ],
+  "typeListDelete": [
+    "transaction",
+    "parent",
+    "index",
+    "length"
+  ],
+  "typeMapDelete": [
+    "transaction",
+    "parent",
+    "key"
+  ],
+  "typeMapSet": [
+    "transaction",
+    "parent",
+    "key",
+    "value"
+  ],
+  "typeMapGet": [
+    "parent",
+    "key"
+  ],
+  "typeMapGetAll": [
+    "parent"
+  ],
+  "typeMapHas": [
+    "parent",
+    "key"
+  ],
+  "typeMapGetSnapshot": [
+    "parent",
+    "key",
+    "snapshot"
+  ],
+  "typeMapGetAllSnapshot": [
+    "parent",
+    "snapshot"
+  ],
+  "createMapIterator": [
+    "type"
+  ],
+  "readYArray": [
+    "_decoder"
+  ],
+  "readYMap": [
+    "_decoder"
+  ],
+  "equalAttrs": [
+    "a",
+    "b"
+  ],
+  "findNextPosition": [
+    "transaction",
+    "pos",
+    "count"
+  ],
+  "findPosition": [
+    "transaction",
+    "parent",
+    "index",
+    "useSearchMarker"
+  ],
+  "insertNegatedAttributes": [
+    "transaction",
+    "parent",
+    "currPos",
+    "negatedAttributes"
+  ],
+  "updateCurrentAttributes": [
+    "currentAttributes",
+    "format"
+  ],
+  "minimizeAttributeChanges": [
+    "currPos",
+    "attributes"
+  ],
+  "insertAttributes": [
+    "transaction",
+    "parent",
+    "currPos",
+    "attributes"
+  ],
+  "insertText": [
+    "transaction",
+    "parent",
+    "currPos",
+    "text",
+    "attributes"
+  ],
+  "formatText": [
+    "transaction",
+    "parent",
+    "currPos",
+    "length",
+    "attributes"
+  ],
+  "cleanupFormattingGap": [
+    "transaction",
+    "start",
+    "curr",
+    "startAttributes",
+    "currAttributes"
+  ],
+  "cleanupContextlessFormattingGap": [
+    "transaction",
+    "item"
+  ],
+  "cleanupYTextFormatting": [
+    "type"
+  ],
+  "cleanupYTextAfterTransaction": [
+    "transaction"
+  ],
+  "deleteText": [
+    "transaction",
+    "currPos",
+    "length"
+  ],
+  "addOp": [],
+  "packStr": [],
+  "computeDelta": [],
+  "readYText": [
+    "_decoder"
+  ],
+  "readYXmlElement": [
+    "decoder"
+  ],
+  "readYXmlFragment": [
+    "_decoder"
+  ],
+  "readYXmlHook": [
+    "decoder"
+  ],
+  "readYXmlText": [
+    "decoder"
+  ],
+  "iterateDeletedStructs": [
+    "transaction",
+    "ds",
+    "f"
+  ],
+  "findIndexDS": [
+    "dis",
+    "clock"
+  ],
+  "isDeleted": [
+    "ds",
+    "id"
+  ],
+  "sortAndMergeDeleteSet": [
+    "ds"
+  ],
+  "mergeDeleteSets": [
+    "dss"
+  ],
+  "addToDeleteSet": [
+    "ds",
+    "client",
+    "clock",
+    "length"
+  ],
+  "createDeleteSet": [],
+  "createDeleteSetFromStructStore": [
+    "ss"
+  ],
+  "writeDeleteSet": [
+    "encoder",
+    "ds"
+  ],
+  "readDeleteSet": [
+    "decoder"
+  ],
+  "readAndApplyDeleteSet": [
+    "decoder",
+    "transaction",
+    "store"
+  ],
+  "equalDeleteSets": [
+    "ds1",
+    "ds2"
+  ],
+  "Doc": {
+    "constructor": [
+      "param"
+    ],
+    "load": [],
+    "getSubdocs": [],
+    "getSubdocGuids": [],
+    "transact": [
+      "f",
+      "param"
+    ],
+    "get": [
+      "name",
+      "param"
+    ],
+    "getArray": [
+      "param"
+    ],
+    "getText": [
+      "param"
+    ],
+    "getMap": [
+      "param"
+    ],
+    "getXmlElement": [
+      "param"
+    ],
+    "getXmlFragment": [
+      "param"
+    ],
+    "toJSON": [],
+    "destroy": []
+  },
+  "provideSyncedPromise": [],
+  "eventHandler": [
+    "isSynced"
+  ],
+  "createEventHandler": [],
+  "addEventHandlerListener": [
+    "eventHandler",
+    "f"
+  ],
+  "removeEventHandlerListener": [
+    "eventHandler",
+    "f"
+  ],
+  "removeAllEventHandlerListeners": [
+    "eventHandler"
+  ],
+  "callEventHandlerListeners": [
+    "eventHandler",
+    "arg0",
+    "arg1"
+  ],
+  "compareIDs": [
+    "a",
+    "b"
+  ],
+  "createID": [
+    "client",
+    "clock"
+  ],
+  "writeID": [
+    "encoder",
+    "id"
+  ],
+  "readID": [
+    "decoder"
+  ],
+  "findRootTypeKey": [
+    "type"
+  ],
+  "initUser": [
+    "user",
+    "userDescription"
+  ],
+  "addClientId": [
+    "clientid"
+  ],
+  "relativePositionToJSON": [
+    "rpos"
+  ],
+  "createRelativePositionFromJSON": [
+    "json"
+  ],
+  "createAbsolutePosition": [
+    "type",
+    "index",
+    "param"
+  ],
+  "createRelativePosition": [
+    "type",
+    "item",
+    "assoc"
+  ],
+  "createRelativePositionFromTypeIndex": [
+    "type",
+    "index",
+    "param"
+  ],
+  "writeRelativePosition": [
+    "encoder",
+    "rpos"
+  ],
+  "encodeRelativePosition": [
+    "rpos"
+  ],
+  "readRelativePosition": [
+    "decoder"
+  ],
+  "decodeRelativePosition": [
+    "uint8Array"
+  ],
+  "getItemWithOffset": [
+    "store",
+    "id"
+  ],
+  "createAbsolutePositionFromRelativePosition": [
+    "rpos",
+    "doc",
+    "param"
+  ],
+  "compareRelativePositions": [
+    "a",
+    "b"
+  ],
+  "Snapshot": {
+    "constructor": [
+      "ds",
+      "sv"
+    ]
+  },
+  "equalSnapshots": [
+    "snap1",
+    "snap2"
+  ],
+  "encodeSnapshotV2": [
+    "snapshot",
+    "param"
+  ],
+  "encodeSnapshot": [
+    "snapshot"
+  ],
+  "decodeSnapshotV2": [
+    "buf",
+    "param"
+  ],
+  "decodeSnapshot": [
+    "buf"
+  ],
+  "createSnapshot": [
+    "ds",
+    "sm"
+  ],
+  "snapshot": [
+    "doc"
+  ],
+  "isVisible": [
+    "item",
+    "snapshot"
+  ],
+  "splitSnapshotAffectedStructs": [
+    "transaction",
+    "snapshot"
+  ],
+  "createDocFromSnapshot": [
+    "originDoc",
+    "snapshot",
+    "param"
+  ],
+  "snapshotContainsUpdateV2": [
+    "snapshot",
+    "update",
+    "param"
+  ],
+  "snapshotContainsUpdate": [
+    "snapshot",
+    "update"
+  ],
+  "getStateVector": [
+    "store"
+  ],
+  "getState": [
+    "store",
+    "client"
+  ],
+  "integrityCheck": [
+    "store"
+  ],
+  "addStruct": [
+    "store",
+    "struct"
+  ],
+  "findIndexSS": [
+    "structs",
+    "clock"
+  ],
+  "find": [
+    "store",
+    "id"
+  ],
+  "findIndexCleanStart": [
+    "transaction",
+    "structs",
+    "clock"
+  ],
+  "getItemCleanStart": [
+    "transaction",
+    "id"
+  ],
+  "getItemCleanEnd": [
+    "transaction",
+    "store",
+    "id"
+  ],
+  "replaceStruct": [
+    "store",
+    "struct",
+    "newStruct"
+  ],
+  "iterateStructs": [
+    "transaction",
+    "structs",
+    "clockStart",
+    "len",
+    "f"
+  ],
+  "writeUpdateMessageFromTransaction": [
+    "encoder",
+    "transaction"
+  ],
+  "nextID": [
+    "transaction"
+  ],
+  "addChangedTypeToTransaction": [
+    "transaction",
+    "type",
+    "parentSub"
+  ],
+  "tryToMergeWithLefts": [
+    "structs",
+    "pos"
+  ],
+  "tryGcDeleteSet": [
+    "ds",
+    "store",
+    "gcFilter"
+  ],
+  "tryMergeDeleteSet": [
+    "ds",
+    "store"
+  ],
+  "tryGc": [
+    "ds",
+    "store",
+    "gcFilter"
+  ],
+  "cleanupTransactions": [
+    "transactionCleanups",
+    "i"
+  ],
+  "transact": [
+    "doc",
+    "f",
+    "param",
+    "param"
+  ],
+  "clearUndoManagerStackItem": [
+    "tr",
+    "um",
+    "stackItem"
+  ],
+  "popStackItem": [
+    "undoManager",
+    "stack",
+    "eventType"
+  ],
+  "packOp": [],
+  "getPathTo": [
+    "parent",
+    "child"
+  ],
+  "writeStructs": [
+    "encoder",
+    "structs",
+    "client",
+    "clock"
+  ],
+  "writeClientsStructs": [
+    "encoder",
+    "store",
+    "_sm"
+  ],
+  "readClientsStructRefs": [
+    "decoder",
+    "doc"
+  ],
+  "integrateStructs": [
+    "transaction",
+    "store",
+    "clientsStructRefs"
+  ],
+  "getNextStructTarget": [],
+  "updateMissingSv": [
+    "client",
+    "clock"
+  ],
+  "addStackToRestSS": [],
+  "writeStructsFromTransaction": [
+    "encoder",
+    "transaction"
+  ],
+  "readUpdateV2": [
+    "decoder",
+    "ydoc",
+    "transactionOrigin",
+    "param"
+  ],
+  "readUpdate": [
+    "decoder",
+    "ydoc",
+    "transactionOrigin"
+  ],
+  "applyUpdateV2": [
+    "ydoc",
+    "update",
+    "transactionOrigin",
+    "param"
+  ],
+  "applyUpdate": [
+    "ydoc",
+    "update",
+    "transactionOrigin"
+  ],
+  "writeStateAsUpdate": [
+    "encoder",
+    "doc",
+    "param"
+  ],
+  "encodeStateAsUpdateV2": [
+    "doc",
+    "param",
+    "param"
+  ],
+  "encodeStateAsUpdate": [
+    "doc",
+    "encodedTargetStateVector"
+  ],
+  "readStateVector": [
+    "decoder"
+  ],
+  "decodeStateVector": [
+    "decodedState"
+  ],
+  "writeStateVector": [
+    "encoder",
+    "sv"
+  ],
+  "writeDocumentStateVector": [
+    "encoder",
+    "doc"
+  ],
+  "encodeStateVectorV2": [
+    "doc",
+    "param"
+  ],
+  "encodeStateVector": [
+    "doc"
+  ],
+  "isParentOf": [
+    "parent",
+    "child"
+  ],
+  "logType": [
+    "type"
+  ],
+  "lazyStructReaderGenerator": [
+    "decoder"
+  ],
+  "logUpdate": [
+    "update"
+  ],
+  "logUpdateV2": [
+    "update",
+    "param"
+  ],
+  "decodeUpdate": [
+    "update"
+  ],
+  "decodeUpdateV2": [
+    "update",
+    "param"
+  ],
+  "mergeUpdates": [
+    "updates"
+  ],
+  "encodeStateVectorFromUpdateV2": [
+    "update",
+    "param",
+    "param"
+  ],
+  "encodeStateVectorFromUpdate": [
+    "update"
+  ],
+  "parseUpdateMetaV2": [
+    "update",
+    "param"
+  ],
+  "parseUpdateMeta": [
+    "update"
+  ],
+  "sliceStruct": [
+    "left",
+    "diff"
+  ],
+  "mergeUpdatesV2": [
+    "updates",
+    "param",
+    "param"
+  ],
+  "diffUpdateV2": [
+    "update",
+    "sv",
+    "param",
+    "param"
+  ],
+  "diffUpdate": [
+    "update",
+    "sv"
+  ],
+  "flushLazyStructWriter": [
+    "lazyWriter"
+  ],
+  "writeStructToLazyStructWriter": [
+    "lazyWriter",
+    "struct",
+    "offset"
+  ],
+  "finishLazyStructWriting": [
+    "lazyWriter"
+  ],
+  "convertUpdateFormat": [
+    "update",
+    "blockTransformer",
+    "YDecoder",
+    "YEncoder"
+  ],
+  "createObfuscator": [
+    "param"
+  ],
+  "obfuscateUpdate": [
+    "update",
+    "opts"
+  ],
+  "obfuscateUpdateV2": [
+    "update",
+    "opts"
+  ],
+  "convertUpdateFormatV1ToV2": [
+    "update"
+  ],
+  "convertUpdateFormatV2ToV1": [
+    "update"
+  ],
+  "broadcastMessage": [
+    "y",
+    "m"
+  ],
+  "useV1Encoding": [],
+  "useV2Encoding": [],
+  "TestYInstance": {
+    "constructor": [
+      "testConnector",
+      "clientID"
+    ],
+    "disconnect": [],
+    "connect": [],
+    "_receive": [
+      "message",
+      "remoteClient"
+    ]
+  },
+  "TestConnector": {
+    "constructor": [
+      "gen"
+    ],
+    "createY": [
+      "clientID"
+    ],
+    "flushRandomMessage": [],
+    "flushAllMessages": [],
+    "reconnectAll": [],
+    "disconnectAll": [],
+    "syncAll": [],
+    "disconnectRandom": [],
+    "reconnectRandom": []
+  },
+  "init": [
+    "tc",
+    "param",
+    "initTestObject"
+  ],
+  "compare": [
+    "users"
+  ],
+  "compareItemIDs": [
+    "a",
+    "b"
+  ],
+  "compareStructStores": [
+    "ss1",
+    "ss2"
+  ],
+  "applyRandomTests": [
+    "tc",
+    "mods",
+    "iterations",
+    "initTestObject"
+  ]
+}
