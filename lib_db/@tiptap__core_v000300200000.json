@@ -1,0 +1,1088 @@
+{
+  "EventEmitter": {
+    "callbacks": [],
+    "on": [
+      "event",
+      "fn"
+    ],
+    "emit": [
+      "event",
+      "param"
+    ],
+    "off": [
+      "event",
+      "fn"
+    ],
+    "once": [
+      "event",
+      "fn"
+    ],
+    "removeAllListeners": []
+  },
+  "InputRule": {
+    "find": [],
+    "handler": [],
+    "undoable": [],
+    "constructor": [
+      "config"
+    ]
+  },
+  "Mark": {
+    "type": [],
+    "create": [
+      "param"
+    ],
+    "handleExit": [
+      "param"
+    ],
+    "configure": [
+      "options"
+    ],
+    "extend": [
+      "extendedConfig"
+    ]
+  },
+  "Node": {
+    "type": [],
+    "create": [
+      "param"
+    ],
+    "configure": [
+      "options"
+    ],
+    "extend": [
+      "extendedConfig"
+    ]
+  },
+  "PasteRule": {
+    "find": [],
+    "handler": [],
+    "constructor": [
+      "config"
+    ]
+  },
+  "Extendable": {
+    "type": [],
+    "parent": [],
+    "child": [],
+    "name": [],
+    "config": [],
+    "constructor": [
+      "param"
+    ],
+    "options": [],
+    "storage": [],
+    "configure": [
+      "param"
+    ],
+    "extend": [
+      "param"
+    ]
+  },
+  "Extension": {
+    "type": [],
+    "create": [
+      "param"
+    ],
+    "configure": [
+      "options"
+    ],
+    "extend": [
+      "extendedConfig"
+    ]
+  },
+  "MappablePosition": {
+    "position": [],
+    "constructor": [
+      "position"
+    ],
+    "fromJSON": [
+      "json"
+    ],
+    "toJSON": []
+  },
+  "ExtensionManager": {
+    "editor": [],
+    "schema": [],
+    "extensions": [],
+    "baseExtensions": [],
+    "splittableMarks": [],
+    "constructor": [
+      "extensions",
+      "editor"
+    ],
+    "resolve": [],
+    "sort": [],
+    "flatten": [],
+    "commands": [],
+    "plugins": [],
+    "attributes": [],
+    "nodeViews": [],
+    "dispatchTransaction": [
+      "baseDispatch"
+    ],
+    "transformPastedHTML": [
+      "baseTransform"
+    ],
+    "markViews": [],
+    "setupExtensions": []
+  },
+  "NodePos": {
+    "resolvedPos": [],
+    "isBlock": [],
+    "editor": [],
+    "name": [],
+    "constructor": [
+      "pos",
+      "editor",
+      "param",
+      "param"
+    ],
+    "currentNode": [],
+    "node": [],
+    "element": [],
+    "actualDepth": [],
+    "depth": [],
+    "pos": [],
+    "content": [
+      "content"
+    ],
+    "attributes": [],
+    "textContent": [],
+    "size": [],
+    "from": [],
+    "range": [],
+    "to": [],
+    "parent": [],
+    "before": [],
+    "after": [],
+    "children": [],
+    "firstChild": [],
+    "lastChild": [],
+    "closest": [
+      "selector",
+      "param"
+    ],
+    "querySelector": [
+      "selector",
+      "param"
+    ],
+    "querySelectorAll": [
+      "selector",
+      "param",
+      "param"
+    ],
+    "setAttribute": [
+      "attributes"
+    ]
+  },
+  "Editor": {
+    "commandManager": [],
+    "extensionManager": [],
+    "css": [],
+    "className": [],
+    "schema": [],
+    "editorView": [],
+    "isFocused": [],
+    "editorState": [],
+    "isInitialized": [],
+    "extensionStorage": [],
+    "instanceId": [],
+    "options": [],
+    "constructor": [
+      "param"
+    ],
+    "mount": [
+      "el"
+    ],
+    "unmount": [],
+    "storage": [],
+    "commands": [],
+    "chain": [],
+    "can": [],
+    "injectCSS": [],
+    "setOptions": [
+      "param"
+    ],
+    "setEditable": [
+      "editable",
+      "param"
+    ],
+    "isEditable": [],
+    "view": [],
+    "state": [],
+    "registerPlugin": [
+      "plugin",
+      "handlePlugins"
+    ],
+    "unregisterPlugin": [
+      "nameOrPluginKeyToRemove"
+    ],
+    "createExtensionManager": [],
+    "createCommandManager": [],
+    "createSchema": [],
+    "createDoc": [],
+    "createView": [
+      "element"
+    ],
+    "createNodeViews": [],
+    "prependClass": [],
+    "isCapturingTransaction": [],
+    "capturedTransaction": [],
+    "captureTransaction": [
+      "fn"
+    ],
+    "dispatchTransaction": [
+      "transaction"
+    ],
+    "getAttributes": [
+      "nameOrType"
+    ],
+    "isActive": [
+      "nameOrAttributes",
+      "attributesOrUndefined"
+    ],
+    "getJSON": [],
+    "getHTML": [],
+    "getText": [
+      "options"
+    ],
+    "isEmpty": [],
+    "destroy": [],
+    "isDestroyed": [],
+    "$node": [
+      "selector",
+      "attributes"
+    ],
+    "$nodes": [
+      "selector",
+      "attributes"
+    ],
+    "$pos": [
+      "pos"
+    ],
+    "$doc": [],
+    "utils": []
+  },
+  "CommandManager": {
+    "editor": [],
+    "rawCommands": [],
+    "customState": [],
+    "constructor": [
+      "props"
+    ],
+    "hasCustomState": [],
+    "state": [],
+    "commands": [],
+    "chain": [],
+    "can": [],
+    "createChain": [
+      "startTr",
+      "param"
+    ],
+    "createCan": [
+      "startTr"
+    ],
+    "buildProps": [
+      "tr",
+      "param"
+    ]
+  },
+  "ResizableNodeView": {
+    "node": [],
+    "editor": [],
+    "element": [],
+    "contentElement": [],
+    "container": [],
+    "wrapper": [],
+    "getPos": [],
+    "onResize": [],
+    "onCommit": [],
+    "onUpdate": [],
+    "directions": [],
+    "minSize": [],
+    "maxSize": [],
+    "preserveAspectRatio": [],
+    "classNames": [],
+    "createCustomHandle": [],
+    "initialWidth": [],
+    "initialHeight": [],
+    "aspectRatio": [],
+    "isResizing": [],
+    "activeHandle": [],
+    "startX": [],
+    "startY": [],
+    "startWidth": [],
+    "startHeight": [],
+    "isShiftKeyPressed": [],
+    "lastEditableState": [],
+    "handleMap": [],
+    "constructor": [
+      "options"
+    ],
+    "dom": [],
+    "contentDOM": [],
+    "handleEditorUpdate": [],
+    "update": [
+      "node",
+      "decorations",
+      "innerDecorations"
+    ],
+    "destroy": [],
+    "createContainer": [],
+    "createWrapper": [],
+    "createHandle": [
+      "direction"
+    ],
+    "positionHandle": [
+      "handle",
+      "direction"
+    ],
+    "attachHandles": [],
+    "removeHandles": [],
+    "applyInitialSize": [],
+    "handleResizeStart": [
+      "event",
+      "direction"
+    ],
+    "handleMouseMove": [],
+    "handleTouchMove": [],
+    "handleResize": [
+      "deltaX",
+      "deltaY"
+    ],
+    "handleMouseUp": [],
+    "handleKeyDown": [],
+    "handleKeyUp": [],
+    "calculateNewDimensions": [
+      "direction",
+      "deltaX",
+      "deltaY"
+    ],
+    "applyConstraints": [
+      "width",
+      "height",
+      "preserveAspectRatio"
+    ],
+    "applyAspectRatio": [
+      "width",
+      "height",
+      "direction"
+    ]
+  },
+  "MarkView": {
+    "component": [],
+    "editor": [],
+    "options": [],
+    "mark": [],
+    "HTMLAttributes": [],
+    "constructor": [
+      "component",
+      "props",
+      "options"
+    ],
+    "dom": [],
+    "contentDOM": [],
+    "updateAttributes": [
+      "attrs",
+      "checkMark"
+    ],
+    "ignoreMutation": [
+      "mutation"
+    ]
+  },
+  "NodeView": {
+    "component": [],
+    "editor": [],
+    "options": [],
+    "extension": [],
+    "node": [],
+    "decorations": [],
+    "innerDecorations": [],
+    "view": [],
+    "getPos": [],
+    "HTMLAttributes": [],
+    "isDragging": [],
+    "constructor": [
+      "component",
+      "props",
+      "options"
+    ],
+    "mount": [],
+    "dom": [],
+    "contentDOM": [],
+    "onDragStart": [
+      "event"
+    ],
+    "stopEvent": [
+      "event"
+    ],
+    "ignoreMutation": [
+      "mutation"
+    ],
+    "updateAttributes": [
+      "attributes"
+    ],
+    "deleteNode": []
+  },
+  "Tracker": {
+    "transaction": [],
+    "currentStep": [],
+    "constructor": [
+      "transaction"
+    ],
+    "map": [
+      "position"
+    ]
+  },
+  "__export": [
+    "target",
+    "all"
+  ],
+  "createChainableState": [
+    "config"
+  ],
+  "method": [
+    "param"
+  ],
+  "run3": [],
+  "chainedCommand": [
+    "param"
+  ],
+  "blur": [],
+  "clearContent": [
+    "param"
+  ],
+  "clearNodes": [],
+  "command": [
+    "fn"
+  ],
+  "createParagraphNear": [],
+  "cut": [
+    "originRange",
+    "targetPos"
+  ],
+  "deleteCurrentNode": [],
+  "getNodeType": [
+    "nameOrType",
+    "schema"
+  ],
+  "deleteNode": [
+    "typeOrName"
+  ],
+  "deleteRange": [
+    "range"
+  ],
+  "deleteSelection": [],
+  "enter": [],
+  "exitCode": [],
+  "isRegExp": [
+    "value"
+  ],
+  "objectIncludes": [
+    "object1",
+    "object2",
+    "param"
+  ],
+  "findMarkInSet": [
+    "marks",
+    "type",
+    "param"
+  ],
+  "isMarkInSet": [
+    "marks",
+    "type",
+    "param"
+  ],
+  "getMarkRange": [
+    "$pos",
+    "type",
+    "attributes"
+  ],
+  "getMarkType": [
+    "nameOrType",
+    "schema"
+  ],
+  "extendMarkRange": [
+    "typeOrName",
+    "param"
+  ],
+  "first": [
+    "commands"
+  ],
+  "isTextSelection": [
+    "value"
+  ],
+  "minMax": [
+    "param",
+    "param",
+    "param"
+  ],
+  "resolveFocusPosition": [
+    "doc",
+    "param"
+  ],
+  "isAndroid": [],
+  "isiOS": [],
+  "isSafari": [],
+  "focus": [
+    "param",
+    "param"
+  ],
+  "delayedFocus": [],
+  "forEach": [
+    "items",
+    "fn"
+  ],
+  "insertContent": [
+    "value",
+    "options"
+  ],
+  "removeWhitespaces": [
+    "node"
+  ],
+  "elementFromString": [
+    "value"
+  ],
+  "createNodeFromContent": [
+    "content",
+    "schema",
+    "options"
+  ],
+  "selectionToInsertionEnd": [
+    "tr",
+    "startLen",
+    "bias"
+  ],
+  "isFragment": [
+    "nodeOrFragment"
+  ],
+  "insertContentAt": [
+    "position",
+    "value",
+    "options"
+  ],
+  "emitContentError": [
+    "error"
+  ],
+  "joinUp": [],
+  "joinDown": [],
+  "joinBackward": [],
+  "joinForward": [],
+  "joinItemBackward": [],
+  "joinItemForward": [],
+  "joinTextblockBackward": [],
+  "joinTextblockForward": [],
+  "isMacOS": [],
+  "normalizeKeyName": [
+    "name"
+  ],
+  "keyboardShortcut": [
+    "name"
+  ],
+  "isNodeActive": [
+    "state",
+    "typeOrName",
+    "param"
+  ],
+  "lift": [
+    "typeOrName",
+    "param"
+  ],
+  "liftEmptyBlock": [],
+  "liftListItem": [
+    "typeOrName"
+  ],
+  "newlineInCode": [],
+  "getSchemaTypeNameByName": [
+    "name",
+    "schema"
+  ],
+  "deleteProps": [
+    "obj",
+    "propOrProps"
+  ],
+  "resetAttributes": [
+    "typeOrName",
+    "attributes"
+  ],
+  "scrollIntoView": [],
+  "selectAll": [],
+  "selectNodeBackward": [],
+  "selectNodeForward": [],
+  "selectParentNode": [],
+  "selectTextblockEnd": [],
+  "selectTextblockStart": [],
+  "createDocument": [
+    "content",
+    "schema",
+    "param",
+    "param"
+  ],
+  "setContent": [
+    "content",
+    "param"
+  ],
+  "getMarkAttributes": [
+    "state",
+    "typeOrName"
+  ],
+  "combineTransactionSteps": [
+    "oldDoc",
+    "transactions"
+  ],
+  "defaultBlockAt": [
+    "match"
+  ],
+  "findChildren": [
+    "node",
+    "predicate"
+  ],
+  "findChildrenInRange": [
+    "node",
+    "range",
+    "predicate"
+  ],
+  "findParentNodeClosestToPos": [
+    "$pos",
+    "predicate"
+  ],
+  "findParentNode": [
+    "predicate"
+  ],
+  "getExtensionField": [
+    "extension",
+    "field",
+    "context"
+  ],
+  "flattenExtensions": [
+    "extensions"
+  ],
+  "getHTMLFromFragment": [
+    "fragment",
+    "schema"
+  ],
+  "isFunction": [
+    "value"
+  ],
+  "callOrReturn": [
+    "value",
+    "param",
+    "param"
+  ],
+  "isEmptyObject": [
+    "param"
+  ],
+  "splitExtensions": [
+    "extensions"
+  ],
+  "getAttributesFromExtensions": [
+    "extensions"
+  ],
+  "mergeAttributes": [
+    "param"
+  ],
+  "getRenderedAttributes": [
+    "nodeOrMark",
+    "extensionAttributes"
+  ],
+  "fromString": [
+    "value"
+  ],
+  "injectExtensionAttributesToParseRule": [
+    "parseRule",
+    "extensionAttributes"
+  ],
+  "cleanUpSchemaItem": [
+    "data"
+  ],
+  "buildAttributeSpec": [
+    "extensionAttribute"
+  ],
+  "getSchemaByResolvedExtensions": [
+    "extensions",
+    "editor"
+  ],
+  "findDuplicates": [
+    "items"
+  ],
+  "sortExtensions": [
+    "extensions"
+  ],
+  "resolveExtensions": [
+    "extensions"
+  ],
+  "getSchema": [
+    "extensions",
+    "editor"
+  ],
+  "generateHTML": [
+    "doc",
+    "extensions"
+  ],
+  "generateJSON": [
+    "html",
+    "extensions"
+  ],
+  "getTextBetween": [
+    "startNode",
+    "range",
+    "options"
+  ],
+  "getText": [
+    "node",
+    "options"
+  ],
+  "getTextSerializersFromSchema": [
+    "schema"
+  ],
+  "generateText": [
+    "doc",
+    "extensions",
+    "options"
+  ],
+  "getNodeAttributes": [
+    "state",
+    "typeOrName"
+  ],
+  "getAttributes": [
+    "state",
+    "typeOrName"
+  ],
+  "removeDuplicates": [
+    "array",
+    "param"
+  ],
+  "simplifyChangedRanges": [
+    "changes"
+  ],
+  "getChangedRanges": [
+    "transform"
+  ],
+  "getDebugJSON": [
+    "node",
+    "param"
+  ],
+  "getMarksBetween": [
+    "from",
+    "to",
+    "doc"
+  ],
+  "getNodeAtPosition": [
+    "state",
+    "typeOrName",
+    "pos",
+    "param"
+  ],
+  "getSchemaTypeByName": [
+    "name",
+    "schema"
+  ],
+  "getSplittedAttributes": [
+    "extensionAttributes",
+    "typeName",
+    "attributes"
+  ],
+  "getTextContentFromNodes": [
+    "$from",
+    "param"
+  ],
+  "isMarkActive": [
+    "state",
+    "typeOrName",
+    "param"
+  ],
+  "isActive": [
+    "state",
+    "name",
+    "param"
+  ],
+  "isAtEndOfNode": [
+    "state",
+    "nodeType"
+  ],
+  "isAtStartOfNode": [
+    "state"
+  ],
+  "isExtensionRulesEnabled": [
+    "extension",
+    "enabled"
+  ],
+  "isList": [
+    "name",
+    "extensions"
+  ],
+  "isNodeEmpty": [
+    "node",
+    "param"
+  ],
+  "isNodeSelection": [
+    "value"
+  ],
+  "getUpdatedPosition": [
+    "position",
+    "transaction"
+  ],
+  "createMappablePosition": [
+    "position"
+  ],
+  "posToDOMRect": [
+    "view",
+    "from",
+    "to"
+  ],
+  "rewriteUnknownContentInner": [
+    "param"
+  ],
+  "rewriteUnknownContent": [
+    "json",
+    "schema",
+    "options"
+  ],
+  "canSetMark": [
+    "state",
+    "tr",
+    "newMarkType"
+  ],
+  "setMark": [
+    "typeOrName",
+    "param"
+  ],
+  "setMeta": [
+    "key",
+    "value"
+  ],
+  "setNode": [
+    "typeOrName",
+    "param"
+  ],
+  "setNodeSelection": [
+    "position"
+  ],
+  "setTextDirection": [
+    "direction",
+    "position"
+  ],
+  "setTextSelection": [
+    "position"
+  ],
+  "sinkListItem": [
+    "typeOrName"
+  ],
+  "ensureMarks": [
+    "state",
+    "splittableMarks"
+  ],
+  "splitBlock": [
+    "param"
+  ],
+  "splitListItem": [
+    "typeOrName",
+    "param"
+  ],
+  "joinListBackwards": [
+    "tr",
+    "listType"
+  ],
+  "joinListForwards": [
+    "tr",
+    "listType"
+  ],
+  "toggleList": [
+    "listTypeOrName",
+    "itemTypeOrName",
+    "keepMarks",
+    "param"
+  ],
+  "toggleMark": [
+    "typeOrName",
+    "param",
+    "param"
+  ],
+  "toggleNode": [
+    "typeOrName",
+    "toggleTypeOrName",
+    "param"
+  ],
+  "toggleWrap": [
+    "typeOrName",
+    "param"
+  ],
+  "undoInputRule": [],
+  "unsetAllMarks": [],
+  "unsetMark": [
+    "typeOrName",
+    "param"
+  ],
+  "unsetTextDirection": [
+    "position"
+  ],
+  "updateAttributes": [
+    "typeOrName",
+    "param"
+  ],
+  "wrapIn": [
+    "typeOrName",
+    "param"
+  ],
+  "wrapInList": [
+    "typeOrName",
+    "param"
+  ],
+  "onceFn": [
+    "param"
+  ],
+  "inputRuleMatcherHandler": [
+    "text",
+    "find"
+  ],
+  "run": [
+    "config"
+  ],
+  "inputRulesPlugin": [
+    "props"
+  ],
+  "getType": [
+    "value"
+  ],
+  "isPlainObject": [
+    "value"
+  ],
+  "mergeDeep": [
+    "target",
+    "source"
+  ],
+  "isNumber": [
+    "value"
+  ],
+  "pasteRuleMatcherHandler": [
+    "text",
+    "find",
+    "event"
+  ],
+  "run2": [
+    "config"
+  ],
+  "createClipboardPasteEvent": [
+    "text"
+  ],
+  "pasteRulesPlugin": [
+    "props"
+  ],
+  "processEvent": [
+    "param"
+  ],
+  "handleDragstart": [
+    "event"
+  ],
+  "handleDragend": [],
+  "nodeview": [
+    "node",
+    "view",
+    "getPos",
+    "decorations",
+    "innerDecorations"
+  ],
+  "markView": [
+    "mark",
+    "view",
+    "inline"
+  ],
+  "callback": [],
+  "handleBackspace": [],
+  "handleDelete": [],
+  "handleEnter": [],
+  "createStyleTag": [
+    "style2",
+    "nonce",
+    "suffix"
+  ],
+  "markInputRule": [
+    "config"
+  ],
+  "nodeInputRule": [
+    "config"
+  ],
+  "textblockTypeInputRule": [
+    "config"
+  ],
+  "textInputRule": [
+    "config"
+  ],
+  "wrappingInputRule": [
+    "config"
+  ],
+  "Fragment6": [
+    "props"
+  ],
+  "h": [
+    "tag",
+    "attributes"
+  ],
+  "isTouchEvent": [
+    "e"
+  ],
+  "canInsertNode": [
+    "state",
+    "nodeType"
+  ],
+  "escapeForRegEx": [
+    "string"
+  ],
+  "isFirefox": [],
+  "isString": [
+    "value"
+  ],
+  "parseAttributes": [
+    "attrString"
+  ],
+  "serializeAttributes": [
+    "attributes"
+  ],
+  "createAtomBlockMarkdownSpec": [
+    "options"
+  ],
+  "filterAttributes": [
+    "attrs"
+  ],
+  "createBlockMarkdownSpec": [
+    "options"
+  ],
+  "parseShortcodeAttributes": [
+    "attrString"
+  ],
+  "serializeShortcodeAttributes": [
+    "attrs"
+  ],
+  "createInlineMarkdownSpec": [
+    "options"
+  ],
+  "parseIndentedBlocks": [
+    "src",
+    "config",
+    "lexer"
+  ],
+  "renderNestedMarkdownContent": [
+    "node",
+    "h",
+    "prefixOrGenerator",
+    "ctx"
+  ],
+  "updateMarkViewAttributes": [
+    "checkMark",
+    "editor",
+    "param"
+  ],
+  "markPasteRule": [
+    "config"
+  ],
+  "nodePasteRule": [
+    "config"
+  ],
+  "textPasteRule": [
+    "config"
+  ],
+  "Fragment": [
+    "props"
+  ]
+}

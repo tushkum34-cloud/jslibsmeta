@@ -1,0 +1,351 @@
+{
+  "ConnectionNotFoundError": {
+    "constructor": [
+      "cause"
+    ]
+  },
+  "DatabaseNotConnectedError": {
+    "constructor": []
+  },
+  "TIMEOUT_EXCEEDED": [
+    "timeout"
+  ],
+  "STORAGE_EXCEEDED": [
+    "keyword"
+  ],
+  "UNHEALTHY_RESPONSE_CODE": [
+    "responseCode"
+  ],
+  "MongoConnectionError": {},
+  "StorageExceededError": {
+    "constructor": [
+      "keyword",
+      "cause"
+    ]
+  },
+  "TimeoutError": {},
+  "UnhealthyResponseCodeError": {
+    "constructor": [
+      "responseCode",
+      "cause"
+    ]
+  },
+  "GracefulShutdownService": {
+    "logger": [],
+    "options": [],
+    "constructor": [
+      "logger",
+      "options"
+    ],
+    "isEnabled": [],
+    "beforeApplicationShutdown": [
+      "signal"
+    ]
+  },
+  "adopt": [
+    "value"
+  ],
+  "fulfilled": [
+    "value"
+  ],
+  "rejected": [
+    "value"
+  ],
+  "step": [
+    "result"
+  ],
+  "getErrorLoggerProvider": [
+    "errorLogStyle"
+  ],
+  "JsonErrorLogger": {
+    "getErrorMessage": [
+      "message",
+      "causes"
+    ]
+  },
+  "PrettyErrorLogger": {
+    "printIndent": [],
+    "printIndicatorSummary": [],
+    "printSummary": [],
+    "getErrorMessage": [
+      "message",
+      "causes"
+    ]
+  },
+  "HealthCheckExecutor": {
+    "isShuttingDown": [],
+    "execute": [
+      "healthIndicators"
+    ],
+    "beforeApplicationShutdown": [],
+    "executeHealthIndicators": [],
+    "getSummary": [],
+    "getResult": []
+  },
+  "HealthCheck": [
+    "param"
+  ],
+  "getSwaggerDefinitions": [
+    "swagger"
+  ],
+  "HealthCheckError": {
+    "constructor": [
+      "message",
+      "causes"
+    ]
+  },
+  "healthIndicatorSchema": [
+    "example"
+  ],
+  "getHealthCheckSchema": [
+    "status"
+  ],
+  "HealthCheckService": {
+    "healthCheckExecutor": [],
+    "errorLogger": [],
+    "logger": [],
+    "constructor": [
+      "healthCheckExecutor",
+      "errorLogger",
+      "logger"
+    ],
+    "check": [
+      "healthIndicators"
+    ]
+  },
+  "getLoggerProvider": [
+    "logger"
+  ],
+  "MikroOrmHealthIndicator": {
+    "moduleRef": [],
+    "healthIndicatorService": [],
+    "constructor": [
+      "moduleRef",
+      "healthIndicatorService"
+    ],
+    "checkDependantPackages": [],
+    "getContextConnection": [],
+    "pingDb": [],
+    "pingCheck": [
+      "key",
+      "options"
+    ]
+  },
+  "checker": [],
+  "MongooseHealthIndicator": {
+    "moduleRef": [],
+    "healthIndicatorService": [],
+    "constructor": [
+      "moduleRef",
+      "healthIndicatorService"
+    ],
+    "checkDependantPackages": [],
+    "getContextConnection": [],
+    "pingDb": [],
+    "pingCheck": [
+      "key",
+      "options"
+    ]
+  },
+  "PrismaHealthIndicator": {
+    "healthIndicatorService": [],
+    "constructor": [
+      "healthIndicatorService"
+    ],
+    "pingDb": [],
+    "pingCheck": [
+      "key",
+      "prismaClient",
+      "options"
+    ]
+  },
+  "SequelizeHealthIndicator": {
+    "moduleRef": [],
+    "healthIndicatorService": [],
+    "constructor": [
+      "moduleRef",
+      "healthIndicatorService"
+    ],
+    "checkDependantPackages": [],
+    "getContextConnection": [],
+    "pingDb": [],
+    "pingCheck": [
+      "key",
+      "options"
+    ]
+  },
+  "TypeOrmHealthIndicator": {
+    "moduleRef": [],
+    "healthIndicatorService": [],
+    "constructor": [
+      "moduleRef",
+      "healthIndicatorService"
+    ],
+    "checkDependantPackages": [],
+    "getContextConnection": [],
+    "pingDb": [],
+    "pingCheck": [
+      "key",
+      "options"
+    ]
+  },
+  "DiskHealthIndicator": {
+    "checkDiskSpace": [],
+    "healthIndicatorService": [],
+    "constructor": [
+      "checkDiskSpace",
+      "healthIndicatorService"
+    ],
+    "isOptionThresholdPercent": [],
+    "checkStorage": [
+      "key",
+      "options"
+    ]
+  },
+  "HealthIndicator": {
+    "getStatus": [
+      "key",
+      "isHealthy",
+      "data"
+    ]
+  },
+  "HealthIndicatorService": {
+    "check": [
+      "key"
+    ]
+  },
+  "HealthIndicatorSession": {
+    "constructor": [
+      "key"
+    ],
+    "down": [
+      "data"
+    ],
+    "up": [
+      "data"
+    ]
+  },
+  "HttpHealthIndicator": {
+    "moduleRef": [],
+    "logger": [],
+    "healthIndicatorService": [],
+    "nestJsAxios": [],
+    "constructor": [
+      "moduleRef",
+      "logger",
+      "healthIndicatorService"
+    ],
+    "checkDependantPackages": [],
+    "getHttpService": [],
+    "generateHttpError": [],
+    "pingCheck": [
+      "key",
+      "url",
+      "param"
+    ],
+    "responseCheck": [
+      "key",
+      "url",
+      "callback",
+      "param"
+    ]
+  },
+  "MemoryHealthIndicator": {
+    "healthIndicatorService": [],
+    "constructor": [
+      "healthIndicatorService"
+    ],
+    "checkHeap": [
+      "key",
+      "heapUsedThreshold"
+    ],
+    "checkRSS": [
+      "key",
+      "rssThreshold"
+    ]
+  },
+  "GRPCHealthIndicator": {
+    "healthIndicatorService": [],
+    "nestJsMicroservices": [],
+    "constructor": [
+      "healthIndicatorService"
+    ],
+    "openChannels": [],
+    "checkDependantPackages": [],
+    "createClient": [],
+    "getHealthService": [
+      "service",
+      "settings"
+    ],
+    "checkService": [
+      "key",
+      "service",
+      "options"
+    ]
+  },
+  "MicroserviceHealthIndicator": {
+    "healthIndicatorService": [],
+    "nestJsMicroservices": [],
+    "constructor": [
+      "healthIndicatorService"
+    ],
+    "checkDependantPackages": [],
+    "pingMicroservice": [],
+    "pingCheck": [
+      "key",
+      "options"
+    ]
+  },
+  "checkConnection": [],
+  "TerminusModule": {
+    "forRoot": [
+      "options"
+    ],
+    "forRootAsync": [
+      "options"
+    ],
+    "createAsyncProviders": []
+  },
+  "createOptionsProvider": [
+    "param"
+  ],
+  "createAsyncOptionsProvider": [
+    "options"
+  ],
+  "createTerminusProviders": [
+    "options"
+  ],
+  "createLoggerProvider": [
+    "options"
+  ],
+  "MISSING_REQUIRED_DEPENDENCY": [
+    "names",
+    "reason"
+  ],
+  "optional": [
+    "module"
+  ],
+  "checkPackages": [
+    "packageNames",
+    "reason"
+  ],
+  "isHealthCheckError": [
+    "err"
+  ],
+  "isAxiosError": [
+    "err"
+  ],
+  "isError": [
+    "err"
+  ],
+  "promiseTimeout": [
+    "ms",
+    "promise"
+  ],
+  "sleep": [
+    "ms"
+  ],
+  "__export": [
+    "m"
+  ]
+}
