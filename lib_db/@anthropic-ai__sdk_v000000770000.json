@@ -1,0 +1,1076 @@
+{
+  "tokenize": [
+    "input"
+  ],
+  "strip": [
+    "tokens"
+  ],
+  "unstrip": [
+    "tokens"
+  ],
+  "generate": [
+    "tokens"
+  ],
+  "partialParse": [
+    "input"
+  ],
+  "BaseAnthropic": {
+    "apiKey": [],
+    "authToken": [],
+    "baseURL": [],
+    "maxRetries": [],
+    "timeout": [],
+    "logger": [],
+    "logLevel": [],
+    "fetchOptions": [],
+    "fetch": [],
+    "idempotencyHeader": [],
+    "_options": [],
+    "constructor": [
+      "param"
+    ],
+    "withOptions": [
+      "options"
+    ],
+    "defaultQuery": [],
+    "validateHeaders": [
+      "param"
+    ],
+    "authHeaders": [
+      "opts"
+    ],
+    "apiKeyAuth": [
+      "opts"
+    ],
+    "bearerAuth": [
+      "opts"
+    ],
+    "stringifyQuery": [
+      "query"
+    ],
+    "getUserAgent": [],
+    "defaultIdempotencyKey": [],
+    "makeStatusError": [
+      "status",
+      "error",
+      "message",
+      "headers"
+    ],
+    "buildURL": [
+      "path",
+      "query",
+      "defaultBaseURL"
+    ],
+    "_calculateNonstreamingTimeout": [
+      "maxTokens"
+    ],
+    "prepareOptions": [
+      "options"
+    ],
+    "prepareRequest": [
+      "request",
+      "param"
+    ],
+    "get": [
+      "path",
+      "opts"
+    ],
+    "post": [
+      "path",
+      "opts"
+    ],
+    "patch": [
+      "path",
+      "opts"
+    ],
+    "put": [
+      "path",
+      "opts"
+    ],
+    "delete": [
+      "path",
+      "opts"
+    ],
+    "methodRequest": [
+      "method",
+      "path",
+      "opts"
+    ],
+    "request": [
+      "options",
+      "param"
+    ],
+    "makeRequest": [
+      "optionsInput",
+      "retriesRemaining",
+      "retryOfRequestLogID"
+    ],
+    "getAPIList": [
+      "path",
+      "Page",
+      "opts"
+    ],
+    "requestAPIList": [
+      "Page",
+      "options"
+    ],
+    "fetchWithTimeout": [
+      "url",
+      "init",
+      "ms",
+      "controller"
+    ],
+    "shouldRetry": [
+      "response"
+    ],
+    "retryRequest": [
+      "options",
+      "retriesRemaining",
+      "requestLogID",
+      "responseHeaders"
+    ],
+    "calculateDefaultRetryTimeoutMillis": [
+      "retriesRemaining",
+      "maxRetries"
+    ],
+    "calculateNonstreamingTimeout": [
+      "maxTokens",
+      "maxNonstreamingTokens"
+    ],
+    "buildRequest": [
+      "inputOptions",
+      "param"
+    ],
+    "buildHeaders": [
+      "param"
+    ],
+    "_makeAbort": [
+      "controller"
+    ],
+    "buildBody": [
+      "param"
+    ],
+    "Anthropic": [],
+    "HUMAN_PROMPT": [],
+    "AI_PROMPT": [],
+    "DEFAULT_TIMEOUT": [],
+    "AnthropicError": [],
+    "APIError": [],
+    "APIConnectionError": [],
+    "APIConnectionTimeoutError": [],
+    "APIUserAbortError": [],
+    "NotFoundError": [],
+    "ConflictError": [],
+    "RateLimitError": [],
+    "BadRequestError": [],
+    "AuthenticationError": [],
+    "InternalServerError": [],
+    "PermissionDeniedError": [],
+    "UnprocessableEntityError": [],
+    "toFile": []
+  },
+  "Anthropic": {
+    "completions": [],
+    "messages": [],
+    "models": [],
+    "beta": []
+  },
+  "APIPromise": {
+    "parsedPromise": [],
+    "constructor": [
+      "client",
+      "param",
+      "param"
+    ],
+    "_thenUnwrap": [
+      "transform"
+    ],
+    "asResponse": [],
+    "withResponse": [],
+    "parse": [],
+    "then": [
+      "onfulfilled",
+      "onrejected"
+    ],
+    "catch": [
+      "onrejected"
+    ],
+    "finally": [
+      "onfinally"
+    ]
+  },
+  "AnthropicError": {},
+  "APIError": {
+    "status": [],
+    "headers": [],
+    "error": [],
+    "requestID": [],
+    "constructor": [
+      "status",
+      "error",
+      "message",
+      "headers"
+    ],
+    "makeMessage": [
+      "status",
+      "error",
+      "message"
+    ],
+    "generate": [
+      "status",
+      "errorResponse",
+      "message",
+      "headers"
+    ]
+  },
+  "APIUserAbortError": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "APIConnectionError": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "APIConnectionTimeoutError": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "BadRequestError": {},
+  "AuthenticationError": {},
+  "PermissionDeniedError": {},
+  "NotFoundError": {},
+  "ConflictError": {},
+  "UnprocessableEntityError": {},
+  "RateLimitError": {},
+  "InternalServerError": {},
+  "AbstractPage": {
+    "options": [],
+    "response": [],
+    "body": [],
+    "constructor": [
+      "client",
+      "response",
+      "body",
+      "options"
+    ],
+    "nextPageRequestOptions": [],
+    "getPaginatedItems": [],
+    "hasNextPage": [],
+    "getNextPage": [],
+    "iterPages": []
+  },
+  "PagePromise": {
+    "constructor": [
+      "client",
+      "request",
+      "Page"
+    ]
+  },
+  "Page": {
+    "data": [],
+    "has_more": [],
+    "first_id": [],
+    "last_id": [],
+    "constructor": [
+      "client",
+      "response",
+      "body",
+      "options"
+    ],
+    "getPaginatedItems": [],
+    "hasNextPage": [],
+    "nextPageRequestOptions": []
+  },
+  "TokenPage": {
+    "data": [],
+    "has_more": [],
+    "next_page": [],
+    "constructor": [
+      "client",
+      "response",
+      "body",
+      "options"
+    ],
+    "getPaginatedItems": [],
+    "hasNextPage": [],
+    "nextPageRequestOptions": []
+  },
+  "PageCursor": {
+    "data": [],
+    "has_more": [],
+    "next_page": [],
+    "constructor": [
+      "client",
+      "response",
+      "body",
+      "options"
+    ],
+    "getPaginatedItems": [],
+    "hasNextPage": [],
+    "nextPageRequestOptions": []
+  },
+  "APIResource": {
+    "_client": [],
+    "constructor": [
+      "client"
+    ]
+  },
+  "Stream": {
+    "controller": [],
+    "constructor": [
+      "param",
+      "controller",
+      "client"
+    ],
+    "fromSSEResponse": [
+      "response",
+      "controller",
+      "client"
+    ],
+    "fromReadableStream": [
+      "readableStream",
+      "controller",
+      "client"
+    ],
+    "tee": [],
+    "toReadableStream": []
+  },
+  "iterator": [],
+  "iterLines": [],
+  "teeIterator": [
+    "queue"
+  ],
+  "_iterSSEMessages": [
+    "response",
+    "controller"
+  ],
+  "iterSSEChunks": [
+    "iterator"
+  ],
+  "SSEDecoder": {
+    "data": [],
+    "event": [],
+    "chunks": [],
+    "constructor": [],
+    "decode": [
+      "line"
+    ]
+  },
+  "partition": [
+    "str",
+    "delimiter"
+  ],
+  "betaTool": [
+    "options"
+  ],
+  "betaJSONSchemaOutputFormat": [
+    "jsonSchema",
+    "options"
+  ],
+  "UnsupportedMCPValueError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "isSupportedImageType": [
+    "mimeType"
+  ],
+  "isSupportedResourceMimeType": [
+    "mimeType"
+  ],
+  "mcpTool": [
+    "tool",
+    "mcpClient",
+    "extraProps"
+  ],
+  "mcpTools": [
+    "tools",
+    "mcpClient",
+    "extraProps"
+  ],
+  "mcpMessage": [
+    "mcpMessage",
+    "extraProps"
+  ],
+  "mcpMessages": [
+    "messages",
+    "extraProps"
+  ],
+  "mcpContent": [
+    "content",
+    "extraProps"
+  ],
+  "mcpResourceContentToContentBlock": [
+    "resourceContent",
+    "extraProps",
+    "param"
+  ],
+  "mcpResourceToContent": [
+    "result",
+    "extraProps"
+  ],
+  "bytesFromResource": [
+    "resource"
+  ],
+  "textSourceFromResource": [
+    "resource"
+  ],
+  "mcpResourceToFile": [
+    "result"
+  ],
+  "betaMemoryTool": [
+    "handlers"
+  ],
+  "betaZodOutputFormat": [
+    "zodObject"
+  ],
+  "betaZodTool": [
+    "options"
+  ],
+  "jsonSchemaOutputFormat": [
+    "jsonSchema",
+    "options"
+  ],
+  "zodOutputFormat": [
+    "zodObject"
+  ],
+  "JSONLDecoder": {
+    "controller": [],
+    "constructor": [
+      "param",
+      "controller"
+    ],
+    "decoder": [],
+    "fromResponse": [
+      "response",
+      "controller"
+    ]
+  },
+  "LineDecoder": {
+    "NEWLINE_CHARS": [],
+    "NEWLINE_REGEXP": [],
+    "constructor": [],
+    "decode": [
+      "chunk"
+    ],
+    "flush": []
+  },
+  "findNewlineIndex": [
+    "buffer",
+    "startIndex"
+  ],
+  "findDoubleNewlineIndex": [
+    "buffer"
+  ],
+  "isRunningInBrowser": [],
+  "getDetectedPlatform": [],
+  "getPlatformProperties": [],
+  "getBrowserInfo": [],
+  "normalizeArch": [
+    "arch"
+  ],
+  "normalizePlatform": [
+    "platform"
+  ],
+  "getPlatformHeaders": [],
+  "isAbortError": [
+    "err"
+  ],
+  "castToError": [
+    "err"
+  ],
+  "iterateHeaders": [
+    "headers"
+  ],
+  "buildHeaders": [
+    "newHeaders"
+  ],
+  "isEmptyHeaders": [
+    "headers"
+  ],
+  "defaultParseResponse": [
+    "client",
+    "props"
+  ],
+  "addRequestID": [
+    "value",
+    "response"
+  ],
+  "FallbackEncoder": [
+    "param"
+  ],
+  "getDefaultFetch": [],
+  "makeReadableStream": [
+    "param"
+  ],
+  "ReadableStreamFrom": [
+    "iterable"
+  ],
+  "ReadableStreamToAsyncIterable": [
+    "stream"
+  ],
+  "CancelReadableStream": [
+    "stream"
+  ],
+  "isBlobLike": [
+    "value"
+  ],
+  "isFileLike": [
+    "value"
+  ],
+  "isResponseLike": [
+    "value"
+  ],
+  "toFile": [
+    "value",
+    "name",
+    "options"
+  ],
+  "getBytes": [
+    "value"
+  ],
+  "propsForError": [
+    "value"
+  ],
+  "__classPrivateFieldSet": [
+    "receiver",
+    "state",
+    "value",
+    "kind",
+    "f"
+  ],
+  "__classPrivateFieldGet": [
+    "receiver",
+    "state",
+    "kind",
+    "f"
+  ],
+  "__exportStar": [
+    "m",
+    "o"
+  ],
+  "ownKeys": [
+    "o"
+  ],
+  "__importStar": [
+    "mod"
+  ],
+  "checkFileSupport": [],
+  "makeFile": [
+    "fileBits",
+    "fileName",
+    "options"
+  ],
+  "getName": [
+    "value",
+    "stripPath"
+  ],
+  "isAsyncIterable": [
+    "value"
+  ],
+  "maybeMultipartFormRequestOptions": [
+    "opts",
+    "fetch"
+  ],
+  "multipartFormRequestOptions": [
+    "opts",
+    "fetch",
+    "param"
+  ],
+  "supportsFormData": [
+    "fetchObject"
+  ],
+  "createForm": [
+    "body",
+    "fetch",
+    "param"
+  ],
+  "isNamedBlob": [
+    "value"
+  ],
+  "isUploadable": [
+    "value"
+  ],
+  "hasUploadableValue": [
+    "value"
+  ],
+  "addFormValue": [
+    "form",
+    "key",
+    "value",
+    "stripFilenames"
+  ],
+  "toBase64": [
+    "data"
+  ],
+  "fromBase64": [
+    "str"
+  ],
+  "concatBytes": [
+    "buffers"
+  ],
+  "encodeUTF8": [
+    "str"
+  ],
+  "decodeUTF8": [
+    "bytes"
+  ],
+  "readEnv": [
+    "env"
+  ],
+  "parseLogLevel": [
+    "maybeLevel",
+    "sourceName",
+    "client"
+  ],
+  "noop": [],
+  "makeLogFn": [
+    "fnLevel",
+    "logger",
+    "logLevel"
+  ],
+  "loggerFor": [
+    "client"
+  ],
+  "formatRequestDetails": [
+    "details"
+  ],
+  "encodeURIPath": [
+    "str"
+  ],
+  "createPathTagFunction": [
+    "param"
+  ],
+  "sleep": [
+    "ms"
+  ],
+  "uuid4": [],
+  "isAbsoluteURL": [
+    "url"
+  ],
+  "isArray": [
+    "val"
+  ],
+  "maybeObj": [
+    "x"
+  ],
+  "isEmptyObj": [
+    "obj"
+  ],
+  "hasOwn": [
+    "obj",
+    "key"
+  ],
+  "isObj": [
+    "obj"
+  ],
+  "ensurePresent": [
+    "value"
+  ],
+  "validatePositiveInteger": [
+    "name",
+    "n"
+  ],
+  "coerceInteger": [
+    "value"
+  ],
+  "coerceFloat": [
+    "value"
+  ],
+  "coerceBoolean": [
+    "value"
+  ],
+  "maybeCoerceInteger": [
+    "value"
+  ],
+  "maybeCoerceFloat": [
+    "value"
+  ],
+  "maybeCoerceBoolean": [
+    "value"
+  ],
+  "safeJSON": [
+    "text"
+  ],
+  "pop": [
+    "obj",
+    "key"
+  ],
+  "BetaMessageStream": {
+    "messages": [],
+    "receivedMessages": [],
+    "controller": [],
+    "constructor": [
+      "params",
+      "opts"
+    ],
+    "response": [],
+    "request_id": [],
+    "withResponse": [],
+    "fromReadableStream": [
+      "stream"
+    ],
+    "createMessage": [
+      "messages",
+      "params",
+      "options",
+      "param"
+    ],
+    "_run": [
+      "executor"
+    ],
+    "_addMessageParam": [
+      "message"
+    ],
+    "_addMessage": [
+      "message",
+      "param"
+    ],
+    "_createMessage": [
+      "messages",
+      "params",
+      "options"
+    ],
+    "_connected": [
+      "response"
+    ],
+    "ended": [],
+    "errored": [],
+    "aborted": [],
+    "abort": [],
+    "on": [
+      "event",
+      "listener"
+    ],
+    "off": [
+      "event",
+      "listener"
+    ],
+    "once": [
+      "event",
+      "listener"
+    ],
+    "emitted": [
+      "event"
+    ],
+    "done": [],
+    "currentMessage": [],
+    "finalMessage": [],
+    "finalText": [],
+    "_emit": [
+      "event",
+      "param"
+    ],
+    "_emitFinal": [],
+    "_fromReadableStream": [
+      "readableStream",
+      "options"
+    ],
+    "toReadableStream": []
+  },
+  "tracksToolInput": [
+    "content"
+  ],
+  "checkNever": [
+    "x"
+  ],
+  "MessageStream": {
+    "messages": [],
+    "receivedMessages": [],
+    "controller": [],
+    "constructor": [
+      "params",
+      "opts"
+    ],
+    "response": [],
+    "request_id": [],
+    "withResponse": [],
+    "fromReadableStream": [
+      "stream"
+    ],
+    "createMessage": [
+      "messages",
+      "params",
+      "options",
+      "param"
+    ],
+    "_run": [
+      "executor"
+    ],
+    "_addMessageParam": [
+      "message"
+    ],
+    "_addMessage": [
+      "message",
+      "param"
+    ],
+    "_createMessage": [
+      "messages",
+      "params",
+      "options"
+    ],
+    "_connected": [
+      "response"
+    ],
+    "ended": [],
+    "errored": [],
+    "aborted": [],
+    "abort": [],
+    "on": [
+      "event",
+      "listener"
+    ],
+    "off": [
+      "event",
+      "listener"
+    ],
+    "once": [
+      "event",
+      "listener"
+    ],
+    "emitted": [
+      "event"
+    ],
+    "done": [],
+    "currentMessage": [],
+    "finalMessage": [],
+    "finalText": [],
+    "_emit": [
+      "event",
+      "param"
+    ],
+    "_emitFinal": [],
+    "_fromReadableStream": [
+      "readableStream",
+      "options"
+    ],
+    "toReadableStream": []
+  },
+  "getOutputFormat": [
+    "params"
+  ],
+  "maybeParseBetaMessage": [
+    "message",
+    "params",
+    "opts"
+  ],
+  "parseBetaMessage": [
+    "message",
+    "params",
+    "opts"
+  ],
+  "parseBetaOutputFormat": [
+    "params",
+    "content"
+  ],
+  "maybeParseMessage": [
+    "message",
+    "params",
+    "opts"
+  ],
+  "parseMessage": [
+    "message",
+    "params",
+    "opts"
+  ],
+  "parseOutputFormat": [
+    "params",
+    "content"
+  ],
+  "wasCreatedByStainlessHelper": [
+    "value"
+  ],
+  "collectStainlessHelpers": [
+    "tools",
+    "messages"
+  ],
+  "stainlessHelperHeader": [
+    "tools",
+    "messages"
+  ],
+  "stainlessHelperHeaderFromFile": [
+    "file"
+  ],
+  "BetaToolRunner": {
+    "constructor": [
+      "param",
+      "params"
+    ],
+    "setMessagesParams": [
+      "paramsOrMutator"
+    ],
+    "generateToolResponse": [],
+    "done": [],
+    "runUntilDone": [],
+    "params": [],
+    "pushMessages": [
+      "param"
+    ],
+    "then": [
+      "onfulfilled",
+      "onrejected"
+    ]
+  },
+  "promiseWithResolvers": [],
+  "generateToolResponse": [
+    "params",
+    "param"
+  ],
+  "ToolError": {
+    "content": [],
+    "constructor": [
+      "content"
+    ]
+  },
+  "deepClone": [
+    "obj"
+  ],
+  "transformJSONSchema": [
+    "jsonSchema"
+  ],
+  "_transformJSONSchema": [
+    "jsonSchema"
+  ],
+  "Beta": {
+    "models": [],
+    "messages": [],
+    "files": [],
+    "skills": []
+  },
+  "Files": {
+    "list": [
+      "param",
+      "options"
+    ],
+    "delete": [
+      "fileID",
+      "param",
+      "options"
+    ],
+    "download": [
+      "fileID",
+      "param",
+      "options"
+    ],
+    "retrieveMetadata": [
+      "fileID",
+      "param",
+      "options"
+    ],
+    "upload": [
+      "params",
+      "options"
+    ]
+  },
+  "Batches": {
+    "create": [
+      "body",
+      "options"
+    ],
+    "retrieve": [
+      "messageBatchID",
+      "options"
+    ],
+    "list": [
+      "param",
+      "options"
+    ],
+    "delete": [
+      "messageBatchID",
+      "options"
+    ],
+    "cancel": [
+      "messageBatchID",
+      "options"
+    ],
+    "results": [
+      "messageBatchID",
+      "options"
+    ]
+  },
+  "Messages": {
+    "batches": [],
+    "create": [
+      "body",
+      "options"
+    ],
+    "parse": [
+      "params",
+      "options"
+    ],
+    "stream": [
+      "body",
+      "options"
+    ],
+    "countTokens": [
+      "body",
+      "options"
+    ]
+  },
+  "transformOutputFormat": [
+    "params"
+  ],
+  "Models": {
+    "retrieve": [
+      "modelID",
+      "param",
+      "options"
+    ],
+    "list": [
+      "param",
+      "options"
+    ]
+  },
+  "Skills": {
+    "versions": [],
+    "create": [
+      "param",
+      "options"
+    ],
+    "retrieve": [
+      "skillID",
+      "param",
+      "options"
+    ],
+    "list": [
+      "param",
+      "options"
+    ],
+    "delete": [
+      "skillID",
+      "param",
+      "options"
+    ]
+  },
+  "Versions": {
+    "create": [
+      "skillID",
+      "param",
+      "options"
+    ],
+    "retrieve": [
+      "version",
+      "params",
+      "options"
+    ],
+    "list": [
+      "skillID",
+      "param",
+      "options"
+    ],
+    "delete": [
+      "version",
+      "params",
+      "options"
+    ]
+  },
+  "Completions": {
+    "create": [
+      "params",
+      "options"
+    ]
+  }
+}
