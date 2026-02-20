@@ -1,0 +1,2534 @@
+{
+  "ApolloCache": {
+    "assumeImmutableResults": [],
+    "lookupFragment": [
+      "fragmentName"
+    ],
+    "batch": [
+      "options"
+    ],
+    "recordOptimisticTransaction": [
+      "transaction",
+      "optimisticId"
+    ],
+    "transformDocument": [
+      "document"
+    ],
+    "transformForLink": [
+      "document"
+    ],
+    "identify": [
+      "object"
+    ],
+    "gc": [],
+    "modify": [
+      "options"
+    ],
+    "readQuery": [
+      "options",
+      "param"
+    ],
+    "fragmentWatches": [],
+    "watchFragment": [
+      "options"
+    ],
+    "onAfterBroadcast": [],
+    "watchSingleFragment": [
+      "id",
+      "fragmentQuery",
+      "options"
+    ],
+    "getFragmentDoc": [],
+    "readFragment": [
+      "options",
+      "param"
+    ],
+    "writeQuery": [
+      "param"
+    ],
+    "writeFragment": [
+      "param"
+    ],
+    "updateQuery": [
+      "options",
+      "update"
+    ],
+    "updateFragment": [
+      "options",
+      "update"
+    ],
+    "toCacheId": [
+      "from"
+    ]
+  },
+  "toResult": [
+    "data"
+  ],
+  "getNewestResult": [
+    "diff"
+  ],
+  "MissingFieldError": {
+    "message": [],
+    "path": [],
+    "query": [],
+    "variables": [],
+    "constructor": [
+      "message",
+      "path",
+      "query",
+      "variables"
+    ],
+    "missing": []
+  },
+  "EntityStore": {
+    "policies": [],
+    "group": [],
+    "data": [],
+    "constructor": [
+      "policies",
+      "group"
+    ],
+    "toObject": [],
+    "has": [
+      "dataId"
+    ],
+    "get": [
+      "dataId",
+      "fieldName"
+    ],
+    "lookup": [
+      "dataId",
+      "dependOnExistence"
+    ],
+    "merge": [
+      "older",
+      "newer"
+    ],
+    "modify": [
+      "dataId",
+      "fields",
+      "exact"
+    ],
+    "delete": [
+      "dataId",
+      "fieldName",
+      "args"
+    ],
+    "evict": [
+      "options",
+      "limit"
+    ],
+    "clear": [],
+    "extract": [],
+    "replace": [
+      "newData"
+    ],
+    "rootIds": [],
+    "retain": [
+      "rootId"
+    ],
+    "release": [
+      "rootId"
+    ],
+    "getRootIdSet": [
+      "param"
+    ],
+    "gc": [],
+    "refs": [],
+    "findChildRefIds": [
+      "dataId"
+    ],
+    "makeCacheKey": [],
+    "getFieldValue": [],
+    "canRead": [],
+    "toReference": [],
+    "supportsResultCaching": []
+  },
+  "CacheGroup": {
+    "caching": [],
+    "parent": [],
+    "d": [],
+    "keyMaker": [],
+    "constructor": [
+      "caching",
+      "param"
+    ],
+    "resetCaching": [],
+    "depend": [
+      "dataId",
+      "storeFieldName"
+    ],
+    "dirty": [
+      "dataId",
+      "storeFieldName"
+    ]
+  },
+  "Root": {
+    "constructor": [
+      "param"
+    ],
+    "stump": [],
+    "addLayer": [
+      "layerId",
+      "replay"
+    ],
+    "removeLayer": [],
+    "storageTrie": [],
+    "getStorage": []
+  },
+  "Layer": {
+    "id": [],
+    "parent": [],
+    "replay": [],
+    "group": [],
+    "constructor": [
+      "id",
+      "parent",
+      "replay",
+      "group"
+    ],
+    "addLayer": [
+      "layerId",
+      "replay"
+    ],
+    "removeLayer": [
+      "layerId"
+    ],
+    "toObject": [],
+    "findChildRefIds": [
+      "dataId"
+    ],
+    "getStorage": [
+      "param"
+    ]
+  },
+  "Stump": {
+    "constructor": [
+      "root"
+    ],
+    "removeLayer": [],
+    "merge": [
+      "older",
+      "newer"
+    ]
+  },
+  "delModifier": [],
+  "checkReference": [
+    "ref"
+  ],
+  "makeDepKey": [
+    "dataId",
+    "storeFieldName"
+  ],
+  "maybeDependOnExistenceOfEntity": [
+    "store",
+    "entityId"
+  ],
+  "storeObjectReconciler": [
+    "existingObject",
+    "incomingObject",
+    "property"
+  ],
+  "supportsResultCaching": [
+    "store"
+  ],
+  "createFragmentRegistry": [
+    "param"
+  ],
+  "FragmentRegistry": {
+    "registry": [],
+    "constructor": [
+      "param"
+    ],
+    "register": [
+      "param"
+    ],
+    "invalidate": [
+      "name"
+    ],
+    "resetCaches": [],
+    "lookup": [
+      "fragmentName"
+    ],
+    "transform": [
+      "document"
+    ],
+    "findFragmentSpreads": [
+      "root"
+    ]
+  },
+  "enqueue": [
+    "spreadName"
+  ],
+  "enqueueChildSpreads": [
+    "node"
+  ],
+  "defaultDataIdFromObject": [
+    "param",
+    "context"
+  ],
+  "normalizeConfig": [
+    "config"
+  ],
+  "getTypenameFromStoreObject": [
+    "store",
+    "objectOrReference"
+  ],
+  "fieldNameFromStoreName": [
+    "storeFieldName"
+  ],
+  "selectionSetMatchesResult": [
+    "selectionSet",
+    "result",
+    "variables"
+  ],
+  "storeValueIsStoreObject": [
+    "value"
+  ],
+  "makeProcessedFieldsMerger": [],
+  "extractFragmentContext": [
+    "document",
+    "fragments"
+  ],
+  "InMemoryCache": {
+    "data": [],
+    "optimisticData": [],
+    "config": [],
+    "watches": [],
+    "storeReader": [],
+    "storeWriter": [],
+    "addTypenameTransform": [],
+    "maybeBroadcastWatch": [],
+    "assumeImmutableResults": [],
+    "policies": [],
+    "makeVar": [],
+    "constructor": [
+      "param"
+    ],
+    "init": [],
+    "resetResultCache": [],
+    "restore": [
+      "data"
+    ],
+    "extract": [
+      "param"
+    ],
+    "read": [
+      "options"
+    ],
+    "write": [
+      "options"
+    ],
+    "modify": [
+      "options"
+    ],
+    "diff": [
+      "options"
+    ],
+    "watch": [
+      "watch"
+    ],
+    "gc": [
+      "options"
+    ],
+    "retain": [
+      "rootId",
+      "optimistic"
+    ],
+    "release": [
+      "rootId",
+      "optimistic"
+    ],
+    "identify": [
+      "object"
+    ],
+    "evict": [
+      "options"
+    ],
+    "reset": [
+      "options"
+    ],
+    "removeOptimistic": [
+      "idToRemove"
+    ],
+    "txCount": [],
+    "batch": [
+      "options"
+    ],
+    "performTransaction": [
+      "update",
+      "optimisticId"
+    ],
+    "transformDocument": [
+      "document"
+    ],
+    "fragmentMatches": [
+      "fragment",
+      "typename"
+    ],
+    "lookupFragment": [
+      "fragmentName"
+    ],
+    "resolvesClientField": [
+      "typename",
+      "fieldName"
+    ],
+    "broadcastWatches": [
+      "options"
+    ],
+    "addFragmentsToDocument": [
+      "document"
+    ],
+    "broadcastWatch": [
+      "c",
+      "options"
+    ]
+  },
+  "perform": [
+    "layer"
+  ],
+  "lookupSpecifierInfo": [
+    "spec"
+  ],
+  "keyFieldsFnFromSpecifier": [
+    "specifier"
+  ],
+  "extract": [
+    "from",
+    "key"
+  ],
+  "keyArgsFnFromSpecifier": [
+    "specifier"
+  ],
+  "collectSpecifierPaths": [
+    "specifier",
+    "extractor"
+  ],
+  "getSpecifierPaths": [
+    "spec"
+  ],
+  "extractKey": [
+    "object",
+    "key"
+  ],
+  "extractKeyPath": [
+    "object",
+    "path",
+    "extract"
+  ],
+  "normalize": [
+    "value"
+  ],
+  "Policies": {
+    "config": [],
+    "typePolicies": [],
+    "toBeAdded": [],
+    "supertypeMap": [],
+    "fuzzySubtypes": [],
+    "cache": [],
+    "rootIdsByTypename": [],
+    "rootTypenamesById": [],
+    "usingPossibleTypes": [],
+    "constructor": [
+      "config"
+    ],
+    "identify": [
+      "object",
+      "partialContext"
+    ],
+    "addTypePolicies": [
+      "typePolicies"
+    ],
+    "updateTypePolicy": [
+      "typename",
+      "incoming",
+      "existingFieldPolicies"
+    ],
+    "setRootTypename": [
+      "which",
+      "param"
+    ],
+    "addPossibleTypes": [
+      "possibleTypes"
+    ],
+    "getTypePolicy": [
+      "typename"
+    ],
+    "getFieldPolicy": [
+      "typename",
+      "fieldName"
+    ],
+    "getSupertypeSet": [
+      "subtype",
+      "createIfMissing"
+    ],
+    "fragmentMatches": [
+      "fragment",
+      "typename",
+      "result",
+      "variables"
+    ],
+    "hasKeyArgs": [
+      "typename",
+      "fieldName"
+    ],
+    "getStoreFieldName": [
+      "fieldSpec"
+    ],
+    "readField": [
+      "options",
+      "context"
+    ],
+    "getReadFunction": [
+      "typename",
+      "fieldName"
+    ],
+    "getMergeFunction": [
+      "parentTypename",
+      "fieldName",
+      "childTypename"
+    ],
+    "runMergeFunction": [
+      "existing",
+      "incoming",
+      "param",
+      "context",
+      "storage"
+    ]
+  },
+  "argsFromFieldSpecifier": [
+    "spec"
+  ],
+  "nullKeyFieldsFn": [],
+  "simpleKeyArgsFn": [
+    "_args",
+    "context"
+  ],
+  "mergeTrueFn": [
+    "existing",
+    "incoming",
+    "param"
+  ],
+  "mergeFalseFn": [
+    "_",
+    "incoming"
+  ],
+  "defaultStreamFieldMergeFn": [
+    "existing",
+    "incoming",
+    "param"
+  ],
+  "setMerge": [
+    "existing",
+    "merge"
+  ],
+  "maybeEnqueue": [
+    "subtype"
+  ],
+  "makeFieldFunctionOptions": [
+    "policies",
+    "objectOrReference",
+    "fieldSpec",
+    "context",
+    "storage"
+  ],
+  "makeMergeFieldFunctionOptions": [
+    "policies",
+    "objectOrReference",
+    "fieldSpec",
+    "context",
+    "storage",
+    "existingData"
+  ],
+  "normalizeReadFieldOptions": [
+    "readFieldArgs",
+    "objectOrReference",
+    "variables"
+  ],
+  "makeMergeObjectsFunction": [
+    "store"
+  ],
+  "getCacheInfo": [
+    "cache"
+  ],
+  "forgetCache": [
+    "cache"
+  ],
+  "recallCache": [
+    "cache"
+  ],
+  "makeVar": [
+    "value"
+  ],
+  "rv": [
+    "newValue"
+  ],
+  "broadcast": [
+    "cache"
+  ],
+  "StoreReader": {
+    "executeSelectionSet": [],
+    "executeSubSelectedArray": [],
+    "config": [],
+    "knownResults": [],
+    "constructor": [
+      "config"
+    ],
+    "diffQueryAgainstStore": [
+      "param"
+    ],
+    "isFresh": [
+      "result",
+      "parent",
+      "selectionSet",
+      "context"
+    ],
+    "execSelectionSetImpl": [
+      "param"
+    ],
+    "execSubSelectedArrayImpl": [
+      "param"
+    ]
+  },
+  "execSelectionSetKeyArgs": [
+    "options"
+  ],
+  "handleMissing": [
+    "childResult",
+    "i"
+  ],
+  "firstMissing": [
+    "tree"
+  ],
+  "assertSelectionSetForIdValue": [
+    "store",
+    "field",
+    "fieldValue"
+  ],
+  "StoreWriter": {
+    "cache": [],
+    "reader": [],
+    "fragments": [],
+    "constructor": [
+      "cache",
+      "reader",
+      "fragments"
+    ],
+    "writeToStore": [
+      "store",
+      "param"
+    ],
+    "processSelectionSet": [
+      "param"
+    ],
+    "processFieldValue": [
+      "value",
+      "field",
+      "context",
+      "mergeTree",
+      "path"
+    ],
+    "flattenFields": [
+      "selectionSet",
+      "result",
+      "context",
+      "param"
+    ],
+    "applyMerges": [
+      "mergeTree",
+      "existing",
+      "incoming",
+      "context",
+      "getStorageArgs"
+    ]
+  },
+  "getContextFlavor": [
+    "context",
+    "clientOnly",
+    "deferred"
+  ],
+  "hasSelectionSet": [
+    "storeFieldName"
+  ],
+  "hasMergeFunction": [
+    "storeFieldName"
+  ],
+  "readField": [],
+  "getValue": [],
+  "getChildMergeTree": [
+    "param",
+    "name"
+  ],
+  "mergeMergeTrees": [
+    "left",
+    "right"
+  ],
+  "mergeTreeIsEmpty": [
+    "tree"
+  ],
+  "maybeRecycleChildMergeTree": [
+    "param",
+    "name"
+  ],
+  "warnAboutDataLoss": [
+    "existingRef",
+    "incomingObj",
+    "storeFieldName",
+    "store"
+  ],
+  "getChild": [
+    "objOrRef"
+  ],
+  "getTypenameFromResult": [
+    "result",
+    "selectionSet",
+    "fragmentMap"
+  ],
+  "ApolloClient": {
+    "link": [],
+    "cache": [],
+    "disableNetworkFetches": [],
+    "prioritizeCacheValues": [],
+    "version": [],
+    "queryDeduplication": [],
+    "defaultOptions": [],
+    "devtoolsConfig": [],
+    "queryManager": [],
+    "devToolsHookCb": [],
+    "resetStoreCallbacks": [],
+    "clearStoreCallbacks": [],
+    "constructor": [
+      "options"
+    ],
+    "connectToDevTools": [],
+    "documentTransform": [],
+    "localState": [
+      "localState"
+    ],
+    "stop": [],
+    "watchQuery": [
+      "options"
+    ],
+    "query": [
+      "options"
+    ],
+    "mutate": [
+      "options"
+    ],
+    "subscribe": [
+      "options"
+    ],
+    "readQuery": [
+      "options",
+      "param"
+    ],
+    "watchFragment": [
+      "options"
+    ],
+    "readFragment": [
+      "options",
+      "param"
+    ],
+    "writeQuery": [
+      "options"
+    ],
+    "writeFragment": [
+      "options"
+    ],
+    "__actionHookForDevTools": [
+      "cb"
+    ],
+    "__requestRaw": [
+      "request"
+    ],
+    "resetStore": [],
+    "clearStore": [],
+    "onResetStore": [
+      "cb"
+    ],
+    "onClearStore": [
+      "cb"
+    ],
+    "reFetchObservableQueries": [],
+    "refetchObservableQueries": [
+      "includeStandby"
+    ],
+    "refetchQueries": [
+      "options"
+    ],
+    "getObservableQueries": [
+      "param"
+    ],
+    "extract": [
+      "optimistic"
+    ],
+    "restore": [
+      "serializedState"
+    ],
+    "setLink": [
+      "newLink"
+    ],
+    "defaultContext": [],
+    "maskedFragmentTransform": [],
+    "transform": [
+      "document",
+      "param"
+    ]
+  },
+  "ObservableQuery": {
+    "options": [],
+    "queryName": [],
+    "variablesUnknown": [],
+    "_lastWrite": [],
+    "query": [],
+    "variables": [],
+    "unsubscribeFromCache": [],
+    "input": [],
+    "subject": [],
+    "isTornDown": [],
+    "queryManager": [],
+    "subscriptions": [],
+    "waitForNetworkResult": [],
+    "lastQuery": [],
+    "linkSubscription": [],
+    "pollingInfo": [],
+    "networkStatus": [],
+    "cache": [],
+    "constructor": [
+      "param"
+    ],
+    "initializeObservablesQueue": [],
+    "subscribe": [],
+    "pipe": [],
+    "getCacheDiff": [
+      "param"
+    ],
+    "getInitialResult": [
+      "initialFetchPolicy"
+    ],
+    "resubscribeCache": [],
+    "stableLastResult": [],
+    "getCurrentResult": [],
+    "refetch": [
+      "variables"
+    ],
+    "fetchMore": [
+      "param"
+    ],
+    "subscribeToMore": [
+      "options"
+    ],
+    "applyOptions": [
+      "newOptions"
+    ],
+    "setVariables": [
+      "variables"
+    ],
+    "updateQuery": [
+      "mapFn"
+    ],
+    "startPolling": [
+      "pollInterval"
+    ],
+    "stopPolling": [],
+    "applyNextFetchPolicy": [
+      "reason",
+      "options"
+    ],
+    "fetch": [
+      "options",
+      "networkStatus",
+      "fetchQuery",
+      "operator"
+    ],
+    "didWarnCacheOnlyPolling": [],
+    "updatePolling": [],
+    "cancelPolling": [],
+    "reobserve": [
+      "newOptions"
+    ],
+    "_reobserve": [
+      "newOptions",
+      "internalOptions"
+    ],
+    "hasObservers": [],
+    "stop": [],
+    "tearDownQuery": [],
+    "transformDocument": [
+      "document"
+    ],
+    "maskResult": [
+      "result"
+    ],
+    "dirty": [],
+    "notifyTimeout": [],
+    "resetNotifications": [],
+    "scheduleNotify": [],
+    "notify": [
+      "param"
+    ],
+    "activeOperations": [],
+    "pushOperation": [
+      "networkStatus"
+    ],
+    "calculateNetworkStatus": [
+      "baseNetworkStatus"
+    ],
+    "abortActiveOperations": [],
+    "reset": [],
+    "setResult": [
+      "result",
+      "additionalMeta"
+    ],
+    "operator": [],
+    "reobserveCacheFirst": [],
+    "getVariablesWithDefaults": [
+      "variables"
+    ]
+  },
+  "emit": [],
+  "cacheResult": [],
+  "onCacheHit": [],
+  "fetchQueryOperator": [
+    "source"
+  ],
+  "shouldCancelPolling": [],
+  "maybeFetch": [],
+  "poll": [],
+  "unsubscribe": [],
+  "finalize": [],
+  "logMissingFieldErrors": [
+    "missing"
+  ],
+  "isEqualQuery": [
+    "a",
+    "b"
+  ],
+  "getTrackingOperatorPromise": [
+    "defaultValue"
+  ],
+  "QueryInfo": {
+    "lastRequestId": [],
+    "cache": [],
+    "queryManager": [],
+    "id": [],
+    "observableQuery": [],
+    "incremental": [],
+    "constructor": [
+      "queryManager",
+      "observableQuery"
+    ],
+    "_lastWrite": [],
+    "lastWrite": [
+      "value"
+    ],
+    "resetLastWrite": [],
+    "shouldWrite": [
+      "result",
+      "variables"
+    ],
+    "hasNext": [],
+    "maybeHandleIncrementalResult": [
+      "cacheData",
+      "incoming",
+      "query"
+    ],
+    "markQueryResult": [
+      "incoming",
+      "param"
+    ],
+    "markMutationResult": [
+      "incoming",
+      "mutation",
+      "param"
+    ],
+    "markMutationOptimistic": [
+      "optimisticResponse",
+      "mutation"
+    ],
+    "markSubscriptionResult": [
+      "result",
+      "param"
+    ]
+  },
+  "wrapDestructiveCacheMethod": [
+    "cache",
+    "methodName"
+  ],
+  "getResultWithDataState": [],
+  "shouldWriteResult": [
+    "result",
+    "param"
+  ],
+  "QueryManager": {
+    "defaultOptions": [],
+    "client": [],
+    "clientOptions": [],
+    "assumeImmutableResults": [],
+    "documentTransform": [],
+    "ssrMode": [],
+    "defaultContext": [],
+    "dataMasking": [],
+    "incrementalHandler": [],
+    "localState": [],
+    "queryDeduplication": [],
+    "prioritizeCacheValues": [],
+    "onBroadcast": [],
+    "mutationStore": [],
+    "obsQueries": [],
+    "fetchCancelFns": [],
+    "constructor": [
+      "options"
+    ],
+    "link": [],
+    "cache": [],
+    "stop": [],
+    "cancelPendingFetches": [
+      "error"
+    ],
+    "mutate": [
+      "param"
+    ],
+    "fetchQuery": [
+      "options",
+      "networkStatus"
+    ],
+    "transform": [
+      "document"
+    ],
+    "transformCache": [],
+    "getDocumentInfo": [
+      "document"
+    ],
+    "getVariables": [
+      "document",
+      "variables"
+    ],
+    "watchQuery": [
+      "options"
+    ],
+    "query": [
+      "options"
+    ],
+    "requestIdCounter": [],
+    "generateRequestId": [],
+    "clearStore": [
+      "param"
+    ],
+    "getObservableQueries": [
+      "param"
+    ],
+    "refetchObservableQueries": [
+      "param"
+    ],
+    "startGraphQLSubscription": [
+      "options"
+    ],
+    "broadcastQueries": [],
+    "inFlightLinkObservables": [],
+    "getObservableFromLink": [
+      "query",
+      "context",
+      "variables",
+      "fetchPolicy",
+      "extensions",
+      "param"
+    ],
+    "getResultsFromLink": [
+      "options",
+      "param"
+    ],
+    "fetchObservableWithInfo": [
+      "options",
+      "param"
+    ],
+    "refetchQueries": [
+      "param"
+    ],
+    "noCacheWarningsByCause": [],
+    "maskOperation": [
+      "options"
+    ],
+    "maskFragment": [
+      "options"
+    ],
+    "fetchQueryByPolicy": [
+      "param",
+      "param"
+    ]
+  },
+  "withRestart": [
+    "source"
+  ],
+  "subscribe": [],
+  "fromVariables": [
+    "variables"
+  ],
+  "cleanupCancelFn": [],
+  "readCache": [],
+  "resultsFromCache": [
+    "diff",
+    "networkStatus"
+  ],
+  "fromData": [
+    "data"
+  ],
+  "resultsFromLink": [],
+  "validateDidEmitValue": [],
+  "isFullyUnmaskedOperation": [
+    "document"
+  ],
+  "addNonReactiveToNamedFragments": [
+    "document"
+  ],
+  "removeStreamDetailsFromExtensions": [
+    "original"
+  ],
+  "loadDevMessages": [],
+  "loadErrorMessageHandler": [
+    "param"
+  ],
+  "handler": [
+    "message",
+    "args"
+  ],
+  "loadErrorMessages": [],
+  "setErrorMessageHandler": [
+    "handler"
+  ],
+  "CombinedGraphQLErrors": {
+    "is": [
+      "error"
+    ],
+    "formatMessage": [],
+    "errors": [],
+    "data": [],
+    "extensions": [],
+    "constructor": [
+      "result",
+      "param"
+    ]
+  },
+  "defaultFormatMessage": [
+    "errors"
+  ],
+  "CombinedProtocolErrors": {
+    "is": [
+      "error"
+    ],
+    "formatMessage": [],
+    "errors": [],
+    "constructor": [
+      "protocolErrors"
+    ]
+  },
+  "registerLinkError": [
+    "error"
+  ],
+  "LocalStateError": {
+    "is": [
+      "error"
+    ],
+    "path": [],
+    "constructor": [
+      "message",
+      "param"
+    ]
+  },
+  "ServerError": {
+    "is": [
+      "error"
+    ],
+    "response": [],
+    "statusCode": [],
+    "bodyText": [],
+    "constructor": [
+      "message",
+      "options"
+    ]
+  },
+  "ServerParseError": {
+    "is": [
+      "error"
+    ],
+    "response": [],
+    "statusCode": [],
+    "bodyText": [],
+    "constructor": [
+      "originalParseError",
+      "options"
+    ]
+  },
+  "UnconventionalError": {
+    "is": [
+      "error"
+    ],
+    "constructor": [
+      "errorType"
+    ]
+  },
+  "graphQLResultHasProtocolErrors": [
+    "result"
+  ],
+  "toErrorLike": [
+    "error"
+  ],
+  "isErrorLike": [
+    "error"
+  ],
+  "isBranded": [
+    "error",
+    "name"
+  ],
+  "brand": [
+    "error"
+  ],
+  "DeferRequest": {
+    "hasNext": [],
+    "errors": [],
+    "extensions": [],
+    "data": [],
+    "ignoredImpossibleStreamPaths": [],
+    "merge": [
+      "normalized",
+      "atPath"
+    ],
+    "handle": [
+      "param",
+      "chunk"
+    ]
+  },
+  "Defer20220824Handler": {
+    "isIncrementalResult": [
+      "result"
+    ],
+    "extractErrors": [
+      "result"
+    ],
+    "prepareRequest": [
+      "request"
+    ],
+    "startRequest": [
+      "_"
+    ]
+  },
+  "push": [
+    "param"
+  ],
+  "hasIncrementalChunks": [
+    "result"
+  ],
+  "IncrementalRequest": {
+    "hasNext": [],
+    "data": [],
+    "errors": [],
+    "extensions": [],
+    "pending": [],
+    "streamInfo": [],
+    "streamPositions": [],
+    "handle": [
+      "param",
+      "chunk"
+    ],
+    "merge": [
+      "normalized",
+      "atPath"
+    ]
+  },
+  "GraphQL17Alpha9Handler": {
+    "isIncrementalResult": [
+      "result"
+    ],
+    "prepareRequest": [
+      "request"
+    ],
+    "extractErrors": [
+      "result"
+    ],
+    "startRequest": [
+      "_"
+    ]
+  },
+  "hasCompletedChunks": [
+    "result"
+  ],
+  "NotImplementedHandler": {
+    "isIncrementalResult": [
+      "_"
+    ],
+    "prepareRequest": [
+      "request"
+    ],
+    "extractErrors": [],
+    "startRequest": []
+  },
+  "BatchLink": {
+    "batcher": [],
+    "constructor": [
+      "options"
+    ],
+    "request": [
+      "operation",
+      "forward"
+    ]
+  },
+  "OperationBatcher": {
+    "batchesByKey": [],
+    "scheduledBatchTimerByKey": [],
+    "batchDebounce": [],
+    "batchInterval": [],
+    "batchMax": [],
+    "batchHandler": [],
+    "batchKey": [],
+    "constructor": [
+      "param"
+    ],
+    "enqueueRequest": [
+      "request"
+    ],
+    "consumeQueue": [
+      "param"
+    ],
+    "scheduleQueueConsumption": [
+      "key"
+    ]
+  },
+  "onError": [
+    "errorHandler"
+  ],
+  "BaseBatchHttpLink": {
+    "batchDebounce": [],
+    "batchInterval": [],
+    "batchMax": [],
+    "batcher": [],
+    "constructor": [
+      "param"
+    ],
+    "request": [
+      "operation",
+      "forward"
+    ]
+  },
+  "batchHandler": [
+    "operations"
+  ],
+  "BatchHttpLink": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "ClientAwarenessLink": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "SetContextLink": {
+    "constructor": [
+      "setter"
+    ]
+  },
+  "setContext": [
+    "next"
+  ],
+  "ApolloLink": {
+    "empty": [],
+    "from": [
+      "links"
+    ],
+    "split": [
+      "test",
+      "left",
+      "right"
+    ],
+    "execute": [
+      "link",
+      "request",
+      "context"
+    ],
+    "concat": [
+      "param"
+    ],
+    "constructor": [
+      "request"
+    ],
+    "combine": [
+      "left",
+      "right"
+    ],
+    "request": [
+      "operation",
+      "forward"
+    ],
+    "left": [],
+    "right": []
+  },
+  "ErrorLink": {
+    "constructor": [
+      "errorHandler"
+    ]
+  },
+  "BaseHttpLink": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "noop": [],
+  "cleanupController": [],
+  "listener": [],
+  "HttpLink": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "createHttpLink": [
+    "param"
+  ],
+  "checkFetcher": [
+    "fetcher"
+  ],
+  "createSignalIfSupported": [],
+  "isApolloPayloadResult": [
+    "value"
+  ],
+  "consumeMultipartBody": [
+    "response"
+  ],
+  "passedFinalBoundary": [],
+  "readMultipartBody": [
+    "response",
+    "nextValue"
+  ],
+  "parseHeaders": [
+    "headerText"
+  ],
+  "parseJsonEncoding": [
+    "response",
+    "bodyText"
+  ],
+  "parseGraphQLResponseJsonEncoding": [
+    "response",
+    "bodyText"
+  ],
+  "parseResponse": [
+    "response",
+    "bodyText"
+  ],
+  "parseAndCheckHttpResponse": [
+    "operations"
+  ],
+  "rewriteURIForGET": [
+    "chosenURI",
+    "body"
+  ],
+  "addQueryParam": [
+    "key",
+    "value"
+  ],
+  "defaultPrinter": [
+    "ast",
+    "printer"
+  ],
+  "selectHttpOptionsAndBody": [
+    "operation",
+    "fallbackConfig",
+    "param"
+  ],
+  "selectHttpOptionsAndBodyInternal": [
+    "operation",
+    "printer",
+    "param"
+  ],
+  "removeDuplicateHeaders": [
+    "headers",
+    "preserveHeaderCase"
+  ],
+  "selectURI": [
+    "operation",
+    "fallbackURI"
+  ],
+  "PersistedQueryLink": {
+    "constructor": [
+      "options"
+    ],
+    "resetHashCache": []
+  },
+  "processErrors": [
+    "graphQLErrors"
+  ],
+  "operationDefinesMutation": [
+    "operation"
+  ],
+  "createPersistedQueryLink": [
+    "options"
+  ],
+  "resetHashCache": [],
+  "getHashPromise": [
+    "query"
+  ],
+  "getQueryHash": [
+    "query"
+  ],
+  "handleRetry": [
+    "options",
+    "cb"
+  ],
+  "callback": [],
+  "RemoveTypenameFromVariablesLink": {
+    "constructor": [
+      "param"
+    ],
+    "maybeStripTypenameUsingConfig": [
+      "query",
+      "variables",
+      "config"
+    ],
+    "maybeStripTypename": [
+      "value",
+      "config"
+    ],
+    "getVariableDefinitions": []
+  },
+  "removeTypenameFromVariables": [
+    "options"
+  ],
+  "unwrapType": [
+    "node"
+  ],
+  "buildDelayFunction": [
+    "delayOptions"
+  ],
+  "buildRetryFunction": [
+    "retryOptions"
+  ],
+  "RetryLink": {
+    "delayFor": [],
+    "retryIf": [],
+    "constructor": [
+      "options"
+    ],
+    "request": [
+      "operation",
+      "forward"
+    ]
+  },
+  "RetryableOperation": {
+    "observer": [],
+    "operation": [],
+    "forward": [],
+    "delayFor": [],
+    "retryIf": [],
+    "retryCount": [],
+    "currentSubscription": [],
+    "timerId": [],
+    "constructor": [
+      "observer",
+      "operation",
+      "forward",
+      "delayFor",
+      "retryIf"
+    ],
+    "cancel": [],
+    "try": [],
+    "onError": [],
+    "scheduleRetry": [
+      "delay"
+    ]
+  },
+  "SchemaLink": {
+    "schema": [],
+    "rootValue": [],
+    "context": [],
+    "validate": [],
+    "constructor": [
+      "options"
+    ],
+    "request": [
+      "operation"
+    ]
+  },
+  "GraphQLWsLink": {
+    "client": [],
+    "constructor": [
+      "client"
+    ],
+    "request": [
+      "operation"
+    ]
+  },
+  "isLikeCloseEvent": [
+    "val"
+  ],
+  "isLikeErrorEvent": [
+    "err"
+  ],
+  "createOperation": [
+    "request",
+    "param"
+  ],
+  "getContext": [],
+  "filterOperationVariables": [
+    "variables",
+    "query"
+  ],
+  "WebSocketLink": {
+    "subscriptionClient": [],
+    "constructor": [
+      "paramsOrClient"
+    ],
+    "request": [
+      "operation"
+    ]
+  },
+  "LocalState": {
+    "context": [],
+    "resolvers": [],
+    "traverseCache": [],
+    "constructor": [
+      "param"
+    ],
+    "addResolvers": [
+      "resolvers"
+    ],
+    "execute": [
+      "param"
+    ],
+    "getExportedVariables": [
+      "param"
+    ],
+    "resolveSelectionSet": [
+      "selectionSet",
+      "isClientFieldDescendant",
+      "rootValue",
+      "execContext",
+      "path"
+    ],
+    "resolveServerField": [
+      "field",
+      "rootValue",
+      "execContext",
+      "path"
+    ],
+    "resolveClientField": [
+      "field",
+      "isClientFieldDescendant",
+      "rootValue",
+      "execContext",
+      "parentSelectionSet",
+      "path"
+    ],
+    "addError": [
+      "error",
+      "path",
+      "execContext",
+      "meta"
+    ],
+    "getResolver": [
+      "typename",
+      "fieldName"
+    ],
+    "resolveSubSelectedArray": [
+      "field",
+      "isClientFieldDescendant",
+      "result",
+      "execContext",
+      "path"
+    ],
+    "collectQueryDetail": [
+      "document"
+    ]
+  },
+  "execute": [
+    "selection"
+  ],
+  "isSingleASTNode": [
+    "node"
+  ],
+  "getCurrentPath": [],
+  "traverse": [
+    "definitionNode"
+  ],
+  "inferRootTypename": [
+    "param"
+  ],
+  "isGraphQLError": [
+    "error"
+  ],
+  "addExtension": [
+    "error",
+    "meta"
+  ],
+  "getExportedVariableName": [
+    "directive"
+  ],
+  "validateCacheImplementation": [
+    "cache"
+  ],
+  "getCacheResultAtPath": [
+    "diff",
+    "path"
+  ],
+  "isForcedResolver": [
+    "field"
+  ],
+  "toQueryOperation": [
+    "document"
+  ],
+  "maskDefinition": [
+    "data",
+    "selectionSet",
+    "context"
+  ],
+  "getMutableTarget": [
+    "data",
+    "mutableTargets"
+  ],
+  "maskSelectionSet": [
+    "data",
+    "selectionSet",
+    "context",
+    "migration",
+    "path"
+  ],
+  "getAccessorWarningDescriptor": [
+    "fieldName",
+    "value",
+    "path",
+    "operationName",
+    "operationType"
+  ],
+  "maskFragment": [
+    "data",
+    "document",
+    "cache",
+    "fragmentName"
+  ],
+  "maskOperation": [
+    "data",
+    "document",
+    "cache"
+  ],
+  "getFragmentMaskMode": [
+    "fragment"
+  ],
+  "getApolloContext": [],
+  "ApolloProvider": [
+    "param"
+  ],
+  "useDeepMemo": [
+    "memoFn",
+    "deps"
+  ],
+  "useRenderGuard": [],
+  "useSuspenseHookCacheKey": [
+    "query",
+    "options"
+  ],
+  "validateSuspenseHookOptions": [
+    "options"
+  ],
+  "validateFetchPolicy": [
+    "param"
+  ],
+  "validatePartialDataReturn": [
+    "fetchPolicy",
+    "returnPartialData"
+  ],
+  "wrapHook": [
+    "hookName",
+    "useHook",
+    "clientOrObsQuery"
+  ],
+  "useApolloClient": [
+    "override"
+  ],
+  "useBackgroundQuery": [
+    "query",
+    "options"
+  ],
+  "useBackgroundQuery_": [
+    "query",
+    "options"
+  ],
+  "useFragment": [
+    "options"
+  ],
+  "useFragment_": [
+    "options"
+  ],
+  "useLazyQuery": [
+    "query",
+    "options"
+  ],
+  "createObservable": [],
+  "useLoadableQuery": [
+    "query",
+    "t0"
+  ],
+  "useWatchQueryOptions": [
+    "t0"
+  ],
+  "useMutation": [
+    "mutation",
+    "options"
+  ],
+  "createInitialResult": [
+    "client"
+  ],
+  "useQuery": [
+    "query",
+    "param"
+  ],
+  "useQuery_": [
+    "query",
+    "t0"
+  ],
+  "createState": [
+    "previous"
+  ],
+  "useOptions": [
+    "query",
+    "options",
+    "defaultOptions"
+  ],
+  "useInitialFetchPolicyIfNecessary": [
+    "watchQueryOptions",
+    "observable"
+  ],
+  "useResult": [
+    "observable",
+    "resultData",
+    "ssr"
+  ],
+  "useResubscribeIfNecessary": [
+    "resultData",
+    "observable",
+    "watchQueryOptions"
+  ],
+  "shouldReobserve": [
+    "previousOptions",
+    "options"
+  ],
+  "useQueryRefHandlers": [
+    "queryRef"
+  ],
+  "useQueryRefHandlers_": [
+    "queryRef"
+  ],
+  "useReactiveVar": [
+    "rv"
+  ],
+  "useReadQuery": [
+    "queryRef"
+  ],
+  "useReadQuery_": [
+    "queryRef"
+  ],
+  "useSubscription": [
+    "subscription",
+    "param"
+  ],
+  "recreate": [],
+  "createSubscription": [
+    "client",
+    "query",
+    "variables",
+    "fetchPolicy",
+    "errorPolicy",
+    "context",
+    "extensions"
+  ],
+  "useSuspenseFragment": [
+    "options"
+  ],
+  "useSuspenseFragment_": [
+    "options"
+  ],
+  "toStringId": [
+    "cache",
+    "from"
+  ],
+  "useSuspenseQuery": [
+    "query",
+    "options"
+  ],
+  "useSuspenseQuery_": [
+    "query",
+    "options"
+  ],
+  "checkIfSnapshotChanged": [
+    "param"
+  ],
+  "_temp": [],
+  "missingFeatureWarning": [
+    "feature",
+    "name"
+  ],
+  "FragmentReference": {
+    "observable": [],
+    "key": [],
+    "promise": [],
+    "resolve": [],
+    "reject": [],
+    "subscription": [],
+    "listeners": [],
+    "autoDisposeTimeoutId": [],
+    "references": [],
+    "constructor": [
+      "client",
+      "watchFragmentOptions",
+      "options"
+    ],
+    "listen": [
+      "listener"
+    ],
+    "retain": [],
+    "dispose": [],
+    "onDispose": [],
+    "subscribeToFragment": [],
+    "handleNext": [
+      "result"
+    ],
+    "handleError": [
+      "error"
+    ],
+    "deliver": [
+      "promise"
+    ],
+    "createPendingPromise": []
+  },
+  "startDisposeTimer": [],
+  "InternalQueryReference": {
+    "result": [],
+    "key": [],
+    "observable": [],
+    "promise": [],
+    "queue": [],
+    "subscription": [],
+    "listeners": [],
+    "autoDisposeTimeoutId": [],
+    "resolve": [],
+    "reject": [],
+    "references": [],
+    "softReferences": [],
+    "constructor": [
+      "observable",
+      "options"
+    ],
+    "disposed": [],
+    "watchQueryOptions": [],
+    "reinitialize": [],
+    "retain": [],
+    "softRetain": [],
+    "didChangeOptions": [
+      "watchQueryOptions"
+    ],
+    "applyOptions": [
+      "watchQueryOptions"
+    ],
+    "listen": [
+      "listener"
+    ],
+    "refetch": [
+      "variables"
+    ],
+    "fetchMore": [
+      "options"
+    ],
+    "dispose": [],
+    "onDispose": [],
+    "handleNext": [
+      "result"
+    ],
+    "deliver": [
+      "promise"
+    ],
+    "initiateFetch": [
+      "returnedPromise"
+    ],
+    "subscribeToQuery": [],
+    "setResult": [],
+    "shouldReject": [
+      "result"
+    ],
+    "createPendingPromise": []
+  },
+  "wrapQueryRef": [
+    "internalQueryRef"
+  ],
+  "assertWrappedQueryRef": [
+    "queryRef"
+  ],
+  "getWrappedPromise": [
+    "queryRef"
+  ],
+  "unwrapQueryRef": [
+    "queryRef"
+  ],
+  "updateWrappedQueryRef": [
+    "queryRef",
+    "promise"
+  ],
+  "SuspenseCache": {
+    "queryRefs": [],
+    "fragmentRefs": [],
+    "options": [],
+    "constructor": [
+      "param"
+    ],
+    "getQueryRef": [
+      "cacheKey",
+      "createObservable"
+    ],
+    "getFragmentRef": [
+      "cacheKey",
+      "client",
+      "options"
+    ],
+    "add": [
+      "cacheKey",
+      "queryRef"
+    ]
+  },
+  "getSuspenseCache": [
+    "client"
+  ],
+  "createQueryPreloader": [
+    "client"
+  ],
+  "_createQueryPreloader": [
+    "client"
+  ],
+  "preloadQuery": [
+    "query",
+    "param"
+  ],
+  "softRetainWhileReferenced": [
+    "wrapped",
+    "queryRef"
+  ],
+  "unregisterOnRetain": [
+    "originalRetain",
+    "softDispose"
+  ],
+  "getCleanup": [
+    "queryRef"
+  ],
+  "getDataFromTree": [
+    "tree",
+    "param"
+  ],
+  "getMarkupFromTree": [
+    "param"
+  ],
+  "getObservableQueryKey": [
+    "query",
+    "param"
+  ],
+  "prerenderStatic": [
+    "param"
+  ],
+  "process": [],
+  "consume": [
+    "value"
+  ],
+  "renderToStringWithData": [
+    "component"
+  ],
+  "useSSRQuery": [
+    "query",
+    "param"
+  ],
+  "notAllowed": [],
+  "withoutObservableAccess": [
+    "value"
+  ],
+  "MockLink": {
+    "operation": [],
+    "showWarnings": [],
+    "defaultDelay": [],
+    "mockedResponsesByKey": [],
+    "defaultOptions": [],
+    "constructor": [
+      "mockedResponses",
+      "param"
+    ],
+    "addMockedResponse": [
+      "mockedResponse"
+    ],
+    "request": [
+      "operation"
+    ],
+    "getMockedResponses": [
+      "request"
+    ],
+    "normalizeMockedResponse": [
+      "mockedResponse"
+    ]
+  },
+  "realisticDelay": [
+    "param"
+  ],
+  "getErrorMessage": [
+    "operation",
+    "unmatchedVars"
+  ],
+  "getServerQuery": [
+    "query"
+  ],
+  "validateMockedResponse": [
+    "mock"
+  ],
+  "stringifyMockedResponse": [
+    "mockedResponse"
+  ],
+  "stringifyForDebugging": [
+    "value",
+    "param"
+  ],
+  "MockSubscriptionLink": {
+    "unsubscribers": [],
+    "setups": [],
+    "operation": [],
+    "observers": [],
+    "constructor": [],
+    "request": [
+      "operation"
+    ],
+    "simulateResult": [
+      "result",
+      "param"
+    ],
+    "simulateComplete": [],
+    "onSetup": [
+      "listener"
+    ],
+    "onUnsubscribe": [
+      "listener"
+    ]
+  },
+  "MockedProvider": {
+    "constructor": [
+      "props"
+    ],
+    "render": [],
+    "componentWillUnmount": []
+  },
+  "stripTypename": [
+    "value"
+  ],
+  "DocumentTransform": {
+    "transform": [],
+    "cached": [],
+    "resultCache": [],
+    "getCacheKey": [
+      "document"
+    ],
+    "identity": [],
+    "split": [
+      "predicate",
+      "left",
+      "param"
+    ],
+    "constructor": [
+      "transform",
+      "param"
+    ],
+    "resetCache": [],
+    "performWork": [
+      "document"
+    ],
+    "transformDocument": [
+      "document"
+    ],
+    "concat": [
+      "otherTransform"
+    ],
+    "left": [],
+    "right": []
+  },
+  "identity": [
+    "document"
+  ],
+  "isFormattedExecutionResult": [
+    "result"
+  ],
+  "isOperation": [
+    "document",
+    "operation"
+  ],
+  "isMutationOperation": [
+    "document"
+  ],
+  "isQueryOperation": [
+    "document"
+  ],
+  "isSubscriptionOperation": [
+    "document"
+  ],
+  "isReference": [
+    "obj"
+  ],
+  "DeepMerger": {
+    "options": [],
+    "reconciler": [],
+    "constructor": [
+      "param"
+    ],
+    "merge": [
+      "target",
+      "source",
+      "param"
+    ],
+    "isObject": [],
+    "pastCopies": [],
+    "shallowCopyForMerge": [
+      "value"
+    ]
+  },
+  "defaultReconciler": [
+    "target",
+    "source",
+    "property"
+  ],
+  "objForKey": [
+    "key"
+  ],
+  "argumentsObjectFromField": [
+    "field",
+    "variables"
+  ],
+  "bindCacheKey": [
+    "param"
+  ],
+  "schedule": [
+    "cache"
+  ],
+  "AutoCleanedWeakCache": [
+    "max",
+    "dispose"
+  ],
+  "AutoCleanedStrongCache": [
+    "max",
+    "dispose"
+  ],
+  "stableObjectReplacer": [
+    "key",
+    "value"
+  ],
+  "everyKeyInOrder": [
+    "key",
+    "i",
+    "keys"
+  ],
+  "cloneDeep": [
+    "value"
+  ],
+  "__cloneDeep": [
+    "val",
+    "seen"
+  ],
+  "combineLatestBatched": [
+    "observables"
+  ],
+  "compact": [
+    "param"
+  ],
+  "createFragmentMap": [
+    "param"
+  ],
+  "createFulfilledPromise": [
+    "value"
+  ],
+  "createRejectedPromise": [
+    "reason"
+  ],
+  "dealias": [
+    "fieldValue",
+    "selectionSet"
+  ],
+  "isDecoratedPromise": [
+    "promise"
+  ],
+  "decoratePromise": [
+    "promise"
+  ],
+  "deepFreeze": [
+    "value"
+  ],
+  "shallowFreeze": [
+    "obj"
+  ],
+  "equalByQuery": [
+    "query",
+    "param",
+    "param",
+    "variables"
+  ],
+  "equalBySelectionSet": [
+    "selectionSet",
+    "aResult",
+    "bResult",
+    "context"
+  ],
+  "selectionHasNonreactiveDirective": [
+    "selection"
+  ],
+  "directiveIsNonreactive": [
+    "dir"
+  ],
+  "filterMap": [
+    "fn",
+    "param"
+  ],
+  "getDefaultValues": [
+    "definition"
+  ],
+  "getFragmentDefinition": [
+    "doc"
+  ],
+  "getFragmentDefinitions": [
+    "doc"
+  ],
+  "getFragmentFromSelection": [
+    "selection",
+    "fragmentMap"
+  ],
+  "getFragmentQueryDocument": [
+    "document",
+    "fragmentName"
+  ],
+  "getGraphQLErrorsFromResult": [
+    "result"
+  ],
+  "getMainDefinition": [
+    "queryDoc"
+  ],
+  "registerGlobalCache": [
+    "name",
+    "getSize"
+  ],
+  "getCurrentCacheSizes": [],
+  "_getApolloClientMemoryInternals": [],
+  "_getApolloCacheMemoryInternals": [],
+  "_getInMemoryCacheMemoryInternals": [],
+  "isWrapper": [
+    "f"
+  ],
+  "getWrapperInformation": [
+    "f"
+  ],
+  "isDefined": [
+    "value"
+  ],
+  "transformInfo": [
+    "transform"
+  ],
+  "recurseTransformInfo": [
+    "transform"
+  ],
+  "linkInfo": [
+    "link"
+  ],
+  "getOperationDefinition": [
+    "doc"
+  ],
+  "getOperationName": [
+    "doc",
+    "fallback"
+  ],
+  "getQueryDefinition": [
+    "doc"
+  ],
+  "maybe": [
+    "thunk"
+  ],
+  "graphQLResultHasError": [
+    "result"
+  ],
+  "hasDirectives": [
+    "names",
+    "root",
+    "all"
+  ],
+  "hasForcedResolvers": [
+    "document"
+  ],
+  "unsupported": [],
+  "isDocumentNode": [
+    "value"
+  ],
+  "isField": [
+    "selection"
+  ],
+  "isNonEmptyArray": [
+    "value"
+  ],
+  "isNonNullObject": [
+    "obj"
+  ],
+  "isPlainObject": [
+    "obj"
+  ],
+  "makeReference": [
+    "id"
+  ],
+  "makeUniqueId": [
+    "prefix"
+  ],
+  "mapObservableFragment": [
+    "observable",
+    "mapFn"
+  ],
+  "toMapped": [
+    "result"
+  ],
+  "maybeDeepFreeze": [
+    "obj"
+  ],
+  "memoize": [
+    "fn",
+    "param"
+  ],
+  "mergeDeep": [
+    "param"
+  ],
+  "mergeDeepArray": [
+    "sources"
+  ],
+  "mergeOptions": [
+    "defaults",
+    "options"
+  ],
+  "omitDeep": [
+    "value",
+    "key"
+  ],
+  "__omitDeep": [
+    "value",
+    "key",
+    "param"
+  ],
+  "preventUnhandledRejection": [
+    "promise"
+  ],
+  "removeDirectivesFromDocument": [
+    "directives",
+    "doc"
+  ],
+  "getInUse": [
+    "ancestors"
+  ],
+  "shouldRemoveField": [
+    "nodeDirectives"
+  ],
+  "populateTransitiveVars": [
+    "inUse"
+  ],
+  "fragmentWillBeRemoved": [
+    "fragmentName"
+  ],
+  "makeInUseGetterFunction": [
+    "defaultKey"
+  ],
+  "getDirectiveMatcher": [
+    "configs"
+  ],
+  "isEmpty": [
+    "op",
+    "fragmentMap"
+  ],
+  "nullIfDocIsEmpty": [
+    "doc"
+  ],
+  "removeMaskedFragmentSpreads": [
+    "document"
+  ],
+  "resultKeyNameFromField": [
+    "field"
+  ],
+  "shouldInclude": [
+    "param",
+    "variables"
+  ],
+  "isInclusionDirective": [
+    "param"
+  ],
+  "getInclusionDirectives": [
+    "directives"
+  ],
+  "storeKeyNameFromField": [
+    "field",
+    "variables"
+  ],
+  "stringifyForDisplay": [
+    "value",
+    "param"
+  ],
+  "toQueryResult": [
+    "value"
+  ],
+  "valueToObjectRepresentation": [
+    "argObj",
+    "name",
+    "value",
+    "variables"
+  ],
+  "InvariantError": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "invariant": [
+    "condition",
+    "param"
+  ],
+  "wrapConsoleMethod": [
+    "name"
+  ],
+  "setVerbosity": [
+    "level"
+  ],
+  "newInvariantError": [
+    "message",
+    "param"
+  ],
+  "stringify": [
+    "arg"
+  ],
+  "getHandledErrorMsg": [
+    "message",
+    "param"
+  ],
+  "getFallbackErrorMsg": [
+    "message",
+    "param"
+  ],
+  "isNetworkRequestInFlight": [
+    "networkStatus"
+  ],
+  "isNetworkRequestSettled": [
+    "networkStatus"
+  ],
+  "concatPagination": [
+    "param"
+  ],
+  "offsetLimitPagination": [
+    "param"
+  ],
+  "relayStylePagination": [
+    "param"
+  ],
+  "getExtras": [
+    "obj"
+  ],
+  "makeEmptyData": [],
+  "createFetchMultipartSubscription": [
+    "uri",
+    "param"
+  ],
+  "generateOptionsForMultipartSubscription": [
+    "headers"
+  ],
+  "ApolloError": {},
+  "Concast": {}
+}
