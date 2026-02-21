@@ -1,0 +1,1539 @@
+{
+  "Node": {
+    "constructor": [
+      "value"
+    ]
+  },
+  "LinkedList": {
+    "constructor": [],
+    "push": [
+      "value"
+    ],
+    "shift": []
+  },
+  "AsyncFifoQueue": {
+    "constructor": [
+      "param"
+    ],
+    "add": [
+      "promise"
+    ],
+    "waitAll": [],
+    "numTotal": [],
+    "numPending": [],
+    "numQueued": [],
+    "resolvePromise": [
+      "data"
+    ],
+    "rejectPromise": [
+      "err"
+    ],
+    "newPromise": [],
+    "wait": [],
+    "fetch": []
+  },
+  "Backoffs": {
+    "normalize": [
+      "backoff"
+    ],
+    "calculate": [
+      "backoff",
+      "attemptsMade",
+      "err",
+      "job",
+      "customStrategy"
+    ]
+  },
+  "lookupStrategy": [
+    "backoff",
+    "customStrategy"
+  ],
+  "supportCJS": [],
+  "ChildPool": {
+    "constructor": [
+      "param"
+    ],
+    "retain": [
+      "processFile"
+    ],
+    "release": [
+      "child"
+    ],
+    "remove": [
+      "child"
+    ],
+    "kill": [
+      "child",
+      "param"
+    ],
+    "clean": [],
+    "getFree": [
+      "id"
+    ],
+    "getAllFree": []
+  },
+  "ChildProcessor": {
+    "constructor": [
+      "send",
+      "receiver"
+    ],
+    "init": [
+      "processorFile"
+    ],
+    "start": [
+      "jobJson",
+      "token"
+    ],
+    "cancel": [
+      "reason"
+    ],
+    "stop": [],
+    "waitForCurrentJobAndExit": [],
+    "wrapJob": [
+      "job",
+      "send"
+    ]
+  },
+  "waitResponse": [
+    "requestId",
+    "receiver",
+    "timeout",
+    "cmd"
+  ],
+  "listener": [
+    "msg"
+  ],
+  "Child": {
+    "constructor": [
+      "mainFile",
+      "processFile",
+      "param"
+    ],
+    "pid": [],
+    "exitCode": [],
+    "signalCode": [],
+    "killed": [],
+    "init": [],
+    "send": [
+      "msg"
+    ],
+    "killProcess": [
+      "param"
+    ],
+    "kill": [
+      "param",
+      "timeoutMs"
+    ],
+    "initChild": [],
+    "hasProcessExited": []
+  },
+  "onMessageHandler": [
+    "msg"
+  ],
+  "onCloseHandler": [
+    "code",
+    "signal"
+  ],
+  "onExitOnce": [
+    "child"
+  ],
+  "getFreePort": [],
+  "convertExecArgv": [
+    "execArgv"
+  ],
+  "DelayedError": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "RateLimitError": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "UnrecoverableError": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "WaitingChildrenError": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "WaitingError": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "FlowProducer": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "emit": [
+      "event",
+      "param"
+    ],
+    "off": [
+      "eventName",
+      "listener"
+    ],
+    "on": [
+      "event",
+      "listener"
+    ],
+    "once": [
+      "event",
+      "listener"
+    ],
+    "client": [],
+    "Job": [],
+    "waitUntilReady": [],
+    "add": [
+      "flow",
+      "opts"
+    ],
+    "getFlow": [
+      "opts"
+    ],
+    "addBulk": [
+      "flows"
+    ],
+    "addNode": [
+      "param"
+    ],
+    "addNodes": [
+      "multi",
+      "nodes"
+    ],
+    "getNode": [
+      "client",
+      "node"
+    ],
+    "addChildren": [
+      "param"
+    ],
+    "getChildren": [
+      "client",
+      "childrenKeys",
+      "depth",
+      "maxChildren"
+    ],
+    "queueFromNode": [
+      "node",
+      "queueKeys",
+      "prefix"
+    ],
+    "close": [],
+    "disconnect": []
+  },
+  "getChild": [
+    "key"
+  ],
+  "JobScheduler": {
+    "constructor": [
+      "name",
+      "opts",
+      "Connection"
+    ],
+    "upsertJobScheduler": [
+      "jobSchedulerId",
+      "repeatOpts",
+      "jobName",
+      "jobData",
+      "opts",
+      "param"
+    ],
+    "getNextJobOpts": [
+      "nextMillis",
+      "jobSchedulerId",
+      "opts",
+      "currentCount",
+      "offset"
+    ],
+    "removeJobScheduler": [
+      "jobSchedulerId"
+    ],
+    "getSchedulerData": [
+      "client",
+      "key",
+      "next"
+    ],
+    "transformSchedulerData": [
+      "key",
+      "jobData",
+      "next"
+    ],
+    "keyToData": [
+      "key",
+      "next"
+    ],
+    "getScheduler": [
+      "id"
+    ],
+    "getTemplateFromJSON": [
+      "rawData",
+      "rawOpts"
+    ],
+    "getJobSchedulers": [
+      "param",
+      "param",
+      "param"
+    ],
+    "getSchedulersCount": [],
+    "getSchedulerNextJobId": [
+      "param"
+    ]
+  },
+  "defaultRepeatStrategy": [
+    "millis",
+    "opts"
+  ],
+  "Job": {
+    "constructor": [
+      "queue",
+      "name",
+      "data",
+      "param",
+      "id"
+    ],
+    "create": [
+      "queue",
+      "name",
+      "data",
+      "opts"
+    ],
+    "createBulk": [
+      "queue",
+      "jobs"
+    ],
+    "fromJSON": [
+      "queue",
+      "json",
+      "jobId"
+    ],
+    "createScripts": [],
+    "optsFromJSON": [
+      "rawOpts",
+      "param"
+    ],
+    "fromId": [
+      "queue",
+      "jobId"
+    ],
+    "addJobLog": [
+      "queue",
+      "jobId",
+      "logRow",
+      "keepLogs"
+    ],
+    "toJSON": [],
+    "asJSON": [],
+    "optsAsJSON": [
+      "param",
+      "param"
+    ],
+    "asJSONSandbox": [],
+    "updateData": [
+      "data"
+    ],
+    "updateProgress": [
+      "progress"
+    ],
+    "log": [
+      "logRow"
+    ],
+    "removeChildDependency": [],
+    "clearLogs": [
+      "keepLogs"
+    ],
+    "remove": [
+      "param"
+    ],
+    "removeUnprocessedChildren": [],
+    "extendLock": [
+      "token",
+      "duration"
+    ],
+    "moveToCompleted": [
+      "returnValue",
+      "token",
+      "param"
+    ],
+    "moveToWait": [
+      "token"
+    ],
+    "shouldRetryJob": [
+      "err"
+    ],
+    "moveToFailed": [
+      "err",
+      "token",
+      "param"
+    ],
+    "getSpanOperation": [
+      "shouldRetry",
+      "retryDelay"
+    ],
+    "recordJobMetrics": [
+      "status"
+    ],
+    "isCompleted": [],
+    "isFailed": [],
+    "isDelayed": [],
+    "isWaitingChildren": [],
+    "isActive": [],
+    "isWaiting": [],
+    "queueName": [],
+    "prefix": [],
+    "getState": [],
+    "changeDelay": [
+      "delay"
+    ],
+    "changePriority": [
+      "opts"
+    ],
+    "getChildrenValues": [],
+    "getIgnoredChildrenFailures": [],
+    "getFailedChildrenValues": [],
+    "getDependencies": [
+      "param"
+    ],
+    "getDependenciesCount": [
+      "param"
+    ],
+    "waitUntilFinished": [
+      "queueEvents",
+      "ttl"
+    ],
+    "moveToDelayed": [
+      "timestamp",
+      "token"
+    ],
+    "moveToWaitingChildren": [
+      "token",
+      "param"
+    ],
+    "promote": [],
+    "retry": [
+      "param",
+      "param"
+    ],
+    "discard": [],
+    "isInZSet": [
+      "set"
+    ],
+    "isInList": [
+      "list"
+    ],
+    "addJob": [
+      "client",
+      "parentOpts"
+    ],
+    "removeDeduplicationKey": [],
+    "validateOptions": [
+      "jobData"
+    ],
+    "updateStacktrace": [
+      "err"
+    ],
+    "setSpanJobAttributes": [
+      "span"
+    ]
+  },
+  "onCompleted": [
+    "args"
+  ],
+  "onFailed": [
+    "args"
+  ],
+  "removeListeners": [],
+  "getTraces": [
+    "stacktrace"
+  ],
+  "getReturnValue": [
+    "_value"
+  ],
+  "LockManager": {
+    "constructor": [
+      "worker",
+      "opts"
+    ],
+    "start": [],
+    "extendLocks": [
+      "jobIds"
+    ],
+    "startLockExtenderTimer": [],
+    "close": [],
+    "trackJob": [
+      "jobId",
+      "token",
+      "ts",
+      "param"
+    ],
+    "untrackJob": [
+      "jobId"
+    ],
+    "getActiveJobCount": [],
+    "isRunning": [],
+    "cancelJob": [
+      "jobId",
+      "reason"
+    ],
+    "cancelAllJobs": [
+      "reason"
+    ],
+    "getTrackedJobIds": []
+  },
+  "QueueBase": {
+    "constructor": [
+      "name",
+      "param",
+      "param",
+      "param"
+    ],
+    "client": [],
+    "createScripts": [],
+    "redisVersion": [],
+    "databaseType": [],
+    "Job": [],
+    "emit": [
+      "event",
+      "param"
+    ],
+    "waitUntilReady": [],
+    "base64Name": [],
+    "clientName": [
+      "param"
+    ],
+    "close": [],
+    "disconnect": [],
+    "checkConnectionError": [
+      "fn",
+      "param"
+    ],
+    "trace": [
+      "spanKind",
+      "operation",
+      "destination",
+      "callback",
+      "srcPropagationMetadata"
+    ]
+  },
+  "QueueEventsProducer": {
+    "constructor": [
+      "name",
+      "param",
+      "Connection"
+    ],
+    "publishEvent": [
+      "argsObj",
+      "param"
+    ],
+    "close": []
+  },
+  "QueueEvents": {
+    "constructor": [
+      "name",
+      "param",
+      "Connection"
+    ],
+    "emit": [
+      "event",
+      "param"
+    ],
+    "off": [
+      "eventName",
+      "listener"
+    ],
+    "on": [
+      "event",
+      "listener"
+    ],
+    "once": [
+      "event",
+      "listener"
+    ],
+    "run": [],
+    "consumeEvents": [
+      "client"
+    ],
+    "close": []
+  },
+  "QueueGetters": {
+    "getJob": [
+      "jobId"
+    ],
+    "commandByType": [
+      "types",
+      "count",
+      "callback"
+    ],
+    "sanitizeJobTypes": [
+      "types"
+    ],
+    "count": [],
+    "getRateLimitTtl": [
+      "maxJobs"
+    ],
+    "getDebounceJobId": [
+      "id"
+    ],
+    "getDeduplicationJobId": [
+      "id"
+    ],
+    "getGlobalConcurrency": [],
+    "getGlobalRateLimit": [],
+    "getJobCountByTypes": [
+      "param"
+    ],
+    "getJobCounts": [
+      "param"
+    ],
+    "getJobState": [
+      "jobId"
+    ],
+    "getMeta": [],
+    "getCompletedCount": [],
+    "getFailedCount": [],
+    "getDelayedCount": [],
+    "getActiveCount": [],
+    "getPrioritizedCount": [],
+    "getCountsPerPriority": [
+      "priorities"
+    ],
+    "getWaitingCount": [],
+    "getWaitingChildrenCount": [],
+    "getWaiting": [
+      "param",
+      "param"
+    ],
+    "getWaitingChildren": [
+      "param",
+      "param"
+    ],
+    "getActive": [
+      "param",
+      "param"
+    ],
+    "getDelayed": [
+      "param",
+      "param"
+    ],
+    "getPrioritized": [
+      "param",
+      "param"
+    ],
+    "getCompleted": [
+      "param",
+      "param"
+    ],
+    "getFailed": [
+      "param",
+      "param"
+    ],
+    "getDependencies": [
+      "parentId",
+      "type",
+      "start",
+      "end"
+    ],
+    "getRanges": [
+      "types",
+      "param",
+      "param",
+      "param"
+    ],
+    "getJobs": [
+      "types",
+      "param",
+      "param",
+      "param"
+    ],
+    "getJobLogs": [
+      "jobId",
+      "param",
+      "param",
+      "param"
+    ],
+    "baseGetClients": [
+      "matcher"
+    ],
+    "getWorkers": [],
+    "getWorkersCount": [],
+    "getQueueEvents": [],
+    "getMetrics": [
+      "type",
+      "param",
+      "param"
+    ],
+    "parseClientList": [
+      "list",
+      "matcher"
+    ],
+    "exportPrometheusMetrics": [
+      "globalVariables"
+    ]
+  },
+  "matcher": [
+    "name"
+  ],
+  "QueueKeys": {
+    "constructor": [
+      "param"
+    ],
+    "getKeys": [
+      "name"
+    ],
+    "toKey": [
+      "name",
+      "type"
+    ],
+    "getQueueQualifiedName": [
+      "name"
+    ]
+  },
+  "Queue": {
+    "constructor": [
+      "name",
+      "opts",
+      "Connection"
+    ],
+    "emit": [
+      "event",
+      "param"
+    ],
+    "off": [
+      "eventName",
+      "listener"
+    ],
+    "on": [
+      "event",
+      "listener"
+    ],
+    "once": [
+      "event",
+      "listener"
+    ],
+    "defaultJobOptions": [],
+    "metaValues": [],
+    "getVersion": [],
+    "repeat": [],
+    "jobScheduler": [],
+    "setGlobalConcurrency": [
+      "concurrency"
+    ],
+    "setGlobalRateLimit": [
+      "max",
+      "duration"
+    ],
+    "removeGlobalConcurrency": [],
+    "removeGlobalRateLimit": [],
+    "add": [
+      "name",
+      "data",
+      "opts"
+    ],
+    "addJob": [
+      "name",
+      "data",
+      "opts"
+    ],
+    "addBulk": [
+      "jobs"
+    ],
+    "upsertJobScheduler": [
+      "jobSchedulerId",
+      "repeatOpts",
+      "jobTemplate"
+    ],
+    "pause": [],
+    "close": [],
+    "rateLimit": [
+      "expireTimeMs"
+    ],
+    "resume": [],
+    "isPaused": [],
+    "isMaxed": [],
+    "getRepeatableJobs": [
+      "start",
+      "end",
+      "asc"
+    ],
+    "getJobScheduler": [
+      "id"
+    ],
+    "getJobSchedulers": [
+      "start",
+      "end",
+      "asc"
+    ],
+    "getJobSchedulersCount": [],
+    "removeRepeatable": [
+      "name",
+      "repeatOpts",
+      "jobId"
+    ],
+    "removeJobScheduler": [
+      "jobSchedulerId"
+    ],
+    "removeDebounceKey": [
+      "id"
+    ],
+    "removeDeduplicationKey": [
+      "id"
+    ],
+    "removeRateLimitKey": [],
+    "removeRepeatableByKey": [
+      "key"
+    ],
+    "remove": [
+      "jobId",
+      "param"
+    ],
+    "updateJobProgress": [
+      "jobId",
+      "progress"
+    ],
+    "addJobLog": [
+      "jobId",
+      "logRow",
+      "keepLogs"
+    ],
+    "drain": [
+      "param"
+    ],
+    "clean": [
+      "grace",
+      "limit",
+      "param"
+    ],
+    "obliterate": [
+      "opts"
+    ],
+    "retryJobs": [
+      "param"
+    ],
+    "promoteJobs": [
+      "param"
+    ],
+    "trimEvents": [
+      "maxLength"
+    ],
+    "removeDeprecatedPriorityKey": []
+  },
+  "RedisConnection": {
+    "constructor": [
+      "opts",
+      "extraOptions"
+    ],
+    "checkBlockingOptions": [
+      "msg",
+      "options",
+      "param"
+    ],
+    "waitUntilReady": [
+      "client"
+    ],
+    "client": [],
+    "loadCommands": [
+      "packageVersion",
+      "providedScripts"
+    ],
+    "init": [],
+    "disconnect": [
+      "param"
+    ],
+    "reconnect": [],
+    "close": [
+      "param"
+    ],
+    "getRedisVersionAndType": [],
+    "redisVersion": [],
+    "databaseType": []
+  },
+  "Repeat": {
+    "constructor": [
+      "name",
+      "opts",
+      "Connection"
+    ],
+    "updateRepeatableJob": [
+      "name",
+      "data",
+      "opts",
+      "param"
+    ],
+    "createNextJob": [
+      "name",
+      "nextMillis",
+      "repeatJobKey",
+      "opts",
+      "data",
+      "currentCount",
+      "hasImmediately"
+    ],
+    "getRepeatJobKey": [
+      "name",
+      "nextMillis",
+      "repeatJobKey",
+      "data"
+    ],
+    "removeRepeatable": [
+      "name",
+      "repeat",
+      "jobId"
+    ],
+    "removeRepeatableByKey": [
+      "repeatJobKey"
+    ],
+    "getRepeatableData": [
+      "client",
+      "key",
+      "next"
+    ],
+    "keyToData": [
+      "key",
+      "next"
+    ],
+    "getRepeatableJobs": [
+      "param",
+      "param",
+      "param"
+    ],
+    "getRepeatableCount": [],
+    "hash": [
+      "str"
+    ],
+    "getRepeatDelayedJobId": [
+      "param"
+    ],
+    "getRepeatJobId": [
+      "param"
+    ]
+  },
+  "getRepeatConcatOptions": [
+    "name",
+    "repeat"
+  ],
+  "getNextMillis": [
+    "millis",
+    "opts"
+  ],
+  "sandbox": [
+    "processFile",
+    "childPool"
+  ],
+  "initChild": [],
+  "Scripts": {
+    "constructor": [
+      "queue"
+    ],
+    "execCommand": [
+      "client",
+      "commandName",
+      "args"
+    ],
+    "isJobInList": [
+      "listKey",
+      "jobId"
+    ],
+    "addDelayedJobArgs": [
+      "job",
+      "encodedOpts",
+      "args"
+    ],
+    "addDelayedJob": [
+      "client",
+      "job",
+      "encodedOpts",
+      "args"
+    ],
+    "addPrioritizedJobArgs": [
+      "job",
+      "encodedOpts",
+      "args"
+    ],
+    "addPrioritizedJob": [
+      "client",
+      "job",
+      "encodedOpts",
+      "args"
+    ],
+    "addParentJobArgs": [
+      "job",
+      "encodedOpts",
+      "args"
+    ],
+    "addParentJob": [
+      "client",
+      "job",
+      "encodedOpts",
+      "args"
+    ],
+    "addStandardJobArgs": [
+      "job",
+      "encodedOpts",
+      "args"
+    ],
+    "addStandardJob": [
+      "client",
+      "job",
+      "encodedOpts",
+      "args"
+    ],
+    "addJob": [
+      "client",
+      "job",
+      "opts",
+      "jobId",
+      "param"
+    ],
+    "pauseArgs": [
+      "pause"
+    ],
+    "pause": [
+      "pause"
+    ],
+    "addRepeatableJobArgs": [
+      "customKey",
+      "nextMillis",
+      "opts",
+      "legacyCustomKey"
+    ],
+    "addRepeatableJob": [
+      "customKey",
+      "nextMillis",
+      "opts",
+      "legacyCustomKey"
+    ],
+    "removeDeduplicationKey": [
+      "deduplicationId",
+      "jobId"
+    ],
+    "addJobScheduler": [
+      "jobSchedulerId",
+      "nextMillis",
+      "templateData",
+      "templateOpts",
+      "opts",
+      "delayedJobOpts",
+      "producerId"
+    ],
+    "updateRepeatableJobMillis": [
+      "client",
+      "customKey",
+      "nextMillis",
+      "legacyCustomKey"
+    ],
+    "updateJobSchedulerNextMillis": [
+      "jobSchedulerId",
+      "nextMillis",
+      "templateData",
+      "delayedJobOpts",
+      "producerId"
+    ],
+    "removeRepeatableArgs": [
+      "legacyRepeatJobId",
+      "repeatConcatOptions",
+      "repeatJobKey"
+    ],
+    "getRepeatConcatOptions": [
+      "repeatConcatOptions",
+      "repeatJobKey"
+    ],
+    "removeRepeatable": [
+      "legacyRepeatJobId",
+      "repeatConcatOptions",
+      "repeatJobKey"
+    ],
+    "removeJobScheduler": [
+      "jobSchedulerId"
+    ],
+    "removeArgs": [
+      "jobId",
+      "removeChildren"
+    ],
+    "remove": [
+      "jobId",
+      "removeChildren"
+    ],
+    "removeUnprocessedChildren": [
+      "jobId"
+    ],
+    "extendLock": [
+      "jobId",
+      "token",
+      "duration",
+      "client"
+    ],
+    "extendLocks": [
+      "jobIds",
+      "tokens",
+      "duration"
+    ],
+    "updateData": [
+      "job",
+      "data"
+    ],
+    "updateProgress": [
+      "jobId",
+      "progress"
+    ],
+    "addLog": [
+      "jobId",
+      "logRow",
+      "keepLogs"
+    ],
+    "moveToFinishedArgs": [
+      "job",
+      "val",
+      "propVal",
+      "shouldRemove",
+      "target",
+      "token",
+      "timestamp",
+      "param",
+      "fieldsToUpdate"
+    ],
+    "getKeepJobs": [
+      "shouldRemove",
+      "workerKeepJobs"
+    ],
+    "moveToFinished": [
+      "jobId",
+      "args"
+    ],
+    "drainArgs": [
+      "delayed"
+    ],
+    "drain": [
+      "delayed"
+    ],
+    "removeChildDependencyArgs": [
+      "jobId",
+      "parentKey"
+    ],
+    "removeChildDependency": [
+      "jobId",
+      "parentKey"
+    ],
+    "getRangesArgs": [
+      "types",
+      "start",
+      "end",
+      "asc"
+    ],
+    "getRanges": [
+      "types",
+      "param",
+      "param",
+      "param"
+    ],
+    "getCountsArgs": [
+      "types"
+    ],
+    "getCounts": [
+      "types"
+    ],
+    "getCountsPerPriorityArgs": [
+      "priorities"
+    ],
+    "getCountsPerPriority": [
+      "priorities"
+    ],
+    "getDependencyCountsArgs": [
+      "jobId",
+      "types"
+    ],
+    "getDependencyCounts": [
+      "jobId",
+      "types"
+    ],
+    "moveToCompletedArgs": [
+      "job",
+      "returnvalue",
+      "removeOnComplete",
+      "token",
+      "param"
+    ],
+    "moveToFailedArgs": [
+      "job",
+      "failedReason",
+      "removeOnFailed",
+      "token",
+      "param",
+      "fieldsToUpdate"
+    ],
+    "isFinished": [
+      "jobId",
+      "param"
+    ],
+    "getState": [
+      "jobId"
+    ],
+    "changeDelay": [
+      "jobId",
+      "delay"
+    ],
+    "changeDelayArgs": [
+      "jobId",
+      "delay"
+    ],
+    "changePriority": [
+      "jobId",
+      "param",
+      "param"
+    ],
+    "changePriorityArgs": [
+      "jobId",
+      "param",
+      "param"
+    ],
+    "moveToDelayedArgs": [
+      "jobId",
+      "timestamp",
+      "token",
+      "delay",
+      "param"
+    ],
+    "moveToWaitingChildrenArgs": [
+      "jobId",
+      "token",
+      "opts"
+    ],
+    "isMaxedArgs": [],
+    "isMaxed": [],
+    "moveToDelayed": [
+      "jobId",
+      "timestamp",
+      "delay",
+      "param",
+      "param"
+    ],
+    "moveToWaitingChildren": [
+      "jobId",
+      "token",
+      "param"
+    ],
+    "getRateLimitTtlArgs": [
+      "maxJobs"
+    ],
+    "getRateLimitTtl": [
+      "maxJobs"
+    ],
+    "cleanJobsInSet": [
+      "set",
+      "timestamp",
+      "param"
+    ],
+    "getJobSchedulerArgs": [
+      "id"
+    ],
+    "getJobScheduler": [
+      "id"
+    ],
+    "retryJobArgs": [
+      "jobId",
+      "lifo",
+      "token",
+      "param"
+    ],
+    "retryJob": [
+      "jobId",
+      "lifo",
+      "param",
+      "param"
+    ],
+    "moveJobsToWaitArgs": [
+      "state",
+      "count",
+      "timestamp"
+    ],
+    "retryJobs": [
+      "param",
+      "param",
+      "param"
+    ],
+    "promoteJobs": [
+      "param"
+    ],
+    "reprocessJob": [
+      "job",
+      "state",
+      "param"
+    ],
+    "getMetrics": [
+      "type",
+      "param",
+      "param"
+    ],
+    "moveToActive": [
+      "client",
+      "token",
+      "name"
+    ],
+    "promote": [
+      "jobId"
+    ],
+    "moveStalledJobsToWaitArgs": [],
+    "moveStalledJobsToWait": [],
+    "moveJobFromActiveToWait": [
+      "jobId",
+      "param"
+    ],
+    "obliterate": [
+      "opts"
+    ],
+    "paginate": [
+      "key",
+      "opts"
+    ],
+    "finishedErrors": [
+      "param"
+    ]
+  },
+  "raw2NextJobData": [
+    "raw"
+  ],
+  "Worker": {
+    "RateLimitError": [],
+    "constructor": [
+      "name",
+      "processor",
+      "opts",
+      "Connection"
+    ],
+    "createLockManager": [],
+    "createSandbox": [
+      "processor"
+    ],
+    "extendJobLocks": [
+      "jobIds",
+      "tokens",
+      "duration"
+    ],
+    "emit": [
+      "event",
+      "param"
+    ],
+    "off": [
+      "eventName",
+      "listener"
+    ],
+    "on": [
+      "event",
+      "listener"
+    ],
+    "once": [
+      "event",
+      "listener"
+    ],
+    "callProcessJob": [
+      "job",
+      "token",
+      "signal"
+    ],
+    "createJob": [
+      "data",
+      "jobId"
+    ],
+    "waitUntilReady": [],
+    "cancelJob": [
+      "jobId",
+      "reason"
+    ],
+    "cancelAllJobs": [
+      "reason"
+    ],
+    "concurrency": [],
+    "repeat": [],
+    "jobScheduler": [],
+    "run": [],
+    "waitForRateLimit": [],
+    "mainLoop": [
+      "client",
+      "bclient"
+    ],
+    "getNextJob": [
+      "token",
+      "param"
+    ],
+    "_getNextJob": [
+      "client",
+      "bclient",
+      "token",
+      "param"
+    ],
+    "rateLimit": [
+      "expireTimeMs"
+    ],
+    "minimumBlockTimeout": [],
+    "isRateLimited": [],
+    "moveToActive": [
+      "client",
+      "token",
+      "name"
+    ],
+    "waitForJob": [
+      "bclient",
+      "blockUntil"
+    ],
+    "getBlockTimeout": [
+      "blockUntil"
+    ],
+    "getRateLimitDelay": [
+      "delay"
+    ],
+    "delay": [
+      "milliseconds",
+      "abortController"
+    ],
+    "updateDelays": [
+      "param",
+      "param"
+    ],
+    "nextJobFromJobData": [
+      "jobData",
+      "jobId",
+      "token"
+    ],
+    "processJob": [
+      "job",
+      "token",
+      "param"
+    ],
+    "getUnrecoverableErrorMessage": [
+      "job"
+    ],
+    "handleCompleted": [
+      "result",
+      "job",
+      "token",
+      "param",
+      "span"
+    ],
+    "handleFailed": [
+      "err",
+      "job",
+      "token",
+      "param",
+      "span"
+    ],
+    "pause": [
+      "doNotWaitActive"
+    ],
+    "resume": [],
+    "isPaused": [],
+    "isRunning": [],
+    "close": [
+      "param"
+    ],
+    "startStalledCheckTimer": [],
+    "stalledChecker": [],
+    "whenCurrentJobsFinished": [
+      "param"
+    ],
+    "retryIfFailed": [
+      "fn",
+      "opts"
+    ],
+    "moveStalledJobsToWait": [],
+    "moveLimitedBackToWait": [
+      "job",
+      "token"
+    ]
+  },
+  "createScripts": [
+    "queue"
+  ],
+  "tryCatch": [
+    "fn",
+    "ctx",
+    "args"
+  ],
+  "lengthInUtf8Bytes": [
+    "str"
+  ],
+  "isEmpty": [
+    "obj"
+  ],
+  "array2obj": [
+    "arr"
+  ],
+  "objectToFlatArray": [
+    "obj"
+  ],
+  "delay": [
+    "ms",
+    "abortController"
+  ],
+  "callback": [],
+  "increaseMaxListeners": [
+    "emitter",
+    "count"
+  ],
+  "invertObject": [
+    "obj"
+  ],
+  "isRedisInstance": [
+    "obj"
+  ],
+  "isRedisCluster": [
+    "obj"
+  ],
+  "decreaseMaxListeners": [
+    "emitter",
+    "count"
+  ],
+  "removeAllQueueData": [
+    "client",
+    "queueName",
+    "param"
+  ],
+  "getParentKey": [
+    "opts"
+  ],
+  "isNotConnectionError": [
+    "error"
+  ],
+  "asyncSend": [
+    "proc",
+    "msg"
+  ],
+  "childSend": [
+    "proc",
+    "msg"
+  ],
+  "isRedisVersionLowerThan": [
+    "currentVersion",
+    "minimumVersion",
+    "currentDatabaseType",
+    "param"
+  ],
+  "parseObjectValues": [
+    "obj"
+  ],
+  "getCircularReplacer": [
+    "rootReference"
+  ],
+  "errorToJSON": [
+    "value"
+  ],
+  "toString": [
+    "value"
+  ],
+  "removeUndefinedFields": [
+    "obj"
+  ],
+  "trace": [
+    "telemetry",
+    "spanKind",
+    "queueName",
+    "operation",
+    "destination",
+    "callback",
+    "srcPropagationMetadata"
+  ]
+}
