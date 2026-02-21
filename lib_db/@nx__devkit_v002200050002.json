@@ -1,0 +1,785 @@
+{
+  "parseTargetString": [
+    "targetString",
+    "projectGraphOrCtx"
+  ],
+  "targetToTargetString": [
+    "param"
+  ],
+  "readTargetOptions": [
+    "param",
+    "context"
+  ],
+  "determineArtifactNameAndDirectoryOptions": [
+    "tree",
+    "options"
+  ],
+  "getNameAndDirectoryOptions": [
+    "tree",
+    "options"
+  ],
+  "validateResolvedProject": [
+    "project",
+    "normalizedDirectory"
+  ],
+  "findProjectFromPath": [
+    "tree",
+    "path"
+  ],
+  "getRelativeCwd": [],
+  "setCwd": [
+    "path"
+  ],
+  "getCwd": [],
+  "extractNameAndDirectoryFromPath": [
+    "path"
+  ],
+  "getFileExtensionType": [
+    "fileExtension"
+  ],
+  "validateFileExtension": [
+    "fileExtension",
+    "allowedFileExtensions",
+    "js",
+    "jsOptionName"
+  ],
+  "getE2EWebServerInfo": [
+    "tree",
+    "projectName",
+    "pluginOptions",
+    "defaultValues",
+    "isPluginBeingAdded"
+  ],
+  "getE2EWebServerInfoForPlugin": [
+    "tree",
+    "projectName",
+    "pluginOptions",
+    "defaultValues",
+    "pm"
+  ],
+  "forEachExecutorOptions": [
+    "tree",
+    "executorName",
+    "callback"
+  ],
+  "forEachExecutorOptionsInGraph": [
+    "graph",
+    "executorName",
+    "callback"
+  ],
+  "forEachProjectConfig": [
+    "projects",
+    "executorName",
+    "callback"
+  ],
+  "formatFiles": [
+    "tree",
+    "param"
+  ],
+  "sortTsConfig": [
+    "tree"
+  ],
+  "getRootTsConfigPath": [],
+  "getChangedPrettierConfigInTree": [
+    "tree"
+  ],
+  "generateFiles": [
+    "tree",
+    "srcFolder",
+    "target",
+    "substitutions",
+    "param"
+  ],
+  "computePath": [
+    "srcFolder",
+    "target",
+    "filePath",
+    "substitutions"
+  ],
+  "allFilesInDir": [
+    "parent"
+  ],
+  "AggregatedLog": {
+    "constructor": [],
+    "addLog": [
+      "param"
+    ],
+    "reset": [],
+    "flushLogs": []
+  },
+  "NoTargetsToMigrateError": {
+    "constructor": []
+  },
+  "ExecutorToPluginMigrator": {
+    "constructor": [
+      "tree",
+      "projectGraph",
+      "executor",
+      "pluginPath",
+      "pluginOptionsBuilder",
+      "postTargetTransformer",
+      "createNodes",
+      "createNodesV2",
+      "specificProjectToMigrate",
+      "filters",
+      "logger"
+    ],
+    "run": []
+  },
+  "isInputInferred": [
+    "input"
+  ],
+  "migrateProjectExecutorsToPlugin": [
+    "tree",
+    "projectGraph",
+    "pluginPath",
+    "createNodesV2",
+    "defaultPluginOptions",
+    "migrations",
+    "specificProjectToMigrate",
+    "logger"
+  ],
+  "migrateProjectExecutorsToPluginV1": [
+    "tree",
+    "projectGraph",
+    "pluginPath",
+    "createNodes",
+    "defaultPluginOptions",
+    "migrations",
+    "specificProjectToMigrate"
+  ],
+  "migrateProjects": [
+    "tree",
+    "projectGraph",
+    "pluginPath",
+    "createNodes",
+    "createNodesV2",
+    "defaultPluginOptions",
+    "migrations",
+    "specificProjectToMigrate",
+    "logger"
+  ],
+  "addPluginRegistrations": [
+    "tree",
+    "projects",
+    "pluginPath",
+    "createNodes",
+    "createNodesV2",
+    "defaultPluginOptions",
+    "projectGraph",
+    "spinner"
+  ],
+  "arePluginIncludesRequired": [
+    "project",
+    "pluginConfiguration"
+  ],
+  "getCreateNodesResultsForPlugin": [
+    "tree",
+    "pluginConfiguration",
+    "pluginPath",
+    "createNodes",
+    "createNodesV2",
+    "nxJson"
+  ],
+  "deepEqual": [
+    "a",
+    "b",
+    "param"
+  ],
+  "deleteMatchingProperties": [
+    "targetToMigrate",
+    "createdTarget"
+  ],
+  "processTargetOutputs": [
+    "target",
+    "renamedOutputOptions",
+    "inferredTarget",
+    "projectDetails"
+  ],
+  "toProjectRelativePath": [
+    "path",
+    "projectRoot"
+  ],
+  "updateOutputRenamingOption": [
+    "output",
+    "option",
+    "previousName"
+  ],
+  "updateOutput": [
+    "output",
+    "renamedOutputOptions"
+  ],
+  "determineProjectNameAndRootOptions": [
+    "tree",
+    "options"
+  ],
+  "resolveImportPath": [
+    "tree",
+    "projectName",
+    "projectRoot"
+  ],
+  "ensureRootProjectName": [
+    "options",
+    "projectType"
+  ],
+  "validateOptions": [
+    "providedName",
+    "derivedName",
+    "directory"
+  ],
+  "getImportPath": [
+    "npmScope",
+    "name"
+  ],
+  "getNpmScope": [
+    "tree"
+  ],
+  "promptWhenInteractive": [
+    "questions",
+    "defaultValue"
+  ],
+  "isInteractive": [],
+  "runTasksInSerial": [
+    "param"
+  ],
+  "addBuildTargetDefaults": [
+    "tree",
+    "executorName",
+    "param"
+  ],
+  "addE2eCiTargetDefaults": [
+    "tree",
+    "e2ePlugin",
+    "buildTarget",
+    "pathToE2EConfigFile"
+  ],
+  "toJS": [
+    "tree",
+    "options"
+  ],
+  "insertImport": [],
+  "updateTsConfigsToJs": [
+    "tree",
+    "options"
+  ],
+  "uniq": [
+    "value"
+  ],
+  "visitNotIgnoredFiles": [
+    "tree",
+    "param",
+    "visitor"
+  ],
+  "normalizePathRelativeToRoot": [
+    "path",
+    "root"
+  ],
+  "installPackagesTask": [
+    "tree",
+    "param",
+    "param",
+    "param"
+  ],
+  "addPlugin": [
+    "tree",
+    "graph",
+    "pluginName",
+    "createNodesTuple",
+    "options",
+    "shouldUpdatePackageJsonScripts"
+  ],
+  "addPluginV1": [
+    "tree",
+    "graph",
+    "pluginName",
+    "createNodesTuple",
+    "options",
+    "shouldUpdatePackageJsonScripts"
+  ],
+  "_addPluginInternal": [
+    "tree",
+    "graph",
+    "pluginName",
+    "pluginFactory",
+    "options",
+    "shouldUpdatePackageJsonScripts"
+  ],
+  "updatePackageScripts": [
+    "tree",
+    "projectConfigurations"
+  ],
+  "processProject": [
+    "tree",
+    "projectRoot",
+    "projectConfiguration"
+  ],
+  "getInferredTargetCommands": [
+    "project"
+  ],
+  "generateCombinations": [
+    "input"
+  ],
+  "_generateCombinations": [
+    "input"
+  ],
+  "combineAsyncIterables": [
+    "param"
+  ],
+  "getNextAsyncIteratorFactory": [
+    "options"
+  ],
+  "createAsyncIterable": [
+    "listener"
+  ],
+  "mapAsyncIterable": [
+    "data",
+    "transform"
+  ],
+  "f": [],
+  "tapAsyncIterable": [
+    "data",
+    "fn"
+  ],
+  "isBinaryPath": [
+    "path"
+  ],
+  "calculateHashForCreateNodes": [
+    "projectRoot",
+    "options",
+    "context",
+    "param"
+  ],
+  "calculateHashesForCreateNodes": [
+    "projectRoots",
+    "options",
+    "context",
+    "param"
+  ],
+  "getCatalogDependenciesFromPackageJson": [
+    "tree",
+    "packageJsonPath",
+    "manager"
+  ],
+  "getCatalogManager": [
+    "workspaceRoot"
+  ],
+  "PnpmCatalogManager": {
+    "constructor": [],
+    "isCatalogReference": [
+      "version"
+    ],
+    "parseCatalogReference": [
+      "version"
+    ],
+    "getCatalogDefinitions": [
+      "treeOrRoot"
+    ],
+    "resolveCatalogReference": [
+      "treeOrRoot",
+      "packageName",
+      "version"
+    ],
+    "validateCatalogReference": [
+      "treeOrRoot",
+      "packageName",
+      "version"
+    ],
+    "updateCatalogVersions": [
+      "treeOrRoot",
+      "updates"
+    ]
+  },
+  "readYamlFileFromFs": [
+    "path"
+  ],
+  "readYamlFileFromTree": [
+    "tree",
+    "path"
+  ],
+  "formatCatalogError": [
+    "error",
+    "suggestions"
+  ],
+  "loadConfigFile": [
+    "configFilePath",
+    "tsconfigFileNames"
+  ],
+  "loadModule": [
+    "path",
+    "extension",
+    "tsconfigFileNames"
+  ],
+  "isTypeScriptFile": [
+    "extension"
+  ],
+  "loadTypeScriptModule": [
+    "path",
+    "extension",
+    "tsconfigFileNames"
+  ],
+  "getTypeScriptConfigPath": [
+    "path",
+    "tsconfigFileNames"
+  ],
+  "loadJavaScriptModule": [
+    "path",
+    "extension"
+  ],
+  "loadModuleByExtension": [
+    "path",
+    "extension"
+  ],
+  "getRootTsConfigFileName": [],
+  "clearRequireCache": [],
+  "load": [
+    "path"
+  ],
+  "loadCommonJS": [
+    "path"
+  ],
+  "loadESM": [
+    "path"
+  ],
+  "convertNxExecutor": [
+    "executor"
+  ],
+  "builderFunction": [
+    "options",
+    "builderContext"
+  ],
+  "promise": [],
+  "toObservable": [
+    "promiseOrAsyncIterator"
+  ],
+  "recurse": [
+    "iterator"
+  ],
+  "findPluginForConfigFile": [
+    "tree",
+    "pluginName",
+    "pathToConfigFile"
+  ],
+  "getNamedInputs": [
+    "directory",
+    "context"
+  ],
+  "getWorkspaceLayout": [
+    "tree"
+  ],
+  "extractLayoutDirectory": [
+    "directory"
+  ],
+  "inOrderOfPreference": [
+    "tree",
+    "selectedFolders",
+    "defaultChoice"
+  ],
+  "RunCallbackTask": {
+    "constructor": [
+      "callback"
+    ],
+    "toConfiguration": []
+  },
+  "createRunCallbackTask": [],
+  "convertNxGenerator": [
+    "generator",
+    "param"
+  ],
+  "invokeNxGenerator": [
+    "generator",
+    "options",
+    "skipWritingConfigInOldFormat"
+  ],
+  "DevkitTreeFromAngularDevkitTree": {
+    "constructor": [
+      "tree",
+      "_root",
+      "skipWritingConfigInOldFormat"
+    ],
+    "root": [],
+    "children": [
+      "dirPath"
+    ],
+    "delete": [
+      "filePath"
+    ],
+    "exists": [
+      "filePath"
+    ],
+    "isFile": [
+      "filePath"
+    ],
+    "listChanges": [],
+    "normalize": [
+      "path"
+    ],
+    "read": [
+      "filePath",
+      "encoding"
+    ],
+    "rename": [
+      "from",
+      "to"
+    ],
+    "write": [
+      "filePath",
+      "content",
+      "options"
+    ],
+    "changePermissions": [
+      "filePath",
+      "mode"
+    ],
+    "warnUnsupportedFilePermissionsChange": [
+      "filePath",
+      "mode"
+    ]
+  },
+  "logShowProjectCommand": [
+    "projectName"
+  ],
+  "moveFilesToNewDirectory": [
+    "tree",
+    "oldDir",
+    "newDir"
+  ],
+  "names": [
+    "name"
+  ],
+  "toClassName": [
+    "str"
+  ],
+  "toPropertyName": [
+    "s"
+  ],
+  "toConstantName": [
+    "s"
+  ],
+  "toFileName": [
+    "s"
+  ],
+  "toCapitalCase": [
+    "s"
+  ],
+  "offsetFromRoot": [
+    "fullPathToDir"
+  ],
+  "getDependencyVersionFromPackageJson": [
+    "treeOrPackageName",
+    "packageNameOrRoot",
+    "packageJsonPathOrObjectOrRoot",
+    "dependencyLookup"
+  ],
+  "getDependencyVersionFromPackageJsonFromTree": [
+    "tree",
+    "packageName",
+    "param",
+    "param"
+  ],
+  "getDependencyVersionFromPackageJsonFromFileSystem": [
+    "packageName",
+    "param",
+    "param",
+    "param"
+  ],
+  "filterExistingDependencies": [
+    "dependencies",
+    "existingAltDependencies"
+  ],
+  "cleanSemver": [
+    "tree",
+    "version",
+    "packageName"
+  ],
+  "isIncomingVersionGreater": [
+    "tree",
+    "incomingVersion",
+    "existingVersion",
+    "packageName"
+  ],
+  "updateExistingAltDependenciesVersion": [
+    "tree",
+    "dependencies",
+    "existingAltDependencies",
+    "workspaceRootPath"
+  ],
+  "updateExistingDependenciesVersion": [
+    "tree",
+    "dependencies",
+    "param",
+    "workspaceRootPath"
+  ],
+  "addDependenciesToPackageJson": [
+    "tree",
+    "dependencies",
+    "devDependencies",
+    "param",
+    "keepExistingVersions"
+  ],
+  "splitDependenciesByCatalogType": [
+    "tree",
+    "filteredDependencies",
+    "filteredDevDependencies",
+    "packageJsonPath"
+  ],
+  "writeCatalogDependencies": [
+    "tree",
+    "catalogUpdates"
+  ],
+  "writeDirectDependencies": [
+    "tree",
+    "packageJsonPath",
+    "dependencies",
+    "devDependencies"
+  ],
+  "removeLowerVersions": [
+    "tree",
+    "incomingDeps",
+    "existingDeps",
+    "workspaceRootPath"
+  ],
+  "removeExistingDependencies": [
+    "incomingDeps",
+    "existingDeps"
+  ],
+  "removeDependenciesFromPackageJson": [
+    "tree",
+    "dependencies",
+    "devDependencies",
+    "param"
+  ],
+  "sortObjectByKeys": [
+    "obj"
+  ],
+  "requiresAddingOfPackages": [
+    "tree",
+    "packageJsonFile",
+    "deps",
+    "devDeps",
+    "workspaceRootPath"
+  ],
+  "requiresRemovingOfPackages": [
+    "packageJsonFile",
+    "deps",
+    "devDeps"
+  ],
+  "ensurePackage": [
+    "pkgOrTree",
+    "requiredVersionOrPackage",
+    "maybeRequiredVersion",
+    "_"
+  ],
+  "addToNodePath": [
+    "dir"
+  ],
+  "getInstalledPackageModuleVersion": [
+    "pkg"
+  ],
+  "replaceNrwlPackageWithNxPackage": [
+    "tree",
+    "oldPackageName",
+    "newPackageName"
+  ],
+  "replacePackageInDependencies": [
+    "tree",
+    "oldPackageName",
+    "newPackageName"
+  ],
+  "replacePackageInProjectConfigurations": [
+    "tree",
+    "oldPackageName",
+    "newPackageName"
+  ],
+  "replacePackageInNxJson": [
+    "tree",
+    "oldPackageName",
+    "newPackageName"
+  ],
+  "replaceMentions": [
+    "tree",
+    "oldPackageName",
+    "newPackageName"
+  ],
+  "replaceProjectConfigurationsWithPlugin": [
+    "tree",
+    "rootMappings",
+    "pluginPath",
+    "createNodes",
+    "pluginOptions"
+  ],
+  "removeConfigurationDefinedByPlugin": [
+    "targetName",
+    "targetFromProjectConfig",
+    "targetFromCreateNodes",
+    "projectConfig"
+  ],
+  "equals": [
+    "a",
+    "b"
+  ],
+  "shouldRemoveArrayProperty": [
+    "arrayValuesFromProjectConfiguration",
+    "arrayValuesFromCreateNodes"
+  ],
+  "Deferred": {
+    "constructor": []
+  },
+  "eachValueFrom": [
+    "source"
+  ],
+  "bufferedValuesFrom": [
+    "source"
+  ],
+  "latestValueFrom": [
+    "source"
+  ],
+  "nextValueFrom": [
+    "source"
+  ],
+  "checkAndCleanWithSemver": [
+    "treeOrPkgName",
+    "pkgNameOrVersion",
+    "version"
+  ],
+  "applyChangesToString": [
+    "text",
+    "changes"
+  ],
+  "assertChangesValid": [
+    "changes"
+  ],
+  "getChangeIndex": [
+    "change"
+  ],
+  "isStringInsertion": [
+    "change"
+  ],
+  "decamelize": [
+    "str"
+  ],
+  "dasherize": [
+    "str"
+  ],
+  "camelize": [
+    "str"
+  ],
+  "classify": [
+    "str"
+  ],
+  "underscore": [
+    "str"
+  ],
+  "capitalize": [
+    "str"
+  ],
+  "group": [
+    "name",
+    "group"
+  ],
+  "featurePath": [
+    "group",
+    "flat",
+    "path",
+    "name"
+  ]
+}
