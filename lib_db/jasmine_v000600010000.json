@@ -1,0 +1,310 @@
+{
+  "Command": [
+    "projectBaseDir",
+    "examplesDir",
+    "deps"
+  ],
+  "isFileArg": [
+    "arg"
+  ],
+  "parseOptions": [
+    "argv",
+    "isWindows"
+  ],
+  "runJasmine": [
+    "Jasmine",
+    "ParallelRunner",
+    "projectBaseDir",
+    "options"
+  ],
+  "registerReporter": [
+    "reporterModuleName",
+    "runner"
+  ],
+  "resolveReporter": [
+    "nameOrPath"
+  ],
+  "initJasmine": [
+    "options"
+  ],
+  "installExamples": [
+    "options"
+  ],
+  "help": [
+    "deps"
+  ],
+  "wrapWithIndent": [
+    "cols",
+    "prefix",
+    "suffix"
+  ],
+  "wrap": [
+    "cols",
+    "input"
+  ],
+  "wrap2": [
+    "cols",
+    "input"
+  ],
+  "indexOfLastSpaceInRange": [
+    "start",
+    "end",
+    "s"
+  ],
+  "version": [
+    "options"
+  ],
+  "enumerate": [
+    "options"
+  ],
+  "lPad": [
+    "str",
+    "length"
+  ],
+  "copyFiles": [
+    "srcDir",
+    "destDir",
+    "pattern"
+  ],
+  "makeDirStructure": [
+    "absolutePath"
+  ],
+  "isEnvironmentVariable": [
+    "arg"
+  ],
+  "setEnvironmentVariables": [
+    "args"
+  ],
+  "ExitHandler": {
+    "constructor": [
+      "onExit"
+    ],
+    "install": [],
+    "uninstall": []
+  },
+  "pathSpecFilter": [
+    "filterPath"
+  ],
+  "regexSpecFilter": [
+    "filterString"
+  ],
+  "GlobalSetupOrTeardownRunner": {
+    "run": [
+      "name",
+      "fn",
+      "timeoutMs"
+    ]
+  },
+  "withGlobalErrorHandling": [
+    "name",
+    "fn"
+  ],
+  "onUncaughtException": [
+    "e"
+  ],
+  "onUnhandledRejection": [
+    "e"
+  ],
+  "withTimeout": [
+    "name",
+    "timeoutMs",
+    "fn"
+  ],
+  "Jasmine": {
+    "constructor": [
+      "options"
+    ],
+    "randomizeTests": [
+      "value"
+    ],
+    "seed": [
+      "value"
+    ],
+    "addReporter": [
+      "reporter"
+    ],
+    "clearReporters": [],
+    "provideFallbackReporter": [
+      "reporter"
+    ],
+    "addMatchers": [
+      "matchers"
+    ],
+    "loadSpecs": [],
+    "loadHelpers": [],
+    "_loadFiles": [
+      "files"
+    ],
+    "loadRequires": [],
+    "configureEnv": [
+      "envConfig"
+    ],
+    "stopSpecOnExpectationFailure": [
+      "value"
+    ],
+    "stopOnSpecFailure": [
+      "value"
+    ],
+    "execute": [
+      "files",
+      "filter"
+    ],
+    "enumerate": []
+  },
+  "toEnumerateResult": [
+    "suiteOrSpecMeta"
+  ],
+  "Loader": {
+    "constructor": [
+      "options"
+    ],
+    "load": [
+      "modulePath"
+    ],
+    "resolveImportSpecifier_": [
+      "modulePath"
+    ]
+  },
+  "requireShim": [
+    "modulePath"
+  ],
+  "importShim": [
+    "modulePath"
+  ],
+  "fixupImportException": [
+    "e",
+    "importedPath"
+  ],
+  "escapeStringForRegexp": [
+    "string"
+  ],
+  "ParallelRunner": {
+    "constructor": [
+      "options"
+    ],
+    "clearReporters": [],
+    "randomizeTests": [
+      "value"
+    ],
+    "seed": [
+      "value"
+    ],
+    "addReporter": [
+      "reporter",
+      "errorContext"
+    ],
+    "execute": [
+      "files",
+      "filterString"
+    ],
+    "execute2_": [
+      "files",
+      "filterString"
+    ],
+    "createWorkers_": [
+      "filterString"
+    ],
+    "shutDownWorkers_": [],
+    "runSpecFiles_": [],
+    "runWorker_": [
+      "worker"
+    ],
+    "configureEnv": [
+      "envConfig"
+    ],
+    "handleReporterEvent_": [
+      "eventName",
+      "payload"
+    ],
+    "reportJasmineDone_": [],
+    "fatalError_": [
+      "msg",
+      "msgWithoutStack",
+      "optionalExitCode"
+    ],
+    "addTopLevelError_": [
+      "globalErrorType",
+      "msgPrefix",
+      "serializedError"
+    ]
+  },
+  "runNextSpecFile": [],
+  "formatErrorFromWorker": [
+    "error"
+  ],
+  "ParallelWorker": {
+    "constructor": [
+      "options"
+    ],
+    "configure": [
+      "options"
+    ],
+    "loadFiles_": [
+      "files"
+    ],
+    "runSpecFile": [
+      "specFilePath"
+    ]
+  },
+  "serializeError": [
+    "error"
+  ],
+  "forwardingReporter": [
+    "clusterWorker"
+  ],
+  "sendIfConnected": [
+    "clusterWorker",
+    "msg"
+  ],
+  "fixNonSerializableReporterEvent": [
+    "payload"
+  ],
+  "generateSeed": [],
+  "jenkinsHash": [
+    "key"
+  ],
+  "RunnerBase": {
+    "constructor": [
+      "options"
+    ],
+    "showColors": [
+      "value"
+    ],
+    "verbose": [
+      "isVerbose"
+    ],
+    "alwaysListPendingSpecs": [
+      "value"
+    ],
+    "loadConfigFile": [
+      "configFilePath"
+    ],
+    "loadSpecificConfigFile_": [
+      "relativePath"
+    ],
+    "loadConfig": [
+      "config"
+    ],
+    "addSpecFile": [
+      "filePath"
+    ],
+    "addHelperFile": [
+      "filePath"
+    ],
+    "addRequires": [
+      "requires"
+    ],
+    "configureDefaultReporter": [
+      "options"
+    ],
+    "withinGlobalSetup_": [
+      "fn"
+    ],
+    "runGlobalSetup_": [],
+    "runGlobalTeardown_": [],
+    "flushOutput": []
+  },
+  "addFiles": [
+    "kind"
+  ]
+}
