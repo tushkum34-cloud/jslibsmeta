@@ -1,0 +1,1257 @@
+{
+  "UnknownUrlSourceProtocol": {
+    "constructor": [
+      "url"
+    ]
+  },
+  "UnknownCollectionException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "CircularCollectionException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "UnknownSchematicException": {
+    "constructor": [
+      "name",
+      "collection"
+    ]
+  },
+  "PrivateSchematicException": {
+    "constructor": [
+      "name",
+      "collection"
+    ]
+  },
+  "SchematicEngineConflictingException": {
+    "constructor": []
+  },
+  "UnregisteredTaskException": {
+    "constructor": [
+      "name",
+      "schematic"
+    ]
+  },
+  "UnknownTaskDependencyException": {
+    "constructor": [
+      "id"
+    ]
+  },
+  "CollectionImpl": {
+    "_description": [],
+    "_engine": [],
+    "baseDescriptions": [],
+    "constructor": [
+      "_description",
+      "_engine",
+      "baseDescriptions"
+    ],
+    "description": [],
+    "name": [],
+    "createSchematic": [
+      "name",
+      "param"
+    ],
+    "listSchematicNames": [
+      "includeHidden"
+    ]
+  },
+  "TaskScheduler": {
+    "_context": [],
+    "_queue": [],
+    "_taskIds": [],
+    "_taskIdCounter": [],
+    "constructor": [
+      "_context"
+    ],
+    "_calculatePriority": [
+      "dependencies"
+    ],
+    "_mapDependencies": [
+      "dependencies"
+    ],
+    "schedule": [
+      "taskConfiguration"
+    ],
+    "finalize": []
+  },
+  "SchematicEngine": {
+    "_host": [],
+    "_workflow": [],
+    "_collectionCache": [],
+    "_schematicCache": [],
+    "_taskSchedulers": [],
+    "constructor": [
+      "_host",
+      "_workflow"
+    ],
+    "workflow": [],
+    "defaultMergeStrategy": [],
+    "createCollection": [
+      "name",
+      "requester"
+    ],
+    "_createCollectionDescription": [
+      "name",
+      "requester",
+      "parentNames"
+    ],
+    "createContext": [
+      "schematic",
+      "parent",
+      "executionOptions"
+    ],
+    "createSchematic": [
+      "name",
+      "collection",
+      "param"
+    ],
+    "listSchematicNames": [
+      "collection",
+      "includeHidden"
+    ],
+    "transformOptions": [
+      "schematic",
+      "options",
+      "context"
+    ],
+    "createSourceFromUrl": [
+      "url",
+      "context"
+    ],
+    "executePostTasks": []
+  },
+  "addTask": [
+    "task",
+    "dependencies"
+  ],
+  "InvalidSchematicsNameException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "SchematicImpl": {
+    "_description": [],
+    "_factory": [],
+    "_collection": [],
+    "_engine": [],
+    "constructor": [
+      "_description",
+      "_factory",
+      "_collection",
+      "_engine"
+    ],
+    "description": [],
+    "collection": [],
+    "call": [
+      "options",
+      "host",
+      "parentContext",
+      "executionOptions"
+    ]
+  },
+  "SchematicsException": {},
+  "FileDoesNotExistException": {
+    "constructor": [
+      "path"
+    ]
+  },
+  "FileAlreadyExistException": {
+    "constructor": [
+      "path"
+    ]
+  },
+  "ContentHasMutatedException": {
+    "constructor": [
+      "path"
+    ]
+  },
+  "InvalidUpdateRecordException": {
+    "constructor": []
+  },
+  "MergeConflictException": {
+    "constructor": [
+      "path"
+    ]
+  },
+  "UnsuccessfulWorkflowExecution": {
+    "constructor": []
+  },
+  "UnimplementedException": {
+    "constructor": []
+  },
+  "formatValidator": [
+    "data",
+    "dataSchema",
+    "formats"
+  ],
+  "isValidElementName": [
+    "name"
+  ],
+  "ownKeys": [
+    "o"
+  ],
+  "source": [
+    "tree"
+  ],
+  "empty": [],
+  "chain": [
+    "rules"
+  ],
+  "apply": [
+    "source",
+    "rules"
+  ],
+  "mergeWith": [
+    "source",
+    "param"
+  ],
+  "noop": [],
+  "filter": [
+    "predicate"
+  ],
+  "asSource": [
+    "rule"
+  ],
+  "branchAndMerge": [
+    "rule",
+    "param"
+  ],
+  "when": [
+    "predicate",
+    "operator"
+  ],
+  "partitionApplyMerge": [
+    "predicate",
+    "ruleYes",
+    "ruleNo"
+  ],
+  "forEach": [
+    "operator"
+  ],
+  "composeFileOperators": [
+    "operators"
+  ],
+  "applyToSubtree": [
+    "path",
+    "rules"
+  ],
+  "InvalidRuleResultException": {
+    "constructor": [
+      "value"
+    ]
+  },
+  "InvalidSourceResultException": {
+    "constructor": [
+      "value"
+    ]
+  },
+  "_getTypeOfResult": [
+    "value"
+  ],
+  "callSource": [
+    "source",
+    "context"
+  ],
+  "callRule": [
+    "rule",
+    "input",
+    "context"
+  ],
+  "callRuleAsync": [
+    "rule",
+    "tree",
+    "context"
+  ],
+  "move": [
+    "from",
+    "to"
+  ],
+  "generateStringOfLength": [
+    "l"
+  ],
+  "random": [
+    "from",
+    "to"
+  ],
+  "default_1": [],
+  "externalSchematic": [
+    "collectionName",
+    "schematicName",
+    "options",
+    "executionOptions"
+  ],
+  "schematic": [
+    "schematicName",
+    "options",
+    "executionOptions"
+  ],
+  "OptionIsNotDefinedException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "UnknownPipeException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "InvalidPipeException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "applyContentTemplate": [
+    "options"
+  ],
+  "contentTemplate": [
+    "options"
+  ],
+  "applyPathTemplate": [
+    "data",
+    "param"
+  ],
+  "pathTemplate": [
+    "options"
+  ],
+  "renameTemplateFiles": [],
+  "template": [
+    "options"
+  ],
+  "applyTemplates": [
+    "options"
+  ],
+  "url": [
+    "urlString"
+  ],
+  "DryRunSink": {
+    "_subject": [],
+    "_fileDoesNotExistExceptionSet": [],
+    "_fileAlreadyExistExceptionSet": [],
+    "reporter": [],
+    "constructor": [
+      "host",
+      "param"
+    ],
+    "_fileAlreadyExistException": [
+      "path"
+    ],
+    "_fileDoesNotExistException": [
+      "path"
+    ],
+    "_done": []
+  },
+  "HostSink": {
+    "_host": [],
+    "_force": [],
+    "_filesToDelete": [],
+    "_filesToRename": [],
+    "_filesToCreate": [],
+    "_filesToUpdate": [],
+    "constructor": [
+      "_host",
+      "param"
+    ],
+    "_validateCreateAction": [
+      "action"
+    ],
+    "_validateFileExists": [
+      "p"
+    ],
+    "_overwriteFile": [
+      "path",
+      "content"
+    ],
+    "_createFile": [
+      "path",
+      "content"
+    ],
+    "_renameFile": [
+      "from",
+      "to"
+    ],
+    "_deleteFile": [
+      "path"
+    ],
+    "_done": []
+  },
+  "SimpleSinkBase": {
+    "preCommitAction": [],
+    "postCommitAction": [],
+    "preCommit": [],
+    "postCommit": [],
+    "_fileAlreadyExistException": [
+      "path"
+    ],
+    "_fileDoesNotExistException": [
+      "path"
+    ],
+    "_validateOverwriteAction": [
+      "action"
+    ],
+    "_validateCreateAction": [
+      "action"
+    ],
+    "_validateRenameAction": [
+      "action"
+    ],
+    "_validateDeleteAction": [
+      "action"
+    ],
+    "validateSingleAction": [
+      "action"
+    ],
+    "commitSingleAction": [
+      "action"
+    ],
+    "commit": [
+      "tree"
+    ]
+  },
+  "Noop": [],
+  "isPromiseLike": [
+    "value"
+  ],
+  "UnknownActionException": {
+    "constructor": [
+      "action"
+    ]
+  },
+  "ActionList": {
+    "_actions": [],
+    "_action": [
+      "action"
+    ],
+    "create": [
+      "path",
+      "content"
+    ],
+    "overwrite": [
+      "path",
+      "content"
+    ],
+    "rename": [
+      "path",
+      "to"
+    ],
+    "delete": [
+      "path"
+    ],
+    "optimize": [],
+    "push": [
+      "action"
+    ],
+    "get": [
+      "i"
+    ],
+    "has": [
+      "action"
+    ],
+    "find": [
+      "predicate"
+    ],
+    "forEach": [
+      "fn",
+      "thisArg"
+    ],
+    "length": []
+  },
+  "isContentAction": [
+    "action"
+  ],
+  "DelegateTree": {
+    "_other": [],
+    "constructor": [
+      "_other"
+    ],
+    "branch": [],
+    "merge": [
+      "other",
+      "strategy"
+    ],
+    "root": [],
+    "read": [
+      "path"
+    ],
+    "readText": [
+      "path"
+    ],
+    "readJson": [
+      "path"
+    ],
+    "exists": [
+      "path"
+    ],
+    "get": [
+      "path"
+    ],
+    "getDir": [
+      "path"
+    ],
+    "visit": [
+      "visitor"
+    ],
+    "overwrite": [
+      "path",
+      "content"
+    ],
+    "beginUpdate": [
+      "path"
+    ],
+    "commitUpdate": [
+      "record"
+    ],
+    "create": [
+      "path",
+      "content"
+    ],
+    "delete": [
+      "path"
+    ],
+    "rename": [
+      "from",
+      "to"
+    ],
+    "apply": [
+      "action",
+      "strategy"
+    ],
+    "actions": []
+  },
+  "EmptyTree": {
+    "constructor": []
+  },
+  "SimpleFileEntry": {
+    "_path": [],
+    "_content": [],
+    "constructor": [
+      "_path",
+      "_content"
+    ],
+    "path": [],
+    "content": []
+  },
+  "LazyFileEntry": {
+    "_path": [],
+    "_load": [],
+    "_content": [],
+    "constructor": [
+      "_path",
+      "_load"
+    ],
+    "path": [],
+    "content": []
+  },
+  "HostDirEntry": {
+    "parent": [],
+    "path": [],
+    "_host": [],
+    "_tree": [],
+    "constructor": [
+      "parent",
+      "path",
+      "_host",
+      "_tree"
+    ],
+    "subdirs": [],
+    "subfiles": [],
+    "dir": [
+      "name"
+    ],
+    "file": [
+      "name"
+    ],
+    "visit": [
+      "visitor"
+    ],
+    "getSubfilesRecursively": []
+  },
+  "HostTree": {
+    "_backend": [],
+    "_id": [],
+    "_record": [],
+    "_recordSync": [],
+    "_ancestry": [],
+    "_dirCache": [],
+    "isHostTree": [
+      "tree"
+    ],
+    "constructor": [
+      "param"
+    ],
+    "_normalizePath": [
+      "path"
+    ],
+    "_willCreate": [
+      "path"
+    ],
+    "_willOverwrite": [
+      "path"
+    ],
+    "_willDelete": [
+      "path"
+    ],
+    "_willRename": [
+      "path"
+    ],
+    "branch": [],
+    "isAncestorOf": [
+      "tree"
+    ],
+    "merge": [
+      "other",
+      "param"
+    ],
+    "root": [],
+    "read": [
+      "path"
+    ],
+    "readText": [
+      "path"
+    ],
+    "readJson": [
+      "path"
+    ],
+    "exists": [
+      "path"
+    ],
+    "get": [
+      "path"
+    ],
+    "getDir": [
+      "path"
+    ],
+    "visit": [
+      "visitor"
+    ],
+    "overwrite": [
+      "path",
+      "content"
+    ],
+    "beginUpdate": [
+      "path"
+    ],
+    "commitUpdate": [
+      "record"
+    ],
+    "create": [
+      "path",
+      "content"
+    ],
+    "delete": [
+      "path"
+    ],
+    "rename": [
+      "from",
+      "to"
+    ],
+    "apply": [
+      "action",
+      "strategy"
+    ],
+    "generateActions": [],
+    "actions": []
+  },
+  "HostCreateTree": {
+    "constructor": [
+      "host"
+    ]
+  },
+  "FilterHostTree": {
+    "constructor": [
+      "tree",
+      "param"
+    ]
+  },
+  "_recurse": [
+    "entry"
+  ],
+  "CannotCreateFileException": {
+    "constructor": [
+      "path"
+    ]
+  },
+  "NullTreeDirEntry": {
+    "path": [],
+    "parent": [],
+    "constructor": [
+      "path"
+    ],
+    "subdirs": [],
+    "subfiles": [],
+    "dir": [
+      "name"
+    ],
+    "file": [
+      "_name"
+    ],
+    "visit": []
+  },
+  "NullTree": {
+    "branch": [],
+    "merge": [
+      "_other",
+      "_strategy"
+    ],
+    "root": [],
+    "exists": [
+      "_path"
+    ],
+    "read": [
+      "_path"
+    ],
+    "readText": [
+      "path"
+    ],
+    "readJson": [
+      "path"
+    ],
+    "get": [
+      "_path"
+    ],
+    "getDir": [
+      "path"
+    ],
+    "visit": [],
+    "beginUpdate": [
+      "path"
+    ],
+    "commitUpdate": [
+      "record"
+    ],
+    "copy": [
+      "path",
+      "_to"
+    ],
+    "delete": [
+      "path"
+    ],
+    "create": [
+      "path",
+      "_content"
+    ],
+    "rename": [
+      "path",
+      "_to"
+    ],
+    "overwrite": [
+      "path",
+      "_content"
+    ],
+    "apply": [
+      "_action",
+      "_strategy"
+    ],
+    "actions": []
+  },
+  "IndexOutOfBoundException": {
+    "constructor": [
+      "index",
+      "min",
+      "param"
+    ]
+  },
+  "UpdateRecorderBase": {
+    "data": [],
+    "bom": [],
+    "_path": [],
+    "content": [],
+    "constructor": [
+      "data",
+      "path",
+      "param",
+      "param"
+    ],
+    "createFromFileEntry": [
+      "entry"
+    ],
+    "path": [],
+    "_assertIndex": [
+      "index"
+    ],
+    "insertLeft": [
+      "index",
+      "content"
+    ],
+    "insertRight": [
+      "index",
+      "content"
+    ],
+    "remove": [
+      "index",
+      "length"
+    ],
+    "apply": [
+      "content"
+    ]
+  },
+  "ScopedDirEntry": {
+    "_base": [],
+    "scope": [],
+    "constructor": [
+      "_base",
+      "scope"
+    ],
+    "parent": [],
+    "path": [],
+    "subdirs": [],
+    "subfiles": [],
+    "dir": [
+      "name"
+    ],
+    "file": [
+      "name"
+    ],
+    "visit": [
+      "visitor"
+    ]
+  },
+  "ScopedTree": {
+    "_base": [],
+    "_root": [],
+    "constructor": [
+      "_base",
+      "scope"
+    ],
+    "root": [],
+    "branch": [],
+    "merge": [
+      "other",
+      "strategy"
+    ],
+    "read": [
+      "path"
+    ],
+    "readText": [
+      "path"
+    ],
+    "readJson": [
+      "path"
+    ],
+    "exists": [
+      "path"
+    ],
+    "get": [
+      "path"
+    ],
+    "getDir": [
+      "path"
+    ],
+    "visit": [
+      "visitor"
+    ],
+    "overwrite": [
+      "path",
+      "content"
+    ],
+    "beginUpdate": [
+      "path"
+    ],
+    "commitUpdate": [
+      "record"
+    ],
+    "create": [
+      "path",
+      "content"
+    ],
+    "delete": [
+      "path"
+    ],
+    "rename": [
+      "from",
+      "to"
+    ],
+    "apply": [
+      "action",
+      "strategy"
+    ],
+    "actions": [],
+    "_fullPath": [
+      "path"
+    ],
+    "_fullPathAction": [
+      "action"
+    ]
+  },
+  "ScopedFileEntry": {
+    "_base": [],
+    "scope": [],
+    "constructor": [
+      "_base",
+      "scope"
+    ],
+    "path": [],
+    "content": []
+  },
+  "branch": [
+    "tree"
+  ],
+  "merge": [
+    "tree",
+    "other",
+    "param"
+  ],
+  "partition": [
+    "tree",
+    "predicate"
+  ],
+  "BaseWorkflow": {
+    "_engine": [],
+    "_engineHost": [],
+    "_registry": [],
+    "_host": [],
+    "_reporter": [],
+    "_lifeCycle": [],
+    "_context": [],
+    "_force": [],
+    "_dryRun": [],
+    "constructor": [
+      "options"
+    ],
+    "context": [],
+    "engine": [],
+    "engineHost": [],
+    "registry": [],
+    "reporter": [],
+    "lifeCycle": [],
+    "_createSinks": [],
+    "execute": [
+      "options"
+    ]
+  },
+  "BuiltinTaskExecutor": {
+    "NodePackage": [],
+    "RepositoryInitializer": [],
+    "RunSchematic": []
+  },
+  "UnknownPackageManagerException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "NodePackageInstallTask": {
+    "quiet": [],
+    "hideOutput": [],
+    "allowScripts": [],
+    "workingDirectory": [],
+    "packageManager": [],
+    "packageName": [],
+    "constructor": [
+      "options"
+    ],
+    "toConfiguration": []
+  },
+  "execute": [
+    "args",
+    "ignoreErrorStream"
+  ],
+  "RepositoryInitializerTask": {
+    "workingDirectory": [],
+    "commitOptions": [],
+    "constructor": [
+      "workingDirectory",
+      "commitOptions"
+    ],
+    "toConfiguration": []
+  },
+  "RunSchematicTask": {
+    "_collection": [],
+    "_schematic": [],
+    "_options": [],
+    "constructor": [
+      "c",
+      "s",
+      "o"
+    ],
+    "toConfiguration": []
+  },
+  "UnitTestTree": {
+    "files": [],
+    "readContent": [
+      "path"
+    ]
+  },
+  "SchematicTestRunner": {
+    "_collectionName": [],
+    "_engineHost": [],
+    "_engine": [],
+    "_collection": [],
+    "_logger": [],
+    "constructor": [
+      "_collectionName",
+      "collectionPath"
+    ],
+    "engine": [],
+    "logger": [],
+    "tasks": [],
+    "registerCollection": [
+      "collectionName",
+      "collectionPath"
+    ],
+    "runSchematic": [
+      "schematicName",
+      "opts",
+      "tree"
+    ],
+    "runExternalSchematic": [
+      "collectionName",
+      "schematicName",
+      "opts",
+      "tree"
+    ],
+    "callRule": [
+      "rule",
+      "tree",
+      "parentContext"
+    ]
+  },
+  "ExportStringRef": {
+    "_ref": [],
+    "_module": [],
+    "_path": [],
+    "constructor": [
+      "ref",
+      "param",
+      "param"
+    ],
+    "ref": [],
+    "module": [],
+    "path": []
+  },
+  "FallbackEngineHost": {
+    "_hosts": [],
+    "addHost": [
+      "host"
+    ],
+    "createCollectionDescription": [
+      "name",
+      "requester"
+    ],
+    "createSchematicDescription": [
+      "name",
+      "collection"
+    ],
+    "getSchematicRuleFactory": [
+      "schematic",
+      "collection"
+    ],
+    "createSourceFromUrl": [
+      "url",
+      "context"
+    ],
+    "transformOptions": [
+      "schematic",
+      "options",
+      "context"
+    ],
+    "transformContext": [
+      "context"
+    ],
+    "listSchematicNames": [
+      "collection",
+      "includeHidden"
+    ],
+    "createTaskExecutor": [
+      "name"
+    ],
+    "hasTaskExecutor": [
+      "name"
+    ]
+  },
+  "CollectionCannotBeResolvedException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "InvalidCollectionJsonException": {
+    "constructor": [
+      "_name",
+      "path",
+      "jsonException"
+    ]
+  },
+  "SchematicMissingFactoryException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "FactoryCannotBeResolvedException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "CollectionMissingSchematicsMapException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "CollectionMissingFieldsException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "SchematicMissingFieldsException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "SchematicMissingDescriptionException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "SchematicNameCollisionException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "FileSystemEngineHostBase": {
+    "_transforms": [],
+    "_contextTransforms": [],
+    "_taskFactories": [],
+    "listSchematicNames": [
+      "collection",
+      "includeHidden"
+    ],
+    "registerOptionsTransform": [
+      "t"
+    ],
+    "registerContextTransform": [
+      "t"
+    ],
+    "createCollectionDescription": [
+      "name",
+      "requester"
+    ],
+    "createSchematicDescription": [
+      "name",
+      "collection"
+    ],
+    "createSourceFromUrl": [
+      "url"
+    ],
+    "transformOptions": [
+      "schematic",
+      "options",
+      "context"
+    ],
+    "transformContext": [
+      "context"
+    ],
+    "getSchematicRuleFactory": [
+      "schematic",
+      "_collection"
+    ],
+    "registerTaskExecutor": [
+      "factory",
+      "options"
+    ],
+    "createTaskExecutor": [
+      "name"
+    ],
+    "hasTaskExecutor": [
+      "name"
+    ]
+  },
+  "transform": [],
+  "FileSystemEngineHost": {
+    "_root": [],
+    "constructor": [
+      "_root"
+    ],
+    "_resolveCollectionPath": [
+      "name"
+    ],
+    "_resolveReferenceString": [
+      "refString",
+      "parentPath"
+    ],
+    "_transformCollectionDescription": [
+      "name",
+      "desc"
+    ],
+    "_transformSchematicDescription": [
+      "name",
+      "_collection",
+      "desc"
+    ],
+    "hasTaskExecutor": [
+      "name"
+    ],
+    "createTaskExecutor": [
+      "name"
+    ]
+  },
+  "readJsonFile": [
+    "path"
+  ],
+  "NodePackageDoesNotSupportSchematics": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "NodeModulesEngineHost": {
+    "paths": [],
+    "constructor": [
+      "paths"
+    ],
+    "resolve": [
+      "name",
+      "requester",
+      "param"
+    ],
+    "_resolveCollectionPath": [
+      "name",
+      "requester"
+    ],
+    "_resolveReferenceString": [
+      "refString",
+      "parentPath",
+      "collectionDescription"
+    ],
+    "_transformCollectionDescription": [
+      "name",
+      "desc"
+    ],
+    "_transformSchematicDescription": [
+      "name",
+      "_collection",
+      "desc"
+    ]
+  },
+  "NodeModulesTestEngineHost": {
+    "tasks": [],
+    "clearTasks": [],
+    "registerCollection": [
+      "name",
+      "path"
+    ],
+    "transformContext": [
+      "context"
+    ],
+    "_resolveCollectionPath": [
+      "name",
+      "requester"
+    ]
+  },
+  "InvalidInputOptions": {
+    "constructor": [
+      "options",
+      "errors"
+    ]
+  },
+  "validateOptionsWithSchema": [
+    "registry"
+  ],
+  "NodeWorkflow": {
+    "constructor": [
+      "hostOrRoot",
+      "options"
+    ],
+    "engine": [],
+    "engineHost": []
+  }
+}

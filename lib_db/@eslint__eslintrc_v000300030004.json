@@ -1,0 +1,419 @@
+{
+  "getDiff": [
+    "current",
+    "prev"
+  ],
+  "createBaseConfigArray": [
+    "param"
+  ],
+  "createCLIConfigArray": [
+    "param"
+  ],
+  "ConfigurationNotFoundError": {
+    "constructor": [
+      "directoryPath"
+    ]
+  },
+  "CascadingConfigArrayFactory": {
+    "constructor": [
+      "param"
+    ],
+    "cwd": [],
+    "getConfigArrayForFile": [
+      "filePath",
+      "param"
+    ],
+    "setOverrideConfig": [
+      "configData"
+    ],
+    "clearCache": [],
+    "_loadConfigInAncestors": [
+      "directoryPath",
+      "param"
+    ],
+    "_cacheConfig": [
+      "directoryPath",
+      "configArray"
+    ],
+    "_finalizeConfigArray": [
+      "configArray",
+      "directoryPath",
+      "ignoreNotFoundError"
+    ]
+  },
+  "getMatchedIndices": [
+    "elements",
+    "filePath"
+  ],
+  "isNonNullObject": [
+    "x"
+  ],
+  "mergeWithoutOverwrite": [
+    "target",
+    "source"
+  ],
+  "PluginConflictError": {
+    "constructor": [
+      "pluginId",
+      "plugins"
+    ]
+  },
+  "mergePlugins": [
+    "target",
+    "source"
+  ],
+  "mergeRuleConfigs": [
+    "target",
+    "source"
+  ],
+  "createConfig": [
+    "instance",
+    "indices"
+  ],
+  "collect": [
+    "pluginId",
+    "defs",
+    "map"
+  ],
+  "deleteMutationMethods": [
+    "map"
+  ],
+  "initPluginMemberMaps": [
+    "elements",
+    "slots"
+  ],
+  "ensurePluginMemberMaps": [
+    "instance"
+  ],
+  "ConfigArray": {
+    "pluginEnvironments": [],
+    "pluginProcessors": [],
+    "pluginRules": [],
+    "isRoot": [],
+    "extractConfig": [
+      "filePath"
+    ],
+    "isAdditionalTargetPath": [
+      "filePath"
+    ]
+  },
+  "getUsedExtractedConfigs": [
+    "instance"
+  ],
+  "ConfigDependency": {
+    "constructor": [
+      "param"
+    ],
+    "toJSON": []
+  },
+  "startsWith": [
+    "xs",
+    "ys"
+  ],
+  "ExtractedConfig": {
+    "constructor": [],
+    "toCompatibleObjectAsConfigFileContent": []
+  },
+  "getCommonAncestorPath": [
+    "sourcePaths"
+  ],
+  "relative": [
+    "from",
+    "to"
+  ],
+  "dirSuffix": [
+    "filePath"
+  ],
+  "IgnorePattern": {
+    "DefaultPatterns": [],
+    "createDefaultIgnore": [
+      "cwd"
+    ],
+    "createIgnore": [
+      "ignorePatterns"
+    ],
+    "constructor": [
+      "patterns",
+      "basePath"
+    ],
+    "getPatternsRelativeTo": [
+      "newBasePath"
+    ]
+  },
+  "normalizePatterns": [
+    "patterns"
+  ],
+  "toMatcher": [
+    "patterns"
+  ],
+  "patternToJson": [
+    "param"
+  ],
+  "OverrideTester": {
+    "create": [
+      "files",
+      "excludedFiles",
+      "basePath"
+    ],
+    "and": [
+      "a",
+      "b"
+    ],
+    "constructor": [
+      "patterns",
+      "basePath",
+      "param"
+    ],
+    "test": [
+      "filePath"
+    ],
+    "toJSON": []
+  },
+  "isFilePath": [
+    "nameOrPath"
+  ],
+  "readFile": [
+    "filePath"
+  ],
+  "loadYAMLConfigFile": [
+    "filePath"
+  ],
+  "loadJSONConfigFile": [
+    "filePath"
+  ],
+  "loadLegacyConfigFile": [
+    "filePath"
+  ],
+  "loadJSConfigFile": [
+    "filePath"
+  ],
+  "loadPackageJSONConfigFile": [
+    "filePath"
+  ],
+  "loadESLintIgnoreFile": [
+    "filePath"
+  ],
+  "configInvalidError": [
+    "configName",
+    "importerName",
+    "messageTemplate"
+  ],
+  "loadConfigFile": [
+    "filePath"
+  ],
+  "writeDebugLogForLoading": [
+    "request",
+    "relativeTo",
+    "filePath"
+  ],
+  "createContext": [
+    "param",
+    "providedType",
+    "providedName",
+    "providedFilePath",
+    "providedMatchBasePath"
+  ],
+  "normalizePlugin": [
+    "plugin"
+  ],
+  "ConfigArrayFactory": {
+    "constructor": [
+      "param"
+    ],
+    "create": [
+      "configData",
+      "param"
+    ],
+    "loadFile": [
+      "filePath",
+      "param"
+    ],
+    "loadInDirectory": [
+      "directoryPath",
+      "param"
+    ],
+    "getPathToConfigFileInDirectory": [
+      "directoryPath"
+    ],
+    "loadESLintIgnore": [
+      "filePath"
+    ],
+    "loadDefaultESLintIgnore": [],
+    "_loadConfigData": [
+      "ctx"
+    ],
+    "_normalizeESLintIgnoreData": [
+      "ignorePatterns",
+      "ctx"
+    ],
+    "_normalizeConfigData": [
+      "configData",
+      "ctx"
+    ],
+    "_normalizeObjectConfigData": [
+      "configData",
+      "ctx"
+    ],
+    "_normalizeObjectConfigDataBody": [
+      "param",
+      "ctx"
+    ],
+    "_loadExtends": [
+      "extendName",
+      "ctx"
+    ],
+    "_loadExtendedBuiltInConfig": [
+      "extendName",
+      "ctx"
+    ],
+    "_loadExtendedPluginConfig": [
+      "extendName",
+      "ctx"
+    ],
+    "_loadExtendedShareableConfig": [
+      "extendName",
+      "ctx"
+    ],
+    "_loadPlugins": [
+      "names",
+      "ctx"
+    ],
+    "_loadParser": [
+      "nameOrPath",
+      "ctx"
+    ],
+    "_loadPlugin": [
+      "name",
+      "ctx"
+    ],
+    "_takeFileExtensionProcessors": [
+      "plugins",
+      "ctx"
+    ]
+  },
+  "translateESLintRC": [
+    "eslintrcConfig",
+    "param"
+  ],
+  "FlatCompat": {
+    "constructor": [
+      "param"
+    ],
+    "config": [
+      "eslintrcConfig"
+    ],
+    "env": [
+      "envConfig"
+    ],
+    "extends": [
+      "param"
+    ],
+    "plugins": [
+      "param"
+    ]
+  },
+  "getRuleSeverity": [
+    "ruleConfig"
+  ],
+  "normalizeToStrings": [
+    "config"
+  ],
+  "isErrorSeverity": [
+    "ruleConfig"
+  ],
+  "isValidSeverity": [
+    "ruleConfig"
+  ],
+  "isEverySeverityValid": [
+    "config"
+  ],
+  "normalizeConfigGlobal": [
+    "configuredValue"
+  ],
+  "ConfigValidator": {
+    "constructor": [
+      "param"
+    ],
+    "getRuleOptionsSchema": [
+      "rule"
+    ],
+    "validateRuleSeverity": [
+      "options"
+    ],
+    "validateRuleSchema": [
+      "rule",
+      "localOptions"
+    ],
+    "validateRuleOptions": [
+      "rule",
+      "ruleId",
+      "options",
+      "param"
+    ],
+    "validateEnvironment": [
+      "environment",
+      "source",
+      "param"
+    ],
+    "validateRules": [
+      "rulesConfig",
+      "source",
+      "param"
+    ],
+    "validateGlobals": [
+      "globalsConfig",
+      "param"
+    ],
+    "validateProcessor": [
+      "processorName",
+      "source",
+      "getProcessor"
+    ],
+    "formatErrors": [
+      "errors"
+    ],
+    "validateConfigSchema": [
+      "config",
+      "param"
+    ],
+    "validate": [
+      "config",
+      "source",
+      "getAdditionalRule",
+      "getAdditionalEnv"
+    ],
+    "validateConfigArray": [
+      "configArray"
+    ]
+  },
+  "isObjectNotArray": [
+    "value"
+  ],
+  "deepMergeObjects": [
+    "first",
+    "second"
+  ],
+  "deepMergeArrays": [
+    "first",
+    "second"
+  ],
+  "emitDeprecationWarning": [
+    "source",
+    "errorCode"
+  ],
+  "normalizePackageName": [
+    "name",
+    "prefix"
+  ],
+  "getShorthandName": [
+    "fullname",
+    "prefix"
+  ],
+  "getNamespaceFromTerm": [
+    "term"
+  ],
+  "resolve": [
+    "moduleName",
+    "relativeToPath"
+  ]
+}
