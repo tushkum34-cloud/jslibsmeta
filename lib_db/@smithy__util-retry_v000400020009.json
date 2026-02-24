@@ -1,0 +1,107 @@
+{
+  "DefaultRateLimiter": {
+    "setTimeoutFn": [],
+    "beta": [],
+    "minCapacity": [],
+    "minFillRate": [],
+    "scaleConstant": [],
+    "smooth": [],
+    "currentCapacity": [],
+    "enabled": [],
+    "lastMaxRate": [],
+    "measuredTxRate": [],
+    "requestCount": [],
+    "fillRate": [],
+    "lastThrottleTime": [],
+    "lastTimestamp": [],
+    "lastTxRateBucket": [],
+    "maxCapacity": [],
+    "timeWindow": [],
+    "constructor": [
+      "options"
+    ],
+    "getCurrentTimeInSeconds": [],
+    "getSendToken": [],
+    "acquireTokenBucket": [],
+    "refillTokenBucket": [],
+    "updateClientSendingRate": [
+      "response"
+    ],
+    "calculateTimeWindow": [],
+    "cubicThrottle": [],
+    "cubicSuccess": [],
+    "enableTokenBucket": [],
+    "updateTokenBucketRate": [],
+    "updateMeasuredRate": [],
+    "getPrecise": []
+  },
+  "getDefaultRetryBackoffStrategy": [],
+  "computeNextBackoffDelay": [
+    "attempts"
+  ],
+  "setDelayBase": [
+    "delay"
+  ],
+  "createDefaultRetryToken": [
+    "param"
+  ],
+  "getRetryCount": [],
+  "getRetryDelay": [],
+  "getRetryCost": [],
+  "StandardRetryStrategy": {
+    "maxAttempts": [],
+    "mode": [],
+    "capacity": [],
+    "retryBackoffStrategy": [],
+    "maxAttemptsProvider": [],
+    "constructor": [
+      "maxAttemptsProvider"
+    ],
+    "acquireInitialRetryToken": [
+      "retryTokenScope"
+    ],
+    "refreshRetryTokenForRetry": [
+      "token",
+      "errorInfo"
+    ],
+    "recordSuccess": [
+      "token"
+    ],
+    "getCapacity": [],
+    "getMaxAttempts": [],
+    "shouldRetry": [],
+    "getCapacityCost": [],
+    "isRetryableError": []
+  },
+  "AdaptiveRetryStrategy": {
+    "maxAttemptsProvider": [],
+    "rateLimiter": [],
+    "standardRetryStrategy": [],
+    "mode": [],
+    "constructor": [
+      "maxAttemptsProvider",
+      "options"
+    ],
+    "acquireInitialRetryToken": [
+      "retryTokenScope"
+    ],
+    "refreshRetryTokenForRetry": [
+      "tokenToRenew",
+      "errorInfo"
+    ],
+    "recordSuccess": [
+      "token"
+    ]
+  },
+  "ConfiguredRetryStrategy": {
+    "computeNextBackoffDelay": [],
+    "constructor": [
+      "maxAttempts",
+      "computeNextBackoffDelay"
+    ],
+    "refreshRetryTokenForRetry": [
+      "tokenToRenew",
+      "errorInfo"
+    ]
+  }
+}
