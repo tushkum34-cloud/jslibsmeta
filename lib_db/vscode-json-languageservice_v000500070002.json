@@ -1,0 +1,909 @@
+{
+  "getLanguageService": [
+    "params"
+  ],
+  "isSchemaResolveError": [
+    "code"
+  ],
+  "ASTNodeImpl": {
+    "constructor": [
+      "parent",
+      "offset",
+      "param"
+    ],
+    "children": [],
+    "toString": []
+  },
+  "NullASTNodeImpl": {
+    "constructor": [
+      "parent",
+      "offset"
+    ]
+  },
+  "BooleanASTNodeImpl": {
+    "constructor": [
+      "parent",
+      "boolValue",
+      "offset"
+    ]
+  },
+  "ArrayASTNodeImpl": {
+    "constructor": [
+      "parent",
+      "offset"
+    ],
+    "children": []
+  },
+  "NumberASTNodeImpl": {
+    "constructor": [
+      "parent",
+      "offset"
+    ]
+  },
+  "StringASTNodeImpl": {
+    "constructor": [
+      "parent",
+      "offset",
+      "length"
+    ]
+  },
+  "PropertyASTNodeImpl": {
+    "constructor": [
+      "parent",
+      "offset",
+      "keyNode"
+    ],
+    "children": []
+  },
+  "ObjectASTNodeImpl": {
+    "constructor": [
+      "parent",
+      "offset"
+    ],
+    "children": []
+  },
+  "asSchema": [
+    "schema"
+  ],
+  "normalizeId": [
+    "id"
+  ],
+  "getSchemaDraftFromId": [
+    "schemaId"
+  ],
+  "EvaluationContext": {
+    "constructor": [
+      "schemaDraft"
+    ]
+  },
+  "SchemaCollector": {
+    "constructor": [
+      "param",
+      "exclude"
+    ],
+    "add": [
+      "schema"
+    ],
+    "merge": [
+      "other"
+    ],
+    "include": [
+      "node"
+    ],
+    "newSub": []
+  },
+  "NoOpSchemaCollector": {
+    "constructor": [],
+    "schemas": [],
+    "add": [
+      "_schema"
+    ],
+    "merge": [
+      "_other"
+    ],
+    "include": [
+      "_node"
+    ],
+    "newSub": []
+  },
+  "ValidationResult": {
+    "constructor": [],
+    "hasProblems": [],
+    "merge": [
+      "validationResult"
+    ],
+    "mergeEnumValues": [
+      "validationResult"
+    ],
+    "updateEnumMismatchProblemMessages": [],
+    "mergePropertyMatch": [
+      "propertyValidationResult"
+    ],
+    "mergeProcessedProperties": [
+      "validationResult"
+    ],
+    "compare": [
+      "other"
+    ]
+  },
+  "newJSONDocument": [
+    "root",
+    "param",
+    "param"
+  ],
+  "getNodeValue": [
+    "node"
+  ],
+  "getNodePath": [
+    "node"
+  ],
+  "contains": [
+    "node",
+    "offset",
+    "param"
+  ],
+  "JSONDocument": {
+    "constructor": [
+      "root",
+      "param",
+      "param"
+    ],
+    "getNodeFromOffset": [
+      "offset",
+      "param"
+    ],
+    "visit": [
+      "visitor"
+    ],
+    "validate": [
+      "textDocument",
+      "schema",
+      "param",
+      "schemaDraft"
+    ],
+    "getMatchingSchemas": [
+      "schema",
+      "param",
+      "exclude"
+    ]
+  },
+  "doVisit": [
+    "node"
+  ],
+  "getSchemaDraft": [
+    "schema",
+    "param"
+  ],
+  "validate": [
+    "n",
+    "schema",
+    "validationResult",
+    "matchingSchemas",
+    "context"
+  ],
+  "_validateNode": [],
+  "matchesType": [
+    "type"
+  ],
+  "testAlternatives": [
+    "alternatives",
+    "maxOneMatch"
+  ],
+  "testBranch": [
+    "schema"
+  ],
+  "testCondition": [
+    "ifSchema",
+    "thenSchema",
+    "elseSchema"
+  ],
+  "_tryDiscriminatorOptimization": [
+    "alternatives"
+  ],
+  "buildConstMap": [
+    "getSchemas"
+  ],
+  "findDiscriminator": [
+    "constMap",
+    "getValue"
+  ],
+  "_validateNumberNode": [
+    "node"
+  ],
+  "normalizeFloats": [
+    "float"
+  ],
+  "getExclusiveLimit": [
+    "limit",
+    "exclusive"
+  ],
+  "getLimit": [
+    "limit",
+    "exclusive"
+  ],
+  "_validateStringNode": [
+    "node"
+  ],
+  "_validateArrayNode": [
+    "node"
+  ],
+  "hasDuplicates": [],
+  "_validateObjectNode": [
+    "node"
+  ],
+  "propertyProcessed": [
+    "prop"
+  ],
+  "_validatePropertyDependencies": [
+    "key",
+    "propertyDep"
+  ],
+  "parse": [
+    "textDocument",
+    "config"
+  ],
+  "_scanNext": [],
+  "_accept": [
+    "token"
+  ],
+  "_errorAtRange": [
+    "message",
+    "code",
+    "startOffset",
+    "endOffset",
+    "param"
+  ],
+  "_error": [
+    "message",
+    "code",
+    "param",
+    "param",
+    "param"
+  ],
+  "_checkScanError": [],
+  "_finalize": [
+    "node",
+    "scanNext"
+  ],
+  "_parseArray": [
+    "parent"
+  ],
+  "_parseProperty": [
+    "parent",
+    "keysSeen"
+  ],
+  "_parseObject": [
+    "parent"
+  ],
+  "_parseString": [
+    "parent"
+  ],
+  "_parseNumber": [
+    "parent"
+  ],
+  "_parseLiteral": [
+    "parent"
+  ],
+  "_parseValue": [
+    "parent"
+  ],
+  "JSONCompletion": {
+    "constructor": [
+      "schemaService",
+      "param",
+      "param",
+      "param"
+    ],
+    "doResolve": [
+      "item"
+    ],
+    "doComplete": [
+      "document",
+      "position",
+      "doc"
+    ],
+    "getPropertyCompletions": [
+      "schema",
+      "doc",
+      "node",
+      "addValue",
+      "separatorAfter",
+      "collector"
+    ],
+    "getSchemaLessPropertyCompletions": [
+      "doc",
+      "node",
+      "currentKey",
+      "collector"
+    ],
+    "getSchemaLessValueCompletions": [
+      "doc",
+      "node",
+      "offset",
+      "document",
+      "collector"
+    ],
+    "getValueCompletions": [
+      "schema",
+      "doc",
+      "node",
+      "offset",
+      "document",
+      "collector",
+      "types"
+    ],
+    "getContributedValueCompletions": [
+      "doc",
+      "node",
+      "offset",
+      "document",
+      "collector",
+      "collectionPromises"
+    ],
+    "addSchemaValueCompletions": [
+      "schema",
+      "separatorAfter",
+      "collector",
+      "types"
+    ],
+    "addDefaultValueCompletions": [
+      "schema",
+      "separatorAfter",
+      "collector",
+      "param"
+    ],
+    "addEnumValueCompletions": [
+      "schema",
+      "separatorAfter",
+      "collector"
+    ],
+    "collectTypes": [
+      "schema",
+      "types"
+    ],
+    "addFillerValueCompletions": [
+      "types",
+      "separatorAfter",
+      "collector"
+    ],
+    "addBooleanValueCompletion": [
+      "value",
+      "separatorAfter",
+      "collector"
+    ],
+    "addNullValueCompletion": [
+      "separatorAfter",
+      "collector"
+    ],
+    "addDollarSchemaCompletions": [
+      "separatorAfter",
+      "collector"
+    ],
+    "getLabelForValue": [
+      "value"
+    ],
+    "getValueFromLabel": [
+      "value"
+    ],
+    "getFilterTextForValue": [
+      "value"
+    ],
+    "getFilterTextForSnippetValue": [
+      "value"
+    ],
+    "getLabelForSnippetValue": [
+      "value"
+    ],
+    "getInsertTextForPlainText": [
+      "text"
+    ],
+    "getInsertTextForValue": [
+      "value",
+      "separatorAfter"
+    ],
+    "getInsertTextForSnippetValue": [
+      "value",
+      "separatorAfter"
+    ],
+    "getInsertTextForGuessedValue": [
+      "value",
+      "separatorAfter"
+    ],
+    "getSuggestionKind": [
+      "type"
+    ],
+    "getLabelTextForMatchingNode": [
+      "node",
+      "document"
+    ],
+    "getInsertTextForMatchingNode": [
+      "node",
+      "document",
+      "separatorAfter"
+    ],
+    "getInsertTextForProperty": [
+      "key",
+      "propertySchema",
+      "addValue",
+      "separatorAfter"
+    ],
+    "getCurrentWord": [
+      "document",
+      "offset"
+    ],
+    "evaluateSeparatorAfter": [
+      "document",
+      "offset"
+    ],
+    "findItemAtOffset": [
+      "node",
+      "document",
+      "offset"
+    ],
+    "isInComment": [
+      "document",
+      "start",
+      "offset"
+    ],
+    "fromMarkup": [
+      "markupString"
+    ],
+    "doesSupportMarkdown": [],
+    "doesSupportsCommitCharacters": [],
+    "doesSupportsLabelDetails": []
+  },
+  "propertyNameCompletionItem": [
+    "name",
+    "documentation",
+    "detail",
+    "sortText"
+  ],
+  "collectCompletionsForSimilarObject": [
+    "obj"
+  ],
+  "collectSuggestionsForValues": [
+    "value"
+  ],
+  "replacer": [
+    "value"
+  ],
+  "JSONDocumentSymbols": {
+    "constructor": [
+      "schemaService"
+    ],
+    "findDocumentSymbols": [
+      "document",
+      "doc",
+      "param"
+    ],
+    "findDocumentSymbols2": [
+      "document",
+      "doc",
+      "param"
+    ],
+    "getSymbolKind": [
+      "nodeType"
+    ],
+    "getKeyLabel": [
+      "property"
+    ],
+    "getDetail": [
+      "node"
+    ],
+    "findDocumentColors": [
+      "document",
+      "doc",
+      "context"
+    ],
+    "getColorPresentations": [
+      "document",
+      "doc",
+      "color",
+      "range"
+    ]
+  },
+  "collectOutlineEntries": [
+    "node",
+    "result"
+  ],
+  "toTwoDigitHex": [
+    "n"
+  ],
+  "getRange": [
+    "document",
+    "node"
+  ],
+  "getName": [
+    "node"
+  ],
+  "getFoldingRanges": [
+    "document",
+    "context"
+  ],
+  "addRange": [
+    "range"
+  ],
+  "JSONHover": {
+    "constructor": [
+      "schemaService",
+      "param",
+      "promiseConstructor"
+    ],
+    "doHover": [
+      "document",
+      "position",
+      "doc"
+    ]
+  },
+  "createHover": [
+    "contents"
+  ],
+  "toMarkdown": [
+    "plain"
+  ],
+  "toMarkdownCodeBlock": [
+    "content"
+  ],
+  "findLinks": [
+    "document",
+    "doc"
+  ],
+  "createRange": [
+    "document",
+    "node"
+  ],
+  "findTargetNode": [
+    "doc",
+    "path"
+  ],
+  "findNode": [
+    "pointer",
+    "node"
+  ],
+  "parseJSONPointer": [
+    "path"
+  ],
+  "unescape": [
+    "str"
+  ],
+  "FilePatternAssociation": {
+    "constructor": [
+      "pattern",
+      "folderUri",
+      "uris"
+    ],
+    "matchesPattern": [
+      "fileName"
+    ],
+    "getURIs": []
+  },
+  "SchemaHandle": {
+    "constructor": [
+      "service",
+      "uri",
+      "unresolvedSchemaContent"
+    ],
+    "getUnresolvedSchema": [],
+    "getResolvedSchema": [],
+    "clearSchema": []
+  },
+  "UnresolvedSchema": {
+    "constructor": [
+      "schema",
+      "param"
+    ]
+  },
+  "toDiagnostic": [
+    "message",
+    "code",
+    "relatedURL"
+  ],
+  "ResolvedSchema": {
+    "constructor": [
+      "schema",
+      "param",
+      "param",
+      "schemaDraft"
+    ],
+    "getSection": [
+      "path"
+    ],
+    "getSectionRecursive": [
+      "path",
+      "schema"
+    ]
+  },
+  "JSONSchemaService": {
+    "constructor": [
+      "requestService",
+      "contextService",
+      "promiseConstructor"
+    ],
+    "getRegisteredSchemaIds": [
+      "filter"
+    ],
+    "promise": [],
+    "dispose": [],
+    "onResourceChange": [
+      "uri"
+    ],
+    "setSchemaContributions": [
+      "schemaContributions"
+    ],
+    "addSchemaHandle": [
+      "id",
+      "unresolvedSchemaContent"
+    ],
+    "getOrAddSchemaHandle": [
+      "id",
+      "unresolvedSchemaContent"
+    ],
+    "addFilePatternAssociation": [
+      "pattern",
+      "folderUri",
+      "uris"
+    ],
+    "registerExternalSchema": [
+      "config"
+    ],
+    "clearExternalSchemas": [],
+    "getResolvedSchema": [
+      "schemaId"
+    ],
+    "loadSchema": [
+      "url"
+    ],
+    "resolveSchemaContent": [
+      "schemaToResolve",
+      "handle"
+    ],
+    "traverseNodes": [
+      "root",
+      "handle"
+    ],
+    "getSchemaFromProperty": [
+      "resource",
+      "document"
+    ],
+    "getAssociatedSchemas": [
+      "resource"
+    ],
+    "getSchemaURIsForResource": [
+      "resource",
+      "document"
+    ],
+    "getSchemaForResource": [
+      "resource",
+      "document"
+    ],
+    "createCombinedSchema": [
+      "resource",
+      "schemaIds"
+    ],
+    "getMatchingSchemas": [
+      "document",
+      "jsonDocument",
+      "schema"
+    ]
+  },
+  "findSectionByJSONPointer": [
+    "schema",
+    "path"
+  ],
+  "findSchemaById": [
+    "schema",
+    "handle",
+    "id"
+  ],
+  "merge": [
+    "target",
+    "section"
+  ],
+  "mergeRef": [
+    "target",
+    "sourceRoot",
+    "sourceHandle",
+    "refSegment"
+  ],
+  "resolveExternalLink": [
+    "node",
+    "uri",
+    "refSegment",
+    "parentHandle"
+  ],
+  "resolveRefs": [
+    "node",
+    "parentSchema",
+    "parentHandle"
+  ],
+  "collectAnchors": [
+    "root"
+  ],
+  "collectEntries": [
+    "param"
+  ],
+  "collectMapEntries": [
+    "param"
+  ],
+  "collectArrayEntries": [
+    "param"
+  ],
+  "collectEntryOrArrayEntries": [
+    "items"
+  ],
+  "normalizeResourceForMatching": [
+    "resource"
+  ],
+  "toDisplayString": [
+    "url"
+  ],
+  "getSelectionRanges": [
+    "document",
+    "positions",
+    "doc"
+  ],
+  "getSelectionRange": [
+    "position"
+  ],
+  "newRange": [
+    "start",
+    "end"
+  ],
+  "getOffsetAfterNextToken": [
+    "offset",
+    "expectedToken"
+  ],
+  "JSONValidation": {
+    "constructor": [
+      "jsonSchemaService",
+      "promiseConstructor"
+    ],
+    "configure": [
+      "raw"
+    ],
+    "doValidation": [
+      "textDocument",
+      "jsonDocument",
+      "documentSettings",
+      "schema"
+    ],
+    "getLanguageStatus": [
+      "textDocument",
+      "jsonDocument"
+    ]
+  },
+  "addProblem": [
+    "problem"
+  ],
+  "getDiagnostics": [
+    "schema"
+  ],
+  "addSchemaProblem": [
+    "errorMessage",
+    "errorCode",
+    "relatedInformation"
+  ],
+  "schemaAllowsComments": [
+    "schemaRef"
+  ],
+  "schemaAllowsTrailingCommas": [
+    "schemaRef"
+  ],
+  "toDiagnosticSeverity": [
+    "severityLevel"
+  ],
+  "hexDigit": [
+    "charCode"
+  ],
+  "colorFromHex": [
+    "text"
+  ],
+  "colorFrom256RGB": [
+    "red",
+    "green",
+    "blue",
+    "param"
+  ],
+  "format": [
+    "documentToFormat",
+    "formattingOptions",
+    "formattingRange"
+  ],
+  "createRegex": [
+    "glob",
+    "opts"
+  ],
+  "stringifyObject": [
+    "obj",
+    "indent",
+    "stringifyLiteral"
+  ],
+  "equals": [
+    "one",
+    "other"
+  ],
+  "isNumber": [
+    "val"
+  ],
+  "isDefined": [
+    "val"
+  ],
+  "isBoolean": [
+    "val"
+  ],
+  "isString": [
+    "val"
+  ],
+  "isObject": [
+    "val"
+  ],
+  "PropertyTree": {
+    "constructor": [
+      "propertyName",
+      "beginningLineNumber"
+    ],
+    "addChildProperty": [
+      "childProperty"
+    ]
+  },
+  "compareProperties": [
+    "propertyTree1",
+    "propertyTree2"
+  ],
+  "binarySearchOnPropertyArray": [
+    "propertyTreeArray",
+    "propertyTree",
+    "compare_fn"
+  ],
+  "sort": [
+    "documentToSort",
+    "formattingOptions"
+  ],
+  "findJsoncPropertyTree": [
+    "formattedDocument"
+  ],
+  "sortJsoncDocument": [
+    "jsonDocument",
+    "propertyTree"
+  ],
+  "sortProperties": [
+    "properties"
+  ],
+  "updateSortingQueue": [
+    "queue",
+    "propertyTree",
+    "beginningLineNumber"
+  ],
+  "updateSortingQueueForArrayProperties": [
+    "queue",
+    "propertyTree",
+    "beginningLineNumber"
+  ],
+  "SortingRange": {
+    "constructor": [
+      "beginningLineNumber",
+      "propertyTreeArray"
+    ]
+  },
+  "startsWith": [
+    "haystack",
+    "needle"
+  ],
+  "endsWith": [
+    "haystack",
+    "needle"
+  ],
+  "convertSimple2RegExpPattern": [
+    "pattern"
+  ],
+  "repeat": [
+    "value",
+    "count"
+  ],
+  "extendedRegExp": [
+    "pattern"
+  ],
+  "stringLength": [
+    "str"
+  ]
+}
