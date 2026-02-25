@@ -1,0 +1,1084 @@
+{
+  "Report": {
+    "asyncTasks": [],
+    "commonErrorMessage": [],
+    "errors": [],
+    "json": [],
+    "path": [],
+    "schemaPath": [],
+    "rootSchema": [],
+    "parentReport": [],
+    "options": [],
+    "reportOptions": [],
+    "validateOptions": [],
+    "constructor": [
+      "parentOrOptions",
+      "reportOptionsOrValidate",
+      "validateOptions"
+    ],
+    "isValid": [],
+    "addAsyncTask": [
+      "fn",
+      "args",
+      "asyncTaskResultProcessFn"
+    ],
+    "getAncestor": [
+      "id"
+    ],
+    "processAsyncTasks": [
+      "timeout",
+      "callback"
+    ],
+    "getPath": [
+      "returnPathAsString"
+    ],
+    "getSchemaPath": [],
+    "getSchemaId": [],
+    "hasError": [
+      "errCode",
+      "errParams"
+    ],
+    "addError": [
+      "errCode",
+      "errParams",
+      "subReports",
+      "schema",
+      "keyword"
+    ],
+    "getJson": [],
+    "addCustomError": [
+      "errorCode",
+      "errorMessage",
+      "params",
+      "subReports",
+      "schema",
+      "keyword"
+    ]
+  },
+  "ValidateError": {
+    "name": [],
+    "details": [],
+    "constructor": [
+      "message",
+      "details"
+    ]
+  },
+  "SchemaCache": {
+    "validator": [],
+    "global_cache": [],
+    "cache": [],
+    "constructor": [
+      "validator"
+    ],
+    "cacheSchemaByUri": [
+      "uri",
+      "schema"
+    ],
+    "removeFromCacheByUri": [
+      "uri"
+    ],
+    "checkCacheForUri": [
+      "uri"
+    ],
+    "getSchema": [
+      "report",
+      "refOrSchema"
+    ],
+    "fromCache": [
+      "path"
+    ],
+    "getSchemaByUri": [
+      "report",
+      "uri",
+      "root"
+    ]
+  },
+  "SchemaValidator": {
+    "validator": [],
+    "constructor": [
+      "validator"
+    ],
+    "options": [],
+    "validateArrayOfSchemas": [
+      "report",
+      "arr"
+    ],
+    "validateSchema": [
+      "report",
+      "schema"
+    ]
+  },
+  "ZSchemaBase": {
+    "scache": [],
+    "sc": [],
+    "sv": [],
+    "validateOptions": [],
+    "options": [],
+    "constructor": [
+      "options"
+    ],
+    "getDefaultSchemaId": [],
+    "_validate": [
+      "json",
+      "schema",
+      "options",
+      "callback"
+    ],
+    "_validateSchema": [
+      "schemaOrArr"
+    ],
+    "registerFormat": [
+      "name",
+      "validatorFunction"
+    ],
+    "unregisterFormat": [
+      "name"
+    ],
+    "getRegisteredFormats": [],
+    "getSupportedFormats": [],
+    "setRemoteReference": [
+      "uri",
+      "schema",
+      "validationOptions"
+    ],
+    "getMissingReferences": [
+      "err"
+    ],
+    "getMissingRemoteReferences": [
+      "err"
+    ],
+    "getResolvedSchema": [
+      "schemaId"
+    ]
+  },
+  "SchemaCompiler": {
+    "validator": [],
+    "constructor": [
+      "validator"
+    ],
+    "collectAndCacheIds": [
+      "schema"
+    ],
+    "compileSchema": [
+      "report",
+      "schema",
+      "options"
+    ],
+    "compileArrayOfSchemas": [
+      "report",
+      "arr"
+    ],
+    "compileArrayOfSchemasLoop": [
+      "mainReport",
+      "arr"
+    ]
+  },
+  "ZSchema": {
+    "constructor": [
+      "options"
+    ],
+    "registerFormat": [
+      "name",
+      "validatorFunction"
+    ],
+    "unregisterFormat": [
+      "name"
+    ],
+    "getRegisteredFormats": [],
+    "getDefaultOptions": [],
+    "setRemoteReference": [
+      "uri",
+      "schema",
+      "validationOptions"
+    ],
+    "getSchemaReader": [],
+    "setSchemaReader": [
+      "schemaReader"
+    ],
+    "schemaSymbol": [],
+    "jsonSymbol": [],
+    "create": [
+      "param"
+    ],
+    "validate": [
+      "json",
+      "schema",
+      "param"
+    ],
+    "validateSafe": [
+      "json",
+      "schema",
+      "options"
+    ],
+    "validateAsync": [
+      "json",
+      "schema",
+      "options"
+    ],
+    "validateAsyncSafe": [
+      "json",
+      "schema",
+      "options"
+    ],
+    "validateSchema": [
+      "schemaOrArr"
+    ],
+    "validateSchemaSafe": [
+      "schemaOrArr"
+    ]
+  },
+  "ZSchemaSafe": {
+    "constructor": [
+      "options"
+    ],
+    "validate": [
+      "json",
+      "schema",
+      "param"
+    ],
+    "validateSchema": [
+      "schemaOrArr"
+    ]
+  },
+  "ZSchemaAsync": {
+    "constructor": [
+      "options"
+    ],
+    "validate": [
+      "json",
+      "schema",
+      "param"
+    ],
+    "validateSchema": [
+      "schemaOrArr"
+    ]
+  },
+  "ZSchemaAsyncSafe": {
+    "constructor": [
+      "options"
+    ],
+    "validate": [
+      "json",
+      "schema",
+      "param"
+    ],
+    "validateSchema": [
+      "schemaOrArr"
+    ]
+  },
+  "whatIs": [
+    "what"
+  ],
+  "isObject": [
+    "value"
+  ],
+  "isInteger": [
+    "value"
+  ],
+  "getId": [
+    "schema"
+  ],
+  "findId": [
+    "schema",
+    "id"
+  ],
+  "getValidateError": [
+    "param"
+  ],
+  "areEqual": [
+    "json1",
+    "json2",
+    "options"
+  ],
+  "decodeJSONPointer": [
+    "str"
+  ],
+  "sortedKeys": [
+    "obj"
+  ],
+  "get": [
+    "obj",
+    "path"
+  ],
+  "getQueryPath": [
+    "uri"
+  ],
+  "getRemotePath": [
+    "uri"
+  ],
+  "isAbsoluteUri": [
+    "uri"
+  ],
+  "finish": [],
+  "respond": [
+    "asyncTaskResultProcessFn"
+  ],
+  "hasOwn": [
+    "obj",
+    "key"
+  ],
+  "copyProp": [
+    "from",
+    "to",
+    "key",
+    "fn"
+  ],
+  "shallowClone": [
+    "src"
+  ],
+  "deepClone": [
+    "src"
+  ],
+  "cloneDeepInner": [
+    "src"
+  ],
+  "asClone": [
+    "s"
+  ],
+  "normalizeOptions": [
+    "options"
+  ],
+  "registerRemoteReference": [
+    "uri",
+    "schema",
+    "validationOptions"
+  ],
+  "getDefaultExportFromCjs": [
+    "x"
+  ],
+  "requireAssertString": [],
+  "assertString": [
+    "input"
+  ],
+  "requireCheckHost": [],
+  "isRegExp": [
+    "obj"
+  ],
+  "checkHost": [
+    "host",
+    "matches"
+  ],
+  "requireIsByteLength": [],
+  "_interopRequireDefault": [
+    "e"
+  ],
+  "_typeof": [
+    "o"
+  ],
+  "isByteLength": [
+    "str",
+    "options"
+  ],
+  "requireMerge": [],
+  "merge": [],
+  "requireIsFQDN": [],
+  "isFQDN": [
+    "str",
+    "options"
+  ],
+  "requireIsIP": [],
+  "isIP": [
+    "ipAddress"
+  ],
+  "requireIsEmail": [],
+  "validateDisplayName": [
+    "display_name"
+  ],
+  "isEmail": [
+    "str",
+    "options"
+  ],
+  "requireIncludesString": [],
+  "includes": [
+    "str",
+    "val"
+  ],
+  "requireIsURL": [],
+  "_slicedToArray": [
+    "r",
+    "e"
+  ],
+  "_nonIterableRest": [],
+  "_unsupportedIterableToArray": [
+    "r",
+    "a"
+  ],
+  "_arrayLikeToArray": [
+    "r",
+    "a"
+  ],
+  "_iterableToArrayLimit": [
+    "r",
+    "l"
+  ],
+  "_arrayWithHoles": [
+    "r"
+  ],
+  "isURL": [
+    "url",
+    "options"
+  ],
+  "cleanUpProtocol": [
+    "potential_protocol"
+  ],
+  "isLeapYear": [
+    "year"
+  ],
+  "getDaysInMonth": [
+    "year",
+    "month"
+  ],
+  "isValidRfc3339Date": [
+    "year",
+    "month",
+    "day"
+  ],
+  "requirePunycode": [],
+  "error": [
+    "type"
+  ],
+  "map": [
+    "array",
+    "callback"
+  ],
+  "mapDomain": [
+    "domain",
+    "callback"
+  ],
+  "ucs2decode": [
+    "string"
+  ],
+  "ucs2encode": [
+    "codePoints"
+  ],
+  "basicToDigit": [
+    "codePoint"
+  ],
+  "digitToBasic": [
+    "digit",
+    "flag"
+  ],
+  "adapt": [
+    "delta",
+    "numPoints",
+    "firstTime"
+  ],
+  "decode": [
+    "input"
+  ],
+  "encode": [
+    "input"
+  ],
+  "toUnicode": [
+    "input"
+  ],
+  "toASCII": [
+    "input"
+  ],
+  "splitHostnameLabels": [
+    "hostname"
+  ],
+  "isAsciiHostnameLabel": [
+    "label"
+  ],
+  "isGreek": [
+    "char"
+  ],
+  "isHebrew": [
+    "char"
+  ],
+  "hasCjkKanaOrHan": [
+    "input"
+  ],
+  "toUnicodeLabel": [
+    "label"
+  ],
+  "isValidIdnUnicodeLabel": [
+    "label"
+  ],
+  "isValidHostname": [
+    "hostname"
+  ],
+  "isValidIdnHostname": [
+    "hostname"
+  ],
+  "toUtcTime": [
+    "hour",
+    "minute",
+    "offsetSign",
+    "offsetHour",
+    "offsetMinute"
+  ],
+  "parseRfc3339Time": [
+    "time"
+  ],
+  "dateValidator": [
+    "date"
+  ],
+  "dateTimeValidator": [
+    "dateTime"
+  ],
+  "emailValidator": [
+    "email"
+  ],
+  "hostnameValidator": [
+    "hostname"
+  ],
+  "ipv4Validator": [
+    "ipv4"
+  ],
+  "ipv6Validator": [
+    "ipv6"
+  ],
+  "regexValidator": [
+    "input"
+  ],
+  "strictUriValidator": [
+    "uri"
+  ],
+  "uriValidator": [
+    "uri"
+  ],
+  "uriReferenceValidator": [
+    "uri"
+  ],
+  "uriTemplateValidator": [
+    "uri"
+  ],
+  "jsonPointerValidator": [
+    "pointer"
+  ],
+  "relativeJsonPointerValidator": [
+    "pointer"
+  ],
+  "timeValidator": [
+    "time"
+  ],
+  "idnEmailValidator": [
+    "email"
+  ],
+  "idnHostnameValidator": [
+    "hostname"
+  ],
+  "iriValidator": [
+    "iri"
+  ],
+  "iriReferenceValidator": [
+    "iriReference"
+  ],
+  "getFormatValidators": [
+    "options"
+  ],
+  "registerFormat": [
+    "name",
+    "validatorFunction"
+  ],
+  "unregisterFormat": [
+    "name"
+  ],
+  "getSupportedFormats": [
+    "customFormats"
+  ],
+  "isFormatSupported": [
+    "name",
+    "customFormats"
+  ],
+  "getRegisteredFormats": [],
+  "isUniqueArray": [
+    "arr",
+    "indexes"
+  ],
+  "difference": [
+    "bigSet",
+    "subSet"
+  ],
+  "isValidBase64": [
+    "value"
+  ],
+  "decodeBase64": [
+    "value"
+  ],
+  "compileSchemaRegex": [
+    "pattern"
+  ],
+  "shouldSkipValidate": [
+    "options",
+    "errors"
+  ],
+  "addContainsErrorIfNeeded": [],
+  "addPropertyNameErrors": [],
+  "recurseArray": [
+    "report",
+    "schema",
+    "json"
+  ],
+  "recurseObject": [
+    "report",
+    "schema",
+    "json"
+  ],
+  "validate": [
+    "report",
+    "schema",
+    "json"
+  ],
+  "getSchemaReader": [],
+  "setSchemaReader": [
+    "schemaReader"
+  ],
+  "collectIds": [
+    "obj"
+  ],
+  "walk": [
+    "node",
+    "scope"
+  ],
+  "collectReferences": [
+    "obj",
+    "results",
+    "scope",
+    "path"
+  ],
+  "resolveReference": [
+    "base",
+    "ref"
+  ],
+  "resolveIdScope": [
+    "base",
+    "id"
+  ],
+  "collect": [
+    "details"
+  ],
+  "cleanup": [
+    "schema"
+  ],
+  "isRelativeUri": [
+    "uri"
+  ],
+  "t": [
+    "e"
+  ],
+  "r": [
+    "e"
+  ],
+  "i": [
+    "e"
+  ],
+  "n": [
+    "e"
+  ],
+  "o": [
+    "e",
+    "t"
+  ],
+  "a": [
+    "e"
+  ],
+  "c": [],
+  "l": [],
+  "d": [
+    "e"
+  ],
+  "f": [
+    "e"
+  ],
+  "u": [
+    "e",
+    "t"
+  ],
+  "h": [
+    "r"
+  ],
+  "E": [
+    "e"
+  ],
+  "y": {
+    "asyncTasks": [],
+    "commonErrorMessage": [],
+    "errors": [],
+    "json": [],
+    "path": [],
+    "schemaPath": [],
+    "rootSchema": [],
+    "parentReport": [],
+    "options": [],
+    "reportOptions": [],
+    "validateOptions": [],
+    "constructor": [
+      "e",
+      "t",
+      "r"
+    ],
+    "isValid": [],
+    "addAsyncTask": [
+      "e",
+      "t",
+      "r"
+    ],
+    "getAncestor": [
+      "e"
+    ],
+    "processAsyncTasks": [
+      "e",
+      "t"
+    ],
+    "getPath": [
+      "e"
+    ],
+    "getSchemaPath": [],
+    "getSchemaId": [],
+    "hasError": [
+      "e",
+      "t"
+    ],
+    "addError": [
+      "e",
+      "t",
+      "r",
+      "i",
+      "n"
+    ],
+    "getJson": [],
+    "addCustomError": [
+      "e",
+      "t",
+      "i",
+      "n",
+      "o",
+      "s"
+    ]
+  },
+  "s": [
+    "e"
+  ],
+  "g": [
+    "e",
+    "t"
+  ],
+  "_": [
+    "e",
+    "t",
+    "r",
+    "i"
+  ],
+  "v": [
+    "e"
+  ],
+  "O": [
+    "r"
+  ],
+  "A": {
+    "validator": [],
+    "global_cache": [],
+    "cache": [],
+    "constructor": [
+      "e"
+    ],
+    "cacheSchemaByUri": [
+      "e",
+      "t"
+    ],
+    "removeFromCacheByUri": [
+      "e"
+    ],
+    "checkCacheForUri": [
+      "e"
+    ],
+    "getSchema": [
+      "e",
+      "t"
+    ],
+    "fromCache": [
+      "e"
+    ],
+    "getSchemaByUri": [
+      "e",
+      "t",
+      "r"
+    ]
+  },
+  "T": [
+    "e"
+  ],
+  "S": [
+    "e",
+    "t",
+    "r"
+  ],
+  "R": [
+    "e"
+  ],
+  "$": [],
+  "Y": [],
+  "L": [],
+  "q": [],
+  "X": [],
+  "J": [],
+  "z": [],
+  "ie": [],
+  "ne": [],
+  "se": [
+    "e",
+    "t",
+    "r"
+  ],
+  "p": [
+    "e",
+    "r",
+    "i"
+  ],
+  "m": [
+    "r"
+  ],
+  "pe": [
+    "e"
+  ],
+  "me": [
+    "e"
+  ],
+  "he": [
+    "e"
+  ],
+  "Ee": [
+    "e"
+  ],
+  "ye": [
+    "e"
+  ],
+  "ge": [
+    "e"
+  ],
+  "ve": [
+    "e"
+  ],
+  "Oe": [
+    "e"
+  ],
+  "Ae": [
+    "e"
+  ],
+  "Te": [
+    "e"
+  ],
+  "be": [
+    "e",
+    "t"
+  ],
+  "Se": [
+    "e"
+  ],
+  "Re": [
+    "e"
+  ],
+  "Me": [
+    "e"
+  ],
+  "De": [
+    "e",
+    "t"
+  ],
+  "$e": [
+    "e",
+    "t",
+    "r"
+  ],
+  "Ce": [
+    "e",
+    "t",
+    "r"
+  ],
+  "we": [
+    "e",
+    "i",
+    "n"
+  ],
+  "Ue": [],
+  "Le": [
+    "e",
+    "t",
+    "r",
+    "i"
+  ],
+  "je": [
+    "e",
+    "t"
+  ],
+  "ke": [
+    "e",
+    "t"
+  ],
+  "Ke": {
+    "validator": [],
+    "constructor": [
+      "e"
+    ],
+    "collectAndCacheIds": [
+      "e"
+    ],
+    "compileSchema": [
+      "e",
+      "t",
+      "r"
+    ],
+    "compileArrayOfSchemas": [
+      "e",
+      "t"
+    ],
+    "compileArrayOfSchemasLoop": [
+      "e",
+      "t"
+    ]
+  },
+  "qe": {
+    "validator": [],
+    "constructor": [
+      "e"
+    ],
+    "options": [],
+    "validateArrayOfSchemas": [
+      "e",
+      "t"
+    ],
+    "validateSchema": [
+      "e",
+      "t"
+    ]
+  },
+  "Xe": {
+    "scache": [],
+    "sc": [],
+    "sv": [],
+    "validateOptions": [],
+    "options": [],
+    "constructor": [
+      "e"
+    ],
+    "getDefaultSchemaId": [],
+    "_validate": [
+      "e",
+      "i",
+      "n",
+      "o"
+    ],
+    "_validateSchema": [
+      "e"
+    ],
+    "registerFormat": [
+      "e",
+      "t"
+    ],
+    "unregisterFormat": [
+      "e"
+    ],
+    "getRegisteredFormats": [],
+    "getSupportedFormats": [],
+    "setRemoteReference": [
+      "e",
+      "t",
+      "r"
+    ],
+    "getMissingReferences": [
+      "e"
+    ],
+    "getMissingRemoteReferences": [
+      "e"
+    ],
+    "getResolvedSchema": [
+      "e"
+    ]
+  },
+  "Be": {
+    "constructor": [
+      "e"
+    ],
+    "registerFormat": [
+      "e",
+      "t"
+    ],
+    "unregisterFormat": [
+      "e"
+    ],
+    "getRegisteredFormats": [],
+    "getDefaultOptions": [],
+    "setRemoteReference": [
+      "e",
+      "t",
+      "r"
+    ],
+    "getSchemaReader": [],
+    "setSchemaReader": [
+      "e"
+    ],
+    "schemaSymbol": [],
+    "jsonSymbol": [],
+    "create": [
+      "param"
+    ],
+    "validate": [
+      "e",
+      "t",
+      "param"
+    ],
+    "validateSafe": [
+      "e",
+      "t",
+      "r"
+    ],
+    "validateAsync": [
+      "e",
+      "t",
+      "r"
+    ],
+    "validateAsyncSafe": [
+      "e",
+      "t",
+      "r"
+    ],
+    "validateSchema": [
+      "e"
+    ],
+    "validateSchemaSafe": [
+      "e"
+    ]
+  },
+  "Ve": {
+    "constructor": [
+      "e"
+    ],
+    "validate": [
+      "e",
+      "t",
+      "param"
+    ],
+    "validateSchema": [
+      "e"
+    ]
+  },
+  "He": {
+    "constructor": [
+      "e"
+    ],
+    "validate": [
+      "e",
+      "t",
+      "param"
+    ],
+    "validateSchema": [
+      "e"
+    ]
+  },
+  "Je": {
+    "constructor": [
+      "e"
+    ],
+    "validate": [
+      "e",
+      "t",
+      "param"
+    ],
+    "validateSchema": [
+      "e"
+    ]
+  }
+}
