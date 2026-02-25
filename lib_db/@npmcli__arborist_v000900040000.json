@@ -1,0 +1,837 @@
+{
+  "printReport": [
+    "report"
+  ],
+  "printVuln": [
+    "vuln"
+  ],
+  "printAdvisory": [
+    "a"
+  ],
+  "usage": [
+    "param"
+  ],
+  "parseArgs": [
+    "param"
+  ],
+  "addLogListener": [
+    "write",
+    "param"
+  ],
+  "magenta": [
+    "m"
+  ],
+  "dim": [
+    "m"
+  ],
+  "red": [
+    "m"
+  ],
+  "formatter": [
+    "level",
+    "param"
+  ],
+  "has": [
+    "o",
+    "k"
+  ],
+  "cleanPath": [
+    "val"
+  ],
+  "parse": [
+    "param"
+  ],
+  "printDiff": [
+    "diff"
+  ],
+  "add": [
+    "param"
+  ],
+  "inferSaveType": [
+    "pkg",
+    "name"
+  ],
+  "hasSubKey": [
+    "pkg",
+    "depType",
+    "name"
+  ],
+  "deleteSubKey": [
+    "pkg",
+    "depType",
+    "name",
+    "replacedBy"
+  ],
+  "rm": [
+    "pkg",
+    "rm"
+  ],
+  "DepsQueue": {
+    "length": [],
+    "push": [
+      "item"
+    ],
+    "pop": []
+  },
+  "lockfileVersion": [
+    "lfv"
+  ],
+  "Arborist": {
+    "constructor": [
+      "param"
+    ],
+    "workspaceNodes": [
+      "tree",
+      "workspaces"
+    ],
+    "workspaceDependencySet": [
+      "tree",
+      "workspaces",
+      "includeWorkspaceRoot"
+    ],
+    "excludeWorkspacesDependencySet": [
+      "tree"
+    ],
+    "_setWorkspaces": [
+      "node"
+    ],
+    "audit": [
+      "param"
+    ],
+    "dedupe": [
+      "param"
+    ]
+  },
+  "memoize": [
+    "fn"
+  ],
+  "validEdgesOut": [
+    "node"
+  ],
+  "treeHash": [
+    "startNode"
+  ],
+  "getKey": [
+    "idealTreeNode"
+  ],
+  "generateChild": [
+    "node",
+    "location",
+    "pkg",
+    "inStore"
+  ],
+  "processEdges": [
+    "node",
+    "externalEdge"
+  ],
+  "processDeps": [
+    "dep",
+    "optional",
+    "external"
+  ],
+  "boolEnv": [
+    "b"
+  ],
+  "sortNodes": [
+    "a",
+    "b"
+  ],
+  "_rm": [
+    "path"
+  ],
+  "updateNodes": [
+    "nodes"
+  ],
+  "exactVersion": [
+    "node"
+  ],
+  "retrieveUpdatedNodes": [
+    "names"
+  ],
+  "filterDirectDependencies": [
+    "node"
+  ],
+  "AuditReport": {
+    "error": [],
+    "topVulns": [],
+    "load": [
+      "tree",
+      "opts"
+    ],
+    "auditReportVersion": [],
+    "toJSON": [],
+    "constructor": [
+      "tree",
+      "param"
+    ],
+    "run": [],
+    "isVulnerable": [
+      "node"
+    ],
+    "set": [],
+    "shouldAudit": [
+      "node"
+    ],
+    "prepareBulkData": []
+  },
+  "calcDepFlags": [
+    "tree",
+    "param"
+  ],
+  "CanPlaceDep": {
+    "constructor": [
+      "options"
+    ],
+    "checkCanPlace": [],
+    "checkCanPlaceCurrent": [],
+    "checkCanPlaceNoCurrent": [],
+    "deepestNestingTarget": [],
+    "conflictChildren": [],
+    "allChildren": [],
+    "top": [],
+    "canPlacePeers": [
+      "state"
+    ],
+    "peerSetSource": [],
+    "peerEntryEdge": [],
+    "CONFLICT": [],
+    "OK": [],
+    "REPLACE": [],
+    "KEEP": [],
+    "description": []
+  },
+  "consistentResolve": [
+    "resolved",
+    "fromPath",
+    "toPath",
+    "param"
+  ],
+  "deepestNestingTarget": [
+    "start",
+    "name"
+  ],
+  "depValid": [
+    "child",
+    "requested",
+    "requestor"
+  ],
+  "linkValid": [
+    "child",
+    "requested",
+    "requestor"
+  ],
+  "tarballValid": [
+    "child",
+    "requested"
+  ],
+  "Diff": {
+    "constructor": [
+      "param"
+    ],
+    "calculate": [
+      "param"
+    ]
+  },
+  "getAction": [
+    "param"
+  ],
+  "allChildren": [
+    "node"
+  ],
+  "getChildren": [
+    "diff"
+  ],
+  "diffNode": [
+    "param"
+  ],
+  "leave": [
+    "diff",
+    "children"
+  ],
+  "ArboristEdge": {
+    "constructor": [
+      "edge"
+    ]
+  },
+  "Edge": {
+    "constructor": [
+      "edge"
+    ]
+  },
+  "fromPath": [
+    "node",
+    "edge"
+  ],
+  "gatherDepSet": [
+    "set",
+    "edgeFilter"
+  ],
+  "Inventory": {
+    "constructor": [],
+    "primaryKey": [],
+    "indexes": [],
+    "filter": [
+      "fn"
+    ],
+    "add": [
+      "node"
+    ],
+    "delete": [
+      "node"
+    ],
+    "query": [
+      "key",
+      "val"
+    ],
+    "has": [
+      "node"
+    ],
+    "set": []
+  },
+  "Link": {
+    "constructor": [
+      "options"
+    ],
+    "version": [],
+    "target": [
+      "target"
+    ],
+    "resolved": [
+      "r"
+    ],
+    "_loadDeps": [],
+    "children": [
+      "c"
+    ],
+    "isLink": []
+  },
+  "Node": {
+    "constructor": [
+      "options"
+    ],
+    "meta": [
+      "meta"
+    ],
+    "global": [],
+    "globalTop": [],
+    "workspaces": [
+      "workspaces"
+    ],
+    "binPaths": [],
+    "hasInstallScript": [],
+    "version": [],
+    "packageName": [],
+    "pkgid": [],
+    "overridden": [],
+    "package": [
+      "pkg"
+    ],
+    "explain": [
+      "param",
+      "param"
+    ],
+    "_explain": [
+      "edge",
+      "seen"
+    ],
+    "isDescendantOf": [
+      "node"
+    ],
+    "shouldOmit": [
+      "omitSet"
+    ],
+    "getBundler": [
+      "param"
+    ],
+    "inBundle": [],
+    "inDepBundle": [],
+    "isWorkspace": [],
+    "isRoot": [],
+    "isProjectRoot": [],
+    "isRegistryDependency": [],
+    "ancestry": [],
+    "root": [],
+    "_loadDeps": [],
+    "fsParent": [
+      "fsParent"
+    ],
+    "canReplaceWith": [
+      "node",
+      "ignorePeers"
+    ],
+    "canReplace": [
+      "node",
+      "ignorePeers"
+    ],
+    "canDedupe": [
+      "param",
+      "param"
+    ],
+    "satisfies": [
+      "requested"
+    ],
+    "matches": [
+      "node"
+    ],
+    "replaceWith": [
+      "node"
+    ],
+    "replace": [
+      "node"
+    ],
+    "inShrinkwrap": [],
+    "parent": [
+      "parent"
+    ],
+    "_delistFromMeta": [],
+    "_changePath": [
+      "newPath"
+    ],
+    "_refreshLocation": [],
+    "assertRootOverrides": [],
+    "addEdgeOut": [
+      "edge"
+    ],
+    "recalculateOutEdgesOverrides": [],
+    "updateOverridesEdgeInRemoved": [
+      "otherOverrideSet"
+    ],
+    "updateOverridesEdgeInAdded": [
+      "otherOverrideSet"
+    ],
+    "deleteEdgeIn": [
+      "edge"
+    ],
+    "addEdgeIn": [
+      "edge"
+    ],
+    "_reloadNamedEdges": [
+      "name",
+      "param"
+    ],
+    "isLink": [],
+    "target": [
+      "n"
+    ],
+    "depth": [],
+    "isTop": [],
+    "top": [],
+    "isFsTop": [],
+    "fsTop": [],
+    "resolveParent": [],
+    "resolve": [
+      "name"
+    ],
+    "inNodeModules": [],
+    "querySelectorAll": [
+      "query",
+      "opts"
+    ],
+    "toJSON": [],
+    "resetDepFlags": [],
+    "unsetDepFlags": []
+  },
+  "optionalSet": [
+    "node"
+  ],
+  "overrideResolves": [
+    "resolved",
+    "opts"
+  ],
+  "OverrideSet": {
+    "constructor": [
+      "param"
+    ],
+    "childrenAreEqual": [
+      "other"
+    ],
+    "isEqual": [
+      "other"
+    ],
+    "getEdgeRule": [
+      "edge"
+    ],
+    "getNodeRule": [
+      "node"
+    ],
+    "getMatchingRule": [
+      "node"
+    ],
+    "ancestry": [],
+    "isRoot": [],
+    "ruleset": [],
+    "findSpecificOverrideSet": [
+      "first",
+      "second"
+    ],
+    "doOverrideSetsConflict": [
+      "first",
+      "second"
+    ],
+    "haveConflictingRules": [
+      "first",
+      "second"
+    ]
+  },
+  "PackumentCache": {
+    "constructor": [
+      "param"
+    ],
+    "set": [
+      "k",
+      "v",
+      "param"
+    ],
+    "has": [
+      "k",
+      "param"
+    ]
+  },
+  "peerEntrySets": [
+    "node"
+  ],
+  "PlaceDep": {
+    "constructor": [
+      "options"
+    ],
+    "replaceOldDep": [],
+    "pruneForReplacement": [
+      "node",
+      "oldDeps"
+    ],
+    "pruneDedupable": [
+      "node",
+      "param"
+    ],
+    "isMine": [],
+    "warnPeerConflict": [
+      "edge",
+      "dep"
+    ],
+    "failPeerConflict": [
+      "edge",
+      "dep"
+    ],
+    "explainPeerConflict": [
+      "edge",
+      "dep"
+    ],
+    "getStartNode": [],
+    "allChildren": []
+  },
+  "nodeSort": [
+    "a",
+    "b"
+  ],
+  "ArboristNode": {
+    "constructor": [
+      "tree",
+      "path"
+    ]
+  },
+  "ArboristVirtualNode": {
+    "constructor": [
+      "tree",
+      "path"
+    ]
+  },
+  "ArboristLink": {
+    "constructor": [
+      "tree",
+      "path"
+    ]
+  },
+  "treeError": [
+    "param"
+  ],
+  "EdgeOut": {
+    "constructor": [
+      "edge"
+    ]
+  },
+  "EdgeIn": {
+    "constructor": [
+      "edge"
+    ]
+  },
+  "printableTree": [
+    "tree",
+    "param"
+  ],
+  "Results": {
+    "constructor": [
+      "opts"
+    ],
+    "currentResults": [
+      "value"
+    ],
+    "initialItems": [],
+    "processPendingCombinator": [
+      "nextResults"
+    ],
+    "collect": [
+      "rootAstNode"
+    ],
+    "attributeType": [],
+    "classType": [],
+    "combinatorType": [],
+    "idType": [],
+    "pseudoType": [],
+    "selectorType": [],
+    "universalType": [],
+    "attrPseudo": [],
+    "emptyPseudo": [],
+    "extraneousPseudo": [],
+    "hasPseudo": [],
+    "invalidPseudo": [],
+    "isPseudo": [],
+    "linkPseudo": [],
+    "missingPseudo": [],
+    "notPseudo": [],
+    "overriddenPseudo": [],
+    "pathPseudo": [],
+    "privatePseudo": [],
+    "rootPseudo": [],
+    "scopePseudo": [],
+    "semverPseudo": [],
+    "typePseudo": [],
+    "dedupedPseudo": [],
+    "vulnPseudo": [],
+    "outdatedPseudo": []
+  },
+  "nodeMatches": [
+    "node",
+    "obj"
+  ],
+  "attributeOperator": [
+    "param"
+  ],
+  "attributeMatch": [
+    "matcher",
+    "obj"
+  ],
+  "edgeIsType": [
+    "node",
+    "type",
+    "param"
+  ],
+  "filterByType": [
+    "nodes",
+    "type"
+  ],
+  "hasParent": [
+    "node",
+    "compareNodes"
+  ],
+  "hasAscendant": [
+    "node",
+    "compareNodes",
+    "param"
+  ],
+  "getPackageVersions": [
+    "name",
+    "opts"
+  ],
+  "retrieveNodesFromParsedAst": [
+    "opts"
+  ],
+  "querySelectorAll": [
+    "targetNode",
+    "query",
+    "flatOptions"
+  ],
+  "realpathCached": [
+    "path",
+    "rpcache",
+    "stcache",
+    "depth"
+  ],
+  "lstatCached": [
+    "path",
+    "stcache"
+  ],
+  "eloop": [
+    "path"
+  ],
+  "realpathChild": [
+    "dir",
+    "base",
+    "rpcache",
+    "stcache",
+    "depth"
+  ],
+  "relpath": [
+    "from",
+    "to"
+  ],
+  "pathSafeHash": [
+    "s"
+  ],
+  "retirePath": [
+    "from"
+  ],
+  "mismatch": [
+    "a",
+    "b"
+  ],
+  "specFromResolved": [
+    "resolved"
+  ],
+  "metaFieldFromPkg": [
+    "pkg",
+    "key"
+  ],
+  "assertNoNewer": [
+    "path",
+    "data",
+    "lockTime",
+    "dir",
+    "seen"
+  ],
+  "Shrinkwrap": {
+    "defaultLockfileVersion": [],
+    "load": [],
+    "keyOrder": [],
+    "reset": [],
+    "metaFromNode": [
+      "node",
+      "path",
+      "param"
+    ],
+    "constructor": [
+      "param"
+    ],
+    "checkYarnLock": [
+      "spec",
+      "param"
+    ],
+    "loadFiles": [],
+    "resetFiles": [],
+    "inferFormattingOptions": [
+      "packageJSONData"
+    ],
+    "delete": [
+      "nodePath"
+    ],
+    "get": [
+      "nodePath"
+    ],
+    "add": [
+      "node"
+    ],
+    "addEdge": [
+      "edge"
+    ],
+    "commit": [],
+    "toJSON": [],
+    "toString": [
+      "param"
+    ],
+    "save": [
+      "param"
+    ]
+  },
+  "setup": [
+    "fn"
+  ],
+  "unload": [],
+  "onBeforeExit": [],
+  "listener": [
+    "sig",
+    "fn"
+  ],
+  "specFromLock": [
+    "name",
+    "lock",
+    "where"
+  ],
+  "checkTree": [
+    "tree",
+    "param"
+  ],
+  "check": [
+    "node",
+    "param",
+    "param"
+  ],
+  "versionFromBaseScopeName": [
+    "base",
+    "scope",
+    "name"
+  ],
+  "Vuln": {
+    "constructor": [
+      "param"
+    ],
+    "fixAvailable": [
+      "f"
+    ],
+    "isDirect": [],
+    "testSpec": [
+      "spec"
+    ],
+    "toJSON": [],
+    "addVia": [
+      "v"
+    ],
+    "deleteVia": [
+      "v"
+    ],
+    "deleteAdvisory": [
+      "advisory"
+    ],
+    "addAdvisory": [
+      "advisory"
+    ],
+    "range": [],
+    "simpleRange": [],
+    "isVulnerable": [
+      "node"
+    ]
+  },
+  "priorityThenLocaleCompare": [
+    "a",
+    "b"
+  ],
+  "quoteIfNeeded": [
+    "val"
+  ],
+  "sortKV": [
+    "obj"
+  ],
+  "match": [
+    "p",
+    "n"
+  ],
+  "YarnLock": {
+    "parse": [
+      "data"
+    ],
+    "fromTree": [
+      "tree"
+    ],
+    "constructor": [],
+    "endCurrent": [],
+    "splitQuoted": [
+      "str",
+      "delim"
+    ],
+    "toString": [],
+    "addEntryFromNode": [
+      "node"
+    ],
+    "entryDataFromNode": [
+      "node"
+    ],
+    "Entry": []
+  },
+  "YarnLockEntry": {
+    "constructor": [
+      "specs"
+    ],
+    "toString": [],
+    "addSpec": [
+      "spec"
+    ]
+  }
+}

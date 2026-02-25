@@ -1,0 +1,390 @@
+{
+  "AnsiEscape": {
+    "getEscapeSequenceForAnsiCode": [
+      "code"
+    ],
+    "removeCodes": [
+      "text"
+    ],
+    "formatForTests": [
+      "text",
+      "options"
+    ],
+    "_tryGetSgrFriendlyName": [
+      "sgiParameter"
+    ]
+  },
+  "CallbackWritable": {
+    "constructor": [
+      "options"
+    ],
+    "onWriteChunk": [
+      "chunk"
+    ]
+  },
+  "Colorize": {
+    "black": [
+      "text"
+    ],
+    "red": [
+      "text"
+    ],
+    "green": [
+      "text"
+    ],
+    "yellow": [
+      "text"
+    ],
+    "blue": [
+      "text"
+    ],
+    "magenta": [
+      "text"
+    ],
+    "cyan": [
+      "text"
+    ],
+    "white": [
+      "text"
+    ],
+    "gray": [
+      "text"
+    ],
+    "blackBackground": [
+      "text"
+    ],
+    "redBackground": [
+      "text"
+    ],
+    "greenBackground": [
+      "text"
+    ],
+    "yellowBackground": [
+      "text"
+    ],
+    "blueBackground": [
+      "text"
+    ],
+    "magentaBackground": [
+      "text"
+    ],
+    "cyanBackground": [
+      "text"
+    ],
+    "whiteBackground": [
+      "text"
+    ],
+    "grayBackground": [
+      "text"
+    ],
+    "bold": [
+      "text"
+    ],
+    "dim": [
+      "text"
+    ],
+    "underline": [
+      "text"
+    ],
+    "blink": [
+      "text"
+    ],
+    "invertColor": [
+      "text"
+    ],
+    "hidden": [
+      "text"
+    ],
+    "rainbow": [
+      "text"
+    ],
+    "_applyColorSequence": [
+      "text",
+      "sequence"
+    ],
+    "_wrapTextInAnsiEscapeCodes": [
+      "startCode",
+      "endCode",
+      "text"
+    ]
+  },
+  "ConsoleTerminalProvider": {
+    "constructor": [
+      "param"
+    ],
+    "write": [
+      "data",
+      "severity"
+    ],
+    "eolCharacter": []
+  },
+  "DiscardStdoutTransform": {
+    "constructor": [
+      "options"
+    ],
+    "onWriteChunk": [
+      "chunk"
+    ]
+  },
+  "MockWritable": {
+    "constructor": [],
+    "onWriteChunk": [
+      "chunk"
+    ],
+    "reset": [],
+    "getAllOutput": [],
+    "getFormattedChunks": []
+  },
+  "NoOpTerminalProvider": {
+    "write": [
+      "data",
+      "severity"
+    ],
+    "eolCharacter": [],
+    "supportsColor": []
+  },
+  "NormalizeNewlinesTextRewriter": {
+    "constructor": [
+      "options"
+    ],
+    "initialize": [],
+    "process": [
+      "unknownState",
+      "text"
+    ],
+    "close": [
+      "unknownState"
+    ]
+  },
+  "PrefixProxyTerminalProvider": {
+    "constructor": [
+      "options"
+    ],
+    "supportsColor": [],
+    "eolCharacter": [],
+    "write": [
+      "data",
+      "severity"
+    ]
+  },
+  "PrintUtilities": {
+    "getConsoleWidth": [],
+    "wrapWords": [
+      "text",
+      "maxLineLength",
+      "indentOrLinePrefix"
+    ],
+    "wrapWordsToLines": [
+      "text",
+      "maxLineLength",
+      "indentOrLinePrefix"
+    ],
+    "printMessageInBox": [
+      "message",
+      "terminal",
+      "boxWidth"
+    ]
+  },
+  "ProblemCollector": {
+    "constructor": [
+      "options"
+    ],
+    "problems": [],
+    "onWriteChunk": [
+      "chunk"
+    ],
+    "onClose": []
+  },
+  "RemoveColorsTextRewriter": {
+    "initialize": [],
+    "process": [
+      "unknownState",
+      "text"
+    ],
+    "close": [
+      "unknownState"
+    ]
+  },
+  "SplitterTransform": {
+    "constructor": [
+      "options"
+    ],
+    "destinations": [],
+    "addDestination": [
+      "destination"
+    ],
+    "removeDestination": [
+      "destination",
+      "param"
+    ],
+    "onWriteChunk": [
+      "chunk"
+    ],
+    "onClose": []
+  },
+  "StderrLineTransform": {
+    "constructor": [
+      "options"
+    ],
+    "onWriteChunk": [
+      "chunk"
+    ],
+    "onClose": [],
+    "_processAccumulatedLine": []
+  },
+  "StdioSummarizer": {
+    "constructor": [
+      "options"
+    ],
+    "getReport": [],
+    "onWriteChunk": [
+      "chunk"
+    ]
+  },
+  "StdioWritable": {
+    "onWriteChunk": [
+      "chunk"
+    ]
+  },
+  "StringBufferTerminalProvider": {
+    "constructor": [
+      "param"
+    ],
+    "write": [
+      "text",
+      "severity"
+    ],
+    "eolCharacter": [],
+    "getOutput": [
+      "options"
+    ],
+    "getVerbose": [
+      "options"
+    ],
+    "getVerboseOutput": [
+      "options"
+    ],
+    "getDebugOutput": [
+      "options"
+    ],
+    "getErrorOutput": [
+      "options"
+    ],
+    "getWarningOutput": [
+      "options"
+    ],
+    "getAllOutput": [
+      "sparse",
+      "options"
+    ],
+    "getAllOutputAsChunks": [
+      "param"
+    ]
+  },
+  "Terminal": {
+    "constructor": [
+      "provider"
+    ],
+    "registerProvider": [
+      "provider"
+    ],
+    "unregisterProvider": [
+      "provider"
+    ],
+    "write": [
+      "param"
+    ],
+    "writeLine": [
+      "param"
+    ],
+    "writeWarning": [
+      "param"
+    ],
+    "writeWarningLine": [
+      "param"
+    ],
+    "writeError": [
+      "param"
+    ],
+    "writeErrorLine": [
+      "param"
+    ],
+    "writeVerbose": [
+      "param"
+    ],
+    "writeVerboseLine": [
+      "param"
+    ],
+    "writeDebug": [
+      "param"
+    ],
+    "writeDebugLine": [
+      "param"
+    ],
+    "_writeSegmentsToProviders": [
+      "segments",
+      "severity",
+      "followedByEol"
+    ],
+    "_normalizeWriteParameters": [
+      "parameters"
+    ]
+  },
+  "TerminalStreamWritable": {
+    "constructor": [
+      "options"
+    ],
+    "_write": [
+      "chunk",
+      "encoding",
+      "callback"
+    ]
+  },
+  "TerminalTransform": {
+    "constructor": [
+      "options"
+    ],
+    "onClose": [],
+    "autocloseDestination": []
+  },
+  "TerminalWritable": {
+    "constructor": [
+      "options"
+    ],
+    "isOpen": [],
+    "writeChunk": [
+      "chunk"
+    ],
+    "close": [],
+    "onClose": []
+  },
+  "TextRewriter": {},
+  "TextRewriterTransform": {
+    "constructor": [
+      "options"
+    ],
+    "onWriteChunk": [
+      "chunk"
+    ],
+    "_processText": [
+      "chunk",
+      "states"
+    ],
+    "_closeRewriters": [
+      "states",
+      "chunkKind"
+    ],
+    "onClose": []
+  },
+  "_normalizeOptions": [
+    "options"
+  ],
+  "_normalizeOutput": [
+    "s",
+    "options"
+  ],
+  "_normalizeOutputInner": [
+    "s",
+    "normalizeSpecialCharacters"
+  ]
+}
