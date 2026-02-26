@@ -1,0 +1,2728 @@
+{
+  "generateV1Error": [
+    "rawStripeError"
+  ],
+  "generateV2Error": [
+    "rawStripeError"
+  ],
+  "StripeError": {
+    "constructor": [
+      "rawError"
+    ],
+    "generate": [
+      "rawError"
+    ],
+    "message": [],
+    "type": [],
+    "rawType": [],
+    "code": [],
+    "doc_url": [],
+    "statusCode": [],
+    "raw": [],
+    "headers": [],
+    "requestId": [],
+    "param": [],
+    "charge": [],
+    "decline_code": [],
+    "payment_intent": [],
+    "payment_method": [],
+    "payment_method_type": [],
+    "setup_intent": [],
+    "source": []
+  },
+  "StripeCardError": {
+    "type": [],
+    "rawType": [],
+    "decline_code": []
+  },
+  "StripeInvalidRequestError": {
+    "type": [],
+    "rawType": []
+  },
+  "StripeAPIError": {
+    "type": [],
+    "rawType": []
+  },
+  "StripeAuthenticationError": {
+    "type": [],
+    "rawType": []
+  },
+  "StripePermissionError": {
+    "type": []
+  },
+  "StripeRateLimitError": {
+    "type": [],
+    "rawType": []
+  },
+  "StripeConnectionError": {
+    "type": []
+  },
+  "StripeSignatureVerificationError": {
+    "type": []
+  },
+  "StripeIdempotencyError": {
+    "type": [],
+    "rawType": []
+  },
+  "StripeInvalidGrantError": {
+    "type": [],
+    "rawType": []
+  },
+  "StripeUnknownError": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "TemporarySessionExpiredError": {
+    "type": [],
+    "rawType": []
+  },
+  "RequestSender": {
+    "constructor": [
+      "stripe",
+      "maxBufferedRequestMetric"
+    ],
+    "_normalizeStripeContext": [
+      "optsContext",
+      "clientContext"
+    ],
+    "_addHeadersDirectlyToObject": [
+      "obj",
+      "headers"
+    ],
+    "_makeResponseEvent": [
+      "requestEvent",
+      "statusCode",
+      "headers"
+    ],
+    "_getRequestId": [
+      "headers"
+    ],
+    "_streamingResponseHandler": [
+      "requestEvent",
+      "usage",
+      "callback"
+    ],
+    "_jsonResponseHandler": [
+      "requestEvent",
+      "apiMode",
+      "usage",
+      "callback"
+    ],
+    "_generateConnectionErrorMessage": [
+      "requestRetries"
+    ],
+    "_shouldRetry": [
+      "res",
+      "numRetries",
+      "maxRetries",
+      "error"
+    ],
+    "_getSleepTimeInMS": [
+      "numRetries",
+      "param"
+    ],
+    "_getMaxNetworkRetries": [
+      "param"
+    ],
+    "_defaultIdempotencyKey": [
+      "method",
+      "settings",
+      "apiMode"
+    ],
+    "_makeHeaders": [
+      "param"
+    ],
+    "_getUserAgentString": [
+      "apiMode"
+    ],
+    "_getTelemetryHeader": [],
+    "_recordRequestMetrics": [
+      "requestId",
+      "requestDurationMs",
+      "usage"
+    ],
+    "_rawRequest": [
+      "method",
+      "path",
+      "params",
+      "options",
+      "usage"
+    ],
+    "_getContentLength": [
+      "data"
+    ],
+    "_request": [
+      "method",
+      "host",
+      "path",
+      "data",
+      "authenticator",
+      "options",
+      "param",
+      "callback",
+      "param"
+    ]
+  },
+  "streamCompleteCallback": [],
+  "genKey": [],
+  "requestCallback": [
+    "err",
+    "response"
+  ],
+  "retryRequest": [
+    "requestFn",
+    "apiVersion",
+    "headers",
+    "requestRetries",
+    "retryAfter"
+  ],
+  "makeRequest": [
+    "apiVersion",
+    "headers",
+    "numRetries"
+  ],
+  "prepareAndMakeRequest": [
+    "error",
+    "data"
+  ],
+  "ResourceNamespace": [
+    "stripe",
+    "resources"
+  ],
+  "resourceNamespace": [
+    "namespace",
+    "resources"
+  ],
+  "StripeContext": {
+    "constructor": [
+      "segments"
+    ],
+    "segments": [],
+    "push": [
+      "segment"
+    ],
+    "pop": [],
+    "toString": [],
+    "parse": [
+      "contextStr"
+    ]
+  },
+  "_StripeEvent": {
+    "constructor": [
+      "eventName",
+      "data"
+    ]
+  },
+  "StripeEmitter": {
+    "constructor": [],
+    "on": [
+      "eventName",
+      "listener"
+    ],
+    "removeListener": [
+      "eventName",
+      "listener"
+    ],
+    "once": [
+      "eventName",
+      "listener"
+    ],
+    "emit": [
+      "eventName",
+      "data"
+    ]
+  },
+  "listenerWrapper": [
+    "event"
+  ],
+  "stripeMethod": [
+    "spec"
+  ],
+  "StripeResource": {
+    "extend": [
+      "spec"
+    ],
+    "method": [
+      "spec"
+    ],
+    "MAX_BUFFERED_REQUEST_METRICS": []
+  },
+  "createWebhooks": [
+    "platformFunctions"
+  ],
+  "makeHMACContent": [
+    "payload",
+    "details"
+  ],
+  "parseEventDetails": [
+    "encodedPayload",
+    "encodedHeader",
+    "expectedScheme"
+  ],
+  "validateComputedSignature": [
+    "payload",
+    "header",
+    "details",
+    "expectedSignature",
+    "tolerance",
+    "suspectPayloadType",
+    "secretContainsWhitespace",
+    "receivedAt"
+  ],
+  "parseHeader": [
+    "header",
+    "scheme"
+  ],
+  "getCryptoProvider": [],
+  "prepareOptions": [
+    "opts"
+  ],
+  "generateHeaderString": [
+    "signature"
+  ],
+  "V1Iterator": {
+    "constructor": [
+      "firstPagePromise",
+      "requestArgs",
+      "spec",
+      "stripeResource"
+    ],
+    "iterate": [
+      "pageResult"
+    ],
+    "getNextPage": [
+      "_pageResult"
+    ],
+    "_next": [],
+    "next": []
+  },
+  "V1ListIterator": {
+    "getNextPage": [
+      "pageResult"
+    ]
+  },
+  "V1SearchIterator": {
+    "getNextPage": [
+      "pageResult"
+    ]
+  },
+  "V2ListIterator": {
+    "constructor": [
+      "firstPagePromise",
+      "requestArgs",
+      "spec",
+      "stripeResource"
+    ],
+    "initFirstPage": [],
+    "turnPage": [],
+    "next": []
+  },
+  "makeAutoPaginationMethods": [
+    "stripeResource",
+    "requestArgs",
+    "spec",
+    "firstPagePromise"
+  ],
+  "makeAutoPaginationMethodsFromIterator": [
+    "iterator"
+  ],
+  "getAsyncIteratorSymbol": [],
+  "getDoneCallback": [
+    "args"
+  ],
+  "getItemCallback": [
+    "args"
+  ],
+  "getLastId": [
+    "listResult",
+    "reverseIteration"
+  ],
+  "makeAutoPagingEach": [
+    "asyncIteratorNext"
+  ],
+  "makeAutoPagingToArray": [
+    "autoPagingEach"
+  ],
+  "wrapAsyncIteratorWithCallback": [
+    "asyncIteratorNext",
+    "onItem"
+  ],
+  "handleIteration": [
+    "iterResult"
+  ],
+  "isReverseIteration": [
+    "requestArgs"
+  ],
+  "CryptoProvider": {
+    "computeHMACSignature": [
+      "payload",
+      "secret"
+    ],
+    "computeHMACSignatureAsync": [
+      "payload",
+      "secret"
+    ],
+    "computeSHA256Async": [
+      "data"
+    ]
+  },
+  "CryptoProviderOnlySupportsAsyncError": {},
+  "NodeCryptoProvider": {
+    "computeHMACSignature": [
+      "payload",
+      "secret"
+    ],
+    "computeHMACSignatureAsync": [
+      "payload",
+      "secret"
+    ],
+    "computeSHA256Async": [
+      "data"
+    ]
+  },
+  "SubtleCryptoProvider": {
+    "constructor": [
+      "subtleCrypto"
+    ],
+    "computeHMACSignature": [
+      "payload",
+      "secret"
+    ],
+    "computeHMACSignatureAsync": [
+      "payload",
+      "secret"
+    ],
+    "computeSHA256Async": [
+      "data"
+    ]
+  },
+  "multipartDataGenerator": [
+    "method",
+    "data",
+    "headers"
+  ],
+  "push": [
+    "l"
+  ],
+  "q": [
+    "s"
+  ],
+  "multipartRequestDataProcessor": [
+    "method",
+    "data",
+    "headers",
+    "callback"
+  ],
+  "FetchHttpClient": {
+    "constructor": [
+      "fetchFn"
+    ],
+    "makeFetchWithRaceTimeout": [
+      "fetchFn"
+    ],
+    "makeFetchWithAbortTimeout": [
+      "fetchFn"
+    ],
+    "getClientName": [],
+    "makeRequest": [
+      "host",
+      "port",
+      "path",
+      "method",
+      "headers",
+      "requestData",
+      "protocol",
+      "timeout"
+    ]
+  },
+  "FetchHttpClientResponse": {
+    "constructor": [
+      "res"
+    ],
+    "getRawResponse": [],
+    "toStream": [
+      "streamCompleteCallback"
+    ],
+    "toJSON": [],
+    "_transformHeadersToObject": [
+      "headers"
+    ]
+  },
+  "HttpClient": {
+    "getClientName": [],
+    "makeRequest": [
+      "host",
+      "port",
+      "path",
+      "method",
+      "headers",
+      "requestData",
+      "protocol",
+      "timeout"
+    ],
+    "makeTimeoutError": []
+  },
+  "HttpClientResponse": {
+    "constructor": [
+      "statusCode",
+      "headers"
+    ],
+    "getStatusCode": [],
+    "getHeaders": [],
+    "getRawResponse": [],
+    "toStream": [
+      "streamCompleteCallback"
+    ],
+    "toJSON": []
+  },
+  "NodeHttpClient": {
+    "constructor": [
+      "agent"
+    ],
+    "getClientName": [],
+    "makeRequest": [
+      "host",
+      "port",
+      "path",
+      "method",
+      "headers",
+      "requestData",
+      "protocol",
+      "timeout"
+    ]
+  },
+  "NodeHttpClientResponse": {
+    "constructor": [
+      "res"
+    ],
+    "getRawResponse": [],
+    "toStream": [
+      "streamCompleteCallback"
+    ],
+    "toJSON": []
+  },
+  "StreamProcessingError": {},
+  "NodePlatformFunctions": {
+    "constructor": [],
+    "uuid4": [],
+    "getUname": [],
+    "secureCompare": [
+      "a",
+      "b"
+    ],
+    "createEmitter": [],
+    "tryBufferData": [
+      "data"
+    ],
+    "createNodeHttpClient": [
+      "agent"
+    ],
+    "createDefaultHttpClient": [],
+    "createNodeCryptoProvider": [],
+    "createDefaultCryptoProvider": []
+  },
+  "PlatformFunctions": {
+    "constructor": [],
+    "getUname": [],
+    "uuid4": [],
+    "secureCompare": [
+      "a",
+      "b"
+    ],
+    "createEmitter": [],
+    "tryBufferData": [
+      "data"
+    ],
+    "createNodeHttpClient": [
+      "agent"
+    ],
+    "createFetchHttpClient": [
+      "fetchFn"
+    ],
+    "createDefaultHttpClient": [],
+    "createNodeCryptoProvider": [],
+    "createSubtleCryptoProvider": [
+      "subtleCrypto"
+    ],
+    "createDefaultCryptoProvider": []
+  },
+  "WebPlatformFunctions": {
+    "getUname": [],
+    "createEmitter": [],
+    "tryBufferData": [
+      "data"
+    ],
+    "createNodeHttpClient": [],
+    "createDefaultHttpClient": [],
+    "createNodeCryptoProvider": [],
+    "createDefaultCryptoProvider": []
+  },
+  "transformResponseData": [
+    "response"
+  ],
+  "defaultRequestSenderFactory": [
+    "stripe"
+  ],
+  "createStripe": [
+    "platformFunctions",
+    "param"
+  ],
+  "Stripe": {
+    "Stripe": [],
+    "webhooks": [],
+    "constructor": [
+      "apiKey",
+      "config"
+    ],
+    "StripeResource": [],
+    "accountLinks": [],
+    "accountSessions": [],
+    "accounts": [],
+    "applePayDomains": [],
+    "applicationFees": [],
+    "balance": [],
+    "balanceSettings": [],
+    "balanceTransactions": [],
+    "charges": [],
+    "confirmationTokens": [],
+    "countrySpecs": [],
+    "coupons": [],
+    "creditNotes": [],
+    "customerSessions": [],
+    "customers": [],
+    "disputes": [],
+    "ephemeralKeys": [],
+    "events": [],
+    "exchangeRates": [],
+    "fileLinks": [],
+    "files": [],
+    "invoiceItems": [],
+    "invoicePayments": [],
+    "invoiceRenderingTemplates": [],
+    "invoices": [],
+    "mandates": [],
+    "paymentAttemptRecords": [],
+    "paymentIntents": [],
+    "paymentLinks": [],
+    "paymentMethodConfigurations": [],
+    "paymentMethodDomains": [],
+    "paymentMethods": [],
+    "paymentRecords": [],
+    "payouts": [],
+    "plans": [],
+    "prices": [],
+    "products": [],
+    "promotionCodes": [],
+    "quotes": [],
+    "refunds": [],
+    "reviews": [],
+    "setupAttempts": [],
+    "setupIntents": [],
+    "shippingRates": [],
+    "sources": [],
+    "subscriptionItems": [],
+    "subscriptionSchedules": [],
+    "subscriptions": [],
+    "taxCodes": [],
+    "taxIds": [],
+    "taxRates": [],
+    "tokens": [],
+    "topups": [],
+    "transfers": [],
+    "webhookEndpoints": [],
+    "apps": [],
+    "billing": [],
+    "billingPortal": [],
+    "checkout": [],
+    "climate": [],
+    "entitlements": [],
+    "financialConnections": [],
+    "forwarding": [],
+    "identity": [],
+    "issuing": [],
+    "radar": [],
+    "reporting": [],
+    "sigma": [],
+    "tax": [],
+    "terminal": [],
+    "testHelpers": [],
+    "treasury": [],
+    "v2": [],
+    "oauth": [],
+    "errors": [],
+    "on": [
+      "event",
+      "handler"
+    ],
+    "once": [
+      "event",
+      "handler"
+    ],
+    "off": [
+      "event",
+      "handler"
+    ],
+    "rawRequest": [
+      "method",
+      "path",
+      "params",
+      "options"
+    ],
+    "parseEventNotification": []
+  },
+  "isOptionsHash": [
+    "o"
+  ],
+  "queryStringifyRequestData": [
+    "data",
+    "_apiMode"
+  ],
+  "encodeQueryValue": [
+    "value"
+  ],
+  "valueToString": [
+    "value"
+  ],
+  "stringifyRequestData": [
+    "data"
+  ],
+  "encode": [
+    "key",
+    "value"
+  ],
+  "isValidEncodeUriComponentType": [
+    "value"
+  ],
+  "extractUrlParams": [
+    "path"
+  ],
+  "getDataFromArgs": [
+    "args"
+  ],
+  "getOptionsFromArgs": [
+    "args"
+  ],
+  "protoExtend": [
+    "sub"
+  ],
+  "removeNullish": [
+    "obj"
+  ],
+  "normalizeHeaders": [
+    "obj"
+  ],
+  "normalizeHeader": [
+    "header"
+  ],
+  "callbackifyPromiseWithTimeout": [
+    "promise",
+    "callback"
+  ],
+  "pascalToCamelCase": [
+    "name"
+  ],
+  "emitWarning": [
+    "warning"
+  ],
+  "isObject": [
+    "obj"
+  ],
+  "flattenAndStringify": [
+    "data"
+  ],
+  "step": [
+    "obj",
+    "prevKey"
+  ],
+  "validateInteger": [
+    "name",
+    "n",
+    "defaultVal"
+  ],
+  "determineProcessUserAgentProperties": [],
+  "createApiKeyAuthenticator": [
+    "apiKey"
+  ],
+  "authenticator": [
+    "request"
+  ],
+  "concat": [
+    "arrays"
+  ],
+  "dateTimeReplacer": [
+    "key",
+    "value"
+  ],
+  "jsonStringifyRequestData": [
+    "data"
+  ],
+  "getAPIMode": [
+    "path"
+  ],
+  "parseHttpHeaderAsString": [
+    "header"
+  ],
+  "parseHttpHeaderAsNumber": [
+    "header"
+  ],
+  "parseHeadersForFetch": [
+    "headers"
+  ],
+  "AccountLinksResource": {
+    "create": [
+      "params",
+      "options"
+    ]
+  },
+  "AccountSessionsResource": {
+    "create": [
+      "params",
+      "options"
+    ]
+  },
+  "AccountsResource": {
+    "persons": [],
+    "personTokens": [],
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "close": [
+      "id",
+      "options"
+    ]
+  },
+  "ApplePayDomainsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "del": [
+      "id",
+      "options"
+    ]
+  },
+  "ApplicationFeesResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "createRefund": [
+      "id",
+      "options"
+    ],
+    "listRefunds": [
+      "id",
+      "options"
+    ],
+    "retrieveRefund": [
+      "feeId",
+      "id",
+      "options"
+    ],
+    "updateRefund": [
+      "feeId",
+      "id",
+      "options"
+    ]
+  },
+  "SecretsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "list": [
+      "params",
+      "options"
+    ],
+    "deleteWhere": [
+      "params",
+      "options"
+    ],
+    "find": [
+      "params",
+      "options"
+    ]
+  },
+  "BalanceResource": {
+    "retrieve": [
+      "options"
+    ]
+  },
+  "BalanceSettingsResource": {
+    "retrieve": [
+      "options"
+    ],
+    "update": [
+      "params",
+      "options"
+    ]
+  },
+  "BalanceTransactionsResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "AlertsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "activate": [
+      "id",
+      "options"
+    ],
+    "archive": [
+      "id",
+      "options"
+    ],
+    "deactivate": [
+      "id",
+      "options"
+    ]
+  },
+  "CreditBalanceSummaryResource": {
+    "retrieve": [
+      "params",
+      "options"
+    ]
+  },
+  "CreditBalanceTransactionsResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "CreditGrantsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "expire": [
+      "id",
+      "options"
+    ],
+    "voidGrant": [
+      "id",
+      "options"
+    ]
+  },
+  "MeterEventAdjustmentsResource": {
+    "create": [
+      "params",
+      "options"
+    ]
+  },
+  "MeterEventsResource": {
+    "create": [
+      "params",
+      "options"
+    ]
+  },
+  "MetersResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "deactivate": [
+      "id",
+      "options"
+    ],
+    "listEventSummaries": [
+      "id",
+      "params",
+      "options"
+    ],
+    "reactivate": [
+      "id",
+      "options"
+    ]
+  },
+  "ConfigurationsResource": {
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "del": [
+      "id",
+      "options"
+    ]
+  },
+  "SessionsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ]
+  },
+  "ChargesResource": {
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "capture": [
+      "id",
+      "options"
+    ],
+    "search": [
+      "params",
+      "options"
+    ]
+  },
+  "OrdersResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "cancel": [
+      "id",
+      "options"
+    ]
+  },
+  "ProductsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "del": [
+      "id",
+      "options"
+    ],
+    "createFeature": [
+      "id",
+      "params",
+      "options"
+    ],
+    "deleteFeature": [
+      "productId",
+      "id",
+      "options"
+    ],
+    "listFeatures": [
+      "id",
+      "options"
+    ],
+    "retrieveFeature": [
+      "productId",
+      "id",
+      "options"
+    ],
+    "search": [
+      "params",
+      "options"
+    ]
+  },
+  "SuppliersResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "ConfirmationTokensResource": {
+    "create": [
+      "options"
+    ]
+  },
+  "CountrySpecsResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "CouponsResource": {
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "del": [
+      "id",
+      "options"
+    ]
+  },
+  "CreditNotesResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "listLineItems": [
+      "id",
+      "options"
+    ],
+    "listPreviewLineItems": [
+      "params",
+      "options"
+    ],
+    "preview": [
+      "params",
+      "options"
+    ],
+    "voidCreditNote": [
+      "id",
+      "options"
+    ]
+  },
+  "CustomerSessionsResource": {
+    "create": [
+      "params",
+      "options"
+    ]
+  },
+  "CustomersResource": {
+    "fundCashBalance": [
+      "id",
+      "params",
+      "options"
+    ]
+  },
+  "DisputesResource": {
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "submit": [
+      "id",
+      "options"
+    ]
+  },
+  "ActiveEntitlementsResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "params",
+      "options"
+    ]
+  },
+  "FeaturesResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "EphemeralKeysResource": {
+    "create": [
+      "options"
+    ],
+    "del": [
+      "id",
+      "options"
+    ]
+  },
+  "EventsResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "ExchangeRatesResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "FileLinksResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "FilesResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "TransactionsResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "params",
+      "options"
+    ]
+  },
+  "RequestsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "VerificationReportsResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "VerificationSessionsResource": {
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "cancel": [
+      "id",
+      "options"
+    ],
+    "redact": [
+      "id",
+      "options"
+    ]
+  },
+  "InvoiceItemsResource": {
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "del": [
+      "id",
+      "options"
+    ]
+  },
+  "InvoicePaymentsResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "InvoiceRenderingTemplatesResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "archive": [
+      "id",
+      "options"
+    ],
+    "unarchive": [
+      "id",
+      "options"
+    ]
+  },
+  "InvoicesResource": {
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "del": [
+      "id",
+      "options"
+    ],
+    "addLines": [
+      "id",
+      "params",
+      "options"
+    ],
+    "attachPayment": [
+      "id",
+      "options"
+    ],
+    "createPreview": [
+      "options"
+    ],
+    "finalizeInvoice": [
+      "id",
+      "options"
+    ],
+    "listLineItems": [
+      "id",
+      "options"
+    ],
+    "markUncollectible": [
+      "id",
+      "options"
+    ],
+    "pay": [
+      "id",
+      "options"
+    ],
+    "removeLines": [
+      "id",
+      "params",
+      "options"
+    ],
+    "search": [
+      "params",
+      "options"
+    ],
+    "sendInvoice": [
+      "id",
+      "options"
+    ],
+    "updateLines": [
+      "id",
+      "params",
+      "options"
+    ],
+    "updateLineItem": [
+      "invoiceId",
+      "id",
+      "options"
+    ],
+    "voidInvoice": [
+      "id",
+      "options"
+    ]
+  },
+  "AuthorizationsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "capture": [
+      "id",
+      "options"
+    ],
+    "expire": [
+      "id",
+      "options"
+    ],
+    "finalizeAmount": [
+      "id",
+      "params",
+      "options"
+    ],
+    "increment": [
+      "id",
+      "params",
+      "options"
+    ],
+    "respond": [
+      "id",
+      "params",
+      "options"
+    ],
+    "reverse": [
+      "id",
+      "options"
+    ]
+  },
+  "CardholdersResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "CardsResource": {
+    "deliverCard": [
+      "id",
+      "options"
+    ],
+    "failCard": [
+      "id",
+      "options"
+    ],
+    "returnCard": [
+      "id",
+      "options"
+    ],
+    "shipCard": [
+      "id",
+      "options"
+    ],
+    "submitCard": [
+      "id",
+      "options"
+    ]
+  },
+  "PersonalizationDesignsResource": {
+    "activate": [
+      "id",
+      "options"
+    ],
+    "deactivate": [
+      "id",
+      "options"
+    ],
+    "reject": [
+      "id",
+      "params",
+      "options"
+    ]
+  },
+  "PhysicalBundlesResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "TokensResource": {
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ]
+  },
+  "MandatesResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ]
+  },
+  "OAuthResource": {
+    "authorizeUrl": [
+      "params",
+      "options"
+    ],
+    "deauthorize": [
+      "params",
+      "options"
+    ],
+    "token": [
+      "params",
+      "options"
+    ]
+  },
+  "PaymentAttemptRecordsResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "params",
+      "options"
+    ]
+  },
+  "PaymentIntentsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "applyCustomerBalance": [
+      "id",
+      "options"
+    ],
+    "cancel": [
+      "id",
+      "options"
+    ],
+    "capture": [
+      "id",
+      "options"
+    ],
+    "confirm": [
+      "id",
+      "options"
+    ],
+    "incrementAuthorization": [
+      "id",
+      "params",
+      "options"
+    ],
+    "listAmountDetailsLineItems": [
+      "id",
+      "options"
+    ],
+    "search": [
+      "params",
+      "options"
+    ],
+    "verifyMicrodeposits": [
+      "id",
+      "options"
+    ]
+  },
+  "PaymentLinksResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "listLineItems": [
+      "id",
+      "options"
+    ]
+  },
+  "PaymentMethodConfigurationsResource": {
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "PaymentMethodDomainsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "validate": [
+      "id",
+      "options"
+    ]
+  },
+  "PaymentMethodsResource": {
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "attach": [
+      "id",
+      "options"
+    ],
+    "detach": [
+      "id",
+      "options"
+    ]
+  },
+  "PaymentRecordsResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "reportPayment": [
+      "params",
+      "options"
+    ],
+    "reportPaymentAttempt": [
+      "id",
+      "params",
+      "options"
+    ],
+    "reportPaymentAttemptCanceled": [
+      "id",
+      "params",
+      "options"
+    ],
+    "reportPaymentAttemptFailed": [
+      "id",
+      "params",
+      "options"
+    ],
+    "reportPaymentAttemptGuaranteed": [
+      "id",
+      "params",
+      "options"
+    ],
+    "reportPaymentAttemptInformational": [
+      "id",
+      "options"
+    ],
+    "reportRefund": [
+      "id",
+      "params",
+      "options"
+    ]
+  },
+  "PayoutsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "cancel": [
+      "id",
+      "options"
+    ],
+    "reverse": [
+      "id",
+      "options"
+    ]
+  },
+  "PlansResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "del": [
+      "id",
+      "options"
+    ]
+  },
+  "PricesResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "search": [
+      "params",
+      "options"
+    ]
+  },
+  "PromotionCodesResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "QuotesResource": {
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "accept": [
+      "id",
+      "options"
+    ],
+    "cancel": [
+      "id",
+      "options"
+    ],
+    "finalizeQuote": [
+      "id",
+      "options"
+    ],
+    "listComputedUpfrontLineItems": [
+      "id",
+      "options"
+    ],
+    "listLineItems": [
+      "id",
+      "options"
+    ],
+    "pdf": [
+      "id",
+      "options"
+    ]
+  },
+  "EarlyFraudWarningsResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "PaymentEvaluationsResource": {
+    "create": [
+      "params",
+      "options"
+    ]
+  },
+  "ValueListItemsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "params",
+      "options"
+    ],
+    "del": [
+      "id",
+      "options"
+    ]
+  },
+  "ValueListsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "del": [
+      "id",
+      "options"
+    ]
+  },
+  "RefundsResource": {
+    "expire": [
+      "id",
+      "options"
+    ]
+  },
+  "ReportRunsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "ReportTypesResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "ReviewsResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "approve": [
+      "id",
+      "options"
+    ]
+  },
+  "SetupAttemptsResource": {
+    "list": [
+      "params",
+      "options"
+    ]
+  },
+  "SetupIntentsResource": {
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "cancel": [
+      "id",
+      "options"
+    ],
+    "confirm": [
+      "id",
+      "options"
+    ],
+    "verifyMicrodeposits": [
+      "id",
+      "options"
+    ]
+  },
+  "ShippingRatesResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "ScheduledQueryRunsResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "SourcesResource": {
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "listSourceTransactions": [
+      "id",
+      "options"
+    ],
+    "verify": [
+      "id",
+      "params",
+      "options"
+    ]
+  },
+  "SubscriptionItemsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "params",
+      "options"
+    ],
+    "del": [
+      "id",
+      "options"
+    ]
+  },
+  "SubscriptionSchedulesResource": {
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "cancel": [
+      "id",
+      "options"
+    ],
+    "release": [
+      "id",
+      "options"
+    ]
+  },
+  "SubscriptionsResource": {
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "cancel": [
+      "id",
+      "options"
+    ],
+    "deleteDiscount": [
+      "id",
+      "options"
+    ],
+    "migrate": [
+      "id",
+      "params",
+      "options"
+    ],
+    "resume": [
+      "id",
+      "options"
+    ],
+    "search": [
+      "params",
+      "options"
+    ]
+  },
+  "AssociationsResource": {
+    "find": [
+      "params",
+      "options"
+    ]
+  },
+  "CalculationsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "listLineItems": [
+      "id",
+      "options"
+    ]
+  },
+  "RegistrationsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "SettingsResource": {
+    "retrieve": [
+      "options"
+    ],
+    "update": [
+      "params",
+      "options"
+    ]
+  },
+  "TaxCodesResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "TaxIdsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "del": [
+      "id",
+      "options"
+    ]
+  },
+  "TaxRatesResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ]
+  },
+  "ConnectionTokensResource": {
+    "create": [
+      "options"
+    ]
+  },
+  "LocationsResource": {
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "del": [
+      "id",
+      "options"
+    ]
+  },
+  "OnboardingLinksResource": {
+    "create": [
+      "params",
+      "options"
+    ]
+  },
+  "ReadersResource": {
+    "presentPaymentMethod": [
+      "id",
+      "options"
+    ],
+    "succeedInputCollection": [
+      "id",
+      "options"
+    ],
+    "timeoutInputCollection": [
+      "id",
+      "options"
+    ]
+  },
+  "TestClocksResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "del": [
+      "id",
+      "options"
+    ],
+    "advance": [
+      "id",
+      "params",
+      "options"
+    ]
+  },
+  "InboundTransfersResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "params",
+      "options"
+    ],
+    "cancel": [
+      "id",
+      "options"
+    ]
+  },
+  "OutboundPaymentsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "params",
+      "options"
+    ],
+    "cancel": [
+      "id",
+      "options"
+    ]
+  },
+  "OutboundTransfersResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "params",
+      "options"
+    ],
+    "cancel": [
+      "id",
+      "options"
+    ]
+  },
+  "ReceivedCreditsResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "params",
+      "options"
+    ]
+  },
+  "ReceivedDebitsResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "params",
+      "options"
+    ]
+  },
+  "TopupsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "cancel": [
+      "id",
+      "options"
+    ]
+  },
+  "TransfersResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "createReversal": [
+      "id",
+      "options"
+    ],
+    "listReversals": [
+      "id",
+      "options"
+    ],
+    "retrieveReversal": [
+      "transferId",
+      "id",
+      "options"
+    ],
+    "updateReversal": [
+      "transferId",
+      "id",
+      "options"
+    ]
+  },
+  "CreditReversalsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "params",
+      "options"
+    ]
+  },
+  "DebitReversalsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "params",
+      "options"
+    ]
+  },
+  "FinancialAccountsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "close": [
+      "id",
+      "options"
+    ],
+    "retrieveFeatures": [
+      "id",
+      "options"
+    ],
+    "updateFeatures": [
+      "id",
+      "options"
+    ]
+  },
+  "TransactionEntriesResource": {
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "list": [
+      "params",
+      "options"
+    ]
+  },
+  "MeterEventSessionResource": {
+    "create": [
+      "options"
+    ]
+  },
+  "MeterEventStreamResource": {
+    "create": [
+      "params",
+      "options"
+    ]
+  },
+  "AccountTokensResource": {
+    "create": [
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ]
+  },
+  "PersonTokensResource": {
+    "create": [
+      "id",
+      "options"
+    ],
+    "retrieve": [
+      "accountId",
+      "id",
+      "options"
+    ]
+  },
+  "PersonsResource": {
+    "create": [
+      "id",
+      "options"
+    ],
+    "retrieve": [
+      "accountId",
+      "id",
+      "options"
+    ],
+    "update": [
+      "accountId",
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "id",
+      "options"
+    ],
+    "del": [
+      "accountId",
+      "id",
+      "options"
+    ]
+  },
+  "EventDestinationsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "del": [
+      "id",
+      "options"
+    ],
+    "disable": [
+      "id",
+      "options"
+    ],
+    "enable": [
+      "id",
+      "options"
+    ],
+    "ping": [
+      "id",
+      "options"
+    ]
+  },
+  "WebhookEndpointsResource": {
+    "create": [
+      "params",
+      "options"
+    ],
+    "retrieve": [
+      "id",
+      "options"
+    ],
+    "update": [
+      "id",
+      "params",
+      "options"
+    ],
+    "list": [
+      "options"
+    ],
+    "del": [
+      "id",
+      "options"
+    ]
+  },
+  "Webhooks": {
+    "constructEvent": [
+      "payload",
+      "header",
+      "secret",
+      "tolerance",
+      "cryptoProvider",
+      "receivedAt"
+    ],
+    "constructEventAsync": [
+      "payload",
+      "header",
+      "secret",
+      "tolerance",
+      "cryptoProvider",
+      "receivedAt"
+    ],
+    "generateTestHeaderString": [
+      "opts"
+    ],
+    "generateTestHeaderStringAsync": [
+      "opts"
+    ],
+    "signature": []
+  },
+  "Signature": {
+    "EXPECTED_SCHEME": [],
+    "verifyHeader": [
+      "payload",
+      "header",
+      "secret",
+      "tolerance",
+      "cryptoProvider"
+    ],
+    "verifyHeaderAsync": [
+      "payload",
+      "header",
+      "secret",
+      "tolerance",
+      "cryptoProvider"
+    ],
+    "parseHeader": [
+      "header",
+      "scheme"
+    ]
+  }
+}
