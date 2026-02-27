@@ -1,0 +1,583 @@
+{
+  "AgentLoader": {
+    "constructor": [],
+    "_getInstrumentationKey": [
+      "connectionString"
+    ],
+    "setLogger": [
+      "logger"
+    ],
+    "initialize": [],
+    "_validate": [],
+    "_detectOpenTelemetryGlobals": [],
+    "_getAuthenticationCredential": [],
+    "_sdkAlreadyExists": []
+  },
+  "AKSLoader": {
+    "constructor": []
+  },
+  "AppServicesLoader": {
+    "constructor": []
+  },
+  "AzureFunctionsLoader": {
+    "constructor": []
+  },
+  "BaseDiagnosticLogger": {
+    "constructor": [
+      "instrumentationKey",
+      "param"
+    ],
+    "logMessage": [
+      "diagnosticLog"
+    ]
+  },
+  "DiagnosticLogger": {
+    "constructor": [
+      "instrumentationKey",
+      "param"
+    ],
+    "logMessage": [
+      "diagnosticLog"
+    ],
+    "_addCommonProperties": [
+      "diagnosticLog"
+    ]
+  },
+  "EtwDiagnosticLogger": {
+    "constructor": [
+      "instrumentationKey"
+    ],
+    "logMessage": [
+      "diagnosticLog"
+    ],
+    "_getMetadata": []
+  },
+  "StatusLogger": {
+    "constructor": [
+      "instrumentationKey",
+      "param"
+    ],
+    "logStatus": [
+      "status",
+      "cb"
+    ],
+    "_addCommonProperties": [
+      "status"
+    ]
+  },
+  "AzureFunctionsWriter": {
+    "constructor": [
+      "instrumentationKey"
+    ],
+    "log": [
+      "log"
+    ],
+    "error": [
+      "log"
+    ],
+    "_getAzureFnLog": [
+      "log"
+    ]
+  },
+  "ConsoleWriter": {
+    "log": [
+      "message",
+      "param"
+    ],
+    "error": [
+      "message",
+      "param"
+    ]
+  },
+  "EtwWriter": {
+    "constructor": [],
+    "log": [
+      "message",
+      "optional"
+    ],
+    "error": [
+      "message",
+      "optional"
+    ],
+    "_loadEtwModule": [
+      "nodeMajVer"
+    ]
+  },
+  "mkDirByPathSync": [
+    "HOME_DIR",
+    "targetDir",
+    "param"
+  ],
+  "makeStatusDirs": [
+    "filepath"
+  ],
+  "renameCurrentFile": [
+    "filepath",
+    "filename",
+    "callback"
+  ],
+  "FileWriter": {
+    "constructor": [
+      "_filepath",
+      "_filename",
+      "options"
+    ],
+    "isNodeVersionCompatible": [],
+    "log": [
+      "message"
+    ],
+    "_appendFile": [
+      "message"
+    ],
+    "_writeFile": [
+      "message"
+    ],
+    "_addCloseHandler": [],
+    "_shouldRenameFile": [
+      "callback"
+    ]
+  },
+  "AutoCollectLogs": {
+    "enable": [
+      "options"
+    ],
+    "shutdown": []
+  },
+  "subscriber": [
+    "event"
+  ],
+  "enable": [
+    "config"
+  ],
+  "dispose": [],
+  "enablePublishers": [],
+  "AutoCollectExceptions": {
+    "constructor": [
+      "client"
+    ],
+    "shutdown": [],
+    "_handleException": [
+      "reThrow",
+      "name",
+      "param"
+    ]
+  },
+  "_StackFrame": {
+    "constructor": [
+      "frame",
+      "level"
+    ]
+  },
+  "parseStack": [
+    "stack"
+  ],
+  "useAzureMonitor": [
+    "options"
+  ],
+  "shutdownAzureMonitor": [],
+  "flushAzureMonitor": [],
+  "_getOtlpSpanExporter": [
+    "internalConfig"
+  ],
+  "_getOtlpLogExporter": [
+    "internalConfig"
+  ],
+  "ApplicationInsightsConfig": {
+    "constructor": [
+      "options"
+    ],
+    "resource": [],
+    "_mergeConfig": [],
+    "_getDefaultResource": []
+  },
+  "JsonConfig": {
+    "constructor": [],
+    "getInstance": [],
+    "_loadJsonFile": []
+  },
+  "AttributeLogProcessor": {
+    "constructor": [
+      "attributes"
+    ],
+    "onEmit": [
+      "record"
+    ],
+    "shutdown": [],
+    "forceFlush": []
+  },
+  "AttributeSpanProcessor": {
+    "constructor": [
+      "attributes"
+    ],
+    "onStart": [
+      "span"
+    ],
+    "onEnd": [],
+    "shutdown": [],
+    "forceFlush": []
+  },
+  "ignoreOutgoingRequestHook": [
+    "request"
+  ],
+  "ContextTagKeys": {
+    "constructor": []
+  },
+  "confirmDirExists": [
+    "directory"
+  ],
+  "getShallowDirectorySize": [
+    "directory"
+  ],
+  "getShallowDirectorySizeSync": [
+    "directory"
+  ],
+  "getShallowFileSize": [
+    "filePath"
+  ],
+  "logLevelParser": [
+    "level"
+  ],
+  "StatsbeatFeaturesManager": {
+    "getInstance": [],
+    "getCurrentConfig": [],
+    "setConfig": [
+      "config"
+    ],
+    "enableFeature": [
+      "feature"
+    ],
+    "disableFeature": [
+      "feature"
+    ],
+    "isFeatureEnabled": [
+      "feature"
+    ],
+    "enableInstrumentation": [
+      "instrumentation"
+    ],
+    "disableInstrumentation": [
+      "instrumentation"
+    ],
+    "isInstrumentationEnabled": [
+      "instrumentation"
+    ],
+    "initialize": []
+  },
+  "Util": {
+    "constructor": [],
+    "getInstance": [],
+    "trim": [
+      "str"
+    ],
+    "isArray": [
+      "obj"
+    ],
+    "isError": [
+      "obj"
+    ],
+    "isPrimitive": [
+      "input"
+    ],
+    "isDate": [
+      "obj"
+    ],
+    "msToTimeSpan": [
+      "ms"
+    ],
+    "extractError": [
+      "err"
+    ],
+    "isDbDependency": [
+      "dependencyType"
+    ],
+    "dumpObj": [
+      "object"
+    ],
+    "stringify": [
+      "payload"
+    ],
+    "_addCloseHandler": []
+  },
+  "Configuration": {
+    "setDistributedTracingMode": [
+      "value"
+    ],
+    "setAutoCollectConsole": [
+      "value",
+      "param"
+    ],
+    "setAutoCollectExceptions": [
+      "value"
+    ],
+    "setAutoCollectPerformance": [
+      "value",
+      "collectExtendedMetrics"
+    ],
+    "setAutoCollectPreAggregatedMetrics": [
+      "value"
+    ],
+    "setAutoCollectHeartbeat": [
+      "value"
+    ],
+    "enableWebInstrumentation": [
+      "value",
+      "WebSnippetConnectionString"
+    ],
+    "setAutoCollectRequests": [
+      "value"
+    ],
+    "setAutoCollectDependencies": [
+      "value"
+    ],
+    "setAutoDependencyCorrelation": [
+      "value",
+      "useAsyncHooks"
+    ],
+    "setUseDiskRetryCaching": [
+      "value",
+      "resendInterval",
+      "maxBytesOnDisk"
+    ],
+    "setInternalLogging": [
+      "param",
+      "param"
+    ],
+    "setAutoCollectIncomingRequestAzureFunctions": [
+      "value"
+    ],
+    "setSendLiveMetrics": [
+      "param"
+    ],
+    "setAzureMonitorOptions": [
+      "value"
+    ]
+  },
+  "setup": [
+    "setupString"
+  ],
+  "start": [],
+  "getCorrelationContext": [],
+  "startOperation": [
+    "arg1",
+    "arg2"
+  ],
+  "wrapWithCorrelationContext": [
+    "fn",
+    "context"
+  ],
+  "Context": {
+    "constructor": [
+      "packageJsonPath"
+    ]
+  },
+  "CorrelationContextManager": {
+    "spanToContextObject": [
+      "spanContext",
+      "parentId",
+      "name",
+      "traceState"
+    ],
+    "getCurrentContext": [],
+    "_getParentSpanId": [
+      "span"
+    ],
+    "generateContextObject": [
+      "operationId",
+      "parentId",
+      "operationName",
+      "traceparent",
+      "tracestate"
+    ],
+    "runWithContext": [
+      "ctx",
+      "fn"
+    ],
+    "wrapEmitter": [
+      "emitter"
+    ],
+    "wrapCallback": [
+      "fn",
+      "ctx"
+    ],
+    "enable": [
+      "forceClsHooked"
+    ],
+    "startOperation": [
+      "input",
+      "request"
+    ],
+    "disable": [],
+    "reset": [],
+    "_contextObjectToSpanContext": [
+      "ctx"
+    ]
+  },
+  "LogApi": {
+    "constructor": [
+      "logger"
+    ],
+    "trackAvailability": [
+      "telemetry"
+    ],
+    "trackPageView": [
+      "telemetry"
+    ],
+    "trackTrace": [
+      "telemetry"
+    ],
+    "trackException": [
+      "telemetry"
+    ],
+    "trackEvent": [
+      "telemetry"
+    ],
+    "_telemetryToLogRecord": [
+      "telemetry",
+      "baseType",
+      "baseData"
+    ],
+    "_availabilityToLogRecord": [
+      "telemetry"
+    ],
+    "_exceptionToLogRecord": [
+      "telemetry"
+    ],
+    "_traceToLogRecord": [
+      "telemetry"
+    ],
+    "_pageViewToLogRecord": [
+      "telemetry"
+    ],
+    "_eventToLogRecord": [
+      "telemetry"
+    ]
+  },
+  "NodeClient": {
+    "trackNodeHttpRequestSync": [
+      "telemetry"
+    ],
+    "trackNodeHttpRequest": [
+      "telemetry"
+    ],
+    "trackNodeHttpDependency": [
+      "telemetry"
+    ]
+  },
+  "Config": {
+    "constructor": [
+      "setupString",
+      "configWarnings"
+    ],
+    "_mergeConfig": [],
+    "parseConfig": []
+  },
+  "ShimJsonConfig": {
+    "constructor": [],
+    "getInstance": [],
+    "_loadJsonFile": []
+  },
+  "TelemetryClient": {
+    "constructor": [
+      "input",
+      "options"
+    ],
+    "initialize": [],
+    "trackAvailability": [
+      "telemetry"
+    ],
+    "trackPageView": [
+      "telemetry"
+    ],
+    "trackTrace": [
+      "telemetry"
+    ],
+    "trackException": [
+      "telemetry"
+    ],
+    "trackEvent": [
+      "telemetry"
+    ],
+    "trackMetric": [
+      "telemetry"
+    ],
+    "_getTracerInstance": [],
+    "_getMeterInstance": [],
+    "trackRequest": [
+      "telemetry"
+    ],
+    "trackDependency": [
+      "telemetry"
+    ],
+    "track": [
+      "telemetry",
+      "telemetryType"
+    ],
+    "setAutoPopulateAzureProperties": [],
+    "getAuthorizationHandler": [
+      "config"
+    ],
+    "getStatsbeat": [],
+    "setUseDiskRetryCaching": [
+      "value",
+      "resendInterval",
+      "maxBytesOnDisk"
+    ],
+    "addTelemetryProcessor": [
+      "telemetryProcessor"
+    ],
+    "clearTelemetryProcessors": [],
+    "trackNodeHttpRequestSync": [
+      "telemetry"
+    ],
+    "trackNodeHttpRequest": [
+      "telemetry"
+    ],
+    "trackNodeHttpDependency": [
+      "telemetry"
+    ],
+    "flush": [],
+    "shutdown": [],
+    "pushWarningToLog": [
+      "warning"
+    ]
+  },
+  "TelemetryClientProvider": {
+    "constructor": [
+      "_options"
+    ],
+    "getTracer": [
+      "name"
+    ],
+    "getMeter": [
+      "name"
+    ],
+    "getLogger": [
+      "name"
+    ],
+    "flush": [],
+    "shutdown": [],
+    "_createSampler": [],
+    "_setupTracing": [],
+    "_setupLogging": [],
+    "_setupMetrics": [],
+    "_runWithErrorHandling": [
+      "promise",
+      "message"
+    ]
+  },
+  "RequestSpanProcessor": {
+    "constructor": [
+      "enableDependencyTelemetry",
+      "enableRequestTelemetry"
+    ],
+    "forceFlush": [],
+    "onStart": [
+      "span",
+      "_context"
+    ],
+    "onEnd": [
+      "span"
+    ],
+    "shutdown": []
+  }
+}
