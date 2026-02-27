@@ -1,0 +1,2820 @@
+{
+  "applicationDefault": [
+    "httpAgent"
+  ],
+  "cert": [
+    "serviceAccountPathOrObject",
+    "httpAgent"
+  ],
+  "refreshToken": [
+    "refreshTokenPathOrObject",
+    "httpAgent"
+  ],
+  "clearGlobalAppDefaultCred": [],
+  "ApplicationDefaultCredential": {
+    "constructor": [
+      "httpAgent"
+    ],
+    "getAccessToken": [],
+    "getProjectId": [],
+    "getQuotaProjectId": [],
+    "isComputeEngineCredential": [],
+    "getIDToken": [
+      "audience"
+    ],
+    "getServiceAccountEmail": []
+  },
+  "ServiceAccountCredential": {
+    "constructor": [
+      "serviceAccountPathOrObject",
+      "httpAgent",
+      "param"
+    ],
+    "getGoogleAuth": [],
+    "getAccessToken": []
+  },
+  "RefreshTokenCredential": {
+    "constructor": [
+      "refreshTokenPathOrObject",
+      "httpAgent",
+      "param"
+    ],
+    "getGoogleAuth": [],
+    "getAccessToken": []
+  },
+  "ImpersonatedServiceAccountCredential": {
+    "constructor": [
+      "impersonatedServiceAccountPathOrObject",
+      "httpAgent",
+      "param"
+    ],
+    "getGoogleAuth": [],
+    "getAccessToken": []
+  },
+  "ServiceAccount": {
+    "fromPath": [
+      "filePath"
+    ],
+    "constructor": [
+      "json"
+    ]
+  },
+  "RefreshToken": {
+    "validateFromPath": [
+      "filePath"
+    ],
+    "validateFromJSON": [
+      "json"
+    ]
+  },
+  "ImpersonatedServiceAccount": {
+    "validateFromPath": [
+      "filePath"
+    ],
+    "validateFromJSON": [
+      "json"
+    ]
+  },
+  "isApplicationDefault": [
+    "credential"
+  ],
+  "getApplicationDefault": [
+    "httpAgent"
+  ],
+  "copyAttr": [
+    "to",
+    "from",
+    "key",
+    "alt"
+  ],
+  "populateGoogleAuth": [
+    "keyFile",
+    "httpAgent"
+  ],
+  "populateCredential": [
+    "credentials"
+  ],
+  "FirebaseAppInternals": {
+    "constructor": [
+      "credential_"
+    ],
+    "getToken": [
+      "param"
+    ],
+    "getCachedToken": [],
+    "refreshToken": [],
+    "shouldRefresh": [],
+    "addAuthTokenListener": [
+      "listener"
+    ],
+    "removeAuthTokenListener": [
+      "listener"
+    ]
+  },
+  "FirebaseApp": {
+    "constructor": [
+      "options",
+      "name",
+      "param",
+      "appStore"
+    ],
+    "name": [],
+    "options": [],
+    "getOrInitService": [
+      "name",
+      "init"
+    ],
+    "autoInit": [],
+    "customCredential": [],
+    "delete": [],
+    "ensureService_": [
+      "serviceName",
+      "initializer"
+    ],
+    "checkDestroyed_": []
+  },
+  "isStateful": [
+    "service"
+  ],
+  "FirebaseNamespaceInternals": {
+    "constructor": [
+      "appStore"
+    ],
+    "initializeApp": [
+      "options",
+      "appName"
+    ],
+    "app": [
+      "appName"
+    ],
+    "apps": []
+  },
+  "FirebaseNamespace": {
+    "constructor": [
+      "appStore"
+    ],
+    "auth": [],
+    "database": [],
+    "messaging": [],
+    "storage": [],
+    "firestore": [],
+    "machineLearning": [],
+    "installations": [],
+    "instanceId": [],
+    "projectManagement": [],
+    "securityRules": [],
+    "remoteConfig": [],
+    "appCheck": [],
+    "initializeApp": [
+      "options",
+      "appName"
+    ],
+    "app": [
+      "appName"
+    ],
+    "apps": [],
+    "ensureApp": [
+      "app"
+    ]
+  },
+  "fn": [
+    "app"
+  ],
+  "extendApp": [
+    "app"
+  ],
+  "AppStore": {
+    "constructor": [],
+    "initializeApp": [
+      "options",
+      "param"
+    ],
+    "getApp": [
+      "param"
+    ],
+    "getApps": [],
+    "deleteApp": [
+      "app"
+    ],
+    "clearAllApps": [],
+    "removeApp": [
+      "appName"
+    ]
+  },
+  "validateAppOptionsSupportDeepEquals": [
+    "requestedOptions",
+    "existingApp"
+  ],
+  "validateAppNameFormat": [
+    "appName"
+  ],
+  "initializeApp": [
+    "options",
+    "param"
+  ],
+  "getApp": [
+    "param"
+  ],
+  "getApps": [],
+  "deleteApp": [
+    "app"
+  ],
+  "loadOptionsFromEnvVar": [],
+  "FirebaseAppCheckError": {
+    "constructor": [
+      "code",
+      "message"
+    ]
+  },
+  "AppCheckApiClient": {
+    "constructor": [
+      "app"
+    ],
+    "exchangeToken": [
+      "customToken",
+      "appId"
+    ],
+    "verifyReplayProtection": [
+      "token"
+    ],
+    "getUrl": [
+      "appId"
+    ],
+    "getVerifyTokenUrl": [],
+    "getProjectId": [],
+    "toFirebaseError": [
+      "err"
+    ],
+    "toAppCheckToken": [
+      "resp"
+    ],
+    "stringToMilliseconds": [
+      "duration"
+    ]
+  },
+  "AppCheck": {
+    "constructor": [
+      "app"
+    ],
+    "createToken": [
+      "appId",
+      "options"
+    ],
+    "verifyToken": [
+      "appCheckToken",
+      "options"
+    ],
+    "validateVerifyAppCheckTokenOptions": [
+      "options"
+    ]
+  },
+  "getAppCheck": [
+    "app"
+  ],
+  "AppCheckTokenGenerator": {
+    "constructor": [
+      "signer"
+    ],
+    "createCustomToken": [
+      "appId",
+      "options"
+    ],
+    "encodeSegment": [
+      "segment"
+    ],
+    "validateTokenOptions": [
+      "options"
+    ]
+  },
+  "appCheckErrorFromCryptoSignerError": [
+    "err"
+  ],
+  "mapToAppCheckErrorCode": [
+    "code"
+  ],
+  "AppCheckTokenVerifier": {
+    "constructor": [
+      "app"
+    ],
+    "verifyToken": [
+      "token"
+    ],
+    "ensureProjectId": [],
+    "decodeAndVerify": [
+      "token",
+      "projectId"
+    ],
+    "safeDecode": [
+      "jwtToken"
+    ],
+    "verifyContent": [
+      "fullDecodedToken",
+      "projectId"
+    ],
+    "verifySignature": [
+      "jwtToken"
+    ],
+    "mapJwtErrorToAppCheckError": [
+      "error"
+    ]
+  },
+  "ActionCodeSettingsBuilder": {
+    "constructor": [
+      "actionCodeSettings"
+    ],
+    "buildRequest": []
+  },
+  "AuthResourceUrlBuilder": {
+    "constructor": [
+      "app",
+      "param"
+    ],
+    "getUrl": [
+      "api",
+      "params"
+    ],
+    "getProjectId": []
+  },
+  "AuthRequestHandler": {
+    "constructor": [
+      "app"
+    ],
+    "newAuthUrlBuilder": [],
+    "newProjectConfigUrlBuilder": [],
+    "getProjectConfig": [],
+    "updateProjectConfig": [
+      "options"
+    ],
+    "getTenant": [
+      "tenantId"
+    ],
+    "listTenants": [
+      "param",
+      "pageToken"
+    ],
+    "deleteTenant": [
+      "tenantId"
+    ],
+    "createTenant": [
+      "tenantOptions"
+    ],
+    "updateTenant": [
+      "tenantId",
+      "tenantOptions"
+    ]
+  },
+  "TenantAwareAuthRequestHandler": {
+    "constructor": [
+      "app",
+      "tenantId"
+    ],
+    "newAuthUrlBuilder": [],
+    "newProjectConfigUrlBuilder": [],
+    "uploadAccount": [
+      "users",
+      "options"
+    ]
+  },
+  "TenantAwareAuthResourceUrlBuilder": {
+    "constructor": [
+      "app",
+      "version",
+      "tenantId"
+    ],
+    "getUrl": [
+      "api",
+      "params"
+    ]
+  },
+  "AuthHttpClient": {
+    "getToken": []
+  },
+  "validateAuthFactorInfo": [
+    "request"
+  ],
+  "validateProviderUserInfo": [
+    "request"
+  ],
+  "validateCreateEditRequest": [
+    "request",
+    "writeOperationType"
+  ],
+  "AbstractAuthRequestHandler": {
+    "getErrorCode": [
+      "response"
+    ],
+    "addUidToRequest": [
+      "id",
+      "request"
+    ],
+    "addEmailToRequest": [
+      "id",
+      "request"
+    ],
+    "addPhoneToRequest": [
+      "id",
+      "request"
+    ],
+    "addProviderToRequest": [
+      "id",
+      "request"
+    ],
+    "constructor": [
+      "app"
+    ],
+    "createSessionCookie": [
+      "idToken",
+      "expiresIn"
+    ],
+    "getAccountInfoByUid": [
+      "uid"
+    ],
+    "getAccountInfoByEmail": [
+      "email"
+    ],
+    "getAccountInfoByPhoneNumber": [
+      "phoneNumber"
+    ],
+    "getAccountInfoByFederatedUid": [
+      "providerId",
+      "rawId"
+    ],
+    "getAccountInfoByIdentifiers": [
+      "identifiers"
+    ],
+    "downloadAccount": [
+      "param",
+      "pageToken"
+    ],
+    "uploadAccount": [
+      "users",
+      "options"
+    ],
+    "deleteAccount": [
+      "uid"
+    ],
+    "deleteAccounts": [
+      "uids",
+      "force"
+    ],
+    "setCustomUserClaims": [
+      "uid",
+      "customUserClaims"
+    ],
+    "updateExistingAccount": [
+      "uid",
+      "properties"
+    ],
+    "revokeRefreshTokens": [
+      "uid"
+    ],
+    "createNewAccount": [
+      "properties"
+    ],
+    "getEmailActionLink": [
+      "requestType",
+      "email",
+      "actionCodeSettings",
+      "newEmail"
+    ],
+    "getOAuthIdpConfig": [
+      "providerId"
+    ],
+    "listOAuthIdpConfigs": [
+      "param",
+      "pageToken"
+    ],
+    "deleteOAuthIdpConfig": [
+      "providerId"
+    ],
+    "createOAuthIdpConfig": [
+      "options"
+    ],
+    "updateOAuthIdpConfig": [
+      "providerId",
+      "options"
+    ],
+    "getInboundSamlConfig": [
+      "providerId"
+    ],
+    "listInboundSamlConfigs": [
+      "param",
+      "pageToken"
+    ],
+    "deleteInboundSamlConfig": [
+      "providerId"
+    ],
+    "createInboundSamlConfig": [
+      "options"
+    ],
+    "updateInboundSamlConfig": [
+      "providerId",
+      "options"
+    ],
+    "invokeRequestHandler": [
+      "urlBuilder",
+      "apiSettings",
+      "requestData",
+      "additionalResourceParams"
+    ],
+    "getAuthUrlBuilder": [],
+    "getProjectConfigUrlBuilder": []
+  },
+  "emulatorHost": [],
+  "useEmulator": [],
+  "MultiFactorAuthConfig": {
+    "buildServerRequest": [
+      "options"
+    ],
+    "validate": [
+      "options"
+    ],
+    "constructor": [
+      "response"
+    ],
+    "toJSON": []
+  },
+  "validateTestPhoneNumbers": [
+    "testPhoneNumbers"
+  ],
+  "EmailSignInConfig": {
+    "buildServerRequest": [
+      "options"
+    ],
+    "validate": [
+      "options"
+    ],
+    "constructor": [
+      "response"
+    ],
+    "toJSON": []
+  },
+  "SAMLConfig": {
+    "buildServerRequest": [
+      "options",
+      "param"
+    ],
+    "getProviderIdFromResourceName": [
+      "resourceName"
+    ],
+    "isProviderId": [
+      "providerId"
+    ],
+    "validate": [
+      "options",
+      "param"
+    ],
+    "constructor": [
+      "response"
+    ],
+    "toJSON": []
+  },
+  "OIDCConfig": {
+    "buildServerRequest": [
+      "options",
+      "param"
+    ],
+    "getProviderIdFromResourceName": [
+      "resourceName"
+    ],
+    "isProviderId": [
+      "providerId"
+    ],
+    "validate": [
+      "options",
+      "param"
+    ],
+    "constructor": [
+      "response"
+    ],
+    "toJSON": []
+  },
+  "SmsRegionsAuthConfig": {
+    "validate": [
+      "options"
+    ]
+  },
+  "RecaptchaAuthConfig": {
+    "constructor": [
+      "response"
+    ],
+    "buildServerRequest": [
+      "options"
+    ],
+    "validate": [
+      "options"
+    ],
+    "validateManagedRule": [
+      "options"
+    ],
+    "validateTollFraudManagedRule": [
+      "options"
+    ]
+  },
+  "MobileLinksAuthConfig": {
+    "validate": [
+      "options"
+    ]
+  },
+  "PasswordPolicyAuthConfig": {
+    "buildServerRequest": [
+      "options"
+    ],
+    "validate": [
+      "options"
+    ],
+    "constructor": [
+      "response"
+    ]
+  },
+  "EmailPrivacyAuthConfig": {
+    "validate": [
+      "options"
+    ]
+  },
+  "Auth": {
+    "constructor": [
+      "app"
+    ],
+    "app": [],
+    "tenantManager": [],
+    "projectConfigManager": []
+  },
+  "BaseAuth": {
+    "constructor": [
+      "app",
+      "authRequestHandler",
+      "tokenGenerator"
+    ],
+    "createCustomToken": [
+      "uid",
+      "developerClaims"
+    ],
+    "verifyIdToken": [
+      "idToken",
+      "param"
+    ],
+    "getUser": [
+      "uid"
+    ],
+    "getUserByEmail": [
+      "email"
+    ],
+    "getUserByPhoneNumber": [
+      "phoneNumber"
+    ],
+    "getUserByProviderUid": [
+      "providerId",
+      "uid"
+    ],
+    "getUsers": [
+      "identifiers"
+    ],
+    "listUsers": [
+      "maxResults",
+      "pageToken"
+    ],
+    "createUser": [
+      "properties"
+    ],
+    "deleteUser": [
+      "uid"
+    ],
+    "deleteUsers": [
+      "uids"
+    ],
+    "updateUser": [
+      "uid",
+      "properties"
+    ],
+    "setCustomUserClaims": [
+      "uid",
+      "customUserClaims"
+    ],
+    "revokeRefreshTokens": [
+      "uid"
+    ],
+    "importUsers": [
+      "users",
+      "options"
+    ],
+    "createSessionCookie": [
+      "idToken",
+      "sessionCookieOptions"
+    ],
+    "verifySessionCookie": [
+      "sessionCookie",
+      "param"
+    ],
+    "generatePasswordResetLink": [
+      "email",
+      "actionCodeSettings"
+    ],
+    "generateEmailVerificationLink": [
+      "email",
+      "actionCodeSettings"
+    ],
+    "generateVerifyAndChangeEmailLink": [
+      "email",
+      "newEmail",
+      "actionCodeSettings"
+    ],
+    "generateSignInWithEmailLink": [
+      "email",
+      "actionCodeSettings"
+    ],
+    "listProviderConfigs": [
+      "options"
+    ],
+    "getProviderConfig": [
+      "providerId"
+    ],
+    "deleteProviderConfig": [
+      "providerId"
+    ],
+    "updateProviderConfig": [
+      "providerId",
+      "updatedConfig"
+    ],
+    "createProviderConfig": [
+      "config"
+    ],
+    "_verifyAuthBlockingToken": [
+      "token",
+      "audience"
+    ],
+    "verifyDecodedJWTNotRevokedOrDisabled": [
+      "decodedIdToken",
+      "revocationErrorInfo"
+    ]
+  },
+  "createFirebaseTokenGenerator": [
+    "app",
+    "tenantId"
+  ],
+  "isUserFound": [
+    "id",
+    "userRecords"
+  ],
+  "errMsgToError": [
+    "msg"
+  ],
+  "processResponse": [
+    "response",
+    "providerConfigs"
+  ],
+  "isUidIdentifier": [
+    "id"
+  ],
+  "isEmailIdentifier": [
+    "id"
+  ],
+  "isPhoneIdentifier": [
+    "id"
+  ],
+  "isProviderIdentifier": [
+    "id"
+  ],
+  "getAuth": [
+    "app"
+  ],
+  "ProjectConfigManager": {
+    "constructor": [
+      "app"
+    ],
+    "getProjectConfig": [],
+    "updateProjectConfig": [
+      "projectConfigOptions"
+    ]
+  },
+  "ProjectConfig": {
+    "multiFactorConfig": [],
+    "recaptchaConfig": [],
+    "validate": [
+      "request"
+    ],
+    "buildServerRequest": [
+      "configOptions"
+    ],
+    "constructor": [
+      "response"
+    ],
+    "toJSON": []
+  },
+  "TenantAwareAuth": {
+    "constructor": [
+      "app",
+      "tenantId"
+    ],
+    "verifyIdToken": [
+      "idToken",
+      "param"
+    ],
+    "createSessionCookie": [
+      "idToken",
+      "sessionCookieOptions"
+    ],
+    "verifySessionCookie": [
+      "sessionCookie",
+      "param"
+    ]
+  },
+  "TenantManager": {
+    "constructor": [
+      "app"
+    ],
+    "authForTenant": [
+      "tenantId"
+    ],
+    "getTenant": [
+      "tenantId"
+    ],
+    "listTenants": [
+      "maxResults",
+      "pageToken"
+    ],
+    "deleteTenant": [
+      "tenantId"
+    ],
+    "createTenant": [
+      "tenantOptions"
+    ],
+    "updateTenant": [
+      "tenantId",
+      "tenantOptions"
+    ]
+  },
+  "Tenant": {
+    "buildServerRequest": [
+      "tenantOptions",
+      "createRequest"
+    ],
+    "getTenantIdFromResourceName": [
+      "resourceName"
+    ],
+    "validate": [
+      "request",
+      "createRequest"
+    ],
+    "constructor": [
+      "response"
+    ],
+    "emailSignInConfig": [],
+    "multiFactorConfig": [],
+    "recaptchaConfig": [],
+    "toJSON": []
+  },
+  "EmulatedSigner": {
+    "constructor": [],
+    "sign": [
+      "buffer"
+    ],
+    "getAccountId": []
+  },
+  "FirebaseTokenGenerator": {
+    "constructor": [
+      "signer",
+      "tenantId"
+    ],
+    "createCustomToken": [
+      "uid",
+      "developerClaims"
+    ],
+    "encodeSegment": [
+      "segment"
+    ],
+    "isDeveloperClaimsValid_": [
+      "developerClaims"
+    ]
+  },
+  "handleCryptoSignerError": [
+    "err"
+  ],
+  "mapToAuthClientErrorCode": [
+    "code"
+  ],
+  "FirebaseTokenVerifier": {
+    "constructor": [
+      "clientCertUrl",
+      "issuer",
+      "tokenInfo",
+      "app"
+    ],
+    "verifyJWT": [
+      "jwtToken",
+      "param"
+    ],
+    "_verifyAuthBlockingToken": [
+      "jwtToken",
+      "isEmulator",
+      "audience"
+    ],
+    "ensureProjectId": [],
+    "decodeAndVerify": [
+      "token",
+      "projectId",
+      "isEmulator",
+      "audience"
+    ],
+    "safeDecode": [
+      "jwtToken"
+    ],
+    "verifyContent": [
+      "fullDecodedToken",
+      "projectId",
+      "isEmulator",
+      "audience"
+    ],
+    "verifySignature": [
+      "jwtToken",
+      "isEmulator"
+    ],
+    "mapJwtErrorToAuthError": [
+      "error"
+    ]
+  },
+  "createIdTokenVerifier": [
+    "app"
+  ],
+  "createAuthBlockingTokenVerifier": [
+    "app"
+  ],
+  "createSessionCookieVerifier": [
+    "app"
+  ],
+  "UserImportBuilder": {
+    "constructor": [
+      "users",
+      "options",
+      "userRequestValidator"
+    ],
+    "buildRequest": [],
+    "buildResponse": [
+      "failedUploads"
+    ],
+    "populateOptions": [
+      "options",
+      "requiresHashOptions"
+    ],
+    "populateUsers": [
+      "users",
+      "userValidator"
+    ]
+  },
+  "convertMultiFactorInfoToServerFormat": [
+    "multiFactorInfo"
+  ],
+  "isPhoneFactor": [
+    "multiFactorInfo"
+  ],
+  "getNumberField": [
+    "obj",
+    "key"
+  ],
+  "populateUploadAccountUser": [
+    "user",
+    "userValidator"
+  ],
+  "MultiFactorInfo": {
+    "initMultiFactorInfo": [
+      "response"
+    ],
+    "constructor": [
+      "response"
+    ],
+    "toJSON": [],
+    "initFromServerResponse": [
+      "response"
+    ]
+  },
+  "PhoneMultiFactorInfo": {
+    "constructor": [
+      "response"
+    ],
+    "toJSON": [],
+    "getFactorId": [
+      "response"
+    ]
+  },
+  "TotpInfo": {},
+  "TotpMultiFactorInfo": {
+    "constructor": [
+      "response"
+    ],
+    "toJSON": [],
+    "getFactorId": [
+      "response"
+    ]
+  },
+  "MultiFactorSettings": {
+    "constructor": [
+      "response"
+    ],
+    "toJSON": []
+  },
+  "UserMetadata": {
+    "constructor": [
+      "response"
+    ],
+    "toJSON": []
+  },
+  "UserInfo": {
+    "constructor": [
+      "response"
+    ],
+    "toJSON": []
+  },
+  "UserRecord": {
+    "constructor": [
+      "response"
+    ],
+    "toJSON": []
+  },
+  "parseDate": [
+    "time"
+  ],
+  "FirebaseDataConnectError": {
+    "constructor": [
+      "code",
+      "message"
+    ]
+  },
+  "getHeaders": [
+    "isUsingGen"
+  ],
+  "DataConnectApiClient": {
+    "constructor": [
+      "connectorConfig",
+      "app"
+    ],
+    "setIsUsingGen": [
+      "isUsingGen"
+    ],
+    "executeGraphql": [
+      "query",
+      "options"
+    ],
+    "executeGraphqlRead": [
+      "query",
+      "options"
+    ],
+    "executeGraphqlHelper": [
+      "query",
+      "endpoint",
+      "options"
+    ],
+    "executeQuery": [
+      "name",
+      "variables",
+      "options"
+    ],
+    "executeMutation": [
+      "name",
+      "variables",
+      "options"
+    ],
+    "executeOperationHelper": [
+      "endpoint",
+      "name",
+      "variables",
+      "options"
+    ],
+    "getServicesUrl": [
+      "version",
+      "locationId",
+      "serviceId",
+      "endpointId"
+    ],
+    "getConnectorsUrl": [
+      "version",
+      "locationId",
+      "serviceId",
+      "connectorId",
+      "endpointId"
+    ],
+    "getProjectId": [],
+    "makeGqlRequest": [
+      "url",
+      "data"
+    ],
+    "toFirebaseError": [
+      "err"
+    ],
+    "objectToString": [
+      "data"
+    ],
+    "formatTableName": [
+      "tableName"
+    ],
+    "handleBulkImportErrors": [
+      "err"
+    ],
+    "insert": [
+      "tableName",
+      "data"
+    ],
+    "insertMany": [
+      "tableName",
+      "data"
+    ],
+    "upsert": [
+      "tableName",
+      "data"
+    ],
+    "upsertMany": [
+      "tableName",
+      "data"
+    ]
+  },
+  "DataConnectHttpClient": {
+    "getToken": []
+  },
+  "DataConnectService": {
+    "constructor": [
+      "app"
+    ],
+    "getDataConnect": [
+      "connectorConfig"
+    ],
+    "app": []
+  },
+  "DataConnect": {
+    "constructor": [
+      "connectorConfig",
+      "app"
+    ],
+    "useGen": [
+      "isUsingGen"
+    ],
+    "executeGraphql": [
+      "query",
+      "options"
+    ],
+    "executeGraphqlRead": [
+      "query",
+      "options"
+    ],
+    "insert": [
+      "tableName",
+      "variables"
+    ],
+    "insertMany": [
+      "tableName",
+      "variables"
+    ],
+    "upsert": [
+      "tableName",
+      "variables"
+    ],
+    "upsertMany": [
+      "tableName",
+      "variables"
+    ],
+    "executeQuery": [
+      "name",
+      "variables",
+      "options"
+    ],
+    "executeMutation": [
+      "name",
+      "variables",
+      "options"
+    ]
+  },
+  "getDataConnect": [
+    "connectorConfig",
+    "app"
+  ],
+  "_validateAdminArgs": [
+    "connectorConfig",
+    "dcOrVarsOrOptions",
+    "varsOrOptions",
+    "options",
+    "hasVars",
+    "validateVars"
+  ],
+  "DatabaseService": {
+    "constructor": [
+      "app"
+    ],
+    "firebaseApp": [],
+    "delete": [],
+    "app": [],
+    "getDatabase": [
+      "url"
+    ],
+    "onTokenChange": [
+      "_"
+    ],
+    "scheduleTokenRefresh": [
+      "delayMillis"
+    ],
+    "ensureUrl": [
+      "url"
+    ]
+  },
+  "DatabaseRulesClient": {
+    "constructor": [
+      "app",
+      "dbUrl"
+    ],
+    "getRules": [],
+    "getRulesJSON": [],
+    "setRules": [
+      "source"
+    ],
+    "handleError": [
+      "err"
+    ],
+    "getErrorMessage": [
+      "err"
+    ]
+  },
+  "extractNamespace": [
+    "parsedUrl"
+  ],
+  "getDatabase": [
+    "app"
+  ],
+  "getDatabaseWithUrl": [
+    "url",
+    "app"
+  ],
+  "getDatabaseInstance": [
+    "options"
+  ],
+  "EventarcApiClient": {
+    "constructor": [
+      "app",
+      "channel"
+    ],
+    "getProjectId": [],
+    "publish": [
+      "events"
+    ],
+    "publishToEventarcApi": [
+      "channel",
+      "events"
+    ],
+    "sendRequest": [
+      "request"
+    ],
+    "toFirebaseError": [
+      "err"
+    ],
+    "resolveChannelName": [
+      "name"
+    ],
+    "resolveChannelNameProjectId": [
+      "location",
+      "channelId"
+    ],
+    "getEventarcHost": []
+  },
+  "FirebaseEventarcError": {
+    "constructor": [
+      "code",
+      "message"
+    ]
+  },
+  "toCloudEventProtoFormat": [
+    "ce"
+  ],
+  "setAttribute": [
+    "event",
+    "attr",
+    "value"
+  ],
+  "Eventarc": {
+    "constructor": [
+      "app"
+    ],
+    "app": [],
+    "channel": [
+      "nameOrOptions",
+      "options"
+    ]
+  },
+  "Channel": {
+    "constructor": [
+      "eventarc",
+      "name",
+      "allowedEventTypes"
+    ],
+    "eventarc": [],
+    "name": [],
+    "publish": [
+      "events"
+    ]
+  },
+  "getEventarc": [
+    "app"
+  ],
+  "FirebaseExtensionsError": {
+    "constructor": [
+      "code",
+      "message"
+    ]
+  },
+  "ExtensionsApiClient": {
+    "constructor": [
+      "app"
+    ],
+    "updateRuntimeData": [
+      "projectId",
+      "instanceId",
+      "runtimeData"
+    ],
+    "getExtensionsApiUri": [],
+    "getRuntimeDataUri": [
+      "projectId",
+      "instanceId"
+    ],
+    "toFirebaseError": [
+      "err"
+    ]
+  },
+  "Extensions": {
+    "constructor": [
+      "app"
+    ],
+    "runtime": []
+  },
+  "Runtime": {
+    "constructor": [
+      "client"
+    ],
+    "setProcessingState": [
+      "state",
+      "detailMessage"
+    ],
+    "setFatalError": [
+      "errorMessage"
+    ],
+    "getProjectId": []
+  },
+  "getExtensions": [
+    "app"
+  ],
+  "FirestoreService": {
+    "constructor": [
+      "app"
+    ],
+    "initializeDatabase": [
+      "databaseId",
+      "settings"
+    ],
+    "getDatabase": [
+      "databaseId"
+    ],
+    "checkIfSameSettings": [
+      "settingsA",
+      "settingsB"
+    ],
+    "app": []
+  },
+  "getFirestoreOptions": [
+    "app",
+    "firestoreSettings"
+  ],
+  "initFirestore": [
+    "app",
+    "databaseId",
+    "firestoreSettings"
+  ],
+  "getFirestore": [
+    "appOrDatabaseId",
+    "optionalDatabaseId"
+  ],
+  "initializeFirestore": [
+    "app",
+    "settings",
+    "databaseId"
+  ],
+  "FirebaseFunctionsError": {
+    "constructor": [
+      "code",
+      "message"
+    ]
+  },
+  "FunctionsApiClient": {
+    "constructor": [
+      "app"
+    ],
+    "delete": [
+      "id",
+      "functionName",
+      "extensionId"
+    ],
+    "enqueue": [
+      "data",
+      "functionName",
+      "extensionId",
+      "opts"
+    ],
+    "getUrl": [
+      "resourceName",
+      "urlFormat"
+    ],
+    "getProjectId": [],
+    "getServiceAccount": [],
+    "validateTaskOptions": [
+      "data",
+      "resources",
+      "opts"
+    ],
+    "updateTaskPayload": [
+      "task",
+      "resources",
+      "extensionId"
+    ],
+    "toFirebaseError": [
+      "err"
+    ]
+  },
+  "FunctionsHttpClient": {
+    "getToken": []
+  },
+  "tasksEmulatorUrl": [
+    "resources"
+  ],
+  "Functions": {
+    "constructor": [
+      "app"
+    ],
+    "taskQueue": [
+      "functionName",
+      "extensionId"
+    ]
+  },
+  "TaskQueue": {
+    "constructor": [
+      "functionName",
+      "client",
+      "extensionId"
+    ],
+    "enqueue": [
+      "data",
+      "opts"
+    ],
+    "delete": [
+      "id"
+    ]
+  },
+  "getFunctions": [
+    "app"
+  ],
+  "getInstallations": [
+    "app"
+  ],
+  "FirebaseInstallationsRequestHandler": {
+    "constructor": [
+      "app"
+    ],
+    "deleteInstallation": [
+      "fid"
+    ],
+    "invokeRequestHandler": [
+      "apiSettings"
+    ],
+    "getPathPrefix": []
+  },
+  "Installations": {
+    "constructor": [
+      "app"
+    ],
+    "deleteInstallation": [
+      "fid"
+    ],
+    "app": []
+  },
+  "getInstanceId": [
+    "app"
+  ],
+  "InstanceId": {
+    "constructor": [
+      "app"
+    ],
+    "deleteInstanceId": [
+      "instanceId"
+    ],
+    "app": []
+  },
+  "getMachineLearning": [
+    "app"
+  ],
+  "isGcsTfliteModelOptions": [
+    "options"
+  ],
+  "MachineLearningApiClient": {
+    "constructor": [
+      "app"
+    ],
+    "createModel": [
+      "model"
+    ],
+    "updateModel": [
+      "modelId",
+      "model",
+      "updateMask"
+    ],
+    "getModel": [
+      "modelId"
+    ],
+    "getOperation": [
+      "operationName"
+    ],
+    "listModels": [
+      "param"
+    ],
+    "deleteModel": [
+      "modelId"
+    ],
+    "handleOperation": [
+      "op",
+      "options"
+    ],
+    "pollOperationWithExponentialBackoff": [
+      "opName",
+      "options"
+    ],
+    "getResourceWithShortName": [
+      "name"
+    ],
+    "getResourceWithFullName": [
+      "fullName"
+    ],
+    "sendRequest": [
+      "request"
+    ],
+    "toFirebaseError": [
+      "err"
+    ],
+    "getProjectUrl": [],
+    "getProjectIdPrefix": [],
+    "getModelName": [
+      "modelId"
+    ]
+  },
+  "extractModelId": [
+    "resourceName"
+  ],
+  "FirebaseMachineLearningError": {
+    "fromOperationError": [
+      "code",
+      "message"
+    ],
+    "constructor": [
+      "code",
+      "message"
+    ]
+  },
+  "MachineLearning": {
+    "constructor": [
+      "app"
+    ],
+    "app": [],
+    "createModel": [
+      "model"
+    ],
+    "updateModel": [
+      "modelId",
+      "model"
+    ],
+    "publishModel": [
+      "modelId"
+    ],
+    "unpublishModel": [
+      "modelId"
+    ],
+    "getModel": [
+      "modelId"
+    ],
+    "listModels": [
+      "param"
+    ],
+    "deleteModel": [
+      "modelId"
+    ],
+    "setPublishStatus": [
+      "modelId",
+      "publish"
+    ],
+    "signUrlIfPresent": [
+      "options"
+    ],
+    "signUrl": [
+      "unsignedUrl"
+    ]
+  },
+  "Model": {
+    "constructor": [
+      "model",
+      "client"
+    ],
+    "modelId": [],
+    "displayName": [],
+    "tags": [],
+    "createTime": [],
+    "updateTime": [],
+    "validationError": [],
+    "published": [],
+    "etag": [],
+    "modelHash": [],
+    "tfliteModel": [],
+    "locked": [],
+    "toJSON": [],
+    "waitForUnlocked": [
+      "maxTimeMillis"
+    ],
+    "validateAndClone": [
+      "model"
+    ]
+  },
+  "getMessaging": [
+    "app"
+  ],
+  "FirebaseMessagingRequestHandler": {
+    "constructor": [
+      "app"
+    ],
+    "invokeRequestHandler": [
+      "host",
+      "path",
+      "requestData"
+    ],
+    "invokeHttpRequestHandlerForSendResponse": [
+      "host",
+      "path",
+      "requestData"
+    ],
+    "invokeHttp2RequestHandlerForSendResponse": [
+      "host",
+      "path",
+      "requestData",
+      "http2SessionHandler"
+    ],
+    "buildSendResponse": [
+      "response"
+    ],
+    "buildSendResponseFromError": [
+      "err"
+    ]
+  },
+  "createFirebaseError": [
+    "err"
+  ],
+  "getErrorCode": [
+    "response"
+  ],
+  "getErrorMessage": [
+    "response"
+  ],
+  "validateMessage": [
+    "message"
+  ],
+  "validateStringMap": [
+    "map",
+    "label"
+  ],
+  "validateWebpushConfig": [
+    "config"
+  ],
+  "validateApnsConfig": [
+    "config"
+  ],
+  "validateApnsLiveActivityToken": [
+    "liveActivityToken"
+  ],
+  "validateApnsFcmOptions": [
+    "fcmOptions"
+  ],
+  "validateFcmOptions": [
+    "fcmOptions"
+  ],
+  "validateNotification": [
+    "notification"
+  ],
+  "validateApnsPayload": [
+    "payload"
+  ],
+  "validateAps": [
+    "aps"
+  ],
+  "validateApsSound": [
+    "sound"
+  ],
+  "validateApsAlert": [
+    "alert"
+  ],
+  "validateAndroidConfig": [
+    "config"
+  ],
+  "validateAndroidNotification": [
+    "notification"
+  ],
+  "validateLightSettings": [
+    "lightSettings"
+  ],
+  "validateAndroidFcmOptions": [
+    "fcmOptions"
+  ],
+  "Messaging": {
+    "constructor": [
+      "app"
+    ],
+    "app": [],
+    "enableLegacyHttpTransport": [],
+    "send": [
+      "message",
+      "dryRun"
+    ],
+    "sendEach": [
+      "messages",
+      "dryRun"
+    ],
+    "parseSendResponses": [
+      "results"
+    ],
+    "sendEachForMulticast": [
+      "message",
+      "dryRun"
+    ],
+    "subscribeToTopic": [
+      "registrationTokenOrTokens",
+      "topic"
+    ],
+    "unsubscribeFromTopic": [
+      "registrationTokenOrTokens",
+      "topic"
+    ],
+    "getUrlPath": [],
+    "sendTopicManagementRequest": [
+      "registrationTokenOrTokens",
+      "topic",
+      "methodName",
+      "path"
+    ],
+    "validateRegistrationTokensType": [
+      "registrationTokenOrTokens",
+      "methodName",
+      "param"
+    ],
+    "validateRegistrationTokens": [
+      "registrationTokenOrTokens",
+      "methodName",
+      "param"
+    ],
+    "validateTopicType": [
+      "topic",
+      "methodName",
+      "param"
+    ],
+    "validateTopic": [
+      "topic",
+      "methodName",
+      "param"
+    ],
+    "normalizeTopic": [
+      "topic"
+    ]
+  },
+  "mapRawResponseToTopicManagementResponse": [
+    "response"
+  ],
+  "AndroidApp": {
+    "constructor": [
+      "appId",
+      "requestHandler"
+    ],
+    "getMetadata": [],
+    "setDisplayName": [
+      "newDisplayName"
+    ],
+    "getShaCertificates": [],
+    "addShaCertificate": [
+      "certificateToAdd"
+    ],
+    "deleteShaCertificate": [
+      "certificateToDelete"
+    ],
+    "getConfig": []
+  },
+  "ShaCertificate": {
+    "constructor": [
+      "shaHash",
+      "resourceName"
+    ]
+  },
+  "getProjectManagement": [
+    "app"
+  ],
+  "IosApp": {
+    "constructor": [
+      "appId",
+      "requestHandler"
+    ],
+    "getMetadata": [],
+    "setDisplayName": [
+      "newDisplayName"
+    ],
+    "getConfig": []
+  },
+  "assertServerResponse": [
+    "condition",
+    "responseData",
+    "message"
+  ],
+  "ProjectManagementRequestHandler": {
+    "wrapAndRethrowHttpError": [
+      "errStatusCode",
+      "errText"
+    ],
+    "constructor": [
+      "app"
+    ],
+    "listAndroidApps": [
+      "parentResourceName"
+    ],
+    "listIosApps": [
+      "parentResourceName"
+    ],
+    "listAppMetadata": [
+      "parentResourceName"
+    ],
+    "createAndroidApp": [
+      "parentResourceName",
+      "packageName",
+      "displayName"
+    ],
+    "createIosApp": [
+      "parentResourceName",
+      "bundleId",
+      "displayName"
+    ],
+    "setDisplayName": [
+      "resourceName",
+      "newDisplayName"
+    ],
+    "getAndroidShaCertificates": [
+      "parentResourceName"
+    ],
+    "addAndroidShaCertificate": [
+      "parentResourceName",
+      "certificate"
+    ],
+    "getConfig": [
+      "parentResourceName"
+    ],
+    "getResource": [
+      "parentResourceName"
+    ],
+    "deleteResource": [
+      "resourceName"
+    ],
+    "pollRemoteOperationWithExponentialBackoff": [
+      "operationResourceName"
+    ],
+    "invokeRequestHandler": [
+      "method",
+      "path",
+      "requestData",
+      "param"
+    ]
+  },
+  "ProjectManagement": {
+    "constructor": [
+      "app"
+    ],
+    "listAndroidApps": [],
+    "listIosApps": [],
+    "androidApp": [
+      "appId"
+    ],
+    "iosApp": [
+      "appId"
+    ],
+    "shaCertificate": [
+      "shaHash"
+    ],
+    "createAndroidApp": [
+      "packageName",
+      "displayName"
+    ],
+    "createIosApp": [
+      "bundleId",
+      "displayName"
+    ],
+    "listAppMetadata": [],
+    "setDisplayName": [
+      "newDisplayName"
+    ],
+    "transformResponseToAppMetadata": [
+      "responseData",
+      "projectId"
+    ],
+    "getResourceName": [],
+    "getProjectId": [],
+    "listPlatformApps": [
+      "platform",
+      "callerName"
+    ],
+    "assertListAppsResponseData": [
+      "responseData",
+      "callerName"
+    ]
+  },
+  "ConditionEvaluator": {
+    "evaluateConditions": [
+      "namedConditions",
+      "context"
+    ],
+    "evaluateCondition": [
+      "condition",
+      "context",
+      "param"
+    ],
+    "evaluateOrCondition": [
+      "orCondition",
+      "context",
+      "nestingLevel"
+    ],
+    "evaluateAndCondition": [
+      "andCondition",
+      "context",
+      "nestingLevel"
+    ],
+    "evaluatePercentCondition": [
+      "percentCondition",
+      "context"
+    ],
+    "hashSeededRandomizationId": [
+      "seededRandomizationId"
+    ],
+    "evaluateCustomSignalCondition": [
+      "customSignalCondition",
+      "context"
+    ]
+  },
+  "compareStrings": [
+    "targetValues",
+    "actualValue",
+    "predicateFn"
+  ],
+  "compareNumbers": [
+    "actualValue",
+    "targetValue",
+    "predicateFn"
+  ],
+  "compareSemanticVersions": [
+    "actualValue",
+    "targetValue",
+    "predicateFn"
+  ],
+  "getRemoteConfig": [
+    "app"
+  ],
+  "ValueImpl": {
+    "constructor": [
+      "source",
+      "param"
+    ],
+    "asString": [],
+    "asBoolean": [],
+    "asNumber": [],
+    "getSource": []
+  },
+  "FirebaseRemoteConfigError": {
+    "constructor": [
+      "code",
+      "message"
+    ]
+  },
+  "RemoteConfigApiClient": {
+    "constructor": [
+      "app"
+    ],
+    "getTemplate": [],
+    "getTemplateAtVersion": [
+      "versionNumber"
+    ],
+    "validateTemplate": [
+      "template"
+    ],
+    "publishTemplate": [
+      "template",
+      "options"
+    ],
+    "rollback": [
+      "versionNumber"
+    ],
+    "listVersions": [
+      "options"
+    ],
+    "getServerTemplate": [],
+    "sendPutRequest": [
+      "template",
+      "etag",
+      "validateOnly"
+    ],
+    "getUrl": [],
+    "getProjectIdPrefix": [],
+    "toFirebaseError": [
+      "err"
+    ],
+    "toRemoteConfigTemplate": [
+      "resp",
+      "customEtag"
+    ],
+    "toRemoteConfigServerTemplate": [
+      "resp",
+      "customEtag"
+    ],
+    "validateInputRemoteConfigTemplate": [
+      "template"
+    ],
+    "validateVersionNumber": [
+      "versionNumber",
+      "param"
+    ],
+    "validateEtag": [
+      "etag"
+    ],
+    "validateListVersionsOptions": [
+      "options"
+    ]
+  },
+  "RemoteConfig": {
+    "constructor": [
+      "app"
+    ],
+    "getTemplate": [],
+    "getTemplateAtVersion": [
+      "versionNumber"
+    ],
+    "validateTemplate": [
+      "template"
+    ],
+    "publishTemplate": [
+      "template",
+      "options"
+    ],
+    "rollback": [
+      "versionNumber"
+    ],
+    "listVersions": [
+      "options"
+    ],
+    "createTemplateFromJSON": [
+      "json"
+    ],
+    "getServerTemplate": [
+      "options"
+    ],
+    "initServerTemplate": [
+      "options"
+    ]
+  },
+  "RemoteConfigFetchResponse": {
+    "constructor": [
+      "app",
+      "serverConfig",
+      "requestEtag"
+    ],
+    "toJSON": [],
+    "processEtag": [
+      "config",
+      "app"
+    ]
+  },
+  "RemoteConfigTemplateImpl": {
+    "constructor": [
+      "config"
+    ],
+    "etag": [],
+    "toJSON": []
+  },
+  "ServerTemplateImpl": {
+    "constructor": [
+      "apiClient",
+      "conditionEvaluator",
+      "param"
+    ],
+    "load": [],
+    "set": [
+      "template"
+    ],
+    "evaluate": [
+      "param"
+    ],
+    "toJSON": []
+  },
+  "ServerConfigImpl": {
+    "constructor": [
+      "configValues"
+    ],
+    "getBoolean": [
+      "key"
+    ],
+    "getNumber": [
+      "key"
+    ],
+    "getString": [
+      "key"
+    ],
+    "getValue": [
+      "key"
+    ],
+    "getAll": []
+  },
+  "ServerTemplateDataImpl": {
+    "constructor": [
+      "template"
+    ]
+  },
+  "VersionImpl": {
+    "constructor": [
+      "version"
+    ],
+    "toJSON": [],
+    "isValidTimestamp": [
+      "timestamp"
+    ]
+  },
+  "getSecurityRules": [
+    "app"
+  ],
+  "SecurityRulesApiClient": {
+    "constructor": [
+      "app"
+    ],
+    "getRuleset": [
+      "name"
+    ],
+    "createRuleset": [
+      "ruleset"
+    ],
+    "deleteRuleset": [
+      "name"
+    ],
+    "listRulesets": [
+      "param",
+      "pageToken"
+    ],
+    "getRelease": [
+      "name"
+    ],
+    "updateOrCreateRelease": [
+      "name",
+      "rulesetName"
+    ],
+    "updateRelease": [
+      "name",
+      "rulesetName"
+    ],
+    "createRelease": [
+      "name",
+      "rulesetName"
+    ],
+    "getUrl": [],
+    "getProjectIdPrefix": [],
+    "getResource": [
+      "name"
+    ],
+    "getReleaseDescription": [
+      "name",
+      "rulesetName"
+    ],
+    "getRulesetName": [
+      "name"
+    ],
+    "sendRequest": [
+      "request"
+    ],
+    "toFirebaseError": [
+      "err"
+    ]
+  },
+  "FirebaseSecurityRulesError": {
+    "constructor": [
+      "code",
+      "message"
+    ]
+  },
+  "RulesetMetadataList": {
+    "constructor": [
+      "response"
+    ]
+  },
+  "Ruleset": {
+    "constructor": [
+      "ruleset"
+    ]
+  },
+  "SecurityRules": {
+    "constructor": [
+      "app"
+    ],
+    "getRuleset": [
+      "name"
+    ],
+    "getFirestoreRuleset": [],
+    "releaseFirestoreRulesetFromSource": [
+      "source"
+    ],
+    "releaseFirestoreRuleset": [
+      "ruleset"
+    ],
+    "getStorageRuleset": [
+      "bucket"
+    ],
+    "releaseStorageRulesetFromSource": [
+      "source",
+      "bucket"
+    ],
+    "releaseStorageRuleset": [
+      "ruleset",
+      "bucket"
+    ],
+    "createRulesFileFromSource": [
+      "name",
+      "source"
+    ],
+    "createRuleset": [
+      "file"
+    ],
+    "deleteRuleset": [
+      "name"
+    ],
+    "listRulesetMetadata": [
+      "param",
+      "nextPageToken"
+    ],
+    "getRulesetForRelease": [
+      "releaseName"
+    ],
+    "releaseRuleset": [
+      "ruleset",
+      "releaseName"
+    ],
+    "getBucketName": [
+      "bucket"
+    ]
+  },
+  "stripProjectIdPrefix": [
+    "name"
+  ],
+  "getStorage": [
+    "app"
+  ],
+  "getDownloadURL": [
+    "file"
+  ],
+  "Storage": {
+    "constructor": [
+      "app"
+    ],
+    "bucket": [
+      "name"
+    ],
+    "app": []
+  },
+  "getFirebaseMetadata": [
+    "endpoint",
+    "file"
+  ],
+  "RequestResponseError": {
+    "constructor": [
+      "response"
+    ]
+  },
+  "RequestClient": {
+    "constructor": [
+      "param"
+    ],
+    "createRequestResponse": [
+      "resp"
+    ],
+    "waitForRetry": [
+      "delayMillis"
+    ],
+    "getRetryDelayMillis": [
+      "retryAttempts",
+      "err"
+    ],
+    "isRetryEligible": [
+      "retryAttempts",
+      "err"
+    ],
+    "parseRetryAfterIntoMillis": [
+      "retryAfter"
+    ],
+    "backOffDelayMillis": [
+      "retryAttempts"
+    ]
+  },
+  "HttpClient": {
+    "constructor": [
+      "retry"
+    ],
+    "send": [
+      "config"
+    ],
+    "sendWithRetry": [
+      "config",
+      "param"
+    ]
+  },
+  "Http2Client": {
+    "constructor": [
+      "param"
+    ],
+    "send": [
+      "config"
+    ],
+    "sendWithRetry": [
+      "config",
+      "param"
+    ]
+  },
+  "AuthorizedHttpClient": {
+    "constructor": [
+      "app"
+    ],
+    "send": [
+      "request"
+    ],
+    "getToken": []
+  },
+  "AuthorizedHttp2Client": {
+    "constructor": [
+      "app"
+    ],
+    "send": [
+      "request"
+    ],
+    "getToken": []
+  },
+  "ApiSettings": {
+    "constructor": [
+      "endpoint",
+      "param"
+    ],
+    "getEndpoint": [],
+    "getHttpMethod": [],
+    "setRequestValidator": [
+      "requestValidator"
+    ],
+    "getRequestValidator": [],
+    "setResponseValidator": [
+      "responseValidator"
+    ],
+    "getResponseValidator": []
+  },
+  "ExponentialBackoffPoller": {
+    "constructor": [
+      "param",
+      "param",
+      "param"
+    ],
+    "poll": [
+      "callback"
+    ],
+    "repoll": [],
+    "getPollingDelayMillis": [],
+    "markCompleted": []
+  },
+  "Http2SessionHandler": {
+    "constructor": [
+      "url"
+    ],
+    "createSession": [
+      "url"
+    ],
+    "invoke": [],
+    "session": [],
+    "isClosed": [],
+    "close": []
+  },
+  "DefaultRequestResponse": {
+    "constructor": [
+      "resp"
+    ],
+    "data": [],
+    "isJson": []
+  },
+  "MultipartRequestResponse": {
+    "constructor": [
+      "resp"
+    ],
+    "text": [],
+    "data": [],
+    "isJson": []
+  },
+  "defaultRetryConfig": [],
+  "validateRetryConfig": [
+    "retry"
+  ],
+  "parseHttpResponse": [
+    "response",
+    "config"
+  ],
+  "AsyncRequestCall": {
+    "constructor": [
+      "configImpl"
+    ],
+    "getMultipartBoundary": [
+      "headers"
+    ],
+    "handleMultipartResponse": [
+      "response",
+      "respStream",
+      "boundary"
+    ],
+    "handleRegularResponse": [
+      "response",
+      "respStream"
+    ],
+    "finalizeResponse": [
+      "response"
+    ],
+    "rejectWithError": [
+      "message",
+      "code",
+      "request",
+      "response"
+    ],
+    "enhanceAndReject": [
+      "error",
+      "code",
+      "request",
+      "response"
+    ],
+    "enhanceError": [
+      "error",
+      "code",
+      "request",
+      "response"
+    ]
+  },
+  "AsyncHttpCall": {
+    "invoke": [
+      "config"
+    ],
+    "constructor": [
+      "config"
+    ],
+    "execute": [],
+    "handleResponse": [
+      "res",
+      "req"
+    ],
+    "uncompressResponse": [
+      "res"
+    ]
+  },
+  "timeoutCallback": [],
+  "AsyncHttp2Call": {
+    "invoke": [
+      "config"
+    ],
+    "constructor": [
+      "config"
+    ],
+    "execute": [],
+    "handleHttp2Response": [
+      "headers",
+      "stream"
+    ],
+    "uncompressResponse": [
+      "headers",
+      "stream"
+    ]
+  },
+  "BaseRequestConfigImpl": {
+    "constructor": [
+      "config"
+    ],
+    "method": [],
+    "url": [],
+    "headers": [],
+    "data": [],
+    "timeout": [],
+    "buildEntity": [
+      "headers"
+    ],
+    "buildUrl": [],
+    "urlWithProtocol": [],
+    "hasEntity": [],
+    "isEntityEnclosingRequest": []
+  },
+  "HttpRequestConfigImpl": {
+    "constructor": [
+      "httpConfig"
+    ],
+    "httpAgent": [],
+    "buildRequestOptions": []
+  },
+  "Http2RequestConfigImpl": {
+    "constructor": [
+      "http2Config"
+    ],
+    "http2SessionHandler": [],
+    "buildRequestOptions": []
+  },
+  "nullFunction": [],
+  "ServiceAccountSigner": {
+    "constructor": [
+      "credential"
+    ],
+    "sign": [
+      "buffer"
+    ],
+    "getAccountId": []
+  },
+  "IAMSigner": {
+    "constructor": [
+      "httpClient",
+      "app"
+    ],
+    "sign": [
+      "buffer"
+    ],
+    "getAccountId": []
+  },
+  "CryptoSignerError": {
+    "constructor": [
+      "errorInfo"
+    ],
+    "code": [],
+    "message": [],
+    "cause": []
+  },
+  "CryptoSignerErrorCode": {},
+  "cryptoSignerFromApp": [
+    "app"
+  ],
+  "deepCopy": [
+    "value"
+  ],
+  "deepExtend": [
+    "target",
+    "source"
+  ],
+  "FirebaseError": {
+    "constructor": [
+      "errorInfo"
+    ],
+    "code": [],
+    "message": [],
+    "toJSON": []
+  },
+  "PrefixedFirebaseError": {
+    "constructor": [
+      "codePrefix",
+      "code",
+      "message"
+    ],
+    "hasCode": [
+      "code"
+    ]
+  },
+  "FirebaseAppError": {
+    "constructor": [
+      "code",
+      "message"
+    ]
+  },
+  "FirebaseAuthError": {
+    "fromServerError": [
+      "serverErrorCode",
+      "message",
+      "rawServerResponse"
+    ],
+    "constructor": [
+      "info",
+      "message"
+    ]
+  },
+  "FirebaseDatabaseError": {
+    "constructor": [
+      "info",
+      "message"
+    ]
+  },
+  "FirebaseFirestoreError": {
+    "constructor": [
+      "info",
+      "message"
+    ]
+  },
+  "FirebaseInstanceIdError": {
+    "constructor": [
+      "info",
+      "message"
+    ]
+  },
+  "FirebaseInstallationsError": {
+    "constructor": [
+      "info",
+      "message"
+    ]
+  },
+  "FirebaseMessagingError": {
+    "fromServerError": [
+      "serverErrorCode",
+      "message",
+      "rawServerResponse"
+    ],
+    "fromTopicManagementServerError": [
+      "serverErrorCode",
+      "message",
+      "rawServerResponse"
+    ],
+    "constructor": [
+      "info",
+      "message"
+    ]
+  },
+  "FirebaseMessagingSessionError": {
+    "constructor": [
+      "info",
+      "message",
+      "pendingBatchResponse"
+    ],
+    "toJSON": []
+  },
+  "FirebaseProjectManagementError": {
+    "constructor": [
+      "code",
+      "message"
+    ]
+  },
+  "AppErrorCodes": {},
+  "AuthClientErrorCode": {},
+  "MessagingClientErrorCode": {},
+  "InstallationsClientErrorCode": {},
+  "InstanceIdClientErrorCode": {},
+  "getSdkVersion": [],
+  "getMetricsHeader": [],
+  "renameProperties": [
+    "obj",
+    "keyMap"
+  ],
+  "addReadonlyGetter": [
+    "obj",
+    "prop",
+    "value"
+  ],
+  "getExplicitProjectId": [
+    "app"
+  ],
+  "findProjectId": [
+    "app"
+  ],
+  "getExplicitServiceAccountEmail": [
+    "app"
+  ],
+  "findServiceAccountEmail": [
+    "app"
+  ],
+  "toWebSafeBase64": [
+    "data"
+  ],
+  "formatString": [
+    "str",
+    "params"
+  ],
+  "generateUpdateMask": [
+    "obj",
+    "param",
+    "param"
+  ],
+  "transformMillisecondsToSecondsString": [
+    "milliseconds"
+  ],
+  "parseResourceName": [
+    "resourceName",
+    "resourceIdKey"
+  ],
+  "JwksFetcher": {
+    "constructor": [
+      "jwksUrl",
+      "httpAgent"
+    ],
+    "fetchPublicKeys": [],
+    "shouldRefresh": [],
+    "refresh": []
+  },
+  "UrlKeyFetcher": {
+    "constructor": [
+      "clientCertUrl",
+      "httpAgent"
+    ],
+    "fetchPublicKeys": [],
+    "shouldRefresh": [],
+    "refresh": []
+  },
+  "PublicKeySignatureVerifier": {
+    "constructor": [
+      "keyFetcher"
+    ],
+    "withCertificateUrl": [
+      "clientCertUrl",
+      "httpAgent"
+    ],
+    "withJwksUrl": [
+      "jwksUrl",
+      "httpAgent"
+    ],
+    "verify": [
+      "token"
+    ],
+    "verifyWithoutKid": [
+      "token"
+    ],
+    "verifyWithAllKeys": [
+      "token",
+      "keys"
+    ]
+  },
+  "EmulatorSignatureVerifier": {
+    "verify": [
+      "token"
+    ]
+  },
+  "JwtError": {
+    "constructor": [
+      "code",
+      "message"
+    ]
+  },
+  "getKeyCallback": [
+    "fetcher"
+  ],
+  "verifyJwtSignature": [
+    "token",
+    "secretOrPublicKey",
+    "options"
+  ],
+  "decodeJwt": [
+    "jwtToken"
+  ],
+  "isBuffer": [
+    "value"
+  ],
+  "isArray": [
+    "value"
+  ],
+  "isNonEmptyArray": [
+    "value"
+  ],
+  "isBoolean": [
+    "value"
+  ],
+  "isNumber": [
+    "value"
+  ],
+  "isString": [
+    "value"
+  ],
+  "isBase64String": [
+    "value"
+  ],
+  "isNonEmptyString": [
+    "value"
+  ],
+  "isObject": [
+    "value"
+  ],
+  "isNonNullObject": [
+    "value"
+  ],
+  "isUid": [
+    "uid"
+  ],
+  "isPassword": [
+    "password"
+  ],
+  "isEmail": [
+    "email"
+  ],
+  "isPhoneNumber": [
+    "phoneNumber"
+  ],
+  "isISODateString": [
+    "dateString"
+  ],
+  "isUTCDateString": [
+    "dateString"
+  ],
+  "isURL": [
+    "urlStr"
+  ],
+  "isTopic": [
+    "topic"
+  ],
+  "isTaskId": [
+    "taskId"
+  ]
+}
