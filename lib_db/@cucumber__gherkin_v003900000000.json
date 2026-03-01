@@ -1,0 +1,690 @@
+{
+  "AstBuilder": {
+    "stack": [],
+    "comments": [],
+    "newId": [],
+    "constructor": [
+      "newId"
+    ],
+    "reset": [],
+    "startRule": [
+      "ruleType"
+    ],
+    "endRule": [],
+    "build": [
+      "token"
+    ],
+    "getResult": [],
+    "currentNode": [],
+    "getLocation": [
+      "token",
+      "column"
+    ],
+    "getTags": [
+      "node"
+    ],
+    "getCells": [
+      "tableRowToken"
+    ],
+    "getDescription": [
+      "node"
+    ],
+    "getSteps": [
+      "node"
+    ],
+    "getTableRows": [
+      "node"
+    ],
+    "ensureCellCount": [
+      "rows"
+    ],
+    "transformNode": [
+      "node"
+    ]
+  },
+  "AstNode": {
+    "subItems": [],
+    "constructor": [
+      "param"
+    ],
+    "add": [
+      "type",
+      "obj"
+    ],
+    "getSingle": [
+      "ruleType"
+    ],
+    "getItems": [
+      "ruleType"
+    ],
+    "getToken": [
+      "tokenType"
+    ],
+    "getTokens": [
+      "tokenType"
+    ]
+  },
+  "GherkinException": {
+    "errors": [],
+    "location": [],
+    "constructor": [
+      "message"
+    ],
+    "_create": [
+      "message",
+      "location"
+    ]
+  },
+  "ParserException": {
+    "create": [
+      "message",
+      "line",
+      "column"
+    ]
+  },
+  "CompositeParserException": {
+    "create": [
+      "errors"
+    ]
+  },
+  "AstBuilderException": {
+    "create": [
+      "message",
+      "location"
+    ]
+  },
+  "NoSuchLanguageException": {
+    "create": [
+      "language",
+      "location"
+    ]
+  },
+  "GherkinClassicTokenMatcher": {
+    "dialect": [],
+    "dialectName": [],
+    "activeDocStringSeparator": [],
+    "indentToRemove": [],
+    "keywordTypesMap": [],
+    "sortedStepKeywords": [],
+    "constructor": [
+      "param"
+    ],
+    "changeDialect": [
+      "newDialectName",
+      "location"
+    ],
+    "reset": [],
+    "initializeKeywordTypes": [],
+    "initializeSortedStepKeywords": [],
+    "match_TagLine": [
+      "token"
+    ],
+    "match_FeatureLine": [
+      "token"
+    ],
+    "match_ScenarioLine": [
+      "token"
+    ],
+    "match_BackgroundLine": [
+      "token"
+    ],
+    "match_ExamplesLine": [
+      "token"
+    ],
+    "match_RuleLine": [
+      "token"
+    ],
+    "match_TableRow": [
+      "token"
+    ],
+    "match_Empty": [
+      "token"
+    ],
+    "match_Comment": [
+      "token"
+    ],
+    "match_Language": [
+      "token"
+    ],
+    "match_DocStringSeparator": [
+      "token"
+    ],
+    "_match_DocStringSeparator": [
+      "token",
+      "separator",
+      "isOpen"
+    ],
+    "match_EOF": [
+      "token"
+    ],
+    "match_StepLine": [
+      "token"
+    ],
+    "match_Other": [
+      "token"
+    ],
+    "getTags": [
+      "line"
+    ],
+    "matchTitleLine": [
+      "token",
+      "tokenType",
+      "keywords"
+    ],
+    "setTokenMatched": [
+      "token",
+      "matchedType",
+      "text",
+      "keyword",
+      "indent",
+      "keywordType",
+      "items"
+    ],
+    "unescapeDocString": [
+      "text"
+    ]
+  },
+  "ownKeys": [
+    "o"
+  ],
+  "addKeywordTypeMappings": [
+    "h",
+    "keywords",
+    "keywordType"
+  ],
+  "GherkinInMarkdownTokenMatcher": {
+    "dialect": [],
+    "dialectName": [],
+    "nonStarStepKeywords": [],
+    "stepRegexp": [],
+    "headerRegexp": [],
+    "activeDocStringSeparator": [],
+    "indentToRemove": [],
+    "matchedFeatureLine": [],
+    "keywordTypesMap": [],
+    "constructor": [
+      "param"
+    ],
+    "changeDialect": [
+      "newDialectName",
+      "location"
+    ],
+    "initializeKeywordTypes": [],
+    "match_Language": [
+      "token"
+    ],
+    "match_Empty": [
+      "token"
+    ],
+    "match_Other": [
+      "token"
+    ],
+    "match_Comment": [
+      "token"
+    ],
+    "match_DocStringSeparator": [
+      "token"
+    ],
+    "match_EOF": [
+      "token"
+    ],
+    "match_FeatureLine": [
+      "token"
+    ],
+    "match_BackgroundLine": [
+      "token"
+    ],
+    "match_RuleLine": [
+      "token"
+    ],
+    "match_ScenarioLine": [
+      "token"
+    ],
+    "match_ExamplesLine": [
+      "token"
+    ],
+    "match_StepLine": [
+      "token"
+    ],
+    "matchTitleLine": [
+      "prefix",
+      "keywords",
+      "keywordSuffix",
+      "token",
+      "matchedType"
+    ],
+    "setTokenMatched": [
+      "token",
+      "indent",
+      "matched"
+    ],
+    "match_TableRow": [
+      "token"
+    ],
+    "isGfmTableSeparator": [
+      "tableCells"
+    ],
+    "match_TagLine": [
+      "token"
+    ],
+    "reset": []
+  },
+  "escapeRegExp": [
+    "text"
+  ],
+  "GherkinLine": {
+    "trimmedLineText": [],
+    "isEmpty": [],
+    "indent": [],
+    "column": [],
+    "text": [],
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "startsWith": [
+      "prefix"
+    ],
+    "startsWithTitleKeyword": [
+      "keyword"
+    ],
+    "match": [
+      "regexp"
+    ],
+    "getLineText": [
+      "indentToRemove"
+    ],
+    "getRestTrimmed": [
+      "length"
+    ],
+    "getTableCells": []
+  },
+  "Token": {
+    "isEof": [],
+    "matchedText": [],
+    "matchedType": [],
+    "matchedItems": [],
+    "matchedKeyword": [],
+    "matchedIndent": [],
+    "matchedGherkinDialect": [],
+    "matchedKeywordType": [],
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "getTokenValue": [],
+    "detach": []
+  },
+  "Parser": {
+    "stopAtFirstError": [],
+    "context": [],
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "parse": [
+      "gherkinSource"
+    ],
+    "addError": [
+      "context",
+      "error"
+    ],
+    "startRule": [
+      "context",
+      "ruleType"
+    ],
+    "endRule": [
+      "context"
+    ],
+    "build": [
+      "context",
+      "token"
+    ],
+    "getResult": [],
+    "handleAstError": [
+      "context",
+      "action"
+    ],
+    "handleExternalError": [
+      "context",
+      "defaultValue",
+      "action"
+    ],
+    "readToken": [
+      "context"
+    ],
+    "matchToken": [
+      "state",
+      "token",
+      "context"
+    ],
+    "matchTokenAt_0": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_1": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_2": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_3": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_4": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_5": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_6": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_7": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_8": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_9": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_10": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_11": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_12": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_13": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_14": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_15": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_16": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_17": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_18": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_19": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_20": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_21": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_22": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_23": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_24": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_25": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_26": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_27": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_28": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_29": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_30": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_31": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_32": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_33": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_35": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_36": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_37": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_38": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_39": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_40": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_41": [
+      "token",
+      "context"
+    ],
+    "matchTokenAt_42": [
+      "token",
+      "context"
+    ],
+    "match_EOF": [
+      "context",
+      "token"
+    ],
+    "match_Empty": [
+      "context",
+      "token"
+    ],
+    "match_Comment": [
+      "context",
+      "token"
+    ],
+    "match_TagLine": [
+      "context",
+      "token"
+    ],
+    "match_FeatureLine": [
+      "context",
+      "token"
+    ],
+    "match_RuleLine": [
+      "context",
+      "token"
+    ],
+    "match_BackgroundLine": [
+      "context",
+      "token"
+    ],
+    "match_ScenarioLine": [
+      "context",
+      "token"
+    ],
+    "match_ExamplesLine": [
+      "context",
+      "token"
+    ],
+    "match_StepLine": [
+      "context",
+      "token"
+    ],
+    "match_DocStringSeparator": [
+      "context",
+      "token"
+    ],
+    "match_TableRow": [
+      "context",
+      "token"
+    ],
+    "match_Language": [
+      "context",
+      "token"
+    ],
+    "match_Other": [
+      "context",
+      "token"
+    ],
+    "lookahead_0": [
+      "context",
+      "currentToken"
+    ],
+    "lookahead_1": [
+      "context",
+      "currentToken"
+    ]
+  },
+  "UnexpectedTokenException": {
+    "create": [
+      "token",
+      "expectedTokenTypes"
+    ]
+  },
+  "UnexpectedEOFException": {
+    "create": [
+      "token",
+      "expectedTokenTypes"
+    ]
+  },
+  "tokenLocation": [
+    "token"
+  ],
+  "TokenScanner": {
+    "lineNumber": [],
+    "lines": [],
+    "constructor": [
+      "source",
+      "param"
+    ],
+    "read": []
+  },
+  "compareStepKeywords": [
+    "a",
+    "b"
+  ],
+  "countSymbols": [
+    "s"
+  ],
+  "generateMessages": [
+    "data",
+    "uri",
+    "mediaType",
+    "options"
+  ],
+  "makeSourceEnvelope": [
+    "data",
+    "uri"
+  ],
+  "compile": [
+    "gherkinDocument",
+    "uri",
+    "newId"
+  ],
+  "compileRule": [
+    "featureTags",
+    "featureBackgroundSteps",
+    "rule",
+    "language",
+    "pickles",
+    "uri",
+    "newId"
+  ],
+  "compileScenario": [
+    "inheritedTags",
+    "backgroundSteps",
+    "scenario",
+    "language",
+    "pickles",
+    "uri",
+    "newId"
+  ],
+  "compileScenarioOutline": [
+    "inheritedTags",
+    "backgroundSteps",
+    "scenario",
+    "language",
+    "pickles",
+    "uri",
+    "newId"
+  ],
+  "createPickleArguments": [
+    "step",
+    "variableCells",
+    "valueCells"
+  ],
+  "interpolate": [
+    "name",
+    "variableCells",
+    "valueCells"
+  ],
+  "pickleStep": [
+    "step",
+    "variableCells",
+    "valuesRow",
+    "newId",
+    "keywordType"
+  ],
+  "pickleTags": [
+    "tags"
+  ],
+  "pickleTag": [
+    "tag"
+  ]
+}
