@@ -1,0 +1,838 @@
+{
+  "parseAudioType": [
+    "str",
+    "input",
+    "output"
+  ],
+  "getLinuxAudioPci": [],
+  "parseWinAudioStatus": [
+    "n"
+  ],
+  "parseLinuxAudioPciMM": [
+    "lines",
+    "audioPCI"
+  ],
+  "parseDarwinChannel": [
+    "str"
+  ],
+  "parseDarwinAudio": [
+    "audioObject",
+    "id"
+  ],
+  "parseWindowsAudio": [
+    "lines"
+  ],
+  "audio": [
+    "callback"
+  ],
+  "parseWinBatteryPart": [
+    "lines",
+    "designedCapacity",
+    "fullChargeCapacity"
+  ],
+  "hasValue": [
+    "value"
+  ],
+  "parseBluetoothType": [
+    "str"
+  ],
+  "parseBluetoothManufacturer": [
+    "str"
+  ],
+  "parseBluetoothVendor": [
+    "str"
+  ],
+  "parseLinuxBluetoothInfo": [
+    "lines",
+    "macAddr1",
+    "macAddr2"
+  ],
+  "parseDarwinBluetoothDevices": [
+    "bluetoothObject",
+    "macAddr2"
+  ],
+  "parseWindowsBluetooth": [
+    "lines"
+  ],
+  "bluetoothDevices": [
+    "callback"
+  ],
+  "capFirst": [
+    "string"
+  ],
+  "getValue": [
+    "lines",
+    "property",
+    "separator",
+    "trimmed",
+    "lineMatch"
+  ],
+  "printLines": [
+    "obj"
+  ],
+  "info": [],
+  "getSocketTypesByName": [
+    "str"
+  ],
+  "cpuManufacturer": [
+    "str"
+  ],
+  "cpuBrandManufacturer": [
+    "res"
+  ],
+  "getAMDSpeed": [
+    "brand"
+  ],
+  "getCpu": [],
+  "cpu": [
+    "callback"
+  ],
+  "getCpuCurrentSpeedSync": [],
+  "cpuCurrentSpeed": [
+    "callback"
+  ],
+  "cpuTemperature": [
+    "callback"
+  ],
+  "cpuFlags": [
+    "callback"
+  ],
+  "cpuCache": [
+    "callback"
+  ],
+  "parseWinCache": [
+    "linesProc",
+    "linesCache"
+  ],
+  "getLoad": [],
+  "currentLoad": [
+    "callback"
+  ],
+  "getFullLoad": [],
+  "fullLoad": [
+    "callback"
+  ],
+  "dockerInfo": [
+    "callback"
+  ],
+  "dockerImages": [
+    "all",
+    "callback"
+  ],
+  "dockerImagesInspect": [
+    "imageID",
+    "payload"
+  ],
+  "dockerContainers": [
+    "all",
+    "callback"
+  ],
+  "inContainers": [
+    "containers",
+    "id"
+  ],
+  "dockerContainerInspect": [
+    "containerID",
+    "payload"
+  ],
+  "docker_calcCPUPercent": [
+    "cpu_stats",
+    "precpu_stats"
+  ],
+  "docker_calcNetworkIO": [
+    "networks"
+  ],
+  "docker_calcBlockIO": [
+    "blkio_stats"
+  ],
+  "dockerContainerStats": [
+    "containerIDs",
+    "callback"
+  ],
+  "dockerContainerStatsSingle": [
+    "containerID"
+  ],
+  "dockerContainerProcesses": [
+    "containerID",
+    "callback"
+  ],
+  "dockerVolumes": [
+    "callback"
+  ],
+  "dockerAll": [
+    "callback"
+  ],
+  "DockerSocket": {
+    "getInfo": [
+      "callback"
+    ],
+    "listImages": [
+      "all",
+      "callback"
+    ],
+    "inspectImage": [
+      "id",
+      "callback"
+    ],
+    "listContainers": [
+      "all",
+      "callback"
+    ],
+    "getStats": [
+      "id",
+      "callback"
+    ],
+    "getInspect": [
+      "id",
+      "callback"
+    ],
+    "getProcesses": [
+      "id",
+      "callback"
+    ],
+    "listVolumes": [
+      "callback"
+    ]
+  },
+  "fsSize": [
+    "drive",
+    "callback"
+  ],
+  "getmacOsFsType": [
+    "fs"
+  ],
+  "isLinuxTmpFs": [
+    "fs"
+  ],
+  "filterLines": [
+    "stdout"
+  ],
+  "parseDf": [
+    "lines"
+  ],
+  "fsOpenFiles": [
+    "callback"
+  ],
+  "parseBytes": [
+    "s"
+  ],
+  "parseDevices": [
+    "lines"
+  ],
+  "parseBlk": [
+    "lines"
+  ],
+  "decodeMdabmData": [
+    "lines"
+  ],
+  "raidMatchLinux": [
+    "data"
+  ],
+  "getDevicesLinux": [
+    "data"
+  ],
+  "matchDevicesLinux": [
+    "data"
+  ],
+  "getDevicesMac": [
+    "data"
+  ],
+  "matchDevicesMac": [
+    "data"
+  ],
+  "getDevicesWin": [
+    "diskDrives"
+  ],
+  "matchDevicesWin": [
+    "data",
+    "diskDrives"
+  ],
+  "blkStdoutToObject": [
+    "stdout"
+  ],
+  "blockDevices": [
+    "callback"
+  ],
+  "calcFsSpeed": [
+    "rx",
+    "wx"
+  ],
+  "fsStats": [
+    "callback"
+  ],
+  "calcDiskIO": [
+    "rIO",
+    "wIO",
+    "rWaitTime",
+    "wWaitTime",
+    "tWaitTime"
+  ],
+  "disksIO": [
+    "callback"
+  ],
+  "diskLayout": [
+    "callback"
+  ],
+  "getVendorFromModel": [
+    "model"
+  ],
+  "commitResult": [
+    "res"
+  ],
+  "getVendorFromId": [
+    "id"
+  ],
+  "vendorToId": [
+    "str"
+  ],
+  "getMetalVersion": [
+    "id"
+  ],
+  "graphics": [
+    "callback"
+  ],
+  "parseLinesDarwin": [
+    "graphicsArr"
+  ],
+  "parseLinesLinuxControllers": [
+    "lines"
+  ],
+  "parseLinesLinuxClinfo": [
+    "controllers",
+    "lines"
+  ],
+  "getNvidiaSmi": [],
+  "nvidiaSmi": [
+    "options"
+  ],
+  "nvidiaDevices": [],
+  "safeParseNumber": [
+    "value"
+  ],
+  "mergeControllerNvidia": [
+    "controller",
+    "nvidia"
+  ],
+  "parseLinesLinuxEdid": [
+    "edid"
+  ],
+  "parseLinesLinuxDisplays": [
+    "lines",
+    "depth"
+  ],
+  "parseLinesWindowsControllers": [
+    "sections",
+    "vections"
+  ],
+  "parseLinesWindowsDisplaysPowershell": [
+    "ssections",
+    "msections",
+    "dsections",
+    "tsections",
+    "isections"
+  ],
+  "version": [],
+  "getStaticData": [
+    "callback"
+  ],
+  "getDynamicData": [
+    "srv",
+    "iface",
+    "callback"
+  ],
+  "getAllData": [
+    "srv",
+    "iface",
+    "callback"
+  ],
+  "get": [
+    "valueObject",
+    "callback"
+  ],
+  "observe": [
+    "valueObject",
+    "interval",
+    "callback"
+  ],
+  "inetChecksite": [
+    "url",
+    "callback"
+  ],
+  "inetLatency": [
+    "host",
+    "callback"
+  ],
+  "mem": [
+    "callback"
+  ],
+  "memLayout": [
+    "callback"
+  ],
+  "getManufacturer": [
+    "manId"
+  ],
+  "getDefaultNetworkInterface": [],
+  "getMacAddresses": [],
+  "networkInterfaceDefault": [
+    "callback"
+  ],
+  "parseLinesWindowsNics": [
+    "sections",
+    "nconfigsections"
+  ],
+  "getWindowsNics": [],
+  "getWindowsDNSsuffixes": [],
+  "getWindowsIfaceDNSsuffix": [
+    "ifaces",
+    "ifacename"
+  ],
+  "getWindowsWiredProfilesInformation": [],
+  "getWindowsWirelessIfaceSSID": [
+    "interfaceName"
+  ],
+  "getWindowsIEEE8021x": [
+    "connectionType",
+    "iface",
+    "ifaces"
+  ],
+  "splitSectionsNics": [
+    "lines"
+  ],
+  "parseLinesDarwinNics": [
+    "sections"
+  ],
+  "getDarwinNics": [],
+  "getLinuxIfaceConnectionName": [
+    "interfaceName"
+  ],
+  "checkLinuxDCHPInterfaces": [
+    "file"
+  ],
+  "getLinuxDHCPNics": [],
+  "parseLinuxDHCPNics": [
+    "sections"
+  ],
+  "getLinuxIfaceDHCPstatus": [
+    "iface",
+    "connectionName",
+    "DHCPNics"
+  ],
+  "getDarwinIfaceDHCPstatus": [
+    "iface"
+  ],
+  "getLinuxIfaceDNSsuffix": [
+    "connectionName"
+  ],
+  "getLinuxIfaceIEEE8021xAuth": [
+    "connectionName"
+  ],
+  "getLinuxIfaceIEEE8021xState": [
+    "authenticationProtocol"
+  ],
+  "testVirtualNic": [
+    "iface",
+    "ifaceName",
+    "mac"
+  ],
+  "networkInterfaces": [
+    "callback",
+    "rescan",
+    "defaultString"
+  ],
+  "calcNetworkSpeed": [
+    "iface",
+    "rx_bytes",
+    "tx_bytes",
+    "operstate",
+    "rx_dropped",
+    "rx_errors",
+    "tx_dropped",
+    "tx_errors"
+  ],
+  "networkStats": [
+    "ifaces",
+    "callback"
+  ],
+  "networkStatsSingle": [
+    "iface"
+  ],
+  "parseLinesWindowsPerfData": [
+    "sections"
+  ],
+  "getProcessName": [
+    "processes",
+    "pid"
+  ],
+  "networkConnections": [
+    "callback"
+  ],
+  "networkGatewayDefault": [
+    "callback"
+  ],
+  "time": [],
+  "getLogoFile": [
+    "distro"
+  ],
+  "getWindowsRelease": [
+    "build"
+  ],
+  "getFQDN": [],
+  "osInfo": [
+    "callback"
+  ],
+  "isUefiLinux": [],
+  "isUefiWindows": [],
+  "versions": [
+    "apps",
+    "callback"
+  ],
+  "checkVersionParam": [
+    "apps"
+  ],
+  "shell": [
+    "callback"
+  ],
+  "getUniqueMacAdresses": [],
+  "uuid": [
+    "callback"
+  ],
+  "parseLinuxCupsHeader": [
+    "lines"
+  ],
+  "parseLinuxCupsPrinter": [
+    "lines"
+  ],
+  "parseLinuxLpstatPrinter": [
+    "lines",
+    "id"
+  ],
+  "parseDarwinPrinters": [
+    "printerObject",
+    "id"
+  ],
+  "parseWindowsPrinters": [
+    "lines",
+    "id"
+  ],
+  "printer": [
+    "callback"
+  ],
+  "parseTimeUnix": [
+    "time"
+  ],
+  "parseElapsedTime": [
+    "etime"
+  ],
+  "services": [
+    "srv",
+    "callback"
+  ],
+  "parseProcStat": [
+    "line"
+  ],
+  "calcProcStatLinux": [
+    "line",
+    "all",
+    "_cpu_old"
+  ],
+  "calcProcStatWin": [
+    "procStat",
+    "all",
+    "_cpu_old"
+  ],
+  "processes": [
+    "callback"
+  ],
+  "getName": [
+    "command"
+  ],
+  "parseLine": [
+    "line"
+  ],
+  "checkColumn": [
+    "i"
+  ],
+  "parseProcesses": [
+    "lines"
+  ],
+  "parseProcesses2": [
+    "lines"
+  ],
+  "formatDateTime": [
+    "time"
+  ],
+  "parseElapsed": [
+    "etime"
+  ],
+  "processLoad": [
+    "proc",
+    "callback"
+  ],
+  "system": [
+    "callback"
+  ],
+  "cleanDefaults": [
+    "s"
+  ],
+  "bios": [
+    "callback"
+  ],
+  "baseboard": [
+    "callback"
+  ],
+  "macOsChassisType": [
+    "model"
+  ],
+  "chassis": [
+    "callback"
+  ],
+  "getLinuxUsbType": [
+    "type",
+    "name"
+  ],
+  "parseLinuxUsb": [
+    "usb"
+  ],
+  "getDarwinUsbType": [
+    "name"
+  ],
+  "parseDarwinUsb": [
+    "usb",
+    "id"
+  ],
+  "getWindowsUsbTypeCreation": [
+    "creationclass",
+    "name"
+  ],
+  "parseWindowsUsb": [
+    "lines",
+    "id"
+  ],
+  "usb": [
+    "callback"
+  ],
+  "parseDate": [
+    "dtMon",
+    "dtDay"
+  ],
+  "parseUsersLinux": [
+    "lines",
+    "phase"
+  ],
+  "parseUsersDarwin": [
+    "lines"
+  ],
+  "users": [
+    "callback"
+  ],
+  "parseWinSessions": [
+    "sessionParts"
+  ],
+  "fuzzyMatch": [
+    "name1",
+    "name2"
+  ],
+  "parseWinUsers": [
+    "userParts",
+    "userQuery"
+  ],
+  "parseWinLoggedOn": [
+    "loggedonParts"
+  ],
+  "parseWinUsersQuery": [
+    "lines"
+  ],
+  "toInt": [
+    "value"
+  ],
+  "splitByNumber": [
+    "str"
+  ],
+  "isFunction": [
+    "functionToCheck"
+  ],
+  "unique": [
+    "obj"
+  ],
+  "sortByKey": [
+    "array",
+    "keys"
+  ],
+  "cores": [],
+  "decodeEscapeSequence": [
+    "str",
+    "base"
+  ],
+  "detectSplit": [
+    "str"
+  ],
+  "parseTime": [
+    "t",
+    "pmDesignator"
+  ],
+  "parseDateTime": [
+    "dt",
+    "culture"
+  ],
+  "parseHead": [
+    "head",
+    "rights"
+  ],
+  "findObjectByKey": [
+    "array",
+    "key",
+    "value"
+  ],
+  "getPowershell": [],
+  "getVboxmanage": [],
+  "powerShellProceedResults": [
+    "data"
+  ],
+  "powerShellStart": [],
+  "powerShellRelease": [],
+  "powerShell": [
+    "cmd"
+  ],
+  "callback": [
+    "data"
+  ],
+  "execSafe": [
+    "cmd",
+    "args",
+    "options"
+  ],
+  "getCodepage": [],
+  "smartMonToolsInstalled": [],
+  "isRaspberry": [
+    "cpuinfo"
+  ],
+  "isRaspbian": [],
+  "execWin": [
+    "cmd",
+    "opts",
+    "callback"
+  ],
+  "darwinXcodeExists": [],
+  "nanoSeconds": [],
+  "countUniqueLines": [
+    "lines",
+    "startingWith"
+  ],
+  "countLines": [
+    "lines",
+    "startingWith"
+  ],
+  "sanitizeShellString": [
+    "str",
+    "strict"
+  ],
+  "isPrototypePolluted": [],
+  "hex2bin": [
+    "hex"
+  ],
+  "getFilesInPath": [
+    "source"
+  ],
+  "isDirectory": [
+    "source"
+  ],
+  "isFile": [
+    "source"
+  ],
+  "getDirectories": [
+    "source"
+  ],
+  "getFiles": [
+    "source"
+  ],
+  "getFilesRecursively": [
+    "source"
+  ],
+  "decodePiCpuinfo": [
+    "lines"
+  ],
+  "getRpiGpu": [
+    "cpuinfo"
+  ],
+  "promiseAll": [
+    "promises"
+  ],
+  "promisify": [
+    "nodeStyleFunction"
+  ],
+  "promisifySave": [
+    "nodeStyleFunction"
+  ],
+  "linuxVersion": [],
+  "plistParser": [
+    "xmlStr"
+  ],
+  "strIsNumeric": [
+    "str"
+  ],
+  "plistReader": [
+    "output"
+  ],
+  "semverCompare": [
+    "v1",
+    "v2"
+  ],
+  "getAppleModel": [
+    "key"
+  ],
+  "checkWebsite": [
+    "url",
+    "param"
+  ],
+  "cleanString": [
+    "str"
+  ],
+  "noop": [],
+  "vboxInfo": [
+    "callback"
+  ],
+  "wifiDBFromQuality": [
+    "quality"
+  ],
+  "wifiQualityFromDB": [
+    "db"
+  ],
+  "wifiFrequencyFromChannel": [
+    "channel"
+  ],
+  "wifiChannelFromFrequencs": [
+    "frequency"
+  ],
+  "ifaceListLinux": [],
+  "nmiDeviceLinux": [
+    "iface"
+  ],
+  "nmiConnectionLinux": [
+    "ssid"
+  ],
+  "wpaConnectionLinux": [
+    "iface"
+  ],
+  "getWifiNetworkListNmi": [],
+  "getWifiNetworkListIw": [
+    "iface"
+  ],
+  "parseWifiDarwin": [
+    "wifiStr"
+  ],
+  "wifiNetworks": [
+    "callback"
+  ],
+  "getVendor": [
+    "model"
+  ],
+  "formatBssid": [
+    "s"
+  ],
+  "wifiConnections": [
+    "callback"
+  ],
+  "wifiInterfaces": [
+    "callback"
+  ]
+}
