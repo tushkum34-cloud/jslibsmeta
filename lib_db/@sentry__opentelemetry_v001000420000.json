@@ -1,0 +1,345 @@
+{
+  "getParentSpanId": [
+    "span"
+  ],
+  "spanHasAttributes": [
+    "span"
+  ],
+  "spanHasKind": [
+    "span"
+  ],
+  "spanHasStatus": [
+    "span"
+  ],
+  "spanHasName": [
+    "span"
+  ],
+  "spanHasParentId": [
+    "span"
+  ],
+  "spanHasEvents": [
+    "span"
+  ],
+  "getRequestSpanData": [
+    "span"
+  ],
+  "wrapClientClass": [
+    "ClientClass"
+  ],
+  "OpenTelemetryClient": {
+    "constructor": [
+      "param"
+    ],
+    "tracer": [],
+    "flush": [
+      "timeout"
+    ]
+  },
+  "getSpanKind": [
+    "span"
+  ],
+  "getScopesFromContext": [
+    "context"
+  ],
+  "setScopesOnContext": [
+    "context",
+    "scopes"
+  ],
+  "setContextOnScope": [
+    "scope",
+    "context"
+  ],
+  "getContextFromScope": [
+    "scope"
+  ],
+  "isSentryRequestSpan": [
+    "span"
+  ],
+  "getSamplingDecision": [
+    "spanContext"
+  ],
+  "inferSpanData": [
+    "spanName",
+    "attributes",
+    "kind"
+  ],
+  "parseSpanDescription": [
+    "span"
+  ],
+  "descriptionForDbSystem": [
+    "param"
+  ],
+  "descriptionForHttpMethod": [
+    "param",
+    "httpMethod"
+  ],
+  "getGraphqlOperationNamesFromAttribute": [
+    "attr"
+  ],
+  "getSanitizedUrl": [
+    "attributes",
+    "kind"
+  ],
+  "getUserUpdatedNameAndSource": [
+    "originalName",
+    "attributes",
+    "param"
+  ],
+  "enhanceDscWithOpenTelemetryRootSpanName": [
+    "client"
+  ],
+  "getActiveSpan": [],
+  "makeTraceState": [
+    "param"
+  ],
+  "openTelemetrySetupCheck": [],
+  "setIsSetup": [
+    "element"
+  ],
+  "SentryPropagator": {
+    "_urlMatchesTargetsMap": [],
+    "constructor": [],
+    "inject": [
+      "context",
+      "carrier",
+      "setter"
+    ],
+    "extract": [
+      "context",
+      "carrier",
+      "getter"
+    ],
+    "fields": []
+  },
+  "getInjectionData": [
+    "context",
+    "param"
+  ],
+  "getContextWithRemoteActiveSpan": [
+    "ctx",
+    "param"
+  ],
+  "continueTraceAsRemoteSpan": [
+    "ctx",
+    "options",
+    "callback"
+  ],
+  "ensureScopesOnContext": [
+    "ctx"
+  ],
+  "getExistingBaggage": [
+    "carrier"
+  ],
+  "getCurrentURL": [
+    "span"
+  ],
+  "generateRemoteSpanContext": [
+    "param"
+  ],
+  "_startSpan": [
+    "options",
+    "callback",
+    "autoEnd"
+  ],
+  "startSpan": [
+    "options",
+    "callback"
+  ],
+  "startSpanManual": [
+    "options",
+    "callback"
+  ],
+  "startInactiveSpan": [
+    "options"
+  ],
+  "withActiveSpan": [
+    "span",
+    "callback"
+  ],
+  "getTracer": [],
+  "getSpanOptions": [
+    "options"
+  ],
+  "ensureTimestampInMilliseconds": [
+    "timestamp"
+  ],
+  "getContext": [
+    "scope",
+    "forceTransaction"
+  ],
+  "getContextForScope": [
+    "scope"
+  ],
+  "continueTrace": [
+    "options",
+    "callback"
+  ],
+  "getTraceContextForScope": [
+    "client",
+    "scope"
+  ],
+  "getActiveSpanWrapper": [
+    "parentSpan"
+  ],
+  "suppressTracing": [
+    "callback"
+  ],
+  "setupEventContextTrace": [
+    "client"
+  ],
+  "getTraceData": [
+    "param"
+  ],
+  "setOpenTelemetryContextAsyncContextStrategy": [],
+  "getScopes": [],
+  "withScope": [
+    "callback"
+  ],
+  "withSetScope": [
+    "scope",
+    "callback"
+  ],
+  "withIsolationScope": [
+    "callback"
+  ],
+  "withSetIsolationScope": [
+    "isolationScope",
+    "callback"
+  ],
+  "getCurrentScope": [],
+  "getIsolationScope": [],
+  "wrapContextManagerClass": [
+    "ContextManagerClass"
+  ],
+  "SentryContextManager": {
+    "constructor": [
+      "param"
+    ],
+    "with": [
+      "context",
+      "fn",
+      "thisArg",
+      "param"
+    ],
+    "getAsyncLocalStorageLookup": []
+  },
+  "groupSpansWithParents": [
+    "spans"
+  ],
+  "getLocalParentId": [
+    "span"
+  ],
+  "createOrUpdateSpanNodeAndRefs": [
+    "nodeMap",
+    "span"
+  ],
+  "createOrGetParentNode": [
+    "nodeMap",
+    "id"
+  ],
+  "createOrUpdateNode": [
+    "nodeMap",
+    "spanNode"
+  ],
+  "isStatusErrorMessageValid": [
+    "message"
+  ],
+  "mapStatus": [
+    "span"
+  ],
+  "inferStatusFromAttributes": [
+    "attributes"
+  ],
+  "SentrySpanExporter": {
+    "_finishedSpanBuckets": [],
+    "_finishedSpanBucketSize": [],
+    "_spansToBucketEntry": [],
+    "_lastCleanupTimestampInS": [],
+    "_sentSpans": [],
+    "_debouncedFlush": [],
+    "constructor": [
+      "options"
+    ],
+    "export": [
+      "span"
+    ],
+    "flush": [],
+    "clear": [],
+    "_maybeSend": [],
+    "_flushSentSpanCache": [],
+    "_nodeIsCompletedRootNodeOrHasSentParent": [],
+    "_getCompletedRootNodes": []
+  },
+  "parseSpan": [
+    "span"
+  ],
+  "createTransactionForOtelSpan": [
+    "span"
+  ],
+  "createAndFinishSpanForOtelSpan": [
+    "node",
+    "spans",
+    "sentSpans"
+  ],
+  "getSpanData": [
+    "span"
+  ],
+  "removeSentryAttributes": [
+    "data"
+  ],
+  "getData": [
+    "span"
+  ],
+  "onSpanStart": [
+    "span",
+    "parentContext"
+  ],
+  "onSpanEnd": [
+    "span"
+  ],
+  "SentrySpanProcessor": {
+    "_exporter": [],
+    "constructor": [
+      "options"
+    ],
+    "forceFlush": [],
+    "shutdown": [],
+    "onStart": [
+      "span",
+      "parentContext"
+    ],
+    "onEnd": [
+      "span"
+    ]
+  },
+  "SentrySampler": {
+    "_client": [],
+    "constructor": [
+      "client"
+    ],
+    "shouldSample": [
+      "context",
+      "traceId",
+      "spanName",
+      "spanKind",
+      "spanAttributes",
+      "_links"
+    ],
+    "toString": []
+  },
+  "getParentSampled": [
+    "parentSpan",
+    "traceId",
+    "spanName"
+  ],
+  "wrapSamplingDecision": [
+    "param"
+  ],
+  "getBaseTraceState": [
+    "context",
+    "spanAttributes"
+  ],
+  "getValidSpan": [
+    "context"
+  ]
+}
