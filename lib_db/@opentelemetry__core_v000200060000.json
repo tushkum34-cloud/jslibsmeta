@@ -1,0 +1,297 @@
+{
+  "W3CBaggagePropagator": {
+    "inject": [
+      "context",
+      "carrier",
+      "setter"
+    ],
+    "extract": [
+      "context",
+      "carrier",
+      "getter"
+    ],
+    "fields": []
+  },
+  "serializeKeyPairs": [
+    "keyPairs"
+  ],
+  "getKeyPairs": [
+    "baggage"
+  ],
+  "parsePairKeyValue": [
+    "entry"
+  ],
+  "parseKeyPairsIntoRecord": [
+    "value"
+  ],
+  "AnchoredClock": {
+    "_monotonicClock": [],
+    "_epochMillis": [],
+    "_performanceMillis": [],
+    "constructor": [
+      "systemClock",
+      "monotonicClock"
+    ],
+    "now": []
+  },
+  "sanitizeAttributes": [
+    "attributes"
+  ],
+  "isAttributeKey": [
+    "key"
+  ],
+  "isAttributeValue": [
+    "val"
+  ],
+  "isHomogeneousAttributeValueArray": [
+    "arr"
+  ],
+  "isValidPrimitiveAttributeValueType": [
+    "valType"
+  ],
+  "setGlobalErrorHandler": [
+    "handler"
+  ],
+  "globalErrorHandler": [
+    "ex"
+  ],
+  "loggingErrorHandler": [],
+  "stringifyException": [
+    "ex"
+  ],
+  "flattenException": [
+    "ex"
+  ],
+  "millisToHrTime": [
+    "epochMillis"
+  ],
+  "getTimeOrigin": [],
+  "hrTime": [
+    "performanceNow"
+  ],
+  "timeInputToHrTime": [
+    "time"
+  ],
+  "hrTimeDuration": [
+    "startTime",
+    "endTime"
+  ],
+  "hrTimeToTimeStamp": [
+    "time"
+  ],
+  "hrTimeToNanoseconds": [
+    "time"
+  ],
+  "hrTimeToMilliseconds": [
+    "time"
+  ],
+  "hrTimeToMicroseconds": [
+    "time"
+  ],
+  "isTimeInputHrTime": [
+    "value"
+  ],
+  "isTimeInput": [
+    "value"
+  ],
+  "addHrTimes": [
+    "time1",
+    "time2"
+  ],
+  "unrefTimer": [
+    "timer"
+  ],
+  "_export": [
+    "exporter",
+    "arg"
+  ],
+  "validateKey": [
+    "key"
+  ],
+  "validateValue": [
+    "value"
+  ],
+  "getStringFromEnv": [
+    "key"
+  ],
+  "getBooleanFromEnv": [
+    "key"
+  ],
+  "getNumberFromEnv": [
+    "key"
+  ],
+  "getStringListFromEnv": [
+    "key"
+  ],
+  "CompositePropagator": {
+    "_propagators": [],
+    "_fields": [],
+    "constructor": [
+      "param"
+    ],
+    "inject": [
+      "context",
+      "carrier",
+      "setter"
+    ],
+    "extract": [
+      "context",
+      "carrier",
+      "getter"
+    ],
+    "fields": []
+  },
+  "TraceState": {
+    "_internalState": [],
+    "constructor": [
+      "rawTraceState"
+    ],
+    "set": [
+      "key",
+      "value"
+    ],
+    "unset": [
+      "key"
+    ],
+    "get": [
+      "key"
+    ],
+    "serialize": [],
+    "_parse": [
+      "rawTraceState"
+    ],
+    "_keys": [],
+    "_clone": []
+  },
+  "W3CTraceContextPropagator": {
+    "inject": [
+      "context",
+      "carrier",
+      "setter"
+    ],
+    "extract": [
+      "context",
+      "carrier",
+      "getter"
+    ],
+    "fields": []
+  },
+  "parseTraceParent": [
+    "traceParent"
+  ],
+  "setRPCMetadata": [
+    "context",
+    "meta"
+  ],
+  "deleteRPCMetadata": [
+    "context"
+  ],
+  "getRPCMetadata": [
+    "context"
+  ],
+  "suppressTracing": [
+    "context"
+  ],
+  "unsuppressTracing": [
+    "context"
+  ],
+  "isTracingSuppressed": [
+    "context"
+  ],
+  "BindOnceFuture": {
+    "_isCalled": [],
+    "_deferred": [],
+    "_callback": [],
+    "_that": [],
+    "constructor": [
+      "callback",
+      "that"
+    ],
+    "isCalled": [],
+    "promise": [],
+    "call": [
+      "param"
+    ]
+  },
+  "diagLogLevelFromString": [
+    "value"
+  ],
+  "isPlainObject": [
+    "value"
+  ],
+  "isObjectLike": [
+    "value"
+  ],
+  "baseGetTag": [
+    "value"
+  ],
+  "getRawTag": [
+    "value"
+  ],
+  "objectToString": [
+    "value"
+  ],
+  "merge": [
+    "param"
+  ],
+  "takeValue": [
+    "value"
+  ],
+  "mergeTwoObjects": [
+    "one",
+    "two",
+    "param",
+    "objects"
+  ],
+  "wasObjectReferenced": [
+    "obj",
+    "key",
+    "objects"
+  ],
+  "isArray": [
+    "value"
+  ],
+  "isFunction": [
+    "value"
+  ],
+  "isObject": [
+    "value"
+  ],
+  "isPrimitive": [
+    "value"
+  ],
+  "shouldMerge": [
+    "one",
+    "two"
+  ],
+  "Deferred": {
+    "_promise": [],
+    "_resolve": [],
+    "_reject": [],
+    "constructor": [],
+    "promise": [],
+    "resolve": [
+      "val"
+    ],
+    "reject": [
+      "err"
+    ]
+  },
+  "TimeoutError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "callWithTimeout": [
+    "promise",
+    "timeout"
+  ],
+  "urlMatches": [
+    "url",
+    "urlToMatch"
+  ],
+  "isUrlIgnored": [
+    "url",
+    "ignoredUrls"
+  ]
+}

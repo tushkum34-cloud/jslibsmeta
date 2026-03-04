@@ -1,0 +1,1275 @@
+{
+  "createInstrumentDescriptor": [
+    "name",
+    "type",
+    "options"
+  ],
+  "createInstrumentDescriptorWithView": [
+    "view",
+    "instrument"
+  ],
+  "isDescriptorCompatibleWith": [
+    "descriptor",
+    "otherDescriptor"
+  ],
+  "isValidName": [
+    "name"
+  ],
+  "SyncInstrument": {
+    "_writableMetricStorage": [],
+    "_descriptor": [],
+    "constructor": [
+      "writableMetricStorage",
+      "descriptor"
+    ],
+    "_record": [
+      "value",
+      "param",
+      "param"
+    ]
+  },
+  "UpDownCounterInstrument": {
+    "add": [
+      "value",
+      "attributes",
+      "ctx"
+    ]
+  },
+  "CounterInstrument": {
+    "add": [
+      "value",
+      "attributes",
+      "ctx"
+    ]
+  },
+  "GaugeInstrument": {
+    "record": [
+      "value",
+      "attributes",
+      "ctx"
+    ]
+  },
+  "HistogramInstrument": {
+    "record": [
+      "value",
+      "attributes",
+      "ctx"
+    ]
+  },
+  "ObservableInstrument": {
+    "_metricStorages": [],
+    "_descriptor": [],
+    "_observableRegistry": [],
+    "constructor": [
+      "descriptor",
+      "metricStorages",
+      "observableRegistry"
+    ],
+    "addCallback": [
+      "callback"
+    ],
+    "removeCallback": [
+      "callback"
+    ]
+  },
+  "ObservableCounterInstrument": {},
+  "ObservableGaugeInstrument": {},
+  "ObservableUpDownCounterInstrument": {},
+  "isObservableInstrument": [
+    "it"
+  ],
+  "Meter": {
+    "_meterSharedState": [],
+    "constructor": [
+      "meterSharedState"
+    ],
+    "createGauge": [
+      "name",
+      "options"
+    ],
+    "createHistogram": [
+      "name",
+      "options"
+    ],
+    "createCounter": [
+      "name",
+      "options"
+    ],
+    "createUpDownCounter": [
+      "name",
+      "options"
+    ],
+    "createObservableGauge": [
+      "name",
+      "options"
+    ],
+    "createObservableCounter": [
+      "name",
+      "options"
+    ],
+    "createObservableUpDownCounter": [
+      "name",
+      "options"
+    ],
+    "addBatchObservableCallback": [
+      "callback",
+      "observables"
+    ],
+    "removeBatchObservableCallback": [
+      "callback",
+      "observables"
+    ]
+  },
+  "MeterProvider": {
+    "_sharedState": [],
+    "_shutdown": [],
+    "constructor": [
+      "options"
+    ],
+    "getMeter": [
+      "name",
+      "param",
+      "param"
+    ],
+    "shutdown": [
+      "options"
+    ],
+    "forceFlush": [
+      "options"
+    ]
+  },
+  "ObservableResultImpl": {
+    "_buffer": [],
+    "_instrumentName": [],
+    "_valueType": [],
+    "constructor": [
+      "instrumentName",
+      "valueType"
+    ],
+    "observe": [
+      "value",
+      "param"
+    ]
+  },
+  "BatchObservableResultImpl": {
+    "_buffer": [],
+    "observe": [
+      "metric",
+      "value",
+      "param"
+    ]
+  },
+  "DropAggregator": {
+    "kind": [],
+    "createAccumulation": [],
+    "merge": [
+      "_previous",
+      "_delta"
+    ],
+    "diff": [
+      "_previous",
+      "_current"
+    ],
+    "toMetricData": [
+      "_descriptor",
+      "_aggregationTemporality",
+      "_accumulationByAttributes",
+      "_endTime"
+    ]
+  },
+  "ExponentialHistogramAccumulation": {
+    "startTime": [],
+    "_maxSize": [],
+    "_recordMinMax": [],
+    "_sum": [],
+    "_count": [],
+    "_zeroCount": [],
+    "_min": [],
+    "_max": [],
+    "_positive": [],
+    "_negative": [],
+    "_mapping": [],
+    "constructor": [
+      "startTime",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "record": [
+      "value"
+    ],
+    "setStartTime": [
+      "startTime"
+    ],
+    "toPointValue": [],
+    "sum": [],
+    "min": [],
+    "max": [],
+    "count": [],
+    "zeroCount": [],
+    "scale": [],
+    "positive": [],
+    "negative": [],
+    "updateByIncrement": [
+      "value",
+      "increment"
+    ],
+    "merge": [
+      "previous"
+    ],
+    "diff": [
+      "other"
+    ],
+    "clone": [],
+    "_updateBuckets": [
+      "buckets",
+      "value",
+      "increment"
+    ],
+    "_incrementIndexBy": [
+      "buckets",
+      "index",
+      "increment"
+    ],
+    "_grow": [
+      "buckets",
+      "needed"
+    ],
+    "_changeScale": [
+      "high",
+      "low"
+    ],
+    "_downscale": [
+      "change"
+    ],
+    "_minScale": [
+      "other"
+    ],
+    "_highLowAtScale": [
+      "buckets",
+      "currentScale",
+      "newScale"
+    ],
+    "_mergeBuckets": [
+      "ours",
+      "other",
+      "theirs",
+      "scale"
+    ],
+    "_diffBuckets": [
+      "ours",
+      "other",
+      "theirs",
+      "scale"
+    ]
+  },
+  "ExponentialHistogramAggregator": {
+    "kind": [],
+    "_maxSize": [],
+    "_recordMinMax": [],
+    "constructor": [
+      "maxSize",
+      "recordMinMax"
+    ],
+    "createAccumulation": [
+      "startTime"
+    ],
+    "merge": [
+      "previous",
+      "delta"
+    ],
+    "diff": [
+      "previous",
+      "current"
+    ],
+    "toMetricData": [
+      "descriptor",
+      "aggregationTemporality",
+      "accumulationByAttributes",
+      "endTime"
+    ]
+  },
+  "HighLow": {
+    "combine": [
+      "h1",
+      "h2"
+    ],
+    "low": [],
+    "high": [],
+    "constructor": [
+      "low",
+      "high"
+    ]
+  },
+  "HistogramAccumulation": {
+    "startTime": [],
+    "_boundaries": [],
+    "_recordMinMax": [],
+    "_current": [],
+    "constructor": [
+      "startTime",
+      "boundaries",
+      "param",
+      "param"
+    ],
+    "record": [
+      "value"
+    ],
+    "setStartTime": [
+      "startTime"
+    ],
+    "toPointValue": []
+  },
+  "HistogramAggregator": {
+    "kind": [],
+    "_boundaries": [],
+    "_recordMinMax": [],
+    "constructor": [
+      "boundaries",
+      "recordMinMax"
+    ],
+    "createAccumulation": [
+      "startTime"
+    ],
+    "merge": [
+      "previous",
+      "delta"
+    ],
+    "diff": [
+      "previous",
+      "current"
+    ],
+    "toMetricData": [
+      "descriptor",
+      "aggregationTemporality",
+      "accumulationByAttributes",
+      "endTime"
+    ]
+  },
+  "createNewEmptyCheckpoint": [
+    "boundaries"
+  ],
+  "LastValueAccumulation": {
+    "startTime": [],
+    "_current": [],
+    "sampleTime": [],
+    "constructor": [
+      "startTime",
+      "param",
+      "param"
+    ],
+    "record": [
+      "value"
+    ],
+    "setStartTime": [
+      "startTime"
+    ],
+    "toPointValue": []
+  },
+  "LastValueAggregator": {
+    "kind": [],
+    "createAccumulation": [
+      "startTime"
+    ],
+    "merge": [
+      "previous",
+      "delta"
+    ],
+    "diff": [
+      "previous",
+      "current"
+    ],
+    "toMetricData": [
+      "descriptor",
+      "aggregationTemporality",
+      "accumulationByAttributes",
+      "endTime"
+    ]
+  },
+  "SumAccumulation": {
+    "startTime": [],
+    "monotonic": [],
+    "_current": [],
+    "reset": [],
+    "constructor": [
+      "startTime",
+      "monotonic",
+      "param",
+      "param"
+    ],
+    "record": [
+      "value"
+    ],
+    "setStartTime": [
+      "startTime"
+    ],
+    "toPointValue": []
+  },
+  "SumAggregator": {
+    "kind": [],
+    "monotonic": [],
+    "constructor": [
+      "monotonic"
+    ],
+    "createAccumulation": [
+      "startTime"
+    ],
+    "merge": [
+      "previous",
+      "delta"
+    ],
+    "diff": [
+      "previous",
+      "current"
+    ],
+    "toMetricData": [
+      "descriptor",
+      "aggregationTemporality",
+      "accumulationByAttributes",
+      "endTime"
+    ]
+  },
+  "Buckets": {
+    "backing": [],
+    "indexBase": [],
+    "indexStart": [],
+    "indexEnd": [],
+    "constructor": [
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "offset": [],
+    "length": [],
+    "counts": [],
+    "at": [
+      "position"
+    ],
+    "incrementBucket": [
+      "bucketIndex",
+      "increment"
+    ],
+    "decrementBucket": [
+      "bucketIndex",
+      "decrement"
+    ],
+    "trim": [],
+    "downscale": [
+      "by"
+    ],
+    "clone": [],
+    "_rotate": [],
+    "_relocateBucket": [
+      "dest",
+      "src"
+    ]
+  },
+  "BucketsBacking": {
+    "_counts": [],
+    "constructor": [
+      "param"
+    ],
+    "length": [],
+    "countAt": [
+      "pos"
+    ],
+    "growTo": [
+      "newSize",
+      "oldPositiveLimit",
+      "newPositiveLimit"
+    ],
+    "reverse": [
+      "from",
+      "limit"
+    ],
+    "emptyBucket": [
+      "src"
+    ],
+    "increment": [
+      "bucketIndex",
+      "increment"
+    ],
+    "decrement": [
+      "bucketIndex",
+      "decrement"
+    ],
+    "clone": []
+  },
+  "ExponentMapping": {
+    "_shift": [],
+    "constructor": [
+      "scale"
+    ],
+    "mapToIndex": [
+      "value"
+    ],
+    "lowerBoundary": [
+      "index"
+    ],
+    "scale": [],
+    "_minNormalLowerBoundaryIndex": [],
+    "_maxNormalLowerBoundaryIndex": [],
+    "_rightShift": [
+      "value",
+      "shift"
+    ]
+  },
+  "LogarithmMapping": {
+    "_scale": [],
+    "_scaleFactor": [],
+    "_inverseFactor": [],
+    "constructor": [
+      "scale"
+    ],
+    "mapToIndex": [
+      "value"
+    ],
+    "lowerBoundary": [
+      "index"
+    ],
+    "scale": [],
+    "_minNormalLowerBoundaryIndex": [],
+    "_maxNormalLowerBoundaryIndex": []
+  },
+  "getMapping": [
+    "scale"
+  ],
+  "getNormalBase2": [
+    "value"
+  ],
+  "getSignificand": [
+    "value"
+  ],
+  "MappingError": {},
+  "ldexp": [
+    "frac",
+    "exp"
+  ],
+  "nextGreaterSquare": [
+    "v"
+  ],
+  "AlignedHistogramBucketExemplarReservoir": {
+    "_boundaries": [],
+    "constructor": [
+      "boundaries"
+    ],
+    "_findBucketIndex": [
+      "value",
+      "_timestamp",
+      "_attributes",
+      "_ctx"
+    ],
+    "offer": [
+      "value",
+      "timestamp",
+      "attributes",
+      "ctx"
+    ]
+  },
+  "AlwaysSampleExemplarFilter": {
+    "shouldSample": [
+      "_value",
+      "_timestamp",
+      "_attributes",
+      "_ctx"
+    ]
+  },
+  "ExemplarBucket": {
+    "value": [],
+    "attributes": [],
+    "timestamp": [],
+    "spanId": [],
+    "traceId": [],
+    "_offered": [],
+    "offer": [
+      "value",
+      "timestamp",
+      "attributes",
+      "ctx"
+    ],
+    "collect": [
+      "pointAttributes"
+    ]
+  },
+  "FixedSizeExemplarReservoirBase": {
+    "_reservoirStorage": [],
+    "_size": [],
+    "constructor": [
+      "size"
+    ],
+    "maxSize": [],
+    "reset": [],
+    "collect": [
+      "pointAttributes"
+    ]
+  },
+  "NeverSampleExemplarFilter": {
+    "shouldSample": [
+      "_value",
+      "_timestamp",
+      "_attributes",
+      "_ctx"
+    ]
+  },
+  "SimpleFixedSizeExemplarReservoir": {
+    "_numMeasurementsSeen": [],
+    "constructor": [
+      "size"
+    ],
+    "getRandomInt": [
+      "min",
+      "max"
+    ],
+    "_findBucketIndex": [
+      "_value",
+      "_timestamp",
+      "_attributes",
+      "_ctx"
+    ],
+    "offer": [
+      "value",
+      "timestamp",
+      "attributes",
+      "ctx"
+    ],
+    "reset": []
+  },
+  "WithTraceExemplarFilter": {
+    "shouldSample": [
+      "value",
+      "timestamp",
+      "attributes",
+      "ctx"
+    ]
+  },
+  "DEFAULT_AGGREGATION_SELECTOR": [
+    "_instrumentType"
+  ],
+  "DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR": [
+    "_instrumentType"
+  ],
+  "ConsoleMetricExporter": {
+    "_shutdown": [],
+    "_temporalitySelector": [],
+    "constructor": [
+      "options"
+    ],
+    "export": [
+      "metrics",
+      "resultCallback"
+    ],
+    "forceFlush": [],
+    "selectAggregationTemporality": [
+      "_instrumentType"
+    ],
+    "shutdown": [],
+    "_sendMetrics": [
+      "metrics",
+      "done"
+    ]
+  },
+  "InMemoryMetricExporter": {
+    "_shutdown": [],
+    "_aggregationTemporality": [],
+    "_metrics": [],
+    "constructor": [
+      "aggregationTemporality"
+    ],
+    "export": [
+      "metrics",
+      "resultCallback"
+    ],
+    "getMetrics": [],
+    "forceFlush": [],
+    "reset": [],
+    "selectAggregationTemporality": [
+      "_instrumentType"
+    ],
+    "shutdown": []
+  },
+  "MetricReader": {
+    "_shutdown": [],
+    "_metricProducers": [],
+    "_sdkMetricProducer": [],
+    "_aggregationTemporalitySelector": [],
+    "_aggregationSelector": [],
+    "_cardinalitySelector": [],
+    "constructor": [
+      "options"
+    ],
+    "setMetricProducer": [
+      "metricProducer"
+    ],
+    "selectAggregation": [
+      "instrumentType"
+    ],
+    "selectAggregationTemporality": [
+      "instrumentType"
+    ],
+    "selectCardinalityLimit": [
+      "instrumentType"
+    ],
+    "onInitialized": [],
+    "collect": [
+      "options"
+    ],
+    "shutdown": [
+      "options"
+    ],
+    "forceFlush": [
+      "options"
+    ]
+  },
+  "PeriodicExportingMetricReader": {
+    "_interval": [],
+    "_exporter": [],
+    "_exportInterval": [],
+    "_exportTimeout": [],
+    "constructor": [
+      "options"
+    ],
+    "_runOnce": [],
+    "_doRun": [],
+    "onInitialized": [],
+    "onForceFlush": [],
+    "onShutdown": []
+  },
+  "AsyncMetricStorage": {
+    "_aggregationCardinalityLimit": [],
+    "_deltaMetricStorage": [],
+    "_temporalMetricStorage": [],
+    "_attributesProcessor": [],
+    "constructor": [
+      "_instrumentDescriptor",
+      "aggregator",
+      "attributesProcessor",
+      "collectorHandles",
+      "aggregationCardinalityLimit"
+    ],
+    "record": [
+      "measurements",
+      "observationTime"
+    ],
+    "collect": [
+      "collector",
+      "collectionTime"
+    ]
+  },
+  "DeltaMetricProcessor": {
+    "_activeCollectionStorage": [],
+    "_cumulativeMemoStorage": [],
+    "_cardinalityLimit": [],
+    "_overflowAttributes": [],
+    "_overflowHashCode": [],
+    "_aggregator": [],
+    "constructor": [
+      "aggregator",
+      "aggregationCardinalityLimit"
+    ],
+    "record": [
+      "value",
+      "attributes",
+      "_context",
+      "collectionTime"
+    ],
+    "batchCumulate": [
+      "measurements",
+      "collectionTime"
+    ],
+    "collect": []
+  },
+  "HashMap": {
+    "_valueMap": [],
+    "_keyMap": [],
+    "_hash": [],
+    "constructor": [
+      "hash"
+    ],
+    "get": [
+      "key",
+      "hashCode"
+    ],
+    "getOrDefault": [
+      "key",
+      "defaultFactory"
+    ],
+    "set": [
+      "key",
+      "value",
+      "hashCode"
+    ],
+    "has": [
+      "key",
+      "hashCode"
+    ],
+    "keys": [],
+    "entries": [],
+    "size": []
+  },
+  "AttributeHashMap": {
+    "constructor": []
+  },
+  "MeterProviderSharedState": {
+    "viewRegistry": [],
+    "metricCollectors": [],
+    "meterSharedStates": [],
+    "resource": [],
+    "constructor": [
+      "resource"
+    ],
+    "getMeterSharedState": [
+      "instrumentationScope"
+    ],
+    "selectAggregations": [
+      "instrumentType"
+    ]
+  },
+  "MeterSharedState": {
+    "metricStorageRegistry": [],
+    "observableRegistry": [],
+    "meter": [],
+    "_meterProviderSharedState": [],
+    "_instrumentationScope": [],
+    "constructor": [
+      "meterProviderSharedState",
+      "instrumentationScope"
+    ],
+    "registerMetricStorage": [
+      "descriptor"
+    ],
+    "registerAsyncMetricStorage": [
+      "descriptor"
+    ],
+    "collect": [
+      "collector",
+      "collectionTime",
+      "options"
+    ],
+    "_registerMetricStorage": [
+      "descriptor",
+      "MetricStorageType"
+    ]
+  },
+  "MetricCollector": {
+    "_sharedState": [],
+    "_metricReader": [],
+    "constructor": [
+      "sharedState",
+      "metricReader"
+    ],
+    "collect": [
+      "options"
+    ],
+    "forceFlush": [
+      "options"
+    ],
+    "shutdown": [
+      "options"
+    ],
+    "selectAggregationTemporality": [
+      "instrumentType"
+    ],
+    "selectAggregation": [
+      "instrumentType"
+    ],
+    "selectCardinalityLimit": [
+      "instrumentType"
+    ]
+  },
+  "MetricStorage": {
+    "_instrumentDescriptor": [],
+    "constructor": [
+      "instrumentDescriptor"
+    ],
+    "getInstrumentDescriptor": [],
+    "updateDescription": [
+      "description"
+    ]
+  },
+  "MetricStorageRegistry": {
+    "_sharedRegistry": [],
+    "_perCollectorRegistry": [],
+    "create": [],
+    "getStorages": [
+      "collector"
+    ],
+    "register": [
+      "storage"
+    ],
+    "registerForCollector": [
+      "collector",
+      "storage"
+    ],
+    "findOrUpdateCompatibleStorage": [
+      "expectedDescriptor"
+    ],
+    "findOrUpdateCompatibleCollectorStorage": [
+      "collector",
+      "expectedDescriptor"
+    ],
+    "_registerStorage": [
+      "storage",
+      "storageMap"
+    ],
+    "_findOrUpdateCompatibleStorage": [
+      "expectedDescriptor",
+      "existingStorages"
+    ]
+  },
+  "MultiMetricStorage": {
+    "_backingStorages": [],
+    "constructor": [
+      "backingStorages"
+    ],
+    "record": [
+      "value",
+      "attributes",
+      "context",
+      "recordTime"
+    ]
+  },
+  "ObservableRegistry": {
+    "_callbacks": [],
+    "_batchCallbacks": [],
+    "addCallback": [
+      "callback",
+      "instrument"
+    ],
+    "removeCallback": [
+      "callback",
+      "instrument"
+    ],
+    "addBatchCallback": [
+      "callback",
+      "instruments"
+    ],
+    "removeBatchCallback": [
+      "callback",
+      "instruments"
+    ],
+    "observe": [
+      "collectionTime",
+      "timeoutMillis"
+    ],
+    "_observeCallbacks": [
+      "observationTime",
+      "timeoutMillis"
+    ],
+    "_observeBatchCallbacks": [
+      "observationTime",
+      "timeoutMillis"
+    ],
+    "_findCallback": [
+      "callback",
+      "instrument"
+    ],
+    "_findBatchCallback": [
+      "callback",
+      "instruments"
+    ]
+  },
+  "SyncMetricStorage": {
+    "_aggregationCardinalityLimit": [],
+    "_deltaMetricStorage": [],
+    "_temporalMetricStorage": [],
+    "_attributesProcessor": [],
+    "constructor": [
+      "instrumentDescriptor",
+      "aggregator",
+      "attributesProcessor",
+      "collectorHandles",
+      "aggregationCardinalityLimit"
+    ],
+    "record": [
+      "value",
+      "attributes",
+      "context",
+      "recordTime"
+    ],
+    "collect": [
+      "collector",
+      "collectionTime"
+    ]
+  },
+  "TemporalMetricProcessor": {
+    "_aggregator": [],
+    "_unreportedAccumulations": [],
+    "_reportHistory": [],
+    "constructor": [
+      "aggregator",
+      "collectorHandles"
+    ],
+    "buildMetrics": [
+      "collector",
+      "instrumentDescriptor",
+      "currentAccumulations",
+      "collectionTime"
+    ],
+    "_stashAccumulations": [
+      "currentAccumulation"
+    ],
+    "_getMergedUnreportedAccumulations": [
+      "collector"
+    ],
+    "merge": [
+      "last",
+      "current",
+      "aggregator"
+    ],
+    "calibrateStartTime": [
+      "last",
+      "current",
+      "lastCollectionTime"
+    ]
+  },
+  "AttributesMapToAccumulationRecords": [
+    "map"
+  ],
+  "TimeoutError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "hashAttributes": [
+    "attributes"
+  ],
+  "instrumentationScopeId": [
+    "instrumentationScope"
+  ],
+  "callWithTimeout": [
+    "promise",
+    "timeout"
+  ],
+  "setEquals": [
+    "lhs",
+    "rhs"
+  ],
+  "binarySearchUB": [
+    "arr",
+    "value"
+  ],
+  "equalsCaseInsensitive": [
+    "lhs",
+    "rhs"
+  ],
+  "DropAggregation": {
+    "DEFAULT_INSTANCE": [],
+    "createAggregator": [
+      "_instrument"
+    ]
+  },
+  "SumAggregation": {
+    "MONOTONIC_INSTANCE": [],
+    "NON_MONOTONIC_INSTANCE": [],
+    "createAggregator": [
+      "instrument"
+    ]
+  },
+  "LastValueAggregation": {
+    "DEFAULT_INSTANCE": [],
+    "createAggregator": [
+      "_instrument"
+    ]
+  },
+  "HistogramAggregation": {
+    "DEFAULT_INSTANCE": [],
+    "createAggregator": [
+      "_instrument"
+    ]
+  },
+  "ExplicitBucketHistogramAggregation": {
+    "_boundaries": [],
+    "_recordMinMax": [],
+    "constructor": [
+      "boundaries",
+      "param"
+    ],
+    "createAggregator": [
+      "_instrument"
+    ]
+  },
+  "ExponentialHistogramAggregation": {
+    "_maxSize": [],
+    "_recordMinMax": [],
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "createAggregator": [
+      "_instrument"
+    ]
+  },
+  "DefaultAggregation": {
+    "_resolve": [
+      "instrument"
+    ],
+    "createAggregator": [
+      "instrument"
+    ]
+  },
+  "toAggregation": [
+    "option"
+  ],
+  "NoopAttributesProcessor": {
+    "process": [
+      "incoming",
+      "_context"
+    ]
+  },
+  "MultiAttributesProcessor": {
+    "_processors": [],
+    "constructor": [
+      "processors"
+    ],
+    "process": [
+      "incoming",
+      "context"
+    ]
+  },
+  "AllowListProcessor": {
+    "_allowedAttributeNames": [],
+    "constructor": [
+      "allowedAttributeNames"
+    ],
+    "process": [
+      "incoming",
+      "_context"
+    ]
+  },
+  "DenyListProcessor": {
+    "_deniedAttributeNames": [],
+    "constructor": [
+      "deniedAttributeNames"
+    ],
+    "process": [
+      "incoming",
+      "_context"
+    ]
+  },
+  "createNoopAttributesProcessor": [],
+  "createMultiAttributesProcessor": [
+    "processors"
+  ],
+  "createAllowListAttributesProcessor": [
+    "attributeAllowList"
+  ],
+  "createDenyListAttributesProcessor": [
+    "attributeDenyList"
+  ],
+  "InstrumentSelector": {
+    "_nameFilter": [],
+    "_type": [],
+    "_unitFilter": [],
+    "constructor": [
+      "criteria"
+    ],
+    "getType": [],
+    "getNameFilter": [],
+    "getUnitFilter": []
+  },
+  "MeterSelector": {
+    "_nameFilter": [],
+    "_versionFilter": [],
+    "_schemaUrlFilter": [],
+    "constructor": [
+      "criteria"
+    ],
+    "getNameFilter": [],
+    "getVersionFilter": [],
+    "getSchemaUrlFilter": []
+  },
+  "PatternPredicate": {
+    "_matchAll": [],
+    "_regexp": [],
+    "constructor": [
+      "pattern"
+    ],
+    "match": [
+      "str"
+    ],
+    "escapePattern": [
+      "pattern"
+    ],
+    "hasWildcard": [
+      "pattern"
+    ]
+  },
+  "ExactPredicate": {
+    "_matchAll": [],
+    "_pattern": [],
+    "constructor": [
+      "pattern"
+    ],
+    "match": [
+      "str"
+    ]
+  },
+  "getIncompatibilityDetails": [
+    "existing",
+    "otherDescriptor"
+  ],
+  "getValueTypeConflictResolutionRecipe": [
+    "existing",
+    "otherDescriptor"
+  ],
+  "getUnitConflictResolutionRecipe": [
+    "existing",
+    "otherDescriptor"
+  ],
+  "getTypeConflictResolutionRecipe": [
+    "existing",
+    "otherDescriptor"
+  ],
+  "getDescriptionResolutionRecipe": [
+    "existing",
+    "otherDescriptor"
+  ],
+  "getConflictResolutionRecipe": [
+    "existing",
+    "otherDescriptor"
+  ],
+  "View": {
+    "name": [],
+    "description": [],
+    "aggregation": [],
+    "attributesProcessor": [],
+    "instrumentSelector": [],
+    "meterSelector": [],
+    "aggregationCardinalityLimit": [],
+    "constructor": [
+      "viewOptions"
+    ]
+  },
+  "isSelectorNotProvided": [
+    "options"
+  ],
+  "validateViewOptions": [
+    "viewOptions"
+  ],
+  "ViewRegistry": {
+    "_registeredViews": [],
+    "addView": [
+      "view"
+    ],
+    "findViews": [
+      "instrument",
+      "meter"
+    ],
+    "_matchInstrument": [
+      "selector",
+      "instrument"
+    ],
+    "_matchMeter": [
+      "selector",
+      "meter"
+    ]
+  }
+}
