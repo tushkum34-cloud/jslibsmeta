@@ -1,0 +1,107 @@
+{
+  "PgInstrumentation": {
+    "_connectionsCounter": [],
+    "_semconvStability": [],
+    "constructor": [
+      "param"
+    ],
+    "_updateMetricInstruments": [],
+    "init": [],
+    "_patchPgClient": [
+      "module"
+    ],
+    "_unpatchPgClient": [
+      "module"
+    ],
+    "_getClientConnectPatch": [],
+    "recordOperationDuration": [
+      "attributes",
+      "startTime"
+    ],
+    "_getClientQueryPatch": [],
+    "_setPoolConnectEventListeners": [
+      "pgPool"
+    ],
+    "_getPoolConnectPatch": []
+  },
+  "extractModuleExports": [
+    "module"
+  ],
+  "recordDuration": [],
+  "handleConnectResult": [
+    "span",
+    "connectResult"
+  ],
+  "getQuerySpanName": [
+    "dbName",
+    "queryConfig"
+  ],
+  "parseNormalizedOperationName": [
+    "queryText"
+  ],
+  "parseAndMaskConnectionString": [
+    "connectionString"
+  ],
+  "getConnectionString": [
+    "params"
+  ],
+  "getPort": [
+    "port"
+  ],
+  "getSemanticAttributesFromConnection": [
+    "params",
+    "semconvStability"
+  ],
+  "getSemanticAttributesFromPoolConnection": [
+    "params",
+    "semconvStability"
+  ],
+  "shouldSkipInstrumentation": [
+    "instrumentationConfig"
+  ],
+  "handleConfigQuery": [
+    "tracer",
+    "instrumentationConfig",
+    "semconvStability",
+    "queryConfig"
+  ],
+  "handleExecutionResult": [
+    "config",
+    "span",
+    "pgResult"
+  ],
+  "patchCallback": [
+    "instrumentationConfig",
+    "span",
+    "cb",
+    "attributes",
+    "recordDuration"
+  ],
+  "getPoolName": [
+    "pool"
+  ],
+  "updateCounter": [
+    "poolName",
+    "pool",
+    "connectionCount",
+    "connectionPendingRequests",
+    "latestCounter"
+  ],
+  "patchCallbackPGPool": [
+    "span",
+    "cb"
+  ],
+  "patchClientConnectCallback": [
+    "span",
+    "cb"
+  ],
+  "getErrorMessage": [
+    "e"
+  ],
+  "isObjectWithTextString": [
+    "it"
+  ],
+  "sanitizedErrorMessage": [
+    "error"
+  ]
+}
