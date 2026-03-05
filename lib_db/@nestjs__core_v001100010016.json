@@ -1,0 +1,2993 @@
+{
+  "AbstractHttpAdapter": {
+    "constructor": [
+      "instance"
+    ],
+    "init": [],
+    "use": [
+      "param"
+    ],
+    "get": [
+      "param"
+    ],
+    "post": [
+      "param"
+    ],
+    "head": [
+      "param"
+    ],
+    "delete": [
+      "param"
+    ],
+    "put": [
+      "param"
+    ],
+    "patch": [
+      "param"
+    ],
+    "propfind": [
+      "param"
+    ],
+    "proppatch": [
+      "param"
+    ],
+    "mkcol": [
+      "param"
+    ],
+    "copy": [
+      "param"
+    ],
+    "move": [
+      "param"
+    ],
+    "lock": [
+      "param"
+    ],
+    "unlock": [
+      "param"
+    ],
+    "all": [
+      "param"
+    ],
+    "search": [
+      "param"
+    ],
+    "options": [
+      "param"
+    ],
+    "listen": [
+      "port",
+      "hostname",
+      "callback"
+    ],
+    "getHttpServer": [],
+    "setHttpServer": [
+      "httpServer"
+    ],
+    "setInstance": [
+      "instance"
+    ],
+    "getInstance": [],
+    "normalizePath": [
+      "path"
+    ],
+    "setOnRouteTriggered": [
+      "onRouteTriggered"
+    ],
+    "getOnRouteTriggered": [],
+    "setOnRequestHook": [
+      "onRequestHook"
+    ],
+    "setOnResponseHook": [
+      "onResponseHook"
+    ]
+  },
+  "ApplicationConfig": {
+    "constructor": [
+      "param"
+    ],
+    "setGlobalPrefix": [
+      "prefix"
+    ],
+    "getGlobalPrefix": [],
+    "setGlobalPrefixOptions": [
+      "options"
+    ],
+    "getGlobalPrefixOptions": [],
+    "setIoAdapter": [
+      "ioAdapter"
+    ],
+    "getIoAdapter": [],
+    "addGlobalPipe": [
+      "pipe"
+    ],
+    "useGlobalPipes": [
+      "param"
+    ],
+    "getGlobalFilters": [],
+    "addGlobalFilter": [
+      "filter"
+    ],
+    "useGlobalFilters": [
+      "param"
+    ],
+    "getGlobalPipes": [],
+    "getGlobalInterceptors": [],
+    "addGlobalInterceptor": [
+      "interceptor"
+    ],
+    "useGlobalInterceptors": [
+      "param"
+    ],
+    "getGlobalGuards": [],
+    "addGlobalGuard": [
+      "guard"
+    ],
+    "useGlobalGuards": [
+      "param"
+    ],
+    "addGlobalRequestInterceptor": [
+      "wrapper"
+    ],
+    "getGlobalRequestInterceptors": [],
+    "addGlobalRequestPipe": [
+      "wrapper"
+    ],
+    "getGlobalRequestPipes": [],
+    "addGlobalRequestFilter": [
+      "wrapper"
+    ],
+    "getGlobalRequestFilters": [],
+    "addGlobalRequestGuard": [
+      "wrapper"
+    ],
+    "getGlobalRequestGuards": [],
+    "enableVersioning": [
+      "options"
+    ],
+    "getVersioning": []
+  },
+  "DiscoverableMetaHostCollection": {
+    "addClassMetaHostLink": [
+      "target",
+      "metadataKey"
+    ],
+    "inspectProvider": [
+      "hostContainerRef",
+      "instanceWrapper"
+    ],
+    "inspectController": [
+      "hostContainerRef",
+      "instanceWrapper"
+    ],
+    "insertByMetaKey": [
+      "metaKey",
+      "instanceWrapper",
+      "collection"
+    ],
+    "getProvidersByMetaKey": [
+      "hostContainerRef",
+      "metaKey"
+    ],
+    "getControllersByMetaKey": [
+      "hostContainerRef",
+      "metaKey"
+    ],
+    "inspectInstanceWrapper": [
+      "hostContainerRef",
+      "instanceWrapper",
+      "wrapperByMetaKeyMap"
+    ],
+    "getMetaKeyByInstanceWrapper": [
+      "instanceWrapper"
+    ]
+  },
+  "DiscoveryModule": {},
+  "DiscoveryService": {
+    "modulesContainer": [],
+    "constructor": [
+      "modulesContainer"
+    ],
+    "createDecorator": [],
+    "getProviders": [
+      "options",
+      "modules"
+    ],
+    "getControllers": [
+      "options",
+      "modules"
+    ],
+    "getMetadataByDecorator": [
+      "decorator",
+      "instanceWrapper",
+      "methodKey"
+    ],
+    "getModules": [
+      "options"
+    ],
+    "includeWhitelisted": []
+  },
+  "decoratorFn": [
+    "metadataValue"
+  ],
+  "ExceptionHandler": {
+    "handle": [
+      "exception"
+    ]
+  },
+  "CircularDependencyException": {
+    "constructor": [
+      "context"
+    ]
+  },
+  "InvalidClassModuleException": {
+    "constructor": [
+      "metatypeUsedAsAModule",
+      "scope"
+    ]
+  },
+  "InvalidClassScopeException": {
+    "constructor": [
+      "metatypeOrToken"
+    ]
+  },
+  "InvalidClassException": {
+    "constructor": [
+      "value"
+    ]
+  },
+  "InvalidExceptionFilterException": {
+    "constructor": []
+  },
+  "InvalidMiddlewareConfigurationException": {
+    "constructor": []
+  },
+  "InvalidMiddlewareException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "InvalidModuleException": {
+    "constructor": [
+      "parentModule",
+      "index",
+      "scope"
+    ]
+  },
+  "RuntimeException": {
+    "constructor": [
+      "param"
+    ],
+    "what": []
+  },
+  "UndefinedDependencyException": {
+    "constructor": [
+      "type",
+      "undefinedDependencyContext",
+      "moduleRef"
+    ]
+  },
+  "UndefinedForwardRefException": {
+    "constructor": [
+      "scope"
+    ]
+  },
+  "UndefinedModuleException": {
+    "constructor": [
+      "parentModule",
+      "index",
+      "scope"
+    ]
+  },
+  "UnknownDependenciesException": {
+    "constructor": [
+      "type",
+      "context",
+      "moduleRef",
+      "metadata"
+    ]
+  },
+  "UnknownElementException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "UnknownExportException": {
+    "constructor": [
+      "token",
+      "moduleName"
+    ]
+  },
+  "UnknownModuleException": {
+    "constructor": [
+      "moduleName"
+    ]
+  },
+  "UnknownRequestMappingException": {
+    "constructor": [
+      "metatype"
+    ]
+  },
+  "ExceptionsZone": {
+    "run": [
+      "callback",
+      "param",
+      "autoFlushLogs"
+    ],
+    "asyncRun": [
+      "callback",
+      "param",
+      "autoFlushLogs"
+    ]
+  },
+  "DEFAULT_TEARDOWN": [],
+  "getInstanceName": [
+    "instance"
+  ],
+  "getDependencyName": [
+    "dependency",
+    "fallbackValue",
+    "param"
+  ],
+  "getModuleName": [
+    "module"
+  ],
+  "stringifyScope": [
+    "scope"
+  ],
+  "UNKNOWN_DEPENDENCIES_MESSAGE": [
+    "type",
+    "unknownDependencyContext",
+    "moduleRef"
+  ],
+  "INVALID_MIDDLEWARE_MESSAGE": [
+    "text",
+    "name"
+  ],
+  "UNDEFINED_FORWARDREF_MESSAGE": [
+    "scope"
+  ],
+  "INVALID_MODULE_MESSAGE": [
+    "parentModule",
+    "index",
+    "scope"
+  ],
+  "USING_INVALID_CLASS_AS_A_MODULE_MESSAGE": [
+    "metatypeUsedAsAModule",
+    "scope"
+  ],
+  "UNDEFINED_MODULE_MESSAGE": [
+    "parentModule",
+    "index",
+    "scope"
+  ],
+  "UNKNOWN_EXPORT_MESSAGE": [
+    "param",
+    "module"
+  ],
+  "INVALID_CLASS_MESSAGE": [
+    "text",
+    "value"
+  ],
+  "INVALID_CLASS_SCOPE_MESSAGE": [
+    "text",
+    "name"
+  ],
+  "UNKNOWN_REQUEST_MAPPING": [
+    "metatype"
+  ],
+  "BaseExceptionFilterContext": {
+    "constructor": [
+      "container"
+    ],
+    "createConcreteContext": [
+      "metadata",
+      "param",
+      "inquirerId"
+    ],
+    "getFilterInstance": [
+      "filter",
+      "param",
+      "inquirerId"
+    ],
+    "getInstanceByMetatype": [
+      "metatype"
+    ],
+    "reflectCatchExceptions": [
+      "instance"
+    ]
+  },
+  "BaseExceptionFilter": {
+    "constructor": [
+      "applicationRef"
+    ],
+    "catch": [
+      "exception",
+      "host"
+    ],
+    "handleUnknownError": [
+      "exception",
+      "host",
+      "applicationRef"
+    ],
+    "isExceptionObject": [
+      "err"
+    ],
+    "isHttpError": [
+      "err"
+    ]
+  },
+  "ExceptionsHandler": {
+    "constructor": [],
+    "next": [
+      "exception",
+      "ctx"
+    ],
+    "setCustomFilters": [
+      "filters"
+    ],
+    "invokeCustomFilters": [
+      "exception",
+      "ctx"
+    ]
+  },
+  "ExternalExceptionFilterContext": {
+    "constructor": [
+      "container",
+      "config"
+    ],
+    "create": [
+      "instance",
+      "callback",
+      "module",
+      "param",
+      "inquirerId"
+    ],
+    "getGlobalMetadata": [
+      "param",
+      "inquirerId"
+    ]
+  },
+  "ExternalExceptionFilter": {
+    "catch": [
+      "exception",
+      "host"
+    ]
+  },
+  "ExternalExceptionsHandler": {
+    "constructor": [],
+    "next": [
+      "exception",
+      "host"
+    ],
+    "setCustomFilters": [
+      "filters"
+    ],
+    "invokeCustomFilters": [
+      "exception",
+      "host"
+    ]
+  },
+  "GuardsConsumer": {
+    "tryActivate": [
+      "guards",
+      "args",
+      "instance",
+      "callback",
+      "type"
+    ],
+    "createContext": [
+      "args",
+      "instance",
+      "callback"
+    ],
+    "pickResult": [
+      "result"
+    ]
+  },
+  "GuardsContextCreator": {
+    "constructor": [
+      "container",
+      "config"
+    ],
+    "create": [
+      "instance",
+      "callback",
+      "module",
+      "param",
+      "inquirerId"
+    ],
+    "createConcreteContext": [
+      "metadata",
+      "param",
+      "inquirerId"
+    ],
+    "getGuardInstance": [
+      "metatype",
+      "param",
+      "inquirerId"
+    ],
+    "getInstanceByMetatype": [
+      "metatype"
+    ],
+    "getGlobalMetadata": [
+      "param",
+      "inquirerId"
+    ]
+  },
+  "Barrier": {
+    "constructor": [
+      "targetCount"
+    ],
+    "signal": [],
+    "wait": [],
+    "signalAndWait": []
+  },
+  "ContextCreator": {
+    "createContext": [
+      "instance",
+      "callback",
+      "metadataKey",
+      "param",
+      "inquirerId"
+    ],
+    "reflectClassMetadata": [
+      "instance",
+      "metadataKey"
+    ],
+    "reflectMethodMetadata": [
+      "callback",
+      "metadataKey"
+    ],
+    "getContextId": [
+      "contextId",
+      "instanceWrapper"
+    ]
+  },
+  "ContextIdFactory": {
+    "create": [],
+    "getByRequest": [
+      "request",
+      "param"
+    ],
+    "apply": [
+      "strategy"
+    ],
+    "isContextIdResolverWithPayload": [
+      "resolverOrResolverFn"
+    ]
+  },
+  "createContextId": [],
+  "ContextUtils": {
+    "mapParamType": [
+      "key"
+    ],
+    "reflectCallbackParamtypes": [
+      "instance",
+      "methodName"
+    ],
+    "reflectCallbackMetadata": [
+      "instance",
+      "methodName",
+      "metadataKey"
+    ],
+    "reflectPassthrough": [
+      "instance",
+      "methodName"
+    ],
+    "getArgumentsLength": [
+      "keys",
+      "metadata"
+    ],
+    "createNullArray": [
+      "length"
+    ],
+    "mergeParamsMetatypes": [
+      "paramsProperties",
+      "paramtypes"
+    ],
+    "getCustomFactory": [
+      "factory",
+      "data",
+      "contextFactory"
+    ],
+    "getContextFactory": [
+      "contextType",
+      "instance",
+      "callback"
+    ]
+  },
+  "ExecutionContextHost": {
+    "constructor": [
+      "args",
+      "param",
+      "param"
+    ],
+    "setType": [
+      "type"
+    ],
+    "getType": [],
+    "getClass": [],
+    "getHandler": [],
+    "getArgs": [],
+    "getArgByIndex": [
+      "index"
+    ],
+    "switchToRpc": [],
+    "switchToHttp": [],
+    "switchToWs": []
+  },
+  "ExternalContextCreator": {
+    "constructor": [
+      "guardsContextCreator",
+      "guardsConsumer",
+      "interceptorsContextCreator",
+      "interceptorsConsumer",
+      "modulesContainer",
+      "pipesContextCreator",
+      "pipesConsumer",
+      "filtersContextCreator"
+    ],
+    "fromContainer": [
+      "container"
+    ],
+    "create": [
+      "instance",
+      "callback",
+      "methodName",
+      "metadataKey",
+      "paramsFactory",
+      "param",
+      "inquirerId",
+      "param",
+      "param"
+    ],
+    "getMetadata": [
+      "instance",
+      "methodName",
+      "metadataKey",
+      "paramsFactory",
+      "contextType"
+    ],
+    "getContextModuleKey": [
+      "moduleCtor"
+    ],
+    "exchangeKeysForValues": [
+      "keys",
+      "metadata",
+      "moduleContext",
+      "paramsFactory",
+      "param",
+      "inquirerId",
+      "param"
+    ],
+    "createPipesFn": [
+      "pipes",
+      "paramsOptions"
+    ],
+    "getParamValue": [
+      "value",
+      "param",
+      "pipes"
+    ],
+    "transformToResult": [
+      "resultOrDeferred"
+    ],
+    "createGuardsFn": [
+      "guards",
+      "instance",
+      "callback",
+      "contextType"
+    ],
+    "registerRequestProvider": [
+      "request",
+      "contextId"
+    ]
+  },
+  "handler": [
+    "args",
+    "req",
+    "res",
+    "next"
+  ],
+  "target": [
+    "param"
+  ],
+  "getParamsMetadata": [
+    "moduleKey",
+    "param",
+    "inquirerId"
+  ],
+  "extractValue": [
+    "req",
+    "res",
+    "next"
+  ],
+  "pipesFn": [
+    "args",
+    "req",
+    "res",
+    "next"
+  ],
+  "resolveParamValue": [
+    "param"
+  ],
+  "canActivateFn": [
+    "args"
+  ],
+  "ExternalErrorProxy": {
+    "createProxy": [
+      "targetCallback",
+      "exceptionsHandler",
+      "type"
+    ]
+  },
+  "getClassScope": [
+    "provider"
+  ],
+  "HandlerMetadataStorage": {
+    "constructor": [],
+    "set": [
+      "controller",
+      "methodName",
+      "metadata"
+    ],
+    "get": [
+      "controller",
+      "methodName"
+    ],
+    "getMetadataKey": [
+      "controller",
+      "methodName"
+    ]
+  },
+  "HttpAdapterHost": {
+    "constructor": [],
+    "httpAdapter": [],
+    "listen$": [],
+    "init$": [],
+    "listening": []
+  },
+  "isDurable": [
+    "provider"
+  ],
+  "MISSING_REQUIRED_DEPENDENCY": [
+    "defaultPlatform",
+    "transport"
+  ],
+  "loadAdapter": [
+    "defaultPlatform",
+    "transport",
+    "loaderFn"
+  ],
+  "MODULE_INIT_MESSAGE": [
+    "text",
+    "module"
+  ],
+  "ROUTE_MAPPED_MESSAGE": [
+    "path",
+    "method"
+  ],
+  "VERSIONED_ROUTE_MAPPED_MESSAGE": [
+    "path",
+    "method",
+    "version"
+  ],
+  "CONTROLLER_MAPPING_MESSAGE": [
+    "name",
+    "path"
+  ],
+  "VERSIONED_CONTROLLER_MAPPING_MESSAGE": [
+    "name",
+    "path",
+    "version"
+  ],
+  "INVALID_EXECUTION_CONTEXT": [
+    "methodName",
+    "currentContext"
+  ],
+  "optionalRequire": [
+    "packageName",
+    "loaderFn"
+  ],
+  "rethrow": [
+    "err"
+  ],
+  "RouterMethodFactory": {
+    "get": [
+      "target",
+      "requestMethod"
+    ]
+  },
+  "hasBeforeApplicationShutdownHook": [
+    "instance"
+  ],
+  "callOperator": [
+    "instances"
+  ],
+  "callBeforeAppShutdownHook": [
+    "module",
+    "signal"
+  ],
+  "hasOnAppBootstrapHook": [
+    "instance"
+  ],
+  "callModuleBootstrapHook": [
+    "module"
+  ],
+  "hasOnAppShutdownHook": [
+    "instance"
+  ],
+  "callAppShutdownHook": [
+    "module",
+    "signal"
+  ],
+  "hasOnModuleDestroyHook": [
+    "instance"
+  ],
+  "callModuleDestroyHook": [
+    "module"
+  ],
+  "hasOnModuleInitHook": [
+    "instance"
+  ],
+  "callModuleInitHook": [
+    "module"
+  ],
+  "AbstractInstanceResolver": {
+    "find": [
+      "typeOrToken",
+      "options"
+    ],
+    "resolvePerContext": [
+      "typeOrToken",
+      "contextModule",
+      "contextId",
+      "options"
+    ]
+  },
+  "pluckInstance": [
+    "instanceLink"
+  ],
+  "ModuleCompiler": {
+    "constructor": [
+      "_moduleOpaqueKeyFactory"
+    ],
+    "moduleOpaqueKeyFactory": [],
+    "compile": [
+      "moduleClsOrDynamic"
+    ],
+    "extractMetadata": [
+      "moduleClsOrDynamic"
+    ],
+    "isDynamicModule": [
+      "moduleClsOrDynamic"
+    ]
+  },
+  "NestContainer": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "serializedGraph": [],
+    "applicationConfig": [],
+    "contextOptions": [],
+    "setHttpAdapter": [
+      "httpAdapter"
+    ],
+    "getHttpAdapterRef": [],
+    "getHttpAdapterHostRef": [],
+    "addModule": [
+      "metatype",
+      "scope"
+    ],
+    "replaceModule": [
+      "metatypeToReplace",
+      "newMetatype",
+      "scope"
+    ],
+    "setModule": [
+      "param",
+      "scope"
+    ],
+    "addDynamicMetadata": [
+      "token",
+      "dynamicModuleMetadata",
+      "scope"
+    ],
+    "addDynamicModules": [
+      "modules",
+      "scope"
+    ],
+    "isGlobalModule": [
+      "metatype",
+      "dynamicMetadata"
+    ],
+    "addGlobalModule": [
+      "module"
+    ],
+    "getModules": [],
+    "getModuleCompiler": [],
+    "getModuleByKey": [
+      "moduleKey"
+    ],
+    "getInternalCoreModuleRef": [],
+    "addImport": [
+      "relatedModule",
+      "token"
+    ],
+    "addProvider": [
+      "provider",
+      "token",
+      "enhancerSubtype"
+    ],
+    "addInjectable": [
+      "injectable",
+      "token",
+      "enhancerSubtype",
+      "host"
+    ],
+    "addExportedProviderOrModule": [
+      "toExport",
+      "token"
+    ],
+    "addController": [
+      "controller",
+      "token"
+    ],
+    "clear": [],
+    "replace": [
+      "toReplace",
+      "options"
+    ],
+    "bindGlobalScope": [],
+    "bindGlobalsToImports": [
+      "moduleRef"
+    ],
+    "bindGlobalModuleToModule": [
+      "target",
+      "globalModule"
+    ],
+    "getDynamicMetadataByToken": [
+      "token",
+      "metadataKey"
+    ],
+    "registerCoreModuleRef": [
+      "moduleRef"
+    ],
+    "getModuleTokenFactory": [],
+    "registerRequestProvider": [
+      "request",
+      "contextId"
+    ],
+    "shouldInitOnPreview": [
+      "type"
+    ]
+  },
+  "isClassProvider": [
+    "provider"
+  ],
+  "isValueProvider": [
+    "provider"
+  ],
+  "isFactoryProvider": [
+    "provider"
+  ],
+  "SilentLogger": {
+    "constructor": []
+  },
+  "noop": [],
+  "getTransientInstances": [
+    "instances"
+  ],
+  "getNonTransientInstances": [
+    "instances"
+  ],
+  "Injector": {
+    "constructor": [
+      "options"
+    ],
+    "loadPrototype": [
+      "param",
+      "collection",
+      "param"
+    ],
+    "loadInstance": [
+      "wrapper",
+      "collection",
+      "moduleRef",
+      "param",
+      "inquirer"
+    ],
+    "loadMiddleware": [
+      "wrapper",
+      "collection",
+      "moduleRef",
+      "param",
+      "inquirer"
+    ],
+    "loadController": [
+      "wrapper",
+      "moduleRef",
+      "param"
+    ],
+    "loadInjectable": [
+      "wrapper",
+      "moduleRef",
+      "param",
+      "inquirer"
+    ],
+    "loadProvider": [
+      "wrapper",
+      "moduleRef",
+      "param",
+      "inquirer"
+    ],
+    "applySettlementSignal": [
+      "instancePerContext",
+      "host"
+    ],
+    "resolveConstructorParams": [
+      "wrapper",
+      "moduleRef",
+      "inject",
+      "callback",
+      "param",
+      "inquirer",
+      "parentInquirer"
+    ],
+    "getClassDependencies": [
+      "wrapper"
+    ],
+    "getFactoryProviderDependencies": [
+      "wrapper"
+    ],
+    "reflectConstructorParams": [
+      "type"
+    ],
+    "reflectOptionalParams": [
+      "type"
+    ],
+    "reflectSelfParams": [
+      "type"
+    ],
+    "resolveSingleParam": [
+      "wrapper",
+      "param",
+      "dependencyContext",
+      "moduleRef",
+      "param",
+      "inquirer",
+      "keyOrIndex"
+    ],
+    "resolveParamToken": [
+      "wrapper",
+      "param"
+    ],
+    "resolveComponentWrapper": [
+      "moduleRef",
+      "token",
+      "dependencyContext",
+      "wrapper",
+      "param",
+      "inquirer",
+      "keyOrIndex"
+    ],
+    "resolveComponentHost": [
+      "moduleRef",
+      "instanceWrapper",
+      "param",
+      "inquirer"
+    ],
+    "lookupComponent": [
+      "providers",
+      "moduleRef",
+      "dependencyContext",
+      "wrapper",
+      "param",
+      "inquirer",
+      "keyOrIndex"
+    ],
+    "lookupComponentInParentModules": [
+      "dependencyContext",
+      "moduleRef",
+      "wrapper",
+      "param",
+      "inquirer",
+      "keyOrIndex"
+    ],
+    "lookupComponentInImports": [
+      "moduleRef",
+      "name",
+      "wrapper",
+      "param",
+      "param",
+      "inquirer",
+      "keyOrIndex",
+      "isTraversing"
+    ],
+    "resolveProperties": [
+      "wrapper",
+      "moduleRef",
+      "inject",
+      "param",
+      "inquirer",
+      "parentInquirer"
+    ],
+    "reflectProperties": [
+      "type"
+    ],
+    "applyProperties": [
+      "instance",
+      "properties"
+    ],
+    "instantiateClass": [
+      "instances",
+      "wrapper",
+      "targetMetatype",
+      "param",
+      "inquirer"
+    ],
+    "loadPerContext": [
+      "instance",
+      "moduleRef",
+      "collection",
+      "ctx",
+      "wrapper"
+    ],
+    "loadEnhancersPerContext": [
+      "wrapper",
+      "ctx",
+      "inquirer"
+    ],
+    "loadCtorMetadata": [
+      "metadata",
+      "contextId",
+      "inquirer",
+      "parentInquirer"
+    ],
+    "loadPropertiesMetadata": [
+      "metadata",
+      "contextId",
+      "inquirer"
+    ],
+    "getInquirerId": [
+      "inquirer"
+    ],
+    "getEffectiveInquirer": [
+      "dependency",
+      "inquirer",
+      "parentInquirer",
+      "contextId"
+    ],
+    "resolveScopedComponentHost": [
+      "item",
+      "contextId",
+      "inquirer",
+      "parentInquirer"
+    ],
+    "isInquirerRequest": [
+      "item",
+      "parentInquirer"
+    ],
+    "isInquirer": [
+      "param",
+      "parentInquirer"
+    ],
+    "addDependencyMetadata": [
+      "keyOrIndex",
+      "hostWrapper",
+      "instanceWrapper"
+    ],
+    "getTokenName": [
+      "token"
+    ],
+    "printResolvingDependenciesLog": [
+      "token",
+      "inquirer"
+    ],
+    "printLookingForProviderLog": [
+      "token",
+      "moduleRef"
+    ],
+    "printFoundInModuleLog": [
+      "token",
+      "moduleRef"
+    ],
+    "isDebugMode": [],
+    "getContextId": [
+      "contextId",
+      "instanceWrapper"
+    ],
+    "getNowTimestamp": []
+  },
+  "callback": [
+    "err",
+    "req",
+    "res",
+    "next"
+  ],
+  "resolveParam": [
+    "param",
+    "index"
+  ],
+  "isOptionalFactoryDependency": [
+    "value"
+  ],
+  "mapFactoryProviderInjectArray": [
+    "item",
+    "index"
+  ],
+  "identity": [
+    "item"
+  ],
+  "loadEnhancer": [
+    "item"
+  ],
+  "InstanceLinksHost": {
+    "constructor": [
+      "container"
+    ],
+    "get": [
+      "token",
+      "param"
+    ],
+    "initialize": [],
+    "addLink": [
+      "wrapper",
+      "token",
+      "moduleRef",
+      "collectionName"
+    ],
+    "getInstanceNameByToken": [
+      "token"
+    ]
+  },
+  "InstanceLoader": {
+    "constructor": [
+      "container",
+      "injector",
+      "graphInspector",
+      "param"
+    ],
+    "setLogger": [
+      "logger"
+    ],
+    "createInstancesOfDependencies": [
+      "param"
+    ],
+    "createPrototypes": [
+      "modules"
+    ],
+    "createInstances": [
+      "modules"
+    ],
+    "createPrototypesOfProviders": [
+      "moduleRef"
+    ],
+    "createInstancesOfProviders": [
+      "moduleRef"
+    ],
+    "createPrototypesOfControllers": [
+      "moduleRef"
+    ],
+    "createInstancesOfControllers": [
+      "moduleRef"
+    ],
+    "createPrototypesOfInjectables": [
+      "moduleRef"
+    ],
+    "createInstancesOfInjectables": [
+      "moduleRef"
+    ],
+    "isModuleWhitelisted": [
+      "name"
+    ]
+  },
+  "InstanceWrapper": {
+    "constructor": [
+      "param"
+    ],
+    "id": [],
+    "instance": [],
+    "isNotMetatype": [],
+    "isFactory": [],
+    "isTransient": [],
+    "getInstanceByContextId": [
+      "contextId",
+      "inquirerId"
+    ],
+    "getInstanceByInquirerId": [
+      "contextId",
+      "inquirerId"
+    ],
+    "setInstanceByContextId": [
+      "contextId",
+      "value",
+      "inquirerId"
+    ],
+    "setInstanceByInquirerId": [
+      "contextId",
+      "inquirerId",
+      "value"
+    ],
+    "removeInstanceByContextId": [
+      "contextId",
+      "inquirerId"
+    ],
+    "removeInstanceByInquirerId": [
+      "contextId",
+      "inquirerId"
+    ],
+    "addCtorMetadata": [
+      "index",
+      "wrapper"
+    ],
+    "getCtorMetadata": [],
+    "addPropertiesMetadata": [
+      "key",
+      "wrapper"
+    ],
+    "getPropertiesMetadata": [],
+    "addEnhancerMetadata": [
+      "wrapper"
+    ],
+    "getEnhancersMetadata": [],
+    "isDependencyTreeDurable": [
+      "param"
+    ],
+    "introspectDepsAttribute": [
+      "callback",
+      "param"
+    ],
+    "isDependencyTreeStatic": [
+      "param"
+    ],
+    "cloneStaticInstance": [
+      "contextId"
+    ],
+    "cloneTransientInstance": [
+      "contextId",
+      "inquirerId"
+    ],
+    "createPrototype": [
+      "contextId"
+    ],
+    "isInRequestScope": [
+      "contextId",
+      "inquirer"
+    ],
+    "isLazyTransient": [
+      "contextId",
+      "inquirer"
+    ],
+    "isExplicitlyRequested": [
+      "contextId",
+      "inquirer"
+    ],
+    "isStatic": [
+      "contextId",
+      "inquirer"
+    ],
+    "attachRootInquirer": [
+      "inquirer"
+    ],
+    "getRootInquirer": [],
+    "getStaticTransientInstances": [],
+    "mergeWith": [
+      "provider"
+    ],
+    "isNewable": [],
+    "initialize": [
+      "metadata"
+    ],
+    "printIntrospectedAsRequestScoped": [],
+    "printIntrospectedAsDurable": [],
+    "isDebugMode": [],
+    "generateUuid": []
+  },
+  "InternalCoreModuleFactory": {
+    "create": [
+      "container",
+      "scanner",
+      "moduleCompiler",
+      "httpAdapterHost",
+      "graphInspector",
+      "moduleOverrides"
+    ]
+  },
+  "lazyModuleLoaderFactory": [],
+  "InternalCoreModule": {
+    "register": [
+      "providers"
+    ]
+  },
+  "InternalProvidersStorage": {
+    "constructor": [],
+    "httpAdapterHost": [],
+    "httpAdapter": [
+      "httpAdapter"
+    ]
+  },
+  "LazyModuleLoader": {
+    "constructor": [
+      "dependenciesScanner",
+      "instanceLoader",
+      "moduleCompiler",
+      "modulesContainer",
+      "moduleOverrides"
+    ],
+    "load": [
+      "loaderFn",
+      "loadOpts"
+    ],
+    "registerLoggerConfiguration": [
+      "loadOpts"
+    ],
+    "createLazyModulesContainer": [
+      "moduleInstances"
+    ],
+    "getTargetModuleRef": [
+      "moduleInstance"
+    ]
+  },
+  "ModuleRef": {
+    "instanceLinksHost": [],
+    "constructor": [
+      "container"
+    ],
+    "introspect": [
+      "token"
+    ],
+    "registerRequestByContextId": [
+      "request",
+      "contextId"
+    ],
+    "instantiateClass": [
+      "type",
+      "moduleRef",
+      "contextId"
+    ]
+  },
+  "Module": {
+    "constructor": [
+      "_metatype",
+      "container"
+    ],
+    "id": [],
+    "token": [
+      "token"
+    ],
+    "name": [],
+    "isGlobal": [
+      "global"
+    ],
+    "initOnPreview": [
+      "initOnPreview"
+    ],
+    "providers": [],
+    "middlewares": [],
+    "imports": [],
+    "injectables": [],
+    "controllers": [],
+    "entryProviders": [],
+    "exports": [],
+    "instance": [],
+    "metatype": [],
+    "distance": [
+      "value"
+    ],
+    "addCoreProviders": [],
+    "addModuleRef": [],
+    "addModuleAsProvider": [],
+    "addApplicationConfig": [],
+    "addInjectable": [
+      "injectable",
+      "enhancerSubtype",
+      "host"
+    ],
+    "addProvider": [
+      "provider",
+      "enhancerSubtype"
+    ],
+    "isCustomProvider": [
+      "provider"
+    ],
+    "addCustomProvider": [
+      "provider",
+      "collection",
+      "enhancerSubtype"
+    ],
+    "isCustomClass": [
+      "provider"
+    ],
+    "isCustomValue": [
+      "provider"
+    ],
+    "isCustomFactory": [
+      "provider"
+    ],
+    "isCustomUseExisting": [
+      "provider"
+    ],
+    "isDynamicModule": [
+      "exported"
+    ],
+    "addCustomClass": [
+      "provider",
+      "collection",
+      "enhancerSubtype"
+    ],
+    "addCustomValue": [
+      "provider",
+      "collection",
+      "enhancerSubtype"
+    ],
+    "addCustomFactory": [
+      "provider",
+      "collection",
+      "enhancerSubtype"
+    ],
+    "addCustomUseExisting": [
+      "provider",
+      "collection",
+      "enhancerSubtype"
+    ],
+    "addExportedProviderOrModule": [
+      "toExport"
+    ],
+    "addCustomExportedProvider": [
+      "provider"
+    ],
+    "validateExportedProvider": [
+      "token"
+    ],
+    "addController": [
+      "controller"
+    ],
+    "assignControllerUniqueId": [
+      "controller"
+    ],
+    "addImport": [
+      "moduleRef"
+    ],
+    "replace": [
+      "toReplace",
+      "options"
+    ],
+    "hasProvider": [
+      "token"
+    ],
+    "hasInjectable": [
+      "token"
+    ],
+    "getProviderByKey": [
+      "name"
+    ],
+    "getProviderById": [
+      "id"
+    ],
+    "getControllerById": [
+      "id"
+    ],
+    "getInjectableById": [
+      "id"
+    ],
+    "getMiddlewareById": [
+      "id"
+    ],
+    "getNonAliasProviders": [],
+    "createModuleReferenceType": [],
+    "isEntryProvider": [
+      "metatype"
+    ],
+    "generateUuid": [],
+    "isTransientProvider": [
+      "provider"
+    ],
+    "isRequestScopeProvider": [
+      "provider"
+    ]
+  },
+  "addExportedUnit": [
+    "token"
+  ],
+  "ModulesContainer": {
+    "constructor": [],
+    "applicationId": [],
+    "getById": [
+      "id"
+    ],
+    "getRpcTargetRegistry": [],
+    "addRpcTarget": [
+      "target"
+    ]
+  },
+  "ByReferenceModuleOpaqueKeyFactory": {
+    "constructor": [
+      "options"
+    ],
+    "createForStatic": [
+      "moduleCls",
+      "param"
+    ],
+    "createForDynamic": [
+      "moduleCls",
+      "dynamicMetadata",
+      "originalRef"
+    ],
+    "getOrCreateModuleId": [
+      "moduleCls",
+      "dynamicMetadata",
+      "originalRef"
+    ],
+    "hashString": [
+      "value"
+    ],
+    "generateRandomString": []
+  },
+  "DeepHashedModuleOpaqueKeyFactory": {
+    "constructor": [],
+    "createForStatic": [
+      "moduleCls"
+    ],
+    "createForDynamic": [
+      "moduleCls",
+      "dynamicMetadata"
+    ],
+    "getStringifiedOpaqueToken": [
+      "opaqueToken"
+    ],
+    "getModuleId": [
+      "metatype"
+    ],
+    "getModuleName": [
+      "metatype"
+    ],
+    "hashString": [
+      "value"
+    ],
+    "replacer": [
+      "key",
+      "value"
+    ]
+  },
+  "SettlementSignal": {
+    "constructor": [],
+    "complete": [],
+    "error": [
+      "err"
+    ],
+    "asPromise": [],
+    "insertRef": [
+      "wrapperId"
+    ],
+    "isCycle": [
+      "wrapperId"
+    ]
+  },
+  "TopologyTree": {
+    "constructor": [
+      "moduleRef"
+    ],
+    "walk": [
+      "callback"
+    ],
+    "traverseAndMapToTree": [
+      "node",
+      "param"
+    ]
+  },
+  "walkNode": [
+    "node",
+    "param"
+  ],
+  "TreeNode": {
+    "constructor": [
+      "param"
+    ],
+    "addChild": [
+      "child"
+    ],
+    "removeChild": [
+      "child"
+    ],
+    "relink": [
+      "parent"
+    ],
+    "getDepth": [],
+    "hasCycleWith": [
+      "target"
+    ]
+  },
+  "DeterministicUuidRegistry": {
+    "get": [
+      "str",
+      "param"
+    ],
+    "clear": [],
+    "hashCode": [
+      "s"
+    ]
+  },
+  "GraphInspector": {
+    "constructor": [
+      "container"
+    ],
+    "inspectModules": [
+      "param"
+    ],
+    "registerPartial": [
+      "error"
+    ],
+    "inspectInstanceWrapper": [
+      "source",
+      "moduleRef"
+    ],
+    "insertEnhancerMetadataCache": [
+      "entry"
+    ],
+    "insertOrphanedEnhancer": [
+      "entry"
+    ],
+    "insertAttachedEnhancer": [
+      "wrapper"
+    ],
+    "insertEntrypointDefinition": [
+      "definition",
+      "parentId"
+    ],
+    "insertClassNode": [
+      "moduleRef",
+      "wrapper",
+      "type"
+    ],
+    "insertModuleNode": [
+      "moduleRef"
+    ],
+    "insertModuleToModuleEdges": [
+      "moduleRef"
+    ],
+    "insertEnhancerEdge": [
+      "entry"
+    ],
+    "insertClassToClassEdge": [
+      "source",
+      "target",
+      "moduleRef",
+      "keyOrIndex",
+      "injectionType"
+    ],
+    "insertClassNodes": [
+      "moduleRef"
+    ]
+  },
+  "InitializeOnPreviewAllowlist": {
+    "add": [
+      "type"
+    ],
+    "has": [
+      "type"
+    ]
+  },
+  "PartialGraphHost": {
+    "toJSON": [],
+    "toString": [],
+    "register": [
+      "partialGraph"
+    ]
+  },
+  "SerializedGraph": {
+    "constructor": [],
+    "status": [
+      "status"
+    ],
+    "metadata": [
+      "metadata"
+    ],
+    "insertNode": [
+      "nodeDefinition"
+    ],
+    "insertEdge": [
+      "edgeDefinition"
+    ],
+    "insertEntrypoint": [
+      "definition",
+      "parentId"
+    ],
+    "insertOrphanedEnhancer": [
+      "entry"
+    ],
+    "insertAttachedEnhancer": [
+      "nodeId"
+    ],
+    "getNodeById": [
+      "id"
+    ],
+    "toJSON": [],
+    "toString": [],
+    "generateUuidByEdgeDefinition": [
+      "edgeDefinition"
+    ]
+  },
+  "replacer": [
+    "key",
+    "value"
+  ],
+  "UuidFactory": {
+    "mode": [
+      "value"
+    ],
+    "get": [
+      "param"
+    ]
+  },
+  "InterceptorsConsumer": {
+    "intercept": [
+      "interceptors",
+      "args",
+      "instance",
+      "callback",
+      "next",
+      "type"
+    ],
+    "createContext": [
+      "args",
+      "instance",
+      "callback"
+    ],
+    "transformDeferred": [
+      "next"
+    ]
+  },
+  "nextFn": [
+    "param"
+  ],
+  "InterceptorsContextCreator": {
+    "constructor": [
+      "container",
+      "config"
+    ],
+    "create": [
+      "instance",
+      "callback",
+      "module",
+      "param",
+      "inquirerId"
+    ],
+    "createConcreteContext": [
+      "metadata",
+      "param",
+      "inquirerId"
+    ],
+    "getInterceptorInstance": [
+      "metatype",
+      "param",
+      "inquirerId"
+    ],
+    "getInstanceByMetatype": [
+      "metatype"
+    ],
+    "getGlobalMetadata": [
+      "param",
+      "inquirerId"
+    ]
+  },
+  "MetadataScanner": {
+    "constructor": [],
+    "scanFromPrototype": [
+      "instance",
+      "prototype",
+      "callback"
+    ],
+    "getAllFilteredMethodNames": [
+      "prototype"
+    ],
+    "getAllMethodNames": [
+      "prototype"
+    ]
+  },
+  "MiddlewareBuilder": {
+    "constructor": [
+      "routesMapper",
+      "httpAdapter",
+      "routeInfoPathExtractor"
+    ],
+    "apply": [
+      "param"
+    ],
+    "build": [],
+    "getHttpAdapter": []
+  },
+  "isOverlapped": [
+    "item"
+  ],
+  "MiddlewareContainer": {
+    "constructor": [
+      "container"
+    ],
+    "getMiddlewareCollection": [
+      "moduleKey"
+    ],
+    "getConfigurations": [],
+    "insertConfig": [
+      "configList",
+      "moduleKey"
+    ],
+    "getTargetConfig": [
+      "moduleName"
+    ]
+  },
+  "insertMiddleware": [
+    "metatype"
+  ],
+  "MiddlewareModule": {
+    "constructor": [],
+    "register": [
+      "middlewareContainer",
+      "container",
+      "config",
+      "injector",
+      "httpAdapter",
+      "graphInspector",
+      "options"
+    ],
+    "resolveMiddleware": [
+      "middlewareContainer",
+      "modules"
+    ],
+    "loadConfiguration": [
+      "middlewareContainer",
+      "moduleRef",
+      "moduleKey"
+    ],
+    "registerMiddleware": [
+      "middlewareContainer",
+      "applicationRef"
+    ],
+    "registerMiddlewareConfig": [
+      "middlewareContainer",
+      "config",
+      "moduleKey",
+      "applicationRef"
+    ],
+    "registerRouteMiddleware": [
+      "middlewareContainer",
+      "routeInfo",
+      "config",
+      "moduleKey",
+      "applicationRef"
+    ],
+    "bindHandler": [
+      "wrapper",
+      "applicationRef",
+      "routeInfo",
+      "moduleRef",
+      "collection"
+    ],
+    "createProxy": [
+      "instance",
+      "param"
+    ],
+    "registerHandler": [
+      "applicationRef",
+      "routeInfo",
+      "proxy"
+    ],
+    "getContextId": [
+      "request",
+      "isTreeDurable"
+    ]
+  },
+  "loadMiddlewareConfiguration": [
+    "param"
+  ],
+  "registerAllConfigs": [
+    "moduleKey",
+    "middlewareConfig"
+  ],
+  "MiddlewareResolver": {
+    "constructor": [
+      "middlewareContainer",
+      "injector"
+    ],
+    "resolveInstances": [
+      "moduleRef",
+      "moduleName"
+    ],
+    "resolveMiddlewareInstance": [
+      "wrapper",
+      "middlewareMap",
+      "moduleRef"
+    ]
+  },
+  "resolveInstance": [
+    "wrapper"
+  ],
+  "RouteInfoPathExtractor": {
+    "constructor": [
+      "applicationConfig"
+    ],
+    "extractPathsFrom": [
+      "param"
+    ],
+    "extractPathFrom": [
+      "route"
+    ],
+    "isAWildcard": [
+      "path"
+    ],
+    "extractNonWildcardPathsFrom": [
+      "param"
+    ],
+    "extractVersionPathFrom": [
+      "versionValue"
+    ]
+  },
+  "RoutesMapper": {
+    "constructor": [
+      "container",
+      "applicationConfig"
+    ],
+    "mapRouteToRouteInfo": [
+      "controllerOrRoute"
+    ],
+    "getRouteInfoFromPath": [
+      "routePath"
+    ],
+    "getRouteInfoFromObject": [
+      "routeInfoObject"
+    ],
+    "getRouteInfoFromController": [
+      "controller",
+      "routePath"
+    ],
+    "isRouteInfo": [
+      "path",
+      "objectOrClass"
+    ],
+    "normalizeGlobalPath": [
+      "path"
+    ],
+    "getRoutePath": [
+      "route"
+    ],
+    "getHostModuleOfController": [
+      "metatype"
+    ],
+    "getModulePath": [
+      "metatype"
+    ],
+    "getVersionMetadata": [
+      "metatype"
+    ]
+  },
+  "concatPaths": [
+    "a",
+    "b"
+  ],
+  "toUndefinedIfNeural": [
+    "version"
+  ],
+  "toRouteInfo": [
+    "item",
+    "prefix"
+  ],
+  "mapToExcludeRoute": [
+    "routes"
+  ],
+  "filterMiddleware": [
+    "middleware",
+    "routes",
+    "httpAdapter"
+  ],
+  "mapToClass": [
+    "middleware",
+    "excludedRoutes",
+    "httpAdapter"
+  ],
+  "isMiddlewareClass": [
+    "middleware"
+  ],
+  "assignToken": [
+    "metatype",
+    "param"
+  ],
+  "isMiddlewareRouteExcluded": [
+    "req",
+    "excludedRoutes",
+    "httpAdapter"
+  ],
+  "NestApplicationContext": {
+    "instanceLinksHost": [],
+    "constructor": [
+      "container",
+      "param",
+      "param",
+      "param"
+    ],
+    "selectContextModule": [],
+    "select": [
+      "moduleType",
+      "selectOptions"
+    ],
+    "get": [
+      "typeOrToken",
+      "param"
+    ],
+    "resolve": [
+      "typeOrToken",
+      "param",
+      "param"
+    ],
+    "registerRequestByContextId": [
+      "request",
+      "contextId"
+    ],
+    "init": [],
+    "close": [
+      "signal"
+    ],
+    "useLogger": [
+      "logger"
+    ],
+    "flushLogs": [],
+    "flushLogsOnOverride": [],
+    "enableShutdownHooks": [
+      "param",
+      "param"
+    ],
+    "dispose": [],
+    "listenToShutdownSignals": [
+      "signals",
+      "param"
+    ],
+    "unsubscribeFromProcessSignals": [],
+    "callInitHook": [],
+    "callDestroyHook": [],
+    "callBootstrapHook": [],
+    "callShutdownHook": [
+      "signal"
+    ],
+    "callBeforeShutdownHook": [
+      "signal"
+    ],
+    "assertNotInPreviewMode": [
+      "methodName"
+    ],
+    "getModulesToTriggerHooksOn": [],
+    "printInPreviewModeWarning": []
+  },
+  "cleanup": [
+    "signal"
+  ],
+  "compareFn": [
+    "a",
+    "b"
+  ],
+  "NestApplication": {
+    "constructor": [
+      "container",
+      "httpAdapter",
+      "config",
+      "graphInspector",
+      "param"
+    ],
+    "dispose": [],
+    "getHttpAdapter": [],
+    "registerHttpServer": [],
+    "getUnderlyingHttpServer": [],
+    "applyOptions": [],
+    "createServer": [],
+    "registerModules": [],
+    "registerWsModule": [],
+    "init": [],
+    "registerParserMiddleware": [],
+    "registerRouter": [],
+    "registerRouterHooks": [],
+    "connectMicroservice": [
+      "microserviceOptions",
+      "param"
+    ],
+    "getMicroservices": [],
+    "getHttpServer": [],
+    "startAllMicroservices": [],
+    "use": [
+      "param"
+    ],
+    "useBodyParser": [
+      "param"
+    ],
+    "enableCors": [
+      "options"
+    ],
+    "enableVersioning": [
+      "param"
+    ],
+    "listen": [
+      "port",
+      "param"
+    ],
+    "getUrl": [],
+    "formatAddress": [
+      "address"
+    ],
+    "setGlobalPrefix": [
+      "prefix",
+      "options"
+    ],
+    "useWebSocketAdapter": [
+      "adapter"
+    ],
+    "useGlobalFilters": [
+      "param"
+    ],
+    "useGlobalPipes": [
+      "param"
+    ],
+    "useGlobalInterceptors": [
+      "param"
+    ],
+    "useGlobalGuards": [
+      "param"
+    ],
+    "useStaticAssets": [
+      "pathOrOptions",
+      "options"
+    ],
+    "setBaseViewsDir": [
+      "path"
+    ],
+    "setViewEngine": [
+      "engineOrOptions"
+    ],
+    "host": [],
+    "getProtocol": [],
+    "registerMiddleware": [
+      "instance"
+    ],
+    "applyInstanceDecoratorIfRegistered": [
+      "param"
+    ]
+  },
+  "errorHandler": [
+    "e"
+  ],
+  "NestFactoryStatic": {
+    "constructor": [],
+    "create": [
+      "moduleCls",
+      "serverOrOptions",
+      "options"
+    ],
+    "createMicroservice": [
+      "moduleCls",
+      "options"
+    ],
+    "createApplicationContext": [
+      "moduleCls",
+      "options"
+    ],
+    "createNestInstance": [
+      "instance"
+    ],
+    "initialize": [
+      "module",
+      "container",
+      "graphInspector",
+      "param",
+      "param",
+      "param"
+    ],
+    "handleInitializationError": [
+      "err"
+    ],
+    "createProxy": [
+      "target"
+    ],
+    "createExceptionProxy": [],
+    "createExceptionZone": [
+      "receiver",
+      "prop"
+    ],
+    "registerLoggerConfiguration": [
+      "options"
+    ],
+    "createHttpAdapter": [
+      "httpServer"
+    ],
+    "isHttpServer": [
+      "serverOrOptions"
+    ],
+    "setAbortOnError": [
+      "serverOrOptions",
+      "options"
+    ],
+    "createAdapterProxy": [
+      "app",
+      "adapter"
+    ],
+    "createGraphInspector": [
+      "appOptions",
+      "container"
+    ]
+  },
+  "mapToProxy": [
+    "result"
+  ],
+  "ParamsTokenFactory": {
+    "exchangeEnumForString": [
+      "type"
+    ]
+  },
+  "PipesConsumer": {
+    "constructor": [],
+    "apply": [
+      "value",
+      "param",
+      "pipes"
+    ],
+    "applyPipes": [
+      "value",
+      "param",
+      "transforms"
+    ]
+  },
+  "PipesContextCreator": {
+    "constructor": [
+      "container",
+      "config"
+    ],
+    "create": [
+      "instance",
+      "callback",
+      "moduleKey",
+      "param",
+      "inquirerId"
+    ],
+    "createConcreteContext": [
+      "metadata",
+      "param",
+      "inquirerId"
+    ],
+    "getPipeInstance": [
+      "pipe",
+      "param",
+      "inquirerId"
+    ],
+    "getInstanceByMetatype": [
+      "metatype"
+    ],
+    "getGlobalMetadata": [
+      "param",
+      "inquirerId"
+    ],
+    "setModuleContext": [
+      "context"
+    ]
+  },
+  "assignToObject": [
+    "target",
+    "source"
+  ],
+  "DebugReplFn": {
+    "constructor": [],
+    "action": [
+      "moduleCls"
+    ],
+    "printCtrlsAndProviders": [
+      "moduleName",
+      "moduleDebugEntry"
+    ],
+    "printCollection": [
+      "title",
+      "collectionValue"
+    ]
+  },
+  "GetReplFn": {
+    "constructor": [],
+    "action": [
+      "token"
+    ]
+  },
+  "HelpReplFn": {
+    "constructor": [],
+    "action": []
+  },
+  "MethodsReplFn": {
+    "constructor": [],
+    "action": [
+      "token"
+    ]
+  },
+  "ResolveReplFn": {
+    "constructor": [],
+    "action": [
+      "token",
+      "contextId"
+    ]
+  },
+  "SelectReplFn": {
+    "constructor": [],
+    "action": [
+      "token"
+    ]
+  },
+  "ReplContext": {
+    "constructor": [
+      "app",
+      "nativeFunctionsClassRefs"
+    ],
+    "writeToStdout": [
+      "text"
+    ],
+    "initializeContext": [],
+    "introspectCollection": [
+      "moduleRef",
+      "moduleKey",
+      "collection"
+    ],
+    "stringifyToken": [
+      "token"
+    ],
+    "addNativeFunction": [
+      "NativeFunctionRef"
+    ],
+    "registerFunctionIntoGlobalScope": [
+      "nativeFunction"
+    ],
+    "initializeNativeFunctions": [
+      "nativeFunctionsClassRefs"
+    ]
+  },
+  "ReplFunction": {
+    "constructor": [
+      "ctx"
+    ],
+    "makeHelpMessage": []
+  },
+  "ReplLogger": {
+    "log": [
+      "_message",
+      "context"
+    ]
+  },
+  "listAllCommands": [
+    "replServer"
+  ],
+  "defineDefaultCommandsOnRepl": [
+    "replServer"
+  ],
+  "repl": [
+    "module",
+    "param"
+  ],
+  "LegacyRouteConverter": {
+    "tryConvert": [
+      "route",
+      "options"
+    ],
+    "printError": [
+      "route"
+    ],
+    "printWarning": [
+      "route"
+    ]
+  },
+  "UNSUPPORTED_PATH_MESSAGE": [
+    "text",
+    "route"
+  ],
+  "PathsExplorer": {
+    "constructor": [
+      "metadataScanner"
+    ],
+    "scanForPaths": [
+      "instance",
+      "prototype"
+    ],
+    "exploreMethodMetadata": [
+      "instance",
+      "prototype",
+      "methodName"
+    ]
+  },
+  "RouteParamsFactory": {
+    "exchangeKeyForValue": [
+      "key",
+      "data",
+      "param"
+    ]
+  },
+  "RoutePathFactory": {
+    "constructor": [
+      "applicationConfig"
+    ],
+    "create": [
+      "metadata",
+      "requestMethod"
+    ],
+    "getVersion": [
+      "metadata"
+    ],
+    "getVersionPrefix": [
+      "versioningOptions"
+    ],
+    "appendToAllIfDefined": [
+      "paths",
+      "fragmentToAppend"
+    ],
+    "isExcludedFromGlobalPrefix": [
+      "path",
+      "requestMethod",
+      "versionOrVersions",
+      "versioningOptions"
+    ],
+    "truncateVersionPrefixFromPath": [
+      "path",
+      "versionValue",
+      "versioningOptions"
+    ]
+  },
+  "RouterExceptionFilters": {
+    "constructor": [
+      "container",
+      "config",
+      "applicationRef"
+    ],
+    "create": [
+      "instance",
+      "callback",
+      "moduleKey",
+      "param",
+      "inquirerId"
+    ],
+    "getGlobalMetadata": [
+      "param",
+      "inquirerId"
+    ]
+  },
+  "RouterExecutionContext": {
+    "constructor": [
+      "paramsFactory",
+      "pipesContextCreator",
+      "pipesConsumer",
+      "guardsContextCreator",
+      "guardsConsumer",
+      "interceptorsContextCreator",
+      "interceptorsConsumer",
+      "applicationRef"
+    ],
+    "create": [
+      "instance",
+      "callback",
+      "methodName",
+      "moduleKey",
+      "requestMethod",
+      "param",
+      "inquirerId"
+    ],
+    "getMetadata": [
+      "instance",
+      "callback",
+      "methodName",
+      "moduleKey",
+      "requestMethod",
+      "contextType"
+    ],
+    "reflectRedirect": [
+      "callback"
+    ],
+    "reflectHttpStatusCode": [
+      "callback"
+    ],
+    "reflectRenderTemplate": [
+      "callback"
+    ],
+    "reflectResponseHeaders": [
+      "callback"
+    ],
+    "reflectSse": [
+      "callback"
+    ],
+    "exchangeKeysForValues": [
+      "keys",
+      "metadata",
+      "moduleContext",
+      "param",
+      "inquirerId",
+      "contextFactory"
+    ],
+    "getParamValue": [
+      "value",
+      "param",
+      "pipes"
+    ],
+    "isPipeable": [
+      "type"
+    ],
+    "createGuardsFn": [
+      "guards",
+      "instance",
+      "callback",
+      "contextType"
+    ],
+    "createPipesFn": [
+      "pipes",
+      "paramsOptions"
+    ],
+    "createHandleResponseFn": [
+      "callback",
+      "isResponseHandled",
+      "redirectResponse",
+      "httpStatusCode"
+    ],
+    "isResponseHandled": [
+      "instance",
+      "methodName",
+      "paramsMetadata"
+    ]
+  },
+  "RouterExplorer": {
+    "constructor": [
+      "metadataScanner",
+      "container",
+      "injector",
+      "routerProxy",
+      "exceptionsFilter",
+      "config",
+      "routePathFactory",
+      "graphInspector"
+    ],
+    "explore": [
+      "instanceWrapper",
+      "moduleKey",
+      "httpAdapterRef",
+      "host",
+      "routePathMetadata"
+    ],
+    "extractRouterPath": [
+      "metatype"
+    ],
+    "applyPathsToRouterProxy": [
+      "router",
+      "routeDefinitions",
+      "instanceWrapper",
+      "moduleKey",
+      "routePathMetadata",
+      "host"
+    ],
+    "applyCallbackToRouter": [
+      "router",
+      "routeDefinition",
+      "instanceWrapper",
+      "moduleKey",
+      "routePathMetadata",
+      "host"
+    ],
+    "applyHostFilter": [
+      "host",
+      "handler"
+    ],
+    "applyVersionFilter": [
+      "router",
+      "routePathMetadata",
+      "handler"
+    ],
+    "createCallbackProxy": [
+      "instance",
+      "callback",
+      "methodName",
+      "moduleRef",
+      "requestMethod",
+      "param",
+      "inquirerId"
+    ],
+    "createRequestScopedHandler": [
+      "instanceWrapper",
+      "requestMethod",
+      "moduleRef",
+      "moduleKey",
+      "methodName"
+    ],
+    "getContextId": [
+      "request",
+      "isTreeDurable"
+    ],
+    "copyMetadataToCallback": [
+      "originalCallback",
+      "targetCallback"
+    ]
+  },
+  "RouterModule": {
+    "modulesContainer": [],
+    "routes": [],
+    "constructor": [
+      "modulesContainer",
+      "routes"
+    ],
+    "register": [
+      "routes"
+    ],
+    "deepCloneRoutes": [],
+    "initialize": [],
+    "registerModulePathMetadata": [],
+    "updateTargetModulesCache": []
+  },
+  "RouterProxy": {
+    "createProxy": [
+      "targetCallback",
+      "exceptionsHandler"
+    ],
+    "createExceptionLayerProxy": [
+      "targetCallback",
+      "exceptionsHandler"
+    ]
+  },
+  "RouterResponseController": {
+    "constructor": [
+      "applicationRef"
+    ],
+    "apply": [
+      "result",
+      "response",
+      "httpStatusCode"
+    ],
+    "redirect": [
+      "resultOrDeferred",
+      "response",
+      "redirectResponse"
+    ],
+    "render": [
+      "resultOrDeferred",
+      "response",
+      "template"
+    ],
+    "transformToResult": [
+      "resultOrDeferred"
+    ],
+    "getStatusByMethod": [
+      "requestMethod"
+    ],
+    "setHeaders": [
+      "response",
+      "headers"
+    ],
+    "setStatus": [
+      "response",
+      "statusCode"
+    ],
+    "sse": [
+      "result",
+      "response",
+      "request",
+      "options"
+    ],
+    "assertObservable": [
+      "value"
+    ]
+  },
+  "RoutesResolver": {
+    "constructor": [
+      "container",
+      "applicationConfig",
+      "injector",
+      "graphInspector"
+    ],
+    "resolve": [
+      "applicationRef",
+      "globalPrefix"
+    ],
+    "registerRouters": [
+      "routes",
+      "moduleName",
+      "globalPrefix",
+      "modulePath",
+      "applicationRef"
+    ],
+    "registerNotFoundHandler": [],
+    "registerExceptionHandler": [],
+    "mapExternalException": [
+      "err"
+    ],
+    "isHttpFastifyError": [
+      "error"
+    ],
+    "getModulePathMetadata": [
+      "metatype"
+    ],
+    "getHostMetadata": [
+      "metatype"
+    ],
+    "getVersionMetadata": [
+      "metatype"
+    ]
+  },
+  "SseStream": {
+    "constructor": [
+      "req"
+    ],
+    "pipe": [
+      "destination",
+      "options"
+    ],
+    "_transform": [
+      "message",
+      "encoding",
+      "callback"
+    ],
+    "writeMessage": [
+      "message",
+      "cb"
+    ]
+  },
+  "toDataString": [
+    "data"
+  ],
+  "isRequestMethodAll": [
+    "method"
+  ],
+  "isRouteExcluded": [
+    "excludedRoutes",
+    "path",
+    "requestMethod"
+  ],
+  "flattenRoutePaths": [
+    "routes"
+  ],
+  "DependenciesScanner": {
+    "constructor": [
+      "container",
+      "metadataScanner",
+      "graphInspector",
+      "param"
+    ],
+    "scan": [
+      "module",
+      "options"
+    ],
+    "scanForModules": [
+      "param"
+    ],
+    "insertModule": [
+      "moduleDefinition",
+      "scope"
+    ],
+    "scanModulesForDependencies": [
+      "param"
+    ],
+    "reflectImports": [
+      "module",
+      "token",
+      "context"
+    ],
+    "reflectProviders": [
+      "module",
+      "token"
+    ],
+    "reflectControllers": [
+      "module",
+      "token"
+    ],
+    "reflectDynamicMetadata": [
+      "cls",
+      "token"
+    ],
+    "reflectExports": [
+      "module",
+      "token"
+    ],
+    "reflectInjectables": [
+      "component",
+      "token",
+      "metadataKey"
+    ],
+    "reflectParamInjectables": [
+      "component",
+      "token",
+      "metadataKey"
+    ],
+    "reflectKeyMetadata": [
+      "component",
+      "key",
+      "methodKey"
+    ],
+    "calculateModulesDistance": [],
+    "insertImport": [
+      "related",
+      "token",
+      "context"
+    ],
+    "isCustomProvider": [
+      "provider"
+    ],
+    "insertProvider": [
+      "provider",
+      "token"
+    ],
+    "insertInjectable": [
+      "injectable",
+      "token",
+      "host",
+      "subtype",
+      "methodKey"
+    ],
+    "insertExportedProviderOrModule": [
+      "toExport",
+      "token"
+    ],
+    "insertController": [
+      "controller",
+      "token"
+    ],
+    "insertOrOverrideModule": [
+      "moduleDefinition",
+      "overrides",
+      "scope"
+    ],
+    "getOverrideModuleByModule": [
+      "module",
+      "overrides"
+    ],
+    "overrideModule": [
+      "moduleToOverride",
+      "newModule",
+      "scope"
+    ],
+    "reflectMetadata": [
+      "metadataKey",
+      "metatype"
+    ],
+    "registerCoreModule": [
+      "overrides"
+    ],
+    "addScopedEnhancersMetadata": [],
+    "applyApplicationProviders": [],
+    "getApplyProvidersMap": [],
+    "getApplyRequestProvidersMap": [],
+    "isDynamicModule": [
+      "module"
+    ],
+    "isInjectable": [
+      "metatype"
+    ],
+    "isController": [
+      "metatype"
+    ],
+    "isExceptionFilter": [
+      "metatype"
+    ],
+    "isForwardReference": [
+      "module"
+    ],
+    "isRequestOrTransient": [
+      "scope"
+    ]
+  },
+  "getInstanceWrapper": [
+    "moduleKey",
+    "providerKey",
+    "collectionKey"
+  ],
+  "Reflector": {
+    "createDecorator": [
+      "param"
+    ],
+    "get": [
+      "metadataKeyOrDecorator",
+      "target"
+    ],
+    "getAll": [
+      "metadataKeyOrDecorator",
+      "targets"
+    ],
+    "getAllAndMerge": [
+      "metadataKeyOrDecorator",
+      "targets"
+    ],
+    "getAllAndOverride": [
+      "metadataKeyOrDecorator",
+      "targets"
+    ]
+  }
+}
