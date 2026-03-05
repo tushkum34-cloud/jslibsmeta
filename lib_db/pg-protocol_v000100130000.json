@@ -1,0 +1,390 @@
+{
+  "run": [],
+  "BufferReader": {
+    "buffer": [],
+    "encoding": [],
+    "constructor": [
+      "param"
+    ],
+    "setBuffer": [
+      "offset",
+      "buffer"
+    ],
+    "int16": [],
+    "byte": [],
+    "int32": [],
+    "uint32": [],
+    "string": [
+      "length"
+    ],
+    "cstring": [],
+    "bytes": [
+      "length"
+    ]
+  },
+  "Writer": {
+    "buffer": [],
+    "offset": [],
+    "headerPosition": [],
+    "constructor": [
+      "param"
+    ],
+    "ensure": [
+      "size"
+    ],
+    "addInt32": [
+      "num"
+    ],
+    "addInt16": [
+      "num"
+    ],
+    "addCString": [
+      "string"
+    ],
+    "addString": [
+      "param"
+    ],
+    "add": [
+      "otherBuffer"
+    ],
+    "join": [
+      "code"
+    ],
+    "flush": [
+      "code"
+    ]
+  },
+  "adopt": [
+    "value"
+  ],
+  "fulfilled": [
+    "value"
+  ],
+  "rejected": [
+    "value"
+  ],
+  "step": [
+    "result"
+  ],
+  "testForMessage": [
+    "buffer",
+    "expectedMessage"
+  ],
+  "parseBuffers": [
+    "buffers"
+  ],
+  "testMessageReceivedAfterSplitAt": [
+    "split"
+  ],
+  "verifyMessages": [
+    "messages"
+  ],
+  "splitAndVerifyTwoMessages": [
+    "split"
+  ],
+  "parse": [
+    "query"
+  ],
+  "DatabaseError": {
+    "severity": [],
+    "code": [],
+    "detail": [],
+    "hint": [],
+    "position": [],
+    "internalPosition": [],
+    "internalQuery": [],
+    "where": [],
+    "schema": [],
+    "table": [],
+    "column": [],
+    "dataType": [],
+    "constraint": [],
+    "file": [],
+    "line": [],
+    "routine": [],
+    "constructor": [
+      "message",
+      "param",
+      "param"
+    ]
+  },
+  "CopyDataMessage": {
+    "name": [],
+    "constructor": [
+      "param",
+      "param"
+    ]
+  },
+  "CopyResponse": {
+    "columnTypes": [],
+    "constructor": [
+      "param",
+      "param",
+      "param",
+      "columnCount"
+    ]
+  },
+  "Field": {
+    "constructor": [
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param"
+    ]
+  },
+  "RowDescriptionMessage": {
+    "name": [],
+    "fields": [],
+    "constructor": [
+      "param",
+      "param"
+    ]
+  },
+  "ParameterDescriptionMessage": {
+    "name": [],
+    "dataTypeIDs": [],
+    "constructor": [
+      "param",
+      "param"
+    ]
+  },
+  "ParameterStatusMessage": {
+    "name": [],
+    "constructor": [
+      "param",
+      "param",
+      "param"
+    ]
+  },
+  "AuthenticationMD5Password": {
+    "name": [],
+    "constructor": [
+      "param",
+      "param"
+    ]
+  },
+  "BackendKeyDataMessage": {
+    "name": [],
+    "constructor": [
+      "param",
+      "param",
+      "param"
+    ]
+  },
+  "NotificationResponseMessage": {
+    "name": [],
+    "constructor": [
+      "param",
+      "param",
+      "param",
+      "param"
+    ]
+  },
+  "ReadyForQueryMessage": {
+    "name": [],
+    "constructor": [
+      "param",
+      "param"
+    ]
+  },
+  "CommandCompleteMessage": {
+    "name": [],
+    "constructor": [
+      "param",
+      "param"
+    ]
+  },
+  "DataRowMessage": {
+    "fieldCount": [],
+    "name": [],
+    "constructor": [
+      "param",
+      "param"
+    ]
+  },
+  "NoticeMessage": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "name": [],
+    "severity": [],
+    "code": [],
+    "detail": [],
+    "hint": [],
+    "position": [],
+    "internalPosition": [],
+    "internalQuery": [],
+    "where": [],
+    "schema": [],
+    "table": [],
+    "column": [],
+    "dataType": [],
+    "constraint": [],
+    "file": [],
+    "line": [],
+    "routine": []
+  },
+  "Parser": {
+    "buffer": [],
+    "bufferLength": [],
+    "bufferOffset": [],
+    "reader": [],
+    "mode": [],
+    "constructor": [
+      "opts"
+    ],
+    "parse": [
+      "buffer",
+      "callback"
+    ],
+    "mergeBuffer": [
+      "buffer"
+    ],
+    "handlePacket": [
+      "offset",
+      "code",
+      "length",
+      "bytes"
+    ]
+  },
+  "parseReadyForQueryMessage": [
+    "reader"
+  ],
+  "parseCommandCompleteMessage": [
+    "reader"
+  ],
+  "parseCopyData": [
+    "reader",
+    "length"
+  ],
+  "parseCopyInMessage": [
+    "reader"
+  ],
+  "parseCopyOutMessage": [
+    "reader"
+  ],
+  "parseCopyMessage": [
+    "reader",
+    "messageName"
+  ],
+  "parseNotificationMessage": [
+    "reader"
+  ],
+  "parseRowDescriptionMessage": [
+    "reader"
+  ],
+  "parseField": [
+    "reader"
+  ],
+  "parseParameterDescriptionMessage": [
+    "reader"
+  ],
+  "parseDataRowMessage": [
+    "reader"
+  ],
+  "parseParameterStatusMessage": [
+    "reader"
+  ],
+  "parseBackendKeyData": [
+    "reader"
+  ],
+  "parseAuthenticationResponse": [
+    "reader",
+    "length"
+  ],
+  "parseErrorMessage": [
+    "reader",
+    "name"
+  ],
+  "startup": [
+    "opts"
+  ],
+  "requestSsl": [],
+  "password": [
+    "password"
+  ],
+  "sendSASLInitialResponseMessage": [
+    "mechanism",
+    "initialResponse"
+  ],
+  "sendSCRAMClientFinalMessage": [
+    "additionalData"
+  ],
+  "query": [
+    "text"
+  ],
+  "writeValues": [
+    "values",
+    "valueMapper"
+  ],
+  "bind": [
+    "param"
+  ],
+  "execute": [
+    "config"
+  ],
+  "cancel": [
+    "processID",
+    "secretKey"
+  ],
+  "cstringMessage": [
+    "code",
+    "string"
+  ],
+  "describe": [
+    "msg"
+  ],
+  "close": [
+    "msg"
+  ],
+  "copyData": [
+    "chunk"
+  ],
+  "copyFail": [
+    "message"
+  ],
+  "codeOnlyBuffer": [
+    "code"
+  ],
+  "BufferList": {
+    "constructor": [
+      "param"
+    ],
+    "add": [
+      "buffer",
+      "front"
+    ],
+    "addInt16": [
+      "val",
+      "front"
+    ],
+    "getByteLength": [],
+    "addInt32": [
+      "val",
+      "first"
+    ],
+    "addCString": [
+      "val",
+      "front"
+    ],
+    "addString": [
+      "val",
+      "front"
+    ],
+    "addChar": [
+      "char",
+      "first"
+    ],
+    "addByte": [
+      "byte"
+    ],
+    "join": [
+      "appendLength",
+      "char"
+    ]
+  }
+}
