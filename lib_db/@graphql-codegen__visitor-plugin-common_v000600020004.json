@@ -1,0 +1,977 @@
+{
+  "normalizeAvoidOptionals": [
+    "avoidOptionals"
+  ],
+  "getRootType": [
+    "operation",
+    "schema"
+  ],
+  "BaseDocumentsVisitor": {
+    "_schema": [],
+    "_unnamedCounter": [],
+    "_variablesTransfomer": [],
+    "_selectionSetToObject": [],
+    "_globalDeclarations": [],
+    "constructor": [
+      "rawConfig",
+      "additionalConfig",
+      "_schema",
+      "defaultScalars"
+    ],
+    "getGlobalDeclarations": [
+      "noExport"
+    ],
+    "setSelectionSetHandler": [
+      "handler"
+    ],
+    "setDeclarationBlockConfig": [
+      "config"
+    ],
+    "setVariablesTransformer": [
+      "variablesTransfomer"
+    ],
+    "schema": [],
+    "addTypename": [],
+    "handleAnonymousOperation": [],
+    "FragmentDefinition": [
+      "node"
+    ],
+    "applyVariablesWrapper": [
+      "variablesBlock",
+      "_operationType"
+    ],
+    "OperationDefinition": [
+      "node"
+    ]
+  },
+  "BaseResolversVisitor": {
+    "_schema": [],
+    "_parsedConfig": [],
+    "_declarationBlockConfig": [],
+    "_collectedResolvers": [],
+    "_parsedSchemaMeta": [],
+    "_collectedDirectiveResolvers": [],
+    "_variablesTransformer": [],
+    "_usedMappers": [],
+    "_resolversTypes": [],
+    "_resolversParentTypes": [],
+    "_hasReferencedResolversUnionTypes": [],
+    "_hasReferencedResolversInterfaceTypes": [],
+    "_resolversUnionTypes": [],
+    "_resolversInterfaceTypes": [],
+    "_rootTypeNames": [],
+    "_globalDeclarations": [],
+    "_federation": [],
+    "_hasScalars": [],
+    "_fieldContextTypeMap": [],
+    "_directiveContextTypesMap": [],
+    "_checkedTypesWithNestedAbstractTypes": [],
+    "_directiveResolverMappings": [],
+    "_shouldMapType": [],
+    "constructor": [
+      "rawConfig",
+      "additionalConfig",
+      "_schema",
+      "defaultScalars",
+      "federationMeta"
+    ],
+    "getResolverTypeWrapperSignature": [],
+    "shouldMapType": [
+      "type",
+      "duringCheck"
+    ],
+    "convertName": [
+      "node",
+      "options",
+      "applyNamespacedImport"
+    ],
+    "createResolversFields": [
+      "param"
+    ],
+    "replaceFieldsInType": [
+      "typeName",
+      "relevantFields"
+    ],
+    "applyMaybe": [
+      "str"
+    ],
+    "applyResolverTypeWrapper": [
+      "str"
+    ],
+    "clearMaybe": [
+      "str"
+    ],
+    "clearResolverTypeWrapper": [
+      "str"
+    ],
+    "wrapWithArray": [
+      "t"
+    ],
+    "createResolversUnionTypes": [],
+    "createResolversInterfaceTypes": [],
+    "getAbstractMembersType": [
+      "param"
+    ],
+    "createFieldContextTypeMap": [],
+    "createDirectivedContextType": [],
+    "buildResolversTypes": [],
+    "buildResolversParentTypes": [],
+    "buildResolversUnionTypes": [],
+    "buildResolversInterfaceTypes": [],
+    "buildFederationTypes": [],
+    "buildFederationReferenceTypes": [],
+    "schema": [],
+    "defaultMapperType": [],
+    "unusedMappers": [],
+    "globalDeclarations": [],
+    "isMapperImported": [
+      "groupedMappers",
+      "identifier",
+      "source"
+    ],
+    "mappersImports": [],
+    "setDeclarationBlockConfig": [
+      "config"
+    ],
+    "setVariablesTransformer": [
+      "variablesTransfomer"
+    ],
+    "hasScalars": [],
+    "hasFederation": [],
+    "getRootResolver": [],
+    "formatRootResolver": [
+      "schemaTypeName",
+      "resolverType",
+      "declarationKind"
+    ],
+    "getAllDirectiveResolvers": [],
+    "ListType": [
+      "node"
+    ],
+    "_getScalar": [
+      "name"
+    ],
+    "NamedType": [
+      "node"
+    ],
+    "NonNullType": [
+      "node"
+    ],
+    "markMapperAsUsed": [
+      "name"
+    ],
+    "getTypeToUse": [
+      "name"
+    ],
+    "getParentTypeToUse": [
+      "name"
+    ],
+    "getParentTypeForSignature": [
+      "_node"
+    ],
+    "transformParentGenericType": [
+      "parentType"
+    ],
+    "FieldDefinition": [
+      "node",
+      "key",
+      "parent"
+    ],
+    "getFieldContextType": [],
+    "getContextType": [],
+    "parseSchemaMeta": [],
+    "applyRequireFields": [
+      "argsType",
+      "fields"
+    ],
+    "applyOptionalFields": [
+      "argsType",
+      "_fields"
+    ],
+    "ObjectTypeDefinition": [
+      "node"
+    ],
+    "UnionTypeDefinition": [
+      "node",
+      "key",
+      "parent"
+    ],
+    "ScalarTypeDefinition": [
+      "node"
+    ],
+    "DirectiveDefinition": [
+      "node",
+      "key",
+      "parent"
+    ],
+    "buildEnumResolverContentBlock": [
+      "_node",
+      "_mappedEnumType"
+    ],
+    "buildEnumResolversExplicitMappedValues": [
+      "_node",
+      "_valuesMapping"
+    ],
+    "EnumTypeDefinition": [
+      "node"
+    ],
+    "InterfaceTypeDefinition": [
+      "node"
+    ],
+    "SchemaDefinition": [],
+    "SchemaExtension": [],
+    "getRelevantFieldsToOmit": []
+  },
+  "addMapper": [
+    "source",
+    "identifier",
+    "asDefault"
+  ],
+  "replacePlaceholder": [
+    "pattern",
+    "typename"
+  ],
+  "hasPlaceholder": [
+    "pattern"
+  ],
+  "normalizeResolversNonOptionalTypename": [
+    "input"
+  ],
+  "checkIfObjectTypeHasAbstractTypesRecursively": [
+    "baseType",
+    "result"
+  ],
+  "BaseTypesVisitor": {
+    "_schema": [],
+    "_argumentsTransformer": [],
+    "constructor": [
+      "_schema",
+      "rawConfig",
+      "additionalConfig",
+      "defaultScalars"
+    ],
+    "getExportPrefix": [],
+    "getFieldWrapperValue": [],
+    "getEntireFieldWrapperValue": [],
+    "getScalarsImports": [],
+    "getDirectiveArgumentAndInputFieldMappingsImports": [],
+    "scalarsDefinition": [],
+    "directiveArgumentAndInputFieldMappingsDefinition": [],
+    "setDeclarationBlockConfig": [
+      "config"
+    ],
+    "setArgumentsTransformer": [
+      "argumentsTransfomer"
+    ],
+    "NonNullType": [
+      "node"
+    ],
+    "getInputObjectDeclarationBlock": [
+      "node"
+    ],
+    "getInputObjectOneOfDeclarationBlock": [
+      "node"
+    ],
+    "InputObjectTypeDefinition": [
+      "node"
+    ],
+    "InputValueDefinition": [
+      "node"
+    ],
+    "FieldDefinition": [
+      "node"
+    ],
+    "UnionTypeDefinition": [
+      "node",
+      "key",
+      "parent"
+    ],
+    "mergeInterfaces": [
+      "interfaces",
+      "hasOtherFields"
+    ],
+    "appendInterfacesAndFieldsToBlock": [
+      "block",
+      "interfaces",
+      "fields"
+    ],
+    "getObjectTypeDeclarationBlock": [
+      "node",
+      "originalNode"
+    ],
+    "mergeAllFields": [
+      "allFields",
+      "_hasInterfaces"
+    ],
+    "ObjectTypeDefinition": [
+      "node",
+      "key",
+      "parent"
+    ],
+    "getInterfaceTypeDeclarationBlock": [
+      "node",
+      "_originalNode"
+    ],
+    "InterfaceTypeDefinition": [
+      "node",
+      "key",
+      "parent"
+    ],
+    "ScalarTypeDefinition": [
+      "_node"
+    ],
+    "_buildTypeImport": [
+      "identifier",
+      "source",
+      "asDefault"
+    ],
+    "handleEnumValueMapper": [
+      "typeIdentifier",
+      "importIdentifier",
+      "sourceIdentifier",
+      "sourceFile"
+    ],
+    "getEnumsImports": [],
+    "EnumTypeDefinition": [
+      "node"
+    ],
+    "makeValidEnumIdentifier": [
+      "identifier"
+    ],
+    "buildEnumValuesBlock": [
+      "typeName",
+      "values"
+    ],
+    "DirectiveDefinition": [
+      "_node"
+    ],
+    "getArgumentsObjectDeclarationBlock": [
+      "node",
+      "name",
+      "field"
+    ],
+    "getArgumentsObjectTypeDefinition": [
+      "node",
+      "name",
+      "field"
+    ],
+    "buildArgumentsBlock": [
+      "node"
+    ],
+    "_getScalar": [
+      "name",
+      "type"
+    ],
+    "_getDirectiveArgumentNadInputFieldMapping": [
+      "name"
+    ],
+    "_getDirectiveOverrideType": [
+      "directives"
+    ],
+    "_getTypeForNode": [
+      "node",
+      "isVisitingInputType"
+    ],
+    "NamedType": [
+      "node",
+      "key",
+      "parent",
+      "path",
+      "ancestors"
+    ],
+    "ListType": [
+      "node",
+      "_key",
+      "_parent",
+      "_path",
+      "_ancestors"
+    ],
+    "SchemaDefinition": [],
+    "SchemaExtension": [],
+    "getNodeComment": [
+      "node"
+    ],
+    "getDeprecationReason": [
+      "directive"
+    ],
+    "wrapWithListType": [
+      "str"
+    ]
+  },
+  "BaseVisitor": {
+    "_parsedConfig": [],
+    "_declarationBlockConfig": [],
+    "scalars": [],
+    "constructor": [
+      "rawConfig",
+      "additionalConfig"
+    ],
+    "getVisitorKindContextFromAncestors": [
+      "ancestors"
+    ],
+    "config": [],
+    "convertName": [
+      "node",
+      "options"
+    ],
+    "getOperationSuffix": [
+      "node",
+      "operationType"
+    ],
+    "getFragmentSuffix": [
+      "node"
+    ],
+    "getFragmentName": [
+      "node"
+    ],
+    "getFragmentVariableName": [
+      "node"
+    ],
+    "getPunctuation": [
+      "_declarationKind"
+    ]
+  },
+  "ClientSideBaseVisitor": {
+    "_schema": [],
+    "_collectedOperations": [],
+    "_documents": [],
+    "_additionalImports": [],
+    "_imports": [],
+    "_onExecutableDocumentNode": [],
+    "_omitDefinitions": [],
+    "_fragments": [],
+    "fragmentsGraph": [],
+    "constructor": [
+      "_schema",
+      "fragments",
+      "rawConfig",
+      "additionalConfig",
+      "documents"
+    ],
+    "_extractFragments": [
+      "document",
+      "withNested"
+    ],
+    "_transformFragments": [
+      "fragmentNames"
+    ],
+    "_includeFragments": [
+      "fragments"
+    ],
+    "_prepareDocument": [
+      "documentStr"
+    ],
+    "_gql": [
+      "node"
+    ],
+    "_getGraphQLCodegenMetadata": [
+      "node",
+      "definitions"
+    ],
+    "_findDeferredFields": [
+      "node"
+    ],
+    "_generateFragment": [
+      "fragmentDocument"
+    ],
+    "_getFragmentsGraph": [],
+    "fragments": [],
+    "_parseImport": [
+      "importStr"
+    ],
+    "_generateImport": [
+      "param",
+      "varName",
+      "isTypeImport"
+    ],
+    "clearExtension": [],
+    "getImports": [
+      "options"
+    ],
+    "buildOperation": [
+      "_node",
+      "_documentVariableName",
+      "_operationType",
+      "_operationResultType",
+      "_operationVariablesTypes",
+      "_hasRequiredVariables"
+    ],
+    "getDocumentNodeSignature": [
+      "_resultType",
+      "_variablesTypes",
+      "_node"
+    ],
+    "checkVariablesRequirements": [
+      "node"
+    ],
+    "getOperationVariableName": [
+      "node"
+    ],
+    "OperationDefinition": [
+      "node"
+    ]
+  },
+  "jsonStringify": [
+    "json"
+  ],
+  "normalizeDeclarationKind": [
+    "declarationKind"
+  ],
+  "escapeString": [
+    "str"
+  ],
+  "parseEnumValues": [
+    "param"
+  ],
+  "generateFragmentImportStatement": [
+    "statement",
+    "kind"
+  ],
+  "generateImportStatement": [
+    "statement"
+  ],
+  "resolveImportPath": [
+    "baseDir",
+    "outputPath",
+    "sourcePath"
+  ],
+  "resolveRelativeImport": [
+    "from",
+    "to"
+  ],
+  "resolveImportSource": [
+    "source"
+  ],
+  "clearExtension": [
+    "path"
+  ],
+  "fixLocalFilePath": [
+    "path"
+  ],
+  "isExternalMapperType": [
+    "m"
+  ],
+  "prepareLegacy": [
+    "mapper"
+  ],
+  "prepare": [
+    "mapper"
+  ],
+  "isLegacyMode": [
+    "mapper"
+  ],
+  "parseMapper": [
+    "mapper",
+    "param",
+    "suffix"
+  ],
+  "handleAlias": [
+    "param"
+  ],
+  "maybeSuffix": [
+    "type"
+  ],
+  "handle": [],
+  "addSuffix": [
+    "element",
+    "suffix"
+  ],
+  "isExternalMapper": [
+    "value"
+  ],
+  "transformMappers": [
+    "rawMappers",
+    "mapperTypeSuffix"
+  ],
+  "transformDirectiveArgumentAndInputFieldMappings": [
+    "rawDirectiveArgumentAndInputFieldMappings",
+    "directiveArgumentAndInputFieldMappingTypeSuffix"
+  ],
+  "buildMapperImport": [
+    "source",
+    "types",
+    "useTypeImports"
+  ],
+  "getKind": [
+    "node"
+  ],
+  "getName": [
+    "node"
+  ],
+  "convertFactory": [
+    "config"
+  ],
+  "resolveConventionName": [
+    "type"
+  ],
+  "optimizeOperations": [
+    "schema",
+    "documents",
+    "options"
+  ],
+  "BaseSelectionSetProcessor": {
+    "config": [],
+    "typeCache": [],
+    "constructor": [
+      "config"
+    ],
+    "buildFieldsIntoObject": [
+      "allObjectsMerged"
+    ],
+    "buildSelectionSetFromStrings": [
+      "pieces"
+    ],
+    "transformPrimitiveFields": [
+      "_schemaType",
+      "_fields",
+      "_unsetTypes"
+    ],
+    "transformAliasesPrimitiveFields": [
+      "_schemaType",
+      "_fields",
+      "_unsetTypes"
+    ],
+    "transformLinkFields": [
+      "_fields",
+      "_unsetTypes"
+    ],
+    "transformTypenameField": [
+      "_type",
+      "_name"
+    ]
+  },
+  "PreResolveTypesProcessor": {
+    "transformTypenameField": [
+      "type",
+      "name"
+    ],
+    "transformPrimitiveFields": [
+      "schemaType",
+      "fields",
+      "unsetTypes"
+    ],
+    "transformAliasesPrimitiveFields": [
+      "schemaType",
+      "fields",
+      "unsetTypes"
+    ],
+    "transformLinkFields": [
+      "fields",
+      "unsetTypes"
+    ]
+  },
+  "isMetadataFieldName": [
+    "name"
+  ],
+  "SelectionSetToObject": {
+    "_processor": [],
+    "_scalars": [],
+    "_schema": [],
+    "_convertName": [],
+    "_getFragmentSuffix": [],
+    "_loadedFragments": [],
+    "_config": [],
+    "_parentSchemaType": [],
+    "_selectionSet": [],
+    "_primitiveFields": [],
+    "_primitiveAliasedFields": [],
+    "_linksFields": [],
+    "_queriedForTypename": [],
+    "constructor": [
+      "_processor",
+      "_scalars",
+      "_schema",
+      "_convertName",
+      "_getFragmentSuffix",
+      "_loadedFragments",
+      "_config",
+      "_parentSchemaType",
+      "_selectionSet"
+    ],
+    "createNext": [
+      "parentSchemaType",
+      "selectionSet"
+    ],
+    "_collectInlineFragments": [
+      "parentType",
+      "nodes",
+      "types"
+    ],
+    "_createInlineFragmentForFieldNodes": [
+      "parentType",
+      "fieldNodes"
+    ],
+    "buildFragmentSpreadsUsage": [
+      "spreads"
+    ],
+    "flattenSelectionSet": [
+      "selections",
+      "parentSchemaType"
+    ],
+    "_appendToTypeMap": [],
+    "_buildGroupedSelections": [
+      "parentName"
+    ],
+    "selectionSetStringFromFields": [
+      "fields"
+    ],
+    "buildSelectionSet": [
+      "parentSchemaType",
+      "selectionNodes",
+      "options"
+    ],
+    "buildTypeNameField": [
+      "type",
+      "nonOptionalTypename",
+      "addTypename",
+      "queriedForTypename",
+      "skipTypeNameForRoot"
+    ],
+    "getUnknownType": [],
+    "getEmptyObjectType": [],
+    "getEmptyObjectTypeString": [],
+    "transformSelectionSet": [
+      "fieldName"
+    ],
+    "transformSelectionSetUncached": [],
+    "transformFragmentSelectionSetToTypes": [
+      "fragmentName",
+      "fragmentSuffix",
+      "declarationBlockConfig"
+    ],
+    "buildFragmentTypeName": [
+      "name",
+      "suffix",
+      "typeName"
+    ],
+    "buildParentFieldName": [
+      "typeName",
+      "parentName"
+    ]
+  },
+  "formatUnion": [
+    "members"
+  ],
+  "getConfigValue": [
+    "value",
+    "defaultValue"
+  ],
+  "quoteIfNeeded": [
+    "array",
+    "param"
+  ],
+  "block": [
+    "array"
+  ],
+  "wrapWithSingleQuotes": [
+    "value",
+    "param"
+  ],
+  "breakLine": [
+    "str"
+  ],
+  "indent": [
+    "str",
+    "param"
+  ],
+  "indentMultiline": [
+    "str",
+    "param"
+  ],
+  "transformComment": [
+    "comment",
+    "param",
+    "param"
+  ],
+  "DeclarationBlock": {
+    "_config": [],
+    "_decorator": [],
+    "_export": [],
+    "_name": [],
+    "_kind": [],
+    "_methodName": [],
+    "_content": [],
+    "_block": [],
+    "_nameGenerics": [],
+    "_comment": [],
+    "_ignoreBlockWrapper": [],
+    "constructor": [
+      "_config"
+    ],
+    "withDecorator": [
+      "decorator"
+    ],
+    "export": [
+      "exp"
+    ],
+    "asKind": [
+      "kind"
+    ],
+    "withComment": [
+      "comment",
+      "disabled"
+    ],
+    "withMethodCall": [
+      "methodName",
+      "ignoreBlockWrapper"
+    ],
+    "withBlock": [
+      "block"
+    ],
+    "withContent": [
+      "content"
+    ],
+    "withName": [
+      "name",
+      "generics"
+    ],
+    "string": []
+  },
+  "getBaseTypeNode": [
+    "typeNode"
+  ],
+  "convertNameParts": [
+    "str",
+    "func",
+    "param"
+  ],
+  "buildScalarsFromConfig": [
+    "schema",
+    "config",
+    "param",
+    "param"
+  ],
+  "buildScalars": [
+    "schema",
+    "scalarsMapping",
+    "param",
+    "param"
+  ],
+  "normalizeScalarType": [
+    "type"
+  ],
+  "isStringValueNode": [
+    "node"
+  ],
+  "getRootTypeNames": [
+    "schema"
+  ],
+  "stripMapperTypeInterpolation": [
+    "identifier"
+  ],
+  "mergeSelectionSets": [
+    "selectionSet1",
+    "selectionSet2"
+  ],
+  "getFieldNodeNameValue": [
+    "node"
+  ],
+  "separateSelectionSet": [
+    "selections"
+  ],
+  "getPossibleTypes": [
+    "schema",
+    "type"
+  ],
+  "hasConditionalDirectives": [
+    "field"
+  ],
+  "hasIncrementalDeliveryDirectives": [
+    "directives"
+  ],
+  "wrapTypeWithModifiers": [
+    "baseType",
+    "type",
+    "options"
+  ],
+  "removeDescription": [
+    "nodes"
+  ],
+  "wrapTypeNodeWithModifiers": [
+    "baseType",
+    "typeNode"
+  ],
+  "clearOptional": [
+    "str"
+  ],
+  "stripTrailingSpaces": [
+    "str"
+  ],
+  "isOneOfInputObjectType": [
+    "namedType"
+  ],
+  "groupBy": [
+    "array",
+    "key"
+  ],
+  "flatten": [
+    "array"
+  ],
+  "unique": [
+    "array",
+    "param"
+  ],
+  "getFullPathFieldName": [
+    "selection",
+    "parentName"
+  ],
+  "getFieldNames": [
+    "param"
+  ],
+  "OperationVariablesToObject": {
+    "_scalars": [],
+    "_convertName": [],
+    "_namespacedImportName": [],
+    "_enumNames": [],
+    "_enumPrefix": [],
+    "_enumSuffix": [],
+    "_enumValues": [],
+    "_applyCoercion": [],
+    "_directiveArgumentAndInputFieldMappings": [],
+    "constructor": [
+      "_scalars",
+      "_convertName",
+      "_namespacedImportName",
+      "_enumNames",
+      "_enumPrefix",
+      "_enumSuffix",
+      "_enumValues",
+      "_applyCoercion",
+      "_directiveArgumentAndInputFieldMappings"
+    ],
+    "getName": [
+      "node"
+    ],
+    "transform": [
+      "variablesNode"
+    ],
+    "getScalar": [
+      "name"
+    ],
+    "getDirectiveMapping": [
+      "name"
+    ],
+    "getDirectiveOverrideType": [
+      "directives"
+    ],
+    "transformVariable": [
+      "variable"
+    ],
+    "wrapAstTypeWithModifiers": [
+      "_baseType",
+      "_typeNode",
+      "_applyCoercion"
+    ],
+    "formatFieldString": [
+      "fieldName",
+      "_isNonNullType",
+      "_hasDefaultValue"
+    ],
+    "formatTypeString": [
+      "fieldType",
+      "isNonNullType",
+      "hasDefaultValue"
+    ],
+    "getPunctuation": []
+  }
+}
