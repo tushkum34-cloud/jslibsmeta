@@ -1,0 +1,675 @@
+{
+  "BrowserClient": {
+    "constructor": [
+      "options"
+    ],
+    "eventFromException": [
+      "exception",
+      "hint"
+    ],
+    "eventFromMessage": [
+      "message",
+      "level",
+      "hint"
+    ],
+    "_prepareEvent": [
+      "event",
+      "hint",
+      "currentScope",
+      "isolationScope"
+    ]
+  },
+  "applyDefaultOptions": [
+    "optionsArg"
+  ],
+  "diagnoseSdkConnectivity": [],
+  "exceptionFromError": [
+    "stackParser",
+    "ex"
+  ],
+  "eventFromPlainObject": [
+    "stackParser",
+    "exception",
+    "syntheticException",
+    "isUnhandledRejection"
+  ],
+  "eventFromError": [
+    "stackParser",
+    "ex"
+  ],
+  "parseStackFrames": [
+    "stackParser",
+    "ex"
+  ],
+  "getSkipFirstStackStringLines": [
+    "ex"
+  ],
+  "getPopFirstTopFrames": [
+    "ex"
+  ],
+  "isWebAssemblyException": [
+    "exception"
+  ],
+  "extractType": [
+    "ex"
+  ],
+  "extractMessage": [
+    "ex"
+  ],
+  "eventFromException": [
+    "stackParser",
+    "exception",
+    "hint",
+    "attachStacktrace"
+  ],
+  "eventFromMessage": [
+    "stackParser",
+    "message",
+    "param",
+    "hint",
+    "attachStacktrace"
+  ],
+  "eventFromUnknownInput": [
+    "stackParser",
+    "exception",
+    "syntheticException",
+    "attachStacktrace",
+    "isUnhandledRejection"
+  ],
+  "eventFromString": [
+    "stackParser",
+    "message",
+    "syntheticException",
+    "attachStacktrace"
+  ],
+  "getNonErrorObjectExceptionValue": [
+    "exception",
+    "param"
+  ],
+  "getObjectClassName": [
+    "obj"
+  ],
+  "getErrorPropertyFromObject": [
+    "obj"
+  ],
+  "shouldIgnoreOnError": [],
+  "ignoreNextOnError": [],
+  "wrap": [
+    "fn",
+    "param"
+  ],
+  "isFunction": [
+    "fn"
+  ],
+  "sentryWrapped": [
+    "param"
+  ],
+  "getHttpRequestData": [],
+  "_breadcrumbsIntegration": [
+    "param"
+  ],
+  "_getSentryBreadcrumbHandler": [
+    "client"
+  ],
+  "_getDomBreadcrumbHandler": [
+    "client",
+    "dom"
+  ],
+  "_getConsoleBreadcrumbHandler": [
+    "client"
+  ],
+  "_getXhrBreadcrumbHandler": [
+    "client"
+  ],
+  "_getFetchBreadcrumbHandler": [
+    "client"
+  ],
+  "_getHistoryBreadcrumbHandler": [
+    "client"
+  ],
+  "_isEvent": [
+    "event"
+  ],
+  "_browserApiErrorsIntegration": [
+    "param"
+  ],
+  "_wrapTimeFunction": [
+    "original"
+  ],
+  "_wrapRAF": [
+    "original"
+  ],
+  "_wrapXHR": [
+    "client",
+    "options"
+  ],
+  "_wrapEventTarget": [
+    "target",
+    "integrationOptions"
+  ],
+  "isEventListenerObject": [
+    "obj"
+  ],
+  "unregisterOriginalCallback": [
+    "target",
+    "eventName",
+    "fn"
+  ],
+  "_contextLinesIntegration": [
+    "param"
+  ],
+  "addSourceContext": [
+    "event",
+    "contextLines"
+  ],
+  "applySourceContextToFrame": [
+    "frame",
+    "htmlLines",
+    "htmlFilename",
+    "linesOfContext"
+  ],
+  "_cultureContextIntegration": [],
+  "getCultureContext": [],
+  "growthbookIntegration": [
+    "param"
+  ],
+  "buildLaunchDarklyFlagUsedHandler": [],
+  "OpenFeatureIntegrationHook": {
+    "after": [
+      "_hookContext",
+      "evaluationDetails"
+    ],
+    "error": [
+      "hookContext",
+      "_error",
+      "_hookHints"
+    ]
+  },
+  "_wrappedIsEnabled": [
+    "original"
+  ],
+  "_globalHandlersIntegration": [
+    "param"
+  ],
+  "_installGlobalOnErrorHandler": [
+    "client"
+  ],
+  "_installGlobalOnUnhandledRejectionHandler": [
+    "client"
+  ],
+  "_getUnhandledRejectionError": [
+    "error"
+  ],
+  "_eventFromRejectionWithPrimitive": [
+    "reason"
+  ],
+  "_enhanceEventWithInitialFrame": [
+    "event",
+    "url",
+    "line",
+    "column"
+  ],
+  "globalHandlerLog": [
+    "type"
+  ],
+  "getOptions": [],
+  "getFilenameFromUrl": [
+    "url"
+  ],
+  "_graphqlClientIntegration": [
+    "options"
+  ],
+  "_updateSpanWithGraphQLData": [
+    "client",
+    "options"
+  ],
+  "_updateBreadcrumbWithGraphQLData": [
+    "client",
+    "options"
+  ],
+  "_getGraphQLOperation": [
+    "requestBody"
+  ],
+  "getRequestPayloadXhrOrFetch": [
+    "hint"
+  ],
+  "parseGraphQLQuery": [
+    "query"
+  ],
+  "isObject": [
+    "value"
+  ],
+  "isStandardRequest": [
+    "payload"
+  ],
+  "isPersistedRequest": [
+    "payload"
+  ],
+  "getGraphQLRequestPayload": [
+    "payload"
+  ],
+  "_httpClientIntegration": [
+    "param"
+  ],
+  "_fetchResponseHandler": [
+    "options",
+    "requestInfo",
+    "response",
+    "requestInit",
+    "error"
+  ],
+  "_parseCookieHeaders": [
+    "cookieHeader",
+    "obj"
+  ],
+  "_xhrResponseHandler": [
+    "options",
+    "xhr",
+    "method",
+    "headers",
+    "error"
+  ],
+  "_getResponseSizeFromHeaders": [
+    "headers"
+  ],
+  "_parseCookieString": [
+    "cookieString"
+  ],
+  "_extractFetchHeaders": [
+    "headers"
+  ],
+  "_getXHRResponseHeaders": [
+    "xhr"
+  ],
+  "_isInGivenRequestTargets": [
+    "failedRequestTargets",
+    "target"
+  ],
+  "_isInGivenStatusRanges": [
+    "failedRequestStatusCodes",
+    "status"
+  ],
+  "_wrapFetch": [
+    "client",
+    "options"
+  ],
+  "_shouldCaptureResponse": [
+    "options",
+    "status",
+    "url"
+  ],
+  "_createEvent": [
+    "data"
+  ],
+  "_getRequest": [
+    "requestInfo",
+    "requestInit"
+  ],
+  "_shouldSendDefaultPii": [],
+  "_linkedErrorsIntegration": [
+    "param"
+  ],
+  "_reportingObserverIntegration": [
+    "param"
+  ],
+  "handler": [
+    "reports"
+  ],
+  "_spotlightIntegration": [
+    "param"
+  ],
+  "setupSidecarForwarding": [
+    "client",
+    "sidecarUrl"
+  ],
+  "isSpotlightInteraction": [
+    "event"
+  ],
+  "listenForSentryMessages": [
+    "worker"
+  ],
+  "handleForwardedWorkerRejection": [
+    "workerError"
+  ],
+  "registerWebWorker": [
+    "param"
+  ],
+  "isSentryMessage": [
+    "eventData"
+  ],
+  "UIProfiler": {
+    "_client": [],
+    "_profiler": [],
+    "_chunkTimer": [],
+    "_profilerId": [],
+    "_isRunning": [],
+    "_sessionSampled": [],
+    "_lifecycleMode": [],
+    "_activeRootSpanIds": [],
+    "_rootSpanTimeouts": [],
+    "constructor": [],
+    "initialize": [
+      "client"
+    ],
+    "start": [],
+    "stop": [],
+    "notifyRootSpanActive": [
+      "rootSpan"
+    ],
+    "_beginProfiling": [],
+    "_endProfiling": [],
+    "_setupTraceLifecycleListeners": [],
+    "_resetProfilerInfo": [],
+    "_clearAllRootSpanTimeouts": [],
+    "_registerTraceRootSpan": [],
+    "_startProfilerInstance": [],
+    "_startPeriodicChunking": [],
+    "_onRootSpanTimeout": [],
+    "_collectCurrentChunk": [],
+    "_sendProfileChunk": []
+  },
+  "startProfiler": [],
+  "stopProfiler": [],
+  "_browserProfilingIntegration": [],
+  "startProfileForSpan": [
+    "span"
+  ],
+  "onProfileHandler": [],
+  "profilingWrappedSpanEnd": [],
+  "isUserAgentData": [
+    "data"
+  ],
+  "isProcessedJSSelfProfile": [
+    "profile"
+  ],
+  "enrichWithThreadInformation": [
+    "profile"
+  ],
+  "getTraceId": [
+    "event"
+  ],
+  "createProfilePayload": [
+    "profile_id",
+    "start_timestamp",
+    "processed_profile",
+    "event"
+  ],
+  "createProfileChunkPayload": [
+    "jsSelfProfile",
+    "client",
+    "profilerId"
+  ],
+  "validateProfileChunk": [
+    "chunk"
+  ],
+  "isHex32": [
+    "val"
+  ],
+  "convertToContinuousProfile": [
+    "input"
+  ],
+  "isAutomatedPageLoadSpan": [
+    "span"
+  ],
+  "convertJSSelfProfileToSampledFormat": [
+    "input"
+  ],
+  "addProfilesToEnvelope": [
+    "envelope",
+    "profiles"
+  ],
+  "findProfiledTransactionsFromEnvelope": [
+    "envelope"
+  ],
+  "applyDebugMetadata": [
+    "resource_paths"
+  ],
+  "isValidSampleRate": [
+    "rate"
+  ],
+  "isValidProfile": [
+    "profile"
+  ],
+  "isJSProfilerSupported": [
+    "maybeProfiler"
+  ],
+  "startJSSelfProfile": [],
+  "shouldProfileSpanLegacy": [
+    "span"
+  ],
+  "shouldProfileSession": [
+    "options"
+  ],
+  "hasLegacyProfiling": [
+    "options"
+  ],
+  "createProfilingEvent": [
+    "profile_id",
+    "start_timestamp",
+    "profile",
+    "event"
+  ],
+  "getActiveProfilesCount": [],
+  "takeProfileFromGlobalCache": [
+    "profile_id"
+  ],
+  "addProfileToGlobalCache": [
+    "profile_id",
+    "profile"
+  ],
+  "attachProfiledThreadToEvent": [
+    "event"
+  ],
+  "showReportDialog": [
+    "param"
+  ],
+  "reportDialogClosedMessageHandler": [
+    "event"
+  ],
+  "getDefaultIntegrations": [
+    "_options"
+  ],
+  "init": [
+    "param"
+  ],
+  "forceLoad": [],
+  "onLoad": [
+    "callback"
+  ],
+  "createFrame": [
+    "filename",
+    "func",
+    "lineno",
+    "colno"
+  ],
+  "chromeStackParserFn": [
+    "line"
+  ],
+  "gecko": [
+    "line"
+  ],
+  "winjs": [
+    "line"
+  ],
+  "opera10": [
+    "line"
+  ],
+  "opera11": [
+    "line"
+  ],
+  "extractSafariExtensionDetails": [
+    "func",
+    "filename"
+  ],
+  "registerBackgroundTabDetection": [],
+  "browserTracingIntegration": [
+    "param"
+  ],
+  "_createRouteSpan": [
+    "client",
+    "startSpanOptions",
+    "param"
+  ],
+  "emitFinish": [],
+  "interactionHandler": [],
+  "maybeEndActiveSpan": [],
+  "startBrowserTracingPageLoadSpan": [
+    "client",
+    "spanOptions",
+    "traceOptions"
+  ],
+  "startBrowserTracingNavigationSpan": [
+    "client",
+    "spanOptions",
+    "options"
+  ],
+  "getMetaContent": [
+    "metaName"
+  ],
+  "getServerTiming": [
+    "name"
+  ],
+  "registerInteractionListener": [
+    "client",
+    "idleTimeout",
+    "finalTimeout",
+    "childSpanTimeout",
+    "latestRoute"
+  ],
+  "registerInteractionTransaction": [],
+  "getActiveIdleSpan": [
+    "client"
+  ],
+  "setActiveIdleSpan": [
+    "client",
+    "span"
+  ],
+  "isRedirect": [
+    "activeSpan",
+    "lastInteractionTimestamp"
+  ],
+  "linkTraces": [
+    "client",
+    "param"
+  ],
+  "addPreviousTraceSpanLink": [
+    "previousTraceInfo",
+    "span",
+    "oldPropagationContext"
+  ],
+  "getSampleRate": [],
+  "storePreviousTraceInSessionStorage": [
+    "previousTraceInfo"
+  ],
+  "getPreviousTraceFromSessionStorage": [],
+  "spanContextSampled": [
+    "ctx"
+  ],
+  "reportPageLoaded": [
+    "param"
+  ],
+  "instrumentOutgoingRequests": [
+    "client",
+    "_options"
+  ],
+  "shouldAttachHeadersWithTargets": [
+    "url"
+  ],
+  "addHTTPTimings": [
+    "span"
+  ],
+  "shouldAttachHeaders": [
+    "targetUrl",
+    "tracePropagationTargets"
+  ],
+  "xhrCallback": [
+    "handlerData",
+    "shouldCreateSpan",
+    "shouldAttachHeaders",
+    "spans",
+    "propagateTraceparent",
+    "onRequestSpanEnd"
+  ],
+  "addTracingHeadersToXhrRequest": [
+    "xhr",
+    "span",
+    "propagateTraceparent"
+  ],
+  "setHeaderOnXhr": [
+    "xhr",
+    "sentryTraceHeader",
+    "sentryBaggageHeader",
+    "traceparentHeader"
+  ],
+  "setActiveSpanInBrowser": [
+    "span"
+  ],
+  "baggageHeaderHasSentryValues": [
+    "baggageHeader"
+  ],
+  "getFullURL": [
+    "url"
+  ],
+  "isPerformanceResourceTiming": [
+    "entry"
+  ],
+  "createHeadersSafely": [
+    "headers"
+  ],
+  "makeFetchTransport": [
+    "options",
+    "param"
+  ],
+  "makeRequest": [
+    "request"
+  ],
+  "promisifyRequest": [
+    "request"
+  ],
+  "createStore": [
+    "dbName",
+    "storeName"
+  ],
+  "keys": [
+    "store"
+  ],
+  "push": [
+    "store",
+    "value",
+    "maxQueueSize"
+  ],
+  "unshift": [
+    "store",
+    "value",
+    "maxQueueSize"
+  ],
+  "shift": [
+    "store"
+  ],
+  "createIndexedDbStore": [
+    "options"
+  ],
+  "getStore": [],
+  "makeIndexedDbOfflineTransport": [
+    "createTransport"
+  ],
+  "makeBrowserOfflineTransport": [
+    "param"
+  ],
+  "createUserFeedbackEnvelope": [
+    "feedback",
+    "param"
+  ],
+  "createUserFeedbackEnvelopeItem": [
+    "feedback"
+  ],
+  "checkAndWarnIfIsEmbeddedBrowserExtension": [],
+  "_isEmbeddedBrowserExtension": [],
+  "lazyLoadIntegration": [
+    "name",
+    "scriptNonce"
+  ],
+  "getScriptURL": [
+    "bundle"
+  ]
+}
