@@ -1,0 +1,1331 @@
+{
+  "CouldNotDetermineFileTypeError": {},
+  "UnsupportedFileTypeError": {},
+  "UnexpectedFileContentError": {
+    "constructor": [
+      "fileType",
+      "message"
+    ],
+    "toString": []
+  },
+  "FieldDecodingError": {},
+  "InternalParserError": {},
+  "makeParseError": [
+    "name"
+  ],
+  "makeUnexpectedFileContentError": [
+    "fileType"
+  ],
+  "ParserFactory": {
+    "constructor": [],
+    "registerParser": [
+      "parser"
+    ],
+    "parse": [
+      "tokenizer",
+      "parserLoader",
+      "opts"
+    ],
+    "findLoaderForExtension": [
+      "filePath"
+    ],
+    "findLoaderForContentType": [
+      "httpContentType"
+    ],
+    "getSupportedMimeTypes": []
+  },
+  "parseHttpContentType": [
+    "contentType"
+  ],
+  "getExtension": [
+    "fname"
+  ],
+  "AIFFParser": {
+    "constructor": [],
+    "parse": [],
+    "readData": [
+      "header"
+    ],
+    "readTextChunk": [
+      "header"
+    ]
+  },
+  "AiffTagMapper": {
+    "constructor": []
+  },
+  "AiffContentError": {},
+  "Common": {
+    "constructor": [
+      "header",
+      "isAifc"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "ApeContentError": {},
+  "APEv2Parser": {
+    "constructor": [],
+    "calculateDuration": [
+      "ah"
+    ],
+    "findApeFooterOffset": [
+      "tokenizer",
+      "offset"
+    ],
+    "parseTagFooter": [
+      "metadata",
+      "buffer",
+      "options"
+    ],
+    "tryParseApeHeader": [],
+    "parse": [],
+    "parseTags": [
+      "footer"
+    ],
+    "parseDescriptorExpansion": [
+      "lenExp"
+    ],
+    "parseHeader": []
+  },
+  "tryParseApeHeader": [
+    "metadata",
+    "tokenizer",
+    "options"
+  ],
+  "APEv2TagMapper": {
+    "constructor": []
+  },
+  "parseTagFlags": [
+    "flags"
+  ],
+  "isBitSet": [
+    "flags",
+    "bitOffset"
+  ],
+  "AsfGuid": {
+    "fromBin": [
+      "bin",
+      "param"
+    ],
+    "decode": [
+      "objectId",
+      "param"
+    ],
+    "decodeMediaType": [
+      "mediaType"
+    ],
+    "encode": [
+      "guid"
+    ],
+    "constructor": [
+      "str"
+    ],
+    "equals": [
+      "guid"
+    ],
+    "toBin": []
+  },
+  "AsfContentParseError": {},
+  "State": {
+    "constructor": [
+      "header"
+    ],
+    "postProcessTag": [
+      "tags",
+      "name",
+      "valueType",
+      "data"
+    ]
+  },
+  "IgnoreObjectState": {
+    "get": [
+      "_buf",
+      "_off"
+    ]
+  },
+  "FilePropertiesObject": {
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "StreamPropertiesObject": {
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "HeaderExtensionObject": {
+    "constructor": [],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "ContentDescriptionObjectState": {
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "ExtendedContentDescriptionObjectState": {
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "ExtendedStreamPropertiesObjectState": {
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "MetadataObjectState": {
+    "get": [
+      "uint8Array",
+      "off"
+    ]
+  },
+  "MetadataLibraryObjectState": {},
+  "WmPictureToken": {
+    "fromBuffer": [
+      "buffer"
+    ],
+    "constructor": [
+      "len"
+    ],
+    "get": [
+      "buffer",
+      "offset"
+    ]
+  },
+  "readString": [
+    "tokenizer"
+  ],
+  "readCodecEntries": [
+    "tokenizer"
+  ],
+  "readInformation": [
+    "tokenizer"
+  ],
+  "readCodecEntry": [
+    "tokenizer"
+  ],
+  "AsfParser": {
+    "parse": [],
+    "parseObjectHeader": [
+      "numberOfObjectHeaders"
+    ],
+    "addTags": [
+      "tags"
+    ],
+    "parseExtensionObject": [
+      "extensionSize"
+    ]
+  },
+  "AsfTagMapper": {
+    "toRating": [
+      "rating"
+    ],
+    "constructor": [],
+    "postMap": [
+      "tag"
+    ]
+  },
+  "getParserForAttr": [
+    "i"
+  ],
+  "parseUnicodeAttr": [
+    "uint8Array"
+  ],
+  "parseByteArrayAttr": [
+    "buf"
+  ],
+  "parseBoolAttr": [
+    "buf",
+    "param"
+  ],
+  "parseDWordAttr": [
+    "buf",
+    "param"
+  ],
+  "parseQWordAttr": [
+    "buf",
+    "param"
+  ],
+  "parseWordAttr": [
+    "buf",
+    "param"
+  ],
+  "BasicParser": {
+    "constructor": [
+      "metadata",
+      "tokenizer",
+      "options"
+    ]
+  },
+  "CaseInsensitiveTagMap": {
+    "constructor": [
+      "tagTypes",
+      "tagMap"
+    ],
+    "getCommonName": [
+      "tag"
+    ]
+  },
+  "CombinedTagMapper": {
+    "constructor": [],
+    "mapTag": [
+      "tagType",
+      "tag",
+      "warnings"
+    ],
+    "registerTagMapper": [
+      "genericTagMapper"
+    ]
+  },
+  "CommonTagMapper": {
+    "toIntOrNull": [
+      "str"
+    ],
+    "normalizeTrack": [
+      "origVal"
+    ],
+    "constructor": [
+      "tagTypes",
+      "tagMap"
+    ],
+    "mapGenericTag": [
+      "tag",
+      "warnings"
+    ],
+    "getCommonName": [
+      "tag"
+    ],
+    "postMap": [
+      "_tag",
+      "_warnings"
+    ]
+  },
+  "isSingleton": [
+    "alias"
+  ],
+  "isUnique": [
+    "alias"
+  ],
+  "MetadataCollector": {
+    "constructor": [
+      "opts"
+    ],
+    "hasAny": [],
+    "addStreamInfo": [
+      "streamInfo"
+    ],
+    "setFormat": [
+      "key",
+      "value"
+    ],
+    "setAudioOnly": [],
+    "addTag": [
+      "tagType",
+      "tagId",
+      "value"
+    ],
+    "addWarning": [
+      "warning"
+    ],
+    "postMap": [
+      "tagType",
+      "tag"
+    ],
+    "toCommonMetadata": [],
+    "handleSingularArtistTag": [
+      "tagType",
+      "tag",
+      "singularId",
+      "pluralId"
+    ],
+    "handlePluralArtistTag": [
+      "tagType",
+      "tag",
+      "singularId",
+      "pluralId"
+    ],
+    "postFixPicture": [
+      "picture"
+    ],
+    "toCommon": [
+      "tagType",
+      "tagId",
+      "value"
+    ],
+    "setGenericTag": [
+      "tagType",
+      "tag"
+    ]
+  },
+  "joinArtists": [
+    "artists"
+  ],
+  "getBit": [
+    "buf",
+    "off",
+    "bit"
+  ],
+  "findZero": [
+    "uint8Array",
+    "encoding"
+  ],
+  "trimRightNull": [
+    "x"
+  ],
+  "swapBytes": [
+    "uint8Array"
+  ],
+  "decodeString": [
+    "uint8Array",
+    "encoding"
+  ],
+  "stripNulls": [
+    "str"
+  ],
+  "getBitAllignedNumber": [
+    "flags",
+    "bitOffset",
+    "len"
+  ],
+  "a2hex": [
+    "str"
+  ],
+  "ratioToDb": [
+    "ratio"
+  ],
+  "dbToRatio": [
+    "dB"
+  ],
+  "toRatio": [
+    "value"
+  ],
+  "decodeUintBE": [
+    "uint8Array"
+  ],
+  "parseBlob": [
+    "blob",
+    "param"
+  ],
+  "parseWebStream": [
+    "webStream",
+    "fileInfo",
+    "param"
+  ],
+  "parseBuffer": [
+    "uint8Array",
+    "fileInfo",
+    "param"
+  ],
+  "parseFromTokenizer": [
+    "tokenizer",
+    "options"
+  ],
+  "orderTags": [
+    "nativeTags"
+  ],
+  "ratingToStars": [
+    "rating"
+  ],
+  "selectCover": [
+    "pictures"
+  ],
+  "scanAppendingHeaders": [
+    "tokenizer",
+    "param"
+  ],
+  "parseFile": [
+    "filePath",
+    "param"
+  ],
+  "parseStream": [
+    "stream",
+    "fileInfo",
+    "param"
+  ],
+  "getSupportedMimeTypes": [],
+  "DsdiffContentParseError": {},
+  "DsdiffParser": {
+    "parse": [],
+    "readFmt8Chunks": [
+      "remainingSize"
+    ],
+    "readData": [
+      "header"
+    ],
+    "handleSoundPropertyChunks": [
+      "remainingSize"
+    ],
+    "handleChannelChunks": [
+      "remainingSize"
+    ]
+  },
+  "DsdContentParseError": {},
+  "DsfParser": {
+    "postId3v2Parse": [],
+    "parseChunks": [
+      "bytesRemaining"
+    ]
+  },
+  "EbmlContentError": {},
+  "EbmlIterator": {
+    "constructor": [
+      "tokenizer"
+    ],
+    "iterate": [
+      "dtdElement",
+      "posDone",
+      "listener"
+    ],
+    "parseContainer": [
+      "dtdElement",
+      "posDone",
+      "listener"
+    ],
+    "readVintData": [
+      "maxLength"
+    ],
+    "readElement": [],
+    "readFloat": [
+      "e"
+    ],
+    "readFlag": [
+      "e"
+    ],
+    "readUint": [
+      "e"
+    ],
+    "readString": [
+      "e"
+    ],
+    "readBuffer": [
+      "e"
+    ]
+  },
+  "readUIntBE": [
+    "buf",
+    "len"
+  ],
+  "readUIntBeAsBigInt": [
+    "buf",
+    "len"
+  ],
+  "linkParents": [
+    "element"
+  ],
+  "getElementPath": [
+    "element"
+  ],
+  "FlacParser": {
+    "constructor": [],
+    "postId3v2Parse": [],
+    "parseDataBlock": [
+      "blockHeader"
+    ],
+    "readBlockStreamInfo": [
+      "dataLen"
+    ],
+    "processsStreamInfo": [
+      "streamInfo"
+    ],
+    "readComment": [
+      "dataLen"
+    ],
+    "parseComment": [
+      "data"
+    ],
+    "parsePicture": [
+      "dataLen"
+    ],
+    "addPictureTag": [
+      "picture"
+    ],
+    "addTag": [
+      "id",
+      "value"
+    ]
+  },
+  "FlacContentError": {},
+  "ID3v1Parser": {
+    "constructor": [
+      "metadata",
+      "tokenizer",
+      "options"
+    ],
+    "getGenre": [
+      "genreIndex"
+    ],
+    "parse": [],
+    "addTag": [
+      "id",
+      "value"
+    ]
+  },
+  "Id3v1StringType": {
+    "constructor": [
+      "len"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "hasID3v1Header": [
+    "tokenizer"
+  ],
+  "ID3v1TagMapper": {
+    "constructor": []
+  },
+  "AbstractID3Parser": {
+    "constructor": [],
+    "startsWithID3v2Header": [
+      "tokenizer"
+    ],
+    "parse": [],
+    "finalize": [],
+    "parseID3v2": [],
+    "tryReadId3v2Headers": []
+  },
+  "getFrameHeaderLength": [
+    "majorVer"
+  ],
+  "readFrameFlags": [
+    "b"
+  ],
+  "readFrameHeader": [
+    "uint8Array",
+    "majorVer",
+    "warningCollector"
+  ],
+  "parseFrameHeaderV22": [
+    "uint8Array",
+    "majorVer",
+    "warningCollector"
+  ],
+  "parseFrameHeaderV23V24": [
+    "uint8Array",
+    "majorVer",
+    "warningCollector"
+  ],
+  "makeUnexpectedMajorVersionError": [
+    "majorVer"
+  ],
+  "FrameParser": {
+    "constructor": [
+      "major",
+      "warningCollector"
+    ],
+    "readData": [
+      "uint8Array",
+      "type",
+      "includeCovers"
+    ],
+    "readNullTerminatedString": [
+      "uint8Array",
+      "encoding"
+    ],
+    "fixPictureMimeType": [
+      "pictureType"
+    ],
+    "functionList": [
+      "entries"
+    ],
+    "splitValue": [
+      "tag",
+      "text"
+    ],
+    "trimArray": [
+      "values"
+    ],
+    "trimNullPadding": [
+      "value"
+    ],
+    "readIdentifierAndData": [
+      "uint8Array",
+      "encoding"
+    ],
+    "getNullTerminatorLength": [
+      "enc"
+    ]
+  },
+  "Id3v2ContentError": {},
+  "parseGenre": [
+    "origVal"
+  ],
+  "parseGenreCode": [
+    "code"
+  ],
+  "ID3v22TagMapper": {
+    "constructor": []
+  },
+  "ID3v24TagMapper": {
+    "toRating": [
+      "popm"
+    ],
+    "constructor": [],
+    "postMap": [
+      "tag",
+      "warnings"
+    ]
+  },
+  "ID3v2Parser": {
+    "constructor": [],
+    "removeUnsyncBytes": [
+      "buffer"
+    ],
+    "readFrameData": [
+      "uint8Array",
+      "frameHeader",
+      "majorVer",
+      "includeCovers",
+      "warningCollector"
+    ],
+    "makeDescriptionTagName": [
+      "tag",
+      "description"
+    ],
+    "parse": [
+      "metadata",
+      "tokenizer",
+      "options"
+    ],
+    "parseExtendedHeader": [],
+    "parseExtendedHeaderData": [
+      "dataRemaining",
+      "extendedHeaderSize"
+    ],
+    "parseId3Data": [
+      "dataLen"
+    ],
+    "handleTag": [
+      "tag",
+      "values",
+      "descriptor",
+      "param"
+    ],
+    "addTag": [
+      "id",
+      "value"
+    ],
+    "parseMetadata": [
+      "data"
+    ],
+    "mapId3v2Chapters": [
+      "id3Tags"
+    ]
+  },
+  "parseLyrics": [
+    "input"
+  ],
+  "toUnsyncedLyrics": [
+    "lyrics"
+  ],
+  "parseLrc": [
+    "lrcString"
+  ],
+  "getLyricsHeaderLength": [
+    "tokenizer"
+  ],
+  "MatroskaParser": {
+    "constructor": [],
+    "parse": [],
+    "addTag": [
+      "tagId",
+      "value"
+    ]
+  },
+  "MatroskaTagMapper": {
+    "constructor": []
+  },
+  "Atom": {
+    "readAtom": [
+      "tokenizer",
+      "dataHandler",
+      "parent",
+      "remaining"
+    ],
+    "constructor": [
+      "header",
+      "extended",
+      "parent"
+    ],
+    "getHeaderLength": [],
+    "getPayloadLength": [
+      "remaining"
+    ],
+    "readAtoms": [
+      "tokenizer",
+      "dataHandler",
+      "size"
+    ],
+    "readData": [
+      "tokenizer",
+      "dataHandler",
+      "remaining"
+    ]
+  },
+  "Mp4ContentError": {},
+  "FixedLengthAtom": {
+    "constructor": [
+      "len",
+      "expLen",
+      "atomId"
+    ]
+  },
+  "MdhdAtom": {
+    "constructor": [
+      "len"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "MvhdAtom": {
+    "constructor": [
+      "len"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "DataAtom": {
+    "constructor": [
+      "len"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "NameAtom": {
+    "constructor": [
+      "len"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "TrackHeaderAtom": {
+    "constructor": [
+      "len"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "StsdAtom": {
+    "constructor": [
+      "len"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "SimpleTableAtom": {
+    "constructor": [
+      "len",
+      "token"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "SttsAtom": {
+    "constructor": [
+      "len"
+    ]
+  },
+  "StscAtom": {
+    "constructor": [
+      "len"
+    ]
+  },
+  "StszAtom": {
+    "constructor": [
+      "len"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "StcoAtom": {
+    "constructor": [
+      "len"
+    ]
+  },
+  "ChapterText": {
+    "constructor": [
+      "len"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "TrackFragmentHeaderBox": {
+    "constructor": [
+      "len"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "TrackRunBox": {
+    "constructor": [
+      "len"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "HandlerBox": {
+    "constructor": [
+      "len"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "ChapterTrackReferenceBox": {
+    "constructor": [
+      "len"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "SampleDescriptionTable": {
+    "constructor": [
+      "len"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "readTokenTable": [
+    "buf",
+    "token",
+    "off",
+    "remainingLen",
+    "numberOfEntries"
+  ],
+  "MP4Parser": {
+    "constructor": [],
+    "read_BE_Integer": [
+      "array",
+      "signed"
+    ],
+    "parse": [],
+    "handleAtom": [
+      "atom",
+      "remaining"
+    ],
+    "getTrackDescription": [],
+    "addTag": [
+      "id",
+      "value"
+    ],
+    "addWarning": [
+      "message"
+    ],
+    "parseMetadataItemData": [
+      "metaAtom"
+    ],
+    "parseValueAtom": [
+      "tagKey",
+      "metaAtom"
+    ],
+    "parseTrackBox": [
+      "trakBox"
+    ],
+    "parseTrackFragmentBox": [
+      "trafBox"
+    ],
+    "parseSoundSampleDescription": [
+      "sampleDescription"
+    ],
+    "parseChapterTrack": [
+      "chapterTrack",
+      "track",
+      "len"
+    ],
+    "findSampleOffset": [
+      "track",
+      "chapterOffset"
+    ],
+    "getChunkDuration": [
+      "chunkId",
+      "track"
+    ],
+    "getSamplesPerChunk": [
+      "chunkId",
+      "stcTable"
+    ]
+  },
+  "distinct": [
+    "value",
+    "index",
+    "self"
+  ],
+  "MP4TagMapper": {
+    "constructor": [],
+    "postMap": [
+      "tag",
+      "_warnings"
+    ]
+  },
+  "MpegContentError": {},
+  "MpegParser": {
+    "constructor": [],
+    "postId3v2Parse": [],
+    "finalize": [],
+    "sync": [],
+    "parseCommonMpegHeader": [],
+    "parseAudioFrameHeader": [
+      "header"
+    ],
+    "parseAdts": [
+      "header"
+    ],
+    "parseCrc": [],
+    "skipSideInformation": [],
+    "readXtraInfoHeader": [],
+    "readXingInfoHeader": [],
+    "skipFrameData": [
+      "frameDataLeft"
+    ],
+    "areAllSame": [
+      "array"
+    ]
+  },
+  "MpegFrameHeader": {
+    "constructor": [
+      "buf",
+      "off"
+    ],
+    "calcDuration": [
+      "numFrames"
+    ],
+    "calcSamplesPerFrame": [],
+    "calculateSideInfoLength": [],
+    "calcSlotSize": [],
+    "parseMpegHeader": [
+      "buf",
+      "off"
+    ],
+    "parseAdtsHeader": [
+      "buf",
+      "off"
+    ],
+    "calcBitrate": [],
+    "calcSamplingRate": []
+  },
+  "getVbrCodecProfile": [
+    "vbrScale"
+  ],
+  "readXingHeader": [
+    "tokenizer"
+  ],
+  "MusepackContentError": {},
+  "MusepackParser": {
+    "postId3v2Parse": []
+  },
+  "BitReader": {
+    "constructor": [
+      "tokenizer"
+    ],
+    "read": [
+      "bits"
+    ],
+    "ignore": [
+      "bits"
+    ]
+  },
+  "MpcSv7Parser": {
+    "constructor": [],
+    "parse": [],
+    "skipAudioData": [
+      "frameCount"
+    ]
+  },
+  "MpcSv8Parser": {
+    "constructor": [],
+    "parse": [],
+    "parsePacket": []
+  },
+  "StreamReader": {
+    "tokenizer": [
+      "value"
+    ],
+    "constructor": [
+      "_tokenizer"
+    ],
+    "readPacketHeader": [],
+    "readStreamHeader": [
+      "size"
+    ],
+    "readVariableSizeField": [
+      "param",
+      "param"
+    ]
+  },
+  "OggContentError": {},
+  "OggParser": {
+    "constructor": [],
+    "parse": []
+  },
+  "OggStream": {
+    "constructor": [
+      "metadata",
+      "streamSerial",
+      "options"
+    ],
+    "parsePage": [
+      "tokenizer",
+      "header"
+    ]
+  },
+  "SegmentTable": {
+    "sum": [
+      "buf",
+      "off",
+      "len"
+    ],
+    "constructor": [
+      "header"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "FlacStream": {
+    "constructor": [
+      "metadata",
+      "options",
+      "tokenizer"
+    ],
+    "parsePage": [
+      "header",
+      "pageData"
+    ],
+    "calculateDuration": [],
+    "parseFirstPage": [
+      "_header",
+      "pageData"
+    ],
+    "parseDataBlock": [
+      "blockHeader",
+      "pageData"
+    ],
+    "flush": []
+  },
+  "OpusContentError": {},
+  "IdHeader": {
+    "constructor": [
+      "len"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "OpusStream": {
+    "constructor": [
+      "metadata",
+      "options",
+      "tokenizer"
+    ],
+    "parseFirstPage": [
+      "_header",
+      "pageData"
+    ],
+    "parseFullPage": [
+      "pageData"
+    ],
+    "calculateDuration": [
+      "enfOfStream"
+    ]
+  },
+  "SpeexStream": {
+    "constructor": [
+      "metadata",
+      "options",
+      "_tokenizer"
+    ],
+    "parseFirstPage": [
+      "_header",
+      "pageData"
+    ]
+  },
+  "TheoraStream": {
+    "constructor": [
+      "metadata",
+      "_options",
+      "_tokenizer"
+    ],
+    "parsePage": [
+      "header",
+      "pageData"
+    ],
+    "calculateDuration": [],
+    "parseFirstPage": [
+      "_header",
+      "pageData"
+    ],
+    "flush": []
+  },
+  "VorbisPictureToken": {
+    "fromBase64": [
+      "base64str"
+    ],
+    "fromBuffer": [
+      "buffer"
+    ],
+    "constructor": [
+      "len"
+    ],
+    "get": [
+      "buffer",
+      "offset"
+    ]
+  },
+  "VorbisDecoder": {
+    "constructor": [
+      "data",
+      "offset"
+    ],
+    "readInt32": [],
+    "readStringUtf8": [],
+    "parseUserComment": []
+  },
+  "VorbisContentError": {},
+  "VorbisStream": {
+    "constructor": [
+      "metadata",
+      "options"
+    ],
+    "parsePage": [
+      "header",
+      "pageData"
+    ],
+    "mergeUint8Arrays": [
+      "arrays"
+    ],
+    "flush": [],
+    "parseUserComment": [
+      "pageData",
+      "offset"
+    ],
+    "addTag": [
+      "id",
+      "value"
+    ],
+    "calculateDuration": [
+      "enfOfStream"
+    ],
+    "parseFirstPage": [
+      "_header",
+      "pageData"
+    ],
+    "parseFullPage": [
+      "pageData"
+    ],
+    "parseUserCommentList": [
+      "pageData",
+      "offset"
+    ]
+  },
+  "VorbisTagMapper": {
+    "toRating": [
+      "email",
+      "rating",
+      "maxScore"
+    ],
+    "constructor": [],
+    "postMap": [
+      "tag"
+    ]
+  },
+  "ListInfoTagValue": {
+    "constructor": [
+      "tagHeader"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "RiffInfoTagMapper": {
+    "constructor": []
+  },
+  "WaveContentError": {},
+  "Format": {
+    "constructor": [
+      "header"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "FactChunk": {
+    "constructor": [
+      "header"
+    ],
+    "get": [
+      "buf",
+      "off"
+    ]
+  },
+  "WaveParser": {
+    "constructor": [],
+    "parse": [],
+    "parseRiffChunk": [
+      "chunkSize"
+    ],
+    "readWaveChunk": [
+      "remaining"
+    ],
+    "parseListTag": [
+      "listHeader"
+    ],
+    "parseRiffInfoTags": [
+      "chunkSize"
+    ],
+    "addTag": [
+      "id",
+      "value"
+    ]
+  },
+  "WavPackContentError": {},
+  "WavPackParser": {
+    "constructor": [],
+    "parse": [],
+    "parseWavPackBlocks": [],
+    "parseMetadataSubBlock": [
+      "header",
+      "remainingLength"
+    ]
+  }
+}
