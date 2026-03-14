@@ -1,0 +1,389 @@
+{
+  "getDelayMs": [
+    "count",
+    "delays",
+    "maxWait"
+  ],
+  "ExpressBruteFlexible": [
+    "limiterType",
+    "options"
+  ],
+  "getFailCallback": [],
+  "reset": [
+    "callback"
+  ],
+  "setRetryAfter": [
+    "res",
+    "nextValidRequestDate"
+  ],
+  "masterSendToWorker": [
+    "worker",
+    "msg",
+    "type",
+    "res"
+  ],
+  "workerWaitInit": [
+    "payload"
+  ],
+  "workerSendToMaster": [
+    "func",
+    "promiseId",
+    "key",
+    "arg",
+    "opts"
+  ],
+  "masterProcessMsg": [
+    "worker",
+    "msg"
+  ],
+  "workerProcessMsg": [
+    "msg"
+  ],
+  "getOpts": [],
+  "savePromise": [
+    "resolve",
+    "reject"
+  ],
+  "RateLimiterClusterMaster": {
+    "constructor": []
+  },
+  "RateLimiterClusterMasterPM2": {
+    "constructor": [
+      "pm2"
+    ]
+  },
+  "RateLimiterClusterWorker": {
+    "timeoutMs": [
+      "value"
+    ],
+    "constructor": [
+      "param"
+    ],
+    "consume": [
+      "key",
+      "param",
+      "param"
+    ],
+    "penalty": [
+      "key",
+      "param",
+      "param"
+    ],
+    "reward": [
+      "key",
+      "param",
+      "param"
+    ],
+    "block": [
+      "key",
+      "secDuration",
+      "param"
+    ],
+    "get": [
+      "key",
+      "param"
+    ],
+    "delete": [
+      "key",
+      "param"
+    ]
+  },
+  "RateLimiterDrizzleError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "getDrizzleOperators": [],
+  "getPackageName": [],
+  "RateLimiterDrizzle": {
+    "constructor": [
+      "opts",
+      "cb"
+    ]
+  },
+  "RateLimiterDrizzleNonAtomic": {
+    "constructor": [
+      "opts",
+      "cb"
+    ]
+  },
+  "DynamoItem": {
+    "constructor": [
+      "rlKey",
+      "points",
+      "expire"
+    ]
+  },
+  "RateLimiterDynamo": {
+    "constructor": [
+      "opts",
+      "cb"
+    ]
+  },
+  "RateLimiterEtcd": {
+    "constructor": [
+      "opts"
+    ]
+  },
+  "RateLimiterEtcdNonAtomic": {
+    "constructor": [
+      "opts"
+    ]
+  },
+  "RateLimiterMemcache": {},
+  "RateLimiterMemory": {
+    "constructor": [
+      "opts"
+    ]
+  },
+  "RateLimiterMongo": {
+    "constructor": [
+      "opts"
+    ],
+    "indexKeyPrefix": [
+      "obj"
+    ],
+    "createIndexes": [],
+    "consume": [
+      "key",
+      "pointsToConsume",
+      "options"
+    ],
+    "penalty": [
+      "key",
+      "points",
+      "options"
+    ],
+    "reward": [
+      "key",
+      "points",
+      "options"
+    ],
+    "block": [
+      "key",
+      "secDuration",
+      "options"
+    ],
+    "get": [
+      "key",
+      "options"
+    ],
+    "set": [
+      "key",
+      "points",
+      "secDuration",
+      "options"
+    ],
+    "delete": [
+      "key",
+      "options"
+    ]
+  },
+  "RateLimiterMySQL": {
+    "constructor": [
+      "opts",
+      "cb"
+    ]
+  },
+  "RateLimiterPostgres": {
+    "constructor": [
+      "opts",
+      "cb"
+    ]
+  },
+  "RateLimiterPrisma": {
+    "constructor": [
+      "opts",
+      "cb"
+    ]
+  },
+  "RateLimiterQueueInternal": {
+    "constructor": [
+      "limiterFlexible",
+      "param"
+    ],
+    "getTokensRemaining": [],
+    "removeTokens": [
+      "tokens"
+    ],
+    "_queueRequest": [
+      "resolve",
+      "reject",
+      "tokens"
+    ],
+    "_processFIFO": []
+  },
+  "RateLimiterRedis": {
+    "constructor": [
+      "opts"
+    ]
+  },
+  "incrCallback": [
+    "err",
+    "result"
+  ],
+  "RateLimiterRedisNonAtomic": {
+    "constructor": [
+      "opts"
+    ]
+  },
+  "RateLimiterSQLite": {
+    "constructor": [
+      "opts",
+      "cb"
+    ]
+  },
+  "RateLimiterValkey": {
+    "constructor": [
+      "opts"
+    ]
+  },
+  "RateLimiterValkeyGlide": {
+    "constructor": [
+      "opts"
+    ],
+    "close": []
+  },
+  "RateLimiterRes": {
+    "constructor": [
+      "remainingPoints",
+      "msBeforeNext",
+      "consumedPoints",
+      "isFirstInDuration"
+    ],
+    "msBeforeNext": [],
+    "remainingPoints": [],
+    "consumedPoints": [],
+    "isFirstInDuration": [],
+    "toString": [],
+    "toJSON": []
+  },
+  "RateLimiterAbstract": {
+    "constructor": [
+      "opts"
+    ],
+    "points": [],
+    "duration": [],
+    "msDuration": [],
+    "blockDuration": [],
+    "msBlockDuration": [],
+    "execEvenly": [],
+    "execEvenlyMinDelayMs": [],
+    "keyPrefix": [],
+    "getKey": [
+      "key"
+    ],
+    "parseKey": [
+      "rlKey"
+    ],
+    "consume": [
+      "key",
+      "pointsToConsume",
+      "options"
+    ],
+    "penalty": [
+      "key",
+      "points",
+      "options"
+    ],
+    "reward": [
+      "key",
+      "points",
+      "options"
+    ],
+    "get": [
+      "key",
+      "options"
+    ],
+    "set": [
+      "key",
+      "points",
+      "secDuration",
+      "options"
+    ],
+    "block": [
+      "key",
+      "secDuration",
+      "options"
+    ],
+    "delete": [
+      "key",
+      "options"
+    ]
+  },
+  "RateLimiterInsuredAbstract": {
+    "constructor": [
+      "opts"
+    ]
+  },
+  "RateLimiterStoreAbstract": {
+    "constructor": [
+      "opts"
+    ],
+    "deleteInMemoryBlockedAll": []
+  },
+  "RateLimiterCluster": {
+    "constructor": [
+      "opts"
+    ]
+  },
+  "RateLimiterUnion": {
+    "constructor": [
+      "param"
+    ],
+    "consume": [
+      "key",
+      "points"
+    ]
+  },
+  "RLWrapperBlackAndWhite": {
+    "constructor": [
+      "opts"
+    ]
+  },
+  "RLWrapperTimeouts": {
+    "constructor": [
+      "opts"
+    ]
+  },
+  "RateLimiterQueue": {
+    "constructor": [
+      "limiterFlexible",
+      "opts"
+    ],
+    "getTokensRemaining": [
+      "key"
+    ],
+    "removeTokens": [
+      "tokens",
+      "key"
+    ]
+  },
+  "BurstyRateLimiter": {
+    "constructor": [
+      "rateLimiter",
+      "burstLimiter"
+    ],
+    "consume": [
+      "key",
+      "pointsToConsume",
+      "options"
+    ]
+  },
+  "RateLimiterQueueError": {
+    "constructor": [
+      "message",
+      "extra"
+    ],
+    "name": [],
+    "message": [],
+    "extra": []
+  },
+  "RateLimiterEtcdTransactionFailedError": {
+    "constructor": [
+      "message"
+    ],
+    "name": [],
+    "message": []
+  }
+}
