@@ -1,0 +1,511 @@
+{
+  "ApiConfig": {
+    "constructor": [
+      "sessionRequest",
+      "sessionListener",
+      "receiverListener",
+      "autoJoinPolicy",
+      "defaultActionPolicy"
+    ],
+    "sessionRequest": [],
+    "sessionListener": [],
+    "receiverListener": [],
+    "autoJoinPolicy": [],
+    "defaultActionPolicy": []
+  },
+  "Error": {
+    "constructor": [
+      "code",
+      "description",
+      "details"
+    ],
+    "code": [],
+    "description": [],
+    "details": []
+  },
+  "Image": {
+    "constructor": [
+      "url"
+    ],
+    "url": [],
+    "height": [],
+    "width": []
+  },
+  "SenderApplication": {
+    "constructor": [
+      "platform"
+    ],
+    "platform": [],
+    "url": [],
+    "packageId": []
+  },
+  "SessionRequest": {
+    "constructor": [
+      "appId",
+      "capabilities",
+      "timeout"
+    ],
+    "appId": [],
+    "capabilities": [],
+    "requestSessionTimeout": [],
+    "language": []
+  },
+  "Session": {
+    "constructor": [
+      "sessionId",
+      "appId",
+      "displayName",
+      "appImages",
+      "receiver"
+    ],
+    "sessionId": [],
+    "appId": [],
+    "displayName": [],
+    "appImages": [],
+    "receiver": [],
+    "senderApps": [],
+    "namespaces": [],
+    "media": [],
+    "status": [],
+    "statusText": [],
+    "transportId": [],
+    "setReceiverVolumeLevel": [
+      "newLevel",
+      "successCallback",
+      "errorCallback"
+    ],
+    "setReceiverMuted": [
+      "muted",
+      "successCallback",
+      "errorCallback"
+    ],
+    "leave": [
+      "successCallback",
+      "errorCallback"
+    ],
+    "stop": [
+      "successCallback",
+      "errorCallback"
+    ],
+    "sendMessage": [
+      "namespace",
+      "message",
+      "successCallback",
+      "errorCallback"
+    ],
+    "addUpdateListener": [
+      "listener"
+    ],
+    "removeUpdateListener": [
+      "listener"
+    ],
+    "addMessageListener": [
+      "namespace",
+      "listener"
+    ],
+    "removeMessageListener": [
+      "namespace",
+      "listener"
+    ],
+    "addMediaListener": [
+      "listener"
+    ],
+    "removeMediaListener": [
+      "listener"
+    ],
+    "loadMedia": [
+      "loadRequest",
+      "successCallback",
+      "errorCallback"
+    ],
+    "queueLoad": [
+      "queueLoadRequest",
+      "successCallback",
+      "errorCallback"
+    ]
+  },
+  "Receiver": {
+    "constructor": [
+      "label",
+      "friendlyName",
+      "capabilities",
+      "volume"
+    ],
+    "label": [],
+    "friendlyName": [],
+    "capabilities": [],
+    "volume": [],
+    "receiverType": [],
+    "displayStatus": []
+  },
+  "ReceiverDisplayStatus": {
+    "constructor": [
+      "statusText",
+      "appImages"
+    ],
+    "statusText": [],
+    "appImages": []
+  },
+  "Volume": {
+    "constructor": [
+      "level",
+      "muted"
+    ],
+    "level": [],
+    "muted": []
+  },
+  "QueueItem": {
+    "constructor": [
+      "mediaInfo"
+    ],
+    "activeTrackIds": [],
+    "autoplay": [],
+    "customData": [],
+    "itemId": [],
+    "media": [],
+    "preloadTime": [],
+    "startTime": []
+  },
+  "QueueLoadRequest": {
+    "constructor": [
+      "items"
+    ],
+    "customData": [],
+    "items": [],
+    "repeatMode": [],
+    "startIndex": []
+  },
+  "QueueInsertItemsRequest": {
+    "constructor": [
+      "itemsToInsert"
+    ],
+    "customData": [],
+    "insertBefore": [],
+    "items": []
+  },
+  "QueueRemoveItemsRequest": {
+    "constructor": [
+      "itemIdsToRemove"
+    ],
+    "customData": [],
+    "itemIds": []
+  },
+  "QueueReorderItemsRequest": {
+    "constructor": [
+      "itemIdsToReorder"
+    ],
+    "customData": [],
+    "insertBefore": [],
+    "itemIds": []
+  },
+  "QueueUpdateItemsRequest": {
+    "constructor": [
+      "itemsToUpdate"
+    ],
+    "customData": [],
+    "item": []
+  },
+  "GetStatusRequest": {
+    "constructor": [],
+    "customData": []
+  },
+  "PauseRequest": {
+    "constructor": [],
+    "customData": []
+  },
+  "PlayRequest": {
+    "constructor": [],
+    "customData": []
+  },
+  "SeekRequest": {
+    "constructor": [],
+    "currentTime": [],
+    "resumeState": [],
+    "customData": []
+  },
+  "StopRequest": {
+    "constructor": [],
+    "customData": []
+  },
+  "VolumeRequest": {
+    "constructor": [
+      "volume"
+    ],
+    "volume": [],
+    "customData": []
+  },
+  "LoadRequest": {
+    "constructor": [
+      "mediaInfo"
+    ],
+    "activeTrackIds": [],
+    "autoplay": [],
+    "currentTime": [],
+    "customData": [],
+    "media": [],
+    "playbackRate": []
+  },
+  "EditTracksInfoRequest": {
+    "constructor": [
+      "activeTrackIds",
+      "textTrackStyle"
+    ],
+    "activeTrackIds": [],
+    "textTrackStyle": []
+  },
+  "GenericMediaMetadata": {
+    "images": [],
+    "metadataType": [],
+    "releaseDate": [],
+    "releaseYear": [],
+    "subtitle": [],
+    "title": [],
+    "type": []
+  },
+  "MovieMediaMetadata": {
+    "constructor": [],
+    "images": [],
+    "metadataType": [],
+    "releaseDate": [],
+    "releaseYear": [],
+    "subtitle": [],
+    "title": [],
+    "studio": [],
+    "type": []
+  },
+  "TvShowMediaMetadata": {
+    "constructor": [],
+    "metadataType": [],
+    "seriesTitle": [],
+    "title": [],
+    "season": [],
+    "episode": [],
+    "images": [],
+    "originalAirdate": [],
+    "type": [],
+    "episodeTitle": [],
+    "seasonNumber": [],
+    "episodeNumber": [],
+    "releaseYear": []
+  },
+  "MusicTrackMediaMetadata": {
+    "constructor": [],
+    "metadataType": [],
+    "albumName": [],
+    "title": [],
+    "albumArtist": [],
+    "artist": [],
+    "composer": [],
+    "songName": [],
+    "trackNumber": [],
+    "discNumber": [],
+    "images": [],
+    "releaseDate": [],
+    "type": [],
+    "artistName": [],
+    "releaseYear": []
+  },
+  "PhotoMediaMetadata": {
+    "constructor": [],
+    "metadataType": [],
+    "title": [],
+    "artist": [],
+    "location": [],
+    "images": [],
+    "latitude": [],
+    "longitude": [],
+    "width": [],
+    "height": [],
+    "creationDateTime": [],
+    "type": []
+  },
+  "MediaInfo": {
+    "constructor": [
+      "contentId",
+      "contentType"
+    ],
+    "contentId": [],
+    "streamType": [],
+    "contentType": [],
+    "metadata": [],
+    "duration": [],
+    "tracks": [],
+    "textTrackStyle": [],
+    "customData": []
+  },
+  "Media": {
+    "constructor": [
+      "sessionId",
+      "mediaSessionId"
+    ],
+    "activeTrackIds": [],
+    "currentItemId": [],
+    "customData": [],
+    "idleReason": [],
+    "items": [],
+    "liveSeekableRange": [],
+    "loadingItemId": [],
+    "media": [],
+    "mediaSessionId": [],
+    "playbackRate": [],
+    "playerState": [],
+    "preloadedItemId": [],
+    "repeatMode": [],
+    "sessionId": [],
+    "supportedMediaCommands": [],
+    "volume": [],
+    "currentTime": [],
+    "getStatus": [
+      "getStatusRequest",
+      "successCallback",
+      "errorCallback"
+    ],
+    "play": [
+      "playRequest",
+      "successCallback",
+      "errorCallback"
+    ],
+    "pause": [
+      "pauseRequest",
+      "successCallback",
+      "errorCallback"
+    ],
+    "seek": [
+      "seekRequest",
+      "successCallback",
+      "errorCallback"
+    ],
+    "stop": [
+      "stopRequest",
+      "successCallback",
+      "errorCallback"
+    ],
+    "setVolume": [
+      "volumeRequest",
+      "successCallback",
+      "errorCallback"
+    ],
+    "editTracksInfo": [
+      "editTracksInfoRequest",
+      "successCallback",
+      "errorCallback"
+    ],
+    "supportsCommand": [
+      "command"
+    ],
+    "addUpdateListener": [
+      "listener"
+    ],
+    "removeUpdateListener": [
+      "listener"
+    ],
+    "getEstimatedTime": [],
+    "queueAppendItem": [
+      "item",
+      "successCallback",
+      "errorCallback"
+    ],
+    "queueInsertItems": [
+      "queueInsertItemsRequest",
+      "successCallback",
+      "errorCallback"
+    ],
+    "queueJumpToItem": [
+      "itemId",
+      "successCallback",
+      "errorCallback"
+    ],
+    "queueMoveItemToNewIndex": [
+      "itemId",
+      "newIndex",
+      "successCallback",
+      "errorCallback"
+    ],
+    "queueNext": [
+      "successCallback",
+      "errorCallback"
+    ],
+    "queuePrev": [
+      "successCallback",
+      "errorCallback"
+    ],
+    "queueRemoveItem": [
+      "itemId",
+      "successCallback",
+      "errorCallback"
+    ],
+    "queueReorderItems": [
+      "queueReorderItemsRequest",
+      "successCallback",
+      "errorCallback"
+    ],
+    "queueSetRepeatMode": [
+      "repeatMode",
+      "successCallback",
+      "errorCallback"
+    ],
+    "queueUpdateItems": [
+      "queueUpdateItemsRequest",
+      "successCallback",
+      "errorCallback"
+    ]
+  },
+  "Track": {
+    "constructor": [
+      "trackId",
+      "trackType"
+    ],
+    "trackId": [],
+    "trackContentId": [],
+    "trackContentType": [],
+    "type": [],
+    "name": [],
+    "language": [],
+    "subtype": [],
+    "customData": []
+  },
+  "TextTrackStyle": {
+    "constructor": [],
+    "foregroundColor": [],
+    "backgroundColor": [],
+    "edgeType": [],
+    "edgeColor": [],
+    "windowType": [],
+    "windowColor": [],
+    "windowRoundedCornerRadius": [],
+    "fontScale": [],
+    "fontFamily": [],
+    "fontGenericFamily": [],
+    "fontStyle": [],
+    "customData": []
+  },
+  "LiveSeekableRange": {
+    "constructor": [
+      "start",
+      "end",
+      "isMovingWindow",
+      "isLiveDone"
+    ],
+    "start": [],
+    "end": [],
+    "isMovingWindow": [],
+    "isLiveDone": []
+  },
+  "PageStateMatcher": {
+    "constructor": [
+      "arg"
+    ]
+  },
+  "RequestContentScript": {
+    "constructor": [
+      "arg"
+    ]
+  },
+  "ShowAction": {},
+  "ShowPageAction": {},
+  "SetIcon": {
+    "constructor": [
+      "options"
+    ]
+  }
+}
