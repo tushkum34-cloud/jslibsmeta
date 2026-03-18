@@ -1,0 +1,253 @@
+{
+  "ConnectionPool": {
+    "_config": [],
+    "_poolCreate": [],
+    "_poolValidate": [
+      "tedious"
+    ],
+    "_poolDestroy": [
+      "tedious"
+    ]
+  },
+  "PreparedStatement": {
+    "constructor": [
+      "parent"
+    ],
+    "config": [],
+    "connected": [],
+    "acquire": [
+      "request",
+      "callback"
+    ],
+    "release": [
+      "connection"
+    ],
+    "input": [
+      "name",
+      "type"
+    ],
+    "replaceInput": [
+      "name",
+      "type",
+      "value"
+    ],
+    "output": [
+      "name",
+      "type"
+    ],
+    "replaceOutput": [
+      "name",
+      "type"
+    ],
+    "prepare": [
+      "statement",
+      "callback"
+    ],
+    "_prepare": [
+      "statement",
+      "callback"
+    ],
+    "execute": [
+      "values",
+      "callback"
+    ],
+    "_execute": [
+      "values",
+      "callback"
+    ],
+    "unprepare": [
+      "callback"
+    ],
+    "_unprepare": [
+      "callback"
+    ]
+  },
+  "Request": {
+    "_batch": [
+      "batch",
+      "callback"
+    ],
+    "_bulk": [
+      "table",
+      "options",
+      "callback"
+    ],
+    "_query": [
+      "command",
+      "callback"
+    ],
+    "_execute": [
+      "procedure",
+      "callback"
+    ],
+    "_pause": [],
+    "_resume": []
+  },
+  "Transaction": {
+    "constructor": [
+      "parent"
+    ],
+    "_begin": [
+      "isolationLevel",
+      "callback"
+    ],
+    "_commit": [
+      "callback"
+    ],
+    "_rollback": [
+      "callback"
+    ]
+  },
+  "zero": [
+    "value",
+    "length"
+  ],
+  "ConnectionError": {
+    "constructor": [
+      "message",
+      "code"
+    ]
+  },
+  "MSSQLError": {
+    "constructor": [
+      "message",
+      "code"
+    ]
+  },
+  "PreparedStatementError": {
+    "constructor": [
+      "message",
+      "code"
+    ]
+  },
+  "RequestError": {
+    "constructor": [
+      "message",
+      "code"
+    ]
+  },
+  "TransactionError": {
+    "constructor": [
+      "message",
+      "code"
+    ]
+  },
+  "connect": [
+    "config",
+    "callback"
+  ],
+  "globalClose": [
+    "callback"
+  ],
+  "close": [
+    "callback"
+  ],
+  "on": [
+    "event",
+    "handler"
+  ],
+  "removeListener": [
+    "event",
+    "handler"
+  ],
+  "query": [],
+  "batch": [],
+  "castParameter": [
+    "value",
+    "type"
+  ],
+  "createColumns": [
+    "metadata",
+    "arrayRowMode"
+  ],
+  "valueCorrection": [
+    "value",
+    "metadata"
+  ],
+  "done": [
+    "err",
+    "rowCount"
+  ],
+  "go": [],
+  "handleError": [
+    "doReturn",
+    "connection",
+    "info"
+  ],
+  "isolationLevelDeclaration": [
+    "type"
+  ],
+  "getTypeByValue": [
+    "value"
+  ],
+  "Table": [
+    "name"
+  ],
+  "resolveOnce": [
+    "v"
+  ],
+  "rejectOnce": [
+    "e"
+  ],
+  "getTediousType": [
+    "type"
+  ],
+  "getMssqlType": [
+    "type",
+    "length"
+  ],
+  "parameterCorrection": [
+    "value"
+  ],
+  "handleInfo": [
+    "msg"
+  ],
+  "callbackWithRelease": [
+    "err",
+    "param"
+  ],
+  "doneHandler": [
+    "rowCount",
+    "more"
+  ],
+  "logValue": [
+    "s"
+  ],
+  "logName": [
+    "param"
+  ],
+  "Point": {
+    "constructor": []
+  },
+  "parsePoints": [
+    "buffer",
+    "count",
+    "isGeometryPoint"
+  ],
+  "parseZ": [
+    "buffer",
+    "points"
+  ],
+  "parseM": [
+    "buffer",
+    "points"
+  ],
+  "parseFigures": [
+    "buffer",
+    "count",
+    "properties"
+  ],
+  "parseShapes": [
+    "buffer",
+    "count",
+    "properties"
+  ],
+  "parseSegments": [
+    "buffer",
+    "count"
+  ],
+  "parseGeography": [
+    "buffer",
+    "isUsingGeometryPoints"
+  ]
+}
