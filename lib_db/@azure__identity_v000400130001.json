@@ -1,0 +1,739 @@
+{
+  "IdentityClient": {
+    "authorityHost": [],
+    "allowLoggingAccountIdentifiers": [],
+    "abortControllers": [],
+    "allowInsecureConnection": [],
+    "tokenCredentialOptions": [],
+    "constructor": [
+      "options"
+    ],
+    "sendTokenRequest": [
+      "request"
+    ],
+    "refreshAccessToken": [
+      "tenantId",
+      "clientId",
+      "scopes",
+      "refreshToken",
+      "clientSecret",
+      "param"
+    ],
+    "generateAbortSignal": [
+      "correlationId"
+    ],
+    "abortRequests": [
+      "correlationId"
+    ],
+    "getCorrelationId": [
+      "options"
+    ],
+    "sendGetRequestAsync": [
+      "url",
+      "options"
+    ],
+    "sendPostRequestAsync": [
+      "url",
+      "options"
+    ],
+    "getTokenCredentialOptions": [],
+    "logIdentifiers": [
+      "response"
+    ]
+  },
+  "getIdentityClientAuthorityHost": [
+    "options"
+  ],
+  "AuthorizationCodeCredential": {
+    "msalClient": [],
+    "disableAutomaticAuthentication": [],
+    "authorizationCode": [],
+    "redirectUri": [],
+    "tenantId": [],
+    "additionallyAllowedTenantIds": [],
+    "clientSecret": [],
+    "constructor": [
+      "tenantId",
+      "clientId",
+      "clientSecretOrAuthorizationCode",
+      "authorizationCodeOrRedirectUri",
+      "redirectUriOrOptions",
+      "options"
+    ],
+    "getToken": [
+      "scopes",
+      "param"
+    ]
+  },
+  "AzureCliCredential": {
+    "tenantId": [],
+    "additionallyAllowedTenantIds": [],
+    "timeout": [],
+    "subscription": [],
+    "constructor": [
+      "options"
+    ],
+    "getToken": [
+      "scopes",
+      "param"
+    ],
+    "parseRawResponse": [
+      "rawResponse"
+    ]
+  },
+  "AzureDeveloperCliCredential": {
+    "tenantId": [],
+    "additionallyAllowedTenantIds": [],
+    "timeout": [],
+    "constructor": [
+      "options"
+    ],
+    "getToken": [
+      "scopes",
+      "param"
+    ]
+  },
+  "AzurePipelinesCredential": {
+    "clientAssertionCredential": [],
+    "identityClient": [],
+    "constructor": [
+      "tenantId",
+      "clientId",
+      "serviceConnectionId",
+      "systemAccessToken",
+      "param"
+    ],
+    "getToken": [
+      "scopes",
+      "options"
+    ],
+    "requestOidcToken": [
+      "oidcRequestUrl",
+      "systemAccessToken"
+    ]
+  },
+  "AzurePowerShellCredential": {
+    "tenantId": [],
+    "additionallyAllowedTenantIds": [],
+    "timeout": [],
+    "constructor": [
+      "options"
+    ],
+    "getAzurePowerShellAccessToken": [
+      "resource",
+      "tenantId",
+      "timeout"
+    ],
+    "getToken": [
+      "scopes",
+      "param"
+    ]
+  },
+  "BrokerCredential": {
+    "brokerMsalClient": [],
+    "brokerTenantId": [],
+    "brokerAdditionallyAllowedTenantIds": [],
+    "constructor": [
+      "options"
+    ],
+    "getToken": [
+      "scopes",
+      "param"
+    ]
+  },
+  "ChainedTokenCredential": {
+    "_sources": [],
+    "constructor": [
+      "param"
+    ],
+    "getToken": [
+      "scopes",
+      "param"
+    ],
+    "getTokenInternal": [
+      "scopes",
+      "param"
+    ]
+  },
+  "ClientAssertionCredential": {
+    "msalClient": [],
+    "tenantId": [],
+    "additionallyAllowedTenantIds": [],
+    "getAssertion": [],
+    "options": [],
+    "constructor": [
+      "tenantId",
+      "clientId",
+      "getAssertion",
+      "param"
+    ],
+    "getToken": [
+      "scopes",
+      "param"
+    ]
+  },
+  "ClientCertificateCredential": {
+    "tenantId": [],
+    "additionallyAllowedTenantIds": [],
+    "certificateConfiguration": [],
+    "sendCertificateChain": [],
+    "msalClient": [],
+    "constructor": [
+      "tenantId",
+      "clientId",
+      "certificatePathOrConfiguration",
+      "param"
+    ],
+    "getToken": [
+      "scopes",
+      "param"
+    ],
+    "buildClientCertificate": []
+  },
+  "ClientSecretCredential": {
+    "tenantId": [],
+    "additionallyAllowedTenantIds": [],
+    "msalClient": [],
+    "clientSecret": [],
+    "constructor": [
+      "tenantId",
+      "clientId",
+      "clientSecret",
+      "param"
+    ],
+    "getToken": [
+      "scopes",
+      "param"
+    ]
+  },
+  "DefaultAzureCredential": {
+    "constructor": [
+      "options"
+    ]
+  },
+  "createDefaultBrokerCredential": [
+    "param"
+  ],
+  "createDefaultVisualStudioCodeCredential": [
+    "param"
+  ],
+  "createDefaultManagedIdentityCredential": [
+    "param"
+  ],
+  "createDefaultWorkloadIdentityCredential": [
+    "options"
+  ],
+  "createDefaultAzureDeveloperCliCredential": [
+    "param"
+  ],
+  "createDefaultAzureCliCredential": [
+    "param"
+  ],
+  "createDefaultAzurePowershellCredential": [
+    "param"
+  ],
+  "createDefaultEnvironmentCredential": [
+    "param"
+  ],
+  "DeviceCodeCredential": {
+    "tenantId": [],
+    "additionallyAllowedTenantIds": [],
+    "disableAutomaticAuthentication": [],
+    "msalClient": [],
+    "userPromptCallback": [],
+    "constructor": [
+      "options"
+    ],
+    "getToken": [
+      "scopes",
+      "param"
+    ],
+    "authenticate": [
+      "scopes",
+      "param"
+    ]
+  },
+  "EnvironmentCredential": {
+    "_credential": [],
+    "constructor": [
+      "options"
+    ],
+    "getToken": [
+      "scopes",
+      "param"
+    ]
+  },
+  "InteractiveBrowserCredential": {
+    "tenantId": [],
+    "additionallyAllowedTenantIds": [],
+    "msalClient": [],
+    "disableAutomaticAuthentication": [],
+    "browserCustomizationOptions": [],
+    "loginHint": [],
+    "constructor": [
+      "options"
+    ],
+    "getToken": [
+      "scopes",
+      "param"
+    ],
+    "authenticate": [
+      "scopes",
+      "param"
+    ]
+  },
+  "prepareInvalidRequestOptions": [
+    "scopes"
+  ],
+  "imdsRetryPolicy": [
+    "msiRetryConfig"
+  ],
+  "ManagedIdentityCredential": {
+    "managedIdentityApp": [],
+    "identityClient": [],
+    "clientId": [],
+    "resourceId": [],
+    "objectId": [],
+    "msiRetryConfig": [],
+    "isAvailableIdentityClient": [],
+    "sendProbeRequest": [],
+    "constructor": [
+      "clientIdOrOptions",
+      "options"
+    ],
+    "getToken": [
+      "scopes",
+      "param"
+    ],
+    "ensureValidMsalToken": [
+      "scopes",
+      "msalToken",
+      "getTokenOptions"
+    ]
+  },
+  "mapScopesToResource": [
+    "scopes"
+  ],
+  "parseExpirationTimestamp": [
+    "body"
+  ],
+  "parseRefreshTimestamp": [
+    "body"
+  ],
+  "OnBehalfOfCredential": {
+    "tenantId": [],
+    "additionallyAllowedTenantIds": [],
+    "msalClient": [],
+    "sendCertificateChain": [],
+    "certificatePath": [],
+    "clientSecret": [],
+    "userAssertionToken": [],
+    "clientAssertion": [],
+    "constructor": [
+      "options"
+    ],
+    "getToken": [
+      "scopes",
+      "param"
+    ],
+    "buildClientCertificate": [
+      "certificatePath"
+    ],
+    "parseCertificate": [
+      "configuration",
+      "sendCertificateChain"
+    ]
+  },
+  "UsernamePasswordCredential": {
+    "tenantId": [],
+    "additionallyAllowedTenantIds": [],
+    "msalClient": [],
+    "username": [],
+    "password": [],
+    "constructor": [
+      "tenantId",
+      "clientId",
+      "username",
+      "password",
+      "param"
+    ],
+    "getToken": [
+      "scopes",
+      "param"
+    ]
+  },
+  "VisualStudioCodeCredential": {
+    "tenantId": [],
+    "additionallyAllowedTenantIds": [],
+    "msalClient": [],
+    "options": [],
+    "constructor": [
+      "options"
+    ],
+    "prepare": [
+      "scopes"
+    ],
+    "preparePromise": [],
+    "prepareOnce": [
+      "scopes"
+    ],
+    "getToken": [
+      "scopes",
+      "options"
+    ],
+    "loadAuthRecord": [
+      "authRecordPath",
+      "scopes"
+    ]
+  },
+  "WorkloadIdentityCredential": {
+    "client": [],
+    "azureFederatedTokenFileContent": [],
+    "cacheDate": [],
+    "federatedTokenFilePath": [],
+    "constructor": [
+      "options"
+    ],
+    "getToken": [
+      "scopes",
+      "options"
+    ],
+    "readFileContents": []
+  },
+  "CredentialUnavailableError": {
+    "constructor": [
+      "message",
+      "options"
+    ]
+  },
+  "AuthenticationError": {
+    "statusCode": [],
+    "errorResponse": [],
+    "constructor": [
+      "statusCode",
+      "errorBody",
+      "options"
+    ]
+  },
+  "AggregateAuthenticationError": {
+    "errors": [],
+    "constructor": [
+      "errors",
+      "errorMessage"
+    ]
+  },
+  "AuthenticationRequiredError": {
+    "scopes": [],
+    "getTokenOptions": [],
+    "constructor": [
+      "options"
+    ]
+  },
+  "isErrorResponse": [
+    "errorResponse"
+  ],
+  "convertOAuthErrorResponseToErrorResponse": [
+    "errorBody"
+  ],
+  "getDefaultAzureCredential": [],
+  "generateMsalBrowserConfiguration": [
+    "options"
+  ],
+  "createMsalBrowserClient": [
+    "options"
+  ],
+  "getApp": [],
+  "handleBrowserResult": [
+    "result"
+  ],
+  "handleResult": [
+    "scopes",
+    "result",
+    "getTokenOptions"
+  ],
+  "handleRedirect": [],
+  "getActiveAccount": [],
+  "login": [
+    "param"
+  ],
+  "getTokenSilent": [
+    "app",
+    "scopes",
+    "param"
+  ],
+  "getTokenInteractive": [
+    "scopes",
+    "getTokenOptions"
+  ],
+  "getToken": [
+    "scopes",
+    "param"
+  ],
+  "generateMsalConfiguration": [
+    "clientId",
+    "tenantId",
+    "param"
+  ],
+  "createMsalClient": [
+    "clientId",
+    "tenantId",
+    "param"
+  ],
+  "getPublicApp": [
+    "param"
+  ],
+  "getConfidentialApp": [
+    "param"
+  ],
+  "calculateRequestAuthority": [
+    "options"
+  ],
+  "withSilentAuthentication": [
+    "msalApp",
+    "scopes",
+    "options",
+    "onAuthenticationRequired"
+  ],
+  "getTokenByClientSecret": [
+    "scopes",
+    "clientSecret",
+    "param"
+  ],
+  "getTokenByClientAssertion": [
+    "scopes",
+    "clientAssertion",
+    "param"
+  ],
+  "getTokenByClientCertificate": [
+    "scopes",
+    "certificate",
+    "param"
+  ],
+  "getTokenByDeviceCode": [
+    "scopes",
+    "deviceCodeCallback",
+    "param"
+  ],
+  "getTokenByUsernamePassword": [
+    "scopes",
+    "username",
+    "password",
+    "param"
+  ],
+  "getTokenByAuthorizationCode": [
+    "scopes",
+    "redirectUri",
+    "authorizationCode",
+    "clientSecret",
+    "param"
+  ],
+  "getTokenOnBehalfOf": [
+    "scopes",
+    "userAssertionToken",
+    "clientCredentials",
+    "param"
+  ],
+  "createBaseInteractiveRequest": [
+    "scopes",
+    "options"
+  ],
+  "getBrokeredTokenInternal": [
+    "scopes",
+    "useDefaultBrokerAccount",
+    "param"
+  ],
+  "getBrokeredToken": [
+    "scopes",
+    "useDefaultBrokerAccount",
+    "param"
+  ],
+  "getTokenByInteractiveRequest": [
+    "scopes",
+    "param"
+  ],
+  "hasNativeBroker": [],
+  "hasVSCodePlugin": [],
+  "generatePluginConfiguration": [
+    "options"
+  ],
+  "getBrokerPlugin": [
+    "isVSCodePlugin"
+  ],
+  "ensureValidMsalToken": [
+    "scopes",
+    "msalToken",
+    "getTokenOptions"
+  ],
+  "error": [
+    "message"
+  ],
+  "getAuthorityHost": [
+    "options"
+  ],
+  "getAuthority": [
+    "tenantId",
+    "host"
+  ],
+  "getKnownAuthorities": [
+    "tenantId",
+    "authorityHost",
+    "disableInstanceDiscovery"
+  ],
+  "defaultLoggerCallback": [
+    "credLogger",
+    "param"
+  ],
+  "getMSALLogLevel": [
+    "logLevel"
+  ],
+  "randomUUID": [],
+  "handleMsalError": [
+    "scopes",
+    "error",
+    "getTokenOptions"
+  ],
+  "publicToMsal": [
+    "account"
+  ],
+  "msalToPublic": [
+    "clientId",
+    "account"
+  ],
+  "serializeAuthenticationRecord": [
+    "record"
+  ],
+  "deserializeAuthenticationRecord": [
+    "serializedRecord"
+  ],
+  "useIdentityPlugin": [
+    "plugin"
+  ],
+  "calculateRegionalAuthority": [
+    "regionalAuthority"
+  ],
+  "getBearerTokenProvider": [
+    "credential",
+    "scopes",
+    "options"
+  ],
+  "getRefreshedToken": [],
+  "getIdentityTokenEndpointSuffix": [
+    "tenantId"
+  ],
+  "processEnvVars": [
+    "supportedEnvVars"
+  ],
+  "logEnvVars": [
+    "credentialName",
+    "supportedEnvVars"
+  ],
+  "formatSuccess": [
+    "scope"
+  ],
+  "formatError": [
+    "scope",
+    "error"
+  ],
+  "credentialLoggerInstance": [
+    "title",
+    "parent",
+    "param"
+  ],
+  "info": [
+    "message"
+  ],
+  "warning": [
+    "message"
+  ],
+  "verbose": [
+    "message"
+  ],
+  "credentialLogger": [
+    "title",
+    "param"
+  ],
+  "createConfigurationErrorMessage": [
+    "tenantId"
+  ],
+  "processMultiTenantRequest": [
+    "tenantId",
+    "getTokenOptions",
+    "param",
+    "logger"
+  ],
+  "ensureScopes": [
+    "scopes"
+  ],
+  "ensureValidScopeForDevTimeCreds": [
+    "scope",
+    "logger"
+  ],
+  "getScopeResource": [
+    "scope"
+  ],
+  "checkSubscription": [
+    "logger",
+    "subscription"
+  ],
+  "checkTenantId": [
+    "logger",
+    "tenantId"
+  ],
+  "resolveTenantId": [
+    "logger",
+    "tenantId",
+    "clientId"
+  ],
+  "resolveAdditionallyAllowedTenantIds": [
+    "additionallyAllowedTenants"
+  ],
+  "handleOidcResponse": [
+    "response"
+  ],
+  "formatCommand": [
+    "commandName"
+  ],
+  "runCommands": [
+    "commands",
+    "timeout"
+  ],
+  "isLoginError": [
+    "err"
+  ],
+  "isNotInstalledError": [
+    "err"
+  ],
+  "parseJsonToken": [
+    "result"
+  ],
+  "parseCertificate": [
+    "certificateConfiguration",
+    "sendCertificateChain"
+  ],
+  "UnavailableDefaultCredential": {
+    "credentialUnavailableErrorMessage": [],
+    "credentialName": [],
+    "constructor": [
+      "credentialName",
+      "message"
+    ],
+    "getToken": []
+  },
+  "validateRequiredEnvVars": [
+    "options"
+  ],
+  "defaultDeviceCodePromptCallback": [
+    "deviceCodeInfo"
+  ],
+  "getAdditionallyAllowedTenants": [],
+  "getSendCertificateChain": [],
+  "createError": [
+    "message"
+  ],
+  "isNetworkError": [
+    "err"
+  ],
+  "checkUnsupportedTenant": [
+    "tenantId"
+  ]
+}
