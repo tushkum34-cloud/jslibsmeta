@@ -1,0 +1,5383 @@
+{
+  "Admin": {
+    "s": [],
+    "constructor": [
+      "db"
+    ],
+    "command": [
+      "command",
+      "options"
+    ],
+    "buildInfo": [
+      "options"
+    ],
+    "serverInfo": [
+      "options"
+    ],
+    "serverStatus": [
+      "options"
+    ],
+    "ping": [
+      "options"
+    ],
+    "removeUser": [
+      "username",
+      "options"
+    ],
+    "validateCollection": [
+      "collectionName",
+      "param"
+    ],
+    "listDatabases": [
+      "options"
+    ],
+    "replSetGetStatus": [
+      "options"
+    ]
+  },
+  "parseToElementsToArray": [
+    "bytes",
+    "offset"
+  ],
+  "pluckBSONSerializeOptions": [
+    "options"
+  ],
+  "resolveBSONOptions": [
+    "options",
+    "parent"
+  ],
+  "parseUtf8ValidationOption": [
+    "options"
+  ],
+  "Batch": {
+    "originalZeroIndex": [],
+    "currentIndex": [],
+    "originalIndexes": [],
+    "batchType": [],
+    "operations": [],
+    "size": [],
+    "sizeBytes": [],
+    "constructor": [
+      "batchType",
+      "originalZeroIndex"
+    ]
+  },
+  "BulkWriteResult": {
+    "result": [],
+    "insertedCount": [],
+    "matchedCount": [],
+    "modifiedCount": [],
+    "deletedCount": [],
+    "upsertedCount": [],
+    "upsertedIds": [],
+    "insertedIds": [],
+    "generateIdMap": [
+      "ids"
+    ],
+    "constructor": [
+      "bulkResult",
+      "isOrdered"
+    ],
+    "ok": [],
+    "getSuccessfullyInsertedIds": [
+      "bulkResult",
+      "isOrdered"
+    ],
+    "getUpsertedIdAt": [
+      "index"
+    ],
+    "getRawResponse": [],
+    "hasWriteErrors": [],
+    "getWriteErrorCount": [],
+    "getWriteErrorAt": [
+      "index"
+    ],
+    "getWriteErrors": [],
+    "getWriteConcernError": [],
+    "toString": [],
+    "isOk": []
+  },
+  "WriteConcernError": {
+    "serverError": [],
+    "constructor": [
+      "error"
+    ],
+    "code": [],
+    "errmsg": [],
+    "errInfo": [],
+    "toJSON": [],
+    "toString": []
+  },
+  "WriteError": {
+    "err": [],
+    "constructor": [
+      "err"
+    ],
+    "code": [],
+    "index": [],
+    "errmsg": [],
+    "errInfo": [],
+    "getOperation": [],
+    "toJSON": [],
+    "toString": []
+  },
+  "mergeBatchResults": [
+    "batch",
+    "bulkResult",
+    "err",
+    "result"
+  ],
+  "executeCommands": [
+    "bulkOperation",
+    "options"
+  ],
+  "MongoBulkWriteError": {
+    "result": [],
+    "writeErrors": [],
+    "err": [],
+    "constructor": [
+      "error",
+      "result"
+    ],
+    "name": [],
+    "insertedCount": [],
+    "matchedCount": [],
+    "modifiedCount": [],
+    "deletedCount": [],
+    "upsertedCount": [],
+    "insertedIds": [],
+    "upsertedIds": []
+  },
+  "FindOperators": {
+    "bulkOperation": [],
+    "constructor": [
+      "bulkOperation"
+    ],
+    "update": [
+      "updateDocument"
+    ],
+    "updateOne": [
+      "updateDocument"
+    ],
+    "replaceOne": [
+      "replacement"
+    ],
+    "deleteOne": [],
+    "delete": [],
+    "upsert": [],
+    "collation": [
+      "collation"
+    ],
+    "arrayFilters": [
+      "arrayFilters"
+    ],
+    "hint": [
+      "hint"
+    ]
+  },
+  "BulkOperationBase": {
+    "isOrdered": [],
+    "s": [],
+    "operationId": [],
+    "collection": [],
+    "retryWrites": [],
+    "constructor": [
+      "collection",
+      "options",
+      "isOrdered"
+    ],
+    "insert": [
+      "document"
+    ],
+    "find": [
+      "selector"
+    ],
+    "raw": [
+      "op"
+    ],
+    "length": [],
+    "bsonOptions": [],
+    "writeConcern": [],
+    "batches": [],
+    "execute": [
+      "param"
+    ],
+    "handleWriteError": [
+      "writeResult"
+    ],
+    "addToOperationsList": [
+      "batchType",
+      "document"
+    ],
+    "shouldForceServerObjectId": []
+  },
+  "isInsertBatch": [
+    "batch"
+  ],
+  "isUpdateBatch": [
+    "batch"
+  ],
+  "isDeleteBatch": [
+    "batch"
+  ],
+  "buildCurrentOp": [
+    "bulkOp"
+  ],
+  "OrderedBulkOperation": {
+    "constructor": [
+      "collection",
+      "options"
+    ],
+    "addToOperationsList": [
+      "batchType",
+      "document"
+    ]
+  },
+  "UnorderedBulkOperation": {
+    "constructor": [
+      "collection",
+      "options"
+    ],
+    "handleWriteError": [
+      "writeResult"
+    ],
+    "addToOperationsList": [
+      "batchType",
+      "document"
+    ]
+  },
+  "filterOutOptions": [
+    "options"
+  ],
+  "ChangeStream": {
+    "pipeline": [],
+    "options": [],
+    "parent": [],
+    "namespace": [],
+    "type": [],
+    "cursor": [],
+    "cursorStream": [],
+    "isClosed": [],
+    "mode": [],
+    "RESPONSE": [],
+    "MORE": [],
+    "INIT": [],
+    "CLOSE": [],
+    "CHANGE": [],
+    "END": [],
+    "ERROR": [],
+    "RESUME_TOKEN_CHANGED": [],
+    "timeoutContext": [],
+    "contextOwner": [],
+    "constructor": [
+      "parent",
+      "param",
+      "param"
+    ],
+    "resumeToken": [],
+    "hasNext": [],
+    "next": [],
+    "tryNext": [],
+    "closed": [],
+    "close": [],
+    "stream": [],
+    "_setIsEmitter": [],
+    "_setIsIterator": [],
+    "_createChangeStreamCursor": [
+      "options"
+    ],
+    "_closeEmitterModeWithError": [
+      "error"
+    ],
+    "_streamEvents": [
+      "cursor"
+    ],
+    "_endStream": [],
+    "_processChange": [
+      "change"
+    ],
+    "_processErrorStreamMode": [
+      "changeStreamError",
+      "cursorInitialized"
+    ],
+    "_processErrorIteratorMode": [
+      "changeStreamError",
+      "cursorInitialized"
+    ],
+    "_resume": [
+      "changeStreamError"
+    ]
+  },
+  "buildDisallowedChangeStreamOptions": [],
+  "AutoEncrypter": {
+    "_client": [],
+    "_bypassEncryption": [],
+    "_keyVaultNamespace": [],
+    "_keyVaultClient": [],
+    "_metaDataClient": [],
+    "_proxyOptions": [],
+    "_tlsOptions": [],
+    "_kmsProviders": [],
+    "_bypassMongocryptdAndCryptShared": [],
+    "_contextCounter": [],
+    "_credentialProviders": [],
+    "_mongocryptdManager": [],
+    "_mongocryptdClient": [],
+    "_mongocrypt": [],
+    "kDecorateResult": [],
+    "getMongoCrypt": [],
+    "constructor": [
+      "client",
+      "options"
+    ],
+    "init": [],
+    "close": [],
+    "encrypt": [
+      "ns",
+      "cmd",
+      "param"
+    ],
+    "decrypt": [
+      "response",
+      "param"
+    ],
+    "askForKMSCredentials": [],
+    "cryptSharedLibVersionInfo": [],
+    "libmongocryptVersion": []
+  },
+  "ClientEncryption": {
+    "_client": [],
+    "_keyVaultNamespace": [],
+    "_keyVaultClient": [],
+    "_proxyOptions": [],
+    "_tlsOptions": [],
+    "_kmsProviders": [],
+    "_timeoutMS": [],
+    "_mongoCrypt": [],
+    "_credentialProviders": [],
+    "getMongoCrypt": [],
+    "constructor": [
+      "client",
+      "options"
+    ],
+    "createDataKey": [
+      "provider",
+      "param"
+    ],
+    "rewrapManyDataKey": [
+      "filter",
+      "options"
+    ],
+    "deleteKey": [
+      "_id"
+    ],
+    "getKeys": [],
+    "getKey": [
+      "_id"
+    ],
+    "getKeyByAltName": [
+      "keyAltName"
+    ],
+    "addKeyAltName": [
+      "_id",
+      "keyAltName"
+    ],
+    "removeKeyAltName": [
+      "_id",
+      "keyAltName"
+    ],
+    "createEncryptedCollection": [
+      "db",
+      "name",
+      "options"
+    ],
+    "encrypt": [
+      "value",
+      "options"
+    ],
+    "encryptExpression": [
+      "expression",
+      "options"
+    ],
+    "decrypt": [
+      "value"
+    ],
+    "askForKMSCredentials": [],
+    "libmongocryptVersion": [],
+    "_encrypt": [
+      "value",
+      "expressionMode",
+      "options"
+    ]
+  },
+  "autoSelectSocketOptions": [
+    "baseOptions"
+  ],
+  "MongoCryptError": {
+    "constructor": [
+      "message",
+      "param"
+    ],
+    "name": []
+  },
+  "defaultErrorWrapper": [
+    "error"
+  ],
+  "MongoCryptInvalidArgumentError": {
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoCryptCreateDataKeyError": {
+    "encryptedFields": [],
+    "constructor": [
+      "encryptedFields",
+      "param"
+    ],
+    "name": []
+  },
+  "MongoCryptCreateEncryptedCollectionError": {
+    "encryptedFields": [],
+    "constructor": [
+      "encryptedFields",
+      "param"
+    ],
+    "name": []
+  },
+  "MongoCryptAzureKMSRequestError": {
+    "body": [],
+    "constructor": [
+      "message",
+      "body"
+    ],
+    "name": []
+  },
+  "MongoCryptKMSRequestNetworkTimeoutError": {
+    "name": []
+  },
+  "MongocryptdManager": {
+    "DEFAULT_MONGOCRYPTD_URI": [],
+    "uri": [],
+    "bypassSpawn": [],
+    "spawnPath": [],
+    "spawnArgs": [],
+    "_child": [],
+    "constructor": [
+      "param"
+    ],
+    "spawn": [],
+    "withRespawn": [
+      "fn"
+    ]
+  },
+  "loadAWSCredentials": [
+    "kmsProviders",
+    "provider"
+  ],
+  "AzureCredentialCache": {
+    "cachedToken": [],
+    "getToken": [],
+    "needsRefresh": [
+      "token"
+    ],
+    "resetCache": [],
+    "_getToken": []
+  },
+  "parseResponse": [
+    "response"
+  ],
+  "addAzureParams": [
+    "url",
+    "resource",
+    "username"
+  ],
+  "prepareRequest": [
+    "options"
+  ],
+  "fetchAzureKMSToken": [
+    "param"
+  ],
+  "loadAzureCredentials": [
+    "kmsProviders"
+  ],
+  "loadGCPCredentials": [
+    "kmsProviders"
+  ],
+  "isEmptyCredentials": [
+    "providerName",
+    "kmsProviders"
+  ],
+  "refreshKMSCredentials": [
+    "kmsProviders",
+    "credentialProviders"
+  ],
+  "loadSocks": [],
+  "debug": [
+    "msg"
+  ],
+  "StateMachine": {
+    "options": [],
+    "bsonOptions": [],
+    "constructor": [
+      "options",
+      "param"
+    ],
+    "execute": [
+      "executor",
+      "context",
+      "options"
+    ],
+    "kmsRequest": [
+      "request",
+      "options"
+    ],
+    "requests": [
+      "context",
+      "options"
+    ],
+    "validateTlsOptions": [
+      "kmsProvider",
+      "tlsOptions"
+    ],
+    "setTlsOptions": [
+      "tlsOptions",
+      "options"
+    ],
+    "fetchCollectionInfo": [
+      "client",
+      "ns",
+      "filter",
+      "options"
+    ],
+    "markCommand": [
+      "client",
+      "ns",
+      "command",
+      "options"
+    ],
+    "fetchKeys": [
+      "client",
+      "keyVaultNamespace",
+      "filter",
+      "options"
+    ]
+  },
+  "getStatus": [],
+  "getState": [],
+  "destroySockets": [],
+  "onerror": [
+    "cause"
+  ],
+  "onclose": [],
+  "AuthContext": {
+    "connection": [],
+    "credentials": [],
+    "reauthenticating": [],
+    "options": [],
+    "response": [],
+    "nonce": [],
+    "constructor": [
+      "connection",
+      "credentials",
+      "options"
+    ]
+  },
+  "AuthProvider": {
+    "prepare": [
+      "handshakeDoc",
+      "_authContext"
+    ],
+    "auth": [
+      "context"
+    ],
+    "reauth": [
+      "context"
+    ]
+  },
+  "getHexSha256": [
+    "str"
+  ],
+  "getHmacSha256": [
+    "key",
+    "str"
+  ],
+  "convertHeaderValue": [
+    "value"
+  ],
+  "stringToBuffer": [
+    "str"
+  ],
+  "aws4Sign": [
+    "options",
+    "credentials"
+  ],
+  "AWSSDKCredentialProvider": {
+    "_awsSDK": [],
+    "_provider": [],
+    "constructor": [
+      "credentialsProvider"
+    ],
+    "awsSDK": [],
+    "provider": [],
+    "getCredentials": []
+  },
+  "externalCommand": [
+    "connection",
+    "command"
+  ],
+  "GSSAPI": {
+    "auth": [
+      "authContext"
+    ]
+  },
+  "makeKerberosClient": [
+    "authContext"
+  ],
+  "saslStart": [
+    "payload"
+  ],
+  "saslContinue": [
+    "payload",
+    "conversationId"
+  ],
+  "negotiate": [
+    "client",
+    "retries",
+    "payload"
+  ],
+  "finalize": [
+    "client",
+    "user",
+    "payload"
+  ],
+  "performGSSAPICanonicalizeHostName": [
+    "host",
+    "mechanismProperties"
+  ],
+  "resolveCname": [
+    "host"
+  ],
+  "loadKrb": [],
+  "getDefaultAuthMechanism": [
+    "hello"
+  ],
+  "MongoCredentials": {
+    "username": [],
+    "password": [],
+    "source": [],
+    "mechanism": [],
+    "mechanismProperties": [],
+    "constructor": [
+      "options"
+    ],
+    "equals": [
+      "other"
+    ],
+    "resolveAuthMechanism": [
+      "hello"
+    ],
+    "validate": [],
+    "merge": [
+      "creds",
+      "options"
+    ]
+  },
+  "MongoDBAWS": {
+    "credentialFetcher": [],
+    "constructor": [
+      "credentialProvider"
+    ],
+    "auth": [
+      "authContext"
+    ]
+  },
+  "makeTempCredentials": [
+    "credentials",
+    "awsCredentialFetcher"
+  ],
+  "makeMongoCredentialsFromAWSTemp": [
+    "creds"
+  ],
+  "deriveRegion": [
+    "host"
+  ],
+  "AutomatedCallbackWorkflow": {
+    "constructor": [
+      "cache",
+      "callback"
+    ],
+    "execute": [
+      "connection",
+      "credentials"
+    ],
+    "fetchAccessToken": [
+      "credentials"
+    ]
+  },
+  "callback": [],
+  "getAzureTokenData": [
+    "tokenAudience",
+    "username"
+  ],
+  "isEndpointResultValid": [
+    "token"
+  ],
+  "CallbackWorkflow": {
+    "cache": [],
+    "callback": [],
+    "lastExecutionTime": [],
+    "constructor": [
+      "cache",
+      "callback"
+    ],
+    "speculativeAuth": [
+      "connection",
+      "credentials"
+    ],
+    "reauthenticate": [
+      "connection",
+      "credentials"
+    ],
+    "execute": [
+      "connection",
+      "credentials",
+      "response"
+    ],
+    "startAuthentication": [
+      "connection",
+      "credentials",
+      "response"
+    ],
+    "finishAuthentication": [
+      "connection",
+      "credentials",
+      "token",
+      "conversationId"
+    ],
+    "executeAndValidateCallback": [
+      "params"
+    ],
+    "withLock": [
+      "callback"
+    ]
+  },
+  "isCallbackResultInvalid": [
+    "tokenResult"
+  ],
+  "finishCommandDocument": [
+    "token",
+    "conversationId"
+  ],
+  "startCommandDocument": [
+    "credentials"
+  ],
+  "getGcpTokenData": [
+    "tokenAudience"
+  ],
+  "HumanCallbackWorkflow": {
+    "constructor": [
+      "cache",
+      "callback"
+    ],
+    "execute": [
+      "connection",
+      "credentials"
+    ],
+    "fetchAccessToken": [
+      "idpInfo",
+      "credentials",
+      "refreshToken"
+    ]
+  },
+  "MongoOIDCError": {
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "TokenCache": {
+    "accessToken": [],
+    "refreshToken": [],
+    "idpInfo": [],
+    "expiresInSeconds": [],
+    "hasAccessToken": [],
+    "hasRefreshToken": [],
+    "hasIdpInfo": [],
+    "getAccessToken": [],
+    "getRefreshToken": [],
+    "getIdpInfo": [],
+    "put": [
+      "response",
+      "idpInfo"
+    ],
+    "removeAccessToken": [],
+    "removeRefreshToken": []
+  },
+  "MongoDBOIDC": {
+    "workflow": [],
+    "constructor": [
+      "workflow"
+    ],
+    "auth": [
+      "authContext"
+    ],
+    "prepare": [
+      "handshakeDoc",
+      "authContext"
+    ]
+  },
+  "getCredentials": [
+    "authContext"
+  ],
+  "Plain": {
+    "auth": [
+      "authContext"
+    ]
+  },
+  "ScramSHA": {
+    "cryptoMethod": [],
+    "constructor": [
+      "cryptoMethod"
+    ],
+    "prepare": [
+      "handshakeDoc",
+      "authContext"
+    ],
+    "auth": [
+      "authContext"
+    ]
+  },
+  "cleanUsername": [
+    "username"
+  ],
+  "clientFirstMessageBare": [
+    "username",
+    "nonce"
+  ],
+  "makeFirstMessage": [
+    "cryptoMethod",
+    "credentials",
+    "nonce"
+  ],
+  "executeScram": [
+    "cryptoMethod",
+    "authContext"
+  ],
+  "continueScramConversation": [
+    "cryptoMethod",
+    "response",
+    "authContext"
+  ],
+  "parsePayload": [
+    "payload"
+  ],
+  "passwordDigest": [
+    "username",
+    "password"
+  ],
+  "xor": [
+    "a",
+    "b"
+  ],
+  "H": [
+    "method",
+    "text"
+  ],
+  "HMAC": [
+    "method",
+    "key",
+    "text"
+  ],
+  "_hiCachePurge": [],
+  "HI": [
+    "data",
+    "salt",
+    "iterations",
+    "cryptoMethod"
+  ],
+  "compareDigest": [
+    "lhs",
+    "rhs"
+  ],
+  "ScramSHA1": {
+    "constructor": []
+  },
+  "ScramSHA256": {
+    "constructor": []
+  },
+  "X509": {
+    "prepare": [
+      "handshakeDoc",
+      "authContext"
+    ],
+    "auth": [
+      "authContext"
+    ]
+  },
+  "x509AuthenticateCommand": [
+    "credentials"
+  ],
+  "CommandStartedEvent": {
+    "commandObj": [],
+    "requestId": [],
+    "databaseName": [],
+    "commandName": [],
+    "command": [],
+    "address": [],
+    "connectionId": [],
+    "serverConnectionId": [],
+    "serviceId": [],
+    "name": [],
+    "constructor": [
+      "connection",
+      "command",
+      "serverConnectionId"
+    ],
+    "hasServiceId": []
+  },
+  "CommandSucceededEvent": {
+    "address": [],
+    "connectionId": [],
+    "serverConnectionId": [],
+    "requestId": [],
+    "duration": [],
+    "commandName": [],
+    "reply": [],
+    "serviceId": [],
+    "databaseName": [],
+    "name": [],
+    "constructor": [
+      "connection",
+      "command",
+      "reply",
+      "started",
+      "serverConnectionId"
+    ],
+    "hasServiceId": []
+  },
+  "CommandFailedEvent": {
+    "address": [],
+    "connectionId": [],
+    "serverConnectionId": [],
+    "requestId": [],
+    "duration": [],
+    "commandName": [],
+    "failure": [],
+    "serviceId": [],
+    "databaseName": [],
+    "name": [],
+    "constructor": [
+      "connection",
+      "command",
+      "error",
+      "started",
+      "serverConnectionId"
+    ],
+    "hasServiceId": []
+  },
+  "extractCommandName": [
+    "commandDoc"
+  ],
+  "collectionName": [
+    "command"
+  ],
+  "maybeRedact": [
+    "commandName",
+    "commandDoc",
+    "result"
+  ],
+  "extractCommand": [
+    "command"
+  ],
+  "extractReply": [
+    "reply"
+  ],
+  "extractConnectionDetails": [
+    "connection"
+  ],
+  "OpQueryRequest": {
+    "ns": [],
+    "numberToSkip": [],
+    "numberToReturn": [],
+    "returnFieldSelector": [],
+    "requestId": [],
+    "pre32Limit": [],
+    "serializeFunctions": [],
+    "ignoreUndefined": [],
+    "maxBsonSize": [],
+    "checkKeys": [],
+    "batchSize": [],
+    "tailable": [],
+    "secondaryOk": [],
+    "oplogReplay": [],
+    "noCursorTimeout": [],
+    "awaitData": [],
+    "exhaust": [],
+    "partial": [],
+    "moreToCome": [],
+    "databaseName": [],
+    "query": [],
+    "constructor": [
+      "databaseName",
+      "query",
+      "options"
+    ],
+    "incRequestId": [],
+    "nextRequestId": [],
+    "getRequestId": [],
+    "toBin": []
+  },
+  "OpReply": {
+    "parsed": [],
+    "raw": [],
+    "data": [],
+    "opts": [],
+    "length": [],
+    "requestId": [],
+    "responseTo": [],
+    "opCode": [],
+    "fromCompressed": [],
+    "responseFlags": [],
+    "cursorId": [],
+    "startingFrom": [],
+    "numberReturned": [],
+    "cursorNotFound": [],
+    "queryFailure": [],
+    "shardConfigStale": [],
+    "awaitCapable": [],
+    "useBigInt64": [],
+    "promoteLongs": [],
+    "promoteValues": [],
+    "promoteBuffers": [],
+    "bsonRegExp": [],
+    "index": [],
+    "sections": [],
+    "moreToCome": [],
+    "constructor": [
+      "message",
+      "msgHeader",
+      "msgBody",
+      "opts"
+    ],
+    "isParsed": [],
+    "parse": []
+  },
+  "DocumentSequence": {
+    "field": [],
+    "documents": [],
+    "serializedDocumentsLength": [],
+    "chunks": [],
+    "header": [],
+    "constructor": [
+      "field",
+      "documents"
+    ],
+    "push": [
+      "document",
+      "buffer"
+    ],
+    "toBin": []
+  },
+  "OpMsgRequest": {
+    "requestId": [],
+    "serializeFunctions": [],
+    "ignoreUndefined": [],
+    "checkKeys": [],
+    "maxBsonSize": [],
+    "checksumPresent": [],
+    "moreToCome": [],
+    "exhaustAllowed": [],
+    "databaseName": [],
+    "command": [],
+    "options": [],
+    "constructor": [
+      "databaseName",
+      "command",
+      "options"
+    ],
+    "toBin": [],
+    "makeSections": [
+      "buffers",
+      "document"
+    ],
+    "extractDocumentSequences": [
+      "document"
+    ],
+    "serializeBson": [
+      "document"
+    ],
+    "getRequestId": []
+  },
+  "OpMsgResponse": {
+    "parsed": [],
+    "raw": [],
+    "data": [],
+    "opts": [],
+    "length": [],
+    "requestId": [],
+    "responseTo": [],
+    "opCode": [],
+    "fromCompressed": [],
+    "responseFlags": [],
+    "checksumPresent": [],
+    "moreToCome": [],
+    "exhaustAllowed": [],
+    "useBigInt64": [],
+    "promoteLongs": [],
+    "promoteValues": [],
+    "promoteBuffers": [],
+    "bsonRegExp": [],
+    "index": [],
+    "sections": [],
+    "constructor": [
+      "message",
+      "msgHeader",
+      "msgBody",
+      "opts"
+    ],
+    "isParsed": [],
+    "parse": []
+  },
+  "OpCompressedRequest": {
+    "command": [],
+    "options": [],
+    "constructor": [
+      "command",
+      "options"
+    ],
+    "canCompress": [
+      "command"
+    ],
+    "toBin": []
+  },
+  "applyBackpressureLabels": [
+    "error"
+  ],
+  "connect": [
+    "options"
+  ],
+  "makeConnection": [
+    "options",
+    "socket"
+  ],
+  "checkSupportedServer": [
+    "hello",
+    "options"
+  ],
+  "performInitialHandshake": [
+    "conn",
+    "options"
+  ],
+  "executeHandshake": [
+    "handshakeDoc",
+    "handshakeOptions"
+  ],
+  "prepareHandshakeDocument": [
+    "authContext"
+  ],
+  "parseConnectOptions": [
+    "options"
+  ],
+  "parseSslOptions": [
+    "options"
+  ],
+  "makeSocket": [
+    "options"
+  ],
+  "makeSocks5Connection": [
+    "options"
+  ],
+  "hasSessionSupport": [
+    "conn"
+  ],
+  "streamIdentifier": [
+    "stream",
+    "options"
+  ],
+  "Connection": {
+    "id": [],
+    "address": [],
+    "lastHelloMS": [],
+    "serverApi": [],
+    "helloOk": [],
+    "authContext": [],
+    "delayedTimeoutId": [],
+    "generation": [],
+    "accessToken": [],
+    "description": [],
+    "established": [],
+    "closed": [],
+    "lastUseTime": [],
+    "clusterTime": [],
+    "error": [],
+    "dataEvents": [],
+    "socketTimeoutMS": [],
+    "monitorCommands": [],
+    "socket": [],
+    "messageStream": [],
+    "COMMAND_STARTED": [],
+    "COMMAND_SUCCEEDED": [],
+    "COMMAND_FAILED": [],
+    "CLUSTER_TIME_RECEIVED": [],
+    "CLOSE": [],
+    "PINNED": [],
+    "UNPINNED": [],
+    "constructor": [
+      "stream",
+      "options"
+    ],
+    "hello": [
+      "response"
+    ],
+    "serviceId": [],
+    "loadBalanced": [],
+    "idleTime": [],
+    "hasSessionSupport": [],
+    "supportsOpMsg": [],
+    "shouldEmitAndLogCommand": [],
+    "markAvailable": [],
+    "onSocketError": [
+      "cause"
+    ],
+    "onTransformError": [
+      "error"
+    ],
+    "onError": [
+      "error"
+    ],
+    "onClose": [],
+    "onTimeout": [],
+    "destroy": [],
+    "cleanup": [
+      "error"
+    ],
+    "prepareCommand": [
+      "db",
+      "command",
+      "options"
+    ],
+    "sendWire": [
+      "message",
+      "options",
+      "responseType"
+    ],
+    "sendCommand": [
+      "ns",
+      "command",
+      "options",
+      "responseType"
+    ],
+    "command": [
+      "ns",
+      "command",
+      "param",
+      "responseType"
+    ],
+    "exhaustCommand": [
+      "ns",
+      "command",
+      "options",
+      "replyListener"
+    ],
+    "throwIfAborted": [],
+    "writeCommand": [
+      "command",
+      "options"
+    ],
+    "readMany": [
+      "options"
+    ]
+  },
+  "exhaustLoop": [],
+  "SizedMessageTransform": {
+    "bufferPool": [],
+    "connection": [],
+    "constructor": [
+      "param"
+    ],
+    "_transform": [
+      "chunk",
+      "encoding",
+      "callback"
+    ]
+  },
+  "CryptoConnection": {
+    "autoEncrypter": [],
+    "constructor": [
+      "stream",
+      "options"
+    ],
+    "command": [
+      "ns",
+      "cmd",
+      "options",
+      "responseType"
+    ]
+  },
+  "ConnectionPool": {
+    "options": [],
+    "generation": [],
+    "serviceGenerations": [],
+    "poolState": [],
+    "server": [],
+    "connections": [],
+    "pending": [],
+    "checkedOut": [],
+    "minPoolSizeTimer": [],
+    "connectionCounter": [],
+    "cancellationToken": [],
+    "waitQueue": [],
+    "metrics": [],
+    "processingWaitQueue": [],
+    "CONNECTION_POOL_CREATED": [],
+    "CONNECTION_POOL_CLOSED": [],
+    "CONNECTION_POOL_CLEARED": [],
+    "CONNECTION_POOL_READY": [],
+    "CONNECTION_CREATED": [],
+    "CONNECTION_READY": [],
+    "CONNECTION_CLOSED": [],
+    "CONNECTION_CHECK_OUT_STARTED": [],
+    "CONNECTION_CHECK_OUT_FAILED": [],
+    "CONNECTION_CHECKED_OUT": [],
+    "CONNECTION_CHECKED_IN": [],
+    "constructor": [
+      "server",
+      "options"
+    ],
+    "address": [],
+    "closed": [],
+    "totalConnectionCount": [],
+    "availableConnectionCount": [],
+    "pendingConnectionCount": [],
+    "currentCheckedOutCount": [],
+    "waitQueueSize": [],
+    "loadBalanced": [],
+    "serverError": [],
+    "checkedOutConnections": [],
+    "waitQueueErrorMetrics": [],
+    "ready": [],
+    "checkOut": [
+      "options"
+    ],
+    "checkIn": [
+      "connection"
+    ],
+    "clear": [
+      "param"
+    ],
+    "interruptInUseConnections": [
+      "minGeneration"
+    ],
+    "closeCheckedOutConnections": [],
+    "close": [],
+    "reauthenticate": [
+      "connection"
+    ],
+    "clearMinPoolSizeTimer": [],
+    "destroyConnection": [
+      "connection",
+      "reason"
+    ],
+    "connectionIsStale": [
+      "connection"
+    ],
+    "connectionIsIdle": [
+      "connection"
+    ],
+    "destroyConnectionIfPerished": [
+      "connection"
+    ],
+    "createConnection": [
+      "callback"
+    ],
+    "ensureMinPoolSize": [],
+    "processWaitQueue": []
+  },
+  "ConnectionPoolMonitoringEvent": {
+    "time": [],
+    "address": [],
+    "name": [],
+    "constructor": [
+      "pool"
+    ]
+  },
+  "ConnectionPoolCreatedEvent": {
+    "options": [],
+    "name": [],
+    "constructor": [
+      "pool"
+    ]
+  },
+  "ConnectionPoolReadyEvent": {
+    "name": [],
+    "constructor": [
+      "pool"
+    ]
+  },
+  "ConnectionPoolClosedEvent": {
+    "name": [],
+    "constructor": [
+      "pool"
+    ]
+  },
+  "ConnectionCreatedEvent": {
+    "connectionId": [],
+    "name": [],
+    "constructor": [
+      "pool",
+      "connection"
+    ]
+  },
+  "ConnectionReadyEvent": {
+    "connectionId": [],
+    "durationMS": [],
+    "name": [],
+    "constructor": [
+      "pool",
+      "connection",
+      "connectionCreatedEventTime"
+    ]
+  },
+  "ConnectionClosedEvent": {
+    "connectionId": [],
+    "reason": [],
+    "serviceId": [],
+    "name": [],
+    "error": [],
+    "constructor": [
+      "pool",
+      "connection",
+      "reason",
+      "error"
+    ]
+  },
+  "ConnectionCheckOutStartedEvent": {
+    "name": [],
+    "constructor": [
+      "pool"
+    ]
+  },
+  "ConnectionCheckOutFailedEvent": {
+    "reason": [],
+    "error": [],
+    "name": [],
+    "durationMS": [],
+    "constructor": [
+      "pool",
+      "reason",
+      "checkoutTime",
+      "error"
+    ]
+  },
+  "ConnectionCheckedOutEvent": {
+    "connectionId": [],
+    "name": [],
+    "durationMS": [],
+    "constructor": [
+      "pool",
+      "connection",
+      "checkoutTime"
+    ]
+  },
+  "ConnectionCheckedInEvent": {
+    "connectionId": [],
+    "name": [],
+    "constructor": [
+      "pool",
+      "connection"
+    ]
+  },
+  "ConnectionPoolClearedEvent": {
+    "serviceId": [],
+    "interruptInUseConnections": [],
+    "name": [],
+    "constructor": [
+      "pool",
+      "param"
+    ]
+  },
+  "PoolClosedError": {
+    "address": [],
+    "constructor": [
+      "pool"
+    ],
+    "name": []
+  },
+  "PoolClearedError": {
+    "address": [],
+    "constructor": [
+      "pool",
+      "message"
+    ],
+    "name": []
+  },
+  "PoolClearedOnNetworkError": {
+    "constructor": [
+      "pool"
+    ],
+    "name": []
+  },
+  "WaitQueueTimeoutError": {
+    "address": [],
+    "constructor": [
+      "message",
+      "address"
+    ],
+    "name": []
+  },
+  "isDriverInfoEqual": [
+    "info1",
+    "info2"
+  ],
+  "nonEmptyCmp": [
+    "s1",
+    "s2"
+  ],
+  "LimitedSizeDocument": {
+    "document": [],
+    "documentSize": [],
+    "maxSize": [],
+    "constructor": [
+      "maxSize"
+    ],
+    "ifItFitsItSits": [
+      "key",
+      "value"
+    ],
+    "toObject": []
+  },
+  "makeClientMetadata": [
+    "driverInfoList",
+    "param"
+  ],
+  "getContainerMetadata": [],
+  "addContainerMetadata": [
+    "originalMetadata"
+  ],
+  "getFAASEnv": [],
+  "getRuntimeInfo": [],
+  "ConnectionPoolMetrics": {
+    "TXN": [],
+    "CURSOR": [],
+    "OTHER": [],
+    "txnConnections": [],
+    "cursorConnections": [],
+    "otherConnections": [],
+    "markPinned": [
+      "pinType"
+    ],
+    "markUnpinned": [
+      "pinType"
+    ],
+    "info": [
+      "maxPoolSize"
+    ],
+    "reset": []
+  },
+  "StreamDescription": {
+    "address": [],
+    "type": [],
+    "minWireVersion": [],
+    "maxWireVersion": [],
+    "maxBsonObjectSize": [],
+    "maxMessageSizeBytes": [],
+    "maxWriteBatchSize": [],
+    "compressors": [],
+    "compressor": [],
+    "logicalSessionTimeoutMinutes": [],
+    "loadBalanced": [],
+    "__nodejs_mock_server__": [],
+    "zlibCompressionLevel": [],
+    "serverConnectionId": [],
+    "hello": [],
+    "constructor": [
+      "address",
+      "options"
+    ],
+    "receiveResponse": [
+      "response"
+    ],
+    "parseServerConnectionID": [
+      "serverConnectionId"
+    ]
+  },
+  "zlibInflate": [
+    "buf"
+  ],
+  "zlibDeflate": [
+    "buf",
+    "options"
+  ],
+  "loadSnappy": [],
+  "compress": [
+    "options",
+    "dataToBeCompressed"
+  ],
+  "decompress": [
+    "compressorID",
+    "compressedData"
+  ],
+  "loadZstd": [],
+  "compressCommand": [
+    "command",
+    "description"
+  ],
+  "decompressResponse": [
+    "message"
+  ],
+  "onData": [
+    "emitter",
+    "param"
+  ],
+  "eventHandler": [
+    "value"
+  ],
+  "errorHandler": [
+    "err"
+  ],
+  "closeHandler": [],
+  "OnDemandDocument": {
+    "cache": [],
+    "indexFound": [],
+    "elements": [],
+    "bson": [],
+    "offset": [],
+    "isArray": [],
+    "constructor": [
+      "bson",
+      "param",
+      "param",
+      "elements"
+    ],
+    "isElementName": [
+      "name",
+      "element"
+    ],
+    "getElement": [
+      "name"
+    ],
+    "toJSValue": [
+      "element",
+      "as"
+    ],
+    "size": [],
+    "has": [
+      "name"
+    ],
+    "get": [
+      "name",
+      "as",
+      "required"
+    ],
+    "getNumber": [
+      "name",
+      "required"
+    ],
+    "toObject": [
+      "options"
+    ],
+    "toBytes": []
+  },
+  "isErrorResponse": [
+    "bson",
+    "elements"
+  ],
+  "MongoDBResponse": {
+    "get": [
+      "name",
+      "as",
+      "required"
+    ],
+    "is": [
+      "value"
+    ],
+    "make": [
+      "bson"
+    ],
+    "empty": [],
+    "isMaxTimeExpiredError": [],
+    "recoveryToken": [],
+    "atClusterTime": [],
+    "operationTime": [],
+    "ok": [],
+    "$err": [],
+    "errmsg": [],
+    "code": [],
+    "clusterTime": [],
+    "$clusterTime": [],
+    "toObject": [
+      "options"
+    ]
+  },
+  "CursorResponse": {
+    "encryptedResponse": [],
+    "emptyGetMore": [],
+    "is": [
+      "value"
+    ],
+    "_batch": [],
+    "iterated": [],
+    "cursor": [],
+    "id": [],
+    "ns": [],
+    "length": [],
+    "_encryptedBatch": [],
+    "encryptedBatch": [],
+    "batch": [],
+    "batchSize": [],
+    "postBatchResumeToken": [],
+    "shift": [
+      "options"
+    ],
+    "clear": []
+  },
+  "ExplainedCursorResponse": {
+    "isExplain": [],
+    "id": [],
+    "batchSize": [],
+    "ns": [],
+    "_length": [],
+    "length": [],
+    "shift": [
+      "options"
+    ]
+  },
+  "ClientBulkWriteCursorResponse": {
+    "insertedCount": [],
+    "upsertedCount": [],
+    "matchedCount": [],
+    "modifiedCount": [],
+    "deletedCount": [],
+    "writeConcernError": []
+  },
+  "getReadPreference": [
+    "options"
+  ],
+  "isSharded": [
+    "topologyOrServer"
+  ],
+  "Collection": {
+    "s": [],
+    "client": [],
+    "db": [],
+    "constructor": [
+      "db",
+      "name",
+      "options"
+    ],
+    "dbName": [],
+    "collectionName": [],
+    "namespace": [],
+    "fullNamespace": [],
+    "readConcern": [],
+    "readPreference": [],
+    "bsonOptions": [],
+    "writeConcern": [],
+    "hint": [
+      "v"
+    ],
+    "timeoutMS": [],
+    "insertOne": [
+      "doc",
+      "options"
+    ],
+    "insertMany": [
+      "docs",
+      "options"
+    ],
+    "bulkWrite": [
+      "operations",
+      "options"
+    ],
+    "updateOne": [
+      "filter",
+      "update",
+      "options"
+    ],
+    "replaceOne": [
+      "filter",
+      "replacement",
+      "options"
+    ],
+    "updateMany": [
+      "filter",
+      "update",
+      "options"
+    ],
+    "deleteOne": [
+      "param",
+      "param"
+    ],
+    "deleteMany": [
+      "param",
+      "param"
+    ],
+    "rename": [
+      "newName",
+      "options"
+    ],
+    "drop": [
+      "options"
+    ],
+    "findOne": [
+      "param",
+      "param"
+    ],
+    "find": [
+      "param",
+      "param"
+    ],
+    "options": [
+      "options"
+    ],
+    "isCapped": [
+      "options"
+    ],
+    "createIndex": [
+      "indexSpec",
+      "options"
+    ],
+    "createIndexes": [
+      "indexSpecs",
+      "options"
+    ],
+    "dropIndex": [
+      "indexName",
+      "options"
+    ],
+    "dropIndexes": [
+      "options"
+    ],
+    "listIndexes": [
+      "options"
+    ],
+    "indexExists": [
+      "indexes",
+      "options"
+    ],
+    "indexInformation": [
+      "options"
+    ],
+    "estimatedDocumentCount": [
+      "options"
+    ],
+    "countDocuments": [
+      "param",
+      "param"
+    ],
+    "distinct": [
+      "key",
+      "param",
+      "param"
+    ],
+    "indexes": [
+      "options"
+    ],
+    "findOneAndDelete": [
+      "filter",
+      "options"
+    ],
+    "findOneAndReplace": [
+      "filter",
+      "replacement",
+      "options"
+    ],
+    "findOneAndUpdate": [
+      "filter",
+      "update",
+      "options"
+    ],
+    "aggregate": [
+      "param",
+      "options"
+    ],
+    "watch": [
+      "param",
+      "param"
+    ],
+    "initializeUnorderedBulkOp": [
+      "options"
+    ],
+    "initializeOrderedBulkOp": [
+      "options"
+    ],
+    "count": [
+      "param",
+      "param"
+    ],
+    "listSearchIndexes": [
+      "indexNameOrOptions",
+      "options"
+    ],
+    "createSearchIndex": [
+      "description"
+    ],
+    "createSearchIndexes": [
+      "descriptions"
+    ],
+    "dropSearchIndex": [
+      "name"
+    ],
+    "updateSearchIndex": [
+      "name",
+      "definition"
+    ]
+  },
+  "retryDNSTimeoutFor": [
+    "api"
+  ],
+  "resolveSRVRecord": [
+    "options"
+  ],
+  "checkTLSOptions": [
+    "allOptions"
+  ],
+  "check": [
+    "a",
+    "b"
+  ],
+  "getBoolean": [
+    "name",
+    "value"
+  ],
+  "getIntFromOptions": [
+    "name",
+    "value"
+  ],
+  "getUIntFromOptions": [
+    "name",
+    "value"
+  ],
+  "entriesFromString": [
+    "value"
+  ],
+  "CaseInsensitiveMap": {
+    "constructor": [
+      "param"
+    ],
+    "has": [
+      "k"
+    ],
+    "get": [
+      "k"
+    ],
+    "set": [
+      "k",
+      "v"
+    ],
+    "delete": [
+      "k"
+    ]
+  },
+  "parseOptions": [
+    "uri",
+    "param",
+    "param"
+  ],
+  "validateLoadBalancedOptions": [
+    "hosts",
+    "mongoOptions",
+    "isSrv"
+  ],
+  "setOption": [
+    "mongoOptions",
+    "key",
+    "descriptor",
+    "values"
+  ],
+  "removeActiveCursor": [
+    "this"
+  ],
+  "AbstractCursor": {
+    "cursorId": [],
+    "cursorSession": [],
+    "selectedServer": [],
+    "cursorNamespace": [],
+    "documents": [],
+    "cursorClient": [],
+    "transform": [],
+    "initialized": [],
+    "isClosed": [],
+    "isKilled": [],
+    "cursorOptions": [],
+    "timeoutContext": [],
+    "CLOSE": [],
+    "deserializationOptions": [],
+    "signal": [],
+    "abortListener": [],
+    "constructor": [
+      "client",
+      "namespace",
+      "param"
+    ],
+    "id": [],
+    "isDead": [],
+    "client": [],
+    "server": [],
+    "namespace": [],
+    "readPreference": [],
+    "readConcern": [],
+    "session": [
+      "clientSession"
+    ],
+    "closed": [],
+    "killed": [],
+    "loadBalanced": [],
+    "trackCursor": [],
+    "bufferedCount": [],
+    "readBufferedDocuments": [
+      "number"
+    ],
+    "stream": [],
+    "hasNext": [],
+    "next": [],
+    "tryNext": [],
+    "forEach": [
+      "iterator"
+    ],
+    "close": [
+      "options"
+    ],
+    "toArray": [],
+    "addCursorFlag": [
+      "flag",
+      "value"
+    ],
+    "map": [
+      "transform"
+    ],
+    "withReadPreference": [
+      "readPreference"
+    ],
+    "withReadConcern": [
+      "readConcern"
+    ],
+    "maxTimeMS": [
+      "value"
+    ],
+    "batchSize": [
+      "value"
+    ],
+    "rewind": [],
+    "clone": [],
+    "_initialize": [
+      "session"
+    ],
+    "getMore": [],
+    "cursorInit": [],
+    "fetchBatch": [],
+    "cleanup": [
+      "timeoutMS",
+      "error"
+    ],
+    "hasEmittedClose": [],
+    "emitClose": [],
+    "transformDocument": [
+      "document"
+    ],
+    "throwIfInitialized": []
+  },
+  "timeoutContextForKillCursors": [],
+  "withEmitClose": [
+    "fn"
+  ],
+  "close": [],
+  "ReadableCursorStream": {
+    "_cursor": [],
+    "_readInProgress": [],
+    "constructor": [
+      "cursor"
+    ],
+    "_read": [
+      "size"
+    ],
+    "_destroy": [
+      "error",
+      "callback"
+    ],
+    "_readNext": []
+  },
+  "CursorTimeoutContext": {
+    "timeoutContext": [],
+    "owner": [],
+    "constructor": [
+      "timeoutContext",
+      "owner"
+    ],
+    "serverSelectionTimeout": [],
+    "connectionCheckoutTimeout": [],
+    "clearServerSelectionTimeout": [],
+    "timeoutForSocketWrite": [],
+    "timeoutForSocketRead": [],
+    "csotEnabled": [],
+    "refresh": [],
+    "clear": [],
+    "maxTimeMS": [],
+    "timeoutMS": [],
+    "refreshed": [],
+    "addMaxTimeMSToCommand": [
+      "command",
+      "options"
+    ],
+    "getSocketTimeoutMS": []
+  },
+  "AggregationCursor": {
+    "pipeline": [],
+    "aggregateOptions": [],
+    "constructor": [
+      "client",
+      "namespace",
+      "param",
+      "param"
+    ],
+    "clone": [],
+    "map": [
+      "transform"
+    ],
+    "_initialize": [
+      "session"
+    ],
+    "explain": [
+      "verbosity",
+      "options"
+    ],
+    "addStage": [
+      "stage"
+    ],
+    "group": [
+      "$group"
+    ],
+    "limit": [
+      "$limit"
+    ],
+    "match": [
+      "$match"
+    ],
+    "out": [
+      "$out"
+    ],
+    "project": [
+      "$project"
+    ],
+    "lookup": [
+      "$lookup"
+    ],
+    "redact": [
+      "$redact"
+    ],
+    "skip": [
+      "$skip"
+    ],
+    "sort": [
+      "$sort"
+    ],
+    "unwind": [
+      "$unwind"
+    ],
+    "geoNear": [
+      "$geoNear"
+    ]
+  },
+  "ChangeStreamCursor": {
+    "_resumeToken": [],
+    "startAtOperationTime": [],
+    "hasReceived": [],
+    "changeStreamCursorOptions": [],
+    "postBatchResumeToken": [],
+    "pipeline": [],
+    "maxWireVersion": [],
+    "constructor": [
+      "client",
+      "namespace",
+      "param",
+      "param"
+    ],
+    "resumeToken": [],
+    "resumeOptions": [],
+    "cacheResumeToken": [
+      "resumeToken"
+    ],
+    "_processBatch": [
+      "response"
+    ],
+    "clone": [],
+    "_initialize": [
+      "session"
+    ],
+    "getMore": []
+  },
+  "ClientBulkWriteCursor": {
+    "commandBuilder": [],
+    "cursorResponse": [],
+    "clientBulkWriteOptions": [],
+    "constructor": [
+      "client",
+      "commandBuilder",
+      "param"
+    ],
+    "response": [],
+    "operations": [],
+    "clone": [],
+    "_initialize": [
+      "session"
+    ]
+  },
+  "ExplainableCursor": {
+    "explain": [
+      "verbosity",
+      "options"
+    ],
+    "resolveExplainTimeoutOptions": [
+      "verbosity",
+      "options"
+    ]
+  },
+  "FindCursor": {
+    "cursorFilter": [],
+    "numReturned": [],
+    "findOptions": [],
+    "constructor": [
+      "client",
+      "namespace",
+      "param",
+      "param"
+    ],
+    "clone": [],
+    "map": [
+      "transform"
+    ],
+    "_initialize": [
+      "session"
+    ],
+    "getMore": [],
+    "count": [
+      "options"
+    ],
+    "explain": [
+      "verbosity",
+      "options"
+    ],
+    "filter": [
+      "filter"
+    ],
+    "hint": [
+      "hint"
+    ],
+    "min": [
+      "min"
+    ],
+    "max": [
+      "max"
+    ],
+    "returnKey": [
+      "value"
+    ],
+    "showRecordId": [
+      "value"
+    ],
+    "addQueryModifier": [
+      "name",
+      "value"
+    ],
+    "comment": [
+      "value"
+    ],
+    "maxAwaitTimeMS": [
+      "value"
+    ],
+    "maxTimeMS": [
+      "value"
+    ],
+    "project": [
+      "value"
+    ],
+    "sort": [
+      "sort",
+      "direction"
+    ],
+    "allowDiskUse": [
+      "param"
+    ],
+    "collation": [
+      "value"
+    ],
+    "limit": [
+      "value"
+    ],
+    "skip": [
+      "value"
+    ]
+  },
+  "ListCollectionsCursor": {
+    "parent": [],
+    "filter": [],
+    "options": [],
+    "constructor": [
+      "db",
+      "filter",
+      "options"
+    ],
+    "clone": [],
+    "_initialize": [
+      "session"
+    ]
+  },
+  "ListIndexesCursor": {
+    "parent": [],
+    "options": [],
+    "constructor": [
+      "collection",
+      "options"
+    ],
+    "clone": [],
+    "_initialize": [
+      "session"
+    ]
+  },
+  "ListSearchIndexesCursor": {
+    "constructor": [
+      "param",
+      "name",
+      "param"
+    ]
+  },
+  "RunCommandCursor": {
+    "command": [],
+    "getMoreOptions": [],
+    "setComment": [
+      "comment"
+    ],
+    "setMaxTimeMS": [
+      "maxTimeMS"
+    ],
+    "setBatchSize": [
+      "batchSize"
+    ],
+    "clone": [],
+    "withReadConcern": [
+      "_"
+    ],
+    "addCursorFlag": [
+      "_",
+      "__"
+    ],
+    "maxTimeMS": [
+      "_"
+    ],
+    "batchSize": [
+      "_"
+    ],
+    "db": [],
+    "constructor": [
+      "db",
+      "command",
+      "param"
+    ],
+    "_initialize": [
+      "session"
+    ],
+    "getMore": []
+  },
+  "Db": {
+    "s": [],
+    "client": [],
+    "SYSTEM_NAMESPACE_COLLECTION": [],
+    "SYSTEM_INDEX_COLLECTION": [],
+    "SYSTEM_PROFILE_COLLECTION": [],
+    "SYSTEM_USER_COLLECTION": [],
+    "SYSTEM_COMMAND_COLLECTION": [],
+    "SYSTEM_JS_COLLECTION": [],
+    "constructor": [
+      "client",
+      "databaseName",
+      "options"
+    ],
+    "databaseName": [],
+    "options": [],
+    "secondaryOk": [],
+    "readConcern": [],
+    "readPreference": [],
+    "bsonOptions": [],
+    "writeConcern": [],
+    "namespace": [],
+    "timeoutMS": [],
+    "createCollection": [
+      "name",
+      "options"
+    ],
+    "command": [
+      "command",
+      "options"
+    ],
+    "aggregate": [
+      "param",
+      "options"
+    ],
+    "admin": [],
+    "collection": [
+      "name",
+      "param"
+    ],
+    "stats": [
+      "options"
+    ],
+    "listCollections": [
+      "param",
+      "param"
+    ],
+    "renameCollection": [
+      "fromCollection",
+      "toCollection",
+      "options"
+    ],
+    "dropCollection": [
+      "name",
+      "options"
+    ],
+    "dropDatabase": [
+      "options"
+    ],
+    "collections": [
+      "options"
+    ],
+    "createIndex": [
+      "name",
+      "indexSpec",
+      "options"
+    ],
+    "removeUser": [
+      "username",
+      "options"
+    ],
+    "setProfilingLevel": [
+      "level",
+      "options"
+    ],
+    "profilingLevel": [
+      "options"
+    ],
+    "indexInformation": [
+      "name",
+      "options"
+    ],
+    "watch": [
+      "param",
+      "param"
+    ],
+    "runCursorCommand": [
+      "command",
+      "options"
+    ]
+  },
+  "makeErrorModule": [
+    "error"
+  ],
+  "getKerberos": [],
+  "getZstdLibrary": [],
+  "getAwsCredentialProvider": [],
+  "getGcpMetadata": [],
+  "getSnappy": [],
+  "getSocks": [],
+  "getMongoDBClientEncryption": [],
+  "Encrypter": {
+    "internalClient": [],
+    "bypassAutoEncryption": [],
+    "needsConnecting": [],
+    "autoEncrypter": [],
+    "constructor": [
+      "client",
+      "uri",
+      "options"
+    ],
+    "getInternalClient": [
+      "client",
+      "uri",
+      "options"
+    ],
+    "connectInternalClient": [],
+    "close": [
+      "client"
+    ],
+    "checkForMongoCrypt": []
+  },
+  "isAggregateError": [
+    "e"
+  ],
+  "MongoError": {
+    "errorLabelSet": [],
+    "errorLabels": [],
+    "code": [],
+    "topologyVersion": [],
+    "connectionGeneration": [],
+    "cause": [],
+    "constructor": [
+      "message",
+      "options"
+    ],
+    "buildErrorMessage": [
+      "e"
+    ],
+    "name": [],
+    "errmsg": [],
+    "hasErrorLabel": [
+      "label"
+    ],
+    "addErrorLabel": [
+      "label"
+    ]
+  },
+  "MongoServerError": {
+    "errorResponse": [],
+    "codeName": [],
+    "writeConcernError": [],
+    "errInfo": [],
+    "ok": [],
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoDriverError": {
+    "constructor": [
+      "message",
+      "options"
+    ],
+    "name": []
+  },
+  "MongoAPIError": {
+    "constructor": [
+      "message",
+      "options"
+    ],
+    "name": []
+  },
+  "MongoRuntimeError": {
+    "constructor": [
+      "message",
+      "options"
+    ],
+    "name": []
+  },
+  "MongoStalePrimaryError": {
+    "constructor": [
+      "message",
+      "options"
+    ],
+    "name": []
+  },
+  "MongoBatchReExecutionError": {
+    "constructor": [
+      "param"
+    ],
+    "name": []
+  },
+  "MongoDecompressionError": {
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoNotConnectedError": {
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoTransactionError": {
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoExpiredSessionError": {
+    "constructor": [
+      "param"
+    ],
+    "name": []
+  },
+  "MongoKerberosError": {
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoAWSError": {
+    "constructor": [
+      "message",
+      "options"
+    ],
+    "name": []
+  },
+  "MongoAzureError": {
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoGCPError": {
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoClientBulkWriteError": {
+    "writeConcernErrors": [],
+    "writeErrors": [],
+    "partialResult": [],
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoClientBulkWriteCursorError": {
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoClientBulkWriteExecutionError": {
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoChangeStreamError": {
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoTailableCursorError": {
+    "constructor": [
+      "param"
+    ],
+    "name": []
+  },
+  "MongoGridFSStreamError": {
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoGridFSChunkError": {
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoUnexpectedServerResponseError": {
+    "constructor": [
+      "message",
+      "options"
+    ],
+    "name": []
+  },
+  "MongoOperationTimeoutError": {
+    "name": []
+  },
+  "MongoCursorInUseError": {
+    "constructor": [
+      "param"
+    ],
+    "name": []
+  },
+  "MongoServerClosedError": {
+    "constructor": [
+      "param"
+    ],
+    "name": []
+  },
+  "MongoCursorExhaustedError": {
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoTopologyClosedError": {
+    "constructor": [
+      "param"
+    ],
+    "name": []
+  },
+  "MongoClientClosedError": {
+    "constructor": [],
+    "name": []
+  },
+  "MongoNetworkError": {
+    "beforeHandshake": [],
+    "constructor": [
+      "message",
+      "options"
+    ],
+    "name": []
+  },
+  "MongoNetworkTimeoutError": {
+    "constructor": [
+      "message",
+      "options"
+    ],
+    "name": []
+  },
+  "MongoParseError": {
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoInvalidArgumentError": {
+    "constructor": [
+      "message",
+      "options"
+    ],
+    "name": []
+  },
+  "MongoCompatibilityError": {
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoMissingCredentialsError": {
+    "constructor": [
+      "message"
+    ],
+    "name": []
+  },
+  "MongoMissingDependencyError": {
+    "dependencyName": [],
+    "cause": [],
+    "constructor": [
+      "message",
+      "options"
+    ],
+    "name": []
+  },
+  "MongoSystemError": {
+    "reason": [],
+    "constructor": [
+      "message",
+      "reason"
+    ],
+    "name": []
+  },
+  "MongoServerSelectionError": {
+    "constructor": [
+      "message",
+      "reason"
+    ],
+    "name": []
+  },
+  "MongoWriteConcernError": {
+    "result": [],
+    "constructor": [
+      "result"
+    ],
+    "name": []
+  },
+  "needsRetryableWriteLabel": [
+    "error",
+    "maxWireVersion",
+    "serverType"
+  ],
+  "isRetryableWriteError": [
+    "error"
+  ],
+  "isRetryableReadError": [
+    "error"
+  ],
+  "isRecoveringError": [
+    "err"
+  ],
+  "isNotWritablePrimaryError": [
+    "err"
+  ],
+  "isNodeShuttingDownError": [
+    "err"
+  ],
+  "isStateChangeError": [
+    "error"
+  ],
+  "isNetworkTimeoutError": [
+    "err"
+  ],
+  "isResumableError": [
+    "error",
+    "wireVersion"
+  ],
+  "Explain": {
+    "verbosity": [],
+    "maxTimeMS": [],
+    "constructor": [
+      "verbosity",
+      "maxTimeMS"
+    ],
+    "fromOptions": [
+      "param"
+    ]
+  },
+  "validateExplainTimeoutOptions": [
+    "options",
+    "explain"
+  ],
+  "decorateWithExplain": [
+    "command",
+    "explain"
+  ],
+  "GridFSBucketReadStream": {
+    "s": [],
+    "FILE": [],
+    "constructor": [
+      "chunks",
+      "files",
+      "readPreference",
+      "filter",
+      "options"
+    ],
+    "_read": [],
+    "start": [
+      "param"
+    ],
+    "end": [
+      "param"
+    ],
+    "abort": []
+  },
+  "throwIfInitialized": [
+    "stream"
+  ],
+  "doRead": [
+    "stream"
+  ],
+  "handleReadResult": [
+    "doc"
+  ],
+  "init": [
+    "stream"
+  ],
+  "waitForFile": [
+    "stream",
+    "callback"
+  ],
+  "handleStartOption": [
+    "stream",
+    "doc",
+    "options"
+  ],
+  "handleEndOption": [
+    "stream",
+    "doc",
+    "cursor",
+    "options"
+  ],
+  "GridFSBucket": {
+    "s": [],
+    "INDEX": [],
+    "constructor": [
+      "db",
+      "options"
+    ],
+    "openUploadStream": [
+      "filename",
+      "options"
+    ],
+    "openUploadStreamWithId": [
+      "id",
+      "filename",
+      "options"
+    ],
+    "openDownloadStream": [
+      "id",
+      "options"
+    ],
+    "delete": [
+      "id",
+      "options"
+    ],
+    "find": [
+      "param",
+      "param"
+    ],
+    "openDownloadStreamByName": [
+      "filename",
+      "options"
+    ],
+    "rename": [
+      "id",
+      "filename",
+      "options"
+    ],
+    "drop": [
+      "options"
+    ]
+  },
+  "GridFSBucketWriteStream": {
+    "bucket": [],
+    "chunks": [],
+    "files": [],
+    "filename": [],
+    "options": [],
+    "done": [],
+    "id": [],
+    "chunkSizeBytes": [],
+    "bufToStore": [],
+    "length": [],
+    "n": [],
+    "pos": [],
+    "state": [],
+    "writeConcern": [],
+    "gridFSFile": [],
+    "timeoutContext": [],
+    "constructor": [
+      "bucket",
+      "filename",
+      "options"
+    ],
+    "_construct": [
+      "callback"
+    ],
+    "_write": [
+      "chunk",
+      "encoding",
+      "callback"
+    ],
+    "_final": [
+      "callback"
+    ],
+    "abort": []
+  },
+  "handleError": [
+    "stream",
+    "error",
+    "callback"
+  ],
+  "createChunkDoc": [
+    "filesId",
+    "n",
+    "data"
+  ],
+  "checkChunksIndex": [
+    "stream"
+  ],
+  "checkDone": [
+    "stream",
+    "callback"
+  ],
+  "checkIndexes": [
+    "stream"
+  ],
+  "createFilesDoc": [
+    "_id",
+    "length",
+    "chunkSize",
+    "filename",
+    "metadata"
+  ],
+  "doWrite": [
+    "stream",
+    "chunk",
+    "encoding",
+    "callback"
+  ],
+  "writeRemnant": [
+    "stream",
+    "callback"
+  ],
+  "isAborted": [
+    "stream",
+    "callback"
+  ],
+  "MongoClient": {
+    "s": [],
+    "topology": [],
+    "mongoLogger": [],
+    "connectionLock": [],
+    "closeLock": [],
+    "options": [],
+    "driverInfoList": [],
+    "constructor": [
+      "url",
+      "options"
+    ],
+    "appendMetadata": [
+      "driverInfo"
+    ],
+    "checkForNonGenuineHosts": [],
+    "serverApi": [],
+    "monitorCommands": [
+      "value"
+    ],
+    "autoEncrypter": [],
+    "readConcern": [],
+    "writeConcern": [],
+    "readPreference": [],
+    "bsonOptions": [],
+    "timeoutMS": [],
+    "bulkWrite": [
+      "models",
+      "options"
+    ],
+    "connect": [
+      "url",
+      "options"
+    ],
+    "_connect": [],
+    "close": [
+      "param"
+    ],
+    "_close": [],
+    "db": [
+      "dbName",
+      "options"
+    ],
+    "startSession": [
+      "options"
+    ],
+    "withSession": [
+      "optionsOrExecutor",
+      "executor"
+    ],
+    "watch": [
+      "param",
+      "param"
+    ]
+  },
+  "topologyConnect": [],
+  "endSessions": [
+    "client",
+    "param"
+  ],
+  "MongoClientAuthProviders": {
+    "existingProviders": [],
+    "getOrCreateProvider": [
+      "name",
+      "authMechanismProperties"
+    ]
+  },
+  "getWorkflow": [
+    "authMechanismProperties"
+  ],
+  "SeverityLevelMap": {
+    "constructor": [
+      "entries"
+    ],
+    "getNumericSeverityLevel": [
+      "severity"
+    ],
+    "getSeverityLevelName": [
+      "level"
+    ]
+  },
+  "parseSeverityFromString": [
+    "s"
+  ],
+  "createStdioLogger": [
+    "stream"
+  ],
+  "resolveLogPath": [
+    "param",
+    "param"
+  ],
+  "resolveSeverityConfiguration": [
+    "clientOption",
+    "environmentOption",
+    "defaultSeverity"
+  ],
+  "compareSeverity": [
+    "s0",
+    "s1"
+  ],
+  "stringifyWithMaxLen": [
+    "value",
+    "maxDocumentLength",
+    "param"
+  ],
+  "maxDocumentLengthEnsurer": [
+    "key",
+    "value"
+  ],
+  "isLogConvertible": [
+    "obj"
+  ],
+  "attachServerSelectionFields": [
+    "log",
+    "serverSelectionEvent",
+    "param"
+  ],
+  "attachCommandFields": [
+    "log",
+    "commandEvent"
+  ],
+  "attachConnectionFields": [
+    "log",
+    "event"
+  ],
+  "attachSDAMFields": [
+    "log",
+    "sdamEvent"
+  ],
+  "attachServerHeartbeatFields": [
+    "log",
+    "serverHeartbeatEvent"
+  ],
+  "defaultLogTransform": [
+    "logObject",
+    "param"
+  ],
+  "MongoLogger": {
+    "componentSeverities": [],
+    "maxDocumentLength": [],
+    "logDestination": [],
+    "logDestinationIsStdErr": [],
+    "pendingLog": [],
+    "severities": [],
+    "error": [],
+    "warn": [],
+    "info": [],
+    "debug": [],
+    "trace": [],
+    "constructor": [
+      "options"
+    ],
+    "createLoggingSeverities": [],
+    "turnOffSeverities": [],
+    "logWriteFailureHandler": [
+      "error"
+    ],
+    "clearPendingLog": [],
+    "willLog": [
+      "component",
+      "severity"
+    ],
+    "log": [
+      "severity",
+      "component",
+      "message"
+    ],
+    "resolveOptions": [
+      "envOptions",
+      "clientOptions"
+    ]
+  },
+  "TypedEventEmitter": {
+    "mongoLogger": [],
+    "component": [],
+    "emitAndLog": [
+      "event",
+      "param"
+    ],
+    "emitAndLogHeartbeat": [
+      "event",
+      "topologyId",
+      "serverConnectionId",
+      "param"
+    ],
+    "emitAndLogCommand": [
+      "monitorCommands",
+      "event",
+      "databaseName",
+      "connectionEstablished",
+      "param"
+    ]
+  },
+  "CancellationToken": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "AggregateOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "target": [],
+    "pipeline": [],
+    "hasWriteStage": [],
+    "constructor": [
+      "ns",
+      "pipeline",
+      "options"
+    ],
+    "commandName": [],
+    "canRetryRead": [],
+    "addToPipeline": [
+      "stage"
+    ],
+    "buildCommandDocument": [],
+    "handleOk": [
+      "response"
+    ]
+  },
+  "ClientBulkWriteOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "commandBuilder": [],
+    "options": [],
+    "commandName": [],
+    "constructor": [
+      "commandBuilder",
+      "options"
+    ],
+    "resetBatch": [],
+    "canRetryWrite": [],
+    "handleOk": [
+      "response"
+    ],
+    "buildCommandDocument": [
+      "connection",
+      "_session"
+    ]
+  },
+  "ClientBulkWriteCommandBuilder": {
+    "models": [],
+    "options": [],
+    "pkFactory": [],
+    "currentModelIndex": [],
+    "previousModelIndex": [],
+    "lastOperations": [],
+    "isBatchRetryable": [],
+    "constructor": [
+      "models",
+      "options",
+      "pkFactory"
+    ],
+    "errorsOnly": [],
+    "hasNextBatch": [],
+    "resetBatch": [],
+    "buildBatch": [
+      "maxMessageSizeBytes",
+      "maxWriteBatchSize",
+      "maxBsonObjectSize"
+    ],
+    "baseCommand": []
+  },
+  "validateBufferSize": [
+    "name",
+    "buffer",
+    "maxBsonObjectSize"
+  ],
+  "buildInsertOneOperation": [
+    "model",
+    "index",
+    "pkFactory"
+  ],
+  "buildDeleteOneOperation": [
+    "model",
+    "index"
+  ],
+  "buildDeleteManyOperation": [
+    "model",
+    "index"
+  ],
+  "createDeleteOperation": [
+    "model",
+    "index",
+    "multi"
+  ],
+  "buildUpdateOneOperation": [
+    "model",
+    "index",
+    "options"
+  ],
+  "buildUpdateManyOperation": [
+    "model",
+    "index",
+    "options"
+  ],
+  "validateUpdate": [
+    "update",
+    "options"
+  ],
+  "createUpdateOperation": [
+    "model",
+    "index",
+    "multi",
+    "options"
+  ],
+  "buildReplaceOneOperation": [
+    "model",
+    "index"
+  ],
+  "buildOperation": [
+    "model",
+    "index",
+    "pkFactory",
+    "options"
+  ],
+  "ClientBulkWriteExecutor": {
+    "client": [],
+    "options": [],
+    "operations": [],
+    "constructor": [
+      "client",
+      "operations",
+      "options"
+    ],
+    "execute": []
+  },
+  "ClientBulkWriteResultsMerger": {
+    "result": [],
+    "options": [],
+    "currentBatchOffset": [],
+    "writeConcernErrors": [],
+    "writeErrors": [],
+    "unacknowledged": [],
+    "constructor": [
+      "options"
+    ],
+    "bulkWriteResult": [],
+    "merge": [
+      "cursor"
+    ],
+    "processDocument": [
+      "cursor",
+      "document"
+    ],
+    "incrementCounts": [
+      "document"
+    ]
+  },
+  "CommandOperation": {
+    "options": [],
+    "readConcern": [],
+    "writeConcern": [],
+    "explain": [],
+    "constructor": [
+      "parent",
+      "options"
+    ],
+    "canRetryWrite": [],
+    "buildCommandDocument": [
+      "connection",
+      "session"
+    ],
+    "buildOptions": [
+      "timeoutContext"
+    ],
+    "buildCommand": [
+      "connection",
+      "session"
+    ]
+  },
+  "CountOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "collectionName": [],
+    "query": [],
+    "constructor": [
+      "namespace",
+      "filter",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "_connection",
+      "_session"
+    ],
+    "handleOk": [
+      "response"
+    ]
+  },
+  "CreateCollectionOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "db": [],
+    "name": [],
+    "constructor": [
+      "db",
+      "name",
+      "param"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "_connection",
+      "_session"
+    ],
+    "handleOk": [
+      "_response"
+    ]
+  },
+  "isOptionValid": [
+    "param"
+  ],
+  "createCollections": [
+    "db",
+    "name",
+    "options"
+  ],
+  "CreateSupportingFLEv2CollectionOperation": {
+    "buildCommandDocument": [
+      "connection",
+      "session"
+    ]
+  },
+  "DeleteOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "statements": [],
+    "constructor": [
+      "ns",
+      "statements",
+      "options"
+    ],
+    "commandName": [],
+    "canRetryWrite": [],
+    "buildCommandDocument": [
+      "connection",
+      "_session"
+    ]
+  },
+  "DeleteOneOperation": {
+    "constructor": [
+      "ns",
+      "filter",
+      "options"
+    ],
+    "handleOk": [
+      "response"
+    ]
+  },
+  "DeleteManyOperation": {
+    "constructor": [
+      "ns",
+      "filter",
+      "options"
+    ],
+    "handleOk": [
+      "response"
+    ]
+  },
+  "makeDeleteStatement": [
+    "filter",
+    "options"
+  ],
+  "DistinctOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "collection": [],
+    "key": [],
+    "query": [],
+    "constructor": [
+      "collection",
+      "key",
+      "query",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "_connection"
+    ],
+    "handleOk": [
+      "response"
+    ]
+  },
+  "DropCollectionOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "name": [],
+    "constructor": [
+      "db",
+      "name",
+      "param"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "_connection",
+      "_session"
+    ],
+    "handleOk": [
+      "_response"
+    ],
+    "handleError": [
+      "error"
+    ]
+  },
+  "dropCollections": [
+    "db",
+    "name",
+    "options"
+  ],
+  "DropDatabaseOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "constructor": [
+      "db",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "_connection",
+      "_session"
+    ],
+    "handleOk": [
+      "_response"
+    ]
+  },
+  "EndSessionsOperation": {
+    "writeConcern": [],
+    "ns": [],
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "sessions": [],
+    "constructor": [
+      "sessions"
+    ],
+    "buildCommandDocument": [
+      "_connection",
+      "_session"
+    ],
+    "buildOptions": [
+      "timeoutContext"
+    ],
+    "commandName": []
+  },
+  "EstimatedDocumentCountOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "collectionName": [],
+    "constructor": [
+      "collection",
+      "param"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "_connection",
+      "_session"
+    ],
+    "handleOk": [
+      "response"
+    ]
+  },
+  "executeOperation": [
+    "client",
+    "operation",
+    "timeoutContext"
+  ],
+  "autoConnect": [
+    "client"
+  ],
+  "tryOperation": [
+    "operation",
+    "param"
+  ],
+  "FindOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "filter": [],
+    "constructor": [
+      "ns",
+      "param",
+      "param"
+    ],
+    "commandName": [],
+    "buildOptions": [
+      "timeoutContext"
+    ],
+    "handleOk": [
+      "response"
+    ],
+    "buildCommandDocument": []
+  },
+  "makeFindCommand": [
+    "ns",
+    "filter",
+    "options"
+  ],
+  "configureFindAndModifyCmdBaseUpdateOpts": [
+    "cmdBase",
+    "options"
+  ],
+  "FindAndModifyOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "collection": [],
+    "query": [],
+    "doc": [],
+    "constructor": [
+      "collection",
+      "query",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "connection",
+      "_session"
+    ],
+    "handleOk": [
+      "response"
+    ]
+  },
+  "FindOneAndDeleteOperation": {
+    "constructor": [
+      "collection",
+      "filter",
+      "options"
+    ],
+    "buildCommandDocument": [
+      "connection",
+      "session"
+    ]
+  },
+  "FindOneAndReplaceOperation": {
+    "replacement": [],
+    "constructor": [
+      "collection",
+      "filter",
+      "replacement",
+      "options"
+    ],
+    "buildCommandDocument": [
+      "connection",
+      "session"
+    ]
+  },
+  "FindOneAndUpdateOperation": {
+    "options": [],
+    "update": [],
+    "constructor": [
+      "collection",
+      "filter",
+      "update",
+      "options"
+    ],
+    "buildCommandDocument": [
+      "connection",
+      "session"
+    ]
+  },
+  "GetMoreOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "cursorId": [],
+    "options": [],
+    "constructor": [
+      "ns",
+      "cursorId",
+      "server",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommand": [
+      "connection"
+    ],
+    "buildOptions": [
+      "timeoutContext"
+    ],
+    "handleOk": [
+      "response"
+    ]
+  },
+  "isIndexDirection": [
+    "x"
+  ],
+  "isSingleIndexTuple": [
+    "t"
+  ],
+  "constructIndexDescriptionMap": [
+    "indexSpec"
+  ],
+  "resolveIndexDescription": [
+    "description"
+  ],
+  "CreateIndexesOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "collectionName": [],
+    "indexes": [],
+    "constructor": [
+      "parent",
+      "collectionName",
+      "indexes",
+      "options"
+    ],
+    "fromIndexDescriptionArray": [
+      "parent",
+      "collectionName",
+      "indexes",
+      "options"
+    ],
+    "fromIndexSpecification": [
+      "parent",
+      "collectionName",
+      "indexSpec",
+      "param"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "connection"
+    ],
+    "handleOk": [
+      "_response"
+    ]
+  },
+  "DropIndexOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "collection": [],
+    "indexName": [],
+    "constructor": [
+      "collection",
+      "indexName",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "_connection"
+    ]
+  },
+  "ListIndexesOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "collectionNamespace": [],
+    "constructor": [
+      "collection",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "connection"
+    ],
+    "handleOk": [
+      "response"
+    ]
+  },
+  "InsertOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "documents": [],
+    "constructor": [
+      "ns",
+      "documents",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "_connection",
+      "_session"
+    ]
+  },
+  "InsertOneOperation": {
+    "constructor": [
+      "collection",
+      "doc",
+      "options"
+    ],
+    "handleOk": [
+      "response"
+    ]
+  },
+  "KillCursorsOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "cursorId": [],
+    "constructor": [
+      "cursorId",
+      "ns",
+      "server",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommand": [
+      "_connection",
+      "_session"
+    ],
+    "buildOptions": [
+      "timeoutContext"
+    ],
+    "handleError": [
+      "_error"
+    ]
+  },
+  "ListCollectionsOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "db": [],
+    "filter": [],
+    "nameOnly": [],
+    "authorizedCollections": [],
+    "batchSize": [],
+    "constructor": [
+      "db",
+      "filter",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "connection"
+    ],
+    "handleOk": [
+      "response"
+    ]
+  },
+  "ListDatabasesOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "constructor": [
+      "db",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "connection",
+      "_session"
+    ]
+  },
+  "AbstractOperation": {
+    "ns": [],
+    "readPreference": [],
+    "server": [],
+    "bypassPinningCheck": [],
+    "bsonOptions": [],
+    "options": [],
+    "timeoutMS": [],
+    "_session": [],
+    "aspects": [],
+    "constructor": [
+      "param"
+    ],
+    "commandName": [],
+    "hasAspect": [
+      "aspect"
+    ],
+    "session": [
+      "session"
+    ],
+    "clearSession": [],
+    "resetBatch": [],
+    "canRetryRead": [],
+    "canRetryWrite": [],
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "buildCommand": [
+      "connection",
+      "session"
+    ],
+    "buildOptions": [
+      "timeoutContext"
+    ],
+    "handleOk": [
+      "response"
+    ],
+    "handleError": [
+      "error"
+    ]
+  },
+  "defineAspects": [
+    "operation",
+    "aspects"
+  ],
+  "ProfilingLevelResponse": {
+    "was": []
+  },
+  "ProfilingLevelOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "constructor": [
+      "db",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "_connection"
+    ],
+    "handleOk": [
+      "response"
+    ]
+  },
+  "RemoveUserOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "username": [],
+    "constructor": [
+      "db",
+      "username",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "_connection"
+    ],
+    "handleOk": [
+      "_response"
+    ]
+  },
+  "RenameOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "collection": [],
+    "newName": [],
+    "options": [],
+    "constructor": [
+      "collection",
+      "newName",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "_connection",
+      "_session"
+    ],
+    "handleOk": [
+      "_response"
+    ]
+  },
+  "RunCommandOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "command": [],
+    "options": [],
+    "constructor": [
+      "namespace",
+      "command",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommand": [
+      "_connection",
+      "_session"
+    ],
+    "buildOptions": [
+      "timeoutContext"
+    ]
+  },
+  "RunCursorCommandOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "handleOk": [
+      "response"
+    ]
+  },
+  "CreateSearchIndexesOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "collection": [],
+    "descriptions": [],
+    "constructor": [
+      "collection",
+      "descriptions"
+    ],
+    "commandName": [],
+    "buildCommand": [
+      "_connection",
+      "_session"
+    ],
+    "handleOk": [
+      "response"
+    ],
+    "buildOptions": [
+      "timeoutContext"
+    ]
+  },
+  "DropSearchIndexOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "collection": [],
+    "name": [],
+    "constructor": [
+      "collection",
+      "name"
+    ],
+    "commandName": [],
+    "buildCommand": [
+      "_connection",
+      "_session"
+    ],
+    "handleOk": [
+      "_response"
+    ],
+    "buildOptions": [
+      "timeoutContext"
+    ],
+    "handleError": [
+      "error"
+    ]
+  },
+  "UpdateSearchIndexOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "collection": [],
+    "name": [],
+    "definition": [],
+    "constructor": [
+      "collection",
+      "name",
+      "definition"
+    ],
+    "commandName": [],
+    "buildCommand": [
+      "_connection",
+      "_session"
+    ],
+    "handleOk": [
+      "_response"
+    ],
+    "buildOptions": [
+      "timeoutContext"
+    ]
+  },
+  "SetProfilingLevelOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "level": [],
+    "profile": [],
+    "constructor": [
+      "db",
+      "level",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "_connection"
+    ],
+    "handleOk": [
+      "_response"
+    ]
+  },
+  "DbStatsOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "constructor": [
+      "db",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "_connection"
+    ]
+  },
+  "UpdateOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "statements": [],
+    "constructor": [
+      "ns",
+      "statements",
+      "options"
+    ],
+    "commandName": [],
+    "canRetryWrite": [],
+    "buildCommandDocument": [
+      "_connection",
+      "_session"
+    ]
+  },
+  "UpdateOneOperation": {
+    "constructor": [
+      "ns",
+      "filter",
+      "update",
+      "options"
+    ],
+    "handleOk": [
+      "response"
+    ]
+  },
+  "UpdateManyOperation": {
+    "constructor": [
+      "ns",
+      "filter",
+      "update",
+      "options"
+    ],
+    "handleOk": [
+      "response"
+    ]
+  },
+  "ReplaceOneOperation": {
+    "constructor": [
+      "ns",
+      "filter",
+      "replacement",
+      "options"
+    ],
+    "handleOk": [
+      "response"
+    ]
+  },
+  "makeUpdateStatement": [
+    "filter",
+    "update",
+    "options"
+  ],
+  "ValidateCollectionOperation": {
+    "SERVER_COMMAND_RESPONSE_TYPE": [],
+    "options": [],
+    "collectionName": [],
+    "constructor": [
+      "admin",
+      "collectionName",
+      "options"
+    ],
+    "commandName": [],
+    "buildCommandDocument": [
+      "_connection",
+      "_session"
+    ],
+    "handleOk": [
+      "response"
+    ]
+  },
+  "ReadConcern": {
+    "level": [],
+    "constructor": [
+      "level"
+    ],
+    "fromOptions": [
+      "options"
+    ],
+    "MAJORITY": [],
+    "AVAILABLE": [],
+    "LINEARIZABLE": [],
+    "SNAPSHOT": [],
+    "toJSON": []
+  },
+  "ReadPreference": {
+    "mode": [],
+    "tags": [],
+    "hedge": [],
+    "maxStalenessSeconds": [],
+    "PRIMARY": [],
+    "PRIMARY_PREFERRED": [],
+    "SECONDARY": [],
+    "SECONDARY_PREFERRED": [],
+    "NEAREST": [],
+    "primary": [],
+    "primaryPreferred": [],
+    "secondary": [],
+    "secondaryPreferred": [],
+    "nearest": [],
+    "constructor": [
+      "mode",
+      "tags",
+      "options"
+    ],
+    "preference": [],
+    "fromString": [
+      "mode"
+    ],
+    "fromOptions": [
+      "options"
+    ],
+    "translate": [
+      "options"
+    ],
+    "isValid": [
+      "mode"
+    ],
+    "secondaryOk": [],
+    "equals": [
+      "readPreference"
+    ],
+    "toJSON": []
+  },
+  "_advanceClusterTime": [
+    "entity",
+    "$clusterTime"
+  ],
+  "ServerDescriptionChangedEvent": {
+    "topologyId": [],
+    "address": [],
+    "previousDescription": [],
+    "newDescription": [],
+    "name": [],
+    "constructor": [
+      "topologyId",
+      "address",
+      "previousDescription",
+      "newDescription"
+    ]
+  },
+  "ServerOpeningEvent": {
+    "topologyId": [],
+    "address": [],
+    "name": [],
+    "constructor": [
+      "topologyId",
+      "address"
+    ]
+  },
+  "ServerClosedEvent": {
+    "topologyId": [],
+    "address": [],
+    "name": [],
+    "constructor": [
+      "topologyId",
+      "address"
+    ]
+  },
+  "TopologyDescriptionChangedEvent": {
+    "topologyId": [],
+    "previousDescription": [],
+    "newDescription": [],
+    "name": [],
+    "constructor": [
+      "topologyId",
+      "previousDescription",
+      "newDescription"
+    ]
+  },
+  "TopologyOpeningEvent": {
+    "topologyId": [],
+    "name": [],
+    "constructor": [
+      "topologyId"
+    ]
+  },
+  "TopologyClosedEvent": {
+    "topologyId": [],
+    "name": [],
+    "constructor": [
+      "topologyId"
+    ]
+  },
+  "ServerHeartbeatStartedEvent": {
+    "connectionId": [],
+    "awaited": [],
+    "name": [],
+    "constructor": [
+      "connectionId",
+      "awaited"
+    ]
+  },
+  "ServerHeartbeatSucceededEvent": {
+    "connectionId": [],
+    "duration": [],
+    "reply": [],
+    "awaited": [],
+    "name": [],
+    "constructor": [
+      "connectionId",
+      "duration",
+      "reply",
+      "awaited"
+    ]
+  },
+  "ServerHeartbeatFailedEvent": {
+    "connectionId": [],
+    "duration": [],
+    "failure": [],
+    "awaited": [],
+    "name": [],
+    "constructor": [
+      "connectionId",
+      "duration",
+      "failure",
+      "awaited"
+    ]
+  },
+  "isInCloseState": [
+    "monitor"
+  ],
+  "Monitor": {
+    "s": [],
+    "address": [],
+    "options": [],
+    "connectOptions": [],
+    "isRunningInFaasEnv": [],
+    "server": [],
+    "connection": [],
+    "cancellationToken": [],
+    "monitorId": [],
+    "rttPinger": [],
+    "component": [],
+    "rttSampler": [],
+    "constructor": [
+      "server",
+      "options"
+    ],
+    "connect": [],
+    "requestCheck": [],
+    "reset": [],
+    "close": [],
+    "roundTripTime": [],
+    "minRoundTripTime": [],
+    "latestRtt": [],
+    "addRttSample": [
+      "rtt"
+    ],
+    "clearRttSamples": []
+  },
+  "resetMonitorState": [
+    "monitor"
+  ],
+  "useStreamingProtocol": [
+    "monitor",
+    "topologyVersion"
+  ],
+  "checkServer": [
+    "monitor",
+    "callback"
+  ],
+  "onHeartbeatFailed": [
+    "err"
+  ],
+  "onHeartbeatSucceeded": [
+    "hello"
+  ],
+  "monitorServer": [
+    "monitor"
+  ],
+  "done": [],
+  "makeTopologyVersion": [
+    "tv"
+  ],
+  "RTTPinger": {
+    "connection": [],
+    "cancellationToken": [],
+    "monitorId": [],
+    "monitor": [],
+    "closed": [],
+    "latestRtt": [],
+    "constructor": [
+      "monitor"
+    ],
+    "roundTripTime": [],
+    "minRoundTripTime": [],
+    "close": [],
+    "measureAndReschedule": [
+      "start",
+      "conn"
+    ],
+    "measureRoundTripTime": []
+  },
+  "MonitorInterval": {
+    "fn": [],
+    "timerId": [],
+    "lastExecutionEnded": [],
+    "isExpeditedCallToFnScheduled": [],
+    "stopped": [],
+    "isExecutionInProgress": [],
+    "hasExecutedOnce": [],
+    "heartbeatFrequencyMS": [],
+    "minHeartbeatFrequencyMS": [],
+    "constructor": [
+      "fn",
+      "param"
+    ],
+    "wake": [],
+    "stop": [],
+    "toString": [],
+    "toJSON": [],
+    "_reschedule": [
+      "ms"
+    ],
+    "_executeAndReschedule": []
+  },
+  "RTTSampler": {
+    "writeIndex": [],
+    "length": [],
+    "rttSamples": [],
+    "constructor": [
+      "param"
+    ],
+    "addSample": [
+      "sample"
+    ],
+    "min": [],
+    "average": [],
+    "last": [],
+    "clear": []
+  },
+  "Server": {
+    "s": [],
+    "topology": [],
+    "pool": [],
+    "serverApi": [],
+    "hello": [],
+    "monitor": [],
+    "SERVER_HEARTBEAT_STARTED": [],
+    "SERVER_HEARTBEAT_SUCCEEDED": [],
+    "SERVER_HEARTBEAT_FAILED": [],
+    "CONNECT": [],
+    "DESCRIPTION_RECEIVED": [],
+    "CLOSED": [],
+    "ENDED": [],
+    "constructor": [
+      "topology",
+      "description",
+      "options"
+    ],
+    "clusterTime": [
+      "clusterTime"
+    ],
+    "description": [],
+    "name": [],
+    "autoEncrypter": [],
+    "loadBalanced": [],
+    "connect": [],
+    "closeCheckedOutConnections": [],
+    "close": [],
+    "requestCheck": [],
+    "command": [
+      "operation",
+      "timeoutContext"
+    ],
+    "handleError": [
+      "error",
+      "connection"
+    ],
+    "decorateCommandError": [
+      "connection",
+      "cmd",
+      "options",
+      "error"
+    ],
+    "decrementOperationCount": [],
+    "incrementOperationCount": []
+  },
+  "cleanup": [],
+  "checkBackIn": [],
+  "markServerUnknown": [
+    "server",
+    "error"
+  ],
+  "isPinnableCommand": [
+    "cmd",
+    "session"
+  ],
+  "connectionIsStale": [
+    "pool",
+    "connection"
+  ],
+  "inActiveTransaction": [
+    "session",
+    "cmd"
+  ],
+  "isRetryableWritesEnabled": [
+    "topology"
+  ],
+  "isStaleError": [
+    "server",
+    "error"
+  ],
+  "ServerDescription": {
+    "address": [],
+    "type": [],
+    "hosts": [],
+    "passives": [],
+    "arbiters": [],
+    "tags": [],
+    "error": [],
+    "topologyVersion": [],
+    "minWireVersion": [],
+    "maxWireVersion": [],
+    "roundTripTime": [],
+    "minRoundTripTime": [],
+    "lastUpdateTime": [],
+    "lastWriteDate": [],
+    "me": [],
+    "primary": [],
+    "setName": [],
+    "setVersion": [],
+    "electionId": [],
+    "logicalSessionTimeoutMinutes": [],
+    "maxMessageSizeBytes": [],
+    "maxWriteBatchSize": [],
+    "maxBsonObjectSize": [],
+    "iscryptd": [],
+    "$clusterTime": [],
+    "constructor": [
+      "address",
+      "hello",
+      "param"
+    ],
+    "hostAddress": [],
+    "allHosts": [],
+    "isReadable": [],
+    "isDataBearing": [],
+    "isWritable": [],
+    "host": [],
+    "port": [],
+    "equals": [
+      "other"
+    ]
+  },
+  "parseServerType": [
+    "hello",
+    "options"
+  ],
+  "tagsStrictEqual": [
+    "tags",
+    "tags2"
+  ],
+  "compareTopologyVersion": [
+    "currentTv",
+    "newTv"
+  ],
+  "DeprioritizedServers": {
+    "deprioritized": [],
+    "constructor": [
+      "descriptions"
+    ],
+    "add": [
+      "param"
+    ],
+    "has": [
+      "param"
+    ]
+  },
+  "filterDeprioritized": [
+    "candidates",
+    "deprioritized"
+  ],
+  "writableServerSelector": [],
+  "sameServerSelector": [
+    "description"
+  ],
+  "secondaryWritableServerSelector": [
+    "wireVersion",
+    "readPreference"
+  ],
+  "maxStalenessReducer": [
+    "readPreference",
+    "topologyDescription",
+    "servers"
+  ],
+  "tagSetMatch": [
+    "tagSet",
+    "serverTags"
+  ],
+  "tagSetReducer": [
+    "param",
+    "servers"
+  ],
+  "latencyWindowReducer": [
+    "topologyDescription",
+    "servers"
+  ],
+  "primaryFilter": [
+    "server"
+  ],
+  "secondaryFilter": [
+    "server"
+  ],
+  "nearestFilter": [
+    "server"
+  ],
+  "knownFilter": [
+    "server"
+  ],
+  "loadBalancerFilter": [
+    "server"
+  ],
+  "isDeprioritizedFactory": [
+    "deprioritized"
+  ],
+  "secondarySelector": [
+    "readPreference",
+    "topologyDescription",
+    "servers",
+    "deprioritized"
+  ],
+  "readPreferenceServerSelector": [
+    "readPreference"
+  ],
+  "ServerSelectionEvent": {
+    "selector": [],
+    "operation": [],
+    "topologyDescription": [],
+    "name": [],
+    "message": [],
+    "constructor": [
+      "selector",
+      "topologyDescription",
+      "operation"
+    ]
+  },
+  "ServerSelectionStartedEvent": {
+    "name": [],
+    "message": [],
+    "constructor": [
+      "selector",
+      "topologyDescription",
+      "operation"
+    ]
+  },
+  "ServerSelectionFailedEvent": {
+    "name": [],
+    "message": [],
+    "failure": [],
+    "constructor": [
+      "selector",
+      "topologyDescription",
+      "error",
+      "operation"
+    ]
+  },
+  "ServerSelectionSucceededEvent": {
+    "name": [],
+    "message": [],
+    "serverHost": [],
+    "serverPort": [],
+    "constructor": [
+      "selector",
+      "topologyDescription",
+      "address",
+      "operation"
+    ]
+  },
+  "WaitingForSuitableServerEvent": {
+    "name": [],
+    "message": [],
+    "remainingTimeMS": [],
+    "constructor": [
+      "selector",
+      "topologyDescription",
+      "remainingTimeMS",
+      "operation"
+    ]
+  },
+  "SrvPollingEvent": {
+    "srvRecords": [],
+    "constructor": [
+      "srvRecords"
+    ],
+    "hostnames": []
+  },
+  "SrvPoller": {
+    "srvHost": [],
+    "rescanSrvIntervalMS": [],
+    "heartbeatFrequencyMS": [],
+    "haMode": [],
+    "generation": [],
+    "srvMaxHosts": [],
+    "srvServiceName": [],
+    "_timeout": [],
+    "SRV_RECORD_DISCOVERY": [],
+    "constructor": [
+      "options"
+    ],
+    "srvAddress": [],
+    "intervalMS": [],
+    "start": [],
+    "stop": [],
+    "schedule": [],
+    "success": [
+      "srvRecords"
+    ],
+    "failure": [],
+    "_poll": []
+  },
+  "Topology": {
+    "s": [],
+    "waitQueue": [],
+    "hello": [],
+    "_type": [],
+    "client": [],
+    "connectionLock": [],
+    "SERVER_OPENING": [],
+    "SERVER_CLOSED": [],
+    "SERVER_DESCRIPTION_CHANGED": [],
+    "TOPOLOGY_OPENING": [],
+    "TOPOLOGY_CLOSED": [],
+    "TOPOLOGY_DESCRIPTION_CHANGED": [],
+    "ERROR": [],
+    "OPEN": [],
+    "CONNECT": [],
+    "CLOSE": [],
+    "TIMEOUT": [],
+    "constructor": [
+      "client",
+      "seeds",
+      "options"
+    ],
+    "detectShardedTopology": [
+      "event"
+    ],
+    "detectSrvRecords": [
+      "ev"
+    ],
+    "description": [],
+    "loadBalanced": [],
+    "serverApi": [],
+    "connect": [
+      "options"
+    ],
+    "_connect": [
+      "options"
+    ],
+    "closeCheckedOutConnections": [],
+    "close": [],
+    "selectServer": [
+      "selector",
+      "options"
+    ],
+    "serverUpdateHandler": [
+      "serverDescription"
+    ],
+    "auth": [
+      "credentials",
+      "callback"
+    ],
+    "isConnected": [],
+    "isDestroyed": [],
+    "lastHello": [],
+    "commonWireVersion": [],
+    "logicalSessionTimeoutMinutes": [],
+    "clusterTime": [
+      "clusterTime"
+    ]
+  },
+  "closeServer": [
+    "server",
+    "topology"
+  ],
+  "topologyTypeFromOptions": [
+    "options"
+  ],
+  "createAndConnectServer": [
+    "topology",
+    "serverDescription"
+  ],
+  "updateServers": [
+    "topology",
+    "incomingServerDescription"
+  ],
+  "drainWaitQueue": [
+    "queue",
+    "drainError"
+  ],
+  "processWaitQueue": [
+    "topology"
+  ],
+  "isStaleServerDescription": [
+    "topologyDescription",
+    "incomingServerDescription"
+  ],
+  "TopologyDescription": {
+    "type": [],
+    "setName": [],
+    "maxSetVersion": [],
+    "maxElectionId": [],
+    "servers": [],
+    "stale": [],
+    "compatible": [],
+    "compatibilityError": [],
+    "logicalSessionTimeoutMinutes": [],
+    "heartbeatFrequencyMS": [],
+    "localThresholdMS": [],
+    "commonWireVersion": [],
+    "constructor": [
+      "topologyType",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "updateFromSrvPollingEvent": [
+      "ev",
+      "param"
+    ],
+    "update": [
+      "serverDescription"
+    ],
+    "error": [],
+    "hasKnownServers": [],
+    "hasDataBearingServers": [],
+    "hasServer": [
+      "address"
+    ],
+    "toJSON": []
+  },
+  "topologyTypeForServerType": [
+    "serverType"
+  ],
+  "updateRsFromPrimary": [
+    "serverDescriptions",
+    "serverDescription",
+    "param",
+    "param",
+    "param"
+  ],
+  "setVersionElectionIdMismatch": [
+    "serverDescription",
+    "maxSetVersion",
+    "maxElectionId"
+  ],
+  "updateRsWithPrimaryFromMember": [
+    "serverDescriptions",
+    "serverDescription",
+    "param"
+  ],
+  "updateRsNoPrimaryFromMember": [
+    "serverDescriptions",
+    "serverDescription",
+    "param"
+  ],
+  "checkHasPrimary": [
+    "serverDescriptions"
+  ],
+  "ClientSession": {
+    "client": [],
+    "sessionPool": [],
+    "hasEnded": [],
+    "clientOptions": [],
+    "supports": [],
+    "clusterTime": [],
+    "operationTime": [],
+    "explicit": [],
+    "owner": [],
+    "defaultTransactionOptions": [],
+    "transaction": [],
+    "commitAttempted": [],
+    "snapshotEnabled": [],
+    "_serverSession": [],
+    "snapshotTime": [],
+    "pinnedConnection": [],
+    "txnNumberIncrement": [],
+    "timeoutMS": [],
+    "timeoutContext": [],
+    "constructor": [
+      "client",
+      "sessionPool",
+      "options",
+      "clientOptions"
+    ],
+    "id": [],
+    "serverSession": [],
+    "loadBalanced": [],
+    "pin": [
+      "conn"
+    ],
+    "unpin": [
+      "options"
+    ],
+    "isPinned": [],
+    "endSession": [
+      "options"
+    ],
+    "advanceOperationTime": [
+      "operationTime"
+    ],
+    "advanceClusterTime": [
+      "clusterTime"
+    ],
+    "equals": [
+      "session"
+    ],
+    "incrementTransactionNumber": [],
+    "inTransaction": [],
+    "startTransaction": [
+      "options"
+    ],
+    "commitTransaction": [
+      "options"
+    ],
+    "abortTransaction": [
+      "options"
+    ],
+    "toBSON": [],
+    "withTransaction": [
+      "fn",
+      "options"
+    ]
+  },
+  "shouldUnpinAfterCommitError": [
+    "commitError"
+  ],
+  "shouldAddUnknownTransactionCommitResultLabel": [
+    "commitError"
+  ],
+  "isUnknownTransactionCommitResult": [
+    "err"
+  ],
+  "maybeClearPinnedConnection": [
+    "session",
+    "options"
+  ],
+  "isMaxTimeMSExpiredError": [
+    "err"
+  ],
+  "ServerSession": {
+    "id": [],
+    "lastUse": [],
+    "txnNumber": [],
+    "isDirty": [],
+    "constructor": [
+      "cloned"
+    ],
+    "hasTimedOut": [
+      "sessionTimeoutMinutes"
+    ]
+  },
+  "ServerSessionPool": {
+    "client": [],
+    "sessions": [],
+    "constructor": [
+      "client"
+    ],
+    "acquire": [],
+    "release": [
+      "session"
+    ]
+  },
+  "applySession": [
+    "session",
+    "command",
+    "options"
+  ],
+  "updateSessionFromResponse": [
+    "session",
+    "document"
+  ],
+  "prepareDirection": [
+    "param"
+  ],
+  "isMeta": [
+    "t"
+  ],
+  "isPair": [
+    "t"
+  ],
+  "isDeep": [
+    "t"
+  ],
+  "isMap": [
+    "t"
+  ],
+  "isReadonlyArray": [
+    "value"
+  ],
+  "pairToMap": [
+    "v"
+  ],
+  "deepToMap": [
+    "t"
+  ],
+  "stringsToMap": [
+    "t"
+  ],
+  "objectToMap": [
+    "t"
+  ],
+  "mapToMap": [
+    "t"
+  ],
+  "formatSort": [
+    "sort",
+    "direction"
+  ],
+  "TimeoutError": {
+    "duration": [],
+    "name": [],
+    "constructor": [
+      "message",
+      "options"
+    ],
+    "is": [
+      "error"
+    ]
+  },
+  "Timeout": {
+    "id": [],
+    "start": [],
+    "ended": [],
+    "duration": [],
+    "timedOut": [],
+    "cleared": [],
+    "remainingTime": [],
+    "timeElapsed": [],
+    "constructor": [
+      "param",
+      "options"
+    ],
+    "clear": [],
+    "throwIfExpired": [],
+    "expires": [
+      "duration",
+      "unref"
+    ],
+    "reject": [
+      "rejection"
+    ]
+  },
+  "isLegacyTimeoutContextOptions": [
+    "v"
+  ],
+  "isCSOTTimeoutContextOptions": [
+    "v"
+  ],
+  "TimeoutContext": {
+    "create": [
+      "options"
+    ],
+    "maxTimeMS": [],
+    "serverSelectionTimeout": [],
+    "connectionCheckoutTimeout": [],
+    "clearServerSelectionTimeout": [],
+    "timeoutForSocketWrite": [],
+    "timeoutForSocketRead": [],
+    "csotEnabled": [],
+    "refresh": [],
+    "clear": [],
+    "refreshed": [],
+    "addMaxTimeMSToCommand": [
+      "command",
+      "options"
+    ],
+    "getSocketTimeoutMS": []
+  },
+  "CSOTTimeoutContext": {
+    "timeoutMS": [],
+    "serverSelectionTimeoutMS": [],
+    "socketTimeoutMS": [],
+    "clearServerSelectionTimeout": [],
+    "_serverSelectionTimeout": [],
+    "_connectionCheckoutTimeout": [],
+    "minRoundTripTime": [],
+    "start": [],
+    "constructor": [
+      "options"
+    ],
+    "maxTimeMS": [],
+    "remainingTimeMS": [],
+    "csotEnabled": [],
+    "serverSelectionTimeout": [],
+    "connectionCheckoutTimeout": [],
+    "timeoutForSocketWrite": [],
+    "timeoutForSocketRead": [],
+    "refresh": [],
+    "clear": [],
+    "getRemainingTimeMSOrThrow": [
+      "message"
+    ],
+    "clone": [],
+    "refreshed": [],
+    "addMaxTimeMSToCommand": [
+      "command",
+      "options"
+    ],
+    "getSocketTimeoutMS": []
+  },
+  "LegacyTimeoutContext": {
+    "options": [],
+    "clearServerSelectionTimeout": [],
+    "constructor": [
+      "options"
+    ],
+    "csotEnabled": [],
+    "serverSelectionTimeout": [],
+    "connectionCheckoutTimeout": [],
+    "timeoutForSocketWrite": [],
+    "timeoutForSocketRead": [],
+    "refresh": [],
+    "clear": [],
+    "maxTimeMS": [],
+    "refreshed": [],
+    "addMaxTimeMSToCommand": [
+      "_command",
+      "_options"
+    ],
+    "getSocketTimeoutMS": []
+  },
+  "Transaction": {
+    "state": [],
+    "options": [],
+    "_pinnedServer": [],
+    "_recoveryToken": [],
+    "constructor": [
+      "options"
+    ],
+    "server": [],
+    "recoveryToken": [],
+    "isPinned": [],
+    "isStarting": [],
+    "isActive": [],
+    "isCommitted": [],
+    "transition": [
+      "nextState"
+    ],
+    "pinServer": [
+      "server"
+    ],
+    "unpinServer": []
+  },
+  "isTransactionCommand": [
+    "command"
+  ],
+  "isUint8Array": [
+    "value"
+  ],
+  "hostMatchesWildcards": [
+    "host",
+    "wildcards"
+  ],
+  "normalizeHintField": [
+    "hint"
+  ],
+  "TO_STRING": [
+    "object"
+  ],
+  "isObject": [
+    "arg"
+  ],
+  "mergeOptions": [
+    "target",
+    "source"
+  ],
+  "filterOptions": [
+    "options",
+    "names"
+  ],
+  "isPromiseLike": [
+    "value"
+  ],
+  "decorateWithCollation": [
+    "command",
+    "options"
+  ],
+  "decorateWithReadConcern": [
+    "command",
+    "coll",
+    "options"
+  ],
+  "getTopology": [
+    "provider"
+  ],
+  "ns": [
+    "ns"
+  ],
+  "MongoDBNamespace": {
+    "db": [],
+    "collection": [],
+    "constructor": [
+      "db",
+      "collection"
+    ],
+    "toString": [],
+    "withCollection": [
+      "collection"
+    ],
+    "fromString": [
+      "namespace"
+    ]
+  },
+  "MongoDBCollectionNamespace": {
+    "collection": [],
+    "constructor": [
+      "db",
+      "collection"
+    ],
+    "fromString": [
+      "namespace"
+    ]
+  },
+  "makeCounter": [
+    "param"
+  ],
+  "uuidV4": [],
+  "maxWireVersion": [
+    "handshakeAware"
+  ],
+  "arrayStrictEqual": [
+    "arr",
+    "arr2"
+  ],
+  "errorStrictEqual": [
+    "lhs",
+    "rhs"
+  ],
+  "makeStateMachine": [
+    "stateTable"
+  ],
+  "processTimeMS": [],
+  "calculateDurationInMs": [
+    "started"
+  ],
+  "hasAtomicOperators": [
+    "doc",
+    "options"
+  ],
+  "resolveTimeoutOptions": [
+    "client",
+    "options"
+  ],
+  "resolveOptions": [
+    "parent",
+    "options"
+  ],
+  "isSuperset": [
+    "set",
+    "subset"
+  ],
+  "isHello": [
+    "doc"
+  ],
+  "setDifference": [
+    "setA",
+    "setB"
+  ],
+  "HAS_OWN": [
+    "object",
+    "prop"
+  ],
+  "isRecord": [
+    "value",
+    "param"
+  ],
+  "List": {
+    "head": [],
+    "count": [],
+    "length": [],
+    "constructor": [],
+    "toArray": [],
+    "toString": [],
+    "nodes": [],
+    "push": [
+      "value"
+    ],
+    "pushMany": [
+      "iterable"
+    ],
+    "unshift": [
+      "value"
+    ],
+    "remove": [
+      "node"
+    ],
+    "shift": [],
+    "pop": [],
+    "prune": [
+      "filter"
+    ],
+    "clear": [],
+    "first": [],
+    "last": []
+  },
+  "BufferPool": {
+    "buffers": [],
+    "totalByteLength": [],
+    "constructor": [],
+    "length": [],
+    "append": [
+      "buffer"
+    ],
+    "getInt32": [],
+    "read": [
+      "size"
+    ]
+  },
+  "HostAddress": {
+    "host": [],
+    "port": [],
+    "socketPath": [],
+    "isIPv6": [],
+    "constructor": [
+      "hostString"
+    ],
+    "inspect": [],
+    "toString": [],
+    "fromString": [
+      "this",
+      "s"
+    ],
+    "fromHostPort": [
+      "host",
+      "port"
+    ],
+    "fromSrvRecord": [
+      "param"
+    ],
+    "toHostPort": []
+  },
+  "emitWarning": [
+    "message"
+  ],
+  "emitWarningOnce": [
+    "message"
+  ],
+  "enumToString": [
+    "en"
+  ],
+  "supportsRetryableWrites": [
+    "server"
+  ],
+  "shuffle": [
+    "sequence",
+    "param"
+  ],
+  "commandSupportsReadConcern": [
+    "command"
+  ],
+  "compareObjectId": [
+    "oid1",
+    "oid2"
+  ],
+  "parseInteger": [
+    "value"
+  ],
+  "parseUnsignedInteger": [
+    "value"
+  ],
+  "checkParentDomainMatch": [
+    "address",
+    "srvHost"
+  ],
+  "get": [
+    "url",
+    "param"
+  ],
+  "isHostMatch": [
+    "match",
+    "host"
+  ],
+  "promiseWithResolvers": [],
+  "squashError": [
+    "_error"
+  ],
+  "randomBytes": [
+    "size"
+  ],
+  "once": [
+    "ee",
+    "name",
+    "options"
+  ],
+  "onEvent": [
+    "data"
+  ],
+  "onError": [
+    "error"
+  ],
+  "maybeAddIdToDocuments": [
+    "collection",
+    "document",
+    "options"
+  ],
+  "fileIsAccessible": [
+    "fileName",
+    "mode"
+  ],
+  "csotMin": [
+    "duration1",
+    "duration2"
+  ],
+  "noop": [],
+  "decorateDecryptionResult": [
+    "decrypted",
+    "original",
+    "param"
+  ],
+  "addAbortListener": [
+    "signal",
+    "listener"
+  ],
+  "abortable": [
+    "promise",
+    "param"
+  ],
+  "WriteConcern": {
+    "w": [],
+    "journal": [],
+    "wtimeoutMS": [],
+    "wtimeout": [],
+    "j": [],
+    "fsync": [],
+    "constructor": [
+      "w",
+      "wtimeoutMS",
+      "journal",
+      "fsync"
+    ],
+    "apply": [
+      "command",
+      "writeConcern"
+    ],
+    "fromOptions": [
+      "options",
+      "inherit"
+    ]
+  },
+  "throwIfWriteConcernError": [
+    "response"
+  ]
+}
