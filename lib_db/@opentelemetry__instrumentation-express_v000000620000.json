@@ -1,0 +1,66 @@
+{
+  "ExpressInstrumentation": {
+    "constructor": [
+      "param"
+    ],
+    "init": [],
+    "_getRoutePatch": [],
+    "_getRouterUsePatch": [],
+    "_getAppUsePatch": [
+      "isExpressWithRouterPrototype"
+    ],
+    "_applyPatch": [
+      "layer",
+      "layerPath"
+    ],
+    "_getSpanName": [
+      "info",
+      "defaultName"
+    ]
+  },
+  "patched": [
+    "req",
+    "res"
+  ],
+  "onResponseFinish": [],
+  "storeLayerPath": [
+    "request",
+    "value"
+  ],
+  "getRouterPath": [
+    "path",
+    "layer"
+  ],
+  "getLayerMetadata": [
+    "route",
+    "layer",
+    "layerPath"
+  ],
+  "satisfiesPattern": [
+    "constant",
+    "pattern"
+  ],
+  "isLayerIgnored": [
+    "name",
+    "type",
+    "config"
+  ],
+  "asErrorAndMessage": [
+    "error"
+  ],
+  "getLayerPath": [
+    "args"
+  ],
+  "extractLayerPathSegment": [
+    "arg"
+  ],
+  "getConstructedRoute": [
+    "req"
+  ],
+  "getActualMatchedRoute": [
+    "req"
+  ],
+  "isRoutePattern": [
+    "route"
+  ]
+}

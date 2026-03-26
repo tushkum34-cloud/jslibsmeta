@@ -1,0 +1,81 @@
+{
+  "B3MultiPropagator": {
+    "inject": [
+      "context",
+      "carrier",
+      "setter"
+    ],
+    "extract": [
+      "context",
+      "carrier",
+      "getter"
+    ],
+    "fields": []
+  },
+  "isValidSampledValue": [
+    "sampled"
+  ],
+  "parseHeader": [
+    "header"
+  ],
+  "getHeaderValue": [
+    "carrier",
+    "getter",
+    "key"
+  ],
+  "getTraceId": [
+    "carrier",
+    "getter"
+  ],
+  "getSpanId": [
+    "carrier",
+    "getter"
+  ],
+  "getDebug": [
+    "carrier",
+    "getter"
+  ],
+  "getTraceFlags": [
+    "carrier",
+    "getter"
+  ],
+  "B3Propagator": {
+    "_b3MultiPropagator": [],
+    "_b3SinglePropagator": [],
+    "_inject": [],
+    "_fields": [],
+    "constructor": [
+      "param"
+    ],
+    "inject": [
+      "context",
+      "carrier",
+      "setter"
+    ],
+    "extract": [
+      "context",
+      "carrier",
+      "getter"
+    ],
+    "fields": []
+  },
+  "B3SinglePropagator": {
+    "inject": [
+      "context",
+      "carrier",
+      "setter"
+    ],
+    "extract": [
+      "context",
+      "carrier",
+      "getter"
+    ],
+    "fields": []
+  },
+  "convertToTraceId128": [
+    "traceId"
+  ],
+  "convertToTraceFlags": [
+    "samplingState"
+  ]
+}
