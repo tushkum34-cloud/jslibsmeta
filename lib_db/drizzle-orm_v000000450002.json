@@ -1,0 +1,8721 @@
+{
+  "ColumnAliasProxyHandler": {
+    "constructor": [
+      "table"
+    ],
+    "entityKind": [],
+    "get": [
+      "columnObj",
+      "prop"
+    ]
+  },
+  "TableAliasProxyHandler": {
+    "constructor": [
+      "alias",
+      "replaceOriginalName"
+    ],
+    "entityKind": [],
+    "get": [
+      "target",
+      "prop"
+    ]
+  },
+  "RelationTableAliasProxyHandler": {
+    "constructor": [
+      "alias"
+    ],
+    "entityKind": [],
+    "get": [
+      "target",
+      "prop"
+    ]
+  },
+  "aliasedTable": [
+    "table",
+    "tableAlias"
+  ],
+  "aliasedRelation": [
+    "relation",
+    "tableAlias"
+  ],
+  "aliasedTableColumn": [
+    "column",
+    "tableAlias"
+  ],
+  "mapColumnsInAliasedSQLToAlias": [
+    "query",
+    "alias"
+  ],
+  "mapColumnsInSQLToAlias": [
+    "query",
+    "alias"
+  ],
+  "getValueFromDataApi": [
+    "field"
+  ],
+  "typingsToAwsTypeHint": [
+    "typings"
+  ],
+  "toValueParam": [
+    "value",
+    "typings"
+  ],
+  "AwsDataApiPgDatabase": {
+    "entityKind": [],
+    "execute": [
+      "query"
+    ]
+  },
+  "AwsPgDialect": {
+    "entityKind": [],
+    "escapeParam": [
+      "num"
+    ],
+    "buildInsertQuery": [
+      "param"
+    ],
+    "buildUpdateSet": [
+      "table",
+      "set"
+    ]
+  },
+  "construct": [
+    "client",
+    "param"
+  ],
+  "drizzle": [
+    "client",
+    "param"
+  ],
+  "mock": [
+    "config"
+  ],
+  "migrate": [
+    "db",
+    "config"
+  ],
+  "AwsDataApiPreparedQuery": {
+    "constructor": [
+      "client",
+      "queryString",
+      "params",
+      "typings",
+      "options",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "transactionId",
+      "_isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "entityKind": [],
+    "rawQuery": [],
+    "execute": [
+      "param"
+    ],
+    "all": [
+      "placeholderValues"
+    ],
+    "values": [
+      "param"
+    ],
+    "mapResultRows": [
+      "records",
+      "columnMetadata"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "AwsDataApiSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "options",
+      "transactionId"
+    ],
+    "entityKind": [],
+    "rawQuery": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "name",
+      "isResponseInArrayMode",
+      "customResultMapper",
+      "queryMetadata",
+      "cacheConfig",
+      "transactionId"
+    ],
+    "execute": [
+      "query"
+    ],
+    "transaction": [
+      "transaction",
+      "config"
+    ]
+  },
+  "AwsDataApiTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "BetterSQLite3Database": {
+    "entityKind": []
+  },
+  "BetterSQLiteSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "executeMethod",
+      "isResponseInArrayMode",
+      "customResultMapper",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "transaction": [
+      "transaction",
+      "param"
+    ]
+  },
+  "BetterSQLiteTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "PreparedQuery": {
+    "constructor": [
+      "client",
+      "query",
+      "logger",
+      "fields",
+      "executeMethod",
+      "_isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "entityKind": [],
+    "run": [
+      "placeholderValues"
+    ],
+    "all": [
+      "placeholderValues"
+    ],
+    "get": [
+      "placeholderValues"
+    ],
+    "values": [
+      "placeholderValues"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "BunSQLDatabase": {
+    "entityKind": []
+  },
+  "BunSQLPreparedQuery": {
+    "constructor": [
+      "client",
+      "queryString",
+      "params",
+      "logger",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "_isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "entityKind": [],
+    "execute": [
+      "param"
+    ],
+    "all": [
+      "param"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "BunSQLSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "name",
+      "isResponseInArrayMode",
+      "customResultMapper",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "query": [
+      "query",
+      "params"
+    ],
+    "queryObjects": [
+      "query",
+      "params"
+    ],
+    "transaction": [
+      "transaction",
+      "config"
+    ]
+  },
+  "BunSQLTransaction": {
+    "constructor": [
+      "dialect",
+      "session",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "BunSQLiteDatabase": {
+    "entityKind": []
+  },
+  "SQLiteBunSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "exec": [
+      "query"
+    ],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "executeMethod",
+      "isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "transaction": [
+      "transaction",
+      "param"
+    ]
+  },
+  "SQLiteBunTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "Cache": {
+    "entityKind": []
+  },
+  "NoopCache": {
+    "strategy": [],
+    "entityKind": [],
+    "get": [
+      "_key"
+    ],
+    "put": [
+      "_hashedQuery",
+      "_response",
+      "_tables",
+      "_config"
+    ],
+    "onMutate": [
+      "_params"
+    ]
+  },
+  "hashQuery": [
+    "sql",
+    "params"
+  ],
+  "UpstashCache": {
+    "constructor": [
+      "redis",
+      "config",
+      "useGlobally"
+    ],
+    "entityKind": [],
+    "compositeTableSetPrefix": [],
+    "compositeTablePrefix": [],
+    "tagsMapKey": [],
+    "nonAutoInvalidateTablePrefix": [],
+    "luaScripts": [],
+    "internalConfig": [],
+    "strategy": [],
+    "toInternalConfig": [
+      "config"
+    ],
+    "get": [
+      "key",
+      "tables",
+      "param",
+      "isAutoInvalidate"
+    ],
+    "put": [
+      "key",
+      "response",
+      "tables",
+      "param",
+      "config"
+    ],
+    "onMutate": [
+      "params"
+    ],
+    "addTablePrefix": [],
+    "getCompositeKey": []
+  },
+  "upstashCache": [
+    "param"
+  ],
+  "CasingCache": {
+    "entityKind": [],
+    "cache": [],
+    "cachedTables": [],
+    "convert": [],
+    "constructor": [
+      "casing"
+    ],
+    "getColumnCasing": [
+      "column"
+    ],
+    "cacheTable": [
+      "table"
+    ],
+    "clearCache": []
+  },
+  "toSnakeCase": [
+    "input"
+  ],
+  "toCamelCase": [
+    "input"
+  ],
+  "noopCase": [
+    "input"
+  ],
+  "ColumnBuilder": {
+    "entityKind": [],
+    "config": [],
+    "constructor": [
+      "name",
+      "dataType",
+      "columnType"
+    ],
+    "$type": [],
+    "notNull": [],
+    "default": [
+      "value"
+    ],
+    "$defaultFn": [
+      "fn"
+    ],
+    "$default": [],
+    "$onUpdateFn": [
+      "fn"
+    ],
+    "$onUpdate": [],
+    "primaryKey": [],
+    "setName": [
+      "name"
+    ]
+  },
+  "Column": {
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "entityKind": [],
+    "name": [],
+    "keyAsName": [],
+    "primary": [],
+    "notNull": [],
+    "default": [],
+    "defaultFn": [],
+    "onUpdateFn": [],
+    "hasDefault": [],
+    "isUnique": [],
+    "uniqueName": [],
+    "uniqueType": [],
+    "dataType": [],
+    "columnType": [],
+    "enumValues": [],
+    "generated": [],
+    "generatedIdentity": [],
+    "config": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ],
+    "shouldDisableInsert": []
+  },
+  "DrizzleD1Database": {
+    "entityKind": [],
+    "batch": [
+      "batch"
+    ]
+  },
+  "SQLiteD1Session": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "executeMethod",
+      "isResponseInArrayMode",
+      "customResultMapper",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "batch": [
+      "queries"
+    ],
+    "extractRawAllValueFromBatchResult": [
+      "result"
+    ],
+    "extractRawGetValueFromBatchResult": [
+      "result"
+    ],
+    "extractRawValuesValueFromBatchResult": [
+      "result"
+    ],
+    "transaction": [
+      "transaction",
+      "config"
+    ]
+  },
+  "D1Transaction": {
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "D1PreparedQuery": {
+    "constructor": [
+      "stmt",
+      "query",
+      "logger",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "executeMethod",
+      "_isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "entityKind": [],
+    "customResultMapper": [],
+    "fields": [],
+    "stmt": [],
+    "run": [
+      "placeholderValues"
+    ],
+    "all": [
+      "placeholderValues"
+    ],
+    "mapAllResult": [
+      "rows",
+      "isFromBatch"
+    ],
+    "get": [
+      "placeholderValues"
+    ],
+    "mapGetResult": [
+      "result",
+      "isFromBatch"
+    ],
+    "values": [
+      "placeholderValues"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "d1ToRawMapping": [
+    "results"
+  ],
+  "DrizzleSqliteDODatabase": {
+    "entityKind": []
+  },
+  "readMigrationFiles": [
+    "param"
+  ],
+  "SQLiteDOSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "executeMethod",
+      "isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "transaction": [
+      "transaction",
+      "_config"
+    ]
+  },
+  "SQLiteDOTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "SQLiteDOPreparedQuery": {
+    "constructor": [
+      "client",
+      "query",
+      "logger",
+      "fields",
+      "executeMethod",
+      "_isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "entityKind": [],
+    "run": [
+      "placeholderValues"
+    ],
+    "all": [
+      "placeholderValues"
+    ],
+    "get": [
+      "placeholderValues"
+    ],
+    "values": [
+      "placeholderValues"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "is": [
+    "value",
+    "type"
+  ],
+  "DrizzleError": {
+    "entityKind": [],
+    "constructor": [
+      "param"
+    ]
+  },
+  "DrizzleQueryError": {
+    "constructor": [
+      "query",
+      "params",
+      "cause"
+    ]
+  },
+  "TransactionRollbackError": {
+    "entityKind": [],
+    "constructor": []
+  },
+  "ExpoSQLiteDatabase": {
+    "entityKind": []
+  },
+  "useMigrations": [
+    "db",
+    "migrations"
+  ],
+  "fetchReducer": [
+    "state2",
+    "action"
+  ],
+  "useLiveQuery": [
+    "query",
+    "param"
+  ],
+  "handleData": [
+    "data2"
+  ],
+  "ExpoSQLiteSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "executeMethod",
+      "isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "transaction": [
+      "transaction",
+      "param"
+    ]
+  },
+  "ExpoSQLiteTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "ExpoSQLitePreparedQuery": {
+    "constructor": [
+      "stmt",
+      "query",
+      "logger",
+      "fields",
+      "executeMethod",
+      "_isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "entityKind": [],
+    "run": [
+      "placeholderValues"
+    ],
+    "all": [
+      "placeholderValues"
+    ],
+    "get": [
+      "placeholderValues"
+    ],
+    "values": [
+      "placeholderValues"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "GelDriver": {
+    "constructor": [
+      "client",
+      "dialect",
+      "param"
+    ],
+    "entityKind": [],
+    "createSession": [
+      "schema"
+    ]
+  },
+  "GelJsDatabase": {
+    "entityKind": []
+  },
+  "GelDbPreparedQuery": {
+    "constructor": [
+      "client",
+      "queryString",
+      "params",
+      "logger",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "_isResponseInArrayMode",
+      "customResultMapper",
+      "param"
+    ],
+    "entityKind": [],
+    "execute": [
+      "param"
+    ],
+    "all": [
+      "param"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "GelDbSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "name",
+      "isResponseInArrayMode",
+      "customResultMapper",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "transaction": [
+      "transaction"
+    ],
+    "count": [
+      "sql"
+    ]
+  },
+  "GelDbTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "alias": [
+    "table",
+    "alias2"
+  ],
+  "CheckBuilder": {
+    "constructor": [
+      "name",
+      "value"
+    ],
+    "entityKind": [],
+    "brand": [],
+    "build": [
+      "table"
+    ]
+  },
+  "Check": {
+    "constructor": [
+      "table",
+      "builder"
+    ],
+    "entityKind": [],
+    "name": [],
+    "value": []
+  },
+  "check": [
+    "name",
+    "value"
+  ],
+  "getGelColumnBuilders": [],
+  "GelInt53Builder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelInt53": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "bigint": [
+    "a",
+    "b"
+  ],
+  "GelBigInt64Builder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelBigInt64": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "bigintT": [
+    "name"
+  ],
+  "GelBooleanBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelBoolean": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "boolean": [
+    "name"
+  ],
+  "GelBytesBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelBytes": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "bytes": [
+    "name"
+  ],
+  "GelColumnBuilder": {
+    "foreignKeyConfigs": [],
+    "entityKind": [],
+    "array": [
+      "size"
+    ],
+    "references": [
+      "ref",
+      "param"
+    ],
+    "unique": [
+      "name",
+      "config"
+    ],
+    "generatedAlwaysAs": [
+      "as"
+    ],
+    "buildForeignKeys": [
+      "column",
+      "table"
+    ],
+    "buildExtraConfigColumn": [
+      "table"
+    ]
+  },
+  "GelColumn": {
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "entityKind": []
+  },
+  "GelExtraConfigColumn": {
+    "entityKind": [],
+    "getSQLType": [],
+    "indexConfig": [],
+    "defaultConfig": [],
+    "asc": [],
+    "desc": [],
+    "nullsFirst": [],
+    "nullsLast": [],
+    "op": [
+      "opClass"
+    ]
+  },
+  "IndexedColumn": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "keyAsName",
+      "type",
+      "indexConfig"
+    ],
+    "name": [],
+    "keyAsName": [],
+    "type": [],
+    "indexConfig": []
+  },
+  "GelArrayBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "baseBuilder",
+      "size"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelArray": {
+    "constructor": [
+      "table",
+      "config",
+      "baseColumn",
+      "range"
+    ],
+    "size": [],
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "GelCustomColumnBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "fieldConfig",
+      "customTypeParams"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelCustomColumn": {
+    "entityKind": [],
+    "sqlName": [],
+    "mapTo": [],
+    "mapFrom": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "customType": [
+    "customTypeParams"
+  ],
+  "GelDateDurationBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelDateDuration": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "dateDuration": [
+    "name"
+  ],
+  "GelLocalDateColumnBaseBuilder": {
+    "entityKind": [],
+    "defaultNow": []
+  },
+  "GelDecimalBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelDecimal": {
+    "entityKind": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": []
+  },
+  "decimal": [
+    "a",
+    "param"
+  ],
+  "GelDoublePrecisionBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelDoublePrecision": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "doublePrecision": [
+    "name"
+  ],
+  "GelDurationBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelDuration": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "duration": [
+    "name"
+  ],
+  "GelIntColumnBaseBuilder": {
+    "entityKind": [],
+    "generatedAlwaysAsIdentity": [
+      "sequence"
+    ],
+    "generatedByDefaultAsIdentity": [
+      "sequence"
+    ]
+  },
+  "GelIntegerBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelInteger": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "integer": [
+    "a",
+    "b"
+  ],
+  "GelJsonBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelJson": {
+    "entityKind": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": []
+  },
+  "json": [
+    "name"
+  ],
+  "GelLocalDateStringBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelLocalDateString": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "localDate": [
+    "name"
+  ],
+  "GelLocalTimeBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelLocalTime": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "localTime": [
+    "name"
+  ],
+  "GelRealBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "length"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelReal": {
+    "entityKind": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": []
+  },
+  "real": [
+    "name"
+  ],
+  "GelRelDurationBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelRelDuration": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "relDuration": [
+    "name"
+  ],
+  "GelSmallIntBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelSmallInt": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "smallint": [
+    "a",
+    "b"
+  ],
+  "GelTextBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelText": {
+    "entityKind": [],
+    "enumValues": [],
+    "getSQLType": []
+  },
+  "text": [
+    "a",
+    "param"
+  ],
+  "GelTimestampBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelTimestamp": {
+    "entityKind": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": []
+  },
+  "timestamp": [
+    "a",
+    "param"
+  ],
+  "GelTimestampTzBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelTimestampTz": {
+    "entityKind": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": []
+  },
+  "timestamptz": [
+    "name"
+  ],
+  "GelUUIDBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "GelUUID": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "uuid": [
+    "name"
+  ],
+  "GelDatabase": {
+    "constructor": [
+      "dialect",
+      "session",
+      "schema"
+    ],
+    "entityKind": [],
+    "query": [],
+    "$with": [
+      "alias"
+    ],
+    "$count": [
+      "source",
+      "filters"
+    ],
+    "with": [
+      "param"
+    ],
+    "select": [
+      "fields"
+    ],
+    "selectDistinct": [
+      "fields"
+    ],
+    "selectDistinctOn": [
+      "on",
+      "fields"
+    ],
+    "$cache": [],
+    "update": [
+      "table"
+    ],
+    "insert": [
+      "table"
+    ],
+    "delete": [
+      "table"
+    ],
+    "execute": [
+      "query"
+    ],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "select": [
+    "fields"
+  ],
+  "selectDistinct": [
+    "fields"
+  ],
+  "selectDistinctOn": [
+    "on",
+    "fields"
+  ],
+  "update": [
+    "param"
+  ],
+  "insert": [
+    "param"
+  ],
+  "delete_": [
+    "from"
+  ],
+  "withReplicas": [
+    "primary",
+    "replicas",
+    "param"
+  ],
+  "_with": [
+    "param"
+  ],
+  "$with": [
+    "param"
+  ],
+  "$delete": [
+    "param"
+  ],
+  "execute": [
+    "param"
+  ],
+  "transaction": [
+    "param"
+  ],
+  "GelDialect": {
+    "entityKind": [],
+    "casing": [],
+    "constructor": [
+      "config"
+    ],
+    "escapeName": [
+      "name"
+    ],
+    "escapeParam": [
+      "num"
+    ],
+    "escapeString": [
+      "str"
+    ],
+    "buildWithCTE": [
+      "queries"
+    ],
+    "buildDeleteQuery": [
+      "param"
+    ],
+    "buildUpdateSet": [
+      "table",
+      "set"
+    ],
+    "buildUpdateQuery": [
+      "param"
+    ],
+    "buildSelection": [
+      "fields",
+      "param"
+    ],
+    "buildJoins": [
+      "joins"
+    ],
+    "buildFromTable": [
+      "table"
+    ],
+    "buildSelectQuery": [
+      "param"
+    ],
+    "buildSetOperations": [
+      "leftSelect",
+      "setOperators"
+    ],
+    "buildSetOperationQuery": [
+      "param"
+    ],
+    "buildInsertQuery": [
+      "param"
+    ],
+    "buildRefreshMaterializedViewQuery": [
+      "param"
+    ],
+    "prepareTyping": [
+      "encoder"
+    ],
+    "sqlToQuery": [
+      "sql2",
+      "invokeSource"
+    ],
+    "buildRelationalQueryWithoutPK": [
+      "param"
+    ]
+  },
+  "concat": [
+    "column",
+    "value"
+  ],
+  "substring": [
+    "column",
+    "param"
+  ],
+  "ForeignKeyBuilder": {
+    "entityKind": [],
+    "reference": [],
+    "_onUpdate": [],
+    "_onDelete": [],
+    "constructor": [
+      "config",
+      "actions"
+    ],
+    "onUpdate": [
+      "action"
+    ],
+    "onDelete": [
+      "action"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "ForeignKey": {
+    "constructor": [
+      "table",
+      "builder"
+    ],
+    "entityKind": [],
+    "reference": [],
+    "onUpdate": [],
+    "onDelete": [],
+    "getName": []
+  },
+  "foreignKey": [
+    "config"
+  ],
+  "mappedConfig": [],
+  "IndexBuilderOn": {
+    "constructor": [
+      "name",
+      "unique"
+    ],
+    "entityKind": [],
+    "on": [
+      "param"
+    ]
+  },
+  "IndexBuilder": {
+    "entityKind": [],
+    "config": [],
+    "constructor": [
+      "name",
+      "columns",
+      "unique"
+    ],
+    "where": [
+      "condition"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "Index": {
+    "entityKind": [],
+    "config": [],
+    "constructor": [
+      "config",
+      "table"
+    ]
+  },
+  "index": [
+    "name"
+  ],
+  "uniqueIndex": [
+    "name"
+  ],
+  "GelPolicy": {
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "entityKind": [],
+    "as": [],
+    "for": [],
+    "to": [],
+    "using": [],
+    "withCheck": [],
+    "_linkedTable": [],
+    "link": [
+      "table"
+    ]
+  },
+  "gelPolicy": [
+    "name",
+    "config"
+  ],
+  "PrimaryKeyBuilder": {
+    "entityKind": [],
+    "columns": [],
+    "name": [],
+    "constructor": [
+      "columns",
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PrimaryKey": {
+    "constructor": [
+      "table",
+      "columns",
+      "name"
+    ],
+    "entityKind": [],
+    "columns": [],
+    "name": [],
+    "getName": []
+  },
+  "primaryKey": [
+    "param"
+  ],
+  "GelCountBuilder": {
+    "constructor": [
+      "params"
+    ],
+    "sql": [],
+    "entityKind": [],
+    "session": [],
+    "buildEmbeddedCount": [
+      "source",
+      "filters"
+    ],
+    "buildCount": [
+      "source",
+      "filters"
+    ],
+    "then": [
+      "onfulfilled",
+      "onrejected"
+    ],
+    "catch": [
+      "onRejected"
+    ],
+    "finally": [
+      "onFinally"
+    ]
+  },
+  "GelDeleteBase": {
+    "constructor": [
+      "table",
+      "session",
+      "dialect",
+      "withList"
+    ],
+    "entityKind": [],
+    "config": [],
+    "where": [
+      "where"
+    ],
+    "returning": [
+      "param"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "_prepare": [
+      "name"
+    ],
+    "prepare": [
+      "name"
+    ],
+    "execute": [],
+    "$dynamic": []
+  },
+  "GelInsertBuilder": {
+    "constructor": [
+      "table",
+      "session",
+      "dialect",
+      "withList",
+      "overridingSystemValue_"
+    ],
+    "entityKind": [],
+    "authToken": [],
+    "setToken": [
+      "token"
+    ],
+    "overridingSystemValue": [],
+    "values": [
+      "values"
+    ],
+    "select": [
+      "selectQuery"
+    ]
+  },
+  "GelInsertBase": {
+    "constructor": [
+      "table",
+      "values",
+      "session",
+      "dialect",
+      "withList",
+      "select",
+      "overridingSystemValue_"
+    ],
+    "entityKind": [],
+    "config": [],
+    "returning": [
+      "param"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "_prepare": [
+      "name"
+    ],
+    "prepare": [
+      "name"
+    ],
+    "execute": [],
+    "$dynamic": []
+  },
+  "QueryBuilder": {
+    "entityKind": [],
+    "dialect": [],
+    "dialectConfig": [],
+    "constructor": [
+      "dialect"
+    ],
+    "$with": [],
+    "with": [
+      "param"
+    ],
+    "select": [
+      "fields"
+    ],
+    "selectDistinct": [
+      "fields"
+    ],
+    "getDialect": []
+  },
+  "RelationalQueryBuilder": {
+    "constructor": [
+      "mode",
+      "fullSchema",
+      "schema",
+      "tableNamesMap",
+      "table",
+      "tableConfig",
+      "dialect",
+      "session"
+    ],
+    "entityKind": [],
+    "findMany": [
+      "config"
+    ],
+    "findFirst": [
+      "config"
+    ]
+  },
+  "GelRelationalQuery": {
+    "constructor": [
+      "fullSchema",
+      "schema",
+      "tableNamesMap",
+      "table",
+      "tableConfig",
+      "dialect",
+      "session",
+      "config",
+      "mode"
+    ],
+    "entityKind": [],
+    "_prepare": [
+      "name"
+    ],
+    "prepare": [
+      "name"
+    ],
+    "_getQuery": [],
+    "getSQL": [],
+    "_toSQL": [],
+    "toSQL": [],
+    "execute": []
+  },
+  "GelRaw": {
+    "constructor": [
+      "execute",
+      "sql",
+      "query",
+      "mapBatchResult"
+    ],
+    "entityKind": [],
+    "getSQL": [],
+    "getQuery": [],
+    "mapResult": [
+      "result",
+      "isFromBatch"
+    ],
+    "_prepare": [],
+    "isResponseInArrayMode": []
+  },
+  "GelRefreshMaterializedView": {
+    "constructor": [
+      "view",
+      "session",
+      "dialect"
+    ],
+    "entityKind": [],
+    "config": [],
+    "concurrently": [],
+    "withNoData": [],
+    "getSQL": [],
+    "toSQL": [],
+    "_prepare": [
+      "name"
+    ],
+    "prepare": [
+      "name"
+    ],
+    "execute": []
+  },
+  "GelSelectBuilder": {
+    "entityKind": [],
+    "fields": [],
+    "session": [],
+    "dialect": [],
+    "withList": [],
+    "distinct": [],
+    "constructor": [
+      "config"
+    ],
+    "authToken": [],
+    "setToken": [
+      "token"
+    ],
+    "from": [
+      "source"
+    ]
+  },
+  "GelSelectQueryBuilderBase": {
+    "entityKind": [],
+    "_": [],
+    "config": [],
+    "joinsNotNullableMap": [],
+    "tableName": [],
+    "isPartialSelect": [],
+    "session": [],
+    "dialect": [],
+    "cacheConfig": [],
+    "usedTables": [],
+    "constructor": [
+      "param"
+    ],
+    "getUsedTables": [],
+    "createJoin": [
+      "joinType",
+      "lateral"
+    ],
+    "leftJoin": [],
+    "leftJoinLateral": [],
+    "rightJoin": [],
+    "innerJoin": [],
+    "innerJoinLateral": [],
+    "fullJoin": [],
+    "crossJoin": [],
+    "crossJoinLateral": [],
+    "createSetOperator": [
+      "type",
+      "isAll"
+    ],
+    "union": [],
+    "unionAll": [],
+    "intersect": [],
+    "intersectAll": [],
+    "except": [],
+    "exceptAll": [],
+    "addSetOperators": [
+      "setOperators"
+    ],
+    "where": [
+      "where"
+    ],
+    "having": [
+      "having"
+    ],
+    "groupBy": [
+      "param"
+    ],
+    "orderBy": [
+      "param"
+    ],
+    "limit": [
+      "limit"
+    ],
+    "offset": [
+      "offset"
+    ],
+    "for": [
+      "strength",
+      "param"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "as": [
+      "alias"
+    ],
+    "getSelectedFields": [],
+    "$dynamic": []
+  },
+  "GelSelectBase": {
+    "entityKind": [],
+    "_prepare": [
+      "name"
+    ],
+    "$withCache": [
+      "config"
+    ],
+    "prepare": [
+      "name"
+    ],
+    "execute": []
+  },
+  "createSetOperator": [
+    "type",
+    "isAll"
+  ],
+  "getGelSetOperators": [],
+  "GelUpdateBuilder": {
+    "constructor": [
+      "table",
+      "session",
+      "dialect",
+      "withList"
+    ],
+    "entityKind": [],
+    "authToken": [],
+    "setToken": [
+      "token"
+    ],
+    "set": [
+      "values"
+    ]
+  },
+  "GelUpdateBase": {
+    "constructor": [
+      "table",
+      "set",
+      "session",
+      "dialect",
+      "withList"
+    ],
+    "entityKind": [],
+    "config": [],
+    "tableName": [],
+    "joinsNotNullableMap": [],
+    "from": [
+      "source"
+    ],
+    "getTableLikeFields": [
+      "table"
+    ],
+    "createJoin": [
+      "joinType"
+    ],
+    "leftJoin": [],
+    "rightJoin": [],
+    "innerJoin": [],
+    "fullJoin": [],
+    "where": [
+      "where"
+    ],
+    "returning": [
+      "fields"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "_prepare": [
+      "name"
+    ],
+    "prepare": [
+      "name"
+    ],
+    "execute": [],
+    "$dynamic": []
+  },
+  "GelRole": {
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "entityKind": [],
+    "_existing": [],
+    "createDb": [],
+    "createRole": [],
+    "inherit": [],
+    "existing": []
+  },
+  "gelRole": [
+    "name",
+    "config"
+  ],
+  "GelSchema": {
+    "constructor": [
+      "schemaName"
+    ],
+    "entityKind": [],
+    "table": [],
+    "sequence": [],
+    "getSQL": [],
+    "shouldOmitSQLParens": []
+  },
+  "isGelSchema": [
+    "obj"
+  ],
+  "gelSchema": [
+    "name"
+  ],
+  "GelSequence": {
+    "constructor": [
+      "seqName",
+      "seqOptions",
+      "schema"
+    ],
+    "entityKind": []
+  },
+  "gelSequence": [
+    "name",
+    "options"
+  ],
+  "gelSequenceWithSchema": [
+    "name",
+    "options",
+    "schema"
+  ],
+  "isGelSequence": [
+    "obj"
+  ],
+  "GelPreparedQuery": {
+    "constructor": [
+      "query",
+      "cache",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "queryWithCache": [
+      "queryString",
+      "params",
+      "query"
+    ],
+    "authToken": [],
+    "getQuery": [],
+    "mapResult": [
+      "response",
+      "_isFromBatch"
+    ],
+    "entityKind": [],
+    "joinsNotNullableMap": []
+  },
+  "GelSession": {
+    "constructor": [
+      "dialect"
+    ],
+    "entityKind": [],
+    "execute": [
+      "query"
+    ],
+    "all": [
+      "query"
+    ],
+    "count": [
+      "sql"
+    ]
+  },
+  "GelTransaction": {
+    "constructor": [
+      "dialect",
+      "session",
+      "schema"
+    ],
+    "entityKind": [],
+    "rollback": []
+  },
+  "GelTable": {
+    "entityKind": [],
+    "Symbol": [],
+    "InlineForeignKeys": [],
+    "EnableRLS": []
+  },
+  "gelTableWithSchema": [
+    "name",
+    "columns",
+    "extraConfig",
+    "schema",
+    "param"
+  ],
+  "gelTable": [
+    "name",
+    "columns",
+    "extraConfig"
+  ],
+  "gelTableCreator": [
+    "customizeTableName"
+  ],
+  "UniqueConstraintBuilder": {
+    "constructor": [
+      "columns",
+      "name"
+    ],
+    "entityKind": [],
+    "columns": [],
+    "build": [
+      "table"
+    ]
+  },
+  "UniqueOnConstraintBuilder": {
+    "entityKind": [],
+    "name": [],
+    "constructor": [
+      "name"
+    ],
+    "on": [
+      "param"
+    ]
+  },
+  "UniqueConstraint": {
+    "constructor": [
+      "table",
+      "columns",
+      "name"
+    ],
+    "entityKind": [],
+    "columns": [],
+    "name": [],
+    "getName": []
+  },
+  "unique": [
+    "name"
+  ],
+  "uniqueKeyName": [
+    "table",
+    "columns"
+  ],
+  "getTableConfig": [
+    "table"
+  ],
+  "extractUsedTable": [
+    "table"
+  ],
+  "getViewConfig": [
+    "view"
+  ],
+  "getMaterializedViewConfig": [
+    "view"
+  ],
+  "GelViewBase": {
+    "entityKind": []
+  },
+  "DefaultViewBuilderCore": {
+    "constructor": [
+      "name",
+      "schema"
+    ],
+    "entityKind": [],
+    "config": [],
+    "with": [
+      "config"
+    ]
+  },
+  "ViewBuilder": {
+    "entityKind": [],
+    "as": [
+      "qb"
+    ]
+  },
+  "ManualViewBuilder": {
+    "entityKind": [],
+    "columns": [],
+    "constructor": [
+      "name",
+      "columns"
+    ],
+    "existing": [],
+    "as": [
+      "query"
+    ]
+  },
+  "MaterializedViewBuilderCore": {
+    "constructor": [
+      "name",
+      "schema"
+    ],
+    "entityKind": [],
+    "config": [],
+    "using": [
+      "using"
+    ],
+    "with": [
+      "config"
+    ],
+    "tablespace": [
+      "tablespace"
+    ],
+    "withNoData": []
+  },
+  "MaterializedViewBuilder": {
+    "entityKind": [],
+    "as": [
+      "qb"
+    ]
+  },
+  "ManualMaterializedViewBuilder": {
+    "entityKind": [],
+    "columns": [],
+    "constructor": [
+      "name",
+      "columns",
+      "schema"
+    ],
+    "existing": [],
+    "as": [
+      "query"
+    ]
+  },
+  "GelView": {
+    "entityKind": [],
+    "GelViewConfig": [],
+    "constructor": [
+      "param"
+    ]
+  },
+  "GelMaterializedView": {
+    "entityKind": [],
+    "GelMaterializedViewConfig": [],
+    "constructor": [
+      "param"
+    ]
+  },
+  "gelViewWithSchema": [
+    "name",
+    "selection",
+    "schema"
+  ],
+  "gelMaterializedViewWithSchema": [
+    "name",
+    "selection",
+    "schema"
+  ],
+  "gelView": [
+    "name",
+    "columns"
+  ],
+  "gelMaterializedView": [
+    "name",
+    "columns"
+  ],
+  "isGelView": [
+    "obj"
+  ],
+  "isGelMaterializedView": [
+    "obj"
+  ],
+  "LibSQLDatabase": {
+    "entityKind": [],
+    "batch": [
+      "batch"
+    ]
+  },
+  "LibSQLSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "options",
+      "tx"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "executeMethod",
+      "isResponseInArrayMode",
+      "customResultMapper",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "batch": [
+      "queries"
+    ],
+    "migrate": [
+      "queries"
+    ],
+    "transaction": [
+      "transaction",
+      "_config"
+    ],
+    "extractRawAllValueFromBatchResult": [
+      "result"
+    ],
+    "extractRawGetValueFromBatchResult": [
+      "result"
+    ],
+    "extractRawValuesValueFromBatchResult": [
+      "result"
+    ]
+  },
+  "LibSQLTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "LibSQLPreparedQuery": {
+    "constructor": [
+      "client",
+      "query",
+      "logger",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "tx",
+      "executeMethod",
+      "_isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "entityKind": [],
+    "run": [
+      "placeholderValues"
+    ],
+    "all": [
+      "placeholderValues"
+    ],
+    "mapAllResult": [
+      "rows",
+      "isFromBatch"
+    ],
+    "get": [
+      "placeholderValues"
+    ],
+    "mapGetResult": [
+      "rows",
+      "isFromBatch"
+    ],
+    "values": [
+      "placeholderValues"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "normalizeRow": [
+    "obj"
+  ],
+  "normalizeFieldValue": [
+    "value"
+  ],
+  "ConsoleLogWriter": {
+    "entityKind": [],
+    "write": [
+      "message"
+    ]
+  },
+  "DefaultLogger": {
+    "entityKind": [],
+    "writer": [],
+    "constructor": [
+      "config"
+    ],
+    "logQuery": [
+      "query",
+      "params"
+    ]
+  },
+  "NoopLogger": {
+    "entityKind": [],
+    "logQuery": []
+  },
+  "getMySqlColumnBuilders": [],
+  "MySqlBigInt53Builder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "param"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlBigInt53": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "MySqlBigInt64Builder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "param"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlBigInt64": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "MySqlBinaryBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "length"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlBinary": {
+    "entityKind": [],
+    "length": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "getSQLType": []
+  },
+  "binary": [
+    "a",
+    "param"
+  ],
+  "MySqlBooleanBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlBoolean": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "MySqlCharBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlChar": {
+    "entityKind": [],
+    "length": [],
+    "enumValues": [],
+    "getSQLType": []
+  },
+  "char": [
+    "a",
+    "param"
+  ],
+  "MySqlColumnBuilder": {
+    "entityKind": [],
+    "foreignKeyConfigs": [],
+    "references": [
+      "ref",
+      "param"
+    ],
+    "unique": [
+      "name"
+    ],
+    "generatedAlwaysAs": [
+      "as",
+      "config"
+    ],
+    "buildForeignKeys": [
+      "column",
+      "table"
+    ]
+  },
+  "MySqlColumn": {
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "entityKind": []
+  },
+  "MySqlColumnBuilderWithAutoIncrement": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "dataType",
+      "columnType"
+    ],
+    "autoincrement": []
+  },
+  "MySqlColumnWithAutoIncrement": {
+    "entityKind": [],
+    "autoIncrement": []
+  },
+  "MySqlCustomColumnBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "fieldConfig",
+      "customTypeParams"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlCustomColumn": {
+    "entityKind": [],
+    "sqlName": [],
+    "mapTo": [],
+    "mapFrom": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "MySqlDateColumnBaseBuilder": {
+    "entityKind": [],
+    "defaultNow": [],
+    "onUpdateNow": []
+  },
+  "MySqlDateBaseColumn": {
+    "entityKind": [],
+    "hasOnUpdateNow": []
+  },
+  "MySqlDateBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlDate": {
+    "entityKind": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "MySqlDateStringBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlDateString": {
+    "entityKind": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": []
+  },
+  "date": [
+    "a",
+    "b"
+  ],
+  "MySqlDateTimeBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlDateTime": {
+    "entityKind": [],
+    "fsp": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": [],
+    "mapToDriverValue": [
+      "value"
+    ],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "MySqlDateTimeStringBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlDateTimeString": {
+    "entityKind": [],
+    "fsp": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": []
+  },
+  "datetime": [
+    "a",
+    "b"
+  ],
+  "MySqlDecimalBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlDecimal": {
+    "entityKind": [],
+    "precision": [],
+    "scale": [],
+    "unsigned": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "getSQLType": []
+  },
+  "MySqlDecimalNumberBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlDecimalNumber": {
+    "entityKind": [],
+    "precision": [],
+    "scale": [],
+    "unsigned": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [],
+    "getSQLType": []
+  },
+  "MySqlDecimalBigIntBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlDecimalBigInt": {
+    "entityKind": [],
+    "precision": [],
+    "scale": [],
+    "unsigned": [],
+    "mapFromDriverValue": [],
+    "mapToDriverValue": [],
+    "getSQLType": []
+  },
+  "MySqlDoubleBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlDouble": {
+    "entityKind": [],
+    "precision": [],
+    "scale": [],
+    "unsigned": [],
+    "getSQLType": []
+  },
+  "double": [
+    "a",
+    "b"
+  ],
+  "MySqlEnumColumnBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "values"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlEnumColumn": {
+    "entityKind": [],
+    "enumValues": [],
+    "getSQLType": []
+  },
+  "MySqlEnumObjectColumnBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "values"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlEnumObjectColumn": {
+    "entityKind": [],
+    "enumValues": [],
+    "getSQLType": []
+  },
+  "mysqlEnum": [
+    "a",
+    "b"
+  ],
+  "MySqlFloatBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlFloat": {
+    "entityKind": [],
+    "precision": [],
+    "scale": [],
+    "unsigned": [],
+    "getSQLType": []
+  },
+  "float": [
+    "a",
+    "b"
+  ],
+  "MySqlIntBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlInt": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "int": [
+    "a",
+    "b"
+  ],
+  "MySqlJsonBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlJson": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "MySqlMediumIntBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlMediumInt": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "mediumint": [
+    "a",
+    "b"
+  ],
+  "MySqlRealBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlReal": {
+    "entityKind": [],
+    "precision": [],
+    "scale": [],
+    "getSQLType": []
+  },
+  "MySqlSerialBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlSerial": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "serial": [
+    "name"
+  ],
+  "MySqlSmallIntBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlSmallInt": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "MySqlTextBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "textType",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlText": {
+    "entityKind": [],
+    "textType": [],
+    "enumValues": [],
+    "getSQLType": []
+  },
+  "tinytext": [
+    "a",
+    "param"
+  ],
+  "mediumtext": [
+    "a",
+    "param"
+  ],
+  "longtext": [
+    "a",
+    "param"
+  ],
+  "MySqlTimeBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlTime": {
+    "entityKind": [],
+    "fsp": [],
+    "getSQLType": []
+  },
+  "time": [
+    "name"
+  ],
+  "MySqlTimestampBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlTimestamp": {
+    "entityKind": [],
+    "fsp": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "MySqlTimestampStringBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlTimestampString": {
+    "entityKind": [],
+    "fsp": [],
+    "getSQLType": []
+  },
+  "MySqlTinyIntBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlTinyInt": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "tinyint": [
+    "a",
+    "b"
+  ],
+  "MySqlVarBinaryBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlVarBinary": {
+    "entityKind": [],
+    "length": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "getSQLType": []
+  },
+  "varbinary": [
+    "a",
+    "b"
+  ],
+  "MySqlVarCharBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlVarChar": {
+    "entityKind": [],
+    "length": [],
+    "enumValues": [],
+    "getSQLType": []
+  },
+  "varchar": [
+    "a",
+    "b"
+  ],
+  "MySqlYearBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "MySqlYear": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "year": [
+    "name"
+  ],
+  "MySqlDatabase": {
+    "constructor": [
+      "dialect",
+      "session",
+      "schema",
+      "mode"
+    ],
+    "entityKind": [],
+    "query": [],
+    "$with": [],
+    "$count": [
+      "source",
+      "filters"
+    ],
+    "$cache": [],
+    "with": [
+      "param"
+    ],
+    "select": [
+      "fields"
+    ],
+    "selectDistinct": [
+      "fields"
+    ],
+    "update": [
+      "table"
+    ],
+    "insert": [
+      "table"
+    ],
+    "delete": [
+      "table"
+    ],
+    "execute": [
+      "query"
+    ],
+    "transaction": [
+      "transaction",
+      "config"
+    ]
+  },
+  "as": [
+    "qb"
+  ],
+  "$count": [
+    "param"
+  ],
+  "MySqlDialect": {
+    "entityKind": [],
+    "casing": [],
+    "constructor": [
+      "config"
+    ],
+    "migrate": [
+      "migrations",
+      "session",
+      "config"
+    ],
+    "escapeName": [
+      "name"
+    ],
+    "escapeParam": [
+      "_num"
+    ],
+    "escapeString": [
+      "str"
+    ],
+    "buildWithCTE": [
+      "queries"
+    ],
+    "buildDeleteQuery": [
+      "param"
+    ],
+    "buildUpdateSet": [
+      "table",
+      "set"
+    ],
+    "buildUpdateQuery": [
+      "param"
+    ],
+    "buildSelection": [
+      "fields",
+      "param"
+    ],
+    "buildLimit": [
+      "limit"
+    ],
+    "buildOrderBy": [
+      "orderBy"
+    ],
+    "buildIndex": [
+      "param"
+    ],
+    "buildSelectQuery": [
+      "param"
+    ],
+    "buildSetOperations": [
+      "leftSelect",
+      "setOperators"
+    ],
+    "buildSetOperationQuery": [
+      "param"
+    ],
+    "buildInsertQuery": [
+      "param"
+    ],
+    "sqlToQuery": [
+      "sql2",
+      "invokeSource"
+    ],
+    "buildRelationalQuery": [
+      "param"
+    ],
+    "buildRelationalQueryWithoutLateralSubqueries": [
+      "param"
+    ]
+  },
+  "MySqlCountBuilder": {
+    "constructor": [
+      "params"
+    ],
+    "sql": [],
+    "entityKind": [],
+    "session": [],
+    "buildEmbeddedCount": [
+      "source",
+      "filters"
+    ],
+    "buildCount": [
+      "source",
+      "filters"
+    ],
+    "then": [
+      "onfulfilled",
+      "onrejected"
+    ],
+    "catch": [
+      "onRejected"
+    ],
+    "finally": [
+      "onFinally"
+    ]
+  },
+  "MySqlDeleteBase": {
+    "constructor": [
+      "table",
+      "session",
+      "dialect",
+      "withList"
+    ],
+    "entityKind": [],
+    "config": [],
+    "where": [
+      "where"
+    ],
+    "orderBy": [
+      "param"
+    ],
+    "limit": [
+      "limit"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "prepare": [],
+    "execute": [],
+    "createIterator": [],
+    "iterator": [],
+    "$dynamic": []
+  },
+  "MySqlInsertBuilder": {
+    "constructor": [
+      "table",
+      "session",
+      "dialect"
+    ],
+    "entityKind": [],
+    "shouldIgnore": [],
+    "ignore": [],
+    "values": [
+      "values"
+    ],
+    "select": [
+      "selectQuery"
+    ]
+  },
+  "MySqlInsertBase": {
+    "constructor": [
+      "table",
+      "values",
+      "ignore",
+      "session",
+      "dialect",
+      "select"
+    ],
+    "entityKind": [],
+    "config": [],
+    "cacheConfig": [],
+    "onDuplicateKeyUpdate": [
+      "config"
+    ],
+    "$returningId": [],
+    "getSQL": [],
+    "toSQL": [],
+    "prepare": [],
+    "execute": [],
+    "createIterator": [],
+    "iterator": [],
+    "$dynamic": []
+  },
+  "MySqlRelationalQuery": {
+    "constructor": [
+      "fullSchema",
+      "schema",
+      "tableNamesMap",
+      "table",
+      "tableConfig",
+      "dialect",
+      "session",
+      "config",
+      "queryMode",
+      "mode"
+    ],
+    "entityKind": [],
+    "prepare": [],
+    "_getQuery": [],
+    "_toSQL": [],
+    "getSQL": [],
+    "toSQL": [],
+    "execute": []
+  },
+  "MySqlSelectBuilder": {
+    "entityKind": [],
+    "fields": [],
+    "session": [],
+    "dialect": [],
+    "withList": [],
+    "distinct": [],
+    "constructor": [
+      "config"
+    ],
+    "from": [
+      "source",
+      "onIndex"
+    ]
+  },
+  "MySqlSelectQueryBuilderBase": {
+    "entityKind": [],
+    "_": [],
+    "config": [],
+    "joinsNotNullableMap": [],
+    "tableName": [],
+    "isPartialSelect": [],
+    "session": [],
+    "dialect": [],
+    "cacheConfig": [],
+    "usedTables": [],
+    "constructor": [
+      "param"
+    ],
+    "getUsedTables": [],
+    "createJoin": [
+      "joinType",
+      "lateral"
+    ],
+    "leftJoin": [],
+    "leftJoinLateral": [],
+    "rightJoin": [],
+    "innerJoin": [],
+    "innerJoinLateral": [],
+    "crossJoin": [],
+    "crossJoinLateral": [],
+    "createSetOperator": [
+      "type",
+      "isAll"
+    ],
+    "union": [],
+    "unionAll": [],
+    "intersect": [],
+    "intersectAll": [],
+    "except": [],
+    "exceptAll": [],
+    "addSetOperators": [
+      "setOperators"
+    ],
+    "where": [
+      "where"
+    ],
+    "having": [
+      "having"
+    ],
+    "groupBy": [
+      "param"
+    ],
+    "orderBy": [
+      "param"
+    ],
+    "limit": [
+      "limit"
+    ],
+    "offset": [
+      "offset"
+    ],
+    "for": [
+      "strength",
+      "param"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "as": [
+      "alias"
+    ],
+    "getSelectedFields": [],
+    "$dynamic": [],
+    "$withCache": [
+      "config"
+    ]
+  },
+  "MySqlSelectBase": {
+    "entityKind": [],
+    "prepare": [],
+    "execute": [],
+    "createIterator": [],
+    "iterator": []
+  },
+  "getMySqlSetOperators": [],
+  "MySqlUpdateBuilder": {
+    "constructor": [
+      "table",
+      "session",
+      "dialect",
+      "withList"
+    ],
+    "entityKind": [],
+    "set": [
+      "values"
+    ]
+  },
+  "MySqlUpdateBase": {
+    "constructor": [
+      "table",
+      "set",
+      "session",
+      "dialect",
+      "withList"
+    ],
+    "entityKind": [],
+    "config": [],
+    "cacheConfig": [],
+    "where": [
+      "where"
+    ],
+    "orderBy": [
+      "param"
+    ],
+    "limit": [
+      "limit"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "prepare": [],
+    "execute": [],
+    "createIterator": [],
+    "iterator": [],
+    "$dynamic": []
+  },
+  "MySqlSchema": {
+    "constructor": [
+      "schemaName"
+    ],
+    "entityKind": [],
+    "table": [],
+    "view": []
+  },
+  "isMySqlSchema": [
+    "obj"
+  ],
+  "mysqlDatabase": [
+    "name"
+  ],
+  "MySqlPreparedQuery": {
+    "constructor": [
+      "cache",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "entityKind": [],
+    "queryWithCache": [
+      "queryString",
+      "params",
+      "query"
+    ],
+    "joinsNotNullableMap": []
+  },
+  "MySqlSession": {
+    "constructor": [
+      "dialect"
+    ],
+    "entityKind": [],
+    "execute": [
+      "query"
+    ],
+    "count": [
+      "sql2"
+    ],
+    "getSetTransactionSQL": [
+      "config"
+    ],
+    "getStartTransactionSQL": [
+      "config"
+    ]
+  },
+  "MySqlTransaction": {
+    "constructor": [
+      "dialect",
+      "session",
+      "schema",
+      "nestedIndex",
+      "mode"
+    ],
+    "entityKind": [],
+    "rollback": []
+  },
+  "MySqlTable": {
+    "entityKind": [],
+    "Symbol": [],
+    "InlineForeignKeys": []
+  },
+  "mysqlTableWithSchema": [
+    "name",
+    "columns",
+    "extraConfig",
+    "schema",
+    "param"
+  ],
+  "mysqlTable": [
+    "name",
+    "columns",
+    "extraConfig"
+  ],
+  "mysqlTableCreator": [
+    "customizeTableName"
+  ],
+  "convertIndexToString": [
+    "indexes"
+  ],
+  "toArray": [
+    "value"
+  ],
+  "MySqlViewBase": {
+    "entityKind": []
+  },
+  "ViewBuilderCore": {
+    "constructor": [
+      "name"
+    ],
+    "entityKind": [],
+    "config": []
+  },
+  "MySqlView": {
+    "entityKind": [],
+    "MySqlViewConfig": [],
+    "constructor": [
+      "param"
+    ]
+  },
+  "mysqlViewWithSchema": [
+    "name",
+    "selection",
+    "schema"
+  ],
+  "mysqlView": [
+    "name",
+    "selection"
+  ],
+  "MySqlRemoteDatabase": {
+    "entityKind": []
+  },
+  "MySqlRemoteSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "options"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "customResultMapper",
+      "generatedIds",
+      "returningIds",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "all": [
+      "query"
+    ],
+    "transaction": [
+      "_transaction",
+      "_config"
+    ]
+  },
+  "MySqlProxyTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "_transaction"
+    ]
+  },
+  "MySql2Driver": {
+    "constructor": [
+      "client",
+      "dialect",
+      "param"
+    ],
+    "entityKind": [],
+    "createSession": [
+      "schema",
+      "mode"
+    ]
+  },
+  "MySql2Database": {
+    "entityKind": []
+  },
+  "isCallbackClient": [
+    "client"
+  ],
+  "MySql2PreparedQuery": {
+    "constructor": [
+      "client",
+      "queryString",
+      "params",
+      "logger",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "customResultMapper",
+      "generatedIds",
+      "returningIds"
+    ],
+    "entityKind": [],
+    "rawQuery": [],
+    "query": [],
+    "execute": [
+      "param"
+    ],
+    "iterator": [
+      "param"
+    ]
+  },
+  "MySql2Session": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "options"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "mode": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "customResultMapper",
+      "generatedIds",
+      "returningIds",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "query": [
+      "query",
+      "params"
+    ],
+    "all": [
+      "query"
+    ],
+    "transaction": [
+      "transaction",
+      "config"
+    ]
+  },
+  "MySql2Transaction": {
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "dataListener": [],
+  "isPool": [
+    "client"
+  ],
+  "crudPolicy": [
+    "options"
+  ],
+  "authUid": [
+    "userIdColumn"
+  ],
+  "NeonHttpDriver": {
+    "constructor": [
+      "client",
+      "dialect",
+      "param"
+    ],
+    "entityKind": [],
+    "createSession": [
+      "schema"
+    ],
+    "initMappers": []
+  },
+  "NeonHttpDatabase": {
+    "entityKind": [],
+    "$withAuth": [
+      "token"
+    ],
+    "batch": [
+      "batch"
+    ]
+  },
+  "wrap": [
+    "target",
+    "token",
+    "cb",
+    "deep"
+  ],
+  "NeonHttpPreparedQuery": {
+    "constructor": [
+      "client",
+      "query",
+      "logger",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "_isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "entityKind": [],
+    "clientQuery": [],
+    "execute": [
+      "param",
+      "param"
+    ],
+    "mapResult": [
+      "result"
+    ],
+    "all": [
+      "param"
+    ],
+    "values": [
+      "param",
+      "token"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "NeonHttpSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "clientQuery": [],
+    "logger": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "name",
+      "isResponseInArrayMode",
+      "customResultMapper",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "batch": [
+      "queries"
+    ],
+    "query": [
+      "query",
+      "params"
+    ],
+    "queryObjects": [
+      "query",
+      "params"
+    ],
+    "count": [
+      "sql",
+      "token"
+    ],
+    "transaction": [
+      "_transaction",
+      "param"
+    ]
+  },
+  "NeonTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "NeonDriver": {
+    "constructor": [
+      "client",
+      "dialect",
+      "param"
+    ],
+    "entityKind": [],
+    "createSession": [
+      "schema"
+    ]
+  },
+  "NeonDatabase": {
+    "entityKind": []
+  },
+  "NeonPreparedQuery": {
+    "constructor": [
+      "client",
+      "queryString",
+      "params",
+      "logger",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "name",
+      "_isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "entityKind": [],
+    "rawQueryConfig": [],
+    "queryConfig": [],
+    "execute": [
+      "param"
+    ],
+    "all": [
+      "param"
+    ],
+    "values": [
+      "param"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "NeonSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "name",
+      "isResponseInArrayMode",
+      "customResultMapper",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "query": [
+      "query",
+      "params"
+    ],
+    "queryObjects": [
+      "query",
+      "params"
+    ],
+    "count": [
+      "sql2"
+    ],
+    "transaction": [
+      "transaction",
+      "param"
+    ]
+  },
+  "NodePgDriver": {
+    "constructor": [
+      "client",
+      "dialect",
+      "param"
+    ],
+    "entityKind": [],
+    "createSession": [
+      "schema"
+    ]
+  },
+  "NodePgDatabase": {
+    "entityKind": []
+  },
+  "NodePgPreparedQuery": {
+    "constructor": [
+      "client",
+      "queryString",
+      "params",
+      "logger",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "name",
+      "_isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "entityKind": [],
+    "rawQueryConfig": [],
+    "queryConfig": [],
+    "execute": [
+      "param"
+    ],
+    "all": [
+      "param"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "NodePgSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "name",
+      "isResponseInArrayMode",
+      "customResultMapper",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "transaction": [
+      "transaction",
+      "config"
+    ],
+    "count": [
+      "sql2"
+    ]
+  },
+  "NodePgTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "OPSQLiteDatabase": {
+    "entityKind": []
+  },
+  "OPSQLiteSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "executeMethod",
+      "isResponseInArrayMode",
+      "customResultMapper",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "transaction": [
+      "transaction",
+      "param"
+    ]
+  },
+  "OPSQLiteTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "OPSQLitePreparedQuery": {
+    "constructor": [
+      "client",
+      "query",
+      "logger",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "executeMethod",
+      "_isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "entityKind": [],
+    "run": [
+      "placeholderValues"
+    ],
+    "all": [
+      "placeholderValues"
+    ],
+    "get": [
+      "placeholderValues"
+    ],
+    "values": [
+      "placeholderValues"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "getPgColumnBuilders": [],
+  "PgBigInt53Builder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgBigInt53": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "PgBigInt64Builder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgBigInt64": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "PgBigSerial53Builder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgBigSerial53": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "PgBigSerial64Builder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgBigSerial64": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "bigserial": [
+    "a",
+    "b"
+  ],
+  "PgBooleanBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgBoolean": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "PgCharBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgChar": {
+    "entityKind": [],
+    "length": [],
+    "enumValues": [],
+    "getSQLType": []
+  },
+  "PgCidrBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgCidr": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "cidr": [
+    "name"
+  ],
+  "PgColumnBuilder": {
+    "foreignKeyConfigs": [],
+    "entityKind": [],
+    "array": [
+      "size"
+    ],
+    "references": [
+      "ref",
+      "param"
+    ],
+    "unique": [
+      "name",
+      "config"
+    ],
+    "generatedAlwaysAs": [
+      "as"
+    ],
+    "buildForeignKeys": [
+      "column",
+      "table"
+    ],
+    "buildExtraConfigColumn": [
+      "table"
+    ]
+  },
+  "PgColumn": {
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "entityKind": []
+  },
+  "ExtraConfigColumn": {
+    "entityKind": [],
+    "getSQLType": [],
+    "indexConfig": [],
+    "defaultConfig": [],
+    "asc": [],
+    "desc": [],
+    "nullsFirst": [],
+    "nullsLast": [],
+    "op": [
+      "opClass"
+    ]
+  },
+  "PgArrayBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "baseBuilder",
+      "size"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgArray": {
+    "constructor": [
+      "table",
+      "config",
+      "baseColumn",
+      "range"
+    ],
+    "size": [],
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value",
+      "param"
+    ]
+  },
+  "PgCustomColumnBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "fieldConfig",
+      "customTypeParams"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgCustomColumn": {
+    "entityKind": [],
+    "sqlName": [],
+    "mapTo": [],
+    "mapFrom": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "PgDateColumnBaseBuilder": {
+    "entityKind": [],
+    "defaultNow": []
+  },
+  "PgDateBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgDate": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "PgDateStringBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgDateString": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "PgDoublePrecisionBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgDoublePrecision": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "PgEnumObjectColumnBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "enumInstance"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgEnumObjectColumn": {
+    "entityKind": [],
+    "enum": [],
+    "enumValues": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": []
+  },
+  "PgEnumColumnBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "enumInstance"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgEnumColumn": {
+    "entityKind": [],
+    "enum": [],
+    "enumValues": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": []
+  },
+  "isPgEnum": [
+    "obj"
+  ],
+  "pgEnum": [
+    "enumName",
+    "input"
+  ],
+  "pgEnumWithSchema": [
+    "enumName",
+    "values",
+    "schema"
+  ],
+  "pgEnumObjectWithSchema": [
+    "enumName",
+    "values",
+    "schema"
+  ],
+  "PgInetBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgInet": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "inet": [
+    "name"
+  ],
+  "PgIntColumnBaseBuilder": {
+    "entityKind": [],
+    "generatedAlwaysAsIdentity": [
+      "sequence"
+    ],
+    "generatedByDefaultAsIdentity": [
+      "sequence"
+    ]
+  },
+  "PgIntegerBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgInteger": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "PgIntervalBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "intervalConfig"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgInterval": {
+    "entityKind": [],
+    "fields": [],
+    "precision": [],
+    "getSQLType": []
+  },
+  "interval": [
+    "a",
+    "param"
+  ],
+  "PgJsonBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgJson": {
+    "entityKind": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": [],
+    "mapToDriverValue": [
+      "value"
+    ],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "PgJsonbBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgJsonb": {
+    "entityKind": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": [],
+    "mapToDriverValue": [
+      "value"
+    ],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "jsonb": [
+    "name"
+  ],
+  "PgLineBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgLineTuple": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "PgLineABCBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgLineABC": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "line": [
+    "a",
+    "b"
+  ],
+  "PgMacaddrBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgMacaddr": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "macaddr": [
+    "name"
+  ],
+  "PgMacaddr8Builder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgMacaddr8": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "macaddr8": [
+    "name"
+  ],
+  "PgNumericBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "precision",
+      "scale"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgNumeric": {
+    "entityKind": [],
+    "precision": [],
+    "scale": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "getSQLType": []
+  },
+  "PgNumericNumberBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "precision",
+      "scale"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgNumericNumber": {
+    "entityKind": [],
+    "precision": [],
+    "scale": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [],
+    "getSQLType": []
+  },
+  "PgNumericBigIntBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "precision",
+      "scale"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgNumericBigInt": {
+    "entityKind": [],
+    "precision": [],
+    "scale": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "mapFromDriverValue": [],
+    "mapToDriverValue": [],
+    "getSQLType": []
+  },
+  "numeric": [
+    "a",
+    "b"
+  ],
+  "PgPointTupleBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgPointTuple": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "PgPointObjectBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgPointObject": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "point": [
+    "a",
+    "b"
+  ],
+  "PgGeometryBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgGeometry": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "PgGeometryObjectBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgGeometryObject": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "geometry": [
+    "a",
+    "b"
+  ],
+  "hexToBytes": [
+    "hex"
+  ],
+  "bytesToFloat64": [
+    "bytes",
+    "offset"
+  ],
+  "parseEWKB": [
+    "hex"
+  ],
+  "PgRealBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "length"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgReal": {
+    "entityKind": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": [],
+    "mapFromDriverValue": []
+  },
+  "PgSerialBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgSerial": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "PgSmallIntBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgSmallInt": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": []
+  },
+  "PgSmallSerialBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgSmallSerial": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "smallserial": [
+    "name"
+  ],
+  "PgTextBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgText": {
+    "entityKind": [],
+    "enumValues": [],
+    "getSQLType": []
+  },
+  "PgTimeBuilder": {
+    "constructor": [
+      "name",
+      "withTimezone",
+      "precision"
+    ],
+    "entityKind": [],
+    "build": [
+      "table"
+    ]
+  },
+  "PgTime": {
+    "entityKind": [],
+    "withTimezone": [],
+    "precision": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": []
+  },
+  "PgTimestampBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "withTimezone",
+      "precision"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgTimestamp": {
+    "entityKind": [],
+    "withTimezone": [],
+    "precision": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": []
+  },
+  "PgTimestampStringBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "withTimezone",
+      "precision"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgTimestampString": {
+    "entityKind": [],
+    "withTimezone": [],
+    "precision": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "PgUUIDBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "defaultRandom": [],
+    "build": [
+      "table"
+    ]
+  },
+  "PgUUID": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "PgVarcharBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgVarchar": {
+    "entityKind": [],
+    "length": [],
+    "enumValues": [],
+    "getSQLType": []
+  },
+  "PgBinaryVectorBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgBinaryVector": {
+    "entityKind": [],
+    "dimensions": [],
+    "getSQLType": []
+  },
+  "bit": [
+    "a",
+    "b"
+  ],
+  "PgHalfVectorBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgHalfVector": {
+    "entityKind": [],
+    "dimensions": [],
+    "getSQLType": [],
+    "mapToDriverValue": [
+      "value"
+    ],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "halfvec": [
+    "a",
+    "b"
+  ],
+  "PgSparseVectorBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgSparseVector": {
+    "entityKind": [],
+    "dimensions": [],
+    "getSQLType": []
+  },
+  "sparsevec": [
+    "a",
+    "b"
+  ],
+  "PgVectorBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "PgVector": {
+    "entityKind": [],
+    "dimensions": [],
+    "getSQLType": [],
+    "mapToDriverValue": [
+      "value"
+    ],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "vector": [
+    "a",
+    "b"
+  ],
+  "PgDatabase": {
+    "constructor": [
+      "dialect",
+      "session",
+      "schema"
+    ],
+    "entityKind": [],
+    "query": [],
+    "$with": [],
+    "$count": [
+      "source",
+      "filters"
+    ],
+    "$cache": [],
+    "with": [
+      "param"
+    ],
+    "select": [
+      "fields"
+    ],
+    "selectDistinct": [
+      "fields"
+    ],
+    "selectDistinctOn": [
+      "on",
+      "fields"
+    ],
+    "update": [
+      "table"
+    ],
+    "insert": [
+      "table"
+    ],
+    "delete": [
+      "table"
+    ],
+    "refreshMaterializedView": [
+      "view"
+    ],
+    "authToken": [],
+    "execute": [
+      "query"
+    ],
+    "transaction": [
+      "transaction",
+      "config"
+    ]
+  },
+  "refreshMaterializedView": [
+    "param"
+  ],
+  "PgDialect": {
+    "entityKind": [],
+    "casing": [],
+    "constructor": [
+      "config"
+    ],
+    "migrate": [
+      "migrations",
+      "session",
+      "config"
+    ],
+    "escapeName": [
+      "name"
+    ],
+    "escapeParam": [
+      "num"
+    ],
+    "escapeString": [
+      "str"
+    ],
+    "buildWithCTE": [
+      "queries"
+    ],
+    "buildDeleteQuery": [
+      "param"
+    ],
+    "buildUpdateSet": [
+      "table",
+      "set"
+    ],
+    "buildUpdateQuery": [
+      "param"
+    ],
+    "buildSelection": [
+      "fields",
+      "param"
+    ],
+    "buildJoins": [
+      "joins"
+    ],
+    "buildFromTable": [
+      "table"
+    ],
+    "buildSelectQuery": [
+      "param"
+    ],
+    "buildSetOperations": [
+      "leftSelect",
+      "setOperators"
+    ],
+    "buildSetOperationQuery": [
+      "param"
+    ],
+    "buildInsertQuery": [
+      "param"
+    ],
+    "buildRefreshMaterializedViewQuery": [
+      "param"
+    ],
+    "prepareTyping": [
+      "encoder"
+    ],
+    "sqlToQuery": [
+      "sql2",
+      "invokeSource"
+    ],
+    "buildRelationalQueryWithoutPK": [
+      "param"
+    ]
+  },
+  "PgPolicy": {
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "entityKind": [],
+    "as": [],
+    "for": [],
+    "to": [],
+    "using": [],
+    "withCheck": [],
+    "_linkedTable": [],
+    "link": [
+      "table"
+    ]
+  },
+  "pgPolicy": [
+    "name",
+    "config"
+  ],
+  "PgCountBuilder": {
+    "constructor": [
+      "params"
+    ],
+    "sql": [],
+    "token": [],
+    "entityKind": [],
+    "session": [],
+    "buildEmbeddedCount": [
+      "source",
+      "filters"
+    ],
+    "buildCount": [
+      "source",
+      "filters"
+    ],
+    "setToken": [
+      "token"
+    ],
+    "then": [
+      "onfulfilled",
+      "onrejected"
+    ],
+    "catch": [
+      "onRejected"
+    ],
+    "finally": [
+      "onFinally"
+    ]
+  },
+  "PgDeleteBase": {
+    "constructor": [
+      "table",
+      "session",
+      "dialect",
+      "withList"
+    ],
+    "entityKind": [],
+    "config": [],
+    "cacheConfig": [],
+    "where": [
+      "where"
+    ],
+    "returning": [
+      "param"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "_prepare": [
+      "name"
+    ],
+    "prepare": [
+      "name"
+    ],
+    "authToken": [],
+    "setToken": [
+      "token"
+    ],
+    "execute": [],
+    "getSelectedFields": [],
+    "$dynamic": []
+  },
+  "PgInsertBuilder": {
+    "constructor": [
+      "table",
+      "session",
+      "dialect",
+      "withList",
+      "overridingSystemValue_"
+    ],
+    "entityKind": [],
+    "authToken": [],
+    "setToken": [
+      "token"
+    ],
+    "overridingSystemValue": [],
+    "values": [
+      "values"
+    ],
+    "select": [
+      "selectQuery"
+    ]
+  },
+  "PgInsertBase": {
+    "constructor": [
+      "table",
+      "values",
+      "session",
+      "dialect",
+      "withList",
+      "select",
+      "overridingSystemValue_"
+    ],
+    "entityKind": [],
+    "config": [],
+    "cacheConfig": [],
+    "returning": [
+      "param"
+    ],
+    "onConflictDoNothing": [
+      "param"
+    ],
+    "onConflictDoUpdate": [
+      "config"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "_prepare": [
+      "name"
+    ],
+    "prepare": [
+      "name"
+    ],
+    "authToken": [],
+    "setToken": [
+      "token"
+    ],
+    "execute": [],
+    "getSelectedFields": [],
+    "$dynamic": []
+  },
+  "PgRelationalQuery": {
+    "constructor": [
+      "fullSchema",
+      "schema",
+      "tableNamesMap",
+      "table",
+      "tableConfig",
+      "dialect",
+      "session",
+      "config",
+      "mode"
+    ],
+    "entityKind": [],
+    "_prepare": [
+      "name"
+    ],
+    "prepare": [
+      "name"
+    ],
+    "_getQuery": [],
+    "getSQL": [],
+    "_toSQL": [],
+    "toSQL": [],
+    "authToken": [],
+    "setToken": [
+      "token"
+    ],
+    "execute": []
+  },
+  "PgRaw": {
+    "constructor": [
+      "execute",
+      "sql",
+      "query",
+      "mapBatchResult"
+    ],
+    "entityKind": [],
+    "getSQL": [],
+    "getQuery": [],
+    "mapResult": [
+      "result",
+      "isFromBatch"
+    ],
+    "_prepare": [],
+    "isResponseInArrayMode": []
+  },
+  "PgRefreshMaterializedView": {
+    "constructor": [
+      "view",
+      "session",
+      "dialect"
+    ],
+    "entityKind": [],
+    "config": [],
+    "concurrently": [],
+    "withNoData": [],
+    "getSQL": [],
+    "toSQL": [],
+    "_prepare": [
+      "name"
+    ],
+    "prepare": [
+      "name"
+    ],
+    "authToken": [],
+    "setToken": [
+      "token"
+    ],
+    "execute": []
+  },
+  "PgSelectBuilder": {
+    "entityKind": [],
+    "fields": [],
+    "session": [],
+    "dialect": [],
+    "withList": [],
+    "distinct": [],
+    "constructor": [
+      "config"
+    ],
+    "authToken": [],
+    "setToken": [
+      "token"
+    ],
+    "from": [
+      "source"
+    ]
+  },
+  "PgSelectQueryBuilderBase": {
+    "entityKind": [],
+    "_": [],
+    "config": [],
+    "joinsNotNullableMap": [],
+    "tableName": [],
+    "isPartialSelect": [],
+    "session": [],
+    "dialect": [],
+    "cacheConfig": [],
+    "usedTables": [],
+    "constructor": [
+      "param"
+    ],
+    "getUsedTables": [],
+    "createJoin": [
+      "joinType",
+      "lateral"
+    ],
+    "leftJoin": [],
+    "leftJoinLateral": [],
+    "rightJoin": [],
+    "innerJoin": [],
+    "innerJoinLateral": [],
+    "fullJoin": [],
+    "crossJoin": [],
+    "crossJoinLateral": [],
+    "createSetOperator": [
+      "type",
+      "isAll"
+    ],
+    "union": [],
+    "unionAll": [],
+    "intersect": [],
+    "intersectAll": [],
+    "except": [],
+    "exceptAll": [],
+    "addSetOperators": [
+      "setOperators"
+    ],
+    "where": [
+      "where"
+    ],
+    "having": [
+      "having"
+    ],
+    "groupBy": [
+      "param"
+    ],
+    "orderBy": [
+      "param"
+    ],
+    "limit": [
+      "limit"
+    ],
+    "offset": [
+      "offset"
+    ],
+    "for": [
+      "strength",
+      "param"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "as": [
+      "alias"
+    ],
+    "getSelectedFields": [],
+    "$dynamic": [],
+    "$withCache": [
+      "config"
+    ]
+  },
+  "PgSelectBase": {
+    "entityKind": [],
+    "_prepare": [
+      "name"
+    ],
+    "prepare": [
+      "name"
+    ],
+    "authToken": [],
+    "setToken": [
+      "token"
+    ],
+    "execute": []
+  },
+  "getPgSetOperators": [],
+  "PgUpdateBuilder": {
+    "constructor": [
+      "table",
+      "session",
+      "dialect",
+      "withList"
+    ],
+    "entityKind": [],
+    "authToken": [],
+    "setToken": [
+      "token"
+    ],
+    "set": [
+      "values"
+    ]
+  },
+  "PgUpdateBase": {
+    "constructor": [
+      "table",
+      "set",
+      "session",
+      "dialect",
+      "withList"
+    ],
+    "entityKind": [],
+    "config": [],
+    "tableName": [],
+    "joinsNotNullableMap": [],
+    "cacheConfig": [],
+    "from": [
+      "source"
+    ],
+    "getTableLikeFields": [
+      "table"
+    ],
+    "createJoin": [
+      "joinType"
+    ],
+    "leftJoin": [],
+    "rightJoin": [],
+    "innerJoin": [],
+    "fullJoin": [],
+    "where": [
+      "where"
+    ],
+    "returning": [
+      "fields"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "_prepare": [
+      "name"
+    ],
+    "prepare": [
+      "name"
+    ],
+    "authToken": [],
+    "setToken": [
+      "token"
+    ],
+    "execute": [],
+    "getSelectedFields": [],
+    "$dynamic": []
+  },
+  "PgRole": {
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "entityKind": [],
+    "_existing": [],
+    "createDb": [],
+    "createRole": [],
+    "inherit": [],
+    "existing": []
+  },
+  "pgRole": [
+    "name",
+    "config"
+  ],
+  "PgSchema": {
+    "constructor": [
+      "schemaName"
+    ],
+    "entityKind": [],
+    "table": [],
+    "view": [],
+    "materializedView": [],
+    "enum": [
+      "enumName",
+      "input"
+    ],
+    "sequence": [],
+    "getSQL": [],
+    "shouldOmitSQLParens": []
+  },
+  "isPgSchema": [
+    "obj"
+  ],
+  "pgSchema": [
+    "name"
+  ],
+  "PgSequence": {
+    "constructor": [
+      "seqName",
+      "seqOptions",
+      "schema"
+    ],
+    "entityKind": []
+  },
+  "pgSequence": [
+    "name",
+    "options"
+  ],
+  "pgSequenceWithSchema": [
+    "name",
+    "options",
+    "schema"
+  ],
+  "isPgSequence": [
+    "obj"
+  ],
+  "PgPreparedQuery": {
+    "constructor": [
+      "query",
+      "cache",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "authToken": [],
+    "getQuery": [],
+    "mapResult": [
+      "response",
+      "_isFromBatch"
+    ],
+    "setToken": [
+      "token"
+    ],
+    "entityKind": [],
+    "joinsNotNullableMap": [],
+    "queryWithCache": [
+      "queryString",
+      "params",
+      "query"
+    ]
+  },
+  "PgSession": {
+    "constructor": [
+      "dialect"
+    ],
+    "entityKind": [],
+    "execute": [
+      "query",
+      "token"
+    ],
+    "all": [
+      "query"
+    ],
+    "count": [
+      "sql2",
+      "token"
+    ]
+  },
+  "PgTransaction": {
+    "constructor": [
+      "dialect",
+      "session",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "rollback": [],
+    "getTransactionConfigSQL": [
+      "config"
+    ],
+    "setTransaction": [
+      "config"
+    ]
+  },
+  "PgTable": {
+    "entityKind": [],
+    "Symbol": [],
+    "InlineForeignKeys": [],
+    "EnableRLS": []
+  },
+  "pgTableWithSchema": [
+    "name",
+    "columns",
+    "extraConfig",
+    "schema",
+    "param"
+  ],
+  "pgTable": [
+    "name",
+    "columns",
+    "extraConfig"
+  ],
+  "pgTableCreator": [
+    "customizeTableName"
+  ],
+  "parsePgArrayValue": [
+    "arrayString",
+    "startFrom",
+    "inQuotes"
+  ],
+  "parsePgNestedArray": [
+    "arrayString",
+    "param"
+  ],
+  "parsePgArray": [
+    "arrayString"
+  ],
+  "makePgArray": [
+    "array"
+  ],
+  "PgViewBase": {
+    "entityKind": []
+  },
+  "PgView": {
+    "entityKind": [],
+    "PgViewConfig": [],
+    "constructor": [
+      "param"
+    ]
+  },
+  "PgMaterializedView": {
+    "entityKind": [],
+    "PgMaterializedViewConfig": [],
+    "constructor": [
+      "param"
+    ]
+  },
+  "pgViewWithSchema": [
+    "name",
+    "selection",
+    "schema"
+  ],
+  "pgMaterializedViewWithSchema": [
+    "name",
+    "selection",
+    "schema"
+  ],
+  "pgView": [
+    "name",
+    "columns"
+  ],
+  "pgMaterializedView": [
+    "name",
+    "columns"
+  ],
+  "isPgView": [
+    "obj"
+  ],
+  "isPgMaterializedView": [
+    "obj"
+  ],
+  "PgRemoteDatabase": {
+    "entityKind": []
+  },
+  "PgRemoteSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "name",
+      "isResponseInArrayMode",
+      "customResultMapper",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "transaction": [
+      "_transaction",
+      "_config"
+    ]
+  },
+  "PgProxyTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "_transaction"
+    ]
+  },
+  "PgliteDriver": {
+    "constructor": [
+      "client",
+      "dialect",
+      "param"
+    ],
+    "entityKind": [],
+    "createSession": [
+      "schema"
+    ]
+  },
+  "PgliteDatabase": {
+    "entityKind": []
+  },
+  "PglitePreparedQuery": {
+    "constructor": [
+      "client",
+      "queryString",
+      "params",
+      "logger",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "name",
+      "_isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "entityKind": [],
+    "rawQueryConfig": [],
+    "queryConfig": [],
+    "execute": [
+      "param"
+    ],
+    "all": [
+      "param"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "PgliteSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "name",
+      "isResponseInArrayMode",
+      "customResultMapper",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "transaction": [
+      "transaction",
+      "config"
+    ],
+    "count": [
+      "sql2"
+    ]
+  },
+  "PgliteTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "PlanetScaleDatabase": {
+    "entityKind": []
+  },
+  "PlanetScalePreparedQuery": {
+    "constructor": [
+      "client",
+      "queryString",
+      "params",
+      "logger",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "customResultMapper",
+      "generatedIds",
+      "returningIds"
+    ],
+    "entityKind": [],
+    "rawQuery": [],
+    "query": [],
+    "execute": [
+      "param"
+    ],
+    "iterator": [
+      "_placeholderValues"
+    ]
+  },
+  "PlanetscaleSession": {
+    "constructor": [
+      "baseClient",
+      "dialect",
+      "tx",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "client": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "customResultMapper",
+      "generatedIds",
+      "returningIds",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "query": [
+      "query",
+      "params"
+    ],
+    "queryObjects": [
+      "query",
+      "params"
+    ],
+    "all": [
+      "query"
+    ],
+    "count": [
+      "sql2"
+    ],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "PlanetScaleTransaction": {
+    "entityKind": [],
+    "constructor": [
+      "dialect",
+      "session",
+      "schema",
+      "param"
+    ],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "PostgresJsDatabase": {
+    "entityKind": []
+  },
+  "transparentParser": [
+    "val"
+  ],
+  "PostgresJsPreparedQuery": {
+    "constructor": [
+      "client",
+      "queryString",
+      "params",
+      "logger",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "_isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "entityKind": [],
+    "execute": [
+      "param"
+    ],
+    "all": [
+      "param"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "PostgresJsSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "name",
+      "isResponseInArrayMode",
+      "customResultMapper",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "query": [
+      "query",
+      "params"
+    ],
+    "queryObjects": [
+      "query",
+      "params"
+    ],
+    "transaction": [
+      "transaction",
+      "config"
+    ]
+  },
+  "PostgresJsTransaction": {
+    "constructor": [
+      "dialect",
+      "session",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "PrismaMySqlDatabase": {
+    "entityKind": [],
+    "constructor": [
+      "client",
+      "logger"
+    ]
+  },
+  "PrismaMySqlPreparedQuery": {
+    "constructor": [
+      "prisma",
+      "query",
+      "logger"
+    ],
+    "iterator": [
+      "_placeholderValues"
+    ],
+    "entityKind": [],
+    "execute": [
+      "placeholderValues"
+    ]
+  },
+  "PrismaMySqlSession": {
+    "constructor": [
+      "dialect",
+      "prisma",
+      "options"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "execute": [
+      "query"
+    ],
+    "all": [
+      "_query"
+    ],
+    "prepareQuery": [
+      "query"
+    ],
+    "transaction": [
+      "_transaction",
+      "_config"
+    ]
+  },
+  "PrismaPgDatabase": {
+    "entityKind": [],
+    "constructor": [
+      "client",
+      "logger"
+    ]
+  },
+  "PrismaPgPreparedQuery": {
+    "constructor": [
+      "prisma",
+      "query",
+      "logger"
+    ],
+    "entityKind": [],
+    "execute": [
+      "placeholderValues"
+    ],
+    "all": [],
+    "isResponseInArrayMode": []
+  },
+  "PrismaPgSession": {
+    "constructor": [
+      "dialect",
+      "prisma",
+      "options"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "execute": [
+      "query"
+    ],
+    "prepareQuery": [
+      "query"
+    ],
+    "transaction": [
+      "_transaction",
+      "_config"
+    ]
+  },
+  "PrismaSQLitePreparedQuery": {
+    "constructor": [
+      "prisma",
+      "query",
+      "logger",
+      "executeMethod"
+    ],
+    "entityKind": [],
+    "all": [
+      "placeholderValues"
+    ],
+    "run": [
+      "placeholderValues"
+    ],
+    "get": [
+      "placeholderValues"
+    ],
+    "values": [
+      "_placeholderValues"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "PrismaSQLiteSession": {
+    "constructor": [
+      "prisma",
+      "dialect",
+      "options"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "executeMethod"
+    ],
+    "transaction": [
+      "_transaction",
+      "_config"
+    ]
+  },
+  "TypedQueryBuilder": {
+    "entityKind": [],
+    "getSelectedFields": []
+  },
+  "QueryPromise": {
+    "entityKind": [],
+    "catch": [
+      "onRejected"
+    ],
+    "finally": [
+      "onFinally"
+    ],
+    "then": [
+      "onFulfilled",
+      "onRejected"
+    ]
+  },
+  "Relation": {
+    "constructor": [
+      "sourceTable",
+      "referencedTable",
+      "relationName"
+    ],
+    "entityKind": [],
+    "referencedTableName": [],
+    "fieldName": []
+  },
+  "Relations": {
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "entityKind": []
+  },
+  "One": {
+    "constructor": [
+      "sourceTable",
+      "referencedTable",
+      "config",
+      "isNullable"
+    ],
+    "entityKind": [],
+    "withFieldName": [
+      "fieldName"
+    ]
+  },
+  "Many": {
+    "constructor": [
+      "sourceTable",
+      "referencedTable",
+      "config"
+    ],
+    "entityKind": [],
+    "withFieldName": [
+      "fieldName"
+    ]
+  },
+  "getOperators": [],
+  "getOrderByOperators": [],
+  "extractTablesRelationalConfig": [
+    "schema",
+    "configHelpers"
+  ],
+  "relations": [
+    "table",
+    "relations2"
+  ],
+  "createOne": [
+    "sourceTable"
+  ],
+  "createMany": [
+    "sourceTable"
+  ],
+  "normalizeRelation": [
+    "schema",
+    "tableNamesMap",
+    "relation"
+  ],
+  "createTableRelationsHelpers": [
+    "sourceTable"
+  ],
+  "mapRelationalRow": [
+    "tablesConfig",
+    "tableConfig",
+    "row",
+    "buildQueryResultSelection",
+    "param"
+  ],
+  "SelectionProxyHandler": {
+    "entityKind": [],
+    "config": [],
+    "constructor": [
+      "config"
+    ],
+    "get": [
+      "subquery",
+      "prop"
+    ]
+  },
+  "SingleStoreDriverDriver": {
+    "constructor": [
+      "client",
+      "dialect",
+      "param"
+    ],
+    "entityKind": [],
+    "createSession": [
+      "schema"
+    ]
+  },
+  "SingleStoreDriverDatabase": {
+    "entityKind": []
+  },
+  "SingleStoreDriverPreparedQuery": {
+    "constructor": [
+      "client",
+      "queryString",
+      "params",
+      "logger",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "customResultMapper",
+      "generatedIds",
+      "returningIds"
+    ],
+    "entityKind": [],
+    "rawQuery": [],
+    "query": [],
+    "execute": [
+      "param"
+    ],
+    "iterator": [
+      "param"
+    ]
+  },
+  "SingleStoreDriverSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "options"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "customResultMapper",
+      "generatedIds",
+      "returningIds",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "query": [
+      "query",
+      "params"
+    ],
+    "all": [
+      "query"
+    ],
+    "transaction": [
+      "transaction",
+      "config"
+    ]
+  },
+  "SingleStoreDriverTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "getSingleStoreColumnBuilders": [],
+  "SingleStoreBigInt53Builder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "param"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreBigInt53": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "SingleStoreBigInt64Builder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "param"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreBigInt64": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "SingleStoreBinaryBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "length"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreBinary": {
+    "entityKind": [],
+    "length": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "getSQLType": []
+  },
+  "SingleStoreBooleanBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreBoolean": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "SingleStoreCharBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreChar": {
+    "entityKind": [],
+    "length": [],
+    "enumValues": [],
+    "getSQLType": []
+  },
+  "SingleStoreColumnBuilder": {
+    "entityKind": [],
+    "unique": [
+      "name"
+    ],
+    "generatedAlwaysAs": [
+      "as",
+      "config"
+    ]
+  },
+  "SingleStoreColumn": {
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "entityKind": []
+  },
+  "SingleStoreColumnBuilderWithAutoIncrement": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "dataType",
+      "columnType"
+    ],
+    "autoincrement": []
+  },
+  "SingleStoreColumnWithAutoIncrement": {
+    "entityKind": [],
+    "autoIncrement": []
+  },
+  "SingleStoreCustomColumnBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "fieldConfig",
+      "customTypeParams"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreCustomColumn": {
+    "entityKind": [],
+    "sqlName": [],
+    "mapTo": [],
+    "mapFrom": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "SingleStoreDateColumnBaseBuilder": {
+    "entityKind": [],
+    "defaultNow": [],
+    "onUpdateNow": []
+  },
+  "SingleStoreDateBaseColumn": {
+    "entityKind": [],
+    "hasOnUpdateNow": []
+  },
+  "SingleStoreDateBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreDate": {
+    "entityKind": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "SingleStoreDateStringBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreDateString": {
+    "entityKind": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": []
+  },
+  "SingleStoreDateTimeBuilder": {
+    "generatedAlwaysAs": [
+      "_as",
+      "_config"
+    ],
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreDateTime": {
+    "entityKind": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": [],
+    "mapToDriverValue": [
+      "value"
+    ],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "SingleStoreDateTimeStringBuilder": {
+    "generatedAlwaysAs": [
+      "_as",
+      "_config"
+    ],
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreDateTimeString": {
+    "entityKind": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": []
+  },
+  "SingleStoreDecimalBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreDecimal": {
+    "entityKind": [],
+    "precision": [],
+    "scale": [],
+    "unsigned": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "getSQLType": []
+  },
+  "SingleStoreDecimalNumberBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreDecimalNumber": {
+    "entityKind": [],
+    "precision": [],
+    "scale": [],
+    "unsigned": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [],
+    "getSQLType": []
+  },
+  "SingleStoreDecimalBigIntBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreDecimalBigInt": {
+    "entityKind": [],
+    "precision": [],
+    "scale": [],
+    "unsigned": [],
+    "mapFromDriverValue": [],
+    "mapToDriverValue": [],
+    "getSQLType": []
+  },
+  "SingleStoreDoubleBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreDouble": {
+    "entityKind": [],
+    "precision": [],
+    "scale": [],
+    "unsigned": [],
+    "getSQLType": []
+  },
+  "SingleStoreEnumColumnBuilder": {
+    "generatedAlwaysAs": [
+      "as",
+      "config"
+    ],
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "values"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreEnumColumn": {
+    "entityKind": [],
+    "enumValues": [],
+    "getSQLType": []
+  },
+  "singlestoreEnum": [
+    "a",
+    "b"
+  ],
+  "SingleStoreFloatBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreFloat": {
+    "entityKind": [],
+    "precision": [],
+    "scale": [],
+    "unsigned": [],
+    "getSQLType": []
+  },
+  "SingleStoreIntBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreInt": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "SingleStoreJsonBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreJson": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "SingleStoreMediumIntBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreMediumInt": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "SingleStoreRealBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreReal": {
+    "entityKind": [],
+    "precision": [],
+    "scale": [],
+    "getSQLType": []
+  },
+  "SingleStoreSerialBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreSerial": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "SingleStoreSmallIntBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreSmallInt": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "SingleStoreTextBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "textType",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreText": {
+    "entityKind": [],
+    "textType": [],
+    "enumValues": [],
+    "getSQLType": []
+  },
+  "SingleStoreTimeBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreTime": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "SingleStoreTimestampBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ],
+    "defaultNow": []
+  },
+  "SingleStoreTimestamp": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "SingleStoreTimestampStringBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ],
+    "defaultNow": []
+  },
+  "SingleStoreTimestampString": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "SingleStoreTinyIntBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreTinyInt": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "SingleStoreVarBinaryBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreVarBinary": {
+    "entityKind": [],
+    "length": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "getSQLType": []
+  },
+  "SingleStoreVarCharBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreVarChar": {
+    "entityKind": [],
+    "length": [],
+    "enumValues": [],
+    "getSQLType": []
+  },
+  "SingleStoreVectorBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ],
+    "generatedAlwaysAs": [
+      "as",
+      "config"
+    ]
+  },
+  "SingleStoreVector": {
+    "entityKind": [],
+    "dimensions": [],
+    "elementType": [],
+    "getSQLType": [],
+    "mapToDriverValue": [
+      "value"
+    ],
+    "mapFromDriverValue": [
+      "value"
+    ]
+  },
+  "SingleStoreYearBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SingleStoreYear": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "SingleStoreDatabase": {
+    "constructor": [
+      "dialect",
+      "session",
+      "schema"
+    ],
+    "entityKind": [],
+    "query": [],
+    "$with": [],
+    "$count": [
+      "source",
+      "filters"
+    ],
+    "with": [
+      "param"
+    ],
+    "select": [
+      "fields"
+    ],
+    "selectDistinct": [
+      "fields"
+    ],
+    "update": [
+      "table"
+    ],
+    "insert": [
+      "table"
+    ],
+    "delete": [
+      "table"
+    ],
+    "execute": [
+      "query"
+    ],
+    "$cache": [],
+    "transaction": [
+      "transaction",
+      "config"
+    ]
+  },
+  "SingleStoreDialect": {
+    "entityKind": [],
+    "casing": [],
+    "constructor": [
+      "config"
+    ],
+    "migrate": [
+      "migrations",
+      "session",
+      "config"
+    ],
+    "escapeName": [
+      "name"
+    ],
+    "escapeParam": [
+      "_num"
+    ],
+    "escapeString": [
+      "str"
+    ],
+    "buildWithCTE": [
+      "queries"
+    ],
+    "buildDeleteQuery": [
+      "param"
+    ],
+    "buildUpdateSet": [
+      "table",
+      "set"
+    ],
+    "buildUpdateQuery": [
+      "param"
+    ],
+    "buildSelection": [
+      "fields",
+      "param"
+    ],
+    "buildLimit": [
+      "limit"
+    ],
+    "buildOrderBy": [
+      "orderBy"
+    ],
+    "buildSelectQuery": [
+      "param"
+    ],
+    "buildSetOperations": [
+      "leftSelect",
+      "setOperators"
+    ],
+    "buildSetOperationQuery": [
+      "param"
+    ],
+    "buildInsertQuery": [
+      "param"
+    ],
+    "sqlToQuery": [
+      "sql2",
+      "invokeSource"
+    ],
+    "buildRelationalQuery": [
+      "param"
+    ]
+  },
+  "dotProduct": [
+    "column",
+    "value"
+  ],
+  "euclideanDistance": [
+    "column",
+    "value"
+  ],
+  "SingleStoreCountBuilder": {
+    "constructor": [
+      "params"
+    ],
+    "sql": [],
+    "entityKind": [],
+    "session": [],
+    "buildEmbeddedCount": [
+      "source",
+      "filters"
+    ],
+    "buildCount": [
+      "source",
+      "filters"
+    ],
+    "then": [
+      "onfulfilled",
+      "onrejected"
+    ],
+    "catch": [
+      "onRejected"
+    ],
+    "finally": [
+      "onFinally"
+    ]
+  },
+  "SingleStoreDeleteBase": {
+    "constructor": [
+      "table",
+      "session",
+      "dialect",
+      "withList"
+    ],
+    "entityKind": [],
+    "config": [],
+    "where": [
+      "where"
+    ],
+    "orderBy": [
+      "param"
+    ],
+    "limit": [
+      "limit"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "prepare": [],
+    "execute": [],
+    "createIterator": [],
+    "iterator": [],
+    "$dynamic": []
+  },
+  "SingleStoreInsertBuilder": {
+    "constructor": [
+      "table",
+      "session",
+      "dialect"
+    ],
+    "entityKind": [],
+    "shouldIgnore": [],
+    "ignore": [],
+    "values": [
+      "values"
+    ]
+  },
+  "SingleStoreInsertBase": {
+    "constructor": [
+      "table",
+      "values",
+      "ignore",
+      "session",
+      "dialect"
+    ],
+    "entityKind": [],
+    "config": [],
+    "onDuplicateKeyUpdate": [
+      "config"
+    ],
+    "$returningId": [],
+    "getSQL": [],
+    "toSQL": [],
+    "prepare": [],
+    "execute": [],
+    "createIterator": [],
+    "iterator": [],
+    "$dynamic": []
+  },
+  "SingleStoreRelationalQuery": {
+    "constructor": [
+      "fullSchema",
+      "schema",
+      "tableNamesMap",
+      "table",
+      "tableConfig",
+      "dialect",
+      "session",
+      "config",
+      "queryMode"
+    ],
+    "entityKind": [],
+    "prepare": [],
+    "_getQuery": [],
+    "_toSQL": [],
+    "getSQL": [],
+    "toSQL": [],
+    "execute": []
+  },
+  "SingleStoreSelectBuilder": {
+    "entityKind": [],
+    "fields": [],
+    "session": [],
+    "dialect": [],
+    "withList": [],
+    "distinct": [],
+    "constructor": [
+      "config"
+    ],
+    "from": [
+      "source"
+    ]
+  },
+  "SingleStoreSelectQueryBuilderBase": {
+    "entityKind": [],
+    "_": [],
+    "config": [],
+    "joinsNotNullableMap": [],
+    "tableName": [],
+    "isPartialSelect": [],
+    "session": [],
+    "dialect": [],
+    "cacheConfig": [],
+    "usedTables": [],
+    "constructor": [
+      "param"
+    ],
+    "getUsedTables": [],
+    "createJoin": [
+      "joinType",
+      "lateral"
+    ],
+    "leftJoin": [],
+    "leftJoinLateral": [],
+    "rightJoin": [],
+    "innerJoin": [],
+    "innerJoinLateral": [],
+    "fullJoin": [],
+    "crossJoin": [],
+    "crossJoinLateral": [],
+    "createSetOperator": [
+      "type",
+      "isAll"
+    ],
+    "union": [],
+    "unionAll": [],
+    "intersect": [],
+    "except": [],
+    "minus": [],
+    "addSetOperators": [
+      "setOperators"
+    ],
+    "where": [
+      "where"
+    ],
+    "having": [
+      "having"
+    ],
+    "groupBy": [
+      "param"
+    ],
+    "orderBy": [
+      "param"
+    ],
+    "limit": [
+      "limit"
+    ],
+    "offset": [
+      "offset"
+    ],
+    "for": [
+      "strength",
+      "param"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "as": [
+      "alias"
+    ],
+    "getSelectedFields": [],
+    "$dynamic": []
+  },
+  "SingleStoreSelectBase": {
+    "entityKind": [],
+    "prepare": [],
+    "$withCache": [
+      "config"
+    ],
+    "execute": [],
+    "createIterator": [],
+    "iterator": []
+  },
+  "getSingleStoreSetOperators": [],
+  "SingleStoreUpdateBuilder": {
+    "constructor": [
+      "table",
+      "session",
+      "dialect",
+      "withList"
+    ],
+    "entityKind": [],
+    "set": [
+      "values"
+    ]
+  },
+  "SingleStoreUpdateBase": {
+    "constructor": [
+      "table",
+      "set",
+      "session",
+      "dialect",
+      "withList"
+    ],
+    "entityKind": [],
+    "config": [],
+    "where": [
+      "where"
+    ],
+    "orderBy": [
+      "param"
+    ],
+    "limit": [
+      "limit"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "prepare": [],
+    "execute": [],
+    "createIterator": [],
+    "iterator": [],
+    "$dynamic": []
+  },
+  "SingleStoreSchema": {
+    "constructor": [
+      "schemaName"
+    ],
+    "entityKind": [],
+    "table": []
+  },
+  "isSingleStoreSchema": [
+    "obj"
+  ],
+  "singlestoreDatabase": [
+    "name"
+  ],
+  "SingleStorePreparedQuery": {
+    "constructor": [
+      "cache",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "entityKind": [],
+    "queryWithCache": [
+      "queryString",
+      "params",
+      "query"
+    ],
+    "joinsNotNullableMap": []
+  },
+  "SingleStoreSession": {
+    "constructor": [
+      "dialect"
+    ],
+    "entityKind": [],
+    "execute": [
+      "query"
+    ],
+    "count": [
+      "sql2"
+    ],
+    "getSetTransactionSQL": [
+      "config"
+    ],
+    "getStartTransactionSQL": [
+      "config"
+    ]
+  },
+  "SingleStoreTransaction": {
+    "constructor": [
+      "dialect",
+      "session",
+      "schema",
+      "nestedIndex"
+    ],
+    "entityKind": [],
+    "rollback": []
+  },
+  "SingleStoreTable": {
+    "entityKind": [],
+    "Symbol": []
+  },
+  "singlestoreTableWithSchema": [
+    "name",
+    "columns",
+    "extraConfig",
+    "schema",
+    "param"
+  ],
+  "singlestoreTable": [
+    "name",
+    "columns",
+    "extraConfig"
+  ],
+  "singlestoreTableCreator": [
+    "customizeTableName"
+  ],
+  "SingleStoreViewBase": {
+    "entityKind": []
+  },
+  "SingleStoreView": {
+    "entityKind": [],
+    "SingleStoreViewConfig": [],
+    "constructor": [
+      "param"
+    ]
+  },
+  "SingleStoreRemoteDatabase": {
+    "entityKind": []
+  },
+  "SingleStoreRemoteSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "options"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "customResultMapper",
+      "generatedIds",
+      "returningIds"
+    ],
+    "all": [
+      "query"
+    ],
+    "transaction": [
+      "_transaction",
+      "_config"
+    ]
+  },
+  "SingleStoreProxyTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "_transaction"
+    ]
+  },
+  "bindIfParam": [
+    "value",
+    "column"
+  ],
+  "eq": [
+    "left",
+    "right"
+  ],
+  "ne": [
+    "left",
+    "right"
+  ],
+  "and": [
+    "param"
+  ],
+  "or": [
+    "param"
+  ],
+  "not": [
+    "condition"
+  ],
+  "gt": [
+    "left",
+    "right"
+  ],
+  "gte": [
+    "left",
+    "right"
+  ],
+  "lt": [
+    "left",
+    "right"
+  ],
+  "lte": [
+    "left",
+    "right"
+  ],
+  "inArray": [
+    "column",
+    "values"
+  ],
+  "notInArray": [
+    "column",
+    "values"
+  ],
+  "isNull": [
+    "value"
+  ],
+  "isNotNull": [
+    "value"
+  ],
+  "exists": [
+    "subquery"
+  ],
+  "notExists": [
+    "subquery"
+  ],
+  "between": [
+    "column",
+    "min",
+    "max"
+  ],
+  "notBetween": [
+    "column",
+    "min",
+    "max"
+  ],
+  "like": [
+    "column",
+    "value"
+  ],
+  "notLike": [
+    "column",
+    "value"
+  ],
+  "ilike": [
+    "column",
+    "value"
+  ],
+  "notIlike": [
+    "column",
+    "value"
+  ],
+  "arrayContains": [
+    "column",
+    "values"
+  ],
+  "arrayContained": [
+    "column",
+    "values"
+  ],
+  "arrayOverlaps": [
+    "column",
+    "values"
+  ],
+  "asc": [
+    "column"
+  ],
+  "desc": [
+    "column"
+  ],
+  "count": [
+    "expression"
+  ],
+  "countDistinct": [
+    "expression"
+  ],
+  "avg": [
+    "expression"
+  ],
+  "avgDistinct": [
+    "expression"
+  ],
+  "sum": [
+    "expression"
+  ],
+  "sumDistinct": [
+    "expression"
+  ],
+  "max": [
+    "expression"
+  ],
+  "min": [
+    "expression"
+  ],
+  "toSql": [
+    "value"
+  ],
+  "l2Distance": [
+    "column",
+    "value"
+  ],
+  "l1Distance": [
+    "column",
+    "value"
+  ],
+  "innerProduct": [
+    "column",
+    "value"
+  ],
+  "cosineDistance": [
+    "column",
+    "value"
+  ],
+  "hammingDistance": [
+    "column",
+    "value"
+  ],
+  "jaccardDistance": [
+    "column",
+    "value"
+  ],
+  "FakePrimitiveParam": {
+    "entityKind": []
+  },
+  "StringChunk": {
+    "entityKind": [],
+    "value": [],
+    "constructor": [
+      "value"
+    ],
+    "getSQL": []
+  },
+  "SQL": {
+    "constructor": [
+      "queryChunks"
+    ],
+    "entityKind": [],
+    "decoder": [],
+    "shouldInlineParams": [],
+    "usedTables": [],
+    "append": [
+      "query"
+    ],
+    "toQuery": [
+      "config"
+    ],
+    "buildQueryFromSourceParams": [
+      "chunks",
+      "_config"
+    ],
+    "mapInlineParam": [
+      "chunk",
+      "param"
+    ],
+    "getSQL": [],
+    "as": [
+      "alias"
+    ],
+    "mapWith": [
+      "decoder"
+    ],
+    "inlineParams": [],
+    "if": [
+      "condition"
+    ]
+  },
+  "Name": {
+    "constructor": [
+      "value"
+    ],
+    "entityKind": [],
+    "brand": [],
+    "getSQL": []
+  },
+  "Param": {
+    "constructor": [
+      "value",
+      "param"
+    ],
+    "entityKind": [],
+    "brand": [],
+    "getSQL": []
+  },
+  "Aliased": {
+    "constructor": [
+      "sql2",
+      "fieldAlias"
+    ],
+    "entityKind": [],
+    "isSelectionField": [],
+    "getSQL": [],
+    "clone": []
+  },
+  "Placeholder": {
+    "constructor": [
+      "name2"
+    ],
+    "entityKind": [],
+    "getSQL": []
+  },
+  "View": {
+    "entityKind": [],
+    "ViewBaseConfig": [],
+    "IsDrizzleView": [],
+    "constructor": [
+      "param"
+    ],
+    "getSQL": []
+  },
+  "isSQLWrapper": [
+    "value"
+  ],
+  "mergeQueries": [
+    "queries"
+  ],
+  "name": [
+    "value"
+  ],
+  "isDriverValueEncoder": [
+    "value"
+  ],
+  "param": [
+    "value",
+    "encoder"
+  ],
+  "sql": [
+    "strings",
+    "param"
+  ],
+  "empty": [],
+  "fromList": [
+    "list"
+  ],
+  "raw": [
+    "str"
+  ],
+  "join": [
+    "chunks",
+    "separator"
+  ],
+  "identifier": [
+    "value"
+  ],
+  "placeholder2": [
+    "name2"
+  ],
+  "param2": [
+    "value",
+    "encoder"
+  ],
+  "placeholder": [
+    "name2"
+  ],
+  "fillPlaceholders": [
+    "params",
+    "values"
+  ],
+  "isView": [
+    "view"
+  ],
+  "getViewName": [
+    "view"
+  ],
+  "SQLJsSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "executeMethod",
+      "isResponseInArrayMode"
+    ],
+    "transaction": [
+      "transaction",
+      "param"
+    ]
+  },
+  "SQLJsTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "getSQLiteColumnBuilders": [],
+  "SQLiteBigIntBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SQLiteBigInt": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "SQLiteBlobJsonBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SQLiteBlobJson": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "SQLiteBlobBufferBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SQLiteBlobBuffer": {
+    "entityKind": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "getSQLType": []
+  },
+  "blob": [
+    "a",
+    "b"
+  ],
+  "SQLiteColumnBuilder": {
+    "entityKind": [],
+    "foreignKeyConfigs": [],
+    "references": [
+      "ref",
+      "param"
+    ],
+    "unique": [
+      "name"
+    ],
+    "generatedAlwaysAs": [
+      "as",
+      "config"
+    ],
+    "buildForeignKeys": [
+      "column",
+      "table"
+    ]
+  },
+  "SQLiteColumn": {
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "entityKind": []
+  },
+  "SQLiteCustomColumnBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "fieldConfig",
+      "customTypeParams"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SQLiteCustomColumn": {
+    "entityKind": [],
+    "sqlName": [],
+    "mapTo": [],
+    "mapFrom": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "SQLiteBaseIntegerBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "dataType",
+      "columnType"
+    ],
+    "primaryKey": [
+      "config"
+    ]
+  },
+  "SQLiteBaseInteger": {
+    "entityKind": [],
+    "autoIncrement": [],
+    "getSQLType": []
+  },
+  "SQLiteIntegerBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SQLiteInteger": {
+    "entityKind": []
+  },
+  "SQLiteTimestampBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "mode"
+    ],
+    "defaultNow": [],
+    "build": [
+      "table"
+    ]
+  },
+  "SQLiteTimestamp": {
+    "entityKind": [],
+    "mode": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "SQLiteBooleanBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "mode"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SQLiteBoolean": {
+    "entityKind": [],
+    "mode": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "SQLiteNumericBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SQLiteNumeric": {
+    "entityKind": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "getSQLType": []
+  },
+  "SQLiteNumericNumberBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SQLiteNumericNumber": {
+    "entityKind": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [],
+    "getSQLType": []
+  },
+  "SQLiteNumericBigIntBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SQLiteNumericBigInt": {
+    "entityKind": [],
+    "mapFromDriverValue": [],
+    "mapToDriverValue": [],
+    "getSQLType": []
+  },
+  "SQLiteRealBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SQLiteReal": {
+    "entityKind": [],
+    "getSQLType": []
+  },
+  "SQLiteTextBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name",
+      "config"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SQLiteText": {
+    "entityKind": [],
+    "enumValues": [],
+    "length": [],
+    "constructor": [
+      "table",
+      "config"
+    ],
+    "getSQLType": []
+  },
+  "SQLiteTextJsonBuilder": {
+    "entityKind": [],
+    "constructor": [
+      "name"
+    ],
+    "build": [
+      "table"
+    ]
+  },
+  "SQLiteTextJson": {
+    "entityKind": [],
+    "getSQLType": [],
+    "mapFromDriverValue": [
+      "value"
+    ],
+    "mapToDriverValue": [
+      "value"
+    ]
+  },
+  "BaseSQLiteDatabase": {
+    "constructor": [
+      "resultKind",
+      "dialect",
+      "session",
+      "schema"
+    ],
+    "entityKind": [],
+    "query": [],
+    "$with": [],
+    "$count": [
+      "source",
+      "filters"
+    ],
+    "with": [
+      "param"
+    ],
+    "select": [
+      "fields"
+    ],
+    "selectDistinct": [
+      "fields"
+    ],
+    "update": [
+      "table"
+    ],
+    "$cache": [],
+    "insert": [
+      "into"
+    ],
+    "delete": [
+      "from"
+    ],
+    "run": [
+      "query"
+    ],
+    "all": [
+      "query"
+    ],
+    "get": [
+      "query"
+    ],
+    "values": [
+      "query"
+    ],
+    "transaction": [
+      "transaction",
+      "config"
+    ]
+  },
+  "run": [
+    "param"
+  ],
+  "all": [
+    "param"
+  ],
+  "get": [
+    "param"
+  ],
+  "values": [
+    "param"
+  ],
+  "SQLiteDialect": {
+    "entityKind": [],
+    "casing": [],
+    "constructor": [
+      "config"
+    ],
+    "escapeName": [
+      "name"
+    ],
+    "escapeParam": [
+      "_num"
+    ],
+    "escapeString": [
+      "str"
+    ],
+    "buildWithCTE": [
+      "queries"
+    ],
+    "buildDeleteQuery": [
+      "param"
+    ],
+    "buildUpdateSet": [
+      "table",
+      "set"
+    ],
+    "buildUpdateQuery": [
+      "param"
+    ],
+    "buildSelection": [
+      "fields",
+      "param"
+    ],
+    "buildJoins": [
+      "joins"
+    ],
+    "buildLimit": [
+      "limit"
+    ],
+    "buildOrderBy": [
+      "orderBy"
+    ],
+    "buildFromTable": [
+      "table"
+    ],
+    "buildSelectQuery": [
+      "param"
+    ],
+    "buildSetOperations": [
+      "leftSelect",
+      "setOperators"
+    ],
+    "buildSetOperationQuery": [
+      "param"
+    ],
+    "buildInsertQuery": [
+      "param"
+    ],
+    "sqlToQuery": [
+      "sql2",
+      "invokeSource"
+    ],
+    "buildRelationalQuery": [
+      "param"
+    ]
+  },
+  "SQLiteSyncDialect": {
+    "entityKind": [],
+    "migrate": [
+      "migrations",
+      "session",
+      "config"
+    ]
+  },
+  "SQLiteAsyncDialect": {
+    "entityKind": [],
+    "migrate": [
+      "migrations",
+      "session",
+      "config"
+    ]
+  },
+  "rowId": [],
+  "SQLiteCountBuilder": {
+    "constructor": [
+      "params"
+    ],
+    "sql": [],
+    "entityKind": [],
+    "session": [],
+    "buildEmbeddedCount": [
+      "source",
+      "filters"
+    ],
+    "buildCount": [
+      "source",
+      "filters"
+    ],
+    "then": [
+      "onfulfilled",
+      "onrejected"
+    ],
+    "catch": [
+      "onRejected"
+    ],
+    "finally": [
+      "onFinally"
+    ]
+  },
+  "SQLiteDeleteBase": {
+    "constructor": [
+      "table",
+      "session",
+      "dialect",
+      "withList"
+    ],
+    "entityKind": [],
+    "config": [],
+    "where": [
+      "where"
+    ],
+    "orderBy": [
+      "param"
+    ],
+    "limit": [
+      "limit"
+    ],
+    "returning": [
+      "param"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "_prepare": [
+      "param"
+    ],
+    "prepare": [],
+    "run": [],
+    "all": [],
+    "get": [],
+    "values": [],
+    "execute": [
+      "placeholderValues"
+    ],
+    "$dynamic": []
+  },
+  "SQLiteInsertBuilder": {
+    "constructor": [
+      "table",
+      "session",
+      "dialect",
+      "withList"
+    ],
+    "entityKind": [],
+    "values": [
+      "values"
+    ],
+    "select": [
+      "selectQuery"
+    ]
+  },
+  "SQLiteInsertBase": {
+    "constructor": [
+      "table",
+      "values",
+      "session",
+      "dialect",
+      "withList",
+      "select"
+    ],
+    "entityKind": [],
+    "config": [],
+    "returning": [
+      "param"
+    ],
+    "onConflictDoNothing": [
+      "param"
+    ],
+    "onConflictDoUpdate": [
+      "config"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "_prepare": [
+      "param"
+    ],
+    "prepare": [],
+    "run": [],
+    "all": [],
+    "get": [],
+    "values": [],
+    "execute": [],
+    "$dynamic": []
+  },
+  "SQLiteRelationalQuery": {
+    "constructor": [
+      "fullSchema",
+      "schema",
+      "tableNamesMap",
+      "table",
+      "tableConfig",
+      "dialect",
+      "session",
+      "config",
+      "mode"
+    ],
+    "entityKind": [],
+    "mode": [],
+    "getSQL": [],
+    "_prepare": [
+      "param"
+    ],
+    "prepare": [],
+    "_toSQL": [],
+    "toSQL": [],
+    "executeRaw": [],
+    "execute": []
+  },
+  "SQLiteSyncRelationalQuery": {
+    "entityKind": [],
+    "sync": []
+  },
+  "SQLiteRaw": {
+    "constructor": [
+      "execute",
+      "getSQL",
+      "action",
+      "dialect",
+      "mapBatchResult"
+    ],
+    "entityKind": [],
+    "config": [],
+    "getQuery": [],
+    "mapResult": [
+      "result",
+      "isFromBatch"
+    ],
+    "_prepare": [],
+    "isResponseInArrayMode": []
+  },
+  "SQLiteSelectBuilder": {
+    "entityKind": [],
+    "fields": [],
+    "session": [],
+    "dialect": [],
+    "withList": [],
+    "distinct": [],
+    "constructor": [
+      "config"
+    ],
+    "from": [
+      "source"
+    ]
+  },
+  "SQLiteSelectQueryBuilderBase": {
+    "entityKind": [],
+    "_": [],
+    "config": [],
+    "joinsNotNullableMap": [],
+    "tableName": [],
+    "isPartialSelect": [],
+    "session": [],
+    "dialect": [],
+    "cacheConfig": [],
+    "usedTables": [],
+    "constructor": [
+      "param"
+    ],
+    "getUsedTables": [],
+    "createJoin": [
+      "joinType"
+    ],
+    "leftJoin": [],
+    "rightJoin": [],
+    "innerJoin": [],
+    "fullJoin": [],
+    "crossJoin": [],
+    "createSetOperator": [
+      "type",
+      "isAll"
+    ],
+    "union": [],
+    "unionAll": [],
+    "intersect": [],
+    "except": [],
+    "addSetOperators": [
+      "setOperators"
+    ],
+    "where": [
+      "where"
+    ],
+    "having": [
+      "having"
+    ],
+    "groupBy": [
+      "param"
+    ],
+    "orderBy": [
+      "param"
+    ],
+    "limit": [
+      "limit"
+    ],
+    "offset": [
+      "offset"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "as": [
+      "alias"
+    ],
+    "getSelectedFields": [],
+    "$dynamic": []
+  },
+  "SQLiteSelectBase": {
+    "entityKind": [],
+    "_prepare": [
+      "param"
+    ],
+    "$withCache": [
+      "config"
+    ],
+    "prepare": [],
+    "run": [],
+    "all": [],
+    "get": [],
+    "values": [],
+    "execute": []
+  },
+  "getSQLiteSetOperators": [],
+  "SQLiteUpdateBuilder": {
+    "constructor": [
+      "table",
+      "session",
+      "dialect",
+      "withList"
+    ],
+    "entityKind": [],
+    "set": [
+      "values"
+    ]
+  },
+  "SQLiteUpdateBase": {
+    "constructor": [
+      "table",
+      "set",
+      "session",
+      "dialect",
+      "withList"
+    ],
+    "entityKind": [],
+    "config": [],
+    "from": [
+      "source"
+    ],
+    "createJoin": [
+      "joinType"
+    ],
+    "leftJoin": [],
+    "rightJoin": [],
+    "innerJoin": [],
+    "fullJoin": [],
+    "where": [
+      "where"
+    ],
+    "orderBy": [
+      "param"
+    ],
+    "limit": [
+      "limit"
+    ],
+    "returning": [
+      "param"
+    ],
+    "getSQL": [],
+    "toSQL": [],
+    "_prepare": [
+      "param"
+    ],
+    "prepare": [],
+    "run": [],
+    "all": [],
+    "get": [],
+    "values": [],
+    "execute": [],
+    "$dynamic": []
+  },
+  "ExecuteResultSync": {
+    "constructor": [
+      "resultCb"
+    ],
+    "entityKind": [],
+    "execute": [],
+    "sync": []
+  },
+  "SQLitePreparedQuery": {
+    "constructor": [
+      "mode",
+      "executeMethod",
+      "query",
+      "cache",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "entityKind": [],
+    "joinsNotNullableMap": [],
+    "queryWithCache": [
+      "queryString",
+      "params",
+      "query"
+    ],
+    "getQuery": [],
+    "mapRunResult": [
+      "result",
+      "_isFromBatch"
+    ],
+    "mapAllResult": [
+      "_result",
+      "_isFromBatch"
+    ],
+    "mapGetResult": [
+      "_result",
+      "_isFromBatch"
+    ],
+    "execute": [
+      "placeholderValues"
+    ],
+    "mapResult": [
+      "response",
+      "isFromBatch"
+    ]
+  },
+  "SQLiteSession": {
+    "constructor": [
+      "dialect"
+    ],
+    "entityKind": [],
+    "prepareOneTimeQuery": [
+      "query",
+      "fields",
+      "executeMethod",
+      "isResponseInArrayMode",
+      "customResultMapper",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "run": [
+      "query"
+    ],
+    "extractRawRunValueFromBatchResult": [
+      "result"
+    ],
+    "all": [
+      "query"
+    ],
+    "extractRawAllValueFromBatchResult": [
+      "_result"
+    ],
+    "get": [
+      "query"
+    ],
+    "extractRawGetValueFromBatchResult": [
+      "_result"
+    ],
+    "values": [
+      "query"
+    ],
+    "count": [
+      "sql"
+    ],
+    "extractRawValuesValueFromBatchResult": [
+      "_result"
+    ]
+  },
+  "SQLiteTransaction": {
+    "constructor": [
+      "resultType",
+      "dialect",
+      "session",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "rollback": []
+  },
+  "SQLiteTable": {
+    "entityKind": [],
+    "Symbol": [],
+    "InlineForeignKeys": []
+  },
+  "sqliteTableBase": [
+    "name",
+    "columns",
+    "extraConfig",
+    "schema",
+    "param"
+  ],
+  "sqliteTable": [
+    "name",
+    "columns",
+    "extraConfig"
+  ],
+  "sqliteTableCreator": [
+    "customizeTableName"
+  ],
+  "SQLiteViewBase": {
+    "entityKind": []
+  },
+  "SQLiteView": {
+    "entityKind": [],
+    "constructor": [
+      "param"
+    ]
+  },
+  "sqliteView": [
+    "name",
+    "selection"
+  ],
+  "SqliteRemoteDatabase": {
+    "entityKind": [],
+    "batch": [
+      "batch"
+    ]
+  },
+  "SQLiteRemoteSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "batchCLient",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "executeMethod",
+      "isResponseInArrayMode",
+      "customResultMapper",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "batch": [
+      "queries"
+    ],
+    "transaction": [
+      "transaction",
+      "config"
+    ],
+    "extractRawAllValueFromBatchResult": [
+      "result"
+    ],
+    "extractRawGetValueFromBatchResult": [
+      "result"
+    ],
+    "extractRawValuesValueFromBatchResult": [
+      "result"
+    ]
+  },
+  "SQLiteProxyTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "RemotePreparedQuery": {
+    "constructor": [
+      "client",
+      "query",
+      "logger",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "executeMethod",
+      "_isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "entityKind": [],
+    "method": [],
+    "getQuery": [],
+    "run": [
+      "placeholderValues"
+    ],
+    "mapAllResult": [
+      "rows",
+      "isFromBatch"
+    ],
+    "all": [
+      "placeholderValues"
+    ],
+    "get": [
+      "placeholderValues"
+    ],
+    "mapGetResult": [
+      "rows",
+      "isFromBatch"
+    ],
+    "values": [
+      "placeholderValues"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "Subquery": {
+    "entityKind": [],
+    "constructor": [
+      "sql",
+      "fields",
+      "alias",
+      "param",
+      "param"
+    ]
+  },
+  "WithSubquery": {
+    "entityKind": []
+  },
+  "Table": {
+    "entityKind": [],
+    "Symbol": [],
+    "TableName": [],
+    "OriginalName": [],
+    "Schema": [],
+    "Columns": [],
+    "ExtraConfigColumns": [],
+    "BaseName": [],
+    "IsAlias": [],
+    "IsDrizzleTable": [],
+    "ExtraConfigBuilder": [],
+    "constructor": [
+      "name",
+      "schema",
+      "baseName"
+    ]
+  },
+  "isTable": [
+    "table"
+  ],
+  "getTableName": [
+    "table"
+  ],
+  "getTableUniqueName": [
+    "table"
+  ],
+  "TiDBServerlessDatabase": {
+    "entityKind": []
+  },
+  "TiDBServerlessPreparedQuery": {
+    "constructor": [
+      "client",
+      "queryString",
+      "params",
+      "logger",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "customResultMapper",
+      "generatedIds",
+      "returningIds"
+    ],
+    "entityKind": [],
+    "execute": [
+      "param"
+    ],
+    "iterator": [
+      "_placeholderValues"
+    ]
+  },
+  "TiDBServerlessSession": {
+    "constructor": [
+      "baseClient",
+      "dialect",
+      "tx",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "client": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "customResultMapper",
+      "generatedIds",
+      "returningIds",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "all": [
+      "query"
+    ],
+    "count": [
+      "sql2"
+    ],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "TiDBServerlessTransaction": {
+    "entityKind": [],
+    "constructor": [
+      "dialect",
+      "session",
+      "schema",
+      "param"
+    ],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "iife": [
+    "fn",
+    "param"
+  ],
+  "mapResultRow": [
+    "columns",
+    "row",
+    "joinsNotNullableMap"
+  ],
+  "orderSelectedFields": [
+    "fields",
+    "pathPrefix"
+  ],
+  "haveSameKeys": [
+    "left",
+    "right"
+  ],
+  "mapUpdateSet": [
+    "table",
+    "values"
+  ],
+  "applyMixins": [
+    "baseClass",
+    "extendedClasses"
+  ],
+  "getTableColumns": [
+    "table"
+  ],
+  "getViewSelectedFields": [
+    "view"
+  ],
+  "getTableLikeName": [
+    "table"
+  ],
+  "getColumnNameAndConfig": [
+    "a",
+    "b"
+  ],
+  "isConfig": [
+    "data"
+  ],
+  "VercelPgDriver": {
+    "constructor": [
+      "client",
+      "dialect",
+      "param"
+    ],
+    "entityKind": [],
+    "createSession": [
+      "schema"
+    ]
+  },
+  "VercelPgDatabase": {
+    "entityKind": []
+  },
+  "VercelPgPreparedQuery": {
+    "constructor": [
+      "client",
+      "queryString",
+      "params",
+      "logger",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "name",
+      "_isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "entityKind": [],
+    "rawQuery": [],
+    "queryConfig": [],
+    "execute": [
+      "param"
+    ],
+    "all": [
+      "param"
+    ],
+    "values": [
+      "param"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "VercelPgSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "name",
+      "isResponseInArrayMode",
+      "customResultMapper",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "query": [
+      "query",
+      "params"
+    ],
+    "queryObjects": [
+      "query",
+      "params"
+    ],
+    "count": [
+      "sql2"
+    ],
+    "transaction": [
+      "transaction",
+      "config"
+    ]
+  },
+  "VercelPgTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "transaction"
+    ]
+  },
+  "XataHttpDriver": {
+    "constructor": [
+      "client",
+      "dialect",
+      "param"
+    ],
+    "entityKind": [],
+    "createSession": [
+      "schema"
+    ],
+    "initMappers": []
+  },
+  "XataHttpDatabase": {
+    "entityKind": []
+  },
+  "XataHttpPreparedQuery": {
+    "constructor": [
+      "client",
+      "query",
+      "logger",
+      "cache",
+      "queryMetadata",
+      "cacheConfig",
+      "fields",
+      "_isResponseInArrayMode",
+      "customResultMapper"
+    ],
+    "entityKind": [],
+    "execute": [
+      "param"
+    ],
+    "all": [
+      "param"
+    ],
+    "values": [
+      "param"
+    ],
+    "isResponseInArrayMode": []
+  },
+  "XataHttpSession": {
+    "constructor": [
+      "client",
+      "dialect",
+      "schema",
+      "param"
+    ],
+    "entityKind": [],
+    "logger": [],
+    "cache": [],
+    "prepareQuery": [
+      "query",
+      "fields",
+      "name",
+      "isResponseInArrayMode",
+      "customResultMapper",
+      "queryMetadata",
+      "cacheConfig"
+    ],
+    "query": [
+      "query",
+      "params"
+    ],
+    "queryObjects": [
+      "query",
+      "params"
+    ],
+    "transaction": [
+      "_transaction",
+      "param"
+    ]
+  },
+  "XataTransaction": {
+    "entityKind": [],
+    "transaction": [
+      "_transaction"
+    ]
+  }
+}
