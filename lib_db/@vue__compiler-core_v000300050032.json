@@ -1,0 +1,988 @@
+{
+  "registerRuntimeHelpers": [
+    "helpers"
+  ],
+  "createRoot": [
+    "children",
+    "param"
+  ],
+  "createVNodeCall": [
+    "context",
+    "tag",
+    "props",
+    "children",
+    "patchFlag",
+    "dynamicProps",
+    "directives",
+    "param",
+    "param",
+    "param",
+    "param"
+  ],
+  "createArrayExpression": [
+    "elements",
+    "param"
+  ],
+  "createObjectExpression": [
+    "properties",
+    "param"
+  ],
+  "createObjectProperty": [
+    "key",
+    "value"
+  ],
+  "createSimpleExpression": [
+    "content",
+    "param",
+    "param",
+    "param"
+  ],
+  "createInterpolation": [
+    "content",
+    "loc"
+  ],
+  "createCompoundExpression": [
+    "children",
+    "param"
+  ],
+  "createCallExpression": [
+    "callee",
+    "param",
+    "param"
+  ],
+  "createFunctionExpression": [
+    "params",
+    "param",
+    "param",
+    "param",
+    "param"
+  ],
+  "createConditionalExpression": [
+    "test",
+    "consequent",
+    "alternate",
+    "param"
+  ],
+  "createCacheExpression": [
+    "index",
+    "value",
+    "param",
+    "param"
+  ],
+  "createBlockStatement": [
+    "body"
+  ],
+  "createTemplateLiteral": [
+    "elements"
+  ],
+  "createIfStatement": [
+    "test",
+    "consequent",
+    "alternate"
+  ],
+  "createAssignmentExpression": [
+    "left",
+    "right"
+  ],
+  "createSequenceExpression": [
+    "expressions"
+  ],
+  "createReturnStatement": [
+    "returns"
+  ],
+  "getVNodeHelper": [
+    "ssr",
+    "isComponent"
+  ],
+  "getVNodeBlockHelper": [
+    "ssr",
+    "isComponent"
+  ],
+  "convertToBlock": [
+    "node",
+    "param"
+  ],
+  "isTagStartChar": [
+    "c"
+  ],
+  "isWhitespace": [
+    "c"
+  ],
+  "isEndOfTagSection": [
+    "c"
+  ],
+  "toCharCodes": [
+    "str"
+  ],
+  "Tokenizer": {
+    "constructor": [
+      "stack",
+      "cbs"
+    ],
+    "inSFCRoot": [],
+    "reset": [],
+    "getPos": [
+      "index"
+    ],
+    "peek": [],
+    "stateText": [
+      "c"
+    ],
+    "stateInterpolationOpen": [
+      "c"
+    ],
+    "stateInterpolation": [
+      "c"
+    ],
+    "stateInterpolationClose": [
+      "c"
+    ],
+    "stateSpecialStartSequence": [
+      "c"
+    ],
+    "stateInRCDATA": [
+      "c"
+    ],
+    "stateCDATASequence": [
+      "c"
+    ],
+    "fastForwardTo": [
+      "c"
+    ],
+    "stateInCommentLike": [
+      "c"
+    ],
+    "startSpecial": [
+      "sequence",
+      "offset"
+    ],
+    "enterRCDATA": [
+      "sequence",
+      "offset"
+    ],
+    "stateBeforeTagName": [
+      "c"
+    ],
+    "stateInTagName": [
+      "c"
+    ],
+    "stateInSFCRootTagName": [
+      "c"
+    ],
+    "handleTagName": [
+      "c"
+    ],
+    "stateBeforeClosingTagName": [
+      "c"
+    ],
+    "stateInClosingTagName": [
+      "c"
+    ],
+    "stateAfterClosingTagName": [
+      "c"
+    ],
+    "stateBeforeAttrName": [
+      "c"
+    ],
+    "handleAttrStart": [
+      "c"
+    ],
+    "stateInSelfClosingTag": [
+      "c"
+    ],
+    "stateInAttrName": [
+      "c"
+    ],
+    "stateInDirName": [
+      "c"
+    ],
+    "stateInDirArg": [
+      "c"
+    ],
+    "stateInDynamicDirArg": [
+      "c"
+    ],
+    "stateInDirModifier": [
+      "c"
+    ],
+    "handleAttrNameEnd": [
+      "c"
+    ],
+    "stateAfterAttrName": [
+      "c"
+    ],
+    "stateBeforeAttrValue": [
+      "c"
+    ],
+    "handleInAttrValue": [
+      "c",
+      "quote"
+    ],
+    "stateInAttrValueDoubleQuotes": [
+      "c"
+    ],
+    "stateInAttrValueSingleQuotes": [
+      "c"
+    ],
+    "stateInAttrValueNoQuotes": [
+      "c"
+    ],
+    "stateBeforeDeclaration": [
+      "c"
+    ],
+    "stateInDeclaration": [
+      "c"
+    ],
+    "stateInProcessingInstruction": [
+      "c"
+    ],
+    "stateBeforeComment": [
+      "c"
+    ],
+    "stateInSpecialComment": [
+      "c"
+    ],
+    "stateBeforeSpecialS": [
+      "c"
+    ],
+    "stateBeforeSpecialT": [
+      "c"
+    ],
+    "startEntity": [],
+    "stateInEntity": [],
+    "parse": [
+      "input"
+    ],
+    "cleanup": [],
+    "finish": [],
+    "handleTrailingData": [],
+    "emitCodePoint": [
+      "cp",
+      "consumed"
+    ]
+  },
+  "getCompatValue": [
+    "key",
+    "param"
+  ],
+  "isCompatEnabled": [
+    "key",
+    "context"
+  ],
+  "checkCompatEnabled": [
+    "key",
+    "context",
+    "loc",
+    "param"
+  ],
+  "warnDeprecation": [
+    "key",
+    "context",
+    "loc",
+    "param"
+  ],
+  "defaultOnError": [
+    "error"
+  ],
+  "defaultOnWarn": [
+    "msg"
+  ],
+  "createCompilerError": [
+    "code",
+    "loc",
+    "messages",
+    "additionalMessage"
+  ],
+  "walkIdentifiers": [
+    "root",
+    "onIdentifier",
+    "param",
+    "param",
+    "param"
+  ],
+  "isReferencedIdentifier": [
+    "id",
+    "parent",
+    "parentStack"
+  ],
+  "isInDestructureAssignment": [
+    "parent",
+    "parentStack"
+  ],
+  "isInNewExpression": [
+    "parentStack"
+  ],
+  "walkFunctionParams": [
+    "node",
+    "onIdent"
+  ],
+  "walkBlockDeclarations": [
+    "block",
+    "onIdent"
+  ],
+  "isForStatement": [
+    "stmt"
+  ],
+  "walkForStatement": [
+    "stmt",
+    "isVar",
+    "onIdent"
+  ],
+  "walkSwitchStatement": [
+    "stmt",
+    "isVar",
+    "onIdent"
+  ],
+  "extractIdentifiers": [
+    "param",
+    "param"
+  ],
+  "markKnownIds": [
+    "name",
+    "knownIds"
+  ],
+  "markScopeIdentifier": [
+    "node",
+    "child",
+    "knownIds"
+  ],
+  "isFunctionType": [
+    "node"
+  ],
+  "isStaticProperty": [
+    "node"
+  ],
+  "isStaticPropertyKey": [
+    "node",
+    "parent"
+  ],
+  "isReferenced": [
+    "node",
+    "parent",
+    "grandparent"
+  ],
+  "unwrapTSNode": [
+    "node"
+  ],
+  "isStaticExp": [
+    "p"
+  ],
+  "isCoreComponent": [
+    "tag"
+  ],
+  "isSimpleIdentifier": [
+    "name"
+  ],
+  "getExpSource": [
+    "exp"
+  ],
+  "isMemberExpressionBrowser": [
+    "exp"
+  ],
+  "isMemberExpressionNode": [
+    "exp",
+    "context"
+  ],
+  "isFnExpressionBrowser": [
+    "exp"
+  ],
+  "isFnExpressionNode": [
+    "exp",
+    "context"
+  ],
+  "advancePositionWithClone": [
+    "pos",
+    "source",
+    "param"
+  ],
+  "advancePositionWithMutation": [
+    "pos",
+    "source",
+    "param"
+  ],
+  "assert": [
+    "condition",
+    "msg"
+  ],
+  "findDir": [
+    "node",
+    "name",
+    "param"
+  ],
+  "findProp": [
+    "node",
+    "name",
+    "param",
+    "param"
+  ],
+  "isStaticArgOf": [
+    "arg",
+    "name"
+  ],
+  "hasDynamicKeyVBind": [
+    "node"
+  ],
+  "isText$1": [
+    "node"
+  ],
+  "isVPre": [
+    "p"
+  ],
+  "isVSlot": [
+    "p"
+  ],
+  "isTemplateNode": [
+    "node"
+  ],
+  "isSlotOutlet": [
+    "node"
+  ],
+  "getUnnormalizedProps": [
+    "props",
+    "param"
+  ],
+  "injectProp": [
+    "node",
+    "prop",
+    "context"
+  ],
+  "hasProp": [
+    "prop",
+    "props"
+  ],
+  "toValidAssetId": [
+    "name",
+    "type"
+  ],
+  "hasScopeRef": [
+    "node",
+    "ids"
+  ],
+  "getMemoedVNodeCall": [
+    "node"
+  ],
+  "isAllWhitespace": [
+    "str"
+  ],
+  "isWhitespaceText": [
+    "node"
+  ],
+  "isCommentOrWhitespace": [
+    "node"
+  ],
+  "parseForExpression": [
+    "input"
+  ],
+  "createAliasExpression": [
+    "content",
+    "offset",
+    "param"
+  ],
+  "getSlice": [
+    "start",
+    "end"
+  ],
+  "endOpenTag": [
+    "end"
+  ],
+  "onText": [
+    "content",
+    "start",
+    "end"
+  ],
+  "onCloseTag": [
+    "el",
+    "end",
+    "param"
+  ],
+  "lookAhead": [
+    "index",
+    "c"
+  ],
+  "backTrack": [
+    "index",
+    "c"
+  ],
+  "isFragmentTemplate": [
+    "param"
+  ],
+  "isComponent": [
+    "param"
+  ],
+  "isUpperCase": [
+    "c"
+  ],
+  "condenseWhitespace": [
+    "nodes"
+  ],
+  "hasNewlineChar": [
+    "str"
+  ],
+  "condense": [
+    "str"
+  ],
+  "addNode": [
+    "node"
+  ],
+  "getLoc": [
+    "start",
+    "end"
+  ],
+  "cloneLoc": [
+    "loc"
+  ],
+  "setLocEnd": [
+    "loc",
+    "end"
+  ],
+  "dirToAttr": [
+    "dir"
+  ],
+  "createExp": [
+    "content",
+    "param",
+    "loc",
+    "param",
+    "param"
+  ],
+  "emitError": [
+    "code",
+    "index",
+    "message"
+  ],
+  "reset": [],
+  "baseParse": [
+    "input",
+    "options"
+  ],
+  "cacheStatic": [
+    "root",
+    "context"
+  ],
+  "getSingleElementRoot": [
+    "root"
+  ],
+  "walk": [
+    "node",
+    "parent",
+    "context",
+    "param",
+    "param"
+  ],
+  "getCacheExpression": [
+    "value"
+  ],
+  "getSlotNode": [
+    "node2",
+    "name"
+  ],
+  "getConstantType": [
+    "node",
+    "context"
+  ],
+  "getConstantTypeOfHelperCall": [
+    "value",
+    "context"
+  ],
+  "getGeneratedPropsConstantType": [
+    "node",
+    "context"
+  ],
+  "getNodeProps": [
+    "node"
+  ],
+  "createTransformContext": [
+    "root",
+    "param"
+  ],
+  "addId": [
+    "id"
+  ],
+  "removeId": [
+    "id"
+  ],
+  "transform": [
+    "root",
+    "options"
+  ],
+  "createRootCodegen": [
+    "root",
+    "context"
+  ],
+  "traverseChildren": [
+    "parent",
+    "context"
+  ],
+  "nodeRemoved": [],
+  "traverseNode": [
+    "node",
+    "context"
+  ],
+  "createStructuralDirectiveTransform": [
+    "name",
+    "fn"
+  ],
+  "aliasHelper": [
+    "s"
+  ],
+  "createCodegenContext": [
+    "ast",
+    "param"
+  ],
+  "newline": [
+    "n"
+  ],
+  "addMapping": [
+    "loc",
+    "param"
+  ],
+  "generate": [
+    "ast",
+    "param"
+  ],
+  "genFunctionPreamble": [
+    "ast",
+    "context"
+  ],
+  "genModulePreamble": [
+    "ast",
+    "context",
+    "genScopeId",
+    "inline"
+  ],
+  "genAssets": [
+    "assets",
+    "type",
+    "param"
+  ],
+  "genHoists": [
+    "hoists",
+    "context"
+  ],
+  "genImports": [
+    "importsOptions",
+    "context"
+  ],
+  "isText": [
+    "n"
+  ],
+  "genNodeListAsArray": [
+    "nodes",
+    "context"
+  ],
+  "genNodeList": [
+    "nodes",
+    "context",
+    "param",
+    "param"
+  ],
+  "genNode": [
+    "node",
+    "context"
+  ],
+  "genText": [
+    "node",
+    "context"
+  ],
+  "genExpression": [
+    "node",
+    "context"
+  ],
+  "genInterpolation": [
+    "node",
+    "context"
+  ],
+  "genCompoundExpression": [
+    "node",
+    "context"
+  ],
+  "genExpressionAsPropertyKey": [
+    "node",
+    "context"
+  ],
+  "genComment": [
+    "node",
+    "context"
+  ],
+  "genVNodeCall": [
+    "node",
+    "context"
+  ],
+  "genNullableArgs": [
+    "args"
+  ],
+  "genCallExpression": [
+    "node",
+    "context"
+  ],
+  "genObjectExpression": [
+    "node",
+    "context"
+  ],
+  "genArrayExpression": [
+    "node",
+    "context"
+  ],
+  "genFunctionExpression": [
+    "node",
+    "context"
+  ],
+  "genConditionalExpression": [
+    "node",
+    "context"
+  ],
+  "genCacheExpression": [
+    "node",
+    "context"
+  ],
+  "genTemplateLiteral": [
+    "node",
+    "context"
+  ],
+  "genIfStatement": [
+    "node",
+    "context"
+  ],
+  "genAssignmentExpression": [
+    "node",
+    "context"
+  ],
+  "genSequenceExpression": [
+    "node",
+    "context"
+  ],
+  "genReturnStatement": [
+    "param",
+    "context"
+  ],
+  "transformExpression": [
+    "node",
+    "context"
+  ],
+  "processExpression": [
+    "node",
+    "context",
+    "param",
+    "param",
+    "param"
+  ],
+  "rewriteIdentifier": [
+    "raw",
+    "parent",
+    "id"
+  ],
+  "wrapWithUnref": [
+    "raw2"
+  ],
+  "canPrefix": [
+    "id"
+  ],
+  "stringifyExpression": [
+    "exp"
+  ],
+  "isConst": [
+    "type"
+  ],
+  "processIf": [
+    "node",
+    "dir",
+    "context",
+    "processCodegen"
+  ],
+  "createIfBranch": [
+    "node",
+    "dir"
+  ],
+  "createCodegenNodeForBranch": [
+    "branch",
+    "keyIndex",
+    "context"
+  ],
+  "createChildrenCodegenNode": [
+    "branch",
+    "keyIndex",
+    "context"
+  ],
+  "isSameKey": [
+    "a",
+    "b"
+  ],
+  "getParentCondition": [
+    "node"
+  ],
+  "processFor": [
+    "node",
+    "dir",
+    "context",
+    "processCodegen"
+  ],
+  "finalizeForParseResult": [
+    "result",
+    "context"
+  ],
+  "createForLoopParams": [
+    "param",
+    "param"
+  ],
+  "createParamsList": [
+    "args"
+  ],
+  "trackSlotScopes": [
+    "node",
+    "context"
+  ],
+  "trackVForSlotScopes": [
+    "node",
+    "context"
+  ],
+  "buildClientSlotFn": [
+    "props",
+    "_vForExp",
+    "children",
+    "loc"
+  ],
+  "buildSlots": [
+    "node",
+    "context",
+    "param"
+  ],
+  "buildDefaultSlotProperty": [
+    "props",
+    "children2"
+  ],
+  "buildDynamicSlot": [
+    "name",
+    "fn",
+    "index"
+  ],
+  "hasForwardedSlots": [
+    "children"
+  ],
+  "transformElement": [
+    "node",
+    "context"
+  ],
+  "resolveComponentType": [
+    "node",
+    "context",
+    "param"
+  ],
+  "resolveSetupReference": [
+    "name",
+    "context"
+  ],
+  "checkType": [
+    "type"
+  ],
+  "buildProps": [
+    "node",
+    "context",
+    "param",
+    "isComponent",
+    "isDynamicComponent",
+    "param"
+  ],
+  "pushMergeArg": [
+    "arg"
+  ],
+  "pushRefVForMarker": [],
+  "analyzePatchFlag": [
+    "param"
+  ],
+  "dedupeProperties": [
+    "properties"
+  ],
+  "mergeAsArray": [
+    "existing",
+    "incoming"
+  ],
+  "buildDirectiveArgs": [
+    "dir",
+    "context"
+  ],
+  "stringifyDynamicPropNames": [
+    "props"
+  ],
+  "isComponentTag": [
+    "tag"
+  ],
+  "transformSlotOutlet": [
+    "node",
+    "context"
+  ],
+  "processSlotOutlet": [
+    "node",
+    "context"
+  ],
+  "transformOn": [
+    "dir",
+    "node",
+    "context",
+    "augmentor"
+  ],
+  "transformBind": [
+    "dir",
+    "_node",
+    "context"
+  ],
+  "injectPrefix": [
+    "arg",
+    "prefix"
+  ],
+  "transformText": [
+    "node",
+    "context"
+  ],
+  "transformOnce": [
+    "node",
+    "context"
+  ],
+  "transformModel": [
+    "dir",
+    "node",
+    "context"
+  ],
+  "createTransformProps": [
+    "param"
+  ],
+  "transformFilter": [
+    "node",
+    "context"
+  ],
+  "rewriteFilter": [
+    "node",
+    "context"
+  ],
+  "parseFilter": [
+    "node",
+    "context"
+  ],
+  "pushFilter": [],
+  "wrapFilter": [
+    "exp",
+    "filter",
+    "context"
+  ],
+  "transformMemo": [
+    "node",
+    "context"
+  ],
+  "transformVBindShorthand": [
+    "node",
+    "context"
+  ],
+  "getBaseTransformPreset": [
+    "prefixIdentifiers"
+  ],
+  "baseCompile": [
+    "source",
+    "param"
+  ],
+  "noopDirectiveTransform": [],
+  "validateBrowserExpression": [
+    "node",
+    "context",
+    "param",
+    "param"
+  ]
+}
