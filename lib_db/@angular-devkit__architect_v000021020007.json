@@ -1,0 +1,424 @@
+{
+  "ownKeys": [
+    "o"
+  ],
+  "findUp": [
+    "names",
+    "from"
+  ],
+  "usage": [
+    "logger",
+    "param"
+  ],
+  "_executeTarget": [
+    "parentLogger",
+    "workspace",
+    "root",
+    "targetStr",
+    "options",
+    "registry"
+  ],
+  "parseOptions": [
+    "args"
+  ],
+  "main": [
+    "args"
+  ],
+  "NodeModuleJobRegistry": {
+    "_resolve": [
+      "name"
+    ],
+    "get": [
+      "name"
+    ]
+  },
+  "_getValue": [
+    "param"
+  ],
+  "WorkspaceNodeModulesArchitectHost": {
+    "_root": [],
+    "workspaceHost": [],
+    "constructor": [
+      "workspaceOrHost",
+      "_root"
+    ],
+    "getBuilderNameForTarget": [
+      "target"
+    ],
+    "resolveBuilder": [
+      "builderStr",
+      "param",
+      "seenBuilders"
+    ],
+    "getCurrentDirectory": [],
+    "getWorkspaceRoot": [],
+    "getOptionsForTarget": [
+      "target"
+    ],
+    "getProjectMetadata": [
+      "target"
+    ],
+    "loadBuilder": [
+      "info"
+    ]
+  },
+  "clone": [
+    "obj"
+  ],
+  "findProjectTarget": [
+    "workspace",
+    "project",
+    "target"
+  ],
+  "getBuilder": [
+    "builderPath"
+  ],
+  "isBuilderOutput": [
+    "obj"
+  ],
+  "fromAsyncIterable": [
+    "iterable"
+  ],
+  "handleAsyncIterator": [
+    "subscriber",
+    "iterator"
+  ],
+  "targetStringFromTarget": [
+    "param"
+  ],
+  "targetFromTargetString": [
+    "specifier",
+    "abbreviatedProjectName",
+    "abbreviatedTargetName"
+  ],
+  "scheduleTargetAndForget": [
+    "context",
+    "target",
+    "overrides",
+    "scheduleOptions"
+  ],
+  "Architect": {
+    "_host": [],
+    "_scheduler": [],
+    "_jobCache": [],
+    "_infoCache": [],
+    "constructor": [
+      "_host",
+      "param",
+      "additionalJobRegistry"
+    ],
+    "has": [
+      "name"
+    ],
+    "scheduleBuilder": [
+      "name",
+      "options",
+      "param"
+    ],
+    "scheduleTarget": [
+      "target",
+      "param",
+      "param"
+    ]
+  },
+  "_createJobHandlerFromBuilderInfo": [
+    "info",
+    "target",
+    "host",
+    "registry",
+    "baseOptions"
+  ],
+  "handler": [
+    "argument",
+    "context"
+  ],
+  "ArchitectBuilderJobRegistry": {
+    "_host": [],
+    "_registry": [],
+    "_jobCache": [],
+    "_infoCache": [],
+    "constructor": [
+      "_host",
+      "_registry",
+      "_jobCache",
+      "_infoCache"
+    ],
+    "_resolveBuilder": [
+      "name"
+    ],
+    "_createBuilder": [
+      "info",
+      "target",
+      "options"
+    ],
+    "get": [
+      "name"
+    ]
+  },
+  "ArchitectTargetJobRegistry": {
+    "get": [
+      "name"
+    ]
+  },
+  "_getTargetOptionsFactory": [
+    "host"
+  ],
+  "_getProjectMetadataFactory": [
+    "host"
+  ],
+  "_getBuilderNameForTargetFactory": [
+    "host"
+  ],
+  "_validateOptionsFactory": [
+    "host",
+    "registry"
+  ],
+  "createBuilder": [
+    "fn"
+  ],
+  "log": [
+    "entry"
+  ],
+  "progress": [
+    "progress",
+    "context"
+  ],
+  "onInput": [
+    "i"
+  ],
+  "isAsyncIterable": [
+    "obj"
+  ],
+  "isJobHandler": [
+    "value"
+  ],
+  "ChannelAlreadyExistException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "createJobHandler": [
+    "fn",
+    "param"
+  ],
+  "complete": [],
+  "createJobFactory": [
+    "loader",
+    "param"
+  ],
+  "createLoggerJob": [
+    "job",
+    "logger"
+  ],
+  "createDispatcher": [
+    "param"
+  ],
+  "JobNameAlreadyRegisteredException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "JobDoesNotExistException": {
+    "constructor": [
+      "name"
+    ]
+  },
+  "FallbackRegistry": {
+    "_fallbacks": [],
+    "constructor": [
+      "param"
+    ],
+    "addFallback": [
+      "registry"
+    ],
+    "get": [
+      "name"
+    ]
+  },
+  "SimpleJobRegistry": {
+    "_jobNames": [],
+    "get": [
+      "name"
+    ],
+    "register": [
+      "nameOrHandler",
+      "param",
+      "param"
+    ],
+    "_register": [
+      "name",
+      "handler",
+      "options"
+    ],
+    "getJobNames": []
+  },
+  "JobArgumentSchemaValidationError": {
+    "constructor": [
+      "errors"
+    ]
+  },
+  "JobInboundMessageSchemaValidationError": {
+    "constructor": [
+      "errors"
+    ]
+  },
+  "JobOutputSchemaValidationError": {
+    "constructor": [
+      "errors"
+    ]
+  },
+  "SimpleScheduler": {
+    "_jobRegistry": [],
+    "_schemaRegistry": [],
+    "_internalJobDescriptionMap": [],
+    "_queue": [],
+    "_pauseCounter": [],
+    "constructor": [
+      "_jobRegistry",
+      "param"
+    ],
+    "_getInternalDescription": [
+      "name"
+    ],
+    "getDescription": [
+      "name"
+    ],
+    "has": [
+      "name"
+    ],
+    "pause": [],
+    "schedule": [
+      "name",
+      "argument",
+      "options"
+    ],
+    "_filterJobOutboundMessages": [
+      "message",
+      "state"
+    ],
+    "_updateState": [
+      "message",
+      "state"
+    ],
+    "_createJob": [
+      "name",
+      "argument",
+      "handler",
+      "inboundBus",
+      "outboundBus"
+    ],
+    "_scheduleJob": [
+      "name",
+      "argument",
+      "options",
+      "waitable"
+    ]
+  },
+  "_jobShare": [],
+  "noopSchemaValidator": [],
+  "serialize": [],
+  "newHandler": [
+    "argument",
+    "context"
+  ],
+  "reuse": [
+    "param"
+  ],
+  "memoize": [
+    "param"
+  ],
+  "mergeOptions": [
+    "baseOptions",
+    "overrideOptions"
+  ],
+  "scheduleByName": [
+    "name",
+    "buildOptions",
+    "options"
+  ],
+  "scheduleByTarget": [
+    "target",
+    "overrides",
+    "options"
+  ],
+  "TestProjectHost": {
+    "_templateRoot": [],
+    "_currentRoot": [],
+    "_scopedSyncHost": [],
+    "constructor": [
+      "_templateRoot"
+    ],
+    "root": [],
+    "scopedSync": [],
+    "initialize": [],
+    "restore": [],
+    "writeMultipleFiles": [
+      "files"
+    ],
+    "replaceInFile": [
+      "path",
+      "match",
+      "replacement"
+    ],
+    "appendToFile": [
+      "path",
+      "str"
+    ],
+    "fileMatchExists": [
+      "dir",
+      "regex"
+    ],
+    "copyFile": [
+      "from",
+      "to"
+    ],
+    "findUniqueFolderPath": []
+  },
+  "recursiveList": [
+    "path"
+  ],
+  "TestingArchitectHost": {
+    "workspaceRoot": [],
+    "currentDirectory": [],
+    "_backendHost": [],
+    "_builderImportMap": [],
+    "_builderMap": [],
+    "_targetMap": [],
+    "constructor": [
+      "param",
+      "param",
+      "param"
+    ],
+    "addBuilder": [
+      "builderName",
+      "builder",
+      "param",
+      "param"
+    ],
+    "addBuilderFromPackage": [
+      "packageName"
+    ],
+    "addTarget": [
+      "target",
+      "builderName",
+      "param"
+    ],
+    "getBuilderNameForTarget": [
+      "target"
+    ],
+    "resolveBuilder": [
+      "builderName"
+    ],
+    "getCurrentDirectory": [],
+    "getWorkspaceRoot": [],
+    "getOptionsForTarget": [
+      "target"
+    ],
+    "getProjectMetadata": [
+      "target"
+    ],
+    "loadBuilder": [
+      "info"
+    ]
+  }
+}

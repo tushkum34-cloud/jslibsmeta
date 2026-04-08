@@ -1,0 +1,621 @@
+{
+  "TreeFragment": {
+    "constructor": [
+      "from",
+      "to",
+      "tree",
+      "offset",
+      "param",
+      "param"
+    ],
+    "openStart": [],
+    "openEnd": [],
+    "addTree": [
+      "tree",
+      "param",
+      "param"
+    ],
+    "applyChanges": [
+      "fragments",
+      "changes",
+      "param"
+    ]
+  },
+  "Parser": {
+    "startParse": [
+      "input",
+      "fragments",
+      "ranges"
+    ],
+    "parse": [
+      "input",
+      "fragments",
+      "ranges"
+    ]
+  },
+  "NodeProp": {
+    "constructor": [
+      "param"
+    ],
+    "add": [
+      "match"
+    ]
+  },
+  "MountedTree": {
+    "constructor": [
+      "tree",
+      "overlay",
+      "parser",
+      "param"
+    ],
+    "get": [
+      "tree"
+    ]
+  },
+  "NodeType": {
+    "constructor": [
+      "name",
+      "props",
+      "id",
+      "param"
+    ],
+    "define": [
+      "spec"
+    ],
+    "prop": [
+      "prop"
+    ],
+    "isTop": [],
+    "isSkipped": [],
+    "isError": [],
+    "isAnonymous": [],
+    "is": [
+      "name"
+    ],
+    "match": [
+      "map"
+    ]
+  },
+  "NodeSet": {
+    "constructor": [
+      "types"
+    ],
+    "extend": [
+      "param"
+    ]
+  },
+  "Tree": {
+    "constructor": [
+      "type",
+      "children",
+      "positions",
+      "length",
+      "props"
+    ],
+    "toString": [],
+    "cursor": [
+      "param"
+    ],
+    "cursorAt": [
+      "pos",
+      "param",
+      "param"
+    ],
+    "topNode": [],
+    "resolve": [
+      "pos",
+      "param"
+    ],
+    "resolveInner": [
+      "pos",
+      "param"
+    ],
+    "resolveStack": [
+      "pos",
+      "param"
+    ],
+    "iterate": [
+      "spec"
+    ],
+    "prop": [
+      "prop"
+    ],
+    "propValues": [],
+    "balance": [
+      "param"
+    ],
+    "build": [
+      "data"
+    ]
+  },
+  "TreeBuffer": {
+    "constructor": [
+      "buffer",
+      "length",
+      "set"
+    ],
+    "type": [],
+    "toString": [],
+    "childString": [
+      "index"
+    ],
+    "findChild": [
+      "startIndex",
+      "endIndex",
+      "dir",
+      "pos",
+      "side"
+    ],
+    "slice": [
+      "startI",
+      "endI",
+      "from"
+    ]
+  },
+  "TreeCursor": {
+    "name": [],
+    "constructor": [
+      "node",
+      "param"
+    ],
+    "yieldNode": [
+      "node"
+    ],
+    "yieldBuf": [
+      "index",
+      "type"
+    ],
+    "yield": [
+      "node"
+    ],
+    "toString": [],
+    "enterChild": [
+      "dir",
+      "pos",
+      "side"
+    ],
+    "firstChild": [],
+    "lastChild": [],
+    "childAfter": [
+      "pos"
+    ],
+    "childBefore": [
+      "pos"
+    ],
+    "enter": [
+      "pos",
+      "side",
+      "param"
+    ],
+    "parent": [],
+    "sibling": [
+      "dir"
+    ],
+    "nextSibling": [],
+    "prevSibling": [],
+    "atLastNode": [
+      "dir"
+    ],
+    "move": [
+      "dir",
+      "enter"
+    ],
+    "next": [
+      "param"
+    ],
+    "prev": [
+      "param"
+    ],
+    "moveTo": [
+      "pos",
+      "param"
+    ],
+    "node": [],
+    "tree": [],
+    "iterate": [
+      "enter",
+      "leave"
+    ],
+    "matchContext": [
+      "context"
+    ]
+  },
+  "NodeWeakMap": {
+    "constructor": [],
+    "setBuffer": [
+      "buffer",
+      "index",
+      "value"
+    ],
+    "getBuffer": [
+      "buffer",
+      "index"
+    ],
+    "set": [
+      "node",
+      "value"
+    ],
+    "get": [
+      "node"
+    ],
+    "cursorSet": [
+      "cursor",
+      "value"
+    ],
+    "cursorGet": [
+      "cursor"
+    ]
+  },
+  "Range": {
+    "constructor": [
+      "from",
+      "to"
+    ]
+  },
+  "FlatBufferCursor": {
+    "constructor": [
+      "buffer",
+      "index"
+    ],
+    "id": [],
+    "start": [],
+    "end": [],
+    "size": [],
+    "pos": [],
+    "next": [],
+    "fork": []
+  },
+  "checkSide": [
+    "side",
+    "pos",
+    "from",
+    "to"
+  ],
+  "resolveNode": [
+    "node",
+    "pos",
+    "side",
+    "overlays"
+  ],
+  "BaseNode": {
+    "cursor": [
+      "param"
+    ],
+    "getChild": [
+      "type",
+      "param",
+      "param"
+    ],
+    "getChildren": [
+      "type",
+      "param",
+      "param"
+    ],
+    "resolve": [
+      "pos",
+      "param"
+    ],
+    "resolveInner": [
+      "pos",
+      "param"
+    ],
+    "matchContext": [
+      "context"
+    ],
+    "enterUnfinishedNodesBefore": [
+      "pos"
+    ],
+    "node": [],
+    "next": []
+  },
+  "TreeNode": {
+    "constructor": [
+      "_tree",
+      "from",
+      "index",
+      "_parent"
+    ],
+    "type": [],
+    "name": [],
+    "to": [],
+    "nextChild": [
+      "i",
+      "dir",
+      "pos",
+      "side",
+      "param"
+    ],
+    "firstChild": [],
+    "lastChild": [],
+    "childAfter": [
+      "pos"
+    ],
+    "childBefore": [
+      "pos"
+    ],
+    "prop": [
+      "prop"
+    ],
+    "enter": [
+      "pos",
+      "side",
+      "param"
+    ],
+    "nextSignificantParent": [],
+    "parent": [],
+    "nextSibling": [],
+    "prevSibling": [],
+    "tree": [],
+    "toTree": [],
+    "toString": []
+  },
+  "getChildren": [
+    "node",
+    "type",
+    "before",
+    "after"
+  ],
+  "matchNodeContext": [
+    "node",
+    "context",
+    "param"
+  ],
+  "BufferContext": {
+    "constructor": [
+      "parent",
+      "buffer",
+      "index",
+      "start"
+    ]
+  },
+  "BufferNode": {
+    "name": [],
+    "from": [],
+    "to": [],
+    "constructor": [
+      "context",
+      "_parent",
+      "index"
+    ],
+    "child": [
+      "dir",
+      "pos",
+      "side"
+    ],
+    "firstChild": [],
+    "lastChild": [],
+    "childAfter": [
+      "pos"
+    ],
+    "childBefore": [
+      "pos"
+    ],
+    "prop": [
+      "prop"
+    ],
+    "enter": [
+      "pos",
+      "side",
+      "param"
+    ],
+    "parent": [],
+    "externalSibling": [
+      "dir"
+    ],
+    "nextSibling": [],
+    "prevSibling": [],
+    "tree": [],
+    "toTree": [],
+    "toString": []
+  },
+  "iterStack": [
+    "heads"
+  ],
+  "StackIterator": {
+    "constructor": [
+      "heads",
+      "node"
+    ],
+    "next": []
+  },
+  "stackIterator": [
+    "tree",
+    "pos",
+    "side"
+  ],
+  "hasChild": [
+    "tree"
+  ],
+  "buildTree": [
+    "data"
+  ],
+  "takeNode": [
+    "parentStart",
+    "minPos",
+    "children",
+    "positions",
+    "inRepeat",
+    "depth"
+  ],
+  "takeFlatNode": [
+    "parentStart",
+    "minPos",
+    "children",
+    "positions"
+  ],
+  "makeBalanced": [
+    "type",
+    "contextHash"
+  ],
+  "makeRepeatLeaf": [
+    "children",
+    "positions",
+    "base",
+    "i",
+    "from",
+    "to",
+    "type",
+    "lookAhead",
+    "contextHash"
+  ],
+  "makeTree": [
+    "type",
+    "children",
+    "positions",
+    "length",
+    "lookAhead",
+    "contextHash",
+    "props"
+  ],
+  "findBufferSize": [
+    "maxSize",
+    "inRepeat"
+  ],
+  "copyToBuffer": [
+    "bufferStart",
+    "buffer",
+    "index"
+  ],
+  "nodeSize": [
+    "balanceType",
+    "node"
+  ],
+  "balanceRange": [
+    "balanceType",
+    "children",
+    "positions",
+    "from",
+    "to",
+    "start",
+    "length",
+    "mkTop",
+    "mkTree"
+  ],
+  "divide": [
+    "children",
+    "positions",
+    "from",
+    "to",
+    "offset"
+  ],
+  "StringInput": {
+    "constructor": [
+      "string"
+    ],
+    "length": [],
+    "chunk": [
+      "from"
+    ],
+    "lineChunks": [],
+    "read": [
+      "from",
+      "to"
+    ]
+  },
+  "parseMixed": [
+    "nest"
+  ],
+  "InnerParse": {
+    "constructor": [
+      "parser",
+      "parse",
+      "overlay",
+      "bracketed",
+      "target",
+      "from"
+    ]
+  },
+  "checkRanges": [
+    "ranges"
+  ],
+  "ActiveOverlay": {
+    "constructor": [
+      "parser",
+      "predicate",
+      "mounts",
+      "index",
+      "start",
+      "bracketed",
+      "target",
+      "prev"
+    ]
+  },
+  "MixedParse": {
+    "constructor": [
+      "base",
+      "nest",
+      "input",
+      "fragments",
+      "ranges"
+    ],
+    "advance": [],
+    "parsedPos": [],
+    "stopAt": [
+      "pos"
+    ],
+    "startInner": []
+  },
+  "checkCover": [
+    "covered",
+    "from",
+    "to"
+  ],
+  "sliceBuf": [
+    "buf",
+    "startI",
+    "endI",
+    "nodes",
+    "positions",
+    "off"
+  ],
+  "materialize": [
+    "cursor"
+  ],
+  "split": [
+    "startI",
+    "endI",
+    "type",
+    "innerOffset",
+    "length",
+    "stackPos"
+  ],
+  "StructureCursor": {
+    "constructor": [
+      "root",
+      "offset"
+    ],
+    "moveTo": [
+      "pos"
+    ],
+    "hasNode": [
+      "cursor"
+    ]
+  },
+  "FragmentCursor": {
+    "constructor": [
+      "fragments"
+    ],
+    "hasNode": [
+      "node"
+    ],
+    "nextFrag": [],
+    "findMounts": [
+      "pos",
+      "parser"
+    ]
+  },
+  "punchRanges": [
+    "outer",
+    "ranges"
+  ],
+  "findCoverChanges": [
+    "a",
+    "b",
+    "from",
+    "to"
+  ],
+  "enterFragments": [
+    "mounts",
+    "ranges"
+  ]
+}
