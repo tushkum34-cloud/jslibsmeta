@@ -1,0 +1,416 @@
+{
+  "Client": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "close": [],
+    "closed": [],
+    "connect": [
+      "param",
+      "param"
+    ],
+    "connectImplicitTLS": [
+      "param",
+      "param",
+      "param"
+    ],
+    "_handleConnectResponse": [],
+    "send": [
+      "command",
+      "param"
+    ],
+    "sendIgnoringError": [
+      "command"
+    ],
+    "useTLS": [
+      "param",
+      "param"
+    ],
+    "login": [
+      "param",
+      "param"
+    ],
+    "useDefaultSettings": [],
+    "access": [
+      "param"
+    ],
+    "pwd": [],
+    "features": [],
+    "cd": [
+      "path"
+    ],
+    "cdup": [],
+    "lastMod": [
+      "path"
+    ],
+    "size": [
+      "path"
+    ],
+    "rename": [
+      "srcPath",
+      "destPath"
+    ],
+    "remove": [
+      "path",
+      "param"
+    ],
+    "trackProgress": [
+      "handler"
+    ],
+    "uploadFrom": [
+      "source",
+      "toRemotePath",
+      "param"
+    ],
+    "appendFrom": [
+      "source",
+      "toRemotePath",
+      "param"
+    ],
+    "_uploadWithCommand": [
+      "source",
+      "remotePath",
+      "command",
+      "options"
+    ],
+    "_uploadLocalFile": [
+      "localPath",
+      "remotePath",
+      "command",
+      "options"
+    ],
+    "_uploadFromStream": [
+      "source",
+      "remotePath",
+      "command"
+    ],
+    "downloadTo": [
+      "destination",
+      "fromRemotePath",
+      "param"
+    ],
+    "_downloadToFile": [
+      "localPath",
+      "remotePath",
+      "startAt"
+    ],
+    "_downloadToStream": [
+      "destination",
+      "remotePath",
+      "startAt"
+    ],
+    "list": [
+      "param"
+    ],
+    "_requestListWithCommand": [
+      "command"
+    ],
+    "removeDir": [
+      "remoteDirPath"
+    ],
+    "clearWorkingDir": [],
+    "uploadFromDir": [
+      "localDirPath",
+      "remoteDirPath"
+    ],
+    "_uploadToWorkingDir": [
+      "localDirPath"
+    ],
+    "downloadToDir": [
+      "localDirPath",
+      "remoteDirPath"
+    ],
+    "_downloadFromWorkingDir": [
+      "localDirPath"
+    ],
+    "ensureDir": [
+      "remoteDirPath"
+    ],
+    "_openDir": [
+      "dirName"
+    ],
+    "removeEmptyDir": [
+      "path"
+    ],
+    "protectWhitespace": [
+      "path"
+    ],
+    "_exitAtCurrentDirectory": [
+      "func"
+    ],
+    "_enterFirstCompatibleMode": [
+      "strategies"
+    ],
+    "upload": [
+      "source",
+      "toRemotePath",
+      "param"
+    ],
+    "append": [
+      "source",
+      "toRemotePath",
+      "param"
+    ],
+    "download": [
+      "destination",
+      "fromRemotePath",
+      "param"
+    ],
+    "uploadDir": [
+      "localDirPath",
+      "remoteDirPath"
+    ],
+    "downloadDir": [
+      "localDirPath"
+    ]
+  },
+  "LIST_COMMANDS_DEFAULT": [],
+  "LIST_COMMANDS_MLSD": [],
+  "onError": [
+    "err"
+  ],
+  "ensureLocalDirectory": [
+    "path"
+  ],
+  "ignoreError": [
+    "func"
+  ],
+  "FileInfo": {
+    "constructor": [
+      "name"
+    ],
+    "isDirectory": [],
+    "isSymbolicLink": [],
+    "isFile": [],
+    "date": [
+      "rawModifiedAt"
+    ]
+  },
+  "FTPError": {
+    "constructor": [
+      "res"
+    ]
+  },
+  "FTPContext": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "close": [],
+    "closeWithError": [
+      "err"
+    ],
+    "closed": [],
+    "reset": [],
+    "socket": [
+      "socket"
+    ],
+    "dataSocket": [
+      "socket"
+    ],
+    "encoding": [
+      "encoding"
+    ],
+    "send": [
+      "command"
+    ],
+    "request": [
+      "command"
+    ],
+    "handle": [
+      "command",
+      "responseHandler"
+    ],
+    "log": [
+      "message"
+    ],
+    "hasTLS": [],
+    "_stopTrackingTask": [],
+    "_onControlSocketData": [
+      "chunk"
+    ],
+    "_passToHandler": [
+      "response"
+    ],
+    "_setupDefaultErrorHandlers": [
+      "socket",
+      "identifier"
+    ],
+    "_closeControlSocket": [],
+    "_closeSocket": [
+      "socket"
+    ],
+    "_removeSocketListeners": [
+      "socket"
+    ],
+    "_newSocket": []
+  },
+  "doNothing": [],
+  "ProgressTracker": {
+    "constructor": [],
+    "reportTo": [
+      "param"
+    ],
+    "start": [
+      "socket",
+      "name",
+      "type"
+    ],
+    "stop": [],
+    "updateAndStop": []
+  },
+  "poll": [
+    "intervalMs",
+    "updateFunc"
+  ],
+  "stopFunc": [
+    "stopWithUpdate"
+  ],
+  "noop": [],
+  "StringWriter": {
+    "constructor": [],
+    "_write": [
+      "chunk",
+      "_",
+      "callback"
+    ],
+    "getText": [
+      "encoding"
+    ]
+  },
+  "describeTLS": [
+    "socket"
+  ],
+  "describeAddress": [
+    "socket"
+  ],
+  "upgradeSocket": [
+    "socket",
+    "options"
+  ],
+  "ipIsPrivateV4Address": [
+    "param"
+  ],
+  "parseControlResponse": [
+    "text"
+  ],
+  "isSingleLine": [
+    "line"
+  ],
+  "isMultiline": [
+    "line"
+  ],
+  "positiveCompletion": [
+    "code"
+  ],
+  "positiveIntermediate": [
+    "code"
+  ],
+  "isNotBlank": [
+    "str"
+  ],
+  "ownKeys": [
+    "o"
+  ],
+  "firstCompatibleParser": [
+    "line",
+    "parsers"
+  ],
+  "isNotMeta": [
+    "str"
+  ],
+  "parseList": [
+    "rawList"
+  ],
+  "testLine": [
+    "line"
+  ],
+  "parseLine": [
+    "line"
+  ],
+  "transformList": [
+    "files"
+  ],
+  "parseSize": [
+    "value",
+    "info"
+  ],
+  "splitStringOnce": [
+    "str",
+    "delimiter"
+  ],
+  "parseMLSxDate": [
+    "fact"
+  ],
+  "parseMode": [
+    "r",
+    "w",
+    "x"
+  ],
+  "enterPassiveModeIPv6": [
+    "ftp"
+  ],
+  "parseEpsvResponse": [
+    "message"
+  ],
+  "enterPassiveModeIPv4": [
+    "ftp"
+  ],
+  "enterPassiveModeIPv4_forceControlHostIP": [
+    "ftp"
+  ],
+  "parsePasvResponse": [
+    "message"
+  ],
+  "connectForPassiveTransfer": [
+    "host",
+    "port",
+    "ftp"
+  ],
+  "handleConnErr": [
+    "err"
+  ],
+  "handleTimeout": [],
+  "TransferResolver": {
+    "constructor": [
+      "ftp",
+      "progress"
+    ],
+    "onDataStart": [
+      "name",
+      "type"
+    ],
+    "onDataDone": [
+      "task"
+    ],
+    "onControlDone": [
+      "task",
+      "response"
+    ],
+    "onError": [
+      "task",
+      "err"
+    ],
+    "onUnexpectedRequest": [
+      "response"
+    ],
+    "tryResolve": [
+      "task"
+    ]
+  },
+  "uploadFrom": [
+    "source",
+    "config"
+  ],
+  "downloadTo": [
+    "destination",
+    "config"
+  ],
+  "onConditionOrEvent": [
+    "condition",
+    "emitter",
+    "eventName",
+    "action"
+  ]
+}
