@@ -227,3 +227,6 @@ Designed for scalable developer tooling
 <p align="center">
   Built for scalable JavaScript developer infrastructure.
 </p>
+<p align="center">
+Donate: UQDZc4_R6v2PzTDCEfHAfgBeeP1VcoQaNH49YI2ayqWfyz4m (Toncoin)
+</p>
