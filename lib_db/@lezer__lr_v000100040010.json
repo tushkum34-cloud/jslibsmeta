@@ -1,0 +1,391 @@
+{
+  "Stack": {
+    "constructor": [
+      "p",
+      "stack",
+      "state",
+      "reducePos",
+      "pos",
+      "score",
+      "buffer",
+      "bufferBase",
+      "curContext",
+      "param",
+      "parent"
+    ],
+    "toString": [],
+    "start": [
+      "p",
+      "state",
+      "param"
+    ],
+    "context": [],
+    "pushState": [
+      "state",
+      "start"
+    ],
+    "reduce": [
+      "action"
+    ],
+    "storeNode": [
+      "term",
+      "start",
+      "end",
+      "param",
+      "param"
+    ],
+    "shift": [
+      "action",
+      "type",
+      "start",
+      "end"
+    ],
+    "apply": [
+      "action",
+      "next",
+      "nextStart",
+      "nextEnd"
+    ],
+    "useNode": [
+      "value",
+      "next"
+    ],
+    "split": [],
+    "recoverByDelete": [
+      "next",
+      "nextEnd"
+    ],
+    "canShift": [
+      "term"
+    ],
+    "recoverByInsert": [
+      "next"
+    ],
+    "forceReduce": [],
+    "findForcedReduction": [],
+    "forceAll": [],
+    "deadEnd": [],
+    "restart": [],
+    "sameState": [
+      "other"
+    ],
+    "parser": [],
+    "dialectEnabled": [
+      "dialectID"
+    ],
+    "shiftContext": [
+      "term",
+      "start"
+    ],
+    "reduceContext": [
+      "term",
+      "start"
+    ],
+    "emitContext": [],
+    "emitLookAhead": [],
+    "updateContext": [
+      "context"
+    ],
+    "setLookAhead": [
+      "lookAhead"
+    ],
+    "close": []
+  },
+  "InputStream": {
+    "constructor": [
+      "input",
+      "ranges"
+    ],
+    "resolveOffset": [
+      "offset",
+      "assoc"
+    ],
+    "clipPos": [
+      "pos"
+    ],
+    "peek": [
+      "offset"
+    ],
+    "acceptToken": [
+      "token",
+      "param"
+    ],
+    "acceptTokenTo": [
+      "token",
+      "endPos"
+    ],
+    "getChunk": [],
+    "readNext": [],
+    "advance": [
+      "param"
+    ],
+    "setDone": [],
+    "reset": [
+      "pos",
+      "token"
+    ],
+    "read": [
+      "from",
+      "to"
+    ]
+  },
+  "LocalTokenGroup": {
+    "constructor": [
+      "data",
+      "precTable",
+      "elseToken"
+    ],
+    "token": [
+      "input",
+      "stack"
+    ]
+  },
+  "ExternalTokenizer": {
+    "constructor": [
+      "token",
+      "param"
+    ]
+  },
+  "ContextTracker": {
+    "constructor": [
+      "spec"
+    ]
+  },
+  "LRParser": {
+    "constructor": [
+      "spec"
+    ],
+    "createParse": [
+      "input",
+      "fragments",
+      "ranges"
+    ],
+    "getGoto": [
+      "state",
+      "term",
+      "param"
+    ],
+    "hasAction": [
+      "state",
+      "terminal"
+    ],
+    "stateSlot": [
+      "state",
+      "slot"
+    ],
+    "stateFlag": [
+      "state",
+      "flag"
+    ],
+    "validAction": [
+      "state",
+      "action"
+    ],
+    "allActions": [
+      "state",
+      "action"
+    ],
+    "nextStates": [
+      "state"
+    ],
+    "configure": [
+      "config"
+    ],
+    "hasWrappers": [],
+    "getName": [
+      "term"
+    ],
+    "eofTerm": [],
+    "topNode": [],
+    "dynamicPrecedence": [
+      "term"
+    ],
+    "parseDialect": [
+      "dialect"
+    ],
+    "deserialize": [
+      "spec"
+    ]
+  },
+  "explore": [
+    "state",
+    "depth"
+  ],
+  "StackContext": {
+    "constructor": [
+      "tracker",
+      "context"
+    ]
+  },
+  "SimulatedStack": {
+    "constructor": [
+      "start"
+    ],
+    "reduce": [
+      "action"
+    ]
+  },
+  "StackBufferCursor": {
+    "constructor": [
+      "stack",
+      "pos",
+      "index"
+    ],
+    "create": [
+      "stack",
+      "param"
+    ],
+    "maybeNext": [],
+    "id": [],
+    "start": [],
+    "end": [],
+    "size": [],
+    "next": [],
+    "fork": []
+  },
+  "decodeArray": [
+    "input",
+    "param"
+  ],
+  "CachedToken": {
+    "constructor": []
+  },
+  "TokenGroup": {
+    "constructor": [
+      "data",
+      "id"
+    ],
+    "token": [
+      "input",
+      "stack"
+    ]
+  },
+  "readToken": [
+    "data",
+    "input",
+    "stack",
+    "group",
+    "precTable",
+    "precOffset"
+  ],
+  "findOffset": [
+    "data",
+    "start",
+    "term"
+  ],
+  "overrides": [
+    "token",
+    "prev",
+    "tableData",
+    "tableOffset"
+  ],
+  "cutAt": [
+    "tree",
+    "pos",
+    "side"
+  ],
+  "FragmentCursor": {
+    "constructor": [
+      "fragments",
+      "nodeSet"
+    ],
+    "nextFragment": [],
+    "nodeAt": [
+      "pos"
+    ]
+  },
+  "TokenCache": {
+    "constructor": [
+      "parser",
+      "stream"
+    ],
+    "getActions": [
+      "stack"
+    ],
+    "getMainToken": [
+      "stack"
+    ],
+    "updateCachedToken": [
+      "token",
+      "tokenizer",
+      "stack"
+    ],
+    "putAction": [
+      "action",
+      "token",
+      "end",
+      "index"
+    ],
+    "addActions": [
+      "stack",
+      "token",
+      "end",
+      "index"
+    ]
+  },
+  "Parse": {
+    "constructor": [
+      "parser",
+      "input",
+      "fragments",
+      "ranges"
+    ],
+    "parsedPos": [],
+    "advance": [],
+    "stopAt": [
+      "pos"
+    ],
+    "advanceStack": [
+      "stack",
+      "stacks",
+      "split"
+    ],
+    "advanceFully": [
+      "stack",
+      "newStacks"
+    ],
+    "runRecovery": [
+      "stacks",
+      "tokens",
+      "newStacks"
+    ],
+    "stackToTree": [
+      "stack"
+    ],
+    "stackID": [
+      "stack"
+    ]
+  },
+  "pushStackDedup": [
+    "stack",
+    "newStacks"
+  ],
+  "Dialect": {
+    "constructor": [
+      "source",
+      "flags",
+      "disabled"
+    ],
+    "allows": [
+      "term"
+    ]
+  },
+  "id": [
+    "x"
+  ],
+  "setProp": [
+    "nodeID",
+    "prop",
+    "value"
+  ],
+  "pair": [
+    "data",
+    "off"
+  ],
+  "findFinished": [
+    "stacks"
+  ],
+  "getSpecializer": [
+    "spec"
+  ]
+}
