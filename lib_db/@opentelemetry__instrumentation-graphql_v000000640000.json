@@ -1,0 +1,174 @@
+{
+  "GraphQLInstrumentation": {
+    "constructor": [
+      "param"
+    ],
+    "setConfig": [
+      "param"
+    ],
+    "init": [],
+    "_addPatchingExecute": [],
+    "_addPatchingParser": [],
+    "_addPatchingValidate": [],
+    "_patchExecute": [
+      "defaultFieldResolved"
+    ],
+    "_handleExecutionResult": [
+      "span",
+      "err",
+      "result"
+    ],
+    "_executeResponseHook": [
+      "span",
+      "result"
+    ],
+    "_patchParse": [],
+    "_patchValidate": [],
+    "_parse": [
+      "obj",
+      "original",
+      "source",
+      "options"
+    ],
+    "_validate": [
+      "obj",
+      "original",
+      "schema",
+      "documentAST",
+      "rules",
+      "typeInfo",
+      "options"
+    ],
+    "_createExecuteSpan": [
+      "operation",
+      "processedArgs"
+    ],
+    "_wrapExecuteArgs": [
+      "schema",
+      "document",
+      "rootValue",
+      "contextValue",
+      "variableValues",
+      "operationName",
+      "fieldResolver",
+      "typeResolver",
+      "defaultFieldResolved"
+    ]
+  },
+  "isPromise": [
+    "value"
+  ],
+  "isObjectLike": [
+    "value"
+  ],
+  "addInputVariableAttribute": [
+    "span",
+    "key",
+    "variable"
+  ],
+  "addInputVariableAttributes": [
+    "span",
+    "variableValues"
+  ],
+  "addSpanSource": [
+    "span",
+    "loc",
+    "allowValues",
+    "start",
+    "end"
+  ],
+  "createFieldIfNotExists": [
+    "tracer",
+    "getConfig",
+    "contextValue",
+    "info",
+    "path"
+  ],
+  "createResolverSpan": [
+    "tracer",
+    "getConfig",
+    "contextValue",
+    "info",
+    "path",
+    "parentSpan"
+  ],
+  "endSpan": [
+    "span",
+    "error"
+  ],
+  "getOperation": [
+    "document",
+    "operationName"
+  ],
+  "addField": [
+    "contextValue",
+    "path",
+    "field"
+  ],
+  "getField": [
+    "contextValue",
+    "path"
+  ],
+  "getParentFieldSpan": [
+    "contextValue",
+    "path"
+  ],
+  "getRootSpan": [
+    "contextValue"
+  ],
+  "pathToArray": [
+    "mergeItems",
+    "path"
+  ],
+  "repeatBreak": [
+    "i"
+  ],
+  "repeatSpace": [
+    "i"
+  ],
+  "repeatChar": [
+    "char",
+    "to"
+  ],
+  "getSourceFromLocation": [
+    "loc",
+    "param",
+    "inputStart",
+    "inputEnd"
+  ],
+  "wrapFields": [
+    "type",
+    "tracer",
+    "getConfig"
+  ],
+  "unwrapType": [
+    "type"
+  ],
+  "isGraphQLUnionType": [
+    "type"
+  ],
+  "isGraphQLObjectType": [
+    "type"
+  ],
+  "handleResolveSpanError": [
+    "resolveSpan",
+    "err",
+    "shouldEndSpan"
+  ],
+  "handleResolveSpanSuccess": [
+    "resolveSpan",
+    "shouldEndSpan"
+  ],
+  "wrapFieldResolver": [
+    "tracer",
+    "getConfig",
+    "fieldResolver",
+    "param"
+  ],
+  "wrappedFieldResolver": [
+    "source",
+    "args",
+    "contextValue",
+    "info"
+  ]
+}
