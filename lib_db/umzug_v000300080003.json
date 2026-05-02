@@ -1,0 +1,192 @@
+{
+  "UpAction": {
+    "constructor": [
+      "umzug"
+    ],
+    "_defineParameters": [
+      "action"
+    ],
+    "onDefineParameters": [],
+    "onExecute": []
+  },
+  "DownAction": {
+    "constructor": [
+      "umzug"
+    ],
+    "_defineParameters": [
+      "action"
+    ],
+    "onDefineParameters": [],
+    "onExecute": []
+  },
+  "ListAction": {
+    "constructor": [
+      "action",
+      "umzug"
+    ],
+    "_defineParameters": [
+      "action"
+    ],
+    "onDefineParameters": [],
+    "onExecute": []
+  },
+  "CreateAction": {
+    "constructor": [
+      "umzug"
+    ],
+    "_defineParameters": [
+      "action"
+    ],
+    "onDefineParameters": [],
+    "onExecute": []
+  },
+  "UmzugCLI": {
+    "constructor": [
+      "umzug",
+      "param"
+    ],
+    "onDefineParameters": []
+  },
+  "FileLocker": {
+    "constructor": [
+      "params"
+    ],
+    "attach": [
+      "umzug",
+      "params"
+    ],
+    "attachTo": [
+      "umzug"
+    ],
+    "readFile": [
+      "filepath"
+    ],
+    "writeFile": [
+      "filepath",
+      "content"
+    ],
+    "removeFile": [
+      "filepath"
+    ],
+    "getLock": [],
+    "releaseLock": []
+  },
+  "isUmzugStorage": [
+    "arg"
+  ],
+  "verifyUmzugStorage": [
+    "arg"
+  ],
+  "JSONStorage": {
+    "constructor": [
+      "options"
+    ],
+    "logMigration": [
+      "param"
+    ],
+    "unlogMigration": [
+      "param"
+    ],
+    "executed": []
+  },
+  "memoryStorage": [],
+  "MongoDBStorage": {
+    "constructor": [
+      "options"
+    ],
+    "logMigration": [
+      "param"
+    ],
+    "unlogMigration": [
+      "param"
+    ],
+    "executed": []
+  },
+  "isMongoDBCollectionOptions": [
+    "arg"
+  ],
+  "SequelizeStorage": {
+    "constructor": [
+      "options"
+    ],
+    "getModel": [],
+    "syncModel": [],
+    "logMigration": [
+      "param"
+    ],
+    "unlogMigration": [
+      "param"
+    ],
+    "executed": [],
+    "_model": []
+  },
+  "MigrationError": {
+    "constructor": [
+      "migration",
+      "original"
+    ],
+    "info": [],
+    "errorString": [
+      "cause"
+    ]
+  },
+  "Umzug": {
+    "constructor": [
+      "options"
+    ],
+    "logging": [
+      "message"
+    ],
+    "getCli": [
+      "options"
+    ],
+    "runAsCLI": [
+      "argv"
+    ],
+    "executed": [],
+    "_executed": [
+      "context"
+    ],
+    "pending": [],
+    "_pending": [
+      "context"
+    ],
+    "runCommand": [
+      "command",
+      "cb"
+    ],
+    "up": [
+      "param"
+    ],
+    "down": [
+      "param"
+    ],
+    "create": [
+      "options"
+    ],
+    "defaultCreationTemplate": [
+      "filepath"
+    ],
+    "findNameIndex": [
+      "migrations",
+      "name"
+    ],
+    "findMigrations": [
+      "migrations",
+      "names"
+    ],
+    "getContext": [],
+    "getMigrationsResolver": [
+      "inputMigrations"
+    ]
+  },
+  "eligibleMigrations": [
+    "context"
+  ],
+  "getModule": [],
+  "MissingResolverError": {
+    "constructor": [
+      "filepath"
+    ]
+  }
+}
