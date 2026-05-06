@@ -1,0 +1,843 @@
+{
+  "ApolloServer": {
+    "internals": [],
+    "cache": [],
+    "logger": [],
+    "constructor": [
+      "config"
+    ],
+    "warnAgainstDeprecatedConfigOptions": [
+      "config"
+    ],
+    "start": [],
+    "startInBackgroundHandlingStartupErrorsByLoggingAndFailingAllRequests": [],
+    "_start": [
+      "startedInBackground"
+    ],
+    "maybeRegisterTerminationSignalHandlers": [
+      "signals",
+      "startedInBackground"
+    ],
+    "_ensureStarted": [],
+    "assertStarted": [
+      "expressionForError"
+    ],
+    "logStartupError": [
+      "err"
+    ],
+    "constructSchema": [
+      "config"
+    ],
+    "generateSchemaDerivedData": [
+      "schema",
+      "providedDocumentStore"
+    ],
+    "stop": [],
+    "addDefaultPlugins": [],
+    "addPlugin": [
+      "plugin"
+    ],
+    "executeHTTPGraphQLRequest": [
+      "param"
+    ],
+    "errorResponse": [
+      "error",
+      "requestHead"
+    ],
+    "prefersHTML": [
+      "request"
+    ],
+    "executeOperation": [
+      "request",
+      "param"
+    ]
+  },
+  "ownKeys": [
+    "o"
+  ],
+  "defaultLogger": [],
+  "signalHandler": [
+    "signal"
+  ],
+  "alreadyHavePluginWithInternalId": [
+    "id"
+  ],
+  "internalExecuteOperation": [
+    "param",
+    "options"
+  ],
+  "isImplicitlyInstallablePlugin": [
+    "p"
+  ],
+  "chooseContentTypeForSingleResultResponse": [
+    "head"
+  ],
+  "cloneObject": [
+    "object"
+  ],
+  "newCachePolicy": [],
+  "determineApolloConfig": [
+    "input",
+    "logger"
+  ],
+  "assertValidHeaderValue": [
+    "value"
+  ],
+  "normalizeAndFormatErrors": [
+    "errors",
+    "param"
+  ],
+  "enrichError": [
+    "maybeError"
+  ],
+  "ensureError": [
+    "maybeError"
+  ],
+  "ensureGraphQLError": [
+    "maybeError",
+    "param"
+  ],
+  "isPartialHTTPGraphQLHead": [
+    "x"
+  ],
+  "unwrapResolverError": [
+    "error"
+  ],
+  "runBatchedHttpQuery": [
+    "param"
+  ],
+  "runPotentiallyBatchedHttpQuery": [
+    "server",
+    "httpGraphQLRequest",
+    "contextValue",
+    "schemaDerivedData",
+    "internals"
+  ],
+  "tryToLoadGraphQL17": [],
+  "executeIncrementally": [
+    "param"
+  ],
+  "GraphQLErrorWithCode": {
+    "constructor": [
+      "message",
+      "code",
+      "options"
+    ]
+  },
+  "SyntaxError": {
+    "constructor": [
+      "graphqlError"
+    ]
+  },
+  "ValidationError": {
+    "constructor": [
+      "graphqlError"
+    ]
+  },
+  "PersistedQueryNotFoundError": {
+    "constructor": []
+  },
+  "PersistedQueryNotSupportedError": {
+    "constructor": []
+  },
+  "UserInputError": {
+    "constructor": [
+      "graphqlError"
+    ]
+  },
+  "OperationResolutionError": {
+    "constructor": [
+      "graphqlError"
+    ]
+  },
+  "BadRequestError": {
+    "constructor": [
+      "message",
+      "options"
+    ]
+  },
+  "getPersistedQueryErrorHttp": [],
+  "internalPlugin": [
+    "p"
+  ],
+  "pluginIsInternal": [
+    "plugin"
+  ],
+  "ApolloServerPluginCacheControl": [
+    "param"
+  ],
+  "memoizedCacheAnnotationFromType": [
+    "t"
+  ],
+  "memoizedCacheAnnotationFromField": [
+    "field"
+  ],
+  "parseExistingCacheControlHeader": [
+    "header"
+  ],
+  "cacheAnnotationFromDirectives": [
+    "directives"
+  ],
+  "cacheAnnotationFromType": [
+    "t"
+  ],
+  "cacheAnnotationFromField": [
+    "field"
+  ],
+  "isRestricted": [
+    "hint"
+  ],
+  "ApolloServerPluginDisableSuggestions": [],
+  "disabledPlugin": [
+    "id"
+  ],
+  "ApolloServerPluginCacheControlDisabled": [],
+  "ApolloServerPluginInlineTraceDisabled": [],
+  "ApolloServerPluginLandingPageDisabled": [],
+  "ApolloServerPluginSchemaReportingDisabled": [],
+  "ApolloServerPluginUsageReportingDisabled": [],
+  "ApolloServerPluginDrainHttpServer": [
+    "options"
+  ],
+  "Stopper": {
+    "requestCountPerSocket": [],
+    "stopped": [],
+    "constructor": [
+      "param"
+    ],
+    "stop": [
+      "hardDestroyAbortSignal"
+    ]
+  },
+  "onAbort": [],
+  "ApolloServerPluginInlineTrace": [
+    "param"
+  ],
+  "getConfigStringForHtml": [
+    "config"
+  ],
+  "getEmbeddedExplorerHTML": [
+    "explorerCdnVersion",
+    "config",
+    "apolloServerVersion",
+    "nonce"
+  ],
+  "getEmbeddedSandboxHTML": [
+    "sandboxCdnVersion",
+    "config",
+    "apolloServerVersion",
+    "nonce"
+  ],
+  "ApolloServerPluginLandingPageLocalDefault": [
+    "param"
+  ],
+  "ApolloServerPluginLandingPageProductionDefault": [
+    "param"
+  ],
+  "encodeConfig": [
+    "config"
+  ],
+  "getNonEmbeddedLandingPageHTML": [
+    "cdnVersion",
+    "config",
+    "apolloServerVersion",
+    "nonce"
+  ],
+  "ApolloServerPluginLandingPageDefault": [
+    "maybeVersion",
+    "config"
+  ],
+  "html": [],
+  "schemaIsSubgraph": [
+    "schema"
+  ],
+  "ApolloServerPluginSchemaReporting": [
+    "param"
+  ],
+  "SchemaReporter": {
+    "schemaReport": [],
+    "coreSchema": [],
+    "endpointUrl": [],
+    "logger": [],
+    "initialReportingDelayInMs": [],
+    "fallbackReportingDelayInMs": [],
+    "fetcher": [],
+    "isStopped": [],
+    "pollTimer": [],
+    "headers": [],
+    "constructor": [
+      "options"
+    ],
+    "stopped": [],
+    "start": [],
+    "stop": [],
+    "sendOneReportAndScheduleNext": [
+      "sendNextWithCoreSchema"
+    ],
+    "reportSchema": [
+      "withCoreSchema"
+    ],
+    "apolloQuery": [
+      "variables"
+    ]
+  },
+  "msgForUnexpectedResponse": [
+    "data"
+  ],
+  "ApolloServerPluginSubscriptionCallback": [
+    "param"
+  ],
+  "isAsyncIterable": [
+    "value"
+  ],
+  "SubscriptionManager": {
+    "maxConsecutiveHeartbeatFailures": [],
+    "logger": [],
+    "retryConfig": [],
+    "requestsInFlight": [],
+    "subscriptionInfoByCallbackUrl": [],
+    "fetcher": [],
+    "constructor": [
+      "options"
+    ],
+    "retryFetch": [
+      "param"
+    ],
+    "checkRequest": [
+      "param"
+    ],
+    "initHeartbeat": [
+      "param"
+    ],
+    "terminateSubscription": [
+      "id",
+      "callbackUrl"
+    ],
+    "startConsumingSubscription": [
+      "param"
+    ],
+    "completeRequest": [
+      "param"
+    ],
+    "collectAllSubscriptions": [],
+    "cleanup": []
+  },
+  "prefixedLogger": [
+    "logger",
+    "prefix"
+  ],
+  "log": [
+    "level"
+  ],
+  "TraceTreeBuilder": {
+    "rootNode": [],
+    "trace": [],
+    "startHrTime": [],
+    "stopped": [],
+    "nodes": [],
+    "transformError": [],
+    "constructor": [
+      "options"
+    ],
+    "startTiming": [],
+    "stopTiming": [],
+    "willResolveField": [
+      "info"
+    ],
+    "didEncounterErrors": [
+      "errors"
+    ],
+    "addProtobufError": [
+      "path",
+      "error"
+    ],
+    "newNode": [
+      "path"
+    ],
+    "ensureParentNode": [
+      "path"
+    ],
+    "transformAndNormalizeError": [
+      "err"
+    ]
+  },
+  "internalError": [
+    "message"
+  ],
+  "durationHrTimeToNanos": [
+    "hrtime"
+  ],
+  "responsePathAsString": [
+    "p"
+  ],
+  "responsePathFromArray": [
+    "path",
+    "node"
+  ],
+  "errorToProtobufError": [
+    "error"
+  ],
+  "dateToProtoTimestamp": [
+    "date"
+  ],
+  "defaultSendOperationsAsTrace": [],
+  "traceHasErrors": [
+    "trace"
+  ],
+  "traceNodeStats": [
+    "node",
+    "path"
+  ],
+  "DurationHistogram": {
+    "buckets": [],
+    "BUCKET_COUNT": [],
+    "EXPONENT_LOG": [],
+    "toArray": [],
+    "durationToBucket": [
+      "durationNs"
+    ],
+    "incrementDuration": [
+      "durationNs",
+      "param"
+    ],
+    "incrementBucket": [
+      "bucket",
+      "param"
+    ],
+    "combine": [
+      "otherHistogram"
+    ],
+    "constructor": [
+      "options"
+    ]
+  },
+  "iterateOverTrace": [
+    "trace",
+    "f",
+    "includePath"
+  ],
+  "iterateOverQueryPlan": [
+    "node",
+    "rootPath",
+    "f"
+  ],
+  "iterateOverTraceNode": [
+    "node",
+    "path",
+    "f"
+  ],
+  "RootCollectingPathsResponseNamePath": {
+    "toArray": [],
+    "child": [
+      "responseName"
+    ]
+  },
+  "ChildCollectingPathsResponseNamePath": {
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "toArray": [],
+    "child": [
+      "responseName"
+    ]
+  },
+  "createOperationDerivedDataCache": [
+    "param"
+  ],
+  "operationDerivedDataCacheKey": [
+    "queryHash",
+    "operationName"
+  ],
+  "ApolloServerPluginUsageReporting": [
+    "param"
+  ],
+  "getReportWhichMustBeUsedImmediately": [
+    "executableSchemaId"
+  ],
+  "getAndDeleteReport": [
+    "executableSchemaId"
+  ],
+  "executableSchemaIdForSchema": [
+    "schema"
+  ],
+  "sendAllReportsAndReportErrors": [],
+  "sendReportAndReportErrors": [
+    "executableSchemaId"
+  ],
+  "sendReport": [
+    "executableSchemaId"
+  ],
+  "maybeCallIncludeRequestHook": [
+    "requestContext"
+  ],
+  "operationFinished": [
+    "requestContext"
+  ],
+  "addTrace": [],
+  "getOperationDerivedData": [],
+  "makeHTTPRequestHeaders": [
+    "http",
+    "headers",
+    "sendHeaders"
+  ],
+  "defaultGenerateClientInfo": [
+    "param"
+  ],
+  "SizeEstimator": {
+    "bytes": []
+  },
+  "OurReport": {
+    "tracesPreAggregated": [],
+    "constructor": [
+      "param"
+    ],
+    "tracesPerQuery": [],
+    "endTime": [],
+    "operationCount": [],
+    "sizeEstimator": [],
+    "ensureCountsAreIntegers": [],
+    "addTrace": [
+      "param"
+    ],
+    "getTracesAndStats": [
+      "param"
+    ]
+  },
+  "OurTracesAndStats": {
+    "constructor": [
+      "param"
+    ],
+    "trace": [],
+    "statsWithContext": [],
+    "internalTracesContributingToStats": [],
+    "ensureCountsAreIntegers": []
+  },
+  "StatsByContext": {
+    "map": [],
+    "toArray": [],
+    "ensureCountsAreIntegers": [],
+    "addTrace": [
+      "trace",
+      "sizeEstimator",
+      "nonFtv1ErrorPaths"
+    ],
+    "getContextualizedStats": [
+      "trace",
+      "sizeEstimator"
+    ]
+  },
+  "OurContextualizedStats": {
+    "queryLatencyStats": [],
+    "perTypeStat": [],
+    "constructor": [
+      "param"
+    ],
+    "ensureCountsAreIntegers": [],
+    "addTrace": [
+      "trace",
+      "sizeEstimator",
+      "param"
+    ],
+    "getTypeStat": [
+      "parentType",
+      "sizeEstimator"
+    ]
+  },
+  "OurQueryLatencyStats": {
+    "latencyCount": [],
+    "requestCount": [],
+    "requestsWithoutFieldInstrumentation": [],
+    "cacheHits": [],
+    "persistedQueryHits": [],
+    "persistedQueryMisses": [],
+    "cacheLatencyCount": [],
+    "rootErrorStats": [],
+    "requestsWithErrorsCount": [],
+    "publicCacheTtlCount": [],
+    "privateCacheTtlCount": [],
+    "registeredOperationCount": [],
+    "forbiddenOperationCount": []
+  },
+  "OurPathErrorStats": {
+    "children": [],
+    "errorsCount": [],
+    "requestsWithErrorsCount": [],
+    "getChild": [
+      "subPath",
+      "sizeEstimator"
+    ]
+  },
+  "OurTypeStat": {
+    "perFieldStat": [],
+    "getFieldStat": [
+      "fieldName",
+      "returnType",
+      "sizeEstimator"
+    ],
+    "ensureCountsAreIntegers": []
+  },
+  "OurFieldStat": {
+    "errorsCount": [],
+    "observedExecutionCount": [],
+    "estimatedExecutionCount": [],
+    "requestsWithErrorsCount": [],
+    "latencyCount": [],
+    "constructor": [
+      "param"
+    ],
+    "ensureCountsAreIntegers": []
+  },
+  "estimatedBytesForString": [
+    "s"
+  ],
+  "makeTraceDetails": [
+    "variables",
+    "sendVariableValues",
+    "operationString"
+  ],
+  "handleVariableValueTransformError": [
+    "variableNames"
+  ],
+  "cleanModifiedVariables": [
+    "originalKeys",
+    "modifiedVariables"
+  ],
+  "preventCsrf": [
+    "headers",
+    "csrfPreventionRequestHeaders"
+  ],
+  "computeQueryHash": [
+    "query"
+  ],
+  "isBadUserInputGraphQLError": [
+    "error"
+  ],
+  "processGraphQLRequest": [
+    "schemaDerivedData",
+    "server",
+    "internals",
+    "requestContext"
+  ],
+  "invokeWillResolveField": [
+    "param"
+  ],
+  "execute": [
+    "param"
+  ],
+  "formatErrorsInSubsequentResultsAlpha2": [
+    "results"
+  ],
+  "formatErrorsInSubsequentResultsAlpha9": [
+    "results"
+  ],
+  "invokeWillSendResponse": [],
+  "didEncounterErrors": [
+    "errors"
+  ],
+  "sendErrorResponse": [
+    "errors"
+  ],
+  "formatErrors": [
+    "errors"
+  ],
+  "seriesAsyncMap": [
+    "ts",
+    "fn"
+  ],
+  "fieldIfString": [
+    "o",
+    "fieldName"
+  ],
+  "searchParamIfSpecifiedOnce": [
+    "searchParams",
+    "paramName"
+  ],
+  "jsonParsedSearchParamIfSpecifiedOnce": [
+    "searchParams",
+    "fieldName"
+  ],
+  "fieldIfRecord": [
+    "o",
+    "fieldName"
+  ],
+  "isStringRecord": [
+    "o"
+  ],
+  "isNonEmptyStringRecord": [
+    "o"
+  ],
+  "ensureQueryIsStringOrMissing": [
+    "query"
+  ],
+  "runHttpQuery": [
+    "param"
+  ],
+  "writeMultipartBody": [
+    "initialResult",
+    "subsequentResults"
+  ],
+  "orderExecutionResultFields": [
+    "result"
+  ],
+  "prettyJSONStringify": [
+    "value"
+  ],
+  "newHTTPGraphQLHead": [
+    "status"
+  ],
+  "mergeHTTPGraphQLHead": [
+    "target",
+    "source"
+  ],
+  "startStandaloneServer": [
+    "server",
+    "options"
+  ],
+  "HeaderMap": {
+    "__identity": [],
+    "set": [
+      "key",
+      "value"
+    ],
+    "get": [
+      "key"
+    ],
+    "delete": [
+      "key"
+    ],
+    "has": [
+      "key"
+    ]
+  },
+  "UnreachableCaseError": {
+    "constructor": [
+      "val"
+    ]
+  },
+  "computeCoreSchemaHash": [
+    "schema"
+  ],
+  "invokeDidStartHook": [
+    "targets",
+    "hook"
+  ],
+  "invokeSyncDidStartHook": [
+    "targets",
+    "hook"
+  ],
+  "invokeHooksUntilDefinedAndNonNull": [
+    "targets",
+    "hook"
+  ],
+  "isDefined": [
+    "t"
+  ],
+  "makeGatewayGraphQLRequestContext": [
+    "newRequestContext",
+    "server",
+    "internals"
+  ],
+  "FetcherHeadersForHeaderMap": {
+    "constructor": [
+      "param"
+    ],
+    "append": [
+      "name",
+      "value"
+    ],
+    "delete": [
+      "name"
+    ],
+    "get": [
+      "name"
+    ],
+    "has": [
+      "name"
+    ],
+    "set": [
+      "name",
+      "value"
+    ],
+    "entries": [],
+    "keys": [],
+    "values": []
+  },
+  "enablePluginsForSchemaResolvers": [
+    "schema"
+  ],
+  "pluginsEnabledForSchemaResolvers": [
+    "schema"
+  ],
+  "wrapField": [
+    "field"
+  ],
+  "isPromise": [
+    "x"
+  ],
+  "whenResultIsFinished": [
+    "result",
+    "callback"
+  ],
+  "SchemaManager": {
+    "logger": [],
+    "schemaDerivedDataProvider": [],
+    "onSchemaLoadOrUpdateListeners": [],
+    "isStopped": [],
+    "schemaDerivedData": [],
+    "schemaContext": [],
+    "modeSpecificState": [],
+    "constructor": [
+      "options"
+    ],
+    "start": [],
+    "onSchemaLoadOrUpdate": [
+      "callback"
+    ],
+    "getSchemaDerivedData": [],
+    "stop": [],
+    "processSchemaLoadOrUpdateEvent": [
+      "schemaContext",
+      "schemaDerivedData"
+    ]
+  },
+  "urlForHttpServer": [
+    "httpServer"
+  ],
+  "NoIntrospection": [
+    "context"
+  ],
+  "RecursiveSelectionValidationContext": {
+    "fragmentInfo": [],
+    "operationInfo": [],
+    "currentFragment": [],
+    "currentOperation": [],
+    "fragmentRecursiveSelectionCount": [],
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "getExecutionDefinitionInfo": [],
+    "processSelection": [
+      "fragmentSpreadName"
+    ],
+    "enterFragment": [
+      "fragment"
+    ],
+    "leaveFragment": [],
+    "enterOperation": [
+      "operation"
+    ],
+    "leaveOperation": [],
+    "computeFragmentRecursiveSelectionsCount": [
+      "fragment"
+    ],
+    "reportError": [
+      "operation"
+    ],
+    "checkLimitExceeded": []
+  },
+  "createMaxRecursiveSelectionsRule": [
+    "limit"
+  ]
+}
