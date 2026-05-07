@@ -1,0 +1,142 @@
+{
+  "getMethodsToWrap": [
+    "client",
+    "methods"
+  ],
+  "patchedCallback": [
+    "err",
+    "value"
+  ],
+  "wrappedFn": [
+    "err",
+    "res"
+  ],
+  "patchResponseMetadataEvent": [
+    "span",
+    "call",
+    "metadataCapture"
+  ],
+  "patchResponseStreamEvents": [
+    "span",
+    "call"
+  ],
+  "endSpan": [],
+  "makeGrpcClientRemoteCall": [
+    "metadataCapture",
+    "original",
+    "args",
+    "metadata",
+    "self"
+  ],
+  "getMetadataIndex": [
+    "args"
+  ],
+  "extractMetadataOrSplice": [
+    "grpcLib",
+    "args",
+    "spliceIndex"
+  ],
+  "extractMetadataOrSpliceDefault": [
+    "grpcClient",
+    "original",
+    "args"
+  ],
+  "setSpanContext": [
+    "metadata"
+  ],
+  "GrpcInstrumentation": {
+    "_metadataCapture": [],
+    "_semconvStability": [],
+    "constructor": [
+      "param"
+    ],
+    "init": [],
+    "setConfig": [
+      "param"
+    ],
+    "_patchServer": [],
+    "_patchClientRequestMethod": [
+      "grpcLib",
+      "hasResponseStream",
+      "name"
+    ],
+    "_patchClient": [
+      "grpcClient"
+    ],
+    "_patchLoadPackageDefinition": [
+      "grpcClient"
+    ],
+    "_getPatchedClientMethods": [
+      "grpcClient"
+    ],
+    "_splitMethodString": [
+      "method"
+    ],
+    "createClientSpan": [
+      "name",
+      "methodAttributeValue",
+      "service",
+      "metadata"
+    ],
+    "extractNetMetadata": [
+      "client",
+      "span",
+      "semconvStability"
+    ],
+    "_patchLoadedPackage": [
+      "grpcClient",
+      "result"
+    ],
+    "_createMetadataCapture": []
+  },
+  "clientMethodTrace": [],
+  "serverStreamAndBidiHandler": [
+    "span",
+    "call",
+    "original"
+  ],
+  "clientStreamAndUnaryHandler": [
+    "span",
+    "call",
+    "callback",
+    "original"
+  ],
+  "handleServerFunction": [
+    "span",
+    "type",
+    "originalFunc",
+    "call",
+    "callback"
+  ],
+  "handleUntracedServerFunction": [
+    "type",
+    "originalFunc",
+    "call",
+    "callback"
+  ],
+  "shouldNotTraceServerCall": [
+    "methodName",
+    "ignoreGrpcMethods"
+  ],
+  "_grpcStatusCodeToOpenTelemetryStatusCode": [
+    "status"
+  ],
+  "_grpcStatusCodeToSpanStatus": [
+    "status"
+  ],
+  "_satisfiesPattern": [
+    "methodName",
+    "pattern"
+  ],
+  "_methodIsIgnored": [
+    "methodName",
+    "ignoredMethods"
+  ],
+  "_extractMethodAndService": [
+    "name"
+  ],
+  "metadataCapture": [
+    "type",
+    "metadataToAdd"
+  ]
+}
