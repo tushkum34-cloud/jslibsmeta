@@ -1,0 +1,850 @@
+{
+  "AutoImage": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "_timeoutId": [],
+    "_positionToInsert": [],
+    "constructor": [
+      "editor"
+    ],
+    "init": [],
+    "_embedImageBetweenPositions": [
+      "leftPosition",
+      "rightPosition"
+    ]
+  },
+  "ImageBlockEditing": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "init": [],
+    "_setupConversion": [],
+    "_setupClipboardIntegration": []
+  },
+  "ImageEditing": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "init": []
+  },
+  "ImageInlineEditing": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "init": [],
+    "_setupConversion": [],
+    "_setupClipboardIntegration": []
+  },
+  "ImageLoadObserver": {
+    "observe": [
+      "domRoot"
+    ],
+    "stopObserving": [
+      "domRoot"
+    ],
+    "_fireEvents": [
+      "domEvent"
+    ]
+  },
+  "ImagePlaceholder": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "afterInit": [],
+    "_setupSchema": [],
+    "_setupConversion": [],
+    "_setupLoadListener": []
+  },
+  "ImageTypeCommand": {
+    "_modelElementName": [],
+    "constructor": [
+      "editor",
+      "modelElementName"
+    ],
+    "refresh": [],
+    "execute": [
+      "param"
+    ]
+  },
+  "InsertImageCommand": {
+    "constructor": [
+      "editor"
+    ],
+    "refresh": [],
+    "execute": [
+      "options"
+    ]
+  },
+  "ReplaceImageSourceCommand": {
+    "constructor": [
+      "editor"
+    ],
+    "refresh": [],
+    "execute": [
+      "options"
+    ],
+    "cleanupImage": [
+      "writer",
+      "image"
+    ]
+  },
+  "Image": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": []
+  },
+  "ImageBlock": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": []
+  },
+  "ImageCaptionEditing": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "_savedCaptionsMap": [],
+    "constructor": [
+      "editor"
+    ],
+    "init": [],
+    "_setupConversion": [],
+    "_setupImageTypeCommandsIntegration": [],
+    "_getSavedCaption": [
+      "imageModelElement"
+    ],
+    "_saveCaption": [
+      "imageModelElement",
+      "caption"
+    ],
+    "_registerCaptionReconversion": []
+  },
+  "ImageCaptionUI": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "init": []
+  },
+  "ImageCaptionUtils": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "getCaptionFromImageModelElement": [
+      "imageModelElement"
+    ],
+    "getCaptionFromModelSelection": [
+      "selection"
+    ],
+    "matchImageCaptionViewElement": [
+      "element"
+    ]
+  },
+  "ToggleImageCaptionCommand": {
+    "refresh": [],
+    "execute": [
+      "param"
+    ],
+    "_showImageCaption": [
+      "writer",
+      "focusCaptionOnShow"
+    ],
+    "_hideImageCaption": [
+      "writer"
+    ]
+  },
+  "ImageCaption": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": []
+  },
+  "ImageInline": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": []
+  },
+  "ImageInsertUI": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "dropdownView": [],
+    "_integrations": [],
+    "constructor": [
+      "editor"
+    ],
+    "init": [],
+    "registerIntegration": [
+      "param"
+    ],
+    "_createToolbarComponent": [
+      "locale"
+    ],
+    "_createMenuBarComponent": [
+      "locale"
+    ],
+    "_prepareIntegrations": []
+  },
+  "ImageInsertViaUrlUI": {
+    "_imageInsertUI": [],
+    "_formView": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "init": [],
+    "afterInit": [],
+    "_createInsertUrlButton": [
+      "ButtonClass"
+    ],
+    "_createToolbarButton": [],
+    "_createDropdownButton": [],
+    "_createMenuBarButton": [
+      "type"
+    ],
+    "_createInsertUrlView": [],
+    "_showModal": [],
+    "_handleSave": []
+  },
+  "ImageInsertFormView": {
+    "focusTracker": [],
+    "keystrokes": [],
+    "_focusables": [],
+    "_focusCycler": [],
+    "children": [],
+    "constructor": [
+      "locale",
+      "param"
+    ],
+    "render": [],
+    "destroy": [],
+    "focus": []
+  },
+  "ImageInsertUrlView": {
+    "urlInputView": [],
+    "keystrokes": [],
+    "constructor": [
+      "locale"
+    ],
+    "render": [],
+    "destroy": [],
+    "_createUrlInputView": [],
+    "focus": []
+  },
+  "ImageInsert": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": []
+  },
+  "ImageInsertViaUrl": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": []
+  },
+  "ImageCustomResizeUI": {
+    "_balloon": [],
+    "_form": [],
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "destroy": [],
+    "_createForm": [
+      "unit"
+    ],
+    "_showForm": [
+      "unit"
+    ],
+    "_hideForm": [
+      "param"
+    ],
+    "_isVisible": [],
+    "_isInBalloon": []
+  },
+  "ImageResizeButtons": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "_resizeUnit": [],
+    "constructor": [
+      "editor"
+    ],
+    "init": [],
+    "_registerImageResizeButton": [
+      "option"
+    ],
+    "_registerImageResizeDropdown": [
+      "options"
+    ],
+    "_getOptionLabelValue": [
+      "option",
+      "param"
+    ],
+    "_getResizeDropdownListItemDefinitions": [
+      "options",
+      "command"
+    ]
+  },
+  "ImageResizeEditing": {
+    "requires": [],
+    "pluginName": [],
+    "licenseFeatureCode": [],
+    "isOfficialPlugin": [],
+    "isPremiumPlugin": [],
+    "constructor": [
+      "editor"
+    ],
+    "init": [],
+    "afterInit": [],
+    "_registerSchema": [],
+    "_registerConverters": [
+      "imageType"
+    ]
+  },
+  "ImageResizeHandles": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "init": [],
+    "_setupResizerCreator": []
+  },
+  "ResizeImageCommand": {
+    "refresh": [],
+    "execute": [
+      "options"
+    ]
+  },
+  "ImageCustomResizeFormView": {
+    "focusTracker": [],
+    "keystrokes": [],
+    "unit": [],
+    "backButtonView": [],
+    "saveButtonView": [],
+    "labeledInput": [],
+    "children": [],
+    "_focusables": [],
+    "_focusCycler": [],
+    "_validators": [],
+    "constructor": [
+      "locale",
+      "unit",
+      "validators"
+    ],
+    "render": [],
+    "destroy": [],
+    "_createBackButton": [],
+    "_createSaveButton": [],
+    "_createHeaderView": [],
+    "_createLabeledInputView": [],
+    "isValid": [],
+    "resetFormStatus": [],
+    "rawSize": [],
+    "parsedSize": [],
+    "sizeWithUnits": []
+  },
+  "ImageResize": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": []
+  },
+  "ImageSizeAttributes": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "afterInit": [],
+    "_registerSchema": [],
+    "_registerConverters": [
+      "imageType"
+    ]
+  },
+  "ImageStyleCommand": {
+    "_defaultStyles": [],
+    "_styles": [],
+    "constructor": [
+      "editor",
+      "styles"
+    ],
+    "refresh": [],
+    "execute": [
+      "param"
+    ],
+    "shouldConvertImageType": [
+      "requestedStyle",
+      "imageElement"
+    ]
+  },
+  "ImageStyleEditing": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "normalizedStyles": [],
+    "init": [],
+    "_setupConversion": [
+      "isBlockPluginLoaded",
+      "isInlinePluginLoaded"
+    ],
+    "_setupPostFixer": []
+  },
+  "ImageStyleUI": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "localizedDefaultStylesTitles": [],
+    "init": [],
+    "_createDropdown": [
+      "dropdownConfig",
+      "definedStyles"
+    ],
+    "_createButton": [
+      "buttonConfig"
+    ],
+    "_executeCommand": [
+      "name"
+    ]
+  },
+  "ImageStyle": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": []
+  },
+  "ImageTextAlternativeCommand": {
+    "refresh": [],
+    "execute": [
+      "options"
+    ]
+  },
+  "ImageTextAlternativeEditing": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "init": []
+  },
+  "ImageTextAlternativeUI": {
+    "_balloon": [],
+    "_form": [],
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "init": [],
+    "destroy": [],
+    "_createButton": [],
+    "_createForm": [],
+    "_showForm": [],
+    "_hideForm": [
+      "param"
+    ],
+    "_isVisible": [],
+    "_isInBalloon": []
+  },
+  "TextAlternativeFormView": {
+    "focusTracker": [],
+    "keystrokes": [],
+    "labeledInput": [],
+    "backButtonView": [],
+    "saveButtonView": [],
+    "children": [],
+    "_focusables": [],
+    "_focusCycler": [],
+    "constructor": [
+      "locale"
+    ],
+    "render": [],
+    "destroy": [],
+    "_createBackButton": [],
+    "_createSaveButton": [],
+    "_createHeaderView": [],
+    "_createLabeledInputView": []
+  },
+  "ImageTextAlternative": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": []
+  },
+  "ImageToolbar": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "afterInit": []
+  },
+  "ImageUploadEditing": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "_uploadImageElements": [],
+    "_uploadedImages": [],
+    "constructor": [
+      "editor"
+    ],
+    "init": [],
+    "afterInit": [],
+    "_readAndUpload": [
+      "loader"
+    ],
+    "_parseAndSetSrcsetAttributeOnImage": [
+      "data",
+      "image",
+      "writer"
+    ],
+    "_registerConverters": [
+      "imageType"
+    ]
+  },
+  "ImageUploadProgress": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "placeholder": [],
+    "constructor": [
+      "editor"
+    ],
+    "init": [],
+    "uploadStatusChange": []
+  },
+  "ImageUploadUI": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "init": [],
+    "_createButton": [
+      "ButtonClass"
+    ],
+    "_createToolbarButton": [],
+    "_createDropdownButton": [],
+    "_createMenuBarButton": [
+      "type"
+    ]
+  },
+  "UploadImageCommand": {
+    "constructor": [
+      "editor"
+    ],
+    "refresh": [],
+    "execute": [
+      "options"
+    ],
+    "_uploadImage": [
+      "file",
+      "attributes",
+      "position"
+    ]
+  },
+  "ImageUpload": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": []
+  },
+  "ImageUtils": {
+    "_domEmitter": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "isImage": [
+      "modelElement"
+    ],
+    "isInlineImageView": [
+      "element"
+    ],
+    "isBlockImageView": [
+      "element"
+    ],
+    "insertImage": [
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "setImageNaturalSizeAttributes": [
+      "imageElement"
+    ],
+    "getClosestSelectedImageWidget": [
+      "selection"
+    ],
+    "getClosestSelectedImageElement": [
+      "selection"
+    ],
+    "getImageWidgetFromImageView": [
+      "imageView"
+    ],
+    "isImageAllowed": [],
+    "toImageWidget": [
+      "viewElement",
+      "writer",
+      "label"
+    ],
+    "isImageWidget": [
+      "viewElement"
+    ],
+    "isBlockImage": [
+      "modelElement"
+    ],
+    "isInlineImage": [
+      "modelElement"
+    ],
+    "findViewImgElement": [
+      "figureView"
+    ],
+    "destroy": []
+  },
+  "createInlineImageViewElement": [
+    "writer"
+  ],
+  "createBlockImageViewElement": [
+    "writer"
+  ],
+  "getImgViewElementMatcher": [
+    "editor",
+    "matchImageType"
+  ],
+  "getPositiveMatchPattern": [
+    "element"
+  ],
+  "determineImageTypeForInsertionAtSelection": [
+    "schema",
+    "selection"
+  ],
+  "getSizeValueIfInPx": [
+    "size"
+  ],
+  "widthAndHeightStylesAreBothSet": [
+    "viewElement"
+  ],
+  "labelCreator": [],
+  "isImageAllowedInParent": [
+    "editor",
+    "selection"
+  ],
+  "isNotInsideImage": [
+    "selection"
+  ],
+  "getInsertImageParent": [
+    "selection",
+    "model"
+  ],
+  "determineImageTypeForInsertion": [
+    "editor",
+    "selectable",
+    "imageType"
+  ],
+  "repositionContextualBalloon": [
+    "editor"
+  ],
+  "getBalloonPositionData": [
+    "editor"
+  ],
+  "upcastImageFigure": [
+    "imageUtils"
+  ],
+  "converter": [
+    "evt",
+    "data",
+    "conversionApi"
+  ],
+  "upcastPicture": [
+    "imageUtils"
+  ],
+  "downcastSrcsetAttribute": [
+    "imageUtils",
+    "imageType"
+  ],
+  "downcastSourcesAttribute": [
+    "imageUtils"
+  ],
+  "downcastImageAttribute": [
+    "imageUtils",
+    "imageType",
+    "attributeKey"
+  ],
+  "attachDowncastConverter": [
+    "dispatcher",
+    "modelAttributeName",
+    "viewAttributeName",
+    "setRatioForInlineImage",
+    "param"
+  ],
+  "stopPropagation": [
+    "data"
+  ],
+  "componentCreator": [
+    "locale"
+  ],
+  "menuBarComponentCreator": [
+    "locale"
+  ],
+  "handleImageTypeChange": [
+    "evt"
+  ],
+  "createImageTypeRegExp": [
+    "types"
+  ],
+  "fetchLocalImage": [
+    "image"
+  ],
+  "isLocalImage": [
+    "imageUtils",
+    "node"
+  ],
+  "getImageMimeType": [
+    "blob",
+    "src"
+  ],
+  "convertLocalImageOnCanvas": [
+    "imageSrc"
+  ],
+  "getBlobFromCanvas": [
+    "imageSrc"
+  ],
+  "_startAppearEffect": [
+    "viewFigure",
+    "writer"
+  ],
+  "_stopAppearEffect": [
+    "viewFigure",
+    "writer"
+  ],
+  "_showPlaceholder": [
+    "imageUtils",
+    "placeholder",
+    "viewFigure",
+    "writer"
+  ],
+  "_hidePlaceholder": [
+    "viewFigure",
+    "writer"
+  ],
+  "_showProgressBar": [
+    "viewFigure",
+    "writer",
+    "loader",
+    "view"
+  ],
+  "_hideProgressBar": [
+    "viewFigure",
+    "writer"
+  ],
+  "_showCompleteIcon": [
+    "viewFigure",
+    "writer",
+    "view"
+  ],
+  "_createProgressBar": [
+    "writer"
+  ],
+  "_createPlaceholder": [
+    "writer"
+  ],
+  "_getUIElement": [
+    "imageFigure",
+    "uniqueProperty"
+  ],
+  "_removeUIElement": [
+    "viewFigure",
+    "writer",
+    "uniqueProperty"
+  ],
+  "_displayLocalImage": [
+    "imageUtils",
+    "viewFigure",
+    "writer",
+    "loader"
+  ],
+  "clean": [],
+  "isHtmlInDataTransfer": [
+    "dataTransfer"
+  ],
+  "getImagesFromChangeItem": [
+    "editor",
+    "item"
+  ],
+  "isCustomImageResizeOption": [
+    "option"
+  ],
+  "getIsOnButtonCallback": [
+    "value"
+  ],
+  "getIsOnCustomButtonCallback": [
+    "allDropdownValues"
+  ],
+  "tryParseDimensionWithUnit": [
+    "dimension"
+  ],
+  "tryCastDimensionsToUnit": [
+    "parentDimensionPx",
+    "dimension",
+    "targetUnit"
+  ],
+  "getSelectedImageEditorNodes": [
+    "editor"
+  ],
+  "getSelectedImageWidthInUnits": [
+    "editor",
+    "targetUnit"
+  ],
+  "getSelectedImagePossibleResizeRange": [
+    "editor",
+    "targetUnit"
+  ],
+  "getFormValidators": [
+    "editor"
+  ],
+  "getStyleDefinitionByName": [
+    "name",
+    "styles"
+  ],
+  "normalizeStyles": [
+    "config"
+  ],
+  "getDefaultStylesConfiguration": [
+    "isBlockPluginLoaded",
+    "isInlinePluginLoaded"
+  ],
+  "getDefaultDropdownDefinitions": [
+    "pluginCollection"
+  ],
+  "normalizeDefinition": [
+    "definition"
+  ],
+  "isValidOption": [
+    "option",
+    "param"
+  ],
+  "extendStyle": [
+    "source",
+    "style"
+  ],
+  "warnInvalidStyle": [
+    "info"
+  ],
+  "modelToViewStyleAttribute": [
+    "styles"
+  ],
+  "viewToModelStyleAttribute": [
+    "styles"
+  ],
+  "normalizeFloatToDefinitionStyle": [
+    "conversionApi",
+    "viewElement",
+    "modelElement",
+    "styles"
+  ],
+  "getBlockAlignmentAttributeProperty": [
+    "styles"
+  ],
+  "pickFirstSupported": [
+    "param"
+  ],
+  "translateStyles": [
+    "styles",
+    "titles"
+  ],
+  "getUIComponentName": [
+    "name"
+  ],
+  "getDropdownButtonTitle": [
+    "dropdownTitle",
+    "buttonTitle"
+  ],
+  "normalizeDeclarativeConfig": [
+    "config"
+  ],
+  "PictureEditing": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "afterInit": [],
+    "_setupConversion": [],
+    "_setupImageUploadEditingIntegration": []
+  }
+}
