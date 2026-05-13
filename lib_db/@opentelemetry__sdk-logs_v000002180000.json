@@ -1,0 +1,268 @@
+{
+  "LogRecordImpl": {
+    "hrTime": [],
+    "hrTimeObserved": [],
+    "spanContext": [],
+    "resource": [],
+    "instrumentationScope": [],
+    "attributes": [],
+    "_severityText": [],
+    "_severityNumber": [],
+    "_body": [],
+    "_eventName": [],
+    "_attributesCount": [],
+    "_droppedAttributesCount": [],
+    "_isReadonly": [],
+    "_logRecordLimits": [],
+    "severityText": [],
+    "severityNumber": [],
+    "body": [],
+    "eventName": [
+      "eventName"
+    ],
+    "droppedAttributesCount": [],
+    "constructor": [
+      "_sharedState",
+      "instrumentationScope",
+      "logRecord"
+    ],
+    "setAttribute": [
+      "key",
+      "value"
+    ],
+    "setAttributes": [
+      "attributes"
+    ],
+    "setBody": [
+      "body"
+    ],
+    "setEventName": [
+      "eventName"
+    ],
+    "setSeverityNumber": [
+      "severityNumber"
+    ],
+    "setSeverityText": [
+      "severityText"
+    ],
+    "_makeReadonly": [],
+    "_truncateToSize": [
+      "value"
+    ],
+    "_setException": [
+      "exception"
+    ],
+    "_truncateToLimitUtil": [
+      "value",
+      "limit"
+    ],
+    "_isLogRecordReadonly": []
+  },
+  "Logger": {
+    "instrumentationScope": [],
+    "_sharedState": [],
+    "_loggerConfig": [],
+    "constructor": [
+      "instrumentationScope",
+      "sharedState"
+    ],
+    "emit": [
+      "logRecord"
+    ],
+    "enabled": [
+      "options"
+    ]
+  },
+  "LoggerMetrics": {
+    "createdLogs": [],
+    "constructor": [
+      "meter"
+    ],
+    "emitLog": []
+  },
+  "LoggerProvider": {
+    "_shutdownOnce": [],
+    "_sharedState": [],
+    "constructor": [
+      "param"
+    ],
+    "getLogger": [
+      "name",
+      "version",
+      "options"
+    ],
+    "forceFlush": [],
+    "shutdown": [],
+    "_shutdown": []
+  },
+  "MultiLogRecordProcessor": {
+    "processors": [],
+    "forceFlushTimeoutMillis": [],
+    "constructor": [
+      "processors",
+      "forceFlushTimeoutMillis"
+    ],
+    "forceFlush": [],
+    "onEmit": [
+      "logRecord",
+      "context"
+    ],
+    "shutdown": [],
+    "enabled": [
+      "options"
+    ]
+  },
+  "createLoggerConfigurator": [
+    "patterns"
+  ],
+  "matchesPattern": [
+    "name",
+    "pattern"
+  ],
+  "BatchLogRecordProcessorBase": {
+    "_maxExportBatchSize": [],
+    "_maxQueueSize": [],
+    "_scheduledDelayMillis": [],
+    "_exportTimeoutMillis": [],
+    "_exporter": [],
+    "_currentExport": [],
+    "_finishedLogRecords": [],
+    "_timer": [],
+    "_shutdownOnce": [],
+    "_flushing": [],
+    "constructor": [
+      "exporter",
+      "config"
+    ],
+    "onEmit": [
+      "logRecord"
+    ],
+    "forceFlush": [],
+    "_addToBuffer": [
+      "logRecord"
+    ],
+    "shutdown": [],
+    "_shutdown": [],
+    "_flushAll": [],
+    "_extractBatch": [],
+    "_exportOneBatch": [],
+    "_maybeStartTimer": [],
+    "_clearTimer": []
+  },
+  "waitForResources": [
+    "logRecords"
+  ],
+  "ExportOperation": {
+    "_exportCompleted": [],
+    "_exportScheduledPromise": [],
+    "_exportScheduledResolve": [],
+    "constructor": [
+      "exporter",
+      "logRecords",
+      "exportTimeoutMillis"
+    ],
+    "exportCompleted": [],
+    "exportScheduled": [],
+    "_executeExport": [
+      "exporter",
+      "logRecords",
+      "exportTimeoutMillis"
+    ],
+    "_exportWithTimeout": [
+      "exporter",
+      "logRecords",
+      "exportTimeoutMillis"
+    ]
+  },
+  "ConsoleLogRecordExporter": {
+    "export": [
+      "logs",
+      "resultCallback"
+    ],
+    "forceFlush": [],
+    "shutdown": [],
+    "_exportInfo": [
+      "logRecord"
+    ],
+    "_sendLogRecords": [
+      "logRecords",
+      "done"
+    ]
+  },
+  "InMemoryLogRecordExporter": {
+    "_finishedLogRecords": [],
+    "_stopped": [],
+    "export": [
+      "logs",
+      "resultCallback"
+    ],
+    "shutdown": [],
+    "forceFlush": [],
+    "getFinishedLogRecords": [],
+    "reset": []
+  },
+  "NoopLogRecordProcessor": {
+    "forceFlush": [],
+    "onEmit": [
+      "_logRecord",
+      "_context"
+    ],
+    "shutdown": [],
+    "enabled": [
+      "_options"
+    ]
+  },
+  "SimpleLogRecordProcessor": {
+    "_exporter": [],
+    "_shutdownOnce": [],
+    "_unresolvedExports": [],
+    "constructor": [
+      "exporter"
+    ],
+    "onEmit": [
+      "logRecord",
+      "_context"
+    ],
+    "forceFlush": [],
+    "shutdown": [],
+    "_shutdown": []
+  },
+  "doExport": [],
+  "LoggerProviderSharedState": {
+    "loggers": [],
+    "activeProcessor": [],
+    "registeredLogRecordProcessors": [],
+    "resource": [],
+    "forceFlushTimeoutMillis": [],
+    "logRecordLimits": [],
+    "processors": [],
+    "loggerMetrics": [],
+    "_loggerConfigurator": [],
+    "_loggerConfigs": [],
+    "constructor": [
+      "resource",
+      "forceFlushTimeoutMillis",
+      "logRecordLimits",
+      "processors",
+      "loggerConfigurator",
+      "meterProvider"
+    ],
+    "getLoggerConfig": [
+      "instrumentationScope"
+    ]
+  },
+  "DEFAULT_LOGGER_CONFIGURATOR": [],
+  "getInstrumentationScopeKey": [
+    "scope"
+  ],
+  "BatchLogRecordProcessor": {
+    "onShutdown": []
+  },
+  "isLogAttributeValue": [
+    "val"
+  ],
+  "isLogAttributeValueInternal": [
+    "val",
+    "visited"
+  ]
+}
