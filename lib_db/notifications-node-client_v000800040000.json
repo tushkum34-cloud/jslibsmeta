@@ -1,0 +1,135 @@
+{
+  "ApiClient": {
+    "constructor": [
+      "apiKeyOrUrl",
+      "serviceIdOrApiKey",
+      "apiKeyId",
+      "param"
+    ],
+    "proxy": [],
+    "restClient": [],
+    "urlBase": [],
+    "apiKeyId": [],
+    "serviceId": [],
+    "get": [
+      "path",
+      "additionalOptions"
+    ],
+    "post": [
+      "path",
+      "data"
+    ],
+    "setProxy": [
+      "proxyConfig"
+    ],
+    "setClient": [
+      "restClient"
+    ]
+  },
+  "createToken": [
+    "requestMethod",
+    "requestPath",
+    "apiKeyId",
+    "serviceId"
+  ],
+  "createGovukNotifyToken": [
+    "request_method",
+    "request_path",
+    "secret",
+    "client_id"
+  ],
+  "NotifyClient": {
+    "constructor": [
+      "apiKeyOrUrl",
+      "serviceIdOrApiKey",
+      "apiKeyId",
+      "param"
+    ],
+    "apiClient": [],
+    "sendEmail": [
+      "templateId",
+      "emailAddress",
+      "options"
+    ],
+    "sendSms": [
+      "templateId",
+      "phoneNumber",
+      "options"
+    ],
+    "sendLetter": [
+      "templateId",
+      "options"
+    ],
+    "sendPrecompiledLetter": [
+      "reference",
+      "pdf_file",
+      "postage"
+    ],
+    "getNotificationById": [
+      "notificationId"
+    ],
+    "getNotifications": [
+      "templateType",
+      "status",
+      "reference",
+      "olderThanId"
+    ],
+    "getPdfForLetterNotification": [
+      "notificationId"
+    ],
+    "getTemplateById": [
+      "templateId"
+    ],
+    "getTemplateByIdAndVersion": [
+      "templateId",
+      "version"
+    ],
+    "getAllTemplates": [
+      "templateType"
+    ],
+    "previewTemplateById": [
+      "templateId",
+      "personalisation"
+    ],
+    "getReceivedTexts": [
+      "olderThan"
+    ],
+    "setProxy": [
+      "proxyConfig"
+    ],
+    "setClient": [
+      "client"
+    ],
+    "prepareUpload": [
+      "fileData",
+      "options"
+    ]
+  },
+  "createNotificationPayload": [
+    "type",
+    "templateId",
+    "to",
+    "personalisation",
+    "reference",
+    "replyToId",
+    "oneClickUnsubscribeURL",
+    "sanitiseContentFor"
+  ],
+  "buildGetAllNotificationsQuery": [
+    "templateType",
+    "status",
+    "reference",
+    "olderThanId"
+  ],
+  "buildQueryStringFromDict": [
+    "dictionary"
+  ],
+  "checkOptionsKeys": [
+    "allowedKeys",
+    "options"
+  ],
+  "_check_and_encode_file": [
+    "file",
+    "size_limit"
+  ]
+}
