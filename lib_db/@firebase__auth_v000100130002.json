@@ -1,0 +1,2591 @@
+{
+  "ActionCodeURL": {
+    "apiKey": [],
+    "code": [],
+    "continueUrl": [],
+    "languageCode": [],
+    "operation": [],
+    "tenantId": [],
+    "constructor": [
+      "actionLink"
+    ],
+    "parseLink": [
+      "link"
+    ]
+  },
+  "AuthCredential": {
+    "providerId": [],
+    "signInMethod": [],
+    "constructor": [
+      "providerId",
+      "signInMethod"
+    ],
+    "toJSON": [],
+    "_getIdTokenResponse": [
+      "_auth"
+    ],
+    "_linkToIdToken": [
+      "_auth",
+      "_idToken"
+    ],
+    "_getReauthenticationResolver": [
+      "_auth"
+    ]
+  },
+  "AuthPopup": {
+    "window": [],
+    "associatedEvent": [],
+    "constructor": [
+      "window"
+    ],
+    "close": []
+  },
+  "BaseOAuthProvider": {
+    "scopes": [],
+    "addScope": [
+      "scope"
+    ],
+    "getScopes": []
+  },
+  "EmailAuthCredential": {
+    "_email": [],
+    "_password": [],
+    "_tenantId": [],
+    "constructor": [],
+    "_fromEmailAndPassword": [
+      "email",
+      "password"
+    ],
+    "_fromEmailAndCode": [
+      "email",
+      "oobCode",
+      "tenantId"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "json"
+    ],
+    "_getIdTokenResponse": [
+      "auth"
+    ],
+    "_linkToIdToken": [
+      "auth",
+      "idToken"
+    ],
+    "_getReauthenticationResolver": [
+      "auth"
+    ]
+  },
+  "EmailAuthProvider": {
+    "PROVIDER_ID": [],
+    "EMAIL_PASSWORD_SIGN_IN_METHOD": [],
+    "EMAIL_LINK_SIGN_IN_METHOD": [],
+    "providerId": [],
+    "credential": [
+      "email",
+      "password"
+    ],
+    "credentialWithLink": [
+      "email",
+      "emailLink"
+    ]
+  },
+  "FacebookAuthProvider": {
+    "FACEBOOK_SIGN_IN_METHOD": [],
+    "PROVIDER_ID": [],
+    "constructor": [],
+    "credential": [
+      "accessToken"
+    ],
+    "credentialFromResult": [
+      "userCredential"
+    ],
+    "credentialFromError": [
+      "error"
+    ],
+    "credentialFromTaggedObject": []
+  },
+  "FederatedAuthProvider": {
+    "providerId": [],
+    "defaultLanguageCode": [],
+    "customParameters": [],
+    "constructor": [
+      "providerId"
+    ],
+    "setDefaultLanguage": [
+      "languageCode"
+    ],
+    "setCustomParameters": [
+      "customOAuthParameters"
+    ],
+    "getCustomParameters": []
+  },
+  "GithubAuthProvider": {
+    "GITHUB_SIGN_IN_METHOD": [],
+    "PROVIDER_ID": [],
+    "constructor": [],
+    "credential": [
+      "accessToken"
+    ],
+    "credentialFromResult": [
+      "userCredential"
+    ],
+    "credentialFromError": [
+      "error"
+    ],
+    "credentialFromTaggedObject": []
+  },
+  "GoogleAuthProvider": {
+    "GOOGLE_SIGN_IN_METHOD": [],
+    "PROVIDER_ID": [],
+    "constructor": [],
+    "credential": [
+      "idToken",
+      "accessToken"
+    ],
+    "credentialFromResult": [
+      "userCredential"
+    ],
+    "credentialFromError": [
+      "error"
+    ],
+    "credentialFromTaggedObject": []
+  },
+  "OAuthCredential": {
+    "idToken": [],
+    "accessToken": [],
+    "secret": [],
+    "nonce": [],
+    "pendingToken": [],
+    "_fromParams": [
+      "params"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "json"
+    ],
+    "_getIdTokenResponse": [
+      "auth"
+    ],
+    "_linkToIdToken": [
+      "auth",
+      "idToken"
+    ],
+    "_getReauthenticationResolver": [
+      "auth"
+    ],
+    "buildRequest": []
+  },
+  "OAuthProvider": {
+    "credentialFromJSON": [
+      "json"
+    ],
+    "credential": [
+      "params"
+    ],
+    "_credential": [],
+    "credentialFromResult": [
+      "userCredential"
+    ],
+    "credentialFromError": [
+      "error"
+    ],
+    "oauthCredentialFromTaggedObject": []
+  },
+  "PhoneAuthCredential": {
+    "params": [],
+    "constructor": [],
+    "_fromVerification": [
+      "verificationId",
+      "verificationCode"
+    ],
+    "_fromTokenResponse": [
+      "phoneNumber",
+      "temporaryProof"
+    ],
+    "_getIdTokenResponse": [
+      "auth"
+    ],
+    "_linkToIdToken": [
+      "auth",
+      "idToken"
+    ],
+    "_getReauthenticationResolver": [
+      "auth"
+    ],
+    "_makeVerificationRequest": [],
+    "toJSON": [],
+    "fromJSON": [
+      "json"
+    ]
+  },
+  "PhoneAuthProvider": {
+    "PROVIDER_ID": [],
+    "PHONE_SIGN_IN_METHOD": [],
+    "providerId": [],
+    "auth": [],
+    "constructor": [
+      "auth"
+    ],
+    "verifyPhoneNumber": [
+      "phoneOptions",
+      "applicationVerifier"
+    ],
+    "credential": [
+      "verificationId",
+      "verificationCode"
+    ],
+    "credentialFromResult": [
+      "userCredential"
+    ],
+    "credentialFromError": [
+      "error"
+    ],
+    "credentialFromTaggedObject": []
+  },
+  "PhoneMultiFactorGenerator": {
+    "assertion": []
+  },
+  "RecaptchaConfig": {
+    "siteKey": [],
+    "recaptchaEnforcementState": [],
+    "constructor": [
+      "response"
+    ],
+    "getProviderEnforcementState": [
+      "providerStr"
+    ],
+    "isProviderEnabled": [
+      "providerStr"
+    ],
+    "isAnyProviderEnabled": []
+  },
+  "RecaptchaVerifier": {
+    "parameters": [],
+    "type": [],
+    "destroyed": [],
+    "widgetId": [],
+    "container": [],
+    "isInvisible": [],
+    "tokenChangeListeners": [],
+    "renderPromise": [],
+    "auth": [],
+    "_recaptchaLoader": [],
+    "recaptcha": [],
+    "constructor": [
+      "authExtern",
+      "containerOrId",
+      "parameters"
+    ],
+    "verify": [],
+    "render": [],
+    "_reset": [],
+    "clear": [],
+    "validateStartingState": [],
+    "makeTokenCallback": [],
+    "assertNotDestroyed": [],
+    "makeRenderPromise": [],
+    "init": [],
+    "getAssertedRecaptcha": []
+  },
+  "SAMLAuthProvider": {
+    "constructor": [
+      "providerId"
+    ],
+    "credentialFromResult": [
+      "userCredential"
+    ],
+    "credentialFromError": [
+      "error"
+    ],
+    "credentialFromJSON": [
+      "json"
+    ],
+    "samlCredentialFromTaggedObject": []
+  },
+  "TotpMultiFactorGenerator": {
+    "assertionForEnrollment": [
+      "secret",
+      "oneTimePassword"
+    ],
+    "assertionForSignIn": [
+      "enrollmentId",
+      "oneTimePassword"
+    ],
+    "generateSecret": [
+      "session"
+    ],
+    "FACTOR_ID": []
+  },
+  "TotpSecret": {
+    "sessionInfo": [],
+    "auth": [],
+    "secretKey": [],
+    "hashingAlgorithm": [],
+    "codeLength": [],
+    "codeIntervalSeconds": [],
+    "enrollmentCompletionDeadline": [],
+    "constructor": [],
+    "_fromStartTotpMfaEnrollmentResponse": [
+      "response",
+      "auth"
+    ],
+    "_makeTotpVerificationInfo": [
+      "otp"
+    ],
+    "generateQrCodeUrl": [
+      "accountName",
+      "issuer"
+    ]
+  },
+  "TwitterAuthProvider": {
+    "TWITTER_SIGN_IN_METHOD": [],
+    "PROVIDER_ID": [],
+    "constructor": [],
+    "credential": [
+      "token",
+      "secret"
+    ],
+    "credentialFromResult": [
+      "userCredential"
+    ],
+    "credentialFromError": [
+      "error"
+    ],
+    "credentialFromTaggedObject": []
+  },
+  "UserMetadata_2": {
+    "createdAt": [],
+    "lastLoginAt": [],
+    "creationTime": [],
+    "lastSignInTime": [],
+    "constructor": [
+      "createdAt",
+      "lastLoginAt"
+    ],
+    "_initializeTime": [],
+    "_copy": [
+      "metadata"
+    ],
+    "toJSON": []
+  },
+  "StsTokenManager": {
+    "refreshToken": [],
+    "accessToken": [],
+    "expirationTime": [],
+    "isExpired": [],
+    "updateFromServerResponse": [
+      "response"
+    ],
+    "updateFromIdToken": [
+      "idToken"
+    ],
+    "getToken": [
+      "auth",
+      "forceRefresh"
+    ],
+    "clearRefreshToken": [],
+    "refresh": [],
+    "updateTokensAndExpiration": [],
+    "fromJSON": [
+      "appName",
+      "object"
+    ],
+    "toJSON": [],
+    "_assign": [
+      "stsTokenManager"
+    ],
+    "_clone": [],
+    "_performRefresh": []
+  },
+  "_debugErrorMap": [],
+  "_prodErrorMap": [],
+  "_logWarn": [
+    "msg",
+    "param"
+  ],
+  "_logError": [
+    "msg",
+    "param"
+  ],
+  "_fail": [
+    "authOrCode",
+    "param"
+  ],
+  "_createError": [
+    "authOrCode",
+    "param"
+  ],
+  "_errorWithCustomMessage": [
+    "auth",
+    "code",
+    "message"
+  ],
+  "_serverAppCurrentUserOperationNotSupportedError": [
+    "auth"
+  ],
+  "_assertInstanceOf": [
+    "auth",
+    "object",
+    "instance"
+  ],
+  "createErrorInternal": [
+    "authOrCode",
+    "param"
+  ],
+  "_assert": [
+    "assertion",
+    "authOrCode",
+    "param"
+  ],
+  "debugFail": [
+    "failure"
+  ],
+  "debugAssert": [
+    "assertion",
+    "message"
+  ],
+  "_getCurrentUrl": [],
+  "_isHttpOrHttps": [],
+  "_getCurrentScheme": [],
+  "_isOnline": [],
+  "_getUserLanguage": [],
+  "Delay": {
+    "shortDelay": [],
+    "longDelay": [],
+    "isMobile": [],
+    "constructor": [
+      "shortDelay",
+      "longDelay"
+    ],
+    "get": []
+  },
+  "_emulatorUrl": [
+    "config",
+    "path"
+  ],
+  "FetchProvider": {
+    "fetchImpl": [],
+    "headersImpl": [],
+    "responseImpl": [],
+    "initialize": [
+      "fetchImpl",
+      "headersImpl",
+      "responseImpl"
+    ],
+    "fetch": [],
+    "headers": [],
+    "response": []
+  },
+  "_addTidIfNecessary": [
+    "auth",
+    "request"
+  ],
+  "_performApiRequest": [
+    "auth",
+    "method",
+    "path",
+    "request",
+    "param"
+  ],
+  "_performFetchWithErrorHandling": [
+    "auth",
+    "customErrorMap",
+    "fetchFn"
+  ],
+  "_performSignInRequest": [
+    "auth",
+    "method",
+    "path",
+    "request",
+    "param"
+  ],
+  "_getFinalTarget": [
+    "auth",
+    "host",
+    "path",
+    "query"
+  ],
+  "_parseEnforcementState": [
+    "enforcementStateStr"
+  ],
+  "NetworkTimeout": {
+    "clearNetworkTimeout": [],
+    "constructor": [
+      "auth"
+    ]
+  },
+  "_makeTaggedError": [
+    "auth",
+    "code",
+    "response"
+  ],
+  "isV2": [
+    "grecaptcha"
+  ],
+  "isEnterprise": [
+    "grecaptcha"
+  ],
+  "getRecaptchaParams": [
+    "auth"
+  ],
+  "getRecaptchaConfig": [
+    "auth",
+    "request"
+  ],
+  "deleteAccount": [
+    "auth",
+    "request"
+  ],
+  "deleteLinkedAccounts": [
+    "auth",
+    "request"
+  ],
+  "getAccountInfo": [
+    "auth",
+    "request"
+  ],
+  "utcTimestampToDateString": [
+    "utcTimestamp"
+  ],
+  "getIdToken": [
+    "user",
+    "param"
+  ],
+  "getIdTokenResult": [
+    "user",
+    "param"
+  ],
+  "secondsStringToMilliseconds": [
+    "seconds"
+  ],
+  "_parseToken": [
+    "token"
+  ],
+  "_tokenExpiresIn": [
+    "token"
+  ],
+  "_logoutIfInvalidated": [
+    "user",
+    "promise",
+    "param"
+  ],
+  "isUserInvalidated": [
+    "param"
+  ],
+  "ProactiveRefresh": {
+    "user": [],
+    "isRunning": [],
+    "timerId": [],
+    "errorBackoff": [],
+    "constructor": [
+      "user"
+    ],
+    "_start": [],
+    "_stop": [],
+    "getInterval": [],
+    "schedule": [],
+    "iteration": []
+  },
+  "UserMetadata": {
+    "createdAt": [],
+    "lastLoginAt": [],
+    "creationTime": [],
+    "lastSignInTime": [],
+    "constructor": [
+      "createdAt",
+      "lastLoginAt"
+    ],
+    "_initializeTime": [],
+    "_copy": [
+      "metadata"
+    ],
+    "toJSON": []
+  },
+  "_reloadWithoutSaving": [
+    "user"
+  ],
+  "reload": [
+    "user"
+  ],
+  "mergeProviderData": [
+    "original",
+    "newData"
+  ],
+  "extractProviderData": [
+    "providers"
+  ],
+  "requestStsToken": [
+    "auth",
+    "refreshToken"
+  ],
+  "revokeToken": [
+    "auth",
+    "request"
+  ],
+  "assertStringOrUndefined": [
+    "assertion",
+    "appName"
+  ],
+  "UserImpl": {
+    "providerId": [],
+    "stsTokenManager": [],
+    "accessToken": [],
+    "uid": [],
+    "auth": [],
+    "emailVerified": [],
+    "isAnonymous": [],
+    "tenantId": [],
+    "metadata": [],
+    "providerData": [],
+    "displayName": [],
+    "email": [],
+    "phoneNumber": [],
+    "photoURL": [],
+    "_redirectEventId": [],
+    "proactiveRefresh": [],
+    "constructor": [
+      "param"
+    ],
+    "getIdToken": [
+      "forceRefresh"
+    ],
+    "getIdTokenResult": [
+      "forceRefresh"
+    ],
+    "reload": [],
+    "reloadUserInfo": [],
+    "reloadListener": [],
+    "_assign": [
+      "user"
+    ],
+    "_clone": [
+      "auth"
+    ],
+    "_onReload": [
+      "callback"
+    ],
+    "_notifyReloadListener": [
+      "userInfo"
+    ],
+    "_startProactiveRefresh": [],
+    "_stopProactiveRefresh": [],
+    "_updateTokensIfNecessary": [
+      "response",
+      "reload"
+    ],
+    "delete": [],
+    "toJSON": [],
+    "refreshToken": [],
+    "_fromJSON": [
+      "auth",
+      "object"
+    ],
+    "_fromIdTokenResponse": [
+      "auth",
+      "idTokenResponse",
+      "isAnonymous"
+    ],
+    "_fromGetAccountInfoResponse": [
+      "auth",
+      "response",
+      "idToken"
+    ]
+  },
+  "_getInstance": [
+    "cls"
+  ],
+  "InMemoryPersistence": {
+    "type": [],
+    "storage": [],
+    "_isAvailable": [],
+    "_set": [
+      "key",
+      "value"
+    ],
+    "_get": [
+      "key"
+    ],
+    "_remove": [
+      "key"
+    ],
+    "_addListener": [
+      "_key",
+      "_listener"
+    ],
+    "_removeListener": [
+      "_key",
+      "_listener"
+    ]
+  },
+  "_persistenceKeyName": [
+    "key",
+    "apiKey",
+    "appName"
+  ],
+  "PersistenceUserManager": {
+    "persistence": [],
+    "auth": [],
+    "userKey": [],
+    "fullUserKey": [],
+    "fullPersistenceKey": [],
+    "boundEventHandler": [],
+    "constructor": [],
+    "setCurrentUser": [
+      "user"
+    ],
+    "getCurrentUser": [],
+    "removeCurrentUser": [],
+    "savePersistenceForRedirect": [],
+    "setPersistence": [
+      "newPersistence"
+    ],
+    "delete": [],
+    "create": [
+      "auth",
+      "persistenceHierarchy",
+      "userKey"
+    ]
+  },
+  "_getBrowserName": [
+    "userAgent"
+  ],
+  "_isFirefox": [
+    "param"
+  ],
+  "_isSafari": [
+    "param"
+  ],
+  "_isChromeIOS": [
+    "param"
+  ],
+  "_isIEMobile": [
+    "param"
+  ],
+  "_isAndroid": [
+    "param"
+  ],
+  "_isBlackBerry": [
+    "param"
+  ],
+  "_isWebOS": [
+    "param"
+  ],
+  "_isIOS": [
+    "param"
+  ],
+  "_isIOS7Or8": [
+    "param"
+  ],
+  "_isIOSStandalone": [
+    "param"
+  ],
+  "_isIE10": [],
+  "_isMobileBrowser": [
+    "param"
+  ],
+  "_getClientVersion": [
+    "clientPlatform",
+    "param"
+  ],
+  "AuthMiddlewareQueue": {
+    "auth": [],
+    "queue": [],
+    "constructor": [
+      "auth"
+    ],
+    "pushCallback": [
+      "callback",
+      "onAbort"
+    ],
+    "runMiddleware": [
+      "nextUser"
+    ]
+  },
+  "wrappedCallback": [
+    "user"
+  ],
+  "_getPasswordPolicy": [
+    "auth",
+    "param"
+  ],
+  "PasswordPolicyImpl": {
+    "customStrengthOptions": [],
+    "allowedNonAlphanumericCharacters": [],
+    "enforcementState": [],
+    "forceUpgradeOnSignin": [],
+    "schemaVersion": [],
+    "constructor": [
+      "response"
+    ],
+    "validatePassword": [
+      "password"
+    ],
+    "validatePasswordLengthOptions": [],
+    "validatePasswordCharacterOptions": [],
+    "updatePasswordCharacterOptionsStatuses": []
+  },
+  "AuthImpl": {
+    "app": [],
+    "heartbeatServiceProvider": [],
+    "appCheckServiceProvider": [],
+    "config": [],
+    "currentUser": [],
+    "emulatorConfig": [],
+    "operations": [],
+    "persistenceManager": [],
+    "redirectPersistenceManager": [],
+    "authStateSubscription": [],
+    "idTokenSubscription": [],
+    "beforeStateQueue": [],
+    "redirectUser": [],
+    "isProactiveRefreshEnabled": [],
+    "EXPECTED_PASSWORD_POLICY_SCHEMA_VERSION": [],
+    "_canInitEmulator": [],
+    "_isInitialized": [],
+    "_deleted": [],
+    "_initializationPromise": [],
+    "_popupRedirectResolver": [],
+    "_errorFactory": [],
+    "_agentRecaptchaConfig": [],
+    "_tenantRecaptchaConfigs": [],
+    "_projectPasswordPolicy": [],
+    "_tenantPasswordPolicies": [],
+    "_resolvePersistenceManagerAvailable": [],
+    "_persistenceManagerAvailable": [],
+    "name": [],
+    "lastNotifiedUid": [],
+    "languageCode": [],
+    "tenantId": [],
+    "settings": [],
+    "constructor": [
+      "app",
+      "heartbeatServiceProvider",
+      "appCheckServiceProvider",
+      "config"
+    ],
+    "_initializeWithPersistence": [
+      "persistenceHierarchy",
+      "popupRedirectResolver"
+    ],
+    "_onStorageEvent": [],
+    "initializeCurrentUserFromIdToken": [],
+    "initializeCurrentUser": [],
+    "tryRedirectSignIn": [],
+    "reloadAndSetCurrentUserOrClear": [],
+    "useDeviceLanguage": [],
+    "_delete": [],
+    "updateCurrentUser": [
+      "userExtern"
+    ],
+    "_updateCurrentUser": [
+      "user",
+      "skipBeforeStateCallbacks"
+    ],
+    "signOut": [],
+    "setPersistence": [
+      "persistence"
+    ],
+    "_getRecaptchaConfig": [],
+    "validatePassword": [
+      "password"
+    ],
+    "_getPasswordPolicyInternal": [],
+    "_updatePasswordPolicy": [],
+    "_getPersistenceType": [],
+    "_getPersistence": [],
+    "_updateErrorMap": [
+      "errorMap"
+    ],
+    "onAuthStateChanged": [
+      "nextOrObserver",
+      "error",
+      "completed"
+    ],
+    "beforeAuthStateChanged": [
+      "callback",
+      "onAbort"
+    ],
+    "onIdTokenChanged": [
+      "nextOrObserver",
+      "error",
+      "completed"
+    ],
+    "authStateReady": [],
+    "revokeAccessToken": [
+      "token"
+    ],
+    "toJSON": [],
+    "_setRedirectUser": [
+      "user",
+      "popupRedirectResolver"
+    ],
+    "getOrInitRedirectPersistenceManager": [],
+    "_redirectUserForId": [
+      "id"
+    ],
+    "_persistUserIfCurrent": [
+      "user"
+    ],
+    "_notifyListenersIfCurrent": [
+      "user"
+    ],
+    "_key": [],
+    "_startProactiveRefresh": [],
+    "_stopProactiveRefresh": [],
+    "_currentUser": [],
+    "notifyAuthListeners": [],
+    "registerStateListener": [],
+    "directlySetCurrentUser": [],
+    "queue": [],
+    "assertedPersistence": [],
+    "frameworks": [],
+    "clientVersion": [],
+    "_logFramework": [
+      "framework"
+    ],
+    "_getFrameworks": [],
+    "_getAdditionalHeaders": [],
+    "_getAppCheckToken": []
+  },
+  "_castAuth": [
+    "auth"
+  ],
+  "Subscription": {
+    "constructor": [
+      "auth"
+    ],
+    "next": []
+  },
+  "_setExternalJSProvider": [
+    "p"
+  ],
+  "_loadJS": [
+    "url"
+  ],
+  "_recaptchaV2ScriptUrl": [],
+  "_recaptchaEnterpriseScriptUrl": [],
+  "_gapiScriptUrl": [],
+  "_generateCallbackName": [
+    "prefix"
+  ],
+  "MockReCaptcha": {
+    "auth": [],
+    "counter": [],
+    "_widgets": [],
+    "constructor": [
+      "auth"
+    ],
+    "render": [
+      "container",
+      "parameters"
+    ],
+    "reset": [
+      "optWidgetId"
+    ],
+    "getResponse": [
+      "optWidgetId"
+    ],
+    "execute": [
+      "optWidgetId"
+    ]
+  },
+  "MockGreCAPTCHATopLevel": {
+    "enterprise": [],
+    "ready": [
+      "callback"
+    ],
+    "execute": [
+      "_siteKey",
+      "_options"
+    ],
+    "render": [
+      "_container",
+      "_parameters"
+    ]
+  },
+  "MockGreCAPTCHA": {
+    "ready": [
+      "callback"
+    ],
+    "execute": [
+      "_siteKey",
+      "_options"
+    ],
+    "render": [
+      "_container",
+      "_parameters"
+    ]
+  },
+  "MockWidget": {
+    "params": [],
+    "container": [],
+    "isVisible": [],
+    "timerId": [],
+    "deleted": [],
+    "responseToken": [],
+    "clickHandler": [],
+    "constructor": [
+      "containerOrId",
+      "appName",
+      "params"
+    ],
+    "getResponse": [],
+    "delete": [],
+    "execute": [],
+    "checkIfDeleted": []
+  },
+  "generateRandomAlphaNumericString": [
+    "len"
+  ],
+  "RecaptchaEnterpriseVerifier": {
+    "type": [],
+    "auth": [],
+    "constructor": [
+      "authExtern"
+    ],
+    "verify": [
+      "action",
+      "forceRefresh"
+    ]
+  },
+  "retrieveSiteKey": [
+    "auth"
+  ],
+  "retrieveRecaptchaToken": [
+    "siteKey",
+    "resolve",
+    "reject"
+  ],
+  "injectRecaptchaFields": [
+    "auth",
+    "request",
+    "action",
+    "param",
+    "param"
+  ],
+  "handleRecaptchaFlow": [
+    "authInstance",
+    "request",
+    "actionName",
+    "actionMethod",
+    "recaptchaAuthProvider"
+  ],
+  "_initializeRecaptchaConfig": [
+    "auth"
+  ],
+  "initializeAuth": [
+    "app",
+    "deps"
+  ],
+  "_initializeAuthInstance": [
+    "auth",
+    "deps"
+  ],
+  "connectAuthEmulator": [
+    "auth",
+    "url",
+    "options"
+  ],
+  "extractProtocol": [
+    "url"
+  ],
+  "extractHostAndPort": [
+    "url"
+  ],
+  "parsePort": [
+    "portStr"
+  ],
+  "emitEmulatorWarning": [],
+  "attachBanner": [],
+  "resetPassword": [
+    "auth",
+    "request"
+  ],
+  "updateEmailPassword": [
+    "auth",
+    "request"
+  ],
+  "linkEmailPassword": [
+    "auth",
+    "request"
+  ],
+  "applyActionCode$1": [
+    "auth",
+    "request"
+  ],
+  "signInWithPassword": [
+    "auth",
+    "request"
+  ],
+  "sendOobCode": [
+    "auth",
+    "request"
+  ],
+  "sendEmailVerification$1": [
+    "auth",
+    "request"
+  ],
+  "sendPasswordResetEmail$1": [
+    "auth",
+    "request"
+  ],
+  "sendSignInLinkToEmail$1": [
+    "auth",
+    "request"
+  ],
+  "verifyAndChangeEmail": [
+    "auth",
+    "request"
+  ],
+  "signInWithEmailLink$1": [
+    "auth",
+    "request"
+  ],
+  "signInWithEmailLinkForLinking": [
+    "auth",
+    "request"
+  ],
+  "signInWithIdp": [
+    "auth",
+    "request"
+  ],
+  "sendPhoneVerificationCode": [
+    "auth",
+    "request"
+  ],
+  "signInWithPhoneNumber$1": [
+    "auth",
+    "request"
+  ],
+  "linkWithPhoneNumber$1": [
+    "auth",
+    "request"
+  ],
+  "verifyPhoneNumberForExisting": [
+    "auth",
+    "request"
+  ],
+  "parseMode": [
+    "mode"
+  ],
+  "parseDeepLink": [
+    "url"
+  ],
+  "parseActionCodeURL": [
+    "link"
+  ],
+  "SAMLAuthCredential": {
+    "pendingToken": [],
+    "constructor": [],
+    "_getIdTokenResponse": [
+      "auth"
+    ],
+    "_linkToIdToken": [
+      "auth",
+      "idToken"
+    ],
+    "_getReauthenticationResolver": [
+      "auth"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "json"
+    ],
+    "_create": [
+      "providerId",
+      "pendingToken"
+    ],
+    "buildRequest": []
+  },
+  "signUp": [
+    "auth",
+    "request"
+  ],
+  "UserCredentialImpl": {
+    "user": [],
+    "providerId": [],
+    "_tokenResponse": [],
+    "operationType": [],
+    "constructor": [
+      "params"
+    ],
+    "_fromIdTokenResponse": [
+      "auth",
+      "operationType",
+      "idTokenResponse",
+      "isAnonymous"
+    ],
+    "_forOperation": [
+      "user",
+      "operationType",
+      "response"
+    ]
+  },
+  "providerIdForResponse": [
+    "response"
+  ],
+  "signInAnonymously": [
+    "auth"
+  ],
+  "MultiFactorError": {
+    "operationType": [],
+    "user": [],
+    "customData": [],
+    "constructor": [],
+    "_fromErrorAndOperation": [
+      "auth",
+      "error",
+      "operationType",
+      "user"
+    ]
+  },
+  "_processCredentialSavingMfaContextIfNecessary": [
+    "auth",
+    "operationType",
+    "credential",
+    "user"
+  ],
+  "providerDataAsNames": [
+    "providerData"
+  ],
+  "unlink": [
+    "user",
+    "providerId"
+  ],
+  "_link$1": [
+    "user",
+    "credential",
+    "param"
+  ],
+  "_assertLinkedStatus": [
+    "expected",
+    "user",
+    "provider"
+  ],
+  "_reauthenticate": [
+    "user",
+    "credential",
+    "param"
+  ],
+  "_signInWithCredential": [
+    "auth",
+    "credential",
+    "param"
+  ],
+  "signInWithCredential": [
+    "auth",
+    "credential"
+  ],
+  "linkWithCredential": [
+    "user",
+    "credential"
+  ],
+  "reauthenticateWithCredential": [
+    "user",
+    "credential"
+  ],
+  "signInWithCustomToken$1": [
+    "auth",
+    "request"
+  ],
+  "signInWithCustomToken": [
+    "auth",
+    "customToken"
+  ],
+  "MultiFactorInfoImpl": {
+    "factorId": [],
+    "uid": [],
+    "displayName": [],
+    "enrollmentTime": [],
+    "constructor": [
+      "factorId",
+      "response"
+    ],
+    "_fromServerResponse": [
+      "auth",
+      "enrollment"
+    ]
+  },
+  "PhoneMultiFactorInfoImpl": {
+    "phoneNumber": [],
+    "constructor": [],
+    "_fromServerResponse": [
+      "_auth",
+      "enrollment"
+    ]
+  },
+  "TotpMultiFactorInfoImpl": {
+    "constructor": [],
+    "_fromServerResponse": [
+      "_auth",
+      "enrollment"
+    ]
+  },
+  "_setActionCodeSettingsOnRequest": [
+    "auth",
+    "request",
+    "actionCodeSettings"
+  ],
+  "recachePasswordPolicy": [
+    "auth"
+  ],
+  "sendPasswordResetEmail": [
+    "auth",
+    "email",
+    "actionCodeSettings"
+  ],
+  "confirmPasswordReset": [
+    "auth",
+    "oobCode",
+    "newPassword"
+  ],
+  "applyActionCode": [
+    "auth",
+    "oobCode"
+  ],
+  "checkActionCode": [
+    "auth",
+    "oobCode"
+  ],
+  "verifyPasswordResetCode": [
+    "auth",
+    "code"
+  ],
+  "createUserWithEmailAndPassword": [
+    "auth",
+    "email",
+    "password"
+  ],
+  "signInWithEmailAndPassword": [
+    "auth",
+    "email",
+    "password"
+  ],
+  "sendSignInLinkToEmail": [
+    "auth",
+    "email",
+    "actionCodeSettings"
+  ],
+  "setActionCodeSettings": [
+    "request",
+    "actionCodeSettings"
+  ],
+  "isSignInWithEmailLink": [
+    "auth",
+    "emailLink"
+  ],
+  "signInWithEmailLink": [
+    "auth",
+    "email",
+    "emailLink"
+  ],
+  "createAuthUri": [
+    "auth",
+    "request"
+  ],
+  "fetchSignInMethodsForEmail": [
+    "auth",
+    "email"
+  ],
+  "sendEmailVerification": [
+    "user",
+    "actionCodeSettings"
+  ],
+  "verifyBeforeUpdateEmail": [
+    "user",
+    "newEmail",
+    "actionCodeSettings"
+  ],
+  "updateProfile$1": [
+    "auth",
+    "request"
+  ],
+  "updateProfile": [
+    "user",
+    "param"
+  ],
+  "updateEmail": [
+    "user",
+    "newEmail"
+  ],
+  "updatePassword": [
+    "user",
+    "newPassword"
+  ],
+  "updateEmailOrPassword": [
+    "user",
+    "email",
+    "password"
+  ],
+  "_fromIdTokenResponse": [
+    "idTokenResponse"
+  ],
+  "GenericAdditionalUserInfo": {
+    "constructor": [
+      "isNewUser",
+      "providerId",
+      "param"
+    ]
+  },
+  "FederatedAdditionalUserInfoWithUsername": {
+    "constructor": [
+      "isNewUser",
+      "providerId",
+      "profile",
+      "username"
+    ]
+  },
+  "FacebookAdditionalUserInfo": {
+    "constructor": [
+      "isNewUser",
+      "profile"
+    ]
+  },
+  "GithubAdditionalUserInfo": {
+    "constructor": [
+      "isNewUser",
+      "profile"
+    ]
+  },
+  "GoogleAdditionalUserInfo": {
+    "constructor": [
+      "isNewUser",
+      "profile"
+    ]
+  },
+  "TwitterAdditionalUserInfo": {
+    "constructor": [
+      "isNewUser",
+      "profile",
+      "screenName"
+    ]
+  },
+  "getAdditionalUserInfo": [
+    "userCredential"
+  ],
+  "setPersistence": [
+    "auth",
+    "persistence"
+  ],
+  "initializeRecaptchaConfig": [
+    "auth"
+  ],
+  "validatePassword": [
+    "auth",
+    "password"
+  ],
+  "onIdTokenChanged": [
+    "auth",
+    "nextOrObserver",
+    "error",
+    "completed"
+  ],
+  "beforeAuthStateChanged": [
+    "auth",
+    "callback",
+    "onAbort"
+  ],
+  "onAuthStateChanged": [
+    "auth",
+    "nextOrObserver",
+    "error",
+    "completed"
+  ],
+  "useDeviceLanguage": [
+    "auth"
+  ],
+  "updateCurrentUser": [
+    "auth",
+    "user"
+  ],
+  "signOut": [
+    "auth"
+  ],
+  "revokeAccessToken": [
+    "auth",
+    "token"
+  ],
+  "deleteUser": [
+    "user"
+  ],
+  "MultiFactorSessionImpl": {
+    "type": [],
+    "credential": [],
+    "user": [],
+    "constructor": [],
+    "_fromIdtoken": [
+      "idToken",
+      "user"
+    ],
+    "_fromMfaPendingCredential": [
+      "mfaPendingCredential"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "obj"
+    ]
+  },
+  "MultiFactorResolverImpl": {
+    "session": [],
+    "hints": [],
+    "signInResolver": [],
+    "constructor": [],
+    "_fromError": [
+      "authExtern",
+      "error"
+    ],
+    "resolveSignIn": [
+      "assertionExtern"
+    ]
+  },
+  "getMultiFactorResolver": [
+    "auth",
+    "error"
+  ],
+  "startEnrollPhoneMfa": [
+    "auth",
+    "request"
+  ],
+  "finalizeEnrollPhoneMfa": [
+    "auth",
+    "request"
+  ],
+  "startEnrollTotpMfa": [
+    "auth",
+    "request"
+  ],
+  "finalizeEnrollTotpMfa": [
+    "auth",
+    "request"
+  ],
+  "withdrawMfa": [
+    "auth",
+    "request"
+  ],
+  "MultiFactorUserImpl": {
+    "user": [],
+    "enrolledFactors": [],
+    "constructor": [],
+    "_fromUser": [
+      "user"
+    ],
+    "getSession": [],
+    "enroll": [
+      "assertionExtern",
+      "displayName"
+    ],
+    "unenroll": [
+      "infoOrUid"
+    ]
+  },
+  "multiFactor": [
+    "user"
+  ],
+  "BrowserPersistenceClass": {
+    "storageRetriever": [],
+    "type": [],
+    "constructor": [
+      "storageRetriever",
+      "type"
+    ],
+    "_isAvailable": [],
+    "_set": [
+      "key",
+      "value"
+    ],
+    "_get": [
+      "key"
+    ],
+    "_remove": [
+      "key"
+    ],
+    "storage": []
+  },
+  "BrowserLocalPersistence": {
+    "constructor": [],
+    "forAllChangedKeys": [
+      "cb"
+    ],
+    "onStorageEvent": [
+      "event",
+      "param"
+    ],
+    "notifyListeners": [
+      "key",
+      "value"
+    ],
+    "startPolling": [],
+    "stopPolling": [],
+    "attachListener": [],
+    "detachListener": [],
+    "_addListener": [
+      "key",
+      "listener"
+    ],
+    "_removeListener": [
+      "key",
+      "listener"
+    ],
+    "_set": [
+      "key",
+      "value"
+    ],
+    "_get": [
+      "key"
+    ],
+    "_remove": [
+      "key"
+    ]
+  },
+  "triggerListeners": [],
+  "getDocumentCookie": [
+    "name"
+  ],
+  "getCookieName": [
+    "key"
+  ],
+  "CookiePersistence": {
+    "type": [],
+    "listenerUnsubscribes": [],
+    "_getFinalTarget": [
+      "originalUrl"
+    ],
+    "_isAvailable": [],
+    "_set": [
+      "_key",
+      "_value"
+    ],
+    "_get": [
+      "key"
+    ],
+    "_remove": [
+      "key"
+    ],
+    "_addListener": [
+      "key",
+      "listener"
+    ],
+    "_removeListener": [
+      "_key",
+      "listener"
+    ]
+  },
+  "cb": [
+    "event"
+  ],
+  "unsubscribe": [],
+  "BrowserSessionPersistence": {
+    "constructor": [],
+    "_addListener": [
+      "_key",
+      "_listener"
+    ],
+    "_removeListener": [
+      "_key",
+      "_listener"
+    ]
+  },
+  "_allSettled": [
+    "promises"
+  ],
+  "Receiver": {
+    "eventTarget": [],
+    "receivers": [],
+    "boundEventHandler": [],
+    "handlersMap": [],
+    "constructor": [
+      "eventTarget"
+    ],
+    "_getInstance": [
+      "eventTarget"
+    ],
+    "isListeningto": [],
+    "handleEvent": [],
+    "_subscribe": [
+      "eventType",
+      "eventHandler"
+    ],
+    "_unsubscribe": [
+      "eventType",
+      "eventHandler"
+    ]
+  },
+  "_generateEventId": [
+    "param",
+    "param"
+  ],
+  "Sender": {
+    "target": [],
+    "handlers": [],
+    "constructor": [
+      "target"
+    ],
+    "removeMessageHandler": [],
+    "_send": [
+      "eventType",
+      "data",
+      "timeout"
+    ]
+  },
+  "_window": [],
+  "_setWindowLocation": [
+    "url"
+  ],
+  "_isWorker": [],
+  "_getActiveServiceWorker": [],
+  "_getServiceWorkerController": [],
+  "_getWorkerGlobalScope": [],
+  "DBPromise": {
+    "constructor": [
+      "request"
+    ],
+    "toPromise": []
+  },
+  "getObjectStore": [
+    "db",
+    "isReadWrite"
+  ],
+  "_deleteDatabase": [],
+  "_openDatabase": [],
+  "_putObject": [
+    "db",
+    "key",
+    "value"
+  ],
+  "getObject": [
+    "db",
+    "key"
+  ],
+  "_deleteObject": [
+    "db",
+    "key"
+  ],
+  "IndexedDBLocalPersistence": {
+    "constructor": [],
+    "_openDb": [],
+    "_withRetries": [
+      "op"
+    ],
+    "initializeServiceWorkerMessaging": [],
+    "initializeReceiver": [],
+    "initializeSender": [],
+    "notifyServiceWorker": [
+      "key"
+    ],
+    "_isAvailable": [],
+    "_withPendingWrite": [
+      "write"
+    ],
+    "_set": [
+      "key",
+      "value"
+    ],
+    "_get": [
+      "key"
+    ],
+    "_remove": [
+      "key"
+    ],
+    "_poll": [],
+    "notifyListeners": [
+      "key",
+      "newValue"
+    ],
+    "startPolling": [],
+    "stopPolling": [],
+    "_addListener": [
+      "key",
+      "listener"
+    ],
+    "_removeListener": [
+      "key",
+      "listener"
+    ]
+  },
+  "startSignInPhoneMfa": [
+    "auth",
+    "request"
+  ],
+  "finalizeSignInPhoneMfa": [
+    "auth",
+    "request"
+  ],
+  "finalizeSignInTotpMfa": [
+    "auth",
+    "request"
+  ],
+  "ReCaptchaLoaderImpl": {
+    "hostLanguage": [],
+    "counter": [],
+    "librarySeparatelyLoaded": [],
+    "load": [
+      "auth",
+      "hl"
+    ],
+    "clearedOneInstance": [],
+    "shouldResolveImmediately": []
+  },
+  "isHostLanguageValid": [
+    "hl"
+  ],
+  "MockReCaptchaLoaderImpl": {
+    "load": [
+      "auth"
+    ],
+    "clearedOneInstance": []
+  },
+  "tokenChange": [
+    "token"
+  ],
+  "domReady": [],
+  "ConfirmationResultImpl": {
+    "constructor": [
+      "verificationId",
+      "onConfirmation"
+    ],
+    "confirm": [
+      "verificationCode"
+    ]
+  },
+  "signInWithPhoneNumber": [
+    "auth",
+    "request"
+  ],
+  "linkWithPhoneNumber": [
+    "auth",
+    "request"
+  ],
+  "reauthenticateWithPhoneNumber": [
+    "user",
+    "phoneNumber",
+    "appVerifier"
+  ],
+  "_verifyPhoneNumber": [
+    "auth",
+    "options",
+    "verifier"
+  ],
+  "startEnrollPhoneMfaActionCallback": [
+    "authInstance",
+    "request"
+  ],
+  "startSignInPhoneMfaActionCallback": [
+    "authInstance",
+    "request"
+  ],
+  "sendPhoneVerificationCodeActionCallback": [
+    "authInstance",
+    "request"
+  ],
+  "updatePhoneNumber": [
+    "user",
+    "credential"
+  ],
+  "injectRecaptchaV2Token": [
+    "auth",
+    "request",
+    "recaptchaV2Verifier"
+  ],
+  "_withDefaultResolver": [
+    "auth",
+    "resolverOverride"
+  ],
+  "IdpCredential": {
+    "constructor": [
+      "params"
+    ],
+    "_getIdTokenResponse": [
+      "auth"
+    ],
+    "_linkToIdToken": [
+      "auth",
+      "idToken"
+    ],
+    "_getReauthenticationResolver": [
+      "auth"
+    ],
+    "_buildIdpRequest": [
+      "idToken"
+    ]
+  },
+  "_signIn": [
+    "params"
+  ],
+  "_reauth": [
+    "params"
+  ],
+  "_link": [
+    "user",
+    "credential",
+    "param"
+  ],
+  "AbstractPopupRedirectOperation": {
+    "auth": [],
+    "resolver": [],
+    "user": [],
+    "bypassAuthState": [],
+    "pendingPromise": [],
+    "eventManager": [],
+    "filter": [],
+    "eventId": [],
+    "constructor": [
+      "auth",
+      "filter",
+      "resolver",
+      "user",
+      "bypassAuthState"
+    ],
+    "onExecution": [],
+    "execute": [],
+    "onAuthEvent": [
+      "event"
+    ],
+    "onError": [
+      "error"
+    ],
+    "getIdpTask": [],
+    "resolve": [
+      "cred"
+    ],
+    "reject": [
+      "error"
+    ],
+    "unregisterAndCleanUp": [],
+    "cleanUp": []
+  },
+  "signInWithPopup": [
+    "auth",
+    "provider",
+    "resolver"
+  ],
+  "reauthenticateWithPopup": [
+    "user",
+    "provider",
+    "resolver"
+  ],
+  "linkWithPopup": [
+    "user",
+    "provider",
+    "resolver"
+  ],
+  "PopupOperation": {
+    "constructor": [
+      "auth",
+      "filter",
+      "provider",
+      "resolver",
+      "user"
+    ],
+    "executeNotNull": [],
+    "onExecution": [],
+    "eventId": [],
+    "cancel": [],
+    "cleanUp": [],
+    "pollUserCancellation": []
+  },
+  "poll": [],
+  "RedirectAction": {
+    "eventId": [],
+    "constructor": [
+      "auth",
+      "resolver",
+      "bypassAuthState"
+    ],
+    "execute": [],
+    "onAuthEvent": [
+      "event"
+    ],
+    "onExecution": [],
+    "cleanUp": []
+  },
+  "_getAndClearPendingRedirectStatus": [
+    "resolver",
+    "auth"
+  ],
+  "_setPendingRedirectStatus": [
+    "resolver",
+    "auth"
+  ],
+  "_clearRedirectOutcomes": [],
+  "_overrideRedirectResult": [
+    "auth",
+    "result"
+  ],
+  "resolverPersistence": [
+    "resolver"
+  ],
+  "pendingRedirectKey": [
+    "auth"
+  ],
+  "signInWithRedirect": [
+    "auth",
+    "provider",
+    "resolver"
+  ],
+  "_signInWithRedirect": [
+    "auth",
+    "provider",
+    "resolver"
+  ],
+  "reauthenticateWithRedirect": [
+    "user",
+    "provider",
+    "resolver"
+  ],
+  "_reauthenticateWithRedirect": [
+    "user",
+    "provider",
+    "resolver"
+  ],
+  "linkWithRedirect": [
+    "user",
+    "provider",
+    "resolver"
+  ],
+  "_linkWithRedirect": [
+    "user",
+    "provider",
+    "resolver"
+  ],
+  "getRedirectResult": [
+    "auth",
+    "resolver"
+  ],
+  "_getRedirectResult": [
+    "auth",
+    "resolverExtern",
+    "param"
+  ],
+  "prepareUserForRedirect": [
+    "user"
+  ],
+  "AuthEventManager": {
+    "auth": [],
+    "cachedEventUids": [],
+    "consumers": [],
+    "queuedRedirectEvent": [],
+    "hasHandledPotentialRedirect": [],
+    "lastProcessedEventTime": [],
+    "constructor": [
+      "auth"
+    ],
+    "registerConsumer": [
+      "authEventConsumer"
+    ],
+    "unregisterConsumer": [
+      "authEventConsumer"
+    ],
+    "onEvent": [
+      "event"
+    ],
+    "sendToConsumer": [],
+    "isEventForConsumer": [],
+    "hasEventBeenHandled": [],
+    "saveEventToCache": []
+  },
+  "eventUid": [
+    "e"
+  ],
+  "isNullRedirectEvent": [
+    "param"
+  ],
+  "isRedirectEvent": [
+    "event"
+  ],
+  "_getProjectConfig": [
+    "auth",
+    "param"
+  ],
+  "_validateOrigin": [
+    "auth"
+  ],
+  "matchDomain": [
+    "expected"
+  ],
+  "resetUnloadedGapiModules": [],
+  "loadGapi": [
+    "auth"
+  ],
+  "loadGapiIframe": [],
+  "_loadGapi": [
+    "auth"
+  ],
+  "getIframeUrl": [
+    "auth"
+  ],
+  "_openIframe": [
+    "auth"
+  ],
+  "clearTimerAndResolve": [],
+  "_open": [
+    "auth",
+    "url",
+    "name",
+    "param",
+    "param"
+  ],
+  "openAsNewWindowIOS": [
+    "url",
+    "target"
+  ],
+  "_getRedirectUrl": [
+    "auth",
+    "provider",
+    "authType",
+    "redirectUrl",
+    "eventId",
+    "additionalParams"
+  ],
+  "getHandlerBase": [
+    "param"
+  ],
+  "BrowserPopupRedirectResolver": {
+    "constructor": [],
+    "_openPopup": [
+      "auth",
+      "provider",
+      "authType",
+      "eventId"
+    ],
+    "_openRedirect": [
+      "auth",
+      "provider",
+      "authType",
+      "eventId"
+    ],
+    "_initialize": [
+      "auth"
+    ],
+    "initAndGetManager": [
+      "auth"
+    ],
+    "_isIframeWebStorageSupported": [
+      "auth",
+      "cb"
+    ],
+    "_originValidation": [
+      "auth"
+    ],
+    "_shouldInitProactively": []
+  },
+  "MultiFactorAssertionImpl": {
+    "factorId": [],
+    "constructor": [
+      "factorId"
+    ],
+    "_process": [
+      "auth",
+      "session",
+      "displayName"
+    ],
+    "_finalizeEnroll": [
+      "auth",
+      "idToken",
+      "displayName"
+    ],
+    "_finalizeSignIn": [
+      "auth",
+      "mfaPendingCredential"
+    ]
+  },
+  "PhoneMultiFactorAssertionImpl": {
+    "credential": [],
+    "constructor": [],
+    "_fromCredential": [
+      "credential"
+    ],
+    "_finalizeEnroll": [
+      "auth",
+      "idToken",
+      "displayName"
+    ],
+    "_finalizeSignIn": [
+      "auth",
+      "mfaPendingCredential"
+    ]
+  },
+  "TotpMultiFactorAssertionImpl": {
+    "otp": [],
+    "enrollmentId": [],
+    "secret": [],
+    "constructor": [
+      "otp",
+      "enrollmentId",
+      "secret"
+    ],
+    "_fromSecret": [
+      "secret",
+      "otp"
+    ],
+    "_fromEnrollmentId": [
+      "enrollmentId",
+      "otp"
+    ],
+    "_finalizeEnroll": [
+      "auth",
+      "idToken",
+      "displayName"
+    ],
+    "_finalizeSignIn": [
+      "auth",
+      "mfaPendingCredential"
+    ]
+  },
+  "_isEmptyString": [
+    "input"
+  ],
+  "AuthInterop": {
+    "auth": [],
+    "internalListeners": [],
+    "constructor": [
+      "auth"
+    ],
+    "getUid": [],
+    "getToken": [
+      "forceRefresh"
+    ],
+    "addAuthTokenListener": [
+      "listener"
+    ],
+    "removeAuthTokenListener": [
+      "listener"
+    ],
+    "assertAuthConfigured": [],
+    "updateProactiveRefresh": []
+  },
+  "getVersionForPlatform": [
+    "clientPlatform"
+  ],
+  "registerAuth": [
+    "clientPlatform"
+  ],
+  "mintCookieFactory": [
+    "url"
+  ],
+  "getAuth": [
+    "param"
+  ],
+  "getScriptParentElement": [],
+  "_cordovaWindow": [],
+  "_generateHandlerUrl": [
+    "auth",
+    "event",
+    "provider"
+  ],
+  "_performRedirect": [
+    "handlerUrl"
+  ],
+  "_waitForAppResume": [
+    "auth",
+    "eventListener",
+    "iabRef"
+  ],
+  "cleanup": [],
+  "authEventSeen": [],
+  "resumed": [],
+  "visibilityChanged": [],
+  "_checkCordovaConfiguration": [
+    "auth"
+  ],
+  "computeSha256": [
+    "sessionId"
+  ],
+  "stringToArrayBuffer": [
+    "str"
+  ],
+  "CordovaAuthEventManager": {
+    "passiveListeners": [],
+    "resolveInitialized": [],
+    "initPromise": [],
+    "addPassiveListener": [
+      "cb"
+    ],
+    "removePassiveListener": [
+      "cb"
+    ],
+    "resetRedirect": [],
+    "onEvent": [
+      "event"
+    ],
+    "initialized": []
+  },
+  "_generateNewEvent": [
+    "auth",
+    "type",
+    "param"
+  ],
+  "_savePartialEvent": [
+    "auth",
+    "event"
+  ],
+  "_getAndRemoveEvent": [
+    "auth"
+  ],
+  "_eventFromPartialAndUrl": [
+    "partialEvent",
+    "url"
+  ],
+  "generateSessionId": [],
+  "storage": [],
+  "persistenceKey": [
+    "auth"
+  ],
+  "parseJsonOrNull": [
+    "json"
+  ],
+  "_getDeepLinkFromCallback": [
+    "url"
+  ],
+  "searchParamsOrEmpty": [
+    "url"
+  ],
+  "CordovaPopupRedirectResolver": {
+    "constructor": [],
+    "_initialize": [
+      "auth"
+    ],
+    "_openPopup": [
+      "auth"
+    ],
+    "_openRedirect": [
+      "auth",
+      "provider",
+      "authType",
+      "eventId"
+    ],
+    "_isIframeWebStorageSupported": [
+      "_auth",
+      "_cb"
+    ],
+    "_originValidation": [
+      "auth"
+    ],
+    "attachCallbackListeners": [
+      "auth",
+      "manager"
+    ]
+  },
+  "universalLinksCb": [
+    "eventData"
+  ],
+  "generateNoEvent": [],
+  "addFrameworkForLogging": [
+    "auth",
+    "framework"
+  ],
+  "Optional": {
+    "type": [],
+    "constructor": [
+      "type"
+    ]
+  },
+  "Context": {
+    "open": [
+      "options",
+      "callback"
+    ]
+  },
+  "Iframe": {
+    "register": [
+      "message",
+      "handler",
+      "filter"
+    ],
+    "send": [
+      "type",
+      "data",
+      "callback",
+      "filter"
+    ],
+    "ping": [
+      "callback",
+      "data"
+    ],
+    "restyle": [
+      "style",
+      "callback"
+    ]
+  },
+  "FailClass": {
+    "constructor": []
+  },
+  "ErroringUnavailablePersistence": {
+    "type": [],
+    "_isAvailable": [],
+    "_set": [],
+    "_get": [],
+    "_remove": [],
+    "_addListener": [],
+    "_removeListener": [],
+    "_shouldAllowMigration": []
+  },
+  "FakeServiceWorker": {
+    "listeners": [],
+    "postMessage": [
+      "message",
+      "transfer"
+    ],
+    "addEventListener": [
+      "type",
+      "listener",
+      "_options"
+    ],
+    "removeEventListener": [
+      "type",
+      "listener",
+      "_options"
+    ]
+  },
+  "MockPersistenceLayer": {
+    "lastObjectSet": [],
+    "_set": [
+      "key",
+      "object"
+    ],
+    "_remove": [
+      "key"
+    ]
+  },
+  "MockAuthCredential": {
+    "providerId": [],
+    "signInMethod": [],
+    "constructor": [
+      "providerId",
+      "signInMethod"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "_json"
+    ],
+    "_getIdTokenResponse": [
+      "_auth"
+    ],
+    "_linkToIdToken": [
+      "_auth",
+      "_idToken"
+    ],
+    "_getReauthenticationResolver": [
+      "_auth"
+    ]
+  },
+  "RedirectPersistence": {
+    "hasPendingRedirect": [],
+    "redirectUser": [],
+    "_get": [
+      "key"
+    ]
+  },
+  "AuthDriver": {
+    "webDriver": [],
+    "start": [
+      "browser"
+    ],
+    "stop": [],
+    "call": [
+      "fn",
+      "param"
+    ],
+    "callNoWait": [
+      "fn",
+      "param"
+    ],
+    "getAuthSnapshot": [],
+    "getUserSnapshot": [],
+    "reset": [],
+    "goToTestPage": [],
+    "waitForAuthInit": [],
+    "waitForLegacyAuthInit": [],
+    "reinitOnRedirect": [],
+    "pause": [
+      "ms"
+    ],
+    "refresh": [],
+    "injectConfig": [],
+    "injectConfigAndInitAuth": [],
+    "injectConfigAndInitLegacySDK": [
+      "persistence"
+    ],
+    "selectPopupWindow": [],
+    "selectMainWindow": [
+      "options"
+    ],
+    "closePopup": [],
+    "closeExtraWindows": [],
+    "isCompatLayer": []
+  },
+  "IdPPage": {
+    "driver": [],
+    "PAGE_TITLE": [],
+    "constructor": [
+      "driver"
+    ],
+    "pageLoad": [],
+    "clickAddAccount": [],
+    "clickSignIn": [],
+    "selectExistingAccountByEmail": [
+      "email"
+    ],
+    "fillEmail": [
+      "email"
+    ],
+    "fillDisplayName": [
+      "displayName"
+    ],
+    "fillScreenName": [
+      "screenName"
+    ],
+    "fillProfilePhoto": [
+      "profilePhoto"
+    ],
+    "fillInput": []
+  },
+  "JsLoadCondition": {
+    "constructor": [
+      "globalValue"
+    ]
+  },
+  "AuthTestServer": {
+    "app": [],
+    "server": [],
+    "constructor": [],
+    "address": [],
+    "start": [],
+    "stop": []
+  },
+  "UiPage": {
+    "driver": [],
+    "constructor": [
+      "driver"
+    ],
+    "clickGuestSignIn": [],
+    "clickGoogleSignIn": [],
+    "clickPhoneSignIn": [],
+    "clickEmailSignIn": [],
+    "clickSubmit": [],
+    "enterPhoneNumber": [
+      "phoneNumber"
+    ],
+    "waitForCodeInputToBePresent": [],
+    "enterPhoneCode": [
+      "code"
+    ],
+    "enterEmail": [
+      "email"
+    ],
+    "enterEmailDisplayName": [
+      "name"
+    ],
+    "enterPassword": [
+      "name"
+    ],
+    "fillInput": []
+  },
+  "fail": [],
+  "getReactNativePersistence": [
+    "storage"
+  ],
+  "_validateOrigin$1": [
+    "auth"
+  ]
+}
