@@ -1,0 +1,699 @@
+{
+  "PendingError": {
+    "code": [],
+    "taskId": [],
+    "constructor": [
+      "message",
+      "task",
+      "note"
+    ]
+  },
+  "TestRunAbortError": {
+    "name": [],
+    "reason": [],
+    "constructor": [
+      "message",
+      "reason"
+    ]
+  },
+  "FixtureDependencyError": {
+    "name": []
+  },
+  "FixtureAccessError": {
+    "name": []
+  },
+  "FixtureParseError": {
+    "name": []
+  },
+  "AroundHookSetupError": {
+    "name": []
+  },
+  "AroundHookTeardownError": {
+    "name": []
+  },
+  "AroundHookMultipleCallsError": {
+    "name": []
+  },
+  "setFn": [
+    "key",
+    "fn"
+  ],
+  "getFn": [
+    "key"
+  ],
+  "setTestFixture": [
+    "key",
+    "fixture"
+  ],
+  "getTestFixtures": [
+    "key"
+  ],
+  "setHooks": [
+    "key",
+    "hooks"
+  ],
+  "getHooks": [
+    "key"
+  ],
+  "TestFixtures": {
+    "_suiteContexts": [],
+    "_overrides": [],
+    "_registrations": [],
+    "_definitions": [],
+    "_builtinFixtures": [],
+    "_fixtureOptionKeys": [],
+    "_fixtureScopes": [],
+    "_workerContextSuite": [],
+    "clearDefinitions": [],
+    "getWorkerContexts": [],
+    "getFileContexts": [
+      "file"
+    ],
+    "isFixtureOptions": [
+      "obj"
+    ],
+    "constructor": [
+      "registrations"
+    ],
+    "extend": [
+      "runner",
+      "userFixtures"
+    ],
+    "get": [
+      "suite"
+    ],
+    "override": [
+      "runner",
+      "userFixtures"
+    ],
+    "getFileContext": [
+      "file"
+    ],
+    "getWorkerContext": [],
+    "parseUserFixtures": []
+  },
+  "callFixtureCleanup": [
+    "context"
+  ],
+  "getFixtureCleanupCount": [
+    "context"
+  ],
+  "callFixtureCleanupFrom": [
+    "context",
+    "fromIndex"
+  ],
+  "withFixtures": [
+    "fn",
+    "options"
+  ],
+  "isAutoFixture": [
+    "fixture",
+    "options"
+  ],
+  "isFixtureFunction": [
+    "value"
+  ],
+  "resolveTestFixtureValue": [
+    "fixture",
+    "context",
+    "cleanupFnArray"
+  ],
+  "resolveScopeFixtureValue": [
+    "fixtures",
+    "suite",
+    "fixture"
+  ],
+  "resolveFixtureFunction": [
+    "fixtureFn",
+    "fixtureName",
+    "context",
+    "cleanupFnArray"
+  ],
+  "resolveDeps": [
+    "usedFixtures",
+    "registrations",
+    "param",
+    "param"
+  ],
+  "validateSuiteHook": [
+    "fn",
+    "hook",
+    "suiteError"
+  ],
+  "configureProps": [
+    "fn",
+    "options"
+  ],
+  "memoProps": [
+    "fn",
+    "props"
+  ],
+  "getUsedProps": [
+    "fn",
+    "param"
+  ],
+  "splitByComma": [
+    "s"
+  ],
+  "setCurrentTest": [
+    "test"
+  ],
+  "getCurrentTest": [],
+  "addRunningTest": [
+    "test"
+  ],
+  "getRunningTests": [],
+  "getChainableContext": [
+    "chainable"
+  ],
+  "createChainable": [
+    "keys",
+    "fn",
+    "context"
+  ],
+  "create": [
+    "context"
+  ],
+  "chain": [
+    "param"
+  ],
+  "getDefaultHookTimeout": [],
+  "getBeforeHookCleanupCallback": [
+    "hook",
+    "result",
+    "context"
+  ],
+  "beforeAll": [
+    "fn",
+    "param"
+  ],
+  "afterAll": [
+    "fn",
+    "timeout"
+  ],
+  "beforeEach": [
+    "fn",
+    "param"
+  ],
+  "wrapper": [
+    "ctx"
+  ],
+  "afterEach": [
+    "fn",
+    "timeout"
+  ],
+  "aroundAll": [
+    "fn",
+    "timeout"
+  ],
+  "aroundEach": [
+    "fn",
+    "timeout"
+  ],
+  "innerFn": [
+    "ctx"
+  ],
+  "withSuiteFixtures": [
+    "suiteHook",
+    "fn",
+    "context",
+    "stackTraceError",
+    "param"
+  ],
+  "getAroundHookTimeout": [
+    "hook"
+  ],
+  "getAroundHookStackTrace": [
+    "hook"
+  ],
+  "createTestHook": [
+    "name",
+    "handler"
+  ],
+  "interpretTaskModes": [
+    "file",
+    "namePattern",
+    "testLocations",
+    "testIds",
+    "testTagsFilter",
+    "onlyMode",
+    "parentIsOnly",
+    "allowOnly"
+  ],
+  "traverseSuite": [
+    "suite",
+    "parentIsOnly",
+    "parentMatchedWithLocation"
+  ],
+  "getTaskFullName": [
+    "task"
+  ],
+  "someTasksAreOnly": [
+    "suite"
+  ],
+  "skipAllTasks": [
+    "suite"
+  ],
+  "todoAllTasks": [
+    "suite"
+  ],
+  "checkAllowOnly": [
+    "task",
+    "allowOnly"
+  ],
+  "generateHash": [
+    "str"
+  ],
+  "calculateSuiteHash": [
+    "parent"
+  ],
+  "createFileTask": [
+    "filepath",
+    "root",
+    "projectName",
+    "pool",
+    "viteEnvironment"
+  ],
+  "generateFileHash": [
+    "file",
+    "projectName"
+  ],
+  "findTestFileStackTrace": [
+    "testFilePath",
+    "error"
+  ],
+  "limitConcurrency": [
+    "param"
+  ],
+  "finish": [],
+  "acquire": [],
+  "release": [],
+  "limiterFn": [
+    "func",
+    "param"
+  ],
+  "run": [
+    "release"
+  ],
+  "partitionSuiteChildren": [
+    "suite"
+  ],
+  "matchesTags": [
+    "testTags"
+  ],
+  "validateTags": [
+    "config",
+    "tags"
+  ],
+  "createNoTagsError": [
+    "availableTags",
+    "tag",
+    "param"
+  ],
+  "createTagsFilter": [
+    "tagsExpr",
+    "availableTags"
+  ],
+  "parseTagsExpression": [
+    "expr",
+    "availableTags"
+  ],
+  "formatToken": [
+    "token"
+  ],
+  "tokenize": [
+    "expr"
+  ],
+  "TokenStream": {
+    "pos": [],
+    "constructor": [
+      "tokens",
+      "expr"
+    ],
+    "peek": [],
+    "next": [],
+    "expect": [
+      "type"
+    ],
+    "unexpectedToken": []
+  },
+  "formatTokenType": [
+    "type"
+  ],
+  "parseOrExpression": [
+    "stream",
+    "availableTags"
+  ],
+  "parseAndExpression": [
+    "stream",
+    "availableTags"
+  ],
+  "parseUnaryExpression": [
+    "stream",
+    "availableTags"
+  ],
+  "parsePrimaryExpression": [
+    "stream",
+    "availableTags"
+  ],
+  "createWildcardRegex": [
+    "pattern"
+  ],
+  "resolveTagPattern": [
+    "tagPattern",
+    "availableTags"
+  ],
+  "evaluateNode": [
+    "node",
+    "tags"
+  ],
+  "isTestCase": [
+    "s"
+  ],
+  "getTests": [
+    "suite"
+  ],
+  "getTasks": [
+    "param"
+  ],
+  "getSuites": [
+    "suite"
+  ],
+  "hasTests": [
+    "suite"
+  ],
+  "hasFailed": [
+    "suite"
+  ],
+  "getNames": [
+    "task"
+  ],
+  "getFullName": [
+    "task",
+    "param"
+  ],
+  "getTestName": [
+    "task",
+    "param"
+  ],
+  "createTaskName": [
+    "names",
+    "param"
+  ],
+  "assert": [
+    "condition",
+    "message"
+  ],
+  "getDefaultSuite": [],
+  "getRunner": [],
+  "createDefaultSuite": [
+    "runner"
+  ],
+  "clearCollectorContext": [
+    "file",
+    "currentRunner"
+  ],
+  "getCurrentSuite": [],
+  "createSuiteHooks": [],
+  "parseArguments": [
+    "optionsOrFn",
+    "timeoutOrTest"
+  ],
+  "createSuiteCollector": [
+    "name",
+    "param",
+    "mode",
+    "each",
+    "suiteOptions"
+  ],
+  "task": [
+    "param",
+    "param"
+  ],
+  "addHook": [
+    "name",
+    "param"
+  ],
+  "initSuite": [
+    "includeLocation"
+  ],
+  "clear": [],
+  "collect": [
+    "file"
+  ],
+  "withAwaitAsyncAssertions": [
+    "fn",
+    "task"
+  ],
+  "createSuite": [],
+  "suiteFn": [
+    "name",
+    "factoryOrOptions",
+    "optionsOrFactory"
+  ],
+  "createTaskCollector": [
+    "fn"
+  ],
+  "parseBuilderFixtures": [
+    "fixturesOrName",
+    "optionsOrFn",
+    "maybeFn"
+  ],
+  "fixture": [
+    "ctx",
+    "use"
+  ],
+  "onCleanup": [
+    "fn"
+  ],
+  "createTest": [
+    "fn"
+  ],
+  "formatName": [
+    "name"
+  ],
+  "formatTitle": [
+    "template",
+    "items",
+    "idx"
+  ],
+  "formatAttribute": [
+    "s"
+  ],
+  "handleRegexMatch": [
+    "input",
+    "regex",
+    "onMatch",
+    "onNonMatch"
+  ],
+  "formatTemplateString": [
+    "cases",
+    "args"
+  ],
+  "collectTask": [
+    "task"
+  ],
+  "runWithSuite": [
+    "suite",
+    "fn"
+  ],
+  "withTimeout": [
+    "fn",
+    "timeout",
+    "param",
+    "stackTraceError",
+    "onTimeout"
+  ],
+  "rejectTimeoutError": [],
+  "resolve": [
+    "result"
+  ],
+  "reject": [
+    "error"
+  ],
+  "withCancel": [
+    "fn",
+    "signal"
+  ],
+  "abortIfTimeout": [
+    "param",
+    "error"
+  ],
+  "abortContextSignal": [
+    "context",
+    "error"
+  ],
+  "createTestContext": [
+    "test",
+    "runner"
+  ],
+  "context": [],
+  "makeTimeoutError": [
+    "isHook",
+    "timeout",
+    "stackTraceError"
+  ],
+  "runSetupFiles": [
+    "config",
+    "files",
+    "runner"
+  ],
+  "collectTests": [
+    "specs",
+    "runner"
+  ],
+  "mergeHooks": [
+    "baseHooks",
+    "hooks"
+  ],
+  "getRetryCount": [
+    "retry"
+  ],
+  "getRetryDelay": [
+    "retry"
+  ],
+  "getRetryCondition": [
+    "retry"
+  ],
+  "updateSuiteHookState": [
+    "task",
+    "name",
+    "state",
+    "runner"
+  ],
+  "getSuiteHooks": [
+    "suite",
+    "name",
+    "sequence"
+  ],
+  "callTestHooks": [
+    "runner",
+    "test",
+    "hooks",
+    "sequence"
+  ],
+  "callSuiteHook": [
+    "suite",
+    "currentTask",
+    "name",
+    "runner",
+    "args"
+  ],
+  "runHook": [
+    "hook"
+  ],
+  "getAroundEachHooks": [
+    "suite"
+  ],
+  "getAroundAllHooks": [
+    "suite"
+  ],
+  "makeAroundHookTimeoutError": [
+    "hookName",
+    "phase",
+    "timeout",
+    "stackTraceError"
+  ],
+  "callAroundHooks": [
+    "runInner",
+    "options"
+  ],
+  "createTimeoutPromise": [
+    "timeout",
+    "phase",
+    "stackTraceError"
+  ],
+  "runNextHook": [
+    "index"
+  ],
+  "use": [],
+  "callAroundAllHooks": [
+    "suite",
+    "runSuiteInner"
+  ],
+  "callAroundEachHooks": [
+    "suite",
+    "test",
+    "runTest"
+  ],
+  "sendTasksUpdate": [
+    "runner"
+  ],
+  "finishSendTasksUpdate": [
+    "runner"
+  ],
+  "throttle": [
+    "fn",
+    "ms"
+  ],
+  "updateTask": [
+    "event",
+    "task",
+    "runner"
+  ],
+  "callCleanupHooks": [
+    "runner",
+    "cleanups"
+  ],
+  "passesRetryCondition": [
+    "test",
+    "errors"
+  ],
+  "runTest": [
+    "test",
+    "runner"
+  ],
+  "failTask": [
+    "result",
+    "err",
+    "diffOptions"
+  ],
+  "markTasksAsSkipped": [
+    "suite",
+    "runner"
+  ],
+  "markPendingTasksAsSkipped": [
+    "suite",
+    "runner",
+    "note"
+  ],
+  "runSuite": [
+    "suite",
+    "runner"
+  ],
+  "runSuiteChild": [
+    "c",
+    "runner"
+  ],
+  "runFiles": [
+    "files",
+    "runner"
+  ],
+  "defaultTrace": [
+    "_",
+    "attributes",
+    "cb"
+  ],
+  "startTests": [
+    "specs",
+    "runner"
+  ],
+  "publicCollect": [
+    "specs",
+    "runner"
+  ],
+  "recordArtifact": [
+    "task",
+    "artifact"
+  ],
+  "encodeUint8Array": [
+    "bytes"
+  ],
+  "recordAsyncOperation": [
+    "test",
+    "promise"
+  ],
+  "manageArtifactAttachment": [
+    "attachment"
+  ]
+}
