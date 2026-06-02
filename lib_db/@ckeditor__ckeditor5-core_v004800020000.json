@@ -1,0 +1,425 @@
+{
+  "Accessibility": {
+    "keystrokeInfos": [],
+    "_editor": [],
+    "constructor": [
+      "editor"
+    ],
+    "addKeystrokeInfoCategory": [
+      "param"
+    ],
+    "addKeystrokeInfoGroup": [
+      "param"
+    ],
+    "addKeystrokeInfos": [
+      "param"
+    ]
+  },
+  "Command": {
+    "editor": [],
+    "_isEnabledBasedOnSelection": [],
+    "_affectsData": [],
+    "_disableStack": [],
+    "_throwErrorWhenUsedAsAPlugin": [],
+    "constructor": [
+      "editor"
+    ],
+    "affectsData": [
+      "affectsData"
+    ],
+    "refresh": [],
+    "forceDisabled": [
+      "id"
+    ],
+    "clearForceDisabled": [
+      "id"
+    ],
+    "execute": [
+      "param"
+    ],
+    "destroy": []
+  },
+  "CommandCollection": {
+    "_commands": [],
+    "constructor": [],
+    "add": [
+      "commandName",
+      "command"
+    ],
+    "get": [
+      "commandName"
+    ],
+    "execute": [
+      "commandName",
+      "param"
+    ],
+    "names": [],
+    "commands": [],
+    "destroy": []
+  },
+  "Context": {
+    "config": [],
+    "plugins": [],
+    "locale": [],
+    "t": [],
+    "editors": [],
+    "defaultConfig": [],
+    "builtinPlugins": [],
+    "_contextOwner": [],
+    "constructor": [
+      "config"
+    ],
+    "initPlugins": [],
+    "destroy": [],
+    "_addEditor": [
+      "editor",
+      "isContextOwner"
+    ],
+    "_removeEditor": [
+      "editor"
+    ],
+    "_getEditorConfig": [],
+    "create": [
+      "config"
+    ],
+    "_throwErrorWhenUsedAsAPlugin": []
+  },
+  "ContextPlugin": {
+    "context": [],
+    "constructor": [
+      "context"
+    ],
+    "destroy": [],
+    "isContextPlugin": [],
+    "isOfficialPlugin": [],
+    "isPremiumPlugin": []
+  },
+  "EditingKeystrokeHandler": {
+    "editor": [],
+    "constructor": [
+      "editor"
+    ],
+    "set": [
+      "keystroke",
+      "callback",
+      "param"
+    ]
+  },
+  "Editor": {
+    "editorName": [],
+    "accessibility": [],
+    "commands": [],
+    "config": [],
+    "conversion": [],
+    "data": [],
+    "editing": [],
+    "locale": [],
+    "model": [],
+    "plugins": [],
+    "keystrokes": [],
+    "t": [],
+    "defaultConfig": [],
+    "builtinPlugins": [],
+    "_context": [],
+    "_readOnlyLocks": [],
+    "_registeredRootsAttributesKeys": [],
+    "_throwErrorWhenUsedAsAPlugin": [],
+    "constructor": [
+      "param"
+    ],
+    "isReadOnly": [
+      "value"
+    ],
+    "enableReadOnlyMode": [
+      "lockId"
+    ],
+    "disableReadOnlyMode": [
+      "lockId"
+    ],
+    "setData": [
+      "data"
+    ],
+    "getData": [
+      "options"
+    ],
+    "initPlugins": [],
+    "destroy": [],
+    "execute": [
+      "commandName",
+      "param"
+    ],
+    "focus": [],
+    "registerRootAttribute": [
+      "key"
+    ],
+    "getRootAttributes": [
+      "param"
+    ],
+    "create": [
+      "param"
+    ],
+    "Context": [],
+    "EditorWatchdog": [],
+    "ContextWatchdog": [],
+    "_showLicenseError": [
+      "reason",
+      "name"
+    ],
+    "_sendUsageRequest": [
+      "endpoint",
+      "request"
+    ]
+  },
+  "Plugin": {
+    "editor": [],
+    "isEnabled": [],
+    "_disableStack": [],
+    "constructor": [
+      "editor"
+    ],
+    "forceDisabled": [
+      "id"
+    ],
+    "clearForceDisabled": [
+      "id"
+    ],
+    "destroy": [],
+    "isContextPlugin": [],
+    "isOfficialPlugin": [],
+    "isPremiumPlugin": []
+  },
+  "forceDisable$1": [
+    "evt"
+  ],
+  "forceDisable": [
+    "evt"
+  ],
+  "MultiCommand": {
+    "_childCommandsDefinitions": [],
+    "refresh": [],
+    "execute": [
+      "param"
+    ],
+    "registerChildCommand": [
+      "command",
+      "options"
+    ],
+    "_checkEnabled": [],
+    "_getFirstEnabledCommand": []
+  },
+  "PluginCollection": {
+    "_context": [],
+    "_plugins": [],
+    "_availablePlugins": [],
+    "_contextPlugins": [],
+    "constructor": [
+      "context",
+      "availablePlugins",
+      "contextPlugins"
+    ],
+    "get": [
+      "key"
+    ],
+    "has": [
+      "key"
+    ],
+    "init": [
+      "plugins",
+      "pluginsToRemove",
+      "pluginsSubstitutions"
+    ],
+    "destroy": [],
+    "_add": []
+  },
+  "isPluginConstructor": [
+    "plugin"
+  ],
+  "isContextPlugin": [
+    "plugin"
+  ],
+  "isPluginRemoved": [
+    "plugin",
+    "pluginsToRemove"
+  ],
+  "getPluginName": [
+    "plugin"
+  ],
+  "findAvailablePluginConstructors": [
+    "plugins",
+    "param"
+  ],
+  "getPluginConstructors": [
+    "plugins",
+    "param"
+  ],
+  "validatePlugins": [
+    "plugins",
+    "param"
+  ],
+  "checkPluginConstructor": [
+    "plugin"
+  ],
+  "checkMissingPlugin": [
+    "plugin",
+    "parentPluginConstructor"
+  ],
+  "checkContextPlugin": [
+    "plugin",
+    "parentPluginConstructor"
+  ],
+  "checkRemovedPlugin": [
+    "plugin",
+    "parentPluginConstructor"
+  ],
+  "loadPlugins": [
+    "pluginConstructors"
+  ],
+  "initPlugins": [
+    "pluginInstances",
+    "method"
+  ],
+  "substitutePlugins": [
+    "pluginConstructors",
+    "pluginsSubstitutions"
+  ],
+  "getEditorUsageData": [
+    "editor"
+  ],
+  "getEditorType": [
+    "editor"
+  ],
+  "getPluginsUsageData": [
+    "collection"
+  ],
+  "getToolbarUsageData": [
+    "toolbarConfig"
+  ],
+  "stripToolbarSeparatorItems": [
+    "items"
+  ],
+  "extractToolbarConfigItemsNames": [
+    "items"
+  ],
+  "getDistributionUsageData": [],
+  "getEnvUsageData": [],
+  "getSessionId": [],
+  "getPageSessionID": [],
+  "checkLicenseKeyIsDefined": [
+    "config"
+  ],
+  "verifyLicenseKey": [
+    "editor"
+  ],
+  "blockEditor": [
+    "reason",
+    "name"
+  ],
+  "hasAllRequiredFields": [
+    "licensePayload"
+  ],
+  "getCrcInputData": [
+    "licensePayload"
+  ],
+  "checkLicensedHosts": [
+    "licensedHosts"
+  ],
+  "warnAboutNonProductionLicenseKey": [
+    "licenseType"
+  ],
+  "checkPluginsAllowedByLicenseKey": [
+    "editor"
+  ],
+  "collectUsageData": [
+    "editor"
+  ],
+  "setUsageData": [
+    "path",
+    "value"
+  ],
+  "attachToForm": [
+    "editor"
+  ],
+  "onSubmit": [],
+  "isTextArea": [
+    "sourceElement"
+  ],
+  "ElementApiMixin": [
+    "base"
+  ],
+  "Mixin": {
+    "sourceElement": [],
+    "updateSourceElement": [
+      "data"
+    ]
+  },
+  "secureSourceElement": [
+    "editor",
+    "sourceElement"
+  ],
+  "registerAndInitializeRootConfigAttributes": [
+    "editor"
+  ],
+  "normalizeRootsConfig": [
+    "sourceElementsOrData",
+    "config",
+    "param",
+    "param"
+  ],
+  "normalizeSingleRootEditorConstructorParams": [
+    "sourceElementOrDataOrConfig",
+    "editorConfig"
+  ],
+  "normalizeMultiRootEditorConstructorParams": [
+    "sourceElementOrDataOrConfig",
+    "editorConfig"
+  ],
+  "isPlainObject": [
+    "sourceElementsOrData"
+  ],
+  "getInitialData": [
+    "sourceElementOrData"
+  ],
+  "getLegacyInitialData": [
+    "config",
+    "sourceElementIsObject",
+    "defaultRootName"
+  ],
+  "getLegacyPlainConfigValue": [
+    "config",
+    "key",
+    "rootName"
+  ],
+  "normalizeViewRootElementDefinition": [
+    "spec"
+  ],
+  "tokenizeClasses": [
+    "value"
+  ],
+  "assertAllowedTagName": [
+    "name"
+  ],
+  "isElement": [
+    "value"
+  ],
+  "verifyRootElements": [
+    "editor"
+  ],
+  "rootAcceptsBlocks": [
+    "editor",
+    "rootName"
+  ],
+  "PendingActions": {
+    "hasAny": [],
+    "_actions": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "init": [],
+    "add": [
+      "message"
+    ],
+    "remove": [
+      "action"
+    ],
+    "first": []
+  }
+}

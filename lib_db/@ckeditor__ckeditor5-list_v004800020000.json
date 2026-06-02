@@ -1,0 +1,1036 @@
+{
+  "ListWalker": {
+    "_startElement": [],
+    "_referenceIndent": [],
+    "_isForward": [],
+    "_includeSelf": [],
+    "_sameAttributes": [],
+    "_sameIndent": [],
+    "_lowerIndent": [],
+    "_higherIndent": [],
+    "constructor": [
+      "startElement",
+      "options"
+    ],
+    "first": [
+      "startElement",
+      "options"
+    ],
+    "_getStartNode": []
+  },
+  "SiblingListBlocksIterator": {
+    "_node": [],
+    "_isForward": [],
+    "_previousNodesByIndent": [],
+    "_previous": [],
+    "_previousNodeIndent": [],
+    "constructor": [
+      "node",
+      "direction"
+    ],
+    "next": []
+  },
+  "ListBlocksIterable": {
+    "_listHead": [],
+    "constructor": [
+      "listHead"
+    ]
+  },
+  "ListItemUid": {
+    "next": []
+  },
+  "isListItemBlock": [
+    "node"
+  ],
+  "getAllListItemBlocks": [
+    "listItem",
+    "param"
+  ],
+  "getListItemBlocks": [
+    "listItem",
+    "param"
+  ],
+  "getNestedListBlocks": [
+    "listItem"
+  ],
+  "getListItems": [
+    "listItem",
+    "options"
+  ],
+  "isFirstBlockOfListItem": [
+    "listBlock"
+  ],
+  "isLastBlockOfListItem": [
+    "listBlock"
+  ],
+  "expandListBlocksToCompleteItems": [
+    "blocks",
+    "param"
+  ],
+  "expandListBlocksToCompleteList": [
+    "blocks"
+  ],
+  "splitListItemBefore": [
+    "listBlock",
+    "writer"
+  ],
+  "mergeListItemBefore": [
+    "listBlock",
+    "parentBlock",
+    "writer"
+  ],
+  "indentBlocks": [
+    "blocks",
+    "writer",
+    "param"
+  ],
+  "outdentBlocksWithMerge": [
+    "blocks",
+    "writer",
+    "param"
+  ],
+  "removeListAttributes": [
+    "blocks",
+    "writer",
+    "attributeNames"
+  ],
+  "isSingleListItem": [
+    "blocks"
+  ],
+  "outdentFollowingItems": [
+    "lastBlock",
+    "writer"
+  ],
+  "sortBlocks": [
+    "blocks"
+  ],
+  "getSelectedBlockObject": [
+    "model"
+  ],
+  "canBecomeSimpleListItem": [
+    "block",
+    "schema"
+  ],
+  "isNumberedListType": [
+    "listType"
+  ],
+  "isFirstListItemInList": [
+    "listItem"
+  ],
+  "mergeListItemIfNotLast": [
+    "block",
+    "parentBlock",
+    "writer"
+  ],
+  "ListIndentCommand": {
+    "_direction": [],
+    "constructor": [
+      "editor",
+      "indentDirection"
+    ],
+    "refresh": [],
+    "execute": [],
+    "_fireAfterExecute": [],
+    "_checkEnabled": []
+  },
+  "getSelectedListBlocks": [
+    "selection"
+  ],
+  "ListCommand": {
+    "type": [],
+    "value": [],
+    "_listWalkerOptions": [],
+    "constructor": [
+      "editor",
+      "type",
+      "options"
+    ],
+    "refresh": [],
+    "execute": [
+      "options"
+    ],
+    "_fireAfterExecute": [],
+    "_getValue": [],
+    "_checkEnabled": []
+  },
+  "ListMergeCommand": {
+    "_direction": [],
+    "constructor": [
+      "editor",
+      "direction"
+    ],
+    "refresh": [],
+    "execute": [
+      "param"
+    ],
+    "_fireAfterExecute": [],
+    "_checkEnabled": [],
+    "_getMergeSubjectElements": []
+  },
+  "ListSplitCommand": {
+    "_direction": [],
+    "constructor": [
+      "editor",
+      "direction"
+    ],
+    "refresh": [],
+    "execute": [],
+    "_fireAfterExecute": [],
+    "_checkEnabled": [],
+    "_getStartBlock": []
+  },
+  "ListItemBoldIntegration": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "init": [],
+    "afterInit": []
+  },
+  "ListItemItalicIntegration": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "init": [],
+    "afterInit": []
+  },
+  "ListItemFontSizeIntegration": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "init": [],
+    "afterInit": []
+  },
+  "ListItemFontColorIntegration": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "init": [],
+    "afterInit": []
+  },
+  "ListItemFontFamilyIntegration": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "init": [],
+    "afterInit": []
+  },
+  "ListFormatting": {
+    "_loadedFormatting": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "constructor": [
+      "editor"
+    ],
+    "afterInit": [],
+    "_registerPostfixerForListItemFormatting": [],
+    "registerFormatAttribute": [
+      "formatAttribute",
+      "listItemFormatAttribute"
+    ],
+    "_isInlineOrSelectionFormatting": []
+  },
+  "getListItemConsistentFormat": [
+    "model",
+    "listItem",
+    "attributeKeys"
+  ],
+  "getSingleListItemConsistentFormat": [
+    "model",
+    "listItem",
+    "attributeKeys"
+  ],
+  "setFormattingToListItem": [
+    "writer",
+    "listItem",
+    "attributeKey",
+    "attributeValue"
+  ],
+  "removeFormattingFromListItem": [
+    "writer",
+    "listItem",
+    "attributeKey"
+  ],
+  "isNumberedOrBulletedList": [
+    "listItem"
+  ],
+  "ListUtils": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "expandListBlocksToCompleteList": [
+      "blocks"
+    ],
+    "isFirstBlockOfListItem": [
+      "listBlock"
+    ],
+    "isListItemBlock": [
+      "node"
+    ],
+    "expandListBlocksToCompleteItems": [
+      "blocks",
+      "options"
+    ],
+    "isNumberedListType": [
+      "listType"
+    ],
+    "isFirstListItemInList": [
+      "listItem"
+    ]
+  },
+  "isListView": [
+    "viewElement"
+  ],
+  "isListItemView": [
+    "viewElement"
+  ],
+  "getIndent$1": [
+    "listItem"
+  ],
+  "createListElement": [
+    "writer",
+    "indent",
+    "type",
+    "param"
+  ],
+  "createListItemElement": [
+    "writer",
+    "indent",
+    "id"
+  ],
+  "getViewElementNameForListType": [
+    "type"
+  ],
+  "getViewElementIdForListType": [
+    "type",
+    "indent"
+  ],
+  "findAndAddListHeadToMap": [
+    "position",
+    "itemToListHead",
+    "visited"
+  ],
+  "fixListIndents": [
+    "listNodes",
+    "writer"
+  ],
+  "fixListItemIds": [
+    "listNodes",
+    "seenIds",
+    "writer"
+  ],
+  "listItemSkipLevelConsumer": [],
+  "isSkipLevelWrapper": [
+    "viewItem"
+  ],
+  "listItemUpcastConverter": [],
+  "reconvertItemsOnDataChange": [
+    "model",
+    "editing",
+    "attributeNames",
+    "listEditing"
+  ],
+  "collectListItemsToRefresh": [
+    "listHead",
+    "changedItems"
+  ],
+  "getListModelAttributes": [
+    "item"
+  ],
+  "fillStackForIntermediates": [
+    "node",
+    "itemIndent",
+    "stack"
+  ],
+  "doesItemBlockRequiresRefresh": [
+    "item",
+    "blocks"
+  ],
+  "isItemBlockInsideStructureSlot": [
+    "viewElement"
+  ],
+  "doesItemWrappingRequiresRefresh": [
+    "item",
+    "stack",
+    "changedItems"
+  ],
+  "listItemDowncastConverter": [
+    "attributeNames",
+    "strategies",
+    "model",
+    "param"
+  ],
+  "listItemDowncastRemoveConverter": [
+    "schema"
+  ],
+  "bogusParagraphCreator": [
+    "attributeNames",
+    "param"
+  ],
+  "findMappedViewElement": [
+    "element",
+    "mapper",
+    "model",
+    "writer"
+  ],
+  "createModelToViewPositionMapper": [
+    "strategies",
+    "view"
+  ],
+  "removeCustomMarkerElements": [
+    "viewElement",
+    "viewWriter",
+    "mapper"
+  ],
+  "collectMarkersToRemove": [
+    "viewWalker"
+  ],
+  "insertCustomMarkerElements": [
+    "listItem",
+    "viewElement",
+    "strategies",
+    "writer",
+    "param"
+  ],
+  "unwrapListItemBlock": [
+    "viewElement",
+    "viewWriter"
+  ],
+  "wrapListItemBlock": [
+    "listItem",
+    "viewRange",
+    "strategies",
+    "writer",
+    "options"
+  ],
+  "findSiblingListItemAt": [
+    "listItem",
+    "targetIndent"
+  ],
+  "createAttributesConsumer": [
+    "attributeNames",
+    "strategies"
+  ],
+  "shouldUseBogusParagraph": [
+    "item",
+    "attributeNames",
+    "param"
+  ],
+  "ListEditing": {
+    "_downcastStrategies": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "constructor": [
+      "editor"
+    ],
+    "init": [],
+    "afterInit": [],
+    "registerDowncastStrategy": [
+      "strategy"
+    ],
+    "getListAttributeNames": [],
+    "_setupDeleteIntegration": [],
+    "_setupEnterIntegration": [],
+    "_setupTabIntegration": [],
+    "_setupConversion": [],
+    "_setupModelPostFixing": [],
+    "_setupClipboardIntegration": [],
+    "_setupAccessibilityIntegration": [],
+    "_setupListItemIdConversionStrategy": []
+  },
+  "modelChangePostFixer$1": [
+    "model",
+    "writer",
+    "attributeNames",
+    "listEditing"
+  ],
+  "createModelIndentPasteFixer": [
+    "model"
+  ],
+  "shouldMergeOnBlocksContentLevel": [
+    "model",
+    "direction"
+  ],
+  "createUIComponents": [
+    "editor",
+    "commandName",
+    "label",
+    "icon"
+  ],
+  "_createButton": [
+    "ButtonClass",
+    "editor",
+    "commandName",
+    "label",
+    "icon"
+  ],
+  "ListUI": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "init": []
+  },
+  "List": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": []
+  },
+  "ListStartCommand": {
+    "value": [],
+    "refresh": [],
+    "execute": [
+      "param"
+    ],
+    "_getValue": []
+  },
+  "getAllSupportedStyleTypes": [],
+  "getListTypeFromListStyleType$1": [
+    "listStyleType"
+  ],
+  "getListStyleTypeFromTypeAttribute": [
+    "value"
+  ],
+  "getTypeAttributeFromListStyleType": [
+    "value"
+  ],
+  "normalizeListStyle": [
+    "listStyle"
+  ],
+  "ListStyleCommand": {
+    "value": [],
+    "defaultType": [],
+    "_supportedTypes": [],
+    "constructor": [
+      "editor",
+      "defaultType",
+      "supportedTypes"
+    ],
+    "refresh": [],
+    "execute": [
+      "options"
+    ],
+    "isStyleTypeSupported": [
+      "value"
+    ],
+    "_getValue": [],
+    "_checkEnabled": [],
+    "_tryToConvertItemsToList": []
+  },
+  "ListReversedCommand": {
+    "value": [],
+    "refresh": [],
+    "execute": [
+      "options"
+    ],
+    "_getValue": []
+  },
+  "listPropertiesUpcastConverter": [
+    "strategy"
+  ],
+  "ListPropertiesUtils": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "getAllSupportedStyleTypes": [],
+    "getListTypeFromListStyleType": [
+      "listStyleType"
+    ],
+    "getListStyleTypeFromTypeAttribute": [
+      "value"
+    ],
+    "getTypeAttributeFromListStyleType": [
+      "value"
+    ]
+  },
+  "getNormalizedConfig": [
+    "config"
+  ],
+  "getNormalizedStylesConfig": [
+    "styles"
+  ],
+  "ListPropertiesEditing": {
+    "requires": [],
+    "pluginName": [],
+    "licenseFeatureCode": [],
+    "isOfficialPlugin": [],
+    "isPremiumPlugin": [],
+    "constructor": [
+      "editor"
+    ],
+    "init": []
+  },
+  "createAttributeStrategies$1": [
+    "enabledProperties"
+  ],
+  "ListPropertiesView": {
+    "locale": [],
+    "children": [],
+    "stylesView": [],
+    "additionalPropertiesCollapsibleView": [],
+    "startIndexFieldView": [],
+    "reversedSwitchButtonView": [],
+    "focusTracker": [],
+    "keystrokes": [],
+    "focusables": [],
+    "focusCycler": [],
+    "constructor": [
+      "locale",
+      "param"
+    ],
+    "render": [],
+    "focus": [],
+    "focusLast": [],
+    "destroy": [],
+    "_createStylesView": [],
+    "_addNumberedListPropertyViews": [],
+    "_createStartIndexField": [],
+    "_createReversedSwitchButton": []
+  },
+  "stopPropagation": [
+    "data"
+  ],
+  "ListPropertiesUI": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "init": []
+  },
+  "getDropdownViewCreator": [
+    "param"
+  ],
+  "getStyleButtonCreator": [
+    "param"
+  ],
+  "createListPropertiesView": [
+    "param"
+  ],
+  "getMenuBarStylesMenuCreator": [
+    "param"
+  ],
+  "getStyleTypeSupportChecker": [
+    "listStyleCommand"
+  ],
+  "ListProperties": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": []
+  },
+  "CheckTodoListCommand": {
+    "value": [],
+    "constructor": [
+      "editor"
+    ],
+    "refresh": [],
+    "execute": [
+      "options"
+    ],
+    "_getValue": [],
+    "_getSelectedItems": []
+  },
+  "TodoCheckboxChangeObserver": {
+    "domEventType": [],
+    "onDomEvent": [
+      "domEvent"
+    ]
+  },
+  "TodoListEditing": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "init": [],
+    "_handleCheckmarkChange": [],
+    "_initAriaAnnouncements": []
+  },
+  "todoListItemUpcastConverter": [],
+  "todoItemInputConverter": [],
+  "elementUpcastConsumingConverter": [
+    "matcherPattern"
+  ],
+  "attributeUpcastConsumingConverter": [
+    "matcherPattern"
+  ],
+  "isDescriptionBlock": [
+    "modelElement",
+    "listAttributeNames"
+  ],
+  "hasOnlyListAttributes": [
+    "modelElement",
+    "attributeNames"
+  ],
+  "jumpOverCheckmarkOnSideArrowKeyPress$1": [
+    "model",
+    "locale"
+  ],
+  "isLabelElement": [
+    "viewElement"
+  ],
+  "isTodoListItemElement": [
+    "element"
+  ],
+  "TodoListUI": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "init": []
+  },
+  "TodoList": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": []
+  },
+  "LegacyListCommand": {
+    "type": [],
+    "value": [],
+    "constructor": [
+      "editor",
+      "type"
+    ],
+    "refresh": [],
+    "execute": [
+      "options"
+    ],
+    "_getValue": [],
+    "_checkEnabled": []
+  },
+  "_fixType": [
+    "blocks",
+    "isBackward",
+    "lowestIndent"
+  ],
+  "checkCanBecomeListItem": [
+    "block",
+    "schema"
+  ],
+  "LegacyIndentCommand": {
+    "_indentBy": [],
+    "constructor": [
+      "editor",
+      "indentDirection"
+    ],
+    "refresh": [],
+    "execute": [],
+    "_checkEnabled": []
+  },
+  "createViewListItemElement": [
+    "writer"
+  ],
+  "generateLiInUl": [
+    "modelItem",
+    "conversionApi"
+  ],
+  "injectViewList": [
+    "modelItem",
+    "injectedItem",
+    "conversionApi",
+    "model"
+  ],
+  "mergeViewLists": [
+    "viewWriter",
+    "firstList",
+    "secondList"
+  ],
+  "positionAfterUiElements": [
+    "viewPosition"
+  ],
+  "getSiblingListItem": [
+    "modelItem",
+    "options"
+  ],
+  "findNestedList": [
+    "viewElement"
+  ],
+  "getSiblingNodes": [
+    "position",
+    "direction"
+  ],
+  "getSelectedListItems": [
+    "model"
+  ],
+  "getListTypeFromListStyleType": [
+    "listStyleType"
+  ],
+  "getListItemFillerOffset": [],
+  "LegacyListUtils": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "getListTypeFromListStyleType": [
+      "listStyleType"
+    ],
+    "getSelectedListItems": [
+      "model"
+    ],
+    "getSiblingNodes": [
+      "position",
+      "direction"
+    ]
+  },
+  "modelViewInsertion$1": [
+    "model"
+  ],
+  "modelViewRemove": [
+    "model"
+  ],
+  "modelViewChangeType$1": [
+    "evt",
+    "data",
+    "conversionApi"
+  ],
+  "modelViewMergeAfterChangeType": [
+    "evt",
+    "data",
+    "conversionApi"
+  ],
+  "modelViewChangeIndent": [
+    "model"
+  ],
+  "modelViewSplitOnInsert": [
+    "evt",
+    "data",
+    "conversionApi"
+  ],
+  "modelViewMergeAfter": [
+    "evt",
+    "data",
+    "conversionApi"
+  ],
+  "viewModelConverter": [
+    "evt",
+    "data",
+    "conversionApi"
+  ],
+  "cleanList": [
+    "evt",
+    "data",
+    "conversionApi"
+  ],
+  "cleanListItem": [
+    "evt",
+    "data",
+    "conversionApi"
+  ],
+  "modelToViewPosition": [
+    "view"
+  ],
+  "viewToModelPosition": [
+    "model"
+  ],
+  "modelChangePostFixer": [
+    "model",
+    "writer"
+  ],
+  "_addListToFix": [
+    "position"
+  ],
+  "_fixListIndents": [
+    "item"
+  ],
+  "_fixListTypes": [
+    "item"
+  ],
+  "modelIndentPasteFixer": [
+    "evt",
+    "param"
+  ],
+  "viewToModelListItemChildrenConverter": [
+    "listItemModel",
+    "viewChildren",
+    "conversionApi"
+  ],
+  "findNextListItem": [
+    "startPosition"
+  ],
+  "hoistNestedLists": [
+    "nextIndent",
+    "modelRemoveStartPosition",
+    "viewRemoveStartPosition",
+    "viewRemovedItem",
+    "conversionApi",
+    "model"
+  ],
+  "isList": [
+    "viewElement"
+  ],
+  "getIndent": [
+    "listItem"
+  ],
+  "LegacyListEditing": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "init": [],
+    "afterInit": []
+  },
+  "getViewListItemLength": [
+    "element"
+  ],
+  "LegacyList": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": []
+  },
+  "LegacyListStyleCommand": {
+    "isStyleTypeSupported": [],
+    "value": [],
+    "defaultType": [],
+    "constructor": [
+      "editor",
+      "defaultType"
+    ],
+    "refresh": [],
+    "execute": [
+      "options"
+    ],
+    "_getValue": [],
+    "_checkEnabled": [],
+    "_tryToConvertItemsToList": []
+  },
+  "LegacyListReversedCommand": {
+    "value": [],
+    "refresh": [],
+    "execute": [
+      "options"
+    ],
+    "_getValue": []
+  },
+  "LegacyListStartCommand": {
+    "value": [],
+    "refresh": [],
+    "execute": [
+      "param"
+    ],
+    "_getValue": []
+  },
+  "LegacyListPropertiesEditing": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "constructor": [
+      "editor"
+    ],
+    "init": [],
+    "afterInit": [],
+    "_mergeListAttributesWhileMergingLists": []
+  },
+  "createAttributeStrategies": [
+    "enabledProperties"
+  ],
+  "upcastListItemAttributes": [
+    "attributeStrategies"
+  ],
+  "downcastListItemAttributes": [
+    "attributeStrategies"
+  ],
+  "areRepresentingSameList": [
+    "listItem1",
+    "listItem2"
+  ],
+  "fixListAfterIndentListCommand": [
+    "editor",
+    "attributeStrategies"
+  ],
+  "fixListAfterOutdentListCommand": [
+    "editor",
+    "attributeStrategies"
+  ],
+  "fixListAttributesOnListItemElements": [
+    "editor",
+    "attributeStrategies"
+  ],
+  "shouldInheritListType": [
+    "baseItem",
+    "itemToChange",
+    "attributeStrategy"
+  ],
+  "shouldInheritListTypeFromPreviousItem": [
+    "previousItem",
+    "itemToChange",
+    "attributeName"
+  ],
+  "removeListItemAttributesFromTodoList": [
+    "editor"
+  ],
+  "restoreDefaultListStyle": [
+    "editor"
+  ],
+  "getChangedListItems": [
+    "changes"
+  ],
+  "getItemFromChange": [
+    "change"
+  ],
+  "LegacyListProperties": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": []
+  },
+  "LegacyCheckTodoListCommand": {
+    "value": [],
+    "_selectedElements": [],
+    "constructor": [
+      "editor"
+    ],
+    "refresh": [],
+    "_getSelectedItems": [],
+    "execute": [
+      "options"
+    ]
+  },
+  "modelViewInsertion": [
+    "model",
+    "onCheckboxChecked"
+  ],
+  "dataModelViewInsertion": [
+    "model"
+  ],
+  "dataViewModelCheckmarkInsertion": [
+    "evt",
+    "data",
+    "conversionApi"
+  ],
+  "modelViewChangeType": [
+    "onCheckedChange",
+    "view"
+  ],
+  "modelViewChangeChecked": [
+    "onCheckedChange"
+  ],
+  "mapModelToViewPosition": [
+    "view"
+  ],
+  "createCheckmarkElement": [
+    "modelItem",
+    "viewWriter",
+    "isChecked",
+    "onChange"
+  ],
+  "findLabel": [
+    "viewItem",
+    "view"
+  ],
+  "findDescription": [
+    "viewItem",
+    "view"
+  ],
+  "LegacyTodoListEditing": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "init": [],
+    "_handleCheckmarkChange": [],
+    "_initAriaAnnouncements": []
+  },
+  "jumpOverCheckmarkOnSideArrowKeyPress": [
+    "model",
+    "locale"
+  ],
+  "isLegacyTodoListItemElement": [
+    "element"
+  ],
+  "LegacyTodoList": {
+    "requires": [],
+    "pluginName": [],
+    "isOfficialPlugin": []
+  },
+  "AdjacentListsSupport": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "init": []
+  },
+  "listSeparatorUpcastConverter": []
+}
