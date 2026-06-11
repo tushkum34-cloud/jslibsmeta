@@ -1,0 +1,276 @@
+{
+  "checkContentLengthHeader": [],
+  "getCheckContentLengthHeaderPlugin": [
+    "unused"
+  ],
+  "regionRedirectEndpointMiddleware": [
+    "config"
+  ],
+  "unlock": [],
+  "regionRedirectMiddleware": [
+    "clientConfig"
+  ],
+  "getRegionRedirectMiddlewarePlugin": [
+    "clientConfig"
+  ],
+  "S3ExpressIdentityCache": {
+    "data": [],
+    "lastPurgeTime": [],
+    "EXPIRED_CREDENTIAL_PURGE_INTERVAL_MS": [],
+    "constructor": [
+      "data"
+    ],
+    "get": [
+      "key"
+    ],
+    "set": [
+      "key",
+      "entry"
+    ],
+    "delete": [
+      "key"
+    ],
+    "purgeExpired": []
+  },
+  "S3ExpressIdentityCacheEntry": {
+    "_identity": [],
+    "isRefreshing": [],
+    "accessed": [],
+    "constructor": [
+      "_identity",
+      "isRefreshing",
+      "accessed"
+    ],
+    "identity": []
+  },
+  "S3ExpressIdentityProviderImpl": {
+    "createSessionFn": [],
+    "cache": [],
+    "REFRESH_WINDOW_MS": [],
+    "constructor": [
+      "createSessionFn",
+      "cache"
+    ],
+    "getS3ExpressIdentity": [
+      "awsIdentity",
+      "identityProperties"
+    ],
+    "getIdentity": []
+  },
+  "resolveS3Config": [
+    "input",
+    "param"
+  ],
+  "s3ExpiresMiddleware": [
+    "config"
+  ],
+  "getS3ExpiresMiddlewarePlugin": [
+    "clientConfig"
+  ],
+  "SignatureV4S3Express": {},
+  "s3ExpressMiddleware": [
+    "options"
+  ],
+  "getS3ExpressPlugin": [
+    "options"
+  ],
+  "signS3Express": [
+    "s3ExpressIdentity",
+    "signingOptions",
+    "request",
+    "sigV4MultiRegionSigner"
+  ],
+  "defaultErrorHandler": [
+    "signingProperties"
+  ],
+  "defaultSuccessHandler": [
+    "httpResponse",
+    "signingProperties"
+  ],
+  "s3ExpressHttpSigningMiddleware": [
+    "config"
+  ],
+  "getS3ExpressHttpSigningPlugin": [
+    "config"
+  ],
+  "toStream": [
+    "bytes"
+  ],
+  "throw200ExceptionsMiddleware": [
+    "config"
+  ],
+  "collectBody": [
+    "param",
+    "context"
+  ],
+  "getThrow200ExceptionsPlugin": [
+    "config"
+  ],
+  "bucketEndpointMiddleware": [
+    "options"
+  ],
+  "validateBucketNameMiddleware": [
+    "param"
+  ],
+  "getValidateBucketNamePlugin": [
+    "options"
+  ],
+  "S3RestXmlProtocol": {
+    "serializeRequest": [
+      "operationSchema",
+      "input",
+      "context"
+    ]
+  },
+  "bucketEndpointMiddleware$1": [
+    "options"
+  ],
+  "isBucketNameOptions": [
+    "options"
+  ],
+  "isDnsCompatibleBucketName": [
+    "bucketName"
+  ],
+  "getRegionalSuffix": [
+    "hostname"
+  ],
+  "getSuffix": [
+    "hostname"
+  ],
+  "getSuffixForArnEndpoint": [
+    "hostname"
+  ],
+  "validateArnEndpointOptions": [
+    "options"
+  ],
+  "validateService": [
+    "service"
+  ],
+  "validateS3Service": [
+    "service"
+  ],
+  "validateOutpostService": [
+    "service"
+  ],
+  "validatePartition": [
+    "partition",
+    "options"
+  ],
+  "validateRegion": [
+    "region",
+    "options"
+  ],
+  "validateRegionalClient": [
+    "region"
+  ],
+  "validateAccountId": [
+    "accountId"
+  ],
+  "validateDNSHostLabel": [
+    "label",
+    "param"
+  ],
+  "validateCustomEndpoint": [
+    "options"
+  ],
+  "getArnResources": [
+    "resource"
+  ],
+  "validateNoDualstack": [
+    "dualstackEndpoint"
+  ],
+  "validateNoFIPS": [
+    "useFipsEndpoint"
+  ],
+  "validateMrapAlias": [
+    "name"
+  ],
+  "bucketHostname": [
+    "options"
+  ],
+  "getEndpointFromBucketName": [
+    "param"
+  ],
+  "getEndpointFromArn": [
+    "options"
+  ],
+  "getEndpointFromObjectLambdaArn": [
+    "param"
+  ],
+  "getEndpointFromMRAPArn": [
+    "param"
+  ],
+  "getEndpointFromOutpostArn": [
+    "param"
+  ],
+  "getEndpointFromAccessPointArn": [
+    "param"
+  ],
+  "getBucketEndpointPlugin": [
+    "options"
+  ],
+  "resolveBucketEndpointConfig": [
+    "input"
+  ],
+  "addExpectContinueMiddleware": [
+    "options"
+  ],
+  "getAddExpectContinuePlugin": [
+    "options"
+  ],
+  "locationConstraintMiddleware": [
+    "options"
+  ],
+  "getLocationConstraintPlugin": [
+    "config"
+  ],
+  "resolveLocationConstraintConfig": [
+    "input"
+  ],
+  "ssecMiddleware": [
+    "options"
+  ],
+  "getSsecPlugin": [
+    "config"
+  ],
+  "isValidBase64EncodedSSECustomerKey": [
+    "str",
+    "options"
+  ],
+  "resolveS3ControlConfig": [
+    "input"
+  ],
+  "parseOutpostArnablesMiddleaware": [
+    "options"
+  ],
+  "validateOutpostsArn": [
+    "arn",
+    "param"
+  ],
+  "parseOutpostsAccessPointArnResource": [
+    "resource"
+  ],
+  "parseOutpostBucketArnResource": [
+    "resource"
+  ],
+  "getOutpostEndpoint": [
+    "hostname",
+    "param"
+  ],
+  "updateArnablesRequestMiddleware": [
+    "config"
+  ],
+  "getProcessArnablesPlugin": [
+    "options"
+  ],
+  "hostPrefixDeduplicationMiddleware": [],
+  "getHostPrefixDeduplicationPlugin": [
+    "config"
+  ],
+  "redirectFromPostIdMiddleware": [
+    "config"
+  ],
+  "getRedirectFromPostIdPlugin": [
+    "options"
+  ]
+}
