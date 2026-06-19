@@ -1,0 +1,513 @@
+{
+  "EnvVarRunCoordinator": {
+    "envName": [],
+    "constructor": [
+      "param"
+    ],
+    "shouldRun": [],
+    "read": []
+  },
+  "IpcRunCoordinator": {
+    "channel": [],
+    "pending": [],
+    "constructor": [
+      "channel"
+    ],
+    "shouldRun": [
+      "key",
+      "ttlMs"
+    ],
+    "onComplete": [
+      "key"
+    ]
+  },
+  "setRunCoordinator": [
+    "coordinator"
+  ],
+  "resolveRunCoordinator": [
+    "perTask"
+  ],
+  "createID": [
+    "param",
+    "param"
+  ],
+  "log": [
+    "level",
+    "message",
+    "extra"
+  ],
+  "setLogger": [
+    "logger"
+  ],
+  "schedule": [
+    "expression",
+    "func",
+    "options"
+  ],
+  "createTask": [
+    "expression",
+    "func",
+    "options"
+  ],
+  "solvePath": [
+    "filePath"
+  ],
+  "validate": [
+    "pattern"
+  ],
+  "convertAsterisk": [
+    "expression",
+    "replecement"
+  ],
+  "convertAsterisksToRanges": [
+    "expressions"
+  ],
+  "appendSeccondExpression": [
+    "expressions"
+  ],
+  "removeSpaces": [
+    "str"
+  ],
+  "normalizeIntegers": [
+    "expressions"
+  ],
+  "interprete": [
+    "monthExpression"
+  ],
+  "convertMonthName": [
+    "expression",
+    "items"
+  ],
+  "replaceWithRange": [
+    "expression",
+    "text",
+    "init",
+    "end",
+    "stepTxt"
+  ],
+  "convertRange": [
+    "expression"
+  ],
+  "convertAllRanges": [
+    "expressions"
+  ],
+  "convertWeekDayName": [
+    "expression",
+    "items"
+  ],
+  "convertWeekDays": [
+    "expression"
+  ],
+  "isValidExpression": [
+    "expression",
+    "min",
+    "max"
+  ],
+  "isInvalidSecond": [
+    "expression"
+  ],
+  "isInvalidMinute": [
+    "expression"
+  ],
+  "isInvalidHour": [
+    "expression"
+  ],
+  "isInvalidDayOfMonth": [
+    "expression"
+  ],
+  "isInvalidMonth": [
+    "expression"
+  ],
+  "isInvalidWeekDay": [
+    "expression"
+  ],
+  "validateFields": [
+    "patterns",
+    "executablePatterns"
+  ],
+  "validateDetailed": [
+    "pattern"
+  ],
+  "parse": [
+    "pattern"
+  ],
+  "TrackedPromise": {
+    "promise": [],
+    "error": [],
+    "state": [],
+    "value": [],
+    "constructor": [
+      "executor"
+    ],
+    "getPromise": [],
+    "getState": [],
+    "isPending": [],
+    "isFulfilled": [],
+    "isRejected": [],
+    "getValue": [],
+    "getError": [],
+    "then": [
+      "onfulfilled",
+      "onrejected"
+    ],
+    "catch": [
+      "onrejected"
+    ],
+    "finally": [
+      "onfinally"
+    ]
+  },
+  "planBeat": [
+    "expected",
+    "now",
+    "toleranceMs",
+    "getNextMatch"
+  ],
+  "emptyOnFn": [],
+  "emptySkipFn": [],
+  "emptyHookFn": [],
+  "Runner": {
+    "timeMatcher": [],
+    "onMatch": [],
+    "noOverlap": [],
+    "maxExecutions": [],
+    "maxRandomDelay": [],
+    "missedExecutionTolerance": [],
+    "runCount": [],
+    "running": [],
+    "heartBeatTimeout": [],
+    "logger": [],
+    "onMissedExecution": [],
+    "onOverlap": [],
+    "onError": [],
+    "beforeRun": [],
+    "onFinished": [],
+    "onMaxExecutions": [],
+    "runCoordinator": [],
+    "coordinatorKeyPrefix": [],
+    "coordinatorTtl": [],
+    "onSkipped": [],
+    "constructor": [
+      "timeMatcher",
+      "onMatch",
+      "options"
+    ],
+    "onErrorFallback": [],
+    "runCoordinated": [
+      "slot",
+      "run"
+    ],
+    "emitSkipped": [
+      "slot",
+      "reason"
+    ],
+    "start": [],
+    "nextRun": [],
+    "stop": [],
+    "isStarted": [],
+    "isStopped": [],
+    "execute": []
+  },
+  "armHeartBeat": [],
+  "runTask": [
+    "date"
+  ],
+  "heartBeat": [],
+  "runAsync": [
+    "fn",
+    "date",
+    "onError"
+  ],
+  "getDelay": [
+    "nextRun"
+  ],
+  "nowWithoutMs": [],
+  "TaskRegistry": {
+    "add": [
+      "task"
+    ],
+    "get": [
+      "taskId"
+    ],
+    "remove": [
+      "task"
+    ],
+    "all": [],
+    "has": [
+      "taskId"
+    ],
+    "killAll": []
+  },
+  "TaskEmitter": {},
+  "BackgroundScheduledTask": {
+    "emitter": [],
+    "id": [],
+    "name": [],
+    "cronExpression": [],
+    "taskPath": [],
+    "options": [],
+    "forkProcess": [],
+    "stateMachine": [],
+    "logger": [],
+    "suppressMissedWarning": [],
+    "timeMatcher": [],
+    "runCount": [],
+    "runCoordinator": [],
+    "constructor": [
+      "cronExpression",
+      "taskPath",
+      "options"
+    ],
+    "getNextRun": [],
+    "getNextRuns": [
+      "count"
+    ],
+    "match": [
+      "date"
+    ],
+    "msToNext": [],
+    "isBusy": [],
+    "runsLeft": [],
+    "getPattern": [],
+    "start": [],
+    "stop": [],
+    "getStatus": [],
+    "destroy": [],
+    "execute": [],
+    "handleShouldRun": [
+      "message"
+    ],
+    "on": [
+      "event",
+      "fun"
+    ],
+    "off": [
+      "event",
+      "fun"
+    ],
+    "once": [
+      "event",
+      "fun"
+    ],
+    "logEvent": [
+      "event",
+      "context"
+    ],
+    "createContext": [
+      "executionDate",
+      "execution",
+      "reason"
+    ]
+  },
+  "failStart": [
+    "error"
+  ],
+  "cleanupAndResolve": [],
+  "onStopped": [],
+  "onDestroy": [],
+  "cleanupListeners": [],
+  "onFinished": [
+    "context"
+  ],
+  "onFail": [
+    "context"
+  ],
+  "serializableOptions": [
+    "options"
+  ],
+  "deserializeError": [
+    "str"
+  ],
+  "startDaemon": [
+    "message"
+  ],
+  "importTaskModule": [
+    "path"
+  ],
+  "sendEvent": [
+    "event",
+    "context"
+  ],
+  "serializeError": [
+    "err"
+  ],
+  "safelySerializeContext": [
+    "context"
+  ],
+  "bind": [],
+  "InlineScheduledTask": {
+    "emitter": [],
+    "cronExpression": [],
+    "timeMatcher": [],
+    "runner": [],
+    "id": [],
+    "name": [],
+    "stateMachine": [],
+    "timezone": [],
+    "logger": [],
+    "suppressMissedWarning": [],
+    "constructor": [
+      "cronExpression",
+      "taskFn",
+      "options"
+    ],
+    "getNextRun": [],
+    "getNextRuns": [
+      "count"
+    ],
+    "match": [
+      "date"
+    ],
+    "msToNext": [],
+    "isBusy": [],
+    "runsLeft": [],
+    "getPattern": [],
+    "changeState": [
+      "state"
+    ],
+    "start": [],
+    "stop": [],
+    "getStatus": [],
+    "destroy": [],
+    "execute": [],
+    "on": [
+      "event",
+      "fun"
+    ],
+    "off": [
+      "event",
+      "fun"
+    ],
+    "once": [
+      "event",
+      "fun"
+    ],
+    "createContext": [
+      "executionDate",
+      "execution",
+      "reason"
+    ]
+  },
+  "StateMachine": {
+    "state": [],
+    "constructor": [
+      "param"
+    ],
+    "changeState": [
+      "state"
+    ]
+  },
+  "lastDayOfMonth": [
+    "year",
+    "month"
+  ],
+  "matchesDayOfMonth": [
+    "field",
+    "year",
+    "month",
+    "day"
+  ],
+  "LocalizedTime": {
+    "timestamp": [],
+    "parts": [],
+    "timezone": [],
+    "constructor": [
+      "date",
+      "timezone"
+    ],
+    "toDate": [],
+    "toISO": [],
+    "getParts": []
+  },
+  "pad": [
+    "n"
+  ],
+  "getOffsetMinutes": [
+    "date",
+    "timezone"
+  ],
+  "readsBackTo": [
+    "timestamp",
+    "parts",
+    "timezone"
+  ],
+  "localTimeToTimestamp": [
+    "parts",
+    "timezone"
+  ],
+  "buildDateParts": [
+    "date",
+    "timezone"
+  ],
+  "parseOffsetMinutes": [
+    "isoString"
+  ],
+  "getTimezoneGMT": [
+    "date",
+    "timezone"
+  ],
+  "MatcherWalker": {
+    "cronExpression": [],
+    "baseDate": [],
+    "timeMatcher": [],
+    "timezone": [],
+    "seconds": [],
+    "minutes": [],
+    "hours": [],
+    "days": [],
+    "months": [],
+    "weekdays": [],
+    "constructor": [
+      "cronExpression",
+      "baseDate",
+      "timezone"
+    ],
+    "isMatching": [],
+    "matchNext": [],
+    "firstTimeOnDay": [
+      "year",
+      "month",
+      "day",
+      "lowerBound",
+      "baseMs"
+    ],
+    "matchesWeekday": [
+      "year",
+      "month",
+      "day"
+    ]
+  },
+  "nextDay": [
+    "year",
+    "month",
+    "day"
+  ],
+  "sortedAsc": [
+    "values"
+  ],
+  "isLaterInDay": [
+    "hour",
+    "minute",
+    "second",
+    "bound"
+  ],
+  "matchValue": [
+    "allowedValues",
+    "value"
+  ],
+  "TimeMatcher": {
+    "timezone": [],
+    "pattern": [],
+    "expressions": [],
+    "constructor": [
+      "pattern",
+      "timezone"
+    ],
+    "match": [
+      "date"
+    ],
+    "getNextMatch": [
+      "date"
+    ]
+  }
+}
