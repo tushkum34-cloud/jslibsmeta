@@ -1,0 +1,596 @@
+{
+  "formatDevErrorMessage": [
+    "message"
+  ],
+  "$getListDepth": [
+    "listNode"
+  ],
+  "$getTopListNode": [
+    "listItem"
+  ],
+  "$getAllListItems": [
+    "node"
+  ],
+  "isNestedListNode": [
+    "node"
+  ],
+  "$removeHighestEmptyListParent": [
+    "sublist"
+  ],
+  "$getNewListStart": [
+    "list",
+    "listItem"
+  ],
+  "$isSelectingEmptyListItem": [
+    "anchorNode",
+    "nodes"
+  ],
+  "$insertList": [
+    "listType"
+  ],
+  "append": [
+    "node",
+    "nodesToAppend"
+  ],
+  "$createListOrMerge": [
+    "node",
+    "listType"
+  ],
+  "mergeLists": [
+    "list1",
+    "list2"
+  ],
+  "$removeList": [],
+  "updateChildrenListItemValue": [
+    "list"
+  ],
+  "mergeNextSiblingListIfSameType": [
+    "list"
+  ],
+  "$handleIndent": [
+    "listItemNode"
+  ],
+  "$handleOutdent": [
+    "listItemNode"
+  ],
+  "$handleListInsertParagraph": [
+    "param"
+  ],
+  "applyMarkerStyles": [
+    "dom",
+    "node",
+    "prevNode"
+  ],
+  "ListItemNode": {
+    "__value": [],
+    "__checked": [],
+    "$config": [],
+    "constructor": [
+      "param",
+      "param",
+      "key"
+    ],
+    "afterCloneFrom": [
+      "prevNode"
+    ],
+    "createDOM": [
+      "config"
+    ],
+    "updateListItemDOM": [
+      "prevNode",
+      "dom",
+      "config"
+    ],
+    "updateDOM": [
+      "prevNode",
+      "dom",
+      "config"
+    ],
+    "updateFromJSON": [
+      "serializedNode"
+    ],
+    "exportDOM": [
+      "editor"
+    ],
+    "exportJSON": [],
+    "append": [
+      "param"
+    ],
+    "replace": [
+      "replaceWithNode",
+      "includeChildren"
+    ],
+    "insertAfter": [
+      "node",
+      "param"
+    ],
+    "remove": [
+      "preserveEmptyParent"
+    ],
+    "resetOnCopyNodeFrom": [
+      "original"
+    ],
+    "insertNewAfter": [
+      "_",
+      "param"
+    ],
+    "collapseAtStart": [
+      "selection"
+    ],
+    "getValue": [],
+    "setValue": [
+      "value"
+    ],
+    "getChecked": [],
+    "setChecked": [
+      "checked"
+    ],
+    "toggleChecked": [],
+    "getIndent": [],
+    "setIndent": [
+      "indent"
+    ],
+    "canInsertAfter": [
+      "node"
+    ],
+    "canReplaceWith": [
+      "replacement"
+    ],
+    "canMergeWith": [
+      "node"
+    ],
+    "extractWithChild": [
+      "child",
+      "selection"
+    ],
+    "isParentRequired": [],
+    "createParentElementNode": [],
+    "canMergeWhenEmpty": []
+  },
+  "$setListItemThemeClassNames": [
+    "dom",
+    "editorThemeClasses",
+    "node"
+  ],
+  "updateListItemChecked": [
+    "dom",
+    "listItemNode",
+    "prevListItemNode"
+  ],
+  "$convertListItemElement": [
+    "domNode"
+  ],
+  "$convertCheckboxInput": [
+    "domNode"
+  ],
+  "setFormatFromChildren": [
+    "listItemNode",
+    "children"
+  ],
+  "$createListItemNode": [
+    "checked"
+  ],
+  "$isListItemNode": [
+    "node"
+  ],
+  "ListNode": {
+    "__tag": [],
+    "__start": [],
+    "__listType": [],
+    "$config": [],
+    "constructor": [
+      "param",
+      "param",
+      "key"
+    ],
+    "afterCloneFrom": [
+      "prevNode"
+    ],
+    "getTag": [],
+    "setListType": [
+      "type"
+    ],
+    "getListType": [],
+    "getStart": [],
+    "setStart": [
+      "start"
+    ],
+    "createDOM": [
+      "config",
+      "_editor"
+    ],
+    "updateDOM": [
+      "prevNode",
+      "dom",
+      "config"
+    ],
+    "updateFromJSON": [
+      "serializedNode"
+    ],
+    "exportDOM": [
+      "editor"
+    ],
+    "exportJSON": [],
+    "canBeEmpty": [],
+    "canIndent": [],
+    "splice": [
+      "start",
+      "deleteCount",
+      "nodesToInsert"
+    ],
+    "extractWithChild": [
+      "child"
+    ],
+    "createListItemNode": []
+  },
+  "$setListThemeClassNames": [
+    "dom",
+    "editorThemeClasses",
+    "node"
+  ],
+  "$normalizeChildren": [
+    "nodes",
+    "listNode"
+  ],
+  "isDomChecklist$1": [
+    "domNode"
+  ],
+  "isHTMLOListElement": [
+    "node"
+  ],
+  "$convertListNode": [
+    "domNode"
+  ],
+  "$createListNode": [
+    "param",
+    "param"
+  ],
+  "$isListNode": [
+    "node"
+  ],
+  "registerCheckList": [
+    "editor",
+    "options"
+  ],
+  "isWithinDedupWindow": [
+    "event"
+  ],
+  "recordHandled": [
+    "event"
+  ],
+  "configHandleClick": [
+    "event"
+  ],
+  "configHandlePointerUp": [
+    "event"
+  ],
+  "configHandleSelectDefaults": [
+    "event"
+  ],
+  "handleCheckItemEvent": [
+    "event",
+    "callback"
+  ],
+  "handleClick": [
+    "event",
+    "disableFocusOnClick"
+  ],
+  "handleSelectDefaults": [
+    "event",
+    "disableTakeFocusOnClick"
+  ],
+  "getActiveCheckListItem": [
+    "editor"
+  ],
+  "findCheckListItemSibling": [
+    "node",
+    "backward"
+  ],
+  "handleArrowUpOrDown": [
+    "event",
+    "editor",
+    "backward"
+  ],
+  "isDomChecklist": [
+    "domNode"
+  ],
+  "$normalizeListChildren": [
+    "children"
+  ],
+  "$liftFormatFromSingleParagraph": [
+    "listItemNode",
+    "children"
+  ],
+  "$flattenListItemBlocks": [
+    "children"
+  ],
+  "$isBoundary": [
+    "node"
+  ],
+  "flushInlineRun": [],
+  "$buildChecklistItem": [
+    "ctx",
+    "el",
+    "checkboxOwner"
+  ],
+  "registerList": [
+    "editor",
+    "options"
+  ],
+  "registerListStrictIndentTransform": [
+    "editor"
+  ],
+  "$formatListIndentStrict": [
+    "listItemNode"
+  ],
+  "$processListWithStrictIndent": [
+    "listNode"
+  ],
+  "$findChildrenEndListItemNode": [
+    "listItemNode"
+  ],
+  "$handleListItemBackspaceAdjacentToDecorator": [],
+  "i": [
+    "e",
+    "param"
+  ],
+  "s": [
+    "e"
+  ],
+  "o": [],
+  "l": [
+    "e"
+  ],
+  "c": [
+    "e"
+  ],
+  "a": [
+    "e"
+  ],
+  "d": [
+    "e"
+  ],
+  "g": [
+    "e",
+    "t"
+  ],
+  "u": [
+    "e",
+    "n"
+  ],
+  "h": [
+    "e",
+    "t"
+  ],
+  "p": [],
+  "f": [
+    "e"
+  ],
+  "m": [
+    "e"
+  ],
+  "_": [
+    "e"
+  ],
+  "C": [
+    "param"
+  ],
+  "N": {
+    "__value": [],
+    "__checked": [],
+    "$config": [],
+    "constructor": [
+      "param",
+      "param",
+      "n"
+    ],
+    "afterCloneFrom": [
+      "e"
+    ],
+    "createDOM": [
+      "e"
+    ],
+    "updateListItemDOM": [
+      "e",
+      "n",
+      "r"
+    ],
+    "updateDOM": [
+      "e",
+      "t",
+      "n"
+    ],
+    "updateFromJSON": [
+      "e"
+    ],
+    "exportDOM": [
+      "e"
+    ],
+    "exportJSON": [],
+    "append": [
+      "param"
+    ],
+    "replace": [
+      "e",
+      "n"
+    ],
+    "insertAfter": [
+      "e",
+      "param"
+    ],
+    "remove": [
+      "e"
+    ],
+    "resetOnCopyNodeFrom": [
+      "e"
+    ],
+    "insertNewAfter": [
+      "e",
+      "param"
+    ],
+    "collapseAtStart": [
+      "e"
+    ],
+    "getValue": [],
+    "setValue": [
+      "e"
+    ],
+    "getChecked": [],
+    "setChecked": [
+      "e"
+    ],
+    "toggleChecked": [],
+    "getIndent": [],
+    "setIndent": [
+      "e"
+    ],
+    "canInsertAfter": [
+      "e"
+    ],
+    "canReplaceWith": [
+      "e"
+    ],
+    "canMergeWith": [
+      "e"
+    ],
+    "extractWithChild": [
+      "e",
+      "n"
+    ],
+    "isParentRequired": [],
+    "createParentElementNode": [],
+    "canMergeWhenEmpty": []
+  },
+  "T": [
+    "e"
+  ],
+  "y": [
+    "e"
+  ],
+  "S": [
+    "e",
+    "n"
+  ],
+  "O": [
+    "e"
+  ],
+  "x": [
+    "e"
+  ],
+  "L": {
+    "__tag": [],
+    "__start": [],
+    "__listType": [],
+    "$config": [],
+    "constructor": [
+      "param",
+      "param",
+      "n"
+    ],
+    "afterCloneFrom": [
+      "e"
+    ],
+    "getTag": [],
+    "setListType": [
+      "e"
+    ],
+    "getListType": [],
+    "getStart": [],
+    "setStart": [
+      "e"
+    ],
+    "createDOM": [
+      "e",
+      "t"
+    ],
+    "updateDOM": [
+      "e",
+      "t",
+      "n"
+    ],
+    "updateFromJSON": [
+      "e"
+    ],
+    "exportDOM": [
+      "e"
+    ],
+    "exportJSON": [],
+    "canBeEmpty": [],
+    "canIndent": [],
+    "splice": [
+      "e",
+      "n",
+      "r"
+    ],
+    "extractWithChild": [
+      "e"
+    ],
+    "createListItemNode": []
+  },
+  "v": [
+    "e",
+    "n",
+    "r"
+  ],
+  "E": [
+    "e"
+  ],
+  "M": [
+    "param",
+    "param"
+  ],
+  "k": [
+    "e"
+  ],
+  "P": [
+    "e",
+    "n"
+  ],
+  "I": [
+    "n",
+    "r"
+  ],
+  "A": [
+    "e",
+    "n"
+  ],
+  "R": [
+    "e"
+  ],
+  "F": [
+    "e",
+    "n",
+    "r"
+  ],
+  "D": [
+    "e"
+  ],
+  "K": [
+    "e",
+    "n"
+  ],
+  "W": [
+    "e"
+  ],
+  "n": [
+    "e"
+  ],
+  "Y": [
+    "e",
+    "n",
+    "i"
+  ],
+  "j": [
+    "e",
+    "n"
+  ],
+  "G": [
+    "e"
+  ],
+  "$isLastItemInList": [
+    "listItem"
+  ],
+  "$findNearestListItemNode": [
+    "node"
+  ]
+}
