@@ -1,0 +1,1623 @@
+{
+  "writeToTrackingBuffer": [
+    "buffer",
+    "txnDescriptor",
+    "outstandingRequestCount"
+  ],
+  "AeadAes256CbcHmac256Algorithm": {
+    "constructor": [
+      "columnEncryptionKey",
+      "encryptionType"
+    ],
+    "encryptData": [
+      "plaintText"
+    ],
+    "decryptData": [
+      "cipherText"
+    ],
+    "_prepareAuthenticationTag": [
+      "iv",
+      "cipherText",
+      "offset",
+      "length"
+    ]
+  },
+  "_interopRequireDefault": [
+    "e"
+  ],
+  "deriveKey": [
+    "rootKey",
+    "salt"
+  ],
+  "generateKeySalt": [
+    "keyType",
+    "algorithmName",
+    "keySize"
+  ],
+  "AeadAes256CbcHmac256EncryptionKey": {
+    "constructor": [
+      "rootKey",
+      "algorithmName"
+    ],
+    "getEncryptionKey": [],
+    "getMacKey": [],
+    "getIvKey": []
+  },
+  "CEKEntry": {
+    "constructor": [
+      "ordinalVal"
+    ],
+    "add": [
+      "encryptedKey",
+      "dbId",
+      "keyId",
+      "keyVersion",
+      "mdVersion",
+      "keyPath",
+      "keyStoreName",
+      "algorithmName"
+    ]
+  },
+  "getParameterEncryptionMetadata": [
+    "connection",
+    "request",
+    "callback"
+  ],
+  "validateAndGetEncryptionAlgorithmName": [
+    "cipherAlgorithmId",
+    "cipherAlgorithmName"
+  ],
+  "encryptWithKey": [
+    "plaintext",
+    "md",
+    "options"
+  ],
+  "decryptWithKey": [
+    "cipherText",
+    "md",
+    "options"
+  ],
+  "decryptSymmetricKey": [
+    "md",
+    "options"
+  ],
+  "ColumnEncryptionAzureKeyVaultProvider": {
+    "constructor": [
+      "clientId",
+      "clientKey",
+      "tenantId"
+    ],
+    "decryptColumnEncryptionKey": [
+      "masterKeyPath",
+      "encryptionAlgorithm",
+      "encryptedColumnEncryptionKey"
+    ],
+    "encryptColumnEncryptionKey": [
+      "masterKeyPath",
+      "encryptionAlgorithm",
+      "columnEncryptionKey"
+    ],
+    "getMasterKey": [
+      "masterKeyPath"
+    ],
+    "createKeyClient": [
+      "keyVaultUrl"
+    ],
+    "createCryptoClient": [
+      "masterKey"
+    ],
+    "parsePath": [
+      "masterKeyPath"
+    ],
+    "azureKeyVaultSignedHashedData": [
+      "cryptoClient",
+      "dataToSign"
+    ],
+    "azureKeyVaultWrap": [
+      "cryptoClient",
+      "encryptionAlgorithm",
+      "columnEncryptionKey"
+    ],
+    "azureKeyVaultUnWrap": [
+      "cryptoClient",
+      "encryptionAlgorithm",
+      "encryptedColumnEncryptionKey"
+    ],
+    "getAKVKeySize": [
+      "retrievedKey"
+    ],
+    "validateEncryptionAlgorithm": [
+      "encryptionAlgorithm"
+    ]
+  },
+  "getKey": [
+    "keyInfo",
+    "options"
+  ],
+  "SymmetricKey": {
+    "constructor": [
+      "rootKey"
+    ],
+    "zeroOutKey": []
+  },
+  "shouldHonorAE": [
+    "stmtColumnEncryptionSetting",
+    "columnEncryptionSetting"
+  ],
+  "BulkLoadPayload": {
+    "constructor": [
+      "bulkLoad"
+    ],
+    "toString": [
+      "param"
+    ]
+  },
+  "RowTransform": {
+    "constructor": [
+      "bulkLoad"
+    ],
+    "_transform": [
+      "row",
+      "_encoding",
+      "callback"
+    ],
+    "_flush": [
+      "callback"
+    ]
+  },
+  "BulkLoad": {
+    "constructor": [
+      "table",
+      "collation",
+      "connectionOptions",
+      "param",
+      "callback"
+    ],
+    "addColumn": [
+      "name",
+      "type",
+      "param"
+    ],
+    "getOptionsSql": [],
+    "getBulkInsertSql": [],
+    "getTableCreationSql": [],
+    "getColMetaData": [],
+    "setTimeout": [
+      "timeout"
+    ],
+    "createDoneToken": [],
+    "cancel": []
+  },
+  "Collation": {
+    "fromBuffer": [
+      "buffer",
+      "param"
+    ],
+    "constructor": [
+      "lcid",
+      "flags",
+      "version",
+      "sortId"
+    ],
+    "toBuffer": []
+  },
+  "Connection": {
+    "constructor": [
+      "config"
+    ],
+    "connect": [
+      "connectListener"
+    ],
+    "on": [
+      "event",
+      "listener"
+    ],
+    "emit": [
+      "event",
+      "param"
+    ],
+    "close": [],
+    "initialiseConnection": [],
+    "cleanupConnection": [],
+    "createDebug": [],
+    "createTokenStreamParser": [
+      "message",
+      "handler"
+    ],
+    "wrapWithTls": [
+      "socket",
+      "signal"
+    ],
+    "connectOnPort": [
+      "port",
+      "multiSubnetFailover",
+      "signal",
+      "customConnector"
+    ],
+    "closeConnection": [],
+    "createCancelTimer": [],
+    "createRequestTimer": [],
+    "cancelTimeout": [],
+    "requestTimeout": [],
+    "clearCancelTimer": [],
+    "clearRequestTimer": [],
+    "transitionTo": [
+      "newState"
+    ],
+    "getEventHandler": [
+      "eventName"
+    ],
+    "dispatchEvent": [
+      "eventName",
+      "param"
+    ],
+    "wrapSocketError": [
+      "error"
+    ],
+    "socketEnd": [],
+    "socketClose": [],
+    "sendPreLogin": [],
+    "sendLogin7Packet": [],
+    "sendFedAuthTokenMessage": [
+      "token"
+    ],
+    "sendInitialSql": [],
+    "getInitialSql": [],
+    "execSqlBatch": [
+      "request"
+    ],
+    "execSql": [
+      "request"
+    ],
+    "newBulkLoad": [
+      "table",
+      "callbackOrOptions",
+      "callback"
+    ],
+    "execBulkLoad": [
+      "bulkLoad",
+      "rows"
+    ],
+    "prepare": [
+      "request"
+    ],
+    "unprepare": [
+      "request"
+    ],
+    "execute": [
+      "request",
+      "parameters"
+    ],
+    "callProcedure": [
+      "request"
+    ],
+    "beginTransaction": [
+      "callback",
+      "param",
+      "param"
+    ],
+    "commitTransaction": [
+      "callback",
+      "param"
+    ],
+    "rollbackTransaction": [
+      "callback",
+      "param"
+    ],
+    "saveTransaction": [
+      "callback",
+      "name"
+    ],
+    "transaction": [
+      "cb",
+      "isolationLevel"
+    ],
+    "makeRequest": [
+      "request",
+      "packetType",
+      "payload"
+    ],
+    "cancel": [],
+    "reset": [
+      "callback"
+    ],
+    "currentTransactionDescriptor": [],
+    "getIsolationLevelText": [
+      "isolationLevel"
+    ],
+    "performTlsNegotiation": [
+      "preloginPayload",
+      "signal"
+    ],
+    "readPreloginResponse": [
+      "signal"
+    ],
+    "performReRouting": [],
+    "performTransientFailureRetry": [],
+    "performSentLogin7WithStandardLogin": [
+      "signal"
+    ],
+    "performSentLogin7WithNTLMLogin": [
+      "signal"
+    ],
+    "performSentLogin7WithFedAuth": [
+      "signal"
+    ],
+    "performLoggedInSendingInitialSql": [
+      "signal"
+    ]
+  },
+  "_interopRequireWildcard": [
+    "e",
+    "t"
+  ],
+  "withResolvers": [],
+  "onConnect": [],
+  "onError": [
+    "err"
+  ],
+  "onClose": [],
+  "onEnd": [],
+  "onAbort": [],
+  "onCancel": [],
+  "txDone": [
+    "err",
+    "done",
+    "param"
+  ],
+  "isTransientError": [
+    "error"
+  ],
+  "onResume": [],
+  "onPause": [],
+  "onEndOfMessage": [],
+  "connectInParallel": [
+    "options",
+    "lookup",
+    "signal"
+  ],
+  "connectInSequence": [
+    "options",
+    "lookup",
+    "signal"
+  ],
+  "lookupAllAddresses": [
+    "host",
+    "lookup",
+    "signal"
+  ],
+  "Debug": {
+    "constructor": [
+      "param"
+    ],
+    "packet": [
+      "direction",
+      "packet"
+    ],
+    "data": [
+      "packet"
+    ],
+    "payload": [
+      "generatePayloadText"
+    ],
+    "token": [
+      "token"
+    ],
+    "haveListeners": [],
+    "log": [
+      "text"
+    ]
+  },
+  "ConnectionError": {
+    "constructor": [
+      "message",
+      "code",
+      "options"
+    ]
+  },
+  "RequestError": {
+    "constructor": [
+      "message",
+      "code",
+      "options"
+    ]
+  },
+  "InputError": {},
+  "bufferToUpperCaseGuid": [
+    "buffer"
+  ],
+  "bufferToLowerCaseGuid": [
+    "buffer"
+  ],
+  "guidToArray": [
+    "guid"
+  ],
+  "IncomingMessageStream": {
+    "constructor": [
+      "debug"
+    ],
+    "pause": [],
+    "resume": [],
+    "processBufferedData": [
+      "callback"
+    ],
+    "_transform": [
+      "chunk",
+      "_encoding",
+      "callback"
+    ]
+  },
+  "instanceLookup": [
+    "options"
+  ],
+  "parseBrowserResponse": [
+    "response",
+    "instanceName"
+  ],
+  "Login7Payload": {
+    "constructor": [
+      "param"
+    ],
+    "toBuffer": [],
+    "buildOptionFlags1": [],
+    "buildFeatureExt": [],
+    "buildOptionFlags2": [],
+    "buildTypeFlags": [],
+    "buildOptionFlags3": [],
+    "scramblePassword": [
+      "password"
+    ],
+    "toString": [
+      "param"
+    ]
+  },
+  "MessageIO": {
+    "constructor": [
+      "socket",
+      "packetSize",
+      "debug"
+    ],
+    "packetSize": [
+      "param"
+    ],
+    "startTls": [
+      "credentialsDetails",
+      "hostname",
+      "trustServerCertificate"
+    ],
+    "sendMessage": [
+      "packetType",
+      "data",
+      "resetConnection"
+    ],
+    "readMessage": []
+  },
+  "onSecureConnect": [],
+  "onReadable": [],
+  "Message": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "readCollation": [
+    "buf",
+    "offset"
+  ],
+  "readSchema": [
+    "buf",
+    "offset"
+  ],
+  "readUDTInfo": [
+    "buf",
+    "offset"
+  ],
+  "readMetadata": [
+    "buf",
+    "offset",
+    "options"
+  ],
+  "metadataParse": [
+    "parser",
+    "options",
+    "callback"
+  ],
+  "NTLMResponsePayload": {
+    "constructor": [
+      "loginData"
+    ],
+    "toString": [
+      "param"
+    ],
+    "createResponse": [
+      "challenge"
+    ],
+    "createClientNonce": [],
+    "ntlmv2Response": [
+      "domain",
+      "user",
+      "password",
+      "serverNonce",
+      "targetInfo",
+      "clientNonce",
+      "mytime"
+    ],
+    "createTimestamp": [
+      "time"
+    ],
+    "lmv2Response": [
+      "domain",
+      "user",
+      "password",
+      "serverNonce",
+      "clientNonce"
+    ],
+    "ntv2Hash": [
+      "domain",
+      "user",
+      "password"
+    ],
+    "ntHash": [
+      "text"
+    ],
+    "hmacMD5": [
+      "data",
+      "key"
+    ]
+  },
+  "createNTLMRequest": [
+    "options"
+  ],
+  "OutgoingMessageStream": {
+    "constructor": [
+      "debug",
+      "param"
+    ],
+    "_write": [
+      "message",
+      "_encoding",
+      "callback"
+    ],
+    "_read": [
+      "_size"
+    ]
+  },
+  "Packet": {
+    "constructor": [
+      "typeOrBuffer"
+    ],
+    "setLength": [],
+    "length": [],
+    "resetConnection": [
+      "reset"
+    ],
+    "last": [
+      "last"
+    ],
+    "ignore": [
+      "last"
+    ],
+    "isLast": [],
+    "packetId": [
+      "packetId"
+    ],
+    "addData": [
+      "data"
+    ],
+    "data": [],
+    "type": [],
+    "statusAsString": [],
+    "headerToString": [
+      "param"
+    ],
+    "dataToString": [
+      "param"
+    ],
+    "toString": [
+      "param"
+    ],
+    "payloadString": []
+  },
+  "isPacketComplete": [
+    "potentialPacketBuffer"
+  ],
+  "packetLength": [
+    "potentialPacketBuffer"
+  ],
+  "PreloginPayload": {
+    "constructor": [
+      "param"
+    ],
+    "createOptions": [],
+    "createVersionOption": [],
+    "createEncryptionOption": [],
+    "createInstanceOption": [],
+    "createThreadIdOption": [],
+    "createMarsOption": [],
+    "createTraceIdOption": [],
+    "createFedAuthOption": [],
+    "extractOptions": [],
+    "extractVersion": [
+      "offset"
+    ],
+    "extractEncryption": [
+      "offset"
+    ],
+    "extractInstance": [
+      "offset"
+    ],
+    "extractThreadId": [
+      "offset"
+    ],
+    "extractMars": [
+      "offset"
+    ],
+    "extractTraceId": [
+      "offset"
+    ],
+    "extractFedAuth": [
+      "offset"
+    ],
+    "toString": [
+      "param"
+    ]
+  },
+  "Request": {
+    "on": [
+      "event",
+      "listener"
+    ],
+    "emit": [
+      "event",
+      "param"
+    ],
+    "constructor": [
+      "sqlTextOrProcedure",
+      "callback",
+      "options"
+    ],
+    "addParameter": [
+      "name",
+      "type",
+      "value",
+      "options"
+    ],
+    "addOutputParameter": [
+      "name",
+      "type",
+      "value",
+      "options"
+    ],
+    "makeParamsParameter": [
+      "parameters"
+    ],
+    "validateParameters": [
+      "collation"
+    ],
+    "pause": [],
+    "resume": [],
+    "cancel": [],
+    "setTimeout": [
+      "timeout"
+    ]
+  },
+  "RpcRequestPayload": {
+    "constructor": [
+      "procedure",
+      "parameters",
+      "txnDescriptor",
+      "options",
+      "collation"
+    ],
+    "generateData": [],
+    "toString": [
+      "param"
+    ],
+    "generateParameterData": [
+      "parameter"
+    ]
+  },
+  "sendInParallel": [
+    "addresses",
+    "port",
+    "request",
+    "signal"
+  ],
+  "onMessage": [
+    "message"
+  ],
+  "clearSockets": [],
+  "sendMessage": [
+    "host",
+    "port",
+    "lookup",
+    "signal",
+    "request"
+  ],
+  "SqlBatchPayload": {
+    "constructor": [
+      "sqlText",
+      "txnDescriptor",
+      "options"
+    ],
+    "toString": [
+      "param"
+    ]
+  },
+  "connect": [
+    "config",
+    "connectListener"
+  ],
+  "readTableName": [
+    "buf",
+    "offset",
+    "metadata",
+    "options"
+  ],
+  "readColumnName": [
+    "buf",
+    "offset",
+    "index",
+    "metadata",
+    "options"
+  ],
+  "readColumn": [
+    "buf",
+    "offset",
+    "options",
+    "index"
+  ],
+  "colMetadataParser": [
+    "parser"
+  ],
+  "readToken": [
+    "buf",
+    "offset",
+    "options"
+  ],
+  "doneParser": [
+    "buf",
+    "offset",
+    "options"
+  ],
+  "doneInProcParser": [
+    "buf",
+    "offset",
+    "options"
+  ],
+  "doneProcParser": [
+    "buf",
+    "offset",
+    "options"
+  ],
+  "_readNewAndOldValue": [
+    "buf",
+    "offset",
+    "length",
+    "type"
+  ],
+  "envChangeParser": [
+    "buf",
+    "offset",
+    "_options"
+  ],
+  "featureExtAckParser": [
+    "buf",
+    "offset",
+    "_options"
+  ],
+  "readFedAuthInfo": [
+    "data"
+  ],
+  "fedAuthInfoParser": [
+    "buf",
+    "offset",
+    "_options"
+  ],
+  "UnexpectedTokenError": {
+    "constructor": [
+      "handler",
+      "token"
+    ]
+  },
+  "TokenHandler": {
+    "onInfoMessage": [
+      "token"
+    ],
+    "onErrorMessage": [
+      "token"
+    ],
+    "onSSPI": [
+      "token"
+    ],
+    "onDatabaseChange": [
+      "token"
+    ],
+    "onLanguageChange": [
+      "token"
+    ],
+    "onCharsetChange": [
+      "token"
+    ],
+    "onSqlCollationChange": [
+      "token"
+    ],
+    "onRoutingChange": [
+      "token"
+    ],
+    "onPacketSizeChange": [
+      "token"
+    ],
+    "onResetConnection": [
+      "token"
+    ],
+    "onBeginTransaction": [
+      "token"
+    ],
+    "onCommitTransaction": [
+      "token"
+    ],
+    "onRollbackTransaction": [
+      "token"
+    ],
+    "onFedAuthInfo": [
+      "token"
+    ],
+    "onFeatureExtAck": [
+      "token"
+    ],
+    "onLoginAck": [
+      "token"
+    ],
+    "onColMetadata": [
+      "token"
+    ],
+    "onOrder": [
+      "token"
+    ],
+    "onRow": [
+      "token"
+    ],
+    "onReturnStatus": [
+      "token"
+    ],
+    "onReturnValue": [
+      "token"
+    ],
+    "onDoneProc": [
+      "token"
+    ],
+    "onDoneInProc": [
+      "token"
+    ],
+    "onDone": [
+      "token"
+    ],
+    "onDatabaseMirroringPartner": [
+      "token"
+    ]
+  },
+  "InitialSqlTokenHandler": {
+    "constructor": [
+      "connection"
+    ],
+    "onInfoMessage": [
+      "token"
+    ],
+    "onErrorMessage": [
+      "token"
+    ],
+    "onDatabaseChange": [
+      "token"
+    ],
+    "onLanguageChange": [
+      "token"
+    ],
+    "onCharsetChange": [
+      "token"
+    ],
+    "onSqlCollationChange": [
+      "token"
+    ],
+    "onPacketSizeChange": [
+      "token"
+    ],
+    "onBeginTransaction": [
+      "token"
+    ],
+    "onCommitTransaction": [
+      "token"
+    ],
+    "onRollbackTransaction": [
+      "token"
+    ],
+    "onColMetadata": [
+      "token"
+    ],
+    "onOrder": [
+      "token"
+    ],
+    "onRow": [
+      "token"
+    ],
+    "onReturnStatus": [
+      "token"
+    ],
+    "onReturnValue": [
+      "token"
+    ],
+    "onDoneProc": [
+      "token"
+    ],
+    "onDoneInProc": [
+      "token"
+    ],
+    "onDone": [
+      "token"
+    ],
+    "onResetConnection": [
+      "token"
+    ]
+  },
+  "Login7TokenHandler": {
+    "constructor": [
+      "connection"
+    ],
+    "onInfoMessage": [
+      "token"
+    ],
+    "onErrorMessage": [
+      "token"
+    ],
+    "onSSPI": [
+      "token"
+    ],
+    "onDatabaseChange": [
+      "token"
+    ],
+    "onDatabaseMirroringPartner": [
+      "token"
+    ],
+    "onLanguageChange": [
+      "token"
+    ],
+    "onCharsetChange": [
+      "token"
+    ],
+    "onSqlCollationChange": [
+      "token"
+    ],
+    "onFedAuthInfo": [
+      "token"
+    ],
+    "onFeatureExtAck": [
+      "token"
+    ],
+    "onLoginAck": [
+      "token"
+    ],
+    "onRoutingChange": [
+      "token"
+    ],
+    "onDoneInProc": [
+      "token"
+    ],
+    "onDone": [
+      "token"
+    ],
+    "onPacketSizeChange": [
+      "token"
+    ]
+  },
+  "RequestTokenHandler": {
+    "constructor": [
+      "connection",
+      "request"
+    ],
+    "onInfoMessage": [
+      "token"
+    ],
+    "onErrorMessage": [
+      "token"
+    ],
+    "onDatabaseChange": [
+      "token"
+    ],
+    "onLanguageChange": [
+      "token"
+    ],
+    "onCharsetChange": [
+      "token"
+    ],
+    "onSqlCollationChange": [
+      "token"
+    ],
+    "onPacketSizeChange": [
+      "token"
+    ],
+    "onBeginTransaction": [
+      "token"
+    ],
+    "onCommitTransaction": [
+      "token"
+    ],
+    "onRollbackTransaction": [
+      "token"
+    ],
+    "onColMetadata": [
+      "token"
+    ],
+    "onOrder": [
+      "token"
+    ],
+    "onRow": [
+      "token"
+    ],
+    "onReturnStatus": [
+      "token"
+    ],
+    "onReturnValue": [
+      "token"
+    ],
+    "onDoneProc": [
+      "token"
+    ],
+    "onDoneInProc": [
+      "token"
+    ],
+    "onDone": [
+      "token"
+    ],
+    "onResetConnection": [
+      "token"
+    ]
+  },
+  "AttentionTokenHandler": {
+    "constructor": [
+      "connection",
+      "request"
+    ],
+    "onDone": [
+      "token"
+    ]
+  },
+  "Result": {
+    "constructor": [
+      "value",
+      "offset"
+    ]
+  },
+  "NotEnoughDataError": {
+    "byteCount": [],
+    "constructor": [
+      "byteCount"
+    ]
+  },
+  "readUInt8": [
+    "buf",
+    "offset"
+  ],
+  "readUInt16LE": [
+    "buf",
+    "offset"
+  ],
+  "readInt16LE": [
+    "buf",
+    "offset"
+  ],
+  "readUInt24LE": [
+    "buf",
+    "offset"
+  ],
+  "readUInt32LE": [
+    "buf",
+    "offset"
+  ],
+  "readUInt32BE": [
+    "buf",
+    "offset"
+  ],
+  "readUInt40LE": [
+    "buf",
+    "offset"
+  ],
+  "readInt32LE": [
+    "buf",
+    "offset"
+  ],
+  "readBigUInt64LE": [
+    "buf",
+    "offset"
+  ],
+  "readBigInt64LE": [
+    "buf",
+    "offset"
+  ],
+  "readFloatLE": [
+    "buf",
+    "offset"
+  ],
+  "readDoubleLE": [
+    "buf",
+    "offset"
+  ],
+  "readBVarChar": [
+    "buf",
+    "offset"
+  ],
+  "readBVarByte": [
+    "buf",
+    "offset"
+  ],
+  "readUsVarChar": [
+    "buf",
+    "offset"
+  ],
+  "readUsVarByte": [
+    "buf",
+    "offset"
+  ],
+  "readUNumeric64LE": [
+    "buf",
+    "offset"
+  ],
+  "readUNumeric96LE": [
+    "buf",
+    "offset"
+  ],
+  "readUNumeric128LE": [
+    "buf",
+    "offset"
+  ],
+  "infoParser": [
+    "buf",
+    "offset",
+    "options"
+  ],
+  "errorParser": [
+    "buf",
+    "offset",
+    "options"
+  ],
+  "loginAckParser": [
+    "buf",
+    "offset",
+    "_options"
+  ],
+  "nbcRowParser": [
+    "parser"
+  ],
+  "orderParser": [
+    "buf",
+    "offset",
+    "_options"
+  ],
+  "returnStatusParser": [
+    "buf",
+    "offset",
+    "_options"
+  ],
+  "returnParser": [
+    "parser"
+  ],
+  "rowParser": [
+    "parser"
+  ],
+  "parseChallenge": [
+    "buffer"
+  ],
+  "sspiParser": [
+    "buf",
+    "offset",
+    "_options"
+  ],
+  "Parser": {
+    "constructor": [
+      "message",
+      "debug",
+      "handler",
+      "options"
+    ],
+    "pause": [],
+    "resume": []
+  },
+  "Token": {
+    "constructor": [
+      "name",
+      "handlerName"
+    ]
+  },
+  "ColMetadataToken": {
+    "constructor": [
+      "columns"
+    ]
+  },
+  "DoneToken": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "DoneInProcToken": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "DoneProcToken": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "DatabaseEnvChangeToken": {
+    "constructor": [
+      "newValue",
+      "oldValue"
+    ]
+  },
+  "LanguageEnvChangeToken": {
+    "constructor": [
+      "newValue",
+      "oldValue"
+    ]
+  },
+  "CharsetEnvChangeToken": {
+    "constructor": [
+      "newValue",
+      "oldValue"
+    ]
+  },
+  "PacketSizeEnvChangeToken": {
+    "constructor": [
+      "newValue",
+      "oldValue"
+    ]
+  },
+  "BeginTransactionEnvChangeToken": {
+    "constructor": [
+      "newValue",
+      "oldValue"
+    ]
+  },
+  "CommitTransactionEnvChangeToken": {
+    "constructor": [
+      "newValue",
+      "oldValue"
+    ]
+  },
+  "RollbackTransactionEnvChangeToken": {
+    "constructor": [
+      "newValue",
+      "oldValue"
+    ]
+  },
+  "DatabaseMirroringPartnerEnvChangeToken": {
+    "constructor": [
+      "newValue",
+      "oldValue"
+    ]
+  },
+  "ResetConnectionEnvChangeToken": {
+    "constructor": [
+      "newValue",
+      "oldValue"
+    ]
+  },
+  "CollationChangeToken": {
+    "constructor": [
+      "newValue",
+      "oldValue"
+    ]
+  },
+  "RoutingEnvChangeToken": {
+    "constructor": [
+      "newValue",
+      "oldValue"
+    ]
+  },
+  "FeatureExtAckToken": {
+    "constructor": [
+      "fedAuth",
+      "utf8Support"
+    ]
+  },
+  "FedAuthInfoToken": {
+    "constructor": [
+      "spn",
+      "stsurl"
+    ]
+  },
+  "InfoMessageToken": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "ErrorMessageToken": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "LoginAckToken": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "NBCRowToken": {
+    "constructor": [
+      "columns"
+    ]
+  },
+  "OrderToken": {
+    "constructor": [
+      "orderColumns"
+    ]
+  },
+  "ReturnStatusToken": {
+    "constructor": [
+      "value"
+    ]
+  },
+  "ReturnValueToken": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "RowToken": {
+    "constructor": [
+      "columns"
+    ]
+  },
+  "SSPIToken": {
+    "constructor": [
+      "ntlmpacket",
+      "ntlmpacketBuffer"
+    ]
+  },
+  "WritableTrackingBuffer": {
+    "constructor": [
+      "initialSize",
+      "encoding",
+      "doubleSizeGrowth"
+    ],
+    "data": [],
+    "copyFrom": [
+      "buffer"
+    ],
+    "makeRoomFor": [
+      "requiredLength"
+    ],
+    "newBuffer": [
+      "size"
+    ],
+    "writeUInt8": [
+      "value"
+    ],
+    "writeUInt16LE": [
+      "value"
+    ],
+    "writeUShort": [
+      "value"
+    ],
+    "writeUInt16BE": [
+      "value"
+    ],
+    "writeUInt24LE": [
+      "value"
+    ],
+    "writeUInt32LE": [
+      "value"
+    ],
+    "writeBigInt64LE": [
+      "value"
+    ],
+    "writeInt64LE": [
+      "value"
+    ],
+    "writeUInt64LE": [
+      "value"
+    ],
+    "writeBigUInt64LE": [
+      "value"
+    ],
+    "writeUInt32BE": [
+      "value"
+    ],
+    "writeUInt40LE": [
+      "value"
+    ],
+    "writeInt8": [
+      "value"
+    ],
+    "writeInt16LE": [
+      "value"
+    ],
+    "writeInt16BE": [
+      "value"
+    ],
+    "writeInt32LE": [
+      "value"
+    ],
+    "writeInt32BE": [
+      "value"
+    ],
+    "writeFloatLE": [
+      "value"
+    ],
+    "writeDoubleLE": [
+      "value"
+    ],
+    "writeString": [
+      "value",
+      "encoding"
+    ],
+    "writeBVarchar": [
+      "value",
+      "encoding"
+    ],
+    "writeUsVarchar": [
+      "value",
+      "encoding"
+    ],
+    "writeUsVarbyte": [
+      "value",
+      "encoding"
+    ],
+    "writePLPBody": [
+      "value",
+      "encoding"
+    ],
+    "writeBuffer": [
+      "value"
+    ],
+    "writeMoney": [
+      "value"
+    ]
+  },
+  "Transaction": {
+    "constructor": [
+      "name",
+      "param"
+    ],
+    "beginPayload": [
+      "txnDescriptor"
+    ],
+    "commitPayload": [
+      "txnDescriptor"
+    ],
+    "rollbackPayload": [
+      "txnDescriptor"
+    ],
+    "savePayload": [
+      "txnDescriptor"
+    ],
+    "isolationLevelToTSQL": []
+  },
+  "assertValidIsolationLevel": [
+    "isolationLevel",
+    "name"
+  ],
+  "TransientErrorLookup": {
+    "isTransientError": [
+      "error"
+    ]
+  },
+  "readTinyInt": [
+    "buf",
+    "offset"
+  ],
+  "readSmallInt": [
+    "buf",
+    "offset"
+  ],
+  "readInt": [
+    "buf",
+    "offset"
+  ],
+  "readBigInt": [
+    "buf",
+    "offset"
+  ],
+  "readReal": [
+    "buf",
+    "offset"
+  ],
+  "readFloat": [
+    "buf",
+    "offset"
+  ],
+  "readSmallMoney": [
+    "buf",
+    "offset"
+  ],
+  "readMoney": [
+    "buf",
+    "offset"
+  ],
+  "readBit": [
+    "buf",
+    "offset"
+  ],
+  "readValue": [
+    "buf",
+    "offset",
+    "metadata",
+    "options"
+  ],
+  "isPLPStream": [
+    "metadata"
+  ],
+  "readUniqueIdentifier": [
+    "buf",
+    "offset",
+    "options"
+  ],
+  "readNumeric": [
+    "buf",
+    "offset",
+    "dataLength",
+    "_precision",
+    "scale"
+  ],
+  "readVariant": [
+    "buf",
+    "offset",
+    "options",
+    "dataLength"
+  ],
+  "readBinary": [
+    "buf",
+    "offset",
+    "dataLength"
+  ],
+  "readChars": [
+    "buf",
+    "offset",
+    "dataLength",
+    "codepage"
+  ],
+  "readNChars": [
+    "buf",
+    "offset",
+    "dataLength"
+  ],
+  "readPLPStream": [
+    "parser"
+  ],
+  "readSmallDateTime": [
+    "buf",
+    "offset",
+    "useUTC"
+  ],
+  "readDateTime": [
+    "buf",
+    "offset",
+    "useUTC"
+  ],
+  "readTime": [
+    "buf",
+    "offset",
+    "dataLength",
+    "scale",
+    "useUTC"
+  ],
+  "readDate": [
+    "buf",
+    "offset",
+    "useUTC"
+  ],
+  "readDateTime2": [
+    "buf",
+    "offset",
+    "dataLength",
+    "scale",
+    "useUTC"
+  ],
+  "readDateTimeOffset": [
+    "buf",
+    "offset",
+    "dataLength",
+    "scale"
+  ],
+  "DuplexSocket": {},
+  "DuplexPair": {
+    "socket1": [],
+    "socket2": []
+  }
+}
