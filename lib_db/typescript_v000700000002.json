@@ -1,0 +1,5817 @@
+{
+  "API": {
+    "client": [],
+    "sourceFileCache": [],
+    "toPath": [],
+    "initialized": [],
+    "activeSnapshots": [],
+    "latestSnapshot": [],
+    "internal": [],
+    "constructor": [
+      "param"
+    ],
+    "fromLSPConnection": [
+      "options"
+    ],
+    "ensureInitialized": [],
+    "parseConfigFile": [
+      "file"
+    ],
+    "updateSnapshot": [
+      "params"
+    ],
+    "close": [],
+    "clearSourceFileCache": [],
+    "getTimingInfo": [],
+    "resetTimingInfo": []
+  },
+  "InternalAPI": {
+    "client": [],
+    "ensureInitialized": [],
+    "constructor": [
+      "client",
+      "ensureInitialized"
+    ],
+    "startCPUProfile": [
+      "dir"
+    ],
+    "stopCPUProfile": [],
+    "saveHeapProfile": [
+      "dir"
+    ]
+  },
+  "Snapshot": {
+    "id": [],
+    "projectMap": [],
+    "toPath": [],
+    "client": [],
+    "disposed": [],
+    "onDispose": [],
+    "snapshotRegistry": [],
+    "constructor": [
+      "data",
+      "client",
+      "sourceFileCache",
+      "toPath",
+      "onDispose"
+    ],
+    "getProjects": [],
+    "getProject": [
+      "configFileName"
+    ],
+    "getDefaultProjectForFile": [
+      "file"
+    ],
+    "dispose": [],
+    "isDisposed": [],
+    "ensureNotDisposed": []
+  },
+  "SnapshotObjectRegistry": {
+    "symbols": [],
+    "client": [],
+    "snapshotId": [],
+    "resolveProject": [],
+    "constructor": [
+      "client",
+      "snapshotId",
+      "resolveProject"
+    ],
+    "getProject": [
+      "projectId"
+    ],
+    "getOrCreateSymbol": [
+      "data"
+    ],
+    "getSymbol": [
+      "id"
+    ],
+    "clear": [],
+    "fetchSymbol": [
+      "source",
+      "method",
+      "handle",
+      "projectId"
+    ],
+    "fetchSymbols": [
+      "source",
+      "method",
+      "handles",
+      "projectId"
+    ]
+  },
+  "ProjectObjectRegistry": {
+    "client": [],
+    "snapshotId": [],
+    "project": [],
+    "snapshotRegistry": [],
+    "types": [],
+    "signatures": [],
+    "constructor": [
+      "client",
+      "snapshotId",
+      "project",
+      "snapshotRegistry"
+    ],
+    "getOrCreateSymbol": [
+      "data"
+    ],
+    "getSymbol": [
+      "id"
+    ],
+    "getOrCreateType": [
+      "data"
+    ],
+    "getType": [
+      "id"
+    ],
+    "getOrCreateSignature": [
+      "data"
+    ],
+    "getSignature": [
+      "id"
+    ],
+    "clear": [],
+    "fetchType": [
+      "source",
+      "method",
+      "handle"
+    ],
+    "fetchSymbol": [
+      "source",
+      "method",
+      "handle"
+    ],
+    "fetchSignature": [
+      "source",
+      "method",
+      "handle"
+    ],
+    "fetchTypes": [
+      "source",
+      "method",
+      "handles"
+    ],
+    "fetchSymbols": [
+      "source",
+      "method",
+      "handles"
+    ],
+    "fetchBaseTypes": [
+      "source"
+    ]
+  },
+  "Project": {
+    "id": [],
+    "configFileName": [],
+    "compilerOptions": [],
+    "rootFiles": [],
+    "program": [],
+    "checker": [],
+    "emitter": [],
+    "client": [],
+    "constructor": [
+      "data",
+      "snapshotId",
+      "client",
+      "sourceFileCache",
+      "toPath",
+      "snapshotRegistry"
+    ],
+    "dispose": []
+  },
+  "Program": {
+    "snapshotId": [],
+    "project": [],
+    "client": [],
+    "sourceFileCache": [],
+    "toPath": [],
+    "decoder": [],
+    "sourceFileMetadataCache": [],
+    "constructor": [
+      "snapshotId",
+      "project",
+      "client",
+      "sourceFileCache",
+      "toPath"
+    ],
+    "getCompilerOptions": [],
+    "getSourceFile": [
+      "file"
+    ],
+    "getSourceFileNames": [],
+    "getSourceFileMetadata": [
+      "fileName"
+    ],
+    "getSourceFileMetadataByPath": [
+      "path"
+    ],
+    "fetchSourceFileMetadata": [
+      "path"
+    ],
+    "isSourceFileFromExternalLibrary": [
+      "file"
+    ],
+    "isSourceFileDefaultLibrary": [
+      "file"
+    ],
+    "getSyntacticDiagnostics": [
+      "file"
+    ],
+    "getBindDiagnostics": [
+      "file"
+    ],
+    "getSemanticDiagnostics": [
+      "file"
+    ],
+    "getSuggestionDiagnostics": [
+      "file"
+    ],
+    "getDeclarationDiagnostics": [
+      "file"
+    ],
+    "getProgramDiagnostics": [],
+    "getGlobalDiagnostics": [],
+    "getConfigFileParsingDiagnostics": []
+  },
+  "Checker": {
+    "snapshotId": [],
+    "project": [],
+    "client": [],
+    "objectRegistry": [],
+    "wellKnownSymbols": [],
+    "constructor": [
+      "snapshotId",
+      "project",
+      "client",
+      "objectRegistry"
+    ],
+    "dispose": [],
+    "getSymbolAtLocation": [
+      "nodeOrNodes"
+    ],
+    "getSymbolAtPosition": [
+      "file",
+      "positionOrPositions"
+    ],
+    "getTypeOfSymbol": [
+      "symbolOrSymbols"
+    ],
+    "getDeclaredTypeOfSymbol": [
+      "symbol"
+    ],
+    "getReferencesToSymbolInFile": [
+      "file",
+      "symbol"
+    ],
+    "getReferencedSymbolsForNode": [
+      "node",
+      "position"
+    ],
+    "getSignatureUsage": [
+      "signatureDecl"
+    ],
+    "getCompletionsAtPosition": [
+      "document",
+      "position",
+      "options"
+    ],
+    "getTypeAtLocation": [
+      "nodeOrNodes"
+    ],
+    "getSignaturesOfType": [
+      "type",
+      "kind"
+    ],
+    "getResolvedSignature": [
+      "node"
+    ],
+    "getTypeAtPosition": [
+      "file",
+      "positionOrPositions"
+    ],
+    "resolveName": [
+      "name",
+      "meaning",
+      "location",
+      "excludeGlobals"
+    ],
+    "getResolvedSymbol": [
+      "node"
+    ],
+    "getContextualType": [
+      "node"
+    ],
+    "getBaseTypeOfLiteralType": [
+      "type"
+    ],
+    "getNonNullableType": [
+      "type"
+    ],
+    "getTypeFromTypeNode": [
+      "node"
+    ],
+    "getWidenedType": [
+      "type"
+    ],
+    "getParameterType": [
+      "signature",
+      "index"
+    ],
+    "isArrayLikeType": [
+      "type"
+    ],
+    "isTypeAssignableTo": [
+      "source",
+      "target"
+    ],
+    "getShorthandAssignmentValueSymbol": [
+      "node"
+    ],
+    "getTypeOfSymbolAtLocation": [
+      "symbol",
+      "location"
+    ],
+    "getIntrinsicType": [
+      "method"
+    ],
+    "getAnyType": [],
+    "getStringType": [],
+    "getNumberType": [],
+    "getBooleanType": [],
+    "getVoidType": [],
+    "getUndefinedType": [],
+    "getNullType": [],
+    "getNeverType": [],
+    "getUnknownType": [],
+    "getBigIntType": [],
+    "getESSymbolType": [],
+    "typeToTypeNode": [
+      "type",
+      "enclosingDeclaration",
+      "flags"
+    ],
+    "signatureToSignatureDeclaration": [
+      "signature",
+      "kind",
+      "enclosingDeclaration",
+      "flags"
+    ],
+    "typeToString": [
+      "type",
+      "enclosingDeclaration",
+      "flags"
+    ],
+    "isContextSensitive": [
+      "node"
+    ],
+    "isArrayType": [
+      "type"
+    ],
+    "isTupleType": [
+      "type"
+    ],
+    "getReturnTypeOfSignature": [
+      "signature"
+    ],
+    "getRestTypeOfSignature": [
+      "signature"
+    ],
+    "getTypePredicateOfSignature": [
+      "signature"
+    ],
+    "getBaseTypes": [
+      "type"
+    ],
+    "getApparentType": [
+      "type"
+    ],
+    "getPropertiesOfType": [
+      "type"
+    ],
+    "getIndexInfosOfType": [
+      "type"
+    ],
+    "getConstraintOfTypeParameter": [
+      "type"
+    ],
+    "getBaseConstraintOfType": [
+      "type"
+    ],
+    "getPropertyOfType": [
+      "type",
+      "name"
+    ],
+    "getConstantValue": [
+      "node"
+    ],
+    "getSignatureFromDeclaration": [
+      "node"
+    ],
+    "getExportSpecifierLocalTargetSymbol": [
+      "node"
+    ],
+    "getAliasedSymbol": [
+      "symbol"
+    ],
+    "getImmediateAliasedSymbol": [
+      "symbol"
+    ],
+    "getWellKnownSymbols": [],
+    "isUnknownSymbol": [
+      "symbol"
+    ],
+    "isUndefinedSymbol": [
+      "symbol"
+    ],
+    "isArgumentsSymbol": [
+      "symbol"
+    ],
+    "getExportsOfModule": [
+      "symbol"
+    ],
+    "getMemberInModuleExports": [
+      "symbol",
+      "name"
+    ],
+    "getJsDocTagsOfSymbol": [
+      "symbol"
+    ],
+    "getDocumentationCommentOfSymbol": [
+      "symbol"
+    ],
+    "getTypeArguments": [
+      "type"
+    ]
+  },
+  "Emitter": {
+    "_options": [],
+    "_noop": [],
+    "_event": [],
+    "_callbacks": [],
+    "constructor": [
+      "_options"
+    ],
+    "event": [],
+    "fire": [
+      "event"
+    ],
+    "dispose": []
+  },
+  "NodeHandle": {
+    "canonicalProject": [],
+    "index": [],
+    "kind": [],
+    "path": [],
+    "constructor": [
+      "handle",
+      "canonicalProject"
+    ],
+    "resolve": [
+      "param"
+    ]
+  },
+  "Symbol": {
+    "objectRegistry": [],
+    "canonicalProject": [],
+    "id": [],
+    "escapedName": [],
+    "name": [],
+    "flags": [],
+    "checkFlags": [],
+    "declarations": [],
+    "valueDeclaration": [],
+    "parent": [],
+    "exportSymbol": [],
+    "membersCache": [],
+    "exportsCache": [],
+    "constructor": [
+      "data",
+      "objectRegistry"
+    ],
+    "getParent": [],
+    "getMembers": [],
+    "getExports": [],
+    "fetchSymbolTable": [
+      "method"
+    ],
+    "getExportSymbol": [],
+    "getJsDocTags": [
+      "checker"
+    ],
+    "getDocumentationComment": [
+      "checker"
+    ]
+  },
+  "TypeObject": {
+    "objectRegistry": [],
+    "id": [],
+    "flags": [],
+    "objectFlags": [],
+    "symbol": [],
+    "value": [],
+    "intrinsicName": [],
+    "isThisType": [],
+    "freshType": [],
+    "regularType": [],
+    "target": [],
+    "typeParameters": [],
+    "outerTypeParameters": [],
+    "localTypeParameters": [],
+    "aliasTypeArguments": [],
+    "aliasSymbol": [],
+    "elementFlags": [],
+    "fixedLength": [],
+    "readonly": [],
+    "texts": [],
+    "objectType": [],
+    "indexType": [],
+    "checkType": [],
+    "extendsType": [],
+    "baseType": [],
+    "substConstraint": [],
+    "trueType": [],
+    "falseType": [],
+    "constructor": [
+      "data",
+      "objectRegistry"
+    ],
+    "getSymbol": [],
+    "getAliasSymbol": [],
+    "getTarget": [],
+    "getFreshType": [],
+    "getRegularType": [],
+    "getTypes": [],
+    "getTypeParameters": [],
+    "getOuterTypeParameters": [],
+    "getLocalTypeParameters": [],
+    "getAliasTypeArguments": [],
+    "getObjectType": [],
+    "getIndexType": [],
+    "getCheckType": [],
+    "getExtendsType": [],
+    "getBaseType": [],
+    "getConstraint": [],
+    "getTrueType": [],
+    "getFalseType": [],
+    "getBaseTypes": [],
+    "isClassOrInterface": [],
+    "isUnionType": [],
+    "isIntersectionType": [],
+    "isObjectType": [],
+    "isIntrinsicType": [],
+    "isErrorType": [],
+    "isLiteralType": [],
+    "isStringLiteralType": [],
+    "isNumberLiteralType": [],
+    "isBigIntLiteralType": [],
+    "isBooleanLiteralType": [],
+    "isTypeReference": [],
+    "isTupleType": [],
+    "isIndexType": [],
+    "isIndexedAccessType": [],
+    "isConditionalType": [],
+    "isSubstitutionType": [],
+    "isTemplateLiteralType": [],
+    "isStringMappingType": [],
+    "isTypeParameter": []
+  },
+  "Signature": {
+    "flags": [],
+    "objectRegistry": [],
+    "id": [],
+    "declaration": [],
+    "typeParameters": [],
+    "parameters": [],
+    "thisParameter": [],
+    "target": [],
+    "constructor": [
+      "data",
+      "project",
+      "objectRegistry"
+    ],
+    "getTypeParameters": [],
+    "getParameters": [],
+    "getThisParameter": [],
+    "getTarget": [],
+    "hasRestParameter": [],
+    "isConstruct": [],
+    "isAbstract": []
+  },
+  "isUnionType": [
+    "type"
+  ],
+  "isIntersectionType": [
+    "type"
+  ],
+  "isObjectType": [
+    "type"
+  ],
+  "isClassOrInterfaceType": [
+    "type"
+  ],
+  "isIntrinsicType": [
+    "type"
+  ],
+  "isErrorType": [
+    "type"
+  ],
+  "isLiteralType": [
+    "type"
+  ],
+  "isStringLiteralType": [
+    "type"
+  ],
+  "isNumberLiteralType": [
+    "type"
+  ],
+  "isBigIntLiteralType": [
+    "type"
+  ],
+  "isBooleanLiteralType": [
+    "type"
+  ],
+  "isTypeReference": [
+    "type"
+  ],
+  "isTupleType": [
+    "type"
+  ],
+  "isIndexType": [
+    "type"
+  ],
+  "isIndexedAccessType": [
+    "type"
+  ],
+  "isConditionalType": [
+    "type"
+  ],
+  "isSubstitutionType": [
+    "type"
+  ],
+  "isTemplateLiteralType": [
+    "type"
+  ],
+  "isStringMappingType": [
+    "type"
+  ],
+  "isTypeParameter": [
+    "type"
+  ],
+  "Client": {
+    "channel": [],
+    "encoder": [],
+    "timing": [],
+    "constructor": [
+      "options"
+    ],
+    "apiRequest": [
+      "method",
+      "params"
+    ],
+    "apiRequestBinary": [
+      "method",
+      "params"
+    ],
+    "echo": [
+      "payload"
+    ],
+    "echoBinary": [
+      "payload"
+    ],
+    "getTimingInfo": [],
+    "resetTimingInfo": [],
+    "getTimingCollector": [],
+    "recordTiming": [
+      "method",
+      "start"
+    ],
+    "close": []
+  },
+  "createVirtualFileSystem": [
+    "files"
+  ],
+  "getNodeFromPath": [
+    "path"
+  ],
+  "ensureDirectory": [
+    "segments"
+  ],
+  "addToTree": [
+    "path"
+  ],
+  "writeFile": [
+    "path",
+    "data"
+  ],
+  "removeFile": [
+    "path"
+  ],
+  "directoryExists": [
+    "directoryName"
+  ],
+  "fileExists": [
+    "fileName"
+  ],
+  "getAccessibleEntries": [
+    "directoryName"
+  ],
+  "readFile": [
+    "fileName"
+  ],
+  "getNodeDataType": [
+    "kind"
+  ],
+  "getNodeCommonData": [
+    "node"
+  ],
+  "StringTable": {
+    "parts": [],
+    "byteLen": [],
+    "offsets": [],
+    "constructor": [],
+    "add": [
+      "text"
+    ],
+    "encode": [],
+    "stringByteLength": [],
+    "offsetsCount": []
+  },
+  "cachedEncoder": [],
+  "getChildrenPropertyMask": [
+    "node"
+  ],
+  "isChildPresent": [
+    "v"
+  ],
+  "recordNodeStrings": [
+    "node",
+    "strs"
+  ],
+  "encodeFileReferences": [
+    "refs",
+    "writer"
+  ],
+  "recordExtendedData": [
+    "node",
+    "strs",
+    "extendedData",
+    "structuredWriter"
+  ],
+  "getNodeData": [
+    "node",
+    "strs",
+    "extendedData",
+    "structuredWriter"
+  ],
+  "getChildPropertiesForNode": [
+    "node"
+  ],
+  "isNodeArray": [
+    "array"
+  ],
+  "encodeSourceFile": [
+    "sourceFile"
+  ],
+  "encodeNode": [
+    "node"
+  ],
+  "visitNode": [
+    "node",
+    "visitor",
+    "test"
+  ],
+  "visitNodeList": [
+    "list"
+  ],
+  "visitChildren": [
+    "node"
+  ],
+  "uint8ArrayToBase64": [
+    "data"
+  ],
+  "MsgpackWriter": {
+    "buf": [],
+    "view": [],
+    "pos": [],
+    "constructor": [
+      "param"
+    ],
+    "ensure": [
+      "n"
+    ],
+    "writeArrayHeader": [
+      "length"
+    ],
+    "writeUint": [
+      "value"
+    ],
+    "writeString": [
+      "str"
+    ],
+    "writeBool": [
+      "value"
+    ],
+    "finish": []
+  },
+  "MsgpackReader": {
+    "buf": [],
+    "view": [],
+    "pos": [],
+    "constructor": [
+      "data",
+      "param"
+    ],
+    "readArrayHeader": [],
+    "readUint": [],
+    "readString": [],
+    "readBool": []
+  },
+  "binHeaderSize": [
+    "len"
+  ],
+  "writeBinHeader": [
+    "buf",
+    "off",
+    "len"
+  ],
+  "RemoteSourceFile": {
+    "nodes": [],
+    "_offsetNodes": [],
+    "_offsetStringTableOffsets": [],
+    "_offsetStringTable": [],
+    "_offsetExtendedData": [],
+    "_offsetStructuredData": [],
+    "_decoder": [],
+    "_timing": [],
+    "_lineStarts": [],
+    "_cachedText": [],
+    "_cachedReferencedFiles": [],
+    "_cachedTypeReferenceDirectives": [],
+    "_cachedLibReferenceDirectives": [],
+    "_cachedImports": [],
+    "_cachedModuleAugmentations": [],
+    "_cachedAmbientModuleNames": [],
+    "constructor": [
+      "data",
+      "decoder",
+      "timing"
+    ],
+    "readFileReferences": [
+      "structuredDataOffset"
+    ],
+    "readNodeIndexArray": [
+      "structuredDataOffset"
+    ],
+    "readStringArray": [
+      "structuredDataOffset"
+    ],
+    "getOrCreateNodeAtIndex": [
+      "index"
+    ],
+    "extendedDataOffset": [],
+    "fileName": [],
+    "path": [],
+    "languageVariant": [],
+    "scriptKind": [],
+    "referencedFiles": [],
+    "typeReferenceDirectives": [],
+    "libReferenceDirectives": [],
+    "imports": [],
+    "moduleAugmentations": [],
+    "ambientModuleNames": [],
+    "externalModuleIndicator": [],
+    "isDeclarationFile": [],
+    "text": [],
+    "getLineStarts": [],
+    "getLineAndCharacterOfPosition": [
+      "position"
+    ],
+    "getPositionOfLineAndCharacter": [
+      "line",
+      "character"
+    ]
+  },
+  "RemoteNodeList": {
+    "parent": [],
+    "hasTrailingComma": [],
+    "transformFlags": [],
+    "view": [],
+    "index": [],
+    "_byteIndex": [],
+    "_cursorIndex": [],
+    "_cursorNodeIndex": [],
+    "pos": [],
+    "end": [],
+    "next": [],
+    "data": [],
+    "sourceFile": [],
+    "constructor": [
+      "view",
+      "index",
+      "parent",
+      "sourceFile",
+      "offsetNodes"
+    ],
+    "forEachNode": [
+      "visitNode"
+    ],
+    "at": [
+      "index"
+    ],
+    "getOrCreateChildAtNodeIndex": [
+      "index"
+    ],
+    "__print": []
+  },
+  "RemoteNode": {
+    "NODE_LEN": [],
+    "sourceFile": [],
+    "_sourceFile": [],
+    "id": [],
+    "constructor": [
+      "view",
+      "index",
+      "parent",
+      "sourceFile",
+      "offsetNodes"
+    ],
+    "forEachChild": [
+      "visitNode",
+      "visitList"
+    ],
+    "jsDoc": [],
+    "getSourceFile": [],
+    "getStart": [
+      "sourceFile",
+      "includeJsDocComment"
+    ],
+    "getFullStart": [],
+    "getEnd": [],
+    "getWidth": [
+      "sourceFile"
+    ],
+    "getFullWidth": [],
+    "getLeadingTriviaWidth": [
+      "sourceFile"
+    ],
+    "getFullText": [
+      "sourceFile"
+    ],
+    "getText": [
+      "sourceFile"
+    ],
+    "getString": [
+      "index"
+    ],
+    "getOrCreateChildAtNodeIndex": [
+      "index"
+    ],
+    "hasChildren": [],
+    "getNamedChild": [
+      "propertyName"
+    ],
+    "getChildAtOrder": [
+      "order"
+    ],
+    "__print": [],
+    "__printChildren": [],
+    "__printSubtree": [],
+    "containsOnlyTriviaWhiteSpaces": [],
+    "isArrayType": [],
+    "isBracketed": [],
+    "isExportEquals": [],
+    "isNameFirst": [],
+    "isTypeOf": [],
+    "isTypeOnly": [],
+    "multiLine": [],
+    "keyword": [],
+    "keywordToken": [],
+    "operator": [],
+    "phaseModifier": [],
+    "token": [],
+    "templateFlags": [],
+    "tokenFlags": [],
+    "argument": [],
+    "argumentExpression": [],
+    "arguments": [],
+    "assertsModifier": [],
+    "asteriskToken": [],
+    "attributes": [],
+    "awaitModifier": [],
+    "block": [],
+    "body": [],
+    "caseBlock": [],
+    "catchClause": [],
+    "checkType": [],
+    "children": [],
+    "className": [],
+    "clauses": [],
+    "closingElement": [],
+    "closingFragment": [],
+    "colonToken": [],
+    "comment": [],
+    "condition": [],
+    "constraint": [],
+    "declarationList": [],
+    "declarations": [],
+    "defaultType": [],
+    "dotDotDotToken": [],
+    "elements": [],
+    "elementType": [],
+    "elseStatement": [],
+    "endOfFileToken": [],
+    "equalsGreaterThanToken": [],
+    "equalsToken": [],
+    "exclamationToken": [],
+    "exportClause": [],
+    "expression": [],
+    "exprName": [],
+    "extendsType": [],
+    "falseType": [],
+    "finallyBlock": [],
+    "head": [],
+    "heritageClauses": [],
+    "importClause": [],
+    "incrementor": [],
+    "indexType": [],
+    "initializer": [],
+    "jsdocPropertyTags": [],
+    "label": [],
+    "left": [],
+    "literal": [],
+    "members": [],
+    "modifiers": [],
+    "moduleReference": [],
+    "moduleSpecifier": [],
+    "name": [],
+    "namedBindings": [],
+    "nameExpression": [],
+    "namespace": [],
+    "nameType": [],
+    "objectAssignmentInitializer": [],
+    "objectType": [],
+    "openingElement": [],
+    "openingFragment": [],
+    "operand": [],
+    "operatorToken": [],
+    "parameterName": [],
+    "parameters": [],
+    "postfixToken": [],
+    "properties": [],
+    "propertyName": [],
+    "qualifier": [],
+    "questionDotToken": [],
+    "questionToken": [],
+    "readonlyToken": [],
+    "right": [],
+    "statement": [],
+    "statements": [],
+    "tag": [],
+    "tagName": [],
+    "tags": [],
+    "template": [],
+    "templateSpans": [],
+    "thenStatement": [],
+    "thisArg": [],
+    "trueType": [],
+    "tryBlock": [],
+    "tupleNameSource": [],
+    "type": [],
+    "typeArguments": [],
+    "typeExpression": [],
+    "typeName": [],
+    "typeParameter": [],
+    "typeParameters": [],
+    "types": [],
+    "value": [],
+    "variableDeclaration": [],
+    "whenFalse": [],
+    "whenTrue": [],
+    "text": [],
+    "rawText": [],
+    "flags": [],
+    "modifierFlags": []
+  },
+  "RemoteNodeBase": {
+    "parent": [],
+    "view": [],
+    "index": [],
+    "_byteIndex": [],
+    "constructor": [
+      "view",
+      "index",
+      "parent",
+      "byteIndex"
+    ],
+    "kind": [],
+    "pos": [],
+    "end": [],
+    "next": [],
+    "parentIndex": [],
+    "data": [],
+    "dataType": [],
+    "childMask": [],
+    "getFileText": [
+      "start",
+      "end"
+    ],
+    "sourceFile": []
+  },
+  "readSourceFileHash": [
+    "data"
+  ],
+  "readParseOptionsKey": [
+    "data"
+  ],
+  "hex8": [
+    "n"
+  ],
+  "modifierToFlag": [
+    "kind"
+  ],
+  "computeLineOfPosition": [
+    "lineStarts",
+    "position"
+  ],
+  "findDescendant": [
+    "root",
+    "pos",
+    "end",
+    "kind"
+  ],
+  "parseNodeHandle": [
+    "handle"
+  ],
+  "decodeNode": [
+    "data"
+  ],
+  "getNodeId": [
+    "node"
+  ],
+  "Wtf8Decoder": {
+    "decode": [
+      "input",
+      "options"
+    ]
+  },
+  "isWtf8Surrogate": [
+    "bytes",
+    "index"
+  ],
+  "getSurrogateCodeUnit": [
+    "bytes",
+    "index"
+  ],
+  "hasSurrogateLeadByte": [
+    "bytes"
+  ],
+  "toUint8Array": [
+    "input"
+  ],
+  "isSpawnOptions": [
+    "options"
+  ],
+  "resolveExePath": [
+    "options"
+  ],
+  "isAnyDirectorySeparator": [
+    "charCode"
+  ],
+  "isVolumeCharacter": [
+    "charCode"
+  ],
+  "getFileUrlVolumeSeparatorEnd": [
+    "url",
+    "start"
+  ],
+  "getRootLength": [
+    "path"
+  ],
+  "getEncodedRootLength": [
+    "path"
+  ],
+  "getPathComponents": [
+    "path"
+  ],
+  "pathComponents": [
+    "path",
+    "rootLength"
+  ],
+  "lastOrUndefined": [
+    "array"
+  ],
+  "hasTrailingDirectorySeparator": [
+    "path"
+  ],
+  "removeTrailingDirectorySeparator": [
+    "path"
+  ],
+  "ensureTrailingDirectorySeparator": [
+    "path"
+  ],
+  "normalizeSlashes": [
+    "path"
+  ],
+  "combinePaths": [
+    "path",
+    "param"
+  ],
+  "simpleNormalizePath": [
+    "path"
+  ],
+  "getNormalizedAbsolutePath": [
+    "path",
+    "currentDirectory"
+  ],
+  "normalizePath": [
+    "path"
+  ],
+  "isRootedDiskPath": [
+    "path"
+  ],
+  "toPath": [
+    "fileName",
+    "basePath",
+    "getCanonicalFileName"
+  ],
+  "createGetCanonicalFileName": [
+    "useCaseSensitiveFileNames"
+  ],
+  "identity": [
+    "x"
+  ],
+  "toLowerCase": [
+    "s"
+  ],
+  "isBundled": [
+    "path"
+  ],
+  "isDynamicFileName": [
+    "fileName"
+  ],
+  "splitVolumePath": [
+    "path"
+  ],
+  "extraEscape": [
+    "s"
+  ],
+  "fileNameToDocumentURI": [
+    "fileName"
+  ],
+  "documentURIToFileName": [
+    "uri"
+  ],
+  "resolveFileName": [
+    "identifier"
+  ],
+  "resolveDocumentURI": [
+    "identifier"
+  ],
+  "toUpdateSnapshotRequest": [
+    "params"
+  ],
+  "SourceFileCache": {
+    "cache": [],
+    "snapshotProjectPaths": [],
+    "getRetained": [
+      "path",
+      "snapshotId",
+      "projectId"
+    ],
+    "set": [
+      "path",
+      "file",
+      "parseOptionsKey",
+      "contentHash",
+      "snapshotId",
+      "projectId"
+    ],
+    "retainForSnapshot": [
+      "newSnapshotId",
+      "previousSnapshotId",
+      "changes"
+    ],
+    "releaseSnapshot": [
+      "snapshotId"
+    ],
+    "trackPath": [
+      "snapshotId",
+      "projectId",
+      "path"
+    ],
+    "clear": [],
+    "size": [],
+    "has": [
+      "path"
+    ]
+  },
+  "refKey": [
+    "snapshotId",
+    "projectId"
+  ],
+  "SyncRpcChannel": {
+    "child": [],
+    "readFd": [],
+    "writeFd": [],
+    "pipeFd": [],
+    "callbacks": [],
+    "methodBufCache": [],
+    "collectTiming": [],
+    "lastBytesSent": [],
+    "lastBytesReceived": [],
+    "_msgType": [],
+    "_msgName": [],
+    "_msgPayload": [],
+    "headerBuf": [],
+    "readBuf": [],
+    "readBufPos": [],
+    "readBufLen": [],
+    "writeBuf": [],
+    "constructor": [
+      "exe",
+      "args",
+      "param"
+    ],
+    "requestSync": [
+      "method",
+      "payload"
+    ],
+    "requestBinarySync": [
+      "method",
+      "payload"
+    ],
+    "registerCallback": [
+      "name",
+      "callback"
+    ],
+    "close": [],
+    "ensureOpen": [],
+    "getMethodBuf": [
+      "method"
+    ],
+    "requestBytesSync": [
+      "method",
+      "payload"
+    ],
+    "handleCall": [
+      "name",
+      "payload"
+    ],
+    "writeTuple": [
+      "type",
+      "name",
+      "payload"
+    ],
+    "readTuple": [],
+    "readBin": [],
+    "eofError": [],
+    "readByte": [],
+    "readExact": [
+      "length"
+    ],
+    "fillReadBuffer": [],
+    "readExactInto": [
+      "buffer",
+      "length"
+    ],
+    "writeAllBuf": [
+      "data",
+      "length"
+    ]
+  },
+  "TimingCollector": {
+    "totals": [],
+    "ring": [],
+    "head": [],
+    "record": [
+      "sample"
+    ],
+    "recordMaterialization": [],
+    "recordSourceFileFetched": [
+      "materializableNodeCount"
+    ],
+    "getInfo": [],
+    "reset": []
+  },
+  "emptyAccumulators": [],
+  "disabledTimingInfo": [],
+  "disabledServerTimingInfo": [],
+  "combineTimingInfo": [
+    "client",
+    "server"
+  ],
+  "getTokenAtPosition": [
+    "sourceFile",
+    "position"
+  ],
+  "getTouchingPropertyName": [
+    "sourceFile",
+    "position"
+  ],
+  "getTouchingToken": [
+    "sourceFile",
+    "position"
+  ],
+  "findNextToken": [
+    "previousToken",
+    "parent",
+    "sourceFile"
+  ],
+  "find": [
+    "n",
+    "endPos"
+  ],
+  "visitChild": [
+    "node"
+  ],
+  "findPrecedingToken": [
+    "sourceFile",
+    "position"
+  ],
+  "getTokenAtPositionImpl": [
+    "sourceFile",
+    "position",
+    "allowPositionInLeadingTrivia",
+    "includePrecedingTokenAtEndPosition"
+  ],
+  "testNode": [
+    "node"
+  ],
+  "getPosition": [
+    "node",
+    "sourceFile",
+    "allowPositionInLeadingTrivia"
+  ],
+  "getTokenPosOfNode": [
+    "node",
+    "sourceFile",
+    "includeJSDoc"
+  ],
+  "nodeIsMissing": [
+    "node"
+  ],
+  "findPrecedingTokenImpl": [
+    "sourceFile",
+    "position",
+    "startNode"
+  ],
+  "findRightmostValidToken": [
+    "sourceFile",
+    "endPos",
+    "containingNode",
+    "position"
+  ],
+  "isValidPrecedingNode": [
+    "node",
+    "sourceFile"
+  ],
+  "shouldSkipChild": [
+    "node"
+  ],
+  "isJSDocTag": [
+    "node"
+  ],
+  "isJSDocCommentChildKind": [
+    "kind"
+  ],
+  "isJSDocSingleCommentNodeList": [
+    "nodes"
+  ],
+  "getScannerForSourceFile": [
+    "sourceFile",
+    "pos"
+  ],
+  "getOrCreateToken": [
+    "sourceFile",
+    "kind",
+    "pos",
+    "end",
+    "parent",
+    "_flags"
+  ],
+  "binarySearchNodeList": [
+    "nodes",
+    "testNode",
+    "onLeft",
+    "onMatch"
+  ],
+  "binarySearchForPrecedingToken": [
+    "nodes",
+    "position"
+  ],
+  "isArray": [
+    "value"
+  ],
+  "forEachChildRecursively": [
+    "rootNode",
+    "cbNode",
+    "cbNodes"
+  ],
+  "gatherPossibleChildren": [
+    "node"
+  ],
+  "addWorkItem": [
+    "n"
+  ],
+  "setParentRecursive": [
+    "rootNode"
+  ],
+  "setTextRange": [
+    "node",
+    "range"
+  ],
+  "getSynthesizedDeepClone": [
+    "node",
+    "param"
+  ],
+  "getSynthesizedDeepClones": [
+    "nodes",
+    "param"
+  ],
+  "getSynthesizedDeepCloneWorker": [
+    "node"
+  ],
+  "NodeObject": {
+    "kind": [],
+    "flags": [],
+    "pos": [],
+    "end": [],
+    "parent": [],
+    "_data": [],
+    "constructor": [
+      "kind",
+      "data"
+    ],
+    "ambientModuleNames": [],
+    "argument": [],
+    "argumentExpression": [],
+    "arguments": [],
+    "assertsModifier": [],
+    "asteriskToken": [],
+    "attributes": [],
+    "awaitModifier": [],
+    "block": [],
+    "body": [],
+    "caseBlock": [],
+    "catchClause": [],
+    "checkType": [],
+    "children": [],
+    "className": [],
+    "clauses": [],
+    "closingElement": [],
+    "closingFragment": [],
+    "colonToken": [],
+    "comment": [],
+    "condition": [],
+    "constraint": [],
+    "containsOnlyTriviaWhiteSpaces": [],
+    "declarationList": [],
+    "declarations": [],
+    "defaultType": [],
+    "dotDotDotToken": [],
+    "elementType": [],
+    "elements": [],
+    "elseStatement": [],
+    "endOfFileToken": [],
+    "equalsGreaterThanToken": [],
+    "equalsToken": [],
+    "exclamationToken": [],
+    "exportClause": [],
+    "exprName": [],
+    "expression": [],
+    "extendsType": [],
+    "externalModuleIndicator": [],
+    "falseType": [],
+    "fileName": [],
+    "finallyBlock": [],
+    "head": [],
+    "heritageClauses": [],
+    "importClause": [],
+    "imports": [],
+    "incrementor": [],
+    "indexType": [],
+    "initializer": [],
+    "isArrayType": [],
+    "isBracketed": [],
+    "isDeclarationFile": [],
+    "isExportEquals": [],
+    "isNameFirst": [],
+    "isSpread": [],
+    "isTypeOf": [],
+    "isTypeOnly": [],
+    "jsdocPropertyTags": [],
+    "keyword": [],
+    "keywordToken": [],
+    "label": [],
+    "languageVariant": [],
+    "left": [],
+    "libReferenceDirectives": [],
+    "literal": [],
+    "members": [],
+    "modifiers": [],
+    "moduleAugmentations": [],
+    "moduleReference": [],
+    "moduleSpecifier": [],
+    "multiLine": [],
+    "name": [],
+    "nameExpression": [],
+    "nameType": [],
+    "namedBindings": [],
+    "namespace": [],
+    "objectAssignmentInitializer": [],
+    "objectType": [],
+    "openingElement": [],
+    "openingFragment": [],
+    "operand": [],
+    "operator": [],
+    "operatorToken": [],
+    "parameterName": [],
+    "parameters": [],
+    "path": [],
+    "phaseModifier": [],
+    "postfixToken": [],
+    "properties": [],
+    "propertyName": [],
+    "qualifier": [],
+    "questionDotToken": [],
+    "questionToken": [],
+    "rawText": [],
+    "readonlyToken": [],
+    "referencedFiles": [],
+    "right": [],
+    "scriptKind": [],
+    "statement": [],
+    "statements": [],
+    "tag": [],
+    "tagName": [],
+    "tags": [],
+    "template": [],
+    "templateFlags": [],
+    "templateSpans": [],
+    "text": [],
+    "thenStatement": [],
+    "thisArg": [],
+    "token": [],
+    "tokenCache": [],
+    "tokenFlags": [],
+    "trueType": [],
+    "tryBlock": [],
+    "tupleNameSource": [],
+    "type": [],
+    "typeArguments": [],
+    "typeExpression": [],
+    "typeName": [],
+    "typeParameter": [],
+    "typeParameters": [],
+    "typeReferenceDirectives": [],
+    "types": [],
+    "value": [],
+    "variableDeclaration": [],
+    "whenFalse": [],
+    "whenTrue": [],
+    "forEachChild": [
+      "visitor",
+      "visitArray"
+    ],
+    "getSourceFile": [],
+    "getStart": [
+      "sourceFile",
+      "includeJsDocComment"
+    ],
+    "getFullStart": [],
+    "getEnd": [],
+    "getWidth": [
+      "sourceFile"
+    ],
+    "getFullWidth": [],
+    "getLeadingTriviaWidth": [
+      "sourceFile"
+    ],
+    "getFullText": [
+      "sourceFile"
+    ],
+    "getText": [
+      "sourceFile"
+    ]
+  },
+  "createNodeArray": [
+    "elements",
+    "param",
+    "param"
+  ],
+  "cloneNode": [
+    "node"
+  ],
+  "cloneNodeData": [
+    "node"
+  ],
+  "visitNodes": [
+    "nodes",
+    "visitor"
+  ],
+  "createToken": [
+    "kind"
+  ],
+  "createIdentifier": [
+    "text"
+  ],
+  "createPrivateIdentifier": [
+    "text"
+  ],
+  "createQualifiedName": [
+    "left",
+    "right"
+  ],
+  "createComputedPropertyName": [
+    "expression"
+  ],
+  "createDecorator": [
+    "expression"
+  ],
+  "createEmptyStatement": [],
+  "createIfStatement": [
+    "expression",
+    "thenStatement",
+    "elseStatement"
+  ],
+  "createDoStatement": [
+    "statement",
+    "expression"
+  ],
+  "createWhileStatement": [
+    "expression",
+    "statement"
+  ],
+  "createForStatement": [
+    "initializer",
+    "condition",
+    "incrementor",
+    "statement"
+  ],
+  "createBreakStatement": [
+    "label"
+  ],
+  "createContinueStatement": [
+    "label"
+  ],
+  "createReturnStatement": [
+    "expression"
+  ],
+  "createWithStatement": [
+    "expression",
+    "statement"
+  ],
+  "createSwitchStatement": [
+    "expression",
+    "caseBlock"
+  ],
+  "createCaseBlock": [
+    "clauses"
+  ],
+  "createThrowStatement": [
+    "expression"
+  ],
+  "createTryStatement": [
+    "tryBlock",
+    "catchClause",
+    "finallyBlock"
+  ],
+  "createCatchClause": [
+    "variableDeclaration",
+    "block"
+  ],
+  "createDebuggerStatement": [],
+  "createLabeledStatement": [
+    "label",
+    "statement"
+  ],
+  "createExpressionStatement": [
+    "expression"
+  ],
+  "createBlock": [
+    "statements",
+    "multiLine"
+  ],
+  "createVariableStatement": [
+    "modifiers",
+    "declarationList"
+  ],
+  "createVariableDeclaration": [
+    "name",
+    "exclamationToken",
+    "type",
+    "initializer"
+  ],
+  "createVariableDeclarationList": [
+    "declarations",
+    "flags"
+  ],
+  "createParameterDeclaration": [
+    "modifiers",
+    "dotDotDotToken",
+    "name",
+    "questionToken",
+    "type",
+    "initializer"
+  ],
+  "createBindingElement": [
+    "dotDotDotToken",
+    "propertyName",
+    "name",
+    "initializer"
+  ],
+  "createMissingDeclaration": [
+    "modifiers"
+  ],
+  "createFunctionDeclaration": [
+    "modifiers",
+    "asteriskToken",
+    "name",
+    "typeParameters",
+    "parameters",
+    "type",
+    "body"
+  ],
+  "createClassDeclaration": [
+    "modifiers",
+    "name",
+    "typeParameters",
+    "heritageClauses",
+    "members"
+  ],
+  "createClassExpression": [
+    "modifiers",
+    "name",
+    "typeParameters",
+    "heritageClauses",
+    "members"
+  ],
+  "createHeritageClause": [
+    "token",
+    "types"
+  ],
+  "createInterfaceDeclaration": [
+    "modifiers",
+    "name",
+    "typeParameters",
+    "heritageClauses",
+    "members"
+  ],
+  "createTypeAliasDeclaration": [
+    "modifiers",
+    "name",
+    "typeParameters",
+    "type"
+  ],
+  "createEnumMember": [
+    "name",
+    "initializer"
+  ],
+  "createEnumDeclaration": [
+    "modifiers",
+    "name",
+    "members"
+  ],
+  "createModuleBlock": [
+    "statements"
+  ],
+  "createNotEmittedStatement": [],
+  "createNotEmittedTypeElement": [],
+  "createImportDeclaration": [
+    "modifiers",
+    "importClause",
+    "moduleSpecifier",
+    "attributes"
+  ],
+  "createExternalModuleReference": [
+    "expression"
+  ],
+  "createNamespaceImport": [
+    "name"
+  ],
+  "createNamedImports": [
+    "elements"
+  ],
+  "createExportAssignment": [
+    "modifiers",
+    "param",
+    "type",
+    "expression"
+  ],
+  "createNamespaceExportDeclaration": [
+    "modifiers",
+    "name"
+  ],
+  "createNamespaceExport": [
+    "name"
+  ],
+  "createNamedExports": [
+    "elements"
+  ],
+  "createExportSpecifier": [
+    "param",
+    "propertyName",
+    "name"
+  ],
+  "createCallSignatureDeclaration": [
+    "typeParameters",
+    "parameters",
+    "type"
+  ],
+  "createConstructSignatureDeclaration": [
+    "typeParameters",
+    "parameters",
+    "type"
+  ],
+  "createConstructorDeclaration": [
+    "modifiers",
+    "typeParameters",
+    "parameters",
+    "type",
+    "body"
+  ],
+  "createGetAccessorDeclaration": [
+    "modifiers",
+    "name",
+    "typeParameters",
+    "parameters",
+    "type",
+    "body"
+  ],
+  "createSetAccessorDeclaration": [
+    "modifiers",
+    "name",
+    "typeParameters",
+    "parameters",
+    "type",
+    "body"
+  ],
+  "createIndexSignatureDeclaration": [
+    "modifiers",
+    "parameters",
+    "type"
+  ],
+  "createMethodSignatureDeclaration": [
+    "modifiers",
+    "name",
+    "postfixToken",
+    "typeParameters",
+    "parameters",
+    "type"
+  ],
+  "createMethodDeclaration": [
+    "modifiers",
+    "asteriskToken",
+    "name",
+    "postfixToken",
+    "typeParameters",
+    "parameters",
+    "type",
+    "body"
+  ],
+  "createPropertySignatureDeclaration": [
+    "modifiers",
+    "name",
+    "postfixToken",
+    "type",
+    "initializer"
+  ],
+  "createPropertyDeclaration": [
+    "modifiers",
+    "name",
+    "postfixToken",
+    "type",
+    "initializer"
+  ],
+  "createSemicolonClassElement": [],
+  "createClassStaticBlockDeclaration": [
+    "modifiers",
+    "body"
+  ],
+  "createOmittedExpression": [],
+  "createKeywordExpression": [
+    "kind"
+  ],
+  "createStringLiteral": [
+    "text",
+    "tokenFlags"
+  ],
+  "createNumericLiteral": [
+    "text",
+    "tokenFlags"
+  ],
+  "createBigIntLiteral": [
+    "text",
+    "tokenFlags"
+  ],
+  "createRegularExpressionLiteral": [
+    "text",
+    "tokenFlags"
+  ],
+  "createNoSubstitutionTemplateLiteral": [
+    "text",
+    "templateFlags"
+  ],
+  "createBinaryExpression": [
+    "modifiers",
+    "left",
+    "type",
+    "operatorToken",
+    "right"
+  ],
+  "createPrefixUnaryExpression": [
+    "operator",
+    "operand"
+  ],
+  "createPostfixUnaryExpression": [
+    "operand",
+    "operator"
+  ],
+  "createYieldExpression": [
+    "asteriskToken",
+    "expression"
+  ],
+  "createArrowFunction": [
+    "modifiers",
+    "typeParameters",
+    "parameters",
+    "type",
+    "equalsGreaterThanToken",
+    "body"
+  ],
+  "createFunctionExpression": [
+    "modifiers",
+    "asteriskToken",
+    "name",
+    "typeParameters",
+    "parameters",
+    "type",
+    "body"
+  ],
+  "createAsExpression": [
+    "expression",
+    "type"
+  ],
+  "createSatisfiesExpression": [
+    "expression",
+    "type"
+  ],
+  "createConditionalExpression": [
+    "condition",
+    "questionToken",
+    "whenTrue",
+    "colonToken",
+    "whenFalse"
+  ],
+  "createPropertyAccessExpression": [
+    "expression",
+    "questionDotToken",
+    "name",
+    "flags"
+  ],
+  "createElementAccessExpression": [
+    "expression",
+    "questionDotToken",
+    "argumentExpression",
+    "flags"
+  ],
+  "createCallExpression": [
+    "expression",
+    "questionDotToken",
+    "typeArguments",
+    "arguments_",
+    "flags"
+  ],
+  "createNewExpression": [
+    "expression",
+    "typeArguments",
+    "arguments_"
+  ],
+  "createMetaProperty": [
+    "keywordToken",
+    "name"
+  ],
+  "createNonNullExpression": [
+    "expression",
+    "flags"
+  ],
+  "createSpreadElement": [
+    "expression"
+  ],
+  "createTemplateExpression": [
+    "head",
+    "templateSpans"
+  ],
+  "createTemplateSpan": [
+    "expression",
+    "literal"
+  ],
+  "createTaggedTemplateExpression": [
+    "tag",
+    "questionDotToken",
+    "typeArguments",
+    "template",
+    "flags"
+  ],
+  "createParenthesizedExpression": [
+    "expression"
+  ],
+  "createArrayLiteralExpression": [
+    "elements",
+    "multiLine"
+  ],
+  "createObjectLiteralExpression": [
+    "properties",
+    "multiLine"
+  ],
+  "createSpreadAssignment": [
+    "expression"
+  ],
+  "createPropertyAssignment": [
+    "modifiers",
+    "name",
+    "postfixToken",
+    "type",
+    "initializer"
+  ],
+  "createShorthandPropertyAssignment": [
+    "modifiers",
+    "name",
+    "postfixToken",
+    "type",
+    "equalsToken",
+    "objectAssignmentInitializer"
+  ],
+  "createDeleteExpression": [
+    "expression"
+  ],
+  "createTypeOfExpression": [
+    "expression"
+  ],
+  "createVoidExpression": [
+    "expression"
+  ],
+  "createAwaitExpression": [
+    "expression"
+  ],
+  "createTypeAssertion": [
+    "type",
+    "expression"
+  ],
+  "createKeywordTypeNode": [
+    "kind"
+  ],
+  "createUnionTypeNode": [
+    "types"
+  ],
+  "createIntersectionTypeNode": [
+    "types"
+  ],
+  "createConditionalTypeNode": [
+    "checkType",
+    "extendsType",
+    "trueType",
+    "falseType"
+  ],
+  "createTypeOperatorNode": [
+    "operator",
+    "type"
+  ],
+  "createInferTypeNode": [
+    "typeParameter"
+  ],
+  "createArrayTypeNode": [
+    "elementType"
+  ],
+  "createIndexedAccessTypeNode": [
+    "objectType",
+    "indexType"
+  ],
+  "createTypeReferenceNode": [
+    "typeName",
+    "typeArguments"
+  ],
+  "createExpressionWithTypeArguments": [
+    "expression",
+    "typeArguments"
+  ],
+  "createLiteralTypeNode": [
+    "literal"
+  ],
+  "createThisTypeNode": [],
+  "createTypePredicateNode": [
+    "assertsModifier",
+    "parameterName",
+    "type"
+  ],
+  "createImportAttribute": [
+    "name",
+    "value"
+  ],
+  "createImportAttributes": [
+    "token",
+    "attributes",
+    "multiLine"
+  ],
+  "createTypeQueryNode": [
+    "exprName",
+    "typeArguments"
+  ],
+  "createMappedTypeNode": [
+    "readonlyToken",
+    "typeParameter",
+    "nameType",
+    "questionToken",
+    "type",
+    "members"
+  ],
+  "createTypeLiteralNode": [
+    "members"
+  ],
+  "createTupleTypeNode": [
+    "elements"
+  ],
+  "createNamedTupleMember": [
+    "dotDotDotToken",
+    "name",
+    "questionToken",
+    "type"
+  ],
+  "createOptionalTypeNode": [
+    "type"
+  ],
+  "createRestTypeNode": [
+    "type"
+  ],
+  "createParenthesizedTypeNode": [
+    "type"
+  ],
+  "createFunctionTypeNode": [
+    "typeParameters",
+    "parameters",
+    "type"
+  ],
+  "createConstructorTypeNode": [
+    "modifiers",
+    "typeParameters",
+    "parameters",
+    "type"
+  ],
+  "createTemplateHead": [
+    "text",
+    "rawText",
+    "templateFlags"
+  ],
+  "createTemplateMiddle": [
+    "text",
+    "rawText",
+    "templateFlags"
+  ],
+  "createTemplateTail": [
+    "text",
+    "rawText",
+    "templateFlags"
+  ],
+  "createTemplateLiteralTypeNode": [
+    "head",
+    "templateSpans"
+  ],
+  "createTemplateLiteralTypeSpan": [
+    "type",
+    "literal"
+  ],
+  "createSyntheticExpression": [
+    "type",
+    "isSpread",
+    "tupleNameSource"
+  ],
+  "createPartiallyEmittedExpression": [
+    "expression"
+  ],
+  "createJsxElement": [
+    "openingElement",
+    "children",
+    "closingElement"
+  ],
+  "createJsxAttributes": [
+    "properties"
+  ],
+  "createJsxNamespacedName": [
+    "namespace",
+    "name"
+  ],
+  "createJsxOpeningElement": [
+    "tagName",
+    "typeArguments",
+    "attributes"
+  ],
+  "createJsxSelfClosingElement": [
+    "tagName",
+    "typeArguments",
+    "attributes"
+  ],
+  "createJsxFragment": [
+    "openingFragment",
+    "children",
+    "closingFragment"
+  ],
+  "createJsxOpeningFragment": [],
+  "createJsxClosingFragment": [],
+  "createJsxAttribute": [
+    "name",
+    "initializer"
+  ],
+  "createJsxSpreadAttribute": [
+    "expression"
+  ],
+  "createJsxClosingElement": [
+    "tagName"
+  ],
+  "createJsxExpression": [
+    "dotDotDotToken",
+    "expression"
+  ],
+  "createJsxText": [
+    "text",
+    "containsOnlyTriviaWhiteSpaces"
+  ],
+  "createSyntaxList": [
+    "children"
+  ],
+  "createJSDoc": [
+    "comment",
+    "tags"
+  ],
+  "createJSDocTypeExpression": [
+    "type"
+  ],
+  "createJSDocNonNullableType": [
+    "type"
+  ],
+  "createJSDocNullableType": [
+    "type"
+  ],
+  "createJSDocAllType": [],
+  "createJSDocVariadicType": [
+    "type"
+  ],
+  "createJSDocOptionalType": [
+    "type"
+  ],
+  "createJSDocTypeTag": [
+    "tagName",
+    "typeExpression",
+    "comment"
+  ],
+  "createJSDocUnknownTag": [
+    "tagName",
+    "comment"
+  ],
+  "createJSDocTemplateTag": [
+    "tagName",
+    "constraint",
+    "typeParameters",
+    "comment"
+  ],
+  "createJSDocReturnTag": [
+    "tagName",
+    "typeExpression",
+    "comment"
+  ],
+  "createJSDocPublicTag": [
+    "tagName",
+    "comment"
+  ],
+  "createJSDocPrivateTag": [
+    "tagName",
+    "comment"
+  ],
+  "createJSDocProtectedTag": [
+    "tagName",
+    "comment"
+  ],
+  "createJSDocReadonlyTag": [
+    "tagName",
+    "comment"
+  ],
+  "createJSDocOverrideTag": [
+    "tagName",
+    "comment"
+  ],
+  "createJSDocDeprecatedTag": [
+    "tagName",
+    "comment"
+  ],
+  "createJSDocSeeTag": [
+    "tagName",
+    "nameExpression",
+    "comment"
+  ],
+  "createJSDocImplementsTag": [
+    "tagName",
+    "className",
+    "comment"
+  ],
+  "createJSDocAugmentsTag": [
+    "tagName",
+    "className",
+    "comment"
+  ],
+  "createJSDocSatisfiesTag": [
+    "tagName",
+    "typeExpression",
+    "comment"
+  ],
+  "createJSDocThrowsTag": [
+    "tagName",
+    "typeExpression",
+    "comment"
+  ],
+  "createJSDocThisTag": [
+    "tagName",
+    "typeExpression",
+    "comment"
+  ],
+  "createJSDocImportTag": [
+    "tagName",
+    "importClause",
+    "moduleSpecifier",
+    "attributes",
+    "comment"
+  ],
+  "createJSDocCallbackTag": [
+    "tagName",
+    "typeExpression",
+    "name",
+    "comment"
+  ],
+  "createJSDocOverloadTag": [
+    "tagName",
+    "typeExpression",
+    "comment"
+  ],
+  "createJSDocTypedefTag": [
+    "tagName",
+    "typeExpression",
+    "name",
+    "comment"
+  ],
+  "createJSDocSignature": [
+    "typeParameters",
+    "parameters",
+    "type"
+  ],
+  "createJSDocNameReference": [
+    "name"
+  ],
+  "createModuleDeclaration": [
+    "modifiers",
+    "keyword",
+    "name",
+    "body"
+  ],
+  "createImportEqualsDeclaration": [
+    "modifiers",
+    "param",
+    "name",
+    "moduleReference"
+  ],
+  "createExportDeclaration": [
+    "modifiers",
+    "isTypeOnly",
+    "exportClause",
+    "moduleSpecifier",
+    "attributes"
+  ],
+  "createImportTypeNode": [
+    "param",
+    "argument",
+    "attributes",
+    "qualifier",
+    "typeArguments"
+  ],
+  "createImportClause": [
+    "phaseModifier",
+    "name",
+    "namedBindings"
+  ],
+  "createImportSpecifier": [
+    "param",
+    "propertyName",
+    "name"
+  ],
+  "createJSDocText": [
+    "text"
+  ],
+  "createJSDocLink": [
+    "name",
+    "text"
+  ],
+  "createJSDocLinkPlain": [
+    "name",
+    "text"
+  ],
+  "createJSDocLinkCode": [
+    "name",
+    "text"
+  ],
+  "createTypeParameterDeclaration": [
+    "modifiers",
+    "name",
+    "constraint",
+    "expression",
+    "defaultType"
+  ],
+  "createSyntheticReferenceExpression": [
+    "expression",
+    "thisArg"
+  ],
+  "createJSDocTypeLiteral": [
+    "jsdocPropertyTags",
+    "isArrayType"
+  ],
+  "createForInStatement": [
+    "awaitModifier",
+    "initializer",
+    "expression",
+    "statement"
+  ],
+  "createForOfStatement": [
+    "awaitModifier",
+    "initializer",
+    "expression",
+    "statement"
+  ],
+  "createCaseClause": [
+    "expression",
+    "statements"
+  ],
+  "createDefaultClause": [
+    "expression",
+    "statements"
+  ],
+  "createObjectBindingPattern": [
+    "elements"
+  ],
+  "createArrayBindingPattern": [
+    "elements"
+  ],
+  "createJSDocParameterTag": [
+    "tagName",
+    "name",
+    "isBracketed",
+    "typeExpression",
+    "isNameFirst",
+    "comment"
+  ],
+  "createJSDocPropertyTag": [
+    "tagName",
+    "name",
+    "isBracketed",
+    "typeExpression",
+    "isNameFirst",
+    "comment"
+  ],
+  "updateQualifiedName": [
+    "node",
+    "left",
+    "right"
+  ],
+  "updateComputedPropertyName": [
+    "node",
+    "expression"
+  ],
+  "updateDecorator": [
+    "node",
+    "expression"
+  ],
+  "updateIfStatement": [
+    "node",
+    "expression",
+    "thenStatement",
+    "elseStatement"
+  ],
+  "updateDoStatement": [
+    "node",
+    "statement",
+    "expression"
+  ],
+  "updateWhileStatement": [
+    "node",
+    "expression",
+    "statement"
+  ],
+  "updateForStatement": [
+    "node",
+    "initializer",
+    "condition",
+    "incrementor",
+    "statement"
+  ],
+  "updateBreakStatement": [
+    "node",
+    "label"
+  ],
+  "updateContinueStatement": [
+    "node",
+    "label"
+  ],
+  "updateReturnStatement": [
+    "node",
+    "expression"
+  ],
+  "updateWithStatement": [
+    "node",
+    "expression",
+    "statement"
+  ],
+  "updateSwitchStatement": [
+    "node",
+    "expression",
+    "caseBlock"
+  ],
+  "updateCaseBlock": [
+    "node",
+    "clauses"
+  ],
+  "updateThrowStatement": [
+    "node",
+    "expression"
+  ],
+  "updateTryStatement": [
+    "node",
+    "tryBlock",
+    "catchClause",
+    "finallyBlock"
+  ],
+  "updateCatchClause": [
+    "node",
+    "variableDeclaration",
+    "block"
+  ],
+  "updateLabeledStatement": [
+    "node",
+    "label",
+    "statement"
+  ],
+  "updateExpressionStatement": [
+    "node",
+    "expression"
+  ],
+  "updateBlock": [
+    "node",
+    "statements"
+  ],
+  "updateVariableStatement": [
+    "node",
+    "modifiers",
+    "declarationList"
+  ],
+  "updateVariableDeclaration": [
+    "node",
+    "name",
+    "exclamationToken",
+    "type",
+    "initializer"
+  ],
+  "updateVariableDeclarationList": [
+    "node",
+    "declarations"
+  ],
+  "updateParameterDeclaration": [
+    "node",
+    "modifiers",
+    "dotDotDotToken",
+    "name",
+    "questionToken",
+    "type",
+    "initializer"
+  ],
+  "updateBindingElement": [
+    "node",
+    "dotDotDotToken",
+    "propertyName",
+    "name",
+    "initializer"
+  ],
+  "updateMissingDeclaration": [
+    "node",
+    "modifiers"
+  ],
+  "updateFunctionDeclaration": [
+    "node",
+    "modifiers",
+    "asteriskToken",
+    "name",
+    "typeParameters",
+    "parameters",
+    "type",
+    "body"
+  ],
+  "updateClassDeclaration": [
+    "node",
+    "modifiers",
+    "name",
+    "typeParameters",
+    "heritageClauses",
+    "members"
+  ],
+  "updateClassExpression": [
+    "node",
+    "modifiers",
+    "name",
+    "typeParameters",
+    "heritageClauses",
+    "members"
+  ],
+  "updateHeritageClause": [
+    "node",
+    "types"
+  ],
+  "updateInterfaceDeclaration": [
+    "node",
+    "modifiers",
+    "name",
+    "typeParameters",
+    "heritageClauses",
+    "members"
+  ],
+  "updateTypeAliasDeclaration": [
+    "node",
+    "modifiers",
+    "name",
+    "typeParameters",
+    "type"
+  ],
+  "updateEnumMember": [
+    "node",
+    "name",
+    "initializer"
+  ],
+  "updateEnumDeclaration": [
+    "node",
+    "modifiers",
+    "name",
+    "members"
+  ],
+  "updateModuleBlock": [
+    "node",
+    "statements"
+  ],
+  "updateImportDeclaration": [
+    "node",
+    "modifiers",
+    "importClause",
+    "moduleSpecifier",
+    "attributes"
+  ],
+  "updateExternalModuleReference": [
+    "node",
+    "expression"
+  ],
+  "updateNamespaceImport": [
+    "node",
+    "name"
+  ],
+  "updateNamedImports": [
+    "node",
+    "elements"
+  ],
+  "updateExportAssignment": [
+    "node",
+    "modifiers",
+    "type",
+    "expression"
+  ],
+  "updateNamespaceExportDeclaration": [
+    "node",
+    "modifiers",
+    "name"
+  ],
+  "updateNamespaceExport": [
+    "node",
+    "name"
+  ],
+  "updateNamedExports": [
+    "node",
+    "elements"
+  ],
+  "updateExportSpecifier": [
+    "node",
+    "propertyName",
+    "name"
+  ],
+  "updateCallSignatureDeclaration": [
+    "node",
+    "typeParameters",
+    "parameters",
+    "type"
+  ],
+  "updateConstructSignatureDeclaration": [
+    "node",
+    "typeParameters",
+    "parameters",
+    "type"
+  ],
+  "updateConstructorDeclaration": [
+    "node",
+    "modifiers",
+    "typeParameters",
+    "parameters",
+    "type",
+    "body"
+  ],
+  "updateGetAccessorDeclaration": [
+    "node",
+    "modifiers",
+    "name",
+    "typeParameters",
+    "parameters",
+    "type",
+    "body"
+  ],
+  "updateSetAccessorDeclaration": [
+    "node",
+    "modifiers",
+    "name",
+    "typeParameters",
+    "parameters",
+    "type",
+    "body"
+  ],
+  "updateIndexSignatureDeclaration": [
+    "node",
+    "modifiers",
+    "parameters",
+    "type"
+  ],
+  "updateMethodSignatureDeclaration": [
+    "node",
+    "modifiers",
+    "name",
+    "postfixToken",
+    "typeParameters",
+    "parameters",
+    "type"
+  ],
+  "updateMethodDeclaration": [
+    "node",
+    "modifiers",
+    "asteriskToken",
+    "name",
+    "postfixToken",
+    "typeParameters",
+    "parameters",
+    "type",
+    "body"
+  ],
+  "updatePropertySignatureDeclaration": [
+    "node",
+    "modifiers",
+    "name",
+    "postfixToken",
+    "type",
+    "initializer"
+  ],
+  "updatePropertyDeclaration": [
+    "node",
+    "modifiers",
+    "name",
+    "postfixToken",
+    "type",
+    "initializer"
+  ],
+  "updateClassStaticBlockDeclaration": [
+    "node",
+    "modifiers",
+    "body"
+  ],
+  "updateBinaryExpression": [
+    "node",
+    "modifiers",
+    "left",
+    "type",
+    "operatorToken",
+    "right"
+  ],
+  "updatePrefixUnaryExpression": [
+    "node",
+    "operand"
+  ],
+  "updatePostfixUnaryExpression": [
+    "node",
+    "operand"
+  ],
+  "updateYieldExpression": [
+    "node",
+    "asteriskToken",
+    "expression"
+  ],
+  "updateArrowFunction": [
+    "node",
+    "modifiers",
+    "typeParameters",
+    "parameters",
+    "type",
+    "equalsGreaterThanToken",
+    "body"
+  ],
+  "updateFunctionExpression": [
+    "node",
+    "modifiers",
+    "asteriskToken",
+    "name",
+    "typeParameters",
+    "parameters",
+    "type",
+    "body"
+  ],
+  "updateAsExpression": [
+    "node",
+    "expression",
+    "type"
+  ],
+  "updateSatisfiesExpression": [
+    "node",
+    "expression",
+    "type"
+  ],
+  "updateConditionalExpression": [
+    "node",
+    "condition",
+    "questionToken",
+    "whenTrue",
+    "colonToken",
+    "whenFalse"
+  ],
+  "updatePropertyAccessExpression": [
+    "node",
+    "expression",
+    "questionDotToken",
+    "name"
+  ],
+  "updateElementAccessExpression": [
+    "node",
+    "expression",
+    "questionDotToken",
+    "argumentExpression"
+  ],
+  "updateCallExpression": [
+    "node",
+    "expression",
+    "questionDotToken",
+    "typeArguments",
+    "arguments_"
+  ],
+  "updateNewExpression": [
+    "node",
+    "expression",
+    "typeArguments",
+    "arguments_"
+  ],
+  "updateMetaProperty": [
+    "node",
+    "name"
+  ],
+  "updateNonNullExpression": [
+    "node",
+    "expression"
+  ],
+  "updateSpreadElement": [
+    "node",
+    "expression"
+  ],
+  "updateTemplateExpression": [
+    "node",
+    "head",
+    "templateSpans"
+  ],
+  "updateTemplateSpan": [
+    "node",
+    "expression",
+    "literal"
+  ],
+  "updateTaggedTemplateExpression": [
+    "node",
+    "tag",
+    "questionDotToken",
+    "typeArguments",
+    "template"
+  ],
+  "updateParenthesizedExpression": [
+    "node",
+    "expression"
+  ],
+  "updateArrayLiteralExpression": [
+    "node",
+    "elements"
+  ],
+  "updateObjectLiteralExpression": [
+    "node",
+    "properties"
+  ],
+  "updateSpreadAssignment": [
+    "node",
+    "expression"
+  ],
+  "updatePropertyAssignment": [
+    "node",
+    "modifiers",
+    "name",
+    "postfixToken",
+    "type",
+    "initializer"
+  ],
+  "updateShorthandPropertyAssignment": [
+    "node",
+    "modifiers",
+    "name",
+    "postfixToken",
+    "type",
+    "equalsToken",
+    "objectAssignmentInitializer"
+  ],
+  "updateDeleteExpression": [
+    "node",
+    "expression"
+  ],
+  "updateTypeOfExpression": [
+    "node",
+    "expression"
+  ],
+  "updateVoidExpression": [
+    "node",
+    "expression"
+  ],
+  "updateAwaitExpression": [
+    "node",
+    "expression"
+  ],
+  "updateTypeAssertion": [
+    "node",
+    "type",
+    "expression"
+  ],
+  "updateUnionTypeNode": [
+    "node",
+    "types"
+  ],
+  "updateIntersectionTypeNode": [
+    "node",
+    "types"
+  ],
+  "updateConditionalTypeNode": [
+    "node",
+    "checkType",
+    "extendsType",
+    "trueType",
+    "falseType"
+  ],
+  "updateTypeOperatorNode": [
+    "node",
+    "type"
+  ],
+  "updateInferTypeNode": [
+    "node",
+    "typeParameter"
+  ],
+  "updateArrayTypeNode": [
+    "node",
+    "elementType"
+  ],
+  "updateIndexedAccessTypeNode": [
+    "node",
+    "objectType",
+    "indexType"
+  ],
+  "updateTypeReferenceNode": [
+    "node",
+    "typeName",
+    "typeArguments"
+  ],
+  "updateExpressionWithTypeArguments": [
+    "node",
+    "expression",
+    "typeArguments"
+  ],
+  "updateLiteralTypeNode": [
+    "node",
+    "literal"
+  ],
+  "updateTypePredicateNode": [
+    "node",
+    "assertsModifier",
+    "parameterName",
+    "type"
+  ],
+  "updateImportAttribute": [
+    "node",
+    "name",
+    "value"
+  ],
+  "updateImportAttributes": [
+    "node",
+    "attributes"
+  ],
+  "updateTypeQueryNode": [
+    "node",
+    "exprName",
+    "typeArguments"
+  ],
+  "updateMappedTypeNode": [
+    "node",
+    "readonlyToken",
+    "typeParameter",
+    "nameType",
+    "questionToken",
+    "type",
+    "members"
+  ],
+  "updateTypeLiteralNode": [
+    "node",
+    "members"
+  ],
+  "updateTupleTypeNode": [
+    "node",
+    "elements"
+  ],
+  "updateNamedTupleMember": [
+    "node",
+    "dotDotDotToken",
+    "name",
+    "questionToken",
+    "type"
+  ],
+  "updateOptionalTypeNode": [
+    "node",
+    "type"
+  ],
+  "updateRestTypeNode": [
+    "node",
+    "type"
+  ],
+  "updateParenthesizedTypeNode": [
+    "node",
+    "type"
+  ],
+  "updateFunctionTypeNode": [
+    "node",
+    "typeParameters",
+    "parameters",
+    "type"
+  ],
+  "updateConstructorTypeNode": [
+    "node",
+    "modifiers",
+    "typeParameters",
+    "parameters",
+    "type"
+  ],
+  "updateTemplateLiteralTypeNode": [
+    "node",
+    "head",
+    "templateSpans"
+  ],
+  "updateTemplateLiteralTypeSpan": [
+    "node",
+    "type",
+    "literal"
+  ],
+  "updateSyntheticExpression": [
+    "node",
+    "tupleNameSource"
+  ],
+  "updatePartiallyEmittedExpression": [
+    "node",
+    "expression"
+  ],
+  "updateJsxElement": [
+    "node",
+    "openingElement",
+    "children",
+    "closingElement"
+  ],
+  "updateJsxAttributes": [
+    "node",
+    "properties"
+  ],
+  "updateJsxNamespacedName": [
+    "node",
+    "namespace",
+    "name"
+  ],
+  "updateJsxOpeningElement": [
+    "node",
+    "tagName",
+    "typeArguments",
+    "attributes"
+  ],
+  "updateJsxSelfClosingElement": [
+    "node",
+    "tagName",
+    "typeArguments",
+    "attributes"
+  ],
+  "updateJsxFragment": [
+    "node",
+    "openingFragment",
+    "children",
+    "closingFragment"
+  ],
+  "updateJsxAttribute": [
+    "node",
+    "name",
+    "initializer"
+  ],
+  "updateJsxSpreadAttribute": [
+    "node",
+    "expression"
+  ],
+  "updateJsxClosingElement": [
+    "node",
+    "tagName"
+  ],
+  "updateJsxExpression": [
+    "node",
+    "dotDotDotToken",
+    "expression"
+  ],
+  "updateSyntaxList": [
+    "node",
+    "children"
+  ],
+  "updateJSDoc": [
+    "node",
+    "comment",
+    "tags"
+  ],
+  "updateJSDocTypeExpression": [
+    "node",
+    "type"
+  ],
+  "updateJSDocNonNullableType": [
+    "node",
+    "type"
+  ],
+  "updateJSDocNullableType": [
+    "node",
+    "type"
+  ],
+  "updateJSDocVariadicType": [
+    "node",
+    "type"
+  ],
+  "updateJSDocOptionalType": [
+    "node",
+    "type"
+  ],
+  "updateJSDocTypeTag": [
+    "node",
+    "tagName",
+    "typeExpression",
+    "comment"
+  ],
+  "updateJSDocUnknownTag": [
+    "node",
+    "tagName",
+    "comment"
+  ],
+  "updateJSDocTemplateTag": [
+    "node",
+    "tagName",
+    "constraint",
+    "typeParameters",
+    "comment"
+  ],
+  "updateJSDocReturnTag": [
+    "node",
+    "tagName",
+    "typeExpression",
+    "comment"
+  ],
+  "updateJSDocPublicTag": [
+    "node",
+    "tagName",
+    "comment"
+  ],
+  "updateJSDocPrivateTag": [
+    "node",
+    "tagName",
+    "comment"
+  ],
+  "updateJSDocProtectedTag": [
+    "node",
+    "tagName",
+    "comment"
+  ],
+  "updateJSDocReadonlyTag": [
+    "node",
+    "tagName",
+    "comment"
+  ],
+  "updateJSDocOverrideTag": [
+    "node",
+    "tagName",
+    "comment"
+  ],
+  "updateJSDocDeprecatedTag": [
+    "node",
+    "tagName",
+    "comment"
+  ],
+  "updateJSDocSeeTag": [
+    "node",
+    "tagName",
+    "nameExpression",
+    "comment"
+  ],
+  "updateJSDocImplementsTag": [
+    "node",
+    "tagName",
+    "className",
+    "comment"
+  ],
+  "updateJSDocAugmentsTag": [
+    "node",
+    "tagName",
+    "className",
+    "comment"
+  ],
+  "updateJSDocSatisfiesTag": [
+    "node",
+    "tagName",
+    "typeExpression",
+    "comment"
+  ],
+  "updateJSDocThrowsTag": [
+    "node",
+    "tagName",
+    "typeExpression",
+    "comment"
+  ],
+  "updateJSDocThisTag": [
+    "node",
+    "tagName",
+    "typeExpression",
+    "comment"
+  ],
+  "updateJSDocImportTag": [
+    "node",
+    "tagName",
+    "importClause",
+    "moduleSpecifier",
+    "attributes",
+    "comment"
+  ],
+  "updateJSDocCallbackTag": [
+    "node",
+    "tagName",
+    "typeExpression",
+    "name",
+    "comment"
+  ],
+  "updateJSDocOverloadTag": [
+    "node",
+    "tagName",
+    "typeExpression",
+    "comment"
+  ],
+  "updateJSDocTypedefTag": [
+    "node",
+    "tagName",
+    "typeExpression",
+    "name",
+    "comment"
+  ],
+  "updateJSDocSignature": [
+    "node",
+    "typeParameters",
+    "parameters",
+    "type"
+  ],
+  "updateJSDocNameReference": [
+    "node",
+    "name"
+  ],
+  "updateModuleDeclaration": [
+    "node",
+    "modifiers",
+    "name",
+    "body"
+  ],
+  "updateImportEqualsDeclaration": [
+    "node",
+    "modifiers",
+    "name",
+    "moduleReference"
+  ],
+  "updateExportDeclaration": [
+    "node",
+    "modifiers",
+    "exportClause",
+    "moduleSpecifier",
+    "attributes"
+  ],
+  "updateImportTypeNode": [
+    "node",
+    "argument",
+    "attributes",
+    "qualifier",
+    "typeArguments"
+  ],
+  "updateImportClause": [
+    "node",
+    "name",
+    "namedBindings"
+  ],
+  "updateImportSpecifier": [
+    "node",
+    "propertyName",
+    "name"
+  ],
+  "updateJSDocLink": [
+    "node",
+    "name"
+  ],
+  "updateJSDocLinkPlain": [
+    "node",
+    "name"
+  ],
+  "updateJSDocLinkCode": [
+    "node",
+    "name"
+  ],
+  "updateTypeParameterDeclaration": [
+    "node",
+    "modifiers",
+    "name",
+    "constraint",
+    "expression",
+    "defaultType"
+  ],
+  "updateSyntheticReferenceExpression": [
+    "node",
+    "expression",
+    "thisArg"
+  ],
+  "updateJSDocTypeLiteral": [
+    "node",
+    "jsdocPropertyTags"
+  ],
+  "updateForInStatement": [
+    "node",
+    "awaitModifier",
+    "initializer",
+    "expression",
+    "statement"
+  ],
+  "updateForOfStatement": [
+    "node",
+    "awaitModifier",
+    "initializer",
+    "expression",
+    "statement"
+  ],
+  "updateCaseClause": [
+    "node",
+    "expression",
+    "statements"
+  ],
+  "updateDefaultClause": [
+    "node",
+    "expression",
+    "statements"
+  ],
+  "updateObjectBindingPattern": [
+    "node",
+    "elements"
+  ],
+  "updateArrayBindingPattern": [
+    "node",
+    "elements"
+  ],
+  "updateJSDocParameterTag": [
+    "node",
+    "tagName",
+    "name",
+    "typeExpression",
+    "comment"
+  ],
+  "updateJSDocPropertyTag": [
+    "node",
+    "tagName",
+    "name",
+    "typeExpression",
+    "comment"
+  ],
+  "createSourceFile": [
+    "statements",
+    "endOfFileToken",
+    "text",
+    "fileName",
+    "path"
+  ],
+  "cloneSourceFileWithChanges": [
+    "source",
+    "statements",
+    "endOfFileToken"
+  ],
+  "updateSourceFile": [
+    "node",
+    "statements",
+    "endOfFileToken"
+  ],
+  "isToken": [
+    "node"
+  ],
+  "isIdentifier": [
+    "node"
+  ],
+  "isPrivateIdentifier": [
+    "node"
+  ],
+  "isQualifiedName": [
+    "node"
+  ],
+  "isComputedPropertyName": [
+    "node"
+  ],
+  "isDecorator": [
+    "node"
+  ],
+  "isEmptyStatement": [
+    "node"
+  ],
+  "isIfStatement": [
+    "node"
+  ],
+  "isDoStatement": [
+    "node"
+  ],
+  "isWhileStatement": [
+    "node"
+  ],
+  "isForStatement": [
+    "node"
+  ],
+  "isBreakStatement": [
+    "node"
+  ],
+  "isContinueStatement": [
+    "node"
+  ],
+  "isReturnStatement": [
+    "node"
+  ],
+  "isWithStatement": [
+    "node"
+  ],
+  "isSwitchStatement": [
+    "node"
+  ],
+  "isCaseBlock": [
+    "node"
+  ],
+  "isThrowStatement": [
+    "node"
+  ],
+  "isTryStatement": [
+    "node"
+  ],
+  "isCatchClause": [
+    "node"
+  ],
+  "isDebuggerStatement": [
+    "node"
+  ],
+  "isLabeledStatement": [
+    "node"
+  ],
+  "isExpressionStatement": [
+    "node"
+  ],
+  "isBlock": [
+    "node"
+  ],
+  "isVariableStatement": [
+    "node"
+  ],
+  "isVariableDeclaration": [
+    "node"
+  ],
+  "isVariableDeclarationList": [
+    "node"
+  ],
+  "isParameterDeclaration": [
+    "node"
+  ],
+  "isBindingElement": [
+    "node"
+  ],
+  "isMissingDeclaration": [
+    "node"
+  ],
+  "isFunctionDeclaration": [
+    "node"
+  ],
+  "isClassDeclaration": [
+    "node"
+  ],
+  "isClassExpression": [
+    "node"
+  ],
+  "isHeritageClause": [
+    "node"
+  ],
+  "isInterfaceDeclaration": [
+    "node"
+  ],
+  "isTypeAliasDeclaration": [
+    "node"
+  ],
+  "isEnumMember": [
+    "node"
+  ],
+  "isEnumDeclaration": [
+    "node"
+  ],
+  "isModuleBlock": [
+    "node"
+  ],
+  "isNotEmittedStatement": [
+    "node"
+  ],
+  "isNotEmittedTypeElement": [
+    "node"
+  ],
+  "isImportDeclaration": [
+    "node"
+  ],
+  "isExternalModuleReference": [
+    "node"
+  ],
+  "isNamespaceImport": [
+    "node"
+  ],
+  "isNamedImports": [
+    "node"
+  ],
+  "isExportAssignment": [
+    "node"
+  ],
+  "isNamespaceExportDeclaration": [
+    "node"
+  ],
+  "isNamespaceExport": [
+    "node"
+  ],
+  "isNamedExports": [
+    "node"
+  ],
+  "isExportSpecifier": [
+    "node"
+  ],
+  "isCallSignatureDeclaration": [
+    "node"
+  ],
+  "isConstructSignatureDeclaration": [
+    "node"
+  ],
+  "isConstructorDeclaration": [
+    "node"
+  ],
+  "isGetAccessorDeclaration": [
+    "node"
+  ],
+  "isSetAccessorDeclaration": [
+    "node"
+  ],
+  "isIndexSignatureDeclaration": [
+    "node"
+  ],
+  "isMethodSignatureDeclaration": [
+    "node"
+  ],
+  "isMethodDeclaration": [
+    "node"
+  ],
+  "isPropertySignatureDeclaration": [
+    "node"
+  ],
+  "isPropertyDeclaration": [
+    "node"
+  ],
+  "isSemicolonClassElement": [
+    "node"
+  ],
+  "isClassStaticBlockDeclaration": [
+    "node"
+  ],
+  "isOmittedExpression": [
+    "node"
+  ],
+  "isKeywordExpression": [
+    "node"
+  ],
+  "isStringLiteral": [
+    "node"
+  ],
+  "isNumericLiteral": [
+    "node"
+  ],
+  "isBigIntLiteral": [
+    "node"
+  ],
+  "isRegularExpressionLiteral": [
+    "node"
+  ],
+  "isNoSubstitutionTemplateLiteral": [
+    "node"
+  ],
+  "isBinaryExpression": [
+    "node"
+  ],
+  "isPrefixUnaryExpression": [
+    "node"
+  ],
+  "isPostfixUnaryExpression": [
+    "node"
+  ],
+  "isYieldExpression": [
+    "node"
+  ],
+  "isArrowFunction": [
+    "node"
+  ],
+  "isFunctionExpression": [
+    "node"
+  ],
+  "isAsExpression": [
+    "node"
+  ],
+  "isSatisfiesExpression": [
+    "node"
+  ],
+  "isConditionalExpression": [
+    "node"
+  ],
+  "isPropertyAccessExpression": [
+    "node"
+  ],
+  "isElementAccessExpression": [
+    "node"
+  ],
+  "isCallExpression": [
+    "node"
+  ],
+  "isNewExpression": [
+    "node"
+  ],
+  "isMetaProperty": [
+    "node"
+  ],
+  "isNonNullExpression": [
+    "node"
+  ],
+  "isSpreadElement": [
+    "node"
+  ],
+  "isTemplateExpression": [
+    "node"
+  ],
+  "isTemplateSpan": [
+    "node"
+  ],
+  "isTaggedTemplateExpression": [
+    "node"
+  ],
+  "isParenthesizedExpression": [
+    "node"
+  ],
+  "isArrayLiteralExpression": [
+    "node"
+  ],
+  "isObjectLiteralExpression": [
+    "node"
+  ],
+  "isSpreadAssignment": [
+    "node"
+  ],
+  "isPropertyAssignment": [
+    "node"
+  ],
+  "isShorthandPropertyAssignment": [
+    "node"
+  ],
+  "isDeleteExpression": [
+    "node"
+  ],
+  "isTypeOfExpression": [
+    "node"
+  ],
+  "isVoidExpression": [
+    "node"
+  ],
+  "isAwaitExpression": [
+    "node"
+  ],
+  "isTypeAssertion": [
+    "node"
+  ],
+  "isKeywordTypeNode": [
+    "node"
+  ],
+  "isUnionTypeNode": [
+    "node"
+  ],
+  "isIntersectionTypeNode": [
+    "node"
+  ],
+  "isConditionalTypeNode": [
+    "node"
+  ],
+  "isTypeOperatorNode": [
+    "node"
+  ],
+  "isInferTypeNode": [
+    "node"
+  ],
+  "isArrayTypeNode": [
+    "node"
+  ],
+  "isIndexedAccessTypeNode": [
+    "node"
+  ],
+  "isTypeReferenceNode": [
+    "node"
+  ],
+  "isExpressionWithTypeArguments": [
+    "node"
+  ],
+  "isLiteralTypeNode": [
+    "node"
+  ],
+  "isThisTypeNode": [
+    "node"
+  ],
+  "isTypePredicateNode": [
+    "node"
+  ],
+  "isImportAttribute": [
+    "node"
+  ],
+  "isImportAttributes": [
+    "node"
+  ],
+  "isTypeQueryNode": [
+    "node"
+  ],
+  "isMappedTypeNode": [
+    "node"
+  ],
+  "isTypeLiteralNode": [
+    "node"
+  ],
+  "isTupleTypeNode": [
+    "node"
+  ],
+  "isNamedTupleMember": [
+    "node"
+  ],
+  "isOptionalTypeNode": [
+    "node"
+  ],
+  "isRestTypeNode": [
+    "node"
+  ],
+  "isParenthesizedTypeNode": [
+    "node"
+  ],
+  "isFunctionTypeNode": [
+    "node"
+  ],
+  "isConstructorTypeNode": [
+    "node"
+  ],
+  "isTemplateHead": [
+    "node"
+  ],
+  "isTemplateMiddle": [
+    "node"
+  ],
+  "isTemplateTail": [
+    "node"
+  ],
+  "isTemplateLiteralTypeNode": [
+    "node"
+  ],
+  "isTemplateLiteralTypeSpan": [
+    "node"
+  ],
+  "isSyntheticExpression": [
+    "node"
+  ],
+  "isPartiallyEmittedExpression": [
+    "node"
+  ],
+  "isJsxElement": [
+    "node"
+  ],
+  "isJsxAttributes": [
+    "node"
+  ],
+  "isJsxNamespacedName": [
+    "node"
+  ],
+  "isJsxOpeningElement": [
+    "node"
+  ],
+  "isJsxSelfClosingElement": [
+    "node"
+  ],
+  "isJsxFragment": [
+    "node"
+  ],
+  "isJsxOpeningFragment": [
+    "node"
+  ],
+  "isJsxClosingFragment": [
+    "node"
+  ],
+  "isJsxAttribute": [
+    "node"
+  ],
+  "isJsxSpreadAttribute": [
+    "node"
+  ],
+  "isJsxClosingElement": [
+    "node"
+  ],
+  "isJsxExpression": [
+    "node"
+  ],
+  "isJsxText": [
+    "node"
+  ],
+  "isSyntaxList": [
+    "node"
+  ],
+  "isJSDoc": [
+    "node"
+  ],
+  "isJSDocTypeExpression": [
+    "node"
+  ],
+  "isJSDocNonNullableType": [
+    "node"
+  ],
+  "isJSDocNullableType": [
+    "node"
+  ],
+  "isJSDocAllType": [
+    "node"
+  ],
+  "isJSDocVariadicType": [
+    "node"
+  ],
+  "isJSDocOptionalType": [
+    "node"
+  ],
+  "isJSDocTypeTag": [
+    "node"
+  ],
+  "isJSDocUnknownTag": [
+    "node"
+  ],
+  "isJSDocTemplateTag": [
+    "node"
+  ],
+  "isJSDocReturnTag": [
+    "node"
+  ],
+  "isJSDocPublicTag": [
+    "node"
+  ],
+  "isJSDocPrivateTag": [
+    "node"
+  ],
+  "isJSDocProtectedTag": [
+    "node"
+  ],
+  "isJSDocReadonlyTag": [
+    "node"
+  ],
+  "isJSDocOverrideTag": [
+    "node"
+  ],
+  "isJSDocDeprecatedTag": [
+    "node"
+  ],
+  "isJSDocSeeTag": [
+    "node"
+  ],
+  "isJSDocImplementsTag": [
+    "node"
+  ],
+  "isJSDocAugmentsTag": [
+    "node"
+  ],
+  "isJSDocSatisfiesTag": [
+    "node"
+  ],
+  "isJSDocThrowsTag": [
+    "node"
+  ],
+  "isJSDocThisTag": [
+    "node"
+  ],
+  "isJSDocImportTag": [
+    "node"
+  ],
+  "isJSDocCallbackTag": [
+    "node"
+  ],
+  "isJSDocOverloadTag": [
+    "node"
+  ],
+  "isJSDocTypedefTag": [
+    "node"
+  ],
+  "isJSDocSignature": [
+    "node"
+  ],
+  "isJSDocNameReference": [
+    "node"
+  ],
+  "isSourceFile": [
+    "node"
+  ],
+  "isModuleDeclaration": [
+    "node"
+  ],
+  "isImportEqualsDeclaration": [
+    "node"
+  ],
+  "isExportDeclaration": [
+    "node"
+  ],
+  "isImportTypeNode": [
+    "node"
+  ],
+  "isImportClause": [
+    "node"
+  ],
+  "isImportSpecifier": [
+    "node"
+  ],
+  "isJSDocText": [
+    "node"
+  ],
+  "isJSDocLink": [
+    "node"
+  ],
+  "isJSDocLinkPlain": [
+    "node"
+  ],
+  "isJSDocLinkCode": [
+    "node"
+  ],
+  "isTypeParameterDeclaration": [
+    "node"
+  ],
+  "isSyntheticReferenceExpression": [
+    "node"
+  ],
+  "isJSDocTypeLiteral": [
+    "node"
+  ],
+  "isForInStatement": [
+    "node"
+  ],
+  "isForOfStatement": [
+    "node"
+  ],
+  "isCaseClause": [
+    "node"
+  ],
+  "isDefaultClause": [
+    "node"
+  ],
+  "isObjectBindingPattern": [
+    "node"
+  ],
+  "isArrayBindingPattern": [
+    "node"
+  ],
+  "isJSDocParameterTag": [
+    "node"
+  ],
+  "isJSDocPropertyTag": [
+    "node"
+  ],
+  "isAccessExpression": [
+    "node"
+  ],
+  "isDeclarationName": [
+    "node"
+  ],
+  "isModuleName": [
+    "node"
+  ],
+  "isModuleExportName": [
+    "node"
+  ],
+  "isPropertyName": [
+    "node"
+  ],
+  "isModuleBody": [
+    "node"
+  ],
+  "isJSDocFullName": [
+    "node"
+  ],
+  "isModuleReference": [
+    "node"
+  ],
+  "isNamedImportBindings": [
+    "node"
+  ],
+  "isNamedExportBindings": [
+    "node"
+  ],
+  "isMemberName": [
+    "node"
+  ],
+  "isEntityName": [
+    "node"
+  ],
+  "isBindingName": [
+    "node"
+  ],
+  "isModifierLike": [
+    "node"
+  ],
+  "isJsxChild": [
+    "node"
+  ],
+  "isJsxAttributeLike": [
+    "node"
+  ],
+  "isJsxAttributeName": [
+    "node"
+  ],
+  "isJsxAttributeValue": [
+    "node"
+  ],
+  "isClassLikeDeclaration": [
+    "node"
+  ],
+  "isAccessorDeclaration": [
+    "node"
+  ],
+  "isLiteralLikeNode": [
+    "node"
+  ],
+  "isLiteralExpression": [
+    "node"
+  ],
+  "isUnionOrIntersectionTypeNode": [
+    "node"
+  ],
+  "isTemplateLiteralLikeNode": [
+    "node"
+  ],
+  "isTemplateMiddleOrTail": [
+    "node"
+  ],
+  "isTemplateLiteral": [
+    "node"
+  ],
+  "isTypePredicateParameterName": [
+    "node"
+  ],
+  "isImportAttributeName": [
+    "node"
+  ],
+  "isJSDocComment": [
+    "node"
+  ],
+  "isSignatureDeclaration": [
+    "node"
+  ],
+  "isStringLiteralLikeNode": [
+    "node"
+  ],
+  "isNumericOrStringLikeLiteral": [
+    "node"
+  ],
+  "isObjectLiteralLikeNode": [
+    "node"
+  ],
+  "isObjectTypeDeclaration": [
+    "node"
+  ],
+  "isJsxOpeningLikeElement": [
+    "node"
+  ],
+  "isNamedImportsOrExports": [
+    "node"
+  ],
+  "isBreakOrContinueStatement": [
+    "node"
+  ],
+  "isCallLikeExpression": [
+    "node"
+  ],
+  "isFunctionLikeDeclaration": [
+    "node"
+  ],
+  "isVariableOrParameterDeclaration": [
+    "node"
+  ],
+  "isVariableOrPropertyDeclaration": [
+    "node"
+  ],
+  "isCallOrNewExpression": [
+    "node"
+  ],
+  "isImportClauseOrBindingPattern": [
+    "node"
+  ],
+  "isAnyImportSyntax": [
+    "node"
+  ],
+  "isArrayBindingElement": [
+    "node"
+  ],
+  "isAssertionExpression": [
+    "node"
+  ],
+  "isBooleanLiteral": [
+    "node"
+  ],
+  "isDestructuringAssignment": [
+    "node"
+  ],
+  "isLiteralToken": [
+    "node"
+  ],
+  "isModifier": [
+    "node"
+  ],
+  "isObjectLiteralElementLike": [
+    "node"
+  ],
+  "isPropertyNameLiteral": [
+    "node"
+  ],
+  "isPseudoLiteralToken": [
+    "node"
+  ],
+  "isTemplateLiteralToken": [
+    "node"
+  ],
+  "isArrayDestructuringAssignment": [
+    "node"
+  ],
+  "isObjectDestructuringAssignment": [
+    "node"
+  ],
+  "isFunctionBody": [
+    "node"
+  ],
+  "isTriviaKind": [
+    "kind"
+  ],
+  "isPseudoLiteralKind": [
+    "kind"
+  ],
+  "isModifierKind": [
+    "kind"
+  ],
+  "isKeywordTypeKind": [
+    "kind"
+  ],
+  "isKeywordExpressionKind": [
+    "kind"
+  ],
+  "isJsxTokenKind": [
+    "kind"
+  ],
+  "isImportPhaseModifierKind": [
+    "kind"
+  ],
+  "isPostfixUnaryOperator": [
+    "kind"
+  ],
+  "isPrefixUnaryOperator": [
+    "kind"
+  ],
+  "isAssignmentOperator": [
+    "kind"
+  ],
+  "isBinaryOperator": [
+    "kind"
+  ],
+  "isExponentiationOperator": [
+    "kind"
+  ],
+  "isMultiplicativeOperator": [
+    "kind"
+  ],
+  "isMultiplicativeOperatorOrHigher": [
+    "kind"
+  ],
+  "isAdditiveOperator": [
+    "kind"
+  ],
+  "isAdditiveOperatorOrHigher": [
+    "kind"
+  ],
+  "isShiftOperator": [
+    "kind"
+  ],
+  "isShiftOperatorOrHigher": [
+    "kind"
+  ],
+  "isRelationalOperator": [
+    "kind"
+  ],
+  "isRelationalOperatorOrHigher": [
+    "kind"
+  ],
+  "isEqualityOperator": [
+    "kind"
+  ],
+  "isEqualityOperatorOrHigher": [
+    "kind"
+  ],
+  "isBitwiseOperator": [
+    "kind"
+  ],
+  "isBitwiseOperatorOrHigher": [
+    "kind"
+  ],
+  "isLogicalOperator": [
+    "kind"
+  ],
+  "isLogicalOperatorOrHigher": [
+    "kind"
+  ],
+  "isCompoundAssignmentOperator": [
+    "kind"
+  ],
+  "isAssignmentOperatorOrHigher": [
+    "kind"
+  ],
+  "isLogicalOrCoalescingAssignmentOperator": [
+    "kind"
+  ],
+  "isLiteralKind": [
+    "kind"
+  ],
+  "isPunctuationKind": [
+    "kind"
+  ],
+  "isKeywordKind": [
+    "kind"
+  ],
+  "isTokenKind": [
+    "kind"
+  ],
+  "isJSDocNodeKind": [
+    "kind"
+  ],
+  "isEndOfFile": [
+    "node"
+  ],
+  "isDotToken": [
+    "node"
+  ],
+  "isDotDotDotToken": [
+    "node"
+  ],
+  "isQuestionToken": [
+    "node"
+  ],
+  "isExclamationToken": [
+    "node"
+  ],
+  "isColonToken": [
+    "node"
+  ],
+  "isEqualsToken": [
+    "node"
+  ],
+  "isAsteriskToken": [
+    "node"
+  ],
+  "isEqualsGreaterThanToken": [
+    "node"
+  ],
+  "isPlusToken": [
+    "node"
+  ],
+  "isMinusToken": [
+    "node"
+  ],
+  "isQuestionDotToken": [
+    "node"
+  ],
+  "isAssertsKeyword": [
+    "node"
+  ],
+  "isAssertKeyword": [
+    "node"
+  ],
+  "isAwaitKeyword": [
+    "node"
+  ],
+  "isCaseKeyword": [
+    "node"
+  ],
+  "isAbstractKeyword": [
+    "node"
+  ],
+  "isAccessorKeyword": [
+    "node"
+  ],
+  "isAsyncKeyword": [
+    "node"
+  ],
+  "isConstKeyword": [
+    "node"
+  ],
+  "isDeclareKeyword": [
+    "node"
+  ],
+  "isDefaultKeyword": [
+    "node"
+  ],
+  "isExportKeyword": [
+    "node"
+  ],
+  "isInKeyword": [
+    "node"
+  ],
+  "isPrivateKeyword": [
+    "node"
+  ],
+  "isProtectedKeyword": [
+    "node"
+  ],
+  "isPublicKeyword": [
+    "node"
+  ],
+  "isReadonlyKeyword": [
+    "node"
+  ],
+  "isOutKeyword": [
+    "node"
+  ],
+  "isOverrideKeyword": [
+    "node"
+  ],
+  "isStaticKeyword": [
+    "node"
+  ],
+  "isBinaryOperatorToken": [
+    "node"
+  ],
+  "isAssignmentOperatorToken": [
+    "node"
+  ],
+  "isNullLiteral": [
+    "node"
+  ],
+  "isTrueLiteral": [
+    "node"
+  ],
+  "isFalseLiteral": [
+    "node"
+  ],
+  "isThisExpression": [
+    "node"
+  ],
+  "isSuperExpression": [
+    "node"
+  ],
+  "isImportExpression": [
+    "node"
+  ],
+  "isTypeNode": [
+    "node"
+  ],
+  "isTypeNodeKind": [
+    "kind"
+  ],
+  "isStatement": [
+    "node"
+  ],
+  "isExpression": [
+    "node"
+  ],
+  "isBlockOrExpression": [
+    "node"
+  ],
+  "isLeftHandSideExpression": [
+    "node"
+  ],
+  "skipPartiallyEmittedExpressions": [
+    "node"
+  ],
+  "isLeftHandSideExpressionKind": [
+    "kind"
+  ],
+  "isUnaryExpression": [
+    "node"
+  ],
+  "isUnaryExpressionKind": [
+    "kind"
+  ],
+  "isOuterExpression": [
+    "node",
+    "param"
+  ],
+  "skipOuterExpressions": [
+    "node",
+    "param"
+  ],
+  "isJSDocTypeAssertion": [
+    "node"
+  ],
+  "isBindingPattern": [
+    "node"
+  ],
+  "isConciseBody": [
+    "node"
+  ],
+  "isForInitializer": [
+    "node"
+  ],
+  "isQuestionOrExclamationToken": [
+    "node"
+  ],
+  "isIdentifierOrThisTypeNode": [
+    "node"
+  ],
+  "isReadonlyKeywordOrPlusOrMinusToken": [
+    "node"
+  ],
+  "isQuestionOrPlusOrMinusToken": [
+    "node"
+  ],
+  "isTemplateMiddleOrTemplateTail": [
+    "node"
+  ],
+  "isLiteralTypeLiteral": [
+    "node"
+  ],
+  "isIdentifierOrJSDocNamespaceDeclaration": [
+    "node"
+  ],
+  "isJSDocTypeExpressionOrJSDocTypeLiteral": [
+    "node"
+  ],
+  "isJsxTagNameExpression": [
+    "node"
+  ],
+  "getJSDocTags": [
+    "node"
+  ],
+  "getAllJSDocTags": [
+    "node",
+    "predicate"
+  ],
+  "getAllJSDocTagsOfKind": [
+    "node",
+    "kind"
+  ],
+  "getTextOfJSDocComment": [
+    "comment"
+  ],
+  "isVariableLike": [
+    "node"
+  ],
+  "getJSDocNodes": [
+    "node"
+  ],
+  "ownsJSDocTag": [
+    "hostNode",
+    "tag"
+  ],
+  "filterOwnedJSDocTags": [
+    "hostNode",
+    "comments"
+  ],
+  "getJSDocParameterTags": [
+    "param"
+  ],
+  "getJSDocTypeParameterTags": [
+    "typeParam"
+  ],
+  "getNextJSDocCommentLocation": [
+    "node"
+  ],
+  "getJSDocCommentsAndTags": [
+    "hostNode"
+  ],
+  "formatJSDocLink": [
+    "link"
+  ],
+  "entityNameToString": [
+    "name"
+  ],
+  "tokenIsIdentifierOrKeyword": [
+    "token"
+  ],
+  "tokenIsIdentifierOrKeywordOrGreaterThan": [
+    "token"
+  ],
+  "hasJSDocTag": [
+    "text",
+    "offset",
+    "param"
+  ],
+  "scanJSDocCommentForTags": [
+    "text",
+    "tokenFlags"
+  ],
+  "lookupInUnicodeMap": [
+    "code",
+    "map"
+  ],
+  "isUnicodeIdentifierStart": [
+    "code"
+  ],
+  "isUnicodeIdentifierPart": [
+    "code"
+  ],
+  "makeReverseMap": [
+    "source"
+  ],
+  "tokenToString": [
+    "t"
+  ],
+  "stringToToken": [
+    "s"
+  ],
+  "characterCodeToRegularExpressionFlag": [
+    "ch"
+  ],
+  "computeLineStarts": [
+    "text"
+  ],
+  "isWhiteSpaceLike": [
+    "ch"
+  ],
+  "isWhiteSpaceSingleLine": [
+    "ch"
+  ],
+  "isLineBreak": [
+    "ch"
+  ],
+  "isDigit": [
+    "ch"
+  ],
+  "isHexDigit": [
+    "ch"
+  ],
+  "isOctalDigit": [
+    "ch"
+  ],
+  "couldStartTrivia": [
+    "text",
+    "pos"
+  ],
+  "skipTrivia": [
+    "text",
+    "pos",
+    "stopAfterLineBreak",
+    "stopAtComments",
+    "inJSDoc"
+  ],
+  "isConflictMarkerTrivia": [
+    "text",
+    "pos"
+  ],
+  "scanConflictMarkerTrivia": [
+    "text",
+    "pos"
+  ],
+  "isShebangTrivia": [
+    "text",
+    "pos"
+  ],
+  "scanShebangTrivia": [
+    "text",
+    "pos"
+  ],
+  "iterateCommentRanges": [
+    "reduce",
+    "text",
+    "pos",
+    "trailing",
+    "cb",
+    "state",
+    "initial"
+  ],
+  "appendCommentRange": [
+    "pos",
+    "end",
+    "kind",
+    "hasTrailingNewLine",
+    "_state",
+    "param"
+  ],
+  "forEachLeadingCommentRange": [
+    "text",
+    "pos",
+    "cb",
+    "state"
+  ],
+  "forEachTrailingCommentRange": [
+    "text",
+    "pos",
+    "cb",
+    "state"
+  ],
+  "reduceEachLeadingCommentRange": [
+    "text",
+    "pos",
+    "cb",
+    "state",
+    "initial"
+  ],
+  "reduceEachTrailingCommentRange": [
+    "text",
+    "pos",
+    "cb",
+    "state",
+    "initial"
+  ],
+  "getLeadingCommentRanges": [
+    "text",
+    "pos"
+  ],
+  "getTrailingCommentRanges": [
+    "text",
+    "pos"
+  ],
+  "getShebang": [
+    "text"
+  ],
+  "isIdentifierStart": [
+    "ch",
+    "_languageVersion"
+  ],
+  "isIdentifierPart": [
+    "ch",
+    "_languageVersion",
+    "identifierVariant"
+  ],
+  "isIdentifierText": [
+    "name",
+    "_languageVersion",
+    "identifierVariant"
+  ],
+  "codePointAt": [
+    "s",
+    "i"
+  ],
+  "charSize": [
+    "ch"
+  ],
+  "utf16EncodeAsString": [
+    "codePoint"
+  ],
+  "parsePseudoBigInt": [
+    "stringValue"
+  ],
+  "createScanner": [
+    "skipTrivia",
+    "param",
+    "textInitial",
+    "start",
+    "length"
+  ],
+  "codePointUnchecked": [
+    "pos"
+  ],
+  "codePointChecked": [
+    "pos"
+  ],
+  "charCodeUnchecked": [
+    "pos"
+  ],
+  "charCodeChecked": [
+    "pos"
+  ],
+  "scanNumberFragment": [],
+  "scanNumber": [],
+  "checkForIdentifierStartAfterNumericLiteral": [],
+  "scanDigits": [],
+  "scanExactNumberOfHexDigits": [
+    "count",
+    "canHaveSeparators"
+  ],
+  "scanMinimumNumberOfHexDigits": [
+    "count",
+    "canHaveSeparators"
+  ],
+  "scanHexDigits": [
+    "minCount",
+    "scanAsManyAsPossible",
+    "canHaveSeparators"
+  ],
+  "scanString": [
+    "param"
+  ],
+  "scanTemplateAndSetTokenValue": [
+    "shouldEmitInvalidEscapeError"
+  ],
+  "scanEscapeSequence": [
+    "flags"
+  ],
+  "scanExtendedUnicodeEscape": [],
+  "peekUnicodeEscape": [],
+  "peekExtendedUnicodeEscape": [],
+  "scanIdentifierParts": [],
+  "getIdentifierToken": [],
+  "scanBinaryOrOctalDigits": [
+    "base"
+  ],
+  "checkBigIntSuffix": [],
+  "scan": [],
+  "reScanInvalidIdentifier": [],
+  "scanIdentifier": [
+    "startCharacter"
+  ],
+  "reScanGreaterToken": [],
+  "reScanAsteriskEqualsToken": [],
+  "reScanSlashToken": [],
+  "appendIfCommentDirective": [
+    "commentDirectives",
+    "text",
+    "commentDirectiveRegEx",
+    "lineStart"
+  ],
+  "getDirectiveFromComment": [
+    "text",
+    "commentDirectiveRegEx"
+  ],
+  "reScanTemplateToken": [
+    "isTaggedTemplate"
+  ],
+  "reScanTemplateHeadOrNoSubstitutionTemplate": [],
+  "reScanJsxToken": [
+    "param"
+  ],
+  "reScanLessThanToken": [],
+  "reScanHashToken": [],
+  "reScanQuestionToken": [],
+  "scanJsxToken": [
+    "param"
+  ],
+  "scanJsxIdentifier": [],
+  "scanJsxAttributeValue": [],
+  "reScanJsxAttributeValue": [],
+  "scanJSDocCommentTextToken": [
+    "inBackticks"
+  ],
+  "scanJsDocToken": [],
+  "speculationHelper": [
+    "callback",
+    "isLookahead"
+  ],
+  "scanRange": [
+    "start",
+    "length",
+    "callback"
+  ],
+  "lookAhead": [
+    "callback"
+  ],
+  "tryScan": [
+    "callback"
+  ],
+  "getText": [],
+  "clearCommentDirectives": [],
+  "setText": [
+    "newText",
+    "start",
+    "length"
+  ],
+  "setLanguageVariant": [
+    "variant"
+  ],
+  "resetTokenState": [
+    "position"
+  ],
+  "setSkipJsDocLeadingAsterisks": [
+    "skip"
+  ],
+  "getSyntaxKindNames": [],
+  "formatSyntaxKind": [
+    "kind"
+  ],
+  "unescapeLeadingUnderscores": [
+    "identifier"
+  ],
+  "escapeLeadingUnderscores": [
+    "identifier"
+  ],
+  "tryCast": [
+    "value",
+    "test"
+  ],
+  "cast": [
+    "value",
+    "test"
+  ],
+  "cloneSourceFileData": [
+    "sourceFile"
+  ],
+  "visitNodesArray": [
+    "nodes",
+    "visitor"
+  ],
+  "visitEachChild": [
+    "node",
+    "visitor"
+  ],
+  "visitNodeForEachChild": [
+    "cbNode",
+    "node"
+  ],
+  "visitNodesForEachChild": [
+    "cbNode",
+    "cbNodes",
+    "nodes"
+  ],
+  "forEachChildOfJSDocParameterOrPropertyTag": [
+    "data",
+    "cbNode",
+    "cbNodes"
+  ],
+  "visitEachChildOfJSDocParameterOrPropertyTag": [
+    "node",
+    "visitor"
+  ],
+  "hasProperty": [
+    "map",
+    "key"
+  ],
+  "assertNever": [
+    "member",
+    "param",
+    "stackCrawlMark"
+  ],
+  "fail": [
+    "message",
+    "stackCrawlMark"
+  ],
+  "getExePath": [],
+  "BrowserMessageReader": {
+    "_onData": [],
+    "_messageListener": [],
+    "constructor": [
+      "port"
+    ],
+    "listen": [
+      "callback"
+    ]
+  },
+  "BrowserMessageWriter": {
+    "port": [],
+    "errorCount": [],
+    "constructor": [
+      "port"
+    ],
+    "write": [
+      "msg"
+    ],
+    "handleError": [
+      "error",
+      "msg"
+    ],
+    "end": []
+  },
+  "createMessageConnection": [
+    "input",
+    "output",
+    "logger",
+    "options"
+  ],
+  "QueueMicrotaskImpl": {
+    "isDisposed": [],
+    "constructor": [
+      "callback",
+      "param"
+    ],
+    "dispose": []
+  },
+  "PromiseImpl": {
+    "isDisposed": [],
+    "constructor": [
+      "callback",
+      "param"
+    ],
+    "dispose": []
+  },
+  "MessageBuffer": {
+    "emptyBuffer": [],
+    "constructor": [
+      "param"
+    ],
+    "fromString": [
+      "value",
+      "encoding"
+    ],
+    "toString": [
+      "value",
+      "encoding"
+    ],
+    "asNative": [
+      "buffer",
+      "length"
+    ],
+    "allocNative": [
+      "length"
+    ]
+  },
+  "ReadableStreamWrapper": {
+    "stream": [],
+    "constructor": [
+      "stream"
+    ],
+    "onClose": [
+      "listener"
+    ],
+    "onError": [
+      "listener"
+    ],
+    "onEnd": [
+      "listener"
+    ],
+    "onData": [
+      "listener"
+    ]
+  },
+  "WritableStreamWrapper": {
+    "stream": [],
+    "constructor": [
+      "stream"
+    ],
+    "onClose": [
+      "listener"
+    ],
+    "onError": [
+      "listener"
+    ],
+    "onEnd": [
+      "listener"
+    ],
+    "write": [
+      "data",
+      "encoding"
+    ],
+    "end": []
+  },
+  "RIL": [],
+  "install": [],
+  "CancellationTokenSource": {
+    "_token": [],
+    "token": [],
+    "cancel": [],
+    "dispose": []
+  },
+  "ownKeys": [
+    "o"
+  ],
+  "is": [
+    "value"
+  ],
+  "MutableToken": {
+    "_isCancelled": [],
+    "_emitter": [],
+    "cancel": [],
+    "isCancellationRequested": [],
+    "onCancellationRequested": [],
+    "dispose": []
+  },
+  "ProgressType": {
+    "__": [],
+    "_pr": [],
+    "constructor": []
+  },
+  "ConnectionError": {
+    "code": [],
+    "constructor": [
+      "code",
+      "message"
+    ]
+  },
+  "fromString": [
+    "value"
+  ],
+  "toString": [
+    "value"
+  ],
+  "cancelUndispatched": [
+    "_message"
+  ],
+  "isListening": [],
+  "isClosed": [],
+  "isDisposed": [],
+  "closeHandler": [],
+  "readErrorHandler": [
+    "error"
+  ],
+  "writeErrorHandler": [
+    "data"
+  ],
+  "createRequestQueueKey": [
+    "id"
+  ],
+  "createResponseQueueKey": [
+    "id"
+  ],
+  "createNotificationQueueKey": [],
+  "addMessageToQueue": [
+    "queue",
+    "message"
+  ],
+  "triggerMessageQueue": [],
+  "handleMessage": [
+    "message"
+  ],
+  "callback": [
+    "error"
+  ],
+  "handleRequest": [
+    "requestMessage"
+  ],
+  "reply": [
+    "resultOrError",
+    "method",
+    "startTime"
+  ],
+  "replyError": [
+    "error",
+    "method",
+    "startTime"
+  ],
+  "handleResponse": [
+    "responseMessage"
+  ],
+  "handleNotification": [
+    "message"
+  ],
+  "handleInvalidMessage": [
+    "message"
+  ],
+  "stringifyTrace": [
+    "params"
+  ],
+  "traceSendingRequest": [
+    "message"
+  ],
+  "traceSendingNotification": [
+    "message"
+  ],
+  "traceSendingResponse": [
+    "message",
+    "method",
+    "startTime"
+  ],
+  "traceReceivedRequest": [
+    "message"
+  ],
+  "traceReceivedNotification": [
+    "message"
+  ],
+  "traceReceivedResponse": [
+    "message",
+    "responsePromise"
+  ],
+  "logLSPMessage": [
+    "type",
+    "message"
+  ],
+  "throwIfClosedOrDisposed": [],
+  "throwIfListening": [],
+  "throwIfNotListening": [],
+  "undefinedToNull": [
+    "param"
+  ],
+  "nullToUndefined": [
+    "param"
+  ],
+  "isNamedParam": [
+    "param"
+  ],
+  "computeSingleParam": [
+    "parameterStructures",
+    "param"
+  ],
+  "computeMessageParams": [
+    "type",
+    "params"
+  ],
+  "sendCancellation": [
+    "connection",
+    "id"
+  ],
+  "resolveWithCleanup": [
+    "r"
+  ],
+  "rejectWithCleanup": [
+    "r"
+  ],
+  "create": [
+    "func"
+  ],
+  "getEncodingHeaderValue": [
+    "encodings"
+  ],
+  "parseEncodingHeaderValue": [
+    "value"
+  ],
+  "parseEncoding": [
+    "value"
+  ],
+  "CallbackList": {
+    "_callbacks": [],
+    "_contexts": [],
+    "add": [
+      "callback",
+      "param",
+      "bucket"
+    ],
+    "remove": [
+      "callback",
+      "param"
+    ],
+    "invoke": [
+      "param"
+    ],
+    "isEmpty": [],
+    "dispose": []
+  },
+  "boolean": [
+    "value"
+  ],
+  "string": [
+    "value"
+  ],
+  "number": [
+    "value"
+  ],
+  "error": [
+    "value"
+  ],
+  "func": [
+    "value"
+  ],
+  "array": [
+    "value"
+  ],
+  "stringArray": [
+    "value"
+  ],
+  "LinkedMap": {
+    "_map": [],
+    "_head": [],
+    "_tail": [],
+    "_size": [],
+    "_state": [],
+    "constructor": [],
+    "clear": [],
+    "isEmpty": [],
+    "size": [],
+    "first": [],
+    "last": [],
+    "before": [
+      "key"
+    ],
+    "after": [
+      "key"
+    ],
+    "has": [
+      "key"
+    ],
+    "get": [
+      "key",
+      "param"
+    ],
+    "set": [
+      "key",
+      "value",
+      "param"
+    ],
+    "delete": [
+      "key"
+    ],
+    "remove": [
+      "key"
+    ],
+    "shift": [],
+    "forEach": [
+      "callbackfn",
+      "thisArg"
+    ],
+    "keys": [],
+    "values": [],
+    "entries": [],
+    "trimOld": [
+      "newSize"
+    ],
+    "addItemFirst": [
+      "item"
+    ],
+    "addItemLast": [
+      "item"
+    ],
+    "removeItem": [
+      "item"
+    ],
+    "touch": [
+      "item",
+      "touch"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "data"
+    ]
+  },
+  "LRUCache": {
+    "_limit": [],
+    "_ratio": [],
+    "constructor": [
+      "limit",
+      "param"
+    ],
+    "limit": [
+      "limit"
+    ],
+    "ratio": [
+      "ratio"
+    ],
+    "get": [
+      "key",
+      "param"
+    ],
+    "peek": [
+      "key"
+    ],
+    "set": [
+      "key",
+      "value"
+    ],
+    "checkTrim": []
+  },
+  "AbstractMessageBuffer": {
+    "_encoding": [],
+    "_chunks": [],
+    "_totalLength": [],
+    "constructor": [
+      "param"
+    ],
+    "encoding": [],
+    "append": [
+      "chunk"
+    ],
+    "tryReadHeaders": [
+      "param"
+    ],
+    "tryReadBody": [
+      "length"
+    ],
+    "numberOfBytes": [],
+    "_read": [
+      "byteCount"
+    ]
+  },
+  "AbstractMessageReader": {
+    "errorEmitter": [],
+    "closeEmitter": [],
+    "partialMessageEmitter": [],
+    "constructor": [],
+    "dispose": [],
+    "onError": [],
+    "fireError": [
+      "error"
+    ],
+    "onClose": [],
+    "fireClose": [],
+    "onPartialMessage": [],
+    "firePartialMessage": [
+      "info"
+    ],
+    "asError": [
+      "error"
+    ]
+  },
+  "ReadableStreamMessageReader": {
+    "readable": [],
+    "options": [],
+    "callback": [],
+    "nextMessageLength": [],
+    "messageToken": [],
+    "buffer": [],
+    "partialMessageTimer": [],
+    "_partialMessageTimeout": [],
+    "readSemaphore": [],
+    "constructor": [
+      "readable",
+      "options"
+    ],
+    "partialMessageTimeout": [],
+    "listen": [
+      "callback"
+    ],
+    "onData": [
+      "data"
+    ],
+    "clearPartialMessageTimer": [],
+    "setPartialMessageTimer": []
+  },
+  "fromOptions": [
+    "options"
+  ],
+  "AbstractMessageWriter": {
+    "errorEmitter": [],
+    "closeEmitter": [],
+    "constructor": [],
+    "dispose": [],
+    "onError": [],
+    "fireError": [
+      "error",
+      "message",
+      "count"
+    ],
+    "onClose": [],
+    "fireClose": [],
+    "asError": [
+      "error"
+    ]
+  },
+  "WriteableStreamMessageWriter": {
+    "writable": [],
+    "options": [],
+    "errorCount": [],
+    "writeSemaphore": [],
+    "constructor": [
+      "writable",
+      "options"
+    ],
+    "write": [
+      "msg"
+    ],
+    "doWrite": [
+      "msg",
+      "headers",
+      "data"
+    ],
+    "handleError": [
+      "error",
+      "msg"
+    ],
+    "end": []
+  },
+  "ResponseError": {
+    "code": [],
+    "data": [],
+    "constructor": [
+      "code",
+      "message",
+      "data"
+    ],
+    "toJson": []
+  },
+  "ParameterStructures": {
+    "kind": [],
+    "auto": [],
+    "byPosition": [],
+    "byName": [],
+    "constructor": [
+      "kind"
+    ],
+    "is": [
+      "value"
+    ],
+    "toString": []
+  },
+  "AbstractMessageSignature": {
+    "method": [],
+    "numberOfParams": [],
+    "constructor": [
+      "method",
+      "numberOfParams"
+    ],
+    "parameterStructures": []
+  },
+  "RequestType0": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "RequestType": {
+    "_parameterStructures": [],
+    "_": [],
+    "constructor": [
+      "method",
+      "param"
+    ],
+    "parameterStructures": []
+  },
+  "RequestType1": {
+    "_parameterStructures": [],
+    "_": [],
+    "constructor": [
+      "method",
+      "param"
+    ],
+    "parameterStructures": []
+  },
+  "RequestType2": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "RequestType3": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "RequestType4": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "RequestType5": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "RequestType6": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "RequestType7": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "RequestType8": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "RequestType9": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType": {
+    "_parameterStructures": [],
+    "_": [],
+    "constructor": [
+      "method",
+      "param"
+    ],
+    "parameterStructures": []
+  },
+  "NotificationType0": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType1": {
+    "_parameterStructures": [],
+    "_": [],
+    "constructor": [
+      "method",
+      "param"
+    ],
+    "parameterStructures": []
+  },
+  "NotificationType2": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType3": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType4": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType5": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType6": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType7": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType8": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "NotificationType9": {
+    "_": [],
+    "constructor": [
+      "method"
+    ]
+  },
+  "isRequest": [
+    "message"
+  ],
+  "isNotification": [
+    "message"
+  ],
+  "isResponse": [
+    "message"
+  ],
+  "RAL": [],
+  "Semaphore": {
+    "_capacity": [],
+    "_active": [],
+    "_waiting": [],
+    "constructor": [
+      "param"
+    ],
+    "lock": [
+      "thunk"
+    ],
+    "active": [],
+    "runNext": [],
+    "doRunNext": []
+  },
+  "SharedArraySenderStrategy": {
+    "buffers": [],
+    "constructor": [],
+    "enableCancellation": [
+      "request"
+    ],
+    "sendCancellation": [
+      "_conn",
+      "id"
+    ],
+    "cleanup": [
+      "id"
+    ],
+    "dispose": []
+  },
+  "SharedArrayReceiverStrategy": {
+    "kind": [],
+    "createCancellationTokenSource": [
+      "request"
+    ]
+  },
+  "SharedArrayBufferCancellationToken": {
+    "data": [],
+    "constructor": [
+      "buffer"
+    ],
+    "isCancellationRequested": [],
+    "onCancellationRequested": []
+  },
+  "SharedArrayBufferCancellationTokenSource": {
+    "token": [],
+    "constructor": [
+      "buffer"
+    ],
+    "cancel": [],
+    "dispose": []
+  },
+  "IPCMessageReader": {
+    "process": [],
+    "constructor": [
+      "process"
+    ],
+    "listen": [
+      "callback"
+    ]
+  },
+  "IPCMessageWriter": {
+    "process": [],
+    "errorCount": [],
+    "constructor": [
+      "process"
+    ],
+    "write": [
+      "msg"
+    ],
+    "handleError": [
+      "error",
+      "msg"
+    ],
+    "end": []
+  },
+  "PortMessageReader": {
+    "onData": [],
+    "constructor": [
+      "port"
+    ],
+    "listen": [
+      "callback"
+    ]
+  },
+  "PortMessageWriter": {
+    "port": [],
+    "errorCount": [],
+    "constructor": [
+      "port"
+    ],
+    "write": [
+      "msg"
+    ],
+    "handleError": [
+      "error",
+      "msg"
+    ],
+    "end": []
+  },
+  "SocketMessageReader": {
+    "constructor": [
+      "socket",
+      "param"
+    ]
+  },
+  "SocketMessageWriter": {
+    "socket": [],
+    "constructor": [
+      "socket",
+      "options"
+    ],
+    "dispose": []
+  },
+  "StreamMessageReader": {
+    "constructor": [
+      "readable",
+      "encoding"
+    ]
+  },
+  "StreamMessageWriter": {
+    "constructor": [
+      "writable",
+      "options"
+    ]
+  },
+  "generateRandomPipeName": [],
+  "createClientPipeTransport": [
+    "pipeName",
+    "param"
+  ],
+  "createServerPipeTransport": [
+    "pipeName",
+    "param"
+  ],
+  "createClientSocketTransport": [
+    "port",
+    "param"
+  ],
+  "createServerSocketTransport": [
+    "port",
+    "param"
+  ],
+  "isReadableStream": [
+    "value"
+  ],
+  "isWritableStream": [
+    "value"
+  ]
+}
