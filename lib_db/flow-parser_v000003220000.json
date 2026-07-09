@@ -1,0 +1,952 @@
+{
+  "_interopRequireDefault": [
+    "e"
+  ],
+  "initFlowParserWASM": [],
+  "copyToHeap": [
+    "buffer",
+    "addr"
+  ],
+  "flag": [
+    "v"
+  ],
+  "parse": [
+    "code",
+    "opts"
+  ],
+  "fixLocs": [
+    "node"
+  ],
+  "asProgram": [
+    "ast"
+  ],
+  "detectSourceType": [
+    "program"
+  ],
+  "FlowParserDeserializer": {
+    "constructor": [
+      "programBuffer",
+      "positionBuffer",
+      "positionBufferSize",
+      "stringBufferBase",
+      "wasmParser",
+      "options"
+    ],
+    "next": [],
+    "deserialize": [],
+    "deserializeErrors": [],
+    "deserializeBoolean": [],
+    "deserializeNumber": [],
+    "deserializeString": [],
+    "deserializeNode": [],
+    "deserializeNodeList": [],
+    "deserializeComments": [],
+    "deserializeTokens": [],
+    "addEmptyLoc": [],
+    "fillLocs": []
+  },
+  "quit_": [
+    "status",
+    "toThrow"
+  ],
+  "locateFile": [
+    "path"
+  ],
+  "updateMemoryViews": [],
+  "keepRuntimeAlive": [],
+  "preRun": [],
+  "initRuntime": [],
+  "preMain": [],
+  "postRun": [],
+  "addOnPreRun": [
+    "cb"
+  ],
+  "addOnInit": [
+    "cb"
+  ],
+  "addOnPostRun": [
+    "cb"
+  ],
+  "addRunDependency": [
+    "id"
+  ],
+  "removeRunDependency": [
+    "id"
+  ],
+  "abort": [
+    "what"
+  ],
+  "isDataURI": [
+    "filename"
+  ],
+  "isFileURI": [
+    "filename"
+  ],
+  "getBinarySync": [
+    "file"
+  ],
+  "instantiateSync": [
+    "file",
+    "info"
+  ],
+  "createWasm": [],
+  "receiveInstance": [
+    "instance",
+    "module"
+  ],
+  "ExitStatus": [
+    "status"
+  ],
+  "callRuntimeCallbacks": [
+    "callbacks"
+  ],
+  "_emscripten_memcpy_big": [
+    "dest",
+    "src",
+    "num"
+  ],
+  "getHeapMax": [],
+  "growMemory": [
+    "size"
+  ],
+  "_emscripten_resize_heap": [
+    "requestedSize"
+  ],
+  "alignUp": [
+    "x",
+    "multiple"
+  ],
+  "initRandomFill": [],
+  "randomFill": [
+    "view"
+  ],
+  "_getentropy": [
+    "buffer",
+    "size"
+  ],
+  "UTF8ArrayToString": [
+    "heapOrArray",
+    "idx",
+    "maxBytesToRead"
+  ],
+  "UTF8ToString": [
+    "ptr",
+    "maxBytesToRead"
+  ],
+  "_proc_exit": [
+    "code"
+  ],
+  "exitJS": [
+    "status",
+    "implicit"
+  ],
+  "handleException": [
+    "e"
+  ],
+  "getCFunc": [
+    "ident"
+  ],
+  "writeArrayToMemory": [
+    "array",
+    "buffer"
+  ],
+  "lengthBytesUTF8": [
+    "str"
+  ],
+  "stringToUTF8Array": [
+    "str",
+    "heap",
+    "outIdx",
+    "maxBytesToWrite"
+  ],
+  "stringToUTF8": [
+    "str",
+    "outPtr",
+    "maxBytesToWrite"
+  ],
+  "stringToUTF8OnStack": [
+    "str"
+  ],
+  "ccall": [
+    "ident",
+    "returnType",
+    "argTypes",
+    "args",
+    "opts"
+  ],
+  "convertReturnValue": [
+    "ret"
+  ],
+  "onDone": [
+    "ret"
+  ],
+  "cwrap": [
+    "ident",
+    "returnType",
+    "argTypes",
+    "opts"
+  ],
+  "intArrayFromBase64": [
+    "s"
+  ],
+  "tryParseAsDataURI": [
+    "filename"
+  ],
+  "callMain": [],
+  "run": [],
+  "doRun": [],
+  "HermesParserDecodeUTF8String": [
+    "ptrIn",
+    "length",
+    "heap"
+  ],
+  "nodeWith": [
+    "node",
+    "overrideProps",
+    "visitorKeys"
+  ],
+  "fixSourceLocation": [
+    "node",
+    "_options"
+  ],
+  "mapNodeWithDirectives": [
+    "node"
+  ],
+  "mapProgram": [
+    "node"
+  ],
+  "mapTemplateElement": [
+    "node"
+  ],
+  "mapProperty": [
+    "node"
+  ],
+  "mapMethodDefinition": [
+    "node"
+  ],
+  "mapExportAllDeclaration": [
+    "node"
+  ],
+  "mapRestElement": [
+    "node"
+  ],
+  "mapImportExpression": [
+    "node"
+  ],
+  "mapPrivateIdentifier": [
+    "node"
+  ],
+  "mapPropertyDefinition": [
+    "node"
+  ],
+  "mapTypeofTypeAnnotation": [
+    "node"
+  ],
+  "mapDeclareVariable": [
+    "node"
+  ],
+  "mapJSXElement": [
+    "node"
+  ],
+  "mapChainExpressionInnerNode": [
+    "node"
+  ],
+  "mapChainExpression": [
+    "node"
+  ],
+  "mapLiteral": [
+    "node"
+  ],
+  "transformNode": [
+    "node"
+  ],
+  "transformProgram": [
+    "program",
+    "_options"
+  ],
+  "createSimpleGenericTypeAnnotation": [
+    "name",
+    "nodeForLoc"
+  ],
+  "createAnyTypeAnnotation": [
+    "node"
+  ],
+  "declareVariableDeclarator": [
+    "id",
+    "node"
+  ],
+  "mapDeclareEnum": [
+    "node"
+  ],
+  "mapDeclareNamespace": [
+    "node"
+  ],
+  "mapFunction": [
+    "node"
+  ],
+  "mapQualifiedTypeofIdentifier": [
+    "node"
+  ],
+  "createDefaultPosition": [],
+  "mapDeclareComponent": [
+    "node"
+  ],
+  "getComponentParameterName": [
+    "paramName"
+  ],
+  "createPropsTypeAnnotation": [
+    "propTypes",
+    "spread",
+    "loc",
+    "range"
+  ],
+  "createParamsTypeLoc": [],
+  "mapComponentParameters": [
+    "params",
+    "options"
+  ],
+  "mapComponentParameterType": [
+    "param"
+  ],
+  "mapComponentParameterRestElementType": [
+    "param"
+  ],
+  "mapComponentParameter": [
+    "param"
+  ],
+  "createForwardRefWrapper": [
+    "originalComponent"
+  ],
+  "mapComponentDeclaration": [
+    "node",
+    "options"
+  ],
+  "createRendersTypeLoc": [],
+  "mapDeclareHook": [
+    "node"
+  ],
+  "mapHookDeclaration": [
+    "node"
+  ],
+  "scanForFirstComponentReference": [
+    "compName",
+    "bodyList"
+  ],
+  "mapComponentDeclarationIntoList": [
+    "node",
+    "newBody",
+    "options",
+    "insertExport"
+  ],
+  "mapStatementList": [
+    "stmts",
+    "options"
+  ],
+  "mapEnumDeclaration": [
+    "node",
+    "options"
+  ],
+  "genIdent": [],
+  "objKeyToString": [
+    "node"
+  ],
+  "convertMemberPattern": [
+    "pattern"
+  ],
+  "checkDuplicateBindingName": [
+    "seenBindingNames",
+    "node",
+    "name"
+  ],
+  "checkBindingKind": [
+    "node",
+    "kind"
+  ],
+  "needsPropExistsCond": [
+    "pattern"
+  ],
+  "analyzeProperties": [
+    "key",
+    "pattern",
+    "seenBindingNames",
+    "properties",
+    "rest"
+  ],
+  "constructorExpression": [
+    "constructor"
+  ],
+  "analyzePattern": [
+    "pattern",
+    "key",
+    "seenBindingNames"
+  ],
+  "expressionOfKey": [
+    "root",
+    "key"
+  ],
+  "testsOfCondition": [
+    "root",
+    "condition"
+  ],
+  "testsOfConditions": [
+    "root",
+    "conditions"
+  ],
+  "statementsOfBindings": [
+    "root",
+    "bindings"
+  ],
+  "fallthroughErrorMsg": [
+    "value"
+  ],
+  "fallthroughError": [
+    "value"
+  ],
+  "calculateSimpleArgument": [
+    "node"
+  ],
+  "analyzeCases": [
+    "cases"
+  ],
+  "mapMatchExpression": [
+    "node"
+  ],
+  "mapMatchStatement": [
+    "node"
+  ],
+  "nameOfKey": [
+    "key"
+  ],
+  "mapRecordDeclaration": [
+    "genID",
+    "node"
+  ],
+  "getValue": [
+    "bindingIdent"
+  ],
+  "mapRecordExpression": [
+    "node"
+  ],
+  "parseDocblockString": [
+    "docblock"
+  ],
+  "getModuleDocblock": [
+    "hermesProgram"
+  ],
+  "_interopRequireWildcard": [
+    "e",
+    "t"
+  ],
+  "getOptions": [
+    "opts"
+  ],
+  "setParentPointer": [
+    "node",
+    "parent"
+  ],
+  "SimpleTransform": {
+    "transform": [
+      "node",
+      "options"
+    ],
+    "transformProgram": [
+      "program",
+      "options"
+    ],
+    "nodeWith": [
+      "node",
+      "overrideProps",
+      "visitorKeys"
+    ]
+  },
+  "assertArrayBounds": [
+    "array",
+    "index"
+  ],
+  "arrayIsEqual": [
+    "a1",
+    "a2"
+  ],
+  "insertInArray": [
+    "array",
+    "index",
+    "elements"
+  ],
+  "removeFromArray": [
+    "array",
+    "index"
+  ],
+  "replaceInArray": [
+    "array",
+    "index",
+    "elements"
+  ],
+  "getParentKey": [
+    "target",
+    "parent",
+    "visitorKeys"
+  ],
+  "replaceNodeOnParent": [
+    "originalNode",
+    "originalNodeParent",
+    "nodeToReplaceWith",
+    "visitorKeys"
+  ],
+  "removeNodeOnParent": [
+    "originalNode",
+    "originalNodeParent",
+    "visitorKeys"
+  ],
+  "setParentPointersInDirectChildren": [
+    "node",
+    "visitorKeys"
+  ],
+  "updateAllParentPointers": [
+    "node",
+    "visitorKeys"
+  ],
+  "shallowCloneNode": [
+    "node",
+    "visitorKeys"
+  ],
+  "deepCloneNode": [
+    "node",
+    "visitorKeys"
+  ],
+  "attachComments": [
+    "comments",
+    "ast",
+    "text"
+  ],
+  "mutateESTreeASTCommentsForPrettier": [
+    "program",
+    "text"
+  ],
+  "moveCommentsToNewNode": [
+    "oldNode",
+    "newNode"
+  ],
+  "cloneCommentsToNewNode": [
+    "oldNode",
+    "newNode"
+  ],
+  "cloneJSDocCommentsToNewNode": [
+    "oldNode",
+    "newNode"
+  ],
+  "setCommentsOnNode": [
+    "node",
+    "comments"
+  ],
+  "getCommentsForNode": [
+    "node"
+  ],
+  "isAttachedComment": [
+    "comment"
+  ],
+  "isLeadingComment": [
+    "comment"
+  ],
+  "isTrailingComment": [
+    "comment"
+  ],
+  "getLeadingCommentsForNode": [
+    "node"
+  ],
+  "getTrailingCommentsForNode": [
+    "node"
+  ],
+  "addComment": [
+    "node",
+    "comment",
+    "placement"
+  ],
+  "cloneComment": [
+    "comment"
+  ],
+  "cloneCommentWithMarkers": [
+    "comment"
+  ],
+  "getFirstNewlineIndex": [
+    "code"
+  ],
+  "getFirstNonWhitespaceIndex": [
+    "code"
+  ],
+  "makeCommentOwnLine": [
+    "code",
+    "comment"
+  ],
+  "appendCommentToSource": [
+    "code",
+    "comment",
+    "placement"
+  ],
+  "skip": [
+    "chars"
+  ],
+  "skipInlineComment": [
+    "text",
+    "index"
+  ],
+  "skipTrailingComment": [
+    "text",
+    "index"
+  ],
+  "skipNewline": [
+    "text",
+    "index",
+    "opts"
+  ],
+  "hasNewline": [
+    "text",
+    "index",
+    "param"
+  ],
+  "hasNewlineInRange": [
+    "text",
+    "start",
+    "end"
+  ],
+  "isNextLineEmptyAfterIndex": [
+    "text",
+    "index"
+  ],
+  "getNextNonSpaceNonCommentCharacterIndexWithStartIndex": [
+    "text",
+    "idx"
+  ],
+  "getNextNonSpaceNonCommentCharacterIndex": [
+    "text",
+    "node",
+    "locEnd"
+  ],
+  "getNextNonSpaceNonCommentCharacter": [
+    "text",
+    "node",
+    "locEnd"
+  ],
+  "getStringWidth": [
+    "text"
+  ],
+  "addCommentHelper": [
+    "node",
+    "comment"
+  ],
+  "addLeadingComment": [
+    "node",
+    "comment"
+  ],
+  "addDanglingComment": [
+    "node",
+    "comment",
+    "marker"
+  ],
+  "addTrailingComment": [
+    "node",
+    "comment"
+  ],
+  "isNonEmptyArray": [
+    "object"
+  ],
+  "describeNodeForDebugging": [
+    "node"
+  ],
+  "handleOwnLineComment": [
+    "context"
+  ],
+  "handleEndOfLineComment": [
+    "context"
+  ],
+  "handleRemainingComment": [
+    "context"
+  ],
+  "addBlockStatementFirstComment": [
+    "node",
+    "comment"
+  ],
+  "addBlockOrNotComment": [
+    "node",
+    "comment"
+  ],
+  "handleClosureTypeCastComments": [
+    "param"
+  ],
+  "handleIfStatementComments": [
+    "param"
+  ],
+  "handleWhileComments": [
+    "param"
+  ],
+  "handleTryStatementComments": [
+    "param"
+  ],
+  "handleMemberExpressionComments": [
+    "param"
+  ],
+  "handleConditionalExpressionComments": [
+    "param"
+  ],
+  "handleObjectPropertyAssignment": [
+    "param"
+  ],
+  "handleClassComments": [
+    "param"
+  ],
+  "handleMethodNameComments": [
+    "param"
+  ],
+  "handleFunctionNameComments": [
+    "param"
+  ],
+  "handleCommentAfterArrowParams": [
+    "param"
+  ],
+  "handleCommentInEmptyParens": [
+    "param"
+  ],
+  "handleLastFunctionArgComments": [
+    "param"
+  ],
+  "handleImportSpecifierComments": [
+    "param"
+  ],
+  "handleLabeledStatementComments": [
+    "param"
+  ],
+  "handleBreakAndContinueStatementComments": [
+    "param"
+  ],
+  "handleCallExpressionComments": [
+    "param"
+  ],
+  "handleUnionTypeComments": [
+    "param"
+  ],
+  "handleMatchOrPatternComments": [
+    "param"
+  ],
+  "handlePropertyComments": [
+    "param"
+  ],
+  "handleOnlyComments": [
+    "param"
+  ],
+  "handleForComments": [
+    "param"
+  ],
+  "handleImportDeclarationComments": [
+    "param"
+  ],
+  "handleAssignmentPatternComments": [
+    "param"
+  ],
+  "handleTypeAliasComments": [
+    "param"
+  ],
+  "handleVariableDeclaratorComments": [
+    "param"
+  ],
+  "handleTSFunctionTrailingComments": [
+    "param"
+  ],
+  "handleIgnoreComments": [
+    "param"
+  ],
+  "handleTSMappedTypeComments": [
+    "param"
+  ],
+  "isRealFunctionLikeNode": [
+    "node"
+  ],
+  "getCommentChildNodes": [
+    "node",
+    "options"
+  ],
+  "isTypeCastComment": [
+    "comment"
+  ],
+  "locStart": [
+    "node",
+    "opts"
+  ],
+  "locEnd": [
+    "node"
+  ],
+  "canAttachComment": [
+    "node"
+  ],
+  "isBlockComment": [
+    "comment"
+  ],
+  "isLineComment": [
+    "comment"
+  ],
+  "isCallExpression": [
+    "node"
+  ],
+  "isMemberExpression": [
+    "node"
+  ],
+  "getFunctionParameters": [
+    "node"
+  ],
+  "getCallArguments": [
+    "node"
+  ],
+  "isPrettierIgnoreComment": [
+    "comment"
+  ],
+  "isCallLikeExpression": [
+    "node"
+  ],
+  "isObjectProperty": [
+    "node"
+  ],
+  "getSortedChildNodes": [
+    "node",
+    "options",
+    "resultArray"
+  ],
+  "decorateComment": [
+    "node",
+    "comment",
+    "options",
+    "enclosingNode"
+  ],
+  "returnFalse": [],
+  "attach": [
+    "comments",
+    "ast",
+    "text",
+    "options"
+  ],
+  "isAllEmptyAndNoLineBreak": [
+    "text"
+  ],
+  "isOwnLineComment": [
+    "text",
+    "options",
+    "decoratedComments",
+    "commentIndex"
+  ],
+  "isEndOfLineComment": [
+    "text",
+    "options",
+    "decoratedComments",
+    "commentIndex"
+  ],
+  "breakTies": [
+    "tiesToBreak",
+    "text",
+    "options"
+  ],
+  "findExpressionIndexForComment": [
+    "quasis",
+    "comment",
+    "options"
+  ],
+  "getLast": [
+    "arr"
+  ],
+  "print": [
+    "ast",
+    "originalCode",
+    "param",
+    "visitorKeys"
+  ],
+  "SimpleTraverser": {
+    "traverse": [
+      "node",
+      "options"
+    ],
+    "_traverse": [
+      "node",
+      "parent",
+      "options"
+    ],
+    "_setErrorContext": [
+      "ex",
+      "node"
+    ]
+  },
+  "isNode": [
+    "thing"
+  ],
+  "getVisitorKeys": [
+    "node",
+    "visitorKeys"
+  ],
+  "etc": [
+    "param"
+  ],
+  "ident": [
+    "name",
+    "info"
+  ],
+  "stringLiteral": [
+    "value",
+    "info"
+  ],
+  "numberLiteral": [
+    "value",
+    "info"
+  ],
+  "nullLiteral": [
+    "info"
+  ],
+  "conjunction": [
+    "tests"
+  ],
+  "disjunction": [
+    "tests"
+  ],
+  "variableDeclaration": [
+    "kind",
+    "id",
+    "init",
+    "info"
+  ],
+  "callExpression": [
+    "callee",
+    "args",
+    "info"
+  ],
+  "throwStatement": [
+    "arg",
+    "info"
+  ],
+  "iife": [
+    "statements",
+    "param",
+    "param"
+  ],
+  "typeofExpression": [
+    "arg",
+    "kind"
+  ],
+  "GenID": {
+    "constructor": [
+      "uniqueTransformPrefix"
+    ],
+    "id": [],
+    "addUsage": [
+      "name"
+    ]
+  },
+  "createSyntaxError": [
+    "node",
+    "err"
+  ],
+  "isReservedWord": [
+    "name"
+  ],
+  "transformChainExpression": [
+    "node",
+    "comments"
+  ],
+  "mutate": [
+    "rootNode",
+    "visitorKeys"
+  ]
+}
