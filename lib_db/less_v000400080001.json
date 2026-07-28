@@ -1,0 +1,2843 @@
+{
+  "defaultOptions": [],
+  "extractId": [
+    "href"
+  ],
+  "addDataAttr": [
+    "options",
+    "tag"
+  ],
+  "addDefaultOptions": [
+    "window",
+    "options"
+  ],
+  "Environment": {
+    "constructor": [
+      "externalEnvironment",
+      "fileManagers"
+    ],
+    "getFileManager": [
+      "filename",
+      "currentDirectory",
+      "options",
+      "environment",
+      "isSync"
+    ],
+    "addFileManager": [
+      "fileManager"
+    ],
+    "clearFileManagers": []
+  },
+  "Node": {
+    "type": [],
+    "constructor": [],
+    "currentFileInfo": [],
+    "index": [],
+    "setParent": [
+      "nodes",
+      "parent"
+    ],
+    "getIndex": [],
+    "fileInfo": [],
+    "isRulesetLike": [],
+    "toCSS": [
+      "context"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "eval": [
+      "context"
+    ],
+    "_operate": [
+      "context",
+      "op",
+      "a",
+      "b"
+    ],
+    "fround": [
+      "context",
+      "value"
+    ],
+    "compare": [
+      "a",
+      "b"
+    ],
+    "numericCompare": [
+      "a",
+      "b"
+    ],
+    "blocksVisibility": [],
+    "addVisibilityBlock": [],
+    "removeVisibilityBlock": [],
+    "ensureVisibility": [],
+    "ensureInvisibility": [],
+    "isVisible": [],
+    "visibilityInfo": [],
+    "copyVisibilityInfo": [
+      "info"
+    ]
+  },
+  "set": [
+    "node"
+  ],
+  "Color": {
+    "type": [],
+    "constructor": [
+      "rgb",
+      "a",
+      "originalForm"
+    ],
+    "luma": [],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "toCSS": [
+      "context",
+      "doNotCompress"
+    ],
+    "operate": [
+      "context",
+      "op",
+      "other"
+    ],
+    "toRGB": [],
+    "toHSL": [],
+    "toHSV": [],
+    "toARGB": [],
+    "compare": [
+      "x"
+    ],
+    "fromKeyword": [
+      "keyword"
+    ]
+  },
+  "clamp$1": [
+    "v",
+    "max"
+  ],
+  "toHex": [
+    "v"
+  ],
+  "Paren": {
+    "type": [],
+    "constructor": [
+      "node"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "eval": [
+      "context"
+    ]
+  },
+  "Combinator": {
+    "type": [],
+    "constructor": [
+      "value"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ]
+  },
+  "Element": {
+    "type": [],
+    "constructor": [
+      "combinator",
+      "value",
+      "isVariable",
+      "index",
+      "currentFileInfo",
+      "visibilityInfo"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "eval": [
+      "context"
+    ],
+    "clone": [],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "toCSS": [
+      "context"
+    ]
+  },
+  "getType": [
+    "payload"
+  ],
+  "isArray": [
+    "payload"
+  ],
+  "isPlainObject": [
+    "payload"
+  ],
+  "assignProp": [
+    "carry",
+    "key",
+    "newVal",
+    "originalObject",
+    "includeNonenumerable"
+  ],
+  "copy": [
+    "target",
+    "param"
+  ],
+  "getLocation": [
+    "index",
+    "inputStream"
+  ],
+  "copyArray": [
+    "arr"
+  ],
+  "clone": [
+    "obj"
+  ],
+  "defaults": [
+    "obj1",
+    "obj2"
+  ],
+  "copyOptions": [
+    "obj1",
+    "obj2"
+  ],
+  "merge": [
+    "obj1",
+    "obj2"
+  ],
+  "flattenArray": [
+    "arr",
+    "param"
+  ],
+  "isNullOrUndefined": [
+    "val"
+  ],
+  "LessError": [
+    "e",
+    "fileContentMap",
+    "currentFilename"
+  ],
+  "F": [],
+  "stylize": [
+    "str"
+  ],
+  "_noop": [
+    "node"
+  ],
+  "indexNodeTypes": [
+    "parent",
+    "ticker"
+  ],
+  "Visitor": {
+    "constructor": [
+      "implementation"
+    ],
+    "visit": [
+      "node"
+    ],
+    "visitArray": [
+      "nodes",
+      "nonReplacing"
+    ],
+    "flatten": [
+      "arr",
+      "out"
+    ]
+  },
+  "copyFromOriginal": [
+    "original",
+    "destination",
+    "propertiesToCopy"
+  ],
+  "isPathRelative": [
+    "path"
+  ],
+  "isPathLocalRelative": [
+    "path"
+  ],
+  "ImportSequencer": {
+    "constructor": [
+      "onSequencerEmpty"
+    ],
+    "addImport": [
+      "callback"
+    ],
+    "addVariableImport": [
+      "callback"
+    ],
+    "tryRun": []
+  },
+  "ImportVisitor": [
+    "importer",
+    "finish"
+  ],
+  "SetTreeVisibilityVisitor": {
+    "constructor": [
+      "visible"
+    ],
+    "run": [
+      "root"
+    ],
+    "visitArray": [
+      "nodes"
+    ],
+    "visit": [
+      "node"
+    ]
+  },
+  "ExtendFinderVisitor": {
+    "constructor": [],
+    "run": [
+      "root"
+    ],
+    "visitDeclaration": [
+      "declNode",
+      "visitArgs"
+    ],
+    "visitMixinDefinition": [
+      "mixinDefinitionNode",
+      "visitArgs"
+    ],
+    "visitRuleset": [
+      "rulesetNode",
+      "visitArgs"
+    ],
+    "visitRulesetOut": [
+      "rulesetNode"
+    ],
+    "visitMedia": [
+      "mediaNode",
+      "visitArgs"
+    ],
+    "visitMediaOut": [
+      "mediaNode"
+    ],
+    "visitAtRule": [
+      "atRuleNode",
+      "visitArgs"
+    ],
+    "visitAtRuleOut": [
+      "atRuleNode"
+    ]
+  },
+  "ProcessExtendsVisitor": {
+    "constructor": [],
+    "run": [
+      "root"
+    ],
+    "checkExtendsForNonMatched": [
+      "extendList"
+    ],
+    "doExtendChaining": [
+      "extendsList",
+      "extendsListTarget",
+      "iterationCount"
+    ],
+    "visitDeclaration": [
+      "ruleNode",
+      "visitArgs"
+    ],
+    "visitMixinDefinition": [
+      "mixinDefinitionNode",
+      "visitArgs"
+    ],
+    "visitSelector": [
+      "selectorNode",
+      "visitArgs"
+    ],
+    "visitRuleset": [
+      "rulesetNode",
+      "visitArgs"
+    ],
+    "findMatch": [
+      "extend",
+      "haystackSelectorPath"
+    ],
+    "isElementValuesEqual": [
+      "elementValue1",
+      "elementValue2"
+    ],
+    "extendSelector": [
+      "matches",
+      "selectorPath",
+      "replacementSelector",
+      "isVisible"
+    ],
+    "visitMedia": [
+      "mediaNode",
+      "visitArgs"
+    ],
+    "visitMediaOut": [
+      "mediaNode"
+    ],
+    "visitAtRule": [
+      "atRuleNode",
+      "visitArgs"
+    ],
+    "visitAtRuleOut": [
+      "atRuleNode"
+    ]
+  },
+  "JoinSelectorVisitor": {
+    "constructor": [],
+    "run": [
+      "root"
+    ],
+    "visitDeclaration": [
+      "declNode",
+      "visitArgs"
+    ],
+    "visitMixinDefinition": [
+      "mixinDefinitionNode",
+      "visitArgs"
+    ],
+    "visitRuleset": [
+      "rulesetNode",
+      "visitArgs"
+    ],
+    "visitRulesetOut": [
+      "rulesetNode"
+    ],
+    "visitMedia": [
+      "mediaNode",
+      "visitArgs"
+    ],
+    "visitAtRule": [
+      "atRuleNode",
+      "visitArgs"
+    ]
+  },
+  "asComment": [
+    "ctx"
+  ],
+  "asMediaQuery": [
+    "ctx"
+  ],
+  "debugInfo": [
+    "context",
+    "ctx",
+    "lineSeparator"
+  ],
+  "Comment": {
+    "type": [],
+    "constructor": [
+      "value",
+      "isLineComment",
+      "index",
+      "currentFileInfo"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "isSilent": [
+      "context"
+    ]
+  },
+  "Unit": {
+    "type": [],
+    "constructor": [
+      "numerator",
+      "denominator",
+      "backupUnit"
+    ],
+    "clone": [],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "toString": [],
+    "compare": [
+      "other"
+    ],
+    "is": [
+      "unitString"
+    ],
+    "isLength": [],
+    "isEmpty": [],
+    "isSingular": [],
+    "map": [
+      "callback"
+    ],
+    "usedUnits": [],
+    "cancel": []
+  },
+  "Dimension": {
+    "type": [],
+    "constructor": [
+      "value",
+      "unit"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "eval": [
+      "context"
+    ],
+    "toColor": [],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "operate": [
+      "context",
+      "op",
+      "other"
+    ],
+    "compare": [
+      "other"
+    ],
+    "unify": [],
+    "convertTo": [
+      "conversions"
+    ]
+  },
+  "Anonymous": {
+    "type": [],
+    "constructor": [
+      "value",
+      "index",
+      "currentFileInfo",
+      "mapLines",
+      "rulesetLike",
+      "visibilityInfo"
+    ],
+    "eval": [],
+    "compare": [
+      "other"
+    ],
+    "isRulesetLike": [],
+    "genCSS": [
+      "context",
+      "output"
+    ]
+  },
+  "Expression": {
+    "type": [],
+    "constructor": [
+      "value",
+      "noSpacing"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "eval": [
+      "context"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "throwAwayComments": []
+  },
+  "Value": {
+    "type": [],
+    "constructor": [
+      "value"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "eval": [
+      "context"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ]
+  },
+  "mergeRules": [
+    "rules"
+  ],
+  "CSSVisitorUtils": {
+    "constructor": [
+      "context"
+    ],
+    "containsSilentNonBlockedChild": [
+      "bodyRules"
+    ],
+    "keepOnlyVisibleChilds": [
+      "owner"
+    ],
+    "isEmpty": [
+      "owner"
+    ],
+    "hasVisibleSelector": [
+      "rulesetNode"
+    ],
+    "resolveVisibility": [
+      "node"
+    ],
+    "isVisibleRuleset": [
+      "rulesetNode"
+    ]
+  },
+  "ToCSSVisitor": [
+    "context"
+  ],
+  "hasFakeRuleset": [
+    "atRuleNode"
+  ],
+  "getBodyRules": [
+    "atRuleNode"
+  ],
+  "getParserInput": [],
+  "skipWhitespace": [
+    "length"
+  ],
+  "makeRegistry": [
+    "base"
+  ],
+  "DeprecationHandler": {
+    "constructor": [],
+    "shouldWarn": [
+      "deprecationId"
+    ],
+    "summarize": [
+      "logger"
+    ]
+  },
+  "Parser": [
+    "context",
+    "imports",
+    "fileInfo",
+    "currentIndex"
+  ],
+  "error": [
+    "e",
+    "rootHref"
+  ],
+  "warn": [
+    "msg",
+    "index",
+    "type",
+    "deprecationId"
+  ],
+  "warnBareAtRuleVariable": [
+    "index"
+  ],
+  "warnNumericVariableName": [
+    "name",
+    "index"
+  ],
+  "warnDashOnlyVariableName": [
+    "name",
+    "index"
+  ],
+  "warnDashOnlyMixinName": [
+    "name",
+    "index"
+  ],
+  "warnDynamicCharset": [
+    "value",
+    "index"
+  ],
+  "expect": [
+    "arg",
+    "msg"
+  ],
+  "expectChar": [
+    "arg",
+    "msg"
+  ],
+  "getDebugInfo": [
+    "index"
+  ],
+  "parseNode": [
+    "str",
+    "parseList",
+    "callback"
+  ],
+  "finish": [
+    "e"
+  ],
+  "f": [
+    "parse",
+    "stop"
+  ],
+  "condition": [],
+  "testCurrentChar": [],
+  "cssKeyword": [],
+  "or": [],
+  "insideCondition": [],
+  "and": [],
+  "tryConditionFollowedByParenthesis": [
+    "me"
+  ],
+  "match": [
+    "re"
+  ],
+  "Selector": {
+    "type": [],
+    "constructor": [
+      "elements",
+      "extendList",
+      "condition",
+      "index",
+      "currentFileInfo",
+      "visibilityInfo"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "createDerived": [
+      "elements",
+      "extendList",
+      "evaldCondition"
+    ],
+    "getElements": [
+      "els"
+    ],
+    "createEmptySelectors": [],
+    "match": [
+      "other"
+    ],
+    "mixinElements": [],
+    "isJustParentSelector": [],
+    "eval": [
+      "context"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "getIsOutput": []
+  },
+  "Keyword": {
+    "type": [],
+    "constructor": [
+      "value"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ]
+  },
+  "evalName": [
+    "context",
+    "name"
+  ],
+  "Declaration": {
+    "type": [],
+    "constructor": [
+      "name",
+      "value",
+      "important",
+      "merge",
+      "index",
+      "currentFileInfo",
+      "inline",
+      "variable"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "eval": [
+      "context"
+    ],
+    "makeImportant": []
+  },
+  "Ruleset": {
+    "type": [],
+    "constructor": [
+      "selectors",
+      "rules",
+      "strictImports",
+      "visibilityInfo"
+    ],
+    "isRulesetLike": [],
+    "accept": [
+      "visitor"
+    ],
+    "eval": [
+      "context"
+    ],
+    "evalImports": [
+      "context"
+    ],
+    "makeImportant": [],
+    "matchArgs": [
+      "args"
+    ],
+    "matchCondition": [
+      "args",
+      "context"
+    ],
+    "resetCache": [],
+    "variables": [],
+    "properties": [],
+    "variable": [
+      "name"
+    ],
+    "property": [
+      "name"
+    ],
+    "lastDeclaration": [],
+    "parseValue": [
+      "toParse"
+    ],
+    "rulesets": [],
+    "prependRule": [
+      "rule"
+    ],
+    "find": [
+      "selector",
+      "self",
+      "filter"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "joinSelectors": [
+      "paths",
+      "context",
+      "selectors"
+    ],
+    "joinSelector": [
+      "paths",
+      "context",
+      "selector"
+    ]
+  },
+  "transformDeclaration": [
+    "decl"
+  ],
+  "createParenthesis": [
+    "elementsToPak",
+    "originalElement"
+  ],
+  "createSelector": [
+    "containedElement",
+    "originalElement"
+  ],
+  "addReplacementIntoPath": [
+    "beginningPath",
+    "addPath",
+    "replacedElement",
+    "originalSelector"
+  ],
+  "addAllReplacementsIntoPath": [
+    "beginningPath",
+    "addPaths",
+    "replacedElement",
+    "originalSelector",
+    "result"
+  ],
+  "mergeElementsOnToSelectors": [
+    "elements",
+    "selectors"
+  ],
+  "replaceParentSelector": [
+    "paths",
+    "context",
+    "inSelector"
+  ],
+  "findNestedSelector": [
+    "element"
+  ],
+  "deriveSelector": [
+    "visibilityInfo",
+    "deriveFrom"
+  ],
+  "AtRule": {
+    "type": [],
+    "constructor": [
+      "name",
+      "value",
+      "rules",
+      "index",
+      "currentFileInfo",
+      "debugInfo",
+      "isRooted",
+      "visibilityInfo"
+    ],
+    "declarationsBlock": [
+      "rules",
+      "param"
+    ],
+    "keywordList": [
+      "rules"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "isRulesetLike": [],
+    "isCharset": [],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "eval": [
+      "context"
+    ],
+    "evalRoot": [
+      "context",
+      "rules"
+    ],
+    "variable": [
+      "name"
+    ],
+    "find": [],
+    "rulesets": [],
+    "outputRuleset": [
+      "context",
+      "output",
+      "rules"
+    ]
+  },
+  "DetachedRuleset": {
+    "type": [],
+    "constructor": [
+      "ruleset",
+      "frames"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "eval": [
+      "context"
+    ],
+    "callEval": [
+      "context"
+    ]
+  },
+  "Operation": {
+    "type": [],
+    "constructor": [
+      "op",
+      "operands",
+      "isSpaced"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "eval": [
+      "context"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ]
+  },
+  "functionCaller": {
+    "constructor": [
+      "name",
+      "context",
+      "index",
+      "currentFileInfo"
+    ],
+    "isValid": [],
+    "call": [
+      "args"
+    ]
+  },
+  "commentFilter": [
+    "item"
+  ],
+  "Call": {
+    "type": [],
+    "constructor": [
+      "name",
+      "args",
+      "index",
+      "currentFileInfo"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "eval": [
+      "context"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ]
+  },
+  "exitCalc": [],
+  "Variable": {
+    "type": [],
+    "constructor": [
+      "name",
+      "index",
+      "currentFileInfo"
+    ],
+    "eval": [
+      "context"
+    ],
+    "find": [
+      "obj",
+      "fun"
+    ]
+  },
+  "Property": {
+    "type": [],
+    "constructor": [
+      "name",
+      "index",
+      "currentFileInfo"
+    ],
+    "eval": [
+      "context"
+    ],
+    "find": [
+      "obj",
+      "fun"
+    ]
+  },
+  "Attribute": {
+    "type": [],
+    "constructor": [
+      "key",
+      "op",
+      "value",
+      "cif"
+    ],
+    "eval": [
+      "context"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "toCSS": [
+      "context"
+    ]
+  },
+  "Quoted": {
+    "type": [],
+    "constructor": [
+      "str",
+      "content",
+      "escaped",
+      "index",
+      "currentFileInfo"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "containsVariables": [],
+    "eval": [
+      "context"
+    ],
+    "compare": [
+      "other"
+    ]
+  },
+  "variableReplacement": [
+    "_",
+    "name1",
+    "name2"
+  ],
+  "propertyReplacement": [
+    "_",
+    "name1",
+    "name2"
+  ],
+  "iterativeReplace": [
+    "value",
+    "regexp",
+    "replacementFnc"
+  ],
+  "escapePath": [
+    "path"
+  ],
+  "URL": {
+    "type": [],
+    "constructor": [
+      "val",
+      "index",
+      "currentFileInfo",
+      "isEvald"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "eval": [
+      "context"
+    ]
+  },
+  "Media": {
+    "type": [],
+    "constructor": [
+      "value",
+      "features",
+      "index",
+      "currentFileInfo",
+      "visibilityInfo"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "eval": [
+      "context"
+    ]
+  },
+  "Import": {
+    "type": [],
+    "constructor": [
+      "path",
+      "features",
+      "options",
+      "index",
+      "currentFileInfo",
+      "visibilityInfo"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "getPath": [],
+    "isVariableImport": [],
+    "evalForImport": [
+      "context"
+    ],
+    "evalPath": [
+      "context"
+    ],
+    "eval": [
+      "context"
+    ],
+    "doEval": [
+      "context"
+    ]
+  },
+  "JsEvalNode": {
+    "evaluateJavaScript": [
+      "expression",
+      "context"
+    ],
+    "jsify": [
+      "obj"
+    ]
+  },
+  "JavaScript": {
+    "type": [],
+    "constructor": [
+      "string",
+      "escaped",
+      "index",
+      "currentFileInfo"
+    ],
+    "eval": [
+      "context"
+    ]
+  },
+  "Assignment": {
+    "type": [],
+    "constructor": [
+      "key",
+      "val"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "eval": [
+      "context"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ]
+  },
+  "Condition": {
+    "type": [],
+    "constructor": [
+      "op",
+      "l",
+      "r",
+      "i",
+      "negate"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "eval": [
+      "context"
+    ]
+  },
+  "QueryInParens": {
+    "type": [],
+    "constructor": [
+      "op",
+      "l",
+      "m",
+      "op2",
+      "r",
+      "i"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "eval": [
+      "context"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ]
+  },
+  "Container": {
+    "type": [],
+    "constructor": [
+      "value",
+      "features",
+      "index",
+      "currentFileInfo",
+      "visibilityInfo"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "eval": [
+      "context"
+    ]
+  },
+  "UnicodeDescriptor": {
+    "type": [],
+    "constructor": [
+      "value"
+    ]
+  },
+  "Negative": {
+    "type": [],
+    "constructor": [
+      "node"
+    ],
+    "genCSS": [
+      "context",
+      "output"
+    ],
+    "eval": [
+      "context"
+    ]
+  },
+  "Extend": {
+    "type": [],
+    "constructor": [
+      "selector",
+      "option",
+      "index",
+      "currentFileInfo",
+      "visibilityInfo"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "eval": [
+      "context"
+    ],
+    "clone": [
+      "context"
+    ],
+    "findSelfSelectors": [
+      "selectors"
+    ]
+  },
+  "VariableCall": {
+    "type": [],
+    "constructor": [
+      "variable",
+      "index",
+      "currentFileInfo"
+    ],
+    "eval": [
+      "context"
+    ]
+  },
+  "NamespaceValue": {
+    "type": [],
+    "constructor": [
+      "ruleCall",
+      "lookups",
+      "index",
+      "fileInfo"
+    ],
+    "eval": [
+      "context"
+    ]
+  },
+  "Definition": {
+    "type": [],
+    "constructor": [
+      "name",
+      "params",
+      "rules",
+      "condition",
+      "variadic",
+      "frames",
+      "visibilityInfo"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "evalParams": [
+      "context",
+      "mixinEnv",
+      "args",
+      "evaldArguments"
+    ],
+    "makeImportant": [],
+    "eval": [
+      "context"
+    ],
+    "evalCall": [
+      "context",
+      "args",
+      "important"
+    ],
+    "matchCondition": [
+      "args",
+      "context"
+    ],
+    "matchArgs": [
+      "args",
+      "context"
+    ]
+  },
+  "MixinCall": {
+    "type": [],
+    "constructor": [
+      "elements",
+      "args",
+      "index",
+      "currentFileInfo",
+      "important"
+    ],
+    "accept": [
+      "visitor"
+    ],
+    "eval": [
+      "context"
+    ],
+    "_setVisibilityToReplacement": [
+      "replacement"
+    ],
+    "format": [
+      "args"
+    ]
+  },
+  "calcDefGroup": [
+    "mixin",
+    "mixinPath"
+  ],
+  "AbstractFileManager": {
+    "getPath": [
+      "filename"
+    ],
+    "tryAppendExtension": [
+      "path",
+      "ext"
+    ],
+    "tryAppendLessExtension": [
+      "path"
+    ],
+    "supportsSync": [],
+    "alwaysMakePathsAbsolute": [],
+    "isPathAbsolute": [
+      "filename"
+    ],
+    "join": [
+      "basePath",
+      "laterPath"
+    ],
+    "pathDiff": [
+      "url",
+      "baseUrl"
+    ],
+    "extractUrlParts": [
+      "url",
+      "baseUrl"
+    ]
+  },
+  "AbstractPluginLoader": {
+    "constructor": [],
+    "evalPlugin": [
+      "contents",
+      "context",
+      "imports",
+      "pluginOptions",
+      "fileInfo"
+    ],
+    "trySetOptions": [
+      "plugin",
+      "filename",
+      "name",
+      "options"
+    ],
+    "validatePlugin": [
+      "plugin",
+      "filename",
+      "name"
+    ],
+    "compareVersion": [
+      "aVersion",
+      "bVersion"
+    ],
+    "versionToString": [
+      "version"
+    ],
+    "printUsage": [
+      "plugins"
+    ]
+  },
+  "registerPlugin": [
+    "obj"
+  ],
+  "boolean": [
+    "condition"
+  ],
+  "If": [
+    "context",
+    "condition",
+    "trueValue",
+    "falseValue"
+  ],
+  "isdefined": [
+    "context",
+    "variable"
+  ],
+  "clamp": [
+    "v",
+    "max"
+  ],
+  "hsla": [
+    "origColor",
+    "hsl"
+  ],
+  "toHSL": [
+    "color"
+  ],
+  "toHSV": [
+    "color"
+  ],
+  "number$1": [
+    "n"
+  ],
+  "scaled": [
+    "n",
+    "size"
+  ],
+  "hue": [
+    "h"
+  ],
+  "colorBlend": [
+    "mode",
+    "color1",
+    "color2"
+  ],
+  "dataUri": [
+    "environment"
+  ],
+  "fallback": [
+    "functionThis",
+    "node"
+  ],
+  "getItemsFromNode": [
+    "node"
+  ],
+  "tryEval": [
+    "val"
+  ],
+  "MathHelper": [
+    "fn",
+    "unit",
+    "cssEvaluable",
+    "n"
+  ],
+  "minMax": [
+    "isMin",
+    "args"
+  ],
+  "svg": [],
+  "throwArgumentDescriptor": [],
+  "isa": [
+    "n",
+    "Type"
+  ],
+  "isunit": [
+    "n",
+    "unit"
+  ],
+  "styleExpression": [
+    "args"
+  ],
+  "functions": [
+    "environment"
+  ],
+  "transformTree": [
+    "root",
+    "options"
+  ],
+  "PluginManager": {
+    "constructor": [
+      "less"
+    ],
+    "addPlugins": [
+      "plugins"
+    ],
+    "addPlugin": [
+      "plugin",
+      "filename",
+      "functionRegistry"
+    ],
+    "get": [
+      "filename"
+    ],
+    "addVisitor": [
+      "visitor"
+    ],
+    "addPreProcessor": [
+      "preProcessor",
+      "priority"
+    ],
+    "addPostProcessor": [
+      "postProcessor",
+      "priority"
+    ],
+    "addFileManager": [
+      "manager"
+    ],
+    "getPreProcessors": [],
+    "getPostProcessors": [],
+    "getVisitors": [],
+    "visitor": [],
+    "getFileManagers": []
+  },
+  "PluginManagerFactory": [
+    "less",
+    "newFactory"
+  ],
+  "SourceMapOutput": {
+    "constructor": [
+      "options"
+    ],
+    "removeBasepath": [
+      "path"
+    ],
+    "normalizeFilename": [
+      "filename"
+    ],
+    "add": [
+      "chunk",
+      "fileInfo",
+      "index",
+      "mapLines"
+    ],
+    "isEmpty": [],
+    "toCSS": [
+      "context"
+    ]
+  },
+  "SourceMapBuilder": {
+    "constructor": [
+      "options"
+    ],
+    "toCSS": [
+      "rootNode",
+      "options",
+      "imports"
+    ],
+    "getCSSAppendage": [],
+    "getExternalSourceMap": [],
+    "setExternalSourceMap": [
+      "sourceMap"
+    ],
+    "isInline": [],
+    "getSourceMapURL": [],
+    "getOutputFilename": [],
+    "getInputFilename": []
+  },
+  "ParseTree": {
+    "constructor": [
+      "root",
+      "imports"
+    ],
+    "toCSS": [
+      "options"
+    ]
+  },
+  "ImportManager": {
+    "constructor": [
+      "less",
+      "context",
+      "rootFileInfo"
+    ],
+    "push": [
+      "path",
+      "tryAppendExtension",
+      "currentFileInfo",
+      "importOptions",
+      "callback"
+    ]
+  },
+  "fileParsedFunc": [
+    "e",
+    "root",
+    "fullPath"
+  ],
+  "loadFileCallback": [
+    "loadedFile"
+  ],
+  "Parse": [
+    "environment",
+    "ParseTree",
+    "ImportManager"
+  ],
+  "parse": [
+    "input",
+    "options",
+    "callback"
+  ],
+  "Render": [
+    "environment",
+    "ParseTree"
+  ],
+  "render": [
+    "input",
+    "options",
+    "callback"
+  ],
+  "parseNodeVersion": [
+    "version"
+  ],
+  "lessRoot": [
+    "environment",
+    "fileManagers",
+    "param"
+  ],
+  "ctor": [
+    "t"
+  ],
+  "FileManager": [],
+  "handleResponse": [
+    "xhr",
+    "callback",
+    "errback"
+  ],
+  "FM": [
+    "opts",
+    "log"
+  ],
+  "PluginLoader": [
+    "less"
+  ],
+  "LogListener": [
+    "less",
+    "options"
+  ],
+  "ErrorReporting": [
+    "window",
+    "less",
+    "options"
+  ],
+  "errorHTML": [
+    "e",
+    "rootHref"
+  ],
+  "errorline": [
+    "e",
+    "i",
+    "classname"
+  ],
+  "removeErrorHTML": [
+    "path"
+  ],
+  "removeError": [
+    "path"
+  ],
+  "errorConsole": [
+    "e",
+    "rootHref"
+  ],
+  "Cache": [
+    "window",
+    "options",
+    "logger"
+  ],
+  "ImageSize": [],
+  "imageSize": [
+    "functionContext",
+    "filePathNode"
+  ],
+  "root": [
+    "window",
+    "options"
+  ],
+  "loadStyles": [
+    "modifyVars"
+  ],
+  "loadStyleSheet": [
+    "sheet",
+    "callback",
+    "reload",
+    "remaining",
+    "modifyVars"
+  ],
+  "loadInitialFileCallback": [
+    "loadedFile"
+  ],
+  "loadStyleSheets": [
+    "callback",
+    "reload",
+    "modifyVars"
+  ],
+  "initRunningMode": [],
+  "resolveOrReject": [
+    "data"
+  ],
+  "e": [],
+  "t": [
+    "e",
+    "t"
+  ],
+  "i": [
+    "e",
+    "n",
+    "s"
+  ],
+  "n": [
+    "e",
+    "t",
+    "s"
+  ],
+  "r": [
+    "e"
+  ],
+  "u": [
+    "e",
+    "i",
+    "n"
+  ],
+  "c": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i"
+    ],
+    "luma": [],
+    "genCSS": [
+      "e",
+      "t"
+    ],
+    "toCSS": [
+      "e",
+      "t"
+    ],
+    "operate": [
+      "e",
+      "t",
+      "i"
+    ],
+    "toRGB": [],
+    "toHSL": [],
+    "toHSV": [],
+    "toARGB": [],
+    "compare": [
+      "e"
+    ],
+    "fromKeyword": [
+      "e"
+    ]
+  },
+  "h": [],
+  "p": [
+    "e"
+  ],
+  "m": [
+    "e",
+    "t",
+    "i"
+  ],
+  "g": [
+    "e",
+    "t"
+  ],
+  "x": [
+    "t",
+    "i"
+  ],
+  "S": [
+    "e"
+  ],
+  "I": [
+    "e",
+    "param"
+  ],
+  "C": [
+    "e",
+    "t"
+  ],
+  "k": [
+    "e"
+  ],
+  "A": [
+    "e"
+  ],
+  "_": [
+    "e",
+    "t"
+  ],
+  "$": [
+    "e",
+    "t"
+  ],
+  "E": [
+    "e",
+    "param"
+  ],
+  "R": [
+    "e"
+  ],
+  "a": [
+    "e",
+    "t",
+    "i"
+  ],
+  "L": [
+    "e"
+  ],
+  "D": {
+    "constructor": [
+      "e"
+    ],
+    "visit": [
+      "e"
+    ],
+    "visitArray": [
+      "e",
+      "t"
+    ],
+    "flatten": [
+      "e",
+      "t"
+    ]
+  },
+  "B": [
+    "e",
+    "t",
+    "i"
+  ],
+  "q": [
+    "e"
+  ],
+  "T": [
+    "e"
+  ],
+  "z": {
+    "constructor": [
+      "e"
+    ],
+    "addImport": [
+      "e"
+    ],
+    "addVariableImport": [
+      "e"
+    ],
+    "tryRun": []
+  },
+  "G": [
+    "e",
+    "t"
+  ],
+  "W": {
+    "constructor": [],
+    "run": [
+      "e"
+    ],
+    "visitDeclaration": [
+      "e",
+      "t"
+    ],
+    "visitMixinDefinition": [
+      "e",
+      "t"
+    ],
+    "visitRuleset": [
+      "e",
+      "t"
+    ],
+    "visitRulesetOut": [
+      "e"
+    ],
+    "visitMedia": [
+      "e",
+      "t"
+    ],
+    "visitMediaOut": [
+      "e"
+    ],
+    "visitAtRule": [
+      "e",
+      "t"
+    ],
+    "visitAtRuleOut": [
+      "e"
+    ]
+  },
+  "K": [
+    "e"
+  ],
+  "J": [
+    "e"
+  ],
+  "H": [
+    "e",
+    "t",
+    "i"
+  ],
+  "Z": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ],
+    "isSilent": [
+      "e"
+    ]
+  },
+  "Q": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i"
+    ],
+    "clone": [],
+    "genCSS": [
+      "e",
+      "t"
+    ],
+    "toString": [],
+    "compare": [
+      "e"
+    ],
+    "is": [
+      "e"
+    ],
+    "isLength": [],
+    "isEmpty": [],
+    "isSingular": [],
+    "map": [
+      "e"
+    ],
+    "usedUnits": [],
+    "cancel": []
+  },
+  "X": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t"
+    ],
+    "accept": [
+      "e"
+    ],
+    "eval": [
+      "e"
+    ],
+    "toColor": [],
+    "genCSS": [
+      "e",
+      "t"
+    ],
+    "operate": [
+      "e",
+      "t",
+      "i"
+    ],
+    "compare": [
+      "e"
+    ],
+    "unify": [],
+    "convertTo": [
+      "e"
+    ]
+  },
+  "Y": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n",
+      "s",
+      "r"
+    ],
+    "eval": [],
+    "compare": [
+      "e"
+    ],
+    "isRulesetLike": [],
+    "genCSS": [
+      "e",
+      "t"
+    ]
+  },
+  "ee": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t"
+    ],
+    "accept": [
+      "e"
+    ],
+    "eval": [
+      "e"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ],
+    "throwAwayComments": []
+  },
+  "te": {
+    "type": [],
+    "constructor": [
+      "e"
+    ],
+    "accept": [
+      "e"
+    ],
+    "eval": [
+      "e"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ]
+  },
+  "ie": [
+    "e"
+  ],
+  "ne": {
+    "constructor": [
+      "e"
+    ],
+    "containsSilentNonBlockedChild": [
+      "e"
+    ],
+    "keepOnlyVisibleChilds": [
+      "e"
+    ],
+    "isEmpty": [
+      "e"
+    ],
+    "hasVisibleSelector": [
+      "e"
+    ],
+    "resolveVisibility": [
+      "e"
+    ],
+    "isVisibleRuleset": [
+      "e"
+    ]
+  },
+  "se": [
+    "e"
+  ],
+  "ue": {
+    "constructor": [],
+    "shouldWarn": [
+      "e"
+    ],
+    "summarize": [
+      "e"
+    ]
+  },
+  "ce": [
+    "t",
+    "i",
+    "n",
+    "r"
+  ],
+  "l": [
+    "e",
+    "t"
+  ],
+  "d": [
+    "e",
+    "i",
+    "s",
+    "a",
+    "h"
+  ],
+  "v": [
+    "e"
+  ],
+  "y": [
+    "e"
+  ],
+  "he": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n",
+      "s",
+      "r"
+    ],
+    "accept": [
+      "e"
+    ],
+    "createDerived": [
+      "e",
+      "t",
+      "i"
+    ],
+    "getElements": [
+      "e"
+    ],
+    "createEmptySelectors": [],
+    "match": [
+      "e"
+    ],
+    "mixinElements": [],
+    "isJustParentSelector": [],
+    "eval": [
+      "e"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ],
+    "getIsOutput": []
+  },
+  "fe": {
+    "type": [],
+    "constructor": [
+      "e"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ]
+  },
+  "de": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n",
+      "s",
+      "r",
+      "o",
+      "a"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ],
+    "eval": [
+      "e"
+    ],
+    "makeImportant": []
+  },
+  "ge": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n"
+    ],
+    "isRulesetLike": [],
+    "accept": [
+      "e"
+    ],
+    "eval": [
+      "e"
+    ],
+    "evalImports": [
+      "e"
+    ],
+    "makeImportant": [],
+    "matchArgs": [
+      "e"
+    ],
+    "matchCondition": [
+      "e",
+      "t"
+    ],
+    "resetCache": [],
+    "variables": [],
+    "properties": [],
+    "variable": [
+      "e"
+    ],
+    "property": [
+      "e"
+    ],
+    "lastDeclaration": [],
+    "parseValue": [
+      "e"
+    ],
+    "rulesets": [],
+    "prependRule": [
+      "e"
+    ],
+    "find": [
+      "e",
+      "t",
+      "i"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ],
+    "joinSelectors": [
+      "e",
+      "t",
+      "i"
+    ],
+    "joinSelector": [
+      "e",
+      "t",
+      "i"
+    ]
+  },
+  "s": [
+    "e",
+    "t"
+  ],
+  "o": [
+    "t",
+    "i",
+    "n"
+  ],
+  "ye": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n",
+      "s",
+      "r",
+      "o",
+      "a"
+    ],
+    "declarationsBlock": [
+      "e",
+      "param"
+    ],
+    "keywordList": [
+      "e"
+    ],
+    "accept": [
+      "e"
+    ],
+    "isRulesetLike": [],
+    "isCharset": [],
+    "genCSS": [
+      "e",
+      "t"
+    ],
+    "eval": [
+      "e"
+    ],
+    "evalRoot": [
+      "e",
+      "t"
+    ],
+    "variable": [
+      "e"
+    ],
+    "find": [],
+    "rulesets": [],
+    "outputRuleset": [
+      "e",
+      "t",
+      "i"
+    ]
+  },
+  "Ce": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t"
+    ],
+    "accept": [
+      "e"
+    ],
+    "eval": [
+      "e"
+    ],
+    "callEval": [
+      "e"
+    ]
+  },
+  "Ae": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i"
+    ],
+    "accept": [
+      "e"
+    ],
+    "eval": [
+      "e"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ]
+  },
+  "_e": {
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n"
+    ],
+    "isValid": [],
+    "call": [
+      "e"
+    ]
+  },
+  "$e": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n"
+    ],
+    "accept": [
+      "e"
+    ],
+    "eval": [
+      "e"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ]
+  },
+  "Ee": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i"
+    ],
+    "eval": [
+      "e"
+    ],
+    "find": [
+      "e",
+      "t"
+    ]
+  },
+  "Re": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i"
+    ],
+    "eval": [
+      "e"
+    ],
+    "find": [
+      "e",
+      "t"
+    ]
+  },
+  "Me": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n"
+    ],
+    "eval": [
+      "e"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ],
+    "toCSS": [
+      "e"
+    ]
+  },
+  "Pe": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n",
+      "s"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ],
+    "containsVariables": [],
+    "eval": [
+      "e"
+    ],
+    "compare": [
+      "e"
+    ]
+  },
+  "Fe": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n"
+    ],
+    "accept": [
+      "e"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ],
+    "eval": [
+      "e"
+    ]
+  },
+  "Ve": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n",
+      "s"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ],
+    "eval": [
+      "e"
+    ]
+  },
+  "Oe": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n",
+      "s",
+      "r"
+    ],
+    "accept": [
+      "e"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ],
+    "getPath": [],
+    "isVariableImport": [],
+    "evalForImport": [
+      "e"
+    ],
+    "evalPath": [
+      "e"
+    ],
+    "eval": [
+      "e"
+    ],
+    "doEval": [
+      "e"
+    ]
+  },
+  "Le": {
+    "evaluateJavaScript": [
+      "e",
+      "t"
+    ],
+    "jsify": [
+      "e"
+    ]
+  },
+  "De": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n"
+    ],
+    "eval": [
+      "e"
+    ]
+  },
+  "Ne": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t"
+    ],
+    "accept": [
+      "e"
+    ],
+    "eval": [
+      "e"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ]
+  },
+  "Be": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n",
+      "s",
+      "r"
+    ],
+    "accept": [
+      "e"
+    ],
+    "eval": [
+      "e"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ]
+  },
+  "Ue": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n",
+      "s"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ],
+    "eval": [
+      "e"
+    ]
+  },
+  "je": {
+    "type": [],
+    "constructor": [
+      "e"
+    ],
+    "genCSS": [
+      "e",
+      "t"
+    ],
+    "eval": [
+      "e"
+    ]
+  },
+  "qe": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n",
+      "s"
+    ],
+    "accept": [
+      "e"
+    ],
+    "eval": [
+      "e"
+    ],
+    "clone": [
+      "e"
+    ],
+    "findSelfSelectors": [
+      "e"
+    ]
+  },
+  "Te": {
+    "type": [],
+    "constructor": [
+      "e",
+      "t",
+      "i",
+      "n",
+      "s",
+      "r",
+      "o"
+    ],
+    "accept": [
+      "e"
+    ],
+    "evalParams": [
+      "e",
+      "t",
+      "i",
+      "n"
+    ],
+    "makeImportant": [],
+    "eval": [
+      "e"
+    ],
+    "evalCall": [
+      "e",
+      "t",
+      "i"
+    ],
+    "matchCondition": [
+      "e",
+      "t"
+    ],
+    "matchArgs": [
+      "e",
+      "t"
+    ]
+  },
+  "Ge": {
+    "getPath": [
+      "e"
+    ],
+    "tryAppendExtension": [
+      "e",
+      "t"
+    ],
+    "tryAppendLessExtension": [
+      "e"
+    ],
+    "supportsSync": [],
+    "alwaysMakePathsAbsolute": [],
+    "isPathAbsolute": [
+      "e"
+    ],
+    "join": [
+      "e",
+      "t"
+    ],
+    "pathDiff": [
+      "e",
+      "t"
+    ],
+    "extractUrlParts": [
+      "e",
+      "t"
+    ]
+  },
+  "We": {
+    "constructor": [],
+    "evalPlugin": [
+      "e",
+      "t",
+      "i",
+      "n",
+      "s"
+    ],
+    "trySetOptions": [
+      "e",
+      "t",
+      "i",
+      "n"
+    ],
+    "validatePlugin": [
+      "e",
+      "t",
+      "i"
+    ],
+    "compareVersion": [
+      "e",
+      "t"
+    ],
+    "versionToString": [
+      "e"
+    ],
+    "printUsage": [
+      "e"
+    ]
+  },
+  "Ke": [
+    "e",
+    "t",
+    "i",
+    "n"
+  ],
+  "Je": [
+    "e",
+    "t"
+  ],
+  "Qe": [
+    "e"
+  ],
+  "Xe": [
+    "e",
+    "t"
+  ],
+  "Ye": [
+    "e"
+  ],
+  "et": [
+    "e"
+  ],
+  "tt": [
+    "e"
+  ],
+  "nt": [
+    "e",
+    "t",
+    "i"
+  ],
+  "rt": [
+    "e"
+  ],
+  "ot": [
+    "e"
+  ],
+  "lt": [
+    "e",
+    "t",
+    "i",
+    "n"
+  ],
+  "ct": [
+    "e",
+    "t"
+  ],
+  "pt": [],
+  "dt": [
+    "e",
+    "t"
+  ],
+  "mt": [
+    "e",
+    "t"
+  ],
+  "vt": [
+    "e"
+  ],
+  "bt": [
+    "e"
+  ],
+  "wt": [
+    "e",
+    "t"
+  ],
+  "xt": {
+    "constructor": [
+      "e"
+    ],
+    "addPlugins": [
+      "e"
+    ],
+    "addPlugin": [
+      "e",
+      "t",
+      "i"
+    ],
+    "get": [
+      "e"
+    ],
+    "addVisitor": [
+      "e"
+    ],
+    "addPreProcessor": [
+      "e",
+      "t"
+    ],
+    "addPostProcessor": [
+      "e",
+      "t"
+    ],
+    "addFileManager": [
+      "e"
+    ],
+    "getPreProcessors": [],
+    "getPostProcessors": [],
+    "getVisitors": [],
+    "visitor": [],
+    "getFileManagers": []
+  },
+  "It": [
+    "e",
+    "t"
+  ],
+  "Ct": [
+    "e"
+  ],
+  "kt": [
+    "e",
+    "t",
+    "param"
+  ],
+  "Et": [],
+  "Rt": [
+    "e",
+    "t"
+  ],
+  "Mt": [
+    "e"
+  ],
+  "Pt": [
+    "t",
+    "n",
+    "s"
+  ],
+  "Bt": [
+    "e"
+  ],
+  "number": [
+    "n"
+  ],
+  "removeErrorConsole": [],
+  "SourceMapGeneratorFallback": {
+    "addMapping": [],
+    "setSourceContent": [],
+    "toJSON": []
+  },
+  "returnData": [
+    "data"
+  ],
+  "getFileData": [
+    "fulfill",
+    "reject"
+  ],
+  "tryWithExtension": [],
+  "UrlFileManager": []
+}
