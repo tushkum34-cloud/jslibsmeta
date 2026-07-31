@@ -1,0 +1,295 @@
+{
+  "Api": {
+    "window": [],
+    "performance": [],
+    "PerformanceObserver": [],
+    "windowLocation": [],
+    "onFirstInputDelay": [],
+    "onLCP": [],
+    "onINP": [],
+    "onCLS": [],
+    "localStorage": [],
+    "document": [],
+    "navigator": [],
+    "constructor": [
+      "window"
+    ],
+    "getUrl": [],
+    "mark": [
+      "name"
+    ],
+    "measure": [
+      "measureName",
+      "mark1",
+      "mark2"
+    ],
+    "getEntriesByType": [
+      "type"
+    ],
+    "getEntriesByName": [
+      "name"
+    ],
+    "getTimeOrigin": [],
+    "requiredApisAvailable": [],
+    "setupObserver": [
+      "entryType",
+      "callback"
+    ],
+    "getInstance": []
+  },
+  "setupApi": [
+    "window"
+  ],
+  "getIidPromise": [
+    "installationsService"
+  ],
+  "getIid": [],
+  "getAuthTokenPromise": [
+    "installationsService"
+  ],
+  "mergeStrings": [
+    "part1",
+    "part2"
+  ],
+  "SettingsService": {
+    "instrumentationEnabled": [],
+    "dataCollectionEnabled": [],
+    "loggingEnabled": [],
+    "tracesSamplingRate": [],
+    "networkRequestsSamplingRate": [],
+    "logEndPointUrl": [],
+    "flTransportEndpointUrl": [],
+    "transportKey": [],
+    "logSource": [],
+    "logTraceAfterSampling": [],
+    "logNetworkAfterSampling": [],
+    "configTimeToLive": [],
+    "logMaxFlushSize": [],
+    "getFlTransportFullUrl": [],
+    "getInstance": []
+  },
+  "getServiceWorkerStatus": [],
+  "getVisibilityState": [],
+  "getEffectiveConnectionType": [],
+  "isValidCustomAttributeName": [
+    "name"
+  ],
+  "isValidCustomAttributeValue": [
+    "value"
+  ],
+  "getAppId": [
+    "firebaseApp"
+  ],
+  "getProjectId": [
+    "firebaseApp"
+  ],
+  "getApiKey": [
+    "firebaseApp"
+  ],
+  "getConfig": [
+    "performanceController",
+    "iid"
+  ],
+  "getStoredConfig": [],
+  "storeConfig": [
+    "config"
+  ],
+  "getRemoteConfig": [
+    "performanceController",
+    "iid"
+  ],
+  "processConfig": [
+    "config"
+  ],
+  "configValid": [
+    "expiry"
+  ],
+  "shouldLogAfterSampling": [
+    "samplingRate"
+  ],
+  "getInitializationPromise": [
+    "performanceController"
+  ],
+  "isPerfInitialized": [],
+  "initializePerf": [
+    "performanceController"
+  ],
+  "getDocumentReadyComplete": [],
+  "handler": [],
+  "changeInitializationStatus": [],
+  "setupTransportService": [],
+  "processQueue": [
+    "timeOffset"
+  ],
+  "dispatchQueueEvents": [],
+  "buildPayload": [
+    "events"
+  ],
+  "postToFlEndpoint": [
+    "body"
+  ],
+  "addToQueue": [
+    "evt"
+  ],
+  "transportHandler": [
+    "serializer"
+  ],
+  "flushQueuedEvents": [],
+  "sendLog": [
+    "resource",
+    "resourceType"
+  ],
+  "logTrace": [
+    "trace"
+  ],
+  "flushLogs": [],
+  "sendTraceLog": [
+    "trace"
+  ],
+  "logNetworkRequest": [
+    "networkRequest"
+  ],
+  "serializer": [
+    "resource",
+    "resourceType"
+  ],
+  "serializeNetworkRequest": [
+    "networkRequest"
+  ],
+  "serializeTrace": [
+    "trace"
+  ],
+  "getApplicationInfo": [
+    "firebaseApp"
+  ],
+  "createNetworkRequestEntry": [
+    "performanceController",
+    "entry"
+  ],
+  "isValidMetricName": [
+    "name",
+    "traceName"
+  ],
+  "convertMetricValueToInteger": [
+    "providedValue"
+  ],
+  "Trace": {
+    "performanceController": [],
+    "name": [],
+    "isAuto": [],
+    "state": [],
+    "startTimeUs": [],
+    "durationUs": [],
+    "customAttributes": [],
+    "counters": [],
+    "api": [],
+    "randomId": [],
+    "traceStartMark": [],
+    "traceStopMark": [],
+    "traceMeasure": [],
+    "constructor": [
+      "performanceController",
+      "name",
+      "isAuto",
+      "traceMeasureName"
+    ],
+    "start": [],
+    "stop": [],
+    "record": [
+      "startTime",
+      "duration",
+      "options"
+    ],
+    "incrementMetric": [
+      "counter",
+      "numAsInteger"
+    ],
+    "putMetric": [
+      "counter",
+      "numAsInteger"
+    ],
+    "getMetric": [
+      "counter"
+    ],
+    "putAttribute": [
+      "attr",
+      "value"
+    ],
+    "getAttribute": [
+      "attr"
+    ],
+    "removeAttribute": [
+      "attr"
+    ],
+    "getAttributes": [],
+    "setStartTime": [],
+    "setDuration": [],
+    "calculateTraceMetrics": [],
+    "createOobTrace": [
+      "performanceController",
+      "navigationTimings",
+      "paintTimings",
+      "webVitalMetrics",
+      "firstInputDelay"
+    ],
+    "addWebVitalMetric": [
+      "trace",
+      "metricKey",
+      "attributeKey",
+      "metric"
+    ],
+    "createUserTimingTrace": [
+      "performanceController",
+      "measureName"
+    ]
+  },
+  "setupOobResources": [
+    "performanceController"
+  ],
+  "setupNetworkRequests": [
+    "performanceController"
+  ],
+  "setupOobTraces": [
+    "performanceController"
+  ],
+  "setupUserTimingTraces": [
+    "performanceController"
+  ],
+  "createUserTimingTrace": [
+    "performanceController",
+    "measure"
+  ],
+  "sendOobTrace": [
+    "performanceController"
+  ],
+  "PerformanceController": {
+    "app": [],
+    "installations": [],
+    "initialized": [],
+    "constructor": [
+      "app",
+      "installations"
+    ],
+    "_init": [
+      "settings"
+    ],
+    "instrumentationEnabled": [],
+    "dataCollectionEnabled": []
+  },
+  "getPerformance": [
+    "param"
+  ],
+  "initializePerformance": [
+    "app$1",
+    "settings"
+  ],
+  "trace": [
+    "performance",
+    "name"
+  ],
+  "factory": [
+    "container",
+    "param"
+  ],
+  "registerPerformance": []
+}
