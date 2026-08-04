@@ -1,0 +1,825 @@
+{
+  "validateAccountIdEndpointMode": [
+    "value"
+  ],
+  "resolveAccountIdEndpointModeConfig": [
+    "input"
+  ],
+  "_throw": [
+    "message"
+  ],
+  "emitWarningIfUnsupportedVersion": [
+    "version"
+  ],
+  "longPollMiddleware": [],
+  "getLongPollPlugin": [
+    "options"
+  ],
+  "setCredentialFeature": [
+    "credentials",
+    "feature",
+    "value"
+  ],
+  "setFeature": [
+    "context",
+    "feature",
+    "value"
+  ],
+  "setTokenFeature": [
+    "token",
+    "feature",
+    "value"
+  ],
+  "resolveHostHeaderConfig": [
+    "input"
+  ],
+  "hostHeaderMiddleware": [
+    "options"
+  ],
+  "getHostHeaderPlugin": [
+    "options"
+  ],
+  "loggerMiddleware": [],
+  "getLoggerPlugin": [
+    "options"
+  ],
+  "recursionDetectionMiddleware": [],
+  "nonEmptyString": [
+    "str"
+  ],
+  "sanitizeTraceHeaders": [
+    "headers"
+  ],
+  "getRecursionDetectionPlugin": [
+    "options"
+  ],
+  "isValidUserAgentAppId": [
+    "appId"
+  ],
+  "resolveUserAgentConfig": [
+    "input"
+  ],
+  "partition": [
+    "value"
+  ],
+  "setPartitionInfo": [
+    "partitionsInfo",
+    "param"
+  ],
+  "useDefaultPartitionInfo": [],
+  "getUserAgentPrefix": [],
+  "checkFeatures": [
+    "context",
+    "config",
+    "args"
+  ],
+  "encodeFeatures": [
+    "features"
+  ],
+  "userAgentMiddleware": [
+    "options"
+  ],
+  "escapeUserAgent": [
+    "userAgentPair"
+  ],
+  "getUserAgentPlugin": [
+    "config"
+  ],
+  "getRuntimeUserAgentPair": [],
+  "isCrtAvailable": [],
+  "createDefaultUserAgentProvider": [
+    "param"
+  ],
+  "createUserAgentStringParsingProvider": [
+    "param"
+  ],
+  "isVirtualHostableS3Bucket": [
+    "value",
+    "param"
+  ],
+  "parseArn": [
+    "value"
+  ],
+  "resolveDefaultAwsRegionalEndpointsConfig": [
+    "input"
+  ],
+  "toEndpointV1": [
+    "endpoint"
+  ],
+  "stsRegionDefaultResolver": [],
+  "getAwsRegionExtensionConfiguration": [
+    "runtimeConfig"
+  ],
+  "resolveAwsRegionExtensionConfiguration": [
+    "awsRegionExtensionConfiguration"
+  ],
+  "getDateHeader": [
+    "response"
+  ],
+  "getAgeHeader": [
+    "response"
+  ],
+  "getSkewCorrectedDate": [
+    "systemClockOffset"
+  ],
+  "getUpdatedSystemClockOffset": [
+    "clockTime",
+    "currentSystemClockOffset",
+    "timeRequestSent",
+    "ageHeader"
+  ],
+  "throwSigningPropertyError": [
+    "name",
+    "property"
+  ],
+  "validateSigningProperties": [
+    "signingProperties"
+  ],
+  "AwsSdkSigV4Signer": {
+    "sign": [
+      "httpRequest",
+      "identity",
+      "signingProperties"
+    ],
+    "errorHandler": [
+      "signingProperties"
+    ],
+    "successHandler": [
+      "httpResponse",
+      "signingProperties"
+    ]
+  },
+  "AwsSdkSigV4ASigner": {
+    "sign": [
+      "httpRequest",
+      "identity",
+      "signingProperties"
+    ]
+  },
+  "getArrayForCommaSeparatedString": [
+    "str"
+  ],
+  "getBearerTokenEnvKey": [
+    "signingName"
+  ],
+  "resolveAwsSdkSigV4AConfig": [
+    "config"
+  ],
+  "bindResolveAwsSdkSigV4Config": [
+    "defaultDisableClockSkewCorrection"
+  ],
+  "normalizeCredentialProvider": [
+    "config",
+    "param"
+  ],
+  "bindCallerConfig": [
+    "config",
+    "credentialsProvider"
+  ],
+  "fn": [
+    "options"
+  ],
+  "ProtocolLib": {
+    "queryCompat": [],
+    "errorRegistry": [],
+    "constructor": [
+      "queryCompat"
+    ],
+    "resolveRestContentType": [
+      "defaultContentType",
+      "inputSchema"
+    ],
+    "getErrorSchemaOrThrowBaseException": [
+      "errorIdentifier",
+      "defaultNamespace",
+      "response",
+      "dataObject",
+      "metadata",
+      "getErrorSchema"
+    ],
+    "compose": [
+      "composite",
+      "errorIdentifier",
+      "defaultNamespace"
+    ],
+    "decorateServiceException": [
+      "exception",
+      "additions"
+    ],
+    "setQueryCompatError": [
+      "output",
+      "response"
+    ],
+    "queryCompatOutput": [
+      "queryCompatErrorData",
+      "errorData"
+    ],
+    "findQueryCompatibleError": [
+      "registry",
+      "errorName"
+    ]
+  },
+  "AwsSmithyRpcV2CborProtocol": {
+    "awsQueryCompatible": [],
+    "mixin": [],
+    "constructor": [
+      "param"
+    ],
+    "serializeRequest": [
+      "operationSchema",
+      "input",
+      "context"
+    ],
+    "handleError": [
+      "operationSchema",
+      "context",
+      "response",
+      "dataObject",
+      "metadata"
+    ]
+  },
+  "SerdeContextConfig": {
+    "serdeContext": [],
+    "setSerdeContext": [
+      "serdeContext"
+    ]
+  },
+  "UnionSerde": {
+    "from": [],
+    "to": [],
+    "keys": [],
+    "constructor": [
+      "from",
+      "to"
+    ],
+    "mark": [
+      "key"
+    ],
+    "hasUnknown": [],
+    "writeUnknown": []
+  },
+  "detectBufferParsing": [],
+  "jsonReviver": [
+    "key",
+    "value",
+    "context"
+  ],
+  "isFractionalBigNumeric": [
+    "s"
+  ],
+  "isRepresentable": [
+    "numericString",
+    "value"
+  ],
+  "expandToDecimal": [
+    "s"
+  ],
+  "expandExponentToBigInt": [
+    "s"
+  ],
+  "needsReviver": [
+    "schema"
+  ],
+  "_check": [
+    "ns",
+    "seen"
+  ],
+  "collectBodyString": [
+    "streamBody",
+    "context"
+  ],
+  "parseJsonBody": [
+    "streamBody",
+    "context",
+    "schema"
+  ],
+  "parseJsonErrorBody": [
+    "errorBody",
+    "context"
+  ],
+  "findKey": [
+    "object",
+    "key"
+  ],
+  "sanitizeErrorCode": [
+    "rawValue"
+  ],
+  "loadRestJsonErrorCode": [
+    "output",
+    "data"
+  ],
+  "loadJsonRpcErrorCode": [
+    "output",
+    "data",
+    "param"
+  ],
+  "loadErrorCode": [
+    "param",
+    "data",
+    "order"
+  ],
+  "writeKey": [
+    "obj"
+  ],
+  "JsonShapeDeserializer2": {
+    "settings": [],
+    "constructor": [
+      "settings"
+    ],
+    "read": [
+      "schema",
+      "data"
+    ],
+    "readObject": [
+      "schema",
+      "data"
+    ],
+    "_read": [
+      "schema",
+      "value"
+    ],
+    "_readStruct": [],
+    "needsTransform": []
+  },
+  "JsonBytesStringAdapter": {
+    "string": [],
+    "allocUnsafe": [
+      "bytes"
+    ],
+    "toString": [],
+    "valueOf": [],
+    "includes": [
+      "searchString",
+      "position"
+    ],
+    "indexOf": [
+      "searchString",
+      "position"
+    ],
+    "lastIndexOf": [
+      "searchString",
+      "position"
+    ],
+    "startsWith": [
+      "searchString",
+      "position"
+    ],
+    "endsWith": [
+      "searchString",
+      "endPosition"
+    ],
+    "match": [
+      "regexp"
+    ],
+    "replace": [
+      "searchValue",
+      "replaceValue"
+    ],
+    "search": [
+      "regexp"
+    ],
+    "split": [
+      "separator",
+      "limit"
+    ],
+    "substring": [
+      "start",
+      "end"
+    ],
+    "trim": [],
+    "trimStart": [],
+    "trimEnd": [],
+    "charAt": [
+      "pos"
+    ],
+    "charCodeAt": [
+      "index"
+    ],
+    "padStart": [
+      "maxLength",
+      "fillString"
+    ],
+    "padEnd": [
+      "maxLength",
+      "fillString"
+    ],
+    "repeat": [
+      "count"
+    ],
+    "toUpperCase": [],
+    "toLowerCase": [],
+    "s": []
+  },
+  "alloc": [
+    "size"
+  ],
+  "JsonShapeSerializer2": {
+    "settings": [],
+    "json": [],
+    "i": [],
+    "rootSchema": [],
+    "rawValue": [],
+    "passthrough": [],
+    "constructor": [
+      "settings"
+    ],
+    "write": [
+      "schema",
+      "value"
+    ],
+    "writeDiscriminatedDocument": [
+      "schema",
+      "value"
+    ],
+    "flush": [],
+    "ensure": [
+      "byteCount"
+    ],
+    "writeAscii": [
+      "s"
+    ],
+    "writeAsciiQuoted": [
+      "s"
+    ],
+    "writeJsonString": [
+      "s"
+    ],
+    "writeUnicodeEscape": [
+      "code"
+    ],
+    "B64": [],
+    "writeBase64": [
+      "data"
+    ],
+    "writeValue": [
+      "schema",
+      "value",
+      "container"
+    ],
+    "writeStruct": [
+      "ns",
+      "value"
+    ],
+    "writeList": [
+      "ns",
+      "value",
+      "isDocument"
+    ],
+    "writeMap": [
+      "ns",
+      "value",
+      "isDocument"
+    ],
+    "writeTimestamp": [
+      "ns",
+      "value"
+    ]
+  },
+  "JsonCodec2": {
+    "settings": [],
+    "constructor": [
+      "settings"
+    ],
+    "createSerializer": [],
+    "createDeserializer": []
+  },
+  "AwsJsonRpcProtocol": {
+    "serializer": [],
+    "deserializer": [],
+    "serviceTarget": [],
+    "codec": [],
+    "mixin": [],
+    "awsQueryCompatible": [],
+    "constructor": [
+      "param"
+    ],
+    "serializeRequest": [
+      "operationSchema",
+      "input",
+      "context"
+    ],
+    "getPayloadCodec": [],
+    "getJsonRpcVersion": [],
+    "handleError": [
+      "operationSchema",
+      "context",
+      "response",
+      "dataObject",
+      "metadata"
+    ]
+  },
+  "AwsJson1_0Protocol": {
+    "constructor": [
+      "param"
+    ],
+    "getShapeId": [],
+    "getJsonRpcVersion": [],
+    "getDefaultContentType": []
+  },
+  "AwsJson1_1Protocol": {
+    "constructor": [
+      "param"
+    ],
+    "getShapeId": [],
+    "getJsonRpcVersion": [],
+    "getDefaultContentType": []
+  },
+  "AwsRestJsonProtocol": {
+    "serializer": [],
+    "deserializer": [],
+    "codec": [],
+    "mixin": [],
+    "constructor": [
+      "param"
+    ],
+    "getShapeId": [],
+    "getPayloadCodec": [],
+    "setSerdeContext": [
+      "serdeContext"
+    ],
+    "serializeRequest": [
+      "operationSchema",
+      "input",
+      "context"
+    ],
+    "deserializeResponse": [
+      "operationSchema",
+      "context",
+      "response"
+    ],
+    "handleError": [
+      "operationSchema",
+      "context",
+      "response",
+      "dataObject",
+      "metadata"
+    ],
+    "getDefaultContentType": []
+  },
+  "JsonShapeDeserializer": {
+    "settings": [],
+    "constructor": [
+      "settings"
+    ],
+    "read": [
+      "schema",
+      "data"
+    ],
+    "readObject": [
+      "schema",
+      "data"
+    ],
+    "_read": [
+      "schema",
+      "value"
+    ]
+  },
+  "JsonReplacer": {
+    "values": [],
+    "counter": [],
+    "stage": [],
+    "createReplacer": [],
+    "replaceInJson": [
+      "json"
+    ]
+  },
+  "JsonShapeSerializer": {
+    "settings": [],
+    "buffer": [],
+    "useReplacer": [],
+    "rootSchema": [],
+    "constructor": [
+      "settings"
+    ],
+    "write": [
+      "schema",
+      "value"
+    ],
+    "flush": [],
+    "writeDiscriminatedDocument": [
+      "schema",
+      "value"
+    ],
+    "_write": [
+      "schema",
+      "value",
+      "container"
+    ]
+  },
+  "JsonCodec": {
+    "settings": [],
+    "constructor": [
+      "settings"
+    ],
+    "createSerializer": [],
+    "createDeserializer": []
+  },
+  "XmlShapeDeserializer": {
+    "settings": [],
+    "stringDeserializer": [],
+    "constructor": [
+      "settings"
+    ],
+    "setSerdeContext": [
+      "serdeContext"
+    ],
+    "read": [
+      "schema",
+      "bytes",
+      "key"
+    ],
+    "readSchema": [
+      "_schema",
+      "value"
+    ],
+    "parseXml": [
+      "xml"
+    ]
+  },
+  "QueryShapeSerializer": {
+    "settings": [],
+    "buffer": [],
+    "constructor": [
+      "settings"
+    ],
+    "write": [
+      "schema",
+      "value",
+      "prefix"
+    ],
+    "flush": [],
+    "getKey": [
+      "memberName",
+      "xmlName",
+      "ec2QueryName",
+      "keySource"
+    ],
+    "writeKey": [
+      "key"
+    ],
+    "writeValue": [
+      "value"
+    ]
+  },
+  "AwsQueryProtocol": {
+    "options": [],
+    "serializer": [],
+    "deserializer": [],
+    "mixin": [],
+    "constructor": [
+      "options"
+    ],
+    "getShapeId": [],
+    "setSerdeContext": [
+      "serdeContext"
+    ],
+    "getPayloadCodec": [],
+    "serializeRequest": [
+      "operationSchema",
+      "input",
+      "context"
+    ],
+    "deserializeResponse": [
+      "operationSchema",
+      "context",
+      "response"
+    ],
+    "useNestedResult": [],
+    "handleError": [
+      "operationSchema",
+      "context",
+      "response",
+      "dataObject",
+      "metadata"
+    ],
+    "loadQueryErrorCode": [
+      "output",
+      "data"
+    ],
+    "loadQueryError": [
+      "data"
+    ],
+    "loadQueryErrorMessage": [
+      "data"
+    ],
+    "getDefaultContentType": []
+  },
+  "AwsEc2QueryProtocol": {
+    "options": [],
+    "constructor": [
+      "options"
+    ],
+    "getShapeId": [],
+    "useNestedResult": []
+  },
+  "parseXmlBody": [
+    "streamBody",
+    "context"
+  ],
+  "parseXmlErrorBody": [
+    "errorBody",
+    "context"
+  ],
+  "loadRestXmlErrorCode": [
+    "output",
+    "data"
+  ],
+  "XmlShapeSerializer": {
+    "settings": [],
+    "stringBuffer": [],
+    "byteBuffer": [],
+    "buffer": [],
+    "constructor": [
+      "settings"
+    ],
+    "write": [
+      "schema",
+      "value"
+    ],
+    "flush": [],
+    "writeStruct": [],
+    "writeList": [],
+    "writeMap": [],
+    "writeSimple": [],
+    "writeSimpleInto": [],
+    "getXmlnsAttribute": []
+  },
+  "writeItem": [
+    "container",
+    "value"
+  ],
+  "addKeyValue": [
+    "entry",
+    "key",
+    "val"
+  ],
+  "XmlCodec": {
+    "settings": [],
+    "constructor": [
+      "settings"
+    ],
+    "createSerializer": [],
+    "createDeserializer": []
+  },
+  "AwsRestXmlProtocol": {
+    "codec": [],
+    "serializer": [],
+    "deserializer": [],
+    "mixin": [],
+    "constructor": [
+      "options"
+    ],
+    "getPayloadCodec": [],
+    "getShapeId": [],
+    "serializeRequest": [
+      "operationSchema",
+      "input",
+      "context"
+    ],
+    "deserializeResponse": [
+      "operationSchema",
+      "context",
+      "response"
+    ],
+    "handleError": [
+      "operationSchema",
+      "context",
+      "response",
+      "dataObject",
+      "metadata"
+    ],
+    "getDefaultContentType": [],
+    "hasUnstructuredPayloadBinding": []
+  },
+  "awsExpectUnion": [
+    "value"
+  ],
+  "_toStr": [
+    "val"
+  ],
+  "_toBool": [
+    "val"
+  ],
+  "_toNum": [
+    "val"
+  ],
+  "validate": [
+    "str"
+  ],
+  "parse": [
+    "arn"
+  ],
+  "build": [
+    "arnObject"
+  ],
+  "formatUrl": [
+    "request"
+  ],
+  "isClockSkewed": [
+    "clockTime",
+    "systemClockOffset"
+  ],
+  "simpleFormatXml": [
+    "xml"
+  ]
+}

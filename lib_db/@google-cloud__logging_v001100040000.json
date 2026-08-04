@@ -1,0 +1,366 @@
+{
+  "Entry": {
+    "constructor": [
+      "metadata",
+      "data"
+    ],
+    "toJSON": [
+      "param",
+      "param"
+    ],
+    "toStructuredJSON": [
+      "param",
+      "param"
+    ],
+    "extractTraceContext": [
+      "projectId"
+    ],
+    "fromApiResponse_": [
+      "entry"
+    ],
+    "isObject": [
+      "value"
+    ]
+  },
+  "Logging": {
+    "constructor": [
+      "options",
+      "gaxInstance"
+    ],
+    "createSink": [
+      "name",
+      "config"
+    ],
+    "entry": [
+      "resource",
+      "data"
+    ],
+    "getEntries": [
+      "opts"
+    ],
+    "getEntriesStream": [
+      "param"
+    ],
+    "tailEntries": [
+      "param"
+    ],
+    "getLogs": [
+      "opts"
+    ],
+    "getLogsStream": [
+      "param"
+    ],
+    "getSinks": [
+      "opts"
+    ],
+    "getSinksStream": [
+      "options"
+    ],
+    "log": [
+      "name",
+      "options"
+    ],
+    "logSync": [
+      "name",
+      "transport",
+      "options"
+    ],
+    "sink": [
+      "name"
+    ],
+    "request": [
+      "config",
+      "callback"
+    ],
+    "setAclForBucket_": [
+      "config"
+    ],
+    "setAclForDataset_": [
+      "config"
+    ],
+    "setAclForTopic_": [
+      "config"
+    ],
+    "setProjectId": [
+      "reqOpts"
+    ],
+    "setDetectedResource": []
+  },
+  "prepareGaxRequest": [
+    "callback"
+  ],
+  "makeRequestCallback": [],
+  "makeRequestStream": [],
+  "LogSync": {
+    "constructor": [
+      "logging",
+      "name",
+      "transport",
+      "options"
+    ],
+    "alert": [
+      "entry",
+      "options"
+    ],
+    "critical": [
+      "entry",
+      "options"
+    ],
+    "debug": [
+      "entry",
+      "options"
+    ],
+    "emergency": [
+      "entry",
+      "options"
+    ],
+    "entry": [
+      "metadataOrData",
+      "data"
+    ],
+    "error": [
+      "entry",
+      "options"
+    ],
+    "info": [
+      "entry",
+      "options"
+    ],
+    "notice": [
+      "entry",
+      "options"
+    ],
+    "warning": [
+      "entry",
+      "options"
+    ],
+    "write": [
+      "entry",
+      "opts"
+    ]
+  },
+  "Log": {
+    "constructor": [
+      "logging",
+      "name",
+      "options"
+    ],
+    "alert": [
+      "entry",
+      "options"
+    ],
+    "critical": [
+      "entry",
+      "options"
+    ],
+    "debug": [
+      "entry",
+      "options"
+    ],
+    "delete": [
+      "gaxOptions"
+    ],
+    "emergency": [
+      "entry",
+      "options"
+    ],
+    "entry": [
+      "metadataOrData",
+      "data"
+    ],
+    "error": [
+      "entry",
+      "options"
+    ],
+    "getEntries": [
+      "opts"
+    ],
+    "getEntriesStream": [
+      "options"
+    ],
+    "tailEntries": [
+      "options"
+    ],
+    "info": [
+      "entry",
+      "options"
+    ],
+    "notice": [
+      "entry",
+      "options"
+    ],
+    "warning": [
+      "entry",
+      "options"
+    ],
+    "write": [
+      "entry",
+      "opts"
+    ],
+    "getOrSetResource": [
+      "options"
+    ],
+    "decorateEntries": [
+      "entries"
+    ],
+    "truncateEntries": [
+      "entries"
+    ],
+    "assignSeverityToEntries_": [
+      "entries",
+      "severity"
+    ],
+    "formatName_": [
+      "projectId",
+      "name"
+    ]
+  },
+  "makeMiddleware": [
+    "projectId",
+    "makeChildLogger",
+    "emitRequestLog"
+  ],
+  "Sink": {
+    "constructor": [
+      "logging",
+      "name"
+    ],
+    "create": [
+      "config"
+    ],
+    "delete": [
+      "gaxOptions"
+    ],
+    "getMetadata": [
+      "gaxOptions"
+    ],
+    "setFilter": [
+      "filter"
+    ],
+    "setMetadata": [
+      "metadata"
+    ]
+  },
+  "ObjectToStructConverter": {
+    "constructor": [
+      "options"
+    ],
+    "convert": [
+      "obj"
+    ],
+    "encodeValue_": [
+      "value"
+    ]
+  },
+  "objToStruct": [
+    "obj",
+    "options"
+  ],
+  "structToObj": [
+    "struct"
+  ],
+  "decodeValue": [
+    "value"
+  ],
+  "zuluToDateObj": [
+    "zuluTime"
+  ],
+  "toNanosAndSecondsObj": [
+    "date"
+  ],
+  "makeHeaderWrapper": [
+    "req"
+  ],
+  "getOrInjectContext": [
+    "req",
+    "projectId",
+    "inject"
+  ],
+  "toCloudTraceContext": [
+    "anyContext",
+    "projectId"
+  ],
+  "makeCloudTraceHeader": [],
+  "getContextFromOtelContext": [
+    "projectId"
+  ],
+  "getContextFromXCloudTrace": [
+    "headerWrapper",
+    "projectId"
+  ],
+  "getContextFromTraceParent": [
+    "headerWrapper",
+    "projectId"
+  ],
+  "parseXCloudTraceHeader": [
+    "headerWrapper"
+  ],
+  "parseTraceParentHeader": [
+    "headerWrapper"
+  ],
+  "EventId": {
+    "constructor": [],
+    "new": []
+  },
+  "encode": [
+    "data"
+  ],
+  "makeHttpRequestData": [
+    "req",
+    "res",
+    "latencyMilliseconds"
+  ],
+  "isRawHttpRequest": [
+    "req"
+  ],
+  "populateInstrumentationInfo": [
+    "entry"
+  ],
+  "createDiagnosticEntry": [
+    "libraryName",
+    "libraryVersion"
+  ],
+  "validateAndUpdateInstrumentation": [
+    "infoList"
+  ],
+  "truncateValue": [
+    "value",
+    "maxLen"
+  ],
+  "getNodejsLibraryVersion": [],
+  "isValidInfo": [
+    "info"
+  ],
+  "setInstrumentationStatus": [
+    "value"
+  ],
+  "snakecaseKeys": [
+    "labels"
+  ],
+  "assignSeverityToEntries": [
+    "entries",
+    "severity"
+  ],
+  "formatLogName": [
+    "projectId",
+    "name"
+  ],
+  "zoneFromQualifiedZone": [
+    "qualified"
+  ],
+  "regionFromQualifiedZone": [
+    "qualified"
+  ],
+  "getCloudFunctionDescriptor": [],
+  "getCloudRunDescriptor": [],
+  "getGAEDescriptor": [],
+  "getGCEDescriptor": [],
+  "getGKEDescriptor": [],
+  "getGlobalDescriptor": [],
+  "getDefaultResource": [
+    "auth"
+  ],
+  "detectServiceContext": [
+    "auth"
+  ]
+}
