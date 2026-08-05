@@ -1,0 +1,101 @@
+{
+  "CloudServices": {
+    "tokenUrl": [],
+    "uploadUrl": [],
+    "webSocketUrl": [],
+    "bundleVersion": [],
+    "autoRefresh": [],
+    "token": [],
+    "_tokens": [],
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "requires": [],
+    "init": [],
+    "registerTokenUrl": [
+      "tokenUrl"
+    ],
+    "getTokenFor": [
+      "tokenUrl"
+    ],
+    "destroy": []
+  },
+  "CloudServicesCore": {
+    "pluginName": [],
+    "isOfficialPlugin": [],
+    "createToken": [
+      "tokenUrlOrRefreshToken",
+      "options"
+    ],
+    "createUploadGateway": [
+      "token",
+      "apiAddress"
+    ]
+  },
+  "defaultRefreshToken": [
+    "tokenUrl"
+  ],
+  "onError": [
+    "message"
+  ],
+  "_base64ToBlob": [
+    "base64",
+    "param"
+  ],
+  "_isBase64": [
+    "string"
+  ],
+  "Token": {
+    "value": [],
+    "_refresh": [],
+    "_options": [],
+    "_tokenRefreshTimeout": [],
+    "_isDestroyed": [],
+    "constructor": [
+      "tokenUrlOrRefreshToken",
+      "options"
+    ],
+    "init": [],
+    "refreshToken": [],
+    "destroy": [],
+    "_validateTokenValue": [],
+    "_registerRefreshTokenTimeout": [],
+    "_getTokenRefreshTimeoutTime": [],
+    "create": [
+      "tokenUrlOrRefreshToken",
+      "options"
+    ]
+  },
+  "FileUploader": {
+    "file": [],
+    "xhr": [],
+    "_token": [],
+    "_apiAddress": [],
+    "constructor": [
+      "fileOrData",
+      "token",
+      "apiAddress"
+    ],
+    "onProgress": [
+      "callback"
+    ],
+    "onError": [
+      "callback"
+    ],
+    "abort": [],
+    "send": [],
+    "_prepareRequest": [],
+    "_attachXHRListeners": [],
+    "_sendRequest": []
+  },
+  "UploadGateway": {
+    "_token": [],
+    "_apiAddress": [],
+    "constructor": [
+      "token",
+      "apiAddress"
+    ],
+    "upload": [
+      "fileOrData"
+    ]
+  }
+}
