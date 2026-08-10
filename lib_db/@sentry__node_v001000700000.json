@@ -1,0 +1,1231 @@
+{
+  "buildLaunchDarklyFlagUsedHandlerShim": [],
+  "OpenFeatureIntegrationHookShim": {
+    "constructor": [],
+    "after": [],
+    "error": []
+  },
+  "getSpanAttributes": [
+    "functionName",
+    "args",
+    "config"
+  ],
+  "patchedFunctionWithOriginalProperties": [
+    "patchedFunction",
+    "original"
+  ],
+  "_patchMethod": [
+    "obj",
+    "name",
+    "wrapper"
+  ],
+  "_patchSyncFunction": [
+    "functionName",
+    "original",
+    "config"
+  ],
+  "patchedFunction": [
+    "param"
+  ],
+  "_patchCallbackFunction": [
+    "functionName",
+    "original",
+    "config"
+  ],
+  "_patchExistsCallbackFunction": [
+    "original",
+    "config"
+  ],
+  "promisified": [
+    "path"
+  ],
+  "_patchPromiseFunction": [
+    "functionName",
+    "original",
+    "config"
+  ],
+  "enableFsInstrumentation": [
+    "param"
+  ],
+  "recordError": [
+    "span",
+    "error",
+    "config"
+  ],
+  "splitTwoLevels": [
+    "functionName"
+  ],
+  "indexFs": [
+    "fs",
+    "member"
+  ],
+  "_nativeNodeFetchIntegration": [
+    "param"
+  ],
+  "_shouldInstrumentSpans": [
+    "options",
+    "param"
+  ],
+  "InstrumentationNodeModuleFile": {
+    "name": [],
+    "supportedVersions": [],
+    "patch": [],
+    "unpatch": [],
+    "constructor": [
+      "name",
+      "supportedVersions",
+      "patch",
+      "unpatch"
+    ]
+  },
+  "_amqplibIntegration": [],
+  "AmqplibInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "patchConnect": [],
+    "unpatchConnect": [],
+    "patchChannelModel": [],
+    "unpatchChannelModel": []
+  },
+  "endConsumerSpan": [
+    "message",
+    "isRejected",
+    "operation",
+    "requeue"
+  ],
+  "endAllSpansOnChannel": [
+    "channel",
+    "isRejected",
+    "operation",
+    "requeue"
+  ],
+  "checkConsumeTimeoutOnChannel": [
+    "channel"
+  ],
+  "getConnectPatch": [
+    "original"
+  ],
+  "getChannelEmitPatch": [
+    "original"
+  ],
+  "getAckAllPatch": [
+    "isRejected",
+    "endOperation"
+  ],
+  "getAckPatch": [
+    "isRejected",
+    "endOperation"
+  ],
+  "getConsumePatch": [
+    "original"
+  ],
+  "patchedOnMessage": [
+    "msg"
+  ],
+  "getConfirmedPublishPatch": [
+    "original"
+  ],
+  "patchedOnConfirm": [
+    "err",
+    "ok"
+  ],
+  "getPublishPatch": [
+    "original"
+  ],
+  "normalizeExchange": [
+    "exchangeName"
+  ],
+  "censorPassword": [
+    "url"
+  ],
+  "getPort": [
+    "port"
+  ],
+  "getProtocol": [
+    "protocolFromUrl"
+  ],
+  "getHostname": [
+    "hostnameFromUrl"
+  ],
+  "getConnectionAttributesFromServer": [
+    "conn"
+  ],
+  "getConnectionAttributesFromUrl": [
+    "url"
+  ],
+  "getHeaderAsString": [
+    "headers",
+    "key"
+  ],
+  "startPublishSpan": [
+    "exchange",
+    "routingKey",
+    "channel",
+    "options"
+  ],
+  "startConsumeSpan": [
+    "queue",
+    "msg",
+    "channel"
+  ],
+  "_anthropicAIIntegration": [
+    "param"
+  ],
+  "SentryAnthropicAiInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_patch": []
+  },
+  "WrappedAnthropic": [
+    "param"
+  ],
+  "_connectIntegration": [],
+  "connectErrorMiddleware": [
+    "err",
+    "req",
+    "res",
+    "next"
+  ],
+  "setupConnectErrorHandler": [
+    "app"
+  ],
+  "ConnectInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_patchApp": [],
+    "_patchConstructor": [],
+    "_patchNext": [
+      "next",
+      "span",
+      "finishSpan"
+    ],
+    "_startSpan": [
+      "routeName",
+      "middleWare"
+    ],
+    "_patchMiddleware": [
+      "routeName",
+      "middleWare"
+    ],
+    "_patchUse": [
+      "original"
+    ],
+    "_patchHandle": [
+      "original"
+    ],
+    "_patchOut": [
+      "out",
+      "completeStack"
+    ]
+  },
+  "patchedMiddleware": [],
+  "finishSpan": [],
+  "addNewStackLayer": [
+    "request"
+  ],
+  "replaceCurrentStackRoute": [
+    "request",
+    "newRoute"
+  ],
+  "generateRoute": [
+    "request"
+  ],
+  "_dataloaderIntegration": [],
+  "isModule": [
+    "module"
+  ],
+  "extractModuleExports": [
+    "module"
+  ],
+  "getSpanName": [
+    "operation",
+    "db",
+    "sql",
+    "bulkLoadTable"
+  ],
+  "getSpanOp": [
+    "operation"
+  ],
+  "getCacheKey": [
+    "keyArg"
+  ],
+  "DataloaderInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_wrapBatchLoadFn": [],
+    "_getPatchedConstructor": [],
+    "_patchLoad": [],
+    "_getPatchedLoad": [],
+    "_patchLoadMany": [],
+    "_getPatchedLoadMany": [],
+    "_patchPrime": [],
+    "_getPatchedPrime": [],
+    "_patchClear": [],
+    "_getPatchedClear": [],
+    "_patchClearAll": [],
+    "_getPatchedClearAll": []
+  },
+  "PatchedDataloader": [
+    "param"
+  ],
+  "setupExpressErrorHandler": [
+    "app",
+    "options"
+  ],
+  "ExpressInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": []
+  },
+  "_expressIntegration": [
+    "options"
+  ],
+  "getFastifyIntegration": [],
+  "_fastifyIntegration": [
+    "options"
+  ],
+  "setupFastifyErrorHandler": [
+    "fastify",
+    "options"
+  ],
+  "FastifyInstrumentationV3": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_hookOnRequest": [],
+    "_wrapHandler": [],
+    "_wrapAddHook": [],
+    "_patchConstructor": [],
+    "_patchSend": [],
+    "_hookPreHandler": []
+  },
+  "fastify": [
+    "param"
+  ],
+  "instrumentClient": [],
+  "addFastifyV3SpanAttributes": [
+    "span"
+  ],
+  "startSpan": [
+    "reply",
+    "tracer",
+    "spanName",
+    "param"
+  ],
+  "endSpan": [
+    "span",
+    "err"
+  ],
+  "safeExecuteInTheMiddleMaybePromise": [
+    "execute",
+    "onFinish",
+    "preventThrowingError"
+  ],
+  "isPromise": [
+    "value"
+  ],
+  "_firebaseIntegration": [],
+  "FirebaseInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": []
+  },
+  "patchFirestore": [
+    "firestoreSupportedVersions",
+    "wrap",
+    "unwrap"
+  ],
+  "wrapMethods": [
+    "moduleExports",
+    "wrap",
+    "unwrap"
+  ],
+  "unwrapMethods": [
+    "moduleExports",
+    "unwrap"
+  ],
+  "patchAddDoc": [],
+  "patchDeleteDoc": [],
+  "patchGetDocs": [],
+  "patchSetDoc": [],
+  "startFirestoreSpan": [
+    "spanName",
+    "reference",
+    "callback"
+  ],
+  "getPortAndAddress": [
+    "settings"
+  ],
+  "buildAttributes": [
+    "reference"
+  ],
+  "patchFunctions": [
+    "functionsSupportedVersions",
+    "wrap",
+    "unwrap"
+  ],
+  "patchV2Functions": [
+    "triggerType"
+  ],
+  "wrappedHandler": [
+    "param"
+  ],
+  "wrapCommonFunctions": [
+    "moduleExports",
+    "wrap",
+    "unwrap",
+    "triggerType"
+  ],
+  "unwrapCommonFunctions": [
+    "moduleExports",
+    "unwrap"
+  ],
+  "_genericPoolIntegration": [],
+  "GenericPoolInstrumentation": {
+    "_isDisabled": [],
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_acquirePatcher": [],
+    "_poolWrapper": [],
+    "_acquireWithCallbacksPatcher": []
+  },
+  "isDisabled": [],
+  "_googleGenAIIntegration": [
+    "param"
+  ],
+  "SentryGoogleGenAiInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_patch": []
+  },
+  "WrappedGoogleGenAI": [
+    "param"
+  ],
+  "_graphqlIntegration": [
+    "param"
+  ],
+  "getOptionsWithDefaults": [
+    "options"
+  ],
+  "GraphQLInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "setConfig": [
+      "config"
+    ],
+    "init": [],
+    "_addPatchingExecute": [],
+    "_addPatchingParser": [],
+    "_addPatchingValidate": [],
+    "_patchExecute": [],
+    "_handleExecutionResult": [],
+    "_updateSpanFromResult": [],
+    "_patchParse": [],
+    "_patchValidate": [],
+    "_parse": [],
+    "_validate": [],
+    "_createExecuteSpan": [],
+    "_wrapExecuteArgs": []
+  },
+  "getGraphqlOperationNamesFromAttribute": [
+    "attr"
+  ],
+  "addSpanSource": [
+    "span",
+    "loc",
+    "start",
+    "end"
+  ],
+  "createFieldIfNotExists": [
+    "contextValue",
+    "info",
+    "path"
+  ],
+  "createResolverSpan": [
+    "contextValue",
+    "info",
+    "path",
+    "parentSpan"
+  ],
+  "getOperation": [
+    "document",
+    "operationName"
+  ],
+  "addField": [
+    "contextValue",
+    "path",
+    "field"
+  ],
+  "getField": [
+    "contextValue",
+    "path"
+  ],
+  "getParentFieldSpan": [
+    "contextValue",
+    "path"
+  ],
+  "getRootSpan": [
+    "contextValue"
+  ],
+  "pathToArray": [
+    "path"
+  ],
+  "repeatBreak": [
+    "i"
+  ],
+  "repeatSpace": [
+    "i"
+  ],
+  "repeatChar": [
+    "char",
+    "to"
+  ],
+  "getSourceFromLocation": [
+    "loc",
+    "inputStart",
+    "inputEnd"
+  ],
+  "wrapFields": [
+    "type",
+    "getConfig"
+  ],
+  "unwrapType": [
+    "type"
+  ],
+  "isGraphQLUnionType": [
+    "type"
+  ],
+  "isGraphQLObjectType": [
+    "type"
+  ],
+  "handleResolveSpanError": [
+    "resolveSpan",
+    "err",
+    "shouldEndSpan"
+  ],
+  "handleResolveSpanSuccess": [
+    "resolveSpan",
+    "shouldEndSpan"
+  ],
+  "wrapFieldResolver": [
+    "getConfig",
+    "fieldResolver",
+    "param"
+  ],
+  "wrappedFieldResolver": [
+    "source",
+    "args",
+    "contextValue",
+    "info"
+  ],
+  "_hapiIntegration": [],
+  "isErrorEvent": [
+    "event"
+  ],
+  "sendErrorToSentry": [
+    "errorData"
+  ],
+  "setupHapiErrorHandler": [
+    "server"
+  ],
+  "HapiInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_getServerPatch": [],
+    "_getServerRegisterPatch": [],
+    "_getServerExtPatch": [],
+    "_getServerRoutePatch": [],
+    "_wrapRegisterHandler": [],
+    "_wrapExtMethods": [],
+    "_wrapRouteHandler": []
+  },
+  "newRegisterHandler": [
+    "server",
+    "options"
+  ],
+  "newHandler": [
+    "param"
+  ],
+  "wrapHandler": [
+    "oldHandler"
+  ],
+  "getPluginName": [
+    "plugin"
+  ],
+  "isLifecycleExtType": [
+    "variableToCheck"
+  ],
+  "isLifecycleExtEventObj": [
+    "variableToCheck"
+  ],
+  "isDirectExtInput": [
+    "variableToCheck"
+  ],
+  "isPatchableExtMethod": [
+    "variableToCheck"
+  ],
+  "getRouteMetadata": [
+    "route",
+    "pluginName"
+  ],
+  "getExtMetadata": [
+    "extPoint",
+    "pluginName",
+    "methodName"
+  ],
+  "getPluginFromInput": [
+    "pluginObj"
+  ],
+  "addHonoSpanAttributes": [
+    "span"
+  ],
+  "_honoIntegration": [],
+  "honoRequestHandler": [],
+  "defaultShouldHandleError": [
+    "context"
+  ],
+  "honoErrorHandler": [
+    "options"
+  ],
+  "setupHonoErrorHandler": [
+    "app",
+    "options"
+  ],
+  "HonoInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_patch": [],
+    "_patchHandler": [],
+    "_patchOnHandler": [],
+    "_patchMiddlewareHandler": [],
+    "_wrapHandler": [],
+    "_safeExecute": [],
+    "_determineHandlerType": [],
+    "_handleError": []
+  },
+  "WrappedHono": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "getAutoPerformanceIntegrations": [],
+  "getOpenTelemetryInstrumentationToPreload": [],
+  "_kafkaIntegration": [],
+  "KafkaJsInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_getConsumerPatch": [],
+    "_getProducerPatch": [],
+    "_getConsumerRunPatch": [],
+    "_getConsumerEachMessagePatch": [],
+    "_getConsumerEachBatchPatch": [],
+    "_getProducerTransactionPatch": [],
+    "_getSendBatchPatch": [],
+    "_getSendPatch": []
+  },
+  "unpatch": [
+    "ConnectionPrototype"
+  ],
+  "getLinksFromHeaders": [
+    "headers"
+  ],
+  "startConsumerSpan": [
+    "param"
+  ],
+  "startProducerSpan": [
+    "topic",
+    "message"
+  ],
+  "endSpansOnPromise": [
+    "spans",
+    "sendPromise"
+  ],
+  "_knexIntegration": [],
+  "KnexInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_getRunnerNodeModuleFileInstrumentation": [],
+    "_getClientNodeModuleFileInstrumentation": [],
+    "_createQueryWrapper": [],
+    "_storeContext": [],
+    "_ensureWrapped": []
+  },
+  "getFormatter": [
+    "runner"
+  ],
+  "mapSystem": [
+    "knexSystem"
+  ],
+  "getName": [
+    "db",
+    "operation",
+    "table"
+  ],
+  "limitLength": [
+    "str",
+    "maxLength"
+  ],
+  "extractDatabaseFromConnectionString": [
+    "connectionString"
+  ],
+  "extractHostFromConnectionString": [
+    "connectionString"
+  ],
+  "extractPortFromConnectionString": [
+    "connectionString"
+  ],
+  "extractTableName": [
+    "builder"
+  ],
+  "_koaIntegration": [
+    "param"
+  ],
+  "setupKoaErrorHandler": [
+    "app"
+  ],
+  "KoaInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_getKoaUsePatch": [],
+    "_patchRouterDispatch": [],
+    "_patchLayer": []
+  },
+  "getMiddlewareMetadata": [
+    "context",
+    "layer",
+    "isRouter",
+    "layerPath"
+  ],
+  "isLayerIgnored": [
+    "type",
+    "config"
+  ],
+  "_langChainIntegration": [
+    "param"
+  ],
+  "wrapRunnableMethod": [
+    "originalMethod",
+    "sentryHandler",
+    "_methodName"
+  ],
+  "SentryLangChainInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_patch": [],
+    "_patchRunnableMethods": [],
+    "_patchEmbeddingsMethods": []
+  },
+  "_langGraphIntegration": [
+    "param"
+  ],
+  "SentryLangGraphInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_patch": []
+  },
+  "_lruMemoizerIntegration": [],
+  "LruMemoizerInstrumentation": {
+    "constructor": [],
+    "init": []
+  },
+  "asyncMemoizer": [
+    "param"
+  ],
+  "_mongoIntegration": [],
+  "MongoDBInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_getV3ConnectionPatches": [],
+    "_getV4ConnectionPoolPatches": [],
+    "_getV4ConnectionPatches": []
+  },
+  "getV3PatchOperation": [
+    "operationName"
+  ],
+  "getV3PatchCommand": [],
+  "getV4PatchCommandCallback": [],
+  "getV4PatchCommandPromise": [],
+  "resultHandler": [],
+  "getV3PatchFind": [],
+  "getV3PatchCursor": [],
+  "getV4ConnectionPoolCheckOut": [],
+  "getV4SpanAttributes": [
+    "connectionCtx",
+    "ns",
+    "command",
+    "operation"
+  ],
+  "getV3SpanAttributes": [
+    "ns",
+    "topology",
+    "command",
+    "operation"
+  ],
+  "patchEnd": [
+    "span",
+    "resultHandler"
+  ],
+  "shouldSkipInstrumentation": [],
+  "_mongooseIntegration": [],
+  "getContextCaptureFunctions": [
+    "moduleVersion"
+  ],
+  "instrumentRemove": [
+    "moduleVersion"
+  ],
+  "needsDocumentMethodPatch": [
+    "moduleVersion"
+  ],
+  "MongooseInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "patch": [],
+    "unpatch": [],
+    "patchAggregateExec": [],
+    "patchQueryExec": [],
+    "patchOnModelMethods": [],
+    "_patchDocumentUpdateMethods": [],
+    "patchModelStatic": [],
+    "patchModelAggregate": [],
+    "patchAndCaptureSpanContext": [],
+    "_handleResponse": []
+  },
+  "setErrorStatus": [
+    "span",
+    "error"
+  ],
+  "handlePromiseResponse": [
+    "execResponse",
+    "span"
+  ],
+  "handleCallbackResponse": [
+    "callback",
+    "exec",
+    "originalThis",
+    "span",
+    "args"
+  ],
+  "_mysqlIntegration": [],
+  "MySQLInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_patchCreateConnection": [],
+    "_patchCreatePool": [],
+    "_patchCreatePoolCluster": [],
+    "_patchGetConnection": [],
+    "_getConnectionCallbackPatchFn": [],
+    "_patchQuery": [],
+    "_patchCallbackQuery": []
+  },
+  "getConfig": [
+    "config"
+  ],
+  "getJDBCString": [
+    "host",
+    "port",
+    "database"
+  ],
+  "getDbQueryText": [
+    "query"
+  ],
+  "_mysql2Integration": [],
+  "MySQL2Instrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_patchQuery": [],
+    "_patchCallbackQuery": []
+  },
+  "setFormatFunction": [
+    "moduleExports"
+  ],
+  "patch": [
+    "ConnectionPrototype"
+  ],
+  "getConnectionAttributes": [
+    "config"
+  ],
+  "getQueryText": [
+    "query",
+    "format",
+    "values"
+  ],
+  "hasValues": [
+    "obj"
+  ],
+  "once": [
+    "fn"
+  ],
+  "getConnectionPrototypeToInstrument": [
+    "connection"
+  ],
+  "_openAiIntegration": [
+    "param"
+  ],
+  "SentryOpenAiInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_patch": [],
+    "_patchClient": []
+  },
+  "WrappedOpenAI": [
+    "param"
+  ],
+  "_postgresIntegration": [
+    "options"
+  ],
+  "bindCallbackToSpan": [
+    "parentSpan",
+    "callback"
+  ],
+  "PgInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_patchPgClient": [],
+    "_unpatchPgClient": [],
+    "_getClientConnectPatch": [],
+    "_getClientQueryPatch": [],
+    "_getPoolConnectPatch": []
+  },
+  "handleConnectResult": [
+    "span",
+    "connectResult"
+  ],
+  "getQuerySpanName": [
+    "dbName",
+    "queryConfig"
+  ],
+  "parseNormalizedOperationName": [
+    "queryText"
+  ],
+  "parseAndMaskConnectionString": [
+    "connectionString"
+  ],
+  "getConnectionString": [
+    "params"
+  ],
+  "getSemanticAttributesFromConnection": [
+    "params"
+  ],
+  "getSemanticAttributesFromPoolConnection": [
+    "params"
+  ],
+  "handleConfigQuery": [
+    "queryConfig"
+  ],
+  "patchCallback": [
+    "span",
+    "cb"
+  ],
+  "patchCallbackPGPool": [
+    "span",
+    "cb"
+  ],
+  "patchClientConnectCallback": [
+    "span",
+    "cb"
+  ],
+  "getErrorMessage": [
+    "e"
+  ],
+  "isObjectWithTextString": [
+    "it"
+  ],
+  "PostgresJsInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_patchPostgres": [],
+    "_shouldCreateSpans": [],
+    "_setOperationName": [],
+    "_reconstructQuery": [],
+    "_sanitizeSqlQuery": [],
+    "_patchQueryPrototype": [],
+    "_unpatchQueryPrototype": []
+  },
+  "WrappedPostgres": [
+    "param"
+  ],
+  "_postgresJsIntegration": [
+    "options"
+  ],
+  "setRedisOptions": [
+    "options"
+  ],
+  "cacheResponseHook": [
+    "span",
+    "redisCommand",
+    "cmdArgs",
+    "response"
+  ],
+  "_redisIntegration": [
+    "param"
+  ],
+  "IORedisInstrumentation": {
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_patchSendCommand": [],
+    "_patchConnection": [],
+    "_callResponseHook": []
+  },
+  "runResponseHook": [
+    "responseHook",
+    "span",
+    "commandName",
+    "commandArgs",
+    "response"
+  ],
+  "removeCredentialsFromDBConnectionStringAttribute": [
+    "url"
+  ],
+  "getClientAttributes": [
+    "options"
+  ],
+  "RedisInstrumentation": {
+    "instrumentationV2_V3": [],
+    "instrumentationV4_V5": [],
+    "initialized": [],
+    "constructor": [
+      "config"
+    ],
+    "setConfig": [
+      "config"
+    ],
+    "init": [],
+    "getModuleDefinitions": [],
+    "setTracerProvider": [
+      "tracerProvider"
+    ],
+    "enable": [],
+    "disable": []
+  },
+  "_tediousIntegration": [],
+  "setDatabase": [
+    "databaseName"
+  ],
+  "patchedMethod": [
+    "request"
+  ],
+  "incrementStatementCount": [],
+  "incrementProcCount": [],
+  "shouldForceIntegration": [
+    "client"
+  ],
+  "_vercelAIIntegration": [
+    "param"
+  ],
+  "isToolError": [
+    "obj"
+  ],
+  "processToolCallResults": [
+    "result"
+  ],
+  "captureToolErrors": [
+    "content"
+  ],
+  "cleanupToolCallSpanContexts": [
+    "content"
+  ],
+  "determineRecordingSettings": [
+    "integrationRecordingOptions",
+    "methodTelemetryOptions",
+    "telemetryExplicitlyEnabled",
+    "defaultInputsEnabled",
+    "defaultOutputsEnabled"
+  ],
+  "SentryVercelAiInstrumentation": {
+    "_isPatched": [],
+    "_callbacks": [],
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "callWhenPatched": [
+      "callback"
+    ],
+    "_patch": []
+  },
+  "generatePatch": [
+    "originalMethod"
+  ],
+  "setDiagnosticsChannelInjectionLoader": [
+    "load"
+  ],
+  "isDiagnosticsChannelInjectionEnabled": [],
+  "resolveDiagnosticsChannelInjection": [],
+  "diagnosticsChannelInjectionIntegrations": [],
+  "experimentalUseDiagnosticsChannelInjection": [
+    "options"
+  ],
+  "getDefaultIntegrationsWithoutPerformance": [],
+  "getDefaultIntegrations": [
+    "options"
+  ],
+  "applyDiagnosticsChannelInjectionIntegrations": [
+    "integrations",
+    "options"
+  ],
+  "init": [
+    "param"
+  ],
+  "_init": [
+    "param",
+    "getDefaultIntegrationsImpl"
+  ],
+  "initWithoutDefaultIntegrations": [
+    "param"
+  ],
+  "registerGlobalTracerProvider": [
+    "provider"
+  ],
+  "initOpenTelemetry": [
+    "client",
+    "param"
+  ],
+  "preloadOpenTelemetry": [
+    "param"
+  ],
+  "getPreloadMethods": [
+    "integrationNames"
+  ],
+  "setupOtel": [
+    "client",
+    "param"
+  ],
+  "setupSentryTracerProvider": [
+    "client"
+  ],
+  "_clampSpanProcessorTimeout": [
+    "maxSpanWaitDuration"
+  ],
+  "isInCommands": [
+    "redisCommands",
+    "command"
+  ],
+  "getCacheOperation": [
+    "command"
+  ],
+  "keyHasPrefix": [
+    "key",
+    "prefixes"
+  ],
+  "getCacheKeySafely": [
+    "redisCommand",
+    "cmdArgs"
+  ],
+  "processArg": [
+    "arg"
+  ],
+  "shouldConsiderForCache": [
+    "redisCommand",
+    "keys",
+    "prefixes"
+  ],
+  "calculateCacheItemSize": [
+    "response"
+  ],
+  "getSize": [
+    "value"
+  ],
+  "flatten": [
+    "input"
+  ],
+  "flattenHelper": [
+    "input2"
+  ],
+  "setHttpServerSpanRouteAttribute": [
+    "route"
+  ],
+  "Pool": {
+    "acquire": [
+      "priority"
+    ]
+  },
+  "Kafka": {
+    "consumer": [
+      "config"
+    ],
+    "producer": [
+      "config"
+    ]
+  },
+  "TediousInstrumentation": {
+    "COMPONENT": [],
+    "constructor": [
+      "config"
+    ],
+    "init": [],
+    "_patchConnect": [],
+    "_patchQuery": [],
+    "_patchCallbackQuery": []
+  },
+  "Connection": {
+    "config": [],
+    "connect": [
+      "connectListener"
+    ],
+    "execSql": [
+      "request"
+    ]
+  },
+  "Request": {
+    "sqlTextOrProcedure": [],
+    "callback": [],
+    "table": [],
+    "parametersByName": [],
+    "constructor": [
+      "sqlTextOrProcedure",
+      "callback"
+    ],
+    "addParameter": [
+      "name",
+      "type",
+      "value",
+      "options"
+    ]
+  }
+}
