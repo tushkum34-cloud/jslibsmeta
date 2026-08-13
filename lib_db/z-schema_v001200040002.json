@@ -1,0 +1,1705 @@
+{
+  "ValidateError": {
+    "name": [],
+    "details": [],
+    "constructor": [
+      "message",
+      "details"
+    ]
+  },
+  "getValidateError": [
+    "param"
+  ],
+  "dateValidator": [
+    "date"
+  ],
+  "dateTimeValidator": [
+    "dateTime"
+  ],
+  "emailValidator": [
+    "email"
+  ],
+  "hostnameValidator": [
+    "hostname"
+  ],
+  "ipv4Validator": [
+    "ipv4"
+  ],
+  "ipv6Validator": [
+    "ipv6"
+  ],
+  "regexValidator": [
+    "input"
+  ],
+  "durationValidator": [
+    "input"
+  ],
+  "uuidValidator": [
+    "input"
+  ],
+  "strictUriValidator": [
+    "uri"
+  ],
+  "isHexChar": [
+    "c"
+  ],
+  "hasValidPercentEncoding": [
+    "str"
+  ],
+  "uriValidator": [
+    "uri"
+  ],
+  "uriReferenceValidator": [
+    "uri"
+  ],
+  "uriTemplateValidator": [
+    "uri"
+  ],
+  "hasValidTildeEscapes": [
+    "segment"
+  ],
+  "jsonPointerValidator": [
+    "pointer"
+  ],
+  "relativeJsonPointerValidator": [
+    "pointer"
+  ],
+  "timeValidator": [
+    "time"
+  ],
+  "isValidIdnEmailLocalPart": [
+    "localPart"
+  ],
+  "idnEmailValidator": [
+    "email"
+  ],
+  "idnHostnameValidator": [
+    "hostname"
+  ],
+  "iriValidator": [
+    "iri"
+  ],
+  "iriReferenceValidator": [
+    "iriReference"
+  ],
+  "getFormatValidators": [
+    "options"
+  ],
+  "resolveFormatValidator": [
+    "name",
+    "options"
+  ],
+  "registerFormat": [
+    "name",
+    "validatorFunction"
+  ],
+  "unregisterFormat": [
+    "name"
+  ],
+  "getSupportedFormats": [
+    "customFormats"
+  ],
+  "isFormatSupported": [
+    "name",
+    "customFormats"
+  ],
+  "getRegisteredFormats": [],
+  "isInternalKey": [
+    "key"
+  ],
+  "getId": [
+    "schema"
+  ],
+  "findId": [
+    "schema",
+    "id",
+    "targetBaseUri",
+    "currentBaseUri",
+    "param",
+    "param"
+  ],
+  "collectEvaluated": [
+    "ctx",
+    "args"
+  ],
+  "merge": [
+    "other"
+  ],
+  "recurse": [
+    "subSchema"
+  ],
+  "unevaluatedItemsValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "unevaluatedPropertiesValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "definitionsValidator": [],
+  "noopValidator": [],
+  "recurseArray": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "recurseObject": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "validate": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "Report": {
+    "asyncTasks": [],
+    "commonErrorMessage": [],
+    "__$recursiveAnchorStack": [],
+    "__$dynamicScopeStack": [],
+    "__validationResultCache": [],
+    "errors": [],
+    "json": [],
+    "path": [],
+    "schemaPath": [],
+    "rootSchema": [],
+    "parentReport": [],
+    "options": [],
+    "reportOptions": [],
+    "validateOptions": [],
+    "constructor": [
+      "parentOrOptions",
+      "reportOptionsOrValidate",
+      "validateOptions"
+    ],
+    "isValid": [],
+    "addAsyncTask": [
+      "fn",
+      "args",
+      "asyncTaskResultProcessFn"
+    ],
+    "addAsyncTaskWithPath": [
+      "fn",
+      "args",
+      "processFn"
+    ],
+    "getAncestor": [
+      "id"
+    ],
+    "processAsyncTasks": [
+      "timeout",
+      "callback"
+    ],
+    "getPath": [
+      "returnPathAsString"
+    ],
+    "getSchemaPath": [],
+    "getSchemaId": [],
+    "hasError": [
+      "errCode",
+      "errParams"
+    ],
+    "addError": [
+      "errCode",
+      "errParams",
+      "subReports",
+      "schema",
+      "keyword"
+    ],
+    "getJson": [],
+    "addCustomError": [
+      "errorCode",
+      "errorMessage",
+      "params",
+      "subReports",
+      "schema",
+      "keyword"
+    ]
+  },
+  "finish": [],
+  "respond": [
+    "asyncTaskResultProcessFn"
+  ],
+  "checkTimeout": [],
+  "SchemaCache": {
+    "global_cache": [],
+    "cache": [],
+    "validator": [],
+    "constructor": [
+      "validator"
+    ],
+    "cacheSchemaByUri": [
+      "uri",
+      "schema"
+    ],
+    "removeFromCacheByUri": [
+      "uri"
+    ],
+    "checkCacheForUri": [
+      "uri"
+    ],
+    "getSchema": [
+      "report",
+      "refOrSchema"
+    ],
+    "fromCache": [
+      "path"
+    ],
+    "getSchemaByUri": [
+      "report",
+      "uri",
+      "root"
+    ]
+  },
+  "getSafeRemotePath": [
+    "uri"
+  ],
+  "getEffectiveId": [
+    "schema"
+  ],
+  "prepareRemoteSchema": [
+    "schema",
+    "uri",
+    "validationOptions",
+    "maxCloneDepth"
+  ],
+  "SchemaCompiler": {
+    "validator": [],
+    "constructor": [
+      "validator"
+    ],
+    "collectAndCacheIds": [
+      "schema"
+    ],
+    "compileSchema": [
+      "report",
+      "schema",
+      "options"
+    ],
+    "compileArrayOfSchemas": [
+      "report",
+      "arr"
+    ],
+    "compileArrayOfSchemasLoop": [
+      "mainReport",
+      "arr"
+    ]
+  },
+  "isUnsafeTarget": [
+    "obj"
+  ],
+  "safeSetProperty": [
+    "obj",
+    "key",
+    "value"
+  ],
+  "safeDeleteProperty": [
+    "obj",
+    "key"
+  ],
+  "resolveReference": [
+    "base",
+    "ref"
+  ],
+  "isSimpleIdentifier": [
+    "id"
+  ],
+  "resolveIdScope": [
+    "base",
+    "id"
+  ],
+  "resolveSchemaScopeId": [
+    "base",
+    "schema",
+    "id"
+  ],
+  "collectIds": [
+    "obj",
+    "param"
+  ],
+  "walk": [
+    "node",
+    "scope",
+    "param"
+  ],
+  "collectReferences": [
+    "obj",
+    "results",
+    "scope",
+    "path",
+    "options",
+    "param",
+    "param"
+  ],
+  "SchemaValidator": {
+    "validator": [],
+    "constructor": [
+      "validator"
+    ],
+    "options": [],
+    "validateArrayOfSchemas": [
+      "report",
+      "arr"
+    ],
+    "validateSchema": [
+      "report",
+      "schema"
+    ]
+  },
+  "inheritType": [
+    "sch"
+  ],
+  "isUniqueArray": [
+    "arr",
+    "indexes",
+    "maxDepth"
+  ],
+  "difference": [
+    "bigSet",
+    "subSet"
+  ],
+  "isValidBase64": [
+    "value"
+  ],
+  "decodeBase64": [
+    "value"
+  ],
+  "shallowClone": [
+    "src"
+  ],
+  "deepClone": [
+    "src",
+    "param"
+  ],
+  "cloneDeepInner": [
+    "node",
+    "_depth"
+  ],
+  "isLeapYear": [
+    "year"
+  ],
+  "getDaysInMonth": [
+    "year",
+    "month"
+  ],
+  "isValidRfc3339Date": [
+    "year",
+    "month",
+    "day"
+  ],
+  "isDisallowedCodePoint": [
+    "char"
+  ],
+  "isArabicJoiningLetter": [
+    "char"
+  ],
+  "hasZwnjJoiningContext": [
+    "label",
+    "idx"
+  ],
+  "classifyBidi": [
+    "char"
+  ],
+  "isLabelBidiTriggering": [
+    "label"
+  ],
+  "isLabelBidiRuleValid": [
+    "label"
+  ],
+  "isDomainBidiValid": [
+    "unicodeLabels"
+  ],
+  "splitHostnameLabels": [
+    "hostname"
+  ],
+  "isAsciiHostnameLabel": [
+    "label"
+  ],
+  "isGreek": [
+    "char"
+  ],
+  "isHebrew": [
+    "char"
+  ],
+  "hasCjkKanaOrHan": [
+    "input"
+  ],
+  "toUnicodeLabel": [
+    "label"
+  ],
+  "isValidIdnUnicodeLabel": [
+    "label"
+  ],
+  "isValidHostname": [
+    "hostname"
+  ],
+  "isValidIdnHostname": [
+    "hostname"
+  ],
+  "sortedKeys": [
+    "obj"
+  ],
+  "areEqual": [
+    "json1",
+    "json2",
+    "options",
+    "param"
+  ],
+  "decodeJSONPointer": [
+    "str"
+  ],
+  "get": [
+    "obj",
+    "path"
+  ],
+  "copyProp": [
+    "from",
+    "to",
+    "key",
+    "fn"
+  ],
+  "compileSchemaRegex": [
+    "pattern"
+  ],
+  "toUtcTime": [
+    "hour",
+    "minute",
+    "offsetSign",
+    "offsetHour",
+    "offsetMinute"
+  ],
+  "parseRfc3339Time": [
+    "time"
+  ],
+  "unicodeLength": [
+    "str"
+  ],
+  "getQueryPath": [
+    "uri"
+  ],
+  "getRemotePath": [
+    "uri"
+  ],
+  "isAbsoluteUri": [
+    "uri"
+  ],
+  "whatIs": [
+    "what"
+  ],
+  "isObject": [
+    "value"
+  ],
+  "isInteger": [
+    "value"
+  ],
+  "additionalItemsValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "itemsValidator": [],
+  "prefixItemsValidator": [],
+  "maxItemsValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "minItemsValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "uniqueItemsValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "containsValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "addContainsErrorIfNeeded": [],
+  "maxContainsValidator": [],
+  "minContainsValidator": [],
+  "allOfValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "anyOfValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "oneOfValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "notValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "ifValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "thenValidator": [],
+  "elseValidator": [],
+  "multipleOfValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "maximumValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "exclusiveMaximumValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "minimumValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "exclusiveMinimumValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "maxPropertiesValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "minPropertiesValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "requiredValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "additionalPropertiesValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "patternPropertiesValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "propertiesValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "dependenciesValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "dependentSchemasValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "dependentRequiredValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "propertyNamesValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "addPropertyNameErrors": [],
+  "getDynamicRefAnchorName": [
+    "dynamicRef"
+  ],
+  "findDynamicAnchorInScope": [
+    "scopeSchema",
+    "anchorName"
+  ],
+  "resolveRecursiveRef": [
+    "schema",
+    "recursiveAnchorStack"
+  ],
+  "resolveDynamicRef": [
+    "schema",
+    "dynamicScopeStack"
+  ],
+  "shouldSkipValidate": [
+    "options",
+    "errors"
+  ],
+  "supportsDependentKeywords": [
+    "schema",
+    "version"
+  ],
+  "isValidationVocabularyEnabled": [
+    "schema",
+    "report",
+    "version"
+  ],
+  "isFormatAssertionVocabEnabled": [
+    "schema",
+    "report",
+    "version"
+  ],
+  "cacheValidationResult": [
+    "report",
+    "schema",
+    "json",
+    "passed"
+  ],
+  "getCachedValidationResult": [
+    "report",
+    "schema",
+    "json"
+  ],
+  "deferOrRunSync": [
+    "report",
+    "subReports",
+    "decisionFn"
+  ],
+  "minLengthValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "maxLengthValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "patternValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "formatValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "contentEncodingValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "contentMediaTypeValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "typeValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "enumValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "constValidator": [
+    "ctx",
+    "report",
+    "schema",
+    "json"
+  ],
+  "ZSchemaBase": {
+    "scache": [],
+    "sc": [],
+    "sv": [],
+    "validateOptions": [],
+    "options": [],
+    "constructor": [
+      "options",
+      "token"
+    ],
+    "_jsonValidate": [
+      "report",
+      "schema",
+      "json"
+    ],
+    "getDefaultSchemaId": [],
+    "_validate": [
+      "json",
+      "schema",
+      "options",
+      "callback"
+    ],
+    "_validateSchema": [
+      "schemaOrArr"
+    ],
+    "registerFormat": [
+      "name",
+      "validatorFunction"
+    ],
+    "unregisterFormat": [
+      "name"
+    ],
+    "getRegisteredFormats": [],
+    "getSupportedFormats": [],
+    "setRemoteReference": [
+      "uri",
+      "schema",
+      "validationOptions"
+    ],
+    "getMissingReferences": [
+      "err"
+    ],
+    "getMissingRemoteReferences": [
+      "err"
+    ],
+    "getResolvedSchema": [
+      "schemaId"
+    ]
+  },
+  "collect": [
+    "items"
+  ],
+  "cleanup": [
+    "node"
+  ],
+  "normalizeOptions": [
+    "options"
+  ],
+  "getSchemaReader": [],
+  "setSchemaReader": [
+    "schemaReader"
+  ],
+  "registerRemoteReference": [
+    "uri",
+    "schema",
+    "validationOptions"
+  ],
+  "ZSchema": {
+    "registerFormat": [
+      "name",
+      "validatorFunction"
+    ],
+    "unregisterFormat": [
+      "name"
+    ],
+    "getRegisteredFormats": [],
+    "getDefaultOptions": [],
+    "setRemoteReference": [
+      "uri",
+      "schema",
+      "validationOptions"
+    ],
+    "getSchemaReader": [],
+    "setSchemaReader": [
+      "schemaReader"
+    ],
+    "schemaSymbol": [],
+    "jsonSymbol": [],
+    "create": [
+      "param"
+    ],
+    "validate": [
+      "json",
+      "schema",
+      "param"
+    ],
+    "validateSafe": [
+      "json",
+      "schema",
+      "options"
+    ],
+    "validateAsync": [
+      "json",
+      "schema",
+      "options"
+    ],
+    "validateAsyncSafe": [
+      "json",
+      "schema",
+      "options"
+    ],
+    "validateSchema": [
+      "schemaOrArr"
+    ],
+    "validateSchemaSafe": [
+      "schemaOrArr"
+    ]
+  },
+  "ZSchemaSafe": {
+    "validate": [
+      "json",
+      "schema",
+      "param"
+    ],
+    "validateSchema": [
+      "schemaOrArr"
+    ]
+  },
+  "ZSchemaAsync": {
+    "validate": [
+      "json",
+      "schema",
+      "param"
+    ],
+    "validateSchema": [
+      "schemaOrArr"
+    ]
+  },
+  "ZSchemaAsyncSafe": {
+    "validate": [
+      "json",
+      "schema",
+      "param"
+    ],
+    "validateSchema": [
+      "schemaOrArr"
+    ]
+  },
+  "isRelativeUri": [
+    "uri"
+  ],
+  "__commonJSMin": [
+    "cb",
+    "mod"
+  ],
+  "__copyProps": [
+    "to",
+    "from",
+    "except",
+    "desc"
+  ],
+  "__toESM": [
+    "mod",
+    "isNodeMode",
+    "target"
+  ],
+  "assertString": [
+    "input"
+  ],
+  "isRegExp": [
+    "x"
+  ],
+  "checkHost": [
+    "host",
+    "matches"
+  ],
+  "_interopRequireDefault": [
+    "e"
+  ],
+  "_typeof": [
+    "o"
+  ],
+  "isByteLength": [
+    "str",
+    "options"
+  ],
+  "isFQDN": [
+    "str",
+    "options"
+  ],
+  "isIP": [
+    "ipAddress"
+  ],
+  "validateDisplayName": [
+    "display_name"
+  ],
+  "isEmail": [
+    "str",
+    "options"
+  ],
+  "_slicedToArray": [
+    "r",
+    "e"
+  ],
+  "_nonIterableRest": [],
+  "_unsupportedIterableToArray": [
+    "r",
+    "a"
+  ],
+  "_arrayLikeToArray": [
+    "r",
+    "a"
+  ],
+  "_iterableToArrayLimit": [
+    "r",
+    "l"
+  ],
+  "_arrayWithHoles": [
+    "r"
+  ],
+  "isURL": [
+    "url",
+    "options"
+  ],
+  "cleanUpProtocol": [
+    "potential_protocol"
+  ],
+  "error": [
+    "type"
+  ],
+  "map": [
+    "array",
+    "callback"
+  ],
+  "mapDomain": [
+    "domain",
+    "callback"
+  ],
+  "ucs2decode": [
+    "string"
+  ],
+  "ucs2encode": [
+    "codePoints"
+  ],
+  "basicToDigit": [
+    "codePoint"
+  ],
+  "digitToBasic": [
+    "digit",
+    "flag"
+  ],
+  "adapt": [
+    "delta",
+    "numPoints",
+    "firstTime"
+  ],
+  "decode": [
+    "input"
+  ],
+  "encode": [
+    "input"
+  ],
+  "toUnicode": [
+    "input"
+  ],
+  "toASCII": [
+    "input"
+  ],
+  "INTS": [],
+  "WORDS": [],
+  "WHITESPACE": [],
+  "NOTANYCHAR": [],
+  "repeatErr": [
+    "col"
+  ],
+  "updateReferences": [
+    "referenceQueue",
+    "groupCount"
+  ],
+  "setToLookup": [
+    "tokens"
+  ],
+  "setChar": [
+    "charCode"
+  ],
+  "isSameSet": [
+    "set",
+    "param"
+  ],
+  "writeSetTokens": [
+    "set",
+    "param"
+  ],
+  "writeSetToken": [
+    "set"
+  ],
+  "reduceStack": [
+    "stack"
+  ],
+  "createAlternate": [
+    "token"
+  ],
+  "safeRegex": [
+    "re",
+    "options"
+  ],
+  "s": [
+    "e",
+    "param"
+  ],
+  "c": [
+    "e"
+  ],
+  "l": [
+    "r"
+  ],
+  "d": [
+    "e",
+    "t"
+  ],
+  "f": [
+    "e"
+  ],
+  "p": [
+    "e"
+  ],
+  "m": [
+    "e"
+  ],
+  "h": [
+    "e",
+    "t"
+  ],
+  "g": [
+    "t"
+  ],
+  "v": [
+    "e"
+  ],
+  "y": [
+    "e"
+  ],
+  "b": [
+    "e",
+    "t",
+    "n",
+    "r",
+    "param",
+    "param"
+  ],
+  "C": [
+    "param"
+  ],
+  "w": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "T": [
+    "e"
+  ],
+  "E": [
+    "e",
+    "param"
+  ],
+  "a": [
+    "e"
+  ],
+  "D": [
+    "e"
+  ],
+  "O": [
+    "e",
+    "t",
+    "n",
+    "param"
+  ],
+  "k": [
+    "e"
+  ],
+  "A": [
+    "e",
+    "t"
+  ],
+  "o": [
+    "e"
+  ],
+  "re": [
+    "e"
+  ],
+  "N": [
+    "e"
+  ],
+  "ie": [
+    "e"
+  ],
+  "ae": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "P": [
+    "e",
+    "t",
+    "n"
+  ],
+  "n": [],
+  "r": [
+    "e"
+  ],
+  "i": [
+    "e",
+    "t",
+    "n"
+  ],
+  "u": [
+    "e",
+    "t"
+  ],
+  "_": [
+    "e"
+  ],
+  "x": [
+    "n"
+  ],
+  "et": [
+    "e"
+  ],
+  "tt": [
+    "e",
+    "t"
+  ],
+  "nt": [
+    "e",
+    "t",
+    "n"
+  ],
+  "ct": [
+    "e"
+  ],
+  "ft": [
+    "e"
+  ],
+  "pt": [
+    "e",
+    "t"
+  ],
+  "xt": [
+    "e"
+  ],
+  "St": [
+    "e"
+  ],
+  "Ct": [
+    "e"
+  ],
+  "wt": [
+    "e"
+  ],
+  "Tt": [
+    "e"
+  ],
+  "Et": [
+    "e"
+  ],
+  "Dt": [
+    "e"
+  ],
+  "Ot": [
+    "e"
+  ],
+  "kt": [
+    "e"
+  ],
+  "At": [
+    "e"
+  ],
+  "jt": [
+    "e"
+  ],
+  "Mt": [
+    "e"
+  ],
+  "Nt": [
+    "e"
+  ],
+  "Pt": [
+    "e",
+    "t",
+    "n",
+    "r",
+    "i"
+  ],
+  "It": [
+    "e"
+  ],
+  "Lt": [
+    "e"
+  ],
+  "Rt": [
+    "e"
+  ],
+  "zt": [
+    "e"
+  ],
+  "Bt": [
+    "e"
+  ],
+  "Vt": [
+    "e"
+  ],
+  "Ht": [
+    "e"
+  ],
+  "Wt": [
+    "e"
+  ],
+  "Gt": [
+    "e"
+  ],
+  "Kt": [
+    "e"
+  ],
+  "qt": [
+    "e"
+  ],
+  "Jt": [
+    "e"
+  ],
+  "Yt": [
+    "e"
+  ],
+  "Xt": [
+    "e"
+  ],
+  "Zt": [
+    "e"
+  ],
+  "tn": [
+    "e"
+  ],
+  "nn": [
+    "e"
+  ],
+  "rn": [
+    "e"
+  ],
+  "an": [
+    "e"
+  ],
+  "on": [
+    "e"
+  ],
+  "un": [
+    "e"
+  ],
+  "dn": [
+    "e",
+    "t"
+  ],
+  "fn": [
+    "e",
+    "t"
+  ],
+  "pn": [
+    "e"
+  ],
+  "mn": [
+    "e"
+  ],
+  "hn": [
+    "e",
+    "t"
+  ],
+  "gn": [],
+  "H": [
+    "e"
+  ],
+  "U": [
+    "e",
+    "t",
+    "n"
+  ],
+  "On": [
+    "e",
+    "t"
+  ],
+  "W": [
+    "e",
+    "t"
+  ],
+  "kn": [
+    "e",
+    "t"
+  ],
+  "Fn": [
+    "e",
+    "t",
+    "n"
+  ],
+  "In": [
+    "e",
+    "t",
+    "n"
+  ],
+  "G": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "K": [
+    "e",
+    "t",
+    "n"
+  ],
+  "q": [
+    "e",
+    "t",
+    "n"
+  ],
+  "Ln": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Rn": [],
+  "zn": [],
+  "Bn": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Vn": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Hn": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Un": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Wn": [],
+  "Gn": [],
+  "Kn": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "qn": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Jn": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Yn": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Xn": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Zn": [],
+  "Qn": [],
+  "$n": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "er": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "tr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "nr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "rr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "ir": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "ar": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "or": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "sr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "cr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "lr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "ur": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "dr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "fr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "pr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "mr": [
+    "e"
+  ],
+  "hr": [
+    "e",
+    "t"
+  ],
+  "gr": [
+    "e",
+    "t"
+  ],
+  "_r": [
+    "e",
+    "t"
+  ],
+  "yr": [
+    "e"
+  ],
+  "br": [
+    "e"
+  ],
+  "xr": [
+    "e"
+  ],
+  "Sr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Cr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "wr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Tr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Er": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Dr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Or": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "kr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Ar": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "J": [
+    "e",
+    "t"
+  ],
+  "jr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Mr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Nr": [],
+  "Y": [],
+  "Fr": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Ir": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "X": [
+    "e",
+    "t",
+    "n",
+    "r"
+  ],
+  "Rr": [],
+  "zr": [
+    "e"
+  ],
+  "Vr": [
+    "e"
+  ],
+  "Hr": [
+    "e",
+    "t",
+    "n"
+  ],
+  "Ur": [
+    "e",
+    "t"
+  ],
+  "Z": [
+    "e",
+    "t"
+  ],
+  "Wr": [
+    "e"
+  ],
+  "Gr": [
+    "e",
+    "t"
+  ],
+  "Kr": [
+    "e",
+    "t",
+    "n"
+  ],
+  "qr": [
+    "e",
+    "param"
+  ],
+  "Jr": [
+    "e",
+    "t",
+    "n",
+    "r",
+    "i",
+    "param",
+    "param"
+  ],
+  "e": [
+    "e"
+  ]
+}
