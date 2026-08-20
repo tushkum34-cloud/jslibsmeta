@@ -1,0 +1,544 @@
+{
+  "poolConnect": [
+    "ctx",
+    "db"
+  ],
+  "directConnect": [
+    "ctx",
+    "config"
+  ],
+  "onError": [
+    "e"
+  ],
+  "lockClientEnd": [
+    "client"
+  ],
+  "setCtx": [
+    "client",
+    "ctx"
+  ],
+  "setSchema": [
+    "client",
+    "ctx"
+  ],
+  "ConnectionContext": {
+    "constructor": [
+      "cc"
+    ],
+    "connect": [
+      "db"
+    ],
+    "disconnect": [
+      "kill"
+    ],
+    "clone": [],
+    "nextTxCount": []
+  },
+  "DatabasePool": {
+    "instance": [],
+    "register": [
+      "db"
+    ],
+    "unregister": [
+      "db"
+    ],
+    "shutDown": [],
+    "createContextKey": [
+      "db"
+    ]
+  },
+  "Database": [
+    "cn",
+    "dc",
+    "config"
+  ],
+  "createContext": [],
+  "transform": [
+    "value",
+    "cb",
+    "thisArg"
+  ],
+  "extend": [
+    "ctx",
+    "obj"
+  ],
+  "taskProcessor": [
+    "params",
+    "isTX"
+  ],
+  "addServerVersion": [
+    "target",
+    "client"
+  ],
+  "ParameterizedQueryError": {
+    "name": [],
+    "message": [],
+    "stack": [],
+    "error": [],
+    "toString": [
+      "level"
+    ]
+  },
+  "PreparedStatementError": {
+    "name": [],
+    "message": [],
+    "stack": [],
+    "error": [],
+    "toString": [
+      "level"
+    ]
+  },
+  "QueryFileError": {
+    "name": [],
+    "message": [],
+    "stack": [],
+    "file": [],
+    "options": [],
+    "error": [],
+    "toString": [
+      "level"
+    ]
+  },
+  "QueryResultError": {
+    "name": [],
+    "message": [],
+    "stack": [],
+    "result": [],
+    "received": [],
+    "code": [],
+    "query": [],
+    "values": [],
+    "toString": []
+  },
+  "Events": {
+    "connect": [
+      "ctx",
+      "client",
+      "useCount"
+    ],
+    "disconnect": [
+      "ctx",
+      "client"
+    ],
+    "query": [
+      "options",
+      "context"
+    ],
+    "receive": [
+      "options",
+      "data",
+      "result",
+      "ctx"
+    ],
+    "task": [
+      "options",
+      "context"
+    ],
+    "transact": [
+      "options",
+      "context"
+    ],
+    "error": [
+      "options",
+      "err",
+      "context"
+    ],
+    "extend": [
+      "options",
+      "obj",
+      "dc"
+    ],
+    "unexpected": [
+      "event",
+      "e"
+    ]
+  },
+  "formatValue": [
+    "param"
+  ],
+  "formatArray": [
+    "array",
+    "options"
+  ],
+  "loop": [
+    "a"
+  ],
+  "formatCSV": [
+    "values",
+    "options"
+  ],
+  "isNull": [
+    "value"
+  ],
+  "getCTF": [
+    "value"
+  ],
+  "wrapText": [
+    "text"
+  ],
+  "safeText": [
+    "text"
+  ],
+  "throwIfRaw": [
+    "raw"
+  ],
+  "resolveFunc": [
+    "value",
+    "cc"
+  ],
+  "formatQuery": [
+    "query",
+    "values",
+    "raw",
+    "options"
+  ],
+  "formatEntity": [
+    "entity",
+    "values",
+    "param"
+  ],
+  "formatSqlName": [
+    "name"
+  ],
+  "ColumnSet": {
+    "constructor": [
+      "columns",
+      "options"
+    ],
+    "columns": [],
+    "names": [],
+    "table": [],
+    "variables": [],
+    "assign": [
+      "source"
+    ],
+    "assignColumns": [
+      "options"
+    ],
+    "extend": [
+      "columns",
+      "opts"
+    ],
+    "merge": [
+      "columns"
+    ],
+    "prepare": [
+      "obj"
+    ],
+    "toString": [
+      "level"
+    ]
+  },
+  "colDesc": [
+    "column",
+    "source"
+  ],
+  "Column": {
+    "constructor": [
+      "col"
+    ],
+    "name": [],
+    "prop": [],
+    "mod": [],
+    "cast": [],
+    "cnd": [],
+    "def": [],
+    "castText": [],
+    "escapedName": [],
+    "variable": [],
+    "init": [],
+    "skip": [],
+    "toString": [
+      "level"
+    ]
+  },
+  "parseCast": [
+    "name"
+  ],
+  "parseColumn": [
+    "name"
+  ],
+  "isValidMod": [
+    "mod"
+  ],
+  "isValidVariable": [
+    "name"
+  ],
+  "capSQL": [],
+  "concat": [
+    "queries",
+    "capSQL"
+  ],
+  "clean": [
+    "q"
+  ],
+  "insert": [
+    "data",
+    "columns",
+    "table",
+    "capSQL"
+  ],
+  "sets": [
+    "data",
+    "columns",
+    "capSQL"
+  ],
+  "update": [
+    "start",
+    "success",
+    "result"
+  ],
+  "checkTable": [],
+  "checkColumns": [
+    "cols"
+  ],
+  "values": [
+    "data",
+    "columns",
+    "capSQL"
+  ],
+  "TableName": {
+    "constructor": [
+      "table"
+    ],
+    "name": [],
+    "table": [],
+    "schema": [],
+    "toString": []
+  },
+  "_TN": [
+    "path",
+    "param"
+  ],
+  "InnerState": {
+    "constructor": [
+      "initialState"
+    ],
+    "extendState": [
+      "state"
+    ]
+  },
+  "$main": [
+    "options"
+  ],
+  "handler": [
+    "msg"
+  ],
+  "inst": [
+    "cn",
+    "dc"
+  ],
+  "QueryFile": {
+    "constructor": [
+      "file",
+      "options"
+    ],
+    "error": [],
+    "file": [],
+    "options": [],
+    "prepare": [],
+    "toString": [
+      "level"
+    ]
+  },
+  "$query": [
+    "ctx",
+    "query",
+    "values",
+    "qrm"
+  ],
+  "getContext": [],
+  "notifyReject": [],
+  "makeIterable": [
+    "r"
+  ],
+  "SpecialQuery": {
+    "constructor": [
+      "type"
+    ]
+  },
+  "$stream": [
+    "ctx",
+    "qs",
+    "initCB"
+  ],
+  "onData": [
+    "data"
+  ],
+  "onEnd": [],
+  "release": [],
+  "getError": [
+    "e"
+  ],
+  "Task": [
+    "ctx",
+    "tag",
+    "isTX",
+    "config"
+  ],
+  "callback": [
+    "ctx",
+    "obj",
+    "cb"
+  ],
+  "execute": [
+    "ctx",
+    "obj",
+    "isTX",
+    "config"
+  ],
+  "begin": [],
+  "commit": [],
+  "rollback": [],
+  "exec": [
+    "top",
+    "nested"
+  ],
+  "TransactionMode": {
+    "constructor": [
+      "options"
+    ],
+    "begin": [
+      "cap"
+    ]
+  },
+  "ParameterizedQuery": {
+    "constructor": [
+      "options"
+    ],
+    "text": [],
+    "values": [],
+    "binary": [],
+    "rowMode": [],
+    "types": [],
+    "parse": [],
+    "toString": [
+      "level"
+    ]
+  },
+  "PreparedStatement": {
+    "constructor": [
+      "options"
+    ],
+    "name": [],
+    "text": [],
+    "values": [],
+    "binary": [],
+    "rowMode": [],
+    "rows": [],
+    "types": [],
+    "parse": [],
+    "toString": [
+      "level"
+    ]
+  },
+  "ServerFormatting": {
+    "constructor": [
+      "options"
+    ],
+    "error": [],
+    "text": [
+      "value"
+    ],
+    "binary": [
+      "value"
+    ],
+    "rowMode": [
+      "value"
+    ],
+    "values": [
+      "values"
+    ]
+  },
+  "setValues": [
+    "v"
+  ],
+  "ColorConsole": {
+    "log": [],
+    "info": [],
+    "success": [],
+    "warn": [],
+    "error": [],
+    "writeNormal": [
+      "params",
+      "color"
+    ],
+    "writeError": [
+      "params",
+      "color"
+    ],
+    "formatColor": [
+      "args",
+      "color"
+    ]
+  },
+  "isText": [
+    "txt"
+  ],
+  "isDev": [],
+  "addReadProperties": [
+    "target",
+    "source"
+  ],
+  "addReadProp": [
+    "obj",
+    "name",
+    "value",
+    "hidden"
+  ],
+  "getSafeConnection": [
+    "cn"
+  ],
+  "maskPassword": [
+    "cs"
+  ],
+  "inherits": [
+    "child",
+    "parent"
+  ],
+  "getLocalStack": [
+    "startIdx",
+    "maxLines"
+  ],
+  "InternalError": [
+    "error"
+  ],
+  "getIfHas": [
+    "obj",
+    "prop"
+  ],
+  "hasProperty": [
+    "value",
+    "prop"
+  ],
+  "addInspection": [
+    "type",
+    "cb"
+  ],
+  "isConnectivityError": [
+    "err"
+  ],
+  "toJson": [
+    "data"
+  ],
+  "camelize": [
+    "text"
+  ],
+  "camelizeVar": [
+    "text"
+  ],
+  "_enumSql": [
+    "dir",
+    "options",
+    "cb",
+    "namePath"
+  ],
+  "enumSql": [
+    "dir",
+    "options",
+    "cb"
+  ],
+  "taskArgs": [
+    "args"
+  ]
+}
