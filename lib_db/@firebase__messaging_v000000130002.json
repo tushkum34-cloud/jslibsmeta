@@ -1,0 +1,459 @@
+{
+  "arrayToBase64": [
+    "array"
+  ],
+  "base64ToArray": [
+    "base64String"
+  ],
+  "migrateOldDatabase": [
+    "senderId"
+  ],
+  "checkTokenDetails": [
+    "tokenDetails"
+  ],
+  "migrateMessagingDb": [
+    "upgradeDb",
+    "oldVersion",
+    "targetSchemaVersion"
+  ],
+  "createOpenDbOptions": [
+    "targetSchemaVersion"
+  ],
+  "getDbPromise": [],
+  "hasObjectStore": [
+    "db",
+    "storeName"
+  ],
+  "assertFidRegistrationObjectStore": [
+    "db"
+  ],
+  "dbGet": [
+    "firebaseDependencies"
+  ],
+  "dbSet": [
+    "firebaseDependencies",
+    "tokenDetails"
+  ],
+  "dbRemove": [
+    "firebaseDependencies"
+  ],
+  "dbGetFidRegistration": [
+    "firebaseDependencies"
+  ],
+  "dbSetFidRegistration": [
+    "firebaseDependencies",
+    "details"
+  ],
+  "dbRemoveFidRegistration": [
+    "firebaseDependencies"
+  ],
+  "getKey": [
+    "param"
+  ],
+  "requestGetToken": [
+    "firebaseDependencies",
+    "subscriptionOptions"
+  ],
+  "requestCreateRegistration": [
+    "firebaseDependencies",
+    "subscriptionOptions"
+  ],
+  "requestDeleteRegistration": [
+    "firebaseDependencies",
+    "fid"
+  ],
+  "parseCreateRegistrationSuccessFid": [
+    "response"
+  ],
+  "parseFidFromRegistrationResourceName": [
+    "name"
+  ],
+  "requestUpdateToken": [
+    "firebaseDependencies",
+    "tokenDetails"
+  ],
+  "requestDeleteToken": [
+    "firebaseDependencies",
+    "token"
+  ],
+  "fetchWithExponentialRetry": [
+    "operation",
+    "maxAttempts",
+    "baseBackoffMs"
+  ],
+  "getEndpoint": [
+    "param"
+  ],
+  "getHeaders": [
+    "param"
+  ],
+  "getRegistrationOrigin": [
+    "swScope",
+    "appNameFallback"
+  ],
+  "getBody": [
+    "param",
+    "appNameFallback",
+    "includeSdkVersion"
+  ],
+  "getTokenInternal": [
+    "messaging"
+  ],
+  "revokeLegacyFcmTokenAndClearCaches": [
+    "messaging",
+    "tokenDetails"
+  ],
+  "revokeFidRegistrationIfStored": [
+    "messaging"
+  ],
+  "revokeRegistrationInternal": [
+    "messaging"
+  ],
+  "updateToken": [
+    "messaging",
+    "tokenDetails"
+  ],
+  "getNewToken": [
+    "firebaseDependencies",
+    "subscriptionOptions"
+  ],
+  "getPushSubscription$1": [
+    "swRegistration",
+    "vapidKey"
+  ],
+  "isTokenValid": [
+    "dbOptions",
+    "currentOptions"
+  ],
+  "removeFidRegistrationBestEffort": [
+    "firebaseDependencies"
+  ],
+  "notifyOnRegistered": [
+    "messaging",
+    "fid"
+  ],
+  "notifyOnUnregistered": [
+    "messaging",
+    "fid"
+  ],
+  "registerDefaultSw": [
+    "messaging"
+  ],
+  "waitForRegistrationActive": [
+    "registration"
+  ],
+  "updateSwReg": [
+    "messaging",
+    "swRegistration"
+  ],
+  "updateVapidKey": [
+    "messaging",
+    "vapidKey"
+  ],
+  "registerFcmRegistrationWithFid": [
+    "messaging",
+    "expectedFid"
+  ],
+  "getPushSubscription": [
+    "swRegistration",
+    "vapidKey"
+  ],
+  "register$1": [
+    "messaging",
+    "options"
+  ],
+  "subscribeFidChangeRegistration": [
+    "messaging",
+    "installations$1"
+  ],
+  "externalizePayload": [
+    "internalPayload"
+  ],
+  "propagateNotificationPayload": [
+    "payload",
+    "messagePayloadInternal"
+  ],
+  "propagateDataPayload": [
+    "payload",
+    "messagePayloadInternal"
+  ],
+  "propagateFcmOptions": [
+    "payload",
+    "messagePayloadInternal"
+  ],
+  "isConsoleMessage": [
+    "data"
+  ],
+  "extractAppConfig": [
+    "app"
+  ],
+  "getMissingValueError": [
+    "valueName"
+  ],
+  "MessagingService": {
+    "app": [],
+    "firebaseDependencies": [],
+    "swRegistration": [],
+    "vapidKey": [],
+    "deliveryMetricsExportedToBigQueryEnabled": [],
+    "onBackgroundMessageHandler": [],
+    "onMessageHandler": [],
+    "onRegisteredHandler": [],
+    "onUnregisteredHandler": [],
+    "_registerNotifyChain": [],
+    "_fidChangeUnsubscribe": [],
+    "logEvents": [],
+    "logQueue": [],
+    "constructor": [
+      "app",
+      "installations",
+      "analyticsProvider"
+    ],
+    "_delete": []
+  },
+  "getToken$1": [
+    "messaging",
+    "options"
+  ],
+  "logToScion": [
+    "messaging",
+    "messageType",
+    "data"
+  ],
+  "getEventType": [
+    "messageType"
+  ],
+  "messageEventListener": [
+    "messaging",
+    "event"
+  ],
+  "WindowMessagingFactory": [
+    "container"
+  ],
+  "WindowMessagingInternalFactory": [
+    "container"
+  ],
+  "registerMessagingInWindow": [],
+  "isWindowSupported": [],
+  "deleteToken$1": [
+    "messaging"
+  ],
+  "onMessage$1": [
+    "messaging",
+    "nextOrObserver"
+  ],
+  "onRegistered$1": [
+    "messaging",
+    "nextOrObserver"
+  ],
+  "onUnregistered$1": [
+    "messaging",
+    "nextOrObserver"
+  ],
+  "unregister$1": [
+    "messaging"
+  ],
+  "getMessagingInWindow": [
+    "param"
+  ],
+  "getToken": [
+    "messaging",
+    "options"
+  ],
+  "deleteToken": [
+    "messaging"
+  ],
+  "onMessage": [
+    "messaging",
+    "nextOrObserver"
+  ],
+  "register": [
+    "messaging",
+    "options"
+  ],
+  "unregister": [
+    "messaging"
+  ],
+  "onRegistered": [
+    "messaging",
+    "nextOrObserver"
+  ],
+  "onUnregistered": [
+    "messaging",
+    "nextOrObserver"
+  ],
+  "refreshFidRegistrationIfStored": [
+    "messaging"
+  ],
+  "sleep": [
+    "ms"
+  ],
+  "startLoggingService": [
+    "messaging"
+  ],
+  "stopLoggingServiceAndClearQueue": [
+    "messaging"
+  ],
+  "_processQueue": [
+    "messaging",
+    "offsetInMs"
+  ],
+  "_dispatchLogEvents": [
+    "messaging"
+  ],
+  "isRetriableError": [
+    "response"
+  ],
+  "stageLog": [
+    "messaging",
+    "internalPayload"
+  ],
+  "createFcmEvent": [
+    "internalPayload",
+    "fid"
+  ],
+  "createAndEnqueueLogEvent": [
+    "messaging",
+    "fcmEvent",
+    "productId"
+  ],
+  "buildComplianceData": [
+    "productId"
+  ],
+  "_createLogRequest": [
+    "logEventQueue"
+  ],
+  "_mergeStrings": [
+    "s1",
+    "s2"
+  ],
+  "onSubChange": [
+    "event",
+    "messaging"
+  ],
+  "onPush": [
+    "event",
+    "messaging"
+  ],
+  "onNotificationClick": [
+    "event"
+  ],
+  "wrapInternalPayload": [
+    "internalPayload"
+  ],
+  "getMessagePayloadInternal": [
+    "param"
+  ],
+  "getWindowClient": [
+    "url"
+  ],
+  "hasVisibleClients": [
+    "clientList"
+  ],
+  "sendMessagePayloadInternalToWindows": [
+    "clientList",
+    "internalPayload"
+  ],
+  "sendFidRegisteredToWindows": [
+    "clientList",
+    "fid"
+  ],
+  "getClientList": [],
+  "showNotification": [
+    "notificationPayloadInternal"
+  ],
+  "getLink": [
+    "payload"
+  ],
+  "SwMessagingFactory": [
+    "container"
+  ],
+  "registerMessagingInSw": [],
+  "isSwSupported": [],
+  "onBackgroundMessage$1": [
+    "messaging",
+    "nextOrObserver"
+  ],
+  "_setDeliveryMetricsExportedToBigQueryEnabled": [
+    "messaging",
+    "enable"
+  ],
+  "getMessagingInSw": [
+    "param"
+  ],
+  "onBackgroundMessage": [
+    "messaging",
+    "nextOrObserver"
+  ],
+  "experimentalSetDeliveryMetricsExportedToBigQueryEnabled": [
+    "messaging",
+    "enable"
+  ],
+  "HeadersWithEntries": {
+    "entries": []
+  },
+  "FakeServiceWorkerRegistration": {
+    "active": [],
+    "installing": [],
+    "waiting": [],
+    "onupdatefound": [],
+    "pushManager": [],
+    "scope": [],
+    "navigationPreload": [],
+    "updateViaCache": [],
+    "getNotifications": [],
+    "showNotification": [],
+    "update": [],
+    "unregister": [],
+    "addEventListener": [],
+    "removeEventListener": [],
+    "dispatchEvent": []
+  },
+  "FakePushManager": {
+    "subscription": [],
+    "permissionState": [],
+    "getSubscription": [],
+    "subscribe": []
+  },
+  "FakePushSubscription": {
+    "endpoint": [],
+    "expirationTime": [],
+    "auth": [],
+    "p256": [],
+    "getKey": [
+      "name"
+    ],
+    "unsubscribe": [],
+    "toJSON": [],
+    "options": []
+  },
+  "FakeEvent": {
+    "type": [],
+    "NONE": [],
+    "AT_TARGET": [],
+    "BUBBLING_PHASE": [],
+    "CAPTURING_PHASE": [],
+    "bubbles": [],
+    "cancelable": [],
+    "composed": [],
+    "timeStamp": [],
+    "isTrusted": [],
+    "eventPhase": [],
+    "target": [],
+    "currentTarget": [],
+    "srcElement": [],
+    "cancelBubble": [],
+    "defaultPrevented": [],
+    "returnValue": [],
+    "preventDefault": [],
+    "stopPropagation": [],
+    "stopImmediatePropagation": [],
+    "initEvent": [],
+    "waitUntil": [],
+    "composedPath": [],
+    "constructor": [
+      "type",
+      "options"
+    ]
+  }
+}
