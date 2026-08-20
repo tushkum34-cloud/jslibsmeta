@@ -1,0 +1,451 @@
+{
+  "AliasCommandLineAction": {
+    "targetAction": [],
+    "defaultParameters": [],
+    "_parameterKeyMap": [],
+    "constructor": [
+      "options"
+    ],
+    "_registerDefinedParameters": [
+      "state"
+    ],
+    "_processParsedData": [
+      "parserOptions",
+      "data"
+    ],
+    "onExecuteAsync": []
+  },
+  "CommandLineAction": {
+    "actionName": [],
+    "summary": [],
+    "documentation": [],
+    "_argumentParser": [],
+    "constructor": [
+      "options"
+    ],
+    "_buildParser": [
+      "actionsSubParser"
+    ],
+    "_executeAsync": [],
+    "_getArgumentParser": []
+  },
+  "CommandLineChoiceListParameter": {
+    "alternatives": [],
+    "_values": [],
+    "completions": [],
+    "kind": [],
+    "constructor": [
+      "definition"
+    ],
+    "_setValue": [
+      "data"
+    ],
+    "values": [],
+    "appendToArgList": [
+      "argList"
+    ]
+  },
+  "CommandLineChoiceParameter": {
+    "alternatives": [],
+    "defaultValue": [],
+    "_value": [],
+    "completions": [],
+    "kind": [],
+    "constructor": [
+      "definition"
+    ],
+    "_setValue": [
+      "data"
+    ],
+    "_getSupplementaryNotes": [
+      "supplementaryNotes"
+    ],
+    "value": [],
+    "appendToArgList": [
+      "argList"
+    ]
+  },
+  "CommandLineFlagParameter": {
+    "_value": [],
+    "kind": [],
+    "constructor": [
+      "definition"
+    ],
+    "_setValue": [
+      "data"
+    ],
+    "value": [],
+    "appendToArgList": [
+      "argList"
+    ]
+  },
+  "CommandLineHelper": {
+    "isTabCompletionActionRequest": [
+      "argv"
+    ]
+  },
+  "CommandLineIntegerListParameter": {
+    "_values": [],
+    "kind": [],
+    "constructor": [
+      "definition"
+    ],
+    "_setValue": [
+      "data"
+    ],
+    "values": [],
+    "appendToArgList": [
+      "argList"
+    ]
+  },
+  "CommandLineIntegerParameter": {
+    "defaultValue": [],
+    "_value": [],
+    "kind": [],
+    "constructor": [
+      "definition"
+    ],
+    "_setValue": [
+      "data"
+    ],
+    "_getSupplementaryNotes": [
+      "supplementaryNotes"
+    ],
+    "value": [],
+    "appendToArgList": [
+      "argList"
+    ]
+  },
+  "CommandLineParameterBase": {
+    "_shortNameValue": [],
+    "_parserKey": [],
+    "_preParse": [],
+    "_postParse": [],
+    "_validateValue": [],
+    "longName": [],
+    "scopedLongName": [],
+    "parameterGroup": [],
+    "parameterScope": [],
+    "description": [],
+    "required": [],
+    "environmentVariable": [],
+    "allowNonStandardEnvironmentVariableNames": [],
+    "undocumentedSynonyms": [],
+    "constructor": [
+      "definition"
+    ],
+    "shortName": [],
+    "_getSupplementaryNotes": [
+      "supplementaryNotes"
+    ],
+    "reportInvalidData": [
+      "data"
+    ],
+    "validateDefaultValue": [
+      "hasDefaultValue"
+    ]
+  },
+  "CommandLineParameterProvider": {
+    "_ambiguousParameterParserKeysByName": [],
+    "_registeredParameterParserKeysByName": [],
+    "_parameters": [],
+    "_parametersByLongName": [],
+    "_parametersByShortName": [],
+    "_parameterGroupsByName": [],
+    "_parametersHaveBeenRegistered": [],
+    "_parametersHaveBeenProcessed": [],
+    "_remainder": [],
+    "constructor": [],
+    "parameters": [],
+    "parametersProcessed": [],
+    "remainder": [],
+    "defineChoiceParameter": [
+      "definition"
+    ],
+    "getChoiceParameter": [
+      "parameterLongName",
+      "parameterScope"
+    ],
+    "defineChoiceListParameter": [
+      "definition"
+    ],
+    "getChoiceListParameter": [
+      "parameterLongName",
+      "parameterScope"
+    ],
+    "defineFlagParameter": [
+      "definition"
+    ],
+    "getFlagParameter": [
+      "parameterLongName",
+      "parameterScope"
+    ],
+    "defineIntegerParameter": [
+      "definition"
+    ],
+    "getIntegerParameter": [
+      "parameterLongName",
+      "parameterScope"
+    ],
+    "defineIntegerListParameter": [
+      "definition"
+    ],
+    "getIntegerListParameter": [
+      "parameterLongName",
+      "parameterScope"
+    ],
+    "defineStringParameter": [
+      "definition"
+    ],
+    "getStringParameter": [
+      "parameterLongName",
+      "parameterScope"
+    ],
+    "defineStringListParameter": [
+      "definition"
+    ],
+    "defineCommandLineRemainder": [
+      "definition"
+    ],
+    "getStringListParameter": [
+      "parameterLongName",
+      "parameterScope"
+    ],
+    "renderHelpText": [],
+    "renderUsageText": [],
+    "getParameterStringMap": [],
+    "parseScopedLongName": [
+      "scopedLongName"
+    ],
+    "_registerDefinedParameters": [
+      "state"
+    ],
+    "_preParse": [],
+    "_postParse": [],
+    "_processParsedData": [
+      "parserOptions",
+      "data"
+    ],
+    "_defineParameter": [
+      "parameter"
+    ],
+    "_defineAmbiguousParameter": [
+      "name"
+    ],
+    "_registerParameter": [
+      "parameter",
+      "useScopedLongName",
+      "ignoreShortName"
+    ],
+    "_registerAmbiguousParameter": [
+      "name",
+      "parserKey"
+    ],
+    "_generateKey": [],
+    "_getParameter": [
+      "parameterLongName",
+      "expectedKind",
+      "parameterScope"
+    ],
+    "_throwParserExitError": [
+      "parserOptions",
+      "data",
+      "errorCode",
+      "message"
+    ]
+  },
+  "CommandLineParameterWithArgument": {
+    "argumentName": [],
+    "getCompletionsAsync": [],
+    "constructor": [
+      "definition"
+    ]
+  },
+  "CommandLineParser": {
+    "selectedAction": [],
+    "_argumentParser": [],
+    "_actionsSubParser": [],
+    "_options": [],
+    "_actionsByName": [],
+    "_executed": [],
+    "_tabCompleteActionWasAdded": [],
+    "constructor": [
+      "options"
+    ],
+    "actions": [],
+    "addAction": [
+      "action"
+    ],
+    "getAction": [
+      "actionName"
+    ],
+    "tryGetAction": [
+      "actionName"
+    ],
+    "executeAsync": [
+      "args"
+    ],
+    "executeWithoutErrorHandlingAsync": [
+      "args"
+    ],
+    "_registerDefinedParameters": [
+      "state"
+    ],
+    "_validateDefinitions": [],
+    "_getArgumentParser": [],
+    "onExecuteAsync": []
+  },
+  "CommandLineRemainder": {
+    "_values": [],
+    "description": [],
+    "constructor": [
+      "definition"
+    ],
+    "values": [],
+    "_setValue": [
+      "data"
+    ],
+    "appendToArgList": [
+      "argList"
+    ]
+  },
+  "CommandLineStringListParameter": {
+    "_values": [],
+    "kind": [],
+    "constructor": [
+      "definition"
+    ],
+    "_setValue": [
+      "data"
+    ],
+    "values": [],
+    "appendToArgList": [
+      "argList"
+    ]
+  },
+  "CommandLineStringParameter": {
+    "defaultValue": [],
+    "_value": [],
+    "kind": [],
+    "constructor": [
+      "definition"
+    ],
+    "_setValue": [
+      "data"
+    ],
+    "_getSupplementaryNotes": [
+      "supplementaryNotes"
+    ],
+    "value": [],
+    "appendToArgList": [
+      "argList"
+    ]
+  },
+  "DynamicCommandLineAction": {
+    "onExecuteAsync": []
+  },
+  "DynamicCommandLineParser": {},
+  "ScopedCommandLineAction": {
+    "_options": [],
+    "_scopingParameters": [],
+    "_unscopedParserOptions": [],
+    "_scopedCommandLineParser": [],
+    "_subparserState": [],
+    "ScopingParameterGroup": [],
+    "constructor": [
+      "options"
+    ],
+    "parameters": [],
+    "_processParsedData": [
+      "parserOptions",
+      "data"
+    ],
+    "_executeAsync": [],
+    "_registerDefinedParameters": [
+      "state"
+    ],
+    "_getScopedCommandLineParser": [],
+    "_defineParameter": [
+      "parameter"
+    ]
+  },
+  "TypeUuid": {
+    "isInstanceOf": [
+      "targetObject",
+      "typeUuid"
+    ]
+  },
+  "escapeSprintf": [
+    "input"
+  ],
+  "EnvironmentVariableParser": {
+    "parseAsList": [
+      "envVarName"
+    ]
+  },
+  "ownKeys": [
+    "o"
+  ],
+  "throwMissingParameterError": [],
+  "postParse": [],
+  "patchFormatUsageForArgumentParser": [
+    "argumentParser"
+  ],
+  "CommandLineParserExitError": {
+    "exitCode": [],
+    "constructor": [
+      "exitCode",
+      "message"
+    ]
+  },
+  "CustomArgumentParser": {
+    "exit": [
+      "status",
+      "message"
+    ],
+    "error": [
+      "err"
+    ]
+  },
+  "InternalScopedCommandLineParser": {
+    "_canExecute": [],
+    "_internalOptions": [],
+    "canExecute": [],
+    "constructor": [
+      "options"
+    ],
+    "_registerDefinedParameters": [
+      "state"
+    ],
+    "onExecuteAsync": []
+  },
+  "TabCompleteAction": {
+    "_wordToCompleteParameter": [],
+    "_positionParameter": [],
+    "_actions": [],
+    "_globalParameters": [],
+    "constructor": [
+      "actions",
+      "globalParameters"
+    ],
+    "onExecuteAsync": [],
+    "getCompletionsAsync": [
+      "commandLine",
+      "param"
+    ],
+    "_getAllActions": [],
+    "tokenizeCommandLine": [
+      "commandLine"
+    ],
+    "_getParameterValueCompletionsAsync": [
+      "parameter"
+    ],
+    "_getGlobalParameterOffset": [
+      "tokens"
+    ],
+    "_completeParameterValues": [
+      "choiceParameterValues",
+      "lastToken"
+    ]
+  }
+}
