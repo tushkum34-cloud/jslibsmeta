@@ -1,0 +1,3239 @@
+{
+  "fromValue": [
+    "value"
+  ],
+  "getIterator": [
+    "iterable"
+  ],
+  "forAwait": [
+    "iterable",
+    "cb"
+  ],
+  "asyncIteratorToStream": [
+    "iter"
+  ],
+  "collect": [
+    "iterable"
+  ],
+  "fromNodeStream": [
+    "stream"
+  ],
+  "request": [
+    "param"
+  ],
+  "fromStream": [
+    "stream"
+  ],
+  "BaseError": {
+    "constructor": [
+      "message"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "json"
+    ],
+    "isIsomorphicGitError": []
+  },
+  "UnmergedPathsError": {
+    "constructor": [
+      "filepaths"
+    ]
+  },
+  "InternalError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "UnsafeFilepathError": {
+    "constructor": [
+      "filepath"
+    ]
+  },
+  "BufferCursor": {
+    "constructor": [
+      "buffer"
+    ],
+    "eof": [],
+    "tell": [],
+    "seek": [
+      "n"
+    ],
+    "slice": [
+      "n"
+    ],
+    "toString": [
+      "enc",
+      "length"
+    ],
+    "write": [
+      "value",
+      "length",
+      "enc"
+    ],
+    "copy": [
+      "source",
+      "start",
+      "end"
+    ],
+    "readUInt8": [],
+    "writeUInt8": [
+      "value"
+    ],
+    "readUInt16BE": [],
+    "writeUInt16BE": [
+      "value"
+    ],
+    "readUInt32BE": [],
+    "writeUInt32BE": [
+      "value"
+    ]
+  },
+  "compareStrings": [
+    "a",
+    "b"
+  ],
+  "comparePath": [
+    "a",
+    "b"
+  ],
+  "normalizeMode": [
+    "mode"
+  ],
+  "SecondsNanoseconds": [
+    "givenSeconds",
+    "givenNanoseconds",
+    "milliseconds",
+    "date"
+  ],
+  "normalizeStats": [
+    "e"
+  ],
+  "toHex": [
+    "buffer"
+  ],
+  "shasum": [
+    "buffer"
+  ],
+  "shasumSync": [
+    "buffer"
+  ],
+  "subtleSHA1": [
+    "buffer"
+  ],
+  "testSubtleSHA1": [],
+  "parseCacheEntryFlags": [
+    "bits"
+  ],
+  "renderCacheEntryFlags": [
+    "entry"
+  ],
+  "GitIndex": {
+    "constructor": [
+      "entries",
+      "unmergedPaths"
+    ],
+    "_addEntry": [
+      "entry"
+    ],
+    "from": [
+      "buffer"
+    ],
+    "fromBuffer": [
+      "buffer"
+    ],
+    "unmergedPaths": [],
+    "entries": [],
+    "entriesMap": [],
+    "entriesFlat": [],
+    "insert": [
+      "param"
+    ],
+    "delete": [
+      "param"
+    ],
+    "clear": [],
+    "has": [
+      "param"
+    ],
+    "render": [],
+    "_entryToBuffer": [
+      "entry"
+    ],
+    "toObject": []
+  },
+  "compareStats": [
+    "entry",
+    "stats",
+    "param",
+    "param"
+  ],
+  "getLock": [],
+  "acquireLock": [
+    "key",
+    "callback"
+  ],
+  "_resetLock": [],
+  "createCache": [],
+  "updateCachedIndexFile": [
+    "fs",
+    "filepath",
+    "cache"
+  ],
+  "isIndexStale": [
+    "fs",
+    "filepath",
+    "cache"
+  ],
+  "GitIndexManager": {
+    "acquire": [
+      "param",
+      "closure"
+    ]
+  },
+  "basename": [
+    "path"
+  ],
+  "dirname": [
+    "path"
+  ],
+  "flatFileListToDirectoryStructure": [
+    "files"
+  ],
+  "mkdir": [
+    "name"
+  ],
+  "mkfile": [
+    "name",
+    "metadata"
+  ],
+  "mode2type": [
+    "mode"
+  ],
+  "GitWalkerIndex": {
+    "constructor": [
+      "param"
+    ],
+    "readdir": [
+      "entry"
+    ],
+    "type": [
+      "entry"
+    ],
+    "mode": [
+      "entry"
+    ],
+    "stat": [
+      "entry"
+    ],
+    "content": [
+      "_entry"
+    ],
+    "oid": [
+      "entry"
+    ]
+  },
+  "STAGE": [],
+  "NotFoundError": {
+    "constructor": [
+      "what"
+    ]
+  },
+  "ObjectTypeError": {
+    "constructor": [
+      "oid",
+      "actual",
+      "expected",
+      "filepath"
+    ]
+  },
+  "InvalidOidError": {
+    "constructor": [
+      "value"
+    ]
+  },
+  "InvalidRefNameError": {
+    "constructor": [
+      "ref",
+      "suggestion"
+    ]
+  },
+  "NoRefspecError": {
+    "constructor": [
+      "remote"
+    ]
+  },
+  "GitPackedRefs": {
+    "constructor": [
+      "text"
+    ],
+    "from": [
+      "text"
+    ],
+    "delete": [
+      "ref"
+    ],
+    "toString": []
+  },
+  "GitRefSpec": {
+    "constructor": [
+      "param"
+    ],
+    "from": [
+      "refspec"
+    ],
+    "translate": [
+      "remoteBranch"
+    ],
+    "reverseTranslate": [
+      "localBranch"
+    ]
+  },
+  "GitRefSpecSet": {
+    "constructor": [
+      "param"
+    ],
+    "from": [
+      "refspecs"
+    ],
+    "add": [
+      "refspec"
+    ],
+    "translate": [
+      "remoteRefs"
+    ],
+    "translateOne": [
+      "remoteRef"
+    ],
+    "localNamespaces": []
+  },
+  "compareRefNames": [
+    "a",
+    "b"
+  ],
+  "normalizeString": [
+    "path",
+    "aar"
+  ],
+  "getWindowsDrivePrefix": [
+    "path"
+  ],
+  "normalize": [
+    "path"
+  ],
+  "join": [
+    "param"
+  ],
+  "num": [
+    "val"
+  ],
+  "bool": [
+    "val"
+  ],
+  "extractSectionLine": [
+    "line"
+  ],
+  "extractVariableLine": [
+    "line"
+  ],
+  "removeComments": [
+    "rawValue"
+  ],
+  "hasOddNumberOfQuotes": [
+    "text"
+  ],
+  "removeQuotes": [
+    "text"
+  ],
+  "lower": [
+    "text"
+  ],
+  "getPath": [
+    "section",
+    "subsection",
+    "name"
+  ],
+  "normalizePath": [
+    "path"
+  ],
+  "findLastIndex": [
+    "array",
+    "callback"
+  ],
+  "GitConfig": {
+    "constructor": [
+      "text"
+    ],
+    "from": [
+      "text"
+    ],
+    "get": [
+      "path",
+      "param"
+    ],
+    "getall": [
+      "path"
+    ],
+    "getSubsections": [
+      "section"
+    ],
+    "deleteSection": [
+      "section",
+      "subsection"
+    ],
+    "append": [
+      "path",
+      "value"
+    ],
+    "set": [
+      "path",
+      "value",
+      "param"
+    ],
+    "toString": []
+  },
+  "GitConfigManager": {
+    "get": [
+      "param"
+    ],
+    "save": [
+      "param"
+    ]
+  },
+  "refpaths": [
+    "ref"
+  ],
+  "assertWritableRef": [
+    "ref"
+  ],
+  "GitRefManager": {
+    "updateRemoteRefs": [
+      "param"
+    ],
+    "writeRef": [
+      "param"
+    ],
+    "writeSymbolicRef": [
+      "param"
+    ],
+    "deleteRef": [
+      "param"
+    ],
+    "deleteRefs": [
+      "param"
+    ],
+    "resolve": [
+      "param"
+    ],
+    "isUnbornBranch": [
+      "param"
+    ],
+    "exists": [
+      "param"
+    ],
+    "expand": [
+      "param"
+    ],
+    "expandAgainstMap": [
+      "param"
+    ],
+    "resolveAgainstMap": [
+      "param"
+    ],
+    "packedRefs": [
+      "param"
+    ],
+    "listRefs": [
+      "param"
+    ],
+    "listBranches": [
+      "param"
+    ],
+    "listTags": [
+      "param"
+    ]
+  },
+  "compareTreeEntryPath": [
+    "a",
+    "b"
+  ],
+  "appendSlashIfDir": [
+    "entry"
+  ],
+  "mode2type$1": [
+    "mode"
+  ],
+  "parseBuffer": [
+    "buffer"
+  ],
+  "limitModeToAllowed": [
+    "mode"
+  ],
+  "nudgeIntoShape": [
+    "entry"
+  ],
+  "GitTree": {
+    "constructor": [
+      "entries"
+    ],
+    "from": [
+      "tree"
+    ],
+    "render": [],
+    "toObject": [],
+    "entries": []
+  },
+  "GitObject": {
+    "wrap": [
+      "param"
+    ],
+    "unwrap": [
+      "buffer"
+    ]
+  },
+  "readObjectLoose": [
+    "param"
+  ],
+  "applyDelta": [
+    "delta",
+    "source"
+  ],
+  "readVarIntLE": [
+    "reader"
+  ],
+  "readCompactLE": [
+    "reader",
+    "flags",
+    "size"
+  ],
+  "readOp": [
+    "reader",
+    "source"
+  ],
+  "StreamReader": {
+    "constructor": [
+      "stream"
+    ],
+    "eof": [],
+    "tell": [],
+    "byte": [],
+    "chunk": [],
+    "read": [
+      "n"
+    ],
+    "skip": [
+      "n"
+    ],
+    "undo": [],
+    "_next": [],
+    "_trim": [],
+    "_moveCursor": [
+      "n"
+    ],
+    "_accumulate": [
+      "n"
+    ],
+    "_loadnext": [],
+    "_init": []
+  },
+  "lengthBuffers": [
+    "buffers"
+  ],
+  "listpack": [
+    "stream",
+    "onData"
+  ],
+  "parseHeader": [
+    "reader"
+  ],
+  "inflate": [
+    "buffer"
+  ],
+  "browserInflate": [
+    "buffer"
+  ],
+  "testDecompressionStream": [],
+  "decodeVarInt": [
+    "reader"
+  ],
+  "otherVarIntDecode": [
+    "reader",
+    "startWith"
+  ],
+  "GitPackIndex": {
+    "constructor": [
+      "stuff"
+    ],
+    "fromIdx": [
+      "param"
+    ],
+    "fromPack": [
+      "param"
+    ],
+    "toBuffer": [],
+    "load": [
+      "param"
+    ],
+    "unload": [],
+    "read": [
+      "param"
+    ],
+    "readSlice": [
+      "param"
+    ]
+  },
+  "write": [
+    "str",
+    "encoding"
+  ],
+  "loadPackIndex": [
+    "param"
+  ],
+  "readPackIndex": [
+    "param"
+  ],
+  "shasumRange": [
+    "buffer",
+    "param"
+  ],
+  "readObjectPacked": [
+    "param"
+  ],
+  "_readObject": [
+    "param"
+  ],
+  "getExternalRefDelta": [
+    "oid"
+  ],
+  "AlreadyExistsError": {
+    "constructor": [
+      "noun",
+      "where",
+      "param"
+    ]
+  },
+  "AmbiguousError": {
+    "constructor": [
+      "nouns",
+      "short",
+      "matches"
+    ]
+  },
+  "CheckoutConflictError": {
+    "constructor": [
+      "filepaths"
+    ]
+  },
+  "CherryPickMergeCommitError": {
+    "constructor": [
+      "oid",
+      "parentCount"
+    ]
+  },
+  "CherryPickRootCommitError": {
+    "constructor": [
+      "oid"
+    ]
+  },
+  "CommitNotFetchedError": {
+    "constructor": [
+      "ref",
+      "oid"
+    ]
+  },
+  "EmptyCommitError": {
+    "constructor": []
+  },
+  "EmptyServerResponseError": {
+    "constructor": []
+  },
+  "FastForwardError": {
+    "constructor": []
+  },
+  "GitPushError": {
+    "constructor": [
+      "prettyDetails",
+      "result"
+    ]
+  },
+  "HttpError": {
+    "constructor": [
+      "statusCode",
+      "statusMessage",
+      "response"
+    ]
+  },
+  "InvalidFilepathError": {
+    "constructor": [
+      "reason"
+    ]
+  },
+  "MaxDepthError": {
+    "constructor": [
+      "depth"
+    ]
+  },
+  "MergeNotSupportedError": {
+    "constructor": []
+  },
+  "MergeConflictError": {
+    "constructor": [
+      "filepaths",
+      "bothModified",
+      "deleteByUs",
+      "deleteByTheirs"
+    ]
+  },
+  "MissingNameError": {
+    "constructor": [
+      "role"
+    ]
+  },
+  "MissingParameterError": {
+    "constructor": [
+      "parameter"
+    ]
+  },
+  "MultipleGitError": {
+    "constructor": [
+      "errors"
+    ]
+  },
+  "ParseError": {
+    "constructor": [
+      "expected",
+      "actual"
+    ]
+  },
+  "PushRejectedError": {
+    "constructor": [
+      "reason"
+    ]
+  },
+  "RemoteCapabilityError": {
+    "constructor": [
+      "capability",
+      "parameter"
+    ]
+  },
+  "SmartHttpError": {
+    "constructor": [
+      "preview",
+      "response"
+    ]
+  },
+  "UnknownTransportError": {
+    "constructor": [
+      "url",
+      "transport",
+      "suggestion"
+    ]
+  },
+  "UrlParseError": {
+    "constructor": [
+      "url"
+    ]
+  },
+  "UserCanceledError": {
+    "constructor": []
+  },
+  "IndexResetError": {
+    "constructor": [
+      "filepath"
+    ]
+  },
+  "NoCommitError": {
+    "constructor": [
+      "ref"
+    ]
+  },
+  "formatAuthor": [
+    "param"
+  ],
+  "formatTimezoneOffset": [
+    "minutes"
+  ],
+  "simpleSign": [
+    "n"
+  ],
+  "negateExceptForZero": [
+    "n"
+  ],
+  "normalizeNewlines": [
+    "str"
+  ],
+  "parseAuthor": [
+    "author"
+  ],
+  "parseTimezoneOffset": [
+    "offset"
+  ],
+  "negateExceptForZero$1": [
+    "n"
+  ],
+  "GitAnnotatedTag": {
+    "constructor": [
+      "tag"
+    ],
+    "from": [
+      "tag"
+    ],
+    "render": [],
+    "justHeaders": [],
+    "message": [],
+    "parse": [],
+    "headers": [],
+    "withoutSignature": [],
+    "gpgsig": [],
+    "payload": [],
+    "toObject": [],
+    "sign": [
+      "tag",
+      "sign",
+      "secretKey"
+    ]
+  },
+  "indent": [
+    "str"
+  ],
+  "outdent": [
+    "str"
+  ],
+  "GitCommit": {
+    "constructor": [
+      "commit"
+    ],
+    "fromPayloadSignature": [
+      "param"
+    ],
+    "from": [
+      "commit"
+    ],
+    "toObject": [],
+    "headers": [],
+    "message": [],
+    "parse": [],
+    "justMessage": [
+      "commit"
+    ],
+    "justHeaders": [
+      "commit"
+    ],
+    "parseHeaders": [],
+    "renderHeaders": [
+      "obj"
+    ],
+    "render": [],
+    "withoutSignature": [],
+    "isolateSignature": [],
+    "sign": [
+      "commit",
+      "sign",
+      "secretKey"
+    ]
+  },
+  "resolveTree": [
+    "param"
+  ],
+  "GitWalkerRepo": {
+    "constructor": [
+      "param"
+    ],
+    "readdir": [
+      "entry"
+    ],
+    "type": [
+      "entry"
+    ],
+    "mode": [
+      "entry"
+    ],
+    "stat": [
+      "_entry"
+    ],
+    "content": [
+      "entry"
+    ],
+    "oid": [
+      "entry"
+    ]
+  },
+  "TREE": [
+    "param"
+  ],
+  "GitWalkerFs": {
+    "constructor": [
+      "param"
+    ],
+    "readdir": [
+      "entry"
+    ],
+    "type": [
+      "entry"
+    ],
+    "mode": [
+      "entry"
+    ],
+    "stat": [
+      "entry"
+    ],
+    "content": [
+      "entry"
+    ],
+    "oid": [
+      "entry"
+    ],
+    "_getGitConfig": [
+      "fs",
+      "gitdir"
+    ]
+  },
+  "WORKDIR": [
+    "param"
+  ],
+  "arrayRange": [
+    "start",
+    "end"
+  ],
+  "RunningMinimum": {
+    "constructor": [],
+    "consider": [
+      "value"
+    ],
+    "reset": []
+  },
+  "unionOfIterators": [
+    "sets"
+  ],
+  "_walk": [
+    "param"
+  ],
+  "unionWalkerFromReaddir": [
+    "entries"
+  ],
+  "walk": [
+    "root"
+  ],
+  "mkdirp": [
+    "mkdir",
+    "filepath",
+    "param"
+  ],
+  "rmRecursive": [
+    "fs",
+    "filepath"
+  ],
+  "isPromiseLike": [
+    "obj"
+  ],
+  "isObject": [
+    "obj"
+  ],
+  "isFunction": [
+    "obj"
+  ],
+  "isPromiseFs": [
+    "fs"
+  ],
+  "test": [
+    "targetFs"
+  ],
+  "bindFs": [
+    "target",
+    "fs"
+  ],
+  "FileSystem": {
+    "constructor": [
+      "fs"
+    ],
+    "exists": [
+      "filepath",
+      "param"
+    ],
+    "read": [
+      "filepath",
+      "param"
+    ],
+    "write": [
+      "filepath",
+      "contents",
+      "param"
+    ],
+    "mkdir": [
+      "filepath"
+    ],
+    "rm": [
+      "filepath"
+    ],
+    "rmdir": [
+      "filepath",
+      "opts"
+    ],
+    "readdir": [
+      "filepath"
+    ],
+    "readdirDeep": [
+      "dir"
+    ],
+    "lstat": [
+      "filename"
+    ],
+    "readlink": [
+      "filename",
+      "param"
+    ],
+    "writelink": [
+      "filename",
+      "buffer"
+    ]
+  },
+  "assertParameter": [
+    "name",
+    "value"
+  ],
+  "isAbsolute": [
+    "filepath"
+  ],
+  "discoverGitdir": [
+    "param"
+  ],
+  "modified": [
+    "entry",
+    "base"
+  ],
+  "abortMerge": [
+    "param"
+  ],
+  "GitIgnoreManager": {
+    "isIgnored": [
+      "param"
+    ]
+  },
+  "writeObjectLoose": [
+    "param"
+  ],
+  "deflate": [
+    "buffer"
+  ],
+  "browserDeflate": [
+    "buffer"
+  ],
+  "testCompressionStream": [],
+  "_writeObject": [
+    "param"
+  ],
+  "posixifyPathBuffer": [
+    "buffer"
+  ],
+  "add": [
+    "param"
+  ],
+  "isTracked": [
+    "index",
+    "filepath"
+  ],
+  "addToIndex": [
+    "param"
+  ],
+  "_getConfig": [
+    "param"
+  ],
+  "assignDefined": [
+    "target",
+    "param"
+  ],
+  "normalizeAuthorObject": [
+    "param"
+  ],
+  "normalizeCommitterObject": [
+    "param"
+  ],
+  "resolveCommit": [
+    "param"
+  ],
+  "_readCommit": [
+    "param"
+  ],
+  "_commit": [
+    "param"
+  ],
+  "constructTree": [
+    "param"
+  ],
+  "resolveFilepath": [
+    "param"
+  ],
+  "resolveFilepathEntry": [
+    "param"
+  ],
+  "_resolveFilepath": [
+    "param"
+  ],
+  "_readTree": [
+    "param"
+  ],
+  "_writeTree": [
+    "param"
+  ],
+  "_addNote": [
+    "param"
+  ],
+  "addNote": [
+    "param"
+  ],
+  "isValidRef": [
+    "name",
+    "onelevel"
+  ],
+  "_addRemote": [
+    "param"
+  ],
+  "addRemote": [
+    "param"
+  ],
+  "_annotatedTag": [
+    "param"
+  ],
+  "annotatedTag": [
+    "param"
+  ],
+  "_branch": [
+    "param"
+  ],
+  "branch": [
+    "param"
+  ],
+  "assertNoSymlinkInLeadingPath": [
+    "fs",
+    "dir",
+    "fullpath"
+  ],
+  "worthWalking": [
+    "filepath",
+    "root"
+  ],
+  "_checkout": [
+    "param"
+  ],
+  "analyze": [
+    "param"
+  ],
+  "updateIndex": [
+    "param"
+  ],
+  "updateWorkingDir": [
+    "param",
+    "param"
+  ],
+  "batchAllSettled": [
+    "operationName",
+    "tasks",
+    "onProgress",
+    "batchSize"
+  ],
+  "checkout": [
+    "param"
+  ],
+  "mergeFile": [
+    "param"
+  ],
+  "mergeTree": [
+    "param"
+  ],
+  "mergeBlobs": [
+    "param"
+  ],
+  "checkAndWriteBlob": [
+    "fs",
+    "gitdir",
+    "dir",
+    "filepath",
+    "param"
+  ],
+  "processTreeEntries": [
+    "param"
+  ],
+  "processTreeEntry": [
+    "entry"
+  ],
+  "writeTreeChanges": [
+    "param"
+  ],
+  "map": [
+    "filepath",
+    "param"
+  ],
+  "reduce": [
+    "parent",
+    "children"
+  ],
+  "iterate": [
+    "walk",
+    "children"
+  ],
+  "applyTreeChanges": [
+    "param"
+  ],
+  "_cherryPick": [
+    "param"
+  ],
+  "cherryPick": [
+    "param"
+  ],
+  "abbreviateRef": [
+    "ref"
+  ],
+  "_currentBranch": [
+    "param"
+  ],
+  "translateSSHtoHTTP": [
+    "url"
+  ],
+  "calculateBasicAuthHeader": [
+    "param"
+  ],
+  "extractAuthFromUrl": [
+    "url"
+  ],
+  "parseUserinfo": [
+    "url",
+    "userpass"
+  ],
+  "parseUrl": [
+    "url"
+  ],
+  "decodeUserinfo": [
+    "value"
+  ],
+  "padHex": [
+    "b",
+    "n"
+  ],
+  "GitPktLine": {
+    "flush": [],
+    "delim": [],
+    "encode": [
+      "line"
+    ],
+    "streamReader": [
+      "stream"
+    ]
+  },
+  "parseCapabilitiesV2": [
+    "read"
+  ],
+  "parseRefsAdResponse": [
+    "stream",
+    "param"
+  ],
+  "splitAndAssert": [
+    "line",
+    "sep",
+    "expected"
+  ],
+  "corsProxify": [
+    "corsProxy",
+    "url"
+  ],
+  "updateHeaders": [
+    "headers",
+    "auth"
+  ],
+  "stringifyBody": [
+    "res"
+  ],
+  "GitRemoteHTTP": {
+    "capabilities": [],
+    "discover": [
+      "param"
+    ],
+    "connect": [
+      "param"
+    ]
+  },
+  "GitRemoteManager": {
+    "getRemoteHelperFor": [
+      "param"
+    ]
+  },
+  "parseRemoteUrl": [
+    "param"
+  ],
+  "GitShallowManager": {
+    "read": [
+      "param"
+    ],
+    "write": [
+      "param"
+    ]
+  },
+  "hasObjectLoose": [
+    "param"
+  ],
+  "hasObjectPacked": [
+    "param"
+  ],
+  "hasObject": [
+    "param"
+  ],
+  "addCredentialUsername": [
+    "param"
+  ],
+  "emptyPackfile": [
+    "pack"
+  ],
+  "filterCapabilities": [
+    "server",
+    "client"
+  ],
+  "FIFO": {
+    "constructor": [],
+    "write": [
+      "chunk"
+    ],
+    "end": [],
+    "destroy": [
+      "err"
+    ],
+    "next": []
+  },
+  "findSplit": [
+    "str"
+  ],
+  "splitLines": [
+    "input"
+  ],
+  "GitSideBand": {
+    "demux": [
+      "input"
+    ]
+  },
+  "nextBit": [],
+  "parseUploadPackResponse": [
+    "stream"
+  ],
+  "writeUploadPackRequest": [
+    "param"
+  ],
+  "_fetch": [
+    "param"
+  ],
+  "_init": [
+    "param"
+  ],
+  "_clone": [
+    "param"
+  ],
+  "clone": [
+    "param"
+  ],
+  "commit": [
+    "param"
+  ],
+  "currentBranch": [
+    "param"
+  ],
+  "_deleteBranch": [
+    "param"
+  ],
+  "deleteBranch": [
+    "param"
+  ],
+  "deleteRef": [
+    "param"
+  ],
+  "_deleteRemote": [
+    "param"
+  ],
+  "deleteRemote": [
+    "param"
+  ],
+  "_deleteTag": [
+    "param"
+  ],
+  "deleteTag": [
+    "param"
+  ],
+  "expandOidLoose": [
+    "param"
+  ],
+  "expandOidPacked": [
+    "param"
+  ],
+  "_expandOid": [
+    "param"
+  ],
+  "expandOid": [
+    "param"
+  ],
+  "expandRef": [
+    "param"
+  ],
+  "_findMergeBase": [
+    "param"
+  ],
+  "readParents": [
+    "oid"
+  ],
+  "_merge": [
+    "param"
+  ],
+  "_pull": [
+    "param"
+  ],
+  "fastForward": [
+    "param"
+  ],
+  "fetch": [
+    "param"
+  ],
+  "findMergeBase": [
+    "param"
+  ],
+  "_findRoot": [
+    "param"
+  ],
+  "findRoot": [
+    "param"
+  ],
+  "getConfig": [
+    "param"
+  ],
+  "_getConfigAll": [
+    "param"
+  ],
+  "getConfigAll": [
+    "param"
+  ],
+  "getRemoteInfo": [
+    "param"
+  ],
+  "formatInfoRefs": [
+    "remote",
+    "prefix",
+    "symrefs",
+    "peelTags"
+  ],
+  "getRemoteInfo2": [
+    "param"
+  ],
+  "hashObject": [
+    "param"
+  ],
+  "hashBlob": [
+    "param"
+  ],
+  "_indexPack": [
+    "param"
+  ],
+  "indexPack": [
+    "param"
+  ],
+  "init": [
+    "param"
+  ],
+  "_isDescendent": [
+    "param"
+  ],
+  "isDescendent": [
+    "param"
+  ],
+  "isIgnored": [
+    "param"
+  ],
+  "listBranches": [
+    "param"
+  ],
+  "_listFiles": [
+    "param"
+  ],
+  "accumulateFilesFromOid": [
+    "param"
+  ],
+  "listFiles": [
+    "param"
+  ],
+  "_listNotes": [
+    "param"
+  ],
+  "listNotes": [
+    "param"
+  ],
+  "listRefs": [
+    "param"
+  ],
+  "_listRemotes": [
+    "param"
+  ],
+  "listRemotes": [
+    "param"
+  ],
+  "parseListRefsResponse": [
+    "stream"
+  ],
+  "writeListRefsRequest": [
+    "param"
+  ],
+  "listServerRefs": [
+    "param"
+  ],
+  "listTags": [
+    "param"
+  ],
+  "compareAge": [
+    "a",
+    "b"
+  ],
+  "resolveFileIdInTree": [
+    "param"
+  ],
+  "_resolveFileId": [
+    "param"
+  ],
+  "_log": [
+    "param"
+  ],
+  "endCommit": [
+    "commit"
+  ],
+  "getChanges": [
+    "param"
+  ],
+  "log": [
+    "param"
+  ],
+  "merge": [
+    "param"
+  ],
+  "_pack": [
+    "param"
+  ],
+  "writeObject": [
+    "param"
+  ],
+  "_packObjects": [
+    "param"
+  ],
+  "packObjects": [
+    "param"
+  ],
+  "pull": [
+    "param"
+  ],
+  "listCommitsAndTags": [
+    "param"
+  ],
+  "listObjects": [
+    "param"
+  ],
+  "parseReceivePackResponse": [
+    "packfile"
+  ],
+  "writeReceivePackRequest": [
+    "param"
+  ],
+  "_push": [
+    "param"
+  ],
+  "push": [
+    "param"
+  ],
+  "resolveBlob": [
+    "param"
+  ],
+  "_readBlob": [
+    "param"
+  ],
+  "readBlob": [
+    "param"
+  ],
+  "readCommit": [
+    "param"
+  ],
+  "_readNote": [
+    "param"
+  ],
+  "readNote": [
+    "param"
+  ],
+  "readObject": [
+    "param"
+  ],
+  "_readTag": [
+    "param"
+  ],
+  "readTag": [
+    "param"
+  ],
+  "readTree": [
+    "param"
+  ],
+  "remove": [
+    "param"
+  ],
+  "_removeNote": [
+    "param"
+  ],
+  "removeNote": [
+    "param"
+  ],
+  "_renameBranch": [
+    "param"
+  ],
+  "renameBranch": [
+    "param"
+  ],
+  "hashObject$1": [
+    "param"
+  ],
+  "resetIndex": [
+    "param"
+  ],
+  "resolveRef": [
+    "param"
+  ],
+  "setConfig": [
+    "param"
+  ],
+  "_writeCommit": [
+    "param"
+  ],
+  "GitRefStash": {
+    "timezoneOffsetForRefLogEntry": [],
+    "createStashReflogEntry": [
+      "author",
+      "stashCommit",
+      "message"
+    ],
+    "getStashReflogEntry": [
+      "reflogString",
+      "param"
+    ]
+  },
+  "GitStashManager": {
+    "constructor": [
+      "param"
+    ],
+    "refStash": [],
+    "refLogsStash": [],
+    "refStashPath": [],
+    "refLogsStashPath": [],
+    "getAuthor": [],
+    "getStashSHA": [
+      "refIdx",
+      "stashEntries"
+    ],
+    "writeStashCommit": [
+      "param"
+    ],
+    "readStashCommit": [
+      "refIdx"
+    ],
+    "writeStashRef": [
+      "stashCommit"
+    ],
+    "writeStashReflogEntry": [
+      "param"
+    ],
+    "readStashReflogs": [
+      "param"
+    ]
+  },
+  "_createStashCommit": [
+    "param"
+  ],
+  "_stashPush": [
+    "param"
+  ],
+  "_stashCreate": [
+    "param"
+  ],
+  "_stashApply": [
+    "param"
+  ],
+  "_stashDrop": [
+    "param"
+  ],
+  "_stashList": [
+    "param"
+  ],
+  "_stashClear": [
+    "param"
+  ],
+  "_stashPop": [
+    "param"
+  ],
+  "stash": [
+    "param"
+  ],
+  "status": [
+    "param"
+  ],
+  "getWorkdirOid": [],
+  "getOidAtPath": [
+    "param"
+  ],
+  "getHeadTree": [
+    "param"
+  ],
+  "statusMatrix": [
+    "param"
+  ],
+  "tag": [
+    "param"
+  ],
+  "updateIndex$1": [
+    "param"
+  ],
+  "version": [],
+  "writeBlob": [
+    "param"
+  ],
+  "writeCommit": [
+    "param"
+  ],
+  "writeRef": [
+    "param"
+  ],
+  "_writeTag": [
+    "param"
+  ],
+  "writeTag": [
+    "param"
+  ],
+  "writeTree": [
+    "param"
+  ],
+  "a": [
+    "t",
+    "e",
+    "param"
+  ],
+  "_": {
+    "isIgnored": [
+      "param"
+    ]
+  },
+  "k": {
+    "constructor": [
+      "t"
+    ],
+    "eof": [],
+    "tell": [],
+    "seek": [
+      "t"
+    ],
+    "slice": [
+      "t"
+    ],
+    "toString": [
+      "t",
+      "e"
+    ],
+    "write": [
+      "t",
+      "e",
+      "r"
+    ],
+    "copy": [
+      "t",
+      "e",
+      "r"
+    ],
+    "readUInt8": [],
+    "writeUInt8": [
+      "t"
+    ],
+    "readUInt16BE": [],
+    "writeUInt16BE": [
+      "t"
+    ],
+    "readUInt32BE": [],
+    "writeUInt32BE": [
+      "t"
+    ]
+  },
+  "C": [
+    "t",
+    "e",
+    "r",
+    "n",
+    "o"
+  ],
+  "q": {
+    "constructor": [
+      "param"
+    ],
+    "from": [
+      "t"
+    ],
+    "translate": [
+      "t"
+    ],
+    "reverseTranslate": [
+      "t"
+    ]
+  },
+  "n": [
+    "t",
+    "e"
+  ],
+  "e": [
+    "e"
+  ],
+  "u": [
+    "t"
+  ],
+  "h": {
+    "constructor": [
+      "t"
+    ],
+    "exists": [
+      "t",
+      "param"
+    ],
+    "read": [
+      "t",
+      "param"
+    ],
+    "write": [
+      "t",
+      "e",
+      "param"
+    ],
+    "mkdir": [
+      "t"
+    ],
+    "rm": [
+      "t"
+    ],
+    "rmdir": [
+      "t",
+      "e"
+    ],
+    "readdir": [
+      "t"
+    ],
+    "readdirDeep": [
+      "t"
+    ],
+    "lstat": [
+      "t"
+    ],
+    "readlink": [
+      "t",
+      "param"
+    ],
+    "writelink": [
+      "t",
+      "e"
+    ]
+  },
+  "g": {
+    "get": [
+      "param"
+    ],
+    "save": [
+      "param"
+    ]
+  },
+  "o": [
+    "t",
+    "e"
+  ],
+  "l": [
+    "t"
+  ],
+  "p": {
+    "constructor": [
+      "t"
+    ],
+    "from": [
+      "t"
+    ],
+    "get": [
+      "t",
+      "param"
+    ],
+    "getall": [
+      "t"
+    ],
+    "getSubsections": [
+      "t"
+    ],
+    "deleteSection": [
+      "t",
+      "e"
+    ],
+    "append": [
+      "t",
+      "e"
+    ],
+    "set": [
+      "t",
+      "e",
+      "param"
+    ],
+    "toString": []
+  },
+  "w": [
+    "param"
+  ],
+  "v": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "c": [
+    "t"
+  ],
+  "m": [
+    "t"
+  ],
+  "y": [
+    "t"
+  ],
+  "b": {
+    "constructor": [
+      "t"
+    ],
+    "toJSON": [],
+    "fromJSON": [
+      "t"
+    ],
+    "isIsomorphicGitError": []
+  },
+  "t": [
+    "t"
+  ],
+  "f": [
+    "t",
+    "e"
+  ],
+  "d": [
+    "t"
+  ],
+  "x": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "E": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "A": [
+    "t",
+    "e"
+  ],
+  "S": [
+    "t",
+    "e",
+    "r",
+    "n",
+    "i"
+  ],
+  "B": [
+    "t"
+  ],
+  "$": [
+    "t"
+  ],
+  "R": [
+    "t"
+  ],
+  "P": [
+    "t",
+    "e",
+    "r",
+    "n",
+    "o",
+    "s"
+  ],
+  "I": [
+    "t",
+    "e",
+    "r",
+    "n"
+  ],
+  "O": [
+    "t"
+  ],
+  "j": {
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "_addEntry": [
+      "t"
+    ],
+    "from": [
+      "t"
+    ],
+    "fromBuffer": [
+      "t"
+    ],
+    "unmergedPaths": [],
+    "entries": [],
+    "entriesMap": [],
+    "entriesFlat": [],
+    "insert": [
+      "param"
+    ],
+    "delete": [
+      "param"
+    ],
+    "clear": [],
+    "has": [
+      "param"
+    ],
+    "render": [],
+    "_entryToBuffer": [
+      "t"
+    ],
+    "toObject": []
+  },
+  "r": [
+    "n"
+  ],
+  "s": [
+    "t",
+    "e"
+  ],
+  "U": [
+    "t"
+  ],
+  "T": [
+    "t"
+  ],
+  "M": [
+    "t",
+    "e"
+  ],
+  "D": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "F": {
+    "acquire": [
+      "param",
+      "i"
+    ]
+  },
+  "z": [
+    "t",
+    "e",
+    "r",
+    "n",
+    "i",
+    "o"
+  ],
+  "L": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "H": {
+    "constructor": [
+      "t"
+    ],
+    "from": [
+      "t"
+    ],
+    "delete": [
+      "t"
+    ],
+    "toString": []
+  },
+  "W": {
+    "constructor": [
+      "param"
+    ],
+    "from": [
+      "t"
+    ],
+    "add": [
+      "t"
+    ],
+    "translate": [
+      "t"
+    ],
+    "translateOne": [
+      "t"
+    ],
+    "localNamespaces": []
+  },
+  "Z": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "K": [
+    "t"
+  ],
+  "V": [
+    "t",
+    "e"
+  ],
+  "Y": [
+    "t"
+  ],
+  "J": {
+    "updateRemoteRefs": [
+      "param"
+    ],
+    "writeRef": [
+      "param"
+    ],
+    "writeSymbolicRef": [
+      "param"
+    ],
+    "deleteRef": [
+      "param"
+    ],
+    "deleteRefs": [
+      "param"
+    ],
+    "resolve": [
+      "param"
+    ],
+    "isUnbornBranch": [
+      "param"
+    ],
+    "exists": [
+      "param"
+    ],
+    "expand": [
+      "param"
+    ],
+    "expandAgainstMap": [
+      "param"
+    ],
+    "resolveAgainstMap": [
+      "param"
+    ],
+    "packedRefs": [
+      "param"
+    ],
+    "listRefs": [
+      "param"
+    ],
+    "listBranches": [
+      "param"
+    ],
+    "listTags": [
+      "param"
+    ]
+  },
+  "Q": {
+    "constructor": [
+      "t",
+      "e",
+      "r"
+    ]
+  },
+  "i": [
+    "t"
+  ],
+  "N": {
+    "constructor": [
+      "param"
+    ],
+    "from": [
+      "t"
+    ],
+    "add": [
+      "t"
+    ],
+    "translate": [
+      "t"
+    ],
+    "translateOne": [
+      "t"
+    ],
+    "localNamespaces": []
+  },
+  "X": [
+    "t"
+  ],
+  "tt": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "et": {
+    "constructor": []
+  },
+  "rt": [
+    "param"
+  ],
+  "nt": [
+    "t"
+  ],
+  "at": [
+    "t"
+  ],
+  "ot": [
+    "t"
+  ],
+  "st": [
+    "t",
+    "e"
+  ],
+  "ct": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "ft": {
+    "constructor": []
+  },
+  "dt": [
+    "t"
+  ],
+  "lt": [
+    "t"
+  ],
+  "ut": {
+    "constructor": [
+      "t"
+    ],
+    "eof": [],
+    "tell": [],
+    "byte": [],
+    "chunk": [],
+    "read": [
+      "t"
+    ],
+    "skip": [
+      "t"
+    ],
+    "undo": [],
+    "_next": [],
+    "_trim": [],
+    "_moveCursor": [
+      "t"
+    ],
+    "_accumulate": [
+      "t"
+    ],
+    "_loadnext": [],
+    "_init": []
+  },
+  "pt": [
+    "t",
+    "param"
+  ],
+  "gt": [
+    "t",
+    "e",
+    "r"
+  ],
+  "wt": [
+    "t"
+  ],
+  "yt": [
+    "t",
+    "e"
+  ],
+  "bt": {
+    "constructor": [
+      "t",
+      "e",
+      "r"
+    ]
+  },
+  "_t": {
+    "capabilities": [],
+    "discover": [
+      "param"
+    ],
+    "connect": [
+      "param"
+    ]
+  },
+  "vt": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "kt": {
+    "read": [
+      "param"
+    ],
+    "write": [
+      "param"
+    ]
+  },
+  "Et": {
+    "constructor": [
+      "t"
+    ],
+    "fromIdx": [
+      "param"
+    ],
+    "fromPack": [
+      "param"
+    ],
+    "toBuffer": [],
+    "load": [
+      "param"
+    ],
+    "unload": [],
+    "read": [
+      "param"
+    ],
+    "readSlice": [
+      "param"
+    ]
+  },
+  "St": [
+    "t"
+  ],
+  "Bt": [
+    "param"
+  ],
+  "$t": {
+    "wrap": [
+      "param"
+    ],
+    "unwrap": [
+      "t"
+    ]
+  },
+  "Rt": {
+    "constructor": [
+      "t"
+    ],
+    "fromPayloadSignature": [
+      "param"
+    ],
+    "from": [
+      "t"
+    ],
+    "toObject": [],
+    "headers": [],
+    "message": [],
+    "parse": [],
+    "justMessage": [
+      "t"
+    ],
+    "justHeaders": [
+      "t"
+    ],
+    "parseHeaders": [],
+    "renderHeaders": [
+      "t"
+    ],
+    "render": [],
+    "withoutSignature": [],
+    "isolateSignature": [],
+    "sign": [
+      "t",
+      "e",
+      "r"
+    ]
+  },
+  "Pt": [
+    "t"
+  ],
+  "It": [
+    "t"
+  ],
+  "Ot": {
+    "constructor": [
+      "t"
+    ],
+    "from": [
+      "t"
+    ],
+    "render": [],
+    "justHeaders": [],
+    "message": [],
+    "parse": [],
+    "headers": [],
+    "withoutSignature": [],
+    "gpgsig": [],
+    "payload": [],
+    "toObject": [],
+    "sign": [
+      "t",
+      "e",
+      "r"
+    ]
+  },
+  "jt": [
+    "t"
+  ],
+  "Ut": [
+    "t"
+  ],
+  "Ct": [
+    "t",
+    "e"
+  ],
+  "Tt": [
+    "param"
+  ],
+  "Mt": {
+    "constructor": [
+      "param"
+    ],
+    "readdir": [
+      "t"
+    ],
+    "type": [
+      "t"
+    ],
+    "mode": [
+      "t"
+    ],
+    "stat": [
+      "t"
+    ],
+    "content": [
+      "t"
+    ],
+    "oid": [
+      "t"
+    ]
+  },
+  "Dt": {
+    "constructor": [
+      "t"
+    ],
+    "fromIdx": [
+      "param"
+    ],
+    "fromPack": [
+      "param"
+    ],
+    "toBuffer": [],
+    "load": [
+      "param"
+    ],
+    "unload": [],
+    "read": [
+      "param"
+    ],
+    "readSlice": [
+      "param"
+    ]
+  },
+  "Nt": [
+    "t"
+  ],
+  "Ft": [
+    "param"
+  ],
+  "Lt": [
+    "t"
+  ],
+  "Ht": [
+    "t",
+    "param"
+  ],
+  "Wt": [
+    "param"
+  ],
+  "Gt": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "Zt": [
+    "param"
+  ],
+  "Kt": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "Vt": [
+    "t"
+  ],
+  "Yt": [
+    "param"
+  ],
+  "Jt": [
+    "param"
+  ],
+  "Qt": {
+    "constructor": [
+      "param"
+    ],
+    "refStash": [],
+    "refLogsStash": [],
+    "refStashPath": [],
+    "refLogsStashPath": [],
+    "getAuthor": [],
+    "getStashSHA": [
+      "t",
+      "e"
+    ],
+    "writeStashCommit": [
+      "param"
+    ],
+    "readStashCommit": [
+      "t"
+    ],
+    "writeStashRef": [
+      "t"
+    ],
+    "writeStashReflogEntry": [
+      "param"
+    ],
+    "readStashReflogs": [
+      "param"
+    ]
+  },
+  "te": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "ee": [
+    "t",
+    "e"
+  ],
+  "re": [
+    "param"
+  ],
+  "ie": [
+    "t",
+    "e"
+  ],
+  "ne": [
+    "param"
+  ],
+  "ae": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "se": {
+    "isIgnored": [
+      "param"
+    ]
+  },
+  "fe": [
+    "t"
+  ],
+  "de": [
+    "param"
+  ],
+  "le": [
+    "t"
+  ],
+  "ue": [
+    "param"
+  ],
+  "he": [
+    "param"
+  ],
+  "pe": {
+    "constructor": []
+  },
+  "ge": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "we": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "me": [
+    "param"
+  ],
+  "ye": [
+    "t",
+    "param"
+  ],
+  "be": [
+    "param"
+  ],
+  "_e": [
+    "param"
+  ],
+  "ve": [
+    "param"
+  ],
+  "xe": [
+    "param"
+  ],
+  "Ee": [
+    "param"
+  ],
+  "Ae": [
+    "param"
+  ],
+  "Se": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "Be": [
+    "param"
+  ],
+  "$e": [
+    "param"
+  ],
+  "Re": [
+    "param"
+  ],
+  "Pe": [
+    "param"
+  ],
+  "Ie": [
+    "param"
+  ],
+  "Oe": {
+    "constructor": [
+      "t",
+      "e",
+      "param"
+    ]
+  },
+  "je": [
+    "param"
+  ],
+  "Te": [
+    "t",
+    "e"
+  ],
+  "Me": [
+    "param"
+  ],
+  "De": [
+    "param"
+  ],
+  "Ne": [
+    "param"
+  ],
+  "Fe": [
+    "param"
+  ],
+  "ze": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "Le": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "He": [
+    "t",
+    "e",
+    "r"
+  ],
+  "We": [
+    "t",
+    "e"
+  ],
+  "Ge": [
+    "param"
+  ],
+  "qe": [
+    "t",
+    "e",
+    "r",
+    "i"
+  ],
+  "Ze": [
+    "param"
+  ],
+  "Ke": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "Ve": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "Ye": {
+    "constructor": [
+      "t",
+      "e",
+      "r",
+      "i"
+    ]
+  },
+  "Xe": {
+    "constructor": []
+  },
+  "tr": [
+    "param"
+  ],
+  "er": [
+    "param"
+  ],
+  "ir": [
+    "param"
+  ],
+  "nr": [
+    "param"
+  ],
+  "ar": [
+    "param"
+  ],
+  "or": [
+    "param"
+  ],
+  "cr": [
+    "t"
+  ],
+  "fr": [
+    "param"
+  ],
+  "dr": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "lr": {
+    "constructor": [
+      "t",
+      "e",
+      "r"
+    ]
+  },
+  "ur": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "hr": {
+    "constructor": [
+      "t",
+      "e",
+      "r"
+    ]
+  },
+  "pr": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "gr": {
+    "constructor": []
+  },
+  "wr": [
+    "param"
+  ],
+  "mr": [
+    "t",
+    "e"
+  ],
+  "yr": [
+    "t"
+  ],
+  "_r": [
+    "t"
+  ],
+  "vr": [
+    "t",
+    "e"
+  ],
+  "xr": [
+    "t"
+  ],
+  "kr": {
+    "constructor": []
+  },
+  "Er": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "Ar": [
+    "t",
+    "e"
+  ],
+  "Sr": {
+    "flush": [],
+    "delim": [],
+    "encode": [
+      "t"
+    ],
+    "streamReader": [
+      "t"
+    ]
+  },
+  "Br": [
+    "t"
+  ],
+  "$r": [
+    "t",
+    "param"
+  ],
+  "Rr": [
+    "t",
+    "e",
+    "r"
+  ],
+  "Pr": [
+    "t",
+    "e"
+  ],
+  "Ir": [
+    "t",
+    "e"
+  ],
+  "Or": [
+    "t"
+  ],
+  "jr": {
+    "capabilities": [],
+    "discover": [
+      "param"
+    ],
+    "connect": [
+      "param"
+    ]
+  },
+  "Ur": {
+    "getRemoteHelperFor": [
+      "param"
+    ]
+  },
+  "Tr": {
+    "read": [
+      "param"
+    ],
+    "write": [
+      "param"
+    ]
+  },
+  "Mr": [
+    "param"
+  ],
+  "Dr": [
+    "param"
+  ],
+  "Nr": [
+    "t",
+    "e"
+  ],
+  "zr": {
+    "constructor": [],
+    "write": [
+      "t"
+    ],
+    "end": [],
+    "destroy": [
+      "t"
+    ],
+    "next": []
+  },
+  "Lr": [
+    "t"
+  ],
+  "Hr": [
+    "t"
+  ],
+  "Wr": {
+    "demux": [
+      "t"
+    ]
+  },
+  "Gr": [
+    "param"
+  ],
+  "qr": [
+    "param"
+  ],
+  "Zr": [
+    "param"
+  ],
+  "Kr": [
+    "param"
+  ],
+  "Vr": [
+    "param"
+  ],
+  "Yr": [
+    "param"
+  ],
+  "Xr": [
+    "param"
+  ],
+  "Jr": [
+    "param"
+  ],
+  "Qr": [
+    "param"
+  ],
+  "ti": {
+    "constructor": [
+      "t",
+      "e",
+      "r"
+    ]
+  },
+  "ei": [
+    "param"
+  ],
+  "ri": [
+    "param"
+  ],
+  "ii": [
+    "param"
+  ],
+  "ni": {
+    "constructor": []
+  },
+  "ai": [
+    "param"
+  ],
+  "oi": [
+    "param"
+  ],
+  "si": [
+    "param"
+  ],
+  "ci": [
+    "param"
+  ],
+  "fi": [
+    "param"
+  ],
+  "di": [
+    "param"
+  ],
+  "li": [
+    "param"
+  ],
+  "ui": [
+    "param"
+  ],
+  "hi": [
+    "param"
+  ],
+  "pi": [
+    "param"
+  ],
+  "gi": [
+    "t",
+    "e",
+    "r",
+    "i"
+  ],
+  "wi": [
+    "param"
+  ],
+  "mi": [
+    "param"
+  ],
+  "yi": [
+    "param"
+  ],
+  "bi": [
+    "param"
+  ],
+  "_i": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "vi": [
+    "param"
+  ],
+  "xi": [
+    "param"
+  ],
+  "ki": [
+    "param"
+  ],
+  "Ei": [
+    "param"
+  ],
+  "Ai": [
+    "param"
+  ],
+  "Si": [
+    "param"
+  ],
+  "Bi": [
+    "param"
+  ],
+  "$i": [
+    "param"
+  ],
+  "Ri": [
+    "param"
+  ],
+  "Pi": [
+    "param"
+  ],
+  "Ii": [
+    "param"
+  ],
+  "Oi": [
+    "param"
+  ],
+  "ji": [
+    "t",
+    "e"
+  ],
+  "Ci": [
+    "param"
+  ],
+  "Ti": [
+    "param"
+  ],
+  "Mi": [
+    "param"
+  ],
+  "Di": [
+    "param"
+  ],
+  "Ni": [
+    "param"
+  ],
+  "zi": [
+    "param"
+  ],
+  "Li": [
+    "param"
+  ],
+  "Hi": [
+    "param"
+  ],
+  "Wi": [
+    "param"
+  ],
+  "Gi": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "qi": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "Zi": [
+    "param"
+  ],
+  "Ki": [
+    "param"
+  ],
+  "Vi": [
+    "param"
+  ],
+  "Yi": [
+    "param"
+  ],
+  "Xi": [
+    "param"
+  ],
+  "Ji": [
+    "param"
+  ],
+  "Qi": [
+    "param"
+  ],
+  "tn": [
+    "param"
+  ],
+  "en": [
+    "param"
+  ],
+  "rn": [
+    "param"
+  ],
+  "nn": [
+    "param"
+  ],
+  "an": [
+    "param"
+  ],
+  "on": [
+    "param"
+  ],
+  "sn": [
+    "param"
+  ],
+  "cn": [
+    "param"
+  ],
+  "fn": [
+    "param"
+  ],
+  "dn": [
+    "param"
+  ],
+  "ln": {
+    "timezoneOffsetForRefLogEntry": [],
+    "createStashReflogEntry": [
+      "t",
+      "e",
+      "r"
+    ],
+    "getStashReflogEntry": [
+      "t",
+      "param"
+    ]
+  },
+  "un": {
+    "constructor": [
+      "param"
+    ],
+    "refStash": [],
+    "refLogsStash": [],
+    "refStashPath": [],
+    "refLogsStashPath": [],
+    "getAuthor": [],
+    "getStashSHA": [
+      "t",
+      "e"
+    ],
+    "writeStashCommit": [
+      "param"
+    ],
+    "readStashCommit": [
+      "t"
+    ],
+    "writeStashRef": [
+      "t"
+    ],
+    "writeStashReflogEntry": [
+      "param"
+    ],
+    "readStashReflogs": [
+      "param"
+    ]
+  },
+  "hn": [
+    "param"
+  ],
+  "pn": [
+    "param"
+  ],
+  "gn": [
+    "param"
+  ],
+  "wn": [
+    "param"
+  ],
+  "mn": [
+    "param"
+  ],
+  "yn": [
+    "param"
+  ],
+  "bn": [
+    "param"
+  ],
+  "_n": [
+    "param"
+  ],
+  "vn": [
+    "param"
+  ],
+  "xn": [
+    "param"
+  ],
+  "kn": [
+    "param"
+  ],
+  "En": [
+    "param"
+  ],
+  "An": [
+    "param"
+  ],
+  "Sn": [
+    "param"
+  ],
+  "Bn": [],
+  "$n": [
+    "param"
+  ],
+  "Rn": [
+    "param"
+  ],
+  "Pn": [
+    "param"
+  ],
+  "In": [
+    "param"
+  ],
+  "On": [
+    "param"
+  ],
+  "jn": [
+    "param"
+  ],
+  "Un": [
+    "param"
+  ],
+  "G": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "ht": {
+    "flush": [],
+    "delim": [],
+    "encode": [
+      "t"
+    ],
+    "streamReader": [
+      "t"
+    ]
+  },
+  "mt": [
+    "t",
+    "e"
+  ],
+  "xt": {
+    "getRemoteHelperFor": [
+      "param"
+    ]
+  },
+  "At": {
+    "constructor": [
+      "t",
+      "e",
+      "r",
+      "n"
+    ]
+  },
+  "zt": [
+    "t",
+    "e",
+    "r"
+  ],
+  "qt": [
+    "param"
+  ],
+  "Xt": {
+    "timezoneOffsetForRefLogEntry": [],
+    "createStashReflogEntry": [
+      "t",
+      "e",
+      "r"
+    ],
+    "getStashReflogEntry": [
+      "t",
+      "param"
+    ]
+  }
+}
