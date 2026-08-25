@@ -1,0 +1,457 @@
+{
+  "Client": {
+    "constructor": [
+      "config",
+      "log"
+    ],
+    "socket": [],
+    "retriesRemaining": [],
+    "retryTimer": [],
+    "explicitlyDisconnected": [],
+    "protocolViolation": [],
+    "emitDirect": [
+      "type",
+      "data"
+    ],
+    "emitLogged": [
+      "type",
+      "data"
+    ],
+    "sendQueued": [
+      "message"
+    ],
+    "writeDirect": [
+      "message"
+    ],
+    "writeGuarded": [
+      "message"
+    ],
+    "dispatchDirect": [
+      "message"
+    ],
+    "dispatchSync": [
+      "message"
+    ],
+    "dispatchLogged": [
+      "message"
+    ],
+    "dispatchLoggedSync": [
+      "message"
+    ],
+    "connect": [],
+    "connectionOptions": [],
+    "connected": [
+      "param"
+    ],
+    "closed": [
+      "param"
+    ],
+    "receiveRaw": [
+      "socket",
+      "data"
+    ],
+    "receiveRawSync": [
+      "socket",
+      "data"
+    ],
+    "receiveFramed": [
+      "socket",
+      "data"
+    ],
+    "receiveGuarded": [
+      "socket",
+      "data"
+    ],
+    "handleReadError": [
+      "socket",
+      "error"
+    ],
+    "startMessageTimer": [
+      "socket"
+    ],
+    "clearMessageTimer": [
+      "socket"
+    ],
+    "protocolFailure": [
+      "socket",
+      "error"
+    ]
+  },
+  "Server": {
+    "constructor": [
+      "socketPath",
+      "config",
+      "log",
+      "port"
+    ],
+    "_udp4": [],
+    "_udp6": [],
+    "server": [],
+    "sockets": [],
+    "lastPeer": [],
+    "udp4": [
+      "value"
+    ],
+    "udp6": [
+      "value"
+    ],
+    "selectTransport": [],
+    "onStart": [
+      "socket"
+    ],
+    "start": [],
+    "stop": [],
+    "emitDirect": [
+      "socket",
+      "type",
+      "data"
+    ],
+    "emitLogged": [
+      "socket",
+      "type",
+      "data"
+    ],
+    "broadcastDirect": [
+      "type",
+      "data"
+    ],
+    "broadcastLogged": [
+      "type",
+      "data"
+    ],
+    "writeAllStreams": [
+      "message"
+    ],
+    "writeAllDatagrams": [
+      "message"
+    ],
+    "writeStreamDirect": [
+      "socket",
+      "message"
+    ],
+    "writeStreamGuarded": [
+      "socket",
+      "message"
+    ],
+    "writeDatagramDirect": [
+      "socket",
+      "message"
+    ],
+    "writeDatagramEncoded": [
+      "socket",
+      "message"
+    ],
+    "sendDatagramDirect": [
+      "data",
+      "port",
+      "address"
+    ],
+    "sendDatagramGuarded": [
+      "data",
+      "port",
+      "address"
+    ],
+    "handleDatagramError": [
+      "error"
+    ],
+    "startServer": [],
+    "startDatagramServer": [],
+    "addSocket": [
+      "socket"
+    ],
+    "receiveDatagram": [
+      "message",
+      "rinfo"
+    ],
+    "peer": [
+      "rinfo"
+    ],
+    "receiveRaw": [
+      "socket",
+      "data"
+    ],
+    "receiveFramed": [
+      "socket",
+      "data"
+    ],
+    "receiveGuarded": [
+      "socket",
+      "data"
+    ],
+    "dispatchDirect": [
+      "message",
+      "socket"
+    ],
+    "dispatchIdentified": [
+      "message",
+      "socket"
+    ],
+    "dispatchLogged": [
+      "message",
+      "socket"
+    ],
+    "dispatchIdentifiedLogged": [
+      "message",
+      "socket"
+    ],
+    "handleReadError": [
+      "socket",
+      "error"
+    ],
+    "startMessageTimer": [
+      "socket"
+    ],
+    "clearMessageTimer": [
+      "socket"
+    ],
+    "protocolFailure": [
+      "socket",
+      "error"
+    ],
+    "removeSocket": [
+      "socket"
+    ],
+    "serverError": [
+      "error"
+    ]
+  },
+  "prepareSocketRoot": [
+    "server"
+  ],
+  "socketPathInRoot": [
+    "server"
+  ],
+  "pathOutsideRoot": [
+    "relative"
+  ],
+  "unlinkSocket": [
+    "socketPath"
+  ],
+  "socketRootError": [
+    "message"
+  ],
+  "Defaults": {
+    "appspace": [],
+    "socketRoot": [],
+    "id": [],
+    "encoding": [],
+    "rawBuffer": [],
+    "parser": [],
+    "sync": [],
+    "unlink": [],
+    "identifyPeer": [],
+    "delimiter": [],
+    "maxMessageSize": [],
+    "maxPendingBytes": [],
+    "maxEventNameLength": [],
+    "messageTimeout": [],
+    "allowReservedEvents": [],
+    "allowedEvents": [],
+    "silent": [],
+    "logPayloads": [],
+    "logDepth": [],
+    "logInColor": [],
+    "logger": [],
+    "maxConnections": [],
+    "retry": [],
+    "maxRetries": [],
+    "stopRetrying": [],
+    "IPType": [],
+    "tls": [],
+    "networkHost": [],
+    "networkPort": [],
+    "readableAll": [],
+    "writableAll": [],
+    "secureSocketRoot": [],
+    "interface": []
+  },
+  "getSocketRoot": [],
+  "getUserName": [],
+  "safePathSegment": [
+    "value"
+  ],
+  "getIPType": [],
+  "IPCProtocolError": {
+    "constructor": [
+      "code",
+      "message"
+    ]
+  },
+  "RawParser": {
+    "constructor": [
+      "param"
+    ],
+    "profile": [],
+    "raw": [],
+    "encode": [
+      "value"
+    ],
+    "format": [
+      "value"
+    ],
+    "read": [
+      "buffer",
+      "data",
+      "receive"
+    ],
+    "parse": [
+      "data"
+    ],
+    "decode": [
+      "data"
+    ]
+  },
+  "Parser": {
+    "constructor": [
+      "param"
+    ],
+    "profile": [],
+    "raw": [],
+    "encoding": [],
+    "encode": [
+      "type",
+      "param"
+    ],
+    "format": [
+      "message"
+    ],
+    "read": [
+      "buffer",
+      "data",
+      "receive"
+    ],
+    "push": [
+      "param",
+      "param"
+    ],
+    "parse": [
+      "data"
+    ],
+    "decode": [
+      "frame"
+    ]
+  },
+  "GuardedParser": {
+    "constructor": [
+      "param"
+    ],
+    "profile": [],
+    "encode": [
+      "type",
+      "data"
+    ],
+    "read": [
+      "buffer",
+      "data",
+      "receive"
+    ],
+    "push": [
+      "param",
+      "param"
+    ],
+    "decode": [
+      "frame"
+    ],
+    "decodeMessage": [
+      "frame"
+    ],
+    "validateType": [
+      "type"
+    ],
+    "assertFrameSize": [
+      "characters",
+      "bytes"
+    ]
+  },
+  "AssuredParser": {
+    "constructor": [
+      "param"
+    ],
+    "profile": [],
+    "validateType": [
+      "type"
+    ]
+  },
+  "createParser": [
+    "config"
+  ],
+  "validateLimit": [
+    "value",
+    "name"
+  ],
+  "MessageParser": {
+    "decode": [
+      "frame"
+    ]
+  },
+  "createClientTLSOptions": [
+    "config",
+    "connectionOptions",
+    "param"
+  ],
+  "createServerTLSOptions": [
+    "config",
+    "param"
+  ],
+  "loadTLSOptions": [
+    "config"
+  ],
+  "tlsConfigurationError": [
+    "message",
+    "param"
+  ],
+  "IPCModule": {
+    "IPC": []
+  },
+  "IPC": {
+    "config": [],
+    "of": [],
+    "server": [],
+    "connectTo": [
+      "value"
+    ],
+    "connectToNet": [
+      "value"
+    ],
+    "disconnect": [
+      "value"
+    ],
+    "serve": [
+      "value"
+    ],
+    "serveNet": [
+      "value"
+    ],
+    "log": [
+      "value"
+    ]
+  },
+  "log": [
+    "param"
+  ],
+  "disconnect": [
+    "id"
+  ],
+  "serve": [
+    "path",
+    "callback"
+  ],
+  "emptyCallback": [],
+  "serveNet": [
+    "host",
+    "port",
+    "UDPType",
+    "callback"
+  ],
+  "connect": [
+    "id",
+    "path",
+    "callback"
+  ],
+  "connectNet": [
+    "id",
+    "host",
+    "port",
+    "callback"
+  ]
+}
