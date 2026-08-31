@@ -1,0 +1,327 @@
+{
+  "DatabaseNotConnectedError": {
+    "constructor": []
+  },
+  "STORAGE_EXCEEDED": [
+    "keyword"
+  ],
+  "JsonErrorLogger": {
+    "getErrorMessage": [
+      "message",
+      "causes"
+    ]
+  },
+  "PrettyErrorLogger": {
+    "printIndent": [],
+    "printIndicatorSummary": [],
+    "printSummary": [],
+    "getErrorMessage": [
+      "message",
+      "causes"
+    ]
+  },
+  "HealthCheckExecutor": {
+    "logger": [],
+    "options": [],
+    "isShuttingDown": [],
+    "constructor": [
+      "logger",
+      "options"
+    ],
+    "execute": [
+      "healthIndicators"
+    ],
+    "beforeApplicationShutdown": [
+      "signal"
+    ],
+    "executeHealthIndicators": [],
+    "getSummary": [],
+    "getResult": []
+  },
+  "HealthCheck": [
+    "param"
+  ],
+  "getSwaggerDefinitions": [
+    "swagger"
+  ],
+  "healthIndicatorSchema": [
+    "example"
+  ],
+  "getHealthCheckSchema": [
+    "status"
+  ],
+  "HealthCheckService": {
+    "healthCheckExecutor": [],
+    "errorLogger": [],
+    "logger": [],
+    "constructor": [
+      "healthCheckExecutor",
+      "errorLogger",
+      "logger"
+    ],
+    "check": [
+      "healthIndicators"
+    ]
+  },
+  "MikroOrmHealthIndicator": {
+    "moduleRef": [],
+    "healthIndicatorService": [],
+    "constructor": [
+      "moduleRef",
+      "healthIndicatorService"
+    ],
+    "checkDependantPackages": [],
+    "getContextConnection": [],
+    "pingDb": [],
+    "pingCheck": [
+      "key",
+      "options"
+    ]
+  },
+  "MongooseHealthIndicator": {
+    "moduleRef": [],
+    "healthIndicatorService": [],
+    "constructor": [
+      "moduleRef",
+      "healthIndicatorService"
+    ],
+    "checkDependantPackages": [],
+    "getContextConnection": [],
+    "pingDb": [],
+    "pingCheck": [
+      "key",
+      "options"
+    ]
+  },
+  "PrismaHealthIndicator": {
+    "healthIndicatorService": [],
+    "constructor": [
+      "healthIndicatorService"
+    ],
+    "pingDb": [],
+    "pingCheck": [
+      "key",
+      "prismaClient",
+      "options"
+    ]
+  },
+  "SequelizeHealthIndicator": {
+    "moduleRef": [],
+    "healthIndicatorService": [],
+    "constructor": [
+      "moduleRef",
+      "healthIndicatorService"
+    ],
+    "checkDependantPackages": [],
+    "getContextConnection": [],
+    "pingDb": [],
+    "pingCheck": [
+      "key",
+      "options"
+    ]
+  },
+  "TypeOrmHealthIndicator": {
+    "moduleRef": [],
+    "healthIndicatorService": [],
+    "constructor": [
+      "moduleRef",
+      "healthIndicatorService"
+    ],
+    "checkDependantPackages": [],
+    "getContextConnection": [],
+    "pingDb": [],
+    "pingCheck": [
+      "key",
+      "options"
+    ]
+  },
+  "checkDiskSpace": [
+    "path"
+  ],
+  "DiskHealthIndicator": {
+    "checkDiskSpace": [],
+    "healthIndicatorService": [],
+    "constructor": [
+      "checkDiskSpace",
+      "healthIndicatorService"
+    ],
+    "isOptionThresholdPercent": [],
+    "checkStorage": [
+      "key",
+      "options"
+    ]
+  },
+  "HealthIndicatorService": {
+    "cache": [],
+    "check": [
+      "key"
+    ]
+  },
+  "HealthIndicatorSession": {
+    "key": [],
+    "cache": [],
+    "constructor": [
+      "key",
+      "param"
+    ],
+    "compose": [
+      "status",
+      "data"
+    ],
+    "down": [
+      "data"
+    ],
+    "degraded": [
+      "data"
+    ],
+    "up": [
+      "data"
+    ],
+    "attempt": [
+      "fn"
+    ]
+  },
+  "HealthCheckAttempt": {
+    "session": [],
+    "fn": [],
+    "cacheKey": [],
+    "cacheStore": [],
+    "timeoutMs": [],
+    "cacheTtlMs": [],
+    "constructor": [
+      "session",
+      "fn",
+      "param",
+      "param"
+    ],
+    "toResult": [
+      "outcome",
+      "param"
+    ],
+    "execute": [],
+    "run": [],
+    "withTimeout": [
+      "ms"
+    ],
+    "cacheFor": [
+      "ttlMs"
+    ],
+    "then": []
+  },
+  "assertNotReserved": [
+    "data",
+    "keys"
+  ],
+  "toAdditionalData": [
+    "value"
+  ],
+  "errorMessage": [
+    "err"
+  ],
+  "HttpHealthIndicator": {
+    "logger": [],
+    "healthIndicatorService": [],
+    "constructor": [
+      "logger",
+      "healthIndicatorService"
+    ],
+    "getHttpService": [],
+    "generateHttpError": [],
+    "pingCheck": [
+      "key",
+      "url",
+      "param"
+    ],
+    "responseCheck": [
+      "key",
+      "url",
+      "callback",
+      "param"
+    ]
+  },
+  "MemoryHealthIndicator": {
+    "healthIndicatorService": [],
+    "constructor": [
+      "healthIndicatorService"
+    ],
+    "checkHeap": [
+      "key",
+      "heapUsedThreshold"
+    ],
+    "checkRSS": [
+      "key",
+      "rssThreshold"
+    ]
+  },
+  "GRPCHealthIndicator": {
+    "healthIndicatorService": [],
+    "clients": [],
+    "constructor": [
+      "healthIndicatorService"
+    ],
+    "onApplicationShutdown": [],
+    "getClient": [],
+    "checkService": [
+      "key",
+      "service",
+      "options"
+    ]
+  },
+  "MicroserviceHealthIndicator": {
+    "healthIndicatorService": [],
+    "constructor": [
+      "healthIndicatorService"
+    ],
+    "loadMicroservices": [],
+    "pingMicroservice": [],
+    "pingCheck": [
+      "key",
+      "options"
+    ]
+  },
+  "TerminusModule": {
+    "forRoot": [
+      "options"
+    ],
+    "forRootAsync": [
+      "options"
+    ],
+    "createAsyncProviders": []
+  },
+  "createOptionsProvider": [
+    "param"
+  ],
+  "createAsyncOptionsProvider": [
+    "options"
+  ],
+  "createTerminusProviders": [
+    "options"
+  ],
+  "createLoggerProvider": [
+    "options"
+  ],
+  "MISSING_REQUIRED_DEPENDENCY": [
+    "names",
+    "reason"
+  ],
+  "assertPackages": [
+    "packageNames",
+    "reason"
+  ],
+  "loadPackages": [
+    "packageNames"
+  ],
+  "loadPackage": [
+    "packageName"
+  ],
+  "isAxiosError": [
+    "err"
+  ],
+  "isError": [
+    "err"
+  ],
+  "rejectOnAbort": [
+    "promise",
+    "signal"
+  ]
+}

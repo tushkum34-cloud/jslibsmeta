@@ -1,0 +1,195 @@
+{
+  "HttpInstrumentation": {
+    "_spanNotEnded": [],
+    "_headerCapture": [],
+    "_httpPatched": [],
+    "_httpsPatched": [],
+    "constructor": [
+      "param"
+    ],
+    "_updateMetricInstruments": [],
+    "_recordServerDuration": [
+      "durationMs",
+      "attributes"
+    ],
+    "_recordClientDuration": [
+      "durationMs",
+      "attributes"
+    ],
+    "setConfig": [
+      "param"
+    ],
+    "init": [],
+    "_getHttpInstrumentation": [],
+    "_getHttpsInstrumentation": [],
+    "_getPatchIncomingRequestFunction": [
+      "component"
+    ],
+    "_getPatchOutgoingRequestFunction": [
+      "component"
+    ],
+    "_getPatchOutgoingGetFunction": [
+      "clientRequest"
+    ],
+    "_getPatchHttpsOutgoingRequestFunction": [
+      "component"
+    ],
+    "_setDefaultOptions": [
+      "options"
+    ],
+    "_getPatchHttpsOutgoingGetFunction": [
+      "clientRequest"
+    ],
+    "_traceClientRequest": [
+      "request",
+      "span",
+      "startTime",
+      "metricAttributes"
+    ],
+    "_incomingRequestFunction": [
+      "component",
+      "original"
+    ],
+    "_outgoingRequestFunction": [
+      "component",
+      "original"
+    ],
+    "_onServerResponseFinish": [
+      "request",
+      "response",
+      "span",
+      "metricAttributes",
+      "startTime"
+    ],
+    "_onOutgoingRequestError": [
+      "span",
+      "metricAttributes",
+      "startTime",
+      "error"
+    ],
+    "_onServerResponseError": [
+      "span",
+      "metricAttributes",
+      "startTime",
+      "error"
+    ],
+    "_startHttpSpan": [
+      "name",
+      "options",
+      "param"
+    ],
+    "_closeHttpSpan": [
+      "span",
+      "spanKind",
+      "startTime",
+      "metricAttributes"
+    ],
+    "_callResponseHook": [
+      "span",
+      "response"
+    ],
+    "_callRequestHook": [
+      "span",
+      "request"
+    ],
+    "_callStartSpanHook": [
+      "request",
+      "hookFunc"
+    ],
+    "_createHeaderCapture": []
+  },
+  "endHandler": [],
+  "redactQueryString": [
+    "searchParams",
+    "paramsToRedact"
+  ],
+  "getAbsoluteUrl": [
+    "requestUrl",
+    "headers",
+    "param",
+    "param"
+  ],
+  "parseResponseStatus": [
+    "kind",
+    "statusCode"
+  ],
+  "satisfiesPattern": [
+    "constant",
+    "pattern"
+  ],
+  "setSpanWithError": [
+    "span",
+    "error"
+  ],
+  "isCompressed": [
+    "headers"
+  ],
+  "stringUrlToHttpOptions": [
+    "stringUrl"
+  ],
+  "getRequestInfo": [
+    "logger",
+    "options",
+    "extraOptions"
+  ],
+  "isValidOptionsType": [
+    "options"
+  ],
+  "extractHostnameAndPort": [
+    "requestOptions"
+  ],
+  "getOutgoingRequestAttributes": [
+    "requestOptions",
+    "options",
+    "enableSyntheticSourceDetection"
+  ],
+  "getSyntheticType": [
+    "userAgent"
+  ],
+  "getOutgoingRequestAttributesOnResponse": [
+    "response"
+  ],
+  "getOutgoingStableRequestMetricAttributesOnResponse": [
+    "spanAttributes"
+  ],
+  "parseHostHeader": [
+    "hostHeader",
+    "proto"
+  ],
+  "getServerAddress": [
+    "request",
+    "component"
+  ],
+  "getRemoteClientAddress": [
+    "request"
+  ],
+  "removePortFromAddress": [
+    "input"
+  ],
+  "getInfoFromIncomingMessage": [
+    "component",
+    "request",
+    "logger"
+  ],
+  "getIncomingRequestAttributes": [
+    "request",
+    "options",
+    "logger"
+  ],
+  "getIncomingRequestAttributesOnResponse": [
+    "response"
+  ],
+  "getIncomingStableRequestMetricAttributesOnResponse": [
+    "spanAttributes"
+  ],
+  "headerCapture": [
+    "type",
+    "headers"
+  ],
+  "normalizeMethod": [
+    "method"
+  ],
+  "parseForwardedHeader": [
+    "header"
+  ]
+}
