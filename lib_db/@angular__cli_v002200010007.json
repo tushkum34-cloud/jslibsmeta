@@ -1,0 +1,1643 @@
+{
+  "default_1": [
+    "options"
+  ],
+  "ownKeys": [
+    "o"
+  ],
+  "AnalyticsCollector": {
+    "logger": [],
+    "trackingEventsQueue": [],
+    "requestParameterStringified": [],
+    "userParameters": [],
+    "constructor": [
+      "logger",
+      "userId",
+      "packageManagerInfo"
+    ],
+    "reportWorkspaceInfoEvent": [
+      "parameters"
+    ],
+    "reportRebuildRunEvent": [
+      "parameters"
+    ],
+    "reportBuildRunEvent": [
+      "parameters"
+    ],
+    "reportArchitectRunEvent": [
+      "parameters"
+    ],
+    "reportSchematicRunEvent": [
+      "parameters"
+    ],
+    "reportCommandRunEvent": [
+      "command"
+    ],
+    "event": [
+      "eventName",
+      "parameters"
+    ],
+    "periodFlush": [],
+    "flush": [],
+    "send": [
+      "data"
+    ]
+  },
+  "isPackageNameSafeForAnalytics": [
+    "name"
+  ],
+  "setAnalyticsConfig": [
+    "global",
+    "value"
+  ],
+  "promptAnalytics": [
+    "context",
+    "global",
+    "param"
+  ],
+  "getAnalyticsUserIdForLevel": [
+    "level"
+  ],
+  "getAnalyticsUserId": [
+    "context",
+    "param"
+  ],
+  "analyticsConfigValueToHumanFormat": [
+    "value"
+  ],
+  "getAnalyticsInfoString": [
+    "context"
+  ],
+  "ArchitectBaseCommandModule": {
+    "scope": [],
+    "missingTargetChoices": [],
+    "runSingleTarget": [
+      "target",
+      "options"
+    ],
+    "builderStatsToAnalyticsParameters": [
+      "stats",
+      "builderName"
+    ],
+    "_architectHost": [],
+    "getArchitectHost": [],
+    "_architect": [],
+    "getArchitect": [
+      "skipUndefinedArrayTransform"
+    ],
+    "getArchitectTargetOptions": [
+      "target"
+    ],
+    "warnOnMissingNodeModules": [],
+    "getArchitectTarget": [],
+    "onMissingTarget": [
+      "defaultMessage"
+    ],
+    "getMissingTargetPackageToInstall": [
+      "choices"
+    ]
+  },
+  "ArchitectCommandModule": {
+    "multiTarget": [],
+    "findDefaultBuilderName": [
+      "project",
+      "target"
+    ],
+    "builder": [
+      "argv"
+    ],
+    "run": [
+      "options"
+    ],
+    "getArchitectProject": [],
+    "getProjectNamesByTarget": [],
+    "getProjectChoices": [],
+    "getConfigurationChoices": []
+  },
+  "accept": [
+    "f"
+  ],
+  "CommandModule": {
+    "context": [],
+    "command": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "shouldReportAnalytics": [],
+    "scope": [],
+    "optionsWithAnalytics": [],
+    "constructor": [
+      "context"
+    ],
+    "fullDescribe": [],
+    "commandName": [],
+    "builder": [
+      "argv"
+    ],
+    "run": [
+      "options"
+    ],
+    "handler": [
+      "args"
+    ],
+    "getAnalytics": [],
+    "addSchemaOptionsToCommand": [
+      "localYargs",
+      "options"
+    ],
+    "getWorkspaceOrThrow": [],
+    "getAnalyticsParameters": [
+      "options"
+    ],
+    "reportCommandRunAnalytics": [],
+    "reportWorkspaceInfoAnalytics": []
+  },
+  "CommandModuleError": {},
+  "runCommand": [
+    "args",
+    "logger"
+  ],
+  "getCommandsToRegister": [
+    "commandName"
+  ],
+  "getConfiguredPackageManager": [],
+  "getPackageManager": [
+    "source"
+  ],
+  "SchematicsCommandModule": {
+    "scope": [],
+    "allowPrivateSchematics": [],
+    "builder": [
+      "argv"
+    ],
+    "getSchematicOptions": [
+      "collection",
+      "schematicName",
+      "workflow"
+    ],
+    "getOrCreateWorkflowForBuilder": [
+      "collectionName"
+    ],
+    "getOrCreateWorkflowForExecution": [
+      "collectionName",
+      "options"
+    ],
+    "getSchematicCollections": [],
+    "parseSchematicInfo": [
+      "schematic"
+    ],
+    "runSchematic": [
+      "options"
+    ],
+    "getProjectName": [],
+    "getResolvePaths": []
+  },
+  "getSchematicCollections": [
+    "configSection"
+  ],
+  "addCommandModuleToYargs": [
+    "commandModule",
+    "context"
+  ],
+  "jsonHelpUsage": [
+    "localYargs"
+  ],
+  "parseDescription": [
+    "rawDescription"
+  ],
+  "checkStringMap": [
+    "keyValuePairOptions",
+    "args"
+  ],
+  "coerceToStringMap": [
+    "value"
+  ],
+  "isStringMap": [
+    "node"
+  ],
+  "isSupportedPrimitiveType": [
+    "value"
+  ],
+  "isSupportedArrayItemSchema": [
+    "schema"
+  ],
+  "getSupportedTypes": [
+    "current"
+  ],
+  "getEnumValues": [
+    "current"
+  ],
+  "getDefaultValue": [
+    "current",
+    "type"
+  ],
+  "getAliases": [
+    "current"
+  ],
+  "parseJsonSchemaToOptions": [
+    "registry",
+    "schema",
+    "param"
+  ],
+  "visitor": [
+    "current",
+    "pointer",
+    "parentSchema"
+  ],
+  "addSchemaOptionsToCommand": [
+    "localYargs",
+    "options",
+    "includeDefaultValues"
+  ],
+  "createNormalizeOptionsMiddleware": [
+    "localeYargs"
+  ],
+  "SchematicEngineHost": {
+    "_resolveReferenceString": [
+      "refString",
+      "parentPath",
+      "collectionDescription"
+    ]
+  },
+  "shouldWrapSchematic": [
+    "schematicFile",
+    "schematicEncapsulation"
+  ],
+  "wrap": [
+    "schematicFile",
+    "schematicDirectory",
+    "moduleCache",
+    "exportName"
+  ],
+  "customRequire": [
+    "id"
+  ],
+  "loadBuiltinModule": [
+    "id"
+  ],
+  "removeLeadingSlash": [
+    "value"
+  ],
+  "subscribeToWorkflow": [
+    "workflow",
+    "logger"
+  ],
+  "AddCommandModule": {
+    "command": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "allowPrivateSchematics": [],
+    "schematicName": [],
+    "rootRequire": [],
+    "builder": [
+      "argv"
+    ],
+    "run": [
+      "options"
+    ],
+    "findCompatiblePackageVersionTask": [
+      "context",
+      "task",
+      "options"
+    ],
+    "loadPackageInfoTask": [
+      "context",
+      "task",
+      "options"
+    ],
+    "confirmInstallationTask": [
+      "context",
+      "task"
+    ],
+    "cleanUpTemporaryDependency": [
+      "packageName"
+    ],
+    "installPackageTask": [
+      "context",
+      "task",
+      "options"
+    ],
+    "isProjectVersionValid": [
+      "packageIdentifier"
+    ],
+    "getCollectionName": [],
+    "isPackageInstalled": [
+      "name"
+    ],
+    "executeSchematic": [
+      "options"
+    ],
+    "findProjectVersion": [
+      "name"
+    ],
+    "getProjectManifest": [],
+    "resolvePackageJson": [
+      "name"
+    ],
+    "getPeerDependencyConflicts": [
+      "manifest"
+    ]
+  },
+  "CommandError": {},
+  "AnalyticsCommandModule": {
+    "command": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "builder": [
+      "localYargs"
+    ],
+    "run": [
+      "_options"
+    ]
+  },
+  "AnalyticsInfoCommandModule": {
+    "command": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "builder": [
+      "localYargs"
+    ],
+    "run": [
+      "_options"
+    ]
+  },
+  "AnalyticsSettingModule": {
+    "longDescriptionPath": [],
+    "builder": [
+      "localYargs"
+    ]
+  },
+  "AnalyticsDisableModule": {
+    "command": [],
+    "aliases": [],
+    "describe": [],
+    "run": [
+      "param"
+    ]
+  },
+  "AnalyticsEnableModule": {
+    "command": [],
+    "aliases": [],
+    "describe": [],
+    "run": [
+      "param"
+    ]
+  },
+  "AnalyticsPromptModule": {
+    "command": [],
+    "describe": [],
+    "run": [
+      "param"
+    ]
+  },
+  "BuildCommandModule": {
+    "multiTarget": [],
+    "command": [],
+    "aliases": [],
+    "describe": [],
+    "longDescriptionPath": []
+  },
+  "CacheCleanModule": {
+    "command": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "scope": [],
+    "builder": [
+      "localYargs"
+    ],
+    "run": []
+  },
+  "CacheCommandModule": {
+    "command": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "scope": [],
+    "builder": [
+      "localYargs"
+    ],
+    "run": [
+      "_options"
+    ]
+  },
+  "CacheInfoCommandModule": {
+    "command": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "scope": [],
+    "builder": [
+      "localYargs"
+    ],
+    "run": [],
+    "getSizeOfDirectory": [
+      "path"
+    ],
+    "formatSize": [
+      "size"
+    ],
+    "effectiveEnabledStatus": [
+      "cacheConfig"
+    ]
+  },
+  "CacheDisableModule": {
+    "command": [],
+    "aliases": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "scope": [],
+    "builder": [
+      "localYargs"
+    ],
+    "run": []
+  },
+  "CacheEnableModule": {
+    "command": [],
+    "aliases": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "scope": [],
+    "builder": [
+      "localYargs"
+    ],
+    "run": []
+  },
+  "updateCacheConfig": [
+    "workspace",
+    "key",
+    "value"
+  ],
+  "getCacheBasePath": [
+    "workspaceRoot",
+    "cachePathSetting"
+  ],
+  "getCacheConfig": [
+    "workspace"
+  ],
+  "CompletionCommandModule": {
+    "command": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "builder": [
+      "localYargs"
+    ],
+    "run": []
+  },
+  "CompletionScriptCommandModule": {
+    "command": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "builder": [
+      "localYargs"
+    ],
+    "run": []
+  },
+  "ConfigCommandModule": {
+    "command": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "builder": [
+      "localYargs"
+    ],
+    "run": [
+      "options"
+    ],
+    "get": [
+      "jsonFile",
+      "options"
+    ],
+    "set": [
+      "options"
+    ]
+  },
+  "normalizeUUIDValue": [
+    "v"
+  ],
+  "parseJsonPath": [
+    "path"
+  ],
+  "normalizeValue": [
+    "value"
+  ],
+  "DeployCommandModule": {
+    "missingTargetChoices": [],
+    "multiTarget": [],
+    "command": [],
+    "longDescriptionPath": [],
+    "describe": []
+  },
+  "E2eCommandModule": {
+    "missingTargetChoices": [],
+    "multiTarget": [],
+    "command": [],
+    "aliases": [],
+    "describe": [],
+    "longDescriptionPath": []
+  },
+  "ExtractI18nCommandModule": {
+    "multiTarget": [],
+    "command": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "findDefaultBuilderName": [
+      "project"
+    ]
+  },
+  "GenerateCommandModule": {
+    "command": [],
+    "aliases": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "builder": [
+      "argv"
+    ],
+    "run": [
+      "options"
+    ],
+    "getCollectionNames": [],
+    "shouldAddCollectionNameAsPartOfCommand": [],
+    "generateCommandAliasesStrings": [
+      "collectionName",
+      "schematicAliases"
+    ],
+    "generateCommandString": [
+      "collectionName",
+      "schematicName",
+      "options"
+    ],
+    "getSchematics": [],
+    "listSchematicAliases": [
+      "collection",
+      "schematicName"
+    ],
+    "getSchematicsToRegister": []
+  },
+  "LintCommandModule": {
+    "missingTargetChoices": [],
+    "multiTarget": [],
+    "command": [],
+    "longDescriptionPath": [],
+    "describe": []
+  },
+  "AwesomeCommandModule": {
+    "command": [],
+    "describe": [],
+    "deprecated": [],
+    "longDescriptionPath": [],
+    "builder": [
+      "localYargs"
+    ],
+    "run": []
+  },
+  "pickOne": [
+    "of"
+  ],
+  "McpCommandModule": {
+    "command": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "builder": [
+      "localYargs"
+    ],
+    "run": [
+      "options"
+    ]
+  },
+  "LocalDevserver": {
+    "host": [],
+    "port": [],
+    "workspacePath": [],
+    "project": [],
+    "devserverProcess": [],
+    "serverLogs": [],
+    "buildInProgress": [],
+    "latestBuildLogStartIndex": [],
+    "latestBuildStatus": [],
+    "constructor": [
+      "param"
+    ],
+    "start": [],
+    "addLog": [
+      "log"
+    ],
+    "stop": [],
+    "getServerLogs": [],
+    "getMostRecentBuild": [],
+    "isBuilding": []
+  },
+  "getDevserverKey": [
+    "workspacePath",
+    "projectName"
+  ],
+  "createDevServerNotFoundError": [
+    "devservers"
+  ],
+  "resolveNgCommand": [
+    "args",
+    "cwd"
+  ],
+  "createRootRestrictedHost": [
+    "baseHost",
+    "param"
+  ],
+  "checkPath": [
+    "path"
+  ],
+  "processStreamLines": [
+    "stream",
+    "lineCallback"
+  ],
+  "createMcpServer": [
+    "options",
+    "logger"
+  ],
+  "assembleToolDeclarations": [
+    "stableDeclarations",
+    "experimentalDeclarations",
+    "options"
+  ],
+  "registerInstructionsResource": [
+    "server"
+  ],
+  "getBundledBestPractices": [],
+  "getVersionSpecificBestPractices": [
+    "workspacePath",
+    "logger",
+    "server"
+  ],
+  "createBestPracticesHandler": [
+    "param"
+  ],
+  "localhostAddress": [
+    "port"
+  ],
+  "startDevserver": [
+    "input",
+    "context"
+  ],
+  "stopDevserver": [
+    "input",
+    "context"
+  ],
+  "wait": [
+    "ms"
+  ],
+  "waitForDevserverBuild": [
+    "input",
+    "context"
+  ],
+  "performWait": [
+    "devserver",
+    "timeout"
+  ],
+  "createDocSearchHandler": [
+    "param"
+  ],
+  "performSearch": [
+    "query",
+    "version"
+  ],
+  "extractMainContent": [
+    "htmlStream"
+  ],
+  "formatHitToParts": [
+    "hit"
+  ],
+  "analyzeForUnsupportedZoneUses": [
+    "sourceFile"
+  ],
+  "findUnsupportedZoneUsages": [
+    "sourceFile",
+    "ngZoneImport"
+  ],
+  "migrateSingleFile": [
+    "sourceFile",
+    "host",
+    "extras"
+  ],
+  "migrateTestFile": [
+    "sourceFile",
+    "host"
+  ],
+  "searchForGlobalZoneless": [
+    "startPath",
+    "host"
+  ],
+  "createProvideZonelessForTestsSetupPrompt": [
+    "testFilePath"
+  ],
+  "createUnsupportedZoneUsagesMessage": [
+    "usages",
+    "filePath"
+  ],
+  "generateZonelessMigrationInstructionsForComponent": [
+    "filePath"
+  ],
+  "createTestDebuggingGuideForNonActionableInput": [
+    "fileOrDirPath"
+  ],
+  "createFixResponseForZoneTests": [
+    "sourceFile"
+  ],
+  "testDebuggingGuideText": [
+    "fileName"
+  ],
+  "createResponse": [
+    "text"
+  ],
+  "sendDebugMessage": [
+    "message",
+    "param"
+  ],
+  "loadTypescript": [],
+  "getImportSpecifier": [
+    "sourceFile",
+    "moduleName",
+    "specifierName"
+  ],
+  "getImportSpecifiers": [
+    "sourceFile",
+    "moduleName",
+    "specifierOrSpecifiers",
+    "param"
+  ],
+  "findImportSpecifier": [
+    "nodes",
+    "specifierName"
+  ],
+  "createSourceFile": [
+    "file",
+    "host"
+  ],
+  "registerZonelessMigrationTool": [
+    "fileOrDirPath",
+    "host",
+    "extras"
+  ],
+  "discoverAndCategorizeFiles": [
+    "fileOrDirPath",
+    "host",
+    "extras"
+  ],
+  "categorizeFile": [
+    "sourceFile",
+    "host",
+    "extras",
+    "categorizedFiles"
+  ],
+  "rankComponentFilesForMigration": [
+    "param",
+    "componentFiles"
+  ],
+  "getTestFilePath": [
+    "filePath",
+    "host"
+  ],
+  "isStyleLanguage": [
+    "value"
+  ],
+  "getStyleLanguageFromExtension": [
+    "extension"
+  ],
+  "isIgnorableFileError": [
+    "error"
+  ],
+  "findAngularJsonFiles": [
+    "rootDir",
+    "allowedRealRoots"
+  ],
+  "findAngularCoreVersion": [
+    "startDir",
+    "cache",
+    "searchRoot"
+  ],
+  "getUnitTestFramework": [
+    "testTarget"
+  ],
+  "getProjectStyleLanguage": [
+    "project",
+    "workspace",
+    "fullSourceRoot"
+  ],
+  "loadAndParseWorkspace": [
+    "configFile",
+    "seenPaths"
+  ],
+  "processConfigFile": [
+    "configFile",
+    "searchRoot",
+    "seenPaths",
+    "versionCache"
+  ],
+  "deduplicateSearchRoots": [
+    "roots"
+  ],
+  "createListProjectsHandler": [
+    "param"
+  ],
+  "BuildTargetStrategy": {
+    "canHandle": [
+      "targetName",
+      "builder"
+    ],
+    "execute": [
+      "input",
+      "context"
+    ]
+  },
+  "GenericTargetStrategy": {
+    "canHandle": [
+      "targetName",
+      "builder"
+    ],
+    "execute": [
+      "input",
+      "context"
+    ]
+  },
+  "serializeOptions": [
+    "options",
+    "param"
+  ],
+  "runTarget": [
+    "input",
+    "context"
+  ],
+  "UnitTestTargetStrategy": {
+    "canHandle": [
+      "targetName",
+      "builder"
+    ],
+    "execute": [
+      "input",
+      "context"
+    ]
+  },
+  "declareTool": [
+    "declaration"
+  ],
+  "registerTools": [
+    "server",
+    "context",
+    "declarations"
+  ],
+  "createStructuredContentOutput": [
+    "structuredContent"
+  ],
+  "getCommandErrorLogs": [
+    "e"
+  ],
+  "findAngularJsonDir": [
+    "startDir",
+    "param"
+  ],
+  "getProject": [
+    "context",
+    "name"
+  ],
+  "getDefaultProjectName": [
+    "workspace"
+  ],
+  "isWithinAllowedRoot": [
+    "root",
+    "targetPath"
+  ],
+  "getAllowedWorkspaceRoots": [
+    "server"
+  ],
+  "isAllowedWorkspacePath": [
+    "server",
+    "workspacePath"
+  ],
+  "resolveWorkspaceAndProject": [
+    "param"
+  ],
+  "NewCommandModule": {
+    "schematicName": [],
+    "scope": [],
+    "allowPrivateSchematics": [],
+    "command": [],
+    "aliases": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "builder": [
+      "argv"
+    ],
+    "run": [
+      "options"
+    ],
+    "getCollectionFromConfig": []
+  },
+  "RunCommandModule": {
+    "scope": [],
+    "command": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "builder": [
+      "argv"
+    ],
+    "run": [
+      "options"
+    ],
+    "makeTargetSpecifier": [
+      "options"
+    ],
+    "getTargetChoices": []
+  },
+  "ServeCommandModule": {
+    "multiTarget": [],
+    "command": [],
+    "aliases": [],
+    "describe": [],
+    "longDescriptionPath": []
+  },
+  "TestCommandModule": {
+    "multiTarget": [],
+    "command": [],
+    "aliases": [],
+    "describe": [],
+    "longDescriptionPath": []
+  },
+  "UpdateCommandModule": {
+    "scope": [],
+    "shouldReportAnalytics": [],
+    "resolvePaths": [],
+    "command": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "builder": [
+      "localYargs"
+    ],
+    "run": [
+      "options"
+    ],
+    "migrateOnly": [
+      "workflow",
+      "packageName",
+      "rootDependencies",
+      "options",
+      "packageManager"
+    ],
+    "updatePackagesAndMigrate": [
+      "workflow",
+      "rootDependencies",
+      "options",
+      "packages",
+      "packageManager"
+    ]
+  },
+  "logVerbose": [
+    "message"
+  ],
+  "readPackageManifest": [
+    "manifestPath"
+  ],
+  "resolveFallbackMigrations": [
+    "workspaceRoot",
+    "plan"
+  ],
+  "RegistryClient": {
+    "packageManager": [],
+    "logger": [],
+    "minReleaseAge": [],
+    "getRegistryName": [],
+    "metadataCache": [],
+    "manifestCache": [],
+    "constructor": [
+      "packageManager",
+      "logger",
+      "param",
+      "getRegistryName"
+    ],
+    "getMetadata": [
+      "packageName"
+    ],
+    "getManifest": [
+      "packageName",
+      "version"
+    ]
+  },
+  "isReleaseAgeSatisfied": [
+    "registryClient",
+    "metadata",
+    "version"
+  ],
+  "getSatisfyingVersion": [
+    "registryClient",
+    "metadata",
+    "range",
+    "next"
+  ],
+  "angularMajorCompatGuarantee": [
+    "range"
+  ],
+  "_updatePeerVersion": [
+    "infoMap",
+    "name",
+    "range"
+  ],
+  "_validateForwardPeerDependencies": [
+    "name",
+    "infoMap",
+    "logger"
+  ],
+  "_validateReversePeerDependencies": [
+    "name",
+    "version",
+    "infoMap",
+    "logger",
+    "next"
+  ],
+  "_validateUpdatePackages": [
+    "infoMap",
+    "force",
+    "next",
+    "logger"
+  ],
+  "_getUpdateMetadata": [
+    "packageJson",
+    "logger"
+  ],
+  "isPnpActive": [
+    "workspaceRoot"
+  ],
+  "findPackageJson": [
+    "workspaceDir",
+    "packageName"
+  ],
+  "getInstalledPackageJson": [
+    "packageName",
+    "workspaceRoot"
+  ],
+  "getInstalledVersion": [
+    "packageName",
+    "workspaceRoot"
+  ],
+  "_buildLocalPackageInfo": [
+    "name",
+    "allDependencies",
+    "workspaceRoot"
+  ],
+  "_buildPackageInfo": [
+    "packages",
+    "allDependencies",
+    "npmPackageJson",
+    "workspaceRoot",
+    "registryClient",
+    "logger"
+  ],
+  "splitPackageName": [
+    "pkg"
+  ],
+  "_buildPackageList": [
+    "options",
+    "allDependencies",
+    "logger"
+  ],
+  "resolvePackageVersion": [
+    "registryClient",
+    "metadata",
+    "range",
+    "param"
+  ],
+  "_addPackageGroup": [
+    "packages",
+    "allDependencies",
+    "metadata",
+    "registryClient",
+    "logger"
+  ],
+  "_addPeerDependencies": [
+    "packages",
+    "allDependencies",
+    "npmPackageJson",
+    "workspaceRoot",
+    "registryClient",
+    "logger"
+  ],
+  "_formatVersion": [
+    "v"
+  ],
+  "getRegistryNameAndRange": [
+    "name",
+    "specifier"
+  ],
+  "isPkgFromRegistry": [
+    "name",
+    "specifier"
+  ],
+  "checkCatalogUpdates": [
+    "normalizedPackages",
+    "packageJsonContent",
+    "registryClient",
+    "workspaceRoot",
+    "options"
+  ],
+  "resolveUserUpdatePlan": [
+    "options",
+    "packageManager",
+    "logger"
+  ],
+  "getDependencies": [
+    "deps"
+  ],
+  "getRegistryName": [
+    "name"
+  ],
+  "getOrFetchPackageMetadata": [
+    "packageName"
+  ],
+  "printUpdateUsageMessage": [
+    "infoMap",
+    "registryClient",
+    "logger",
+    "param"
+  ],
+  "applyUpdatePlan": [
+    "workspaceRoot",
+    "plan",
+    "logger"
+  ],
+  "updateDependency": [
+    "deps",
+    "name",
+    "newVersion"
+  ],
+  "coerceVersionNumber": [
+    "version"
+  ],
+  "checkCLIVersion": [
+    "packagesToUpdate",
+    "logger",
+    "packageManager",
+    "param"
+  ],
+  "getCLIUpdateRunnerVersion": [
+    "packagesToUpdate",
+    "next"
+  ],
+  "runTempBinary": [
+    "packageName",
+    "packageManager",
+    "param"
+  ],
+  "shouldForcePackageManager": [
+    "packageManager",
+    "logger",
+    "verbose"
+  ],
+  "execGit": [
+    "args",
+    "input"
+  ],
+  "checkCleanGit": [
+    "root"
+  ],
+  "isPathInsideRoot": [
+    "filePath",
+    "root",
+    "topLevel"
+  ],
+  "hasChangesToCommit": [],
+  "createCommit": [
+    "message"
+  ],
+  "findCurrentGitSha": [],
+  "getShortHash": [
+    "commitHash"
+  ],
+  "executeSchematic": [
+    "workflow",
+    "logger",
+    "collection",
+    "schematic",
+    "param"
+  ],
+  "executeMigration": [
+    "workflow",
+    "logger",
+    "packageName",
+    "collectionPath",
+    "migrationName",
+    "param"
+  ],
+  "executeMigrations": [
+    "workflow",
+    "logger",
+    "packageName",
+    "collectionPath",
+    "from",
+    "to",
+    "param"
+  ],
+  "executePackageMigrations": [
+    "workflow",
+    "logger",
+    "migrations",
+    "packageName",
+    "param"
+  ],
+  "commitChanges": [
+    "logger",
+    "message"
+  ],
+  "getOptionalMigrationsToRun": [
+    "logger",
+    "optionalMigrations",
+    "packageName"
+  ],
+  "getMigrationTitleAndDescription": [
+    "migration"
+  ],
+  "compareMigrations": [
+    "a",
+    "b"
+  ],
+  "VersionCommandModule": {
+    "command": [],
+    "aliases": [],
+    "describe": [],
+    "longDescriptionPath": [],
+    "builder": [
+      "localYargs"
+    ],
+    "run": [
+      "options"
+    ],
+    "formatPackageTable": [
+      "versions"
+    ]
+  },
+  "gatherVersionInfo": [
+    "context"
+  ],
+  "getVersion": [
+    "moduleName",
+    "workspaceRequire"
+  ],
+  "findLockfiles": [
+    "host",
+    "directory",
+    "logger"
+  ],
+  "isDirectory": [
+    "host",
+    "path"
+  ],
+  "discover": [
+    "host",
+    "startDir",
+    "logger"
+  ],
+  "PackageManagerError": {
+    "stdout": [],
+    "stderr": [],
+    "exitCode": [],
+    "constructor": [
+      "message",
+      "stdout",
+      "stderr",
+      "exitCode"
+    ]
+  },
+  "getPackageManagerVersion": [
+    "host",
+    "cwd",
+    "name",
+    "logger"
+  ],
+  "determinePackageManager": [
+    "host",
+    "cwd",
+    "param",
+    "logger",
+    "dryRun"
+  ],
+  "createPackageManager": [
+    "options"
+  ],
+  "isKnownNotFound": [
+    "error"
+  ],
+  "PackageManager": {
+    "host": [],
+    "cwd": [],
+    "descriptor": [],
+    "options": [],
+    "constructor": [
+      "host",
+      "cwd",
+      "descriptor",
+      "param"
+    ],
+    "name": [],
+    "ensureInstalled": [],
+    "add": [
+      "packageName",
+      "save",
+      "asDevDependency",
+      "noLockfile",
+      "ignoreScripts",
+      "param"
+    ],
+    "install": [
+      "param"
+    ],
+    "getCurrentPackageName": [],
+    "getVersion": [],
+    "getInstalledPackage": [
+      "packageName"
+    ],
+    "getProjectDependencies": [],
+    "getRegistryMetadata": [
+      "packageName",
+      "param"
+    ],
+    "getRegistryManifest": [
+      "packageName",
+      "version",
+      "param"
+    ],
+    "getManifest": [
+      "specifier",
+      "param"
+    ],
+    "getTemporaryDirectory": [],
+    "acquireTempPackage": [
+      "specifier",
+      "param"
+    ],
+    "getMinimumReleaseAge": []
+  },
+  "cleanup": [],
+  "sanitizePnpmWorkspace": [
+    "content"
+  ],
+  "sanitizeYarnRc": [
+    "content"
+  ],
+  "logStdout": [
+    "stdout",
+    "logger"
+  ],
+  "parseJsonLines": [
+    "output",
+    "logger"
+  ],
+  "parseNpmLikeDependencies": [
+    "stdout",
+    "logger",
+    "options"
+  ],
+  "parseYarnClassicDependencies": [
+    "stdout",
+    "logger"
+  ],
+  "isValidManifest": [
+    "obj"
+  ],
+  "isValidMetadata": [
+    "obj"
+  ],
+  "parseNpmLikeManifest": [
+    "stdout",
+    "logger"
+  ],
+  "parseNpmLikeMetadata": [
+    "stdout",
+    "logger"
+  ],
+  "parseYarnClassicManifest": [
+    "stdout",
+    "logger"
+  ],
+  "parseYarnClassicMetadata": [
+    "stdout",
+    "logger"
+  ],
+  "parseNpmLikeError": [
+    "output",
+    "logger"
+  ],
+  "parseYarnClassicError": [
+    "output",
+    "logger"
+  ],
+  "parseBunDependencies": [
+    "stdout",
+    "logger"
+  ],
+  "parseYarnModernDependencies": [
+    "stdout",
+    "logger"
+  ],
+  "parsePnpmReleaseAge": [
+    "output",
+    "version"
+  ],
+  "parseYarnReleaseAge": [
+    "output",
+    "version"
+  ],
+  "parseNpmBeforeDate": [
+    "output"
+  ],
+  "supportColor": [
+    "param"
+  ],
+  "considerSettingUpAutocompletion": [
+    "command",
+    "logger"
+  ],
+  "getCompletionConfig": [],
+  "setCompletionConfig": [
+    "config"
+  ],
+  "shouldPromptForAutocompletionSetup": [
+    "command",
+    "config"
+  ],
+  "promptForAutocompletion": [],
+  "initializeAutocomplete": [],
+  "getShellRunCommandCandidates": [
+    "shell",
+    "home"
+  ],
+  "hasGlobalCliInstall": [],
+  "AngularWorkspace": {
+    "workspace": [],
+    "filePath": [],
+    "basePath": [],
+    "constructor": [
+      "workspace",
+      "filePath"
+    ],
+    "extensions": [],
+    "projects": [],
+    "getCli": [],
+    "getProjectCli": [
+      "projectName"
+    ],
+    "save": [],
+    "load": [
+      "workspaceFilePath"
+    ]
+  },
+  "isJsonObject": [
+    "value"
+  ],
+  "createWorkspaceHost": [],
+  "xdgConfigHome": [
+    "home",
+    "configFile"
+  ],
+  "xdgConfigHomeOld": [
+    "home"
+  ],
+  "projectFilePath": [
+    "projectPath"
+  ],
+  "globalFilePath": [],
+  "getWorkspace": [
+    "level"
+  ],
+  "getWorkspaceRaw": [
+    "param"
+  ],
+  "validateWorkspace": [
+    "data",
+    "isGlobal"
+  ],
+  "findProjectByPath": [
+    "workspace",
+    "location"
+  ],
+  "isInside": [
+    "base",
+    "potential"
+  ],
+  "getProjectByCwd": [
+    "workspace"
+  ],
+  "getSchematicDefaults": [
+    "collection",
+    "schematic",
+    "project"
+  ],
+  "mergeOptions": [
+    "source"
+  ],
+  "isWarningEnabled": [
+    "warning"
+  ],
+  "getWarning": [
+    "source"
+  ],
+  "isPresent": [
+    "variable"
+  ],
+  "parseTristate": [
+    "variable"
+  ],
+  "getEOL": [
+    "content"
+  ],
+  "isError": [
+    "value"
+  ],
+  "assertIsError": [
+    "value"
+  ],
+  "findUp": [
+    "names",
+    "from"
+  ],
+  "findUpSync": [
+    "names",
+    "from"
+  ],
+  "JSONFile": {
+    "content": [],
+    "constructor": [
+      "path"
+    ],
+    "JsonAst": [],
+    "get": [
+      "jsonPath"
+    ],
+    "modify": [
+      "jsonPath",
+      "value",
+      "insertInOrder"
+    ],
+    "delete": [
+      "jsonPath"
+    ],
+    "save": []
+  },
+  "readAndParseJson": [
+    "path"
+  ],
+  "formatError": [
+    "path",
+    "errors"
+  ],
+  "parseJson": [
+    "content"
+  ],
+  "writeErrorToLogFile": [
+    "error"
+  ],
+  "memoize": [
+    "target",
+    "context"
+  ],
+  "isNonPrimitive": [
+    "value"
+  ],
+  "isJSONSerializable": [
+    "value"
+  ],
+  "isNodeVersionSupported": [],
+  "isNodeVersionMinSupported": [],
+  "batchFilesByArgumentLength": [
+    "files",
+    "baseLength",
+    "maxLength"
+  ],
+  "formatFiles": [
+    "cwd",
+    "files"
+  ],
+  "findWorkspaceFile": [
+    "param"
+  ],
+  "containsCliDep": [
+    "obj"
+  ],
+  "askConfirmation": [
+    "message",
+    "defaultResponse",
+    "noTTYResponse"
+  ],
+  "askQuestion": [
+    "message",
+    "choices",
+    "defaultResponseIndex",
+    "noTTYResponse"
+  ],
+  "askChoices": [
+    "message",
+    "choices",
+    "noTTYResponse"
+  ],
+  "isTTY": [
+    "param"
+  ],
+  "Version": {
+    "full": [],
+    "major": [],
+    "minor": [],
+    "patch": [],
+    "constructor": [
+      "full"
+    ]
+  }
+}
