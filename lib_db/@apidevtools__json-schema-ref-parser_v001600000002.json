@@ -1,0 +1,780 @@
+{
+  "bundle": [
+    "parser",
+    "options"
+  ],
+  "crawl": [
+    "obj",
+    "path",
+    "scopeBase",
+    "dynamicIdScope",
+    "legacyIdScope",
+    "$refs",
+    "options",
+    "seen",
+    "external"
+  ],
+  "inventory$Ref": [
+    "$refParent",
+    "$refKey",
+    "path",
+    "scopeBase",
+    "dynamicIdScope",
+    "nestedIdScope",
+    "pathFromRoot",
+    "indirections",
+    "inventory",
+    "$refs",
+    "options",
+    "embeddedResourcePaths",
+    "seen"
+  ],
+  "remap": [
+    "inventory",
+    "options",
+    "rootId",
+    "rootScopeBase"
+  ],
+  "findInInventory": [
+    "inventory",
+    "$refParent",
+    "$refKey"
+  ],
+  "removeFromInventory": [
+    "inventory",
+    "entry"
+  ],
+  "fixRefsThroughRefs": [
+    "inventory",
+    "schema"
+  ],
+  "resolvePathThroughRefs": [
+    "schema",
+    "refPath"
+  ],
+  "walkPath": [
+    "schema",
+    "path"
+  ],
+  "qualifyPathFromRoot": [
+    "entry",
+    "pathFromRoot",
+    "rootId",
+    "rootScopeBase"
+  ],
+  "referenceToResource": [
+    "entry"
+  ],
+  "hasSchemaIdentifier": [
+    "value",
+    "param"
+  ],
+  "containsObject": [
+    "root",
+    "target"
+  ],
+  "visit": [
+    "node",
+    "scopeBase",
+    "inheritedLegacyId",
+    "sourcePath"
+  ],
+  "dereference": [
+    "parser",
+    "options"
+  ],
+  "dereference$Ref": [
+    "$ref",
+    "path",
+    "scopeBase",
+    "dynamicIdScope",
+    "pathFromRoot",
+    "parents",
+    "processedObjects",
+    "dereferencedCache",
+    "$refs",
+    "options",
+    "startTime",
+    "depth"
+  ],
+  "checkDereferenceTimeout": [
+    "startTime",
+    "options"
+  ],
+  "foundCircularReference": [
+    "keyPath",
+    "$refs",
+    "options"
+  ],
+  "$RefParser": {
+    "schema": [],
+    "$refs": [],
+    "parse": [],
+    "resolve": [],
+    "bundle": [],
+    "dereference": []
+  },
+  "rejectNormalizationError": [
+    "args",
+    "err"
+  ],
+  "finalize": [
+    "parser"
+  ],
+  "normalizeArgs": [
+    "_args",
+    "param"
+  ],
+  "getJsonSchemaRefParserDefaultOptions": [],
+  "getNewOptions": [
+    "options"
+  ],
+  "merge": [
+    "target",
+    "source"
+  ],
+  "isMergeable": [
+    "val"
+  ],
+  "parse": [
+    "u"
+  ],
+  "readFile": [
+    "file",
+    "options",
+    "$refs"
+  ],
+  "parseFile": [
+    "file",
+    "options",
+    "$refs"
+  ],
+  "isEmpty": [
+    "value"
+  ],
+  "Pointer": {
+    "$ref": [],
+    "path": [],
+    "originalPath": [],
+    "scopeBase": [],
+    "legacyIdScope": [],
+    "value": [],
+    "circular": [],
+    "chainCircular": [],
+    "indirections": [],
+    "constructor": [
+      "$ref",
+      "path",
+      "friendlyPath"
+    ],
+    "resolve": [
+      "obj",
+      "options",
+      "pathFromRoot",
+      "param",
+      "param"
+    ],
+    "set": [
+      "obj",
+      "value",
+      "options"
+    ],
+    "parse": [
+      "path",
+      "originalPath"
+    ],
+    "join": [
+      "base",
+      "tokens"
+    ]
+  },
+  "safelyDecodeURI": [
+    "value"
+  ],
+  "resolveIf$Ref": [
+    "pointer",
+    "options",
+    "pathFromRoot",
+    "param"
+  ],
+  "setValue": [
+    "pointer",
+    "token",
+    "value"
+  ],
+  "assertSafeSetTokens": [
+    "pointerPath",
+    "tokens"
+  ],
+  "unwrapOrThrow": [
+    "value"
+  ],
+  "isRootPath": [
+    "pathFromRoot"
+  ],
+  "isAliasedResource": [
+    "$ref"
+  ],
+  "$Ref": {
+    "path": [],
+    "sourcePath": [],
+    "value": [],
+    "$refs": [],
+    "pathType": [],
+    "dynamicIdScope": [],
+    "legacyIdScope": [],
+    "errors": [],
+    "constructor": [
+      "$refs"
+    ],
+    "addError": [
+      "err"
+    ],
+    "exists": [
+      "path",
+      "options"
+    ],
+    "get": [
+      "path",
+      "options"
+    ],
+    "resolve": [
+      "path",
+      "options",
+      "friendlyPath",
+      "pathFromRoot",
+      "visitedRefPaths",
+      "param"
+    ],
+    "set": [
+      "path",
+      "value"
+    ],
+    "is$Ref": [
+      "value"
+    ],
+    "isExternal$Ref": [
+      "value"
+    ],
+    "isAllowed$Ref": [
+      "value",
+      "options"
+    ],
+    "isExtended$Ref": [
+      "value"
+    ],
+    "dereference": [
+      "$ref",
+      "resolvedValue",
+      "options"
+    ]
+  },
+  "deepMerge": [
+    "target",
+    "source"
+  ],
+  "cloneEnumerableProperties": [
+    "value"
+  ],
+  "defineDataProperty": [
+    "object",
+    "key",
+    "value"
+  ],
+  "$Refs": {
+    "circular": [],
+    "paths": [
+      "param"
+    ],
+    "values": [
+      "param"
+    ],
+    "exists": [
+      "path",
+      "options"
+    ],
+    "get": [
+      "path",
+      "options"
+    ],
+    "set": [
+      "path",
+      "value"
+    ],
+    "_get$Ref": [
+      "path"
+    ],
+    "_add": [
+      "path"
+    ],
+    "_addAlias": [
+      "path",
+      "value",
+      "pathType",
+      "param",
+      "param",
+      "sourcePath"
+    ],
+    "_resolve": [
+      "path",
+      "pathFromRoot",
+      "options",
+      "visitedRefPaths",
+      "param"
+    ],
+    "_$refs": [],
+    "_aliases": [],
+    "_root$Ref": [],
+    "constructor": [],
+    "toJSON": [],
+    "_getRef": [
+      "path"
+    ]
+  },
+  "getPaths": [
+    "$refs",
+    "types"
+  ],
+  "resolveExternalWithMatcher": [
+    "parser",
+    "options",
+    "excludedPathMatcher"
+  ],
+  "crawlOccurrence": [
+    "occurrence",
+    "pathFromRoot",
+    "activeObjects",
+    "activeReferences",
+    "context",
+    "param"
+  ],
+  "crawlChildren": [
+    "occurrence",
+    "pathFromRoot",
+    "activeObjects",
+    "activeReferences",
+    "context"
+  ],
+  "crawlReferenceOccurrence": [
+    "source",
+    "pathFromRoot",
+    "activeReferences",
+    "context"
+  ],
+  "loadExternalDocument": [
+    "reference",
+    "resolvedPath",
+    "resolutionBase",
+    "path",
+    "context"
+  ],
+  "markPhysicalExternalDocument": [
+    "documentPath",
+    "context"
+  ],
+  "completeExternalDocumentInventory": [
+    "context"
+  ],
+  "crawlPhysicalOccurrence": [
+    "value",
+    "path",
+    "scopeBase",
+    "dynamicIdScope",
+    "legacyIdScope",
+    "activeObjects",
+    "seen",
+    "context"
+  ],
+  "markExcludedOrigins": [
+    "target",
+    "context"
+  ],
+  "markExcludedChildOrigins": [
+    "parent",
+    "key",
+    "context"
+  ],
+  "normalizePhysicalPath": [
+    "path"
+  ],
+  "selectTarget": [
+    "resolvedPath",
+    "pathFromRoot",
+    "context",
+    "activeReferences"
+  ],
+  "followIntermediateReferences": [
+    "initial",
+    "pathFromRoot",
+    "context",
+    "activeReferences"
+  ],
+  "mergeReferenceOccurrence": [
+    "source",
+    "target",
+    "mergeKeys"
+  ],
+  "mergeLocatedObjects": [
+    "target",
+    "source",
+    "mergeKeys",
+    "ignoreSourceRef",
+    "activeMerges"
+  ],
+  "resolveChild": [],
+  "findActiveMerge": [
+    "chain",
+    "target",
+    "source"
+  ],
+  "locateChild": [
+    "parent",
+    "key"
+  ],
+  "locateChildValue": [
+    "parent",
+    "key",
+    "childValue"
+  ],
+  "mergeOriginPaths": [
+    "target",
+    "source"
+  ],
+  "ensureLocationMetadata": [
+    "value"
+  ],
+  "requiresChildPrecheck": [
+    "parent",
+    "key"
+  ],
+  "childResolutionMayInvokeAccessor": [
+    "source",
+    "target",
+    "key",
+    "sourceHasKey",
+    "targetHasKey",
+    "mergeKeys"
+  ],
+  "hasObject": [
+    "chain",
+    "value"
+  ],
+  "hasReference": [
+    "chain",
+    "path"
+  ],
+  "assertReferenceDepth": [
+    "chain",
+    "path",
+    "options"
+  ],
+  "defineLazyProperty": [
+    "object",
+    "key",
+    "get"
+  ],
+  "resolveExternal": [
+    "parser",
+    "options"
+  ],
+  "resolve$Ref": [
+    "$ref",
+    "path",
+    "scopeBase",
+    "dynamicIdScope",
+    "$refs",
+    "options"
+  ],
+  "download": [
+    "u",
+    "httpOptions",
+    "_redirects"
+  ],
+  "get": [
+    "u",
+    "httpOptions",
+    "resolvedAddresses"
+  ],
+  "cancelTimeout": [],
+  "createPinnedTransport": [
+    "requestUrl",
+    "resolvedAddresses"
+  ],
+  "lookup": [
+    "hostname",
+    "options",
+    "callback"
+  ],
+  "normalizeLookupHostname": [
+    "hostname"
+  ],
+  "getHeader": [
+    "response",
+    "name"
+  ],
+  "withoutSensitiveHeaders": [
+    "httpOptions"
+  ],
+  "convertPathToPosix": [
+    "filePath"
+  ],
+  "JSONParserError": {
+    "name": [],
+    "message": [],
+    "source": [],
+    "path": [],
+    "code": [],
+    "constructor": [
+      "message",
+      "source",
+      "options"
+    ],
+    "toJSON": [],
+    "footprint": []
+  },
+  "JSONParserErrorGroup": {
+    "files": [],
+    "constructor": [
+      "parser"
+    ],
+    "toJSON": [],
+    "getParserErrors": [
+      "parser"
+    ],
+    "errors": []
+  },
+  "ParserError": {
+    "code": [],
+    "name": [],
+    "constructor": [
+      "message",
+      "source",
+      "options"
+    ]
+  },
+  "UnmatchedParserError": {
+    "code": [],
+    "name": [],
+    "constructor": [
+      "source"
+    ]
+  },
+  "ResolverError": {
+    "code": [],
+    "name": [],
+    "ioErrorCode": [],
+    "constructor": [
+      "ex",
+      "source",
+      "options"
+    ]
+  },
+  "UnmatchedResolverError": {
+    "code": [],
+    "name": [],
+    "constructor": [
+      "source"
+    ]
+  },
+  "MissingPointerError": {
+    "code": [],
+    "name": [],
+    "targetToken": [],
+    "targetRef": [],
+    "targetFound": [],
+    "parentPath": [],
+    "constructor": [
+      "token",
+      "path",
+      "targetRef",
+      "targetFound",
+      "parentPath"
+    ]
+  },
+  "TimeoutError": {
+    "code": [],
+    "name": [],
+    "constructor": [
+      "timeout"
+    ]
+  },
+  "InvalidPointerError": {
+    "code": [],
+    "name": [],
+    "constructor": [
+      "pointer",
+      "path"
+    ]
+  },
+  "toJSON": [
+    "this"
+  ],
+  "getDeepKeys": [
+    "obj",
+    "param"
+  ],
+  "isHandledError": [
+    "err"
+  ],
+  "normalizeError": [
+    "err"
+  ],
+  "isWindows": [],
+  "maybe": [
+    "cb",
+    "promise"
+  ],
+  "makeNext": [],
+  "all": [
+    "plugins"
+  ],
+  "filter": [
+    "plugins",
+    "method",
+    "file",
+    "callback",
+    "$refs"
+  ],
+  "sort": [
+    "plugins"
+  ],
+  "run": [
+    "plugins",
+    "method",
+    "file",
+    "$refs"
+  ],
+  "runNextPlugin": [],
+  "callback": [
+    "err",
+    "result"
+  ],
+  "onSuccess": [
+    "plugin",
+    "result"
+  ],
+  "onError": [
+    "plugin",
+    "error"
+  ],
+  "acceptsCallback": [
+    "plugin",
+    "method"
+  ],
+  "getResult": [
+    "obj",
+    "prop",
+    "file",
+    "callback",
+    "$refs"
+  ],
+  "getSchemaBasePath": [
+    "basePath",
+    "value",
+    "param"
+  ],
+  "usesDynamicIdScope": [
+    "value"
+  ],
+  "registerSchemaResources": [
+    "$refs",
+    "basePath",
+    "value",
+    "pathType",
+    "param"
+  ],
+  "joinPointer": [
+    "path",
+    "key"
+  ],
+  "getSchemaId": [
+    "value",
+    "param"
+  ],
+  "getSchemaIdMode": [
+    "value",
+    "param"
+  ],
+  "resolve": [
+    "from",
+    "to"
+  ],
+  "safeDecodeURIComponent": [
+    "value"
+  ],
+  "cwd": [],
+  "getProtocol": [
+    "path"
+  ],
+  "getExtension": [
+    "path"
+  ],
+  "stripQuery": [
+    "path"
+  ],
+  "getHash": [
+    "path"
+  ],
+  "stripHash": [
+    "path"
+  ],
+  "isHttp": [
+    "path"
+  ],
+  "isUnsafeUrl": [
+    "path"
+  ],
+  "resolveUrlSafety": [
+    "path"
+  ],
+  "isUnsafeUrlWithDns": [
+    "path"
+  ],
+  "isUnsafeHostname": [
+    "hostname"
+  ],
+  "normalizeHostname": [
+    "hostname"
+  ],
+  "parseIPv4Address": [
+    "ip"
+  ],
+  "isUnsafeIPv4Address": [
+    "param"
+  ],
+  "parseIPv6Address": [
+    "ip"
+  ],
+  "parseIPv6Groups": [
+    "groups"
+  ],
+  "isUnsafeIPv6Address": [
+    "groups"
+  ],
+  "getMappedIPv4Address": [
+    "groups"
+  ],
+  "containsUnsafeHostname": [
+    "value"
+  ],
+  "isInternalPort": [
+    "port"
+  ],
+  "isFileSystemPath": [
+    "path"
+  ],
+  "fromFileSystemPath": [
+    "path"
+  ],
+  "join": [
+    "a",
+    "b"
+  ],
+  "toFileSystemPath": [
+    "path",
+    "keepFileProtocol"
+  ],
+  "safePointerToPath": [
+    "pointer"
+  ]
+}
