@@ -1,0 +1,966 @@
+{
+  "computeAdditionalCacheKeyHash": [
+    "components"
+  ],
+  "generateCredentialKey": [
+    "credential",
+    "hash"
+  ],
+  "generateAccountKey": [
+    "account"
+  ],
+  "NodeStorage": {
+    "logger": [],
+    "cache": [],
+    "changeEmitters": [],
+    "constructor": [
+      "logger",
+      "clientId",
+      "cryptoImpl",
+      "staticAuthorityOptions"
+    ],
+    "registerChangeEmitter": [
+      "func"
+    ],
+    "emitChange": [],
+    "cacheToInMemoryCache": [
+      "cache"
+    ],
+    "inMemoryCacheToCache": [
+      "inMemoryCache"
+    ],
+    "getInMemoryCache": [],
+    "setInMemoryCache": [
+      "inMemoryCache"
+    ],
+    "getCache": [],
+    "setCache": [
+      "cache"
+    ],
+    "getItem": [
+      "key"
+    ],
+    "setItem": [
+      "key",
+      "value"
+    ],
+    "generateCredentialKey": [
+      "credential",
+      "additionalCacheKeyHash"
+    ],
+    "generateAccountKey": [
+      "account"
+    ],
+    "getAccountKeys": [],
+    "getTokenKeys": [],
+    "getAccount": [
+      "accountKey"
+    ],
+    "setAccount": [
+      "account"
+    ],
+    "getIdTokenCredential": [
+      "idTokenKey"
+    ],
+    "setIdTokenCredential": [
+      "idToken"
+    ],
+    "getAccessTokenCredential": [
+      "accessTokenKey"
+    ],
+    "setAccessTokenCredential": [
+      "accessToken",
+      "_correlationId",
+      "_kmsi",
+      "additionalCacheKeyHash"
+    ],
+    "getRefreshTokenCredential": [
+      "refreshTokenKey"
+    ],
+    "setRefreshTokenCredential": [
+      "refreshToken"
+    ],
+    "getAppMetadata": [
+      "appMetadataKey"
+    ],
+    "setAppMetadata": [
+      "appMetadata"
+    ],
+    "getServerTelemetry": [
+      "serverTelemetrykey"
+    ],
+    "setServerTelemetry": [
+      "serverTelemetryKey",
+      "serverTelemetry"
+    ],
+    "getAuthorityMetadata": [
+      "key"
+    ],
+    "getAuthorityMetadataKeys": [],
+    "setAuthorityMetadata": [
+      "key",
+      "metadata"
+    ],
+    "getThrottlingCache": [
+      "throttlingCacheKey"
+    ],
+    "setThrottlingCache": [
+      "throttlingCacheKey",
+      "throttlingCache"
+    ],
+    "removeItem": [
+      "key"
+    ],
+    "removeOutdatedAccount": [
+      "accountKey"
+    ],
+    "containsKey": [
+      "key"
+    ],
+    "getKeys": [],
+    "clear": [],
+    "generateInMemoryCache": [
+      "cache"
+    ],
+    "generateJsonCache": [
+      "inMemoryCache"
+    ],
+    "updateCredentialCacheKey": [
+      "currentCacheKey",
+      "credential"
+    ]
+  },
+  "TokenCache": {
+    "storage": [],
+    "cacheHasChanged": [],
+    "cacheSnapshot": [],
+    "persistence": [],
+    "logger": [],
+    "constructor": [
+      "storage",
+      "logger",
+      "cachePlugin"
+    ],
+    "hasChanged": [],
+    "serialize": [],
+    "deserialize": [
+      "cache"
+    ],
+    "getKVStore": [],
+    "getCacheSnapshot": [],
+    "getAllAccounts": [
+      "correlationId"
+    ],
+    "getAccountByHomeId": [
+      "homeAccountId"
+    ],
+    "getAccountByLocalId": [
+      "localAccountId"
+    ],
+    "removeAccount": [
+      "account",
+      "correlationId"
+    ],
+    "overwriteCache": [],
+    "handleChangeEvent": [],
+    "mergeState": [],
+    "mergeUpdates": [],
+    "mergeRemovals": [],
+    "mergeRemovalsDict": [],
+    "overlayDefaults": []
+  },
+  "DistributedCachePlugin": {
+    "client": [],
+    "partitionManager": [],
+    "constructor": [
+      "client",
+      "partitionManager"
+    ],
+    "beforeCacheAccess": [
+      "cacheContext"
+    ],
+    "afterCacheAccess": [
+      "cacheContext"
+    ]
+  },
+  "Deserializer": {
+    "deserializeJSONBlob": [
+      "jsonFile"
+    ],
+    "deserializeAccounts": [
+      "accounts"
+    ],
+    "deserializeIdTokens": [
+      "idTokens"
+    ],
+    "deserializeAccessTokens": [
+      "accessTokens"
+    ],
+    "deserializeRefreshTokens": [
+      "refreshTokens"
+    ],
+    "deserializeAppMetadata": [
+      "appMetadata"
+    ],
+    "deserializeAllCache": [
+      "jsonCache"
+    ]
+  },
+  "Serializer": {
+    "serializeJSONBlob": [
+      "data"
+    ],
+    "serializeAccounts": [
+      "accCache"
+    ],
+    "serializeIdTokens": [
+      "idTCache"
+    ],
+    "serializeAccessTokens": [
+      "atCache"
+    ],
+    "serializeRefreshTokens": [
+      "rtCache"
+    ],
+    "serializeAppMetadata": [
+      "amdtCache"
+    ],
+    "serializeAllCache": [
+      "inMemCache"
+    ]
+  },
+  "BaseClient": {
+    "logger": [],
+    "config": [],
+    "cryptoUtils": [],
+    "cacheManager": [],
+    "networkClient": [],
+    "serverTelemetryManager": [],
+    "authority": [],
+    "performanceClient": [],
+    "constructor": [
+      "configuration"
+    ],
+    "createTokenRequestHeaders": [
+      "ccsCred"
+    ],
+    "executePostToTokenEndpoint": [
+      "tokenEndpoint",
+      "queryString",
+      "headers",
+      "thumbprint",
+      "correlationId"
+    ],
+    "sendPostRequest": [
+      "thumbprint",
+      "tokenEndpoint",
+      "options",
+      "correlationId"
+    ],
+    "createTokenQueryParameters": [
+      "request"
+    ]
+  },
+  "ClientApplication": {
+    "cryptoProvider": [],
+    "tokenCache": [],
+    "storage": [],
+    "logger": [],
+    "config": [],
+    "clientAssertion": [],
+    "developerProvidedClientAssertion": [],
+    "clientSecret": [],
+    "constructor": [
+      "configuration"
+    ],
+    "getAuthCodeUrl": [
+      "request"
+    ],
+    "acquireTokenByCode": [
+      "request",
+      "authCodePayLoad"
+    ],
+    "acquireTokenByRefreshToken": [
+      "request"
+    ],
+    "acquireTokenSilent": [
+      "request"
+    ],
+    "acquireCachedTokenSilent": [],
+    "acquireTokenByUsernamePassword": [
+      "request"
+    ],
+    "getTokenCache": [],
+    "validateState": [
+      "state",
+      "cachedState",
+      "correlationId"
+    ],
+    "getLogger": [],
+    "setLogger": [
+      "logger"
+    ],
+    "buildOauthClientConfiguration": [
+      "discoveredAuthority",
+      "requestCorrelationId",
+      "redirectUri",
+      "serverTelemetryManager"
+    ],
+    "getClientAssertion": [],
+    "initializeBaseRequest": [
+      "authRequest"
+    ],
+    "initializeServerTelemetryManager": [
+      "apiId",
+      "correlationId",
+      "forceRefresh"
+    ],
+    "createAuthority": [
+      "authorityString",
+      "requestCorrelationId",
+      "azureRegionConfiguration",
+      "azureCloudOptions"
+    ],
+    "clearCache": []
+  },
+  "ClientAssertion": {
+    "jwt": [],
+    "privateKey": [],
+    "thumbprint": [],
+    "useSha256": [],
+    "expirationTime": [],
+    "issuer": [],
+    "jwtAudience": [],
+    "publicCertificate": [],
+    "fromAssertion": [
+      "assertion"
+    ],
+    "fromCertificate": [
+      "thumbprint",
+      "privateKey",
+      "publicCertificate"
+    ],
+    "fromCertificateWithSha256Thumbprint": [
+      "thumbprint",
+      "privateKey",
+      "publicCertificate"
+    ],
+    "getJwt": [
+      "cryptoProvider",
+      "issuer",
+      "jwtAudience"
+    ],
+    "createJwt": [],
+    "isExpired": [],
+    "parseCertificate": [
+      "publicCertificate"
+    ]
+  },
+  "ClientCredentialClient": {
+    "appTokenProvider": [],
+    "constructor": [
+      "configuration",
+      "appTokenProvider"
+    ],
+    "acquireToken": [
+      "request"
+    ],
+    "getCachedAuthenticationResult": [
+      "request",
+      "config",
+      "cryptoUtils",
+      "authority",
+      "cacheManager",
+      "serverTelemetryManager",
+      "additionalCacheKeyComponents"
+    ],
+    "readAccessTokenFromCache": [],
+    "executeTokenRequest": [],
+    "createTokenRequestBody": []
+  },
+  "ConfidentialClientApplication": {
+    "appTokenProvider": [],
+    "constructor": [
+      "configuration"
+    ],
+    "SetAppTokenProvider": [
+      "provider"
+    ],
+    "acquireTokenByClientCredential": [
+      "request"
+    ],
+    "acquireTokenOnBehalfOf": [
+      "request"
+    ],
+    "acquireTokenByUserFederatedIdentityCredential": [
+      "request"
+    ]
+  },
+  "DeviceCodeClient": {
+    "constructor": [
+      "configuration"
+    ],
+    "acquireToken": [
+      "request"
+    ],
+    "getDeviceCode": [],
+    "createExtraQueryParameters": [
+      "request"
+    ],
+    "executePostRequestToDeviceCodeEndpoint": [],
+    "createQueryString": [],
+    "continuePolling": [],
+    "acquireTokenWithDeviceCode": [],
+    "createTokenRequestBody": []
+  },
+  "ManagedIdentityApplication": {
+    "config": [],
+    "logger": [],
+    "nodeStorage": [],
+    "networkClient": [],
+    "cryptoProvider": [],
+    "fakeAuthority": [],
+    "fakeClientCredentialClient": [],
+    "managedIdentityClient": [],
+    "hashUtils": [],
+    "constructor": [
+      "configuration"
+    ],
+    "acquireToken": [
+      "managedIdentityRequestParams"
+    ],
+    "acquireTokenFromManagedIdentity": [],
+    "getManagedIdentitySource": []
+  },
+  "ManagedIdentityClient": {
+    "logger": [],
+    "nodeStorage": [],
+    "networkClient": [],
+    "cryptoProvider": [],
+    "disableInternalRetries": [],
+    "identitySource": [],
+    "sourceName": [],
+    "constructor": [
+      "logger",
+      "nodeStorage",
+      "networkClient",
+      "cryptoProvider",
+      "disableInternalRetries"
+    ],
+    "sendManagedIdentityTokenRequest": [
+      "managedIdentityRequest",
+      "managedIdentityId",
+      "fakeAuthority",
+      "refreshAccessToken"
+    ],
+    "allEnvironmentVariablesAreDefined": [],
+    "getManagedIdentitySource": [],
+    "selectManagedIdentitySource": []
+  },
+  "AppService": {
+    "identityEndpoint": [],
+    "identityHeader": [],
+    "constructor": [
+      "logger",
+      "nodeStorage",
+      "networkClient",
+      "cryptoProvider",
+      "disableInternalRetries",
+      "identityEndpoint",
+      "identityHeader"
+    ],
+    "getEnvironmentVariables": [],
+    "tryCreate": [
+      "logger",
+      "nodeStorage",
+      "networkClient",
+      "cryptoProvider",
+      "disableInternalRetries"
+    ],
+    "createRequest": [
+      "resource",
+      "managedIdentityId"
+    ]
+  },
+  "AzureArc": {
+    "identityEndpoint": [],
+    "constructor": [
+      "logger",
+      "nodeStorage",
+      "networkClient",
+      "cryptoProvider",
+      "disableInternalRetries",
+      "identityEndpoint"
+    ],
+    "getEnvironmentVariables": [],
+    "tryCreate": [
+      "logger",
+      "nodeStorage",
+      "networkClient",
+      "cryptoProvider",
+      "disableInternalRetries",
+      "_managedIdentityId"
+    ],
+    "createRequest": [
+      "resource",
+      "managedIdentityId"
+    ],
+    "validateUserAssignedIdentityWasHonored": [],
+    "getServerTokenResponseAsync": [
+      "originalResponse",
+      "networkClient",
+      "networkRequest",
+      "networkRequestOptions"
+    ]
+  },
+  "BaseManagedIdentitySource": {
+    "logger": [],
+    "nodeStorage": [],
+    "networkClient": [],
+    "cryptoProvider": [],
+    "disableInternalRetries": [],
+    "constructor": [
+      "logger",
+      "nodeStorage",
+      "networkClient",
+      "cryptoProvider",
+      "disableInternalRetries"
+    ],
+    "createCorrelationId": [],
+    "createRequest": [
+      "resource",
+      "managedIdentityId"
+    ],
+    "getServerTokenResponseAsync": [
+      "response",
+      "_networkClient",
+      "_networkRequest",
+      "_networkRequestOptions"
+    ],
+    "getServerTokenResponse": [
+      "response"
+    ],
+    "acquireTokenWithManagedIdentity": [
+      "managedIdentityRequest",
+      "managedIdentityId",
+      "fakeAuthority",
+      "refreshAccessToken"
+    ],
+    "getManagedIdentityUserAssignedIdQueryParameterKey": [
+      "managedIdentityIdType",
+      "isImds",
+      "usesApi2017"
+    ],
+    "getValidatedEnvVariableUrlString": []
+  },
+  "CloudShell": {
+    "msiEndpoint": [],
+    "constructor": [
+      "logger",
+      "nodeStorage",
+      "networkClient",
+      "cryptoProvider",
+      "disableInternalRetries",
+      "msiEndpoint"
+    ],
+    "getEnvironmentVariables": [],
+    "tryCreate": [
+      "logger",
+      "nodeStorage",
+      "networkClient",
+      "cryptoProvider",
+      "disableInternalRetries",
+      "managedIdentityId"
+    ],
+    "createRequest": [
+      "resource"
+    ]
+  },
+  "Imds": {
+    "identityEndpoint": [],
+    "constructor": [
+      "logger",
+      "nodeStorage",
+      "networkClient",
+      "cryptoProvider",
+      "disableInternalRetries",
+      "identityEndpoint"
+    ],
+    "tryCreate": [
+      "logger",
+      "nodeStorage",
+      "networkClient",
+      "cryptoProvider",
+      "disableInternalRetries"
+    ],
+    "createRequest": [
+      "resource",
+      "managedIdentityId"
+    ]
+  },
+  "MachineLearning": {
+    "msiEndpoint": [],
+    "secret": [],
+    "constructor": [
+      "logger",
+      "nodeStorage",
+      "networkClient",
+      "cryptoProvider",
+      "disableInternalRetries",
+      "msiEndpoint",
+      "secret"
+    ],
+    "getEnvironmentVariables": [],
+    "tryCreate": [
+      "logger",
+      "nodeStorage",
+      "networkClient",
+      "cryptoProvider",
+      "disableInternalRetries"
+    ],
+    "createRequest": [
+      "resource",
+      "managedIdentityId"
+    ]
+  },
+  "ServiceFabric": {
+    "identityEndpoint": [],
+    "identityHeader": [],
+    "constructor": [
+      "logger",
+      "nodeStorage",
+      "networkClient",
+      "cryptoProvider",
+      "disableInternalRetries",
+      "identityEndpoint",
+      "identityHeader"
+    ],
+    "getEnvironmentVariables": [],
+    "tryCreate": [
+      "logger",
+      "nodeStorage",
+      "networkClient",
+      "cryptoProvider",
+      "disableInternalRetries",
+      "managedIdentityId"
+    ],
+    "createRequest": [
+      "resource",
+      "managedIdentityId"
+    ]
+  },
+  "OnBehalfOfClient": {
+    "scopeSet": [],
+    "userAssertionHash": [],
+    "constructor": [
+      "configuration"
+    ],
+    "acquireToken": [
+      "request"
+    ],
+    "getCachedAuthenticationResult": [],
+    "readIdTokenFromCacheForOBO": [],
+    "readAccessTokenFromCacheForOBO": [],
+    "executeTokenRequest": [],
+    "createTokenRequestBody": []
+  },
+  "PublicClientApplication": {
+    "nativeBrokerPlugin": [],
+    "skus": [],
+    "constructor": [
+      "configuration"
+    ],
+    "acquireTokenByDeviceCode": [
+      "request"
+    ],
+    "acquireTokenInteractive": [
+      "request"
+    ],
+    "acquireTokenSilent": [
+      "request"
+    ],
+    "acquireTokenByCode": [
+      "request",
+      "authCodePayLoad"
+    ],
+    "acquireTokenByRefreshToken": [
+      "request"
+    ],
+    "signOut": [
+      "request"
+    ],
+    "getAllAccounts": [],
+    "waitForRedirectUri": []
+  },
+  "UserFederatedIdentityCredentialClient": {
+    "constructor": [
+      "configuration"
+    ],
+    "acquireToken": [
+      "request"
+    ],
+    "executeTokenRequest": [],
+    "createTokenRequestBody": []
+  },
+  "UsernamePasswordClient": {
+    "constructor": [
+      "configuration"
+    ],
+    "acquireToken": [
+      "request"
+    ],
+    "executeTokenRequest": [],
+    "createTokenRequestBody": []
+  },
+  "buildAppConfiguration": [
+    "param"
+  ],
+  "buildManagedIdentityConfiguration": [
+    "param"
+  ],
+  "ManagedIdentityId": {
+    "_id": [],
+    "id": [
+      "value"
+    ],
+    "_idType": [],
+    "idType": [
+      "value"
+    ],
+    "constructor": [
+      "managedIdentityIdParams"
+    ]
+  },
+  "ManagedIdentityRequestParameters": {
+    "_baseEndpoint": [],
+    "httpMethod": [],
+    "headers": [],
+    "bodyParameters": [],
+    "queryParameters": [],
+    "retryPolicy": [],
+    "constructor": [
+      "httpMethod",
+      "endpoint",
+      "retryPolicy"
+    ],
+    "computeUri": [],
+    "computeParametersBodyString": []
+  },
+  "CryptoProvider": {
+    "pkceGenerator": [],
+    "guidGenerator": [],
+    "hashUtils": [],
+    "constructor": [],
+    "base64UrlEncode": [],
+    "encodeKid": [],
+    "createNewGuid": [],
+    "base64Encode": [
+      "input"
+    ],
+    "base64Decode": [
+      "input"
+    ],
+    "generatePkceCodes": [],
+    "removeTokenBindingKey": [
+      "kid",
+      "correlationId"
+    ],
+    "clearKeystore": [
+      "correlationId"
+    ],
+    "signTokenBindingJwt": [
+      "header",
+      "payload",
+      "kid",
+      "correlationId"
+    ],
+    "hashString": [
+      "plainText"
+    ]
+  },
+  "GuidGenerator": {
+    "generateGuid": [],
+    "isGuid": [
+      "guid"
+    ]
+  },
+  "HashUtils": {
+    "sha256": [
+      "buffer"
+    ]
+  },
+  "PkceGenerator": {
+    "hashUtils": [],
+    "constructor": [],
+    "generatePkceCodes": [],
+    "generateCodeVerifier": [],
+    "generateCodeChallengeFromVerifier": []
+  },
+  "ManagedIdentityError": {
+    "constructor": [
+      "errorCode",
+      "correlationId"
+    ]
+  },
+  "createManagedIdentityError": [
+    "errorCode",
+    "correlationId"
+  ],
+  "NodeAuthError": {
+    "constructor": [
+      "errorCode",
+      "correlationId",
+      "errorMessage"
+    ],
+    "createInvalidLoopbackAddressTypeError": [],
+    "createUnableToLoadRedirectUrlError": [],
+    "createNoAuthCodeInResponseError": [
+      "correlationId"
+    ],
+    "createNoLoopbackServerExistsError": [],
+    "createLoopbackServerAlreadyExistsError": [],
+    "createLoopbackServerTimeoutError": [
+      "correlationId"
+    ],
+    "createStateNotFoundError": [
+      "correlationId"
+    ],
+    "createThumbprintMissingError": [],
+    "createRedirectUriNotSupportedError": [
+      "correlationId"
+    ]
+  },
+  "HttpClient": {
+    "sendGetRequestAsync": [
+      "url",
+      "options",
+      "timeout"
+    ],
+    "sendPostRequestAsync": [
+      "url",
+      "options"
+    ],
+    "sendRequest": []
+  },
+  "getHeaderDict": [
+    "headers"
+  ],
+  "getFetchHeaders": [
+    "options"
+  ],
+  "HttpClientWithRetries": {
+    "httpClientNoRetries": [],
+    "retryPolicy": [],
+    "logger": [],
+    "constructor": [
+      "httpClientNoRetries",
+      "retryPolicy",
+      "logger"
+    ],
+    "sendNetworkRequestAsyncHelper": [],
+    "sendNetworkRequestAsync": [],
+    "sendGetRequestAsync": [
+      "url",
+      "options"
+    ],
+    "sendPostRequestAsync": [
+      "url",
+      "options"
+    ]
+  },
+  "LoopbackClient": {
+    "server": [],
+    "preferredPort": [],
+    "constructor": [
+      "preferredPort"
+    ],
+    "listenForAuthCode": [
+      "successTemplate",
+      "errorTemplate"
+    ],
+    "handlePostRequest": [],
+    "getRedirectUri": [],
+    "closeServer": []
+  },
+  "getAuthCodeRequestUrl": [
+    "config",
+    "authority",
+    "request",
+    "logger"
+  ],
+  "DefaultManagedIdentityRetryPolicy": {
+    "DEFAULT_MANAGED_IDENTITY_RETRY_DELAY_MS": [],
+    "linearRetryStrategy": [],
+    "pauseForRetry": [
+      "httpStatusCode",
+      "currentRetry",
+      "logger",
+      "retryAfterHeader"
+    ]
+  },
+  "ExponentialRetryStrategy": {
+    "minExponentialBackoff": [],
+    "maxExponentialBackoff": [],
+    "exponentialDeltaBackoff": [],
+    "constructor": [
+      "minExponentialBackoff",
+      "maxExponentialBackoff",
+      "exponentialDeltaBackoff"
+    ],
+    "calculateDelay": [
+      "currentRetry"
+    ]
+  },
+  "ImdsRetryPolicy": {
+    "MIN_EXPONENTIAL_BACKOFF_MS": [],
+    "MAX_EXPONENTIAL_BACKOFF_MS": [],
+    "EXPONENTIAL_DELTA_BACKOFF_MS": [],
+    "HTTP_STATUS_GONE_RETRY_AFTER_MS": [],
+    "_isNewRequest": [],
+    "isNewRequest": [
+      "value"
+    ],
+    "maxRetries": [],
+    "exponentialRetryStrategy": [],
+    "pauseForRetry": [
+      "httpStatusCode",
+      "currentRetry",
+      "logger"
+    ]
+  },
+  "LinearRetryStrategy": {
+    "calculateDelay": [
+      "retryHeader",
+      "minimumDelay"
+    ]
+  },
+  "EncodingUtils": {
+    "base64Encode": [
+      "str",
+      "encoding"
+    ],
+    "base64EncodeUrl": [
+      "str",
+      "encoding"
+    ],
+    "base64Decode": [
+      "base64Str"
+    ],
+    "base64DecodeUrl": [
+      "base64Str"
+    ]
+  },
+  "NetworkUtils": {
+    "getNetworkResponse": [
+      "headers",
+      "body",
+      "statusCode"
+    ],
+    "urlToHttpOptions": [
+      "url"
+    ]
+  },
+  "isIso8601": [
+    "dateString"
+  ]
+}
