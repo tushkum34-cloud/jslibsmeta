@@ -1,0 +1,349 @@
+{
+  "isTRPCClientError": [
+    "cause"
+  ],
+  "isTRPCErrorResponse": [
+    "obj"
+  ],
+  "getMessageFromUnknownError": [
+    "err",
+    "fallback"
+  ],
+  "TRPCClientError": {
+    "cause": [],
+    "shape": [],
+    "data": [],
+    "meta": [],
+    "constructor": [
+      "message",
+      "opts"
+    ],
+    "from": [
+      "_cause",
+      "param"
+    ]
+  },
+  "clientCallTypeToProcedureType": [
+    "clientCallType"
+  ],
+  "createTRPCClientProxy": [
+    "client"
+  ],
+  "createTRPCClient": [
+    "opts"
+  ],
+  "getUntypedClient": [
+    "client"
+  ],
+  "createTRPCUntypedClient": [
+    "opts"
+  ],
+  "isFunction": [
+    "fn"
+  ],
+  "getFetch": [
+    "customFetchImpl"
+  ],
+  "TRPCUntypedClient": {
+    "links": [],
+    "runtime": [],
+    "requestId": [],
+    "constructor": [
+      "opts"
+    ],
+    "$request": [
+      "opts"
+    ],
+    "requestAsPromise": [
+      "opts"
+    ],
+    "query": [
+      "path",
+      "input",
+      "opts"
+    ],
+    "mutation": [
+      "path",
+      "input",
+      "opts"
+    ],
+    "subscription": [
+      "path",
+      "input",
+      "opts"
+    ]
+  },
+  "throwFatalError": [],
+  "dataLoader": [
+    "batchLoader"
+  ],
+  "destroyTimerAndPendingItems": [],
+  "groupItems": [
+    "items"
+  ],
+  "dispatch": [],
+  "load": [
+    "key"
+  ],
+  "inputWithTrackedEventId": [
+    "input",
+    "lastEventId"
+  ],
+  "allAbortSignals": [
+    "param"
+  ],
+  "onAbort": [],
+  "raceAbortSignals": [
+    "param"
+  ],
+  "abortSignalToPromise": [
+    "signal"
+  ],
+  "getTransformer": [
+    "transformer"
+  ],
+  "httpBatchLink": [
+    "opts"
+  ],
+  "batchLoader": [
+    "type"
+  ],
+  "httpBatchStreamLink": [
+    "opts"
+  ],
+  "universalRequester": [
+    "opts"
+  ],
+  "httpLink": [
+    "opts"
+  ],
+  "urlWithConnectionParams": [
+    "opts"
+  ],
+  "httpSubscriptionLink": [
+    "opts"
+  ],
+  "isOctetType": [
+    "input"
+  ],
+  "isFormData": [
+    "value"
+  ],
+  "isNonJsonSerializable": [
+    "input"
+  ],
+  "createChain": [
+    "opts"
+  ],
+  "execute": [
+    "param",
+    "param"
+  ],
+  "dedupeLink": [],
+  "reset": [],
+  "resolveHTTPLinkOptions": [
+    "opts"
+  ],
+  "arrayToDict": [
+    "array"
+  ],
+  "getInput": [
+    "opts"
+  ],
+  "getUrl": [
+    "opts"
+  ],
+  "getBody": [
+    "opts"
+  ],
+  "jsonHttpRequester": [
+    "opts"
+  ],
+  "AbortError": {
+    "constructor": []
+  },
+  "throwIfAborted": [
+    "signal"
+  ],
+  "fetchHTTPResponse": [
+    "opts"
+  ],
+  "httpRequest": [
+    "opts"
+  ],
+  "resultOf": [
+    "value",
+    "param"
+  ],
+  "unstable_localLink": [
+    "opts"
+  ],
+  "transformChunk": [
+    "chunk"
+  ],
+  "runProcedure": [
+    "newInput"
+  ],
+  "onErrorCallback": [
+    "cause"
+  ],
+  "coerceToTRPCClientError": [
+    "cause"
+  ],
+  "constructPartsAndArgs": [
+    "opts"
+  ],
+  "defaultLogger": [
+    "param"
+  ],
+  "loggerLink": [
+    "param"
+  ],
+  "logResult": [
+    "result"
+  ],
+  "retryLink": [
+    "opts"
+  ],
+  "opWithLastEventId": [],
+  "attempt": [
+    "attempts"
+  ],
+  "asArray": [
+    "value"
+  ],
+  "splitLink": [
+    "opts"
+  ],
+  "createWSClient": [
+    "opts"
+  ],
+  "exponentialBackoff": [
+    "attemptIndex"
+  ],
+  "RequestManager": {
+    "outgoingRequests": [],
+    "pendingRequests": [],
+    "register": [
+      "message",
+      "callbacks"
+    ],
+    "delete": [
+      "messageId"
+    ],
+    "flush": [],
+    "getPendingRequests": [],
+    "getPendingRequest": [
+      "messageId"
+    ],
+    "getOutgoingRequests": [],
+    "getRequests": [],
+    "hasPendingRequests": [],
+    "hasPendingSubscriptions": [],
+    "hasOutgoingRequests": []
+  },
+  "TRPCWebSocketClosedError": {
+    "constructor": [
+      "opts"
+    ]
+  },
+  "ResettableTimeout": {
+    "timeout": [],
+    "constructor": [
+      "param",
+      "param"
+    ],
+    "reset": [],
+    "start": [],
+    "stop": []
+  },
+  "withResolvers": [],
+  "prepareUrl": [
+    "urlOptions"
+  ],
+  "buildConnectionMessage": [
+    "connectionParams",
+    "encoder"
+  ],
+  "WsClient": {
+    "connectionState": [],
+    "allowReconnect": [],
+    "requestManager": [],
+    "activeConnection": [],
+    "reconnectRetryDelay": [],
+    "inactivityTimeout": [],
+    "callbacks": [],
+    "lazyMode": [],
+    "encoder": [],
+    "constructor": [
+      "opts"
+    ],
+    "open": [],
+    "close": [],
+    "request": [
+      "param"
+    ],
+    "connection": [],
+    "reconnecting": [],
+    "reconnect": [
+      "closedError"
+    ],
+    "setupWebSocketListeners": [
+      "ws"
+    ],
+    "handleResponseMessage": [
+      "message"
+    ],
+    "handleIncomingRequest": [
+      "message"
+    ],
+    "send": [
+      "messageOrMessages"
+    ],
+    "batchSend": [
+      "message",
+      "callbacks"
+    ]
+  },
+  "tryReconnect": [
+    "attemptIndex"
+  ],
+  "handleCloseOrError": [
+    "cause"
+  ],
+  "asyncWsOpen": [
+    "ws"
+  ],
+  "setupPingInterval": [
+    "ws",
+    "param"
+  ],
+  "start": [],
+  "pong": [],
+  "WsConnection": {
+    "connectCount": [],
+    "id": [],
+    "WebSocketPonyfill": [],
+    "urlOptions": [],
+    "keepAliveOpts": [],
+    "encoder": [],
+    "wsObservable": [],
+    "constructor": [
+      "opts"
+    ],
+    "ws": [
+      "ws"
+    ],
+    "isOpen": [],
+    "isClosed": [],
+    "openPromise": [],
+    "open": [],
+    "close": []
+  },
+  "backwardCompatibility": [
+    "connection"
+  ],
+  "wsLink": [
+    "opts"
+  ]
+}
