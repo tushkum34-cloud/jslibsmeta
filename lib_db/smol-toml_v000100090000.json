@@ -1,0 +1,190 @@
+{
+  "TomlDate": {
+    "constructor": [
+      "date",
+      "fasttype",
+      "unsafeDelim"
+    ],
+    "isDateTime": [],
+    "isLocal": [],
+    "isDate": [],
+    "isTime": [],
+    "isValid": [],
+    "toISOString": [],
+    "wrapAsOffsetDateTime": [
+      "jsDate",
+      "param"
+    ],
+    "wrapAsLocalDateTime": [
+      "jsDate"
+    ],
+    "wrapAsLocalDate": [
+      "jsDate"
+    ],
+    "wrapAsLocalTime": [
+      "jsDate"
+    ]
+  },
+  "TomlError": {
+    "line": [],
+    "column": [],
+    "codeblock": [],
+    "constructor": [
+      "message",
+      "options"
+    ],
+    "x": [
+      "message",
+      "ctx",
+      "ptr"
+    ]
+  },
+  "getLineColFromPtr": [
+    "string",
+    "ptr"
+  ],
+  "makeCodeBlock": [
+    "string",
+    "line",
+    "column"
+  ],
+  "isDigit": [
+    "char",
+    "param"
+  ],
+  "isEndOfValue": [
+    "char",
+    "delim"
+  ],
+  "extractValue": [
+    "ctx",
+    "end"
+  ],
+  "parseNumber": [
+    "ctx",
+    "startPtr",
+    "startChr",
+    "sign",
+    "endChr"
+  ],
+  "parseIntegerBaseN": [
+    "ctx",
+    "startPtr",
+    "base",
+    "endChr"
+  ],
+  "parseInteger": [
+    "ctx",
+    "str",
+    "base",
+    "startPtr"
+  ],
+  "parseDate": [
+    "ctx",
+    "c",
+    "endChr"
+  ],
+  "parseTime": [
+    "ctx",
+    "c",
+    "endChr"
+  ],
+  "readDate": [
+    "ctx",
+    "str",
+    "type",
+    "unsafeDelim",
+    "errPtr",
+    "temporalSuffix"
+  ],
+  "peekTable": [
+    "ctx",
+    "key",
+    "table",
+    "meta",
+    "type"
+  ],
+  "validateTablePeek": [
+    "ctx",
+    "peek",
+    "ptr"
+  ],
+  "parse": [
+    "toml",
+    "param"
+  ],
+  "parseString": [
+    "ctx"
+  ],
+  "extendedTypeOf": [
+    "obj"
+  ],
+  "isArrayOfTables": [
+    "obj"
+  ],
+  "formatWellFormedStringUnchecked": [
+    "s"
+  ],
+  "formatString": [
+    "s"
+  ],
+  "formatKey": [
+    "s"
+  ],
+  "stringifyValue": [
+    "val",
+    "type",
+    "depth",
+    "numberAsFloat",
+    "strictTemporal"
+  ],
+  "stringifyInlineTable": [
+    "obj",
+    "depth",
+    "numberAsFloat",
+    "strictTemporal"
+  ],
+  "stringifyArray": [
+    "array",
+    "depth",
+    "numberAsFloat",
+    "strictTemporal"
+  ],
+  "stringifyArrayTable": [
+    "array",
+    "key",
+    "depth",
+    "numberAsFloat",
+    "strictTemporal"
+  ],
+  "stringifyTable": [
+    "tableKey",
+    "obj",
+    "prefix",
+    "depth",
+    "numberAsFloat",
+    "strictTemporal"
+  ],
+  "stringify": [
+    "obj",
+    "param"
+  ],
+  "parseKey": [
+    "ctx",
+    "param"
+  ],
+  "parseInlineTable": [
+    "ctx"
+  ],
+  "parseArray": [
+    "ctx"
+  ],
+  "skipComment": [
+    "ctx"
+  ],
+  "skipVoid": [
+    "ctx",
+    "banNewLines",
+    "banComments"
+  ]
+}
