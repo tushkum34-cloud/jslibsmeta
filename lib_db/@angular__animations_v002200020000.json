@@ -1,0 +1,671 @@
+{
+  "NoopAnimationDriver": {
+    "validateStyleProperty": [
+      "prop"
+    ],
+    "containsElement": [
+      "elm1",
+      "elm2"
+    ],
+    "getParentElement": [
+      "element"
+    ],
+    "query": [
+      "element",
+      "selector",
+      "multi"
+    ],
+    "computeStyle": [
+      "element",
+      "prop",
+      "defaultValue"
+    ],
+    "animate": [
+      "element",
+      "keyframes",
+      "duration",
+      "delay",
+      "easing",
+      "previousPlayers",
+      "scrubberAccessRequested"
+    ],
+    "ɵfac": [],
+    "ɵprov": []
+  },
+  "AnimationDriver": {
+    "NOOP": [],
+    "validateStyleProperty": [
+      "prop"
+    ],
+    "validateAnimatableStyleProperty": [],
+    "containsElement": [
+      "elm1",
+      "elm2"
+    ],
+    "getParentElement": [
+      "element"
+    ],
+    "query": [
+      "element",
+      "selector",
+      "multi"
+    ],
+    "computeStyle": [
+      "element",
+      "prop",
+      "defaultValue"
+    ],
+    "animate": [
+      "element",
+      "keyframes",
+      "duration",
+      "delay",
+      "easing",
+      "previousPlayers",
+      "scrubberAccessRequested"
+    ]
+  },
+  "NoopAnimationPlayer": {
+    "_onDoneFns": [],
+    "_onStartFns": [],
+    "_onDestroyFns": [],
+    "_originalOnDoneFns": [],
+    "_originalOnStartFns": [],
+    "_started": [],
+    "_destroyed": [],
+    "_finished": [],
+    "_position": [],
+    "parentPlayer": [],
+    "totalTime": [],
+    "constructor": [
+      "duration",
+      "delay"
+    ],
+    "_onFinish": [],
+    "onStart": [
+      "fn"
+    ],
+    "onDone": [
+      "fn"
+    ],
+    "onDestroy": [
+      "fn"
+    ],
+    "hasStarted": [],
+    "init": [],
+    "play": [],
+    "_onStart": [],
+    "pause": [],
+    "restart": [],
+    "finish": [],
+    "destroy": [],
+    "reset": [],
+    "setPosition": [
+      "position"
+    ],
+    "getPosition": []
+  },
+  "AnimationBuilder": {
+    "build": [
+      "animation"
+    ],
+    "ɵfac": [],
+    "ɵprov": []
+  },
+  "AnimationFactory": {
+    "create": [
+      "element",
+      "options"
+    ]
+  },
+  "BrowserAnimationBuilder": {
+    "animationModuleType": [],
+    "_nextAnimationId": [],
+    "_renderer": [],
+    "constructor": [
+      "rootRenderer",
+      "doc"
+    ],
+    "build": [
+      "animation"
+    ],
+    "ɵfac": [],
+    "ɵprov": []
+  },
+  "AnimationGroupPlayer": {
+    "_onDoneFns": [],
+    "_onStartFns": [],
+    "_finished": [],
+    "_started": [],
+    "_destroyed": [],
+    "_onDestroyFns": [],
+    "parentPlayer": [],
+    "totalTime": [],
+    "players": [],
+    "constructor": [
+      "_players"
+    ],
+    "_onFinish": [],
+    "init": [],
+    "onStart": [
+      "fn"
+    ],
+    "_onStart": [],
+    "onDone": [
+      "fn"
+    ],
+    "onDestroy": [
+      "fn"
+    ],
+    "hasStarted": [],
+    "play": [],
+    "pause": [],
+    "restart": [],
+    "finish": [],
+    "destroy": [],
+    "_onDestroy": [],
+    "reset": [],
+    "setPosition": [
+      "p"
+    ],
+    "getPosition": [],
+    "beforeDestroy": []
+  },
+  "MockAnimationDriver": {
+    "log": [],
+    "validateStyleProperty": [
+      "prop"
+    ],
+    "validateAnimatableStyleProperty": [
+      "prop"
+    ],
+    "containsElement": [
+      "elm1",
+      "elm2"
+    ],
+    "getParentElement": [
+      "element"
+    ],
+    "query": [
+      "element",
+      "selector",
+      "multi"
+    ],
+    "computeStyle": [
+      "element",
+      "prop",
+      "defaultValue"
+    ],
+    "animate": [
+      "element",
+      "keyframes",
+      "duration",
+      "delay",
+      "easing",
+      "previousPlayers"
+    ]
+  },
+  "MockAnimationPlayer": {
+    "element": [],
+    "keyframes": [],
+    "duration": [],
+    "delay": [],
+    "easing": [],
+    "previousPlayers": [],
+    "__finished": [],
+    "__started": [],
+    "previousStyles": [],
+    "_onInitFns": [],
+    "currentSnapshot": [],
+    "_keyframes": [],
+    "constructor": [
+      "element",
+      "keyframes",
+      "duration",
+      "delay",
+      "easing",
+      "previousPlayers"
+    ],
+    "reset": [],
+    "finish": [],
+    "destroy": [],
+    "play": [],
+    "hasStarted": [],
+    "beforeDestroy": []
+  },
+  "AnimationStyleNormalizer": {
+    "normalizePropertyName": [
+      "propertyName",
+      "errors"
+    ],
+    "normalizeStyleValue": [
+      "userProvidedProperty",
+      "normalizedProperty",
+      "value",
+      "errors"
+    ]
+  },
+  "NoopAnimationStyleNormalizer": {
+    "normalizePropertyName": [
+      "propertyName",
+      "errors"
+    ],
+    "normalizeStyleValue": [
+      "userProvidedProperty",
+      "normalizedProperty",
+      "value",
+      "errors"
+    ]
+  },
+  "AnimationEngine": {
+    "_driver": [],
+    "_normalizer": [],
+    "_transitionEngine": [],
+    "_timelineEngine": [],
+    "_triggerCache": [],
+    "onRemovalComplete": [],
+    "constructor": [
+      "doc",
+      "_driver",
+      "_normalizer"
+    ],
+    "registerTrigger": [
+      "componentId",
+      "namespaceId",
+      "hostElement",
+      "name",
+      "metadata"
+    ],
+    "register": [
+      "namespaceId",
+      "hostElement"
+    ],
+    "destroy": [
+      "namespaceId",
+      "context"
+    ],
+    "onInsert": [
+      "namespaceId",
+      "element",
+      "parent",
+      "insertBefore"
+    ],
+    "onRemove": [
+      "namespaceId",
+      "element",
+      "context"
+    ],
+    "disableAnimations": [
+      "element",
+      "disable"
+    ],
+    "process": [
+      "namespaceId",
+      "element",
+      "property",
+      "value"
+    ],
+    "listen": [
+      "namespaceId",
+      "element",
+      "eventName",
+      "eventPhase",
+      "callback"
+    ],
+    "flush": [
+      "microtaskId"
+    ],
+    "players": [],
+    "whenRenderingDone": [],
+    "afterFlushAnimationsDone": [
+      "cb"
+    ]
+  },
+  "ElementInstructionMap": {
+    "_map": [],
+    "get": [
+      "element"
+    ],
+    "append": [
+      "element",
+      "instructions"
+    ],
+    "has": [
+      "element"
+    ],
+    "clear": []
+  },
+  "Animation$1": {
+    "_driver": [],
+    "_animationAst": [],
+    "constructor": [
+      "_driver",
+      "input"
+    ],
+    "buildTimelines": [
+      "element",
+      "startingStyles",
+      "destinationStyles",
+      "options",
+      "subInstructions"
+    ]
+  },
+  "WebAnimationsStyleNormalizer": {
+    "normalizePropertyName": [
+      "propertyName",
+      "errors"
+    ],
+    "normalizeStyleValue": [
+      "userProvidedProperty",
+      "normalizedProperty",
+      "value",
+      "errors"
+    ]
+  },
+  "BaseAnimationRenderer": {
+    "namespaceId": [],
+    "delegate": [],
+    "engine": [],
+    "_onDestroy": [],
+    "ɵtype": [],
+    "constructor": [
+      "namespaceId",
+      "delegate",
+      "engine",
+      "_onDestroy"
+    ],
+    "data": [],
+    "destroyNode": [
+      "node"
+    ],
+    "destroy": [],
+    "createElement": [
+      "name",
+      "namespace"
+    ],
+    "createComment": [
+      "value"
+    ],
+    "createText": [
+      "value"
+    ],
+    "appendChild": [
+      "parent",
+      "newChild"
+    ],
+    "insertBefore": [
+      "parent",
+      "newChild",
+      "refChild",
+      "isMove"
+    ],
+    "removeChild": [
+      "parent",
+      "oldChild",
+      "isHostElement",
+      "requireSynchronousElementRemoval"
+    ],
+    "selectRootElement": [
+      "selectorOrNode",
+      "preserveContent"
+    ],
+    "parentNode": [
+      "node"
+    ],
+    "nextSibling": [
+      "node"
+    ],
+    "setAttribute": [
+      "el",
+      "name",
+      "value",
+      "namespace"
+    ],
+    "removeAttribute": [
+      "el",
+      "name",
+      "namespace"
+    ],
+    "addClass": [
+      "el",
+      "name"
+    ],
+    "removeClass": [
+      "el",
+      "name"
+    ],
+    "setStyle": [
+      "el",
+      "style",
+      "value",
+      "flags"
+    ],
+    "removeStyle": [
+      "el",
+      "style",
+      "flags"
+    ],
+    "setProperty": [
+      "el",
+      "name",
+      "value"
+    ],
+    "setValue": [
+      "node",
+      "value"
+    ],
+    "listen": [
+      "target",
+      "eventName",
+      "callback",
+      "options"
+    ],
+    "disableAnimations": [
+      "element",
+      "value"
+    ]
+  },
+  "AnimationRenderer": {
+    "factory": [],
+    "constructor": [
+      "factory",
+      "namespaceId",
+      "delegate",
+      "engine",
+      "onDestroy"
+    ],
+    "setProperty": [
+      "el",
+      "name",
+      "value"
+    ],
+    "listen": [
+      "target",
+      "eventName",
+      "callback",
+      "options"
+    ]
+  },
+  "AnimationRendererFactory": {
+    "delegate": [],
+    "engine": [],
+    "_zone": [],
+    "_currentId": [],
+    "_microtaskId": [],
+    "_animationCallbacksBuffer": [],
+    "_rendererCache": [],
+    "_cdRecurDepth": [],
+    "constructor": [
+      "delegate",
+      "engine",
+      "_zone"
+    ],
+    "createRenderer": [
+      "hostElement",
+      "type"
+    ],
+    "begin": [],
+    "_scheduleCountTask": [],
+    "end": [],
+    "whenRenderingDone": [],
+    "componentReplaced": [
+      "componentId"
+    ]
+  },
+  "WebAnimationsDriver": {
+    "validateStyleProperty": [
+      "prop"
+    ],
+    "validateAnimatableStyleProperty": [
+      "prop"
+    ],
+    "containsElement": [
+      "elm1",
+      "elm2"
+    ],
+    "getParentElement": [
+      "element"
+    ],
+    "query": [
+      "element",
+      "selector",
+      "multi"
+    ],
+    "computeStyle": [
+      "element",
+      "prop",
+      "defaultValue"
+    ],
+    "animate": [
+      "element",
+      "keyframes",
+      "duration",
+      "delay",
+      "easing",
+      "previousPlayers"
+    ]
+  },
+  "SpecialCasedStyles": {
+    "_element": [],
+    "_startStyles": [],
+    "_endStyles": [],
+    "initialStylesByElement": [],
+    "_state": [],
+    "_initialStyles": [],
+    "constructor": [
+      "_element",
+      "_startStyles",
+      "_endStyles"
+    ],
+    "start": [],
+    "finish": [],
+    "destroy": []
+  },
+  "WebAnimationsPlayer": {
+    "element": [],
+    "keyframes": [],
+    "options": [],
+    "_specialStyles": [],
+    "_onDoneFns": [],
+    "_onStartFns": [],
+    "_onDestroyFns": [],
+    "_duration": [],
+    "_delay": [],
+    "_initialized": [],
+    "_finished": [],
+    "_started": [],
+    "_destroyed": [],
+    "_finalKeyframe": [],
+    "_originalOnDoneFns": [],
+    "_originalOnStartFns": [],
+    "domPlayer": [],
+    "time": [],
+    "parentPlayer": [],
+    "currentSnapshot": [],
+    "constructor": [
+      "element",
+      "keyframes",
+      "options",
+      "_specialStyles"
+    ],
+    "_onFinish": [],
+    "init": [],
+    "_buildPlayer": [],
+    "_preparePlayerBeforeStart": [],
+    "_convertKeyframesToObject": [],
+    "onStart": [
+      "fn"
+    ],
+    "onDone": [
+      "fn"
+    ],
+    "onDestroy": [
+      "fn"
+    ],
+    "play": [],
+    "pause": [],
+    "finish": [],
+    "reset": [],
+    "_resetDomPlayerState": [],
+    "restart": [],
+    "hasStarted": [],
+    "destroy": [],
+    "setPosition": [
+      "p"
+    ],
+    "getPosition": [],
+    "totalTime": [],
+    "beforeDestroy": []
+  },
+  "TransitionAnimationPlayer": {
+    "namespaceId": [],
+    "triggerName": [],
+    "element": [],
+    "_player": [],
+    "_containsRealPlayer": [],
+    "_queuedCallbacks": [],
+    "destroyed": [],
+    "parentPlayer": [],
+    "markedForDestroy": [],
+    "disabled": [],
+    "queued": [],
+    "totalTime": [],
+    "constructor": [
+      "namespaceId",
+      "triggerName",
+      "element"
+    ],
+    "setRealPlayer": [
+      "player"
+    ],
+    "getRealPlayer": [],
+    "overrideTotalTime": [
+      "totalTime"
+    ],
+    "syncPlayerEvents": [
+      "player"
+    ],
+    "_queueEvent": [],
+    "onDone": [
+      "fn"
+    ],
+    "onStart": [
+      "fn"
+    ],
+    "onDestroy": [
+      "fn"
+    ],
+    "init": [],
+    "hasStarted": [],
+    "play": [],
+    "pause": [],
+    "restart": [],
+    "finish": [],
+    "destroy": [],
+    "reset": [],
+    "setPosition": [
+      "p"
+    ],
+    "getPosition": []
+  }
+}

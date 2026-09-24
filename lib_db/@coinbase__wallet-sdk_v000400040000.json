@@ -1,0 +1,662 @@
+{
+  "CoinbaseWalletProvider": {
+    "constructor": [
+      "_a"
+    ],
+    "request": [
+      "args"
+    ],
+    "enable": [],
+    "disconnect": [],
+    "requestSignerSelection": [
+      "handshakeRequest"
+    ],
+    "initSigner": [
+      "signerType"
+    ]
+  },
+  "CoinbaseWalletSDK": {
+    "constructor": [
+      "metadata"
+    ],
+    "makeWeb3Provider": [
+      "param"
+    ],
+    "getCoinbaseWalletLogo": [
+      "type",
+      "param"
+    ],
+    "storeLatestVersion": []
+  },
+  "walletLogo": [
+    "type",
+    "width"
+  ],
+  "Communicator": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "listener": [
+    "event"
+  ],
+  "EthereumRpcError": {
+    "constructor": [
+      "code",
+      "message",
+      "data"
+    ]
+  },
+  "EthereumProviderError": {
+    "constructor": [
+      "code",
+      "message",
+      "data"
+    ]
+  },
+  "getEthJsonRpcError": [
+    "code",
+    "arg"
+  ],
+  "getEthProviderError": [
+    "code",
+    "arg"
+  ],
+  "parseOpts": [
+    "arg"
+  ],
+  "isValidEthProviderCode": [
+    "code"
+  ],
+  "serializeError": [
+    "error"
+  ],
+  "getErrorObject": [
+    "error"
+  ],
+  "getMessageFromCode": [
+    "code",
+    "param"
+  ],
+  "isValidCode": [
+    "code"
+  ],
+  "getErrorCode": [
+    "error"
+  ],
+  "isErrorWithCode": [
+    "error"
+  ],
+  "serialize": [
+    "error",
+    "param"
+  ],
+  "isJsonRpcServerError": [
+    "code"
+  ],
+  "assignOriginalError": [
+    "error"
+  ],
+  "hasKey": [
+    "obj",
+    "key"
+  ],
+  "hasStringProperty": [
+    "obj",
+    "prop"
+  ],
+  "ProviderEventEmitter": {},
+  "ScopedLocalStorage": {
+    "constructor": [
+      "scope",
+      "module"
+    ],
+    "storeObject": [
+      "key",
+      "item"
+    ],
+    "loadObject": [
+      "key"
+    ],
+    "setItem": [
+      "key",
+      "value"
+    ],
+    "getItem": [
+      "key"
+    ],
+    "removeItem": [
+      "key"
+    ],
+    "clear": [],
+    "scopedKey": [
+      "key"
+    ],
+    "clearAll": []
+  },
+  "OpaqueType": [],
+  "IntNumber": [
+    "num"
+  ],
+  "randomBytesHex": [
+    "length"
+  ],
+  "uint8ArrayToHex": [
+    "value"
+  ],
+  "hexStringToUint8Array": [
+    "hexString"
+  ],
+  "hexStringFromBuffer": [
+    "buf",
+    "param"
+  ],
+  "encodeToHexString": [
+    "str"
+  ],
+  "bigIntStringFromBigInt": [
+    "bi"
+  ],
+  "intNumberFromHexString": [
+    "hex"
+  ],
+  "hexStringFromNumber": [
+    "num"
+  ],
+  "has0xPrefix": [
+    "str"
+  ],
+  "strip0x": [
+    "hex"
+  ],
+  "prepend0x": [
+    "hex"
+  ],
+  "isHexString": [
+    "hex"
+  ],
+  "ensureHexString": [
+    "hex",
+    "param"
+  ],
+  "ensureEvenLengthHexString": [
+    "hex",
+    "param"
+  ],
+  "ensureAddressString": [
+    "str"
+  ],
+  "ensureBuffer": [
+    "str"
+  ],
+  "ensureIntNumber": [
+    "num"
+  ],
+  "ensureRegExpString": [
+    "regExp"
+  ],
+  "ensureBigInt": [
+    "val"
+  ],
+  "ensureParsedJSONObject": [
+    "val"
+  ],
+  "isBigNumber": [
+    "val"
+  ],
+  "range": [
+    "start",
+    "stop"
+  ],
+  "getFavicon": [],
+  "areAddressArraysEqual": [
+    "arr1",
+    "arr2"
+  ],
+  "createCoinbaseWalletProvider": [
+    "options"
+  ],
+  "createCoinbaseWalletSDK": [
+    "params"
+  ],
+  "SCWKeyManager": {
+    "constructor": [],
+    "getOwnPublicKey": [],
+    "getSharedSecret": [],
+    "setPeerPublicKey": [
+      "key"
+    ],
+    "clear": [],
+    "generateKeyPair": [],
+    "loadKeysIfNeeded": [],
+    "loadKey": [
+      "item"
+    ],
+    "storeKey": [
+      "item",
+      "key"
+    ]
+  },
+  "SCWSigner": {
+    "constructor": [
+      "params"
+    ],
+    "handshake": [
+      "args"
+    ],
+    "request": [
+      "request"
+    ],
+    "sendRequestToPopup": [
+      "request"
+    ],
+    "cleanup": [],
+    "handleSwitchChainRequest": [
+      "request"
+    ],
+    "handleGetCapabilitiesRequest": [
+      "request"
+    ],
+    "sendEncryptedRequest": [
+      "request"
+    ],
+    "createRequestMessage": [
+      "content"
+    ],
+    "decryptResponseMessage": [
+      "message"
+    ],
+    "updateChain": [
+      "chainId",
+      "newAvailableChains"
+    ]
+  },
+  "assertGetCapabilitiesParams": [
+    "params"
+  ],
+  "loadSignerType": [],
+  "storeSignerType": [
+    "signerType"
+  ],
+  "fetchSignerType": [
+    "params"
+  ],
+  "createSigner": [
+    "params"
+  ],
+  "listenForWalletLinkSessionRequest": [
+    "communicator",
+    "metadata",
+    "callback"
+  ],
+  "WalletLinkSigner": {
+    "constructor": [
+      "options"
+    ],
+    "getSession": [],
+    "handshake": [],
+    "selectedAddress": [],
+    "jsonRpcUrl": [
+      "value"
+    ],
+    "updateProviderInfo": [
+      "jsonRpcUrl",
+      "chainId"
+    ],
+    "watchAsset": [
+      "params"
+    ],
+    "addEthereumChain": [
+      "params"
+    ],
+    "switchEthereumChain": [
+      "params"
+    ],
+    "cleanup": [],
+    "_setAddresses": [
+      "addresses",
+      "_"
+    ],
+    "request": [
+      "request"
+    ],
+    "_ensureKnownAddress": [
+      "addressString"
+    ],
+    "_prepareTransactionParams": [
+      "tx"
+    ],
+    "ecRecover": [
+      "request"
+    ],
+    "getChainId": [],
+    "_eth_requestAccounts": [],
+    "personalSign": [
+      "param"
+    ],
+    "_eth_signTransaction": [
+      "params"
+    ],
+    "_eth_sendRawTransaction": [
+      "params"
+    ],
+    "_eth_sendTransaction": [
+      "params"
+    ],
+    "signTypedData": [
+      "request"
+    ],
+    "initializeRelay": []
+  },
+  "encode": [
+    "input"
+  ],
+  "RelayEventManager": {
+    "constructor": [],
+    "makeRequestId": []
+  },
+  "WalletLinkRelay": {
+    "constructor": [
+      "options"
+    ],
+    "subscribe": [],
+    "resetAndReload": [],
+    "signEthereumTransaction": [
+      "params"
+    ],
+    "signAndSubmitEthereumTransaction": [
+      "params"
+    ],
+    "submitEthereumTransaction": [
+      "signedTransaction",
+      "chainId"
+    ],
+    "getWalletLinkSession": [],
+    "sendRequest": [
+      "request"
+    ],
+    "publishWeb3RequestEvent": [
+      "id",
+      "request"
+    ],
+    "openCoinbaseWalletDeeplink": [
+      "method"
+    ],
+    "publishWeb3RequestCanceledEvent": [
+      "id"
+    ],
+    "publishEvent": [
+      "event",
+      "message",
+      "callWebhook"
+    ],
+    "handleWeb3ResponseMessage": [
+      "id",
+      "response"
+    ],
+    "handleErrorResponse": [
+      "id",
+      "method",
+      "error"
+    ],
+    "invokeCallback": [
+      "id",
+      "response"
+    ],
+    "requestEthereumAccounts": [],
+    "watchAsset": [
+      "type",
+      "address",
+      "symbol",
+      "decimals",
+      "image",
+      "chainId"
+    ],
+    "addEthereumChain": [
+      "chainId",
+      "rpcUrls",
+      "iconUrls",
+      "blockExplorerUrls",
+      "chainName",
+      "nativeCurrency"
+    ],
+    "switchEthereumChain": [
+      "chainId",
+      "address"
+    ]
+  },
+  "cancel": [
+    "error"
+  ],
+  "WalletLinkCipher": {
+    "constructor": [
+      "secret"
+    ],
+    "encrypt": [
+      "plainText"
+    ],
+    "decrypt": [
+      "cipherText"
+    ]
+  },
+  "WalletLinkConnection": {
+    "constructor": [
+      "param"
+    ],
+    "createWebSocket": [],
+    "setupVisibilityChangeHandler": [],
+    "reconnectWithFreshWebSocket": [],
+    "connect": [],
+    "destroy": [],
+    "connected": [
+      "connected"
+    ],
+    "linked": [
+      "linked"
+    ],
+    "setOnceLinked": [
+      "callback"
+    ],
+    "handleIncomingEvent": [
+      "m"
+    ],
+    "checkUnseenEvents": [],
+    "fetchUnseenEventsAPI": [],
+    "publishEvent": [
+      "event",
+      "unencryptedData",
+      "param"
+    ],
+    "sendData": [
+      "message"
+    ],
+    "updateLastHeartbeat": [],
+    "heartbeat": [],
+    "makeRequest": [
+      "message",
+      "param"
+    ],
+    "handleConnected": []
+  },
+  "reconnect": [],
+  "WalletLinkHTTP": {
+    "constructor": [
+      "linkAPIUrl",
+      "sessionId",
+      "sessionKey"
+    ],
+    "markUnseenEventsAsSeen": [
+      "events"
+    ],
+    "fetchUnseenEvents": []
+  },
+  "WalletLinkWebSocket": {
+    "setConnectionStateListener": [
+      "listener"
+    ],
+    "setIncomingDataListener": [
+      "listener"
+    ],
+    "constructor": [
+      "url",
+      "param"
+    ],
+    "connect": [],
+    "disconnect": [],
+    "sendData": [
+      "data"
+    ],
+    "clearWebSocket": [],
+    "cleanup": []
+  },
+  "mockedWalletLinkRelay": [],
+  "makeMockReturn": [
+    "response"
+  ],
+  "WalletLinkSession": {
+    "constructor": [
+      "storage",
+      "id",
+      "secret",
+      "param"
+    ],
+    "create": [
+      "storage"
+    ],
+    "load": [
+      "storage"
+    ],
+    "linked": [
+      "val"
+    ],
+    "save": [],
+    "persistLinked": []
+  },
+  "isErrorResponse": [
+    "response"
+  ],
+  "WLMobileRelayUI": {
+    "constructor": [],
+    "attach": [],
+    "redirectToCoinbaseWallet": [
+      "walletLinkUrl"
+    ],
+    "openCoinbaseWalletDeeplink": [
+      "walletLinkUrl"
+    ],
+    "showConnecting": [
+      "_options"
+    ]
+  },
+  "WalletLinkRelayUI": {
+    "constructor": [],
+    "attach": [],
+    "showConnecting": [
+      "options"
+    ]
+  },
+  "RedirectDialog": {
+    "constructor": [],
+    "attach": [],
+    "present": [
+      "props"
+    ],
+    "clear": [],
+    "render": [
+      "props"
+    ]
+  },
+  "RedirectDialogContent": [
+    "param"
+  ],
+  "Snackbar": {
+    "constructor": [],
+    "attach": [
+      "el"
+    ],
+    "presentItem": [
+      "itemProps"
+    ],
+    "clear": [],
+    "render": []
+  },
+  "SnackbarContainer": [
+    "props"
+  ],
+  "SnackbarInstance": [
+    "param"
+  ],
+  "toggleExpanded": [],
+  "injectCssReset": [],
+  "createQrUrl": [
+    "sessionId",
+    "sessionSecret",
+    "serverUrl",
+    "isParentConnection",
+    "version",
+    "chainId"
+  ],
+  "isInIFrame": [],
+  "getLocation": [],
+  "isMobileWeb": [],
+  "isDarkMode": [],
+  "createCoopChecker": [],
+  "generateKeyPair": [],
+  "deriveSharedSecret": [
+    "ownPrivateKey",
+    "peerPublicKey"
+  ],
+  "encrypt": [
+    "sharedSecret",
+    "plainText"
+  ],
+  "decrypt": [
+    "sharedSecret",
+    "param"
+  ],
+  "getFormat": [
+    "keyType"
+  ],
+  "exportKeyToHexString": [
+    "type",
+    "key"
+  ],
+  "importKeyFromHexString": [
+    "type",
+    "hexString"
+  ],
+  "encryptContent": [
+    "content",
+    "sharedSecret"
+  ],
+  "decryptContent": [
+    "encryptedData",
+    "sharedSecret"
+  ],
+  "fetchRPCRequest": [
+    "request",
+    "rpcUrl"
+  ],
+  "getCoinbaseInjectedLegacyProvider": [],
+  "getInjectedEthereum": [],
+  "getCoinbaseInjectedProvider": [
+    "param"
+  ],
+  "checkErrorForInvalidRequestArgs": [
+    "args"
+  ],
+  "validatePreferences": [
+    "preference"
+  ],
+  "openPopup": [
+    "url"
+  ],
+  "tryOpenPopup": [],
+  "closePopup": [
+    "popup"
+  ],
+  "appendAppInfoQueryParams": [
+    "url"
+  ],
+  "initSnackbar": []
+}
