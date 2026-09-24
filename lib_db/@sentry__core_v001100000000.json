@@ -1,0 +1,3236 @@
+{
+  "getBaseApiEndpoint": [
+    "dsn"
+  ],
+  "_getIngestEndpoint": [
+    "dsn"
+  ],
+  "_encodedAuth": [
+    "dsn",
+    "sdkInfo"
+  ],
+  "getEnvelopeEndpointWithUrlEncodedAuth": [
+    "dsn",
+    "tunnel",
+    "sdkInfo"
+  ],
+  "getReportDialogEndpoint": [
+    "dsnLike",
+    "dialogOptions"
+  ],
+  "setAsyncContextStrategy": [
+    "strategy"
+  ],
+  "getAsyncContextStrategy": [
+    "carrier"
+  ],
+  "AsyncContextStack": {
+    "_stack": [],
+    "_isolationScope": [],
+    "constructor": [
+      "scope",
+      "isolationScope"
+    ],
+    "withScope": [
+      "callback"
+    ],
+    "getClient": [],
+    "getScope": [],
+    "getIsolationScope": [],
+    "getStackTop": [],
+    "_pushScope": [],
+    "_popScope": []
+  },
+  "getAsyncContextStack": [],
+  "withScope": [
+    "param"
+  ],
+  "withSetScope": [
+    "scope",
+    "callback"
+  ],
+  "withIsolationScope": [
+    "param"
+  ],
+  "getStackAsyncContextStrategy": [],
+  "suppressTracingInStack": [
+    "callback"
+  ],
+  "waitForTracingChannelBinding": [
+    "callback",
+    "param"
+  ],
+  "isAttributeObject": [
+    "maybeObj"
+  ],
+  "attributeValueToTypedAttributeValue": [
+    "rawValue",
+    "useFallback"
+  ],
+  "serializeAttributes": [
+    "attributes",
+    "param"
+  ],
+  "estimateTypedAttributesSizeInBytes": [
+    "attributes"
+  ],
+  "estimatePrimitiveSizeInBytes": [
+    "value"
+  ],
+  "getTypedAttributeValue": [
+    "value"
+  ],
+  "addBreadcrumb": [
+    "breadcrumb",
+    "hint"
+  ],
+  "warnOnRemovedBuildOptions": [
+    "options",
+    "removedKeys",
+    "param"
+  ],
+  "getMainCarrier": [],
+  "getSentryCarrier": [
+    "carrier"
+  ],
+  "getGlobalSingleton": [
+    "name",
+    "creator",
+    "param"
+  ],
+  "createCheckInEnvelope": [
+    "checkIn",
+    "dynamicSamplingContext",
+    "metadata",
+    "tunnel",
+    "dsn"
+  ],
+  "createCheckInEnvelopeItem": [
+    "checkIn"
+  ],
+  "_makeInternalError": [
+    "message"
+  ],
+  "_makeDoNotSendEventError": [
+    "message"
+  ],
+  "_isInternalError": [
+    "error"
+  ],
+  "_isDoNotSendEventError": [
+    "error"
+  ],
+  "setupWeightBasedFlushing": [
+    "client",
+    "afterCaptureHook",
+    "flushHook",
+    "estimateSizeFn",
+    "flushFn"
+  ],
+  "Client": {
+    "_options": [],
+    "_dsn": [],
+    "_transport": [],
+    "_integrations": [],
+    "_numProcessing": [],
+    "_eventProcessors": [],
+    "_outcomes": [],
+    "_hooks": [],
+    "_promiseBuffer": [],
+    "_dataCollection": [],
+    "_unhandledSessionStatus": [],
+    "constructor": [
+      "options"
+    ],
+    "captureException": [
+      "exception",
+      "hint",
+      "scope"
+    ],
+    "captureMessage": [
+      "message",
+      "level",
+      "hint",
+      "currentScope"
+    ],
+    "captureEvent": [
+      "event",
+      "hint",
+      "currentScope"
+    ],
+    "captureSession": [
+      "session"
+    ],
+    "captureCheckIn": [
+      "checkIn",
+      "monitorConfig",
+      "scope"
+    ],
+    "getDsn": [],
+    "getOptions": [],
+    "getDataCollectionOptions": [],
+    "getSdkMetadata": [],
+    "getTransport": [],
+    "flush": [
+      "timeout"
+    ],
+    "close": [
+      "timeout"
+    ],
+    "getEventProcessors": [],
+    "addEventProcessor": [
+      "eventProcessor"
+    ],
+    "init": [],
+    "getIntegrationByName": [
+      "integrationName"
+    ],
+    "getIntegrationNames": [],
+    "addIntegration": [
+      "integration"
+    ],
+    "sendEvent": [
+      "event",
+      "hint"
+    ],
+    "sendSession": [
+      "session"
+    ],
+    "recordDroppedEvent": [
+      "reason",
+      "category",
+      "count"
+    ],
+    "on": [
+      "hook",
+      "callback"
+    ],
+    "emit": [
+      "hook",
+      "moduleName"
+    ],
+    "sendEnvelope": [
+      "envelope"
+    ],
+    "registerCleanup": [
+      "callback"
+    ],
+    "dispose": [],
+    "_setupIntegrations": [],
+    "_updateSessionFromEvent": [
+      "session",
+      "event"
+    ],
+    "_isClientDoneProcessing": [
+      "timeout"
+    ],
+    "_isEnabled": [],
+    "_prepareEvent": [
+      "event",
+      "hint",
+      "currentScope",
+      "isolationScope"
+    ],
+    "_captureEvent": [
+      "event",
+      "hint",
+      "currentScope",
+      "isolationScope"
+    ],
+    "_processEvent": [
+      "event",
+      "hint",
+      "currentScope",
+      "isolationScope"
+    ],
+    "_process": [
+      "taskProducer",
+      "dataCategory"
+    ],
+    "_clearOutcomes": [],
+    "_flushOutcomes": [],
+    "eventFromException": [
+      "_exception",
+      "_hint"
+    ],
+    "eventFromMessage": [
+      "_message",
+      "_level",
+      "_hint"
+    ]
+  },
+  "uniqueCallback": [
+    "param"
+  ],
+  "_validateBeforeSendResult": [
+    "beforeSendResult",
+    "beforeSendLabel"
+  ],
+  "processBeforeSend": [
+    "client",
+    "options",
+    "event",
+    "hint",
+    "onCallbackError"
+  ],
+  "isErrorEvent": [
+    "wat"
+  ],
+  "isTransactionEvent": [
+    "event"
+  ],
+  "estimateMetricSizeInBytes": [
+    "metric"
+  ],
+  "estimateLogSizeInBytes": [
+    "log"
+  ],
+  "estimateAttributesSizeInBytes": [
+    "attributes"
+  ],
+  "registerExternalPropagationContext": [
+    "fn"
+  ],
+  "getExternalPropagationContext": [],
+  "hasExternalPropagationContext": [],
+  "getCurrentScope": [],
+  "getIsolationScope": [],
+  "getGlobalScope": [],
+  "getClient": [],
+  "getTraceContextFromScope": [
+    "scope"
+  ],
+  "getDefaultCurrentScope": [],
+  "getDefaultIsolationScope": [],
+  "_enhanceEventWithSdkInfo": [
+    "event",
+    "newSdkInfo"
+  ],
+  "createSessionEnvelope": [
+    "session",
+    "dsn",
+    "metadata",
+    "tunnel"
+  ],
+  "createEventEnvelope": [
+    "event",
+    "dsn",
+    "metadata",
+    "tunnel"
+  ],
+  "notifyEventProcessors": [
+    "processors",
+    "event",
+    "hint",
+    "param",
+    "onDrop"
+  ],
+  "_notifyEventProcessors": [
+    "event",
+    "hint",
+    "processors",
+    "index",
+    "onDrop"
+  ],
+  "captureException": [
+    "exception",
+    "hint"
+  ],
+  "captureMessage": [
+    "message",
+    "captureContext"
+  ],
+  "captureEvent": [
+    "event",
+    "hint"
+  ],
+  "setContext": [
+    "name",
+    "context"
+  ],
+  "setExtras": [
+    "extras"
+  ],
+  "setExtra": [
+    "key",
+    "extra"
+  ],
+  "setTags": [
+    "tags"
+  ],
+  "setTag": [
+    "key",
+    "value"
+  ],
+  "setAttributes": [
+    "attributes"
+  ],
+  "setAttribute": [
+    "key",
+    "value"
+  ],
+  "setUser": [
+    "user"
+  ],
+  "setConversationId": [
+    "conversationId"
+  ],
+  "lastEventId": [],
+  "flush": [],
+  "close": [
+    "timeout"
+  ],
+  "isInitialized": [],
+  "isEnabled": [],
+  "addEventProcessor": [
+    "callback"
+  ],
+  "startSession": [
+    "context"
+  ],
+  "endSession": [],
+  "_sendSessionUpdate": [],
+  "captureSession": [
+    "param"
+  ],
+  "captureFeedback": [
+    "params",
+    "param",
+    "param"
+  ],
+  "instrumentFetchRequest": [
+    "handlerData",
+    "shouldCreateSpan",
+    "shouldAttachHeaders",
+    "spans",
+    "instrumentFetchRequestOptions"
+  ],
+  "_callOnRequestSpanEnd": [
+    "span",
+    "handlerData",
+    "instrumentFetchRequestOptions"
+  ],
+  "_INTERNAL_getTracingHeadersForFetchRequest": [
+    "request",
+    "fetchOptionsObj",
+    "span",
+    "propagateTraceparent"
+  ],
+  "endSpan": [
+    "status"
+  ],
+  "baggageHeaderHasSentryBaggageValues": [
+    "baggageHeader"
+  ],
+  "isHeaders": [
+    "headers"
+  ],
+  "isHeadersInitTupleArray": [
+    "headers"
+  ],
+  "getSpanStartOptions": [
+    "url",
+    "method",
+    "spanOrigin",
+    "client",
+    "urlBase"
+  ],
+  "getFetchSpanAttributes": [
+    "url",
+    "parsedUrl",
+    "method",
+    "spanOrigin",
+    "client",
+    "domain"
+  ],
+  "addConsoleInstrumentationHandler": [
+    "handler"
+  ],
+  "addConsoleInstrumentationFilter": [
+    "filter"
+  ],
+  "instrumentConsole": [],
+  "addFetchInstrumentationHandler": [
+    "handler"
+  ],
+  "addFetchEndInstrumentationHandler": [
+    "handler"
+  ],
+  "instrumentFetch": [
+    "onFetchResolved"
+  ],
+  "resolveResponse": [
+    "res",
+    "onFinishedResolving"
+  ],
+  "streamHandler": [
+    "response"
+  ],
+  "hasProp": [
+    "obj",
+    "prop"
+  ],
+  "getUrlFromResource": [
+    "resource"
+  ],
+  "parseFetchArgs": [
+    "fetchArgs"
+  ],
+  "getHeadersFromFetchArgs": [
+    "fetchArgs"
+  ],
+  "addGlobalErrorInstrumentationHandler": [
+    "handler"
+  ],
+  "instrumentError": [],
+  "addGlobalUnhandledRejectionInstrumentationHandler": [
+    "handler"
+  ],
+  "instrumentUnhandledRejection": [],
+  "addHandler": [
+    "type",
+    "handler"
+  ],
+  "resetInstrumentationHandlers": [],
+  "maybeInstrument": [
+    "type",
+    "instrumentFn"
+  ],
+  "triggerHandlers": [
+    "type",
+    "data"
+  ],
+  "filterDuplicates": [
+    "integrations"
+  ],
+  "getIntegrationsToSetup": [
+    "options"
+  ],
+  "setupIntegrations": [
+    "client",
+    "integrations"
+  ],
+  "afterSetupIntegrations": [
+    "client",
+    "integrations"
+  ],
+  "setupIntegration": [
+    "client",
+    "integration",
+    "integrationIndex"
+  ],
+  "addIntegration": [
+    "integration"
+  ],
+  "defineIntegration": [
+    "fn"
+  ],
+  "extendIntegration": [
+    "integration",
+    "extendedIntegration"
+  ],
+  "_captureConsoleIntegration": [
+    "param"
+  ],
+  "consoleHandler": [
+    "args",
+    "level",
+    "handled"
+  ],
+  "createConsolaReporter": [
+    "param"
+  ],
+  "getLogSeverityLevel": [
+    "type",
+    "level"
+  ],
+  "defaultExtractAttributes": [
+    "args",
+    "normalizeDepth",
+    "normalizeMaxBreadth"
+  ],
+  "processExtractedAttributes": [
+    "extractionResult",
+    "normalizeDepth",
+    "normalizeMaxBreadth"
+  ],
+  "addConsoleBreadcrumb": [
+    "level",
+    "args"
+  ],
+  "formatConsoleArgs": [
+    "values",
+    "normalizeDepth",
+    "normalizeMaxBreadth"
+  ],
+  "_conversationIdIntegration": [],
+  "_dedupeIntegration": [],
+  "_shouldDropEvent": [
+    "event",
+    "options"
+  ],
+  "_isSameMessageEvent": [
+    "currentEvent",
+    "previousEvent"
+  ],
+  "_isSameExceptionEvent": [
+    "currentEvent",
+    "previousEvent"
+  ],
+  "_isSameStacktrace": [
+    "currentEvent",
+    "previousEvent"
+  ],
+  "_isSameFingerprint": [
+    "currentEvent",
+    "previousEvent"
+  ],
+  "_getExceptionFromEvent": [
+    "event"
+  ],
+  "_mergeOptions": [
+    "param",
+    "param"
+  ],
+  "_isIgnoredError": [
+    "event",
+    "ignoreErrors"
+  ],
+  "_isIgnoredTransaction": [
+    "event",
+    "ignoreTransactions"
+  ],
+  "_isDeniedUrl": [
+    "event",
+    "denyUrls"
+  ],
+  "_isAllowedUrl": [
+    "event",
+    "allowUrls"
+  ],
+  "_getLastValidUrl": [
+    "param"
+  ],
+  "_getEventFilterUrl": [
+    "event"
+  ],
+  "_isUselessError": [
+    "event"
+  ],
+  "_extraErrorDataIntegration": [
+    "param"
+  ],
+  "_enhanceEventWithErrorData": [
+    "event",
+    "param",
+    "depth",
+    "captureErrorCause",
+    "maxValueLength"
+  ],
+  "_extractErrorData": [
+    "error",
+    "captureErrorCause",
+    "maxValueLength"
+  ],
+  "_wrapAndCaptureBooleanResult": [
+    "original"
+  ],
+  "createFetchIntegration": [
+    "param"
+  ],
+  "integration$1": [
+    "param"
+  ],
+  "resolveConfig": [
+    "client",
+    "options"
+  ],
+  "createBreadcrumb": [
+    "handlerData",
+    "client"
+  ],
+  "_functionToStringIntegration": [],
+  "addOutgoingRequestBreadcrumb": [
+    "request",
+    "response"
+  ],
+  "patchClientRequest": [
+    "httpModule",
+    "options"
+  ],
+  "patchModule": [
+    "httpModuleExport",
+    "param"
+  ],
+  "patchHttpModuleClient": [
+    "httpModuleExport",
+    "param"
+  ],
+  "getHttpClientSubscriptions": [
+    "options"
+  ],
+  "getConfig": [],
+  "onHttpClientRequestCreated": [
+    "data"
+  ],
+  "addBreadcrumbs": [
+    "request2",
+    "response"
+  ],
+  "breadcrumbsOnly": [
+    "request2"
+  ],
+  "requestOnClose": [],
+  "finishWithResponse": [
+    "error"
+  ],
+  "isOtelWrapped": [
+    "fn"
+  ],
+  "getOutgoingRequestSpanData": [
+    "request"
+  ],
+  "setIncomingResponseSpanData": [
+    "response",
+    "span"
+  ],
+  "getSocketAttrs": [
+    "socket"
+  ],
+  "getRequestOptions": [
+    "request"
+  ],
+  "getRequestUrl": [
+    "requestOptions"
+  ],
+  "getRequestUrlObject": [
+    "requestOptions"
+  ],
+  "getRequestUrlFromClientRequest": [
+    "request"
+  ],
+  "injectTracePropagationHeaders": [
+    "request",
+    "propagationDecisionMap"
+  ],
+  "patchRequestToCaptureBody": [
+    "req",
+    "isolationScope",
+    "maxIncomingRequestBodySize",
+    "integrationName"
+  ],
+  "recordRequestSession": [
+    "client",
+    "param"
+  ],
+  "flushPendingClientAggregates": [],
+  "markRequest": [
+    "request"
+  ],
+  "instrumentServer": [
+    "options",
+    "server"
+  ],
+  "getHttpServerSubscriptions": [
+    "options"
+  ],
+  "onHttpServerRequest": [
+    "data"
+  ],
+  "buildServerSpanWrap": [
+    "options"
+  ],
+  "createSpan": [],
+  "getForwardedClientAddress": [
+    "forwardedFor"
+  ],
+  "shouldIgnoreSpansForIncomingRequest": [
+    "request",
+    "param"
+  ],
+  "isStaticAssetRequest": [
+    "urlPath"
+  ],
+  "isKnownPrefetchRequest": [
+    "req"
+  ],
+  "shouldFilterStatusCode": [
+    "statusCode",
+    "dropForStatusCodes"
+  ],
+  "processHttpServerTransactionEvent": [
+    "event",
+    "ignoreStatusCodes",
+    "spanOrigin"
+  ],
+  "_linkedErrorsIntegration": [
+    "param"
+  ],
+  "formatLoggingData": [
+    "data"
+  ],
+  "getNotificationAttributes": [
+    "method",
+    "params",
+    "recordInputs"
+  ],
+  "buildTypeSpecificAttributes": [
+    "type",
+    "message",
+    "params",
+    "recordInputs"
+  ],
+  "getOrCreateSpanMap": [
+    "transport"
+  ],
+  "storeSpanForRequest": [
+    "transport",
+    "requestId",
+    "span",
+    "method",
+    "capturePolicy"
+  ],
+  "completeSpanWithResults": [
+    "transport",
+    "requestId",
+    "result",
+    "error"
+  ],
+  "cleanupPendingSpansForTransport": [
+    "transport"
+  ],
+  "isJsonRpcServerError": [
+    "code"
+  ],
+  "captureError": [
+    "error",
+    "errorType",
+    "extraData"
+  ],
+  "wrapMethodHandler": [
+    "serverInstance",
+    "methodName"
+  ],
+  "createWrappedHandler": [
+    "originalHandler",
+    "methodName",
+    "handlerName"
+  ],
+  "captureHandlerError": [
+    "error",
+    "methodName",
+    "handlerName"
+  ],
+  "wrapToolHandlers": [
+    "serverInstance"
+  ],
+  "wrapResourceHandlers": [
+    "serverInstance"
+  ],
+  "wrapPromptHandlers": [
+    "serverInstance"
+  ],
+  "wrapAllMCPHandlers": [
+    "serverInstance"
+  ],
+  "wrapExistingHandlers": [
+    "serverInstance"
+  ],
+  "instrumentTransport": [
+    "transport",
+    "options"
+  ],
+  "interceptTransportStart": [
+    "transport",
+    "beforeStart"
+  ],
+  "restoreStart": [],
+  "interceptedStart": [],
+  "wrapMcpServerWithSentry": [
+    "mcpServerInstance",
+    "options"
+  ],
+  "instrumentTransportOnce": [],
+  "extractTargetInfo": [
+    "method",
+    "params"
+  ],
+  "getRequestArguments": [
+    "method",
+    "params"
+  ],
+  "isNetworkPiiAttribute": [
+    "key"
+  ],
+  "filterMcpPiiFromSpanData": [
+    "spanData",
+    "userInfo"
+  ],
+  "buildAllContentItemAttributes": [
+    "content",
+    "includeContent"
+  ],
+  "safeSet": [
+    "key",
+    "value"
+  ],
+  "extractToolResultAttributes": [
+    "result",
+    "recordOutputs"
+  ],
+  "extractPromptResultAttributes": [
+    "result",
+    "recordOutputs"
+  ],
+  "extractPartyInfo": [
+    "obj"
+  ],
+  "extractSessionDataFromInitializeRequest": [
+    "request"
+  ],
+  "extractSessionDataFromMessage": [
+    "message"
+  ],
+  "extractSessionDataFromInitializeResponse": [
+    "result"
+  ],
+  "extractSessionDataFromResponse": [
+    "result"
+  ],
+  "getClientAttributes": [
+    "transport"
+  ],
+  "buildClientAttributesFromInfo": [
+    "clientInfo"
+  ],
+  "getServerAttributes": [
+    "transport"
+  ],
+  "buildServerAttributesFromInfo": [
+    "serverInfo"
+  ],
+  "extractClientInfo": [
+    "extra"
+  ],
+  "getTransportTypes": [
+    "transport"
+  ],
+  "buildTransportAttributes": [
+    "transport",
+    "extra",
+    "message"
+  ],
+  "getSessionData": [
+    "transport"
+  ],
+  "setSessionData": [
+    "transport",
+    "data"
+  ],
+  "updateSessionDataForTransport": [
+    "transport",
+    "partialSessionData"
+  ],
+  "getClientInfoForTransport": [
+    "transport"
+  ],
+  "getProtocolVersionForTransport": [
+    "transport"
+  ],
+  "getSessionDataForTransport": [
+    "transport"
+  ],
+  "cleanupSessionDataForTransport": [
+    "transport"
+  ],
+  "createSpanName": [
+    "method",
+    "target"
+  ],
+  "buildSentryAttributes": [
+    "type"
+  ],
+  "createMcpSpan": [
+    "config"
+  ],
+  "createMcpNotificationSpan": [
+    "jsonRpcMessage",
+    "transport",
+    "extra",
+    "options",
+    "callback"
+  ],
+  "createMcpOutgoingNotificationSpan": [
+    "jsonRpcMessage",
+    "transport",
+    "options",
+    "callback"
+  ],
+  "buildMcpServerSpanConfig": [
+    "jsonRpcMessage",
+    "transport",
+    "extra",
+    "options"
+  ],
+  "resolveMcpOptions": [
+    "options"
+  ],
+  "wrapTransportOnMessage": [
+    "transport",
+    "options"
+  ],
+  "wrapTransportSend": [
+    "transport",
+    "options"
+  ],
+  "wrapTransportOnClose": [
+    "transport"
+  ],
+  "wrapTransportError": [
+    "transport"
+  ],
+  "captureJsonRpcErrorResponse": [
+    "errorResponse"
+  ],
+  "captureTransportError": [
+    "error"
+  ],
+  "isJsonRpcRequest": [
+    "message"
+  ],
+  "isJsonRpcNotification": [
+    "message"
+  ],
+  "isJsonRpcResponse": [
+    "message"
+  ],
+  "validateMcpServerInstance": [
+    "instance"
+  ],
+  "isValidContentItem": [
+    "item"
+  ],
+  "_requestDataIntegration": [
+    "param"
+  ],
+  "resolveRequestDataOptions": [
+    "client"
+  ],
+  "isLocalhostSpan": [
+    "sdkProcessingMetadata",
+    "scopeUserIpAddress"
+  ],
+  "addNormalizedRequestDataToEvent": [
+    "event",
+    "req",
+    "additionalData",
+    "include",
+    "dataCollection"
+  ],
+  "addNormalizedRequestDataToSpan": [
+    "span",
+    "normalizedRequest",
+    "ipAddress",
+    "include",
+    "dataCollection"
+  ],
+  "extractNormalizedRequestData": [
+    "normalizedRequest",
+    "include"
+  ],
+  "resolveFilteringBehavior": [
+    "isIncluded",
+    "behavior"
+  ],
+  "normalizeAndFilterQueryString": [
+    "queryString",
+    "behavior"
+  ],
+  "normalizeQueryString": [
+    "queryString"
+  ],
+  "_processExceptionsEvent": [
+    "event"
+  ],
+  "_processStacktrace": [
+    "stacktrace"
+  ],
+  "generateIteratee": [
+    "param"
+  ],
+  "markAsInstrumented": [
+    "fn"
+  ],
+  "isInstrumented": [
+    "fn"
+  ],
+  "getMutationBodyPayloadForTelemetry": [
+    "rawBody",
+    "plainBody"
+  ],
+  "hasMutationBodyForDescription": [
+    "rawBody",
+    "plainBody"
+  ],
+  "getHeader": [
+    "headers",
+    "name"
+  ],
+  "extractOperation": [
+    "method",
+    "param"
+  ],
+  "translateFiltersIntoMethods": [
+    "key",
+    "query"
+  ],
+  "instrumentAuthOperation": [
+    "operation",
+    "param"
+  ],
+  "instrumentSupabaseAuthClient": [
+    "supabaseClientInstance"
+  ],
+  "instrumentSupabaseClientConstructor": [
+    "SupabaseClient",
+    "_options"
+  ],
+  "instrumentPostgRESTFilterBuilder": [
+    "PostgRESTFilterBuilder",
+    "_options"
+  ],
+  "instrumentPostgRESTQueryBuilder": [
+    "PostgRESTQueryBuilder",
+    "_options"
+  ],
+  "instrumentSupabaseClient": [
+    "supabaseClient",
+    "param"
+  ],
+  "_supabaseIntegration": [
+    "supabaseClient",
+    "options"
+  ],
+  "isSentryInternalFrame": [
+    "frame",
+    "frameIndex",
+    "insideSentryWrapped"
+  ],
+  "getBundleKeysForAllFramesWithFilenames": [
+    "event",
+    "ignoreSentryInternalFrames",
+    "insideSentryWrapped"
+  ],
+  "isLikelyMinifiedSentryWrappedFrame": [
+    "frame"
+  ],
+  "originalExceptionIsZodError": [
+    "originalException"
+  ],
+  "flattenIssue": [
+    "issue"
+  ],
+  "flattenIssuePath": [
+    "path"
+  ],
+  "formatIssueMessage": [
+    "zodError"
+  ],
+  "applyZodErrorsToEvent": [
+    "limit",
+    "param",
+    "event",
+    "hint"
+  ],
+  "_zodErrorsIntegration": [
+    "param"
+  ],
+  "_consoleLoggingIntegration": [
+    "param"
+  ],
+  "createLogContainerEnvelopeItem": [
+    "items",
+    "inferUserData"
+  ],
+  "createLogEnvelope": [
+    "logs",
+    "metadata",
+    "tunnel",
+    "dsn",
+    "inferUserData"
+  ],
+  "setLogAttribute": [
+    "logAttributes",
+    "key",
+    "value",
+    "param"
+  ],
+  "_INTERNAL_captureSerializedLog": [
+    "client",
+    "serializedLog"
+  ],
+  "_INTERNAL_captureLog": [
+    "beforeLog",
+    "param",
+    "param"
+  ],
+  "_INTERNAL_flushLogsBuffer": [
+    "client",
+    "maybeLogBuffer"
+  ],
+  "_INTERNAL_getLogBuffer": [
+    "client"
+  ],
+  "_getBufferMap": [],
+  "sanitizeLogAttributes": [
+    "attributes"
+  ],
+  "_removeLoneSurrogates": [
+    "str"
+  ],
+  "captureLog": [
+    "level",
+    "message",
+    "attributes",
+    "scope",
+    "severityNumber"
+  ],
+  "trace": [
+    "message",
+    "attributes",
+    "param"
+  ],
+  "debug": [
+    "message",
+    "attributes",
+    "param"
+  ],
+  "info": [
+    "message",
+    "attributes",
+    "param"
+  ],
+  "warn": [
+    "param"
+  ],
+  "error": [
+    "param"
+  ],
+  "fatal": [
+    "message",
+    "attributes",
+    "param"
+  ],
+  "safeJoinConsoleArgs": [
+    "values",
+    "normalizeDepth",
+    "normalizeMaxBreadth"
+  ],
+  "hasConsoleSubstitutions": [
+    "str"
+  ],
+  "createConsoleTemplateAttributes": [
+    "firstArg",
+    "followingArgs"
+  ],
+  "getFilenameToMetadataMap": [
+    "parser"
+  ],
+  "ensureMetadataStacksAreParsed": [
+    "parser"
+  ],
+  "getMetadataForUrl": [
+    "parser",
+    "filename"
+  ],
+  "addMetadataToStackFrames": [
+    "parser",
+    "event"
+  ],
+  "stripMetadataFromStackFrames": [
+    "event"
+  ],
+  "createMetricContainerEnvelopeItem": [
+    "items",
+    "inferUserData"
+  ],
+  "createMetricEnvelope": [
+    "metrics",
+    "metadata",
+    "tunnel",
+    "dsn",
+    "inferUserData"
+  ],
+  "setMetricAttribute": [
+    "metricAttributes",
+    "key",
+    "value",
+    "param"
+  ],
+  "_INTERNAL_captureSerializedMetric": [
+    "client",
+    "serializedMetric"
+  ],
+  "_enrichMetricAttributes": [
+    "beforeMetric",
+    "client",
+    "user"
+  ],
+  "_buildSerializedMetric": [
+    "metric",
+    "client",
+    "currentScope",
+    "scopeAttributes"
+  ],
+  "_INTERNAL_captureMetric": [
+    "beforeMetric",
+    "options"
+  ],
+  "_INTERNAL_flushMetricsBuffer": [
+    "client",
+    "maybeMetricBuffer"
+  ],
+  "_INTERNAL_getMetricBuffer": [
+    "client"
+  ],
+  "captureMetric": [
+    "type",
+    "name",
+    "value",
+    "options"
+  ],
+  "count": [
+    "name",
+    "param",
+    "options"
+  ],
+  "gauge": [
+    "name",
+    "value",
+    "options"
+  ],
+  "distribution": [
+    "name",
+    "value",
+    "options"
+  ],
+  "withMonitor": [
+    "monitorSlug",
+    "callback",
+    "upsertMonitorConfig"
+  ],
+  "runCallback": [
+    "span",
+    "makeSpanActive",
+    "callback",
+    "finallyCallback"
+  ],
+  "finishCheckIn": [
+    "status"
+  ],
+  "captureCheckIn": [
+    "checkIn",
+    "upsertMonitorConfig"
+  ],
+  "isProfilingIntegrationWithProfiler": [
+    "integration"
+  ],
+  "startProfiler": [],
+  "stopProfiler": [],
+  "Scope": {
+    "_notifyingListeners": [],
+    "_scopeListeners": [],
+    "_eventProcessors": [],
+    "_breadcrumbs": [],
+    "_user": [],
+    "_tags": [],
+    "_attributes": [],
+    "_extra": [],
+    "_contexts": [],
+    "_attachments": [],
+    "_propagationContext": [],
+    "_sdkProcessingMetadata": [],
+    "_fingerprint": [],
+    "_level": [],
+    "_transactionName": [],
+    "_session": [],
+    "_client": [],
+    "_lastEventId": [],
+    "_conversationId": [],
+    "refs": [],
+    "constructor": [],
+    "clone": [],
+    "setClient": [
+      "client"
+    ],
+    "setLastEventId": [
+      "lastEventId"
+    ],
+    "getClient": [],
+    "lastEventId": [],
+    "addScopeListener": [
+      "callback"
+    ],
+    "addEventProcessor": [
+      "callback"
+    ],
+    "setUser": [
+      "user"
+    ],
+    "getUser": [],
+    "setConversationId": [
+      "conversationId"
+    ],
+    "setTags": [
+      "tags"
+    ],
+    "setTag": [
+      "key",
+      "value"
+    ],
+    "setAttributes": [
+      "newAttributes"
+    ],
+    "setAttribute": [
+      "key",
+      "value"
+    ],
+    "removeAttribute": [
+      "key"
+    ],
+    "setExtras": [
+      "extras"
+    ],
+    "setExtra": [
+      "key",
+      "extra"
+    ],
+    "setFingerprint": [
+      "fingerprint"
+    ],
+    "setLevel": [
+      "level"
+    ],
+    "setTransactionName": [
+      "name"
+    ],
+    "setContext": [
+      "key",
+      "context"
+    ],
+    "setSession": [
+      "session"
+    ],
+    "getSession": [],
+    "update": [
+      "captureContext"
+    ],
+    "addBreadcrumb": [
+      "breadcrumb",
+      "maxBreadcrumbs"
+    ],
+    "getLastBreadcrumb": [],
+    "clearBreadcrumbs": [],
+    "addAttachment": [
+      "attachment"
+    ],
+    "clearAttachments": [],
+    "getScopeData": [],
+    "setSDKProcessingMetadata": [
+      "newData"
+    ],
+    "setPropagationContext": [
+      "context"
+    ],
+    "getPropagationContext": [],
+    "captureException": [
+      "exception",
+      "hint"
+    ],
+    "captureMessage": [
+      "message",
+      "level",
+      "hint"
+    ],
+    "captureEvent": [
+      "event",
+      "hint"
+    ],
+    "_notifyScopeListeners": []
+  },
+  "initAndBind": [
+    "clientClass",
+    "options"
+  ],
+  "setCurrentClient": [
+    "client"
+  ],
+  "ServerRuntimeClient": {
+    "_disposeCallbacks": [],
+    "constructor": [
+      "options"
+    ],
+    "eventFromException": [
+      "exception",
+      "hint"
+    ],
+    "eventFromMessage": [
+      "message",
+      "level",
+      "hint"
+    ],
+    "captureException": [
+      "exception",
+      "hint",
+      "scope"
+    ],
+    "captureEvent": [
+      "event",
+      "hint",
+      "scope"
+    ],
+    "captureCheckIn": [
+      "checkIn",
+      "monitorConfig",
+      "scope"
+    ],
+    "registerCleanup": [
+      "callback"
+    ],
+    "dispose": [],
+    "_prepareEvent": [
+      "event",
+      "hint",
+      "currentScope",
+      "isolationScope"
+    ],
+    "_setUpMetricsProcessing": []
+  },
+  "setCurrentRequestSessionErroredOrCrashed": [
+    "eventHint"
+  ],
+  "makeSession": [
+    "context"
+  ],
+  "updateSession": [
+    "session",
+    "param"
+  ],
+  "closeSession": [
+    "session",
+    "status"
+  ],
+  "sessionToJSON": [
+    "session"
+  ],
+  "spanKindToName": [
+    "kind"
+  ],
+  "isReentrantWrapperRegistration": [
+    "listener"
+  ],
+  "bindScopeToEmitter": [
+    "emitter",
+    "param"
+  ],
+  "bindListenerToScope": [
+    "listener",
+    "scope"
+  ],
+  "isBoundListener": [
+    "listener"
+  ],
+  "patchAddListener": [
+    "ee",
+    "original",
+    "scope"
+  ],
+  "patchRemoveListener": [
+    "ee",
+    "original"
+  ],
+  "patchRemoveAllListeners": [
+    "ee",
+    "original"
+  ],
+  "createPatchMap": [
+    "ee"
+  ],
+  "getPatchMap": [
+    "ee"
+  ],
+  "_INTERNAL_ensureBrowserSpanStreaming": [
+    "param"
+  ],
+  "startSpan": [
+    "options",
+    "callback"
+  ],
+  "startSpanManual": [
+    "options",
+    "callback"
+  ],
+  "startInactiveSpan": [
+    "options"
+  ],
+  "isSpanAlreadyCaptured": [
+    "span"
+  ],
+  "markSpanCaptured": [
+    "span"
+  ],
+  "_INTERNAL_setDeferSegmentSpanCapture": [
+    "client"
+  ],
+  "captureOrphan": [],
+  "freezeDscOnSpan": [
+    "span",
+    "dsc"
+  ],
+  "getDynamicSamplingContextFromClient": [
+    "trace_id",
+    "client"
+  ],
+  "getDynamicSamplingContextFromScope": [
+    "client",
+    "scope"
+  ],
+  "getDynamicSamplingContextFromSpan": [
+    "span"
+  ],
+  "applyLocalSampleRateToDsc": [
+    "dsc2"
+  ],
+  "spanToBaggageHeader": [
+    "span"
+  ],
+  "registerSpanErrorInstrumentation": [],
+  "errorCallback": [],
+  "startIdleSpan": [
+    "startSpanOptions",
+    "param"
+  ],
+  "_cancelIdleTimeout": [],
+  "_cancelChildSpanTimeout": [],
+  "_restartIdleTimeout": [
+    "endTimestamp"
+  ],
+  "_restartChildSpanTimeout": [
+    "endTimestamp"
+  ],
+  "_pushActivity": [
+    "spanId"
+  ],
+  "_popActivity": [
+    "spanId"
+  ],
+  "onIdleSpanEnded": [
+    "endTimestamp"
+  ],
+  "logSpanStart": [
+    "span"
+  ],
+  "logSpanEnd": [
+    "span"
+  ],
+  "setMeasurement": [
+    "name",
+    "value",
+    "unit",
+    "param"
+  ],
+  "timedEventsToMeasurements": [
+    "events"
+  ],
+  "sampleSpan": [
+    "options",
+    "samplingContext",
+    "sampleRand"
+  ],
+  "resolveSampleRate": [
+    "options",
+    "samplingContext"
+  ],
+  "setSegmentSpanCaptureStrategy": [
+    "strategy"
+  ],
+  "getSegmentSpanCaptureStrategy": [],
+  "SentryNonRecordingSpan": {
+    "_traceId": [],
+    "_spanId": [],
+    "dropReason": [],
+    "constructor": [
+      "spanContext"
+    ],
+    "spanContext": [],
+    "end": [
+      "_timestamp"
+    ],
+    "setAttribute": [
+      "_key",
+      "_value"
+    ],
+    "setAttributes": [
+      "_values"
+    ],
+    "setStatus": [
+      "_status"
+    ],
+    "updateName": [
+      "_name"
+    ],
+    "isRecording": [],
+    "addEvent": [
+      "_name",
+      "_attributesOrStartTime",
+      "_startTime"
+    ],
+    "addLink": [
+      "_link"
+    ],
+    "addLinks": [
+      "_links"
+    ],
+    "recordException": [
+      "_exception",
+      "_time"
+    ]
+  },
+  "spanIsNonRecordingSpan": [
+    "span"
+  ],
+  "SentrySpan": {
+    "_traceId": [],
+    "_spanId": [],
+    "_parentSpanId": [],
+    "_sampled": [],
+    "_name": [],
+    "_attributes": [],
+    "_links": [],
+    "_startTime": [],
+    "_endTime": [],
+    "_status": [],
+    "_events": [],
+    "_frozen": [],
+    "_isStandaloneSpan": [],
+    "constructor": [
+      "spanContext"
+    ],
+    "addLink": [
+      "link"
+    ],
+    "addLinks": [
+      "links"
+    ],
+    "recordException": [
+      "_exception",
+      "_time"
+    ],
+    "spanContext": [],
+    "setAttribute": [
+      "key",
+      "value"
+    ],
+    "setAttributes": [
+      "attributes"
+    ],
+    "updateStartTime": [
+      "timeInput"
+    ],
+    "setStatus": [
+      "value"
+    ],
+    "updateName": [
+      "name"
+    ],
+    "end": [
+      "endTimestamp"
+    ],
+    "getStaticSpanJSON": [],
+    "getSpanJSON": [],
+    "isRecording": [],
+    "addEvent": [
+      "name",
+      "attributesOrStartTime",
+      "startTime"
+    ],
+    "isStandaloneSpan": [],
+    "_onSpanEnded": [],
+    "_convertSpanToTransaction": []
+  },
+  "isSpanTimeInput": [
+    "value"
+  ],
+  "isFullFinishedSpan": [
+    "input"
+  ],
+  "isStandaloneSpan": [
+    "span"
+  ],
+  "sendStandaloneSpan": [
+    "span",
+    "client"
+  ],
+  "withStaticSpan": [
+    "callback"
+  ],
+  "withStreamedSpan": [
+    "callback"
+  ],
+  "isStaticBeforeSendSpanCallback": [
+    "callback"
+  ],
+  "applyBeforeSendSpanCallback": [
+    "span",
+    "beforeSendSpan"
+  ],
+  "captureSpan": [
+    "span",
+    "client"
+  ],
+  "applyScopeToSegmentSpan": [
+    "segmentSpanJSON",
+    "scopeData"
+  ],
+  "safeSetSpanJSONAttributes": [
+    "spanJSON",
+    "newAttributes"
+  ],
+  "applySdkMetadataToSegmentSpan": [
+    "segmentSpanJSON",
+    "client"
+  ],
+  "commonSpanAttributes": [
+    "serializedSegmentSpan",
+    "client",
+    "scopeData",
+    "param"
+  ],
+  "applyCommonSpanAttributes": [
+    "spanJSON",
+    "serializedSegmentSpan",
+    "client",
+    "scopeData"
+  ],
+  "captureStandaloneSpanWithStaticCallback": [
+    "span",
+    "client",
+    "beforeSendSpan"
+  ],
+  "createStreamedSpanEnvelope": [
+    "serializedSpans",
+    "dsc",
+    "client"
+  ],
+  "createSpanContainerItem": [
+    "serializedSpans",
+    "client"
+  ],
+  "dscHasRequiredProps": [
+    "dsc"
+  ],
+  "estimateSerializedSpanSizeInBytes": [
+    "span"
+  ],
+  "extractGenAiSpansFromEvent": [
+    "event",
+    "client"
+  ],
+  "hasSpanStreamingEnabled": [
+    "client"
+  ],
+  "scopeContextsToSpanAttributes": [
+    "contexts"
+  ],
+  "SpanBuffer": {
+    "_traceBuckets": [],
+    "_client": [],
+    "_maxSpanLimit": [],
+    "_flushInterval": [],
+    "_maxTraceWeight": [],
+    "constructor": [
+      "client",
+      "options"
+    ],
+    "add": [
+      "spanJSON"
+    ],
+    "drain": [],
+    "flush": [
+      "traceId"
+    ],
+    "_removeTrace": []
+  },
+  "spanJsonToSerializedStreamedSpan": [
+    "span"
+  ],
+  "isStatusErrorMessageValid": [
+    "message"
+  ],
+  "getSpanStatusFromHttpCode": [
+    "httpStatus"
+  ],
+  "setHttpStatus": [
+    "span",
+    "httpStatus"
+  ],
+  "continueTrace": [
+    "options",
+    "callback"
+  ],
+  "withActiveSpan": [
+    "span",
+    "callback"
+  ],
+  "suppressTracing": [
+    "callback"
+  ],
+  "isTracingSuppressed": [
+    "param"
+  ],
+  "startNewTrace": [
+    "callback"
+  ],
+  "startMissingRequiredParentSpan": [
+    "scope",
+    "client"
+  ],
+  "createChildOrRootSpan": [
+    "param"
+  ],
+  "parseSentrySpanArguments": [
+    "options"
+  ],
+  "getAcs": [],
+  "_startRootSpan": [
+    "spanArguments",
+    "scope",
+    "isolationScope",
+    "parentSampled"
+  ],
+  "_startChildSpan": [
+    "parentSpan",
+    "scope",
+    "spanArguments",
+    "isolationScope"
+  ],
+  "getParentSpan": [
+    "scope",
+    "customParentSpan"
+  ],
+  "getActiveSpanWrapper": [
+    "parentSpan"
+  ],
+  "_shouldIgnoreStreamedSpan": [
+    "client",
+    "spanArguments"
+  ],
+  "spanIsIgnored": [
+    "span"
+  ],
+  "setCapturedScopesOnSpan": [
+    "span",
+    "scope",
+    "isolationScope"
+  ],
+  "getCapturedScopesOnSpan": [
+    "span"
+  ],
+  "markSpanAsTracerProviderSpan": [
+    "span"
+  ],
+  "spanIsTracerProviderSpan": [
+    "span"
+  ],
+  "createTransport": [
+    "options",
+    "makeRequest",
+    "param"
+  ],
+  "send": [
+    "envelope",
+    "param"
+  ],
+  "recordEnvelopeLoss": [
+    "reason"
+  ],
+  "requestTask": [],
+  "eventFromEnvelope": [
+    "env",
+    "types"
+  ],
+  "makeOverrideReleaseTransport": [
+    "createTransport",
+    "release"
+  ],
+  "overrideDsn": [
+    "envelope",
+    "dsn"
+  ],
+  "makeMultiplexedTransport": [
+    "createTransport",
+    "matcher"
+  ],
+  "getTransport": [
+    "dsn",
+    "release"
+  ],
+  "getEvent": [
+    "types"
+  ],
+  "makeOfflineTransport": [
+    "createTransport"
+  ],
+  "log": [
+    "param"
+  ],
+  "shouldQueue": [
+    "env",
+    "error",
+    "retryDelay2"
+  ],
+  "flushIn": [
+    "delay"
+  ],
+  "flushWithBackOff": [],
+  "addUserAgentToTransportHeaders": [
+    "options"
+  ],
+  "captureIfError": [
+    "nextResult"
+  ],
+  "trpcMiddleware": [
+    "param"
+  ],
+  "applyAggregateErrorsToEvent": [
+    "exceptionFromErrorImplementation",
+    "parser",
+    "key",
+    "limit",
+    "event",
+    "hint"
+  ],
+  "aggregateExceptionsFromError": [
+    "exceptionFromErrorImplementation",
+    "parser",
+    "limit",
+    "error",
+    "key",
+    "prevExceptions",
+    "exception",
+    "exceptionId"
+  ],
+  "isExceptionGroup": [
+    "error"
+  ],
+  "applyExceptionGroupFieldsForParentException": [
+    "exception",
+    "exceptionId",
+    "error"
+  ],
+  "applyExceptionGroupFieldsForChildException": [
+    "exception",
+    "source",
+    "exceptionId",
+    "parentId"
+  ],
+  "_INTERNAL_skipAiProviderWrapping": [
+    "modules"
+  ],
+  "_INTERNAL_shouldSkipAiProviderWrapping": [
+    "module"
+  ],
+  "_INTERNAL_clearAiProviderSkips": [],
+  "watchdogTimer": [
+    "createTimer",
+    "pollInterval",
+    "anrThreshold",
+    "callback"
+  ],
+  "callFrameToStackFrame": [
+    "frame",
+    "url",
+    "getModuleFromFilename"
+  ],
+  "uniq": [
+    "input"
+  ],
+  "baggageHeaderToDynamicSamplingContext": [
+    "baggageHeader"
+  ],
+  "dynamicSamplingContextToSentryBaggageHeader": [
+    "dynamicSamplingContext"
+  ],
+  "parseBaggageHeader": [
+    "baggageHeader"
+  ],
+  "baggageHeaderToObject": [
+    "baggageHeader"
+  ],
+  "objectToBaggageHeader": [
+    "object"
+  ],
+  "mergeBaggageHeaders": [
+    "existing",
+    "incoming"
+  ],
+  "getBreadcrumbLogLevelFromHttpStatusCode": [
+    "statusCode"
+  ],
+  "isActualPromise": [
+    "p"
+  ],
+  "chainAndCopyPromiseLike": [
+    "original",
+    "onSuccess",
+    "onError"
+  ],
+  "copyProps": [
+    "original",
+    "chained"
+  ],
+  "createClientReportEnvelope": [
+    "discarded_events",
+    "dsn",
+    "timestamp"
+  ],
+  "parseCookieHeader": [
+    "value",
+    "headerName"
+  ],
+  "cookiePairsToRecord": [
+    "pairs"
+  ],
+  "decodeCookieValue": [
+    "value"
+  ],
+  "urlQueryParamsBehavior": [
+    "client"
+  ],
+  "filterCollectedUrl": [
+    "url",
+    "client"
+  ],
+  "filterCollectedUrlQuery": [
+    "query",
+    "client"
+  ],
+  "filterCookies": [
+    "cookieString",
+    "behavior",
+    "headerName"
+  ],
+  "isSensitiveKey": [
+    "lower",
+    "denySnippets"
+  ],
+  "shouldFilterDataKey": [
+    "key",
+    "behavior",
+    "additionalDenyTerms"
+  ],
+  "filterKeyValueData": [
+    "data",
+    "behavior",
+    "additionalDenyTerms"
+  ],
+  "filterQueryParams": [
+    "queryString",
+    "behavior"
+  ],
+  "filterUrlQuery": [
+    "url",
+    "behavior"
+  ],
+  "isCollectBehavior": [
+    "value"
+  ],
+  "resolveHttpHeaders": [
+    "httpHeaders"
+  ],
+  "resolveDataCollectionOptions": [
+    "options"
+  ],
+  "debounce": [
+    "func",
+    "wait",
+    "options"
+  ],
+  "invokeFunc": [],
+  "cancelTimers": [],
+  "debounced": [],
+  "getFilenameToDebugIdMap": [
+    "stackParser"
+  ],
+  "processDebugIds": [
+    "debugIdKeys",
+    "debugIdMap"
+  ],
+  "getDebugImagesForResources": [
+    "stackParser",
+    "resource_paths"
+  ],
+  "consoleSandbox": [
+    "callback"
+  ],
+  "enable": [],
+  "disable": [],
+  "_maybeLog": [
+    "level",
+    "param"
+  ],
+  "_getLoggerSettings": [],
+  "isValidProtocol": [
+    "protocol"
+  ],
+  "dsnToString": [
+    "dsn",
+    "param"
+  ],
+  "dsnFromString": [
+    "str"
+  ],
+  "dsnFromComponents": [
+    "components"
+  ],
+  "validateDsn": [
+    "dsn"
+  ],
+  "extractOrgIdFromDsnHost": [
+    "host"
+  ],
+  "extractOrgIdFromClient": [
+    "client"
+  ],
+  "makeDsn": [
+    "from"
+  ],
+  "isBrowserBundle": [],
+  "getSDKSource": [],
+  "envToBool": [
+    "value",
+    "options"
+  ],
+  "createEnvelope": [
+    "headers",
+    "param"
+  ],
+  "addItemToEnvelope": [
+    "envelope",
+    "newItem"
+  ],
+  "forEachEnvelopeItem": [
+    "envelope",
+    "callback"
+  ],
+  "envelopeContainsItemType": [
+    "envelope",
+    "types"
+  ],
+  "encodeUTF8": [
+    "input"
+  ],
+  "decodeUTF8": [
+    "input"
+  ],
+  "serializeEnvelope": [
+    "envelope"
+  ],
+  "append": [
+    "next"
+  ],
+  "concatBuffers": [
+    "buffers"
+  ],
+  "parseEnvelope": [
+    "env"
+  ],
+  "readBinary": [
+    "length"
+  ],
+  "readJson": [],
+  "createAttachmentEnvelopeItem": [
+    "attachment"
+  ],
+  "_isOverriddenType": [
+    "type"
+  ],
+  "envelopeItemTypeToDataCategory": [
+    "type"
+  ],
+  "getSdkMetadataForEnvelopeHeader": [
+    "metadataOrEvent"
+  ],
+  "createEventEnvelopeHeaders": [
+    "event",
+    "sdkInfo",
+    "tunnel",
+    "dsn"
+  ],
+  "getDataCategoryByType": [
+    "type"
+  ],
+  "SentryError": {
+    "message": [],
+    "logLevel": [],
+    "constructor": [
+      "message",
+      "logLevel"
+    ]
+  },
+  "toWeakMapKey": [
+    "error"
+  ],
+  "recordEscapedErrorSpan": [
+    "error",
+    "span"
+  ],
+  "applyEscapedErrorSpanToEvent": [
+    "event",
+    "hint",
+    "scope"
+  ],
+  "getPossibleEventMessages": [
+    "event"
+  ],
+  "parseStackFrames": [
+    "stackParser",
+    "error"
+  ],
+  "hasSentryFetchUrlHost": [
+    "error"
+  ],
+  "_enhanceErrorWithSentryInfo": [
+    "error"
+  ],
+  "exceptionFromError": [
+    "stackParser",
+    "error"
+  ],
+  "getErrorPropertyFromObject": [
+    "obj"
+  ],
+  "getMessageForObject": [
+    "exception"
+  ],
+  "getObjectClassName": [
+    "obj"
+  ],
+  "getException": [
+    "client",
+    "mechanism",
+    "exception",
+    "hint"
+  ],
+  "eventFromUnknownInput": [
+    "client",
+    "stackParser",
+    "exception",
+    "hint"
+  ],
+  "eventFromMessage": [
+    "stackParser",
+    "message",
+    "param",
+    "hint",
+    "attachStacktrace"
+  ],
+  "replaceExports": [
+    "exports",
+    "exportName",
+    "wrappedConstructor"
+  ],
+  "_INTERNAL_copyFlagsFromScopeToEvent": [
+    "event"
+  ],
+  "_INTERNAL_insertFlagToScope": [
+    "name",
+    "value",
+    "param"
+  ],
+  "_INTERNAL_insertToFlagBuffer": [
+    "flags",
+    "name",
+    "value",
+    "maxSize"
+  ],
+  "_INTERNAL_addFeatureFlagToActiveSpan": [
+    "name",
+    "value",
+    "param"
+  ],
+  "flushWithTimeout": [
+    "timeout"
+  ],
+  "flushIfServerless": [
+    "param"
+  ],
+  "getDefaultExport": [
+    "moduleExport"
+  ],
+  "handleCallbackErrors": [
+    "fn",
+    "onError",
+    "param",
+    "param"
+  ],
+  "maybeHandlePromiseRejection": [
+    "value",
+    "onError",
+    "onFinally",
+    "onSuccess"
+  ],
+  "hasSpansEnabled": [
+    "maybeOptions"
+  ],
+  "addAutoIpAddressToSession": [
+    "session"
+  ],
+  "isError": [
+    "wat"
+  ],
+  "isBuiltin": [
+    "wat",
+    "className"
+  ],
+  "isDOMError": [
+    "wat"
+  ],
+  "isDOMException": [
+    "wat"
+  ],
+  "isString": [
+    "wat"
+  ],
+  "isParameterizedString": [
+    "wat"
+  ],
+  "isPrimitive": [
+    "wat"
+  ],
+  "isPlainObject": [
+    "wat"
+  ],
+  "isObjectLike": [
+    "wat"
+  ],
+  "isEvent": [
+    "wat"
+  ],
+  "isElement": [
+    "wat"
+  ],
+  "isRegExp": [
+    "wat"
+  ],
+  "isThenable": [
+    "wat"
+  ],
+  "isSyntheticEvent": [
+    "wat"
+  ],
+  "isInstanceOf": [
+    "wat",
+    "base"
+  ],
+  "isVueViewModel": [
+    "wat"
+  ],
+  "isRequest": [
+    "request"
+  ],
+  "isBrowser": [],
+  "isElectronNodeRenderer": [],
+  "isSentryRequestUrl": [
+    "url",
+    "client"
+  ],
+  "checkTunnel": [
+    "url",
+    "tunnel"
+  ],
+  "checkDsn": [
+    "url",
+    "dsn"
+  ],
+  "hostnameMatchesDsnHost": [
+    "hostname",
+    "dsnHost"
+  ],
+  "removeTrailingSlash": [
+    "str"
+  ],
+  "isLocalhostRequest": [
+    "request",
+    "ipAddress"
+  ],
+  "hostMatchesOrIsSubdomainOf": [
+    "host",
+    "domain"
+  ],
+  "LRUMap": {
+    "_maxSize": [],
+    "_cache": [],
+    "constructor": [
+      "_maxSize"
+    ],
+    "size": [],
+    "get": [
+      "key"
+    ],
+    "set": [
+      "key",
+      "value"
+    ],
+    "remove": [
+      "key"
+    ],
+    "clear": [],
+    "keys": [],
+    "values": []
+  },
+  "merge": [
+    "initialObj",
+    "mergeObj",
+    "param"
+  ],
+  "getTraceMetaTags": [
+    "traceData"
+  ],
+  "getCrypto": [],
+  "getRandomByte": [],
+  "uuid4": [
+    "param"
+  ],
+  "getFirstException": [
+    "event"
+  ],
+  "getEventDescription": [
+    "event"
+  ],
+  "addExceptionTypeValue": [
+    "event",
+    "value",
+    "type"
+  ],
+  "addExceptionMechanism": [
+    "event",
+    "newMechanism"
+  ],
+  "addExceptionMechanismToCapturedException": [
+    "event",
+    "newMechanism"
+  ],
+  "applyExceptionMechanism": [
+    "exception",
+    "newMechanism"
+  ],
+  "_parseInt": [
+    "input"
+  ],
+  "parseSemver": [
+    "input"
+  ],
+  "addContextToFrame": [
+    "lines",
+    "frame",
+    "param"
+  ],
+  "checkOrSetAlreadyCaught": [
+    "exception"
+  ],
+  "isAlreadyCaptured": [
+    "exception"
+  ],
+  "filenameIsInApp": [
+    "filename",
+    "param"
+  ],
+  "node": [
+    "getModule"
+  ],
+  "nodeStackLineParser": [
+    "getModule"
+  ],
+  "_parseIntOrUndefined": [
+    "input"
+  ],
+  "_safeDecodeURI": [
+    "filename"
+  ],
+  "isNodeEnv": [],
+  "dynamicRequire": [
+    "mod",
+    "request"
+  ],
+  "loadModule": [
+    "moduleName",
+    "param"
+  ],
+  "setSkipNormalizationHint": [
+    "obj"
+  ],
+  "setNormalizationDepthOverrideHint": [
+    "obj",
+    "depth"
+  ],
+  "hasSkipNormalizationHint": [
+    "value"
+  ],
+  "getNormalizationDepthOverrideHint": [
+    "value"
+  ],
+  "setNormalizeStringifier": [
+    "newStringifier"
+  ],
+  "normalize": [
+    "input",
+    "param",
+    "param"
+  ],
+  "normalizeToSize": [
+    "object",
+    "param",
+    "param"
+  ],
+  "visit": [
+    "key",
+    "value",
+    "param",
+    "param",
+    "param"
+  ],
+  "stringifyValue": [
+    "key",
+    "value"
+  ],
+  "getConstructorName": [
+    "value"
+  ],
+  "utf8Length": [
+    "value"
+  ],
+  "jsonSize": [
+    "value"
+  ],
+  "normalizeUrlToBase": [
+    "url",
+    "basePath"
+  ],
+  "memoBuilder": [],
+  "memoize": [
+    "obj"
+  ],
+  "unmemoize": [
+    "obj"
+  ],
+  "fill": [
+    "source",
+    "name",
+    "replacementFactory"
+  ],
+  "addNonEnumerableProperty": [
+    "obj",
+    "name",
+    "value"
+  ],
+  "markFunctionWrapped": [
+    "wrapped",
+    "original"
+  ],
+  "wrapMethod": [
+    "obj",
+    "field",
+    "wrapped",
+    "param"
+  ],
+  "getOriginalFunction": [
+    "func"
+  ],
+  "convertToPlainObject": [
+    "value"
+  ],
+  "getOwnProperties": [
+    "obj"
+  ],
+  "extractExceptionKeysForMessage": [
+    "exception"
+  ],
+  "dropUndefinedKeys": [
+    "inputValue"
+  ],
+  "_dropUndefinedKeys": [
+    "inputValue",
+    "memoizationMap"
+  ],
+  "isPojo": [
+    "input"
+  ],
+  "objectify": [
+    "wat"
+  ],
+  "parameterize": [
+    "strings",
+    "param"
+  ],
+  "parseSampleRate": [
+    "sampleRate"
+  ],
+  "normalizeArray": [
+    "parts",
+    "allowAboveRoot"
+  ],
+  "splitPath": [
+    "filename"
+  ],
+  "resolve": [
+    "value"
+  ],
+  "trim": [
+    "arr"
+  ],
+  "relative": [
+    "from",
+    "to"
+  ],
+  "normalizePath": [
+    "path"
+  ],
+  "isAbsolute": [
+    "path"
+  ],
+  "join": [
+    "param"
+  ],
+  "dirname": [
+    "path"
+  ],
+  "basename": [
+    "path",
+    "ext"
+  ],
+  "prepareEvent": [
+    "options",
+    "event",
+    "hint",
+    "scope",
+    "client",
+    "isolationScope"
+  ],
+  "applyClientOptions": [
+    "event",
+    "options"
+  ],
+  "applyDebugIds": [
+    "event",
+    "stackParser"
+  ],
+  "applyDebugMeta": [
+    "event"
+  ],
+  "applyIntegrationsMetadata": [
+    "event",
+    "integrationNames"
+  ],
+  "normalizeEvent": [
+    "event",
+    "depth",
+    "maxBreadth"
+  ],
+  "getFinalScope": [
+    "scope",
+    "captureContext"
+  ],
+  "parseEventHintOrCaptureContext": [
+    "hint"
+  ],
+  "hintIsScopeOrFunction": [
+    "hint"
+  ],
+  "hintIsScopeContext": [
+    "hint"
+  ],
+  "makePromiseBuffer": [
+    "param"
+  ],
+  "isReady": [],
+  "remove": [
+    "task"
+  ],
+  "add": [
+    "taskProducer"
+  ],
+  "drain": [
+    "timeout"
+  ],
+  "generateTraceId": [],
+  "generateSpanId": [],
+  "withRandomSafeContext": [
+    "cb"
+  ],
+  "safeMathRandom": [],
+  "safeDateNow": [],
+  "parseRetryAfterHeader": [
+    "header",
+    "param"
+  ],
+  "disabledUntil": [
+    "limits",
+    "dataCategory"
+  ],
+  "isRateLimited": [
+    "limits",
+    "dataCategory",
+    "param"
+  ],
+  "updateRateLimits": [
+    "limits",
+    "param",
+    "param"
+  ],
+  "getMaxBodyByteLength": [
+    "maxRequestBodySize"
+  ],
+  "winterCGHeadersToDict": [
+    "winterCGHeaders"
+  ],
+  "headersToDict": [
+    "reqHeaders"
+  ],
+  "winterCGRequestToRequestData": [
+    "req"
+  ],
+  "isTextualContentType": [
+    "contentType"
+  ],
+  "captureBodyFromWinterCGRequest": [
+    "request",
+    "isolationScope",
+    "maxRequestBodySize"
+  ],
+  "httpRequestToRequestData": [
+    "request"
+  ],
+  "getAbsoluteUrl": [
+    "param"
+  ],
+  "httpHeadersToSpanAttributes": [
+    "headers",
+    "dataCollection",
+    "param"
+  ],
+  "filterCookiePairs": [
+    "cookies",
+    "cookieBehavior"
+  ],
+  "extractQueryParamsFromUrl": [
+    "url"
+  ],
+  "getContentLengthFromHeaders": [
+    "headers"
+  ],
+  "safeCallback": [
+    "message",
+    "fn",
+    "fallback"
+  ],
+  "recover": [
+    "message",
+    "error",
+    "fallback"
+  ],
+  "applyScopeDataToEvent": [
+    "event",
+    "data"
+  ],
+  "mergeScopeData": [
+    "data",
+    "mergeData"
+  ],
+  "mergeAndOverwriteScopeData": [
+    "data",
+    "prop",
+    "mergeVal"
+  ],
+  "getCombinedScopeData": [
+    "isolationScope",
+    "currentScope"
+  ],
+  "applyDataToEvent": [
+    "event",
+    "data"
+  ],
+  "applyBreadcrumbsToEvent": [
+    "event",
+    "breadcrumbs"
+  ],
+  "applySdkMetadataToEvent": [
+    "event",
+    "sdkProcessingMetadata"
+  ],
+  "applySpanToEvent": [
+    "event",
+    "span"
+  ],
+  "applyFingerprintToEvent": [
+    "event",
+    "fingerprint"
+  ],
+  "applySdkMetadata": [
+    "options",
+    "name",
+    "param",
+    "param"
+  ],
+  "severityLevelFromString": [
+    "level"
+  ],
+  "logIgnoredSpan": [
+    "droppedSpan"
+  ],
+  "shouldIgnoreSpan": [
+    "span",
+    "ignoreSpans"
+  ],
+  "_matchesAttributeValue": [
+    "actual",
+    "pat"
+  ],
+  "reparentChildSpans": [
+    "spans",
+    "dropSpan"
+  ],
+  "isStringOrRegExp": [
+    "value"
+  ],
+  "_setSpanForScope": [
+    "scope",
+    "span"
+  ],
+  "_getSpanForScope": [
+    "scope"
+  ],
+  "spanToTransactionTraceContext": [
+    "span"
+  ],
+  "spanToTraceContext": [
+    "span"
+  ],
+  "spanToTraceHeader": [
+    "span"
+  ],
+  "spanToTraceparentHeader": [
+    "span"
+  ],
+  "convertSpanLinksForEnvelope": [
+    "links"
+  ],
+  "getStreamedSpanLinks": [
+    "links"
+  ],
+  "spanTimeInputToSeconds": [
+    "input"
+  ],
+  "ensureTimestampInSeconds": [
+    "timestamp"
+  ],
+  "spanToStaticSpanJSON": [
+    "span"
+  ],
+  "spanToJSON": [
+    "span"
+  ],
+  "getOtelParentSpanId": [
+    "span"
+  ],
+  "streamedSpanJsonToSerializedSpan": [
+    "spanJson"
+  ],
+  "spanIsOpenTelemetrySdkTraceBaseSpan": [
+    "span"
+  ],
+  "spanIsSentrySpan": [
+    "span"
+  ],
+  "spanIsSampled": [
+    "span"
+  ],
+  "getStatusMessage": [
+    "status"
+  ],
+  "getSimpleStatus": [
+    "status"
+  ],
+  "addStatusMessageAttribute": [
+    "attributes",
+    "status"
+  ],
+  "addChildSpanToSpan": [
+    "span",
+    "childSpan"
+  ],
+  "removeChildSpanFromSpan": [
+    "span",
+    "childSpan"
+  ],
+  "getSpanDescendants": [
+    "span"
+  ],
+  "addSpanChildren": [
+    "span2"
+  ],
+  "INTERNAL_getSegmentSpan": [
+    "span"
+  ],
+  "spanIsSegment": [
+    "span"
+  ],
+  "getActiveSpan": [
+    "scope"
+  ],
+  "updateSpanName": [
+    "span",
+    "name"
+  ],
+  "INTERNAL_setSegmentNameSourceIfSegment": [
+    "span",
+    "source"
+  ],
+  "createStackParser": [
+    "param"
+  ],
+  "stackParserFromStackParserOptions": [
+    "stackParser"
+  ],
+  "stripSentryFramesAndReverse": [
+    "stack"
+  ],
+  "getLastStackFrame": [
+    "arr"
+  ],
+  "getFunctionName": [
+    "fn"
+  ],
+  "getFramesFromEvent": [
+    "event"
+  ],
+  "normalizeStackTracePath": [
+    "path"
+  ],
+  "stringify": [
+    "value",
+    "param"
+  ],
+  "truncate": [
+    "str",
+    "param"
+  ],
+  "snipLine": [
+    "line",
+    "colno"
+  ],
+  "safeJoin": [
+    "input",
+    "delimiter"
+  ],
+  "isMatchingPattern": [
+    "value",
+    "pattern",
+    "param"
+  ],
+  "stringMatchesSomePattern": [
+    "testString",
+    "param",
+    "param"
+  ],
+  "supportsErrorEvent": [],
+  "supportsDOMException": [],
+  "_isFetchSupported": [],
+  "isNativeFunction": [
+    "func"
+  ],
+  "supportsNativeFetch": [],
+  "supportsReferrerPolicy": [],
+  "resolvedSyncPromise": [
+    "value"
+  ],
+  "rejectedSyncPromise": [
+    "reason"
+  ],
+  "SyncPromise": {
+    "_state": [],
+    "_handlers": [],
+    "_value": [],
+    "constructor": [
+      "executor"
+    ],
+    "then": [
+      "onfulfilled",
+      "onrejected"
+    ],
+    "catch": [
+      "onrejected"
+    ],
+    "finally": [
+      "onfinally"
+    ],
+    "_executeHandlers": [],
+    "_runExecutor": []
+  },
+  "setResult": [
+    "state",
+    "value"
+  ],
+  "reject": [
+    "reason"
+  ],
+  "dateTimestampInSeconds": [],
+  "createUnixTimestampInSecondsFunc": [],
+  "timestampInSeconds": [],
+  "getBrowserTimeOrigin": [],
+  "browserPerformanceTimeOrigin": [],
+  "safeUnref": [
+    "timer"
+  ],
+  "getSequenceAttribute": [
+    "timestampInSeconds"
+  ],
+  "_getTraceInfoFromScope": [
+    "client",
+    "scope"
+  ],
+  "getTraceData": [
+    "param"
+  ],
+  "scopeToTraceHeader": [
+    "scope"
+  ],
+  "scopeToTraceparentHeader": [
+    "scope"
+  ],
+  "normalizeRegExpTarget": [
+    "pattern"
+  ],
+  "matchesTracePropagationTargets": [
+    "value",
+    "tracePropagationTargets",
+    "param"
+  ],
+  "shouldPropagateTraceForUrl": [
+    "url",
+    "tracePropagationTargets",
+    "decisionMap"
+  ],
+  "extractTraceparentData": [
+    "traceparent"
+  ],
+  "isContinuingTrace": [
+    "propagationContext"
+  ],
+  "propagationContextFromHeaders": [
+    "sentryTrace",
+    "baggage"
+  ],
+  "generateSentryTraceHeader": [
+    "param",
+    "param",
+    "sampled"
+  ],
+  "generateTraceparentHeader": [
+    "param",
+    "param",
+    "sampled"
+  ],
+  "getSampleRandFromTraceparentAndDsc": [
+    "traceparentData",
+    "dsc"
+  ],
+  "shouldContinueTrace": [
+    "client",
+    "baggageOrgId"
+  ],
+  "convertTransactionEventToSpanJson": [
+    "event"
+  ],
+  "convertSpanJsonToTransactionEvent": [
+    "span"
+  ],
+  "handleTunnelRequest": [
+    "options"
+  ],
+  "isURLObjectRelative": [
+    "url"
+  ],
+  "parseStringToURLObject": [
+    "url",
+    "urlBase"
+  ],
+  "getSanitizedUrlStringFromUrlObject": [
+    "url"
+  ],
+  "getUrlQuery": [
+    "query"
+  ],
+  "getUrlFragment": [
+    "fragment"
+  ],
+  "getUrlDomain": [
+    "url",
+    "base"
+  ],
+  "getHttpSpanNameFromUrlObject": [
+    "urlObject",
+    "kind",
+    "request",
+    "routeName"
+  ],
+  "getHttpSpanDetailsFromUrlObject": [
+    "urlObject",
+    "kind",
+    "spanOrigin",
+    "request",
+    "routeName",
+    "client"
+  ],
+  "parseUrl": [
+    "url"
+  ],
+  "stripUrlQueryAndFragment": [
+    "urlPath"
+  ],
+  "getSanitizedUrlString": [
+    "url"
+  ],
+  "stripDataUrlContent": [
+    "url",
+    "param"
+  ],
+  "getVercelEnv": [],
+  "vercelWaitUntil": [
+    "task"
+  ],
+  "maybeWarnAboutIgnoredTransactionOptions": [
+    "options"
+  ],
+  "makeWeakRef": [
+    "value"
+  ],
+  "derefWeakRef": [
+    "ref"
+  ],
+  "escapeStringForRegex": [
+    "regexString"
+  ],
+  "getClientIPAddress": [
+    "headers"
+  ],
+  "parseForwardedHeader": [
+    "value"
+  ],
+  "isIP": [
+    "str"
+  ],
+  "integration": [
+    "param"
+  ]
+}
