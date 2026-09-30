@@ -1,0 +1,1108 @@
+{
+  "compileAliasOptions": [
+    "resolver",
+    "options"
+  ],
+  "aliasResolveHandler": [
+    "resolver",
+    "options",
+    "target",
+    "request",
+    "resolveContext",
+    "callback"
+  ],
+  "resolveWithAlias": [
+    "alias",
+    "callback"
+  ],
+  "stoppingCallback": [
+    "err",
+    "result"
+  ],
+  "dirname": [
+    "maybePath"
+  ],
+  "runCallbacks": [
+    "callbacks",
+    "err",
+    "result"
+  ],
+  "runDispatch": [],
+  "scheduleDispatch": [
+    "callback",
+    "err",
+    "result"
+  ],
+  "OperationMergerBackend": {
+    "constructor": [
+      "provider",
+      "syncProvider",
+      "providerContext"
+    ],
+    "_provider": [],
+    "_syncProvider": [],
+    "_providerContext": [],
+    "_activeAsyncOperations": [],
+    "provide": [],
+    "provideSync": [],
+    "purge": [],
+    "purgeParent": []
+  },
+  "CacheBackend": {
+    "constructor": [
+      "duration",
+      "provider",
+      "syncProvider",
+      "providerContext"
+    ],
+    "_duration": [],
+    "_provider": [],
+    "_syncProvider": [],
+    "_providerContext": [],
+    "_activeAsyncOperations": [],
+    "_data": [],
+    "_levels": [],
+    "_currentLevel": [],
+    "_tickInterval": [],
+    "_mode": [],
+    "_timeout": [],
+    "_nextDecay": [],
+    "provide": [
+      "path",
+      "options",
+      "callback"
+    ],
+    "provideSync": [
+      "path",
+      "options"
+    ],
+    "purge": [
+      "what",
+      "options"
+    ],
+    "purgeParent": [
+      "what"
+    ],
+    "_storeResult": [
+      "path",
+      "err",
+      "result"
+    ],
+    "_decayLevel": [],
+    "_runDecays": [],
+    "_enterAsyncMode": [],
+    "_enterSyncModeWhenIdle": [],
+    "_enterIdleMode": []
+  },
+  "createBackend": [
+    "duration",
+    "provider",
+    "syncProvider",
+    "providerContext"
+  ],
+  "cdUp": [
+    "directory"
+  ],
+  "loadDescriptionFile": [
+    "resolver",
+    "directory",
+    "filenames",
+    "oldInfo",
+    "resolveContext",
+    "callback"
+  ],
+  "iterFilename": [
+    "filename",
+    "iterCallback"
+  ],
+  "onJson": [
+    "err",
+    "resolvedContent"
+  ],
+  "onLevelDone": [
+    "err",
+    "result"
+  ],
+  "getField": [
+    "content",
+    "field"
+  ],
+  "resolve": [
+    "context",
+    "parent",
+    "specifier",
+    "resolveContext",
+    "callback"
+  ],
+  "modulesResolveHandler": [
+    "resolver",
+    "directories",
+    "target",
+    "request",
+    "resolveContext",
+    "callback"
+  ],
+  "finish": [
+    "error",
+    "packageMap"
+  ],
+  "StackEntry": {
+    "constructor": [
+      "hook",
+      "request",
+      "parent",
+      "preSeeded"
+    ],
+    "name": [],
+    "path": [],
+    "request": [],
+    "query": [],
+    "fragment": [],
+    "directory": [],
+    "module": [],
+    "parent": [],
+    "preSeeded": [],
+    "has": [
+      "query"
+    ],
+    "size": [],
+    "toString": []
+  },
+  "toCamelCase": [
+    "str"
+  ],
+  "Resolver": {
+    "createStackEntry": [
+      "hook",
+      "request",
+      "parent",
+      "preSeeded"
+    ],
+    "constructor": [
+      "fileSystem",
+      "options"
+    ],
+    "fileSystem": [],
+    "options": [],
+    "pathCache": [],
+    "hooks": [],
+    "ensureHook": [
+      "name"
+    ],
+    "getHook": [
+      "name"
+    ],
+    "resolveSync": [
+      "context",
+      "parent",
+      "specifier",
+      "resolveContext"
+    ],
+    "resolvePromise": [
+      "context",
+      "parent",
+      "specifier",
+      "resolveContext"
+    ],
+    "resolve": [
+      "context",
+      "parent",
+      "specifier",
+      "resolveContext",
+      "callback"
+    ],
+    "doResolve": [
+      "hook",
+      "request",
+      "message",
+      "resolveContext",
+      "callback"
+    ],
+    "parse": [
+      "identifier"
+    ],
+    "isModule": [
+      "path"
+    ],
+    "isPrivate": [
+      "path"
+    ],
+    "isDirectory": [
+      "path"
+    ],
+    "normalize": [
+      "path"
+    ],
+    "join": [
+      "path",
+      "request"
+    ],
+    "dirname": [
+      "path"
+    ],
+    "basename": [
+      "path",
+      "suffix"
+    ]
+  },
+  "finishResolved": [
+    "result"
+  ],
+  "finishWithoutResolve": [
+    "message",
+    "log"
+  ],
+  "processPnpApiOption": [
+    "option"
+  ],
+  "toPathAlias": [
+    "alias"
+  ],
+  "normalizeAlias": [
+    "alias"
+  ],
+  "toPackageMapConfigFile": [
+    "configFile"
+  ],
+  "normalizePackageMap": [
+    "packageMap"
+  ],
+  "normalizeTsconfig": [
+    "tsconfig"
+  ],
+  "mergeFilteredToArray": [
+    "array",
+    "filter"
+  ],
+  "createOptions": [
+    "options"
+  ],
+  "RootsPlugin": {
+    "constructor": [
+      "source",
+      "roots",
+      "target"
+    ],
+    "roots": [],
+    "source": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "SyncAsyncFileSystemDecorator": {
+    "constructor": [
+      "fs"
+    ],
+    "fs": [],
+    "lstat": [],
+    "lstatSync": [],
+    "stat": [],
+    "statSync": [],
+    "readdir": [],
+    "readdirSync": [],
+    "readFile": [],
+    "readFileSync": [],
+    "readlink": [],
+    "readlinkSync": [],
+    "readJson": [],
+    "readJsonSync": [],
+    "realpath": [],
+    "realpathSync": []
+  },
+  "getPrefixLength": [
+    "pattern"
+  ],
+  "sortByLongestPrefix": [
+    "arr"
+  ],
+  "mergeTsconfigs": [
+    "base",
+    "config"
+  ],
+  "substituteConfigDir": [
+    "pathValue",
+    "configDir"
+  ],
+  "tsconfigPathsToResolveOptions": [
+    "configDir",
+    "paths",
+    "resolver",
+    "baseUrl"
+  ],
+  "getAbsoluteBaseUrl": [
+    "context",
+    "resolver",
+    "baseUrl"
+  ],
+  "buildTsconfigPathsMap": [
+    "main",
+    "mainContext",
+    "refs",
+    "fileDependencies"
+  ],
+  "check": [
+    "dir"
+  ],
+  "loadExtended": [
+    "extendedConfigPath"
+  ],
+  "finishOne": [],
+  "next": [],
+  "joinRelativePreservingLeadingDot": [
+    "relativePath",
+    "request",
+    "resolver"
+  ],
+  "getCachePath": [
+    "request"
+  ],
+  "getCacheRequest": [
+    "request",
+    "resolver"
+  ],
+  "getCacheId": [
+    "type",
+    "request",
+    "withContext",
+    "resolver"
+  ],
+  "getPaths": [
+    "path"
+  ],
+  "getPathsCached": [
+    "fileSystem",
+    "path"
+  ],
+  "resolveSync": [
+    "context",
+    "parent",
+    "specifier",
+    "resolveContext"
+  ],
+  "resolvePromise": [
+    "context",
+    "parent",
+    "specifier",
+    "resolveContext"
+  ],
+  "create": [
+    "options"
+  ],
+  "createSync": [
+    "options"
+  ],
+  "createPromise": [
+    "options"
+  ],
+  "mergeExports": [
+    "obj",
+    "exports"
+  ],
+  "cachedKeys": [
+    "obj"
+  ],
+  "getFieldKeyInfos": [
+    "field"
+  ],
+  "patternKeyCompare": [
+    "a",
+    "b"
+  ],
+  "computeFindMatch": [
+    "request",
+    "field"
+  ],
+  "findMatch": [
+    "request",
+    "field"
+  ],
+  "computeConditionalMapping": [
+    "conditionalMapping_",
+    "conditionNames"
+  ],
+  "conditionalMapping": [
+    "conditionalMapping_",
+    "conditionNames"
+  ],
+  "targetMapping": [
+    "remainingRequest",
+    "isPattern",
+    "isSubpathMapping",
+    "mappingTarget",
+    "assert"
+  ],
+  "directMapping": [
+    "remainingRequest",
+    "isPattern",
+    "isSubpathMapping",
+    "mappingTarget",
+    "conditionNames",
+    "assert"
+  ],
+  "createFieldProcessor": [
+    "field",
+    "normalizeRequest",
+    "assertRequest",
+    "assertTarget"
+  ],
+  "assertExportsFieldRequest": [
+    "request"
+  ],
+  "findSubpathsInConditions": [
+    "mapping",
+    "subpathCode",
+    "trail"
+  ],
+  "quote": [
+    "key"
+  ],
+  "buildExportsField": [
+    "field"
+  ],
+  "assertExportTarget": [
+    "exp",
+    "expectFolder"
+  ],
+  "assertImportsFieldRequest": [
+    "request"
+  ],
+  "assertImportTarget": [
+    "imp",
+    "expectFolder"
+  ],
+  "getPathFromURLWin32": [
+    "url"
+  ],
+  "getPathFromURLPosix": [
+    "url"
+  ],
+  "fileURLToPath": [
+    "path",
+    "options"
+  ],
+  "decodeText": [
+    "data"
+  ],
+  "readJson": [
+    "fileSystem",
+    "jsonFilePath",
+    "options",
+    "callback"
+  ],
+  "unavailable": [
+    "param"
+  ],
+  "dosPrefixEnd": [
+    "identifier"
+  ],
+  "parseIdentifier": [
+    "identifier"
+  ],
+  "memoize": [
+    "fn"
+  ],
+  "createError": [
+    "message",
+    "code"
+  ],
+  "toPackagePath": [
+    "url",
+    "base",
+    "id"
+  ],
+  "parsePackageMap": [
+    "data",
+    "configFilePath"
+  ],
+  "findPackageIds": [
+    "packageMap",
+    "filePath"
+  ],
+  "isPosixPathSeparator": [
+    "code"
+  ],
+  "isPathSeparator": [
+    "code"
+  ],
+  "isWindowsDeviceRoot": [
+    "code"
+  ],
+  "normalizeString": [
+    "path",
+    "allowAboveRoot",
+    "separator",
+    "isSeparator"
+  ],
+  "posixNormalize": [
+    "path"
+  ],
+  "posixDirname": [
+    "path"
+  ],
+  "win32Normalize": [
+    "path"
+  ],
+  "win32Dirname": [
+    "path"
+  ],
+  "basename": [
+    "path",
+    "suffix"
+  ],
+  "getType": [
+    "maybePath"
+  ],
+  "normalize": [
+    "maybePath"
+  ],
+  "join": [
+    "rootPath",
+    "request"
+  ],
+  "createCachedJoin": [],
+  "fn": [
+    "maybePath",
+    "suffix"
+  ],
+  "createCachedDirname": [],
+  "createCachedBasename": [],
+  "isRelativeRequest": [
+    "request"
+  ],
+  "isWindowsPath": [
+    "maybePath"
+  ],
+  "isSeparator": [
+    "charCode",
+    "windowsPath"
+  ],
+  "parentPathLength": [
+    "parentPath",
+    "windowsPath"
+  ],
+  "equalsWindowsPrefix": [
+    "parentPath",
+    "length",
+    "childPath"
+  ],
+  "startsWithPath": [
+    "parentPath",
+    "length",
+    "childPath",
+    "windowsPath"
+  ],
+  "isInside": [
+    "parentPath",
+    "childPath"
+  ],
+  "isSubPath": [
+    "parentPath",
+    "childPath"
+  ],
+  "isFileURL": [
+    "maybePath"
+  ],
+  "toPath": [
+    "maybeURL"
+  ],
+  "encodePathChars": [
+    "filepath",
+    "windows"
+  ],
+  "pathToFileURL": [
+    "filepath",
+    "options"
+  ],
+  "stripWithoutWhitespace": [
+    "_string",
+    "_start",
+    "_end"
+  ],
+  "stripWithWhitespace": [
+    "string",
+    "start",
+    "end"
+  ],
+  "isEscaped": [
+    "jsonString",
+    "quotePosition"
+  ],
+  "stripJsonComments": [
+    "jsonString",
+    "param"
+  ],
+  "AliasFieldPlugin": {
+    "constructor": [
+      "source",
+      "field",
+      "target"
+    ],
+    "source": [],
+    "field": [],
+    "target": [],
+    "_fieldDataCache": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "AliasPlugin": {
+    "constructor": [
+      "source",
+      "options",
+      "target"
+    ],
+    "source": [],
+    "options": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "AppendPlugin": {
+    "constructor": [
+      "source",
+      "appending",
+      "target"
+    ],
+    "source": [],
+    "appending": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "CachedInputFileSystem": {
+    "constructor": [
+      "fileSystem",
+      "duration"
+    ],
+    "fileSystem": [],
+    "_lstatBackend": [],
+    "lstat": [],
+    "lstatSync": [],
+    "_statBackend": [],
+    "stat": [],
+    "statSync": [],
+    "_readdirBackend": [],
+    "readdir": [],
+    "readdirSync": [],
+    "_readFileBackend": [],
+    "readFile": [],
+    "readFileSync": [],
+    "_readJsonBackend": [],
+    "readJson": [],
+    "readJsonSync": [],
+    "_readlinkBackend": [],
+    "readlink": [],
+    "readlinkSync": [],
+    "_realpathBackend": [],
+    "realpath": [],
+    "realpathSync": [],
+    "purge": [
+      "what",
+      "options"
+    ]
+  },
+  "CloneBasenamePlugin": {
+    "constructor": [
+      "source",
+      "target"
+    ],
+    "source": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "ConditionalPlugin": {
+    "constructor": [
+      "source",
+      "test",
+      "message",
+      "allowAlternatives",
+      "target"
+    ],
+    "source": [],
+    "test": [],
+    "message": [],
+    "allowAlternatives": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "DescriptionFilePlugin": {
+    "constructor": [
+      "source",
+      "filenames",
+      "pathIsFile",
+      "target"
+    ],
+    "source": [],
+    "filenames": [],
+    "pathIsFile": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "DirectoryExistsPlugin": {
+    "constructor": [
+      "source",
+      "target"
+    ],
+    "source": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "ExportsFieldPlugin": {
+    "constructor": [
+      "source",
+      "conditionNames",
+      "fieldNamePath",
+      "target",
+      "restrictions"
+    ],
+    "source": [],
+    "target": [],
+    "conditionNames": [],
+    "fieldName": [],
+    "restrictions": [],
+    "_fieldProcessorCache": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "ExtensionAliasPlugin": {
+    "constructor": [
+      "source",
+      "options",
+      "target"
+    ],
+    "source": [],
+    "options": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "FileExistsPlugin": {
+    "constructor": [
+      "source",
+      "target"
+    ],
+    "source": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "ImportsFieldPlugin": {
+    "constructor": [
+      "source",
+      "conditionNames",
+      "fieldNamePath",
+      "targetFile",
+      "targetPackage"
+    ],
+    "source": [],
+    "targetFile": [],
+    "targetPackage": [],
+    "conditionNames": [],
+    "fieldName": [],
+    "_fieldProcessorCache": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "JoinRequestPartPlugin": {
+    "constructor": [
+      "source",
+      "target"
+    ],
+    "source": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "JoinRequestPlugin": {
+    "constructor": [
+      "source",
+      "target"
+    ],
+    "source": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "LogInfoPlugin": {
+    "constructor": [
+      "source"
+    ],
+    "source": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "MainFieldPlugin": {
+    "constructor": [
+      "source",
+      "options",
+      "target"
+    ],
+    "source": [],
+    "options": [],
+    "target": [],
+    "_mainModuleCache": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "ModulesInHierarchicalDirectoriesPlugin": {
+    "constructor": [
+      "source",
+      "directories",
+      "target"
+    ],
+    "source": [],
+    "directories": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "ModulesInRootPlugin": {
+    "constructor": [
+      "source",
+      "path",
+      "target"
+    ],
+    "source": [],
+    "path": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "NextPlugin": {
+    "constructor": [
+      "source",
+      "target"
+    ],
+    "source": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "PackageMapPlugin": {
+    "constructor": [
+      "source",
+      "options",
+      "symlinks",
+      "target"
+    ],
+    "source": [],
+    "options": [],
+    "symlinks": [],
+    "target": [],
+    "_packageMap": [],
+    "_pending": [],
+    "_getPackageMap": [
+      "resolver",
+      "resolveContext",
+      "callback"
+    ],
+    "_resolveConfigFile": [
+      "resolver",
+      "callback"
+    ],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "ParsePlugin": {
+    "constructor": [
+      "source",
+      "requestOptions",
+      "target"
+    ],
+    "source": [],
+    "requestOptions": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "PnpPlugin": {
+    "constructor": [
+      "source",
+      "pnpApi",
+      "target",
+      "alternateTarget"
+    ],
+    "source": [],
+    "pnpApi": [],
+    "target": [],
+    "alternateTarget": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "RestrictionsPlugin": {
+    "constructor": [
+      "source",
+      "restrictions"
+    ],
+    "source": [],
+    "restrictions": [],
+    "_restrictions": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "ResultPlugin": {
+    "constructor": [
+      "source"
+    ],
+    "source": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "SelfReferencePlugin": {
+    "constructor": [
+      "source",
+      "fieldNamePath",
+      "target"
+    ],
+    "source": [],
+    "target": [],
+    "fieldName": [],
+    "_nameCache": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "SymlinkPlugin": {
+    "constructor": [
+      "source",
+      "target"
+    ],
+    "source": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "TryNextPlugin": {
+    "constructor": [
+      "source",
+      "message",
+      "target"
+    ],
+    "source": [],
+    "message": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "TsconfigPathsPlugin": {
+    "constructor": [
+      "configFileOrOptions"
+    ],
+    "isAutoConfigFile": [],
+    "configFile": [],
+    "references": [],
+    "baseUrl": [],
+    "apply": [
+      "resolver"
+    ],
+    "_getTsconfigPathsMap": [
+      "resolver",
+      "request",
+      "resolveContext",
+      "callback"
+    ],
+    "_findTsconfigUpward": [
+      "resolver",
+      "startDir",
+      "callback"
+    ],
+    "_loadTsconfigPathsMap": [
+      "resolver",
+      "absTsconfigPath",
+      "callback"
+    ],
+    "_selectPathsDataForContext": [
+      "requestPath",
+      "tsconfigPathsMap"
+    ],
+    "_loadTsconfigFromExtends": [
+      "resolver",
+      "configFilePath",
+      "extendedConfigValue",
+      "fileDependencies",
+      "visitedConfigPaths",
+      "callback"
+    ],
+    "_findExtendsInNodeModules": [
+      "resolver",
+      "startDir",
+      "subPath",
+      "callback"
+    ],
+    "_loadTsconfigReferences": [
+      "resolver",
+      "context",
+      "references",
+      "fileDependencies",
+      "referenceMatchMap",
+      "callback",
+      "visitedRefPaths"
+    ],
+    "_loadTsconfig": [
+      "resolver",
+      "configFilePath",
+      "fileDependencies",
+      "visitedConfigPaths",
+      "callback"
+    ]
+  },
+  "UnsafeCachePlugin": {
+    "constructor": [
+      "source",
+      "filterPredicate",
+      "cache",
+      "withContext",
+      "target"
+    ],
+    "source": [],
+    "filterPredicate": [],
+    "withContext": [],
+    "cache": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  },
+  "UseFilePlugin": {
+    "constructor": [
+      "source",
+      "filename",
+      "target"
+    ],
+    "source": [],
+    "filename": [],
+    "target": [],
+    "apply": [
+      "resolver"
+    ]
+  }
+}
