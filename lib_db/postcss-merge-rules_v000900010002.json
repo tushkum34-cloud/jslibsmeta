@@ -1,0 +1,613 @@
+{
+  "pluginCreator": [
+    "param"
+  ],
+  "closeAttribute": [
+    "state",
+    "browsers"
+  ],
+  "skipAttributeTrivia": [
+    "state"
+  ],
+  "startMatcher": [
+    "state",
+    "character",
+    "browsers"
+  ],
+  "startAttributeName": [
+    "state",
+    "type",
+    "value"
+  ],
+  "afterSeparator": [
+    "state",
+    "type",
+    "value",
+    "browsers"
+  ],
+  "afterPrefix": [
+    "state",
+    "isDelim",
+    "value",
+    "browsers"
+  ],
+  "readModifier": [
+    "state",
+    "value",
+    "browsers"
+  ],
+  "advanceAttribute": [
+    "state",
+    "type",
+    "value",
+    "browsers"
+  ],
+  "computeBrowsersToSupport": [
+    "options",
+    "stats",
+    "from",
+    "file",
+    "env"
+  ],
+  "declarationId": [
+    "declaration"
+  ],
+  "isDeclarationRule": [
+    "node"
+  ],
+  "claimRepeats": [
+    "declarations",
+    "later"
+  ],
+  "listLength": [
+    "selectors"
+  ],
+  "detach": [
+    "parent",
+    "rules"
+  ],
+  "joinGain": [
+    "group",
+    "later",
+    "mergeState"
+  ],
+  "joinByDeclarations": [
+    "parent",
+    "mergeState"
+  ],
+  "register": [
+    "rule",
+    "position",
+    "list"
+  ],
+  "joinIntoGroup": [
+    "later",
+    "laterIds"
+  ],
+  "withdraw": [
+    "later",
+    "declarations",
+    "claimed"
+  ],
+  "hasDeclarationOutsideRules": [
+    "container"
+  ],
+  "DeclarationScan": {
+    "constructor": [
+      "slots",
+      "blocks"
+    ],
+    "declarationBetween": [
+      "first",
+      "second",
+      "outsideDeclarations"
+    ]
+  },
+  "keyAt": [
+    "at"
+  ],
+  "isEmptied": [
+    "key"
+  ],
+  "propertyNameKey": [
+    "prop"
+  ],
+  "declarationIsEqual": [
+    "a",
+    "b"
+  ],
+  "indexOfDeclaration": [
+    "array",
+    "decl"
+  ],
+  "intersect": [
+    "a",
+    "b",
+    "not"
+  ],
+  "sameDeclarationsAndOrder": [
+    "a",
+    "b"
+  ],
+  "hoistingPreservesOverrideOrder": [
+    "candidate",
+    "candidateIndex",
+    "hoistCandidates",
+    "earlierRuleDeclarations"
+  ],
+  "claimMatchInLaterRule": [
+    "candidate",
+    "laterDeclarations",
+    "claimedIndices"
+  ],
+  "filterRuleIntersections": [
+    "hoistCandidates",
+    "earlierRuleDeclarations",
+    "laterRuleDeclarations"
+  ],
+  "isNamedLayerBlock": [
+    "node"
+  ],
+  "isDroppableWhenEmpty": [
+    "node"
+  ],
+  "DroppableBlocks": {
+    "register": [
+      "node"
+    ],
+    "isEmptied": [
+      "node"
+    ],
+    "emptiedBlocks": [],
+    "moved": [
+      "source",
+      "target"
+    ],
+    "changed": [
+      "container",
+      "change"
+    ]
+  },
+  "isCssMixin": [
+    "selector"
+  ],
+  "isHostPseudoClass": [
+    "selector"
+  ],
+  "computeSelectorInfo": [
+    "selector",
+    "browsers"
+  ],
+  "createSelectorLookup": [
+    "browsers",
+    "param"
+  ],
+  "selectorsCompatible": [
+    "selectors",
+    "lookup"
+  ],
+  "isConditionalGroupRule": [
+    "node"
+  ],
+  "isOpaque": [
+    "node"
+  ],
+  "collectDeclarations": [
+    "node"
+  ],
+  "sideKey": [
+    "side",
+    "flowRelative"
+  ],
+  "raise": [
+    "map",
+    "key",
+    "position"
+  ],
+  "SegmentIndex": {
+    "constructor": [],
+    "record": [
+      "param",
+      "position"
+    ],
+    "newest": [
+      "param"
+    ]
+  },
+  "keysOf": [
+    "prop"
+  ],
+  "LastWriteIndex": {
+    "record": [
+      "declaration",
+      "position"
+    ],
+    "recordNode": [
+      "node",
+      "position"
+    ],
+    "lastConflict": [
+      "declaration"
+    ],
+    "conflictsSince": [
+      "declarations",
+      "position"
+    ],
+    "moveWrites": [
+      "declarations",
+      "position"
+    ]
+  },
+  "partialMerge": [
+    "first",
+    "second",
+    "mergeState",
+    "secondLink",
+    "sequence",
+    "outsideDeclarations"
+  ],
+  "mergeMatchingDeclarations": [
+    "first",
+    "second",
+    "mergeState"
+  ],
+  "mergeMatchingSelectors": [
+    "first",
+    "second",
+    "mergeState"
+  ],
+  "mergeSharedDeclarations": [
+    "first",
+    "second",
+    "mergeState",
+    "secondLink",
+    "sequence",
+    "outsideDeclarations"
+  ],
+  "isRuleOrAtRule": [
+    "node"
+  ],
+  "MergeState": {
+    "constructor": [
+      "browsers",
+      "compatibilityCache",
+      "ruleCache",
+      "ruleMeta"
+    ],
+    "meta": [
+      "rule"
+    ],
+    "forget": [
+      "rule"
+    ],
+    "declarationKey": [],
+    "declarationKeysOf": [
+      "rule"
+    ],
+    "markCompatible": [
+      "rule"
+    ],
+    "addSelectors": [
+      "rule",
+      "selectors"
+    ],
+    "absorbEarlier": [
+      "later",
+      "earlier"
+    ],
+    "canMerge": [
+      "ruleA",
+      "ruleB",
+      "parentA",
+      "parentB"
+    ]
+  },
+  "joinKey": [
+    "node",
+    "joinRules",
+    "mergeState"
+  ],
+  "joinNonAdjacent": [
+    "root",
+    "mergeState"
+  ],
+  "joinInParent": [
+    "parent",
+    "mergeState"
+  ],
+  "joinRule": [
+    "earlier",
+    "later",
+    "earlierPosition",
+    "laterPosition"
+  ],
+  "joinBlock": [
+    "earlier",
+    "later",
+    "earlierPosition"
+  ],
+  "vendorUnprefixed": [
+    "prop"
+  ],
+  "lookupProperty": [
+    "candidate"
+  ],
+  "resolveProperty": [
+    "name"
+  ],
+  "longhandsOf": [
+    "name"
+  ],
+  "logicalSideOf": [
+    "longhand"
+  ],
+  "isSameLonghand": [
+    "a",
+    "b"
+  ],
+  "conflictingSegments": [
+    "nameA",
+    "nameB"
+  ],
+  "isConflictingProp": [
+    "propA",
+    "propB"
+  ],
+  "vendorPrefixOf": [
+    "name"
+  ],
+  "isMsInputPlaceholder": [
+    "name"
+  ],
+  "isDeclaration": [
+    "node"
+  ],
+  "RuleMeta": {
+    "constructor": [
+      "selectors",
+      "declarations"
+    ],
+    "selectors": [],
+    "declarations": [],
+    "setDeclarations": [
+      "declarations"
+    ],
+    "declarationKeys": [
+      "keyOf"
+    ],
+    "vendorProfile": [
+      "lookup"
+    ],
+    "selectorText": [],
+    "hasSameSelectors": [
+      "other"
+    ],
+    "addSelectors": [
+      "selectors",
+      "lookup"
+    ],
+    "setSelectors": [
+      "selectors",
+      "vendor"
+    ],
+    "absorbEarlier": [
+      "earlier",
+      "lookup"
+    ]
+  },
+  "getMeta": [
+    "rule",
+    "ruleMeta"
+  ],
+  "getDecls": [
+    "rule"
+  ],
+  "appendDeclarations": [
+    "receiving",
+    "incoming"
+  ],
+  "declarationLength": [
+    "declaration"
+  ],
+  "buildMergedRule": [
+    "first",
+    "second",
+    "claimedEarlierIndices",
+    "claimedIndices",
+    "mergeState",
+    "secondLink",
+    "sequence",
+    "outsideDeclarations"
+  ],
+  "linkAfter": [
+    "previous",
+    "rules",
+    "slot"
+  ],
+  "RuleSequence": {
+    "head": [],
+    "constructor": [
+      "root"
+    ],
+    "declarationBetween": [
+      "first",
+      "second",
+      "outsideDeclarations"
+    ],
+    "moveIntoParent": [
+      "first",
+      "second"
+    ],
+    "replacePair": [
+      "first",
+      "placement"
+    ],
+    "write": []
+  },
+  "collect": [
+    "container"
+  ],
+  "runScan": [
+    "root",
+    "mergeState"
+  ],
+  "mergeBenefit": [
+    "first",
+    "second"
+  ],
+  "pairBenefit": [
+    "first",
+    "second"
+  ],
+  "mergePair": [
+    "sequence",
+    "first",
+    "second"
+  ],
+  "runMerge": [
+    "root",
+    "browsers",
+    "compatibilityCache",
+    "ruleCache",
+    "ruleMeta"
+  ],
+  "trackDelimiters": [
+    "state",
+    "type"
+  ],
+  "trackVendor": [
+    "state",
+    "vendor"
+  ],
+  "isPseudoSupported": [
+    "state",
+    "type",
+    "value",
+    "name",
+    "browsers"
+  ],
+  "isSelectorTokenSupported": [
+    "state",
+    "type",
+    "value",
+    "name",
+    "browsers"
+  ],
+  "scanCompatibility": [
+    "selector",
+    "browsers",
+    "state"
+  ],
+  "selectorsLength": [
+    "selectors"
+  ],
+  "overridesShared": [
+    "nodes",
+    "claimed",
+    "shared"
+  ],
+  "repeatsShared": [
+    "link",
+    "parent",
+    "firstKeys",
+    "sharedIndices",
+    "mergeState"
+  ],
+  "mergesWithAll": [
+    "members",
+    "later",
+    "parent",
+    "mergeState"
+  ],
+  "findGroup": [
+    "first",
+    "second",
+    "claimedEarlierIndices",
+    "claimedIndices",
+    "sharedBytes",
+    "prefixed",
+    "delta",
+    "mergeState",
+    "sequence",
+    "outsideDeclarations"
+  ],
+  "SlotIndex": {
+    "register": [
+      "container",
+      "index",
+      "rule"
+    ],
+    "recordPosition": [
+      "container",
+      "index"
+    ],
+    "positionOf": [
+      "container"
+    ],
+    "slotAt": [
+      "container",
+      "index"
+    ],
+    "length": [
+      "container"
+    ],
+    "childrenOf": [
+      "container",
+      "keepsNode"
+    ],
+    "moveRule": [
+      "rule",
+      "from",
+      "target"
+    ],
+    "substitute": [
+      "slot",
+      "rule",
+      "replacements"
+    ]
+  },
+  "isSupportedCached": [
+    "feature",
+    "browsers"
+  ],
+  "VendorPrefixSummary": {
+    "constructor": [
+      "prefix",
+      "msPlaceholder"
+    ],
+    "of": [
+      "selectors"
+    ],
+    "add": [
+      "selector"
+    ],
+    "concat": [
+      "other"
+    ],
+    "allowsMerge": [
+      "other"
+    ]
+  },
+  "MergeContext": {
+    "lookup": [],
+    "ruleCache": [],
+    "ruleMeta": [],
+    "profiles": [],
+    "declarationIds": [],
+    "constructor": [
+      "browsers",
+      "compatibilityCache",
+      "ruleCache",
+      "ruleMeta"
+    ],
+    "meta": [
+      "rule"
+    ],
+    "canMerge": [
+      "ruleA",
+      "ruleB",
+      "parentA",
+      "parentB"
+    ]
+  }
+}
