@@ -1,0 +1,274 @@
+{
+  "registerInstrumentations": [
+    "options"
+  ],
+  "enableInstrumentations": [
+    "instrumentations",
+    "tracerProvider",
+    "meterProvider",
+    "loggerProvider"
+  ],
+  "disableInstrumentations": [
+    "instrumentations"
+  ],
+  "InstrumentationAbstract": {
+    "_config": [],
+    "_tracer": [],
+    "_meter": [],
+    "_logger": [],
+    "_diag": [],
+    "instrumentationName": [],
+    "instrumentationVersion": [],
+    "constructor": [
+      "instrumentationName",
+      "instrumentationVersion",
+      "config"
+    ],
+    "_wrap": [],
+    "_unwrap": [],
+    "_massWrap": [],
+    "_massUnwrap": [],
+    "meter": [],
+    "setMeterProvider": [
+      "meterProvider"
+    ],
+    "logger": [],
+    "setLoggerProvider": [
+      "loggerProvider"
+    ],
+    "getModuleDefinitions": [],
+    "_updateMetricInstruments": [],
+    "getConfig": [],
+    "setConfig": [
+      "config"
+    ],
+    "setTracerProvider": [
+      "tracerProvider"
+    ],
+    "tracer": [],
+    "_runSpanCustomizationHook": [
+      "hookHandler",
+      "triggerName",
+      "span",
+      "info"
+    ]
+  },
+  "InstrumentationNodeModuleDefinition": {
+    "files": [],
+    "name": [],
+    "supportedVersions": [],
+    "patch": [],
+    "unpatch": [],
+    "constructor": [
+      "name",
+      "supportedVersions",
+      "patch",
+      "unpatch",
+      "files"
+    ]
+  },
+  "InstrumentationNodeModuleFile": {
+    "name": [],
+    "supportedVersions": [],
+    "patch": [],
+    "unpatch": [],
+    "constructor": [
+      "name",
+      "supportedVersions",
+      "patch",
+      "unpatch"
+    ]
+  },
+  "InstrumentationBase": {
+    "_modules": [],
+    "_hooks": [],
+    "_requireInTheMiddleSingleton": [],
+    "_enabled": [],
+    "constructor": [
+      "instrumentationName",
+      "instrumentationVersion",
+      "config"
+    ],
+    "_wrap": [],
+    "_unwrap": [],
+    "_massWrap": [],
+    "_massUnwrap": [],
+    "_warnOnPreloadedModules": [],
+    "_extractPackageVersion": [
+      "baseDir"
+    ],
+    "_onRequire": [
+      "module",
+      "exports",
+      "name",
+      "baseDir"
+    ],
+    "enable": [],
+    "disable": [],
+    "isEnabled": []
+  },
+  "normalize": [
+    "path"
+  ],
+  "ModuleNameTrie": {
+    "_trie": [],
+    "_counter": [],
+    "insert": [
+      "hook"
+    ],
+    "search": [
+      "moduleName",
+      "param"
+    ]
+  },
+  "ModuleNameTrieNode": {
+    "hooks": [],
+    "children": []
+  },
+  "RequireInTheMiddleSingleton": {
+    "_moduleNameTrie": [],
+    "_instance": [],
+    "constructor": [],
+    "_initialize": [],
+    "register": [
+      "moduleName",
+      "onRequire"
+    ],
+    "getInstance": []
+  },
+  "normalizePathSeparators": [
+    "moduleNameOrPath"
+  ],
+  "hookFn": [
+    "exports",
+    "name",
+    "baseDir"
+  ],
+  "onRequire": [
+    "exports",
+    "name",
+    "baseDir"
+  ],
+  "isSupported": [
+    "supportedVersions",
+    "version",
+    "includePrerelease"
+  ],
+  "semconvStabilityFromStr": [
+    "namespace",
+    "str"
+  ],
+  "satisfies": [
+    "version",
+    "range",
+    "options"
+  ],
+  "_validateVersion": [
+    "version"
+  ],
+  "_doSatisfies": [
+    "parsedVersion",
+    "range",
+    "allParsedRanges",
+    "options"
+  ],
+  "_checkRange": [
+    "parsedVersion",
+    "range",
+    "allParsedRanges",
+    "options"
+  ],
+  "_satisfies": [
+    "parsedVersion",
+    "parsedRange"
+  ],
+  "_doPreleaseCheck": [
+    "parsedVersion",
+    "allParsedRanges"
+  ],
+  "_normalizeRange": [
+    "range",
+    "options"
+  ],
+  "isX": [
+    "id"
+  ],
+  "_parseVersion": [
+    "versionString"
+  ],
+  "_parseRange": [
+    "rangeString"
+  ],
+  "_isWildcard": [
+    "s"
+  ],
+  "_parseVersionString": [
+    "v"
+  ],
+  "_normalizeVersionType": [
+    "a",
+    "b"
+  ],
+  "_compareVersionStrings": [
+    "v1",
+    "v2"
+  ],
+  "_compareVersionSegments": [
+    "v1",
+    "v2"
+  ],
+  "replaceTilde": [
+    "comp"
+  ],
+  "replaceCaret": [
+    "comp",
+    "options"
+  ],
+  "replaceXRange": [
+    "comp",
+    "options"
+  ],
+  "replaceHyphen": [
+    "comp",
+    "options"
+  ],
+  "defineProperty": [
+    "obj",
+    "name",
+    "value"
+  ],
+  "wrap": [
+    "nodule",
+    "name",
+    "wrapper"
+  ],
+  "massWrap": [
+    "nodules",
+    "names",
+    "wrapper"
+  ],
+  "unwrap": [
+    "nodule",
+    "name"
+  ],
+  "massUnwrap": [
+    "nodules",
+    "names"
+  ],
+  "shimmer": [
+    "options"
+  ],
+  "safeExecuteInTheMiddle": [
+    "execute",
+    "onFinish",
+    "preventThrowingError"
+  ],
+  "safeExecuteInTheMiddleAsync": [
+    "execute",
+    "onFinish",
+    "preventThrowingError"
+  ],
+  "isWrapped": [
+    "func"
+  ]
+}

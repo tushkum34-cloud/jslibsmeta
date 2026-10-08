@@ -1,0 +1,52 @@
+{
+  "MySQL2Instrumentation": {
+    "constructor": [
+      "param"
+    ],
+    "init": [],
+    "_patchQuery": [
+      "format",
+      "isPrepared"
+    ],
+    "_patchCallbackQuery": [
+      "endSpan"
+    ]
+  },
+  "setFormatFunction": [
+    "moduleExports"
+  ],
+  "patch": [
+    "ConnectionPrototype"
+  ],
+  "unpatch": [
+    "ConnectionPrototype"
+  ],
+  "getConnectionAttributes": [
+    "config"
+  ],
+  "getConfig": [
+    "config"
+  ],
+  "getQueryText": [
+    "query",
+    "format",
+    "values",
+    "param",
+    "param"
+  ],
+  "defaultMaskingHook": [
+    "query"
+  ],
+  "hasValues": [
+    "obj"
+  ],
+  "getSpanName": [
+    "query"
+  ],
+  "once": [
+    "fn"
+  ],
+  "getConnectionPrototypeToInstrument": [
+    "connection"
+  ]
+}
