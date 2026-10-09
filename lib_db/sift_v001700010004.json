@@ -1,0 +1,619 @@
+{
+  "typeChecker": [
+    "type"
+  ],
+  "getClassName": [
+    "value"
+  ],
+  "comparable": [
+    "value"
+  ],
+  "coercePotentiallyNull": [
+    "value"
+  ],
+  "isProperty": [
+    "item",
+    "key"
+  ],
+  "isMissingArrayProperty": [
+    "key",
+    "owner"
+  ],
+  "getIgnoringObjectPrototype": [
+    "obj",
+    "key"
+  ],
+  "isVanillaObject": [
+    "value"
+  ],
+  "equals": [
+    "a",
+    "b"
+  ],
+  "walkKeyPathValues": [
+    "item",
+    "keyPath",
+    "next",
+    "depth",
+    "key",
+    "owner",
+    "param"
+  ],
+  "BaseOperation": {
+    "keep": [],
+    "done": [],
+    "propop": [],
+    "constructor": [
+      "param",
+      "param",
+      "param",
+      "param"
+    ],
+    "init": [],
+    "reset": [],
+    "next": [
+      "item",
+      "key",
+      "parent",
+      "root",
+      "leaf"
+    ]
+  },
+  "GroupOperation": {
+    "keep": [],
+    "done": [],
+    "constructor": [
+      "params",
+      "owneryQuery",
+      "options",
+      "param"
+    ],
+    "reset": [],
+    "next": [
+      "item",
+      "key",
+      "owner",
+      "root"
+    ],
+    "childrenNext": [
+      "item",
+      "key",
+      "owner",
+      "root",
+      "leaf"
+    ]
+  },
+  "NamedGroupOperation": {
+    "propop": [],
+    "constructor": [
+      "params",
+      "owneryQuery",
+      "options",
+      "children",
+      "param"
+    ]
+  },
+  "QueryOperation": {
+    "propop": [],
+    "next": [
+      "item",
+      "key",
+      "parent",
+      "root",
+      "leaf"
+    ]
+  },
+  "NestedOperation": {
+    "propop": [],
+    "constructor": [
+      "param",
+      "params",
+      "owneryQuery",
+      "options",
+      "children"
+    ],
+    "next": [
+      "item",
+      "key",
+      "parent",
+      "root",
+      "leaf"
+    ],
+    "_nextNestedValue": []
+  },
+  "createTester": [
+    "a",
+    "compare"
+  ],
+  "EqualsOperation": {
+    "propop": [],
+    "_test": [],
+    "init": [],
+    "next": [
+      "item",
+      "key",
+      "parent"
+    ]
+  },
+  "createEqualsOperation": [
+    "params",
+    "owneryQuery",
+    "options"
+  ],
+  "numericalOperationCreator": [
+    "createNumericalOperation"
+  ],
+  "numericalOperation": [
+    "createTester"
+  ],
+  "createNamedOperation": [
+    "name",
+    "params",
+    "parentQuery",
+    "options"
+  ],
+  "throwUnsupportedOperation": [
+    "name"
+  ],
+  "containsOperation": [
+    "query",
+    "options"
+  ],
+  "createNestedOperation": [
+    "keyPath",
+    "nestedQuery",
+    "parentKey",
+    "owneryQuery",
+    "options"
+  ],
+  "createQueryOperation": [
+    "query",
+    "param",
+    "param"
+  ],
+  "createQueryOperations": [
+    "query",
+    "parentKey",
+    "options"
+  ],
+  "createOperationTester": [
+    "operation"
+  ],
+  "createQueryTester": [
+    "query",
+    "param"
+  ],
+  "$Ne": {
+    "propop": [],
+    "_test": [],
+    "init": [],
+    "reset": [],
+    "next": [
+      "item",
+      "key",
+      "owner"
+    ]
+  },
+  "$ElemMatch": {
+    "propop": [],
+    "_queryOperation": [],
+    "init": [],
+    "reset": [],
+    "next": [
+      "item",
+      "key",
+      "owner"
+    ]
+  },
+  "$Not": {
+    "propop": [],
+    "_queryOperation": [],
+    "init": [],
+    "reset": [],
+    "next": [
+      "item",
+      "key",
+      "owner",
+      "root",
+      "leaf"
+    ]
+  },
+  "$Size": {
+    "propop": [],
+    "init": [],
+    "next": [
+      "item"
+    ]
+  },
+  "assertGroupNotEmpty": [
+    "values"
+  ],
+  "$Or": {
+    "propop": [],
+    "_ops": [],
+    "init": [],
+    "reset": [],
+    "next": [
+      "item",
+      "key",
+      "owner",
+      "root",
+      "leaf"
+    ]
+  },
+  "$Nor": {
+    "propop": [],
+    "next": [
+      "item",
+      "key",
+      "owner",
+      "root",
+      "leaf"
+    ]
+  },
+  "$In": {
+    "propop": [],
+    "_testers": [],
+    "init": [],
+    "next": [
+      "item",
+      "key",
+      "owner"
+    ]
+  },
+  "$Nin": {
+    "propop": [],
+    "_in": [],
+    "constructor": [
+      "params",
+      "ownerQuery",
+      "options",
+      "name"
+    ],
+    "next": [
+      "item",
+      "key",
+      "owner",
+      "root"
+    ],
+    "reset": []
+  },
+  "$Exists": {
+    "propop": [],
+    "reset": [],
+    "next": [
+      "item",
+      "key",
+      "owner",
+      "root",
+      "leaf"
+    ]
+  },
+  "$And": {
+    "propop": [],
+    "constructor": [
+      "params",
+      "owneryQuery",
+      "options",
+      "name"
+    ],
+    "next": [
+      "item",
+      "key",
+      "owner",
+      "root",
+      "leaf"
+    ]
+  },
+  "$All": {
+    "propop": [],
+    "constructor": [
+      "params",
+      "owneryQuery",
+      "options",
+      "name"
+    ],
+    "next": [
+      "item",
+      "key",
+      "owner",
+      "root",
+      "leaf"
+    ]
+  },
+  "$eq": [
+    "params",
+    "owneryQuery",
+    "options"
+  ],
+  "$ne": [
+    "params",
+    "owneryQuery",
+    "options",
+    "name"
+  ],
+  "$or": [
+    "params",
+    "owneryQuery",
+    "options",
+    "name"
+  ],
+  "$nor": [
+    "params",
+    "owneryQuery",
+    "options",
+    "name"
+  ],
+  "$elemMatch": [
+    "params",
+    "owneryQuery",
+    "options",
+    "name"
+  ],
+  "$nin": [
+    "params",
+    "owneryQuery",
+    "options",
+    "name"
+  ],
+  "$in": [
+    "params",
+    "owneryQuery",
+    "options",
+    "name"
+  ],
+  "$mod": [
+    "param",
+    "owneryQuery",
+    "options"
+  ],
+  "$exists": [
+    "params",
+    "owneryQuery",
+    "options",
+    "name"
+  ],
+  "$regex": [
+    "pattern",
+    "owneryQuery",
+    "options"
+  ],
+  "$not": [
+    "params",
+    "owneryQuery",
+    "options",
+    "name"
+  ],
+  "$type": [
+    "clazz",
+    "owneryQuery",
+    "options"
+  ],
+  "$and": [
+    "params",
+    "ownerQuery",
+    "options",
+    "name"
+  ],
+  "$all": [
+    "params",
+    "ownerQuery",
+    "options",
+    "name"
+  ],
+  "$size": [
+    "params",
+    "ownerQuery",
+    "options"
+  ],
+  "$options": [],
+  "isCSPEnabled": [],
+  "$where": [
+    "params",
+    "ownerQuery",
+    "options"
+  ],
+  "createDefaultQueryOperation": [
+    "query",
+    "ownerQuery",
+    "param"
+  ],
+  "createDefaultQueryTester": [
+    "query",
+    "param"
+  ],
+  "extendStatics": [
+    "d",
+    "b"
+  ],
+  "__extends": [
+    "d",
+    "b"
+  ],
+  "__": [],
+  "t": [
+    "t",
+    "r",
+    "i",
+    "u"
+  ],
+  "r": [
+    "n",
+    "r"
+  ],
+  "i": [
+    "n"
+  ],
+  "u": [
+    "n"
+  ],
+  "e": [
+    "n"
+  ],
+  "s": [
+    "n",
+    "t"
+  ],
+  "h": [
+    "n",
+    "t"
+  ],
+  "a": [
+    "n",
+    "t"
+  ],
+  "l": [
+    "n",
+    "t",
+    "r",
+    "i",
+    "u",
+    "e",
+    "f"
+  ],
+  "n": [
+    "n",
+    "t",
+    "r",
+    "i"
+  ],
+  "y": [
+    "n",
+    "t"
+  ],
+  "j": [
+    "n"
+  ],
+  "O": [
+    "n",
+    "t",
+    "r",
+    "i"
+  ],
+  "m": [
+    "n"
+  ],
+  "g": [
+    "n",
+    "t"
+  ],
+  "E": [
+    "n",
+    "t",
+    "r",
+    "i",
+    "u"
+  ],
+  "x": [
+    "n",
+    "t",
+    "r"
+  ],
+  "_": [
+    "n",
+    "t",
+    "r"
+  ],
+  "A": [
+    "n"
+  ],
+  "T": [
+    "n"
+  ],
+  "R": [
+    "n",
+    "t",
+    "r"
+  ],
+  "I": [
+    "n",
+    "t",
+    "r",
+    "i"
+  ],
+  "J": [
+    "n",
+    "t",
+    "r",
+    "i"
+  ],
+  "U": [
+    "n",
+    "t",
+    "r",
+    "i"
+  ],
+  "G": [
+    "n",
+    "t",
+    "r",
+    "i"
+  ],
+  "H": [
+    "n",
+    "t",
+    "r",
+    "i"
+  ],
+  "K": [
+    "n",
+    "t",
+    "r",
+    "i"
+  ],
+  "X": [
+    "n",
+    "t",
+    "r"
+  ],
+  "Y": [
+    "n",
+    "t",
+    "r",
+    "i"
+  ],
+  "Z": [
+    "n",
+    "t",
+    "r"
+  ],
+  "nn": [
+    "n",
+    "t",
+    "r",
+    "i"
+  ],
+  "rn": [
+    "n",
+    "t",
+    "r"
+  ],
+  "un": [
+    "n",
+    "t",
+    "r",
+    "i"
+  ],
+  "en": [
+    "n",
+    "t",
+    "r",
+    "i"
+  ],
+  "on": [
+    "n",
+    "t",
+    "r"
+  ],
+  "fn": [],
+  "cn": [
+    "n",
+    "t",
+    "r"
+  ],
+  "hn": [
+    "n",
+    "t",
+    "r"
+  ]
+}
