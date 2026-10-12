@@ -1,0 +1,176 @@
+{
+  "getScopesFromContext": [
+    "context"
+  ],
+  "setScopesOnContext": [
+    "context",
+    "scopes"
+  ],
+  "setContextOnScope": [
+    "scope",
+    "context"
+  ],
+  "getContextFromScope": [
+    "scope"
+  ],
+  "TraceState": {
+    "_internalState": [],
+    "set": [
+      "key",
+      "value"
+    ],
+    "unset": [
+      "key"
+    ],
+    "get": [
+      "key"
+    ],
+    "serialize": [],
+    "_clone": []
+  },
+  "makeTraceState": [
+    "param"
+  ],
+  "SentryPropagator": {
+    "inject": [
+      "ctx",
+      "carrier",
+      "setter"
+    ],
+    "extract": [
+      "ctx",
+      "carrier",
+      "getter"
+    ],
+    "fields": []
+  },
+  "getContextWithRemoteActiveSpan": [
+    "ctx",
+    "param"
+  ],
+  "getContextWithRemoteActiveSpanAndScopes": [
+    "ctx",
+    "options"
+  ],
+  "ensureScopesOnContext": [
+    "ctx",
+    "isContinuingTrace"
+  ],
+  "generateRemoteSpanContext": [
+    "param"
+  ],
+  "isTracingSuppressed": [
+    "context"
+  ],
+  "SentryTracer": {
+    "startSpan": [
+      "name",
+      "options",
+      "ctx"
+    ],
+    "startActiveSpan": [
+      "name",
+      "options",
+      "ctx",
+      "fn"
+    ],
+    "_hasParentSpan": [],
+    "_startSentrySpan": [],
+    "_createNonRecordingSpan": []
+  },
+  "withCapturedIsolationScope": [
+    "contextToFork"
+  ],
+  "SentryTracerProvider": {
+    "_tracers": [],
+    "getTracer": [
+      "name",
+      "version",
+      "options"
+    ],
+    "forceFlush": [],
+    "shutdown": []
+  },
+  "withActiveSpan": [
+    "span",
+    "callback"
+  ],
+  "getActiveSpan": [
+    "scope"
+  ],
+  "getSpanFromScope": [
+    "scope"
+  ],
+  "buildContextWithSentryScopes": [
+    "context"
+  ],
+  "SentryAsyncLocalStorageContextManager": {
+    "_asyncLocalStorage": [],
+    "_kOtListeners": [],
+    "_wrapped": [],
+    "constructor": [
+      "asyncLocalStorage"
+    ],
+    "active": [],
+    "with": [
+      "context",
+      "fn",
+      "thisArg",
+      "param"
+    ],
+    "enable": [],
+    "disable": [],
+    "bind": [
+      "context",
+      "target"
+    ],
+    "getAsyncLocalStorageLookup": [],
+    "_bindFunction": [],
+    "_bindEventEmitter": [],
+    "_patchRemoveListener": [],
+    "_patchRemoveAllListeners": [],
+    "_patchAddListener": [],
+    "_createPatchMap": [],
+    "_getPatchMap": []
+  },
+  "contextWrapper": [
+    "param"
+  ],
+  "isEventEmitter": [
+    "target"
+  ],
+  "getMethod": [
+    "ee",
+    "methodName"
+  ],
+  "trySetMethod": [
+    "ee",
+    "methodName",
+    "patched"
+  ],
+  "setOpenTelemetryContextAsyncContextStrategy": [],
+  "getScopes": [],
+  "withScope": [
+    "callback"
+  ],
+  "withSetScope": [
+    "scope",
+    "callback"
+  ],
+  "withIsolationScope": [
+    "callback"
+  ],
+  "withSetIsolationScope": [
+    "isolationScope",
+    "callback"
+  ],
+  "getCurrentScope": [],
+  "getIsolationScope": [],
+  "getTracingChannelBinding": [],
+  "getSamplingDecision": [
+    "spanContext"
+  ],
+  "registerPrepareSpanScope": [
+    "client"
+  ]
+}
