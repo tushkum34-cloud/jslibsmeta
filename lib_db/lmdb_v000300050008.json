@@ -1,0 +1,388 @@
+{
+  "propagateOutput": [
+    "error",
+    "stdout",
+    "stderr"
+  ],
+  "CachingStore": [
+    "Store",
+    "env"
+  ],
+  "abort": [
+    "error"
+  ],
+  "setGetLastVersion": [
+    "get",
+    "getTxnId"
+  ],
+  "Database": {
+    "get": [
+      "id",
+      "options"
+    ],
+    "getEntry": [
+      "id",
+      "options"
+    ],
+    "getBinary": [
+      "id"
+    ],
+    "getBinaryFast": [
+      "id"
+    ],
+    "retain": [
+      "data"
+    ],
+    "prefetch": [
+      "ids",
+      "callback"
+    ],
+    "getMany": [
+      "ids",
+      "callback"
+    ],
+    "getAsync": [
+      "id",
+      "options",
+      "callback"
+    ],
+    "put": [
+      "id",
+      "value",
+      "version",
+      "ifVersion"
+    ],
+    "remove": [
+      "id",
+      "valueToRemove"
+    ],
+    "putSync": [
+      "id",
+      "value",
+      "options"
+    ],
+    "removeSync": [
+      "id",
+      "valueToRemove"
+    ],
+    "getValues": [
+      "key",
+      "options"
+    ],
+    "getValuesCount": [
+      "key",
+      "options"
+    ],
+    "getKeys": [
+      "options"
+    ],
+    "getKeysCount": [
+      "options"
+    ],
+    "getRange": [
+      "options"
+    ],
+    "getCount": [
+      "options"
+    ],
+    "transactionAsync": [
+      "action"
+    ],
+    "transaction": [
+      "action"
+    ],
+    "transactionSync": [
+      "action",
+      "flags"
+    ],
+    "childTransaction": [
+      "action"
+    ],
+    "getWriteTxnId": [],
+    "useReadTransaction": [],
+    "batch": [
+      "action"
+    ],
+    "ifVersion": [
+      "id",
+      "ifVersion",
+      "action"
+    ],
+    "ifNoExists": [
+      "id",
+      "action"
+    ],
+    "doesExist": [
+      "key",
+      "version"
+    ],
+    "deleteDB": [],
+    "drop": [],
+    "dropSync": [],
+    "clear": [],
+    "clearAsync": [],
+    "clearSync": [],
+    "committed": [],
+    "flushed": [],
+    "readerCheck": [],
+    "readerList": [],
+    "getStats": [],
+    "resetReadTxn": [],
+    "backup": [
+      "path",
+      "compact"
+    ],
+    "close": [],
+    "on": [
+      "event",
+      "callback"
+    ]
+  },
+  "RootDatabase": {
+    "openDB": [
+      "dbName",
+      "dbOptions"
+    ]
+  },
+  "DatabaseClass": {
+    "new": [
+      "name",
+      "options"
+    ]
+  },
+  "RangeIterable": {
+    "map": [
+      "callback"
+    ],
+    "flatMap": [
+      "callback"
+    ],
+    "slice": [
+      "start",
+      "end"
+    ],
+    "filter": [
+      "callback"
+    ],
+    "forEach": [
+      "callback"
+    ],
+    "mapError": [
+      "callback"
+    ],
+    "onDone": [],
+    "asArray": []
+  },
+  "Transaction": {
+    "done": []
+  },
+  "Binary": {},
+  "setSpecialWriteValue": [
+    "destArray",
+    "placeholder",
+    "uint32Value"
+  ],
+  "writeUint32Key": [
+    "key",
+    "target",
+    "start"
+  ],
+  "readUint32Key": [
+    "target",
+    "start"
+  ],
+  "writeBufferKey": [
+    "key",
+    "target",
+    "start"
+  ],
+  "readBufferKey": [
+    "target",
+    "start",
+    "end"
+  ],
+  "applyKeyHandling": [
+    "store"
+  ],
+  "allocateSaveBuffer": [],
+  "saveKey": [
+    "key",
+    "writeKey",
+    "saveTo",
+    "maxKeySize",
+    "flags"
+  ],
+  "levelup": [
+    "store"
+  ],
+  "NotFoundError": {
+    "constructor": [
+      "message"
+    ]
+  },
+  "setNativeFunctions": [
+    "externals"
+  ],
+  "setExternals": [
+    "externals"
+  ],
+  "setRequire": [
+    "require"
+  ],
+  "open": [
+    "path",
+    "options"
+  ],
+  "makeCompression": [
+    "compressionOptions"
+  ],
+  "LMDBStore": {
+    "constructor": [
+      "dbName",
+      "dbOptions"
+    ],
+    "openDB": [
+      "dbName",
+      "dbOptions"
+    ],
+    "open": [
+      "dbOptions",
+      "callback"
+    ],
+    "backup": [
+      "path",
+      "compact"
+    ],
+    "isOperational": [],
+    "sync": [
+      "callback"
+    ],
+    "deleteDB": [],
+    "dropSync": [],
+    "clear": [
+      "callback"
+    ],
+    "clearSync": [],
+    "readerCheck": [],
+    "readerList": [],
+    "setupSharedStructures": []
+  },
+  "getStructures": [],
+  "openAsClass": [
+    "path",
+    "options"
+  ],
+  "getLastVersion": [],
+  "setLastVersion": [
+    "version"
+  ],
+  "getLastTxnId": [],
+  "allocateFixedBuffer": [],
+  "exists": [
+    "path"
+  ],
+  "assignConstrainedProperties": [
+    "allowedProperties",
+    "target"
+  ],
+  "addReadMethods": [
+    "LMDBStore",
+    "param"
+  ],
+  "setKeyBytes": [],
+  "resetCursor": [],
+  "position": [
+    "offset"
+  ],
+  "finishCursor": [],
+  "saveReferenceToBuffer": [],
+  "doClose": [],
+  "getMMapBuffer": [
+    "bufferId",
+    "size"
+  ],
+  "renewReadTxn": [
+    "store"
+  ],
+  "resetReadTxn": [],
+  "makeReusableBuffer": [
+    "size"
+  ],
+  "allocateInstructionsBuffer": [],
+  "recordReadInstruction": [
+    "txnAddress",
+    "dbi",
+    "key",
+    "writeKey",
+    "maxKeySize",
+    "callback"
+  ],
+  "when": [
+    "promise",
+    "callback",
+    "errback"
+  ],
+  "addWriteMethods": [
+    "LMDBStore",
+    "param"
+  ],
+  "allocateInstructionBuffer": [
+    "lastPosition"
+  ],
+  "writeInstructions": [
+    "flags",
+    "store",
+    "key",
+    "value",
+    "version",
+    "ifVersion"
+  ],
+  "startWriting": [],
+  "queueCommitResolution": [
+    "resolution"
+  ],
+  "resolveWrites": [
+    "async"
+  ],
+  "resolveCommit": [
+    "async"
+  ],
+  "rejectCommit": [],
+  "atomicStatus": [
+    "uint32",
+    "flagPosition",
+    "newStatus"
+  ],
+  "afterCommit": [
+    "txnId"
+  ],
+  "executeTxnCallbacks": [],
+  "txnError": [
+    "error",
+    "txnCallbacks",
+    "i"
+  ],
+  "finishBatch": [],
+  "clearWriteTxn": [
+    "parentTxn"
+  ],
+  "Batch": {
+    "constructor": [
+      "callback"
+    ],
+    "put": [
+      "key",
+      "value"
+    ],
+    "del": [
+      "key"
+    ],
+    "clear": [],
+    "write": [
+      "callback"
+    ]
+  },
+  "asBinary": [
+    "buffer"
+  ]
+}
