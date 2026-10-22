@@ -1,0 +1,263 @@
+{
+  "FirebaseAppImpl": {
+    "constructor": [
+      "options",
+      "config",
+      "container"
+    ],
+    "automaticDataCollectionEnabled": [
+      "val"
+    ],
+    "name": [],
+    "options": [],
+    "config": [],
+    "container": [],
+    "isDeleted": [
+      "val"
+    ],
+    "checkDestroyed": []
+  },
+  "FirebaseServerAppImpl": {
+    "constructor": [
+      "options",
+      "serverConfig",
+      "name",
+      "container"
+    ],
+    "toJSON": [],
+    "refCount": [],
+    "incRefCount": [
+      "obj"
+    ],
+    "decRefCount": [],
+    "automaticCleanup": [],
+    "settings": [],
+    "checkDestroyed": []
+  },
+  "Provider": {
+    "name": [],
+    "container": [],
+    "component": [],
+    "instances": [],
+    "instancesDeferred": [],
+    "instancesOptions": [],
+    "onInitCallbacks": [],
+    "constructor": [
+      "name",
+      "container"
+    ],
+    "get": [
+      "identifier"
+    ],
+    "getImmediate": [
+      "options"
+    ],
+    "getComponent": [],
+    "setComponent": [
+      "component"
+    ],
+    "clearInstance": [
+      "identifier"
+    ],
+    "delete": [],
+    "isComponentSet": [],
+    "isInitialized": [
+      "identifier"
+    ],
+    "getOptions": [
+      "identifier"
+    ],
+    "initialize": [
+      "opts"
+    ],
+    "onInit": [
+      "callback",
+      "identifier"
+    ],
+    "invokeOnInitCallbacks": [],
+    "getOrInitializeService": [],
+    "normalizeInstanceIdentifier": [],
+    "shouldAutoInitialize": []
+  },
+  "ComponentContainer": {
+    "name": [],
+    "providers": [],
+    "constructor": [
+      "name"
+    ],
+    "addComponent": [
+      "component"
+    ],
+    "addOrOverwriteComponent": [
+      "component"
+    ],
+    "getProvider": [
+      "name"
+    ],
+    "getProviders": []
+  },
+  "Component": {
+    "name": [],
+    "instanceFactory": [],
+    "type": [],
+    "multipleInstances": [],
+    "serviceProps": [],
+    "instantiationMode": [],
+    "onInstanceCreated": [],
+    "constructor": [
+      "name",
+      "instanceFactory",
+      "type"
+    ],
+    "setInstantiationMode": [
+      "mode"
+    ],
+    "setMultipleInstances": [
+      "multipleInstances"
+    ],
+    "setServiceProps": [
+      "props"
+    ],
+    "setInstanceCreatedCallback": [
+      "callback"
+    ]
+  },
+  "FirebaseError": {
+    "code": [],
+    "customData": [],
+    "name": [],
+    "constructor": [
+      "code",
+      "message",
+      "customData"
+    ]
+  },
+  "HeartbeatServiceImpl": {
+    "constructor": [
+      "container"
+    ],
+    "triggerHeartbeat": [],
+    "getHeartbeatsHeader": []
+  },
+  "HeartbeatStorageImpl": {
+    "constructor": [
+      "app"
+    ],
+    "runIndexedDBEnvironmentCheck": [],
+    "read": [],
+    "overwrite": [
+      "heartbeatsObject"
+    ],
+    "add": [
+      "heartbeatsObject"
+    ]
+  },
+  "PlatformLoggerServiceImpl": {
+    "constructor": [
+      "container"
+    ],
+    "getPlatformInfoString": []
+  },
+  "TestService": {
+    "app_": [],
+    "instanceIdentifier": [],
+    "constructor": [
+      "app_",
+      "instanceIdentifier"
+    ],
+    "app": [],
+    "_delete": []
+  },
+  "isVersionServiceProvider": [
+    "provider"
+  ],
+  "_addComponent": [
+    "app",
+    "component"
+  ],
+  "_addOrOverwriteComponent": [
+    "app",
+    "component"
+  ],
+  "_registerComponent": [
+    "component"
+  ],
+  "_getProvider": [
+    "app",
+    "name"
+  ],
+  "_removeServiceInstance": [
+    "app",
+    "name",
+    "param"
+  ],
+  "_isFirebaseApp": [
+    "obj"
+  ],
+  "_isFirebaseServerAppSettings": [
+    "obj"
+  ],
+  "_isFirebaseServerApp": [
+    "obj"
+  ],
+  "_clearComponents": [],
+  "validateTokenTTL": [
+    "base64Token",
+    "tokenName"
+  ],
+  "initializeApp": [
+    "_options",
+    "param"
+  ],
+  "initializeServerApp": [
+    "_options",
+    "param"
+  ],
+  "hashCode": [
+    "s"
+  ],
+  "getApp": [
+    "param"
+  ],
+  "getApps": [],
+  "deleteApp": [
+    "app"
+  ],
+  "registerVersion": [
+    "libraryKeyOrName",
+    "version",
+    "variant"
+  ],
+  "onLog": [
+    "logCallback",
+    "options"
+  ],
+  "setLogLevel": [
+    "logLevel"
+  ],
+  "getDbPromise": [],
+  "readHeartbeatsFromIndexedDB": [
+    "app"
+  ],
+  "writeHeartbeatsToIndexedDB": [
+    "app",
+    "heartbeatObject"
+  ],
+  "computeKey": [
+    "app"
+  ],
+  "getUTCDateString": [],
+  "extractHeartbeatsForHeader": [
+    "heartbeatsCache",
+    "param"
+  ],
+  "countBytes": [
+    "heartbeatsCache"
+  ],
+  "getEarliestHeartbeatIdx": [
+    "heartbeats"
+  ],
+  "registerCoreComponents": [
+    "variant"
+  ]
+}
