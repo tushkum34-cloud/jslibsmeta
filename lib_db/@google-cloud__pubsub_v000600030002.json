@@ -1,0 +1,1141 @@
+{
+  "processAckErrorInfo": [
+    "rpcError"
+  ],
+  "processAckRpcError": [
+    "grpcCode"
+  ],
+  "DebugMessage": {
+    "message": [],
+    "error": [],
+    "constructor": [
+      "message",
+      "error"
+    ]
+  },
+  "ExponentialRetry": {
+    "_items": [],
+    "_backoffMs": [],
+    "_maxBackoffMs": [],
+    "_timer": [],
+    "constructor": [
+      "backoff",
+      "maxBackoff"
+    ],
+    "close": [],
+    "retryLater": [
+      "item",
+      "callback"
+    ],
+    "reset": [
+      "item"
+    ],
+    "randomizeDelta": [
+      "durationMs"
+    ],
+    "doRetries": [],
+    "scheduleRetry": []
+  },
+  "comparator": [
+    "a",
+    "b"
+  ],
+  "Histogram": {
+    "options": [],
+    "data": [],
+    "length": [],
+    "constructor": [
+      "options"
+    ],
+    "add": [
+      "value"
+    ],
+    "percentile": [
+      "percent"
+    ]
+  },
+  "IAM": {
+    "pubsub": [],
+    "request": [],
+    "nameable_": [],
+    "constructor": [
+      "pubsub",
+      "nameOrNameable"
+    ],
+    "id": [],
+    "getPolicy": [
+      "optsOrCallback",
+      "callback"
+    ],
+    "setPolicy": [
+      "policy",
+      "optsOrCallback",
+      "callback"
+    ],
+    "testPermissions": [
+      "permissions",
+      "optsOrCallback",
+      "callback"
+    ]
+  },
+  "LeaseManager": {
+    "bytes": [],
+    "_isLeasing": [],
+    "_messages": [],
+    "_options": [],
+    "_pending": [],
+    "_subscriber": [],
+    "_timer": [],
+    "constructor": [
+      "sub",
+      "param"
+    ],
+    "pending": [],
+    "size": [],
+    "add": [
+      "message"
+    ],
+    "clear": [],
+    "isFull": [],
+    "isEmpty": [],
+    "remove": [
+      "message"
+    ],
+    "setOptions": [
+      "options"
+    ],
+    "_cancelExtension": [],
+    "_dispense": [
+      "message"
+    ],
+    "_extendDeadlines": [],
+    "_getNextExtensionTimeoutMs": [],
+    "_scheduleExtension": []
+  },
+  "BatchError": {
+    "ackIds": [],
+    "code": [],
+    "details": [],
+    "constructor": [
+      "err",
+      "ackIds",
+      "rpc"
+    ]
+  },
+  "MessageQueue": {
+    "batchOptions": [],
+    "publisher": [],
+    "pending": [],
+    "constructor": [
+      "publisher"
+    ],
+    "updateOptions": [],
+    "logBatch": [
+      "reason",
+      "length",
+      "bytes"
+    ],
+    "_publish": [
+      "messages",
+      "callbacks",
+      "bytes",
+      "reason"
+    ]
+  },
+  "AckQueue": {
+    "getType": [],
+    "_sendBatch": [
+      "batch"
+    ]
+  },
+  "ModAckQueue": {
+    "getType": [],
+    "_sendBatch": [
+      "batch"
+    ],
+    "shouldFailEarly": [
+      "message"
+    ]
+  },
+  "StatusError": {
+    "code": [],
+    "details": [],
+    "metadata": [],
+    "constructor": [
+      "status"
+    ]
+  },
+  "ChannelError": {
+    "code": [],
+    "details": [],
+    "metadata": [],
+    "constructor": [
+      "err"
+    ]
+  },
+  "MessageStream": {
+    "_keepAliveHandle": [],
+    "_options": [],
+    "_paused": [],
+    "_retrier": [],
+    "_streams": [],
+    "_subscriber": [],
+    "constructor": [
+      "sub",
+      "param"
+    ],
+    "start": [],
+    "pause": [],
+    "resume": [],
+    "setStreamAckDeadline": [
+      "deadline"
+    ],
+    "_destroy": [
+      "error",
+      "callback"
+    ],
+    "_replaceStream": [
+      "index",
+      "stream",
+      "reason"
+    ],
+    "_onData": [
+      "index",
+      "data"
+    ],
+    "_clearAliveTimer": [
+      "tracker"
+    ],
+    "_checkAliveTimer": [
+      "index"
+    ],
+    "_setAliveTimer": [
+      "index"
+    ],
+    "_fillStreamPool": [],
+    "_fillOne": [
+      "index",
+      "client",
+      "reason"
+    ],
+    "_getClient": [],
+    "_keepAlive": [],
+    "_activeStreams": [],
+    "_onEnd": [
+      "index",
+      "status"
+    ],
+    "_onError": [
+      "index",
+      "err"
+    ],
+    "_onStatus": [
+      "index",
+      "status"
+    ],
+    "_removeStream": [
+      "index",
+      "reason",
+      "whatNext"
+    ],
+    "_setHighWaterMark": [
+      "stream"
+    ],
+    "_waitForClientReady": [
+      "client"
+    ]
+  },
+  "FlowControl": {
+    "options": [],
+    "bytes": [],
+    "messages": [],
+    "requests": [],
+    "constructor": [
+      "options"
+    ],
+    "setOptions": [
+      "options"
+    ],
+    "currentByteCount": [],
+    "currentMessageCount": [],
+    "addToCount": [
+      "bytes",
+      "messages"
+    ],
+    "willSend": [
+      "bytes",
+      "messages"
+    ],
+    "sent": [
+      "bytes",
+      "messages"
+    ],
+    "exceeded": [],
+    "wouldExceed": [
+      "bytes",
+      "messages"
+    ]
+  },
+  "FlowControlledPublisher": {
+    "publisher": [],
+    "flowControl": [],
+    "idPromises": [],
+    "constructor": [
+      "publisher"
+    ],
+    "wouldExceed": [
+      "message"
+    ],
+    "publish": [
+      "message"
+    ],
+    "publishNow": [
+      "message"
+    ],
+    "doPublish": [
+      "message"
+    ],
+    "all": []
+  },
+  "doPublish": [],
+  "publishDone": [
+    "id"
+  ],
+  "Publisher": {
+    "topic": [],
+    "settings": [],
+    "queue": [],
+    "orderedQueues": [],
+    "flowControl": [],
+    "constructor": [
+      "topic",
+      "options"
+    ],
+    "flush": [
+      "callback"
+    ],
+    "publish": [
+      "data",
+      "attrsOrCb",
+      "callback"
+    ],
+    "publishMessage": [
+      "message",
+      "callback"
+    ],
+    "resumePublishing": [
+      "key"
+    ],
+    "getOptionDefaults": [],
+    "setOptions": [
+      "param"
+    ],
+    "getParentSpan": [
+      "message",
+      "caller"
+    ]
+  },
+  "flushResolver": [],
+  "MessageBatch": {
+    "options": [],
+    "topicName": [],
+    "messages": [],
+    "callbacks": [],
+    "created": [],
+    "bytes": [],
+    "constructor": [
+      "options",
+      "topicName"
+    ],
+    "setOptions": [
+      "options"
+    ],
+    "add": [
+      "message",
+      "callback"
+    ],
+    "end": [],
+    "canFit": [
+      "message"
+    ],
+    "canFitCount": [],
+    "canFitSize": [
+      "message"
+    ],
+    "isAtMax": [],
+    "isFull": [],
+    "isFullMessages": [],
+    "isFullSize": []
+  },
+  "Queue": {
+    "batch": [],
+    "constructor": [
+      "publisher"
+    ],
+    "updateOptions": [],
+    "add": [
+      "message",
+      "callback"
+    ],
+    "publishDrain": [],
+    "publish": [
+      "reason"
+    ],
+    "_publishInternal": [
+      "fullyDrain",
+      "reason"
+    ]
+  },
+  "OrderedQueue": {
+    "batches": [],
+    "inFlight": [],
+    "error": [],
+    "key": [],
+    "constructor": [
+      "publisher",
+      "key"
+    ],
+    "updateOptions": [],
+    "currentBatch": [],
+    "add": [
+      "message",
+      "callback"
+    ],
+    "beginNextPublish": [],
+    "createBatch": [],
+    "handlePublishFailure": [
+      "err"
+    ],
+    "publish": [
+      "reason"
+    ],
+    "publishDrain": [],
+    "resumePublishing": []
+  },
+  "PublishError": {
+    "code": [],
+    "details": [],
+    "metadata": [],
+    "orderingKey": [],
+    "error": [],
+    "constructor": [
+      "key",
+      "err"
+    ]
+  },
+  "filterMessage": [
+    "message"
+  ],
+  "calculateMessageSize": [
+    "message"
+  ],
+  "PubSub": {
+    "options": [],
+    "isEmulator": [],
+    "api": [],
+    "auth": [],
+    "projectId": [],
+    "name": [],
+    "Promise": [],
+    "getSubscriptionsStream": [],
+    "getSnapshotsStream": [],
+    "getTopicsStream": [],
+    "isOpen": [],
+    "schemaClient": [],
+    "constructor": [
+      "options"
+    ],
+    "isIdResolved": [],
+    "close": [
+      "callback"
+    ],
+    "createSchema": [
+      "schemaId",
+      "type",
+      "definition",
+      "gaxOpts"
+    ],
+    "createSubscription": [
+      "topic",
+      "name",
+      "optionsOrCallback",
+      "callback"
+    ],
+    "createTopic": [
+      "name",
+      "optsOrCallback",
+      "callback"
+    ],
+    "detachSubscription": [
+      "name",
+      "optsOrCallback",
+      "callback"
+    ],
+    "determineBaseUrl_": [],
+    "listSchemas": [
+      "param",
+      "options"
+    ],
+    "getSnapshots": [
+      "optsOrCallback",
+      "callback"
+    ],
+    "getSubscriptions": [
+      "optsOrCallback",
+      "callback"
+    ],
+    "getTopics": [
+      "optsOrCallback",
+      "callback"
+    ],
+    "getClientConfig": [],
+    "syncGapicJwt_": [],
+    "getSchemaClient": [],
+    "getClient_": [
+      "config",
+      "callback"
+    ],
+    "getClientAsync_": [
+      "config"
+    ],
+    "closeAllClients_": [],
+    "request": [
+      "config",
+      "callback"
+    ],
+    "schema": [
+      "idOrName"
+    ],
+    "snapshot": [
+      "name"
+    ],
+    "subscription": [
+      "name",
+      "options"
+    ],
+    "topic": [
+      "name",
+      "options"
+    ],
+    "validateSchema": [
+      "schema",
+      "gaxOpts"
+    ],
+    "formatName_": [
+      "name"
+    ]
+  },
+  "PullRetry": {
+    "retry": [
+      "err"
+    ],
+    "resetFailures": [
+      "err"
+    ]
+  },
+  "Schema": {
+    "id": [],
+    "name_": [],
+    "pubsub": [],
+    "constructor": [
+      "pubsub",
+      "idOrName"
+    ],
+    "getName": [],
+    "create": [
+      "type",
+      "definition",
+      "gaxOpts"
+    ],
+    "get": [
+      "param",
+      "gaxOpts"
+    ],
+    "delete": [
+      "gaxOpts"
+    ],
+    "validateMessage": [
+      "message",
+      "encoding",
+      "gaxOpts"
+    ],
+    "formatName_": [
+      "projectId",
+      "nameOrId"
+    ],
+    "metadataFromMessage": [
+      "attributes"
+    ]
+  },
+  "Snapshot": {
+    "parent": [],
+    "name": [],
+    "metadata": [],
+    "constructor": [
+      "parent",
+      "name"
+    ],
+    "delete": [
+      "callback"
+    ],
+    "formatName_": [
+      "projectId",
+      "name"
+    ],
+    "create": [
+      "optsOrCallback",
+      "callback"
+    ],
+    "seek": [
+      "gaxOpts",
+      "callback"
+    ]
+  },
+  "AckError": {
+    "errorCode": [],
+    "constructor": [
+      "errorCode",
+      "message"
+    ]
+  },
+  "SubscriberSpans": {
+    "parent": [],
+    "constructor": [
+      "parent"
+    ],
+    "flowStart": [],
+    "flowEnd": [],
+    "ackStart": [],
+    "ackEnd": [],
+    "ackCall": [],
+    "nackStart": [],
+    "nackEnd": [],
+    "nackCall": [],
+    "modAckStart": [
+      "deadline",
+      "isInitial"
+    ],
+    "modAckEnd": [],
+    "modAckCall": [
+      "deadline"
+    ],
+    "schedulerStart": [],
+    "schedulerEnd": [],
+    "processingStart": [
+      "subName"
+    ],
+    "processingEnd": [],
+    "shutdown": [],
+    "flow": [],
+    "scheduler": [],
+    "processing": []
+  },
+  "Message": {
+    "ackId": [],
+    "attributes": [],
+    "data": [],
+    "deliveryAttempt": [],
+    "id": [],
+    "orderingKey": [],
+    "publishTime": [],
+    "received": [],
+    "_handledPromise": [],
+    "_handled": [],
+    "_length": [],
+    "_subscriber": [],
+    "_ackFailed": [],
+    "_dispatched": [],
+    "parentSpan": [],
+    "isExactlyOnceDelivery": [],
+    "endParentSpan": [],
+    "subSpans": [],
+    "constructor": [
+      "sub",
+      "param"
+    ],
+    "length": [],
+    "handledPromise": [],
+    "dispatched": [],
+    "isDispatched": [],
+    "ackFailed": [
+      "error"
+    ],
+    "ack": [],
+    "ackWithResponse": [],
+    "modAck": [
+      "deadline"
+    ],
+    "modAckWithResponse": [
+      "deadline"
+    ],
+    "nack": [],
+    "nackWithResponse": []
+  },
+  "Subscriber": {
+    "ackDeadline": [],
+    "maxMessages": [],
+    "maxBytes": [],
+    "useLegacyFlowControl": [],
+    "isOpen": [],
+    "maxExtensionTime": [],
+    "_acks": [],
+    "_histogram": [],
+    "_inventory": [],
+    "_latencies": [],
+    "_modAcks": [],
+    "_name": [],
+    "_options": [],
+    "_stream": [],
+    "_subscription": [],
+    "_99th": [],
+    "subscriptionProperties": [],
+    "constructor": [
+      "subscription",
+      "param"
+    ],
+    "updateAckDeadline": [
+      "ackTimeSeconds"
+    ],
+    "getMinMaxDeadlines": [],
+    "isExactlyOnceDelivery": [],
+    "setSubscriptionProperties": [
+      "subscriptionProperties"
+    ],
+    "modAckLatency": [],
+    "name": [],
+    "ack": [
+      "message"
+    ],
+    "ackWithResponse": [
+      "message"
+    ],
+    "close": [],
+    "getClient": [],
+    "modAck": [
+      "message",
+      "deadline"
+    ],
+    "modAckWithResponse": [
+      "message",
+      "deadline"
+    ],
+    "nack": [
+      "message"
+    ],
+    "nackWithResponse": [
+      "message"
+    ],
+    "open": [],
+    "setOptions": [
+      "options"
+    ],
+    "getOptions": [],
+    "createParentSpan": [
+      "message"
+    ],
+    "_onData": [
+      "response"
+    ],
+    "_discardMessage": [
+      "message"
+    ],
+    "_waitForFlush": []
+  },
+  "Subscription": {
+    "pubsub": [],
+    "iam": [],
+    "topic": [],
+    "metadata": [],
+    "request": [],
+    "_subscriber": [],
+    "constructor": [
+      "pubsub",
+      "name",
+      "options"
+    ],
+    "id_": [],
+    "name": [],
+    "isOpen": [],
+    "projectId": [],
+    "close": [
+      "callback"
+    ],
+    "create": [
+      "optsOrCallback",
+      "callback"
+    ],
+    "createSnapshot": [
+      "name",
+      "optsOrCallback",
+      "callback"
+    ],
+    "delete": [
+      "optsOrCallback",
+      "callback"
+    ],
+    "detached": [
+      "callback"
+    ],
+    "exists": [
+      "callback"
+    ],
+    "get": [
+      "optsOrCallback",
+      "callback"
+    ],
+    "getMetadata": [
+      "optsOrCallback",
+      "callback"
+    ],
+    "modifyPushConfig": [
+      "config",
+      "optsOrCallback",
+      "callback"
+    ],
+    "open": [],
+    "seek": [
+      "snapshot",
+      "optsOrCallback",
+      "callback"
+    ],
+    "setMetadata": [
+      "metadata",
+      "optsOrCallback",
+      "callback"
+    ],
+    "setOptions": [
+      "options"
+    ],
+    "snapshot": [
+      "name"
+    ],
+    "_listen": [],
+    "formatMetadata_": [
+      "metadata"
+    ],
+    "formatName_": [
+      "projectId",
+      "name"
+    ]
+  },
+  "getTracer": [],
+  "setGloballyEnabled": [
+    "enabled"
+  ],
+  "isEnabled": [],
+  "PubsubMessageGetSet": {
+    "keyPrefix": [],
+    "keys": [
+      "carrier"
+    ],
+    "attributeName": [
+      "key"
+    ]
+  },
+  "PubsubMessageGet": {
+    "get": [
+      "carrier",
+      "key"
+    ]
+  },
+  "PubsubMessageSet": {
+    "set": [
+      "carrier",
+      "key",
+      "value"
+    ]
+  },
+  "spanContextToContext": [
+    "parent"
+  ],
+  "getSubscriptionInfo": [
+    "fullName"
+  ],
+  "getTopicInfo": [
+    "fullName"
+  ],
+  "isSampled": [
+    "span"
+  ],
+  "PubsubSpans": {
+    "createAttributes": [
+      "params",
+      "message",
+      "caller",
+      "operation"
+    ],
+    "createPublisherSpan": [
+      "message",
+      "topicName",
+      "caller"
+    ],
+    "updatePublisherTopicName": [
+      "span",
+      "topicName"
+    ],
+    "createReceiveSpan": [
+      "message",
+      "subName",
+      "parent",
+      "caller"
+    ],
+    "createChildSpan": [
+      "name",
+      "message",
+      "parentSpan",
+      "attributes"
+    ],
+    "createPublishFlowSpan": [
+      "message"
+    ],
+    "createPublishSchedulerSpan": [
+      "message"
+    ],
+    "createPublishRpcSpan": [
+      "messages",
+      "topicName",
+      "caller"
+    ],
+    "createAckRpcSpan": [
+      "messageSpans",
+      "subName",
+      "caller"
+    ],
+    "createModackRpcSpan": [
+      "messageSpans",
+      "subName",
+      "type",
+      "caller",
+      "deadline",
+      "isInitial"
+    ],
+    "createReceiveFlowSpan": [
+      "message"
+    ],
+    "createReceiveSchedulerSpan": [
+      "message"
+    ],
+    "createReceiveProcessSpan": [
+      "message",
+      "subName"
+    ],
+    "setReceiveProcessResult": [
+      "span",
+      "isAck"
+    ]
+  },
+  "PubsubEvents": {
+    "addEvent": [
+      "text",
+      "message",
+      "attributes"
+    ],
+    "publishStart": [
+      "message"
+    ],
+    "publishEnd": [
+      "message"
+    ],
+    "ackStart": [
+      "message"
+    ],
+    "ackEnd": [
+      "message"
+    ],
+    "modackStart": [
+      "message"
+    ],
+    "modackEnd": [
+      "message"
+    ],
+    "nackStart": [
+      "message"
+    ],
+    "nackEnd": [
+      "message"
+    ],
+    "ackCalled": [
+      "span"
+    ],
+    "nackCalled": [
+      "span"
+    ],
+    "modAckCalled": [
+      "span",
+      "deadline"
+    ],
+    "modAckStart": [
+      "message",
+      "deadline",
+      "isInitial"
+    ],
+    "modAckEnd": [
+      "message"
+    ],
+    "shutdown": [
+      "message"
+    ]
+  },
+  "injectSpan": [
+    "span",
+    "message"
+  ],
+  "containsSpanContext": [
+    "message"
+  ],
+  "extractSpan": [
+    "message",
+    "subName"
+  ],
+  "Duration": {
+    "millis": [],
+    "secondInMillis": [],
+    "minuteInMillis": [],
+    "hourInMillis": [],
+    "constructor": [
+      "millis"
+    ],
+    "totalOf": [
+      "totalOf"
+    ],
+    "total": [
+      "totalOf"
+    ],
+    "hours": [],
+    "minutes": [],
+    "seconds": [],
+    "milliseconds": [],
+    "add": [
+      "other"
+    ],
+    "subtract": [
+      "other"
+    ],
+    "from": [
+      "durationLike"
+    ],
+    "compare": [
+      "first",
+      "second"
+    ]
+  },
+  "isDurationObject": [
+    "value"
+  ],
+  "atLeast": [
+    "d",
+    "min"
+  ],
+  "atMost": [
+    "d",
+    "max"
+  ],
+  "Topic": {
+    "parent": [],
+    "pubsub": [],
+    "request": [],
+    "iam": [],
+    "metadata": [],
+    "publisher": [],
+    "getSubscriptionsStream": [],
+    "constructor": [
+      "pubsub",
+      "name",
+      "options"
+    ],
+    "id_": [],
+    "name": [],
+    "flush": [
+      "callback"
+    ],
+    "create": [
+      "optsOrCallback",
+      "callback"
+    ],
+    "createSubscription": [
+      "name",
+      "optsOrCallback",
+      "callback"
+    ],
+    "delete": [
+      "optsOrCallback",
+      "callback"
+    ],
+    "exists": [
+      "callback"
+    ],
+    "get": [
+      "optsOrCallback",
+      "callback"
+    ],
+    "getMetadata": [
+      "optsOrCallback",
+      "callback"
+    ],
+    "getSubscriptions": [
+      "optsOrCallback",
+      "callback"
+    ],
+    "publish": [
+      "data",
+      "attrsOrCb",
+      "callback"
+    ],
+    "publishJSON": [
+      "json",
+      "attrsOrCb",
+      "callback"
+    ],
+    "publishMessage": [
+      "message",
+      "callback"
+    ],
+    "flowControlled": [],
+    "resumePublishing": [
+      "orderingKey"
+    ],
+    "setMetadata": [
+      "options",
+      "optsOrCallback",
+      "callback"
+    ],
+    "setPublishOptions": [
+      "options"
+    ],
+    "getPublishOptionDefaults": [],
+    "subscription": [
+      "name",
+      "options"
+    ],
+    "formatName_": [
+      "projectId",
+      "name"
+    ]
+  },
+  "Throttler": {
+    "minMillis": [],
+    "lastTime": [],
+    "constructor": [
+      "minMillis"
+    ],
+    "doMaybe": [
+      "task"
+    ]
+  },
+  "promisifySome": [
+    "class_",
+    "classProto",
+    "methods",
+    "options"
+  ],
+  "noop": [],
+  "addToBucket": [
+    "map",
+    "bucket",
+    "item"
+  ],
+  "awaitWithTimeout": [
+    "promise",
+    "timeout"
+  ]
+}
