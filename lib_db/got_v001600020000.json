@@ -1,0 +1,1374 @@
+{
+  "validateWithSchema": [
+    "value",
+    "schema"
+  ],
+  "asPromise": [
+    "firstRequest"
+  ],
+  "makeRequest": [
+    "url",
+    "options",
+    "defaultOptions",
+    "isStream"
+  ],
+  "setResponse": [
+    "response"
+  ],
+  "resolveWithResponse": [
+    "response"
+  ],
+  "onError": [
+    "error"
+  ],
+  "shortcut": [
+    "promiseToAwait",
+    "responseType",
+    "schema"
+  ],
+  "calculateRetryDelay": [
+    "param"
+  ],
+  "generateRequestId": [],
+  "publishToChannel": [
+    "channel",
+    "message"
+  ],
+  "publishRequestCreate": [
+    "message"
+  ],
+  "publishRequestStart": [
+    "message"
+  ],
+  "publishResponseStart": [
+    "message"
+  ],
+  "publishResponseEnd": [
+    "message"
+  ],
+  "publishRetry": [
+    "message"
+  ],
+  "publishError": [
+    "message"
+  ],
+  "publishRedirect": [
+    "message"
+  ],
+  "RequestError": {
+    "name": [],
+    "code": [],
+    "input": [],
+    "stack": [],
+    "response": [],
+    "request": [],
+    "timings": [],
+    "constructor": [
+      "message",
+      "error",
+      "self",
+      "response"
+    ]
+  },
+  "MaxRedirectsError": {
+    "name": [],
+    "code": [],
+    "constructor": [
+      "request"
+    ]
+  },
+  "HTTPError": {
+    "name": [],
+    "code": [],
+    "constructor": [
+      "response"
+    ]
+  },
+  "CacheError": {
+    "name": [],
+    "code": [],
+    "constructor": [
+      "error",
+      "request"
+    ]
+  },
+  "UploadError": {
+    "name": [],
+    "code": [],
+    "constructor": [
+      "error",
+      "request"
+    ]
+  },
+  "TimeoutError": {
+    "name": [],
+    "code": [],
+    "event": [],
+    "constructor": [
+      "threshold",
+      "event"
+    ]
+  },
+  "ReadError": {
+    "name": [],
+    "code": [],
+    "constructor": [
+      "error",
+      "request"
+    ]
+  },
+  "RetryError": {
+    "name": [],
+    "code": [],
+    "constructor": [
+      "request"
+    ]
+  },
+  "AbortError": {
+    "name": [],
+    "code": [],
+    "constructor": [
+      "request"
+    ]
+  },
+  "SchemaValidationError": {
+    "name": [],
+    "issues": [],
+    "constructor": [
+      "issues"
+    ]
+  },
+  "normalizeError": [
+    "error"
+  ],
+  "isRequest": [
+    "x"
+  ],
+  "frameStart": [
+    "stack",
+    "message"
+  ],
+  "Request": {
+    "_noPipe": [],
+    "options": [],
+    "response": [],
+    "requestUrl": [],
+    "redirectUrls": [],
+    "retryCount": [],
+    "_stopReading": [],
+    "_stopRetry": [],
+    "_downloadedSize": [],
+    "_uploadedSize": [],
+    "_pipedServerResponses": [],
+    "_request": [],
+    "_responseSize": [],
+    "_bodySize": [],
+    "_nativeFormDataBody": [],
+    "_activeWebBodyReader": [],
+    "_unproxyEvents": [],
+    "_triggerRead": [],
+    "_jobs": [],
+    "_cancelTimeouts": [],
+    "_abortListenerDisposer": [],
+    "_flushed": [],
+    "_startedAt": [],
+    "_requestTimeout": [],
+    "_dispatchedBody": [],
+    "_aborted": [],
+    "_retrying": [],
+    "_expectedContentLength": [],
+    "_compressedBytesCount": [],
+    "_skipRequestEndInFinal": [],
+    "_dispatchingOwnBody": [],
+    "_hasWrittenBody": [],
+    "_hasWritableBody": [],
+    "_discardBodyWrites": [],
+    "_incrementalDecode": [],
+    "_requestId": [],
+    "_requestInitialized": [],
+    "constructor": [
+      "url",
+      "options",
+      "defaults",
+      "retrySource"
+    ],
+    "flush": [],
+    "_beforeError": [
+      "thrown"
+    ],
+    "_read": [],
+    "write": [
+      "chunk",
+      "encoding",
+      "callback"
+    ],
+    "_write": [
+      "chunk",
+      "encoding",
+      "callback"
+    ],
+    "_final": [
+      "callback"
+    ],
+    "_destroy": [
+      "error",
+      "callback"
+    ],
+    "pipe": [
+      "destination",
+      "options"
+    ],
+    "unpipe": [
+      "destination"
+    ],
+    "_closePipedServerResponses": [],
+    "_attachAbortListener": [],
+    "_createTimeoutError": [
+      "error"
+    ],
+    "_destroyInFlightAlpnSocket": [],
+    "_shouldIncrementallyDecodeBody": [],
+    "_checkContentLengthMismatch": [],
+    "_serializeFormDataBody": [
+      "options",
+      "contentTypeChanged"
+    ],
+    "_finalizeBody": [],
+    "_onResponseBase": [
+      "response"
+    ],
+    "_setRawBody": [
+      "param"
+    ],
+    "_onResponse": [
+      "response"
+    ],
+    "_onRequest": [
+      "request",
+      "useCache"
+    ],
+    "_isRequestStale": [
+      "request"
+    ],
+    "_cancelActiveWebBodyReader": [
+      "body"
+    ],
+    "_iterateWebBody": [
+      "body"
+    ],
+    "_iterateBody": [
+      "body"
+    ],
+    "_asyncWrite": [
+      "chunk",
+      "param"
+    ],
+    "_sendBody": [],
+    "_writeBodyInChunks": [
+      "buffer",
+      "currentRequest"
+    ],
+    "_finalizeStaleChunkedWrite": [
+      "request",
+      "isInitialRequest"
+    ],
+    "_emitUploadComplete": [
+      "request"
+    ],
+    "_endWritableRequest": [
+      "request"
+    ],
+    "_stripCrossOriginState": [
+      "options",
+      "urlToClear"
+    ],
+    "_stripUnchangedCrossOriginState": [
+      "options",
+      "urlToClear",
+      "state"
+    ],
+    "_methodCanHaveBody": [],
+    "_canWriteBody": [],
+    "_hasBodyForRedirect": [
+      "options"
+    ],
+    "_hasUnchangedBodyForRedirect": [
+      "options",
+      "state",
+      "changedState"
+    ],
+    "_assertMethodCanHaveBody": [
+      "options",
+      "changedState"
+    ],
+    "_refreshBodySize": [
+      "options"
+    ],
+    "_dropBody": [
+      "updatedOptions"
+    ],
+    "_reserializeFormDataBody": [
+      "options",
+      "contentTypeChanged"
+    ],
+    "_destroyBody": [
+      "body"
+    ],
+    "_onBodyError": [],
+    "_writeChunksToRequest": [
+      "buffer",
+      "request"
+    ],
+    "_prepareCache": [
+      "cache"
+    ],
+    "_createCacheableRequest": [
+      "url",
+      "options"
+    ],
+    "_checkRequestTimeout": [
+      "param"
+    ],
+    "_expireRequestTimeout": [
+      "budget"
+    ],
+    "_makeRequest": [],
+    "_error": [
+      "error"
+    ],
+    "_writeRequest": [
+      "chunk",
+      "encoding",
+      "callback",
+      "param"
+    ],
+    "ip": [],
+    "isAborted": [],
+    "socket": [],
+    "downloadProgress": [],
+    "uploadProgress": [],
+    "timings": [],
+    "isFromCache": [],
+    "reusedSocket": [],
+    "isReadonly": []
+  },
+  "noop": [],
+  "isPipedServerResponse": [
+    "destination"
+  ],
+  "destroyRequestResult": [
+    "result"
+  ],
+  "createPreRequestErrorTimings": [],
+  "serializeNativeFormDataBody": [
+    "form"
+  ],
+  "isTransientWriteError": [
+    "error"
+  ],
+  "getConnectionListedHeaders": [
+    "headers"
+  ],
+  "getSanitizedUrl": [
+    "options"
+  ],
+  "methodCanHaveBody": [
+    "options"
+  ],
+  "makeProgress": [
+    "transferred",
+    "total"
+  ],
+  "parseContentLength": [
+    "value"
+  ],
+  "hasBodyOption": [
+    "options"
+  ],
+  "isIterableBody": [
+    "body"
+  ],
+  "hasResponse": [
+    "request"
+  ],
+  "toRequestError": [
+    "thrown",
+    "request"
+  ],
+  "createServerAbortedError": [
+    "request"
+  ],
+  "write": [],
+  "endRequest": [],
+  "abort": [],
+  "prepareResponse": [
+    "response"
+  ],
+  "handleResponseEnd": [],
+  "emitRequestError": [
+    "error"
+  ],
+  "isBodySuperseded": [],
+  "finalizeIfStale": [],
+  "isStale": [],
+  "fix": [],
+  "shouldDeleteGeneratedHeader": [
+    "currentHeader",
+    "generatedHeader"
+  ],
+  "syncGeneratedHeader": [
+    "name",
+    "param"
+  ],
+  "getAuthorizationHeader": [
+    "username",
+    "password",
+    "isExplicitlyOmitted"
+  ],
+  "sanitizeHeaders": [],
+  "getCookieHeader": [
+    "cookieJar"
+  ],
+  "isHeaderExplicitlyOmitted": [
+    "header"
+  ],
+  "Options": {
+    "constructor": [
+      "input",
+      "options",
+      "defaults"
+    ],
+    "merge": [
+      "options"
+    ],
+    "request": [
+      "value"
+    ],
+    "agent": [
+      "value"
+    ],
+    "h2session": [
+      "value"
+    ],
+    "decompress": [
+      "value"
+    ],
+    "timeout": [
+      "value"
+    ],
+    "prefixUrl": [
+      "value"
+    ],
+    "body": [
+      "value"
+    ],
+    "form": [
+      "value"
+    ],
+    "json": [
+      "value"
+    ],
+    "url": [
+      "value"
+    ],
+    "cookieJar": [
+      "value"
+    ],
+    "signal": [
+      "value"
+    ],
+    "ignoreInvalidCookies": [
+      "value"
+    ],
+    "searchParams": [
+      "value"
+    ],
+    "dnsLookup": [
+      "value"
+    ],
+    "dnsCache": [
+      "value"
+    ],
+    "context": [
+      "value"
+    ],
+    "hooks": [
+      "value"
+    ],
+    "followRedirect": [
+      "value"
+    ],
+    "maxRedirects": [
+      "value"
+    ],
+    "cache": [
+      "value"
+    ],
+    "throwHttpErrors": [
+      "value"
+    ],
+    "username": [
+      "value"
+    ],
+    "password": [
+      "value"
+    ],
+    "http2": [
+      "value"
+    ],
+    "allowGetBody": [
+      "value"
+    ],
+    "allowAbsoluteUrls": [
+      "value"
+    ],
+    "copyPipedHeaders": [
+      "value"
+    ],
+    "isHeaderExplicitlySet": [
+      "name"
+    ],
+    "shouldCopyPipedHeader": [
+      "name"
+    ],
+    "setPipedHeader": [
+      "name",
+      "value"
+    ],
+    "getInternalHeaders": [],
+    "setInternalHeader": [
+      "name",
+      "value"
+    ],
+    "deleteInternalHeader": [
+      "name"
+    ],
+    "trackStateMutations": [
+      "operation"
+    ],
+    "clearBody": [],
+    "clearUnchangedCookieHeader": [
+      "previousState",
+      "changedState"
+    ],
+    "restoreCookieHeader": [
+      "previousState",
+      "headers"
+    ],
+    "syncCookieHeaderAfterMerge": [
+      "previousState",
+      "headers"
+    ],
+    "stripUnchangedCrossOriginState": [
+      "previousState",
+      "changedState",
+      "param"
+    ],
+    "stripSensitiveHeaders": [
+      "previousUrl",
+      "nextUrl",
+      "userOptions"
+    ],
+    "mergeNextRequestOptions": [
+      "updatedOptions",
+      "param"
+    ],
+    "headers": [
+      "value"
+    ],
+    "methodRewriting": [
+      "value"
+    ],
+    "dnsLookupIpVersion": [
+      "value"
+    ],
+    "parseJson": [
+      "value"
+    ],
+    "stringifyJson": [
+      "value"
+    ],
+    "retry": [
+      "value"
+    ],
+    "localAddress": [
+      "value"
+    ],
+    "method": [
+      "value"
+    ],
+    "createConnection": [
+      "value"
+    ],
+    "cacheOptions": [
+      "value"
+    ],
+    "https": [
+      "value"
+    ],
+    "encoding": [
+      "value"
+    ],
+    "resolveBodyOnly": [
+      "value"
+    ],
+    "isStream": [
+      "value"
+    ],
+    "responseType": [
+      "value"
+    ],
+    "pagination": [
+      "value"
+    ],
+    "setHost": [
+      "value"
+    ],
+    "maxHeaderSize": [
+      "value"
+    ],
+    "enableUnixSockets": [
+      "value"
+    ],
+    "strictContentLength": [
+      "value"
+    ],
+    "toJSON": [],
+    "createNativeRequestOptions": [],
+    "getRequestFunction": [],
+    "freeze": []
+  },
+  "isAgentObject": [
+    "agent"
+  ],
+  "getNativeAgent": [
+    "url",
+    "agent"
+  ],
+  "wrapAssertionWithContext": [
+    "optionName",
+    "assertionFn"
+  ],
+  "assertAny": [
+    "optionName",
+    "validators",
+    "value"
+  ],
+  "assertCount": [
+    "optionName",
+    "value"
+  ],
+  "assertPlainObject": [
+    "optionName",
+    "value"
+  ],
+  "isSameOrigin": [
+    "previousUrl",
+    "nextUrl"
+  ],
+  "usesUnixSocket": [
+    "url"
+  ],
+  "hasCredentialInUrl": [
+    "url",
+    "credential"
+  ],
+  "hasExplicitCredentialInUrlChange": [
+    "changedState",
+    "url",
+    "credential"
+  ],
+  "hasBodyOptionChanged": [
+    "changedState"
+  ],
+  "safeDecode": [
+    "value"
+  ],
+  "hasProtocolSlashes": [
+    "value"
+  ],
+  "hasHttpProtocolWithoutSlashes": [
+    "value"
+  ],
+  "hasUnixProtocolWithoutSlashes": [
+    "value"
+  ],
+  "isAbsoluteUrl": [
+    "url"
+  ],
+  "isSlashOrBackslash": [
+    "character"
+  ],
+  "startsWithSchemeRelativeSeparators": [
+    "value"
+  ],
+  "stripLeadingC0ControlOrSpace": [
+    "value"
+  ],
+  "removeAsciiTabOrNewline": [
+    "value"
+  ],
+  "assertRelativeUrlIfNeeded": [
+    "options",
+    "url"
+  ],
+  "assertUrlHasSameOriginAsPrefixUrlIfNeeded": [
+    "options",
+    "url"
+  ],
+  "getUrlPrefixBoundary": [
+    "options"
+  ],
+  "hasUrlOrPrefixUrlBoundaryChanged": [
+    "options",
+    "currentUrl",
+    "previous"
+  ],
+  "applyUrlOverride": [
+    "options",
+    "url",
+    "param"
+  ],
+  "assertValidHeaderName": [
+    "name"
+  ],
+  "safeObjectAssign": [
+    "target",
+    "source"
+  ],
+  "assertKnownKeys": [
+    "value",
+    "knownOptions",
+    "createError"
+  ],
+  "isToughCookieJar": [
+    "cookieJar"
+  ],
+  "validateSearchParameters": [
+    "searchParameters"
+  ],
+  "getGlobalDnsCache": [],
+  "getAdaptedLookup": [
+    "lookup"
+  ],
+  "getDnsCacheLookup": [
+    "cache"
+  ],
+  "wrapQuickLruIfNeeded": [
+    "value"
+  ],
+  "cloneHeaderValue": [
+    "value"
+  ],
+  "cloneHeaders": [
+    "headers"
+  ],
+  "cloneHttps": [
+    "https"
+  ],
+  "cloneInternals": [
+    "internals"
+  ],
+  "cloneRaw": [
+    "raw"
+  ],
+  "getHttp2Timeout": [
+    "internals"
+  ],
+  "usesHttp2Alpn": [
+    "internals",
+    "url"
+  ],
+  "trackReplacedHeaderMutations": [
+    "trackedStateMutations",
+    "previousHeaders",
+    "nextHeaders"
+  ],
+  "init": [
+    "options",
+    "withOptions",
+    "self"
+  ],
+  "hasExplicitBodyOption": [
+    "options"
+  ],
+  "requestWithFallback": [
+    "url",
+    "options",
+    "callback"
+  ],
+  "snapshotCrossOriginState": [
+    "options"
+  ],
+  "cloneCrossOriginBodyValue": [
+    "value"
+  ],
+  "isUnchangedCrossOriginBodyValue": [
+    "currentValue",
+    "previousValue",
+    "previousSnapshot"
+  ],
+  "isCrossOriginCredentialChanged": [
+    "previousUrl",
+    "nextUrl",
+    "credential"
+  ],
+  "isBodyUnchanged": [
+    "options",
+    "previousState"
+  ],
+  "splitHeaderValue": [
+    "value",
+    "separator"
+  ],
+  "parseLinkHeader": [
+    "link"
+  ],
+  "ParseError": {
+    "name": [],
+    "code": [],
+    "constructor": [
+      "error",
+      "response"
+    ]
+  },
+  "normalizeEncoding": [
+    "encoding"
+  ],
+  "isUtf8Encoding": [
+    "encoding"
+  ],
+  "decodeUint8Array": [
+    "data",
+    "encoding"
+  ],
+  "isResponseOk": [
+    "response"
+  ],
+  "copyRedirectDecision": [
+    "source",
+    "destination"
+  ],
+  "cacheDecodedBody": [
+    "response",
+    "decodedBody"
+  ],
+  "parseBody": [
+    "response",
+    "responseType",
+    "parseJson",
+    "encoding"
+  ],
+  "isArmableTimerDelay": [
+    "delay"
+  ],
+  "timedOut": [
+    "request",
+    "delays",
+    "options"
+  ],
+  "once": [
+    "origin",
+    "event",
+    "listener"
+  ],
+  "addTimeout": [
+    "delay",
+    "event"
+  ],
+  "cancel": [],
+  "timeoutHandler": [
+    "delay",
+    "event"
+  ],
+  "cancelTimeouts": [],
+  "socketTimeoutHandler": [],
+  "onSocket": [
+    "socket"
+  ],
+  "timeConnect": [],
+  "timeRequest": [],
+  "startTimeout": [],
+  "decompressResponseBody": [
+    "response"
+  ],
+  "DnsCache": {
+    "lookup": [],
+    "constructor": [
+      "param"
+    ],
+    "lookupAsync": [
+      "hostname",
+      "options"
+    ],
+    "clear": [
+      "hostname"
+    ]
+  },
+  "isPromiseLike": [
+    "value"
+  ],
+  "now": [],
+  "hasUnexpired": [
+    "cache",
+    "key"
+  ],
+  "deleteExpiredMapEntries": [
+    "cache",
+    "param"
+  ],
+  "hasFlag": [
+    "value",
+    "flag"
+  ],
+  "getConfiguredFamilies": [],
+  "createNoResultError": [
+    "hostname"
+  ],
+  "normalizeLookupOptions": [
+    "options"
+  ],
+  "normalizeResolverRecord": [
+    "record",
+    "family",
+    "maxTtl"
+  ],
+  "map4To6": [
+    "entries"
+  ],
+  "familyFromOptions": [
+    "options"
+  ],
+  "orderFromOptions": [
+    "options"
+  ],
+  "familiesFromOptions": [
+    "options"
+  ],
+  "filterFamiliesByAddrConfig": [
+    "families",
+    "options"
+  ],
+  "shouldQueryMappedIpv4": [
+    "entries",
+    "options"
+  ],
+  "cacheKey": [
+    "hostname",
+    "family"
+  ],
+  "lookupOptionsKey": [
+    "hostname",
+    "options"
+  ],
+  "shouldIgnoreResolveError": [
+    "error"
+  ],
+  "toLookupResult": [
+    "param"
+  ],
+  "getBodySize": [
+    "body",
+    "headers"
+  ],
+  "Http2Agent": {
+    "timeout": [],
+    "maxSessions": [],
+    "maxEmptySessions": [],
+    "sessions": [],
+    "pendingSessions": [],
+    "pendingSessionKeys": [],
+    "queue": [],
+    "emptySessionCount": [],
+    "sessionCount": [],
+    "settings": [],
+    "constructor": [
+      "param"
+    ],
+    "protocol": [],
+    "request": [
+      "origin",
+      "options",
+      "headers",
+      "streamOptions"
+    ],
+    "getSession": [
+      "origin",
+      "param"
+    ],
+    "getSessionWithMetadata": [
+      "origin",
+      "param",
+      "param"
+    ],
+    "normalizeOptions": [
+      "origin",
+      "param"
+    ],
+    "closeEmptySessions": [
+      "param"
+    ],
+    "destroy": [
+      "reason"
+    ],
+    "claimAvailableSession": [
+      "key",
+      "options",
+      "reserveStream"
+    ],
+    "getAvailableSession": [
+      "key"
+    ],
+    "processQueue": [],
+    "reserveStream": [
+      "session",
+      "param"
+    ],
+    "releaseStream": [
+      "session",
+      "shouldPoolSession"
+    ],
+    "createSession": [
+      "entry",
+      "key"
+    ]
+  },
+  "normalizeRequestHeaderName": [
+    "name"
+  ],
+  "isPseudoHeader": [
+    "name"
+  ],
+  "getConnectionHeaderTokens": [
+    "value"
+  ],
+  "isTrailersTeHeader": [
+    "value"
+  ],
+  "isConnectionHeader": [
+    "lowercasedName"
+  ],
+  "isDroppedHeader": [
+    "lowercasedName",
+    "value",
+    "connectionHeaderNames"
+  ],
+  "setProtocolCache": [
+    "key",
+    "value"
+  ],
+  "getReferenceId": [
+    "value"
+  ],
+  "isPlainObject": [
+    "value"
+  ],
+  "serializeSessionOption": [
+    "value"
+  ],
+  "serializeSessionOptions": [
+    "values"
+  ],
+  "getTlsSessionOptions": [
+    "options"
+  ],
+  "destroyReuseSocket": [
+    "options"
+  ],
+  "onceConnected": [
+    "socket",
+    "listener"
+  ],
+  "canPoolSession": [
+    "options"
+  ],
+  "rejectQueueEntry": [
+    "entry",
+    "error"
+  ],
+  "normalizeInput": [
+    "input",
+    "options",
+    "callback"
+  ],
+  "stripIpv6Brackets": [
+    "hostname"
+  ],
+  "getAuthority": [
+    "options"
+  ],
+  "getAuthorityPort": [
+    "authority"
+  ],
+  "hasCustomHttpsAgent": [
+    "agent"
+  ],
+  "getProtocolCacheKey": [
+    "options"
+  ],
+  "resolveProtocol": [
+    "options",
+    "sourceOptions"
+  ],
+  "cleanup": [],
+  "rejectOnce": [
+    "error"
+  ],
+  "onSecureConnect": [],
+  "onTimeout": [],
+  "onSocketTimeout": [],
+  "applySocketTimeout": [],
+  "onClose": [],
+  "onAbort": [],
+  "toRawHeaders": [
+    "headers"
+  ],
+  "filterRawHeaders": [
+    "rawHeaders"
+  ],
+  "filterHeaders": [
+    "headers"
+  ],
+  "toDistinctHeaders": [
+    "rawHeaders"
+  ],
+  "createSocketProxy": [
+    "stream"
+  ],
+  "Http2IncomingMessage": {
+    "stream": [],
+    "req": [],
+    "constructor": [
+      "stream",
+      "request_",
+      "highWaterMark"
+    ],
+    "aborted": [],
+    "httpVersion": [],
+    "httpVersionMajor": [],
+    "httpVersionMinor": [],
+    "complete": [],
+    "rawHeaders": [],
+    "rawTrailers": [],
+    "headers": [],
+    "headersDistinct": [],
+    "trailers": [],
+    "trailersDistinct": [],
+    "statusCode": [],
+    "statusMessage": [],
+    "socket": [],
+    "url": [],
+    "method": [],
+    "upgrade": [],
+    "receivedSize": [],
+    "isCompleteAfterNoErrorReset": [],
+    "connection": [
+      "value"
+    ],
+    "setTimeout": [
+      "ms",
+      "callback"
+    ],
+    "_destroy": [
+      "error",
+      "callback"
+    ],
+    "_read": [],
+    "_dump": []
+  },
+  "clearSocketTimeout": [],
+  "clearSessionSetup": [],
+  "rejectSessionSetup": [
+    "error"
+  ],
+  "removeSession": [],
+  "Http2ClientRequest": {
+    "constructor": [
+      "input",
+      "options",
+      "callback"
+    ],
+    "agent": [],
+    "aborted": [],
+    "reusedSocket": [],
+    "res": [],
+    "socket": [],
+    "connection": [],
+    "method": [],
+    "path": [],
+    "protocol": [],
+    "host": [],
+    "headersSent": [],
+    "maxHeadersCount": [],
+    "options": [],
+    "callback": [],
+    "headers": [],
+    "origin": [],
+    "stream": [],
+    "pendingJobs": [],
+    "pendingAgentPromise": [],
+    "connectionHeaderNames": [],
+    "trailers": [],
+    "isGotHttp2Request": [],
+    "_write": [
+      "chunk",
+      "encoding",
+      "callback"
+    ],
+    "_final": [
+      "callback"
+    ],
+    "_destroy": [
+      "error",
+      "callback"
+    ],
+    "abort": [],
+    "flushHeaders": [],
+    "addTrailers": [
+      "headers"
+    ],
+    "setHeader": [
+      "name",
+      "value"
+    ],
+    "setHeaders": [
+      "headers"
+    ],
+    "appendHeader": [
+      "name",
+      "value"
+    ],
+    "getHeader": [
+      "name"
+    ],
+    "getHeaders": [],
+    "getHeaderNames": [],
+    "hasHeader": [
+      "name"
+    ],
+    "removeHeader": [
+      "name"
+    ],
+    "setNoDelay": [],
+    "setSocketKeepAlive": [],
+    "setTimeout": [
+      "ms",
+      "callback"
+    ],
+    "runWithStream": [
+      "job"
+    ],
+    "cancelPendingJobs": [
+      "error"
+    ],
+    "onStream": [
+      "stream"
+    ]
+  },
+  "finish": [],
+  "request": [
+    "input",
+    "options",
+    "callback"
+  ],
+  "getSourceOptions": [
+    "input",
+    "options"
+  ],
+  "requestHttps": [
+    "options",
+    "callback"
+  ],
+  "requestHttp1": [
+    "options",
+    "agent",
+    "callback"
+  ],
+  "requestHttp2": [
+    "options",
+    "agent",
+    "socket",
+    "callback"
+  ],
+  "auto": [
+    "input",
+    "options",
+    "callback"
+  ],
+  "isClientRequest": [
+    "clientRequest"
+  ],
+  "isNonReplayableBody": [
+    "body"
+  ],
+  "isUnixSocketUrl": [
+    "url"
+  ],
+  "getUnixSocketPath": [
+    "url"
+  ],
+  "proxyEvents": [
+    "from",
+    "to",
+    "events"
+  ],
+  "eventFunction": [
+    "param"
+  ],
+  "stripUrlAuth": [
+    "url"
+  ],
+  "getInitialConnectionTimings": [
+    "socket"
+  ],
+  "setInitialConnectionTimings": [
+    "socket",
+    "timings"
+  ],
+  "timer": [
+    "request"
+  ],
+  "handleError": [
+    "origin"
+  ],
+  "lookupListener": [],
+  "onUpload": [],
+  "WeakableMap": {
+    "weakMap": [],
+    "map": [],
+    "set": [
+      "key",
+      "value"
+    ],
+    "get": [
+      "key"
+    ],
+    "has": [
+      "key"
+    ]
+  },
+  "isGotInstance": [
+    "value"
+  ],
+  "assertNoUrlInOptionsObject": [
+    "options"
+  ],
+  "create": [
+    "defaults"
+  ],
+  "lastHandler": [
+    "normalized"
+  ],
+  "iterateHandlers": [
+    "newOptions"
+  ],
+  "got": [
+    "url",
+    "options",
+    "param"
+  ],
+  "paginateEach": [
+    "url",
+    "options"
+  ]
+}
