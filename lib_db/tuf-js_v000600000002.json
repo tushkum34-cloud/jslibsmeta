@@ -1,0 +1,145 @@
+{
+  "ValueError": {},
+  "RuntimeError": {},
+  "PersistError": {},
+  "RepositoryError": {},
+  "BadVersionError": {},
+  "EqualVersionError": {},
+  "ExpiredMetadataError": {},
+  "DownloadError": {},
+  "DownloadLengthMismatchError": {},
+  "DownloadHTTPError": {
+    "statusCode": [],
+    "constructor": [
+      "message",
+      "statusCode"
+    ]
+  },
+  "BaseFetcher": {
+    "downloadFile": [
+      "url",
+      "maxLength",
+      "handler"
+    ],
+    "downloadBytes": [
+      "url",
+      "maxLength"
+    ]
+  },
+  "DefaultFetcher": {
+    "userAgent": [],
+    "timeout": [],
+    "retry": [],
+    "constructor": [
+      "param"
+    ],
+    "fetch": [
+      "url"
+    ]
+  },
+  "writeBufferToStream": [
+    "stream",
+    "buffer"
+  ],
+  "TrustedMetadataStore": {
+    "trustedSet": [],
+    "referenceTime": [],
+    "constructor": [
+      "rootData"
+    ],
+    "root": [],
+    "timestamp": [],
+    "snapshot": [],
+    "targets": [],
+    "getRole": [
+      "name"
+    ],
+    "updateRoot": [
+      "bytesBuffer"
+    ],
+    "updateTimestamp": [
+      "bytesBuffer"
+    ],
+    "updateSnapshot": [
+      "bytesBuffer",
+      "param"
+    ],
+    "updateDelegatedTargets": [
+      "bytesBuffer",
+      "roleName",
+      "delegatorName"
+    ],
+    "loadTrustedRoot": [
+      "bytesBuffer"
+    ],
+    "checkFinalTimestamp": [],
+    "checkFinalSnapsnot": []
+  },
+  "Updater": {
+    "dir": [],
+    "metadataBaseUrl": [],
+    "targetDir": [],
+    "targetBaseUrl": [],
+    "forceCache": [],
+    "trustedSet": [],
+    "config": [],
+    "fetcher": [],
+    "constructor": [
+      "options"
+    ],
+    "refresh": [],
+    "getTargetInfo": [
+      "targetPath"
+    ],
+    "downloadTarget": [
+      "targetInfo",
+      "filePath",
+      "targetBaseUrl"
+    ],
+    "findCachedTarget": [
+      "targetInfo",
+      "filePath"
+    ],
+    "loadLocalMetadata": [
+      "fileName"
+    ],
+    "loadRoot": [],
+    "loadTimestamp": [
+      "param"
+    ],
+    "loadSnapshot": [],
+    "loadTargets": [
+      "role",
+      "parentRole"
+    ],
+    "preorderDepthFirstWalk": [
+      "targetPath"
+    ],
+    "generateTargetPath": [
+      "targetInfo"
+    ],
+    "persistMetadata": [
+      "metaDataName",
+      "bytesData"
+    ]
+  },
+  "ownKeys": [
+    "o"
+  ],
+  "withTempFile": [
+    "handler"
+  ],
+  "withTempDir": [
+    "handler"
+  ],
+  "join": [
+    "base",
+    "path"
+  ],
+  "ensureTrailingSlash": [
+    "path"
+  ],
+  "removeLeadingSlash": [
+    "path"
+  ]
+}
