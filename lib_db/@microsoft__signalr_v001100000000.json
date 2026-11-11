@@ -1,0 +1,1525 @@
+{
+  "HttpError": {
+    "statusCode": [],
+    "constructor": [
+      "errorMessage",
+      "statusCode"
+    ]
+  },
+  "TimeoutError": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "AbortError": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "UnsupportedTransportError": {
+    "transport": [],
+    "errorType": [],
+    "constructor": [
+      "message",
+      "transport"
+    ]
+  },
+  "DisabledTransportError": {
+    "transport": [],
+    "errorType": [],
+    "constructor": [
+      "message",
+      "transport"
+    ]
+  },
+  "FailedToStartTransportError": {
+    "transport": [],
+    "errorType": [],
+    "constructor": [
+      "message",
+      "transport"
+    ]
+  },
+  "FailedToNegotiateWithServerError": {
+    "errorType": [],
+    "constructor": [
+      "message"
+    ]
+  },
+  "AggregateErrors": {
+    "innerErrors": [],
+    "constructor": [
+      "message",
+      "innerErrors"
+    ]
+  },
+  "HttpResponse": {
+    "constructor": [
+      "param",
+      "param",
+      "param"
+    ]
+  },
+  "HttpClient": {
+    "get": [
+      "url",
+      "options"
+    ],
+    "post": [
+      "url",
+      "options"
+    ],
+    "delete": [
+      "url",
+      "options"
+    ],
+    "send": [
+      "request"
+    ],
+    "getCookieString": [
+      "url"
+    ]
+  },
+  "NullLogger": {
+    "instance": [],
+    "constructor": [],
+    "log": [
+      "_logLevel",
+      "_message"
+    ]
+  },
+  "Arg": {
+    "isRequired": [
+      "val",
+      "name"
+    ],
+    "isNotEmpty": [
+      "val",
+      "name"
+    ],
+    "isIn": [
+      "val",
+      "values",
+      "name"
+    ]
+  },
+  "Platform": {
+    "isBrowser": [],
+    "isWebWorker": [],
+    "isReactNative": [],
+    "isNode": []
+  },
+  "getDataDetail": [
+    "data",
+    "includeContent"
+  ],
+  "formatArrayBuffer": [
+    "data"
+  ],
+  "isArrayBuffer": [
+    "val"
+  ],
+  "isSuccessStatusCode": [
+    "statusCode"
+  ],
+  "getHttpResponseError": [
+    "response"
+  ],
+  "sendMessage": [
+    "logger",
+    "transportName",
+    "httpClient",
+    "url",
+    "content",
+    "options"
+  ],
+  "createLogger": [
+    "logger"
+  ],
+  "SubjectSubscription": {
+    "_subject": [],
+    "_observer": [],
+    "constructor": [
+      "subject",
+      "observer"
+    ],
+    "dispose": []
+  },
+  "ConsoleLogger": {
+    "_minLevel": [],
+    "out": [],
+    "constructor": [
+      "minimumLogLevel"
+    ],
+    "log": [
+      "logLevel",
+      "message"
+    ]
+  },
+  "getUserAgentHeader": [],
+  "constructUserAgent": [
+    "version",
+    "os",
+    "runtime",
+    "runtimeVersion"
+  ],
+  "getOsName": [],
+  "getRuntimeVersion": [],
+  "getRuntime": [],
+  "getErrorString": [
+    "e"
+  ],
+  "getGlobalThis": [],
+  "FetchHttpClient": {
+    "_abortControllerType": [],
+    "_fetchType": [],
+    "_jar": [],
+    "_logger": [],
+    "constructor": [
+      "logger"
+    ],
+    "send": [
+      "request"
+    ],
+    "getCookieString": [
+      "url"
+    ]
+  },
+  "deserializeContent": [
+    "response",
+    "responseType"
+  ],
+  "XhrHttpClient": {
+    "_logger": [],
+    "constructor": [
+      "logger"
+    ],
+    "send": [
+      "request"
+    ]
+  },
+  "DefaultHttpClient": {
+    "_httpClient": [],
+    "constructor": [
+      "logger"
+    ],
+    "send": [
+      "request"
+    ],
+    "getCookieString": [
+      "url"
+    ]
+  },
+  "TextMessageFormat": {
+    "RecordSeparatorCode": [],
+    "RecordSeparator": [],
+    "write": [
+      "output"
+    ],
+    "parse": [
+      "input"
+    ]
+  },
+  "HandshakeProtocol": {
+    "writeHandshakeRequest": [
+      "handshakeRequest"
+    ],
+    "parseHandshakeResponse": [
+      "data"
+    ]
+  },
+  "Subject": {
+    "observers": [],
+    "cancelCallback": [],
+    "constructor": [],
+    "next": [
+      "item"
+    ],
+    "error": [
+      "err"
+    ],
+    "complete": [],
+    "subscribe": [
+      "observer"
+    ]
+  },
+  "MessageBuffer": {
+    "_protocol": [],
+    "_connection": [],
+    "_bufferSize": [],
+    "_messages": [],
+    "_totalMessageCount": [],
+    "_waitForSequenceMessage": [],
+    "_nextReceivingSequenceId": [],
+    "_latestReceivedSequenceId": [],
+    "_bufferedByteCount": [],
+    "_reconnectInProgress": [],
+    "_ackTimerHandle": [],
+    "constructor": [
+      "protocol",
+      "connection",
+      "bufferSize"
+    ],
+    "_send": [
+      "message"
+    ],
+    "_ack": [
+      "ackMessage"
+    ],
+    "_shouldProcessMessage": [
+      "message"
+    ],
+    "_resetSequence": [
+      "message"
+    ],
+    "_disconnected": [],
+    "_resend": [],
+    "_dispose": [
+      "error"
+    ],
+    "_isInvocationMessage": [
+      "message"
+    ],
+    "_ackTimer": []
+  },
+  "backpressurePromiseResolver": [],
+  "backpressurePromiseRejector": [],
+  "BufferedItem": {
+    "constructor": [
+      "message",
+      "id",
+      "resolver",
+      "rejector"
+    ],
+    "_message": [],
+    "_id": [],
+    "_resolver": [],
+    "_rejector": []
+  },
+  "HubConnection": {
+    "_cachedPingMessage": [],
+    "connection": [],
+    "_logger": [],
+    "_reconnectPolicy": [],
+    "_statefulReconnectBufferSize": [],
+    "_authenticationRefreshOptions": [],
+    "_protocol": [],
+    "_handshakeProtocol": [],
+    "_callbacks": [],
+    "_methods": [],
+    "_invocationId": [],
+    "_messageBuffer": [],
+    "_closedCallbacks": [],
+    "_reconnectingCallbacks": [],
+    "_reconnectedCallbacks": [],
+    "_authenticationRefreshedCallbacks": [],
+    "_authenticationRefreshFailedCallbacks": [],
+    "_receivedHandshakeResponse": [],
+    "_handshakeResolver": [],
+    "_handshakeRejecter": [],
+    "_stopDuringStartError": [],
+    "_connectionState": [],
+    "_connectionStarted": [],
+    "_startPromise": [],
+    "_stopPromise": [],
+    "_nextKeepAlive": [],
+    "_reconnectDelayHandle": [],
+    "_timeoutHandle": [],
+    "_pingServerHandle": [],
+    "_authenticationRefreshTimerHandle": [],
+    "_freezeEventListener": [],
+    "serverTimeoutInMilliseconds": [],
+    "keepAliveIntervalInMilliseconds": [],
+    "create": [
+      "connection",
+      "logger",
+      "protocol",
+      "reconnectPolicy",
+      "serverTimeoutInMilliseconds",
+      "keepAliveIntervalInMilliseconds",
+      "statefulReconnectBufferSize",
+      "authenticationRefreshOptions"
+    ],
+    "constructor": [
+      "connection",
+      "logger",
+      "protocol",
+      "reconnectPolicy",
+      "serverTimeoutInMilliseconds",
+      "keepAliveIntervalInMilliseconds",
+      "statefulReconnectBufferSize",
+      "authenticationRefreshOptions"
+    ],
+    "state": [],
+    "connectionId": [],
+    "baseUrl": [
+      "url"
+    ],
+    "start": [],
+    "_startWithStateTransitions": [],
+    "_startInternal": [],
+    "stop": [],
+    "_stopInternal": [
+      "error"
+    ],
+    "_sendCloseMessage": [],
+    "stream": [
+      "methodName",
+      "param"
+    ],
+    "_sendMessage": [
+      "message"
+    ],
+    "_sendWithProtocol": [
+      "message"
+    ],
+    "send": [
+      "methodName",
+      "param"
+    ],
+    "invoke": [
+      "methodName",
+      "param"
+    ],
+    "on": [
+      "methodName",
+      "newMethod"
+    ],
+    "off": [
+      "methodName",
+      "method"
+    ],
+    "onclose": [
+      "callback"
+    ],
+    "onreconnecting": [
+      "callback"
+    ],
+    "onreconnected": [
+      "callback"
+    ],
+    "onAuthenticationRefreshed": [
+      "callback"
+    ],
+    "onAuthenticationRefreshFailed": [
+      "callback"
+    ],
+    "refreshAuthentication": [],
+    "_processIncomingData": [
+      "data"
+    ],
+    "_processHandshakeResponse": [
+      "data"
+    ],
+    "_resetKeepAliveInterval": [],
+    "_resetTimeoutPeriod": [],
+    "serverTimeout": [],
+    "_invokeClientMethod": [
+      "invocationMessage"
+    ],
+    "_connectionClosed": [
+      "error"
+    ],
+    "_completeClose": [
+      "error"
+    ],
+    "_reconnect": [
+      "error"
+    ],
+    "_getNextRetryDelay": [
+      "previousRetryCount",
+      "elapsedMilliseconds",
+      "retryReason"
+    ],
+    "_validateAuthenticationRefreshOptions": [],
+    "_scheduleAuthenticationRefreshIfNeeded": [],
+    "_isAutoAuthenticationRefreshEnabled": [],
+    "_scheduleAuthenticationRefresh": [
+      "tokenLifetimeInSeconds"
+    ],
+    "_scheduleAuthenticationRefreshAt": [
+      "refreshIn"
+    ],
+    "_cleanupAuthenticationRefreshTimer": [],
+    "_onAuthenticationRefreshTimerFired": [],
+    "_invokeAuthenticationRefreshed": [
+      "newTokenLifetimeInSeconds"
+    ],
+    "_invokeAuthenticationRefreshFailed": [
+      "error"
+    ],
+    "_cancelCallbacksWithError": [
+      "error"
+    ],
+    "_cleanupPingTimer": [],
+    "_cleanupTimeout": [],
+    "_createInvocation": [
+      "methodName",
+      "args",
+      "nonblocking",
+      "streamIds"
+    ],
+    "_launchStreams": [
+      "streams",
+      "promiseQueue"
+    ],
+    "_replaceStreamingParams": [
+      "args"
+    ],
+    "_isObservable": [
+      "arg"
+    ],
+    "_createStreamInvocation": [
+      "methodName",
+      "args",
+      "streamIds"
+    ],
+    "_createCancelInvocation": [
+      "id"
+    ],
+    "_createStreamItemMessage": [
+      "id",
+      "item"
+    ],
+    "_createCompletionMessage": [
+      "id",
+      "error",
+      "result"
+    ],
+    "_createCloseMessage": [],
+    "_trySendPingMessage": []
+  },
+  "isValidAuthenticationTokenLifetime": [
+    "tokenLifetimeInSeconds"
+  ],
+  "DefaultReconnectPolicy": {
+    "_retryDelays": [],
+    "constructor": [
+      "retryDelays"
+    ],
+    "nextRetryDelayInMilliseconds": [
+      "retryContext"
+    ]
+  },
+  "HeaderNames": {
+    "Authorization": [],
+    "ConnectionToken": [],
+    "Cookie": []
+  },
+  "AccessTokenHttpClient": {
+    "_innerClient": [],
+    "_refreshAccessTokenFactory": [],
+    "_refreshRequestTokens": [],
+    "_accessToken": [],
+    "_accessTokenFactory": [],
+    "constructor": [
+      "innerClient",
+      "accessTokenFactory"
+    ],
+    "send": [
+      "request"
+    ],
+    "markNegotiateRequest": [
+      "request"
+    ],
+    "markAuthenticationRefreshRequest": [
+      "request"
+    ],
+    "setRefreshAccessTokenFactory": [
+      "accessTokenFactory"
+    ],
+    "updateCachedToken": [
+      "accessToken"
+    ],
+    "getRefreshRequestToken": [
+      "response"
+    ],
+    "_setAuthorizationHeader": [
+      "request",
+      "accessToken"
+    ],
+    "getCookieString": [
+      "url"
+    ]
+  },
+  "AbortController_AbortController": {
+    "constructor": [],
+    "abort": [],
+    "signal": [],
+    "aborted": []
+  },
+  "LongPollingTransport": {
+    "_httpClient": [],
+    "_logger": [],
+    "_options": [],
+    "_pollAbort": [],
+    "_authenticationRefresh": [],
+    "_url": [],
+    "_running": [],
+    "_receiving": [],
+    "_closeError": [],
+    "onreceive": [],
+    "onclose": [],
+    "pollAborted": [],
+    "constructor": [
+      "httpClient",
+      "logger",
+      "options",
+      "authenticationRefresh"
+    ],
+    "connect": [
+      "url",
+      "transferFormat"
+    ],
+    "_isAuthenticationRefreshRequired": [
+      "response"
+    ],
+    "_poll": [
+      "url",
+      "pollOptions"
+    ],
+    "send": [
+      "data"
+    ],
+    "stop": [],
+    "_raiseOnClose": []
+  },
+  "ServerSentEventsTransport": {
+    "_httpClient": [],
+    "_accessToken": [],
+    "_logger": [],
+    "_options": [],
+    "_eventSource": [],
+    "_url": [],
+    "onreceive": [],
+    "onclose": [],
+    "constructor": [
+      "httpClient",
+      "accessToken",
+      "logger",
+      "options"
+    ],
+    "connect": [
+      "url",
+      "transferFormat"
+    ],
+    "send": [
+      "data"
+    ],
+    "stop": [],
+    "_close": [
+      "e"
+    ]
+  },
+  "WebSocketTransport": {
+    "_logger": [],
+    "_accessTokenFactory": [],
+    "_logMessageContent": [],
+    "_webSocketConstructor": [],
+    "_httpClient": [],
+    "_webSocket": [],
+    "_headers": [],
+    "onreceive": [],
+    "onclose": [],
+    "constructor": [
+      "httpClient",
+      "accessTokenFactory",
+      "logger",
+      "logMessageContent",
+      "webSocketConstructor",
+      "headers"
+    ],
+    "connect": [
+      "url",
+      "transferFormat"
+    ],
+    "send": [
+      "data"
+    ],
+    "stop": [],
+    "_close": [
+      "event"
+    ],
+    "_isCloseEvent": [
+      "event"
+    ]
+  },
+  "HttpConnection": {
+    "_connectionState": [],
+    "_connectionStarted": [],
+    "_httpClient": [],
+    "_logger": [],
+    "_options": [],
+    "transport": [],
+    "_startInternalPromise": [],
+    "_stopPromise": [],
+    "_stopPromiseResolver": [],
+    "_stopError": [],
+    "_accessTokenFactory": [],
+    "_sendQueue": [],
+    "_connectionToken": [],
+    "_connectionUrl": [],
+    "_initialTokenLifetimeInSeconds": [],
+    "_transportAccessTokenFromServer": [],
+    "_connectionGeneration": [],
+    "features": [],
+    "baseUrl": [],
+    "connectionId": [],
+    "onreceive": [],
+    "onclose": [],
+    "_negotiateVersion": [],
+    "constructor": [
+      "url",
+      "param"
+    ],
+    "start": [
+      "transferFormat"
+    ],
+    "send": [
+      "data"
+    ],
+    "stop": [
+      "error"
+    ],
+    "_stopInternal": [
+      "error"
+    ],
+    "_startInternal": [
+      "transferFormat"
+    ],
+    "_getNegotiationResponse": [
+      "url"
+    ],
+    "_createConnectUrl": [
+      "url",
+      "connectionToken"
+    ],
+    "_createRefreshUrl": [
+      "url"
+    ],
+    "_configureAuthenticationRefresh": [
+      "negotiateResponse"
+    ],
+    "_refreshAuthentication": [],
+    "_setTransportAccessToken": [
+      "accessToken"
+    ],
+    "_createTransport": [
+      "url",
+      "requestedTransport",
+      "negotiateResponse",
+      "requestedTransferFormat"
+    ],
+    "_constructTransport": [
+      "transport"
+    ],
+    "_startTransport": [
+      "url",
+      "transferFormat"
+    ],
+    "_resolveTransportOrError": [
+      "endpoint",
+      "requestedTransport",
+      "requestedTransferFormat",
+      "useStatefulReconnect"
+    ],
+    "_isITransport": [
+      "transport"
+    ],
+    "_stopConnection": [
+      "error"
+    ],
+    "_resolveUrl": [
+      "url"
+    ],
+    "_resolveNegotiateUrl": [
+      "url"
+    ]
+  },
+  "transportMatches": [
+    "requestedTransport",
+    "actualTransport"
+  ],
+  "getAuthenticationTokenLifetimeInSeconds": [
+    "tokenLifetimeSeconds"
+  ],
+  "TransportSendQueue": {
+    "_buffer": [],
+    "_sendBufferedData": [],
+    "_executing": [],
+    "_transportResult": [],
+    "_sendLoopPromise": [],
+    "constructor": [
+      "param"
+    ],
+    "send": [
+      "data"
+    ],
+    "stop": [],
+    "_bufferData": [
+      "data"
+    ],
+    "_sendLoop": [],
+    "_concatBuffers": [
+      "arrayBuffers"
+    ]
+  },
+  "PromiseSource": {
+    "_resolver": [],
+    "_rejecter": [],
+    "promise": [],
+    "constructor": [],
+    "resolve": [],
+    "reject": [
+      "reason"
+    ]
+  },
+  "JsonHubProtocol": {
+    "name": [],
+    "version": [],
+    "transferFormat": [],
+    "parseMessages": [
+      "input",
+      "logger"
+    ],
+    "writeMessage": [
+      "message"
+    ],
+    "_isInvocationMessage": [
+      "message"
+    ],
+    "_isStreamItemMessage": [
+      "message"
+    ],
+    "_isCompletionMessage": [
+      "message"
+    ],
+    "_isAckMessage": [
+      "message"
+    ],
+    "_isSequenceMessage": [
+      "message"
+    ],
+    "_assertNotEmptyString": [
+      "value",
+      "errorMessage"
+    ]
+  },
+  "parseLogLevel": [
+    "name"
+  ],
+  "HubConnectionBuilder": {
+    "_serverTimeoutInMilliseconds": [],
+    "_keepAliveIntervalInMilliseconds": [],
+    "protocol": [],
+    "httpConnectionOptions": [],
+    "url": [],
+    "logger": [],
+    "reconnectPolicy": [],
+    "_statefulReconnectBufferSize": [],
+    "_authenticationRefreshOptions": [],
+    "configureLogging": [
+      "logging"
+    ],
+    "withUrl": [
+      "url",
+      "transportTypeOrOptions"
+    ],
+    "withHubProtocol": [
+      "protocol"
+    ],
+    "withAutomaticReconnect": [
+      "retryDelaysOrReconnectPolicy"
+    ],
+    "withServerTimeout": [
+      "milliseconds"
+    ],
+    "withKeepAliveInterval": [
+      "milliseconds"
+    ],
+    "withStatefulReconnect": [
+      "options"
+    ],
+    "withAuthenticationRefresh": [
+      "param"
+    ],
+    "build": []
+  },
+  "isLogger": [
+    "logger"
+  ],
+  "i": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "s": [],
+  "n": {
+    "constructor": [
+      "param"
+    ]
+  },
+  "r": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "o": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "h": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "c": {
+    "constructor": [
+      "t"
+    ]
+  },
+  "a": {
+    "constructor": [
+      "t",
+      "e"
+    ]
+  },
+  "l": {
+    "constructor": [
+      "t",
+      "e",
+      "i"
+    ]
+  },
+  "u": {
+    "get": [
+      "t",
+      "e"
+    ],
+    "post": [
+      "t",
+      "e"
+    ],
+    "delete": [
+      "t",
+      "e"
+    ],
+    "getCookieString": [
+      "t"
+    ]
+  },
+  "f": {
+    "constructor": [],
+    "log": [
+      "t",
+      "e"
+    ]
+  },
+  "w": {
+    "isRequired": [
+      "t",
+      "e"
+    ],
+    "isNotEmpty": [
+      "t",
+      "e"
+    ],
+    "isIn": [
+      "t",
+      "e",
+      "i"
+    ]
+  },
+  "g": {
+    "isBrowser": [],
+    "isWebWorker": [],
+    "isReactNative": [],
+    "isNode": []
+  },
+  "m": [
+    "t",
+    "e"
+  ],
+  "y": [
+    "t"
+  ],
+  "v": [
+    "t"
+  ],
+  "b": [
+    "t"
+  ],
+  "E": [
+    "t",
+    "e",
+    "i",
+    "s",
+    "n",
+    "r"
+  ],
+  "$": {
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "dispose": []
+  },
+  "C": {
+    "constructor": [
+      "t"
+    ],
+    "log": [
+      "t",
+      "e"
+    ]
+  },
+  "S": [],
+  "k": [
+    "t",
+    "e",
+    "i",
+    "s"
+  ],
+  "T": [],
+  "P": [],
+  "_": [
+    "t"
+  ],
+  "A": {
+    "constructor": [
+      "e"
+    ],
+    "send": [
+      "t"
+    ],
+    "getCookieString": [
+      "t"
+    ]
+  },
+  "I": {
+    "constructor": [
+      "t"
+    ],
+    "send": [
+      "t"
+    ]
+  },
+  "R": {
+    "constructor": [
+      "t"
+    ],
+    "send": [
+      "t"
+    ],
+    "getCookieString": [
+      "t"
+    ]
+  },
+  "H": {
+    "write": [
+      "t"
+    ],
+    "parse": [
+      "t"
+    ]
+  },
+  "D": {
+    "writeHandshakeRequest": [
+      "t"
+    ],
+    "parseHandshakeResponse": [
+      "t"
+    ]
+  },
+  "U": {
+    "constructor": [],
+    "next": [
+      "t"
+    ],
+    "error": [
+      "t"
+    ],
+    "complete": [],
+    "subscribe": [
+      "t"
+    ]
+  },
+  "q": {
+    "constructor": [
+      "t",
+      "e",
+      "i"
+    ],
+    "D": [
+      "t"
+    ],
+    "q": [
+      "t"
+    ],
+    "j": [
+      "t"
+    ],
+    "F": [
+      "t"
+    ],
+    "U": [],
+    "B": [],
+    "J": [
+      "t"
+    ],
+    "N": [
+      "t"
+    ],
+    "W": []
+  },
+  "t": [],
+  "L": {
+    "constructor": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ]
+  },
+  "M": {
+    "create": [
+      "t",
+      "e",
+      "i",
+      "s",
+      "n",
+      "r",
+      "o",
+      "h"
+    ],
+    "constructor": [
+      "t",
+      "e",
+      "i",
+      "s",
+      "n",
+      "r",
+      "o",
+      "h"
+    ],
+    "state": [],
+    "connectionId": [],
+    "baseUrl": [
+      "t"
+    ],
+    "start": [],
+    "Et": [],
+    "$t": [],
+    "stop": [],
+    "xt": [
+      "t"
+    ],
+    "Lt": [],
+    "stream": [
+      "t",
+      "param"
+    ],
+    "Tt": [
+      "t"
+    ],
+    "Mt": [
+      "t"
+    ],
+    "send": [
+      "t",
+      "param"
+    ],
+    "invoke": [
+      "t",
+      "param"
+    ],
+    "on": [
+      "t",
+      "e"
+    ],
+    "off": [
+      "t",
+      "e"
+    ],
+    "onclose": [
+      "t"
+    ],
+    "onreconnecting": [
+      "t"
+    ],
+    "onreconnected": [
+      "t"
+    ],
+    "onAuthenticationRefreshed": [
+      "t"
+    ],
+    "onAuthenticationRefreshFailed": [
+      "t"
+    ],
+    "refreshAuthentication": [],
+    "st": [
+      "t"
+    ],
+    "Gt": [
+      "t"
+    ],
+    "At": [],
+    "_t": [],
+    "serverTimeout": [],
+    "Qt": [
+      "t"
+    ],
+    "nt": [
+      "t"
+    ],
+    "qt": [
+      "t"
+    ],
+    "se": [
+      "t"
+    ],
+    "ne": [
+      "t",
+      "e",
+      "i"
+    ],
+    "tt": [],
+    "Rt": [],
+    "zt": [],
+    "Vt": [
+      "t"
+    ],
+    "re": [
+      "t"
+    ],
+    "Dt": [],
+    "he": [],
+    "Kt": [
+      "t"
+    ],
+    "Xt": [
+      "t"
+    ],
+    "ie": [
+      "t"
+    ],
+    "Ht": [],
+    "Pt": [],
+    "Jt": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "Bt": [
+      "t",
+      "e"
+    ],
+    "jt": [
+      "t"
+    ],
+    "ae": [
+      "t"
+    ],
+    "Wt": [
+      "t",
+      "e",
+      "i"
+    ],
+    "Ft": [
+      "t"
+    ],
+    "ce": [
+      "t",
+      "e"
+    ],
+    "ee": [
+      "t",
+      "e",
+      "i"
+    ],
+    "Ot": [],
+    "Zt": []
+  },
+  "O": [
+    "t"
+  ],
+  "W": {
+    "constructor": [
+      "t"
+    ],
+    "nextRetryDelayInMilliseconds": [
+      "t"
+    ]
+  },
+  "F": {},
+  "B": {
+    "constructor": [
+      "t",
+      "e"
+    ],
+    "send": [
+      "t"
+    ],
+    "markNegotiateRequest": [
+      "t"
+    ],
+    "markAuthenticationRefreshRequest": [
+      "t"
+    ],
+    "setRefreshAccessTokenFactory": [
+      "t"
+    ],
+    "updateCachedToken": [
+      "t"
+    ],
+    "getRefreshRequestToken": [
+      "t"
+    ],
+    "ye": [
+      "t",
+      "e"
+    ],
+    "getCookieString": [
+      "t"
+    ]
+  },
+  "z": {
+    "constructor": [],
+    "abort": [],
+    "signal": [],
+    "aborted": []
+  },
+  "V": {
+    "pollAborted": [],
+    "constructor": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "connect": [
+      "t",
+      "e"
+    ],
+    "Pe": [
+      "t"
+    ],
+    "Te": [
+      "t",
+      "e"
+    ],
+    "send": [
+      "t"
+    ],
+    "stop": [],
+    "_e": []
+  },
+  "K": {
+    "constructor": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "connect": [
+      "t",
+      "e"
+    ],
+    "send": [
+      "t"
+    ],
+    "stop": [],
+    "Ae": [
+      "t"
+    ]
+  },
+  "G": {
+    "constructor": [
+      "t",
+      "e",
+      "i",
+      "s",
+      "n",
+      "r"
+    ],
+    "connect": [
+      "t",
+      "e"
+    ],
+    "send": [
+      "t"
+    ],
+    "stop": [],
+    "Ae": [
+      "t"
+    ],
+    "xe": [
+      "t"
+    ]
+  },
+  "Y": {
+    "constructor": [
+      "t",
+      "param"
+    ],
+    "start": [
+      "t"
+    ],
+    "send": [
+      "t"
+    ],
+    "stop": [
+      "t"
+    ],
+    "xt": [
+      "t"
+    ],
+    "$t": [
+      "t"
+    ],
+    "Ge": [
+      "t"
+    ],
+    "ii": [
+      "t",
+      "e"
+    ],
+    "si": [
+      "t"
+    ],
+    "Ze": [
+      "t"
+    ],
+    "ni": [],
+    "Qe": [
+      "t"
+    ],
+    "Ye": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "Ve": [
+      "t"
+    ],
+    "Ke": [
+      "t",
+      "e"
+    ],
+    "oi": [
+      "t",
+      "e",
+      "i",
+      "s"
+    ],
+    "ri": [
+      "t"
+    ],
+    "Be": [
+      "t"
+    ],
+    "Oe": [
+      "t"
+    ],
+    "ti": [
+      "t"
+    ]
+  },
+  "Z": [
+    "t"
+  ],
+  "tt": {
+    "constructor": [
+      "t"
+    ],
+    "send": [
+      "t"
+    ],
+    "stop": [],
+    "pi": [
+      "t"
+    ],
+    "fi": [],
+    "wi": [
+      "t"
+    ]
+  },
+  "et": {
+    "constructor": [],
+    "resolve": [],
+    "reject": [
+      "t"
+    ]
+  },
+  "it": {
+    "constructor": [],
+    "parseMessages": [
+      "t",
+      "e"
+    ],
+    "writeMessage": [
+      "t"
+    ],
+    "N": [
+      "t"
+    ],
+    "mi": [
+      "t"
+    ],
+    "yi": [
+      "t"
+    ],
+    "bi": [
+      "t"
+    ],
+    "Ei": [
+      "t"
+    ],
+    "$i": [
+      "t",
+      "e"
+    ]
+  },
+  "nt": {
+    "configureLogging": [
+      "t"
+    ],
+    "withUrl": [
+      "t",
+      "e"
+    ],
+    "withHubProtocol": [
+      "t"
+    ],
+    "withAutomaticReconnect": [
+      "t"
+    ],
+    "withServerTimeout": [
+      "t"
+    ],
+    "withKeepAliveInterval": [
+      "t"
+    ],
+    "withStatefulReconnect": [
+      "t"
+    ],
+    "withAuthenticationRefresh": [
+      "param"
+    ],
+    "build": []
+  },
+  "AbortController": {
+    "_isAborted": [],
+    "onabort": [],
+    "abort": [],
+    "signal": [],
+    "aborted": []
+  }
+}
