@@ -1,0 +1,927 @@
+{
+  "applyTransform": [
+    "node",
+    "prop",
+    "options",
+    "result"
+  ],
+  "pluginCreator": [
+    "opts"
+  ],
+  "analyze": [
+    "node"
+  ],
+  "analyzeType": [
+    "node",
+    "param"
+  ],
+  "analyzeSum": [
+    "node",
+    "depth"
+  ],
+  "analyzeProduct": [
+    "node",
+    "depth"
+  ],
+  "finishProduct": [
+    "valid",
+    "hasUnresolved",
+    "numerator",
+    "denominator",
+    "hasOpaqueNumerator",
+    "hasOpaqueDenominator"
+  ],
+  "analyzeCall": [
+    "node",
+    "depth"
+  ],
+  "finish": [
+    "type",
+    "valid",
+    "unresolved"
+  ],
+  "resolved": [
+    "type"
+  ],
+  "markUnresolved": [
+    "type"
+  ],
+  "publicType": [
+    "type"
+  ],
+  "closerOf": [
+    "type"
+  ],
+  "matchBlocks": [
+    "tokens",
+    "param",
+    "param"
+  ],
+  "closerAt": [
+    "blocks",
+    "index"
+  ],
+  "closeIn": [
+    "blocks",
+    "index",
+    "end"
+  ],
+  "nextComponent": [
+    "blocks",
+    "index",
+    "end"
+  ],
+  "firstTopLevelComma": [
+    "tokens",
+    "blocks",
+    "start",
+    "end"
+  ],
+  "baseOf": [
+    "unit"
+  ],
+  "convert": [
+    "value",
+    "from",
+    "to"
+  ],
+  "staticBaseOf": [
+    "unit"
+  ],
+  "asError": [
+    "error"
+  ],
+  "compileCandidate": [
+    "tokens",
+    "blocks",
+    "start",
+    "end",
+    "lookup",
+    "options"
+  ],
+  "printCandidate": [
+    "compiled",
+    "sink",
+    "diagnostics",
+    "tokens",
+    "start",
+    "end"
+  ],
+  "fitted": [
+    "printed",
+    "tokens",
+    "from",
+    "to"
+  ],
+  "reduceTokenList": [
+    "tokens",
+    "options",
+    "diagnostics",
+    "target",
+    "start",
+    "end",
+    "source"
+  ],
+  "analyzeTrig": [
+    "args"
+  ],
+  "analyzeInverseTrig": [
+    "args"
+  ],
+  "analyzeIdentity": [
+    "args"
+  ],
+  "analyzeSign": [
+    "args"
+  ],
+  "analyzeRound": [
+    "args",
+    "nodes"
+  ],
+  "analyzeAtan2": [
+    "args"
+  ],
+  "isRoundStrategy": [
+    "node"
+  ],
+  "analyzeClamp": [
+    "args",
+    "nodes"
+  ],
+  "lookupMathFunction": [
+    "name"
+  ],
+  "isCalculationFunction": [
+    "name"
+  ],
+  "hasPotentialMathFunction": [
+    "value"
+  ],
+  "hasMathFunctionToken": [
+    "tokens",
+    "param",
+    "param"
+  ],
+  "mathFunctionAt": [
+    "tokens",
+    "index"
+  ],
+  "isClampKeyword": [
+    "node",
+    "index"
+  ],
+  "assertDepth": [
+    "depth"
+  ],
+  "checkCalculationDepth": [
+    "node",
+    "param"
+  ],
+  "num": [
+    "value"
+  ],
+  "dim": [
+    "value",
+    "unit",
+    "rawUnit"
+  ],
+  "ident": [
+    "name",
+    "rawName"
+  ],
+  "call": [
+    "name",
+    "args",
+    "rawName"
+  ],
+  "opaqueCall": [
+    "name",
+    "components",
+    "rawName",
+    "source"
+  ],
+  "mkSum": [
+    "rawTerms"
+  ],
+  "pushSumTerm": [
+    "out",
+    "term"
+  ],
+  "mkProduct": [
+    "rawFactors"
+  ],
+  "pushProductFactor": [
+    "out",
+    "f"
+  ],
+  "mkGroup": [
+    "node"
+  ],
+  "isSubstitutionNode": [
+    "node"
+  ],
+  "groupSubstitution": [
+    "node"
+  ],
+  "negate": [
+    "node"
+  ],
+  "offsetLookup": [
+    "tokens",
+    "param",
+    "param"
+  ],
+  "joinTokens": [
+    "tokens",
+    "start",
+    "end"
+  ],
+  "simplifyComponents": [
+    "components",
+    "simplify"
+  ],
+  "resolveOptions": [
+    "opts"
+  ],
+  "pushComponent": [
+    "target",
+    "part"
+  ],
+  "pushRange": [
+    "target",
+    "start",
+    "end"
+  ],
+  "closeOfCall": [
+    "state",
+    "index",
+    "name"
+  ],
+  "parseOpaqueCall": [
+    "state",
+    "index",
+    "name",
+    "rawName",
+    "parseRange"
+  ],
+  "customProperty": [
+    "tokens",
+    "start",
+    "end"
+  ],
+  "componentTree": [
+    "state",
+    "start",
+    "rangeEnd",
+    "parseRange",
+    "root"
+  ],
+  "parseVar": [
+    "state",
+    "index",
+    "name",
+    "rawName",
+    "parseRange"
+  ],
+  "ParseError": {
+    "index": [],
+    "suffix": [],
+    "constructor": [
+      "message",
+      "index",
+      "suffix"
+    ]
+  },
+  "positionedError": [
+    "error",
+    "offsetOf"
+  ],
+  "isTrivia": [
+    "type"
+  ],
+  "isOperator": [
+    "value"
+  ],
+  "isExpressionToken": [
+    "token"
+  ],
+  "peek": [
+    "state"
+  ],
+  "newState": [
+    "tokens",
+    "blocks",
+    "start",
+    "end"
+  ],
+  "spaceBefore": [
+    "state",
+    "index"
+  ],
+  "spaceAfter": [
+    "state",
+    "index"
+  ],
+  "tokenValue": [
+    "token"
+  ],
+  "notSurrounded": [
+    "text",
+    "index"
+  ],
+  "requireSurroundingWhitespace": [
+    "state",
+    "index"
+  ],
+  "rejectSignedNumber": [
+    "state"
+  ],
+  "sourceSpelling": [
+    "raw",
+    "decoded"
+  ],
+  "normalizeSourceZero": [
+    "value"
+  ],
+  "keepDivisorSign": [
+    "state",
+    "index",
+    "node"
+  ],
+  "delimAt": [
+    "state",
+    "index",
+    "a",
+    "b"
+  ],
+  "parseSum": [
+    "state",
+    "depth"
+  ],
+  "parseProduct": [
+    "state",
+    "depth"
+  ],
+  "parseOperand": [
+    "state",
+    "depth"
+  ],
+  "foldCalcKeyword": [
+    "name"
+  ],
+  "parseValue": [
+    "state",
+    "depth"
+  ],
+  "dimension": [
+    "token"
+  ],
+  "parseGroup": [
+    "state",
+    "open",
+    "depth"
+  ],
+  "subRange": [
+    "state",
+    "open",
+    "closer"
+  ],
+  "expectCloser": [
+    "sub",
+    "closer"
+  ],
+  "parseCall": [
+    "state",
+    "index",
+    "depth"
+  ],
+  "parseRange": [
+    "tokens",
+    "blocks",
+    "start",
+    "end"
+  ],
+  "closersWithinLimit": [
+    "tokens"
+  ],
+  "parse": [
+    "tokens",
+    "start",
+    "end",
+    "param"
+  ],
+  "emitNode": [
+    "node",
+    "session",
+    "param",
+    "param"
+  ],
+  "emitNodeBody": [
+    "node",
+    "session"
+  ],
+  "emitScalarSumTerm": [
+    "termNode",
+    "sign",
+    "leading",
+    "session"
+  ],
+  "emitSumTerm": [
+    "term",
+    "leading",
+    "session"
+  ],
+  "isNegativeZeroTerm": [
+    "term"
+  ],
+  "emitSum": [
+    "sum",
+    "session"
+  ],
+  "emitLeadingNeg": [
+    "node",
+    "session"
+  ],
+  "emitProductFactors": [
+    "factors",
+    "session",
+    "param",
+    "coefficientValue",
+    "coefficientNode"
+  ],
+  "emitCall": [
+    "node",
+    "session",
+    "callNameOverride"
+  ],
+  "emitOpaqueCall": [
+    "node",
+    "session",
+    "callNameOverride"
+  ],
+  "emitMathResult": [
+    "node",
+    "session",
+    "wrapper"
+  ],
+  "emitWrappedRoot": [
+    "node",
+    "session",
+    "wrapper"
+  ],
+  "emitNestedMathResult": [
+    "node",
+    "session"
+  ],
+  "wouldFuse": [
+    "last",
+    "first"
+  ],
+  "isEOF": [
+    "token"
+  ],
+  "nextCss": [
+    "list",
+    "i",
+    "end"
+  ],
+  "firstCharOf": [
+    "list",
+    "start",
+    "end"
+  ],
+  "lastCharBefore": [
+    "list",
+    "end"
+  ],
+  "precedence": [
+    "node"
+  ],
+  "needsParentheses": [
+    "node",
+    "parentPrecedence",
+    "groupedRequired"
+  ],
+  "divideByPowerOfTen": [
+    "digits",
+    "k"
+  ],
+  "roundDecimal": [
+    "abs",
+    "p"
+  ],
+  "round": [
+    "v",
+    "prec"
+  ],
+  "isDegenerate": [
+    "v"
+  ],
+  "degenerateKeyword": [
+    "v"
+  ],
+  "serializeNumber": [
+    "v"
+  ],
+  "emitRoundedScalar": [
+    "node",
+    "out",
+    "value"
+  ],
+  "emitDegenerate": [
+    "out",
+    "value",
+    "node",
+    "wrapper"
+  ],
+  "emitScalar": [
+    "node",
+    "session",
+    "value",
+    "param"
+  ],
+  "emitSignedZero": [
+    "out",
+    "node"
+  ],
+  "emitBareSignedZero": [
+    "out",
+    "node"
+  ],
+  "isScalar": [
+    "node"
+  ],
+  "isSignedZero": [
+    "node"
+  ],
+  "copyDetail": [
+    "detail"
+  ],
+  "fuseSeparator": [],
+  "TokenSink": {
+    "pieces": [],
+    "minusPending": [],
+    "sourceTokens": [],
+    "start": [],
+    "end": [],
+    "constructor": [
+      "source",
+      "start",
+      "end"
+    ],
+    "expectedIndex": [],
+    "identical": [],
+    "build": [],
+    "textOf": [
+      "piece"
+    ],
+    "reuse": [
+      "type",
+      "prefix",
+      "first",
+      "last"
+    ],
+    "separate": [
+      "first"
+    ],
+    "fit": [
+      "before",
+      "after"
+    ],
+    "takeMinus": [],
+    "flushMinus": [],
+    "push": [
+      "type",
+      "raw",
+      "detail"
+    ],
+    "open": [],
+    "close": [],
+    "comma": [],
+    "op": [
+      "operator"
+    ],
+    "minus": [],
+    "fn": [
+      "name"
+    ],
+    "ident": [
+      "raw"
+    ],
+    "number": [
+      "text"
+    ],
+    "dimension": [
+      "text",
+      "unit"
+    ],
+    "numeric": [
+      "type",
+      "text",
+      "unit"
+    ],
+    "source": [
+      "list",
+      "start",
+      "end"
+    ]
+  },
+  "TextSink": {
+    "parts": [],
+    "signed": [],
+    "leading": [],
+    "separate": [
+      "first"
+    ],
+    "open": [],
+    "close": [],
+    "comma": [],
+    "op": [
+      "operator"
+    ],
+    "minus": [],
+    "fn": [
+      "name"
+    ],
+    "ident": [
+      "raw"
+    ],
+    "number": [
+      "text"
+    ],
+    "dimension": [
+      "text",
+      "unit"
+    ],
+    "source": [
+      "list",
+      "start",
+      "end"
+    ],
+    "fit": [
+      "before",
+      "after"
+    ],
+    "join": []
+  },
+  "sameText": [
+    "raw",
+    "prefix",
+    "first",
+    "last"
+  ],
+  "decodeIdentifier": [
+    "raw"
+  ],
+  "numericDetail": [
+    "type",
+    "number",
+    "unit"
+  ],
+  "newToken": [
+    "type",
+    "raw",
+    "detail"
+  ],
+  "normalizeScalarPolicy": [
+    "opts"
+  ],
+  "makeSession": [
+    "opts",
+    "out"
+  ],
+  "serialize": [
+    "node",
+    "param"
+  ],
+  "printResult": [
+    "result",
+    "opts",
+    "out"
+  ],
+  "serializeResult": [
+    "result",
+    "param"
+  ],
+  "simplifyAtan2": [
+    "args"
+  ],
+  "mergeConvertibleBuckets": [
+    "buckets",
+    "param"
+  ],
+  "simplifyCall": [
+    "node",
+    "simplify"
+  ],
+  "tryCancelPair": [
+    "dims",
+    "param"
+  ],
+  "simplifyClamp": [
+    "args"
+  ],
+  "isExact": [
+    "value",
+    "precision"
+  ],
+  "foldResult": [
+    "fold",
+    "value"
+  ],
+  "chosenArg": [
+    "args",
+    "fold",
+    "value"
+  ],
+  "foldConstArgs": [
+    "args"
+  ],
+  "foldNumberArgs": [
+    "args"
+  ],
+  "foldDimArgs": [
+    "args",
+    "unit",
+    "base"
+  ],
+  "simplifyHypot": [
+    "args"
+  ],
+  "simplifyInverseTrig": [
+    "args",
+    "name"
+  ],
+  "simplifyMinMax": [
+    "args",
+    "name"
+  ],
+  "simplifyModRem": [
+    "args",
+    "name"
+  ],
+  "applyModRem": [
+    "name",
+    "a",
+    "b"
+  ],
+  "simplifyAbs": [
+    "args",
+    "name"
+  ],
+  "simplifySign": [
+    "args",
+    "name"
+  ],
+  "simplifySqrt": [
+    "args",
+    "name"
+  ],
+  "simplifyExp": [
+    "args",
+    "name"
+  ],
+  "simplifyPow": [
+    "args",
+    "name"
+  ],
+  "simplifyLog": [
+    "args",
+    "name"
+  ],
+  "isBarrier": [
+    "node"
+  ],
+  "flattenFactor": [
+    "out",
+    "exponent",
+    "node"
+  ],
+  "gcd": [
+    "a",
+    "b"
+  ],
+  "chainValue": [
+    "chain"
+  ],
+  "isScalarSum": [
+    "opaque"
+  ],
+  "foldsExactly": [
+    "value",
+    "opaque",
+    "distributable",
+    "precision"
+  ],
+  "rationalProduct": [
+    "numerator",
+    "denominator",
+    "loneDim",
+    "dims",
+    "opaque",
+    "precision"
+  ],
+  "foldFactors": [
+    "items",
+    "start",
+    "end",
+    "simplify",
+    "precision"
+  ],
+  "processFactor": [
+    "exponent",
+    "n"
+  ],
+  "simplifyProduct": [
+    "product",
+    "simplify",
+    "param"
+  ],
+  "simplifyRound": [
+    "args"
+  ],
+  "passthrough": [],
+  "argsForRoundFold": [
+    "args"
+  ],
+  "applyRound": [
+    "strategy",
+    "a",
+    "b"
+  ],
+  "denoise": [
+    "total",
+    "scale"
+  ],
+  "simplifySum": [
+    "sum",
+    "simplify",
+    "param"
+  ],
+  "processTerm": [
+    "sign",
+    "n"
+  ],
+  "simplifyTrig": [
+    "args",
+    "name"
+  ],
+  "operand": [
+    "value",
+    "child"
+  ],
+  "simplify": [
+    "node",
+    "param",
+    "param"
+  ],
+  "child": [
+    "value"
+  ],
+  "isFailure": [
+    "type"
+  ],
+  "isPercentage": [
+    "type"
+  ],
+  "addTypes": [
+    "a",
+    "b"
+  ],
+  "numberArguments": [
+    "args",
+    "min",
+    "max"
+  ],
+  "matchingArguments": [
+    "args",
+    "min",
+    "max"
+  ],
+  "assertRange": [
+    "tokens",
+    "start",
+    "end"
+  ],
+  "run": [
+    "options",
+    "diagnostics",
+    "tokens",
+    "start",
+    "end"
+  ],
+  "createReducer": [
+    "opts"
+  ],
+  "ignoreParseError": [],
+  "reduceTokens": [
+    "tokens",
+    "opts",
+    "param",
+    "param"
+  ],
+  "reduceCalc": [
+    "value",
+    "opts"
+  ]
+}
