@@ -1,0 +1,494 @@
+{
+  "DatabaseNotConnectedError": {
+    "constructor": []
+  },
+  "STORAGE_EXCEEDED": [
+    "keyword"
+  ],
+  "NotServingError": {
+    "statusCode": [],
+    "servingStatus": [],
+    "constructor": [
+      "statusCode",
+      "servingStatus"
+    ]
+  },
+  "ResponseStatusError": {
+    "statusCode": [],
+    "statusText": [],
+    "constructor": [
+      "message",
+      "statusCode",
+      "statusText"
+    ]
+  },
+  "JsonErrorLogger": {
+    "getErrorMessage": [
+      "message",
+      "causes"
+    ]
+  },
+  "PrettyErrorLogger": {
+    "printIndent": [],
+    "printIndicatorSummary": [],
+    "printSummary": [],
+    "getErrorMessage": [
+      "message",
+      "causes"
+    ]
+  },
+  "HealthCheckExecutor": {
+    "logger": [],
+    "options": [],
+    "isShuttingDown": [],
+    "constructor": [
+      "logger",
+      "options"
+    ],
+    "execute": [
+      "healthIndicators"
+    ],
+    "beforeApplicationShutdown": [
+      "signal"
+    ],
+    "executeHealthIndicators": [],
+    "getSummary": [],
+    "getStatus": [],
+    "getResult": []
+  },
+  "HealthCheck": [
+    "param"
+  ],
+  "getSwaggerDefinitions": [
+    "swagger"
+  ],
+  "getHealthCheckDtoClasses": [
+    "swagger"
+  ],
+  "TerminusHealthIndicatorResult": {
+    "status": [],
+    "responseTime": [],
+    "cachedResponse": []
+  },
+  "TerminusHealthCheckResult": {
+    "status": [],
+    "info": [],
+    "error": [],
+    "details": []
+  },
+  "getHealthCheckExtraModels": [
+    "swagger"
+  ],
+  "getHealthCheckSchema": [
+    "swagger",
+    "status"
+  ],
+  "HealthCheckService": {
+    "healthCheckExecutor": [],
+    "errorLogger": [],
+    "logger": [],
+    "constructor": [
+      "healthCheckExecutor",
+      "errorLogger",
+      "logger"
+    ],
+    "check": [
+      "healthIndicators"
+    ]
+  },
+  "MikroOrmHealthIndicator": {
+    "moduleRef": [],
+    "healthIndicatorService": [],
+    "constructor": [
+      "moduleRef",
+      "healthIndicatorService"
+    ],
+    "onModuleInit": [],
+    "loadPeer": [],
+    "getContextConnection": [],
+    "pingDb": [],
+    "pingCheck": [
+      "key",
+      "options"
+    ]
+  },
+  "MongooseHealthIndicator": {
+    "moduleRef": [],
+    "healthIndicatorService": [],
+    "constructor": [
+      "moduleRef",
+      "healthIndicatorService"
+    ],
+    "onModuleInit": [],
+    "loadPeer": [],
+    "getContextConnection": [],
+    "pingDb": [],
+    "pingCheck": [
+      "key",
+      "options"
+    ]
+  },
+  "PrismaHealthIndicator": {
+    "healthIndicatorService": [],
+    "constructor": [
+      "healthIndicatorService"
+    ],
+    "pingDb": [],
+    "pingCheck": [
+      "key",
+      "prismaClient",
+      "options"
+    ]
+  },
+  "SequelizeHealthIndicator": {
+    "moduleRef": [],
+    "healthIndicatorService": [],
+    "constructor": [
+      "moduleRef",
+      "healthIndicatorService"
+    ],
+    "onModuleInit": [],
+    "loadPeer": [],
+    "getContextConnection": [],
+    "pingDb": [],
+    "pingCheck": [
+      "key",
+      "options"
+    ]
+  },
+  "TypeOrmHealthIndicator": {
+    "moduleRef": [],
+    "healthIndicatorService": [],
+    "constructor": [
+      "moduleRef",
+      "healthIndicatorService"
+    ],
+    "onModuleInit": [],
+    "loadPeer": [],
+    "getContextConnection": [],
+    "pingDb": [],
+    "pingCheck": [
+      "key",
+      "options"
+    ]
+  },
+  "checkDiskSpace": [
+    "path"
+  ],
+  "DiskHealthIndicator": {
+    "checkDiskSpace": [],
+    "healthIndicatorService": [],
+    "constructor": [
+      "checkDiskSpace",
+      "healthIndicatorService"
+    ],
+    "isOptionThresholdPercent": [],
+    "checkStorage": [
+      "key",
+      "options"
+    ]
+  },
+  "FetchHealthIndicator": {
+    "healthIndicatorService": [],
+    "constructor": [
+      "healthIndicatorService"
+    ],
+    "pingCheck": [
+      "key",
+      "url",
+      "param"
+    ]
+  },
+  "isSuccess": [
+    "param"
+  ],
+  "statusError": [
+    "param",
+    "param"
+  ],
+  "responseOf": [
+    "err"
+  ],
+  "statusOf": [
+    "err"
+  ],
+  "withCause": [
+    "err"
+  ],
+  "discardBody": [
+    "response"
+  ],
+  "HttpHealthIndicator": {
+    "logger": [],
+    "healthIndicatorService": [],
+    "constructor": [
+      "logger",
+      "healthIndicatorService"
+    ],
+    "onModuleInit": [],
+    "loadPeer": [],
+    "getHttpService": [],
+    "generateHttpError": [],
+    "pingCheck": [
+      "key",
+      "url",
+      "param"
+    ],
+    "responseCheck": [
+      "key",
+      "url",
+      "callback",
+      "param"
+    ]
+  },
+  "MemoryHealthIndicator": {
+    "healthIndicatorService": [],
+    "constructor": [
+      "healthIndicatorService"
+    ],
+    "checkHeap": [
+      "key",
+      "heapUsedThreshold"
+    ],
+    "checkRSS": [
+      "key",
+      "rssThreshold"
+    ]
+  },
+  "GRPCHealthIndicator": {
+    "healthIndicatorService": [],
+    "clients": [],
+    "constructor": [
+      "healthIndicatorService"
+    ],
+    "onModuleInit": [],
+    "loadGrpc": [],
+    "loadMicroservices": [],
+    "onApplicationShutdown": [],
+    "getClient": [],
+    "checkService": [
+      "key",
+      "service",
+      "options"
+    ]
+  },
+  "MicroserviceHealthIndicator": {
+    "healthIndicatorService": [],
+    "constructor": [
+      "healthIndicatorService"
+    ],
+    "onModuleInit": [],
+    "loadMicroservices": [],
+    "pingMicroservice": [],
+    "pingCheck": [
+      "key",
+      "options"
+    ]
+  },
+  "AttemptCache": {
+    "entries": [],
+    "getOrRun": [
+      "key",
+      "ttlMs",
+      "run"
+    ]
+  },
+  "AttemptData": {
+    "key": [],
+    "logger": [],
+    "staticValues": [],
+    "successFns": [],
+    "failureFns": [],
+    "constructor": [
+      "key",
+      "param"
+    ],
+    "staticData": [],
+    "addStatic": [
+      "data"
+    ],
+    "addSuccess": [
+      "data"
+    ],
+    "addFailure": [
+      "data"
+    ],
+    "forSuccess": [
+      "result"
+    ],
+    "forFailure": [
+      "error",
+      "timeoutMs",
+      "start"
+    ],
+    "toData": [
+      "value"
+    ]
+  },
+  "warnOnce": [
+    "logger",
+    "id",
+    "message"
+  ],
+  "toDataFn": [
+    "data"
+  ],
+  "HealthCheckAttempt": {
+    "key": [],
+    "fn": [],
+    "cache": [],
+    "timeoutMs": [],
+    "cacheTtlMs": [],
+    "degradedAfterMs": [],
+    "degradeFailure": [],
+    "data": [],
+    "constructor": [
+      "key",
+      "fn",
+      "cache",
+      "logger"
+    ],
+    "toResult": [
+      "outcome",
+      "param"
+    ],
+    "toStatus": [
+      "outcome"
+    ],
+    "execute": [],
+    "run": [],
+    "withTimeout": [
+      "timeout"
+    ],
+    "withData": [
+      "data"
+    ],
+    "withSuccessData": [
+      "data"
+    ],
+    "withFailureData": [
+      "data"
+    ],
+    "cacheFor": [
+      "ttl"
+    ],
+    "degradedAfter": [
+      "threshold"
+    ],
+    "degradedOnFailure": [],
+    "then": [],
+    "catch": [],
+    "finally": []
+  },
+  "assertDuration": [
+    "ms",
+    "name"
+  ],
+  "HealthIndicatorSession": {
+    "key": [],
+    "cache": [],
+    "logger": [],
+    "constructor": [
+      "key",
+      "param",
+      "logger"
+    ],
+    "assertNotReserved": [
+      "data",
+      "keys"
+    ],
+    "compose": [
+      "status",
+      "data"
+    ],
+    "down": [
+      "data"
+    ],
+    "degraded": [
+      "data"
+    ],
+    "up": [
+      "data"
+    ],
+    "attempt": [
+      "fn"
+    ]
+  },
+  "HealthIndicatorService": {
+    "logger": [],
+    "cache": [],
+    "constructor": [
+      "logger"
+    ],
+    "check": [
+      "key"
+    ]
+  },
+  "TerminusModule": {
+    "forRoot": [
+      "options"
+    ],
+    "forRootAsync": [
+      "options"
+    ],
+    "createAsyncProviders": []
+  },
+  "createOptionsProvider": [
+    "param"
+  ],
+  "createAsyncOptionsProvider": [
+    "options"
+  ],
+  "createTerminusProviders": [
+    "options"
+  ],
+  "createLoggerProvider": [
+    "options"
+  ],
+  "anySignal": [
+    "signals"
+  ],
+  "onAbort": [
+    "event"
+  ],
+  "MISSING_REQUIRED_DEPENDENCY": [
+    "names",
+    "reason"
+  ],
+  "isModuleNotFound": [
+    "error"
+  ],
+  "loadPackage": [
+    "packageNames",
+    "loader",
+    "reason"
+  ],
+  "errorMessage": [
+    "err"
+  ],
+  "isAxiosError": [
+    "err"
+  ],
+  "isError": [
+    "err"
+  ],
+  "omitUndefined": [
+    "object"
+  ],
+  "rejectOnAbort": [
+    "promise",
+    "signal"
+  ],
+  "runWithTimeout": [
+    "timeoutMs",
+    "fn"
+  ],
+  "toMs": [
+    "duration",
+    "name"
+  ],
+  "toBytes": [
+    "size",
+    "name"
+  ]
+}
