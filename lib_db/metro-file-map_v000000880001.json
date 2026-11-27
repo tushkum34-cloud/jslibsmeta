@@ -1,0 +1,621 @@
+{
+  "Watcher": {
+    "constructor": [
+      "options"
+    ],
+    "prepareCrawl": [],
+    "crawl": [
+      "previousState"
+    ],
+    "recrawl": [
+      "subpath",
+      "currentFileSystem"
+    ],
+    "watch": [
+      "onChange",
+      "clocks"
+    ],
+    "watchRoot": [
+      "root"
+    ],
+    "close": [],
+    "checkHealth": [
+      "timeout"
+    ]
+  },
+  "_interopRequireWildcard": [
+    "e",
+    "t"
+  ],
+  "_interopRequireDefault": [
+    "e"
+  ],
+  "ignoreForCrawl": [
+    "filePath"
+  ],
+  "createWatcherBackend": [
+    "root",
+    "rootClocks",
+    "param"
+  ],
+  "DiskCacheManager": {
+    "constructor": [
+      "opts",
+      "config"
+    ],
+    "getCacheFilePath": [],
+    "read": [],
+    "write": [
+      "getSnapshot",
+      "opts"
+    ],
+    "end": []
+  },
+  "NoopCacheManager": {
+    "read": [],
+    "write": [],
+    "end": []
+  },
+  "find": [
+    "options",
+    "watchers"
+  ],
+  "resolveIfDone": [],
+  "search": [
+    "directory",
+    "dirPrefix",
+    "dirNormal",
+    "isWithinRoot",
+    "watcher"
+  ],
+  "nodeCrawl": [
+    "options",
+    "watchers"
+  ],
+  "dropUnmodifiedFiles": [
+    "rootDir",
+    "changedFiles",
+    "filesToStat"
+  ],
+  "makeWatchmanError": [
+    "error"
+  ],
+  "watchmanCrawl": [
+    "param"
+  ],
+  "cmd": [
+    "command",
+    "param"
+  ],
+  "logWatchmanWaitMessage": [],
+  "getWatchmanRoots": [
+    "roots"
+  ],
+  "queryWatchmanForDirs": [
+    "rootProjectDirMappings"
+  ],
+  "planQuery": [
+    "param"
+  ],
+  "FileMap": {
+    "create": [
+      "options"
+    ],
+    "constructor": [
+      "options"
+    ],
+    "build": [],
+    "getRoots": [],
+    "addRoot": [
+      "root"
+    ],
+    "read": [],
+    "end": [],
+    "H": []
+  },
+  "processFile": [
+    "data"
+  ],
+  "hasWatchedExtension": [
+    "filePath"
+  ],
+  "emitChange": [],
+  "onChange": [
+    "change"
+  ],
+  "enqueueEvent": [
+    "event"
+  ],
+  "performHealthCheck": [],
+  "toPublicMetadata": [
+    "metadata"
+  ],
+  "mapIterable": [
+    "map",
+    "metadataMapFn"
+  ],
+  "FileProcessor": {
+    "constructor": [
+      "opts"
+    ],
+    "processBatch": [
+      "files",
+      "req"
+    ],
+    "processRegularFile": [
+      "normalPath",
+      "fileMetadata",
+      "req"
+    ],
+    "processFileForPlugin": [
+      "absolutePath",
+      "fileMetadata",
+      "pluginIdx"
+    ],
+    "end": []
+  },
+  "processWorkerReply": [
+    "metadata",
+    "pluginsRun",
+    "fileMetadata"
+  ],
+  "applyStats": [
+    "metadata",
+    "fileMetadata"
+  ],
+  "normalizeWorkerError": [
+    "mixedError"
+  ],
+  "FileSystemChangeAggregator": {
+    "directoryAdded": [
+      "canonicalPath"
+    ],
+    "directoryRemoved": [
+      "canonicalPath"
+    ],
+    "fileAdded": [
+      "canonicalPath",
+      "data"
+    ],
+    "fileModified": [
+      "canonicalPath",
+      "oldData",
+      "newData"
+    ],
+    "fileRemoved": [
+      "canonicalPath",
+      "data"
+    ],
+    "getSize": [],
+    "getView": [],
+    "getMappedView": [
+      "metadataMapFn"
+    ]
+  },
+  "RootPathUtils": {
+    "constructor": [
+      "rootDir"
+    ],
+    "getBasenameOfNthAncestor": [
+      "n"
+    ],
+    "getParts": [],
+    "getDepth": [],
+    "absoluteToNormal": [
+      "absolutePath"
+    ],
+    "normalToAbsolute": [
+      "normalPath"
+    ],
+    "relativeToNormal": [
+      "relativePath"
+    ],
+    "resolveSymlinkToNormal": [
+      "symlinkNormalPath",
+      "readlinkResult"
+    ],
+    "joinNormalToRelative": [
+      "normalPath",
+      "relativePath"
+    ],
+    "relative": [
+      "from",
+      "to"
+    ]
+  },
+  "indexOfIndirectionSegment": [
+    "fullPath",
+    "fromIdx"
+  ],
+  "joinNormalPath": [
+    "normalPath",
+    "subpath"
+  ],
+  "TreeFS": {
+    "constructor": [
+      "opts"
+    ],
+    "setRoots": [
+      "mixedRoots"
+    ],
+    "isMapped": [
+      "canonicalPath"
+    ],
+    "getSerializableSnapshot": [],
+    "getSerializableState": [],
+    "fromDeserializedSnapshot": [
+      "args"
+    ],
+    "pathsOutsideRoots": [
+      "mixedRoots"
+    ],
+    "resolveSymlinks": [
+      "mixedPath"
+    ],
+    "getSize": [
+      "mixedPath"
+    ],
+    "getDifference": [
+      "files",
+      "options"
+    ],
+    "getSha1": [
+      "mixedPath"
+    ],
+    "getOrComputeSha1": [
+      "mixedPath"
+    ],
+    "exists": [
+      "mixedPath"
+    ],
+    "lookup": [
+      "mixedPath",
+      "observations"
+    ],
+    "getAllFiles": [],
+    "linkStats": [
+      "mixedPath"
+    ],
+    "matchFiles": [
+      "opts",
+      "observations"
+    ],
+    "addOrModify": [
+      "mixedPath",
+      "metadata",
+      "changeListener"
+    ],
+    "bulkAddOrModify": [
+      "addedOrModifiedFiles",
+      "changeListener"
+    ],
+    "remove": [
+      "mixedPath",
+      "changeListener"
+    ],
+    "hierarchicalLookup": [
+      "mixedStartPath",
+      "subpath",
+      "opts",
+      "observations"
+    ],
+    "metadataIterator": [
+      "opts"
+    ]
+  },
+  "isDirectory": [
+    "node"
+  ],
+  "isRegularFile": [
+    "node"
+  ],
+  "isWithinNormal": [
+    "normalPath",
+    "ancestorNormalPath"
+  ],
+  "relativeToAncestor": [
+    "normalPath",
+    "ancestorNormalPath"
+  ],
+  "makeFrame": [
+    "node",
+    "canonicalPath",
+    "nodeAncestorOfRootIdx",
+    "prefixWithSep",
+    "frameFollowedLinks"
+  ],
+  "checkWatchmanCapabilities": [
+    "requiredCapabilities"
+  ],
+  "getPluginChanges": [
+    "event",
+    "plugin"
+  ],
+  "rootRelativeCacheKeys": [
+    "buildParameters"
+  ],
+  "compareStrings": [
+    "a",
+    "b"
+  ],
+  "chainComparators": [
+    "param"
+  ],
+  "DependencyPlugin": {
+    "constructor": [
+      "options"
+    ],
+    "getDependencies": [
+      "mixedPath"
+    ]
+  },
+  "FileDataPlugin": {
+    "constructor": [
+      "opts"
+    ],
+    "initialize": [
+      "initOptions"
+    ],
+    "getOrComputeFileData": [
+      "mixedPath",
+      "observations"
+    ],
+    "getFileSystem": [],
+    "onChanged": [
+      "_changes"
+    ],
+    "assertValid": [],
+    "getSerializableSnapshot": [],
+    "getCacheKey": [],
+    "getWorker": []
+  },
+  "HastePlugin": {
+    "name": [],
+    "constructor": [
+      "options"
+    ],
+    "initialize": [
+      "opts"
+    ],
+    "getSerializableSnapshot": [],
+    "getModule": [
+      "name",
+      "platform",
+      "supportsNativePlatform",
+      "type"
+    ],
+    "getModuleNameByPath": [
+      "mixedPath"
+    ],
+    "getPackage": [
+      "name",
+      "platform",
+      "_supportsNativePlatform"
+    ],
+    "onChanged": [
+      "delta"
+    ],
+    "setModule": [
+      "id",
+      "module"
+    ],
+    "assertValid": [],
+    "computeConflicts": [],
+    "getCacheKey": [],
+    "getWorker": []
+  },
+  "onNameChanged": [
+    "name"
+  ],
+  "MockPlugin": {
+    "name": [],
+    "constructor": [
+      "param"
+    ],
+    "initialize": [
+      "param"
+    ],
+    "getMockModule": [
+      "name"
+    ],
+    "onChanged": [
+      "delta"
+    ],
+    "getSerializableSnapshot": [],
+    "assertValid": [],
+    "getCacheKey": [],
+    "getWorker": []
+  },
+  "CAPTURE_STRING_LITERAL": [
+    "pos"
+  ],
+  "createRegExp": [
+    "parts",
+    "flags"
+  ],
+  "alternatives": [
+    "param"
+  ],
+  "functionCallStart": [
+    "param"
+  ],
+  "extract": [
+    "code"
+  ],
+  "addDependency": [
+    "match",
+    "_",
+    "dep"
+  ],
+  "DependencyExtractorWorker": {
+    "constructor": [
+      "param"
+    ],
+    "processFile": [
+      "data",
+      "utils"
+    ]
+  },
+  "DuplicateHasteCandidatesError": {
+    "constructor": [
+      "name",
+      "platform",
+      "supportsNativePlatform",
+      "duplicatesSet"
+    ]
+  },
+  "getPlatformMessage": [
+    "platform"
+  ],
+  "getTypeMessage": [
+    "type"
+  ],
+  "HasteConflictsError": {
+    "constructor": [
+      "conflicts"
+    ],
+    "getDetailedMessage": [
+      "pathsRelativeToRoot"
+    ]
+  },
+  "computeHasteConflicts": [
+    "options"
+  ],
+  "getPlatformExtension": [
+    "file",
+    "platforms"
+  ],
+  "Worker": {
+    "constructor": [
+      "param"
+    ],
+    "processFile": [
+      "data"
+    ]
+  },
+  "_default": [
+    "filePath"
+  ],
+  "AbstractWatcher": {
+    "isLiveOnStart": [],
+    "constructor": [
+      "dir",
+      "opts"
+    ],
+    "onFileEvent": [
+      "listener"
+    ],
+    "onError": [
+      "listener"
+    ],
+    "startWatching": [],
+    "stopWatching": [],
+    "emitFileEvent": [
+      "event"
+    ],
+    "emitError": [
+      "error"
+    ],
+    "getPauseReason": []
+  },
+  "FallbackWatcher": {
+    "isLiveOnStart": [],
+    "constructor": [
+      "dir",
+      "opts"
+    ],
+    "startWatching": [],
+    "getCrawlWatcher": [],
+    "stopWatching": [],
+    "getPauseReason": []
+  },
+  "isIgnorableFileError": [
+    "error"
+  ],
+  "recReaddir": [
+    "root",
+    "dirCallback",
+    "fileCallback",
+    "symlinkCallback",
+    "errorCallback",
+    "ignored"
+  ],
+  "isIgnored": [
+    "dir"
+  ],
+  "visit": [
+    "dir"
+  ],
+  "pump": [],
+  "NativeWatcher": {
+    "isSupported": [],
+    "isLiveOnStart": [],
+    "constructor": [
+      "dir",
+      "opts"
+    ],
+    "startWatching": [],
+    "stopWatching": []
+  },
+  "RecrawlWarning": {
+    "RECRAWL_WARNINGS": [],
+    "REGEXP": [],
+    "constructor": [
+      "root",
+      "count"
+    ],
+    "findByRoot": [
+      "root"
+    ],
+    "isRecrawlWarningDupe": [
+      "warningMessage"
+    ]
+  },
+  "WatchmanWatcher": {
+    "constructor": [
+      "dir",
+      "opts"
+    ],
+    "startWatching": [],
+    "stopWatching": [],
+    "getPauseReason": []
+  },
+  "getWatchRoot": [],
+  "onWatchProject": [
+    "error",
+    "resp"
+  ],
+  "onClock": [
+    "error",
+    "resp"
+  ],
+  "subscribe": [
+    "since"
+  ],
+  "onSubscribe": [
+    "error",
+    "resp"
+  ],
+  "handleWarning": [
+    "resp"
+  ],
+  "isIncluded": [
+    "type",
+    "included",
+    "relativePath"
+  ],
+  "hasIncludedExtension": [
+    "extensions",
+    "basename"
+  ],
+  "typeFromStat": [
+    "stat"
+  ],
+  "sha1hex": [
+    "content"
+  ],
+  "getContent": [],
+  "setup": [
+    "args"
+  ]
+}
